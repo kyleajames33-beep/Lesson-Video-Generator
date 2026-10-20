@@ -5252,6 +5252,534 @@ SKILLS02_ROWS = {
 # END generated rows: m6c03-m6c08, skills01, skills02
 
 
+# BEGIN generated rows: m6c09-m6c10
+M6C09_ROWS = {
+    "hook": [
+        "adjust",
+        "two `m6-foam-cup-calorimeter-v1.png` plates side by side, coded labels \"HCl + NaOH\" and \"ethanoic acid + NaOH\", both \"1.00 mol/L, 50.0 mL + 50.0 mL\".",
+        "Hook (weak acid, less heat?): Here's a prediction to make.",
+        "minus fifty seven / ethanoic acid / minus fifty six / hydrofluoric acid / minus sixty eight",
+        "On the spoken cues: On \"minus fifty seven\" the first readout chip counts 21.0 to 27.8 °C (\"ΔT 6.8 °C\") and a bar grows down from zero on a small ΔH axis at the right: \"HCl: −57 kJ/mol\", with a dashed reference line at −57 that stays. On \"ethanoic acid\" a grey prediction bar, much shorter, sketches in with a \"?\" (tag \"prediction\"). On \"minus fifty six\" the second readout counts to 27.7 °C (\"ΔT 6.7 °C\"), the grey bar is crossed and the",
+        "explain",
+        "two `m6-foam-cup-calorimeter-v1.png` plates side by side, coded labels \"HCl + NaOH\" and \"ethanoic acid + NaOH\", both \"1.00 mol/L, 50.0 mL + 50.0 mL\". On \"minus fifty seven\" the first readout chip counts 21.0 to 27.8 °C (\"ΔT 6.8 °C\") and a bar grows down from zero on a small ΔH axis at the right: \"HCl: −57 kJ/mol\", with a dashed reference line at −57 that stays. On \"ethanoic acid\" a grey prediction bar, much shorter, sketches in with a \"?\" (tag \"prediction\"). On \"minus fifty six\" the second readout counts to 27.7 °C (\"ΔT 6.7 °C\"), the grey bar is crossed and the real bar grows almost to the line: \"ethanoic acid: about −56\". The cups dim, with their labels and readouts. On \"hydrofluoric acid\" a third bar, with no cup, grows past the line: \"HF: about −68\", with a small grey tag \"careful lab data; never used in school\" that dims when the sentence ends. Heading writes: \"Weak acid. Less heat?\" with \"Less heat?\" crossed. Bright at the end: the heading and the bar chart (one item; the bar labels stay bright, the axis grey). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "NumberTicker",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "same-different": [
+        "adjust",
+        "the board clears to two particle lenses side by side.",
+        "What is the same, what is different: Start with what you know.",
+        "hydrogen ion joining a hydroxide ion / whole",
+        "On the spoken cues: Left lens \"HCl(aq)\": teal hydronium tokens and grey chloride, no molecules. On \"hydrogen ion joining a hydroxide ion\" a violet OH⁻ drifts in and meets a teal token, snapping into a pale blue water with a short orange ripple; the strip writes \"H⁺(aq) + OH⁻(aq) → H₂O(l)\" with a small \"about −57 kJ/mol\" tag (dims after its sentence). Right lens \"ethanoic acid(aq)\", with `m6-vinegar-bottle-v1.png` small beside it (coded",
+        "explain",
+        "the board clears to two particle lenses side by side. Left lens \"HCl(aq)\": teal hydronium tokens and grey chloride, no molecules. On \"hydrogen ion joining a hydroxide ion\" a violet OH⁻ drifts in and meets a teal token, snapping into a pale blue water with a short orange ripple; the strip writes \"H⁺(aq) + OH⁻(aq) → H₂O(l)\" with a small \"about −57 kJ/mol\" tag (dims after its sentence). Right lens \"ethanoic acid(aq)\", with `m6-vinegar-bottle-v1.png` small beside it (coded label \"ethanoic (acetic) acid\"): mostly amber-outlined whole molecules, one teal token among them. On \"whole\" a pen ring circles the whole molecules, tag \"protons still attached\". Bright at the end: the strip and the two lenses. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "token flight",
+            "Cam lens zoom",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "reacts-completely": [
+        "new",
+        "the right lens enlarges to fill the centre; the left lens leaves.",
+        "The weak acid still reacts completely: So what happens when hydroxide arrives?",
+        "ionise to replace them / every molecule has reacted / one extra step",
+        "On the spoken cues: Violet OH⁻ tokens stream in from the left edge. Each meets a teal hydronium and forms water with an orange ripple; on \"ionise to replace them\" an amber molecule beside the gap hands a teal token to a water molecule (C01 hop), with a small two-way arrow \"⇌ shifts right\" pulsing under the lens. A counter at the lens edge, \"whole molecules left\", falls steadily; on \"every molecule has reacted\" it reaches 0, the \"⇌",
+        "explain",
+        "the right lens enlarges to fill the centre; the left lens leaves. Violet OH⁻ tokens stream in from the left edge. Each meets a teal hydronium and forms water with an orange ripple; on \"ionise to replace them\" an amber molecule beside the gap hands a teal token to a water molecule (C01 hop), with a small two-way arrow \"⇌ shifts right\" pulsing under the lens. A counter at the lens edge, \"whole molecules left\", falls steadily; on \"every molecule has reacted\" it reaches 0, the \"⇌ shifts right\" arrow fades, and the lens holds only grey-violet ethanoate and pale blue water. The strip writes \"CH₃COOH(aq) + OH⁻(aq) → CH₃COO⁻(aq) + H₂O(l)\". On \"one extra step\" a chip \"weak acid reacts incompletely\" fades in and is crossed (caption \"it all reacts: one extra step first\"). Bright at the end: the strip, the empty counter and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "two-steps": [
+        "new",
+        "the board clears.",
+        "Two steps, one total: We can count the energy in two steps, using Hess's law from Year 11: the total doesn't depend on the route.",
+        "ionises / minus fifty seven / minus fifty seven, plus the ionisation step / measured value, take away minus fifty seven",
+        "On the spoken cues: The enthalpy staircase draws centre: a top level \"HA(aq) + OH⁻(aq)\". On \"ionises\" a step 1 arrow draws from it (grey, direction not yet set, a \"?\" on it) to a level \"H⁺(aq) + A⁻(aq) + OH⁻(aq)\", labelled \"step 1: ionisation\". On \"minus fifty seven\" a long blue down arrow draws to \"A⁻(aq) + H₂O(l)\", labelled \"step 2: −57 kJ/mol (same as a strong acid)\". On \"plus the ionisation step\" a dashed net arrow joins the first",
+        "explain",
+        "the board clears. The enthalpy staircase draws centre: a top level \"HA(aq) + OH⁻(aq)\". On \"ionises\" a step 1 arrow draws from it (grey, direction not yet set, a \"?\" on it) to a level \"H⁺(aq) + A⁻(aq) + OH⁻(aq)\", labelled \"step 1: ionisation\". On \"minus fifty seven\" a long blue down arrow draws to \"A⁻(aq) + H₂O(l)\", labelled \"step 2: −57 kJ/mol (same as a strong acid)\". On \"plus the ionisation step\" a dashed net arrow joins the first level to the last and the line writes under the staircase: \"ΔH(neutralisation) = ΔH(step 1) + (−57) kJ/mol\", with a small grey tag \"Hess's law: add the steps\" that dims. On \"measured value, take away minus fifty seven\" the \"?\" arrow pulses and a second line writes under the first, which dims: \"ΔH(step 1) = ΔH(measured) − (−57) kJ/mol\". Bright at the end: the staircase and the second line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "ionising-either-way": [
+        "new",
+        "the staircase shrinks to the top right (dim).",
+        "Why the ionising step can go either way: And step one isn't always uphill.",
+        "takes energy in / surrounded by water molecules / balance",
+        "On the spoken cues: The M5 C11 ledger draws centre with a small particle close-up beside it: one amber-outlined molecule; on \"takes energy in\" its proton lifts off (bond line snapping) and a red bar rises \"energy in: bond breaks\". On \"surrounded by water molecules\" pale blue water molecules turn and close round the new anion and the hydronium, and a blue bar drops \"energy out: water surrounds the ions\", with a small grey tag \"Module 5:",
+        "explain",
+        "the staircase shrinks to the top right (dim). The M5 C11 ledger draws centre with a small particle close-up beside it: one amber-outlined molecule; on \"takes energy in\" its proton lifts off (bond line snapping) and a red bar rises \"energy in: bond breaks\". On \"surrounded by water molecules\" pale blue water molecules turn and close round the new anion and the hydronium, and a blue bar drops \"energy out: water surrounds the ions\", with a small grey tag \"Module 5: hydration\" that dims. On \"balance\" a balance line writes between the bars: \"step 1 = in + out\", and three small chips write under it: \"+\", \"≈ 0\", \"−\". Bright at the end: the two bars and the three chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "ethanoic-zero": [
+        "new",
+        "the ledger's bars set to equal length (red up, blue down) on \"cancel\" and the \"≈ 0\" chip lights.",
+        "Ethanoic acid: close to zero: For ethanoic acid, the two nearly cancel: the energy to pull the proton off is almost exactly repaid when water surrounds the new ions.",
+        "cancel / minus fifty six / hardly tell them apart",
+        "On the spoken cues: The staircase returns large: its step 1 arrow becomes a short red stub labelled \"≈ +1 (close to zero)\", step 2 \"−57\", the net arrow \"≈ −56 kJ/mol\". On \"hardly tell them apart\" the scene 1 bars return small beside it with the ethanoic acid bar pulsing next to the −57 line, and a bracket \"within foam cup error\". The ledger dims. Bright at the end: the staircase net label and the bracket.",
+        "explain",
+        "the ledger's bars set to equal length (red up, blue down) on \"cancel\" and the \"≈ 0\" chip lights. The staircase returns large: its step 1 arrow becomes a short red stub labelled \"≈ +1 (close to zero)\", step 2 \"−57\", the net arrow \"≈ −56 kJ/mol\". On \"hardly tell them apart\" the scene 1 bars return small beside it with the ethanoic acid bar pulsing next to the −57 line, and a bracket \"within foam cup error\". The ledger dims. Bright at the end: the staircase net label and the bracket. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "hf-more-heat": [
+        "new",
+        "the ledger returns: on \"small\" the close-up shows a small grey-violet F⁻ with a tight, crowded shell of water molecules (compare a larger anion outline in grey), and the blue bar grows well past the red bar.",
+        "Hydrofluoric acid: more heat: Hydrofluoric acid is the surprise.",
+        "small / releases / minus sixty eight / more than the heat",
+        "On the spoken cues: On \"releases\" the \"−\" chip lights, the ledger and close-up dim, and the staircase's step 1 arrow flips to point down, blue, labelled \"≈ −11\"; step 2 \"−57\"; the net arrow lengthens past the dashed −57 level, \"≈ −68 kJ/mol\" (the scene 1 bar chart is not recalled here; the net arrow carries the value). On \"more than the heat\" a small chip writes under the staircase: \"HF: weak (most molecules stay whole), but step 1",
+        "explain",
+        "the ledger returns: on \"small\" the close-up shows a small grey-violet F⁻ with a tight, crowded shell of water molecules (compare a larger anion outline in grey), and the blue bar grows well past the red bar. On \"releases\" the \"−\" chip lights, the ledger and close-up dim, and the staircase's step 1 arrow flips to point down, blue, labelled \"≈ −11\"; step 2 \"−57\"; the net arrow lengthens past the dashed −57 level, \"≈ −68 kJ/mol\" (the scene 1 bar chart is not recalled here; the net arrow carries the value). On \"more than the heat\" a small chip writes under the staircase: \"HF: weak (most molecules stay whole), but step 1 releases heat\". Bright at the end: the staircase, the net label and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "weak-base-less": [
+        "adjust",
+        "the board clears.",
+        "A weak base: less heat: Weak bases follow the same rule.",
+        "minus fifty two / hydroxide / energy in / less",
+        "On the spoken cues: `m5x-ammonia-bottle-v1.png` small at the left with coded label \"ammonia solution\" (the label dims after the first sentence). On \"minus fifty two\" a value chip writes: \"HCl + NH₃: about −52 kJ per mol NH₃\" (no bar chart in this scene). On \"hydroxide\" the strip writes \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\" with the C06 hop (a teal token moving from water to ammonia; the OH⁻ turns violet). The staircase returns with",
+        "explain",
+        "the board clears. `m5x-ammonia-bottle-v1.png` small at the left with coded label \"ammonia solution\" (the label dims after the first sentence). On \"minus fifty two\" a value chip writes: \"HCl + NH₃: about −52 kJ per mol NH₃\" (no bar chart in this scene). On \"hydroxide\" the strip writes \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\" with the C06 hop (a teal token moving from water to ammonia; the OH⁻ turns violet). The staircase returns with its levels relabelled: top \"NH₃(aq) + H₂O(l) + H⁺(aq)\", middle \"NH₄⁺(aq) + OH⁻(aq) + H⁺(aq)\", bottom \"NH₄⁺(aq) + H₂O(l)\"; the strip dims. On \"energy in\" its step 1 arrow points up, red, \"≈ +5\"; step 2 \"−57\"; net \"≈ −52 kJ/mol\", shorter than the −57 line, and the value chip merges into the net label. On \"less\" the \"+\" chip lights. Bright at the end: the staircase and its net label. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "token flight",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "heat-not-strength": [
+        "adjust",
+        "the board clears.",
+        "Heat does not measure strength: So the heat doesn't tell you how strong a weak acid is.",
+        "ten times stronger / minus fifty six / pH",
+        "On the spoken cues: Two cards side by side: \"methanoic acid: Ka 1.8 × 10⁻⁴\" and \"ethanoic acid: Ka 1.8 × 10⁻⁵\", with a bracket \"10 × stronger\" on \"ten times stronger\". On \"minus fifty six\" a small bar inside each card grows to the same length, \"about −56\" and \"about −56\" (the bars are part of the cards). A chip \"more heat means a stronger acid\" fades in and is crossed (caption \"heat shows step 1, not strength\"). On \"pH\" the crossed",
+        "explain",
+        "the board clears. Two cards side by side: \"methanoic acid: Ka 1.8 × 10⁻⁴\" and \"ethanoic acid: Ka 1.8 × 10⁻⁵\", with a bracket \"10 × stronger\" on \"ten times stronger\". On \"minus fifty six\" a small bar inside each card grows to the same length, \"about −56\" and \"about −56\" (the bars are part of the cards). A chip \"more heat means a stronger acid\" fades in and is crossed (caption \"heat shows step 1, not strength\"). On \"pH\" the crossed chip dims and a small `m6-ph-meter-probe-beaker-v1.png` thumbnail appears with the tag \"strength: pH at equal concentration, or Ka (next video)\". Bright at the end: the two cards and the thumbnail tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So here's what to remember.",
+        "Same last step, different first step. / first step",
+        "On the spoken cues: The aid writes large and handwritten: \"Same last step, different first step.\" Under it a small staircase thumbnail whose step 1 arrow flicks through three states (up red, flat, down blue) while step 2 stays fixed at \"−57\". On \"first step\" the line writes: \"ΔH = step 1 + (−57) kJ/mol\".",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"Same last step, different first step.\" Under it a small staircase thumbnail whose step 1 arrow flicks through three states (up red, flat, down blue) while step 2 stays fixed at \"−57\". On \"first step\" the line writes: \"ΔH = step 1 + (−57) kJ/mol\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Ethanoic acid is neutralised by sodium",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. `m6-foam-cup-calorimeter-v1.png` small at the top right. Question card, worded as printed: \"50.0 mL of 1.00 mol/L ethanoic acid is mixed with 50.0 mL of 1.00 mol/L sodium hydroxide solution in a polystyrene cup. The temperature rises by 6.7 °C. Under the same conditions, the enthalpy of neutralisation of hydrochloric acid is −57 kJ/mol. Assume the density of the mixture is 1.00 g/mL and its specific heat capacity is 4.18 J g⁻¹ °C⁻¹. (a) Calculate the enthalpy of neutralisation of ethanoic acid. (b) Calculate the enthalpy change for the ionisation of ethanoic acid, and comment on its size.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no staircase, no aid, no bars.",
+        [
+            "bar fill",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card stays and shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "two thousand eight hundred joules / minus fifty six kilojoules per mole / plus one / sign",
+        "On the spoken cues: On \"two thousand eight hundred joules\" both volumes, \"1.00 g/mL\", \"4.18 J g⁻¹ °C⁻¹\" and \"6.7 °C\" are underlined and lines write: \"m = 100.0 mL × 1.00 g/mL = 100.0 g\" then \"q = 100.0 g × 4.18 J g⁻¹ °C⁻¹ × 6.7 °C = 2800.6 J\", the m line dimming. On \"minus fifty six\" \"1.00 mol/L\" and \"50.0 mL\" are underlined, \"n(H₂O) = 1.00 × 0.0500 = 0.0500 mol\" and \"ΔH = −2.8006 kJ ÷ 0.0500 mol = −56.01 → −56 kJ/mol\" write, the q",
+        "explain",
+        "the question card stays and shrinks to the top. On \"two thousand eight hundred joules\" both volumes, \"1.00 g/mL\", \"4.18 J g⁻¹ °C⁻¹\" and \"6.7 °C\" are underlined and lines write: \"m = 100.0 mL × 1.00 g/mL = 100.0 g\" then \"q = 100.0 g × 4.18 J g⁻¹ °C⁻¹ × 6.7 °C = 2800.6 J\", the m line dimming. On \"minus fifty six\" \"1.00 mol/L\" and \"50.0 mL\" are underlined, \"n(H₂O) = 1.00 × 0.0500 = 0.0500 mol\" and \"ΔH = −2.8006 kJ ÷ 0.0500 mol = −56.01 → −56 kJ/mol\" write, the q line dimming; the answer chip \"(a) −56 kJ/mol (2 s.f.)\" pins. On \"plus one\" \"−57 kJ/mol\" in the question is underlined and \"step 1 = −56 − (−57) = +1 kJ/mol\" writes; chip \"(b) about +1 kJ/mol: close to zero\". On \"sign\" a chip \"−57 − (−56) = −1 kJ/mol\" fades in and is crossed (caption \"measured minus water step\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card: \"Hydrogen cyanide, HCN, is a weak acid.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Hydrogen cyanide is a weak acid,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card: \"Hydrogen cyanide, HCN, is a weak acid. Its ionisation, HCN(aq) → H⁺(aq) + CN⁻(aq), absorbs about 45 kJ/mol. Using −57 kJ/mol for H⁺(aq) + OH⁻(aq) → H₂O(l), predict the enthalpy of neutralisation of hydrogen cyanide by sodium hydroxide, and explain why it differs from that of hydrochloric acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no staircase, no bars.",
+        [
+            "bar fill",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the question card stays.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "minus twelve / used up / released",
+        "On the spoken cues: On \"minus twelve\" \"absorbs about 45 kJ/mol\" and \"−57 kJ/mol\" are underlined; a compact staircase draws: step 1 up, red, \"+45\"; step 2 down, blue, \"−57\"; net \"−12 kJ/mol\"; the answer chip \"ΔH ≈ −12 kJ/mol\" pins. On \"used up\" the red arrow pulses and a tag writes \"most of the 57 kJ goes into step 1; HCl: no step 1\". On \"released\" a chip \"−57 − 45 = −102 kJ/mol\" fades in and is crossed (caption \"absorbed energy is +\").",
+        "explain",
+        "the question card stays. On \"minus twelve\" \"absorbs about 45 kJ/mol\" and \"−57 kJ/mol\" are underlined; a compact staircase draws: step 1 up, red, \"+45\"; step 2 down, blue, \"−57\"; net \"−12 kJ/mol\"; the answer chip \"ΔH ≈ −12 kJ/mol\" pins. On \"used up\" the red arrow pulses and a tag writes \"most of the 57 kJ goes into step 1; HCl: no step 1\". On \"released\" a chip \"−57 − 45 = −102 kJ/mol\" fades in and is crossed (caption \"absorbed energy is +\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the question card writes, each line lighting on its words: \"1 Water step: about −57 kJ/mol.\"",
+        "Decision rule and handoff: So for any weak acid or base neutralisation, start from minus fifty seven for making water, add the ionising step with its sign, whether it's a weak acid giving up protons or a weak base making hydroxide, and remember that the reaction still goes to completion.",
+        "Next",
+        "On the spoken cues: \"2 Add the ionisation step, with its sign (+, ≈ 0 or −).\" \"3 The weak acid or base still reacts completely.\" \"4 Heat does not rank strength: use pH or Ka.\" On \"Next\" a chip \"Next: Ka and pKa, and what they say about acid strength\" appears with a small `m6-ph-meter-probe-beaker-v1.png`.",
+        "explain",
+        "the question card writes, each line lighting on its words: \"1 Water step: about −57 kJ/mol.\" \"2 Add the ionisation step, with its sign (+, ≈ 0 or −).\" \"3 The weak acid or base still reacts completely.\" \"4 Heat does not rank strength: use pH or Ka.\" On \"Next\" a chip \"Next: Ka and pKa, and what they say about acid strength\" appears with a small `m6-ph-meter-probe-beaker-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6C10_ROWS = {
+    "hook": [
+        "adjust",
+        "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled (coded) \"HX, 0.0500 mol/L\" and \"ethanoic acid, 0.500 mol/L\".",
+        "Hook (the more acidic solution, the weaker acid?): Two acids, two pH readings.",
+        "two point seven eight / two point five two / stronger / ten times more concentrated",
+        "On the spoken cues: On \"two point seven eight\" the first amber readout counts to \"2.78\"; on \"two point five two\" the second counts to \"2.52\" and a small tag \"more acidic\" writes beside that readout (no separate pH ruler). On \"stronger\" a chip \"lower pH, so stronger acid?\" writes with a \"?\". On \"ten times more concentrated\" both concentration labels get pen rings and a bracket \"10 ×\" joins them; the chip's \"?\" turns into a pen cross",
+        "explain",
+        "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled (coded) \"HX, 0.0500 mol/L\" and \"ethanoic acid, 0.500 mol/L\". On \"two point seven eight\" the first amber readout counts to \"2.78\"; on \"two point five two\" the second counts to \"2.52\" and a small tag \"more acidic\" writes beside that readout (no separate pH ruler). On \"stronger\" a chip \"lower pH, so stronger acid?\" writes with a \"?\". On \"ten times more concentrated\" both concentration labels get pen rings and a bracket \"10 ×\" joins them; the chip's \"?\" turns into a pen cross (caption \"different concentrations: pH can't compare strength\"), and the \"more acidic\" tag fades. Heading writes: \"Which acid is stronger?\" Bright at the end: the heading, the two readouts (with their concentration labels) and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "ka-is-the-number": [
+        "adjust",
+        "the plates shrink to the top right.",
+        "Ka is that number: You've met that number in Module 5: K a, the equilibrium constant for the acid ionising, hydronium times the anion, over the whole acid.",
+        "K a / same concentration / one point eight times ten to the minus five / from the pH",
+        "On the spoken cues: The strip writes \"HX(aq) + H₂O(l) ⇌ H₃O⁺(aq) + X⁻(aq)\" and the M5 C10 builder writes \"Ka = [H₃O⁺][X⁻] / [HX]\" with H₂O in the grey \"left out\" tray and a small grey tag \"Module 5\" (dims after its sentence). On \"same concentration\" a small tag writes under it: \"Ka: same at any concentration (fixed temperature)\"; the \"Module 5\" tag has dimmed. On \"one point eight times ten to the minus five\" `m6-vinegar-bottle-v1.png`",
+        "explain",
+        "the plates shrink to the top right. The strip writes \"HX(aq) + H₂O(l) ⇌ H₃O⁺(aq) + X⁻(aq)\" and the M5 C10 builder writes \"Ka = [H₃O⁺][X⁻] / [HX]\" with H₂O in the grey \"left out\" tray and a small grey tag \"Module 5\" (dims after its sentence). On \"same concentration\" a small tag writes under it: \"Ka: same at any concentration (fixed temperature)\"; the \"Module 5\" tag has dimmed. On \"one point eight times ten to the minus five\" `m6-vinegar-bottle-v1.png` appears small at the left with the chip \"ethanoic acid: Ka = 1.8 × 10⁻⁵ (25 °C)\". On \"from the pH\" a chip \"HX: Ka = ?\" writes with an arrow pointing back from the HX readout \"2.78\". Bright at the end: the Ka line, the ethanoic acid chip and the \"?\" chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "we-hydronium": [
+        "new",
+        "the board clears to the three zones.",
+        "Worked example: the hydronium, and strong or weak: Here's the task: find K a for H X.",
+        "ten to the minus two point seven eight / one point six six times ten to the minus three / three percent / equal to its concentration",
+        "On the spoken cues: Task line: \"Find Ka for HX\". Equation strip: \"HX(aq) + H₂O(l) ⇌ H₃O⁺(aq) + X⁻(aq)\". Givens card: \"HX: 0.0500 mol/L\" | \"pH = 2.78 (25 °C)\". Step chip \"Step 1 of 2: [H₃O⁺]\". On \"ten to the minus two point seven eight\" \"pH = 2.78\" is underlined, the equation strip dims, and the line \"[H₃O⁺] = 10⁻²·⁷⁸\" writes; on \"one point six six\" it completes \"= 1.66 × 10⁻³ mol/L\" with a small grey tag \"keep the digits; round at the",
+        "explain",
+        "the board clears to the three zones. Task line: \"Find Ka for HX\". Equation strip: \"HX(aq) + H₂O(l) ⇌ H₃O⁺(aq) + X⁻(aq)\". Givens card: \"HX: 0.0500 mol/L\" | \"pH = 2.78 (25 °C)\". Step chip \"Step 1 of 2: [H₃O⁺]\". On \"ten to the minus two point seven eight\" \"pH = 2.78\" is underlined, the equation strip dims, and the line \"[H₃O⁺] = 10⁻²·⁷⁸\" writes; on \"one point six six\" it completes \"= 1.66 × 10⁻³ mol/L\" with a small grey tag \"keep the digits; round at the end\" (dims). On \"three percent\" a short bar compares: a long bar \"c = 0.0500\" with a teal chunk \"1.66 × 10⁻³\" and the label \"1.66 × 10⁻³ ÷ 0.0500 = 3.3%\". On \"equal to its concentration\" a faint dashed full-length teal bar overlays the long bar, labelled \"strong: [H₃O⁺] = c\", then fades with its label; the label \"weak\" writes beside the short chunk. The bar and its labels fade as the result shrinks to a kept chip \"[H₃O⁺] = 1.66 × 10⁻³ mol/L\". Bright at the end: the task line, the givens card and the kept chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Mark underline",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "we-ice-backwards": [
+        "new",
+        "step chip \"Step 2 of 2: Ka\".",
+        "Worked example: the ICE table backwards: Now the table, but this time we know the bottom row first.",
+        "one hydronium and one X minus / zero point zero four eight three / five point seven times ten to the minus five / two decimal places / nothing is approximated",
+        "On the spoken cues: The C08 ICE table draws under the strip with its I and C rows faint; the E row fills first: the H₃O⁺ cell takes the kept chip value \"1.66 × 10⁻³\". On \"one hydronium and one X minus\" the strip brightens briefly and its 1 : 1 coefficients pulse (then it dims again) and the X⁻ cell fills \"1.66 × 10⁻³\"; small upward arrows \"work backwards\" point from the E row to the faint C row (\"+1.66 × 10⁻³\", \"−1.66 × 10⁻³\"). On",
+        "explain",
+        "step chip \"Step 2 of 2: Ka\". The C08 ICE table draws under the strip with its I and C rows faint; the E row fills first: the H₃O⁺ cell takes the kept chip value \"1.66 × 10⁻³\". On \"one hydronium and one X minus\" the strip brightens briefly and its 1 : 1 coefficients pulse (then it dims again) and the X⁻ cell fills \"1.66 × 10⁻³\"; small upward arrows \"work backwards\" point from the E row to the faint C row (\"+1.66 × 10⁻³\", \"−1.66 × 10⁻³\"). On \"zero point zero four eight three\" the HX cell fills \"0.0500 − 0.00166 = 0.0483\" and the \"work backwards\" arrows fade. The I and C rows dim and the givens card dims. On \"five point seven times ten to the minus five\" the line writes: \"Ka = (1.66 × 10⁻³)² / 0.0483 = 5.70 × 10⁻⁵ → 5.7 × 10⁻⁵\". On \"two decimal places\" a small grey tag \"pH 2 d.p. → [H₃O⁺] 2 s.f. → Ka 2 s.f.\" writes and dims after its sentence (the C07 rule card in reverse). On \"nothing is approximated\" a small grey tag \"measured [H₃O⁺]: exact c − x, no 5% check\" writes and dims. Answer chip \"HX: Ka = 5.7 × 10⁻⁵\" pins. Bright at the end: the task line, the E row and the answer chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "hook-answer": [
+        "new",
+        "the board clears.",
+        "Back to the hook: So H X has a K a about three times bigger than ethanoic acid's.",
+        "three times / stronger / dilute",
+        "On the spoken cues: The two readouts from scene 1 return small at the top. On \"three times\" two chips stand side by side: \"HX: Ka = 5.7 × 10⁻⁵\" and \"ethanoic acid: Ka = 1.8 × 10⁻⁵\", with a bracket \"about 3 ×\". On \"stronger\" the HX chip gets a teal tick. On \"dilute\" the 0.0500 label under the HX readout pulses and the scene 1 crossed chip returns briefly. A two-line card writes: \"pH: one solution (depends on Ka and c).\" \"Ka: the acid",
+        "explain",
+        "the board clears. The two readouts from scene 1 return small at the top. On \"three times\" two chips stand side by side: \"HX: Ka = 5.7 × 10⁻⁵\" and \"ethanoic acid: Ka = 1.8 × 10⁻⁵\", with a bracket \"about 3 ×\". On \"stronger\" the HX chip gets a teal tick. On \"dilute\" the 0.0500 label under the HX readout pulses and the scene 1 crossed chip returns briefly. A two-line card writes: \"pH: one solution (depends on Ka and c).\" \"Ka: the acid itself.\" Bright at the end: the two Ka chips and the two-line card. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "pka": [
+        "new",
+        "the board clears.",
+        "PKa: K a values are awkward, full of negative powers of ten.",
+        "p K a / four point two four / four point seven four",
+        "On the spoken cues: The M5 C10 log ruler draws across the centre, Ka on its upper side (ticks 10⁰ to 10⁻¹², tag \"each tick is ten times the last\"). On \"p K a\" the definition writes above it: \"pKa = −log Ka\", with a small grey tag \"like pH = −log[H₃O⁺]\" that dims when the HX marker drops. The lower side of the ruler labels itself \"pKa\" with numbers 0 to 12 under the matching ticks. On \"four point two four\" the HX marker drops at 5.7 ×",
+        "explain",
+        "the board clears. The M5 C10 log ruler draws across the centre, Ka on its upper side (ticks 10⁰ to 10⁻¹², tag \"each tick is ten times the last\"). On \"p K a\" the definition writes above it: \"pKa = −log Ka\", with a small grey tag \"like pH = −log[H₃O⁺]\" that dims when the HX marker drops. The lower side of the ruler labels itself \"pKa\" with numbers 0 to 12 under the matching ticks. On \"four point two four\" the HX marker drops at 5.7 × 10⁻⁵ with the line \"pKa = −log(5.7 × 10⁻⁵) = 4.24\" and its pKa label below; on \"four point seven four\" the HX working line shrinks into its marker label and the ethanoic acid marker drops with \"pKa = −log(1.8 × 10⁻⁵) = 4.74\", which then shrinks the same way. On \"two decimal places\" a small tag \"Ka 2 s.f. → pKa 2 d.p.\" writes and dims. Bright at the end: the definition and the two markers with their labels. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "reading-pka": [
+        "new",
+        "the ruler stays.",
+        "Reading pKa: The minus sign flips the direction.",
+        "smaller / lower / factor of ten / three",
+        "On the spoken cues: On \"smaller\" an arrow along the upper side labelled \"Ka bigger\" points left (toward 10⁰) while an arrow along the lower side labelled \"pKa smaller\" points the same way; on \"lower\" a single arrow \"stronger acid\" lights over both. A chip \"bigger pKa, stronger acid\" fades in and is crossed (caption \"lower pKa, stronger\"). On \"factor of ten\" the span from pKa 4 to 5 brackets itself \"× 10 in Ka\". On \"three\" the bracket",
+        "explain",
+        "the ruler stays. On \"smaller\" an arrow along the upper side labelled \"Ka bigger\" points left (toward 10⁰) while an arrow along the lower side labelled \"pKa smaller\" points the same way; on \"lower\" a single arrow \"stronger acid\" lights over both. A chip \"bigger pKa, stronger acid\" fades in and is crossed (caption \"lower pKa, stronger\"). On \"factor of ten\" the span from pKa 4 to 5 brackets itself \"× 10 in Ka\". On \"three\" the bracket between 4.24 and 4.74 labels \"0.50 → 10⁰·⁵⁰ ≈ 3.2\", and a faint \"5?\" beside it is crossed (log scale, not halfway). On \"ten to the minus p K a\" the line \"Ka = 10⁻ᵖᴷᵃ\" writes under the ruler. Bright at the end: the arrow, the crossed chip and the line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "strong-weak": [
+        "new",
+        "the ruler slides up and extends to the left past 10⁰, where both sides grey into one hatched zone labelled \"strong: too large to measure in water\" (no Ka or pKa numbers in the zone).",
+        "Strong and weak, with Ka and pKa: This is how K a separates strong acids from weak ones.",
+        "molecules and ions / no molecules left / strong",
+        "On the spoken cues: On \"molecules and ions\" a small lens thumbnail (amber-outlined molecules with a few ions, C08) sits under the weak side, which lights teal \"weak: Ka < 1, pKa > 0\"; the thumbnail greys when its sentence ends. On \"no molecules left\" a second thumbnail (only ions, C05 HCl lens) sits under the hatched zone and greys on \"strong\", when the zone label pulses (no extra tag). On \"measured hydronium\" the two-bar test from",
+        "explain",
+        "the ruler slides up and extends to the left past 10⁰, where both sides grey into one hatched zone labelled \"strong: too large to measure in water\" (no Ka or pKa numbers in the zone). On \"molecules and ions\" a small lens thumbnail (amber-outlined molecules with a few ions, C08) sits under the weak side, which lights teal \"weak: Ka < 1, pKa > 0\"; the thumbnail greys when its sentence ends. On \"no molecules left\" a second thumbnail (only ions, C05 HCl lens) sits under the hatched zone and greys on \"strong\", when the zone label pulses (no extra tag). On \"measured hydronium\" the two-bar test from scene 3 returns small as a decision line: \"[H₃O⁺] = c → strong, no Ka\" | \"[H₃O⁺] ≪ c → weak, calculate Ka\". Bright at the end: the two zones and the decision line. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "Cam lens zoom",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "ka-kb-kw": [
+        "new",
+        "the board clears.",
+        "Conjugate bases: Ka × Kb = Kw: K a also tells you about the conjugate base.",
+        "conjugate base / cancel / K w / five point six times ten to the minus ten",
+        "On the spoken cues: Two strips write: \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" and, on \"conjugate base\", \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\", with a C06 bracket \"conjugate pair\" joining CH₃COOH and CH₃COO⁻. The builder writes \"Ka = [H₃O⁺][CH₃COO⁻] / [CH₃COOH]\" and \"Kb = [CH₃COOH][OH⁻] / [CH₃COO⁻]\". On \"multiply\" the two fractions slide together into one product; on \"cancel\" [CH₃COOH] top and bottom and [CH₃COO⁻] top",
+        "explain",
+        "the board clears. Two strips write: \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" and, on \"conjugate base\", \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\", with a C06 bracket \"conjugate pair\" joining CH₃COOH and CH₃COO⁻. The builder writes \"Ka = [H₃O⁺][CH₃COO⁻] / [CH₃COOH]\" and \"Kb = [CH₃COOH][OH⁻] / [CH₃COO⁻]\". On \"multiply\" the two fractions slide together into one product; on \"cancel\" [CH₃COOH] top and bottom and [CH₃COO⁻] top and bottom strike through in pairs, leaving \"[H₃O⁺][OH⁻]\". On \"K w\" it relabels \"= Kw = 1.0 × 10⁻¹⁴ (25 °C)\" and the result \"Ka × Kb = Kw\" pins. The strips dim. On \"five point six times ten to the minus ten\" the line \"Kb(CH₃COO⁻) = 1.0 × 10⁻¹⁴ ÷ 1.8 × 10⁻⁵ = 5.6 × 10⁻¹⁰\" writes. Bright at the end: the pinned relation and the Kb line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "conjugate-ranking": [
+        "new",
+        "the ruler returns with the HX and ethanoic acid markers.",
+        "Ranking conjugate bases: Because K a times K b is fixed, a stronger acid has a weaker conjugate base.",
+        "stronger acid / weaker conjugate base / one point eight times ten to the minus ten / conjugate pair",
+        "On the spoken cues: On \"stronger acid\" the fixed-product bar draws: on the log ruler, each acid's Ka segment (teal, from 10⁻¹⁴ upward) and its conjugate base's Kb segment (violet) together span the whole 10⁻¹⁴ to 10⁰ range, tag \"Ka × Kb = 1.0 × 10⁻¹⁴: a longer Ka bar means a shorter Kb bar\". On \"weaker conjugate base\" the HX teal segment is longer and its violet segment shorter than ethanoic acid's. On \"one point eight\" the line",
+        "explain",
+        "the ruler returns with the HX and ethanoic acid markers. On \"stronger acid\" the fixed-product bar draws: on the log ruler, each acid's Ka segment (teal, from 10⁻¹⁴ upward) and its conjugate base's Kb segment (violet) together span the whole 10⁻¹⁴ to 10⁰ range, tag \"Ka × Kb = 1.0 × 10⁻¹⁴: a longer Ka bar means a shorter Kb bar\". On \"weaker conjugate base\" the HX teal segment is longer and its violet segment shorter than ethanoic acid's. On \"one point eight\" the line \"Kb(X⁻) = 1.0 × 10⁻¹⁴ ÷ 5.7 × 10⁻⁵ = 1.8 × 10⁻¹⁰\" writes, and the ranking card writes: \"acid: HX > ethanoic acid\" | \"conjugate base: ethanoate > X⁻\"; the fixed-product bar dims and the Kb line merges into the ranking card. On \"conjugate pair\" a chip \"Ka(CH₃COOH) × Kb(NH₃) = Kw\" fades in and is crossed (caption \"conjugate pair only\"). Bright at the end: the ranking card and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So here's what to remember. p K a is like golf: the lowest score wins.",
+        "p K a is like golf: the lowest score wins. / K a times K b equals K w",
+        "On the spoken cues: The aid writes large and handwritten: \"pKa is like golf: the lowest score wins.\" with a tiny ruler thumbnail, the lowest pKa marker flagged. On \"K a times K b\" the second line writes: \"Conjugate pair: Ka × Kb = Kw. Stronger acid, weaker conjugate base.\" Each earlier line dims slightly as the next writes.",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"pKa is like golf: the lowest score wins.\" with a tiny ruler thumbnail, the lowest pKa marker flagged. On \"K a times K b\" the second line writes: \"Conjugate pair: Ka × Kb = Kw. Stronger acid, weaker conjugate base.\" Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Lactic acid is the weak acid",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Lactic acid is the weak monoprotic acid that forms when milk turns sour. A 0.200 mol/L solution of lactic acid has a pH of 2.28 at 25 °C. Calculate the acid dissociation constant, Ka, and the pKa of lactic acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no table, no ruler, no aid.",
+        [
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card stays and shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "five point two five times ten to the minus three / zero point one nine five / one point four times ten to the minus four / three point eight five",
+        "On the spoken cues: On \"five point two five\" \"pH of 2.28\" is underlined and \"[H₃O⁺] = [A⁻] = 10⁻²·²⁸ = 5.25 × 10⁻³ mol/L\" writes. On \"zero point one nine five\" \"0.200 mol/L\" is underlined and \"[HA] = 0.200 − 0.00525 = 0.195 mol/L\" writes; the first line dims. On \"one point four\" \"Ka = (5.25 × 10⁻³)² / 0.195 = 1.41 × 10⁻⁴ → 1.4 × 10⁻⁴\" writes and the answer chip \"Ka = 1.4 × 10⁻⁴\" pins. On \"three point eight five\" \"pKa = −log(1.41 ×",
+        "explain",
+        "the question card stays and shrinks to the top. On \"five point two five\" \"pH of 2.28\" is underlined and \"[H₃O⁺] = [A⁻] = 10⁻²·²⁸ = 5.25 × 10⁻³ mol/L\" writes. On \"zero point one nine five\" \"0.200 mol/L\" is underlined and \"[HA] = 0.200 − 0.00525 = 0.195 mol/L\" writes; the first line dims. On \"one point four\" \"Ka = (5.25 × 10⁻³)² / 0.195 = 1.41 × 10⁻⁴ → 1.4 × 10⁻⁴\" writes and the answer chip \"Ka = 1.4 × 10⁻⁴\" pins. On \"three point eight five\" \"pKa = −log(1.41 × 10⁻⁴) = 3.85\" writes and joins the chip; \"Ka\" and \"pKa\" in the question are underlined. On \"slip\" a chip \"Ka = 5.2 × 10⁻³\" fades in and is crossed (caption \"that's [H₃O⁺], not Ka\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card: \"The pKa values of three acids at 25 °C are: hydrofluoric acid, HF, 3.17; methanoic acid, HCOOH, 3.74; hydrocyanic acid, HCN, 9.21.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. The p K a values of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card: \"The pKa values of three acids at 25 °C are: hydrofluoric acid, HF, 3.17; methanoic acid, HCOOH, 3.74; hydrocyanic acid, HCN, 9.21. (a) List the acids in order of decreasing strength. (b) Identify the strongest base among F⁻, HCOO⁻ and CN⁻, and calculate its Kb. Kw = 1.0 × 10⁻¹⁴ at 25 °C.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ruler, no aid.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the question card stays.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "hydrofluoric acid / cyanide / one point six times ten to the minus five / backwards",
+        "On the spoken cues: On \"hydrofluoric acid\" the three pKa values are underlined and a mini ruler places them, lowest first; the ranking line writes \"(a) HF > HCOOH > HCN\". On \"cyanide\" \"F⁻, HCOO⁻ and CN⁻\" is underlined and \"(b) strongest base: CN⁻ (weakest acid)\" writes. On \"one point six times ten to the minus five\" \"Kw = 1.0 × 10⁻¹⁴\" is underlined and the lines \"Ka(HCN) = 10⁻⁹·²¹ = 6.2 × 10⁻¹⁰\" and \"Kb(CN⁻) = 1.0 × 10⁻¹⁴ ÷ 6.2 × 10⁻¹⁰",
+        "explain",
+        "the question card stays. On \"hydrofluoric acid\" the three pKa values are underlined and a mini ruler places them, lowest first; the ranking line writes \"(a) HF > HCOOH > HCN\". On \"cyanide\" \"F⁻, HCOO⁻ and CN⁻\" is underlined and \"(b) strongest base: CN⁻ (weakest acid)\" writes. On \"one point six times ten to the minus five\" \"Kw = 1.0 × 10⁻¹⁴\" is underlined and the lines \"Ka(HCN) = 10⁻⁹·²¹ = 6.2 × 10⁻¹⁰\" and \"Kb(CN⁻) = 1.0 × 10⁻¹⁴ ÷ 6.2 × 10⁻¹⁰ = 1.6 × 10⁻⁵\" write, the ranking line dimming; answer chip \"Kb(CN⁻) = 1.6 × 10⁻⁵\" pins. On \"backwards\" a chip \"HCN strongest (9.21 is biggest)\" fades in and is crossed (caption \"lowest pKa wins\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the question card writes, each line lighting on its words: \"1 Strength: compare Ka or pKa (pH only at equal c).\"",
+        "Decision rule and handoff: So to compare acid strength, compare K a or p K a, never pH alone unless the concentrations match.",
+        "Next",
+        "On the spoken cues: \"2 Ka from pH: [H₃O⁺] = 10⁻ᵖᴴ = [A⁻]; [HA] = c − [H₃O⁺]; Ka = [H₃O⁺]² / [HA].\" \"3 pKa = −log Ka; lower pKa, stronger acid.\" \"4 Conjugate pair: Kb = Kw ÷ Ka.\" On \"Next\" a chip \"Next: weak acid pH and Ka method practice\" appears with a small `m6-ph-meter-probe-beaker-v1.png`.",
+        "explain",
+        "the question card writes, each line lighting on its words: \"1 Strength: compare Ka or pKa (pH only at equal c).\" \"2 Ka from pH: [H₃O⁺] = 10⁻ᵖᴴ = [A⁻]; [HA] = c − [H₃O⁺]; Ka = [H₃O⁺]² / [HA].\" \"3 pKa = −log Ka; lower pKa, stronger acid.\" \"4 Conjugate pair: Kb = Kw ÷ Ka.\" On \"Next\" a chip \"Next: weak acid pH and Ka method practice\" appears with a small `m6-ph-meter-probe-beaker-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+# END generated rows: m6c09-m6c10
+
+
 LESSONS = {
     'c5': {
         'design': D + 'lessons/chem-m5-c05.md',
@@ -5823,6 +6351,34 @@ LESSONS = {
         'rows': SKILLS02_ROWS,
     },
     # END generated entries: m6c03-m6c08, skills01, skills02
+    # BEGIN generated entries: m6c09-m6c10
+    'm6c09': {
+        'design': D + 'lessons/chem-m6-c09.md',
+        'learning_review': D + 'checks/m6c09-learning-review.md',
+        'science_check': D + 'checks/m6c09-claude-science-check.md',
+        'meta': {"title": "Why can weak-acid neutralisation release different heat? Same last step, different first step", "subtitle": "Swap hydrochloric acid for a weak acid in a neutralisation and you might expect less heat. Ethanoic acid gives almost the same heat, and hydrofluoric acid gives more. What really decides the heat a weak acid releases?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 13, "lessonIntent": "explaining with particles why a weak acid still reacts completely with hydroxide; writing the enthalpy of neutralisation of a weak acid or base as the ionisation step plus about −57 kJ/mol; explaining why the ionisation step can absorb or release energy (bond breaking against water surrounding the new ions); explaining the ethanoic acid, hydrofluoric acid and ammonia values; calculating an ionisation step from measured data with the right sign; explaining why neutralisation heat cannot rank acid strength. No new calorimetry method (chem-m6-c03), no practical error analysis (chem-m6-p02), no Ka or pKa comparisons (chem-m6-c10), no weak acid with weak base."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "same-different", "reacts-completely", "two-steps", "ionising-either-way", "ethanoic-zero", "hf-more-heat", "weak-base-less", "heat-not-strength", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "C03 (H⁺ + OH⁻ → H₂O, spectators, about −57 kJ/mol per mole of water, q = mcΔT with the total mass, ΔH = −q/n(H₂O), rounding to ΔT's significant figures, \"acids that only partly split can give different values, and they get their own video\"). C05 (strong and weak acids, most weak-acid molecules stay whole, the equilibrium arrow; ethanoic acid and HF are weak; ammonia is a weak base). C06 (NH₃ + H₂O ⇌ NH₄⁺ + OH⁻). C01 (H⁺(aq) is H₃O⁺). Module 5: Le Chatelier's principle (removing a product shifts the equilibrium right); chem-m5-c11 (dissolving: separating ions costs energy, hydration releases it, the sum sets the sign); chem-m5-c10 (Ka named, bigger Ka stronger). Year 11 Module 4: Hess's law, exothermic and endothermic, ΔH sign. Not assumed: pKa, Ka × Kb (chem-m6-c10), entropy beyond Module 5 C11's \"spreading out\".", "startsWith": "Compare measured heats for strong and weak reactants. The video opens: Here's a prediction to make. Mix one mole per litre hydrochloric acid with the same amount of sodium hydroxide, and you get about minus fifty seven kilojoules per mole of water. Now swap in ethanoic acid, a weak acid.", "stopsAfter": "explaining with particles why a weak acid still reacts completely with hydroxide; writing the enthalpy of neutralisation of a weak acid or base as the ionisation step plus about −57 kJ/mol; explaining why the ionisation step can absorb or release energy (bond breaking against water surrounding the new ions); explaining the ethanoic acid, hydrofluoric acid and ammonia values; calculating an ionisation step from measured data with the right sign; explaining why neutralisation heat cannot rank acid strength. No new calorimetry method (chem-m6-c03), no practical error analysis (chem-m6-p02), no Ka or pKa comparisons (chem-m6-c10), no weak acid with weak base.", "nextLesson": "what Ka and pKa say about acid strength (route chem-m6-c10)."},
+        'teaching': {"task": "Swap hydrochloric acid for a weak acid in a neutralisation and you might expect less heat. Ethanoic acid gives almost the same heat, and hydrofluoric acid gives more. What really decides the heat a weak acid releases?", "causalExplanation": "(1) ethanoic acid gives almost the same heat as HCl, and HF gives more: what decides the heat? (1); (2) a strong acid's hydrogen ions are already free, so only H⁺ + OH⁻ → H₂O happens (C03); a weak acid's protons are mostly still on whole molecules (C05) (2); (3) hydroxide removes the few hydronium ions, the equilibrium shifts right, more molecules ionise, until all have reacted: one extra step, not an incomplete reaction (3); (4) Hess's law: total = ionisation step + water step (about −57), so the difference is all in step one (4); (5) step one has energy in (a bond breaks) and energy out (water surrounds the new ions), so its sign varies (5); (6) ethanoic acid: the two nearly cancel, about −56 (6); (7) HF: the small fluoride ion holds water tightly, more out than in, about −68; still weak (7); (8) ammonia: its step takes energy in, about −52 (8); (9) so heat does not rank strength: methanoic acid is ten times stronger but gives the same heat; use pH or Ka (9); memory aid (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).", "conversationalApproach": "one surprise carries the video: swap hydrochloric acid for a weak acid and most people predict less heat, but ethanoic acid gives almost the same and hydrofluoric acid gives more. The particle lens shows that a weak acid still reacts completely (hydroxide removes hydronium, the equilibrium shifts right), Hess's law splits the heat into an ionisation step plus the water step of about −57 kJ/mol, and the energy ledger shows why that first step can absorb or release energy. Ethanoic acid, hydrofluoric acid and ammonia are then explained on the same staircase, and methanoic acid shows that heat cannot rank strength. Two exam questions follow with brief feedback.", "openingDecision": "Here's a prediction to make. Mix one mole per litre hydrochloric acid with the same amount of sodium hydroxide, and you get about minus fifty seven kilojoules per mole of water. Now swap in ethanoic acid, a weak acid. Most people predict much less heat. The measured value is about minus fifty six, almost the same. And hydrofluoric acid, also weak, gives about minus sixty eight: more heat, not less. So what really decides the heat?", "understandingCheck": "(A1) \"50.0 mL of 1.00 mol/L ethanoic acid is mixed with 50.0 mL of 1.00 mol/L sodium hydroxide solution in a polystyrene cup. The temperature rises by 6.7 °C. Under the same conditions, the enthalpy of neutralisation of hydrochloric acid is −57 kJ/mol. Assume the density of the mixture is 1.00 g/mL and its specific heat capacity is 4.18 J g⁻¹ °C⁻¹. (a) Calculate the enthalpy of neutralisation of ethanoic acid. (b) Calculate the enthalpy change for the ionisation of ethanoic acid, and comment on its size.\" Scenes 4 and 6 give the model and the ethanoic acid value in words only; the calculation from data is new. Crossed mistake: \"−57 − (−56) = −1 kJ/mol\" (subtraction the wrong way round). (A2) \"Hydrogen cyanide, HCN, is a weak acid. Its ionisation, HCN(aq) → H⁺(aq) + CN⁻(aq), absorbs about 45 kJ/mol. Using −57 kJ/mol for H⁺(aq) + OH⁻(aq) → H₂O(l), predict the enthalpy of neutralisation of hydrogen cyanide by sodium hydroxide, and explain why it differs from that of hydrochloric acid.\" New acid with a large endothermic step (the video's acids are near zero and negative; its endothermic case is a base). Crossed mistake: \"−57 − 45 = −102 kJ/mol\" (absorbed energy counted as released).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to measure the enthalpy of neutralisation (ACSCH093)\" \"model neutralisation of strong and weak acids and bases using a variety of media\" this video starts from measured enthalpies of neutralisation for strong and weak reactants and stops at a particle and energy model of the extra ionisation step. It teaches: the surprise that weak acids do not simply give less heat (ethanoic acid about the same as a strong acid, hydrofluoric acid more); that a weak acid still reacts completely, because hydroxide removes hydronium and the acid's equilibrium shifts right (Module 5 Le Chatelier callback); the two-step energy count by Hess's law (Year 11 callback): ionisation step plus the water step of about −57 kJ/mol; why the ionisation step can absorb or release energy (a bond breaks, energy in; water surrounds the new ions, energy out; Module 5 C11 callback); three cases (ethanoic acid close to zero, HF negative, ammonia positive); why neutralisation heat cannot rank acid strength. Not here: the calorimetry method and q = mcΔT taught again (chem-m6-c03; used once in attempt 1 as application, with every assumption on screen); the practical and its errors (chem-m6-p02); Ka and pKa as strength measures (chem-m6-c10, the next video; named only in scene 9); entropy as the reason HF is weak despite releasing heat (author note e; not voiced beyond one clause); weak acid with weak base (site card 3 values are wrong, see corrections); titration curves (chem-m6-c14)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole weak acid molecules amber-outlined (C05, C08); the acid's anion grey-violet; spectator ions grey; water pale blue; heat warm orange ripples (C03); energy in a warm red arrow or bar pointing up, energy out a cool blue arrow or bar pointing down (M5 C11 ledger, blue here so it never clashes with teal hydronium); temperature readouts amber digits. Board layout (constant, C03 and C08): top-left the short question line; the centre holds the lens, the staircase or the bar chart, one at a time; a plate sits small at the left only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. The staircase counts as one item; only its current arrow and its label are bright. Reuse: painted plates (inspected 20 Oct): `m6-foam-cup-calorimeter-v1.png` (white lidded foam cup with a cutaway window, clear liquid, steel probe through a bung; no readout, so a coded readout chip sits on the probe top; scenes 1, 11 and the handoff), `m6-vinegar-bottle-v1.png` (plain glass bottle of pale amber vinegar, wooden-look cap, no label; scene 2, small, coded label \"ethanoic (acetic) acid\"), `m5x-ammonia-bottle-v1.png` (scene 8, coded label \"ammonia solution\"). HF and HCN have no plates on purpose: they appear as data cards with a small grey tag \"data from careful lab measurements\" (HF) or as a worded question (HCN), so no hazardous substance is shown in a school cup. No new plates needed. No human figures.", "transitionPlan": "Two calorimeter plates open with amber readouts and a ΔH bar chart with a dashed −57 line; two particle lenses compare a strong and a weak acid, then the weak-acid lens enlarges as hydroxide streams in and the \"whole molecules left\" counter falls to 0; the enthalpy staircase draws with a step 1 arrow whose direction is not yet set; the energy ledger draws for bond breaking against hydration; the staircase returns for each case and changes only its step 1 arrow (ethanoic acid, HF, ammonia); the Ka cards and a crossed chip close the strength point; the memory aid writes large; each attempt clears the board and its feedback underlines the givens as they are used; the decision rule card and next chip close; scene crossfade with settle."},
+        'rows': M6C09_ROWS,
+    },
+    'm6c10': {
+        'design': D + 'lessons/chem-m6-c10.md',
+        'learning_review': D + 'checks/m6c10-learning-review.md',
+        'science_check': D + 'checks/m6c10-claude-science-check.md',
+        'meta': {"title": "What do Ka and pKa say about acid strength? From a measured pH to Ka, pKa and conjugate bases", "subtitle": "An acid solution at pH 2.52 is more acidic than one at pH 2.78, but its acid is the weaker one. How do Ka and pKa measure strength whatever the concentration, how do you get Ka from a measured pH, and what do they tell you about strong acids and conjugate bases?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 14, "lessonIntent": "explaining why pH cannot rank acids at different concentrations; calculating [H₃O⁺] from a pH and using it to decide strong or weak; calculating Ka from the pH of a weak acid of known concentration with the ICE table backwards, to the right significant figures; calculating pKa from Ka and Ka from pKa, with the right decimal places; ranking acids by Ka or pKa; explaining how Ka and pKa separate strong from weak acids; deriving and using Ka × Kb = Kw for a conjugate pair to find Kb and rank conjugate bases. No pH from Ka (chem-m6-c08), no method selection when the check fails (chem-m6-g02), no salt pH (chem-m6-c13 or c14), no buffers (chem-m6-c11), no polyprotic acids."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "ka-is-the-number", "we-hydronium", "we-ice-backwards", "hook-answer", "pka", "reading-pka", "strong-weak", "ka-kb-kw", "conjugate-ranking", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "C08 (the weak-acid ICE table in mol/L, x as the amount ionised, each ion gains x, the 5% check, x has the significant figures of Ka, pH from x). C07 (pH = −log[H₃O⁺], [H₃O⁺] = 10⁻ᵖᴴ, decimal places in pH = significant figures in [H₃O⁺], Kw = [H₃O⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C). C06 (conjugate pairs; a strong acid's conjugate base has almost no pull on a proton, a weak acid's conjugate base pulls protons back). C05 (strong and weak; compare strength at the same concentration). Module 5 (chem-m5-c10): Ka expression with water left out; bigger Ka means stronger; compare powers of ten first; Ka is not [H⁺] or pH; no Ka value is used for a strong acid; Kb for ammonia. Not assumed: pKa, Ka × Kb = Kw (both new here); C09 is not needed.", "startsWith": "Compare two weak-acid dissociation equilibria. The video opens: Two acids, two pH readings. An unknown acid, H X, at zero point zero five zero zero moles per litre, reads two point seven eight. Ethanoic acid at zero point five zero zero moles per litre reads two point five two, so it's more acidic.", "stopsAfter": "explaining why pH cannot rank acids at different concentrations; calculating [H₃O⁺] from a pH and using it to decide strong or weak; calculating Ka from the pH of a weak acid of known concentration with the ICE table backwards, to the right significant figures; calculating pKa from Ka and Ka from pKa, with the right decimal places; ranking acids by Ka or pKa; explaining how Ka and pKa separate strong from weak acids; deriving and using Ka × Kb = Kw for a conjugate pair to find Kb and rank conjugate bases. No pH from Ka (chem-m6-c08), no method selection when the check fails (chem-m6-g02), no salt pH (chem-m6-c13 or c14), no buffers (chem-m6-c11), no polyprotic acids.", "nextLesson": "practice choosing the right weak-acid method (route chem-m6-g02)."},
+        'teaching': {"task": "An acid solution at pH 2.52 is more acidic than one at pH 2.78, but its acid is the weaker one. How do Ka and pKa measure strength whatever the concentration, how do you get Ka from a measured pH, and what do they tell you about strong acids and conjugate bases?", "causalExplanation": "(1) the more acidic solution is not the stronger acid: the pH ranking misleads because concentrations differ (1); (2) Ka does not depend on concentration (Module 5); we need Ka for HX, and the pH gives it (2); (3) [H₃O⁺] = 10⁻ᵖᴴ; it is only 3% of c, so HX is weak (a strong acid would give [H₃O⁺] = c) (3); (4) each HX that ionises makes one H₃O⁺ and one X⁻, so the table runs backwards: [X⁻] = [H₃O⁺], [HX] = c − [H₃O⁺], Ka = 5.7 × 10⁻⁵ (4); (5) HX is about three times stronger than ethanoic acid; its solution is just more dilute; pH describes a solution, Ka the acid (5); (6) Ka values span many powers of ten, so pKa = −log Ka, like pH (6); (7) the minus sign flips the direction: lower pKa, stronger; one unit is ten times (7); (8) strong acids have no molecules left, so no measurable Ka; weak acids have Ka much less than 1; the measured [H₃O⁺] against c decides (8); (9) a conjugate base takes protons back with its own Kb; multiplying Ka by Kb cancels the acid and its ion, leaving Kw (9); (10) so a stronger acid has a weaker conjugate base; only for a conjugate pair (10); memory aid (11); two attempts and brief feedback (12 to 15); decision rule and handoff (16); key notes (17).", "conversationalApproach": "two pH readings carry the video: an ethanoic acid solution at pH 2.52 is more acidic than HX at pH 2.78, yet its acid is the weaker one, because the concentrations differ. Ka is recalled from Module 5 as the concentration-free measure, the ICE table is run backwards from the measured pH to find Ka for HX (with the strong-or-weak check on the way), and the answer resolves the hook. pKa then tidies Ka like pH, the log ruler shows its direction and factor-of-ten steps, the strong zone shows why strong acids have no measurable Ka, and cancelling Ka × Kb gives Kw for ranking conjugate bases. Two exam questions follow with brief feedback.", "openingDecision": "Two acids, two pH readings. An unknown acid, H X, at zero point zero five zero zero moles per litre, reads two point seven eight. Ethanoic acid at zero point five zero zero moles per litre reads two point five two, so it's more acidic. Does that make ethanoic acid the stronger acid? Not necessarily. Its solution is ten times more concentrated. To compare strength fairly, you need a number that doesn't depend on concentration.", "understandingCheck": "(A1) \"Lactic acid is the weak monoprotic acid that forms when milk turns sour. A 0.200 mol/L solution of lactic acid has a pH of 2.28 at 25 °C. Calculate the acid dissociation constant, Ka, and the pKa of lactic acid.\" New acid, new concentration and pH; the same backwards table. Crossed mistake: \"Ka = 5.2 × 10⁻³\" (stopping at [H₃O⁺] and calling it Ka; M5 C10's \"Ka is not [H⁺]\"). (A2) \"The pKa values of three acids at 25 °C are: hydrofluoric acid, HF, 3.17; methanoic acid, HCOOH, 3.74; hydrocyanic acid, HCN, 9.21. (a) List the acids in order of decreasing strength. (b) Identify the strongest base among F⁻, HCOO⁻ and CN⁻, and calculate its Kb. Kw = 1.0 × 10⁻¹⁴ at 25 °C.\" New acids for this video (the worked example uses HX and ethanoic acid). Crossed mistake: \"HCN is strongest, because 9.21 is the biggest\" (golf backwards).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)\" this video starts from two weak-acid equilibria whose pH values mislead about strength and stops at ranking acids and their conjugate bases with Ka and pKa. It teaches: why pH cannot rank acid strength when concentrations differ (C05 and Module 5 callbacks, one line); Ka as the concentration-free measure (recall of chem-m5-c10, not re-taught); Ka from a measured pH by running the C08 ICE table backwards, with the strong-or-weak check on the way; pKa = −log Ka, its direction and its factor-of-ten steps, and Ka = 10⁻ᵖᴷᵃ; how Ka and pKa separate strong from weak acids (the dotpoint); Ka × Kb = Kw for a conjugate pair, derived by cancelling, and the inverse ranking of conjugate bases (C06 qualitative callback). Not here: writing Ka expressions, \"bigger Ka, stronger\", \"Ka is not pH\" and \"compare powers of ten first\" as new teaching (all chem-m5-c10; recalled in one scene); pH from Ka (chem-m6-c08); method selection when the 5% check fails (chem-m6-g02, the next video); salt pH and hydrolysis (chem-m6-c13 or c14, route Additions); buffers and pH = pKa at half-equivalence (chem-m6-c11, c14); polyprotic acids and successive Ka values (site card 3, labelled partly Extension; see Open decisions); the direction of an amphiprotic ion from Ka against Kb (C06 deferral; see Open decisions); the site's dental, industrial and environmental cases (cards 4 and 5; corrections below)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole weak acid molecules amber-outlined (C05, C08); the acid's anion (X⁻, ethanoate) grey-violet; meter readouts amber digits; Ka values teal (M5 C10's K colour), pKa values on the lower side of the ruler in navy; conjugate-base Kb values violet-tinted. Board layout (constant, C03, C07 and C08): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached); the centre holds the ICE table, the ruler or the builder, with the working under it, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once (task, givens card or table, current line); every label fades when its sentence ends. The ICE table counts as one item; once filled, only its equilibrium row stays bright. Reuse: painted plates (inspected 20 Oct): `m6-ph-meter-probe-beaker-v1.png` (hook: the meter with a coded amber readout \"2.78\", beaker labelled \"HX, 0.0500 mol/L\"; a second copy reading \"2.52\", beaker labelled \"ethanoic acid, 0.500 mol/L\"), `m6-vinegar-bottle-v1.png` (scene 2, small beside the ethanoic acid values, coded label \"ethanoic (acetic) acid\"). No plate for lactic acid or the three acids in A2 (worded questions; see Assets for an optional plate). No human figures.", "transitionPlan": "Two pH meter plates open with amber readouts and a crossed \"lower pH, so stronger\" chip; the plates shrink as the Ka expression builder writes; the givens card enters at the left and the [H₃O⁺] line and the two-bar strong-or-weak test write in the centre, leaving one kept chip; the ICE table fills its equilibrium row first with \"work backwards\" arrows, then the Ka line and answer chip pin; the two Ka chips return for the hook answer; the log ruler draws with Ka above and pKa below, markers drop and arrows show the direction; the ruler extends into the hatched strong zone; the builder multiplies and cancels Ka × Kb to Kw; the fixed-product bar ranks the conjugate bases; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."},
+        'rows': M6C10_ROWS,
+    },
+    # END generated entries: m6c09-m6c10
 }
 
 

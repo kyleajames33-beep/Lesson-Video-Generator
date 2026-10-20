@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c09/lesson.json",
+    "lessonSha256": "8a69075d62d1e14c57ead1e8a1cefde602c38a408b2ffd2c5595b4f755e961f1"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C03 (H⁺ + OH⁻ → H₂O, spectators, about −57 kJ/mol per mole of water, q = mcΔT with the total mass, ΔH = −q/n(H₂O), rounding to ΔT's significant figures, \"acids that only partly split can give different values, and they get their own video\"). C05 (strong and weak acids, most weak-acid molecules stay whole, the equilibrium arrow; ethanoic acid and HF are weak; ammonia is a weak base). C06 (NH₃ + H₂O ⇌ NH₄⁺ + OH⁻). C01 (H⁺(aq) is H₃O⁺). Module 5: Le Chatelier's principle (removing a product shifts the equilibrium right); chem-m5-c11 (dissolving: separating ions costs energy, hydration releases it, the sum sets the sign); chem-m5-c10 (Ka named, bigger Ka stronger). Year 11 Module 4: Hess's law, exothermic and endothermic, ΔH sign. Not assumed: pKa, Ka × Kb (chem-m6-c10), entropy beyond Module 5 C11's \"spreading out\".",
+    "startsWith": "Compare measured heats for strong and weak reactants. The video opens: Here's a prediction to make. Mix one mole per litre hydrochloric acid with the same amount of sodium hydroxide, and you get about minus fifty seven kilojoules per mole of water. Now swap in ethanoic acid, a weak acid.",
+    "stopsAfter": "explaining with particles why a weak acid still reacts completely with hydroxide; writing the enthalpy of neutralisation of a weak acid or base as the ionisation step plus about −57 kJ/mol; explaining why the ionisation step can absorb or release energy (bond breaking against water surrounding the new ions); explaining the ethanoic acid, hydrofluoric acid and ammonia values; calculating an ionisation step from measured data with the right sign; explaining why neutralisation heat cannot rank acid strength. No new calorimetry method (chem-m6-c03), no practical error analysis (chem-m6-p02), no Ka or pKa comparisons (chem-m6-c10), no weak acid with weak base.",
+    "nextLesson": "what Ka and pKa say about acid strength (route chem-m6-c10)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c09.md"
+  ],
+  "teaching": {
+    "task": "Swap hydrochloric acid for a weak acid in a neutralisation and you might expect less heat. Ethanoic acid gives almost the same heat, and hydrofluoric acid gives more. What really decides the heat a weak acid releases?",
+    "causalExplanation": "(1) ethanoic acid gives almost the same heat as HCl, and HF gives more: what decides the heat? (1); (2) a strong acid's hydrogen ions are already free, so only H⁺ + OH⁻ → H₂O happens (C03); a weak acid's protons are mostly still on whole molecules (C05) (2); (3) hydroxide removes the few hydronium ions, the equilibrium shifts right, more molecules ionise, until all have reacted: one extra step, not an incomplete reaction (3); (4) Hess's law: total = ionisation step + water step (about −57), so the difference is all in step one (4); (5) step one has energy in (a bond breaks) and energy out (water surrounds the new ions), so its sign varies (5); (6) ethanoic acid: the two nearly cancel, about −56 (6); (7) HF: the small fluoride ion holds water tightly, more out than in, about −68; still weak (7); (8) ammonia: its step takes energy in, about −52 (8); (9) so heat does not rank strength: methanoic acid is ten times stronger but gives the same heat; use pH or Ka (9); memory aid (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "one surprise carries the video: swap hydrochloric acid for a weak acid and most people predict less heat, but ethanoic acid gives almost the same and hydrofluoric acid gives more. The particle lens shows that a weak acid still reacts completely (hydroxide removes hydronium, the equilibrium shifts right), Hess's law splits the heat into an ionisation step plus the water step of about −57 kJ/mol, and the energy ledger shows why that first step can absorb or release energy. Ethanoic acid, hydrofluoric acid and ammonia are then explained on the same staircase, and methanoic acid shows that heat cannot rank strength. Two exam questions follow with brief feedback.",
+    "openingDecision": "Here's a prediction to make. Mix one mole per litre hydrochloric acid with the same amount of sodium hydroxide, and you get about minus fifty seven kilojoules per mole of water. Now swap in ethanoic acid, a weak acid. Most people predict much less heat. The measured value is about minus fifty six, almost the same. And hydrofluoric acid, also weak, gives about minus sixty eight: more heat, not less. So what really decides the heat?",
+    "understandingCheck": "(A1) \"50.0 mL of 1.00 mol/L ethanoic acid is mixed with 50.0 mL of 1.00 mol/L sodium hydroxide solution in a polystyrene cup. The temperature rises by 6.7 °C. Under the same conditions, the enthalpy of neutralisation of hydrochloric acid is −57 kJ/mol. Assume the density of the mixture is 1.00 g/mL and its specific heat capacity is 4.18 J g⁻¹ °C⁻¹. (a) Calculate the enthalpy of neutralisation of ethanoic acid. (b) Calculate the enthalpy change for the ionisation of ethanoic acid, and comment on its size.\" Scenes 4 and 6 give the model and the ethanoic acid value in words only; the calculation from data is new. Crossed mistake: \"−57 − (−56) = −1 kJ/mol\" (subtraction the wrong way round). (A2) \"Hydrogen cyanide, HCN, is a weak acid. Its ionisation, HCN(aq) → H⁺(aq) + CN⁻(aq), absorbs about 45 kJ/mol. Using −57 kJ/mol for H⁺(aq) + OH⁻(aq) → H₂O(l), predict the enthalpy of neutralisation of hydrogen cyanide by sodium hydroxide, and explain why it differs from that of hydrochloric acid.\" New acid with a large endothermic step (the video's acids are near zero and negative; its endothermic case is a base). Crossed mistake: \"−57 − 45 = −102 kJ/mol\" (absorbed energy counted as released).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to measure the enthalpy of neutralisation (ACSCH093)\" \"model neutralisation of strong and weak acids and bases using a variety of media\" this video starts from measured enthalpies of neutralisation for strong and weak reactants and stops at a particle and energy model of the extra ionisation step. It teaches: the surprise that weak acids do not simply give less heat (ethanoic acid about the same as a strong acid, hydrofluoric acid more); that a weak acid still reacts completely, because hydroxide removes hydronium and the acid's equilibrium shifts right (Module 5 Le Chatelier callback); the two-step energy count by Hess's law (Year 11 callback): ionisation step plus the water step of about −57 kJ/mol; why the ionisation step can absorb or release energy (a bond breaks, energy in; water surrounds the new ions, energy out; Module 5 C11 callback); three cases (ethanoic acid close to zero, HF negative, ammonia positive); why neutralisation heat cannot rank acid strength. Not here: the calorimetry method and q = mcΔT taught again (chem-m6-c03; used once in attempt 1 as application, with every assumption on screen); the practical and its errors (chem-m6-p02); Ka and pKa as strength measures (chem-m6-c10, the next video; named only in scene 9); entropy as the reason HF is weak despite releasing heat (author note e; not voiced beyond one clause); weak acid with weak base (site card 3 values are wrong, see corrections); titration curves (chem-m6-c14)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole weak acid molecules amber-outlined (C05, C08); the acid's anion grey-violet; spectator ions grey; water pale blue; heat warm orange ripples (C03); energy in a warm red arrow or bar pointing up, energy out a cool blue arrow or bar pointing down (M5 C11 ledger, blue here so it never clashes with teal hydronium); temperature readouts amber digits. Board layout (constant, C03 and C08): top-left the short question line; the centre holds the lens, the staircase or the bar chart, one at a time; a plate sits small at the left only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. The staircase counts as one item; only its current arrow and its label are bright. Reuse: painted plates (inspected 20 Oct): `m6-foam-cup-calorimeter-v1.png` (white lidded foam cup with a cutaway window, clear liquid, steel probe through a bung; no readout, so a coded readout chip sits on the probe top; scenes 1, 11 and the handoff), `m6-vinegar-bottle-v1.png` (plain glass bottle of pale amber vinegar, wooden-look cap, no label; scene 2, small, coded label \"ethanoic (acetic) acid\"), `m5x-ammonia-bottle-v1.png` (scene 8, coded label \"ammonia solution\"). HF and HCN have no plates on purpose: they appear as data cards with a small grey tag \"data from careful lab measurements\" (HF) or as a worded question (HCN), so no hazardous substance is shown in a school cup. No new plates needed. No human figures.",
+    "transitionPlan": "Two calorimeter plates open with amber readouts and a ΔH bar chart with a dashed −57 line; two particle lenses compare a strong and a weak acid, then the weak-acid lens enlarges as hydroxide streams in and the \"whole molecules left\" counter falls to 0; the enthalpy staircase draws with a step 1 arrow whose direction is not yet set; the energy ledger draws for bond breaking against hydration; the staircase returns for each case and changes only its step 1 arrow (ethanoic acid, HF, ammonia); the Ka cards and a crossed chip close the strength point; the memory aid writes large; each attempt clears the board and its feedback underlines the givens as they are used; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `m6-foam-cup-calorimeter-v1.png` plates side by side, coded labels \"HCl + NaOH\" and \"ethanoic acid + NaOH\", both \"1.00 mol/L, 50.0 mL + 50.0 mL\".",
+      "teachingReason": "Hook (weak acid, less heat?): Here's a prediction to make.",
+      "narrationCue": "minus fifty seven / ethanoic acid / minus fifty six / hydrofluoric acid / minus sixty eight",
+      "motionPurpose": "On the spoken cues: On \"minus fifty seven\" the first readout chip counts 21.0 to 27.8 °C (\"ΔT 6.8 °C\") and a bar grows down from zero on a small ΔH axis at the right: \"HCl: −57 kJ/mol\", with a dashed reference line at −57 that stays. On \"ethanoic acid\" a grey prediction bar, much shorter, sketches in with a \"?\" (tag \"prediction\"). On \"minus fifty six\" the second readout counts to 27.7 °C (\"ΔT 6.7 °C\"), the grey bar is crossed and the",
+      "motionRole": "explain",
+      "onScreenChange": "two `m6-foam-cup-calorimeter-v1.png` plates side by side, coded labels \"HCl + NaOH\" and \"ethanoic acid + NaOH\", both \"1.00 mol/L, 50.0 mL + 50.0 mL\". On \"minus fifty seven\" the first readout chip counts 21.0 to 27.8 °C (\"ΔT 6.8 °C\") and a bar grows down from zero on a small ΔH axis at the right: \"HCl: −57 kJ/mol\", with a dashed reference line at −57 that stays. On \"ethanoic acid\" a grey prediction bar, much shorter, sketches in with a \"?\" (tag \"prediction\"). On \"minus fifty six\" the second readout counts to 27.7 °C (\"ΔT 6.7 °C\"), the grey bar is crossed and the real bar grows almost to the line: \"ethanoic acid: about −56\". The cups dim, with their labels and readouts. On \"hydrofluoric acid\" a third bar, with no cup, grows past the line: \"HF: about −68\", with a small grey tag \"careful lab data; never used in school\" that dims when the sentence ends. Heading writes: \"Weak acid. Less heat?\" with \"Less heat?\" crossed. Bright at the end: the heading and the bar chart (one item; the bar labels stay bright, the axis grey). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "NumberTicker",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "same-different",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to two particle lenses side by side.",
+      "teachingReason": "What is the same, what is different: Start with what you know.",
+      "narrationCue": "hydrogen ion joining a hydroxide ion / whole",
+      "motionPurpose": "On the spoken cues: Left lens \"HCl(aq)\": teal hydronium tokens and grey chloride, no molecules. On \"hydrogen ion joining a hydroxide ion\" a violet OH⁻ drifts in and meets a teal token, snapping into a pale blue water with a short orange ripple; the strip writes \"H⁺(aq) + OH⁻(aq) → H₂O(l)\" with a small \"about −57 kJ/mol\" tag (dims after its sentence). Right lens \"ethanoic acid(aq)\", with `m6-vinegar-bottle-v1.png` small beside it (coded",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to two particle lenses side by side. Left lens \"HCl(aq)\": teal hydronium tokens and grey chloride, no molecules. On \"hydrogen ion joining a hydroxide ion\" a violet OH⁻ drifts in and meets a teal token, snapping into a pale blue water with a short orange ripple; the strip writes \"H⁺(aq) + OH⁻(aq) → H₂O(l)\" with a small \"about −57 kJ/mol\" tag (dims after its sentence). Right lens \"ethanoic acid(aq)\", with `m6-vinegar-bottle-v1.png` small beside it (coded label \"ethanoic (acetic) acid\"): mostly amber-outlined whole molecules, one teal token among them. On \"whole\" a pen ring circles the whole molecules, tag \"protons still attached\". Bright at the end: the strip and the two lenses. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "token flight",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reacts-completely",
+      "visualDecision": "new",
+      "visualReference": "the right lens enlarges to fill the centre; the left lens leaves.",
+      "teachingReason": "The weak acid still reacts completely: So what happens when hydroxide arrives?",
+      "narrationCue": "ionise to replace them / every molecule has reacted / one extra step",
+      "motionPurpose": "On the spoken cues: Violet OH⁻ tokens stream in from the left edge. Each meets a teal hydronium and forms water with an orange ripple; on \"ionise to replace them\" an amber molecule beside the gap hands a teal token to a water molecule (C01 hop), with a small two-way arrow \"⇌ shifts right\" pulsing under the lens. A counter at the lens edge, \"whole molecules left\", falls steadily; on \"every molecule has reacted\" it reaches 0, the \"⇌",
+      "motionRole": "explain",
+      "onScreenChange": "the right lens enlarges to fill the centre; the left lens leaves. Violet OH⁻ tokens stream in from the left edge. Each meets a teal hydronium and forms water with an orange ripple; on \"ionise to replace them\" an amber molecule beside the gap hands a teal token to a water molecule (C01 hop), with a small two-way arrow \"⇌ shifts right\" pulsing under the lens. A counter at the lens edge, \"whole molecules left\", falls steadily; on \"every molecule has reacted\" it reaches 0, the \"⇌ shifts right\" arrow fades, and the lens holds only grey-violet ethanoate and pale blue water. The strip writes \"CH₃COOH(aq) + OH⁻(aq) → CH₃COO⁻(aq) + H₂O(l)\". On \"one extra step\" a chip \"weak acid reacts incompletely\" fades in and is crossed (caption \"it all reacts: one extra step first\"). Bright at the end: the strip, the empty counter and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "two-steps",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Two steps, one total: We can count the energy in two steps, using Hess's law from Year 11: the total doesn't depend on the route.",
+      "narrationCue": "ionises / minus fifty seven / minus fifty seven, plus the ionisation step / measured value, take away minus fifty seven",
+      "motionPurpose": "On the spoken cues: The enthalpy staircase draws centre: a top level \"HA(aq) + OH⁻(aq)\". On \"ionises\" a step 1 arrow draws from it (grey, direction not yet set, a \"?\" on it) to a level \"H⁺(aq) + A⁻(aq) + OH⁻(aq)\", labelled \"step 1: ionisation\". On \"minus fifty seven\" a long blue down arrow draws to \"A⁻(aq) + H₂O(l)\", labelled \"step 2: −57 kJ/mol (same as a strong acid)\". On \"plus the ionisation step\" a dashed net arrow joins the first",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The enthalpy staircase draws centre: a top level \"HA(aq) + OH⁻(aq)\". On \"ionises\" a step 1 arrow draws from it (grey, direction not yet set, a \"?\" on it) to a level \"H⁺(aq) + A⁻(aq) + OH⁻(aq)\", labelled \"step 1: ionisation\". On \"minus fifty seven\" a long blue down arrow draws to \"A⁻(aq) + H₂O(l)\", labelled \"step 2: −57 kJ/mol (same as a strong acid)\". On \"plus the ionisation step\" a dashed net arrow joins the first level to the last and the line writes under the staircase: \"ΔH(neutralisation) = ΔH(step 1) + (−57) kJ/mol\", with a small grey tag \"Hess's law: add the steps\" that dims. On \"measured value, take away minus fifty seven\" the \"?\" arrow pulses and a second line writes under the first, which dims: \"ΔH(step 1) = ΔH(measured) − (−57) kJ/mol\". Bright at the end: the staircase and the second line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ionising-either-way",
+      "visualDecision": "new",
+      "visualReference": "the staircase shrinks to the top right (dim).",
+      "teachingReason": "Why the ionising step can go either way: And step one isn't always uphill.",
+      "narrationCue": "takes energy in / surrounded by water molecules / balance",
+      "motionPurpose": "On the spoken cues: The M5 C11 ledger draws centre with a small particle close-up beside it: one amber-outlined molecule; on \"takes energy in\" its proton lifts off (bond line snapping) and a red bar rises \"energy in: bond breaks\". On \"surrounded by water molecules\" pale blue water molecules turn and close round the new anion and the hydronium, and a blue bar drops \"energy out: water surrounds the ions\", with a small grey tag \"Module 5:",
+      "motionRole": "explain",
+      "onScreenChange": "the staircase shrinks to the top right (dim). The M5 C11 ledger draws centre with a small particle close-up beside it: one amber-outlined molecule; on \"takes energy in\" its proton lifts off (bond line snapping) and a red bar rises \"energy in: bond breaks\". On \"surrounded by water molecules\" pale blue water molecules turn and close round the new anion and the hydronium, and a blue bar drops \"energy out: water surrounds the ions\", with a small grey tag \"Module 5: hydration\" that dims. On \"balance\" a balance line writes between the bars: \"step 1 = in + out\", and three small chips write under it: \"+\", \"≈ 0\", \"−\". Bright at the end: the two bars and the three chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ethanoic-zero",
+      "visualDecision": "new",
+      "visualReference": "the ledger's bars set to equal length (red up, blue down) on \"cancel\" and the \"≈ 0\" chip lights.",
+      "teachingReason": "Ethanoic acid: close to zero: For ethanoic acid, the two nearly cancel: the energy to pull the proton off is almost exactly repaid when water surrounds the new ions.",
+      "narrationCue": "cancel / minus fifty six / hardly tell them apart",
+      "motionPurpose": "On the spoken cues: The staircase returns large: its step 1 arrow becomes a short red stub labelled \"≈ +1 (close to zero)\", step 2 \"−57\", the net arrow \"≈ −56 kJ/mol\". On \"hardly tell them apart\" the scene 1 bars return small beside it with the ethanoic acid bar pulsing next to the −57 line, and a bracket \"within foam cup error\". The ledger dims. Bright at the end: the staircase net label and the bracket.",
+      "motionRole": "explain",
+      "onScreenChange": "the ledger's bars set to equal length (red up, blue down) on \"cancel\" and the \"≈ 0\" chip lights. The staircase returns large: its step 1 arrow becomes a short red stub labelled \"≈ +1 (close to zero)\", step 2 \"−57\", the net arrow \"≈ −56 kJ/mol\". On \"hardly tell them apart\" the scene 1 bars return small beside it with the ethanoic acid bar pulsing next to the −57 line, and a bracket \"within foam cup error\". The ledger dims. Bright at the end: the staircase net label and the bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "hf-more-heat",
+      "visualDecision": "new",
+      "visualReference": "the ledger returns: on \"small\" the close-up shows a small grey-violet F⁻ with a tight, crowded shell of water molecules (compare a larger anion outline in grey), and the blue bar grows well past the red bar.",
+      "teachingReason": "Hydrofluoric acid: more heat: Hydrofluoric acid is the surprise.",
+      "narrationCue": "small / releases / minus sixty eight / more than the heat",
+      "motionPurpose": "On the spoken cues: On \"releases\" the \"−\" chip lights, the ledger and close-up dim, and the staircase's step 1 arrow flips to point down, blue, labelled \"≈ −11\"; step 2 \"−57\"; the net arrow lengthens past the dashed −57 level, \"≈ −68 kJ/mol\" (the scene 1 bar chart is not recalled here; the net arrow carries the value). On \"more than the heat\" a small chip writes under the staircase: \"HF: weak (most molecules stay whole), but step 1",
+      "motionRole": "explain",
+      "onScreenChange": "the ledger returns: on \"small\" the close-up shows a small grey-violet F⁻ with a tight, crowded shell of water molecules (compare a larger anion outline in grey), and the blue bar grows well past the red bar. On \"releases\" the \"−\" chip lights, the ledger and close-up dim, and the staircase's step 1 arrow flips to point down, blue, labelled \"≈ −11\"; step 2 \"−57\"; the net arrow lengthens past the dashed −57 level, \"≈ −68 kJ/mol\" (the scene 1 bar chart is not recalled here; the net arrow carries the value). On \"more than the heat\" a small chip writes under the staircase: \"HF: weak (most molecules stay whole), but step 1 releases heat\". Bright at the end: the staircase, the net label and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "weak-base-less",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "A weak base: less heat: Weak bases follow the same rule.",
+      "narrationCue": "minus fifty two / hydroxide / energy in / less",
+      "motionPurpose": "On the spoken cues: `m5x-ammonia-bottle-v1.png` small at the left with coded label \"ammonia solution\" (the label dims after the first sentence). On \"minus fifty two\" a value chip writes: \"HCl + NH₃: about −52 kJ per mol NH₃\" (no bar chart in this scene). On \"hydroxide\" the strip writes \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\" with the C06 hop (a teal token moving from water to ammonia; the OH⁻ turns violet). The staircase returns with",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m5x-ammonia-bottle-v1.png` small at the left with coded label \"ammonia solution\" (the label dims after the first sentence). On \"minus fifty two\" a value chip writes: \"HCl + NH₃: about −52 kJ per mol NH₃\" (no bar chart in this scene). On \"hydroxide\" the strip writes \"NH₃(aq) + H₂O(l) ⇌ NH₄⁺(aq) + OH⁻(aq)\" with the C06 hop (a teal token moving from water to ammonia; the OH⁻ turns violet). The staircase returns with its levels relabelled: top \"NH₃(aq) + H₂O(l) + H⁺(aq)\", middle \"NH₄⁺(aq) + OH⁻(aq) + H⁺(aq)\", bottom \"NH₄⁺(aq) + H₂O(l)\"; the strip dims. On \"energy in\" its step 1 arrow points up, red, \"≈ +5\"; step 2 \"−57\"; net \"≈ −52 kJ/mol\", shorter than the −57 line, and the value chip merges into the net label. On \"less\" the \"+\" chip lights. Bright at the end: the staircase and its net label. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "token flight",
+        "DrawPath",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "heat-not-strength",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Heat does not measure strength: So the heat doesn't tell you how strong a weak acid is.",
+      "narrationCue": "ten times stronger / minus fifty six / pH",
+      "motionPurpose": "On the spoken cues: Two cards side by side: \"methanoic acid: Ka 1.8 × 10⁻⁴\" and \"ethanoic acid: Ka 1.8 × 10⁻⁵\", with a bracket \"10 × stronger\" on \"ten times stronger\". On \"minus fifty six\" a small bar inside each card grows to the same length, \"about −56\" and \"about −56\" (the bars are part of the cards). A chip \"more heat means a stronger acid\" fades in and is crossed (caption \"heat shows step 1, not strength\"). On \"pH\" the crossed",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two cards side by side: \"methanoic acid: Ka 1.8 × 10⁻⁴\" and \"ethanoic acid: Ka 1.8 × 10⁻⁵\", with a bracket \"10 × stronger\" on \"ten times stronger\". On \"minus fifty six\" a small bar inside each card grows to the same length, \"about −56\" and \"about −56\" (the bars are part of the cards). A chip \"more heat means a stronger acid\" fades in and is crossed (caption \"heat shows step 1, not strength\"). On \"pH\" the crossed chip dims and a small `m6-ph-meter-probe-beaker-v1.png` thumbnail appears with the tag \"strength: pH at equal concentration, or Ka (next video)\". Bright at the end: the two cards and the thumbnail tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "Same last step, different first step. / first step",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten: \"Same last step, different first step.\" Under it a small staircase thumbnail whose step 1 arrow flicks through three states (up red, flat, down blue) while step 2 stays fixed at \"−57\". On \"first step\" the line writes: \"ΔH = step 1 + (−57) kJ/mol\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The aid writes large and handwritten: \"Same last step, different first step.\" Under it a small staircase thumbnail whose step 1 arrow flicks through three states (up red, flat, down blue) while step 2 stays fixed at \"−57\". On \"first step\" the line writes: \"ΔH = step 1 + (−57) kJ/mol\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Ethanoic acid is neutralised by sodium",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-foam-cup-calorimeter-v1.png` small at the top right. Question card, worded as printed: \"50.0 mL of 1.00 mol/L ethanoic acid is mixed with 50.0 mL of 1.00 mol/L sodium hydroxide solution in a polystyrene cup. The temperature rises by 6.7 °C. Under the same conditions, the enthalpy of neutralisation of hydrochloric acid is −57 kJ/mol. Assume the density of the mixture is 1.00 g/mL and its specific heat capacity is 4.18 J g⁻¹ °C⁻¹. (a) Calculate the enthalpy of neutralisation of ethanoic acid. (b) Calculate the enthalpy change for the ionisation of ethanoic acid, and comment on its size.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no staircase, no aid, no bars.",
+      "motionTools": [
+        "bar fill",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "two thousand eight hundred joules / minus fifty six kilojoules per mole / plus one / sign",
+      "motionPurpose": "On the spoken cues: On \"two thousand eight hundred joules\" both volumes, \"1.00 g/mL\", \"4.18 J g⁻¹ °C⁻¹\" and \"6.7 °C\" are underlined and lines write: \"m = 100.0 mL × 1.00 g/mL = 100.0 g\" then \"q = 100.0 g × 4.18 J g⁻¹ °C⁻¹ × 6.7 °C = 2800.6 J\", the m line dimming. On \"minus fifty six\" \"1.00 mol/L\" and \"50.0 mL\" are underlined, \"n(H₂O) = 1.00 × 0.0500 = 0.0500 mol\" and \"ΔH = −2.8006 kJ ÷ 0.0500 mol = −56.01 → −56 kJ/mol\" write, the q",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"two thousand eight hundred joules\" both volumes, \"1.00 g/mL\", \"4.18 J g⁻¹ °C⁻¹\" and \"6.7 °C\" are underlined and lines write: \"m = 100.0 mL × 1.00 g/mL = 100.0 g\" then \"q = 100.0 g × 4.18 J g⁻¹ °C⁻¹ × 6.7 °C = 2800.6 J\", the m line dimming. On \"minus fifty six\" \"1.00 mol/L\" and \"50.0 mL\" are underlined, \"n(H₂O) = 1.00 × 0.0500 = 0.0500 mol\" and \"ΔH = −2.8006 kJ ÷ 0.0500 mol = −56.01 → −56 kJ/mol\" write, the q line dimming; the answer chip \"(a) −56 kJ/mol (2 s.f.)\" pins. On \"plus one\" \"−57 kJ/mol\" in the question is underlined and \"step 1 = −56 − (−57) = +1 kJ/mol\" writes; chip \"(b) about +1 kJ/mol: close to zero\". On \"sign\" a chip \"−57 − (−56) = −1 kJ/mol\" fades in and is crossed (caption \"measured minus water step\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"Hydrogen cyanide, HCN, is a weak acid.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Hydrogen cyanide is a weak acid,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"Hydrogen cyanide, HCN, is a weak acid. Its ionisation, HCN(aq) → H⁺(aq) + CN⁻(aq), absorbs about 45 kJ/mol. Using −57 kJ/mol for H⁺(aq) + OH⁻(aq) → H₂O(l), predict the enthalpy of neutralisation of hydrogen cyanide by sodium hydroxide, and explain why it differs from that of hydrochloric acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no staircase, no bars.",
+      "motionTools": [
+        "bar fill",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "minus twelve / used up / released",
+      "motionPurpose": "On the spoken cues: On \"minus twelve\" \"absorbs about 45 kJ/mol\" and \"−57 kJ/mol\" are underlined; a compact staircase draws: step 1 up, red, \"+45\"; step 2 down, blue, \"−57\"; net \"−12 kJ/mol\"; the answer chip \"ΔH ≈ −12 kJ/mol\" pins. On \"used up\" the red arrow pulses and a tag writes \"most of the 57 kJ goes into step 1; HCl: no step 1\". On \"released\" a chip \"−57 − 45 = −102 kJ/mol\" fades in and is crossed (caption \"absorbed energy is +\").",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"minus twelve\" \"absorbs about 45 kJ/mol\" and \"−57 kJ/mol\" are underlined; a compact staircase draws: step 1 up, red, \"+45\"; step 2 down, blue, \"−57\"; net \"−12 kJ/mol\"; the answer chip \"ΔH ≈ −12 kJ/mol\" pins. On \"used up\" the red arrow pulses and a tag writes \"most of the 57 kJ goes into step 1; HCl: no step 1\". On \"released\" a chip \"−57 − 45 = −102 kJ/mol\" fades in and is crossed (caption \"absorbed energy is +\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Water step: about −57 kJ/mol.\"",
+      "teachingReason": "Decision rule and handoff: So for any weak acid or base neutralisation, start from minus fifty seven for making water, add the ionising step with its sign, whether it's a weak acid giving up protons or a weak base making hydroxide, and remember that the reaction still goes to completion.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Add the ionisation step, with its sign (+, ≈ 0 or −).\" \"3 The weak acid or base still reacts completely.\" \"4 Heat does not rank strength: use pH or Ka.\" On \"Next\" a chip \"Next: Ka and pKa, and what they say about acid strength\" appears with a small `m6-ph-meter-probe-beaker-v1.png`.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Water step: about −57 kJ/mol.\" \"2 Add the ionisation step, with its sign (+, ≈ 0 or −).\" \"3 The weak acid or base still reacts completely.\" \"4 Heat does not rank strength: use pH or Ka.\" On \"Next\" a chip \"Next: Ka and pKa, and what they say about acid strength\" appears with a small `m6-ph-meter-probe-beaker-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c09-learning-review.md",
+      "sha256": "59d1c2d0c6890d40a2c73caac31530f9d664ab7fb31615bb546de580fb31ecd0"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c09-claude-science-check.md",
+      "sha256": "280d244a973b385fbf8cc02ff34986c5cf7b3dfe05b1db58fcc0396cfc74d585"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c10/lesson.json",
+    "lessonSha256": "bba3fb8863e556a543f936cb0c38e4f34e360ab732efbf3d9d23cebcb7214a2d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C08 (the weak-acid ICE table in mol/L, x as the amount ionised, each ion gains x, the 5% check, x has the significant figures of Ka, pH from x). C07 (pH = −log[H₃O⁺], [H₃O⁺] = 10⁻ᵖᴴ, decimal places in pH = significant figures in [H₃O⁺], Kw = [H₃O⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C). C06 (conjugate pairs; a strong acid's conjugate base has almost no pull on a proton, a weak acid's conjugate base pulls protons back). C05 (strong and weak; compare strength at the same concentration). Module 5 (chem-m5-c10): Ka expression with water left out; bigger Ka means stronger; compare powers of ten first; Ka is not [H⁺] or pH; no Ka value is used for a strong acid; Kb for ammonia. Not assumed: pKa, Ka × Kb = Kw (both new here); C09 is not needed.",
+    "startsWith": "Compare two weak-acid dissociation equilibria. The video opens: Two acids, two pH readings. An unknown acid, H X, at zero point zero five zero zero moles per litre, reads two point seven eight. Ethanoic acid at zero point five zero zero moles per litre reads two point five two, so it's more acidic.",
+    "stopsAfter": "explaining why pH cannot rank acids at different concentrations; calculating [H₃O⁺] from a pH and using it to decide strong or weak; calculating Ka from the pH of a weak acid of known concentration with the ICE table backwards, to the right significant figures; calculating pKa from Ka and Ka from pKa, with the right decimal places; ranking acids by Ka or pKa; explaining how Ka and pKa separate strong from weak acids; deriving and using Ka × Kb = Kw for a conjugate pair to find Kb and rank conjugate bases. No pH from Ka (chem-m6-c08), no method selection when the check fails (chem-m6-g02), no salt pH (chem-m6-c13 or c14), no buffers (chem-m6-c11), no polyprotic acids.",
+    "nextLesson": "practice choosing the right weak-acid method (route chem-m6-g02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c10.md"
+  ],
+  "teaching": {
+    "task": "An acid solution at pH 2.52 is more acidic than one at pH 2.78, but its acid is the weaker one. How do Ka and pKa measure strength whatever the concentration, how do you get Ka from a measured pH, and what do they tell you about strong acids and conjugate bases?",
+    "causalExplanation": "(1) the more acidic solution is not the stronger acid: the pH ranking misleads because concentrations differ (1); (2) Ka does not depend on concentration (Module 5); we need Ka for HX, and the pH gives it (2); (3) [H₃O⁺] = 10⁻ᵖᴴ; it is only 3% of c, so HX is weak (a strong acid would give [H₃O⁺] = c) (3); (4) each HX that ionises makes one H₃O⁺ and one X⁻, so the table runs backwards: [X⁻] = [H₃O⁺], [HX] = c − [H₃O⁺], Ka = 5.7 × 10⁻⁵ (4); (5) HX is about three times stronger than ethanoic acid; its solution is just more dilute; pH describes a solution, Ka the acid (5); (6) Ka values span many powers of ten, so pKa = −log Ka, like pH (6); (7) the minus sign flips the direction: lower pKa, stronger; one unit is ten times (7); (8) strong acids have no molecules left, so no measurable Ka; weak acids have Ka much less than 1; the measured [H₃O⁺] against c decides (8); (9) a conjugate base takes protons back with its own Kb; multiplying Ka by Kb cancels the acid and its ion, leaving Kw (9); (10) so a stronger acid has a weaker conjugate base; only for a conjugate pair (10); memory aid (11); two attempts and brief feedback (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "two pH readings carry the video: an ethanoic acid solution at pH 2.52 is more acidic than HX at pH 2.78, yet its acid is the weaker one, because the concentrations differ. Ka is recalled from Module 5 as the concentration-free measure, the ICE table is run backwards from the measured pH to find Ka for HX (with the strong-or-weak check on the way), and the answer resolves the hook. pKa then tidies Ka like pH, the log ruler shows its direction and factor-of-ten steps, the strong zone shows why strong acids have no measurable Ka, and cancelling Ka × Kb gives Kw for ranking conjugate bases. Two exam questions follow with brief feedback.",
+    "openingDecision": "Two acids, two pH readings. An unknown acid, H X, at zero point zero five zero zero moles per litre, reads two point seven eight. Ethanoic acid at zero point five zero zero moles per litre reads two point five two, so it's more acidic. Does that make ethanoic acid the stronger acid? Not necessarily. Its solution is ten times more concentrated. To compare strength fairly, you need a number that doesn't depend on concentration.",
+    "understandingCheck": "(A1) \"Lactic acid is the weak monoprotic acid that forms when milk turns sour. A 0.200 mol/L solution of lactic acid has a pH of 2.28 at 25 °C. Calculate the acid dissociation constant, Ka, and the pKa of lactic acid.\" New acid, new concentration and pH; the same backwards table. Crossed mistake: \"Ka = 5.2 × 10⁻³\" (stopping at [H₃O⁺] and calling it Ka; M5 C10's \"Ka is not [H⁺]\"). (A2) \"The pKa values of three acids at 25 °C are: hydrofluoric acid, HF, 3.17; methanoic acid, HCOOH, 3.74; hydrocyanic acid, HCN, 9.21. (a) List the acids in order of decreasing strength. (b) Identify the strongest base among F⁻, HCOO⁻ and CN⁻, and calculate its Kb. Kw = 1.0 × 10⁻¹⁴ at 25 °C.\" New acids for this video (the worked example uses HX and ethanoic acid). Crossed mistake: \"HCN is strongest, because 9.21 is the biggest\" (golf backwards).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)\" this video starts from two weak-acid equilibria whose pH values mislead about strength and stops at ranking acids and their conjugate bases with Ka and pKa. It teaches: why pH cannot rank acid strength when concentrations differ (C05 and Module 5 callbacks, one line); Ka as the concentration-free measure (recall of chem-m5-c10, not re-taught); Ka from a measured pH by running the C08 ICE table backwards, with the strong-or-weak check on the way; pKa = −log Ka, its direction and its factor-of-ten steps, and Ka = 10⁻ᵖᴷᵃ; how Ka and pKa separate strong from weak acids (the dotpoint); Ka × Kb = Kw for a conjugate pair, derived by cancelling, and the inverse ranking of conjugate bases (C06 qualitative callback). Not here: writing Ka expressions, \"bigger Ka, stronger\", \"Ka is not pH\" and \"compare powers of ten first\" as new teaching (all chem-m5-c10; recalled in one scene); pH from Ka (chem-m6-c08); method selection when the 5% check fails (chem-m6-g02, the next video); salt pH and hydrolysis (chem-m6-c13 or c14, route Additions); buffers and pH = pKa at half-equivalence (chem-m6-c11, c14); polyprotic acids and successive Ka values (site card 3, labelled partly Extension; see Open decisions); the direction of an amphiprotic ion from Ka against Kb (C06 deferral; see Open decisions); the site's dental, industrial and environmental cases (cards 4 and 5; corrections below)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; whole weak acid molecules amber-outlined (C05, C08); the acid's anion (X⁻, ethanoate) grey-violet; meter readouts amber digits; Ka values teal (M5 C10's K colour), pKa values on the lower side of the ruler in navy; conjugate-base Kb values violet-tinted. Board layout (constant, C03, C07 and C08): top-left the short task line; the left column holds the givens card during worked examples (grouped, units attached); the centre holds the ICE table, the ruler or the builder, with the working under it, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once (task, givens card or table, current line); every label fades when its sentence ends. The ICE table counts as one item; once filled, only its equilibrium row stays bright. Reuse: painted plates (inspected 20 Oct): `m6-ph-meter-probe-beaker-v1.png` (hook: the meter with a coded amber readout \"2.78\", beaker labelled \"HX, 0.0500 mol/L\"; a second copy reading \"2.52\", beaker labelled \"ethanoic acid, 0.500 mol/L\"), `m6-vinegar-bottle-v1.png` (scene 2, small beside the ethanoic acid values, coded label \"ethanoic (acetic) acid\"). No plate for lactic acid or the three acids in A2 (worded questions; see Assets for an optional plate). No human figures.",
+    "transitionPlan": "Two pH meter plates open with amber readouts and a crossed \"lower pH, so stronger\" chip; the plates shrink as the Ka expression builder writes; the givens card enters at the left and the [H₃O⁺] line and the two-bar strong-or-weak test write in the centre, leaving one kept chip; the ICE table fills its equilibrium row first with \"work backwards\" arrows, then the Ka line and answer chip pin; the two Ka chips return for the hook answer; the log ruler draws with Ka above and pKa below, markers drop and arrows show the direction; the ruler extends into the hatched strong zone; the builder multiplies and cancels Ka × Kb to Kw; the fixed-product bar ranks the conjugate bases; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled (coded) \"HX, 0.0500 mol/L\" and \"ethanoic acid, 0.500 mol/L\".",
+      "teachingReason": "Hook (the more acidic solution, the weaker acid?): Two acids, two pH readings.",
+      "narrationCue": "two point seven eight / two point five two / stronger / ten times more concentrated",
+      "motionPurpose": "On the spoken cues: On \"two point seven eight\" the first amber readout counts to \"2.78\"; on \"two point five two\" the second counts to \"2.52\" and a small tag \"more acidic\" writes beside that readout (no separate pH ruler). On \"stronger\" a chip \"lower pH, so stronger acid?\" writes with a \"?\". On \"ten times more concentrated\" both concentration labels get pen rings and a bracket \"10 ×\" joins them; the chip's \"?\" turns into a pen cross",
+      "motionRole": "explain",
+      "onScreenChange": "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled (coded) \"HX, 0.0500 mol/L\" and \"ethanoic acid, 0.500 mol/L\". On \"two point seven eight\" the first amber readout counts to \"2.78\"; on \"two point five two\" the second counts to \"2.52\" and a small tag \"more acidic\" writes beside that readout (no separate pH ruler). On \"stronger\" a chip \"lower pH, so stronger acid?\" writes with a \"?\". On \"ten times more concentrated\" both concentration labels get pen rings and a bracket \"10 ×\" joins them; the chip's \"?\" turns into a pen cross (caption \"different concentrations: pH can't compare strength\"), and the \"more acidic\" tag fades. Heading writes: \"Which acid is stronger?\" Bright at the end: the heading, the two readouts (with their concentration labels) and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ka-is-the-number",
+      "visualDecision": "adjust",
+      "visualReference": "the plates shrink to the top right.",
+      "teachingReason": "Ka is that number: You've met that number in Module 5: K a, the equilibrium constant for the acid ionising, hydronium times the anion, over the whole acid.",
+      "narrationCue": "K a / same concentration / one point eight times ten to the minus five / from the pH",
+      "motionPurpose": "On the spoken cues: The strip writes \"HX(aq) + H₂O(l) ⇌ H₃O⁺(aq) + X⁻(aq)\" and the M5 C10 builder writes \"Ka = [H₃O⁺][X⁻] / [HX]\" with H₂O in the grey \"left out\" tray and a small grey tag \"Module 5\" (dims after its sentence). On \"same concentration\" a small tag writes under it: \"Ka: same at any concentration (fixed temperature)\"; the \"Module 5\" tag has dimmed. On \"one point eight times ten to the minus five\" `m6-vinegar-bottle-v1.png`",
+      "motionRole": "explain",
+      "onScreenChange": "the plates shrink to the top right. The strip writes \"HX(aq) + H₂O(l) ⇌ H₃O⁺(aq) + X⁻(aq)\" and the M5 C10 builder writes \"Ka = [H₃O⁺][X⁻] / [HX]\" with H₂O in the grey \"left out\" tray and a small grey tag \"Module 5\" (dims after its sentence). On \"same concentration\" a small tag writes under it: \"Ka: same at any concentration (fixed temperature)\"; the \"Module 5\" tag has dimmed. On \"one point eight times ten to the minus five\" `m6-vinegar-bottle-v1.png` appears small at the left with the chip \"ethanoic acid: Ka = 1.8 × 10⁻⁵ (25 °C)\". On \"from the pH\" a chip \"HX: Ka = ?\" writes with an arrow pointing back from the HX readout \"2.78\". Bright at the end: the Ka line, the ethanoic acid chip and the \"?\" chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we-hydronium",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example: the hydronium, and strong or weak: Here's the task: find K a for H X.",
+      "narrationCue": "ten to the minus two point seven eight / one point six six times ten to the minus three / three percent / equal to its concentration",
+      "motionPurpose": "On the spoken cues: Task line: \"Find Ka for HX\". Equation strip: \"HX(aq) + H₂O(l) ⇌ H₃O⁺(aq) + X⁻(aq)\". Givens card: \"HX: 0.0500 mol/L\" | \"pH = 2.78 (25 °C)\". Step chip \"Step 1 of 2: [H₃O⁺]\". On \"ten to the minus two point seven eight\" \"pH = 2.78\" is underlined, the equation strip dims, and the line \"[H₃O⁺] = 10⁻²·⁷⁸\" writes; on \"one point six six\" it completes \"= 1.66 × 10⁻³ mol/L\" with a small grey tag \"keep the digits; round at the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find Ka for HX\". Equation strip: \"HX(aq) + H₂O(l) ⇌ H₃O⁺(aq) + X⁻(aq)\". Givens card: \"HX: 0.0500 mol/L\" | \"pH = 2.78 (25 °C)\". Step chip \"Step 1 of 2: [H₃O⁺]\". On \"ten to the minus two point seven eight\" \"pH = 2.78\" is underlined, the equation strip dims, and the line \"[H₃O⁺] = 10⁻²·⁷⁸\" writes; on \"one point six six\" it completes \"= 1.66 × 10⁻³ mol/L\" with a small grey tag \"keep the digits; round at the end\" (dims). On \"three percent\" a short bar compares: a long bar \"c = 0.0500\" with a teal chunk \"1.66 × 10⁻³\" and the label \"1.66 × 10⁻³ ÷ 0.0500 = 3.3%\". On \"equal to its concentration\" a faint dashed full-length teal bar overlays the long bar, labelled \"strong: [H₃O⁺] = c\", then fades with its label; the label \"weak\" writes beside the short chunk. The bar and its labels fade as the result shrinks to a kept chip \"[H₃O⁺] = 1.66 × 10⁻³ mol/L\". Bright at the end: the task line, the givens card and the kept chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Mark underline",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we-ice-backwards",
+      "visualDecision": "new",
+      "visualReference": "step chip \"Step 2 of 2: Ka\".",
+      "teachingReason": "Worked example: the ICE table backwards: Now the table, but this time we know the bottom row first.",
+      "narrationCue": "one hydronium and one X minus / zero point zero four eight three / five point seven times ten to the minus five / two decimal places / nothing is approximated",
+      "motionPurpose": "On the spoken cues: The C08 ICE table draws under the strip with its I and C rows faint; the E row fills first: the H₃O⁺ cell takes the kept chip value \"1.66 × 10⁻³\". On \"one hydronium and one X minus\" the strip brightens briefly and its 1 : 1 coefficients pulse (then it dims again) and the X⁻ cell fills \"1.66 × 10⁻³\"; small upward arrows \"work backwards\" point from the E row to the faint C row (\"+1.66 × 10⁻³\", \"−1.66 × 10⁻³\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "step chip \"Step 2 of 2: Ka\". The C08 ICE table draws under the strip with its I and C rows faint; the E row fills first: the H₃O⁺ cell takes the kept chip value \"1.66 × 10⁻³\". On \"one hydronium and one X minus\" the strip brightens briefly and its 1 : 1 coefficients pulse (then it dims again) and the X⁻ cell fills \"1.66 × 10⁻³\"; small upward arrows \"work backwards\" point from the E row to the faint C row (\"+1.66 × 10⁻³\", \"−1.66 × 10⁻³\"). On \"zero point zero four eight three\" the HX cell fills \"0.0500 − 0.00166 = 0.0483\" and the \"work backwards\" arrows fade. The I and C rows dim and the givens card dims. On \"five point seven times ten to the minus five\" the line writes: \"Ka = (1.66 × 10⁻³)² / 0.0483 = 5.70 × 10⁻⁵ → 5.7 × 10⁻⁵\". On \"two decimal places\" a small grey tag \"pH 2 d.p. → [H₃O⁺] 2 s.f. → Ka 2 s.f.\" writes and dims after its sentence (the C07 rule card in reverse). On \"nothing is approximated\" a small grey tag \"measured [H₃O⁺]: exact c − x, no 5% check\" writes and dims. Answer chip \"HX: Ka = 5.7 × 10⁻⁵\" pins. Bright at the end: the task line, the E row and the answer chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "hook-answer",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Back to the hook: So H X has a K a about three times bigger than ethanoic acid's.",
+      "narrationCue": "three times / stronger / dilute",
+      "motionPurpose": "On the spoken cues: The two readouts from scene 1 return small at the top. On \"three times\" two chips stand side by side: \"HX: Ka = 5.7 × 10⁻⁵\" and \"ethanoic acid: Ka = 1.8 × 10⁻⁵\", with a bracket \"about 3 ×\". On \"stronger\" the HX chip gets a teal tick. On \"dilute\" the 0.0500 label under the HX readout pulses and the scene 1 crossed chip returns briefly. A two-line card writes: \"pH: one solution (depends on Ka and c).\" \"Ka: the acid",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The two readouts from scene 1 return small at the top. On \"three times\" two chips stand side by side: \"HX: Ka = 5.7 × 10⁻⁵\" and \"ethanoic acid: Ka = 1.8 × 10⁻⁵\", with a bracket \"about 3 ×\". On \"stronger\" the HX chip gets a teal tick. On \"dilute\" the 0.0500 label under the HX readout pulses and the scene 1 crossed chip returns briefly. A two-line card writes: \"pH: one solution (depends on Ka and c).\" \"Ka: the acid itself.\" Bright at the end: the two Ka chips and the two-line card. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "pka",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "PKa: K a values are awkward, full of negative powers of ten.",
+      "narrationCue": "p K a / four point two four / four point seven four",
+      "motionPurpose": "On the spoken cues: The M5 C10 log ruler draws across the centre, Ka on its upper side (ticks 10⁰ to 10⁻¹², tag \"each tick is ten times the last\"). On \"p K a\" the definition writes above it: \"pKa = −log Ka\", with a small grey tag \"like pH = −log[H₃O⁺]\" that dims when the HX marker drops. The lower side of the ruler labels itself \"pKa\" with numbers 0 to 12 under the matching ticks. On \"four point two four\" the HX marker drops at 5.7 ×",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The M5 C10 log ruler draws across the centre, Ka on its upper side (ticks 10⁰ to 10⁻¹², tag \"each tick is ten times the last\"). On \"p K a\" the definition writes above it: \"pKa = −log Ka\", with a small grey tag \"like pH = −log[H₃O⁺]\" that dims when the HX marker drops. The lower side of the ruler labels itself \"pKa\" with numbers 0 to 12 under the matching ticks. On \"four point two four\" the HX marker drops at 5.7 × 10⁻⁵ with the line \"pKa = −log(5.7 × 10⁻⁵) = 4.24\" and its pKa label below; on \"four point seven four\" the HX working line shrinks into its marker label and the ethanoic acid marker drops with \"pKa = −log(1.8 × 10⁻⁵) = 4.74\", which then shrinks the same way. On \"two decimal places\" a small tag \"Ka 2 s.f. → pKa 2 d.p.\" writes and dims. Bright at the end: the definition and the two markers with their labels. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reading-pka",
+      "visualDecision": "new",
+      "visualReference": "the ruler stays.",
+      "teachingReason": "Reading pKa: The minus sign flips the direction.",
+      "narrationCue": "smaller / lower / factor of ten / three",
+      "motionPurpose": "On the spoken cues: On \"smaller\" an arrow along the upper side labelled \"Ka bigger\" points left (toward 10⁰) while an arrow along the lower side labelled \"pKa smaller\" points the same way; on \"lower\" a single arrow \"stronger acid\" lights over both. A chip \"bigger pKa, stronger acid\" fades in and is crossed (caption \"lower pKa, stronger\"). On \"factor of ten\" the span from pKa 4 to 5 brackets itself \"× 10 in Ka\". On \"three\" the bracket",
+      "motionRole": "explain",
+      "onScreenChange": "the ruler stays. On \"smaller\" an arrow along the upper side labelled \"Ka bigger\" points left (toward 10⁰) while an arrow along the lower side labelled \"pKa smaller\" points the same way; on \"lower\" a single arrow \"stronger acid\" lights over both. A chip \"bigger pKa, stronger acid\" fades in and is crossed (caption \"lower pKa, stronger\"). On \"factor of ten\" the span from pKa 4 to 5 brackets itself \"× 10 in Ka\". On \"three\" the bracket between 4.24 and 4.74 labels \"0.50 → 10⁰·⁵⁰ ≈ 3.2\", and a faint \"5?\" beside it is crossed (log scale, not halfway). On \"ten to the minus p K a\" the line \"Ka = 10⁻ᵖᴷᵃ\" writes under the ruler. Bright at the end: the arrow, the crossed chip and the line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "strong-weak",
+      "visualDecision": "new",
+      "visualReference": "the ruler slides up and extends to the left past 10⁰, where both sides grey into one hatched zone labelled \"strong: too large to measure in water\" (no Ka or pKa numbers in the zone).",
+      "teachingReason": "Strong and weak, with Ka and pKa: This is how K a separates strong acids from weak ones.",
+      "narrationCue": "molecules and ions / no molecules left / strong",
+      "motionPurpose": "On the spoken cues: On \"molecules and ions\" a small lens thumbnail (amber-outlined molecules with a few ions, C08) sits under the weak side, which lights teal \"weak: Ka < 1, pKa > 0\"; the thumbnail greys when its sentence ends. On \"no molecules left\" a second thumbnail (only ions, C05 HCl lens) sits under the hatched zone and greys on \"strong\", when the zone label pulses (no extra tag). On \"measured hydronium\" the two-bar test from",
+      "motionRole": "explain",
+      "onScreenChange": "the ruler slides up and extends to the left past 10⁰, where both sides grey into one hatched zone labelled \"strong: too large to measure in water\" (no Ka or pKa numbers in the zone). On \"molecules and ions\" a small lens thumbnail (amber-outlined molecules with a few ions, C08) sits under the weak side, which lights teal \"weak: Ka < 1, pKa > 0\"; the thumbnail greys when its sentence ends. On \"no molecules left\" a second thumbnail (only ions, C05 HCl lens) sits under the hatched zone and greys on \"strong\", when the zone label pulses (no extra tag). On \"measured hydronium\" the two-bar test from scene 3 returns small as a decision line: \"[H₃O⁺] = c → strong, no Ka\" | \"[H₃O⁺] ≪ c → weak, calculate Ka\". Bright at the end: the two zones and the decision line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "Cam lens zoom",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ka-kb-kw",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Conjugate bases: Ka × Kb = Kw: K a also tells you about the conjugate base.",
+      "narrationCue": "conjugate base / cancel / K w / five point six times ten to the minus ten",
+      "motionPurpose": "On the spoken cues: Two strips write: \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" and, on \"conjugate base\", \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\", with a C06 bracket \"conjugate pair\" joining CH₃COOH and CH₃COO⁻. The builder writes \"Ka = [H₃O⁺][CH₃COO⁻] / [CH₃COOH]\" and \"Kb = [CH₃COOH][OH⁻] / [CH₃COO⁻]\". On \"multiply\" the two fractions slide together into one product; on \"cancel\" [CH₃COOH] top and bottom and [CH₃COO⁻] top",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two strips write: \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" and, on \"conjugate base\", \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\", with a C06 bracket \"conjugate pair\" joining CH₃COOH and CH₃COO⁻. The builder writes \"Ka = [H₃O⁺][CH₃COO⁻] / [CH₃COOH]\" and \"Kb = [CH₃COOH][OH⁻] / [CH₃COO⁻]\". On \"multiply\" the two fractions slide together into one product; on \"cancel\" [CH₃COOH] top and bottom and [CH₃COO⁻] top and bottom strike through in pairs, leaving \"[H₃O⁺][OH⁻]\". On \"K w\" it relabels \"= Kw = 1.0 × 10⁻¹⁴ (25 °C)\" and the result \"Ka × Kb = Kw\" pins. The strips dim. On \"five point six times ten to the minus ten\" the line \"Kb(CH₃COO⁻) = 1.0 × 10⁻¹⁴ ÷ 1.8 × 10⁻⁵ = 5.6 × 10⁻¹⁰\" writes. Bright at the end: the pinned relation and the Kb line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "conjugate-ranking",
+      "visualDecision": "new",
+      "visualReference": "the ruler returns with the HX and ethanoic acid markers.",
+      "teachingReason": "Ranking conjugate bases: Because K a times K b is fixed, a stronger acid has a weaker conjugate base.",
+      "narrationCue": "stronger acid / weaker conjugate base / one point eight times ten to the minus ten / conjugate pair",
+      "motionPurpose": "On the spoken cues: On \"stronger acid\" the fixed-product bar draws: on the log ruler, each acid's Ka segment (teal, from 10⁻¹⁴ upward) and its conjugate base's Kb segment (violet) together span the whole 10⁻¹⁴ to 10⁰ range, tag \"Ka × Kb = 1.0 × 10⁻¹⁴: a longer Ka bar means a shorter Kb bar\". On \"weaker conjugate base\" the HX teal segment is longer and its violet segment shorter than ethanoic acid's. On \"one point eight\" the line",
+      "motionRole": "explain",
+      "onScreenChange": "the ruler returns with the HX and ethanoic acid markers. On \"stronger acid\" the fixed-product bar draws: on the log ruler, each acid's Ka segment (teal, from 10⁻¹⁴ upward) and its conjugate base's Kb segment (violet) together span the whole 10⁻¹⁴ to 10⁰ range, tag \"Ka × Kb = 1.0 × 10⁻¹⁴: a longer Ka bar means a shorter Kb bar\". On \"weaker conjugate base\" the HX teal segment is longer and its violet segment shorter than ethanoic acid's. On \"one point eight\" the line \"Kb(X⁻) = 1.0 × 10⁻¹⁴ ÷ 5.7 × 10⁻⁵ = 1.8 × 10⁻¹⁰\" writes, and the ranking card writes: \"acid: HX > ethanoic acid\" | \"conjugate base: ethanoate > X⁻\"; the fixed-product bar dims and the Kb line merges into the ranking card. On \"conjugate pair\" a chip \"Ka(CH₃COOH) × Kb(NH₃) = Kw\" fades in and is crossed (caption \"conjugate pair only\"). Bright at the end: the ranking card and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember. p K a is like golf: the lowest score wins.",
+      "narrationCue": "p K a is like golf: the lowest score wins. / K a times K b equals K w",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten: \"pKa is like golf: the lowest score wins.\" with a tiny ruler thumbnail, the lowest pKa marker flagged. On \"K a times K b\" the second line writes: \"Conjugate pair: Ka × Kb = Kw. Stronger acid, weaker conjugate base.\" Each earlier line dims slightly as the next writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The aid writes large and handwritten: \"pKa is like golf: the lowest score wins.\" with a tiny ruler thumbnail, the lowest pKa marker flagged. On \"K a times K b\" the second line writes: \"Conjugate pair: Ka × Kb = Kw. Stronger acid, weaker conjugate base.\" Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Lactic acid is the weak acid",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Lactic acid is the weak monoprotic acid that forms when milk turns sour. A 0.200 mol/L solution of lactic acid has a pH of 2.28 at 25 °C. Calculate the acid dissociation constant, Ka, and the pKa of lactic acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no table, no ruler, no aid.",
+      "motionTools": [
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "five point two five times ten to the minus three / zero point one nine five / one point four times ten to the minus four / three point eight five",
+      "motionPurpose": "On the spoken cues: On \"five point two five\" \"pH of 2.28\" is underlined and \"[H₃O⁺] = [A⁻] = 10⁻²·²⁸ = 5.25 × 10⁻³ mol/L\" writes. On \"zero point one nine five\" \"0.200 mol/L\" is underlined and \"[HA] = 0.200 − 0.00525 = 0.195 mol/L\" writes; the first line dims. On \"one point four\" \"Ka = (5.25 × 10⁻³)² / 0.195 = 1.41 × 10⁻⁴ → 1.4 × 10⁻⁴\" writes and the answer chip \"Ka = 1.4 × 10⁻⁴\" pins. On \"three point eight five\" \"pKa = −log(1.41 ×",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. On \"five point two five\" \"pH of 2.28\" is underlined and \"[H₃O⁺] = [A⁻] = 10⁻²·²⁸ = 5.25 × 10⁻³ mol/L\" writes. On \"zero point one nine five\" \"0.200 mol/L\" is underlined and \"[HA] = 0.200 − 0.00525 = 0.195 mol/L\" writes; the first line dims. On \"one point four\" \"Ka = (5.25 × 10⁻³)² / 0.195 = 1.41 × 10⁻⁴ → 1.4 × 10⁻⁴\" writes and the answer chip \"Ka = 1.4 × 10⁻⁴\" pins. On \"three point eight five\" \"pKa = −log(1.41 × 10⁻⁴) = 3.85\" writes and joins the chip; \"Ka\" and \"pKa\" in the question are underlined. On \"slip\" a chip \"Ka = 5.2 × 10⁻³\" fades in and is crossed (caption \"that's [H₃O⁺], not Ka\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card: \"The pKa values of three acids at 25 °C are: hydrofluoric acid, HF, 3.17; methanoic acid, HCOOH, 3.74; hydrocyanic acid, HCN, 9.21.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. The p K a values of",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"The pKa values of three acids at 25 °C are: hydrofluoric acid, HF, 3.17; methanoic acid, HCOOH, 3.74; hydrocyanic acid, HCN, 9.21. (a) List the acids in order of decreasing strength. (b) Identify the strongest base among F⁻, HCOO⁻ and CN⁻, and calculate its Kb. Kw = 1.0 × 10⁻¹⁴ at 25 °C.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ruler, no aid.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "hydrofluoric acid / cyanide / one point six times ten to the minus five / backwards",
+      "motionPurpose": "On the spoken cues: On \"hydrofluoric acid\" the three pKa values are underlined and a mini ruler places them, lowest first; the ranking line writes \"(a) HF > HCOOH > HCN\". On \"cyanide\" \"F⁻, HCOO⁻ and CN⁻\" is underlined and \"(b) strongest base: CN⁻ (weakest acid)\" writes. On \"one point six times ten to the minus five\" \"Kw = 1.0 × 10⁻¹⁴\" is underlined and the lines \"Ka(HCN) = 10⁻⁹·²¹ = 6.2 × 10⁻¹⁰\" and \"Kb(CN⁻) = 1.0 × 10⁻¹⁴ ÷ 6.2 × 10⁻¹⁰",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"hydrofluoric acid\" the three pKa values are underlined and a mini ruler places them, lowest first; the ranking line writes \"(a) HF > HCOOH > HCN\". On \"cyanide\" \"F⁻, HCOO⁻ and CN⁻\" is underlined and \"(b) strongest base: CN⁻ (weakest acid)\" writes. On \"one point six times ten to the minus five\" \"Kw = 1.0 × 10⁻¹⁴\" is underlined and the lines \"Ka(HCN) = 10⁻⁹·²¹ = 6.2 × 10⁻¹⁰\" and \"Kb(CN⁻) = 1.0 × 10⁻¹⁴ ÷ 6.2 × 10⁻¹⁰ = 1.6 × 10⁻⁵\" write, the ranking line dimming; answer chip \"Kb(CN⁻) = 1.6 × 10⁻⁵\" pins. On \"backwards\" a chip \"HCN strongest (9.21 is biggest)\" fades in and is crossed (caption \"lowest pKa wins\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Strength: compare Ka or pKa (pH only at equal c).\"",
+      "teachingReason": "Decision rule and handoff: So to compare acid strength, compare K a or p K a, never pH alone unless the concentrations match.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Ka from pH: [H₃O⁺] = 10⁻ᵖᴴ = [A⁻]; [HA] = c − [H₃O⁺]; Ka = [H₃O⁺]² / [HA].\" \"3 pKa = −log Ka; lower pKa, stronger acid.\" \"4 Conjugate pair: Kb = Kw ÷ Ka.\" On \"Next\" a chip \"Next: weak acid pH and Ka method practice\" appears with a small `m6-ph-meter-probe-beaker-v1.png`.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Strength: compare Ka or pKa (pH only at equal c).\" \"2 Ka from pH: [H₃O⁺] = 10⁻ᵖᴴ = [A⁻]; [HA] = c − [H₃O⁺]; Ka = [H₃O⁺]² / [HA].\" \"3 pKa = −log Ka; lower pKa, stronger acid.\" \"4 Conjugate pair: Kb = Kw ÷ Ka.\" On \"Next\" a chip \"Next: weak acid pH and Ka method practice\" appears with a small `m6-ph-meter-probe-beaker-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c10-learning-review.md",
+      "sha256": "58c160552c9cd583242b54b8e10425c1d775b8adb6e6f1e7ae2151fead409378"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c10-claude-science-check.md",
+      "sha256": "1f80cae03b476896754002abd01d7a2b5486b8622306dc88d9d56364addf76d8"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

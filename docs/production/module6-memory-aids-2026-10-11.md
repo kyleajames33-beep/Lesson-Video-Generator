@@ -117,7 +117,9 @@ A buffer keeps pH nearly constant against *small* additions. Add enough acid or 
 ### Enthalpy of neutralisation
 
 **Strong acid with strong base: about −57 kJ per mole of water.** *Insight*
-Every strong-strong neutralisation is really H⁺ + OH⁻ → H₂O, so the value is nearly the same whichever pair you use. Weak acids usually give a less negative value, because some energy is used to ionise the weak acid.
+Every strong-strong neutralisation is really H⁺ + OH⁻ → H₂O, so the value is nearly the same whichever pair you use. A weak acid or base adds its own ionisation step. That step can absorb or release energy, so the value can be less negative (HCN, ammonia), about the same (ethanoic acid) or more negative (HF) than −57 kJ/mol.
+
+Change note (20 October 2026): replaced the claim that weak acids usually release less heat because ionisation uses energy. The ionisation step can release energy, and the examples above cover all three outcomes.
 
 **Per mole of water, not per mole of acid.** *Trap*
 1 mol H₂SO₄ with 2 mol NaOH forms 2 mol water. Calculate q = mcΔT using the *total* mass of both solutions, then ΔH = −q ÷ moles of water. A temperature rise means ΔH is negative.
