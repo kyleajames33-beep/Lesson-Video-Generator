@@ -75,3 +75,23 @@ Within the limit as written in scenes 1, 2, 3, 6, 7 and 9 to 11, provided each t
 **Ready to voice after fixes** (findings 1 to 3; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the total running time against the 9.5 minute cap (finding 12) and the 10d timing (finding 13).
 
 ## Resolution
+
+Resolved by the resolving author (Claude), 21 October 2026, in `../lessons/bio-m6-b19.md` **Revision 2**. Narration recounted by script (only lines starting "> ", bold markers removed): **5,991 characters** summed per scene, or **6,005** joined as one string as in this review (Revision 1: 5,997 and 6,011), 1,014 words, about 9.5 minutes (570 s). That is inside the 5,500 to 6,800 band and at the 9.5 minute cap. 10b is about 27 s and 10d about 31 s.
+
+| # | Decision | What changed |
+| --- | --- | --- |
+| 1 | Accepted (should fix) | Hook: "So that label alone can't tell you which one to trust." The bracket label "genetic technology" dims on "that label alone" and the "?" sits between the plates. Site correction 17 records the site's "The difference is not technology type". |
+| 2 | Accepted (should fix) | Scene 2: "The father had HIV, but washing his sperm before IVF already protects an embryo, and HIV can be prevented in other ways later in life." Cell chip: "already protected: sperm washing; other HIV prevention", with its second half landing on "other ways later in life". Stops-after and teaching checks updated. |
+| 3 | Accepted (should fix) | Scene 8: "Growth hormone and the papaya were far better than what came before, with clear evidence." Scene 5 now fills growth hormone's "Shown how?" cell (unspoken chip "harm from old source documented; replaced 1985", on "replaced it") and leaves "Who gets it?" empty. Scene 8 rings only the "Better than what?" and "Shown how?" cells of those two columns, and a grey "depends on cost" tag sits beside growth hormone's empty third cell. The spoken ranking now matches the board. |
+| 4 | Accepted | "Other farm crops can bring big benefits, ..." |
+| 5 | Accepted | The sentence ends scene 4 as "Many people with diabetes worldwide still can't reliably get it." Here "it" follows "That depends on price" in the insulin scene, so it refers to insulin; "worldwide" replaces "around the world" to save length. The world-outline glyph moves with it. Scene 5 starts "Now compare growth hormone, ...". |
+| 6 | Accepted | The trial bars, bracket, Cochrane label and crossed chip fade fully on "So the benefit that holds up", before the supply line draws. The cell chips write one per cue and dim as the next lands. |
+| 7 | Accepted | Two tags, one per cue: "pituitary gland: a small gland under the brain", then "until 1985: from donors who had died". |
+| 8 | Accepted | Grey screen gloss on "IVF": "IVF: egg fertilised in a lab". No narration change. |
+| 9 | Accepted | Grey tag "b12: yield isn't a level" beside "biodiversity trade-off" on "A gain in harvest". |
+| 10 | Accepted | "harvests climbed back". The third harvest bar rises to about three quarters of the first, labelled 2001. Chip "harvests climbed back after 1998". |
+| 11 | Accepted | Key note 2: "virus-resistant papaya rescued papaya growing in Hawaii's main district (seed released 1998)". |
+| 12 | Accepted | Scene 7's first sentence is cut as the named reserve and becomes a small grey on-screen heading, "Why is farming the most argued over?". Small trims pay for the remaining additions: the hook's 1982 sentence, "Since about 1990" and no "only" in scene 6, "now" in 10a, "actually" in 10b, "makes" in scene 6, "worldwide" in scene 4 and "Here" in scene 5. Net change: 6 characters fewer than Revision 1. |
+| 13 | Accepted, as recommended | "as Australia does" stays. It is the first remaining trim if the voiced 10d runs over 32 s (the screen tag stays). |
+
+Still open: the Codex error check, the five new plates and the b18 fermenter plate, and repeating this review on the exact voiced preview (total time against the 9.5 minute cap; 10d timing).

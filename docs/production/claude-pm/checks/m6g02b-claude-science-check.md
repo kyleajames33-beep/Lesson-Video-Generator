@@ -50,3 +50,19 @@ No blocker. Two should-fix findings (1 and 2). Findings 3 to 9 are wording fixes
 **Ready to voice after fixes 1 and 2** on science. Fix 1 must be rechecked at recording, because the pig kidney record is moving and a graft may pass one year in late November 2026. Findings 3 to 9 are minor. The Codex error check remains as planned (eGenesis edit counts, the first living recipient date, the current longest-working kidney, SCNT efficiency, and the NESA 2023 Q34 feedback wording, which this check has now confirmed).
 
 ## Resolution
+
+Resolved by the resolving author (Claude), 21 October 2026, in `../lessons/bio-m6-g02.md` **Revision 2**. Narration recounted by script (only lines starting "> ", bold markers removed): **5,873 characters** summed per scene (5,889 joined), about 9.5 minutes (569 s).
+
+| # | Decision | What changed |
+| --- | --- | --- |
+| 1 | Accepted (should fix) | Card: "Since 2024, a small number of patients have received these kidneys, first with special permission and then in clinical trials. One patient's kidney worked for about nine months before it was removed; others are still being followed." Narration 4a: "Since 2024, a few patients have received these kidneys with special permission, and one worked for about nine months before it was removed." Nothing depends on a record. 4e: "one kidney that worked for nine months", and its chip matches. The model answer says "first with special permission and then in trials". The Numbers entry is rewritten with expanded access, the late-2025 trials and the unconfirmed 285-day report, and is flagged **RECHECK AT RECORDING**: if any pig kidney has worked for more than a year, 4b becomes "kidneys lasting about a year at most", with row (2) to match. The Codex check list is extended. |
+| 2 | Accepted (should fix) | As learning review finding 2. Rows (1) and (4) and the model answer use "Genetic change (pest)": "a change in allele frequency, not a loss of genetic diversity, but it threatens the species-level gain". Key note 2 matches. |
+| 3 | Accepted | Card and model answer: "three pig genes whose products trigger rapid rejection by the human immune system were inactivated". The Numbers entry adds the glycan-antigen mechanism. |
+| 4 | Accepted | "most embryos are lost". Row (4) stays. |
+| 5 | Accepted | "who carried alleles now missing from the herd". |
+| 6 | Accepted | Key note 3: "lacks" and "mainly from the egg". The 3b mitochondria sentence is now a screen tag ("mtDNA: mainly domestic sheep") because of the length trims. |
+| 7 | Accepted | 3c narration as learning review finding 3. Model answer: "... which cloning does not, but they cannot restore alleles that have already been lost, which only the frozen cells hold." |
+| 8 | Accepted | Chip word for word: "linking the biotechnology to its effect on biodiversity, rather than its effect on the organism"; tag "NESA marking feedback, Biology 2023 Q34". The Codex check confirms the exact wording once more. |
+| 9 | Accepted | The hook separates the sourced half from the video's ethics advice, as learning review finding 7. A grey "HSCScience advice for ethics items" tag is added. The Numbers entry cites the 2025 Q30(b) feedback as supporting context. |
+
+Still open: the Codex error check (eGenesis edits, expanded access and trial dates, the current longest-working kidney, SCNT efficiency, the Q34 wording) and the pig kidney recheck at recording.

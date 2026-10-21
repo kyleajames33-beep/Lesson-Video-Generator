@@ -54,3 +54,23 @@ No blocker. Three should-fix findings (1 to 3). Findings 4 to 13 are wording fix
 **Ready to voice after fixes 1 to 3** on science. Findings 4 to 13 are minor wording and facts-list updates. The Codex error check remains as planned, especially the Puna production figures, the chymosin approval and share, and the hepatitis B dates.
 
 ## Resolution
+
+Resolved by the resolving author (Claude), 21 October 2026, in `../lessons/bio-m6-b19.md` **Revision 2**. Narration recounted by script (only lines starting "> ", bold markers removed): **5,991 characters** summed per scene (6,005 joined), about 9.5 minutes (570 s).
+
+| # | Decision | What changed |
+| --- | --- | --- |
+| 1 | Accepted (should fix) | Scene 2: "The father had HIV, but washing his sperm before IVF already protects an embryo, and HIV can be prevented in other ways later in life." "Protects" replaces "keeps the virus away". Chip "already protected: sperm washing; other HIV prevention". The facts list cites the expert reaction (healthed.com.au) and names He's stated aim of lifelong resistance. |
+| 2 | Accepted (should fix) | Hook: "So that label alone can't tell you which one to trust." New site correction 17 narrows the site's "The difference is not technology type" and gives heritability as part of the reason. |
+| 3 | Accepted (should fix) | Scene 8: "Growth hormone and the papaya were far better than what came before, with clear evidence." Growth hormone's "Who gets it?" cell stays empty with a grey "depends on cost" tag. The facts list notes that recombinant growth hormone is an expensive long-term therapy (no figure). |
+| 4 | Accepted, reworded | "Scientists gave papaya a copy of one of the virus's genes." ("Own" is dropped; "a copy of" keeps the DNA copy of an RNA virus gene accurate.) In the visual, the amber stretch is one gene, short relative to the whole viral genome. The facts list adds the about 0.9 kb coat protein gene, gene silencing and the need for sequence similarity (Plant Disease 2002). |
+| 5 | Accepted | "harvests climbed back". Chip "harvests climbed back after 1998"; the third bar is at about three quarters, labelled 2001. The facts list adds the ARS figure (about 40 million pounds in 2001, against about 53 in 1992 and about 26 in 1998). |
+| 6 | Accepted, reworded | Narration: "Since about 1990, it's been used for much of the world's cheese." This is shorter than "Since the early nineteen-nineties" and is accurate either way (1988 first approval outside the US; 1990 US GRAS). Key note 4: "(approved from 1988 to 1990)". Cell chip: "used since about 1990, much of world's cheese". The facts list is updated, and the Codex check now asks for the 1988 approval. |
+| 7 | Accepted, shorter variant | "It used to come from calves' stomachs." This drops "only" without adding length. Lambs and kids are noted in the facts list. |
+| 8 | Accepted | Narration: "usually stay sealed in tanks". Key note 4: "are usually contained in tanks". The facts list notes release cases (live recombinant vaccines). |
+| 9 | Accepted | Tag "about 85% less insecticide". The narration "far fewer sprays" stays. Decisions' b13 summary is also corrected. |
+| 10 | Accepted | Facts list: "at least 226 cases worldwide by 2012 (France 119, UK 65, US 29); 254 by January 2024", with the CDC and CIDRAP sources. Not spoken or shown. Added to the Codex check list. |
+| 11 | Accepted | Key note 2 as finding 11. |
+| 12 | Accepted | "In 1982, human insulin made by bacteria was approved, and it's now used around the world." The tag is now "1982: approved". The facts list notes that production began in the late 1970s. |
+| 13 | Confirmed, no change | The hook still names no committee. The Codex check list adds the WHO Expert Advisory Committee page for site correction 1. |
+
+Still open: the Codex error check (especially the Puna figures, the chymosin approvals and share, the hepatitis B dates and the CJD count), and the voiced-preview review.
