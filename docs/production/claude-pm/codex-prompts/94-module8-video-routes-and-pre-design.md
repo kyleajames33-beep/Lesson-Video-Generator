@@ -1,6 +1,6 @@
 # Brief 94: draft video routes for Year 12 Module 8 (Chemistry and Biology), plus pre-design gaps
 
-Read `00-standing-rules.md` and brief 69 first. Do brief 93 (Module 8) first. Module 8 follows it. Work the same way you did for Module 6 in brief 69, but apply what the Module 6 review changed (`docs/production/module6-route-review-claude.md`):
+Read `00-standing-rules.md` and brief 69 first. Do brief 93 (Module 7) first. Module 8 follows it. Work the same way you did for Module 6 in brief 69, but apply what the Module 6 review changed (`docs/production/module6-route-review-claude.md`):
 - Core videos run 8 to 9 minutes (5,500 to 6,800 characters, and at or under about 9.5 minutes with holds).
 - Short topics are merged so each video carries one full learner question.
 - Add G-series practice videos where calculation or evaluation skills pile up.
@@ -18,7 +18,7 @@ Read `00-standing-rules.md` and brief 69 first. Do brief 93 (Module 8) first. Mo
 
 **Output:**
 - `docs/production/module8-video-route-draft.json`, in the same schema as the Module 6 route JSON;
-- `docs/production/module8-video-route-draft.md`, a readable table: id, title, site lessons, dotpoints with ledger IDs, prerequisites (including Module 5 and 6 videos where relevant), estimated minutes and playlist order.
+- `docs/production/module8-video-route-draft.md`, a readable table: id, title, site lessons, dotpoints with ledger IDs, prerequisites (including Module 5, 6 and 7 videos where relevant), estimated minutes and playlist order.
 - Ids follow the pattern `chem-m8-c01` and `bio-m8-b01`, with `-g01` and `-p01`.
 
 ## 2. Pre-design gaps
