@@ -1414,7 +1414,8 @@
           "prerequisites": [
             "bio-m7-b01",
             "bio-m7-b03",
-            "bio-m5-b01"
+            "bio-m5-b01",
+            "bio-m5-b03b"
           ],
           "estimatedMinutes": 8.5,
           "start": "Compare plant and animal cases.",
@@ -1476,50 +1477,12 @@
           ],
           "entryKnowledge": "Recall bio-m7-b01, bio-m7-b04, bio-m5-b02b.",
           "next": [
-            "bio-m7-p03"
+            "bio-m7-b06"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
           "placement": "Core learner route",
           "mainLearnerQuestion": "How does an Australian plant defend itself?",
-          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-plant-defences.md",
-          "siteExtracts": [
-            "docs/production/claude-pm/site-extracts/bio-m7-l08.md"
-          ]
-        },
-        {
-          "id": "bio-m7-p03",
-          "title": "Investigate a named Australian plant disease",
-          "type": "practical",
-          "siteLessons": [
-            "L08"
-          ],
-          "syllabusActions": [
-            "B7-IQ2-01"
-          ],
-          "prerequisites": [
-            "bio-m7-b05"
-          ],
-          "estimatedMinutes": 7,
-          "start": "Choose practical or secondary data for a named plant-pathogen pair.",
-          "stop": "Trace observations to the plant response and note evidence limits.",
-          "playlistOrder": 8,
-          "planAnchor": "P03",
-          "sourceCandidates": [
-            {
-              "id": "Biology-Y12-M7-L08",
-              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson08.sa.html",
-              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
-            }
-          ],
-          "entryKnowledge": "Recall bio-m7-b05.",
-          "next": [
-            "bio-m7-b06"
-          ],
-          "status": "draft-for-Claude-review",
-          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
-          "placement": "Practical support",
-          "mainLearnerQuestion": "Investigate a named Australian plant disease",
           "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-plant-defences.md",
           "siteExtracts": [
             "docs/production/claude-pm/site-extracts/bio-m7-l08.md"
@@ -1560,7 +1523,7 @@
           ],
           "entryKnowledge": "Recall bio-m7-b01, bio-m7-b03.",
           "next": [
-            "bio-m7-p04"
+            "bio-m7-b07"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
@@ -1570,59 +1533,6 @@
           "siteExtracts": [
             "docs/production/claude-pm/site-extracts/bio-m7-l09.md",
             "docs/production/claude-pm/site-extracts/bio-m7-l10.md"
-          ]
-        },
-        {
-          "id": "bio-m7-p04",
-          "title": "Model and test an immune response",
-          "type": "practical",
-          "siteLessons": [
-            "L09",
-            "L10",
-            "L14"
-          ],
-          "syllabusActions": [
-            "B7-IQ3-01",
-            "B7-IQ3-02"
-          ],
-          "prerequisites": [
-            "bio-m7-b06"
-          ],
-          "estimatedMinutes": 7,
-          "start": "Set up a safe model of recognition and response.",
-          "stop": "Explain what its observations can and cannot show.",
-          "playlistOrder": 10,
-          "planAnchor": "P04",
-          "sourceCandidates": [
-            {
-              "id": "Biology-Y12-M7-L09",
-              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson09.sa.html",
-              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
-            },
-            {
-              "id": "Biology-Y12-M7-L10",
-              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson10.sa.html",
-              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
-            },
-            {
-              "id": "Biology-Y12-M7-L14",
-              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson14.sa.html",
-              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
-            }
-          ],
-          "entryKnowledge": "Recall bio-m7-b06.",
-          "next": [
-            "bio-m7-b07"
-          ],
-          "status": "draft-for-Claude-review",
-          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
-          "placement": "Practical support",
-          "mainLearnerQuestion": "Model and test an immune response",
-          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-innate-defences.md",
-          "siteExtracts": [
-            "docs/production/claude-pm/site-extracts/bio-m7-l09.md",
-            "docs/production/claude-pm/site-extracts/bio-m7-l10.md",
-            "docs/production/claude-pm/site-extracts/bio-m7-l14.md"
           ]
         },
         {
