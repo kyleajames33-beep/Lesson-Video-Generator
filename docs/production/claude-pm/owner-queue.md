@@ -277,3 +277,10 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - B5a and B5b are rebuilt on the brief 88 painted plates: bio-m5-b05a and bio-m5-b05b at preview v8. B8 and Bio P02 release after B5b passes.
 - Rendered and ready to upload (brief 28t): C01, B01, B02, B6b, B6c, C10, C15 and Chemistry P02.
 - Codex briefs still to send: 28t (uploads) and 89 (C09 and C10 check).
+
+## 21 Oct: owner decision needed (C16 cultural content)
+
+- **The requirement:** the C16 dotpoint requires acid-base analysis "by Aboriginal and Torres Strait Islander Peoples". The site's only example was pituri (a nicotine plant chewed with alkaline ash). Claude ruled it out, because it ties Aboriginal knowledge to drug use and raises protocol concerns.
+- **Alternatives considered:** the best documented alternative was Palawa shell-necklace cleaning. It was rejected because makers keep the method private.
+- **What C16 scene 8 does now:** it states the principle only. The knowledge was built by observing, testing and passing on results over many generations, and it belongs to the communities who hold it. It recalls Module 5 cycad leaching as solubility chemistry, and names no specific practice.
+- **Decide:** (a) accept principle-only; (b) seek an example from an Aboriginal or Torres Strait Islander educator or community; (c) have such a reviewer read scene 8 before voicing. The details are in `checks/m6c16-cultural-review.md`. C16 is not voiced until you decide.
