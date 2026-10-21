@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b11/lesson.json",
+    "lessonSha256": "31a3439a3a1ca8c394bd6384da6cd03fc1208e51815d6eff2a442703d6768a4f"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From bio-m5-b06c and B6b: a gene is transcribed and translated to make a protein; RNA pairs with DNA by complementary bases (A with U, C with G). From bio-m5 inheritance (B9, B10): a heterozygous parent passes each allele to about half its offspring, because each gamete gets one chromosome of a pair. From b01 and b03 (Module 6): sickle cell is a single-base missense mutation in the beta-globin gene; sickle haemoglobin distorts red cells. From b05: somatic mutations are not inherited; germ-line mutations can be. From b09: gene editing changes a chosen stretch of DNA; biotechnology spans medicine, agriculture and industry. From b10: judging a technology by benefit, harm and who gets each; checking what a technology actually did. Not assumed: guide RNA, Cas9, foetal haemoglobin, BCL11A, ex vivo editing, gene drive, the evidence ladder, need, feasibility and fairness.",
+    "startsWith": "Move from an existing technique to a proposed future use. The video opens: In late 2023, a treatment made with the gene-editing tool CRISPR was approved for the first time, for sickle cell disease.",
+    "stopsAfter": "explaining how CRISPR edits DNA (a guide RNA pairs with the target, Cas9 cuts both strands, repair often adds or loses bases) and that it can cut similar stretches elsewhere; explaining the approved sickle cell treatment (stem cells edited outside the body so less BCL11A is made, foetal haemoglobin returns and prevents most sickling, the sickle allele remains) and its evidence; explaining why working in a trial is not the same as being available to everyone (chemotherapy, hospital time, cost, where patients live); sorting claims by how far the evidence has got; explaining that gene editing suits problems caused by one gene, not most common diseases; explaining how a gene drive spreads to nearly all offspring and could crash a mosquito population, its caged evidence and its uncertainties (resistance, ecological effects, borders and consent, reversal); judging a future use by need, feasibility and fairness and phrasing it as \"could, if\"; applying this to an unseen in-body editing item and an unseen overclaiming headline.",
+    "nextLesson": "how genetic techniques can change biodiversity at the genetic, species and ecosystem levels (route entry bio-m6-b12)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b11.md"
+  ],
+  "teaching": {
+    "task": "A CRISPR treatment for sickle cell disease is already approved, and headlines promise far more. So which future uses of biotechnology are plausible, and how can you tell?",
+    "causalExplanation": "Causes: how CRISPR finds its target (base pairing of the guide, 2); why repair can switch a stretch off (bases added or lost, 2); why off-target cuts happen (the guide pairs with a similar stretch, 2); why the sickle cell treatment works without fixing the allele (foetal haemoglobin returns when its switch is reduced, 3); why it is not available to everyone (chemotherapy, hospital time, cost, where patients live, 4); why editing suits single-gene conditions (one stretch to change, 5); how a gene drive beats half-and-half inheritance (it copies itself to the other chromosome, 6); how it can crash a population (homozygous females cannot breed, 7); why its success is uncertain (resistance, ecology, consent, reversal, 8). Visible case: one ladder; the two cases sit on different rungs. Video advantage: the guide zipping onto DNA, the drive band copying across, the offspring row filling from half to all, the population line falling. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the attempt 1 card is the densest frame and is the task.",
+    "conversationalApproach": "A CRISPR treatment for sickle cell disease is already approved while headlines promise far more, so the question is which future uses are plausible and how to tell; CRISPR is shown finding its target with a guide RNA and cutting with Cas9, the approved sickle cell treatment shows what an existing use looks like (the foetal haemoglobin switch, edited outside the body) with its evidence and its catch (cost, hospital time, where patients live), the evidence ladder places each direction from idea to approved, a malaria gene drive is the proposed future use (how it beats the half-and-half rule and could crash a population, caged evidence only) with its unknowns, and need, feasibility and fairness give a \"could, if\" judgement. Two exam questions follow with brief feedback.",
+    "openingDecision": "In late 2023, a treatment made with the gene-editing tool CRISPR was approved for the first time, for sickle cell disease. Since then, the claims have grown: CRISPR will wipe out malaria, cure every genetic disease, end crop failure. Some of these could happen, and some are hype. So which future uses of biotechnology are plausible, and how can you tell?",
+    "understandingCheck": "11a is an explain-and-identify item on a gene-editing treatment for high cholesterol delivered to the liver (the gene's effect on cholesterol is given on the card): explain the mechanism of benefit and identify two uncertainties. It tests the route stop on a new case. 11c is an evaluate item on the headline \"CRISPR will soon cure all genetic diseases\". It tests scene 9's judgement and the \"could, if\" wording. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B6-IQ2-01: \"investigate the uses and applications of biotechnology (past, present and future), including: (ACSBL087)\", with the two listed sub-points this video carries: \"researching future directions of the use of biotechnology\" and \"evaluating the potential benefits for society of research using genetic technologies\". The sub-point \"analysing the social implications and ethical uses ...\" is b10's; \"evaluating the changes to the Earth's biodiversity due to genetic techniques\" is b12 and b13's. This video owns first coverage of the two future-direction sub-points; b13 and b19 return to benefits with evidence. Update the ledger rows when this design passes review. The verbs: \"researching\" is carried by the evidence ladder (scene 5) and the two cases; \"evaluating\" by scene 9's three questions and attempt 2 (evaluate a claim; what-markers-reward: \"Evaluate ... test the thing named in the question against the evidence and reach a supported judgement\"). Attempt 1 uses \"explain\" (what-markers-reward: \"name the relevant feature, then show how it causes the stated outcome\") and \"identify\"."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One evidence ladder at the left of the frame from scene 5 onward: five coded rungs, bottom to top, \"only an idea\", \"works in the lab\", \"works in animals\", \"human trials\", \"approved and in use\", each a slim cream bar with a small grey label; cases sit on rungs as small plate thumbnails. Before scene 5 the frame is a mechanism stage: DNA is b01's `SlimStrand` drawn as a double strand (slim, cream bases, no letter tiles), the guide RNA is B6b's terracotta strand at the same slim scale, and Cas9 is a coded translucent rounded enzyme outline (lilac-grey) that clamps the strand; the cut is two short amber nicks, one per strand. The sickle cell case uses the painted `m6-red-cells-normal-sickle-v1.png`, a coded globin-gene strip with two gene blocks (\"adult\" and \"foetal\") and a coded switch protein glyph, and a coded flow (cells out, dish, edit, cells back) with `b3a-petri-dish-v1.png` and the new `m6-infusion-bag-cells-v1.png`; no person or body outline. The gene drive uses `m5x-anopheles-mosquito-v1.png`, the new `m6-mosquito-cage-v1.png`, and clean chromosome diagram panels (two slim homologous chromosome outlines side by side, cream, with the drive allele as an amber band; no painted cell behind them), plus a coded offspring row (eight small mosquito glyphs) and a coded population line. Scene 9 has a three-question board (\"need\", \"feasibility\", \"fairness\"). Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey ladder labels; each tag fades when the next cue lands.",
+    "transitionPlan": "The red cells plate and three grey headline strips open the hook; the slim DNA strand takes the guide RNA and the Cas9 outline for the cut; the red cells plate returns with the haemoglobin switch strip; the 30-circle grid and the three-step cost strip build and dim; the evidence ladder draws rung by rung and the treatment thumbnail climbs it; the mosquito plate and chromosome panel show the drive spreading through offspring rows and the female fertility gene; unknown chips write and dim beside the returning headline; the three-question board draws its columns and the \"could ... if\" line; the memory lines write large; each attempt clears the board and its feedback underlines the card as chains and chips fill; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. `m6-red-cells-normal-sickle-v1.png` at the left, sickle half nearest the centre; on \"approved\" a small coded tick and a grey tag \"approved late 2023\" write under it.",
+      "teachingReason": "Hook (an approved treatment and bigger claims): In late 2023, a treatment made with the gene-editing tool CRISPR was approved for the first time, for sickle cell disease.",
+      "narrationCue": "CRISPR / plausible",
+      "motionPurpose": "On the spoken cues: On \"the claims have grown\" three headline strips slide in at the right, one per claim, in plain grey card style (no newspaper branding): \"will wipe out malaria\" (small mosquito plate thumbnail), \"cure every genetic disease\", \"end crop failure\". On \"Some of these could happen\" the strips tilt",
+      "motionRole": "explain",
+      "onScreenChange": "no people. `m6-red-cells-normal-sickle-v1.png` at the left, sickle half nearest the centre; on \"approved\" a small coded tick and a grey tag \"approved late 2023\" write under it. On \"the claims have grown\" three headline strips slide in at the right, one per claim, in plain grey card style (no newspaper branding): \"will wipe out malaria\" (small mosquito plate thumbnail), \"cure every genetic disease\", \"end crop failure\". On \"Some of these could happen\" the strips tilt slightly and a grey \"?\" writes beside each. On \"plausible\" the tag and strips dim and the heading writes on: \"Plausible, or hype?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "crispr-cut",
+      "visualDecision": "new",
+      "visualReference": "the hook clears.",
+      "teachingReason": "How CRISPR finds and cuts: CRISPR changes a chosen stretch of DNA using two parts.",
+      "narrationCue": "guide RNA / Cas9",
+      "motionPurpose": "On the spoken cues: A long `SlimStrand` double strand runs across the frame with one stretch faintly marked (no letters). On \"guide RNA\" a short terracotta strand slides in and its bases zip against one strand of the marked stretch (tag \"guide RNA: pairs with the target\"). On \"Cas9\" a translucent lilac-grey enzyme",
+      "motionRole": "explain",
+      "onScreenChange": "the hook clears. A long `SlimStrand` double strand runs across the frame with one stretch faintly marked (no letters). On \"guide RNA\" a short terracotta strand slides in and its bases zip against one strand of the marked stretch (tag \"guide RNA: pairs with the target\"). On \"Cas9\" a translucent lilac-grey enzyme outline closes around the guide and the DNA (tag \"Cas9 enzyme\", replacing the guide tag). On \"cuts both DNA strands\" two amber nicks appear, one on each strand, and the strand parts slightly. On \"repairs\" the ends rejoin with one small amber gap band where a base was lost (tag \"repair: a few bases added or lost\"). On \"switch that stretch off\" the marked stretch greys. On \"elsewhere\" the camera slides along the strand to a second, similar stretch; the guide hovers and pairs imperfectly (two bases unpaired), and a dashed amber nick appears (tag \"off-target cut\", replacing the repair tag). Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "sickle-cell-use",
+      "visualDecision": "adjust",
+      "visualReference": "the strand clears.",
+      "teachingReason": "The approved use: sickle cell: Now the approved use.",
+      "narrationCue": "sickle / foetal haemoglobin",
+      "motionPurpose": "On the spoken cues: The red cells plate returns, sickle half ringed on \"sickle\", with a small coded narrow vessel outline in which two sickle cells jam (no tag); on \"foetal haemoglobin\" the vessel fades and the plate shrinks to a dim thumbnail at the upper left until \"keeps most red cells from sickling\". On \"foetal",
+      "motionRole": "explain",
+      "onScreenChange": "the strand clears. The red cells plate returns, sickle half ringed on \"sickle\", with a small coded narrow vessel outline in which two sickle cells jam (no tag); on \"foetal haemoglobin\" the vessel fades and the plate shrinks to a dim thumbnail at the upper left until \"keeps most red cells from sickling\". On \"foetal haemoglobin\" the `GlobinSwitch` draws below: two gene blocks on one slim strip, \"adult\" (with a small amber dot for the sickle base) and \"foetal\". On \"switches the foetal gene off\" a small coded protein glyph labelled \"BCL11A\" settles on the foetal block, which greys. On \"blood-forming stem cells\" the coded flow draws left to right: a small round stem cell glyph cluster, an arrow into `b3a-petri-dish-v1.png` (tag \"edited outside the body\"). On \"cut the DNA\" a mini `CasCut` nick appears on a small strip with a small grey label \"switch control region (red-cell line)\" beside the dish; the label fades on \"With less of it\". At most three bright text items: the gene-block labels are small grey, and only the current tag and the BCL11A glyph label are bright. On \"With less of it\" the BCL11A glyph fades from the foetal block, which brightens, and small round foetal haemoglobin glyphs fill a red cell outline beside the adult ones (tag \"foetal haemoglobin back on\", replacing \"edited outside the body\"). On \"still there\" the amber sickle dot pulses on the adult block (no new tag). On \"keeps most red cells from sickling\" the normal half of the red cells plate brightens. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "evidence-and-catch",
+      "visualDecision": "adjust",
+      "visualReference": "the switch strip shrinks to the top.",
+      "teachingReason": "The evidence, and the catch: In the main trial, twenty-nine of the thirty patients followed for long enough had no severe pain crises for at least a year.",
+      "narrationCue": "everyone",
+      "motionPurpose": "On the spoken cues: On \"twenty-nine of the thirty\" a coded grid of 30 small circles draws; 29 fill teal and one stays open (tag \"29 of 30: no severe crises for a year\"). On \"look at what it takes\" the grid dims and a coded three-step strip writes on, one step per cue, each step dimming to grey when the next writes:",
+      "motionRole": "explain",
+      "onScreenChange": "the switch strip shrinks to the top. On \"twenty-nine of the thirty\" a coded grid of 30 small circles draws; 29 fill teal and one stays open (tag \"29 of 30: no severe crises for a year\"). On \"look at what it takes\" the grid dims and a coded three-step strip writes on, one step per cue, each step dimming to grey when the next writes: \"chemotherapy clears the marrow\" (a small coded bone outline whose red interior empties), on \"weeks in hospital\" \"weeks in hospital\" (a small coded calendar glyph), then the new `m6-infusion-bag-cells-v1.png` at the end with a grey tag \"edited cells returned\". On \"over two million dollars\" a coded price tag glyph reads \"over US$2 million\" (replacing the cells tag). On \"sub-Saharan Africa\" `m8-world-map-v1.png` appears small and sub-Saharan Africa takes a soft fill (tag \"most babies with the disease are born here\", replacing the price tag). On \"everyone\" the strip and map dim to grey and two chips write side by side: \"works in a trial\" (tick) and \"available to everyone\" (grey cross). At most three bright text items at once. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "evidence-ladder",
+      "visualDecision": "new",
+      "visualReference": "the map and chips clear.",
+      "teachingReason": "How far has the evidence got?: So sort each claim by how far the evidence has got.",
+      "narrationCue": "top rung / several directions / one gene / many genes and the environment",
+      "motionPurpose": "On the spoken cues: The `EvidenceLadder` draws at the left, one rung per question from the bottom, each with its small grey label: \"only an idea\", \"works in the lab\", \"works in animals\", \"human trials\", \"approved and in use\". On \"top rung\" the red cells thumbnail slides onto the top rung. On \"several directions\" three",
+      "motionRole": "explain",
+      "onScreenChange": "the map and chips clear. The `EvidenceLadder` draws at the left, one rung per question from the bottom, each with its small grey label: \"only an idea\", \"works in the lab\", \"works in animals\", \"human trials\", \"approved and in use\". On \"top rung\" the red cells thumbnail slides onto the top rung. On \"several directions\" three grey chips write to the right of the ladder, one per cue, with a small coded icon each: \"editing inside the body\" (a coded liver outline), \"edited crops\" (a coded leaf), \"DNA screening\" (a coded strip with one ringed band); a fourth small grey chip \"synthetic biology\" sits below them, unspoken and dim. On \"one gene\" the three chips dim and a coded single gene block lights on a strip (tag \"one gene: one stretch to edit\"). On \"many genes and the environment\" the strip shows many small grey bands lighting faintly with a small coded food and exercise icon beside them (tag \"many genes + environment\", replacing the one-gene tag). Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "gene-drive",
+      "visualDecision": "adjust",
+      "visualReference": "the ladder stays at the left, dimmed.",
+      "teachingReason": "A proposed use: a gene drive: Malaria, spread by certain mosquitoes, kills hundreds of thousands of people a year.",
+      "narrationCue": "half / gene drive / all",
+      "motionPurpose": "On the spoken cues: `m5x-anopheles-mosquito-v1.png` at the upper right (tag \"malaria: spread by certain mosquitoes\"). On \"about half\" a `ChromoPair` clean diagram panel draws centre: two slim homologue outlines, one with an amber band (tag \"one copy\"), and an `OffspringRow` of eight mosquito glyphs below fills four",
+      "motionRole": "explain",
+      "onScreenChange": "the ladder stays at the left, dimmed. `m5x-anopheles-mosquito-v1.png` at the upper right (tag \"malaria: spread by certain mosquitoes\"). On \"about half\" a `ChromoPair` clean diagram panel draws centre: two slim homologue outlines, one with an amber band (tag \"one copy\"), and an `OffspringRow` of eight mosquito glyphs below fills four amber and four grey (tag \"about half\", replacing the mosquito tag). On \"gene drive\" the row clears and the term writes on with the gloss \"an allele that copies itself across\". On \"its own CRISPR editor\" a tiny Cas9 outline glyph appears inside the amber band. On \"cuts the matching spot\" the glyph moves to the same position on the other homologue and an amber nick appears there. On \"copying the drive across\" the amber band copies onto the second homologue (both now amber; gloss fades). On \"nearly all\" the `OffspringRow` refills: all eight glyphs amber (tag \"nearly all offspring\"). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "population-crash",
+      "visualDecision": "adjust",
+      "visualReference": "the chromosome panel shrinks to the upper middle.",
+      "teachingReason": "Crashing a population: Now aim the drive at a gene that female mosquitoes need to lay eggs.",
+      "narrationCue": "crash",
+      "motionPurpose": "On the spoken cues: On \"a gene that female mosquitoes need\" the amber band takes a small grey label \"inside a female fertility gene\". On \"one copy\" a female glyph with one amber band keeps a small egg cluster icon; on \"two copies\" a female glyph with two amber bands loses it (grey cross on the eggs). On \"the",
+      "motionRole": "explain",
+      "onScreenChange": "the chromosome panel shrinks to the upper middle. On \"a gene that female mosquitoes need\" the amber band takes a small grey label \"inside a female fertility gene\". On \"one copy\" a female glyph with one amber band keeps a small egg cluster icon; on \"two copies\" a female glyph with two amber bands loses it (grey cross on the eggs). On \"the population can crash\" the `PopLine` draws over generation ticks, flat at first, then falling to the axis. On \"lab cages\" the new `m6-mosquito-cage-v1.png` appears beside the line (tag \"small lab cages: collapse in 7 to 11 generations\"). On \"no gene drive has been released\" the mosquito thumbnail slides onto the ladder's \"works in animals\" rung, and a grey tag \"not released in the wild\" writes beside it, replacing the cage tag. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "unknowns",
+      "visualDecision": "new",
+      "visualReference": "the headline strip \"will wipe out malaria\" from the hook returns at the top with its \"?\".",
+      "teachingReason": "What could go wrong: So is \"gene drives will wipe out malaria\" plausible?",
+      "narrationCue": "Partly / But a mosquito / resistance / far bigger / animals that eat them / borders",
+      "motionPurpose": "On the spoken cues: On \"Partly\" two small ticks write under it, \"mechanism works in cages\" and \"huge need\". On \"But a mosquito\" the ticks dim and unknown chips write in turn, each dimming when the next writes: on \"resistance\", a mini `ChromoPair` whose cut site band shows a small changed mark and the Cas9 glyph",
+      "motionRole": "explain",
+      "onScreenChange": "the headline strip \"will wipe out malaria\" from the hook returns at the top with its \"?\". On \"Partly\" two small ticks write under it, \"mechanism works in cages\" and \"huge need\". On \"But a mosquito\" the ticks dim and unknown chips write in turn, each dimming when the next writes: on \"resistance\", a mini `ChromoPair` whose cut site band shows a small changed mark and the Cas9 glyph bounces off (chip \"resistance\"); on \"far bigger\" the cage thumbnail sits small beside a much larger cloud of mosquito glyphs (no new tag); on \"animals that eat them\", a coded food-web fragment (mosquito glyph with two arrows to small bird and fish outlines, a grey \"?\" on each arrow; chip \"ecological effects\"); on \"borders\", a coded map outline with a dashed spreading front crossing a border line (chip \"crosses borders: who decides?\"); on \"call back\", a small coded arrow that cannot return (chip \"hard to reverse\"). At most one chip and the headline are bright at once. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "three-questions",
+      "visualDecision": "new",
+      "visualReference": "the three-question board draws to the right of the ladder: three column heads write on one per cue, \"need\", \"feasibility\", \"fairness\", each with its question in small grey under it.",
+      "teachingReason": "Need, feasibility, fairness: To judge any future use, ask three questions.",
+      "narrationCue": "Need / Feasibility / Fairness / could",
+      "motionPurpose": "On the spoken cues: On \"Not \\\"it will\\\"\" a line writes under the board: \"it will\" (struck through in grey) then \"it could ... if ...\" (bright), and the three column heads dim to grey. On \"Gene drives could reduce malaria\" the sentence writes in full under it, with \"could\" and \"if\" underlined amber. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "the three-question board draws to the right of the ladder: three column heads write on one per cue, \"need\", \"feasibility\", \"fairness\", each with its question in small grey under it. On \"Not \\\"it will\\\"\" a line writes under the board: \"it will\" (struck through in grey) then \"it could ... if ...\" (bright), and the three column heads dim to grey. On \"Gene drives could reduce malaria\" the sentence writes in full under it, with \"could\" and \"if\" underlined amber. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "two handwritten lines write on large, one per cue: \"Advanced isn't the same as proven.\" (with the cage thumbnail), \"Need, feasibility, fairness.\" (with three small column icons).",
+      "teachingReason": "Memory: Two things to hold on to.",
+      "narrationCue": "Advanced isn't the same as proven / need, feasibility and fairness",
+      "motionPurpose": "On the spoken cues: Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "two handwritten lines write on large, one per cue: \"Advanced isn't the same as proven.\" (with the cage thumbnail), \"Need, feasibility, fairness.\" (with three small column icons). Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the ladder and board clear.",
+      "teachingReason": "Unseen transfer task (attempt one (editing inside the body)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. A gene-editing treatment",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (editing inside the body))",
+      "motionRole": "explain",
+      "onScreenChange": "the ladder and board clear. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\": \"A gene-editing treatment for high blood cholesterol is being tested in small, early-stage human trials. The treatment is carried in the blood inside tiny fat particles that are taken up by liver cells. It changes one base in the PCSK9 gene, so the gene no longer codes for a working protein. The PCSK9 protein reduces the liver's ability to remove LDL cholesterol from the blood.\" Demands: \"(a) Explain how this edit could lower the level of LDL cholesterol in the blood. (3 marks)\" \"(b) Identify TWO uncertainties that must be resolved before this becomes a routine treatment. (2 marks)\". Two answer boxes. Nothing answer-bearing: no ladder, no off-target chip, no three-question board. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "remove / else / body cells",
+      "motionPurpose": "On the spoken cues: (1) On \"stops liver cells making working PCSK9 protein\" \"no longer codes for a working protein\" underlines amber; box (a) fills a three-link chain: \"no working PCSK9 protein\" → \"liver keeps its LDL-removing ability\" → \"less LDL in the blood\" (the second and third links on \"remove\" and \"falls\";",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. (1) On \"stops liver cells making working PCSK9 protein\" \"no longer codes for a working protein\" underlines amber; box (a) fills a three-link chain: \"no working PCSK9 protein\" → \"liver keeps its LDL-removing ability\" → \"less LDL in the blood\" (the second and third links on \"remove\" and \"falls\"; \"reduces the liver's ability to remove LDL\" underlines). (2) On \"anywhere else\" box (b) fills \"off-target edits elsewhere in the genome\"; on \"safe for life\" it adds \"long-term safety (permanent edit)\"; \"small, early-stage human trials\" underlines; a grey line under the box lists other accepted answers, \"works in larger groups? cost and access?\". (3) On \"the classic mistake\" the chip \"the patient's children will inherit the edit\" writes on and takes a grey scribble cross, with \"liver cells\" underlined in the strip. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (a headline)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A headline says: \"CRISPR will soon cure",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a headline))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\": \"A news headline states: 'CRISPR will soon cure all genetic diseases.'\" Demand: \"Evaluate this claim. Support your answer with examples. (5 marks)\". One lined answer box. Nothing answer-bearing: no ladder, no three-question board. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; \"all\" and \"soon\" in the headline underline amber.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "many genes",
+      "motionPurpose": "On the spoken cues: The `EvidenceLadder` returns small at the left with the red cells thumbnail on the top rung. On \"already treat sickle cell\" a tick chip writes \"supported: some single-gene diseases (sickle cell)\". On \"many genes\" a cross chip writes \"not supported: most diseases are many genes + environment\"; on",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; \"all\" and \"soon\" in the headline underline amber. The `EvidenceLadder` returns small at the left with the red cells thumbnail on the top rung. On \"already treat sickle cell\" a tick chip writes \"supported: some single-gene diseases (sickle cell)\". On \"many genes\" a cross chip writes \"not supported: most diseases are many genes + environment\"; on \"hard to reach\" a second cross chip \"delivery to most tissues still hard\"; on \"cost\" a third cross chip \"cost and access\". On \"overstated\" a verdict bar writes: \"Verdict: overstated\"; on \"could treat\" a second line writes \"CRISPR could treat some single-gene diseases, if safe and affordable\" with \"could\" and \"if\" underlined. On \"the classic mistake\" the chip \"it's approved, so it works for everyone\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "four step chips write on in a column, one per cue: \"mechanism: what changes, and how?\", \"rung on the evidence ladder?\", \"need, feasibility, fairness\", \"could ... if ...\".",
+      "teachingReason": "Decision rule and handoff: For any future biotechnology, explain the mechanism first: what it changes, and how.",
+      "narrationCue": "For any future biotechnology, explain the mechanism first:",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how biotechnology can change biodiversity\" (small banana and rhino thumbnails). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "four step chips write on in a column, one per cue: \"mechanism: what changes, and how?\", \"rung on the evidence ladder?\", \"need, feasibility, fairness\", \"could ... if ...\". A \"Next\" chip slides in at the lower right: \"Next: how biotechnology can change biodiversity\" (small banana and rhino thumbnails). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b11-learning-review.md",
+      "sha256": "7ada45c0229c337dbaa130adccfcf398c5c97fd08f1c71a562be45926cf48973"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b11-claude-science-check.md",
+      "sha256": "d0c23e99f547c953c8e36b7094514f1d6862e911fc89fd1cccfcab5b27b7c76c"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,6 +1,12 @@
 # S04: Analyse, assess, evaluate, justify: make a call and back it up (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing. Narration 6,071 characters (was 6,060), 16 scenes, about 9.4 minutes (counted by script with the build parser rules). Reviews: `../checks/skills04-learning-review.md`, `../checks/skills04-claude-science-check.md`. Changes from Revision 1:
+Status: Revision 3 (21 Oct): Codex check 91 resolved; ready to voice.
+Changes in Revision 3 (from `../checks/codex-check-91.md`):
+- Scene 15 narration and board: the universal "Every time: verdict, criteria, evidence" becomes the verb-specific rule "For assess or evaluate, make a judgement and support it with relevant criteria and evidence. For justify, support the argument or conclusion with reasons from the case. For analyse, show the parts, their relationships and what follows." The `VerdictStrip` and memory aid return beside the assess and evaluate cards only. Cue words: **assess**, **evaluate**, **justify**, **analyse**, **Next**.
+- The same universal claim removed elsewhere: scene 5 ("An assess or evaluate answer needs three parts"), scene 10 ("Justify asks for the support ... back it with reasons from the case", not "the same shape"), key notes 2 and 3, the owner-brief note, "Start and stop" and the YouTube description. The memory aid stays on judgement answers.
+- Narration recounted with the build parser rules: 6,069 characters, 1,051 words, 16 scenes, about 9.4 minutes (566 s).
+
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing. Narration 6,071 characters (was 6,060), 16 scenes, about 9.4 minutes (counted by script with the build parser rules). Reviews: `../checks/skills04-learning-review.md`, `../checks/skills04-claude-science-check.md`. Changes from Revision 1:
 - Excess calcium carbonate now gives "about 8", not "about 9", on the card, in scene 6 and in the model answer; the science note explains why (science F1).
 - Ethanoic acid's pKa is 4.74 on the drill 1 card, in speech and in feedback, matching C10 and C11 (Ka 1.8 x 10^-5); NH4+ stays 9.25, as in C11 (learning S5, science F2).
 - Scene 9 is scoped to its two guidelines: "In both, answers without a judgement stopped short of the top, and no band paid for a verdict on its own." Key note 4 is hedged to match (learning S4, science F6).
@@ -16,8 +22,9 @@ Working title: "Analyse, assess, evaluate, justify: make a call and back it up |
 
 ## Decisions
 
+- **Codex check 91 (21 Oct):** error 1 resolved. Scene 15's "Every time: verdict, criteria, evidence" applied one structure to all four verbs, including analyse (parts, relationships, implications; no verdict needed) and justify (support an argument or conclusion). Scene 15's narration and board now say: "For assess or evaluate, make a judgement and support it with relevant criteria and evidence. For justify, support the argument or conclusion with reasons from the case. For analyse, show the parts, their relationships and what follows." The `VerdictStrip` and the memory aid return beside the assess and evaluate cards only. The same universal claim is also removed from scene 5 ("An assess or evaluate answer needs three parts"), scene 10 ("Justify asks for the support", not "the same shape"), key notes 2 and 3, the owner-brief note, "Start and stop" and the YouTube description. The memory aid stays on judgement answers.
 - **Main question:** *When a question asks you to evaluate, assess or justify, what does a judgement need so that it earns marks?* Heading on screen: "Analyse, assess, evaluate, justify".
-- **Owner brief served:** "Students know the content but don't know how to write the answer." Judgement questions are where knowing the content is least enough: students list facts, or announce a verdict, and lose the marks between. The video teaches one shape for all four verbs: a verdict, the criteria it is judged by, and evidence from the question for each.
+- **Owner brief served:** "Students know the content but don't know how to write the answer." Judgement questions are where knowing the content is least enough: students list facts, or announce a verdict, and lose the marks between. The video teaches one shape for assess and evaluate answers: a verdict, the criteria it is judged by, and evidence from the question for each. Justify supports an argument or conclusion with reasons from the case; analyse shows the parts, their relationships and what follows (Codex check 91).
 - **Frequency data used (`research/exam-skills/verb-frequency.md`, Section II written responses in the 10 NESA Chemistry and Biology papers, 2021 to 2025):**
   - **Justify:** 23 units (Chemistry 12, Biology 11); third overall after explain (57) and calculate (24). Marks: 2 (5), 3 (12), 4 (1), 5 (1), 7 (3), 9 (1).
   - **Evaluate:** 11 (Chemistry 2, Biology 9). Marks: 3 (2), 4 (2), 5 (2), 6 (2), 7 (3).
@@ -69,7 +76,7 @@ Working title: "Analyse, assess, evaluate, justify: make a call and back it up |
   - Drill 2 against: Biology 2025 Q31(b) (CAMT: use a codon chart to explain the type of mutation, 3 marks); Biology 2024 Q28(b) (CFTR deletion removes only one amino acid, explain, 4 marks); Biology 2021 Q6 and 2024 Section I items on deletion and mutation types; Biology 2023 Q35 (mutation and its effect). The new item gives two codon changes directly (no chart), has no named disease, and asks students to assess a general claim. No recent question asks students to judge whether substitutions always change a protein.
 - **Cross-subject viewers:** scene 3 says "If you take Biology, watch the shape of the answer." Every answer line is on screen in full, and the three-part shape is labelled on each line (verdict, criterion, evidence).
 - **Entry knowledge:** s01 (reading routine, constraint phrases), s02 (explain as cause and effect), s03 (comparison words; drill 1 here reuses "whereas"). Chemistry: M6 C02 (acid and carbonate products, CO2), C04 (choosing a base: safety, gentleness, products; NaOH is caustic), C05 (weak and strong), C10 (pKa), C11 (buffers: weak acid and conjugate base; the ratio sets the pH). Biology: B6c (codons, stop codons), M6 B03 (substitutions: silent, missense, nonsense).
-- **Start and stop:** starts at "the biggest question parts". It stops after the four verb meanings, the verdict-criteria-evidence shape, a worked evaluate answer, weak against strong, what the guidelines show about judgements and reasons, assess against evaluate, a justify pattern, and two drills. It does not cover extended-response planning (s08), practical improvements (s07) or discuss (outside this video; not in the plan's s04 list).
+- **Start and stop:** starts at "the biggest question parts". It stops after the four verb meanings, the verdict-criteria-evidence shape for assess and evaluate, a worked evaluate answer, weak against strong, what the guidelines show about judgements and reasons, assess against evaluate, a justify pattern, and two drills. It does not cover extended-response planning (s08), practical improvements (s07) or discuss (outside this video; not in the plan's s04 list).
 - **Handoff:** s05, "Calculation answers that get full marks".
 - **Visual system:** the shared skills kit (`src/explainer/lessons/skills-shared/`): `QuestionCard` with its annotation layer (`Ann` kinds verb, marks, given, constraint, ring, tag, pulse; `CardDim`), `MarksBadge`, `AnswerBox` (rows, margin ticks, counter, slots, `AAnn` under, ring and chain), `MarkCounter`, `LostMarksTag`, `WeakStrongPanel`, `RoutineStrip` (mini at the far left), `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate` and `mkPlate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`, `DrawSquiggle`.
   - New lesson-local components (suggested folder `src/explainer/lessons/skills-s04`):
@@ -141,7 +148,7 @@ Visual:
 - The card then shrinks to about 0.72 and keeps its annotations.
 
 ### 5. three-parts
-> Every judgement answer needs three parts. A **verdict**: your judgement, how good or how suitable. **Criteria**: what you're judging by. Here that's safety, what an excess does, and knowing when to stop. And **evidence**: the details from the question that show each one. Here's the memory aid: no verdict without a reason, and no reason without **evidence**.
+> An assess or evaluate answer needs three parts. A **verdict**: your judgement, how good or how suitable. **Criteria**: what you're judging by. Here that's safety, what an excess does, and knowing when to stop. And **evidence**: the details from the question that show each one. Here's the memory aid: no verdict without a reason, and no reason without **evidence**.
 
 Visual:
 - `VerdictStrip` builds full size in the side column, each row on its cue:
@@ -205,7 +212,7 @@ Visual:
 - Hold about 1 second.
 
 ### 10. assess-vs-evaluate
-> So how is assess different from evaluate? They overlap: both need a supported judgement. Evaluate leans on **criteria**: name what you judge by, and weigh strengths against limitations. Assess leans on **how much**, or how good: you'd lead with how suitable, and how far. Either way, write all three parts. **Justify** is the same shape: whether the conclusion is given or you choose it, your job is the support. In one recent justify question, identifying two changes earned the same as fully justifying **one**. The reason was worth as much as a second change.
+> So how is assess different from evaluate? They overlap: both need a supported judgement. Evaluate leans on **criteria**: name what you judge by, and weigh strengths against limitations. Assess leans on **how much**, or how good: you'd lead with how suitable, and how far. Either way, write all three parts. **Justify** asks for the support: whether the conclusion is given or you choose it, back it with reasons from the case. In one recent justify question, identifying two changes earned the same as fully justifying **one**. The reason was worth as much as a second change.
 
 Visual:
 - The worked card returns small at the top. Its verb line swaps on cue:
@@ -271,15 +278,14 @@ Visual:
 - Hold about 1 second.
 
 ### 15. decision-rule
-> So, when you see a judgement verb. **Evaluate**: judge against criteria, both ways, then decide. **Assess**: say how much, or how good, and support it. **Justify**: back the verdict with reasons from the case. **Analyse**: break it into parts and show how they connect. Every time: verdict, criteria, evidence. **Next**: calculations, and how to set out working a marker can follow.
+> So, when you see one of these verbs. For **assess** or **evaluate**, make a judgement and support it with relevant criteria and evidence. For **justify**, support the argument or conclusion with reasons from the case. For **analyse**, show the parts, their relationships and what follows. **Next**: calculations, and how to set out working a marker can follow.
 
 Visual:
 - The four verb cards from scene 2 return as the decision board, each lighting on its cue:
-  - "evaluate → criteria, both ways, then a verdict";
-  - "assess → how much or how good, supported";
-  - "justify → reasons from the case for the verdict";
-  - "analyse → parts, connections, implications".
-- On "verdict, criteria, evidence" the `VerdictStrip` returns full size beside the cards, all rows lit.
+  - "assess, evaluate → make a judgement; support it with relevant criteria and evidence" (the two cards side by side under one bracket);
+  - "justify → support the argument or conclusion with reasons from the case";
+  - "analyse → show the parts, their relationships and what follows".
+- On "evaluate" the `VerdictStrip` returns beside the assess and evaluate cards only, all rows lit, with the memory aid line small under it and a grey tag "judgement answers". It does not touch the justify or analyse cards.
 - On "Next" a chip slides in: "Next: calculation answers that get full marks". A small equation-strip doodle sits beside it.
 - Hold about 2 seconds.
 
@@ -288,8 +294,8 @@ Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Analyse: break into parts, connect them, work out implications. Assess: judge value, quality, outcomes, results or size. Evaluate: judge against criteria, or determine value. Justify: give support for an argument or conclusion (NESA glossary, paraphrased).
-2. A judgement answer has three parts: the verdict, the criteria you judge by, and evidence from the question for each. Finish with the verdict, linked to your reasons.
-3. Evaluate: judge against criteria; weighing strengths against limitations is the safe habit (HSCScience tip). Assess: say how much or how good, and support it. Justify: support the given or chosen conclusion with reasons.
+2. An assess or evaluate answer has three parts: the verdict, the criteria you judge by, and evidence from the question for each. Finish with the verdict, linked to your reasons.
+3. Evaluate: judge against criteria; weighing strengths against limitations is the safe habit (HSCScience tip). Assess: say how much or how good, and support it. Justify: support the argument or conclusion with reasons from the case. Analyse: show the parts, their relationships and what follows.
 4. A verdict on its own earns little, and reasons without a verdict can miss the top marks. Give both.
 
 Memory aid (large, on the notes screen): *No verdict without a reason, no reason without evidence.*
@@ -384,6 +390,8 @@ Runtime:
 
 The first draft counted 6,494 characters (about 10 minutes). Trims made before this revision: scene 9 drops the second guideline wording ("well-informed", kept on screen) and the topic name; scene 10 drops "if this card said assess the suitability" (kept as the on-screen verb swap); both feedbacks were tightened; scenes 2, 4 and 5 lost one clause each.
 
+Revision 3 (21 Oct, Codex check 91): scene 5 is 349 (was 343), scene 10 is 560 (was 546) and scene 15 is 340 (was 362). **6,069 characters, 16 scenes**; speech about 456 s; total **about 9.4 minutes** (566 s), unchanged. No reserve cut needed.
+
 Reserve cuts if the voiced preview runs long:
 1. Scene 10: the justify guideline sentence and its takeaway move to the on-screen bar only (about 10 s).
 2. Scene 1: "And in seven of the last twelve marking feedback reports ..." shortens to "And NESA's feedback often flags a judgement without enough reasons" (about 3 s).
@@ -419,7 +427,7 @@ No new plates. Requested (not art, error-only):
 ## YouTube metadata (draft)
 
 - **Title:** Analyse, Assess, Evaluate, Justify: Make a Call and Back It Up | HSC Exam Skills
-- **Description:** Judgement verbs carry many of the biggest questions in recent HSC Chemistry and Biology papers, and NESA's marking feedback often flags judgements made without enough reasons from the evidence. Learn what analyse, assess, evaluate and justify each ask for, how assess differs from evaluate, and the three parts every judgement answer needs: a verdict, the criteria you judge by, and evidence from the question for each. See a weak and a strong answer to an HSC-style evaluate question, then try two training questions, one in Chemistry and one in Biology. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
+- **Description:** Judgement verbs carry many of the biggest questions in recent HSC Chemistry and Biology papers, and NESA's marking feedback often flags judgements made without enough reasons from the evidence. Learn what analyse, assess, evaluate and justify each ask for, how assess differs from evaluate, and the three parts an assess or evaluate answer needs: a verdict, the criteria you judge by, and evidence from the question for each. See a weak and a strong answer to an HSC-style evaluate question, then try two training questions, one in Chemistry and one in Biology. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
 
   Based on the NESA glossary of key words (https://www.nsw.gov.au/education-and-training/nesa/hsc/student-guide/glossary) and patterns in NESA's published HSC marking feedback and marking guidelines for Chemistry and Biology. Frequency counts are HSCScience's own, from the NESA HSC Chemistry and Biology papers, 2021 to 2025, Section II.
   Working Scientifically skill: Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017).

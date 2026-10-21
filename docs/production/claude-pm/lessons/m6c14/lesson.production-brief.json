@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c14/lesson.json",
+    "lessonSha256": "a13297193834d5af01811e12c26eca1c466f97cc831b563a43e602cc61d9d0d9"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C13 (the salt at equivalence takes after its stronger parent; ethanoate makes the equivalence point basic, ammonium acidic; the 8.72 equivalence pH; the steep jump; the ethanoic acid curve's shape near equivalence). C12 (titration, titre, equivalence point; the titre counts moles of acid, weak or strong; n = cV). C11 (a weak acid with its conjugate base is a buffer; equal amounts give pH = pKa). C10 (pKa = −log Ka, Ka = 10⁻ᵖᴷᵃ). C08 (a weak acid stays mostly un-ionised; its pH is higher than a strong acid's at the same concentration). C07 (pH of a strong acid, [H₃O⁺] = c). C05 (strong and weak). Year 11 (solutions of ions conduct electricity because the ions move). Not assumed: titration curve, buffer region as a curve feature, half-equivalence point, conductivity graph, how fast different ions carry charge.",
+    "startsWith": "Read axes and starting pH on a reaction profile. The video opens: Two beakers, each with twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre. One is hydrochloric acid, one is ethanoic acid. Add the same sodium hydroxide to each, measure the pH after every portion, and plot it.",
+    "stopsAfter": "reading a titration curve's axes and starting pH and inferring strength at equal concentration; identifying the buffer region of a weak acid curve and explaining it; finding the equivalence point in the middle of the steep jump and using its volume to calculate a concentration; reading pKa at half the equivalence volume and calculating Ka; explaining the equivalence pH and the shorter jump of a weak acid; recognising the strong acid/weak base profile; explaining the conductivity graphs of a strong and a weak acid titrated with sodium hydroxide, and finding equivalence from each. No indicator choice (chem-m6-c13), no pH calculations at every region (site Extension), no weak/weak curves, no conductometric method or line-intersection reading (chem-m6-c15), no back titration (chem-m6-c15).",
+    "nextLesson": "when a direct titration won't work: back titrations and conductivity titrations (route chem-m6-c15)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c14.md"
+  ],
+  "teaching": {
+    "task": "Hydrochloric acid and ethanoic acid at the same concentration, titrated with the same base, give two very different pH curves and two different conductivity graphs. What can those profiles tell you about an acid: strong or weak, where equivalence is, how much acid there is, and even its Ka?",
+    "causalExplanation": "(1) the same acid concentration and the same base give two different curves; each feature carries information (1); (2) a curve plots the flask's pH against the volume of titrant; at the start, the strong acid is fully ionised (pH 1.000) and the weak acid mostly whole (2.87): at equal concentration, a higher start means a weaker acid (2); (3) early on, the strong acid's pH stays low because plenty of hydronium is left; the weak acid's climbs, then levels, because base turns it into a buffer of weak acid and conjugate base: the buffer region (3); (4) at half the equivalence volume the partners are equal, so pH = pKa: 4.74, and Ka = 10⁻⁴·⁷⁴ (4); (5) the equivalence point is in the middle of the steepest part; both acids need 25.00 mL, because a titre counts moles, not strength; that volume gives the concentration (5); (6) the equivalence pH follows the salt (7.00 against 8.72); the weak acid's jump is shorter because its buffer held the pH up until the last drops (6); (7) a strong acid with a weak base: an acidic equivalence point and a low jump, then a level stretch near 9 because excess ammonia and ammonium form a buffer (7); (8) conductivity: hydronium and hydroxide conduct best; in HCl, fast hydronium is replaced by slower sodium, so conductivity falls to a minimum at equivalence, then rises with excess hydroxide (8); (9) ethanoic acid starts with few ions, so conductivity starts low, rises gently as sodium and ethanoate form, then steeply after equivalence: equivalence at the bend (9); memory aid (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "one contrast carries the video: hydrochloric acid and ethanoic acid at the same concentration, titrated with the same base, give two very different pH curves and two different conductivity graphs. Each feature is read for its cause in turn: the starting pH (fully ionised against mostly whole), the buffer region (base turns the weak acid into a buffer), half-equivalence (equal partners, so pH = pKa and Ka follows), the equivalence point in the middle of the jump (the same 25.00 mL, because a titre counts moles), the equivalence pH and jump length, a strong acid with a weak base, and conductivity (fast hydronium replaced by slower sodium gives a V; a weak acid gives a bend). Two exam questions follow with brief feedback.",
+    "openingDecision": "Two beakers, each with twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre. One is hydrochloric acid, one is ethanoic acid. Add the same sodium hydroxide to each, measure the pH after every portion, and plot it. You get two very different curves. Every bend in them carries information: whether the acid is strong or weak, how much there is, even its K a. So how do you read one?",
+    "understandingCheck": "(A1) \"A student titrated 20.00 mL of an acid, HA, with 0.1000 mol/L sodium hydroxide solution and plotted the titration curve shown. (a) Using two features of the curve, identify whether HA is a strong or a weak acid. (b) Calculate the concentration of HA. (c) Determine the Ka of HA.\" The coded curve (author note h) has grid lines every 5 mL and every pH unit, and labelled dots at 0.0 mL (pH 2.79), 5.0 mL (4.10), 10.0 mL (4.57), 15.0 mL (5.05), 20.0 mL (8.63, in the middle of the jump) and 25.0 mL (12.05). New acid and new volumes; the student must find the equivalence volume in the jump, halve it and read the pH. Crossed mistake: \"pKa = 8.63, the pH at equivalence\" (site L17 Activity A item 2). (A2) \"0.100 mol/L sodium hydroxide solution is added to 20.00 mL of hydrochloric acid, and the conductivity is measured. The conductivity falls to a minimum when 16.0 mL of sodium hydroxide has been added, then rises. (a) Explain the shape of the conductivity graph. (b) Calculate the concentration of the hydrochloric acid.\" The graph is shown (author note k). Tests the conductivity trend and the equivalence volume from a graph. Crossed mistake: \"it falls because the ions are used up\" (site L18 card 3's Common Error, inverted: the number of ions stays about the same before equivalence).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:; strong acid/strong base; strong acid/weak base; weak acid/strong base (ACSCH080, ACSCH102)\" this video starts from the route's axes and starting pH on a reaction profile and stops at inferring strengths, the equivalence region and a conductivity trend. It teaches: what a titration curve plots (pH in the flask against volume of titrant added); the starting pH as evidence of strength at equal concentration (C05 and C08 callbacks); the early part of each curve, with the weak acid's buffer region (C11 callback: each portion of base makes a weak acid and conjugate base mixture); the half-equivalence point, where pH = pKa, and Ka from it (C10 and C11 callbacks); the equivalence point in the middle of the steepest part, the same volume for a strong and a weak acid at equal moles (C12 callback), and the concentration from that volume; the equivalence pH from the salt (C13 callback, one line) and why the weak acid's jump is shorter; the strong acid/weak base profile (an acidic equivalence point and a high-pH buffer after it); conductivity graphs for hydrochloric and ethanoic acid titrated with sodium hydroxide, explained by which ions are replaced and how well they conduct. Not here: the indicator equilibrium, transition ranges and indicator choice (chem-m6-c13, one callback only); calculating the pH at every region of a curve (site card 5, labelled Extension; the start and equivalence calculations are C08 and C13 callbacks, not repeated); the Henderson-Hasselbalch equation by name or in log form (C11 decision); weak acid with weak base curves (site Extension); polyprotic curves (site worksheet corrections); using a conductivity titration as a method, reading equivalence from the intersection of two straight lines, and coloured or cloudy samples (chem-m6-c15, the next video, with back titration); barium hydroxide with sulfuric acid; error direction for indicator choices (chem-m6-g04)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: the hydrochloric acid curve pale blue, the ethanoic acid curve teal (C13), the hydrochloric acid with ammonia curve amber; H₃O⁺ teal token, OH⁻ violet, Na⁺ and Cl⁻ small grey spectators, ethanoate grey-violet (C01, C03, C11); the titrant navy (C12); feature markers white rings. Board layout (constant, C03, C11 and C13): top-left the short task line; the centre holds the graph, large; readings write beside the feature they describe and dim when the next is read; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 21 Oct): `m6-ph-meter-probe-beaker-v1.png` (hook, coded readout ticking as portions are added; beaker labelled in code), `m6-burette-clamp-stand-v1.png` (hook thumbnail, the titrant), `m5x-ammonia-bottle-v1.png` (scene 7, small), `m6-conductivity-meter-titration-v1.png` (inspected: two probes clamped in a stirred beaker on a magnetic stirrer, a handheld meter with a blank screen, no person or hand; scenes 8, 9 and attempt 2, with a coded readout on its blank screen). No new plates needed. No human figures.",
+    "transitionPlan": "The burette and two pH meter plates open the hook as the lineGraph axes draw and both curves trace point by point; feature rings land on the curves one feature per scene while earlier readings dim; the C11 ratio bar fills beside the buffer region and the half-volume caliper folds to drop the pKa line; the magnifier inset opens on both jumps for the equivalence volume and pH; the ammonia curve draws over the dimmed curves; the board clears for the conductivity meter plate, the proton hop along water and the conductivity graph with its ion tally of tokens, the HCl V dimming as the ethanoic bend draws; the memory aid writes large; each attempt clears the board and its feedback underlines the givens on the card and curve; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-burette-clamp-stand-v1.png` small at the left, titrant tag \"0.100 mol/L NaOH\" (navy); two `m6-ph-meter-probe-beaker-v1.png` plates small at the right, beakers labelled in code \"HCl, 0.100 mol/L, 25.00 mL\" and \"CH₃COOH, 0.100 mol/L, 25.00 mL\".",
+      "teachingReason": "Hook (two acids, two curves): Two beakers, each with twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre.",
+      "narrationCue": "two very different curves / how much / K a",
+      "motionPurpose": "On the spoken cues: On \"plot it\" the lineGraph axes draw centre (x \"volume of NaOH added (mL)\" 0 to 50, y \"pH\" 0 to 14) and the C11 dose counter ticks while both readouts change; on \"two very different curves\" the pale blue and teal curves draw point by point together (author note a), each with a direct label at its right end (\"HCl\", \"CH₃COOH\", in the curve's colour; the labels stay, dimmed with their curves, through scene 7), and the",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-burette-clamp-stand-v1.png` small at the left, titrant tag \"0.100 mol/L NaOH\" (navy); two `m6-ph-meter-probe-beaker-v1.png` plates small at the right, beakers labelled in code \"HCl, 0.100 mol/L, 25.00 mL\" and \"CH₃COOH, 0.100 mol/L, 25.00 mL\". On \"plot it\" the lineGraph axes draw centre (x \"volume of NaOH added (mL)\" 0 to 50, y \"pH\" 0 to 14) and the C11 dose counter ticks while both readouts change; on \"two very different curves\" the pale blue and teal curves draw point by point together (author note a), each with a direct label at its right end (\"HCl\", \"CH₃COOH\", in the curve's colour; the labels stay, dimmed with their curves, through scene 7), and the plates fade. On \"how much\" a faint ring flashes at the jumps; on \"K a\" a faint ring flashes on the teal curve's level stretch. Heading writes: \"What does each part of the curve tell you?\" Bright at the end: the heading and the two curves. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "tick",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "axes-start-ph",
+      "visualDecision": "new",
+      "visualReference": "the axis labels pulse in turn as the first sentence names them (a small grey tag \"base in the flask instead? the curve runs downhill\", dims).",
+      "teachingReason": "Axes and the starting pH: Each curve plots the pH in the flask against the volume of sodium hydroxide added.",
+      "narrationCue": "left edge / one point zero zero zero / two point eight seven / weaker",
+      "motionPurpose": "On the spoken cues: On \"left edge\" feature ring 1 draws at x = 0 on both curves. On \"one point zero zero zero\" the pale blue start dot labels \"1.000\" (small grey tag \"[H₃O⁺] = 0.100 mol/L: 3 s.f. → 3 d.p.\", dims); on \"two point eight seven\" the teal start dot labels \"2.87\" (the tag rewrites \"[H₃O⁺] from Ka: 2 s.f. → 2 d.p.\" and dims), with a tiny C08 lens thumbnail of mostly whole amber-outlined molecules (grey tag \"weak acid pH",
+      "motionRole": "explain",
+      "onScreenChange": "the axis labels pulse in turn as the first sentence names them (a small grey tag \"base in the flask instead? the curve runs downhill\", dims). On \"left edge\" feature ring 1 draws at x = 0 on both curves. On \"one point zero zero zero\" the pale blue start dot labels \"1.000\" (small grey tag \"[H₃O⁺] = 0.100 mol/L: 3 s.f. → 3 d.p.\", dims); on \"two point eight seven\" the teal start dot labels \"2.87\" (the tag rewrites \"[H₃O⁺] from Ka: 2 s.f. → 2 d.p.\" and dims), with a tiny C08 lens thumbnail of mostly whole amber-outlined molecules (grey tag \"weak acid pH video\", dims). On \"weaker\" a chip writes \"same c: higher start → weaker acid\". Bright at the end: the two start labels and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "buffer-region",
+      "visualDecision": "new",
+      "visualReference": "the start labels dim.",
+      "teachingReason": "The early part: the buffer region: Now the first twenty millilitres.",
+      "narrationCue": "low / levels off / buffer / buffer region",
+      "motionPurpose": "On the spoken cues: On \"low\" the pale blue curve's first 20 mL brightens. On \"levels off\" the teal curve's first 20 mL brightens and a small C11 ratio bar beside it fills as the dose counter runs: the amber \"CH₃COOH\" column shrinks and the grey-violet \"CH₃COO⁻\" column grows (grey tag \"buffer video\", dims). On \"buffer region\" feature ring 2 draws a soft bracket over the teal curve from about 3 to 22 mL, labelled \"buffer region (before",
+      "motionRole": "explain",
+      "onScreenChange": "the start labels dim. On \"low\" the pale blue curve's first 20 mL brightens. On \"levels off\" the teal curve's first 20 mL brightens and a small C11 ratio bar beside it fills as the dose counter runs: the amber \"CH₃COOH\" column shrinks and the grey-violet \"CH₃COO⁻\" column grows (grey tag \"buffer video\", dims). On \"buffer region\" feature ring 2 draws a soft bracket over the teal curve from about 3 to 22 mL, labelled \"buffer region (before the jump)\". Bright at the end: the bracket label, the ratio bar and the teal curve. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "NumberTicker",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "half-equivalence",
+      "visualDecision": "new",
+      "visualReference": "the half-volume caliper: on \"twenty five millilitres\" a bracket spans 0 to 25.00 mL on the x axis (label \"equivalence: 25.00 mL, from the moles\"; scene 5 shows where it sits on the curve), folds in half, and on \"twelve point five zero\" drops a vertical line at 12.50 mL to the teal curve; the ratio bar shows two equal columns.",
+      "teachingReason": "Half-equivalence gives pKa: The moles say each flask reaches equivalence at twenty five millilitres.",
+      "narrationCue": "twelve point five zero / p K a / four point seven four / one point eight times ten to the minus five",
+      "motionPurpose": "On the spoken cues: On \"p K a\" a chip writes \"equal partners: pH = pKa\". On \"four point seven four\" a horizontal line runs from the curve to the pH axis, label \"4.74\", feature ring 3. On \"one point eight\" the line \"Ka = 10⁻⁴·⁷⁴ = 1.8 × 10⁻⁵\" writes with a small tag \"pH 2 d.p. → Ka 2 s.f.\" (dims). The pale blue curve stays dim (no buffer, no such reading). Bright at the end: the 4.74 label, the Ka line and the chip.",
+      "motionRole": "explain",
+      "onScreenChange": "the half-volume caliper: on \"twenty five millilitres\" a bracket spans 0 to 25.00 mL on the x axis (label \"equivalence: 25.00 mL, from the moles\"; scene 5 shows where it sits on the curve), folds in half, and on \"twelve point five zero\" drops a vertical line at 12.50 mL to the teal curve; the ratio bar shows two equal columns. On \"p K a\" a chip writes \"equal partners: pH = pKa\". On \"four point seven four\" a horizontal line runs from the curve to the pH axis, label \"4.74\", feature ring 3. On \"one point eight\" the line \"Ka = 10⁻⁴·⁷⁴ = 1.8 × 10⁻⁵\" writes with a small tag \"pH 2 d.p. → Ka 2 s.f.\" (dims). The pale blue curve stays dim (no buffer, no such reading). Bright at the end: the 4.74 label, the Ka line and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "equivalence-point",
+      "visualDecision": "new",
+      "visualReference": "the readings from scenes 2 to 4 dim.",
+      "teachingReason": "The equivalence point: On the curve, the equivalence point sits in the middle of the steepest part.",
+      "narrationCue": "middle of the steepest part / twenty five point zero zero / concentration",
+      "motionPurpose": "On the spoken cues: On \"middle of the steepest part\" the C13 magnifier inset opens on the jumps (24.9 to 25.1 mL) and feature ring 4 sits on the midpoint of each; a chip \"equivalence: middle of the jump\" writes; beside it a small chip \"always at pH 7? at the top?\" fades in and is crossed (caption \"middle of the jump; pH 7 only for strong + strong\"). On \"twenty five point zero zero\" a vertical line drops from both midpoints to the x",
+      "motionRole": "explain",
+      "onScreenChange": "the readings from scenes 2 to 4 dim. On \"middle of the steepest part\" the C13 magnifier inset opens on the jumps (24.9 to 25.1 mL) and feature ring 4 sits on the midpoint of each; a chip \"equivalence: middle of the jump\" writes; beside it a small chip \"always at pH 7? at the top?\" fades in and is crossed (caption \"middle of the jump; pH 7 only for strong + strong\"). On \"twenty five point zero zero\" a vertical line drops from both midpoints to the x axis, label \"25.00 mL\" (grey tag \"titration video: titre counts moles\", dims). On \"concentration\" the line \"c(acid) = (0.100 mol/L × 0.02500 L) ÷ 0.02500 L = 0.100 mol/L\" writes (the crossed chip and the 25.00 mL tag dim first) under the graph and shrinks to a kept chip \"c(acid) = 0.100 mol/L\". Bright at the end: the 25.00 mL line, the equivalence chip and the kept chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "equivalence-ph-jump",
+      "visualDecision": "new",
+      "visualReference": "the inset stays.",
+      "teachingReason": "Equivalence pH and the jump: Now read the pH at that volume.",
+      "narrationCue": "seven / eight point seven two / four to ten / up",
+      "motionPurpose": "On the spoken cues: On \"seven\" the pale blue midpoint labels \"7.00\"; on \"eight point seven two\" the teal midpoint labels \"8.72\" (grey tag \"indicator video: the salt takes after its stronger parent\", dims). On \"four to ten\" a pale blue bracket spans the HCl jump, \"4 → 10\" (one drop each side); a teal bracket spans the ethanoic jump, \"7.4 → 10\". On \"up\" the scene 3 buffer bracket pulses once beneath the teal jump, tag \"buffer: shorter",
+      "motionRole": "explain",
+      "onScreenChange": "the inset stays. On \"seven\" the pale blue midpoint labels \"7.00\"; on \"eight point seven two\" the teal midpoint labels \"8.72\" (grey tag \"indicator video: the salt takes after its stronger parent\", dims). On \"four to ten\" a pale blue bracket spans the HCl jump, \"4 → 10\" (one drop each side); a teal bracket spans the ethanoic jump, \"7.4 → 10\". On \"up\" the scene 3 buffer bracket pulses once beneath the teal jump, tag \"buffer: shorter jump\" with a small grey tag \"at these concentrations\" (author note e); a chip \"bigger jump = faster reaction?\" fades in and is crossed (caption \"less buffering, not faster\"); the \"buffer: shorter jump\" and \"at these concentrations\" tags dim as it writes, and the crossed chip dims when its sentence ends. Bright at the end: the two equivalence labels and the two brackets (paired by colour, read as two items). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "strong-acid-weak-base",
+      "visualDecision": "adjust",
+      "visualReference": "the board keeps the axes; the two earlier curves dim to thin lines.",
+      "teachingReason": "Strong acid with a weak base: What about a strong acid titrated with a weak base, like hydrochloric acid with ammonia?",
+      "narrationCue": "ammonia / lower / five point two eight / nine",
+      "motionPurpose": "On the spoken cues: `m5x-ammonia-bottle-v1.png` small at the top right; the x label changes to \"volume of 0.100 mol/L base added (mL)\" and a small key writes under it: \"pale blue, teal: NaOH | amber: NH₃\" (new correction 2: the base is named for each curve, so the dim NaOH curves are never read against an ammonia axis). On \"ammonia\" the amber curve draws point by point (author note a), with its direct label \"HCl + NH₃\". On \"lower\" a",
+      "motionRole": "explain",
+      "onScreenChange": "the board keeps the axes; the two earlier curves dim to thin lines. `m5x-ammonia-bottle-v1.png` small at the top right; the x label changes to \"volume of 0.100 mol/L base added (mL)\" and a small key writes under it: \"pale blue, teal: NaOH | amber: NH₃\" (new correction 2: the base is named for each curve, so the dim NaOH curves are never read against an ammonia axis). On \"ammonia\" the amber curve draws point by point (author note a), with its direct label \"HCl + NH₃\". On \"lower\" a bracket spans its jump \"4 → 6.6\"; on \"five point two eight\" its midpoint labels \"5.28\" with the chip \"NH₄Cl: acidic\". On \"nine\" a soft bracket covers its level stretch after 30 mL, labelled \"buffer: NH₃ + NH₄⁺\", and the dim NaOH curves' high end is visible above it for contrast. Bright at the end: the amber curve, the 5.28 label and the after-equivalence bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "conductivity-strong",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Conductivity: hydrochloric acid: A conductivity meter tells the same story another way.",
+      "narrationCue": "hydronium / sodium / rises",
+      "motionPurpose": "On the spoken cues: `m6-conductivity-meter-titration-v1.png` small at the right, its blank screen showing a coded readout. On \"pass a proton\" a short chain of pale blue water molecules plays the C01 hop down the line (a teal charge passes along), tag \"H₃O⁺ and OH⁻: best conductors\". The conductivity lineGraph draws centre (x \"volume of NaOH added (mL)\" 0 to 50, y \"conductivity (relative)\", no numbers). Beside it the ion tally shows a",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-conductivity-meter-titration-v1.png` small at the right, its blank screen showing a coded readout. On \"pass a proton\" a short chain of pale blue water molecules plays the C01 hop down the line (a teal charge passes along), tag \"H₃O⁺ and OH⁻: best conductors\". The conductivity lineGraph draws centre (x \"volume of NaOH added (mL)\" 0 to 50, y \"conductivity (relative)\", no numbers). Beside it the ion tally shows a large teal H₃O⁺ column and a small grey Cl⁻ column. On \"hydronium\" and \"sodium\" the dose counter runs: teal tokens swap one by one for small grey Na⁺ tokens and the pale blue line falls (author note g). On \"rises\" violet OH⁻ tokens add on top and the line climbs. On \"lowest point\" a ring sits on the minimum at 25.00 mL with a dashed line to the x axis, label \"equivalence: minimum\". Bright at the end: the V, its label and the ion tally. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "token flight",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "conductivity-weak",
+      "visualDecision": "new",
+      "visualReference": "the HCl V dims to a thin line on the same axes.",
+      "teachingReason": "Conductivity: ethanoic acid: Ethanoic acid starts with few ions, so its conductivity starts low.",
+      "narrationCue": "low / gently / steeply / bend",
+      "motionPurpose": "On the spoken cues: On \"low\" the teal line starts near the axis and the ion tally resets to a few tokens beside a lens thumbnail of mostly whole molecules. On \"gently\" small grey Na⁺ and grey-violet ethanoate tokens add as the teal line rises slowly. On \"steeply\" violet OH⁻ tokens add and the line climbs faster. On \"bend\" two short guide lines extend along the two slopes and a ring sits where the slope changes at 25.00 mL, label",
+      "motionRole": "explain",
+      "onScreenChange": "the HCl V dims to a thin line on the same axes. On \"low\" the teal line starts near the axis and the ion tally resets to a few tokens beside a lens thumbnail of mostly whole molecules. On \"gently\" small grey Na⁺ and grey-violet ethanoate tokens add as the teal line rises slowly. On \"steeply\" violet OH⁻ tokens add and the line climbs faster. On \"bend\" two short guide lines extend along the two slopes and a ring sits where the slope changes at 25.00 mL, label \"equivalence: change of slope\"; a small grey chip \"not a minimum\" sits beside it. Bright at the end: the teal line, the bend label and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "At half-equivalence, pH equals p K a. / hydronium and hydroxide are the best conductors",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten: \"At half-equivalence, pH = pKa.\" with the caliper icon folding a bracket in half. Condition tag in grey: \"weak acid curves\". On \"hydronium and hydroxide\" the second line writes: \"H₃O⁺ and OH⁻ are the best conductors.\" with a tiny thumbnail of the scene 8 V. Each earlier line dims slightly as the next writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The aid writes large and handwritten: \"At half-equivalence, pH = pKa.\" with the caliper icon folding a bracket in half. Condition tag in grey: \"weak acid curves\". On \"hydronium and hydroxide\" the second line writes: \"H₃O⁺ and OH⁻ are the best conductors.\" with a tiny thumbnail of the scene 8 V. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student titrates twenty point zero",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A student titrated 20.00 mL of an acid, HA, with 0.1000 mol/L sodium hydroxide solution and plotted the titration curve shown. (a) Using two features of the curve, identify whether HA is a strong or a weak acid. (b) Calculate the concentration of HA. (c) Determine the Ka of HA.\" The coded curve beside it (author note h), grid lines every 5 mL and every pH unit, labelled dots at 0.0, 5.0, 10.0, 15.0, 20.0 and 25.0 mL. The full question and the curve stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no rings, no caliper, no aid.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays, shrunk to the top; the curve stays large.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "weak / twenty point zero / zero point one zero zero / two point seven times ten to the minus five / slip",
+      "motionPurpose": "On the spoken cues: On \"weak\" a soft bracket covers the buffer region and the 20.0 mL dot \"8.63\" is ringed; chip \"weak: buffer region; equivalence pH > 7\". On \"twenty point zero\" a ring sits on the jump's middle and a line drops to \"20.0 mL\". On \"zero point one zero zero\" \"20.00 mL\" and \"0.1000 mol/L\" are underlined and \"c(HA) = (0.1000 mol/L × 0.0200 L) ÷ 0.02000 L = 0.100 mol/L\" writes, with a small tag \"20.0 mL read from the graph →",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays, shrunk to the top; the curve stays large. On \"weak\" a soft bracket covers the buffer region and the 20.0 mL dot \"8.63\" is ringed; chip \"weak: buffer region; equivalence pH > 7\". On \"twenty point zero\" a ring sits on the jump's middle and a line drops to \"20.0 mL\". On \"zero point one zero zero\" \"20.00 mL\" and \"0.1000 mol/L\" are underlined and \"c(HA) = (0.1000 mol/L × 0.0200 L) ÷ 0.02000 L = 0.100 mol/L\" writes, with a small tag \"20.0 mL read from the graph → 3 s.f.\" (dims); then a grey tag \"a strong acid at 0.100 mol/L would start at pH 1.000, not 2.79\" (dims): the starting-pH check works once c is known. On \"two point seven\" the caliper folds 20.0 to 10.0 mL, reads \"4.57\", and \"Ka = 10⁻⁴·⁵⁷ = 2.7 × 10⁻⁵\" writes; answer chip \"weak; c = 0.100 mol/L; Ka = 2.7 × 10⁻⁵\". On \"slip\" a chip \"pKa = 8.63 (pH at equivalence)\" fades in and is crossed (caption \"pKa: at half the equivalence volume\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "question card: \"0.100 mol/L sodium hydroxide solution is added to 20.00 mL of hydrochloric acid, and the conductivity is measured.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Zero point one zero zero moles",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"0.100 mol/L sodium hydroxide solution is added to 20.00 mL of hydrochloric acid, and the conductivity is measured. The conductivity falls to a minimum when 16.0 mL of sodium hydroxide has been added, then rises. (a) Explain the shape of the conductivity graph. (b) Calculate the concentration of the hydrochloric acid.\" The coded conductivity graph beside it (author note k). `m6-conductivity-meter-titration-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ion tally, no aid.",
+      "motionTools": [
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "sodium / hydroxide / zero point zero eight zero zero / used up",
+      "motionPurpose": "On the spoken cues: On \"sodium\" \"falls to a minimum\" is underlined and the ion tally beside the graph swaps teal H₃O⁺ tokens for small grey Na⁺ tokens; the equation writes \"H₃O⁺(aq) + OH⁻(aq) → 2H₂O(l)\" with tag \"Na⁺, Cl⁻: spectators\". On \"hydroxide\" \"then rises\" is underlined and violet OH⁻ tokens add. On \"zero point zero eight zero zero\" \"16.0 mL\", \"0.100 mol/L\" and \"20.00 mL\" are underlined and \"c(HCl) = (0.100 mol/L × 0.0160 L) ÷",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"sodium\" \"falls to a minimum\" is underlined and the ion tally beside the graph swaps teal H₃O⁺ tokens for small grey Na⁺ tokens; the equation writes \"H₃O⁺(aq) + OH⁻(aq) → 2H₂O(l)\" with tag \"Na⁺, Cl⁻: spectators\". On \"hydroxide\" \"then rises\" is underlined and violet OH⁻ tokens add. On \"zero point zero eight zero zero\" \"16.0 mL\", \"0.100 mol/L\" and \"20.00 mL\" are underlined and \"c(HCl) = (0.100 mol/L × 0.0160 L) ÷ 0.02000 L = 0.0800 mol/L\" writes; answer chip \"c(HCl) = 0.0800 mol/L\". On \"used up\" a chip \"falls because ions are used up\" fades in and is crossed (caption \"same number of ions, slower ones\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "token flight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Starting pH: low → strong; higher → weak (same c).\"",
+      "teachingReason": "Decision rule and handoff: For any titration curve: read the starting pH, look for a buffer region, find equivalence in the middle of the jump, read its volume and pH, and halve the volume for p K a.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Buffer region before the jump → weak acid.\" \"3 Equivalence: middle of the jump; read volume and pH.\" \"4 Half the equivalence volume: pH = pKa.\" \"5 Conductivity: minimum (strong acid) or bend (weak acid).\" On \"Next\" a chip \"Next: back and conductivity titrations\" appears with a small `m6-conductivity-meter-titration-v1.png`.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Starting pH: low → strong; higher → weak (same c).\" \"2 Buffer region before the jump → weak acid.\" \"3 Equivalence: middle of the jump; read volume and pH.\" \"4 Half the equivalence volume: pH = pKa.\" \"5 Conductivity: minimum (strong acid) or bend (weak acid).\" On \"Next\" a chip \"Next: back and conductivity titrations\" appears with a small `m6-conductivity-meter-titration-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c14-learning-review.md",
+      "sha256": "658eea3adc34b19964839a23d8771138e957c6c61231d0782cfacfc192559011"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c14-claude-science-check.md",
+      "sha256": "1faf2e63d51041028afe4456875d544bf178e561d0c79e10e9d85a15f43d0205"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

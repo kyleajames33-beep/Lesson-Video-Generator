@@ -1,0 +1,168 @@
+{
+  "title": "Which indicator fits a titration? A weak acid that changes colour, the salt at equivalence, and the jump",
+  "subtitle": "The same titration needs twenty five millilitres of base, but methyl orange changes colour before eight. How does an indicator change colour, why isn't every equivalence point at pH 7, and how do you choose the indicator that changes at the right moment?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 21,
+  "lessonIntent": "describing an indicator as a weak acid whose two forms differ in colour; explaining its colour change, and its reversal, with Le Chatelier's principle; explaining why the change spans roughly two pH units around the indicator's pKa; stating four transition ranges; separating the endpoint from the equivalence point; predicting whether the solution at equivalence is acidic, neutral or basic from its salt, with an equation; calculating the equivalence pH of a weak acid with a strong base; choosing an indicator whose colour change falls inside the steep jump and explaining why a wrong choice gives a titre that is too small. No red cabbage preparation (chem-m6-p01), no whole-curve reading or conductivity (chem-m6-c14), no weak/weak titrations, no back titrations (chem-m6-c15).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's twenty five point zero zero millilitres of zero point one zero zero moles per litre ethanoic acid, titrated with sodium hydroxide of the same concentration. The moles say it needs twenty five millilitres. With phenolphthalein, that's what you get: the flask turns pink within a drop of twenty five. But run it with methyl orange, and the colour drifts from red, through orange, to yellow over the first eight millilitres. Same acid, same base. So why does one indicator get it right, and the other mislead you?"
+      }
+    },
+    {
+      "id": "indicator-weak-acid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "An indicator is itself a weak acid. Call it H In. In water it gives a proton to water, making hydronium and its conjugate base, In minus. The trick is that the two forms are different colours. For phenolphthalein, H In is colourless, and In minus is pink. So the colour you see tells you which form is winning."
+      }
+    },
+    {
+      "id": "reversible-switch",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Add sodium hydroxide, and hydroxide removes hydronium. The equilibrium shifts right to replace it, so In minus builds up, and the flask turns pink. Add acid, and the extra hydronium pushes it back left: colourless again. You can switch it back and forth again and again, because the indicator isn't used up. It's a reversible reaction you can see."
+      }
+    },
+    {
+      "id": "transition-range",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But the change isn't instant. Just like the buffer ratio, the ratio of the two forms follows the hydronium concentration. When the pH equals the indicator's p K a, the two forms are equal. Your eye usually sees one colour clearly once that form is about ten times the other, so the change spreads over roughly two pH units. That's the transition range: three point one to four point four for methyl orange, eight point three to ten for phenolphthalein."
+      }
+    },
+    {
+      "id": "endpoint-equivalence",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In the titration video, the endpoint was where the colour changes, and the equivalence point was where the amounts match the equation. A good indicator makes the endpoint land very close to equivalence. So before you choose one, you need to know the pH at equivalence. And it isn't always seven."
+      }
+    },
+    {
+      "id": "flask-at-equivalence",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At equivalence, the acid and the base have both been used up. What's left is sodium ethanoate solution. Sodium ions don't react with water, but ethanoate is the conjugate base of a weak acid, so, as in the K a video, it takes protons back from water. Ethanoate plus water gives ethanoic acid and hydroxide. So the flask is slightly basic at equivalence."
+      }
+    },
+    {
+      "id": "three-salts",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Swap in hydrochloric acid, and the flask holds sodium chloride. Chloride, from a strong acid, barely takes protons, and sodium doesn't react either, so the solution is neutral, pH seven at twenty five degrees. Titrate ammonia with hydrochloric acid, and you make ammonium chloride. Ammonium, the conjugate acid of a weak base, gives protons to water, making hydronium, so that flask is acidic."
+      }
+    },
+    {
+      "id": "we-concentration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the pH for the ethanoic acid flask. Step one: how much ethanoate, in what volume? The acid held zero point zero zero two five zero moles, and essentially all of it became ethanoate. But adding twenty five millilitres of base doubled the volume to fifty, so the ethanoate concentration is zero point zero five zero zero moles per litre."
+      }
+    },
+    {
+      "id": "we-ph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step two: ethanoate is a weak base, so use the weak base method. Its K b, from the K a video, is K w over K a, five point six times ten to the minus ten. Hydroxide is the square root of K b times the concentration, five point three times ten to the minus six. That gives a p O H of five point two eight, and a pH of eight point seven two. Basic, as the salt predicted."
+      }
+    },
+    {
+      "id": "the-jump",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the whole curve. Near equivalence, the pH leaps: one drop before, it's about seven point four, and one drop after, it's ten. Phenolphthalein changes between eight point three and ten, right inside that leap, so it turns pink within a drop of equivalence. Methyl orange changes way back here, in the buffer region, while most of the acid is still there. So its titre is far too small, and the concentration comes out far too low."
+      }
+    },
+    {
+      "id": "the-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So the rule is: choose an indicator whose colour change happens inside the steep jump. Its range doesn't have to contain the exact equivalence pH. For hydrochloric acid and sodium hydroxide at these concentrations, the jump runs from about four to ten, so methyl orange, bromothymol blue and phenolphthalein all finish changing within about a drop."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's what to remember. The salt takes after its stronger parent. A strong base with a weak acid makes it basic, a strong acid with a weak base makes it acidic, and two strong parents make it neutral. Then pick the indicator that changes inside the jump."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Bromothymol blue is a weak acid, H In. H In is yellow, and In minus is blue. Its colour changes between pH six point zero and seven point six. A few drops are added to a solution at pH four. Sodium hydroxide is added until the pH reaches ten, then hydrochloric acid until it's back to four. Describe the colours you'd see, and explain them using Le Chatelier's principle. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At pH four, below the range, hydronium is high, so H In dominates: yellow. Hydroxide removes hydronium, the equilibrium shifts right, and In minus builds up: blue. Adding acid raises hydronium again, so it shifts left, back to yellow. Saying the indicator gets used up and stays blue misses that it's an equilibrium."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. Zero point one zero zero moles per litre hydrochloric acid is added from a burette to twenty five point zero zero millilitres of zero point one zero zero moles per litre ammonia. Near equivalence, the pH falls sharply from about six point six to about four point zero. Explain why the solution at equivalence is acidic, then choose the most suitable indicator from the table, and justify it. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At equivalence, the flask holds ammonium chloride. Ammonium gives protons to water, making hydronium, so it's acidic: the salt takes after hydrochloric acid. Methyl red changes between four point four and six point two, all inside the jump, so it's the best fit. Phenolphthalein is the trap: it changes above the jump, so it goes colourless while ammonia is still in excess."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "For any titration: name the salt, predict acidic, neutral or basic from its stronger parent, find the steep jump, and pick the indicator that changes inside it. Next: making your own indicator from red cabbage, and testing it with acids and bases."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

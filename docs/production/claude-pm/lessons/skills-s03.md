@@ -1,6 +1,11 @@
 # S03: Compare, contrast, distinguish: write it in pairs (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing. Narration 5,887 characters (was 5,835), 15 scenes, about 9.2 minutes (counted by script with the build parser rules). Reviews: `../checks/skills03-learning-review.md`, `../checks/skills03-claude-science-check.md`. Changes from Revision 1:
+Status: Revision 3 (21 Oct): Codex check 91 resolved; ready to voice.
+Changes in Revision 3 (from `../checks/codex-check-91.md`):
+- Scene 6 narration and answer row, model answer point 2, the "Why this pair" note and the teaching checks: "Both heterozygotes look unlike either parent, so neither allele completely masks the other." replaces "... so neither allele is dominant". Cue word **both** kept.
+- Narration recounted with the build parser rules: 5,903 characters, 947 words, 15 scenes, about 9.2 minutes (553 s).
+
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing. Narration 5,887 characters (was 5,835), 15 scenes, about 9.2 minutes (counted by script with the build parser rules). Reviews: `../checks/skills03-learning-review.md`, `../checks/skills03-claude-science-check.md`. Changes from Revision 1:
 - Scene 9 no longer turns two guideline examples into a rule: "more marks usually means more paired rows" is now "the marks followed complete pairing of the features asked about, not longer descriptions"; its visuals clear one at a time (learning S1, M1).
 - Scene 6 closes with "Three paired sentences: in our marking guide, three marks." so it does not imply one mark per sentence beside a three-mark, two-sentence NESA sample answer (learning S1).
 - Feedback 1 trimmed from about 36 s to about 31 s and its screen rows shortened; used table rows dim (learning S2). Feedback 2 trimmed to about 31 s (learning M2).
@@ -13,6 +18,7 @@ Working title: "Compare, contrast, distinguish: write it in pairs | HSC exam ski
 
 ## Decisions
 
+- **Codex check 91 (21 Oct):** error 1 resolved. "So neither allele is dominant" overstated the observation: incomplete dominance can still involve partial dominance. Narration (scene 6), the answer row, model answer point 2, the "Why this pair" note and the teaching checks now say "Both heterozygotes look unlike either parent, so neither allele completely masks the other." The scene 5 table row ("different from both parents") is unchanged.
 - **Main question:** *When a question asks you to compare, contrast or distinguish, what makes the answer actually compare?* Heading on screen: "Compare, contrast, distinguish".
 - **Owner brief served:** "Students know the content but don't know how to write the answer." Here the content is two inheritance patterns, two acids and two chromosome terms that students have already met. The skill is the shape: the same feature on both sides, in one sentence.
 - **Frequency data used (`research/exam-skills/verb-frequency.md`, Section II written responses in the 10 NESA Chemistry and Biology papers, 2021 to 2025):**
@@ -33,7 +39,7 @@ Working title: "Compare, contrast, distinguish: write it in pairs | HSC exam ski
 - **What markers reward (`what-markers-reward.md`, Compare row):** Biology 2024 Q21(b), a table question: "Correctly compares all features of sexual and asexual reproduction" is 3 marks; "Compares most features of sexual and asexual reproduction correctly" is 2 (guideline verbs checked 21 Oct; the pack paraphrase matches). Spoken in scene 9 as "In a table question, comparing all the features correctly reached three marks, and comparing most of them reached two." The topic is not named.
 - **The worked question (Biology, compare, 3 marks):**
   - **Stimulus:** two crosses in one small table. Snapdragons: red-flowered x white-flowered, all offspring pink. Cattle: red x white, all calves roan (red hairs and white hairs mixed). All parents true-breeding. Demand: "Compare the inheritance of flower colour in the snapdragons with the inheritance of coat colour in the cattle." (3 marks).
-  - **Why this pair:** B10 taught both (scene 7 snapdragons, scene 8 roan cattle) and its memory aid "Incomplete is in-between, co shows both". The content is known; only the writing is new, which is the series premise. The pair has a genuine similarity (all offspring heterozygous; the heterozygote looks like neither parent, so neither allele is dominant) and a genuine difference (an intermediate colour against both colours fully shown, hair by hair). A two-description answer is the natural weak answer, which is exactly the 8/12 fault.
+  - **Why this pair:** B10 taught both (scene 7 snapdragons, scene 8 roan cattle) and its memory aid "Incomplete is in-between, co shows both". The content is known; only the writing is new, which is the series premise. The pair has a genuine similarity (all offspring heterozygous; both heterozygotes look unlike either parent, so neither allele completely masks the other) and a genuine difference (an intermediate colour against both colours fully shown, hair by hair). A two-description answer is the natural weak answer, which is exactly the 8/12 fault.
   - **Why no F2 numbers:** they would add a fourth row (both give 1 : 2 : 1) and more reading. Three marks, three rows. The 1 : 2 : 1 point is accepted in the model answer as an alternative similarity (author note) but is not on the card.
   - **Near-match check (21 Oct):** the text of the 2021 to 2025 NESA Biology papers (links in `verb-frequency.md`) was searched for "compare", "contrast", "distinguish", "co-dominan", "incomplete dominance", "snapdragon", "roan", "pink" and "Punnett". Compared in full:
     - The seven compare units: Biology 2024 Q21(b) (table, sexual against asexual reproduction, 3 marks), 2024 Q30(a) (a transcription-type process against DNA replication, 3), 2025 Q23 (artificial insemination against artificial pollination, 3), 2025 Q33(a) (cell division in two cells, 3), 2025 Q26 (LASIK against another eye technology, 4), 2022 Q25 (genetic variation from asexual and sexual reproduction, 6), 2025 Q27 (fertilisation in two animal groups, with reference to egg data, 6). None compares two inheritance patterns.
@@ -138,13 +144,13 @@ Visual:
 - At most three rows live; the header and tags dim as row 3 writes.
 
 ### 6. table-to-sentence
-> Now turn each row into one sentence, with a comparison word. Row one: **in both** crosses, the offspring are heterozygous, because each true-breeding parent gives a different allele. Row two: **both** heterozygotes differ from both parents, so neither allele is dominant. Row three: snapdragons show incomplete dominance, an in-between pink, **whereas** cattle show co-dominance, with both colours fully expressed in separate hairs. Three paired sentences: in our marking guide, three marks.
+> Now turn each row into one sentence, with a comparison word. Row one: **in both** crosses, the offspring are heterozygous, because each true-breeding parent gives a different allele. Row two: **both** heterozygotes look unlike either parent, so neither allele completely masks the other. Row three: snapdragons show incomplete dominance, an in-between pink, **whereas** cattle show co-dominance, with both colours fully expressed in separate hairs. Three paired sentences: in our marking guide, three marks.
 
 Visual:
 - For each row, a `PenArrow` runs from the table row to its answer slot, and the row dims as its sentence writes.
 - Answer rows (`ARow`), each ticked as spoken:
   - "In both crosses the offspring are heterozygous, because each true-breeding parent passes on a different allele." Tick, "1 / 3".
-  - "Both heterozygotes have a phenotype unlike either parent, so in both cases neither allele is dominant." Tick, "2 / 3".
+  - "Both heterozygotes look unlike either parent, so neither allele completely masks the other." Tick, "2 / 3".
   - "Snapdragons show incomplete dominance (an intermediate pink), whereas cattle show co-dominance (both colours fully expressed, in separate hairs)." Tick, "3 / 3".
 - On "in both", "both" and "whereas" the comparison word in its row takes an amber ring (`AAnn` ring). On "whereas" a pair line joins "incomplete dominance (an intermediate pink)" to "co-dominance (both colours fully expressed ...)" within row 3.
 - The counter label "HSCScience marking guide (illustrative)" shows under the counter.
@@ -269,7 +275,7 @@ All questions are written for HSCScience. None is copied from or adapted from a 
 - Pair table (scene 5): offspring genotype (heterozygous | heterozygous); offspring against parents (different from both parents | different from both parents); how the alleles show (in between, pink | both colours, separate hairs).
 - Model answer (3 paired points):
   1. In both crosses the offspring are heterozygous, because each true-breeding parent passes on a different allele.
-  2. Both heterozygotes have a phenotype unlike either parent, so in both cases neither allele is dominant.
+  2. Both heterozygotes look unlike either parent, so neither allele completely masks the other.
   3. Snapdragons show incomplete dominance (an intermediate pink phenotype), whereas cattle show co-dominance (both alleles fully expressed: red hairs and white hairs).
   - Also accepted (author note): "If the offspring were crossed, both would give a 1 : 2 : 1 ratio, because the heterozygote looks different from both homozygotes." "In snapdragons one working allele makes less pigment in every cell, whereas in roan cattle each hair shows one allele's colour."
 - Weak answer shown: "Snapdragons show incomplete dominance, and their offspring are pink. Cattle show co-dominance, and the calves are roan, with red and white hairs." Illustrative 1 of 3, for the correct pattern in each case. It loses 2: no similarity, and the difference is never stated as a pair.
@@ -304,7 +310,7 @@ All questions are written for HSCScience. None is copied from or adapted from a 
 
 ## Teaching checks
 
-- **Does it explain causes?** In the content: why both crosses give heterozygotes (true-breeding parents each give a different allele), why neither allele is dominant (the heterozygote looks like neither parent), why the two acids need the same volume of base (same moles; the weak acid keeps ionising), why HCl conducts and bubbles faster (complete ionisation, more H3O+), why homologues can differ in alleles (one from each parent) and sister chromatids do not (copies made by replication). In the skill: why two descriptions lose marks (the marker has to do the comparing), why a comparison word cannot rescue unmatched features, and why marks follow complete pairing of the requested features rather than length.
+- **Does it explain causes?** In the content: why both crosses give heterozygotes (true-breeding parents each give a different allele), why neither allele completely masks the other (both heterozygotes look unlike either parent), why the two acids need the same volume of base (same moles; the weak acid keeps ionising), why HCl conducts and bubbles faster (complete ionisation, more H3O+), why homologues can differ in alleles (one from each parent) and sister chromatids do not (copies made by replication). In the skill: why two descriptions lose marks (the marker has to do the comparing), why a comparison word cannot rescue unmatched features, and why marks follow complete pairing of the requested features rather than length.
 - **Science (to check):**
   - Snapdragon red x white gives all pink (incomplete dominance); red x white cattle give all roan (co-dominance); both F1 heterozygous (B10).
   - 0.10 mol L-1 CH3COOH, Ka 1.8 x 10^-5: [H3O+] about 1.3 x 10^-3 mol L-1, about 1.3% ionised (C05 author note a). The card gives no pH. "About 1%" is the spoken rounding; the screen says "about 1%".
@@ -345,6 +351,8 @@ Runtime:
 - The quiet notes hold beyond its speech: about 45 s.
 - Total: **about 9.2 minutes** (552 s).
 - Feedback speech: scene 11 about 31 s, scene 13 about 31 s (Revision 1: 36 s and 33 s). Both sit at the top of the owner's 15 to 30 s band; scene 11 carries a similarity and two differences.
+
+Revision 3 (21 Oct, Codex check 91): scene 6 is 495 characters (was 479) after the "completely masks" correction. **5,903 characters, 15 scenes**; speech about 444 s; total **about 9.2 minutes** (553 s). No reserve cut needed.
 
 Reserve cuts if the voiced preview runs long:
 1. Scene 9: the last sentence moves to the footer tag only (about 6 s).

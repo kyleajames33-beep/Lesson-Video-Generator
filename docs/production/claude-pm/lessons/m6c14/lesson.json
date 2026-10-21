@@ -1,0 +1,152 @@
+{
+  "title": "What do titration curves and conductivity reveal? Starting pH, the buffer region, half-equivalence and the meter's V",
+  "subtitle": "Hydrochloric acid and ethanoic acid at the same concentration, titrated with the same base, give two very different pH curves and two different conductivity graphs. What can those profiles tell you about an acid: strong or weak, where equivalence is, how much acid there is, and even its Ka?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 23,
+  "lessonIntent": "reading a titration curve's axes and starting pH and inferring strength at equal concentration; identifying the buffer region of a weak acid curve and explaining it; finding the equivalence point in the middle of the steep jump and using its volume to calculate a concentration; reading pKa at half the equivalence volume and calculating Ka; explaining the equivalence pH and the shorter jump of a weak acid; recognising the strong acid/weak base profile; explaining the conductivity graphs of a strong and a weak acid titrated with sodium hydroxide, and finding equivalence from each. No indicator choice (chem-m6-c13), no pH calculations at every region (site Extension), no weak/weak curves, no conductometric method or line-intersection reading (chem-m6-c15), no back titration (chem-m6-c15).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two beakers, each with twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre. One is hydrochloric acid, one is ethanoic acid. Add the same sodium hydroxide to each, measure the pH after every portion, and plot it. You get two very different curves. Every bend in them carries information: whether the acid is strong or weak, how much there is, even its K a. So how do you read one?"
+      }
+    },
+    {
+      "id": "axes-start-ph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each curve plots the pH in the flask against the volume of sodium hydroxide added. Start at the left edge, before any base. Hydrochloric acid starts at pH one point zero zero zero, because it's fully ionised. Ethanoic acid starts at two point eight seven, because a weak acid stays mostly as whole molecules: only about one in a hundred has ionised. At the same concentration, a higher starting pH points to a weaker acid."
+      }
+    },
+    {
+      "id": "buffer-region",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the first twenty millilitres. The hydrochloric acid curve stays low, rising only slowly, because plenty of hydronium is still left to react. The ethanoic acid curve climbs quickly, then levels off. Each portion of base turns some ethanoic acid into ethanoate, and a weak acid with its conjugate base is a buffer. That gentle stretch is the buffer region, and it comes before the jump."
+      }
+    },
+    {
+      "id": "half-equivalence",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The moles say each flask reaches equivalence at twenty five millilitres. So halfway, at twelve point five zero millilitres, half the ethanoic acid has become ethanoate. Equal amounts of the two partners, and as in the buffer video, the pH equals the p K a. Read it off the curve: four point seven four. So K a is ten to the minus four point seven four, one point eight times ten to the minus five. That's the acid's own constant, read from a graph. A strong acid curve has no such point to read."
+      }
+    },
+    {
+      "id": "equivalence-point",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "On the curve, the equivalence point sits in the middle of the steepest part. That's at pH seven only for a strong acid with a strong base, and it's never just the top. For both curves it's at twenty five point zero zero millilitres, as the moles said, because a titre counts moles, not strength. So for an unknown acid, that volume gives the concentration: here, zero point one zero zero moles per litre."
+      }
+    },
+    {
+      "id": "equivalence-ph-jump",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now read the pH at that volume. Hydrochloric acid gives seven, and ethanoic acid eight point seven two, because ethanoate makes the solution basic. And as in the indicator video, the jumps differ: the hydrochloric acid curve leaps from about four to ten, but the ethanoic acid curve only from about seven point four, because its buffer held the pH up until the last few drops. So a bigger jump doesn't mean a faster reaction, just less buffering."
+      }
+    },
+    {
+      "id": "strong-acid-weak-base",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "What about a strong acid titrated with a weak base, like hydrochloric acid with ammonia? It starts at pH one, like the first curve. But the jump is lower and shorter, from about four to six point six, around an equivalence pH of five point two eight, because ammonium makes the solution acidic. And after equivalence it levels off near nine, not above twelve: extra ammonia is weak, and with ammonium it forms a buffer."
+      }
+    },
+    {
+      "id": "conductivity-strong",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A conductivity meter tells the same story another way. Hydronium and hydroxide conduct far better than other ions, because they can pass a proton from one water molecule to the next. As sodium hydroxide goes into hydrochloric acid, each fast hydronium is replaced by a slower sodium ion, so the conductivity falls. After equivalence, extra hydroxide piles up, and it rises. The lowest point marks equivalence."
+      }
+    },
+    {
+      "id": "conductivity-weak",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ethanoic acid starts with few ions, so its conductivity starts low. As base is added, sodium and ethanoate ions build up, so it rises gently. Those ions are slower than hydronium, but each portion of base makes far more of them than the few hydronium ions there were at the start. After equivalence, fast hydroxide ions add on, and it rises more steeply. Here, equivalence is the bend where the slope changes, not a minimum."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's what to remember. At half-equivalence, pH equals p K a. Find equivalence in the middle of the jump, halve the volume, and read the pH there. It works because the two partners are equal at that point. And for conductivity: hydronium and hydroxide are the best conductors."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A student titrates twenty point zero zero millilitres of an acid, H A, with zero point one zero zero zero moles per litre sodium hydroxide, and plots this curve. Using two features of the curve, decide whether H A is strong or weak. Then calculate its concentration, and its K a. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "It's weak: there's a buffer region before the jump, and the pH at equivalence is above seven. The jump's middle is at twenty point zero millilitres, so the concentration is zero point one zero zero moles per litre. Half of twenty is ten, where the pH is four point five seven, so K a is two point seven times ten to the minus five. Reading p K a at the equivalence point is the slip."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. Zero point one zero zero moles per litre sodium hydroxide is added to twenty point zero zero millilitres of hydrochloric acid. The conductivity falls to a minimum at sixteen point zero millilitres, then rises. Explain the shape of the graph, and calculate the concentration of the hydrochloric acid. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Before equivalence, each hydronium is replaced by a sodium ion, which conducts less well, so the conductivity falls. After it, extra hydroxide makes it rise. The minimum is equivalence, so the concentration is zero point zero eight zero zero moles per litre. Saying it falls because the ions are used up misses that the number of ions stays about the same."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "For any titration curve: read the starting pH, look for a buffer region, find equivalence in the middle of the jump, read its volume and pH, and halve the volume for p K a. For conductivity, look for the minimum or the bend. Next: when a direct titration won't work, back titrations and conductivity titrations."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

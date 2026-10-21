@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c13/lesson.json",
+    "lessonSha256": "c671f7fdec00987ffecb32303cc0c4ac2f7302200f7bfeef4da3abec88163f24"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C12 (titration, burette, titre, endpoint and equivalence point; phenolphthalein's colourless to faint pink endpoint; the titre counts moles; n = cV). C10 (Ka, pKa = −log Ka; Ka × Kb = Kw for a conjugate pair). C08 (weak base: B + H₂O ⇌ BH⁺ + OH⁻, [OH⁻] = √(Kb × c) when Kb is small, then pOH and pH = 14.00 − pOH). C07 (pH, pOH, Kw = 1.0 × 10⁻¹⁴ at 25 °C, neutral pH 7.00 at 25 °C; the decimal-places rule). C06 (conjugate pairs; the conjugate base of a weak acid takes protons back, the conjugate base of a strong acid barely does; ammonium is ammonia's conjugate acid). C05 (strong and weak acids and bases; salts dissolve completely into ions). C11 (a weak acid with its conjugate base is a buffer; [H₃O⁺] = Ka × n(HA) ÷ n(A⁻); pH = pKa when the partners are equal). Module 5: Le Chatelier's principle. Not assumed: indicator, HIn, transition range, salt hydrolysis, the pH jump.",
+    "startsWith": "Observe a reversible indicator colour change. The video opens: Here's twenty five point zero zero millilitres of zero point one zero zero moles per litre ethanoic acid, titrated with sodium hydroxide of the same concentration. The moles say it needs twenty five millilitres. With phenolphthalein, that's what you get: the flask turns pink within a drop of twenty five.",
+    "stopsAfter": "describing an indicator as a weak acid whose two forms differ in colour; explaining its colour change, and its reversal, with Le Chatelier's principle; explaining why the change spans roughly two pH units around the indicator's pKa; stating four transition ranges; separating the endpoint from the equivalence point; predicting whether the solution at equivalence is acidic, neutral or basic from its salt, with an equation; calculating the equivalence pH of a weak acid with a strong base; choosing an indicator whose colour change falls inside the steep jump and explaining why a wrong choice gives a titre that is too small. No red cabbage preparation (chem-m6-p01), no whole-curve reading or conductivity (chem-m6-c14), no weak/weak titrations, no back titrations (chem-m6-c15).",
+    "nextLesson": "making an indicator from red cabbage and testing it with acids and bases (route chem-m6-p01)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c13.md"
+  ],
+  "teaching": {
+    "task": "The same titration needs twenty five millilitres of base, but methyl orange changes colour before eight. How does an indicator change colour, why isn't every equivalence point at pH 7, and how do you choose the indicator that changes at the right moment?",
+    "causalExplanation": "(1) the same titration needs 25.00 mL by moles; phenolphthalein agrees, methyl orange drifts from red to yellow over the first 8 mL: why? (1); (2) an indicator is a weak acid whose acid and base forms differ in colour; the colour shows which form dominates (2); (3) base removes hydronium, so the equilibrium shifts right; acid shifts it back; the indicator is not used up, so the change is reversible (3); (4) the ratio of the two forms follows [H₃O⁺]; equal at the indicator's pKa; one colour is seen when one form is about ten times the other, so the change spreads over roughly two pH units (4); (5) the endpoint should land at equivalence, so you need the equivalence pH, and it is not always 7 (5); (6) at equivalence the flask holds sodium ethanoate; ethanoate, a weak acid's conjugate base, takes protons from water, making hydroxide: basic (6); (7) NaCl: neither ion reacts with water, neutral; NH₄Cl: ammonium gives protons to water, acidic (7); (8) the ethanoate concentration at equivalence: the volume doubled (8); (9) Kb = Kw ÷ Ka, the weak-base method, pOH, pH 8.72 (9); (10) near equivalence the pH leaps several units in a drop; phenolphthalein changes inside the leap; methyl orange changes in the buffer region, so its titre is far too small (10); (11) the rule: the change must fall inside the jump; for strong with strong the jump is long, so all three work (11); memory aid (12); two attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).",
+    "conversationalApproach": "one puzzle carries the video: the same ethanoic acid titration needs 25.00 mL of base by moles, and phenolphthalein turns pink within a drop of that, but methyl orange drifts from red to yellow over the first 8 mL. The particle lens shows why: an indicator is itself a weak acid whose two forms have different colours, added base and acid shift its equilibrium back and forth, and the ratio of the two forms spreads the visible change over roughly two pH units around its pKa. The flask at equivalence holds a salt that takes after its stronger parent, a worked example finds pH 8.72 through Kb, and the curve shows the steep jump: an indicator must change inside it, so methyl orange, changing in the buffer region, gives a titre far too small. Two exam questions follow with brief feedback.",
+    "openingDecision": "Here's twenty five point zero zero millilitres of zero point one zero zero moles per litre ethanoic acid, titrated with sodium hydroxide of the same concentration. The moles say it needs twenty five millilitres. With phenolphthalein, that's what you get: the flask turns pink within a drop of twenty five. But run it with methyl orange, and the colour drifts from red, through orange, to yellow over the first eight millilitres. Same acid, same base. So why does one indicator get it right, and the other mislead you?",
+    "understandingCheck": "(A1) \"Bromothymol blue is a weak acid, HIn. HIn is yellow and In⁻ is blue. Its transition range is pH 6.0 to 7.6. A few drops of bromothymol blue are added to a solution at pH 4. Sodium hydroxide solution is added until the pH reaches 10, then hydrochloric acid is added until the pH returns to 4. Describe the colours observed, and explain them using Le Chatelier's principle.\" New indicator (its flask set is shown nowhere before the attempt; scene 4's ruler shows only its range band, coloured; A1 states both colours and the range, Revision 2, so \"pH 4 is below the range\" is decidable from the card), tests the reversible equilibrium of `C6-IQ1-02`. Crossed mistake: \"the indicator is used up, so it stays blue\". (A2) \"A solution of 0.100 mol/L hydrochloric acid is added from a burette to 25.00 mL of 0.100 mol/L ammonia solution. Near the equivalence point, the pH falls sharply from about 6.6 to about 4.0. (a) Explain why the solution at the equivalence point is acidic. Include an equation. (b) Select the most suitable indicator from the table, and justify your choice.\" Table on the card: \"methyl orange 3.1–4.4 (red to yellow) | methyl red 4.4–6.2 (red to yellow) | bromothymol blue 6.0–7.6 (yellow to blue) | phenolphthalein 8.3–10.0 (colourless to pink)\". New titration type (strong acid with weak base, acid added to base; the worked example was weak acid with strong base). Crossed mistake: \"phenolphthalein, the usual titration indicator\" (site L17 error 5).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct an investigation to demonstrate the preparation and use of indicators as illustrators of the characteristics and properties of acids and bases and their reversible reactions (ACSCH101)\" \"investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:; strong acid/strong base; strong acid/weak base; weak acid/strong base (ACSCH080, ACSCH102)\" this video starts from the route's reversible indicator colour change and stops at separating the endpoint from the equivalence point and matching an indicator's transition range to the pH jump. It teaches: an indicator as a weak acid, HIn, whose two forms have different colours (C06 conjugate pair callback); the colour change as a reversible equilibrium shifted by added acid and base (Module 5 Le Chatelier callback, one clause), the \"reversible reactions\" demand of `C6-IQ1-02`; why the change spreads over roughly two pH units around the indicator's pKa (the C11 ratio idea, said in words, no new equation); four common transition ranges; endpoint against equivalence point (C12 callback, one line); salt hydrolysis: why the solution at equivalence is basic for a weak acid with a strong base, neutral for strong with strong and acidic for a strong acid with a weak base, and the memory aid \"the salt takes after its stronger parent\"; one worked equivalence pH (sodium ethanoate, through Kb = Kw ÷ Ka and the C08 weak-base method); the steep jump near equivalence and the selection rule (the colour change must fall inside the jump; the range need not contain the exact equivalence pH); why a wrong indicator gives a titre that is too small; the strong/strong case where all three common indicators work at 0.1 mol/L. Not here: preparing an indicator from red cabbage and calibrating it (chem-m6-p01, the next video, which owns the practical preparation and the investigation; this video shows use and reversibility only); reading whole titration curves (starting pH, buffer region, half-equivalence pKa, curve identification) and conductivity graphs (chem-m6-c14); weak acid with weak base titrations (site Extension; one author note); the direction of an amphiprotic ion from Ka against Kb (route Additions: chem-m6-g02); polyprotic curves and tartaric acid (site worksheet corrections); error-direction tables beyond \"titre too small\" (chem-m6-g04); back and conductometric titrations (chem-m6-c15)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; indicator tokens: HIn white-outlined, In⁻ in the indicator's base colour (phenolphthalein magenta); the burette's titrant navy (C12); the ethanoic acid curve teal, the hydrochloric acid curve pale blue; each indicator's range band in its own two colours. Board layout (constant, C03, C07, C08 and C12): top-left the short task line; the left column holds the givens card during the worked example (grouped, units attached); the centre holds the lens, the ruler, the curve or the working, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 21 Oct): `m6-burette-clamp-stand-v1.png` (retort stand, clamp and burette, no person; hook and scene 10 thumbnail, fill gauge drawn over its tube), `m6-conical-flask-v1.png` and `m6-white-tile-v1.png` (hook, under the burette tip), `m6-clip-phenolphthalein-colourless-v1.png` and `m6-clip-phenolphthalein-pink-v1.png` (aligned pair; hook, scenes 2 and 3, the swap played forward and back), `m6-indicator-phenolphthalein-set-v1.png` (inspected: three conical flasks, colourless, pale pink, deep pink; scene 4, under the phenolphthalein band), `m6-indicator-methyl-orange-set-v1.png` (inspected: three flasks, red, orange, yellow; hook, scenes 4 and 10, a coded ring moving across them for the drift), `m6-indicator-bromothymol-blue-set-v1.png` (inspected: three flasks, yellow, green, blue; feedback 1 only, so A1's colours are not shown before the attempt), `m5x-ammonia-bottle-v1.png` (scene 7 and attempt 2, small), `m6-clip-red-cabbage-purple-v1.png` and `m6-clip-red-cabbage-green-v1.png` (handoff chip). New plate: `m6-indicator-methyl-red-set-v1.png` (feedback 2 and scene 4; see Assets). No human figures.",
+    "transitionPlan": "The burette, flask and tile plates open the hook with the volume counter and the two indicator chips; the board clears to the phenolphthalein plate and a lens where HIn tokens pass protons to water and the swatch follows the mix, swapping colour forward and back; the coded pH ruler draws with the ratio bar and then the four range bands; endpoint and equivalence tags sit beside a small apparatus thumbnail; the salt lens and its equation strip build three salt columns that reduce to one comparison row; the givens card and the working lines carry the worked example one stage per line, earlier lines dimming, with one kept chip; the lineGraph draws the curve, a magnifier opens on the jump and the range bands slide across it, then the strong acid curve draws over the same axes; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-burette-clamp-stand-v1.png` centre-left with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` under its tip (C12 layout).",
+      "teachingReason": "Hook (one titration, two indicators): Here's twenty five point zero zero millilitres of zero point one zero zero moles per litre ethanoic acid, titrated with sodium hydroxide of the same concentration.",
+      "narrationCue": "twenty five / pink / methyl orange / mislead",
+      "motionPurpose": "On the spoken cues: Tag \"25.00 mL of 0.100 mol/L CH₃COOH\" (amber) on the flask, \"0.100 mol/L NaOH\" (navy) on the burette. On \"twenty five\" a grey chip writes \"n(acid) = n(NaOH): 25.00 mL needed\" (C12 mole bridge thumbnail, dims after its sentence). On \"pink\" the burette gauge falls and the volume counter runs to \"25.00 mL\"; the flask swaps from `m6-clip-phenolphthalein-colourless-v1.png` to `m6-clip-phenolphthalein-pink-v1.png`, chip",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-burette-clamp-stand-v1.png` centre-left with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` under its tip (C12 layout). Tag \"25.00 mL of 0.100 mol/L CH₃COOH\" (amber) on the flask, \"0.100 mol/L NaOH\" (navy) on the burette. On \"twenty five\" a grey chip writes \"n(acid) = n(NaOH): 25.00 mL needed\" (C12 mole bridge thumbnail, dims after its sentence). On \"pink\" the burette gauge falls and the volume counter runs to \"25.00 mL\"; the flask swaps from `m6-clip-phenolphthalein-colourless-v1.png` to `m6-clip-phenolphthalein-pink-v1.png`, chip \"phenolphthalein: 25.00 mL ✓\". On \"methyl orange\" the counter resets, the flask is replaced by `m6-indicator-methyl-orange-set-v1.png` (small, right), and as the counter runs from \"0\" to \"8 mL\" a coded ring moves from the red flask through the orange (at about 2 mL) to the yellow one; chip \"methyl orange: changes over 0 to 8 mL ?\". On \"mislead\" both chips stay bright and the heading writes: \"Which indicator, and why?\" Bright at the end: the heading and the two chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "indicator-weak-acid",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "An indicator is a weak acid: An indicator is itself a weak acid.",
+      "narrationCue": "H In / In minus / colourless / pink",
+      "motionPurpose": "On the spoken cues: `m6-clip-phenolphthalein-colourless-v1.png` small at the left; a small lens opens from it. On \"H In\" white-outlined HIn tokens fill the lens among pale blue water. On \"In minus\" the strip writes \"HIn(aq) + H₂O(l) ⇌ H₃O⁺(aq) + In⁻(aq)\" and the C01 hop plays once: one HIn passes a teal proton to water, becoming a magenta In⁻; the C06 bracket \"conjugate pair\" joins HIn and In⁻. On \"colourless\" a tag under HIn writes",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-clip-phenolphthalein-colourless-v1.png` small at the left; a small lens opens from it. On \"H In\" white-outlined HIn tokens fill the lens among pale blue water. On \"In minus\" the strip writes \"HIn(aq) + H₂O(l) ⇌ H₃O⁺(aq) + In⁻(aq)\" and the C01 hop plays once: one HIn passes a teal proton to water, becoming a magenta In⁻; the C06 bracket \"conjugate pair\" joins HIn and In⁻. On \"colourless\" a tag under HIn writes \"colourless\"; on \"pink\" a tag under In⁻ writes \"pink\" (H₃O⁺ gets no colour tag; new correction 2). A coded swatch beside the plate shows the lens's mix (here colourless). Bright at the end: the strip, the two colour tags and the lens. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reversible-switch",
+      "visualDecision": "adjust",
+      "visualReference": "the lens and strip stay.",
+      "teachingReason": "A reversible switch: Add sodium hydroxide, and hydroxide removes hydronium.",
+      "narrationCue": "hydronium / pink / left / again and again",
+      "motionPurpose": "On the spoken cues: On \"hydronium\" violet OH⁻ tokens drop in and take teal H₃O⁺ tokens (each pair becomes two water molecules); the strip's forward arrow pulses (grey tag \"Module 5: Le Chatelier\", dims). On \"pink\" HIn tokens hop protons away until most are magenta In⁻; the plate swaps to `m6-clip-phenolphthalein-pink-v1.png` and the swatch turns pink. On \"left\" teal tokens drop in, In⁻ tokens take protons back, the reverse arrow",
+      "motionRole": "explain",
+      "onScreenChange": "the lens and strip stay. On \"hydronium\" violet OH⁻ tokens drop in and take teal H₃O⁺ tokens (each pair becomes two water molecules); the strip's forward arrow pulses (grey tag \"Module 5: Le Chatelier\", dims). On \"pink\" HIn tokens hop protons away until most are magenta In⁻; the plate swaps to `m6-clip-phenolphthalein-pink-v1.png` and the swatch turns pink. On \"left\" teal tokens drop in, In⁻ tokens take protons back, the reverse arrow pulses, the plate swaps back to colourless. On \"again and again\" the swap plays twice more, quickly, with a small cycle counter \"1, 2, 3\" and an arrow loop \"acid ⇄ base\"; tag \"same two colours each time: not used up\". Bright at the end: the strip, the loop and the tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "transition-range",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "A colour change over a range: But the change isn't instant.",
+      "narrationCue": "p K a / ten times / transition range",
+      "motionPurpose": "On the spoken cues: The coded pH ruler draws across the centre, 0 to 14. Above it, a two-column bar (C11 ratio bar style: \"HIn\" white-outlined, \"In⁻\" magenta) slides with a marker along the ruler (small grey tag \"buffer video: ratio follows [H₃O⁺]\", dims). On \"p K a\" the marker sits at about 9 and the columns are equal, label \"[HIn] = [In⁻]: pH = pKa(HIn)\". On \"ten times\" the marker slides one unit each way, the columns tilt to 10 : 1",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The coded pH ruler draws across the centre, 0 to 14. Above it, a two-column bar (C11 ratio bar style: \"HIn\" white-outlined, \"In⁻\" magenta) slides with a marker along the ruler (small grey tag \"buffer video: ratio follows [H₃O⁺]\", dims). On \"p K a\" the marker sits at about 9 and the columns are equal, label \"[HIn] = [In⁻]: pH = pKa(HIn)\". On \"ten times\" the marker slides one unit each way, the columns tilt to 10 : 1 and 1 : 10, and the swatch shows colourless at the left end and pink at the right, label \"about 10 : 1 → one colour seen\". On \"transition range\" the marker and columns fade and four range bands write as stacked rows on the ruler, each labelled at the left: \"methyl orange 3.1–4.4\" (red to yellow), \"methyl red 4.4–6.2\" (red to yellow), \"bromothymol blue 6.0–7.6\" (yellow to blue), \"phenolphthalein 8.3–10.0\" (colourless to pink); the methyl orange and phenolphthalein rows brighten as they are spoken, the other two stay dim. `m6-indicator-methyl-orange-set-v1.png` and `m6-indicator-phenolphthalein-set-v1.png` sit small beside their rows. Bright at the end: the ruler and the two spoken bands. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "table build",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "endpoint-equivalence",
+      "visualDecision": "new",
+      "visualReference": "the ruler shrinks to the bottom and dims.",
+      "teachingReason": "Endpoint and equivalence: In the titration video, the endpoint was where the colour changes, and the equivalence point was where the amounts match the equation.",
+      "narrationCue": "endpoint / equivalence point / pH at equivalence",
+      "motionPurpose": "On the spoken cues: The burette and flask thumbnail returns small at the right. On \"endpoint\" a tag writes \"endpoint: the colour change (seen)\"; on \"equivalence point\" a second tag \"equivalence point: amounts match the equation (calculated)\" writes under it (grey tag \"titration video\", dims). On \"pH at equivalence\" both tags dim and a chip with an empty slot writes: \"pH at equivalence = ?\" with a small grey \"7?\" beside it. Bright at",
+      "motionRole": "explain",
+      "onScreenChange": "the ruler shrinks to the bottom and dims. The burette and flask thumbnail returns small at the right. On \"endpoint\" a tag writes \"endpoint: the colour change (seen)\"; on \"equivalence point\" a second tag \"equivalence point: amounts match the equation (calculated)\" writes under it (grey tag \"titration video\", dims). On \"pH at equivalence\" both tags dim and a chip with an empty slot writes: \"pH at equivalence = ?\" with a small grey \"7?\" beside it. Bright at the end: the chip and the thumbnail. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "flask-at-equivalence",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "What's in the flask at equivalence: At equivalence, the acid and the base have both been used up.",
+      "narrationCue": "sodium ethanoate / water / hydroxide / basic",
+      "motionPurpose": "On the spoken cues: The flask plate sits small at the left with tag \"at equivalence\". A lens opens from it: grey-violet ethanoate ions, small grey Na⁺ spectators (C03 spectator style), pale blue water. On \"sodium ethanoate\" the strip writes \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\" with \"CH₃COONa\" boxed. On \"water\" one ethanoate takes a teal proton from a water molecule (C01 hop, reversed direction), leaving a violet OH⁻; the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The flask plate sits small at the left with tag \"at equivalence\". A lens opens from it: grey-violet ethanoate ions, small grey Na⁺ spectators (C03 spectator style), pale blue water. On \"sodium ethanoate\" the strip writes \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\" with \"CH₃COONa\" boxed. On \"water\" one ethanoate takes a teal proton from a water molecule (C01 hop, reversed direction), leaving a violet OH⁻; the Na⁺ tokens stay still (tag \"Na⁺: spectator\", dims). On \"hydroxide\" the strip below writes \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\" (the first strip dims; grey tag \"Ka and pKa video: ethanoate + water\", dims; the C10 strip style is reused, so the equation reads as a recall). On \"basic\" the chip from scene 5 fills \"pH at equivalence > 7\". Bright at the end: the hydrolysis equation, the lens and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "three-salts",
+      "visualDecision": "adjust",
+      "visualReference": "the scene 6 lens shrinks to a column at the left, labelled \"CH₃COOH + NaOH → CH₃COONa + H₂O: basic\".",
+      "teachingReason": "Three kinds of salt: Swap in hydrochloric acid, and the flask holds sodium chloride.",
+      "narrationCue": "neutral / hydronium / acidic",
+      "motionPurpose": "On the spoken cues: On \"neutral\" a middle column writes \"HCl + NaOH → NaCl + H₂O\" with a small lens of grey Na⁺ and Cl⁻ among water, nothing hopping, chip \"neutral: pH 7.00 at 25 °C\". On \"Titrate ammonia\" `m5x-ammonia-bottle-v1.png` appears small and a right column writes \"HCl + NH₃ → NH₄Cl\"; on \"hydronium\" one NH₄⁺ passes a teal proton to water and the equation writes \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\"; on \"acidic\" its chip",
+      "motionRole": "explain",
+      "onScreenChange": "the scene 6 lens shrinks to a column at the left, labelled \"CH₃COOH + NaOH → CH₃COONa + H₂O: basic\". On \"neutral\" a middle column writes \"HCl + NaOH → NaCl + H₂O\" with a small lens of grey Na⁺ and Cl⁻ among water, nothing hopping, chip \"neutral: pH 7.00 at 25 °C\". On \"Titrate ammonia\" `m5x-ammonia-bottle-v1.png` appears small and a right column writes \"HCl + NH₃ → NH₄Cl\"; on \"hydronium\" one NH₄⁺ passes a teal proton to water and the equation writes \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\"; on \"acidic\" its chip writes \"acidic: pH < 7\". A small grey tag under all three: \"salt hydrolysis: an ion reacting with water\". The left and middle columns dim as the right one writes. On \"acidic\" the ammonium equation dims and the three short chips relight together as one comparison row (\"basic | neutral | acidic\"). Bright at the end: the three chips only. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "we-concentration",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example: the ethanoate concentration: Now the pH for the ethanoic acid flask.",
+      "narrationCue": "zero point zero zero two five zero / doubled / zero point zero five zero zero",
+      "motionPurpose": "On the spoken cues: Task line: \"Find the pH at equivalence\". Givens card: \"CH₃COOH: 25.00 mL, 0.100 mol/L\" | \"NaOH: 0.100 mol/L, 25.00 mL at equivalence\" | \"Ka(CH₃COOH) = 1.8 × 10⁻⁵; Kw = 1.0 × 10⁻¹⁴ (25 °C)\". Step chip \"Step 1 of 2: [CH₃COO⁻]\". On \"zero point zero zero two five zero\" the line \"n(CH₃COO⁻) = n(CH₃COOH) = 0.100 × 0.02500 = 2.50 × 10⁻³ mol\" writes. On \"doubled\" a coded flask outline fills from \"25.00 mL\" to \"50.00 mL\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find the pH at equivalence\". Givens card: \"CH₃COOH: 25.00 mL, 0.100 mol/L\" | \"NaOH: 0.100 mol/L, 25.00 mL at equivalence\" | \"Ka(CH₃COOH) = 1.8 × 10⁻⁵; Kw = 1.0 × 10⁻¹⁴ (25 °C)\". Step chip \"Step 1 of 2: [CH₃COO⁻]\". On \"zero point zero zero two five zero\" the line \"n(CH₃COO⁻) = n(CH₃COOH) = 0.100 × 0.02500 = 2.50 × 10⁻³ mol\" writes. On \"doubled\" a coded flask outline fills from \"25.00 mL\" to \"50.00 mL\" (tag \"acid + base volumes\", dims). On \"zero point zero five zero zero\" the line \"[CH₃COO⁻] = 2.50 × 10⁻³ ÷ 0.05000 = 0.0500 mol/L\" writes and shrinks to a kept chip \"[CH₃COO⁻] = 0.0500 mol/L\". Bright at the end: the task line, the second line and the kept chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we-ph",
+      "visualDecision": "new",
+      "visualReference": "step chip \"Step 2 of 2: pH\".",
+      "teachingReason": "Worked example: Kb and the pH: Step two: ethanoate is a weak base, so use the weak base method.",
+      "narrationCue": "five point six times ten to the minus ten / five point three times ten to the minus six / five point two eight / eight point seven two",
+      "motionPurpose": "On the spoken cues: The strip writes \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\" small at the top. The givens card stays at the left, dimmed; each row relights only while its value is used. On \"five point six\" the Ka and Kw row relights and the line \"Kb = Kw ÷ Ka = 1.0 × 10⁻¹⁴ ÷ 1.8 × 10⁻⁵ = 5.6 × 10⁻¹⁰\" writes (grey tag \"Ka and pKa video: Ka × Kb = Kw\", dims). On \"five point three\" the row dims, the kept chip \"[CH₃COO⁻] = 0.0500",
+      "motionRole": "explain",
+      "onScreenChange": "step chip \"Step 2 of 2: pH\". The strip writes \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\" small at the top. The givens card stays at the left, dimmed; each row relights only while its value is used. On \"five point six\" the Ka and Kw row relights and the line \"Kb = Kw ÷ Ka = 1.0 × 10⁻¹⁴ ÷ 1.8 × 10⁻⁵ = 5.6 × 10⁻¹⁰\" writes (grey tag \"Ka and pKa video: Ka × Kb = Kw\", dims). On \"five point three\" the row dims, the kept chip \"[CH₃COO⁻] = 0.0500 mol/L\" relights, and the line \"[OH⁻] = √(Kb × c) = √(5.6 × 10⁻¹⁰ × 0.0500) = 5.3 × 10⁻⁶ mol/L\" writes (the Kb line dims; grey tag \"weak base method\", dims). On \"five point two eight\" the line \"pOH = −log(5.3 × 10⁻⁶) = 5.28\" writes, with a small tag \"[OH⁻] 2 s.f. → 2 d.p.\" (dims); the [OH⁻] line dims. On \"eight point seven two\" the line \"pH = 14.00 − 5.28 = 8.72\" writes, and the answer chip \"pH at equivalence = 8.72\" pins. Bright at the end: the kept chip, the pH line and the answer chip. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "the-jump",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "The jump, and why methyl orange misleads: Here's the whole curve.",
+      "narrationCue": "leaps / inside / buffer region / low",
+      "motionPurpose": "On the spoken cues: The coded lineGraph draws the teal curve point by point (author note d): x axis \"volume of 0.100 mol/L NaOH added (mL)\" 0 to 50, y axis \"pH\" 0 to 14; the scene 9 answer chip sits small at the top right. On \"leaps\" a magnifier inset opens on 24.9 to 25.1 mL, with two dots \"24.95 mL: 7.4\" and \"25.05 mL: 10.0\" and a bracket \"one drop\"; a dot \"25.00 mL, pH 8.72\" sits between them. On \"inside\" the phenolphthalein band",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The coded lineGraph draws the teal curve point by point (author note d): x axis \"volume of 0.100 mol/L NaOH added (mL)\" 0 to 50, y axis \"pH\" 0 to 14; the scene 9 answer chip sits small at the top right. On \"leaps\" a magnifier inset opens on 24.9 to 25.1 mL, with two dots \"24.95 mL: 7.4\" and \"25.05 mL: 10.0\" and a bracket \"one drop\"; a dot \"25.00 mL, pH 8.72\" sits between them. On \"inside\" the phenolphthalein band (8.3 to 10.0) slides from the y axis across the graph; the stretch of curve inside it lights magenta, entirely within the drop bracket. On \"buffer region\" the inset dims, the methyl orange band (3.1 to 4.4) slides across; the stretch of curve inside it lights orange between about 0.4 and 8 mL, and a small tag \"buffer region: acid and ethanoate both present\" writes beside it. On \"low\" a dashed drop line runs from the yellow end of the orange stretch to the x axis at about 8 mL, chip \"titre about 8 mL, not 25.00 mL\"; the `m6-indicator-methyl-orange-set-v1.png` thumbnail repeats its ring move once. Bright at the end: the curve with its two lit stretches and the chip. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "the-rule",
+      "visualDecision": "new",
+      "visualReference": "the rule writes as a chip at the top: \"Indicator: its colour change must fall inside the jump\".",
+      "teachingReason": "The rule, and strong acid with strong base: So the rule is: choose an indicator whose colour change happens inside the steep jump.",
+      "narrationCue": "inside the steep jump / four to ten / drop",
+      "motionPurpose": "On the spoken cues: The ethanoic curve dims; the pale blue HCl curve draws over the same axes (author note d). On \"four to ten\" a bracket spans the HCl jump, \"about pH 4 to 10\" (one drop each side). On \"drop\" three bands (methyl orange, bromothymol blue, phenolphthalein) slide across and each lights its colour where it crosses the HCl curve: the methyl orange stretch starts just before the one-drop bracket (from about 24.6 mL) and ends",
+      "motionRole": "explain",
+      "onScreenChange": "the rule writes as a chip at the top: \"Indicator: its colour change must fall inside the jump\". The ethanoic curve dims; the pale blue HCl curve draws over the same axes (author note d). On \"four to ten\" a bracket spans the HCl jump, \"about pH 4 to 10\" (one drop each side). On \"drop\" three bands (methyl orange, bromothymol blue, phenolphthalein) slide across and each lights its colour where it crosses the HCl curve: the methyl orange stretch starts just before the one-drop bracket (from about 24.6 mL) and ends near equivalence; the bromothymol blue and phenolphthalein stretches lie within the bracket. Tag: \"Methyl orange starts changing before the one-drop bracket and finishes near equivalence. Bromothymol blue and phenolphthalein change within the bracket.\" Bright at the end: the rule chip, the bracket and the tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "The salt takes after its stronger parent. / pick the indicator that changes inside the jump",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten: \"The salt takes after its stronger parent.\" with three small family-tree icons (coded, no people): \"CH₃COOH + NaOH → basic\", \"HCl + NH₃ → acidic\", \"HCl + NaOH → neutral\", each lighting on its words; condition tag in grey: \"one strong parent; two weak parents: need Ka and Kb\". On \"pick the indicator\" the second line writes: \"Pick the indicator that changes inside the jump.\" with",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The aid writes large and handwritten: \"The salt takes after its stronger parent.\" with three small family-tree icons (coded, no people): \"CH₃COOH + NaOH → basic\", \"HCl + NH₃ → acidic\", \"HCl + NaOH → neutral\", each lighting on its words; condition tag in grey: \"one strong parent; two weak parents: need Ka and Kb\". On \"pick the indicator\" the second line writes: \"Pick the indicator that changes inside the jump.\" with a tiny thumbnail of the scene 10 curve and its magenta stretch. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Bromothymol blue is a weak acid,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Bromothymol blue is a weak acid, HIn. HIn is yellow and In⁻ is blue. Its transition range is pH 6.0 to 7.6. A few drops of bromothymol blue are added to a solution at pH 4. Sodium hydroxide solution is added until the pH reaches 10, then hydrochloric acid is added until the pH returns to 4. Describe the colours observed, and explain them using Le Chatelier's principle.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no lens, no strip, no ruler.",
+      "motionTools": [
+        "Cam lens zoom",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "the question card stays and shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "yellow / blue / left / used up",
+      "motionPurpose": "On the spoken cues: The strip writes \"HIn(aq) + H₂O(l) ⇌ H₃O⁺(aq) + In⁻(aq)\" with \"HIn: yellow\" and \"In⁻: blue\" tags; `m6-indicator-bromothymol-blue-set-v1.png` small at the right. On \"yellow\" \"HIn is yellow\", \"pH 6.0 to 7.6\" and \"pH 4\" are underlined and a ring sits on the yellow flask. On \"blue\" \"Sodium hydroxide\" and \"pH reaches 10\" are underlined, the forward arrow pulses and the ring moves through green to the blue flask. On",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays and shrinks to the top. The strip writes \"HIn(aq) + H₂O(l) ⇌ H₃O⁺(aq) + In⁻(aq)\" with \"HIn: yellow\" and \"In⁻: blue\" tags; `m6-indicator-bromothymol-blue-set-v1.png` small at the right. On \"yellow\" \"HIn is yellow\", \"pH 6.0 to 7.6\" and \"pH 4\" are underlined and a ring sits on the yellow flask. On \"blue\" \"Sodium hydroxide\" and \"pH reaches 10\" are underlined, the forward arrow pulses and the ring moves through green to the blue flask. On \"left\" \"hydrochloric acid\" and \"returns to 4\" are underlined, the reverse arrow pulses and the ring moves back to yellow; answer chip \"yellow → blue → yellow\". On \"used up\" a chip \"indicator used up: stays blue\" fades in and is crossed (caption \"an equilibrium: it shifts back\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "question card: \"A solution of 0.100 mol/L hydrochloric acid is added from a burette to 25.00 mL of 0.100 mol/L ammonia solution.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Zero point one zero zero moles",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"A solution of 0.100 mol/L hydrochloric acid is added from a burette to 25.00 mL of 0.100 mol/L ammonia solution. Near the equivalence point, the pH falls sharply from about 6.6 to about 4.0. (a) Explain why the solution at the equivalence point is acidic. Include an equation. (b) Select the most suitable indicator from the table, and justify your choice.\" Table under it: \"methyl orange 3.1–4.4 (red to yellow) | methyl red 4.4–6.2 (red to yellow) | bromothymol blue 6.0–7.6 (yellow to blue) | phenolphthalein 8.3–10.0 (colourless to pink)\". `m5x-ammonia-bottle-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no curve, no ruler, no aid.",
+      "motionTools": [
+        "table build",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "hydronium / inside / trap",
+      "motionPurpose": "On the spoken cues: On \"hydronium\" \"hydrochloric acid\" and \"ammonia\" are underlined and \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\" writes, chip \"NH₄Cl: acidic\". On \"inside\" \"from about 6.6 to about 4.0\" and the methyl red row are underlined; a short coded pH ruler draws with a bracket \"jump 6.6 → 4.0\" and the methyl red band (4.4 to 6.2) sits wholly inside it; `m6-indicator-methyl-red-set-v1.png` small beside it; answer chip \"methyl",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"hydronium\" \"hydrochloric acid\" and \"ammonia\" are underlined and \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\" writes, chip \"NH₄Cl: acidic\". On \"inside\" \"from about 6.6 to about 4.0\" and the methyl red row are underlined; a short coded pH ruler draws with a bracket \"jump 6.6 → 4.0\" and the methyl red band (4.4 to 6.2) sits wholly inside it; `m6-indicator-methyl-red-set-v1.png` small beside it; answer chip \"methyl red\"; a small grey tag \"methyl orange: also used; changes at the foot of the jump\" (dims). On \"trap\" the phenolphthalein row is underlined, its band (8.3 to 10.0) appears on the short ruler above the jump bracket, and a chip \"phenolphthalein: the usual indicator\" fades in and is crossed (caption \"changes above the jump: colourless by about 22.5 mL\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Name the salt formed at equivalence.\"",
+      "teachingReason": "Decision rule and handoff: For any titration: name the salt, predict acidic, neutral or basic from its stronger parent, find the steep jump, and pick the indicator that changes inside it.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Stronger parent → acidic, neutral or basic.\" \"3 Find the steep jump.\" \"4 Pick the indicator whose change falls inside it.\" On \"Next\" a chip \"Next: make and test an indicator\" appears with small `m6-clip-red-cabbage-purple-v1.png` and `m6-clip-red-cabbage-green-v1.png`.",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Name the salt formed at equivalence.\" \"2 Stronger parent → acidic, neutral or basic.\" \"3 Find the steep jump.\" \"4 Pick the indicator whose change falls inside it.\" On \"Next\" a chip \"Next: make and test an indicator\" appears with small `m6-clip-red-cabbage-purple-v1.png` and `m6-clip-red-cabbage-green-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c13-learning-review.md",
+      "sha256": "e549df86e0cbb5a3682f9a51043a0f22030bf13ec950521084483b82324924cb"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c13-claude-science-check.md",
+      "sha256": "19f9722ac572cb9e5636a2af3d98a7f435bc69a567a1903a6e576a773ba5202f"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

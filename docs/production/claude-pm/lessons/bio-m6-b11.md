@@ -1,6 +1,7 @@
 # B6-11: Which future biotechnology uses are plausible? (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing. Narration 5,937 characters (1,035 words, 16 scene files, counted with the build parser rules), about 9.5 minutes (569 s) including holds, two countdowns and the notes hold, at the cap. Nothing recorded; human listening pending. Revision 1: 5,892 characters, 566 s.
+Status: Revision 3 (21 Oct): Codex check 91 found no errors; ready to voice.
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing. Narration 5,937 characters (1,035 words, 16 scene files, counted with the build parser rules), about 9.5 minutes (569 s) including holds, two countdowns and the notes hold, at the cap. Nothing recorded; human listening pending. Revision 1: 5,892 characters, 566 s.
 
 Changes in Revision 2 (from `../checks/m6b11-learning-review.md` and `../checks/m6b11-claude-science-check.md`):
 - Scene 4: "most babies with the disease are born in sub-Saharan Africa, where almost no patients can get it yet" replaces "most people with the disease live in ... where very few hospitals can offer it" (Casgevy is not commercially available there); the strip steps and map dim in turn, at most three bright items.

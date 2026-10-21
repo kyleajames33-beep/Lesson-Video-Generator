@@ -6313,6 +6313,1080 @@ M6C12_ROWS = {
 # END generated rows: m6c11-m6c12
 
 
+# BEGIN generated rows: m6c13-m6c14, skills03, skills04
+M6C13_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-burette-clamp-stand-v1.png` centre-left with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` under its tip (C12 layout).",
+        "Hook (one titration, two indicators): Here's twenty five point zero zero millilitres of zero point one zero zero moles per litre ethanoic acid, titrated with sodium hydroxide of the same concentration.",
+        "twenty five / pink / methyl orange / mislead",
+        "On the spoken cues: Tag \"25.00 mL of 0.100 mol/L CH₃COOH\" (amber) on the flask, \"0.100 mol/L NaOH\" (navy) on the burette. On \"twenty five\" a grey chip writes \"n(acid) = n(NaOH): 25.00 mL needed\" (C12 mole bridge thumbnail, dims after its sentence). On \"pink\" the burette gauge falls and the volume counter runs to \"25.00 mL\"; the flask swaps from `m6-clip-phenolphthalein-colourless-v1.png` to `m6-clip-phenolphthalein-pink-v1.png`, chip",
+        "explain",
+        "`m6-burette-clamp-stand-v1.png` centre-left with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` under its tip (C12 layout). Tag \"25.00 mL of 0.100 mol/L CH₃COOH\" (amber) on the flask, \"0.100 mol/L NaOH\" (navy) on the burette. On \"twenty five\" a grey chip writes \"n(acid) = n(NaOH): 25.00 mL needed\" (C12 mole bridge thumbnail, dims after its sentence). On \"pink\" the burette gauge falls and the volume counter runs to \"25.00 mL\"; the flask swaps from `m6-clip-phenolphthalein-colourless-v1.png` to `m6-clip-phenolphthalein-pink-v1.png`, chip \"phenolphthalein: 25.00 mL ✓\". On \"methyl orange\" the counter resets, the flask is replaced by `m6-indicator-methyl-orange-set-v1.png` (small, right), and as the counter runs from \"0\" to \"8 mL\" a coded ring moves from the red flask through the orange (at about 2 mL) to the yellow one; chip \"methyl orange: changes over 0 to 8 mL ?\". On \"mislead\" both chips stay bright and the heading writes: \"Which indicator, and why?\" Bright at the end: the heading and the two chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "indicator-weak-acid": [
+        "adjust",
+        "the board clears.",
+        "An indicator is a weak acid: An indicator is itself a weak acid.",
+        "H In / In minus / colourless / pink",
+        "On the spoken cues: `m6-clip-phenolphthalein-colourless-v1.png` small at the left; a small lens opens from it. On \"H In\" white-outlined HIn tokens fill the lens among pale blue water. On \"In minus\" the strip writes \"HIn(aq) + H₂O(l) ⇌ H₃O⁺(aq) + In⁻(aq)\" and the C01 hop plays once: one HIn passes a teal proton to water, becoming a magenta In⁻; the C06 bracket \"conjugate pair\" joins HIn and In⁻. On \"colourless\" a tag under HIn writes",
+        "explain",
+        "the board clears. `m6-clip-phenolphthalein-colourless-v1.png` small at the left; a small lens opens from it. On \"H In\" white-outlined HIn tokens fill the lens among pale blue water. On \"In minus\" the strip writes \"HIn(aq) + H₂O(l) ⇌ H₃O⁺(aq) + In⁻(aq)\" and the C01 hop plays once: one HIn passes a teal proton to water, becoming a magenta In⁻; the C06 bracket \"conjugate pair\" joins HIn and In⁻. On \"colourless\" a tag under HIn writes \"colourless\"; on \"pink\" a tag under In⁻ writes \"pink\" (H₃O⁺ gets no colour tag; new correction 2). A coded swatch beside the plate shows the lens's mix (here colourless). Bright at the end: the strip, the two colour tags and the lens. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "reversible-switch": [
+        "adjust",
+        "the lens and strip stay.",
+        "A reversible switch: Add sodium hydroxide, and hydroxide removes hydronium.",
+        "hydronium / pink / left / again and again",
+        "On the spoken cues: On \"hydronium\" violet OH⁻ tokens drop in and take teal H₃O⁺ tokens (each pair becomes two water molecules); the strip's forward arrow pulses (grey tag \"Module 5: Le Chatelier\", dims). On \"pink\" HIn tokens hop protons away until most are magenta In⁻; the plate swaps to `m6-clip-phenolphthalein-pink-v1.png` and the swatch turns pink. On \"left\" teal tokens drop in, In⁻ tokens take protons back, the reverse arrow",
+        "explain",
+        "the lens and strip stay. On \"hydronium\" violet OH⁻ tokens drop in and take teal H₃O⁺ tokens (each pair becomes two water molecules); the strip's forward arrow pulses (grey tag \"Module 5: Le Chatelier\", dims). On \"pink\" HIn tokens hop protons away until most are magenta In⁻; the plate swaps to `m6-clip-phenolphthalein-pink-v1.png` and the swatch turns pink. On \"left\" teal tokens drop in, In⁻ tokens take protons back, the reverse arrow pulses, the plate swaps back to colourless. On \"again and again\" the swap plays twice more, quickly, with a small cycle counter \"1, 2, 3\" and an arrow loop \"acid ⇄ base\"; tag \"same two colours each time: not used up\". Bright at the end: the strip, the loop and the tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "transition-range": [
+        "adjust",
+        "the board clears.",
+        "A colour change over a range: But the change isn't instant.",
+        "p K a / ten times / transition range",
+        "On the spoken cues: The coded pH ruler draws across the centre, 0 to 14. Above it, a two-column bar (C11 ratio bar style: \"HIn\" white-outlined, \"In⁻\" magenta) slides with a marker along the ruler (small grey tag \"buffer video: ratio follows [H₃O⁺]\", dims). On \"p K a\" the marker sits at about 9 and the columns are equal, label \"[HIn] = [In⁻]: pH = pKa(HIn)\". On \"ten times\" the marker slides one unit each way, the columns tilt to 10 : 1",
+        "explain",
+        "the board clears. The coded pH ruler draws across the centre, 0 to 14. Above it, a two-column bar (C11 ratio bar style: \"HIn\" white-outlined, \"In⁻\" magenta) slides with a marker along the ruler (small grey tag \"buffer video: ratio follows [H₃O⁺]\", dims). On \"p K a\" the marker sits at about 9 and the columns are equal, label \"[HIn] = [In⁻]: pH = pKa(HIn)\". On \"ten times\" the marker slides one unit each way, the columns tilt to 10 : 1 and 1 : 10, and the swatch shows colourless at the left end and pink at the right, label \"about 10 : 1 → one colour seen\". On \"transition range\" the marker and columns fade and four range bands write as stacked rows on the ruler, each labelled at the left: \"methyl orange 3.1–4.4\" (red to yellow), \"methyl red 4.4–6.2\" (red to yellow), \"bromothymol blue 6.0–7.6\" (yellow to blue), \"phenolphthalein 8.3–10.0\" (colourless to pink); the methyl orange and phenolphthalein rows brighten as they are spoken, the other two stay dim. `m6-indicator-methyl-orange-set-v1.png` and `m6-indicator-phenolphthalein-set-v1.png` sit small beside their rows. Bright at the end: the ruler and the two spoken bands. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "table build",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "endpoint-equivalence": [
+        "new",
+        "the ruler shrinks to the bottom and dims.",
+        "Endpoint and equivalence: In the titration video, the endpoint was where the colour changes, and the equivalence point was where the amounts match the equation.",
+        "endpoint / equivalence point / pH at equivalence",
+        "On the spoken cues: The burette and flask thumbnail returns small at the right. On \"endpoint\" a tag writes \"endpoint: the colour change (seen)\"; on \"equivalence point\" a second tag \"equivalence point: amounts match the equation (calculated)\" writes under it (grey tag \"titration video\", dims). On \"pH at equivalence\" both tags dim and a chip with an empty slot writes: \"pH at equivalence = ?\" with a small grey \"7?\" beside it. Bright at",
+        "explain",
+        "the ruler shrinks to the bottom and dims. The burette and flask thumbnail returns small at the right. On \"endpoint\" a tag writes \"endpoint: the colour change (seen)\"; on \"equivalence point\" a second tag \"equivalence point: amounts match the equation (calculated)\" writes under it (grey tag \"titration video\", dims). On \"pH at equivalence\" both tags dim and a chip with an empty slot writes: \"pH at equivalence = ?\" with a small grey \"7?\" beside it. Bright at the end: the chip and the thumbnail. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "flask-at-equivalence": [
+        "new",
+        "the board clears.",
+        "What's in the flask at equivalence: At equivalence, the acid and the base have both been used up.",
+        "sodium ethanoate / water / hydroxide / basic",
+        "On the spoken cues: The flask plate sits small at the left with tag \"at equivalence\". A lens opens from it: grey-violet ethanoate ions, small grey Na⁺ spectators (C03 spectator style), pale blue water. On \"sodium ethanoate\" the strip writes \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\" with \"CH₃COONa\" boxed. On \"water\" one ethanoate takes a teal proton from a water molecule (C01 hop, reversed direction), leaving a violet OH⁻; the",
+        "explain",
+        "the board clears. The flask plate sits small at the left with tag \"at equivalence\". A lens opens from it: grey-violet ethanoate ions, small grey Na⁺ spectators (C03 spectator style), pale blue water. On \"sodium ethanoate\" the strip writes \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\" with \"CH₃COONa\" boxed. On \"water\" one ethanoate takes a teal proton from a water molecule (C01 hop, reversed direction), leaving a violet OH⁻; the Na⁺ tokens stay still (tag \"Na⁺: spectator\", dims). On \"hydroxide\" the strip below writes \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\" (the first strip dims; grey tag \"Ka and pKa video: ethanoate + water\", dims; the C10 strip style is reused, so the equation reads as a recall). On \"basic\" the chip from scene 5 fills \"pH at equivalence > 7\". Bright at the end: the hydrolysis equation, the lens and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "token flight",
+            "Cam lens zoom"
+        ],
+        "Hold about 1 second"
+    ],
+    "three-salts": [
+        "adjust",
+        "the scene 6 lens shrinks to a column at the left, labelled \"CH₃COOH + NaOH → CH₃COONa + H₂O: basic\".",
+        "Three kinds of salt: Swap in hydrochloric acid, and the flask holds sodium chloride.",
+        "neutral / hydronium / acidic",
+        "On the spoken cues: On \"neutral\" a middle column writes \"HCl + NaOH → NaCl + H₂O\" with a small lens of grey Na⁺ and Cl⁻ among water, nothing hopping, chip \"neutral: pH 7.00 at 25 °C\". On \"Titrate ammonia\" `m5x-ammonia-bottle-v1.png` appears small and a right column writes \"HCl + NH₃ → NH₄Cl\"; on \"hydronium\" one NH₄⁺ passes a teal proton to water and the equation writes \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\"; on \"acidic\" its chip",
+        "explain",
+        "the scene 6 lens shrinks to a column at the left, labelled \"CH₃COOH + NaOH → CH₃COONa + H₂O: basic\". On \"neutral\" a middle column writes \"HCl + NaOH → NaCl + H₂O\" with a small lens of grey Na⁺ and Cl⁻ among water, nothing hopping, chip \"neutral: pH 7.00 at 25 °C\". On \"Titrate ammonia\" `m5x-ammonia-bottle-v1.png` appears small and a right column writes \"HCl + NH₃ → NH₄Cl\"; on \"hydronium\" one NH₄⁺ passes a teal proton to water and the equation writes \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\"; on \"acidic\" its chip writes \"acidic: pH < 7\". A small grey tag under all three: \"salt hydrolysis: an ion reacting with water\". The left and middle columns dim as the right one writes. On \"acidic\" the ammonium equation dims and the three short chips relight together as one comparison row (\"basic | neutral | acidic\"). Bright at the end: the three chips only. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Cam lens zoom",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "we-concentration": [
+        "new",
+        "the board clears to the three zones.",
+        "Worked example: the ethanoate concentration: Now the pH for the ethanoic acid flask.",
+        "zero point zero zero two five zero / doubled / zero point zero five zero zero",
+        "On the spoken cues: Task line: \"Find the pH at equivalence\". Givens card: \"CH₃COOH: 25.00 mL, 0.100 mol/L\" | \"NaOH: 0.100 mol/L, 25.00 mL at equivalence\" | \"Ka(CH₃COOH) = 1.8 × 10⁻⁵; Kw = 1.0 × 10⁻¹⁴ (25 °C)\". Step chip \"Step 1 of 2: [CH₃COO⁻]\". On \"zero point zero zero two five zero\" the line \"n(CH₃COO⁻) = n(CH₃COOH) = 0.100 × 0.02500 = 2.50 × 10⁻³ mol\" writes. On \"doubled\" a coded flask outline fills from \"25.00 mL\" to \"50.00 mL\"",
+        "explain",
+        "the board clears to the three zones. Task line: \"Find the pH at equivalence\". Givens card: \"CH₃COOH: 25.00 mL, 0.100 mol/L\" | \"NaOH: 0.100 mol/L, 25.00 mL at equivalence\" | \"Ka(CH₃COOH) = 1.8 × 10⁻⁵; Kw = 1.0 × 10⁻¹⁴ (25 °C)\". Step chip \"Step 1 of 2: [CH₃COO⁻]\". On \"zero point zero zero two five zero\" the line \"n(CH₃COO⁻) = n(CH₃COOH) = 0.100 × 0.02500 = 2.50 × 10⁻³ mol\" writes. On \"doubled\" a coded flask outline fills from \"25.00 mL\" to \"50.00 mL\" (tag \"acid + base volumes\", dims). On \"zero point zero five zero zero\" the line \"[CH₃COO⁻] = 2.50 × 10⁻³ ÷ 0.05000 = 0.0500 mol/L\" writes and shrinks to a kept chip \"[CH₃COO⁻] = 0.0500 mol/L\". Bright at the end: the task line, the second line and the kept chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "we-ph": [
+        "new",
+        "step chip \"Step 2 of 2: pH\".",
+        "Worked example: Kb and the pH: Step two: ethanoate is a weak base, so use the weak base method.",
+        "five point six times ten to the minus ten / five point three times ten to the minus six / five point two eight / eight point seven two",
+        "On the spoken cues: The strip writes \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\" small at the top. The givens card stays at the left, dimmed; each row relights only while its value is used. On \"five point six\" the Ka and Kw row relights and the line \"Kb = Kw ÷ Ka = 1.0 × 10⁻¹⁴ ÷ 1.8 × 10⁻⁵ = 5.6 × 10⁻¹⁰\" writes (grey tag \"Ka and pKa video: Ka × Kb = Kw\", dims). On \"five point three\" the row dims, the kept chip \"[CH₃COO⁻] = 0.0500",
+        "explain",
+        "step chip \"Step 2 of 2: pH\". The strip writes \"CH₃COO⁻(aq) + H₂O(l) ⇌ CH₃COOH(aq) + OH⁻(aq)\" small at the top. The givens card stays at the left, dimmed; each row relights only while its value is used. On \"five point six\" the Ka and Kw row relights and the line \"Kb = Kw ÷ Ka = 1.0 × 10⁻¹⁴ ÷ 1.8 × 10⁻⁵ = 5.6 × 10⁻¹⁰\" writes (grey tag \"Ka and pKa video: Ka × Kb = Kw\", dims). On \"five point three\" the row dims, the kept chip \"[CH₃COO⁻] = 0.0500 mol/L\" relights, and the line \"[OH⁻] = √(Kb × c) = √(5.6 × 10⁻¹⁰ × 0.0500) = 5.3 × 10⁻⁶ mol/L\" writes (the Kb line dims; grey tag \"weak base method\", dims). On \"five point two eight\" the line \"pOH = −log(5.3 × 10⁻⁶) = 5.28\" writes, with a small tag \"[OH⁻] 2 s.f. → 2 d.p.\" (dims); the [OH⁻] line dims. On \"eight point seven two\" the line \"pH = 14.00 − 5.28 = 8.72\" writes, and the answer chip \"pH at equivalence = 8.72\" pins. Bright at the end: the kept chip, the pH line and the answer chip. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "the-jump": [
+        "adjust",
+        "the board clears.",
+        "The jump, and why methyl orange misleads: Here's the whole curve.",
+        "leaps / inside / buffer region / low",
+        "On the spoken cues: The coded lineGraph draws the teal curve point by point (author note d): x axis \"volume of 0.100 mol/L NaOH added (mL)\" 0 to 50, y axis \"pH\" 0 to 14; the scene 9 answer chip sits small at the top right. On \"leaps\" a magnifier inset opens on 24.9 to 25.1 mL, with two dots \"24.95 mL: 7.4\" and \"25.05 mL: 10.0\" and a bracket \"one drop\"; a dot \"25.00 mL, pH 8.72\" sits between them. On \"inside\" the phenolphthalein band",
+        "explain",
+        "the board clears. The coded lineGraph draws the teal curve point by point (author note d): x axis \"volume of 0.100 mol/L NaOH added (mL)\" 0 to 50, y axis \"pH\" 0 to 14; the scene 9 answer chip sits small at the top right. On \"leaps\" a magnifier inset opens on 24.9 to 25.1 mL, with two dots \"24.95 mL: 7.4\" and \"25.05 mL: 10.0\" and a bracket \"one drop\"; a dot \"25.00 mL, pH 8.72\" sits between them. On \"inside\" the phenolphthalein band (8.3 to 10.0) slides from the y axis across the graph; the stretch of curve inside it lights magenta, entirely within the drop bracket. On \"buffer region\" the inset dims, the methyl orange band (3.1 to 4.4) slides across; the stretch of curve inside it lights orange between about 0.4 and 8 mL, and a small tag \"buffer region: acid and ethanoate both present\" writes beside it. On \"low\" a dashed drop line runs from the yellow end of the orange stretch to the x axis at about 8 mL, chip \"titre about 8 mL, not 25.00 mL\"; the `m6-indicator-methyl-orange-set-v1.png` thumbnail repeats its ring move once. Bright at the end: the curve with its two lit stretches and the chip. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "the-rule": [
+        "new",
+        "the rule writes as a chip at the top: \"Indicator: its colour change must fall inside the jump\".",
+        "The rule, and strong acid with strong base: So the rule is: choose an indicator whose colour change happens inside the steep jump.",
+        "inside the steep jump / four to ten / drop",
+        "On the spoken cues: The ethanoic curve dims; the pale blue HCl curve draws over the same axes (author note d). On \"four to ten\" a bracket spans the HCl jump, \"about pH 4 to 10\" (one drop each side). On \"drop\" three bands (methyl orange, bromothymol blue, phenolphthalein) slide across and each lights its colour where it crosses the HCl curve: the methyl orange stretch starts just before the one-drop bracket (from about 24.6 mL) and ends",
+        "explain",
+        "the rule writes as a chip at the top: \"Indicator: its colour change must fall inside the jump\". The ethanoic curve dims; the pale blue HCl curve draws over the same axes (author note d). On \"four to ten\" a bracket spans the HCl jump, \"about pH 4 to 10\" (one drop each side). On \"drop\" three bands (methyl orange, bromothymol blue, phenolphthalein) slide across and each lights its colour where it crosses the HCl curve: the methyl orange stretch starts just before the one-drop bracket (from about 24.6 mL) and ends near equivalence; the bromothymol blue and phenolphthalein stretches lie within the bracket. Tag: \"Methyl orange starts changing before the one-drop bracket and finishes near equivalence. Bromothymol blue and phenolphthalein change within the bracket.\" Bright at the end: the rule chip, the bracket and the tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So here's what to remember.",
+        "The salt takes after its stronger parent. / pick the indicator that changes inside the jump",
+        "On the spoken cues: The aid writes large and handwritten: \"The salt takes after its stronger parent.\" with three small family-tree icons (coded, no people): \"CH₃COOH + NaOH → basic\", \"HCl + NH₃ → acidic\", \"HCl + NaOH → neutral\", each lighting on its words; condition tag in grey: \"one strong parent; two weak parents: need Ka and Kb\". On \"pick the indicator\" the second line writes: \"Pick the indicator that changes inside the jump.\" with",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"The salt takes after its stronger parent.\" with three small family-tree icons (coded, no people): \"CH₃COOH + NaOH → basic\", \"HCl + NH₃ → acidic\", \"HCl + NaOH → neutral\", each lighting on its words; condition tag in grey: \"one strong parent; two weak parents: need Ka and Kb\". On \"pick the indicator\" the second line writes: \"Pick the indicator that changes inside the jump.\" with a tiny thumbnail of the scene 10 curve and its magenta stretch. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Bromothymol blue is a weak acid,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Bromothymol blue is a weak acid, HIn. HIn is yellow and In⁻ is blue. Its transition range is pH 6.0 to 7.6. A few drops of bromothymol blue are added to a solution at pH 4. Sodium hydroxide solution is added until the pH reaches 10, then hydrochloric acid is added until the pH returns to 4. Describe the colours observed, and explain them using Le Chatelier's principle.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no lens, no strip, no ruler.",
+        [
+            "Cam lens zoom",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "adjust",
+        "the question card stays and shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "yellow / blue / left / used up",
+        "On the spoken cues: The strip writes \"HIn(aq) + H₂O(l) ⇌ H₃O⁺(aq) + In⁻(aq)\" with \"HIn: yellow\" and \"In⁻: blue\" tags; `m6-indicator-bromothymol-blue-set-v1.png` small at the right. On \"yellow\" \"HIn is yellow\", \"pH 6.0 to 7.6\" and \"pH 4\" are underlined and a ring sits on the yellow flask. On \"blue\" \"Sodium hydroxide\" and \"pH reaches 10\" are underlined, the forward arrow pulses and the ring moves through green to the blue flask. On",
+        "explain",
+        "the question card stays and shrinks to the top. The strip writes \"HIn(aq) + H₂O(l) ⇌ H₃O⁺(aq) + In⁻(aq)\" with \"HIn: yellow\" and \"In⁻: blue\" tags; `m6-indicator-bromothymol-blue-set-v1.png` small at the right. On \"yellow\" \"HIn is yellow\", \"pH 6.0 to 7.6\" and \"pH 4\" are underlined and a ring sits on the yellow flask. On \"blue\" \"Sodium hydroxide\" and \"pH reaches 10\" are underlined, the forward arrow pulses and the ring moves through green to the blue flask. On \"left\" \"hydrochloric acid\" and \"returns to 4\" are underlined, the reverse arrow pulses and the ring moves back to yellow; answer chip \"yellow → blue → yellow\". On \"used up\" a chip \"indicator used up: stays blue\" fades in and is crossed (caption \"an equilibrium: it shifts back\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card: \"A solution of 0.100 mol/L hydrochloric acid is added from a burette to 25.00 mL of 0.100 mol/L ammonia solution.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Zero point one zero zero moles",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card: \"A solution of 0.100 mol/L hydrochloric acid is added from a burette to 25.00 mL of 0.100 mol/L ammonia solution. Near the equivalence point, the pH falls sharply from about 6.6 to about 4.0. (a) Explain why the solution at the equivalence point is acidic. Include an equation. (b) Select the most suitable indicator from the table, and justify your choice.\" Table under it: \"methyl orange 3.1–4.4 (red to yellow) | methyl red 4.4–6.2 (red to yellow) | bromothymol blue 6.0–7.6 (yellow to blue) | phenolphthalein 8.3–10.0 (colourless to pink)\". `m5x-ammonia-bottle-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no curve, no ruler, no aid.",
+        [
+            "table build",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the question card stays.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "hydronium / inside / trap",
+        "On the spoken cues: On \"hydronium\" \"hydrochloric acid\" and \"ammonia\" are underlined and \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\" writes, chip \"NH₄Cl: acidic\". On \"inside\" \"from about 6.6 to about 4.0\" and the methyl red row are underlined; a short coded pH ruler draws with a bracket \"jump 6.6 → 4.0\" and the methyl red band (4.4 to 6.2) sits wholly inside it; `m6-indicator-methyl-red-set-v1.png` small beside it; answer chip \"methyl",
+        "explain",
+        "the question card stays. On \"hydronium\" \"hydrochloric acid\" and \"ammonia\" are underlined and \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\" writes, chip \"NH₄Cl: acidic\". On \"inside\" \"from about 6.6 to about 4.0\" and the methyl red row are underlined; a short coded pH ruler draws with a bracket \"jump 6.6 → 4.0\" and the methyl red band (4.4 to 6.2) sits wholly inside it; `m6-indicator-methyl-red-set-v1.png` small beside it; answer chip \"methyl red\"; a small grey tag \"methyl orange: also used; changes at the foot of the jump\" (dims). On \"trap\" the phenolphthalein row is underlined, its band (8.3 to 10.0) appears on the short ruler above the jump bracket, and a chip \"phenolphthalein: the usual indicator\" fades in and is crossed (caption \"changes above the jump: colourless by about 22.5 mL\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the question card writes, each line lighting on its words: \"1 Name the salt formed at equivalence.\"",
+        "Decision rule and handoff: For any titration: name the salt, predict acidic, neutral or basic from its stronger parent, find the steep jump, and pick the indicator that changes inside it.",
+        "Next",
+        "On the spoken cues: \"2 Stronger parent → acidic, neutral or basic.\" \"3 Find the steep jump.\" \"4 Pick the indicator whose change falls inside it.\" On \"Next\" a chip \"Next: make and test an indicator\" appears with small `m6-clip-red-cabbage-purple-v1.png` and `m6-clip-red-cabbage-green-v1.png`.",
+        "explain",
+        "the question card writes, each line lighting on its words: \"1 Name the salt formed at equivalence.\" \"2 Stronger parent → acidic, neutral or basic.\" \"3 Find the steep jump.\" \"4 Pick the indicator whose change falls inside it.\" On \"Next\" a chip \"Next: make and test an indicator\" appears with small `m6-clip-red-cabbage-purple-v1.png` and `m6-clip-red-cabbage-green-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6C14_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-burette-clamp-stand-v1.png` small at the left, titrant tag \"0.100 mol/L NaOH\" (navy); two `m6-ph-meter-probe-beaker-v1.png` plates small at the right, beakers labelled in code \"HCl, 0.100 mol/L, 25.00 mL\" and \"CH₃COOH, 0.100 mol/L, 25.00 mL\".",
+        "Hook (two acids, two curves): Two beakers, each with twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre.",
+        "two very different curves / how much / K a",
+        "On the spoken cues: On \"plot it\" the lineGraph axes draw centre (x \"volume of NaOH added (mL)\" 0 to 50, y \"pH\" 0 to 14) and the C11 dose counter ticks while both readouts change; on \"two very different curves\" the pale blue and teal curves draw point by point together (author note a), each with a direct label at its right end (\"HCl\", \"CH₃COOH\", in the curve's colour; the labels stay, dimmed with their curves, through scene 7), and the",
+        "explain",
+        "`m6-burette-clamp-stand-v1.png` small at the left, titrant tag \"0.100 mol/L NaOH\" (navy); two `m6-ph-meter-probe-beaker-v1.png` plates small at the right, beakers labelled in code \"HCl, 0.100 mol/L, 25.00 mL\" and \"CH₃COOH, 0.100 mol/L, 25.00 mL\". On \"plot it\" the lineGraph axes draw centre (x \"volume of NaOH added (mL)\" 0 to 50, y \"pH\" 0 to 14) and the C11 dose counter ticks while both readouts change; on \"two very different curves\" the pale blue and teal curves draw point by point together (author note a), each with a direct label at its right end (\"HCl\", \"CH₃COOH\", in the curve's colour; the labels stay, dimmed with their curves, through scene 7), and the plates fade. On \"how much\" a faint ring flashes at the jumps; on \"K a\" a faint ring flashes on the teal curve's level stretch. Heading writes: \"What does each part of the curve tell you?\" Bright at the end: the heading and the two curves. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "axes-start-ph": [
+        "new",
+        "the axis labels pulse in turn as the first sentence names them (a small grey tag \"base in the flask instead? the curve runs downhill\", dims).",
+        "Axes and the starting pH: Each curve plots the pH in the flask against the volume of sodium hydroxide added.",
+        "left edge / one point zero zero zero / two point eight seven / weaker",
+        "On the spoken cues: On \"left edge\" feature ring 1 draws at x = 0 on both curves. On \"one point zero zero zero\" the pale blue start dot labels \"1.000\" (small grey tag \"[H₃O⁺] = 0.100 mol/L: 3 s.f. → 3 d.p.\", dims); on \"two point eight seven\" the teal start dot labels \"2.87\" (the tag rewrites \"[H₃O⁺] from Ka: 2 s.f. → 2 d.p.\" and dims), with a tiny C08 lens thumbnail of mostly whole amber-outlined molecules (grey tag \"weak acid pH",
+        "explain",
+        "the axis labels pulse in turn as the first sentence names them (a small grey tag \"base in the flask instead? the curve runs downhill\", dims). On \"left edge\" feature ring 1 draws at x = 0 on both curves. On \"one point zero zero zero\" the pale blue start dot labels \"1.000\" (small grey tag \"[H₃O⁺] = 0.100 mol/L: 3 s.f. → 3 d.p.\", dims); on \"two point eight seven\" the teal start dot labels \"2.87\" (the tag rewrites \"[H₃O⁺] from Ka: 2 s.f. → 2 d.p.\" and dims), with a tiny C08 lens thumbnail of mostly whole amber-outlined molecules (grey tag \"weak acid pH video\", dims). On \"weaker\" a chip writes \"same c: higher start → weaker acid\". Bright at the end: the two start labels and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Cam lens zoom",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "buffer-region": [
+        "new",
+        "the start labels dim.",
+        "The early part: the buffer region: Now the first twenty millilitres.",
+        "low / levels off / buffer / buffer region",
+        "On the spoken cues: On \"low\" the pale blue curve's first 20 mL brightens. On \"levels off\" the teal curve's first 20 mL brightens and a small C11 ratio bar beside it fills as the dose counter runs: the amber \"CH₃COOH\" column shrinks and the grey-violet \"CH₃COO⁻\" column grows (grey tag \"buffer video\", dims). On \"buffer region\" feature ring 2 draws a soft bracket over the teal curve from about 3 to 22 mL, labelled \"buffer region (before",
+        "explain",
+        "the start labels dim. On \"low\" the pale blue curve's first 20 mL brightens. On \"levels off\" the teal curve's first 20 mL brightens and a small C11 ratio bar beside it fills as the dose counter runs: the amber \"CH₃COOH\" column shrinks and the grey-violet \"CH₃COO⁻\" column grows (grey tag \"buffer video\", dims). On \"buffer region\" feature ring 2 draws a soft bracket over the teal curve from about 3 to 22 mL, labelled \"buffer region (before the jump)\". Bright at the end: the bracket label, the ratio bar and the teal curve. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "NumberTicker",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "half-equivalence": [
+        "new",
+        "the half-volume caliper: on \"twenty five millilitres\" a bracket spans 0 to 25.00 mL on the x axis (label \"equivalence: 25.00 mL, from the moles\"; scene 5 shows where it sits on the curve), folds in half, and on \"twelve point five zero\" drops a vertical line at 12.50 mL to the teal curve; the ratio bar shows two equal columns.",
+        "Half-equivalence gives pKa: The moles say each flask reaches equivalence at twenty five millilitres.",
+        "twelve point five zero / p K a / four point seven four / one point eight times ten to the minus five",
+        "On the spoken cues: On \"p K a\" a chip writes \"equal partners: pH = pKa\". On \"four point seven four\" a horizontal line runs from the curve to the pH axis, label \"4.74\", feature ring 3. On \"one point eight\" the line \"Ka = 10⁻⁴·⁷⁴ = 1.8 × 10⁻⁵\" writes with a small tag \"pH 2 d.p. → Ka 2 s.f.\" (dims). The pale blue curve stays dim (no buffer, no such reading). Bright at the end: the 4.74 label, the Ka line and the chip.",
+        "explain",
+        "the half-volume caliper: on \"twenty five millilitres\" a bracket spans 0 to 25.00 mL on the x axis (label \"equivalence: 25.00 mL, from the moles\"; scene 5 shows where it sits on the curve), folds in half, and on \"twelve point five zero\" drops a vertical line at 12.50 mL to the teal curve; the ratio bar shows two equal columns. On \"p K a\" a chip writes \"equal partners: pH = pKa\". On \"four point seven four\" a horizontal line runs from the curve to the pH axis, label \"4.74\", feature ring 3. On \"one point eight\" the line \"Ka = 10⁻⁴·⁷⁴ = 1.8 × 10⁻⁵\" writes with a small tag \"pH 2 d.p. → Ka 2 s.f.\" (dims). The pale blue curve stays dim (no buffer, no such reading). Bright at the end: the 4.74 label, the Ka line and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "equivalence-point": [
+        "new",
+        "the readings from scenes 2 to 4 dim.",
+        "The equivalence point: On the curve, the equivalence point sits in the middle of the steepest part.",
+        "middle of the steepest part / twenty five point zero zero / concentration",
+        "On the spoken cues: On \"middle of the steepest part\" the C13 magnifier inset opens on the jumps (24.9 to 25.1 mL) and feature ring 4 sits on the midpoint of each; a chip \"equivalence: middle of the jump\" writes; beside it a small chip \"always at pH 7? at the top?\" fades in and is crossed (caption \"middle of the jump; pH 7 only for strong + strong\"). On \"twenty five point zero zero\" a vertical line drops from both midpoints to the x",
+        "explain",
+        "the readings from scenes 2 to 4 dim. On \"middle of the steepest part\" the C13 magnifier inset opens on the jumps (24.9 to 25.1 mL) and feature ring 4 sits on the midpoint of each; a chip \"equivalence: middle of the jump\" writes; beside it a small chip \"always at pH 7? at the top?\" fades in and is crossed (caption \"middle of the jump; pH 7 only for strong + strong\"). On \"twenty five point zero zero\" a vertical line drops from both midpoints to the x axis, label \"25.00 mL\" (grey tag \"titration video: titre counts moles\", dims). On \"concentration\" the line \"c(acid) = (0.100 mol/L × 0.02500 L) ÷ 0.02500 L = 0.100 mol/L\" writes (the crossed chip and the 25.00 mL tag dim first) under the graph and shrinks to a kept chip \"c(acid) = 0.100 mol/L\". Bright at the end: the 25.00 mL line, the equivalence chip and the kept chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "equivalence-ph-jump": [
+        "new",
+        "the inset stays.",
+        "Equivalence pH and the jump: Now read the pH at that volume.",
+        "seven / eight point seven two / four to ten / up",
+        "On the spoken cues: On \"seven\" the pale blue midpoint labels \"7.00\"; on \"eight point seven two\" the teal midpoint labels \"8.72\" (grey tag \"indicator video: the salt takes after its stronger parent\", dims). On \"four to ten\" a pale blue bracket spans the HCl jump, \"4 → 10\" (one drop each side); a teal bracket spans the ethanoic jump, \"7.4 → 10\". On \"up\" the scene 3 buffer bracket pulses once beneath the teal jump, tag \"buffer: shorter",
+        "explain",
+        "the inset stays. On \"seven\" the pale blue midpoint labels \"7.00\"; on \"eight point seven two\" the teal midpoint labels \"8.72\" (grey tag \"indicator video: the salt takes after its stronger parent\", dims). On \"four to ten\" a pale blue bracket spans the HCl jump, \"4 → 10\" (one drop each side); a teal bracket spans the ethanoic jump, \"7.4 → 10\". On \"up\" the scene 3 buffer bracket pulses once beneath the teal jump, tag \"buffer: shorter jump\" with a small grey tag \"at these concentrations\" (author note e); a chip \"bigger jump = faster reaction?\" fades in and is crossed (caption \"less buffering, not faster\"); the \"buffer: shorter jump\" and \"at these concentrations\" tags dim as it writes, and the crossed chip dims when its sentence ends. Bright at the end: the two equivalence labels and the two brackets (paired by colour, read as two items). Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "strong-acid-weak-base": [
+        "adjust",
+        "the board keeps the axes; the two earlier curves dim to thin lines.",
+        "Strong acid with a weak base: What about a strong acid titrated with a weak base, like hydrochloric acid with ammonia?",
+        "ammonia / lower / five point two eight / nine",
+        "On the spoken cues: `m5x-ammonia-bottle-v1.png` small at the top right; the x label changes to \"volume of 0.100 mol/L base added (mL)\" and a small key writes under it: \"pale blue, teal: NaOH | amber: NH₃\" (new correction 2: the base is named for each curve, so the dim NaOH curves are never read against an ammonia axis). On \"ammonia\" the amber curve draws point by point (author note a), with its direct label \"HCl + NH₃\". On \"lower\" a",
+        "explain",
+        "the board keeps the axes; the two earlier curves dim to thin lines. `m5x-ammonia-bottle-v1.png` small at the top right; the x label changes to \"volume of 0.100 mol/L base added (mL)\" and a small key writes under it: \"pale blue, teal: NaOH | amber: NH₃\" (new correction 2: the base is named for each curve, so the dim NaOH curves are never read against an ammonia axis). On \"ammonia\" the amber curve draws point by point (author note a), with its direct label \"HCl + NH₃\". On \"lower\" a bracket spans its jump \"4 → 6.6\"; on \"five point two eight\" its midpoint labels \"5.28\" with the chip \"NH₄Cl: acidic\". On \"nine\" a soft bracket covers its level stretch after 30 mL, labelled \"buffer: NH₃ + NH₄⁺\", and the dim NaOH curves' high end is visible above it for contrast. Bright at the end: the amber curve, the 5.28 label and the after-equivalence bracket. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "conductivity-strong": [
+        "adjust",
+        "the board clears.",
+        "Conductivity: hydrochloric acid: A conductivity meter tells the same story another way.",
+        "hydronium / sodium / rises",
+        "On the spoken cues: `m6-conductivity-meter-titration-v1.png` small at the right, its blank screen showing a coded readout. On \"pass a proton\" a short chain of pale blue water molecules plays the C01 hop down the line (a teal charge passes along), tag \"H₃O⁺ and OH⁻: best conductors\". The conductivity lineGraph draws centre (x \"volume of NaOH added (mL)\" 0 to 50, y \"conductivity (relative)\", no numbers). Beside it the ion tally shows a",
+        "explain",
+        "the board clears. `m6-conductivity-meter-titration-v1.png` small at the right, its blank screen showing a coded readout. On \"pass a proton\" a short chain of pale blue water molecules plays the C01 hop down the line (a teal charge passes along), tag \"H₃O⁺ and OH⁻: best conductors\". The conductivity lineGraph draws centre (x \"volume of NaOH added (mL)\" 0 to 50, y \"conductivity (relative)\", no numbers). Beside it the ion tally shows a large teal H₃O⁺ column and a small grey Cl⁻ column. On \"hydronium\" and \"sodium\" the dose counter runs: teal tokens swap one by one for small grey Na⁺ tokens and the pale blue line falls (author note g). On \"rises\" violet OH⁻ tokens add on top and the line climbs. On \"lowest point\" a ring sits on the minimum at 25.00 mL with a dashed line to the x axis, label \"equivalence: minimum\". Bright at the end: the V, its label and the ion tally. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "token flight",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "conductivity-weak": [
+        "new",
+        "the HCl V dims to a thin line on the same axes.",
+        "Conductivity: ethanoic acid: Ethanoic acid starts with few ions, so its conductivity starts low.",
+        "low / gently / steeply / bend",
+        "On the spoken cues: On \"low\" the teal line starts near the axis and the ion tally resets to a few tokens beside a lens thumbnail of mostly whole molecules. On \"gently\" small grey Na⁺ and grey-violet ethanoate tokens add as the teal line rises slowly. On \"steeply\" violet OH⁻ tokens add and the line climbs faster. On \"bend\" two short guide lines extend along the two slopes and a ring sits where the slope changes at 25.00 mL, label",
+        "explain",
+        "the HCl V dims to a thin line on the same axes. On \"low\" the teal line starts near the axis and the ion tally resets to a few tokens beside a lens thumbnail of mostly whole molecules. On \"gently\" small grey Na⁺ and grey-violet ethanoate tokens add as the teal line rises slowly. On \"steeply\" violet OH⁻ tokens add and the line climbs faster. On \"bend\" two short guide lines extend along the two slopes and a ring sits where the slope changes at 25.00 mL, label \"equivalence: change of slope\"; a small grey chip \"not a minimum\" sits beside it. Bright at the end: the teal line, the bend label and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "token flight",
+            "Cam lens zoom"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So here's what to remember.",
+        "At half-equivalence, pH equals p K a. / hydronium and hydroxide are the best conductors",
+        "On the spoken cues: The aid writes large and handwritten: \"At half-equivalence, pH = pKa.\" with the caliper icon folding a bracket in half. Condition tag in grey: \"weak acid curves\". On \"hydronium and hydroxide\" the second line writes: \"H₃O⁺ and OH⁻ are the best conductors.\" with a tiny thumbnail of the scene 8 V. Each earlier line dims slightly as the next writes.",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"At half-equivalence, pH = pKa.\" with the caliper icon folding a bracket in half. Condition tag in grey: \"weak acid curves\". On \"hydronium and hydroxide\" the second line writes: \"H₃O⁺ and OH⁻ are the best conductors.\" with a tiny thumbnail of the scene 8 V. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student titrates twenty point zero",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student titrated 20.00 mL of an acid, HA, with 0.1000 mol/L sodium hydroxide solution and plotted the titration curve shown. (a) Using two features of the curve, identify whether HA is a strong or a weak acid. (b) Calculate the concentration of HA. (c) Determine the Ka of HA.\" The coded curve beside it (author note h), grid lines every 5 mL and every pH unit, labelled dots at 0.0, 5.0, 10.0, 15.0, 20.0 and 25.0 mL. The full question and the curve stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no rings, no caliper, no aid.",
+        [
+            "ScribbleCircle",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card stays, shrunk to the top; the curve stays large.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "weak / twenty point zero / zero point one zero zero / two point seven times ten to the minus five / slip",
+        "On the spoken cues: On \"weak\" a soft bracket covers the buffer region and the 20.0 mL dot \"8.63\" is ringed; chip \"weak: buffer region; equivalence pH > 7\". On \"twenty point zero\" a ring sits on the jump's middle and a line drops to \"20.0 mL\". On \"zero point one zero zero\" \"20.00 mL\" and \"0.1000 mol/L\" are underlined and \"c(HA) = (0.1000 mol/L × 0.0200 L) ÷ 0.02000 L = 0.100 mol/L\" writes, with a small tag \"20.0 mL read from the graph →",
+        "explain",
+        "the question card stays, shrunk to the top; the curve stays large. On \"weak\" a soft bracket covers the buffer region and the 20.0 mL dot \"8.63\" is ringed; chip \"weak: buffer region; equivalence pH > 7\". On \"twenty point zero\" a ring sits on the jump's middle and a line drops to \"20.0 mL\". On \"zero point one zero zero\" \"20.00 mL\" and \"0.1000 mol/L\" are underlined and \"c(HA) = (0.1000 mol/L × 0.0200 L) ÷ 0.02000 L = 0.100 mol/L\" writes, with a small tag \"20.0 mL read from the graph → 3 s.f.\" (dims); then a grey tag \"a strong acid at 0.100 mol/L would start at pH 1.000, not 2.79\" (dims): the starting-pH check works once c is known. On \"two point seven\" the caliper folds 20.0 to 10.0 mL, reads \"4.57\", and \"Ka = 10⁻⁴·⁵⁷ = 2.7 × 10⁻⁵\" writes; answer chip \"weak; c = 0.100 mol/L; Ka = 2.7 × 10⁻⁵\". On \"slip\" a chip \"pKa = 8.63 (pH at equivalence)\" fades in and is crossed (caption \"pKa: at half the equivalence volume\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card: \"0.100 mol/L sodium hydroxide solution is added to 20.00 mL of hydrochloric acid, and the conductivity is measured.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Zero point one zero zero moles",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card: \"0.100 mol/L sodium hydroxide solution is added to 20.00 mL of hydrochloric acid, and the conductivity is measured. The conductivity falls to a minimum when 16.0 mL of sodium hydroxide has been added, then rises. (a) Explain the shape of the conductivity graph. (b) Calculate the concentration of the hydrochloric acid.\" The coded conductivity graph beside it (author note k). `m6-conductivity-meter-titration-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ion tally, no aid.",
+        [
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the question card stays.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "sodium / hydroxide / zero point zero eight zero zero / used up",
+        "On the spoken cues: On \"sodium\" \"falls to a minimum\" is underlined and the ion tally beside the graph swaps teal H₃O⁺ tokens for small grey Na⁺ tokens; the equation writes \"H₃O⁺(aq) + OH⁻(aq) → 2H₂O(l)\" with tag \"Na⁺, Cl⁻: spectators\". On \"hydroxide\" \"then rises\" is underlined and violet OH⁻ tokens add. On \"zero point zero eight zero zero\" \"16.0 mL\", \"0.100 mol/L\" and \"20.00 mL\" are underlined and \"c(HCl) = (0.100 mol/L × 0.0160 L) ÷",
+        "explain",
+        "the question card stays. On \"sodium\" \"falls to a minimum\" is underlined and the ion tally beside the graph swaps teal H₃O⁺ tokens for small grey Na⁺ tokens; the equation writes \"H₃O⁺(aq) + OH⁻(aq) → 2H₂O(l)\" with tag \"Na⁺, Cl⁻: spectators\". On \"hydroxide\" \"then rises\" is underlined and violet OH⁻ tokens add. On \"zero point zero eight zero zero\" \"16.0 mL\", \"0.100 mol/L\" and \"20.00 mL\" are underlined and \"c(HCl) = (0.100 mol/L × 0.0160 L) ÷ 0.02000 L = 0.0800 mol/L\" writes; answer chip \"c(HCl) = 0.0800 mol/L\". On \"used up\" a chip \"falls because ions are used up\" fades in and is crossed (caption \"same number of ions, slower ones\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "token flight"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the question card writes, each line lighting on its words: \"1 Starting pH: low → strong; higher → weak (same c).\"",
+        "Decision rule and handoff: For any titration curve: read the starting pH, look for a buffer region, find equivalence in the middle of the jump, read its volume and pH, and halve the volume for p K a.",
+        "Next",
+        "On the spoken cues: \"2 Buffer region before the jump → weak acid.\" \"3 Equivalence: middle of the jump; read volume and pH.\" \"4 Half the equivalence volume: pH = pKa.\" \"5 Conductivity: minimum (strong acid) or bend (weak acid).\" On \"Next\" a chip \"Next: back and conductivity titrations\" appears with a small `m6-conductivity-meter-titration-v1.png`.",
+        "explain",
+        "the question card writes, each line lighting on its words: \"1 Starting pH: low → strong; higher → weak (same c).\" \"2 Buffer region before the jump → weak acid.\" \"3 Equivalence: middle of the jump; read volume and pH.\" \"4 Half the equivalence volume: pH = pKa.\" \"5 Conductivity: minimum (strong acid) or bend (weak acid).\" On \"Next\" a chip \"Next: back and conductivity titrations\" appears with a small `m6-conductivity-meter-titration-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+SKILLS03_ROWS = {
+    "hook": [
+        "new",
+        "Twelve small report tiles in a 6 x 2 grid (as s01's hook), labelled \"Biology 2020\" to \"Biology 2025\" and \"Chemistry 2020\" to \"Chemistry 2025\".",
+        "Hook: Here's a habit NESA's marking feedback keeps flagging.",
+        "two separate descriptions / three to six marks / pairs",
+        "On the spoken cues: On \"eight of the last twelve\" eight tiles take a red `Flag` in turn: Biology 2020, 2022, 2023, 2024, 2025; Chemistry 2021, 2022, 2023. The other four stay plain. `GreyTag`: \"NESA marking feedback, 2020 to 2025: 8 of 12 reports\". On \"two separate descriptions\" the tiles shrink up and a ruled answer box draws. Two blocks of `DrawSquiggle` handwriting fill it, one labelled \"all about A\", then a gap, then \"all about B\".",
+        "explain",
+        "Twelve small report tiles in a 6 x 2 grid (as s01's hook), labelled \"Biology 2020\" to \"Biology 2025\" and \"Chemistry 2020\" to \"Chemistry 2025\". On \"eight of the last twelve\" eight tiles take a red `Flag` in turn: Biology 2020, 2022, 2023, 2024, 2025; Chemistry 2021, 2022, 2023. The other four stay plain. `GreyTag`: \"NESA marking feedback, 2020 to 2025: 8 of 12 reports\". On \"two separate descriptions\" the tiles shrink up and a ruled answer box draws. Two blocks of `DrawSquiggle` handwriting fill it, one labelled \"all about A\", then a gap, then \"all about B\". A grey question chip \"where's the comparison?\" hangs in the gap. On \"three to six marks\" a small chip strip writes at the right: \"compare: 7 question parts, all Biology, 3 to 6 marks\". `GreyTag`: \"NESA glossary key words only; HSC Chemistry and Biology papers, Section II, 2021 to 2025, counted by question part\". On \"pairs\" the two squiggle blocks slide side by side into two columns and three amber `PairLines` join them row by row. The heading writes on: \"Compare, contrast, distinguish\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "three-verbs": [
+        "new",
+        "Three cards build left to right, each on its cue, each with a small two-column icon: \"compare: similarities or differences\" (icon: two columns joined by an \"=\" link and a \"≠\" link); \"contrast: differences or opposites\" (icon: \"≠\" link only); \"distinguish: how things differ\" (icon: \"≠\" link only).",
+        "Three-verbs: Here's what NESA's glossary says, in short.",
+        "Compare / Contrast / Distinguish / one similarity and one difference",
+        "On the spoken cues: `GreyTag` under the cards: \"NESA glossary, paraphrased\". On \"one similarity and one difference\" the compare card lifts and a chip writes under it: \"tip: at least one similarity + one difference\". A small grey label \"HSCScience tip\" sits beside it, so the tip is not read as the glossary. On \"seven times\" small count chips sit under the cards: \"7\" under compare, \"0\" under contrast and \"0\" under distinguish, with the",
+        "explain",
+        "Three cards build left to right, each on its cue, each with a small two-column icon: \"compare: similarities or differences\" (icon: two columns joined by an \"=\" link and a \"≠\" link); \"contrast: differences or opposites\" (icon: \"≠\" link only); \"distinguish: how things differ\" (icon: \"≠\" link only). `GreyTag` under the cards: \"NESA glossary, paraphrased\". On \"one similarity and one difference\" the compare card lifts and a chip writes under it: \"tip: at least one similarity + one difference\". A small grey label \"HSCScience tip\" sits beside it, so the tip is not read as the glossary. On \"seven times\" small count chips sit under the cards: \"7\" under compare, \"0\" under contrast and \"0\" under distinguish, with the grey tag \"Chemistry and Biology, Section II, 2021 to 2025\". The cards dim to make room. On \"know them\" the contrast and distinguish cards brighten briefly. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "question-card": [
+        "adjust",
+        "`QuestionCard` writes on.",
+        "Question-card: Here's an HSC-style Biology question.",
+        "every / pink / roan / compare",
+        "On the spoken cues: Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Card text: \"Two crosses were carried out. All the parents were true-breeding.\" A small table (`QTable`): \"Organism | Parents crossed | Offspring\"; \"snapdragon | red flowers x white flowers | all pink flowers\"; \"cattle | red coat x white coat | all roan (a mixture of red hairs and white hairs)\". \"Compare the inheritance of flower colour in the",
+        "explain",
+        "`QuestionCard` writes on. Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Card text: \"Two crosses were carried out. All the parents were true-breeding.\" A small table (`QTable`): \"Organism | Parents crossed | Offspring\"; \"snapdragon | red flowers x white flowers | all pink flowers\"; \"cattle | red coat x white coat | all roan (a mixture of red hairs and white hairs)\". \"Compare the inheritance of flower colour in the snapdragons with the inheritance of coat colour in the cattle.\" \"(3 marks)\" Plates small in the side column, two rows: `m5x-snapdragon-red-v1.png` x `m5x-snapdragon-white-v1.png` with an arrow to `m5x-snapdragon-pink-v1.png`; `m5x-cattle-red-v1.png` x `m5x-cattle-white-v1.png` with an arrow to `m5x-cattle-roan-v1.png`. Each offspring plate lands on its cue (\"pink\", \"roan\"). Word tags only; no people. On \"Chemistry\" a grey tag: \"Chemistry students: watch the shape of the answer\". Empty eight-line `AnswerBox` below, counter \"0 / 3\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "table build",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "read-it": [
+        "new",
+        "`RoutineStrip` mini at the far left; each row lights on its cue.",
+        "Read-it: Run the routine first.",
+        "compare / three paired points / True-breeding / Pink / red and white hairs",
+        "On the spoken cues: Annotations on the card (`Ann`): verb: amber highlighter on \"Compare\"; marks: ring on \"(3 marks)\", lifting to a `MarksBadge` \"3\" parked by the counter; given: underlines on \"true-breeding\", \"all pink flowers\" and \"a mixture of red hairs and white hairs\". On \"three paired points\" three dotted slots appear in the answer box, each split into a left half and a right half joined by a faint dashed pair line. On",
+        "explain",
+        "`RoutineStrip` mini at the far left; each row lights on its cue. Annotations on the card (`Ann`): verb: amber highlighter on \"Compare\"; marks: ring on \"(3 marks)\", lifting to a `MarksBadge` \"3\" parked by the counter; given: underlines on \"true-breeding\", \"all pink flowers\" and \"a mixture of red hairs and white hairs\". On \"three paired points\" three dotted slots appear in the answer box, each split into a left half and a right half joined by a faint dashed pair line. On \"true-breeding\" a chip hangs off the underline: \"true-breeding → each parent homozygous; parents differ → offspring heterozygous\". On \"side by side\" the two offspring plates (pink snapdragon, roan calf) slide to sit next to each other at the top of the side column. On \"no constraint phrase\" the strip's row 4 shows its grey \"none here\" tag (`none`). The card then shrinks to about 0.72 and keeps its annotations (as s02).",
+        [
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "Mark underline",
+            "Mark highlight",
+            "NumberTicker"
+        ],
+        "Settle about 1 second"
+    ],
+    "pair-table": [
+        "new",
+        "`PairTable` draws in the side column (the plates shrink to small column headers): header row \"feature | snapdragons | cattle\".",
+        "Pair-table: Here's the trick.",
+        "feature / both parents / in between / both",
+        "On the spoken cues: On \"feature\" the left column header glows; a grey tag \"one row per feature\". Row 1 writes: \"offspring genotype | heterozygous | heterozygous\". Row 2 writes: \"offspring against parents | different from both parents | different from both parents\". On \"both parents\" a tiny \"≠ red, ≠ white\" mark appears in each cell. Row 3 writes: \"how the alleles show | in between (pink) | both colours, separate hairs\". On \"in between\"",
+        "explain",
+        "`PairTable` draws in the side column (the plates shrink to small column headers): header row \"feature | snapdragons | cattle\". On \"feature\" the left column header glows; a grey tag \"one row per feature\". Row 1 writes: \"offspring genotype | heterozygous | heterozygous\". Row 2 writes: \"offspring against parents | different from both parents | different from both parents\". On \"both parents\" a tiny \"≠ red, ≠ white\" mark appears in each cell. Row 3 writes: \"how the alleles show | in between (pink) | both colours, separate hairs\". On \"in between\" and \"both\" the `HairZoom` circles open briefly beside the table: an even pink wash over a petal (tag \"pink: every cell in between\") and separate red and white hair strokes over the roan flank (tag \"roan: each hair one colour\"). They close at the end of the sentence. On \"lines up one feature\" each row gets a horizontal amber `PairLines` link from the snapdragon cell to the cattle cell. Rows 1 and 2 carry a small \"=\" chip; row 3 carries \"≠\". At most three rows live; the header and tags dim as row 3 writes.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Settle about 1 second"
+    ],
+    "table-to-sentence": [
+        "new",
+        "For each row, a `PenArrow` runs from the table row to its answer slot, and the row dims as its sentence writes.",
+        "Table-to-sentence: Now turn each row into one sentence, with a comparison word.",
+        "in both / both / whereas",
+        "On the spoken cues: Answer rows (`ARow`), each ticked as spoken: \"In both crosses the offspring are heterozygous, because each true-breeding parent passes on a different allele.\" Tick, \"1 / 3\". \"Both heterozygotes look unlike either parent, so neither allele completely masks the other.\" Tick, \"2 / 3\". \"Snapdragons show incomplete dominance (an intermediate pink), whereas cattle show co-dominance (both colours fully expressed, in",
+        "explain",
+        "For each row, a `PenArrow` runs from the table row to its answer slot, and the row dims as its sentence writes. Answer rows (`ARow`), each ticked as spoken: \"In both crosses the offspring are heterozygous, because each true-breeding parent passes on a different allele.\" Tick, \"1 / 3\". \"Both heterozygotes look unlike either parent, so neither allele completely masks the other.\" Tick, \"2 / 3\". \"Snapdragons show incomplete dominance (an intermediate pink), whereas cattle show co-dominance (both colours fully expressed, in separate hairs).\" Tick, \"3 / 3\". On \"in both\", \"both\" and \"whereas\" the comparison word in its row takes an amber ring (`AAnn` ring). On \"whereas\" a pair line joins \"incomplete dominance (an intermediate pink)\" to \"co-dominance (both colours fully expressed ...)\" within row 3. The counter label \"HSCScience marking guide (illustrative)\" shows under the counter. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "tick",
+            "table build",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "comparison-words": [
+        "new",
+        "The answer box shrinks right.",
+        "Comparison-words: These little words do the comparing for you.",
+        "both / whereas / colour with hair",
+        "On the spoken cues: Two word trays build at the left, each on its cue: \"similarity: both · in both · similarly\" (green-edged); \"difference: whereas · while · but · unlike · larger than, slower than\" (amber-edged). On \"mismatched pair\" the trays dim and a chip writes: \"Snapdragons are pink, whereas cattle have hair.\" Its \"whereas\" rings amber (it looks right). On \"colour with hair\" two pen underlines mark \"pink\" (labelled \"colour\") and",
+        "explain",
+        "The answer box shrinks right. Two word trays build at the left, each on its cue: \"similarity: both · in both · similarly\" (green-edged); \"difference: whereas · while · but · unlike · larger than, slower than\" (amber-edged). On \"mismatched pair\" the trays dim and a chip writes: \"Snapdragons are pink, whereas cattle have hair.\" Its \"whereas\" rings amber (it looks right). On \"colour with hair\" two pen underlines mark \"pink\" (labelled \"colour\") and \"have hair\" (labelled \"coat type\"), joined by a red dashed pair line with a red \"≠ feature\" tag. The chip takes a red scribble cross. Memory aid writes large and handwritten: \"Same feature, both sides, one sentence.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "weak-vs-strong": [
+        "new",
+        "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"3 / 3\"); the weak answer writes on at the left as \"Answer A\".",
+        "Weak-vs-strong: Now here's a weaker answer.",
+        "two descriptions / one / pairing",
+        "On the spoken cues: On \"Every word is right\" a grey tag \"correct biology\" writes beside Answer A. On \"two descriptions\" Answer A's two sentences pull apart into two separate blocks with a gap, and no pair lines appear. Answer B's three rows show their amber pair lines for contrast. On \"no similarity\" a dashed empty slot appears under Answer A: \"similarity?\". A second slot: \"the difference, said in one sentence?\". On \"one\" one tick",
+        "explain",
+        "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"3 / 3\"); the weak answer writes on at the left as \"Answer A\". On \"Every word is right\" a grey tag \"correct biology\" writes beside Answer A. On \"two descriptions\" Answer A's two sentences pull apart into two separate blocks with a gap, and no pair lines appear. Answer B's three rows show their amber pair lines for contrast. On \"no similarity\" a dashed empty slot appears under Answer A: \"similarity?\". A second slot: \"the difference, said in one sentence?\". On \"one\" one tick lands beside \"Cattle show co-dominance\". Counter \"1 / 3\". Grey label \"HSCScience marking guide (illustrative)\". `LostMarksTag`: \"-2: no similarity; the difference is never stated as a pair\". On \"pairing\" Answer A's two blocks slide together and dashed pair lines try to join them: \"incomplete dominance ↔ co-dominance\" and \"pink ↔ red and white hairs\", showing what was missing. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "tick",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "what-guidelines-show": [
+        "new",
+        "A coded two-line answer frame writes (no NESA words): \"A similarity is that both ... .\" / \"A difference is that ... , whereas ... .\"",
+        "What-guidelines-show: NESA's marking guidelines point the same way.",
+        "two sentences / all / complete pairing",
+        "On the spoken cues: The blanks are `DrawSquiggle` lines. `GreyTag`: \"a NESA Biology sample answer, 2025: its form only\". On \"all\" a small coded three-row table appears with three green ticks and a bar \"all features compared: 3\"; on \"most\" one tick fades and the bar reads \"most features compared: 2\". `GreyTag`: \"a NESA Biology marking guideline, 2024\". The sample-answer frame dims while the bar is live. On \"complete pairing\" the s03",
+        "explain",
+        "A coded two-line answer frame writes (no NESA words): \"A similarity is that both ... .\" / \"A difference is that ... , whereas ... .\" The blanks are `DrawSquiggle` lines. `GreyTag`: \"a NESA Biology sample answer, 2025: its form only\". On \"all\" a small coded three-row table appears with three green ticks and a bar \"all features compared: 3\"; on \"most\" one tick fades and the bar reads \"most features compared: 2\". `GreyTag`: \"a NESA Biology marking guideline, 2024\". The sample-answer frame dims while the bar is live. On \"complete pairing\" the s03 pair table returns small, every row joined by its pair line and ticked; a list of loose, unpaired chips beside it stays unticked. One item at a time: the sample-answer frame collapses to its grey tag before the all/most bar draws, and the bar clears before the pair table returns. Footer tag: \"NESA's criteria are set question by question\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-1": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Do the one in your subject,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text: \"Two acid solutions, each with a concentration of 0.10 mol L-1, were tested at 25 °C.\" Table: \"Test | Hydrochloric acid, HCl(aq) | Ethanoic acid, CH3COOH(aq)\"; \"Electrical conductivity | high | low\"; \"Reaction with magnesium ribbon | rapid bubbling | slow bubbling\"; \"Volume of 0.10 mol L-1 NaOH(aq) needed to neutralise 20.0 mL of the acid | 20.0 mL | 20.0 mL\". \"Using the data, compare the two acid solutions in terms of acid strength.\" \"(3 marks)\" Two `m6-beaker-v1.png` plates small at the right with coded labels \"HCl, 0.10 mol L-1\" and \"CH3COOH, 0.10 mol L-1\". No bubbles, no meters: nothing answer-bearing. Empty answer box, counter \"0 / 3\". No annotations: students annotate. `DrillCountdown` 10 seconds with \"Pause here to answer.\" `RoutineStrip` dims.",
+        [
+            "HandText write-on",
+            "table build",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "Annotations land fast (`Ann`): highlighter on \"compare\", ring on \"(3 marks)\", teal brackets on \"Using the data\" and on \"in terms of acid strength\", underlines on the three table rows.",
+        "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "twenty millilitres / fully / conducts",
+        "On the spoken cues: Rows write and tick: \"Similarity: both need 20.0 mL of NaOH: same concentration, both monoprotic, so the same moles of acid. The weak acid keeps ionising as OH- reacts.\" (1 / 3) \"Difference: HCl is strong, fully ionised, whereas CH3COOH is weak, about 1% ionised, so [H3O+] is much higher in HCl.\" (2 / 3) \"So HCl conducts better and bubbles faster with Mg, whereas CH3COOH conducts poorly and bubbles slowly.\" (3 / 3)",
+        "explain",
+        "Annotations land fast (`Ann`): highlighter on \"compare\", ring on \"(3 marks)\", teal brackets on \"Using the data\" and on \"in terms of acid strength\", underlines on the three table rows. Rows write and tick: \"Similarity: both need 20.0 mL of NaOH: same concentration, both monoprotic, so the same moles of acid. The weak acid keeps ionising as OH- reacts.\" (1 / 3) \"Difference: HCl is strong, fully ionised, whereas CH3COOH is weak, about 1% ionised, so [H3O+] is much higher in HCl.\" (2 / 3) \"So HCl conducts better and bubbles faster with Mg, whereas CH3COOH conducts poorly and bubbles slowly.\" (3 / 3) Screen load: the drill table rows dim once their line has used them, so the live items are the current line, its pen arrow and its table row. `PenArrow`s run from each table row to the line that uses it. Amber pair lines join \"HCl ...\" and \"CH3COOH ...\" in rows 2 and 3; row 1 rings \"both\". On \"one acid, then the other\" a `CrossedHabit` chip: \"HCl is a strong acid that reacts quickly. Ethanoic acid is a weak acid that reacts slowly.\" takes a red scribble cross. Caption \"two descriptions: where's the similarity?\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-2": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Now Biology. The diagram shows one pair of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\". Card text: \"The diagram shows one pair of chromosomes in a body cell after DNA replication.\" The plate `b5x-chromosome-pair-v1.png` (pink and teal duplicated chromosomes, matching bands) sits in the card's diagram slot, unstretched. Two coded label brackets: a wide bracket over both chromosomes, \"homologous chromosomes\"; a small bracket over the two chromatids of the pink chromosome, \"sister chromatids\". \"Distinguish between homologous chromosomes and sister chromatids.\" \"(2 marks)\" Empty answer box, counter \"0 / 2\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing: no \"from mother\" or \"from father\" tags, no allele letters.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "Annotations land fast: highlighter on \"Distinguish\", ring on \"(2 marks)\", underlines on \"after DNA replication\".",
+        "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "parent / one / different alleles",
+        "On the spoken cues: Rows write and tick: \"Homologous chromosomes are a pair, one inherited from each parent, whereas sister chromatids are two identical copies of one chromosome, made by DNA replication and joined at the centromere.\" (1 / 2) \"Homologous chromosomes carry the same genes at the same loci but may carry different alleles, whereas sister chromatids carry the same alleles.\" (2 / 2) On \"parent\" small word tags appear on the",
+        "explain",
+        "Annotations land fast: highlighter on \"Distinguish\", ring on \"(2 marks)\", underlines on \"after DNA replication\". Rows write and tick: \"Homologous chromosomes are a pair, one inherited from each parent, whereas sister chromatids are two identical copies of one chromosome, made by DNA replication and joined at the centromere.\" (1 / 2) \"Homologous chromosomes carry the same genes at the same loci but may carry different alleles, whereas sister chromatids carry the same alleles.\" (2 / 2) On \"parent\" small word tags appear on the plate: \"from one parent\" on the pink chromosome and \"from the other parent\" on the teal one. On \"one\" the pink chromosome's two chromatids pulse together. On \"different alleles\" coded allele letters appear at one matching band on each chromatid: \"A\" and \"A\" on the pink chromatids, \"a\" and \"a\" on the teal ones (letters only, aligned loci; HSC style). Pair lines join the \"homologous ...\" and \"sister chromatids ...\" clauses in each row. On \"two quick definitions\" a `CrossedHabit` chip: \"Homologous chromosomes are a pair of chromosomes. Sister chromatids are copies of a chromosome.\" takes a red scribble cross. Caption \"two definitions: differ in what?\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "The three verb cards from scene 2 return as the decision board, each lighting on its cue: \"compare → similarities and differences, in pairs\"; \"contrast, distinguish → differences only, still in pairs\".",
+        "Decision-rule: So: compare, give similarities and differences, in pairs.",
+        "compare / Contrast / distinguish / Next",
+        "On the spoken cues: On \"Sketch the table\" the pair table returns small with an arrow to three sentence lines, each with \"both\" or \"whereas\" ringed. On \"Next\" a chip slides in: \"Next: analyse, assess, evaluate, justify\". A small balance-scale doodle sits beside it.",
+        "explain",
+        "The three verb cards from scene 2 return as the decision board, each lighting on its cue: \"compare → similarities and differences, in pairs\"; \"contrast, distinguish → differences only, still in pairs\". On \"Sketch the table\" the pair table returns small with an arrow to three sentence lines, each with \"both\" or \"whereas\" ringed. On \"Next\" a chip slides in: \"Next: analyse, assess, evaluate, justify\". A small balance-scale doodle sits beside it. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 50 seconds with pause invitation"
+    ]
+}
+
+SKILLS04_ROWS = {
+    "hook": [
+        "new",
+        "Seventeen small tiles build in a row, each a coded question-part chip with its mark value (\"7\", \"8\" or \"9\") and a code (\"C24 Q38\" style, grey, small).",
+        "Hook: Look at the biggest question parts in the last five years of HSC Chemistry and Biology papers, the ones worth seven marks or more.",
+        "seven marks or more / ten / judgement",
+        "On the spoken cues: On \"seven marks or more\" they settle. On \"ten\" ten tiles light amber in turn, each gaining its verb (justify, evaluate or analyse); the other seven stay grey (explain, calculate, predict, discuss). Tag: \"10 of 17\". `GreyTag`: \"question parts worth 7+ marks with a NESA glossary key word; HSC Chemistry and Biology, Section II, 2021 to 2025\". Beneath, four small count chips: \"justify 23\", \"evaluate 11\", \"analyse 4\",",
+        "explain",
+        "Seventeen small tiles build in a row, each a coded question-part chip with its mark value (\"7\", \"8\" or \"9\") and a code (\"C24 Q38\" style, grey, small). On \"seven marks or more\" they settle. On \"ten\" ten tiles light amber in turn, each gaining its verb (justify, evaluate or analyse); the other seven stay grey (explain, calculate, predict, discuss). Tag: \"10 of 17\". `GreyTag`: \"question parts worth 7+ marks with a NESA glossary key word; HSC Chemistry and Biology, Section II, 2021 to 2025\". Beneath, four small count chips: \"justify 23\", \"evaluate 11\", \"analyse 4\", \"assess 1\". On \"judgement\" the tiles shrink up and twelve report tiles take their place (6 x 2, as s01); seven take a red `Flag`: Biology 2021, 2022, 2023, 2025; Chemistry 2020, 2022, 2023. `GreyTag`: \"NESA marking feedback, 2020 to 2025: 7 of 12 reports\". On \"back it up\" a verdict chip \"Verdict\" writes, and three thin support lines draw under it like legs. The heading writes on: \"Analyse, assess, evaluate, justify\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "four-verbs": [
+        "new",
+        "Four cards build, two by two, each on its cue, with a small icon: \"analyse: break into parts, connect them, work out implications\" (icon: a shape splitting into three linked pieces); \"assess: judge value, quality, outcomes, results or size\" (icon: a dial); \"evaluate: judge against criteria, or determine value\" (icon: a ruler beside a tick); \"justify: give support for an argument or conclusion\" (icon: a claim chip with two struts under it).",
+        "Four-verbs: Here's what NESA's glossary says, in short.",
+        "Analyse / Assess / Evaluate / Justify / judgement / reasons",
+        "On the spoken cues: `GreyTag`: \"NESA glossary, paraphrased\". On \"judgement\" a small amber balance-scale doodle stamps on the assess, evaluate and justify cards. On \"reasons\" all four cards gain a thin \"because ...\" line at the bottom. The analyse card dims slightly; the scene moves on.",
+        "explain",
+        "Four cards build, two by two, each on its cue, with a small icon: \"analyse: break into parts, connect them, work out implications\" (icon: a shape splitting into three linked pieces); \"assess: judge value, quality, outcomes, results or size\" (icon: a dial); \"evaluate: judge against criteria, or determine value\" (icon: a ruler beside a tick); \"justify: give support for an argument or conclusion\" (icon: a claim chip with two struts under it). `GreyTag`: \"NESA glossary, paraphrased\". On \"judgement\" a small amber balance-scale doodle stamps on the assess, evaluate and justify cards. On \"reasons\" all four cards gain a thin \"because ...\" line at the bottom. The analyse card dims slightly; the scene moves on. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "tick"
+        ],
+        "Hold about 1 second"
+    ],
+    "question-card": [
+        "new",
+        "`QuestionCard` writes on.",
+        "Question-card: Here's an HSC-style Chemistry question.",
+        "powder / solution / evaluate",
+        "On the spoken cues: Badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Card text: \"About 50 mL of 1 mol L-1 hydrochloric acid has been spilled on a laboratory bench. Two substances are available to neutralise it.\" Table (`QTable`): \"Property | Calcium carbonate powder, CaCO3(s) | Sodium hydroxide solution, 1 mol L-1 NaOH(aq)\"; \"Hazard | low | corrosive to skin and eyes\"; \"Solubility in water | insoluble | soluble\";",
+        "explain",
+        "`QuestionCard` writes on. Badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Card text: \"About 50 mL of 1 mol L-1 hydrochloric acid has been spilled on a laboratory bench. Two substances are available to neutralise it.\" Table (`QTable`): \"Property | Calcium carbonate powder, CaCO3(s) | Sodium hydroxide solution, 1 mol L-1 NaOH(aq)\"; \"Hazard | low | corrosive to skin and eyes\"; \"Solubility in water | insoluble | soluble\"; \"pH of the mixture if too much is added | about 8 | above 12\"; \"What is seen during neutralisation | fizzing, which stops when the acid is used up | no visible change\"; \"Speed of neutralisation | slower | fast\". \"Evaluate the use of calcium carbonate, rather than sodium hydroxide solution, to neutralise this spill.\" \"(4 marks)\" A coded bench edge with a small clear puddle sits at the card's right (tag \"HCl spill\"). No plates yet. On \"table compares them\" each table row pulses once, top to bottom. Empty eight-line `AnswerBox` below, counter \"0 / 4\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "table build",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "read-it": [
+        "new",
+        "`RoutineStrip` mini at the far left; rows light on their cues.",
+        "Read-it: Run the routine.",
+        "evaluate / rather than sodium hydroxide / evidence",
+        "On the spoken cues: Annotations (`Ann`): highlighter on \"Evaluate\"; ring on \"(4 marks)\" lifting to a `MarksBadge` \"4\"; teal brackets on \"rather than sodium hydroxide solution\"; on \"evidence\", pen underlines on the five row labels in turn (\"Hazard\", \"Solubility in water\", \"pH of the mixture if too much is added\", \"What is seen\", \"Speed\"). On \"evaluate\" a small chip under the highlighter: \"evaluate → judge against criteria, then decide\".",
+        "explain",
+        "`RoutineStrip` mini at the far left; rows light on their cues. Annotations (`Ann`): highlighter on \"Evaluate\"; ring on \"(4 marks)\" lifting to a `MarksBadge` \"4\"; teal brackets on \"rather than sodium hydroxide solution\"; on \"evidence\", pen underlines on the five row labels in turn (\"Hazard\", \"Solubility in water\", \"pH of the mixture if too much is added\", \"What is seen\", \"Speed\"). On \"evaluate\" a small chip under the highlighter: \"evaluate → judge against criteria, then decide\". On \"rather than\" a two-pan outline (the empty `BalanceBeam`) draws in the side column with pan labels \"CaCO3\" and \"NaOH\". On \"copy them\" a ghost answer line \"CaCO3 is low hazard, insoluble, pH 8, fizzes, slower.\" writes in grey and takes a grey tag \"copied, not used\", then fades. The card then shrinks to about 0.72 and keeps its annotations.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath"
+        ],
+        "Settle about 1 second"
+    ],
+    "three-parts": [
+        "new",
+        "`VerdictStrip` builds full size in the side column, each row on its cue: \"Verdict: how good? how suitable?\"",
+        "Three-parts: An assess or evaluate answer needs three parts.",
+        "verdict / Criteria / evidence",
+        "On the spoken cues: (balance icon, amber); \"Criteria: judged by what?\" (ruler icon, teal). On \"safety, what an excess does, and knowing when to stop\" three teal criterion chips drop under it: \"safety\", \"if too much is added\", \"knowing when to stop\"; \"Evidence: shown by which details?\" (magnifier icon, ink). On \"evidence\" thin pen arrows run from the three criterion chips to their table rows on the card (hazard; solubility and pH; what",
+        "explain",
+        "`VerdictStrip` builds full size in the side column, each row on its cue: \"Verdict: how good? how suitable?\" (balance icon, amber); \"Criteria: judged by what?\" (ruler icon, teal). On \"safety, what an excess does, and knowing when to stop\" three teal criterion chips drop under it: \"safety\", \"if too much is added\", \"knowing when to stop\"; \"Evidence: shown by which details?\" (magnifier icon, ink). On \"evidence\" thin pen arrows run from the three criterion chips to their table rows on the card (hazard; solubility and pH; what is seen). On \"safety\" a small grey tag: \"Chemistry: as in M6 C04, choosing a base\". Memory aid writes large and handwritten under the strip: \"No verdict without a reason, no reason without evidence.\" The strip then shrinks to a corner tab in the side column; the criterion chips stay small.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Settle about 1 second"
+    ],
+    "build-1": [
+        "new",
+        "Answer rows write, each with a `RoleTag` in the margin: \"Calcium carbonate is the more suitable choice for neutralising this spill.\"",
+        "Build-1 (verdict and two criteria): Start with the verdict, so the marker knows where you're going: calcium carbonate is the more suitable choice.",
+        "more suitable / corrosive / eight / twelve",
+        "On the spoken cues: Tag \"verdict\". No tick yet: a small dashed slot in the margin reads \"ticked once supported\". \"Safety: CaCO3 is low hazard, whereas NaOH solution is corrosive to skin and eyes, so CaCO3 is safer to handle during the clean-up.\" Tag \"criterion + evidence\". Tick, \"1 / 4\". On \"corrosive\" a pen arrow from the table's hazard row to the line. \"Excess: CaCO3 is insoluble, so any excess stays as a solid and the mixture stays",
+        "explain",
+        "Answer rows write, each with a `RoleTag` in the margin: \"Calcium carbonate is the more suitable choice for neutralising this spill.\" Tag \"verdict\". No tick yet: a small dashed slot in the margin reads \"ticked once supported\". \"Safety: CaCO3 is low hazard, whereas NaOH solution is corrosive to skin and eyes, so CaCO3 is safer to handle during the clean-up.\" Tag \"criterion + evidence\". Tick, \"1 / 4\". On \"corrosive\" a pen arrow from the table's hazard row to the line. \"Excess: CaCO3 is insoluble, so any excess stays as a solid and the mixture stays near pH 8; excess NaOH would leave a strongly basic, corrosive solution above pH 12.\" Tag \"criterion + evidence\". Tick, \"2 / 4\". On \"eight\" and \"twelve\" the pH values in the table ring. The `BalanceBeam` gains a weight on the CaCO3 pan per criterion (\"safer\", \"excess stays solid\"), tipping towards CaCO3. At most three bright items: the current row, its tag and its table ring; earlier rows dim slightly. On the card, only the table row in use stays bright; the other four rows sit dimmed through scenes 6 and 7.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick",
+            "DrawPath",
+            "table build"
+        ],
+        "Settle about 1 second"
+    ],
+    "build-2": [
+        "adjust",
+        "`m6-marble-chips-acid-v1.png` fades in small beside the card on \"fizzes\" (calcium carbonate fizzing in acid; tag \"CaCO3 + acid: CO2 bubbles\"), then fades.",
+        "Build-2 (weigh, then close the loop): Criterion three, knowing when to stop.",
+        "fizzes / slower / matter more",
+        "On the spoken cues: Rows write, each with a `RoleTag`: \"Endpoint: CaCO3 fizzes (CO2) as it reacts, and the fizzing stops when the acid is used up, showing when neutralisation is complete; NaOH gives no visible sign, so it is easy to add too much.\" Tag \"criterion + evidence\". Tick, \"3 / 4\". \"Limitation: CaCO3 neutralises more slowly and releases CO2 gas, but for a 50 mL spill the CO2 released is small, so these matter less than safety",
+        "explain",
+        "`m6-marble-chips-acid-v1.png` fades in small beside the card on \"fizzes\" (calcium carbonate fizzing in acid; tag \"CaCO3 + acid: CO2 bubbles\"), then fades. Rows write, each with a `RoleTag`: \"Endpoint: CaCO3 fizzes (CO2) as it reacts, and the fizzing stops when the acid is used up, showing when neutralisation is complete; NaOH gives no visible sign, so it is easy to add too much.\" Tag \"criterion + evidence\". Tick, \"3 / 4\". \"Limitation: CaCO3 neutralises more slowly and releases CO2 gas, but for a 50 mL spill the CO2 released is small, so these matter less than safety and control, and CaCO3 is the better choice.\" Tags \"limitation\" (grey) then \"verdict\" (amber). Tick, \"4 / 4\". The margin slot beside the first row fills with a tick-link arrow to this row: \"verdict supported\". On \"slower\" a grey weight drops on the NaOH pan (\"faster\"); the beam tilts back a little. On \"matter more\" the beam settles clearly towards CaCO3. On \"close the loop\" a pen arrow curves from the last row up to the first row's verdict. The equation strip \"CaCO3(s) + 2HCl(aq) → CaCl2(aq) + H2O(l) + CO2(g)\" writes small under the box (grey tag \"the fizzing\"). Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "weak-vs-strong": [
+        "new",
+        "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"4 / 4\" and its role tags); the weak answer writes on at the left as \"Answer A\".",
+        "Weak-vs-strong: Now here's a weaker answer.",
+        "verdict / table / one / earning",
+        "On the spoken cues: On \"verdict\" Answer A's \"Calcium carbonate is better\" takes an amber \"verdict\" role tag. On \"because\" the word rings amber (callback to s02: a because is not enough). On \"table\" the card's table rows pulse, and a dashed empty slot appears under Answer A: \"evidence from the table?\". On \"why that matters\" a second slot: \"why does weak base matter here?\". A third: \"any limitation weighed?\". On \"one\" one tick lands",
+        "explain",
+        "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"4 / 4\" and its role tags); the weak answer writes on at the left as \"Answer A\". On \"verdict\" Answer A's \"Calcium carbonate is better\" takes an amber \"verdict\" role tag. On \"because\" the word rings amber (callback to s02: a because is not enough). On \"table\" the card's table rows pulse, and a dashed empty slot appears under Answer A: \"evidence from the table?\". On \"why that matters\" a second slot: \"why does weak base matter here?\". A third: \"any limitation weighed?\". On \"one\" one tick lands beside \"Calcium carbonate is better than sodium hydroxide\". Counter \"1 / 4\". Grey label \"HSCScience marking guide (illustrative)\". `LostMarksTag`: \"-3: criteria not shown with evidence; no limitation weighed\". On \"earning\" the side column's `BalanceBeam` returns small for Answer A with empty pans; it does not tip. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick",
+            "table build",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "no-reasons": [
+        "new",
+        "`BandLadder` builds at the left: rungs \"6\", \"5\", \"4\", \"2 to 3\", \"1\", each with a short chip.",
+        "No-reasons: NESA's marking guidelines show both halves matter.",
+        "informed / evaluating / own",
+        "On the spoken cues: On \"six-mark\" the rungs draw; on \"informed\" the top chips light: 6: \"extensive evaluation, detailed analysis of the stimulus · well-informed judgement\"; 5: \"thorough evaluation, analysis of the data · informed judgement\"; 4: \"evaluation with reference to the data · a judgement\". The word \"judgement\" in rungs 6, 5 and 4 takes an amber underline. On \"first appears at four marks\" a bracket marks rungs 4 to 6:",
+        "explain",
+        "`BandLadder` builds at the left: rungs \"6\", \"5\", \"4\", \"2 to 3\", \"1\", each with a short chip. On \"six-mark\" the rungs draw; on \"informed\" the top chips light: 6: \"extensive evaluation, detailed analysis of the stimulus · well-informed judgement\"; 5: \"thorough evaluation, analysis of the data · informed judgement\"; 4: \"evaluation with reference to the data · a judgement\". The word \"judgement\" in rungs 6, 5 and 4 takes an amber underline. On \"first appears at four marks\" a bracket marks rungs 4 to 6: \"judgement\". 2 to 3: \"some points · links to the data\" (no judgement chip; a faint empty slot). 1: \"some relevant information\". `GreyTag`: \"a NESA Biology marking guideline, 2022 (6 marks)\". On \"four-mark\" the ladder dims and a two-step bar draws at the right: \"describes the effects for both: 3\" then, on \"evaluating\", \"+ evaluates them: 4\". `GreyTag`: \"a NESA Biology marking guideline, 2025 (4 marks; gene flow)\". On \"own\" two small chips write side by side under the bar: \"reasons, no verdict\" (grey, with a missing amber chip) and \"verdict, no reasons\" (amber, with missing grey legs). Both get a small red \"short of the top\" tag. `GreyTag`: \"in these two guidelines\". Then the s04 memory aid line returns small. At most three bright text items: the live rung chips dim as the bar arrives. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "assess-vs-evaluate": [
+        "new",
+        "The worked card returns small at the top.",
+        "Assess-vs-evaluate: So how is assess different from evaluate?",
+        "criteria / how much / Justify / one",
+        "On the spoken cues: Its verb line swaps on cue: On \"criteria\": \"**Evaluate** the use of calcium carbonate, rather than sodium hydroxide ...\" with a chip \"evaluate → criteria, both ways, then decide\". On \"how much\": the verb line morphs to \"**Assess** the suitability of calcium carbonate for neutralising this spill.\" with a chip \"assess → how suitable, how far; then support it\". A small dial icon sets to \"highly suitable\". On \"all three",
+        "explain",
+        "The worked card returns small at the top. Its verb line swaps on cue: On \"criteria\": \"**Evaluate** the use of calcium carbonate, rather than sodium hydroxide ...\" with a chip \"evaluate → criteria, both ways, then decide\". On \"how much\": the verb line morphs to \"**Assess** the suitability of calcium carbonate for neutralising this spill.\" with a chip \"assess → how suitable, how far; then support it\". A small dial icon sets to \"highly suitable\". On \"all three parts\" the `VerdictStrip` tab lights all three rows under both chips. `GreyTag`: \"overlap: both need verdict + criteria + evidence\". On \"Justify\" the two earlier chips collapse to their verb words and a third chip writes: \"justify → given or chosen, your job is the support\" (struts icon). On \"one\" a two-step bar: \"justifies ONE change: 2\" level with \"identifies TWO changes: 2\", and above it \"justifies TWO changes: 3\". `GreyTag`: \"a NESA Chemistry marking guideline, 2025 (3 marks)\". On \"worth as much\" an amber \"=\" link joins \"justifies ONE change\" and \"identifies TWO changes\", and the reason part of the first bar glows. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-1": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Do the one in your subject,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text: \"A buffer solution with a pH of about 4.8 is needed. Two weak acids are available, each with its conjugate base.\" Table: \"Weak acid | Conjugate base | pKa at 25 °C\"; \"ethanoic acid, CH3COOH | ethanoate ion, CH3COO- | 4.74\"; \"ammonium ion, NH4+ | ammonia, NH3 | 9.25\". \"Justify which weak acid, with its conjugate base, should be used to make this buffer.\" \"(2 marks)\" `m6-beaker-v1.png` small at the right with a coded label \"buffer, pH 4.8?\". No pH scale marks, nothing answer-bearing. Empty answer box, counter \"0 / 2\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" `RoutineStrip` dims.",
+        [
+            "HandText write-on",
+            "table build",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "Annotations land fast: highlighter on \"Justify\", ring on \"(2 marks)\", underline on \"pH of about 4.8\", ring on both pKa values.",
+        "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "pKa / similar amounts / four",
+        "On the spoken cues: Rows write with `RoleTag`s and ticks: \"Use ethanoic acid and ethanoate (CH3COOH / CH3COO-).\" Tag \"verdict\". \"A buffer works best when its pH is close to the weak acid's pKa, because the acid and its conjugate base are then present in similar amounts, so it can neutralise both added acid and added base.\" Tag \"criterion\". Tick, \"1 / 2\". \"pKa 4.74 is within 0.1 of pH 4.8, whereas pKa 9.25 is about 4.5 units away: at pH",
+        "explain",
+        "Annotations land fast: highlighter on \"Justify\", ring on \"(2 marks)\", underline on \"pH of about 4.8\", ring on both pKa values. Rows write with `RoleTag`s and ticks: \"Use ethanoic acid and ethanoate (CH3COOH / CH3COO-).\" Tag \"verdict\". \"A buffer works best when its pH is close to the weak acid's pKa, because the acid and its conjugate base are then present in similar amounts, so it can neutralise both added acid and added base.\" Tag \"criterion\". Tick, \"1 / 2\". \"pKa 4.74 is within 0.1 of pH 4.8, whereas pKa 9.25 is about 4.5 units away: at pH 4.8 an NH4+/NH3 mixture would be almost all NH4+, with almost no NH3 to neutralise added acid.\" Tags \"evidence\" and \"verdict supported\". Tick, \"2 / 2\". A coded number line from 4 to 10 draws under the box: a pH 4.8 marker, a pKa 4.74 dot right beside it and a pKa 9.25 dot far away; a gap bracket \"about 4.5\" on \"four\". On \"why closer matters\" a `CrossedHabit` chip \"Ethanoic acid, because its pKa is closer.\" takes a red scribble cross. Caption \"why does closer matter?\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-2": [
+        "new",
+        "Board clears.",
+        "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Now Biology. Part of an mRNA sequence has",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\". Card text: \"Part of the mRNA sequence for a protein contains the codon GAA, which codes for glutamic acid. Two different substitution mutations in the gene change this codon, as shown.\" Table: \"mRNA codon | Codes for\"; \"original: GAA | glutamic acid\"; \"mutation 1: GAG | glutamic acid\"; \"mutation 2: UAA | stop\". \"A student claims that 'a substitution mutation always changes the protein'.\" \"Using the information provided, assess this claim.\" \"(3 marks)\" A coded mRNA strip at the right: three codon boxes with GAA highlighted; no arrows to proteins, no polypeptide, nothing answer-bearing. Empty answer box, counter \"0 / 3\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "NumberTicker",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "Annotations land fast: highlighter on \"assess\", ring on \"(3 marks)\", teal brackets on \"Using the information provided\", ring on \"always\" in the claim.",
+        "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "not supported / same / shorter",
+        "On the spoken cues: Rows write with `RoleTag`s and ticks: \"The claim is not supported: substitution mutations do not always change the protein.\" Tag \"verdict\". \"Mutation 1 changes GAA to GAG, but both codons code for glutamic acid (the code has more than one codon for most amino acids), so the amino acid sequence and the protein are unchanged (a silent mutation).\" Tag \"evidence\". Tick, \"1 / 3\". \"Mutation 2 changes GAA to the stop codon",
+        "explain",
+        "Annotations land fast: highlighter on \"assess\", ring on \"(3 marks)\", teal brackets on \"Using the information provided\", ring on \"always\" in the claim. Rows write with `RoleTag`s and ticks: \"The claim is not supported: substitution mutations do not always change the protein.\" Tag \"verdict\". \"Mutation 1 changes GAA to GAG, but both codons code for glutamic acid (the code has more than one codon for most amino acids), so the amino acid sequence and the protein are unchanged (a silent mutation).\" Tag \"evidence\". Tick, \"1 / 3\". \"Mutation 2 changes GAA to the stop codon UAA, so translation stops early and a shorter polypeptide forms, which is likely to be non-functional (a nonsense mutation).\" Tag \"evidence\". Tick, \"2 / 3\". \"So some substitutions change the protein and some do not: the claim is incorrect as stated, because of 'always'.\" Tag \"verdict supported\". Tick, \"3 / 3\". The coded mRNA strip responds on cue: on \"same\" the GAG box shows a glutamic acid chip identical to the original; on \"shorter\" a coded polypeptide bead chain stops at the UAA box, beside a full-length chain for comparison. On \"never judges the claim\" a `CrossedHabit` chip \"Mutation 1 is silent and mutation 2 is nonsense.\" takes a red scribble cross. Caption \"labels only: is the claim right?\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark highlight",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "The four verb cards from scene 2 return as the decision board, each lighting on its cue: \"assess, evaluate → make a judgement; support it with relevant criteria and evidence\" (the two cards side by side under one bracket); \"justify → support the argument or conclusion with reasons from the case\"; \"analyse → show the parts, their relationships and what follows\".",
+        "Decision-rule: So, when you see one of these verbs.",
+        "assess / evaluate / justify / analyse / Next",
+        "On the spoken cues: On \"evaluate\" the `VerdictStrip` returns beside the assess and evaluate cards only, all rows lit, with the memory aid line small under it and a grey tag \"judgement answers\". It does not touch the justify or analyse cards. On \"Next\" a chip slides in: \"Next: calculation answers that get full marks\". A small equation-strip doodle sits beside it.",
+        "explain",
+        "The four verb cards from scene 2 return as the decision board, each lighting on its cue: \"assess, evaluate → make a judgement; support it with relevant criteria and evidence\" (the two cards side by side under one bracket); \"justify → support the argument or conclusion with reasons from the case\"; \"analyse → show the parts, their relationships and what follows\". On \"evaluate\" the `VerdictStrip` returns beside the assess and evaluate cards only, all rows lit, with the memory aid line small under it and a grey tag \"judgement answers\". It does not touch the justify or analyse cards. On \"Next\" a chip slides in: \"Next: calculation answers that get full marks\". A small equation-strip doodle sits beside it. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 50 seconds with pause invitation"
+    ]
+}
+
+# END generated rows: m6c13-m6c14, skills03, skills04
+
+
 LESSONS = {
     'c5': {
         'design': D + 'lessons/chem-m5-c05.md',
@@ -6940,6 +8014,60 @@ LESSONS = {
         'rows': M6C12_ROWS,
     },
     # END generated entries: m6c11-m6c12
+    # BEGIN generated entries: m6c13-m6c14, skills03, skills04
+    'm6c13': {
+        'design': D + 'lessons/chem-m6-c13.md',
+        'learning_review': D + 'checks/m6c13-learning-review.md',
+        'science_check': D + 'checks/m6c13-claude-science-check.md',
+        'meta': {"title": "Which indicator fits a titration? A weak acid that changes colour, the salt at equivalence, and the jump", "subtitle": "The same titration needs twenty five millilitres of base, but methyl orange changes colour before eight. How does an indicator change colour, why isn't every equivalence point at pH 7, and how do you choose the indicator that changes at the right moment?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 21, "lessonIntent": "describing an indicator as a weak acid whose two forms differ in colour; explaining its colour change, and its reversal, with Le Chatelier's principle; explaining why the change spans roughly two pH units around the indicator's pKa; stating four transition ranges; separating the endpoint from the equivalence point; predicting whether the solution at equivalence is acidic, neutral or basic from its salt, with an equation; calculating the equivalence pH of a weak acid with a strong base; choosing an indicator whose colour change falls inside the steep jump and explaining why a wrong choice gives a titre that is too small. No red cabbage preparation (chem-m6-p01), no whole-curve reading or conductivity (chem-m6-c14), no weak/weak titrations, no back titrations (chem-m6-c15)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "indicator-weak-acid", "reversible-switch", "transition-range", "endpoint-equivalence", "flask-at-equivalence", "three-salts", "we-concentration", "we-ph", "the-jump", "the-rule", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "C12 (titration, burette, titre, endpoint and equivalence point; phenolphthalein's colourless to faint pink endpoint; the titre counts moles; n = cV). C10 (Ka, pKa = −log Ka; Ka × Kb = Kw for a conjugate pair). C08 (weak base: B + H₂O ⇌ BH⁺ + OH⁻, [OH⁻] = √(Kb × c) when Kb is small, then pOH and pH = 14.00 − pOH). C07 (pH, pOH, Kw = 1.0 × 10⁻¹⁴ at 25 °C, neutral pH 7.00 at 25 °C; the decimal-places rule). C06 (conjugate pairs; the conjugate base of a weak acid takes protons back, the conjugate base of a strong acid barely does; ammonium is ammonia's conjugate acid). C05 (strong and weak acids and bases; salts dissolve completely into ions). C11 (a weak acid with its conjugate base is a buffer; [H₃O⁺] = Ka × n(HA) ÷ n(A⁻); pH = pKa when the partners are equal). Module 5: Le Chatelier's principle. Not assumed: indicator, HIn, transition range, salt hydrolysis, the pH jump.", "startsWith": "Observe a reversible indicator colour change. The video opens: Here's twenty five point zero zero millilitres of zero point one zero zero moles per litre ethanoic acid, titrated with sodium hydroxide of the same concentration. The moles say it needs twenty five millilitres. With phenolphthalein, that's what you get: the flask turns pink within a drop of twenty five.", "stopsAfter": "describing an indicator as a weak acid whose two forms differ in colour; explaining its colour change, and its reversal, with Le Chatelier's principle; explaining why the change spans roughly two pH units around the indicator's pKa; stating four transition ranges; separating the endpoint from the equivalence point; predicting whether the solution at equivalence is acidic, neutral or basic from its salt, with an equation; calculating the equivalence pH of a weak acid with a strong base; choosing an indicator whose colour change falls inside the steep jump and explaining why a wrong choice gives a titre that is too small. No red cabbage preparation (chem-m6-p01), no whole-curve reading or conductivity (chem-m6-c14), no weak/weak titrations, no back titrations (chem-m6-c15).", "nextLesson": "making an indicator from red cabbage and testing it with acids and bases (route chem-m6-p01)."},
+        'teaching': {"task": "The same titration needs twenty five millilitres of base, but methyl orange changes colour before eight. How does an indicator change colour, why isn't every equivalence point at pH 7, and how do you choose the indicator that changes at the right moment?", "causalExplanation": "(1) the same titration needs 25.00 mL by moles; phenolphthalein agrees, methyl orange drifts from red to yellow over the first 8 mL: why? (1); (2) an indicator is a weak acid whose acid and base forms differ in colour; the colour shows which form dominates (2); (3) base removes hydronium, so the equilibrium shifts right; acid shifts it back; the indicator is not used up, so the change is reversible (3); (4) the ratio of the two forms follows [H₃O⁺]; equal at the indicator's pKa; one colour is seen when one form is about ten times the other, so the change spreads over roughly two pH units (4); (5) the endpoint should land at equivalence, so you need the equivalence pH, and it is not always 7 (5); (6) at equivalence the flask holds sodium ethanoate; ethanoate, a weak acid's conjugate base, takes protons from water, making hydroxide: basic (6); (7) NaCl: neither ion reacts with water, neutral; NH₄Cl: ammonium gives protons to water, acidic (7); (8) the ethanoate concentration at equivalence: the volume doubled (8); (9) Kb = Kw ÷ Ka, the weak-base method, pOH, pH 8.72 (9); (10) near equivalence the pH leaps several units in a drop; phenolphthalein changes inside the leap; methyl orange changes in the buffer region, so its titre is far too small (10); (11) the rule: the change must fall inside the jump; for strong with strong the jump is long, so all three work (11); memory aid (12); two attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).", "conversationalApproach": "one puzzle carries the video: the same ethanoic acid titration needs 25.00 mL of base by moles, and phenolphthalein turns pink within a drop of that, but methyl orange drifts from red to yellow over the first 8 mL. The particle lens shows why: an indicator is itself a weak acid whose two forms have different colours, added base and acid shift its equilibrium back and forth, and the ratio of the two forms spreads the visible change over roughly two pH units around its pKa. The flask at equivalence holds a salt that takes after its stronger parent, a worked example finds pH 8.72 through Kb, and the curve shows the steep jump: an indicator must change inside it, so methyl orange, changing in the buffer region, gives a titre far too small. Two exam questions follow with brief feedback.", "openingDecision": "Here's twenty five point zero zero millilitres of zero point one zero zero moles per litre ethanoic acid, titrated with sodium hydroxide of the same concentration. The moles say it needs twenty five millilitres. With phenolphthalein, that's what you get: the flask turns pink within a drop of twenty five. But run it with methyl orange, and the colour drifts from red, through orange, to yellow over the first eight millilitres. Same acid, same base. So why does one indicator get it right, and the other mislead you?", "understandingCheck": "(A1) \"Bromothymol blue is a weak acid, HIn. HIn is yellow and In⁻ is blue. Its transition range is pH 6.0 to 7.6. A few drops of bromothymol blue are added to a solution at pH 4. Sodium hydroxide solution is added until the pH reaches 10, then hydrochloric acid is added until the pH returns to 4. Describe the colours observed, and explain them using Le Chatelier's principle.\" New indicator (its flask set is shown nowhere before the attempt; scene 4's ruler shows only its range band, coloured; A1 states both colours and the range, Revision 2, so \"pH 4 is below the range\" is decidable from the card), tests the reversible equilibrium of `C6-IQ1-02`. Crossed mistake: \"the indicator is used up, so it stays blue\". (A2) \"A solution of 0.100 mol/L hydrochloric acid is added from a burette to 25.00 mL of 0.100 mol/L ammonia solution. Near the equivalence point, the pH falls sharply from about 6.6 to about 4.0. (a) Explain why the solution at the equivalence point is acidic. Include an equation. (b) Select the most suitable indicator from the table, and justify your choice.\" Table on the card: \"methyl orange 3.1–4.4 (red to yellow) | methyl red 4.4–6.2 (red to yellow) | bromothymol blue 6.0–7.6 (yellow to blue) | phenolphthalein 8.3–10.0 (colourless to pink)\". New titration type (strong acid with weak base, acid added to base; the worked example was weak acid with strong base). Crossed mistake: \"phenolphthalein, the usual titration indicator\" (site L17 error 5).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct an investigation to demonstrate the preparation and use of indicators as illustrators of the characteristics and properties of acids and bases and their reversible reactions (ACSCH101)\" \"investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:; strong acid/strong base; strong acid/weak base; weak acid/strong base (ACSCH080, ACSCH102)\" this video starts from the route's reversible indicator colour change and stops at separating the endpoint from the equivalence point and matching an indicator's transition range to the pH jump. It teaches: an indicator as a weak acid, HIn, whose two forms have different colours (C06 conjugate pair callback); the colour change as a reversible equilibrium shifted by added acid and base (Module 5 Le Chatelier callback, one clause), the \"reversible reactions\" demand of `C6-IQ1-02`; why the change spreads over roughly two pH units around the indicator's pKa (the C11 ratio idea, said in words, no new equation); four common transition ranges; endpoint against equivalence point (C12 callback, one line); salt hydrolysis: why the solution at equivalence is basic for a weak acid with a strong base, neutral for strong with strong and acidic for a strong acid with a weak base, and the memory aid \"the salt takes after its stronger parent\"; one worked equivalence pH (sodium ethanoate, through Kb = Kw ÷ Ka and the C08 weak-base method); the steep jump near equivalence and the selection rule (the colour change must fall inside the jump; the range need not contain the exact equivalence pH); why a wrong indicator gives a titre that is too small; the strong/strong case where all three common indicators work at 0.1 mol/L. Not here: preparing an indicator from red cabbage and calibrating it (chem-m6-p01, the next video, which owns the practical preparation and the investigation; this video shows use and reversibility only); reading whole titration curves (starting pH, buffer region, half-equivalence pKa, curve identification) and conductivity graphs (chem-m6-c14); weak acid with weak base titrations (site Extension; one author note); the direction of an amphiprotic ion from Ka against Kb (route Additions: chem-m6-g02); polyprotic curves and tartaric acid (site worksheet corrections); error-direction tables beyond \"titre too small\" (chem-m6-g04); back and conductometric titrations (chem-m6-c15)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: H₃O⁺ teal token on pale blue water (C01); OH⁻ violet; indicator tokens: HIn white-outlined, In⁻ in the indicator's base colour (phenolphthalein magenta); the burette's titrant navy (C12); the ethanoic acid curve teal, the hydrochloric acid curve pale blue; each indicator's range band in its own two colours. Board layout (constant, C03, C07, C08 and C12): top-left the short task line; the left column holds the givens card during the worked example (grouped, units attached); the centre holds the lens, the ruler, the curve or the working, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 21 Oct): `m6-burette-clamp-stand-v1.png` (retort stand, clamp and burette, no person; hook and scene 10 thumbnail, fill gauge drawn over its tube), `m6-conical-flask-v1.png` and `m6-white-tile-v1.png` (hook, under the burette tip), `m6-clip-phenolphthalein-colourless-v1.png` and `m6-clip-phenolphthalein-pink-v1.png` (aligned pair; hook, scenes 2 and 3, the swap played forward and back), `m6-indicator-phenolphthalein-set-v1.png` (inspected: three conical flasks, colourless, pale pink, deep pink; scene 4, under the phenolphthalein band), `m6-indicator-methyl-orange-set-v1.png` (inspected: three flasks, red, orange, yellow; hook, scenes 4 and 10, a coded ring moving across them for the drift), `m6-indicator-bromothymol-blue-set-v1.png` (inspected: three flasks, yellow, green, blue; feedback 1 only, so A1's colours are not shown before the attempt), `m5x-ammonia-bottle-v1.png` (scene 7 and attempt 2, small), `m6-clip-red-cabbage-purple-v1.png` and `m6-clip-red-cabbage-green-v1.png` (handoff chip). New plate: `m6-indicator-methyl-red-set-v1.png` (feedback 2 and scene 4; see Assets). No human figures.", "transitionPlan": "The burette, flask and tile plates open the hook with the volume counter and the two indicator chips; the board clears to the phenolphthalein plate and a lens where HIn tokens pass protons to water and the swatch follows the mix, swapping colour forward and back; the coded pH ruler draws with the ratio bar and then the four range bands; endpoint and equivalence tags sit beside a small apparatus thumbnail; the salt lens and its equation strip build three salt columns that reduce to one comparison row; the givens card and the working lines carry the worked example one stage per line, earlier lines dimming, with one kept chip; the lineGraph draws the curve, a magnifier opens on the jump and the range bands slide across it, then the strong acid curve draws over the same axes; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card and next chip close; scene crossfade with settle."},
+        'rows': M6C13_ROWS,
+    },
+    'm6c14': {
+        'design': D + 'lessons/chem-m6-c14.md',
+        'learning_review': D + 'checks/m6c14-learning-review.md',
+        'science_check': D + 'checks/m6c14-claude-science-check.md',
+        'meta': {"title": "What do titration curves and conductivity reveal? Starting pH, the buffer region, half-equivalence and the meter's V", "subtitle": "Hydrochloric acid and ethanoic acid at the same concentration, titrated with the same base, give two very different pH curves and two different conductivity graphs. What can those profiles tell you about an acid: strong or weak, where equivalence is, how much acid there is, and even its Ka?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 23, "lessonIntent": "reading a titration curve's axes and starting pH and inferring strength at equal concentration; identifying the buffer region of a weak acid curve and explaining it; finding the equivalence point in the middle of the steep jump and using its volume to calculate a concentration; reading pKa at half the equivalence volume and calculating Ka; explaining the equivalence pH and the shorter jump of a weak acid; recognising the strong acid/weak base profile; explaining the conductivity graphs of a strong and a weak acid titrated with sodium hydroxide, and finding equivalence from each. No indicator choice (chem-m6-c13), no pH calculations at every region (site Extension), no weak/weak curves, no conductometric method or line-intersection reading (chem-m6-c15), no back titration (chem-m6-c15)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "axes-start-ph", "buffer-region", "half-equivalence", "equivalence-point", "equivalence-ph-jump", "strong-acid-weak-base", "conductivity-strong", "conductivity-weak", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "C13 (the salt at equivalence takes after its stronger parent; ethanoate makes the equivalence point basic, ammonium acidic; the 8.72 equivalence pH; the steep jump; the ethanoic acid curve's shape near equivalence). C12 (titration, titre, equivalence point; the titre counts moles of acid, weak or strong; n = cV). C11 (a weak acid with its conjugate base is a buffer; equal amounts give pH = pKa). C10 (pKa = −log Ka, Ka = 10⁻ᵖᴷᵃ). C08 (a weak acid stays mostly un-ionised; its pH is higher than a strong acid's at the same concentration). C07 (pH of a strong acid, [H₃O⁺] = c). C05 (strong and weak). Year 11 (solutions of ions conduct electricity because the ions move). Not assumed: titration curve, buffer region as a curve feature, half-equivalence point, conductivity graph, how fast different ions carry charge.", "startsWith": "Read axes and starting pH on a reaction profile. The video opens: Two beakers, each with twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre. One is hydrochloric acid, one is ethanoic acid. Add the same sodium hydroxide to each, measure the pH after every portion, and plot it.", "stopsAfter": "reading a titration curve's axes and starting pH and inferring strength at equal concentration; identifying the buffer region of a weak acid curve and explaining it; finding the equivalence point in the middle of the steep jump and using its volume to calculate a concentration; reading pKa at half the equivalence volume and calculating Ka; explaining the equivalence pH and the shorter jump of a weak acid; recognising the strong acid/weak base profile; explaining the conductivity graphs of a strong and a weak acid titrated with sodium hydroxide, and finding equivalence from each. No indicator choice (chem-m6-c13), no pH calculations at every region (site Extension), no weak/weak curves, no conductometric method or line-intersection reading (chem-m6-c15), no back titration (chem-m6-c15).", "nextLesson": "when a direct titration won't work: back titrations and conductivity titrations (route chem-m6-c15)."},
+        'teaching': {"task": "Hydrochloric acid and ethanoic acid at the same concentration, titrated with the same base, give two very different pH curves and two different conductivity graphs. What can those profiles tell you about an acid: strong or weak, where equivalence is, how much acid there is, and even its Ka?", "causalExplanation": "(1) the same acid concentration and the same base give two different curves; each feature carries information (1); (2) a curve plots the flask's pH against the volume of titrant; at the start, the strong acid is fully ionised (pH 1.000) and the weak acid mostly whole (2.87): at equal concentration, a higher start means a weaker acid (2); (3) early on, the strong acid's pH stays low because plenty of hydronium is left; the weak acid's climbs, then levels, because base turns it into a buffer of weak acid and conjugate base: the buffer region (3); (4) at half the equivalence volume the partners are equal, so pH = pKa: 4.74, and Ka = 10⁻⁴·⁷⁴ (4); (5) the equivalence point is in the middle of the steepest part; both acids need 25.00 mL, because a titre counts moles, not strength; that volume gives the concentration (5); (6) the equivalence pH follows the salt (7.00 against 8.72); the weak acid's jump is shorter because its buffer held the pH up until the last drops (6); (7) a strong acid with a weak base: an acidic equivalence point and a low jump, then a level stretch near 9 because excess ammonia and ammonium form a buffer (7); (8) conductivity: hydronium and hydroxide conduct best; in HCl, fast hydronium is replaced by slower sodium, so conductivity falls to a minimum at equivalence, then rises with excess hydroxide (8); (9) ethanoic acid starts with few ions, so conductivity starts low, rises gently as sodium and ethanoate form, then steeply after equivalence: equivalence at the bend (9); memory aid (10); two attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).", "conversationalApproach": "one contrast carries the video: hydrochloric acid and ethanoic acid at the same concentration, titrated with the same base, give two very different pH curves and two different conductivity graphs. Each feature is read for its cause in turn: the starting pH (fully ionised against mostly whole), the buffer region (base turns the weak acid into a buffer), half-equivalence (equal partners, so pH = pKa and Ka follows), the equivalence point in the middle of the jump (the same 25.00 mL, because a titre counts moles), the equivalence pH and jump length, a strong acid with a weak base, and conductivity (fast hydronium replaced by slower sodium gives a V; a weak acid gives a bend). Two exam questions follow with brief feedback.", "openingDecision": "Two beakers, each with twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre. One is hydrochloric acid, one is ethanoic acid. Add the same sodium hydroxide to each, measure the pH after every portion, and plot it. You get two very different curves. Every bend in them carries information: whether the acid is strong or weak, how much there is, even its K a. So how do you read one?", "understandingCheck": "(A1) \"A student titrated 20.00 mL of an acid, HA, with 0.1000 mol/L sodium hydroxide solution and plotted the titration curve shown. (a) Using two features of the curve, identify whether HA is a strong or a weak acid. (b) Calculate the concentration of HA. (c) Determine the Ka of HA.\" The coded curve (author note h) has grid lines every 5 mL and every pH unit, and labelled dots at 0.0 mL (pH 2.79), 5.0 mL (4.10), 10.0 mL (4.57), 15.0 mL (5.05), 20.0 mL (8.63, in the middle of the jump) and 25.0 mL (12.05). New acid and new volumes; the student must find the equivalence volume in the jump, halve it and read the pH. Crossed mistake: \"pKa = 8.63, the pH at equivalence\" (site L17 Activity A item 2). (A2) \"0.100 mol/L sodium hydroxide solution is added to 20.00 mL of hydrochloric acid, and the conductivity is measured. The conductivity falls to a minimum when 16.0 mL of sodium hydroxide has been added, then rises. (a) Explain the shape of the conductivity graph. (b) Calculate the concentration of the hydrochloric acid.\" The graph is shown (author note k). Tests the conductivity trend and the equivalence volume from a graph. Crossed mistake: \"it falls because the ions are used up\" (site L18 card 3's Common Error, inverted: the number of ions stays about the same before equivalence).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:; strong acid/strong base; strong acid/weak base; weak acid/strong base (ACSCH080, ACSCH102)\" this video starts from the route's axes and starting pH on a reaction profile and stops at inferring strengths, the equivalence region and a conductivity trend. It teaches: what a titration curve plots (pH in the flask against volume of titrant added); the starting pH as evidence of strength at equal concentration (C05 and C08 callbacks); the early part of each curve, with the weak acid's buffer region (C11 callback: each portion of base makes a weak acid and conjugate base mixture); the half-equivalence point, where pH = pKa, and Ka from it (C10 and C11 callbacks); the equivalence point in the middle of the steepest part, the same volume for a strong and a weak acid at equal moles (C12 callback), and the concentration from that volume; the equivalence pH from the salt (C13 callback, one line) and why the weak acid's jump is shorter; the strong acid/weak base profile (an acidic equivalence point and a high-pH buffer after it); conductivity graphs for hydrochloric and ethanoic acid titrated with sodium hydroxide, explained by which ions are replaced and how well they conduct. Not here: the indicator equilibrium, transition ranges and indicator choice (chem-m6-c13, one callback only); calculating the pH at every region of a curve (site card 5, labelled Extension; the start and equivalence calculations are C08 and C13 callbacks, not repeated); the Henderson-Hasselbalch equation by name or in log form (C11 decision); weak acid with weak base curves (site Extension); polyprotic curves (site worksheet corrections); using a conductivity titration as a method, reading equivalence from the intersection of two straight lines, and coloured or cloudy samples (chem-m6-c15, the next video, with back titration); barium hydroxide with sulfuric acid; error direction for indicator choices (chem-m6-g04)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: the hydrochloric acid curve pale blue, the ethanoic acid curve teal (C13), the hydrochloric acid with ammonia curve amber; H₃O⁺ teal token, OH⁻ violet, Na⁺ and Cl⁻ small grey spectators, ethanoate grey-violet (C01, C03, C11); the titrant navy (C12); feature markers white rings. Board layout (constant, C03, C11 and C13): top-left the short task line; the centre holds the graph, large; readings write beside the feature they describe and dim when the next is read; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 21 Oct): `m6-ph-meter-probe-beaker-v1.png` (hook, coded readout ticking as portions are added; beaker labelled in code), `m6-burette-clamp-stand-v1.png` (hook thumbnail, the titrant), `m5x-ammonia-bottle-v1.png` (scene 7, small), `m6-conductivity-meter-titration-v1.png` (inspected: two probes clamped in a stirred beaker on a magnetic stirrer, a handheld meter with a blank screen, no person or hand; scenes 8, 9 and attempt 2, with a coded readout on its blank screen). No new plates needed. No human figures.", "transitionPlan": "The burette and two pH meter plates open the hook as the lineGraph axes draw and both curves trace point by point; feature rings land on the curves one feature per scene while earlier readings dim; the C11 ratio bar fills beside the buffer region and the half-volume caliper folds to drop the pKa line; the magnifier inset opens on both jumps for the equivalence volume and pH; the ammonia curve draws over the dimmed curves; the board clears for the conductivity meter plate, the proton hop along water and the conductivity graph with its ion tally of tokens, the HCl V dimming as the ethanoic bend draws; the memory aid writes large; each attempt clears the board and its feedback underlines the givens on the card and curve; the decision rule card and next chip close; scene crossfade with settle."},
+        'rows': M6C14_ROWS,
+    },
+    'skills03': {
+        'design': D + 'lessons/skills-s03.md',
+        'learning_review': D + 'checks/skills03-learning-review.md',
+        'science_check': D + 'checks/skills03-claude-science-check.md',
+        'meta': {"title": "Compare, contrast, distinguish: write it in pairs", "subtitle": "When a question asks you to compare, contrast or distinguish, what makes the answer actually compare?", "subject": "Chemistry and Biology", "yearLevel": 12, "module": 0, "lesson": 3, "lessonIntent": "the three verb meanings; pairs on the same feature; the table-to-sentence trick; comparison words and the matched-feature check; a weak against strong compare; one Chemistry compare drill and one Biology distinguish drill."},
+        'hold_seconds': 10,
+        'holds': ["drill-1", "drill-2"],
+        'ids': ["hook", "three-verbs", "question-card", "read-it", "pair-table", "table-to-sentence", "comparison-words", "weak-vs-strong", "what-guidelines-show", "drill-1", "feedback-1", "drill-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "s01 (reading routine, annotation layer) and s02 (verb meanings; describe against explain). Biology: B10 (incomplete dominance in snapdragons, co-dominance in roan cattle, heterozygote phenotypes), B5a and B5b (sister chromatids, homologous pairs, one homologue from each parent). Chemistry: M6 C05 (strong and weak acids; extent of ionisation; strength against concentration), C12 (titration: moles from volume and concentration; 1 : 1 mole ratio for a monoprotic acid and NaOH), Year 11 acid and metal reactions, electrical conductivity of ionic solutions.", "startsWith": "Comparisons written as two separate descriptions. The video opens: Here's a habit NESA's marking feedback keeps flagging. In eight of the last twelve Chemistry and Biology reports, it points out comparisons written as two separate descriptions: everything about one thing, then everything about the other. Each half can be right, and the answer still doesn't compare.", "stopsAfter": "the three verb meanings; pairs on the same feature; the table-to-sentence trick; comparison words and the matched-feature check; a weak against strong compare; one Chemistry compare drill and one Biology distinguish drill.", "nextLesson": "s04, \"Analyse, assess, evaluate, justify\"."},
+        'teaching': {"task": "When a question asks you to compare, contrast or distinguish, what makes the answer actually compare?", "causalExplanation": "(1) NESA marking feedback flags comparisons written as two separate descriptions in eight of the last twelve Chemistry and Biology reports, and compare questions were worth three to six marks (1); (2) the three verbs with their paraphrased glossary meanings: compare takes similarities or differences, contrast and distinguish want differences (2); (3) one HSC-style Biology question compares snapdragon and roan cattle crosses (3); (4) the routine reads the verb, the marks and the givens: true-breeding parents differ, so every offspring is heterozygous (4); (5) a pair table puts one feature per row across both cases (5); (6) each row becomes one paired sentence with a comparison word: both heterozygotes look unlike either parent, so neither allele completely masks the other (6); (7) comparison words do the comparing, but cannot rescue a mismatched pair (7); (8) two correct descriptions still leave the comparing to the marker (8); (9) the guidelines rewarded complete pairing of the features asked about, not length (9); two drills with feedback (10 to 13); decision rule and handoff (14); key notes (15).", "conversationalApproach": "one fault carries the video: NESA keeps flagging comparisons written as two separate descriptions. One HSC-style Biology question (snapdragons and roan cattle) holds the content still while the answer is built: the routine reads the givens, a tiny pair table lines up one feature per row, and each row becomes one paired sentence with both or whereas, with a mark counter. A mismatched pair and a weak two-description answer show what fails, and the guidelines show what the marks followed. Two drills, one per subject, practise the shape.", "openingDecision": "Here's a habit NESA's marking feedback keeps flagging. In eight of the last twelve Chemistry and Biology reports, it points out comparisons written as two separate descriptions: everything about one thing, then everything about the other. Each half can be right, and the answer still doesn't compare. In recent Biology papers, compare questions were worth three to six marks. So let's learn to write in pairs.", "understandingCheck": "the narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, compare, 3 marks: 0.10 mol L-1 hydrochloric acid against 0.10 mol L-1 ethanoic acid: conductivity, reaction with magnesium ribbon and the volume of 0.10 mol L-1 sodium hydroxide needed to neutralise 20.0 mL. Constraints \"Using the data\" and \"in terms of acid strength\". It has a surprising similarity (the same 20.0 mL) and two differences, so it trains both halves. Content: M6 C05 (strong and weak; extent of ionisation), C12 (titration and mole ratio), Year 11 reactions of acids with metals. Crossed habit: \"Hydrochloric acid is a strong acid that reacts quickly. Ethanoic acid is a weak acid that reacts slowly.\" (two descriptions; no similarity). Drill 2, Biology, distinguish, 2 marks: homologous chromosomes against sister chromatids, with a painted chromosome-pair diagram. Content: B5a and B5b. It trains \"differences only, still in pairs\". Crossed habit: two stand-alone definitions with no feature they differ in.", "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"comparisons written as two separate descriptions\". It stops after the meanings of compare, contrast and distinguish, writing in pairs, the table-to-sentence trick, comparison words and the matched-feature check, a weak against strong compare, and two drills. It does not cover judgement verbs (s04), calculations (s05) or graph trends (s06)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. the shared skills kit (`src/explainer/lessons/skills-shared/`): `QuestionCard` with its annotation layer (`Ann` kinds verb, marks, given, constraint, ring, tag; `CardDim` for dimming parts), `MarksBadge`, `AnswerBox` (rows, margin ticks, counter, slots, `AAnn` under and ring), `MarkCounter`, `LostMarksTag`, `WeakStrongPanel`, `RoutineStrip` (mini at the far left; `none` tag on row 4 in the worked question), `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate` and `mkPlate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`, `DrawSquiggle`. New lesson-local components (suggested folder `src/explainer/lessons/skills-s03`): `PairTable`: a hand-drawn three-column table (feature, case A, case B) whose rows write on one at a time; a row can glow, dim or send a `PenArrow` down to an answer row. Built from `HandLine`, `DrawPath` and `Chip`. `PairLines`: thin amber links drawn between the matching clauses of two answer rows or two columns (used to show \"paired\" against \"unpaired\"). Built from `PenArrow` with `head={false}`. `HairZoom`: two magnified circles, one over the roan coat (separate coded hair strokes, each fully red or fully white) and one over a pink petal (an even pink wash). The logic is ported from B10's scene 8 zoom and redrawn in this kit's style. Plates: snapdragon red, white and pink; cattle red, white and roan (`COW` in `plates.ts`); B5 chromosome pair; M6 beaker (twice). New `mkPlate` entries are needed for the snapdragons, the chromosome pair and the beaker (alpha boxes measured 21 Oct; see Assets). No people, hands or faces.", "transitionPlan": "The report-tile grid opens and the two squiggle blocks slide into paired columns; the verb cards build with their count chips; the question card writes on with the cross plates in the side column; each annotation lands on its cue and adds a routine strip row; the pair table draws row by row with pair lines and brief hair and petal zoom circles; pen arrows carry each row into the answer box, which fills with ticks and the mark counter; the word trays build and the mismatched chip is crossed; the weak answer slides in beside the strong one; the guideline frame and bar clear one at a time; each drill clears the board and its feedback annotates the card before the model answer writes; the decision rule card and next chip close; scene crossfade with settle."},
+        'rows': SKILLS03_ROWS,
+    },
+    'skills04': {
+        'design': D + 'lessons/skills-s04.md',
+        'learning_review': D + 'checks/skills04-learning-review.md',
+        'science_check': D + 'checks/skills04-claude-science-check.md',
+        'meta': {"title": "Analyse, assess, evaluate, justify: make a call and back it up", "subtitle": "When a question asks you to evaluate, assess or justify, what does a judgement need so that it earns marks?", "subject": "Chemistry and Biology", "yearLevel": 12, "module": 0, "lesson": 4, "lessonIntent": "the four meanings; verdict, criteria, evidence; a worked evaluate answer with a weighed limitation; weak against strong; the guideline pattern; assess against evaluate; the justify pattern; one Chemistry justify drill and one Biology assess drill."},
+        'hold_seconds': 10,
+        'holds': ["drill-1", "drill-2"],
+        'ids': ["hook", "four-verbs", "question-card", "read-it", "three-parts", "build-1", "build-2", "weak-vs-strong", "no-reasons", "assess-vs-evaluate", "drill-1", "feedback-1", "drill-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "s01 (reading routine, constraint phrases), s02 (explain as cause and effect), s03 (comparison words; drill 1 here reuses \"whereas\"). Chemistry: M6 C02 (acid and carbonate products, CO2), C04 (choosing a base: safety, gentleness, products; NaOH is caustic), C05 (weak and strong), C10 (pKa), C11 (buffers: weak acid and conjugate base; the ratio sets the pH). Biology: B6c (codons, stop codons), M6 B03 (substitutions: silent, missense, nonsense).", "startsWith": "The biggest question parts. The video opens: Look at the biggest question parts in the last five years of HSC Chemistry and Biology papers, the ones worth seven marks or more. Of the seventeen that used a glossary key word, ten asked you to analyse, evaluate or justify. And in seven of the last twelve marking feedback reports, NESA flagged the same weakness: a judgement without enough reasons from the evidence.", "stopsAfter": "the four meanings; verdict, criteria, evidence; a worked evaluate answer with a weighed limitation; weak against strong; the guideline pattern; assess against evaluate; the justify pattern; one Chemistry justify drill and one Biology assess drill.", "nextLesson": "s05, calculation answers."},
+        'teaching': {"task": "When a question asks you to evaluate, assess or justify, what does a judgement need so that it earns marks?", "causalExplanation": "(1) of the seventeen recent question parts worth seven marks or more that used a glossary key word, ten asked students to analyse, evaluate or justify, and NESA feedback flags judgements without enough reasons in seven of twelve reports (1); (2) the four verbs with their paraphrased glossary meanings (2); (3) one HSC-style Chemistry evaluate question on neutralising an acid spill (3); (4) the routine reads the verb, the marks, the constraint and the table as evidence (4); (5) an assess or evaluate answer needs a verdict, criteria and evidence, with the memory aid (5); (6) the answer is built criterion by criterion with table evidence, a weighed limitation and the linked verdict (6, 7); (7) a verdict with a vague because earns little (8); (8) the guidelines put the judgement in the upper bands and paid for no verdict on its own (9); (9) assess leans on how much, evaluate on criteria, and justify asks for support with reasons from the case (10); two drills with feedback (11 to 14); the verb-specific decision rule and handoff (15); key notes (16).", "conversationalApproach": "one finding carries the video: the biggest HSC question parts often use judgement verbs, and NESA keeps flagging judgements made without enough reasons. The glossary meanings come first, then one HSC-style Chemistry evaluate question (calcium carbonate against sodium hydroxide for an acid spill) is built line by line with role tags, a balance beam and a mark counter: verdict, criteria with table evidence, a weighed limitation and the linked verdict. A weak answer shows a verdict without support, the guidelines show where judgement sits, and the close gives a rule for each verb. Two drills, one per subject, practise it.", "openingDecision": "Look at the biggest question parts in the last five years of HSC Chemistry and Biology papers, the ones worth seven marks or more. Of the seventeen that used a glossary key word, ten asked you to analyse, evaluate or justify. And in seven of the last twelve marking feedback reports, NESA flagged the same weakness: a judgement without enough reasons from the evidence. So let's learn to make a call, and back it up.", "understandingCheck": "the narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, justify, 2 marks: choose a buffer pair for pH 4.8 from ethanoic acid (pKa 4.74, the C10 and C11 value) and the ammonium ion (pKa 9.25). Content: M6 C10 (pKa) and C11 (buffers; the ratio sets the pH; a defender for each attack). Justify at 2 marks is its second commonest value. Crossed habit: \"Ethanoic acid, because its pKa is closer.\" (a verdict and a fact, with no reason why closer matters). Drill 2, Biology, assess, 3 marks: a student's claim that a substitution mutation always changes the protein, tested against two given codon changes (GAA to GAG, glutamic acid; GAA to UAA, stop). Content: M6 B03 (silent and nonsense substitutions). Crossed habit: \"Mutation 1 is silent and mutation 2 is nonsense.\" (labels both, never judges the claim; the \"listing\" shape from the fault row).", "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"the biggest question parts\". It stops after the four verb meanings, the verdict-criteria-evidence shape for assess and evaluate, a worked evaluate answer, weak against strong, what the guidelines show about judgements and reasons, assess against evaluate, a justify pattern, and two drills. It does not cover extended-response planning (s08), practical improvements (s07) or discuss (outside this video; not in the plan's s04 list)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. the shared skills kit (`src/explainer/lessons/skills-shared/`): `QuestionCard` with its annotation layer (`Ann` kinds verb, marks, given, constraint, ring, tag, pulse; `CardDim`), `MarksBadge`, `AnswerBox` (rows, margin ticks, counter, slots, `AAnn` under, ring and chain), `MarkCounter`, `LostMarksTag`, `WeakStrongPanel`, `RoutineStrip` (mini at the far left), `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate` and `mkPlate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`, `DrawSquiggle`. New lesson-local components (suggested folder `src/explainer/lessons/skills-s04`): `VerdictStrip`: a three-row card (icons: a gavel-free balance-scale doodle for verdict, a ruler for criteria, a magnifier for evidence; no hands or people), built like `RoutineStrip` (mini and full states, rows lighting on cue, a fourth \"verdict again\" row). Built from `Icon`-style SVG, `HandLine` and `Chip`. `RoleTag`: a small coloured tag that sits in the answer box margin beside a row: \"verdict\" (amber), \"criterion\" (teal), \"evidence\" (ink), \"limitation\" (grey). Built from `Chip` at size 20. `BalanceBeam`: a coded beam that tips as criteria are added to each pan (scene 7's weighing). Coded abstract diagram only. `BandLadder`: a coded vertical ladder of mark bands with short criterion chips (scene 9), built from `Chip` and `GreyTag`. Plates: `m6-marble-chips-acid-v1.png` (calcium carbonate fizzing in acid) and `m6-beaker-v1.png`. New `mkPlate` entries are needed (alpha boxes measured 21 Oct; see Assets). No people, hands or faces.", "transitionPlan": "The question-part tiles light by verb and give way to the report tiles; the four verb cards build two by two; the question card writes on with its five-row table and bench puddle; each annotation lands on its cue and the empty balance beam draws; the verdict strip builds with criterion chips and pen arrows to the table; answer rows write with role tags and ticks while the beam tips; the weak answer slides in beside the strong one with empty evidence slots; the band ladder and step bars build and dim; the verb line swaps from evaluate to assess and the justify bar draws; each drill clears the board and its feedback annotates the card before the model answer writes; the verb cards return as a verb-specific decision board with the verdict strip beside assess and evaluate only, then the next chip; scene crossfade with settle."},
+        'rows': SKILLS04_ROWS,
+    },
+    # END generated entries: m6c13-m6c14, skills03, skills04
 }
 
 

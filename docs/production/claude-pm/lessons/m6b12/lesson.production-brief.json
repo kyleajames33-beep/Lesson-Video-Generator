@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b12/lesson.json",
+    "lessonSha256": "0511103f33ea8f8d4f7bf45e06779633a3c7e90e3bb996e86dfb872fa442bbb3"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b08: gene pool, allele frequency, genetic drift, bottleneck and founder effect, gene flow. From bio-m5-b01: the Cavendish banana is a clone threatened by TR4; asexual copying gives offspring with the same alleles. From b09: copying keeps a combination of alleles together; biotechnology inserts genes (recombinant DNA). From b10: Bt cotton cuts insecticide spraying; a field of one crop holds little biodiversity. From b11: judging plausibility and \"could, if\". From Year 11 (Module 4, ecosystem dynamics): species, communities, habitats and ecosystems. Not assumed: the three levels of biodiversity as named levels, baseline, herbicide-tolerant crops, QCAV-4, the northern white rhino programme.",
+    "startsWith": "Choose a crop or conservation case and a comparison baseline. The video opens: Two rescues.",
+    "stopsAfter": "defining biodiversity at three levels (genetic: alleles in a population or species; species: species in an area; ecosystem: habitats and communities across a region) and tracing each separately; explaining that an effect is a change from a stated baseline, and that the same field can be a gain on one baseline and a loss on another; tracing the resistant Cavendish (a gene from a wild banana protects survival, but the crop stays one clone, so its gene pool stays narrow); tracing crop fields at the species and ecosystem levels (fewer sprays can leave more insect species than sprayed fields; whole-field herbicide removes weeds and wildflowers insects use; land sparing only if land is protected); describing the northern white rhino programme (eggs from one female, banked sperm, southern white surrogates) and tracing it (it could preserve the subspecies and some of its genetic diversity, but adds a species to an area only if white rhinos are absent from that baseline area; genetic bottleneck; a stem-cell route that could widen the gene pool; ecosystem role decades away); explaining that yield is not a level of biodiversity and writing a level-by-level conclusion; applying this to an unseen gene-flow item and an unseen restoration claim.",
+    "nextLesson": "how to weigh benefits against biodiversity risks and reach a justified, conditional judgement (route entry bio-m6-b13)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b12.md"
+  ],
+  "teaching": {
+    "task": "A resistant banana and a rhino rescue both use genetic techniques to stop something dying out. But does each one increase biodiversity, and how do you trace the effect?",
+    "causalExplanation": "Causes: why one answer is not enough (a technique can move levels in different directions, 2); why the same field gives opposite answers (the baseline changes, 3); why Cavendish is vulnerable and stays narrow after modification (suckers copy one genotype; one added resistance trait does not add variety, 4); why Bt cotton can raise insect species and herbicide tolerance can lower them (fewer sprays against whole-field weed removal, 5); why land sparing is conditional (yield does not protect land by itself, 5); why saving a subspecies is not a species gain unless white rhinos are absent from the baseline area (7); why the rhino rescue starts a bottleneck (one female's eggs, few males, 7); why the stem-cell route could widen it (more founders, 7); why yield is not biodiversity (it measures production, 8). Visible case: one board, two columns, arrows with baseline chips. Video advantage: the amber gene sliding into one repeated strip, insects leaving a sprayed crop row, the gene-pool cluster squeezing through a bottleneck and regaining colours. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the attempt 2 card is the densest frame and is the task.",
+    "conversationalApproach": "A disease-resistant Cavendish banana and the northern white rhino rescue both use genetic techniques to stop something dying out, so the question is whether each increases biodiversity and how to trace the effect; biodiversity is split into genetic, species and ecosystem levels, each effect is a change from a named baseline, the resistant banana adds one resistance trait but the crop stays one clone, crop fields can gain or lose insect species depending on the trait and baseline, and the rhino rescue could preserve the subspecies and some of its genetic diversity, adding a species to an area only if white rhinos are absent from that baseline area, while starting a genetic bottleneck that a stem-cell route could widen; yield is not a level, so answers trace each level on a stated baseline. Two exam questions follow with brief feedback.",
+    "openingDecision": "Two rescues. Every Cavendish banana plant is a clone, and the fungus TR4 can kill any of them, so Australian scientists added a resistance gene from a wild banana. And the northern white rhino is down to two females, so scientists are making rhino embryos in the lab. Both use genetic techniques to stop something dying out. But does each one actually increase biodiversity? That depends on which level you look at, and what you compare it with.",
+    "understandingCheck": "10a is an explain item: a herbicide-tolerant crop beside a small wild relative population that can cross with it, with herbicide sprayed at the field edge; explain how this could reduce the wild population's genetic diversity. It applies b08's gene flow and Year 11 selection to scene 2's genetic level. 10c is an evaluate item: the claim that planting blight-resistant modified chestnuts crossed with wild survivors will improve biodiversity. It tests the full route stop (trace each level, name the baseline, judge). Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): answer, key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B6-IQ2-01: \"investigate the uses and applications of biotechnology (past, present and future), including: (ACSBL087)\", with the listed sub-point this video carries: \"evaluating the changes to the Earth's biodiversity due to genetic techniques\". B6-IQ3-06: \"evaluate the effect on biodiversity of using biotechnology in agriculture\". The other B6-IQ2-01 sub-points belong to b10 and b11. Both dotpoints are shared with b13: this video owns the tracing half (name the level, name the baseline, say which way each level moves and why), and b13 owns the weighing half (benefits against biodiversity risks, a justified conditional judgement across cases). Update the ledger rows when this design passes review. The verbs: \"evaluate\" is carried by attempt 2 (evaluate a claim level by level, ending in a judgement; what-markers-reward: \"test the thing named in the question against the evidence and reach a supported judgement\"); attempt 1 uses \"explain\" on the site's own analyse pathway (gene flow into a wild relative). The HSC marker-reported fault \"generic claims about biotechnology without explaining its actual effect on biodiversity\" (`../research/question-types-bio-m6.md`, 2019 Q24) is the fault scene 8 and both feedbacks target."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One levels board throughout: three horizontal rows, top to bottom \"ecosystem\", \"species\", \"genetic\", each with a small coded zoom icon at its left (a landscape of three habitat patches; four different species outlines; a slim allele strip with coloured rings, b01's `AlleleRing` style). Case columns sit to the right of the row labels; each column has a baseline chip at its top (\"compared with ...\") and a mark cell in each row: an up arrow (more diversity), a down arrow (less), a level dash (no change) or a grey \"?\" (uncertain), never a score. The crop column (scenes 4 and 5) uses `b1-banana-plantation-tr4-v1.png`, the new `m6-banana-wild-vs-cavendish-v1.png`, `b1-varied-seedlings-v1.png`, `m6-bt-cotton-v1.png` and `m6-field-monoculture-mixed-v1.png`. The conservation column (scenes 6 and 7) uses `m6-northern-white-rhino-v1.png` (once for Najin and Fatu, once small and tinted for the southern white surrogate, always labelled in code), `m6-icsi-v1.png`, `m6-insemination-straw-tank-v1.png` (the dewar, labelled \"frozen cells and sperm\") and coded gene-pool rings. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey row labels; each tag fades when the next cue lands; the column not being discussed dims to grey.",
+    "transitionPlan": "The banana plantation and rhino plates open the hook with the heading \"Which level? Compared with what?\"; the levels board draws its three rows one per cue; the baseline split shows one field against two alternatives; the crop column fills its cells as the amber resistance band slides into the repeated allele strip and the field glyphs change under spray; the rescue flow draws from eggs to embryos to the surrogate; the conservation column fills with grey \"?\" cells and their conditions while the gene-pool rings pass through a bottleneck and regain colours; the yield chip is crossed outside the board and the model sentence writes under it; the memory lines write large; each attempt clears the board and its feedback underlines the card as a small panel or board fills; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. Left: `b1-banana-plantation-tr4-v1.png` (healthy and wilting plants); on \"resistance gene\" a small coded `SlimStrand` draws under it and takes one amber inserted band (tag \"gene from a wild banana\").",
+      "teachingReason": "Hook (two rescues): Two rescues.",
+      "narrationCue": "resistance gene / biodiversity",
+      "motionPurpose": "On the spoken cues: Right: `m6-northern-white-rhino-v1.png`, with a coded \"2\" badge and two small female symbols on \"two females\"; on \"rhino embryos in the lab\" the `m6-insemination-straw-tank-v1.png` dewar appears small beside it (no tag). On \"stop something dying out\" two small ticks write under the plates. On",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Left: `b1-banana-plantation-tr4-v1.png` (healthy and wilting plants); on \"resistance gene\" a small coded `SlimStrand` draws under it and takes one amber inserted band (tag \"gene from a wild banana\"). Right: `m6-northern-white-rhino-v1.png`, with a coded \"2\" badge and two small female symbols on \"two females\"; on \"rhino embryos in the lab\" the `m6-insemination-straw-tank-v1.png` dewar appears small beside it (no tag). On \"stop something dying out\" two small ticks write under the plates. On \"biodiversity\" a grey \"?\" writes between them. On \"which level\" and \"compared with\" the tags fade and the heading writes on: \"Which level? Compared with what?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "three-levels",
+      "visualDecision": "new",
+      "visualReference": "the hook clears.",
+      "teachingReason": "Three levels: Biodiversity isn't one number.",
+      "narrationCue": "Genetic diversity / Species diversity / ecosystem diversity",
+      "motionPurpose": "On the spoken cues: The `LevelsBoard` draws its three rows from the bottom up, one per cue, each with its zoom icon and a short grey gloss: on \"Genetic diversity\", the bottom row \"genetic\" with an allele strip whose rings show several colours (gloss \"alleles in a gene pool\"); on \"Species diversity\", the middle row",
+      "motionRole": "explain",
+      "onScreenChange": "the hook clears. The `LevelsBoard` draws its three rows from the bottom up, one per cue, each with its zoom icon and a short grey gloss: on \"Genetic diversity\", the bottom row \"genetic\" with an allele strip whose rings show several colours (gloss \"alleles in a gene pool\"); on \"Species diversity\", the middle row \"species\" with four different species outlines (a bee, a bird, a small plant, a beetle; gloss \"species in an area\"); on \"ecosystem diversity\", the top row \"ecosystem\" with three habitat patches (grassland, woodland, wetland; gloss \"habitats across a region\"). Each gloss shrinks to grey when the next row writes. On \"raise one level and lower another\" a sample up arrow appears in the species row and a sample down arrow in the genetic row, then both fade. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "baseline",
+      "visualDecision": "adjust",
+      "visualReference": "the board shrinks to the right.",
+      "teachingReason": "Compared with what?: There's a second question: compared with what?",
+      "narrationCue": "baseline",
+      "motionPurpose": "On the spoken cues: The `BaselineSplit` draws: a centre field (the monoculture half of `m6-field-monoculture-mixed-v1.png`, tag \"modified crop field\"). On \"a sprayed conventional field\" a second, coded field outline appears at the left with a small spray-can icon and three insect glyphs; the centre field shows six",
+      "motionRole": "explain",
+      "onScreenChange": "the board shrinks to the right. The `BaselineSplit` draws: a centre field (the monoculture half of `m6-field-monoculture-mixed-v1.png`, tag \"modified crop field\"). On \"a sprayed conventional field\" a second, coded field outline appears at the left with a small spray-can icon and three insect glyphs; the centre field shows six insect glyphs, and an up arrow joins them (tag \"more insect species\"). On \"the bush it replaced\" the mixed planting half of the same plate appears at the right with many insect glyphs, and a down arrow joins the centre field to it (tag \"far fewer\", replacing \"more insect species\"). On \"Same field, opposite answers\" both arrows pulse together. On \"baseline\" the term writes on with the gloss \"what you compare it with\", and the word \"compared with ...\" moves onto the board as an empty baseline chip. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "banana-genetic",
+      "visualDecision": "adjust",
+      "visualReference": "the board returns full width with the crop column active.",
+      "teachingReason": "The banana: the genetic level: Back to the bananas.",
+      "narrationCue": "genetic",
+      "motionPurpose": "On the spoken cues: On \"grown from suckers\" the new `m6-banana-wild-vs-cavendish-v1.png` appears small with its seedless Cavendish half ringed (tag \"seedless: grown from suckers\"); the hook's plantation plate stays small beside it, so every plant on screen in this scene is a banana (the strawberry clone row is not",
+      "motionRole": "explain",
+      "onScreenChange": "the board returns full width with the crop column active. On \"grown from suckers\" the new `m6-banana-wild-vs-cavendish-v1.png` appears small with its seedless Cavendish half ringed (tag \"seedless: grown from suckers\"); the hook's plantation plate stays small beside it, so every plant on screen in this scene is a banana (the strawberry clone row is not used here). On \"the same alleles\" the genetic row's allele strip shows one ring pattern repeated across the row. On \"a resistance gene from a wild banana\" the wild half of the banana plate brightens and a short amber band slides from it into the strip (tag \"gene from a wild banana\", replacing the suckers tag). On \"resisted TR4\" the plantation plate's healthy plants brighten (tag \"approved 2024: a back-up\", replacing the gene tag). On \"still one clone\" the strip's repeated pattern pulses, every copy now carrying the same amber band. On \"Compared with ordinary Cavendish\" the crop column's baseline chip fills \"ordinary Cavendish\" and the genetic cell takes a small up arrow (\"one added resistance trait; crop still one clone\"). On \"Compared with growing many varieties\" a second baseline chip fills \"many varieties\", `b1-varied-seedlings-v1.png` appears small beside it, and the genetic cell under it takes a down arrow (\"still one clone\"). Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "field-species-ecosystem",
+      "visualDecision": "adjust",
+      "visualReference": "the banana thumbnails dim; the crop column's lower cells stay.",
+      "teachingReason": "The field: species and ecosystems: Now the field itself.",
+      "narrationCue": "species / ecosystem",
+      "motionPurpose": "On the spoken cues: On \"Bt cotton\" `m6-bt-cotton-v1.png` appears small with b10's two spray-count bars as a thumbnail (\"before Bt\", \"with Bt\"); the species cell takes an up arrow with the baseline chip \"sprayed cotton\" (tag \"more insect species survive\"). On \"tolerate a weedkiller\" the cotton dims and a coded crop row",
+      "motionRole": "explain",
+      "onScreenChange": "the banana thumbnails dim; the crop column's lower cells stay. On \"Bt cotton\" `m6-bt-cotton-v1.png` appears small with b10's two spray-count bars as a thumbnail (\"before Bt\", \"with Bt\"); the species cell takes an up arrow with the baseline chip \"sprayed cotton\" (tag \"more insect species survive\"). On \"tolerate a weedkiller\" the cotton dims and a coded crop row with a few wildflower and weed glyphs between the plants appears (tag \"herbicide-tolerant crop\"); on \"spray the whole crop\" a coded spray drifts across and the weed and wildflower glyphs grey out, then the small insect glyphs above them leave (tag \"fewer weeds and wildflowers, fewer insects\", replacing the herbicide tag); on \"compared with fields where some weeds survive\" the species cell takes a second, down arrow beside the first, with its own small baseline chip \"fields where some weeds survive\". On \"ecosystem\" the ecosystem row lights: a coded landscape strip with a farm block and a bush block; on \"less bush cleared\" the farm block stays the same size while a dashed \"would-be farmland\" outline over the bush fades (tag \"could spare land\"); on \"only if that land is actually protected\" the ecosystem cell takes a grey \"?\" with a small condition line \"if land is protected\". At most one tag and the active cell are bright. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "rhino-rescue",
+      "visualDecision": "adjust",
+      "visualReference": "the crop column dims to grey; the conservation column opens with `m6-northern-white-rhino-v1.png` at its top.",
+      "teachingReason": "The rhino rescue: Now the rhino.",
+      "narrationCue": "surrogate",
+      "motionPurpose": "On the spoken cues: On \"The last male died in 2018\" a small grey tag \"2018: last male died\" writes and fades. On \"Najin and Fatu\" two coded name chips sit under the plate. The `RescueFlow` draws left to right below the board, one step per cue: on \"collect eggs from Fatu\", a small egg glyph from the Fatu chip; on",
+      "motionRole": "explain",
+      "onScreenChange": "the crop column dims to grey; the conservation column opens with `m6-northern-white-rhino-v1.png` at its top. On \"The last male died in 2018\" a small grey tag \"2018: last male died\" writes and fades. On \"Najin and Fatu\" two coded name chips sit under the plate. The `RescueFlow` draws left to right below the board, one step per cue: on \"collect eggs from Fatu\", a small egg glyph from the Fatu chip; on \"fertilise them in the lab\", `m6-icsi-v1.png` small; on \"sperm frozen\", the dewar plate small with a grey label \"banked sperm\"; on \"freeze the embryos\", a row of small coded embryo circles; on \"surrogate\", a second rhino plate, smaller and tinted slightly warmer, labelled in code \"southern white rhino (surrogate)\", with an arrow from the embryos to it, and the term \"surrogate\" writes on with the gloss \"carries another's embryo\". On \"dozens\" the embryo row counts up to a coded \"39\" (tag \"39 embryos (2026)\"), just before the surrogate arrow draws; on \"no northern white pregnancy has lasted yet\" the arrow to the surrogate takes a grey \"not yet\". Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "rhino-levels",
+      "visualDecision": "new",
+      "visualReference": "the rescue flow shrinks; the conservation column's cells fill on their cues.",
+      "teachingReason": "Tracing the rhino: Trace the levels.",
+      "narrationCue": "subspecies / species / genetic / ecosystem",
+      "motionPurpose": "On the spoken cues: On \"subspecies\" the baseline chip \"doing nothing\" fills and a tag writes: \"could preserve the subspecies and some of its genetic diversity\". On \"species\" the species cell takes a grey \"?\", not an up arrow, with the condition line \"adds a species to an area only if white rhinos are absent from that",
+      "motionRole": "explain",
+      "onScreenChange": "the rescue flow shrinks; the conservation column's cells fill on their cues. On \"subspecies\" the baseline chip \"doing nothing\" fills and a tag writes: \"could preserve the subspecies and some of its genetic diversity\". On \"species\" the species cell takes a grey \"?\", not an up arrow, with the condition line \"adds a species to an area only if white rhinos are absent from that baseline area\". On \"one female's eggs and a few males' sperm\" the genetic row's ring cluster (b08's gene-pool style) draws small: one female's two rings and three males' rings, a handful of colours only; on \"bottleneck\" the cluster passes through a narrow coded bottleneck outline and the genetic cell takes a down arrow (tag \"bottleneck from the start\", replacing the subspecies tag; the species condition line dims). On \"a second route\" a dashed branch draws from the dewar: about twelve small coded cell circles, each a different ring colour, pass through an arrow labelled small \"stem cells\" to egg and sperm glyphs; the gene-pool cluster gains more colours, and the down arrow lightens to a grey \"?\" with the condition line \"wider if more founders\" (tag \"a second route, still in research\"); the bottleneck outline and the \"stem cells\" label dim to grey as the tag writes, so at most three text items are bright. On \"decades away\" the ecosystem row's grassland patch lights faintly and the ecosystem cell takes a grey \"?\" (\"decades away\"). Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "yield-not-a-level",
+      "visualDecision": "new",
+      "visualReference": "the full board, both columns at equal weight with their arrows and baseline chips.",
+      "teachingReason": "Yield isn't a level: Notice what isn't a level: yield.",
+      "narrationCue": "yield / not a level of biodiversity / isn't a gain at every level / Strong answers / separately / clearing habitat",
+      "motionPurpose": "On the spoken cues: On \"yield\" a chip \"more yield\" slides toward the board and stops outside it, finding no row; it takes a grey scribble cross (caption \"not a level of biodiversity\"). On \"isn't a gain at every level\" the conservation column's three cells pulse in turn (all three grey \"?\", each with its condition). On",
+      "motionRole": "explain",
+      "onScreenChange": "the full board, both columns at equal weight with their arrows and baseline chips. On \"yield\" a chip \"more yield\" slides toward the board and stops outside it, finding no row; it takes a grey scribble cross (caption \"not a level of biodiversity\"). On \"isn't a gain at every level\" the conservation column's three cells pulse in turn (all three grey \"?\", each with its condition). On \"Strong answers\" a model sentence writes under the board: \"This could preserve the northern white rhino subspecies and some of its genetic diversity. It would add a species to a particular area only if white rhinos are absent from that baseline area.\" with \"subspecies\", \"a species\" and \"baseline area\" underlined amber. On \"separately\" two small grey chips write beside it: \"genetic: bottleneck\" and \"ecosystem: decades away\". On \"clearing habitat\" the sentence and chips dim and a small coded landscape patch beside the board loses its trees to a bare block (tag \"on land: habitat clearing is the biggest driver\"); on \"whatever the crop\" a second, coded field of a different crop clears the same way beside it; on \"the farming it replaces\" the crop column's baseline chip flashes \"conventional farming\". Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "adjust",
+      "visualReference": "two handwritten lines write on large, one per cue: \"The banana problem returns.\" (with the clone row thumbnail and the bull plate thumbnail `b3b-dairy-bull-side-v1.png` for \"one top sire\"), \"Which level? Compared with what?\" (with the three row icons and an empty baseline chip).",
+      "teachingReason": "Memory: Two things to hold on to.",
+      "narrationCue": "The banana problem returns / which level, and compared with what?",
+      "motionPurpose": "On the spoken cues: On \"one disease can hit many\" a small grey tag writes under the first line, \"copies narrow the gene pool\", then fades. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "two handwritten lines write on large, one per cue: \"The banana problem returns.\" (with the clone row thumbnail and the bull plate thumbnail `b3b-dairy-bull-side-v1.png` for \"one top sire\"), \"Which level? Compared with what?\" (with the three row icons and an empty baseline chip). On \"one disease can hit many\" a small grey tag writes under the first line, \"copies narrow the gene pool\", then fades. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears: no rows, arrows or baseline chips.",
+      "teachingReason": "Unseen transfer task (attempt one (a crop and its wild relative)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. A crop has",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a crop and its wild relative))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears: no rows, arrows or baseline chips. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\": \"A crop plant has been genetically modified to tolerate a herbicide (weedkiller). The crop is grown beside a small population of a wild relative that can cross-pollinate with it. Farmers spray the herbicide along the field edges, where the wild plants grow.\" Demand: \"Explain how this could reduce the genetic diversity of the wild population. (4 marks)\". One lined answer box. Nothing answer-bearing: no gene-pool rings, no arrows. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "gene flow / common",
+      "motionPurpose": "On the spoken cues: A small coded panel draws: crop rows at the left, a wild plant cluster at the right with b08-style coloured rings. (1) On \"gene flow\" \"can cross-pollinate with it\" underlines amber; pollen dots drift from the crop to the wild plants and one amber ring joins the wild cluster (chip \"gene flow by",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A small coded panel draws: crop rows at the left, a wild plant cluster at the right with b08-style coloured rings. (1) On \"gene flow\" \"can cross-pollinate with it\" underlines amber; pollen dots drift from the crop to the wild plants and one amber ring joins the wild cluster (chip \"gene flow by pollen\"). (2) On \"survive and breed\" \"spray the herbicide along the field edges\" underlines; a coded spray crosses the wild cluster; plants without the amber ring grey out and the amber ring doubles over two quick ticks (chip \"selection: tolerance becomes common\"). (3) On \"swamp\" \"small population\" underlines; more crop rings flow in and several local colours drop out of the cluster (chip \"local alleles lost\"). (4) On \"the classic mistake\" the chip \"a crop's genes can't reach a different population\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (restoring a tree)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. In the early twentieth century, a fungal",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (restoring a tree))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with the new `m6-chestnut-burr-leaf-v1.png` small at its upper left: \"American chestnut trees were once common in forests across eastern North America. In the early twentieth century, a fungal disease (chestnut blight) killed billions of them. Wild chestnuts survive, mostly as small shoots growing from old roots. Scientists have proposed planting chestnut trees genetically modified with a gene that gives resistance to the fungus, crossed with surviving wild chestnuts.\" Demand: \"Evaluate the claim that this program will improve biodiversity. (5 marks)\". One lined answer box. Nothing answer-bearing: no levels board, no arrows. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Species level / Genetic level / if crossed widely / Ecosystem level / partly supported / the classic mistake",
+      "motionPurpose": "On the spoken cues: A small `LevelsBoard` draws beneath it with one column and the baseline chip \"forests without chestnuts\". (1) On \"Species level\" \"were once common\" and \"killed billions\" underline amber; the species cell takes an up arrow (\"tree returns\"). (2) On \"Genetic level\" \"crossed with surviving wild",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A small `LevelsBoard` draws beneath it with one column and the baseline chip \"forests without chestnuts\". (1) On \"Species level\" \"were once common\" and \"killed billions\" underline amber; the species cell takes an up arrow (\"tree returns\"). (2) On \"Genetic level\" \"crossed with surviving wild chestnuts\" underlines; the genetic cell takes an up arrow with the condition \"if crossed widely\", and a coded strip of one repeated ring pattern sits beside it, crossed in grey (\"a few clones: narrow\"). (3) On \"Ecosystem level\" the ecosystem cell takes a grey \"?\" (\"food tree back; other effects uncertain\"). (4) On \"partly supported\" a verdict bar writes: \"Verdict: partly supported. Species: likely gain. Genetic: gain only if bred widely. Ecosystem: uncertain.\" (5) On \"the classic mistake\" the chip \"it saves a species, so every level improves\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "four step chips write on in a column, one per cue: \"case + baseline (compared with what?)\", \"genetic: alleles in the gene pool\", \"species: species in the area\", \"ecosystem: habitats across the region\", with a bracket \"which way, and why?\".",
+      "teachingReason": "Decision rule and handoff: So when a question asks how a biotechnology changes biodiversity, name the case and the baseline.",
+      "narrationCue": "So when a question asks how a biotechnology",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: weighing benefits against biodiversity risks\" (a small coded balance glyph). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "four step chips write on in a column, one per cue: \"case + baseline (compared with what?)\", \"genetic: alleles in the gene pool\", \"species: species in the area\", \"ecosystem: habitats across the region\", with a bracket \"which way, and why?\". A \"Next\" chip slides in at the lower right: \"Next: weighing benefits against biodiversity risks\" (a small coded balance glyph). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b12-learning-review.md",
+      "sha256": "0e8cec11a1cd77934d229b701854e4ec2e26324ea7e8ca803e866be38bbb58d0"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b12-claude-science-check.md",
+      "sha256": "ab4f43192d717852a60a481dfcf22f71b0d838f6a0175e1aabaa2d5969c04c91"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

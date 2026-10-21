@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/skills03/lesson.json",
+    "lessonSha256": "d722a67ce32810e75830f4b0c0d450b2439f5206092806d2d8291cccad290eb1"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "s01 (reading routine, annotation layer) and s02 (verb meanings; describe against explain). Biology: B10 (incomplete dominance in snapdragons, co-dominance in roan cattle, heterozygote phenotypes), B5a and B5b (sister chromatids, homologous pairs, one homologue from each parent). Chemistry: M6 C05 (strong and weak acids; extent of ionisation; strength against concentration), C12 (titration: moles from volume and concentration; 1 : 1 mole ratio for a monoprotic acid and NaOH), Year 11 acid and metal reactions, electrical conductivity of ionic solutions.",
+    "startsWith": "Comparisons written as two separate descriptions. The video opens: Here's a habit NESA's marking feedback keeps flagging. In eight of the last twelve Chemistry and Biology reports, it points out comparisons written as two separate descriptions: everything about one thing, then everything about the other. Each half can be right, and the answer still doesn't compare.",
+    "stopsAfter": "the three verb meanings; pairs on the same feature; the table-to-sentence trick; comparison words and the matched-feature check; a weak against strong compare; one Chemistry compare drill and one Biology distinguish drill.",
+    "nextLesson": "s04, \"Analyse, assess, evaluate, justify\"."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/skills-s03.md"
+  ],
+  "teaching": {
+    "task": "When a question asks you to compare, contrast or distinguish, what makes the answer actually compare?",
+    "causalExplanation": "(1) NESA marking feedback flags comparisons written as two separate descriptions in eight of the last twelve Chemistry and Biology reports, and compare questions were worth three to six marks (1); (2) the three verbs with their paraphrased glossary meanings: compare takes similarities or differences, contrast and distinguish want differences (2); (3) one HSC-style Biology question compares snapdragon and roan cattle crosses (3); (4) the routine reads the verb, the marks and the givens: true-breeding parents differ, so every offspring is heterozygous (4); (5) a pair table puts one feature per row across both cases (5); (6) each row becomes one paired sentence with a comparison word: both heterozygotes look unlike either parent, so neither allele completely masks the other (6); (7) comparison words do the comparing, but cannot rescue a mismatched pair (7); (8) two correct descriptions still leave the comparing to the marker (8); (9) the guidelines rewarded complete pairing of the features asked about, not length (9); two drills with feedback (10 to 13); decision rule and handoff (14); key notes (15).",
+    "conversationalApproach": "one fault carries the video: NESA keeps flagging comparisons written as two separate descriptions. One HSC-style Biology question (snapdragons and roan cattle) holds the content still while the answer is built: the routine reads the givens, a tiny pair table lines up one feature per row, and each row becomes one paired sentence with both or whereas, with a mark counter. A mismatched pair and a weak two-description answer show what fails, and the guidelines show what the marks followed. Two drills, one per subject, practise the shape.",
+    "openingDecision": "Here's a habit NESA's marking feedback keeps flagging. In eight of the last twelve Chemistry and Biology reports, it points out comparisons written as two separate descriptions: everything about one thing, then everything about the other. Each half can be right, and the answer still doesn't compare. In recent Biology papers, compare questions were worth three to six marks. So let's learn to write in pairs.",
+    "understandingCheck": "the narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, compare, 3 marks: 0.10 mol L-1 hydrochloric acid against 0.10 mol L-1 ethanoic acid: conductivity, reaction with magnesium ribbon and the volume of 0.10 mol L-1 sodium hydroxide needed to neutralise 20.0 mL. Constraints \"Using the data\" and \"in terms of acid strength\". It has a surprising similarity (the same 20.0 mL) and two differences, so it trains both halves. Content: M6 C05 (strong and weak; extent of ionisation), C12 (titration and mole ratio), Year 11 reactions of acids with metals. Crossed habit: \"Hydrochloric acid is a strong acid that reacts quickly. Ethanoic acid is a weak acid that reacts slowly.\" (two descriptions; no similarity). Drill 2, Biology, distinguish, 2 marks: homologous chromosomes against sister chromatids, with a painted chromosome-pair diagram. Content: B5a and B5b. It trains \"differences only, still in pairs\". Crossed habit: two stand-alone definitions with no feature they differ in.",
+    "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"comparisons written as two separate descriptions\". It stops after the meanings of compare, contrast and distinguish, writing in pairs, the table-to-sentence trick, comparison words and the matched-feature check, a weak against strong compare, and two drills. It does not cover judgement verbs (s04), calculations (s05) or graph trends (s06)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. the shared skills kit (`src/explainer/lessons/skills-shared/`): `QuestionCard` with its annotation layer (`Ann` kinds verb, marks, given, constraint, ring, tag; `CardDim` for dimming parts), `MarksBadge`, `AnswerBox` (rows, margin ticks, counter, slots, `AAnn` under and ring), `MarkCounter`, `LostMarksTag`, `WeakStrongPanel`, `RoutineStrip` (mini at the far left; `none` tag on row 4 in the worked question), `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate` and `mkPlate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`, `DrawSquiggle`. New lesson-local components (suggested folder `src/explainer/lessons/skills-s03`): `PairTable`: a hand-drawn three-column table (feature, case A, case B) whose rows write on one at a time; a row can glow, dim or send a `PenArrow` down to an answer row. Built from `HandLine`, `DrawPath` and `Chip`. `PairLines`: thin amber links drawn between the matching clauses of two answer rows or two columns (used to show \"paired\" against \"unpaired\"). Built from `PenArrow` with `head={false}`. `HairZoom`: two magnified circles, one over the roan coat (separate coded hair strokes, each fully red or fully white) and one over a pink petal (an even pink wash). The logic is ported from B10's scene 8 zoom and redrawn in this kit's style. Plates: snapdragon red, white and pink; cattle red, white and roan (`COW` in `plates.ts`); B5 chromosome pair; M6 beaker (twice). New `mkPlate` entries are needed for the snapdragons, the chromosome pair and the beaker (alpha boxes measured 21 Oct; see Assets). No people, hands or faces.",
+    "transitionPlan": "The report-tile grid opens and the two squiggle blocks slide into paired columns; the verb cards build with their count chips; the question card writes on with the cross plates in the side column; each annotation lands on its cue and adds a routine strip row; the pair table draws row by row with pair lines and brief hair and petal zoom circles; pen arrows carry each row into the answer box, which fills with ticks and the mark counter; the word trays build and the mismatched chip is crossed; the weak answer slides in beside the strong one; the guideline frame and bar clear one at a time; each drill clears the board and its feedback annotates the card before the model answer writes; the decision rule card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "Twelve small report tiles in a 6 x 2 grid (as s01's hook), labelled \"Biology 2020\" to \"Biology 2025\" and \"Chemistry 2020\" to \"Chemistry 2025\".",
+      "teachingReason": "Hook: Here's a habit NESA's marking feedback keeps flagging.",
+      "narrationCue": "two separate descriptions / three to six marks / pairs",
+      "motionPurpose": "On the spoken cues: On \"eight of the last twelve\" eight tiles take a red `Flag` in turn: Biology 2020, 2022, 2023, 2024, 2025; Chemistry 2021, 2022, 2023. The other four stay plain. `GreyTag`: \"NESA marking feedback, 2020 to 2025: 8 of 12 reports\". On \"two separate descriptions\" the tiles shrink up and a ruled answer box draws. Two blocks of `DrawSquiggle` handwriting fill it, one labelled \"all about A\", then a gap, then \"all about B\".",
+      "motionRole": "explain",
+      "onScreenChange": "Twelve small report tiles in a 6 x 2 grid (as s01's hook), labelled \"Biology 2020\" to \"Biology 2025\" and \"Chemistry 2020\" to \"Chemistry 2025\". On \"eight of the last twelve\" eight tiles take a red `Flag` in turn: Biology 2020, 2022, 2023, 2024, 2025; Chemistry 2021, 2022, 2023. The other four stay plain. `GreyTag`: \"NESA marking feedback, 2020 to 2025: 8 of 12 reports\". On \"two separate descriptions\" the tiles shrink up and a ruled answer box draws. Two blocks of `DrawSquiggle` handwriting fill it, one labelled \"all about A\", then a gap, then \"all about B\". A grey question chip \"where's the comparison?\" hangs in the gap. On \"three to six marks\" a small chip strip writes at the right: \"compare: 7 question parts, all Biology, 3 to 6 marks\". `GreyTag`: \"NESA glossary key words only; HSC Chemistry and Biology papers, Section II, 2021 to 2025, counted by question part\". On \"pairs\" the two squiggle blocks slide side by side into two columns and three amber `PairLines` join them row by row. The heading writes on: \"Compare, contrast, distinguish\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "three-verbs",
+      "visualDecision": "new",
+      "visualReference": "Three cards build left to right, each on its cue, each with a small two-column icon: \"compare: similarities or differences\" (icon: two columns joined by an \"=\" link and a \"≠\" link); \"contrast: differences or opposites\" (icon: \"≠\" link only); \"distinguish: how things differ\" (icon: \"≠\" link only).",
+      "teachingReason": "Three-verbs: Here's what NESA's glossary says, in short.",
+      "narrationCue": "Compare / Contrast / Distinguish / one similarity and one difference",
+      "motionPurpose": "On the spoken cues: `GreyTag` under the cards: \"NESA glossary, paraphrased\". On \"one similarity and one difference\" the compare card lifts and a chip writes under it: \"tip: at least one similarity + one difference\". A small grey label \"HSCScience tip\" sits beside it, so the tip is not read as the glossary. On \"seven times\" small count chips sit under the cards: \"7\" under compare, \"0\" under contrast and \"0\" under distinguish, with the",
+      "motionRole": "explain",
+      "onScreenChange": "Three cards build left to right, each on its cue, each with a small two-column icon: \"compare: similarities or differences\" (icon: two columns joined by an \"=\" link and a \"≠\" link); \"contrast: differences or opposites\" (icon: \"≠\" link only); \"distinguish: how things differ\" (icon: \"≠\" link only). `GreyTag` under the cards: \"NESA glossary, paraphrased\". On \"one similarity and one difference\" the compare card lifts and a chip writes under it: \"tip: at least one similarity + one difference\". A small grey label \"HSCScience tip\" sits beside it, so the tip is not read as the glossary. On \"seven times\" small count chips sit under the cards: \"7\" under compare, \"0\" under contrast and \"0\" under distinguish, with the grey tag \"Chemistry and Biology, Section II, 2021 to 2025\". The cards dim to make room. On \"know them\" the contrast and distinguish cards brighten briefly. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "question-card",
+      "visualDecision": "adjust",
+      "visualReference": "`QuestionCard` writes on.",
+      "teachingReason": "Question-card: Here's an HSC-style Biology question.",
+      "narrationCue": "every / pink / roan / compare",
+      "motionPurpose": "On the spoken cues: Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Card text: \"Two crosses were carried out. All the parents were true-breeding.\" A small table (`QTable`): \"Organism | Parents crossed | Offspring\"; \"snapdragon | red flowers x white flowers | all pink flowers\"; \"cattle | red coat x white coat | all roan (a mixture of red hairs and white hairs)\". \"Compare the inheritance of flower colour in the",
+      "motionRole": "explain",
+      "onScreenChange": "`QuestionCard` writes on. Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Card text: \"Two crosses were carried out. All the parents were true-breeding.\" A small table (`QTable`): \"Organism | Parents crossed | Offspring\"; \"snapdragon | red flowers x white flowers | all pink flowers\"; \"cattle | red coat x white coat | all roan (a mixture of red hairs and white hairs)\". \"Compare the inheritance of flower colour in the snapdragons with the inheritance of coat colour in the cattle.\" \"(3 marks)\" Plates small in the side column, two rows: `m5x-snapdragon-red-v1.png` x `m5x-snapdragon-white-v1.png` with an arrow to `m5x-snapdragon-pink-v1.png`; `m5x-cattle-red-v1.png` x `m5x-cattle-white-v1.png` with an arrow to `m5x-cattle-roan-v1.png`. Each offspring plate lands on its cue (\"pink\", \"roan\"). Word tags only; no people. On \"Chemistry\" a grey tag: \"Chemistry students: watch the shape of the answer\". Empty eight-line `AnswerBox` below, counter \"0 / 3\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "table build",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "read-it",
+      "visualDecision": "new",
+      "visualReference": "`RoutineStrip` mini at the far left; each row lights on its cue.",
+      "teachingReason": "Read-it: Run the routine first.",
+      "narrationCue": "compare / three paired points / True-breeding / Pink / red and white hairs",
+      "motionPurpose": "On the spoken cues: Annotations on the card (`Ann`): verb: amber highlighter on \"Compare\"; marks: ring on \"(3 marks)\", lifting to a `MarksBadge` \"3\" parked by the counter; given: underlines on \"true-breeding\", \"all pink flowers\" and \"a mixture of red hairs and white hairs\". On \"three paired points\" three dotted slots appear in the answer box, each split into a left half and a right half joined by a faint dashed pair line. On",
+      "motionRole": "explain",
+      "onScreenChange": "`RoutineStrip` mini at the far left; each row lights on its cue. Annotations on the card (`Ann`): verb: amber highlighter on \"Compare\"; marks: ring on \"(3 marks)\", lifting to a `MarksBadge` \"3\" parked by the counter; given: underlines on \"true-breeding\", \"all pink flowers\" and \"a mixture of red hairs and white hairs\". On \"three paired points\" three dotted slots appear in the answer box, each split into a left half and a right half joined by a faint dashed pair line. On \"true-breeding\" a chip hangs off the underline: \"true-breeding → each parent homozygous; parents differ → offspring heterozygous\". On \"side by side\" the two offspring plates (pink snapdragon, roan calf) slide to sit next to each other at the top of the side column. On \"no constraint phrase\" the strip's row 4 shows its grey \"none here\" tag (`none`). The card then shrinks to about 0.72 and keeps its annotations (as s02).",
+      "motionTools": [
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "Mark underline",
+        "Mark highlight",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "pair-table",
+      "visualDecision": "new",
+      "visualReference": "`PairTable` draws in the side column (the plates shrink to small column headers): header row \"feature | snapdragons | cattle\".",
+      "teachingReason": "Pair-table: Here's the trick.",
+      "narrationCue": "feature / both parents / in between / both",
+      "motionPurpose": "On the spoken cues: On \"feature\" the left column header glows; a grey tag \"one row per feature\". Row 1 writes: \"offspring genotype | heterozygous | heterozygous\". Row 2 writes: \"offspring against parents | different from both parents | different from both parents\". On \"both parents\" a tiny \"≠ red, ≠ white\" mark appears in each cell. Row 3 writes: \"how the alleles show | in between (pink) | both colours, separate hairs\". On \"in between\"",
+      "motionRole": "explain",
+      "onScreenChange": "`PairTable` draws in the side column (the plates shrink to small column headers): header row \"feature | snapdragons | cattle\". On \"feature\" the left column header glows; a grey tag \"one row per feature\". Row 1 writes: \"offspring genotype | heterozygous | heterozygous\". Row 2 writes: \"offspring against parents | different from both parents | different from both parents\". On \"both parents\" a tiny \"≠ red, ≠ white\" mark appears in each cell. Row 3 writes: \"how the alleles show | in between (pink) | both colours, separate hairs\". On \"in between\" and \"both\" the `HairZoom` circles open briefly beside the table: an even pink wash over a petal (tag \"pink: every cell in between\") and separate red and white hair strokes over the roan flank (tag \"roan: each hair one colour\"). They close at the end of the sentence. On \"lines up one feature\" each row gets a horizontal amber `PairLines` link from the snapdragon cell to the cattle cell. Rows 1 and 2 carry a small \"=\" chip; row 3 carries \"≠\". At most three rows live; the header and tags dim as row 3 writes.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "table-to-sentence",
+      "visualDecision": "new",
+      "visualReference": "For each row, a `PenArrow` runs from the table row to its answer slot, and the row dims as its sentence writes.",
+      "teachingReason": "Table-to-sentence: Now turn each row into one sentence, with a comparison word.",
+      "narrationCue": "in both / both / whereas",
+      "motionPurpose": "On the spoken cues: Answer rows (`ARow`), each ticked as spoken: \"In both crosses the offspring are heterozygous, because each true-breeding parent passes on a different allele.\" Tick, \"1 / 3\". \"Both heterozygotes look unlike either parent, so neither allele completely masks the other.\" Tick, \"2 / 3\". \"Snapdragons show incomplete dominance (an intermediate pink), whereas cattle show co-dominance (both colours fully expressed, in",
+      "motionRole": "explain",
+      "onScreenChange": "For each row, a `PenArrow` runs from the table row to its answer slot, and the row dims as its sentence writes. Answer rows (`ARow`), each ticked as spoken: \"In both crosses the offspring are heterozygous, because each true-breeding parent passes on a different allele.\" Tick, \"1 / 3\". \"Both heterozygotes look unlike either parent, so neither allele completely masks the other.\" Tick, \"2 / 3\". \"Snapdragons show incomplete dominance (an intermediate pink), whereas cattle show co-dominance (both colours fully expressed, in separate hairs).\" Tick, \"3 / 3\". On \"in both\", \"both\" and \"whereas\" the comparison word in its row takes an amber ring (`AAnn` ring). On \"whereas\" a pair line joins \"incomplete dominance (an intermediate pink)\" to \"co-dominance (both colours fully expressed ...)\" within row 3. The counter label \"HSCScience marking guide (illustrative)\" shows under the counter. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "tick",
+        "table build",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "comparison-words",
+      "visualDecision": "new",
+      "visualReference": "The answer box shrinks right.",
+      "teachingReason": "Comparison-words: These little words do the comparing for you.",
+      "narrationCue": "both / whereas / colour with hair",
+      "motionPurpose": "On the spoken cues: Two word trays build at the left, each on its cue: \"similarity: both · in both · similarly\" (green-edged); \"difference: whereas · while · but · unlike · larger than, slower than\" (amber-edged). On \"mismatched pair\" the trays dim and a chip writes: \"Snapdragons are pink, whereas cattle have hair.\" Its \"whereas\" rings amber (it looks right). On \"colour with hair\" two pen underlines mark \"pink\" (labelled \"colour\") and",
+      "motionRole": "explain",
+      "onScreenChange": "The answer box shrinks right. Two word trays build at the left, each on its cue: \"similarity: both · in both · similarly\" (green-edged); \"difference: whereas · while · but · unlike · larger than, slower than\" (amber-edged). On \"mismatched pair\" the trays dim and a chip writes: \"Snapdragons are pink, whereas cattle have hair.\" Its \"whereas\" rings amber (it looks right). On \"colour with hair\" two pen underlines mark \"pink\" (labelled \"colour\") and \"have hair\" (labelled \"coat type\"), joined by a red dashed pair line with a red \"≠ feature\" tag. The chip takes a red scribble cross. Memory aid writes large and handwritten: \"Same feature, both sides, one sentence.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "weak-vs-strong",
+      "visualDecision": "new",
+      "visualReference": "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"3 / 3\"); the weak answer writes on at the left as \"Answer A\".",
+      "teachingReason": "Weak-vs-strong: Now here's a weaker answer.",
+      "narrationCue": "two descriptions / one / pairing",
+      "motionPurpose": "On the spoken cues: On \"Every word is right\" a grey tag \"correct biology\" writes beside Answer A. On \"two descriptions\" Answer A's two sentences pull apart into two separate blocks with a gap, and no pair lines appear. Answer B's three rows show their amber pair lines for contrast. On \"no similarity\" a dashed empty slot appears under Answer A: \"similarity?\". A second slot: \"the difference, said in one sentence?\". On \"one\" one tick",
+      "motionRole": "explain",
+      "onScreenChange": "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"3 / 3\"); the weak answer writes on at the left as \"Answer A\". On \"Every word is right\" a grey tag \"correct biology\" writes beside Answer A. On \"two descriptions\" Answer A's two sentences pull apart into two separate blocks with a gap, and no pair lines appear. Answer B's three rows show their amber pair lines for contrast. On \"no similarity\" a dashed empty slot appears under Answer A: \"similarity?\". A second slot: \"the difference, said in one sentence?\". On \"one\" one tick lands beside \"Cattle show co-dominance\". Counter \"1 / 3\". Grey label \"HSCScience marking guide (illustrative)\". `LostMarksTag`: \"-2: no similarity; the difference is never stated as a pair\". On \"pairing\" Answer A's two blocks slide together and dashed pair lines try to join them: \"incomplete dominance ↔ co-dominance\" and \"pink ↔ red and white hairs\", showing what was missing. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "tick",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "what-guidelines-show",
+      "visualDecision": "new",
+      "visualReference": "A coded two-line answer frame writes (no NESA words): \"A similarity is that both ... .\" / \"A difference is that ... , whereas ... .\"",
+      "teachingReason": "What-guidelines-show: NESA's marking guidelines point the same way.",
+      "narrationCue": "two sentences / all / complete pairing",
+      "motionPurpose": "On the spoken cues: The blanks are `DrawSquiggle` lines. `GreyTag`: \"a NESA Biology sample answer, 2025: its form only\". On \"all\" a small coded three-row table appears with three green ticks and a bar \"all features compared: 3\"; on \"most\" one tick fades and the bar reads \"most features compared: 2\". `GreyTag`: \"a NESA Biology marking guideline, 2024\". The sample-answer frame dims while the bar is live. On \"complete pairing\" the s03",
+      "motionRole": "explain",
+      "onScreenChange": "A coded two-line answer frame writes (no NESA words): \"A similarity is that both ... .\" / \"A difference is that ... , whereas ... .\" The blanks are `DrawSquiggle` lines. `GreyTag`: \"a NESA Biology sample answer, 2025: its form only\". On \"all\" a small coded three-row table appears with three green ticks and a bar \"all features compared: 3\"; on \"most\" one tick fades and the bar reads \"most features compared: 2\". `GreyTag`: \"a NESA Biology marking guideline, 2024\". The sample-answer frame dims while the bar is live. On \"complete pairing\" the s03 pair table returns small, every row joined by its pair line and ticked; a list of loose, unpaired chips beside it stays unticked. One item at a time: the sample-answer frame collapses to its grey tag before the all/most bar draws, and the bar clears before the pair table returns. Footer tag: \"NESA's criteria are set question by question\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-1",
+      "visualDecision": "adjust",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Do the one in your subject,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text: \"Two acid solutions, each with a concentration of 0.10 mol L-1, were tested at 25 °C.\" Table: \"Test | Hydrochloric acid, HCl(aq) | Ethanoic acid, CH3COOH(aq)\"; \"Electrical conductivity | high | low\"; \"Reaction with magnesium ribbon | rapid bubbling | slow bubbling\"; \"Volume of 0.10 mol L-1 NaOH(aq) needed to neutralise 20.0 mL of the acid | 20.0 mL | 20.0 mL\". \"Using the data, compare the two acid solutions in terms of acid strength.\" \"(3 marks)\" Two `m6-beaker-v1.png` plates small at the right with coded labels \"HCl, 0.10 mol L-1\" and \"CH3COOH, 0.10 mol L-1\". No bubbles, no meters: nothing answer-bearing. Empty answer box, counter \"0 / 3\". No annotations: students annotate. `DrillCountdown` 10 seconds with \"Pause here to answer.\" `RoutineStrip` dims.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast (`Ann`): highlighter on \"compare\", ring on \"(3 marks)\", teal brackets on \"Using the data\" and on \"in terms of acid strength\", underlines on the three table rows.",
+      "teachingReason": "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "twenty millilitres / fully / conducts",
+      "motionPurpose": "On the spoken cues: Rows write and tick: \"Similarity: both need 20.0 mL of NaOH: same concentration, both monoprotic, so the same moles of acid. The weak acid keeps ionising as OH- reacts.\" (1 / 3) \"Difference: HCl is strong, fully ionised, whereas CH3COOH is weak, about 1% ionised, so [H3O+] is much higher in HCl.\" (2 / 3) \"So HCl conducts better and bubbles faster with Mg, whereas CH3COOH conducts poorly and bubbles slowly.\" (3 / 3)",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast (`Ann`): highlighter on \"compare\", ring on \"(3 marks)\", teal brackets on \"Using the data\" and on \"in terms of acid strength\", underlines on the three table rows. Rows write and tick: \"Similarity: both need 20.0 mL of NaOH: same concentration, both monoprotic, so the same moles of acid. The weak acid keeps ionising as OH- reacts.\" (1 / 3) \"Difference: HCl is strong, fully ionised, whereas CH3COOH is weak, about 1% ionised, so [H3O+] is much higher in HCl.\" (2 / 3) \"So HCl conducts better and bubbles faster with Mg, whereas CH3COOH conducts poorly and bubbles slowly.\" (3 / 3) Screen load: the drill table rows dim once their line has used them, so the live items are the current line, its pen arrow and its table row. `PenArrow`s run from each table row to the line that uses it. Amber pair lines join \"HCl ...\" and \"CH3COOH ...\" in rows 2 and 3; row 1 rings \"both\". On \"one acid, then the other\" a `CrossedHabit` chip: \"HCl is a strong acid that reacts quickly. Ethanoic acid is a weak acid that reacts slowly.\" takes a red scribble cross. Caption \"two descriptions: where's the similarity?\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-2",
+      "visualDecision": "adjust",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Now Biology. The diagram shows one pair of",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\". Card text: \"The diagram shows one pair of chromosomes in a body cell after DNA replication.\" The plate `b5x-chromosome-pair-v1.png` (pink and teal duplicated chromosomes, matching bands) sits in the card's diagram slot, unstretched. Two coded label brackets: a wide bracket over both chromosomes, \"homologous chromosomes\"; a small bracket over the two chromatids of the pink chromosome, \"sister chromatids\". \"Distinguish between homologous chromosomes and sister chromatids.\" \"(2 marks)\" Empty answer box, counter \"0 / 2\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing: no \"from mother\" or \"from father\" tags, no allele letters.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"Distinguish\", ring on \"(2 marks)\", underlines on \"after DNA replication\".",
+      "teachingReason": "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "parent / one / different alleles",
+      "motionPurpose": "On the spoken cues: Rows write and tick: \"Homologous chromosomes are a pair, one inherited from each parent, whereas sister chromatids are two identical copies of one chromosome, made by DNA replication and joined at the centromere.\" (1 / 2) \"Homologous chromosomes carry the same genes at the same loci but may carry different alleles, whereas sister chromatids carry the same alleles.\" (2 / 2) On \"parent\" small word tags appear on the",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"Distinguish\", ring on \"(2 marks)\", underlines on \"after DNA replication\". Rows write and tick: \"Homologous chromosomes are a pair, one inherited from each parent, whereas sister chromatids are two identical copies of one chromosome, made by DNA replication and joined at the centromere.\" (1 / 2) \"Homologous chromosomes carry the same genes at the same loci but may carry different alleles, whereas sister chromatids carry the same alleles.\" (2 / 2) On \"parent\" small word tags appear on the plate: \"from one parent\" on the pink chromosome and \"from the other parent\" on the teal one. On \"one\" the pink chromosome's two chromatids pulse together. On \"different alleles\" coded allele letters appear at one matching band on each chromatid: \"A\" and \"A\" on the pink chromatids, \"a\" and \"a\" on the teal ones (letters only, aligned loci; HSC style). Pair lines join the \"homologous ...\" and \"sister chromatids ...\" clauses in each row. On \"two quick definitions\" a `CrossedHabit` chip: \"Homologous chromosomes are a pair of chromosomes. Sister chromatids are copies of a chromosome.\" takes a red scribble cross. Caption \"two definitions: differ in what?\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "The three verb cards from scene 2 return as the decision board, each lighting on its cue: \"compare → similarities and differences, in pairs\"; \"contrast, distinguish → differences only, still in pairs\".",
+      "teachingReason": "Decision-rule: So: compare, give similarities and differences, in pairs.",
+      "narrationCue": "compare / Contrast / distinguish / Next",
+      "motionPurpose": "On the spoken cues: On \"Sketch the table\" the pair table returns small with an arrow to three sentence lines, each with \"both\" or \"whereas\" ringed. On \"Next\" a chip slides in: \"Next: analyse, assess, evaluate, justify\". A small balance-scale doodle sits beside it.",
+      "motionRole": "explain",
+      "onScreenChange": "The three verb cards from scene 2 return as the decision board, each lighting on its cue: \"compare → similarities and differences, in pairs\"; \"contrast, distinguish → differences only, still in pairs\". On \"Sketch the table\" the pair table returns small with an arrow to three sentence lines, each with \"both\" or \"whereas\" ringed. On \"Next\" a chip slides in: \"Next: analyse, assess, evaluate, justify\". A small balance-scale doodle sits beside it. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills03-learning-review.md",
+      "sha256": "a31d0297f3a4865e9ca25ea622fcfaf63deb01bc1fbfbe071de5a68860cc5048"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills03-claude-science-check.md",
+      "sha256": "b5fbdffeb6202a401d950fc73b1fe1145e74b4cf5ae1c133e27b697416f9e989"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}
