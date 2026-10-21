@@ -98,3 +98,13 @@ The three-row check strip, which makes "does it make sense?" a habit; the trap p
 **Ready to voice after fixes** (S1 before recording, with science S1; M1 to M4 are cheap and should be applied). Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m6-g01.md` Revision 2 (21 Oct). Narration recounted by script ("> " lines only, bold markers removed): 5,564 characters, about 9.3 minutes (560 s) with holds; no reserve trim needed.
+
+- **S1 (fixed).** Q4 now uses 40.0 mL of 0.0500 mol/L Ba(OH)₂ with 30.0 mL of 0.100 mol/L HCl, as proposed. Changed: the 5a card and narration; 5b narration and line "n(OH⁻) = 2 × 0.0500 × 0.0400 = 0.00400 mol" with the new underline; 5c narration ("seventy millilitres", 0.0143 mol/L, pOH 1.845, pH 12.155), its lines, answer box and `PHTrack` marker; 5d narration (1.845), ghost line, crossed chip and markers; the Decisions table row 4 and changes note (mirror 1.845 against 12.155); Precision; practice model 4; "Numbers to verify" (recomputed by script, matching the science check); the pronunciation note ("forty millilitres"). The YouTube text has no Q4 number, so it is unchanged.
+- **M1 (fixed).** The 2c cue is now "as it should be in an acid".
+- **M2 (fixed, optional part declined).** The Decisions sentence is replaced with the proposed wording, lists C07 worked example 3 with its 0.0800 mol/L Ba(OH)₂ and names Q1's use of nitric acid. Declined: switching Q1 to hydrobromic acid. Q1's concentration, [OH⁻] demand and trap are new, nitric acid is the more familiar strong acid for a warm-up, and the change would touch the card, equation strip, narration and YouTube text for little transfer gain.
+- **M3 (fixed).** The hook's "Ba(OH)₂" thumbnail has no ring; the ring stays in 5b.
+- **M4 (fixed).** Key notes 1 and 4 use the proposed shorter wording; note 3 carries science M1's condition.
+
+All owner rules kept: "Pause here to answer." with a 10 s countdown on all four questions, givens underlined with no givens card, one crossed mistake per question, the clutter limit, no people or hands, Australian spelling, no em dashes (U+2014 count 0, checked by script). Every visual "On ..." cue was re-checked by script against its scene's narration: all are spoken. Next: Codex error check before voicing; repeat this review on the exact voiced preview.

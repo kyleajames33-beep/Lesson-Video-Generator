@@ -95,3 +95,12 @@ All four items are Section II short-answer calculations in HSC form (stem, data,
 **Ready to voice after fixes** (S1 and learning S1 before recording; M1 and M2 are cheap and should be applied). The Codex error check and the NESA-paper search are still required.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m6-g01.md` Revision 2 (21 Oct).
+
+- **S1 (fixed).** The hook now reads: "A strong acid or base question can do more than hand you a concentration and ask for the pH. It can dilute it, mix it with a base, or hide a two in a formula. Each one here comes down to three checks." The cue words are unchanged.
+- **Learning S1 data (applied).** Q4 uses 40.0 mL of 0.0500 mol/L Ba(OH)₂. Recomputed by script (21 Oct): n(OH⁻) 0.00400 mol, n(H₃O⁺) 0.00300 mol, excess 0.00100 mol (3 s.f.), V 0.0700 L, [OH⁻] 0.014286 → 0.0143 mol/L, pOH 1.84510 → 1.845, pH 12.15490 → 12.155; crossed (one OH⁻) pH 1.845. These match this check's table. Every screen line, answer box, `PHTrack` marker, practice model and "Numbers to verify" entry now uses these values; no 0.0800, 0.0550, 0.0182, 1.740 or 12.260 remains outside the change record.
+- **M1 (fixed).** Key note 3: "Tenfold dilution of a strong acid: pH up by 1, while the pH stays well below 7 (an acid never passes 7)."
+- **M2 (fixed).** Doubt (d) added for 12.155 against 12.15 (accept both). The solubility note now reads: barium hydroxide octahydrate dissolves to about 0.18 mol/L at 15 °C and more at 25 °C (CRC); 0.0500 mol/L is well inside. Codex still confirms the figure (asset brief item 2).
+
+Still required: the Codex error check and the NESA-paper search (asset brief items 1 and 3).

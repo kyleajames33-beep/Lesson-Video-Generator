@@ -126,3 +126,13 @@ All four items are Section II short-answer form: "Calculate ... Justify any appr
 **Ready to voice after fixes** (S1 and learning S1 to S3 before recording; M1 to M3 are cheap and should be applied). The Codex error check and the NESA-paper search are still required.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m6-g02.md` Revision 2 (21 Oct).
+
+- **S1 (fixed).** The Q4 card now has three demands: "(a) For each ion, write an equation for its reaction with water as an acid, and as a base." "(b) Use Ka and Kb values to determine which reaction mainly occurs for each ion." "(c) Predict whether a solution of each salt is acidic or basic." Three answer boxes; (a) fills with the four equations as each fork arrow writes in 5b and 5c. 5a narration: "Write an equation for each ion donating a proton to water and accepting one from it. Use the K a values to decide which mainly happens, and predict whether each salt's solution is acidic or basic." (The proposed "Then use" is merged into one sentence with the prediction, to avoid two "Then" sentences.) Practice question 4 and its model answer list all four equations with states.
+- **M1 (adopted, optional realism change).** Q3's measured pH is now 3.03. Recomputed by script (21 Oct): [H₃O⁺] = 9.3325 × 10⁻⁴ (9.33 × 10⁻⁴ kept, 9.3 × 10⁻⁴ reported); [HA] = 0.014067 → 0.0141 mol/L; Ka = 6.1916 × 10⁻⁵ → 6.2 × 10⁻⁵ (screen values (9.33 × 10⁻⁴)² ÷ 0.0141 = 6.17 × 10⁻⁵ → 6.2 × 10⁻⁵, the same); pKa 4.2082, 4.2097 and 4.2076 by the three routes, all → 4.21. Changed: 4a (card, meter readout, narration), 4b, 4c, 4d, the Decisions table and changes note, Precision, practice model 3, "Numbers to verify", Doubt (d), the asset note and the reference line ("Ka 6.25 × 10⁻⁵ (CRC, LibreTexts; pKa 4.20); some school tables 6.3 to 6.5 × 10⁻⁵").
+- **M2 (fixed).** Key note 3: "[H₃O⁺] is measured, so no 5% check is needed. The pKa is not the pH." Key note 5 uses the proposed forwards and backwards wording. The same absolute claim was also removed from the 4b narration (trimmed), the decision board narration ("with no five percent check"), the "Stops after" line and the entry-knowledge line.
+- **M3 (fixed).** The proposed salt-pH and 2HCO₃⁻ ⇌ H₂CO₃ + CO₃²⁻ note is added to "Condition for the Q4 comparison"; H₂O is dropped from the memory aid's list of ions.
+- Learning S2 also cut the 5c screen-only pK values; they are withdrawn from "Numbers to verify".
+
+Still required: the Codex error check, the reference-value confirmation and the NESA-paper search (asset brief items 1 to 3).
