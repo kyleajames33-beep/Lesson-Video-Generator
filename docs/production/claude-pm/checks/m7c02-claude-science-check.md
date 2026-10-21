@@ -115,3 +115,13 @@ A1 ("Classify each pair of compounds as chain, position or functional group isom
 **Ready to voice after fixes** (S1 before recording, with learning S1; M1 to M4 are cheap and belong in author notes or the owner record). The Codex error check is still required.
 
 ## Resolution
+
+Resolved by the authoring session in `lessons/chem-m7-c02.md` Revision 2 (22 Oct 2026).
+
+- **S1: resolved** with the learning S1 text in scene 6 and feedback 1 (the cycloalkanes named as the ring's family). Author note d now says Revision 2 names the family so that "different family" has a referent, and records "ring-chain isomerism" as the university term.
+- **M1: resolved as written.** Site correction 2's reason now reads: methoxymethane is not used as an anaesthetic, and "no enzyme can oxidise it" is unsupported (it is mostly exhaled unchanged because it is a volatile gas); its refrigerant use (R-E170) is real, and high concentrations do depress the nervous system, so the record does not treat those statements as false. The "Correct:" sentence is kept.
+- **M2: resolved as written.** Correction 3 is moved under "Note, not an error (rounding)": −24.8 °C (CRC), often printed as −24 °C; the video says "about minus twenty five". Corrections 4 and 5 keep their numbers (slot 3 is marked as moved) so the Codex brief's "corrections 1 to 5" references stay valid.
+- **M3: resolved as written.** Correction 1 gives the substitutive name 2,2-dichloro-1,1-difluoro-1-methoxyethane, with the functional class name in brackets.
+- **M4: resolved as written** in author note d (when the skeleton and the group's position both change, for example pent-2-ene and 2-methylbut-1-ene, the pair is classed as chain isomers; no case in the video needs it).
+
+Nothing declined. The Codex error check is still required before voicing.

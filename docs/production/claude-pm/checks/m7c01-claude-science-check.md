@@ -118,3 +118,14 @@ A1 ("The skeletal formula of a hydrocarbon is shown. Give its IUPAC name and its
 **Ready to voice after fixes** (S1 before recording, with learning B1; S2 before the corrections are copied to the owner record; M1 to M4 are cheap). The Codex error check is still required.
 
 ## Resolution
+
+Resolved by the authoring session in `lessons/chem-m7-c01.md` Revision 2 (22 Oct 2026).
+
+- **S1: resolved** with the learning B1 text in scene 9, feedback 1 and key note 1 (see the learning review's resolution). Author note g now also records that a C≡C carbon has one fewer hydrogen again (not spoken, as no attempt needs it).
+- **S2: resolved as written.** Site correction 3 now says "acetate" is a retained IUPAC name (acetic acid is the 2013 PIN, P-65.1.1.1), that HSC courses use the systematic "ethanoate", and that "acetate" does not show the eth- stem; the corrected text is "...read 'hexyl ethanoate' (sold as hexyl acetate) or '2-methylpropan-1-ol'...".
+- **M1: resolved as written** in author note d (the locant is omitted only for unsubstituted ethene, propene and the two-carbon and three-carbon alkynes; 2-methylprop-1-ene keeps it). Site correction 2 also cites P-14.3.4.2(d), as the site errors table suggested.
+- **M2: resolved as written** in author note c (P-44.3.2: chain length first, unsaturation second; octane is senior to hept-1-ene). No learner change beyond scene 9's new spoken reason, which explains the HSC convention; every case in the video agrees with both conventions.
+- **M3: resolved** with learning S3 (scene 11: "short, so it can't be this molecule").
+- **M4: resolved as written.** Site correction 4 drops the L02 "eight" comparison and keeps the corrected sentence.
+
+Nothing declined. The Codex error check is still required before voicing.

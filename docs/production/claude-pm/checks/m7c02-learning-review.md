@@ -118,3 +118,18 @@ The liquid-against-gas hook from identical atoms; the atom tally card as the vis
 **Ready to voice after fixes** (S1 to S3 before recording, with science S1; M1 to M7 are cheap and should be applied). Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the authoring session in `lessons/chem-m7-c02.md` Revision 2 (22 Oct 2026). Narration recounted by script (only lines starting `> `, bold markers removed): 6,027 characters, 1,010 words, 17 scenes; about 9.1 minutes with holds, countdowns and the notes hold.
+
+- **S1: resolved as written.** Scene 6: "...but it has only single bonds, so it's in a different family: the **cycloalkanes**, rings of carbons with only single bonds.", with the bracket tag "cycloalkane (no C=C)", which becomes "cycloalkane: saturated (no C=C)" on "saturated". Feedback 1: "Cyclopentane is a cycloalkane, a ring with no double bond, so it's a different family from pent-one-ene: **functional group** isomers." Key note 2, the vocabulary list and the teaching checks name the cycloalkanes.
+- **S2: resolved as written.** Feedback 2: "So the statement is **incorrect**: the drawings show only two different isomers. The third, **two, two-dimethylpropane**, isn't drawn." Answer chip "Incorrect: only 2 different isomers shown (A = B); 2,2-dimethylpropane not drawn"; "Evaluate the student's statement" is underlined on "incorrect". Feedback 2 is now 313 characters, about 24 s.
+- **S3: resolved as written.** Scene 3 no longer brings the plates back; the Year 11 chip dims when the caption writes; the hook temperatures return only as small grey values, without thermometer graphics. End state unchanged (the what-changed card). The board layout, Reuse and Assets lines now say the bottle and spray can appear in the hook only.
+- **M1: resolved as written.** Scene 5: "The ending **ol** means an O H, which is why ethanol ends in ol, and the number says which carbon carries it". The propanol pair is kept and the open decision is closed.
+- **M2: resolved as written.** Scene 4: "the family, here the alkanes, stays the same".
+- **M3: resolved as written.** Scene 3 adds "They have the same atoms, so they're about the same **size**. The hydrogen bonds make the difference." before "Weaker attractions...", with a small grey "C₂H₆O = C₂H₆O" mark on "size" that dims.
+- **M4: resolved as written.** On "carbon two" in scene 9, the C1 and C3 ghost positions grey out with the tags "C1: just a longer chain" and "C3: C2 from the other end", dimmed before scene 10. No narration change.
+- **M5: resolved as written.** Feedback 1 underlines "chain, position or functional group" first, then each pair's names as it is discussed.
+- **M6: resolved as written.** Title is now the 98-character "Structural Isomers: Chain, Position and Functional Group, and Finding Them All | Year 12 Chemistry".
+- **M7: resolved.** "Where it appears" now reads: chain pair 4, 11, 16; position pair 1 5, 11; position pair 2 5, 8; functional group pair 6, 7, 11; C₅H₁₂ set 9, 10, 12 to 15; duplicates 10; A1 12, 13; A2 14, 15. Assets and Reuse give the camping plate as scenes 4 and 16.
+
+Nothing declined. Still pending: the Codex error check, the spray-can plate (after owner go-ahead), and this review repeated on the exact voiced preview. Human listening remains pending.

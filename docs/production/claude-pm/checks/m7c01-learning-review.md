@@ -116,3 +116,16 @@ The canister-to-code hook and its "?" resolved in scene 12; the one-molecule mor
 **Not ready to voice until B1 is fixed.** After B1 and S1 to S3 (with science S1 and M3), ready to voice; M1 to M4 are cheap and should be applied. Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the authoring session in `lessons/chem-m7-c01.md` Revision 2 (22 Oct 2026). Narration recounted by script (only lines starting `> `, bold markers removed): 6,140 characters, 1,098 words, 18 scenes; about 9.3 minutes with holds, countdowns and the notes hold.
+
+- **B1 (blocker): resolved as written.** Scene 9 adds "In a skeletal drawing, a double bond counts as **two** of a carbon's four bonds, so each carbon in it has one fewer hydrogen." after the but-1-ene sentence, with the implied-H counter on but-1-ene (two ghosts on the end C=C carbon, one on the next) and the tag "C=C: one fewer H on each carbon", which dims. The next sentence now reads "Move the double bond to the middle" so "it" stays clear. Feedback 1 uses the replacement line ("Each double-bond carbon has just **one hydrogen**, so it's **C seven H fourteen**"), with one ghost on each C=C carbon before the C₇H₁₄ chip; feedback 1 is now 361 characters, about 27 s. Key note 1 uses the replacement text. Boundary, author note g and the teaching checks updated.
+- **S1: resolved as written.** Scene 10: "The double bond **wins**, because it's named in the ending, so it gets first claim on the low numbers."
+- **S2: resolved, with one addition.** Scene 9: "The main chain has to **contain** the double bond, because the ending, ene or yne, describes the main chain's bonds. Then you number from the end that gives it the lowest number." "or yne" is added because the scene's rule chip covers triple bonds too.
+- **S3: resolved as written.** Scene 11: "...C six H fourteen: one carbon and two hydrogens **short**, so it can't be this molecule." The crossed-chip cue moves to "short"; the scene 11 teaching check is reworded to match.
+- **M1: resolved** by the B1 key note text ("a carbon joined to four carbons 0").
+- **M2: resolved.** The "CH₃ = methyl, C₂H₅ = ethyl" tag dims fully before the locant counter runs. The fallback (2-methylbutane in its own short scene) is kept for the voiced preview, alongside a new split point for scene 9, which is now the longest scene (597 characters, about 45 s).
+- **M3: resolved as written.** Scene 7 adds "and everyone writes the same name".
+- **M4: resolved as written.** Title is now the 95-character "IUPAC Naming of Alkanes, Alkenes and Alkynes: Skeletal Formulas and Locants | Year 12 Chemistry".
+
+Nothing declined. Still pending: the Codex error check, and this review repeated on the exact voiced preview. Human listening remains pending.
