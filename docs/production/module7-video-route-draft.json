@@ -219,7 +219,7 @@
           ],
           "entryKnowledge": "Recall chem-m7-c03.",
           "next": [
-            "chem-m7-c04"
+            "chem-m7-c04b"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
@@ -232,24 +232,23 @@
           ]
         },
         {
-          "id": "chem-m7-c04",
-          "title": "Why do alkanes substitute while alkenes add?",
+          "id": "chem-m7-c04a",
+          "title": "What can add across a C=C bond?",
           "type": "core",
           "siteLessons": [
             "L05",
-            "L06",
-            "L07"
+            "L06"
           ],
           "syllabusActions": [
             "C7-IQ3-01",
-            "C7-IQ3-02"
+            "C7-IQ1-01"
           ],
           "prerequisites": [
             "chem-m7-c03"
           ],
           "estimatedMinutes": 8.5,
           "start": "Compare saturated and unsaturated bonds.",
-          "stop": "Predict products and conditions for substitution and addition.",
+          "stop": "Predict addition products and conditions for H2, X2, HX and H2O.",
           "playlistOrder": 5,
           "planAnchor": "C04",
           "sourceCandidates": [
@@ -262,7 +261,44 @@
               "id": "Chemistry-Y12-M7-L06",
               "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson06.sa.html",
               "scope": "Use the portion within this route boundary; site content has not been approved as a video."
-            },
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c03.",
+          "next": [
+            "chem-m7-p02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why do alkanes substitute while alkenes add?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-hydrocarbon-reaction-families.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l05.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l06.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l07.md"
+          ],
+          "deliveryPartOf": "chem-m7-c04"
+        },
+        {
+          "id": "chem-m7-c04b",
+          "title": "Why do alkanes substitute while alkenes and alkynes add?",
+          "type": "core",
+          "siteLessons": [
+            "L07"
+          ],
+          "syllabusActions": [
+            "C7-IQ3-01",
+            "C7-IQ3-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c04a"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Recall addition from c04a; compare a saturated alkane.",
+          "stop": "Predict products and conditions for substitution and addition.",
+          "playlistOrder": 5,
+          "planAnchor": "C04",
+          "sourceCandidates": [
             {
               "id": "Chemistry-Y12-M7-L07",
               "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson07.sa.html",
@@ -282,7 +318,8 @@
             "docs/production/claude-pm/site-extracts/chem-m7-l05.md",
             "docs/production/claude-pm/site-extracts/chem-m7-l06.md",
             "docs/production/claude-pm/site-extracts/chem-m7-l07.md"
-          ]
+          ],
+          "deliveryPartOf": "chem-m7-c04"
         },
         {
           "id": "chem-m7-p02",
@@ -299,7 +336,7 @@
             "C7-IQ2-05"
           ],
           "prerequisites": [
-            "chem-m7-c04"
+            "chem-m7-c04b"
           ],
           "estimatedMinutes": 7,
           "start": "Plan safe matched hydrocarbon samples and observations.",
@@ -357,7 +394,7 @@
           ],
           "prerequisites": [
             "chem-m7-c02",
-            "chem-m7-c04"
+            "chem-m7-c04b"
           ],
           "estimatedMinutes": 8,
           "start": "Read a mixed set of structures and reagents.",
@@ -458,7 +495,7 @@
             "C7-IQ4-05"
           ],
           "prerequisites": [
-            "chem-m7-c04",
+            "chem-m7-c04b",
             "chem-m5-c02",
             "chem-m5-c04"
           ],
@@ -957,7 +994,7 @@
             "C7-IQ5-06"
           ],
           "prerequisites": [
-            "chem-m7-c04",
+            "chem-m7-c04b",
             "chem-m7-c06",
             "chem-m7-c08",
             "chem-m7-c10",
@@ -1051,7 +1088,7 @@
             "C7-IQ6-01"
           ],
           "prerequisites": [
-            "chem-m7-c04"
+            "chem-m7-c04b"
           ],
           "estimatedMinutes": 8.5,
           "start": "Open the alkene double bond.",
@@ -1171,8 +1208,7 @@
             "L02"
           ],
           "syllabusActions": [
-            "B7-IQ1-01",
-            "B7-IQ1-04"
+            "B7-IQ1-01"
           ],
           "prerequisites": [
             "bio-m5-b06a",
@@ -1252,16 +1288,18 @@
           "title": "How does a pathogen move between hosts?",
           "type": "core",
           "siteLessons": [
+            "L02",
             "L04"
           ],
           "syllabusActions": [
-            "B7-IQ1-01"
+            "B7-IQ1-01",
+            "B7-IQ1-04"
           ],
           "prerequisites": [
             "bio-m7-b01"
           ],
           "estimatedMinutes": 8.5,
-          "start": "Trace direct, indirect and vector transmission.",
+          "start": "Trace how a pathogen leaves one host and enters the next, and the adaptations that help it.",
           "stop": "Predict where breaking one link stops an outbreak.",
           "playlistOrder": 3,
           "planAnchor": "B03",
