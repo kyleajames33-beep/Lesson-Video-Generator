@@ -90,3 +90,20 @@ Within the limit as written, provided earlier items dim at each cue. Densest fra
 **Ready to voice after fixes** (findings 1 and 2; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the running time against the 9.5 minute cap and both feedback timings.
 
 ## Resolution
+
+The design author resolved these findings in Revision 2 of `../lessons/bio-m7-b06.md` (22 Oct). Every finding is applied; none is declined.
+
+| # | Resolution |
+| --- | --- |
+| 1 | Applied. Scene 4: "With the barriers, these make up the **innate immune system**". Gloss "innate: born with it, same response to many pathogens (barriers included)", and the barrier rung's thumbnails pulse inside the bracket on "With the barriers". Key note 2 as proposed. |
+| 2 | Applied. Scene 10 opens "Meanwhile, the body starts building a second defence, aimed at this exact pathogen." The amber rung writes on "second defence" and the innate bracket stays lit. Key note 5 and the stop line add "while the innate response is still going". |
+| 3 | Applied. Scene 5: "so fluid and blood proteins seep out into the tissue". Tag "leaky: fluid and proteins seep out", with coded protein dots crossing the wall. Key note 3 matches. |
+| 4 | Applied. Scene 7: "stick to the vessel wall near the infection". Tag "stick (only near the infection)". Key note 4 matches. |
+| 5 | Applied. Grey gloss "antibodies: proteins aimed at one pathogen (next video)" under the "no antibodies" chip. |
+| 6 | Applied. Grey tag "bacterium drawn larger than real" on the four-plate set for all four steps. Unlit counter steps stay grey. |
+| 7 | Applied with one wording change: "Model: draw the four rungs (barriers, always there; inflammation, minutes; phagocytes, hours; adaptive, days) and label one change at each." "Always there" replaces "barriers, minutes", which would contradict the strip's top rung. There are now six notes. |
+| 8 | Applied. Scene 3: the plate tags and the cilia gloss dim when "Stomach acid" lands, the acid chip dims when "lysozyme" lands, and both headings stay small grey. Scene 10: the "lymph" and dendritic cell glosses dim when "lymph node" writes; only the current gloss and the amber rung are bright. |
+| 9 | Applied. The count is now fourteen new PNGs. `m7-wound-bacterium-v1.png` is labelled "for b07" in the Need list, the plate summary and brief item 14, and noted as not shown on this board. |
+| 10 | Applied. Scene 2: "First, it has to get in."; 13a: "Two exam questions. First."; hook hold 1 s. Recount by script (lines starting "> ", bold removed): **5,912 characters** (Revision 1: 5,889), about 570 s, at the 9.5 minute cap. The reserve cut (scene 9's fever sentence) stays first in line if the voiced preview runs over. |
+
+The science check's minors are applied in the same revision: cilia wording, "Fever can follow", a small vessel (venule) in the plates and tags, site corrections 10 and 14 adjusted, and site errors 16 and 17 logged. Status: needs the Codex error check before voicing. Repeat this review on the exact voiced preview before full export.

@@ -72,3 +72,16 @@ Dotpoint quoted verbatim with the correct inquiry question; title 85 characters 
 **Ready to voice on science** after the optional minor fixes; no blocker and no should-fix error. Apply the learning review's two should-fix items before voicing.
 
 ## Resolution
+
+The design author resolved these findings in Revision 2 of `../lessons/bio-m7-b07.md` (22 Oct). Every finding is applied, including the optional ones; none is declined.
+
+| # | Resolution |
+| --- | --- |
+| 1 | Applied. "Many cells in the clone become **plasma cells**"; key note 4: "Many become plasma cells"; 13a model: "Many cells of these clones". |
+| 2 | Applied. Scene 3: "And a receptor doesn't fit the whole antigen, just one small part of its surface, which has a particular shape." |
+| 3 | Applied (optional). Scene 5: "you already have billions of B cells, with millions of different receptor shapes." The grey tag stays "millions of shapes, before any infection". |
+| 4 | Applied. Scene 4: "Its stem is the same in many different antibodies." |
+| 5 | Applied (marker notes only). The 13a model adds "killed cells still carry their surface antigens". |
+| 6 | Applied. Logged as site error 10 (L11 Q1: BCR "can bind only one specific antigen"; proposed "Each B cell carries receptors of one binding shape, which fits one epitope best") and site error 11 ("the framework behind every vaccine"; proposed "the framework behind how vaccines work"). The Codex check list now says site errors 1 to 11. |
+
+The learning review's two should-fix items are also applied: the blood carries antibodies to the infection, and the helper T cell is linked to b06's dendritic cells. The facts list records both. Narration recount: 5,697 characters, about 554 s. Status: needs the Codex error check before voicing.

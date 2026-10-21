@@ -81,3 +81,19 @@ Within the limit as written, provided earlier items dim at each cue. Densest fra
 **Ready to voice after fixes** (findings 1 and 2; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including both feedback timings.
 
 ## Resolution
+
+The design author resolved these findings in Revision 2 of `../lessons/bio-m7-b07.md` (22 Oct). Every finding is applied; none is declined.
+
+| # | Resolution |
+| --- | --- |
+| 1 | Applied. Scene 8 adds "The blood carries them to the infection." The visual is as proposed and uses a thumbnail of b06's `m7-dermis-splinter-inflamed-v1.png` (grey tag "b06: leaky vessels let them out"; a grey chip stands in if the plate is late). Key note 4 and the stop line add "which the blood carries to the infection". |
+| 2 | Applied. Scene 6: "Usually, a chosen B cell also needs a go-ahead signal from a **helper T cell**, one of the T cells the dendritic cells alerted to this pathogen. The next video shows how." A dendritic cell thumbnail appears beside the T cell (grey tag "b06"). Author doubt (b) is closed. |
+| 3 | Applied. Scene 3: "And a receptor doesn't fit the whole antigen, just one small part of its surface, which has a particular shape." |
+| 4 | Applied. Scene 4: "Its stem is the same in many different antibodies." The gloss, key note 2 and the stop line match. |
+| 5 | Applied. Grey gloss "B cells: white blood cells that make antibodies" on "B cells" in the hook. |
+| 6 | Applied. 13d opens "The delay is real, but the reason is wrong." Verdict chip "delay: real; reason: not supported". The model's judgement mark matches. |
+| 7 | Applied. Scene 8: each tag dims when the next lands, and the "rough ER" gloss and "b09" tag are small grey. Only the current tag, the strip chip and at most one gloss are bright, including during finding 1's travel step. |
+| 8 | Applied. "Many cells in the clone become **plasma cells**". Key note 4 and the 13a model say "Many". |
+| 9 | No change, as recommended. b06's Revision 2 brief labels `m7-wound-bacterium-v1.png` "for b07", and the conditional move into this brief stays. |
+
+Recount by script (lines starting "> ", bold removed): **5,697 characters** (Revision 1: 5,619), about 554 s, under the 9.5 minute cap. Decisions now record, for the b08 author, that NK cells are deferred from b06 to b08. Status: needs the Codex error check before voicing. Repeat this review on the exact voiced preview before full export.

@@ -75,3 +75,18 @@ Both dotpoints quoted verbatim with the right inquiry questions; title 95 charac
 **Ready to voice after fixes 1 and 2** on science. Findings 3 to 8 are picture, wording and site-record fixes.
 
 ## Resolution
+
+The design author resolved these findings in Revision 2 of `../lessons/bio-m7-b06.md` (22 Oct). Every finding is applied; none is declined.
+
+| # | Resolution |
+| --- | --- |
+| 1 | Applied. Scene 4: "With the barriers, these make up the **innate immune system**". Key note 2: "Innate immune system: barriers plus fast responses; born with it; works in much the same way against many pathogens; no improvement with repeat exposure." The facts list records the change. |
+| 2 | Applied. Scene 10: "Meanwhile, the body starts building a second defence, aimed at this exact pathogen." Key note 5 and the stop line say the adaptive response begins while the innate response is still going. The facts list adds the migration timing. |
+| 3 | Applied. Plate brief item 6: "one small vessel (a venule just past a capillary) crossing the lower third, with red blood cells two or three abreast". Items 7 and 8 and all visual cues say "small vessel", and no on-screen tag says "capillary". The low-zoom skin pair shows "small blood vessel loops". Facts list: "histamine widens arterioles and opens gaps in post-capillary venules; neutrophils cross venule walls". Model answer 1 says "(mainly venules)". |
+| 4 | Applied. Scene 3: "and tiny hair-like cilia beat and sweep it up to the throat". Gloss "cilia: tiny beating hair-like parts of cells". |
+| 5 | Applied. Key note 4: "Fever can follow if infection spreads." |
+| 6 | Applied. Site error 10 no longer cites *Biologisches Centralblatt*. Proposed wording as given: "He presented his phagocyte theory in 1883, and his 1884 study of yeast infection in water fleas (*Daphnia*, in *Virchows Archiv*) showed phagocytes fighting a pathogen." |
+| 7 | Applied. Site error 14 drops the mast cell clause and notes why. Proposed wording: "Within minutes, vessels widen and leak; within hours, neutrophils arrive. Complement fragments such as C5a attract neutrophils." |
+| 8 | Applied. Logged as site error 16 (L10 hook: "14 December", "surrounded and engulfed the thorn", "just discovered phagocytosis"; keep the 14th only if Codex confirms it) and site error 17 (L09 Q1: lysozyme "killing bacteria on contact"). The Codex check list now says site errors 1 to 17 and asks Codex to check "14 December". |
+
+Narration recount: 5,912 characters, about 570 s. Status: needs the Codex error check before voicing.
