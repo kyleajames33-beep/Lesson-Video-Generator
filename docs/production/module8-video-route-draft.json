@@ -1,0 +1,1832 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "purpose": "Draft Year 12 Module 8 learner route for Claude review. Playlist order is not upload chronology or approved coverage.",
+  "teachingOwnershipReset": {
+    "status": "draft-for-Claude-review",
+    "note": "Claude decides final boundaries, design and practical classification."
+  },
+  "canonicalDocuments": {
+    "module5Schema": "docs/production/module5-video-route-2026-10-10.json",
+    "preDesign": "docs/production/claude-pm/pre-design/m8-index.md",
+    "siteExtracts": "docs/production/claude-pm/site-extracts/m8-index.md",
+    "memoryAids": "docs/production/module8-memory-aids-2026-10-11.md",
+    "coursePlan": "docs/production/course-progression-plan-2026-10-09.md"
+  },
+  "officialEvidence": {
+    "Chemistry": {
+      "syllabus": "Stage 6 (2017)",
+      "module": 8,
+      "ledgerPath": "docs/production/programme/syllabus/chem-2017-y12.json",
+      "status": "Local ledger candidate mapping; official wording and practical method require review."
+    },
+    "Biology": {
+      "syllabus": "Stage 6 (2017)",
+      "module": 8,
+      "ledgerPath": "docs/production/programme/syllabus/bio-2017-y12.json",
+      "status": "Local ledger candidate mapping; official wording and practical method require review."
+    }
+  },
+  "summaries": {
+    "Chemistry": {
+      "sourceCandidates": 16,
+      "plannedUploads": 21,
+      "core": 13,
+      "companions": 3,
+      "practicalSupport": 5,
+      "mappedActionGroups": 7,
+      "approvedActionGroups": 0,
+      "publicUploadsClaimedByThisPlan": 0,
+      "note": "Candidate route. Practical classification, method and safety require Claude review."
+    },
+    "Biology": {
+      "sourceCandidates": 21,
+      "plannedUploads": 25,
+      "core": 17,
+      "companions": 2,
+      "practicalSupport": 6,
+      "mappedActionGroups": 12,
+      "approvedActionGroups": 0,
+      "publicUploadsClaimedByThisPlan": 0,
+      "note": "Candidate route. Practical classification, method and safety require Claude review."
+    }
+  },
+  "subjects": {
+    "Chemistry": {
+      "module": "Applying Chemical Ideas",
+      "sourceCandidateCount": 16,
+      "entries": [
+        {
+          "id": "chem-m8-c01",
+          "title": "How can a precipitation titration measure chloride?",
+          "type": "core",
+          "siteLessons": [
+            "L01"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-03"
+          ],
+          "prerequisites": [
+            "chem-m5-c13",
+            "chem-m5-c14",
+            "chem-m6-c13"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Show why Ag+ first removes chloride.",
+          "stop": "Calculate chloride from a valid Mohr endpoint.",
+          "playlistOrder": 1,
+          "planAnchor": "C01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L01",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson01.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m5-c13, chem-m5-c14, chem-m6-c13 only as needed for this question.",
+          "next": [
+            "chem-m8-p01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can a precipitation titration measure chloride?"
+        },
+        {
+          "id": "chem-m8-p01",
+          "title": "Investigate a chloride precipitation titration",
+          "type": "practical",
+          "siteLessons": [
+            "L01"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-03"
+          ],
+          "prerequisites": [
+            "chem-m8-c01"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Prepare a known chloride sample and choose an endpoint method.",
+          "stop": "Process concordant titres and discuss endpoint limitations.",
+          "playlistOrder": 2,
+          "planAnchor": "P01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L01",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson01.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c01 only as needed for this question.",
+          "next": [
+            "chem-m8-c02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate a chloride precipitation titration"
+        },
+        {
+          "id": "chem-m8-c02",
+          "title": "How does a precipitate reveal ion concentration?",
+          "type": "core",
+          "siteLessons": [
+            "L02"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-03"
+          ],
+          "prerequisites": [
+            "chem-m5-c13",
+            "chem-m5-c14"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Choose a low-solubility product.",
+          "stop": "Convert dry precipitate mass to original ion concentration.",
+          "playlistOrder": 3,
+          "planAnchor": "C02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson02.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m5-c13, chem-m5-c14 only as needed for this question.",
+          "next": [
+            "chem-m8-p02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does a precipitate reveal ion concentration?"
+        },
+        {
+          "id": "chem-m8-p02",
+          "title": "Carry out gravimetric analysis",
+          "type": "practical",
+          "siteLessons": [
+            "L02"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-03"
+          ],
+          "prerequisites": [
+            "chem-m8-c02"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Prepare and precipitate an ion sample.",
+          "stop": "Filter, dry, weigh and evaluate recovery.",
+          "playlistOrder": 4,
+          "planAnchor": "P02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson02.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c02 only as needed for this question.",
+          "next": [
+            "chem-m8-g01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Carry out gravimetric analysis"
+        },
+        {
+          "id": "chem-m8-g01",
+          "title": "Precipitation titration and gravimetry practice",
+          "type": "practice",
+          "siteLessons": [
+            "L01",
+            "L02"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-03"
+          ],
+          "prerequisites": [
+            "chem-m8-p01",
+            "chem-m8-p02"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Interpret method and data for each quantitative analysis.",
+          "stop": "Choose correct mole ratios and evaluate an error.",
+          "playlistOrder": 5,
+          "planAnchor": "G01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L01",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson01.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson02.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-p01, chem-m8-p02 only as needed for this question.",
+          "next": [
+            "chem-m8-c03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Precipitation titration and gravimetry practice"
+        },
+        {
+          "id": "chem-m8-c03",
+          "title": "How can tests identify ions in water?",
+          "type": "core",
+          "siteLessons": [
+            "L03"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-02"
+          ],
+          "prerequisites": [
+            "chem-m5-c13",
+            "chem-m5-c15"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Use flame colour and precipitate evidence.",
+          "stop": "Plan confirmatory tests for a given unknown.",
+          "playlistOrder": 6,
+          "planAnchor": "C03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson03.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m5-c13, chem-m5-c15 only as needed for this question.",
+          "next": [
+            "chem-m8-p03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can tests identify ions in water?"
+        },
+        {
+          "id": "chem-m8-p03",
+          "title": "Identify unknown ions by qualitative tests",
+          "type": "practical",
+          "siteLessons": [
+            "L03"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-02"
+          ],
+          "prerequisites": [
+            "chem-m8-c03"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Set up controls and safe small-scale tests.",
+          "stop": "Record observations and justify ion identities.",
+          "playlistOrder": 7,
+          "planAnchor": "P03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson03.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c03 only as needed for this question.",
+          "next": [
+            "chem-m8-c04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Identify unknown ions by qualitative tests"
+        },
+        {
+          "id": "chem-m8-c04",
+          "title": "How do colour and absorption measure concentration?",
+          "type": "core",
+          "siteLessons": [
+            "L04",
+            "L08"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-04"
+          ],
+          "prerequisites": [
+            "chem-m5-c10",
+            "chem-m8-c03"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare colourimetry, UV-Vis and AAS signals.",
+          "stop": "Use calibration to estimate a metal-ion concentration.",
+          "playlistOrder": 8,
+          "planAnchor": "C04",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson04.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson08.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m5-c10, chem-m8-c03 only as needed for this question.",
+          "next": [
+            "chem-m8-p04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do colour and absorption measure concentration?"
+        },
+        {
+          "id": "chem-m8-p04",
+          "title": "Construct and use a spectroscopic calibration",
+          "type": "practical",
+          "siteLessons": [
+            "L04",
+            "L08"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-04"
+          ],
+          "prerequisites": [
+            "chem-m8-c04"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Prepare standards, blank and sample.",
+          "stop": "Plot calibration and evaluate an unknown result.",
+          "playlistOrder": 9,
+          "planAnchor": "P04",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson04.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson08.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c04 only as needed for this question.",
+          "next": [
+            "chem-m8-g02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Construct and use a spectroscopic calibration"
+        },
+        {
+          "id": "chem-m8-g02",
+          "title": "Calibration and water-analysis data practice",
+          "type": "practice",
+          "siteLessons": [
+            "L04",
+            "L07",
+            "L08"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-04",
+            "C8-IQ1-01"
+          ],
+          "prerequisites": [
+            "chem-m8-p04"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Read calibration and dissolved-oxygen data.",
+          "stop": "Calculate concentration and judge monitoring evidence.",
+          "playlistOrder": 10,
+          "planAnchor": "G02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson04.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson07.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson08.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-p04 only as needed for this question.",
+          "next": [
+            "chem-m8-c05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Calibration and water-analysis data practice"
+        },
+        {
+          "id": "chem-m8-c05",
+          "title": "Why monitor water and nutrient pollution?",
+          "type": "core",
+          "siteLessons": [
+            "L06",
+            "L09"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-01"
+          ],
+          "prerequisites": [
+            "chem-m8-c04",
+            "bio-m7-b13"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Connect nitrate and phosphate inputs to eutrophication.",
+          "stop": "Choose physical, chemical and biological monitoring evidence.",
+          "playlistOrder": 11,
+          "planAnchor": "C05",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson06.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson09.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c04, bio-m7-b13 only as needed for this question.",
+          "next": [
+            "chem-m8-c06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why monitor water and nutrient pollution?"
+        },
+        {
+          "id": "chem-m8-c06",
+          "title": "What do dissolved oxygen and BOD tell us?",
+          "type": "core",
+          "siteLessons": [
+            "L07"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-01"
+          ],
+          "prerequisites": [
+            "chem-m8-c05"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Track oxygen available to aquatic organisms.",
+          "stop": "Interpret BOD change and its monitoring limits.",
+          "playlistOrder": 12,
+          "planAnchor": "C06",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson07.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c05 only as needed for this question.",
+          "next": [
+            "chem-m8-c07"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What do dissolved oxygen and BOD tell us?"
+        },
+        {
+          "id": "chem-m8-c07",
+          "title": "How does water treatment remove different pollutants?",
+          "type": "core",
+          "siteLessons": [
+            "L10"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-01"
+          ],
+          "prerequisites": [
+            "chem-m8-c05",
+            "chem-m8-c06"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Match particle, microbe and dissolved contaminant to treatment.",
+          "stop": "Explain a treatment train and its monitoring checks.",
+          "playlistOrder": 13,
+          "planAnchor": "C07",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson10.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c05, chem-m8-c06 only as needed for this question.",
+          "next": [
+            "chem-m8-c08"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does water treatment remove different pollutants?"
+        },
+        {
+          "id": "chem-m8-c08",
+          "title": "How do simple tests distinguish organic groups?",
+          "type": "core",
+          "siteLessons": [
+            "L11"
+          ],
+          "syllabusActions": [
+            "C8-IQ2-01"
+          ],
+          "prerequisites": [
+            "chem-m7-c04",
+            "chem-m7-c05",
+            "chem-m7-c09"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Predict tests for C=C, hydroxyl and carboxyl groups.",
+          "stop": "Use observations to exclude candidate molecules.",
+          "playlistOrder": 14,
+          "planAnchor": "C08",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson11.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c04, chem-m7-c05, chem-m7-c09 only as needed for this question.",
+          "next": [
+            "chem-m8-p05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do simple tests distinguish organic groups?"
+        },
+        {
+          "id": "chem-m8-p05",
+          "title": "Test functional groups in unknown organics",
+          "type": "practical",
+          "siteLessons": [
+            "L11"
+          ],
+          "syllabusActions": [
+            "C8-IQ2-01"
+          ],
+          "prerequisites": [
+            "chem-m8-c08"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Choose controls and safe qualitative tests.",
+          "stop": "Record observations and infer supported groups.",
+          "playlistOrder": 15,
+          "planAnchor": "P05",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson11.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c08 only as needed for this question.",
+          "next": [
+            "chem-m8-c09"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Test functional groups in unknown organics"
+        },
+        {
+          "id": "chem-m8-c09",
+          "title": "How does mass spectrometry constrain a structure?",
+          "type": "core",
+          "siteLessons": [
+            "L12"
+          ],
+          "syllabusActions": [
+            "C8-IQ2-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c01",
+            "chem-m7-c02"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Read molecular-ion and fragment evidence.",
+          "stop": "Use isotope patterns and mass to narrow candidates.",
+          "playlistOrder": 16,
+          "planAnchor": "C09",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson12.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c01, chem-m7-c02 only as needed for this question.",
+          "next": [
+            "chem-m8-c10"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does mass spectrometry constrain a structure?"
+        },
+        {
+          "id": "chem-m8-c10",
+          "title": "What bonds can an IR spectrum reveal?",
+          "type": "core",
+          "siteLessons": [
+            "L13"
+          ],
+          "syllabusActions": [
+            "C8-IQ2-02"
+          ],
+          "prerequisites": [
+            "chem-m8-c08",
+            "chem-m8-c09"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Link absorption regions to bonds.",
+          "stop": "Use IR to distinguish plausible functional groups.",
+          "playlistOrder": 17,
+          "planAnchor": "C10",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson13.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c08, chem-m8-c09 only as needed for this question.",
+          "next": [
+            "chem-m8-c11"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What bonds can an IR spectrum reveal?"
+        },
+        {
+          "id": "chem-m8-c11",
+          "title": "How does NMR reveal carbon and hydrogen environments?",
+          "type": "core",
+          "siteLessons": [
+            "L14"
+          ],
+          "syllabusActions": [
+            "C8-IQ2-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c02",
+            "chem-m8-c09"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Count chemically distinct environments.",
+          "stop": "Use chemical shifts, integration and splitting to test structures.",
+          "playlistOrder": 18,
+          "planAnchor": "C11",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson14.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c02, chem-m8-c09 only as needed for this question.",
+          "next": [
+            "chem-m8-c12"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does NMR reveal carbon and hydrogen environments?"
+        },
+        {
+          "id": "chem-m8-c12",
+          "title": "How can several spectra identify one molecule?",
+          "type": "core",
+          "siteLessons": [
+            "L15"
+          ],
+          "syllabusActions": [
+            "C8-IQ2-02"
+          ],
+          "prerequisites": [
+            "chem-m8-c09",
+            "chem-m8-c10",
+            "chem-m8-c11"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Combine molecular mass, IR and NMR constraints.",
+          "stop": "Defend one structure against a close isomer.",
+          "playlistOrder": 19,
+          "planAnchor": "C12",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson15.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c09, chem-m8-c10, chem-m8-c11 only as needed for this question.",
+          "next": [
+            "chem-m8-g03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can several spectra identify one molecule?"
+        },
+        {
+          "id": "chem-m8-g03",
+          "title": "Integrated organic structure practice",
+          "type": "practice",
+          "siteLessons": [
+            "L11",
+            "L12",
+            "L13",
+            "L14",
+            "L15"
+          ],
+          "syllabusActions": [
+            "C8-IQ2-01",
+            "C8-IQ2-02"
+          ],
+          "prerequisites": [
+            "chem-m8-c12"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Attempt two unseen structure problems.",
+          "stop": "Justify identity from independent evidence.",
+          "playlistOrder": 20,
+          "planAnchor": "G03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson11.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson12.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson13.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson14.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Chemistry-Y12-M8-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson15.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m8-c12 only as needed for this question.",
+          "next": [
+            "chem-m8-c13"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Integrated organic structure practice"
+        },
+        {
+          "id": "chem-m8-c13",
+          "title": "How should a synthesis be designed and judged?",
+          "type": "core",
+          "siteLessons": [
+            "L16"
+          ],
+          "syllabusActions": [
+            "C8-IQ3-01"
+          ],
+          "prerequisites": [
+            "chem-m5-c04",
+            "chem-m5-c07",
+            "chem-m7-c13"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare reagent supply, conditions, yield and purity.",
+          "stop": "Evaluate a process against environmental, social and economic needs.",
+          "playlistOrder": 21,
+          "planAnchor": "C13",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson16.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m5-c04, chem-m5-c07, chem-m7-c13 only as needed for this question.",
+          "next": [],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How should a synthesis be designed and judged?"
+        }
+      ]
+    },
+    "Biology": {
+      "module": "Non-infectious Disease and Disorders",
+      "sourceCandidateCount": 21,
+      "entries": [
+        {
+          "id": "bio-m8-b01",
+          "title": "How does negative feedback keep conditions in range?",
+          "type": "core",
+          "siteLessons": [
+            "L01"
+          ],
+          "syllabusActions": [
+            "B8-IQ1-01"
+          ],
+          "prerequisites": [
+            "bio-m5-b06a"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Trace stimulus, receptor, control and effector.",
+          "stop": "Interpret and complete a temperature or glucose feedback loop.",
+          "playlistOrder": 1,
+          "planAnchor": "B01",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L01",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson01.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b06a only as needed for this question.",
+          "next": [
+            "bio-m8-b02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does negative feedback keep conditions in range?"
+        },
+        {
+          "id": "bio-m8-b02",
+          "title": "How do endotherms regulate body temperature?",
+          "type": "core",
+          "siteLessons": [
+            "L02"
+          ],
+          "syllabusActions": [
+            "B8-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Connect neural and hormonal signals to effectors.",
+          "stop": "Compare behavioural, structural and physiological responses.",
+          "playlistOrder": 2,
+          "planAnchor": "B02",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson02.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b01 only as needed for this question.",
+          "next": [
+            "bio-m8-p01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do endotherms regulate body temperature?"
+        },
+        {
+          "id": "bio-m8-p01",
+          "title": "Investigate temperature regulation evidence",
+          "type": "practical",
+          "siteLessons": [
+            "L02"
+          ],
+          "syllabusActions": [
+            "B8-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b02"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Define a safe observational or secondary-data method.",
+          "stop": "Graph response data and evaluate control variables.",
+          "playlistOrder": 3,
+          "planAnchor": "P01",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson02.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b02 only as needed for this question.",
+          "next": [
+            "bio-m8-b03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate temperature regulation evidence"
+        },
+        {
+          "id": "bio-m8-b03",
+          "title": "How do insulin and glucagon regulate glucose?",
+          "type": "core",
+          "siteLessons": [
+            "L03"
+          ],
+          "syllabusActions": [
+            "B8-IQ1-01",
+            "B8-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Trace the response to rising glucose.",
+          "stop": "Explain the reciprocal response to falling glucose.",
+          "playlistOrder": 4,
+          "planAnchor": "B03",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson03.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b01 only as needed for this question.",
+          "next": [
+            "bio-m8-b04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do insulin and glucagon regulate glucose?"
+        },
+        {
+          "id": "bio-m8-b04",
+          "title": "How does the kidney regulate water balance?",
+          "type": "core",
+          "siteLessons": [
+            "L04"
+          ],
+          "syllabusActions": [
+            "B8-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Connect blood osmolarity to ADH and nephron permeability.",
+          "stop": "Predict urine concentration under changed water intake.",
+          "playlistOrder": 5,
+          "planAnchor": "B04",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson04.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b01 only as needed for this question.",
+          "next": [
+            "bio-m8-b05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does the kidney regulate water balance?"
+        },
+        {
+          "id": "bio-m8-b05",
+          "title": "How do plants keep enough water?",
+          "type": "core",
+          "siteLessons": [
+            "L05"
+          ],
+          "syllabusActions": [
+            "B8-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m5-b02b",
+            "bio-m8-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Follow water loss through stomata.",
+          "stop": "Compare ABA action and xerophyte adaptations.",
+          "playlistOrder": 6,
+          "planAnchor": "B05",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson05.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b02b, bio-m8-b01 only as needed for this question.",
+          "next": [
+            "bio-m8-p02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do plants keep enough water?"
+        },
+        {
+          "id": "bio-m8-p02",
+          "title": "Investigate plant water loss",
+          "type": "practical",
+          "siteLessons": [
+            "L05"
+          ],
+          "syllabusActions": [
+            "B8-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b05"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Set a controlled transpiration comparison.",
+          "stop": "Interpret water-loss evidence and limitations.",
+          "playlistOrder": 7,
+          "planAnchor": "P02",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson05.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b05 only as needed for this question.",
+          "next": [
+            "bio-m8-b06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate plant water loss"
+        },
+        {
+          "id": "bio-m8-b06",
+          "title": "What causes a non-infectious disease?",
+          "type": "core",
+          "siteLessons": [
+            "L06",
+            "L07"
+          ],
+          "syllabusActions": [
+            "B8-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m6-b05",
+            "bio-m7-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Separate inherited and acquired causes from infection.",
+          "stop": "Trace a genetic variant through protein and body effect.",
+          "playlistOrder": 8,
+          "planAnchor": "B06",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson06.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson07.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b05, bio-m7-b01 only as needed for this question.",
+          "next": [
+            "bio-m8-b07"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What causes a non-infectious disease?"
+        },
+        {
+          "id": "bio-m8-b07",
+          "title": "How does environmental exposure cause disease?",
+          "type": "core",
+          "siteLessons": [
+            "L08"
+          ],
+          "syllabusActions": [
+            "B8-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m8-b06",
+            "bio-m6-b05"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Trace exposure, dose and tissue damage.",
+          "stop": "Explain a named UV or smoking case without claiming every exposure causes disease.",
+          "playlistOrder": 9,
+          "planAnchor": "B07",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson08.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b06, bio-m6-b05 only as needed for this question.",
+          "next": [
+            "bio-m8-b08"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does environmental exposure cause disease?"
+        },
+        {
+          "id": "bio-m8-b08",
+          "title": "How does nutrition change disease risk?",
+          "type": "core",
+          "siteLessons": [
+            "L09"
+          ],
+          "syllabusActions": [
+            "B8-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m8-b03",
+            "bio-m8-b06"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Connect a nutrient imbalance to body function.",
+          "stop": "Distinguish risk factor from a certain outcome.",
+          "playlistOrder": 10,
+          "planAnchor": "B08",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson09.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b03, bio-m8-b06 only as needed for this question.",
+          "next": [
+            "bio-m8-b09"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does nutrition change disease risk?"
+        },
+        {
+          "id": "bio-m8-b09",
+          "title": "How does cancer begin and spread?",
+          "type": "core",
+          "siteLessons": [
+            "L10"
+          ],
+          "syllabusActions": [
+            "B8-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m6-b05",
+            "bio-m8-b07"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Connect cell-cycle control failure to uncontrolled division.",
+          "stop": "Explain invasion and a named environmental risk.",
+          "playlistOrder": 11,
+          "planAnchor": "B09",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson10.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b05, bio-m8-b07 only as needed for this question.",
+          "next": [
+            "bio-m8-p03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does cancer begin and spread?"
+        },
+        {
+          "id": "bio-m8-p03",
+          "title": "Investigate causes of a non-infectious disease",
+          "type": "practical",
+          "siteLessons": [
+            "L06",
+            "L07",
+            "L08",
+            "L09",
+            "L10"
+          ],
+          "syllabusActions": [
+            "B8-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m8-b09"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Choose a named disease and compare cause evidence.",
+          "stop": "Report effects while separating correlation from causation.",
+          "playlistOrder": 12,
+          "planAnchor": "P03",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson06.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson07.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson08.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson09.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson10.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b09 only as needed for this question.",
+          "next": [
+            "bio-m8-b10"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate causes of a non-infectious disease"
+        },
+        {
+          "id": "bio-m8-b10",
+          "title": "What do incidence, prevalence and mortality measure?",
+          "type": "core",
+          "siteLessons": [
+            "L12"
+          ],
+          "syllabusActions": [
+            "B8-IQ2-02",
+            "B8-IQ3-01"
+          ],
+          "prerequisites": [
+            "bio-m8-b06",
+            "bio-m7-b13"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Define cases, population and time window.",
+          "stop": "Calculate and compare rates without mixing denominators.",
+          "playlistOrder": 13,
+          "planAnchor": "B10",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson12.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b06, bio-m7-b13 only as needed for this question.",
+          "next": [
+            "bio-m8-p04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What do incidence, prevalence and mortality measure?"
+        },
+        {
+          "id": "bio-m8-p04",
+          "title": "Collect and represent disease-rate data",
+          "type": "practical",
+          "siteLessons": [
+            "L12"
+          ],
+          "syllabusActions": [
+            "B8-IQ2-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b10"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Select a suitable secondary dataset and denominator.",
+          "stop": "Graph rates and identify a limitation.",
+          "playlistOrder": 14,
+          "planAnchor": "P04",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson12.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b10 only as needed for this question.",
+          "next": [
+            "bio-m8-g01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Collect and represent disease-rate data"
+        },
+        {
+          "id": "bio-m8-g01",
+          "title": "Epidemiology calculation and interpretation practice",
+          "type": "practice",
+          "siteLessons": [
+            "L12",
+            "L13",
+            "L15"
+          ],
+          "syllabusActions": [
+            "B8-IQ2-02",
+            "B8-IQ3-01",
+            "B8-IQ3-03"
+          ],
+          "prerequisites": [
+            "bio-m8-b10"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Calculate rates from new data.",
+          "stop": "Evaluate one study method and claim.",
+          "playlistOrder": 15,
+          "planAnchor": "G01",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson12.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson13.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson15.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b10 only as needed for this question.",
+          "next": [
+            "bio-m8-b11"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Epidemiology calculation and interpretation practice"
+        },
+        {
+          "id": "bio-m8-b11",
+          "title": "How do we judge an epidemiological study?",
+          "type": "core",
+          "siteLessons": [
+            "L13",
+            "L15"
+          ],
+          "syllabusActions": [
+            "B8-IQ3-03",
+            "B8-IQ3-04"
+          ],
+          "prerequisites": [
+            "bio-m8-b10"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare observational and intervention designs.",
+          "stop": "Evaluate method and benefit using a named study.",
+          "playlistOrder": 16,
+          "planAnchor": "B11",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson13.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson15.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b10 only as needed for this question.",
+          "next": [
+            "bio-m8-b12"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do we judge an epidemiological study?"
+        },
+        {
+          "id": "bio-m8-b12",
+          "title": "How can type 2 diabetes be managed?",
+          "type": "core",
+          "siteLessons": [
+            "L14"
+          ],
+          "syllabusActions": [
+            "B8-IQ3-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b03",
+            "bio-m8-b08",
+            "bio-m8-b10"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Connect treatment targets to insulin resistance.",
+          "stop": "Assess management and a realistic future research direction.",
+          "playlistOrder": 17,
+          "planAnchor": "B12",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson14.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b03, bio-m8-b08, bio-m8-b10 only as needed for this question.",
+          "next": [
+            "bio-m8-p05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can type 2 diabetes be managed?"
+        },
+        {
+          "id": "bio-m8-p05",
+          "title": "Investigate disease management evidence",
+          "type": "practical",
+          "siteLessons": [
+            "L14"
+          ],
+          "syllabusActions": [
+            "B8-IQ3-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b12"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Select a named non-infectious disease and intervention.",
+          "stop": "Compare outcomes and limits of the evidence.",
+          "playlistOrder": 18,
+          "planAnchor": "P05",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson14.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b12 only as needed for this question.",
+          "next": [
+            "bio-m8-b13"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate disease management evidence"
+        },
+        {
+          "id": "bio-m8-b13",
+          "title": "How can prevention campaigns reduce disease?",
+          "type": "core",
+          "siteLessons": [
+            "L16"
+          ],
+          "syllabusActions": [
+            "B8-IQ4-01"
+          ],
+          "prerequisites": [
+            "bio-m8-b07",
+            "bio-m8-b10",
+            "bio-m8-b11"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Use a named campaign and its target behaviour.",
+          "stop": "Evaluate evidence of effectiveness and propose an improvement.",
+          "playlistOrder": 19,
+          "planAnchor": "B13",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson16.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b07, bio-m8-b10, bio-m8-b11 only as needed for this question.",
+          "next": [
+            "bio-m8-b14"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can prevention campaigns reduce disease?"
+        },
+        {
+          "id": "bio-m8-b14",
+          "title": "When can genetics help prevent disease?",
+          "type": "core",
+          "siteLessons": [
+            "L17"
+          ],
+          "syllabusActions": [
+            "B8-IQ4-01"
+          ],
+          "prerequisites": [
+            "bio-m6-b05",
+            "bio-m8-b06",
+            "bio-m8-b13"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Separate screening, counselling and engineering approaches.",
+          "stop": "Judge benefits and limits for a named inherited condition.",
+          "playlistOrder": 20,
+          "planAnchor": "B14",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson17.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b05, bio-m8-b06, bio-m8-b13 only as needed for this question.",
+          "next": [
+            "bio-m8-b15"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "When can genetics help prevent disease?"
+        },
+        {
+          "id": "bio-m8-b15",
+          "title": "How can technology assist hearing loss?",
+          "type": "core",
+          "siteLessons": [
+            "L18"
+          ],
+          "syllabusActions": [
+            "B8-IQ5-01",
+            "B8-IQ5-02",
+            "B8-IQ5-03"
+          ],
+          "prerequisites": [
+            "bio-m8-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Trace the sound pathway and locate a fault.",
+          "stop": "Compare hearing aids and cochlear implants for that fault.",
+          "playlistOrder": 21,
+          "planAnchor": "B15",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson18.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b01 only as needed for this question.",
+          "next": [
+            "bio-m8-b16"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can technology assist hearing loss?"
+        },
+        {
+          "id": "bio-m8-b16",
+          "title": "How can technology assist visual disorders?",
+          "type": "core",
+          "siteLessons": [
+            "L19"
+          ],
+          "syllabusActions": [
+            "B8-IQ5-01",
+            "B8-IQ5-02",
+            "B8-IQ5-03"
+          ],
+          "prerequisites": [
+            "bio-m8-b15"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Trace light through eye and retina.",
+          "stop": "Compare lenses and laser surgery for a named disorder.",
+          "playlistOrder": 22,
+          "planAnchor": "B16",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson19.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b15 only as needed for this question.",
+          "next": [
+            "bio-m8-b17"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can technology assist visual disorders?"
+        },
+        {
+          "id": "bio-m8-b17",
+          "title": "What can replace lost kidney function?",
+          "type": "core",
+          "siteLessons": [
+            "L20"
+          ],
+          "syllabusActions": [
+            "B8-IQ5-01",
+            "B8-IQ5-02",
+            "B8-IQ5-03"
+          ],
+          "prerequisites": [
+            "bio-m8-b04",
+            "bio-m8-b15"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Identify which filtering task has failed.",
+          "stop": "Evaluate dialysis and transplant trade-offs for a case.",
+          "playlistOrder": 23,
+          "planAnchor": "B17",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L20",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson20.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b04, bio-m8-b15 only as needed for this question.",
+          "next": [
+            "bio-m8-p06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What can replace lost kidney function?"
+        },
+        {
+          "id": "bio-m8-p06",
+          "title": "Investigate assistive technology effectiveness",
+          "type": "practical",
+          "siteLessons": [
+            "L18",
+            "L19",
+            "L20"
+          ],
+          "syllabusActions": [
+            "B8-IQ5-02",
+            "B8-IQ5-03"
+          ],
+          "prerequisites": [
+            "bio-m8-b15",
+            "bio-m8-b16",
+            "bio-m8-b17"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Define the disorder and meaningful outcome measure.",
+          "stop": "Evaluate one technology using evidence and access considerations.",
+          "playlistOrder": 24,
+          "planAnchor": "P06",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson18.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson19.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L20",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson20.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b15, bio-m8-b16, bio-m8-b17 only as needed for this question.",
+          "next": [
+            "bio-m8-g02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate assistive technology effectiveness"
+        },
+        {
+          "id": "bio-m8-g02",
+          "title": "Disease prevention and technology evaluation practice",
+          "type": "practice",
+          "siteLessons": [
+            "L16",
+            "L17",
+            "L18",
+            "L19",
+            "L20",
+            "L21"
+          ],
+          "syllabusActions": [
+            "B8-IQ4-01",
+            "B8-IQ5-03"
+          ],
+          "prerequisites": [
+            "bio-m8-b13",
+            "bio-m8-b14",
+            "bio-m8-p06"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Answer unseen evaluation prompts with case evidence.",
+          "stop": "Justify a conclusion and state one relevant limit.",
+          "playlistOrder": 25,
+          "planAnchor": "G02",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M8-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson16.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson17.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson18.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson19.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L20",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson20.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            },
+            {
+              "id": "Biology-Y12-M8-L21",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module8/lesson21.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m8-b13, bio-m8-b14, bio-m8-p06 only as needed for this question.",
+          "next": [],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Disease prevention and technology evaluation practice"
+        }
+      ]
+    }
+  },
+  "sourceDisposition": {
+    "chemistryChromatographyL05": "Site extension only; no named 2017 Module 8 content point. Optional supporting example, not separate route entry.",
+    "biologyConsolidationL11": "Retrieval source for B06 to B09 and G practice, not separate core entry.",
+    "biologyConsolidationL21": "Source for G02 practice, not separate core entry."
+  }
+}

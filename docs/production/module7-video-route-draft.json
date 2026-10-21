@@ -1,0 +1,2131 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "purpose": "Draft Year 12 Module 7 video boundaries for Claude review. Playlist order is a learner route, not upload chronology or approved coverage.",
+  "teachingOwnershipReset": {
+    "status": "draft-for-Claude-review",
+    "note": "Claude decides final boundaries, design and practical classification."
+  },
+  "canonicalDocuments": {
+    "module5Schema": "docs/production/module5-video-route-2026-10-10.json",
+    "preDesign": "docs/production/claude-pm/pre-design/m7-index.md",
+    "siteExtracts": "docs/production/claude-pm/site-extracts/m7-index.md",
+    "memoryAids": "docs/production/module7-memory-aids-2026-10-11.md",
+    "coursePlan": "docs/production/course-progression-plan-2026-10-09.md"
+  },
+  "officialEvidence": {
+    "Chemistry": {
+      "syllabus": "Stage 6 (2017)",
+      "module": 7,
+      "ledgerPath": "docs/production/programme/syllabus/chem-2017-y12.json",
+      "status": "Local ledger candidate mapping; exact official text and practical method require review."
+    },
+    "Biology": {
+      "syllabus": "Stage 6 (2017)",
+      "module": 7,
+      "ledgerPath": "docs/production/programme/syllabus/bio-2017-y12.json",
+      "status": "Local ledger candidate mapping; exact official text and practical method require review."
+    }
+  },
+  "summaries": {
+    "Chemistry": {
+      "sourceCandidates": 23,
+      "plannedUploads": 25,
+      "core": 16,
+      "companions": 3,
+      "practicalSupport": 6,
+      "mappedActionGroups": 25,
+      "approvedActionGroups": 0,
+      "publicUploadsClaimedByThisPlan": 0,
+      "note": "Candidate route only. Practical videos need method and safety review."
+    },
+    "Biology": {
+      "sourceCandidates": 21,
+      "plannedUploads": 22,
+      "core": 15,
+      "companions": 2,
+      "practicalSupport": 5,
+      "mappedActionGroups": 15,
+      "approvedActionGroups": 0,
+      "publicUploadsClaimedByThisPlan": 0,
+      "note": "Candidate route only. Practical videos need method and safety review."
+    }
+  },
+  "subjects": {
+    "Chemistry": {
+      "module": "Organic Chemistry",
+      "sourceCandidateCount": 23,
+      "entries": [
+        {
+          "id": "chem-m7-c01",
+          "title": "How do we name and draw a carbon chain?",
+          "type": "core",
+          "siteLessons": [
+            "L01",
+            "L02"
+          ],
+          "syllabusActions": [
+            "C7-IQ1-01",
+            "C7-IQ2-05"
+          ],
+          "prerequisites": [
+            "chem-m5-c01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Identify the parent chain and bond type.",
+          "stop": "Name and draw simple branched molecules up to C8.",
+          "playlistOrder": 1,
+          "planAnchor": "C01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L01",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson01.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson02.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m5-c01.",
+          "next": [
+            "chem-m7-c02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do we name and draw a carbon chain?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-nomenclature-isomers.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l01.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l02.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c02",
+          "title": "How can the same formula make different molecules?",
+          "type": "core",
+          "siteLessons": [
+            "L02"
+          ],
+          "syllabusActions": [
+            "C7-IQ1-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Hold molecular formula constant.",
+          "stop": "Distinguish chain, position and functional-group isomers.",
+          "playlistOrder": 2,
+          "planAnchor": "C02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson02.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c01.",
+          "next": [
+            "chem-m7-c03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can the same formula make different molecules?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-nomenclature-isomers.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l02.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c03",
+          "title": "How does carbon bonding explain hydrocarbon properties?",
+          "type": "core",
+          "siteLessons": [
+            "L03",
+            "L04"
+          ],
+          "syllabusActions": [
+            "C7-IQ2-01",
+            "C7-IQ2-03",
+            "C7-IQ2-04"
+          ],
+          "prerequisites": [
+            "chem-m7-c01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Build single, double and triple bond models.",
+          "stop": "Predict boiling and solubility trends across hydrocarbon series.",
+          "playlistOrder": 3,
+          "planAnchor": "C03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson03.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson04.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c01.",
+          "next": [
+            "chem-m7-p01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does carbon bonding explain hydrocarbon properties?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-hydrocarbon-structure-properties.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l03.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l04.md"
+          ]
+        },
+        {
+          "id": "chem-m7-p01",
+          "title": "Investigate a hydrocarbon homologous series",
+          "type": "practical",
+          "siteLessons": [
+            "L03",
+            "L04"
+          ],
+          "syllabusActions": [
+            "C7-IQ2-02",
+            "C7-IQ2-05"
+          ],
+          "prerequisites": [
+            "chem-m7-c03"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Choose comparable members and a safe property test.",
+          "stop": "Explain the observed trend and limits of the method.",
+          "playlistOrder": 4,
+          "planAnchor": "P01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson03.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson04.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c03.",
+          "next": [
+            "chem-m7-c04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate a hydrocarbon homologous series",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-hydrocarbon-structure-properties.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l03.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l04.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c04",
+          "title": "Why do alkanes substitute while alkenes add?",
+          "type": "core",
+          "siteLessons": [
+            "L05",
+            "L06",
+            "L07"
+          ],
+          "syllabusActions": [
+            "C7-IQ3-01",
+            "C7-IQ3-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c03"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare saturated and unsaturated bonds.",
+          "stop": "Predict products and conditions for substitution and addition.",
+          "playlistOrder": 5,
+          "planAnchor": "C04",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson05.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson06.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson07.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c03.",
+          "next": [
+            "chem-m7-p02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why do alkanes substitute while alkenes add?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-hydrocarbon-reaction-families.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l05.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l06.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l07.md"
+          ]
+        },
+        {
+          "id": "chem-m7-p02",
+          "title": "Test unsaturation with bromine water",
+          "type": "practical",
+          "siteLessons": [
+            "L05",
+            "L06",
+            "L07"
+          ],
+          "syllabusActions": [
+            "C7-IQ3-01",
+            "C7-IQ3-02",
+            "C7-IQ2-05"
+          ],
+          "prerequisites": [
+            "chem-m7-c04"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Plan safe matched hydrocarbon samples and observations.",
+          "stop": "Use the colour change to identify unsaturation and its limit.",
+          "playlistOrder": 6,
+          "planAnchor": "P02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson05.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson06.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson07.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c04.",
+          "next": [
+            "chem-m7-g01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Test unsaturation with bromine water",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-alkene-addition.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l05.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l06.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l07.md"
+          ]
+        },
+        {
+          "id": "chem-m7-g01",
+          "title": "Hydrocarbon naming and reaction practice",
+          "type": "practice",
+          "siteLessons": [
+            "L02",
+            "L05",
+            "L06",
+            "L07",
+            "L08"
+          ],
+          "syllabusActions": [
+            "C7-IQ1-01",
+            "C7-IQ1-02",
+            "C7-IQ3-01",
+            "C7-IQ3-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c02",
+            "chem-m7-c04"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Read a mixed set of structures and reagents.",
+          "stop": "Justify names, reaction types, products and conditions.",
+          "playlistOrder": 7,
+          "planAnchor": "G01",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson02.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson05.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson06.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson07.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson08.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c02, chem-m7-c04.",
+          "next": [
+            "chem-m7-c05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Hydrocarbon naming and reaction practice",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-hydrocarbon-reaction-families.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l02.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l05.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l06.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l07.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l08.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c05",
+          "title": "How does an OH group change alcohol properties?",
+          "type": "core",
+          "siteLessons": [
+            "L09"
+          ],
+          "syllabusActions": [
+            "C7-IQ4-01",
+            "C7-IQ4-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c03"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Identify the OH group and classify its carbon.",
+          "stop": "Explain alcohol boiling and solubility trends.",
+          "playlistOrder": 8,
+          "planAnchor": "C05",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson09.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c03.",
+          "next": [
+            "chem-m7-c06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does an OH group change alcohol properties?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-alcohol-properties.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l09.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c06",
+          "title": "How can we make ethanol?",
+          "type": "core",
+          "siteLessons": [
+            "L10"
+          ],
+          "syllabusActions": [
+            "C7-IQ4-05"
+          ],
+          "prerequisites": [
+            "chem-m7-c04",
+            "chem-m5-c02",
+            "chem-m5-c04b"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare hydration, substitution and fermentation starting materials.",
+          "stop": "Judge conditions and product separation for each route.",
+          "playlistOrder": 9,
+          "planAnchor": "C06",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson10.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c04, chem-m5-c02, chem-m5-c04b.",
+          "next": [
+            "chem-m7-c07"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can we make ethanol?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-alcohol-production.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l10.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c07",
+          "title": "What does burning an alcohol tell us about fuel choice?",
+          "type": "core",
+          "siteLessons": [
+            "L11"
+          ],
+          "syllabusActions": [
+            "C7-IQ4-04",
+            "C7-IQ4-07",
+            "C7-IQ2-06"
+          ],
+          "prerequisites": [
+            "chem-m7-c05",
+            "chem-m5-g01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Write alcohol combustion equations and compare fuel sources.",
+          "stop": "Assess energy, production and environmental trade-offs.",
+          "playlistOrder": 10,
+          "planAnchor": "C07",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson11.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c05, chem-m5-g01.",
+          "next": [
+            "chem-m7-p03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What does burning an alcohol tell us about fuel choice?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-alcohol-combustion.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l11.md"
+          ]
+        },
+        {
+          "id": "chem-m7-p03",
+          "title": "Measure and compare alcohol combustion enthalpy",
+          "type": "practical",
+          "siteLessons": [
+            "L11"
+          ],
+          "syllabusActions": [
+            "C7-IQ4-03"
+          ],
+          "prerequisites": [
+            "chem-m7-c07",
+            "chem-m5-g01"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Measure water warming and fuel mass with a spirit burner.",
+          "stop": "Calculate molar enthalpy and explain the main heat losses.",
+          "playlistOrder": 11,
+          "planAnchor": "P03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson11.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c07, chem-m5-g01.",
+          "next": [
+            "chem-m7-g02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Measure and compare alcohol combustion enthalpy",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-alcohol-combustion.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l11.md"
+          ]
+        },
+        {
+          "id": "chem-m7-g02",
+          "title": "Combustion enthalpy calculation practice",
+          "type": "practice",
+          "siteLessons": [
+            "L11"
+          ],
+          "syllabusActions": [
+            "C7-IQ4-03"
+          ],
+          "prerequisites": [
+            "chem-m7-p03"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Separate water mass, temperature rise and fuel mass.",
+          "stop": "Calculate molar enthalpy and evaluate an anomalous result.",
+          "playlistOrder": 12,
+          "planAnchor": "G02",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson11.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-p03.",
+          "next": [
+            "chem-m7-c08"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Combustion enthalpy calculation practice",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-alcohol-combustion.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l11.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c08",
+          "title": "Where can an alcohol reaction lead?",
+          "type": "core",
+          "siteLessons": [
+            "L12",
+            "L13"
+          ],
+          "syllabusActions": [
+            "C7-IQ4-04",
+            "C7-IQ4-06",
+            "C7-IQ5-01"
+          ],
+          "prerequisites": [
+            "chem-m7-c05"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare dehydration, substitution and oxidation.",
+          "stop": "Predict an aldehyde, ketone or acid from alcohol class and conditions.",
+          "playlistOrder": 13,
+          "planAnchor": "C08",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson12.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson13.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c05.",
+          "next": [
+            "chem-m7-p04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Where can an alcohol reaction lead?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-alcohol-reactions.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l12.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l13.md"
+          ]
+        },
+        {
+          "id": "chem-m7-p04",
+          "title": "Investigate alcohol oxidation products",
+          "type": "practical",
+          "siteLessons": [
+            "L12",
+            "L13"
+          ],
+          "syllabusActions": [
+            "C7-IQ4-06",
+            "C7-IQ2-05"
+          ],
+          "prerequisites": [
+            "chem-m7-c08"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Choose an oxidation and collection method.",
+          "stop": "Explain test observations and primary versus secondary products.",
+          "playlistOrder": 14,
+          "planAnchor": "P04",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson12.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson13.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c08.",
+          "next": [
+            "chem-m7-c09"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate alcohol oxidation products",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-carbonyl-compounds.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l12.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l13.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c09",
+          "title": "Why are carboxylic acids acidic?",
+          "type": "core",
+          "siteLessons": [
+            "L14",
+            "L18"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-01",
+            "C7-IQ5-02",
+            "C7-IQ5-04"
+          ],
+          "prerequisites": [
+            "chem-m7-c08",
+            "chem-m6-c05",
+            "chem-m6-c10"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Identify the carboxyl group and its intermolecular forces.",
+          "stop": "Compare a carboxylic acid with an amine and explain strength.",
+          "playlistOrder": 15,
+          "planAnchor": "C09",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson14.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson18.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c08, chem-m6-c05, chem-m6-c10.",
+          "next": [
+            "chem-m7-c10"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why are carboxylic acids acidic?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-carboxylic-acids-strength.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l14.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l18.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c10",
+          "title": "How do an acid and alcohol make an ester?",
+          "type": "core",
+          "siteLessons": [
+            "L15"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-03",
+            "C7-IQ5-06"
+          ],
+          "prerequisites": [
+            "chem-m7-c09",
+            "chem-m7-c05",
+            "chem-m5-c01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Name the acid and alcohol parts.",
+          "stop": "Explain esterification, equilibrium and product identification.",
+          "playlistOrder": 16,
+          "planAnchor": "C10",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson15.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c09, chem-m7-c05, chem-m5-c01.",
+          "next": [
+            "chem-m7-p05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do an acid and alcohol make an ester?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-esters-esterification.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l15.md"
+          ]
+        },
+        {
+          "id": "chem-m7-p05",
+          "title": "Prepare a simple ester in a school laboratory",
+          "type": "practical",
+          "siteLessons": [
+            "L15"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-03",
+            "C7-IQ2-05"
+          ],
+          "prerequisites": [
+            "chem-m7-c10"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Select reactants and safe heating apparatus.",
+          "stop": "Separate or identify the ester and evaluate yield limits.",
+          "playlistOrder": 17,
+          "planAnchor": "P05",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson15.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c10.",
+          "next": [
+            "chem-m7-c11"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Prepare a simple ester in a school laboratory",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-esters-esterification.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l15.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c11",
+          "title": "How do amines and amides differ?",
+          "type": "core",
+          "siteLessons": [
+            "L16"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-01",
+            "C7-IQ5-02",
+            "C7-IQ5-04"
+          ],
+          "prerequisites": [
+            "chem-m7-c09"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Identify the nitrogen functional groups.",
+          "stop": "Compare basicity, intermolecular forces and reactions.",
+          "playlistOrder": 18,
+          "planAnchor": "C11",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson16.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c09.",
+          "next": [
+            "chem-m7-c12"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do amines and amides differ?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-amines-amides.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l16.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c12",
+          "title": "How do soaps and detergents lift oil into water?",
+          "type": "core",
+          "siteLessons": [
+            "L17"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-05"
+          ],
+          "prerequisites": [
+            "chem-m7-c09",
+            "chem-m7-c10"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Locate the hydrophilic head and hydrophobic tail.",
+          "stop": "Explain micelles and compare behaviour in hard water.",
+          "playlistOrder": 19,
+          "planAnchor": "C12",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson17.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c09, chem-m7-c10.",
+          "next": [
+            "chem-m7-p06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do soaps and detergents lift oil into water?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-soaps-detergents.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l17.md"
+          ]
+        },
+        {
+          "id": "chem-m7-p06",
+          "title": "Compare soap and detergent action",
+          "type": "practical",
+          "siteLessons": [
+            "L17"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-05",
+            "C7-IQ2-05"
+          ],
+          "prerequisites": [
+            "chem-m7-c12"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Prepare matched water and oily samples.",
+          "stop": "Use observations to explain emulsification and hard-water effects.",
+          "playlistOrder": 20,
+          "planAnchor": "P06",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson17.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c12.",
+          "next": [
+            "chem-m7-c13"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Compare soap and detergent action",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-soaps-detergents.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l17.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c13",
+          "title": "How can a reaction map plan organic synthesis?",
+          "type": "core",
+          "siteLessons": [
+            "L19",
+            "L20"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-06"
+          ],
+          "prerequisites": [
+            "chem-m7-c04",
+            "chem-m7-c06",
+            "chem-m7-c08",
+            "chem-m7-c10",
+            "chem-m7-c11"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Choose a target functional group and starting material.",
+          "stop": "Show a justified multi-step pathway with conditions.",
+          "playlistOrder": 21,
+          "planAnchor": "C13",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson19.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L20",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson20.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c04, chem-m7-c06, chem-m7-c08, chem-m7-c10, chem-m7-c11.",
+          "next": [
+            "chem-m7-g03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can a reaction map plan organic synthesis?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-organic-synthesis-pathways.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l19.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l20.md"
+          ]
+        },
+        {
+          "id": "chem-m7-g03",
+          "title": "Organic synthesis pathway practice",
+          "type": "practice",
+          "siteLessons": [
+            "L19",
+            "L20"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-06",
+            "C7-IQ4-04"
+          ],
+          "prerequisites": [
+            "chem-m7-c13"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Read a target and allowed starting materials.",
+          "stop": "Solve and check multi-step transformations and isomers.",
+          "playlistOrder": 22,
+          "planAnchor": "G03",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson19.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Chemistry-Y12-M7-L20",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson20.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c13.",
+          "next": [
+            "chem-m7-c14"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Organic synthesis pathway practice",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-organic-synthesis-pathways.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l19.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l20.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c14",
+          "title": "How does an alkene become an addition polymer?",
+          "type": "core",
+          "siteLessons": [
+            "L21"
+          ],
+          "syllabusActions": [
+            "C7-IQ6-01"
+          ],
+          "prerequisites": [
+            "chem-m7-c04"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Open the alkene double bond.",
+          "stop": "Link repeat-unit structure to properties and uses.",
+          "playlistOrder": 23,
+          "planAnchor": "C14",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L21",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson21.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c04.",
+          "next": [
+            "chem-m7-c15"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does an alkene become an addition polymer?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-addition-polymers.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l21.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c15",
+          "title": "How does condensation build a polymer?",
+          "type": "core",
+          "siteLessons": [
+            "L22"
+          ],
+          "syllabusActions": [
+            "C7-IQ6-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c10",
+            "chem-m7-c11",
+            "chem-m7-c14"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Join monomers through ester or amide links.",
+          "stop": "Compare repeat units and small-molecule by-products.",
+          "playlistOrder": 24,
+          "planAnchor": "C15",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L22",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson22.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c10, chem-m7-c11, chem-m7-c14.",
+          "next": [
+            "chem-m7-c16"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does condensation build a polymer?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-condensation-polymers.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l22.md"
+          ]
+        },
+        {
+          "id": "chem-m7-c16",
+          "title": "How do polymer structures shape their uses and impacts?",
+          "type": "core",
+          "siteLessons": [
+            "L23"
+          ],
+          "syllabusActions": [
+            "C7-IQ6-01",
+            "C7-IQ6-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c14",
+            "chem-m7-c15"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare branching, links and intermolecular forces.",
+          "stop": "Judge application and disposal trade-offs with examples.",
+          "playlistOrder": 25,
+          "planAnchor": "C16",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M7-L23",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson23.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c14, chem-m7-c15.",
+          "next": [],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do polymer structures shape their uses and impacts?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-polymer-properties-lifecycle.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l23.md"
+          ]
+        }
+      ]
+    },
+    "Biology": {
+      "module": "Infectious Disease",
+      "sourceCandidateCount": 21,
+      "entries": [
+        {
+          "id": "bio-m7-b01",
+          "title": "What makes a disease infectious?",
+          "type": "core",
+          "siteLessons": [
+            "L01",
+            "L02"
+          ],
+          "syllabusActions": [
+            "B7-IQ1-01",
+            "B7-IQ1-04"
+          ],
+          "prerequisites": [
+            "bio-m6-b01",
+            "bio-m5-b02c"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare pathogen groups and host entry.",
+          "stop": "Classify examples and explain how their adaptations aid spread.",
+          "playlistOrder": 1,
+          "planAnchor": "B01",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L01",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson01.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson02.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b01, bio-m5-b02c.",
+          "next": [
+            "bio-m7-b02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What makes a disease infectious?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-pathogens-disease-data.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l01.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l02.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b02",
+          "title": "How did experiments establish germ theory?",
+          "type": "core",
+          "siteLessons": [
+            "L03"
+          ],
+          "syllabusActions": [
+            "B7-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m7-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare Pasteur and Koch investigations.",
+          "stop": "Explain how controls link a microbe to disease.",
+          "playlistOrder": 2,
+          "planAnchor": "B02",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson03.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b01.",
+          "next": [
+            "bio-m7-b03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How did experiments establish germ theory?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-germ-theory.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l03.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b03",
+          "title": "How does a pathogen move between hosts?",
+          "type": "core",
+          "siteLessons": [
+            "L04"
+          ],
+          "syllabusActions": [
+            "B7-IQ1-01"
+          ],
+          "prerequisites": [
+            "bio-m7-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Trace direct, indirect and vector transmission.",
+          "stop": "Predict where breaking one link stops an outbreak.",
+          "playlistOrder": 3,
+          "planAnchor": "B03",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson04.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b01.",
+          "next": [
+            "bio-m7-p01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does a pathogen move between hosts?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-transmission-outbreaks.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l04.md"
+          ]
+        },
+        {
+          "id": "bio-m7-p01",
+          "title": "Investigate routes of disease transmission",
+          "type": "practical",
+          "siteLessons": [
+            "L04"
+          ],
+          "syllabusActions": [
+            "B7-IQ1-01"
+          ],
+          "prerequisites": [
+            "bio-m7-b03"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Model a safe transmission route with observable markers.",
+          "stop": "Interpret contacts and distinguish model limits from real spread.",
+          "playlistOrder": 4,
+          "planAnchor": "P01",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson04.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b03.",
+          "next": [
+            "bio-m7-p02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate routes of disease transmission",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-transmission-outbreaks.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l04.md"
+          ]
+        },
+        {
+          "id": "bio-m7-p02",
+          "title": "Test a food or water sample for microbes",
+          "type": "practical",
+          "siteLessons": [
+            "L05"
+          ],
+          "syllabusActions": [
+            "B7-IQ1-01"
+          ],
+          "prerequisites": [
+            "bio-m7-b01",
+            "bio-m7-b02"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Plan safe sampling, controls and agar incubation.",
+          "stop": "Read colony evidence without claiming every colony is a pathogen.",
+          "playlistOrder": 5,
+          "planAnchor": "P02",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L05",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson05.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b01, bio-m7-b02.",
+          "next": [
+            "bio-m7-b04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Test a food or water sample for microbes",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-microbial-testing.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l05.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b04",
+          "title": "How does disease damage agricultural production?",
+          "type": "core",
+          "siteLessons": [
+            "L06",
+            "L07"
+          ],
+          "syllabusActions": [
+            "B7-IQ1-03"
+          ],
+          "prerequisites": [
+            "bio-m7-b01",
+            "bio-m7-b03",
+            "bio-m5-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare plant and animal cases.",
+          "stop": "Assess production losses, spread and control consequences.",
+          "playlistOrder": 6,
+          "planAnchor": "B04",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson06.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L07",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson07.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b01, bio-m7-b03, bio-m5-b01.",
+          "next": [
+            "bio-m7-b05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does disease damage agricultural production?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-agricultural-disease.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l06.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l07.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b05",
+          "title": "How does an Australian plant defend itself?",
+          "type": "core",
+          "siteLessons": [
+            "L08"
+          ],
+          "syllabusActions": [
+            "B7-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m7-b01",
+            "bio-m7-b04",
+            "bio-m5-b02b"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Use a named plant and pathogen.",
+          "stop": "Explain barrier and chemical responses with case evidence.",
+          "playlistOrder": 7,
+          "planAnchor": "B05",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson08.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b01, bio-m7-b04, bio-m5-b02b.",
+          "next": [
+            "bio-m7-p03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does an Australian plant defend itself?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-plant-defences.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l08.md"
+          ]
+        },
+        {
+          "id": "bio-m7-p03",
+          "title": "Investigate a named Australian plant disease",
+          "type": "practical",
+          "siteLessons": [
+            "L08"
+          ],
+          "syllabusActions": [
+            "B7-IQ2-01"
+          ],
+          "prerequisites": [
+            "bio-m7-b05"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Choose practical or secondary data for a named plant-pathogen pair.",
+          "stop": "Trace observations to the plant response and note evidence limits.",
+          "playlistOrder": 8,
+          "planAnchor": "P03",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L08",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson08.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b05.",
+          "next": [
+            "bio-m7-b06"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Investigate a named Australian plant disease",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-plant-defences.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l08.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b06",
+          "title": "What happens first when a pathogen enters an animal?",
+          "type": "core",
+          "siteLessons": [
+            "L09",
+            "L10"
+          ],
+          "syllabusActions": [
+            "B7-IQ2-02",
+            "B7-IQ3-01"
+          ],
+          "prerequisites": [
+            "bio-m7-b01",
+            "bio-m7-b03"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Follow barriers, inflammation and phagocytosis.",
+          "stop": "Explain how innate cells contain a pathogen and alert adaptive cells.",
+          "playlistOrder": 9,
+          "planAnchor": "B06",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson09.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson10.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b01, bio-m7-b03.",
+          "next": [
+            "bio-m7-p04"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What happens first when a pathogen enters an animal?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-innate-defences.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l09.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l10.md"
+          ]
+        },
+        {
+          "id": "bio-m7-p04",
+          "title": "Model and test an immune response",
+          "type": "practical",
+          "siteLessons": [
+            "L09",
+            "L10",
+            "L14"
+          ],
+          "syllabusActions": [
+            "B7-IQ3-01",
+            "B7-IQ3-02"
+          ],
+          "prerequisites": [
+            "bio-m7-b06"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Set up a safe model of recognition and response.",
+          "stop": "Explain what its observations can and cannot show.",
+          "playlistOrder": 10,
+          "planAnchor": "P04",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L09",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson09.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L10",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson10.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson14.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b06.",
+          "next": [
+            "bio-m7-b07"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Model and test an immune response",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-innate-defences.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l09.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l10.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l14.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b07",
+          "title": "How do B cells recognise and target an antigen?",
+          "type": "core",
+          "siteLessons": [
+            "L11"
+          ],
+          "syllabusActions": [
+            "B7-IQ3-01"
+          ],
+          "prerequisites": [
+            "bio-m7-b06"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Introduce antigens and matching receptors.",
+          "stop": "Explain antibody production and specific binding.",
+          "playlistOrder": 11,
+          "planAnchor": "B07",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L11",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson11.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b06.",
+          "next": [
+            "bio-m7-b08"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do B cells recognise and target an antigen?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-antigens-antibodies.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l11.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b08",
+          "title": "How do T cells respond to infected cells?",
+          "type": "core",
+          "siteLessons": [
+            "L12"
+          ],
+          "syllabusActions": [
+            "B7-IQ3-01"
+          ],
+          "prerequisites": [
+            "bio-m7-b06",
+            "bio-m7-b07"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Follow antigen presentation and T-cell activation.",
+          "stop": "Explain helper and cytotoxic T-cell roles.",
+          "playlistOrder": 12,
+          "planAnchor": "B08",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L12",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson12.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b06, bio-m7-b07.",
+          "next": [
+            "bio-m7-b09"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do T cells respond to infected cells?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-t-cell-immunity.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l12.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b09",
+          "title": "Why is a second infection often stopped faster?",
+          "type": "core",
+          "siteLessons": [
+            "L13",
+            "L14"
+          ],
+          "syllabusActions": [
+            "B7-IQ3-02",
+            "B7-IQ4-02"
+          ],
+          "prerequisites": [
+            "bio-m7-b07",
+            "bio-m7-b08"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare primary and secondary responses.",
+          "stop": "Explain active and passive immunity and vaccination.",
+          "playlistOrder": 13,
+          "planAnchor": "B09",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L13",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson13.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson14.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b07, bio-m7-b08.",
+          "next": [
+            "bio-m7-b10"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why is a second infection often stopped faster?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-memory-vaccination.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l13.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l14.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b10",
+          "title": "How can hygiene and quarantine interrupt spread?",
+          "type": "core",
+          "siteLessons": [
+            "L15",
+            "L21"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-02",
+            "B7-IQ4-04"
+          ],
+          "prerequisites": [
+            "bio-m7-b03",
+            "bio-m7-b09"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Locate transmission links that controls can interrupt.",
+          "stop": "Evaluate hygiene, isolation and public-health measures.",
+          "playlistOrder": 14,
+          "planAnchor": "B10",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L15",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson15.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L21",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson21.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b03, bio-m7-b09.",
+          "next": [
+            "bio-m7-b11"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can hygiene and quarantine interrupt spread?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-hygiene-pandemic-control.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l15.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l21.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b11",
+          "title": "Why do antibiotics and antivirals work differently?",
+          "type": "core",
+          "siteLessons": [
+            "L16"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-03"
+          ],
+          "prerequisites": [
+            "bio-m7-b01",
+            "bio-m7-b06",
+            "bio-m6-b01"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare bacterial structures with viral replication.",
+          "stop": "Assess treatment evidence and resistance.",
+          "playlistOrder": 15,
+          "planAnchor": "B11",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson16.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b01, bio-m7-b06, bio-m6-b01.",
+          "next": [
+            "bio-m7-p05"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why do antibiotics and antivirals work differently?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-antibiotics-antivirals.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l16.md"
+          ]
+        },
+        {
+          "id": "bio-m7-p05",
+          "title": "Test antimicrobial effectiveness",
+          "type": "practical",
+          "siteLessons": [
+            "L16"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-03"
+          ],
+          "prerequisites": [
+            "bio-m7-b11",
+            "bio-m7-p02"
+          ],
+          "estimatedMinutes": 7,
+          "start": "Set up safe controlled agar comparisons.",
+          "stop": "Interpret inhibition zones without overclaiming clinical effectiveness.",
+          "playlistOrder": 16,
+          "planAnchor": "P05",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L16",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson16.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b11, bio-m7-p02.",
+          "next": [
+            "bio-m7-b12"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Test antimicrobial effectiveness",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-antibiotics-antivirals.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l16.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b12",
+          "title": "How can vector control reduce infection?",
+          "type": "core",
+          "siteLessons": [
+            "L17"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-02",
+            "B7-IQ4-04"
+          ],
+          "prerequisites": [
+            "bio-m7-b03",
+            "bio-m7-b10",
+            "bio-m6-b18"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Follow a vector life cycle and environmental intervention.",
+          "stop": "Evaluate pesticides and genetic strategies with trade-offs.",
+          "playlistOrder": 17,
+          "planAnchor": "B12",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson17.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b03, bio-m7-b10, bio-m6-b18.",
+          "next": [
+            "bio-m7-b13"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How can vector control reduce infection?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-vector-control-genetic-engineering.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l17.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b13",
+          "title": "What limits malaria or dengue control?",
+          "type": "core",
+          "siteLessons": [
+            "L18"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-01",
+            "B7-IQ4-05"
+          ],
+          "prerequisites": [
+            "bio-m7-b03",
+            "bio-m7-b09",
+            "bio-m7-b10",
+            "bio-m7-b12"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Read incidence and prevalence data for a named disease.",
+          "stop": "Combine biological and social causes of control success or failure.",
+          "playlistOrder": 18,
+          "planAnchor": "B13",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson18.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b03, bio-m7-b09, bio-m7-b10, bio-m7-b12.",
+          "next": [
+            "bio-m7-g01"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "What limits malaria or dengue control?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-malaria-dengue.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l18.md"
+          ]
+        },
+        {
+          "id": "bio-m7-g01",
+          "title": "Outbreak data and control practice",
+          "type": "practice",
+          "siteLessons": [
+            "L04",
+            "L18",
+            "L21"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-01",
+            "B7-IQ4-05",
+            "B7-IQ4-04"
+          ],
+          "prerequisites": [
+            "bio-m7-b13"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Read a disease table or graph and identify its denominator.",
+          "stop": "Calculate or compare incidence and prevalence, then justify control.",
+          "playlistOrder": 19,
+          "planAnchor": "G01",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L04",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson04.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson18.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L21",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson21.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b13.",
+          "next": [
+            "bio-m7-b14"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Outbreak data and control practice",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-malaria-dengue.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l04.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l18.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l21.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b14",
+          "title": "How have disease control ideas changed?",
+          "type": "core",
+          "siteLessons": [
+            "L19"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-06"
+          ],
+          "prerequisites": [
+            "bio-m7-b02",
+            "bio-m7-b09",
+            "bio-m7-b10"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Compare historical, culturally diverse and current strategies.",
+          "stop": "Evaluate each against transmission evidence and context.",
+          "playlistOrder": 20,
+          "planAnchor": "B14",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson19.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b02, bio-m7-b09, bio-m7-b10.",
+          "next": [
+            "bio-m7-b15"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How have disease control ideas changed?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-historical-cultural-control.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l19.md"
+          ]
+        },
+        {
+          "id": "bio-m7-b15",
+          "title": "Why do Aboriginal protocols matter in medicine development?",
+          "type": "core",
+          "siteLessons": [
+            "L20"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-07"
+          ],
+          "prerequisites": [
+            "bio-m7-b11",
+            "bio-m7-b14",
+            "bio-m6-b19"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Identify knowledge holders and a named medicine example.",
+          "stop": "Explain consent, recognition and protection of cultural and intellectual property.",
+          "playlistOrder": 21,
+          "planAnchor": "B15",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L20",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson20.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b11, bio-m7-b14, bio-m6-b19.",
+          "next": [
+            "bio-m7-g02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Why do Aboriginal protocols matter in medicine development?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-indigenous-protocols-medicines.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l20.md"
+          ]
+        },
+        {
+          "id": "bio-m7-g02",
+          "title": "Evaluate an infectious disease strategy",
+          "type": "practice",
+          "siteLessons": [
+            "L17",
+            "L18",
+            "L19",
+            "L20",
+            "L21"
+          ],
+          "syllabusActions": [
+            "B7-IQ4-01",
+            "B7-IQ4-04",
+            "B7-IQ4-06",
+            "B7-IQ4-07"
+          ],
+          "prerequisites": [
+            "bio-m7-b13",
+            "bio-m7-b14",
+            "bio-m7-b15"
+          ],
+          "estimatedMinutes": 8,
+          "start": "Read a case with biological and social evidence.",
+          "stop": "Write a justified evaluation with conditions and limits.",
+          "playlistOrder": 22,
+          "planAnchor": "G02",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M7-L17",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson17.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L18",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson18.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L19",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson19.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L20",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson20.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            },
+            {
+              "id": "Biology-Y12-M7-L21",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson21.sa.html",
+              "scope": "Use the portion within this route boundary; site content has not been approved as a video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m7-b13, bio-m7-b14, bio-m7-b15.",
+          "next": [],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Practice companion",
+          "mainLearnerQuestion": "Evaluate an infectious disease strategy",
+          "preDesignPack": "docs/production/claude-pm/pre-design/bio-m7-historical-cultural-control.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/bio-m7-l17.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l18.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l19.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l20.md",
+            "docs/production/claude-pm/site-extracts/bio-m7-l21.md"
+          ]
+        }
+      ]
+    }
+  }
+}
