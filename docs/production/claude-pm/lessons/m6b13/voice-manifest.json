@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B13-claude-2026-10-21-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b13/lesson.json",
+  "lessonSha256": "23e1a8149ba27d5b7ceac575d3f530a8c037e88174744411b3c96b96a0f5b152",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b13/lesson.production-brief.json",
+    "sha256": "e8caa002ddeb3e8f801b7fb674d8c31ba0e64b6353d6242a778a13e86894ed6d"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two genetic techniques. Bt cotton has been grown in Australian cotton fields for about thirty years. A gene drive mosquito, built to fight malaria, has never left a lab cage. Both promise a big benefit, and both could change biodiversity. So should they get the same verdict? How do you weigh the benefits of a biotechnology against its risks to biodiversity, and reach a judgement you can defend?",
+      "hash": "5cec363307ff",
+      "textSha256": "5cec363307ff9efd6c202aa00efae45a43a44aa6c1a27abffa08f8b71b4a7cf8",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/hook.5cec363307ff.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/hook.5cec363307ff.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/hook.5cec363307ff.generation.json",
+      "plannedRequestSha256": "15d402c2e540703b3ffa9bcff53316004ddf30bd1fb8182a9b0e51da44edbd14"
+    },
+    {
+      "id": "four-questions",
+      "parentSceneId": "four-questions",
+      "text": "Listing pros and cons isn't weighing. To weigh, put each case through the same four questions, and answer each one with evidence from that case. How big is the benefit, and how strong is the evidence for it? Which level of biodiversity changes, and compared with what? A bigger harvest isn't a level. Can the change be undone if it goes wrong? And who gains, and who carries the risk? Then finish with a verdict that has a condition attached: when is it worth it?",
+      "hash": "f7106bc86865",
+      "textSha256": "f7106bc86865130828921ac8e150b43d96bd254f3650ea3c287230628f5e866e",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/four-questions.f7106bc86865.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/four-questions.f7106bc86865.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/four-questions.f7106bc86865.generation.json",
+      "plannedRequestSha256": "459afc017de1a5b34016cc2b3d1594a785fdd3bc8ff6cdc47183520dba2a31d4"
+    },
+    {
+      "id": "bt-cotton",
+      "parentSceneId": "bt-cotton",
+      "text": "Start with Bt cotton. The benefit is large and measured: together with better pest management, it's cut insecticide use on Australian cotton by about eighty-five per cent. Compared with sprayed cotton, that can leave more insect species alive in the field, a gain at the species level. Australia's native cotton species don't form fertile hybrids with it, so the gene is very unlikely to reach native plants. The main risk is caterpillars evolving resistance, a genetic change in a wild pest population, which growers slow with refuge crops. And if resistance did spread, growers could stop planting it, though they'd spray more again. Growers gain, and so do insects in and around the field.",
+      "hash": "93e72441ec8e",
+      "textSha256": "93e72441ec8ee8d3f7630944cec2e4f407a68c233256264bb037fefe93f97423",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/bt-cotton.93e72441ec8e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/bt-cotton.93e72441ec8e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/bt-cotton.93e72441ec8e.generation.json",
+      "plannedRequestSha256": "6bcfa808765862ae09d06f4e8b127c77d06d8060a0f5a2992e29b194a6ff471e"
+    },
+    {
+      "id": "gene-drive",
+      "parentSceneId": "gene-drive",
+      "text": "Now the gene drive. The need is enormous: malaria kills hundreds of thousands of people a year, mostly young children in Africa. But the evidence comes from lab cages, not the wild. The aim is to crash the population of one kind of malaria mosquito, out of thousands of mosquito species. Whether that kind would be lost locally is uncertain, and so is the effect on animals that eat them. This drive is built to spread by itself, so once it's released, it may not be possible to recall it. The people who'd gain most live where malaria is common, but a drive can cross borders, so communities and governments in many countries would need to agree.",
+      "hash": "12fb30c3e561",
+      "textSha256": "12fb30c3e5613624a7a35a4859f2152b5ac979d99db299ed4185bc224cda31bc",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/gene-drive.12fb30c3e561.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/gene-drive.12fb30c3e561.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/gene-drive.12fb30c3e561.generation.json",
+      "plannedRequestSha256": "6b84f7bd334217657ce3f6961a9e0b70d1644df21cea091bb3883ed51832d204"
+    },
+    {
+      "id": "undone",
+      "parentSceneId": "undone",
+      "text": "Notice which question pulls these two apart: can it be undone? A benefit you give up can usually be won back. Stop growing a crop, and you can choose something else next season. But an extinct species can't be brought back, and a drive that has spread through wild mosquitoes could be very hard to remove. So a gain you can reverse and a loss you can't aren't settled just by comparing their sizes. A risk that may be permanent needs much stronger evidence before you accept it.",
+      "hash": "6f813fd36ad3",
+      "textSha256": "6f813fd36ad38888522d8d75ecd2e1fc7599b9b138e0f6df6e7094cbb3a9594f",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/undone.6f813fd36ad3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/undone.6f813fd36ad3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/undone.6f813fd36ad3.generation.json",
+      "plannedRequestSha256": "442f663b5d1dc082a048a70c36bea845c27ee64733d08e5c6c29f209882e40eb"
+    },
+    {
+      "id": "verdicts",
+      "parentSceneId": "verdicts",
+      "text": "Now the verdicts. Bt cotton: to a large extent justified, provided refuges keep resistance rare. The gene drive: not yet justified for release, but staged field trials could be, if each stage shows no serious harm and the communities affected agree. Same four questions, two different verdicts, because the evidence, the reversibility and the people at risk all differ. That's why one verdict for all biotechnology is too broad. Judge each case on its evidence, and say when your verdict would change.",
+      "hash": "61b7cad57e21",
+      "textSha256": "61b7cad57e214cc4a5d43ccce0bef62309e742c0d9697234948307e7ca4f60d6",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/verdicts.61b7cad57e21.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/verdicts.61b7cad57e21.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/verdicts.61b7cad57e21.generation.json",
+      "plannedRequestSha256": "df17daadd0590a9387bb048bbe0ea835f269d9b029721b2f110f5d5daec0be70"
+    },
+    {
+      "id": "verdict-checks",
+      "parentSceneId": "verdict-checks",
+      "text": "A good condition is one you could actually check. For Bt cotton, the check is resistance monitoring: each season, scientists test caterpillars from cotton regions for resistance alleles. If those alleles became common despite the refuges, the verdict would weaken. For the gene drive, the checks would come from each trial stage. Do the target mosquitoes fall? Do other species hold steady? Do the people affected agree? Each answer could move the verdict either way.",
+      "hash": "26d2190597b6",
+      "textSha256": "26d2190597b6c43000f0989ce0a8546bad5a566f2a28a491d6031c0d043f824f",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/verdict-checks.26d2190597b6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/verdict-checks.26d2190597b6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/verdict-checks.26d2190597b6.generation.json",
+      "plannedRequestSha256": "2e5926b6d68662d63b2dade3c5a616d9c069c8708d187bedefb9a6fc3b54c721"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two things to hold on to. A benefit can be paused; an extinction can't be undone. That's why reversibility weighs so heavily. And an evaluation isn't finished until it ends in a verdict, with \"provided that\": the condition under which it holds.",
+      "hash": "4ab3b1f192a5",
+      "textSha256": "4ab3b1f192a5e7a7039414580483e840411635450cdbcb731786707b3c6d75d9",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/memory.4ab3b1f192a5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/memory.4ab3b1f192a5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/memory.4ab3b1f192a5.generation.json",
+      "plannedRequestSha256": "748632708201b9144c69755c93ff6c4079029103b82d487a950fd1d57e014126"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. Some mosquito control programs release males carrying a gene that kills daughters before they become adults. Sons who inherit it survive, and each passes it to about half his own offspring. Explain why the gene should disappear from the wild population once releases stop, and why stopping releases alone may not remove a self-sustaining suppression gene drive. Pause here to answer.",
+      "hash": "49364e1af840",
+      "textSha256": "49364e1af84063424daf7c848eb3431266f9d25991fecb6ad79147bf2f81046c",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/attempt.49364e1af840.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/attempt.49364e1af840.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/attempt.49364e1af840.generation.json",
+      "plannedRequestSha256": "35b98595258dcfc5a777a0923fffc9132f1d5aa85101dbc390ec944722748488"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Without new releases, each carrier son passes the gene to only half his offspring, and every daughter who inherits it dies. So selection removes it, and it gets rarer each generation until it's lost. A drive designed to bias inheritance above one-half can keep spreading after releases stop; its spread in the wild is still untested. Saying that stopping releases stops any gene drive is the classic mistake.",
+      "hash": "7c3e71928f05",
+      "textSha256": "7c3e71928f058fdd8bd9188f1991e9b33a0f931fcd08fb98116c9ddeada2668f",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/feedback-one.7c3e71928f05.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/feedback-one.7c3e71928f05.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/feedback-one.7c3e71928f05.generation.json",
+      "plannedRequestSha256": "f98ed2c94a60fc11ee07266f0f86a82c01fac6a6b90236d79d9438d0d248bbf5"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A region's farmers grow many local wheat varieties. A modified, drought-tolerant wheat has out-yielded them in dry-year trials, and a wild grass that can cross with wheat grows along the field edges. It's proposed that the new wheat replace all the local varieties. Evaluate this proposal, weighing its benefits against its effects on biodiversity. Pause here to answer.",
+      "hash": "aa2d16155b66",
+      "textSha256": "aa2d16155b66becfe1411177a710fa660f83caf7b8a4013b549163bfd3136072",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/attempt-two.aa2d16155b66.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/attempt-two.aa2d16155b66.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/attempt-two.aa2d16155b66.generation.json",
+      "plannedRequestSha256": "a984108f555a535a2d711dc81ca1c7b81a182b5828f53ed3d4f5601cb09d8145"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The benefit: steadier drought harvests, though shown only in dry-year trials. But one variety replacing twenty narrows the crop's genetic diversity, and lost ones may never return. The gene could also spread into the wild grass. So replacing them all isn't justified. Growing it could be, provided local varieties are kept and it's planted away from the grass. No verdict is the classic mistake.",
+      "hash": "ca3afafa1f0d",
+      "textSha256": "ca3afafa1f0d06523f3f7dbde5458221059fd2f4d0454258314e7ae0580e0e7b",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/feedback-two.ca3afafa1f0d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/feedback-two.ca3afafa1f0d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/feedback-two.ca3afafa1f0d.generation.json",
+      "plannedRequestSha256": "46361352954341c57a61c7443aaea0b72f708bc00a1490338ebf7e1f1b27f3e9"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question asks you to weigh a biotechnology, put each case through the same four questions: benefit and evidence, level and baseline, can it be undone, who gains and who carries the risk. Then end with a verdict and its condition, and make sure that condition is something evidence could check. Next, how artificial insemination and artificial pollination compare.",
+      "hash": "54507404caf1",
+      "textSha256": "54507404caf1e285cbf87f4a433536eecec453e792d155fb72ef268652868798",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/decision-rule.54507404caf1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/decision-rule.54507404caf1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/decision-rule.54507404caf1.generation.json",
+      "plannedRequestSha256": "ba5384516bcf89a2c2532af199a630b426330e090a2f51e9d33ec1f562365a04"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B13-claude-2026-10-21-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

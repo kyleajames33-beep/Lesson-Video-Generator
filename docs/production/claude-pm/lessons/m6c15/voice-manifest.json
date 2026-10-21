@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C15-claude-2026-10-21-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c15/lesson.json",
+  "lessonSha256": "665fa2d54267595326de8b68ba6ea38b8eb217e9b5d9e7b54f92f6716e05129e",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c15/lesson.production-brief.json",
+    "sha256": "0d6bef9e73f8d06c66f293bcd998fd8fa244d47d0e9eb0206955205206e7dc3d"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This antacid tablet is mostly calcium carbonate, a base. So why not just titrate it with hydrochloric acid? Try it, and the tablet sits in the flask, fizzing slowly, and the indicator changes colour while solid is still left. A dark red wine vinegar has a different problem: it reacts fast, but the red hides the indicator's colour. So when a direct titration won't work, how do you still find the amount?",
+      "hash": "a79343aaf44f",
+      "textSha256": "a79343aaf44f5f5eea4e74d3fe6d38bfffa480e5b7259cc9d8dddb3523a7928a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/hook.a79343aaf44f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/hook.a79343aaf44f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/hook.a79343aaf44f.generation.json",
+      "plannedRequestSha256": "809e4ac6bf064de8fe70d13ce356638a2c8a7a2d61fe7d9c13adef90629d3ba6"
+    },
+    {
+      "id": "direct-fails",
+      "parentSceneId": "direct-fails",
+      "text": "Calcium carbonate barely dissolves in water, so the acid can only attack the surface of the solid, and that's slow. Add acid from a burette, and the solution turns acidic around the solid before the rest of it has reacted, so the indicator changes too early, then drifts back as more solid reacts. The carbon dioxide it makes also dissolves, as carbonic acid, which blurs the endpoint even more.",
+      "hash": "a6b587a10970",
+      "textSha256": "a6b587a10970a713291c1524373f10d3ace5377c7e697736e28d87bd8042075c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/direct-fails.a6b587a10970.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/direct-fails.a6b587a10970.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/direct-fails.a6b587a10970.generation.json",
+      "plannedRequestSha256": "800ae154aa9dc751a19496a835a0a6f8901cde242e647ded026bf80f0988a3fb"
+    },
+    {
+      "id": "back-titration-idea",
+      "parentSceneId": "back-titration-idea",
+      "text": "The fix is a back titration. Add a measured excess of standard hydrochloric acid, more than the tablet can use, and give it time to react completely. Then titrate the acid that's left over with standard sodium hydroxide. You can't easily measure the acid the tablet used, but you can measure what it left, and the difference is the acid it used.",
+      "hash": "2cac3bcca925",
+      "textSha256": "2cac3bcca9258547ddf30354660c624c5bb797f7d4f645109431ec95dbeeb124",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/back-titration-idea.2cac3bcca925.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/back-titration-idea.2cac3bcca925.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/back-titration-idea.2cac3bcca925.generation.json",
+      "plannedRequestSha256": "81678adcd5a2697e07f38d85c4be52483224b1be0a1a9174a060375391629516"
+    },
+    {
+      "id": "boil-off-co2",
+      "parentSceneId": "boil-off-co2",
+      "text": "One step comes before that second titration. Some of the carbon dioxide stays dissolved, as carbonic acid. Sodium hydroxide would react with it too, so the leftover acid would look bigger than it is, and the calcium carbonate would come out too small. So the flask is boiled gently first, to drive the carbon dioxide off, then cooled.",
+      "hash": "80a19ed94dff",
+      "textSha256": "80a19ed94dffef7d8a848048f1d05db19e01ba6d7a0e53ae19108cf0826c9df7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/boil-off-co2.80a19ed94dff.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/boil-off-co2.80a19ed94dff.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/boil-off-co2.80a19ed94dff.generation.json",
+      "plannedRequestSha256": "d453921ca9237a582f0dc23d7c1c6bafd6f163d90a79c07c7f86528c0f5d4c9f"
+    },
+    {
+      "id": "we-added-left",
+      "parentSceneId": "we-added-left",
+      "text": "Here's one tablet, worked through. Step one, the acid added: n equals c V, zero point zero one two five zero moles. Step two, the acid left over. Sodium hydroxide reacts with hydrochloric acid one to one, so it's the moles of sodium hydroxide in the titre: zero point zero zero four six zero moles. Notice you subtract moles, not volumes, because the two solutions have different concentrations.",
+      "hash": "d31feb18f8de",
+      "textSha256": "d31feb18f8de3e34163328ec71526f3daea47986426f2f3b4a640b4ab3b763d0",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/we-added-left.d31feb18f8de.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/we-added-left.d31feb18f8de.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/we-added-left.d31feb18f8de.generation.json",
+      "plannedRequestSha256": "62cb317aa97da27391ed5e3c8793ea89442c48c43935b266b265aff211a32b9b"
+    },
+    {
+      "id": "we-used-mass",
+      "parentSceneId": "we-used-mass",
+      "text": "Step three: the tablet used the difference, zero point zero zero seven nine zero moles of acid. Step four: the equation says each calcium carbonate uses two hydrochloric acid, so halve it, zero point zero zero three nine five moles. Times the molar mass gives zero point three nine five grams, which is sixty three point eight per cent of the tablet. The rest is other ingredients, like the binder.",
+      "hash": "f931d96fa93e",
+      "textSha256": "f931d96fa93e0ce20d49e88e6d5fa741966252d6ff5931c6b6e0bae3a9d58b32",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/we-used-mass.f931d96fa93e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/we-used-mass.f931d96fa93e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/we-used-mass.f931d96fa93e.generation.json",
+      "plannedRequestSha256": "90238b75fa9f2ce393620ba1871b24a073748e9953d1815a94ac605a95a791b2"
+    },
+    {
+      "id": "hidden-endpoint",
+      "parentSceneId": "hidden-endpoint",
+      "text": "Now the red wine vinegar. Its ethanoic acid dissolves and reacts quickly, so a direct titration would work, if you could see the endpoint. So instead of an indicator, use a conductivity meter, which doesn't care about colour, or cloudiness. In the last video, you saw why the readings fall to a V for a strong acid, and bend for a weak acid like this one.",
+      "hash": "2d2094e4eea8",
+      "textSha256": "2d2094e4eea865fc2295bf1ff6522eae3c39a4ce2f45cd1b8c9a2fbd5a7d5cff",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/hidden-endpoint.2d2094e4eea8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/hidden-endpoint.2d2094e4eea8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/hidden-endpoint.2d2094e4eea8.generation.json",
+      "plannedRequestSha256": "d85724f4bae27770335cb1026818ed481d35694b9b7b585a709a84d5e524115b"
+    },
+    {
+      "id": "lines-cross",
+      "parentSceneId": "lines-cross",
+      "text": "Add the sodium hydroxide in equal portions, read the meter after each, and plot the points. Before equivalence, each portion makes the same change, turning some ethanoic acid into sodium and ethanoate ions, so the points climb in a nearly straight line. After equivalence, each portion adds the same extra hydroxide: a steeper straight line. The first points curve a little, and equivalence usually falls between two readings, so don't hunt for one point. Draw the two best-fit lines, and read where they cross.",
+      "hash": "426341083481",
+      "textSha256": "4263410834816a26138897823c494a0aeaa650a824c1a685616f5357798657d2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/lines-cross.426341083481.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/lines-cross.426341083481.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/lines-cross.426341083481.generation.json",
+      "plannedRequestSha256": "0fbdf398836c6242d062ea9cb6097bac1722ad01a17b1a1d20fd1843c30c3db5"
+    },
+    {
+      "id": "dilution",
+      "parentSceneId": "dilution",
+      "text": "There's one catch. Each portion also adds volume, which dilutes every ion and bends the lines. So the vinegar is first topped up with plenty of water. That doesn't change the moles of acid, but now each portion changes the total volume by only a small fraction. And the sodium hydroxide is concentrated, so only a small volume goes in. Or each reading can be corrected for the volume added.",
+      "hash": "1ec056668d6f",
+      "textSha256": "1ec056668d6fe8c0a1b488f7d684d30a4c7ad75c3b1016a3b650331fdec167a3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/dilution.1ec056668d6f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/dilution.1ec056668d6f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/dilution.1ec056668d6f.generation.json",
+      "plannedRequestSha256": "0f0689987901cf163f5d4fc90c4c9fe6de7d4731ea1c9e98dfa19d7ef8991f5d"
+    },
+    {
+      "id": "vinegar-reading",
+      "parentSceneId": "vinegar-reading",
+      "text": "Here, ten point zero zero millilitres of the vinegar was topped up with water and titrated with one point zero zero moles per litre sodium hydroxide. The lines cross at eight point two zero millilitres, the equivalence volume. So the acid is zero point zero zero eight two zero moles. Divide by the ten millilitres of vinegar, not the diluted volume, because the water added no acid: zero point eight two zero moles per litre, with no indicator at all.",
+      "hash": "ebc6193ab8f7",
+      "textSha256": "ebc6193ab8f7dc754fa380f39782f16b178a737f169f6cccefd08c24b97f88eb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/vinegar-reading.ebc6193ab8f7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/vinegar-reading.ebc6193ab8f7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/vinegar-reading.ebc6193ab8f7.generation.json",
+      "plannedRequestSha256": "c70ac6c6868db7314459f6486a7eb31c2a4008066702932925216b7872d3c255"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. Back titration: total minus leftover. It works because the only acid the tablet can have used is the acid that's no longer there. And for a conductivity titration, read where the lines cross.",
+      "hash": "2fd16a755f10",
+      "textSha256": "2fd16a755f10e9653a1247fa84a22b1f4ddb01df5544cbb9d2af7122bd94c75a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/memory-aid.2fd16a755f10.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/memory-aid.2fd16a755f10.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/memory-aid.2fd16a755f10.generation.json",
+      "plannedRequestSha256": "085c52123d927723849b6ccf7eafe35e3ee6124d3007dad5755ac8739f3cebec"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A zero point five zero zero gram antacid tablet containing aluminium hydroxide is added to forty point zero zero millilitres of zero point four zero zero zero moles per litre hydrochloric acid, an excess. The leftover acid needs twenty one point six zero millilitres of zero point two zero zero zero moles per litre sodium hydroxide. Calculate the percentage of aluminium hydroxide in the tablet, by mass. Pause here to answer.",
+      "hash": "88212e7fd91b",
+      "textSha256": "88212e7fd91b7b114f30cc96b65fabf619b60218a5ce9d71c07c7805d23b7046",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/attempt-1.88212e7fd91b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/attempt-1.88212e7fd91b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/attempt-1.88212e7fd91b.generation.json",
+      "plannedRequestSha256": "ee9a25255fe62868a46b93ec6d5c52b5ddb1bb08ecf7d443cac20bd96b156cda"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The tablet used the acid added minus the acid left: zero point zero one one six eight moles. Each aluminium hydroxide uses three hydrochloric acid, so divide by three, then multiply by seventy eight point zero zero: zero point three zero four grams, or sixty point seven per cent. Forget the three, and you'd get a hundred and eighty two per cent, which is impossible for part of a tablet.",
+      "hash": "74f032ceebb9",
+      "textSha256": "74f032ceebb9c97c61609adf289f1b9933343280bab039894d78c16d4010f1b4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/feedback-1.74f032ceebb9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/feedback-1.74f032ceebb9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/feedback-1.74f032ceebb9.generation.json",
+      "plannedRequestSha256": "35f8b25f88b11a7ed426d49124075f45a13d49167280ab0f2037a727d7a80c3f"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Zero point one zero zero moles per litre sulfuric acid is added to fifty point zero zero millilitres of barium hydroxide solution, and the conductivity is measured. Explain why the conductivity falls almost to zero, then use the graph to calculate the concentration of the barium hydroxide. Pause here to answer.",
+      "hash": "87e3780ab88b",
+      "textSha256": "87e3780ab88b1c372a5b4a731d6a498ec4f195085bdcaea00efa06682566ac65",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/attempt-2.87e3780ab88b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/attempt-2.87e3780ab88b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/attempt-2.87e3780ab88b.generation.json",
+      "plannedRequestSha256": "71e15a0c4f5d68872428e2e4a08bc728d279dc7cdefb692a1466253a6720ec52"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Hydroxide is removed as water, and barium is removed as solid barium sulfate, so at equivalence almost no ions are left to carry a current. After that, excess acid adds ions again. The lines cross at twelve point five millilitres, and the ratio is one to one, so the concentration is zero point zero two five zero moles per litre. Reading the lowest point, twelve point zero, is the slip.",
+      "hash": "1ebc99be3904",
+      "textSha256": "1ebc99be3904b5c3759d3eb90553d8b55d4b8417cd39184a2aadb14420a10a9f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/feedback-2.1ebc99be3904.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/feedback-2.1ebc99be3904.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/feedback-2.1ebc99be3904.generation.json",
+      "plannedRequestSha256": "f48a5ac512f6929f3f5bcaac2815bd91911afb3d5e9f7b8cca57b9fbbcad5fd9"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a direct titration won't work: if the sample is an insoluble or slow solid, back titrate. Add a measured excess, let the sample react, and titrate what is left. If the reaction makes carbon dioxide, drive it off and cool the flask before the back titre. Subtract moles and use the reaction ratio. If colour or cloudiness hides the endpoint, use a conductivity meter, and read where the lines cross. Next: practice with curves, indicators and back titrations.",
+      "hash": "fa062cca8eee",
+      "textSha256": "fa062cca8eeec3a562dc9fcab2de6fb751585691fec5d6af2aa4e7548bac58d9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/decision-rule.fa062cca8eee.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/decision-rule.fa062cca8eee.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/decision-rule.fa062cca8eee.generation.json",
+      "plannedRequestSha256": "f18b66398bb0234ee22fdb0799b03bab131be0c6de5ecaeabcfa9f5c64643780"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
