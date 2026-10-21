@@ -120,3 +120,15 @@ No blockers.
 **Ready to voice after fixes** (S1 to S3 before recording; M1 to M4 are cheap and should be applied). Recount by script after the changes. Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the author in Revision 2 of `lessons/chem-m6-p05.md` (21 Oct 2026). All findings applied; none declined.
+
+- **S1 (applied as written):** scene 7 now reads "... and the acid dose is only one tenth of that. It's the buffers video's example at a tenth of the scale: ethanoate takes up the hydronium, the ratio moves from one to about one point two, and the predicted pH falls to four point six six. That's the same small drop you measured." (452 to 375 characters). The separate C11 equation write is dropped; the ratio and [H₃O⁺] lines write quickly in grey; only "pH = 4.66" and the kept chip are bright.
+- **S2 (applied as written):** "Now a property an unbuffered acid can't copy." The P04 chip now uses P04 Revision 2's data ("HCl 1.08 → 2.04, +0.96") and the narration says "about a whole unit".
+- **S3 (applied as written):** scene 11 adds "An even closer control is that dilute hydrochloric acid from the start: same pH, same dose, and it would plunge to about two point three." Beaker Y returns with a long pale blue bar "4.68 → 2.32" and a bright chip, then dims when the reliability card writes.
+- **M1 (applied):** scene 5 dims the beaker labels and headers before the dose tags, and the control term on "dose"; scene 11 dims the validity card, chip, beaker Y and bar when the reliability card writes, and keeps the footer grey.
+- **M2 (applied as written):** "... because of dissolved carbon dioxide, so it had further to rise than to fall." A dashed pH 7 line marks why.
+- **M3 (applied as written):** "so fifty would leave nothing for rinsing or a re-test" (the crossed chip's caption matches).
+- **M4 (applied as written):** key notes split into six; note 5 is VRA ("cancels a constant offset"), note 6 is risk.
+
+Length: Revision 2 added about 210 characters and saved about 220 (S1; the author's scene 4 reserve cut; "Here are the means." and "Now the test." cut; shorter reliability, risk and dilution-method sentences). Recount by script (only lines starting "> "): 6,245 characters, 19 scenes (Revision 1: 6,251); about 570 s, 9.5 minutes, including holds, countdowns and the notes hold. Feedback about 26 s and 24 s. No em or en dashes. Repeat this review on the exact voiced preview; the Codex error check is still required before voicing.

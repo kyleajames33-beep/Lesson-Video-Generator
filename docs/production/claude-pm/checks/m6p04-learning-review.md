@@ -110,3 +110,15 @@ The untrustworthy-label hook and a second test that answers it; one practical, t
 **Ready to voice after fixes** (S1 to S3 before recording; M1 to M4 are cheap and should be applied, M4 to stay near 9.5 minutes). Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the author in Revision 2 of `lessons/chem-m6-p04.md` (21 Oct 2026). All findings applied; none declined.
+
+- **S1 (applied, with a shorter wording):** scene 2 now opens "The first test is from the strong and weak video, and the last practical used it too: compare at the same concentration." and ends "This time, all four are at zero point one zero zero." (a grey tag "P03: matched at 0.010 mol/L" shows the earlier concentration). Scene 10 replaces "Two sessions, same results." with "But look at the gap between the two acids: almost two units before dilution, about one point four after. That's why the last practical found about twenty three times, not seventy. Dilution narrows the gap, because the weak acid ionises more." Screen: grey "1.82 units" bracket, bright "1.35 units" bracket, tag "P03: about 23 ×". With the S3 data the gaps are 1.82 and 1.35 units (ratios 66 and 22; P03's own readings give 23).
+- **S2 (applied as written):** scene 9 now gives the cause: diluted ions "meet less often, and fewer join back into whole molecules. The balance settles with a bigger fraction ionised." The visual adds the drifting ion pairs and the narrow-lens inset. Entry knowledge now lists the Module 5 equilibrium idea it relies on.
+- **S3 (applied, data and wording):** the science check's data are used: HCl 1.07, 1.09, 1.08 (mean 1.08), NaOH 12.92, 12.89, 12.92 (mean 12.91); changes +0.96 and −0.96. Scene 7 "up almost exactly one unit" and "Sodium hydroxide dropped about one unit"; scene 8 "Why about a whole unit?" with a silent grey tag for the 0.96; memory aid "strong moves about one, weak moves about half"; decision rule (spoken and line 2) and key note 3 match.
+- **M1 (applied):** scene 5 dims the bracket, chip and tag before the lenses open, and the lens counter dims as the equations write.
+- **M2 (applied as written):** "Two units would be a hundred times, and this is a bit less, so from these readings it's about seventy times as much hydronium." A ghost tick "2 units = 100 ×" supports it.
+- **M3 (applied as written):** key notes 1 and 3 shortened; key note 1 no longer lists the class means.
+- **M4 (applied):** the scene 3 reserve cut and the scene 12 trim, plus further trims (listed under "Narration length estimate") to keep the total under the Revision 1 length.
+
+Narration recount by script (only lines starting "> "): 6,236 characters, 20 scenes (Revision 1: 6,247); about 570 s, 9.5 minutes, including holds, countdowns and the notes hold. Feedback about 25 s and 27 s. No em or en dashes. Repeat this review on the exact voiced preview; the Codex error check is still required before voicing.

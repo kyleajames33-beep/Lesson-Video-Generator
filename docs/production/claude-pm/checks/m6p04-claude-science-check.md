@@ -187,3 +187,14 @@ No blockers.
 **Ready to voice after fixes.** S1 changes narration (at minimum its wording) and must be applied before recording; S2 is screen and author-note text. M1 to M4 are cheap and should be applied. The Codex error check is still required.
 
 ## Resolution
+
+Resolved by the author in Revision 2 of `lessons/chem-m6-p04.md` (21 Oct 2026). All findings applied; none declined.
+
+- **S1 (applied, recommended data):** HCl readings 1.07, 1.09, 1.08 (3.24 ÷ 3 = 1.08, range 0.02); NaOH readings 12.92, 12.89, 12.92 (38.73 ÷ 3 = 12.91, range 0.03); diluted 2.04 and 11.95 unchanged. Changes +0.96 and −0.96. Gap 2.90 − 1.08 = 1.82 units, 10^1.82 = 66 (2 s.f.), said "about seventy"; bases 12.91 − 11.10 = 1.81. Narration: scene 4 "one point zero eight ... twelve point nine one"; scene 7 "up almost exactly one unit", "dropped about one unit"; scene 8 "Why about a whole unit?". Screen: scene 5 "1.82 units", "12.91 vs 11.10"; scene 7 rows and "0.96" bracket; scene 10 "−0.96" bar; scene 12 chip "1.82 units; 0.96 vs 0.49"; memory aid "strong moves about one"; decision rule line 2 "about 1 unit"; key notes. Author notes (b) and (c) record the activity value (0.94), the class value (0.96), and the sodium error and CO₂ uptake. Both number tables recomputed. The learning review's P03 link adds the diluted gap: 3.39 − 2.04 = 1.35 units (10^1.35 = 22; P03's 1.37 units gives its 23; ideal 24).
+- **S2 (applied as written):** screen row now "0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours", harm "a splash can still harm eyes and skin: treat it as harmful". The Safety facts check bullet now records ALS (not classified), Agilent Australia 0.1 N (H290 only) and American Elements (H314), none with H315 and H319 alone. Narration (shortened for length): "sits just under the irritant limit, so treat a splash as harmful". Key note 5 and the Decisions line no longer say "can irritate".
+- **M1 (applied as written):** author note (b) reason replaced (activity; sodium error and CO₂ lower NaOH readings; extrapolation either way).
+- **M2 (applied):** "Two sessions, same results." is removed (replaced by the learning review's S1 gap sentences).
+- **M3 (applied as written):** author note (d) records the dilute-limit script values (+0.51, +0.56, +0.68, tending to 1); the condition tag stays on the memory aid and key notes.
+- **M4 (applied):** "GHS irritant limit" replaced by "EU irritant limit" on screen.
+
+Narration recount: 6,236 characters, about 570 s (9.5 min). No em or en dashes. The Codex error check is still required before voicing.

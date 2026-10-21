@@ -177,3 +177,15 @@ No blockers.
 **Ready to voice after fixes.** S1 changes narration and must be applied before recording; S2 is screen and author-note text. M1 to M5 are cheap and should be applied. The Codex error check is still required.
 
 ## Resolution
+
+Resolved by the author in Revision 2 of `lessons/chem-m6-p05.md` (21 Oct 2026). All findings applied; none declined.
+
+- **S1 (applied as written):** "Now a property an unbuffered acid can't copy." The comparison is P04's diluted HCl, now P04 Revision 2's 1.08 → 2.04 (+0.96), spoken as "about a whole unit".
+- **S2 (applied as written):** screen row now "0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours", harm "a splash can still harm eyes and skin: treat it as harmful". Narration unchanged ("sits just under the irritant limit, so treat a splash as harmful"). The Safety facts check bullet records the ALS, Agilent Australia and American Elements sheets. Key note 6 says "treat a splash as harmful" instead of "can irritate". "GHS classification limits" in the first risk row is now "classification limits".
+- **M1 (applied as written):** "a constant offset in every reading cancels out"; chip "the same offset in both readings: the change is unaffected"; key note 5 matches.
+- **M2 (applied):** batch label "buffer, about 100 mL (0.00500 mol of each)"; "about 100 mL" in the boundary, Decisions, stop line, author note (a), teaching checks and the numbers table. The spoken "That's one hundred millilitres" stays. The tenfold dilution keeps its volumetric 100.0 mL.
+- **M3 (applied as written):** author note (f) now gives the ±5 % range 3.26 to 3.52 and says the conclusion holds across it.
+- **M4 (applied as written):** author note (d) records the low ionic strength, drift, carry-over risk and serial-dilution preparation; the hook visual lets beaker Y settle about a second later. The learning review's S3 also makes this beaker's predicted pH spoken ("about two point three"; (2.09 × 10⁻⁵ × 0.0200 + 1.00 × 10⁻⁴) ÷ 0.0210 = 4.78 × 10⁻³ mol/L, pH 2.32).
+- **M5 (applied):** author note (b) records the series Ka against CRC 1.75 × 10⁻⁵ (measured-style 4.67 and 4.72).
+
+All other values are unchanged and were re-checked by script (A2 pH 4.268 → 4.27; buffer + HCl 4.658 → 4.66). Narration recount: 6,245 characters, about 570 s (9.5 min). No em or en dashes. The Codex error check is still required before voicing.
