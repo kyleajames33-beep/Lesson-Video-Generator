@@ -284,3 +284,22 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - **Alternatives considered:** the best documented alternative was Palawa shell-necklace cleaning. It was rejected because makers keep the method private.
 - **What C16 scene 8 does now:** it states the principle only. The knowledge was built by observing, testing and passing on results over many generations, and it belongs to the communities who hold it. It recalls Module 5 cycad leaching as solubility chemistry, and names no specific practice.
 - **Decided (21 Oct): owner accepted principle-only.** Options were: (a) accept principle-only; (b) seek an example from an Aboriginal or Torres Strait Islander educator or community; (c) have such a reviewer read scene 8 before voicing. The details are in `checks/m6c16-cultural-review.md`. C16 is not voiced until you decide.
+
+## 21 Oct evening: state before compaction
+
+- **Live on YouTube:**
+  - Module 5 Biology: complete.
+  - Module 6: C01, C03 to C08; B01 to B05, G01, B07, B08.
+  - Exam skills: S01, S02.
+- **Passed and rendering (upload brief 28v to write when all are done):** C09 to C14, B09 to B12, S03, S04.
+  - Done so far: C09, C10, C13, B09, B10.
+  - Queues: logs at `out/explainer/render-<id>.log`. Each video has a timeout and retries.
+- **Built, previews to send the owner:** C15 and C16 (builder finishing), then B13 and B15 (builder running).
+- **Voiced:** all Module 6 designs through C16 and B15.
+- **Codex:**
+  - Briefs 84 to 94 and 28t/28u are done.
+  - Next to send: 95 (Module 6 practical and practice teaching plans).
+- **Claude:** reviewing the Module 7 and 8 route drafts (`module7-route-review-claude.md` and `module8-route-review-claude.md`, in progress).
+- **Remaining Module 6:**
+  - Chemistry: G01, G02, P01 to P07.
+  - Biology: B16, B18, B19, G02, the P-series.
