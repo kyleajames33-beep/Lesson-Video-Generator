@@ -1,0 +1,77 @@
+# m6g02b learning review: evaluating biotechnology, HSC-style practice
+
+Reviewer: independent AI reviewer (did not author the design), 21 October 2026.
+Input inspected: `../lessons/bio-m6-g02.md` (Revision 1, 21 Oct) read in full; `../../student-learning-review.md`; `AGENTS.md`; the narration of the prerequisite designs `../lessons/skills-s04.md`, `bio-m6-b10.md`, `bio-m6-b11.md`, `bio-m6-b12.md`, `bio-m6-b13.md`, `bio-m6-b15.md`, `bio-m6-b16.md` and `bio-m6-b19.md`, checked for entry knowledge, overlap and repeated examples. I recounted the narration by script (lines starting "> " joined, bold markers removed): **5,888 characters**, 993 words (the design states 5,872, a small parser difference; both inside 5,500 to 6,800). I reviewed plates by name and by the design's inspection notes only. There were no stills, voiced preview or audio, so motion is not judged at playback speed. This is a beginner-perspective review, not learner evidence. Human listening is pending. I searched the design for U+2014 and U+2013 and found none.
+
+This is a hard-practice video: the walkthroughs are the content, so the AGENTS.md exception to brief feedback applies. I checked instead that each walkthrough builds one stage at a time and does not re-teach a core video.
+
+Main question traced: *When an HSC question asks you to assess or evaluate a biotechnology, how do you turn what you know into a judgement that links the technology to biodiversity, or to the people and animals affected, and back it with evidence from the question?* Useful outcome: the student can plan and write a supported, conditional judgement for an assess and an evaluate item, link the technology to named biodiversity levels against the question's baseline, or to who carries each risk, and recognise an answer that describes only the organism.
+
+## Strengths to keep
+
+- **Three new cases, each with one trap.** Maize data (organism against biodiversity; ignoring data), the frozen-cell sheep (clones identical, so no diversity), pig kidneys (one result as proof). None repeats a core example; I checked b09 to b19 and s04.
+- **Q1 declines to judge the ecosystem level** because the data don't cover it. This models a high-band habit and matches the NESA 2023 Q34 feedback on using the table, not your own examples.
+- **"Count the donors, not the clones"** is a sharp, reconstructable adaptation of b15's aid, and it answers the classic Q2 mistake with a cause.
+- **The verdict strip** (verdict, criteria, evidence) from s04 lights the stage being built, so students see the routine, not just an answer.
+- **Q3 sorts ethical issues by who carries each risk** (pigs, trial patients, other people) and separates principle from consequences (b10), without drawing any person.
+- **The weak against strong panel in Q1** shows why marks are lost, with the site's exam trap as the crossed chip.
+
+## Findings
+
+| # | Severity | Scene | Exact quoted text | Problem (likely student question) | Exact replacement (about the same length) |
+| --- | --- | --- | --- | --- | --- |
+| 1 | should fix | 2d | "The switch has increased species diversity to a **moderate extent**, provided refuges are planted and more varieties carry the trait." | **The closing verdict answers a narrower question.** The demand is the effect on biodiversity, and the opening verdict (2c) says "mixed". The close judges only species diversity, so the loop doesn't close on the same claim, and a student may copy a one-level verdict. | "Overall, the effect is mixed: species diversity rose to a moderate extent, but crop genetic diversity fell, provided refuges are planted and more varieties carry the trait." Then keep "And ecosystem effects aren't in the data, so don't invent them." Row (6): "Overall, mixed: species diversity up to a moderate extent, crop genetic diversity down, provided refuges are planted and more varieties carry the trait." Model answer judgement to match. |
+| 2 | should fix | 2b, 2c | 2b: "Varieties and surviving caterpillars are **genetic**, in the crop and in the pest." 2c: "Biodiversity rose at the species level, but fell at the genetic level". | **Rising resistance is not a fall in genetic diversity.** A resistance allele becoming more common is a change in allele frequency in the pest; it is a threat to the species-level gain, not a loss of the pest's gene pool. Grouping it under "fell at the genetic level" teaches a wrong idea. (Science check finding 2.) | 2b: "Varieties are the crop's genetic level. Surviving caterpillars show a genetic change in the pest." 2c last sentence: "And caterpillars surviving on the maize are **rising**: resistance alleles are becoming more common in the pest, which threatens the species gain." Row (1): "Species diversity increased but the crop's genetic diversity decreased, so the effect is mixed." Row (4): "Pest: surviving caterpillars rising: resistance alleles becoming more common; a threat to the species gain." |
+| 3 | should fix | 3c | "Then the alternative: manage breeding among the living sheep, and protect their **habitat**, which removes threats cloning can't." | **The alternative isn't weighed against the plan.** Evaluate needs the comparison both ways: managed breeding and habitat protection slow further loss and remove threats, but they can't bring back alleles the herd has already lost, which only the frozen cells hold. Without that, the student can't see why the verdict keeps cloning "alongside" habitat protection. | "Then the alternative: manage breeding among the living sheep and protect their **habitat**. That removes threats cloning can't, but it can't bring back lost alleles." (+20 characters.) Row (5): "Alternative: managed breeding and habitat protection remove threats, but cannot restore lost alleles." |
+| 4 | should fix | 3b (visual) | "On 'count the donors' ten ring glyphs collapse to one colour repeated ten times, and only one new colour stays in the cluster" | **The referent switches without warning.** The cluster has just shown the plan's ten donors returning ten colours. Collapsing the same cluster to one colour makes it look as if the plan adds only one donor's alleles. | Keep the plan's cluster with its ten new colours. On "count the donors" draw a separate small side cluster labelled grey "if all 10 clones came from 1 donor", in which ten clone glyphs share one colour and add one new colour. Fade it on "mitochondria". |
+| 5 | should fix | 4a | "Since 2024, a few patients have received these kidneys in trials, and the longest-working one lasted about **nine months** before it was removed." | **Time-sensitive and partly inaccurate** (science check finding 1). The early recipients were treated under special permission (expanded access), not trials, and a newer recipient's kidney has reportedly passed 271 days and is still working, so "the longest-working one" may already be wrong. | Narration: "Since 2024, a few patients have received these kidneys, and one worked for about **nine months** before it was removed." Card: see science check finding 1. 4b's "months, not years" stays true unless any kidney passes a year: recheck at recording. |
+| 6 | minor | 3d, 4e | "A second crossed chip, unspoken, lands after the spoken cross settles" | The brief asks for one crossed classic mistake per question. A second crossed chip, unspoken, competes with the spoken one and adds a bright item in a scene that already has the crossed chip and its explanation glyphs. | Drop both unspoken second chips. If the authors want to keep them, show them as small grey uncrossed "also weak:" notes in the notes hold instead. |
+| 7 | minor | 1 | "Markers want the technology linked to its effect on **biodiversity**, or on the people and animals involved, not just on the organism." | The NESA feedback supports the biodiversity half only. The "people and animals" half is the video's own extension for ethics items. | "Markers want the technology linked to its effect on **biodiversity**, not just on the organism, and ethics answers need the same link to the people and animals involved." (+14 characters.) |
+| 8 | minor | 1 (screen) | quotation chip: "link the biotechnology to its effect on biodiversity, rather than its effect on the organism" | Shown as a quotation but altered from the source ("linking ..."). | "linking the biotechnology to its effect on biodiversity, rather than its effect on the organism" with the tag "NESA marking feedback, Biology 2023 Q34". |
+| 9 | minor | 3c | "many domestic ewes go through embryo transfer, and most pregnancies fail" | The card gives embryos, not pregnancies. Many embryos fail before a pregnancy begins, so "most pregnancies fail" is an inference the card doesn't support. | "many domestic ewes go through embryo transfer, and most embryos are lost" |
+| 10 | minor | 3a | "whose alleles are now missing from the herd" | Says all their alleles are missing. The card says they "carried alleles that are no longer found". | "who carried alleles now missing from the herd" |
+| 11 | minor | 6 (notes) | key note 3: "Cloning adds genetic diversity only when the donors carry alleles the living population has lost. ... Mitochondrial DNA comes from the egg." | "Has lost" implies the alleles were once present (b16 changed its ferret line for this reason). b16 Revision 2 says mitochondrial DNA comes "mainly" from the egg. | "Cloning adds genetic diversity only when the donors carry alleles the living population lacks. ... Mitochondrial DNA comes mainly from the egg." |
+| 12 | minor | whole | 5,888 characters (script count), about 569 s | At the 9.5 minute cap. Findings 1, 3 and 7 add about 75 characters (about 6 s); findings 2 and 5 are about neutral. | Take the design's first reserve trim now (2e's last sentence; the crossed chip stays on screen). Keep reserve 2 (3b's mitochondria sentence) for the voiced take. |
+| 13 | minor | Assets | `m6-helicoverpa-larva-boll-v1.png` (cotton boll) | Agree with the default: do not use it. A cotton boll beside a maize question would mislead. | No change. |
+
+No blocker.
+
+## Screen load (owner's three bright text items)
+
+Within the limit in the working area as written, if each tag fades on the next cue and filled rows dim. The densest frames are the Q1 card with its five-row table and the Q3 card's long stem, which are the task. Scene 3b is busy (verb chip, nuclear-transfer strip, gene-pool cluster, three rows, a screen line and a mitochondria tag); finding 4 replaces one transformation with a separate small cluster, so fade the nuclear-transfer strip before the side cluster draws. Finding 6 removes two extra crossed chips.
+
+## Checks against the review questions
+
+| Question | Result |
+| --- | --- |
+| Causes explained? | Yes, after findings 2 and 3. Fewer sprays mean fewer non-target insects killed; fewer varieties narrow the crop's gene pool so one disease could hit most of it; surviving caterpillars show resistance alleles spreading, which could bring sprays back; each clone carries its donor's alleles; donors, not clone numbers, set the gain; a 2 in 100 success rate means many surrogate procedures; early trials can't show long-term function; viral copies were inactivated because a virus could spread beyond the patient. |
+| Plain subject-action sentences? | Yes. "When they breed with living sheep, those alleles re-enter the gene pool" and "a pig virus crossing into a patient could spread to other people" name the actor and the change. |
+| Attention earned? | Yes. Each question carries a trap students fall into, and the weak answer in Q1 shows marks being lost. Q3 is a current, striking case. |
+| Visual medium used? | Yes. Plates for the maize, the wild and domestic sheep, the cell store, the pig and the kidney; coded abstract diagrams for the levels board, gene-pool rings, embryo grid, evidence ladder and viral-copy strip. Two plates (wild sheep, pig) are still to be painted. Playback not judged. |
+| Each narrated change on screen? | Yes, with cue words; answer rows land on their spoken cues and givens underline in the question text as used. |
+| Attempts: "Pause here to answer.", 10 s countdown, card on screen, givens underlined, no givens card? | Yes, for all three (2a, 3a, 4a). The whole card stays on screen during the countdown, the type badge and verdict strip are hidden or dimmed, and nothing answer-bearing shows. Givens underline in the shrunken card at the cue where each is used. No givens card. |
+| Feedback length and crossed mistakes? | Walkthroughs about 112 s (Q1, including the weak answer), 86 s (Q2) and 88 s (Q3), allowed by the hard-practice exception. One spoken crossed mistake per question, after finding 6 removes the unspoken extras. |
+| Re-teaches earlier videos or S04? | No. Each rule is recalled in one clause with a grey tag naming its video: s04's verbs and routine, b12's levels and baseline, b13's "provided that", b15's count rule (adapted), b16's nuclear-donor rule, b19's tests, b10's bearers and principle objections, b11's evidence ladder. The decision board does not restate verb definitions. |
+| Narration length? | 5,888 characters by script (design 5,872), about 569 s, at the cap (finding 12). |
+| No people, hands or faces? | Pass. Patients and surgeons are never drawn; the bearer icons are a pig glyph, an empty hospital-bed outline and a ring of dots. The retired hand plates are excluded. |
+| Australian spelling, no em dashes? | Pass ("practise" as a verb in the YouTube draft, "fertilise" not used, "programme" not needed). No U+2014. |
+| One main question; key notes useful? | Yes. Five notes after the decision board with the pause invitation; finding 11 applied. |
+| Memory aids after the explanation, limits stated? | Yes. All are recalls. "Count the donors, not the clones" is stated with its assumption (distinct donors, clones that breed). |
+| Playlist and handoff? | Correct. After b19, before b20; scene 5 hands off to "why a technology that works can still have little lasting effect on a population". |
+
+## Learner trace (from stated entry knowledge)
+
+1. Hook. The routine from s04 is recalled, not re-taught. Pass after findings 7 and 8.
+2. Q1 plan and build. Levels and baseline from b12. Pass after finding 2.
+3. Q1 weigh and weak answer. Pass after finding 1.
+4. Q2 mechanism and genetic diversity. b16's nuclear-donor rule is recalled. Pass after findings 4 and 10.
+5. Q2 welfare, alternative, verdict, mistake. Pass after findings 3 and 9.
+6. Q3 benefit and evidence. b19's first two tests and b11's ladder. Pass after finding 5.
+7. Q3 ethics, verdict, mistake. Pass.
+8. Decision board and notes. Pass after finding 11.
+
+## Verdict
+
+**Ready to voice after fixes** (findings 1 to 5; no blocker), subject to the Claude science check and the Codex error check. Recheck the pig kidney record at recording (finding 5). Repeat this review on the exact voiced preview before full export, including the total running time against the 9.5 minute cap (finding 12).
+
+## Resolution
