@@ -69,3 +69,20 @@ Every scene stays within the limit under the clutter rule as written, with findi
 **Ready to voice after fixes** (findings 1 to 3; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the total running time against the 9.5 minute cap (finding 9) and the feedback timings.
 
 ## Resolution
+
+Resolved by the resolving author (Claude), 21 October 2026, in `../lessons/bio-m6-b16.md` **Revision 2**. Narration recounted by script (only lines starting "> ", bold markers removed): **5,985 characters** (Revision 1: 5,980), about 9.5 minutes (570 s), at the cap.
+
+| # | Decision | What changed |
+| --- | --- | --- |
+| 1 | Accepted (should fix) | Scene 7 now reads "There's also a way to copy a gene with no cells, called PCR. Heat separates the DNA's two strands, then, as it cools, an enzyme copies each one, so every cycle doubles the gene." The enzyme copies; heat only separates. `PcrStrip` cues as proposed. Key note 4 gains "(heat separates the strands, then an enzyme copies each one)". PCR is kept rather than cut. |
+| 2 | Accepted (should fix) | Scene 8: "Its limits are small: the gene doesn't always end up in the plasmid, so colonies must be checked." Tag "the gene doesn't always go in: check colonies". |
+| 3 | Accepted (should fix) | 10b replaced with the proposed text (343 characters). A health row "health: 2 of 6 calves died" is added, with "calves born: 6" and "calves alive at one year: 4" underlined. The verdict bar reads "worth it only for a very valuable bull". Earlier rows dim as the verdict writes, to hold the three-item limit. |
+| 4 | Accepted | Scene 5: "chemical tags, like the ones on histones, switched many of its genes off", with a grey coded histone thumbnail. b06a's histone tags added to entry knowledge and to the recall list. |
+| 5 | Accepted, reworded | Scene 6: "have given clones, and in 2024 one of them had babies, adding alleles that no living ferret carried." Tag "2024: a clone has young (kits)". I also removed "now" so the line does not date. Ferret status was rechecked: the Smithsonian's National Zoo reported on 25 Sep 2025 that Elizabeth Ann and Noreen died in 2025. The narration makes no claim that any clone is alive. |
+| 6 | Accepted | "so by the next day one cell becomes billions." "All carrying the gene" is cut. |
+| 7 | Accepted | Scene 3: the glosses fade fully before "the udder of a white-faced ewe", and each ewe tag shows only while its ewe is spoken about. |
+| 8 | Accepted | Key note 2: "(for Dolly, by an electric pulse), and the egg is stimulated to divide". |
+| 9 | Accepted, applied now | The named reserve trim, scene 9's "Judge each against its own purpose.", is taken in Revision 2 to absorb the additions. The meters still return silently. New reserves are scene 2's last sentence (68 characters), then the ferret sentence (150). |
+| 10 | No change (reviewer's recommendation) | After finding 2, the overlap with b18 is one uncaused clause, and b18 gives the cause. |
+
+The design also took the science check's minors (see that file). No finding was declined. Still open: the Codex error check, and repeating this review on the exact voiced preview, including total running time against the 9.5 minute cap.

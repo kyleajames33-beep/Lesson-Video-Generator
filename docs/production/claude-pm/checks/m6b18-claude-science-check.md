@@ -56,3 +56,19 @@ No blocker. One should-fix finding (1). Findings 2 to 9 are wording, tense or ci
 **Ready to voice after fix 1** on science (the selective breeding absolute; cut from the narration, corrected in key note 5). Findings 2 to 9 are minor. The Codex error check remains as planned, including the current Bt share near recording and the heat-shock protocol source.
 
 ## Resolution
+
+Resolved by the resolving author (Claude), 21 October 2026, in `../lessons/bio-m6-b18.md` **Revision 2**. Narration total **5,733 characters**, about 551 s.
+
+| # | Decision | What changed |
+| --- | --- | --- |
+| 1 | Accepted (should fix) | The absolute sentence is cut from the scene 8 narration. Key note 5 now reads: "A transgenic organism carries DNA from another species, inserted directly; selective breeding can only combine alleles from parents that can interbreed." The silent b09 icon tag reads "breeding: only parents that can interbreed". The facts list records the wide-cross and mutation reasons (wheat 1BL/1RS). Site alignment and site correction 8 notes are updated. |
+| 2 | Accepted | Scene 8: "inserts a piece of its plasmid DNA into a plant cell's chromosomes", combined with the learning review's cell-wall cause. T-DNA integration (Gelvin 2003) is added to the facts list and to Codex's check list. Key note 4 now ends in "cotton cells' chromosomes". |
+| 3 | Accepted | Key note 4 corrected for order and tense as proposed. |
+| 4 | Accepted | Scene 5 narration as proposed. Tag changed to "42 °C, under a minute". The calcium ion mechanism and the cell envelope are recorded in the facts list. |
+| 5 | Accepted | "An organism given DNA from another species this way is transgenic". |
+| 6 | Accepted (facts only) | "(Type II enzymes, used in cloning ...)" is added to the restriction enzyme facts. No narration change. |
+| 7 | Accepted | Facts list and added-beyond (g) now say "first US-approved recombinant chymosin (FDA, March 1990)", with the 21 CFR reference and the 1988 European note. |
+| 8 | Accepted | The proposed site wording adds "from about 23,500 animals", with the Genentech source. |
+| 9 | Accepted (facts only) | The modified cry1Ac (Perlak et al. 1990) is added to the Bt cotton fact. |
+
+No finding was declined. The selective breeding absolute is gone from the narration and corrected in the key note, as the owner instructed. Still open: the Codex error check (current Bt share and heat-shock protocol source near recording).

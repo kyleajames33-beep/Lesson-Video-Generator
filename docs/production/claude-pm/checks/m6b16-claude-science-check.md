@@ -54,3 +54,20 @@ No blocker. One should-fix finding (1). Findings 2 to 10 are confirmations, word
 **Ready to voice after fix 1** on science. Findings 2 to 10 are minor wording, citation and ledger updates. The Codex error check remains as planned, especially the black-footed ferret status near recording (finding 4) and the SCNT efficiency source.
 
 ## Resolution
+
+Resolved by the resolving author (Claude), 21 October 2026, in `../lessons/bio-m6-b16.md` **Revision 2**. Narration total **5,985 characters**, about 570 s.
+
+| # | Decision | What changed |
+| --- | --- | --- |
+| 1 | Accepted (should fix) | Scene 7 PCR sentence replaced as proposed: heat separates the strands; an enzyme copies each one as it cools. The facts list records that the enzyme is a heat-stable DNA polymerase (not named). Key note 4 carries the same clause. |
+| 2 | Accepted | "by the next day one cell becomes billions"; tag "a day: billions". The 2^32 arithmetic is recorded in the facts list. |
+| 3 | Accepted | "healthy for their age at seven to nine"; tag "same cells, healthy for their age at 7 to 9". Both searched sources are added to the facts list. |
+| 4 | Accepted, status rechecked | Narration: "Cells from a black-footed ferret, frozen in 1988, have given clones, and in 2024 one of them had babies, adding alleles that no living ferret carried." The Smithsonian's National Zoo (https://nationalzoo.si.edu/news/new-kits-born-black-footed-ferret-cloning-research, dated 25 Sep 2025, fetched 21 Oct 2026) confirms: "Sadly, both Elizabeth Ann and Noreen passed away this year" (2025, no exact dates), and Antonia and her offspring produced litters in 2025. The wording does not depend on any clone being alive. "Now" was removed, and no screen text gives a living count. Sources are recorded in the facts list. Recheck near recording stays. |
+| 5 | Accepted | Key note 2: "(for Dolly, by an electric pulse), and the egg is stimulated to divide". Scene 3's narration is about Dolly and is unchanged. |
+| 6 | Accepted | Key note 2: "its mitochondrial DNA comes mainly from the egg". Scene 4 is about Dolly and keeps "came from the egg". The Burgstaller 2007 heteroplasmy source is added to the facts list. |
+| 7 | Accepted (optional) | Scene 3: "Scientists took cells grown from the udder of a white-faced ewe." (+5 characters.) The cell-line note is in the facts list. |
+| 8 | Accepted (optional) | Scene 7: "it copies the plasmid as well as its own DNA, so the new cells get the gene." |
+| 9 | Accepted | The Merck Veterinary Manual and Holstein spotting sources are added to the Attempt 1 fact. 10b also now uses the health given (learning review 3). |
+| 10 | Accepted | Decisions now say the video covers the "assess" demand of B6-IQ3-03. The "investigate" component (ledger practical flag) stays open for the practical or depth-study entries. Root to reflect this when updating the ledger. |
+
+No finding was declined. The Codex brief's check list now includes the clones' current status. Still open: the Codex error check (ferret status and SCNT efficiency near recording).

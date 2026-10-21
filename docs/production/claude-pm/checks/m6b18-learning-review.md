@@ -86,3 +86,21 @@ Every scene is within the limit under the clutter rule as written. Scene 2 (term
 **Ready to voice after fixes** (findings 1 to 4; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the length of scene 8 and the feedback timings.
 
 ## Resolution
+
+Resolved by the resolving author (Claude), 21 October 2026, in `../lessons/bio-m6-b18.md` **Revision 2**. Narration recounted by script (only lines starting "> ", bold markers removed): **5,733 characters** (Revision 1: 5,658), about 9.2 minutes (551 s). That is inside the 5,500 to 6,800 band and the 9.5 minute cap. Scene 8 is 638 characters, about 48 s.
+
+| # | Decision | What changed |
+| --- | --- | --- |
+| 1 | Accepted (should fix) | Scene 2: "Remember that most human genes contain introns, stretches our cells cut out of the mRNA before it's read." A grey thumbnail of b05's intron strip gives the recall cue. bio-m6-b05 is added as background prerequisite. Introns are moved to entry knowledge ("From bio-m6-b05 ..."), removed from "Not assumed" and from "have not met", and dropped from the new-term count (now seven). Added-beyond (a) is corrected. |
+| 2 | Accepted (should fix), reworded | "Plants need a different carrier, because the gene has to cross a tough cell wall and end up in the plant's own chromosomes. A soil bacterium called Agrobacterium does this naturally: it inserts a piece of its plasmid DNA into a plant cell's chromosomes." This is the reviewer's content split as subject-action clauses, with less repetition of "chromosomes". The wall pulses, and the strip joins a chromosome in the nucleus. |
+| 3 | Accepted (should fix) | Scene 5: "chill them in calcium chloride, which helps DNA stick to the cell surface, add the plasmids, then give a quick heat shock, which briefly lets DNA into the cell." An inset shows the rings settling on the surface. Key note 3 is updated. |
+| 4 | Accepted (should fix) | Scene 6 now shows two plates side by side, fed from one tube. Both start empty and grow at the same time, the left to a crowd ("no antibiotic") and the right to a few ("with antibiotic"). There is never a crowded-to-sparse crossfade. This needs one new plate, `m6-antibiotic-colonies-empty-v1.png`, registered to the existing pair. I inspected `m6-agar-dish-top-v1.png` on 21 Oct: its agar colour and dish size differ, so it cannot stand in. The Codex brief is extended. A coded fallback (agar-coloured discs shrinking off each colony) is specified. |
+| 5 | Accepted | The selective breeding sentence is cut from the narration (-91 characters). Key note 5 is corrected to "selective breeding can only combine alleles from parents that can interbreed". The b09 lane 2 icon stays silent and grey with the same wording. |
+| 6 | Accepted | "An organism given DNA from another species this way is transgenic"; gloss "DNA from another species, inserted". |
+| 7 | Accepted | "weak hydrogen bonds between the bases". |
+| 8 | Accepted | Scene 9 now says "pick the hosts that carry the gene", and so does scene 11, which had the same ambiguity. |
+| 9 | Accepted | Key note 4: "the first insulin bacteria made the two chains, which were purified and joined; today engineered microbes in fermenters make insulin." |
+| 10 | Declined, as the reviewer recommended | Both insulin sentences do different jobs (source and product). Scene 2's sentence is now the first named reserve trim. |
+| 11 | Declined, as the reviewer recommended | 10c stays. It is a bounded explain item that needs the cause chain and the rejection of the code and promoter as causes. |
+
+Still open: the Codex error check, the new empty-dish plate, and repeating this review on the exact voiced preview (scene 8 length, feedback timings).
