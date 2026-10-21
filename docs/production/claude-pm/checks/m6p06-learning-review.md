@@ -103,3 +103,16 @@ The two-bench hook paid off by a traced error; the bubble run excluded for its c
 **Ready to voice after fixes** (S1 before recording; M1 to M7 are cheap and should be applied, with the reserve cuts to hold length). Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m6-p06.md` Revision 2 (21 Oct). Every finding is applied; none declined. Narration recounted by script (only lines starting "> "): **6,140 characters**, 20 scenes (Revision 1: 6,252). Timing: about 552 s (9.2 min) on the design model; about 561 s (9.35 min) on this review's measured model with the key-notes hold shortened to about 50 s. No em or en dashes.
+
+- **S1 (applied, before recording).** Scene 7 narration replaced with the review's wording: the numbers get bigger going down, then the sight line from above meets the scale above the meniscus, where the numbers are smaller, so the reading is too low. "Counts down from zero" is gone. Visual: the "↓ increasing" arrow draws on "bigger", before the sight line tilts; the crossing point is ringed at 0.30 on "above". Offset: both reserve cuts applied (scene 3's "a sealed jar that keeps moisture out"; scene 13's last sentence), plus four small trims that lose no cause (scenes 6, 8, 10, 19).
+- **M1 (applied).** Scene 11: "because the same moles of acid are divided by more millilitres" added; on that cue A's and B's calculation lines show side by side with the same 2.577 × 10⁻³ lit and the bigger 0.02482 lit.
+- **M2 (applied).** Scene 5: the step card's reason tag and the "blow out the last drop" chip dim to grey before the second chip writes; bright at the end: the yellow flask, "water adds no moles" and one crossed chip.
+- **M3 (applied).** Scene 12: the variables fallback line added in grey under "Measured: the titre", in the review's wording.
+- **M4 (applied, adjusted for M5).** Note 5 split into an error-tracing note and a risk note 6. Because attempt 2 changed, note 5 reads "water in the burette or carbonate in the flask → titre bigger → c(HCl) too low; wet pipette → titre smaller → c(HCl) too high. Concordant titres can still be inaccurate." (The damp standard is no longer traced in the video, so it is not in the notes.)
+- **M5 (applied, owner direction).** Attempt 2 is now the review's alternative: "Before adding the aliquot, a student rinses the conical flask with the sodium carbonate solution. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid." Answer too low (A1 stays too high), so the two attempts no longer share an answer. Feedback 2 rewritten: 311 characters, about 23 s; chain "carbonate film + aliquot → more moles → titre bigger → c(HCl) too low"; one crossed mistake "rinsing with the solution is correct, so no effect". Scene 5's chip caption "extra carbonate: more moles" replaced by "flask: distilled water only", so the chip gives no chain. The old A2's balance thumbnail is removed (the balance plate is now used in scene 3 only).
+- **M6 (applied).** "per cent" in scene 11.
+- **M7 (applied).** Scene 3's rinse tag is now "quantitative transfer: every grain into the flask"; the vocabulary list names that tag.
+
+Still required: the Codex error check, then this review repeated on the exact voiced preview. Human listening remains pending.

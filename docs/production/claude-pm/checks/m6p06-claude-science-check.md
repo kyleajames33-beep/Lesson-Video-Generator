@@ -155,3 +155,15 @@ No blockers.
 **Ready to voice after fixes.** All numbers, the error directions, the methyl orange colours and the hazard classes are correct. S1 is screen text and must be fixed before export; M4 to M6 touch narration and should be applied before recording. The Codex error check is still required.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m6-p06.md` Revision 2 (21 Oct). Every finding is applied; none declined. No reported number changed; the rough reading is now written 24.90.
+
+- **S1 (applied).** The scene 13 footer quotes only verified NESA wording: 'Accuracy (NESA, Science Years 7 to 10 Syllabus, 2018): "the extent to which a measured value agrees with its true value".' The author re-checked the wording on 21 Oct against the NSW Department of Education resource "Evaluating scientific investigations", which reproduces the definition from that syllabus (© NESA). The source entry continues "(namely - reference value)", which is left off; the quoted words are exact and in order. The "NESA glossary (2025)" attribution is removed.
+- **M1 (applied).** Author note (a): "C12 and the site used 106.0, which gives c(Na₂CO₃) = 0.05153 mol/L (one in the last digit) but the same c(HCl), 0.1059 mol/L."
+- **M2 (applied).** Author note (d) uses the check's wording (0.5 to 1 mL of film and drops, 1 to 2% dilution, 2% a realistic upper-end size).
+- **M3 (applied).** The rough run is recorded as 24.90 in scene 8's counter, the scene 9 table (initial 0.00, final 24.90, titre 24.90), author note (c) and "Numbers to verify". The narration's "about twenty four point nine" stays.
+- **M4 (applied).** Scene 13 validity narration: "does the method answer the question? Yes, if everything but the titre is controlled, and the one to two ratio holds at this endpoint." Validity card: "answers the question? One measured quantity, the titre, everything else controlled; 1 : 2 at the methyl orange endpoint." "Dried, exactly weighed standard" moved to the accuracy card. The last sentence is cut (learning review offset), so "help keep" is not needed.
+- **M5 (applied).** Scene 3: "so none of its mass is water".
+- **M6 (applied).** Scene 11: "two per cent".
+
+Attempt 2 changed (learning review M5): the damp-standard item is replaced by a conical flask rinsed with the carbonate solution. Direction for the Codex check: the film adds Na₂CO₃ beyond 1.2885 × 10⁻³ mol, so the titre is above 24.33 mL and 2.577 × 10⁻³ ÷ (bigger V) gives c(HCl) below 0.1059 mol/L: too low. This matches this check's own row for the scene 5 chip. C12 new correction 4 (anhydrous Na₂CO₃ takes up water) is now carried by scene 3 alone. Still required: the Codex error check before voicing.

@@ -128,3 +128,14 @@ No blockers.
 **Ready to voice after fixes.** Every number is correct and every reported answer survives the unrounded chain. S1 changes one narration sentence and must be applied before recording; S2 is screen text. M1 to M4 are cheap and should be applied. The Codex error check and originality search are still required.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m6-g03.md` Revision 2 (21 Oct). Every finding is applied; none declined. No reported number changed.
+
+- **S1 (applied).** Scene 3c narration and tag use the check's replacements ("about twenty five times as concentrated as the diluted solution"; "the cleaner is 25 times as concentrated (0.1276 × 25 = 3.190)"). Recomputed: 0.1276 × 25 = 3.190 mol/L, matching answer (a). The Decisions table's check column now reads "about 25 times as concentrated as the diluted solution".
+- **S2 (applied).** Decision board: "CO₃²⁻ takes 2 (to the methyl orange endpoint), HCO₃⁻ takes 1 (Q1, Q3)". Key note 3: "Na₂CO₃ : HCl = 1 : 2 (to the methyl orange endpoint)". Scene 4d's grey mini-chain label carries the same qualifier. Narration in 4d and 5 is unchanged, as the check allows.
+- **M1 (applied, recommended option).** Q1's rough final reading is 24.60 on the card, in the scene 2c titre row (24.60), in the model answer and in "Numbers to verify". Every reading now ends in 0 or 5 in the second decimal place.
+- **M2 (applied).** Q2 card: "Assume hydrochloric acid is the only substance in the cleaner that reacts with sodium hydroxide." Also noted in author doubt (c).
+- **M3 (applied).** "per cent" in 2e, 3d, 4c and 4d.
+- **M4 (applied).** Key note 2: "any titre that does not agree with the others within 0.10 mL".
+
+Still required: the Codex error check and the search of recent NESA papers for originality, before voicing.

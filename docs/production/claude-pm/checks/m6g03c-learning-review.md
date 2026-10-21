@@ -102,3 +102,16 @@ Three new cases with one trap each and rising difficulty; Q1 linked into Q2 with
 **Ready to voice after fixes** (S1 before recording; M1 to M7 are cheap and should be applied). Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m6-g03.md` Revision 2 (21 Oct). Every finding is applied; none declined. Narration recounted by script (only lines starting "> "): **5,806 characters**, 17 scenes (Revision 1: 5,664). Timing: about 550 s (9.2 min) with a 60 s notes hold on this review's measured model; about 563 s (9.4 min) on the design's own model, which double-counts. No em or en dashes.
+
+- **S1 (applied, before recording).** Scene 3c: "so the cleaner should be about twenty five times as concentrated as the diluted solution"; tag "250.0 ÷ 10.00 = 25: the cleaner is 25 times as concentrated (0.1276 × 25 = 3.190)". The file no longer uses "stronger" for concentration anywhere (it appears only in the Revision 2 change note quoting the old text).
+- **M1 (applied).** Scene 2c uses one table: a "Titre (mL)" row fills under the card's two reading rows, then the concordance strip draws under it.
+- **M2 (applied).** Scene 3c: flask bands and counter dim once "× 12.5" fills; the "n(HCl) in flask" line dims when the c line writes; the "all of it came from the sample" tag fades at its sentence end. Bright at the end: the c line, answer box (a) and the S1 tag.
+- **M3 (applied).** Q2 card: "Assume hydrochloric acid is the only substance in the cleaner that reacts with sodium hydroxide." (screen only), also in the model answer and the response-opportunity check.
+- **M4 (applied).** The hook's second sentence is now the review's concrete version. The visual changed from the review's suggestion: the review proposed showing "0.1276 mol/L" beside a ghost "3.190 mol/L", but those are Q2's answers and would appear before the Q2 attempt. The hook shows only generic chips ("aliquot's c" beside "sample's c: 25 × bigger").
+- **M5 (applied).** "per cent" in 2e, 3d, 4c and 4d narration (and the author note's "forty per cent more").
+- **M6 (applied).** Key note 2 uses the review's wording.
+- **M7 (applied).** A build rule under the visual system: the shrunk strip must keep an underlined given readable at playback speed; if Q1's table cannot be read shrunk, the table stays full size and only the stem shrinks.
+
+Also applied from the science check: the carbonate ratio qualified "(to the methyl orange endpoint)" on the decision board, in key note 3 and on 4d's grey chain label; the rough reading written 24.60. Still required: the Codex error check and originality search, then this review repeated on the exact voiced preview. Human listening remains pending.
