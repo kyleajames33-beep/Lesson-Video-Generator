@@ -1,0 +1,144 @@
+{
+  "title": "Which acid-base analysis method fits a sample? pH or amount, calibrated probes, the right titration, and what each measurement tells you",
+  "subtitle": "A pH probe, a direct titration, a back titration and a conductivity titration all analyse acids and bases. For a bottle of vinegar, an antacid tablet, a glass of red wine and a factory's waste water, which one fits, and what does each measurement actually tell you?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 26,
+  "lessonIntent": "deciding whether a question asks for a sample's pH or an amount of acid or base; explaining what a pH probe measures and why it is calibrated with two buffers; describing continuous probe monitoring and automatic titration in industry; choosing a direct titration, a back titration, or a titration followed with a pH probe or conductivity meter from a sample's properties, and justifying the choice against an alternative; stating what a titration establishes (total acid, not which acid) and what a probe establishes (pH, not an amount); stating that Aboriginal and Torres Strait Islander chemical knowledge is built by observation and testing, and the acid-base principle any such practice uses. No Nernst calculations, no density or aliquot calculations (chem-m6-g03), no bench analysis or uncertainty (chem-m6-p07).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Four samples, all needing an acid-base analysis: a bottle of white vinegar, an antacid tablet, a glass of red wine, and the water flowing out of a factory pipe. You've now met the methods you need: a pH probe, a direct titration, a back titration and a conductivity titration. But which one fits each sample, and what does each measurement actually tell you?"
+      }
+    },
+    {
+      "id": "ph-or-amount",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with what you need to know. Sometimes it's how acidic the sample is right now, its pH. A calibrated pH probe reads that in seconds. Other times it's how much acid or base is there in total. That needs a titration. As in the titration video, a weak acid's pH reflects only the small fraction that has ionised, but a titration reacts every acid molecule. That's why vinegar at pH two point four still holds about zero point eight eight moles per litre of ethanoic acid."
+      }
+    },
+    {
+      "id": "probe-measures",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A pH probe is a digital instrument with a thin glass bulb at its tip. Hydronium ions interact with the outer surface of the glass, and that sets up a small voltage across it. The meter measures the voltage and converts it into a pH. At twenty five degrees, each pH unit changes the voltage by about fifty nine millivolts. And because it reads a voltage, not a colour, a dark or cloudy sample doesn't hide the reading."
+      }
+    },
+    {
+      "id": "calibration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But the meter has to be told which voltage means which pH, and that drifts as the glass ages and as the temperature changes. So you calibrate it with two buffers of known pH. A pH seven buffer sets the zero point, the reading at pH seven. A second buffer, pH four for acidic samples, sets the slope, the millivolts per pH unit. Choose buffers close to your samples, ideally on either side, and rinse the probe between them. Skip it, and the probe can show a neat number that's simply wrong."
+      }
+    },
+    {
+      "id": "industry-digital",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Probes also do jobs a titration can't. At a treatment plant, a probe sits in the outlet pipe and logs the pH every few seconds, and a controller adds acid or base before the pH can drift outside the range on the plant's licence. And in many labs, a probe follows a titration automatically: an autotitrator adds base, records the pH curve and finds the jump itself. No one has to judge a colour change."
+      }
+    },
+    {
+      "id": "which-titration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "If you need an amount, look at the sample. Does it dissolve and react quickly, and is it clear? Then titrate it directly, with an indicator, like vinegar with phenolphthalein. Is it an insoluble or slow reacting solid, like the antacid? Then back titrate. Is it coloured or cloudy, so an indicator can't be seen? Then follow the titration with a meter instead: a pH probe to find the jump, or a conductivity meter to find where the lines cross. And with a soft drink, boil off the carbon dioxide first, or it titrates as carbonic acid too."
+      }
+    },
+    {
+      "id": "red-wine",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Try it on the red wine. A winemaker wants its total acid. That's an amount, so it's a titration. Wine reacts quickly with sodium hydroxide, but it's dark red, so phenolphthalein's pink would be hard to see. First remove dissolved carbon dioxide. Then titrate the wine with standard sodium hydroxide to the stated pH endpoint, read with a calibrated pH probe. The titre gives the wine's titratable acidity to that endpoint, not the amount of each acid separately. Tartaric, malic and the rest are counted together, and it doesn't give the wine's pH either."
+      }
+    },
+    {
+      "id": "aboriginal-knowledge",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Acid-base analysis isn't only done with glassware. The syllabus also asks about acid-base techniques used by Aboriginal and Torres Strait Islander Peoples. Their chemical knowledge has been built by observing, testing and passing on the results over many generations, and it's still held today. It belongs to the communities who hold it. The cycad leaching in Module 5 is one documented example, though its chemistry is solubility. Where a practice uses acid-base chemistry, it rests on the idea from this module: a base takes protons from an acid, and that changes how a substance behaves."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's what to remember. pH tells you how acidic; a titration tells you how much. A probe senses only the hydronium in the solution now. A titration reacts every acid molecule, ionised or not. For a strong acid, the pH does give the concentration. For a weak acid, it doesn't. Then let the sample decide which kind of titration."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A garden supplier wants the percentage of calcium carbonate in crushed limestone. A technician suggests mixing the limestone with water and reading the pH with a calibrated probe. Explain why this won't give the percentage, then recommend a more suitable method and justify it. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Calcium carbonate barely dissolves, so the pH shows only the tiny amount in solution, and a pH isn't an amount anyway. Use a back titration: add a measured excess of standard acid, let the solid react completely, then titrate the leftover. Half the acid used gives the moles of calcium carbonate. A direct titration is the trap: the solid reacts too slowly for a clean endpoint."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. Aspirin is a monoprotic acid, and a pharmacist checks tablets by titrating them with standard sodium hydroxide. In old tablets, some aspirin has reacted with water: each molecule forms one molecule of ethanoic acid and one of salicylic acid, both acting as monoprotic acids. Would the titration give an aspirin content that's too high or too low? Explain. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Too high. Each aspirin molecule that broke down now gives two acid molecules, and each one reacts with a hydroxide, so the titre is bigger than the aspirin alone would need. The titration counts total acid; it can't tell which acid it came from. Saying too low, because there's less aspirin, misses that the acid hasn't gone."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any sample, ask two questions. Do I need its pH, or an amount? For pH, use a calibrated probe. For an amount, titrate: directly if it's clear and fast, by back titration if it's a slow solid, and with a meter if it's coloured or cloudy. Then say what your result means. Next: analysing a household sample yourself."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

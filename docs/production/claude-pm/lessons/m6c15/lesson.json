@@ -1,0 +1,160 @@
+{
+  "title": "When are back and conductometric titrations useful? A slow solid, a hidden endpoint, total minus leftover, and where the lines cross",
+  "subtitle": "A crushed antacid tablet fizzes away slowly in acid, and a dark red vinegar hides any indicator. When a direct titration can't give a clear endpoint, how do back titrations and conductivity titrations still find the amount, and how do you read their results?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 24,
+  "lessonIntent": "explaining why a direct titration of an insoluble, slow-reacting solid such as calcium carbonate gives an unreliable endpoint; describing a back titration and why carbon dioxide, when the reaction makes it, is boiled off before the back titre; calculating a mass and percentage by mass from back titration data, subtracting moles and using the mole ratio; explaining when a conductivity titration is useful; reading equivalence where two best-fit lines cross, and saying why dilution bends the lines and how it is kept small; calculating a concentration from the crossing volume. No method choice across pH probes and titrations (chem-m6-c16), no Kjeldahl, no weak/weak conductometric curves, no error-direction tables (chem-m6-g04), no aliquot scale-up (chem-m6-g03).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This antacid tablet is mostly calcium carbonate, a base. So why not just titrate it with hydrochloric acid? Try it, and the tablet sits in the flask, fizzing slowly, and the indicator changes colour while solid is still left. A dark red wine vinegar has a different problem: it reacts fast, but the red hides the indicator's colour. So when a direct titration won't work, how do you still find the amount?"
+      }
+    },
+    {
+      "id": "direct-fails",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Calcium carbonate barely dissolves in water, so the acid can only attack the surface of the solid, and that's slow. Add acid from a burette, and the solution turns acidic around the solid before the rest of it has reacted, so the indicator changes too early, then drifts back as more solid reacts. The carbon dioxide it makes also dissolves, as carbonic acid, which blurs the endpoint even more."
+      }
+    },
+    {
+      "id": "back-titration-idea",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The fix is a back titration. Add a measured excess of standard hydrochloric acid, more than the tablet can use, and give it time to react completely. Then titrate the acid that's left over with standard sodium hydroxide. You can't easily measure the acid the tablet used, but you can measure what it left, and the difference is the acid it used."
+      }
+    },
+    {
+      "id": "boil-off-co2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One step comes before that second titration. Some of the carbon dioxide stays dissolved, as carbonic acid. Sodium hydroxide would react with it too, so the leftover acid would look bigger than it is, and the calcium carbonate would come out too small. So the flask is boiled gently first, to drive the carbon dioxide off, then cooled."
+      }
+    },
+    {
+      "id": "we-added-left",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's one tablet, worked through. Step one, the acid added: n equals c V, zero point zero one two five zero moles. Step two, the acid left over. Sodium hydroxide reacts with hydrochloric acid one to one, so it's the moles of sodium hydroxide in the titre: zero point zero zero four six zero moles. Notice you subtract moles, not volumes, because the two solutions have different concentrations."
+      }
+    },
+    {
+      "id": "we-used-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step three: the tablet used the difference, zero point zero zero seven nine zero moles of acid. Step four: the equation says each calcium carbonate uses two hydrochloric acid, so halve it, zero point zero zero three nine five moles. Times the molar mass gives zero point three nine five grams, which is sixty three point eight per cent of the tablet. The rest is other ingredients, like the binder."
+      }
+    },
+    {
+      "id": "hidden-endpoint",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the red wine vinegar. Its ethanoic acid dissolves and reacts quickly, so a direct titration would work, if you could see the endpoint. So instead of an indicator, use a conductivity meter, which doesn't care about colour, or cloudiness. In the last video, you saw why the readings fall to a V for a strong acid, and bend for a weak acid like this one."
+      }
+    },
+    {
+      "id": "lines-cross",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Add the sodium hydroxide in equal portions, read the meter after each, and plot the points. Before equivalence, each portion makes the same change, turning some ethanoic acid into sodium and ethanoate ions, so the points climb in a nearly straight line. After equivalence, each portion adds the same extra hydroxide: a steeper straight line. The first points curve a little, and equivalence usually falls between two readings, so don't hunt for one point. Draw the two best-fit lines, and read where they cross."
+      }
+    },
+    {
+      "id": "dilution",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "There's one catch. Each portion also adds volume, which dilutes every ion and bends the lines. So the vinegar is first topped up with plenty of water. That doesn't change the moles of acid, but now each portion changes the total volume by only a small fraction. And the sodium hydroxide is concentrated, so only a small volume goes in. Or each reading can be corrected for the volume added."
+      }
+    },
+    {
+      "id": "vinegar-reading",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here, ten point zero zero millilitres of the vinegar was topped up with water and titrated with one point zero zero moles per litre sodium hydroxide. The lines cross at eight point two zero millilitres, the equivalence volume. So the acid is zero point zero zero eight two zero moles. Divide by the ten millilitres of vinegar, not the diluted volume, because the water added no acid: zero point eight two zero moles per litre, with no indicator at all."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's what to remember. Back titration: total minus leftover. It works because the only acid the tablet can have used is the acid that's no longer there. And for a conductivity titration, read where the lines cross."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A zero point five zero zero gram antacid tablet containing aluminium hydroxide is added to forty point zero zero millilitres of zero point four zero zero zero moles per litre hydrochloric acid, an excess. The leftover acid needs twenty one point six zero millilitres of zero point two zero zero zero moles per litre sodium hydroxide. Calculate the percentage of aluminium hydroxide in the tablet, by mass. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The tablet used the acid added minus the acid left: zero point zero one one six eight moles. Each aluminium hydroxide uses three hydrochloric acid, so divide by three, then multiply by seventy eight point zero zero: zero point three zero four grams, or sixty point seven per cent. Forget the three, and you'd get a hundred and eighty two per cent, which is impossible for part of a tablet."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. Zero point one zero zero moles per litre sulfuric acid is added to fifty point zero zero millilitres of barium hydroxide solution, and the conductivity is measured. Explain why the conductivity falls almost to zero, then use the graph to calculate the concentration of the barium hydroxide. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Hydroxide is removed as water, and barium is removed as solid barium sulfate, so at equivalence almost no ions are left to carry a current. After that, excess acid adds ions again. The lines cross at twelve point five millilitres, and the ratio is one to one, so the concentration is zero point zero two five zero moles per litre. Reading the lowest point, twelve point zero, is the slip."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So when a direct titration won't work: if the sample is an insoluble or slow solid, back titrate. Add a measured excess, let the sample react, and titrate what is left. If the reaction makes carbon dioxide, drive it off and cool the flask before the back titre. Subtract moles and use the reaction ratio. If colour or cloudiness hides the endpoint, use a conductivity meter, and read where the lines cross. Next: practice with curves, indicators and back titrations."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6c15/lesson.json",
+    "lessonSha256": "665fa2d54267595326de8b68ba6ea38b8eb217e9b5d9e7b54f92f6716e05129e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "C14 (conductivity graphs: hydrochloric acid with sodium hydroxide falls to a minimum, then rises; ethanoic acid rises gently, then more steeply, with a bend at equivalence; hydronium and hydroxide conduct best). C13 (endpoint against equivalence point; an indicator's colour must be seen). C12 (titration, standard solution, pipette, burette, titre, n = cV, the four-step calculation, a titration counts every acid molecule; concordant titres). C03 (net ionic equation for neutralisation; spectator ions). Module 5 C13 (barium sulfate is insoluble). Year 11 (n = m ÷ M, percentage by mass, carbonates react with acid to give carbon dioxide). Not assumed: back titration, excess reagent as a method, conductometric titration as a method, line-intersection reading, dilution correction.",
+    "startsWith": "Start with an unsuitable direct endpoint or insoluble sample. The video opens: This antacid tablet is mostly calcium carbonate, a base. So why not just titrate it with hydrochloric acid? Try it, and the tablet sits in the flask, fizzing slowly, and the indicator changes colour while solid is still left.",
+    "stopsAfter": "explaining why a direct titration of an insoluble, slow-reacting solid such as calcium carbonate gives an unreliable endpoint; describing a back titration and why carbon dioxide, when the reaction makes it, is boiled off before the back titre; calculating a mass and percentage by mass from back titration data, subtracting moles and using the mole ratio; explaining when a conductivity titration is useful; reading equivalence where two best-fit lines cross, and saying why dilution bends the lines and how it is kept small; calculating a concentration from the crossing volume. No method choice across pH probes and titrations (chem-m6-c16), no Kjeldahl, no weak/weak conductometric curves, no error-direction tables (chem-m6-g04), no aliquot scale-up (chem-m6-g03).",
+    "nextLesson": "practice with titration curves, indicators and back titrations (route chem-m6-g04)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-c15.md"
+  ],
+  "teaching": {
+    "task": "A crushed antacid tablet fizzes away slowly in acid, and a dark red vinegar hides any indicator. When a direct titration can't give a clear endpoint, how do back titrations and conductivity titrations still find the amount, and how do you read their results?",
+    "causalExplanation": "(1) a calcium carbonate tablet and a dark red vinegar both defeat a direct titration, for different reasons (1); (2) calcium carbonate barely dissolves, so acid reacts only at the solid's surface; the indicator changes before the solid has reacted, then drifts back; dissolved carbon dioxide blurs the endpoint (2); (3) back titration: a measured excess of standard acid reacts completely; the leftover is titrated; the difference is what the sample used (3); (4) boil off the carbon dioxide first, because it would use sodium hydroxide and make the leftover look bigger (4); (5) acid added and acid left over in moles; subtract moles, not volumes, because the concentrations differ (5); (6) the difference, the 1 : 2 ratio, mass and percentage (6); (7) the vinegar would titrate directly if the endpoint could be seen; a conductivity meter does not depend on colour; recall the V and the bend (7); (8) equal portions make equal changes, so two nearly straight stretches; the first points curve and equivalence falls between readings, so read where the best-fit lines cross (8); (9) every portion dilutes the flask and bends the lines; a large volume made up with water (so each portion is a small fraction of it) and a concentrated titrant keep this small, or readings are corrected (9); (10) the crossing volume gives the moles, divided by the vinegar's own volume (10); memory aid (11); two attempts and brief feedback (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "two samples defeat a direct titration for different reasons: a crushed calcium carbonate antacid tablet fizzes away slowly, so the indicator changes while solid is still left, and a dark red wine vinegar hides any indicator colour. The solid-surface lens shows why the tablet fails; the back titration adds a measured excess of standard acid, lets it react completely and titrates what is left, with the carbon dioxide driven off first because this reaction makes it; the moles bar splits into used and left over, and the worked example subtracts moles, uses the 1 : 2 ratio and finds the mass and percentage. The vinegar goes to a conductivity meter: equal portions give two nearly straight stretches, equivalence is read where the best-fit lines cross, and dilution is kept small. Two exam questions follow with brief feedback, and the decision rule makes boiling conditional on carbon dioxide forming.",
+    "openingDecision": "This antacid tablet is mostly calcium carbonate, a base. So why not just titrate it with hydrochloric acid? Try it, and the tablet sits in the flask, fizzing slowly, and the indicator changes colour while solid is still left. A dark red wine vinegar has a different problem: it reacts fast, but the red hides the indicator's colour. So when a direct titration won't work, how do you still find the amount?",
+    "understandingCheck": "(A1) \"A 0.500 g antacid tablet containing aluminium hydroxide was crushed and added to 40.00 mL of 0.4000 mol/L hydrochloric acid, an excess. After the reaction was complete, the leftover acid required 21.60 mL of 0.2000 mol/L sodium hydroxide. Al(OH)₃(s) + 3HCl(aq) → AlCl₃(aq) + 3H₂O(l). M(Al(OH)₃) = 78.00 g/mol. Calculate the percentage by mass of aluminium hydroxide in the tablet.\" New base, new ratio (1 : 3), new numbers. Crossed mistake: \"no ÷ 3: 182%\" (site L18 card 5's ratio error, transferred; the impossible percentage is the check). (A2) \"0.100 mol/L sulfuric acid was added from a burette to 50.00 mL of barium hydroxide solution, and the conductivity was measured after each 1.0 mL. The graph shows the results (corrected for the volume added). (a) Explain why the conductivity falls almost to zero. (b) Use the graph to calculate the concentration of the barium hydroxide solution.\" Ba(OH)₂(aq) + H₂SO₄(aq) → BaSO₄(s) + 2H₂O(l) on the card. Graph: points every 1.0 mL from 0 to 20 mL (author note d), no lines drawn. New system (precipitation removes the cation too), tests reading the crossing. Crossed mistake: \"12.0 mL, the lowest point measured\" (gives 0.0240 mol/L).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" \"investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:; strong acid/strong base; strong acid/weak base; weak acid/strong base (ACSCH080, ACSCH102)\" this video starts from the route's insoluble sample and unsuitable direct endpoint and stops at excess-reagent subtraction and the conductivity intersection. It teaches: why a direct titration of calcium carbonate fails (it barely dissolves, reacts only at the solid's surface, so the indicator changes before the solid has reacted, and dissolved carbon dioxide blurs the endpoint); the back titration (a measured excess of standard acid, complete reaction, boiling off carbon dioxide when the reaction makes it, titrating the leftover acid with standard base); why the carbon dioxide must go (it would use sodium hydroxide, so the leftover acid looks bigger and the carbonate too small); the four-step calculation (acid added, acid left over, acid used by subtraction of moles, the mole ratio), then mass and percentage by mass; the conductometric titration as a method for samples whose colour or cloudiness hides an indicator; why the readings form two nearly straight stretches (each equal portion of titrant makes the same ion change before equivalence, and adds the same excess after it); reading equivalence where the two best-fit lines cross, rather than at one measured point; why dilution by the titrant bends the lines and how it is kept small (a large sample volume made up with water, a concentrated titrant, or readings corrected for the volume added); a concentration from the crossing volume. Not here: why the strong acid conductivity falls to a V and the weak acid rises with a bend (chem-m6-c14 scenes 8 and 9; one callback and a thumbnail only); molar conductivity values on screen (not needed; author note e); choosing among a pH probe, a direct titration, a back titration and a conductivity titration for a range of samples, and what each measurement establishes (chem-m6-c16); the Kjeldahl method and back titrations with excess base (one author note); weak acid with weak base conductometric curves (site Extension; author note f); error direction tables beyond the carbon dioxide step (chem-m6-g04); aliquot scale-up from a volumetric flask and percentage by mass from density (chem-m6-g03); bench technique and risk (chem-m6-p06 and the practical videos)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: hydrochloric acid and \"acid added\" teal-edged (C12), the titrant sodium hydroxide navy (C12), \"used by the sample\" amber, \"left over\" navy; H₃O⁺ teal token, OH⁻ violet, Na⁺ and Cl⁻ small grey spectators, ethanoate grey-violet, Ba²⁺ small pale gold, SO₄²⁻ small slate (C01, C03, C14); conductivity points white dots, best-fit lines pale blue (before equivalence) and violet (after). Board layout (constant, C03, C07, C12 and C14): top-left the short task line; the left column holds the givens card during the worked example (grouped, units attached); the centre holds the lens, the bar, the working or the graph, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 21 Oct): `m6-antacid-tablets-v1.png` (inspected: three chalky white round tablets, one broken with crumbs; no person or hand; hook, scenes 2 and 5, attempt 1, small), `m6-marble-chips-acid-v1.png` (inspected: white carbonate chips fizzing at the bottom of a clear beaker of acid, bubbles rising from their surfaces; scene 2, \"reacts only at the surface\", and the hook's \"fizzing slowly\"), `m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png` and `m6-white-tile-v1.png` (C12 layout; scenes 3 and 5), `m6-clip-phenolphthalein-colourless-v1.png` and `-pink-v1.png` (scene 2's early colour change and drift back, played as a swap), `m6-conductivity-meter-titration-v1.png` (inspected: two probes clamped in a stirred beaker on a magnetic stirrer, a handheld meter with a blank screen, no person or hand; scenes 7 to 10, attempt 2, coded readout on its blank screen). `m6-agricultural-liming-v1.png` was inspected and is not used (it shows a hand). New plates: `m6-red-wine-vinegar-bottle-v1.png` (hook, scenes 7 and 10) and `m6-conical-flask-hotplate-v1.png` (scene 4); see Assets. No human figures.",
+    "transitionPlan": "The burette, flask, tile and tablet plates open the hook with the marble chips inset and the red vinegar beside a vanishing magenta drop; the board clears for the solid-surface lens with its indicator swatch flipping early and back; the pipette and moles bar build the back titration idea and the hotplate plate slides in as the bar returns to its true sizes; the givens card and working lines carry the worked example one stage per line, earlier lines dimming, with kept chips and a crossed volume chip; the conductivity meter plate slides in with two C14 thumbnails; points drop onto the lineGraph with the dose counter and ion tally while the best-fit ruler draws both lines and rings the crossing; the dilution sleeve draws beside the shrunken graph; the vinegar reading writes under the ring; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card lights line by line, earlier lines dimming, then the next chip; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-burette-clamp-stand-v1.png` centre-left with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` (C12 layout); `m6-antacid-tablets-v1.png` small at the right, tag \"CaCO₃ tablet\" (amber).",
+      "teachingReason": "Hook (two samples that won't titrate directly): This antacid tablet is mostly calcium carbonate, a base.",
+      "narrationCue": "hydrochloric acid / fizzing slowly / hides",
+      "motionPurpose": "On the spoken cues: On \"hydrochloric acid\" the burette tag writes \"HCl\" (teal-edged) and the gauge starts to fall; a coded crushed-tablet heap sits in the flask. On \"fizzing slowly\" `m6-marble-chips-acid-v1.png` opens as a small inset (tag \"slow, at the surface\"), the flask swaps to `m6-clip-phenolphthalein-colourless-v1.png` style colour with a coded solid heap still visible and a chip \"colour changed: solid still there ?\". On \"hides\"",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-burette-clamp-stand-v1.png` centre-left with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` (C12 layout); `m6-antacid-tablets-v1.png` small at the right, tag \"CaCO₃ tablet\" (amber). On \"hydrochloric acid\" the burette tag writes \"HCl\" (teal-edged) and the gauge starts to fall; a coded crushed-tablet heap sits in the flask. On \"fizzing slowly\" `m6-marble-chips-acid-v1.png` opens as a small inset (tag \"slow, at the surface\"), the flask swaps to `m6-clip-phenolphthalein-colourless-v1.png` style colour with a coded solid heap still visible and a chip \"colour changed: solid still there ?\". On \"hides\" the flask's coded liquid turns deep red, `m6-red-wine-vinegar-bottle-v1.png` appears small beside it, and a magenta drop in the flask disappears into the red (chip \"endpoint hidden ?\"). Heading writes: \"When a direct titration won't work\". The \"HCl\", \"CaCO₃ tablet\" and \"slow, at the surface\" tags dim when their sentences end. Bright at the end: the heading and the two chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "direct-fails",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Why the direct titration fails: Calcium carbonate barely dissolves in water, so the acid can only attack the surface of the solid, and that's slow.",
+      "narrationCue": "surface / too early / carbonic acid",
+      "motionPurpose": "On the spoken cues: The solid-surface lens opens centre: a tablet cross-section of packed amber CaCO₃ particles in pale blue water. On \"surface\" teal H₃O⁺ tokens drop in and only the outer layer of particles reacts (each leaving bubbles), the inside stays packed; tag \"reacts only at the surface\". On \"too early\" a coded indicator swatch beside the lens flips to its acid colour while most of the solid remains (C13 swatch style), then",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The solid-surface lens opens centre: a tablet cross-section of packed amber CaCO₃ particles in pale blue water. On \"surface\" teal H₃O⁺ tokens drop in and only the outer layer of particles reacts (each leaving bubbles), the inside stays packed; tag \"reacts only at the surface\". On \"too early\" a coded indicator swatch beside the lens flips to its acid colour while most of the solid remains (C13 swatch style), then slowly flips back as another layer reacts; the `m6-clip-phenolphthalein` pair swaps forward and back once, small; chip \"endpoint before the solid has reacted\". On \"carbonic acid\" small bubbles in the lens partly dissolve, tag \"CO₂ dissolves → H₂CO₃: blurs the endpoint\" (dims). Bright at the end: the lens, the chip and the tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "back-titration-idea",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "The back titration idea: The fix is a back titration.",
+      "narrationCue": "back titration / excess / left over",
+      "motionPurpose": "On the spoken cues: Heading tag \"back titration\". On \"excess\" a pipette icon (coded outline, from C12) delivers into the flask and the moles bar draws across the top: \"acid added (measured)\" in teal-edged outline; the crushed tablet in the flask dissolves completely as a timer icon turns (tag \"excess: more than the sample can use\"). On \"left over\" the bar splits: an amber part \"used by the tablet\" and a navy part \"left over\"; the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Heading tag \"back titration\". On \"excess\" a pipette icon (coded outline, from C12) delivers into the flask and the moles bar draws across the top: \"acid added (measured)\" in teal-edged outline; the crushed tablet in the flask dissolves completely as a timer icon turns (tag \"excess: more than the sample can use\"). On \"left over\" the bar splits: an amber part \"used by the tablet\" and a navy part \"left over\"; the burette with navy NaOH titrates into the flask and a bracket under the navy part writes \"measured by the titration\". On \"the difference\" the amber part brightens with a \"?\" that becomes \"added − left over\". Bright at the end: the moles bar with its two labels and the bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "boil-off-co2",
+      "visualDecision": "adjust",
+      "visualReference": "the moles bar stays small at the top.",
+      "teachingReason": "Drive off the carbon dioxide: One step comes before that second titration.",
+      "narrationCue": "dissolved / bigger / boiled",
+      "motionPurpose": "On the spoken cues: On \"dissolved\" a lens over the flask shows a few grey CO₂ molecules among the ions, tagged \"H₂CO₃\". On \"bigger\" violet OH⁻ tokens react with them; the navy \"left over\" part of the bar stretches too long and the amber \"used\" part shrinks, tag \"CO₂ uses NaOH: leftover looks bigger, CaCO₃ too small\" (dims). On \"boiled\" `m6-conical-flask-hotplate-v1.png` slides in; the CO₂ molecules rise out of the lens and the bar's",
+      "motionRole": "explain",
+      "onScreenChange": "the moles bar stays small at the top. On \"dissolved\" a lens over the flask shows a few grey CO₂ molecules among the ions, tagged \"H₂CO₃\". On \"bigger\" violet OH⁻ tokens react with them; the navy \"left over\" part of the bar stretches too long and the amber \"used\" part shrinks, tag \"CO₂ uses NaOH: leftover looks bigger, CaCO₃ too small\" (dims). On \"boiled\" `m6-conical-flask-hotplate-v1.png` slides in; the CO₂ molecules rise out of the lens and the bar's parts return to their true sizes; chip \"boil off CO₂, cool, then titrate\". Bright at the end: the hotplate plate, the corrected bar and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we-added-left",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Worked example: acid added and acid left over: Here's one tablet, worked through.",
+      "narrationCue": "zero point zero one two five zero / zero point zero zero four six zero / moles",
+      "motionPurpose": "On the spoken cues: Task line: \"Find the mass and % of CaCO₃ in the tablet\". Strip: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\" and below it, small, \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". Givens card: \"tablet: 0.620 g\" | \"HCl added: 25.00 mL, 0.5000 mol/L\" | \"NaOH for the leftover: 18.40 mL, 0.250 mol/L\" | \"M(CaCO₃) = 100.1 g/mol\". `m6-antacid-tablets-v1.png` small at the right. Step chip \"Step 1 of 4: acid added\". On \"zero",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Find the mass and % of CaCO₃ in the tablet\". Strip: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\" and below it, small, \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". Givens card: \"tablet: 0.620 g\" | \"HCl added: 25.00 mL, 0.5000 mol/L\" | \"NaOH for the leftover: 18.40 mL, 0.250 mol/L\" | \"M(CaCO₃) = 100.1 g/mol\". `m6-antacid-tablets-v1.png` small at the right. Step chip \"Step 1 of 4: acid added\". On \"zero point zero one two five zero\" the HCl row relights and the line \"n(HCl added) = 0.5000 mol/L × 0.02500 L = 1.250 × 10⁻² mol\" writes; the moles bar's whole length labels it. Step chip \"Step 2 of 4: acid left over\". On \"zero point zero zero four six zero\" the row dims, the NaOH row relights and the line \"n(HCl left) = n(NaOH) = 0.250 mol/L × 0.01840 L = 4.60 × 10⁻³ mol\" writes; the navy part labels it (the step 1 line dims to a kept chip \"added: 1.250 × 10⁻² mol\"). On \"moles\" a chip \"25.00 mL − 18.40 mL = 6.60 mL ?\" fades in and is crossed (caption \"different concentrations: subtract moles\"), then dims. Bright at the end: the kept chip, the step 2 line and the moles bar. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "we-used-mass",
+      "visualDecision": "new",
+      "visualReference": "step chip \"Step 3 of 4: acid used\".",
+      "teachingReason": "Worked example: acid used, the ratio, mass and percentage: Step three: the tablet used the difference, zero point zero zero seven nine zero moles of acid.",
+      "narrationCue": "zero point zero zero seven nine zero / two / zero point three nine five / sixty three point eight",
+      "motionPurpose": "On the spoken cues: On \"zero point zero zero seven nine zero\" the line \"n(HCl used) = 1.250 × 10⁻² − 4.60 × 10⁻³ = 7.90 × 10⁻³ mol\" writes and the amber part of the bar labels it (small grey tag \"both to 10⁻⁵ mol → 3 s.f.\", dims). Step chip \"Step 4 of 4: ratio, mass, %\". On \"two\" the strip's \"CaCO₃ : 2HCl\" pulses and \"n(CaCO₃) = 7.90 × 10⁻³ ÷ 2 = 3.95 × 10⁻³ mol\" writes (earlier lines dim; the \"used\" line stays as a kept chip). On",
+      "motionRole": "explain",
+      "onScreenChange": "step chip \"Step 3 of 4: acid used\". On \"zero point zero zero seven nine zero\" the line \"n(HCl used) = 1.250 × 10⁻² − 4.60 × 10⁻³ = 7.90 × 10⁻³ mol\" writes and the amber part of the bar labels it (small grey tag \"both to 10⁻⁵ mol → 3 s.f.\", dims). Step chip \"Step 4 of 4: ratio, mass, %\". On \"two\" the strip's \"CaCO₃ : 2HCl\" pulses and \"n(CaCO₃) = 7.90 × 10⁻³ ÷ 2 = 3.95 × 10⁻³ mol\" writes (earlier lines dim; the \"used\" line stays as a kept chip). On \"zero point three nine five\" the M row relights and \"m = 3.95 × 10⁻³ mol × 100.1 g/mol = 0.3954 g → 0.395 g\" writes (small grey tag \"keep a guard digit for the next step\", dims). On \"sixty three point eight\" the tablet row relights and \"% CaCO₃ = 0.3954 g ÷ 0.620 g × 100 = 63.8%\" writes; answer chip \"0.395 g CaCO₃; 63.8% by mass\". On \"binder\" a small pie beside the tablet plate fills 63.8% amber, the rest grey \"other ingredients\". Bright at the end: the % line, the answer chip and the pie. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "hidden-endpoint",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "A hidden endpoint: use a conductivity meter: Now the red wine vinegar.",
+      "narrationCue": "conductivity meter / V / bend",
+      "motionPurpose": "On the spoken cues: `m6-red-wine-vinegar-bottle-v1.png` small at the left, a coded flask beside it filled deep red with a magenta drop vanishing (tag \"indicator hidden\"). On \"conductivity meter\" `m6-conductivity-meter-titration-v1.png` slides in centre-right, its beaker coded deep red, readout ticking on its blank screen; tag \"reads ions, not colour\"; a small grey tag \"back titration doesn't help here: the colour stays in the flask\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-red-wine-vinegar-bottle-v1.png` small at the left, a coded flask beside it filled deep red with a magenta drop vanishing (tag \"indicator hidden\"). On \"conductivity meter\" `m6-conductivity-meter-titration-v1.png` slides in centre-right, its beaker coded deep red, readout ticking on its blank screen; tag \"reads ions, not colour\"; a small grey tag \"back titration doesn't help here: the colour stays in the flask\" (dims; new correction 1). On \"V\" a C14 thumbnail of the hydrochloric acid V draws small at the top (grey tag \"strong acid: minimum\"); on \"bend\" a second thumbnail of the ethanoic acid bend draws beside it (grey tag \"weak acid: bend\"). Bright at the end: the meter plate and the two thumbnails. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "lines-cross",
+      "visualDecision": "new",
+      "visualReference": "the thumbnails dim.",
+      "teachingReason": "Two straight lines, and where they cross: Add the sodium hydroxide in equal portions, read the meter after each, and plot the points.",
+      "narrationCue": "straight line / steeper / between / cross",
+      "motionPurpose": "On the spoken cues: The conductivity lineGraph draws centre (author note c axes). The dose counter ticks 1.00 mL at a time and a white point drops onto the graph for each portion, with the ion tally beside it adding grey Na⁺ and grey-violet ethanoate tokens in equal groups (one group per portion). On \"straight line\" the best-fit ruler lays along the points from 2 to 7 mL and draws a pale blue line, extended. On \"steeper\" violet OH⁻",
+      "motionRole": "explain",
+      "onScreenChange": "the thumbnails dim. The conductivity lineGraph draws centre (author note c axes). The dose counter ticks 1.00 mL at a time and a white point drops onto the graph for each portion, with the ion tally beside it adding grey Na⁺ and grey-violet ethanoate tokens in equal groups (one group per portion). On \"straight line\" the best-fit ruler lays along the points from 2 to 7 mL and draws a pale blue line, extended. On \"steeper\" violet OH⁻ tokens add in equal groups as points climb faster, and the ruler draws a violet line through the 10 to 16 mL points, extended back. On \"first points\" the 0 and 1 mL points pulse grey (tag \"curved at the start: leave out\", dims). On \"between\" a small bracket spans the gap between the 8 and 9 mL points (tag \"no reading lands on equivalence\", dims). On \"cross\" a ring sits where the lines meet and a dashed line drops to the x axis; chip \"equivalence: where the lines cross\". Bright at the end: the two lines, the ring and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "token flight",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "dilution",
+      "visualDecision": "new",
+      "visualReference": "the graph shrinks to the right.",
+      "teachingReason": "Why dilution matters: There's one catch.",
+      "narrationCue": "dilutes / water / concentrated / corrected",
+      "motionPurpose": "On the spoken cues: The dilution sleeve draws at the left: a coded beaker with a small volume; on \"dilutes\" each portion raises the level a lot and the ion tokens spread apart, while a small pair of lines beside it sags into curves (tag \"shape: the ions and the dilution\"). On \"water\" the beaker starts full (\"+ water: same moles of acid\"), and each portion now raises the level only slightly (tag \"small fraction of the volume\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "the graph shrinks to the right. The dilution sleeve draws at the left: a coded beaker with a small volume; on \"dilutes\" each portion raises the level a lot and the ion tokens spread apart, while a small pair of lines beside it sags into curves (tag \"shape: the ions and the dilution\"). On \"water\" the beaker starts full (\"+ water: same moles of acid\"), and each portion now raises the level only slightly (tag \"small fraction of the volume\"). On \"concentrated\" the portions shrink and the small lines straighten; tag \"large volume, concentrated titrant\". On \"corrected\" a grey tag \"or correct each reading for the volume added\" writes and the main graph's axis label gains \"(corrected for volume added)\". Bright at the end: the sleeve, the straight pair and the tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "vinegar-reading",
+      "visualDecision": "adjust",
+      "visualReference": "the graph returns large with its two lines.",
+      "teachingReason": "Reading the vinegar's concentration: Here, ten point zero zero millilitres of the vinegar was topped up with water and titrated with one point zero zero moles per litre sodium hydroxide.",
+      "narrationCue": "eight point two zero / zero point zero zero eight two zero / vinegar / zero point eight two zero",
+      "motionPurpose": "On the spoken cues: Task line: \"Find c(CH₃COOH) in the vinegar\". A short givens strip under it: \"vinegar: 10.00 mL (+ water)\" | \"NaOH: 1.00 mol/L\". On \"eight point two zero\" the ring pulses and the drop line labels \"8.20 mL\". On \"zero point zero zero eight two zero\" the line \"n(CH₃COOH) = n(NaOH) = 1.00 mol/L × 0.00820 L = 8.20 × 10⁻³ mol\" writes (strip \"CH₃COOH + NaOH → CH₃COONa + H₂O\" small above it, 1 : 1). On \"vinegar\" the \"10.00",
+      "motionRole": "explain",
+      "onScreenChange": "the graph returns large with its two lines. Task line: \"Find c(CH₃COOH) in the vinegar\". A short givens strip under it: \"vinegar: 10.00 mL (+ water)\" | \"NaOH: 1.00 mol/L\". On \"eight point two zero\" the ring pulses and the drop line labels \"8.20 mL\". On \"zero point zero zero eight two zero\" the line \"n(CH₃COOH) = n(NaOH) = 1.00 mol/L × 0.00820 L = 8.20 × 10⁻³ mol\" writes (strip \"CH₃COOH + NaOH → CH₃COONa + H₂O\" small above it, 1 : 1). On \"vinegar\" the \"10.00 mL\" given pulses (tag \"divide by the vinegar's volume: water adds no acid\", dims). On \"zero point eight two zero\" \"c = 8.20 × 10⁻³ mol ÷ 0.01000 L = 0.820 mol/L\" writes; answer chip \"c(CH₃COOH) = 0.820 mol/L\" with `m6-red-wine-vinegar-bottle-v1.png` small beside it. Bright at the end: the ring with \"8.20 mL\", the c line and the answer chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So here's what to remember.",
+      "narrationCue": "Back titration: total minus leftover. / read where the lines cross",
+      "motionPurpose": "On the spoken cues: The aid writes large and handwritten: \"Back titration: total minus leftover.\" with the moles bar icon splitting into \"used\" and \"left\". Condition tag in grey: \"in moles; then the mole ratio\". On \"read where the lines cross\" the second line writes: \"Conductivity: read where the lines cross.\" with a tiny thumbnail of the scene 8 graph. Each earlier line dims slightly as the next writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The aid writes large and handwritten: \"Back titration: total minus leftover.\" with the moles bar icon splitting into \"used\" and \"left\". Condition tag in grey: \"in moles; then the mole ratio\". On \"read where the lines cross\" the second line writes: \"Conductivity: read where the lines cross.\" with a tiny thumbnail of the scene 8 graph. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A zero point five zero zero",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A 0.500 g antacid tablet containing aluminium hydroxide was crushed and added to 40.00 mL of 0.4000 mol/L hydrochloric acid, an excess. After the reaction was complete, the leftover acid required 21.60 mL of 0.2000 mol/L sodium hydroxide. Al(OH)₃(s) + 3HCl(aq) → AlCl₃(aq) + 3H₂O(l). M(Al(OH)₃) = 78.00 g/mol. Calculate the percentage by mass of aluminium hydroxide in the tablet.\" `m6-antacid-tablets-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no moles bar, no step chips, no aid.",
+      "motionTools": [
+        "chip pop",
+        "bar fill",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "zero point zero one one six eight / three / zero point three zero four / sixty point seven / impossible",
+      "motionPurpose": "On the spoken cues: The moles bar draws beside it. On \"zero point zero one one six eight\" \"40.00 mL\", \"0.4000 mol/L\", \"21.60 mL\" and \"0.2000 mol/L\" are underlined and three lines write in turn: \"added: 0.4000 × 0.04000 = 1.600 × 10⁻² mol\", \"left: 0.2000 × 0.02160 = 4.320 × 10⁻³ mol\", \"used: 1.600 × 10⁻² − 4.320 × 10⁻³ = 1.168 × 10⁻² mol\" (the first two dim). On \"three\" \"3HCl\" is underlined and \"n(Al(OH)₃) = 1.168 × 10⁻² ÷ 3 = 3.893 ×",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays, shrunk to the top. The moles bar draws beside it. On \"zero point zero one one six eight\" \"40.00 mL\", \"0.4000 mol/L\", \"21.60 mL\" and \"0.2000 mol/L\" are underlined and three lines write in turn: \"added: 0.4000 × 0.04000 = 1.600 × 10⁻² mol\", \"left: 0.2000 × 0.02160 = 4.320 × 10⁻³ mol\", \"used: 1.600 × 10⁻² − 4.320 × 10⁻³ = 1.168 × 10⁻² mol\" (the first two dim). On \"three\" \"3HCl\" is underlined and \"n(Al(OH)₃) = 1.168 × 10⁻² ÷ 3 = 3.893 × 10⁻³ mol\" writes. On \"zero point three zero four\" \"78.00 g/mol\" is underlined and \"m = 3.893 × 10⁻³ × 78.00 = 0.3037 g → 0.304 g\" writes. On \"sixty point seven\" \"0.500 g\" is underlined and \"% = 0.3037 ÷ 0.500 × 100 = 60.7%\" writes; answer chip \"60.7% Al(OH)₃\". On \"impossible\" a chip \"no ÷ 3: 182%\" fades in and is crossed (caption \"over 100%: check the ratio\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "question card: \"0.100 mol/L sulfuric acid was added from a burette to 50.00 mL of barium hydroxide solution, and the conductivity was measured after each 1.0 mL.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Zero point one zero zero moles",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card: \"0.100 mol/L sulfuric acid was added from a burette to 50.00 mL of barium hydroxide solution, and the conductivity was measured after each 1.0 mL. The graph shows the results (corrected for the volume added). Ba(OH)₂(aq) + H₂SO₄(aq) → BaSO₄(s) + 2H₂O(l). (a) Explain why the conductivity falls almost to zero. (b) Use the graph to calculate the concentration of the barium hydroxide solution.\" The coded graph beside it (author note d): x \"volume of 0.100 mol/L H₂SO₄ added (mL)\" 0 to 20 with grid lines every 1 mL, y \"conductivity (relative, corrected for volume added)\" with no numbers, 21 white points, no lines drawn. `m6-conductivity-meter-titration-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ruler, no ion tally, no aid.",
+      "motionTools": [
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card stays.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "water / barium sulfate / twelve point five / zero point zero two five zero / slip",
+      "motionPurpose": "On the spoken cues: On \"water\" \"falls almost to zero\" is underlined and an ion tally beside the graph shows violet OH⁻ tokens pairing with teal H₃O⁺ into water; on \"barium sulfate\" pale gold Ba²⁺ and slate SO₄²⁻ tokens drop to the bottom as a white solid (tag \"both ions leave the solution\"). On \"excess acid\" teal and slate tokens add on top. On \"twelve point five\" the best-fit ruler draws lines through 0 to 10 mL and 14 to 20 mL, a",
+      "motionRole": "explain",
+      "onScreenChange": "the question card stays. On \"water\" \"falls almost to zero\" is underlined and an ion tally beside the graph shows violet OH⁻ tokens pairing with teal H₃O⁺ into water; on \"barium sulfate\" pale gold Ba²⁺ and slate SO₄²⁻ tokens drop to the bottom as a white solid (tag \"both ions leave the solution\"). On \"excess acid\" teal and slate tokens add on top. On \"twelve point five\" the best-fit ruler draws lines through 0 to 10 mL and 14 to 20 mL, a ring sits at the crossing and drops to \"12.5 mL\"; on \"zero point zero two five zero\" \"0.100 mol/L\" and \"50.00 mL\" are underlined and \"c(Ba(OH)₂) = (0.100 mol/L × 0.0125 L) ÷ 0.05000 L = 0.0250 mol/L\" writes; answer chip \"0.0250 mol/L\". On \"slip\" a chip \"12.0 mL, the lowest point measured\" fades in and is crossed (caption \"read where the lines cross\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "token flight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the question card writes, each line lighting on its words: \"1 Insoluble or slow solid → back titration.\"",
+      "teachingReason": "Decision rule and handoff: So when a direct titration won't work: if the sample is an insoluble or slow solid, back titrate.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Add a measured excess, let the sample react, titrate what is left.\" \"3 If the reaction makes CO₂: drive it off and cool the flask before the back titre.\" \"4 Subtract moles; use the reaction ratio.\" \"5 Colour or cloudiness hides the endpoint → conductivity meter.\" \"6 Equivalence: where the two best-fit lines cross.\" Earlier lines dim as each new one lights. On \"Next\" a chip \"Next: curves, indicators and back",
+      "motionRole": "explain",
+      "onScreenChange": "the question card writes, each line lighting on its words: \"1 Insoluble or slow solid → back titration.\" \"2 Add a measured excess, let the sample react, titrate what is left.\" \"3 If the reaction makes CO₂: drive it off and cool the flask before the back titre.\" \"4 Subtract moles; use the reaction ratio.\" \"5 Colour or cloudiness hides the endpoint → conductivity meter.\" \"6 Equivalence: where the two best-fit lines cross.\" Earlier lines dim as each new one lights. On \"Next\" a chip \"Next: curves, indicators and back titration practice\" appears with small thumbnails of a pH curve and the moles bar. Hold about 2 seconds. (Revision 3, Codex check 92: the CO₂ line is conditional; attempt 1's aluminium hydroxide makes no CO₂.) Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c15-learning-review.md",
+      "sha256": "d74076bb3bbe306a6d6427656e3121a7a696afcc3aeecff24a201ffd0512c278"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6c15-claude-science-check.md",
+      "sha256": "dc179e6219fa72570953af243cf9343b144125f54707ff191cc67bc5d0647ed2"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

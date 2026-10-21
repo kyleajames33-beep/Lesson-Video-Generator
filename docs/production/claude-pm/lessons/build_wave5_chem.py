@@ -7387,6 +7387,528 @@ SKILLS04_ROWS = {
 # END generated rows: m6c13-m6c14, skills03, skills04
 
 
+# BEGIN generated rows: m6c15-m6c16
+M6C15_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-burette-clamp-stand-v1.png` centre-left with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` (C12 layout); `m6-antacid-tablets-v1.png` small at the right, tag \"CaCO₃ tablet\" (amber).",
+        "Hook (two samples that won't titrate directly): This antacid tablet is mostly calcium carbonate, a base.",
+        "hydrochloric acid / fizzing slowly / hides",
+        "On the spoken cues: On \"hydrochloric acid\" the burette tag writes \"HCl\" (teal-edged) and the gauge starts to fall; a coded crushed-tablet heap sits in the flask. On \"fizzing slowly\" `m6-marble-chips-acid-v1.png` opens as a small inset (tag \"slow, at the surface\"), the flask swaps to `m6-clip-phenolphthalein-colourless-v1.png` style colour with a coded solid heap still visible and a chip \"colour changed: solid still there ?\". On \"hides\"",
+        "explain",
+        "`m6-burette-clamp-stand-v1.png` centre-left with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png` (C12 layout); `m6-antacid-tablets-v1.png` small at the right, tag \"CaCO₃ tablet\" (amber). On \"hydrochloric acid\" the burette tag writes \"HCl\" (teal-edged) and the gauge starts to fall; a coded crushed-tablet heap sits in the flask. On \"fizzing slowly\" `m6-marble-chips-acid-v1.png` opens as a small inset (tag \"slow, at the surface\"), the flask swaps to `m6-clip-phenolphthalein-colourless-v1.png` style colour with a coded solid heap still visible and a chip \"colour changed: solid still there ?\". On \"hides\" the flask's coded liquid turns deep red, `m6-red-wine-vinegar-bottle-v1.png` appears small beside it, and a magenta drop in the flask disappears into the red (chip \"endpoint hidden ?\"). Heading writes: \"When a direct titration won't work\". The \"HCl\", \"CaCO₃ tablet\" and \"slow, at the surface\" tags dim when their sentences end. Bright at the end: the heading and the two chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "direct-fails": [
+        "new",
+        "the board clears.",
+        "Why the direct titration fails: Calcium carbonate barely dissolves in water, so the acid can only attack the surface of the solid, and that's slow.",
+        "surface / too early / carbonic acid",
+        "On the spoken cues: The solid-surface lens opens centre: a tablet cross-section of packed amber CaCO₃ particles in pale blue water. On \"surface\" teal H₃O⁺ tokens drop in and only the outer layer of particles reacts (each leaving bubbles), the inside stays packed; tag \"reacts only at the surface\". On \"too early\" a coded indicator swatch beside the lens flips to its acid colour while most of the solid remains (C13 swatch style), then",
+        "explain",
+        "the board clears. The solid-surface lens opens centre: a tablet cross-section of packed amber CaCO₃ particles in pale blue water. On \"surface\" teal H₃O⁺ tokens drop in and only the outer layer of particles reacts (each leaving bubbles), the inside stays packed; tag \"reacts only at the surface\". On \"too early\" a coded indicator swatch beside the lens flips to its acid colour while most of the solid remains (C13 swatch style), then slowly flips back as another layer reacts; the `m6-clip-phenolphthalein` pair swaps forward and back once, small; chip \"endpoint before the solid has reacted\". On \"carbonic acid\" small bubbles in the lens partly dissolve, tag \"CO₂ dissolves → H₂CO₃: blurs the endpoint\" (dims). Bright at the end: the lens, the chip and the tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "token flight",
+            "Cam lens zoom"
+        ],
+        "Hold about 1 second"
+    ],
+    "back-titration-idea": [
+        "new",
+        "the board clears.",
+        "The back titration idea: The fix is a back titration.",
+        "back titration / excess / left over",
+        "On the spoken cues: Heading tag \"back titration\". On \"excess\" a pipette icon (coded outline, from C12) delivers into the flask and the moles bar draws across the top: \"acid added (measured)\" in teal-edged outline; the crushed tablet in the flask dissolves completely as a timer icon turns (tag \"excess: more than the sample can use\"). On \"left over\" the bar splits: an amber part \"used by the tablet\" and a navy part \"left over\"; the",
+        "explain",
+        "the board clears. Heading tag \"back titration\". On \"excess\" a pipette icon (coded outline, from C12) delivers into the flask and the moles bar draws across the top: \"acid added (measured)\" in teal-edged outline; the crushed tablet in the flask dissolves completely as a timer icon turns (tag \"excess: more than the sample can use\"). On \"left over\" the bar splits: an amber part \"used by the tablet\" and a navy part \"left over\"; the burette with navy NaOH titrates into the flask and a bracket under the navy part writes \"measured by the titration\". On \"the difference\" the amber part brightens with a \"?\" that becomes \"added − left over\". Bright at the end: the moles bar with its two labels and the bracket. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "boil-off-co2": [
+        "adjust",
+        "the moles bar stays small at the top.",
+        "Drive off the carbon dioxide: One step comes before that second titration.",
+        "dissolved / bigger / boiled",
+        "On the spoken cues: On \"dissolved\" a lens over the flask shows a few grey CO₂ molecules among the ions, tagged \"H₂CO₃\". On \"bigger\" violet OH⁻ tokens react with them; the navy \"left over\" part of the bar stretches too long and the amber \"used\" part shrinks, tag \"CO₂ uses NaOH: leftover looks bigger, CaCO₃ too small\" (dims). On \"boiled\" `m6-conical-flask-hotplate-v1.png` slides in; the CO₂ molecules rise out of the lens and the bar's",
+        "explain",
+        "the moles bar stays small at the top. On \"dissolved\" a lens over the flask shows a few grey CO₂ molecules among the ions, tagged \"H₂CO₃\". On \"bigger\" violet OH⁻ tokens react with them; the navy \"left over\" part of the bar stretches too long and the amber \"used\" part shrinks, tag \"CO₂ uses NaOH: leftover looks bigger, CaCO₃ too small\" (dims). On \"boiled\" `m6-conical-flask-hotplate-v1.png` slides in; the CO₂ molecules rise out of the lens and the bar's parts return to their true sizes; chip \"boil off CO₂, cool, then titrate\". Bright at the end: the hotplate plate, the corrected bar and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "chip pop",
+            "token flight",
+            "Cam lens zoom",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "we-added-left": [
+        "adjust",
+        "the board clears to the three zones.",
+        "Worked example: acid added and acid left over: Here's one tablet, worked through.",
+        "zero point zero one two five zero / zero point zero zero four six zero / moles",
+        "On the spoken cues: Task line: \"Find the mass and % of CaCO₃ in the tablet\". Strip: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\" and below it, small, \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". Givens card: \"tablet: 0.620 g\" | \"HCl added: 25.00 mL, 0.5000 mol/L\" | \"NaOH for the leftover: 18.40 mL, 0.250 mol/L\" | \"M(CaCO₃) = 100.1 g/mol\". `m6-antacid-tablets-v1.png` small at the right. Step chip \"Step 1 of 4: acid added\". On \"zero",
+        "explain",
+        "the board clears to the three zones. Task line: \"Find the mass and % of CaCO₃ in the tablet\". Strip: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\" and below it, small, \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". Givens card: \"tablet: 0.620 g\" | \"HCl added: 25.00 mL, 0.5000 mol/L\" | \"NaOH for the leftover: 18.40 mL, 0.250 mol/L\" | \"M(CaCO₃) = 100.1 g/mol\". `m6-antacid-tablets-v1.png` small at the right. Step chip \"Step 1 of 4: acid added\". On \"zero point zero one two five zero\" the HCl row relights and the line \"n(HCl added) = 0.5000 mol/L × 0.02500 L = 1.250 × 10⁻² mol\" writes; the moles bar's whole length labels it. Step chip \"Step 2 of 4: acid left over\". On \"zero point zero zero four six zero\" the row dims, the NaOH row relights and the line \"n(HCl left) = n(NaOH) = 0.250 mol/L × 0.01840 L = 4.60 × 10⁻³ mol\" writes; the navy part labels it (the step 1 line dims to a kept chip \"added: 1.250 × 10⁻² mol\"). On \"moles\" a chip \"25.00 mL − 18.40 mL = 6.60 mL ?\" fades in and is crossed (caption \"different concentrations: subtract moles\"), then dims. Bright at the end: the kept chip, the step 2 line and the moles bar. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "we-used-mass": [
+        "new",
+        "step chip \"Step 3 of 4: acid used\".",
+        "Worked example: acid used, the ratio, mass and percentage: Step three: the tablet used the difference, zero point zero zero seven nine zero moles of acid.",
+        "zero point zero zero seven nine zero / two / zero point three nine five / sixty three point eight",
+        "On the spoken cues: On \"zero point zero zero seven nine zero\" the line \"n(HCl used) = 1.250 × 10⁻² − 4.60 × 10⁻³ = 7.90 × 10⁻³ mol\" writes and the amber part of the bar labels it (small grey tag \"both to 10⁻⁵ mol → 3 s.f.\", dims). Step chip \"Step 4 of 4: ratio, mass, %\". On \"two\" the strip's \"CaCO₃ : 2HCl\" pulses and \"n(CaCO₃) = 7.90 × 10⁻³ ÷ 2 = 3.95 × 10⁻³ mol\" writes (earlier lines dim; the \"used\" line stays as a kept chip). On",
+        "explain",
+        "step chip \"Step 3 of 4: acid used\". On \"zero point zero zero seven nine zero\" the line \"n(HCl used) = 1.250 × 10⁻² − 4.60 × 10⁻³ = 7.90 × 10⁻³ mol\" writes and the amber part of the bar labels it (small grey tag \"both to 10⁻⁵ mol → 3 s.f.\", dims). Step chip \"Step 4 of 4: ratio, mass, %\". On \"two\" the strip's \"CaCO₃ : 2HCl\" pulses and \"n(CaCO₃) = 7.90 × 10⁻³ ÷ 2 = 3.95 × 10⁻³ mol\" writes (earlier lines dim; the \"used\" line stays as a kept chip). On \"zero point three nine five\" the M row relights and \"m = 3.95 × 10⁻³ mol × 100.1 g/mol = 0.3954 g → 0.395 g\" writes (small grey tag \"keep a guard digit for the next step\", dims). On \"sixty three point eight\" the tablet row relights and \"% CaCO₃ = 0.3954 g ÷ 0.620 g × 100 = 63.8%\" writes; answer chip \"0.395 g CaCO₃; 63.8% by mass\". On \"binder\" a small pie beside the tablet plate fills 63.8% amber, the rest grey \"other ingredients\". Bright at the end: the % line, the answer chip and the pie. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "hidden-endpoint": [
+        "adjust",
+        "the board clears.",
+        "A hidden endpoint: use a conductivity meter: Now the red wine vinegar.",
+        "conductivity meter / V / bend",
+        "On the spoken cues: `m6-red-wine-vinegar-bottle-v1.png` small at the left, a coded flask beside it filled deep red with a magenta drop vanishing (tag \"indicator hidden\"). On \"conductivity meter\" `m6-conductivity-meter-titration-v1.png` slides in centre-right, its beaker coded deep red, readout ticking on its blank screen; tag \"reads ions, not colour\"; a small grey tag \"back titration doesn't help here: the colour stays in the flask\"",
+        "explain",
+        "the board clears. `m6-red-wine-vinegar-bottle-v1.png` small at the left, a coded flask beside it filled deep red with a magenta drop vanishing (tag \"indicator hidden\"). On \"conductivity meter\" `m6-conductivity-meter-titration-v1.png` slides in centre-right, its beaker coded deep red, readout ticking on its blank screen; tag \"reads ions, not colour\"; a small grey tag \"back titration doesn't help here: the colour stays in the flask\" (dims; new correction 1). On \"V\" a C14 thumbnail of the hydrochloric acid V draws small at the top (grey tag \"strong acid: minimum\"); on \"bend\" a second thumbnail of the ethanoic acid bend draws beside it (grey tag \"weak acid: bend\"). Bright at the end: the meter plate and the two thumbnails. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "lines-cross": [
+        "new",
+        "the thumbnails dim.",
+        "Two straight lines, and where they cross: Add the sodium hydroxide in equal portions, read the meter after each, and plot the points.",
+        "straight line / steeper / between / cross",
+        "On the spoken cues: The conductivity lineGraph draws centre (author note c axes). The dose counter ticks 1.00 mL at a time and a white point drops onto the graph for each portion, with the ion tally beside it adding grey Na⁺ and grey-violet ethanoate tokens in equal groups (one group per portion). On \"straight line\" the best-fit ruler lays along the points from 2 to 7 mL and draws a pale blue line, extended. On \"steeper\" violet OH⁻",
+        "explain",
+        "the thumbnails dim. The conductivity lineGraph draws centre (author note c axes). The dose counter ticks 1.00 mL at a time and a white point drops onto the graph for each portion, with the ion tally beside it adding grey Na⁺ and grey-violet ethanoate tokens in equal groups (one group per portion). On \"straight line\" the best-fit ruler lays along the points from 2 to 7 mL and draws a pale blue line, extended. On \"steeper\" violet OH⁻ tokens add in equal groups as points climb faster, and the ruler draws a violet line through the 10 to 16 mL points, extended back. On \"first points\" the 0 and 1 mL points pulse grey (tag \"curved at the start: leave out\", dims). On \"between\" a small bracket spans the gap between the 8 and 9 mL points (tag \"no reading lands on equivalence\", dims). On \"cross\" a ring sits where the lines meet and a dashed line drops to the x axis; chip \"equivalence: where the lines cross\". Bright at the end: the two lines, the ring and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "token flight",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "dilution": [
+        "new",
+        "the graph shrinks to the right.",
+        "Why dilution matters: There's one catch.",
+        "dilutes / water / concentrated / corrected",
+        "On the spoken cues: The dilution sleeve draws at the left: a coded beaker with a small volume; on \"dilutes\" each portion raises the level a lot and the ion tokens spread apart, while a small pair of lines beside it sags into curves (tag \"shape: the ions and the dilution\"). On \"water\" the beaker starts full (\"+ water: same moles of acid\"), and each portion now raises the level only slightly (tag \"small fraction of the volume\"). On",
+        "explain",
+        "the graph shrinks to the right. The dilution sleeve draws at the left: a coded beaker with a small volume; on \"dilutes\" each portion raises the level a lot and the ion tokens spread apart, while a small pair of lines beside it sags into curves (tag \"shape: the ions and the dilution\"). On \"water\" the beaker starts full (\"+ water: same moles of acid\"), and each portion now raises the level only slightly (tag \"small fraction of the volume\"). On \"concentrated\" the portions shrink and the small lines straighten; tag \"large volume, concentrated titrant\". On \"corrected\" a grey tag \"or correct each reading for the volume added\" writes and the main graph's axis label gains \"(corrected for volume added)\". Bright at the end: the sleeve, the straight pair and the tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "token flight",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "vinegar-reading": [
+        "adjust",
+        "the graph returns large with its two lines.",
+        "Reading the vinegar's concentration: Here, ten point zero zero millilitres of the vinegar was topped up with water and titrated with one point zero zero moles per litre sodium hydroxide.",
+        "eight point two zero / zero point zero zero eight two zero / vinegar / zero point eight two zero",
+        "On the spoken cues: Task line: \"Find c(CH₃COOH) in the vinegar\". A short givens strip under it: \"vinegar: 10.00 mL (+ water)\" | \"NaOH: 1.00 mol/L\". On \"eight point two zero\" the ring pulses and the drop line labels \"8.20 mL\". On \"zero point zero zero eight two zero\" the line \"n(CH₃COOH) = n(NaOH) = 1.00 mol/L × 0.00820 L = 8.20 × 10⁻³ mol\" writes (strip \"CH₃COOH + NaOH → CH₃COONa + H₂O\" small above it, 1 : 1). On \"vinegar\" the \"10.00",
+        "explain",
+        "the graph returns large with its two lines. Task line: \"Find c(CH₃COOH) in the vinegar\". A short givens strip under it: \"vinegar: 10.00 mL (+ water)\" | \"NaOH: 1.00 mol/L\". On \"eight point two zero\" the ring pulses and the drop line labels \"8.20 mL\". On \"zero point zero zero eight two zero\" the line \"n(CH₃COOH) = n(NaOH) = 1.00 mol/L × 0.00820 L = 8.20 × 10⁻³ mol\" writes (strip \"CH₃COOH + NaOH → CH₃COONa + H₂O\" small above it, 1 : 1). On \"vinegar\" the \"10.00 mL\" given pulses (tag \"divide by the vinegar's volume: water adds no acid\", dims). On \"zero point eight two zero\" \"c = 8.20 × 10⁻³ mol ÷ 0.01000 L = 0.820 mol/L\" writes; answer chip \"c(CH₃COOH) = 0.820 mol/L\" with `m6-red-wine-vinegar-bottle-v1.png` small beside it. Bright at the end: the ring with \"8.20 mL\", the c line and the answer chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So here's what to remember.",
+        "Back titration: total minus leftover. / read where the lines cross",
+        "On the spoken cues: The aid writes large and handwritten: \"Back titration: total minus leftover.\" with the moles bar icon splitting into \"used\" and \"left\". Condition tag in grey: \"in moles; then the mole ratio\". On \"read where the lines cross\" the second line writes: \"Conductivity: read where the lines cross.\" with a tiny thumbnail of the scene 8 graph. Each earlier line dims slightly as the next writes.",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"Back titration: total minus leftover.\" with the moles bar icon splitting into \"used\" and \"left\". Condition tag in grey: \"in moles; then the mole ratio\". On \"read where the lines cross\" the second line writes: \"Conductivity: read where the lines cross.\" with a tiny thumbnail of the scene 8 graph. Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A zero point five zero zero",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A 0.500 g antacid tablet containing aluminium hydroxide was crushed and added to 40.00 mL of 0.4000 mol/L hydrochloric acid, an excess. After the reaction was complete, the leftover acid required 21.60 mL of 0.2000 mol/L sodium hydroxide. Al(OH)₃(s) + 3HCl(aq) → AlCl₃(aq) + 3H₂O(l). M(Al(OH)₃) = 78.00 g/mol. Calculate the percentage by mass of aluminium hydroxide in the tablet.\" `m6-antacid-tablets-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no moles bar, no step chips, no aid.",
+        [
+            "chip pop",
+            "bar fill",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "zero point zero one one six eight / three / zero point three zero four / sixty point seven / impossible",
+        "On the spoken cues: The moles bar draws beside it. On \"zero point zero one one six eight\" \"40.00 mL\", \"0.4000 mol/L\", \"21.60 mL\" and \"0.2000 mol/L\" are underlined and three lines write in turn: \"added: 0.4000 × 0.04000 = 1.600 × 10⁻² mol\", \"left: 0.2000 × 0.02160 = 4.320 × 10⁻³ mol\", \"used: 1.600 × 10⁻² − 4.320 × 10⁻³ = 1.168 × 10⁻² mol\" (the first two dim). On \"three\" \"3HCl\" is underlined and \"n(Al(OH)₃) = 1.168 × 10⁻² ÷ 3 = 3.893 ×",
+        "explain",
+        "the question card stays, shrunk to the top. The moles bar draws beside it. On \"zero point zero one one six eight\" \"40.00 mL\", \"0.4000 mol/L\", \"21.60 mL\" and \"0.2000 mol/L\" are underlined and three lines write in turn: \"added: 0.4000 × 0.04000 = 1.600 × 10⁻² mol\", \"left: 0.2000 × 0.02160 = 4.320 × 10⁻³ mol\", \"used: 1.600 × 10⁻² − 4.320 × 10⁻³ = 1.168 × 10⁻² mol\" (the first two dim). On \"three\" \"3HCl\" is underlined and \"n(Al(OH)₃) = 1.168 × 10⁻² ÷ 3 = 3.893 × 10⁻³ mol\" writes. On \"zero point three zero four\" \"78.00 g/mol\" is underlined and \"m = 3.893 × 10⁻³ × 78.00 = 0.3037 g → 0.304 g\" writes. On \"sixty point seven\" \"0.500 g\" is underlined and \"% = 0.3037 ÷ 0.500 × 100 = 60.7%\" writes; answer chip \"60.7% Al(OH)₃\". On \"impossible\" a chip \"no ÷ 3: 182%\" fades in and is crossed (caption \"over 100%: check the ratio\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card: \"0.100 mol/L sulfuric acid was added from a burette to 50.00 mL of barium hydroxide solution, and the conductivity was measured after each 1.0 mL.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Zero point one zero zero moles",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card: \"0.100 mol/L sulfuric acid was added from a burette to 50.00 mL of barium hydroxide solution, and the conductivity was measured after each 1.0 mL. The graph shows the results (corrected for the volume added). Ba(OH)₂(aq) + H₂SO₄(aq) → BaSO₄(s) + 2H₂O(l). (a) Explain why the conductivity falls almost to zero. (b) Use the graph to calculate the concentration of the barium hydroxide solution.\" The coded graph beside it (author note d): x \"volume of 0.100 mol/L H₂SO₄ added (mL)\" 0 to 20 with grid lines every 1 mL, y \"conductivity (relative, corrected for volume added)\" with no numbers, 21 white points, no lines drawn. `m6-conductivity-meter-titration-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ruler, no ion tally, no aid.",
+        [
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the question card stays.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "water / barium sulfate / twelve point five / zero point zero two five zero / slip",
+        "On the spoken cues: On \"water\" \"falls almost to zero\" is underlined and an ion tally beside the graph shows violet OH⁻ tokens pairing with teal H₃O⁺ into water; on \"barium sulfate\" pale gold Ba²⁺ and slate SO₄²⁻ tokens drop to the bottom as a white solid (tag \"both ions leave the solution\"). On \"excess acid\" teal and slate tokens add on top. On \"twelve point five\" the best-fit ruler draws lines through 0 to 10 mL and 14 to 20 mL, a",
+        "explain",
+        "the question card stays. On \"water\" \"falls almost to zero\" is underlined and an ion tally beside the graph shows violet OH⁻ tokens pairing with teal H₃O⁺ into water; on \"barium sulfate\" pale gold Ba²⁺ and slate SO₄²⁻ tokens drop to the bottom as a white solid (tag \"both ions leave the solution\"). On \"excess acid\" teal and slate tokens add on top. On \"twelve point five\" the best-fit ruler draws lines through 0 to 10 mL and 14 to 20 mL, a ring sits at the crossing and drops to \"12.5 mL\"; on \"zero point zero two five zero\" \"0.100 mol/L\" and \"50.00 mL\" are underlined and \"c(Ba(OH)₂) = (0.100 mol/L × 0.0125 L) ÷ 0.05000 L = 0.0250 mol/L\" writes; answer chip \"0.0250 mol/L\". On \"slip\" a chip \"12.0 mL, the lowest point measured\" fades in and is crossed (caption \"read where the lines cross\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "token flight",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the question card writes, each line lighting on its words: \"1 Insoluble or slow solid → back titration.\"",
+        "Decision rule and handoff: So when a direct titration won't work: if the sample is an insoluble or slow solid, back titrate.",
+        "Next",
+        "On the spoken cues: \"2 Add a measured excess, let the sample react, titrate what is left.\" \"3 If the reaction makes CO₂: drive it off and cool the flask before the back titre.\" \"4 Subtract moles; use the reaction ratio.\" \"5 Colour or cloudiness hides the endpoint → conductivity meter.\" \"6 Equivalence: where the two best-fit lines cross.\" Earlier lines dim as each new one lights. On \"Next\" a chip \"Next: curves, indicators and back",
+        "explain",
+        "the question card writes, each line lighting on its words: \"1 Insoluble or slow solid → back titration.\" \"2 Add a measured excess, let the sample react, titrate what is left.\" \"3 If the reaction makes CO₂: drive it off and cool the flask before the back titre.\" \"4 Subtract moles; use the reaction ratio.\" \"5 Colour or cloudiness hides the endpoint → conductivity meter.\" \"6 Equivalence: where the two best-fit lines cross.\" Earlier lines dim as each new one lights. On \"Next\" a chip \"Next: curves, indicators and back titration practice\" appears with small thumbnails of a pH curve and the moles bar. Hold about 2 seconds. (Revision 3, Codex check 92: the CO₂ line is conditional; attempt 1's aluminium hydroxide makes no CO₂.) Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6C16_ROWS = {
+    "hook": [
+        "adjust",
+        "four plates arrive in a row across the bench line, each on its cue: `m6-vinegar-bottle-v1.png`, `m6-antacid-tablets-v1.png`, `m6-red-wine-glass-v1.png`, `m6-wastewater-outlet-probe-v1.png`.",
+        "Hook (four samples, four methods): Four samples, all needing an acid-base analysis: a bottle of white vinegar, an antacid tablet, a glass of red wine, and the water flowing out of a factory pipe.",
+        "white vinegar / antacid tablet / red wine / pipe",
+        "On the spoken cues: On \"a pH probe\" four method chips write in a row above them, unmatched: \"pH probe\", \"direct titration\", \"back titration\", \"conductivity titration\", each with a tiny icon (probe, burette, moles bar from C15, crossing lines from C15). Dashed lines flicker between chips and samples without settling. Heading writes first: \"Which method, and what does it tell you?\" and dims to grey as the chips write; the chips lead with",
+        "explain",
+        "four plates arrive in a row across the bench line, each on its cue: `m6-vinegar-bottle-v1.png`, `m6-antacid-tablets-v1.png`, `m6-red-wine-glass-v1.png`, `m6-wastewater-outlet-probe-v1.png`. On \"a pH probe\" four method chips write in a row above them, unmatched: \"pH probe\", \"direct titration\", \"back titration\", \"conductivity titration\", each with a tiny icon (probe, burette, moles bar from C15, crossing lines from C15). Dashed lines flicker between chips and samples without settling. Heading writes first: \"Which method, and what does it tell you?\" and dims to grey as the chips write; the chips lead with their icons and two-word labels. Bright at the end: the four chips, with the four sample plates (no text) beneath them. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "ph-or-amount": [
+        "adjust",
+        "the board clears.",
+        "PH or amount?: Start with what you need to know.",
+        "pH / total / every",
+        "On the spoken cues: The question fork draws at the left. On \"pH\" the upper teal branch writes \"pH: how acidic now?\" and ends at `m6-ph-meter-probe-beaker-v1.png`, its readout \"2.40\". On \"total\" the lower navy branch writes \"amount: how much in total?\" and ends at a burette icon. On \"every\" a C08 lens opens over the beaker (vinegar, `m6-vinegar-bottle-v1.png` small beside it): almost all amber-outlined whole molecules, a few teal ion",
+        "explain",
+        "the board clears. The question fork draws at the left. On \"pH\" the upper teal branch writes \"pH: how acidic now?\" and ends at `m6-ph-meter-probe-beaker-v1.png`, its readout \"2.40\". On \"total\" the lower navy branch writes \"amount: how much in total?\" and ends at a burette icon. On \"every\" a C08 lens opens over the beaker (vinegar, `m6-vinegar-bottle-v1.png` small beside it): almost all amber-outlined whole molecules, a few teal ion pairs lit; tag \"probe senses these\" on the lit ions; then all the molecules light at once, tag \"a titration reacts all of these\" (grey tag \"titration video\", dims); on \"zero point eight eight\" a chip writes \"pH 2.40, yet about 0.88 mol/L (under 1% ionised)\" (author note d). Bright at the end: the two branch labels and the lens. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "probe-measures": [
+        "adjust",
+        "the board clears.",
+        "What a pH probe measures: A pH probe is a digital instrument with a thin glass bulb at its tip.",
+        "glass bulb / voltage / fifty nine millivolts",
+        "On the spoken cues: `m6-ph-meter-probe-beaker-v1.png` large at the right. On \"glass bulb\" the glass-bulb lens opens on the probe's tip: a thin curved glass wall, sample solution outside. On \"voltage\" teal H₃O⁺ tokens gather at the outer surface and a coded needle on the meter's screen moves; tag \"hydronium at the glass → voltage\" (grey tag \"not an indicator: no colour\", dims). On \"converts it\" the meter's coded screen shows \"mV\"",
+        "explain",
+        "the board clears. `m6-ph-meter-probe-beaker-v1.png` large at the right. On \"glass bulb\" the glass-bulb lens opens on the probe's tip: a thin curved glass wall, sample solution outside. On \"voltage\" teal H₃O⁺ tokens gather at the outer surface and a coded needle on the meter's screen moves; tag \"hydronium at the glass → voltage\" (grey tag \"not an indicator: no colour\", dims). On \"converts it\" the meter's coded screen shows \"mV\" turning into \"pH 2.40\". On \"fifty nine millivolts\" a scale beside the lens draws steps \"pH 3 | pH 4 | pH 5\" with brackets \"≈ 59 mV each (25 °C)\"; on \"dark or cloudy\" the beaker's coded liquid darkens to red and the readout stays steady (tag \"reads voltage, not colour\"). Bright at the end: the lens, the scale and the readout. Hold about 1 second. Hold about 1 second.",
+        [
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "calibration": [
+        "adjust",
+        "the lens shrinks.",
+        "Calibrating with two buffers: But the meter has to be told which voltage means which pH, and that drifts as the glass ages and as the temperature changes.",
+        "drifts / buffers / slope / either side",
+        "On the spoken cues: The calibration line draws centre: a small coded graph, x \"pH\" 2 to 10, y \"voltage (mV)\", no numbers. On \"drifts\" a faint grey line slides and tilts (tag \"glass ages; temperature changes the slope\"). On \"buffers\" two `m6-beaker-v1.png` copies slide in beneath, coded tags \"pH 7.00 buffer\" and \"pH 4.00 buffer\" (grey tag \"buffer video: a buffer holds its pH\", dims). On \"zero point\" the probe icon dips into the pH 7.00",
+        "explain",
+        "the lens shrinks. The calibration line draws centre: a small coded graph, x \"pH\" 2 to 10, y \"voltage (mV)\", no numbers. On \"drifts\" a faint grey line slides and tilts (tag \"glass ages; temperature changes the slope\"). On \"buffers\" two `m6-beaker-v1.png` copies slide in beneath, coded tags \"pH 7.00 buffer\" and \"pH 4.00 buffer\" (grey tag \"buffer video: a buffer holds its pH\", dims). On \"zero point\" the probe icon dips into the pH 7.00 beaker and a pale blue point drops at pH 7, pinning the line's position (label \"zero point\"); a rinse icon (wash bottle outline) plays once; the probe dips into the pH 4.00 beaker. On \"slope\" a second point drops at pH 4 and the line tilts through both (label \"slope: mV per pH unit\"); on \"either side\" tag \"buffers close to your samples, ideally either side; rinse between\". On \"simply wrong\" the faint drifted line reappears beside the true one with a readout \"pH 2.71 ?\" crossed (caption \"uncalibrated\"). Bright at the end: the calibrated line, its two labels and the crossed readout. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "industry-digital": [
+        "adjust",
+        "the board clears.",
+        "Digital instruments in industry: Probes also do jobs a titration can't.",
+        "every few seconds / autotitrator",
+        "On the spoken cues: `m6-wastewater-outlet-probe-v1.png` at the left; on \"every few seconds\" the dosing loop draws beside it: a pH trace against time with two dashed unlabelled limit lines (tag \"continuous\"); on \"drifts\" the trace edges towards the upper limit, a valve icon opens (\"dose acid\"), and the trace returns; tag \"licence range\" on the dashed lines. On \"autotitrator\" the right half shows a coded motor burette over a beaker with",
+        "explain",
+        "the board clears. `m6-wastewater-outlet-probe-v1.png` at the left; on \"every few seconds\" the dosing loop draws beside it: a pH trace against time with two dashed unlabelled limit lines (tag \"continuous\"); on \"drifts\" the trace edges towards the upper limit, a valve icon opens (\"dose acid\"), and the trace returns; tag \"licence range\" on the dashed lines. On \"autotitrator\" the right half shows a coded motor burette over a beaker with the probe, and a small C14 lineGraph draws itself point by point (the ethanoic acid curve, small); a ring sits on the middle of the jump, tag \"finds the jump: no indicator\". Bright at the end: the loop, the curve and its ring. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "which-titration": [
+        "adjust",
+        "the board clears to the question fork; the teal pH branch dims.",
+        "Which titration? let the sample decide: If you need an amount, look at the sample.",
+        "directly / back titrate / meter",
+        "On the spoken cues: The navy \"amount\" branch forks into three, each lighting on its words. On \"directly\" the first branch \"clear, soluble, fast\" ends at a chip \"direct titration + indicator\" with `m6-vinegar-bottle-v1.png` and a small burette, flask and tile group (C12; grey tag \"titration video\", dims). On \"back titrate\" the second branch \"insoluble or slow solid\" ends at \"back titration\" with `m6-antacid-tablets-v1.png` and the C15",
+        "explain",
+        "the board clears to the question fork; the teal pH branch dims. The navy \"amount\" branch forks into three, each lighting on its words. On \"directly\" the first branch \"clear, soluble, fast\" ends at a chip \"direct titration + indicator\" with `m6-vinegar-bottle-v1.png` and a small burette, flask and tile group (C12; grey tag \"titration video\", dims). On \"back titrate\" the second branch \"insoluble or slow solid\" ends at \"back titration\" with `m6-antacid-tablets-v1.png` and the C15 moles bar icon (grey tag \"total minus leftover\", dims). On \"meter\" the third branch \"coloured or cloudy\" ends at \"titrate with a meter\" with two small icons: `m6-ph-meter-probe-beaker-v1.png` (\"pH: find the jump\") and `m6-conductivity-meter-titration-v1.png` (\"conductivity: where the lines cross\"; grey tag \"back and conductivity titrations video\", dims). On \"soft drink\" a small tag under the tree writes \"soft drink: boil off CO₂ first (H₂CO₃ would titrate too)\" (dims). Bright at the end: the three method chips. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "red-wine": [
+        "adjust",
+        "the tree shrinks to the left; `m6-red-wine-glass-v1.png` centre.",
+        "Worked justification: red wine: Try it on the red wine.",
+        "total acid / carbon dioxide / pH probe / together",
+        "On the spoken cues: Task line: \"Red wine: total acid?\". On \"total acid\" the navy \"amount\" branch lights on the small tree. On \"hard to see\" a coded flask of deep red liquid takes a magenta drop that vanishes; the \"coloured or cloudy\" branch lights. On \"carbon dioxide\" a few small grey CO₂ bubbles rise out of the coded flask of wine and leave (tag \"degassed first: dissolved CO₂ would titrate too\", dims; Revision 3, Codex check 92). On",
+        "explain",
+        "the tree shrinks to the left; `m6-red-wine-glass-v1.png` centre. Task line: \"Red wine: total acid?\". On \"total acid\" the navy \"amount\" branch lights on the small tree. On \"hard to see\" a coded flask of deep red liquid takes a magenta drop that vanishes; the \"coloured or cloudy\" branch lights. On \"carbon dioxide\" a few small grey CO₂ bubbles rise out of the coded flask of wine and leave (tag \"degassed first: dissolved CO₂ would titrate too\", dims; Revision 3, Codex check 92). On \"pH probe\" `m6-ph-meter-probe-beaker-v1.png` (beaker coded deep red, tag \"calibrated\") and a small curve drawing until it meets a dashed horizontal line labelled \"endpoint: pH 8.2 (Australian AWRI method)\" (the worked case's chosen convention; a small grey note under it, \"OIV method: pH 7.0\"; author note g), where a ring sits (tag \"endpoint read on the meter\"). On \"titratable acidity\" the tag \"titratable acidity to pH 8.2\" writes under the ring. On \"together\" three small coded tokens labelled \"tartaric\", \"malic\", \"others\" each take violet OH⁻ tokens and merge into one bar \"titratable acidity (total acid)\" (tag \"what the titre establishes\"); then a grey chip \"each acid separately? the pH?\" fades in and is crossed (caption \"not from a titre\"). Bright at the end: the \"titratable acidity (total acid)\" bar, the crossed chip and the wine plate. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "token flight",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "aboriginal-knowledge": [
+        "adjust",
+        "the board clears to a warm neutral ground.",
+        "Aboriginal and Torres Strait Islander knowledge: Acid-base analysis isn't only done with glassware.",
+        "observing / belongs / Module 5 / protons",
+        "On the spoken cues: No map, no place names, no plate of any person, plant preparation or object (Revision 2; see \"Cultural sources and review\"). On \"observing\" a tag writes \"knowledge built and passed on over many generations\". On \"belongs\" a second tag writes \"held by the communities who developed it\" (the first dims). On \"Module 5\" `m5x-cycad-leaching-v1.png` appears as a small thumbnail with a grey tag \"Module 5: cycad leaching uses",
+        "explain",
+        "the board clears to a warm neutral ground. No map, no place names, no plate of any person, plant preparation or object (Revision 2; see \"Cultural sources and review\"). On \"observing\" a tag writes \"knowledge built and passed on over many generations\". On \"belongs\" a second tag writes \"held by the communities who developed it\" (the first dims). On \"Module 5\" `m5x-cycad-leaching-v1.png` appears as a small thumbnail with a grey tag \"Module 5: cycad leaching uses solubility, not acid-base\" (dims). On \"protons\" a C06 strip writes \"acid-H⁺ + base ⇌ acid⁻ + base-H⁺\" (generic words, no named substance) and the C01 proton hop plays once: a teal proton passes from an \"acid\" token to a grey \"base\" token (tag \"a base takes a proton\"). Bright at the end: the second tag, the strip and its tag. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "token flight",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So here's what to remember. pH tells you how acidic; a titration tells you how much.",
+        "pH tells you how acidic; a titration tells you how much.",
+        "On the spoken cues: The aid writes large and handwritten: \"pH tells you how acidic; a titration tells you how much.\" with the question fork icon beside it, teal and navy. Condition tag in grey: \"for weak acids, these give very different numbers\". On \"let the sample decide\" a small three-branch thumbnail of scene 6 writes beneath (\"clear → direct | slow solid → back | coloured → meter\"). Each earlier line dims slightly as the next",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"pH tells you how acidic; a titration tells you how much.\" with the question fork icon beside it, teal and navy. Condition tag in grey: \"for weak acids, these give very different numbers\". On \"let the sample decide\" a small three-branch thumbnail of scene 6 writes beneath (\"clear → direct | slow solid → back | coloured → meter\"). Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A garden supplier wants the percentage",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A garden supplies company wants to determine the percentage by mass of calcium carbonate in a batch of crushed limestone. A technician suggests mixing a sample of the limestone with water and measuring the pH with a calibrated pH probe. (a) Explain why this method would not determine the percentage of calcium carbonate. (b) Recommend a more suitable method and justify your choice.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no fork, no tree, no aid.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "adjust",
+        "the question card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "amount / back titration / direct",
+        "On the spoken cues: On \"amount\" \"mixing ... with water and measuring the pH\" is underlined and a small lens shows a few dissolved ions above a heap of undissolved solid; the fork's teal branch lights with tag \"pH: not an amount\". On \"back titration\" \"percentage by mass\" and \"crushed limestone\" are underlined; `m6-marble-chips-acid-v1.png` small with tag \"slow, insoluble solid\"; the tree's \"back titration\" chip lights with the C15 moles",
+        "explain",
+        "the question card stays, shrunk to the top. On \"amount\" \"mixing ... with water and measuring the pH\" is underlined and a small lens shows a few dissolved ions above a heap of undissolved solid; the fork's teal branch lights with tag \"pH: not an amount\". On \"back titration\" \"percentage by mass\" and \"crushed limestone\" are underlined; `m6-marble-chips-acid-v1.png` small with tag \"slow, insoluble solid\"; the tree's \"back titration\" chip lights with the C15 moles bar (tag \"acid used ÷ 2 → n(CaCO₃) → %\"); answer chip \"back titration\". On \"direct\" a chip \"direct titration with HCl\" fades in and is crossed (caption \"too slow: endpoint before the solid reacts\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "Cam lens zoom",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card: \"Aspirin (acetylsalicylic acid) is a monoprotic acid.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Aspirin is a monoprotic acid, and",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card: \"Aspirin (acetylsalicylic acid) is a monoprotic acid. A pharmacist checks the aspirin content of tablets by dissolving each tablet in a mixture of ethanol and water and titrating it with standard sodium hydroxide solution. In old tablets, some of the aspirin has reacted with water. Each aspirin molecule that reacts forms one molecule of ethanoic acid and one molecule of salicylic acid, and both act as monoprotic acids in the titration. Explain whether the titration would give an aspirin content for an old tablet that is too high or too low.\" `m6-aspirin-tablets-v1.png` small at the top right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no tokens, no aid.",
+        [
+            "token flight",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the question card stays.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "high / two / total / acid",
+        "On the spoken cues: On \"high\" answer chip \"too high\". On \"two\" \"one molecule of ethanoic acid and one molecule of salicylic acid\" and \"both act as monoprotic acids\" are underlined; one aspirin token splits into two acid tokens (\"ethanoic\", \"salicylic\"), and each takes a violet OH⁻ token, beside an intact aspirin token taking one (tag \"1 aspirin: 1 OH⁻ | broken down: 2 OH⁻\"). On \"total\" the scene 7 \"total acid\" bar icon returns small",
+        "explain",
+        "the question card stays. On \"high\" answer chip \"too high\". On \"two\" \"one molecule of ethanoic acid and one molecule of salicylic acid\" and \"both act as monoprotic acids\" are underlined; one aspirin token splits into two acid tokens (\"ethanoic\", \"salicylic\"), and each takes a violet OH⁻ token, beside an intact aspirin token taking one (tag \"1 aspirin: 1 OH⁻ | broken down: 2 OH⁻\"). On \"total\" the scene 7 \"total acid\" bar icon returns small (tag \"a titre counts total acid\"). On \"acid\" a chip \"too low: less aspirin\" fades in and is crossed (caption \"the acid is still there, in two pieces\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "token flight",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the question card writes, each line lighting on its words: \"1 pH (how acidic now) or amount (how much in total)?\"",
+        "Decision rule and handoff: So for any sample, ask two questions.",
+        "Next",
+        "On the spoken cues: \"2 pH → calibrated probe (two buffers).\" \"3 Amount → titrate: clear and fast → direct; slow solid → back; coloured or cloudy → pH or conductivity meter.\" \"4 State what it measures: pH, or total acid (not which acid).\" On \"Next\" a chip \"Next: analyse a household sample\" appears with small `m6-vinegar-bottle-v1.png` and `m6-antacid-tablets-v1.png`.",
+        "explain",
+        "the question card writes, each line lighting on its words: \"1 pH (how acidic now) or amount (how much in total)?\" \"2 pH → calibrated probe (two buffers).\" \"3 Amount → titrate: clear and fast → direct; slow solid → back; coloured or cloudy → pH or conductivity meter.\" \"4 State what it measures: pH, or total acid (not which acid).\" On \"Next\" a chip \"Next: analyse a household sample\" appears with small `m6-vinegar-bottle-v1.png` and `m6-antacid-tablets-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+# END generated rows: m6c15-m6c16
+
+
 LESSONS = {
     'c5': {
         'design': D + 'lessons/chem-m5-c05.md',
@@ -8068,6 +8590,35 @@ LESSONS = {
         'rows': SKILLS04_ROWS,
     },
     # END generated entries: m6c13-m6c14, skills03, skills04
+    # BEGIN generated entries: m6c15-m6c16
+    'm6c15': {
+        'design': D + 'lessons/chem-m6-c15.md',
+        'learning_review': D + 'checks/m6c15-learning-review.md',
+        'science_check': D + 'checks/m6c15-claude-science-check.md',
+        'meta': {"title": "When are back and conductometric titrations useful? A slow solid, a hidden endpoint, total minus leftover, and where the lines cross", "subtitle": "A crushed antacid tablet fizzes away slowly in acid, and a dark red vinegar hides any indicator. When a direct titration can't give a clear endpoint, how do back titrations and conductivity titrations still find the amount, and how do you read their results?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 24, "lessonIntent": "explaining why a direct titration of an insoluble, slow-reacting solid such as calcium carbonate gives an unreliable endpoint; describing a back titration and why carbon dioxide, when the reaction makes it, is boiled off before the back titre; calculating a mass and percentage by mass from back titration data, subtracting moles and using the mole ratio; explaining when a conductivity titration is useful; reading equivalence where two best-fit lines cross, and saying why dilution bends the lines and how it is kept small; calculating a concentration from the crossing volume. No method choice across pH probes and titrations (chem-m6-c16), no Kjeldahl, no weak/weak conductometric curves, no error-direction tables (chem-m6-g04), no aliquot scale-up (chem-m6-g03)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "direct-fails", "back-titration-idea", "boil-off-co2", "we-added-left", "we-used-mass", "hidden-endpoint", "lines-cross", "dilution", "vinegar-reading", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "C14 (conductivity graphs: hydrochloric acid with sodium hydroxide falls to a minimum, then rises; ethanoic acid rises gently, then more steeply, with a bend at equivalence; hydronium and hydroxide conduct best). C13 (endpoint against equivalence point; an indicator's colour must be seen). C12 (titration, standard solution, pipette, burette, titre, n = cV, the four-step calculation, a titration counts every acid molecule; concordant titres). C03 (net ionic equation for neutralisation; spectator ions). Module 5 C13 (barium sulfate is insoluble). Year 11 (n = m ÷ M, percentage by mass, carbonates react with acid to give carbon dioxide). Not assumed: back titration, excess reagent as a method, conductometric titration as a method, line-intersection reading, dilution correction.", "startsWith": "Start with an unsuitable direct endpoint or insoluble sample. The video opens: This antacid tablet is mostly calcium carbonate, a base. So why not just titrate it with hydrochloric acid? Try it, and the tablet sits in the flask, fizzing slowly, and the indicator changes colour while solid is still left.", "stopsAfter": "explaining why a direct titration of an insoluble, slow-reacting solid such as calcium carbonate gives an unreliable endpoint; describing a back titration and why carbon dioxide, when the reaction makes it, is boiled off before the back titre; calculating a mass and percentage by mass from back titration data, subtracting moles and using the mole ratio; explaining when a conductivity titration is useful; reading equivalence where two best-fit lines cross, and saying why dilution bends the lines and how it is kept small; calculating a concentration from the crossing volume. No method choice across pH probes and titrations (chem-m6-c16), no Kjeldahl, no weak/weak conductometric curves, no error-direction tables (chem-m6-g04), no aliquot scale-up (chem-m6-g03).", "nextLesson": "practice with titration curves, indicators and back titrations (route chem-m6-g04)."},
+        'teaching': {"task": "A crushed antacid tablet fizzes away slowly in acid, and a dark red vinegar hides any indicator. When a direct titration can't give a clear endpoint, how do back titrations and conductivity titrations still find the amount, and how do you read their results?", "causalExplanation": "(1) a calcium carbonate tablet and a dark red vinegar both defeat a direct titration, for different reasons (1); (2) calcium carbonate barely dissolves, so acid reacts only at the solid's surface; the indicator changes before the solid has reacted, then drifts back; dissolved carbon dioxide blurs the endpoint (2); (3) back titration: a measured excess of standard acid reacts completely; the leftover is titrated; the difference is what the sample used (3); (4) boil off the carbon dioxide first, because it would use sodium hydroxide and make the leftover look bigger (4); (5) acid added and acid left over in moles; subtract moles, not volumes, because the concentrations differ (5); (6) the difference, the 1 : 2 ratio, mass and percentage (6); (7) the vinegar would titrate directly if the endpoint could be seen; a conductivity meter does not depend on colour; recall the V and the bend (7); (8) equal portions make equal changes, so two nearly straight stretches; the first points curve and equivalence falls between readings, so read where the best-fit lines cross (8); (9) every portion dilutes the flask and bends the lines; a large volume made up with water (so each portion is a small fraction of it) and a concentrated titrant keep this small, or readings are corrected (9); (10) the crossing volume gives the moles, divided by the vinegar's own volume (10); memory aid (11); two attempts and brief feedback (12 to 15); decision rule and handoff (16); key notes (17).", "conversationalApproach": "two samples defeat a direct titration for different reasons: a crushed calcium carbonate antacid tablet fizzes away slowly, so the indicator changes while solid is still left, and a dark red wine vinegar hides any indicator colour. The solid-surface lens shows why the tablet fails; the back titration adds a measured excess of standard acid, lets it react completely and titrates what is left, with the carbon dioxide driven off first because this reaction makes it; the moles bar splits into used and left over, and the worked example subtracts moles, uses the 1 : 2 ratio and finds the mass and percentage. The vinegar goes to a conductivity meter: equal portions give two nearly straight stretches, equivalence is read where the best-fit lines cross, and dilution is kept small. Two exam questions follow with brief feedback, and the decision rule makes boiling conditional on carbon dioxide forming.", "openingDecision": "This antacid tablet is mostly calcium carbonate, a base. So why not just titrate it with hydrochloric acid? Try it, and the tablet sits in the flask, fizzing slowly, and the indicator changes colour while solid is still left. A dark red wine vinegar has a different problem: it reacts fast, but the red hides the indicator's colour. So when a direct titration won't work, how do you still find the amount?", "understandingCheck": "(A1) \"A 0.500 g antacid tablet containing aluminium hydroxide was crushed and added to 40.00 mL of 0.4000 mol/L hydrochloric acid, an excess. After the reaction was complete, the leftover acid required 21.60 mL of 0.2000 mol/L sodium hydroxide. Al(OH)₃(s) + 3HCl(aq) → AlCl₃(aq) + 3H₂O(l). M(Al(OH)₃) = 78.00 g/mol. Calculate the percentage by mass of aluminium hydroxide in the tablet.\" New base, new ratio (1 : 3), new numbers. Crossed mistake: \"no ÷ 3: 182%\" (site L18 card 5's ratio error, transferred; the impossible percentage is the check). (A2) \"0.100 mol/L sulfuric acid was added from a burette to 50.00 mL of barium hydroxide solution, and the conductivity was measured after each 1.0 mL. The graph shows the results (corrected for the volume added). (a) Explain why the conductivity falls almost to zero. (b) Use the graph to calculate the concentration of the barium hydroxide solution.\" Ba(OH)₂(aq) + H₂SO₄(aq) → BaSO₄(s) + 2H₂O(l) on the card. Graph: points every 1.0 mL from 0 to 20 mL (author note d), no lines drawn. New system (precipitation removes the cation too), tests reading the crossing. Crossed mistake: \"12.0 mL, the lowest point measured\" (gives 0.0240 mol/L).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" \"investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:; strong acid/strong base; strong acid/weak base; weak acid/strong base (ACSCH080, ACSCH102)\" this video starts from the route's insoluble sample and unsuitable direct endpoint and stops at excess-reagent subtraction and the conductivity intersection. It teaches: why a direct titration of calcium carbonate fails (it barely dissolves, reacts only at the solid's surface, so the indicator changes before the solid has reacted, and dissolved carbon dioxide blurs the endpoint); the back titration (a measured excess of standard acid, complete reaction, boiling off carbon dioxide when the reaction makes it, titrating the leftover acid with standard base); why the carbon dioxide must go (it would use sodium hydroxide, so the leftover acid looks bigger and the carbonate too small); the four-step calculation (acid added, acid left over, acid used by subtraction of moles, the mole ratio), then mass and percentage by mass; the conductometric titration as a method for samples whose colour or cloudiness hides an indicator; why the readings form two nearly straight stretches (each equal portion of titrant makes the same ion change before equivalence, and adds the same excess after it); reading equivalence where the two best-fit lines cross, rather than at one measured point; why dilution by the titrant bends the lines and how it is kept small (a large sample volume made up with water, a concentrated titrant, or readings corrected for the volume added); a concentration from the crossing volume. Not here: why the strong acid conductivity falls to a V and the weak acid rises with a bend (chem-m6-c14 scenes 8 and 9; one callback and a thumbnail only); molar conductivity values on screen (not needed; author note e); choosing among a pH probe, a direct titration, a back titration and a conductivity titration for a range of samples, and what each measurement establishes (chem-m6-c16); the Kjeldahl method and back titrations with excess base (one author note); weak acid with weak base conductometric curves (site Extension; author note f); error direction tables beyond the carbon dioxide step (chem-m6-g04); aliquot scale-up from a volumetric flask and percentage by mass from density (chem-m6-g03); bench technique and risk (chem-m6-p06 and the practical videos)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: hydrochloric acid and \"acid added\" teal-edged (C12), the titrant sodium hydroxide navy (C12), \"used by the sample\" amber, \"left over\" navy; H₃O⁺ teal token, OH⁻ violet, Na⁺ and Cl⁻ small grey spectators, ethanoate grey-violet, Ba²⁺ small pale gold, SO₄²⁻ small slate (C01, C03, C14); conductivity points white dots, best-fit lines pale blue (before equivalence) and violet (after). Board layout (constant, C03, C07, C12 and C14): top-left the short task line; the left column holds the givens card during the worked example (grouped, units attached); the centre holds the lens, the bar, the working or the graph, one stage per line, earlier lines dimming; a plate sits small at the right only when it carries the explanation. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 21 Oct): `m6-antacid-tablets-v1.png` (inspected: three chalky white round tablets, one broken with crumbs; no person or hand; hook, scenes 2 and 5, attempt 1, small), `m6-marble-chips-acid-v1.png` (inspected: white carbonate chips fizzing at the bottom of a clear beaker of acid, bubbles rising from their surfaces; scene 2, \"reacts only at the surface\", and the hook's \"fizzing slowly\"), `m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png` and `m6-white-tile-v1.png` (C12 layout; scenes 3 and 5), `m6-clip-phenolphthalein-colourless-v1.png` and `-pink-v1.png` (scene 2's early colour change and drift back, played as a swap), `m6-conductivity-meter-titration-v1.png` (inspected: two probes clamped in a stirred beaker on a magnetic stirrer, a handheld meter with a blank screen, no person or hand; scenes 7 to 10, attempt 2, coded readout on its blank screen). `m6-agricultural-liming-v1.png` was inspected and is not used (it shows a hand). New plates: `m6-red-wine-vinegar-bottle-v1.png` (hook, scenes 7 and 10) and `m6-conical-flask-hotplate-v1.png` (scene 4); see Assets. No human figures.", "transitionPlan": "The burette, flask, tile and tablet plates open the hook with the marble chips inset and the red vinegar beside a vanishing magenta drop; the board clears for the solid-surface lens with its indicator swatch flipping early and back; the pipette and moles bar build the back titration idea and the hotplate plate slides in as the bar returns to its true sizes; the givens card and working lines carry the worked example one stage per line, earlier lines dimming, with kept chips and a crossed volume chip; the conductivity meter plate slides in with two C14 thumbnails; points drop onto the lineGraph with the dose counter and ion tally while the best-fit ruler draws both lines and rings the crossing; the dilution sleeve draws beside the shrunken graph; the vinegar reading writes under the ring; the memory aid writes large; each attempt clears the board and its feedback underlines the givens; the decision rule card lights line by line, earlier lines dimming, then the next chip; scene crossfade with settle."},
+        'rows': M6C15_ROWS,
+    },
+    'm6c16': {
+        'design': D + 'lessons/chem-m6-c16.md',
+        'learning_review': D + 'checks/m6c16-learning-review.md',
+        'science_check': D + 'checks/m6c16-claude-science-check.md',
+        'cultural_review': D + 'checks/m6c16-cultural-review.md',
+        'meta': {"title": "Which acid-base analysis method fits a sample? pH or amount, calibrated probes, the right titration, and what each measurement tells you", "subtitle": "A pH probe, a direct titration, a back titration and a conductivity titration all analyse acids and bases. For a bottle of vinegar, an antacid tablet, a glass of red wine and a factory's waste water, which one fits, and what does each measurement actually tell you?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 26, "lessonIntent": "deciding whether a question asks for a sample's pH or an amount of acid or base; explaining what a pH probe measures and why it is calibrated with two buffers; describing continuous probe monitoring and automatic titration in industry; choosing a direct titration, a back titration, or a titration followed with a pH probe or conductivity meter from a sample's properties, and justifying the choice against an alternative; stating what a titration establishes (total acid, not which acid) and what a probe establishes (pH, not an amount); stating that Aboriginal and Torres Strait Islander chemical knowledge is built by observation and testing, and the acid-base principle any such practice uses. No Nernst calculations, no density or aliquot calculations (chem-m6-g03), no bench analysis or uncertainty (chem-m6-p07)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "ph-or-amount", "probe-measures", "calibration", "industry-digital", "which-titration", "red-wine", "aboriginal-knowledge", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "C15 (back titration for insoluble or slow solids; conductivity titration read where the lines cross, for coloured or cloudy samples). C14 (titration curves; the jump; equivalence in the middle of the jump). C13 (indicators must be seen; endpoint against equivalence). C12 (a titration counts every acid molecule; a weak acid's pH gives its concentration only roughly; n = cV). C11 (buffers have known pH). C08 (a weak acid stays mostly un-ionised). C06 (a base accepts a proton; conjugate pairs). C07 (pH). Module 5 C12 (cycad leaching uses solubility). Not assumed: how a pH probe works, calibration, autotitrators, continuous monitoring, total titratable acid as a phrase.", "startsWith": "Describe a sample and the question to answer. The video opens: Four samples, all needing an acid-base analysis: a bottle of white vinegar, an antacid tablet, a glass of red wine, and the water flowing out of a factory pipe. You've now met the methods you need: a pH probe, a direct titration, a back titration and a conductivity titration. But which one fits each sample, and what does each measurement actually tell you?", "stopsAfter": "deciding whether a question asks for a sample's pH or an amount of acid or base; explaining what a pH probe measures and why it is calibrated with two buffers; describing continuous probe monitoring and automatic titration in industry; choosing a direct titration, a back titration, or a titration followed with a pH probe or conductivity meter from a sample's properties, and justifying the choice against an alternative; stating what a titration establishes (total acid, not which acid) and what a probe establishes (pH, not an amount); stating that Aboriginal and Torres Strait Islander chemical knowledge is built by observation and testing, and the acid-base principle any such practice uses. No Nernst calculations, no density or aliquot calculations (chem-m6-g03), no bench analysis or uncertainty (chem-m6-p07).", "nextLesson": "analysing the acidity or basicity of a household sample in the lab (route chem-m6-p07)."},
+        'teaching': {"task": "A pH probe, a direct titration, a back titration and a conductivity titration all analyse acids and bases. For a bottle of vinegar, an antacid tablet, a glass of red wine and a factory's waste water, which one fits, and what does each measurement actually tell you?", "causalExplanation": "(1) four samples need four methods; choose by asking what you need and what the sample is like (1); (2) pH (how acidic now) against amount (how much in total); a weak acid's pH shows only the ionised fraction, so an amount needs a titration (2); (3) a pH probe turns hydronium at a glass surface into a voltage, about 59 mV per pH unit (3); (4) the voltage-to-pH relationship drifts with ageing and temperature, so two buffers set the zero point and the slope (4); (5) probes suit continuous monitoring and automatic titration (5); (6) for an amount, the sample's properties choose the titration: clear and fast, direct; slow solid, back; coloured or cloudy, follow it with a meter (6); (7) red wine: an amount, fast, dark, so degas it, then titrate to the stated pH endpoint read with a calibrated probe, which gives titratable acidity to that endpoint, not each acid separately and not the pH (7); (8) Aboriginal and Torres Strait Islander Peoples' chemical knowledge is built by observing, testing and passing on results, and belongs to the communities who hold it; cycad leaching (Module 5) is solubility; an acid-base practice rests on a base taking protons (8); memory aid (9); two attempts and brief feedback (10 to 13); decision rule and handoff (14); key notes (15).", "conversationalApproach": "four samples need four methods: white vinegar, an antacid tablet, red wine and factory outlet water. The first question splits the board: is the need the pH, how acidic it is now, or the amount of acid in total? A weak acid lens shows why a pH reading is not an amount; the glass-bulb lens shows how a probe turns hydronium at the glass into a voltage, and the calibration line shows why two buffers set the zero point and the slope; probes then monitor waste water continuously and run autotitrators. For an amount, the sample chooses the titration (direct, back, or followed with a meter), worked through for red wine: degassed first, titrated with standard sodium hydroxide to the stated pH endpoint read with a calibrated probe, giving titratable acidity to that endpoint, not each acid separately. Aboriginal and Torres Strait Islander chemical knowledge is presented at the level of principle, as the owner accepted. Two exam questions follow with brief feedback.", "openingDecision": "Four samples, all needing an acid-base analysis: a bottle of white vinegar, an antacid tablet, a glass of red wine, and the water flowing out of a factory pipe. You've now met the methods you need: a pH probe, a direct titration, a back titration and a conductivity titration. But which one fits each sample, and what does each measurement actually tell you?", "understandingCheck": "(A1) \"A garden supplies company wants to determine the percentage by mass of calcium carbonate in a batch of crushed limestone. A technician suggests mixing a sample of the limestone with water and measuring the pH with a calibrated pH probe. (a) Explain why this method would not determine the percentage of calcium carbonate. (b) Recommend a more suitable method and justify your choice.\" New sample (the video's solid was an antacid tablet), tests both decisions (pH against amount; the sample's properties). Crossed mistake: \"direct titration with HCl\" (the solid reacts too slowly for a clean endpoint; C15). (A2) \"Aspirin (acetylsalicylic acid) is a monoprotic acid. A pharmacist checks the aspirin content of tablets by dissolving each tablet in a mixture of ethanol and water and titrating it with standard sodium hydroxide solution. In old tablets, some of the aspirin has reacted with water. Each aspirin molecule that reacts forms one molecule of ethanoic acid and one molecule of salicylic acid, and both act as monoprotic acids in the titration. Explain whether the titration would give an aspirin content for an old tablet that is too high or too low.\" The syllabus's \"medicine\" example; tests \"what the measurement establishes\" (total acid, not which acid). Crossed mistake: \"too low, because some aspirin has gone\" (site L19 worked example 2's point, inverted).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"explore acid/base analysis techniques that are applied:; in industries; by Aboriginal and Torres Strait Islander Peoples; using digital probes and instruments\" \"conduct a chemical analysis of a common household substance for its acidity or basicity (ACSCH080), for example:; soft drink; wine; juice; medicine\" this video starts from the route's sample and the question to answer and stops at justifying a suitable method and stating what its measurement establishes. It teaches: the first decision (is the question the sample's pH, how acidic it is now, or the amount of acid or base in total?); why a pH reading is not an amount for a weak acid (C12 callback, one sentence and a tag); what a digital pH probe measures (a voltage across a thin glass membrane that depends on hydronium; about 59 mV per pH unit at 25 °C) and why it must be calibrated with two buffers (pH 7.00 sets the zero point, a second buffer sets the slope); digital instruments in industry (continuous pH monitoring with automatic dosing at a treatment plant; the autotitrator that records a pH curve and finds the jump); choosing a titration from the sample's properties (clear, soluble, fast: direct with an indicator; insoluble or slow solid: back titration; coloured or cloudy: follow the titration with a pH probe or a conductivity meter; C12, C13 and C15 callbacks); what a measurement establishes and what it cannot (a titration gives total titratable acid, not which acid; a probe gives pH, not an amount); a worked justification for red wine (the syllabus's wine example) and the medicine example in attempt 2 (aspirin breakdown makes a titration read high); the syllabus's Aboriginal and Torres Strait Islander application, stated as knowledge built by observation and testing and held by communities, with the Module 5 cycad leaching video recalled as a documented solubility technique and the acid-base principle (a base takes protons) stated without a specific practice (Revision 2: no documented, suitable acid-base example was found; owner gap under \"Cultural sources and review\"). Not here: the glass electrode's internal construction, the Nernst equation and calibration arithmetic (site card 1 labelled Extension; author note b); percentage by mass from density and aliquot scale-up (chem-m6-g03); doing the household analysis, its risk assessment and uncertainty (chem-m6-p07, the next video); re-teaching the back titration calculation or the line-crossing reading (chem-m6-c15); the Dornic method, total alkalinity titration and industry specification values (site claims unsourced; new correction 8); soft drink and juice analyses beyond one tag each (chem-m6-p07); acid rain (draft correction)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: the \"pH: how acidic now?\" branch teal (H₃O⁺, C01); the \"amount: how much in total?\" branch navy (the titrant, C12); method chips white-outlined; H₃O⁺ teal token, OH⁻ violet, whole ethanoic acid molecules amber-outlined (C08); the probe's voltage needle and calibration points pale blue. Board layout (constant, C12, C14 and C15): top-left the short task line; the centre holds the question fork, the lens, the calibration line or the decision tree; a plate sits small beside the branch or method it illustrates. Clutter rule: at most three text items bright at once; every label fades when its sentence ends. Reuse: painted plates (inspected 21 Oct): `m6-vinegar-bottle-v1.png` (inspected: plain glass bottle of pale gold vinegar, gold cap, no label; hook, scenes 2 and 6), `m6-antacid-tablets-v1.png` (inspected: chalky white tablets, one broken; hook and scene 6), `m6-ph-meter-probe-beaker-v1.png` (inspected: bench meter with blank screen, probe with blue collar in a beaker of clear liquid, no person; scenes 2 to 4 and 7, coded readout on its blank screen), `m6-beaker-v1.png` (scene 4, two copies with coded tags \"pH 7.00 buffer\" and \"pH 4.00 buffer\"), `m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png` and `m6-white-tile-v1.png` (scene 6's direct branch), `m6-conductivity-meter-titration-v1.png` (scene 6's coloured branch), `m6-marble-chips-acid-v1.png` (feedback 1: carbonate chips fizzing slowly in acid), `m5x-cycad-leaching-v1.png` (inspected: crushed pale kernels in a woven fibre bag in a clear stream; scene 8 thumbnail, the Module 5 callback, as in `chem-m5-c12.md`). New plates: `m6-red-wine-glass-v1.png`, `m6-wastewater-outlet-probe-v1.png` and `m6-aspirin-tablets-v1.png` (see Assets; the pituri plate is dropped in Revision 2). No human figures.", "transitionPlan": "Four sample plates arrive in a row and four method chips write above them with flickering unmatched lines; the board clears to the question fork, whose teal and navy branches end at the probe plate and a burette icon while a C08 lens opens over the vinegar; the glass-bulb lens opens on the probe tip with its needle and millivolt scale; the calibration line pins and tilts as buffer beakers slide in, then a drifted line returns with a crossed readout; the outlet plate and dosing loop draw beside the autotitrator curve; the navy branch forks into three method branches with small plates; the wine plate takes the centre as CO₂ bubbles leave, the probe follows a curve to the labelled pH 8.2 endpoint and acid tokens merge into one bar; scene 8 clears to a warm ground with two tags, the cycad thumbnail and the proton-hop strip; the memory aid writes large; each attempt clears the board and its feedback underlines the card; the decision rule card and next chip close; scene crossfade with settle."},
+        'rows': M6C16_ROWS,
+    },
+    # END generated entries: m6c15-m6c16
 }
 
 
