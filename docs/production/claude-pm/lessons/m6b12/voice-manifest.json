@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B12-claude-2026-10-21-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b12/lesson.json",
+  "lessonSha256": "0511103f33ea8f8d4f7bf45e06779633a3c7e90e3bb996e86dfb872fa442bbb3",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b12/lesson.production-brief.json",
+    "sha256": "5a0073433a9fb63942c8a7ecfae5b24e19be4d653d1d3ac3359b03f4c10c9978"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two rescues. Every Cavendish banana plant is a clone, and the fungus TR4 can kill any of them, so Australian scientists added a resistance gene from a wild banana. And the northern white rhino is down to two females, so scientists are making rhino embryos in the lab. Both use genetic techniques to stop something dying out. But does each one actually increase biodiversity? That depends on which level you look at, and what you compare it with.",
+      "hash": "17444f16c30c",
+      "textSha256": "17444f16c30cb618f6292a95692e156980b12b08866fd0293b8dda02ec550ed6",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/hook.17444f16c30c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/hook.17444f16c30c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/hook.17444f16c30c.generation.json",
+      "plannedRequestSha256": "6f37063095131c3d2131ccfc6e21a7c73464464ee4969c79ad41fbe69ac319ed"
+    },
+    {
+      "id": "three-levels",
+      "parentSceneId": "three-levels",
+      "text": "Biodiversity isn't one number. It has three levels. Genetic diversity is the variety of alleles in a population or species: its gene pool. Species diversity is the variety of species living in an area. And ecosystem diversity is the variety of habitats and communities across a whole region. And a technique can raise one level and lower another, so you trace each one separately.",
+      "hash": "b8270a760327",
+      "textSha256": "b8270a760327955e78d0f0b9cbd6dd7a5864ac408d5b277558eb7338dda5f696",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/three-levels.b8270a760327.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/three-levels.b8270a760327.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/three-levels.b8270a760327.generation.json",
+      "plannedRequestSha256": "6cdbdce4dfae8720d5669162050d9a636217100eb276b4d230a68a1cc745df37"
+    },
+    {
+      "id": "baseline",
+      "parentSceneId": "baseline",
+      "text": "There's a second question: compared with what? An effect is a change from something, and that something is your baseline. A modified crop field might hold more insect species than a sprayed conventional field, but far fewer than the bush it replaced. Same field, opposite answers. So name your baseline before you judge.",
+      "hash": "58b478bcae74",
+      "textSha256": "58b478bcae745773563687d452efcda687a76b64397b27d3c9febeeb571ce3f7",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/baseline.58b478bcae74.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/baseline.58b478bcae74.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/baseline.58b478bcae74.generation.json",
+      "plannedRequestSha256": "630f04537ba6659f87c3f8ff9647b59ae890363be73c6a328af079fb558e2047"
+    },
+    {
+      "id": "banana-genetic",
+      "parentSceneId": "banana-genetic",
+      "text": "Back to the bananas. Cavendish plants are grown from suckers, so every plant is a copy, with the same alleles. The modified banana, QCAV-4, carries a resistance gene from a wild banana, and in field trials it resisted TR4. It was approved for growing in Australia in 2024, as a back-up if TR4 spreads. But at the genetic level, it's still one clone. Compared with ordinary Cavendish, it adds one useful gene. Compared with growing many varieties, the crop's gene pool stays very narrow.",
+      "hash": "c9b6054e9239",
+      "textSha256": "c9b6054e9239cd51185e05764bb64a4827f86e841415e4c579aced26aed1f745",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/banana-genetic.c9b6054e9239.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/banana-genetic.c9b6054e9239.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/banana-genetic.c9b6054e9239.generation.json",
+      "plannedRequestSha256": "5c31bb001b0c37ea2551d55e779093717329fda210c5d3fd5d95d27133c841d8"
+    },
+    {
+      "id": "field-species-ecosystem",
+      "parentSceneId": "field-species-ecosystem",
+      "text": "Now the field itself. With far fewer insecticide sprays, Bt cotton can leave more insect species alive than sprayed conventional cotton: a gain at the species level, on that baseline. Crops modified to tolerate a weedkiller can work the other way. Farmers can spray the whole crop, so compared with fields where some weeds survive, fewer wildflowers are left for insects to feed on. And at the ecosystem level, higher yields could mean less bush cleared for farming, but only if that land is actually protected.",
+      "hash": "7b01744905fe",
+      "textSha256": "7b01744905fe00999f449563e433c7bb1e12f10708cd5efe194315e6da2066d7",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/field-species-ecosystem.7b01744905fe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/field-species-ecosystem.7b01744905fe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/field-species-ecosystem.7b01744905fe.generation.json",
+      "plannedRequestSha256": "29b889ae74c17b23f8b0608b803749f3897bfd7d86f7ca04d010b82d022dbe75"
+    },
+    {
+      "id": "rhino-rescue",
+      "parentSceneId": "rhino-rescue",
+      "text": "Now the rhino. The last male died in 2018. The two remaining females, Najin and Fatu, can't carry a pregnancy. So scientists collect eggs from Fatu, fertilise them in the lab with sperm frozen from males that have died, and freeze the embryos. They've made dozens, and placed some into southern white rhinos, a close relative, as surrogate mothers. But no northern white pregnancy has lasted yet.",
+      "hash": "c14b24cd1c89",
+      "textSha256": "c14b24cd1c89745ea49ac59e4a9669d46aca33bc1c15110e272433875971d630",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/rhino-rescue.c14b24cd1c89.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/rhino-rescue.c14b24cd1c89.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/rhino-rescue.c14b24cd1c89.generation.json",
+      "plannedRequestSha256": "afdde0098bbbe91972bea6c76ca3b4270babc265ed6ad53c26b11095bb5742c9"
+    },
+    {
+      "id": "rhino-levels",
+      "parentSceneId": "rhino-levels",
+      "text": "Trace the levels. This could preserve the northern white rhino subspecies and some of its genetic diversity. It would add a species to a particular area only if white rhinos are absent from that baseline area. But at the genetic level, every calf would come from one female's eggs and a few males' sperm. That's a tiny gene pool, a bottleneck from the start. So a second route matters: turning frozen skin cells from about a dozen rhinos into stem cells, then into eggs and sperm, could widen it. And the ecosystem gain, rhinos grazing African grasslands again, is decades away at best.",
+      "hash": "4ae706fa6f78",
+      "textSha256": "4ae706fa6f78e0b3eec4664a04e43aa9fab164386f940e5b9e13ea440c2ba389",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/rhino-levels.4ae706fa6f78.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/rhino-levels.4ae706fa6f78.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/rhino-levels.4ae706fa6f78.generation.json",
+      "plannedRequestSha256": "0ff4590daee7583269f69e0bbcbb4e9ad8e801728eaaf21861b18bcbe7bfa43c"
+    },
+    {
+      "id": "yield-not-a-level",
+      "parentSceneId": "yield-not-a-level",
+      "text": "Notice what isn't a level: yield. A crop that grows more food is a production gain, not a biodiversity gain. And saving a subspecies isn't a gain at every level. Strong answers say it like this: this could preserve the northern white rhino subspecies and some of its genetic diversity. It would add a species to a particular area only if white rhinos are absent from that baseline area. Then judge the bottleneck and the ecosystem separately. And keep the scale in mind: on land, clearing habitat, mostly for farming, is the biggest driver of biodiversity loss. That happens whatever the crop, so to judge the technique itself, compare a modified crop with the farming it replaces.",
+      "hash": "8359a233692a",
+      "textSha256": "8359a233692ae040ec2657be2ee80d7add944d7e8d8e65c8c176c0c987c4d362",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/yield-not-a-level.8359a233692a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/yield-not-a-level.8359a233692a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/yield-not-a-level.8359a233692a.generation.json",
+      "plannedRequestSha256": "587f85bddc2c898517c131d9888bb55896babd211730e052b5ef21df7a9c2b35"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two things to hold on to. The banana problem returns: any technique that copies the best individual, whether cloning, one popular variety or one top sire, narrows the gene pool, so one disease can hit many plants or animals at once. And for every effect, ask: which level, and compared with what?",
+      "hash": "dc346c1d45ee",
+      "textSha256": "dc346c1d45eeddac37f09dba49a0e859c1280d75245655976cffd682dc3c55f1",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/memory.dc346c1d45ee.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/memory.dc346c1d45ee.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/memory.dc346c1d45ee.generation.json",
+      "plannedRequestSha256": "1ad698f54618c6dec9e2ea238584390db5fa04095083bee10b64d9a6bbc0159d"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. A crop has been modified to tolerate a weedkiller. It grows beside a small population of a wild relative that can cross with it, and farmers spray the weedkiller along the field edges where the wild plants grow. Explain how this could reduce the genetic diversity of the wild population. Pause here to answer.",
+      "hash": "08804a6ede6d",
+      "textSha256": "08804a6ede6def9a7771d6c998cc97b1b073e2cb80cfec60223b9315f8181ef7",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/attempt.08804a6ede6d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/attempt.08804a6ede6d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/attempt.08804a6ede6d.generation.json",
+      "plannedRequestSha256": "bd0dbb0c28f5474ca7e8c5469b7e6973ad89ec41e82d81632e97185d48089859"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Pollen carries the tolerance gene into the wild plants: that's gene flow. Where the weedkiller is sprayed, only wild plants carrying it survive and breed, so selection makes it common, and their alleles replace many local ones. Repeated crossing can also swamp the small population, diluting its local alleles. Saying a crop's genes can't reach a different population is the classic mistake.",
+      "hash": "448aa995e83a",
+      "textSha256": "448aa995e83a9cbe5f5f5a18c710484dd6a126dc5df6bbba11e57627ccadb4c1",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/feedback-one.448aa995e83a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/feedback-one.448aa995e83a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/feedback-one.448aa995e83a.generation.json",
+      "plannedRequestSha256": "fe7af44ccd303e19eee0b53fe14ab032e7c3367add40d8f890cabb91a013e75c"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. In the early twentieth century, a fungal disease killed billions of American chestnut trees. Scientists propose planting chestnuts modified with a gene that resists the fungus, crossed with surviving wild chestnuts. Evaluate the claim that this will improve biodiversity. Pause here to answer.",
+      "hash": "2dbfddc491c5",
+      "textSha256": "2dbfddc491c5c43da2dabec6625932cf996168445f3226fdcf90c369c144fac1",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/attempt-two.2dbfddc491c5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/attempt-two.2dbfddc491c5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/attempt-two.2dbfddc491c5.generation.json",
+      "plannedRequestSha256": "5b7af1ee0e9b01bd6bc4af282a79226145d6dac3661a5707987ae814b7453e2a"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Species level: a once-common tree could return. Genetic level: crossing with many wild survivors keeps their alleles; a few clones wouldn't. Ecosystem level: animals could regain a food tree, but other effects are uncertain. So the claim is partly supported: a likely species gain, a genetic gain only if bred widely. Saying it saves a species, so every level improves, is the classic mistake.",
+      "hash": "8b2383a87853",
+      "textSha256": "8b2383a87853543cd9c8bcbbe76f93c2b737408a371bf84ee6b3c00955e4f1a9",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/feedback-two.8b2383a87853.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/feedback-two.8b2383a87853.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/feedback-two.8b2383a87853.generation.json",
+      "plannedRequestSha256": "bed23da20c738499f4174f74618df99def947665b5acd6d7c4f543ccb6ac528e"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So when a question asks how a biotechnology changes biodiversity, name the case and the baseline. Then trace each level: alleles in the gene pool, species in the area, habitats across the region. Say which way each one moves, and why. Next, how to weigh those effects against the benefits.",
+      "hash": "83beeb32eb34",
+      "textSha256": "83beeb32eb34c22e3c4a0f0225dff51f6949f1457934a3dc64ddccef40b533e0",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/decision-rule.83beeb32eb34.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/decision-rule.83beeb32eb34.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/decision-rule.83beeb32eb34.generation.json",
+      "plannedRequestSha256": "78820a028037c51ca98fa16dcf3a61c41f3353a1f7253f73951d3b015852784f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B12-claude-2026-10-21-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

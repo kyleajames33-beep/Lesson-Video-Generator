@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C14-claude-2026-10-21-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c14/lesson.json",
+  "lessonSha256": "a13297193834d5af01811e12c26eca1c466f97cc831b563a43e602cc61d9d0d9",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c14/lesson.production-brief.json",
+    "sha256": "6f8db602f28986d25829a262ecf24b484f2211e3a82c831749c6a519394b4f1f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two beakers, each with twenty five point zero zero millilitres of acid at zero point one zero zero moles per litre. One is hydrochloric acid, one is ethanoic acid. Add the same sodium hydroxide to each, measure the pH after every portion, and plot it. You get two very different curves. Every bend in them carries information: whether the acid is strong or weak, how much there is, even its K a. So how do you read one?",
+      "hash": "4c4b56a6c7e6",
+      "textSha256": "4c4b56a6c7e634d8a9783c0174e4b69bde0abcf40842349e8eb2bd98b7c05c04",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/hook.4c4b56a6c7e6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/hook.4c4b56a6c7e6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/hook.4c4b56a6c7e6.generation.json",
+      "plannedRequestSha256": "8c4bae7f9c5463426a41c58b329f0b1ac6d084f71490ccdf523624ed426ff95e"
+    },
+    {
+      "id": "axes-start-ph",
+      "parentSceneId": "axes-start-ph",
+      "text": "Each curve plots the pH in the flask against the volume of sodium hydroxide added. Start at the left edge, before any base. Hydrochloric acid starts at pH one point zero zero zero, because it's fully ionised. Ethanoic acid starts at two point eight seven, because a weak acid stays mostly as whole molecules: only about one in a hundred has ionised. At the same concentration, a higher starting pH points to a weaker acid.",
+      "hash": "52aaf7948cd0",
+      "textSha256": "52aaf7948cd0079274a5cfec892e9375a789c7c88dcab76168a79e31f9e67b28",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/axes-start-ph.52aaf7948cd0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/axes-start-ph.52aaf7948cd0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/axes-start-ph.52aaf7948cd0.generation.json",
+      "plannedRequestSha256": "3c1772457c96be3d0482315cc2bf7d0e3dfa2d806a0c2e27798fc102c7b4dfbc"
+    },
+    {
+      "id": "buffer-region",
+      "parentSceneId": "buffer-region",
+      "text": "Now the first twenty millilitres. The hydrochloric acid curve stays low, rising only slowly, because plenty of hydronium is still left to react. The ethanoic acid curve climbs quickly, then levels off. Each portion of base turns some ethanoic acid into ethanoate, and a weak acid with its conjugate base is a buffer. That gentle stretch is the buffer region, and it comes before the jump.",
+      "hash": "c3eeeb17a3af",
+      "textSha256": "c3eeeb17a3af396d95ecfd6e933d0232b774b16a97eb2bbe8a7da7ceba7ebde9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/buffer-region.c3eeeb17a3af.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/buffer-region.c3eeeb17a3af.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/buffer-region.c3eeeb17a3af.generation.json",
+      "plannedRequestSha256": "0619a47fd16c8f8e2aa7aaa632f07ed0951b3a7167d792af2f7f6f92737b1768"
+    },
+    {
+      "id": "half-equivalence",
+      "parentSceneId": "half-equivalence",
+      "text": "The moles say each flask reaches equivalence at twenty five millilitres. So halfway, at twelve point five zero millilitres, half the ethanoic acid has become ethanoate. Equal amounts of the two partners, and as in the buffer video, the pH equals the p K a. Read it off the curve: four point seven four. So K a is ten to the minus four point seven four, one point eight times ten to the minus five. That's the acid's own constant, read from a graph. A strong acid curve has no such point to read.",
+      "hash": "905e5f1c3c50",
+      "textSha256": "905e5f1c3c50e9eb5c7732f3c80b0dc8d809cef792688bf6256c2dc03d702621",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/half-equivalence.905e5f1c3c50.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/half-equivalence.905e5f1c3c50.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/half-equivalence.905e5f1c3c50.generation.json",
+      "plannedRequestSha256": "39b0e006ba225460504e8b83d5eee4a5cb71c0315850707e7ce6d8e538e5f0f8"
+    },
+    {
+      "id": "equivalence-point",
+      "parentSceneId": "equivalence-point",
+      "text": "On the curve, the equivalence point sits in the middle of the steepest part. That's at pH seven only for a strong acid with a strong base, and it's never just the top. For both curves it's at twenty five point zero zero millilitres, as the moles said, because a titre counts moles, not strength. So for an unknown acid, that volume gives the concentration: here, zero point one zero zero moles per litre.",
+      "hash": "e1ac08485cbc",
+      "textSha256": "e1ac08485cbc2aa2f4a2054239e7543c1feef518ebed426d0c59634662eb0e54",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/equivalence-point.e1ac08485cbc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/equivalence-point.e1ac08485cbc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/equivalence-point.e1ac08485cbc.generation.json",
+      "plannedRequestSha256": "3b3f5bb798c4065177efd23ad779f324d12b63d9a3189c9f1b107e2c35b89e77"
+    },
+    {
+      "id": "equivalence-ph-jump",
+      "parentSceneId": "equivalence-ph-jump",
+      "text": "Now read the pH at that volume. Hydrochloric acid gives seven, and ethanoic acid eight point seven two, because ethanoate makes the solution basic. And as in the indicator video, the jumps differ: the hydrochloric acid curve leaps from about four to ten, but the ethanoic acid curve only from about seven point four, because its buffer held the pH up until the last few drops. So a bigger jump doesn't mean a faster reaction, just less buffering.",
+      "hash": "3ddf830d84fe",
+      "textSha256": "3ddf830d84fe94e9e4175d6eb77dc652b944a0aec873249431ca4a41cffd1643",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/equivalence-ph-jump.3ddf830d84fe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/equivalence-ph-jump.3ddf830d84fe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/equivalence-ph-jump.3ddf830d84fe.generation.json",
+      "plannedRequestSha256": "59cb50b537a57db4ae47c9c045309c8435834e945338b1859937cdeea97e66c0"
+    },
+    {
+      "id": "strong-acid-weak-base",
+      "parentSceneId": "strong-acid-weak-base",
+      "text": "What about a strong acid titrated with a weak base, like hydrochloric acid with ammonia? It starts at pH one, like the first curve. But the jump is lower and shorter, from about four to six point six, around an equivalence pH of five point two eight, because ammonium makes the solution acidic. And after equivalence it levels off near nine, not above twelve: extra ammonia is weak, and with ammonium it forms a buffer.",
+      "hash": "cb86de3849fa",
+      "textSha256": "cb86de3849fa5820d8a207f26283de2fe30a60324f060c3687e171c5f141122c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/strong-acid-weak-base.cb86de3849fa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/strong-acid-weak-base.cb86de3849fa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/strong-acid-weak-base.cb86de3849fa.generation.json",
+      "plannedRequestSha256": "44f26d9c2b3abfa9c8684d94dee949236723eee385fd342f79a47909d4ed728e"
+    },
+    {
+      "id": "conductivity-strong",
+      "parentSceneId": "conductivity-strong",
+      "text": "A conductivity meter tells the same story another way. Hydronium and hydroxide conduct far better than other ions, because they can pass a proton from one water molecule to the next. As sodium hydroxide goes into hydrochloric acid, each fast hydronium is replaced by a slower sodium ion, so the conductivity falls. After equivalence, extra hydroxide piles up, and it rises. The lowest point marks equivalence.",
+      "hash": "878f13d740e0",
+      "textSha256": "878f13d740e006335ab2129549dec7a2e562ff772f152cb767f7cb6614b1d4e7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/conductivity-strong.878f13d740e0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/conductivity-strong.878f13d740e0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/conductivity-strong.878f13d740e0.generation.json",
+      "plannedRequestSha256": "a93f5bb8f9428d83e1c50179389ba90c6105a218599f64f35a94b0ee49a05572"
+    },
+    {
+      "id": "conductivity-weak",
+      "parentSceneId": "conductivity-weak",
+      "text": "Ethanoic acid starts with few ions, so its conductivity starts low. As base is added, sodium and ethanoate ions build up, so it rises gently. Those ions are slower than hydronium, but each portion of base makes far more of them than the few hydronium ions there were at the start. After equivalence, fast hydroxide ions add on, and it rises more steeply. Here, equivalence is the bend where the slope changes, not a minimum.",
+      "hash": "9f20af6d5810",
+      "textSha256": "9f20af6d5810602d17ebd1eba7b933b002fa4d9765925229c294eb500199792d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/conductivity-weak.9f20af6d5810.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/conductivity-weak.9f20af6d5810.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/conductivity-weak.9f20af6d5810.generation.json",
+      "plannedRequestSha256": "6c1381fac7deade6d49ffa6ba36ddc22ba6b325e4fbf4cb924e85f9093f28c5a"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. At half-equivalence, pH equals p K a. Find equivalence in the middle of the jump, halve the volume, and read the pH there. It works because the two partners are equal at that point. And for conductivity: hydronium and hydroxide are the best conductors.",
+      "hash": "8768b013d647",
+      "textSha256": "8768b013d647eed28896a283ae13a67cbf3f67f7ff7c8fdccb9dad0841533bd0",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/memory-aid.8768b013d647.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/memory-aid.8768b013d647.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/memory-aid.8768b013d647.generation.json",
+      "plannedRequestSha256": "ace00ba86c7d0c44f277c538043de5b6c39130a2ee33f679b5daf13e0464aa8e"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student titrates twenty point zero zero millilitres of an acid, H A, with zero point one zero zero zero moles per litre sodium hydroxide, and plots this curve. Using two features of the curve, decide whether H A is strong or weak. Then calculate its concentration, and its K a. Pause here to answer.",
+      "hash": "864b84270727",
+      "textSha256": "864b84270727b155b1ba5522c5e45d9395410b684bb545d564701145d2cd9c6d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/attempt-1.864b84270727.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/attempt-1.864b84270727.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/attempt-1.864b84270727.generation.json",
+      "plannedRequestSha256": "caebf9d6a62122a0bc0556928290b51e20e75586b489c64ca9fa8721dbf4894b"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "It's weak: there's a buffer region before the jump, and the pH at equivalence is above seven. The jump's middle is at twenty point zero millilitres, so the concentration is zero point one zero zero moles per litre. Half of twenty is ten, where the pH is four point five seven, so K a is two point seven times ten to the minus five. Reading p K a at the equivalence point is the slip.",
+      "hash": "3618a05e1370",
+      "textSha256": "3618a05e1370e9a26c40ec4b66d5d01b03d3e716744a7c4deb624228ade4883e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/feedback-1.3618a05e1370.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/feedback-1.3618a05e1370.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/feedback-1.3618a05e1370.generation.json",
+      "plannedRequestSha256": "6c22a26c567f2f745a4c90867ada314044db2852fb62c0101e1d209788efe8a9"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Zero point one zero zero moles per litre sodium hydroxide is added to twenty point zero zero millilitres of hydrochloric acid. The conductivity falls to a minimum at sixteen point zero millilitres, then rises. Explain the shape of the graph, and calculate the concentration of the hydrochloric acid. Pause here to answer.",
+      "hash": "dac1c67d96f0",
+      "textSha256": "dac1c67d96f0ebe84792d6fafeaa1b15a1ce588e94ffd137a8bacafb47702754",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/attempt-2.dac1c67d96f0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/attempt-2.dac1c67d96f0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/attempt-2.dac1c67d96f0.generation.json",
+      "plannedRequestSha256": "c00f18d9362b4e025183712c9e76cd5b60be07c01d9db30aea2dc23a6134f647"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Before equivalence, each hydronium is replaced by a sodium ion, which conducts less well, so the conductivity falls. After it, extra hydroxide makes it rise. The minimum is equivalence, so the concentration is zero point zero eight zero zero moles per litre. Saying it falls because the ions are used up misses that the number of ions stays about the same.",
+      "hash": "6a9a356d6ffc",
+      "textSha256": "6a9a356d6ffc0db150d4f1c8a5a42d231e41fd04b3a20f88ae02a527cb033bbd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/feedback-2.6a9a356d6ffc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/feedback-2.6a9a356d6ffc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/feedback-2.6a9a356d6ffc.generation.json",
+      "plannedRequestSha256": "cb796a104872aae241d1b82c1d9b942cea0db8eb4c07eba5685fe8f6e1968d79"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "For any titration curve: read the starting pH, look for a buffer region, find equivalence in the middle of the jump, read its volume and pH, and halve the volume for p K a. For conductivity, look for the minimum or the bend. Next: when a direct titration won't work, back titrations and conductivity titrations.",
+      "hash": "90cebd948deb",
+      "textSha256": "90cebd948deb597a3982d55035b971b481ed5ba9d92090b7ed71f3e3267d900f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/decision-rule.90cebd948deb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/decision-rule.90cebd948deb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/decision-rule.90cebd948deb.generation.json",
+      "plannedRequestSha256": "83029569eca48e7eac9f7f2b044a76a164cd184fe06fa9e7802e0ce5329f5b59"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C14-claude-2026-10-21-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

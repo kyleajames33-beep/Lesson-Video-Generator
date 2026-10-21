@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-C13-claude-2026-10-21-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6c13/lesson.json",
+  "lessonSha256": "c671f7fdec00987ffecb32303cc0c4ac2f7302200f7bfeef4da3abec88163f24",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6c13/lesson.production-brief.json",
+    "sha256": "423af920dad48bb3418e353393cfc4a6a80e21723d1a6b5604b46280d9d7ef93"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here's twenty five point zero zero millilitres of zero point one zero zero moles per litre ethanoic acid, titrated with sodium hydroxide of the same concentration. The moles say it needs twenty five millilitres. With phenolphthalein, that's what you get: the flask turns pink within a drop of twenty five. But run it with methyl orange, and the colour drifts from red, through orange, to yellow over the first eight millilitres. Same acid, same base. So why does one indicator get it right, and the other mislead you?",
+      "hash": "fe1371edc1cb",
+      "textSha256": "fe1371edc1cbb8f2cf47f462e6bc2a9d7d3d731d9129f8da7307a6334fb22059",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/hook.fe1371edc1cb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/hook.fe1371edc1cb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/hook.fe1371edc1cb.generation.json",
+      "plannedRequestSha256": "7b1786d80e016a6e55c6824403290be02e2949da6a416966d5f6f6349a03e2ab"
+    },
+    {
+      "id": "indicator-weak-acid",
+      "parentSceneId": "indicator-weak-acid",
+      "text": "An indicator is itself a weak acid. Call it H In. In water it gives a proton to water, making hydronium and its conjugate base, In minus. The trick is that the two forms are different colours. For phenolphthalein, H In is colourless, and In minus is pink. So the colour you see tells you which form is winning.",
+      "hash": "843ec68b6dcd",
+      "textSha256": "843ec68b6dcd8060da3992f14f705705b14f7a117a82737694768290c6763e1f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/indicator-weak-acid.843ec68b6dcd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/indicator-weak-acid.843ec68b6dcd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/indicator-weak-acid.843ec68b6dcd.generation.json",
+      "plannedRequestSha256": "6e4d291b71a8d9ac50fe40b678ab882dc42edff2ffd8f3532460b03bf02f68f4"
+    },
+    {
+      "id": "reversible-switch",
+      "parentSceneId": "reversible-switch",
+      "text": "Add sodium hydroxide, and hydroxide removes hydronium. The equilibrium shifts right to replace it, so In minus builds up, and the flask turns pink. Add acid, and the extra hydronium pushes it back left: colourless again. You can switch it back and forth again and again, because the indicator isn't used up. It's a reversible reaction you can see.",
+      "hash": "33940a2da2b9",
+      "textSha256": "33940a2da2b9c0c214008edfd12070797cbf3c44f2be7c356264949365ddb19d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/reversible-switch.33940a2da2b9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/reversible-switch.33940a2da2b9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/reversible-switch.33940a2da2b9.generation.json",
+      "plannedRequestSha256": "d4bb0b219d666155f9f18bb537e56e6afc609c6486de6cc10b7fefb103b4dd7b"
+    },
+    {
+      "id": "transition-range",
+      "parentSceneId": "transition-range",
+      "text": "But the change isn't instant. Just like the buffer ratio, the ratio of the two forms follows the hydronium concentration. When the pH equals the indicator's p K a, the two forms are equal. Your eye usually sees one colour clearly once that form is about ten times the other, so the change spreads over roughly two pH units. That's the transition range: three point one to four point four for methyl orange, eight point three to ten for phenolphthalein.",
+      "hash": "b578117e9588",
+      "textSha256": "b578117e9588e8968c0d9dc2d0f6cb02136d266977411a21d4152ae708898d0b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/transition-range.b578117e9588.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/transition-range.b578117e9588.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/transition-range.b578117e9588.generation.json",
+      "plannedRequestSha256": "c67be8d829465665c71c05f7f1b7c377b6d2c56cefc938a20d52e4a287a84ad0"
+    },
+    {
+      "id": "endpoint-equivalence",
+      "parentSceneId": "endpoint-equivalence",
+      "text": "In the titration video, the endpoint was where the colour changes, and the equivalence point was where the amounts match the equation. A good indicator makes the endpoint land very close to equivalence. So before you choose one, you need to know the pH at equivalence. And it isn't always seven.",
+      "hash": "10bb1fb8ac33",
+      "textSha256": "10bb1fb8ac33ef52e3b6fa71a137efc005b3dbf2e57d2aa59ee15488a6d0306f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/endpoint-equivalence.10bb1fb8ac33.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/endpoint-equivalence.10bb1fb8ac33.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/endpoint-equivalence.10bb1fb8ac33.generation.json",
+      "plannedRequestSha256": "6f769a1d8659bc9837a7f2699dbe6b3424b04d60f98c54e312d9f03f9fe699de"
+    },
+    {
+      "id": "flask-at-equivalence",
+      "parentSceneId": "flask-at-equivalence",
+      "text": "At equivalence, the acid and the base have both been used up. What's left is sodium ethanoate solution. Sodium ions don't react with water, but ethanoate is the conjugate base of a weak acid, so, as in the K a video, it takes protons back from water. Ethanoate plus water gives ethanoic acid and hydroxide. So the flask is slightly basic at equivalence.",
+      "hash": "65d81a6fd6e2",
+      "textSha256": "65d81a6fd6e257ebc2d966f785fe41ba3bae2634ac9846141787cd4be5702608",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/flask-at-equivalence.65d81a6fd6e2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/flask-at-equivalence.65d81a6fd6e2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/flask-at-equivalence.65d81a6fd6e2.generation.json",
+      "plannedRequestSha256": "9a9784c8106cab906d6447d7cde0d60cad836c47625621e6aa3df2de28f32cfc"
+    },
+    {
+      "id": "three-salts",
+      "parentSceneId": "three-salts",
+      "text": "Swap in hydrochloric acid, and the flask holds sodium chloride. Chloride, from a strong acid, barely takes protons, and sodium doesn't react either, so the solution is neutral, pH seven at twenty five degrees. Titrate ammonia with hydrochloric acid, and you make ammonium chloride. Ammonium, the conjugate acid of a weak base, gives protons to water, making hydronium, so that flask is acidic.",
+      "hash": "36da0f500b6e",
+      "textSha256": "36da0f500b6e6d03623c6cefbaa393a5effd445985980073d898d2a0214e782c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/three-salts.36da0f500b6e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/three-salts.36da0f500b6e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/three-salts.36da0f500b6e.generation.json",
+      "plannedRequestSha256": "230276c3b73b90bf93d29ebf7e1d39860062ad5976af28a70436029a0ec0dd9a"
+    },
+    {
+      "id": "we-concentration",
+      "parentSceneId": "we-concentration",
+      "text": "Now the pH for the ethanoic acid flask. Step one: how much ethanoate, in what volume? The acid held zero point zero zero two five zero moles, and essentially all of it became ethanoate. But adding twenty five millilitres of base doubled the volume to fifty, so the ethanoate concentration is zero point zero five zero zero moles per litre.",
+      "hash": "44a6fe36c169",
+      "textSha256": "44a6fe36c1692c2b6f2e750176d4c0ac2f526775226538d86b79cc61b8834708",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/we-concentration.44a6fe36c169.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/we-concentration.44a6fe36c169.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/we-concentration.44a6fe36c169.generation.json",
+      "plannedRequestSha256": "84b74ee9794d27ea0c2426269f3b8c4f2187c9f18aa20a1be3612cddba13fff1"
+    },
+    {
+      "id": "we-ph",
+      "parentSceneId": "we-ph",
+      "text": "Step two: ethanoate is a weak base, so use the weak base method. Its K b, from the K a video, is K w over K a, five point six times ten to the minus ten. Hydroxide is the square root of K b times the concentration, five point three times ten to the minus six. That gives a p O H of five point two eight, and a pH of eight point seven two. Basic, as the salt predicted.",
+      "hash": "b130d9222a96",
+      "textSha256": "b130d9222a96b2241a1cecd9d85372845f29743f627b1cf134979f80b9863e4e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/we-ph.b130d9222a96.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/we-ph.b130d9222a96.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/we-ph.b130d9222a96.generation.json",
+      "plannedRequestSha256": "eb823ac88e0da201de0fc4bae4d973855da9b97acd3a7aeace4c21294239ccc2"
+    },
+    {
+      "id": "the-jump",
+      "parentSceneId": "the-jump",
+      "text": "Here's the whole curve. Near equivalence, the pH leaps: one drop before, it's about seven point four, and one drop after, it's ten. Phenolphthalein changes between eight point three and ten, right inside that leap, so it turns pink within a drop of equivalence. Methyl orange changes way back here, in the buffer region, while most of the acid is still there. So its titre is far too small, and the concentration comes out far too low.",
+      "hash": "66c323c56be1",
+      "textSha256": "66c323c56be102e7b9a3e2cfccfed32e9b2bcaa18847c812699b046e861fd402",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/the-jump.66c323c56be1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/the-jump.66c323c56be1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/the-jump.66c323c56be1.generation.json",
+      "plannedRequestSha256": "f030739831729ebdd9ac274f10542833a5a43041f3107979e13144bd401974dd"
+    },
+    {
+      "id": "the-rule",
+      "parentSceneId": "the-rule",
+      "text": "So the rule is: choose an indicator whose colour change happens inside the steep jump. Its range doesn't have to contain the exact equivalence pH. For hydrochloric acid and sodium hydroxide at these concentrations, the jump runs from about four to ten, so methyl orange, bromothymol blue and phenolphthalein all finish changing within about a drop.",
+      "hash": "59c3d3c935b1",
+      "textSha256": "59c3d3c935b172c63276b8616e59218492c9e23ececd2c74212cbb140e79a7d7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/the-rule.59c3d3c935b1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/the-rule.59c3d3c935b1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/the-rule.59c3d3c935b1.generation.json",
+      "plannedRequestSha256": "413cd90ce355821383d79e6e2ee65d0c7e508031ede3cab501b491c82530e086"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's what to remember. The salt takes after its stronger parent. A strong base with a weak acid makes it basic, a strong acid with a weak base makes it acidic, and two strong parents make it neutral. Then pick the indicator that changes inside the jump.",
+      "hash": "1275c051ef6c",
+      "textSha256": "1275c051ef6ce50fab24d98cce8424f3367218deb73346fd4a0c69c0eda3fcfe",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/memory-aid.1275c051ef6c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/memory-aid.1275c051ef6c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/memory-aid.1275c051ef6c.generation.json",
+      "plannedRequestSha256": "acee94a2a35252126dc4b2f977c3dd816b0fe4db3abb15466a0ec446ba84b1fa"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Bromothymol blue is a weak acid, H In. H In is yellow, and In minus is blue. Its colour changes between pH six point zero and seven point six. A few drops are added to a solution at pH four. Sodium hydroxide is added until the pH reaches ten, then hydrochloric acid until it's back to four. Describe the colours you'd see, and explain them using Le Chatelier's principle. Pause here to answer.",
+      "hash": "e524d642b953",
+      "textSha256": "e524d642b9533deb7072329fd93b38937ad5b19c000152fa1eedcdc55f5cd74c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/attempt-1.e524d642b953.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/attempt-1.e524d642b953.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/attempt-1.e524d642b953.generation.json",
+      "plannedRequestSha256": "c6a35b9e29936ae22de6cf9b7775f28e6d4bd0b583ee0b0f44efd0b0c7367b2f"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "At pH four, below the range, hydronium is high, so H In dominates: yellow. Hydroxide removes hydronium, the equilibrium shifts right, and In minus builds up: blue. Adding acid raises hydronium again, so it shifts left, back to yellow. Saying the indicator gets used up and stays blue misses that it's an equilibrium.",
+      "hash": "9eab3de36b0e",
+      "textSha256": "9eab3de36b0e8222b7bbdc8482ea76f66355da22e2c5ca44b8a0a1bc4c92fc9d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/feedback-1.9eab3de36b0e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/feedback-1.9eab3de36b0e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/feedback-1.9eab3de36b0e.generation.json",
+      "plannedRequestSha256": "534c40307b557b25908d73484c89c5825b166f3bc7e5e16cc802f27e66f9e38f"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Zero point one zero zero moles per litre hydrochloric acid is added from a burette to twenty five point zero zero millilitres of zero point one zero zero moles per litre ammonia. Near equivalence, the pH falls sharply from about six point six to about four point zero. Explain why the solution at equivalence is acidic, then choose the most suitable indicator from the table, and justify it. Pause here to answer.",
+      "hash": "5ace7bb41f6a",
+      "textSha256": "5ace7bb41f6a2167fed67eb5b8a851b119529df3960a9c0422ba0d2c5f5e5bde",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/attempt-2.5ace7bb41f6a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/attempt-2.5ace7bb41f6a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/attempt-2.5ace7bb41f6a.generation.json",
+      "plannedRequestSha256": "0b7c177ad25d40956b801bfdf812835872a8f1c5b123a7757378172add49f0f3"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "At equivalence, the flask holds ammonium chloride. Ammonium gives protons to water, making hydronium, so it's acidic: the salt takes after hydrochloric acid. Methyl red changes between four point four and six point two, all inside the jump, so it's the best fit. Phenolphthalein is the trap: it changes above the jump, so it goes colourless while ammonia is still in excess.",
+      "hash": "4b78ede2f77b",
+      "textSha256": "4b78ede2f77b8b9c40936ef44e78659fb8b03f74f7cd04503e49c9dcb1edfd2d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/feedback-2.4b78ede2f77b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/feedback-2.4b78ede2f77b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/feedback-2.4b78ede2f77b.generation.json",
+      "plannedRequestSha256": "1958820960da84a7241d3b6d435f3a891209415c02434aa5eb975f7e9cd7f68e"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "For any titration: name the salt, predict acidic, neutral or basic from its stronger parent, find the steep jump, and pick the indicator that changes inside it. Next: making your own indicator from red cabbage, and testing it with acids and bases.",
+      "hash": "8c83160c7b28",
+      "textSha256": "8c83160c7b288ce8ab9e37c43dd80c628ff4c95689cc9d8c384864f3824c8f51",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/decision-rule.8c83160c7b28.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/decision-rule.8c83160c7b28.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/decision-rule.8c83160c7b28.generation.json",
+      "plannedRequestSha256": "a9b8743a8a8fe023b49c1242f081d564260a9bc474a92ed07869ddfcc05ebb7b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-C13-claude-2026-10-21-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -70,3 +70,7 @@ Visual: tags, the existing `m5x-cycad-leaching-v1.png` thumbnail (crushed kernel
 ## Resolution (21 Oct)
 
 Applied in `lessons/chem-m6-c16.md` Revision 2 (21 Oct). Scene 8 narration and visual as quoted above (590 characters). Key note 5 removed. The `m6-pituri-plant-ash-v1.png` brief was removed from Assets and the Codex brief, and pituri was removed from the vocabulary, pronunciation, author note h, reference facts and YouTube description. "Cultural sources and review" and "Open decisions" record this review and the owner gap. Narration 5,846 characters (at least 5,500). Owner items 1 to 3 remain open.
+
+## Owner decision (21 Oct 2026)
+
+The owner accepted the principle-only treatment of scene 8 ("accept principle"). Pituri is not used and no specific practice is named. C16 proceeds to the Codex check (brief 92) and voicing on the normal pipeline.

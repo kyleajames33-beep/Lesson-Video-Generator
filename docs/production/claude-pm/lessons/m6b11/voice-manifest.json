@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B11-claude-2026-10-21-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b11/lesson.json",
+  "lessonSha256": "31a3439a3a1ca8c394bd6384da6cd03fc1208e51815d6eff2a442703d6768a4f",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b11/lesson.production-brief.json",
+    "sha256": "f7e924ff2f6835c50d1b106b8cba92ad36065a7da2059b4ff351092a91b9cb38"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In late 2023, a treatment made with the gene-editing tool CRISPR was approved for the first time, for sickle cell disease. Since then, the claims have grown: CRISPR will wipe out malaria, cure every genetic disease, end crop failure. Some of these could happen, and some are hype. So which future uses of biotechnology are plausible, and how can you tell?",
+      "hash": "bb12143bbe00",
+      "textSha256": "bb12143bbe0094f98588a25e62c584a245dd18bbefd0a5dd5118aa96b060971b",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/hook.bb12143bbe00.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/hook.bb12143bbe00.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/hook.bb12143bbe00.generation.json",
+      "plannedRequestSha256": "6151071571f09ee96a576e85ffe7bf43f24c580078c1551c2cd6f030468b6477"
+    },
+    {
+      "id": "crispr-cut",
+      "parentSceneId": "crispr-cut",
+      "text": "CRISPR changes a chosen stretch of DNA using two parts. A short guide RNA has bases that pair with the target stretch, by normal base pairing. It leads an enzyme called Cas9 to that spot, and Cas9 cuts both DNA strands. The cell repairs the cut, but often adds or loses a few bases, which can switch that stretch off. But the guide can sometimes pair with a similar stretch elsewhere, and cut there too.",
+      "hash": "477991da552d",
+      "textSha256": "477991da552d377fcf5c820bcb49a6b3678415ab19c8f816fbef3daa59b00783",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/crispr-cut.477991da552d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/crispr-cut.477991da552d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/crispr-cut.477991da552d.generation.json",
+      "plannedRequestSha256": "6f25a957d22bb2c6c1a5c41a3bc9c59c4c899e73db675a801cc83e8e306cc3c8"
+    },
+    {
+      "id": "sickle-cell-use",
+      "parentSceneId": "sickle-cell-use",
+      "text": "Now the approved use. In sickle cell disease, one changed base gives haemoglobin that makes red cells sickle. But before birth, you made a different kind, foetal haemoglobin, which doesn't sickle. After birth, a protein switches the foetal gene off. So scientists take a patient's blood-forming stem cells and, in the lab, use CRISPR to cut the DNA that lets these cells make that switch. With less of it, the cells make foetal haemoglobin again. The sickle allele is still there, but the foetal haemoglobin keeps most red cells from sickling.",
+      "hash": "6d5f4145781f",
+      "textSha256": "6d5f4145781f784e693b9fa9eca41edef59d6818a3b32d3b8ebdca661c6af0da",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/sickle-cell-use.6d5f4145781f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/sickle-cell-use.6d5f4145781f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/sickle-cell-use.6d5f4145781f.generation.json",
+      "plannedRequestSha256": "22c3dd17d0783873a0f7aff9affb046b61a31a5f4c38dfa91b0c7e327edacf63"
+    },
+    {
+      "id": "evidence-and-catch",
+      "parentSceneId": "evidence-and-catch",
+      "text": "In the main trial, twenty-nine of the thirty patients followed for long enough had no severe pain crises for at least a year. But look at what it takes. First, strong chemotherapy has to clear out the patient's own bone marrow, and they spend weeks in hospital. In the United States, it costs over two million dollars. And most babies with the disease are born in sub-Saharan Africa, where almost no patients can get it yet. Working in a trial isn't the same as being available to everyone.",
+      "hash": "b22de41da03d",
+      "textSha256": "b22de41da03d454fd76ab655f07aa499ff0c3927d12c953a1540e0ecf0a23301",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/evidence-and-catch.b22de41da03d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/evidence-and-catch.b22de41da03d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/evidence-and-catch.b22de41da03d.generation.json",
+      "plannedRequestSha256": "a3b32a92148a2825e0bd78b9165c8dc69623ad27408d6f69225bf6e3f9074e2b"
+    },
+    {
+      "id": "evidence-ladder",
+      "parentSceneId": "evidence-ladder",
+      "text": "So sort each claim by how far the evidence has got. Is it only an idea? Has it worked in the lab? In animals? In human trials? Or is it approved and in use? The sickle cell treatment is on the top rung. Biotechnology is heading in several directions: editing cells inside the body, editing crops to resist disease, and screening DNA to spot disease risk early. But editing works best where one gene causes the problem. Common diseases, like type 2 diabetes, involve many genes and the environment, so there's often no single stretch to fix.",
+      "hash": "8ace59d991dd",
+      "textSha256": "8ace59d991dd789659f040992adb62583b608708915058d55cf92a69073a14fa",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/evidence-ladder.8ace59d991dd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/evidence-ladder.8ace59d991dd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/evidence-ladder.8ace59d991dd.generation.json",
+      "plannedRequestSha256": "eb57a8a6dce7ea3bf8da92fbab5b0ec5d39c6659ded6668eb7be6a869069bd82"
+    },
+    {
+      "id": "gene-drive",
+      "parentSceneId": "gene-drive",
+      "text": "Malaria, spread by certain mosquitoes, kills hundreds of thousands of people a year. Normally, a parent with one copy of an allele passes it to about half its offspring, because each gamete gets one chromosome of the pair. A gene drive cheats that rule. The drive allele carries the code for its own CRISPR editor. In the cells that make gametes, the editor cuts the matching spot on the other chromosome, and the cell repairs the cut by copying the drive across. So nearly all the offspring inherit it.",
+      "hash": "37d002100e21",
+      "textSha256": "37d002100e21b3ca6253a7fe7215bda034e146771bdb89c6081deab5a45565ea",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/gene-drive.37d002100e21.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/gene-drive.37d002100e21.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/gene-drive.37d002100e21.generation.json",
+      "plannedRequestSha256": "cc5a5c2a5e95ed5f0908c1fdce5b10379fb7ac85c9dc8da86ba32fc9b7bea4b1"
+    },
+    {
+      "id": "population-crash",
+      "parentSceneId": "population-crash",
+      "text": "Now aim the drive at a gene that female mosquitoes need to lay eggs. Females with one copy can still breed and pass it on, but females with two copies can't. As the drive spreads, fewer females can breed, and the population can crash. In small lab cages, a drive like this reached every mosquito, and the populations collapsed within seven to eleven generations. But no gene drive has been released into the wild yet.",
+      "hash": "a34d97050c22",
+      "textSha256": "a34d97050c22ec9d62e7189f363897b278ce02ac3082ba380701cd92912174ce",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/population-crash.a34d97050c22.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/population-crash.a34d97050c22.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/population-crash.a34d97050c22.generation.json",
+      "plannedRequestSha256": "52d1f115bc2dc95682d7b7dc20013cc7d5b089dc8f53ea2c80749bd44902f637"
+    },
+    {
+      "id": "unknowns",
+      "parentSceneId": "unknowns",
+      "text": "So is \"gene drives will wipe out malaria\" plausible? Partly. The mechanism works in cages, and the need is huge. But a mosquito whose cut site has changed can't be cut, so resistance could stop the drive spreading. The cage drive aimed at a stretch that rarely changes, but wild populations are far bigger. Removing one mosquito species might affect animals that eat them, though other mosquitoes would remain. And a drive can spread across borders, so who decides? Once it's out, it may be very hard to call back.",
+      "hash": "f2829f61bf7d",
+      "textSha256": "f2829f61bf7d149e4f332fafff02bdc5fcd4b23a87465a2c1075c414b3d57e00",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/unknowns.f2829f61bf7d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/unknowns.f2829f61bf7d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/unknowns.f2829f61bf7d.generation.json",
+      "plannedRequestSha256": "7add1af3eea9d0e84b684920706e070f226b8a2775dc623927bdf0bb2b8a29f2"
+    },
+    {
+      "id": "three-questions",
+      "parentSceneId": "three-questions",
+      "text": "To judge any future use, ask three questions. Need: how big is the problem it solves? Feasibility: can it work safely, at scale, outside a trial? Fairness: who will actually get it? Not \"it will\", but \"it could, if\". Gene drives could reduce malaria in some regions, if field trials show they're safe and communities agree.",
+      "hash": "99ce4c838a91",
+      "textSha256": "99ce4c838a91e1a08802582aa693084528fa058dd11c20c8b6674c12eefac36a",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/three-questions.99ce4c838a91.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/three-questions.99ce4c838a91.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/three-questions.99ce4c838a91.generation.json",
+      "plannedRequestSha256": "364fec3e07b70a9cb4589d4bea18b7503c765531ddfee1c01c3a2b710edd59d1"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two things to hold on to. Advanced isn't the same as proven: a striking lab result is a reason to keep testing, not a promise. And check need, feasibility and fairness before you call a benefit likely.",
+      "hash": "ca6b4cd7c7b9",
+      "textSha256": "ca6b4cd7c7b9b26979a77142cea5dc627189299f90d91f542b034e2118c15a8e",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/memory.ca6b4cd7c7b9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/memory.ca6b4cd7c7b9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/memory.ca6b4cd7c7b9.generation.json",
+      "plannedRequestSha256": "198f3d1cdf4a3404622794e8beb79162735052252dcf23024141f69cc4c3f1a4"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. A gene-editing treatment for high cholesterol is being tested in small, early trials. It's taken up by liver cells, and it changes one base in a gene called PCSK9, so the gene no longer makes a working protein. That protein reduces the liver's ability to remove LDL cholesterol from the blood. Explain how the edit could lower blood cholesterol. Then identify two uncertainties. Pause here to answer.",
+      "hash": "9185c37ba01f",
+      "textSha256": "9185c37ba01fe52dcaed61d28c01bb4fc40b33c0ace3308dedc0bceb3395f408",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/attempt.9185c37ba01f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/attempt.9185c37ba01f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/attempt.9185c37ba01f.generation.json",
+      "plannedRequestSha256": "acdb2b6e7db14e09c4f334a1ffd2e0805fccac5677e9f1d4e643ff87627c95a4"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The edit stops liver cells making working PCSK9 protein. Without it, the liver keeps more of its ability to remove LDL, so the level in the blood falls. Uncertainties: whether it edits anywhere else in the genome, and whether it stays safe for life, since it can't be undone. Saying the patient's children will inherit it is the classic mistake: liver cells are body cells.",
+      "hash": "29831f8ce105",
+      "textSha256": "29831f8ce10581a6adc2541f07a56dccc845b5933b58b2ed0c4fceaf05522ee9",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/feedback-one.29831f8ce105.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/feedback-one.29831f8ce105.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/feedback-one.29831f8ce105.generation.json",
+      "plannedRequestSha256": "42dca3daf56660050789ff5c416ec10ccc72e54594899b8729888798b6b1f397"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A headline says: \"CRISPR will soon cure all genetic diseases.\" Evaluate this claim. Pause here to answer.",
+      "hash": "4ee58c31b378",
+      "textSha256": "4ee58c31b378bb4bd88d674da5894494cf09637d313b5ab166475fa98638ad8e",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/attempt-two.4ee58c31b378.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/attempt-two.4ee58c31b378.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/attempt-two.4ee58c31b378.generation.json",
+      "plannedRequestSha256": "3cc609d4ae6ab6cc980eea0a9b0c9ed1433a64d3618d944cc7259f01fa66eed1"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Part of it holds: edited cells already treat sickle cell, a single-gene disease. But most common diseases involve many genes and the environment, most tissues are still hard to reach, and cost limits who gets it. So the claim is overstated: CRISPR could treat some single-gene diseases, if it proves safe and affordable. Saying \"it's approved, so it works for everyone\" is the classic mistake.",
+      "hash": "96bcb4d66a39",
+      "textSha256": "96bcb4d66a39445db9b74000a20de85347a80d654d67e51e90082dd636c39ef8",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/feedback-two.96bcb4d66a39.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/feedback-two.96bcb4d66a39.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/feedback-two.96bcb4d66a39.generation.json",
+      "plannedRequestSha256": "a5be20a513610e2fb6d47b743f032efc760e2b74b847c9375b31071759f6a75b"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "For any future biotechnology, explain the mechanism first: what it changes, and how. Then place it on the evidence ladder, judge need, feasibility and fairness, and write \"could, if\", with the condition named. Next, how genetic techniques can change biodiversity.",
+      "hash": "c89d0751fe84",
+      "textSha256": "c89d0751fe84f0c9f804d625054e86df858d44d21dbe63fe542ab1703566980f",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/decision-rule.c89d0751fe84.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/decision-rule.c89d0751fe84.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/decision-rule.c89d0751fe84.generation.json",
+      "plannedRequestSha256": "da4afaacce4432c31be593c1740f66f503e41640b555ce231d2858e1bf958d7d"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B11-claude-2026-10-21-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Skills-S03-claude-2026-10-21-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/skills03/lesson.json",
+  "lessonSha256": "d722a67ce32810e75830f4b0c0d450b2439f5206092806d2d8291cccad290eb1",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/skills03/lesson.production-brief.json",
+    "sha256": "9783e82d7ca3884ece2f762adaf67d7929bb6872eebf7ee6e3a0c14d604474b5"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here's a habit NESA's marking feedback keeps flagging. In eight of the last twelve Chemistry and Biology reports, it points out comparisons written as two separate descriptions: everything about one thing, then everything about the other. Each half can be right, and the answer still doesn't compare. In recent Biology papers, compare questions were worth three to six marks. So let's learn to write in pairs.",
+      "hash": "2e26085ade51",
+      "textSha256": "2e26085ade51993196c687592a861995d0c75d6569b5da29a40811348b79f5e8",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/hook.2e26085ade51.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/hook.2e26085ade51.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/hook.2e26085ade51.generation.json",
+      "plannedRequestSha256": "98bc15b37163901773b1e4eca91f91b9a0f28f2d90198455b014338e4a2fa038"
+    },
+    {
+      "id": "three-verbs",
+      "parentSceneId": "three-verbs",
+      "text": "Here's what NESA's glossary says, in short. Compare means show similarities or differences. Contrast means show differences, or opposites. Distinguish means show how things differ. So contrast and distinguish want differences. Compare can take both, and the safe habit is to give at least one similarity and one difference, unless the question narrows it. In the last five years of Chemistry and Biology written questions, compare appeared seven times. Contrast and distinguish didn't, but they're still glossary words, so know them.",
+      "hash": "4fcc53e6e993",
+      "textSha256": "4fcc53e6e9935da3c9597d7e25059244bf4151c46d5058b50887d15ebd9caaeb",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/three-verbs.4fcc53e6e993.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/three-verbs.4fcc53e6e993.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/three-verbs.4fcc53e6e993.generation.json",
+      "plannedRequestSha256": "08acd08f1425a72cec982be38a242b2e8403026bdcd098d1b419be971b33c233"
+    },
+    {
+      "id": "question-card",
+      "parentSceneId": "question-card",
+      "text": "Here's an HSC-style Biology question. Red snapdragons were crossed with white snapdragons, and every offspring was pink. Red cattle were crossed with white cattle, and every calf was roan: a coat with red hairs and white hairs mixed together. All the parents were true-breeding. The question asks you to compare how colour is inherited in the two crosses. Three marks. If you take Chemistry, watch the shape: there's a Chemistry one coming for you.",
+      "hash": "48d81ccac37f",
+      "textSha256": "48d81ccac37f1907b17ec3a36f03d5ef241206b82707eb698cf105f36326f43e",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/question-card.48d81ccac37f.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/question-card.48d81ccac37f.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/question-card.48d81ccac37f.generation.json",
+      "plannedRequestSha256": "a422018fe48568ab9c3a114ee5eb22a90c092d39b4075c12ce369cd4d4ad94fb"
+    },
+    {
+      "id": "read-it",
+      "parentSceneId": "read-it",
+      "text": "Run the routine first. The verb is compare, so you need what's the same and what differs, about the same feature. Three marks suggests about three paired points. Underline the givens. True-breeding tells you each parent has two identical alleles. The parents differ, so every offspring gets one of each: heterozygous. Pink, and red and white hairs, are the two results you'll set side by side. There's no constraint phrase, so any correct inheritance reasoning counts.",
+      "hash": "fcbb583b9f6a",
+      "textSha256": "fcbb583b9f6ad53848f685295f35e9a940bfdb09abcbb9b68e14cc3f8b202b6b",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/read-it.fcbb583b9f6a.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/read-it.fcbb583b9f6a.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/read-it.fcbb583b9f6a.generation.json",
+      "plannedRequestSha256": "3dbfd56366de7c0081aed502ef79be9a08b6ceb445245d3ca09a3ab989479c84"
+    },
+    {
+      "id": "pair-table",
+      "parentSceneId": "pair-table",
+      "text": "Here's the trick. Before you write, sketch a tiny table: one row per feature, one column for each case. Row one, the offspring's genotype: both crosses give heterozygotes. Row two, the offspring against their parents: in both, they look different from both parents. Row three, how the two alleles show. In snapdragons, the colour is in between. In cattle, both colours show, hair by hair. Now every row lines up one feature across both cases.",
+      "hash": "cf8e02a5babb",
+      "textSha256": "cf8e02a5babb5db4a3c8c907a6868d97303248046683987a72ba36d2df2be849",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/pair-table.cf8e02a5babb.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/pair-table.cf8e02a5babb.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/pair-table.cf8e02a5babb.generation.json",
+      "plannedRequestSha256": "3ab36136be499ec1d72438167a41f0bc0aca2d12a1511b824b840902034f6a36"
+    },
+    {
+      "id": "table-to-sentence",
+      "parentSceneId": "table-to-sentence",
+      "text": "Now turn each row into one sentence, with a comparison word. Row one: in both crosses, the offspring are heterozygous, because each true-breeding parent gives a different allele. Row two: both heterozygotes look unlike either parent, so neither allele completely masks the other. Row three: snapdragons show incomplete dominance, an in-between pink, whereas cattle show co-dominance, with both colours fully expressed in separate hairs. Three paired sentences: in our marking guide, three marks.",
+      "hash": "de533830a1d8",
+      "textSha256": "de533830a1d853908130e594f24f8f62271f9fdb579fa4dba4b16048267c795e",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/table-to-sentence.de533830a1d8.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/table-to-sentence.de533830a1d8.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/table-to-sentence.de533830a1d8.generation.json",
+      "plannedRequestSha256": "ec68fb143c3ad677edeffdddd8c5e2d8481a192a2c2834a5e48bcb8b370ded8d"
+    },
+    {
+      "id": "comparison-words",
+      "parentSceneId": "comparison-words",
+      "text": "These little words do the comparing for you. For similarities: both, in both, similarly. For differences: whereas, while, but, unlike, and words ending in er, like larger or slower. But a comparison word can't rescue a mismatched pair. \"Snapdragons are pink, whereas cattle have hair\" uses whereas, but it compares colour with hair. Same feature, both sides, one sentence.",
+      "hash": "2b092096075a",
+      "textSha256": "2b092096075afc7312f9c1269700b4e8b944ae34d4340f463437e2c18eaba071",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/comparison-words.2b092096075a.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/comparison-words.2b092096075a.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/comparison-words.2b092096075a.generation.json",
+      "plannedRequestSha256": "fc8c31df867a6cf16e7321dd56edb92ece43970fca90f5e522cb3d0b6e6ef6bb"
+    },
+    {
+      "id": "weak-vs-strong",
+      "parentSceneId": "weak-vs-strong",
+      "text": "Now here's a weaker answer. \"Snapdragons show incomplete dominance, and their offspring are pink. Cattle show co-dominance, and the calves are roan, with red and white hairs.\" Every word is right. But it's two descriptions. There's no similarity at all, and the difference is left for the marker to find. In our marking guide it earns one of three, for the correct pattern in each case. The fix isn't more science. It's pairing.",
+      "hash": "dc92ead85337",
+      "textSha256": "dc92ead853371f3e5ea992551a3291b55d55faeee17da9ba754af4aadd2d6fcd",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/weak-vs-strong.dc92ead85337.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/weak-vs-strong.dc92ead85337.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/weak-vs-strong.dc92ead85337.generation.json",
+      "plannedRequestSha256": "c5961ae548f40dce7e7860c6cab4fea95eb746df8ea5236e454bff8b7c12ebdf"
+    },
+    {
+      "id": "what-guidelines-show",
+      "parentSceneId": "what-guidelines-show",
+      "text": "NESA's marking guidelines point the same way. In one recent three-mark compare question, the sample answer was only two sentences: a similarity, and a difference, each about the same feature of both things. In a table question, comparing all the features correctly reached three marks, and comparing most of them reached two. So the marks followed complete pairing of the features asked about, not longer descriptions. The criteria are set question by question, but pairing turns up again and again.",
+      "hash": "08e35a29f578",
+      "textSha256": "08e35a29f578c2b2ee6832f7a1345d232c1e0be9305c192c8f9e8cce0efb3f0c",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/what-guidelines-show.08e35a29f578.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/what-guidelines-show.08e35a29f578.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/what-guidelines-show.08e35a29f578.generation.json",
+      "plannedRequestSha256": "0f3c26cd98475e57fbb67a5e1e9111fb60713b3723834e3cc1d92e82a2060ef4"
+    },
+    {
+      "id": "drill-1",
+      "parentSceneId": "drill-1",
+      "text": "Your turn. Do the one in your subject, or both. Chemistry first. Two solutions are both zero point one zero mole per litre: hydrochloric acid and ethanoic acid. The table shows their conductivity, how they react with magnesium ribbon, and the volume of sodium hydroxide each needs to be neutralised. Using the data, compare the two solutions in terms of acid strength. Three marks. Pause here to answer.",
+      "hash": "f0e2940da2e2",
+      "textSha256": "f0e2940da2e21f686b69b5ac6cd19ddaf6b51164cbc7fb969649d43a7d4326fc",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/drill-1.f0e2940da2e2.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/drill-1.f0e2940da2e2.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/drill-1.f0e2940da2e2.generation.json",
+      "plannedRequestSha256": "19284e93081c5a201d89338efa9208188d1c4ef26285f6ef21f49033889999b7"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Two constraints: the data, and acid strength. Similarity: both need twenty millilitres of sodium hydroxide: same moles of acid, and the weak acid keeps ionising as base is added. Difference: hydrochloric acid is strong and fully ionised, whereas ethanoic acid is weak, about one percent ionised. So hydrochloric acid has more ions: it conducts better and bubbles faster. The habit to drop: one acid, then the other.",
+      "hash": "5826799d3c0a",
+      "textSha256": "5826799d3c0a4086d13db5bcc355572f45494d6ddf99bc6326c562248dcc87d2",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/feedback-1.5826799d3c0a.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/feedback-1.5826799d3c0a.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/feedback-1.5826799d3c0a.generation.json",
+      "plannedRequestSha256": "21187ed51d36e2f9c213fdd43c7f1ab5f5f555d45dc5e7b0b73eb6af16a653a4"
+    },
+    {
+      "id": "drill-2",
+      "parentSceneId": "drill-2",
+      "text": "Now Biology. The diagram shows one pair of chromosomes in a body cell, after DNA replication. Distinguish between homologous chromosomes and sister chromatids. Two marks. Pause here to answer.",
+      "hash": "868a6ec321c8",
+      "textSha256": "868a6ec321c81cf759a9844ebdca5888d2080a8958af93d3605f22669a6c82d9",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/drill-2.868a6ec321c8.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/drill-2.868a6ec321c8.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/drill-2.868a6ec321c8.generation.json",
+      "plannedRequestSha256": "9ecadefa91f8e992518b8fdc526149e735cca98ea247138725ad6e718f38657d"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Distinguish means differences: two marks, two paired differences. Origin: homologous chromosomes come one from each parent, whereas sister chromatids are two copies of one chromosome, made by DNA replication. Alleles: homologous chromosomes carry the same genes but may carry different alleles, whereas sister chromatids are identical. The habit to drop: two quick definitions, with no feature they differ in.",
+      "hash": "22b7b2d37f03",
+      "textSha256": "22b7b2d37f03638a6c7b7b132db40356e638dc9be8d8739a4a8b9e9488417495",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/feedback-2.22b7b2d37f03.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/feedback-2.22b7b2d37f03.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/feedback-2.22b7b2d37f03.generation.json",
+      "plannedRequestSha256": "2b15800373b61a0c7bbb00f0a229a5cde7d1905d09467f358ffc0f377b785f99"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: compare, give similarities and differences, in pairs. Contrast and distinguish, differences only, still in pairs. Sketch the table, one row per feature, then write one sentence per row, with both or whereas. Next: the judgement verbs, analyse, assess, evaluate and justify, where you make a call and back it up.",
+      "hash": "36ff172ab02b",
+      "textSha256": "36ff172ab02b77a03235811afcf8c3996856db409d2a4e9cde84d9b8269d2155",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/decision-rule.36ff172ab02b.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/decision-rule.36ff172ab02b.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/decision-rule.36ff172ab02b.generation.json",
+      "plannedRequestSha256": "8420a025f37e75dc29f9f3ee7d8d6d29561679a8a3b29ef61f750a7ffb8b2b3c"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Skills-S03-claude-2026-10-21-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Skills-S03-claude-2026-10-21-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Skills-S03-claude-2026-10-21-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
