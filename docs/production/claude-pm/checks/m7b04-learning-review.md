@@ -93,3 +93,23 @@ Within the limit as written, provided earlier chips dim on the next cue. The den
 **Ready to voice after fixes** (findings 1 to 6; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the running time against the 9.5 minute cap and both feedback timings.
 
 ## Resolution
+
+Resolved by the author on 22 October 2026 in `../lessons/bio-m7-b04.md` Revision 2 (status: "learning review and Claude science check resolved; needs Codex error check before voicing"). Narration recounted by script (lines starting "> ", bold removed): **5,925 characters**, about 570 s (9.5 minutes), inside 5,500 to 6,800. Nothing voiced; the exact voiced preview review is still required.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 8: "most of them never infected: whole herds on infected and neighbouring farms were culled, and animals stranded by movement bans, short of feed and space, were killed for welfare." The dot grid draws as two blocks (about 40 disease-control dots; about 20 welfare-cull dots, tag "welfare culls: stranded stock"), and the closed-gate plate lands on "stranded by movement bans". The now-redundant "Livestock movement stopped" clause is cut. |
+| 2 | Applied. Scene 8: "These are **indirect effects**: costs beyond the sick animals, from control and closed markets." Amber tag "indirect: beyond the sick animals". Note 4 adds "Direct effects: losses in the infected animals, including their death or culling." |
+| 3 | Applied. `m7-virus-particle-v1.png` removed from scene 7 and from this video's plate list; grey word tag "FMD virus" beside the cattle plate; no coded icosahedron. |
+| 4 | Applied. About 60 plain grey dots, key "each dot: 100,000 animals"; no silhouettes. The amber few are marked illustrative (no infected count stated or implied). |
+| 5 | Applied. "about three-quarters"; bar 75 to 25; small grey labels "exported: about three-quarters", "eaten here"; facts list dated with the MLA 2024 and ABARES 2024 to 25 figures and a recheck before voicing. |
+| 6 | Applied. `m7-root-knot-galls-v1.png` is a hard dependency for scene 4. It is assigned in Codex brief 99 and not yet delivered (checked 22 Oct), so this video's brief carries it as conditional item 9 with b01's wording. The grey-tag fallback is kept only for the scene 2 thumbnail row. |
+| 7 | Applied: "a fungus native to South and Central America"; note 3 "native to the Americas". |
+| 8 | Applied: "need a film of water on the leaf to germinate"; visual cue updated. |
+| 9 | Applied with tighter wording to hold the length cap: "Biological: the new strain can infect this variety, and wind spreads its spores. Wet weather helps them germinate. ... Blaming the weather alone is the classic mistake: it helps, but the fungus causes the disease." Table row "biological: a strain that infects it, wind-borne spores (helped by wet weather)". Scene 3 chip unchanged. |
+| 10 | Applied: the floret plate is cropped by position to the wheat ear (left third), scaled, not stretched. |
+| 11 | Applied: "Follow the bill.", "Two exam questions. First.", "What does disease cost a crop?", hook hold 1 s. Finding 1's longer welfare clause (+56 in scene 8) was recovered by also trimming 12b ("because the country exports most of its beef") and the 12d close. Reserve trims 1 and 2 stay available at voiced preview. |
+| 12 | Applied: route note now says the JSON already lists bio-m5-b03b (only `entryKnowledge` text optional); title "(94 characters, by script)". |
+| Screen load | Applied: scene 6 left chips dim before anything writes on the right; scene 8 dot grid grey except the amber few, chips dim as the next lands, cost-bar labels small and grey; scene 9 split-bar labels small and grey. |
+
+No findings declined.

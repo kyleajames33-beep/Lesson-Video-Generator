@@ -94,3 +94,23 @@ Within the limit as written, provided earlier chips dim. The densest frames:
 **Ready to voice after fixes** (findings 1 to 4; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the running time and both feedback timings.
 
 ## Resolution
+
+Resolved by the author on 22 October 2026 in `../lessons/bio-m7-b05.md` Revision 2 (status: "learning review and Claude science check resolved; needs Codex error check before voicing"). Narration recounted by script (lines starting "> ", bold removed): **5,696 characters**, about 554 s (9.2 minutes), inside 5,500 to 6,800. Nothing voiced; the exact voiced preview review is still required.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied as given. Scene 9: "And this pathogen probably arrived from overseas, so neither banksia evolved alongside it for long. Yet old man banksia held it back. A short history with a pathogen doesn't mean no defence. A species relies on the defences it already has." Crossed chip and the "introduced: probably from overseas" tag kept; the cross now lands on "Yet old man banksia held it back". |
+| 2 | Applied. Scene 7: "So what happens in real banksias, and does timing matter?" Scene 8: "Both species laid down callose. The clearest difference is timing." Row ladders and "same toolkit" removed; callose chips on each row (amber "callose late", teal "callose"). Also removed "which points to barriers that hold" from the hairpin banksia line and its lit "always there" rung, since the abstract reports delayed penetration only. Note 4: "Timing differed." |
+| 3 | Applied: "Yet some banksia species cope with it far better than others." No place tag on the healthy plate. |
+| 4 | Applied, with one added clause on entry. Scene 4: "As a root ages, its outer cell walls are toughened with lignin and other waterproof materials, and older roots and stems grow bark. A spore's thread has to get past these walls before it can feed, and it usually pushes in where two cells meet. The soft, young part of the root behind the tip has thin walls and no bark, so it's the least protected, which is exactly where the spores settle." Plate 5: thin-walled young epidermis, hypha pressing in at the junction between two epidermal cells; plate 6: callose papilla at that junction. Scene 3 and 5 cues and note 2 updated. |
+| 5 | Applied: "The microscope work used seedlings a few weeks old, in a lab, in one study." |
+| 6 | Applied: "fits the hypersensitive response working". |
+| 7 | Applied: "Cells at and around the infection" in scene 6, 12d, note 3 and the 12c model. |
+| 8 | Applied: "For threatened plants, phosphite can be sprayed or injected." |
+| 9 | Applied: entry knowledge now cites Year 11 for roots and xylem, says b02b does not teach root tips, and lists the root tip zones as not assumed; hyphae recorded as a new name (b01 said "threads"). |
+| 10 | Applied: suberin is screen only ("lignin and other waterproof materials"; gloss "lignin, suberin" kept on screen; pronunciation entry removed). |
+| 11 | Applied: brief item 3 "one ellipsoid to egg-shaped sporangium with no tip papilla", broad exit pore open. |
+| 12 | Applied: route note says the JSON is already updated; only the optional `stop` edit remains. |
+| Screen load | Applied: scene 2 crossed chip dims before the next tag; scene 7 only the spoken row is bright, with day labels and source tag grey; scene 9 limit chips already grey. |
+
+No findings declined.

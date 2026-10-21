@@ -75,3 +75,21 @@ Dotpoint and both examples quoted verbatim; inquiry question correct; title 94 c
 **Ready to voice after fixes 1 to 3** on science. Findings 4 to 11 are wording, record and citation fixes. Recheck on the voicing date: Australia's FMD-free status, the beef export share and myrtle rust state status.
 
 ## Resolution
+
+Resolved by the author on 22 October 2026 in `../lessons/bio-m7-b04.md` Revision 2. Narration 5,925 characters (by script), about 570 s.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 8 names both kinds of cull: "whole herds on infected and neighbouring farms were culled, and animals stranded by movement bans, short of feed and space, were killed for welfare." Facts list quotes the NAO wording and records disease-control culls plus about two million welfare culls (Livestock Welfare Disposal Scheme). |
+| 2 | Applied. "about three-quarters"; bar 75 to 25; facts list: about 74% (2024, MLA-based), about 80% (2024 to 25, ABARES), recheck before voicing. Codex check-only list updated. |
+| 3 | Applied. Virus plate removed from scene 7; grey word tag "FMD virus". Facts list notes FMD virus is small, non-enveloped and icosahedral. |
+| 4 | Applied: "native to South and Central America"; note 3 "native to the Americas"; facts list notes the unknown pathway. |
+| 5 | Applied: "need a film of water on the leaf to germinate". |
+| 6 | Applied. Scene 8 definition "costs beyond the sick animals, from control and closed markets"; author note in the review notes: "Economists differ; HSC answers are marked on a stated, consistent definition." Note 4 states the direct definition including death or culling. |
+| 7 | Declined (optional, no change required by the reviewer). "Squeeze" is a fair beginner image, and the scene 4 visual (the coded xylem line narrows and breaks) is drawn to match it. |
+| 8 | Applied: 12c model now gives 1 mark each for the biological cause with its link, the agricultural cause, and the explanation of why one variety raises losses district-wide. |
+| 9 | Applied: site error 9 now reads "Use 'over six million (NAO 2002)' throughout" and notes the page's internal inconsistency. Error 10 unchanged. |
+| 10 | Applied: route note and title count (94) corrected. |
+| 11 | Applied: facts list says "Critically Endangered, NSW and Commonwealth (BioNet profile); confirm the EPBC listing date on SPRAT before writing it anywhere." Narration unchanged (no act or year). |
+
+Recheck on the voicing date (carried in the design): Australia's FMD-free status, the beef export share and myrtle rust state status.

@@ -71,3 +71,23 @@ Dotpoint and both examples quoted verbatim; inquiry question correct; the source
 **Ready to voice after fixes 1 to 3** on science. Findings 4 to 11 are wording, plate and record fixes. The Codex error check should still try to obtain the Tynan et al. full text (results and discussion) to confirm nothing contradicts the abstract.
 
 ## Resolution
+
+Resolved by the author on 22 October 2026 in `../lessons/bio-m7-b05.md` Revision 2 (this file was re-read in full before resolving). Narration 5,696 characters (by script), about 554 s.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied as given (scene 9 hedged: "probably arrived from overseas, so neither banksia evolved alongside it for long. Yet old man banksia held it back."). Author note in the facts list: "Origin debated for eastern Australia (TAP 2018 background; Arentz 2017)." |
+| 2 | Applied. Scene 7 "So what happens in real banksias"; scene 8 "Both species laid down callose. The clearest difference is timing."; row ladders removed; hairpin banksia's delayed entry no longer attributed to barriers; note 4 "Timing differed."; facts list now states only what the abstract reports. |
+| 3 | Applied. Scene 4 rewritten (walls toughen with age; young root thin-walled, no bark; the thread "usually pushes in where two cells meet"). Brief item 5: hypha presses in at the junction between two thin-walled epidermal cells; item 6: papilla at that junction. Facts list cites Hardham and Hardham and Blackman. |
+| 4 | Applied: "fits the hypersensitive response working". |
+| 5 | Applied: "Cells at and around the infection" (scene 6, 12d, note 3, 12c model). |
+| 6 | Applied: brief item 3 "ellipsoid to egg-shaped sporangium with no tip papilla", broad exit pore open; zoospore description unchanged. |
+| 7 | Applied: "The microscope work used seedlings a few weeks old"; facts list adds the 10-month ranking (*B. coccinea* moderately susceptible, *B. hookeriana* and *B. ashbyi* most susceptible, *B. serrata* tolerant). |
+| 8 | Applied: "For threatened plants"; author note "phosphite also slows the pathogen directly; protection fades and needs re-application." |
+| 9 | Applied: Daniel and Guest 2006 dropped; Suddaby et al. 2008 (*Lambertia*) and the *E. marginata* study cited; Suddaby added to the Codex check-only list. |
+| 10 | Applied: site error 2 notes the 1965 date is fine; site error 10 replacement "a barrier of dead, corky cells that also contains antimicrobial compounds". |
+| 11 | Applied: route note corrected; optional `stop` edit kept for root. |
+| Dotpoint note | Applied: fungal-fallback author note added to the review notes (myrtle rust on a named myrtle; never call *P. cinnamomi* a fungus). |
+| YouTube | Applied: description now says "are susceptible to"; title count 88 by script. |
+
+The Codex error check is asked (doubt f and the check-only list) to try to obtain the Tynan et al. full text.
