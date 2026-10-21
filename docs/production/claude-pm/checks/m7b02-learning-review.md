@@ -102,3 +102,22 @@ The 11a card with its four-row table is dense because it is the task.
 **Ready to voice after fixes** (findings 1 to 4; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the total running time against the 9.5 minute cap (finding 11) and the feedback timings.
 
 ## Resolution
+
+Resolved 22 Oct 2026 by the resolving author in `../lessons/bio-m7-b02.md` Revision 2 (status: learning review and Claude science check resolved; needs Codex error check before voicing). Narration recounted by script (lines starting "> ", bold markers removed): **5,919 characters**, 1,022 words, about **568 s**, within the 5,500 to 6,800 band and under the 9.5 minute cap.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied as written. Scene 3: "But dust and microbes are heavier than air, so they settled in the low bend and couldn't climb up to the broth." The specks slow in the curve and drop at the low point. |
+| 2 | Applied. Scene 4: "Boiled broth in flasks with short, straight necks, open to falling dust, turned cloudy within days." A brief `SteamWisps` flick over the straight-neck flask. |
+| 3 | Applied. Scene 9: "is rarely ethical"; key note 5: "deliberately infecting healthy people is rarely ethical". |
+| 4 | Applied. Scene 7: the TB tissue field sends an arrow, with the existing `m7-inoculating-loop-v1.png` on it, straight to the serum slope; colonies ringed on "pure culture". The petri dish is dropped from the scene and the asset list. |
+| 5 | Applied. "still can't be grown on their own in a lab"; tag "leprosy bacterium: no culture on its own". |
+| 6 | Applied (optional). "Saying the evidence already proves X causes the disease is the classic mistake." Chip "all steps done, so X is proven". The old chip stays a named wrong chain in the model. |
+| 7 | Applied. "In 1882, Koch announced the cause of tuberculosis, which he said caused about one in seven of all deaths." Tag "Koch: about 1 in 7 of all deaths". |
+| 8 | Applied. Hook: "For a long time, many people thought ..."; the main question keeps "For centuries". |
+| 9 | Applied. Key note 3: "Koch's postulates (from his 1882 tuberculosis work):". |
+| 10 | Applied. A host circle gains its illness mark first, then a microbe glyph enters it, labelled "came in later?", then fades. |
+| 11 | Applied. Scene 7's "Robert Koch was a German doctor." is cut; scene 7 now opens "In 1882, Koch announced", following scene 6's "That was Koch's job." |
+| 12 | Applied. Decisions and scene 8: the guinea pig is drawn at least 1.5 times the tube's height when both share a bay. |
+
+Nothing declined. New plates unchanged (ten); `m7-inoculating-loop-v1.png` reused, `m7-petri-colonies-v1.png` no longer used. Still pending: Codex error check, recording-stage brief check, and a repeat of this review on the exact voiced preview (running time and feedback timings). Human listening pending.

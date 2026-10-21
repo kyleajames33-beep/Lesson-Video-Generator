@@ -96,3 +96,24 @@ The 11a card with its three-row table is dense because it is the task.
 **Ready to voice after fixes** (findings 1 to 6; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the total running time against the 9.5 minute cap (finding 12) and the feedback timings.
 
 ## Resolution
+
+Resolved 22 Oct 2026 by the resolving author in `../lessons/bio-m7-b01.md` Revision 2 (status: learning review and Claude science check resolved; needs Codex error check before voicing). Narration recounted by script (lines starting "> ", bold markers removed): **5,945 characters**, 1,050 words, about **570 s**, within the 5,500 to 6,800 band and at, not over, the 9.5 minute cap.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 2: "lives in or on another organism, its host". Glosses: "pathogen: an organism or agent that lives in or on a host and harms it"; "host: the organism it lives in or on". |
+| 2 | Applied as written. Scene 3: "each too small to see on its own" and "usually big enough to see"; branch labels "microorganisms: single cells or threads" and "macroorganisms: many-celled animals"; scene 10 "is it a many-celled animal?"; 11b "because it's a many-celled animal, a worm". Key note 2 and the 11a model updated to match. |
+| 3 | Applied. Scene 4 and the recall note: "with its DNA lying in the cytoplasm"; the inset shows the loop lying in the cytoplasm. |
+| 4 | Applied. Scene 5: "Other parasites live on the outside, like ticks and lice." |
+| 5 | Applied. Scene 9: "ribosomes shaped differently from ours"; tag "targets: wall, bacterial-type ribosomes". |
+| 6 | Applied. Scene 10: "is it RNA only, protein only, or genes in a coat?" and its chip; scene 12 chip "sort it: cells? many-celled animal? nucleus? what is it made of?". |
+| 7 | Applied. Scene 9's penicillin target pulse uses a generic `b6a-bacterium-v1.png` glyph (no species named); the bacteria leaf chip reads "antibiotics". The TB rod stays in 11d. |
+| 8 | Applied. Narration and card row: "a single cell with its own nucleus". |
+| 9 | Applied in part. The rod beside the red cell pairing moves to the start of scene 6, on "Now go smaller than any cell". Declined: splitting scene 4 into two files. Moving the pairing removes the competing visual, and a seventeenth file adds 2 s of padding at the cap. |
+| 10 | Applied. Hook tag "flu (a virus)"; scene 2 marks the two pathogens with a small amber coded ring, no tint over the plate glyphs. |
+| 11 | Applied. The viroid stays at true scale beside the virus; the prion is shown on its own with the grey tag "one protein molecule: far smaller than a virus". The Decisions' visual system is updated. |
+| 12 | Applied. All three trims taken (scene 8 protozoa sentence, grey tag kept silently; "and easy to mix up"; "a pathogen, or something else"). The ecto and endo sentence stays. New preview reserves are recorded in the design. |
+| 13 | Applied. Key note 3: "parasitic worms such as helminths (pork tapeworm) and, in plants, root-knot nematodes; ectoparasites (ticks, lice)". |
+| 14 | Declined (optional). 11d keeps "the prion is too small for the drug to reach": this video's size ladder is what invites the size error. "Antibiotics kill all germs" stays a named wrong chain in the model. |
+
+Also applied from the Claude science check: "walls containing chitin", "found especially on nerve cells", 11b without "always", "most can pass between hosts" on screen and in key note 1, the crown gall tag "a swelling at the stem base", and the site error 5 and 8 corrections. Plate list unchanged: nine new plates. Still pending: Codex error check, recording-stage brief check, and a repeat of this review on the exact voiced preview (running time and feedback timings). Human listening pending.

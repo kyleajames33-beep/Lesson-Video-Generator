@@ -85,3 +85,24 @@ The dotpoint and example are quoted verbatim. "Each shown at its real relative s
 **Ready to voice after fixes 1 to 3** on science. Findings 4 to 14 are minor. The Codex error check remains as planned (PSTVd native length, TB rod size, *Phytomonas*, Fleming dates).
 
 ## Resolution
+
+Resolved 22 Oct 2026 by the resolving author in `../lessons/bio-m7-b01.md` Revision 2. Narration 5,945 characters (counted by script), about 570 s.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied (with learning review finding 2): "each too small to see on its own"; "usually big enough to see"; the sorting question is "many-celled animal?". Facts list notes the root-knot nematode and scabies mite sizes. |
+| 2 | Applied: "is it RNA only, protein only, or genes in a coat?" in scene 10 and its chip; scene 12 chip "what is it made of?". |
+| 3 | Applied: "lives in or on another organism, its host"; gloss "host: the organism it lives in or on". |
+| 4 | Applied: "with its DNA lying in the cytoplasm". |
+| 5 | Applied: "with walls containing chitin"; key note "chitin in the wall"; facts list notes glucans and glycoproteins. |
+| 6 | Applied: 11b "a virus has a protein coat" (no "always"). |
+| 7 | Applied: (a) "ribosomes shaped differently from ours" (70S against 80S in the facts list); (b) penicillin's target is shown on a generic `b6a-bacterium-v1.png` glyph, never the TB rod. 11d unchanged. |
+| 8 | Applied: "found especially on nerve cells". |
+| 9 | Applied: screen definition "caused by a pathogen; most can pass between hosts"; key note 1 "and most can pass between hosts"; scene 12 "a pathogen, or something else"; the "Stops after" line follows. Scene 2's spoken sentence is unchanged, as advised. |
+| 10 | Applied on screen only: the tag reads "crown gall: a swelling at the stem base". Narration keeps "a swelling on stems" (true, since galls also form on lower stems) to stay at the length cap. |
+| 11 | Applied (learning review finding 13). |
+| 12 | Applied: site error 8 now says the paragraph contains six errors, listing viroids infecting animals and viroids having a protein coat separately; proposed "contains six factual errors". |
+| 13 | Applied: site error 5 quotes "... into the host's DNA using reverse transcriptase". |
+| 14 | Applied (learning review finding 11): the viroid stays at true scale; the prion is not paired with the virus and carries "one protein molecule: far smaller than a virus". |
+
+Nothing declined. The Codex error check remains (PSTVd native length, TB rod size, *Phytomonas*, Fleming dates), with site errors 1 to 12 to be logged in `../site-corrections-m7.md`.

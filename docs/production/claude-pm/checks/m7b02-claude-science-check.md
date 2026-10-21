@@ -105,3 +105,22 @@ The dotpoint and both examples are quoted verbatim. "Trace Koch's four steps thr
 **Ready to voice after fixes 1 and 2** on science. Findings 3 to 11 are minor. The Codex error check remains as planned, especially the koala listing and the *M. leprae* culture status near recording. Site errors 4 and 7 should not be forwarded as errors.
 
 ## Resolution
+
+Resolved 22 Oct 2026 by the resolving author in `../lessons/bio-m7-b02.md` Revision 2. Narration 5,919 characters (counted by script), about 568 s.
+
+| # | Action |
+| --- | --- |
+| Dotpoint | Applied: the claim that the ledger's apostrophes are mis-encoded is dropped. The design now says the ledger uses typographic apostrophes (U+2019), the draft's straight apostrophes are acceptable, and U+2019 should be used for a character-exact quote. |
+| 1 | Applied: "deliberately infecting a healthy person is rarely ethical"; key note 5 "deliberately infecting healthy people is rarely ethical". |
+| 2 | Applied: "still can't be grown on their own in a lab"; tag "leprosy bacterium: no culture on its own". |
+| 3 | Applied: "which he said caused about one in seven of all deaths"; tag "Koch: about 1 in 7 of all deaths". |
+| 4 | Applied (learning review finding 4): tissue field, inoculating loop, serum slope; no mixed plate. |
+| 5 | Applied: key note 3 "from his 1882 tuberculosis work"; facts list "written as rules by Loeffler (1884) and Koch (1890)". |
+| 6 | Applied: site error 7 withdrawn and not forwarded; scene 4 keeps the straight-neck flask with "Boiled broth in flasks ...". |
+| 7 | Applied: site error 4 withdrawn and not forwarded. The Codex brief now lists site errors 1 to 3, 5, 6 and 9. |
+| 8 | Applied: "For a long time, many people thought ...". |
+| 9 | Applied: Decisions state that the ledger's investigation component stays open for p02 and any depth-study entry. |
+| 10 | Applied (optional): "destroyed or shut out something in the air that life needed"; the objection chip and facts list match. |
+| 11 | No change needed; the koala listing and the WHO TB figure stay flagged for a recheck near recording. |
+
+Nothing declined. The Codex error check remains, especially the koala listing and the *M. leprae* culture status near recording.
