@@ -32,3 +32,10 @@ Each design goes through the full pipeline: pack, design, learning review, scien
 - **Keys:** m6b05 for bio-m6-b05. Salt hydrolysis moves from C05 and C06 to C13 or C14. The Kw value moves to C07; C06 teaches only self-ionisation and "neutral means equal".
 - **bio-m6-b08:** the prerequisite changes from bio-m5-b10 to bio-m5-b11, because allele-frequency counting is taught in B11. b08 uses the Florida panther as its main case, which goes beyond the site lesson.
 - **Amphiprotic Ka against Kb** (which way an amphiprotic ion reacts): C10 deferred it and C11 leaves it out. It goes to chem-m6-g02 (practice). The buffer dotpoints are C6-IQ3-07 and -08 in the current ledger. Codex brief 90 corrects the route draft IDs, including P05.
+
+## Claude decisions on brief 95 (21 Oct 2026)
+
+- **bio-m6-p02 is cut.** bio-m6-b07 (live) owns B6-IQ1-05 (meiosis, fertilisation and mutation as sources of variation). The card model's 9 : 3 : 3 : 1 dihybrid grid goes beyond the HSC syllabus and would re-teach B07. Remove it from the playlist.
+- **bio-m6-p01 is kept** as a data-analysis practical video: a teacher-prepared UV and yeast survival dataset, fair-test reasoning, and why colony counts measure survival, not mutation. No live UV exposure is shown as a student step.
+- The Biology biotechnology inquiries (B6-IQ2-01, IQ3-01, IQ3-03) stay with the core videos and bio-m6-g02, as Codex proposed.
+- Chemistry keeps P01 to P07 and G01 to G04 as routed. Design order follows playlist order: G01, G02, P02, P03, P04, P05, P06, G03, P01, G04, P07.
