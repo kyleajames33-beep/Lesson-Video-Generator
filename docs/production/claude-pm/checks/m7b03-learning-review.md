@@ -96,3 +96,22 @@ The 12c card with its two-row information table is dense because it is the task.
 **Ready to voice after fixes** (findings 1 to 5; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the running time against the 9.5 minute cap and the two feedback timings.
 
 ## Resolution
+
+Resolved by the design author in Revision 2 (22 Oct), `../lessons/bio-m7-b03.md`. Narration recounted by script (lines starting "> ", bold removed): 5,911 characters, 990 words, about 568 s (under the 570 s cap). 12b about 26 s, 12d about 27 s.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 3 chip "sex, mother to baby"; scene 4's grey row adds the silent chip "shared needles: a fomite". Narration unchanged. Facts list updated. |
+| 2 | Applied. Scene 9 "An entry adaptation gets a pathogen in and holds it where it enters, like fimbriae or hooks."; chip "entry: gets in, holds on"; note 3 "hold it at the entry site"; scene 7 tag "entry: holds on at the gut wall". |
+| 3 | Applied. Scene 8 "so it's injected with saliva into the skin when the mosquito bites."; the coded path ends in the dermis, then a wiggle moves into the capillary; tag "injected under the skin's surface". Note 4 "injected into the skin". The plate brief now puts the mouthparts in the dermis beside the capillary. |
+| 4 | Applied, shortened. Scene 2 "To spread, a pathogen has to leave one host, travel, and get into a new host." (the "solve one problem" bridge was dropped for length; the meaning is the same). Note 1 and the YouTube description match. |
+| 5 | Applied. 12c narration and card use the clumping wording; 12d "both hold on where they enter, pili on the gut lining and the protein on airway cells"; similar band "entry: holds on at the entry site"; model mark 1 reworded. |
+| 6 | Applied. Influenza uses `m6-virus-particle-v1.png` in scenes 3, 8 and 9; `m7-virus-particle-v1.png` is COVID-19 only (scene 6). |
+| 7 | Applied: "a link it doesn't use". |
+| 8 | Applied: "marked the deaths" and "didn't know which microbe caused cholera". |
+| 9 | Applied: "usually grouped with direct contact"; screen notes "grouped as direct: close range" and "lingers: grouped as indirect". |
+| 10 | Applied: "Every control measure breaks a link." in scene 11, the notes memory line and the aid check. |
+| 11 | Applied as recommended. The tobacco mosaic virus case stays, so the secateurs plate will be used. New reserve trims: scene 11's last sentence, then scene 3's "a main route for influenza,". |
+| 12 | Applied, with extra small cuts: scene 8 "Now, getting out."; 12a "Two exam questions. First."; scene 10 drops "though,"; hook hold 1 s. |
+
+Screen load: the scene 9 note is applied (the three-step line writes only after the two station chips dim). The plate cut order is now this review's (no-handle pump first, then raw chicken). All nine new plates are kept. Ready for the Codex error check; repeat this review on the exact voiced preview.

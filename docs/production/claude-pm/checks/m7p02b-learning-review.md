@@ -91,3 +91,21 @@ Within the limit as written, provided tags dim on the next cue. The densest fram
 **Ready to voice after fixes** (findings 1 to 4; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the running time and the 13d feedback timing.
 
 ## Resolution
+
+Resolved by the design author in Revision 2 (22 Oct), `../lessons/bio-m7-p02.md`. Narration recounted by script (lines starting "> ", bold removed): 5,889 characters, 1,015 words, about 570 s (at the cap, with the risk-table hold at 2 s). 13b about 25 s, 13d about 30 s.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 11 card "150, 156, 162"; scene 8 "Ten to the minus three averages a hundred and fifty six, and ten to the minus four only fourteen."; chip "156 (mean of 3 plates)"; scene 9 given "colonies: 156 (mean)". A1's 41, 47 and 53 now appear only in 13a and 13b. |
+| 2 | Applied: "And no colonies doesn't prove water is safe: the plate tested only a tenth of a millilitre."; claim card "tank: 0 colonies in 0.1 mL ≠ safe"; key note 4 adds "(only 0.1 mL was tested)". |
+| 3 | Applied: "Schools buy only risk group one cultures, the lowest risk group in the Australian standard."; header line as proposed. |
+| 4 | Applied with the proposed 399-character text and the voiced third row. |
+| 5 | Applied: "Four thousand seven hundred is the classic slip". |
+| 6 | Applied: "and she spread", "the plates grew". |
+| 7 | Applied: two coded tape strips over the positive control plate's rim. |
+| 8 | Applied: three copies of `m7-plate-countable-v1.png` rotated 0°, 120° and 240° with chips "150", "156", "162", then the tally overlay. The brief asks for a non-symmetrical colony pattern so the rotated copies don't look identical. |
+| 9 | Applied: "Count the plate with about thirty to three hundred". |
+| 10 | Applied: the scene 4 cut, scene 1 "Let's find out.", the 13c "One more." cut, and the risk-table hold cut from 3 s to 2 s (needed to reach the cap). |
+| 11 | Recorded in Decisions as a root action (add bio-m7-b03 to p02's `prerequisites`); the route JSON is outside this author's files. |
+
+Plates: `m7-plate-control-growth-v1.png` is cut (scene 7 uses `m7-plate-few-v1.png` rotated 180°). The brief now asks for "about 150 to 160" and "about 200 to 220" colonies. The incubator is kept (context, and reuse in p05). Scene 2 screen load: the guideline line dims as "different" lands. Ready for the Codex error check; repeat this review on the exact voiced preview.

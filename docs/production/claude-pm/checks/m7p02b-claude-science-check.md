@@ -80,3 +80,21 @@ The dotpoint and example are quoted verbatim. The title is over the limit (findi
 **Ready to voice after fixes 1 to 3** on science. Findings 4 to 11 are wording, record and author-note fixes. The Codex error check remains as planned (every value under "Numbers to verify", AS/NZS 2243.3:2022 wording, NSW school incubation and positive-control guidance, the ADWG wording now in finding 1).
 
 ## Resolution
+
+Resolved by the design author in Revision 2 (22 Oct), `../lessons/bio-m7-p02.md`.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 2's card line, key note 1, site error 4's quote, the numbers table and "Numbers to verify" use "should not be detected in a minimum 100 mL sample of drinking water". |
+| 2 | Applied. Scene 12 "Schools buy only risk group one cultures"; header line and key note 5 as proposed; safety facts check updated. |
+| 3 | Applied. Title "Microbial Testing of Water or Food: Serial Dilution and CFU per mL \| Year 12 Biology Module 7" (93 characters). |
+| 4 | Applied as an author note (20 to 30 °C range; 28 °C inside both); Codex is asked to confirm the NSW figure. No learner-copy change. |
+| 5 | Applied. Site error 2 quotes "spread 0.1 mL or 1 mL from each dilution", with the proposed pour-plate wording. |
+| 6 | Applied: "about" added in 13d and scene 14. |
+| 7 | Applied: "the plate tested only a tenth of a millilitre"; the detection-limit arithmetic is in "Numbers to verify". |
+| 8 | Applied as an author note (sterile water, or sterile saline if supplied). No learner-copy change. |
+| 9 | Applied. Codex is asked to confirm the NESA glossary; otherwise the footer is attributed to the Australian Curriculum glossary. |
+| 10 | Applied to the A2 author model ("also accepted: 1 mL is too much to spread evenly"). Not narrated. |
+| 11 | Applied: the scene 11 example is 150, 156, 162 (mean 156). |
+
+Calculations rechecked after the changes: (150 + 156 + 162) ÷ 3 = 156; A1 unchanged (4.7 × 10⁴ CFU per mL). Ready for the Codex error check.

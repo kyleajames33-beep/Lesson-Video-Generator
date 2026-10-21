@@ -76,3 +76,23 @@ The dotpoint, example and second dotpoint are quoted verbatim. The title is over
 **Ready to voice after fixes 1 to 5** on science. Findings 6 to 13 are wording, citation and record fixes. The Codex error check remains as planned (pump handle date, Pacini, *Plasmodium* development and deposit site, scolex, measles persistence, Ross River virus vectors, TCP role).
 
 ## Resolution
+
+Resolved by the design author in Revision 2 (22 Oct), `../lessons/bio-m7-b03.md`.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 8 "injected with saliva into the skin when the mosquito bites"; the coded path ends in the dermis, then moves into the capillary. The facts list says sporozoites are deposited in the dermis and then enter blood vessels. Note 4 and the feeding-plate brief are updated, and the Codex check list now includes the deposit site. |
+| 2 | Applied. 12c narration "help it cling in clumps to the small intestine's lining"; card "hair-like pili help the bacteria cling together in clumps on the lining of the small intestine"; 12d "both hold on where they enter"; model mark 1 as proposed. The facts list records the TCP role (Kirn 2000; Lim 2010). |
+| 3 | Applied. Scene 2 "To spread, a pathogen has to leave one host, travel, and get into a new host."; note 1 "To spread, a pathogen must leave a host, travel and enter a new host." |
+| 4 | Applied. Scene 3 chip "sex, mother to baby"; scene 4 chip "shared needles: a fomite"; facts list updated. |
+| 5 | Applied. Title "How Do Diseases Spread? Transmission Modes and Pathogen Adaptations \| Year 12 Biology Module 7" (94 characters). |
+| 6 | Applied: "grouped with direct contact", both screen notes, and the WHO 2024 author note in the facts list. |
+| 7 | Applied: "marked the deaths", "didn't know which microbe caused cholera". The facts list notes the registered-data map and Snow's water-borne agent. |
+| 8 | Declined for length (optional). "A ring of hooks" is a fair simplification; the scolex plate brief keeps the double crown, and the facts list records it. |
+| 9 | Applied: "Every control measure breaks a link." |
+| 10 | Applied. Site error 5 is withdrawn and not forwarded to Codex (the Codex request now lists items 1 to 4 and 6 to 9). |
+| 11 | Applied. Site error 9 is reworded with the research file's actual 2025 Q22(b) finding and the live L02 summary quote. |
+| 12 | Applied. Decisions now say the route JSON already lists both actions and both site lessons; only the optional `start` wording remains for root. |
+| 13 | Applied: "a link it doesn't use"; the facts list author note explains the vector link. |
+
+Site error 8's proposed text now ends "injected into the skin when the mosquito bites". Ready for the Codex error check.
