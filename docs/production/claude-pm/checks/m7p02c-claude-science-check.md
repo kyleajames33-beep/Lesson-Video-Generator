@@ -156,3 +156,19 @@ No blockers.
 **Ready to voice after fixes.** S1 and S2 change narration, the risk table and the safety facts and must be applied before recording. M1 to M6 are cheap and should be applied. The Codex error check is still required.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m7-p02.md` Revision 2 (22 Oct). Narration 6,082 characters (recounted by script), about 551 s.
+
+| Finding | Resolution |
+| --- | --- |
+| S1 (litmus needs a comparison) | Applied. Scene 6 adds a strip over a tube of the same solution kept in the dark: "A strip over a tube kept in the dark changes far less, so the red isn't just bromine vapour." Visual bracket "lit: red; dark: little change → HBr, not just Br₂ vapour". Author note (f) records the Br₂ + H₂O reaction on the paper and asks for a teacher trial run (use a more dilute layer if the dark strip reddens). Key note 3 updated. A2's given observation unchanged. |
+| S2 (no liquid bromine) | Applied. The demonstration sample is scene 5's orange cyclohexane top layer, drawn off by a coded pipette ("take that orange top layer: it's bromine dissolved in cyclohexane"). Risk row replaced: "UV lamp and hydrogen bromide gas (demonstration only)" / "UV: eye and skin damage; HBr: corrosive, irritates the airways" / "teacher only; shielded lamp; inside the fume cupboard". Safety facts bullet replaced as given, with the liquid-bromine note kept as an author note only. Decisions bullet rewritten; author note (f) gives the layer's strength (about 0.02 to 0.04 mol/L) and how a teacher can scale it up. |
+| M1 (absolute no-change claim) | Applied in hedged form: "No colour change points to no double or triple bond, even when the formula looks unsaturated". Author note (k) names benzene rings and electron-poor alkenes. Key note 4 matches. |
+| M2 (A1 alkene in excess) | Applied: card "A student shakes an excess of X with a small volume of bromine water in a stoppered test tube, in normal room light."; narration "shakes an excess of X with a little bromine water". Feedback 1 underlines it ("An excess of pent-one-ene would have used it all up"). |
+| M3 (A2 isomer) | Applied: feedback 2 shows 2-bromoheptane, CH₃CHBrCH₂CH₂CH₂CH₂CH₃ (narration "two-bromoheptane"), grey tag "any one position is accepted: 1-, 2-, 3- or 4-bromoheptane". The demonstration sample is cyclohexane, so scene 6 keeps bromocyclohexane (one product, twelve equivalent hydrogens); A2 keeps heptane as the transfer compound. |
+| M4 (UV lamp note) | Applied to author note (f). |
+| M5 (partition ratio source) | Applied: author note (d) now reads "estimate, not sourced"; learner copy unchanged. |
+| M6 (cyclohexene SDS notes) | Applied to the safety facts: peroxide former, date bottles on opening; some SDSs add H311 or H312. Not learner copy. |
+| Site error 4, "clear" is not "colourless" | Logged under Decisions, site correction 4(b), and in the Codex request to add it to the owner record. |
+
+Next gate: Codex error check before voicing.

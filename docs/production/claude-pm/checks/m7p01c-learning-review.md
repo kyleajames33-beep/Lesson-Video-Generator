@@ -114,3 +114,19 @@ No blockers.
 **Ready to voice after fixes** (S1 to S3 before recording, with the science check's S1 decision on hexane; M1 to M6 are cheap and should be applied, M6 to stay at or under 9.5 minutes). Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m7-p01.md` Revision 2 (22 Oct). Narration recounted by script (build parser rules, only lines starting "> "): 6,308 characters, 20 scenes, about 570 s (9.5 minutes) with holds. No em dash. Root decision of 22 Oct applied: the hands-on set is heptane, octane and nonane; hexane stays only as a data-book point in scene 9 (reason: n-hexane is STOT RE 1, H372, nervous system, from 1 May 2026, and H361f).
+
+| Finding | Resolution |
+| --- | --- |
+| S1 (why evaporation cools) | Applied. Scene 3: "Only the fastest molecules have enough energy to escape, so the ones left behind are slower on average, and the liquid **cools**." The escaping molecule is drawn as the largest jiggler; tag "fastest escape → the rest are slower → cooler". Cause chain and teaching checks updated. |
+| S2 (accuracy card) | Applied, with root's framing (agreement against accuracy). Scene 11: "**Accuracy** depends on the probe reading true temperatures, so check it against a calibrated thermometer. The **ranking** matching the published boiling points supports the conclusion, but that's agreement, not accuracy." Card: "Accuracy: close to the true value? Check the probe against a calibrated thermometer."; grey tag "ranking matches the data book: agreement, not accuracy"; existing plate `m5x-thermometer-cold-v1.png` reused as the reference thermometer. Key note 5 and author note (h) changed to match. |
+| S3 (unexplained H361f) | Resolved by the root decision: hexane is no longer in the practical, so the risk table carries only heptane, octane and nonane, each code with a plain harm (H225 and H226, H336, H304, H315, H400 and H410). Scene 13 adds a substitution line ("We swapped out **hexane**, because repeated exposure can damage nerves") with a green chip giving H372 and its plain harm. |
+| M1 (scene 9 number load) | Applied. Value tags dim as step labels write; the middle six step labels write in grey; only "+72.9" and "+25.2" brighten (the graph now runs to C9). |
+| M2 (pentane wording) | Applied: "pentane boils at thirty six degrees, so its vapour builds up fastest, which makes it the biggest fire risk in a class test." |
+| M3 (scene 1 bright items) | Applied: the bottle labels dim as the heading writes; bright at the end are the heading and the chip. |
+| M4 (key note 5 overloaded) | Applied: split into note 5 (validity, reliability, accuracy, limits) and note 6 (risk). |
+| M5 (prediction beat) | Declined for length: the video sits at the 9.5 minute ceiling after S1, S2 and the substitution line, and a prediction adds speech and a hold without a new cause. Recorded under Revision 2 changes; reconsider at the voiced preview only if time is freed. |
+| M6 (length offsets, "sample results") | Applied. Reserve cuts used (scene 6's "All three started at twenty one point eight"; scene 13's reading hold 3 s to 2 s; the hexane nerve clause replaced by the shorter substitution sentence), plus trims that carried no cause (scene 11's opening, scene 12's "Every method has limits" and "as the last video showed", feedback 2's named set, "anywhere near them"). Grey "sample results" tags on scene 6's graph and scene 7's table header. |
+
+Constructed results rewritten for the new set (start 21.8 °C; mean drops 6.0, 2.2 and 0.7 °C; spreads 0.4, 0.4 and 0.2 °C), recomputed by script. Next gate: Codex error check before voicing; this review is to be repeated on the exact voiced preview. Human listening remains pending.

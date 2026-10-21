@@ -155,3 +155,17 @@ No blockers.
 **Ready to voice after fixes.** S1 (with the owner's decision on hexane) and S2 change learner copy and must be applied before recording; S1's preferred route also changes the constructed data, which then need the Codex error check. M1 to M4 are cheap and should be applied.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m7-p01.md` Revision 2 (22 Oct). Narration 6,308 characters (recounted by script), about 570 s.
+
+| Finding | Resolution |
+| --- | --- |
+| S1 (n-hexane H372; H361f with no harm) | Preferred fix adopted by root decision (22 Oct): the hands-on set is heptane, octane and nonane in scenes 1 to 8, 10 to 14, 18 to 20 and the key notes; hexane stays only at 68.7 °C in scene 9's data and as scene 13's substitution example. Decision and reason (STOT RE 1, H372, nervous system, 22nd ATP from 1 May 2026; also H361f) recorded under Decisions, "Sample set". Risk table rewritten: "heptane, octane: highly flammable (H225); nonane: flammable (H226)", "vapour (H336) / drowsiness, dizziness", H304, H315 and "waste (H400, H410)". Safety facts rewritten, including n-nonane (H226, H304, H315, H336, H400, H410; flash point about 31 °C) and n-hexane's amended entry. A2 keeps pentane, hexane and 2-methylpentane as the plan to criticise. |
+| Constructed data for the new set | Rewritten with realistic drops: heptane trials 5.8, 6.2, 6.0 (mean 6.0 °C); octane 2.3, 2.0, 2.4 (mean 2.2 °C); nonane 0.7, 0.6, 0.8 (mean 0.7 °C); representative runs to minima of 15.8, 19.5 and 21.1 °C; scene 6 y axis 15 to 23 °C. Recomputed by script; plausibility against vapour pressures (4.7, 1.4, 0.45 kPa) in author note (c). Scene 9 extended to C9 (nonane 150.8 °C) so every tested member has a boiling point on the agreement strip. |
+| S2 (accuracy card) | Applied as given, with the explicit line "that's agreement, not accuracy"; author note (h) keeps the cancelling offset and adds that a temperature-dependent error does not cancel. |
+| M1 (scene 3 cause of cooling) | Applied ("Only the fastest molecules have enough energy to escape ..."). |
+| M2 (author-note confounds) | Applied and extended as root asked: author note (c) lists seven confounds (air flow; liquid held by the paper, with the most volatile member running dry and compressing, not reversing, the ranking; start temperature; enthalpy of vaporisation; condensation below the dew point; probe response time; probe resolution against nonane's 0.7 °C drop). Learner copy keeps air flow (scene 5) and liquid on the paper (scene 12). |
+| M3 (pentane wording) | Applied. |
+| M4 (octane source) | Applied: octane 125.6 °C (CRC 125.62; NIST 125.65 noted), steps +27.2 and +25.2 (C8 to C9); spoken last step is now "about twenty five from octane to nonane". |
+
+Next gate: Codex error check of the new constructed data, steps and hazard classes before voicing.

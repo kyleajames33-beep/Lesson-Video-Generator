@@ -104,3 +104,18 @@ No blockers.
 **Ready to voice after fixes** (S1 and S2 before recording, coordinated with the science check's S1 and S2; M1 to M6 are cheap). Length stays inside the band. Repeat this review on the exact voiced preview.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m7-p02.md` Revision 2 (22 Oct). Narration recounted by script (build parser rules, only lines starting "> "): 6,082 characters, 16 scenes, about 551 s (9.2 minutes) with holds. No em dash.
+
+| Finding | Resolution |
+| --- | --- |
+| S1 (control comparison not spoken) | Applied. Scene 3: "as a control: it's diluted by the same amount, but there's nothing in it for the bromine to react with." Scene 5: "Now look at the **control**. It's been diluted just as much, and it's still clearly orange. So dilution can't explain the pale water. The bromine is still there, in the top layer. No reaction." Visual: bracket from the control to the pale lower layer ("same dilution, much paler"), then an arrow to the top layer ("so it moved here"). Key notes 1 and 3, cause chain and teaching checks updated. |
+| S2 (link scene 6's solution to scene 5) | Applied. Scene 6: "In a teacher demonstration, take that orange top layer: it's bromine dissolved in cyclohexane. In the dark, it stays orange." A coded pipette draws the top layer into two clean tubes. Liquid bromine and its H330/H314 row are removed from the risk table; the teacher-only row is now "UV lamp and hydrogen bromide gas". |
+| M1 (litmus comparison strip) | Applied with the science check's S1: a second blue strip over a tube of the same layer kept in the dark; narration "A strip over a tube kept in the dark changes far less, so the red isn't just bromine vapour." |
+| M2 (scene 3 listening load) | Deferred to the voiced preview, as suggested; scene 3 is now 562 characters, so moving the sunlight sentence to scene 5 is listed as the first reserve change. |
+| M3 (alkyne sentence repeats c04b) | Applied: "As the last video showed, alkynes decolourise it too, usually **more slowly** ..." with a grey "last video" chip. |
+| M4 (why the top layer is X) | Applied: "X floats on the water, so the top layer is X. It's orange, so the bromine **dissolved** in X instead of reacting". Feedback 1 is 340 characters, about 26 s. |
+| M5 (A2 transfer narrow) | No change, as recommended. A2's example product is now 2-bromoheptane (science check M3). |
+| M6 (formulas or formulae) | Applied: the A2 card and the exam-patterns line now say "structural formulas", matching the narration. |
+
+Also applied from the science check: attempt 1 states "an excess of X"; scene 7's no-change line is hedged ("points to no double or triple bond"); the "clear is not colourless" site error is logged under correction 4. Next gate: Codex error check before voicing; this review is to be repeated on the exact voiced preview. Human listening remains pending.
