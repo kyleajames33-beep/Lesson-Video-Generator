@@ -191,3 +191,18 @@ No blockers.
 **Ready to voice after fixes.** S1 to S3 change narration and must be applied before recording. M1 to M7 are cheap and should be applied. The Codex error check is still required.
 
 ## Resolution
+
+Resolved by the author in Revision 2 (21 Oct), `lessons/chem-m6-p02.md`. No blockers were raised. Narration 6,279 characters by script count (method in the design), about 9.5 minutes.
+
+- **S1 (the counter-example has no direction): fixed, with the learning review's S2 as one fix.** Scene 9 narration uses the check's replacement: "if you used only the cooler acid's starting temperature, delta T would come out too big, and delta H too negative". Screen row "starting temperature too low (only the acid's 21.4 °C used)" with up arrows "ΔT ↑, q ↑, ΔH more negative". Key note 4 uses the check's wording. **Optional fourth grey row ("pure-water assumption: about 1 %") declined.** It would make a fourth text row during new reasoning, and an effect of about 0.4 kJ/mol does not change what a student should write. Its size and direction stay in author note (d) and site correction 1, with no "a few per cent" claim anywhere.
+- **S2 ("Glass conducts heat well"): fixed, merged with the learning review's M3.** "Glass lets heat through far more easily than foam, the beaker soaks up some heat itself, and the open top lets warm air escape." The answer chip is unchanged.
+- **S3 ("equal starting temperatures"): fixed, with the learning review's S4 as one fix.** Scene 10: "both starting temperatures averaged"; validity card "(both start temperatures measured and averaged, lid, foam, extrapolation)". Scene 17's "measured, matching temperature" is also replaced ("measure and average both starting temperatures"), which the check allowed to stay, so scenes 3, 10 and 17 give one instruction.
+- **M1 (author note d): applied.** Your figures are now in author note (d): 4.03 J g⁻¹ °C⁻¹, real mass about 102.9 g, m × c 414.5 against 418.0 J/°C (0.8 % lower), ΔH about 0.4 kJ/mol more negative (about −54.7 kJ/mol corrected). Open decision "Heat capacity direction" is closed. Arithmetic repeated under "Numbers to verify (R2)" (102.85 g; 1.0084; −54.71).
+- **M2 (q tag): applied.** Scene 7's q line carries the grey C03 tag "keep the digits; round at the end"; key note 3 reads "q = 2758.8 J (kept unrounded)".
+- **M3 (extrapolation over-corrects): applied** to author note (c) as not learner copy.
+- **M4 (A1 tolerance): applied, with corrected rounding.** Grey unspoken tag in scene 14: "line read at 27.3 to 27.5 °C: −54 to −55 kJ/mol". At 2 s.f., 27.3 °C gives −53.504 → −54 (not "about −53") and 27.5 °C gives −55.176 → −55. Arithmetic added to "Numbers to verify".
+- **M5 ("A lid stops"): applied.** "A lid cuts the heat carried away by warm air and vapour". The probe and stirrer holes clause is cut for length (learning review M4); the plate shows the holes. The screen tag and key note 1 now read "lid: less heat lost to the air" and "lid cuts heat loss to the air". The scene 12 aid line "A lid keeps the heat in" also became "A lid keeps more heat in".
+- **M6 (YouTube "never shows"): applied.** "The thermometer in a foam cup doesn't show the full temperature rise".
+- **M7 (glossary footer): applied (second option).** "Reliability means: repeated measurements under identical circumstances give similar results." The paraphrase is no longer presented as a NESA quotation, and the shorter text keeps the reading load down. P03 uses the same footer.
+
+Gates still open: the Codex error-only check (including the "(R2)" items and the reference facts now marked confirmed for the owner record). Human listening pending.

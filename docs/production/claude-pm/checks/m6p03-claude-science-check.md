@@ -183,3 +183,19 @@ A1 ("Explain the difference ... and describe how she should change her method") 
 **Not ready to voice until B1 is fixed.** B1, S1 and S2 change narration and must be applied before recording. M1 to M8 are cheap and should be applied. The Codex error check is still required.
 
 ## Resolution
+
+Resolved by the author in Revision 2 (21 Oct), `lessons/chem-m6-p03.md`. Narration 6,268 characters by script count (method in the design), about 9.5 minutes.
+
+- **B1 (calibrated range does not cover the readings): fixed, with the learning review's B1 as one fix.** I combined the two repairs. From the learning review: the calibration line ("The meter draws a straight line through those known points ... Buffers on both sides of seven check the line for acids and for bases"), with a coded calibration graph and the cue on "both sides". From this check: the honest limit. The HCl and NaOH positions sit on the dashed extensions, grey tag "readings near 2 and 12 use the same line, extended". Author note (a) says pH 2 and 12 buffers would cover them. Scene 11: "calibration: buffers on both sides of seven, as close to your readings as you can, at your samples' temperature". Accuracy card: "Calibrate with buffers either side of 7, close to the readings; same temperature". Scene 18: "calibrate with buffers on both sides of seven". Key note 2: "buffers on both sides of 7, as close to the readings as possible (pH 7.00, then 4.00 and 10.00), at the samples' temperature". Key note 5: "calibration with buffers either side of 7, close to the readings, same temperature". The teaching checks and memory aid check use the same wording. Open decision "Calibration range" is closed with option (a), extended to NaOH.
+- **S1 (feedback 1 crossed reason): fixed.** "Averaging more readings wouldn't fix it: without rinsing, the carried-over hydroxide still pushes the average up." Chip caption "averaging keeps the contamination". The A1 answer in Decisions is updated to match.
+- **S2 (stocks): fixed, shortened for length.** "They're made up from stronger stocks, and the concentrated ones are corrosive." Your "teacher or lab technician" is moved to the risk row ("prepared by the teacher or technician"), which saves spoken characters. The Safety facts check records why.
+- **M1 (step to hydronium): applied.** "which gives a few hydronium ions to the water. So water left open to the air really is slightly acidic." The optional grey line "H₂CO₃(aq) + H₂O(l) ⇌ HCO₃⁻(aq) + H₃O⁺(aq)" is added small under the first equation. The boiled-water sentence is cut (learning review S3) to pay for it.
+- **M2 (neutral at 25 °C): applied.** The scale mark reads "7 (neutral at 25 °C)"; not spoken.
+- **M3 (hook 5.82): applied, with the learning review's M1 as one fix.** Readout "5.82"; narration "five point eight two".
+- **M4 (YouTube): applied.** "why distilled water left open to the air reads below 7".
+- **M5 (buffer temperature): applied** to author note (a), with the calibration-line note.
+- **M6 (A2 significant figures): moot.** The learning review's S4 replaced that attempt (3.4 against 5.4), so the "1.0 × 10²" sentence is removed from author note (e). The retirement is recorded under "Numbers to verify". The new A2's figures are in author notes (e) and (i). Please confirm on re-check: one-point calibration at pH 7.00 with a probe at about 94 percent slope reads 2.30 to 2.32 for a solution that reads 2.03 after a two-point calibration. Check: displayed = 7.00 − s × 4.97, so 2.31 gives s = 0.944.
+- **M7 (A1 readout): applied.** The meter shows "9.21"; the question text keeps "9.2".
+- **M8 (glossary footer): applied (second option).** "Reliability means: repeated measurements under identical circumstances give similar results." This is the same wording as P02.
+
+Gates still open: the Codex error-only check, including the "(R2)" items and the reference facts now marked confirmed for the owner record. Human listening pending.
