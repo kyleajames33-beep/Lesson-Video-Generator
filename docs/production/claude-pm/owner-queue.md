@@ -303,3 +303,30 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - **Remaining Module 6:**
   - Chemistry: G01, G02, P01 to P07.
   - Biology: B16, B18, B19, G02, the P-series.
+
+## 22 Oct: state (design paused for Codex)
+
+- **Renders:** done for C09 to C14, B09 to B12, S03, S04, with verified hashes in upload brief 28v.
+- **Previews waiting for the owner:**
+  - http://127.0.0.1:8778/Explainer-chem-m6-c15-preview-v1/
+  - http://127.0.0.1:8778/Explainer-chem-m6-c16-preview-v1/
+  - http://127.0.0.1:8778/Explainer-bio-m6-b13-preview-v1/
+  - http://127.0.0.1:8778/Explainer-bio-m6-b15-preview-v1/
+- **Module 6:** every design has cleared the learning review and the Claude science check (Revision 2). Codex briefs 96 to 98 are waiting.
+- **Module 7, at Revision 2:**
+  - Chemistry: C01 to C06 (C04 as C04a and C04b), G01, P01, P02.
+  - Biology: B01 to B07, P02.
+  - Exam skills: S05.
+
+  Codex briefs 99 to 101 are waiting. Brief 99 also asks Codex for a replacement for the site's methanol dataset, which C07, P03 and G02 need.
+- **Send in this order:** 28v, 96, 97, 98, 99, 100, 101. About 150 plates in total.
+- **Paused:** new designs, until Codex catches up. Next up when work resumes:
+  - Chemistry: C07, P03, S07, G02 (after the methanol data arrives).
+  - Biology: B08 (NK cells deferred there from B06), B09, G03.
+- **Root decisions on 22 Oct:**
+  - M7 P01 uses heptane, octane and nonane, not hexane (hexane moves to H372 from 1 May 2026).
+  - The P02 light demonstration uses the cyclohexane extract, not liquid bromine.
+  - Bio P03 is folded into B05, and P04 is cut.
+- **Owner questions:**
+  - Should an Aboriginal cultural reviewer read bio-m7-b15 before it is published?
+  - Should design work pause while Codex catches up (currently paused)?
