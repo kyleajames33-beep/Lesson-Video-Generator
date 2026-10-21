@@ -121,3 +121,14 @@ U+2014 count 0. Australian spelling ("colour", "decolourises", "neighbouring"; "
 **Ready to voice after fixes** (S1 and S2 before recording; M1 to M4 are cheap). No science blocker. Every name, structure, equation and atom count is correct, and Q3's answer is unique. The Codex error-only re-check and NESA originality search are still required.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m7-g01.md` Revision 2 (22 Oct). Narration 5,666 characters by script, about 9.47 minutes with full padding. U+2014 count 0.
+
+- **S1 (resolved):** 4b and 4c use the replacement text; key note 4 and model answer 3 as in learning S1. The Decisions table row and Teaching checks now say four Cl means two extra bonds, and the positions (all four Cl on C1 and C2) place a single C≡C, since buta-1,3-diene also adds two Cl₂ but gives 1,2,3,4-tetrachlorobutane. A matching line added to Review notes (Doubts a).
+- **S2 (resolved):** key note 4 now reads "... for an open-chain hydrocarbon with one multiple bond, the formula decides: alkene CnH2n, alkyne CnH2n−2."
+- **M1 (applied):** "rapidly" (card, model answer) and "quickly" (narration) removed; all now say "at room temperature, without UV light", the c04b Revision 2 wording, so card and voice match. Numbers to verify (Reference facts) notes that alkynes often react much more slowly, so no speed word is used.
+- **M2 (applied):** the Q3 conditions note added to Review notes (Doubts a) as given.
+- **M3 (applied):** ACSCH127 and ACSCH035 moved to after "including:" in the description, matching the ledger; ACSCH136 stays at the end, where the ledger puts it. The syllabusDotpoints note asks root to confirm against the c03 and c04a precedents.
+- **M4 (applied):** E/Z drawing note added to Review notes ("Draw both as the E (trans) zigzag ...").
+
+The Codex error-only re-check and NESA originality search are still required before voicing.

@@ -106,3 +106,16 @@ The wrong-way ghost count in Q1; the same-formula, different-reaction contrast i
 **Ready to voice after S1 to S4** (with science S1 and S2). M1 to M4 are cheap. No learning blocker. Release only after chem-m7-p02 (its stated predecessor) and the c04b UV lamp plate exist. Repeat this review on the exact voiced preview, checking the total against the 9.5 minute cap and the clutter at the end of 2c and 3b.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m7-g01.md` Revision 2 (22 Oct). Narration recounted by script ("> " lines only, bold removed): **5,666 characters**, 1,010 words, 19 scenes; about 426 s of speech, **about 9.5 minutes (568 s, 9.47 min)** with full padding, holds, four countdowns and the notes hold. U+2014 count 0.
+
+- **S1 (resolved):** 4b: "Adding twice needs two extra bonds: a **triple** bond, or two double bonds."; 4c: "So both additions happened across the same pair of carbons. That needs a triple bond, between carbon **one** and carbon two." Tags changed as given (4b "2 Cl₂ = 2 extra bonds: C≡C, or two C=C"; 4c second line "same two carbons → C≡C"). Key note 4 and model answer 3 use the reviewer's text. The proof is now the positions: all four Cl on C1 and C2, because dienes also add twice.
+- **S2 (resolved):** key note 4 carries "for an open-chain hydrocarbon with one multiple bond".
+- **S3 (resolved):** "quickly" and "rapidly" removed. Card, narration and model answer 4 all read "decolourises bromine water at room temperature, without UV light", matching chem-m7-c04b Revision 2's wording (+10 characters against the reviewer's shorter form). 5b underlines "decolourises bromine water".
+- **S4 (resolved):** trim (1) applied to the hook; thumbnails fan out on "name a molecule, sort its isomers, or predict". Trims (2) and (3) kept in reserve for the pilot. The estimate is about 9.47 minutes rather than the review's 9.4, because of the S3 wording; still at or under the cap.
+- **M1 (applied):** the "position of the group?" row shows "same: C=C at C2 in both" and dims before "skeleton?" lights.
+- **M2 (applied):** 2c's atom tally dims when the card writes; 2c and 3b answer boxes fill grey with only "chain isomers" and "2-chloropentane" lit; 3b's ghost docker tag dims when the builder writes.
+- **M3 (declined for now):** the spoken "excess" sentence (+46, about 3.5 s) would take the estimate to about 9.5 minutes exactly. Held as a conditional addition: add it only if the voiced pilot runs under 9.4 minutes, or pair it with trim (2). The silent "excess chlorine" underline stays.
+- **M4 (applied):** title shortened to the reviewer's 81-character version.
+
+Release dependency unchanged: after chem-m7-p02 and the c04b UV lamp plate. Status: needs Codex error check before voicing; repeat this review on the exact voiced preview, checking the total against the 9.5 minute cap. Human listening remains pending.

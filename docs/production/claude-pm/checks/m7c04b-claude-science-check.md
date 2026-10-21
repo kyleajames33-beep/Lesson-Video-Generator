@@ -132,3 +132,13 @@ U+2014 count 0. Australian spelling ("colour", "decolourise", "vapour" not used 
 **Ready to voice after fixes** (S1 and S2 before recording; M1 to M3 are cheap). No science blocker. Every equation, atom count and name in the design is correct. The Codex error-only re-check and the hexane/UV reference-fact confirmation are still required.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m7-c04b.md` Revision 2 (22 Oct). Narration 5,754 characters by script, about 8.8 minutes. U+2014 count 0.
+
+- **S1 (resolved):** scene 9 and key note 4 use the replacement text exactly ("For an open-chain hydrocarbon with one multiple bond ..."). Author note (g), the Boundary, the cause chain and Teaching checks carry the same condition.
+- **S2 (resolved):** "quickly in the dark" replaced in scene 9 and key note 4 by "at room temperature, without UV light". Author note (g) now cites the Fahey figures and states that no speed claim is made for alkynes; the Memory aid check and Numbers used (test tiles) updated.
+- **M1 (applied, fallback taken):** scene 8 now says "The first step gives bromoethene, and a second H Br adds in the same way, giving a **dibromoethane**." and shows only CH₃CHBr₂, named 1,1-dibromoethane, not labelled major. Author note (e) records that under ionic conditions the observed product is 1,1-dibromoethane and 1,2- needs peroxide conditions. Site correction 2's last sentence, Decisions, Boundary, Numbers used and Open decisions updated. This departs from c04a's two-product treatment of propene on purpose: here the linked site lesson names the geminal product.
+- **M2 (applied):** site correction 3 now quotes Multiple Choice answer 4 and its correction.
+- **M3 (applied):** author note (b) gains the swap-docker paragraph; scene 3 carries the grey "overall result" tag.
+
+Codex error-only re-check and the hexane/UV reference-fact confirmation are still required before voicing.

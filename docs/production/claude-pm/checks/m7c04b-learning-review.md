@@ -121,3 +121,18 @@ The dark/UV hook with a visible by-product; "a bond must break first" leading st
 **Ready to voice after S1 to S4** (with science S1 and S2). M1 to M6 are cheap. No learning blocker. The fixes add about 206 characters of causal content (total about 5,765, about 8.9 minutes), which removes the floor risk; recount after editing. Repeat this review on the exact voiced preview, with attention to scene 9 (the longest scene after S1 and S4, about 43 s) and scene 7's model timing.
 
 ## Resolution
+
+Resolved by the author in `lessons/chem-m7-c04b.md` Revision 2 (22 Oct). Narration recounted by script ("> " lines only, bold removed): **5,754 characters**, 1,017 words, 16 scenes; about 433 s of speech, **about 8.8 minutes** with holds, countdowns and the notes hold. U+2014 count 0.
+
+- **S1 (resolved):** scene 9 now reads "To tell them apart, use the molecular formula. For an open-chain hydrocarbon with one multiple bond, C n H two n is an alkene, and C n H two n minus **two** is an alkyne."; grey tag "open chain, one multiple bond" under the formula chips; key note 4 replaced with the reviewer's text.
+- **S2 (resolved):** scene 2's visual now flickers the drifting Br₂'s Br–Br bond violet on "break" (C–H bonds steady); scene 3's "split" opens the same molecule. No narration change.
+- **S3 (resolved):** scene 7 cue sentence inserted as given; the model is linear while ethyne is on the strip, flat on "flat", tetrahedral on "tetrahedral", with the strip and builder dimmed from "Watch the model".
+- **S4 (resolved):** scene 9 now reads "both decolourise it at room temperature, without UV light, because both can add."; hexane tile tag "no change (no UV)"; key note 4 matches.
+- **M1 (applied):** the ladder builds one rung at a time; only the current arrow carries its chips; earlier formulas dim; ladder to outline on "two-chloropropane".
+- **M2 (applied):** scene 8's end state rewritten: the overall hydrogen line stays small and dim at the top; bright at the end are the excess chip and the HBr step 2 product (the bracket is gone under science M1).
+- **M3 (applied):** ethene thumbnail and "adds once" chip appear only on "just once", strip and builder dimmed; end state: step 2 name, model at tetrahedral, "adds once" chip.
+- **M4 (applied):** "As you saw last video, an alkene has ..." (+23; room after the recount).
+- **M5 (applied):** grey "overall result" tag under the scene 3 swap; author note (b) explains.
+- **M6 (applied):** in feedback 1 and 2 the structural strip is the bright answer and the condensed line is small and grey beneath it.
+
+Scene 9 is about 43 s and scene 7 about 43 s; both flagged for the voiced-preview repeat. Status: needs Codex error check before voicing; this review must be repeated on the exact voiced preview, and human listening remains pending.
