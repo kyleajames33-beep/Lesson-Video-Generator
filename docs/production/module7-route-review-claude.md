@@ -77,3 +77,8 @@ Each design goes through the full pipeline.
 ## Owner questions
 
 1. **bio-m7-b15 (Aboriginal protocols, the smoke bush case).** Should HSCScience seek an Aboriginal cultural reviewer before this video is published? The content concerns Indigenous cultural and intellectual property, and a science check cannot judge cultural accuracy or appropriate use of names and knowledge. Design can proceed either way. Publication would wait on your answer.
+
+## Root decisions during design (21 Oct 2026)
+
+- **C7-IQ2-05 removed from chem-m7-c01** in the route JSON (it was still listed; change 5 above). It is carried by the P-series risk tables.
+- **C7-IQ1-01 (naming, including every functional-group family)** is carried by c01 and g01 for hydrocarbons and by each family video for its own class: c04a (haloalkanes), c05 (alcohols), c08b (aldehydes and ketones), c09 (carboxylic acids), c11 (amines and amides). Each of those designs names its family by IUPAC rules and lists C7-IQ1-01 among its dotpoints. Add the ID to those route entries when the designs are written.
