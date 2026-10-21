@@ -43,14 +43,14 @@
     },
     "Biology": {
       "sourceCandidates": 19,
-      "plannedUploads": 20,
+      "plannedUploads": 22,
       "core": 20,
       "companions": 0,
-      "practicalSupport": 0,
+      "practicalSupport": 2,
       "mappedActionGroups": 14,
       "approvedActionGroups": 0,
       "publicUploadsClaimedByThisPlan": 0,
-      "note": "All 13 local content points have candidate teaching entries. No explicit required hands-on practical was found."
+      "note": "Two P entries added for site L02 UV/yeast data and B6-IQ1-05 genetic variation modelling. Existing core and G entries still await full reconciliation with Claude route review."
     }
   },
   "subjects": {
@@ -1360,12 +1360,47 @@
           ],
           "entryKnowledge": "Recall bio-m6-b01 at the level needed for this question.",
           "next": [
-            "bio-m6-b03"
+            "bio-m6-p01"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
           "placement": "Core learner route",
           "mainLearnerQuestion": "How do mutagens increase DNA damage?"
+        },
+        {
+          "id": "bio-m6-p01",
+          "title": "Investigate UV exposure and yeast colony survival",
+          "type": "practical",
+          "siteLessons": [
+            "L02"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-01"
+          ],
+          "prerequisites": [
+            "bio-m6-b01",
+            "bio-m6-b02"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Compare teacher-prepared yeast colony counts across UV exposure times.",
+          "stop": "Calculate relative survival and explain why colony loss alone does not establish mutation.",
+          "playlistOrder": 3,
+          "planAnchor": "P01",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L02",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson02.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m6-b01 and bio-m6-b02: DNA damage may be repaired, while mutation is a lasting sequence change.",
+          "next": [
+            "bio-m6-b03"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "site-implied practical; candidate mapping only; no student conduct or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "What can colony counts tell us about UV exposure and mutation?"
         },
         {
           "id": "bio-m6-b03",
@@ -1385,7 +1420,7 @@
           "estimatedMinutes": 6,
           "start": "Change one base in a coding sequence.",
           "stop": "Compare substitution, insertion and deletion effects on codons and protein.",
-          "playlistOrder": 3,
+          "playlistOrder": 4,
           "planAnchor": "B03",
           "sourceCandidates": [
             {
@@ -1420,7 +1455,7 @@
           "estimatedMinutes": 6,
           "start": "Change chromosome structure or number.",
           "stop": "Explain large-scale effects and contrast them with point mutation.",
-          "playlistOrder": 4,
+          "playlistOrder": 5,
           "planAnchor": "B04",
           "sourceCandidates": [
             {
@@ -1454,7 +1489,7 @@
           "estimatedMinutes": 5,
           "start": "Place the same mutation in a body cell or germ-line cell.",
           "stop": "Explain its effect on the organism and the possibility of inheritance.",
-          "playlistOrder": 5,
+          "playlistOrder": 6,
           "planAnchor": "B05",
           "sourceCandidates": [
             {
@@ -1489,7 +1524,7 @@
           "estimatedMinutes": 5,
           "start": "Change a coding or non-coding DNA region.",
           "stop": "Explain how gene product or regulation may change.",
-          "playlistOrder": 6,
+          "playlistOrder": 7,
           "planAnchor": "B06",
           "sourceCandidates": [
             {
@@ -1525,7 +1560,7 @@
           "estimatedMinutes": 6,
           "start": "Follow gamete formation and joining.",
           "stop": "Separate allele shuffling from mutation that creates a new allele.",
-          "playlistOrder": 7,
+          "playlistOrder": 8,
           "planAnchor": "B07",
           "sourceCandidates": [
             {
@@ -1536,12 +1571,49 @@
           ],
           "entryKnowledge": "Recall bio-m5-b04, bio-m5-b05b, bio-m6-b01 at the level needed for this question.",
           "next": [
-            "bio-m6-b08"
+            "bio-m6-p02"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no scene, practical or release approval",
           "placement": "Core learner route",
           "mainLearnerQuestion": "How do meiosis and fertilisation vary offspring?"
+        },
+        {
+          "id": "bio-m6-p02",
+          "title": "Model sources of genetic variation",
+          "type": "practical",
+          "siteLessons": [
+            "L06"
+          ],
+          "syllabusActions": [
+            "B6-IQ1-05"
+          ],
+          "prerequisites": [
+            "bio-m5-b04",
+            "bio-m5-b05b",
+            "bio-m6-b01",
+            "bio-m6-b07"
+          ],
+          "estimatedMinutes": 7.5,
+          "start": "Use chromosome and allele cards to model gamete formation.",
+          "stop": "Compare allele reshuffling and fertilisation with a mutation that creates a new allele.",
+          "playlistOrder": 9,
+          "planAnchor": "P02",
+          "sourceCandidates": [
+            {
+              "id": "Biology-Y12-M6-L06",
+              "path": "C:/Users/kygs/hscscience/subjects/biology/year12/module6/lesson06.sa.html",
+              "scope": "Use the portion named by this video's start and stop; site material is a source, not a reviewed video."
+            }
+          ],
+          "entryKnowledge": "Recall bio-m5-b04, bio-m5-b05b, bio-m6-b01 and bio-m6-b07: DNA copying, meiosis, mutation and gametes.",
+          "next": [
+            "bio-m6-b08"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate practical modelling; no student conduct or release approval",
+          "placement": "Practical support",
+          "mainLearnerQuestion": "Which processes create new alleles, and which rearrange existing ones?"
         },
         {
           "id": "bio-m6-b08",
@@ -1562,7 +1634,7 @@
           "estimatedMinutes": 7,
           "start": "Compare two population gene pools.",
           "stop": "Trace new alleles, movement and chance changes in allele frequency.",
-          "playlistOrder": 8,
+          "playlistOrder": 10,
           "planAnchor": "B08",
           "sourceCandidates": [
             {
@@ -1602,7 +1674,7 @@
           "estimatedMinutes": 5,
           "start": "Compare yeast use and selective breeding with a modern technique.",
           "stop": "Describe uses without assuming every biotechnology directly edits DNA.",
-          "playlistOrder": 9,
+          "playlistOrder": 11,
           "planAnchor": "B09",
           "sourceCandidates": [
             {
@@ -1636,7 +1708,7 @@
           "estimatedMinutes": 6,
           "start": "Introduce a plant or animal biotechnology case.",
           "stop": "Judge a concrete benefit, harm and affected group.",
-          "playlistOrder": 10,
+          "playlistOrder": 12,
           "planAnchor": "B10",
           "sourceCandidates": [
             {
@@ -1671,7 +1743,7 @@
           "estimatedMinutes": 6,
           "start": "Move from an existing technique to a proposed future use.",
           "stop": "Explain the mechanism, possible benefit and uncertainty.",
-          "playlistOrder": 11,
+          "playlistOrder": 13,
           "planAnchor": "B11",
           "sourceCandidates": [
             {
@@ -1707,7 +1779,7 @@
           "estimatedMinutes": 7,
           "start": "Choose a crop or conservation case and a comparison baseline.",
           "stop": "Trace genetic, species or ecosystem effects.",
-          "playlistOrder": 12,
+          "playlistOrder": 14,
           "planAnchor": "B12",
           "sourceCandidates": [
             {
@@ -1743,7 +1815,7 @@
           "estimatedMinutes": 6,
           "start": "Compare two biotechnology cases.",
           "stop": "Reach a justified conditional judgement from their evidence.",
-          "playlistOrder": 13,
+          "playlistOrder": 15,
           "planAnchor": "B13",
           "sourceCandidates": [
             {
@@ -1778,7 +1850,7 @@
           "estimatedMinutes": 5,
           "start": "Compare parental choice, copying and DNA insertion.",
           "stop": "Identify what each technique changes and its advantage.",
-          "playlistOrder": 14,
+          "playlistOrder": 16,
           "planAnchor": "B14",
           "sourceCandidates": [
             {
@@ -1815,7 +1887,7 @@
           "estimatedMinutes": 6,
           "start": "Choose parents whose gametes will meet.",
           "stop": "Compare the two methods' steps and outcomes.",
-          "playlistOrder": 15,
+          "playlistOrder": 17,
           "planAnchor": "B15",
           "sourceCandidates": [
             {
@@ -1850,7 +1922,7 @@
           "estimatedMinutes": 6,
           "start": "Start with a donor somatic nucleus and enucleated egg.",
           "stop": "Trace nuclear transfer and assess effectiveness.",
-          "playlistOrder": 16,
+          "playlistOrder": 18,
           "planAnchor": "B16",
           "sourceCandidates": [
             {
@@ -1885,7 +1957,7 @@
           "estimatedMinutes": 5,
           "start": "Start with a target gene and vector.",
           "stop": "Trace host copying and distinguish the output from organism cloning.",
-          "playlistOrder": 17,
+          "playlistOrder": 19,
           "planAnchor": "B17",
           "sourceCandidates": [
             {
@@ -1921,7 +1993,7 @@
           "estimatedMinutes": 7,
           "start": "Start with a DNA fragment and vector.",
           "stop": "Trace joining, host uptake and an accurate application.",
-          "playlistOrder": 18,
+          "playlistOrder": 20,
           "planAnchor": "B18",
           "sourceCandidates": [
             {
@@ -1956,7 +2028,7 @@
           "estimatedMinutes": 6,
           "start": "Compare agricultural, medical and industrial cases.",
           "stop": "Evaluate specific benefits and trade-offs with evidence.",
-          "playlistOrder": 19,
+          "playlistOrder": 21,
           "planAnchor": "B19",
           "sourceCandidates": [
             {
@@ -1992,7 +2064,7 @@
           "estimatedMinutes": 7,
           "start": "Begin with a functioning biotechnology.",
           "stop": "Explain how adoption, access, culture and population dynamics affect its reach.",
-          "playlistOrder": 20,
+          "playlistOrder": 22,
           "planAnchor": "B20",
           "sourceCandidates": [
             {
@@ -2462,7 +2534,8 @@
       "paraphrase": "explain how a range of mutagens operate, including but not limited to:",
       "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
       "candidateEntryIds": [
-        "bio-m6-b02"
+        "bio-m6-b02",
+        "bio-m6-p01"
       ],
       "status": "candidate-mapped; unapproved",
       "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
@@ -2512,7 +2585,8 @@
       "paraphrase": "investigate the causes of genetic variation relating to the processes of fertilisation, meiosis and mutation (ACSBL078)",
       "officialUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
       "candidateEntryIds": [
-        "bio-m6-b07"
+        "bio-m6-b07",
+        "bio-m6-p02"
       ],
       "status": "candidate-mapped; unapproved",
       "evidenceNeeded": "Review exact scenes and learner responses; practical conduct needs separate evidence where required.",
@@ -2682,7 +2756,7 @@
       "Chemistry": 19,
       "Biology": 19
     },
-    "entryCount": 47,
+    "entryCount": 49,
     "actionGroupCount": 33,
     "allModule6SiteLessonsAssigned": true,
     "allActionGroupsHaveCandidateEntries": true,
@@ -2690,6 +2764,6 @@
     "entryLinksResolve": true,
     "localSitePathsExist": true,
     "noEmDash": true,
-    "limitation": "Structural draft only. No science, script, practical conduct, playback or release approval."
+    "limitation": "Structural draft only. Biology P01 and P02 are candidates for Claude review; the legacy Biology core and G route still needs the amendments in module6-route-review-claude.md. No science, student conduct, playback or release approval."
   }
 }

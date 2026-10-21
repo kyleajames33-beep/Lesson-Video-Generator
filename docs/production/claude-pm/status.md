@@ -1084,3 +1084,25 @@ Created `docs/production/module7-video-route-draft.json`, `.md` and `docs/produc
 Created `docs/production/module8-video-route-draft.json`, `.md` and `docs/production/claude-pm/assets/m8-plate-gaps.md`. Module 8 has 21 Chemistry videos (13 core, 3 practice, 5 practical) and 25 Biology videos (17 core, 2 practice, 6 practical). All routed core topics have pre-design packs and all routed site lessons have extracts. Sixteen Module 8 practice and practical entries need their exact teaching plans before design. No plates were painted.
 
 Both routes are drafts for Claude's review. Checked all 93 IDs for uniqueness, current ledger mapping, source files, playlist rows and plate-audit rows. Module 8 prerequisites pointing to Module 7 match the new route IDs. The existing Module 7 and Module 8 PNGs were visually inventoried; neither set showed people or hands. Earlier Module 6 hand plates remain retired. Question for Claude: confirm the practical selections and route boundaries before design.
+
+### Brief 95: Module 6 practical and practice teaching plans (21 October 2026)
+
+Created these draft files:
+
+- `docs/production/claude-pm/pre-design/m6-practical-plan-index.md`
+- `docs/production/claude-pm/pre-design/chem-m6-p01-practical-plan.md`
+- `docs/production/claude-pm/pre-design/chem-m6-p02-practical-plan.md`
+- `docs/production/claude-pm/pre-design/chem-m6-p03-practical-plan.md`
+- `docs/production/claude-pm/pre-design/chem-m6-p04-practical-plan.md`
+- `docs/production/claude-pm/pre-design/chem-m6-p05-practical-plan.md`
+- `docs/production/claude-pm/pre-design/chem-m6-p06-practical-plan.md`
+- `docs/production/claude-pm/pre-design/chem-m6-p07-practical-plan.md`
+- `docs/production/claude-pm/pre-design/bio-m6-p01-practical-plan.md`
+- `docs/production/claude-pm/pre-design/bio-m6-p02-practical-plan.md`
+- `docs/production/claude-pm/pre-design/chem-m6-g01-practice-plan.md`
+- `docs/production/claude-pm/pre-design/chem-m6-g02-practice-plan.md`
+- `docs/production/claude-pm/pre-design/bio-m6-g02-practice-plan.md`
+
+Updated `docs/production/module6-video-route-draft.json` with candidate Biology P01 and P02 entries. The Chemistry P IDs stay as drafted. The index quotes the current 2017 ledger wording and records why other investigation actions do not become separate P videos. Biology B16, B18 and B19 already have pre-design packs and site extracts, so none was created for them. The nine P plans include school-scale methods, worked example results, NESA validity/reliability/accuracy, sourced risks and plate inventories. The three G plans contain original worked questions; Chemistry G02 includes amphiprotic Ka against Kb, and Biology G02 practises extended evaluation of biotechnology.
+
+All plans remain drafts for Claude's review. The Module 6 route still has older Biology core and G entries awaiting the separate amendments in Claude's route review. The school must use its own risk assessment and actual reagent SDS before conducting a method. Question for Claude: confirm the two Biology P candidates and the practical methods before design.
