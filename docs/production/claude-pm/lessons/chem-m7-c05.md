@@ -1,8 +1,13 @@
 # M7 C05: How does an OH group change alcohol properties? Naming and classifying alcohols, hydrogen bonds, and why the chain sets the boiling and solubility trends (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 101 resolved; ready to voice.
 
-Narration counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Narration 6,274 characters, 19 scenes, about 9.4 minutes (567 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+**Changes in Revision 3 (22 Oct; from `../checks/codex-check-101.md`):**
+- YouTube syllabus quotations (Codex check 101): the nomenclature dotpoint keeps its stem and lists its eight printed examples on their own lines, and the alcohol properties dotpoint keeps its stem and lists primary, secondary and tertiary alcohols on separate lines, matching the dotpoints as printed above. Metadata only; narration, visuals, attempts, feedback and key notes unchanged, so the count stays 6,274 characters (about 567 s).
 
 **Revision 2 changes (22 Oct; from `../checks/m7c05-learning-review.md` and `../checks/m7c05-claude-science-check.md`):**
 - Memory aid (learning S1, science S1): "Same size? Hydrogen bonding wins. Same family? Size wins." replaces "Hydrogen bonding wins, then size." in scene 13's narration and handwritten line, on the notes screen and in the memory aid check, so the aid carries its controlled variable and agrees with c03's "size still wins" between hydrocarbon series.
@@ -224,6 +229,8 @@ Checked by hand (22 Oct); Codex to re-check against the CRC Handbook or another 
 
 ## Narration length estimate
 
+Revision 3 count (22 Oct, same script and rules): **6,274 characters**, unchanged (the Revision 3 change is metadata only); about 9.4 minutes (567 s).
+
 Revision 2 count (22 Oct, recounted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined, bold markers removed): **6,274 characters**, 1,098 words, 19 scenes. Characters per scene (1 to 19): 452, 460, 432, 333, 351, 212, 373, 378, 381, 476, 303, 312, 342, 216, 337, 268, 383, 190, 75. Speech about 472 s at 13.3 characters per second; with the same holds, countdowns and notes hold, **about 9.4 minutes (567 s)**, inside the 5,500 to 6,800 band and under the 9.5 minute (570 s) ceiling. Feedback unchanged: scene 15 about 25 s; scene 17 about 29 s. Revision 2 changes: the memory aid (+24, scene 13), "On paper," (+10, scene 2), "It's still" (−3, scene 7), and the two trims T1 (scene 12, −69) and T2 (scene 5, −40). The only remaining cut, if the voiced preview runs over, is scene 6's last sentence (the two-step chip stays on screen). Do not cut scene 8.
 
 Revision 1 count (22 Oct, for the record; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined, bold markers removed; the script reproduces chem-m7-c04b's 5,754 and chem-m7-c03's 6,324). Target 5,500 to 6,800 characters and at or under about 9.5 minutes.
@@ -253,8 +260,19 @@ An ethanol molecule has fewer electrons than butane, yet ethanol boils about eig
 
 Chemistry 2017: Year 12 Module 7, Organic Chemistry.
 Syllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 7):
-"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127) alkanes, alkenes, alkynes, alcohols (primary, secondary and tertiary), aldehydes and ketones, carboxylic acids, amines and amides, halogenated organic compounds"
-"investigate the structural formulae, properties and functional group including: primary, secondary, tertiary alcohols"
+"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)
+- alkanes
+- alkenes
+- alkynes
+- alcohols (primary, secondary and tertiary)
+- aldehydes and ketones
+- carboxylic acids
+- amines and amides
+- halogenated organic compounds"
+"investigate the structural formulae, properties and functional group including:
+- primary
+- secondary
+- tertiary alcohols"
 "explain the properties within and between the homologous series of alcohols with reference to the intermolecular and intramolecular bonding present"
 This video covers naming for alcohols. Hydrocarbon and haloalkane naming are in earlier videos.
 Official 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017
