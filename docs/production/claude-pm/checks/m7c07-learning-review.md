@@ -115,3 +115,16 @@ The E10 hook; the "+1 from the OH" chip at the exact error point; the matched cl
 **Ready to voice after S1 and S2** (S2 is the same change as science S1). M1 to M6 are cheap and should be applied. No learning blocker found. Repeat this review on the exact voiced preview, with attention to scenes 7, 8 and 10 (the busiest screens) and the total running time.
 
 ## Resolution
+
+Resolved by the design author in `lessons/chem-m7-c07.md` Revision 2 (22 Oct). Narration recounted by script with the build parser rules: 6,237 characters (was 6,113), 1,096 words, 18 scenes; about 563 s (9.4 min) with holds; feedback about 25.6 s (scene 14) and 28.3 s (scene 16).
+
+- **S1 (applied, reviewer's text):** scene 10 now reads "And there are sociocultural costs, affecting communities and culture. They often fall on communities near the site, including Aboriginal and Torres Strait Islander peoples and their Country, rather than on those burning the fuel." Board line: "Sociocultural: community health and opposition / Aboriginal and Torres Strait Islander land and sea Country". The pen-arrow cue moves to "rather than on those burning the fuel".
+- **S2 (applied, reviewer's text; same as science S1):** scene 9: "a renewable source that can add less net carbon dioxide".
+- **M1 (applied):** the scene 5 chip reads "careful value: about 22.7 kJ g⁻¹"; the division by molar mass first appears in scene 7, where it is spoken. No narration change.
+- **M2 (applied):** scene 9: "As you saw last video, distilling takes **energy**, and so do growing, harvesting and fermenting, often from fossil fuels." Bold kept on "energy".
+- **M3 (applied):** scene 3 dims the "1 mol of fuel" bracket and the liquid-water chip when ΔH writes; scene 7 dims the molar masses on "gram", the "O adds 16 g mol⁻¹" tag on "partly oxidised" and the bar labels when the litre bars write (ends on the partly oxidised tag and the litre bars); scene 8 dims the photosynthesis tag and fermentation chip when the fossil loop draws (ends on the two loop tags); scene 10 dims the Economic and Environmental lines (headings kept) when Sociocultural lights, and the meaning chip leaves when the pen arrow runs.
+- **M4 (applied):** "butan-one-ol brings one"; "because the flame got too little oxygen for the amount of fuel burning".
+- **M5 (applied):** "Same extra group, about the **same** extra energy."
+- **M6 (applied):** the stale route Open decision is removed (root had already updated the prerequisites; entryKnowledge remains root's route task). Scene 5 and the E10 hook are closed as "keep".
+
+Declined: none. Pending: Codex error check; repeat this review on the exact voiced preview (scenes 7, 8 and 10 and the running time); human listening.

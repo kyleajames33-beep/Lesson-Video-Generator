@@ -143,3 +143,14 @@ No blocker. No should-fix on science alone; learning S1 (stop heating just befor
 **Ready to voice after learning S1 and S2.** M1 to M5 are small. No science blocker. The Codex error check and the GHS confirmation against CLP Annex VI (Codex asset brief item 2) are still required.
 
 ## Resolution
+
+Resolved by the design author in `lessons/chem-m7-p03.md` Revision 2 (22 Oct). Narration 6,240 characters, about 568 s (9.5 min); U+2014 count 0. Learning S1 and S2 are applied (see `m7p03c-learning-review.md`, Resolution).
+
+- **M1 (applied):** scene 4 narration as given; author note (d) adds: "Most of the flame's heat is lost as hot combustion gas passing the can; that loss depends on flame distance, shielding and burn time, so the fixed rise controls only the water's own cooling loss."
+- **M2 (applied):** scene 3 step 1 "200 mL water, or weigh it: 200.0 g"; author note (a) records that 200.0 g implies weighing, that a measuring cylinder gives about ±1 mL, and that Δm limits answers to 3 s.f. Narration unchanged ("two hundred millilitres ... two hundred grams" carries no false precision).
+- **M3 (applied):** scene 10: "trim the wick for a smaller flame, which usually burns cleaner".
+- **M4 (applied):** scope page reference "p55".
+- **M5 (applied):** correction 15 reclassified as a method improvement, not a factual error, using the reviewer's recommended wording.
+- The ethanol H319 Open decision is closed as designed (covered by the glasses row), per this check.
+
+Declined: none. Pending: Codex error check, and GHS confirmation against CLP Annex VI (asset brief item 2). New author note (l) (drift against gap, scene 11) is for Codex to check.

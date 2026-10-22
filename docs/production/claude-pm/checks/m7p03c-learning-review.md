@@ -110,3 +110,14 @@ Both attempt narrations point to the card ("The temperatures, the burner's masse
 **Ready to voice after S1 and S2.** M1 to M4 are cheap and should be applied. No learning blocker found. Repeat this review on the exact voiced preview, with attention to scene 8 (one row lit per sentence), scene 12's reading load, the A2 card's legibility and the total running time.
 
 ## Resolution
+
+Resolved by the design author in `lessons/chem-m7-p03.md` Revision 2 (22 Oct). Narration recounted by script with the build parser rules: 6,240 characters (was 6,154), 1,119 words, 19 scenes; about 568 s (9.5 min) with holds, about 2 s under the ceiling; the scene 9 reserve cut (about 40 characters) stays available. Feedback unchanged: about 28.3 s and 25.4 s.
+
+- **S1 (applied, reviewer's text):** scene 3: "Light it, stir, and heat until the water is almost **twenty degrees** warmer." The flame is capped at 41.9 °C and the readout climbs to 42.4 °C (grey tag "rise = 42.4 − 22.4 = 20.0 °C"); step 4 "heat until almost a 20 °C rise; stir"; key note 1 "Cap just before a 20 °C rise, the same for each alcohol; stir; ΔT = highest − starting temperature." The boundary, teaching checks and author note (a) match.
+- **S2 (applied, reviewer's text):** scene 11: "...so the losses are similar. The percentages **drift** down a little, but that drift is far smaller than the gaps between alcohols, so the order holds." On "drift" the scene 6 percentage column returns small and dims. New author note (l) quantifies it: moving each alcohol to its neighbour's fraction shifts the mean by about 33, 32 and 101 kJ/mol, against gaps of 305, 297 and 218 kJ/mol. For propan-1-ol to butan-1-ol the drift is about half the gap, so "far smaller" is generous for that one pair (the order still holds). Flagged for Codex and the voiced-preview review; fallback wording "smaller than the gaps".
+- **M1 (applied):** scene 1: "That's normal for this practical."
+- **M2 (applied):** the scene 6 percentages become one small grey column (one item); scene 8 dims the accuracy header and the "systematic" tag when the amber row writes.
+- **M3 (applied, same as science M1):** scene 4: "Hotter water loses heat faster, so equal rises keep the heat **lost** from the water similar." Cue moved to "lost"; cause chain item 4 and the teaching checks match.
+- **M4 (applied):** the stale route Open decision is removed (root had already set the prerequisites and next). entryKnowledge and adding C7-IQ2-05 to syllabusActions remain root's route tasks.
+
+Declined: none. Pending: Codex error check and GHS confirmation; repeat this review on the exact voiced preview (scene 8, scene 12's reading load, the A2 card's legibility, running time); human listening.

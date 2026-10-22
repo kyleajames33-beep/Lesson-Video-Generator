@@ -151,3 +151,15 @@ Title 97 characters (limit 100): pass. Description quotes all three dotpoints ve
 **Ready to voice after S1** (the same change as learning S2). M1 to M5 are small. No science blocker. The Codex error check is still required (the Brazil figure in correction 13 remains unverified).
 
 ## Resolution
+
+Resolved by the design author in `lessons/chem-m7-c07.md` Revision 2 (22 Oct). Narration 6,237 characters, about 563 s (9.4 min); U+2014 count 0.
+
+- **S1 (applied, reviewer's text):** scene 9: "So ethanol's case is a renewable source that can add less net carbon dioxide, against less energy per litre and the resources to grow it." Key note 5 unchanged (already hedged).
+- **M1 (applied):** scene 6: "Same extra group, about the **same** extra energy."
+- **M2 (applied):** scene 16 screen "1367 ÷ 46.07 = 29.67 kJ g⁻¹ (4 s.f.)" and "5471 ÷ 114.2 = 47.91 kJ g⁻¹ (4 s.f.)"; narration "twenty nine point six seven" and "forty seven point nine one" (cue words updated); the "Numbers used" A2 row updated. Scenes 7 and 11 and the key notes keep 29.7 and 47.9 as rounded data-book figures, as the check allows.
+- **M3 (applied):** correction 6 now lists the Learning Intentions, Short Answer Q7's stem and the Revisit box.
+- **M4 (applied):** correction 11 now says the vocabulary entry implies the water-only formula, whereas a calibrated bomb calorimeter uses q = C(calorimeter) × ΔT, and notes that the entry does say "constant-volume".
+- **M5 (applied):** author note (a) adds NIST butan-1-ol −2670 ± 20 kJ/mol, with −2676 inside it.
+- E10 "up to 10%": the Open decision is closed as "keep", citing this check; Codex re-checks in its error pass.
+
+Declined: none. Pending: Codex error check (including the unverified Brazil figure in correction 13, which the video does not use).
