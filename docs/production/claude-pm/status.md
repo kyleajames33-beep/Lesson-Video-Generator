@@ -1106,3 +1106,59 @@ Created these draft files:
 Updated `docs/production/module6-video-route-draft.json` with candidate Biology P01 and P02 entries. The Chemistry P IDs stay as drafted. The index quotes the current 2017 ledger wording and records why other investigation actions do not become separate P videos. Biology B16, B18 and B19 already have pre-design packs and site extracts, so none was created for them. The nine P plans include school-scale methods, worked example results, NESA validity/reliability/accuracy, sourced risks and plate inventories. The three G plans contain original worked questions; Chemistry G02 includes amphiprotic Ka against Kb, and Biology G02 practises extended evaluation of biotechnology.
 
 All plans remain drafts for Claude's review. The Module 6 route still has older Biology core and G entries awaiting the separate amendments in Claude's route review. The school must use its own risk assessment and actual reagent SDS before conducting a method. Question for Claude: confirm the two Biology P candidates and the practical methods before design.
+
+
+### Brief 96: practical, calculation and biotechnology plates and checks (22 October 2026)
+
+Created all 11 requested plates, `assets/brief96-provenance.json`, `assets/brief96-qa/` and `assets/brief96-media-checkpoint.json`. The fermenter has the requested round sight window. The empty colony dish retains the original painted rim and alpha. Its inherited 8% side margins preserve the reference framing. The archive is `out/archives/brief96-plates-2026-10-22.zip`; all 91 members pass CRC and hash checks.
+
+`checks/codex-check-96.md` reports two corrections, for ferret alleles and cDNA wording. Added the new exact, sourced site rows to `site-corrections-m6.md`. Resolve the reported design errors before voicing. Question for Claude: none.
+
+### Brief 97: titration and biotechnology plates and checks (22 October 2026)
+
+Created all 12 requested plates, `assets/brief97-provenance.json`, `assets/brief97-qa/` and `assets/brief97-media-checkpoint.json`. Corrected the burette close-up to an open tube section. All three methyl-orange clips retain the reference glass and alpha, including its inherited 8% vertical margins. The archive is `out/archives/brief97-plates-2026-10-22.zip`; all 96 members pass CRC and hash checks.
+
+`checks/codex-check-97.md` reports two corrections, for a titre bracket and the eGenesis clinical-trial claim. Added this batch's exact site findings to `site-corrections-m6.md`. Resolve the reported design errors before voicing. Question for Claude: none.
+
+### Brief 98: cabbage and yeast practical plates and checks (22 October 2026)
+
+Created all 14 requested plates, `assets/brief98-provenance.json`, `assets/brief98-qa/` and `assets/brief98-media-checkpoint.json`. Independent image checks confirm exactly 144, 97, 61, 24, 5 and 3 colonies. The closed UV cabinet has no visible light. The cabbage clips retain the reference framing and its inherited 8% vertical margins. The archive is `out/archives/brief98-plates-2026-10-22.zip`; all 38 members pass CRC and hash checks.
+
+`checks/codex-check-98.md` reports six corrections. Added the new site findings and corrected C12 correction 6 to the vinegar minimum of 40 g/kg, a mass per mass basis, in `site-corrections-m6.md`. Resolve the reported design errors before voicing. Question for Claude: none.
+
+### Brief 99: first Module 7 plates, checks and source fixes (22 October 2026)
+
+Created all 20 requested plates, `assets/brief99-provenance.json`, `assets/brief99-qa/` and `assets/brief99-media-checkpoint.json`. The TMV, prion and swan-neck flask received targeted corrections. The five flask states share the same bulb and liquid level. All 20 plates meet the 2000 px, alpha and 10% margin checks. The archive is `out/archives/brief99-plates-2026-10-22.zip`; all 157 members pass CRC and hash checks.
+
+`checks/codex-check-99.md` reports eight corrections, including the B7-IQ1-01 practical flag and the Snow author-note count. The ledger was not edited. Created `pre-design/chem-m7-l11-methanol-dataset.md` with two constructed school examples giving 49.9% and 52.7% heat recovery. Added all standing Module 7 site findings and the five earlier route findings to `site-corrections-m7.md`. Across briefs 96 to 99, the site logs gained 58 exact, sourced rows, plus the revised vinegar entry. The read-only site files and lesson designs were not changed.
+
+The combined final audit is `assets/brief96-99-final-audit.md`. All 57 plates and all 382 archive members were checked. It records the inherited framing exceptions and the actual source-access limits, including restricted historical full text and the withheld 2021 Biology stimulus. These checks do not supply artwork, recording or release approval. Resolve the 18 report findings before voicing, and transfer the four archives before using the plates on another computer. Question for Claude: none.
+
+### Brief 28v: twelve public Module 6 and skills uploads (22 October 2026)
+
+All 12 requested videos are Public. Final saved Studio pages match the prepared titles and descriptions and show HD complete, no notices, Education, AI disclosure Yes and not made for kids. Timed English (Australia) SRT captions were saved and published during upload. Useful auto-generated thumbnail frames were visually selected. Key notes occupy the endings, so end screens were skipped. No daily upload limit was reached.
+
+Public video links:
+
+- chem-m6-c09: https://youtu.be/I4cEf51KJ5I
+- bio-m6-b09: https://youtu.be/Vyr0KetDMwo
+- chem-m6-c10: https://youtu.be/xl-LqpA8IUo
+- bio-m6-b10: https://youtu.be/71MkKTjXPOU
+- chem-m6-c11: https://youtu.be/5RRF1xvW3lk
+- skills-s04: https://youtu.be/dZQvSUxFY8A
+- bio-m6-b11: https://youtu.be/oAVZdpuLnHw
+- chem-m6-c12: https://youtu.be/WImke8N1jqg
+- skills-s03: https://youtu.be/wYqgEi0J71g
+- bio-m6-b12: https://youtu.be/y6vgEQaZel4
+- chem-m6-c13: https://youtu.be/nyq1jhlmhgs
+- chem-m6-c14: https://youtu.be/9-supcAoc8g
+
+Public playlists, all with Manual sorting and final available-video order checked:
+
+- https://www.youtube.com/playlist?list=PLWBoqjMWeZi0 (17 available videos)
+- https://www.youtube.com/playlist?list=PLOXPcalkg-iI (16 available videos)
+- https://www.youtube.com/playlist?list=PLD-Lwfjq3gW0 (4 available videos)
+
+Biology has one pre-existing unavailable item, which was preserved. S04 follows B03 and S03 follows B10. Chemistry S04 follows C11 and S03 follows C12. Skills are ordered S01 to S04. Positions count available videos.
+
+The six titles over YouTube's 100-character limit were minimally shortened; originals and notes remain in `youtube/wave5-metadata-draft.json`. C09 uses the approved design and file title for weak-acid neutralisation heat, rather than the inconsistent brief table label. Original MP4 hashes match the brief. The 29 upload records and all primary/additional playlist positions are reconciled in `youtube/wave5-uploads.json`; final evidence is `youtube/brief28v-final-readback.json`. Question for Claude: none.

@@ -1,0 +1,823 @@
+{
+  "brief": 96,
+  "date": "2026-10-22",
+  "part": "plates",
+  "records": [
+    {
+      "path": "public/assets/chemistry/p02-foam-cup-in-beaker-v1.png",
+      "sha256": "f56215acc72294f9b9818d89a764916e80629ec746e164d44cf9dafc9c7ce4b5",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-5d2968c7-38af-4b25-9b05-73a5880c6909.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        543,
+        227,
+        1456,
+        1774
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/p02-foam-cup-in-beaker-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/p02-foam-cup-in-beaker-v1-checker-400.png",
+      "alphaBox0": [
+        542,
+        225,
+        1458,
+        1775
+      ],
+      "clearMarginPixels": {
+        "left": 542,
+        "top": 225,
+        "right": 542,
+        "bottom": 225
+      },
+      "clearMarginPercent": {
+        "left": 27.1,
+        "top": 11.25,
+        "right": 27.1,
+        "bottom": 11.25
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 1. `p02-foam-cup-in-beaker-v1.png`: the same white polystyrene foam cup and lid style as `m6-foam-cup-calorimeter-v1.png` (match its texture and cutaway window showing clear liquid about half full), standing inside a slightly wider clear glass beaker that supports it; a steel temperature probe through one hole in the lid and a thin white plastic stirring rod through a second hole, both reaching into the liquid. No readout (the readout is coded), no hands.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/chem-m6-p02.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/p02-foam-cup-in-beaker-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/chemistry/m6-measuring-cylinder-v1.png",
+      "sha256": "b9847752175b1f5973308343202bed9c91cbff68bed4df885419333e6d0f0f07",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-5d1e988d-db58-405c-a986-39988e6f645e.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        738,
+        202,
+        1261,
+        1800
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-measuring-cylinder-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-measuring-cylinder-v1-checker-400.png",
+      "registrationAdjustment": {
+        "priorSha256": "d232a1fdfe12ed4367b1ab6a1d06b7b0d81a9ea6529df30e6e2c2fca27ebedc8",
+        "oldAlphaBox0": [
+          729,
+          175,
+          1271,
+          1825
+        ],
+        "newContentDimensions": [
+          525,
+          1600
+        ],
+        "newPosition": [
+          737,
+          200
+        ],
+        "method": "Proportionate resize of complete existing painted content, then transparent-canvas placement. No content painted or removed."
+      },
+      "alphaBox0": [
+        737,
+        200,
+        1262,
+        1800
+      ],
+      "clearMarginPixels": {
+        "left": 737,
+        "top": 200,
+        "right": 738,
+        "bottom": 200
+      },
+      "clearMarginPercent": {
+        "left": 36.85,
+        "top": 10.0,
+        "right": 36.9,
+        "bottom": 10.0
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 2. `m6-measuring-cylinder-v1.png`: an empty clear glass 100 mL measuring cylinder with a hexagonal base and a pouring spout, faint unlabelled graduation lines (no numbers), side view, upright. Empty so the liquid fill and level are coded.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/chem-m6-p02.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-measuring-cylinder-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/chemistry/m6-lab-tissue-v1.png",
+      "sha256": "bf36340a634531b037298e7a7f0dd65825a7296e11b1a14aee6d682aad828a6c",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-0829816f-6b50-40b0-ae0a-917b602e5260.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        351,
+        525,
+        1648,
+        1476
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-lab-tissue-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-lab-tissue-v1-checker-400.png",
+      "alphaBox0": [
+        350,
+        523,
+        1650,
+        1477
+      ],
+      "clearMarginPixels": {
+        "left": 350,
+        "top": 523,
+        "right": 350,
+        "bottom": 523
+      },
+      "clearMarginPercent": {
+        "left": 17.5,
+        "top": 26.15,
+        "right": 17.5,
+        "bottom": 26.15
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 3. `m6-lab-tissue-v1.png`: a single folded white laboratory tissue (lint-free wipe), slightly creased, lying at a small angle; on its own.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/chem-m6-p03.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-lab-tissue-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/chemistry/m6-ph-probe-holder-v1.png",
+      "sha256": "a14ee26a1f89b360405ef6aa58769cdf5663b02e065461c1901329a5c805e8b9",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-e1c906f3-6a9a-4fbd-becb-acc1ddb7e979.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        476,
+        201,
+        1544,
+        1798
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-ph-probe-holder-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-ph-probe-holder-v1-checker-400.png",
+      "alphaBox0": [
+        456,
+        200,
+        1544,
+        1800
+      ],
+      "clearMarginPixels": {
+        "left": 456,
+        "top": 200,
+        "right": 456,
+        "bottom": 200
+      },
+      "clearMarginPercent": {
+        "left": 22.8,
+        "top": 10.0,
+        "right": 22.8,
+        "bottom": 10.0
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 1. `m6-ph-probe-holder-v1.png`: the same pH probe as in `m6-ph-meter-probe-beaker-v1.png` (match its blue collar, glass body and bulb, and black cable leaving the top), held vertically in a small laboratory electrode holder (a short rod on a weighted base with a clip arm), with the glass bulb clearly visible at the bottom and empty space beneath it for a beaker to slide under. No beaker, no meter, no hands.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/chem-m6-p03.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-ph-probe-holder-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/chemistry/m6-buffer-bottle-v1.png",
+      "sha256": "c8001fa551bad51ee8fc78ddb04789de1514e7b103ff97412e8c0daa36b2f57b",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-94698ffd-163f-4aae-b991-322e8cb401d0.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        626,
+        276,
+        1373,
+        1724
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-buffer-bottle-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-buffer-bottle-v1-checker-400.png",
+      "alphaBox0": [
+        625,
+        275,
+        1375,
+        1725
+      ],
+      "clearMarginPixels": {
+        "left": 625,
+        "top": 275,
+        "right": 625,
+        "bottom": 275
+      },
+      "clearMarginPercent": {
+        "left": 31.25,
+        "top": 13.75,
+        "right": 31.25,
+        "bottom": 13.75
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 2. `m6-buffer-bottle-v1.png`: a single small plastic laboratory reagent bottle with a screw cap, containing clear colourless liquid, with a blank white label band (no text); upright, three-quarter view. Used three times with coded coloured label bands (and once alone in attempt 2).",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/chem-m6-p03.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-buffer-bottle-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/biology/m6-blackface-ewe-v1.png",
+      "sha256": "baf936e3b499e569fed54b4324541bcfa691329247049c83017df6e959f914e5",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-01b91a77-2f9f-4864-93f5-14fa1ca53d85.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        202,
+        339,
+        1800,
+        1660
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-blackface-ewe-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-blackface-ewe-v1-checker-400.png",
+      "alphaBox0": [
+        200,
+        338,
+        1800,
+        1662
+      ],
+      "clearMarginPixels": {
+        "left": 200,
+        "top": 338,
+        "right": 200,
+        "bottom": 338
+      },
+      "clearMarginPercent": {
+        "left": 10.0,
+        "top": 16.9,
+        "right": 10.0,
+        "bottom": 16.9
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 1. `m6-blackface-ewe-v1.png`: one adult Scottish Blackface ewe standing side-on, facing right like `m6-white-sheep-v1.png`, with the breed's black face and black legs, curled horns and coarse, longer off-white fleece. The black face must read clearly at 250 px tall.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/bio-m6-b16.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-blackface-ewe-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/biology/m6-white-faced-lamb-v1.png",
+      "sha256": "06c9e01a301d5d227f3b01e49375892280433af8e9ce92cedbc3276eff07455c",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-71749b45-427e-415b-99bc-e784f0b2c5c5.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        451,
+        497,
+        1549,
+        1503
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-white-faced-lamb-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-white-faced-lamb-v1-checker-400.png",
+      "alphaBox0": [
+        450,
+        494,
+        1550,
+        1505
+      ],
+      "clearMarginPixels": {
+        "left": 450,
+        "top": 494,
+        "right": 450,
+        "bottom": 495
+      },
+      "clearMarginPercent": {
+        "left": 22.5,
+        "top": 24.7,
+        "right": 22.5,
+        "bottom": 24.75
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 2. `m6-white-faced-lamb-v1.png`: one young lamb, about three months old, standing side-on facing right, with a clean white face and white legs (Finn Dorset type: no black on the face or legs), short fleece. Same scale family: shown beside the ewe it should be clearly smaller.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/bio-m6-b16.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-white-faced-lamb-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/biology/m6-black-footed-ferret-v1.png",
+      "sha256": "c44d71d77623463fddb88e57be220b9f681b3827c4bac697fd6f68642988bb07",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-447943d4-3440-4dc1-ad24-fc5ef72feb42.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        254,
+        601,
+        1722,
+        1398
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-black-footed-ferret-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-black-footed-ferret-v1-checker-400.png",
+      "alphaBox0": [
+        250,
+        600,
+        1750,
+        1399
+      ],
+      "clearMarginPixels": {
+        "left": 250,
+        "top": 600,
+        "right": 250,
+        "bottom": 601
+      },
+      "clearMarginPercent": {
+        "left": 12.5,
+        "top": 30.0,
+        "right": 12.5,
+        "bottom": 30.05
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 3. `m6-black-footed-ferret-v1.png`: one black-footed ferret (*Mustela nigripes*) standing on all fours, side-on facing right: buff body, black feet and legs, black tail tip and black eye mask. No burrow, grass or ground.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/bio-m6-b16.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-black-footed-ferret-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/biology/m6-water-bath-tube-v1.png",
+      "sha256": "c35db5ffbe1890eb1033377781915795522ad9c005e3ed8480c1b92110d133a9",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-301a4c7b-2dfd-44e4-b688-4e8d299c5fc4.png",
+      "tool": "built-in imagegen",
+      "packaging": "Pillow crop, resize and center generated RGBA plate on 2000 square canvas",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        247,
+        201,
+        1752,
+        1798
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-water-bath-tube-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-water-bath-tube-v1-checker-400.png",
+      "alphaBox0": [
+        245,
+        200,
+        1754,
+        1800
+      ],
+      "clearMarginPixels": {
+        "left": 245,
+        "top": 200,
+        "right": 246,
+        "bottom": 200
+      },
+      "clearMarginPercent": {
+        "left": 12.25,
+        "top": 10.0,
+        "right": 12.3,
+        "bottom": 10.0
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 1. `m6-water-bath-tube-v1.png`: a small laboratory water bath seen from a low three-quarter angle, its lid open, with one small clear plastic microcentrifuge tube held upright in a white floating rack in the water. The tube must read clearly at 250 px tall. No digital readout digits.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/bio-m6-b18.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-water-bath-tube-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false
+      },
+      "promptOriginalAvailable": false
+    },
+    {
+      "path": "public/assets/biology/m6-fermenter-tank-v1.png",
+      "sha256": "a678123e16f15073580ea6b1824fdb20bb655555c221b38958763d5715f6b605",
+      "sourceGenerated": "C:/Users/kygs/.codex/generated_images/01a16018-9e72-7822-ac3e-a1ff27c3330d/exec-e563711f-198c-479f-a3e3-714f885c1596.png",
+      "tool": "built-in imagegen",
+      "packaging": "Crop generated RGBA content to alpha box, scale proportionately to a 1600px long side, centre on 2000px transparent canvas.",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        617,
+        268,
+        1414,
+        1657
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-fermenter-tank-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-fermenter-tank-v1-checker-400.png",
+      "alphaBox0": [
+        200,
+        217,
+        1800,
+        1783
+      ],
+      "clearMarginPixels": {
+        "left": 200,
+        "top": 217,
+        "right": 200,
+        "bottom": 217
+      },
+      "clearMarginPercent": {
+        "left": 10.0,
+        "top": 10.85,
+        "right": 10.0,
+        "bottom": 10.85
+      },
+      "tenPercentMarginPass": true,
+      "prompt": "Use case: precise-object-edit. Edit target: the referenced transparent ink and watercolour stainless-steel fermenter plate. Replace ONLY the tall vertical sight-glass window on its cylindrical front with ONE SMALL ROUND sight-glass window near the middle, showing pale cloudy cream liquid. The old elongated opening must become continuous stainless-steel wall. Keep the same tall cylindrical vessel, domed top, pipes, valves, legs, realistic ink outlines, watercolour metal texture, proportions, perspective, lighting and isolated framing. No extra objects, no text, labels, numbers, people, hands, building, walkway, background or ground shadow. Preserve real transparency. Final intended canvas 2000 x 2000 with at least 10 percent clear margins.",
+      "promptStatus": "Actual built-in imagegen edit prompt, recorded verbatim.",
+      "promptSource": "docs/production/claude-pm/lessons/bio-m6-b18.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-fermenter-tank-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false,
+        "roundSightGlassPass": true,
+        "paleCloudyLiquidVisible": true
+      },
+      "promptOriginalAvailable": true,
+      "sourceGeneratedHistory": [
+        "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-1367e22d-16cc-48e1-8d9c-7d3603b0a073.png"
+      ],
+      "editTargetPriorSha256": "88c03c30a58af2f328b546265da9edd295cb9434db5cc940ee5e1b89fe451c1b"
+    },
+    {
+      "path": "public/assets/biology/m6-antibiotic-colonies-empty-v1.png",
+      "sha256": "4d0a85fd865850fdf1048675de68e24dbf06827e380f116ae0a1e95b4ec9d67c",
+      "sourceGenerated": "C:\\Users\\kygs\\.codex\\generated_images\\01a15d77-0e03-73d3-9115-2c928e7196ff\\exec-6e2649e2-da4c-4e64-a6a4-347c0dba4e6f.png",
+      "tool": "built-in imagegen",
+      "packaging": "Final assembly of original before plate rim and alpha with the existing imagegen-painted empty agar interior. No new procedural illustration.",
+      "dimensions": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox128": [
+        163,
+        172,
+        1838,
+        1828
+      ],
+      "qaCream400": "docs/production/claude-pm/assets/brief96-qa/m6-antibiotic-colonies-empty-v1-cream-400.png",
+      "qaChecker400": "docs/production/claude-pm/assets/brief96-qa/m6-antibiotic-colonies-empty-v1-checker-400.png",
+      "registrationAdjustment": {
+        "priorSha256": "053287332683ffc90bfe05f545aecb1ca1be3564ad82e34469f73f4a0099945e",
+        "oldAlphaBox0": [
+          165,
+          175,
+          1835,
+          1824
+        ],
+        "newContentDimensions": [
+          1680,
+          1659
+        ],
+        "newPosition": [
+          160,
+          171
+        ],
+        "method": "Proportionate resize of complete existing painted content, then transparent-canvas placement. No content painted or removed.",
+        "supersededBy": "Final assembly retaining literal before plate rim and alpha."
+      },
+      "alphaBox0": [
+        160,
+        171,
+        1840,
+        1829
+      ],
+      "clearMarginPixels": {
+        "left": 160,
+        "top": 171,
+        "right": 160,
+        "bottom": 171
+      },
+      "clearMarginPercent": {
+        "left": 8.0,
+        "top": 8.55,
+        "right": 8.0,
+        "bottom": 8.55
+      },
+      "tenPercentMarginPass": false,
+      "prompt": "Reconstructed asset description from the approved design, not the original submitted imagegen prompt: 3. `m6-antibiotic-colonies-empty-v1.png` (Revision 2): the same Petri dish as `m6-antibiotic-colonies-before-v1.png` and `m6-antibiotic-colonies-after-v1.png`, from directly above, with the same greenish agar, glass rim, lighting and 2000 x 2000 framing, and no colonies at all. It must register with the pair (dish outline at the same position and scale; the pair's alpha bounding box is about x 160 to 1840, y 170 to 1830), so a crossfade into either plate shows only colonies appearing. Derive it from the pair if that keeps the registration exact (paint out the colonies on a copy of the after plate). Check a 50 per cent overlay with each plate before hand-in.",
+      "promptStatus": "exact design asset description reconstruction; original tool prompt not available in this agent context",
+      "promptSource": "docs/production/claude-pm/lessons/bio-m6-b18.md",
+      "qaDark300": "docs/production/claude-pm/assets/brief96-qa/m6-antibiotic-colonies-empty-v1-dark-300.png",
+      "qaVisualReview": {
+        "reviewedSizesPixels": [
+          300
+        ],
+        "backgrounds": [
+          "cream",
+          "checker",
+          "dark"
+        ],
+        "noTextNumbersHandsPeople": true,
+        "transparentBackground": true,
+        "visibleHaloAt300": false,
+        "noResidualColonies": true,
+        "literalBeforeRimAndAlphaPass": true
+      },
+      "promptOriginalAvailable": false,
+      "assembly": {
+        "method": "Retain original before plate RGBA pixels outside the agar interior; composite existing imagegen-painted empty agar within an elliptical interior selection. Preserve before alpha literally at every pixel. No colonies or new illustration drawn procedurally.",
+        "rimSource": "public/assets/biology/m6-antibiotic-colonies-before-v1.png",
+        "interiorSource": "docs/production/claude-pm/assets/brief96-qa/assembly-source-empty-agar.png",
+        "interiorScale": 1.035,
+        "interiorCenter": [
+          1000,
+          1000
+        ],
+        "interiorMaskRadii": [
+          767,
+          754
+        ],
+        "interiorFeather": "about 5 pixels inside the selection edge",
+        "alphaMatchesBeforeExactly": true,
+        "rimMatchesBeforeOutsideSelectionExactly": true
+      }
+    }
+  ],
+  "qaSummary": {
+    "reviewDate": "2026-10-22",
+    "plateCount": 11,
+    "allDimensions2000Square": true,
+    "allRealAlpha": true,
+    "marginPassCount": 10,
+    "colonyRegistration": [
+      {
+        "reference": "before",
+        "emptyBoxAlpha0": [
+          160,
+          171,
+          1840,
+          1829
+        ],
+        "referenceBoxAlpha0": [
+          160,
+          171,
+          1840,
+          1829
+        ],
+        "boxDeltaPixels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "alpha128SilhouetteIoU": 1.0,
+        "alpha128DifferingPixels": 0,
+        "alphaPixelIdentical": true,
+        "rimPixelsIdenticalOutsideAgarSelection": true,
+        "exactPixelAlignmentPass": true,
+        "note": "Literal original before rim and alpha."
+      },
+      {
+        "reference": "after",
+        "emptyBoxAlpha0": [
+          160,
+          171,
+          1840,
+          1829
+        ],
+        "referenceBoxAlpha0": [
+          160,
+          170,
+          1840,
+          1830
+        ],
+        "boxDeltaPixels": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "alpha128SilhouetteIoU": 0.9974406490598363,
+        "alpha128DifferingPixels": 5581,
+        "alphaPixelIdentical": false,
+        "rimPixelsIdenticalOutsideAgarSelection": false,
+        "exactPixelAlignmentPass": false,
+        "note": "Any remaining rim or one-pixel boundary difference is the existing difference between the unchanged before and after references, not new generated outline drift."
+      }
+    ],
+    "colonyExactAlignmentPass": true,
+    "limitations": [
+      "Empty dish inherits the original before plate margins: left and right 160 px (8%), top and bottom 171 px (8.55%). This is the required original framing and conflicts with the generic 10 percent rule."
+    ],
+    "sheepScale": {
+      "whiteSheepContentWidth": 1600,
+      "blackfaceEweContentWidth": 1600,
+      "lambContentWidth": 1100,
+      "lambToEweWidthRatio": 0.6875,
+      "review": "Matched cream fleece, ink outlines and right-facing pose; the lamb is clearly smaller. Existing reference has edge contamination at full size; it was not edited."
+    },
+    "ferretReview": "Buff body, black eye mask, black legs and feet, black tail tip visible at 300px.",
+    "probeReview": "Blue collar, glass body and black cable match reference appearance; holder leaves room beneath bulb.",
+    "originalReferenceSha256": {
+      "public\\assets\\biology\\m6-antibiotic-colonies-before-v1.png": "e4624f2f5cf25137b3663b49dea447dad84098df31aa8d83d3ffe9284b793f92",
+      "public\\assets\\biology\\m6-antibiotic-colonies-after-v1.png": "187d6475d4a58d9062409fe2d7d7fde036c41b7620c6bf99a56b130b52e80330",
+      "public\\assets\\biology\\m6-white-sheep-v1.png": "99321cfe1920da946a716b76417001c4aa84dad7ee74d133c27e02f5e38be20b",
+      "public\\assets\\chemistry\\m6-ph-meter-probe-beaker-v1.png": "dbae282cb5d8f97e5de8181e41a7933edeccae3fe1ea5c0c6721fdd9451c8a05"
+    },
+    "colonyExactAlignmentMeaning": "Original before plate rim and alpha reused literally. After overlay retains only the original pair's pre-existing rim/boundary differences.",
+    "colonyAssemblyPass": true,
+    "fermenterRoundWindowPass": true,
+    "resolvedFindings": [
+      "Fermenter elongated sight glass replaced by small round sight glass through built-in imagegen edit.",
+      "Generated empty dish outline drift removed by assembling the literal original before rim and alpha with imagegen-painted empty agar."
+    ],
+    "colonyExactBothReferencesPass": false,
+    "colonyExactBeforeAlignmentPass": true,
+    "colonyNoNewOutlineDriftPass": true,
+    "allRequiredCorrectionsCompleteExceptInheritedMargin": true,
+    "finalVisualReview": "Corrected fermenter inspected on cream, checkerboard and dark backgrounds at 300 px. Assembled empty dish inspected on all three backgrounds at 400 px and on cream at 800 px. Both 50 percent overlays inspected at 400 px. No residual colonies or new rim movement visible."
+  }
+}
