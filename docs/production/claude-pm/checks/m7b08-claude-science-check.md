@@ -66,3 +66,17 @@ The dotpoint is quoted verbatim with the right inquiry question; the title is 88
 **Ready to voice after fixes 1 and 2** on science. Findings 3 to 5 are small wording fixes; findings 6 and 7 are site-record fixes.
 
 ## Resolution
+
+Resolved by the author in `../lessons/bio-m7-b08.md` Revision 2 (22 Oct). Narration 5,755 characters by script, about 556 s.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 4: "Doherty and Zinkernagel found the clue: a T cell recognises a virus only together with the cell's own display molecule. So it checks the display molecule and the piece together." They are credited with recognition of virus together with self MHC (1973 to 1975); the facts list and Decisions record that the peptide-in-the-groove picture came later (Townsend and colleagues 1986; Bjorkman and colleagues 1987). The Codex check line is updated to match. |
+| 2 | Applied: "Both arms weaken together."; verdict chip "B cells make antibodies: true. Only the T cell arm: not supported". The facts list notes T-independent antibody responses and innate defences continue. |
+| 3 | Applied: spoken "Cytotoxic T cells rely on helper cytokines to multiply"; model "usually depend on helper T cell cytokines"; answer row "rely on helper cytokines to multiply". Scene 6 unchanged. |
+| 4 | Applied: scene 9 "They don't have receptors made for one pathogen."; note 5 "without a receptor for one pathogen". The facts list names inhibitory MHC I receptors and NKG2D. |
+| 5 | Applied: "Almost every one of your cells"; key note 2 "almost every cell displays". Facts list cites the *Plasmodium* reason. |
+| 6 | Applied to site error 4: "41.0 million people were living with HIV globally in 2025 (UNAIDS, July 2026)", range 35.3 to 47.5 million, recorded as **time-sensitive** (UNAIDS revises each July; recheck at the site fix). Codex check line updated. |
+| 7 | Applied to site error 8: "HIV was isolated in 1983 and shown to cause AIDS in 1984." |
+
+None declined. Ready for the Codex error check.

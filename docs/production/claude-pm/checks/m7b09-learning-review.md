@@ -91,3 +91,23 @@ Within the limit as written, provided earlier items dim at each cue. Densest fra
 **Ready to voice after fixes** (findings 1 to 6; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including the running time against the 9.5 minute cap.
 
 ## Resolution
+
+Resolved by the author in `../lessons/bio-m7-b09.md` Revision 2 (22 Oct). Narration recounted by script (lines starting "> ", bold markers removed): **5,910 characters**, 18 scene files, about **569 s** (9.5 minutes), at or under the 570 s cap after the recovery in finding 13. No U+2014 in the design. Nothing recorded; human listening pending.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied with the reviewer's text: "So a snakebite needs ready-made antibodies now, while lasting protection against a disease comes from active immunity, such as a vaccine." Tags "now: passive", "lasting: active"; nothing on screen links the vaccine to the snake. |
+| 2 | Applied: "The scale is often logarithmic, because the second peak can be ten to a hundred times higher." Gloss unchanged. |
+| 3 | Applied: scene 4 adds "Memory helper T cells give the go-ahead quickly, and memory cytotoxic T cells destroy infected cells sooner." The field's T cells pulse and the strip's "helpers: signal" and "killers: destroy" chips flash (grey tag "b08"); key note 3 adds "memory helper and cytotoxic T cells act sooner". |
+| 4 | Applied: scene 12 opens "Active and passive immunity are both acquired immunity, gained during your life, unlike the innate defences you're born with." Grey "acquired" bracket across both rows, gloss "acquired: gained during life (active or passive)" that dims before the two questions; key note 5 starts "Acquired immunity (gained during life)". |
+| 5 | Applied: hook "fallen far below its peak"; scene 3 "So the memory is stored mainly in cells, not in leftover antibody."; chip reason "mainly memory cells, not leftover antibody"; the hook's line stays clearly above the axis. |
+| 6 | Applied: "a week or more after infection"; key note 1 and the Stops line match; the scene 2 graph has no day numbers. |
+| 7 | Applied: "in a form that doesn't cause the full disease"; gloss, key note 4 and Terms line match. |
+| 8 | Applied: "Some vaccines need an extra dose later, called a booster. It's another exposure,"; gloss "booster: a later extra dose of the same vaccine". |
+| 9 | Applied: scene 4 tags dim per cue, the IgG gloss stays small grey and only the "secondary response" gloss and one tag are bright at the end; scene 2 adds grey gloss "mainly IgM at first". |
+| 10 | Applied: "The horse antibodies were cleared within weeks."; row "horse antibodies gone within weeks: needs antivenom again". |
+| 11 | Applied: "It often lasts a long time," and "You're given antibodies that another person or animal made." Key note 5 matches. |
+| 12 | Applied: the Decisions note now records the route as it stands (bio-m7-g03 after b09, playlist order 14; b09 next = g03), and the handoff line no longer says "to be added". The b10 herd immunity note is already in the route JSON (bio-m7-b10 rootNote "Covers herd immunity (moved from b09)"), so no root action is outstanding. |
+| 13 | Applied: 13a "Two exam questions. First." and the hook hold cut from 2 s to 1 s. Recount 5,910 characters, about 569 s. Reserve order recorded in the design: revert finding 11's wording first, then shorten the acquired sentence (-53). 13b about 29 s; 13d 339 characters, about 25 s. |
+
+None declined. Ready for the Codex error check; repeat this review on the exact voiced preview before full export, including running time against the cap.

@@ -82,3 +82,19 @@ Within the limit as written, provided earlier items dim at each cue. Densest fra
 **Ready to voice after fixes** (findings 1 to 4; no blocker), subject to the Claude science check and the Codex error check. Repeat this review on the exact voiced preview before full export, including running time and both feedback timings.
 
 ## Resolution
+
+Resolved by the author in `../lessons/bio-m7-b08.md` Revision 2 (22 Oct). Narration recounted by script (lines starting "> ", bold markers removed): **5,755 characters**, 17 scene files, about **556 s** (9.3 minutes), under the 9.5 minute cap. No U+2014 in the design. Nothing recorded; human listening pending.
+
+| # | Action |
+| --- | --- |
+| 1 | Applied. Scene 9 now shows the NK cell: the new `m7-t-cell-killer-v1.png` at the same size with a teal ring and no receptor forks (grey tags "NK cell: a lymphocyte with granules, no receptor for one pathogen" and "looks like a killer T cell, recognises differently"). On "too few display molecules" the amber-ringed cytotoxic T cell's fork finds nothing to seat (tag "nothing for the T cell to check"); the NK cell binds and that cell crossfades to a small apoptotic thumbnail (tag "NK cell: kills anyway"). The day axis stays. No new plate. The Visual system notes that no helper T cell appears in scene 9, so the teal ring is not ambiguous. |
+| 2 | Applied: "They don't have receptors made for one pathogen." Key note 5 and the Stops line say "without a receptor for one pathogen" / "no receptor made for one pathogen". |
+| 3 | Applied: "B cells do make antibodies, but the claim isn't supported." and "Both arms weaken together." Verdict chip "B cells make antibodies: true. Only the T cell arm: not supported". |
+| 4 | Applied with the reviewer's text: "Doherty and Zinkernagel found the clue: a T cell recognises a virus only together with the cell's own display molecule. So it checks the display molecule and the piece together." The 1973 tag returns on "found the clue". |
+| 5 | Applied: "Almost every one of your cells ..." and key note 2 "almost every cell displays". |
+| 6 | Applied: "shown" lights on "displayed them", "fit" on "are selected"; lymph node plate dims once the zoom opens; "only fitting T cells" dims when "clone" lights; "CD4" and "CD8" write only after "cytotoxic T cells", small grey. |
+| 7 | Applied: the stress flag now appears on "They respond to stress signals on a cell". |
+| 8 | Applied: brief item 4 now asks for ten to twelve noticeably larger granules (about three times the existing rim dots), very dark, clearly visible at 200 px, and notes the plate also stands for an NK cell. |
+| 9 | Confirmed by recount: 5,755 characters, about 556 s; 13d is 375 characters (about 28 s). No cut needed; the reserve cut (scene 9's last two sentences, then the hook's Nobel clause) is kept. |
+
+None declined. Ready for the Codex error check; repeat this review on the exact voiced preview before full export.

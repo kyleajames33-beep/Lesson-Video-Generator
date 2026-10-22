@@ -77,3 +77,21 @@ All dotpoints are quoted verbatim with the right inquiry questions; the title is
 **Ready to voice after fixes 1 to 4** on science. Findings 5 to 8 are small wording fixes; findings 9 to 11 are site-record fixes.
 
 ## Resolution
+
+Resolved by the author in `../lessons/bio-m7-b09.md` Revision 2 (22 Oct). Narration 5,910 characters by script, about 569 s (at or under 570 s).
+
+| # | Action |
+| --- | --- |
+| 1 | Applied: hook "fallen far below its peak"; scene 3 "stored mainly in cells, not in leftover antibody"; chip reason "mainly memory cells, not leftover antibody". The facts list adds "VZV IgG persists for life at a lower level; cell-mediated immunity is important against reinfection". |
+| 2 | Applied: "a week or more after infection"; key note 1 "after a week or more"; the facts list adds the chickenpox incubation (14 to 16 days, CDC Pink Book). |
+| 3 | Applied: "in a form that doesn't cause the full disease" in narration, gloss and key note 4; the facts list cites the Varilrix and Varivax product information. |
+| 4 | Applied: "So a snakebite needs ready-made antibodies now, while lasting protection against a disease comes from active immunity, such as a vaccine." |
+| 5 | Applied (a): "because" replaces "so". (b) Accepted as is: note 3 keeps "often 10 to 100 times"; the facts list records that some texts give 100 to 1,000. |
+| 6 | Applied: spoken "The horse antibodies were cleared within weeks."; model "The injected horse antibodies were cleared within days to weeks". Scene 10's generic "weeks to months" is kept for human antibodies. |
+| 7 | Applied: "an extra dose later, called a booster. It's another exposure,". |
+| 8 | Applied: "It often lasts a long time,"; "antibodies that another person or animal made." |
+| 9 | Applied: site error 14 is **withdrawn** (48 days is a fair "six weeks"); kept in the list only as a withdrawn, optional dates note, removed from the Codex check line, and the Codex instruction now says to log site errors 1 to 13 only. |
+| 10 | Applied: site error 2 records "usually credited to Richard Dunning (1800)" and keeps the proposal that does not name him. |
+| 11 | Applied: site error 6 now carries the full Handbook wording, including the 5 year tetanus-prone wound rule. |
+
+None declined. Ready for the Codex error check.
