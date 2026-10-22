@@ -43,3 +43,28 @@ Revision 2 designs, checked 22 October 2026.
    - Old: "Codex to confirm S. cerevisiae in its risk group 1 examples".
    - Corrected: "Science ASSIST lists S. cerevisiae among RG1 organisms used in Australian schools, applying the AS/NZS 2243.3:2022 classification. The Standard does not list RG1 organisms."
    - The classification conclusion can remain. Its source attribution needs correcting: ASTA explicitly distinguishes its school examples from the Standard's classification. [ASTA/Science ASSIST, Guidelines for best practice for microbiology in Australian schools, Edition 2, page 10](https://asta.edu.au/wp-content/uploads/2025/03/Microbiology-Guidelines-Edition-2.pdf).
+
+## Resolution
+
+Resolved 22 October 2026 by the resolving author. All four designs are now Revision 3, "ready to voice". Narration counted by script (only lines starting `> `, bold markers removed).
+
+### chem-m6-p01 (Revision 3; narration 6,195 characters, about 562 s)
+
+1. **Applied, with one adaptation.** Scene 3 now reads "Heat damages the membranes in the cabbage cells, the thin layers that hold the pigment in, so the pigment leaks out faster." "Outer" is removed. The short gloss "the thin layers that hold the pigment in" is kept, because the entry knowledge does not assume Year 11 Biology and the project rules require a plain meaning for a new term. The gloss is true of both the vacuole membrane and the cell membrane. The lens visual now shows an internal pigment compartment (the vacuole, unlabelled) before the membranes break. The cause chain, entry knowledge and learning check match. The Revision 2 change-log entry is kept as history and marked as superseded.
+2. **Applied.** The Safety facts check now reads "Skin Irrit. 2 and Eye Irrit. 2 apply from 10 to under 25 percent. STOT SE 3 applies at 10 percent and above." The 0.10 mol/L reagent's classification and learner copy are unchanged.
+
+### chem-m6-g04 (Revision 3; narration 5,792 characters, about 571 s)
+
+No errors reported. Status updated only: "No changes: Codex check 98 found no errors in this design."
+
+### chem-m6-p07 (Revision 3; narration 6,269 characters, about 570 s)
+
+1. **Applied.** Scene 11 now reads "This result describes the tested bottle. More bottles must be sampled to describe the batch or brand." The visual row reads "one bottle: result for the tested bottle", and the ghost bottles are tagged "batch or brand: sample more bottles". Key note 5 ("one bottle tested"), the learning check and the vocabulary entry match. The corrected sentence added 23 characters to a video at the 9.5-minute cap, so the scene's temperature sentence was shortened to "And pH changes with temperature, so record the temperature." (same cue word, same meaning, now states the cause).
+
+### bio-m6-p01 (Revision 3; narration 6,240 characters, about 569 s)
+
+1. **Applied.** Scene 2 narration: "Each colony grew from a surviving cell or small clump that kept dividing." (cue word now "surviving"). Teal tag: "one colony = one surviving cell or small clump". Key note 1: "A colony grows from a surviving cell or small clump, so colony counts estimate survival." The ring gloss, vocabulary entry, boundary, cause chain, stop point, learning check and reference facts match. Survival arithmetic unchanged.
+2. **Applied.** Hook: "If some cells mutated and survived, where would they be? They'd be hiding inside the colonies that grew." The magnifier still sweeps the empty agar on "where would they be?".
+3. **Applied.** The Safety facts check reads "Science ASSIST lists S. cerevisiae among RG1 organisms used in Australian schools, applying the AS/NZS 2243.3:2022 classification. The Standard does not list RG1 organisms." The reference facts and the Codex request list match. Classification and learner copy unchanged.
+
+No em dashes in any of the four designs (checked by script).

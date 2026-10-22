@@ -1,6 +1,14 @@
 # S05: Calculation answers that get full marks (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 99 resolved; ready to voice.
+
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needed Codex error check before voicing.
+
+## Changes in Revision 3
+
+Resolves `checks/codex-check-99.md` (skills-s05 item 1).
+- **Research findings table and Codex request list (Codex 99 item 1):** "2021 Q27(a) in a 2 to 3 mark band" now reads "2021 Q27(a) in the 4-mark band" (the four-mark criterion includes correct significant figures). Scene 8's Revision 2 tag already says "other criteria", so no learner copy changes.
+- **Length:** no narration change; narration 6,109 characters, recounted by script; about 9.4 minutes (566 s).
 
 ## Revision 2 changes
 
@@ -327,7 +335,7 @@ All questions are written for HSCScience. None is copied from or adapted from a 
 | README takeaway 7: equation, substitution, intermediate result and final answer in order; retain units and precision | 4 to 7, 15 |
 | README takeaway 8 and Calculations: no automatic carried-forward mark; guidelines reward relevant steps | 10 |
 | Chemistry 2021 Q31 four-band ladder (main steps, some relevant steps), guideline checked 21 Oct | 10 |
-| Chemistry 2025 Q25: correct calculations with incorrect significant figures in the 2-mark band; 2022 Q28(b), 2023 Q32, 2024 Q32 name significant figures in the top criterion, and 2021 Q27(a) in a 2 to 3 mark band (pack and guidelines checked 21 Oct; 2021 added from the science check) | 8 |
+| Chemistry 2025 Q25: correct calculations with incorrect significant figures in the 2-mark band; 2022 Q28(b), 2023 Q32, 2024 Q32 name significant figures in the top criterion, and 2021 Q27(a) in the 4-mark band (pack and guidelines checked 21 Oct; 2021 added from the science check) | 8 |
 | Chemistry 2022 Q28(b) sample answer carries unrounded intermediates; 2024 Q32 sample answer uses the unrounded s (checked 21 Oct) | 9 (first only spoken) |
 | Chemistry 2021 Q33(a): "Acceptable range of ΔH and TΔS to be determined at Marking Centre" (checked 21 Oct) | 9 |
 | Chemistry 2022 Q29(a): units and negative sign in the criterion (pack) | Decisions (supports 7) |
@@ -413,7 +421,7 @@ Need: none.
 No new plates. Requested (not art, error-only):
 1. Confirm that the worked question (HCl and NaOH in a polystyrene cup, molar enthalpy of neutralisation, 4 marks), drill 1 (pH of 0.200 g NaOH made up to 250.0 mL) and drill 2 (SNP allele frequency in a sample of 250 bearded dragons) do not reproduce or closely paraphrase any 2019 to 2025 NESA Chemistry or Biology question. The Claude science check searched the 2021 to 2025 papers and found no near match (nearest: Chemistry 2022 Q26 and 2024 Q29); please confirm and search the 2019 and 2020 papers, which were not searched. Report any near match.
 2. Re-check every figure against the research pack: calculate 24 (Chemistry 24, Biology 0); the Chemistry-only hook bars explain 28, calculate 24, justify 12; the mark-value split (2, 6, 11, 3, 1, 1); the calculation fault at 7/12 (Chemistry 6/6, Biology 1/6).
-3. Check the guideline wording used in scenes 8 to 10 against the PDFs: Chemistry 2021 Q31 (four bands), Chemistry 2025 Q25 (significant figures in the 2-mark band), Chemistry 2022 Q28(b), 2023 Q32 and 2024 Q32 (significant figures named in the top criterion), Chemistry 2021 Q27(a) (significant figures in a 2 to 3 mark band), the Chemistry 2022 Q28(b) sample answer's unrounded intermediates, and Chemistry 2021 Q33(a) ("Acceptable range ... to be determined at Marking Centre").
+3. Check the guideline wording used in scenes 8 to 10 against the PDFs: Chemistry 2021 Q31 (four bands), Chemistry 2025 Q25 (significant figures in the 2-mark band), Chemistry 2022 Q28(b), 2023 Q32 and 2024 Q32 (significant figures named in the top criterion), Chemistry 2021 Q27(a) (significant figures in the 4-mark band), the Chemistry 2022 Q28(b) sample answer's unrounded intermediates, and Chemistry 2021 Q33(a) ("Acceptable range ... to be determined at Marking Centre").
 4. Confirm that no em dash appears in this file.
 
 ## YouTube metadata (draft)

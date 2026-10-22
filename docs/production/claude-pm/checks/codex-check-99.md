@@ -52,3 +52,35 @@ Revision 2 designs, checked 22 October 2026.
    - Old: `https://www.who.int/news/item/12-11-2025`.
    - Corrected source: [WHO Global Tuberculosis Report 2025, section 1.2: TB mortality](https://www.who.int/teams/global-programme-on-tuberculosis-and-lung-health/tb-reports/global-tuberculosis-report-2025/tb-disease-burden/1-2-tb-mortality).
    - The old URL returns 404. The report confirms the stated 2024 total of 1.23 million deaths, including 150,000 among people with HIV. The number does not need changing.
+
+## Resolution
+
+Resolved 22 October 2026 by the resolving author. All five designs are now Revision 3, "ready to voice". Narration counted by script (only lines starting `> `, bold markers removed).
+
+### skills-s05 (Revision 3; narration 6,109 characters, about 566 s)
+
+1. **Applied.** The research findings table and the Codex request list now say "2021 Q27(a) in the 4-mark band". Scene 8 already says "other criteria", so no learner copy changes.
+
+### chem-m7-c01 (Revision 3; narration 6,140 characters, about 557 s)
+
+1. **Applied.** The length section now says "About 13 s of headroom remains under 9.5 minutes". No learner copy changes.
+
+### chem-m7-c02 (Revision 3; narration 6,027 characters, about 548 s)
+
+No errors reported. Status updated only: "No changes: Codex check 99 found no errors in this design."
+
+### bio-m7-b01 (Revision 3; narration 5,943 characters, about 570 s)
+
+1. **Applied.** Scene 4: "It's a prokaryote, with its DNA lying in the cytoplasm. The tuberculosis bacterium has a wall containing a material called peptidoglycan, and is a rod a few thousandths of a millimetre long." Key note 2: "bacteria (prokaryotes, no nucleus; the tuberculosis bacterium has a peptidoglycan wall)". For consistency the bacteria reference fact now says the wall belongs to most bacteria (mycoplasmas have none).
+2. **Applied.** Scene 6 opens "Now zoom in to a smaller example."; the visual cue and the Revision 2 visual-fixes summary match.
+3. **Applied.** The `b6a-bacterium-v1.png` asset entry now says its wall and ribosomes pulse "as examples of targets for different antibiotics".
+4. **Not a design error; note for root.** B7-IQ1-01 in `docs/production/programme/syllabus/bio-2017-y12.json` should change from `"depthStudyOrPractical": false` to `true`, because its examples include designing and conducting a microbial testing investigation of water or food samples. B01 still teaches only the classification part. The ledger was not edited in this pass. Root to update the ledger and decide where the practical is routed.
+5. **Applied.** Decisions item 4 now reads "Snow's Table I records 127 deaths on 2 September 1854 alone." Not used in narration.
+
+Length offset: items 1 and 2 added 8 characters to a design at the 9.5-minute cap. Scene 6's last sentence was shortened to "... tobacco mosaic virus, a rod of RNA in a protein coat." (it now matches the on-screen tag). Net change is 2 characters fewer.
+
+### bio-m7-b02 (Revision 3; narration 5,919 characters, about 568 s)
+
+1. **Applied.** The TB-today reference fact now cites WHO Global Tuberculosis Report 2025, section 1.2: TB mortality (the full URL), in place of the 404 press-release URL. The 1.23 million figure is unchanged and is not spoken.
+
+No em dashes in any of the five designs (checked by script).

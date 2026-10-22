@@ -1,6 +1,10 @@
 # G04 (Chemistry, Module 6): Curves, indicators and back titration: HSC-style practice (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 98 resolved; ready to voice.
+
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needed Codex error check before voicing.
+
+Changes in Revision 3: No changes: Codex check 98 found no errors in this design. Narration 5,792 characters, recounted by script; about 9.5 minutes (571 s), unchanged from Revision 2.
 
 Revision 2 (21 Oct) resolves `../checks/m6g04-learning-review.md` and `../checks/m6g04-claude-science-check.md`. Narration 5,792 characters, 19 scenes, about 9.5 minutes (571 s) including holds, countdowns and the notes hold (recounted by script; see "Narration length estimate"). Nothing recorded; human listening pending.
 

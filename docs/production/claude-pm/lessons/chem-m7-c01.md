@@ -1,6 +1,13 @@
 # M7 C01: How do we name and draw a carbon chain? Three drawings, five naming rules, and reading a name back into a molecule (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 99 resolved; ready to voice.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needed Codex error check before voicing.
+
+**Changes in Revision 3** (resolving `../checks/codex-check-99.md`, chem-m7-c01 item 1):
+
+1. Codex 99 item 1 (headroom arithmetic): the "Narration length estimate" section now says "About 13 s of headroom remains under 9.5 minutes" (557 s estimated against the 570 s cap). No learner copy changes.
+2. Length: no narration change; narration 6,140 characters, recounted by script; about 9.3 minutes (557 s).
 
 **Revision 2 changes** (resolving `../checks/m7c01-learning-review.md` and `../checks/m7c01-claude-science-check.md`):
 
@@ -223,7 +230,7 @@ Counted by script with the build parser rules (`### N.` headings, "> " lines joi
 
 Revision 1: 5,736 characters, 1,024 words, 18 scenes (about 8.8 minutes).
 
-**Revision 2 (22 Oct, recounted by script, counting only lines starting `> `, bold markers removed): 6,140 characters**, 1,098 words, 18 scenes. Characters per scene (1 to 18): 374, 392, 458, 354, 364, 407, 515, 329, 597, 450, 376, 205, 123, 361, 180, 298, 282, 75. At the measured 13.3 characters per second the speech is about 462 s; add about 20 s of holds, 20 s for two countdowns and about 55 s more of the quiet notes hold: **about 9.3 minutes (557 s)** including the 60 s notes hold, inside the 9.5 minute ceiling and inside 5,500 to 6,800 characters. Feedback at the measured rate: scene 14 about 27 s; scene 16 about 22 s (both inside 15 to 30 s). Longest scene is now 9 (about 45 s: the multiple-bond rule, its reason, the locant format, the C=C hydrogen count and two cases); scene 7 is next. If the voiced preview shows scene 9 rushed, split it after "but-one-ene ... one fewer hydrogen" (the but-1-ene case with its H count) and start a new scene at "Move the double bond to the middle"; if scene 7 is rushed, move the 2-methylbutane case into its own short scene. Do not cut the added reasons. About 30 s of headroom remains under 9.5 minutes; do not add more narration.
+**Revision 2 (22 Oct, recounted by script, counting only lines starting `> `, bold markers removed): 6,140 characters**, 1,098 words, 18 scenes. Characters per scene (1 to 18): 374, 392, 458, 354, 364, 407, 515, 329, 597, 450, 376, 205, 123, 361, 180, 298, 282, 75. At the measured 13.3 characters per second the speech is about 462 s; add about 20 s of holds, 20 s for two countdowns and about 55 s more of the quiet notes hold: **about 9.3 minutes (557 s)** including the 60 s notes hold, inside the 9.5 minute ceiling and inside 5,500 to 6,800 characters. Feedback at the measured rate: scene 14 about 27 s; scene 16 about 22 s (both inside 15 to 30 s). Longest scene is now 9 (about 45 s: the multiple-bond rule, its reason, the locant format, the C=C hydrogen count and two cases); scene 7 is next. If the voiced preview shows scene 9 rushed, split it after "but-one-ene ... one fewer hydrogen" (the but-1-ene case with its H count) and start a new scene at "Move the double bond to the middle"; if scene 7 is rushed, move the 2-methylbutane case into its own short scene. Do not cut the added reasons. About 13 s of headroom remains under 9.5 minutes; do not add more narration.
 
 ## Assets
 

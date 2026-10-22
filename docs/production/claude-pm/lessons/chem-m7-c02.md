@@ -1,6 +1,10 @@
 # M7 C02: How can the same formula make different molecules? Chain, position and functional group isomers, and finding every isomer without duplicates (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 99 resolved; ready to voice.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needed Codex error check before voicing.
+
+**Changes in Revision 3:** No changes: Codex check 99 found no errors in this design. Narration 6,027 characters, recounted by script; about 9.1 minutes (548 s).
 
 **Revision 2 changes** (resolving `../checks/m7c02-learning-review.md` and `../checks/m7c02-claude-science-check.md`):
 
