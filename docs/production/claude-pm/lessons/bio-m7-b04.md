@@ -1,6 +1,12 @@
 # B7-04: How does disease damage agricultural production? Causes, direct and indirect effects (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 100 resolved; ready to voice. Narration 5,925 characters, about 9.5 minutes (570 s), unchanged (recounted 22 Oct by script: only lines starting "> ", bold markers removed). Review: `../checks/codex-check-100.md`. Nothing recorded; human listening pending.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Changes in Revision 3 (22 Oct, Codex check 100):
+- No changes: Codex check 100 found no error in this design.
+
 Narration 5,925 characters (Revision 2; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 9.5 minutes (570 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
 
 ## Revision 2 changes (22 Oct)
@@ -180,6 +186,8 @@ Self-check (22 Oct) against the sources named. The Claude science check must con
 - **"Count past the farm gate."** (Design insight; the bank has no agricultural aid.) Correct as an assessment habit: for B7-IQ1-03 the effects that markers reward beyond the obvious (lost exports, control costs on unaffected farms, tourism, ecosystems) lie off the infected property. Limits: for an endemic disease with no trade consequences, most costs stay on the farm (L07's limiting case), so the aid says to count past the gate, not that those costs are always larger; the attempt 1 model carries that qualifier. Used in scene 11 and the notes.
 
 ## Narration length estimate
+
+Revision 3 recount (22 Oct, same rules): **5,925 characters**, unchanged (Codex check 100 found no error). About 9.5 minutes (570 s).
 
 Count (22 Oct) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, 10 s per countdown and 55 s more of the quiet notes hold.
 

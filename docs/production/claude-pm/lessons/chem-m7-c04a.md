@@ -1,6 +1,13 @@
 # M7 C04a: What can add across a C=C bond? Hydrogen, halogens, hydrogen halides and water, with their conditions (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 100 resolved; ready to voice. Narration 5,741 characters, about 8.8 minutes (527 s), unchanged (recounted 22 Oct by script: only lines starting "> ", bold markers removed). Review: `../checks/codex-check-100.md`. Nothing recorded; human listening pending.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Changes in Revision 3 (22 Oct, Codex check 100):
+- YouTube description (Codex check 100): the C7-IQ3-01 quotation now ends the stem at "including but not limited to:" and lists "hydrogen (H2)", "halogens (X2)", "hydrogen halides (HX)" and "water (H2O) (ACSCH136)" on separate lines, as printed.
+- No change to narration, visuals, attempts, feedback or key notes.
+
 
 Narration counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
 
@@ -206,6 +213,8 @@ Checked by hand (21 Oct); Codex to re-check.
 
 ## Narration length estimate
 
+Revision 3 recount (22 Oct, same rules): **5,741 characters**, unchanged (Codex check 100 changed only the YouTube description). About 8.8 minutes (527 s).
+
 Revision 2 count (22 Oct, recounted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined, bold markers removed): **5,741 characters**, 1,010 words, 16 scenes. Characters per scene (1 to 16): 424, 427, 388, 515, 530, 375, 514, 465, 340, 273, 183, 319, 285, 383, 245, 75. Speech about 432 s at 13.3 characters per second; with the same holds, countdowns and notes hold, **about 8.8 minutes (527 s)**, inside the 5,500 to 6,800 band and the 9.5 minute ceiling. Feedback: scene 12 about 24 s; scene 14 about 29 s. Revision 2 added about 121 characters, all causal or answer-format lines: "the molecule being added" (3), the catalyst-and-heat sentence (4), "a quick test" (5), "for a fast enough rate" (7), "In an answer, write both." (8) and "product is possible" (13); "fast" was dropped for HCl (6).
 
 Revision 1 count (21 Oct, for the record): 5,620 characters, 987 words, 16 scenes. Characters per scene (1 to 16): 424, 427, 361, 494, 519, 376, 491, 439, 340, 273, 183, 319, 271, 383, 245, 75. At the measured 13.3 characters per second the speech is about 423 s; add about 20 s of holds, 20 s for two countdowns and about 55 s more of the quiet notes hold: **about 8.6 minutes (518 s)** including the 60 s notes hold, inside the 9.5 minute ceiling. Feedback at the measured rate: scene 12 about 24 s; scene 14 about 29 s (both inside 15 to 30 s; scene 14 near the top because it must rule out the ring and two alkenes). The first draft counted 5,374 characters, under the 5,500 floor; the additions are causal or transfer lines, not padding (why the hydrogenation product is saturated, scene 4; chlorine giving 1,2-dichloroethane, scene 5, which prepares attempt 1; chloroethane, scene 6; the atom count that proves nothing is lost, scene 9). Longest scene is 5 (halogenation, naming and the bromine water colour). If the voiced preview shows it rushed, move the bromine water sentences into their own short scene rather than cutting them. After Revision 2, headroom of about 580 characters remains under the time ceiling; do not pad.
@@ -232,7 +241,11 @@ Hydrogen can add across the double bonds in vegetable oil and turn it into a sof
 
 Chemistry 2017: Year 12 Module 7, Organic Chemistry.
 Syllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 7):
-"investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to: hydrogen (H2), halogens (X2), hydrogen halides (HX), water (H2O) (ACSCH136)"
+"investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:
+- hydrogen (H2)
+- halogens (X2)
+- hydrogen halides (HX)
+- water (H2O) (ACSCH136)"
 This video covers alkenes. Alkynes are in the next video.
 Official 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017
 

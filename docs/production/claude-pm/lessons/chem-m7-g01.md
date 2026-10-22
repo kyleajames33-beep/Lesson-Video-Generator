@@ -1,6 +1,13 @@
 # G01 (Chemistry, Module 7): Hydrocarbon naming, isomers and reactions: HSC-style practice (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 100 resolved; ready to voice. Narration 5,666 characters, about 9.5 minutes (568 s), unchanged (recounted 22 Oct by script: only lines starting "> ", bold markers removed). Review: `../checks/codex-check-100.md`. Nothing recorded; human listening pending.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Changes in Revision 3 (22 Oct, Codex check 100):
+- YouTube description (Codex check 100): the C7-IQ1-01, C7-IQ1-02 and C7-IQ3-01 quotations keep each stem as printed with each example on its own line; the C7-IQ3-02 substitution dotpoint stays as written. The syllabusDotpoints note is updated and the open format question for root is closed.
+- No change to narration, visuals, questions, walkthroughs or key notes.
+
 
 Revision 2 changes (22 Oct; resolving `../checks/m7g01-learning-review.md` and `../checks/m7g01-claude-science-check.md`):
 - Q3, 4b and 4c (learning S1, science S1): the count no longer proves the triple bond. 4b now says "Adding twice needs two extra bonds: a triple bond, or two double bonds."; 4c says "So both additions happened across the same pair of carbons. That needs a triple bond, between carbon one and carbon two." The proof is that all four Cl sit on C1 and C2, because dienes also add twice. Tags, model answer 3, the Decisions table row, Teaching checks and key note 4 updated.
@@ -232,6 +239,8 @@ Self-check (22 Oct), by hand; Codex to re-check.
 
 ## Narration length estimate
 
+Revision 3 recount (22 Oct, same rules): **5,666 characters**, unchanged (Codex check 100 changed only the YouTube description). About 9.5 minutes (568 s).
+
 Counted by script (19 scenes; `### N.` headings with letter suffixes, "> " lines joined, bold markers removed, key-notes line as the standard notes line), at 13.3 characters per second.
 
 | Scene | Revision 2 characters | Revision 1 |
@@ -294,9 +303,24 @@ No artwork requested (the UV lamp plate is commissioned through chem-m7-c04b). S
 
   Chemistry 2017: Year 12 Module 7, Organic Chemistry.
   Syllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 7):
-  "investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127) alkanes, alkenes, alkynes, alcohols (primary, secondary and tertiary), aldehydes and ketones, carboxylic acids, amines and amides, halogenated organic compounds"
-  "explore and distinguish the different types of structural isomers, including saturated and unsaturated hydrocarbons, including: (ACSCH035) chain isomers, position isomers, functional group isomers"
-  "investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to: hydrogen (H2), halogens (X2), hydrogen halides (HX), water (H2O) (ACSCH136)"
+  "investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)
+  - alkanes
+  - alkenes
+  - alkynes
+  - alcohols (primary, secondary and tertiary)
+  - aldehydes and ketones
+  - carboxylic acids
+  - amines and amides
+  - halogenated organic compounds"
+  "explore and distinguish the different types of structural isomers, including saturated and unsaturated hydrocarbons, including: (ACSCH035)
+  - chain isomers
+  - position isomers
+  - functional group isomers"
+  "investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:
+  - hydrogen (H2)
+  - halogens (X2)
+  - hydrogen halides (HX)
+  - water (H2O) (ACSCH136)"
   "investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens"
   This video practises the hydrocarbon and halogenated parts of the naming dotpoint; the other families have their own videos.
   Official 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017
@@ -304,7 +328,7 @@ No artwork requested (the UV lamp plate is commissioned through chem-m7-c04b). S
   Prerequisites: How can the same formula make different molecules? Why do alkanes substitute while alkenes and alkynes add? Next: How does an OH group change alcohol properties?
 
   #Year12Chemistry #OrganicChemistry #HSCScience"
-- **syllabusDotpoints:** the four quoted lines above. `verifyWording`: true (checked against `programme/syllabus/chem-2017-y12.json`, C7-IQ1-01, C7-IQ1-02, C7-IQ3-01 and C7-IQ3-02, pp 54 to 55). Revision 2 (science M3): ACSCH127 and ACSCH035 sit after "including:", where the ledger prints them; ACSCH136 stays at the end, because the ledger attaches it to the last example. Root to confirm the description format against the c03 precedent (code after the stem) and c04a (code at the end of the list).
+- **syllabusDotpoints:** the four quoted dotpoints above, each stem with its printed examples on separate lines (Revision 3, Codex check 100). `verifyWording`: true (checked against `programme/syllabus/chem-2017-y12.json`, C7-IQ1-01, C7-IQ1-02, C7-IQ3-01 and C7-IQ3-02, pp 54 to 55). Revision 2 (science M3): ACSCH127 and ACSCH035 sit after "including:", where the ledger prints them; ACSCH136 stays at the end, because the ledger attaches it to the last example. Revision 3: all four Module 7 chemistry descriptions (c03, c04a, c04b, g01) now quote each stem as printed and put each example on its own line, so the code sits where the syllabus prints it.
 - **Lesson link:** site lesson 8 (hydrocarbon reactions mastery, consolidation), proposed; root to confirm (lesson 2 holds the isomer content).
 - **Playlist:** Year 12 Chemistry: Module 7, Organic Chemistry (2017 syllabus), after P02 (playlist order 7).
 

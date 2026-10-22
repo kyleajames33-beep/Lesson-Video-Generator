@@ -1,6 +1,14 @@
 # M7 C04b: Why do alkanes substitute while alkenes and alkynes add? UV light and a swap, and a triple bond that adds twice (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 100 resolved; ready to voice. Narration 5,754 characters, about 8.8 minutes (528 s), unchanged (recounted 22 Oct by script: only lines starting "> ", bold markers removed). Review: `../checks/codex-check-100.md`. Nothing recorded; human listening pending.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Changes in Revision 3 (22 Oct, Codex check 100):
+- YouTube description (Codex check 100): the C7-IQ3-01 quotation keeps the official stem and its four example lines, as printed; the C7-IQ3-02 line was already correct.
+- Faded bromine tube (Brief 100 art QA): its fume reaches into the top clear margin (5.45% instead of 10%). Root accepted the margin; no change to the plate or the design.
+- No change to narration, visuals, attempts, feedback or key notes.
+
 
 Revision 2 changes (22 Oct; resolving `../checks/m7c04b-learning-review.md` and `../checks/m7c04b-claude-science-check.md`):
 - Scene 9 and key note 4 (learning S1, science S1): the formula rule now carries its condition, "For an open-chain hydrocarbon with one multiple bond, C n H two n is an alkene, and C n H two n minus two is an alkyne"; a grey tag "open chain, one multiple bond" sits under the formula chips.
@@ -201,6 +209,8 @@ Checked by hand (22 Oct); Codex to re-check.
 
 ## Narration length estimate
 
+Revision 3 recount (22 Oct, same rules): **5,754 characters**, unchanged (Codex check 100 changed only the YouTube description). About 8.8 minutes (528 s).
+
 Revision 2 count (22 Oct, counted by script with the same rules, "> " lines only): **5,754 characters**, 1,017 words, 16 scenes. Characters per scene (1 to 16): 453, 394, 460, 364, 412, 429, 566, 436, 568, 264, 211, 337, 192, 365, 228, 75. Speech about 433 s at 13.3 characters per second; with about 20 s of holds, 20 s for two countdowns and about 55 s more of the quiet notes hold: **about 8.8 minutes (528 s)**, inside the 9.5 minute ceiling and about 250 characters above the 5,500 floor. Feedback unchanged: scene 12 about 25 s, scene 14 about 27 s. Longest scenes are now 9 (about 43 s) and 7 (about 43 s); check both at the voiced preview, scene 7 for the model's timing against "flat" and "tetrahedral". Changes from Revision 1: scene 2 +23 (learning M4), scene 7 +136 (learning S3), scene 8 −34 (science M1 fallback), scene 9 +70 (S1 and S4).
 
 Revision 1 count (superseded; 22 Oct, counted by script with the build parser rules: `### N.` headings, "> " lines joined, bold markers removed, key-notes line replaced by the standard notes line): see the figures below. Target 5,500 to 6,800 characters and at or under about 9.5 minutes.
@@ -232,7 +242,11 @@ An alkene loses bromine water's colour at once, even in the dark. An alkane need
 
 Chemistry 2017: Year 12 Module 7, Organic Chemistry.
 Syllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 7):
-"investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to: hydrogen (H2), halogens (X2), hydrogen halides (HX), water (H2O) (ACSCH136)"
+"investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:
+- hydrogen (H2)
+- halogens (X2)
+- hydrogen halides (HX)
+- water (H2O) (ACSCH136)"
 "investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens"
 This video covers alkynes and alkanes. Alkenes are in the previous video.
 Official 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017

@@ -1,6 +1,13 @@
 # M7 C03: How does carbon bonding explain hydrocarbon properties? Shapes at each carbon, homologous series, and why size and branching set boiling point and solubility (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 100 resolved; ready to voice. Narration 6,324 characters, about 9.5 minutes (571 s), unchanged (recounted 22 Oct by script: only lines starting "> ", bold markers removed). Review: `../checks/codex-check-100.md`. Nothing recorded; human listening pending.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Changes in Revision 3 (22 Oct, Codex check 100):
+- YouTube description (Codex check 100): the C7-IQ2-01 quotation now reproduces the stem as printed, including "up to C8 (ACSCH035) :" with its space, and puts "alkanes", "alkenes" and "alkynes" on their own list lines.
+- No change to narration, visuals, attempts, feedback or key notes.
+
 
 Narration counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
 
@@ -221,6 +228,8 @@ Checked by hand (21 Oct); Codex to re-check against the CRC Handbook or another 
 
 ## Narration length estimate
 
+Revision 3 recount (22 Oct, same rules): **6,324 characters**, unchanged (Codex check 100 changed only the YouTube description). About 9.5 minutes (571 s).
+
 Revision 2 count (22 Oct, recounted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined, bold markers removed): **6,324 characters**, 1,066 words, 19 scenes. Characters per scene (1 to 19): 334, 385, 446, 343, 380, 395, 248, 432, 447, 510, 257, 411, 232, 237, 357, 226, 398, 211, 75. Speech about 476 s at 13.3 characters per second; with the same holds, countdowns and notes hold, **about 9.5 minutes (571 s)**, at the ceiling and inside the 5,500 to 6,800 band. Feedback: scene 15 about 27 s; scene 17 about 30 s. The fixes (series definition, alkane bonding, the zigzag link, same electrons in feedback 2: about +131 characters) are paid for by trims T1 to T5 from the learning review (the spoken camping gas callback, the "like dissolves like" pair, the hook question, "from the last video", "from Year 11", about −121) and feedback 2's "branched one". Scene 9's induced-dipole wording (learning M4) was not added, because there is no headroom; the neighbour's responding cloud stays visual. Fallback if the voiced preview runs over 9.5 minutes: cut scene 11's last sentence first (the strip and "chain length > bond type" chip stay on screen); only if still over, split into c03a (scenes 2 to 7 with A1) and c03b (hook, scenes 8 to 12 with A2), keeping p01 after c03b.
 
 Revision 1 count (21 Oct, for the record): 6,320 characters, 1,069 words, 19 scenes. Characters per scene (1 to 19): 346, 385, 446, 343, 340, 367, 268, 446, 447, 532, 257, 425, 232, 237, 357, 226, 380, 211, 75. At the measured 13.3 characters per second the speech is about 475 s; add about 20 s of holds, 20 s for two countdowns and about 55 s more of the quiet notes hold: **about 9.5 minutes (570 s)** including the 60 s notes hold, at the 9.5 minute ceiling. Feedback at the measured rate: scene 15 about 27 s; scene 17 about 29 s (both inside 15 to 30 s, near the top). The first draft counted 7,065 characters, over the 6,800 limit and well over the time ceiling; cuts removed repeated framing sentences, a second butane value, the "first liquid" sentence (kept in key notes and as a silent tag) and the forward link in the handoff (kept as a silent visual), and shortened the series against isomers and between-series scenes, without removing a cause. The video is the longest in the module so far because it carries three dotpoints. In Revision 1 the longest scene was 10 (branching with the c02 callback); its spoken callback was cut in Revision 2 and the stove chips stay on screen silently. Do not cut scene 8 (intramolecular against intermolecular), which the syllabus wording and attempt 2 depend on.
@@ -247,7 +256,10 @@ Butane is a gas and candle wax is a solid, yet both are alkanes. See how a carbo
 
 Chemistry 2017: Year 12 Module 7, Organic Chemistry.
 Syllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 7):
-"construct models, identify the functional group, and write structural and molecular formulae for homologous series of organic chemical compounds, up to C8 (ACSCH035): alkanes, alkenes, alkynes"
+"construct models, identify the functional group, and write structural and molecular formulae for homologous series of organic chemical compounds, up to C8 (ACSCH035) :
+- alkanes
+- alkenes
+- alkynes"
 "analyse the shape of molecules formed between carbon atoms when a single, double or triple bond is formed between them"
 "explain the properties within and between the homologous series of alkanes with reference to the intermolecular and intramolecular bonding present"
 Official 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017

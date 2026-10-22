@@ -1,6 +1,12 @@
 # B7-03: How does a pathogen move between hosts? Modes of transmission and the adaptations that help (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 100 resolved; ready to voice. Narration 5,911 characters, about 9.5 minutes (568 s), unchanged (recounted 22 Oct by script: only lines starting "> ", bold markers removed). Review: `../checks/codex-check-100.md`. Nothing recorded; human listening pending.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Changes in Revision 3 (22 Oct, Codex check 100):
+- No changes: Codex check 100 found no error in this design.
+
 Narration 5,911 characters (Revision 2; 990 words, 17 scene files, counted by script from lines starting "> " with bold markers removed), about 9.5 minutes (568 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
 
 ## Revision 2 changes (22 Oct)
@@ -181,6 +187,8 @@ Self-check (21 Oct) against standard texts (Campbell Biology; OpenStax Microbiol
 - **"Entry gets it in; transmission gets it across."** (Design contrast from the exam research, not in the bank.) Correct for the cases shown, with "entry" meaning getting in and holding on at the entry site (Revision 2), so in-host survival features such as a capsule are not counted as entry. Limit: some features do both (the cholera bacterium's toxin damages the gut and causes the diarrhoea that spreads it); the compare item counts the diarrhoea as transmission and the pili as entry, matching the markers' separation. Used in scene 9.
 
 ## Narration length estimate
+
+Revision 3 recount (22 Oct, same rules): **5,911 characters**, unchanged (Codex check 100 found no error). About 9.5 minutes (568 s).
 
 Count (21 Oct) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, 10 s per countdown and 55 s more of the quiet notes hold.
 
