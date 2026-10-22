@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C04b-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c04b/lesson.json",
+  "lessonSha256": "fd7be046a5dab2502556403dd0fe1aa50d582559005ea737351a11724fd2b9f7",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c04b/lesson.production-brief.json",
+    "sha256": "e93b7482a4ae5e53c161a2fee4453e14e99e24f2217a3f76dfc801fcc8820e13"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Shake hex-one-ene with orange bromine water, and the colour disappears almost at once, even in the dark. That's the double bond adding bromine, from the last video. Now add bromine to hexane, an alkane. In the dark, the orange stays. Shine UV light on it, though, and the colour slowly fades, and fumes of hydrogen bromide come off. So alkanes can react with bromine after all. Why do they need the light, and where does that hydrogen bromide come from?",
+      "hash": "a16ad36ebba9",
+      "textSha256": "a16ad36ebba942a2f4c1cc0f9aad6c18cd29ea9843e13be51c37f21ddb23e72a",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/hook.a16ad36ebba9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/hook.a16ad36ebba9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/hook.a16ad36ebba9.generation.json",
+      "plannedRequestSha256": "dca9b2715475b9976e9577504be12e1fae5616d98cbf89d8be160e733feb4224"
+    },
+    {
+      "id": "why-alkanes-dont-add",
+      "parentSceneId": "why-alkanes-dont-add",
+      "text": "Here's the difference. As you saw last video, an alkene has a weaker second bond it can open, so it adds. An alkane has only single bonds, and every carbon already has four. There's no spare bond for bromine to join, and its C H and C C bonds are strong. So in the dark, at room temperature, nothing you can see happens. For an alkane to react, a bond has to break first, and that takes energy.",
+      "hash": "22fe6b2c5247",
+      "textSha256": "22fe6b2c524710a49dd9d7ea8015276d9c29cea5f8b86d23f1d599b4cbb66e96",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/why-alkanes-dont-add.22fe6b2c5247.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/why-alkanes-dont-add.22fe6b2c5247.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/why-alkanes-dont-add.22fe6b2c5247.generation.json",
+      "plannedRequestSha256": "4662619721fa76a66678d49b7ba0fdf88a9859ffaac2c7c3827eb9cfd179dfd3"
+    },
+    {
+      "id": "uv-swap",
+      "parentSceneId": "uv-swap",
+      "text": "That's what the UV light supplies. It gives the energy to split bromine molecules apart, and that starts the reaction. The overall result is a swap: one hydrogen on the alkane is replaced by a bromine. Ethane plus bromine gives bromoethane. The hydrogen that's pushed out has to go somewhere, so it joins the other bromine atom as hydrogen bromide, the fumes in the hook. Two products, and every carbon keeps four single bonds. This is a substitution reaction.",
+      "hash": "04e50cded335",
+      "textSha256": "04e50cded335b9c23d539645157a3c59f07d09f53823b3c3cc6bbbc91f5e3022",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/uv-swap.04e50cded335.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/uv-swap.04e50cded335.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/uv-swap.04e50cded335.generation.json",
+      "plannedRequestSha256": "16b15f93edca70e9cad1a05e4de435ebd471d8e2335e7cdc4ddc38f77d450e8a"
+    },
+    {
+      "id": "uv-not-catalyst",
+      "parentSceneId": "uv-not-catalyst",
+      "text": "So what goes on the arrow? Write UV light, and don't call it a catalyst. From Module five, a catalyst is a substance that speeds up a reaction and comes out unchanged. UV light isn't a substance at all. It's energy, and it's absorbed as the reaction starts, so it's the energy source. Compare an alkene, which adds bromine at room temperature with no light at all.",
+      "hash": "c926b9381561",
+      "textSha256": "c926b938156152b247ebd885645ea7be06c7327c1d8a140fb2cda1dfa239bca6",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/uv-not-catalyst.c926b9381561.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/uv-not-catalyst.c926b9381561.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/uv-not-catalyst.c926b9381561.generation.json",
+      "plannedRequestSha256": "4790d04f8bc1c4f67b63b0c612ea72f512194df0f8fb77b1c4a1bdf92c9a584d"
+    },
+    {
+      "id": "one-or-two-products",
+      "parentSceneId": "one-or-two-products",
+      "text": "Put the two side by side. Ethene plus bromine makes one product, one, two-dibromoethane, and nothing is lost. Ethane plus bromine makes two: bromoethane and hydrogen bromide. So an H X second product is the sign of substitution. In the models, ethene's flat carbons turn tetrahedral as the double bond opens. Ethane's carbons were tetrahedral already, and they stay that way. One atom just takes another's place.",
+      "hash": "cb67922b4e04",
+      "textSha256": "cb67922b4e0497715e5d665f4ca18d39b426e16ff22a14bfa554b1be15c63770",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/one-or-two-products.cb67922b4e04.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/one-or-two-products.cb67922b4e04.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/one-or-two-products.cb67922b4e04.generation.json",
+      "plannedRequestSha256": "9b25f90ef13be3bc0ab215f95c65d93b484253b53071425287aa5e20a1b48a38"
+    },
+    {
+      "id": "mixtures",
+      "parentSceneId": "mixtures",
+      "text": "Substitution is also harder to control. With more chlorine, methane can swap a second hydrogen, then a third and a fourth, all the way to tetrachloromethane, and each swap makes one more H Cl. And in a longer alkane, the swap can happen at different carbons. Propane can give one-chloropropane, or two-chloropropane. So substitution usually gives a mixture, and questions often ask you to write the equation for just one product.",
+      "hash": "2b1649e55162",
+      "textSha256": "2b1649e55162e5f883e76b955c648c5ff38fbf6e63778448aed55763e36416d4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/mixtures.2b1649e55162.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/mixtures.2b1649e55162.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/mixtures.2b1649e55162.generation.json",
+      "plannedRequestSha256": "5bbf8dda38a2d60578c9c99c914df2cfd2080cdf1a4dcaaeddee829d3eac29aa"
+    },
+    {
+      "id": "alkyne-adds-twice",
+      "parentSceneId": "alkyne-adds-twice",
+      "text": "Now alkynes. A triple bond has two of those weaker extra bonds, so an alkyne can add twice. Ethyne plus one bromine molecule gives one, two-dibromoethene. It still has a double bond, so its name still ends in ene, and it can add again. With a second bromine molecule, that bond opens too, giving one, one, two, two-tetrabromoethane. Each step puts one piece on each carbon. Watch the model too: straight-line ethyne goes flat after one step, then tetrahedral after two, once each carbon has only single bonds. An alkene has only one extra bond, so it adds just once.",
+      "hash": "69ede7c4baa4",
+      "textSha256": "69ede7c4baa4278d92140f6860734ab4645a472d58db34f75a9402a80084ac37",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/alkyne-adds-twice.69ede7c4baa4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/alkyne-adds-twice.69ede7c4baa4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/alkyne-adds-twice.69ede7c4baa4.generation.json",
+      "plannedRequestSha256": "215f53ed5dfc0ea5a3524e7b2560b25a4c5662a46ec7fd3f7039cfa912dba364"
+    },
+    {
+      "id": "how-much-reagent",
+      "parentSceneId": "how-much-reagent",
+      "text": "So with an alkyne, always check how much reagent there is. With hydrogen and a nickel catalyst, ethyne becomes ethene, then ethane. With just one H two for each ethyne, you'd write the first step. If a question says excess, meaning more than enough, go all the way: ethyne plus two H two gives ethane. Hydrogen bromide works the same way. The first step gives bromoethene, and a second H Br adds in the same way, giving a dibromoethane.",
+      "hash": "3f0d15acb50c",
+      "textSha256": "3f0d15acb50cfee4e194603a00b7ffc9d5ec94796a2f144f4e51339fb77bc17e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/how-much-reagent.3f0d15acb50c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/how-much-reagent.3f0d15acb50c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/how-much-reagent.3f0d15acb50c.generation.json",
+      "plannedRequestSha256": "e70077cb5f9e6263a35fed3d828aed5a74dfea7ac0fb0922e175d30baf7327c2"
+    },
+    {
+      "id": "bromine-water-limits",
+      "parentSceneId": "bromine-water-limits",
+      "text": "Water adds to alkynes too, but the first product rearranges into a different family, which you'll meet later. So water questions in this course are usually about alkenes. And now the bromine water test makes sense. Alkenes and alkynes both decolourise it at room temperature, without UV light, because both can add. An alkane doesn't. So losing the colour shows a double or triple bond, but not which. To tell them apart, use the molecular formula. For an open-chain hydrocarbon with one multiple bond, C n H two n is an alkene, and C n H two n minus two is an alkyne.",
+      "hash": "6dab39e6874d",
+      "textSha256": "6dab39e6874df31a27a3164fba10d79641f89ab95824ff6f8e1e0aa5c94e88e2",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/bromine-water-limits.6dab39e6874d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/bromine-water-limits.6dab39e6874d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/bromine-water-limits.6dab39e6874d.generation.json",
+      "plannedRequestSha256": "df25854f7688f61ad403a2b2ae95f865e85acec6bd613c8a89dbdaccbed007f7"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's the answer to the question. With halogens, alkanes swap: UV light, one H out, one halogen in, and H X as a second product. Alkenes add once, and alkynes add twice, one piece on each carbon, with nothing lost. Alkanes swap, alkenes add, alkynes add twice.",
+      "hash": "794cdcbe122c",
+      "textSha256": "794cdcbe122c3b2f87becf7d43fd9d645c5d6b16a29bac9436685fe504435c5c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/memory-aid.794cdcbe122c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/memory-aid.794cdcbe122c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/memory-aid.794cdcbe122c.generation.json",
+      "plannedRequestSha256": "5dda8306455793f9c3577c9da11f5f19b5416327fe1b07a79f773768bdc186d8"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Propane reacts with chlorine gas under UV light. Identify the type of reaction, and write a balanced equation for the formation of one organic product, using structural formulas. Pause here to answer.",
+      "hash": "a4fc61cef03a",
+      "textSha256": "a4fc61cef03ace93c5c287ba8d36e9111fad1fd36fc682ed0c56899cff0225f0",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/attempt-1.a4fc61cef03a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/attempt-1.a4fc61cef03a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/attempt-1.a4fc61cef03a.generation.json",
+      "plannedRequestSha256": "52a4d55d459573d7e0a2834b6ab1052508af177af0111ee64fd8c15e8da4995f"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Propane is an alkane, and there's UV light, so this is substitution. One hydrogen swaps for a chlorine. C H three, C H two, C H three, plus Cl two, gives C H three, C H two, C H two Cl, one-chloropropane, plus H Cl. Two-chloropropane is just as correct. Leaving out the H Cl is the classic slip. The swapped hydrogen has to go somewhere.",
+      "hash": "1710aacbccaa",
+      "textSha256": "1710aacbccaa028506e9cb3673f4e5bc679ddad2c3aa41d296341b147e102c79",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/feedback-1.1710aacbccaa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/feedback-1.1710aacbccaa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/feedback-1.1710aacbccaa.generation.json",
+      "plannedRequestSha256": "33fd959fb3f9ac00b505896b6f1ab24f82e18debc11a3c41943b8ea8242aa585"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Propyne reacts with excess bromine at room temperature. Explain why each propyne molecule reacts with two bromine molecules, and name the final organic product. Pause here to answer.",
+      "hash": "7ab3ea939548",
+      "textSha256": "7ab3ea939548ed948ce978ee2bd15f413648c5d1a5d4229816ed0f67691b97d4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/attempt-2.7ab3ea939548.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/attempt-2.7ab3ea939548.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/attempt-2.7ab3ea939548.generation.json",
+      "plannedRequestSha256": "d23973e3bf7e2a39d024cd0b9998b7422f4eb841a77b325258631c9c23726293"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Propyne has a triple bond, with two weaker extra bonds. The first bromine opens one, giving a dibromopropene, which still has a double bond. The bromine is in excess, so the second bond opens too, putting two bromines on each of those carbons: one, one, two, two-tetrabromopropane. Stopping at the dibromopropene is the classic mistake. Excess means go all the way.",
+      "hash": "01a2a711e1a7",
+      "textSha256": "01a2a711e1a78979f3fa8711b4b2d4c9b9516b21bf4880cac107695816848447",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/feedback-2.01a2a711e1a7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/feedback-2.01a2a711e1a7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/feedback-2.01a2a711e1a7.generation.json",
+      "plannedRequestSha256": "cb10478a9f6ef6899e3632357d4050188dde3ead6882eb7474c09f91f3ee2bf9"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So the bonds decide the reaction. Alkanes swap, but only with UV light, while alkenes and alkynes add, and lose bromine water's colour as they do. Next, the practical: testing hydrocarbons with bromine water, safely, in the lab.",
+      "hash": "b8f5b458a0f6",
+      "textSha256": "b8f5b458a0f67ca728f8a016ec791394bb80513e9008bc8be223ba7da1f003d7",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/handoff.b8f5b458a0f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/handoff.b8f5b458a0f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/handoff.b8f5b458a0f6.generation.json",
+      "plannedRequestSha256": "959c59dae13a87497afdd149f42b4236c4cabaee9b3238e53aa5d7168f7c9eec"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C04b-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

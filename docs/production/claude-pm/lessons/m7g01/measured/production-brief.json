@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7g01/measured/lesson.json",
+    "lessonSha256": "96368384c8c4e7cf7c0e71e23244b1cd97da4e5a88354eb4cab675f6bc51474e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From C01: skeletal formulas and implied hydrogens (a carbon in a C=C has one fewer H); the longest chain containing the multiple bond; numbering from the end nearer the multiple bond, which beats branches because it is named in the ending; methyl and ethyl; halogens as prefixes with locants (c04a). From C02: structural isomers; chain (skeleton changes), position (group moves on the same skeleton), functional group (different family); \"if the skeleton and the position both change, they are chain isomers\" (c02 author note d). From C03: general formulas CnH2n+2, CnH2n, CnH2n−2. From C04a: addition, one piece on each carbon, one product; HX with an alkene at room temperature, no catalyst; an unsymmetrical alkene gives two possible products. From C04b: substitution with UV light, one H swapped, HX as the second product, a mixture of positions; UV light is an energy source; an alkyne adds twice, and \"excess\" means both steps; bromine water is decolourised by alkenes and alkynes at room temperature without UV light, not by alkanes; for an open-chain hydrocarbon with one multiple bond, the formula decides which. From P02 (the last video): what the bromine water test looks like in the lab. Not assumed: any other family.",
+    "startsWith": "An unseen hydrocarbon question. The video opens: A hydrocarbon question can ask you to name a molecule, sort its isomers, or predict what it makes.",
+    "stopsAfter": "naming two skeletal alkenes, numbering from the end nearer the double bond, and classifying them as chain isomers with a reason; identifying addition and substitution from the bonds and conditions, and writing an equation for one product of each; identifying an alkyne from its tetrachloro addition product by counting and placing the added atoms; evaluating a bromine water conclusion with the molecular formula.",
+    "nextLesson": "how an O–H group changes alcohol properties (route chem-m7-c05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-g01.md"
+  ],
+  "teaching": {
+    "task": "Given a skeletal formula, a molecular formula, a reagent or a test result, how do you name a hydrocarbon, sort its isomers, and predict or work back through its reactions?",
+    "causalExplanation": "Why B is numbered from the right: the double bond is named in the ending, so it gets the low number first (2b, 2d). Why each alkene is C₆H₁₂: one double bond removes two hydrogens (2c). Why A and B are chain isomers: same formula and family, different skeleton (2c). Why pent-2-ene adds: a double bond opens and no light is needed (3b). Why pent-2-ene gives two possible products: unsymmetrical (3b). Why pentane substitutes: no double bond, and UV light supplies the energy (3c). Why HCl appears only in substitution: the swapped-out hydrogen leaves with the other chlorine (3c). Why the crossed pentane product fails: it loses two hydrogens (3d). Why X adds and does not substitute: no UV light (4b). Why two Cl₂ means two extra bonds: a double bond opens once (4b). Why it was one triple bond between C1 and C2, not two double bonds: every added atom is on those two carbons (4c). Why decolourisation cannot identify an alkene: alkynes add too (5b). Why the formula decides: CnH2n against CnH2n−2 (5c).",
+    "conversationalApproach": "A hydrocarbon question can ask you to name a molecule, sort its isomers or predict what it makes, and each comes down to three checks (which bonds it has, what is added or swapped and under what conditions, and whether the atoms and the name check out), so every walkthrough runs those checks one step at a time. Q1 names two skeletal alkenes from the longest chain with the double bond, numbered from the end nearer it, then counts both as C6H12 and classifies them as chain isomers because the skeleton changed while both stay alkenes; Q2 adds hydrogen chloride to pent-2-ene with one piece on each carbon and two possible products, then substitutes pentane under UV light with HCl as the second product, and notes that both make a chloropentane; Q3 works backwards from 1,1,2,2-tetrachlorobutane made in the dark, where four chlorines on the same two carbons mean two additions across a triple bond, so X is but-1-yne with the atoms checked; Q4 evaluates a student's alkene conclusion from bromine water, which shows unsaturation but not which kind, so the C5H8 formula for an open-chain hydrocarbon with one multiple bond makes X an alkyne. Each question ends with its spoken, crossed classic mistake (numbering from the left, adding to an alkane, but-1-ene, bromine water as a test for double bonds only), and the decision board gives the first move for each kind of question.",
+    "openingDecision": "A hydrocarbon question can ask you to name a molecule, sort its isomers, or predict what it makes. Each one here comes down to three checks. Which bonds does it have? What's added or swapped, and under what conditions? And do the atoms and the name check out? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.",
+    "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a): both structures (Q1); the reagents, \"room temperature\" and \"UV light\" (Q2); \"excess chlorine\", \"in the dark\", \"room temperature\" and the product's name and formula (Q3); the formula, the test result, the open-chain and one-multiple-bond condition, and the student's claim (Q4). Nothing answer-bearing during the holds; the check strip dims.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p54 to 55), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127) - alkanes - alkenes - alkynes - alcohols (primary, secondary and tertiary) - aldehydes and ketones - carboxylic acids - amines and amides - halogenated organic compounds\" \"explore and distinguish the different types of structural isomers, including saturated and unsaturated hydrocarbons, including: (ACSCH035) - chain isomers - position isomers - functional group isomers\" \"investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to: - hydrogen (H2) - halogens (X2) - hydrogen halides (HX) - water (H2O) (ACSCH136)\" \"investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens\" Practice and transfer only, for the parts taught so far: alkanes, alkenes, alkynes and halogenated compounds (C7-IQ1-01), hydrocarbon isomers (C7-IQ1-02), and the reactions of C7-IQ3-01 and C7-IQ3-02. The coverage rows stay with chem-m7-c01, c02, c04a and c04b; G01 adds a practice row, not first coverage. The other families in C7-IQ1-01 are practised in their own videos. starts at the route's \"Read a mixed set of structures and reagents\" and stops at its \"Justify names, reaction types, products and conditions\". Four questions, rising in demand, each with a trap: name two skeletal alkenes and classify them as isomers (numbering from the wrong end); predict the products of an alkene with HCl and an alkane with Cl₂ under UV light (adding chlorine to an alkane); work backwards from a tetrachloro product to the hydrocarbon (an alkene in place of an alkyne); evaluate a student's conclusion from a bromine water result (the test taken to prove a double bond). Each walkthrough ends with a check (count the atoms, or test the name against the structure). Not here: other families' naming (alcohols beyond the \"-ol\" recall, aldehydes, ketones, acids, amines, amides; their own videos); the bromine water method (chem-m7-p02, the last video); Markovnikov's rule (both possible products are accepted, as in c04a); the radical mechanism, Lindlar catalyst and alkyne hydration products (c04b Decisions); cis and trans; multi-step synthesis (chem-m7-c13 and g03); combustion."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the chem-m6-g01 layout: top-left the question card (stem, structures or data, demand, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Naming and isomers\", \"Addition or substitution\", \"Working backwards\", \"Evaluate a test result\"), hidden during each attempt where it would name the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). A check strip on the far left carries three rows, \"which bonds?\", \"added or swapped?\", \"atoms and name check?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Working follows the C01 to C04b staging: one structure or one equation at a time, the equation stage strip with conditions on the arrow, each earlier line dimming, kept chips for the one result the next scene needs. Colour key as chem-m7-c01 to c04b: carbon skeleton ink; hydrogens soft grey; main chain pale blue (tracer); branches amber in the structure only; C=C and C≡C teal; locants small navy; chlorine green; bromine deep orange-brown; UV light violet; the HX second product boxed in thin violet. Amber in the card is used only for underlined givens. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.",
+    "transitionPlan": "The heading writes on and four small stimulus thumbnails fan out (a skeletal zigzag, a C5H8 formula, the UV lamp and the bromine water tube) as three check chips write; each question opens on a fresh board with the type badge hidden while the worded card writes with its skeletal formulas, product formula or small unlit plate kept on screen; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as the chain tracer, locant counter and name builder run, the atom tally and what-changed card write, the equation stage strip builds with the reagent splitter or swap docker, and the work-back stripper lifts chlorine pairs off as a teal triple bond returns; the bromine water tube crossfades to colourless beside ticked bond tiles and the formula lines write one per stage, earlier lines dimming to kept chips; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading \"Hydrocarbon questions: name, sort, react\" writes on.",
+      "teachingReason": "Hook: A hydrocarbon question can ask you to name a molecule, sort its isomers, or predict what it makes.",
+      "narrationCue": "Which bonds / added or swapped / atoms and the name",
+      "motionPurpose": "On the spoken cues: Four small stimulus thumbnails fan out on the right on \"name a molecule, sort its isomers, or predict\" (they show the kinds of stimulus without a spoken list): a coded skeletal zigzag with a teal double bond, a typeset \"C₅H₈\", `m7-uv-lamp-v1.png` small with a violet glow, and",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Hydrocarbon questions: name, sort, react\" writes on. Four small stimulus thumbnails fan out on the right on \"name a molecule, sort its isomers, or predict\" (they show the kinds of stimulus without a spoken list): a coded skeletal zigzag with a teal double bond, a typeset \"C₅H₈\", `m7-uv-lamp-v1.png` small with a violet glow, and `m7-bromine-water-orange-v1.png` small. On the three checks, the check strip builds on the left, one row per cue: \"which bonds?\" (a small single, double and triple bond icon set in ink and teal), \"added or swapped?\" (a tiny reagent splitter beside a tiny swap docker), \"atoms and name check?\" (a small tally \"C ✓ H ✓\"). On \"four HSC-style questions\" the thumbnails become four numbered question cards with one shared tag line beneath them, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "motionTools": [
+        "HandText write-on",
+        "lineage split",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second; the check strip shrinks to the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: name and classify) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. Two hydrocarbons, A and B, are",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: name and classify)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"The skeletal formulas of two hydrocarbons, A and B, are shown.\" Two plain-ink skeletal formulas sit in the card, labelled A and B: A, a six-carbon zigzag with the double bond between the second and third carbons from the left (hex-2-ene); B, a five-carbon zigzag drawn with its branch on the left (CH₃CH(CH₃)CH=CHCH₃: a methyl branch on the second carbon from the left, the double bond between the third and fourth). Demands: \"(a) Give the IUPAC name of each compound.\" \"(b) Identify the type of structural isomerism shown by A and B. Justify your answer.\" Two answer boxes. Nothing answer-bearing (no locants, no tracer, no colour on the structures beyond the teal double bond). **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-names",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Which bonds: the main chain and its numbering: Start with A.",
+      "narrationCue": "A / hex-two-ene / B / right-hand / four-methylpent-two-ene",
+      "motionPurpose": "On the spoken cues: Type badge \"Naming and isomers\". On \"A\" structure A enlarges at the right; \"skeletal formulas\" and \"IUPAC name\" underline amber; the chain tracer runs pale blue along all six carbons (tally \"6 C: hex-\"); the double bond glows teal (\"-ene\"). The locant counter numbers from the left, \"1\" to \"6\", with",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Naming and isomers\". On \"A\" structure A enlarges at the right; \"skeletal formulas\" and \"IUPAC name\" underline amber; the chain tracer runs pale blue along all six carbons (tally \"6 C: hex-\"); the double bond glows teal (\"-ene\"). The locant counter numbers from the left, \"1\" to \"6\", with the double bond starting at \"2\"; the name builder writes \"hex\" + \"-2-\" + \"ene\"; answer box (a) fills \"A: hex-2-ene\". A dims to a small kept chip. On \"B\" structure B enlarges; the tracer runs along five carbons, and the methyl branch lights amber (tag \"methyl\"). On \"right-hand\" a ghost count from the left (\"1, 2, 3...\", double bond at 3) appears grey and fades, and the real count runs from the right in navy (double bond at \"2\", methyl at \"4\"; small grey c01 tag \"the multiple bond wins the numbering\"). The builder writes \"4-methyl\" + \"pent\" + \"-2-\" + \"ene\"; answer box (a) adds \"B: 4-methylpent-2-ene\". Strip: \"which bonds?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-isomers",
+      "visualDecision": "new",
+      "visualReference": "the names dim to kept chips.",
+      "teachingReason": "Atoms check, then what changed: Now count the atoms.",
+      "narrationCue": "twelve / alkenes / skeleton / chain isomers",
+      "motionPurpose": "On the spoken cues: A and B stand side by side, small. On \"twelve\" implied-H ghosts appear on both (each C=C carbon with one ghost H, end carbons with three), and c02's atom tally writes between them: \"A: C₆H₁₂ | B: C₆H₁₂ ✓\" (small grey c03 tag \"CnH2n: one C=C\"). On \"alkenes\" the atom tally dims and c02's what-changed",
+      "motionRole": "explain",
+      "onScreenChange": "the names dim to kept chips. A and B stand side by side, small. On \"twelve\" implied-H ghosts appear on both (each C=C carbon with one ghost H, end carbons with three), and c02's atom tally writes between them: \"A: C₆H₁₂ | B: C₆H₁₂ ✓\" (small grey c03 tag \"CnH2n: one C=C\"). On \"alkenes\" the atom tally dims and c02's what-changed card writes at the right with three rows, \"skeleton?\", \"position of the group?\", \"family?\"; the \"family?\" row shows \"same: both alkenes\" and dims; the \"position of the group?\" row then shows \"same: C=C at C2 in both\" and dims. On \"skeleton\" the tracer shows A's straight six-carbon chain against B's five-carbon chain with its branch, and the \"skeleton?\" row lights violet: \"changed\". \"Identify the type of structural isomerism\" and \"Justify\" underline. Answer box (b) fills in grey, \"chain isomers: same formula C₆H₁₂, same family (alkenes), different carbon skeleton (straight against branched)\", with only \"chain isomers\" lit. Strip: \"atoms and name check?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"B: 2-methylpent-3-ene\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"number from the end nearer the C=C\".",
+      "teachingReason": "The classic mistake: The classic mistake is numbering B from the left, the way you read it.",
+      "narrationCue": "the classic mistake / number from the end nearer the C=C / first claim",
+      "motionPurpose": "On the spoken cues: On \"first claim\" structure B returns small with its right-to-left navy numbers and the teal double bond pulsing at \"2\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"B: 2-methylpent-3-ene\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"number from the end nearer the C=C\". On \"first claim\" structure B returns small with its right-to-left navy numbers and the teal double bond pulsing at \"2\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: addition or substitution) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. Pent-two-ene reacts with hydrogen chloride at",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: addition or substitution)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. `m7-uv-lamp-v1.png` sits small at the card's upper right, unlit (no motion during the attempt). The card writes on: \"(a) Pent-2-ene reacts with hydrogen chloride at room temperature. (b) Pentane reacts with chlorine gas in the presence of UV light.\" Demand: \"For each reaction, identify the type of reaction and write a balanced equation, using structural formulae, for the formation of one organic product.\" Two answer boxes. No structures drawn. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-addition",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Addition or substitution\".",
+      "teachingReason": "An alkene: one piece on each carbon: Start with pent-two-ene.",
+      "narrationCue": "pent-two-ene / addition / two-chloropentane",
+      "motionPurpose": "On the spoken cues: On \"pent-two-ene\" \"Pent-2-ene\" underlines and its full structural formula draws (CH₃CH=CHCH₂CH₃, teal double bond, locants small); \"hydrogen chloride\" and \"room temperature\" underline. Strip: \"which bonds?\" ticks. The equation stage strip builds: pent-2-ene; \"+ H–Cl\"; the arrow with \"room",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Addition or substitution\". On \"pent-two-ene\" \"Pent-2-ene\" underlines and its full structural formula draws (CH₃CH=CHCH₂CH₃, teal double bond, locants small); \"hydrogen chloride\" and \"room temperature\" underline. Strip: \"which bonds?\" ticks. The equation stage strip builds: pent-2-ene; \"+ H–Cl\"; the arrow with \"room temperature\" on it; on \"addition\" the reagent splitter docks H (grey) on carbon 3 and Cl (green) on carbon 2. On \"two possible products\" c04a's two-way docker shows a ghost copy docking the other way (Cl on carbon 3), small and grey (tag \"unsymmetrical: 2 possible products\"). On \"two-chloropentane\" the ghost docker tag dims, the builder writes \"2-chloro\" + \"pentane\", and answer box (a) fills in grey, \"addition: CH₃CH=CHCH₂CH₃ + HCl → CH₃CHClCH₂CH₂CH₃, 2-chloropentane (or 3-chloropentane)\", with only \"2-chloropentane\" lit. On \"nothing is lost\" the product counter shows \"1 product\". Strip: \"added or swapped?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "lineage split",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-substitution",
+      "visualDecision": "new",
+      "visualReference": "the (a) working dims to a kept chip \"CH₃CHClCH₂CH₂CH₃\".",
+      "teachingReason": "An alkane: a swap and HCl: Now pentane.",
+      "narrationCue": "pentane / UV light / substitution / H Cl / bonds",
+      "motionPurpose": "On the spoken cues: On \"pentane\" \"Pentane\" underlines and its full structural formula draws (all single bonds; tag \"single bonds only\"). On \"UV light\" \"in the presence of UV light\" underlines and the lamp plate lights with c04b's violet glow; the strip builds: pentane; \"+ Cl–Cl\"; the arrow with a violet \"UV light\"",
+      "motionRole": "explain",
+      "onScreenChange": "the (a) working dims to a kept chip \"CH₃CHClCH₂CH₂CH₃\". On \"pentane\" \"Pentane\" underlines and its full structural formula draws (all single bonds; tag \"single bonds only\"). On \"UV light\" \"in the presence of UV light\" underlines and the lamp plate lights with c04b's violet glow; the strip builds: pentane; \"+ Cl–Cl\"; the arrow with a violet \"UV light\" chip. On \"substitution\" c04b's swap docker runs on carbon 1: one H lifts off and a Cl docks in its place; on \"H Cl\" the lifted H joins the other Cl in a violet-outlined box, \"+ H–Cl\"; the product counter shows \"2 products\". Answer box (b) fills \"substitution: CH₃CH₂CH₂CH₂CH₃ + Cl₂ → CH₃CH₂CH₂CH₂CH₂Cl + HCl (UV light), 1-chloropentane\". On \"C five H eleven Cl\" both products' molecular formulas write small and grey under the two answer boxes, \"C₅H₁₁Cl\" and \"C₅H₁₁Cl\", with a \"=\" between them. On \"bonds\" the two starting structures pulse (teal C=C; ink single bonds) and the HCl box pulses. Strip: \"atoms and name check?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"CH₃CH₂CH₂CH₂CH₃ + Cl₂ → CH₃CHClCHClCH₂CH₃\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"alkane: no C=C, so swap, don't add\".",
+      "teachingReason": "The classic mistake: The classic mistake is treating pentane like an alkene, and putting a chlorine on two neighbouring carbons.",
+      "narrationCue": "the classic mistake / alkane: no C=C, so swap, don't add / Count the atoms",
+      "motionPurpose": "On the spoken cues: On \"Count the atoms\" a small tally writes under it: \"left: C 5, H 12, Cl 2 | right: C 5, H 10, Cl 2 ✗\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"CH₃CH₂CH₂CH₂CH₃ + Cl₂ → CH₃CHClCHClCH₂CH₃\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"alkane: no C=C, so swap, don't add\". On \"Count the atoms\" a small tally writes under it: \"left: C 5, H 12, Cl 2 | right: C 5, H 10, Cl 2 ✗\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: work backwards) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. A hydrocarbon, X, reacts with excess",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: work backwards)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The card writes on: \"Hydrocarbon X reacts with excess chlorine at room temperature in the dark. The only organic product is 1,1,2,2-tetrachlorobutane, CHCl₂CCl₂CH₂CH₃.\" Demands: \"Identify X.\" \"Explain your reasoning, including the type of reaction involved.\" One answer box. The product's condensed formula is part of the card; no other structure is drawn. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-what-added",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Working backwards\".",
+      "teachingReason": "Added or swapped, and how many: Work backwards from the product.",
+      "narrationCue": "in the dark / added / four / triple",
+      "motionPurpose": "On the spoken cues: On \"in the dark\" \"in the dark\" underlines; a small grey ghost of c04b's UV glow appears and is struck through (tag \"no UV: not substitution\"). On \"added\" a chip \"addition\". The product's full structural formula draws at the right (CHCl₂–CCl₂–CH₂–CH₃, four green Cl, carbons numbered 1 to 4 small);",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Working backwards\". On \"in the dark\" \"in the dark\" underlines; a small grey ghost of c04b's UV glow appears and is struck through (tag \"no UV: not substitution\"). On \"added\" a chip \"addition\". The product's full structural formula draws at the right (CHCl₂–CCl₂–CH₂–CH₃, four green Cl, carbons numbered 1 to 4 small); \"1,1,2,2-tetrachlorobutane\" underlines. On \"four\" the four Cl atoms pulse and pair up in two green brackets, \"Cl₂\" and \"Cl₂\" (tag \"4 Cl = 2 Cl₂ added\"); \"excess chlorine\" underlines. On \"triple\" a small tag writes \"2 Cl₂ = 2 extra bonds: C≡C, or two C=C\" (grey c04b tag). Strip: \"added or swapped?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-where",
+      "visualDecision": "new",
+      "visualReference": "on \"where\" the locants \"1, 1, 2, 2\" in the underlined name glow navy and the Cl atoms on carbons 1 and 2 pulse (tag \"all 4 Cl on C1 and C2\", with a second line \"same two carbons → C≡C\"; two double bonds would have spread the Cl over more carbons).",
+      "teachingReason": "Which bonds: put the triple bond back: Now where.",
+      "narrationCue": "where / one / but-one-yne",
+      "motionPurpose": "On the spoken cues: On \"one\" the work-back stripper runs: the first pair of Cl lifts off (one from each carbon) and a teal second bond forms between C1 and C2; the second pair lifts off and a third bond forms, giving HC≡CCH₂CH₃ (tag \"one piece from each carbon, twice\"). On \"but-one-yne\" the builder writes \"but\" +",
+      "motionRole": "explain",
+      "onScreenChange": "on \"where\" the locants \"1, 1, 2, 2\" in the underlined name glow navy and the Cl atoms on carbons 1 and 2 pulse (tag \"all 4 Cl on C1 and C2\", with a second line \"same two carbons → C≡C\"; two double bonds would have spread the Cl over more carbons). On \"one\" the work-back stripper runs: the first pair of Cl lifts off (one from each carbon) and a teal second bond forms between C1 and C2; the second pair lifts off and a third bond forms, giving HC≡CCH₂CH₃ (tag \"one piece from each carbon, twice\"). On \"but-one-yne\" the builder writes \"but\" + \"-1-\" + \"yne\"; \"Identify X\" underlines; answer box fills \"X = but-1-yne, HC≡CCH₂CH₃: addition of 2Cl₂ across the C≡C between C1 and C2 (no UV, so not substitution)\". On \"Check\" the tally writes \"C₄H₆ + 2Cl₂ → C₄H₆Cl₄: C 4, H 6, Cl 4 ✓\". Strip: \"which bonds?\" and \"atoms and name check?\" tick.",
+      "motionTools": [
+        "Mark underline",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"X = but-1-ene\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"C=C adds once: only 2 Cl\".",
+      "teachingReason": "The classic mistake: The classic mistake is but-one-ene.",
+      "narrationCue": "the classic mistake / C=C adds once: only 2 Cl / one, two-dichlorobutane",
+      "motionPurpose": "On the spoken cues: On \"one, two-dichlorobutane\" a small grey structure CH₂ClCHClCH₂CH₃ writes beside it with its name. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"X = but-1-ene\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"C=C adds once: only 2 Cl\". On \"one, two-dichlorobutane\" a small grey structure CH₂ClCHClCH₂CH₃ writes beside it with its name. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q4-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 4: evaluate a test result) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question four. X is an open-chain hydrocarbon with",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 4: evaluate a test result)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. `m7-bromine-water-orange-v1.png` sits small at the card's upper right, unchanged (no motion). The card writes on: \"X is an open-chain hydrocarbon with one multiple bond. Its molecular formula is C₅H₈. X decolourises bromine water at room temperature, without UV light.\" Then, as a quoted line: \"A student concludes: 'X is an alkene, because it decolourises bromine water.'\" Demand: \"Evaluate the student's conclusion.\" One answer box. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q4-evidence",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip; type badge \"Evaluate a test result\".",
+      "teachingReason": "What the test can show: Start with what the test shows.",
+      "narrationCue": "added / triple",
+      "motionPurpose": "On the spoken cues: On \"added\" \"decolourises bromine water\" underlines and the tube plate cross-fades in place to `m7-bromine-water-colourless-v1.png` (tag \"bromine added: unsaturated\"). Two tiles draw at the right: a generic C=C and a generic C≡C, each with a tick \"decolourises\"; a third tile, a single bond, is",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Evaluate a test result\". On \"added\" \"decolourises bromine water\" underlines and the tube plate cross-fades in place to `m7-bromine-water-colourless-v1.png` (tag \"bromine added: unsaturated\"). Two tiles draw at the right: a generic C=C and a generic C≡C, each with a tick \"decolourises\"; a third tile, a single bond, is greyed (tag \"alkane: no\"). On \"which\" a bracket over the first two reads \"the test can't say which\". The quoted student line underlines. Strip: \"which bonds?\" ticks.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q4-judgement",
+      "visualDecision": "new",
+      "visualReference": "the tiles dim.",
+      "teachingReason": "The formula decides: So use the formula.",
+      "narrationCue": "C five H ten / C five H eight / incorrect",
+      "motionPurpose": "On the spoken cues: On \"C five H ten\" a line writes \"alkene, n = 5: CnH2n = C₅H₁₀ ✗\" and \"C₅H₈\" in the strip underlines; on \"C five H eight\" a second line writes \"alkyne, n = 5: CnH2n−2 = C₅H₈ ✓\"; \"open-chain hydrocarbon with one multiple bond\" underlines (tag \"condition: one multiple bond, no ring\"). On \"incorrect\"",
+      "motionRole": "explain",
+      "onScreenChange": "the tiles dim. On \"C five H ten\" a line writes \"alkene, n = 5: CnH2n = C₅H₁₀ ✗\" and \"C₅H₈\" in the strip underlines; on \"C five H eight\" a second line writes \"alkyne, n = 5: CnH2n−2 = C₅H₈ ✓\"; \"open-chain hydrocarbon with one multiple bond\" underlines (tag \"condition: one multiple bond, no ring\"). On \"incorrect\" \"Evaluate\" underlines; answer box fills \"Incorrect. Decolourisation shows a C=C or C≡C (not an alkane) but cannot tell which. C₅H₈ fits CnH2n−2, so X is an alkyne (for example pent-1-yne, HC≡CCH₂CH₂CH₃), not an alkene (C₅H₁₀).\" On \"pent-one-yne\" its skeletal formula draws small with its teal triple bond. Strip: \"atoms and name check?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q4-mistake",
+      "visualDecision": "adjust",
+      "visualReference": "a chip \"bromine water decolourised → C=C\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"decolourised → C=C or C≡C\".",
+      "teachingReason": "The classic mistake: The classic mistake is treating bromine water as a test for double bonds only.",
+      "narrationCue": "unsaturation",
+      "motionPurpose": "On the spoken cues: On \"unsaturation\" the bromine water pair plate (`m7-bromine-water-pair-v1.png`) appears small beside it. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"bromine water decolourised → C=C\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"decolourised → C=C or C≡C\". On \"unsaturation\" the bromine water pair plate (`m7-bromine-water-pair-v1.png`) appears small beside it. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the check strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a name or a skeletal formula → longest chain with the multiple bond; number from the nearer end (Q1)\"; \"alkane + X₂ + UV light → substitution: swap one H, + HX (Q2)\"; \"C=C or C≡C + reagent, no UV needed → addition: one piece on each C; C≡C adds twice (Q2, Q3)\"; \"any answer → count the atoms; does the formula fit the family? (all)\".",
+      "teachingReason": "Decision board: So here's how to start any hydrocarbon question.",
+      "narrationCue": "bonds / UV light / addition / count",
+      "motionPurpose": "On the spoken cues: The aid \"Alkanes swap, alkenes add, alkynes add twice.\" writes small under rows 2 and 3. On \"Next\" a chip \"Next: how does an OH group change alcohol properties?\" slides in at the lower right with `m7-ethanol-fuel-bottle-v1.png` small. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the check strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a name or a skeletal formula → longest chain with the multiple bond; number from the nearer end (Q1)\"; \"alkane + X₂ + UV light → substitution: swap one H, + HX (Q2)\"; \"C=C or C≡C + reagent, no UV needed → addition: one piece on each C; C≡C adds twice (Q2, Q3)\"; \"any answer → count the atoms; does the formula fit the family? (all)\". The aid \"Alkanes swap, alkenes add, alkynes add twice.\" writes small under rows 2 and 3. On \"Next\" a chip \"Next: how does an OH group change alcohol properties?\" slides in at the lower right with `m7-ethanol-fuel-bottle-v1.png` small. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g01-learning-review.md",
+      "sha256": "ae52d32fda56b36854854e222d8f55097b3619d4e42532183e27b648306cb5dc"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g01-claude-science-check.md",
+      "sha256": "dd38954673757f0c6b7456b4fadfa2932552d3794aef12471f3e27112e53b618"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

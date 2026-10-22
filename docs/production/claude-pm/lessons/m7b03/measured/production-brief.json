@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b03/measured/lesson.json",
+    "lessonSha256": "c95d57c3c2c0646965b9bf9e66164b49923e87cc6ae9f0a504aedb3f3171a119"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: pathogen, host, the groups (bacterium, virus, protozoan, helminth) with these named cases: tuberculosis (bacterium), malaria and Plasmodium inside red blood cells (protozoan), the pork tapeworm hooked onto the gut wall (helminth), tinea (fungus), the COVID-19 virus and tobacco mosaic virus (viruses, made of genetic material in a protein coat, multiplying only inside host cells). From b02: germ theory, microbes come from other microbes, Pasteur's dust trapped in the swan neck (airborne microbes), Koch's tuberculosis work. From Year 11 Module 2: cell membranes carry proteins on their surface. Not assumed: modes of transmission, fomite, vector, droplet against airborne spread, fimbriae, receptor binding, entry against transmission adaptations, matching control to route.",
+    "startsWith": "Trace direct, indirect and vector transmission and the adaptations for entry and transmission. The video opens: In 1854, cholera was killing people in one London neighbourhood.",
+    "stopsAfter": "describing the chain a pathogen must cross to spread (leave, travel, enter); defining direct contact, indirect contact (fomites, water, food, air) and vector transmission, with named diseases for each, and distinguishing a vector from a fomite; explaining entry adaptations, which get a pathogen in and hold it where it enters (fimbriae gripping host cell molecules; viral surface proteins binding specific receptors; the tapeworm's hooks and suckers) and comparing bacterial and viral entry; explaining transmission adaptations (influenza triggering coughing and sneezing; *Plasmodium* in the mosquito's salivary glands, injected into the skin; tapeworm eggs and cysts in undercooked pork; tobacco mosaic virus surviving on tools); keeping entry and transmission adaptations apart in a comparison; matching control measures to the route; choosing the measure that breaks the link for a vector-borne outbreak and comparing two pathogens' adaptations.",
+    "nextLesson": "a classroom practical that models how one infection spreads through a group and how tracing contacts finds its source (route entry bio-m7-p01)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b03.md"
+  ],
+  "teaching": {
+    "task": "A pathogen can't survive in one host forever. How does it get out of one host and into the next, how is it built for each step, and how does knowing its route tell us where to stop it?",
+    "causalExplanation": "Causes: why a pathogen must travel to spread (it must leave, travel and enter; scene 2); why droplets count as direct and lingering particles as indirect (range and time in the air; scenes 3 and 4); why a door handle is not a vector (not alive; scene 5); why fimbriae help (grip, not washed away; scene 6); why a virus infects only some cells (its protein fits only some receptors; scene 6); why hooks matter (not swept out; scene 7); how each transmission feature moves the pathogen on (scene 8); why the control must match the route (scene 10). Visible case: the map cluster and the handle coming off; the lane changing per mode; droplets falling against particles drifting; the spike fitting one receptor; the scolex anchoring; four transmission cases; break marks cutting lanes. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 8 (four cases) is the densest scene, so each quarter dims as the next fills and only its amber tag stays bright.",
+    "conversationalApproach": "In 1854 John Snow mapped cholera deaths around one London water pump and showed how the disease travelled without knowing its microbe, so the question is how a pathogen gets from one host into the next and how knowing its route tells us where to stop it. A pathogen has to leave one host, travel and enter a new one, and each link is a place the chain can break. The three modes of transmission follow one at a time with named cases: direct contact (tinea, HIV, close-range droplets for influenza), indirect contact through a fomite, water, food or the air (norovirus, cholera, Salmonella, tuberculosis and measles), and vector transmission by a living organism, with Plasmodium developing inside the Anopheles mosquito and a door handle shown not to be a vector. Adaptations are then sorted by job: entry adaptations grip and hold on (fimbriae, the COVID-19 spike protein binding its receptor, the tapeworm's hooks and suckers), and transmission adaptations get the pathogen out and across (coughing, mosquito saliva, tapeworm eggs and cysts, a tough tobacco mosaic virus coat). Knowing the route picks the control that breaks its link, from barriers to treating water to bed nets, and the memory aid is that every control measure breaks a link. Two exam questions follow with brief feedback.",
+    "openingDecision": "In 1854, cholera was killing people in one London neighbourhood. John Snow marked the deaths on a street map, and the deaths clustered around one water pump on Broad Street. He didn't know which microbe caused cholera, but the map showed how it travelled: in drinking water. So how does a pathogen get from one host into the next, and how does knowing its route tell us where to stop it?",
+    "understandingCheck": "12a is an identify-and-justify item that meets the route's stop: Ross River virus after rain in a Queensland town, a mosquito-borne virus not passed directly between people; choose between isolating patients and draining and treating standing water. 12c is a compare item for B7-IQ1-04: Vibrio cholerae (pili, watery diarrhoea into water) against influenza virus (a surface protein binding airway receptors, coughing). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Each feedback is brief (about 25 to 30 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ1-01: \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117)\", with its listed example \"investigate modes of transmission of infectious diseases, including direct contact, indirect contact and vector transmission\". B7-IQ1-04: \"compare the adaptations of different pathogens that facilitate their entry into and transmission between hosts (ACSBL118)\". This video covers the modes-of-transmission example (secondary-sourced: named diseases mapped to routes) and B7-IQ1-04. The epidemic example is p01 and g01; the microbial testing example is p02; the classifying example is b01. Verbs: \"investigate\" (examined, per the site's Compare model, as compare or classify a route with justification: scenes 2 to 5, 10 and attempt 1) and \"compare\" (scenes 6 to 9 and attempt 2: similarities and differences, not two descriptions)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One route chain board: two coded host circles (b01's `HostCircles` style), left \"infected host\" and right \"new host\", with a three-station strip between them: \"leave\", \"travel\", \"enter\". The middle station is a lane that changes per mode: in scene 3 a short lane with nothing in it (direct); in scene 4 a lane holding a painted object (door handle, pump, chicken) or drifting coded particles (air); in scene 5 a lane holding the painted mosquito. Adaptation plates attach to the \"enter\" station (teal tag \"entry\") or the \"leave\" station (amber tag \"transmission\"), so the board itself sorts the two kinds of adaptation. In scene 10 each lane gains a control plate and a coded break mark (a short scribble cut across the lane). Host circles are abstract and never become people: no people, hands, faces, patients, or coughing or sneezing figures. Droplets and airborne particles are coded dots leaving a host circle (abstract particles, not organisms). Real organisms, objects and tissues are painted plates; tissue blocks (skin) appear only as cut sections. Plates are scaled proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey station labels; tags fade when the next cue lands; lanes not being spoken about dim to grey.",
+    "transitionPlan": "A coded street-map inset draws with death dots that cluster around one pump marker as the Broad Street pump plate rises beside it; the RouteChain draws with its leave, travel and enter stations and the pathogen glyph moves along the lane once; each mode lights its own lane in turn, the lane shortening for direct contact with the hyphae plate and a coded drop, opening a slot for indirect contact that the door handle, pump and chicken plates fill one per cue, and filling with the Anopheles mosquito plate for vectors as a Plasmodium cell appears in the host; the chain shrinks to a strip with the enter station lit as the rod bacterium's fimbriae are ringed over a coded membrane and the spike meets its receptor, then a two-column compare strip writes and the scolex plate shows its hooks; the leave station lights amber as four transmission cases fill the board in quarters; entry and transmission chips land under their stations with their thumbnails; the three lanes stack as rows that each gain a control plate and a coded BreakMark; one handwritten memory line writes with three control and cut-lane pairs; each attempt clears the board and its feedback underlines the card as a small RouteChain or two-column compare table fills; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. A coded street-map inset draws on in thin grey lines (a few streets, unlabelled except a small grey tag \"Soho, London, 1854\").",
+      "teachingReason": "Hook (one pump): In 1854, cholera was killing people in one London neighbourhood.",
+      "narrationCue": "marked the deaths / clustered around one water pump / didn't know which microbe caused cholera / in drinking water / how does a pathogen get from one host into the next",
+      "motionPurpose": "On the spoken cues: On \"marked the deaths\" small dark dots appear one by one across the map; on \"clustered around one water pump\" the dots thicken around one point and a pump marker writes there, then `m7-broad-street-pump-v1.png` (new) rises beside the map at medium size, with a thin coded line from the marker to the",
+      "motionRole": "explain",
+      "onScreenChange": "no people. A coded street-map inset draws on in thin grey lines (a few streets, unlabelled except a small grey tag \"Soho, London, 1854\"). On \"marked the deaths\" small dark dots appear one by one across the map; on \"clustered around one water pump\" the dots thicken around one point and a pump marker writes there, then `m7-broad-street-pump-v1.png` (new) rises beside the map at medium size, with a thin coded line from the marker to the plate (tag \"the Broad Street pump\"). On \"didn't know which microbe caused cholera\" a small grey \"?\" sits over the cluster. On \"in drinking water\" a short coded blue drip line runs from the pump spout to the cluster (tag \"the route: water\", the street tag dims). On \"how does a pathogen get from one host into the next\" the map and tags fade, the pump shrinks to the upper left, and the heading writes on: \"How does a pathogen get from host to host?\" Hold about one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about one second"
+    },
+    {
+      "sceneId": "the-chain",
+      "visualDecision": "new",
+      "visualReference": "the `RouteChain` draws: on \"leave one host\" a coded host circle at the left with b01's pathogen glyph inside (grey label \"infected host\") and a station chip \"leave\"; on \"travel\" a lane draws across the middle (chip \"travel\"); on \"a new host\" a second circle at the right (grey label \"new host\") and the chip \"enter\".",
+      "teachingReason": "The chain: leave, travel, enter: To spread, a pathogen has to leave one host, travel, and get into a new host.",
+      "narrationCue": "transmission / direct contact / indirect contact / vector",
+      "motionPurpose": "On the spoken cues: The glyph moves along the lane once. On \"mode of transmission\" a gloss writes under the lane: \"mode of transmission: how a pathogen travels between hosts\". On \"three\" three lane labels stack in small handwriting above the lane, one per cue: \"direct contact\", \"indirect contact\", \"vector\". On \"every",
+      "motionRole": "explain",
+      "onScreenChange": "the `RouteChain` draws: on \"leave one host\" a coded host circle at the left with b01's pathogen glyph inside (grey label \"infected host\") and a station chip \"leave\"; on \"travel\" a lane draws across the middle (chip \"travel\"); on \"a new host\" a second circle at the right (grey label \"new host\") and the chip \"enter\". The glyph moves along the lane once. On \"mode of transmission\" a gloss writes under the lane: \"mode of transmission: how a pathogen travels between hosts\". On \"three\" three lane labels stack in small handwriting above the lane, one per cue: \"direct contact\", \"indirect contact\", \"vector\". On \"every link is a place where the chain can break\" a short coded `BreakMark` flickers across each station in turn and fades. At most three bright text items (the gloss, the newest lane label, the station chips in grey). Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "direct-contact",
+      "visualDecision": "adjust",
+      "visualReference": "the lane labelled \"direct contact\" lights; the other labels dim.",
+      "teachingReason": "Direct contact: In direct contact, the pathogen passes straight from one host to another, with nothing in between.",
+      "narrationCue": "direct contact",
+      "motionPurpose": "On the spoken cues: The lane shortens until the two host circles almost touch (tag \"nothing in between\"). On \"Tinea\" `m7-fungal-hyphae-v1.png` appears small at the touching edge (tag \"tinea: skin to skin\"). On \"HIV\" the hyphae tag dims and a coded red drop moves across the gap (tag \"HIV: blood and body fluids\", with a",
+      "motionRole": "explain",
+      "onScreenChange": "the lane labelled \"direct contact\" lights; the other labels dim. The lane shortens until the two host circles almost touch (tag \"nothing in between\"). On \"Tinea\" `m7-fungal-hyphae-v1.png` appears small at the touching edge (tag \"tinea: skin to skin\"). On \"HIV\" the hyphae tag dims and a coded red drop moves across the gap (tag \"HIV: blood and body fluids\", with a small grey chip \"sex, mother to baby\"; no virus plate claimed as HIV; shared needles appear in scene 4 as a fomite). On \"large droplets\" the circles part to a short marked distance and `DropletBurst` runs: coded droplets leave the left circle and fall to the ground line within a coded bracket labelled \"1 to 2 m\" (tag \"large droplets fall fast\"); on \"influenza\" `m6-virus-particle-v1.png` (round, purple spikes; the influenza plate throughout, so it is never confused with scene 6's COVID-19 plate) appears small above the bracket with the tag \"influenza: close-range droplets\", while a small grey note writes under the lane: \"grouped as direct: close range\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "indirect-contact",
+      "visualDecision": "adjust",
+      "visualReference": "the lane labelled \"indirect contact\" lights; the lane lengthens and a slot opens in its middle.",
+      "teachingReason": "Indirect contact: In indirect contact, something non-living carries the pathogen between hosts.",
+      "narrationCue": "indirect contact / fomite",
+      "motionPurpose": "On the spoken cues: On \"fomite\" `m7-door-handle-v1.png` (new) fills the slot (gloss \"fomite: a contaminated non-living object\", tag \"door handle: norovirus\"). On \"water\" the handle slides down to a small thumbnail under the lane and the pump thumbnail from the hook fills the slot (tag \"water: cholera\"). On \"food\"",
+      "motionRole": "explain",
+      "onScreenChange": "the lane labelled \"indirect contact\" lights; the lane lengthens and a slot opens in its middle. On \"fomite\" `m7-door-handle-v1.png` (new) fills the slot (gloss \"fomite: a contaminated non-living object\", tag \"door handle: norovirus\"). On \"water\" the handle slides down to a small thumbnail under the lane and the pump thumbnail from the hook fills the slot (tag \"water: cholera\"). On \"food\" `m7-raw-chicken-v1.png` (new) replaces it (tag \"undercooked chicken: Salmonella\"); the earlier thumbnails sit in a grey row under the lane, with one small grey chip added silently at the end of the row: \"shared needles: a fomite\" (the non-living carrier for HIV in blood; no needle plate). On \"the air\" the slot empties and `DustPath` particles drift from the left circle across the whole lane, staying suspended rather than falling (contrast with scene 3's droplets, shown as a ghost bracket); `m7-tb-bacilli-v1.png` (from b01) appears small in the drifting cloud (tag \"air: tuberculosis, measles\"); on \"after an infected person leaves\" the left host circle fades to a dashed outline while the particles keep drifting (grey note \"lingers: grouped as indirect\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "vector",
+      "visualDecision": "adjust",
+      "visualReference": "the lane labelled \"vector\" lights.",
+      "teachingReason": "Vector transmission: In vector transmission, a living organism, usually an insect or a tick, carries the pathogen from host to host.",
+      "narrationCue": "vector",
+      "motionPurpose": "On the spoken cues: On \"a living organism\" `m5x-anopheles-mosquito-v1.png` fills the lane slot (gloss \"vector: a living organism that carries a pathogen between hosts\"), with `m7-tick-vector-v1.png` small and grey beside it. On \"Plasmodium\" `m7-plasmodium-red-cell-v1.png` appears small inside the left host circle (tag",
+      "motionRole": "explain",
+      "onScreenChange": "the lane labelled \"vector\" lights. On \"a living organism\" `m5x-anopheles-mosquito-v1.png` fills the lane slot (gloss \"vector: a living organism that carries a pathogen between hosts\"), with `m7-tick-vector-v1.png` small and grey beside it. On \"Plasmodium\" `m7-plasmodium-red-cell-v1.png` appears small inside the left host circle (tag \"Plasmodium: malaria\"). On \"develops inside the mosquito\" a coded loop arrow runs from the left circle into the mosquito and on to the right circle (tag \"part of its life cycle\", replacing the Plasmodium tag). On \"a door handle isn't a vector\" the door handle thumbnail from scene 4 slides up beside the mosquito; two short chips write under them, one per cue: \"vector: alive\" (under the mosquito) and \"fomite: not alive\" (under the handle); a chip \"a door handle is a vector\" fades in and takes a grey scribble cross. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "entry-adaptations",
+      "visualDecision": "adjust",
+      "visualReference": "the `RouteChain` shrinks to a grey strip along the top with the \"enter\" station lit teal.",
+      "teachingReason": "Getting in: entry adaptations: Now, how are pathogens built for this?",
+      "narrationCue": "fimbriae / receptor",
+      "motionPurpose": "On the spoken cues: On \"fimbriae\" `m7-bacterium-rod-coccus-v1.png` fills the left half, cropped by position to the rod (scaled, not stretched); its fine hair-like threads are ringed (gloss \"fimbriae: short threads that grip host cells\"). A coded membrane edge draws under it (grey label \"host cell surface\") with small",
+      "motionRole": "explain",
+      "onScreenChange": "the `RouteChain` shrinks to a grey strip along the top with the \"enter\" station lit teal. On \"fimbriae\" `m7-bacterium-rod-coccus-v1.png` fills the left half, cropped by position to the rod (scaled, not stretched); its fine hair-like threads are ringed (gloss \"fimbriae: short threads that grip host cells\"). A coded membrane edge draws under it (grey label \"host cell surface\") with small coded surface molecules; on \"grip\" the rod plate settles onto the edge and short teal tick marks join three threads to three molecules (tag \"grip: not washed away by mucus or urine\"). On \"receptor\" `m7-virus-particle-v1.png` fills the right half above a second coded membrane edge; `ReceptorFit` runs: a row of receptor shapes along the edge, only one of which matches the spike shape on the plate's lower edge (gloss \"receptor: a molecule on a host cell that a pathogen binds\"); on \"binds a receptor on cells lining the airways\" the matching receptor pulses and the spike locks onto it (tag \"spike fits one receptor: only some cells\"); on \"get inside\" the virus plate crossfades below the membrane line (tag \"then into the cell\"). Both halves carry a small teal tag \"entry\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "compare-and-hold",
+      "visualDecision": "adjust",
+      "visualReference": "the two halves from scene 6 shrink side by side under a coded two-column compare strip that writes one row per cue: on \"both grip molecules\" a joined row \"same: a surface structure binds host cell molecules\" (teal, spanning both columns); on \"the bacterium can multiply on that surface\" the left cell \"bacterium: stays on and multiplies\"; on \"the virus has to get inside\" the right cell \"virus: enters the cell\".",
+      "teachingReason": "Compare, and holding on: So both grip molecules on the host cell's surface.",
+      "narrationCue": "both grip molecules / the bacterium can multiply on that surface / the virus has to get inside / Bigger pathogens / a ring of hooks / four suckers",
+      "motionPurpose": "On the spoken cues: The compare strip dims to grey. On \"Bigger pathogens\" the camera pulls back (b01's ruler style, small grey tag \"millimetres\") and `m7-tapeworm-scolex-v1.png` (new) fills the centre; on \"a ring of hooks\" the hook crown is ringed; on \"four suckers\" two visible suckers pulse (tag \"hooks and suckers\");",
+      "motionRole": "explain",
+      "onScreenChange": "the two halves from scene 6 shrink side by side under a coded two-column compare strip that writes one row per cue: on \"both grip molecules\" a joined row \"same: a surface structure binds host cell molecules\" (teal, spanning both columns); on \"the bacterium can multiply on that surface\" the left cell \"bacterium: stays on and multiplies\"; on \"the virus has to get inside\" the right cell \"virus: enters the cell\". The compare strip dims to grey. On \"Bigger pathogens\" the camera pulls back (b01's ruler style, small grey tag \"millimetres\") and `m7-tapeworm-scolex-v1.png` (new) fills the centre; on \"a ring of hooks\" the hook crown is ringed; on \"four suckers\" two visible suckers pulse (tag \"hooks and suckers\"); on \"anchor it to the gut wall\" a coded wavy gut-wall line draws under the scolex and short teal ticks join the suckers to it (tag \"anchored: not swept out\", teal tag \"entry: holds on at the gut wall\"). A small `m7-tapeworm-v1.png` thumbnail at the corner shows the whole worm for scale. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Cam lens zoom",
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "transmission-adaptations",
+      "visualDecision": "adjust",
+      "visualReference": "the `RouteChain` strip returns with the \"leave\" station lit amber.",
+      "teachingReason": "Getting out: transmission adaptations: Now, getting out.",
+      "narrationCue": "Influenza / triggers coughing / Plasmodium / salivary glands / into the skin / The tapeworm's eggs leave in faeces",
+      "motionPurpose": "On the spoken cues: Four transmission cases fill the board one per cue, each in a quarter, earlier quarters dimming. (1) On \"Influenza\" `m8-lungs-healthy-v1.png` small at the left with the airway lining ringed and the influenza thumbnail (`m6-virus-particle-v1.png`) inside it (tag \"multiplies in the airway lining\");",
+      "motionRole": "explain",
+      "onScreenChange": "the `RouteChain` strip returns with the \"leave\" station lit amber. Four transmission cases fill the board one per cue, each in a quarter, earlier quarters dimming. (1) On \"Influenza\" `m8-lungs-healthy-v1.png` small at the left with the airway lining ringed and the influenza thumbnail (`m6-virus-particle-v1.png`) inside it (tag \"multiplies in the airway lining\"); on \"triggers coughing\" a coded host circle beside it emits a `DropletBurst` (amber tag \"triggers coughing: droplets out\"; no figure). (2) On \"Plasmodium\" `m7-mosquito-feeding-skin-v1.png` (new) appears: the mosquito's mouthparts in a skin section; on \"salivary glands\" a coded ring marks the glands in the mosquito's head region (grey tag \"salivary glands\"); on \"into the skin\" a coded dotted line runs down the mouthparts and ends in the dermis beside the capillary, then a short coded wiggle (the parasites) moves on into the capillary (amber tag \"injected under the skin's surface\"). (3) On \"The tapeworm's eggs leave in faeces\" a small coded cycle draws: the tapeworm thumbnail and an arrow labelled \"eggs in faeces\"; on \"cysts in pig muscle\" `m7-pork-cysts-v1.png` (new) appears (tag \"cysts in pork\"); on \"undercooked pork carries it on\" an arrow runs back to the tapeworm, labelled \"undercooked pork eaten\" (amber tag \"eggs and cysts: carried to a new host\"). (4) On \"tobacco mosaic virus\" `m7-tmv-particle-v1.png` (from b01) appears beside `m7-pruning-secateurs-v1.png` (new) and a small `m7-infected-leaf-v1.png`; on \"a coat so tough\" the coat outline pulses (tag \"tough coat: survives on tools\"); on \"from plant to plant\" a coded arc from the infected leaf to a `m7-healthy-leaf-v1.png` thumbnail passes through the secateurs (amber tag \"carried on tools\"). Each quarter carries a small amber tag \"transmission\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "two-jobs",
+      "visualDecision": "new",
+      "visualReference": "the `RouteChain` grows back to full width.",
+      "teachingReason": "Keep the two jobs apart: Exams ask you to compare these, so keep two jobs apart.",
+      "narrationCue": "An entry adaptation / A transmission adaptation / name the feature / what it does / link it / hooks keep it in: entry",
+      "motionPurpose": "On the spoken cues: On \"An entry adaptation\" a teal chip writes under the \"enter\" station: \"entry: gets in, holds on\", and thumbnails of the fimbriated rod, the spike and the scolex slide to that station. On \"A transmission adaptation\" an amber chip writes under the \"leave\" station: \"transmission: gets out and",
+      "motionRole": "explain",
+      "onScreenChange": "the `RouteChain` grows back to full width. On \"An entry adaptation\" a teal chip writes under the \"enter\" station: \"entry: gets in, holds on\", and thumbnails of the fimbriated rod, the spike and the scolex slide to that station. On \"A transmission adaptation\" an amber chip writes under the \"leave\" station: \"transmission: gets out and across\", and thumbnails of the droplet burst, the feeding mosquito, the pork cysts and the secateurs slide to it. On \"name the feature\" a three-step line writes across the bottom, one per cue: \"feature\" (on \"name the feature\"), \"what it does\" (on \"what it does\"), \"how it gets in or across\" (on \"link it\"); the line writes only after the two station chips have dimmed. A chip \"hooks help the tapeworm spread\" fades in and takes a grey scribble cross, with the small grey reason \"hooks keep it in: entry\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "break-the-link",
+      "visualDecision": "adjust",
+      "visualReference": "the three lanes stack as three rows, each with its host circles and its lane object, and each row gains a control plate on its cue and a coded `BreakMark` across its lane: direct row, on \"barriers and distance\", `m5x-gloves-v1.png` and `m7-face-mask-v1.png` small (chip \"barriers and distance\"); indirect row, on \"treat the carrier\", the chicken and door handle thumbnails with `m7-handwashing-sink-v1.png` small (chip \"treat the carrier: water, food, surfaces, air\"); vector row, on \"bed nets\", `m7-bed-net-v1.png` (new) beside the mosquito (chip \"break it at the vector\").",
+      "teachingReason": "Break the link: Knowing the route tells you where to break the chain.",
+      "narrationCue": "barriers and distance / treat the carrier / bed nets / the pump's handle taken off / Get the route wrong",
+      "motionPurpose": "On the spoken cues: Earlier chips dim as each lands. On \"the pump's handle taken off\" the pump thumbnail slides into the indirect row's water slot and crossfades to its aligned partner `m7-broad-street-pump-nohandle-v1.png` (new; the handle gone, the empty pivot bracket left), the handle's outline fading as a grey",
+      "motionRole": "explain",
+      "onScreenChange": "the three lanes stack as three rows, each with its host circles and its lane object, and each row gains a control plate on its cue and a coded `BreakMark` across its lane: direct row, on \"barriers and distance\", `m5x-gloves-v1.png` and `m7-face-mask-v1.png` small (chip \"barriers and distance\"); indirect row, on \"treat the carrier\", the chicken and door handle thumbnails with `m7-handwashing-sink-v1.png` small (chip \"treat the carrier: water, food, surfaces, air\"); vector row, on \"bed nets\", `m7-bed-net-v1.png` (new) beside the mosquito (chip \"break it at the vector\"). Earlier chips dim as each lands. On \"the pump's handle taken off\" the pump thumbnail slides into the indirect row's water slot and crossfades to its aligned partner `m7-broad-street-pump-nohandle-v1.png` (new; the handle gone, the empty pivot bracket left), the handle's outline fading as a grey ghost, and the row's `BreakMark` pulses (grey tag \"Snow: the water link\"). On \"Get the route wrong\" a small separate row draws: the drifting tuberculosis particles, with a cleaning chip \"scrub surfaces\" whose arrow points at the lane floor while the particles float above it; the chip takes a grey cross (tag \"air route: ventilate instead\"). At most three bright text items besides the small row labels. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the three rows dim.",
+      "teachingReason": "Memory: So name the route first, and the control follows.",
+      "narrationCue": "Every control measure breaks a link.",
+      "motionPurpose": "On the spoken cues: One handwritten line writes on large across the centre: \"Every control measure breaks a link.\" Under it, three small pairs appear one per cue, each a control thumbnail and a cut lane: mask and droplet lane; the handle-less pump and water lane; bed net and mosquito lane. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "the three rows dim. One handwritten line writes on large across the centre: \"Every control measure breaks a link.\" Under it, three small pairs appear one per cue, each a control thumbnail and a cut lane: mask and droplet lane; the handle-less pump and water lane; bed net and mosquito lane. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (Ross River virus)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. After heavy rain, Ross",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (Ross River virus))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"After heavy rain, cases of Ross River virus disease increased in a Queensland town. The virus is carried by mosquitoes that breed in standing water. It is not passed directly from person to person.\" Two options in a small box: \"Measure A: isolate infected people in hospital.\" \"Measure B: drain standing water and treat what remains with larvicide (a chemical that kills mosquito larvae).\" Demand: \"Identify the mode of transmission of Ross River virus. Justify which measure would better reduce the number of new cases. (3 marks)\". One lined answer box. No plates and nothing answer-bearing: no lanes, nets or mosquito. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "vector transmission / Measure B is better / the classic mistake / no direct link to break",
+      "motionPurpose": "On the spoken cues: A small `RouteChain` draws beneath it with the vector lane lit. On \"vector transmission\" \"carried by mosquitoes\" underlines amber and the answer row writes \"mode: vector (mosquitoes)\" with the generic `m7-mosquito-vector-v1.png` small (not the *Anopheles* plate: Ross River virus is carried by other",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A small `RouteChain` draws beneath it with the vector lane lit. On \"vector transmission\" \"carried by mosquitoes\" underlines amber and the answer row writes \"mode: vector (mosquitoes)\" with the generic `m7-mosquito-vector-v1.png` small (not the *Anopheles* plate: Ross River virus is carried by other mosquitoes). On \"Measure B is better\" \"breed in standing water\" underlines and a `BreakMark` cuts the vector lane (row \"B: removes breeding sites, fewer mosquitoes\"). On \"the classic mistake\" \"not passed directly from person to person\" underlines; the chip \"A: isolate the sick\" writes on and takes a grey scribble cross, with the small grey reason \"no direct link to break\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (cholera and influenza)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. The cholera bacterium's pili, hair-like threads, help",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (cholera and influenza))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". A two-row information table: \"*Vibrio cholerae* (bacterium): hair-like pili help the bacteria cling together in clumps on the lining of the small intestine. Infection causes watery diarrhoea that releases very large numbers of bacteria.\" \"Influenza virus: a surface protein (haemagglutinin) binds receptor molecules on cells lining the airways. Infection triggers coughing and sneezing.\" Demand: \"Compare how these two pathogens are adapted for entry into and transmission between hosts. (4 marks)\". One lined answer box. No plates (a plate would add answer-bearing context). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "both hold on where they enter / a symptom that releases them / Different / the classic mistake / say 'both' and 'whereas'",
+      "motionPurpose": "On the spoken cues: A two-column compare table writes beneath it, headings \"*V. cholerae*\" and \"influenza\", with a joined \"similar\" band and a split \"different\" band. On \"both hold on where they enter\" \"cling together in clumps on the lining of the small intestine\" and \"binds receptor molecules on cells lining the",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A two-column compare table writes beneath it, headings \"*V. cholerae*\" and \"influenza\", with a joined \"similar\" band and a split \"different\" band. On \"both hold on where they enter\" \"cling together in clumps on the lining of the small intestine\" and \"binds receptor molecules on cells lining the airways\" underline teal and the similar band fills \"entry: holds on at the entry site\"; on \"a symptom that releases them\" \"watery diarrhoea\" and \"triggers coughing\" underline amber and the band adds \"transmission: a symptom releases the pathogen\". On \"Different\" the different band fills one cell per cue: \"leaves in diarrhoea; swallowed in water (indirect)\" and \"leaves in droplets; breathed in\". On \"the classic mistake\" the chip \"two separate descriptions\" writes on and takes a grey scribble cross, with the small grey reason \"say 'both' and 'whereas'\". Settle on the table for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "three step chips write on in a column, one per cue: \"trace it: leave, travel, enter\", \"sort adaptations: entry or transmission\", \"break the link the route depends on\".",
+      "teachingReason": "Decision rule and handoff: So for any disease, trace how the pathogen leaves, travels and enters, sort each adaptation by its job, and break the link its route depends on.",
+      "narrationCue": "So for any disease, trace how the pathogen",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: modelling an epidemic in class\" (small coded host circles thumbnail). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on in a column, one per cue: \"trace it: leave, travel, enter\", \"sort adaptations: entry or transmission\", \"break the link the route depends on\". A \"Next\" chip slides in at the lower right: \"Next: modelling an epidemic in class\" (small coded host circles thumbnail). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b03-learning-review.md",
+      "sha256": "b9f4b0e29d8146f153c50d876006bce0a9aae088c601d226df653f3086cc39f3"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b03-claude-science-check.md",
+      "sha256": "26108ce13099f4bb40f317703e4e2a8f9275dc4f9efdfecc46a60825f4a2368e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

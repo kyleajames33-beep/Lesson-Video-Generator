@@ -6195,6 +6195,1117 @@ M7B02_ROWS = {
     ]
 }
 # --- M6 p01 and M7 b01, b02 rows (end) ---
+# --- M7 b03, p02, b04 and b05 rows (start) ---
+M7B03_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. A coded street-map inset draws on in thin grey lines (a few streets, unlabelled except a small grey tag \"Soho, London, 1854\").",
+        "Hook (one pump): In 1854, cholera was killing people in one London neighbourhood.",
+        "marked the deaths / clustered around one water pump / didn't know which microbe caused cholera / in drinking water / how does a pathogen get from one host into the next",
+        "On the spoken cues: On \"marked the deaths\" small dark dots appear one by one across the map; on \"clustered around one water pump\" the dots thicken around one point and a pump marker writes there, then `m7-broad-street-pump-v1.png` (new) rises beside the map at medium size, with a thin coded line from the marker to the",
+        "explain",
+        "no people. A coded street-map inset draws on in thin grey lines (a few streets, unlabelled except a small grey tag \"Soho, London, 1854\"). On \"marked the deaths\" small dark dots appear one by one across the map; on \"clustered around one water pump\" the dots thicken around one point and a pump marker writes there, then `m7-broad-street-pump-v1.png` (new) rises beside the map at medium size, with a thin coded line from the marker to the plate (tag \"the Broad Street pump\"). On \"didn't know which microbe caused cholera\" a small grey \"?\" sits over the cluster. On \"in drinking water\" a short coded blue drip line runs from the pump spout to the cluster (tag \"the route: water\", the street tag dims). On \"how does a pathogen get from one host into the next\" the map and tags fade, the pump shrinks to the upper left, and the heading writes on: \"How does a pathogen get from host to host?\" Hold about one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about one second"
+    ],
+    "the-chain": [
+        "new",
+        "the `RouteChain` draws: on \"leave one host\" a coded host circle at the left with b01's pathogen glyph inside (grey label \"infected host\") and a station chip \"leave\"; on \"travel\" a lane draws across the middle (chip \"travel\"); on \"a new host\" a second circle at the right (grey label \"new host\") and the chip \"enter\".",
+        "The chain: leave, travel, enter: To spread, a pathogen has to leave one host, travel, and get into a new host.",
+        "transmission / direct contact / indirect contact / vector",
+        "On the spoken cues: The glyph moves along the lane once. On \"mode of transmission\" a gloss writes under the lane: \"mode of transmission: how a pathogen travels between hosts\". On \"three\" three lane labels stack in small handwriting above the lane, one per cue: \"direct contact\", \"indirect contact\", \"vector\". On \"every",
+        "explain",
+        "the `RouteChain` draws: on \"leave one host\" a coded host circle at the left with b01's pathogen glyph inside (grey label \"infected host\") and a station chip \"leave\"; on \"travel\" a lane draws across the middle (chip \"travel\"); on \"a new host\" a second circle at the right (grey label \"new host\") and the chip \"enter\". The glyph moves along the lane once. On \"mode of transmission\" a gloss writes under the lane: \"mode of transmission: how a pathogen travels between hosts\". On \"three\" three lane labels stack in small handwriting above the lane, one per cue: \"direct contact\", \"indirect contact\", \"vector\". On \"every link is a place where the chain can break\" a short coded `BreakMark` flickers across each station in turn and fades. At most three bright text items (the gloss, the newest lane label, the station chips in grey). Hold one second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "direct-contact": [
+        "adjust",
+        "the lane labelled \"direct contact\" lights; the other labels dim.",
+        "Direct contact: In direct contact, the pathogen passes straight from one host to another, with nothing in between.",
+        "direct contact",
+        "On the spoken cues: The lane shortens until the two host circles almost touch (tag \"nothing in between\"). On \"Tinea\" `m7-fungal-hyphae-v1.png` appears small at the touching edge (tag \"tinea: skin to skin\"). On \"HIV\" the hyphae tag dims and a coded red drop moves across the gap (tag \"HIV: blood and body fluids\", with a",
+        "explain",
+        "the lane labelled \"direct contact\" lights; the other labels dim. The lane shortens until the two host circles almost touch (tag \"nothing in between\"). On \"Tinea\" `m7-fungal-hyphae-v1.png` appears small at the touching edge (tag \"tinea: skin to skin\"). On \"HIV\" the hyphae tag dims and a coded red drop moves across the gap (tag \"HIV: blood and body fluids\", with a small grey chip \"sex, mother to baby\"; no virus plate claimed as HIV; shared needles appear in scene 4 as a fomite). On \"large droplets\" the circles part to a short marked distance and `DropletBurst` runs: coded droplets leave the left circle and fall to the ground line within a coded bracket labelled \"1 to 2 m\" (tag \"large droplets fall fast\"); on \"influenza\" `m6-virus-particle-v1.png` (round, purple spikes; the influenza plate throughout, so it is never confused with scene 6's COVID-19 plate) appears small above the bracket with the tag \"influenza: close-range droplets\", while a small grey note writes under the lane: \"grouped as direct: close range\". At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "indirect-contact": [
+        "adjust",
+        "the lane labelled \"indirect contact\" lights; the lane lengthens and a slot opens in its middle.",
+        "Indirect contact: In indirect contact, something non-living carries the pathogen between hosts.",
+        "indirect contact / fomite",
+        "On the spoken cues: On \"fomite\" `m7-door-handle-v1.png` (new) fills the slot (gloss \"fomite: a contaminated non-living object\", tag \"door handle: norovirus\"). On \"water\" the handle slides down to a small thumbnail under the lane and the pump thumbnail from the hook fills the slot (tag \"water: cholera\"). On \"food\"",
+        "explain",
+        "the lane labelled \"indirect contact\" lights; the lane lengthens and a slot opens in its middle. On \"fomite\" `m7-door-handle-v1.png` (new) fills the slot (gloss \"fomite: a contaminated non-living object\", tag \"door handle: norovirus\"). On \"water\" the handle slides down to a small thumbnail under the lane and the pump thumbnail from the hook fills the slot (tag \"water: cholera\"). On \"food\" `m7-raw-chicken-v1.png` (new) replaces it (tag \"undercooked chicken: Salmonella\"); the earlier thumbnails sit in a grey row under the lane, with one small grey chip added silently at the end of the row: \"shared needles: a fomite\" (the non-living carrier for HIV in blood; no needle plate). On \"the air\" the slot empties and `DustPath` particles drift from the left circle across the whole lane, staying suspended rather than falling (contrast with scene 3's droplets, shown as a ghost bracket); `m7-tb-bacilli-v1.png` (from b01) appears small in the drifting cloud (tag \"air: tuberculosis, measles\"); on \"after an infected person leaves\" the left host circle fades to a dashed outline while the particles keep drifting (grey note \"lingers: grouped as indirect\"). At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "vector": [
+        "adjust",
+        "the lane labelled \"vector\" lights.",
+        "Vector transmission: In vector transmission, a living organism, usually an insect or a tick, carries the pathogen from host to host.",
+        "vector",
+        "On the spoken cues: On \"a living organism\" `m5x-anopheles-mosquito-v1.png` fills the lane slot (gloss \"vector: a living organism that carries a pathogen between hosts\"), with `m7-tick-vector-v1.png` small and grey beside it. On \"Plasmodium\" `m7-plasmodium-red-cell-v1.png` appears small inside the left host circle (tag",
+        "explain",
+        "the lane labelled \"vector\" lights. On \"a living organism\" `m5x-anopheles-mosquito-v1.png` fills the lane slot (gloss \"vector: a living organism that carries a pathogen between hosts\"), with `m7-tick-vector-v1.png` small and grey beside it. On \"Plasmodium\" `m7-plasmodium-red-cell-v1.png` appears small inside the left host circle (tag \"Plasmodium: malaria\"). On \"develops inside the mosquito\" a coded loop arrow runs from the left circle into the mosquito and on to the right circle (tag \"part of its life cycle\", replacing the Plasmodium tag). On \"a door handle isn't a vector\" the door handle thumbnail from scene 4 slides up beside the mosquito; two short chips write under them, one per cue: \"vector: alive\" (under the mosquito) and \"fomite: not alive\" (under the handle); a chip \"a door handle is a vector\" fades in and takes a grey scribble cross. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "entry-adaptations": [
+        "adjust",
+        "the `RouteChain` shrinks to a grey strip along the top with the \"enter\" station lit teal.",
+        "Getting in: entry adaptations: Now, how are pathogens built for this?",
+        "fimbriae / receptor",
+        "On the spoken cues: On \"fimbriae\" `m7-bacterium-rod-coccus-v1.png` fills the left half, cropped by position to the rod (scaled, not stretched); its fine hair-like threads are ringed (gloss \"fimbriae: short threads that grip host cells\"). A coded membrane edge draws under it (grey label \"host cell surface\") with small",
+        "explain",
+        "the `RouteChain` shrinks to a grey strip along the top with the \"enter\" station lit teal. On \"fimbriae\" `m7-bacterium-rod-coccus-v1.png` fills the left half, cropped by position to the rod (scaled, not stretched); its fine hair-like threads are ringed (gloss \"fimbriae: short threads that grip host cells\"). A coded membrane edge draws under it (grey label \"host cell surface\") with small coded surface molecules; on \"grip\" the rod plate settles onto the edge and short teal tick marks join three threads to three molecules (tag \"grip: not washed away by mucus or urine\"). On \"receptor\" `m7-virus-particle-v1.png` fills the right half above a second coded membrane edge; `ReceptorFit` runs: a row of receptor shapes along the edge, only one of which matches the spike shape on the plate's lower edge (gloss \"receptor: a molecule on a host cell that a pathogen binds\"); on \"binds a receptor on cells lining the airways\" the matching receptor pulses and the spike locks onto it (tag \"spike fits one receptor: only some cells\"); on \"get inside\" the virus plate crossfades below the membrane line (tag \"then into the cell\"). Both halves carry a small teal tag \"entry\". At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "compare-and-hold": [
+        "adjust",
+        "the two halves from scene 6 shrink side by side under a coded two-column compare strip that writes one row per cue: on \"both grip molecules\" a joined row \"same: a surface structure binds host cell molecules\" (teal, spanning both columns); on \"the bacterium can multiply on that surface\" the left cell \"bacterium: stays on and multiplies\"; on \"the virus has to get inside\" the right cell \"virus: enters the cell\".",
+        "Compare, and holding on: So both grip molecules on the host cell's surface.",
+        "both grip molecules / the bacterium can multiply on that surface / the virus has to get inside / Bigger pathogens / a ring of hooks / four suckers",
+        "On the spoken cues: The compare strip dims to grey. On \"Bigger pathogens\" the camera pulls back (b01's ruler style, small grey tag \"millimetres\") and `m7-tapeworm-scolex-v1.png` (new) fills the centre; on \"a ring of hooks\" the hook crown is ringed; on \"four suckers\" two visible suckers pulse (tag \"hooks and suckers\");",
+        "explain",
+        "the two halves from scene 6 shrink side by side under a coded two-column compare strip that writes one row per cue: on \"both grip molecules\" a joined row \"same: a surface structure binds host cell molecules\" (teal, spanning both columns); on \"the bacterium can multiply on that surface\" the left cell \"bacterium: stays on and multiplies\"; on \"the virus has to get inside\" the right cell \"virus: enters the cell\". The compare strip dims to grey. On \"Bigger pathogens\" the camera pulls back (b01's ruler style, small grey tag \"millimetres\") and `m7-tapeworm-scolex-v1.png` (new) fills the centre; on \"a ring of hooks\" the hook crown is ringed; on \"four suckers\" two visible suckers pulse (tag \"hooks and suckers\"); on \"anchor it to the gut wall\" a coded wavy gut-wall line draws under the scolex and short teal ticks join the suckers to it (tag \"anchored: not swept out\", teal tag \"entry: holds on at the gut wall\"). A small `m7-tapeworm-v1.png` thumbnail at the corner shows the whole worm for scale. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Cam lens zoom",
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "transmission-adaptations": [
+        "adjust",
+        "the `RouteChain` strip returns with the \"leave\" station lit amber.",
+        "Getting out: transmission adaptations: Now, getting out.",
+        "Influenza / triggers coughing / Plasmodium / salivary glands / into the skin / The tapeworm's eggs leave in faeces",
+        "On the spoken cues: Four transmission cases fill the board one per cue, each in a quarter, earlier quarters dimming. (1) On \"Influenza\" `m8-lungs-healthy-v1.png` small at the left with the airway lining ringed and the influenza thumbnail (`m6-virus-particle-v1.png`) inside it (tag \"multiplies in the airway lining\");",
+        "explain",
+        "the `RouteChain` strip returns with the \"leave\" station lit amber. Four transmission cases fill the board one per cue, each in a quarter, earlier quarters dimming. (1) On \"Influenza\" `m8-lungs-healthy-v1.png` small at the left with the airway lining ringed and the influenza thumbnail (`m6-virus-particle-v1.png`) inside it (tag \"multiplies in the airway lining\"); on \"triggers coughing\" a coded host circle beside it emits a `DropletBurst` (amber tag \"triggers coughing: droplets out\"; no figure). (2) On \"Plasmodium\" `m7-mosquito-feeding-skin-v1.png` (new) appears: the mosquito's mouthparts in a skin section; on \"salivary glands\" a coded ring marks the glands in the mosquito's head region (grey tag \"salivary glands\"); on \"into the skin\" a coded dotted line runs down the mouthparts and ends in the dermis beside the capillary, then a short coded wiggle (the parasites) moves on into the capillary (amber tag \"injected under the skin's surface\"). (3) On \"The tapeworm's eggs leave in faeces\" a small coded cycle draws: the tapeworm thumbnail and an arrow labelled \"eggs in faeces\"; on \"cysts in pig muscle\" `m7-pork-cysts-v1.png` (new) appears (tag \"cysts in pork\"); on \"undercooked pork carries it on\" an arrow runs back to the tapeworm, labelled \"undercooked pork eaten\" (amber tag \"eggs and cysts: carried to a new host\"). (4) On \"tobacco mosaic virus\" `m7-tmv-particle-v1.png` (from b01) appears beside `m7-pruning-secateurs-v1.png` (new) and a small `m7-infected-leaf-v1.png`; on \"a coat so tough\" the coat outline pulses (tag \"tough coat: survives on tools\"); on \"from plant to plant\" a coded arc from the infected leaf to a `m7-healthy-leaf-v1.png` thumbnail passes through the secateurs (amber tag \"carried on tools\"). Each quarter carries a small amber tag \"transmission\". At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "two-jobs": [
+        "new",
+        "the `RouteChain` grows back to full width.",
+        "Keep the two jobs apart: Exams ask you to compare these, so keep two jobs apart.",
+        "An entry adaptation / A transmission adaptation / name the feature / what it does / link it / hooks keep it in: entry",
+        "On the spoken cues: On \"An entry adaptation\" a teal chip writes under the \"enter\" station: \"entry: gets in, holds on\", and thumbnails of the fimbriated rod, the spike and the scolex slide to that station. On \"A transmission adaptation\" an amber chip writes under the \"leave\" station: \"transmission: gets out and",
+        "explain",
+        "the `RouteChain` grows back to full width. On \"An entry adaptation\" a teal chip writes under the \"enter\" station: \"entry: gets in, holds on\", and thumbnails of the fimbriated rod, the spike and the scolex slide to that station. On \"A transmission adaptation\" an amber chip writes under the \"leave\" station: \"transmission: gets out and across\", and thumbnails of the droplet burst, the feeding mosquito, the pork cysts and the secateurs slide to it. On \"name the feature\" a three-step line writes across the bottom, one per cue: \"feature\" (on \"name the feature\"), \"what it does\" (on \"what it does\"), \"how it gets in or across\" (on \"link it\"); the line writes only after the two station chips have dimmed. A chip \"hooks help the tapeworm spread\" fades in and takes a grey scribble cross, with the small grey reason \"hooks keep it in: entry\". At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "break-the-link": [
+        "adjust",
+        "the three lanes stack as three rows, each with its host circles and its lane object, and each row gains a control plate on its cue and a coded `BreakMark` across its lane: direct row, on \"barriers and distance\", `m5x-gloves-v1.png` and `m7-face-mask-v1.png` small (chip \"barriers and distance\"); indirect row, on \"treat the carrier\", the chicken and door handle thumbnails with `m7-handwashing-sink-v1.png` small (chip \"treat the carrier: water, food, surfaces, air\"); vector row, on \"bed nets\", `m7-bed-net-v1.png` (new) beside the mosquito (chip \"break it at the vector\").",
+        "Break the link: Knowing the route tells you where to break the chain.",
+        "barriers and distance / treat the carrier / bed nets / the pump's handle taken off / Get the route wrong",
+        "On the spoken cues: Earlier chips dim as each lands. On \"the pump's handle taken off\" the pump thumbnail slides into the indirect row's water slot and crossfades to its aligned partner `m7-broad-street-pump-nohandle-v1.png` (new; the handle gone, the empty pivot bracket left), the handle's outline fading as a grey",
+        "explain",
+        "the three lanes stack as three rows, each with its host circles and its lane object, and each row gains a control plate on its cue and a coded `BreakMark` across its lane: direct row, on \"barriers and distance\", `m5x-gloves-v1.png` and `m7-face-mask-v1.png` small (chip \"barriers and distance\"); indirect row, on \"treat the carrier\", the chicken and door handle thumbnails with `m7-handwashing-sink-v1.png` small (chip \"treat the carrier: water, food, surfaces, air\"); vector row, on \"bed nets\", `m7-bed-net-v1.png` (new) beside the mosquito (chip \"break it at the vector\"). Earlier chips dim as each lands. On \"the pump's handle taken off\" the pump thumbnail slides into the indirect row's water slot and crossfades to its aligned partner `m7-broad-street-pump-nohandle-v1.png` (new; the handle gone, the empty pivot bracket left), the handle's outline fading as a grey ghost, and the row's `BreakMark` pulses (grey tag \"Snow: the water link\"). On \"Get the route wrong\" a small separate row draws: the drifting tuberculosis particles, with a cleaning chip \"scrub surfaces\" whose arrow points at the lane floor while the particles float above it; the chip takes a grey cross (tag \"air route: ventilate instead\"). At most three bright text items besides the small row labels. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the three rows dim.",
+        "Memory: So name the route first, and the control follows.",
+        "Every control measure breaks a link.",
+        "On the spoken cues: One handwritten line writes on large across the centre: \"Every control measure breaks a link.\" Under it, three small pairs appear one per cue, each a control thumbnail and a cut lane: mask and droplet lane; the handle-less pump and water lane; bed net and mosquito lane. Hold half a second.",
+        "explain",
+        "the three rows dim. One handwritten line writes on large across the centre: \"Every control measure breaks a link.\" Under it, three small pairs appear one per cue, each a control thumbnail and a cut lane: mask and droplet lane; the handle-less pump and water lane; bed net and mosquito lane. Hold half a second.",
+        [
+            "HandText write-on",
+            "table build"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (Ross River virus)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. After heavy rain, Ross",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (Ross River virus))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"After heavy rain, cases of Ross River virus disease increased in a Queensland town. The virus is carried by mosquitoes that breed in standing water. It is not passed directly from person to person.\" Two options in a small box: \"Measure A: isolate infected people in hospital.\" \"Measure B: drain standing water and treat what remains with larvicide (a chemical that kills mosquito larvae).\" Demand: \"Identify the mode of transmission of Ross River virus. Justify which measure would better reduce the number of new cases. (3 marks)\". One lined answer box. No plates and nothing answer-bearing: no lanes, nets or mosquito. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "adjust",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "vector transmission / Measure B is better / the classic mistake / no direct link to break",
+        "On the spoken cues: A small `RouteChain` draws beneath it with the vector lane lit. On \"vector transmission\" \"carried by mosquitoes\" underlines amber and the answer row writes \"mode: vector (mosquitoes)\" with the generic `m7-mosquito-vector-v1.png` small (not the *Anopheles* plate: Ross River virus is carried by other",
+        "explain",
+        "the card shrinks to a strip at the top. A small `RouteChain` draws beneath it with the vector lane lit. On \"vector transmission\" \"carried by mosquitoes\" underlines amber and the answer row writes \"mode: vector (mosquitoes)\" with the generic `m7-mosquito-vector-v1.png` small (not the *Anopheles* plate: Ross River virus is carried by other mosquitoes). On \"Measure B is better\" \"breed in standing water\" underlines and a `BreakMark` cuts the vector lane (row \"B: removes breeding sites, fewer mosquitoes\"). On \"the classic mistake\" \"not passed directly from person to person\" underlines; the chip \"A: isolate the sick\" writes on and takes a grey scribble cross, with the small grey reason \"no direct link to break\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (cholera and influenza)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. The cholera bacterium's pili, hair-like threads, help",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (cholera and influenza))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". A two-row information table: \"*Vibrio cholerae* (bacterium): hair-like pili help the bacteria cling together in clumps on the lining of the small intestine. Infection causes watery diarrhoea that releases very large numbers of bacteria.\" \"Influenza virus: a surface protein (haemagglutinin) binds receptor molecules on cells lining the airways. Infection triggers coughing and sneezing.\" Demand: \"Compare how these two pathogens are adapted for entry into and transmission between hosts. (4 marks)\". One lined answer box. No plates (a plate would add answer-bearing context). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "both hold on where they enter / a symptom that releases them / Different / the classic mistake / say 'both' and 'whereas'",
+        "On the spoken cues: A two-column compare table writes beneath it, headings \"*V. cholerae*\" and \"influenza\", with a joined \"similar\" band and a split \"different\" band. On \"both hold on where they enter\" \"cling together in clumps on the lining of the small intestine\" and \"binds receptor molecules on cells lining the",
+        "explain",
+        "the card shrinks to a strip. A two-column compare table writes beneath it, headings \"*V. cholerae*\" and \"influenza\", with a joined \"similar\" band and a split \"different\" band. On \"both hold on where they enter\" \"cling together in clumps on the lining of the small intestine\" and \"binds receptor molecules on cells lining the airways\" underline teal and the similar band fills \"entry: holds on at the entry site\"; on \"a symptom that releases them\" \"watery diarrhoea\" and \"triggers coughing\" underline amber and the band adds \"transmission: a symptom releases the pathogen\". On \"Different\" the different band fills one cell per cue: \"leaves in diarrhoea; swallowed in water (indirect)\" and \"leaves in droplets; breathed in\". On \"the classic mistake\" the chip \"two separate descriptions\" writes on and takes a grey scribble cross, with the small grey reason \"say 'both' and 'whereas'\". Settle on the table for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "three step chips write on in a column, one per cue: \"trace it: leave, travel, enter\", \"sort adaptations: entry or transmission\", \"break the link the route depends on\".",
+        "Decision rule and handoff: So for any disease, trace how the pathogen leaves, travels and enters, sort each adaptation by its job, and break the link its route depends on.",
+        "So for any disease, trace how the pathogen",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: modelling an epidemic in class\" (small coded host circles thumbnail). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on in a column, one per cue: \"trace it: leave, travel, enter\", \"sort adaptations: entry or transmission\", \"break the link the route depends on\". A \"Next\" chip slides in at the lower right: \"Next: modelling an epidemic in class\" (small coded host circles thumbnail). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7P02B_ROWS = {
+    "hook": [
+        "adjust",
+        "three new sealed plates side by side on the bench, writing in one per cue with counts amber: `m7-plate-few-v1.png` (tag \"tap: 3\"), `m7-plate-creek-v1.png` (tag \"creek: 214\"), `m7-plate-clear-v1.png` (on \"none\", tag \"tank: 0\"); above them `m7-sample-bottles-three-v1.png` small, each bottle with a violet label chip \"tap\", \"creek\", \"tank\".",
+        "Hook (three plates): A student plated water from three places.",
+        "none / Neither",
+        "On the spoken cues: A grey corner tag: \"site warm-up data, 48 h on nutrient agar\". On \"safe\" a chip writes over the tank plate: \"0 colonies = safe?\"; on \"full of disease\" a chip over the creek plate: \"214 = disease?\" (both terracotta, with question marks). On \"Neither\" both chips take a grey scribble cross. The question writes at the top left: \"What can colonies tell you?\" Bright at the end: the three counts and the question.",
+        "explain",
+        "three new sealed plates side by side on the bench, writing in one per cue with counts amber: `m7-plate-few-v1.png` (tag \"tap: 3\"), `m7-plate-creek-v1.png` (tag \"creek: 214\"), `m7-plate-clear-v1.png` (on \"none\", tag \"tank: 0\"); above them `m7-sample-bottles-three-v1.png` small, each bottle with a violet label chip \"tap\", \"creek\", \"tank\". A grey corner tag: \"site warm-up data, 48 h on nutrient agar\". On \"safe\" a chip writes over the tank plate: \"0 colonies = safe?\"; on \"full of disease\" a chip over the creek plate: \"214 = disease?\" (both terracotta, with question marks). On \"Neither\" both chips take a grey scribble cross. The question writes at the top left: \"What can colonies tell you?\" Bright at the end: the three counts and the question. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "why-test": [
+        "adjust",
+        "step rail lights \"1 why test\".",
+        "Why test, and what a school test can show: Contaminated water can look clean.",
+        "E. coli / different",
+        "On the spoken cues: Centre: the tap bottle alone, clear (tag \"looks clean\"). On \"culture them on agar\" `m7-plate-clear-v1.png` appears small beside the bottle (grey tag \"culture on agar: counts what grows\"), and dims as the next tag writes. On \"E. coli\" `m7-bacterium-rod-coccus-v1.png` small beside it, cropped by position to the rod (gloss \"*E. coli*: a gut bacterium, an indicator of faecal contamination\"; no species claim for the",
+        "explain",
+        "step rail lights \"1 why test\". Centre: the tap bottle alone, clear (tag \"looks clean\"). On \"culture them on agar\" `m7-plate-clear-v1.png` appears small beside the bottle (grey tag \"culture on agar: counts what grows\"), and dims as the next tag writes. On \"E. coli\" `m7-bacterium-rod-coccus-v1.png` small beside it, cropped by position to the rod (gloss \"*E. coli*: a gut bacterium, an indicator of faecal contamination\"; no species claim for the plate beyond \"gut bacterium\"). On \"gut pathogens\" a grey tag writes: \"may travel with it: *Salmonella*, *Cryptosporidium*, viruses\". As \"gut pathogens\" fades, a coded 100 mL bracket draws on the bottle and a card line writes silently: \"Australian Drinking Water Guidelines: *E. coli* should not be detected in a minimum 100 mL sample of drinking water\"; it dims to grey as \"different\" lands. On \"different\" the right zone splits into two columns: \"accredited lab: tests for *E. coli*, decides safety\" and, amber, \"school test: counts all microbes that grow; compares samples\"; on \"can't show water is safe\" a terracotta line under the school column: \"not a safety test\". Bright at the end: the two column heads and the terracotta line (the guideline line grey). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "aim-variables": [
+        "new",
+        "step rail lights \"2 plan\".",
+        "Aim and variables: The aim is to compare how many microbes grow from tap, creek and tank water.",
+        "source / colony forming units / same",
+        "On the spoken cues: Right zone: the variables card. On \"aim\" the aim line writes: \"Aim: compare culturable microbes in tap, creek and tank water\". On \"source\" row 1 writes violet, \"independent: water source (tap, creek, tank)\", with a pen link to the three bottles. On \"colony forming units\" row 2 writes amber, \"dependent: colony-forming units (CFU) per mL\", and a coded zoom on one colony of the creek plate shows two grey cell-glyph",
+        "explain",
+        "step rail lights \"2 plan\". Right zone: the variables card. On \"aim\" the aim line writes: \"Aim: compare culturable microbes in tap, creek and tank water\". On \"source\" row 1 writes violet, \"independent: water source (tap, creek, tank)\", with a pen link to the three bottles. On \"colony forming units\" row 2 writes amber, \"dependent: colony-forming units (CFU) per mL\", and a coded zoom on one colony of the creek plate shows two grey cell-glyph outlines, one single and one clump of three, each with an arrow into one colony (gloss \"CFU: one cell or clump → one colony\"). On \"same\" row 3 opens green, \"controlled\", and lists one per spoken item: \"same agar (nutrient agar, one batch)\", \"0.1 mL per plate\", \"same dilution method\", \"28 °C for 48 h\"; silent rows \"same plate size, same spreading, same counting rule\". Bright at the end: the three row headings. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "sampling-aseptic": [
+        "adjust",
+        "step rail lights \"3 sample and dilute\".",
+        "Sampling and aseptic technique: Each sample goes into its own sterile, labelled bottle.",
+        "aseptic technique",
+        "On the spoken cues: On \"own sterile, labelled bottle\" `m8-river-sampling-bottle-v1.png` appears (the pole and its bottle; tag \"sterile bottle for each sample\"), then the three bottles plate (labels \"tap\", \"creek\", \"tank\" write on). On \"For food\" a small grey card writes: \"food: 1 g in 9 mL sterile water = 10⁻¹ already\" (no food plate; one line). On \"aseptic technique\" the gloss writes: \"aseptic technique: keeps outside microbes out of",
+        "explain",
+        "step rail lights \"3 sample and dilute\". On \"own sterile, labelled bottle\" `m8-river-sampling-bottle-v1.png` appears (the pole and its bottle; tag \"sterile bottle for each sample\"), then the three bottles plate (labels \"tap\", \"creek\", \"tank\" write on). On \"For food\" a small grey card writes: \"food: 1 g in 9 mL sterile water = 10⁻¹ already\" (no food plate; one line). On \"aseptic technique\" the gloss writes: \"aseptic technique: keeps outside microbes out of samples and plates\". On \"sterile pipettes and spreaders\" `m6-micropipette-spreader-v1.png` (commissioned for bio-m6-p01) appears; on \"Bunsen flame\" `m5x-bunsen-burner-v1.png` stands at the back with a coded faint upward arrow above it (tag \"rising air carries dust away\"); on \"lift each lid\" `m6-agar-dish-top-v1.png` with a coded lid lifting a few degrees, then closing, while b02's `DustPath` specks drift past above it (grey tag \"dust carries microbes, as in Pasteur's flasks\"). A chip \"aseptic = just clean\" fades in and takes a grey cross. Bright at the end: the gloss and two tags. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "serial-dilution": [
+        "adjust",
+        "on \"merge into a film\" `m7-plate-lawn-v1.png` appears (tag \"undiluted: a solid film, can't count\").",
+        "Why dilute, and how: A polluted sample can hold millions of microbes per millilitre.",
+        "two",
+        "On the spoken cues: It slides to a grey thumbnail. On \"dilute in steps\" `m7-dilution-tube-rack-v1.png` fills the centre (the creek bottle and four capped tubes of clear water; gloss \"serial dilution: diluting in repeated tenfold steps\"). The dilution ladder runs: on \"One millilitre of sample into nine\" `m5x-graduated-pipette-v1.png` small, and a coded drop moves from the bottle to tube 1 (tags \"1 mL\" on the drop, \"9 mL sterile water\"",
+        "explain",
+        "on \"merge into a film\" `m7-plate-lawn-v1.png` appears (tag \"undiluted: a solid film, can't count\"). It slides to a grey thumbnail. On \"dilute in steps\" `m7-dilution-tube-rack-v1.png` fills the centre (the creek bottle and four capped tubes of clear water; gloss \"serial dilution: diluting in repeated tenfold steps\"). The dilution ladder runs: on \"One millilitre of sample into nine\" `m5x-graduated-pipette-v1.png` small, and a coded drop moves from the bottle to tube 1 (tags \"1 mL\" on the drop, \"9 mL sterile water\" on the tube); on \"ten to the minus one\" tube 1 gains the label \"10⁻¹ (1 in 10)\"; on \"ten to the minus two\" a drop moves tube 1 to tube 2 (label \"10⁻² (1 in 100)\"); on \"and so on\" tubes 3 and 4 gain \"10⁻³\" and \"10⁻⁴\" silently, with a coded \"×10 more dilute\" arrow under each step. Bright at the end: the gloss and the newest label. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "plate-incubate": [
+        "adjust",
+        "step rail lights \"4 plate and incubate\".",
+        "Plate, label, tape, incubate: Spread point one of a millilitre from each dilution onto three plates.",
+        "base / upside down / thirty seven",
+        "On the spoken cues: On \"point one of a millilitre\" a coded drop leaves the micropipette tip onto `m6-agar-dish-top-v1.png` and the spreader slides across it in a coded arc (tag \"0.1 mL, spread evenly\"); on \"onto three plates\" the plate copies into a row of three under tube 10⁻³ (tag \"3 plates each\"). On \"base\" a coded marker line writes small along the plate's base rim (chip \"label the base: lids get swapped\"). On \"two short strips\"",
+        "explain",
+        "step rail lights \"4 plate and incubate\". On \"point one of a millilitre\" a coded drop leaves the micropipette tip onto `m6-agar-dish-top-v1.png` and the spreader slides across it in a coded arc (tag \"0.1 mL, spread evenly\"); on \"onto three plates\" the plate copies into a row of three under tube 10⁻³ (tag \"3 plates each\"). On \"base\" a coded marker line writes small along the plate's base rim (chip \"label the base: lids get swapped\"). On \"two short strips\" two coded tape strips cross the rim at opposite sides, `m5x-tape-roll-v1.png` small beside (chip \"tape, don't seal: air gets in\"). On \"upside down\" the plate flips in a coded rotation and `m7-incubator-v1.png` (new) appears with the stack inside; coded condensation drops form on the lid, now underneath, and stay off the agar (chip \"inverted: drips stay off the agar\"); a coded dial reads \"28 °C\" with the band \"25 to 30 °C\" in green. On \"thirty seven\" a terracotta chip \"37 °C\" takes a grey cross (caption \"body temperature favours microbes adapted to us\"). The earlier chips dim as each new one lands. Bright at the end: the 25 to 30 °C band, the crossed 37 °C and the inverted chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "controls": [
+        "adjust",
+        "right zone: a controls card with two rows, outlined green.",
+        "Two controls: You need two controls.",
+        "negative control / positive control / grow",
+        "On the spoken cues: On \"negative control\" `m7-plate-clear-v1.png` appears (gloss \"negative control: sterile water, same handling → expect no growth\"). On \"If it grows colonies\" it crossfades to `m7-plate-few-v1.png` rotated 180° (uniform rotation, not stretched; three colonies; the hook plates are not on screen here) and a terracotta chip writes: \"growth here → contamination: results invalid\"; then it crossfades back. On \"positive",
+        "explain",
+        "right zone: a controls card with two rows, outlined green. On \"negative control\" `m7-plate-clear-v1.png` appears (gloss \"negative control: sterile water, same handling → expect no growth\"). On \"If it grows colonies\" it crossfades to `m7-plate-few-v1.png` rotated 180° (uniform rotation, not stretched; three colonies; the hook plates are not on screen here) and a terracotta chip writes: \"growth here → contamination: results invalid\"; then it crossfades back. On \"positive control\" `m6-antibiotic-colonies-before-v1.png` appears in the second row (a plate of separate colonies; two coded tape strips cross its rim at the same opposite positions as the sealed-plate set, because every grown plate is taped; tag \"known harmless culture (supplied, risk group 1)\"); on \"grow\" the gloss writes \"positive control: expect growth → agar and conditions work\". A chip \"both controls test the same thing\" fades in and takes a grey cross. Bright at the end: the two glosses and the contamination chip in grey. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Plate crossfade",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "reading-plates": [
+        "adjust",
+        "step rail lights \"5 count and calculate\".",
+        "Reading the plates: Here's one heavily contaminated sample's series.",
+        "thirty to three hundred / chance",
+        "On the spoken cues: The plate row draws: four aligned sealed plates under the labels \"10⁻¹\", \"10⁻²\", \"10⁻³\", \"10⁻⁴\", one per cue: `m7-plate-lawn-v1.png` (chip \"film\"), `m7-plate-crowded-v1.png` (chip \"merging\"), `m7-plate-countable-v1.png` (chip \"156 (mean of 3 plates)\", amber), `m7-plate-sparse-v1.png` (chip \"14\"). Grey corner tag: \"site example\". On \"thirty to three hundred\" a green bracket labelled \"count: about 30 to 300\" rings the",
+        "explain",
+        "step rail lights \"5 count and calculate\". The plate row draws: four aligned sealed plates under the labels \"10⁻¹\", \"10⁻²\", \"10⁻³\", \"10⁻⁴\", one per cue: `m7-plate-lawn-v1.png` (chip \"film\"), `m7-plate-crowded-v1.png` (chip \"merging\"), `m7-plate-countable-v1.png` (chip \"156 (mean of 3 plates)\", amber), `m7-plate-sparse-v1.png` (chip \"14\"). Grey corner tag: \"site example\". On \"thirty to three hundred\" a green bracket labelled \"count: about 30 to 300\" rings the 10⁻³ plate. On \"merge and the count runs low\" the 10⁻² plate's chip adds \"too many: merged colonies count as one\"; on \"chance\" the 10⁻⁴ plate's chip adds \"too few: a few colonies more or less changes the result a lot\". The colony count grid from bio-m6-p01 lays over the 156 plate and tally marks run across a few colonies (tag \"mark each colony on the base as you count\"). Bright at the end: the bracket, \"156\" and the tally tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "scale-back": [
+        "new",
+        "the plate row shrinks to a strip with the 156 plate lit.",
+        "Scale back: CFU per mL: Now scale back to the original sample.",
+        "four / one point five six million",
+        "On the spoken cues: Right zone, in three separate parts (calculation layout rule): the short task at the top, \"Find CFU per mL in the original sample\"; the grouped givens below it, one per line with units, \"colonies: 156 (mean)\", \"volume plated: 0.1 mL\", \"dilution: 10⁻³\"; and the equation on its own line, writing term by term on \"colony count\", \"volume plated\", \"dilution\": \"CFU per mL = colonies ÷ (volume plated × dilution)\". On \"a",
+        "explain",
+        "the plate row shrinks to a strip with the 156 plate lit. Right zone, in three separate parts (calculation layout rule): the short task at the top, \"Find CFU per mL in the original sample\"; the grouped givens below it, one per line with units, \"colonies: 156 (mean)\", \"volume plated: 0.1 mL\", \"dilution: 10⁻³\"; and the equation on its own line, writing term by term on \"colony count\", \"volume plated\", \"dilution\": \"CFU per mL = colonies ÷ (volume plated × dilution)\". On \"a hundred and fifty six, divided by point one times ten to the minus three\" the substituted line writes: \"= 156 ÷ (0.1 × 10⁻³)\", each value underlined in the givens as it is used. On \"four\" the next line writes: \"0.1 × 10⁻³ = 10⁻⁴ mL of original sample on the plate\" (grey reason \"the plate got a ten-thousandth of a millilitre\"). On \"one point five six million\" the result line writes and stays: \"= 1.56 × 10⁶ CFU per mL\" (amber). Earlier lines dim; the givens and the result stay bright. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "what-it-shows": [
+        "adjust",
+        "step rail lights \"6 what it shows\".",
+        "What colonies can and can't show: So be careful what you claim.",
+        "most / pathogens",
+        "On the spoken cues: Centre: `m7-petri-colonies-v1.png` (a plate of mixed colonies: cream, yellow, orange and fuzzy mould colonies; tag \"mixed colonies: look tells you little\"). On \"most are harmless\" a teal tag writes: \"most: harmless environmental microbes\". On \"viruses won't grow\" b01's `m7-virus-particle-v1.png` thumbnail appears small beside the plate with a grey cross over a coded agar strip (tag \"viruses: need living cells, no",
+        "explain",
+        "step rail lights \"6 what it shows\". Centre: `m7-petri-colonies-v1.png` (a plate of mixed colonies: cream, yellow, orange and fuzzy mould colonies; tag \"mixed colonies: look tells you little\"). On \"most are harmless\" a teal tag writes: \"most: harmless environmental microbes\". On \"viruses won't grow\" b01's `m7-virus-particle-v1.png` thumbnail appears small beside the plate with a grey cross over a coded agar strip (tag \"viruses: need living cells, no colonies\"). The hook's three plates return in a row under the claim card. Right zone: the claim card, two columns: on \"more microbes that grow here\" the \"shows\" column writes teal, \"creek: more culturable microbes than tap or tank\"; on \"pathogens\" the \"doesn't show\" column writes terracotta, \"which microbes are pathogens\"; on \"doesn't prove water is safe\" a second line, \"tank: 0 colonies in 0.1 mL ≠ safe\"; on \"a tenth of a millilitre\" a small grey tag beside the tank plate: \"0.1 mL tested; the guideline uses at least 100 mL\". The chips \"214 = disease?\" and \"0 colonies = safe?\" from the hook return and each takes a grey scribble cross. Bright at the end: the two column lines and the second terracotta line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "adjust",
+        "step rail lights \"6 what it shows\" still.",
+        "Validity, reliability and accuracy: Validity: controls, aseptic technique and identical conditions mean the counts fairly compare microbes that grow on this agar.",
+        "Validity / Reliability / Accuracy",
+        "On the spoken cues: Three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming, with apparatus in the centre so the scene is not text alone: \"Validity: measures what was intended? Yes for culturable microbes (controls, aseptic technique, one variable changed). No for pathogens or safety.\" \"Reliability: repeats agree? Three plates per dilution, for example 150, 156,",
+        "explain",
+        "step rail lights \"6 what it shows\" still. Three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming, with apparatus in the centre so the scene is not text alone: \"Validity: measures what was intended? Yes for culturable microbes (controls, aseptic technique, one variable changed). No for pathogens or safety.\" \"Reliability: repeats agree? Three plates per dilution, for example 150, 156, 162; an outlier shows up; use the mean.\" On \"three plates per dilution\" three copies of `m7-plate-countable-v1.png` stand in the centre, rotated 0°, 120° and 240° (uniform rotation, not stretched), with amber chips \"150\", \"156\", \"162\" and a small grey line under them \"mean 156\". On \"marking each colony\" scene 8's tally overlay returns over the middle plate. \"Accuracy: close to the true value? Calibrated pipettes; count plates with about 30 to 300 colonies; mark each colony on the base; still an estimate (clumps count as one).\" Footer, small grey: \"NESA glossary (2017 syllabus), reliability: 'An extent to which repeated observations and/or measurements taken under identical circumstances will yield similar results.'\" Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "step rail lights \"7 stay safe\".",
+        "Risk assessment: The risk assessment.",
+        "risk group one / taped shut / autoclave",
+        "On the spoken cues: The risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, earlier rows dimming: on \"risk group one\" a header line writes: \"AS/NZS 2243.3:2022: school cultures are risk group 1 (low risk); unknown samples are handled as possibly higher\" (grey); on \"incubating multiplies it\" row 1, \"unknown microbes multiplied on incubated plates (treat as potentially pathogenic)\" / \"infection by swallowing,",
+        "explain",
+        "step rail lights \"7 stay safe\". The risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, earlier rows dimming: on \"risk group one\" a header line writes: \"AS/NZS 2243.3:2022: school cultures are risk group 1 (low risk); unknown samples are handled as possibly higher\" (grey); on \"incubating multiplies it\" row 1, \"unknown microbes multiplied on incubated plates (treat as potentially pathogenic)\" / \"infection by swallowing, through cuts, or breathing in spores if a plate is opened\" / \"plates taped, never opened after incubation, counted through the lid; 25 to 30 °C; wash hands; no eating or drinking\" with the taped creek plate thumbnail; on \"autoclave\" row 2, \"used cultures at disposal\" / \"spreading live microbes\" / \"sterilised in an autoclave (steam under pressure, 121 °C) by the teacher before disposal\" with `m6-autoclave-bag-plates-v1.png` (commissioned for bio-m6-p01; gloss \"autoclave: steam under pressure kills microbes\"); silently, as the autoclave row settles, row 3, \"70 % ethanol for wiping benches (H225, highly flammable)\" / \"fire near the Bunsen\" / \"no flame nearby when wiping; small squeeze bottle\" with the Bunsen thumbnail; grey row, silent, \"Bunsen flame / burns / tie back hair, safety mat, turn off when not in use\". Footer chip: \"follow your school's risk assessment, its microbiology procedure and each safety data sheet\". Hold about 2 seconds (reading hold; the risks return in the key notes). Hold about 2 seconds (reading hold; the risks return in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds (reading hold; the risks return in the key notes)"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student diluted creek water to",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student diluted a sample of creek water to 10⁻². She spread 0.1 mL of this dilution onto each of three nutrient agar plates. After incubation at 28 °C for 48 hours, the plates had 41, 47 and 53 colonies. Calculate the number of colony-forming units (CFU) per mL in the creek water. Show your working. (3 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing: no formula, no plate row.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "forty seven / thousandth / forty seven thousand",
+        "On the spoken cues: On \"forty seven\" \"41, 47 and 53\" is underlined and \"(41 + 47 + 53) ÷ 3 = 141 ÷ 3 = 47\" writes. On \"thousandth\" \"10⁻²\" and \"0.1 mL\" are underlined and \"0.1 × 10⁻² = 10⁻³ mL\" writes. On \"forty seven thousand\" \"CFU per mL in the creek water\" is underlined and \"47 ÷ 10⁻³ = 47 000 = 4.7 × 10⁴ CFU per mL\" writes in the answer box. A chip \"4 700 CFU per mL\" fades in and is crossed (caption \"forgot the 0.1 mL plated\").",
+        "explain",
+        "the question card shrinks to the top. On \"forty seven\" \"41, 47 and 53\" is underlined and \"(41 + 47 + 53) ÷ 3 = 141 ÷ 3 = 47\" writes. On \"thousandth\" \"10⁻²\" and \"0.1 mL\" are underlined and \"0.1 × 10⁻² = 10⁻³ mL\" writes. On \"forty seven thousand\" \"CFU per mL in the creek water\" is underlined and \"47 ÷ 10⁻³ = 47 000 = 4.7 × 10⁴ CFU per mL\" writes in the answer box. A chip \"4 700 CFU per mL\" fades in and is crossed (caption \"forgot the 0.1 mL plated\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student spread 1 mL of undiluted creek water onto a single nutrient agar plate.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "A student spread one millilitre of undiluted creek",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student spread 1 mL of undiluted creek water onto a single nutrient agar plate. She incubated the plate at 37 °C for 48 hours, then opened it and recorded: 'Too many colonies to count. The creek water contains dangerous bacteria.' Identify TWO problems with this investigation and propose an improvement that fixes each problem. (4 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "overreaches",
+        "On the spoken cues: A two-column table writes: \"problem | improvement that fixes it\". On \"undiluted\" \"1 mL of undiluted creek water\" is underlined and row 1 fills \"undiluted → colonies merged, uncountable | serial dilution; count the plate with about 30 to 300 colonies\" with the lawn thumbnail beside the 156 plate thumbnail. On \"thirty seven degrees\" \"37 °C\" and \"then opened it\" are underlined and row 2 fills \"37 °C favours microbes",
+        "explain",
+        "the card shrinks to the top. A two-column table writes: \"problem | improvement that fixes it\". On \"undiluted\" \"1 mL of undiluted creek water\" is underlined and row 1 fills \"undiluted → colonies merged, uncountable | serial dilution; count the plate with about 30 to 300 colonies\" with the lawn thumbnail beside the 156 plate thumbnail. On \"thirty seven degrees\" \"37 °C\" and \"then opened it\" are underlined and row 2 fills \"37 °C favours microbes adapted to humans; opening exposes her | 25 to 30 °C; taped; never opened; count through the lid\". On \"overreaches\" \"The creek water contains dangerous bacteria\" is underlined and a voiced third row fills: \"claims 'dangerous bacteria' (colonies ≠ pathogens) | conclude 'many culturable microbes'\"; rows 1 and 2 dim. On \"classic mistake\" a chip \"repeat the plate 3 times\" fades in and is crossed (caption \"repeats don't make a lawn countable\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 Sterile samples; serial dilutions (1 mL into 9 mL).\"",
+        "Decision rule and handoff: So: sterile samples, serial dilutions, three plates each, both controls, and taped plates upside down at twenty five to thirty degrees.",
+        "Next",
+        "On the spoken cues: \"2 Three plates per dilution; negative and positive controls.\" \"3 Label the base, tape, invert, 25 to 30 °C, never opened.\" \"4 Count the plate with about 30 to 300; CFU per mL = colonies ÷ (volume × dilution).\" \"5 Claim culturable microbes, not pathogens.\" On \"Next\" a chip \"Next: disease in agriculture\" appears.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Sterile samples; serial dilutions (1 mL into 9 mL).\" \"2 Three plates per dilution; negative and positive controls.\" \"3 Label the base, tape, invert, 25 to 30 °C, never opened.\" \"4 Count the plate with about 30 to 300; CFU per mL = colonies ÷ (volume × dilution).\" \"5 Claim culturable microbes, not pathogens.\" On \"Next\" a chip \"Next: disease in agriculture\" appears. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B04_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. `AusSpreadMap` draws a plain coded outline of Australia at medium size, left of centre.",
+        "Hook (one nursery): In April 2010, a rust fungus turned up on plants at one nursery on the New South Wales Central Coast.",
+        "one nursery / the length of the east coast / eucalypts, paperbarks and lemon myrtle / how does disease damage farm production / far past the sick plants and animals",
+        "On the spoken cues: On \"one nursery\" a single amber dot pulses on the NSW Central Coast (small grey tag \"Central Coast NSW, April 2010\"). On \"the length of the east coast\" a dotted amber path runs north to far north Queensland and south to Victoria, with dots appearing along it (grey tag \"east coast within a few",
+        "explain",
+        "no people. `AusSpreadMap` draws a plain coded outline of Australia at medium size, left of centre. On \"one nursery\" a single amber dot pulses on the NSW Central Coast (small grey tag \"Central Coast NSW, April 2010\"). On \"the length of the east coast\" a dotted amber path runs north to far north Queensland and south to Victoria, with dots appearing along it (grey tag \"east coast within a few years\"). On \"eucalypts, paperbarks and lemon myrtle\" `m7-myrtle-rust-leaf-v1.png` rises at the right at medium size (tag \"myrtle rust\"). On \"how does disease damage farm production\" the map shrinks to the upper left, the leaf to a thumbnail beside it, and the heading writes on: \"How does disease damage farm production?\" On \"far past the sick plants and animals\" a coded dashed vertical line draws down the right third of the board (the first appearance of the gate line, unlabelled for now). Hold about one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about one second"
+    ],
+    "three-things": [
+        "adjust",
+        "`CauseStrip` draws across the top left: three slots joined by short coded links, filled one per cue.",
+        "Three things meet: Start with causes.",
+        "a pathogen / a host it can infect / the right conditions / need a film of water / the same pathogen groups",
+        "On the spoken cues: On \"a pathogen\" the slot fills with `m7-fungal-hyphae-v1.png` small (grey label \"pathogen\"); on \"a host it can infect\" `b3b-wheat-rust-leaf-v1.png` cropped by position to the healthy left leaf (scaled, not stretched; label \"host it can infect\"); on \"the right conditions\" a coded water film (a thin",
+        "explain",
+        "`CauseStrip` draws across the top left: three slots joined by short coded links, filled one per cue. On \"a pathogen\" the slot fills with `m7-fungal-hyphae-v1.png` small (grey label \"pathogen\"); on \"a host it can infect\" `b3b-wheat-rust-leaf-v1.png` cropped by position to the healthy left leaf (scaled, not stretched; label \"host it can infect\"); on \"the right conditions\" a coded water film (a thin blue line with three droplets) draws on the leaf edge (label \"conditions\"). A small grey tag under the strip: \"the disease triangle\". On \"need a film of water\" the droplets pulse and the rust leaf crossfades in beside the healthy one (tag \"spores need water to germinate\"). On \"the same pathogen groups\" a row of b01 thumbnails slides in under the strip, one per spoken group (\"fungi\", \"bacteria\", \"viruses\", \"nematodes\"), each with a small grey tag naming b01's case: the rust leaf (\"fungus: wheat rust\"), `m7-crown-gall-stem-v1.png` (\"bacterium: crown gall\"), `m7-tmv-particle-v1.png` (\"virus: tobacco mosaic\"), `m7-root-knot-galls-v1.png` (\"nematode: root galls\"). If b01's crown gall or TMV plate is not yet delivered, its slot in this row is a grey word tag only (names are all this row needs). At most three bright text items (the three slot labels; the thumbnail tags are grey). Hold one second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "farming-odds": [
+        "adjust",
+        "the cause strip dims and shrinks to the top edge.",
+        "Farming tips the odds: Farming can tip the odds.",
+        "the Cavendish banana / A paddock of a single variety / can infect the next / Moving plants, soil and machinery / partly biology and partly farming / can be changed",
+        "On the spoken cues: On \"the Cavendish banana\" `b1-banana-plantation-tr4-v1.png` appears at the left (tag \"Module 5: clones share one weakness\"). On \"A paddock of a single variety\" `m6-field-monoculture-mixed-v1.png` fills the centre at medium size (the left uniform rows and the right mixed planting both visible); a",
+        "explain",
+        "the cause strip dims and shrinks to the top edge. On \"the Cavendish banana\" `b1-banana-plantation-tr4-v1.png` appears at the left (tag \"Module 5: clones share one weakness\"). On \"A paddock of a single variety\" `m6-field-monoculture-mixed-v1.png` fills the centre at medium size (the left uniform rows and the right mixed planting both visible); a grey screen gloss under the uniform half: \"monoculture: one variety over a large area\". On \"can infect the next\" a coded amber dotted path hops plant to plant along one uniform row without a gap (tag \"nothing to slow it\"); a matching path entering the mixed half stops after two plants (small grey tag \"mixed planting: breaks in the run\"). On \"Moving plants, soil and machinery\" `m7-stock-truck-v1.png` (new) slides in small at the lower right with a short dotted arrow off the board edge (tag \"carried to new districts\"). On \"partly biology and partly farming\" two chips write under the board, one per cue: \"biology: pathogen, conditions\" (grey) and \"farming: one variety, movement\" (amber), with a small amber tick beside the farming chip on \"can be changed\". At most three bright text items. Hold one second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "crop-costs": [
+        "adjust",
+        "the `GateLedger` completes: the dashed gate line gains its grey label \"farm gate\", and the two side labels write small and grey: \"on the farm\" (left) and \"past the farm gate\" (right).",
+        "What disease costs a crop: What does disease cost a crop?",
+        "yield / Root-knot nematodes / quality / cost",
+        "On the spoken cues: On \"yield\" `b3b-wheat-rust-leaf-v1.png` sits at the left at medium size, the rust leaf's orange pustules ringed (tag \"pustules take sugars, less green leaf\"); a short coded arrow from the leaf to `b3b-wheat-ear-floret-v1.png` small, cropped by position to the wheat ear only (the left third of the",
+        "explain",
+        "the `GateLedger` completes: the dashed gate line gains its grey label \"farm gate\", and the two side labels write small and grey: \"on the farm\" (left) and \"past the farm gate\" (right). On \"yield\" `b3b-wheat-rust-leaf-v1.png` sits at the left at medium size, the rust leaf's orange pustules ringed (tag \"pustules take sugars, less green leaf\"); a short coded arrow from the leaf to `b3b-wheat-ear-floret-v1.png` small, cropped by position to the wheat ear only (the left third of the plate; scaled, not stretched; the open floret is outside the crop) (tag \"less grain filled\"). On \"Root-knot nematodes\" the wheat dims and `m7-root-knot-galls-v1.png` replaces it (a hard dependency for this scene: the student must see the galled root; see Assets for the fallback brief item); a coded ring marks one gall and a thin blue coded line, drawn along the root inside the gall, narrows and breaks (tag \"xylem squeezed: less water up\"). On \"quality\" chip \"lower grade\" lands on the left of the gate; on \"cost\" chip \"fungicide, resistant varieties, replanting\" lands below it. A teal tag \"direct\" sits over the left column. Earlier tags dim. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "myrtle-rust-cause": [
+        "adjust",
+        "the ledger columns clear to faint grey; the cause strip returns at the top left and refills for this case, one slot per cue.",
+        "Myrtle rust: the cause: Now a real case.",
+        "a fungus / the myrtle family / had never met this fungus / no shared history, little resistance / spores travel on the wind / infected nursery plants",
+        "On the spoken cues: On \"a fungus\" the pathogen slot fills with the rust leaf's pustules cropped close (grey screen tag \"*Austropuccinia psidii*\"). On \"the myrtle family\" the host slot fills with `m7-myrtle-leaf-healthy-v1.png` (new; grey screen tag \"Myrtaceae\"); a small row of three grey word tags writes under it:",
+        "explain",
+        "the ledger columns clear to faint grey; the cause strip returns at the top left and refills for this case, one slot per cue. On \"a fungus\" the pathogen slot fills with the rust leaf's pustules cropped close (grey screen tag \"*Austropuccinia psidii*\"). On \"the myrtle family\" the host slot fills with `m7-myrtle-leaf-healthy-v1.png` (new; grey screen tag \"Myrtaceae\"); a small row of three grey word tags writes under it: \"eucalypts\", \"paperbarks\", \"tea tree, lemon myrtle\". On \"had never met this fungus\" the healthy leaf crossfades to its aligned partner `m7-myrtle-rust-leaf-v1.png` (pustules appearing in place); amber tag \"little resistance in many species\"; a grey chip \"dangerous because it's foreign\" fades in and takes a grey scribble cross, with the small grey reason \"no shared history, little resistance\". On \"spores travel on the wind\" coded amber specks drift off the leaf to the right (tag \"wind-borne spores\"); on \"infected nursery plants\" `m7-nursery-pots-v1.png` (new) appears small with a long dotted arrow across the board (tag \"moved plants: long distances fast\"). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "myrtle-rust-effects": [
+        "adjust",
+        "`AusSpreadMap` returns small at the upper right; dots appear one per cue: Tasmania, the Northern Territory, then the East Kimberley (grey tag \"WA, 2022\").",
+        "Myrtle rust: spread and effects: It has since been found in Tasmania, the Northern Territory and, in 2022, northern Western Australia.",
+        "dense rows of one species / pay for fungicide / lose much of their crop / past the farm too / native guava / can't be eradicated",
+        "On the spoken cues: The `GateLedger` brightens. On \"dense rows of one species\" `m7-lemon-myrtle-rows-v1.png` (new) appears on the left of the gate at medium size (tag \"dense rows of one species\"); a small amber link to scene 3's farming chip flashes. On \"pay for fungicide\" chip \"fungicide costs\" lands on the left; on",
+        "explain",
+        "`AusSpreadMap` returns small at the upper right; dots appear one per cue: Tasmania, the Northern Territory, then the East Kimberley (grey tag \"WA, 2022\"). The `GateLedger` brightens. On \"dense rows of one species\" `m7-lemon-myrtle-rows-v1.png` (new) appears on the left of the gate at medium size (tag \"dense rows of one species\"); a small amber link to scene 3's farming chip flashes. On \"pay for fungicide\" chip \"fungicide costs\" lands on the left; on \"lose much of their crop\" chip \"lost yield\" lands under it (teal \"direct\" tag over the column). On \"past the farm too\" both left chips dim to grey before anything writes on the right, and the myrtle rust leaf thumbnail slides across the gate line to the right side; on \"native guava\" a green chip writes on the right: \"native guava: critically endangered\" (green tag \"beyond the farm\"); a grey chip \"plant disease only matters for food\" fades in and takes a grey scribble cross. On \"can't be eradicated\" a coded clock-like loop arrow draws around the whole ledger (tag \"permanent: costs every year\"). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "fmd-direct": [
+        "adjust",
+        "the ledger clears to its empty two sides.",
+        "Foot-and-mouth disease: the direct effects: Animals next.",
+        "direct effects",
+        "On the spoken cues: No virus plate (the house virus plate is an enveloped, spiked particle that b03 uses for SARS-CoV-2; FMD virus is a small non-enveloped picornavirus, and a coded icosahedron would be a coded organism icon). On \"cloven-hoofed animals\" `m5x-cattle-red-v1.png` fills the left side at medium size, with",
+        "explain",
+        "the ledger clears to its empty two sides. No virus plate (the house virus plate is an enveloped, spiked particle that b03 uses for SARS-CoV-2; FMD virus is a small non-enveloped picornavirus, and a coded icosahedron would be a coded organism icon). On \"cloven-hoofed animals\" `m5x-cattle-red-v1.png` fills the left side at medium size, with the grey word tag \"FMD virus\" beside it (written on \"a virus\"), with `m6-white-sheep-v1.png` small beside it (screen gloss \"cloven-hoofed: split hooves\"); small grey word tags \"pigs, goats\". On \"contact, through the air\" coded drifting specks pass between the two animal plates (b02's `DustPath`); on \"vehicles, boots and feed\" the stock truck thumbnail from scene 3 reappears at the gate line (tag \"fomites: vehicles, boots, feed\", recalling b03). On \"blisters in the mouth and on the feet\" `m7-cattle-hoof-healthy-v1.png` (new) appears large at the centre left and crossfades to its aligned partner `m7-fmd-hoof-blisters-v1.png` (new) (tag \"blisters between the claws\"). On \"stop eating, go lame\" chips land on the left one per cue: \"lame, stops eating\", \"less milk and meat\". On \"Most adults survive\" a small grey chip \"most adults survive\". On \"direct effects\" a teal tag \"direct: losses in the sick animals\" sits over the left column. At most three bright text items. Hold one second.",
+        [
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "uk-2001-indirect": [
+        "adjust",
+        "the left column dims.",
+        "2001: the indirect effects: Follow the bill.",
+        "indirect effects",
+        "On the spoken cues: A small grey tag at the top: \"United Kingdom, 2001\". On \"over six million animals\" a coded grid of about 60 small plain grey dots fills the right side of the gate (each dot standing for 100,000 animals; small grey key \"each dot: 100,000 animals\"), drawn as two blocks: about 40 dots, then a slightly",
+        "explain",
+        "the left column dims. A small grey tag at the top: \"United Kingdom, 2001\". On \"over six million animals\" a coded grid of about 60 small plain grey dots fills the right side of the gate (each dot standing for 100,000 animals; small grey key \"each dot: 100,000 animals\"), drawn as two blocks: about 40 dots, then a slightly separate block of about 20 (about a third were welfare culls; NAO 2002). On \"most of them never infected\" only a few dots in the first block turn amber (tag \"most never infected\"; the amber share is illustrative, and no infected count is stated or implied in any tag). On \"infected and neighbouring farms\" the first block takes a small grey tag \"disease-control culls\". On \"stranded by movement bans\" `m7-farm-gate-closed-v1.png` (new) appears on the right at medium size beside the second block (chip \"movement banned\"), and the second block takes a small grey tag \"welfare culls: stranded stock\". On \"Export markets closed\" `m7-shipping-container-v1.png` (new) appears beside the gate with a coded grey bar across its doors (chip \"exports closed\"; the \"movement banned\" chip dims); on \"shut to visitors\" a chip \"countryside closed: tourism\" (the \"exports closed\" chip dims). On \"about eight billion pounds\" `CostBars` draws two horizontal bars of about equal length at the lower right, labelled in small grey \"farming and food\" and \"tourism\", with a small grey tag \"total about £8 billion\" (no axis values). On \"indirect effects\" an amber tag \"indirect: beyond the sick animals\" sits over the right column. The dot grid stays grey except the amber few. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "exporters": [
+        "new",
+        "`AusSpreadMap` returns small at the upper left, empty of dots (grey tag \"FMD-free since 1872\").",
+        "Why exporters fear it most: Australia has been free of foot-and-mouth disease since 1872, and it sells most of its beef overseas, about three-quarters.",
+        "sells most of its beef overseas / stop exports to many markets / 80 billion dollars over ten years / mostly through lost exports / the indirect effects usually outweigh the direct ones",
+        "On the spoken cues: On \"sells most of its beef overseas\" the red cattle thumbnail (beef, not the dairy plate) sits on the left of the gate and a coded bar beside it splits about 75 to 25 (small grey labels \"exported: about three-quarters\", \"eaten here\"); a dotted arrow carries the 75 portion across the gate to the",
+        "explain",
+        "`AusSpreadMap` returns small at the upper left, empty of dots (grey tag \"FMD-free since 1872\"). On \"sells most of its beef overseas\" the red cattle thumbnail (beef, not the dairy plate) sits on the left of the gate and a coded bar beside it splits about 75 to 25 (small grey labels \"exported: about three-quarters\", \"eaten here\"); a dotted arrow carries the 75 portion across the gate to the shipping container thumbnail. On \"stop exports to many markets\" the container's grey bar returns and the arrow breaks. On \"80 billion dollars over ten years\" a chip writes on the right: \"about $80 billion over 10 years (ABARES, 2022)\"; on \"mostly through lost exports\" the chip's arrow points at the container. On \"the indirect effects usually outweigh the direct ones\" the right column brightens and the left column's chips shrink (no scale implied beyond \"larger\"; tag \"indirect usually larger for an exporter\"). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "assess": [
+        "new",
+        "the ledger compresses to the lower half.",
+        "How to assess an effect: So how do you assess an effect?",
+        "Rust in one wheat season / settles in for good / closes markets",
+        "On the spoken cues: Three question chips write across the top, one per cue: \"how big?\", \"how long?\", \"how far?\". On \"Rust in one wheat season\" the wheat rust thumbnail sits under \"how long?\" with a short coded bar (tag \"one season\"); on \"settles in for good\" the myrtle rust leaf thumbnail sits beside it with a long",
+        "explain",
+        "the ledger compresses to the lower half. Three question chips write across the top, one per cue: \"how big?\", \"how long?\", \"how far?\". On \"Rust in one wheat season\" the wheat rust thumbnail sits under \"how long?\" with a short coded bar (tag \"one season\"); on \"settles in for good\" the myrtle rust leaf thumbnail sits beside it with a long bar running off the right edge (tag \"years\"). On \"closes markets\" the container thumbnail sits under \"how far?\" with an arrow crossing the gate line and continuing past the board edge (tag \"past the farm gate\"). At most three bright text items (the three chips; the case tags are grey). Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the board clears except the dashed gate line, which brightens.",
+        "Memory: So when you assess a disease, count past the farm gate.",
+        "count past the farm gate.",
+        "On the spoken cues: One handwritten line writes on large across the centre: \"Count past the farm gate.\" On \"the first cost\" the hoof and rust leaf thumbnails sit small on the left of the line; on \"Control, markets and ecosystems\" three thumbnails slide across to the right: the closed gate, the container and the native",
+        "explain",
+        "the board clears except the dashed gate line, which brightens. One handwritten line writes on large across the centre: \"Count past the farm gate.\" On \"the first cost\" the hoof and rust leaf thumbnails sit small on the left of the line; on \"Control, markets and ecosystems\" three thumbnails slide across to the right: the closed gate, the container and the native guava chip. Hold half a second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (one herd)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. A country that exports",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (one herd))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Country P exports most of the beef it produces and has been free of foot-and-mouth disease (FMD) for decades. FMD is confirmed in one herd of 40 cattle. All 40 cattle are culled, together with 2000 healthy cattle on nearby farms. Three trading partners suspend imports of beef from Country P.\" Demand: \"Distinguish between the direct and indirect effects of this outbreak on agricultural production. Explain which is likely to have the greater economic cost. (4 marks)\". One lined answer box. No plates and nothing answer-bearing (no ledger, no gate line). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "the 40 sick cattle / the 2,000 healthy cattle / lost beef exports / exports most of its beef / the classic mistake / never infected: a cost of control",
+        "On the spoken cues: A small `GateLedger` draws beneath it. On \"the 40 sick cattle\" \"one herd of 40 cattle\" underlines teal and a chip lands left of the gate: \"direct: 40 infected cattle, lost production, then culled\". On \"the 2,000 healthy cattle\" \"2000 healthy cattle on nearby farms\" underlines amber and a chip lands",
+        "explain",
+        "the card shrinks to a strip at the top. A small `GateLedger` draws beneath it. On \"the 40 sick cattle\" \"one herd of 40 cattle\" underlines teal and a chip lands left of the gate: \"direct: 40 infected cattle, lost production, then culled\". On \"the 2,000 healthy cattle\" \"2000 healthy cattle on nearby farms\" underlines amber and a chip lands right of the gate: \"indirect: 2000 healthy cattle culled\"; on \"lost beef exports\" \"suspend imports of beef\" underlines and a second right chip: \"indirect: lost exports\". On \"exports most of its beef\" \"exports most of the beef it produces\" underlines and the right column brightens (row \"indirect larger: export dependent\"). On \"the classic mistake\" the chip \"healthy culled cattle = direct\" writes on and takes a grey scribble cross, with the small grey reason \"never infected: a cost of control\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (one variety)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. Nearly every farm in a district grows",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (one variety))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Nearly every farm in a wheat-growing district plants the same wheat variety. A new strain of a rust fungus appears that is able to infect this variety. Its spores are carried by wind, and the growing season is warm and wet. Wheat yields fall across the whole district.\" Demand: \"Explain ONE biological cause and ONE agricultural cause of the losses in this district. (3 marks)\". One lined answer box. No plates (the rust leaf plate would not reveal the answer, but the card stays plain to match item one). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Biological / Agricultural / the classic mistake / conditions help; the pathogen causes",
+        "On the spoken cues: A two-row answer table writes beneath it. On \"Biological\" \"able to infect this variety\" underlines teal, then \"carried by wind\" and \"warm and wet\" underline as each is spoken; the row fills \"biological: a strain that infects it, wind-borne spores (helped by wet weather)\". On \"Agricultural\" \"plants",
+        "explain",
+        "the card shrinks to a strip. A two-row answer table writes beneath it. On \"Biological\" \"able to infect this variety\" underlines teal, then \"carried by wind\" and \"warm and wet\" underline as each is spoken; the row fills \"biological: a strain that infects it, wind-borne spores (helped by wet weather)\". On \"Agricultural\" \"plants the same wheat variety\" underlines amber; the row fills \"agricultural: one variety everywhere, so no resistant plants to slow spread\". On \"the classic mistake\" the chip \"the wet weather caused it\" writes on and takes a grey scribble cross, with the small grey reason \"conditions help; the pathogen causes\". Settle on the table for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "two step chips write on in a column, one per cue: \"name the cause: pathogen, host, conditions, farming\", \"follow the effects: on the farm, then past the gate\".",
+        "Decision rule and handoff: So for any farm disease, name the cause, then follow the effects from the sick host out to markets and ecosystems.",
+        "So for any farm disease, name the cause,",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how a banksia defends itself\" with `m7-banksia-phytophthora-v1.png` as a small thumbnail. Hold half a second before the notes.",
+        "explain",
+        "two step chips write on in a column, one per cue: \"name the cause: pathogen, host, conditions, farming\", \"follow the effects: on the farm, then past the gate\". A \"Next\" chip slides in at the lower right: \"Next: how a banksia defends itself\" with `m7-banksia-phytophthora-v1.png` as a small thumbnail. Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B05_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. `m7-boot-cleaning-station-v1.png` (new) appears at the left at medium size (grey tag \"bush track, south-west WA\").",
+        "Hook (boots at the track): On many bush tracks in south-western Australia, there are boot-cleaning stations.",
+        "in the soil / about 40 per cent / cope with it far better / another dies / how does a plant with no immune cells defend itself",
+        "On the spoken cues: On \"in the soil\" a coded soil band draws along the lower edge and small amber specks appear in it (tag \"*Phytophthora cinnamomi*\"). On \"about 40 per cent\" a small grey chip writes: \"about 40% of the region's native species: susceptible\". On \"cope with it far better\" `m7-banksia-healthy-v1.png`",
+        "explain",
+        "no people. `m7-boot-cleaning-station-v1.png` (new) appears at the left at medium size (grey tag \"bush track, south-west WA\"). On \"in the soil\" a coded soil band draws along the lower edge and small amber specks appear in it (tag \"*Phytophthora cinnamomi*\"). On \"about 40 per cent\" a small grey chip writes: \"about 40% of the region's native species: susceptible\". On \"cope with it far better\" `m7-banksia-healthy-v1.png` (new) appears at the centre right (no place or species tag on it: the hook claims only that species differ), and on \"another dies\" its aligned partner `m7-banksia-phytophthora-v2.png` (re-matted; see brief) crossfades in beside a second copy of the healthy plate, so a healthy and a dying banksia stand side by side on the soil band. **Fallback until the clean Banksia retake arrives (Revision 3):** no in-place crossfade; `m7-banksia-phytophthora-v2.png` fades in as its own plate beside the single healthy plate (side by side, each at its own uniform scale, a small gap between them), so the IoU 0.811 misalignment and the edge fringes never overlap on screen (see Decisions). On \"how does a plant with no immune cells defend itself\" the station shrinks to the upper left and the heading writes on: \"How does a banksia defend itself?\" Hold about two seconds.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "water-mould": [
+        "adjust",
+        "`m7-phytophthora-zoospores-v1.png` (new) appears at the upper left (a sporangium releasing swimming spores); grey screen gloss \"water mould (oomycete): not a fungus\"; a grey chip \"it's a fungus\" fades in and takes a grey scribble cross, with the small grey reason \"cellulose walls: a different group\".",
+        "The attacker: a water mould: Phytophthora cinnamomi looks like a fungus, but it's a water mould, a different group with cellulose in its walls.",
+        "cellulose walls: a different group / swimming spores / chemicals leaking from roots / settle just behind the root tip / threads called hyphae / less water reaches the leaves",
+        "On the spoken cues: On \"swimming spores\" grey gloss \"zoospores\", and the crossed chip dims before the next tag writes. On \"chemicals leaking from roots\" `m7-root-tip-zoospores-v1.png` (new) fills the centre; `SwimPath` draws coded specks swimming in from the edges and converging behind the root tip (tag \"swim to root",
+        "explain",
+        "`m7-phytophthora-zoospores-v1.png` (new) appears at the upper left (a sporangium releasing swimming spores); grey screen gloss \"water mould (oomycete): not a fungus\"; a grey chip \"it's a fungus\" fades in and takes a grey scribble cross, with the small grey reason \"cellulose walls: a different group\". On \"swimming spores\" grey gloss \"zoospores\", and the crossed chip dims before the next tag writes. On \"chemicals leaking from roots\" `m7-root-tip-zoospores-v1.png` (new) fills the centre; `SwimPath` draws coded specks swimming in from the edges and converging behind the root tip (tag \"swim to root chemicals\"); on \"settle just behind the root tip\" the plate's settled spores are ringed. On \"threads called hyphae\" the germ tubes entering the root are ringed (tag \"hyphae grow in\"). On \"less water reaches the leaves\" the board pulls back to the dying banksia plate, its roots ringed, with a thin coded blue arrow up the stem that fades halfway (tag \"roots die: less water up\"); on \"dies back from the roots up\" the yellowing leaves are ringed. On \"boots and tyres\" the boot station thumbnail pulses at the upper left (grey tag \"soil carries it: b03's fomites\"). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "Cam lens zoom",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "no-moving-cells": [
+        "adjust",
+        "the board clears to the defence race layout.",
+        "Defending without moving cells: A plant can't send defenders to the site, because it has no circulating immune cells.",
+        "no circulating immune cells / every cell has to defend itself / always there",
+        "On the spoken cues: `m7-root-cells-entry-v1.png` (new) fills the left two-thirds: a cut-away of young root cells with one hypha pressing in at the junction between two thin-walled outer cells (grey label \"young root cells, cut away\"). On \"no circulating immune cells\" a grey chip writes: \"no immune cells travel to the",
+        "explain",
+        "the board clears to the defence race layout. `m7-root-cells-entry-v1.png` (new) fills the left two-thirds: a cut-away of young root cells with one hypha pressing in at the junction between two thin-walled outer cells (grey label \"young root cells, cut away\"). On \"no circulating immune cells\" a grey chip writes: \"no immune cells travel to the site\". On \"every cell has to defend itself\" a soft coded outline traces several cell walls in turn. On \"always there\" and \"switch on\" the `DefenceLadder` draws on the right with its first two rungs labelled, one per cue: \"always there\" and \"switched on after detection\" (the third rung draws empty and grey). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "barriers": [
+        "adjust",
+        "the \"always there\" rung lights teal.",
+        "Barriers: always there: The always-there defences are barriers.",
+        "As a root ages / lignin and other waterproof materials / older roots and stems grow bark / pushes in where two cells meet / the soft, young part of the root behind the tip",
+        "On the spoken cues: On \"As a root ages\" a small coded inset bar runs along the root from tip to older root, shading from pale (thin walls) to teal (toughened) (grey tags \"young: thin walls\", \"older: toughened\"). On \"lignin and other waterproof materials\" a short stretch of older-root wall is traced in a thick teal",
+        "explain",
+        "the \"always there\" rung lights teal. On \"As a root ages\" a small coded inset bar runs along the root from tip to older root, shading from pale (thin walls) to teal (toughened) (grey tags \"young: thin walls\", \"older: toughened\"). On \"lignin and other waterproof materials\" a short stretch of older-root wall is traced in a thick teal coded line on the inset (gloss \"lignin, suberin: tough waterproof wall materials\"; suberin is screen only). On \"older roots and stems grow bark\" `m7-banksia-healthy-v1.png` appears small at the right edge with its woody stem base ringed (tag \"bark on older parts\"). On \"pushes in where two cells meet\" the hypha tip in the cell plate is ringed at the junction between the two outer cells and a short coded arrow points along the junction (tag \"enters where cells meet\"). On \"the soft, young part of the root behind the tip\" the root tip plate from scene 2 returns as an inset, its young zone ringed amber (tag \"weak point: thin walls, no bark\"). At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "switched-on": [
+        "adjust",
+        "the \"switched on\" rung lights teal.",
+        "Switched on after detection: Once a cell detects the pathogen, it starts building and making chemicals.",
+        "callose / more lignin / antimicrobial chemicals",
+        "On the spoken cues: The entry plate crossfades partway to its aligned partner `m7-root-cells-defended-v1.png` (new) in three steps, one per cue, by masked regions of the partner revealed in place (a crossfade of the matching region only, not drawn over): on \"callose\" the bright plug under the hypha tip, at the",
+        "explain",
+        "the \"switched on\" rung lights teal. The entry plate crossfades partway to its aligned partner `m7-root-cells-defended-v1.png` (new) in three steps, one per cue, by masked regions of the partner revealed in place (a crossfade of the matching region only, not drawn over): on \"callose\" the bright plug under the hypha tip, at the junction where it pushes in, appears (gloss \"callose: a plug made of a sugar chain\"); on \"more lignin\" the neighbouring walls thicken; on \"antimicrobial chemicals\" the faint yellow-brown deposits in nearby cells appear (gloss \"phytoalexins: antimicrobial chemicals made after an attack\"; grey screen tag \"also phenolics\"). A small tag \"after detection\" sits on the rung. At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "firebreak": [
+        "new",
+        "the \"firebreak\" rung draws and lights.",
+        "The firebreak: The boldest response is the hypersensitive response.",
+        "hypersensitive response",
+        "On the spoken cues: The final region of the defended plate is revealed: a small ring of dark brown, collapsed cells around the stopped hypha tip (tag \"cells die on purpose\"). On \"feeds on living cells\" the living cells beyond the ring glow faintly green and the hypha tip is ringed against the dead ring (tag \"nothing",
+        "explain",
+        "the \"firebreak\" rung draws and lights. The final region of the defended plate is revealed: a small ring of dark brown, collapsed cells around the stopped hypha tip (tag \"cells die on purpose\"). On \"feeds on living cells\" the living cells beyond the ring glow faintly green and the hypha tip is ringed against the dead ring (tag \"nothing living to feed on\"). On \"a signal\" the board pulls back to the healthy banksia plate; `SignalPulse` runs a soft pulse from one root up the stem and out to the leaves (grey tag \"signal: prepares the whole plant\"; grey screen tag \"salicylic acid in many plants\"). On \"arrives in time\" a small coded clock mark writes beside the ladder (amber tag \"timing matters\"). At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "evidence": [
+        "adjust",
+        "the board becomes the `RaceStrip`: a coded day line across the bottom with small grey ticks \"day 0\", \"1\", \"3\", \"5\", \"9\", and a small grey source tag \"Tynan, Scott and Sedgley, 1998\".",
+        "The evidence: two banksias: So what happens in real banksias, and does timing matter?",
+        "banksia seedlings / root tips were dead within a day / reached the seedling's stem by day five / Callose was laid down late / only started on day three / by day nine it rarely reached halfway",
+        "On the spoken cues: On \"banksia seedlings\" two rows draw, each starting with `m7-banksia-seedling-healthy-v1.png` (new) at day 0; small grey species plates sit at each row's start: `m7-banksia-coccinea-v1.png` (new; tag \"scarlet banksia, WA\") on the top row and `m7-banksia-serrata-v1.png` (new; tag \"old man banksia,",
+        "explain",
+        "the board becomes the `RaceStrip`: a coded day line across the bottom with small grey ticks \"day 0\", \"1\", \"3\", \"5\", \"9\", and a small grey source tag \"Tynan, Scott and Sedgley, 1998\". On \"banksia seedlings\" two rows draw, each starting with `m7-banksia-seedling-healthy-v1.png` (new) at day 0; small grey species plates sit at each row's start: `m7-banksia-coccinea-v1.png` (new; tag \"scarlet banksia, WA\") on the top row and `m7-banksia-serrata-v1.png` (new; tag \"old man banksia, NSW\") on the bottom row. On \"root tips were dead within a day\" the top row's seedling crossfades at the day 1 tick to show brown root tips (by a masked region of `m7-banksia-seedling-collapsed-v1.png`, the root tip only); on \"reached the seedling's stem by day five\" it completes the crossfade to the collapsed plate at the day 5 tick (tag \"day 5: stem reached\"). On \"Callose was laid down late\" a small amber chip on the top row: \"callose late\". On \"only started on day three\" the bottom row's seedling begins its crossfade at day 3 toward `m7-banksia-seedling-contained-v1.png` (new); on \"by day nine it rarely reached halfway\" it completes at the day 9 tick with the lower half of the root brown (tag \"day 9: under halfway up\"). No line graph and no values between ticks. Only the row being spoken about is bright; the other row, the day labels and the source tag stay grey. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "tick",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "timing": [
+        "new",
+        "the two rows stay.",
+        "What it shows: timing: Both species laid down callose.",
+        "laid down callose / The clearest difference is timing / rapid root damage / later callose deposition / do not show that the hyphae outran the defence / hairpin banksia",
+        "On the spoken cues: On \"laid down callose\" a small callose chip sits at each row's end: top row amber \"callose late\" (scene 7's chip moves there), bottom row teal \"callose\". No ladders on the rows (the study reports callose and timing only, not the other defences). On \"The clearest difference is timing\" the day line",
+        "explain",
+        "the two rows stay. On \"laid down callose\" a small callose chip sits at each row's end: top row amber \"callose late\" (scene 7's chip moves there), bottom row teal \"callose\". No ladders on the rows (the study reports callose and timing only, not the other defences). On \"The clearest difference is timing\" the day line brightens and a teal bracket spans the bottom row's day 3 to day 9 (tag \"damage held: lower root\"). On \"rapid root damage\" an amber bar on the top row spans day 1 to day 5 (tag \"root damage: fast\"); on \"later callose deposition\" the \"callose late\" chip brightens beside it. The damage bar and the chip stay separate, with no arrow and no hyphae drawn on the strip: necrosis and hyphal spread are not drawn as one front (the study reports lesions forming well ahead of the invading hyphae). On \"do not show that the hyphae outran the defence\" a grey chip \"hyphae outran the defence?\" fades in and takes a grey scribble cross, then dims. On \"hairpin banksia\" a small grey third row draws below with a grey tag \"hairpin banksia: entry delayed\" (no claim about which defence delayed it). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "limits": [
+        "new",
+        "the race strip dims.",
+        "The limits of the evidence: Notice the limits, though.",
+        "Tolerant isn't immune / probably arrived from overseas / Yet old man banksia held it back / old man banksia held it",
+        "On the spoken cues: Three grey limit chips write on in a column at the right, one per cue: \"seedlings, a few weeks old\", \"lab, one study\", \"field adults may differ\". On \"Tolerant isn't immune\" the bottom row's contained seedling pulses (gloss \"tolerant: survives infection with limited damage\"). On \"probably arrived",
+        "explain",
+        "the race strip dims. Three grey limit chips write on in a column at the right, one per cue: \"seedlings, a few weeks old\", \"lab, one study\", \"field adults may differ\". On \"Tolerant isn't immune\" the bottom row's contained seedling pulses (gloss \"tolerant: survives infection with limited damage\"). On \"probably arrived from overseas\" both species plates pulse and a small grey tag writes \"introduced: probably from overseas\"; on \"Yet old man banksia held it back\" a grey chip \"never met it, so no defence\" fades in and takes a grey scribble cross, with the small grey reason \"old man banksia held it\". A small b04 callback thumbnail (the myrtle rust leaf, grey tag \"b04: little resistance in many species\") sits at the corner. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "control": [
+        "new",
+        "the board clears.",
+        "Control that matches: That shapes control.",
+        "Hygiene / closing tracks in wet weather / phosphite / doesn't remove the pathogen from the soil / wall it off faster",
+        "On the spoken cues: On \"Hygiene\" the boot station plate returns at the left (chip \"hygiene: stop soil moving\"); on \"closing tracks in wet weather\" a coded track line with a small grey bar across it draws beside the plate (tag \"close tracks when wet\"). On \"phosphite\" the dying banksia plate appears at the right with a",
+        "explain",
+        "the board clears. On \"Hygiene\" the boot station plate returns at the left (chip \"hygiene: stop soil moving\"); on \"closing tracks in wet weather\" a coded track line with a small grey bar across it draws beside the plate (tag \"close tracks when wet\"). On \"phosphite\" the dying banksia plate appears at the right with a small coded injection mark on its stem (grey tag \"phosphite\"); on \"doesn't remove the pathogen from the soil\" the soil specks under it stay (tag \"still in the soil\"); on \"wall it off faster\" the race strip's bottom row returns small with its teal bracket, and the \"switched on\" rung of a small ladder brightens (tag \"faster walls: plant's own defence\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the board clears.",
+        "Memory: So remember: the hypersensitive response is a firebreak.",
+        "the hypersensitive response is a firebreak.",
+        "On the spoken cues: One handwritten line writes on large across the centre: \"The hypersensitive response is a firebreak.\" Under it the defended cell plate's dead ring is shown small with the stopped hypha (tag \"nothing living to feed on\"), and on \"speed decides\" a small clock mark beside it. Hold half a second.",
+        "explain",
+        "the board clears. One handwritten line writes on large across the centre: \"The hypersensitive response is a firebreak.\" Under it the defended cell plate's dead ring is shown small with the stopped hypha (tag \"nothing living to feed on\"), and on \"speed decides\" a small clock mark beside it. Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (species X and Y)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First. Roots of two",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (species X and Y))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Roots of two native plant species, X and Y, were inoculated with *Phytophthora cinnamomi*. The table shows the results.\" A two-row table: \"Species X: callose deposited at penetration sites within 6 hours; length of dead root tissue after 7 days, 8 mm.\" \"Species Y: callose deposited at penetration sites after 48 hours; length of dead root tissue after 7 days, 45 mm.\" Demand: \"Identify the more resistant species. Explain how its response limited the spread of the pathogen. (3 marks)\". One lined answer box. No plates and nothing answer-bearing (no ladder, no race strip). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Species X is more resistant / within hours / only 8 millimetres / after two days, too late / the classic mistake / longer dead zone: pathogen got further",
+        "On the spoken cues: A small two-row answer table writes beneath it. On \"Species X is more resistant\" a teal tick lands on row X. On \"within hours\" \"within 6 hours\" underlines teal and the row fills \"callose early: walls plugged at entry\"; on \"only 8 millimetres\" \"8 mm\" underlines (row \"held near entry\"). On \"after two",
+        "explain",
+        "the card shrinks to a strip at the top. A small two-row answer table writes beneath it. On \"Species X is more resistant\" a teal tick lands on row X. On \"within hours\" \"within 6 hours\" underlines teal and the row fills \"callose early: walls plugged at entry\"; on \"only 8 millimetres\" \"8 mm\" underlines (row \"held near entry\"). On \"after two days, too late\" \"after 48 hours\" underlines amber and row Y fills \"callose late: pathogen spread\"; \"45 mm\" underlines. On \"the classic mistake\" the chip \"more dead tissue = stronger defence\" writes on and takes a grey scribble cross, with the small grey reason \"longer dead zone: pathogen got further\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (a dead spot)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. A leaf is infected by a fungus",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a dead spot))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A leaf is infected by a fungal pathogen that can feed only on living cells. Within hours of infection, the cells at and around the infection site die, leaving a small brown spot of dead cells. Over the next three weeks the spot stays the same size and the rest of the leaf stays green.\" Student's claim, in a small box: \"The dead spot shows that the plant's defences have failed.\" Demand: \"Evaluate the student's claim. (3 marks)\". One lined answer box. No plates (a leaf plate with a spot would add nothing the stem doesn't say; the card stays plain). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "The claim isn't supported / died within hours / stopped growing / hypersensitive response / needs living cells / the rest of the leaf stays healthy",
+        "On the spoken cues: A short answer block writes beneath it: on \"The claim isn't supported\" a verdict chip \"claim: not supported\". On \"died within hours\" \"Within hours of infection\" underlines teal; on \"stopped growing\" \"stays the same size\" underlines teal; on \"hypersensitive response\" the defended cell plate's dead",
+        "explain",
+        "the card shrinks to a strip. A short answer block writes beneath it: on \"The claim isn't supported\" a verdict chip \"claim: not supported\". On \"died within hours\" \"Within hours of infection\" underlines teal; on \"stopped growing\" \"stays the same size\" underlines teal; on \"hypersensitive response\" the defended cell plate's dead ring appears small (row \"hypersensitive response: rapid, deliberate cell death\"); on \"needs living cells\" \"can feed only on living cells\" underlines teal; on \"the rest of the leaf stays healthy\" \"the rest of the leaf stays green\" underlines teal (row \"pathogen fenced in\"). On \"kept spreading\" a small grey row \"spreading spot: defence failing\". On \"the classic mistake\" the chip \"dead cells = plant losing\" writes on and takes a grey scribble cross. Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "three step chips write on in a column, one per cue: \"how it gets in\", \"defences: always there, switched on, firebreak\", \"evidence: timing, and its limits\".",
+        "Decision rule and handoff: So for any named plant and pathogen, say how the pathogen gets in, which defences meet it, always there or switched on, and what the evidence shows about timing.",
+        "So for any named plant and pathogen, say",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: first defences in an animal\" (small grey tag only; no animal or cell plate is required). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on in a column, one per cue: \"how it gets in\", \"defences: always there, switched on, firebreak\", \"evidence: timing, and its limits\". A \"Next\" chip slides in at the lower right: \"Next: first defences in an animal\" (small grey tag only; no animal or cell plate is required). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# --- M7 b03, p02, b04 and b05 rows (end) ---
 
 
 LESSONS = {
@@ -6797,6 +7908,60 @@ LESSONS = {
         'rows': M7B02_ROWS,
     },
     # --- M6 p01 and M7 b01, b02 entries (end) ---
+    # --- M7 b03, p02, b04 and b05 entries (start) ---
+    'm7b03': {
+        'design': D + 'lessons/bio-m7-b03.md',
+        'learning_review': D + 'checks/m7b03-learning-review.md',
+        'science_check': D + 'checks/m7b03-claude-science-check.md',
+        'meta': {"title": "How Do Diseases Spread? Transmission Modes and Pathogen Adaptations", "subtitle": "A pathogen can't survive in one host forever. How does it get out of one host and into the next, how is it built for each step, and how does knowing its route tell us where to stop it?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 3, "lessonIntent": "describing the chain a pathogen must cross to spread (leave, travel, enter); defining direct contact, indirect contact (fomites, water, food, air) and vector transmission, with named diseases for each, and distinguishing a vector from a fomite; explaining entry adaptations, which get a pathogen in and hold it where it enters (fimbriae gripping host cell molecules; viral surface proteins binding specific receptors; the tapeworm's hooks and suckers) and comparing bacterial and viral entry; explaining transmission adaptations (influenza triggering coughing and sneezing; *Plasmodium* in the mosquito's salivary glands, injected into the skin; tapeworm eggs and cysts in undercooked pork; tobacco mosaic virus surviving on tools); keeping entry and transmission adaptations apart in a comparison; matching control measures to the route; choosing the measure that breaks the link for a vector-borne outbreak and comparing two pathogens' adaptations."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "the-chain", "direct-contact", "indirect-contact", "vector", "entry-adaptations", "compare-and-hold", "transmission-adaptations", "two-jobs", "break-the-link", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: pathogen, host, the groups (bacterium, virus, protozoan, helminth) with these named cases: tuberculosis (bacterium), malaria and Plasmodium inside red blood cells (protozoan), the pork tapeworm hooked onto the gut wall (helminth), tinea (fungus), the COVID-19 virus and tobacco mosaic virus (viruses, made of genetic material in a protein coat, multiplying only inside host cells). From b02: germ theory, microbes come from other microbes, Pasteur's dust trapped in the swan neck (airborne microbes), Koch's tuberculosis work. From Year 11 Module 2: cell membranes carry proteins on their surface. Not assumed: modes of transmission, fomite, vector, droplet against airborne spread, fimbriae, receptor binding, entry against transmission adaptations, matching control to route.", "startsWith": "Trace direct, indirect and vector transmission and the adaptations for entry and transmission. The video opens: In 1854, cholera was killing people in one London neighbourhood.", "stopsAfter": "describing the chain a pathogen must cross to spread (leave, travel, enter); defining direct contact, indirect contact (fomites, water, food, air) and vector transmission, with named diseases for each, and distinguishing a vector from a fomite; explaining entry adaptations, which get a pathogen in and hold it where it enters (fimbriae gripping host cell molecules; viral surface proteins binding specific receptors; the tapeworm's hooks and suckers) and comparing bacterial and viral entry; explaining transmission adaptations (influenza triggering coughing and sneezing; *Plasmodium* in the mosquito's salivary glands, injected into the skin; tapeworm eggs and cysts in undercooked pork; tobacco mosaic virus surviving on tools); keeping entry and transmission adaptations apart in a comparison; matching control measures to the route; choosing the measure that breaks the link for a vector-borne outbreak and comparing two pathogens' adaptations.", "nextLesson": "a classroom practical that models how one infection spreads through a group and how tracing contacts finds its source (route entry bio-m7-p01)."},
+        'teaching': {"task": "A pathogen can't survive in one host forever. How does it get out of one host and into the next, how is it built for each step, and how does knowing its route tell us where to stop it?", "causalExplanation": "Causes: why a pathogen must travel to spread (it must leave, travel and enter; scene 2); why droplets count as direct and lingering particles as indirect (range and time in the air; scenes 3 and 4); why a door handle is not a vector (not alive; scene 5); why fimbriae help (grip, not washed away; scene 6); why a virus infects only some cells (its protein fits only some receptors; scene 6); why hooks matter (not swept out; scene 7); how each transmission feature moves the pathogen on (scene 8); why the control must match the route (scene 10). Visible case: the map cluster and the handle coming off; the lane changing per mode; droplets falling against particles drifting; the spike fitting one receptor; the scolex anchoring; four transmission cases; break marks cutting lanes. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 8 (four cases) is the densest scene, so each quarter dims as the next fills and only its amber tag stays bright.", "conversationalApproach": "In 1854 John Snow mapped cholera deaths around one London water pump and showed how the disease travelled without knowing its microbe, so the question is how a pathogen gets from one host into the next and how knowing its route tells us where to stop it. A pathogen has to leave one host, travel and enter a new one, and each link is a place the chain can break. The three modes of transmission follow one at a time with named cases: direct contact (tinea, HIV, close-range droplets for influenza), indirect contact through a fomite, water, food or the air (norovirus, cholera, Salmonella, tuberculosis and measles), and vector transmission by a living organism, with Plasmodium developing inside the Anopheles mosquito and a door handle shown not to be a vector. Adaptations are then sorted by job: entry adaptations grip and hold on (fimbriae, the COVID-19 spike protein binding its receptor, the tapeworm's hooks and suckers), and transmission adaptations get the pathogen out and across (coughing, mosquito saliva, tapeworm eggs and cysts, a tough tobacco mosaic virus coat). Knowing the route picks the control that breaks its link, from barriers to treating water to bed nets, and the memory aid is that every control measure breaks a link. Two exam questions follow with brief feedback.", "openingDecision": "In 1854, cholera was killing people in one London neighbourhood. John Snow marked the deaths on a street map, and the deaths clustered around one water pump on Broad Street. He didn't know which microbe caused cholera, but the map showed how it travelled: in drinking water. So how does a pathogen get from one host into the next, and how does knowing its route tell us where to stop it?", "understandingCheck": "12a is an identify-and-justify item that meets the route's stop: Ross River virus after rain in a Queensland town, a mosquito-borne virus not passed directly between people; choose between isolating patients and draining and treating standing water. 12c is a compare item for B7-IQ1-04: Vibrio cholerae (pili, watery diarrhoea into water) against influenza virus (a surface protein binding airway receptors, coughing). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Each feedback is brief (about 25 to 30 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ1-01: \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117)\", with its listed example \"investigate modes of transmission of infectious diseases, including direct contact, indirect contact and vector transmission\". B7-IQ1-04: \"compare the adaptations of different pathogens that facilitate their entry into and transmission between hosts (ACSBL118)\". This video covers the modes-of-transmission example (secondary-sourced: named diseases mapped to routes) and B7-IQ1-04. The epidemic example is p01 and g01; the microbial testing example is p02; the classifying example is b01. Verbs: \"investigate\" (examined, per the site's Compare model, as compare or classify a route with justification: scenes 2 to 5, 10 and attempt 1) and \"compare\" (scenes 6 to 9 and attempt 2: similarities and differences, not two descriptions)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One route chain board: two coded host circles (b01's `HostCircles` style), left \"infected host\" and right \"new host\", with a three-station strip between them: \"leave\", \"travel\", \"enter\". The middle station is a lane that changes per mode: in scene 3 a short lane with nothing in it (direct); in scene 4 a lane holding a painted object (door handle, pump, chicken) or drifting coded particles (air); in scene 5 a lane holding the painted mosquito. Adaptation plates attach to the \"enter\" station (teal tag \"entry\") or the \"leave\" station (amber tag \"transmission\"), so the board itself sorts the two kinds of adaptation. In scene 10 each lane gains a control plate and a coded break mark (a short scribble cut across the lane). Host circles are abstract and never become people: no people, hands, faces, patients, or coughing or sneezing figures. Droplets and airborne particles are coded dots leaving a host circle (abstract particles, not organisms). Real organisms, objects and tissues are painted plates; tissue blocks (skin) appear only as cut sections. Plates are scaled proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey station labels; tags fade when the next cue lands; lanes not being spoken about dim to grey.", "transitionPlan": "A coded street-map inset draws with death dots that cluster around one pump marker as the Broad Street pump plate rises beside it; the RouteChain draws with its leave, travel and enter stations and the pathogen glyph moves along the lane once; each mode lights its own lane in turn, the lane shortening for direct contact with the hyphae plate and a coded drop, opening a slot for indirect contact that the door handle, pump and chicken plates fill one per cue, and filling with the Anopheles mosquito plate for vectors as a Plasmodium cell appears in the host; the chain shrinks to a strip with the enter station lit as the rod bacterium's fimbriae are ringed over a coded membrane and the spike meets its receptor, then a two-column compare strip writes and the scolex plate shows its hooks; the leave station lights amber as four transmission cases fill the board in quarters; entry and transmission chips land under their stations with their thumbnails; the three lanes stack as rows that each gain a control plate and a coded BreakMark; one handwritten memory line writes with three control and cut-lane pairs; each attempt clears the board and its feedback underlines the card as a small RouteChain or two-column compare table fills; the decision rule chips and next chip close; scene crossfade with settle."},
+        'rows': M7B03_ROWS,
+    },
+    'm7p02b': {
+        'design': D + 'lessons/bio-m7-p02.md',
+        'learning_review': D + 'checks/m7p02b-learning-review.md',
+        'science_check': D + 'checks/m7p02b-claude-science-check.md',
+        'meta': {"title": "Test a water or food sample for microbes: how do you count what you can't see, and what can colonies tell you?", "subtitle": "A student's plates show three colonies from tap water, two hundred and fourteen from a creek, and none from a rainwater tank. Is the tank water safe, and is the creek full of disease? How do you design and run a safe, valid test that counts the microbes in a water or food sample, and what can the colonies tell you?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 5, "lessonIntent": "explaining why water is tested and why authorities use E. coli as an indicator, and what a school total count can and cannot show; stating the aim, the independent, dependent and controlled variables, and what a colony-forming unit is; describing sterile sampling of water and preparing a food sample; describing aseptic technique; explaining and carrying out a serial dilution; spreading 0.1 mL on three plates per dilution, labelling the base, taping the lid and incubating inverted at 25 to 30 °C, never 37 °C; explaining the negative and positive controls; choosing the plate with about 30 to 300 colonies and saying why; calculating CFU per mL; stating what colonies can and cannot show; judging validity, reliability and accuracy; writing the risk assessment (risk group 1, sealed plates never opened, autoclaving before disposal); calculating CFU per mL from new data and fixing a flawed method."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "why-test", "aim-variables", "sampling-aseptic", "serial-dilution", "plate-incubate", "controls", "reading-plates", "scale-back", "what-it-shows", "validity-reliability", "risk-assessment", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "b01 (bacteria, fungi and viruses; viruses are not cells and multiply only inside host cells; most microbes are harmless); b02 (microbes come from other microbes; Pasteur's dust settling; Koch's pure culture on solid media); b03 (water and food as indirect transmission routes; cholera in drinking water). Year 11 Working Scientifically: independent, dependent and controlled variables; validity, reliability and accuracy; risk assessments. Year 11 Module 1 (or Module 5 B2c): bacteria multiply by splitting. Not assumed: indicator organisms, colony-forming units, serial dilution, the countable range, the CFU calculation, risk groups.", "startsWith": "Plan safe sampling, controls and agar incubation. The video opens: A student plated water from three places. After two days, the tap water plate had three colonies, the creek water plate had two hundred and fourteen, and the rainwater tank plate had none. Is the tank water safe, and is the creek full of disease?", "stopsAfter": "explaining why water is tested and why authorities use E. coli as an indicator, and what a school total count can and cannot show; stating the aim, the independent, dependent and controlled variables, and what a colony-forming unit is; describing sterile sampling of water and preparing a food sample; describing aseptic technique; explaining and carrying out a serial dilution; spreading 0.1 mL on three plates per dilution, labelling the base, taping the lid and incubating inverted at 25 to 30 °C, never 37 °C; explaining the negative and positive controls; choosing the plate with about 30 to 300 colonies and saying why; calculating CFU per mL; stating what colonies can and cannot show; judging validity, reliability and accuracy; writing the risk assessment (risk group 1, sealed plates never opened, autoclaving before disposal); calculating CFU per mL from new data and fixing a flawed method.", "nextLesson": "how disease damages agricultural production, in plants and animals (route entry bio-m7-b04)."},
+        'teaching': {"task": "A student's plates show three colonies from tap water, two hundred and fourteen from a creek, and none from a rainwater tank. Is the tank water safe, and is the creek full of disease? How do you design and run a safe, valid test that counts the microbes in a water or food sample, and what can the colonies tell you?", "causalExplanation": "(1) the puzzle (1); (2) contamination is invisible; authorities test for E. coli because it signals faecal contamination; a school total count compares samples but cannot certify safety (2); (3) aim, variables, CFU (3); (4) separate sterile bottles; food as 1 g in 9 mL; aseptic technique keeps outside microbes out (4); (5) dense samples grow a film, so dilute in tenfold steps (5); (6) spread 0.1 mL, three plates each, label the base, tape the lid, incubate inverted at 25 to 30 °C because 37 °C favours microbes adapted to the body (6); (7) the negative control detects added microbes; the positive control shows conditions support growth (7); (8) pick the plate in about 30 to 300: above, colonies merge and the count runs low; below, chance matters too much (8); (9) divide by volume times dilution to scale back (9); (10) colonies show culturable microbes, not pathogens; no colonies does not prove safety (10); VRA (11); risk (12); attempts (13a to 13d); decision rule and handoff (14); key notes (15).", "conversationalApproach": "three plates from tap, creek and tank water grew 3, 214 and no colonies, and neither the tank being safe nor the creek being full of disease follows from them, so the practical asks how to count microbes you cannot see and what colonies can and cannot tell you. Contaminated water can look clean; authorities test for E. coli as a sign of faecal contamination, while a school count of everything that grows on nutrient agar compares samples but cannot certify safety. The aim and variables are set with colony forming units per millilitre as the dependent variable; each step is given its reason: separate sterile bottles and aseptic technique, serial dilution in tenfold steps because a crowded plate merges into an uncountable film, three plates per dilution, labelling the base, taping without sealing, incubating upside down at 25 to 30 degrees and never at 37, and a negative and a positive control. One series is read to the plate with about 30 to 300 colonies, scaled back to CFU per millilitre one stage at a time, and the claim is limited to culturable microbes; validity, reliability and accuracy, and the risk assessment follow. Two exam questions follow with brief feedback.", "openingDecision": "A student plated water from three places. After two days, the tap water plate had three colonies, the creek water plate had two hundred and fourteen, and the rainwater tank plate had none. Is the tank water safe, and is the creek full of disease? Neither follows from these plates. Let's find out.", "understandingCheck": "(A1, calculate, 3 marks) creek water diluted to 10⁻², 0.1 mL spread on each of three plates, 48 h at 28 °C, 41, 47 and 53 colonies: calculate CFU per mL. Answer: mean 141 ÷ 3 = 47; volume × dilution = 0.1 × 10⁻² = 10⁻³ mL of original sample; 47 ÷ 10⁻³ = 47,000 = 4.7 × 10⁴ CFU per mL. Crossed mistake: \"4,700 CFU per mL\" (divided by the dilution only, forgetting the 0.1 mL). A1's counts appear nowhere earlier in the video (Revision 2: scene 11's reliability example now uses 150, 156 and 162, mean 156), so the item is unseen. (A2, identify problems and propose improvements, 4 marks) one plate of 1 mL undiluted creek water, 37 °C for 48 h, opened, \"too many colonies to count; the creek water contains dangerous bacteria\". Answer: any two, each with a fix that removes that problem: undiluted, so colonies merged (serially dilute and count the plate with about 30 to 300 colonies); 37 °C favours microbes adapted to the human body and opening the plate exposed her to whatever grew (incubate at 25 to 30 °C, keep the plate taped and never open it, count through the lid); the conclusion overclaims (colonies show culturable microbes, not pathogens; conclude only that creek water carried many culturable microbes, or test for *E. coli* in an accredited laboratory); one plate with no controls (three plates per dilution and a sterile-water negative control); also accepted (author model, not narrated): 1 mL is too much liquid to spread evenly (spread 0.1 mL). Feedback voices problems one and two and, briefly, the overclaim (the route's stop). Crossed mistake: \"repeat it three times\" as the fix for the uncountable plate (repeats improve reliability, but three undiluted plates are still uncountable). Owner rule: each improvement must fix the stated problem; the crossed chip models an improvement that does not.", "curriculumScope": "Syllabus (NSW Biology Stage 6, 2017), as printed: \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117); design and conduct a practical investigation relating to the microbial testing of water or food samples\" this video prepares students to design and run the investigation and to read its results; watching it is not conducting it. It teaches: why water is tested and why authorities test for E. coli (an indicator), against what a school total count can show; the aim and variables; sterile sampling (water, and a food sample made up as a 10⁻¹ suspension); aseptic technique; serial dilution and why it is needed; spreading, labelling, taping and incubating (inverted, 25 to 30 °C, never 37 °C); negative and positive controls; choosing the countable plate (about 30 to 300 colonies); the CFU per mL calculation; what colonies can and cannot show; validity, reliability and accuracy; the risk assessment (risk group 1, AS/NZS 2243.3:2022, sealed plates never reopened, autoclaving before disposal). Placement (playlist order 5): after b03 (order 3) and p01 (order 4), before b04. Not re-taught: pathogen groups and viruses as non-cellular (b01, one clause in scene 10); pure culture and \"microbes come from microbes\" (b02, one clause in scene 4: the reason lids stay down); water as a transmission route (b03, one clause in scene 2). Not here: identifying species, selective media or E. coli testing as a student method (scene 2: an accredited laboratory's job); antimicrobial discs (p05); outbreak data (g01)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: water source violet (the independent variable); colonies and CFU amber (the dependent variable); controls green; \"culturable microbes\" teal and \"pathogens\" terracotta, kept apart wherever both appear; hazards terracotta; grey for tags and callbacks. Clutter rule: at most three bright text items; every tag dims when its sentence ends. All plates on screen are lidded and taped once incubated; no lid lifts after incubation, ever. Reuse: the explainer kit (`Plate`, `Callout`, `Mark`, `Countdown`, `HandText`, `DrawPath`, `scribbleEllipse`, `Enter`); B6a's `WrongChip`, `GreyTag`, `Cross`, `Cam`; bio-m5-p01's method step rail; bio-m6-p01's variables card, VRA cards, risk table layout and colony count grid with tallies (lesson-local there; copy into this lesson's folder or lift to a shared part, root to decide). New coded items (lesson-local): the dilution ladder (coded drops moving 1 mL from tube to tube along the rack plate, each tube gaining a label 10⁻¹ to 10⁻⁴ and a coded \"×10\" arrow), the plate row (the four aligned dilution plates in a row under their labels, each with a verdict chip), the scale-back line (the formula building term by term: colonies, then volume plated, then dilution, then the product, then the division), and the claim card (two columns, \"shows\" and \"doesn't show\"). No human figures.", "transitionPlan": "Three sealed plates write in one per cue with their amber counts under the labelled sample bottles to open the hook; the step rail lights its stages in turn as the clear tap bottle, a small clear plate and the rod bacterium explain why water is tested; the variables card writes row by row with a pen link to the bottles and a zoom on one colony; the sampling bottle on its pole and the bottles plate appear as aseptic technique is glossed; the lawn plate slides to a thumbnail as the dilution rack fills the centre and coded drops move along the ladder from 10 to the minus 1 to 10 to the minus 4; a coded drop and spreader arc fill the agar plate, which copies into a row of three, is labelled on its base, taped, inverted and slid into the incubator; the controls card crossfades its negative plate to a contaminated one; the plate row lays out film, merging, countable and sparse plates under their labels; the task, grouped givens and equation write in separate parts and the scale-back line builds term by term; the mixed colonies plate and the claim card set what colonies show and do not show; the three evaluation cards and the risk table write in the right zone in turn; each attempt clears the board and its feedback underlines the question as working lines or a problem table fill; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M7P02B_ROWS,
+    },
+    'm7b04': {
+        'design': D + 'lessons/bio-m7-b04.md',
+        'learning_review': D + 'checks/m7b04-learning-review.md',
+        'science_check': D + 'checks/m7b04-claude-science-check.md',
+        'meta': {"title": "How Disease Damages Farm Production: Myrtle Rust and Foot-and-Mouth", "subtitle": "How does disease damage farm production, and why does the bill so often reach far past the sick plants and animals?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 6, "lessonIntent": "stating the three things disease needs (pathogen, a host it can infect, the right conditions); explaining how a paddock of one variety and the movement of plants and soil raise the risk; describing direct effects on crops (yield, quality, control costs) with mechanisms for rust and nematodes; assessing myrtle rust (cause: an introduced rust fungus meeting myrtles with little resistance, spread by wind and nursery plants; effects on lemon myrtle and tea tree plantations, on native species, and permanence); describing foot-and-mouth disease (virus, cloven-hoofed animals, spread, blisters, reduced milk and meat, low adult death rate); separating direct effects (in the sick animals) from indirect effects (control and closed markets) with the 2001 United Kingdom outbreak; explaining why indirect effects usually dominate for an exporter like Australia; assessing an effect by size, duration and reach; distinguishing direct and indirect effects in an unseen outbreak and giving biological and agricultural causes of crop losses."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "three-things", "farming-odds", "crop-costs", "myrtle-rust-cause", "myrtle-rust-effects", "fmd-direct", "uk-2001-indirect", "exporters", "assess", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: pathogen, host, the groups (bacteria, fungi, protozoa, helminths, viruses) and their plant cases: crown gall (bacterium), wheat stem rust (fungus), root-knot nematodes (helminth), tobacco mosaic virus. From b03: modes of transmission, fomites (contaminated objects) and that control must match the route. From bio-m5-b01: the Cavendish banana is a clone, so plantations share one weakness to disease. From bio-m5-b03b: copying a winner gives a uniform crop with a shared weakness; selective breeding and artificial pollination for rust resistance in wheat. From Year 11: leaves photosynthesise; xylem carries water up from roots. Not assumed: the three things a disease needs, direct against indirect effects, export dependence, how to assess an effect, myrtle rust, foot-and-mouth disease.", "startsWith": "Compare plant and animal cases. The video opens: In April 2010, a rust fungus turned up on plants at one nursery on the New South Wales Central Coast.", "stopsAfter": "stating the three things disease needs (pathogen, a host it can infect, the right conditions); explaining how a paddock of one variety and the movement of plants and soil raise the risk; describing direct effects on crops (yield, quality, control costs) with mechanisms for rust and nematodes; assessing myrtle rust (cause: an introduced rust fungus meeting myrtles with little resistance, spread by wind and nursery plants; effects on lemon myrtle and tea tree plantations, on native species, and permanence); describing foot-and-mouth disease (virus, cloven-hoofed animals, spread, blisters, reduced milk and meat, low adult death rate); separating direct effects (in the sick animals) from indirect effects (control and closed markets) with the 2001 United Kingdom outbreak; explaining why indirect effects usually dominate for an exporter like Australia; assessing an effect by size, duration and reach; distinguishing direct and indirect effects in an unseen outbreak and giving biological and agricultural causes of crop losses.", "nextLesson": "how a named Australian plant defends itself against a named pathogen: a banksia against *Phytophthora cinnamomi* (route entry bio-m7-b05)."},
+        'teaching': {"task": "How does disease damage farm production, and why does the bill so often reach far past the sick plants and animals?", "causalExplanation": "Causes: why wet weather matters (spores need water to germinate; scene 2); why one variety raises losses (every plant equally susceptible, nothing slows spread; scene 3); how rust and nematodes cut yield (sugars and leaf area; squeezed xylem; scene 4); why Australian myrtles were hit hard (no shared history, little resistance, not \"foreign\"; scene 5); why myrtle rust costs are permanent (cannot be eradicated; scene 6); why most culled animals were healthy (whole herds on infected and neighbouring farms, plus welfare culls of stock stranded by movement bans; scene 8); why exporters suffer most (most beef sold overseas; one case closes markets; scene 9). Visible case: the spread map, the leaf pair crossfade, the hoof pair crossfade, chips moving across the gate line, the cost bars. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 8 is the densest (the dot grid plus three chips), so the dot grid stays grey except the amber few.", "conversationalApproach": "In April 2010 a rust fungus turned up at one nursery on the New South Wales Central Coast and within a few years had spread the length of the east coast, so the question is how disease damages farm production and why the bill so often reaches far past the sick plants and animals. Causes come first: a pathogen, a host it can infect and the right conditions have to meet, and farming tips the odds because a paddock of one variety shares one weakness (the Cavendish banana recalled) and moving plants, soil and machinery carries pathogens. A crop's costs are traced as yield, quality and control cost, with rust pustules taking sugars and nematode galls squeezing the xylem. Myrtle rust is the plant case (an overseas fungus meeting myrtles with little resistance, wind and nursery spread, fungicide costs in dense plantations, an endangered native guava and no eradication), and foot-and-mouth disease is the animal case, separating direct effects in sick animals from the indirect costs of Britain's 2001 culls, closed markets and tourism losses, and showing why an exporter like Australia fears the indirect effects most. An effect is assessed by how big, how long and how far, and the memory aid is count past the farm gate. Two exam questions follow with brief feedback.", "openingDecision": "In April 2010, a rust fungus turned up on plants at one nursery on the New South Wales Central Coast. Within a few years it had spread the length of the east coast, on eucalypts, paperbarks and lemon myrtle. So how does disease damage farm production, and why does the bill so often reach far past the sick plants and animals?", "understandingCheck": "12a distinguishes direct from indirect effects of a hypothetical foot-and-mouth outbreak in an exporting country and asks which costs more (the route's stop: production losses and control consequences). 12c asks for one biological and one agricultural cause of district-wide rust losses (the \"causes\" half of the dotpoint, and the scene 3 idea). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ1-03: \"assess the causes and effects of diseases on agricultural production, including but not limited to:\", with its listed examples \"plant diseases\" and \"animal diseases\". Verb \"assess\" (make a judgement of value, quality, outcomes, results or size): scene 10 gives the criteria, scenes 6, 8 and 9 apply them, and both attempts ask for judged causes or effects rather than lists."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One farm gate ledger board: a coded vertical dashed line down the right third of the frame, labelled in small grey handwriting \"farm gate\", splits the board into \"on the farm\" (left) and \"past the farm gate\" (right). A cause strip sits along the top left (scene 2's three parts). Effect chips land on the side where the cost falls: yield, quality and sick animals on the left (teal tag \"direct\"); culled healthy herds, movement bans, closed exports, tourism and ecosystems on the right (amber tag \"indirect\" or green tag \"beyond the farm\"). Painted plates carry each case: diseased against healthy plates appear as aligned pairs that crossfade (the myrtle leaf pair, the hoof pair); the wheat rust plate is already a side-by-side pair. No people, hands, faces or farmers: farms are shown by crops, animals, a gate, a stock truck and a shipping container. Coded elements are abstract only: the gate line, chips, arrows, a small coded map outline of Australia for the spread (scene 6), a dotted spread path, and cost bars in scene 8. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey when the next lands. Plates are scaled proportionally, never stretched.", "transitionPlan": "The AusSpreadMap outline draws with one pulsing amber dot on the Central Coast and a dotted path running up and down the east coast as small host chips write; the CauseStrip fills its three slots one per cue with the hyphae plate, the healthy wheat leaf and a coded water film; the strip shrinks as the banana plantation and monoculture plates show one variety and the stock truck plate slides off the board edge on a dotted arrow; the GateLedger completes with its farm gate line as the rust leaf, wheat ear and galled root plates (a coded xylem line narrowing inside a gall) and the quality and cost chips land on the farm side; the cause strip refills for myrtle rust with the pustules and the myrtle leaf, then the map takes new dots for Tasmania, the Northern Territory and the East Kimberley while the lemon myrtle rows plate and the native guava chip land either side of the gate; the red cattle plate and the hoof pair fill the farm side for foot-and-mouth disease; a grid of plain grey dots fills past the gate for the 2001 culls with closed markets and tourism chips; the empty map returns as the beef bar splits and an export arrow carries across the gate; three question chips write with their time bars; one handwritten memory line writes as thumbnails slide past the gate; each attempt clears the board and its feedback underlines the card as a small GateLedger or answer table fills; the decision rule chips and next chip close; scene crossfade with settle."},
+        'rows': M7B04_ROWS,
+    },
+    'm7b05': {
+        'design': D + 'lessons/bio-m7-b05.md',
+        'learning_review': D + 'checks/m7b05-learning-review.md',
+        'science_check': D + 'checks/m7b05-claude-science-check.md',
+        'meta': {"title": "How Plants Defend Themselves: Banksia vs Phytophthora Dieback", "subtitle": "Plants can't send immune cells to an infection. So how does a banksia defend its roots against Phytophthora, and why does one species hold out while another dies?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 7, "lessonIntent": "describing how *P. cinnamomi* (a water mould, not a fungus) infects roots (swimming spores attracted to roots, hyphae through the root, root death, wilting from the roots up) and spreads (water, soil on boots and tyres); explaining why a plant defends cell by cell; distinguishing defences that are always there (lignin and suberin in older root walls, bark; the young root behind the tip as the weak point, entered where two cells meet) from those switched on after detection (callose plugs, extra lignin, antimicrobial chemicals such as phytoalexins); explaining the hypersensitive response as a firebreak against a pathogen that needs living cells; tracing the published observations for scarlet banksia and old man banksia to a difference in timing, and naming the limits of that evidence (seedlings, laboratory, one study, tolerance not immunity); explaining why hygiene and phosphite fit this pathogen; interpreting unseen inoculation data and evaluating a claim about a dead spot."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "water-mould", "no-moving-cells", "barriers", "switched-on", "firebreak", "evidence", "timing", "limits", "control", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: pathogens and hosts, fungi as a group, plants are hosts too. From b03: indirect transmission by soil, water and fomites; control matches the route. From b04: introduced pathogens meet hosts with little resistance (myrtle rust); a disease can damage ecosystems as well as farms. From bio-m5-b02b: the plant reproduction context only (it assumes, and does not teach, roots or root tips). From Year 11: cell walls of cellulose; roots take up water; xylem carries it up. Not assumed: the root tip zones, oomycetes, zoospores, lignin, suberin, callose, phytoalexins, the hypersensitive response, always-there against switched-on defences, how to read an inoculation study.", "startsWith": "Use a named plant and pathogen. The video opens: On many bush tracks in south-western Australia, there are boot-cleaning stations.", "stopsAfter": "describing how *P. cinnamomi* (a water mould, not a fungus) infects roots (swimming spores attracted to roots, hyphae through the root, root death, wilting from the roots up) and spreads (water, soil on boots and tyres); explaining why a plant defends cell by cell; distinguishing defences that are always there (lignin and suberin in older root walls, bark; the young root behind the tip as the weak point, entered where two cells meet) from those switched on after detection (callose plugs, extra lignin, antimicrobial chemicals such as phytoalexins); explaining the hypersensitive response as a firebreak against a pathogen that needs living cells; tracing the published observations for scarlet banksia and old man banksia to a difference in timing, and naming the limits of that evidence (seedlings, laboratory, one study, tolerance not immunity); explaining why hygiene and phosphite fit this pathogen; interpreting unseen inoculation data and evaluating a claim about a dead spot.", "nextLesson": "what happens first when a pathogen gets into an animal (route entry bio-m7-b06)."},
+        'teaching': {"task": "Plants can't send immune cells to an infection. So how does a banksia defend its roots against Phytophthora, and why does one species hold out while another dies?", "causalExplanation": "Causes: why the plant wilts (roots die, less water up; scene 2); why a plant defends cell by cell (no circulating immune cells; scene 3); why the root tip is the weak point (thin young walls, no bark, while older walls toughen with age; scene 4); where the hypha gets in (usually where two cells meet; scene 4); how callose stops a hypha (a plug where it pushes in; scene 5); why cell death helps (a pathogen that needs living cells has nothing to feed on; scene 6); why one banksia held out (both laid down callose; the clearest difference the study reports is timing; scenes 7 and 8); why a short shared history is not \"no defence\" (old man banksia held it back; scene 9); why phosphite helps (faster walls, not soil removal; scene 10). Visible case: spores homing on the root, the cell pair revealing each defence in place, the seedling triplet racing on the day line. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 7 is the densest (two rows, five ticks), so only the row being spoken about is bright.", "conversationalApproach": "Boot-cleaning stations stand on bush tracks in south-western Australia because Phytophthora cinnamomi lives in the soil and about 40 per cent of the region's native plant species are susceptible, yet some banksias cope far better than others, so the question is how a plant with no immune cells defends itself and why one banksia holds out while another dies. The attacker is a water mould, not a fungus, whose swimming spores settle behind the root tip and grow hyphae that kill root tissue so less water reaches the leaves. Because no defender cells travel to the site, every cell defends itself, with barriers that are always there (lignin and other waterproof materials in older walls and bark, leaving the young root least protected) and responses switched on after detection (callose plugs, extra lignin and phytoalexins), and the hypersensitive response as a firebreak of deliberately dead cells around a pathogen that feeds on living cells. The 1998 seedling study compares scarlet banksia and old man banksia, timing is the clearest difference, and the evidence limits are named (seedlings, a lab, one study, tolerant not immune, an introduced pathogen). Hygiene and phosphite match the control to the defence, and the memory aid is that the hypersensitive response is a firebreak. Two exam questions follow with brief feedback.", "openingDecision": "On many bush tracks in south-western Australia, there are boot-cleaning stations. The reason is in the soil: Phytophthora cinnamomi, a pathogen that about 40 per cent of the region's native plant species are susceptible to. Yet some banksia species cope with it far better than others. So how does a plant with no immune cells defend itself, and why does one banksia hold out while another dies?", "understandingCheck": "12a interprets hypothetical inoculation data for two species (callose timing and dead-zone length) and explains the response (the route's stop: explain barrier and chemical responses with evidence). 12c evaluates a claim that a small, stable dead spot means the defence has failed (the hypersensitive response, the site's misconception). Revision 3 (Codex check 100): the stem names a fungus that can feed only on living cells and gives rapid cell death within hours as evidence, because a stable spot alone does not identify the defence, and cell death can help a pathogen that feeds on dead tissue. Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ2-01: \"investigate the response of a named Australian plant to a named pathogen through practical and/or secondary-sourced investigation, for example:\", with its listed examples \"fungal pathogens\" and \"viral pathogens\". The listed examples are \"for example\"; P. cinnamomi is a fungus-like oomycete, so it is not one of the two listed examples, but it is a named pathogen of named Australian plants, and the site uses it. The investigation is secondary-sourced (scenes 7 to 9): published observations are traced to the plant's responses and their limits are named. Verb \"investigate\" (plan, inquire into and draw conclusions about): examined, per the site's Explain model, as explain a named response with evidence; both attempts use evidence."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One defence race board. Left two-thirds: painted root and cell plates on which each defence is shown in place. Right third: a coded defence ladder of three rungs, filled as taught: \"barriers: always there\" (scene 4), \"switched on: after detection\" (scene 5), \"firebreak: cells die\" (scene 6). In scenes 7 and 8 the board becomes a race strip: a coded day line (day 0, 1, 3, 5, 9, as small grey ticks; no invented values between ticks) with two rows, one per species, each row carrying an aligned seedling plate that crossfades to its observed state at the ticks the study reports. Diseased against healthy plates are aligned pairs or triplets that crossfade (the banksia pair; the root cell triplet; the seedling triplet). The banksia pair uses the side-by-side fallback until its retake arrives (next bullet). No people, hands, faces, walkers or rangers: tracks and hygiene are shown by the boot-cleaning station alone. Coded elements are abstract only: the ladder, the day line, chips, arrows, swimming-path dotted lines and a signal pulse along a stem in scene 6. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.", "transitionPlan": "The boot-cleaning station plate opens the hook as a coded soil band takes amber specks and the healthy and diseased banksia plates appear side by side; the zoospore plate shows a sporangium releasing swimming spores while a crossed fungus chip dims, and the spores swim to a root tip on the root tip plate and grow threads in, then the board pulls back to the dying banksia with a fading blue water arrow up its stem; the board clears to the defence race layout with the root cells entry plate and a ladder of defence rungs; the always-there rung lights as a coded inset shades the root from thin-walled tip to toughened older root; the switched-on rung lights as the entry plate crossfades region by region to its aligned defended partner for callose, lignin and phytoalexins; the firebreak rung reveals the ring of dead cells around the stopped hypha; the RaceStrip draws its day line with two seedling rows, the scarlet and old man banksia plates at each start and damage marks advancing by day; callose chips and a teal bracket set the timing difference; three grey limit chips write in a column; the boot station and the treated banksia plate return for hygiene and phosphite; one handwritten memory line writes with the small dead ring and a clock mark; each attempt clears the board and its feedback underlines the card as an answer table or verdict block fills; the decision rule chips and next chip close; scene crossfade with settle."},
+        'rows': M7B05_ROWS,
+    },
+    # --- M7 b03, p02, b04 and b05 entries (end) ---
 }
 
 

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B03-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b03/lesson.json",
+  "lessonSha256": "dc2faf39b7d5b1369e5fa61685648208274666028865bf3591ab2c55accedbf9",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b03/lesson.production-brief.json",
+    "sha256": "a7878868050dd727e088e9a5cb9bf43192281e037054789fa87df95d2d72cf3a"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 1854, cholera was killing people in one London neighbourhood. John Snow marked the deaths on a street map, and the deaths clustered around one water pump on Broad Street. He didn't know which microbe caused cholera, but the map showed how it travelled: in drinking water. So how does a pathogen get from one host into the next, and how does knowing its route tell us where to stop it?",
+      "hash": "a2bb2e35b1ed",
+      "textSha256": "a2bb2e35b1ed51e2fff68dd5bc55107d7832301a23a84fb8008f67fa0d281984",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/hook.a2bb2e35b1ed.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/hook.a2bb2e35b1ed.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/hook.a2bb2e35b1ed.generation.json",
+      "plannedRequestSha256": "f0892566557887272c451faee8cc54a7f984f1d07f7620509a68fbdaebf4992a"
+    },
+    {
+      "id": "the-chain",
+      "parentSceneId": "the-chain",
+      "text": "To spread, a pathogen has to leave one host, travel, and get into a new host. The way it travels is called its mode of transmission, and there are three: direct contact, indirect contact, and vector transmission. Each step is a link in a chain, and every link is a place where the chain can break.",
+      "hash": "69f7f1acf84d",
+      "textSha256": "69f7f1acf84d61ba0c2debf16f5820cab8c7b5b5684ee5294c93fa42e9312806",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/the-chain.69f7f1acf84d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/the-chain.69f7f1acf84d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/the-chain.69f7f1acf84d.generation.json",
+      "plannedRequestSha256": "681f705d722c37fc3a32223f0c2a807020a439b60dae41edd0db933786b92dde"
+    },
+    {
+      "id": "direct-contact",
+      "parentSceneId": "direct-contact",
+      "text": "In direct contact, the pathogen passes straight from one host to another, with nothing in between. Tinea spreads by skin touching skin. HIV passes in blood and other body fluids. And large droplets from a cough or sneeze fall within a metre or two, so close-range droplet spread, a main route for influenza, is usually grouped with direct contact.",
+      "hash": "fff67abf763c",
+      "textSha256": "fff67abf763ce84a7cc63f19353c79151da40996880f88a8d201531cf1e57b1c",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/direct-contact.fff67abf763c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/direct-contact.fff67abf763c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/direct-contact.fff67abf763c.generation.json",
+      "plannedRequestSha256": "c318845ab69ffd99fcbd83bc33d8cb1b573ec0d4e2548a7f0316bab501698218"
+    },
+    {
+      "id": "indirect-contact",
+      "parentSceneId": "indirect-contact",
+      "text": "In indirect contact, something non-living carries the pathogen between hosts. It might be a contaminated object, called a fomite, like a door handle carrying norovirus. It might be water, like the Broad Street pump carrying cholera, or food, like undercooked chicken carrying Salmonella. Or it might be the air: tuberculosis and measles travel in tiny particles that hang in a room after an infected person leaves.",
+      "hash": "2ca6341f9809",
+      "textSha256": "2ca6341f98096e70b4e0ac0c16575bfc4986ade186dee8d34fa65da519500a46",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/indirect-contact.2ca6341f9809.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/indirect-contact.2ca6341f9809.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/indirect-contact.2ca6341f9809.generation.json",
+      "plannedRequestSha256": "629ac98d37c97f0e0c934f73db112f6a5a85770337e7c68b262760a572549256"
+    },
+    {
+      "id": "vector",
+      "parentSceneId": "vector",
+      "text": "In vector transmission, a living organism, usually an insect or a tick, carries the pathogen from host to host. Anopheles mosquitoes carry Plasmodium, the protozoan that causes malaria. Plasmodium develops inside the mosquito, so the mosquito is part of its life cycle. Careful, though: a door handle isn't a vector. A vector is alive. A contaminated object is a fomite.",
+      "hash": "33c7a837a8e3",
+      "textSha256": "33c7a837a8e36e55c4088bfacedaa4b51af0c2b7385d02b129b0ac881ab43b0e",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/vector.33c7a837a8e3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/vector.33c7a837a8e3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/vector.33c7a837a8e3.generation.json",
+      "plannedRequestSha256": "5b734ae53a0206ced7a424b2bec30c4ef17441757580ea40c21f301fe9361c09"
+    },
+    {
+      "id": "entry-adaptations",
+      "parentSceneId": "entry-adaptations",
+      "text": "Now, how are pathogens built for this? Start with getting in. Many bacteria have fimbriae, short hair-like threads that grip molecules on host cells, so the bacteria aren't washed away by mucus or urine. Viruses have surface proteins that fit receptor molecules on particular host cells. The COVID-19 virus's spike protein binds a receptor on cells lining the airways, and that lets the virus get inside.",
+      "hash": "d111816e7f39",
+      "textSha256": "d111816e7f394cb588accfd4d31686387f80ca7a07f6c5c11c9714ffc78c636c",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/entry-adaptations.d111816e7f39.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/entry-adaptations.d111816e7f39.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/entry-adaptations.d111816e7f39.generation.json",
+      "plannedRequestSha256": "48fc967b88a2e0bc2637aba45e55d21518fdf934728051d9421237f3cd42ebd7"
+    },
+    {
+      "id": "compare-and-hold",
+      "parentSceneId": "compare-and-hold",
+      "text": "So both grip molecules on the host cell's surface. The difference is what comes next: the bacterium can multiply on that surface, while the virus has to get inside the cell. Bigger pathogens hold on differently. The pork tapeworm's head has a ring of hooks and four suckers, which anchor it to the gut wall, so it isn't swept out with digested food.",
+      "hash": "24e3b26f4b9b",
+      "textSha256": "24e3b26f4b9b862477ae2a297f5eafb8817b1cfda83d6539a5c8c47867fc6527",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/compare-and-hold.24e3b26f4b9b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/compare-and-hold.24e3b26f4b9b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/compare-and-hold.24e3b26f4b9b.generation.json",
+      "plannedRequestSha256": "36b1f2119d41be70d67a64c15f62b0d1c462fe1bb90bdbb972627f0ceaa1dbcb"
+    },
+    {
+      "id": "transmission-adaptations",
+      "parentSceneId": "transmission-adaptations",
+      "text": "Now, getting out. Influenza multiplies in the airway lining and triggers coughing and sneezing, which throw out droplets full of virus. Plasmodium ends up in the mosquito's salivary glands, so it's injected with saliva into the skin when the mosquito bites. The tapeworm's eggs leave in faeces and become cysts in pig muscle, so undercooked pork carries it on. And tobacco mosaic virus has a coat so tough that it survives on pruning tools, which carry it from plant to plant.",
+      "hash": "0ec91afb5b66",
+      "textSha256": "0ec91afb5b666effd810c1f2656ee8d07f867b5b9c1c195a810bdcf8e929d27d",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/transmission-adaptations.0ec91afb5b66.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/transmission-adaptations.0ec91afb5b66.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/transmission-adaptations.0ec91afb5b66.generation.json",
+      "plannedRequestSha256": "d4c4377371b3a86ac59c6008c2c0e5a5462f8ab2bdd21691ab31851c2219a08e"
+    },
+    {
+      "id": "two-jobs",
+      "parentSceneId": "two-jobs",
+      "text": "Exams ask you to compare these, so keep two jobs apart. An entry adaptation gets a pathogen in and holds it where it enters, like fimbriae or hooks. A transmission adaptation gets it out and across to the next host, like triggering a cough or riding in mosquito saliva. Name the feature, say what it does, then link it to its job.",
+      "hash": "ad001efd959c",
+      "textSha256": "ad001efd959c95788b020e9d8e76232d666323ecf708e552296b7e9b9512e067",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/two-jobs.ad001efd959c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/two-jobs.ad001efd959c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/two-jobs.ad001efd959c.generation.json",
+      "plannedRequestSha256": "8cba42ba59dcc1b15b1fbd1e8e41282df4e6bda62eeeb7b6e9aa78bcddd2f9f2"
+    },
+    {
+      "id": "break-the-link",
+      "parentSceneId": "break-the-link",
+      "text": "Knowing the route tells you where to break the chain. Direct contact: barriers and distance, like gloves, condoms and staying home when sick. Indirect contact: treat the carrier, by chlorinating water, cooking food properly, cleaning surfaces and ventilating rooms. Vectors: bed nets, repellent, and draining standing water where mosquitoes breed. Snow had the pump's handle taken off, which broke the water link. Get the route wrong, and scrubbing surfaces does little against tuberculosis in the air.",
+      "hash": "05eb9ada4bb3",
+      "textSha256": "05eb9ada4bb3d3a9ce8a396b07d193594fa238e6adde5332ef521e9c9ac5170a",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/break-the-link.05eb9ada4bb3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/break-the-link.05eb9ada4bb3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/break-the-link.05eb9ada4bb3.generation.json",
+      "plannedRequestSha256": "8b4b757ba108bd97091e2a45c2b71b18879e7c9130fa0ec9189b686245043e7a"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So name the route first, and the control follows. Every control measure breaks a link. A mask breaks droplets, clean water breaks the water route, and a bed net breaks the mosquito's.",
+      "hash": "3191c816d68e",
+      "textSha256": "3191c816d68e3aab1e22984f7420803208a41e4d57d2e72c54d70cddb45c4f84",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/memory.3191c816d68e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/memory.3191c816d68e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/memory.3191c816d68e.generation.json",
+      "plannedRequestSha256": "a760a42a93d686c1fcdb8b3722052ce5049e0e91ca6ce5792aed6c1c723befdc"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. After heavy rain, Ross River virus cases rose in a Queensland town. The virus is carried by mosquitoes that breed in standing water, and it isn't passed directly between people. Measure A isolates infected people in hospital. Measure B drains standing water and treats it with larvicide. Identify the mode of transmission, and justify which measure would better reduce new cases. Pause here to answer.",
+      "hash": "e15fccc02bbe",
+      "textSha256": "e15fccc02bbe1397e0ad367fe20d21a599cbd968acbe153be04319970e21a48c",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/attempt.e15fccc02bbe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/attempt.e15fccc02bbe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/attempt.e15fccc02bbe.generation.json",
+      "plannedRequestSha256": "cb0e1b8204f9f64d318242f5e4e8504d8a7f0a484214bc313ed7e52ca5630ab1"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "It's vector transmission, because mosquitoes carry the virus between hosts. Measure B is better: draining and treating standing water removes where mosquitoes breed, so fewer mosquitoes carry the virus to new people. Choosing isolation is the classic mistake. The virus isn't passed directly between people, so isolation targets a link it doesn't use.",
+      "hash": "6b590f88ba01",
+      "textSha256": "6b590f88ba01a6a02bcc96de71dbf89bbdef4c0310a6e17b51cd5197efa83205",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/feedback-one.6b590f88ba01.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/feedback-one.6b590f88ba01.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/feedback-one.6b590f88ba01.generation.json",
+      "plannedRequestSha256": "b1d8cb173754bb9962a695657138d19cdbcdd687bbd7b6eec642a9938aba78e5"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. The cholera bacterium's pili, hair-like threads, help it cling in clumps to the small intestine's lining, and it causes watery diarrhoea that releases huge numbers of bacteria. Influenza virus has a surface protein that binds receptors on airway cells, and infection triggers coughing. Compare how these two pathogens are adapted for entry into, and transmission between, hosts. Pause here to answer.",
+      "hash": "abffcf9a71a0",
+      "textSha256": "abffcf9a71a0a477242756847089c3784289cdaf7bdd92069b2f6e901104cf1d",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/attempt-two.abffcf9a71a0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/attempt-two.abffcf9a71a0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/attempt-two.abffcf9a71a0.generation.json",
+      "plannedRequestSha256": "30cbab0ad9b9b7aacbb9b58cfc5e14b7c8216335a440a102729be1ceacfce41a"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Similar: both hold on where they enter, pili on the gut lining and the protein on airway cells, and both cause a symptom that releases them. Different: cholera leaves in diarrhoea and is swallowed in water, whereas influenza leaves in coughed droplets and is breathed in. Writing two separate descriptions, with no similarity or difference, is the classic mistake.",
+      "hash": "8422972d2a94",
+      "textSha256": "8422972d2a94a7964007965764c0546c7729661048ff3ffc9a8d6b16a5840465",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/feedback-two.8422972d2a94.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/feedback-two.8422972d2a94.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/feedback-two.8422972d2a94.generation.json",
+      "plannedRequestSha256": "80e026c40865fadd88ee55b411c7fef6931f5db82d10e208d212128328eae3a6"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any disease, trace how the pathogen leaves, travels and enters, sort each adaptation by its job, and break the link its route depends on. Next, a classroom practical that models how an infection spreads through a group.",
+      "hash": "cbc6174de455",
+      "textSha256": "cbc6174de4557da77d94c4335eab66c5816968490f95608d92001cebad22df7f",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/decision-rule.cbc6174de455.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/decision-rule.cbc6174de455.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/decision-rule.cbc6174de455.generation.json",
+      "plannedRequestSha256": "5c911f6110e71e06f09a850d342f604448c28a610e005b90ee5a2cb86b404678"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B03-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

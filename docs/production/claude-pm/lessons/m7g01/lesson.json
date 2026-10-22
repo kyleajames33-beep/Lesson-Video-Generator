@@ -1,0 +1,184 @@
+{
+  "title": "Hydrocarbon Naming, Isomers and Reactions: HSC-Style Practice",
+  "subtitle": "Given a skeletal formula, a molecular formula, a reagent or a test result, how do you name a hydrocarbon, sort its isomers, and predict or work back through its reactions?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 7,
+  "lessonIntent": "naming two skeletal alkenes, numbering from the end nearer the double bond, and classifying them as chain isomers with a reason; identifying addition and substitution from the bonds and conditions, and writing an equation for one product of each; identifying an alkyne from its tetrachloro addition product by counting and placing the added atoms; evaluating a bromine water conclusion with the molecular formula.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A hydrocarbon question can ask you to name a molecule, sort its isomers, or predict what it makes. Each one here comes down to three checks. Which bonds does it have? What's added or swapped, and under what conditions? And do the atoms and the name check out? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Two hydrocarbons, A and B, are shown as skeletal formulas. Give the IUPAC name of each compound. Then identify the type of structural isomerism shown by A and B, and justify your answer. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-names",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with A. Its longest chain has six carbons and one double bond, so it's a hexene. Number from the end nearer the double bond, and it starts at carbon two: hex-two-ene. Now B. Its longest chain has five carbons, with a methyl branch. The double bond wins the numbering, so count from the right-hand end. That puts the double bond at carbon two, and the methyl on carbon four: four-methylpent-two-ene."
+      }
+    },
+    {
+      "id": "q1-isomers",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now count the atoms. Each is C six H twelve: six carbons, and one double bond, so two fewer hydrogens than the alkane. Same formula, different structures, so they're structural isomers. Both are alkenes, so it's not functional group isomerism. What changed is the carbon skeleton: A is a straight chain, and B is branched. So they're chain isomers."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is numbering B from the left, the way you read it. That gives two-methylpent-three-ene. The branch gets the low number, but the double bond is named in the ending, so it gets first claim on the low numbers."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. Pent-two-ene reacts with hydrogen chloride at room temperature. In a separate reaction, pentane reacts with chlorine under UV light. For each reaction, identify the type of reaction, and write a balanced equation, using structural formulas, for the formation of one organic product. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-addition",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with pent-two-ene. It has a double bond, and hydrogen chloride needs no light or catalyst, so this is addition: the H goes on one carbon of the double bond, and the Cl on the other. Pent-two-ene isn't the same at both ends, so there are two possible products. Put the Cl on carbon two, and you get two-chloropentane. Three-chloropentane is just as correct. Either way, two molecules make one, and nothing is lost."
+      }
+    },
+    {
+      "id": "q2-substitution",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now pentane. It has only single bonds, so it can't add. The UV light gives the energy for substitution: one hydrogen swaps for a chlorine, and that hydrogen leaves as H Cl. Swap one on an end carbon, and you get one-chloropentane. Notice that both reactions make a chloropentane, C five H eleven Cl. What tells them apart is the starting bonds, and the H Cl."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is treating pentane like an alkene, and putting a chlorine on two neighbouring carbons. Count the atoms: that product is two hydrogens short, so the equation can't balance. An alkane has no double bond to open."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. A hydrocarbon, X, reacts with excess chlorine at room temperature, in the dark. The only organic product is one, one, two, two-tetrachlorobutane. Identify X, and explain your reasoning, including the type of reaction. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-what-added",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Work backwards from the product. It's in the dark, with no UV light, so this isn't substitution. Chlorine has added. The product has four chlorine atoms, so two chlorine molecules added to each X molecule. A double bond can open only once, so it would add one chlorine molecule. Adding twice needs two extra bonds: a triple bond, or two double bonds."
+      }
+    },
+    {
+      "id": "q3-where",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now where. All four chlorines are on carbons one and two, two on each. So both additions happened across the same pair of carbons. That needs a triple bond, between carbon one and carbon two. Take the chlorines off, and put the triple bond back. X is but-one-yne, C H triple bond C, C H two, C H three. Check: C four H six, plus two Cl two, gives C four H six Cl four."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is but-one-ene. Its double bond is in the right place, but it can add only one chlorine molecule, giving one, two-dichlorobutane, with just two chlorines."
+      }
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four. X is an open-chain hydrocarbon with one multiple bond. Its molecular formula is C five H eight, and it decolourises bromine water at room temperature, without UV light. A student concludes that X is an alkene, because it decolourises bromine water. Evaluate the student's conclusion. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4-evidence",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with what the test shows. Losing the orange colour means bromine has added, so X has a double bond or a triple bond. That rules out an alkane. But alkenes and alkynes both decolourise bromine water, so the test alone can't tell you which. The student has read more into the result than it can show."
+      }
+    },
+    {
+      "id": "q4-judgement",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So use the formula. With five carbons, an alkene would be C n H two n, C five H ten. An alkyne is C n H two n minus two, C five H eight, which matches X. So the student's conclusion is incorrect. The test shows that X is unsaturated, and the formula shows it's an alkyne, such as pent-one-yne. It would add two bromine molecules, not one."
+      }
+    },
+    {
+      "id": "q4-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is treating bromine water as a test for double bonds only. It's a test for unsaturation: a double or a triple bond."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start any hydrocarbon question. First, find the bonds: trace the longest chain with the multiple bond, and number from its nearer end. An alkane with a halogen and UV light means substitution: swap one hydrogen, and add H X. A double or triple bond means addition, one piece on each carbon, and a triple bond adds twice. Then count the atoms, and check the formula fits the family. Next, alcohols, and what an O H group does to a molecule."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

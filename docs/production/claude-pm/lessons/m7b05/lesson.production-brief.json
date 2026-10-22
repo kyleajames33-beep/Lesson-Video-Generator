@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b05/lesson.json",
+    "lessonSha256": "103b77f4234490f2a9f09a9334f5934723e5435faf1736685ca8d7b64f471c1d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: pathogens and hosts, fungi as a group, plants are hosts too. From b03: indirect transmission by soil, water and fomites; control matches the route. From b04: introduced pathogens meet hosts with little resistance (myrtle rust); a disease can damage ecosystems as well as farms. From bio-m5-b02b: the plant reproduction context only (it assumes, and does not teach, roots or root tips). From Year 11: cell walls of cellulose; roots take up water; xylem carries it up. Not assumed: the root tip zones, oomycetes, zoospores, lignin, suberin, callose, phytoalexins, the hypersensitive response, always-there against switched-on defences, how to read an inoculation study.",
+    "startsWith": "Use a named plant and pathogen. The video opens: On many bush tracks in south-western Australia, there are boot-cleaning stations.",
+    "stopsAfter": "describing how *P. cinnamomi* (a water mould, not a fungus) infects roots (swimming spores attracted to roots, hyphae through the root, root death, wilting from the roots up) and spreads (water, soil on boots and tyres); explaining why a plant defends cell by cell; distinguishing defences that are always there (lignin and suberin in older root walls, bark; the young root behind the tip as the weak point, entered where two cells meet) from those switched on after detection (callose plugs, extra lignin, antimicrobial chemicals such as phytoalexins); explaining the hypersensitive response as a firebreak against a pathogen that needs living cells; tracing the published observations for scarlet banksia and old man banksia to a difference in timing, and naming the limits of that evidence (seedlings, laboratory, one study, tolerance not immunity); explaining why hygiene and phosphite fit this pathogen; interpreting unseen inoculation data and evaluating a claim about a dead spot.",
+    "nextLesson": "what happens first when a pathogen gets into an animal (route entry bio-m7-b06)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b05.md"
+  ],
+  "teaching": {
+    "task": "Plants can't send immune cells to an infection. So how does a banksia defend its roots against Phytophthora, and why does one species hold out while another dies?",
+    "causalExplanation": "Causes: why the plant wilts (roots die, less water up; scene 2); why a plant defends cell by cell (no circulating immune cells; scene 3); why the root tip is the weak point (thin young walls, no bark, while older walls toughen with age; scene 4); where the hypha gets in (usually where two cells meet; scene 4); how callose stops a hypha (a plug where it pushes in; scene 5); why cell death helps (a pathogen that needs living cells has nothing to feed on; scene 6); why one banksia held out (both laid down callose; the clearest difference the study reports is timing; scenes 7 and 8); why a short shared history is not \"no defence\" (old man banksia held it back; scene 9); why phosphite helps (faster walls, not soil removal; scene 10). Visible case: spores homing on the root, the cell pair revealing each defence in place, the seedling triplet racing on the day line. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 7 is the densest (two rows, five ticks), so only the row being spoken about is bright.",
+    "conversationalApproach": "Boot-cleaning stations stand on bush tracks in south-western Australia because Phytophthora cinnamomi lives in the soil and about 40 per cent of the region's native plant species are susceptible, yet some banksias cope far better than others, so the question is how a plant with no immune cells defends itself and why one banksia holds out while another dies. The attacker is a water mould, not a fungus, whose swimming spores settle behind the root tip and grow hyphae that kill root tissue so less water reaches the leaves. Because no defender cells travel to the site, every cell defends itself, with barriers that are always there (lignin and other waterproof materials in older walls and bark, leaving the young root least protected) and responses switched on after detection (callose plugs, extra lignin and phytoalexins), and the hypersensitive response as a firebreak of deliberately dead cells around a pathogen that feeds on living cells. The 1998 seedling study compares scarlet banksia and old man banksia, timing is the clearest difference, and the evidence limits are named (seedlings, a lab, one study, tolerant not immune, an introduced pathogen). Hygiene and phosphite match the control to the defence, and the memory aid is that the hypersensitive response is a firebreak. Two exam questions follow with brief feedback.",
+    "openingDecision": "On many bush tracks in south-western Australia, there are boot-cleaning stations. The reason is in the soil: Phytophthora cinnamomi, a pathogen that about 40 per cent of the region's native plant species are susceptible to. Yet some banksia species cope with it far better than others. So how does a plant with no immune cells defend itself, and why does one banksia hold out while another dies?",
+    "understandingCheck": "12a interprets hypothetical inoculation data for two species (callose timing and dead-zone length) and explains the response (the route's stop: explain barrier and chemical responses with evidence). 12c evaluates a claim that a small, stable dead spot means the defence has failed (the hypersensitive response, the site's misconception). Revision 3 (Codex check 100): the stem names a fungus that can feed only on living cells and gives rapid cell death within hours as evidence, because a stable spot alone does not identify the defence, and cell death can help a pathogen that feeds on dead tissue. Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ2-01: \"investigate the response of a named Australian plant to a named pathogen through practical and/or secondary-sourced investigation, for example:\", with its listed examples \"fungal pathogens\" and \"viral pathogens\". The listed examples are \"for example\"; P. cinnamomi is a fungus-like oomycete, so it is not one of the two listed examples, but it is a named pathogen of named Australian plants, and the site uses it. The investigation is secondary-sourced (scenes 7 to 9): published observations are traced to the plant's responses and their limits are named. Verb \"investigate\" (plan, inquire into and draw conclusions about): examined, per the site's Explain model, as explain a named response with evidence; both attempts use evidence."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One defence race board. Left two-thirds: painted root and cell plates on which each defence is shown in place. Right third: a coded defence ladder of three rungs, filled as taught: \"barriers: always there\" (scene 4), \"switched on: after detection\" (scene 5), \"firebreak: cells die\" (scene 6). In scenes 7 and 8 the board becomes a race strip: a coded day line (day 0, 1, 3, 5, 9, as small grey ticks; no invented values between ticks) with two rows, one per species, each row carrying an aligned seedling plate that crossfades to its observed state at the ticks the study reports. Diseased against healthy plates are aligned pairs or triplets that crossfade (the banksia pair; the root cell triplet; the seedling triplet). The banksia pair uses the side-by-side fallback until its retake arrives (next bullet). No people, hands, faces, walkers or rangers: tracks and hygiene are shown by the boot-cleaning station alone. Coded elements are abstract only: the ladder, the day line, chips, arrows, swimming-path dotted lines and a signal pulse along a stem in scene 6. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The boot-cleaning station plate opens the hook as a coded soil band takes amber specks and the healthy and diseased banksia plates appear side by side; the zoospore plate shows a sporangium releasing swimming spores while a crossed fungus chip dims, and the spores swim to a root tip on the root tip plate and grow threads in, then the board pulls back to the dying banksia with a fading blue water arrow up its stem; the board clears to the defence race layout with the root cells entry plate and a ladder of defence rungs; the always-there rung lights as a coded inset shades the root from thin-walled tip to toughened older root; the switched-on rung lights as the entry plate crossfades region by region to its aligned defended partner for callose, lignin and phytoalexins; the firebreak rung reveals the ring of dead cells around the stopped hypha; the RaceStrip draws its day line with two seedling rows, the scarlet and old man banksia plates at each start and damage marks advancing by day; callose chips and a teal bracket set the timing difference; three grey limit chips write in a column; the boot station and the treated banksia plate return for hygiene and phosphite; one handwritten memory line writes with the small dead ring and a clock mark; each attempt clears the board and its feedback underlines the card as an answer table or verdict block fills; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. `m7-boot-cleaning-station-v1.png` (new) appears at the left at medium size (grey tag \"bush track, south-west WA\").",
+      "teachingReason": "Hook (boots at the track): On many bush tracks in south-western Australia, there are boot-cleaning stations.",
+      "narrationCue": "in the soil / about 40 per cent / cope with it far better / another dies / how does a plant with no immune cells defend itself",
+      "motionPurpose": "On the spoken cues: On \"in the soil\" a coded soil band draws along the lower edge and small amber specks appear in it (tag \"*Phytophthora cinnamomi*\"). On \"about 40 per cent\" a small grey chip writes: \"about 40% of the region's native species: susceptible\". On \"cope with it far better\" `m7-banksia-healthy-v1.png`",
+      "motionRole": "explain",
+      "onScreenChange": "no people. `m7-boot-cleaning-station-v1.png` (new) appears at the left at medium size (grey tag \"bush track, south-west WA\"). On \"in the soil\" a coded soil band draws along the lower edge and small amber specks appear in it (tag \"*Phytophthora cinnamomi*\"). On \"about 40 per cent\" a small grey chip writes: \"about 40% of the region's native species: susceptible\". On \"cope with it far better\" `m7-banksia-healthy-v1.png` (new) appears at the centre right (no place or species tag on it: the hook claims only that species differ), and on \"another dies\" its aligned partner `m7-banksia-phytophthora-v2.png` (re-matted; see brief) crossfades in beside a second copy of the healthy plate, so a healthy and a dying banksia stand side by side on the soil band. **Fallback until the clean Banksia retake arrives (Revision 3):** no in-place crossfade; `m7-banksia-phytophthora-v2.png` fades in as its own plate beside the single healthy plate (side by side, each at its own uniform scale, a small gap between them), so the IoU 0.811 misalignment and the edge fringes never overlap on screen (see Decisions). On \"how does a plant with no immune cells defend itself\" the station shrinks to the upper left and the heading writes on: \"How does a banksia defend itself?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "water-mould",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-phytophthora-zoospores-v1.png` (new) appears at the upper left (a sporangium releasing swimming spores); grey screen gloss \"water mould (oomycete): not a fungus\"; a grey chip \"it's a fungus\" fades in and takes a grey scribble cross, with the small grey reason \"cellulose walls: a different group\".",
+      "teachingReason": "The attacker: a water mould: Phytophthora cinnamomi looks like a fungus, but it's a water mould, a different group with cellulose in its walls.",
+      "narrationCue": "cellulose walls: a different group / swimming spores / chemicals leaking from roots / settle just behind the root tip / threads called hyphae / less water reaches the leaves",
+      "motionPurpose": "On the spoken cues: On \"swimming spores\" grey gloss \"zoospores\", and the crossed chip dims before the next tag writes. On \"chemicals leaking from roots\" `m7-root-tip-zoospores-v1.png` (new) fills the centre; `SwimPath` draws coded specks swimming in from the edges and converging behind the root tip (tag \"swim to root",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-phytophthora-zoospores-v1.png` (new) appears at the upper left (a sporangium releasing swimming spores); grey screen gloss \"water mould (oomycete): not a fungus\"; a grey chip \"it's a fungus\" fades in and takes a grey scribble cross, with the small grey reason \"cellulose walls: a different group\". On \"swimming spores\" grey gloss \"zoospores\", and the crossed chip dims before the next tag writes. On \"chemicals leaking from roots\" `m7-root-tip-zoospores-v1.png` (new) fills the centre; `SwimPath` draws coded specks swimming in from the edges and converging behind the root tip (tag \"swim to root chemicals\"); on \"settle just behind the root tip\" the plate's settled spores are ringed. On \"threads called hyphae\" the germ tubes entering the root are ringed (tag \"hyphae grow in\"). On \"less water reaches the leaves\" the board pulls back to the dying banksia plate, its roots ringed, with a thin coded blue arrow up the stem that fades halfway (tag \"roots die: less water up\"); on \"dies back from the roots up\" the yellowing leaves are ringed. On \"boots and tyres\" the boot station thumbnail pulses at the upper left (grey tag \"soil carries it: b03's fomites\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Cam lens zoom",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "no-moving-cells",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the defence race layout.",
+      "teachingReason": "Defending without moving cells: A plant can't send defenders to the site, because it has no circulating immune cells.",
+      "narrationCue": "no circulating immune cells / every cell has to defend itself / always there",
+      "motionPurpose": "On the spoken cues: `m7-root-cells-entry-v1.png` (new) fills the left two-thirds: a cut-away of young root cells with one hypha pressing in at the junction between two thin-walled outer cells (grey label \"young root cells, cut away\"). On \"no circulating immune cells\" a grey chip writes: \"no immune cells travel to the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the defence race layout. `m7-root-cells-entry-v1.png` (new) fills the left two-thirds: a cut-away of young root cells with one hypha pressing in at the junction between two thin-walled outer cells (grey label \"young root cells, cut away\"). On \"no circulating immune cells\" a grey chip writes: \"no immune cells travel to the site\". On \"every cell has to defend itself\" a soft coded outline traces several cell walls in turn. On \"always there\" and \"switch on\" the `DefenceLadder` draws on the right with its first two rungs labelled, one per cue: \"always there\" and \"switched on after detection\" (the third rung draws empty and grey). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "barriers",
+      "visualDecision": "adjust",
+      "visualReference": "the \"always there\" rung lights teal.",
+      "teachingReason": "Barriers: always there: The always-there defences are barriers.",
+      "narrationCue": "As a root ages / lignin and other waterproof materials / older roots and stems grow bark / pushes in where two cells meet / the soft, young part of the root behind the tip",
+      "motionPurpose": "On the spoken cues: On \"As a root ages\" a small coded inset bar runs along the root from tip to older root, shading from pale (thin walls) to teal (toughened) (grey tags \"young: thin walls\", \"older: toughened\"). On \"lignin and other waterproof materials\" a short stretch of older-root wall is traced in a thick teal",
+      "motionRole": "explain",
+      "onScreenChange": "the \"always there\" rung lights teal. On \"As a root ages\" a small coded inset bar runs along the root from tip to older root, shading from pale (thin walls) to teal (toughened) (grey tags \"young: thin walls\", \"older: toughened\"). On \"lignin and other waterproof materials\" a short stretch of older-root wall is traced in a thick teal coded line on the inset (gloss \"lignin, suberin: tough waterproof wall materials\"; suberin is screen only). On \"older roots and stems grow bark\" `m7-banksia-healthy-v1.png` appears small at the right edge with its woody stem base ringed (tag \"bark on older parts\"). On \"pushes in where two cells meet\" the hypha tip in the cell plate is ringed at the junction between the two outer cells and a short coded arrow points along the junction (tag \"enters where cells meet\"). On \"the soft, young part of the root behind the tip\" the root tip plate from scene 2 returns as an inset, its young zone ringed amber (tag \"weak point: thin walls, no bark\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "switched-on",
+      "visualDecision": "adjust",
+      "visualReference": "the \"switched on\" rung lights teal.",
+      "teachingReason": "Switched on after detection: Once a cell detects the pathogen, it starts building and making chemicals.",
+      "narrationCue": "callose / more lignin / antimicrobial chemicals",
+      "motionPurpose": "On the spoken cues: The entry plate crossfades partway to its aligned partner `m7-root-cells-defended-v1.png` (new) in three steps, one per cue, by masked regions of the partner revealed in place (a crossfade of the matching region only, not drawn over): on \"callose\" the bright plug under the hypha tip, at the",
+      "motionRole": "explain",
+      "onScreenChange": "the \"switched on\" rung lights teal. The entry plate crossfades partway to its aligned partner `m7-root-cells-defended-v1.png` (new) in three steps, one per cue, by masked regions of the partner revealed in place (a crossfade of the matching region only, not drawn over): on \"callose\" the bright plug under the hypha tip, at the junction where it pushes in, appears (gloss \"callose: a plug made of a sugar chain\"); on \"more lignin\" the neighbouring walls thicken; on \"antimicrobial chemicals\" the faint yellow-brown deposits in nearby cells appear (gloss \"phytoalexins: antimicrobial chemicals made after an attack\"; grey screen tag \"also phenolics\"). A small tag \"after detection\" sits on the rung. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "firebreak",
+      "visualDecision": "new",
+      "visualReference": "the \"firebreak\" rung draws and lights.",
+      "teachingReason": "The firebreak: The boldest response is the hypersensitive response.",
+      "narrationCue": "hypersensitive response",
+      "motionPurpose": "On the spoken cues: The final region of the defended plate is revealed: a small ring of dark brown, collapsed cells around the stopped hypha tip (tag \"cells die on purpose\"). On \"feeds on living cells\" the living cells beyond the ring glow faintly green and the hypha tip is ringed against the dead ring (tag \"nothing",
+      "motionRole": "explain",
+      "onScreenChange": "the \"firebreak\" rung draws and lights. The final region of the defended plate is revealed: a small ring of dark brown, collapsed cells around the stopped hypha tip (tag \"cells die on purpose\"). On \"feeds on living cells\" the living cells beyond the ring glow faintly green and the hypha tip is ringed against the dead ring (tag \"nothing living to feed on\"). On \"a signal\" the board pulls back to the healthy banksia plate; `SignalPulse` runs a soft pulse from one root up the stem and out to the leaves (grey tag \"signal: prepares the whole plant\"; grey screen tag \"salicylic acid in many plants\"). On \"arrives in time\" a small coded clock mark writes beside the ladder (amber tag \"timing matters\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "evidence",
+      "visualDecision": "adjust",
+      "visualReference": "the board becomes the `RaceStrip`: a coded day line across the bottom with small grey ticks \"day 0\", \"1\", \"3\", \"5\", \"9\", and a small grey source tag \"Tynan, Scott and Sedgley, 1998\".",
+      "teachingReason": "The evidence: two banksias: So what happens in real banksias, and does timing matter?",
+      "narrationCue": "banksia seedlings / root tips were dead within a day / reached the seedling's stem by day five / Callose was laid down late / only started on day three / by day nine it rarely reached halfway",
+      "motionPurpose": "On the spoken cues: On \"banksia seedlings\" two rows draw, each starting with `m7-banksia-seedling-healthy-v1.png` (new) at day 0; small grey species plates sit at each row's start: `m7-banksia-coccinea-v1.png` (new; tag \"scarlet banksia, WA\") on the top row and `m7-banksia-serrata-v1.png` (new; tag \"old man banksia,",
+      "motionRole": "explain",
+      "onScreenChange": "the board becomes the `RaceStrip`: a coded day line across the bottom with small grey ticks \"day 0\", \"1\", \"3\", \"5\", \"9\", and a small grey source tag \"Tynan, Scott and Sedgley, 1998\". On \"banksia seedlings\" two rows draw, each starting with `m7-banksia-seedling-healthy-v1.png` (new) at day 0; small grey species plates sit at each row's start: `m7-banksia-coccinea-v1.png` (new; tag \"scarlet banksia, WA\") on the top row and `m7-banksia-serrata-v1.png` (new; tag \"old man banksia, NSW\") on the bottom row. On \"root tips were dead within a day\" the top row's seedling crossfades at the day 1 tick to show brown root tips (by a masked region of `m7-banksia-seedling-collapsed-v1.png`, the root tip only); on \"reached the seedling's stem by day five\" it completes the crossfade to the collapsed plate at the day 5 tick (tag \"day 5: stem reached\"). On \"Callose was laid down late\" a small amber chip on the top row: \"callose late\". On \"only started on day three\" the bottom row's seedling begins its crossfade at day 3 toward `m7-banksia-seedling-contained-v1.png` (new); on \"by day nine it rarely reached halfway\" it completes at the day 9 tick with the lower half of the root brown (tag \"day 9: under halfway up\"). No line graph and no values between ticks. Only the row being spoken about is bright; the other row, the day labels and the source tag stay grey. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "timing",
+      "visualDecision": "new",
+      "visualReference": "the two rows stay.",
+      "teachingReason": "What it shows: timing: Both species laid down callose.",
+      "narrationCue": "laid down callose / The clearest difference is timing / rapid root damage / later callose deposition / do not show that the hyphae outran the defence / hairpin banksia",
+      "motionPurpose": "On the spoken cues: On \"laid down callose\" a small callose chip sits at each row's end: top row amber \"callose late\" (scene 7's chip moves there), bottom row teal \"callose\". No ladders on the rows (the study reports callose and timing only, not the other defences). On \"The clearest difference is timing\" the day line",
+      "motionRole": "explain",
+      "onScreenChange": "the two rows stay. On \"laid down callose\" a small callose chip sits at each row's end: top row amber \"callose late\" (scene 7's chip moves there), bottom row teal \"callose\". No ladders on the rows (the study reports callose and timing only, not the other defences). On \"The clearest difference is timing\" the day line brightens and a teal bracket spans the bottom row's day 3 to day 9 (tag \"damage held: lower root\"). On \"rapid root damage\" an amber bar on the top row spans day 1 to day 5 (tag \"root damage: fast\"); on \"later callose deposition\" the \"callose late\" chip brightens beside it. The damage bar and the chip stay separate, with no arrow and no hyphae drawn on the strip: necrosis and hyphal spread are not drawn as one front (the study reports lesions forming well ahead of the invading hyphae). On \"do not show that the hyphae outran the defence\" a grey chip \"hyphae outran the defence?\" fades in and takes a grey scribble cross, then dims. On \"hairpin banksia\" a small grey third row draws below with a grey tag \"hairpin banksia: entry delayed\" (no claim about which defence delayed it). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "limits",
+      "visualDecision": "new",
+      "visualReference": "the race strip dims.",
+      "teachingReason": "The limits of the evidence: Notice the limits, though.",
+      "narrationCue": "Tolerant isn't immune / probably arrived from overseas / Yet old man banksia held it back / old man banksia held it",
+      "motionPurpose": "On the spoken cues: Three grey limit chips write on in a column at the right, one per cue: \"seedlings, a few weeks old\", \"lab, one study\", \"field adults may differ\". On \"Tolerant isn't immune\" the bottom row's contained seedling pulses (gloss \"tolerant: survives infection with limited damage\"). On \"probably arrived",
+      "motionRole": "explain",
+      "onScreenChange": "the race strip dims. Three grey limit chips write on in a column at the right, one per cue: \"seedlings, a few weeks old\", \"lab, one study\", \"field adults may differ\". On \"Tolerant isn't immune\" the bottom row's contained seedling pulses (gloss \"tolerant: survives infection with limited damage\"). On \"probably arrived from overseas\" both species plates pulse and a small grey tag writes \"introduced: probably from overseas\"; on \"Yet old man banksia held it back\" a grey chip \"never met it, so no defence\" fades in and takes a grey scribble cross, with the small grey reason \"old man banksia held it\". A small b04 callback thumbnail (the myrtle rust leaf, grey tag \"b04: little resistance in many species\") sits at the corner. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "control",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Control that matches: That shapes control.",
+      "narrationCue": "Hygiene / closing tracks in wet weather / phosphite / doesn't remove the pathogen from the soil / wall it off faster",
+      "motionPurpose": "On the spoken cues: On \"Hygiene\" the boot station plate returns at the left (chip \"hygiene: stop soil moving\"); on \"closing tracks in wet weather\" a coded track line with a small grey bar across it draws beside the plate (tag \"close tracks when wet\"). On \"phosphite\" the dying banksia plate appears at the right with a",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. On \"Hygiene\" the boot station plate returns at the left (chip \"hygiene: stop soil moving\"); on \"closing tracks in wet weather\" a coded track line with a small grey bar across it draws beside the plate (tag \"close tracks when wet\"). On \"phosphite\" the dying banksia plate appears at the right with a small coded injection mark on its stem (grey tag \"phosphite\"); on \"doesn't remove the pathogen from the soil\" the soil specks under it stay (tag \"still in the soil\"); on \"wall it off faster\" the race strip's bottom row returns small with its teal bracket, and the \"switched on\" rung of a small ladder brightens (tag \"faster walls: plant's own defence\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory: So remember: the hypersensitive response is a firebreak.",
+      "narrationCue": "the hypersensitive response is a firebreak.",
+      "motionPurpose": "On the spoken cues: One handwritten line writes on large across the centre: \"The hypersensitive response is a firebreak.\" Under it the defended cell plate's dead ring is shown small with the stopped hypha (tag \"nothing living to feed on\"), and on \"speed decides\" a small clock mark beside it. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. One handwritten line writes on large across the centre: \"The hypersensitive response is a firebreak.\" Under it the defended cell plate's dead ring is shown small with the stopped hypha (tag \"nothing living to feed on\"), and on \"speed decides\" a small clock mark beside it. Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (species X and Y)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. Roots of two",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (species X and Y))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Roots of two native plant species, X and Y, were inoculated with *Phytophthora cinnamomi*. The table shows the results.\" A two-row table: \"Species X: callose deposited at penetration sites within 6 hours; length of dead root tissue after 7 days, 8 mm.\" \"Species Y: callose deposited at penetration sites after 48 hours; length of dead root tissue after 7 days, 45 mm.\" Demand: \"Identify the more resistant species. Explain how its response limited the spread of the pathogen. (3 marks)\". One lined answer box. No plates and nothing answer-bearing (no ladder, no race strip). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Species X is more resistant / within hours / only 8 millimetres / after two days, too late / the classic mistake / longer dead zone: pathogen got further",
+      "motionPurpose": "On the spoken cues: A small two-row answer table writes beneath it. On \"Species X is more resistant\" a teal tick lands on row X. On \"within hours\" \"within 6 hours\" underlines teal and the row fills \"callose early: walls plugged at entry\"; on \"only 8 millimetres\" \"8 mm\" underlines (row \"held near entry\"). On \"after two",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A small two-row answer table writes beneath it. On \"Species X is more resistant\" a teal tick lands on row X. On \"within hours\" \"within 6 hours\" underlines teal and the row fills \"callose early: walls plugged at entry\"; on \"only 8 millimetres\" \"8 mm\" underlines (row \"held near entry\"). On \"after two days, too late\" \"after 48 hours\" underlines amber and row Y fills \"callose late: pathogen spread\"; \"45 mm\" underlines. On \"the classic mistake\" the chip \"more dead tissue = stronger defence\" writes on and takes a grey scribble cross, with the small grey reason \"longer dead zone: pathogen got further\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (a dead spot)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A leaf is infected by a fungus",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a dead spot))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A leaf is infected by a fungal pathogen that can feed only on living cells. Within hours of infection, the cells at and around the infection site die, leaving a small brown spot of dead cells. Over the next three weeks the spot stays the same size and the rest of the leaf stays green.\" Student's claim, in a small box: \"The dead spot shows that the plant's defences have failed.\" Demand: \"Evaluate the student's claim. (3 marks)\". One lined answer box. No plates (a leaf plate with a spot would add nothing the stem doesn't say; the card stays plain). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "The claim isn't supported / died within hours / stopped growing / hypersensitive response / needs living cells / the rest of the leaf stays healthy",
+      "motionPurpose": "On the spoken cues: A short answer block writes beneath it: on \"The claim isn't supported\" a verdict chip \"claim: not supported\". On \"died within hours\" \"Within hours of infection\" underlines teal; on \"stopped growing\" \"stays the same size\" underlines teal; on \"hypersensitive response\" the defended cell plate's dead",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A short answer block writes beneath it: on \"The claim isn't supported\" a verdict chip \"claim: not supported\". On \"died within hours\" \"Within hours of infection\" underlines teal; on \"stopped growing\" \"stays the same size\" underlines teal; on \"hypersensitive response\" the defended cell plate's dead ring appears small (row \"hypersensitive response: rapid, deliberate cell death\"); on \"needs living cells\" \"can feed only on living cells\" underlines teal; on \"the rest of the leaf stays healthy\" \"the rest of the leaf stays green\" underlines teal (row \"pathogen fenced in\"). On \"kept spreading\" a small grey row \"spreading spot: defence failing\". On \"the classic mistake\" the chip \"dead cells = plant losing\" writes on and takes a grey scribble cross. Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "three step chips write on in a column, one per cue: \"how it gets in\", \"defences: always there, switched on, firebreak\", \"evidence: timing, and its limits\".",
+      "teachingReason": "Decision rule and handoff: So for any named plant and pathogen, say how the pathogen gets in, which defences meet it, always there or switched on, and what the evidence shows about timing.",
+      "narrationCue": "So for any named plant and pathogen, say",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: first defences in an animal\" (small grey tag only; no animal or cell plate is required). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on in a column, one per cue: \"how it gets in\", \"defences: always there, switched on, firebreak\", \"evidence: timing, and its limits\". A \"Next\" chip slides in at the lower right: \"Next: first defences in an animal\" (small grey tag only; no animal or cell plate is required). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b05-learning-review.md",
+      "sha256": "c1c0637a2823e13f6f76b9498b05e0cfb452307c8df81754189eb5153499b570"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b05-claude-science-check.md",
+      "sha256": "3052072c2f5a1e3a8bb3b4172e4f5ea7db412daabf7b6a7613fe58d877073c9e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

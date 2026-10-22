@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B05-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b05/lesson.json",
+  "lessonSha256": "103b77f4234490f2a9f09a9334f5934723e5435faf1736685ca8d7b64f471c1d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b05/lesson.production-brief.json",
+    "sha256": "cd7152c9da7b919fbe3c0e4c5edd4fcd18063eaf75515a94f23382dc4f46a4f9"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "On many bush tracks in south-western Australia, there are boot-cleaning stations. The reason is in the soil: Phytophthora cinnamomi, a pathogen that about 40 per cent of the region's native plant species are susceptible to. Yet some banksia species cope with it far better than others. So how does a plant with no immune cells defend itself, and why does one banksia hold out while another dies?",
+      "hash": "0e26826bd81f",
+      "textSha256": "0e26826bd81f6e3c35a69c27761f2473eccc3ee1da1829685e5c46045cf893ad",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/hook.0e26826bd81f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/hook.0e26826bd81f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/hook.0e26826bd81f.generation.json",
+      "plannedRequestSha256": "1e0a9b067a5e5f5d2768a8d6183043f4daf3a35489f18deaaa6b3f1259a392ca"
+    },
+    {
+      "id": "water-mould",
+      "parentSceneId": "water-mould",
+      "text": "Phytophthora cinnamomi looks like a fungus, but it's a water mould, a different group with cellulose in its walls. In wet soil it releases swimming spores. They swim towards chemicals leaking from roots, settle just behind the root tip, and grow threads called hyphae into the root. The threads kill root tissue, so less water reaches the leaves. The plant yellows, wilts and dies back from the roots up. Soil on boots and tyres carries it to new places.",
+      "hash": "ddb5e852027b",
+      "textSha256": "ddb5e852027b862b231cbdd2425a5a343606ceb09f1d47a9f344123d8e26be40",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/water-mould.ddb5e852027b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/water-mould.ddb5e852027b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/water-mould.ddb5e852027b.generation.json",
+      "plannedRequestSha256": "6e0b957c98f3116ef7641ba464e054d138b4f3c5cbb11e3498f865553518461c"
+    },
+    {
+      "id": "no-moving-cells",
+      "parentSceneId": "no-moving-cells",
+      "text": "A plant can't send defenders to the site, because it has no circulating immune cells. So every cell has to defend itself where it is. Some defences are always there, before any attack. Others switch on only when a cell detects the pathogen.",
+      "hash": "0a2d08f58f8b",
+      "textSha256": "0a2d08f58f8b5cfc41a090b2647448ea7eb586076c707198a64f8fcbb8c58ce4",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/no-moving-cells.0a2d08f58f8b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/no-moving-cells.0a2d08f58f8b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/no-moving-cells.0a2d08f58f8b.generation.json",
+      "plannedRequestSha256": "b4ccbb92fe623409c0fef103bd4492298148f1b7cfdbbe0a928f600c94d5969d"
+    },
+    {
+      "id": "barriers",
+      "parentSceneId": "barriers",
+      "text": "The always-there defences are barriers. As a root ages, its outer cell walls are toughened with lignin and other waterproof materials, and older roots and stems grow bark. A spore's thread has to get past these walls before it can feed, and it usually pushes in where two cells meet. The soft, young part of the root behind the tip has thin walls and no bark, so it's the least protected, which is exactly where the spores settle.",
+      "hash": "699e09781fc2",
+      "textSha256": "699e09781fc2af456b64a8deb2ec36fe3655d613a55d8eacbb2970a7c717d5dd",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/barriers.699e09781fc2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/barriers.699e09781fc2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/barriers.699e09781fc2.generation.json",
+      "plannedRequestSha256": "66f75f65b32370f26008903d2992a05b682dd99bfb0108da23d436f3b2ec05c3"
+    },
+    {
+      "id": "switched-on",
+      "parentSceneId": "switched-on",
+      "text": "Once a cell detects the pathogen, it starts building and making chemicals. It lays down callose, a plug made of a sugar chain, on the inside of its wall right where a thread is pushing in. It adds more lignin to nearby walls. And it makes antimicrobial chemicals, such as phytoalexins, which poison or slow the pathogen.",
+      "hash": "f8c175b02e38",
+      "textSha256": "f8c175b02e38731177dbbddede935db5c9f67c2c2e22f535053f797c951e7abc",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/switched-on.f8c175b02e38.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/switched-on.f8c175b02e38.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/switched-on.f8c175b02e38.generation.json",
+      "plannedRequestSha256": "07fc0be7cfd96ffe24b4a887e113496c5f3c0f3e42a2f6dc63bc6cbf91ca359f"
+    },
+    {
+      "id": "firebreak",
+      "parentSceneId": "firebreak",
+      "text": "The boldest response is the hypersensitive response. Cells at and around the infection kill themselves, fast, on purpose. Phytophthora feeds on living cells at first, so a ring of dead cells leaves it nothing to feed on and fences it in. A signal can also travel through the plant and prepare distant tissue. But each response only helps if it arrives in time.",
+      "hash": "5f426f8ad4a6",
+      "textSha256": "5f426f8ad4a6f4263c56b88a1cf1836df3fbbec9528ef35004e2789bcf818cbd",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/firebreak.5f426f8ad4a6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/firebreak.5f426f8ad4a6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/firebreak.5f426f8ad4a6.generation.json",
+      "plannedRequestSha256": "8d1ce11bff57758488742638b1f73323ede8d0861e4160c47934f02b3ebb0450"
+    },
+    {
+      "id": "evidence",
+      "parentSceneId": "evidence",
+      "text": "So what happens in real banksias, and does timing matter? In a 1998 study, researchers infected banksia seedlings with Phytophthora's swimming spores and watched under a microscope. In scarlet banksia, from Western Australia, root tips were dead within a day, and the damage reached the seedling's stem by day five. Callose was laid down late. In old man banksia, from the New South Wales coast, root damage only started on day three, and by day nine it rarely reached halfway up the root.",
+      "hash": "8e54460422a7",
+      "textSha256": "8e54460422a70538883b966a9d36e0d56e05f9b39af13d28ab2a791dac2be76d",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/evidence.8e54460422a7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/evidence.8e54460422a7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/evidence.8e54460422a7.generation.json",
+      "plannedRequestSha256": "0df5c3a8fafac859c01e12c7b2ea9ef0b44df8c5acbf3318ad13c8f16c4e9db3"
+    },
+    {
+      "id": "timing",
+      "parentSceneId": "timing",
+      "text": "Both species laid down callose. The clearest difference is timing. In old man banksia, something held the damage to the lower root. Scarlet banksia showed rapid root damage and later callose deposition, but these observations do not show that the hyphae outran the defence. And in a related species, hairpin banksia, the threads took longer even to get in.",
+      "hash": "550027cb57da",
+      "textSha256": "550027cb57da877187b8f1e81ac424f2b790d685e2d4328fd65388ed0e854c22",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/timing.550027cb57da.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/timing.550027cb57da.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/timing.550027cb57da.generation.json",
+      "plannedRequestSha256": "a9b00a622612ec3cbdb77223e28ef7b1857612dcf2b3cd649eaed318893c1ce2"
+    },
+    {
+      "id": "limits",
+      "parentSceneId": "limits",
+      "text": "Notice the limits, though. The microscope work used seedlings a few weeks old, in a lab, in one study. Tolerant isn't immune: old man banksia still lost part of its root. Adult plants in the field can behave differently. And this pathogen probably arrived from overseas, so neither banksia evolved alongside it for long. Yet old man banksia held it back. A short history with a pathogen doesn't mean no defence. A species relies on the defences it already has.",
+      "hash": "892c58682330",
+      "textSha256": "892c58682330834cea625b5d29abdba66914e0c346207af6a067e31e7d1d266f",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/limits.892c58682330.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/limits.892c58682330.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/limits.892c58682330.generation.json",
+      "plannedRequestSha256": "3d8f279bebba9f5636992452867379b85283ca2e5fd47eff0b779877b7187d9d"
+    },
+    {
+      "id": "control",
+      "parentSceneId": "control",
+      "text": "That shapes control. Hygiene stops the spread: cleaning boots and tyres, and closing tracks in wet weather. For threatened plants, phosphite can be sprayed or injected. It doesn't remove the pathogen from the soil, but treated plants wall it off faster, which helps the plant's own defences win the race.",
+      "hash": "6fd71d4c143a",
+      "textSha256": "6fd71d4c143aa18348b07be5e3a4f1a8452654dea819142f059f1394e08b22b3",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/control.6fd71d4c143a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/control.6fd71d4c143a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/control.6fd71d4c143a.generation.json",
+      "plannedRequestSha256": "1ebccfba4bf87197f0cefce303db461d2ba94dec843873dd7690364222355487"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So remember: the hypersensitive response is a firebreak. Dead cells around the infection leave a pathogen that needs living cells with nothing to feed on, and speed decides whether the break holds.",
+      "hash": "ad1f344f2a64",
+      "textSha256": "ad1f344f2a64aaffc35fee3e538b14989fe53b06869287b34797ebdc540c7569",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/memory.ad1f344f2a64.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/memory.ad1f344f2a64.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/memory.ad1f344f2a64.generation.json",
+      "plannedRequestSha256": "ac5faefe798885766e584cc0a68b36fc177c3538f6eb2c5003ddf4d38b63b269"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. Roots of two plant species, X and Y, were infected with Phytophthora cinnamomi. In species X, callose was laid down at entry sites within 6 hours, and the dead zone stopped at 8 millimetres. In species Y, callose appeared after 2 days, and the dead zone reached 45 millimetres in a week. Identify the more resistant species, and explain how its response limited the pathogen. Pause here to answer.",
+      "hash": "c48f51798ac5",
+      "textSha256": "c48f51798ac5ca75e71c8d2aa1454d1efaa7f2eee6df541e43e4622d96f8e816",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/attempt.c48f51798ac5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/attempt.c48f51798ac5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/attempt.c48f51798ac5.generation.json",
+      "plannedRequestSha256": "9dc72f0fe16d4b61f27358997b99ec97af10f10375e36c4f6f2ddc1700f4a2fb"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Species X is more resistant. Its callose plugged the walls where the threads were pushing in within hours, so the pathogen was held near the entry sites, and only 8 millimetres of root died. In Y, the plug came after two days, too late, so the pathogen spread much further. Choosing Y because more of its tissue died, as if that were a bigger defence, is the classic mistake.",
+      "hash": "e78fbb173b17",
+      "textSha256": "e78fbb173b17dfa924aa3ee05723dab619caa05d4306dacc2591fd9d4ece621b",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/feedback-one.e78fbb173b17.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/feedback-one.e78fbb173b17.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/feedback-one.e78fbb173b17.generation.json",
+      "plannedRequestSha256": "176c851d720f1ba11b602f3ca6d6e53bd583f9046514998383191c77f4a8fa97"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A leaf is infected by a fungus that can feed only on living cells. Within hours, the cells around the infection site die, leaving a small brown spot. Over the next three weeks the spot stays the same size, and the rest of the leaf stays green. A student says, the dead spot shows the plant's defences have failed. Evaluate the student's claim. Pause here to answer.",
+      "hash": "2db3b93cbd2d",
+      "textSha256": "2db3b93cbd2d496323d44969d976c68e6a9046c8c95571b58be1862c915b9ea7",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/attempt-two.2db3b93cbd2d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/attempt-two.2db3b93cbd2d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/attempt-two.2db3b93cbd2d.generation.json",
+      "plannedRequestSha256": "54aee9bb4104b1663f2aaadaffa2ca87ce82cf1ffb720cd32f60b16c85b5b9c5"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The claim isn't supported. Cells around the infection died within hours, and the spot stopped growing. That fits the hypersensitive response working: this fungus needs living cells, so the dead ring fences it in, and the rest of the leaf stays healthy. If the brown area kept spreading, that would suggest the defence was failing. Reading every dead cell as the plant losing is the classic mistake.",
+      "hash": "bec88b6b24bd",
+      "textSha256": "bec88b6b24bde5fcb7095f35e40bcb94c3282dc6911a2edc2de84ef25502c5f7",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/feedback-two.bec88b6b24bd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/feedback-two.bec88b6b24bd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/feedback-two.bec88b6b24bd.generation.json",
+      "plannedRequestSha256": "5cac8d5c411e55e2efbab6e21599e0b6503383068d45efb761257cfda313a1b9"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any named plant and pathogen, say how the pathogen gets in, which defences meet it, always there or switched on, and what the evidence shows about timing. Next, what happens first when a pathogen gets into an animal.",
+      "hash": "f38e4e9470a6",
+      "textSha256": "f38e4e9470a6c98f3ebf62abab547429d05b53c8e09a98d21b33920ebc750590",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/decision-rule.f38e4e9470a6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/decision-rule.f38e4e9470a6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/decision-rule.f38e4e9470a6.generation.json",
+      "plannedRequestSha256": "f5bc75446dd4e3629435b576c22ec317c909b7a01cf1b7321f9fa87375f38287"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B05-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

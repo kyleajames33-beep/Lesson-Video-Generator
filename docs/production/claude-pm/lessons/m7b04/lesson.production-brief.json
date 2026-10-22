@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b04/lesson.json",
+    "lessonSha256": "e8f75c2c627cc4c0744a5d529cba5009ad20c6faf71fba57b170f1ac6d5380af"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: pathogen, host, the groups (bacteria, fungi, protozoa, helminths, viruses) and their plant cases: crown gall (bacterium), wheat stem rust (fungus), root-knot nematodes (helminth), tobacco mosaic virus. From b03: modes of transmission, fomites (contaminated objects) and that control must match the route. From bio-m5-b01: the Cavendish banana is a clone, so plantations share one weakness to disease. From bio-m5-b03b: copying a winner gives a uniform crop with a shared weakness; selective breeding and artificial pollination for rust resistance in wheat. From Year 11: leaves photosynthesise; xylem carries water up from roots. Not assumed: the three things a disease needs, direct against indirect effects, export dependence, how to assess an effect, myrtle rust, foot-and-mouth disease.",
+    "startsWith": "Compare plant and animal cases. The video opens: In April 2010, a rust fungus turned up on plants at one nursery on the New South Wales Central Coast.",
+    "stopsAfter": "stating the three things disease needs (pathogen, a host it can infect, the right conditions); explaining how a paddock of one variety and the movement of plants and soil raise the risk; describing direct effects on crops (yield, quality, control costs) with mechanisms for rust and nematodes; assessing myrtle rust (cause: an introduced rust fungus meeting myrtles with little resistance, spread by wind and nursery plants; effects on lemon myrtle and tea tree plantations, on native species, and permanence); describing foot-and-mouth disease (virus, cloven-hoofed animals, spread, blisters, reduced milk and meat, low adult death rate); separating direct effects (in the sick animals) from indirect effects (control and closed markets) with the 2001 United Kingdom outbreak; explaining why indirect effects usually dominate for an exporter like Australia; assessing an effect by size, duration and reach; distinguishing direct and indirect effects in an unseen outbreak and giving biological and agricultural causes of crop losses.",
+    "nextLesson": "how a named Australian plant defends itself against a named pathogen: a banksia against *Phytophthora cinnamomi* (route entry bio-m7-b05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b04.md"
+  ],
+  "teaching": {
+    "task": "How does disease damage farm production, and why does the bill so often reach far past the sick plants and animals?",
+    "causalExplanation": "Causes: why wet weather matters (spores need water to germinate; scene 2); why one variety raises losses (every plant equally susceptible, nothing slows spread; scene 3); how rust and nematodes cut yield (sugars and leaf area; squeezed xylem; scene 4); why Australian myrtles were hit hard (no shared history, little resistance, not \"foreign\"; scene 5); why myrtle rust costs are permanent (cannot be eradicated; scene 6); why most culled animals were healthy (whole herds on infected and neighbouring farms, plus welfare culls of stock stranded by movement bans; scene 8); why exporters suffer most (most beef sold overseas; one case closes markets; scene 9). Visible case: the spread map, the leaf pair crossfade, the hoof pair crossfade, chips moving across the gate line, the cost bars. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 8 is the densest (the dot grid plus three chips), so the dot grid stays grey except the amber few.",
+    "conversationalApproach": "In April 2010 a rust fungus turned up at one nursery on the New South Wales Central Coast and within a few years had spread the length of the east coast, so the question is how disease damages farm production and why the bill so often reaches far past the sick plants and animals. Causes come first: a pathogen, a host it can infect and the right conditions have to meet, and farming tips the odds because a paddock of one variety shares one weakness (the Cavendish banana recalled) and moving plants, soil and machinery carries pathogens. A crop's costs are traced as yield, quality and control cost, with rust pustules taking sugars and nematode galls squeezing the xylem. Myrtle rust is the plant case (an overseas fungus meeting myrtles with little resistance, wind and nursery spread, fungicide costs in dense plantations, an endangered native guava and no eradication), and foot-and-mouth disease is the animal case, separating direct effects in sick animals from the indirect costs of Britain's 2001 culls, closed markets and tourism losses, and showing why an exporter like Australia fears the indirect effects most. An effect is assessed by how big, how long and how far, and the memory aid is count past the farm gate. Two exam questions follow with brief feedback.",
+    "openingDecision": "In April 2010, a rust fungus turned up on plants at one nursery on the New South Wales Central Coast. Within a few years it had spread the length of the east coast, on eucalypts, paperbarks and lemon myrtle. So how does disease damage farm production, and why does the bill so often reach far past the sick plants and animals?",
+    "understandingCheck": "12a distinguishes direct from indirect effects of a hypothetical foot-and-mouth outbreak in an exporting country and asks which costs more (the route's stop: production losses and control consequences). 12c asks for one biological and one agricultural cause of district-wide rust losses (the \"causes\" half of the dotpoint, and the scene 3 idea). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ1-03: \"assess the causes and effects of diseases on agricultural production, including but not limited to:\", with its listed examples \"plant diseases\" and \"animal diseases\". Verb \"assess\" (make a judgement of value, quality, outcomes, results or size): scene 10 gives the criteria, scenes 6, 8 and 9 apply them, and both attempts ask for judged causes or effects rather than lists."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One farm gate ledger board: a coded vertical dashed line down the right third of the frame, labelled in small grey handwriting \"farm gate\", splits the board into \"on the farm\" (left) and \"past the farm gate\" (right). A cause strip sits along the top left (scene 2's three parts). Effect chips land on the side where the cost falls: yield, quality and sick animals on the left (teal tag \"direct\"); culled healthy herds, movement bans, closed exports, tourism and ecosystems on the right (amber tag \"indirect\" or green tag \"beyond the farm\"). Painted plates carry each case: diseased against healthy plates appear as aligned pairs that crossfade (the myrtle leaf pair, the hoof pair); the wheat rust plate is already a side-by-side pair. No people, hands, faces or farmers: farms are shown by crops, animals, a gate, a stock truck and a shipping container. Coded elements are abstract only: the gate line, chips, arrows, a small coded map outline of Australia for the spread (scene 6), a dotted spread path, and cost bars in scene 8. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey when the next lands. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The AusSpreadMap outline draws with one pulsing amber dot on the Central Coast and a dotted path running up and down the east coast as small host chips write; the CauseStrip fills its three slots one per cue with the hyphae plate, the healthy wheat leaf and a coded water film; the strip shrinks as the banana plantation and monoculture plates show one variety and the stock truck plate slides off the board edge on a dotted arrow; the GateLedger completes with its farm gate line as the rust leaf, wheat ear and galled root plates (a coded xylem line narrowing inside a gall) and the quality and cost chips land on the farm side; the cause strip refills for myrtle rust with the pustules and the myrtle leaf, then the map takes new dots for Tasmania, the Northern Territory and the East Kimberley while the lemon myrtle rows plate and the native guava chip land either side of the gate; the red cattle plate and the hoof pair fill the farm side for foot-and-mouth disease; a grid of plain grey dots fills past the gate for the 2001 culls with closed markets and tourism chips; the empty map returns as the beef bar splits and an export arrow carries across the gate; three question chips write with their time bars; one handwritten memory line writes as thumbnails slide past the gate; each attempt clears the board and its feedback underlines the card as a small GateLedger or answer table fills; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. `AusSpreadMap` draws a plain coded outline of Australia at medium size, left of centre.",
+      "teachingReason": "Hook (one nursery): In April 2010, a rust fungus turned up on plants at one nursery on the New South Wales Central Coast.",
+      "narrationCue": "one nursery / the length of the east coast / eucalypts, paperbarks and lemon myrtle / how does disease damage farm production / far past the sick plants and animals",
+      "motionPurpose": "On the spoken cues: On \"one nursery\" a single amber dot pulses on the NSW Central Coast (small grey tag \"Central Coast NSW, April 2010\"). On \"the length of the east coast\" a dotted amber path runs north to far north Queensland and south to Victoria, with dots appearing along it (grey tag \"east coast within a few",
+      "motionRole": "explain",
+      "onScreenChange": "no people. `AusSpreadMap` draws a plain coded outline of Australia at medium size, left of centre. On \"one nursery\" a single amber dot pulses on the NSW Central Coast (small grey tag \"Central Coast NSW, April 2010\"). On \"the length of the east coast\" a dotted amber path runs north to far north Queensland and south to Victoria, with dots appearing along it (grey tag \"east coast within a few years\"). On \"eucalypts, paperbarks and lemon myrtle\" `m7-myrtle-rust-leaf-v1.png` rises at the right at medium size (tag \"myrtle rust\"). On \"how does disease damage farm production\" the map shrinks to the upper left, the leaf to a thumbnail beside it, and the heading writes on: \"How does disease damage farm production?\" On \"far past the sick plants and animals\" a coded dashed vertical line draws down the right third of the board (the first appearance of the gate line, unlabelled for now). Hold about one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about one second"
+    },
+    {
+      "sceneId": "three-things",
+      "visualDecision": "adjust",
+      "visualReference": "`CauseStrip` draws across the top left: three slots joined by short coded links, filled one per cue.",
+      "teachingReason": "Three things meet: Start with causes.",
+      "narrationCue": "a pathogen / a host it can infect / the right conditions / need a film of water / the same pathogen groups",
+      "motionPurpose": "On the spoken cues: On \"a pathogen\" the slot fills with `m7-fungal-hyphae-v1.png` small (grey label \"pathogen\"); on \"a host it can infect\" `b3b-wheat-rust-leaf-v1.png` cropped by position to the healthy left leaf (scaled, not stretched; label \"host it can infect\"); on \"the right conditions\" a coded water film (a thin",
+      "motionRole": "explain",
+      "onScreenChange": "`CauseStrip` draws across the top left: three slots joined by short coded links, filled one per cue. On \"a pathogen\" the slot fills with `m7-fungal-hyphae-v1.png` small (grey label \"pathogen\"); on \"a host it can infect\" `b3b-wheat-rust-leaf-v1.png` cropped by position to the healthy left leaf (scaled, not stretched; label \"host it can infect\"); on \"the right conditions\" a coded water film (a thin blue line with three droplets) draws on the leaf edge (label \"conditions\"). A small grey tag under the strip: \"the disease triangle\". On \"need a film of water\" the droplets pulse and the rust leaf crossfades in beside the healthy one (tag \"spores need water to germinate\"). On \"the same pathogen groups\" a row of b01 thumbnails slides in under the strip, one per spoken group (\"fungi\", \"bacteria\", \"viruses\", \"nematodes\"), each with a small grey tag naming b01's case: the rust leaf (\"fungus: wheat rust\"), `m7-crown-gall-stem-v1.png` (\"bacterium: crown gall\"), `m7-tmv-particle-v1.png` (\"virus: tobacco mosaic\"), `m7-root-knot-galls-v1.png` (\"nematode: root galls\"). If b01's crown gall or TMV plate is not yet delivered, its slot in this row is a grey word tag only (names are all this row needs). At most three bright text items (the three slot labels; the thumbnail tags are grey). Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "farming-odds",
+      "visualDecision": "adjust",
+      "visualReference": "the cause strip dims and shrinks to the top edge.",
+      "teachingReason": "Farming tips the odds: Farming can tip the odds.",
+      "narrationCue": "the Cavendish banana / A paddock of a single variety / can infect the next / Moving plants, soil and machinery / partly biology and partly farming / can be changed",
+      "motionPurpose": "On the spoken cues: On \"the Cavendish banana\" `b1-banana-plantation-tr4-v1.png` appears at the left (tag \"Module 5: clones share one weakness\"). On \"A paddock of a single variety\" `m6-field-monoculture-mixed-v1.png` fills the centre at medium size (the left uniform rows and the right mixed planting both visible); a",
+      "motionRole": "explain",
+      "onScreenChange": "the cause strip dims and shrinks to the top edge. On \"the Cavendish banana\" `b1-banana-plantation-tr4-v1.png` appears at the left (tag \"Module 5: clones share one weakness\"). On \"A paddock of a single variety\" `m6-field-monoculture-mixed-v1.png` fills the centre at medium size (the left uniform rows and the right mixed planting both visible); a grey screen gloss under the uniform half: \"monoculture: one variety over a large area\". On \"can infect the next\" a coded amber dotted path hops plant to plant along one uniform row without a gap (tag \"nothing to slow it\"); a matching path entering the mixed half stops after two plants (small grey tag \"mixed planting: breaks in the run\"). On \"Moving plants, soil and machinery\" `m7-stock-truck-v1.png` (new) slides in small at the lower right with a short dotted arrow off the board edge (tag \"carried to new districts\"). On \"partly biology and partly farming\" two chips write under the board, one per cue: \"biology: pathogen, conditions\" (grey) and \"farming: one variety, movement\" (amber), with a small amber tick beside the farming chip on \"can be changed\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "crop-costs",
+      "visualDecision": "adjust",
+      "visualReference": "the `GateLedger` completes: the dashed gate line gains its grey label \"farm gate\", and the two side labels write small and grey: \"on the farm\" (left) and \"past the farm gate\" (right).",
+      "teachingReason": "What disease costs a crop: What does disease cost a crop?",
+      "narrationCue": "yield / Root-knot nematodes / quality / cost",
+      "motionPurpose": "On the spoken cues: On \"yield\" `b3b-wheat-rust-leaf-v1.png` sits at the left at medium size, the rust leaf's orange pustules ringed (tag \"pustules take sugars, less green leaf\"); a short coded arrow from the leaf to `b3b-wheat-ear-floret-v1.png` small, cropped by position to the wheat ear only (the left third of the",
+      "motionRole": "explain",
+      "onScreenChange": "the `GateLedger` completes: the dashed gate line gains its grey label \"farm gate\", and the two side labels write small and grey: \"on the farm\" (left) and \"past the farm gate\" (right). On \"yield\" `b3b-wheat-rust-leaf-v1.png` sits at the left at medium size, the rust leaf's orange pustules ringed (tag \"pustules take sugars, less green leaf\"); a short coded arrow from the leaf to `b3b-wheat-ear-floret-v1.png` small, cropped by position to the wheat ear only (the left third of the plate; scaled, not stretched; the open floret is outside the crop) (tag \"less grain filled\"). On \"Root-knot nematodes\" the wheat dims and `m7-root-knot-galls-v1.png` replaces it (a hard dependency for this scene: the student must see the galled root; see Assets for the fallback brief item); a coded ring marks one gall and a thin blue coded line, drawn along the root inside the gall, narrows and breaks (tag \"xylem squeezed: less water up\"). On \"quality\" chip \"lower grade\" lands on the left of the gate; on \"cost\" chip \"fungicide, resistant varieties, replanting\" lands below it. A teal tag \"direct\" sits over the left column. Earlier tags dim. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "myrtle-rust-cause",
+      "visualDecision": "adjust",
+      "visualReference": "the ledger columns clear to faint grey; the cause strip returns at the top left and refills for this case, one slot per cue.",
+      "teachingReason": "Myrtle rust: the cause: Now a real case.",
+      "narrationCue": "a fungus / the myrtle family / had never met this fungus / no shared history, little resistance / spores travel on the wind / infected nursery plants",
+      "motionPurpose": "On the spoken cues: On \"a fungus\" the pathogen slot fills with the rust leaf's pustules cropped close (grey screen tag \"*Austropuccinia psidii*\"). On \"the myrtle family\" the host slot fills with `m7-myrtle-leaf-healthy-v1.png` (new; grey screen tag \"Myrtaceae\"); a small row of three grey word tags writes under it:",
+      "motionRole": "explain",
+      "onScreenChange": "the ledger columns clear to faint grey; the cause strip returns at the top left and refills for this case, one slot per cue. On \"a fungus\" the pathogen slot fills with the rust leaf's pustules cropped close (grey screen tag \"*Austropuccinia psidii*\"). On \"the myrtle family\" the host slot fills with `m7-myrtle-leaf-healthy-v1.png` (new; grey screen tag \"Myrtaceae\"); a small row of three grey word tags writes under it: \"eucalypts\", \"paperbarks\", \"tea tree, lemon myrtle\". On \"had never met this fungus\" the healthy leaf crossfades to its aligned partner `m7-myrtle-rust-leaf-v1.png` (pustules appearing in place); amber tag \"little resistance in many species\"; a grey chip \"dangerous because it's foreign\" fades in and takes a grey scribble cross, with the small grey reason \"no shared history, little resistance\". On \"spores travel on the wind\" coded amber specks drift off the leaf to the right (tag \"wind-borne spores\"); on \"infected nursery plants\" `m7-nursery-pots-v1.png` (new) appears small with a long dotted arrow across the board (tag \"moved plants: long distances fast\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "myrtle-rust-effects",
+      "visualDecision": "adjust",
+      "visualReference": "`AusSpreadMap` returns small at the upper right; dots appear one per cue: Tasmania, the Northern Territory, then the East Kimberley (grey tag \"WA, 2022\").",
+      "teachingReason": "Myrtle rust: spread and effects: It has since been found in Tasmania, the Northern Territory and, in 2022, northern Western Australia.",
+      "narrationCue": "dense rows of one species / pay for fungicide / lose much of their crop / past the farm too / native guava / can't be eradicated",
+      "motionPurpose": "On the spoken cues: The `GateLedger` brightens. On \"dense rows of one species\" `m7-lemon-myrtle-rows-v1.png` (new) appears on the left of the gate at medium size (tag \"dense rows of one species\"); a small amber link to scene 3's farming chip flashes. On \"pay for fungicide\" chip \"fungicide costs\" lands on the left; on",
+      "motionRole": "explain",
+      "onScreenChange": "`AusSpreadMap` returns small at the upper right; dots appear one per cue: Tasmania, the Northern Territory, then the East Kimberley (grey tag \"WA, 2022\"). The `GateLedger` brightens. On \"dense rows of one species\" `m7-lemon-myrtle-rows-v1.png` (new) appears on the left of the gate at medium size (tag \"dense rows of one species\"); a small amber link to scene 3's farming chip flashes. On \"pay for fungicide\" chip \"fungicide costs\" lands on the left; on \"lose much of their crop\" chip \"lost yield\" lands under it (teal \"direct\" tag over the column). On \"past the farm too\" both left chips dim to grey before anything writes on the right, and the myrtle rust leaf thumbnail slides across the gate line to the right side; on \"native guava\" a green chip writes on the right: \"native guava: critically endangered\" (green tag \"beyond the farm\"); a grey chip \"plant disease only matters for food\" fades in and takes a grey scribble cross. On \"can't be eradicated\" a coded clock-like loop arrow draws around the whole ledger (tag \"permanent: costs every year\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "fmd-direct",
+      "visualDecision": "adjust",
+      "visualReference": "the ledger clears to its empty two sides.",
+      "teachingReason": "Foot-and-mouth disease: the direct effects: Animals next.",
+      "narrationCue": "direct effects",
+      "motionPurpose": "On the spoken cues: No virus plate (the house virus plate is an enveloped, spiked particle that b03 uses for SARS-CoV-2; FMD virus is a small non-enveloped picornavirus, and a coded icosahedron would be a coded organism icon). On \"cloven-hoofed animals\" `m5x-cattle-red-v1.png` fills the left side at medium size, with",
+      "motionRole": "explain",
+      "onScreenChange": "the ledger clears to its empty two sides. No virus plate (the house virus plate is an enveloped, spiked particle that b03 uses for SARS-CoV-2; FMD virus is a small non-enveloped picornavirus, and a coded icosahedron would be a coded organism icon). On \"cloven-hoofed animals\" `m5x-cattle-red-v1.png` fills the left side at medium size, with the grey word tag \"FMD virus\" beside it (written on \"a virus\"), with `m6-white-sheep-v1.png` small beside it (screen gloss \"cloven-hoofed: split hooves\"); small grey word tags \"pigs, goats\". On \"contact, through the air\" coded drifting specks pass between the two animal plates (b02's `DustPath`); on \"vehicles, boots and feed\" the stock truck thumbnail from scene 3 reappears at the gate line (tag \"fomites: vehicles, boots, feed\", recalling b03). On \"blisters in the mouth and on the feet\" `m7-cattle-hoof-healthy-v1.png` (new) appears large at the centre left and crossfades to its aligned partner `m7-fmd-hoof-blisters-v1.png` (new) (tag \"blisters between the claws\"). On \"stop eating, go lame\" chips land on the left one per cue: \"lame, stops eating\", \"less milk and meat\". On \"Most adults survive\" a small grey chip \"most adults survive\". On \"direct effects\" a teal tag \"direct: losses in the sick animals\" sits over the left column. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "uk-2001-indirect",
+      "visualDecision": "adjust",
+      "visualReference": "the left column dims.",
+      "teachingReason": "2001: the indirect effects: Follow the bill.",
+      "narrationCue": "indirect effects",
+      "motionPurpose": "On the spoken cues: A small grey tag at the top: \"United Kingdom, 2001\". On \"over six million animals\" a coded grid of about 60 small plain grey dots fills the right side of the gate (each dot standing for 100,000 animals; small grey key \"each dot: 100,000 animals\"), drawn as two blocks: about 40 dots, then a slightly",
+      "motionRole": "explain",
+      "onScreenChange": "the left column dims. A small grey tag at the top: \"United Kingdom, 2001\". On \"over six million animals\" a coded grid of about 60 small plain grey dots fills the right side of the gate (each dot standing for 100,000 animals; small grey key \"each dot: 100,000 animals\"), drawn as two blocks: about 40 dots, then a slightly separate block of about 20 (about a third were welfare culls; NAO 2002). On \"most of them never infected\" only a few dots in the first block turn amber (tag \"most never infected\"; the amber share is illustrative, and no infected count is stated or implied in any tag). On \"infected and neighbouring farms\" the first block takes a small grey tag \"disease-control culls\". On \"stranded by movement bans\" `m7-farm-gate-closed-v1.png` (new) appears on the right at medium size beside the second block (chip \"movement banned\"), and the second block takes a small grey tag \"welfare culls: stranded stock\". On \"Export markets closed\" `m7-shipping-container-v1.png` (new) appears beside the gate with a coded grey bar across its doors (chip \"exports closed\"; the \"movement banned\" chip dims); on \"shut to visitors\" a chip \"countryside closed: tourism\" (the \"exports closed\" chip dims). On \"about eight billion pounds\" `CostBars` draws two horizontal bars of about equal length at the lower right, labelled in small grey \"farming and food\" and \"tourism\", with a small grey tag \"total about £8 billion\" (no axis values). On \"indirect effects\" an amber tag \"indirect: beyond the sick animals\" sits over the right column. The dot grid stays grey except the amber few. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "exporters",
+      "visualDecision": "new",
+      "visualReference": "`AusSpreadMap` returns small at the upper left, empty of dots (grey tag \"FMD-free since 1872\").",
+      "teachingReason": "Why exporters fear it most: Australia has been free of foot-and-mouth disease since 1872, and it sells most of its beef overseas, about three-quarters.",
+      "narrationCue": "sells most of its beef overseas / stop exports to many markets / 80 billion dollars over ten years / mostly through lost exports / the indirect effects usually outweigh the direct ones",
+      "motionPurpose": "On the spoken cues: On \"sells most of its beef overseas\" the red cattle thumbnail (beef, not the dairy plate) sits on the left of the gate and a coded bar beside it splits about 75 to 25 (small grey labels \"exported: about three-quarters\", \"eaten here\"); a dotted arrow carries the 75 portion across the gate to the",
+      "motionRole": "explain",
+      "onScreenChange": "`AusSpreadMap` returns small at the upper left, empty of dots (grey tag \"FMD-free since 1872\"). On \"sells most of its beef overseas\" the red cattle thumbnail (beef, not the dairy plate) sits on the left of the gate and a coded bar beside it splits about 75 to 25 (small grey labels \"exported: about three-quarters\", \"eaten here\"); a dotted arrow carries the 75 portion across the gate to the shipping container thumbnail. On \"stop exports to many markets\" the container's grey bar returns and the arrow breaks. On \"80 billion dollars over ten years\" a chip writes on the right: \"about $80 billion over 10 years (ABARES, 2022)\"; on \"mostly through lost exports\" the chip's arrow points at the container. On \"the indirect effects usually outweigh the direct ones\" the right column brightens and the left column's chips shrink (no scale implied beyond \"larger\"; tag \"indirect usually larger for an exporter\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "assess",
+      "visualDecision": "new",
+      "visualReference": "the ledger compresses to the lower half.",
+      "teachingReason": "How to assess an effect: So how do you assess an effect?",
+      "narrationCue": "Rust in one wheat season / settles in for good / closes markets",
+      "motionPurpose": "On the spoken cues: Three question chips write across the top, one per cue: \"how big?\", \"how long?\", \"how far?\". On \"Rust in one wheat season\" the wheat rust thumbnail sits under \"how long?\" with a short coded bar (tag \"one season\"); on \"settles in for good\" the myrtle rust leaf thumbnail sits beside it with a long",
+      "motionRole": "explain",
+      "onScreenChange": "the ledger compresses to the lower half. Three question chips write across the top, one per cue: \"how big?\", \"how long?\", \"how far?\". On \"Rust in one wheat season\" the wheat rust thumbnail sits under \"how long?\" with a short coded bar (tag \"one season\"); on \"settles in for good\" the myrtle rust leaf thumbnail sits beside it with a long bar running off the right edge (tag \"years\"). On \"closes markets\" the container thumbnail sits under \"how far?\" with an arrow crossing the gate line and continuing past the board edge (tag \"past the farm gate\"). At most three bright text items (the three chips; the case tags are grey). Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the board clears except the dashed gate line, which brightens.",
+      "teachingReason": "Memory: So when you assess a disease, count past the farm gate.",
+      "narrationCue": "count past the farm gate.",
+      "motionPurpose": "On the spoken cues: One handwritten line writes on large across the centre: \"Count past the farm gate.\" On \"the first cost\" the hoof and rust leaf thumbnails sit small on the left of the line; on \"Control, markets and ecosystems\" three thumbnails slide across to the right: the closed gate, the container and the native",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears except the dashed gate line, which brightens. One handwritten line writes on large across the centre: \"Count past the farm gate.\" On \"the first cost\" the hoof and rust leaf thumbnails sit small on the left of the line; on \"Control, markets and ecosystems\" three thumbnails slide across to the right: the closed gate, the container and the native guava chip. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (one herd)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. A country that exports",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (one herd))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Country P exports most of the beef it produces and has been free of foot-and-mouth disease (FMD) for decades. FMD is confirmed in one herd of 40 cattle. All 40 cattle are culled, together with 2000 healthy cattle on nearby farms. Three trading partners suspend imports of beef from Country P.\" Demand: \"Distinguish between the direct and indirect effects of this outbreak on agricultural production. Explain which is likely to have the greater economic cost. (4 marks)\". One lined answer box. No plates and nothing answer-bearing (no ledger, no gate line). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "the 40 sick cattle / the 2,000 healthy cattle / lost beef exports / exports most of its beef / the classic mistake / never infected: a cost of control",
+      "motionPurpose": "On the spoken cues: A small `GateLedger` draws beneath it. On \"the 40 sick cattle\" \"one herd of 40 cattle\" underlines teal and a chip lands left of the gate: \"direct: 40 infected cattle, lost production, then culled\". On \"the 2,000 healthy cattle\" \"2000 healthy cattle on nearby farms\" underlines amber and a chip lands",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A small `GateLedger` draws beneath it. On \"the 40 sick cattle\" \"one herd of 40 cattle\" underlines teal and a chip lands left of the gate: \"direct: 40 infected cattle, lost production, then culled\". On \"the 2,000 healthy cattle\" \"2000 healthy cattle on nearby farms\" underlines amber and a chip lands right of the gate: \"indirect: 2000 healthy cattle culled\"; on \"lost beef exports\" \"suspend imports of beef\" underlines and a second right chip: \"indirect: lost exports\". On \"exports most of its beef\" \"exports most of the beef it produces\" underlines and the right column brightens (row \"indirect larger: export dependent\"). On \"the classic mistake\" the chip \"healthy culled cattle = direct\" writes on and takes a grey scribble cross, with the small grey reason \"never infected: a cost of control\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (one variety)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Nearly every farm in a district grows",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (one variety))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Nearly every farm in a wheat-growing district plants the same wheat variety. A new strain of a rust fungus appears that is able to infect this variety. Its spores are carried by wind, and the growing season is warm and wet. Wheat yields fall across the whole district.\" Demand: \"Explain ONE biological cause and ONE agricultural cause of the losses in this district. (3 marks)\". One lined answer box. No plates (the rust leaf plate would not reveal the answer, but the card stays plain to match item one). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Biological / Agricultural / the classic mistake / conditions help; the pathogen causes",
+      "motionPurpose": "On the spoken cues: A two-row answer table writes beneath it. On \"Biological\" \"able to infect this variety\" underlines teal, then \"carried by wind\" and \"warm and wet\" underline as each is spoken; the row fills \"biological: a strain that infects it, wind-borne spores (helped by wet weather)\". On \"Agricultural\" \"plants",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A two-row answer table writes beneath it. On \"Biological\" \"able to infect this variety\" underlines teal, then \"carried by wind\" and \"warm and wet\" underline as each is spoken; the row fills \"biological: a strain that infects it, wind-borne spores (helped by wet weather)\". On \"Agricultural\" \"plants the same wheat variety\" underlines amber; the row fills \"agricultural: one variety everywhere, so no resistant plants to slow spread\". On \"the classic mistake\" the chip \"the wet weather caused it\" writes on and takes a grey scribble cross, with the small grey reason \"conditions help; the pathogen causes\". Settle on the table for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "two step chips write on in a column, one per cue: \"name the cause: pathogen, host, conditions, farming\", \"follow the effects: on the farm, then past the gate\".",
+      "teachingReason": "Decision rule and handoff: So for any farm disease, name the cause, then follow the effects from the sick host out to markets and ecosystems.",
+      "narrationCue": "So for any farm disease, name the cause,",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how a banksia defends itself\" with `m7-banksia-phytophthora-v1.png` as a small thumbnail. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "two step chips write on in a column, one per cue: \"name the cause: pathogen, host, conditions, farming\", \"follow the effects: on the farm, then past the gate\". A \"Next\" chip slides in at the lower right: \"Next: how a banksia defends itself\" with `m7-banksia-phytophthora-v1.png` as a small thumbnail. Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b04-learning-review.md",
+      "sha256": "805f6e331188af2ff49f90d3000871d12b51953bc11b7e4c4944995292389da1"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b04-claude-science-check.md",
+      "sha256": "de1037b6c1485a65d5121e3d444c7a55b6b23c2194435531c2105a5c269f14e8"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

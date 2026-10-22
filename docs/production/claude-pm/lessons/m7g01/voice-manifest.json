@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-G01-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7g01/lesson.json",
+  "lessonSha256": "c4db8c99d144c631f44a9e092f60649da57a3489a3592398616965300db852f0",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7g01/lesson.production-brief.json",
+    "sha256": "3242d1f9eb872fa011dd15f8909809b0d6c4912140cf541c8e1a6cc38365816d"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A hydrocarbon question can ask you to name a molecule, sort its isomers, or predict what it makes. Each one here comes down to three checks. Which bonds does it have? What's added or swapped, and under what conditions? And do the atoms and the name check out? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.",
+      "hash": "421fd483a185",
+      "textSha256": "421fd483a185f080905a64844377787342250da4741ad08b02297308807a0150",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/hook.421fd483a185.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/hook.421fd483a185.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/hook.421fd483a185.generation.json",
+      "plannedRequestSha256": "fde4acc9dcbfda59f29041e907b9399fbf2601cca9e2268b5961ffd67b27b55f"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Two hydrocarbons, A and B, are shown as skeletal formulas. Give the IUPAC name of each compound. Then identify the type of structural isomerism shown by A and B, and justify your answer. Pause here to answer.",
+      "hash": "6e4ab18235eb",
+      "textSha256": "6e4ab18235eb541c827b55ba172281a22cd281feb89ed3e53cfc0c0653079148",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-question.6e4ab18235eb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-question.6e4ab18235eb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-question.6e4ab18235eb.generation.json",
+      "plannedRequestSha256": "386325101636686dbd555cab707e7f260e3d08d21abd8ec85f35d1022f4e2894"
+    },
+    {
+      "id": "q1-names",
+      "parentSceneId": "q1-names",
+      "text": "Start with A. Its longest chain has six carbons and one double bond, so it's a hexene. Number from the end nearer the double bond, and it starts at carbon two: hex-two-ene. Now B. Its longest chain has five carbons, with a methyl branch. The double bond wins the numbering, so count from the right-hand end. That puts the double bond at carbon two, and the methyl on carbon four: four-methylpent-two-ene.",
+      "hash": "2bb688065615",
+      "textSha256": "2bb6880656157ae38fdd9fe2a6dd718366b4d0bc61c6470a4e73a9939b1851fc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-names.2bb688065615.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-names.2bb688065615.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-names.2bb688065615.generation.json",
+      "plannedRequestSha256": "4eb6d735c7e8b9e766ad7ca7d53d83c71c1530b9e204e359f0e085556f112df5"
+    },
+    {
+      "id": "q1-isomers",
+      "parentSceneId": "q1-isomers",
+      "text": "Now count the atoms. Each is C six H twelve: six carbons, and one double bond, so two fewer hydrogens than the alkane. Same formula, different structures, so they're structural isomers. Both are alkenes, so it's not functional group isomerism. What changed is the carbon skeleton: A is a straight chain, and B is branched. So they're chain isomers.",
+      "hash": "46b461669090",
+      "textSha256": "46b46166909058c030471b805c86491f755ffb8d444fe6e2cbeba45179138731",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-isomers.46b461669090.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-isomers.46b461669090.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-isomers.46b461669090.generation.json",
+      "plannedRequestSha256": "525a4fc9d9ca94dbd2b6c866ac15d0fe44dbe10d4a3cbb6864ab620fcff76fca"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is numbering B from the left, the way you read it. That gives two-methylpent-three-ene. The branch gets the low number, but the double bond is named in the ending, so it gets first claim on the low numbers.",
+      "hash": "38dfe5efa348",
+      "textSha256": "38dfe5efa348a60ef67760522c29d52f906dda27ee1aae744ebd84efcd88d604",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-mistake.38dfe5efa348.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-mistake.38dfe5efa348.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q1-mistake.38dfe5efa348.generation.json",
+      "plannedRequestSha256": "681c839812c4afad205f21f2e4e6831b714799d9764878dfe72aca19ea3b4daa"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. Pent-two-ene reacts with hydrogen chloride at room temperature. In a separate reaction, pentane reacts with chlorine under UV light. For each reaction, identify the type of reaction, and write a balanced equation, using structural formulas, for the formation of one organic product. Pause here to answer.",
+      "hash": "ae15dddcf461",
+      "textSha256": "ae15dddcf4618ddb9ff3abf29e6a735d4c7e234b530e3cec38d5038a6d39ba40",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-question.ae15dddcf461.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-question.ae15dddcf461.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-question.ae15dddcf461.generation.json",
+      "plannedRequestSha256": "45416f0a781ecbb236c05f712ad59592ee48566235a97ca91621b875a8041e90"
+    },
+    {
+      "id": "q2-addition",
+      "parentSceneId": "q2-addition",
+      "text": "Start with pent-two-ene. It has a double bond, and hydrogen chloride needs no light or catalyst, so this is addition: the H goes on one carbon of the double bond, and the Cl on the other. Pent-two-ene isn't the same at both ends, so there are two possible products. Put the Cl on carbon two, and you get two-chloropentane. Three-chloropentane is just as correct. Either way, two molecules make one, and nothing is lost.",
+      "hash": "eb42e0440624",
+      "textSha256": "eb42e044062445e60d416bf807fafbe0b5bddeb4b4f9905bbf10facabbb43629",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-addition.eb42e0440624.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-addition.eb42e0440624.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-addition.eb42e0440624.generation.json",
+      "plannedRequestSha256": "ad6fc872f47b0578c248dadb1e406c8a59a05550422e1f4fe1d10e2db6939be5"
+    },
+    {
+      "id": "q2-substitution",
+      "parentSceneId": "q2-substitution",
+      "text": "Now pentane. It has only single bonds, so it can't add. The UV light gives the energy for substitution: one hydrogen swaps for a chlorine, and that hydrogen leaves as H Cl. Swap one on an end carbon, and you get one-chloropentane. Notice that both reactions make a chloropentane, C five H eleven Cl. What tells them apart is the starting bonds, and the H Cl.",
+      "hash": "5219aa60e701",
+      "textSha256": "5219aa60e701752938e5de4b8517a13cddcbf56893bba5f40861ba2a84b29d54",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-substitution.5219aa60e701.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-substitution.5219aa60e701.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-substitution.5219aa60e701.generation.json",
+      "plannedRequestSha256": "3d21327ab2c2669e287426ef205e68f5ae2537a1fe052a3e15081bc1ab6ba3cf"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is treating pentane like an alkene, and putting a chlorine on two neighbouring carbons. Count the atoms: that product is two hydrogens short, so the equation can't balance. An alkane has no double bond to open.",
+      "hash": "4481ac009241",
+      "textSha256": "4481ac00924174a903b2b16615d9eb5bd699c813f466f5a9c5cb7df3349a24bd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-mistake.4481ac009241.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-mistake.4481ac009241.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q2-mistake.4481ac009241.generation.json",
+      "plannedRequestSha256": "ec1ea67baea7bda7f389b2024567f752e91fd63877e88807ae7dfc06374e3efe"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A hydrocarbon, X, reacts with excess chlorine at room temperature, in the dark. The only organic product is one, one, two, two-tetrachlorobutane. Identify X, and explain your reasoning, including the type of reaction. Pause here to answer.",
+      "hash": "cc0a30126dd4",
+      "textSha256": "cc0a30126dd4afcf4f0fe752d57f33c08928b2ee49dc8c42514a37d902d3aa0d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-question.cc0a30126dd4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-question.cc0a30126dd4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-question.cc0a30126dd4.generation.json",
+      "plannedRequestSha256": "1be097a153a87c8f16b7f7fd05cfaab37f5dbb0b9bc7a962c2d493f7643b552f"
+    },
+    {
+      "id": "q3-what-added",
+      "parentSceneId": "q3-what-added",
+      "text": "Work backwards from the product. It's in the dark, with no UV light, so this isn't substitution. Chlorine has added. The product has four chlorine atoms, so two chlorine molecules added to each X molecule. A double bond can open only once, so it would add one chlorine molecule. Adding twice needs two extra bonds: a triple bond, or two double bonds.",
+      "hash": "ad84bd961384",
+      "textSha256": "ad84bd96138497c76c8ae4d0fd69eb066325d3e5b74bba9f2e083b09ab22c3db",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-what-added.ad84bd961384.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-what-added.ad84bd961384.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-what-added.ad84bd961384.generation.json",
+      "plannedRequestSha256": "d7555785a40af3f7ae235ed87b30af60431b57a8cee6f5fb7a9a38dc7406696c"
+    },
+    {
+      "id": "q3-where",
+      "parentSceneId": "q3-where",
+      "text": "Now where. All four chlorines are on carbons one and two, two on each. So both additions happened across the same pair of carbons. That needs a triple bond, between carbon one and carbon two. Take the chlorines off, and put the triple bond back. X is but-one-yne, C H triple bond C, C H two, C H three. Check: C four H six, plus two Cl two, gives C four H six Cl four.",
+      "hash": "a8b229e8a193",
+      "textSha256": "a8b229e8a1932c9d23832c48fc2bf7ba541d74be566fa1aa167469b3df4951fc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-where.a8b229e8a193.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-where.a8b229e8a193.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-where.a8b229e8a193.generation.json",
+      "plannedRequestSha256": "6f956fe219e8816c31c0a575d9aabc397f7e3116c73209bd979ddafd28502dd1"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is but-one-ene. Its double bond is in the right place, but it can add only one chlorine molecule, giving one, two-dichlorobutane, with just two chlorines.",
+      "hash": "1b5c41a8297d",
+      "textSha256": "1b5c41a8297d67050302808d6aff511194e5a84174a10504a47d3474550a2197",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-mistake.1b5c41a8297d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-mistake.1b5c41a8297d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q3-mistake.1b5c41a8297d.generation.json",
+      "plannedRequestSha256": "84623ddbe46160473c858033044fe3955f6c5d0311712af7ff414e6bd39a1cfe"
+    },
+    {
+      "id": "q4-question",
+      "parentSceneId": "q4-question",
+      "text": "Question four. X is an open-chain hydrocarbon with one multiple bond. Its molecular formula is C five H eight, and it decolourises bromine water at room temperature, without UV light. A student concludes that X is an alkene, because it decolourises bromine water. Evaluate the student's conclusion. Pause here to answer.",
+      "hash": "dcd9bdc5c77a",
+      "textSha256": "dcd9bdc5c77a732e44dbc3cba8556a45de6a613b856dca082169e50c7fdfd380",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-question.dcd9bdc5c77a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-question.dcd9bdc5c77a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-question.dcd9bdc5c77a.generation.json",
+      "plannedRequestSha256": "685e07edebf999b9963a0a3adbbaa6dbdcc0e6afa7c27106c605e62fea32601f"
+    },
+    {
+      "id": "q4-evidence",
+      "parentSceneId": "q4-evidence",
+      "text": "Start with what the test shows. Losing the orange colour means bromine has added, so X has a double bond or a triple bond. That rules out an alkane. But alkenes and alkynes both decolourise bromine water, so the test alone can't tell you which. The student has read more into the result than it can show.",
+      "hash": "266491836afb",
+      "textSha256": "266491836afb1796bc32f0cf25f633737c8d4e204864c3f70c0547021f24c175",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-evidence.266491836afb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-evidence.266491836afb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-evidence.266491836afb.generation.json",
+      "plannedRequestSha256": "f6619b6ac1a3d7d35d5dc48f83afb41b109c66a91cb46324bf0ca6ed869ea548"
+    },
+    {
+      "id": "q4-judgement",
+      "parentSceneId": "q4-judgement",
+      "text": "So use the formula. With five carbons, an alkene would be C n H two n, C five H ten. An alkyne is C n H two n minus two, C five H eight, which matches X. So the student's conclusion is incorrect. The test shows that X is unsaturated, and the formula shows it's an alkyne, such as pent-one-yne. It would add two bromine molecules, not one.",
+      "hash": "b5c57513b0f7",
+      "textSha256": "b5c57513b0f7466a4131836479edb6e67bb531fcb5f87ed640cd6143b0829632",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-judgement.b5c57513b0f7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-judgement.b5c57513b0f7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-judgement.b5c57513b0f7.generation.json",
+      "plannedRequestSha256": "df2be5eec7e9a23d589d52a9a68cae7ed8aec218e100988f39647c84386d719d"
+    },
+    {
+      "id": "q4-mistake",
+      "parentSceneId": "q4-mistake",
+      "text": "The classic mistake is treating bromine water as a test for double bonds only. It's a test for unsaturation: a double or a triple bond.",
+      "hash": "5b6bd65f3c7a",
+      "textSha256": "5b6bd65f3c7a40d6e646841558bc0eefbd22b39f69fe1ea7320fe9ce6b816b48",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-mistake.5b6bd65f3c7a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-mistake.5b6bd65f3c7a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/q4-mistake.5b6bd65f3c7a.generation.json",
+      "plannedRequestSha256": "ff26b5ec8af3314b8582abb0f9ecda0009eef60ab1fc9913fb2c075ac96c5e48"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start any hydrocarbon question. First, find the bonds: trace the longest chain with the multiple bond, and number from its nearer end. An alkane with a halogen and UV light means substitution: swap one hydrogen, and add H X. A double or triple bond means addition, one piece on each carbon, and a triple bond adds twice. Then count the atoms, and check the formula fits the family. Next, alcohols, and what an O H group does to a molecule.",
+      "hash": "8bcefeb11a53",
+      "textSha256": "8bcefeb11a5359dd8c27360f44f855d0924347f014e5a5ed8708bd361d6b1a2b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/decision-board.8bcefeb11a53.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/decision-board.8bcefeb11a53.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/decision-board.8bcefeb11a53.generation.json",
+      "plannedRequestSha256": "7fb3e119490f61f11ec893cda1aeb0d821642c5825b6ae3e3e6688c64326bdda"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G01-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

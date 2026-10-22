@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c03/measured/lesson.json",
+    "lessonSha256": "e96952bd13d30eee4e85c8c87ab2e4211f1e412d08cdb196ead85674c40637aa"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c01 (drawing and naming hydrocarbons up to C8; saturated and unsaturated; the zigzag), chem-m7-c02 (structural isomers; butane and 2-methylpropane, with their boiling points shown but not explained). Year 11: covalent bonds as shared electron pairs; intermolecular forces (dispersion forces, hydrogen bonding) and that stronger attractions between molecules raise the boiling point; polar and non-polar molecules. Not assumed: VSEPR by name, bond angles, the words tetrahedral, trigonal planar, linear, homologous series, general formula, intramolecular. Scene 2 explains the repulsion idea in one sentence rather than relying on Year 11 shape work.",
+    "startsWith": "Build single, double and triple bond models. The video opens: The gas in this camping stove is mostly butane, four carbons long, and it boils near minus one degree. Candle wax is made of the same kind of molecule, alkanes, but each chain has twenty or more carbons, and it's a solid at room temperature. Same family, very different substances.",
+    "stopsAfter": "stating and explaining the shape and bond angle at a carbon with a single, double or triple bond; building and writing members of the alkane, alkene and alkyne series up to C8 with their general formulas and functional groups; telling a homologous series from isomers; explaining boiling point trends with chain length, branching and between series of equal size, using intramolecular and intermolecular bonding; explaining hydrocarbon solubility in water and in non-polar solvents. No dataset processing (chem-m7-p01), no reactions (chem-m7-c04a), no orbital names.",
+    "nextLesson": "process real boiling point data across the alkane series (route chem-m7-p01, \"Investigate a hydrocarbon homologous series\"); the weaker second bond returns in chem-m7-c04a."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c03.md"
+  ],
+  "teaching": {
+    "task": "Butane is a gas and candle wax is a solid, yet both are made of the same kind of molecule. How does carbon's bonding set a hydrocarbon's shape, and how do size and shape set its boiling point and solubility?",
+    "causalExplanation": "(1) the same kind of molecule can be a gas or a solid (1); (2) bonding electron groups push apart, so four single bonds give a tetrahedral carbon and chains zigzag (2); (3) a double bond gives three directions, so a flat carbon, and its second bond is weaker and exposed (3); (4) a triple bond gives two directions, so a linear carbon; shape is read carbon by carbon (4); (5) adding CH₂ builds a homologous series with one general formula (5); (6) each multiple bond removes two hydrogens, giving the alkene and alkyne formulas; shared bonding (the same functional group, or for alkanes single bonds only) means shared reactions, and size changes the physical properties gradually (6); (7) series members differ by CH₂, isomers share a formula (7); (8) boiling separates molecules but keeps every covalent bond, so boiling point measures the forces between molecules (8); (9) longer chains have more electrons and more contact, so stronger dispersion forces and higher boiling points (9); (10) tetrahedral carbons make a straight chain zigzag so it can lie alongside its neighbours, while branches reduce contact, so weaker forces and lower boiling points (10); (11) the bond type barely changes the forces when the size is the same (11); (12) hydrocarbons would break water's hydrogen bonds without replacing them, so they stay separate, but they mix with other hydrocarbons (12); memory aid (13); two attempts and brief feedback (14 to 17); handoff (18); key notes (19).",
+    "conversationalApproach": "butane in a camping stove boils near minus one degree while candle wax, made of the same kind of molecule, is a solid, so the video asks how carbon's bonding explains the difference. Shape is taught carbon by carbon from the number of bonding directions (four give tetrahedral at about 109.5 degrees, three give trigonal planar at about 120, two give linear at 180), with propene showing that shape belongs to each carbon. The alkanes then line up as a homologous series differing by CH2, with general formulas for alkanes, alkenes and alkynes (open chain, one multiple bond), and a series is separated from a set of isomers. Properties follow from strong covalent bonds inside molecules against weak dispersion forces between them: longer chains have more electrons and more contact so they boil higher, branched isomers touch less so they boil lower, chain length matters more than bond type between series, and hexane forms a layer on water because it cannot replace the hydrogen bonds it would break, while it mixes with heptane. The memory aid counts directions at each carbon and contact between molecules. Two exam questions follow with brief feedback.",
+    "openingDecision": "The gas in this camping stove is mostly butane, four carbons long, and it boils near minus one degree. Candle wax is made of the same kind of molecule, alkanes, but each chain has twenty or more carbons, and it's a solid at room temperature. Same family, very different substances. So how does carbon's bonding explain the difference?",
+    "understandingCheck": "(A1) \"Propyne has the condensed structural formula CH₃C≡CH. (a) State the shape and bond angle around each carbon atom. (b) Identify the homologous series to which propyne belongs, and show that its molecular formula fits the general formula of that series.\" Tests shapes carbon by carbon and the general formula. Crossed mistake: \"all three carbons linear\" (site lesson 4 MC distractor). (A2) \"Hexane and 2,3-dimethylbutane both have the molecular formula C₆H₁₄. Explain which compound has the higher boiling point, with reference to the intramolecular and intermolecular bonding present.\" Skeletal formulas shown beside the names. New compounds (C₆ instead of the site's C₅); uses the syllabus wording \"intramolecular and intermolecular\". Crossed mistake: \"the branched molecule has weaker covalent bonds\" (site card 4 Critical Error).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"construct models, identify the functional group, and write structural and molecular formulae for homologous series of organic chemical compounds, up to C8 (ACSCH035) :; alkanes; alkenes; alkynes\" \"analyse the shape of molecules formed between carbon atoms when a single, double or triple bond is formed between them\" \"explain the properties within and between the homologous series of alkanes with reference to the intermolecular and intramolecular bonding present\" this video starts from bond models (single, double and triple) and stops at predicting boiling point and solubility trends across hydrocarbon series. It teaches: four bonding directions around a carbon spread as far apart as possible, so a carbon with four single bonds is tetrahedral (about 109.5°), which is why c01's chains zigzag; a carbon in a C=C has three bonding directions (the double bond counts as one), so it is trigonal planar (about 120°); the second bond of a double bond lies above and below the line between the carbons and is weaker (named here only as \"the second bond\", a forward link to chem-m7-c04a); a carbon in a C≡C has two directions, so it is linear (180°); shape belongs to each carbon, not the whole molecule (propene); homologous series (members built the same way, with the same functional group if they have one, each differing by CH₂), constructed as models up to C8; general formulas CnH2n+2, CnH2n and CnH2n−2 for open chains (no ring) and why each multiple bond removes two hydrogens; members of a series react alike while physical properties change gradually; homologous series against isomers (c02 callback); intramolecular (covalent bonds inside a molecule) against intermolecular (dispersion forces between molecules) and why boiling breaks only the second; boiling point rises with chain length (more electrons, more contact); branching lowers boiling point (less contact); between series of equal carbon number, boiling points are close, and chain length matters more; hydrocarbons barely dissolve in water but mix with non-polar solvents, explained by which attractions are broken and replaced. Not here: processing and evaluating the full boiling point dataset, graphing it, and the limits of the method (chem-m7-p01, the next video, which owns C7-IQ2-02); sigma and pi orbital language (site lesson 4 marks it beyond the syllabus; the term \"pi bond\" is not used, see Open decisions); restricted rotation and cis/trans (not in the 2017 syllabus); naming rules (chem-m7-c01); isomer types (chem-m7-c02; one callback only); reactions of the double bond (chem-m7-c04a); obtaining hydrocarbons from the Earth and fractional distillation (C7-IQ2-06, chem-m7-c07; the column plate is not used here); safe handling (C7-IQ2-05, the P videos' risk tables); functional groups beyond hydrocarbons."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c01: carbon ink; hydrogens soft grey; main chain pale blue; branches amber; double and triple bonds teal; bonding-direction lobes violet with navy angle arcs; covalent bonds solid ink; dispersion forces dotted pale-blue flicker lines; hydrogen bonds in water dotted violet (as chem-m7-c02). Board layout (constant): top-left the short task line or chip; centre the model board, one molecule or one comparison at a time; the boiling point strip at the right only in scenes 9 to 11; plates small at the left or right only in scenes 1, 9, 10, 12 and 18. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plate `m7-camping-gas-burner-v1.png` (inspected 21 Oct: a lit blue camping stove on an unlabelled blue gas canister, silver pot supports, brass valve, blue flame; no person or hand, no text; 2000 × 2000; hook, scene 10's callback and handoff, small, never stretched). Considered, not used: `m7-crude-oil-barrel-v1.png` (inspected: a plain dark steel drum; carries no structure idea), `m7-fractional-distillation-column-v1.png` (inspected: a steel column with copper trays and side outlets; it belongs to C7-IQ2-06 in chem-m7-c07, and using it here would add a second question), `m7-oil-gas-rig-v1.png` (inspected: an offshore platform; same reason). New plates: `m7-paraffin-candle-v1.png` (hook, scene 9, handoff) and `m7-hexane-water-heptane-tubes-v1.png` (scene 12); see Assets. No human figures.",
+    "transitionPlan": "The camping gas burner and paraffin candle plates open the hook with a short and a long skeletal zigzag drawn above them; the board clears to one carbon whose violet lobes swing apart into a tetrahedron, then ethene's lobes spread flat and ethyne's point opposite ways, and the three ink ball-and-stick models line up as a kept strip; the series ladder builds alkanes upward with a glowing +CH2 tag per rung, then slides left as but-1-ene loses two hydrogens and the general formula chips write; brackets join propane and butane as a series and butane and 2-methylpropane as isomers; three pentane models show solid covalent bonds and dotted dispersion flickers, the boiling point strip drops each molecule to its mark as the contact highlighter shades long and short overlaps, and the C6 trio clusters within a bracket while decane drops far above; hexane wedges toward the water lattice and its broken hydrogen bonds flash before it settles as a layer; the two memory lines write with the small models; each attempt clears the board and its feedback underlines the card as the models return; the boiling point strip and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-camping-gas-burner-v1.png` small at the left, flame flickering gently (coded flicker on the flame region only).",
+      "teachingReason": "Hook (a gas and a solid from the same family): The gas in this camping stove is mostly butane, four carbons long, and it boils near minus one degree.",
+      "narrationCue": "butane / twenty",
+      "motionPurpose": "On the spoken cues: On \"butane\" a skeletal butane zigzag draws above the canister with a chip \"butane, C₄H₁₀: boils near −1 °C\". On \"twenty\" `m7-paraffin-candle-v1.png` slides in small at the right; a long zigzag (twenty carbons, drawn skeletal and thin) draws above it with a chip \"wax alkanes: C20 or more: solid\". The two zigzags pulse once together, tag \"both alkanes: C–C and C–H single bonds\". Heading: \"How does carbon bonding",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-camping-gas-burner-v1.png` small at the left, flame flickering gently (coded flicker on the flame region only). On \"butane\" a skeletal butane zigzag draws above the canister with a chip \"butane, C₄H₁₀: boils near −1 °C\". On \"twenty\" `m7-paraffin-candle-v1.png` slides in small at the right; a long zigzag (twenty carbons, drawn skeletal and thin) draws above it with a chip \"wax alkanes: C20 or more: solid\". The two zigzags pulse once together, tag \"both alkanes: C–C and C–H single bonds\". Heading: \"How does carbon bonding explain hydrocarbon properties?\". Bright at the end: the heading and the two chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "tetrahedral",
+      "visualDecision": "new",
+      "visualReference": "the plates leave.",
+      "teachingReason": "Four single bonds: tetrahedral: Start with shape, and why chains zigzag.",
+      "narrationCue": "tetrahedral / one hundred and nine point five / ethane",
+      "motionPurpose": "On the spoken cues: Task line \"Shape at each carbon\". One carbon draws with four violet lobes bunched on one side; on \"push each other\" the direction spreader runs and the lobes swing apart into a tetrahedron (rotating slowly so the 3D shape reads). On \"tetrahedral\" a faint triangular-pyramid outline joins the four lobe tips (tag \"tetrahedral: 4 directions\"). On \"one hundred and nine point five\" a navy arc between two bonds reads",
+      "motionRole": "explain",
+      "onScreenChange": "the plates leave. Task line \"Shape at each carbon\". One carbon draws with four violet lobes bunched on one side; on \"push each other\" the direction spreader runs and the lobes swing apart into a tetrahedron (rotating slowly so the 3D shape reads). On \"tetrahedral\" a faint triangular-pyramid outline joins the four lobe tips (tag \"tetrahedral: 4 directions\"). On \"one hundred and nine point five\" a navy arc between two bonds reads \"109.5°\". On \"ethane\" the lobes become bonds and the ink ball-and-stick of ethane builds (engine3d port), turning about 60°; then a four-carbon chain extends from it and the zigzag of c01 scene 2 appears (tag \"4 directions → zigzag chain\", dims). Bright at the end: the ethane model, the \"109.5°\" arc and the tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "trigonal-planar",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "A double bond: trigonal planar: A double bond changes that.",
+      "narrationCue": "three / flat / second",
+      "motionPurpose": "On the spoken cues: Ethene's structural formula draws (CH₂=CH₂, teal double bond). On \"three\" three violet lobes grow from the left carbon: two to the H atoms and one, fatter, along the double bond; on \"counts as one direction\" the two lines of the double bond bundle into the one fat lobe (tag \"double bond = 1 direction\"). On \"flat\" the lobes spread in one plane; the ball-and-stick ethene builds and tilts edge-on so the six atoms are",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Ethene's structural formula draws (CH₂=CH₂, teal double bond). On \"three\" three violet lobes grow from the left carbon: two to the H atoms and one, fatter, along the double bond; on \"counts as one direction\" the two lines of the double bond bundle into the one fat lobe (tag \"double bond = 1 direction\"). On \"flat\" the lobes spread in one plane; the ball-and-stick ethene builds and tilts edge-on so the six atoms are seen to lie in one plane (tag \"trigonal planar: 3 directions\"), and a navy arc reads \"about 120°\". On \"second\" the model tilts back face-on: one bond line stays along the C–C axis (ink) and a teal cloud appears above and below the axis (tag \"second bond: above and below, weaker\"). Bright at the end: the flat ethene model, the \"about 120°\" arc and the teal second-bond tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "linear-and-local-shape",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "A triple bond: linear, and shape carbon by carbon: In ethyne, with a triple bond, each carbon has just two directions, so they point opposite ways: a straight line, one hundred and eighty degrees.",
+      "narrationCue": "two / propene / tetrahedral",
+      "motionPurpose": "On the spoken cues: Ethyne draws (HC≡CH, teal triple bond); on \"two\" two violet lobes point opposite ways from each carbon, the triple bond's three lines bundling into one lobe; the ball-and-stick ethyne builds as a straight rod; a navy straight-angle mark reads \"180°\" (tag \"linear: 2 directions\"). The three models (ethane, ethene, ethyne) line up small along the top as a kept strip: \"4 → tetrahedral 109.5°\", \"3 → trigonal planar",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Ethyne draws (HC≡CH, teal triple bond); on \"two\" two violet lobes point opposite ways from each carbon, the triple bond's three lines bundling into one lobe; the ball-and-stick ethyne builds as a straight rod; a navy straight-angle mark reads \"180°\" (tag \"linear: 2 directions\"). The three models (ethane, ethene, ethyne) line up small along the top as a kept strip: \"4 → tetrahedral 109.5°\", \"3 → trigonal planar ~120°\", \"2 → linear 180°\", then dim. On \"propene\" the ball-and-stick propene (CH₃CH=CH₂) builds centre; on \"tetrahedral\" the CH₃ carbon gets a small tetrahedron outline and the two double-bond carbons a flat triangle outline (tags \"tetrahedral\" and \"trigonal planar\"); a grey chip \"the whole molecule is flat?\" fades in and dims (said positively, not crossed). Bright at the end: the propene model with its two outlines and the dimmed strip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "homologous-series",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "A homologous series and its general formula: Line up the alkanes, from methane up to octane.",
+      "narrationCue": "octane / C H two / C n H two n plus two",
+      "motionPurpose": "On the spoken cues: Task line \"Build a series\". The series ladder builds ball-and-stick alkanes upward from the bottom: methane, ethane, propane, butane, each new member's added CH₂ unit glowing with a \"+CH₂\" tag; on \"octane\" the ladder jumps (pentane to heptane as small ghosts) to octane at the top. Beside each member its molecular formula writes (CH₄, C₂H₆, C₃H₈, C₄H₁₀ ... C₈H₁₈). On \"C H two\" the glowing CH₂ units pulse together. A",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Build a series\". The series ladder builds ball-and-stick alkanes upward from the bottom: methane, ethane, propane, butane, each new member's added CH₂ unit glowing with a \"+CH₂\" tag; on \"octane\" the ladder jumps (pentane to heptane as small ghosts) to octane at the top. Beside each member its molecular formula writes (CH₄, C₂H₆, C₃H₈, C₄H₁₀ ... C₈H₁₈). On \"C H two\" the glowing CH₂ units pulse together. A chip writes \"homologous series: same functional group (if any), each member + CH₂\". On \"C n H two n plus two\" a general formula chip \"alkanes: CnH2n+2\" writes at the side; its \"n\" slot fills \"8\" and the chip resolves \"C₈H₁₈\" beside octane, which pulses. Bright at the end: the ladder, the general formula chip and the C₈H₁₈ result. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "alkene-alkyne-series",
+      "visualDecision": "new",
+      "visualReference": "the ladder slides small to the left and dims.",
+      "teachingReason": "Alkenes and alkynes, and what a series shares: Alkenes form a series too, and their functional group is the C double bond C.",
+      "narrationCue": "two / C n H two n minus two / react",
+      "motionPurpose": "On the spoken cues: Centre: ball-and-stick butane, then on \"two\" one C–C turns into a teal C=C and two grey H atoms float off (tag \"1 C=C: −2 H\"), giving but-1-ene, formula chip \"C₄H₈ = C4H(2×4)\", general formula chip \"alkenes: CnH2n\" (teal functional group ring around the C=C); a small grey chip under it reads \"no ring: rings (cyclobutane) also fit CnH2n\" (screen only, dims with its chip). On \"C n H two n minus two\" the C=C becomes a",
+      "motionRole": "explain",
+      "onScreenChange": "the ladder slides small to the left and dims. Centre: ball-and-stick butane, then on \"two\" one C–C turns into a teal C=C and two grey H atoms float off (tag \"1 C=C: −2 H\"), giving but-1-ene, formula chip \"C₄H₈ = C4H(2×4)\", general formula chip \"alkenes: CnH2n\" (teal functional group ring around the C=C); a small grey chip under it reads \"no ring: rings (cyclobutane) also fit CnH2n\" (screen only, dims with its chip). On \"C n H two n minus two\" the C=C becomes a C≡C, two more H atoms float off (but-1-yne, \"C₄H₆\"), chip \"alkynes: CnH2n−2\". Three formula chips now stand in a column, each dimming as the next one writes so only the current chip is bright: \"alkanes CnH2n+2 (no functional group, single bonds)\", \"alkenes CnH2n (one C=C, no ring)\", \"alkynes CnH2n−2 (one C≡C, no ring)\". On \"react\" the whole column dims; a short ladder of alkenes (ethene, propene, but-1-ene) shows its teal C=C rings pulsing together (tag \"same bonding → similar reactions\"), and a small upward arrow beside the ladder reads \"size → physical properties change gradually\". Bright at the end: the two tags (the column dim). If the voiced preview shows the scene rushed, move \"Members of a series share the same bonding ... change gradually\" into scene 7's opening (no new words). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "series-vs-isomers",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "A series is not a set of isomers: Don't confuse a series with isomers.",
+      "narrationCue": "C H two / isomers / same",
+      "motionPurpose": "On the spoken cues: Three skeletal structures draw in a row with formula chips: propane (C₃H₈), butane (C₄H₁₀), 2-methylpropane (C₄H₁₀). On \"C H two\" a bracket joins propane and butane, \"homologous series: + CH₂\". On \"isomers\" a second bracket joins butane and 2-methylpropane, \"isomers: same formula\", with a small thumbnail of c02's what-changed card. On \"same\" two chips write under the row: \"series: different formulas\" and \"isomers:",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Three skeletal structures draw in a row with formula chips: propane (C₃H₈), butane (C₄H₁₀), 2-methylpropane (C₄H₁₀). On \"C H two\" a bracket joins propane and butane, \"homologous series: + CH₂\". On \"isomers\" a second bracket joins butane and 2-methylpropane, \"isomers: same formula\", with a small thumbnail of c02's what-changed card. On \"same\" two chips write under the row: \"series: different formulas\" and \"isomers: same formula\", the key words underlined. Bright at the end: the two brackets and the two chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "intra-vs-inter",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Inside molecules and between them: Now, properties.",
+      "narrationCue": "intramolecular / intermolecular / boils / between",
+      "motionPurpose": "On the spoken cues: Task line \"Why does boiling point change?\". The force view shows three ball-and-stick pentane molecules side by side as a liquid cluster. On \"intramolecular\" every covalent bond inside one molecule glows solid ink (tag \"intramolecular: covalent bonds, strong\"). On \"intermolecular\" dotted pale-blue flicker lines appear between neighbouring molecules (tag \"intermolecular: dispersion forces, weak\"; Year 11 chip \"from",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task line \"Why does boiling point change?\". The force view shows three ball-and-stick pentane molecules side by side as a liquid cluster. On \"intramolecular\" every covalent bond inside one molecule glows solid ink (tag \"intramolecular: covalent bonds, strong\"). On \"intermolecular\" dotted pale-blue flicker lines appear between neighbouring molecules (tag \"intermolecular: dispersion forces, weak\"; Year 11 chip \"from Year 11\" small). On \"boils\" the molecules drift apart; the dotted lines stretch and vanish while a green tick \"covalent bonds: all intact\" stays beside each molecule. On \"between\" a chip \"boiling breaks covalent bonds?\" fades in and is crossed (caption \"boiling separates molecules: no covalent bond breaks\"). Bright at the end: the separated molecules with their ticks, the \"intermolecular\" tag and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "chain-length",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Longer chains boil higher: Dispersion forces come from electrons shifting for a moment, which makes a temporary dipole that attracts the next molecule.",
+      "narrationCue": "surface / octane / solid",
+      "motionPurpose": "On the spoken cues: Two molecules side by side: on \"electrons shifting\" a faint electron cloud on one molecule shifts to one end (δ− and δ+ small), and the neighbour's cloud shifts in response, a dotted line flickering between them (tag \"temporary dipole → attraction\", dims). On \"surface\" the pair is replaced by two methane models and then two octane models; the contact highlighter shades the overlap: tiny for methane, long for octane;",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two molecules side by side: on \"electrons shifting\" a faint electron cloud on one molecule shifts to one end (δ− and δ+ small), and the neighbour's cloud shifts in response, a dotted line flickering between them (tag \"temporary dipole → attraction\", dims). On \"surface\" the pair is replaced by two methane models and then two octane models; the contact highlighter shades the overlap: tiny for methane, long for octane; the dispersion tally reads \"few\" then \"many\". The boiling point strip draws at the right with the dashed \"room temperature, 25 °C\" line. Molecules drop to their marks: methane \"−162 °C\" as named, butane silently to \"−1 °C\" (the hook's value), on \"octane\" octane \"126 °C\"; pentane drops silently to \"36 °C\", the first mark above the line (small grey tag \"first liquid: C5\", dims). On \"solid\" the candle plate returns small at the top of the strip with \"wax: solid at 25 °C\". Bright at the end: the strip with the four marks, the room temperature line and the octane contact shading. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark highlight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "branching",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the boiling point strip stays at the right with only the room temperature line.",
+      "teachingReason": "Branches boil lower: Branching works the other way.",
+      "narrationCue": "fall / zigzagging / ball / lower boiling point",
+      "motionPurpose": "On the spoken cues: Three ball-and-stick C₅H₁₂ isomers draw in a row with names (pentane, 2-methylbutane, 2,2-dimethylpropane) and one shared chip \"C₅H₁₂: same electrons\". On \"fall\" each drops to its mark on the strip: \"36 °C\", \"28 °C\", \"10 °C\". On \"zigzagging\" the two pentane models each briefly show one small faint tetrahedron outline (scene 2's outline), which fades before the contact shading. On \"spaghetti\" two pentane models lie",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the boiling point strip stays at the right with only the room temperature line. Three ball-and-stick C₅H₁₂ isomers draw in a row with names (pentane, 2-methylbutane, 2,2-dimethylpropane) and one shared chip \"C₅H₁₂: same electrons\". On \"fall\" each drops to its mark on the strip: \"36 °C\", \"28 °C\", \"10 °C\". On \"zigzagging\" the two pentane models each briefly show one small faint tetrahedron outline (scene 2's outline), which fades before the contact shading. On \"spaghetti\" two pentane models lie side by side and the contact highlighter shades a long overlap (handwritten tag \"straight chains: like spaghetti\"). On \"ball\" two 2,2-dimethylpropane models touch and the shading shrinks to a small patch (handwritten tag \"branched: like balls\"). The dispersion tally drops from \"many\" to \"fewer\". On \"lower boiling point\" the three strip marks and the two handwritten tags dim, and the stove plate returns small at the left (silent callback, no narration) with c02's two chips, \"butane: about −1 °C\" and \"2-methylpropane: about −12 °C\", and a small tick \"explained\". Bright at the end: the two contact pairs and the stove callback chips (strip marks and tags dim). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Mark highlight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "between-series",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the boiling point strip stays.",
+      "teachingReason": "Between series: size matters most: Between the series, size still wins.",
+      "narrationCue": "eight / Decane / type",
+      "motionPurpose": "On the spoken cues: Three skeletal C₆ structures draw side by side: hexane, hex-1-ene (teal C=C at the end), hex-1-yne (teal C≡C at the end). On \"eight\" each drops to its mark (\"69 °C\", \"63 °C\", \"71 °C\"), clustering within a small bracket \"about 8 °C\". On \"decane\" a ten-carbon zigzag draws and drops to \"174 °C\", far above; a tall bracket from hexane to decane reads \"+4 carbons: about +100 °C\". On \"type\" a chip writes \"chain length >",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the boiling point strip stays. Three skeletal C₆ structures draw side by side: hexane, hex-1-ene (teal C=C at the end), hex-1-yne (teal C≡C at the end). On \"eight\" each drops to its mark (\"69 °C\", \"63 °C\", \"71 °C\"), clustering within a small bracket \"about 8 °C\". On \"decane\" a ten-carbon zigzag draws and drops to \"174 °C\", far above; a tall bracket from hexane to decane reads \"+4 carbons: about +100 °C\". On \"type\" a chip writes \"chain length > bond type\". Bright at the end: the two brackets and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "solubility",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; the strip leaves.",
+      "teachingReason": "Solubility: what is broken and what replaces it: Now solubility.",
+      "narrationCue": "hydrogen bonds / layer / mix / replace",
+      "motionPurpose": "On the spoken cues: Task line \"Why does hexane form a layer on water?\". The water lattice draws (a cluster of water molecules with dotted violet hydrogen bonds; Year 11 chip small). On \"hydrogen bonds\" the dotted lines glow. On \"push in\" a hexane model wedges toward the cluster; the hydrogen bonds it would break flash red-brown, and only faint pale-blue dispersion flickers appear between hexane and water (tag \"breaks strong H bonds,",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the strip leaves. Task line \"Why does hexane form a layer on water?\". The water lattice draws (a cluster of water molecules with dotted violet hydrogen bonds; Year 11 chip small). On \"hydrogen bonds\" the dotted lines glow. On \"push in\" a hexane model wedges toward the cluster; the hydrogen bonds it would break flash red-brown, and only faint pale-blue dispersion flickers appear between hexane and water (tag \"breaks strong H bonds, gives back weak dispersion\"). The hexane model is pushed back out and the \"breaks strong H bonds\" tag dims. On \"layer\" `m7-hexane-water-heptane-tubes-v1.png` appears small at the right; a coded label points to the left tube's two layers (\"hexane\" on top, \"water\" below). On \"mix\" the label moves to the right tube (\"hexane + heptane: one layer\"); beside it two hexane-like zigzags and two heptane zigzags mingle with dispersion flickers between all of them (tag \"dispersion ↔ dispersion\", dims). On \"replace\" a chip writes \"dissolving: attractions broken must be replaced by similar ones\". Bright at the end: the two tube labels and the chip (the mingling models dim). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So, at each carbon, count the bonding directions: four, three or two give tetrahedral, flat or straight.",
+      "narrationCue": "longer / branched",
+      "motionPurpose": "On the spoken cues: Two lines write, handwritten, each lighting on its words and the earlier one dimming slightly: \"1 At each carbon: 4 → tetrahedral 109.5°, 3 → trigonal planar ~120°, 2 → linear 180°\" (the three small models from scene 4 reappear beside it), \"2 Between molecules: more contact → stronger dispersion → higher boiling point\". On \"longer\" a short and a long zigzag appear with an up arrow; on \"branched\" a straight and a",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two lines write, handwritten, each lighting on its words and the earlier one dimming slightly: \"1 At each carbon: 4 → tetrahedral 109.5°, 3 → trigonal planar ~120°, 2 → linear 180°\" (the three small models from scene 4 reappear beside it), \"2 Between molecules: more contact → stronger dispersion → higher boiling point\". On \"longer\" a short and a long zigzag appear with an up arrow; on \"branched\" a straight and a branched pair appear with a down arrow and the \"spaghetti / balls\" doodle. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Propyne has the condensed formula C",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Propyne has the condensed structural formula CH₃C≡CH. (a) State the shape and bond angle around each carbon atom. (b) Identify the homologous series to which propyne belongs, and show that its molecular formula fits the general formula of that series.\" Beside it the condensed formula is drawn larger in plain ink (no colours, no lobes, no angles). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no strip of models, no formula chips, no aid.",
+      "motionTools": [
+        "chip pop",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top; \"each carbon atom\" is underlined.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "tetrahedral / linear / C three H four",
+      "motionPurpose": "On the spoken cues: The ball-and-stick propyne builds. On \"tetrahedral\" the CH₃ carbon shows four violet lobes and a \"109.5°\" arc (\"shape and bond angle\" underlined). On \"linear\" the two C≡C carbons show two opposite lobes each and a \"180°\" mark. On \"C three H four\" \"homologous series\" and \"general formula\" are underlined; a chip writes \"alkyne: CnH2n−2, n = 3 → C₃H₄ ✓\" beside a count strip \"C 3, H 3 + 1 = 4\". Answer chip: \"CH₃ carbon:",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top; \"each carbon atom\" is underlined. The ball-and-stick propyne builds. On \"tetrahedral\" the CH₃ carbon shows four violet lobes and a \"109.5°\" arc (\"shape and bond angle\" underlined). On \"linear\" the two C≡C carbons show two opposite lobes each and a \"180°\" mark. On \"C three H four\" \"homologous series\" and \"general formula\" are underlined; a chip writes \"alkyne: CnH2n−2, n = 3 → C₃H₄ ✓\" beside a count strip \"C 3, H 3 + 1 = 4\". Answer chip: \"CH₃ carbon: tetrahedral 109.5°; C≡C carbons: linear 180°; alkyne, C₃H₄\". On \"all three carbons linear\" a chip with those words fades in and is crossed (caption \"read each carbon: the CH₃ carbon has 4 directions\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"Hexane and 2,3-dimethylbutane both have the molecular formula C₆H₁₄.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Hexane and two, three-dimethylbutane both have",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"Hexane and 2,3-dimethylbutane both have the molecular formula C₆H₁₄. Explain which compound has the higher boiling point, with reference to the intramolecular and intermolecular bonding present.\" Beside it the two skeletal formulas in plain ink, each labelled with its name. No boiling points shown. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "covalent / same electrons / contact / wrong",
+      "motionPurpose": "On the spoken cues: On \"covalent\" \"intramolecular\" is underlined and the covalent bonds in both structures glow ink with a tick \"intact when boiling\". On \"same electrons\" \"same molecular formula C₆H₁₄\" is underlined (small grey chip \"C₆H₁₄: same electrons\"). On \"contact\" \"intermolecular\" is underlined; the contact highlighter shades a long overlap between two hexane models and a short one between two 2,3-dimethylbutane models; small",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"covalent\" \"intramolecular\" is underlined and the covalent bonds in both structures glow ink with a tick \"intact when boiling\". On \"same electrons\" \"same molecular formula C₆H₁₄\" is underlined (small grey chip \"C₆H₁₄: same electrons\"). On \"contact\" \"intermolecular\" is underlined; the contact highlighter shades a long overlap between two hexane models and a short one between two 2,3-dimethylbutane models; small grey data chips appear (screen only): \"hexane 69 °C\", \"2,3-dimethylbutane 58 °C\". Answer chip: \"hexane: more contact → stronger dispersion forces → higher boiling point\". On \"wrong\" a chip \"branched isomer: weaker covalent bonds\" fades in and is crossed (caption \"boiling breaks no covalent bonds\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: So the bond type sets the shape at each carbon, and size and shape set the forces between molecules.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The two memory aid lines return small at the top. The boiling point strip returns with methane, butane, pentane and octane on it and empty marks for the other alkanes (dotted), the stove and candle plates small at either end. On \"Next\" a chip \"Next: investigate a hydrocarbon homologous series\" appears. Silently, the flat ethene model from scene 3 returns small in a corner with its teal second-bond cloud pulsing",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The two memory aid lines return small at the top. The boiling point strip returns with methane, butane, pentane and octane on it and empty marks for the other alkanes (dotted), the stove and candle plates small at either end. On \"Next\" a chip \"Next: investigate a hydrocarbon homologous series\" appears. Silently, the flat ethene model from scene 3 returns small in a corner with its teal second-bond cloud pulsing (small grey tag \"later: alkene reactions\"). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c03-learning-review.md",
+      "sha256": "f9e16d7c6f3d5314bb1c0427a42f7c50a050d2c6ecb07180de02439c6cc02645"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c03-claude-science-check.md",
+      "sha256": "d37c3e8a4a9cb8a1d02521f8246334b24d4a64baa7c679332832f46286204dcd"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

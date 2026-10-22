@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7p02b/lesson.json",
+    "lessonSha256": "93d8c5ea893b26dd2b72628c9851bae0f187452b68f26bf6abc69b8d4600df29"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "b01 (bacteria, fungi and viruses; viruses are not cells and multiply only inside host cells; most microbes are harmless); b02 (microbes come from other microbes; Pasteur's dust settling; Koch's pure culture on solid media); b03 (water and food as indirect transmission routes; cholera in drinking water). Year 11 Working Scientifically: independent, dependent and controlled variables; validity, reliability and accuracy; risk assessments. Year 11 Module 1 (or Module 5 B2c): bacteria multiply by splitting. Not assumed: indicator organisms, colony-forming units, serial dilution, the countable range, the CFU calculation, risk groups.",
+    "startsWith": "Plan safe sampling, controls and agar incubation. The video opens: A student plated water from three places. After two days, the tap water plate had three colonies, the creek water plate had two hundred and fourteen, and the rainwater tank plate had none. Is the tank water safe, and is the creek full of disease?",
+    "stopsAfter": "explaining why water is tested and why authorities use E. coli as an indicator, and what a school total count can and cannot show; stating the aim, the independent, dependent and controlled variables, and what a colony-forming unit is; describing sterile sampling of water and preparing a food sample; describing aseptic technique; explaining and carrying out a serial dilution; spreading 0.1 mL on three plates per dilution, labelling the base, taping the lid and incubating inverted at 25 to 30 °C, never 37 °C; explaining the negative and positive controls; choosing the plate with about 30 to 300 colonies and saying why; calculating CFU per mL; stating what colonies can and cannot show; judging validity, reliability and accuracy; writing the risk assessment (risk group 1, sealed plates never opened, autoclaving before disposal); calculating CFU per mL from new data and fixing a flawed method.",
+    "nextLesson": "how disease damages agricultural production, in plants and animals (route entry bio-m7-b04)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-p02.md"
+  ],
+  "teaching": {
+    "task": "A student's plates show three colonies from tap water, two hundred and fourteen from a creek, and none from a rainwater tank. Is the tank water safe, and is the creek full of disease? How do you design and run a safe, valid test that counts the microbes in a water or food sample, and what can the colonies tell you?",
+    "causalExplanation": "(1) the puzzle (1); (2) contamination is invisible; authorities test for E. coli because it signals faecal contamination; a school total count compares samples but cannot certify safety (2); (3) aim, variables, CFU (3); (4) separate sterile bottles; food as 1 g in 9 mL; aseptic technique keeps outside microbes out (4); (5) dense samples grow a film, so dilute in tenfold steps (5); (6) spread 0.1 mL, three plates each, label the base, tape the lid, incubate inverted at 25 to 30 °C because 37 °C favours microbes adapted to the body (6); (7) the negative control detects added microbes; the positive control shows conditions support growth (7); (8) pick the plate in about 30 to 300: above, colonies merge and the count runs low; below, chance matters too much (8); (9) divide by volume times dilution to scale back (9); (10) colonies show culturable microbes, not pathogens; no colonies does not prove safety (10); VRA (11); risk (12); attempts (13a to 13d); decision rule and handoff (14); key notes (15).",
+    "conversationalApproach": "three plates from tap, creek and tank water grew 3, 214 and no colonies, and neither the tank being safe nor the creek being full of disease follows from them, so the practical asks how to count microbes you cannot see and what colonies can and cannot tell you. Contaminated water can look clean; authorities test for E. coli as a sign of faecal contamination, while a school count of everything that grows on nutrient agar compares samples but cannot certify safety. The aim and variables are set with colony forming units per millilitre as the dependent variable; each step is given its reason: separate sterile bottles and aseptic technique, serial dilution in tenfold steps because a crowded plate merges into an uncountable film, three plates per dilution, labelling the base, taping without sealing, incubating upside down at 25 to 30 degrees and never at 37, and a negative and a positive control. One series is read to the plate with about 30 to 300 colonies, scaled back to CFU per millilitre one stage at a time, and the claim is limited to culturable microbes; validity, reliability and accuracy, and the risk assessment follow. Two exam questions follow with brief feedback.",
+    "openingDecision": "A student plated water from three places. After two days, the tap water plate had three colonies, the creek water plate had two hundred and fourteen, and the rainwater tank plate had none. Is the tank water safe, and is the creek full of disease? Neither follows from these plates. Let's find out.",
+    "understandingCheck": "(A1, calculate, 3 marks) creek water diluted to 10⁻², 0.1 mL spread on each of three plates, 48 h at 28 °C, 41, 47 and 53 colonies: calculate CFU per mL. Answer: mean 141 ÷ 3 = 47; volume × dilution = 0.1 × 10⁻² = 10⁻³ mL of original sample; 47 ÷ 10⁻³ = 47,000 = 4.7 × 10⁴ CFU per mL. Crossed mistake: \"4,700 CFU per mL\" (divided by the dilution only, forgetting the 0.1 mL). A1's counts appear nowhere earlier in the video (Revision 2: scene 11's reliability example now uses 150, 156 and 162, mean 156), so the item is unseen. (A2, identify problems and propose improvements, 4 marks) one plate of 1 mL undiluted creek water, 37 °C for 48 h, opened, \"too many colonies to count; the creek water contains dangerous bacteria\". Answer: any two, each with a fix that removes that problem: undiluted, so colonies merged (serially dilute and count the plate with about 30 to 300 colonies); 37 °C favours microbes adapted to the human body and opening the plate exposed her to whatever grew (incubate at 25 to 30 °C, keep the plate taped and never open it, count through the lid); the conclusion overclaims (colonies show culturable microbes, not pathogens; conclude only that creek water carried many culturable microbes, or test for *E. coli* in an accredited laboratory); one plate with no controls (three plates per dilution and a sterile-water negative control); also accepted (author model, not narrated): 1 mL is too much liquid to spread evenly (spread 0.1 mL). Feedback voices problems one and two and, briefly, the overclaim (the route's stop). Crossed mistake: \"repeat it three times\" as the fix for the uncountable plate (repeats improve reliability, but three undiluted plates are still uncountable). Owner rule: each improvement must fix the stated problem; the crossed chip models an improvement that does not.",
+    "curriculumScope": "Syllabus (NSW Biology Stage 6, 2017), as printed: \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117); design and conduct a practical investigation relating to the microbial testing of water or food samples\" this video prepares students to design and run the investigation and to read its results; watching it is not conducting it. It teaches: why water is tested and why authorities test for E. coli (an indicator), against what a school total count can show; the aim and variables; sterile sampling (water, and a food sample made up as a 10⁻¹ suspension); aseptic technique; serial dilution and why it is needed; spreading, labelling, taping and incubating (inverted, 25 to 30 °C, never 37 °C); negative and positive controls; choosing the countable plate (about 30 to 300 colonies); the CFU per mL calculation; what colonies can and cannot show; validity, reliability and accuracy; the risk assessment (risk group 1, AS/NZS 2243.3:2022, sealed plates never reopened, autoclaving before disposal). Placement (playlist order 5): after b03 (order 3) and p01 (order 4), before b04. Not re-taught: pathogen groups and viruses as non-cellular (b01, one clause in scene 10); pure culture and \"microbes come from microbes\" (b02, one clause in scene 4: the reason lids stay down); water as a transmission route (b03, one clause in scene 2). Not here: identifying species, selective media or E. coli testing as a student method (scene 2: an accredited laboratory's job); antimicrobial discs (p05); outbreak data (g01)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: water source violet (the independent variable); colonies and CFU amber (the dependent variable); controls green; \"culturable microbes\" teal and \"pathogens\" terracotta, kept apart wherever both appear; hazards terracotta; grey for tags and callbacks. Clutter rule: at most three bright text items; every tag dims when its sentence ends. All plates on screen are lidded and taped once incubated; no lid lifts after incubation, ever. Reuse: the explainer kit (`Plate`, `Callout`, `Mark`, `Countdown`, `HandText`, `DrawPath`, `scribbleEllipse`, `Enter`); B6a's `WrongChip`, `GreyTag`, `Cross`, `Cam`; bio-m5-p01's method step rail; bio-m6-p01's variables card, VRA cards, risk table layout and colony count grid with tallies (lesson-local there; copy into this lesson's folder or lift to a shared part, root to decide). New coded items (lesson-local): the dilution ladder (coded drops moving 1 mL from tube to tube along the rack plate, each tube gaining a label 10⁻¹ to 10⁻⁴ and a coded \"×10\" arrow), the plate row (the four aligned dilution plates in a row under their labels, each with a verdict chip), the scale-back line (the formula building term by term: colonies, then volume plated, then dilution, then the product, then the division), and the claim card (two columns, \"shows\" and \"doesn't show\"). No human figures.",
+    "transitionPlan": "Three sealed plates write in one per cue with their amber counts under the labelled sample bottles to open the hook; the step rail lights its stages in turn as the clear tap bottle, a small clear plate and the rod bacterium explain why water is tested; the variables card writes row by row with a pen link to the bottles and a zoom on one colony; the sampling bottle on its pole and the bottles plate appear as aseptic technique is glossed; the lawn plate slides to a thumbnail as the dilution rack fills the centre and coded drops move along the ladder from 10 to the minus 1 to 10 to the minus 4; a coded drop and spreader arc fill the agar plate, which copies into a row of three, is labelled on its base, taped, inverted and slid into the incubator; the controls card crossfades its negative plate to a contaminated one; the plate row lays out film, merging, countable and sparse plates under their labels; the task, grouped givens and equation write in separate parts and the scale-back line builds term by term; the mixed colonies plate and the claim card set what colonies show and do not show; the three evaluation cards and the risk table write in the right zone in turn; each attempt clears the board and its feedback underlines the question as working lines or a problem table fill; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "three new sealed plates side by side on the bench, writing in one per cue with counts amber: `m7-plate-few-v1.png` (tag \"tap: 3\"), `m7-plate-creek-v1.png` (tag \"creek: 214\"), `m7-plate-clear-v1.png` (on \"none\", tag \"tank: 0\"); above them `m7-sample-bottles-three-v1.png` small, each bottle with a violet label chip \"tap\", \"creek\", \"tank\".",
+      "teachingReason": "Hook (three plates): A student plated water from three places.",
+      "narrationCue": "none / Neither",
+      "motionPurpose": "On the spoken cues: A grey corner tag: \"site warm-up data, 48 h on nutrient agar\". On \"safe\" a chip writes over the tank plate: \"0 colonies = safe?\"; on \"full of disease\" a chip over the creek plate: \"214 = disease?\" (both terracotta, with question marks). On \"Neither\" both chips take a grey scribble cross. The question writes at the top left: \"What can colonies tell you?\" Bright at the end: the three counts and the question.",
+      "motionRole": "explain",
+      "onScreenChange": "three new sealed plates side by side on the bench, writing in one per cue with counts amber: `m7-plate-few-v1.png` (tag \"tap: 3\"), `m7-plate-creek-v1.png` (tag \"creek: 214\"), `m7-plate-clear-v1.png` (on \"none\", tag \"tank: 0\"); above them `m7-sample-bottles-three-v1.png` small, each bottle with a violet label chip \"tap\", \"creek\", \"tank\". A grey corner tag: \"site warm-up data, 48 h on nutrient agar\". On \"safe\" a chip writes over the tank plate: \"0 colonies = safe?\"; on \"full of disease\" a chip over the creek plate: \"214 = disease?\" (both terracotta, with question marks). On \"Neither\" both chips take a grey scribble cross. The question writes at the top left: \"What can colonies tell you?\" Bright at the end: the three counts and the question. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "why-test",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"1 why test\".",
+      "teachingReason": "Why test, and what a school test can show: Contaminated water can look clean.",
+      "narrationCue": "E. coli / different",
+      "motionPurpose": "On the spoken cues: Centre: the tap bottle alone, clear (tag \"looks clean\"). On \"culture them on agar\" `m7-plate-clear-v1.png` appears small beside the bottle (grey tag \"culture on agar: counts what grows\"), and dims as the next tag writes. On \"E. coli\" `m7-bacterium-rod-coccus-v1.png` small beside it, cropped by position to the rod (gloss \"*E. coli*: a gut bacterium, an indicator of faecal contamination\"; no species claim for the",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"1 why test\". Centre: the tap bottle alone, clear (tag \"looks clean\"). On \"culture them on agar\" `m7-plate-clear-v1.png` appears small beside the bottle (grey tag \"culture on agar: counts what grows\"), and dims as the next tag writes. On \"E. coli\" `m7-bacterium-rod-coccus-v1.png` small beside it, cropped by position to the rod (gloss \"*E. coli*: a gut bacterium, an indicator of faecal contamination\"; no species claim for the plate beyond \"gut bacterium\"). On \"gut pathogens\" a grey tag writes: \"may travel with it: *Salmonella*, *Cryptosporidium*, viruses\". As \"gut pathogens\" fades, a coded 100 mL bracket draws on the bottle and a card line writes silently: \"Australian Drinking Water Guidelines: *E. coli* should not be detected in a minimum 100 mL sample of drinking water\"; it dims to grey as \"different\" lands. On \"different\" the right zone splits into two columns: \"accredited lab: tests for *E. coli*, decides safety\" and, amber, \"school test: counts all microbes that grow; compares samples\"; on \"can't show water is safe\" a terracotta line under the school column: \"not a safety test\". Bright at the end: the two column heads and the terracotta line (the guideline line grey). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "aim-variables",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"2 plan\".",
+      "teachingReason": "Aim and variables: The aim is to compare how many microbes grow from tap, creek and tank water.",
+      "narrationCue": "source / colony forming units / same",
+      "motionPurpose": "On the spoken cues: Right zone: the variables card. On \"aim\" the aim line writes: \"Aim: compare culturable microbes in tap, creek and tank water\". On \"source\" row 1 writes violet, \"independent: water source (tap, creek, tank)\", with a pen link to the three bottles. On \"colony forming units\" row 2 writes amber, \"dependent: colony-forming units (CFU) per mL\", and a coded zoom on one colony of the creek plate shows two grey cell-glyph",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"2 plan\". Right zone: the variables card. On \"aim\" the aim line writes: \"Aim: compare culturable microbes in tap, creek and tank water\". On \"source\" row 1 writes violet, \"independent: water source (tap, creek, tank)\", with a pen link to the three bottles. On \"colony forming units\" row 2 writes amber, \"dependent: colony-forming units (CFU) per mL\", and a coded zoom on one colony of the creek plate shows two grey cell-glyph outlines, one single and one clump of three, each with an arrow into one colony (gloss \"CFU: one cell or clump → one colony\"). On \"same\" row 3 opens green, \"controlled\", and lists one per spoken item: \"same agar (nutrient agar, one batch)\", \"0.1 mL per plate\", \"same dilution method\", \"28 °C for 48 h\"; silent rows \"same plate size, same spreading, same counting rule\". Bright at the end: the three row headings. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "sampling-aseptic",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"3 sample and dilute\".",
+      "teachingReason": "Sampling and aseptic technique: Each sample goes into its own sterile, labelled bottle.",
+      "narrationCue": "aseptic technique",
+      "motionPurpose": "On the spoken cues: On \"own sterile, labelled bottle\" `m8-river-sampling-bottle-v1.png` appears (the pole and its bottle; tag \"sterile bottle for each sample\"), then the three bottles plate (labels \"tap\", \"creek\", \"tank\" write on). On \"For food\" a small grey card writes: \"food: 1 g in 9 mL sterile water = 10⁻¹ already\" (no food plate; one line). On \"aseptic technique\" the gloss writes: \"aseptic technique: keeps outside microbes out of",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"3 sample and dilute\". On \"own sterile, labelled bottle\" `m8-river-sampling-bottle-v1.png` appears (the pole and its bottle; tag \"sterile bottle for each sample\"), then the three bottles plate (labels \"tap\", \"creek\", \"tank\" write on). On \"For food\" a small grey card writes: \"food: 1 g in 9 mL sterile water = 10⁻¹ already\" (no food plate; one line). On \"aseptic technique\" the gloss writes: \"aseptic technique: keeps outside microbes out of samples and plates\". On \"sterile pipettes and spreaders\" `m6-micropipette-spreader-v1.png` (commissioned for bio-m6-p01) appears; on \"Bunsen flame\" `m5x-bunsen-burner-v1.png` stands at the back with a coded faint upward arrow above it (tag \"rising air carries dust away\"); on \"lift each lid\" `m6-agar-dish-top-v1.png` with a coded lid lifting a few degrees, then closing, while b02's `DustPath` specks drift past above it (grey tag \"dust carries microbes, as in Pasteur's flasks\"). A chip \"aseptic = just clean\" fades in and takes a grey cross. Bright at the end: the gloss and two tags. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "serial-dilution",
+      "visualDecision": "adjust",
+      "visualReference": "on \"merge into a film\" `m7-plate-lawn-v1.png` appears (tag \"undiluted: a solid film, can't count\").",
+      "teachingReason": "Why dilute, and how: A polluted sample can hold millions of microbes per millilitre.",
+      "narrationCue": "two",
+      "motionPurpose": "On the spoken cues: It slides to a grey thumbnail. On \"dilute in steps\" `m7-dilution-tube-rack-v1.png` fills the centre (the creek bottle and four capped tubes of clear water; gloss \"serial dilution: diluting in repeated tenfold steps\"). The dilution ladder runs: on \"One millilitre of sample into nine\" `m5x-graduated-pipette-v1.png` small, and a coded drop moves from the bottle to tube 1 (tags \"1 mL\" on the drop, \"9 mL sterile water\"",
+      "motionRole": "explain",
+      "onScreenChange": "on \"merge into a film\" `m7-plate-lawn-v1.png` appears (tag \"undiluted: a solid film, can't count\"). It slides to a grey thumbnail. On \"dilute in steps\" `m7-dilution-tube-rack-v1.png` fills the centre (the creek bottle and four capped tubes of clear water; gloss \"serial dilution: diluting in repeated tenfold steps\"). The dilution ladder runs: on \"One millilitre of sample into nine\" `m5x-graduated-pipette-v1.png` small, and a coded drop moves from the bottle to tube 1 (tags \"1 mL\" on the drop, \"9 mL sterile water\" on the tube); on \"ten to the minus one\" tube 1 gains the label \"10⁻¹ (1 in 10)\"; on \"ten to the minus two\" a drop moves tube 1 to tube 2 (label \"10⁻² (1 in 100)\"); on \"and so on\" tubes 3 and 4 gain \"10⁻³\" and \"10⁻⁴\" silently, with a coded \"×10 more dilute\" arrow under each step. Bright at the end: the gloss and the newest label. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "plate-incubate",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"4 plate and incubate\".",
+      "teachingReason": "Plate, label, tape, incubate: Spread point one of a millilitre from each dilution onto three plates.",
+      "narrationCue": "base / upside down / thirty seven",
+      "motionPurpose": "On the spoken cues: On \"point one of a millilitre\" a coded drop leaves the micropipette tip onto `m6-agar-dish-top-v1.png` and the spreader slides across it in a coded arc (tag \"0.1 mL, spread evenly\"); on \"onto three plates\" the plate copies into a row of three under tube 10⁻³ (tag \"3 plates each\"). On \"base\" a coded marker line writes small along the plate's base rim (chip \"label the base: lids get swapped\"). On \"two short strips\"",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"4 plate and incubate\". On \"point one of a millilitre\" a coded drop leaves the micropipette tip onto `m6-agar-dish-top-v1.png` and the spreader slides across it in a coded arc (tag \"0.1 mL, spread evenly\"); on \"onto three plates\" the plate copies into a row of three under tube 10⁻³ (tag \"3 plates each\"). On \"base\" a coded marker line writes small along the plate's base rim (chip \"label the base: lids get swapped\"). On \"two short strips\" two coded tape strips cross the rim at opposite sides, `m5x-tape-roll-v1.png` small beside (chip \"tape, don't seal: air gets in\"). On \"upside down\" the plate flips in a coded rotation and `m7-incubator-v1.png` (new) appears with the stack inside; coded condensation drops form on the lid, now underneath, and stay off the agar (chip \"inverted: drips stay off the agar\"); a coded dial reads \"28 °C\" with the band \"25 to 30 °C\" in green. On \"thirty seven\" a terracotta chip \"37 °C\" takes a grey cross (caption \"body temperature favours microbes adapted to us\"). The earlier chips dim as each new one lands. Bright at the end: the 25 to 30 °C band, the crossed 37 °C and the inverted chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "controls",
+      "visualDecision": "adjust",
+      "visualReference": "right zone: a controls card with two rows, outlined green.",
+      "teachingReason": "Two controls: You need two controls.",
+      "narrationCue": "negative control / positive control / grow",
+      "motionPurpose": "On the spoken cues: On \"negative control\" `m7-plate-clear-v1.png` appears (gloss \"negative control: sterile water, same handling → expect no growth\"). On \"If it grows colonies\" it crossfades to `m7-plate-few-v1.png` rotated 180° (uniform rotation, not stretched; three colonies; the hook plates are not on screen here) and a terracotta chip writes: \"growth here → contamination: results invalid\"; then it crossfades back. On \"positive",
+      "motionRole": "explain",
+      "onScreenChange": "right zone: a controls card with two rows, outlined green. On \"negative control\" `m7-plate-clear-v1.png` appears (gloss \"negative control: sterile water, same handling → expect no growth\"). On \"If it grows colonies\" it crossfades to `m7-plate-few-v1.png` rotated 180° (uniform rotation, not stretched; three colonies; the hook plates are not on screen here) and a terracotta chip writes: \"growth here → contamination: results invalid\"; then it crossfades back. On \"positive control\" `m6-antibiotic-colonies-before-v1.png` appears in the second row (a plate of separate colonies; two coded tape strips cross its rim at the same opposite positions as the sealed-plate set, because every grown plate is taped; tag \"known harmless culture (supplied, risk group 1)\"); on \"grow\" the gloss writes \"positive control: expect growth → agar and conditions work\". A chip \"both controls test the same thing\" fades in and takes a grey cross. Bright at the end: the two glosses and the contamination chip in grey. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Plate crossfade",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reading-plates",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"5 count and calculate\".",
+      "teachingReason": "Reading the plates: Here's one heavily contaminated sample's series.",
+      "narrationCue": "thirty to three hundred / chance",
+      "motionPurpose": "On the spoken cues: The plate row draws: four aligned sealed plates under the labels \"10⁻¹\", \"10⁻²\", \"10⁻³\", \"10⁻⁴\", one per cue: `m7-plate-lawn-v1.png` (chip \"film\"), `m7-plate-crowded-v1.png` (chip \"merging\"), `m7-plate-countable-v1.png` (chip \"156 (mean of 3 plates)\", amber), `m7-plate-sparse-v1.png` (chip \"14\"). Grey corner tag: \"site example\". On \"thirty to three hundred\" a green bracket labelled \"count: about 30 to 300\" rings the",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"5 count and calculate\". The plate row draws: four aligned sealed plates under the labels \"10⁻¹\", \"10⁻²\", \"10⁻³\", \"10⁻⁴\", one per cue: `m7-plate-lawn-v1.png` (chip \"film\"), `m7-plate-crowded-v1.png` (chip \"merging\"), `m7-plate-countable-v1.png` (chip \"156 (mean of 3 plates)\", amber), `m7-plate-sparse-v1.png` (chip \"14\"). Grey corner tag: \"site example\". On \"thirty to three hundred\" a green bracket labelled \"count: about 30 to 300\" rings the 10⁻³ plate. On \"merge and the count runs low\" the 10⁻² plate's chip adds \"too many: merged colonies count as one\"; on \"chance\" the 10⁻⁴ plate's chip adds \"too few: a few colonies more or less changes the result a lot\". The colony count grid from bio-m6-p01 lays over the 156 plate and tally marks run across a few colonies (tag \"mark each colony on the base as you count\"). Bright at the end: the bracket, \"156\" and the tally tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "scale-back",
+      "visualDecision": "new",
+      "visualReference": "the plate row shrinks to a strip with the 156 plate lit.",
+      "teachingReason": "Scale back: CFU per mL: Now scale back to the original sample.",
+      "narrationCue": "four / one point five six million",
+      "motionPurpose": "On the spoken cues: Right zone, in three separate parts (calculation layout rule): the short task at the top, \"Find CFU per mL in the original sample\"; the grouped givens below it, one per line with units, \"colonies: 156 (mean)\", \"volume plated: 0.1 mL\", \"dilution: 10⁻³\"; and the equation on its own line, writing term by term on \"colony count\", \"volume plated\", \"dilution\": \"CFU per mL = colonies ÷ (volume plated × dilution)\". On \"a",
+      "motionRole": "explain",
+      "onScreenChange": "the plate row shrinks to a strip with the 156 plate lit. Right zone, in three separate parts (calculation layout rule): the short task at the top, \"Find CFU per mL in the original sample\"; the grouped givens below it, one per line with units, \"colonies: 156 (mean)\", \"volume plated: 0.1 mL\", \"dilution: 10⁻³\"; and the equation on its own line, writing term by term on \"colony count\", \"volume plated\", \"dilution\": \"CFU per mL = colonies ÷ (volume plated × dilution)\". On \"a hundred and fifty six, divided by point one times ten to the minus three\" the substituted line writes: \"= 156 ÷ (0.1 × 10⁻³)\", each value underlined in the givens as it is used. On \"four\" the next line writes: \"0.1 × 10⁻³ = 10⁻⁴ mL of original sample on the plate\" (grey reason \"the plate got a ten-thousandth of a millilitre\"). On \"one point five six million\" the result line writes and stays: \"= 1.56 × 10⁶ CFU per mL\" (amber). Earlier lines dim; the givens and the result stay bright. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "what-it-shows",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"6 what it shows\".",
+      "teachingReason": "What colonies can and can't show: So be careful what you claim.",
+      "narrationCue": "most / pathogens",
+      "motionPurpose": "On the spoken cues: Centre: `m7-petri-colonies-v1.png` (a plate of mixed colonies: cream, yellow, orange and fuzzy mould colonies; tag \"mixed colonies: look tells you little\"). On \"most are harmless\" a teal tag writes: \"most: harmless environmental microbes\". On \"viruses won't grow\" b01's `m7-virus-particle-v1.png` thumbnail appears small beside the plate with a grey cross over a coded agar strip (tag \"viruses: need living cells, no",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"6 what it shows\". Centre: `m7-petri-colonies-v1.png` (a plate of mixed colonies: cream, yellow, orange and fuzzy mould colonies; tag \"mixed colonies: look tells you little\"). On \"most are harmless\" a teal tag writes: \"most: harmless environmental microbes\". On \"viruses won't grow\" b01's `m7-virus-particle-v1.png` thumbnail appears small beside the plate with a grey cross over a coded agar strip (tag \"viruses: need living cells, no colonies\"). The hook's three plates return in a row under the claim card. Right zone: the claim card, two columns: on \"more microbes that grow here\" the \"shows\" column writes teal, \"creek: more culturable microbes than tap or tank\"; on \"pathogens\" the \"doesn't show\" column writes terracotta, \"which microbes are pathogens\"; on \"doesn't prove water is safe\" a second line, \"tank: 0 colonies in 0.1 mL ≠ safe\"; on \"a tenth of a millilitre\" a small grey tag beside the tank plate: \"0.1 mL tested; the guideline uses at least 100 mL\". The chips \"214 = disease?\" and \"0 colonies = safe?\" from the hook return and each takes a grey scribble cross. Bright at the end: the two column lines and the second terracotta line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"6 what it shows\" still.",
+      "teachingReason": "Validity, reliability and accuracy: Validity: controls, aseptic technique and identical conditions mean the counts fairly compare microbes that grow on this agar.",
+      "narrationCue": "Validity / Reliability / Accuracy",
+      "motionPurpose": "On the spoken cues: Three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming, with apparatus in the centre so the scene is not text alone: \"Validity: measures what was intended? Yes for culturable microbes (controls, aseptic technique, one variable changed). No for pathogens or safety.\" \"Reliability: repeats agree? Three plates per dilution, for example 150, 156,",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"6 what it shows\" still. Three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming, with apparatus in the centre so the scene is not text alone: \"Validity: measures what was intended? Yes for culturable microbes (controls, aseptic technique, one variable changed). No for pathogens or safety.\" \"Reliability: repeats agree? Three plates per dilution, for example 150, 156, 162; an outlier shows up; use the mean.\" On \"three plates per dilution\" three copies of `m7-plate-countable-v1.png` stand in the centre, rotated 0°, 120° and 240° (uniform rotation, not stretched), with amber chips \"150\", \"156\", \"162\" and a small grey line under them \"mean 156\". On \"marking each colony\" scene 8's tally overlay returns over the middle plate. \"Accuracy: close to the true value? Calibrated pipettes; count plates with about 30 to 300 colonies; mark each colony on the base; still an estimate (clumps count as one).\" Footer, small grey: \"NESA glossary (2017 syllabus), reliability: 'An extent to which repeated observations and/or measurements taken under identical circumstances will yield similar results.'\" Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"7 stay safe\".",
+      "teachingReason": "Risk assessment: The risk assessment.",
+      "narrationCue": "risk group one / taped shut / autoclave",
+      "motionPurpose": "On the spoken cues: The risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, earlier rows dimming: on \"risk group one\" a header line writes: \"AS/NZS 2243.3:2022: school cultures are risk group 1 (low risk); unknown samples are handled as possibly higher\" (grey); on \"incubating multiplies it\" row 1, \"unknown microbes multiplied on incubated plates (treat as potentially pathogenic)\" / \"infection by swallowing,",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"7 stay safe\". The risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, earlier rows dimming: on \"risk group one\" a header line writes: \"AS/NZS 2243.3:2022: school cultures are risk group 1 (low risk); unknown samples are handled as possibly higher\" (grey); on \"incubating multiplies it\" row 1, \"unknown microbes multiplied on incubated plates (treat as potentially pathogenic)\" / \"infection by swallowing, through cuts, or breathing in spores if a plate is opened\" / \"plates taped, never opened after incubation, counted through the lid; 25 to 30 °C; wash hands; no eating or drinking\" with the taped creek plate thumbnail; on \"autoclave\" row 2, \"used cultures at disposal\" / \"spreading live microbes\" / \"sterilised in an autoclave (steam under pressure, 121 °C) by the teacher before disposal\" with `m6-autoclave-bag-plates-v1.png` (commissioned for bio-m6-p01; gloss \"autoclave: steam under pressure kills microbes\"); silently, as the autoclave row settles, row 3, \"70 % ethanol for wiping benches (H225, highly flammable)\" / \"fire near the Bunsen\" / \"no flame nearby when wiping; small squeeze bottle\" with the Bunsen thumbnail; grey row, silent, \"Bunsen flame / burns / tie back hair, safety mat, turn off when not in use\". Footer chip: \"follow your school's risk assessment, its microbiology procedure and each safety data sheet\". Hold about 2 seconds (reading hold; the risks return in the key notes). Hold about 2 seconds (reading hold; the risks return in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds (reading hold; the risks return in the key notes)"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student diluted creek water to",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A student diluted a sample of creek water to 10⁻². She spread 0.1 mL of this dilution onto each of three nutrient agar plates. After incubation at 28 °C for 48 hours, the plates had 41, 47 and 53 colonies. Calculate the number of colony-forming units (CFU) per mL in the creek water. Show your working. (3 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing: no formula, no plate row.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "forty seven / thousandth / forty seven thousand",
+      "motionPurpose": "On the spoken cues: On \"forty seven\" \"41, 47 and 53\" is underlined and \"(41 + 47 + 53) ÷ 3 = 141 ÷ 3 = 47\" writes. On \"thousandth\" \"10⁻²\" and \"0.1 mL\" are underlined and \"0.1 × 10⁻² = 10⁻³ mL\" writes. On \"forty seven thousand\" \"CFU per mL in the creek water\" is underlined and \"47 ÷ 10⁻³ = 47 000 = 4.7 × 10⁴ CFU per mL\" writes in the answer box. A chip \"4 700 CFU per mL\" fades in and is crossed (caption \"forgot the 0.1 mL plated\").",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"forty seven\" \"41, 47 and 53\" is underlined and \"(41 + 47 + 53) ÷ 3 = 141 ÷ 3 = 47\" writes. On \"thousandth\" \"10⁻²\" and \"0.1 mL\" are underlined and \"0.1 × 10⁻² = 10⁻³ mL\" writes. On \"forty seven thousand\" \"CFU per mL in the creek water\" is underlined and \"47 ÷ 10⁻³ = 47 000 = 4.7 × 10⁴ CFU per mL\" writes in the answer box. A chip \"4 700 CFU per mL\" fades in and is crossed (caption \"forgot the 0.1 mL plated\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A student spread 1 mL of undiluted creek water onto a single nutrient agar plate.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "A student spread one millilitre of undiluted creek",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student spread 1 mL of undiluted creek water onto a single nutrient agar plate. She incubated the plate at 37 °C for 48 hours, then opened it and recorded: 'Too many colonies to count. The creek water contains dangerous bacteria.' Identify TWO problems with this investigation and propose an improvement that fixes each problem. (4 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "overreaches",
+      "motionPurpose": "On the spoken cues: A two-column table writes: \"problem | improvement that fixes it\". On \"undiluted\" \"1 mL of undiluted creek water\" is underlined and row 1 fills \"undiluted → colonies merged, uncountable | serial dilution; count the plate with about 30 to 300 colonies\" with the lawn thumbnail beside the 156 plate thumbnail. On \"thirty seven degrees\" \"37 °C\" and \"then opened it\" are underlined and row 2 fills \"37 °C favours microbes",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to the top. A two-column table writes: \"problem | improvement that fixes it\". On \"undiluted\" \"1 mL of undiluted creek water\" is underlined and row 1 fills \"undiluted → colonies merged, uncountable | serial dilution; count the plate with about 30 to 300 colonies\" with the lawn thumbnail beside the 156 plate thumbnail. On \"thirty seven degrees\" \"37 °C\" and \"then opened it\" are underlined and row 2 fills \"37 °C favours microbes adapted to humans; opening exposes her | 25 to 30 °C; taped; never opened; count through the lid\". On \"overreaches\" \"The creek water contains dangerous bacteria\" is underlined and a voiced third row fills: \"claims 'dangerous bacteria' (colonies ≠ pathogens) | conclude 'many culturable microbes'\"; rows 1 and 2 dim. On \"classic mistake\" a chip \"repeat the plate 3 times\" fades in and is crossed (caption \"repeats don't make a lawn countable\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Sterile samples; serial dilutions (1 mL into 9 mL).\"",
+      "teachingReason": "Decision rule and handoff: So: sterile samples, serial dilutions, three plates each, both controls, and taped plates upside down at twenty five to thirty degrees.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Three plates per dilution; negative and positive controls.\" \"3 Label the base, tape, invert, 25 to 30 °C, never opened.\" \"4 Count the plate with about 30 to 300; CFU per mL = colonies ÷ (volume × dilution).\" \"5 Claim culturable microbes, not pathogens.\" On \"Next\" a chip \"Next: disease in agriculture\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Sterile samples; serial dilutions (1 mL into 9 mL).\" \"2 Three plates per dilution; negative and positive controls.\" \"3 Label the base, tape, invert, 25 to 30 °C, never opened.\" \"4 Count the plate with about 30 to 300; CFU per mL = colonies ÷ (volume × dilution).\" \"5 Claim culturable microbes, not pathogens.\" On \"Next\" a chip \"Next: disease in agriculture\" appears. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p02b-learning-review.md",
+      "sha256": "3a4f0e7455fd795419c215cb2df591c3802cef2ef28f4bcac23cdd29dbc47c00"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p02b-claude-science-check.md",
+      "sha256": "3a5074a81292a593559b27c9b64200f88b0f4a7fce8eb394ca79494f428308b9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

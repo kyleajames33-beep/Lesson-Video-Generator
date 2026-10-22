@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C03-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c03/lesson.json",
+  "lessonSha256": "22d4da38b12ea508b6c2961b4bda34a14c88154f91aa3e369b1b4ea51aff2bf8",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c03/lesson.production-brief.json",
+    "sha256": "0df3089c465968ee9444e5b435df81549e4e39295990abcff28b9443ac2daa26"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "The gas in this camping stove is mostly butane, four carbons long, and it boils near minus one degree. Candle wax is made of the same kind of molecule, alkanes, but each chain has twenty or more carbons, and it's a solid at room temperature. Same family, very different substances. So how does carbon's bonding explain the difference?",
+      "hash": "b3286f45fd3f",
+      "textSha256": "b3286f45fd3ffc097b3b467e25c7b656aa10eda64cb7a0279567093f0c9135cd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/hook.b3286f45fd3f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/hook.b3286f45fd3f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/hook.b3286f45fd3f.generation.json",
+      "plannedRequestSha256": "41e709b52b499149462261b67091c304ee0f83961cd9eb595176e4c91a5f4e0b"
+    },
+    {
+      "id": "tetrahedral",
+      "parentSceneId": "tetrahedral",
+      "text": "Start with shape, and why chains zigzag. A carbon with four single bonds has four groups of bonding electrons around it, and those groups push each other as far apart as they can. In three dimensions, that's a tetrahedral shape, with about one hundred and nine point five degrees between the bonds. So alkane carbons, like those in ethane, are tetrahedral, and a chain of them zigzags.",
+      "hash": "1ffd6ca00c59",
+      "textSha256": "1ffd6ca00c59b07cbf821dbe42aaa278480ed8638e1fe1c92b749a97914f39aa",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/tetrahedral.1ffd6ca00c59.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/tetrahedral.1ffd6ca00c59.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/tetrahedral.1ffd6ca00c59.generation.json",
+      "plannedRequestSha256": "61bcc7e0b3f68cc12026fefe9e07cd7822e1cc857b860cac7e67cbeeaddc1fc1"
+    },
+    {
+      "id": "trigonal-planar",
+      "parentSceneId": "trigonal-planar",
+      "text": "A double bond changes that. Each carbon in ethene has only three bonding directions: two to hydrogens, and one to the other carbon. The double bond counts as one direction, because both of its bonds point at the same atom. Three directions spread out flat, about one hundred and twenty degrees apart, so the shape is trigonal planar. The double bond's second bond sits above and below the line between the carbons, and it's weaker than the first.",
+      "hash": "7b874b049275",
+      "textSha256": "7b874b0492758e5b5495cff7db65a05855d8d95ea302d0e5f1308c60299d0e9b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/trigonal-planar.7b874b049275.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/trigonal-planar.7b874b049275.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/trigonal-planar.7b874b049275.generation.json",
+      "plannedRequestSha256": "61cebd5d36bb2426f0a1811075aac468a0138ea66c00aec0452ed0a05bc15b47"
+    },
+    {
+      "id": "linear-and-local-shape",
+      "parentSceneId": "linear-and-local-shape",
+      "text": "In ethyne, with a triple bond, each carbon has just two directions, so they point opposite ways: a straight line, one hundred and eighty degrees. That's linear. Shape belongs to each carbon, not to the whole molecule. In propene, the two carbons of the double bond are trigonal planar, but the C H three carbon on the end is still tetrahedral.",
+      "hash": "ae74f7b1f5f6",
+      "textSha256": "ae74f7b1f5f64509f32874518a03970fbb20bb9186f57c370e6445e69cf36a05",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/linear-and-local-shape.ae74f7b1f5f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/linear-and-local-shape.ae74f7b1f5f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/linear-and-local-shape.ae74f7b1f5f6.generation.json",
+      "plannedRequestSha256": "34b11257d4c0a9ba76f2a1a9acae57a59aff195ff7143de2376f359dbf8b60da"
+    },
+    {
+      "id": "homologous-series",
+      "parentSceneId": "homologous-series",
+      "text": "Line up the alkanes, from methane up to octane. Each one has one more C H two than the last. A family like that is called a homologous series: members built the same way, with the same functional group if they have one, each differing by C H two. One general formula gives every member. For alkanes, it's C n H two n plus two. For octane, n is eight, so that's C eight H eighteen.",
+      "hash": "9874e48e6838",
+      "textSha256": "9874e48e6838467ab6401fbcd6fe2c81f600321d845a4063356dc8b7211f0cbd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/homologous-series.9874e48e6838.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/homologous-series.9874e48e6838.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/homologous-series.9874e48e6838.generation.json",
+      "plannedRequestSha256": "2e6988897b04ff2eaa9113e5d3c4596acdc94102347ba9839f6e719b6839a55f"
+    },
+    {
+      "id": "alkene-alkyne-series",
+      "parentSceneId": "alkene-alkyne-series",
+      "text": "Alkenes form a series too, and their functional group is the C double bond C. Making one double bond takes away two hydrogens, so alkenes are C n H two n. A triple bond takes away two more, so alkynes are C n H two n minus two. Alkanes have no functional group, just single bonds. Members of a series share the same bonding, so they react alike, while their physical properties change gradually.",
+      "hash": "3e34d2ff5b65",
+      "textSha256": "3e34d2ff5b658c57b37540e0c102c0ce8dad704030e77b0d1383f3f3137a773e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/alkene-alkyne-series.3e34d2ff5b65.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/alkene-alkyne-series.3e34d2ff5b65.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/alkene-alkyne-series.3e34d2ff5b65.generation.json",
+      "plannedRequestSha256": "bf42789365a68372873bc520bbfec1e9daee5769041041fce9a5d546d91ed155"
+    },
+    {
+      "id": "series-vs-isomers",
+      "parentSceneId": "series-vs-isomers",
+      "text": "Don't confuse a series with isomers. Propane and butane differ by C H two, so they're neighbours in a series. Butane and two-methylpropane share one formula, so they're isomers. Series members have different formulas; isomers have the same formula.",
+      "hash": "1e1994559812",
+      "textSha256": "1e1994559812d74f7b1cd082f0d329c33f3117fb988fc478c8796adcc323e9b9",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/series-vs-isomers.1e1994559812.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/series-vs-isomers.1e1994559812.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/series-vs-isomers.1e1994559812.generation.json",
+      "plannedRequestSha256": "c31f7addf1072897e233c7b3617cb093c995aac686b1422969146cb721633e1c"
+    },
+    {
+      "id": "intra-vs-inter",
+      "parentSceneId": "intra-vs-inter",
+      "text": "Now, properties. Inside each molecule, strong covalent bonds hold the atoms together. That's intramolecular bonding. Between molecules there are much weaker attractions, called intermolecular forces. Hydrocarbons are non-polar, so their only intermolecular forces are dispersion forces. When a hydrocarbon boils, its molecules move apart, but every covalent bond stays intact. So boiling point measures the forces between molecules.",
+      "hash": "c1a94632602a",
+      "textSha256": "c1a94632602a1a9e6f771829b80a3a01a907b0fd263cd23e683cac337ee4b835",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/intra-vs-inter.c1a94632602a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/intra-vs-inter.c1a94632602a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/intra-vs-inter.c1a94632602a.generation.json",
+      "plannedRequestSha256": "f1c2034f09232deef0cb30abfcc0632e0250e4e88406ccd589cd51c68a1f40b5"
+    },
+    {
+      "id": "chain-length",
+      "parentSceneId": "chain-length",
+      "text": "Dispersion forces come from electrons shifting for a moment, which makes a temporary dipole that attracts the next molecule. A longer chain has more electrons, and more surface to touch its neighbours, so more of these attractions act at once. That takes more energy to overcome, so the boiling point rises. Methane boils at minus one hundred and sixty two degrees, and octane at one hundred and twenty six. Wax chains are long enough to be solid.",
+      "hash": "825986a3d3f8",
+      "textSha256": "825986a3d3f891b3de3f835ada25916e0474e25e24027e33a885fbe84cfe0a9f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/chain-length.825986a3d3f8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/chain-length.825986a3d3f8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/chain-length.825986a3d3f8.generation.json",
+      "plannedRequestSha256": "c4a6f155aeaeb92cc96c74ab0d729f2a2ca877c9967eafede309a48589dc31e9"
+    },
+    {
+      "id": "branching",
+      "parentSceneId": "branching",
+      "text": "Branching works the other way. Pentane, two-methylbutane and two, two-dimethylpropane are all C five H twelve, with the same number of electrons, but their boiling points fall: thirty six, twenty eight, then ten degrees. A straight chain, zigzagging at each tetrahedral carbon, can lie alongside its neighbours, like strands of uncooked spaghetti. A branched molecule is more like a ball, so it touches its neighbours over a smaller area. Less contact means weaker dispersion forces, and a lower boiling point.",
+      "hash": "b0f873fcaa78",
+      "textSha256": "b0f873fcaa780ab929c43602d5f47d578e30dd897f10ea39ebe6454e0010e94b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/branching.b0f873fcaa78.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/branching.b0f873fcaa78.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/branching.b0f873fcaa78.generation.json",
+      "plannedRequestSha256": "aa689ac689a51dd8ccce9ab59fcbb8d4642c173a7f0f1b248271d178dbaee29b"
+    },
+    {
+      "id": "between-series",
+      "parentSceneId": "between-series",
+      "text": "Between the series, size still wins. Hexane, hex-one-ene and hex-one-yne, all six carbons, boil within about eight degrees of each other. Decane, with ten, boils about a hundred degrees higher. So chain length usually matters far more than the type of bond.",
+      "hash": "25b44bda7068",
+      "textSha256": "25b44bda7068fa6074f0c9ca8954daa5397f2d91281832119d3d6dc7ee0f23e9",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/between-series.25b44bda7068.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/between-series.25b44bda7068.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/between-series.25b44bda7068.generation.json",
+      "plannedRequestSha256": "d108c089fe4bdc019f8a843c89d8f67ddcf96698bebfe6e67509d14fb3cb316a"
+    },
+    {
+      "id": "solubility",
+      "parentSceneId": "solubility",
+      "text": "Now solubility. Water molecules hold each other with strong hydrogen bonds. To dissolve, hexane would have to push in between them, breaking those bonds, and it could only offer weak dispersion forces back. So hexane stays as a separate layer, on top. In heptane, though, both liquids have only dispersion forces, so they mix completely. Like dissolves like, because similar attractions replace the ones broken.",
+      "hash": "bcdb43383df8",
+      "textSha256": "bcdb43383df812314b65264f69041112089f381a78fe3f07f776948a6452b7f0",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/solubility.bcdb43383df8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/solubility.bcdb43383df8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/solubility.bcdb43383df8.generation.json",
+      "plannedRequestSha256": "383d3a887a2ab8061cc3584af5b2cb5120e6bab00023e24ae714e27ea12f16e2"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, at each carbon, count the bonding directions: four, three or two give tetrahedral, flat or straight. Between molecules, more contact means stronger dispersion forces, so longer chains boil higher, and branched chains boil lower.",
+      "hash": "a92a9f9cf0e7",
+      "textSha256": "a92a9f9cf0e7e0b7dd62a8e3eb2b3b7b0e23f1f455b49598e0cc1ca0ee91f4ec",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/memory-aid.a92a9f9cf0e7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/memory-aid.a92a9f9cf0e7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/memory-aid.a92a9f9cf0e7.generation.json",
+      "plannedRequestSha256": "005f22478771d262d5eb7ee5cd6ccdf6277f03664e8026779da21b4b5528b478"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Propyne has the condensed formula C H three, C triple bond C H. State the shape and bond angle around each carbon atom. Then identify its homologous series, and show that propyne fits its general formula. Pause here to answer.",
+      "hash": "0fa3fa77680e",
+      "textSha256": "0fa3fa77680ea8f84f77244dd17bc0c3753fd840204eb1834d263245e42fb043",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/attempt-1.0fa3fa77680e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/attempt-1.0fa3fa77680e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/attempt-1.0fa3fa77680e.generation.json",
+      "plannedRequestSha256": "fa6df93036e66b4e7731897b435dacfe30a79001ad3e3ff31556b1a6fa282ee5"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The C H three carbon has four single bonds: tetrahedral, about one hundred and nine point five degrees. The two carbons in the triple bond each have two directions: linear, one hundred and eighty. Propyne is an alkyne, C n H two n minus two. With n equal to three, that's C three H four, which matches. Calling all three carbons linear misses the C H three.",
+      "hash": "a7ee21be30a0",
+      "textSha256": "a7ee21be30a0f162df8ae80383c017f81c8e34d9a4ca8b09b25fe779dd4853cf",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/feedback-1.a7ee21be30a0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/feedback-1.a7ee21be30a0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/feedback-1.a7ee21be30a0.generation.json",
+      "plannedRequestSha256": "5652ee002ee2f66444be02e3c876e3aa4904049a61ed27b974999320d9e22a18"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Hexane and two, three-dimethylbutane both have the molecular formula C six H fourteen. Explain which has the higher boiling point. Refer to the intramolecular and intermolecular bonding present. Pause here to answer.",
+      "hash": "95452c5e399a",
+      "textSha256": "95452c5e399af502cdd3c8721e9955649362cb8d35bd2d5121a47083c4ce6cb9",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/attempt-2.95452c5e399a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/attempt-2.95452c5e399a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/attempt-2.95452c5e399a.generation.json",
+      "plannedRequestSha256": "6173898e4f6ec845d23bdd548a17ba41831033db3970d6c7dde987bf395985df"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Inside each molecule, covalent bonds hold the atoms, and boiling doesn't break them. Both have the same electrons, and only dispersion forces between molecules. Hexane's straight chain lies alongside its neighbours with more contact, so its dispersion forces are stronger, and it has the higher boiling point. Saying the branched one has weaker covalent bonds is wrong: boiling separates molecules.",
+      "hash": "2d5b0256519a",
+      "textSha256": "2d5b0256519a13a71b4834f67df035bd6cd6f50d887656cad6675864afd64d40",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/feedback-2.2d5b0256519a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/feedback-2.2d5b0256519a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/feedback-2.2d5b0256519a.generation.json",
+      "plannedRequestSha256": "4819716409ccdec11f9537c30892ae7baa7fdddd0c6504dfb6e4a9c08b3d97db"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So the bond type sets the shape at each carbon, and size and shape set the forces between molecules. Next, the practical: you'll process real boiling point data across the alkane series, and judge what it shows.",
+      "hash": "15a5ff947992",
+      "textSha256": "15a5ff9479925f2eac7c25254af0d54d8e3709904480cac37c6116e5b188d88d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/handoff.15a5ff947992.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/handoff.15a5ff947992.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/handoff.15a5ff947992.generation.json",
+      "plannedRequestSha256": "843b83ea6e28c520421ebb6bc8d1b855d7f688ecbdbf69104ec77e563f0ed295"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C03-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-P02-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p02b/lesson.json",
+  "lessonSha256": "93d8c5ea893b26dd2b72628c9851bae0f187452b68f26bf6abc69b8d4600df29",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p02b/lesson.production-brief.json",
+    "sha256": "599dd1bd6912a703eee88d56236620b3e67b8f1fecca4eaf3ec3b28e24e91540"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A student plated water from three places. After two days, the tap water plate had three colonies, the creek water plate had two hundred and fourteen, and the rainwater tank plate had none. Is the tank water safe, and is the creek full of disease? Neither follows from these plates. Let's find out.",
+      "hash": "d57cc4680088",
+      "textSha256": "d57cc4680088f4a407a3647b9dfd44d5b2cb5c65bf288ac45a1524da93025467",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/hook.d57cc4680088.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/hook.d57cc4680088.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/hook.d57cc4680088.generation.json",
+      "plannedRequestSha256": "caf1f00ce8b3e8bc579a78ca616d4640f35b68979900d6abfecda905e898dd65"
+    },
+    {
+      "id": "why-test",
+      "parentSceneId": "why-test",
+      "text": "Contaminated water can look clean. One way to count microbes that can grow in these conditions is to culture them on agar. Water authorities test for E. coli, a gut bacterium that signals faecal contamination, so gut pathogens might be too. A school test is different: it counts every microbe that grows on nutrient agar, so it compares samples, but it can't show water is safe.",
+      "hash": "deb9c7bb330d",
+      "textSha256": "deb9c7bb330d0a628711d1d01b50f023c526d14be07109d2fd1ff77ec96d6331",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/why-test.deb9c7bb330d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/why-test.deb9c7bb330d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/why-test.deb9c7bb330d.generation.json",
+      "plannedRequestSha256": "3e6ba3eb1811e11937f8f681dcf3f91b246d12a4863911a105c56b7c691b6f69"
+    },
+    {
+      "id": "aim-variables",
+      "parentSceneId": "aim-variables",
+      "text": "The aim is to compare how many microbes grow from tap, creek and tank water. The independent variable is the water source. The dependent variable is colony forming units per millilitre. A colony forming unit is a cell, or a clump of cells, that grows into one colony. Keep the agar, volume, dilutions, and incubation time and temperature the same.",
+      "hash": "82eb72e41e1e",
+      "textSha256": "82eb72e41e1e2b9cff569300cf8e258027da50b27751c8733a3fd0e1387aa626",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/aim-variables.82eb72e41e1e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/aim-variables.82eb72e41e1e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/aim-variables.82eb72e41e1e.generation.json",
+      "plannedRequestSha256": "3b4996f7c28137e03d969173309078b4b2539c4281e84874b6161c6027c890c7"
+    },
+    {
+      "id": "sampling-aseptic",
+      "parentSceneId": "sampling-aseptic",
+      "text": "Each sample goes into its own sterile, labelled bottle. For food, mash one gram into nine millilitres of sterile water. Then use aseptic technique: methods that keep outside microbes out. Use sterile pipettes and spreaders, work beside a Bunsen flame, and lift each lid only a little, and only briefly.",
+      "hash": "f51eeea40a3e",
+      "textSha256": "f51eeea40a3e1c997643d6be00d3937440327694cb65d06b84e2843ebd942013",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/sampling-aseptic.f51eeea40a3e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/sampling-aseptic.f51eeea40a3e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/sampling-aseptic.f51eeea40a3e.generation.json",
+      "plannedRequestSha256": "c446a4994f25d35d5675322294d9239b06726a7433e95a73869bf6ab8d2b791b"
+    },
+    {
+      "id": "serial-dilution",
+      "parentSceneId": "serial-dilution",
+      "text": "A polluted sample can hold millions of microbes per millilitre. Plated straight, they'd merge into a film you can't count. So dilute in steps. One millilitre of sample into nine of sterile water makes one in ten, written ten to the minus one. One millilitre of that into another nine makes ten to the minus two, and so on.",
+      "hash": "ecc447a1f8fb",
+      "textSha256": "ecc447a1f8fb0c545b9703f687196803d31b5f36497fa8c7d8da7e49332e1186",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/serial-dilution.ecc447a1f8fb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/serial-dilution.ecc447a1f8fb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/serial-dilution.ecc447a1f8fb.generation.json",
+      "plannedRequestSha256": "a4f9b360a69bfcb2de55cd97550dcc3f87a91ac223fe0a3d3e3c3be8730ed59e"
+    },
+    {
+      "id": "plate-incubate",
+      "parentSceneId": "plate-incubate",
+      "text": "Spread point one of a millilitre from each dilution onto three plates. Label the base, because lids get swapped. Tape each lid with two short strips, so it can't open but air gets in. Incubate the plates upside down, so condensation can't drip onto the agar, at twenty five to thirty degrees for two days. Never thirty seven: body temperature would favour microbes adapted to us.",
+      "hash": "d56b833dba7a",
+      "textSha256": "d56b833dba7a0a3496288ac503d7f08b912ec4de3987c9d410b30eae73d3cd91",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/plate-incubate.d56b833dba7a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/plate-incubate.d56b833dba7a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/plate-incubate.d56b833dba7a.generation.json",
+      "plannedRequestSha256": "9d79f23436de59fbd9ce0d2cfb651724de60ccca3a7c3fda44730e9f37c70cf3"
+    },
+    {
+      "id": "controls",
+      "parentSceneId": "controls",
+      "text": "You need two controls. The negative control is a plate spread with your sterile water, handled the same way. It should grow nothing. If it grows colonies, your method added microbes, and every count is in doubt. The positive control is spread with a known harmless culture. It should grow, which shows the agar and conditions work.",
+      "hash": "2e20d9310f7e",
+      "textSha256": "2e20d9310f7e82c878ca9ab0b3945793309d4be6a26bf66927707462060aa30e",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/controls.2e20d9310f7e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/controls.2e20d9310f7e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/controls.2e20d9310f7e.generation.json",
+      "plannedRequestSha256": "2216bac367a53afa39894cf8b61c0d446883d2936d26074bdcbae3b9b4b14f4f"
+    },
+    {
+      "id": "reading-plates",
+      "parentSceneId": "reading-plates",
+      "text": "Here's one heavily contaminated sample's series. Ten to the minus one is a film. Ten to the minus two has colonies merging. Ten to the minus three averages a hundred and fifty six, and ten to the minus four only fourteen. Count the plate with about thirty to three hundred colonies. Above that, colonies merge and the count runs low. Below it, chance matters too much.",
+      "hash": "0dee1a1716b4",
+      "textSha256": "0dee1a1716b4d176305e04c6eaf264b57244ef577b67d7c20cf322c31c7bb832",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/reading-plates.0dee1a1716b4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/reading-plates.0dee1a1716b4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/reading-plates.0dee1a1716b4.generation.json",
+      "plannedRequestSha256": "8e9c9efeb585bd45ecb76abcadd4af48c4d08de03a3a1ee98615ab682150a73c"
+    },
+    {
+      "id": "scale-back",
+      "parentSceneId": "scale-back",
+      "text": "Now scale back to the original sample. CFU per millilitre is the colony count, divided by the volume plated times the dilution. Here, that's a hundred and fifty six, divided by point one times ten to the minus three. Point one times ten to the minus three is ten to the minus four, so the sample held about one point five six million CFU per millilitre.",
+      "hash": "ccd3eca3278f",
+      "textSha256": "ccd3eca3278f1992bb57fc7981985025ad185a4ed44d7b5cd1ac3a3e4605194f",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/scale-back.ccd3eca3278f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/scale-back.ccd3eca3278f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/scale-back.ccd3eca3278f.generation.json",
+      "plannedRequestSha256": "735011d0d7ace22524e0513cd795e35db5a8b7a9ebdf283f82a966311f274cc2"
+    },
+    {
+      "id": "what-it-shows",
+      "parentSceneId": "what-it-shows",
+      "text": "So be careful what you claim. Colonies show microbes that grow on this agar at this temperature, and most are harmless. You can't spot a pathogen by looking at a colony, and viruses won't grow on agar at all. So the creek carries more microbes that grow here, not proven pathogens. And no colonies doesn't prove water is safe: the plate tested only a tenth of a millilitre.",
+      "hash": "5618f1e80602",
+      "textSha256": "5618f1e806020d7c8780444354ba025faaf23dcd56d79f92fa9d8ff6c5114709",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/what-it-shows.5618f1e80602.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/what-it-shows.5618f1e80602.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/what-it-shows.5618f1e80602.generation.json",
+      "plannedRequestSha256": "51a1016aeea4e7f20c0fbc7a704e7a6cb758ea9a96a9259a80e6210c952474a9"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Validity: controls, aseptic technique and identical conditions mean the counts fairly compare microbes that grow on this agar. Reliability: three plates per dilution show whether repeats agree. Accuracy: calibrated pipettes, plates in the thirty to three hundred range, and marking each colony as you count.",
+      "hash": "fb0ddb776af0",
+      "textSha256": "fb0ddb776af0ee58ba2e0597969cf98a68367ef15dad9f2b94fc10efde821ee8",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/validity-reliability.fb0ddb776af0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/validity-reliability.fb0ddb776af0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/validity-reliability.fb0ddb776af0.generation.json",
+      "plannedRequestSha256": "0b582a71c940c0b34df06fb26fc27aa0fa394690271f9709ffebd9b5b6003972"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. Schools buy only risk group one cultures, the lowest risk group in the Australian standard. But a sample could hold anything, and incubating multiplies it. So treat every grown plate as possibly holding pathogens: keep it taped shut, count through the lid, and wash your hands. Your teacher sterilises used plates in an autoclave before disposal.",
+      "hash": "3c77d8448c0b",
+      "textSha256": "3c77d8448c0b01792468a5e11f8ddafbd08956341b2f84e4554fb4cfb9b9653f",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/risk-assessment.3c77d8448c0b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/risk-assessment.3c77d8448c0b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/risk-assessment.3c77d8448c0b.generation.json",
+      "plannedRequestSha256": "376bb5017def7b28af4cea22cc4e45cdaa46b6aeaa090e15a2dd8646922c018a"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student diluted creek water to ten to the minus two, and she spread point one of a millilitre onto each of three plates. After two days at twenty eight degrees, the plates grew forty one, forty seven and fifty three colonies. Calculate the number of colony forming units per millilitre in the creek water. Pause here to answer.",
+      "hash": "9503d520e327",
+      "textSha256": "9503d520e3276e60a39a1e8a17780a6fcfbcb7e2ca08c92183f0fb18c015b396",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/attempt-1.9503d520e327.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/attempt-1.9503d520e327.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/attempt-1.9503d520e327.generation.json",
+      "plannedRequestSha256": "e938a819c034fcfaa47d6e6f027247367d9bfce2416e7144419c6ec823962230"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "First, the mean: a hundred and forty one over three is forty seven. Point one times ten to the minus two is a thousandth of a millilitre. Forty seven divided by a thousandth is forty seven thousand CFU per millilitre. Four thousand seven hundred is the classic slip: that divides by the dilution but forgets the point one millilitre.",
+      "hash": "e2258b2dcbcc",
+      "textSha256": "e2258b2dcbcc1a997382003b622c194ed957ed13f518114229c1608974a79249",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/feedback-1.e2258b2dcbcc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/feedback-1.e2258b2dcbcc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/feedback-1.e2258b2dcbcc.generation.json",
+      "plannedRequestSha256": "815187fca93d69aa8fb0276bdd1842b1b8335b83ef05fb5ed1f73a4d8e2fcf1f"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "A student spread one millilitre of undiluted creek water onto one plate, incubated it at thirty seven degrees, then opened it and wrote, \"Too many colonies to count. The creek water contains dangerous bacteria.\" Identify two problems, and propose an improvement that fixes each. Pause here to answer.",
+      "hash": "11f0a0b02f75",
+      "textSha256": "11f0a0b02f75dae2aee3f3dd4328ac3573a687da1ab22ab26dc12b5d9a5460c3",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/attempt-2.11f0a0b02f75.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/attempt-2.11f0a0b02f75.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/attempt-2.11f0a0b02f75.generation.json",
+      "plannedRequestSha256": "12ef2568e386d6181cf6dfcf652afc86a88a35014c953789ce81ba504348186c"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "One: undiluted, the colonies merged, so serially dilute and count the plate with about thirty to three hundred. Two: thirty seven degrees favours microbes adapted to us, and opening it exposed her, so incubate at twenty five to thirty, taped and never opened. Her claim also overreaches: colonies don't show pathogens. Repeating the undiluted plate is the classic mistake: it still can't be counted.",
+      "hash": "ce3226763bf2",
+      "textSha256": "ce3226763bf2f80a65be235cb62be1bd7f19a6bdddb7bbf1d355f26f77faf1e3",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/feedback-2.ce3226763bf2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/feedback-2.ce3226763bf2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/feedback-2.ce3226763bf2.generation.json",
+      "plannedRequestSha256": "d5b16472f6f8505433752d4dd43107bf5d6af769bdf257796767daeddeb123b6"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: sterile samples, serial dilutions, three plates each, both controls, and taped plates upside down at twenty five to thirty degrees. Count the plate with about thirty to three hundred, scale back to CFU per millilitre, and claim culturable microbes, not pathogens. Next: how disease damages crops and farm animals.",
+      "hash": "bd451c5c17f7",
+      "textSha256": "bd451c5c17f703634734a771ef743a20f3ee64bc486a39c0a4b5e4f99cde68e8",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/decision-rule.bd451c5c17f7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/decision-rule.bd451c5c17f7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/decision-rule.bd451c5c17f7.generation.json",
+      "plannedRequestSha256": "4447bddf129f3e457b0701c188d52aea2697d0623106e53047c8846d9ea36ffb"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P02-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
