@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-B18-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6b18/lesson.json",
+  "lessonSha256": "51a172d2c705596643c746a6554a474ff54e6a6db88777718e9ae316d3360962",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6b18/lesson.production-brief.json",
+    "sha256": "42393a4ceededa03e145243c876928d31356704f807ef63cf972b1c82b5d8bfd"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Bacteria don't make human insulin, and cotton plants don't make a caterpillar poison. Yet since the nineteen-eighties, bacteria have made human insulin for people with diabetes, and most Australian cotton now makes its own insect toxin. Both carry DNA from another species. So how do scientists cut out a useful piece of DNA, join it into a carrier, get it into a host, and make sure the host actually uses it?",
+      "hash": "39083645701d",
+      "textSha256": "39083645701d156f6d20cb420afe9e36fb7c51b2f06b68be8e36adbd2a503283",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/hook.39083645701d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/hook.39083645701d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/hook.39083645701d.generation.json",
+      "plannedRequestSha256": "4473967f348c006739bc0b8f83977700b4217b493cc55c905aba85915a1140ad"
+    },
+    {
+      "id": "right-dna",
+      "parentSceneId": "right-dna",
+      "text": "First, you need the right piece of DNA. Remember that most human genes contain introns, stretches our cells cut out of the mRNA before it's read. Bacteria can't do that cutting, so a gene taken straight from a human chromosome would give them a scrambled message. Instead, scientists use a version with no introns, copied from the cell's finished mRNA, or built from scratch. For the first bacterial insulin, in the late nineteen-seventies, scientists built DNA for insulin's two chains from scratch.",
+      "hash": "a9805dc45736",
+      "textSha256": "a9805dc4573626a7c3e98180226486bb162ce809d56b4e9c75c6d88b96276c79",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/right-dna.a9805dc45736.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/right-dna.a9805dc45736.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/right-dna.a9805dc45736.generation.json",
+      "plannedRequestSha256": "bfa7abe7710076a5b096153b6e70b80cb68ea1e4351994185c4e5cc8eb744ddd"
+    },
+    {
+      "id": "cut",
+      "parentSceneId": "cut",
+      "text": "Next, cut. A restriction enzyme is an enzyme that cuts DNA only at one particular short sequence. Bacteria make these enzymes to chop up the DNA of invading viruses. Many of them cut the two strands at slightly different points, leaving a few unpaired bases hanging off each end. These are called sticky ends, because they can pair with matching bases. Scientists open the plasmid with the same enzyme, or one that leaves matching ends, so the plasmid's ends fit the gene's ends.",
+      "hash": "ac0269ba7d4e",
+      "textSha256": "ac0269ba7d4eedc2d713a1d01fd3e80ce4682e20e2cdff6549cc98b5d3eb8af2",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/cut.ac0269ba7d4e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/cut.ac0269ba7d4e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/cut.ac0269ba7d4e.generation.json",
+      "plannedRequestSha256": "caca3748ae4b258630f1090faff667ff364c9b305e3c9d8c6e92223f6bd0cfaa"
+    },
+    {
+      "id": "paste",
+      "parentSceneId": "paste",
+      "text": "Then, paste. Mix the gene with the opened plasmids, and the sticky ends pair up, base to base. But they're only held by weak hydrogen bonds between the bases. DNA ligase is the enzyme that seals the backbone of each strand, joining the pieces for good. Now the plasmid holds DNA from two sources: that's recombinant DNA. The plasmid also carries a gene for resistance to an antibiotic, a marker that will matter in a moment.",
+      "hash": "5f8b3c7b3743",
+      "textSha256": "5f8b3c7b374317e6dd429c3f4843e943bc268f0ca8f58c5e0d69af12074bed60",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/paste.5f8b3c7b3743.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/paste.5f8b3c7b3743.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/paste.5f8b3c7b3743.generation.json",
+      "plannedRequestSha256": "2722cf5792ee3a9d0b2ee10c2b0674254c60365325522b231b481bd8bb5601a4"
+    },
+    {
+      "id": "put-in",
+      "parentSceneId": "put-in",
+      "text": "Now, put it in. Bacteria don't take up plasmids easily. So scientists chill them in calcium chloride, which helps DNA stick to the cell surface, add the plasmids, then give a quick heat shock, which briefly lets DNA into the cell. Taking up DNA like this is called transformation. Even then, only a small fraction of the bacteria take in a plasmid.",
+      "hash": "19b695548718",
+      "textSha256": "19b695548718ceaa934182551e7e101c2a2208c03273afc0fa5fe6e6f7c9cb49",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/put-in.19b695548718.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/put-in.19b695548718.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/put-in.19b695548718.generation.json",
+      "plannedRequestSha256": "56d488c7797bc14c6e60e7e0071a9d050bc83c421a34c8cc9091712676373f7a"
+    },
+    {
+      "id": "pick",
+      "parentSceneId": "pick",
+      "text": "So, pick. Spread the bacteria on agar containing the antibiotic. Only bacteria carrying a plasmid have the resistance gene, so only they grow into colonies. But surviving doesn't prove the gene is there, because some plasmids close up without it. So a second check, like a second marker gene or reading the DNA, finds the colonies with the gene inside. Each of those colonies is a clone, copying the gene every time it divides.",
+      "hash": "1a605c71d561",
+      "textSha256": "1a605c71d561f9ba1cbd083a26bf71e39327eac55d25ec8e621dc4977f286ac4",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/pick.1a605c71d561.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/pick.1a605c71d561.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/pick.1a605c71d561.generation.json",
+      "plannedRequestSha256": "52704d478b91079fbcd10680d72fd0aeed6b17d32d0f879fce980db09e579055"
+    },
+    {
+      "id": "use-it",
+      "parentSceneId": "use-it",
+      "text": "Copying the gene isn't the same as using it. To make the protein, the gene must sit next to a promoter that the bacterium's RNA polymerase recognises. Then the bacterium reads it like one of its own genes, because the genetic code is shared: the same codons mean the same amino acids in bacteria and in us. The first insulin bacteria made the two chains separately, and chemists purified them and joined them into insulin. Today, huge tanks of engineered microbes make it.",
+      "hash": "9f9e54211907",
+      "textSha256": "9f9e54211907cfcb0aaf8b64bc0666c07d881e87cb7242170bdf074d2b2b0130",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/use-it.9f9e54211907.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/use-it.9f9e54211907.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/use-it.9f9e54211907.generation.json",
+      "plannedRequestSha256": "f41a409ca326a9db47c652e1ed5b0f841b9ce8fe9693ab8c31c524740bbaadda"
+    },
+    {
+      "id": "plants",
+      "parentSceneId": "plants",
+      "text": "Plants need a different carrier, because the gene has to cross a tough cell wall and end up in the plant's own chromosomes. A soil bacterium called Agrobacterium does this naturally: it inserts a piece of its plasmid DNA into a plant cell's chromosomes. Scientists remove its disease-causing genes and put the useful gene in instead. That's how Bt cotton was first made. A gene for a caterpillar toxin, from another soil bacterium, went into cotton cells, which were grown into whole plants. Every cell of those plants carries the gene, and it's passed on in their seeds. An organism given DNA from another species this way is transgenic.",
+      "hash": "cc90c39e8312",
+      "textSha256": "cc90c39e8312ba35c0df5d98691db41294cd8043e2e524b269c78b2232a4bc86",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/plants.cc90c39e8312.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/plants.cc90c39e8312.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/plants.cc90c39e8312.generation.json",
+      "plannedRequestSha256": "319cc85aea957ccc7eab6721cd465e50260cb82989bb9e94214176ae5bf67e65"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Here's the whole method in four words: cut, paste, put in, pick. Cut with a restriction enzyme, paste with ligase, put the plasmid into the host, and pick the hosts that carry the gene. And remember why the cut matters: the same enzyme gives matching sticky ends.",
+      "hash": "d7a36c6ef6f2",
+      "textSha256": "d7a36c6ef6f237e560150c57c1d88c2874bb6b064d4b8fb6eacf06908770c175",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/memory.d7a36c6ef6f2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/memory.d7a36c6ef6f2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/memory.d7a36c6ef6f2.generation.json",
+      "plannedRequestSha256": "e2c62d92d8ce158ced918a53ee89ad2af546486b1100c9d4a4f46b1920aefcd0"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. Scientists have an intron-free copy of the calf gene for chymosin, an enzyme used to make cheese, and a plasmid carrying a gene for resistance to the antibiotic ampicillin. Describe how they could produce E. coli bacteria that carry the chymosin gene, and how they could identify those bacteria. Pause here to answer.",
+      "hash": "19159c900f9e",
+      "textSha256": "19159c900f9e0f7c55d4999eaeee94614c3594b4631e3aef63aedfeaecad69f2",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/attempt.19159c900f9e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/attempt.19159c900f9e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/attempt.19159c900f9e.generation.json",
+      "plannedRequestSha256": "35ab51f6f6013e433fc0f4e7a644b2fef09bf002b6f38518984fef60aa8c2503"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Cut the gene and the plasmid with the same restriction enzyme, so their sticky ends match. Mix them, and ligase seals the joins. Heat-shock the bacteria so some take up a plasmid, then grow them on ampicillin. Only bacteria with a plasmid survive, so check those colonies for the chymosin gene. Saying every colony that survives must carry the gene is the classic mistake.",
+      "hash": "fec47d13e830",
+      "textSha256": "fec47d13e83005e69a76581bd1136bd9746fc13b14b8d605f00b963b775257b8",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/feedback-one.fec47d13e830.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/feedback-one.fec47d13e830.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/feedback-one.fec47d13e830.generation.json",
+      "plannedRequestSha256": "777a37f361c370f7cf28d5c1dad8b261d4e774ef1b6357cf3769b3d019ef8487"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A student puts a human gene, copied directly from a chromosome, into a plasmid beside a bacterial promoter. The bacteria make a faulty protein. A copy of the same gene made from its mRNA, placed the same way, gives the working protein. Explain these results. Pause here to answer.",
+      "hash": "f79fbc52989d",
+      "textSha256": "f79fbc52989d90238000a0e565b21a0344cb3a36636d5be459275185faefe2e9",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/attempt-two.f79fbc52989d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/attempt-two.f79fbc52989d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/attempt-two.f79fbc52989d.generation.json",
+      "plannedRequestSha256": "69d32f3fc72bfc74d3e4e096369580b0a1db7c4261af28808f337a04fc3e2d9a"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The copy from the chromosome still has its introns. Bacteria can't cut introns out, so they read them as code, and the protein comes out wrong. The copy made from mRNA has its introns already removed, so nothing interrupts the coding sequence, and the bacteria read it using the same genetic code we do. Saying bacteria use a different genetic code is the classic mistake.",
+      "hash": "d556c8ee4a3d",
+      "textSha256": "d556c8ee4a3d968efa86f321e9523d6d7f6c75693b06478577458a23b2b78761",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/feedback-two.d556c8ee4a3d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/feedback-two.d556c8ee4a3d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/feedback-two.d556c8ee4a3d.generation.json",
+      "plannedRequestSha256": "f41fb783baa79397bc51d838da8c37fe483e8b354bdca9436af77460045edb5f"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So to describe recombinant DNA technology, name each tool and its job, in order. Get intron-free DNA, cut with a restriction enzyme, join with ligase, put it into a host, pick the hosts that carry the gene, and make sure the host can read it. Then link the method to its product. Next, which benefits of these technologies really hold up.",
+      "hash": "da9b90044925",
+      "textSha256": "da9b900449257a978c9bec3be9844f5d67072ba06e46251092fa92cb45215a09",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/decision-rule.da9b90044925.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/decision-rule.da9b90044925.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/decision-rule.da9b90044925.generation.json",
+      "plannedRequestSha256": "b6be87cb1b8e1e94a43ce8ad6a9ade42e4778d4f08cb2c0b1131e83dd1ed5cc0"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-B18-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

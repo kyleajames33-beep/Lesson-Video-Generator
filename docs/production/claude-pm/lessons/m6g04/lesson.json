@@ -1,0 +1,184 @@
+{
+  "title": "Titration Curves, Indicators and Back Titration: HSC-Style Practice Questions",
+  "subtitle": "A titration question gives you a pH curve, an indicator, a back titration or a conductivity graph. Where is the equivalence point, does the method find it, and if it misses, which way does the answer move?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 25,
+  "lessonIntent": "reading the equivalence volume from a pH curve and calculating a concentration; explaining why the equivalence point of a strong acid/weak base titration is acidic and choosing the indicator whose colour change falls inside the steep part; predicting and explaining the direction of the error from a late indicator when the unknown is in the burette; calculating a percentage by mass from back titration data and explaining the direction of the error from a water-rinsed burette; explaining the conductivity profile of a weak base titrated with a strong acid and reading equivalence where the best-fit lines cross.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Titration questions hand you a pH curve, an indicator, a sample that won't dissolve, or a conductivity graph. Each one asks: where is the equivalence point, does the method find it, and if it misses, which way does the answer move? Here are four HSC-style questions."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Twenty millilitres of ammonia solution is titrated with zero point one zero zero moles per litre hydrochloric acid, and the graph shows the pH. Use the graph to find the concentration of the ammonia. Then select the most suitable indicator from the table, and justify your choice. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-concentration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Find the equivalence point first. It's in the middle of the steepest part of the curve, at twenty four point zero millilitres. Moles of acid: two point four zero times ten to the minus three. Ammonia reacts one to one, so divide by the twenty millilitre sample: zero point one two zero moles per litre."
+      }
+    },
+    {
+      "id": "q1-indicator",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the indicator. At equivalence, the flask holds ammonium chloride, and ammonium gives protons to water, so the pH there is acidic, about five. One drop either side of equivalence, the pH falls from about six point six to four. Methyl red changes between six point two and four point four, right inside that drop, so it fits best. Methyl orange changes at the foot of the drop: slightly late, but acceptable."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is bromothymol blue, because neutralisation should give pH seven. It starts changing about half a millilitre early, above the steep part, so the titre would come out a little too small."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. Another student titrates the same ammonia the other way round: twenty five millilitres of the zero point one zero zero moles per litre acid and phenolphthalein in the flask, and ammonia in the burette, until the solution turns faint pink. Explain the effect of her indicator on her calculated ammonia concentration. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-picture",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Picture the curve this way round. It starts low, near pH one, and the equivalence point is still acidic, about five. With question one's answer, that's at about twenty point eight millilitres. There the pH jumps, but only to about seven. Then the extra ammonia and the ammonium form a buffer, so the pH creeps up slowly instead of leaping on to ten."
+      }
+    },
+    {
+      "id": "q2-direction",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Phenolphthalein turns pink at eight point three, and in that buffer the pH gets there only after about two more millilitres of ammonia. So her titre is too large. She divides the same moles of acid by that bigger volume, so her ammonia concentration comes out too small: about zero point one zero eight, not zero point one two zero."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is saying a bigger titre means a bigger concentration. That's true when the unknown is in the flask. Here the unknown is in the burette, so its volume goes on the bottom."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. Zero point two zero zero grams of crushed eggshell reacts with twenty five millilitres of zero point two five zero zero moles per litre hydrochloric acid, an excess. After boiling, the leftover acid needs twenty four point nine zero millilitres of zero point one zero zero zero moles per litre sodium hydroxide. Find the percentage of calcium carbonate, and explain the effect of a burette rinsed only with water. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-calculate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The four back titration steps. Added: six point two five zero times ten to the minus three moles. Left over, equal to the sodium hydroxide: two point four nine zero times ten to the minus three. Subtract: the eggshell used three point seven six zero times ten to the minus three. Halve it for the one to two ratio: one point eight eight zero times ten to the minus three moles of calcium carbonate. That's zero point one eight eight two grams, out of zero point two zero zero: ninety four point one per cent."
+      }
+    },
+    {
+      "id": "q3-error",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the burette. Water left inside dilutes the sodium hydroxide, so it takes more of it to neutralise the leftover acid. The titre is too big, so the leftover acid looks too big, the acid used looks too small, and the percentage of calcium carbonate comes out too low. The fix: rinse the burette with the solution it will deliver."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is thinking a bigger titre means more calcium carbonate. In a back titration, the titre measures what's left over. So more left over means less sample."
+      }
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four. Fifty millilitres of blue-dyed ammonia is titrated with zero point five zero zero moles per litre hydrochloric acid, and the graph shows the corrected conductivity. Explain its shape, and use it to find the ammonia's concentration. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4-shape",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ammonia is a weak base, so it's mostly whole molecules, with few ions: the conductivity starts low. Each portion of acid turns ammonia into ammonium ions and adds chloride ions, so ions build up steadily, and the graph rises gently. After equivalence there's almost no ammonia left, so the extra acid adds hydronium, which conducts far better, and the graph climbs steeply."
+      }
+    },
+    {
+      "id": "q4-crossing",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Equivalence is where the two straight stretches meet. Draw a best-fit line through each, and they cross at eight point four zero millilitres, between two readings. Moles of acid: four point two zero times ten to the minus three, one to one with ammonia. Divide by the fifty millilitre sample: zero point zero eight four zero moles per litre."
+      }
+    },
+    {
+      "id": "q4-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is reading equivalence at nine millilitres, the first reading on the steep part. That gives zero point zero nine zero zero, too high. Equivalence usually falls between readings, so use the lines."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A pH curve? Equivalence is in the middle of the steepest part, and the indicator must change inside it. An error? Decide which way the titre moves, then follow it through the formula. In a back titration, more left over means less sample. A conductivity graph? Read where the lines cross. Next, how to choose the right method for a sample."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

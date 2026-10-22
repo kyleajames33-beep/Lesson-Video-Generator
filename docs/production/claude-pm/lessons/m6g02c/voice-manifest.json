@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-G02-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6g02c/lesson.json",
+  "lessonSha256": "3891d1bf75475493899bb9bf07060e5e59265224ecf294ecbb74cc5d724ba042",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6g02c/lesson.production-brief.json",
+    "sha256": "13378fd9baaec4d67b270763c42577fd774107413235f70fb13eea9fc9a3e4eb"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Weak acid questions give you different data, and the data choose the method. A K a and a concentration? Estimate x, then check it was fair. A measured pH? Work backwards to K a. An ion that can give or take a proton? Compare its K a with its K b. Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.",
+      "hash": "97ee43c46413",
+      "textSha256": "97ee43c46413a82a23600593bf5d13f8969587e9afce704f74f9b5c2575e9f92",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/hook.97ee43c46413.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/hook.97ee43c46413.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/hook.97ee43c46413.generation.json",
+      "plannedRequestSha256": "6ecff7ad9744f941c900e2602249f6a040bcce8d8283120cb88971efc8c29ae4"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Hypochlorous acid is a weak acid that forms when chlorine is added to pool water. Calculate the pH of a zero point zero five zero zero moles per litre solution at twenty five degrees, given that K a is three point zero times ten to the minus eight. Justify any approximation you make. Pause here to answer.",
+      "hash": "e2eb075fbb6f",
+      "textSha256": "e2eb075fbb6f68dbfaab5d14c0111d3e04ddbad11011cc2f82be1e9eb45ca77b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-question.e2eb075fbb6f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-question.e2eb075fbb6f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-question.e2eb075fbb6f.generation.json",
+      "plannedRequestSha256": "3b5a1832c8c6024d1898f86b1f7eb61d7169a5e9ec285744becbc52317b3dbcc"
+    },
+    {
+      "id": "q1-estimate",
+      "parentSceneId": "q1-estimate",
+      "text": "K a and a concentration, so set up the ICE table: the acid goes down by x, and each ion goes up by x. K a is tiny next to zero point zero five zero zero, so drop the x from the bottom. Then x squared is K a times c, one point five times ten to the minus nine, and x is three point nine times ten to the minus five moles per litre.",
+      "hash": "11eec422fc55",
+      "textSha256": "11eec422fc551e969a19264159b65dc57b26faf5275c04e7588e0d9cb1c6e8ca",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-estimate.11eec422fc55.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-estimate.11eec422fc55.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-estimate.11eec422fc55.generation.json",
+      "plannedRequestSha256": "6dc09d450b9938178e13d7fa365fd4450baae9723da1b7a7a925ec645539593f"
+    },
+    {
+      "id": "q1-check",
+      "parentSceneId": "q1-check",
+      "text": "Now justify it. x is only zero point zero seven seven percent of the concentration, far under five percent, so dropping x was fair. The pH is four point four one, two decimal places because x has two significant figures, from K a. And it's below seven, as an acid's should be.",
+      "hash": "17183adaab0f",
+      "textSha256": "17183adaab0f9d2c7378ed440a0a6e0403c9deb93beb5cc233773e770e8de964",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-check.17183adaab0f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-check.17183adaab0f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-check.17183adaab0f.generation.json",
+      "plannedRequestSha256": "bc44cf1c79558eb635f76cb517c153c4950dd0d69e1424c2b4109c5d8759ce0e"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is forgetting the square root. Then x is one point five times ten to the minus nine, and the pH comes out at eight point eight two, a basic pH for an acid.",
+      "hash": "d6aa2091da4a",
+      "textSha256": "d6aa2091da4a38647f2f599177b2cb26725698c608e4d17e6bb9472113415b71",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-mistake.d6aa2091da4a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-mistake.d6aa2091da4a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q1-mistake.d6aa2091da4a.generation.json",
+      "plannedRequestSha256": "6c4b4ed4513eb6a9b0da2ca0d631593365a270c452071e1435d331dc756dedd8"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. Chloroethanoic acid is a weak monoprotic acid with a K a of one point four times ten to the minus three at twenty five degrees. Show that the simplifying assumption can't be used for a zero point zero two zero zero moles per litre solution. Then calculate its pH. Pause here to answer.",
+      "hash": "941fd5ae0b35",
+      "textSha256": "941fd5ae0b35e9f7860a39ce38cf9d73b5a6dcb9f60e8fb6388489c0db514d54",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-question.941fd5ae0b35.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-question.941fd5ae0b35.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-question.941fd5ae0b35.generation.json",
+      "plannedRequestSha256": "dccd0692bffaab81a4f3bcdea8ee8a6f1841c425518fab862db6100f5b63aa9f"
+    },
+    {
+      "id": "q2-check-fails",
+      "parentSceneId": "q2-check-fails",
+      "text": "Try the shortcut first. x squared is K a times c, two point eight times ten to the minus five, so x is about five point three times ten to the minus three. Now check: that's twenty six percent of the concentration, far over five. About a quarter of the acid ionises, so c minus x is nowhere near c, and the shortcut doesn't hold. Keep the x.",
+      "hash": "2f0e972940c4",
+      "textSha256": "2f0e972940c444a3ef72a591c21263a94be5b2c6e2a41d8f4aaf923b09e9ca0a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-check-fails.2f0e972940c4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-check-fails.2f0e972940c4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-check-fails.2f0e972940c4.generation.json",
+      "plannedRequestSha256": "5611d9c2f9c0a5ae2239f8e8b05c3a4d22adaba94bccb2de3b6ff85be8d1f24a"
+    },
+    {
+      "id": "q2-full",
+      "parentSceneId": "q2-full",
+      "text": "So K a equals x squared over zero point zero two zero zero minus x. Multiply both sides by the bottom, and gather everything on one side: x squared, plus K a times x, minus two point eight times ten to the minus five, equals zero. The quadratic formula, or your calculator's solver, gives one positive root: four point six times ten to the minus three. So the pH is two point three three.",
+      "hash": "24f60ed659c4",
+      "textSha256": "24f60ed659c4e5ba1dd32653086ab30bcaea93f2580401acf627278b53cbb9c6",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-full.24f60ed659c4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-full.24f60ed659c4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-full.24f60ed659c4.generation.json",
+      "plannedRequestSha256": "d4130304eef00253864bb067113661506fe78062bef8bb1f17237369a2e9e347"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is keeping the shortcut answer after the check has failed. That gives two point two eight, about zero point zero five out. Once the check fails, the shortcut's answer goes too.",
+      "hash": "a8050f1effec",
+      "textSha256": "a8050f1effec63187105a37227bc85d41d48e31d35edec1ddc485ebfe49efe63",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-mistake.a8050f1effec.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-mistake.a8050f1effec.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q2-mistake.a8050f1effec.generation.json",
+      "plannedRequestSha256": "83a96cd6d0d049d58bfc8ec40ae9127fba9a3475ab07ef337360b56b940cf9d4"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. Benzoic acid is a weak monoprotic acid used as a food preservative. A zero point zero one five zero moles per litre solution of benzoic acid has a measured pH of three point zero three at twenty five degrees. Calculate K a and p K a for benzoic acid. Pause here to answer.",
+      "hash": "044f88269ebe",
+      "textSha256": "044f88269ebefe5e2611dd670ed665a6ae908dc4cf0ef78168eed64eb065c503",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-question.044f88269ebe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-question.044f88269ebe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-question.044f88269ebe.generation.json",
+      "plannedRequestSha256": "e17cc4d0e06808f50acfc1976db1b991d5053ab3e9b1c0631f145b2fbdba966c"
+    },
+    {
+      "id": "q3-backwards",
+      "parentSceneId": "q3-backwards",
+      "text": "This time the pH is given, so work backwards. The hydronium is ten to the minus three point zero three, nine point three three times ten to the minus four moles per litre. Each ionised molecule makes one hydronium and one benzoate, so benzoate is the same. The acid left is zero point zero one five zero minus that, zero point zero one four one.",
+      "hash": "455202ecfc9c",
+      "textSha256": "455202ecfc9c8e04d21c599539e748c37d6b975183dd2b4a6da5eefb59e989ae",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-backwards.455202ecfc9c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-backwards.455202ecfc9c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-backwards.455202ecfc9c.generation.json",
+      "plannedRequestSha256": "f2101a7a11b70c8a1fabe0872b6d381ccdf40c00a9b3ef2207e3caed40ac314f"
+    },
+    {
+      "id": "q3-ka",
+      "parentSceneId": "q3-ka",
+      "text": "So K a is hydronium times benzoate, over the acid: nine point three three times ten to the minus four, squared, over zero point zero one four one. That's six point two times ten to the minus five, two significant figures from the pH's two decimal places. Then p K a is the negative log, four point two one.",
+      "hash": "fb9d27263954",
+      "textSha256": "fb9d27263954fefd8cd87c4ad42314b16b1ecea74a7eee80a8f084fecc951510",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-ka.fb9d27263954.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-ka.fb9d27263954.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-ka.fb9d27263954.generation.json",
+      "plannedRequestSha256": "79e21766883a8729bab4b8dc3003beb19671d1b155986955d94da7fdae636808"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is writing the p K a as three point zero three, the same as the pH. The pH describes this solution, at this concentration. The p K a describes the acid itself.",
+      "hash": "70c4286798a6",
+      "textSha256": "70c4286798a6c20de2c44adcf8e7c8b67a3d578e59f869daa209084f57c256ca",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-mistake.70c4286798a6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-mistake.70c4286798a6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q3-mistake.70c4286798a6.generation.json",
+      "plannedRequestSha256": "0976dd988368d8d74d6a99a157f2c9a73dde66dfe65f6ee05aa698bccc1fa46b"
+    },
+    {
+      "id": "q4-question",
+      "parentSceneId": "q4-question",
+      "text": "Question four. The hydrogen carbonate ion, from baking soda, and the dihydrogen phosphate ion, from a fertiliser salt, are both amphiprotic. Write an equation for each ion donating a proton to water and accepting one from it. Use the K a values to decide which mainly happens, and predict whether each salt's solution is acidic or basic. Pause here to answer.",
+      "hash": "cea4b346bc41",
+      "textSha256": "cea4b346bc414836d7b46ea32845f6a70ecbc008bc363597ae0df66a12eac368",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-question.cea4b346bc41.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-question.cea4b346bc41.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-question.cea4b346bc41.generation.json",
+      "plannedRequestSha256": "da20f080eca56f5e8e4378ce9f10621df604fedc535b9c7fbfee3a5098a65c8c"
+    },
+    {
+      "id": "q4-carbonate",
+      "parentSceneId": "q4-carbonate",
+      "text": "An amphiprotic ion runs two reactions with water, so compare their constants. For hydrogen carbonate donating, K a is given: four point seven times ten to the minus eleven. Accepting, it becomes carbonic acid, its conjugate acid, so its K b is K w over carbonic acid's K a: two point three times ten to the minus eight. K b is about five hundred times bigger, so it mainly accepts a proton, making hydroxide. Sodium hydrogen carbonate solution is basic.",
+      "hash": "b032eb1f3f03",
+      "textSha256": "b032eb1f3f039209aa413edebce572d7b4d6693ab766f447eb54c2ad128297b7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-carbonate.b032eb1f3f03.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-carbonate.b032eb1f3f03.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-carbonate.b032eb1f3f03.generation.json",
+      "plannedRequestSha256": "b68d123a32707a33ae9e40ea6a219a62ad428e791d635207a86edc7e18af47dd"
+    },
+    {
+      "id": "q4-phosphate",
+      "parentSceneId": "q4-phosphate",
+      "text": "Dihydrogen phosphate is the other way round. Donating, its K a is six point three times ten to the minus eight. Accepting, it becomes phosphoric acid, so its K b is K w over seven point one times ten to the minus three, just one point four times ten to the minus twelve. Now K a wins, so it mainly donates, making hydronium. Potassium dihydrogen phosphate solution is acidic.",
+      "hash": "63aa461e56b3",
+      "textSha256": "63aa461e56b342adea2b7419232d388214c94974c311b52e8750421f905f8f39",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-phosphate.63aa461e56b3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-phosphate.63aa461e56b3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-phosphate.63aa461e56b3.generation.json",
+      "plannedRequestSha256": "4f6808c220af78ae9330ffcdd80a5f09cd59febdfa16a76ee4a185dd76a630f5"
+    },
+    {
+      "id": "q4-mistake",
+      "parentSceneId": "q4-mistake",
+      "text": "The classic mistake is finding K b from the ion's own K a. That gives one point six times ten to the minus seven, the K b of hydrogen phosphate, and the wrong answer, basic. K a times K b is K w only for a conjugate pair, so for an ion's K b, use the K a one proton up.",
+      "hash": "2aba7f13cb45",
+      "textSha256": "2aba7f13cb456614adfbaf37015a133695f8883777ec1a03d576ed747ba291a9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-mistake.2aba7f13cb45.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-mistake.2aba7f13cb45.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/q4-mistake.2aba7f13cb45.generation.json",
+      "plannedRequestSha256": "33b19a267f18b278f127fe6c3a37d2a2abfc9c6b202badd7640dfd9c089b56f1"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start any weak acid question. Read the data first. Given K a and a concentration? Estimate x, then check it's under five percent. If it isn't, solve the full equation. Given a pH? Work backwards, with no five percent check. Given an amphiprotic ion? Compare its K a with its K b, taken from the acid one proton up. Next, how a buffer resists a change in pH.",
+      "hash": "ca1f4fb8fcf1",
+      "textSha256": "ca1f4fb8fcf120556647e0c1ca006fe8f4f5f2cd343c71c85c7288f10454c4db",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/decision-board.ca1f4fb8fcf1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/decision-board.ca1f4fb8fcf1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/decision-board.ca1f4fb8fcf1.generation.json",
+      "plannedRequestSha256": "62f9902f6fe37143699955b91b5ea9d9936adaf2c9ef4784cd8c2f94ecb83e90"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G02-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

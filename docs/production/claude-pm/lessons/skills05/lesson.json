@@ -1,0 +1,152 @@
+{
+  "title": "Calculation answers that get full marks",
+  "subtitle": "When a question says calculate, what does a full-mark answer show, and how does showing it protect you when something goes wrong?",
+  "subject": "Chemistry and Biology",
+  "yearLevel": 12,
+  "module": 0,
+  "lesson": 5,
+  "lessonIntent": "the four steps; a worked 4-mark molar enthalpy calculation; significant figures done strictly, with one accepted-range example; round once; visible working when a step is wrong; the sense check; one Chemistry pH drill and one Biology allele-frequency drill.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In the last five HSC Chemistry papers, calculate was the second most common command in the written section, after explain, and the commonest value was four marks. In every one of the last six Chemistry marking feedback reports, NESA flagged the same kinds of problem: hidden steps, lost units, or rounding too early. Recent Biology papers didn't use the word calculate, but still asked for numbers, like a probability or a number of people from a graph. So let's set out a calculation a marker can follow."
+      }
+    },
+    {
+      "id": "question-card",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's an HSC-style Chemistry question. Sixty millilitres of hydrochloric acid is mixed with forty millilitres of sodium hydroxide solution in a polystyrene cup, and the temperature rises from twenty point six to twenty five point eight degrees. The question asks you to calculate the molar enthalpy of neutralisation. Four marks. If you take Biology, you don't need the chemistry here. Watch how each line is laid out: your question is coming."
+      }
+    },
+    {
+      "id": "read-it",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Run the routine. The verb is calculate: work out an answer from the information given. Four marks for one number is a hint: there are steps to show. The thing asked for is a molar enthalpy, so the answer needs kilojoules per mole, and a sign. Now the givens. Don't copy them into a list. You'll underline each one as you use it."
+      }
+    },
+    {
+      "id": "four-steps",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Every calculation answer can follow the same four steps. Write the equation. Substitute the values, with their units. Solve, and give the answer with units and sensible significant figures. Then sense check: are the size and the sign believable? Here's the memory aid: one E and three S's. Equation, substitute, solve, sense check."
+      }
+    },
+    {
+      "id": "step-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step one, the heat: q equals m c delta T. The mass is both solutions together, a hundred millilitres, so one hundred grams. Delta T is twenty five point eight minus twenty point six: five point two degrees. Substitute, with units: one hundred, times four point one eight, times five point two. That's two thousand, one hundred and seventy three point six joules, or two point one seven three six kilojoules. Keep every digit."
+      }
+    },
+    {
+      "id": "step-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step two, the moles of water. Acid: zero point zero six zero zero litres, times zero point eight zero zero, gives zero point zero four eight zero moles. Base: zero point zero four zero zero litres, times one point zero zero, gives zero point zero four zero zero moles. The base runs out first, so it sets the water: zero point zero four zero zero moles. Write that sentence. It tells the marker which value you chose, and why."
+      }
+    },
+    {
+      "id": "step-3",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Step three: divide, then add the sign. Two point one seven three six kilojoules over zero point zero four zero zero moles is fifty four point three four. The temperature rose, so heat was released, and delta H is negative. Round once, at the end: minus fifty four kilojoules per mole. Now the sense check. The usual value is about minus fifty seven. Ours is a little less negative, which fits some heat loss from the cup."
+      }
+    },
+    {
+      "id": "sig-figs",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why fifty four, and not fifty four point three? An answer is only as precise as its least precise measurement. Most values here have three significant figures. But delta T came from a subtraction, which keeps decimal places, not figures: five point two has only two. Exact numbers, like a count or a mole ratio, never limit you. Several recent marking guidelines named significant figures in the top band, and in one three-mark question, correct working with the wrong significant figures got two. Not every guideline mentions them, so get them right every time."
+      }
+    },
+    {
+      "id": "round-once",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "And round only once. If you'd rounded the heat to two point two kilojoules halfway through, you'd get minus fifty five, not minus fifty four. NESA's own sample answers keep the extra digits until the last line. Sometimes a range is accepted: when values are read off a graph, one guideline left the acceptable range of readings to the marking centre. That allows for reading, not for rounding."
+      }
+    },
+    {
+      "id": "working-when-wrong",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now suppose you slip. Two students divide by the acid's moles, and both get minus forty five. Answer A writes just that. Answer B shows every step. In our marking guide, A earns nothing. B is still wrong, but its right steps are visible, so B earns two for them. In one recent four-mark calculation, NESA's bands paid for the main steps, and for some relevant steps. But bands are set question by question, so don't count on carried-forward marks. Make every step visible. And a sense check helps: minus forty five is far from minus fifty seven, so recheck which reactant ran out."
+      }
+    },
+    {
+      "id": "drill-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Do the one in your subject, or both. Chemistry first. Zero point two zero zero grams of sodium hydroxide is dissolved and made up to two hundred and fifty point zero millilitres at twenty five degrees. Calculate the pH of the solution. Three marks. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Moles: zero point two zero zero over forty point zero zero, five point zero zero times ten to the minus three. Divide by the litres: zero point zero two zero zero moles per litre. pOH is one point six nine nine, so pH is twelve point three zero one. Three significant figures in the hydroxide give three decimal places. It's a base, so above seven. The habit to drop: rounding to twelve point three."
+      }
+    },
+    {
+      "id": "drill-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now Biology. Two hundred and fifty bearded dragons were genotyped at one snip, with alleles C and T. Ninety were C C, a hundred and ten were C T, and fifty were T T. Calculate the frequency of the T allele in this sample. Two marks. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Count alleles, not dragons: five hundred copies. T alleles: a hundred and ten from C T, plus a hundred from T T, makes two hundred and ten. Over five hundred, that's zero point four two. Counts are exact, and this divides exactly, so nothing to round. Check: C is zero point five eight, and together they make one. The habit to drop: fifty over two hundred and fifty, which counts dragons."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, every time you see calculate. Write the equation. Substitute with units, and say which value you chose and why. Solve, carrying every digit, then round once, to the least precise measurement, with the unit and the sign. Then sense check the size and the sign. Next: graphs and data questions."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

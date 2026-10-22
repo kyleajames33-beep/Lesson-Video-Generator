@@ -1,0 +1,176 @@
+{
+  "title": "Preparing and testing a natural indicator: can a red cabbage show acid-base behaviour, and run it in reverse?",
+  "subtitle": "Purple juice from a red cabbage turns red in acid, green in base, and red again. How do you prepare it as an indicator, give each colour a meaning, and show that its colour change is a reversible reaction?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 22,
+  "lessonIntent": "explaining where the extract's colour comes from; preparing the extract and justifying each step; recording its starting colour; calibrating it against solutions of known pH with equal drops; reading its colour chart and stating its limits; using a water control; carrying out and explaining the reversibility cycle in one sample; recognising a colour change that is not reversible; estimating a pH from the chart and checking it with a meter; explaining why the extract is a poor titration indicator; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No titration curves (chem-m6-c14), no anthocyanin structures, no meter calibration (chem-m6-p03).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a beaker of purple juice from a red cabbage. Add a few drops of acid, and it turns red. Add a base, and it turns green. Add acid again, and the red comes back. So can you make a working indicator from a vegetable? And how would you show that its colour change really runs both ways?"
+      }
+    },
+    {
+      "id": "pigments",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The purple comes from pigments called anthocyanins, stored inside the cabbage's cells, and they dissolve in water. Each one behaves like H In from the indicator video: a weak acid whose forms have different colours. But each can lose more than one proton, and the extract is a mix of several of them, so it passes through several colours, blending gradually, not just two."
+      }
+    },
+    {
+      "id": "prepare",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To prepare it, your teacher chops about twenty grams of cabbage and covers it with a hundred millilitres of hot water for ten minutes. Heat damages the membranes in the cabbage cells, the thin layers that hold the pigment in, so the pigment leaks out faster. Then filter off the solids, so you're looking at the solution, not bits of leaf, and let it cool. Record its starting colour: purple."
+      }
+    },
+    {
+      "id": "calibrate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Next, find out what each colour means. Put about twenty drops of solutions of known pH, from two to twelve, into a row of wells on a white tile. Buffers work well, checked with a pH meter. Then add three drops of extract to every well. Colour depth depends on how much pigment is there, and you're comparing colour, so the amount must stay the same."
+      }
+    },
+    {
+      "id": "colour-chart",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a typical result: red at pH two, pink at four, violet at six, purple at seven, blue at eight, blue-green at ten, and green at twelve. Your batch may differ a little. Notice there isn't one colour change but several, each spread across a couple of pH units. And your chart is only as precise as its spacing: wells two units apart give you pH to within a unit or so."
+      }
+    },
+    {
+      "id": "water-control",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now test the extract in three wells: dilute hydrochloric acid, distilled water, and dilute sodium hydroxide. Why the water? Adding any liquid dilutes the pigment, so the colour gets paler. The water well shows that paler purple. So if a well turns red or green, the acid or base is causing it, not dilution."
+      }
+    },
+    {
+      "id": "cycle",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the key test. Put two millilitres of extract in a small beaker and add acid until it's red. Then add sodium hydroxide, drop by drop, until it just turns green. Then acid again, until it's red. Base removes hydronium, so the pigment's equilibrium shifts to the forms that have lost protons, and acid shifts it back. Run the cycle three times, in the same beaker."
+      }
+    },
+    {
+      "id": "same-sample",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why the same sample? Fresh wells only show each colour separately. One sample going back and forth shows the reaction runs both ways. Three cycles check that you didn't misread a single return. The colour gets paler each time, because the sample keeps getting diluted, but the same two colours keep returning. That's evidence the pigment isn't being used up."
+      }
+    },
+    {
+      "id": "no-return",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But a colour that doesn't come back is a warning. If a green sample sits in strong base, like well C, for a long time, it can turn yellow, and acid may not bring the red back. That's a different kind of reaction: the pigment molecules change shape and start to break down. So add base only until it just turns green, and run the cycle straight away."
+      }
+    },
+    {
+      "id": "use-and-limits",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now use your chart. Vinegar turns the extract pink-red: somewhere between pH two and four. An ammonia cleaner turns it green: about eleven or twelve. Check each against a pH meter. But for a titration, cabbage is a poor choice. Its colour changes gradually, in steps, right across the scale, and a titration needs one sharp change inside the jump."
+      }
+    },
+    {
+      "id": "validity-reliability",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "What are the variables? You change the pH of the solution, and you observe the colour. Keep the extract batch, the number of drops, the volume of solution and the lighting the same. Validity: one batch of extract and the water well mean the colour change comes from the pH alone. Reliability: repeat wells, and repeat cycles, give the same colours. Accuracy: a colour estimate is good to about a pH unit, and a calibrated meter does much better."
+      }
+    },
+    {
+      "id": "risk-assessment",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Before you start, the risk assessment. The hot water can scald and the knife can cut, so your teacher prepares and cools the extract. The point one zero moles per litre acid is low hazard, but the sodium hydroxide sits just under the irritant limit, so treat a splash as harmful: wear safety glasses and rinse any splash with plenty of water. The extract stains skin and clothes, and nothing here gets tasted."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Three words for this practical: steep, chart, cycle. Steep the cabbage to make the extract, chart its colours against known pH, and cycle one sample from acid to base and back to show the change is reversible."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A student adds three drops of extract to three wells: dilute hydrochloric acid, distilled water, and dilute sodium hydroxide. They turn red, a paler purple, and green. Explain why she included the water well, and describe a test that would show the colour change is reversible. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The water well is the control: it shows that dilution alone only makes the purple paler. So the red and green come from the acid and base. For reversibility, take one sample, add base until it's green, then acid until it's red, and repeat three times. Testing again in fresh wells only shows each colour separately."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more. Her colour chart reads: red at two, pink at four, violet at six, purple at seven, blue at eight, blue-green at ten and green at twelve. A baking soda solution turns the extract blue, with a slight green tint. Estimate its pH, and assess the accuracy of this method compared with a calibrated pH meter. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The colour sits between the blue at eight and the blue-green at ten, closer to blue: about eight to nine. That's a range, not a value. The chart's steps are two units wide, and the colour is judged by eye, so it's less accurate than a calibrated meter, which reads eight point three four here. Writing exactly eight point zero claims more than a colour can show."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So: steep and filter the extract, chart its colours against known pH with equal drops, use a water control, and cycle one sample to show the change is reversible. Next: what a whole titration curve, and a conductivity graph, can tell you."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

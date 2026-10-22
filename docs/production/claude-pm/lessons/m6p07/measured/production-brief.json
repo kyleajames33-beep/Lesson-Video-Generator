@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6p07/measured/lesson.json",
+    "lessonSha256": "06b264c2f870680be3f23ac8711a06eeb85764ac62fb1d7b4a75438547de2704"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m6-c16 (pH or amount; a probe gives pH, a titration gives total titratable acid; calibrate with two buffers close to the samples, ideally either side; clear and fast samples suit a direct titration); chem-m6-p06 (titration technique: rinse with what's going in, read at eye level to 0.05 mL, rough run then dropwise, concordant titres, error tracing); chem-m6-c12 (four steps, 1 : 1 for ethanoic acid with NaOH, NaOH is standardised because it absorbs water and CO₂); chem-m6-c13 (phenolphthalein suits a weak acid titrated with a strong base); chem-m6-c08 and c10 (weak acid pH from Ka; ethanoic acid Ka 1.8 × 10⁻⁵); chem-m6-p03 (meter routine: rinse, blot, read, record temperature); chem-m6-p04 (diluting a weak acid tenfold raises its pH by less than one unit; volumetric dilution); chem-m6-g03 (scale-up from an aliquot; percentage by mass needs a density); chem-m5-p01 (validity, reliability, accuracy, risk). Year 11: n = cV, n = m/M.",
+    "startsWith": "Choose a household sample, preparation and suitable analysis method. The video opens: A pH probe reads this white vinegar at two point four six. Dilute it ten times, and it reads two point nine six. Same vinegar, two different pH values, and neither one measures how much acid is in the bottle.",
+    "stopsAfter": "stating the two questions a household acidity analysis can answer and the measurement for each; measuring pH on the undiluted sample with a probe calibrated by buffers either side; estimating a titre from a label and choosing a dilution; diluting with volumetric glassware and explaining why the moles are unchanged; titrating with standardised base to the first faint pink lasting 30 s; calculating the concentration with the dilution factor; reporting grams per 100 mL as titratable acidity, as ethanoic acid, and comparing with the label; checking pH against concentration through Ka; stating the result's limits; judging validity, reliability and accuracy; writing the risk rows; applying the method to an ammonia cleaner. No method tree (chem-m6-c16), no back titration (chem-m6-c15), no percentage uncertainty.",
+    "nextLesson": "Module 7, organic chemistry (the next module's first video; no Module 6 entry follows)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-p07.md"
+  ],
+  "teaching": {
+    "task": "A pH probe reads the same white vinegar as 2.46 neat and 2.96 diluted tenfold, and neither number is the amount of acid in the bottle. How do you prepare, measure and report a household sample so that each number means what you say it means?",
+    "causalExplanation": "(1) the same vinegar gives two pH values, and neither is an amount (1); (2) two questions need two measurements: pH for how acidic, a titration for how much; clear, fast vinegar suits a direct titration (2); (3) pH describes the solution the probe sits in, so it is measured on the undiluted sample, with buffers either side (3); (4) the label lets you estimate the titre before you start; neat vinegar would need more than three burette fills (4); (5) dilute the sample, not strengthen the base: stronger base is corrosive, and dilution keeps the moles, so you multiply back by ten (5); (6) the base is standardised because it absorbs CO₂; the endpoint is the first faint pink that lasts 30 s (6); (7) concordant titres give the mean (7); (8) 1 : 1 ratio, moles in the aliquot, concentration of the dilution, times ten (8); (9) report as the label does, grams per 100 mL, and compare (9); (10) two results with two meanings, consistent through Ka; the titration counts every acid, so \"as ethanoic acid\" (10); (11) the limits of the result (11); validity, reliability, accuracy (12); risk (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).",
+    "conversationalApproach": "a probe reads the same white vinegar at pH 2.46 neat and 2.96 diluted tenfold, and neither number is the amount of acid in the bottle, so the practical asks how to prepare, measure and report a household sample so that each number means what you say it means. Two questions need two measurements: pH for how acidic it is now, measured on the sample as it is with a probe calibrated by pH 7 and pH 2 buffers, and a titration for how much acid it holds. The titration is planned from the label's 4% so the titre fits the burette, and the vinegar is diluted tenfold rather than using a corrosive stronger base; the standardised sodium hydroxide, the concordant titres, the C12 calculation one line per stage and the conversion to grams per 100 mL follow, and the two results are shown to fit together through Ka. The limits of the result (one bottle, other acids, the endpoint), validity, reliability and accuracy, and the risk assessment close the method. Two exam questions follow with brief feedback, the second on an ammonia cleaner left open on the bench.",
+    "openingDecision": "A pH probe reads this white vinegar at two point four six. Dilute it ten times, and it reads two point nine six. Same vinegar, two different pH values, and neither one measures how much acid is in the bottle. So how do you analyse a household sample so that every number you report means what you say it means?",
+    "understandingCheck": "(A1) \"A cleaning vinegar is labelled '6% acidity', meaning 6 g of ethanoic acid per 100 mL. A student plans to titrate 25.00 mL aliquots of the undiluted cleaning vinegar with 0.09940 mol/L sodium hydroxide from a 50.00 mL burette. M(CH₃COOH) = 60.05 g/mol. Use the label to estimate the expected titre, and explain how the student should change the plan.\" Answer: about 1 mol/L; about 0.025 mol per aliquot; about 250 mL of base, five burette fills; dilute tenfold (25.00 mL to 250.0 mL in a volumetric flask), giving titres of about 25 mL, then multiply by ten, or use a 2.50 mL aliquot of the neat vinegar (also about 25 mL of base; accepted). Crossed mistake: \"just refill the burette five times\" (each refill adds two readings and their error, and time). (A2) \"A student analyses a household ammonia cleaner. She pours some of the cleaner into an open beaker and leaves it on the bench for 40 minutes. She then pipettes 25.00 mL of it into a 250.0 mL volumetric flask, makes it up to the mark, and titrates 25.00 mL aliquots with standardised hydrochloric acid using methyl orange indicator. All other steps are carried out correctly. Explain the effect of leaving the cleaner in the open beaker on her calculated concentration of ammonia in the cleaner.\" Answer: ammonia is a dissolved gas and some escapes from the open beaker, so her sample holds fewer moles of NH₃ than the bottle; less acid is needed; the titre is smaller; the calculated concentration is too low for the cleaner in the bottle. Crossed mistake: \"water evaporates, so it becomes more concentrated and the answer is too high\" (ammonia leaves the solution much faster than water does; author note i).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a chemical analysis of a common household substance for its acidity or basicity (ACSCH080)   , for example:; soft drink; wine; juice; medicine\" this video prepares students to carry out and report a household acidity analysis; it does not claim that watching it is conducting it. It teaches: framing the analysis as two questions (how acidic now: pH; how much in total: titration), with C16's choice recalled in one clause; measuring the pH first, on the undiluted sample, with a probe calibrated by buffers either side of the sample, because pH describes the solution the probe sits in; planning the titration from the label (estimate the concentration and the titre before starting); diluting the sample tenfold rather than using a more concentrated, corrosive base; carrying out the titration (C12 and P06 technique recalled, not re-taught); the titre table and the calculation with the dilution factor; reporting on the label's basis (grams per 100 mL) as titratable acidity \"as ethanoic acid\"; checking that the pH and the concentration are consistent through Ka (C08 callback, one sentence); the limitations of the result; validity, reliability and accuracy; the risk assessment. Basicity is applied in attempt 2 (an ammonia cleaner). Placement (playlist order 27): the last Chemistry Module 6 video, after C16 (order 26), G04 (order 25), C15 (order 24), C14, C13, G03 and P06. So indicator choice, the probe's calibration roles, the method tree and percentage by mass from density are all available as callbacks. Not re-taught: pH versus amount (C16, recalled as a two-question card); how a probe works and which buffer sets which parameter (C16); rinsing, meniscus reading, rough runs and error tracing (P06); the four-step titration calculation (C12); why phenolphthalein suits a weak acid with a strong base (C13); scale-up and percentage by mass (G03); weak acid pH from Ka (C08). Not here: back titration of an antacid (C15 and G03); red wine, soft drink and juice analyses (C16 tags; author note h); percentage uncertainty arithmetic; the Aboriginal and Torres Strait Islander knowledge scene (C16)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C12 and P06): the known solution's values (standardised NaOH) navy; the unknown's values (vinegar) amber; the ratio box teal; concordant titres ringed teal; pH values violet (a measurement of \"how acidic\", kept visually apart from amounts); the label's claim grey; limitations grey; controls green, hazards terracotta; phenolphthalein colourless and pink as painted. Board layout (three zones, constant, as P06): top-left the short task line; the centre holds the apparatus; the right third holds the current card (question card, reading table, plan, titre table, calculation, report, limitations, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: painted plates, inspected 21 Oct on the dark board: `m6-vinegar-bottle-v1.png` (glass bottle with a cork-coloured cap; the painted liquid is pale gold, so the coded label \"white vinegar, 4% acidity\" carries the identity, as in C12; see Open decisions), `m6-ph-meter-probe-beaker-v1.png` (bench meter with a blank display, probe in a beaker; readout coded), `m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png`, `m6-white-tile-v1.png`, `m6-volumetric-flask-v1.png`, `m6-volumetric-pipette-filler-v1.png`, `m6-beaker-v1.png`, `m6-wash-bottle-v1.png`, `m6-clip-phenolphthalein-colourless-v1.png` and `m6-clip-phenolphthalein-pink-v1.png` (aligned pair, 2048 × 1700; the pink is pale, which suits \"first faint pink\"), `m6-household-cleaner-bottle-v1.png` (blue spray bottle; attempt 2 with the coded label \"ammonia cleaner\"), `m5x-safety-glasses-v1.png` (risk). From P03's Codex asset brief (requested, not yet painted): `m6-buffer-bottle-v1.png` (scene 3; fallback below). Not used: `m6-red-wine-vinegar-bottle-v1.png` and `m6-red-wine-glass-v1.png` (C15 and C16 samples), `m6-lemon-v1.png` (juice is a C16 tag only), `m6-agricultural-liming-v1.png` (owner rule). No human figures.",
+    "transitionPlan": "The vinegar bottle plate opens the hook beside a probe beaker whose readout changes from 2.46 to 2.96 as a dilution arrow draws; the board clears to C16's two-question card with its rows lighting for pH and amount; two buffer bottles and the probe build the pH step card; the plan-from-label card writes the task line and estimate lines one at a time with the burette capacity bar; a corrosive chip fades in and takes a cross as the pipette and volumetric flask dilute the vinegar tenfold; the full titration set-up runs with its volume counter and flask colour swap; C12's titre table widens the right zone with the rough run greyed; the table dims to a strip as the task line, equation strip, givens and working write one stage per line; the report card converts to grams per 100 mL and holds the two result rows beside the label; the limitations card writes grey rows one per spoken limit; the three evaluation cards and the risk table write in turn; each attempt clears the board and its feedback underlines the question as estimate lines or P06's error chain write; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-vinegar-bottle-v1.png` at the left with its coded label \"white vinegar: 4% acidity\" (grey).",
+      "teachingReason": "Hook (one vinegar, two pH values): A pH probe reads this white vinegar at two point four six.",
+      "narrationCue": "two point four six / two point nine six / say",
+      "motionPurpose": "On the spoken cues: Two `m6-ph-meter-probe-beaker-v1.png` plates side by side in the centre, beaker tags \"neat vinegar\" and \"diluted ten times\" (amber). On \"two point four six\" the left readout settles \"2.46\" (violet); on \"two point nine six\" the right readout settles \"2.96\" (violet) and a small grey bracket joins them \"same vinegar\", with a silent grey tag \"+0.50: a weak acid on tenfold dilution (dilution practical)\" (dims). On",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-vinegar-bottle-v1.png` at the left with its coded label \"white vinegar: 4% acidity\" (grey). Two `m6-ph-meter-probe-beaker-v1.png` plates side by side in the centre, beaker tags \"neat vinegar\" and \"diluted ten times\" (amber). On \"two point four six\" the left readout settles \"2.46\" (violet); on \"two point nine six\" the right readout settles \"2.96\" (violet) and a small grey bracket joins them \"same vinegar\", with a silent grey tag \"+0.50: a weak acid on tenfold dilution (dilution practical)\" (dims). On \"neither one measures how much\" a grey chip \"pH ≠ amount (method choice video)\" writes under the meters and dims. On \"say\" the heading writes: \"What does each number mean?\" Bright at the end: the two readouts and the heading. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "two-questions",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Two questions, two measurements: Start with the questions.",
+      "narrationCue": "pH / amount / direct",
+      "motionPurpose": "On the spoken cues: Right zone: C16's two-question card, small: on \"pH\" row 1 lights \"How acidic now? → pH (calibrated probe)\" (violet) with the meter thumbnail; on \"amount\" row 2 lights \"How much in total? → titration\" (amber) with the burette thumbnail (`m6-burette-clamp-stand-v1.png`, small) and a grey tag \"method choice video\" (dims). On \"direct\" a tick chip writes beside row 2: \"clear + fast → direct titration, phenolphthalein\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Right zone: C16's two-question card, small: on \"pH\" row 1 lights \"How acidic now? → pH (calibrated probe)\" (violet) with the meter thumbnail; on \"amount\" row 2 lights \"How much in total? → titration\" (amber) with the burette thumbnail (`m6-burette-clamp-stand-v1.png`, small) and a grey tag \"method choice video\" (dims). On \"direct\" a tick chip writes beside row 2: \"clear + fast → direct titration, phenolphthalein\" and a grey tag \"why phenolphthalein: the indicators video\" (dims). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ph-first",
+      "visualDecision": "adjust",
+      "visualReference": "right zone, step card \"1 Measure pH\".",
+      "teachingReason": "PH first, on the sample as it is: Measure the pH first.",
+      "narrationCue": "two / undiluted / two point four six",
+      "motionPurpose": "On the spoken cues: Centre: two `m6-buffer-bottle-v1.png` plates (P03 request; fallback: two small `m6-beaker-v1.png` plates with coded labels) tagged \"pH 7.00\" and \"pH 2.00\"; the probe dips into each in turn (coded motion, a short wash-bottle stream rinses it between them), the readout settling \"7.00\" then \"2.00\" with a stability tick. On \"two\" a coded number line \"pH 2 to 7\" draws under the buffers with a violet marker \"vinegar ≈",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, step card \"1 Measure pH\". Centre: two `m6-buffer-bottle-v1.png` plates (P03 request; fallback: two small `m6-beaker-v1.png` plates with coded labels) tagged \"pH 7.00\" and \"pH 2.00\"; the probe dips into each in turn (coded motion, a short wash-bottle stream rinses it between them), the readout settling \"7.00\" then \"2.00\" with a stability tick. On \"two\" a coded number line \"pH 2 to 7\" draws under the buffers with a violet marker \"vinegar ≈ 2.5\" falling between the two ends, tag \"buffers either side of the sample\", and a small grey tick at 4 on the line with the tag \"method choice video: pH 4 suits most acidic samples; vinegar reads below 4\" (dims). On \"undiluted\" the probe moves into a beaker tagged \"neat vinegar, from the bottle\"; the hook's diluted beaker ghosts in beside it and takes a grey cross with the caption \"a different solution: a different pH\". On \"Three readings\" a small reading table writes, one value per beat: \"2.46 | 2.45 | 2.46\", with a bracket \"within 0.01\"; on \"two point four six\" the kept chip pins \"pH = 2.46 (25 °C)\" (violet). Earlier tags dim. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "table build",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "plan-from-label",
+      "visualDecision": "new",
+      "visualReference": "right zone, card \"2 Plan from the label\".",
+      "teachingReason": "Plan the titration from the label: Now the amount.",
+      "narrationCue": "zero point six seven / three",
+      "motionPurpose": "On the spoken cues: Task line: \"Estimate the titre before you start\". Lines one at a time, grey (estimates): \"label: 4 g per 100 mL = 40 g/L\"; on \"zero point six seven\" \"c ≈ 40 ÷ 60.05 ≈ 0.67 mol/L\" (grey tag \"M(CH₃COOH) = 60.05 g/mol\", dims); then \"n in 25.00 mL ≈ 0.67 × 0.02500 ≈ 0.017 mol\" and \"V(NaOH) ≈ 0.017 ÷ 0.1 ≈ 170 mL\". On \"three\" the burette fill counter draws four burette outlines in a row; three fill completely and the",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, card \"2 Plan from the label\". Task line: \"Estimate the titre before you start\". Lines one at a time, grey (estimates): \"label: 4 g per 100 mL = 40 g/L\"; on \"zero point six seven\" \"c ≈ 40 ÷ 60.05 ≈ 0.67 mol/L\" (grey tag \"M(CH₃COOH) = 60.05 g/mol\", dims); then \"n in 25.00 mL ≈ 0.67 × 0.02500 ≈ 0.017 mol\" and \"V(NaOH) ≈ 0.017 ÷ 0.1 ≈ 170 mL\". On \"three\" the burette fill counter draws four burette outlines in a row; three fill completely and the fourth fills a third, tag \"50 mL burette: refill after refill\". Bright at the end: the 170 mL line and the counter. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "dilute",
+      "visualDecision": "adjust",
+      "visualReference": "on \"corrosive\" a chip \"0.5 mol/L NaOH instead?\" fades in with a small terracotta hazard tag \"corrosive\" and takes a grey cross (caption \"dilute the sample instead\").",
+      "teachingReason": "Dilute the sample, not strengthen the base: You could use a stronger base, but half molar sodium hydroxide counts as corrosive in school safety guides.",
+      "narrationCue": "corrosive / multiply by ten / seventeen",
+      "motionPurpose": "On the spoken cues: Centre: `m6-volumetric-pipette-filler-v1.png` drains into `m6-volumetric-flask-v1.png` (coded amber stream; a grey tag \"rinse the pipette with vinegar first (titration practical)\" dims); P04's fill-to-mark motion; the flask rotates whole through 180° and back twice (coded, no hand), tag \"inverted: the same everywhere\". P04's particle lens opens on the flask: the same twelve amber acid dots spread through a bigger",
+      "motionRole": "explain",
+      "onScreenChange": "on \"corrosive\" a chip \"0.5 mol/L NaOH instead?\" fades in with a small terracotta hazard tag \"corrosive\" and takes a grey cross (caption \"dilute the sample instead\"). Centre: `m6-volumetric-pipette-filler-v1.png` drains into `m6-volumetric-flask-v1.png` (coded amber stream; a grey tag \"rinse the pipette with vinegar first (titration practical)\" dims); P04's fill-to-mark motion; the flask rotates whole through 180° and back twice (coded, no hand), tag \"inverted: the same everywhere\". P04's particle lens opens on the flask: the same twelve amber acid dots spread through a bigger volume. On \"multiply by ten\" the scale bar draws from the flask back to the bottle, labelled \"dilution factor: 250.0 ÷ 25.00 = 10\", with a silent grey chip under it: \"or a smaller pipette: also fine; dilution gives many aliquots from one careful transfer\" (dims). On \"seventeen\" the burette counter from scene 4 resets to one burette, a third full, tag \"expected titre ≈ 17 mL\". Bright at the end: the scale bar, the crossed chip and the titre tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Cam lens zoom",
+        "DrawPath",
+        "NumberTicker",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "titrate",
+      "visualDecision": "adjust",
+      "visualReference": "right zone, step card \"3 Titrate\".",
+      "teachingReason": "The titration: The sodium hydroxide was standardised, because it absorbs carbon dioxide from the air: zero point zero nine nine four zero moles per litre.",
+      "narrationCue": "zero point zero nine nine four zero / pink",
+      "motionPurpose": "On the spoken cues: Centre: the full set-up (`m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png` on `m6-white-tile-v1.png`), the burette's coded fill navy with the label \"NaOH, standardised\"; on \"zero point zero nine nine four zero\" the label completes \"0.09940 mol/L\" (navy) and pins as a kept chip, with a grey tag \"standardised: NaOH absorbs CO₂ (titration video)\" (dims). A pipette thumbnail drains into the flask, tag \"25.00 mL",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, step card \"3 Titrate\". Centre: the full set-up (`m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png` on `m6-white-tile-v1.png`), the burette's coded fill navy with the label \"NaOH, standardised\"; on \"zero point zero nine nine four zero\" the label completes \"0.09940 mol/L\" (navy) and pins as a kept chip, with a grey tag \"standardised: NaOH absorbs CO₂ (titration video)\" (dims). A pipette thumbnail drains into the flask, tag \"25.00 mL diluted vinegar\" (amber); two coded drops fall, flask = `m6-clip-phenolphthalein-colourless-v1.png`. A grey tag \"technique: the titration practical\" (dims). The volume counter runs quickly, then single drops with a swirl wobble (coded rotation); a brief pink flash fades once. On \"pink\" the flask swaps to `m6-clip-phenolphthalein-pink-v1.png`, a small coded timer counts \"30 s\" and ticks, tag \"first faint pink that lasts 30 s (the pink can fade as CO₂ from air dissolves)\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "chip pop",
+        "tick",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "results",
+      "visualDecision": "new",
+      "visualReference": "the right zone widens for C12's titre table: columns \"run | initial (mL) | final (mL) | titre (mL)\"; rows \"rough | 0.00 | 17.4 | 17.4\" (greyed, \"not used\"); \"1 | 0.20 | 17.25 | 17.05\"; \"2 | 0.50 | 17.60 | 17.10\"; \"3 | 0.10 | 17.25 | 17.15\"; each titre cell writes as \"final − initial\".",
+      "teachingReason": "The results: The rough run went to about seventeen point four.",
+      "narrationCue": "seventeen point one zero",
+      "motionPurpose": "On the spoken cues: C12's concordance strip (17.00 to 17.20 mL) draws, the bracket \"0.10 mL\" spanning 17.05 to 17.15 with all three dots inside. On \"seventeen point one zero\" rows 1 to 3 ring teal and \"(17.05 + 17.10 + 17.15) ÷ 3 = 17.10 mL\" writes and shrinks to a kept chip \"mean titre = 17.10 mL\". Bright at the end: the ringed rows and the kept chip.",
+      "motionRole": "explain",
+      "onScreenChange": "the right zone widens for C12's titre table: columns \"run | initial (mL) | final (mL) | titre (mL)\"; rows \"rough | 0.00 | 17.4 | 17.4\" (greyed, \"not used\"); \"1 | 0.20 | 17.25 | 17.05\"; \"2 | 0.50 | 17.60 | 17.10\"; \"3 | 0.10 | 17.25 | 17.15\"; each titre cell writes as \"final − initial\". C12's concordance strip (17.00 to 17.20 mL) draws, the bracket \"0.10 mL\" spanning 17.05 to 17.15 with all three dots inside. On \"seventeen point one zero\" rows 1 to 3 ring teal and \"(17.05 + 17.10 + 17.15) ÷ 3 = 17.10 mL\" writes and shrinks to a kept chip \"mean titre = 17.10 mL\". Bright at the end: the ringed rows and the kept chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "calculation",
+      "visualDecision": "new",
+      "visualReference": "the table dims to a strip.",
+      "teachingReason": "The calculation: Ethanoic acid reacts one to one with sodium hydroxide.",
+      "narrationCue": "one point six nine nine seven times ten to the minus three / zero point zero six seven nine nine / zero point six seven nine nine",
+      "motionPurpose": "On the spoken cues: Task line: \"Find c(CH₃COOH) in the vinegar\". Equation strip: \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\", coefficients pulsing \"1 : 1\". C12's mole bridge draws. Givens, grouped: \"NaOH: c = 0.09940 mol/L, mean titre 17.10 mL\" (navy) | \"diluted vinegar: aliquot 25.00 mL\" (amber) | \"dilution: 25.00 mL to 250.0 mL\" (grey). Lines one at a time, earlier dimming: on \"one point six nine nine seven\" \"n(NaOH) = 0.09940 ×",
+      "motionRole": "explain",
+      "onScreenChange": "the table dims to a strip. Task line: \"Find c(CH₃COOH) in the vinegar\". Equation strip: \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\", coefficients pulsing \"1 : 1\". C12's mole bridge draws. Givens, grouped: \"NaOH: c = 0.09940 mol/L, mean titre 17.10 mL\" (navy) | \"diluted vinegar: aliquot 25.00 mL\" (amber) | \"dilution: 25.00 mL to 250.0 mL\" (grey). Lines one at a time, earlier dimming: on \"one point six nine nine seven\" \"n(NaOH) = 0.09940 × 0.01710 = 1.6997 × 10⁻³ mol = n(CH₃COOH)\" (grey tag \"keep the digits; round at the end\", dims); on \"zero point zero six seven nine nine\" \"c(diluted) = 1.6997 × 10⁻³ ÷ 0.02500 = 0.06799 mol/L\"; on \"zero point six seven nine nine\" the scale bar from scene 5 returns, \"× 10\", and \"c(vinegar) = 10 × 0.06799 = 0.6799 mol/L\" writes; the answer chip pins \"vinegar: 0.6799 mol/L ethanoic acid\", grey tag \"4 s.f., like the data\" (dims). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "report-label",
+      "visualDecision": "new",
+      "visualReference": "right zone, card \"4 Report\".",
+      "teachingReason": "Report it the way the label does: The label's four percent means about four grams per hundred millilitres, so convert.",
+      "narrationCue": "four point zero eight three grams / close",
+      "motionPurpose": "On the spoken cues: Lines one at a time: \"mass per litre = 0.6799 × 60.05 = 40.83 g/L\"; on \"four point zero eight three grams\" \"= 4.083 g per 100 mL\" and the label comparison bar draws: a grey bar \"label: 4 g per 100 mL\" and an amber bar \"measured: 4.083 g per 100 mL\", with a small bracket \"+2 % of the label value\". On \"close\" a tick chip \"consistent with the label\" (green) writes, with a grey tag \"labels state a nominal value\". Bright",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, card \"4 Report\". Lines one at a time: \"mass per litre = 0.6799 × 60.05 = 40.83 g/L\"; on \"four point zero eight three grams\" \"= 4.083 g per 100 mL\" and the label comparison bar draws: a grey bar \"label: 4 g per 100 mL\" and an amber bar \"measured: 4.083 g per 100 mL\", with a small bracket \"+2 % of the label value\". On \"close\" a tick chip \"consistent with the label\" (green) writes, with a grey tag \"labels state a nominal value\". Bright at the end: the two bars and the tick. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "two-results",
+      "visualDecision": "new",
+      "visualReference": "the report card holds two result rows, written as spoken: \"how acidic: pH 2.46 (25 °C)\" (violet) and \"how much: 4.083 g per 100 mL\" (amber).",
+      "teachingReason": "Two results, two meanings: The pH says how acidic the vinegar is.",
+      "narrationCue": "two point four six / zero point zero one out / as ethanoic acid",
+      "motionPurpose": "On the spoken cues: On \"fit together\" a small check line writes between them: \"Ka = 1.8 × 10⁻⁵, c = 0.6799 mol/L → [H₃O⁺] ≈ 3.5 × 10⁻³ mol/L → pH ≈ 2.46\" (grey tag \"weak acid pH video\", dims); on \"two point four six\" the predicted value rings beside the measured 2.46 with a teal tick. On \"zero point zero one out\" the check line dims and a grey strip writes: \"pH 2.45 → 0.70 mol/L | 2.46 → 0.67 | 2.47 → 0.64\" (grey tag \"the titration",
+      "motionRole": "explain",
+      "onScreenChange": "the report card holds two result rows, written as spoken: \"how acidic: pH 2.46 (25 °C)\" (violet) and \"how much: 4.083 g per 100 mL\" (amber). On \"fit together\" a small check line writes between them: \"Ka = 1.8 × 10⁻⁵, c = 0.6799 mol/L → [H₃O⁺] ≈ 3.5 × 10⁻³ mol/L → pH ≈ 2.46\" (grey tag \"weak acid pH video\", dims); on \"two point four six\" the predicted value rings beside the measured 2.46 with a teal tick. On \"zero point zero one out\" the check line dims and a grey strip writes: \"pH 2.45 → 0.70 mol/L | 2.46 → 0.67 | 2.47 → 0.64\" (grey tag \"the titration video\", dims), with a small caption \"pH checks the titration; it can't replace it\". On \"as ethanoic acid\" the amber row completes: \"titratable acidity: 4.083 g per 100 mL, as ethanoic acid\", with a grey tag \"titratable acidity: all acid that reacts up to the endpoint, counted as one named acid\". Bright at the end: the two rows and the tick. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "limitations",
+      "visualDecision": "new",
+      "visualReference": "right zone, card \"5 Limitations\", grey rows writing one per spoken limit, each with a small icon from the board: \"one bottle: result for the tested bottle\" (the vinegar bottle thumbnail, with two ghost bottles beside it tagged \"batch or brand: sample more bottles\"); \"other acids: counted as ethanoic acid\" (the amber row's \"as ethanoic acid\" pulses); on \"density\" \"g per 100 mL ≠ % by mass: needs the density (practice video)\" (grey tag dims); on \"temperature\" \"pH at 25 °C: record the temperature\" (the meter thumbnail).",
+      "teachingReason": "The limits of the result: Then report the limits.",
+      "narrationCue": "density / temperature",
+      "motionPurpose": "On the spoken cues: Bright at the end: the last two rows.",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, card \"5 Limitations\", grey rows writing one per spoken limit, each with a small icon from the board: \"one bottle: result for the tested bottle\" (the vinegar bottle thumbnail, with two ghost bottles beside it tagged \"batch or brand: sample more bottles\"); \"other acids: counted as ethanoic acid\" (the amber row's \"as ethanoic acid\" pulses); on \"density\" \"g per 100 mL ≠ % by mass: needs the density (practice video)\" (grey tag dims); on \"temperature\" \"pH at 25 °C: record the temperature\" (the meter thumbnail). Bright at the end: the last two rows. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what was intended?",
+      "teachingReason": "Validity, reliability and accuracy: Validity: the titration measures the total acid, because vinegar is clear, it reacts one to one and the endpoint is close to equivalence.",
+      "narrationCue": "Validity / Reliability / Accuracy",
+      "motionPurpose": "On the spoken cues: Clear sample, 1 : 1 reaction, phenolphthalein endpoint near equivalence; pH on the undiluted sample; held the same: aliquot, NaOH, indicator dose, endpoint rule.\" (green list row for the controls, silent). \"Reliability: repeats agree? Titres 17.05 to 17.15 mL (within 0.10 mL); pH 2.45 to 2.46.\" \"Accuracy: close to the true value? Standardised NaOH; volumetric pipette and flask; buffers pH 2.00 and 7.00 either side;",
+      "motionRole": "explain",
+      "onScreenChange": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what was intended? Clear sample, 1 : 1 reaction, phenolphthalein endpoint near equivalence; pH on the undiluted sample; held the same: aliquot, NaOH, indicator dose, endpoint rule.\" (green list row for the controls, silent). \"Reliability: repeats agree? Titres 17.05 to 17.15 mL (within 0.10 mL); pH 2.45 to 2.46.\" \"Accuracy: close to the true value? Standardised NaOH; volumetric pipette and flask; buffers pH 2.00 and 7.00 either side; readings at eye level.\" A small grey footer: \"NESA glossary (2025): accuracy, the extent to which measurements are considered to be close to the true value.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"0.09940 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); school guides treat 0.05 to < 0.5 mol/L as an irritant; supplier sheets vary, so check yours\" / \"treat a splash as harmful to eyes and skin\" / \"safety glasses (`m5x-safety-glasses-v1.png`); rinse splashes with water\"; \"vinegar (4 g per 100 mL) and its dilution: not classified\" / \"a food product, but lab samples may be contaminated\" / \"label it; never taste lab samples\"; on \"flammable\" \"phenolphthalein indicator (about 0.5 % in ethanol): flammable (H225 or H226); the solid is Carc. 1B, may cause cancer (H350); the solution's label varies by supplier, so check yours\" / \"fire; long-term harm from repeated exposure\" / \"two drops; cap the bottle; no flames; wash hands\"; \"pH buffers 2.00 and 7.00: check the label\" / \"eye irritation from a splash\" / \"safety glasses\"; on \"filler\" \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\".",
+      "teachingReason": "The risk assessment: The risk assessment.",
+      "narrationCue": "flammable / filler",
+      "motionPurpose": "On the spoken cues: Grey row: \"waste: neutralised sodium ethanoate solution; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\".",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"0.09940 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); school guides treat 0.05 to < 0.5 mol/L as an irritant; supplier sheets vary, so check yours\" / \"treat a splash as harmful to eyes and skin\" / \"safety glasses (`m5x-safety-glasses-v1.png`); rinse splashes with water\"; \"vinegar (4 g per 100 mL) and its dilution: not classified\" / \"a food product, but lab samples may be contaminated\" / \"label it; never taste lab samples\"; on \"flammable\" \"phenolphthalein indicator (about 0.5 % in ethanol): flammable (H225 or H226); the solid is Carc. 1B, may cause cancer (H350); the solution's label varies by supplier, so check yours\" / \"fire; long-term harm from repeated exposure\" / \"two drops; cap the bottle; no flames; wash hands\"; \"pH buffers 2.00 and 7.00: check the label\" / \"eye irritation from a splash\" / \"safety glasses\"; on \"filler\" \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\". Grey row: \"waste: neutralised sodium ethanoate solution; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A cleaning vinegar is labelled six",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-vinegar-bottle-v1.png` small at the card's upper right with the coded label \"cleaning vinegar: 6% acidity\". Question card, worded as printed: \"A cleaning vinegar is labelled '6% acidity', meaning 6 g of ethanoic acid per 100 mL. A student plans to titrate 25.00 mL aliquots of the undiluted cleaning vinegar with 0.09940 mol/L sodium hydroxide from a 50.00 mL burette. M(CH₃COOH) = 60.05 g/mol. Use the label to estimate the expected titre, and explain how the student should change the plan.\" Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no burette counter, no scale bar.",
+      "motionTools": [
+        "HandText write-on",
+        "NumberTicker",
+        "bar fill",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "one / two hundred and fifty / twenty five",
+      "motionPurpose": "On the spoken cues: On \"one\" \"6 g of ethanoic acid per 100 mL\" and \"60.05 g/mol\" are underlined and \"c ≈ 60 ÷ 60.05 ≈ 1 mol/L\" writes (grey, estimate). On \"two hundred and fifty\" \"25.00 mL aliquots\" and \"0.09940 mol/L\" are underlined; \"n ≈ 1 × 0.02500 ≈ 0.025 mol → V ≈ 0.025 ÷ 0.09940 ≈ 250 mL\" writes, and \"50.00 mL burette\" is underlined as the burette fill counter fills five outlines. On \"twenty five\" the scale bar draws \"25.00 mL →",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"one\" \"6 g of ethanoic acid per 100 mL\" and \"60.05 g/mol\" are underlined and \"c ≈ 60 ÷ 60.05 ≈ 1 mol/L\" writes (grey, estimate). On \"two hundred and fifty\" \"25.00 mL aliquots\" and \"0.09940 mol/L\" are underlined; \"n ≈ 1 × 0.02500 ≈ 0.025 mol → V ≈ 0.025 ÷ 0.09940 ≈ 250 mL\" writes, and \"50.00 mL burette\" is underlined as the burette fill counter fills five outlines. On \"twenty five\" the scale bar draws \"25.00 mL → 250.0 mL volumetric flask: × 10\" and \"dilute × 10 (or a 2.50 mL aliquot): titre ≈ 25 mL\" writes; the counter drops to one burette, half full. A chip \"refill the burette five times\" fades in and is crossed (caption \"ten readings: more reading error\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "NumberTicker",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-household-cleaner-bottle-v1.png` small at the card's upper right with the coded label \"ammonia cleaner\".",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more, this time a base. A student",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-household-cleaner-bottle-v1.png` small at the card's upper right with the coded label \"ammonia cleaner\". Question card, worded as printed: \"A student analyses a household ammonia cleaner. She pours some of the cleaner into an open beaker and leaves it on the bench for 40 minutes. She then pipettes 25.00 mL of it into a 250.0 mL volumetric flask, makes it up to the mark, and titrates 25.00 mL aliquots with standardised hydrochloric acid using methyl orange indicator. All other steps are carried out correctly. Explain the effect of leaving the cleaner in the open beaker on her calculated concentration of ammonia in the cleaner.\" Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "on \"gas\" \"open beaker\" and \"40 minutes\" are underlined and P06's error chain writes its first chip \"open beaker → NH₃ gas escapes → fewer moles of NH₃ in the sample\" (grey), with a few coded NH₃ dots rising out of a beaker thumbnail.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "gas / smaller / low",
+      "motionPurpose": "On the spoken cues: On \"smaller\" \"titrates 25.00 mL aliquots with standardised hydrochloric acid\" is underlined and \"→ titre smaller\" (violet) writes, with a small grey equation strip \"NH₃(aq) + HCl(aq) → NH₄Cl(aq)\". On \"low\" \"calculated concentration of ammonia in the cleaner\" is underlined and \"→ c(NH₃) too low\" (terracotta) writes. A chip \"water evaporates, so too high\" fades in and is crossed (caption \"ammonia escapes much faster",
+      "motionRole": "explain",
+      "onScreenChange": "on \"gas\" \"open beaker\" and \"40 minutes\" are underlined and P06's error chain writes its first chip \"open beaker → NH₃ gas escapes → fewer moles of NH₃ in the sample\" (grey), with a few coded NH₃ dots rising out of a beaker thumbnail. On \"smaller\" \"titrates 25.00 mL aliquots with standardised hydrochloric acid\" is underlined and \"→ titre smaller\" (violet) writes, with a small grey equation strip \"NH₃(aq) + HCl(aq) → NH₄Cl(aq)\". On \"low\" \"calculated concentration of ammonia in the cleaner\" is underlined and \"→ c(NH₃) too low\" (terracotta) writes. A chip \"water evaporates, so too high\" fades in and is crossed (caption \"ammonia escapes much faster than water\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 pH, amount, or both?\"",
+      "teachingReason": "Decision rule and handoff: So, to analyse a household sample: ask whether you need its pH, an amount, or both.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 pH: calibrated probe, buffers either side, the undiluted sample.\" \"3 Amount: estimate the titre from the label; dilute if needed; × the dilution factor.\" \"4 Report: pH; g per 100 mL as one named acid; the limits.\" A grey tag beneath, silent: \"other samples change one step: juice (citric acid, 3 H⁺), soft drink (degas first), wine (pH endpoint), antacid (back titration)\". On \"Next\" a chip \"Next: Module 7, organic",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 pH, amount, or both?\" \"2 pH: calibrated probe, buffers either side, the undiluted sample.\" \"3 Amount: estimate the titre from the label; dilute if needed; × the dilution factor.\" \"4 Report: pH; g per 100 mL as one named acid; the limits.\" A grey tag beneath, silent: \"other samples change one step: juice (citric acid, 3 H⁺), soft drink (degas first), wine (pH endpoint), antacid (back titration)\". On \"Next\" a chip \"Next: Module 7, organic chemistry\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p07-learning-review.md",
+      "sha256": "f0eaec9299dd3085e632fe4285acd4b2bc4c142f042847399f6012d9e0503bdc"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p07-claude-science-check.md",
+      "sha256": "211ed74ac2fe2859155591590f20a711235cab23c152f56172a7eaeebddc2813"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

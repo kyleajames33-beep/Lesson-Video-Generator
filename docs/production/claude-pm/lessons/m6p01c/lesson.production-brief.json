@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6p01c/lesson.json",
+    "lessonSha256": "78a5f3d8998ce225f972e90b8c782d3d9cdd0e170369aa8df9cd1b419c558206"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m6-c13 (indicator as a weak acid HIn whose two forms differ in colour; the colour change as a reversible equilibrium shifted by acid and base; transition ranges; choose an indicator whose change falls inside the jump). chem-m6-c02 (properties of acids and bases; litmus). chem-m6-p03 (a calibrated pH meter; buffers as solutions that hold a known pH; colour judgements on indicator paper vary). chem-m6-c11 (buffers, by name). chem-m5-p01 (validity, reliability and accuracy in plain words; variables; risk assessment as hazard, harm, control). Stage 5 (the pH scale; universal indicator). Year 11 Biology is not assumed: \"membranes\" is said with its plain meaning (\"the membranes in the cabbage cells, the thin layers that hold the pigment in\") and shown on screen as a cell outline holding an internal pigment compartment, whose membranes break, so the cell wall is not mistaken for the barrier.",
+    "startsWith": "Prepare or select an indicator and record its initial colour. The video opens: Here's a beaker of purple juice from a red cabbage. Add a few drops of acid, and it turns red. Add a base, and it turns green.",
+    "stopsAfter": "explaining where the extract's colour comes from; preparing the extract and justifying each step; recording its starting colour; calibrating it against solutions of known pH with equal drops; reading its colour chart and stating its limits; using a water control; carrying out and explaining the reversibility cycle in one sample; recognising a colour change that is not reversible; estimating a pH from the chart and checking it with a meter; explaining why the extract is a poor titration indicator; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No titration curves (chem-m6-c14), no anthocyanin structures, no meter calibration (chem-m6-p03).",
+    "nextLesson": "what a whole titration curve and a conductivity graph can tell you (route chem-m6-c14)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-p01.md"
+  ],
+  "teaching": {
+    "task": "Purple juice from a red cabbage turns red in acid, green in base, and red again. How do you prepare it as an indicator, give each colour a meaning, and show that its colour change is a reversible reaction?",
+    "causalExplanation": "(1) one purple extract goes red, green and red again: can a vegetable work as an indicator, and how do you show the change runs both ways? (1); (2) the colour comes from anthocyanins; each behaves like the weak-acid indicator HIn from C13, but can lose more than one proton, and the extract is a mix of several of them, so it passes through several colours that blend gradually (2); (3) heat damages the membranes in the cabbage cells, the thin layers that hold the pigment in, so the pigment leaks out faster, and the pigment dissolves in water; filtering removes the solids so you see the solution's colour; the extract is cooled before use; its starting colour is recorded (3); (4) the colours mean nothing until they are matched to known pH; equal drops of extract in every well, because colour depth depends on how much pigment is present and you are comparing colour (4); (5) the chart shows several gradual changes; its precision is set by the spacing of the reference solutions (5); (6) adding any liquid dilutes the pigment, so the colour pales; the water well shows that paler purple, so a red or green well comes from the acid or base, not dilution; well C is read straight away (6); (7) one sample cycled: added base removes hydronium, so the pigment's equilibrium shifts to the forms that have lost protons, and acid shifts it back (C13 callback, one clause); three cycles in the same tube (7); (8) fresh wells show each colour separately, but only one sample going back and forth shows the reaction runs both ways; three cycles guard against a misread; the sample pales because it is diluted, but the same two colours return, which is evidence the pigment is not used up (8); (9) a colour that does not return is a warning: in strong base, like well C, for a long time the pigment molecules can change shape and break down (a different reaction), so base is added only until green and the cycle is run straight away (9); (10) the chart estimates household pH within a range, checked with a meter; the extract changes gradually, in steps, across the scale, while a titration needs one sharp change inside the jump (C13 callback), so it is a poor endpoint indicator (10); (11) variables; validity, reliability, accuracy (11); (12) the real hazards and controls (12); memory aid (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).",
+    "conversationalApproach": "purple red cabbage juice turns red in acid, green in base and red again, so the practical asks how to prepare it as an indicator, give each colour a meaning and show that its colour change is a reversible reaction. The colour is traced to anthocyanins that behave like HIn from the indicator video; the extract is prepared by the teacher in hot water (heat opens the cells), filtered and cooled; equal drops in wells of known pH give the colour chart; a water well is the control that shows dilution alone only makes the purple paler; one sample is cycled from acid to base and back three times, because fresh wells only show each colour separately; a colour that does not come back after a long time in strong base is a warning that the pigment has broken down. The chart is then used on vinegar and an ammonia cleaner, with its two-unit steps as its limit, followed by the variables, validity, reliability and accuracy, and the risk assessment. The memory aid is \"Steep. Chart. Cycle.\" Two exam questions follow with brief feedback.",
+    "openingDecision": "Here's a beaker of purple juice from a red cabbage. Add a few drops of acid, and it turns red. Add a base, and it turns green. Add acid again, and the red comes back. So can you make a working indicator from a vegetable? And how would you show that its colour change really runs both ways?",
+    "understandingCheck": "(A1) \"A student adds 3 drops of red cabbage extract to each of three wells. Well A contains dilute hydrochloric acid, well B contains distilled water and well C contains dilute sodium hydroxide solution. Well A turns red, well B stays purple but is slightly paler than the extract, and well C turns green. (a) Explain why the student included well B. (b) Describe a test the student could carry out to show that the colour change of the extract is reversible.\" Answer: (a) well B is the control: it shows that adding liquid alone only dilutes the purple, so the red and green come from the acid and the base; (b) in one sample, add sodium hydroxide dropwise until green, then hydrochloric acid until red, and repeat the cycle three times; the same two colours returning shows the change runs both ways. Crossed mistake: \"test the acid and the base again in fresh wells\" (fresh wells show each colour, not a reversal). (A2) \"A student made a colour chart for her red cabbage extract using buffer solutions: pH 2 red, pH 4 pink, pH 6 violet, pH 7 purple, pH 8 blue, pH 10 blue-green, pH 12 green. Three drops of the extract turned a solution of baking soda blue, with a slight green tint. (a) Estimate the pH of the baking soda solution. (b) Assess the accuracy of this method compared with a calibrated pH meter.\" Answer: (a) between 8 and 10, closer to 8: about 8 to 9; (b) less accurate: the chart steps are up to two units wide, the change between them is gradual, and colour is judged by eye, so it gives a range, while a calibrated meter is accurate to within a few hundredths. Crossed mistake: \"pH = 8.0\" (false precision: a colour match gives a range).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct an investigation to demonstrate the preparation and use of indicators as illustrators of the characteristics and properties of acids and bases and their reversible reactions (ACSCH101)\" this video prepares students to carry out and analyse the natural indicator practical; it does not claim that watching it is conducting it. It teaches: what gives red cabbage its colour (a mixture of anthocyanin pigments that behave like C13's weak-acid indicator, each with more than one proton to lose, so several gradual colours); preparing the extract (chop, steep in hot water, filter, cool) and why each step matters; recording the starting colour; calibrating the extract against solutions of known pH with equal drops on a white tile, and why the drops must be equal; reading the colour chart and why its precision depends on the spacing of the reference solutions; the water control, which separates dilution from a pH effect; the reversibility test (one sample cycled acid, base, acid, three times) and why it must be the same sample; what a colour that does not return means (the pigment changing shape and breaking down, a different reaction); using the chart to estimate the pH of household samples and checking with a meter; why a natural extract is a poor titration indicator; variables; validity, reliability and accuracy; the risk assessment. Not re-taught (chem-m6-c13, recalled in one clause each): an indicator as a weak acid HIn whose two forms differ in colour; the colour change as an equilibrium shifted by added acid or base (Le Chatelier); transition ranges; choosing an indicator that changes inside the jump. Not here: titration curves and conductivity graphs (chem-m6-c14, the next video); the chemistry of individual anthocyanin forms (author note b); calibrating a pH meter (chem-m6-p03, recalled); how buffers work (chem-m6-c11; named here as \"solutions that hold a known pH\", as in P03); calculating a concentration from a colour (colour is categorical; plan note kept)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C01, C13): hydronium teal, hydroxide violet; acid bottles carry a teal tab, base bottles a violet tab, water grey; the extract's colours as coded swatches matched to the painted plates; controls green, hazards terracotta. Board layout (three zones, constant): top-left the short task line; the centre holds the plates (beaker, well plate, filter); the right third holds the current card (method step, colour chart, VRA, risk table), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: `m6-clip-red-cabbage-purple-v1.png` and `m6-clip-red-cabbage-green-v1.png` (an aligned pair: the same glass beaker, about two-thirds full of purple and of green liquid, 2048 × 1700; the extract and the base colour; the cycle in scenes 1, 7 and 8; the starting colour in scene 3); `p03-well-plate-white-tile-v1.png` (a clear 48-well plate on a white tile, empty wells, 2048 × 1365; scenes 4 to 6, A1; coded fills in the wells); `p03-dropper-bottle-v1.png` (a clear glass dropper bottle with a black bulb and a blank cream label; copies with coded labels \"extract\", \"0.10 mol/L HCl\" with a teal tab, \"0.10 mol/L NaOH\" with a violet tab; scenes 4, 6 and 7); `m6-funnel-v1.png` (a clear glass filter funnel, empty; inspected and not used: a coded paper cone on it would be a coded object, so Codex item 3 replaces it); `m6-conical-flask-hotplate-v1.png` (a conical flask of boiling clear water on a hotplate, with steam; scene 3, the hot water, before the cabbage goes in; risk row); `m6-ph-meter-probe-beaker-v1.png` (scene 10 and feedback 2, coded readout as in P03); `m6-vinegar-bottle-v1.png` and `m6-household-cleaner-bottle-v1.png` (scene 10, household samples, small, coded labels); `m6-baking-soda-box-v1.png` (A2, small, coded label \"baking soda\"); `m6-indicator-phenolphthalein-set-v1.png` (scene 10 comparison thumbnail, small); `m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`, `m6-wash-bottle-v1.png` (risk table); `m6-burette-clamp-stand-v1.png` (handoff chip, small). New plates: see Codex asset brief (five items). No human figures.",
+    "transitionPlan": "The red cabbage beaker plate opens the hook as the dropper bottles tilt and the coded fill swaps purple, red, green and red; the beaker shrinks left as the anthocyanin meaning and the HIn strip write; the right zone becomes a method card with the cabbage and filter plates for the extract; the well plate on its white tile takes the centre and seven known-pH wells fill, then lift off into a coded colour chart strip; a second row of three labelled wells writes for the water control; the beaker cycles colour on each dropper tilt with a cycle counter, and small fresh-well thumbnails sit beside it; a second small beaker turns yellow beside a clock chip and its red does not return; the vinegar and cleaner plates take their places against the chart with range brackets; the variables card, the evaluation cards and the risk table write in the right zone in turn; the memory aid writes large with three icons; each attempt clears the board and its feedback underlines the question as wells or the chart return small; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-clip-red-cabbage-purple-v1.png` centre.",
+      "teachingReason": "Hook (purple, red, green, red): Here's a beaker of purple juice from a red cabbage.",
+      "narrationCue": "red / green / comes back",
+      "motionPurpose": "On the spoken cues: The \"0.10 mol/L HCl\" dropper bottle (`p03-dropper-bottle-v1.png`, teal tab) stands left, the \"0.10 mol/L NaOH\" bottle (violet tab) right. On \"red\" the HCl dropper lifts on a coded arc, a coded droplet falls, and the beaker crossfades to the new aligned plate `m6-clip-red-cabbage-red-v1.png` (Codex item 4) as the droplet lands. On \"green\" the NaOH dropper does the same and the beaker crossfades to",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-clip-red-cabbage-purple-v1.png` centre. The \"0.10 mol/L HCl\" dropper bottle (`p03-dropper-bottle-v1.png`, teal tab) stands left, the \"0.10 mol/L NaOH\" bottle (violet tab) right. On \"red\" the HCl dropper lifts on a coded arc, a coded droplet falls, and the beaker crossfades to the new aligned plate `m6-clip-red-cabbage-red-v1.png` (Codex item 4) as the droplet lands. On \"green\" the NaOH dropper does the same and the beaker crossfades to `m6-clip-red-cabbage-green-v1.png`. On \"comes back\" the HCl dropper again, back to red; a small coded loop arrow draws around the beaker (\"acid → base → acid\"). Heading writes: \"A cabbage indicator: does it run both ways?\" Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate crossfade",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "pigments",
+      "visualDecision": "new",
+      "visualReference": "the beaker shrinks to the left (purple).",
+      "teachingReason": "Where the colour comes from: The purple comes from pigments called anthocyanins, stored inside the cabbage's cells, and they dissolve in water.",
+      "narrationCue": "anthocyanins / more than one proton / mix",
+      "motionPurpose": "On the spoken cues: On \"anthocyanins\" the word and its meaning write in the right zone: \"anthocyanins: the purple pigments in red cabbage; they dissolve in water\". A small coded lens on the purple liquid opens: the C13 indicator token pair, here a white-outlined \"HIn\" token with a grey tag \"C13: indicator = weak acid, two coloured forms\" (dims after its sentence). On \"more than one proton\" the lens shows three tokens in a row, red,",
+      "motionRole": "explain",
+      "onScreenChange": "the beaker shrinks to the left (purple). On \"anthocyanins\" the word and its meaning write in the right zone: \"anthocyanins: the purple pigments in red cabbage; they dissolve in water\". A small coded lens on the purple liquid opens: the C13 indicator token pair, here a white-outlined \"HIn\" token with a grey tag \"C13: indicator = weak acid, two coloured forms\" (dims after its sentence). On \"more than one proton\" the lens shows three tokens in a row, red, purple and green, each step with a teal hydronium token hopping off (C01 hop), arrows \"lose H⁺ →\"; tag \"several forms, several colours\". On \"mix\" the meaning line dims to grey and two more faint token rows slide in under the first, each slightly offset in hue (so their steps fall at slightly different places); the first tag dims and a new tag writes \"a mixture: colours blend\". No structures. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "prepare",
+      "visualDecision": "adjust",
+      "visualReference": "the right zone becomes a method card, one line per step, earlier lines dimming.",
+      "teachingReason": "Preparing the extract: To prepare it, your teacher chops about twenty grams of cabbage and covers it with a hundred millilitres of hot water for ten minutes.",
+      "narrationCue": "hot water / leaks out / filter / cool / purple",
+      "motionPurpose": "On the spoken cues: `p01-red-cabbage-chopped-v1.png` (Codex item 1: a quarter of a red cabbage with a small heap of chopped shreds, no knife, no hands) left, with a coded tag \"about 20 g\". On \"hot water\" `m6-conical-flask-hotplate-v1.png` appears small beside it (tag \"100 mL hot water\"), then both crossfade into `p01-cabbage-steeping-beaker-v1.png` (Codex item 2: a beaker of hot water turning purple with cabbage shreds in it, faint",
+      "motionRole": "explain",
+      "onScreenChange": "the right zone becomes a method card, one line per step, earlier lines dimming. `p01-red-cabbage-chopped-v1.png` (Codex item 1: a quarter of a red cabbage with a small heap of chopped shreds, no knife, no hands) left, with a coded tag \"about 20 g\". On \"hot water\" `m6-conical-flask-hotplate-v1.png` appears small beside it (tag \"100 mL hot water\"), then both crossfade into `p01-cabbage-steeping-beaker-v1.png` (Codex item 2: a beaker of hot water turning purple with cabbage shreds in it, faint steam); a coded clock chip \"10 min\" runs. On \"leaks out\" a small coded lens on one shred shows a cell outline holding an internal purple pigment compartment (the vacuole, unlabelled); on \"leaks out\" the compartment's edge and the cell outline break and purple dots drift out (tag \"heat damages the membranes: pigment leaks out\"); the lens closes. On \"filter\" the beaker crossfades to `p01-filter-funnel-flask-v1.png` (Codex item 3: a funnel with folded filter paper holding cabbage shreds, standing in a conical flask collecting purple filtrate); tag \"filtrate: the liquid that passes through\". On \"cool\" a coded thermometer chip falls from \"hot\" to \"room temperature\" (grey tag \"safer to handle; colours compared at room temperature\"). On \"purple\" the filtrate crossfades to `m6-clip-red-cabbage-purple-v1.png` and a recording row writes: \"Starting colour: purple\". Method card lines: \"1 Chop (teacher), about 20 g.\" \"2 Hot water, 100 mL, 10 min.\" \"3 Filter off solids.\" \"4 Cool; record starting colour.\" Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate crossfade",
+        "chip pop",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "calibrate",
+      "visualDecision": "adjust",
+      "visualReference": "`p03-well-plate-white-tile-v1.png` centre (native aspect, scaled uniformly).",
+      "teachingReason": "Giving each colour a meaning: Next, find out what each colour means.",
+      "narrationCue": "solutions of known pH / three drops / same",
+      "motionPurpose": "On the spoken cues: On \"solutions of known pH\" coded labels write under seven wells of one row: \"pH 2\", \"4\", \"6\", \"7\", \"8\", \"10\", \"12\", and each well gets a faint colourless coded fill; tag \"reference solutions: known pH (buffers, checked with a meter)\", with `m6-ph-meter-probe-beaker-v1.png` small at the right, readout \"7.00\". On \"three drops\" the reference tag and the meter dim to grey as the extract dropper starts, so the drop",
+      "motionRole": "explain",
+      "onScreenChange": "`p03-well-plate-white-tile-v1.png` centre (native aspect, scaled uniformly). On \"solutions of known pH\" coded labels write under seven wells of one row: \"pH 2\", \"4\", \"6\", \"7\", \"8\", \"10\", \"12\", and each well gets a faint colourless coded fill; tag \"reference solutions: known pH (buffers, checked with a meter)\", with `m6-ph-meter-probe-beaker-v1.png` small at the right, readout \"7.00\". On \"three drops\" the reference tag and the meter dim to grey as the extract dropper starts, so the drop counter is the only bright chip during the drops; the \"extract\" dropper bottle moves along the row on a coded arc, three coded droplets falling into each well, a drop counter \"3 drops\" pulsing at each; each well's coded fill blooms into its colour as the third drop lands (red, pink, violet, purple, blue, blue-green, green). On \"same\" the drop counter dims and a grey side pair appears small: one well with 1 drop (pale) and one with 8 drops (dark), both \"pH 7\", tag \"same pH, different depth: keep the drops equal\". The meter and the side pair leave at the end. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "colour-chart",
+      "visualDecision": "new",
+      "visualReference": "the seven well colours lift off the plate into a coded colour chart strip in the right zone: seven swatches with their pH labels beneath; under it the C13 pH ruler (0 to 14).",
+      "teachingReason": "Reading the colour chart: Here's a typical result: red at pH two, pink at four, violet at six, purple at seven, blue at eight, blue-green at ten, and green at twelve.",
+      "narrationCue": "several / spacing",
+      "motionPurpose": "On the spoken cues: The swatches write on in turn as each colour is named. On \"several\" small brackets draw between neighbouring swatches where the hue changes (2 to 4, 4 to 6, 7 to 8, 8 to 10, 10 to 12), tag \"several gradual changes, not one\". On \"spacing\" the gap between the pH 8 and pH 10 swatches gets a bracket \"2 units apart\" and a grey tag \"a colour between them: pH between 8 and 10\". Grey footer: \"results vary with the cabbage",
+      "motionRole": "explain",
+      "onScreenChange": "the seven well colours lift off the plate into a coded colour chart strip in the right zone: seven swatches with their pH labels beneath; under it the C13 pH ruler (0 to 14). The swatches write on in turn as each colour is named. On \"several\" small brackets draw between neighbouring swatches where the hue changes (2 to 4, 4 to 6, 7 to 8, 8 to 10, 10 to 12), tag \"several gradual changes, not one\". On \"spacing\" the gap between the pH 8 and pH 10 swatches gets a bracket \"2 units apart\" and a grey tag \"a colour between them: pH between 8 and 10\". Grey footer: \"results vary with the cabbage and the extract\". Hold about 2 seconds (reading hold; the chart returns in attempt 2 and the key notes). Hold about 2 seconds (reading hold; the chart returns in attempt 2 and the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds (reading hold; the chart returns in attempt 2 and the key notes)"
+    },
+    {
+      "sceneId": "water-control",
+      "visualDecision": "new",
+      "visualReference": "the well plate returns, a second row: three wells labelled (coded) \"A HCl\" (teal tab), \"B water\" (grey tab), \"C NaOH\" (violet tab).",
+      "teachingReason": "The water control: Now test the extract in three wells: dilute hydrochloric acid, distilled water, and dilute sodium hydroxide.",
+      "narrationCue": "hydrochloric acid / sodium hydroxide / dilutes / not dilution",
+      "motionPurpose": "On the spoken cues: On \"hydrochloric acid\" well A fills red; on \"sodium hydroxide\" well C fills green, and a small grey tag writes beside it as it fills, \"read it straight away\" (it dims after its sentence and returns in scene 9); well B fills purple. On \"dilutes\" a swatch of the stock extract appears above well B, and well B's purple is visibly paler than it; tag \"water: paler, still purple\". On \"not dilution\" wells A and C get pen",
+      "motionRole": "explain",
+      "onScreenChange": "the well plate returns, a second row: three wells labelled (coded) \"A HCl\" (teal tab), \"B water\" (grey tab), \"C NaOH\" (violet tab). On \"hydrochloric acid\" well A fills red; on \"sodium hydroxide\" well C fills green, and a small grey tag writes beside it as it fills, \"read it straight away\" (it dims after its sentence and returns in scene 9); well B fills purple. On \"dilutes\" a swatch of the stock extract appears above well B, and well B's purple is visibly paler than it; tag \"water: paler, still purple\". On \"not dilution\" wells A and C get pen rings; tag \"control: same dilution, no acid or base\". Grey tag (dims): \"the extract shows the pH of what it's in\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "cycle",
+      "visualDecision": "adjust",
+      "visualReference": "centre: `m6-clip-red-cabbage-purple-v1.png` with a coded tag \"2.0 mL extract\"; the two dropper bottles stand either side.",
+      "teachingReason": "The reversibility cycle: Now the key test.",
+      "narrationCue": "red / green / back / three times",
+      "motionPurpose": "On the spoken cues: On \"red\" the HCl dropper releases droplets, a drop counter \"+10 drops HCl\" ticks, and the beaker crossfades to red. On \"green\" the NaOH dropper releases droplets one at a time (\"+12 drops NaOH\") and the beaker crossfades to green as the last drop lands; tag \"until it just turns green\". Then HCl again, back to red. On \"Base removes hydronium\" a small lens on the beaker shows a violet hydroxide token meeting a teal",
+      "motionRole": "explain",
+      "onScreenChange": "centre: `m6-clip-red-cabbage-purple-v1.png` with a coded tag \"2.0 mL extract\"; the two dropper bottles stand either side. On \"red\" the HCl dropper releases droplets, a drop counter \"+10 drops HCl\" ticks, and the beaker crossfades to red. On \"green\" the NaOH dropper releases droplets one at a time (\"+12 drops NaOH\") and the beaker crossfades to green as the last drop lands; tag \"until it just turns green\". Then HCl again, back to red. On \"Base removes hydronium\" a small lens on the beaker shows a violet hydroxide token meeting a teal hydronium token (they leave as a water token) and the red token becoming green; on \"back\" the reverse; equilibrium line small: \"red forms ⇌ H⁺ + green forms\" with a grey tag \"C13: Le Chatelier\" (dims). On \"three times\" a cycle tracker writes: three small loops, each ticking as the beaker swings red, green, red quickly (about 1 second per cycle). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate crossfade",
+        "tick",
+        "token flight",
+        "Cam lens zoom",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "same-sample",
+      "visualDecision": "new",
+      "visualReference": "on \"Fresh wells\" two separate wells (red, green) appear small, joined by a grey \"≠ reversal\" sign; on \"runs both ways\" the single beaker with its loop arrow pulses.",
+      "teachingReason": "Why the same sample, and why three cycles: Why the same sample?",
+      "narrationCue": "runs both ways / paler / same two colours",
+      "motionPurpose": "On the spoken cues: On \"paler\" the three cycles' colours line up as coded swatch pairs (red and green for cycle 1, 2 and 3), each pair a little lighter than the one before; tag \"diluted: lighter, same hue\". On \"same two colours\" a bracket joins the three red swatches and another the three green swatches, tag \"same colours return\". Result row writes: \"Evidence: reversible; pigment not used up.\"",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Fresh wells\" two separate wells (red, green) appear small, joined by a grey \"≠ reversal\" sign; on \"runs both ways\" the single beaker with its loop arrow pulses. On \"paler\" the three cycles' colours line up as coded swatch pairs (red and green for cycle 1, 2 and 3), each pair a little lighter than the one before; tag \"diluted: lighter, same hue\". On \"same two colours\" a bracket joins the three red swatches and another the three green swatches, tag \"same colours return\". Result row writes: \"Evidence: reversible; pigment not used up.\" Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "no-return",
+      "visualDecision": "adjust",
+      "visualReference": "a second, small beaker beside the cycle: green, with a coded clock chip \"a long time, strong NaOH\".",
+      "teachingReason": "When a colour doesn't come back: But a colour that doesn't come back is a warning.",
+      "narrationCue": "well C / yellow / break down",
+      "motionPurpose": "On the spoken cues: On \"well C\" a thumbnail of scene 6's well C (green, with its grey tag \"read it straight away\", now bright) slides in beside the beaker, then dims. On \"yellow\" the beaker crossfades to the new aligned plate `m6-clip-red-cabbage-yellow-v1.png` (Codex item 5). The HCl dropper adds droplets; the beaker stays yellow; a grey \"?\" chip. On \"break down\" the lens shows the green token bending out of shape, then cracking into",
+      "motionRole": "explain",
+      "onScreenChange": "a second, small beaker beside the cycle: green, with a coded clock chip \"a long time, strong NaOH\". On \"well C\" a thumbnail of scene 6's well C (green, with its grey tag \"read it straight away\", now bright) slides in beside the beaker, then dims. On \"yellow\" the beaker crossfades to the new aligned plate `m6-clip-red-cabbage-yellow-v1.png` (Codex item 5). The HCl dropper adds droplets; the beaker stays yellow; a grey \"?\" chip. On \"break down\" the lens shows the green token bending out of shape, then cracking into two grey fragments; tag \"pigment changed or destroyed: not the acid-base equilibrium\". Control tag (green): \"base only until green; cycle straight away\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "Plate crossfade",
+        "chip pop",
+        "token flight",
+        "Cam lens zoom",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "use-and-limits",
+      "visualDecision": "adjust",
+      "visualReference": "the colour chart strip stays in the right zone (small).",
+      "teachingReason": "Using the chart, and its limits: Now use your chart.",
+      "narrationCue": "pH meter / sharp",
+      "motionPurpose": "On the spoken cues: `m6-vinegar-bottle-v1.png` small with a well beside it filling pink-red; an arrow points to the chart between the pH 2 and 4 swatches; chip \"between pH 2 and 4\". `m6-household-cleaner-bottle-v1.png` (coded label \"ammonia cleaner\") small with a green well; chip \"about 11 to 12\". On \"pH meter\" `m6-ph-meter-probe-beaker-v1.png` appears small; its readout \"2.5\" writes beside the vinegar chip, then the vinegar pair",
+      "motionRole": "explain",
+      "onScreenChange": "the colour chart strip stays in the right zone (small). `m6-vinegar-bottle-v1.png` small with a well beside it filling pink-red; an arrow points to the chart between the pH 2 and 4 swatches; chip \"between pH 2 and 4\". `m6-household-cleaner-bottle-v1.png` (coded label \"ammonia cleaner\") small with a green well; chip \"about 11 to 12\". On \"pH meter\" `m6-ph-meter-probe-beaker-v1.png` appears small; its readout \"2.5\" writes beside the vinegar chip, then the vinegar pair (well, chip and readout) dims as \"11.4\" writes beside the cleaner chip (grey tag \"meter: a value; chart: a range\"). On \"sharp\" the chips dim and a comparison writes: the chart strip on the C13 pH ruler beside the phenolphthalein band (8.3 to 10.0) with `m6-indicator-phenolphthalein-set-v1.png` small; tag \"titration: one sharp change inside the jump (C13)\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "the variables card writes in the right zone: on \"pH\" \"Independent: pH of the solution\"; on \"colour\" \"Dependent: colour of the extract\"; then \"Controlled: same extract batch, 3 drops, about 1 mL of solution, white tile, same lighting\".",
+      "teachingReason": "Variables, validity, reliability and accuracy: What are the variables?",
+      "narrationCue": "pH / colour / Validity / Reliability / Accuracy",
+      "motionPurpose": "On the spoken cues: The card dims; three cards write in turn, the previous one dimming: \"Validity: measures what it should? One batch; water control; equal drops.\" \"Reliability: repeats agree? Repeat wells and three cycles give the same colours.\" \"Accuracy: close to the true pH? Chart: about ±1 unit. Calibrated meter: within a few hundredths.\" A small grey footer: \"Reliability means: repeated measurements under identical circumstances",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone: on \"pH\" \"Independent: pH of the solution\"; on \"colour\" \"Dependent: colour of the extract\"; then \"Controlled: same extract batch, 3 drops, about 1 mL of solution, white tile, same lighting\". The card dims; three cards write in turn, the previous one dimming: \"Validity: measures what it should? One batch; water control; equal drops.\" \"Reliability: repeats agree? Repeat wells and three cycles give the same colours.\" \"Accuracy: close to the true pH? Chart: about ±1 unit. Calibrated meter: within a few hundredths.\" A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\" (same wording as P02 and P03). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its plate small in the hazard cell: \"hot water (near boiling)\" (`m6-conical-flask-hotplate-v1.png`) / \"scalds\" / \"teacher prepares; heat-resistant beaker; cool before use\"; \"knife\" / \"cuts\" / \"teacher chops the cabbage\"; \"0.10 mol/L HCl (0.36 %): low hazard at this concentration\" / \"eye irritation from a splash\" / \"safety glasses; rinse with plenty of water\"; on \"irritant\" the NaOH row writes: \"0.10 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses; rinse splashes with plenty of water (`m6-wash-bottle-v1.png`); separate labelled droppers\"; \"buffer solutions\" / \"see each SDS\" / \"safety glasses; follow the label\"; \"cabbage extract\" / \"stains skin and clothing\" / \"wipe spills; no tasting in the laboratory\"; \"waste\" / \"none at these strengths\" / \"dilute to the sink with plenty of water, if school rules allow; solids in the bin\".",
+      "teachingReason": "The risk assessment: Before you start, the risk assessment.",
+      "narrationCue": "scald / irritant / stains",
+      "motionPurpose": "On the spoken cues: Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; gloves (`m5x-gloves-v1.png`) small with grey tag \"optional, per school (stains)\". Footer chip: \"follow your school's risk assessment and each safety data sheet\". Rows dim as each new row writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its plate small in the hazard cell: \"hot water (near boiling)\" (`m6-conical-flask-hotplate-v1.png`) / \"scalds\" / \"teacher prepares; heat-resistant beaker; cool before use\"; \"knife\" / \"cuts\" / \"teacher chops the cabbage\"; \"0.10 mol/L HCl (0.36 %): low hazard at this concentration\" / \"eye irritation from a splash\" / \"safety glasses; rinse with plenty of water\"; on \"irritant\" the NaOH row writes: \"0.10 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses; rinse splashes with plenty of water (`m6-wash-bottle-v1.png`); separate labelled droppers\"; \"buffer solutions\" / \"see each SDS\" / \"safety glasses; follow the label\"; \"cabbage extract\" / \"stains skin and clothing\" / \"wipe spills; no tasting in the laboratory\"; \"waste\" / \"none at these strengths\" / \"dilute to the sink with plenty of water, if school rules allow; solids in the bin\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; gloves (`m5x-gloves-v1.png`) small with grey tag \"optional, per school (stains)\". Footer chip: \"follow your school's risk assessment and each safety data sheet\". Rows dim as each new row writes. Hold about 3 seconds (reading hold; the table returns in the key notes). Hold about 3 seconds (reading hold; the table returns in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold; the table returns in the key notes)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the aid writes large and handwritten: \"Steep.",
+      "teachingReason": "Memory aid: Three words for this practical: steep, chart, cycle.",
+      "narrationCue": "steep, chart, cycle",
+      "motionPurpose": "On the spoken cues: Chart. Cycle.\" Under each word a small icon: the steeping beaker thumbnail; the colour chart strip thumbnail; the red-green-red loop around one beaker. Condition tag: \"cycle one sample, not fresh wells\".",
+      "motionRole": "explain",
+      "onScreenChange": "the aid writes large and handwritten: \"Steep. Chart. Cycle.\" Under each word a small icon: the steeping beaker thumbnail; the colour chart strip thumbnail; the red-green-red loop around one beaker. Condition tag: \"cycle one sample, not fresh wells\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student adds three drops of",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A student adds 3 drops of red cabbage extract to each of three wells. Well A contains dilute hydrochloric acid, well B contains distilled water and well C contains dilute sodium hydroxide solution. Well A turns red, well B stays purple but is slightly paler than the extract, and well C turns green. (a) Explain why the student included well B. (b) Describe a test the student could carry out to show that the colour change of the extract is reversible.\" Beside it the well plate with three coded wells, labelled \"A\", \"B\", \"C\" only, filled red, pale purple and green. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no loop arrow, no droppers, no \"control\" tag.",
+      "motionTools": [
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "control / one sample",
+      "motionPurpose": "On the spoken cues: On \"control\" \"well B contains distilled water\" and \"slightly paler than the extract\" are underlined; answer box (a) fills \"B = control: dilution only pales it; red and green come from acid and base\". On \"one sample\" \"show that the colour change of the extract is reversible\" is underlined; the cycle beaker thumbnail returns with its loop arrow and tracker; answer box (b) fills \"one sample: base until green, acid",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"control\" \"well B contains distilled water\" and \"slightly paler than the extract\" are underlined; answer box (a) fills \"B = control: dilution only pales it; red and green come from acid and base\". On \"one sample\" \"show that the colour change of the extract is reversible\" is underlined; the cycle beaker thumbnail returns with its loop arrow and tracker; answer box (b) fills \"one sample: base until green, acid until red; repeat 3 times; same colours return\". On \"fresh wells\" a chip \"test acid and base again in fresh wells\" fades in and is crossed (caption \"fresh wells show each colour, not a reversal\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "question card, worded as printed: \"A student made a colour chart for her red cabbage extract using buffer solutions: pH 2 red, pH 4 pink, pH 6 violet, pH 7 purple, pH 8 blue, pH 10 blue-green, pH 12 green.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more. Her colour chart reads: red at",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student made a colour chart for her red cabbage extract using buffer solutions: pH 2 red, pH 4 pink, pH 6 violet, pH 7 purple, pH 8 blue, pH 10 blue-green, pH 12 green. Three drops of the extract turned a solution of baking soda blue, with a slight green tint. (a) Estimate the pH of the baking soda solution. (b) Assess the accuracy of this method compared with a calibrated pH meter.\" Beside it the coded chart strip (seven swatches with labels) and `m6-baking-soda-box-v1.png` small with a well of blue, faintly green liquid. The full question and chart stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no arrow onto the chart, no meter.",
+      "motionTools": [
+        "DrawPath",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "on \"eight to nine\" \"blue, with a slight green tint\" is underlined; an arrow from the sample well lands on the chart between the pH 8 and pH 10 swatches, nearer 8; answer box (a) fills \"about pH 8 to 9\".",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "eight to nine / accurate",
+      "motionPurpose": "On the spoken cues: On \"accurate\" \"pH 8 blue, pH 10 blue-green\" are underlined (the step), `m6-ph-meter-probe-beaker-v1.png` appears small with readout \"8.34\"; answer box (b) fills \"less accurate: steps 2 units wide, colour judged by eye; a calibrated meter is within a few hundredths\". On \"eight point zero\" a chip \"pH = 8.0\" fades in and is crossed (caption \"a colour match gives a range\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"eight to nine\" \"blue, with a slight green tint\" is underlined; an arrow from the sample well lands on the chart between the pH 8 and pH 10 swatches, nearer 8; answer box (a) fills \"about pH 8 to 9\". On \"accurate\" \"pH 8 blue, pH 10 blue-green\" are underlined (the step), `m6-ph-meter-probe-beaker-v1.png` appears small with readout \"8.34\"; answer box (b) fills \"less accurate: steps 2 units wide, colour judged by eye; a calibrated meter is within a few hundredths\". On \"eight point zero\" a chip \"pH = 8.0\" fades in and is crossed (caption \"a colour match gives a range\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Steep in hot water, filter, cool; record the colour.\"",
+      "teachingReason": "Decision rule and handoff: So: steep and filter the extract, chart its colours against known pH with equal drops, use a water control, and cycle one sample to show the change is reversible.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Chart: equal drops into solutions of known pH.\" \"3 Water control: dilution alone.\" \"4 Cycle one sample three times: same colours return.\" On \"Next\" a chip \"Next: what titration curves and conductivity graphs reveal\" appears with `m6-burette-clamp-stand-v1.png` small.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Steep in hot water, filter, cool; record the colour.\" \"2 Chart: equal drops into solutions of known pH.\" \"3 Water control: dilution alone.\" \"4 Cycle one sample three times: same colours return.\" On \"Next\" a chip \"Next: what titration curves and conductivity graphs reveal\" appears with `m6-burette-clamp-stand-v1.png` small. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p01c-learning-review.md",
+      "sha256": "cf3e21c46bec032e39923347fef8a01f274e55106908f825e970768868684490"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p01c-claude-science-check.md",
+      "sha256": "9154ca20b35ea7d2ef233d9c48d37a9abe00e47423f15ff05573daaf3202a761"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

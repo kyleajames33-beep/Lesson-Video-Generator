@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-P01-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6p01c/lesson.json",
+  "lessonSha256": "78a5f3d8998ce225f972e90b8c782d3d9cdd0e170369aa8df9cd1b419c558206",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6p01c/lesson.production-brief.json",
+    "sha256": "1822790ca5d641568b2997aee685a3b1f9b47381f38a04be4a3126f8855bf198"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here's a beaker of purple juice from a red cabbage. Add a few drops of acid, and it turns red. Add a base, and it turns green. Add acid again, and the red comes back. So can you make a working indicator from a vegetable? And how would you show that its colour change really runs both ways?",
+      "hash": "363364117acc",
+      "textSha256": "363364117accc39d94df0e9370e7fcf3bd31033c11c10fa70c8ba17c8f9714df",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/hook.363364117acc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/hook.363364117acc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/hook.363364117acc.generation.json",
+      "plannedRequestSha256": "3773bb69ddf11d6100b2f5ecaf53c7b94510f1003828d63ad344487afcf93b03"
+    },
+    {
+      "id": "pigments",
+      "parentSceneId": "pigments",
+      "text": "The purple comes from pigments called anthocyanins, stored inside the cabbage's cells, and they dissolve in water. Each one behaves like H In from the indicator video: a weak acid whose forms have different colours. But each can lose more than one proton, and the extract is a mix of several of them, so it passes through several colours, blending gradually, not just two.",
+      "hash": "ed0d6b8d4739",
+      "textSha256": "ed0d6b8d4739228a7254d1a955122715f976cf303d95f6671509d9fcd2cdfdac",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/pigments.ed0d6b8d4739.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/pigments.ed0d6b8d4739.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/pigments.ed0d6b8d4739.generation.json",
+      "plannedRequestSha256": "6fa78dfddf13684c5c00af5cedab68a377b5d7e9a8d5d89d6a7424f40bb75ae1"
+    },
+    {
+      "id": "prepare",
+      "parentSceneId": "prepare",
+      "text": "To prepare it, your teacher chops about twenty grams of cabbage and covers it with a hundred millilitres of hot water for ten minutes. Heat damages the membranes in the cabbage cells, the thin layers that hold the pigment in, so the pigment leaks out faster. Then filter off the solids, so you're looking at the solution, not bits of leaf, and let it cool. Record its starting colour: purple.",
+      "hash": "b90e8c9997b9",
+      "textSha256": "b90e8c9997b9f034e9afe6d5d32018f7ee5384201311ee6dc5a8b020b0bb9714",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/prepare.b90e8c9997b9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/prepare.b90e8c9997b9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/prepare.b90e8c9997b9.generation.json",
+      "plannedRequestSha256": "37284cf1acb2111bc3d4e33165b4c3e637c1a66791bfbbf18c47fcd41880d09c"
+    },
+    {
+      "id": "calibrate",
+      "parentSceneId": "calibrate",
+      "text": "Next, find out what each colour means. Put about twenty drops of solutions of known pH, from two to twelve, into a row of wells on a white tile. Buffers work well, checked with a pH meter. Then add three drops of extract to every well. Colour depth depends on how much pigment is there, and you're comparing colour, so the amount must stay the same.",
+      "hash": "55acd41bf659",
+      "textSha256": "55acd41bf6594db404754d7ad21e2a23b30c8f7db557903cc8e611435dbcd7f8",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/calibrate.55acd41bf659.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/calibrate.55acd41bf659.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/calibrate.55acd41bf659.generation.json",
+      "plannedRequestSha256": "e8836f5fc7022d9b974772b94ceda233c15cbe76b05fff644a5e6b66979c50ff"
+    },
+    {
+      "id": "colour-chart",
+      "parentSceneId": "colour-chart",
+      "text": "Here's a typical result: red at pH two, pink at four, violet at six, purple at seven, blue at eight, blue-green at ten, and green at twelve. Your batch may differ a little. Notice there isn't one colour change but several, each spread across a couple of pH units. And your chart is only as precise as its spacing: wells two units apart give you pH to within a unit or so.",
+      "hash": "ace6ed63608e",
+      "textSha256": "ace6ed63608ee57282f72ef3d1c77de9a419196b23c60834e437de3da7125553",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/colour-chart.ace6ed63608e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/colour-chart.ace6ed63608e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/colour-chart.ace6ed63608e.generation.json",
+      "plannedRequestSha256": "da9bb0863cb45d05a9694fd1fa97faee1aba1aceb3a314cea18f16b5fc03fa17"
+    },
+    {
+      "id": "water-control",
+      "parentSceneId": "water-control",
+      "text": "Now test the extract in three wells: dilute hydrochloric acid, distilled water, and dilute sodium hydroxide. Why the water? Adding any liquid dilutes the pigment, so the colour gets paler. The water well shows that paler purple. So if a well turns red or green, the acid or base is causing it, not dilution.",
+      "hash": "2fb8b366a09e",
+      "textSha256": "2fb8b366a09e90d3cbe1b65b95f159328ff2b0896c085afd80cec8702f05969b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/water-control.2fb8b366a09e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/water-control.2fb8b366a09e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/water-control.2fb8b366a09e.generation.json",
+      "plannedRequestSha256": "3534f3d0e5e544c485c6ef382d52404cd35e0a8c61f9f1359d9c5dcad0311ad0"
+    },
+    {
+      "id": "cycle",
+      "parentSceneId": "cycle",
+      "text": "Now the key test. Put two millilitres of extract in a small beaker and add acid until it's red. Then add sodium hydroxide, drop by drop, until it just turns green. Then acid again, until it's red. Base removes hydronium, so the pigment's equilibrium shifts to the forms that have lost protons, and acid shifts it back. Run the cycle three times, in the same beaker.",
+      "hash": "ebc9c730173f",
+      "textSha256": "ebc9c730173f8eea155cb3703773c7d9d8ff232cec04626146e2480dcd484b4d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/cycle.ebc9c730173f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/cycle.ebc9c730173f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/cycle.ebc9c730173f.generation.json",
+      "plannedRequestSha256": "524ebbac424c3b0a22681b2e0c00a507da5b07f7857c50b22f50c8e29560af74"
+    },
+    {
+      "id": "same-sample",
+      "parentSceneId": "same-sample",
+      "text": "Why the same sample? Fresh wells only show each colour separately. One sample going back and forth shows the reaction runs both ways. Three cycles check that you didn't misread a single return. The colour gets paler each time, because the sample keeps getting diluted, but the same two colours keep returning. That's evidence the pigment isn't being used up.",
+      "hash": "7a6f00d60856",
+      "textSha256": "7a6f00d608563a2c4e73d8978e9027290df8550b5c72340b5cec20341947b7ca",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/same-sample.7a6f00d60856.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/same-sample.7a6f00d60856.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/same-sample.7a6f00d60856.generation.json",
+      "plannedRequestSha256": "8453747f61c1d131fa8bcd67cc7c44243fa4f1cf5530c993aa6b8f09f204fe29"
+    },
+    {
+      "id": "no-return",
+      "parentSceneId": "no-return",
+      "text": "But a colour that doesn't come back is a warning. If a green sample sits in strong base, like well C, for a long time, it can turn yellow, and acid may not bring the red back. That's a different kind of reaction: the pigment molecules change shape and start to break down. So add base only until it just turns green, and run the cycle straight away.",
+      "hash": "af45d117c22e",
+      "textSha256": "af45d117c22e2c71e49f9abc4d1a7d8a79b41b66084b0a480959b165ea67760d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/no-return.af45d117c22e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/no-return.af45d117c22e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/no-return.af45d117c22e.generation.json",
+      "plannedRequestSha256": "463691a848c61277f240358d567ac86aca2097fbcd1796e8749630b4ce747a64"
+    },
+    {
+      "id": "use-and-limits",
+      "parentSceneId": "use-and-limits",
+      "text": "Now use your chart. Vinegar turns the extract pink-red: somewhere between pH two and four. An ammonia cleaner turns it green: about eleven or twelve. Check each against a pH meter. But for a titration, cabbage is a poor choice. Its colour changes gradually, in steps, right across the scale, and a titration needs one sharp change inside the jump.",
+      "hash": "bd21bd9c6a66",
+      "textSha256": "bd21bd9c6a6687308cb2ad35d966fa61724e2fff6e7725b40e76eaf4c8cf43be",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/use-and-limits.bd21bd9c6a66.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/use-and-limits.bd21bd9c6a66.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/use-and-limits.bd21bd9c6a66.generation.json",
+      "plannedRequestSha256": "a46e04048ee28f6c781be4c4927815fbf36254d20f0e25452ba255abb78f8d0c"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "What are the variables? You change the pH of the solution, and you observe the colour. Keep the extract batch, the number of drops, the volume of solution and the lighting the same. Validity: one batch of extract and the water well mean the colour change comes from the pH alone. Reliability: repeat wells, and repeat cycles, give the same colours. Accuracy: a colour estimate is good to about a pH unit, and a calibrated meter does much better.",
+      "hash": "eee25d2293c2",
+      "textSha256": "eee25d2293c2b94ba3920587b49eec46086cb0cb5740890d359c20be6f866f73",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/validity-reliability.eee25d2293c2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/validity-reliability.eee25d2293c2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/validity-reliability.eee25d2293c2.generation.json",
+      "plannedRequestSha256": "759b96c74b2be8147b0808c98feef078d444900a22db8cf628efb1957332177c"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "Before you start, the risk assessment. The hot water can scald and the knife can cut, so your teacher prepares and cools the extract. The point one zero moles per litre acid is low hazard, but the sodium hydroxide sits just under the irritant limit, so treat a splash as harmful: wear safety glasses and rinse any splash with plenty of water. The extract stains skin and clothes, and nothing here gets tasted.",
+      "hash": "8460b6d99161",
+      "textSha256": "8460b6d99161dc7b2e0324104612252c40d89b31f31b2c7f35abbd4af83271be",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/risk-assessment.8460b6d99161.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/risk-assessment.8460b6d99161.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/risk-assessment.8460b6d99161.generation.json",
+      "plannedRequestSha256": "58cc8d043064d6831ef5712b50dbac2311e9e1b533b29b5cdf047f0db93593eb"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Three words for this practical: steep, chart, cycle. Steep the cabbage to make the extract, chart its colours against known pH, and cycle one sample from acid to base and back to show the change is reversible.",
+      "hash": "e673e50446dc",
+      "textSha256": "e673e50446dc84e630dab3bcc304ebba8d64e5ed58c22263bb13d7a428ce5efc",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/memory-aid.e673e50446dc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/memory-aid.e673e50446dc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/memory-aid.e673e50446dc.generation.json",
+      "plannedRequestSha256": "285ede3fabb3e5d5d8966dd470e22a516ef7feec9752ee556c42e8ade11294c4"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student adds three drops of extract to three wells: dilute hydrochloric acid, distilled water, and dilute sodium hydroxide. They turn red, a paler purple, and green. Explain why she included the water well, and describe a test that would show the colour change is reversible. Pause here to answer.",
+      "hash": "9ca6bef6f18e",
+      "textSha256": "9ca6bef6f18efad9dd5c7fed6230aef07a090afdc3d1a5aa31e76b630d4e77c8",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/attempt-1.9ca6bef6f18e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/attempt-1.9ca6bef6f18e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/attempt-1.9ca6bef6f18e.generation.json",
+      "plannedRequestSha256": "fec6cb4ff33c8d9c7ad70c5cc598d76abcc76abcc6909a02b555aa3d4abc5b53"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The water well is the control: it shows that dilution alone only makes the purple paler. So the red and green come from the acid and base. For reversibility, take one sample, add base until it's green, then acid until it's red, and repeat three times. Testing again in fresh wells only shows each colour separately.",
+      "hash": "02c147405e50",
+      "textSha256": "02c147405e502edf5f5880222c118c96e0ab7082081a020494db310128516bfd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/feedback-1.02c147405e50.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/feedback-1.02c147405e50.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/feedback-1.02c147405e50.generation.json",
+      "plannedRequestSha256": "536ca1989f52a895931c2ee80ea6a530b3c75f9ecfcedceefe53943ff5573b65"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. Her colour chart reads: red at two, pink at four, violet at six, purple at seven, blue at eight, blue-green at ten and green at twelve. A baking soda solution turns the extract blue, with a slight green tint. Estimate its pH, and assess the accuracy of this method compared with a calibrated pH meter. Pause here to answer.",
+      "hash": "8f81b49ed2e3",
+      "textSha256": "8f81b49ed2e329ddb9a4269b0343d9bb2401161e93acc34b261f38934266140f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/attempt-2.8f81b49ed2e3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/attempt-2.8f81b49ed2e3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/attempt-2.8f81b49ed2e3.generation.json",
+      "plannedRequestSha256": "82f2d741be4e29be4edb662f1cc1f9599266d8a683fb44d03488423c62df5cc9"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The colour sits between the blue at eight and the blue-green at ten, closer to blue: about eight to nine. That's a range, not a value. The chart's steps are two units wide, and the colour is judged by eye, so it's less accurate than a calibrated meter, which reads eight point three four here. Writing exactly eight point zero claims more than a colour can show.",
+      "hash": "98ee49b6c1d9",
+      "textSha256": "98ee49b6c1d935e4337c31ba2ccd80ddc89fd73643d3d42dc7e141d7e933be34",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/feedback-2.98ee49b6c1d9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/feedback-2.98ee49b6c1d9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/feedback-2.98ee49b6c1d9.generation.json",
+      "plannedRequestSha256": "020e2ed328e0e01b96f0efe5eb214931d3b6e9a8a78a99bfdf5a8175cc408b4a"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: steep and filter the extract, chart its colours against known pH with equal drops, use a water control, and cycle one sample to show the change is reversible. Next: what a whole titration curve, and a conductivity graph, can tell you.",
+      "hash": "5cf0e13f8524",
+      "textSha256": "5cf0e13f8524b97e859844ce3ad2015a9ed93cc17a93d2587084c8f20d3810f1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/decision-rule.5cf0e13f8524.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/decision-rule.5cf0e13f8524.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/decision-rule.5cf0e13f8524.generation.json",
+      "plannedRequestSha256": "bd90f7414f793087ab820c93e97125e99ca87847cb4d049000455271d49e7ed8"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P01-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

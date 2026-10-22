@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-P07-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6p07/lesson.json",
+  "lessonSha256": "5a4edf1a264fbf4cac79dd71f8d832bb1b8b5a5ec1f7faa750e2e4d2b94fd736",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6p07/lesson.production-brief.json",
+    "sha256": "dec40c89f5aa400c7db18107df6b77773f5fa7947d8dc9f17a3724a4393ffd5d"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A pH probe reads this white vinegar at two point four six. Dilute it ten times, and it reads two point nine six. Same vinegar, two different pH values, and neither one measures how much acid is in the bottle. So how do you analyse a household sample so that every number you report means what you say it means?",
+      "hash": "2d613f9d9959",
+      "textSha256": "2d613f9d995956dc80a63dc4c1fb539b82e28755c61d1a7f94f4cffb6b74793f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/hook.2d613f9d9959.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/hook.2d613f9d9959.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/hook.2d613f9d9959.generation.json",
+      "plannedRequestSha256": "c4ce7fabd6183977b4257d2a906fdf48bd308f1f85346c6626c835173901d362"
+    },
+    {
+      "id": "two-questions",
+      "parentSceneId": "two-questions",
+      "text": "Start with the questions. How acidic is the vinegar right now? That's its pH, from a calibrated probe. How much acid does it hold in total? That's an amount, so it needs a titration. White vinegar is clear and reacts quickly, so a direct titration with phenolphthalein fits.",
+      "hash": "f7bcc7e330d0",
+      "textSha256": "f7bcc7e330d0aacb808e1ddfff9a081ce33af879da86eade29df49b7c7d2f192",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/two-questions.f7bcc7e330d0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/two-questions.f7bcc7e330d0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/two-questions.f7bcc7e330d0.generation.json",
+      "plannedRequestSha256": "aa65f12f234c2cfe3c614edc748d6c0fc852e562cb105329372969a1be1d345b"
+    },
+    {
+      "id": "ph-first",
+      "parentSceneId": "ph-first",
+      "text": "Measure the pH first. Calibrate the probe with a pH seven buffer and, because vinegar reads below four, a pH two buffer, so its reading falls between them. A pH value describes the solution the probe is sitting in, so read the vinegar straight from the bottle, undiluted. Three readings agree, so report two point four six.",
+      "hash": "ca0608944ae6",
+      "textSha256": "ca0608944ae697fa0b801ddcd8daeba72008cf385ca90a7d573edb814267dcbc",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/ph-first.ca0608944ae6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/ph-first.ca0608944ae6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/ph-first.ca0608944ae6.generation.json",
+      "plannedRequestSha256": "305b686304fac76827dcebc9ce06f6f70bc1ebfa14e5bbec20e128de247d607d"
+    },
+    {
+      "id": "plan-from-label",
+      "parentSceneId": "plan-from-label",
+      "text": "Now the amount. The label says four percent acidity: about four grams of ethanoic acid in every hundred millilitres, so about zero point six seven moles per litre. The school's sodium hydroxide is about zero point one moles per litre. A twenty five millilitre aliquot of neat vinegar would need about a hundred and seventy millilitres of it, more than three burette fills.",
+      "hash": "9ac017ae546f",
+      "textSha256": "9ac017ae546fc257f1209ebe9bb2e6525c51220011f26a9f4b7d8a4b5d308dcd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/plan-from-label.9ac017ae546f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/plan-from-label.9ac017ae546f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/plan-from-label.9ac017ae546f.generation.json",
+      "plannedRequestSha256": "8db197b6917565bec6260d8d0525d6d7b41bc797b7cac92898bcb1fceec0a741"
+    },
+    {
+      "id": "dilute",
+      "parentSceneId": "dilute",
+      "text": "You could use a stronger base, but half molar sodium hydroxide counts as corrosive in school safety guides. Instead, dilute the vinegar ten times. Pipette twenty five millilitres into a two hundred and fifty millilitre volumetric flask, make it up to the mark. The acid's moles don't change, they're just spread out, so you'll multiply by ten at the end. Now each titre should be about seventeen millilitres.",
+      "hash": "e466de5b8b0b",
+      "textSha256": "e466de5b8b0bb7b0b7275a685d2dde76b54ebfbfe53a5a2dd3a36d0707e60a4a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/dilute.e466de5b8b0b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/dilute.e466de5b8b0b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/dilute.e466de5b8b0b.generation.json",
+      "plannedRequestSha256": "7955c682f1d28115fb1ea43eb997e7b0af948fb926c95ebc46f70b48b73ec86e"
+    },
+    {
+      "id": "titrate",
+      "parentSceneId": "titrate",
+      "text": "The sodium hydroxide was standardised, because it absorbs carbon dioxide from the air: zero point zero nine nine four zero moles per litre. Pipette twenty five millilitre aliquots of the diluted vinegar and add two drops of phenolphthalein. Stop at the first faint pink that lasts thirty seconds.",
+      "hash": "9a0fb9fe67aa",
+      "textSha256": "9a0fb9fe67aa3ad1e6d23d46012b833856612b5dee386843859c4b5148f9fc7e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/titrate.9a0fb9fe67aa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/titrate.9a0fb9fe67aa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/titrate.9a0fb9fe67aa.generation.json",
+      "plannedRequestSha256": "32cf94f6d0699295c97c1f80f47cc826c38a142d547124fe9af830830c454d45"
+    },
+    {
+      "id": "results",
+      "parentSceneId": "results",
+      "text": "The rough run went to about seventeen point four. The accurate titres were seventeen point zero five, seventeen point one zero and seventeen point one five, all within zero point one zero, so the mean is seventeen point one zero millilitres.",
+      "hash": "1c87e389b84e",
+      "textSha256": "1c87e389b84ecb1a12f63304b4f07cfe304a2a8bea3f24c0cf07088bb90c75a7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/results.1c87e389b84e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/results.1c87e389b84e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/results.1c87e389b84e.generation.json",
+      "plannedRequestSha256": "9d5257a1acf8953435c42e353493c414650d30deb98e4153902efcc9861b8041"
+    },
+    {
+      "id": "calculation",
+      "parentSceneId": "calculation",
+      "text": "Ethanoic acid reacts one to one with sodium hydroxide. So the moles of hydroxide, one point six nine nine seven times ten to the minus three, equal the moles of acid in the aliquot. Divide by zero point zero two five zero zero litres: zero point zero six seven nine nine moles per litre in the diluted vinegar. Times ten for the dilution: the vinegar is zero point six seven nine nine moles per litre.",
+      "hash": "4d8253926d51",
+      "textSha256": "4d8253926d513c068cbd4c81c891b8feb5553689f6c0bb32790f5f77322cf27c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/calculation.4d8253926d51.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/calculation.4d8253926d51.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/calculation.4d8253926d51.generation.json",
+      "plannedRequestSha256": "260ddf326e1b361d7a0888a5681be44c38e980437a01fd202c4c2d1b7828eab0"
+    },
+    {
+      "id": "report-label",
+      "parentSceneId": "report-label",
+      "text": "The label's four percent means about four grams per hundred millilitres, so convert. Zero point six seven nine nine moles per litre, times sixty point zero five grams per mole, is forty point eight three grams per litre. That's four point zero eight three grams per hundred millilitres, just over the label's four grams, so it's close.",
+      "hash": "ad22adbde505",
+      "textSha256": "ad22adbde5051c4f33dd4ec5bdd47b4626777633d22bf2008b2bf713227f685e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/report-label.ad22adbde505.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/report-label.ad22adbde505.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/report-label.ad22adbde505.generation.json",
+      "plannedRequestSha256": "ad99813768c38fb5465765316ce8e9da45b6f897606c245f81a90e78264deed6"
+    },
+    {
+      "id": "two-results",
+      "parentSceneId": "two-results",
+      "text": "The pH says how acidic the vinegar is. The grams per hundred millilitres say how much acid it holds. And they fit together: with K a, zero point six eight moles per litre of ethanoic acid predicts a pH of about two point four six. Why not run that backwards? A reading just zero point zero one out shifts the answer by about five percent. The titration counts every acid that reacts with hydroxide, so report it as titratable acidity, as ethanoic acid.",
+      "hash": "1272ed073e60",
+      "textSha256": "1272ed073e60ec23a10db57f5bd50be12f16906155e417abe0e179032614af00",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/two-results.1272ed073e60.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/two-results.1272ed073e60.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/two-results.1272ed073e60.generation.json",
+      "plannedRequestSha256": "ea9c521e719e9f934a4fd7a47c826e35598f786f9ebbe9d074e3f2d9d15101e2"
+    },
+    {
+      "id": "limitations",
+      "parentSceneId": "limitations",
+      "text": "Then report the limits. This result describes the tested bottle. More bottles must be sampled to describe the batch or brand. A few other acids could add to the titre. A percentage by mass would also need the vinegar's density. And pH changes with temperature, so record the temperature.",
+      "hash": "7829f5613f79",
+      "textSha256": "7829f5613f7901863d0f28f637682d91b50102dd565efb2299e08f51e8bebefb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/limitations.7829f5613f79.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/limitations.7829f5613f79.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/limitations.7829f5613f79.generation.json",
+      "plannedRequestSha256": "2718a09b1a30097194b682456651f5fa28e667fdd1df87159e79c9daabe6febf"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Validity: the titration measures the total acid, because vinegar is clear, it reacts one to one and the endpoint is close to equivalence. And the pH was measured on the sample itself. Reliability: three concordant titres, and three pH readings that agree. Accuracy: standardised base, volumetric glassware, and a probe calibrated with buffers either side of the sample.",
+      "hash": "680dc9b960ff",
+      "textSha256": "680dc9b960ff60dfaf0309ce07f11311ea19a037b6306198b44d0784f0985b42",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/validity-reliability.680dc9b960ff.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/validity-reliability.680dc9b960ff.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/validity-reliability.680dc9b960ff.generation.json",
+      "plannedRequestSha256": "45ae6904a5789f27c0eb80c6226889fd0e3667fe9c83f15f02c5f36bf128341d"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. This sodium hydroxide sits just under the irritant limit, so treat a splash as harmful and wear safety glasses. Vinegar this dilute isn't classified, but never taste lab samples. Phenolphthalein solution is usually made with ethanol, so it's flammable, and phenolphthalein itself is classified as a substance that may cause cancer. So use two drops, and keep it capped and away from flames. Use a pipette filler.",
+      "hash": "cc34d0deb386",
+      "textSha256": "cc34d0deb38630c5da296a9bb429c7e1577bd4aa2624a6ea6271b76dcae5d8b3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/risk-assessment.cc34d0deb386.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/risk-assessment.cc34d0deb386.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/risk-assessment.cc34d0deb386.generation.json",
+      "plannedRequestSha256": "22feab977f495d873ea911886d428ba5a5090cd95e04115dd285670502630dc9"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A cleaning vinegar is labelled six percent acidity. A student plans to titrate twenty five millilitre aliquots of it, undiluted, with zero point zero nine nine four zero moles per litre sodium hydroxide from a fifty millilitre burette. Use the label to estimate the titre, and explain how the plan should change. Pause here to answer.",
+      "hash": "3411e6582595",
+      "textSha256": "3411e6582595819fbff0356ab46672bb4eb43c59e68abb488f0d46bd8d61ea94",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/attempt-1.3411e6582595.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/attempt-1.3411e6582595.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/attempt-1.3411e6582595.generation.json",
+      "plannedRequestSha256": "185faca105869e243e26ea60da7026b82e5e0292192103b2a4c1980cdab3048e"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Six grams per hundred millilitres is about one mole per litre. Twenty five millilitres holds about zero point zero two five moles, so it needs about two hundred and fifty millilitres of base, five burette fills. Dilute it ten times first, or pipette a tenth as much, and the titre drops to about twenty five. Refilling five times isn't the fix: every refill adds two more readings to get wrong.",
+      "hash": "99004127b412",
+      "textSha256": "99004127b412a1e4450eeba2fc87b2346cbb13c135609939fbccaf6dabad9a4f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/feedback-1.99004127b412.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/feedback-1.99004127b412.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/feedback-1.99004127b412.generation.json",
+      "plannedRequestSha256": "7a5bc683359760f623f6485b4cae68c0691315b6779eb88977ee7acbfbd935a1"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more, this time a base. A student analyses a household ammonia cleaner. She pours some into an open beaker and leaves it on the bench for forty minutes. Then she dilutes a sample and titrates it with standardised hydrochloric acid. Explain the effect on her calculated concentration of ammonia in the cleaner. Pause here to answer.",
+      "hash": "37df26e2102d",
+      "textSha256": "37df26e2102d2588a15e6335f2c302c538d6e96f7e7db6f57aa9fbc5ef3f909e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/attempt-2.37df26e2102d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/attempt-2.37df26e2102d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/attempt-2.37df26e2102d.generation.json",
+      "plannedRequestSha256": "3a4856b81e80b265f40b30971402b171b5a69acdc81c76d9dfa13446f747f34f"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Ammonia is a gas dissolved in water, and some of it escapes from an open beaker. So her sample holds fewer moles of ammonia than the bottle does. Fewer moles need less acid, so the titre is smaller, and her result is too low for the cleaner in the bottle. Saying water evaporates, so it's too high, misses that ammonia leaves much faster.",
+      "hash": "e72b3ac0abf3",
+      "textSha256": "e72b3ac0abf3d5dfe832be246710b90c1f0e52f971de79ee9858759f2ed1ff05",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/feedback-2.e72b3ac0abf3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/feedback-2.e72b3ac0abf3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/feedback-2.e72b3ac0abf3.generation.json",
+      "plannedRequestSha256": "1c99d702ae85f5876a2132c2a53e6da35c6919665c95f03b385516a8ebcc8888"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, to analyse a household sample: ask whether you need its pH, an amount, or both. Measure pH on the sample as it is. Plan the titre from the label, dilute if you need to, then scale back up. Report each result in its own units, with its limits. Next: Module 7, organic chemistry.",
+      "hash": "35e3eb1d40aa",
+      "textSha256": "35e3eb1d40aa6101b19be8faadeb7dd768d85ce1ad4a1951dafac80999368fba",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/decision-rule.35e3eb1d40aa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/decision-rule.35e3eb1d40aa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/decision-rule.35e3eb1d40aa.generation.json",
+      "plannedRequestSha256": "3b3e665e6347d5f49d7488b6d50780f94bf6eea40b6db60e6647dfacf398e77c"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P07-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-P02-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6p02/lesson.json",
+  "lessonSha256": "24c23583523964218b69776beb41af70327537a8587241fa3af0e155c41e4c2b",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6p02/lesson.production-brief.json",
+    "sha256": "871668afd62de1eb922868eefe717e343353a06d5a09168819760a9ba1e2824e"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here's an odd thing about this experiment. When you mix an acid and a base in a foam cup, the thermometer doesn't show the highest temperature the mixture could reach. Heat starts escaping the moment it's made, so by the time the reading peaks, some is already gone. That's partly why the last video's answer fell short of minus fifty seven. So how do you set it up, and how do you measure a temperature you never actually see?",
+      "hash": "f146142530fe",
+      "textSha256": "f146142530fe137990911a81dcf87e68e263cae581e08f13025d63b37c915ccb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/hook.f146142530fe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/hook.f146142530fe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/hook.f146142530fe.generation.json",
+      "plannedRequestSha256": "2832ffbf9a9fa1ff799b089859f9e8bf9f0942839a83b59eeaad39c3d37e5cc2"
+    },
+    {
+      "id": "setup",
+      "parentSceneId": "setup",
+      "text": "Here's the set-up. Fifty millilitres of one mole per litre hydrochloric acid goes into a polystyrene foam cup, standing in a beaker so it can't tip. Foam is full of trapped air, so it lets very little heat through: it's an insulator. A lid cuts the heat carried away by warm air and vapour. Measure both solutions with measuring cylinders, because the moles and the mass both come from those volumes.",
+      "hash": "b09c98e3a8dc",
+      "textSha256": "b09c98e3a8dc8c914fa4200f16aaa5bcb5b22976c3b55a5e9898601bec1d9e6e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/setup.b09c98e3a8dc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/setup.b09c98e3a8dc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/setup.b09c98e3a8dc.generation.json",
+      "plannedRequestSha256": "3d2b05530785a2fdd17f83548c393e574b71bdf4d2b001e2a8b07e16ed286bd0"
+    },
+    {
+      "id": "start-temperature",
+      "parentSceneId": "start-temperature",
+      "text": "Before mixing, measure the temperature of each solution, and wait until both are steady. If the acid reads twenty one point four and the base twenty one point six, use the average, twenty one point five, because you're mixing equal volumes. Why bother? A warm base would raise the temperature even with no reaction at all.",
+      "hash": "639a3543e9a1",
+      "textSha256": "639a3543e9a140d127051b304a943fa8daa334db6dc37e47141d31900663628d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/start-temperature.639a3543e9a1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/start-temperature.639a3543e9a1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/start-temperature.639a3543e9a1.generation.json",
+      "plannedRequestSha256": "2369bdcaefcf226cff55ada51e1e4fc87fe03b84e6cca0cad2459b39b0564a61"
+    },
+    {
+      "id": "mix-log",
+      "parentSceneId": "mix-log",
+      "text": "Now pour in the sodium hydroxide quickly, put the lid on, and stir. Read the temperature every thirty seconds, and keep going for several minutes past the peak. It's tempting to stop at the highest reading. But the readings after the peak turn out to be the most useful part.",
+      "hash": "2570acc03671",
+      "textSha256": "2570acc03671e964e7acd3a34eb3e64292999bcd688aecd26906b97c9ecbe2df",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/mix-log.2570acc03671.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/mix-log.2570acc03671.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/mix-log.2570acc03671.generation.json",
+      "plannedRequestSha256": "1c9cc893c86a8b4ad168cfb8fa838b324d004fd255f425b68f0b613c91198298"
+    },
+    {
+      "id": "graph",
+      "parentSceneId": "graph",
+      "text": "Plot temperature against time. The temperature shoots up for about a minute, peaks at twenty seven point eight, then falls slowly in a straight line as the cup loses heat. But the cup was losing heat during the rise as well. So that peak is lower than the temperature the mixture would have reached if no heat had escaped.",
+      "hash": "cf388b9c7c94",
+      "textSha256": "cf388b9c7c943a343d4ce7882f2529cf2b003a3b113a3082d69ba147bdb3f4d1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/graph.cf388b9c7c94.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/graph.cf388b9c7c94.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/graph.cf388b9c7c94.generation.json",
+      "plannedRequestSha256": "339388eb05160f106b4f129e1dc120645f0a4bfb76ca2736e29d25eaa7c7e636"
+    },
+    {
+      "id": "extrapolate",
+      "parentSceneId": "extrapolate",
+      "text": "So draw a straight line through the cooling points, and extend it back to the moment of mixing. Why there? The reaction itself is almost instant, so with no heat lost, the temperature would jump to its peak the moment you mix. Here the line meets twenty eight point one degrees, our best estimate of the temperature with no heat lost. Extending a line past your measured points is called extrapolation. It assumes the cup was losing heat at about the same rate during the rise as afterwards.",
+      "hash": "ce8923e5dbe8",
+      "textSha256": "ce8923e5dbe885ab6d2ecd07e9b8120ecc0d100b26857965a58cd5b41e2af2a6",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/extrapolate.ce8923e5dbe8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/extrapolate.ce8923e5dbe8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/extrapolate.ce8923e5dbe8.generation.json",
+      "plannedRequestSha256": "fda9528409c43d46b2b14f764cb80fc1ad1a5367b9a83796e9597bb6e3a041df"
+    },
+    {
+      "id": "calculate",
+      "parentSceneId": "calculate",
+      "text": "Now the calculation, as in the last video. The rise is twenty eight point one minus twenty one point five, six point six degrees. With one hundred grams of solution, q is about two thousand seven hundred and fifty nine joules. There's zero point zero five zero zero moles of water, so delta H is minus fifty five kilojoules per mole. Using the highest reading instead gives only minus fifty three.",
+      "hash": "062e964b6453",
+      "textSha256": "062e964b6453f3aa0a7de9d70cc13a4093680add3530be3f72cfafff97ed9628",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/calculate.062e964b6453.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/calculate.062e964b6453.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/calculate.062e964b6453.generation.json",
+      "plannedRequestSha256": "d595124925e56fa164d38250dbbed0e1f4c1ddf8f4d23b478afb61bbace458f1"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "So what are the variables? Here you aren't changing anything between runs: you're measuring one value, three times. So the controlled variables matter most: the same concentrations and volumes, the same starting temperature, and the same cup, lid, stirring and timing.",
+      "hash": "d7557a1ecec1",
+      "textSha256": "d7557a1ecec15a6109962964ab48dbdd4fe5d333d4c192c092838db8462fb58f",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/variables.d7557a1ecec1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/variables.d7557a1ecec1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/variables.d7557a1ecec1.generation.json",
+      "plannedRequestSha256": "2ecb1293df075f45ce7dd2abb9527c422752c6c328d0b0d62df5bd77480e41b8"
+    },
+    {
+      "id": "errors",
+      "parentSceneId": "errors",
+      "text": "Why is minus fifty five still short of minus fifty seven? Follow each error through the chain: what it does to delta T, then q, then delta H. Heat escaping through the walls and lid, or soaking into the cup and probe, makes delta T too small, so q is too small, and delta H comes out less negative. Most errors here push the same way, but not every one: if you used only the cooler acid's starting temperature, delta T would come out too big, and delta H too negative. And never write \"human error\". Name the actual cause.",
+      "hash": "6ac90bfb0a30",
+      "textSha256": "6ac90bfb0a306b3ae156aa3953191a75993704938a0937ab271f315f8edd3c93",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/errors.6ac90bfb0a30.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/errors.6ac90bfb0a30.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/errors.6ac90bfb0a30.generation.json",
+      "plannedRequestSha256": "136664b289797a875e6f18c9f147315c22f594c9016d6a1a1b5716f61d91f232"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Now the three words from the equilibrium practical. Validity: does the experiment measure what it's meant to? Here, the rise must come from the reaction alone, with the heat kept in: both starting temperatures averaged, a lidded foam cup, and extrapolation. Reliability: do repeats agree? Three runs gave minus fifty five, minus fifty four and minus fifty six, so they're reliable. Accuracy: how close is it to the accepted value, about minus fifty seven? Repeats can't fix that: heat escapes in every run, so every run comes out low. Cutting heat loss can.",
+      "hash": "4327b9f98592",
+      "textSha256": "4327b9f985927e1be7055200958963114ca55300303ee495b3797fb696022c59",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/validity-reliability.4327b9f98592.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/validity-reliability.4327b9f98592.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/validity-reliability.4327b9f98592.generation.json",
+      "plannedRequestSha256": "2c4c7341d0e147d9fd15f7c48d65f19d21602b72f289ce089a5ec0bcdac83f14"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "Before you start, the risk assessment. One mole per litre sodium hydroxide is corrosive: it can cause severe skin burns and eye damage. So wear safety glasses or goggles, and rinse any splash off with plenty of water. The hydrochloric acid is low hazard at this strength, but keep it out of your eyes too. Stand the cup in a beaker so it can't tip, and stir with the stirrer, not a glass thermometer.",
+      "hash": "6c047c3ca54a",
+      "textSha256": "6c047c3ca54ad52d68c125de10e0ee709ee52b0684286f0253981e6ebecd9cd7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/risk-assessment.6c047c3ca54a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/risk-assessment.6c047c3ca54a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/risk-assessment.6c047c3ca54a.generation.json",
+      "plannedRequestSha256": "68df5c7195bbe7a1634abe4f7c913dd1b6550c0e5af9b8afcb3d1487c2b6be01"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Six words to keep: lid on, log on, line back. A lid keeps more heat in, logging past the peak gives you the cooling line, and drawing that line back finds the temperature you never saw.",
+      "hash": "53091bc717bb",
+      "textSha256": "53091bc717bbbcbeb8359bf6096e580631047cbc5305a7900244bff777dc0947",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/memory-aid.53091bc717bb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/memory-aid.53091bc717bb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/memory-aid.53091bc717bb.generation.json",
+      "plannedRequestSha256": "47ffb9d773b029dcca1e7bda31fe20183c28c0fe50db81771c1baa619b1fd3dd"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Fifty millilitres each of one mole per litre nitric acid and potassium hydroxide, both at twenty point nine degrees, are mixed in a lidded polystyrene cup. The graph shows the readings. Use it to find the temperature change, then calculate the molar enthalpy of neutralisation. Pause here to answer.",
+      "hash": "b3b00836e90e",
+      "textSha256": "b3b00836e90e1a672fb18def3c2ba26790ce54c2829b9481cb9339e7a47c44f5",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/attempt-1.b3b00836e90e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/attempt-1.b3b00836e90e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/attempt-1.b3b00836e90e.generation.json",
+      "plannedRequestSha256": "6b809429ee19d37e5a2be157cd4fc6f6d8a58f27ba180d9f66838708e75293e3"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Draw the cooling line back to time zero: it meets twenty seven point four degrees, so delta T is six point five, and q is two thousand seven hundred and seventeen joules. Divide by zero point zero five zero zero moles of water: delta H is minus fifty four kilojoules per mole. Using the highest reading gives minus fifty two, which ignores the heat already lost.",
+      "hash": "d614d462c113",
+      "textSha256": "d614d462c113cf4764f44c68dee101ec154d6316d33c346cbbdb64a311223b64",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/feedback-1.d614d462c113.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/feedback-1.d614d462c113.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/feedback-1.d614d462c113.generation.json",
+      "plannedRequestSha256": "9abe52a8214d80a4339239b74ede3b3ef48a21633fe7a266a66faf341eb23d75"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. Another student mixes the same hydrochloric acid and sodium hydroxide in an uncovered glass beaker, records the highest temperature on a thermometer, and gets minus forty six kilojoules per mole. Identify the main source of error, explain its effect on the result, and suggest one improvement. Pause here to answer.",
+      "hash": "9a569d069fca",
+      "textSha256": "9a569d069fca908f2e9c23a849dd53452f6bc405eee39cadbc5ee6f5cc9c950d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/attempt-2.9a569d069fca.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/attempt-2.9a569d069fca.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/attempt-2.9a569d069fca.generation.json",
+      "plannedRequestSha256": "5c18bf5066d2836c3ee5036ec27e647f2266737e7d050548fa3425116895d98e"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The main error is heat loss. Glass lets heat through far more easily than foam, the beaker soaks up some heat itself, and the open top lets warm air escape. So the measured rise is too small, q is too small, and delta H is less negative. Improve it with a lidded foam cup, and extrapolate the cooling line back. Writing \"human error\" doesn't name a cause, so nobody can fix it.",
+      "hash": "76afce8be335",
+      "textSha256": "76afce8be335b9e520373933e4722d520e46b9fc4238fd59c27fcb9c389a1e40",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/feedback-2.76afce8be335.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/feedback-2.76afce8be335.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/feedback-2.76afce8be335.generation.json",
+      "plannedRequestSha256": "1627fee6ecb54014f1e034a096dbeb2c9fc3e9e6ef3c9414069f41c80e29f69d"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: insulate and cover the cup, measure and average both starting temperatures, log past the peak, and extrapolate the cooling line back to the moment of mixing. Then trace each error through delta T, q and delta H. Next: where neutralisation solves real problems.",
+      "hash": "1724815cc755",
+      "textSha256": "1724815cc755b55029fb5a06827482c8696f1e008860df6ee7215e5e5366148e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/decision-rule.1724815cc755.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/decision-rule.1724815cc755.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/decision-rule.1724815cc755.generation.json",
+      "plannedRequestSha256": "187d1159c373aa89bf94c556e822e686e25b8e29e04ba2aea19e7f7271dfc75e"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P02-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

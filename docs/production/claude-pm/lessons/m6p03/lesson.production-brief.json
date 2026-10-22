@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6p03/lesson.json",
+    "lessonSha256": "10efc4e1a7d26e9859ef9f69a1371185ae229a60e7fa9c1aa80c3bdaae9f77ab"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m6-c05 (strong and weak; a pH meter reading; lower pH means more hydronium; one pH unit is ten times as many hydronium ions; ammonia is a weak base; NaOH a strong base; compare at the same concentration). chem-m6-c01 (H₃O⁺; acids give protons to water; bases produce OH⁻). chem-m5-p01 (validity, reliability, accuracy in plain words; risk assessment as hazard, harm, control; variables). Stage 5 (the pH scale; universal indicator). Year 11 Module 2 (concentration in mol/L).",
+    "startsWith": "Calibrate a pH meter and choose a range of solutions. The video opens: This pH meter has just been calibrated, and it reads distilled water as five point eight two. Shouldn't pure water be seven? So is the meter faulty?",
+    "stopsAfter": "choosing a range of solutions at one concentration; explaining why a pH meter needs calibrating and doing it with buffers on both sides of 7, as close to the readings as possible; carrying out the measuring routine and explaining rinsing, blotting, waiting and fresh portions; recording means; stating whether each solution has more hydronium or more hydroxide, and comparing two readings by factors of ten; explaining why open distilled water reads below 7; comparing a meter with indicator paper; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No pH calculation (chem-m6-c07), no strength investigation (chem-m6-p04), no buffer chemistry (chem-m6-c11).",
+    "nextLesson": "using pH to show the difference between strong and weak acids and bases (route chem-m6-p04)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-p03.md"
+  ],
+  "teaching": {
+    "task": "A freshly calibrated pH meter reads distilled water as 5.8. Is the meter wrong, the method wrong, or the water? How do you measure the pH of a range of acids and bases so the readings can be trusted, and what does each reading tell you about the ions in the sample?",
+    "causalExplanation": "(1) a calibrated meter reads distilled water below 7: faulty, or real? (1); (2) one concentration for the acids and bases, so differences come from the substance; fresh portions in clean labelled beakers (2); (3) the glass bulb responds to hydronium ions with a small voltage; the meter turns it into pH; that link drifts with age and temperature (3); (4) so the meter is shown known values: buffers at pH 7, 4 and 10; the meter draws a straight line through those points and reads every sample from it (extended a little beyond 4 and 10); one buffer gives one point, so the slope would be guessed; buffers on both sides of 7 check the line for acids and bases; calibrate at the measuring temperature (4); (5) solution left on the probe is carried into the next sample and changes it, so rinse and blot; the glass needs time to respond, so a reading is recorded only once it stops changing; repeats use fresh portions so one contaminated portion cannot affect all three (5); (6) results as means; the acids and bases repeat closely (6); (7) below 7 more hydronium than hydroxide, above 7 more hydroxide; each step ten times, two steps a hundred; HCl about 1.4 lower than acetic acid, so in between: about 23 times the hydronium (C05 strength, recalled) (7); (8) carbon dioxide from the air dissolves and makes a little carbonic acid, which gives a few hydronium ions to the water, so open distilled water really is slightly acidic (boiling drives the CO₂ out: grey tag); with very few ions the reading drifts (8); (9) indicator paper gives about whole numbers and colour judgements vary; a meter's two decimal places mean something only if it is calibrated (9); variables (10); validity, reliability, accuracy (11); risk (12); memory aid (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).",
+    "conversationalApproach": "a freshly calibrated meter reads distilled water as 5.82, and the question of whether the meter is faulty runs through the practical. The range of solutions is matched at 0.010 mol/L so differences come from the substance; the glass bulb lens shows how hydronium makes a voltage, and calibration with pH 7, 4 and 10 buffers shows why two or more known points fix the line; the measuring routine gives a reason for each step (rinse, blot, immerse, wait for steady, three fresh readings). One class's results are read as more hydronium or more hydroxide, each pH step ten times; the water puzzle is resolved by dissolved carbon dioxide and very few ions; the meter is compared with indicator paper, then the variables, validity, reliability and accuracy, and the risk assessment follow. The memory aid \"Calibrate first. Rinse between. Wait for steady.\" closes the method. Two exam questions follow with brief feedback.",
+    "openingDecision": "This pH meter has just been calibrated, and it reads distilled water as five point eight two. Shouldn't pure water be seven? So is the meter faulty? Hold that thought. In this practical you measure the pH of a range of acids and bases, and before you trust a number like this, the method has to be right.",
+    "understandingCheck": "(A1) \"A student measures the pH of 0.010 mol/L sodium hydroxide solution with a calibrated pH meter. Without rinsing the probe, she then measures a sample of distilled water and obtains a reading of 9.2. Other groups measured the same distilled water at about 6. Explain the difference between her reading and the other groups' readings, and describe how she should change her method.\" Answer: NaOH carried over on the probe added hydroxide; water has very few ions of its own, so a trace shifts its pH a lot; rinse and blot between samples, measure a fresh portion. Crossed mistake: \"take three readings and average them\" (without rinsing, the carried-over hydroxide still pushes the average up). (A2, Revision 2) \"A student calibrates a pH meter with a pH 7.00 buffer only. She then measures the pH of 0.010 mol/L hydrochloric acid three times, using a fresh portion each time, and obtains 2.31, 2.30 and 2.32. Another group calibrated with pH 7.00 and pH 4.00 buffers and obtained 2.03 for the same solution. Evaluate the reliability and accuracy of the first student's results.\" Answer: reliable (range 0.02) but not accurate (about 0.3 above 2.03); with one buffer the meter assumed its slope, so every reading shares the same error; calibrate with pH 4.00 as well and repeat. Crossed mistake: \"they agree, so they're accurate\". Revision 1's A2 (3.4 against 5.4, \"about twice\") is retired: it retested C05 scene 3.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to measure the pH of a range of acids and bases\" this video prepares students to carry out and analyse the pH measurement practical; it does not claim that watching it is conducting it. It teaches: choosing a range of solutions (two acids, two bases, distilled water) at one concentration; what the meter's glass probe responds to and why calibration is needed; calibrating with buffers that cover the readings; the measuring routine (rinse, blot, immerse, wait for steady, repeat in fresh portions) and why each step matters; recording means; reading each value as hydronium against hydroxide ions, with each pH step a factor of ten; why distilled water open to air reads below 7; meter against universal indicator; variables; validity, reliability and accuracy; the risk assessment. Placement limits (playlist order 7): pH = −log[H⁺], pOH, Kw and every pH calculation are chem-m6-c07 (order 10), so no reading is calculated from a concentration and no concentration from a reading; expected values are not derived on screen. The relation to ions uses only what C05 taught (lower pH, more hydronium; one unit is ten times). Why HCl and acetic acid differ at the same concentration is C05's strength idea, recalled in one clause; testing strength with pH is chem-m6-p04 (order 8), which uses 0.100 mol/L matched solutions and a dilute-HCl challenge, so this video makes no strength conclusion and no concentration-matching argument beyond \"so the difference comes from the substance\". Buffers are named as \"solutions that hold a known pH\" only (how they work is chem-m6-c11). Water's self-ionisation is chem-m6-c06; scene 7 says only \"more hydronium than hydroxide\" below 7."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C01, C05): hydronium teal, hydroxide violet; readout amber digits; acids marked with a small teal tab on their beaker labels, bases a violet tab, water grey; controls green, hazards terracotta. Board layout (three zones, constant): top-left the short task line; the centre holds the meter and the beaker row; the right third holds the current card (routine, results table, variables, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: `m6-ph-meter-probe-beaker-v1.png` (inspected 21 Oct: bench meter with a blank green screen, probe on a cable standing in a beaker of clear liquid; coded readout in the screen, as in C05), `m6-beaker-v1.png` (inspected 21 Oct: empty clear beaker; five copies with coded labels and coded colourless fills), `m6-wash-bottle-v1.png` (rinse), `m6-indicator-paper-chart-v1.png` (inspected 21 Oct: a strip and a six-colour chart, red to violet, no numbers; coded pH numbers placed under the swatches), `m5x-safety-glasses-v1.png` (risk table), `m5x-ammonia-bottle-v1.png` (risk row, the stock bottle, small, with tag \"teacher only\"). New plates: see Codex asset brief (three items). No human figures.",
+    "transitionPlan": "The pH meter plate opens the hook with its readout settling at 5.82 and a ghost \"7.00?\" chip; the meter slides left and five labelled beakers slide into a row; the probe plate enlarges and a lens opens on the glass bulb with hydronium tokens and a millivolt needle; three buffer bottles stand in the right zone while the calibration line pins and tilts; the routine card writes one line per cue as the wash bottle stream, tissue and probe act it out; the results table fills and the chips drop onto a coded pH scale with hydronium and hydroxide bar pairs; the water beaker enlarges as carbon dioxide tokens drift in and the carbonic acid strip writes; the indicator chart and a bracket sit beside the two-decimal readout; the variables card, the three evaluation cards and the risk table write in the right zone in turn; the memory aid writes large with three icons; each attempt clears the board and its feedback underlines the question as small plates return; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-ph-meter-probe-beaker-v1.png` centre, beaker label coded \"distilled water\".",
+      "teachingReason": "Hook (is the meter broken?): This pH meter has just been calibrated, and it reads distilled water as five point eight two.",
+      "narrationCue": "five point eight two / seven",
+      "motionPurpose": "On the spoken cues: The readout flickers, then holds: on \"five point eight two\" it shows \"5.82\" (the class's first water reading, scene 6) with a small \"stable\" dot. On \"seven\" a ghost chip \"7.00?\" appears above the screen with a pen \"?\" between it and the reading. Heading writes: \"Faulty meter, or real?\" A small tag \"calibrated: yes\" sits under the meter.",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-ph-meter-probe-beaker-v1.png` centre, beaker label coded \"distilled water\". The readout flickers, then holds: on \"five point eight two\" it shows \"5.82\" (the class's first water reading, scene 6) with a small \"stable\" dot. On \"seven\" a ghost chip \"7.00?\" appears above the screen with a pen \"?\" between it and the reading. Heading writes: \"Faulty meter, or real?\" A small tag \"calibrated: yes\" sits under the meter. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "range",
+      "visualDecision": "adjust",
+      "visualReference": "the meter slides to the left; five `m6-beaker-v1.png` copies slide into a row across the centre, each with a coded colourless fill and a coded label, writing on in turn as named: \"HCl\" (teal tab), \"acetic acid (ethanoic acid)\" (teal tab), \"distilled water\" (grey tab), \"ammonia, NH₃\" (violet tab), \"NaOH\" (violet tab).",
+      "teachingReason": "The range of solutions: Here's the range: hydrochloric acid, acetic acid, distilled water, ammonia solution and sodium hydroxide.",
+      "narrationCue": "zero point zero one zero moles per litre / labelled",
+      "motionPurpose": "On the spoken cues: On \"zero point zero one zero moles per litre\" a single bracket over the four acid and base beakers reads \"all 0.010 mol/L\"; the water beaker stays outside the bracket. On \"labelled\" each label gets a pen tick. Labels dim to grey after they write, except the bracket.",
+      "motionRole": "explain",
+      "onScreenChange": "the meter slides to the left; five `m6-beaker-v1.png` copies slide into a row across the centre, each with a coded colourless fill and a coded label, writing on in turn as named: \"HCl\" (teal tab), \"acetic acid (ethanoic acid)\" (teal tab), \"distilled water\" (grey tab), \"ammonia, NH₃\" (violet tab), \"NaOH\" (violet tab). On \"zero point zero one zero moles per litre\" a single bracket over the four acid and base beakers reads \"all 0.010 mol/L\"; the water beaker stays outside the bracket. On \"labelled\" each label gets a pen tick. Labels dim to grey after they write, except the bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "tick",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "meter",
+      "visualDecision": "adjust",
+      "visualReference": "the probe plate `m6-ph-probe-holder-v1.png` (Codex item 1: the probe alone, clamped in a small electrode holder) enlarges at centre; on \"bulb\" a pen ring circles the glass bulb and a cutaway lens opens on it: teal hydronium tokens near the outer glass surface.",
+      "teachingReason": "How the meter works: How does the meter know?",
+      "narrationCue": "bulb / voltage / drifts",
+      "motionPurpose": "On the spoken cues: On \"voltage\" a small coded arrow labelled \"tiny voltage\" runs up the cable to the meter, and a converter strip writes: \"voltage → pH\". On \"drifts\" the strip's arrow wobbles and a grey tag writes \"probe age, temperature\". The lens closes.",
+      "motionRole": "explain",
+      "onScreenChange": "the probe plate `m6-ph-probe-holder-v1.png` (Codex item 1: the probe alone, clamped in a small electrode holder) enlarges at centre; on \"bulb\" a pen ring circles the glass bulb and a cutaway lens opens on it: teal hydronium tokens near the outer glass surface. On \"voltage\" a small coded arrow labelled \"tiny voltage\" runs up the cable to the meter, and a converter strip writes: \"voltage → pH\". On \"drifts\" the strip's arrow wobbles and a grey tag writes \"probe age, temperature\". The lens closes. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "calibration",
+      "visualDecision": "adjust",
+      "visualReference": "three buffer bottles (`m6-buffer-bottle-v1.png`, Codex item 2, three copies with coded label bands \"pH 4.00\" red, \"pH 7.00\" yellow, \"pH 10.00\" blue; native aspect, scaled uniformly) stand in the right zone.",
+      "teachingReason": "Calibration with buffers: That's calibration.",
+      "narrationCue": "calibration / buffer solutions / straight line / both sides",
+      "motionPurpose": "On the spoken cues: On \"calibration\" the word and meaning write: \"calibration: show the meter solutions of known pH\". On \"buffer solutions\" a tag \"buffer: holds a known pH (later video)\". Both tags dim to grey as the probe moves into the first bottle. The probe moves on its arc into each bottle in turn, 7, then 4, then 10; the meter readout settles on \"7.00\", \"4.00\", \"10.00\" and a green tick lights on each bottle. Beside the bottles a",
+      "motionRole": "explain",
+      "onScreenChange": "three buffer bottles (`m6-buffer-bottle-v1.png`, Codex item 2, three copies with coded label bands \"pH 4.00\" red, \"pH 7.00\" yellow, \"pH 10.00\" blue; native aspect, scaled uniformly) stand in the right zone. On \"calibration\" the word and meaning write: \"calibration: show the meter solutions of known pH\". On \"buffer solutions\" a tag \"buffer: holds a known pH (later video)\". Both tags dim to grey as the probe moves into the first bottle. The probe moves on its arc into each bottle in turn, 7, then 4, then 10; the meter readout settles on \"7.00\", \"4.00\", \"10.00\" and a green tick lights on each bottle. Beside the bottles a small coded calibration graph: x axis \"pH\" 0 to 14, y axis \"meter signal (voltage)\", no numbers on the y axis. As each buffer is read its point lights on the graph (7, then 4, then 10). On \"straight line\" a teal line draws through the three points, with short dashed ends running on to pH 2 and pH 12; grey tag \"readings near 2 and 12 use the same line, extended\". On \"one point\" the 4 and 10 points briefly fade, leaving the 7 point with two faint grey lines of different slope pivoting through it, tag \"one point: slope unknown\"; then the three points and the line return. On \"both sides\" the acid half of the line tints teal and the base half violet. On \"same temperature\" a thermometer chip \"25 °C\" writes beside the bottles and the sample beakers. Bright at the end: the graph, its line and the temperature chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "routine",
+      "visualDecision": "adjust",
+      "visualReference": "the routine card writes in the right zone, one line per cue, each acted out by the plates: on \"rinse\" a coded water stream from `m6-wash-bottle-v1.png` runs over the bulb into a small waste beaker; line \"1 Rinse with distilled water\".",
+      "teachingReason": "The measuring routine: Then, for every sample: rinse the probe with distilled water, and gently blot it.",
+      "narrationCue": "rinse / blot / wait / three readings",
+      "motionPurpose": "On the spoken cues: On \"blot\" the tissue plate (`m6-lab-tissue-v1.png`, Codex item 3) touches the bulb and lifts; line \"2 Blot gently (don't rub)\". On \"carried into the next beaker\" a single coded drop clings to the bulb, then falls into the next beaker with a small swirl; tag \"carry-over changes the reading\" (then dims). On \"wait\" the readout digits flicker and settle, the \"stable\" dot lights; line \"3 Bulb fully in; swirl; wait for a",
+      "motionRole": "explain",
+      "onScreenChange": "the routine card writes in the right zone, one line per cue, each acted out by the plates: on \"rinse\" a coded water stream from `m6-wash-bottle-v1.png` runs over the bulb into a small waste beaker; line \"1 Rinse with distilled water\". On \"blot\" the tissue plate (`m6-lab-tissue-v1.png`, Codex item 3) touches the bulb and lifts; line \"2 Blot gently (don't rub)\". On \"carried into the next beaker\" a single coded drop clings to the bulb, then falls into the next beaker with a small swirl; tag \"carry-over changes the reading\" (then dims). On \"wait\" the readout digits flicker and settle, the \"stable\" dot lights; line \"3 Bulb fully in; swirl; wait for a steady reading\". On \"three readings\" three small result slots fill under the beaker, each from its own fresh-portion beaker outline; line \"4 Three readings, fresh portions\". Earlier lines dim as each writes. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "results",
+      "visualDecision": "new",
+      "visualReference": "the results table writes in the right zone: columns \"solution / reading 1 / 2 / 3 / mean\"; rows on their names: \"HCl 2.03, 2.02, 2.04 → 2.03\"; \"acetic acid 3.40, 3.39, 3.41 → 3.40\"; \"distilled water 5.82, 5.95, 6.10 → 5.96\" (on \"five point nine six\" its three readings get a wavy grey underline, tag \"drifted\"); \"ammonia 10.58, 10.60, 10.59 → 10.59\"; \"NaOH 11.95, 11.97, 11.96 → 11.96\".",
+      "teachingReason": "The results: Here are one class's results, as means of three readings.",
+      "narrationCue": "five point nine six / zero point zero two",
+      "motionPurpose": "On the spoken cues: As each row writes, its mean pins as a chip on the matching beaker in the row. On \"zero point zero two\" the acid and base rows' reading columns get a small bracket \"range 0.02\". Earlier rows dim to grey once their chip has pinned.",
+      "motionRole": "explain",
+      "onScreenChange": "the results table writes in the right zone: columns \"solution / reading 1 / 2 / 3 / mean\"; rows on their names: \"HCl 2.03, 2.02, 2.04 → 2.03\"; \"acetic acid 3.40, 3.39, 3.41 → 3.40\"; \"distilled water 5.82, 5.95, 6.10 → 5.96\" (on \"five point nine six\" its three readings get a wavy grey underline, tag \"drifted\"); \"ammonia 10.58, 10.60, 10.59 → 10.59\"; \"NaOH 11.95, 11.97, 11.96 → 11.96\". As each row writes, its mean pins as a chip on the matching beaker in the row. On \"zero point zero two\" the acid and base rows' reading columns get a small bracket \"range 0.02\". Earlier rows dim to grey once their chip has pinned. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "ions",
+      "visualDecision": "new",
+      "visualReference": "the table shrinks out; the coded pH scale fills the lower centre, 0 to 14, acid side tinted pale teal, base side pale violet, 7 marked \"7 (neutral at 25 °C)\".",
+      "teachingReason": "What the readings say about the ions: So what do the numbers say about the ions?",
+      "narrationCue": "hydronium / hydroxide / ten times / twenty three times",
+      "motionPurpose": "On the spoken cues: The five chips drop onto it at 2.03, 3.40, 5.96, 10.59 and 11.96. On \"hydronium\" a small bar pair (teal taller than violet, schematic, tag \"more H₃O⁺ than OH⁻\") rises under the acid side; on \"hydroxide\" the mirror pair (violet taller) under the base side. On \"ten times\" a bracket from 2.03 to 3.40 appears with faint grey markers along it, \"1 unit: × 10\" and \"2 units: × 100\" (the second marker overhanging the",
+      "motionRole": "explain",
+      "onScreenChange": "the table shrinks out; the coded pH scale fills the lower centre, 0 to 14, acid side tinted pale teal, base side pale violet, 7 marked \"7 (neutral at 25 °C)\". The five chips drop onto it at 2.03, 3.40, 5.96, 10.59 and 11.96. On \"hydronium\" a small bar pair (teal taller than violet, schematic, tag \"more H₃O⁺ than OH⁻\") rises under the acid side; on \"hydroxide\" the mirror pair (violet taller) under the base side. On \"ten times\" a bracket from 2.03 to 3.40 appears with faint grey markers along it, \"1 unit: × 10\" and \"2 units: × 100\" (the second marker overhanging the bracket's end). On \"twenty three times\" the bracket's label writes \"1.37 units: about 23 × more H₃O⁺\", sitting between the two markers, which then dim. On \"strength\" a grey chip writes \"strong ionises completely; weak partly (C05)\" and a small \"next: P04\" tab. On \"sodium hydroxide far more\" the 10.59 to 11.96 gap gets a violet bracket \"more OH⁻\". Bright at the end: the scale, the 23 × bracket and the violet bracket. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "water",
+      "visualDecision": "new",
+      "visualReference": "the water beaker enlarges centre with its chip \"5.96\".",
+      "teachingReason": "So, the water: Now the water.",
+      "narrationCue": "Carbon dioxide / carbonic acid / drift / neutral",
+      "motionPurpose": "On the spoken cues: On \"Carbon dioxide\" small grey CO₂ tokens drift down from the air into the open beaker; on \"carbonic acid\" the strip writes \"CO₂(g) + H₂O(l) ⇌ H₂CO₃(aq)\" with a small teal hydronium token released in the lens beside it (one example) on \"hydronium\", and a small grey second line \"H₂CO₃(aq) + H₂O(l) ⇌ HCO₃⁻(aq) + H₃O⁺(aq)\"; tag \"a little extra H₃O⁺\". On \"drift\" the three readings 5.82, 5.95, 6.10 replay on the readout",
+      "motionRole": "explain",
+      "onScreenChange": "the water beaker enlarges centre with its chip \"5.96\". On \"Carbon dioxide\" small grey CO₂ tokens drift down from the air into the open beaker; on \"carbonic acid\" the strip writes \"CO₂(g) + H₂O(l) ⇌ H₂CO₃(aq)\" with a small teal hydronium token released in the lens beside it (one example) on \"hydronium\", and a small grey second line \"H₂CO₃(aq) + H₂O(l) ⇌ HCO₃⁻(aq) + H₃O⁺(aq)\"; tag \"a little extra H₃O⁺\". On \"drift\" the three readings 5.82, 5.95, 6.10 replay on the readout chip, flickering, tag \"few ions: slow, drifting reading\". After \"spread\" (unspoken, small, grey) a second beaker outline appears with the tag \"boiled to drive out CO₂, then cooled: closer to 7\" (evidence for the CO₂ cause; it stays grey). On \"neutral\" a chip \"distilled water always reads 7.00\" fades in and is crossed (caption \"open to air: slightly acidic\"). The hook's ghost \"7.00?\" resolves to a tick on the meter. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "token flight",
+        "Cam lens zoom",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "meter-vs-indicator",
+      "visualDecision": "adjust",
+      "visualReference": "`m6-indicator-paper-chart-v1.png` in the right zone; coded pH numbers write under the six swatches.",
+      "teachingReason": "Meter or indicator paper?: Why use a meter at all?",
+      "narrationCue": "Universal indicator / two decimal places / calibrated",
+      "motionPurpose": "On the spoken cues: On \"Universal indicator\" a coded strip colour (orange-red) is held against the chart; a bracket spans two swatches, tag \"about pH 2 to 3\". On \"two decimal places\" the meter readout \"2.03\" sits beside it. Before \"calibrated\" the strip tag and the \"2.03\" readout dim to grey. On \"calibrated\" a chip \"more decimal places = more accurate\" fades in and is crossed (caption \"only if calibrated\"); after a beat the chip gives",
+      "motionRole": "explain",
+      "onScreenChange": "`m6-indicator-paper-chart-v1.png` in the right zone; coded pH numbers write under the six swatches. On \"Universal indicator\" a coded strip colour (orange-red) is held against the chart; a bracket spans two swatches, tag \"about pH 2 to 3\". On \"two decimal places\" the meter readout \"2.03\" sits beside it. Before \"calibrated\" the strip tag and the \"2.03\" readout dim to grey. On \"calibrated\" a chip \"more decimal places = more accurate\" fades in and is crossed (caption \"only if calibrated\"); after a beat the chip gives way to a small uncalibrated meter outline flashing \"7.43\" against a \"pH 7.00 buffer\" label with a red cross (it replaces the chip, not beside it). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "variables",
+      "visualDecision": "new",
+      "visualReference": "the variables card writes in the right zone, one row per cue: \"Independent: which solution\"; \"Dependent: pH (mean of three readings)\"; \"Controlled: 0.010 mol/L; 25 °C; 20 mL; same calibrated meter; same rinse routine\".",
+      "teachingReason": "The variables: So, the variables.",
+      "narrationCue": "independent variable / dependent variable / controlled variables",
+      "motionPurpose": "On the spoken cues: As each controlled item is spoken a pen link points to the matching thing (the bracket, the thermometer chip, the beaker levels, the meter, the wash bottle).",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone, one row per cue: \"Independent: which solution\"; \"Dependent: pH (mean of three readings)\"; \"Controlled: 0.010 mol/L; 25 °C; 20 mL; same calibrated meter; same rinse routine\". As each controlled item is spoken a pen link points to the matching thing (the bracket, the thermometer chip, the beaker levels, the meter, the wash bottle). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: the intended solution only?",
+      "teachingReason": "Validity, reliability and accuracy: Now the three words from the equilibrium practical.",
+      "narrationCue": "Validity / Reliability / Accuracy",
+      "motionPurpose": "On the spoken cues: Rinse, blot, fresh portions, labels.\" \"Reliability: repeats agree? Acids and bases within 0.02; water spread 5.82 to 6.10.\" (the table's columns return small with those ranges bracketed) \"Accuracy: close to the true pH? Calibrate with buffers either side of 7, close to the readings; same temperature.\" A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\"",
+      "motionRole": "explain",
+      "onScreenChange": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: the intended solution only? Rinse, blot, fresh portions, labels.\" \"Reliability: repeats agree? Acids and bases within 0.02; water spread 5.82 to 6.10.\" (the table's columns return small with those ranges bracketed) \"Accuracy: close to the true pH? Calibrate with buffers either side of 7, close to the readings; same temperature.\" A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.010 mol/L HCl, acetic acid, NH₃, NaOH: below GHS classification limits\" / \"eye irritation from a splash\" / \"safety glasses (`m5x-safety-glasses-v1.png`); small volumes\"; \"concentrated stocks (conc.",
+      "teachingReason": "The risk assessment: The risk assessment.",
+      "narrationCue": "classified as hazardous / corrosive",
+      "motionPurpose": "On the spoken cues: HCl, glacial acetic acid, conc. ammonia, solid NaOH): corrosive, H314\" / \"severe burns, irritating vapour\" / \"prepared by the teacher or technician; not on the student bench\" (`m5x-ammonia-bottle-v1.png` small with tag \"teacher only\"); \"glass bulb\" / \"breaks; cuts; ruined probe\" / \"probe in its holder; never stir with it; don't touch the beaker bottom\"; \"meter near liquids\" / \"damage to the meter\" / \"keep the meter",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.010 mol/L HCl, acetic acid, NH₃, NaOH: below GHS classification limits\" / \"eye irritation from a splash\" / \"safety glasses (`m5x-safety-glasses-v1.png`); small volumes\"; \"concentrated stocks (conc. HCl, glacial acetic acid, conc. ammonia, solid NaOH): corrosive, H314\" / \"severe burns, irritating vapour\" / \"prepared by the teacher or technician; not on the student bench\" (`m5x-ammonia-bottle-v1.png` small with tag \"teacher only\"); \"glass bulb\" / \"breaks; cuts; ruined probe\" / \"probe in its holder; never stir with it; don't touch the beaker bottom\"; \"meter near liquids\" / \"damage to the meter\" / \"keep the meter body dry; only the probe goes in\". Grey row: \"buffers: check the bottle's safety data sheet\". Footer chip: \"follow your school's risk assessment\". Rows dim as each new row writes. Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the aid writes large and handwritten in three short lines: \"Calibrate first.\"",
+      "teachingReason": "Memory aid: Here's the routine to remember: calibrate first, rinse between, wait for steady.",
+      "narrationCue": "calibrate first, rinse between, wait for steady",
+      "motionPurpose": "On the spoken cues: \"Rinse between.\" \"Wait for steady.\" Small icons beside each: the three buffer bottles; the wash bottle stream; the readout with its \"stable\" dot. Beneath, the condition tag: \"one pH step = 10 × the hydronium\" (the C05 fact, as a reading rule).",
+      "motionRole": "explain",
+      "onScreenChange": "the aid writes large and handwritten in three short lines: \"Calibrate first.\" \"Rinse between.\" \"Wait for steady.\" Small icons beside each: the three buffer bottles; the wash bottle stream; the readout with its \"stable\" dot. Beneath, the condition tag: \"one pH step = 10 × the hydronium\" (the C05 fact, as a reading rule). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student measures sodium hydroxide solution,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A student measures the pH of 0.010 mol/L sodium hydroxide solution with a calibrated pH meter. Without rinsing the probe, she then measures a sample of distilled water and obtains a reading of 9.2. Other groups measured the same distilled water at about 6. Explain the difference between her reading and the other groups' readings, and describe how she should change her method.\" Beside it the meter plate with the readout \"9.21\" (the meter shows two decimal places, as elsewhere; the question text keeps \"9.2\") and a beaker labelled \"distilled water\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no wash bottle, no tissue, no drop on the probe.",
+      "motionTools": [
+        "NumberTicker",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "carried into / no ions / rinse / more readings",
+      "motionPurpose": "On the spoken cues: On \"carried into\" \"Without rinsing the probe\" is underlined and a coded violet drop falls from the bulb into the water beaker; tag \"OH⁻ carried over\". On \"no ions\" \"distilled water\" and \"9.2\" are underlined and a sparse lens shows a few violet tokens with almost nothing else; tag \"few ions: a trace shifts pH a lot\". On \"rinse\" the wash bottle stream and tissue blot play; answer chip \"rinse and blot between samples;",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"carried into\" \"Without rinsing the probe\" is underlined and a coded violet drop falls from the bulb into the water beaker; tag \"OH⁻ carried over\". On \"no ions\" \"distilled water\" and \"9.2\" are underlined and a sparse lens shows a few violet tokens with almost nothing else; tag \"few ions: a trace shifts pH a lot\". On \"rinse\" the wash bottle stream and tissue blot play; answer chip \"rinse and blot between samples; fresh portion\". On \"more readings\" a chip \"take three readings and average\" fades in and is crossed (caption \"averaging keeps the contamination\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "token flight",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "question card, worded as printed: \"A student calibrates a pH meter with a pH 7.00 buffer only.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more. A student calibrates with a pH",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student calibrates a pH meter with a pH 7.00 buffer only. She then measures the pH of 0.010 mol/L hydrochloric acid three times, using a fresh portion each time, and obtains 2.31, 2.30 and 2.32. Another group calibrated with pH 7.00 and pH 4.00 buffers and obtained 2.03 for the same solution. Evaluate the reliability and accuracy of the first student's results.\" Beside it the meter plate (readout \"2.31\") and one `m6-buffer-bottle-v1.png` with the coded band \"pH 7.00\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no calibration graph, no brackets, no verdict.",
+      "motionTools": [
+        "DrawPath",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "reliable / accurate / classic slip",
+      "motionPurpose": "On the spoken cues: On \"reliable\" \"2.31, 2.30 and 2.32\" is underlined and a small bracket reads \"range 0.02\". On \"accurate\" \"2.03\" and \"calibrated with pH 7.00 and pH 4.00\" are underlined and a short scale from 2.0 to 2.4 marks 2.03 (teal) and the three readings (amber), bracket \"about 0.3 too high\". On \"guess its slope\" \"pH 7.00 buffer only\" is underlined and scene 4's calibration graph returns small: one point at 7 with a steeper",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"reliable\" \"2.31, 2.30 and 2.32\" is underlined and a small bracket reads \"range 0.02\". On \"accurate\" \"2.03\" and \"calibrated with pH 7.00 and pH 4.00\" are underlined and a short scale from 2.0 to 2.4 marks 2.03 (teal) and the three readings (amber), bracket \"about 0.3 too high\". On \"guess its slope\" \"pH 7.00 buffer only\" is underlined and scene 4's calibration graph returns small: one point at 7 with a steeper grey line through it beside the teal two-buffer line, tag \"one point: slope assumed\". Answer chip \"reliable, not accurate; calibrate with pH 4 and 7\". On \"classic slip\" a chip \"they agree, so they're accurate\" fades in and is crossed (caption \"agreement is reliability, not accuracy\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Calibrate: pH 7, 4, 10 (both sides of 7), same temperature.\"",
+      "teachingReason": "Decision rule and handoff: So: calibrate with buffers on both sides of seven, rinse and blot between samples, wait for a steady reading, and repeat in fresh portions.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Rinse, blot.\" \"3 Wait for a steady reading.\" \"4 Three readings, fresh portions; record the mean.\" \"5 Below 7: more H₃O⁺; above 7: more OH⁻; each step × 10.\" On \"Next\" a chip \"Next: using pH to compare strong and weak acids and bases\" appears with the meter plate small and two beakers labelled \"0.100 mol/L\".",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Calibrate: pH 7, 4, 10 (both sides of 7), same temperature.\" \"2 Rinse, blot.\" \"3 Wait for a steady reading.\" \"4 Three readings, fresh portions; record the mean.\" \"5 Below 7: more H₃O⁺; above 7: more OH⁻; each step × 10.\" On \"Next\" a chip \"Next: using pH to compare strong and weak acids and bases\" appears with the meter plate small and two beakers labelled \"0.100 mol/L\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p03-learning-review.md",
+      "sha256": "b1fca0895404d46c56e6794208bd0173849dfbc01cfd22e4cdb466681a1a5c25"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p03-claude-science-check.md",
+      "sha256": "6e7864f84f49926601b7b59a140e2fe41ac5fecd093a5cd319313878e6b49625"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

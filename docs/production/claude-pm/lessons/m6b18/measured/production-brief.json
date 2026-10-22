@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b18/measured/lesson.json",
+    "lessonSha256": "793b15357a58f20c47821d00a28b14fd28811697d4c7881d4997ec0e30d142b6"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From bio-m5-b06a: bacteria carry plasmids. From bio-m5-b06b: RNA polymerase binds a promoter before a gene and copies the gene into mRNA. From bio-m5-b06c: ribosomes read mRNA three bases at a time (codons), each coding for an amino acid. From bio-m5-b04: DNA's two strands are held together by base pairs (A with T, C with G) along a sugar-phosphate backbone. From Year 11: enzymes are specific. From b09: recombinant DNA means DNA joined from different sources; bacteria make human insulin (since 1982); Bt cotton carries a gene from a soil bacterium. From b16: gene cloning puts a gene into a plasmid vector, a bacterial host copies it every time it divides; a colony is a clone. From bio-m6-b05: many genes contain introns, stretches cut out of the mRNA before translation. Not assumed: restriction enzymes, sticky ends, ligase, marker genes, transformation, selection, why a host needs a promoter it recognises, Agrobacterium, \"transgenic\" by name.",
+    "startsWith": "A DNA fragment and a vector. The video opens: Bacteria don't make human insulin, and cotton plants don't make a caterpillar poison.",
+    "stopsAfter": "explaining why an intron-free copy of a human gene is needed for bacteria (bacteria cannot remove introns), made from mRNA or built from scratch, as for the first insulin; describing in order how recombinant DNA is made and put into a host: a restriction enzyme cuts at one specific sequence, leaving sticky ends, and the plasmid is opened with the same enzyme or one that leaves matching ends; the ends pair and DNA ligase seals the backbones, making recombinant DNA; the plasmid carries a marker gene; bacteria take up the plasmid by transformation (calcium chloride helps DNA stick to the cell surface, then a heat shock lets it in), only a small fraction of them; antibiotic selection keeps bacteria with a plasmid, and a second check finds those carrying the gene; explaining that the host makes the protein only if the gene sits beside a promoter the host recognises, and that the shared genetic code means the same codons give the same amino acids; describing the insulin application (two chains made separately in bacteria, joined, made in large fermenters) and the agricultural application (plants need a different carrier because of the cell wall and because the gene must enter the plant's chromosomes; Agrobacterium carries the Bt gene into cotton cells' chromosomes, and the cells grow into whole plants that pass it on in their seeds); defining a transgenic organism (the contrast with selective breeding is in key note 5 only); applying this to an unseen describe item and an unseen explain item.",
+    "nextLesson": "which benefits of genetic technologies in agriculture, medicine and industry hold up under evidence (route entry bio-m6-b19)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b18.md"
+  ],
+  "teaching": {
+    "task": "Bacteria don't make human insulin, and cotton doesn't make a caterpillar poison, yet both now do. So how do scientists cut out a useful piece of DNA, join it into a carrier, get it into a host, and make sure the host actually uses it?",
+    "causalExplanation": "Causes: why an intron-free copy is needed (bacteria cannot remove introns, 2); why sticky ends join (unpaired bases pair with matching bases, 3); why ligase is needed (pairing alone gives only weak bonds; the backbone stays open, 4); why the marker matters (only bacteria with a plasmid survive the antibiotic, 6); why survival is not proof (empty plasmids also carry the marker, 6); why the host makes a human protein (a promoter it recognises and a shared code, 7); why the plant needs a different carrier (the cell wall, and the gene must enter the plant's chromosomes) and how the trait reaches the seeds (Agrobacterium inserts DNA into the chromosomes; every cell carries the gene, 8). The selective breeding contrast is key note 5 only (Revision 2). Visible case: the splicing strip, the staggered cut, the clasp sealing the gaps, the two plates growing side by side, the codon read by two ribosomes. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; attempt 2's card is the densest frame and is the task.",
+    "conversationalApproach": "Bacteria now make human insulin and cotton makes a caterpillar poison, so the question is how scientists cut out a useful piece of DNA, join it into a carrier, get it into a host and make sure the host uses it. A station track follows the method one step at a time: get intron-free DNA because bacteria cannot remove introns, cut with a restriction enzyme that recognises one short sequence and leaves sticky ends, paste with sticky-end pairing sealed by DNA ligase, put the plasmid into bacteria with calcium chloride and a heat shock, and pick the hosts on antibiotic agar; using the gene needs a promoter the host recognises, and plants need Agrobacterium to carry the gene across the cell wall into the plant's chromosomes. The memory aid is cut, paste, put in, pick. Two exam questions follow with brief feedback.",
+    "openingDecision": "Bacteria don't make human insulin, and cotton plants don't make a caterpillar poison. Yet since the nineteen-eighties, bacteria have made human insulin for people with diabetes, and most Australian cotton now makes its own insect toxin. Both carry DNA from another species. So how do scientists cut out a useful piece of DNA, join it into a carrier, get it into a host, and make sure the host actually uses it?",
+    "understandingCheck": "10a is a describe item: scientists have an intron-free copy of the calf gene for chymosin and a plasmid with an ampicillin-resistance gene; describe how they could produce E. coli carrying the chymosin gene and identify those bacteria. It tests the whole chain in order on a new product. 10c is an explain item: a human gene copied directly from a chromosome gives a faulty protein in bacteria, while a copy made from the same gene's mRNA gives a working one; explain the results. It tests scene 2's and scene 7's causes. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): the answer, the key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B6-IQ3-04: \"describe techniques and applications used in recombinant DNA technology, for example:\" with its example \"the development of transgenic organisms in agricultural and medical applications (ACSBL087)\". This video owns full coverage of B6-IQ3-04: techniques (obtaining intron-free DNA, restriction enzymes, ligase, vectors, transformation, selection, expression) and applications (insulin-making bacteria in medicine; Bt cotton in agriculture; chymosin in attempt 1). It also completes B6-IQ3-01 for recombinant DNA (use and advantage: a trait or product from another species in one generation). Update the ledger rows when this design passes review. The verbs: \"describe\" (what-markers-reward: give characteristics and features, in order, with the tool responsible at each step) is carried by scenes 3 to 6 and attempt 1; \"explain\" (cause and effect) by scenes 2 and 7 and attempt 2."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One toolchain bench: a horizontal track of five stations across the top of the screen, filled left to right one per scene, each with a small painted object or coded tool and a one-word grey label: \"get the DNA\" (scene 2), \"cut\" (scene 3), \"paste\" (scene 4), \"put in\" (scene 5), \"pick\" (scene 6), then \"use\" (scene 7) as a sixth station that slides in. The active station enlarges into the main stage below; finished stations shrink to grey thumbnails on the track. DNA is coded throughout in b01's `SlimStrand` style: a double strand of cream base glyphs on two backbone lines, with the useful gene as an amber stretch and the plasmid as a teal ring, never base letters spoken. Enzymes are small coded shapes in the explainer style (restriction enzyme: a slate scissor-jaw blob; ligase: an ochre clasp blob), labelled once. Painted plates for real things: `m6-bacteriophage-t4-v1.png` (scene 3), `m6-bacterium-plasmid-v1.png`, `m6-plasmid-uptake-start-v1.png` and `-end-v1.png` (scene 5), new `m6-water-bath-tube-v1.png` (scene 5), new `m6-antibiotic-colonies-empty-v1.png` with the existing `m6-antibiotic-colonies-before-v1.png` and `-after-v1.png` (scene 6; an aligned set: the empty dish grows into the crowded dish on the \"no antibiotic\" plate and into the sparse dish on the \"with antibiotic\" plate, side by side; never a crowded-to-sparse crossfade), `m6-agar-dish-top-v1.png`, `m6-insulin-vial-v1.png`, new `m6-fermenter-tank-v1.png` (scene 7), `m6-bt-cotton-v1.png`, `b6a-plant-cell-v1.png` and `m6-tissue-culture-jars-v1.png` (scene 8), `b6a-bacterium-v1.png` (Agrobacterium glyph source, tinted). No people, no hands. Never used: `m6-hand-pollination-v1.png` and `m6-agricultural-liming-v1.png` (retired hand plates). Plates scale proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey station labels; each tag fades when the next cue lands; completed stations dim to grey.",
+    "transitionPlan": "The bacterium-with-plasmid and Bt cotton plates open the hook, their grey crosses lifting as protein glyphs stream into the insulin vial and the caterpillar outline fades, with an amber foreign-DNA segment drawn inside each; station 1 enlarges as a coded gene strip loses its introns; each later station enlarges in turn while the previous one shrinks to a grey thumbnail: the restriction enzyme cuts a double strand and the plasmid ring at matching sites, the gene drifts into the ring and its overhang glyphs pair before ligase seals the joins, the water bath tube chills and heat-shocks the cells, and coded arrows spread the bacteria onto antibiotic agar where only plasmid carriers grow; a sixth station adds the promoter and the protein output; the track resets with the plant parts and Agrobacterium swapped in; the four memory words write large above their thumbnails; each attempt clears the track and its feedback underlines the card as an AnsTable or two rows fill; the six step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. Left: `m6-bacterium-plasmid-v1.png`; on \"human insulin\" a small grey cross sits beside it, then lifts on \"Yet since the nineteen-eighties\" as coded protein glyphs stream from the bacterium into `m6-insulin-vial-v1.png` (grey tag \"since 1982\").",
+      "teachingReason": "Hook (two organisms doing something new): Bacteria don't make human insulin, and cotton plants don't make a caterpillar poison.",
+      "narrationCue": "human insulin / Yet since the nineteen-eighties / caterpillar poison / makes its own insect toxin / DNA from another species / cut out ... join ... get it into ... uses it",
+      "motionPurpose": "On the spoken cues: Right: `m6-bt-cotton-v1.png`; on \"caterpillar poison\" a coded caterpillar outline on a boll, with a grey cross that lifts on \"makes its own insect toxin\" as the caterpillar outline curls and fades (tag \"Bt cotton\", replacing the 1982 tag). On \"DNA from another species\" a short amber strand segment",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Left: `m6-bacterium-plasmid-v1.png`; on \"human insulin\" a small grey cross sits beside it, then lifts on \"Yet since the nineteen-eighties\" as coded protein glyphs stream from the bacterium into `m6-insulin-vial-v1.png` (grey tag \"since 1982\"). Right: `m6-bt-cotton-v1.png`; on \"caterpillar poison\" a coded caterpillar outline on a boll, with a grey cross that lifts on \"makes its own insect toxin\" as the caterpillar outline curls and fades (tag \"Bt cotton\", replacing the 1982 tag). On \"DNA from another species\" a short amber strand segment draws inside each organism (a ring in the bacterium; a strip in a cotton cell inset) with a bracket \"DNA from another species\". On \"cut out ... join ... get it into ... uses it\" the five-station `ToolTrack` sketches faintly across the top, one outline per verb. On \"actually uses it\" the bracket fades and the heading writes on: \"Cut, paste, put in, pick\". Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "right-dna",
+      "visualDecision": "adjust",
+      "visualReference": "the hook clears; station 1 \"get the DNA\" enlarges into the stage.",
+      "teachingReason": "Get the right DNA first: First, you need the right piece of DNA.",
+      "narrationCue": "introns",
+      "motionPurpose": "On the spoken cues: A coded gene strip draws: amber coding blocks separated by two grey blocks. On \"Remember\" a small grey thumbnail of b05's `IntronCut` strip appears at the corner (recall cue, no text) and fades on \"introns\". On \"introns\" the strip copies into an mRNA strip below (terracotta, b06b's colour), and the",
+      "motionRole": "explain",
+      "onScreenChange": "the hook clears; station 1 \"get the DNA\" enlarges into the stage. A coded gene strip draws: amber coding blocks separated by two grey blocks. On \"Remember\" a small grey thumbnail of b05's `IntronCut` strip appears at the corner (recall cue, no text) and fades on \"introns\". On \"introns\" the strip copies into an mRNA strip below (terracotta, b06b's colour), and the grey pieces lift out and fade while the amber pieces close up (`SpliceStrip`, drawn to match b05's intron look); the term writes on with the gloss \"pieces cut out of the mRNA before it's read\" (recalled, so it writes quickly). On \"Bacteria can't do that cutting\" `b6a-bacterium-v1.png` appears small; the uncut strip slides into it, and a short coded protein chain comes out with a kink and grey wrong beads (tag \"introns read as code: wrong protein\"). On \"copied from the cell's finished mRNA\" the finished mRNA strip produces a new DNA copy of amber blocks only (grey screen label \"cDNA, made by reverse transcriptase\", small); on \"built from scratch\" a second strip assembles block by block (tag \"intron-free DNA: two ways\", replacing the wrong-protein tag). On \"insulin's two chains\" two short amber strips write on, labelled small \"A chain\" and \"B chain\" (grey tag \"late 1970s: built from scratch\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "cut",
+      "visualDecision": "adjust",
+      "visualReference": "station 2 \"cut\" enlarges; station 1 shrinks to a grey thumbnail holding the amber strip.",
+      "teachingReason": "Cut: Next, cut.",
+      "narrationCue": "restriction enzyme / sticky ends",
+      "motionPurpose": "On the spoken cues: A longer double strand draws with the amber gene in its middle. On \"restriction enzyme\" the slate scissor-jaw blob slides along the strand and stops at a short stretch that lights (grey screen label \"recognition sequence\", small); the term writes on with the gloss \"cuts DNA at one short sequence\".",
+      "motionRole": "explain",
+      "onScreenChange": "station 2 \"cut\" enlarges; station 1 shrinks to a grey thumbnail holding the amber strip. A longer double strand draws with the amber gene in its middle. On \"restriction enzyme\" the slate scissor-jaw blob slides along the strand and stops at a short stretch that lights (grey screen label \"recognition sequence\", small); the term writes on with the gloss \"cuts DNA at one short sequence\". On \"invading viruses\" `m6-bacteriophage-t4-v1.png` appears small at the upper right, a coded viral strand entering a bacterium glyph is chopped into pieces by the blob (tag \"its natural job: chop up virus DNA\"), then the inset fades. On \"slightly different points\" the blob cuts the strand at both ends of the gene with a staggered step (`StaggerCut`): each end shows four unpaired base glyphs on one strand (tag \"staggered cut\", replacing the virus tag). On \"sticky ends\" the overhangs pulse amber and the term writes on with the gloss \"unpaired bases that can pair\". On \"open the plasmid\" the teal plasmid ring appears to the right; the same blob cuts it once, leaving overhangs that match the gene's in shape and colour (grey tag \"same enzyme, or matching ends\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "paste",
+      "visualDecision": "new",
+      "visualReference": "station 3 \"paste\" enlarges.",
+      "teachingReason": "Paste: Then, paste.",
+      "narrationCue": "DNA ligase / recombinant DNA / marker",
+      "motionPurpose": "On the spoken cues: The amber gene drifts into the gap in the teal ring; on \"pair up, base to base\" the overhang glyphs on both sides meet and pair (`EndPair`), with faint short lines between paired bases (tag \"ends pair\"). On \"weak hydrogen bonds\" the pairing lines flicker and a small gap shows in each backbone line",
+      "motionRole": "explain",
+      "onScreenChange": "station 3 \"paste\" enlarges. The amber gene drifts into the gap in the teal ring; on \"pair up, base to base\" the overhang glyphs on both sides meet and pair (`EndPair`), with faint short lines between paired bases (tag \"ends pair\"). On \"weak hydrogen bonds\" the pairing lines flicker and a small gap shows in each backbone line at the two joins (tag \"backbone still open\", replacing \"ends pair\"). On \"DNA ligase\" the ochre clasp blob moves to each join and the backbone gaps close with a small flash; the term writes on with the gloss \"seals the backbone\". On \"recombinant DNA\" the closed ring (`RecombinantRing`) turns once, the amber insert glowing, and the term writes on with the gloss \"DNA joined from two sources\" (the ligase gloss dims). On \"a marker\" a short grey-green band on the ring lights, labelled small \"marker: antibiotic resistance\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "put-in",
+      "visualDecision": "adjust",
+      "visualReference": "station 4 \"put in\" enlarges.",
+      "teachingReason": "Put in: Now, put it in.",
+      "narrationCue": "transformation",
+      "motionPurpose": "On the spoken cues: New `m6-water-bath-tube-v1.png` appears at the left; on \"chill them in calcium chloride\" a small coded snowflake glyph and a grey tag \"cold + CaCl₂\" sit beside the tube. On \"helps DNA stick to the cell surface\" an inset shows a bacterium outline with a few rings settling against its surface and",
+      "motionRole": "explain",
+      "onScreenChange": "station 4 \"put in\" enlarges. New `m6-water-bath-tube-v1.png` appears at the left; on \"chill them in calcium chloride\" a small coded snowflake glyph and a grey tag \"cold + CaCl₂\" sit beside the tube. On \"helps DNA stick to the cell surface\" an inset shows a bacterium outline with a few rings settling against its surface and staying there. On \"add the plasmids\" a few small recombinant rings drop into the tube. On \"a quick heat shock\" the `ShockPulse` flicks the tube's tag from \"cold\" to \"42 °C, under a minute\" in amber, then back. On \"lets DNA into the cell\" the stage cuts to `m6-plasmid-uptake-start-v1.png` crossfading to `m6-plasmid-uptake-end-v1.png` (the ring passing into the cell), and the term \"transformation\" writes on with the gloss \"a cell taking up DNA\". On \"only a small fraction\" a field of about thirty bacterium glyphs appears and only three gain a ring (tag \"only a few take one up\", replacing the gloss). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "pick",
+      "visualDecision": "adjust",
+      "visualReference": "station 5 \"pick\" enlarges.",
+      "teachingReason": "Pick: So, pick.",
+      "narrationCue": "Spread the bacteria / agar containing the antibiotic / only they grow into colonies / Only bacteria carrying a plasmid / surviving doesn't prove the gene is there / a second check",
+      "motionPurpose": "On the spoken cues: A small coded tube glyph sits at the top centre. On \"Spread the bacteria\" two short coded arrows run from the tube to two plates side by side, both starting as the new empty plate `m6-antibiotic-colonies-empty-v1.png` (the same dish and agar as the aligned pair, with no colonies): the left plate is",
+      "motionRole": "explain",
+      "onScreenChange": "station 5 \"pick\" enlarges. A small coded tube glyph sits at the top centre. On \"Spread the bacteria\" two short coded arrows run from the tube to two plates side by side, both starting as the new empty plate `m6-antibiotic-colonies-empty-v1.png` (the same dish and agar as the aligned pair, with no colonies): the left plate is tagged small grey \"no antibiotic\", the right \"with antibiotic\" (the right tag is the bright one, on \"agar containing the antibiotic\"). On \"only they grow into colonies\" both plates grow at the same time: the left crossfades slowly from empty to `m6-antibiotic-colonies-before-v1.png` (crowded) and the right from empty to `m6-antibiotic-colonies-after-v1.png` (a few colonies), so selection reads as \"only these could grow\", never as colonies dying on a plate. The three plates are an aligned set at one scale; never a crossfade from the crowded plate to the sparse one. After the growth, the left plate dims to grey and the right plate moves to centre for the rest of the scene. Fallback if the empty plate is not ready: both plates are the aligned pair, each revealed by coded agar-coloured discs over its colonies that shrink to nothing (colonies appear to grow). On \"Only bacteria carrying a plasmid\" each surviving colony takes a tiny ring glyph (tag \"survivors carry a plasmid\"). On \"surviving doesn't prove the gene is there\" two of the rings enlarge as insets: one with the amber insert, one closed up empty (a grey ring with only its marker band), and a small grey \"?\" sits over the survivors (tag \"plasmid, but gene?\", replacing the survivors tag). On \"a second check\" the `TwoCheck` marks the colonies: those holding the insert take an amber tick, the empty-ring colonies a grey cross (grey screen label \"second marker, or read the DNA\"). On \"Each of those colonies is a clone\" one ticked colony pulses and b16's `DivisionTree` grows briefly from it (tag \"a clone of one transformed cell\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "use-it",
+      "visualDecision": "adjust",
+      "visualReference": "a sixth station \"use\" slides onto the track and enlarges; the five finished stations sit as grey thumbnails.",
+      "teachingReason": "Use it: Copying the gene isn't the same as using it.",
+      "narrationCue": "promoter",
+      "motionPurpose": "On the spoken cues: The recombinant ring returns large. On \"promoter\" a grey-plum block lights just before the amber insert (b06b's promoter colour), and the small ochre polymerase bean from b06b settles on it (the term writes on with the gloss \"where RNA polymerase starts\"). On \"reads it like one of its own genes\" an",
+      "motionRole": "explain",
+      "onScreenChange": "a sixth station \"use\" slides onto the track and enlarges; the five finished stations sit as grey thumbnails. The recombinant ring returns large. On \"promoter\" a grey-plum block lights just before the amber insert (b06b's promoter colour), and the small ochre polymerase bean from b06b settles on it (the term writes on with the gloss \"where RNA polymerase starts\"). On \"reads it like one of its own genes\" an mRNA strip peels off the insert toward a ribosome glyph. On \"the genetic code is shared\" the `CodonMatch` draws: one codon box in the centre, a bacterial ribosome glyph on its left and a human-cell ribosome glyph on its right, both producing the same amino acid bead (tag \"same codons, same amino acids\", replacing the promoter gloss). On \"two chains separately\" two short coded chains (A and B) come out of two bacterium glyphs; on \"joined them into insulin\" the chains move together and two small bond ticks link them, then the joined shape drops into `m6-insulin-vial-v1.png` (tag \"chains made apart, then joined\"). On \"huge tanks\" new `m6-fermenter-tank-v1.png` appears with coded bacterium glyphs swirling in a window inset (grey tag \"fermenters\", replacing the chains tag). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "plants",
+      "visualDecision": "adjust",
+      "visualReference": "the track resets to show the same stations with the plant parts swapped in (\"cut\" and \"paste\" thumbnails stay; \"put in\" and \"pick\" get leaf icons).",
+      "teachingReason": "Plants need a different carrier: Plants need a different carrier, because the gene has to cross a tough cell wall and end up in the plant's own chromosomes.",
+      "narrationCue": "Agrobacterium / transgenic",
+      "motionPurpose": "On the spoken cues: `b6a-plant-cell-v1.png` appears; on \"tough cell wall\" its wall outline pulses with a thin amber trace (tag \"cell wall\"); on \"the plant's own chromosomes\" a thin ring marks its nucleus, with slim coded chromosomes inside (tag \"into the chromosomes\", replacing \"cell wall\"). On \"Agrobacterium\"",
+      "motionRole": "explain",
+      "onScreenChange": "the track resets to show the same stations with the plant parts swapped in (\"cut\" and \"paste\" thumbnails stay; \"put in\" and \"pick\" get leaf icons). `b6a-plant-cell-v1.png` appears; on \"tough cell wall\" its wall outline pulses with a thin amber trace (tag \"cell wall\"); on \"the plant's own chromosomes\" a thin ring marks its nucleus, with slim coded chromosomes inside (tag \"into the chromosomes\", replacing \"cell wall\"). On \"Agrobacterium\" `b6a-bacterium-v1.png` appears tinted beside the cell (term writes on with the gloss \"a soil bacterium that puts DNA into plant chromosomes\"). On \"inserts a piece of its plasmid DNA\" `AgroTransfer` passes a short teal strip from the bacterium's ring through the wall and into the nucleus, where it joins one of the chromosomes. On \"remove its disease-causing genes\" a red-brown block on that strip lifts out and an amber block slides in (b09's `StripInsert`; tag \"disease genes out, useful gene in\"). On \"Bt cotton\" `m6-bt-cotton-v1.png` appears at the right with a grey screen tag \"gene from *Bacillus thuringiensis*\" (italic species name, screen only). On \"grown into whole plants\" `m6-tissue-culture-jars-v1.png` appears between the cell and the cotton plant, with coded arrows cell, jars, plant (grey screen label \"transformed cells selected with a marker, grown into plants\"). On \"Every cell\" the cotton plate takes a faint amber wash and a small seed glyph below it takes the same amber strip (tag \"in every cell, and in the seeds\"). On \"transgenic\" the term writes on with the gloss \"DNA from another species, inserted\". During the hold, silent and small in grey: b09's lane 2 icon (a pair of parent strips sending a reshuffled strip to an offspring) with a grey tag \"breeding: only parents that can interbreed\" (no narration; the contrast is in key note 5). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the full track, stations at equal weight.",
+      "teachingReason": "Memory: Here's the whole method in four words: cut, paste, put in, pick.",
+      "narrationCue": "cut, paste, put in, pick / matching sticky ends",
+      "motionPurpose": "On the spoken cues: Four handwritten words write on large, one per cue, each above its station thumbnail: \"Cut,\" (scissor-jaw blob), \"paste,\" (clasp blob), \"put in,\" (ring entering the bacterium), \"pick.\" (dish with a few colonies). On \"matching sticky ends\" a second line writes beneath: \"Same enzyme, matching sticky",
+      "motionRole": "explain",
+      "onScreenChange": "the full track, stations at equal weight. Four handwritten words write on large, one per cue, each above its station thumbnail: \"Cut,\" (scissor-jaw blob), \"paste,\" (clasp blob), \"put in,\" (ring entering the bacterium), \"pick.\" (dish with a few colonies). On \"matching sticky ends\" a second line writes beneath: \"Same enzyme, matching sticky ends.\" with a small pair of overhangs fitting together. A small grey unspoken note sits under it: \"(or any enzyme pair that leaves matching ends)\". Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "adjust",
+      "visualReference": "the track clears.",
+      "teachingReason": "Unseen transfer task (attempt one (cheese enzyme bacteria)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. Scientists have an",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (cheese enzyme bacteria))",
+      "motionRole": "explain",
+      "onScreenChange": "the track clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m6-bacterium-plasmid-v1.png` small at its upper left: \"Chymosin is an enzyme used in cheesemaking. Scientists have an intron-free copy of the calf gene for chymosin, and a plasmid that carries a gene for resistance to the antibiotic ampicillin.\" Demand: \"Describe how the scientists could produce *Escherichia coli* bacteria that carry the chymosin gene, and how they could identify these bacteria. (5 marks)\". One lined answer box. Nothing answer-bearing: no stations, enzymes or dishes. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "same restriction enzyme / ligase seals / Heat-shock / grow them on ampicillin / the classic mistake",
+      "motionPurpose": "On the spoken cues: A four-row `AnsTable` fills one row per cue, each row a station thumbnail and a short line: on \"same restriction enzyme\" \"intron-free copy of the calf gene\" and \"a plasmid\" underline amber, and row \"cut: same enzyme, matching sticky ends\" fills; on \"ligase seals\" row \"paste: ligase seals the",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A four-row `AnsTable` fills one row per cue, each row a station thumbnail and a short line: on \"same restriction enzyme\" \"intron-free copy of the calf gene\" and \"a plasmid\" underline amber, and row \"cut: same enzyme, matching sticky ends\" fills; on \"ligase seals\" row \"paste: ligase seals the joins\"; on \"Heat-shock\" row \"put in: heat shock, some take it up\"; on \"grow them on ampicillin\" \"resistance to the antibiotic ampicillin\" underlines and row \"pick: ampicillin plate, then check for the gene\" fills. On \"the classic mistake\" the chip \"every surviving colony carries the gene\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b6a-bacterium-v1.png` small at its upper left: \"A student inserts a human gene into a plasmid, next to a promoter recognised by bacteria. Copy 1 of the gene was taken directly from human chromosomal DNA. Copy 2 was made from the mRNA of the same gene. Bacteria given Copy 1 produce a faulty protein. Bacteria given Copy 2 produce the working human protein.\" Demand: \"Explain these results. (4 marks)\".",
+      "teachingReason": "Unseen transfer task (attempt two (a gene that fails)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A student puts a human gene, copied",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a gene that fails))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b6a-bacterium-v1.png` small at its upper left: \"A student inserts a human gene into a plasmid, next to a promoter recognised by bacteria. Copy 1 of the gene was taken directly from human chromosomal DNA. Copy 2 was made from the mRNA of the same gene. Bacteria given Copy 1 produce a faulty protein. Bacteria given Copy 2 produce the working human protein.\" Demand: \"Explain these results. (4 marks)\". One lined answer box. Nothing answer-bearing: no splicing strip or codon match. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "still has its introns / already removed / same genetic code / the classic mistake",
+      "motionPurpose": "On the spoken cues: Two short rows write on beneath it: on \"still has its introns\" \"taken directly from human chromosomal DNA\" underlines amber and row \"Copy 1: introns kept, read as code, faulty protein\" fills, with a tiny coded strip showing grey blocks inside the amber; on \"already removed\" \"made from the mRNA\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Two short rows write on beneath it: on \"still has its introns\" \"taken directly from human chromosomal DNA\" underlines amber and row \"Copy 1: introns kept, read as code, faulty protein\" fills, with a tiny coded strip showing grey blocks inside the amber; on \"already removed\" \"made from the mRNA\" underlines and row \"Copy 2: introns removed, correct coding sequence, working protein\" fills, with an all-amber strip; on \"same genetic code\" \"a promoter recognised by bacteria\" underlines in grey and a small note \"promoter and code both fine in each\" writes in grey. On \"the classic mistake\" the chip \"bacteria use a different genetic code\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "six step chips write on in a row, one per cue, each with its station icon: \"intron-free DNA\", \"cut: restriction enzyme\", \"join: ligase\", \"put in: host\", \"pick: marker + check\", \"read: promoter\".",
+      "teachingReason": "Decision rule and handoff: So to describe recombinant DNA technology, name each tool and its job, in order.",
+      "narrationCue": "So to describe recombinant DNA technology, name each",
+      "motionPurpose": "On the spoken cues: A bracket under them: \"then: the product (insulin, Bt cotton)\". A \"Next\" chip slides in at the lower right: \"Next: which benefits hold up?\" (small insulin vial and cotton boll thumbnails). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "six step chips write on in a row, one per cue, each with its station icon: \"intron-free DNA\", \"cut: restriction enzyme\", \"join: ligase\", \"put in: host\", \"pick: marker + check\", \"read: promoter\". A bracket under them: \"then: the product (insulin, Bt cotton)\". A \"Next\" chip slides in at the lower right: \"Next: which benefits hold up?\" (small insulin vial and cotton boll thumbnails). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b18-learning-review.md",
+      "sha256": "327fe90382ac334b83cb3213e8f1184a61cbc6c4622f1cbcf38f0ac9d9095808"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b18-claude-science-check.md",
+      "sha256": "90df66e9692b235667afba4654f2ed77def0e86101901046a8c7e11a8ea8863f"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

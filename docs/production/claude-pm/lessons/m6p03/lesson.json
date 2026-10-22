@@ -1,0 +1,176 @@
+{
+  "title": "Measuring the pH of a range of acids and bases: how do you get a reading you can trust?",
+  "subtitle": "A freshly calibrated pH meter reads distilled water as 5.8. Is the meter wrong, the method wrong, or the water? How do you measure the pH of a range of acids and bases so the readings can be trusted, and what does each reading tell you about the ions in the sample?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 7,
+  "lessonIntent": "choosing a range of solutions at one concentration; explaining why a pH meter needs calibrating and doing it with buffers on both sides of 7, as close to the readings as possible; carrying out the measuring routine and explaining rinsing, blotting, waiting and fresh portions; recording means; stating whether each solution has more hydronium or more hydroxide, and comparing two readings by factors of ten; explaining why open distilled water reads below 7; comparing a meter with indicator paper; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No pH calculation (chem-m6-c07), no strength investigation (chem-m6-p04), no buffer chemistry (chem-m6-c11).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This pH meter has just been calibrated, and it reads distilled water as five point eight two. Shouldn't pure water be seven? So is the meter faulty? Hold that thought. In this practical you measure the pH of a range of acids and bases, and before you trust a number like this, the method has to be right."
+      }
+    },
+    {
+      "id": "range",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the range: hydrochloric acid, acetic acid, distilled water, ammonia solution and sodium hydroxide. The two acids and two bases are all zero point zero one zero moles per litre, so any difference comes from the substance, not the amount dissolved. Pour about twenty millilitres of each into a clean, labelled beaker."
+      }
+    },
+    {
+      "id": "meter",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "How does the meter know? The probe has a thin glass bulb at its tip. Hydronium ions in the solution produce a tiny voltage across that glass, and the meter turns the voltage into a pH number. But the link between voltage and pH drifts as the probe ages, and it changes with temperature. So the meter has to be shown what the right answers look like."
+      }
+    },
+    {
+      "id": "calibration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "That's calibration. You dip the probe into buffer solutions, which hold a known, steady pH. Start with the pH seven buffer, then pH four, and add pH ten because you'll measure bases too. The meter draws a straight line through those known points. One buffer gives only one point, so the meter would have to guess the slope. Buffers on both sides of seven check the line for acids and for bases. Calibrate at the same temperature as your samples, on the day you measure."
+      }
+    },
+    {
+      "id": "routine",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Then, for every sample: rinse the probe with distilled water, and gently blot it. Any solution left on the glass would be carried into the next beaker, and change its reading. Lower the bulb fully in, swirl gently, and wait until the reading stops changing, because the glass needs time to respond. Take three readings, each in a fresh portion, so one contaminated portion can't affect all three."
+      }
+    },
+    {
+      "id": "results",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are one class's results, as means of three readings. Hydrochloric acid, two point zero three. Acetic acid, three point four zero. Distilled water, five point nine six, with readings that wandered. Ammonia, ten point five nine. And sodium hydroxide, eleven point nine six. Notice the repeats for each acid and base agree within about zero point zero two."
+      }
+    },
+    {
+      "id": "ions",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So what do the numbers say about the ions? Below seven, a solution has more hydronium ions than hydroxide ions. Above seven, more hydroxide. Hydrochloric acid reads about one point four lower than acetic acid. Each pH step is ten times, so two steps would be a hundred, and this is in between: about twenty three times as many hydronium ions, at the same concentration. That's strength, and the next practical tests it properly. Both bases have extra hydroxide, sodium hydroxide far more."
+      }
+    },
+    {
+      "id": "water",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the water. The meter wasn't faulty. Carbon dioxide from the air dissolves in water and forms a little carbonic acid, which gives a few hydronium ions to the water. So water left open to the air really is slightly acidic. And with so few ions, the probe struggles to settle, so the readings drift and spread. Distilled doesn't always mean neutral."
+      }
+    },
+    {
+      "id": "meter-vs-indicator",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why use a meter at all? Universal indicator paper gives a colour, which you match to a chart to about the nearest whole number, and two people can judge the same colour differently. The meter gives two decimal places. But careful: those decimals only mean something if the meter is calibrated."
+      }
+    },
+    {
+      "id": "variables",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, the variables. The independent variable is which solution you test. The dependent variable is the pH. And the controlled variables are the concentration, the temperature, the volume in each beaker, the same calibrated meter, and the same rinsing routine."
+      }
+    },
+    {
+      "id": "validity-reliability",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the three words from the equilibrium practical. Validity: are you measuring the pH of the solution you meant to? Rinsing, fresh portions and labelled beakers keep anything else out of the reading. Reliability: do repeated readings agree? For the acids and bases, yes. For the water, no. Accuracy: how close is the reading to the true pH? That depends on calibration: buffers on both sides of seven, as close to your readings as you can, at your samples' temperature."
+      }
+    },
+    {
+      "id": "risk-assessment",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The risk assessment. At zero point zero one zero moles per litre, these acids and bases are too dilute to be classified as hazardous, but wear safety glasses anyway, because a splash in the eye can still irritate. They're made up from stronger stocks, and the concentrated ones are corrosive. The glass bulb is thin and breaks easily, so keep the probe in its holder, and never stir with it."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the routine to remember: calibrate first, rinse between, wait for steady. And when you read the result, one pH step is ten times the hydronium."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A student measures sodium hydroxide solution, then, without rinsing the probe, measures distilled water and gets nine point two. Other groups got about six for the same water. Explain the difference, and describe how she should change her method. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Sodium hydroxide left on the probe was carried into the water. Water has almost no ions of its own, so a tiny amount of hydroxide raises its pH a lot. She should rinse and blot the probe between samples, then measure a fresh portion. Averaging more readings wouldn't fix it: without rinsing, the carried-over hydroxide still pushes the average up."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more. A student calibrates with a pH seven buffer only, then reads the hydrochloric acid three times: two point three one, two point three zero and two point three two. Another group, using pH seven and four buffers, gets two point zero three. Evaluate the reliability and accuracy of her results. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Her results are reliable: the three readings agree within zero point zero two. But they aren't accurate: they sit about zero point three above the other group's two point zero three. With one buffer, the meter had to guess its slope, so every reading shares the same error. Calibrate with pH four as well, then repeat. \"They agree, so they're accurate\" is the classic slip."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So: calibrate with buffers on both sides of seven, rinse and blot between samples, wait for a steady reading, and repeat in fresh portions. Then read each number as hydronium against hydroxide, each step ten times. Next: using pH to compare strong and weak acids and bases."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

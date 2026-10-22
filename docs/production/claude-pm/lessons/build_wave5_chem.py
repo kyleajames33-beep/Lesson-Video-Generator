@@ -7907,6 +7907,4131 @@ M6C16_ROWS = {
 }
 
 # END generated rows: m6c15-m6c16
+# BEGIN generated rows: m6p02-m6p06, m6g01c-m6g03c
+M6P02_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-foam-cup-calorimeter-v1.png` centre with the coded amber readout chip on the probe top reading \"21.5 °C\".",
+        "Hook (the peak you never see): Here's an odd thing about this experiment.",
+        "escaping / never actually see",
+        "On the spoken cues: The readout counts up to \"27.8 °C\" over about 2 seconds as the cup window glows faint warm orange. On \"escaping\" short orange arrows leave through the cup wall and the lid gap (C03 scene 9 convention), already moving while the readout is still climbing. On \"never actually see\" a dashed amber ghost readout \"?\" appears just above the real one, with a small bracket between them. Heading writes: \"The peak you never see.\"",
+        "explain",
+        "`m6-foam-cup-calorimeter-v1.png` centre with the coded amber readout chip on the probe top reading \"21.5 °C\". The readout counts up to \"27.8 °C\" over about 2 seconds as the cup window glows faint warm orange. On \"escaping\" short orange arrows leave through the cup wall and the lid gap (C03 scene 9 convention), already moving while the readout is still climbing. On \"never actually see\" a dashed amber ghost readout \"?\" appears just above the real one, with a small bracket between them. Heading writes: \"The peak you never see.\" Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "setup": [
+        "adjust",
+        "the new plate `p02-foam-cup-in-beaker-v1.png` (Codex item 1: lidded foam cup standing in a glass beaker, probe and plastic stirrer through the lid) centre, readout chip on the probe.",
+        "The set-up, and why each part is there: Here's the set-up.",
+        "beaker / insulator / lid / measuring cylinders",
+        "On the spoken cues: Two measuring cylinders (`m6-measuring-cylinder-v1.png`, Codex item 2, twice, coded fills to the 50 mL mark and coded labels \"HCl 1.00 mol/L\" and \"NaOH 1.00 mol/L\") stand left. On \"beaker\" a pen ring circles the outer beaker; tag \"stops tipping\". On \"insulator\" a small coded lens on the foam wall shows trapped air cells with an orange arrow stopping inside them; tag \"foam: insulator\". On \"lid\" most of the orange",
+        "explain",
+        "the new plate `p02-foam-cup-in-beaker-v1.png` (Codex item 1: lidded foam cup standing in a glass beaker, probe and plastic stirrer through the lid) centre, readout chip on the probe. Two measuring cylinders (`m6-measuring-cylinder-v1.png`, Codex item 2, twice, coded fills to the 50 mL mark and coded labels \"HCl 1.00 mol/L\" and \"NaOH 1.00 mol/L\") stand left. On \"beaker\" a pen ring circles the outer beaker; tag \"stops tipping\". On \"insulator\" a small coded lens on the foam wall shows trapped air cells with an orange arrow stopping inside them; tag \"foam: insulator\". On \"lid\" most of the orange arrows at the top of the cup are blocked by the lid (one thin arrow still escapes at the probe hole); tag \"lid: less heat lost to the air\"; the probe and stirrer holes get small grey ticks (shown, not spoken). On \"measuring cylinders\" the two cylinder labels dim to grey, the \"50.0 mL\" marks get pen underlines, and a two-line tag writes \"volume → moles (n = cV)\" and \"volume → mass (1 mL ≈ 1 g)\". The acid cylinder tilts along a coded arc and empties into the cup (no hands). Earlier tags dim as each new one writes. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "start-temperature": [
+        "new",
+        "the cup (acid inside) left with readout \"21.4 °C\"; the NaOH cylinder right with a coded probe outline and its own readout \"21.6 °C\".",
+        "The starting temperature: Before mixing, measure the temperature of each solution, and wait until both are steady.",
+        "each / average / no reaction",
+        "On the spoken cues: On \"each\" both readouts pulse in turn. On \"average\" a line writes in the right zone: \"T(initial) = (21.4 + 21.6) ÷ 2 = 21.5 °C\". On \"no reaction\" a crossed chip \"use the acid's temperature only\" fades in (caption \"a warmer base adds heat without reacting\").",
+        "explain",
+        "the cup (acid inside) left with readout \"21.4 °C\"; the NaOH cylinder right with a coded probe outline and its own readout \"21.6 °C\". On \"each\" both readouts pulse in turn. On \"average\" a line writes in the right zone: \"T(initial) = (21.4 + 21.6) ÷ 2 = 21.5 °C\". On \"no reaction\" a crossed chip \"use the acid's temperature only\" fades in (caption \"a warmer base adds heat without reacting\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "mix-log": [
+        "new",
+        "the NaOH cylinder tilts along a coded arc and empties into the cup; the lid settles (coded offset) and the stirrer bobs on a short loop.",
+        "Mix and keep logging: Now pour in the sodium hydroxide quickly, put the lid on, and stir.",
+        "thirty seconds / after",
+        "On the spoken cues: A coded stopwatch chip starts at \"0:00\" (\"mixing: t = 0\"). On \"thirty seconds\" the readout ticks and a small results table writes in the right zone, one row per tick: \"0.5 min 25.9 °C\", \"1.0 min 27.8 °C\", \"1.5 min 27.8 °C\", \"2.0 min 27.7 °C\", then rows run faster to \"7.0 min 26.7 °C\" (older rows scroll up and dim). On \"after\" the rows from 1.5 min onward get a teal side bracket \"keep these\".",
+        "explain",
+        "the NaOH cylinder tilts along a coded arc and empties into the cup; the lid settles (coded offset) and the stirrer bobs on a short loop. A coded stopwatch chip starts at \"0:00\" (\"mixing: t = 0\"). On \"thirty seconds\" the readout ticks and a small results table writes in the right zone, one row per tick: \"0.5 min 25.9 °C\", \"1.0 min 27.8 °C\", \"1.5 min 27.8 °C\", \"2.0 min 27.7 °C\", then rows run faster to \"7.0 min 26.7 °C\" (older rows scroll up and dim). On \"after\" the rows from 1.5 min onward get a teal side bracket \"keep these\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "table build",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "graph": [
+        "new",
+        "the table shrinks out; the coded lineGraph fills the centre: x axis \"time after mixing (min)\" 0 to 7, y axis \"temperature (°C)\" 21 to 29, grid every 0.5 min and 0.5 °C.",
+        "The temperature-time graph: Plot temperature against time.",
+        "twenty seven point eight / straight line / lower",
+        "On the spoken cues: A dashed grey horizontal at 21.5 °C, tag \"average starting temperature\". The points plot on cue, rising then falling. On \"twenty seven point eight\" the highest point gets an amber ring and tag \"highest reading: 27.8 °C\". On \"straight line\" the cooling points from 1.5 min onward light teal; tag \"cooling line: only losing heat\". On \"lower\" small orange arrows leave the rising part of the curve, and the ghost \"?\" from",
+        "explain",
+        "the table shrinks out; the coded lineGraph fills the centre: x axis \"time after mixing (min)\" 0 to 7, y axis \"temperature (°C)\" 21 to 29, grid every 0.5 min and 0.5 °C. A dashed grey horizontal at 21.5 °C, tag \"average starting temperature\". The points plot on cue, rising then falling. On \"twenty seven point eight\" the highest point gets an amber ring and tag \"highest reading: 27.8 °C\". On \"straight line\" the cooling points from 1.5 min onward light teal; tag \"cooling line: only losing heat\". On \"lower\" small orange arrows leave the rising part of the curve, and the ghost \"?\" from the hook returns above the highest point. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "extrapolate": [
+        "new",
+        "the teal line of best fit draws through the cooling points, then continues as a dashed teal line back toward t = 0.",
+        "Extrapolate the cooling line back: So draw a straight line through the cooling points, and extend it back to the moment of mixing.",
+        "mixing / instant / twenty eight point one / extrapolation / same rate",
+        "On the spoken cues: On \"mixing\" a vertical marker draws at t = 0, tag \"moment of mixing\". On \"instant\" a faint grey dashed step draws from the 21.5 °C start line straight up the t = 0 marker toward the top of the dashed teal line, grey tag \"no heat lost: instant jump\" (dims at the end of the sentence). On \"twenty eight point one\" the dashed line meets the marker with an amber dot and tag \"28.1 °C (extrapolated)\"; the ghost \"?\" fills in",
+        "explain",
+        "the teal line of best fit draws through the cooling points, then continues as a dashed teal line back toward t = 0. On \"mixing\" a vertical marker draws at t = 0, tag \"moment of mixing\". On \"instant\" a faint grey dashed step draws from the 21.5 °C start line straight up the t = 0 marker toward the top of the dashed teal line, grey tag \"no heat lost: instant jump\" (dims at the end of the sentence). On \"twenty eight point one\" the dashed line meets the marker with an amber dot and tag \"28.1 °C (extrapolated)\"; the ghost \"?\" fills in as \"28.1\". A bracket between 27.8 and 28.1 reads \"heat already lost\". On \"extrapolation\" the term and meaning write under the graph: \"extrapolate: extend a line beyond the measured points\". On \"same rate\" a grey condition tag writes: \"assumes the same cooling rate during the rise\". The \"highest reading\" tag dims. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "calculate": [
+        "new",
+        "the graph shrinks to the left with its two values kept (\"27.8 highest\", \"28.1 extrapolated\").",
+        "Calculate, as in the last video: Now the calculation, as in the last video.",
+        "six point six / two thousand seven hundred and fifty nine joules / minus fifty five / minus fifty three",
+        "On the spoken cues: Task line: \"Find ΔH of neutralisation\". Equation strip: \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". Givens, grouped with units, small at the top of the right zone: \"HCl: 50.0 mL, 1.00 mol/L | NaOH: 50.0 mL, 1.00 mol/L | T: 21.5 °C → 28.1 °C (extrapolated)\" with grey \"assume: 1.00 g/mL; c = 4.18 J g⁻¹ °C⁻¹\". The task line, equation strip, givens and the graph's two kept values stay grey while the working writes; bright",
+        "explain",
+        "the graph shrinks to the left with its two values kept (\"27.8 highest\", \"28.1 extrapolated\"). Task line: \"Find ΔH of neutralisation\". Equation strip: \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". Givens, grouped with units, small at the top of the right zone: \"HCl: 50.0 mL, 1.00 mol/L | NaOH: 50.0 mL, 1.00 mol/L | T: 21.5 °C → 28.1 °C (extrapolated)\" with grey \"assume: 1.00 g/mL; c = 4.18 J g⁻¹ °C⁻¹\". The task line, equation strip, givens and the graph's two kept values stay grey while the working writes; bright at any moment: the current line, then the answer chip, then the comparison chip. One line per cue, earlier lines dimming: on \"six point six\" \"ΔT = 28.1 − 21.5 = 6.6 °C\"; on \"two thousand seven hundred and fifty nine\" \"q = 100.0 × 4.18 × 6.6 = 2758.8 J\" with the C03 grey tag \"keep the digits; round at the end\"; then \"n(H₂O) = 1.00 × 0.0500 = 0.0500 mol\"; on \"minus fifty five\" \"ΔH = −2.7588 kJ ÷ 0.0500 mol = −55.18 → −55 kJ/mol (2 s.f.)\" and the answer chip pins. On \"minus fifty three\" a comparison chip writes beside it: \"highest reading: ΔT = 6.3 °C → −53 kJ/mol\"; a short number line marks −53, −55 and −57 with \"closer\" between −55 and −57. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone: on \"one value\" a header \"Repeated measurement: nothing deliberately changed between runs\" with three small identical cup icons (runs 1, 2, 3).",
+        "The variables in a repeated measurement: So what are the variables?",
+        "one value / controlled variables",
+        "On the spoken cues: On \"controlled variables\" the list writes one item per phrase, each pen-linked to the matching thing on the cup plate: \"concentrations and volumes (50.0 mL each, 1.00 mol/L)\", \"starting temperature\", \"cup, lid, stirring, reading times\". (Revision 2: the unspoken grey \"comparing acids\" card is dropped; it was unnarrated reading during a new idea.)",
+        "explain",
+        "the variables card writes in the right zone: on \"one value\" a header \"Repeated measurement: nothing deliberately changed between runs\" with three small identical cup icons (runs 1, 2, 3). On \"controlled variables\" the list writes one item per phrase, each pen-linked to the matching thing on the cup plate: \"concentrations and volumes (50.0 mL each, 1.00 mol/L)\", \"starting temperature\", \"cup, lid, stirring, reading times\". (Revision 2: the unspoken grey \"comparing acids\" card is dropped; it was unnarrated reading during a new idea.) Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 1 second"
+    ],
+    "errors": [
+        "new",
+        "the error-chain row writes across the right zone: four linked boxes \"source → ΔT → q → ΔH\".",
+        "Errors: follow the chain: Why is minus fifty five still short of minus fifty seven?",
+        "chain / small / less negative / not every one / big / human error",
+        "On the spoken cues: On \"small\" the first box fills \"heat lost (walls, lid) or absorbed (cup, probe)\" and down arrows light in turn: \"ΔT ↓\", \"q ↓\", \"ΔH less negative\" (with the cup plate small beside it, orange arrows leaving the wall and lid, and a faint orange glow in the cup wall and probe). On \"not every one\" the first row dims, scene 3's small \"21.4 °C\" acid readout chip crossfades in beside a second row, which writes \"starting",
+        "explain",
+        "the error-chain row writes across the right zone: four linked boxes \"source → ΔT → q → ΔH\". On \"small\" the first box fills \"heat lost (walls, lid) or absorbed (cup, probe)\" and down arrows light in turn: \"ΔT ↓\", \"q ↓\", \"ΔH less negative\" (with the cup plate small beside it, orange arrows leaving the wall and lid, and a faint orange glow in the cup wall and probe). On \"not every one\" the first row dims, scene 3's small \"21.4 °C\" acid readout chip crossfades in beside a second row, which writes \"starting temperature too low (only the acid's 21.4 °C used)\"; on \"big\" its arrows light pointing up, in amber: \"ΔT ↑\", \"q ↑\", \"ΔH more negative\". (The pure-water assumption is not shown; it stays in author note d.) On \"human error\" a chip \"human error\" fades in and is crossed (caption \"name the cause: e.g. heat loss through the lid gap\"). Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Plate crossfade",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "validity-reliability": [
+        "new",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what it should?",
+        "Validity, reliability and accuracy: Now the three words from the equilibrium practical.",
+        "Validity / Reliability / Accuracy / every / heat loss",
+        "On the spoken cues: Rise from the reaction only; heat kept in (both start temperatures measured and averaged, lid, foam, extrapolation).\" \"Reliability: repeats agree? Runs: −55, −54, −56 kJ/mol; mean −55 kJ/mol\" (three small cup icons with their values; a bracket \"within about 1 kJ/mol of the mean\"). \"Accuracy: close to the accepted value (about −57 kJ/mol)? Improve by reducing heat loss.\" On \"every\" each of the three cup icons gets a",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what it should? Rise from the reaction only; heat kept in (both start temperatures measured and averaged, lid, foam, extrapolation).\" \"Reliability: repeats agree? Runs: −55, −54, −56 kJ/mol; mean −55 kJ/mol\" (three small cup icons with their values; a bracket \"within about 1 kJ/mol of the mean\"). \"Accuracy: close to the accepted value (about −57 kJ/mol)? Improve by reducing heat loss.\" On \"every\" each of the three cup icons gets a small orange arrow leaving its lid, and all three values sit below the −57 mark. On \"heat loss\" a chip \"more repeats make it more accurate\" fades in and is crossed (caption \"repeats improve reliability; heat loss still lowers every run\"). A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its plate small in the hazard cell: \"1.00 mol/L NaOH (corrosive, GHS H314)\" / \"severe skin burns and eye damage\" / \"safety glasses or goggles; rinse splashes with plenty of water (wash bottle `m6-wash-bottle-v1.png`); teacher-prepared portions\"; \"1.00 mol/L HCl (low hazard at this concentration; may be corrosive to metals, H290)\" / \"eye irritation from a splash\" / \"eye protection\"; \"cup tipping\" / \"spill of corrosive solution\" / \"cup stands in a beaker; slotted lid\"; \"glass thermometer\" / \"breaks, cuts, spills\" / \"use the stirrer or a probe; do not stir with a thermometer\"; \"waste\" / \"none at this strength\" / \"neutral NaCl solution: sink with plenty of water, if school rules allow\".",
+        "The risk assessment: Before you start, the risk assessment.",
+        "corrosive / stirrer",
+        "On the spoken cues: Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; gloves (`m5x-gloves-v1.png`) small with grey tag \"optional, per school\". Footer chip: \"follow your school's risk assessment and the bottle's safety data sheet\". Rows dim as each new row writes, keeping the current row and the header bright.",
+        "explain",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its plate small in the hazard cell: \"1.00 mol/L NaOH (corrosive, GHS H314)\" / \"severe skin burns and eye damage\" / \"safety glasses or goggles; rinse splashes with plenty of water (wash bottle `m6-wash-bottle-v1.png`); teacher-prepared portions\"; \"1.00 mol/L HCl (low hazard at this concentration; may be corrosive to metals, H290)\" / \"eye irritation from a splash\" / \"eye protection\"; \"cup tipping\" / \"spill of corrosive solution\" / \"cup stands in a beaker; slotted lid\"; \"glass thermometer\" / \"breaks, cuts, spills\" / \"use the stirrer or a probe; do not stir with a thermometer\"; \"waste\" / \"none at this strength\" / \"neutral NaCl solution: sink with plenty of water, if school rules allow\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; gloves (`m5x-gloves-v1.png`) small with grey tag \"optional, per school\". Footer chip: \"follow your school's risk assessment and the bottle's safety data sheet\". Rows dim as each new row writes, keeping the current row and the header bright. Hold about 3 seconds (reading hold; the table returns in the key notes). Hold about 3 seconds (reading hold; the table returns in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the table returns in the key notes)"
+    ],
+    "memory-aid": [
+        "new",
+        "the aid writes large and handwritten: \"Lid on.",
+        "Memory aid: Six words to keep: lid on, log on, line back.",
+        "lid on, log on, line back",
+        "On the spoken cues: Log on. Line back.\" Under each phrase a small icon: the lid closing on the cup outline; the stopwatch chip with ticking rows; the graph thumbnail with its dashed line running back to t = 0. Condition tag: \"line back to the moment of mixing\".",
+        "explain",
+        "the aid writes large and handwritten: \"Lid on. Log on. Line back.\" Under each phrase a small icon: the lid closing on the cup outline; the stopwatch chip with ticking rows; the graph thumbnail with its dashed line running back to t = 0. Condition tag: \"line back to the moment of mixing\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Fifty millilitres each of one mole",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"50.0 mL of 1.00 mol/L nitric acid and 50.0 mL of 1.00 mol/L potassium hydroxide solution, both at 20.9 °C, are mixed in a lidded polystyrene cup at time 0. The temperature is recorded every 30 seconds, as shown in the graph. Assume the density of the mixture is 1.00 g/mL and its specific heat capacity is 4.18 J g⁻¹ °C⁻¹. Use the graph to determine the temperature change, then calculate the molar enthalpy of neutralisation.\" Beside it the coded graph: x axis \"time after mixing (min)\" 0 to 5, y axis \"temperature (°C)\" 20 to 28, grid every 0.5 min and 0.2 °C, y labels every 1 °C from 20 to 28 plus every 0.2 °C from 26.0 to 27.6 (the region that matters, readable on a phone when paused), points every 30 s at 0 min 20.9, 0.5 min 25.6, 1.0 min 27.1, 1.5 min 27.1, 2.0 min 27.0, 2.5 min 26.9, 3.0 min 26.8, 3.5 min 26.7, 4.0 min 26.6, 4.5 min 26.5, 5.0 min 26.4; no line drawn, no values printed beside the points (the labelled grid carries them). The full question and graph stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no line, no dashed extension, no ladder.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top; the graph stays.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "twenty seven point four / six point five / minus fifty four / minus fifty two",
+        "On the spoken cues: On \"twenty seven point four\" the teal line draws through the points from 1.5 min onward and the dashed extension runs back to t = 0, meeting \"27.4 °C\"; \"both at 20.9 °C\" in the question is underlined and \"ΔT = 27.4 − 20.9 = 6.5 °C\" writes. \"50.0 mL ... 50.0 mL\" and \"1.00 g/mL\" and \"4.18 J g⁻¹ °C⁻¹\" are underlined as \"q = 100.0 × 4.18 × 6.5 = 2717 J\" writes; \"1.00 mol/L\" underlined as \"n(H₂O) = 1.00 × 0.0500 = 0.0500",
+        "explain",
+        "the question card shrinks to the top; the graph stays. On \"twenty seven point four\" the teal line draws through the points from 1.5 min onward and the dashed extension runs back to t = 0, meeting \"27.4 °C\"; \"both at 20.9 °C\" in the question is underlined and \"ΔT = 27.4 − 20.9 = 6.5 °C\" writes. \"50.0 mL ... 50.0 mL\" and \"1.00 g/mL\" and \"4.18 J g⁻¹ °C⁻¹\" are underlined as \"q = 100.0 × 4.18 × 6.5 = 2717 J\" writes; \"1.00 mol/L\" underlined as \"n(H₂O) = 1.00 × 0.0500 = 0.0500 mol\" writes. Earlier lines dim. On \"minus fifty four\" \"ΔH = −2.717 kJ ÷ 0.0500 mol = −54.34 → −54 kJ/mol\" and the answer chip pins, with a small grey tag beside it (not spoken): \"line read at 27.3 to 27.5 °C: −54 to −55 kJ/mol\". On \"minus fifty two\" a chip \"highest reading 27.1 °C: ΔT = 6.2 °C, −52 kJ/mol\" fades in and is crossed (caption \"extrapolate to the moment of mixing\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card, worded as printed: \"A student mixes 50.0 mL of 1.00 mol/L hydrochloric acid with 50.0 mL of 1.00 mol/L sodium hydroxide solution in an uncovered glass beaker.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. Another student mixes the same hydrochloric",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student mixes 50.0 mL of 1.00 mol/L hydrochloric acid with 50.0 mL of 1.00 mol/L sodium hydroxide solution in an uncovered glass beaker. She records the highest temperature shown on a thermometer and calculates the enthalpy of neutralisation as −46 kJ/mol. Identify the main source of error in her method, explain its effect on the calculated value, and suggest one improvement.\" Beside it `m6-beaker-v1.png` with a coded clear fill and `c8-thermometer-hot-v1.png` standing in it (no heat arrows). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no arrows, no cup, no error chain.",
+        [
+            "DrawPath",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "on \"heat loss\" \"uncovered glass beaker\" in the question is underlined and orange arrows leave through the beaker wall and the open top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "heat loss / less negative / lidded foam cup",
+        "On the spoken cues: On \"less negative\" the error-chain row from scene 9 writes small: \"heat loss → ΔT ↓ → q ↓ → ΔH less negative\", with \"−46 kJ/mol\" underlined in the question. On \"lidded foam cup\" the beaker crossfades to `p02-foam-cup-in-beaker-v1.png` and a graph thumbnail with its dashed extension appears; answer chip \"heat loss; lidded foam cup + extrapolation\". On \"human error\" a chip \"human error\" fades in and is crossed",
+        "explain",
+        "on \"heat loss\" \"uncovered glass beaker\" in the question is underlined and orange arrows leave through the beaker wall and the open top. On \"less negative\" the error-chain row from scene 9 writes small: \"heat loss → ΔT ↓ → q ↓ → ΔH less negative\", with \"−46 kJ/mol\" underlined in the question. On \"lidded foam cup\" the beaker crossfades to `p02-foam-cup-in-beaker-v1.png` and a graph thumbnail with its dashed extension appears; answer chip \"heat loss; lidded foam cup + extrapolation\". On \"human error\" a chip \"human error\" fades in and is crossed (caption \"name the cause\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Plate crossfade",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the plan card writes, each line lighting on its words: \"1 Foam cup, lid, in a beaker.\"",
+        "Decision rule and handoff: So: insulate and cover the cup, measure and average both starting temperatures, log past the peak, and extrapolate the cooling line back to the moment of mixing.",
+        "Next",
+        "On the spoken cues: \"2 Measure both starting temperatures; average.\" \"3 Log every 30 s past the peak.\" \"4 Extrapolate the cooling line to t = 0.\" \"5 Error → ΔT → q → ΔH.\" On \"Next\" a chip \"Next: where neutralisation solves a real problem\" appears with `m6-antacid-tablets-v1.png` small.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Foam cup, lid, in a beaker.\" \"2 Measure both starting temperatures; average.\" \"3 Log every 30 s past the peak.\" \"4 Extrapolate the cooling line to t = 0.\" \"5 Error → ΔT → q → ΔH.\" On \"Next\" a chip \"Next: where neutralisation solves a real problem\" appears with `m6-antacid-tablets-v1.png` small. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6P03_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-ph-meter-probe-beaker-v1.png` centre, beaker label coded \"distilled water\".",
+        "Hook (is the meter broken?): This pH meter has just been calibrated, and it reads distilled water as five point eight two.",
+        "five point eight two / seven",
+        "On the spoken cues: The readout flickers, then holds: on \"five point eight two\" it shows \"5.82\" (the class's first water reading, scene 6) with a small \"stable\" dot. On \"seven\" a ghost chip \"7.00?\" appears above the screen with a pen \"?\" between it and the reading. Heading writes: \"Faulty meter, or real?\" A small tag \"calibrated: yes\" sits under the meter.",
+        "explain",
+        "`m6-ph-meter-probe-beaker-v1.png` centre, beaker label coded \"distilled water\". The readout flickers, then holds: on \"five point eight two\" it shows \"5.82\" (the class's first water reading, scene 6) with a small \"stable\" dot. On \"seven\" a ghost chip \"7.00?\" appears above the screen with a pen \"?\" between it and the reading. Heading writes: \"Faulty meter, or real?\" A small tag \"calibrated: yes\" sits under the meter. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "range": [
+        "adjust",
+        "the meter slides to the left; five `m6-beaker-v1.png` copies slide into a row across the centre, each with a coded colourless fill and a coded label, writing on in turn as named: \"HCl\" (teal tab), \"acetic acid (ethanoic acid)\" (teal tab), \"distilled water\" (grey tab), \"ammonia, NH₃\" (violet tab), \"NaOH\" (violet tab).",
+        "The range of solutions: Here's the range: hydrochloric acid, acetic acid, distilled water, ammonia solution and sodium hydroxide.",
+        "zero point zero one zero moles per litre / labelled",
+        "On the spoken cues: On \"zero point zero one zero moles per litre\" a single bracket over the four acid and base beakers reads \"all 0.010 mol/L\"; the water beaker stays outside the bracket. On \"labelled\" each label gets a pen tick. Labels dim to grey after they write, except the bracket.",
+        "explain",
+        "the meter slides to the left; five `m6-beaker-v1.png` copies slide into a row across the centre, each with a coded colourless fill and a coded label, writing on in turn as named: \"HCl\" (teal tab), \"acetic acid (ethanoic acid)\" (teal tab), \"distilled water\" (grey tab), \"ammonia, NH₃\" (violet tab), \"NaOH\" (violet tab). On \"zero point zero one zero moles per litre\" a single bracket over the four acid and base beakers reads \"all 0.010 mol/L\"; the water beaker stays outside the bracket. On \"labelled\" each label gets a pen tick. Labels dim to grey after they write, except the bracket. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "meter": [
+        "adjust",
+        "the probe plate `m6-ph-probe-holder-v1.png` (Codex item 1: the probe alone, clamped in a small electrode holder) enlarges at centre; on \"bulb\" a pen ring circles the glass bulb and a cutaway lens opens on it: teal hydronium tokens near the outer glass surface.",
+        "How the meter works: How does the meter know?",
+        "bulb / voltage / drifts",
+        "On the spoken cues: On \"voltage\" a small coded arrow labelled \"tiny voltage\" runs up the cable to the meter, and a converter strip writes: \"voltage → pH\". On \"drifts\" the strip's arrow wobbles and a grey tag writes \"probe age, temperature\". The lens closes.",
+        "explain",
+        "the probe plate `m6-ph-probe-holder-v1.png` (Codex item 1: the probe alone, clamped in a small electrode holder) enlarges at centre; on \"bulb\" a pen ring circles the glass bulb and a cutaway lens opens on it: teal hydronium tokens near the outer glass surface. On \"voltage\" a small coded arrow labelled \"tiny voltage\" runs up the cable to the meter, and a converter strip writes: \"voltage → pH\". On \"drifts\" the strip's arrow wobbles and a grey tag writes \"probe age, temperature\". The lens closes. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "calibration": [
+        "adjust",
+        "three buffer bottles (`m6-buffer-bottle-v1.png`, Codex item 2, three copies with coded label bands \"pH 4.00\" red, \"pH 7.00\" yellow, \"pH 10.00\" blue; native aspect, scaled uniformly) stand in the right zone.",
+        "Calibration with buffers: That's calibration.",
+        "calibration / buffer solutions / straight line / both sides",
+        "On the spoken cues: On \"calibration\" the word and meaning write: \"calibration: show the meter solutions of known pH\". On \"buffer solutions\" a tag \"buffer: holds a known pH (later video)\". Both tags dim to grey as the probe moves into the first bottle. The probe moves on its arc into each bottle in turn, 7, then 4, then 10; the meter readout settles on \"7.00\", \"4.00\", \"10.00\" and a green tick lights on each bottle. Beside the bottles a",
+        "explain",
+        "three buffer bottles (`m6-buffer-bottle-v1.png`, Codex item 2, three copies with coded label bands \"pH 4.00\" red, \"pH 7.00\" yellow, \"pH 10.00\" blue; native aspect, scaled uniformly) stand in the right zone. On \"calibration\" the word and meaning write: \"calibration: show the meter solutions of known pH\". On \"buffer solutions\" a tag \"buffer: holds a known pH (later video)\". Both tags dim to grey as the probe moves into the first bottle. The probe moves on its arc into each bottle in turn, 7, then 4, then 10; the meter readout settles on \"7.00\", \"4.00\", \"10.00\" and a green tick lights on each bottle. Beside the bottles a small coded calibration graph: x axis \"pH\" 0 to 14, y axis \"meter signal (voltage)\", no numbers on the y axis. As each buffer is read its point lights on the graph (7, then 4, then 10). On \"straight line\" a teal line draws through the three points, with short dashed ends running on to pH 2 and pH 12; grey tag \"readings near 2 and 12 use the same line, extended\". On \"one point\" the 4 and 10 points briefly fade, leaving the 7 point with two faint grey lines of different slope pivoting through it, tag \"one point: slope unknown\"; then the three points and the line return. On \"both sides\" the acid half of the line tints teal and the base half violet. On \"same temperature\" a thermometer chip \"25 °C\" writes beside the bottles and the sample beakers. Bright at the end: the graph, its line and the temperature chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "routine": [
+        "adjust",
+        "the routine card writes in the right zone, one line per cue, each acted out by the plates: on \"rinse\" a coded water stream from `m6-wash-bottle-v1.png` runs over the bulb into a small waste beaker; line \"1 Rinse with distilled water\".",
+        "The measuring routine: Then, for every sample: rinse the probe with distilled water, and gently blot it.",
+        "rinse / blot / wait / three readings",
+        "On the spoken cues: On \"blot\" the tissue plate (`m6-lab-tissue-v1.png`, Codex item 3) touches the bulb and lifts; line \"2 Blot gently (don't rub)\". On \"carried into the next beaker\" a single coded drop clings to the bulb, then falls into the next beaker with a small swirl; tag \"carry-over changes the reading\" (then dims). On \"wait\" the readout digits flicker and settle, the \"stable\" dot lights; line \"3 Bulb fully in; swirl; wait for a",
+        "explain",
+        "the routine card writes in the right zone, one line per cue, each acted out by the plates: on \"rinse\" a coded water stream from `m6-wash-bottle-v1.png` runs over the bulb into a small waste beaker; line \"1 Rinse with distilled water\". On \"blot\" the tissue plate (`m6-lab-tissue-v1.png`, Codex item 3) touches the bulb and lifts; line \"2 Blot gently (don't rub)\". On \"carried into the next beaker\" a single coded drop clings to the bulb, then falls into the next beaker with a small swirl; tag \"carry-over changes the reading\" (then dims). On \"wait\" the readout digits flicker and settle, the \"stable\" dot lights; line \"3 Bulb fully in; swirl; wait for a steady reading\". On \"three readings\" three small result slots fill under the beaker, each from its own fresh-portion beaker outline; line \"4 Three readings, fresh portions\". Earlier lines dim as each writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "results": [
+        "new",
+        "the results table writes in the right zone: columns \"solution / reading 1 / 2 / 3 / mean\"; rows on their names: \"HCl 2.03, 2.02, 2.04 → 2.03\"; \"acetic acid 3.40, 3.39, 3.41 → 3.40\"; \"distilled water 5.82, 5.95, 6.10 → 5.96\" (on \"five point nine six\" its three readings get a wavy grey underline, tag \"drifted\"); \"ammonia 10.58, 10.60, 10.59 → 10.59\"; \"NaOH 11.95, 11.97, 11.96 → 11.96\".",
+        "The results: Here are one class's results, as means of three readings.",
+        "five point nine six / zero point zero two",
+        "On the spoken cues: As each row writes, its mean pins as a chip on the matching beaker in the row. On \"zero point zero two\" the acid and base rows' reading columns get a small bracket \"range 0.02\". Earlier rows dim to grey once their chip has pinned.",
+        "explain",
+        "the results table writes in the right zone: columns \"solution / reading 1 / 2 / 3 / mean\"; rows on their names: \"HCl 2.03, 2.02, 2.04 → 2.03\"; \"acetic acid 3.40, 3.39, 3.41 → 3.40\"; \"distilled water 5.82, 5.95, 6.10 → 5.96\" (on \"five point nine six\" its three readings get a wavy grey underline, tag \"drifted\"); \"ammonia 10.58, 10.60, 10.59 → 10.59\"; \"NaOH 11.95, 11.97, 11.96 → 11.96\". As each row writes, its mean pins as a chip on the matching beaker in the row. On \"zero point zero two\" the acid and base rows' reading columns get a small bracket \"range 0.02\". Earlier rows dim to grey once their chip has pinned. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "ions": [
+        "new",
+        "the table shrinks out; the coded pH scale fills the lower centre, 0 to 14, acid side tinted pale teal, base side pale violet, 7 marked \"7 (neutral at 25 °C)\".",
+        "What the readings say about the ions: So what do the numbers say about the ions?",
+        "hydronium / hydroxide / ten times / twenty three times",
+        "On the spoken cues: The five chips drop onto it at 2.03, 3.40, 5.96, 10.59 and 11.96. On \"hydronium\" a small bar pair (teal taller than violet, schematic, tag \"more H₃O⁺ than OH⁻\") rises under the acid side; on \"hydroxide\" the mirror pair (violet taller) under the base side. On \"ten times\" a bracket from 2.03 to 3.40 appears with faint grey markers along it, \"1 unit: × 10\" and \"2 units: × 100\" (the second marker overhanging the",
+        "explain",
+        "the table shrinks out; the coded pH scale fills the lower centre, 0 to 14, acid side tinted pale teal, base side pale violet, 7 marked \"7 (neutral at 25 °C)\". The five chips drop onto it at 2.03, 3.40, 5.96, 10.59 and 11.96. On \"hydronium\" a small bar pair (teal taller than violet, schematic, tag \"more H₃O⁺ than OH⁻\") rises under the acid side; on \"hydroxide\" the mirror pair (violet taller) under the base side. On \"ten times\" a bracket from 2.03 to 3.40 appears with faint grey markers along it, \"1 unit: × 10\" and \"2 units: × 100\" (the second marker overhanging the bracket's end). On \"twenty three times\" the bracket's label writes \"1.37 units: about 23 × more H₃O⁺\", sitting between the two markers, which then dim. On \"strength\" a grey chip writes \"strong ionises completely; weak partly (C05)\" and a small \"next: P04\" tab. On \"sodium hydroxide far more\" the 10.59 to 11.96 gap gets a violet bracket \"more OH⁻\". Bright at the end: the scale, the 23 × bracket and the violet bracket. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "water": [
+        "new",
+        "the water beaker enlarges centre with its chip \"5.96\".",
+        "So, the water: Now the water.",
+        "Carbon dioxide / carbonic acid / drift / neutral",
+        "On the spoken cues: On \"Carbon dioxide\" small grey CO₂ tokens drift down from the air into the open beaker; on \"carbonic acid\" the strip writes \"CO₂(g) + H₂O(l) ⇌ H₂CO₃(aq)\" with a small teal hydronium token released in the lens beside it (one example) on \"hydronium\", and a small grey second line \"H₂CO₃(aq) + H₂O(l) ⇌ HCO₃⁻(aq) + H₃O⁺(aq)\"; tag \"a little extra H₃O⁺\". On \"drift\" the three readings 5.82, 5.95, 6.10 replay on the readout",
+        "explain",
+        "the water beaker enlarges centre with its chip \"5.96\". On \"Carbon dioxide\" small grey CO₂ tokens drift down from the air into the open beaker; on \"carbonic acid\" the strip writes \"CO₂(g) + H₂O(l) ⇌ H₂CO₃(aq)\" with a small teal hydronium token released in the lens beside it (one example) on \"hydronium\", and a small grey second line \"H₂CO₃(aq) + H₂O(l) ⇌ HCO₃⁻(aq) + H₃O⁺(aq)\"; tag \"a little extra H₃O⁺\". On \"drift\" the three readings 5.82, 5.95, 6.10 replay on the readout chip, flickering, tag \"few ions: slow, drifting reading\". After \"spread\" (unspoken, small, grey) a second beaker outline appears with the tag \"boiled to drive out CO₂, then cooled: closer to 7\" (evidence for the CO₂ cause; it stays grey). On \"neutral\" a chip \"distilled water always reads 7.00\" fades in and is crossed (caption \"open to air: slightly acidic\"). The hook's ghost \"7.00?\" resolves to a tick on the meter. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "token flight",
+            "Cam lens zoom",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "meter-vs-indicator": [
+        "adjust",
+        "`m6-indicator-paper-chart-v1.png` in the right zone; coded pH numbers write under the six swatches.",
+        "Meter or indicator paper?: Why use a meter at all?",
+        "Universal indicator / two decimal places / calibrated",
+        "On the spoken cues: On \"Universal indicator\" a coded strip colour (orange-red) is held against the chart; a bracket spans two swatches, tag \"about pH 2 to 3\". On \"two decimal places\" the meter readout \"2.03\" sits beside it. Before \"calibrated\" the strip tag and the \"2.03\" readout dim to grey. On \"calibrated\" a chip \"more decimal places = more accurate\" fades in and is crossed (caption \"only if calibrated\"); after a beat the chip gives",
+        "explain",
+        "`m6-indicator-paper-chart-v1.png` in the right zone; coded pH numbers write under the six swatches. On \"Universal indicator\" a coded strip colour (orange-red) is held against the chart; a bracket spans two swatches, tag \"about pH 2 to 3\". On \"two decimal places\" the meter readout \"2.03\" sits beside it. Before \"calibrated\" the strip tag and the \"2.03\" readout dim to grey. On \"calibrated\" a chip \"more decimal places = more accurate\" fades in and is crossed (caption \"only if calibrated\"); after a beat the chip gives way to a small uncalibrated meter outline flashing \"7.43\" against a \"pH 7.00 buffer\" label with a red cross (it replaces the chip, not beside it). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone, one row per cue: \"Independent: which solution\"; \"Dependent: pH (mean of three readings)\"; \"Controlled: 0.010 mol/L; 25 °C; 20 mL; same calibrated meter; same rinse routine\".",
+        "The variables: So, the variables.",
+        "independent variable / dependent variable / controlled variables",
+        "On the spoken cues: As each controlled item is spoken a pen link points to the matching thing (the bracket, the thermometer chip, the beaker levels, the meter, the wash bottle).",
+        "explain",
+        "the variables card writes in the right zone, one row per cue: \"Independent: which solution\"; \"Dependent: pH (mean of three readings)\"; \"Controlled: 0.010 mol/L; 25 °C; 20 mL; same calibrated meter; same rinse routine\". As each controlled item is spoken a pen link points to the matching thing (the bracket, the thermometer chip, the beaker levels, the meter, the wash bottle). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "new",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: the intended solution only?",
+        "Validity, reliability and accuracy: Now the three words from the equilibrium practical.",
+        "Validity / Reliability / Accuracy",
+        "On the spoken cues: Rinse, blot, fresh portions, labels.\" \"Reliability: repeats agree? Acids and bases within 0.02; water spread 5.82 to 6.10.\" (the table's columns return small with those ranges bracketed) \"Accuracy: close to the true pH? Calibrate with buffers either side of 7, close to the readings; same temperature.\" A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\"",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: the intended solution only? Rinse, blot, fresh portions, labels.\" \"Reliability: repeats agree? Acids and bases within 0.02; water spread 5.82 to 6.10.\" (the table's columns return small with those ranges bracketed) \"Accuracy: close to the true pH? Calibrate with buffers either side of 7, close to the readings; same temperature.\" A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.010 mol/L HCl, acetic acid, NH₃, NaOH: below GHS classification limits\" / \"eye irritation from a splash\" / \"safety glasses (`m5x-safety-glasses-v1.png`); small volumes\"; \"concentrated stocks (conc.",
+        "The risk assessment: The risk assessment.",
+        "classified as hazardous / corrosive",
+        "On the spoken cues: HCl, glacial acetic acid, conc. ammonia, solid NaOH): corrosive, H314\" / \"severe burns, irritating vapour\" / \"prepared by the teacher or technician; not on the student bench\" (`m5x-ammonia-bottle-v1.png` small with tag \"teacher only\"); \"glass bulb\" / \"breaks; cuts; ruined probe\" / \"probe in its holder; never stir with it; don't touch the beaker bottom\"; \"meter near liquids\" / \"damage to the meter\" / \"keep the meter",
+        "explain",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.010 mol/L HCl, acetic acid, NH₃, NaOH: below GHS classification limits\" / \"eye irritation from a splash\" / \"safety glasses (`m5x-safety-glasses-v1.png`); small volumes\"; \"concentrated stocks (conc. HCl, glacial acetic acid, conc. ammonia, solid NaOH): corrosive, H314\" / \"severe burns, irritating vapour\" / \"prepared by the teacher or technician; not on the student bench\" (`m5x-ammonia-bottle-v1.png` small with tag \"teacher only\"); \"glass bulb\" / \"breaks; cuts; ruined probe\" / \"probe in its holder; never stir with it; don't touch the beaker bottom\"; \"meter near liquids\" / \"damage to the meter\" / \"keep the meter body dry; only the probe goes in\". Grey row: \"buffers: check the bottle's safety data sheet\". Footer chip: \"follow your school's risk assessment\". Rows dim as each new row writes. Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    ],
+    "memory-aid": [
+        "new",
+        "the aid writes large and handwritten in three short lines: \"Calibrate first.\"",
+        "Memory aid: Here's the routine to remember: calibrate first, rinse between, wait for steady.",
+        "calibrate first, rinse between, wait for steady",
+        "On the spoken cues: \"Rinse between.\" \"Wait for steady.\" Small icons beside each: the three buffer bottles; the wash bottle stream; the readout with its \"stable\" dot. Beneath, the condition tag: \"one pH step = 10 × the hydronium\" (the C05 fact, as a reading rule).",
+        "explain",
+        "the aid writes large and handwritten in three short lines: \"Calibrate first.\" \"Rinse between.\" \"Wait for steady.\" Small icons beside each: the three buffer bottles; the wash bottle stream; the readout with its \"stable\" dot. Beneath, the condition tag: \"one pH step = 10 × the hydronium\" (the C05 fact, as a reading rule). Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student measures sodium hydroxide solution,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student measures the pH of 0.010 mol/L sodium hydroxide solution with a calibrated pH meter. Without rinsing the probe, she then measures a sample of distilled water and obtains a reading of 9.2. Other groups measured the same distilled water at about 6. Explain the difference between her reading and the other groups' readings, and describe how she should change her method.\" Beside it the meter plate with the readout \"9.21\" (the meter shows two decimal places, as elsewhere; the question text keeps \"9.2\") and a beaker labelled \"distilled water\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no wash bottle, no tissue, no drop on the probe.",
+        [
+            "NumberTicker",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "carried into / no ions / rinse / more readings",
+        "On the spoken cues: On \"carried into\" \"Without rinsing the probe\" is underlined and a coded violet drop falls from the bulb into the water beaker; tag \"OH⁻ carried over\". On \"no ions\" \"distilled water\" and \"9.2\" are underlined and a sparse lens shows a few violet tokens with almost nothing else; tag \"few ions: a trace shifts pH a lot\". On \"rinse\" the wash bottle stream and tissue blot play; answer chip \"rinse and blot between samples;",
+        "explain",
+        "the question card shrinks to the top. On \"carried into\" \"Without rinsing the probe\" is underlined and a coded violet drop falls from the bulb into the water beaker; tag \"OH⁻ carried over\". On \"no ions\" \"distilled water\" and \"9.2\" are underlined and a sparse lens shows a few violet tokens with almost nothing else; tag \"few ions: a trace shifts pH a lot\". On \"rinse\" the wash bottle stream and tissue blot play; answer chip \"rinse and blot between samples; fresh portion\". On \"more readings\" a chip \"take three readings and average\" fades in and is crossed (caption \"averaging keeps the contamination\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "token flight",
+            "Cam lens zoom"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card, worded as printed: \"A student calibrates a pH meter with a pH 7.00 buffer only.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. A student calibrates with a pH",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student calibrates a pH meter with a pH 7.00 buffer only. She then measures the pH of 0.010 mol/L hydrochloric acid three times, using a fresh portion each time, and obtains 2.31, 2.30 and 2.32. Another group calibrated with pH 7.00 and pH 4.00 buffers and obtained 2.03 for the same solution. Evaluate the reliability and accuracy of the first student's results.\" Beside it the meter plate (readout \"2.31\") and one `m6-buffer-bottle-v1.png` with the coded band \"pH 7.00\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no calibration graph, no brackets, no verdict.",
+        [
+            "DrawPath",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "reliable / accurate / classic slip",
+        "On the spoken cues: On \"reliable\" \"2.31, 2.30 and 2.32\" is underlined and a small bracket reads \"range 0.02\". On \"accurate\" \"2.03\" and \"calibrated with pH 7.00 and pH 4.00\" are underlined and a short scale from 2.0 to 2.4 marks 2.03 (teal) and the three readings (amber), bracket \"about 0.3 too high\". On \"guess its slope\" \"pH 7.00 buffer only\" is underlined and scene 4's calibration graph returns small: one point at 7 with a steeper",
+        "explain",
+        "the question card shrinks to the top. On \"reliable\" \"2.31, 2.30 and 2.32\" is underlined and a small bracket reads \"range 0.02\". On \"accurate\" \"2.03\" and \"calibrated with pH 7.00 and pH 4.00\" are underlined and a short scale from 2.0 to 2.4 marks 2.03 (teal) and the three readings (amber), bracket \"about 0.3 too high\". On \"guess its slope\" \"pH 7.00 buffer only\" is underlined and scene 4's calibration graph returns small: one point at 7 with a steeper grey line through it beside the teal two-buffer line, tag \"one point: slope assumed\". Answer chip \"reliable, not accurate; calibrate with pH 4 and 7\". On \"classic slip\" a chip \"they agree, so they're accurate\" fades in and is crossed (caption \"agreement is reliability, not accuracy\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 Calibrate: pH 7, 4, 10 (both sides of 7), same temperature.\"",
+        "Decision rule and handoff: So: calibrate with buffers on both sides of seven, rinse and blot between samples, wait for a steady reading, and repeat in fresh portions.",
+        "Next",
+        "On the spoken cues: \"2 Rinse, blot.\" \"3 Wait for a steady reading.\" \"4 Three readings, fresh portions; record the mean.\" \"5 Below 7: more H₃O⁺; above 7: more OH⁻; each step × 10.\" On \"Next\" a chip \"Next: using pH to compare strong and weak acids and bases\" appears with the meter plate small and two beakers labelled \"0.100 mol/L\".",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Calibrate: pH 7, 4, 10 (both sides of 7), same temperature.\" \"2 Rinse, blot.\" \"3 Wait for a steady reading.\" \"4 Three readings, fresh portions; record the mean.\" \"5 Below 7: more H₃O⁺; above 7: more OH⁻; each step × 10.\" On \"Next\" a chip \"Next: using pH to compare strong and weak acids and bases\" appears with the meter plate small and two beakers labelled \"0.100 mol/L\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6P04_ROWS = {
+    "hook": [
+        "adjust",
+        "two `m6-beaker-v1.png` copies at centre with coded colourless fills and coded labels \"acid A, 0.100 mol/L\" and \"acid B, 0.100 mol/L\" (teal tabs).",
+        "Hook (two labels, one meter): Two bottles, both labelled zero point one zero zero moles per litre.",
+        "zero point one zero zero moles per litre / strong / wrong",
+        "On the spoken cues: On \"zero point one zero zero\" both labels' concentrations get a pen underline. On \"strong\" a chip \"strong = ionises completely (C05)\" writes small above them. On \"wrong\" acid B's label flickers and a grey \"?\" pins over its \"0.100\", tag \"label you can't trust?\". Heading writes: \"Two pH tests of strength\". The meter plate `m6-ph-meter-probe-beaker-v1.png` sits small at left, readout dark.",
+        "explain",
+        "two `m6-beaker-v1.png` copies at centre with coded colourless fills and coded labels \"acid A, 0.100 mol/L\" and \"acid B, 0.100 mol/L\" (teal tabs). On \"zero point one zero zero\" both labels' concentrations get a pen underline. On \"strong\" a chip \"strong = ionises completely (C05)\" writes small above them. On \"wrong\" acid B's label flickers and a grey \"?\" pins over its \"0.100\", tag \"label you can't trust?\". Heading writes: \"Two pH tests of strength\". The meter plate `m6-ph-meter-probe-beaker-v1.png` sits small at left, readout dark. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Mark underline",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "matched-concentration": [
+        "new",
+        "the two beakers become four in a row: \"HCl\", \"ethanoic acid (acetic acid)\" (teal tabs), \"NaOH\", \"ammonia, NH₃\" (violet tabs), coded labels writing on as named; on \"last practical\" a small grey tag \"P03: matched at 0.010 mol/L\" writes top left (dims at \"Why\"); on \"same concentration\" a single bracket over all four, empty for now; on \"This time\" the bracket fills: \"all 0.100 mol/L\".",
+        "Test 1: match the concentration: The first test is from the strong and weak video, and the last practical used it too: compare at the same concentration.",
+        "same concentration / strength",
+        "On the spoken cues: On \"concentrated weak acid\" a small grey recall card from C05 slides in on the left: \"1.0 mol/L acetic acid, pH 2.4 | 0.0010 mol/L HCl, pH 3.0\" with a pen mark on \"lower pH, but weak\" (then dims). On \"two things\" a two-dial icon (C05: \"strength\", \"concentration\") writes with both dials turning together, tag \"unmatched: can't separate them\". On \"strength\" the concentration dial locks (a small padlock, tag \"matched\")",
+        "explain",
+        "the two beakers become four in a row: \"HCl\", \"ethanoic acid (acetic acid)\" (teal tabs), \"NaOH\", \"ammonia, NH₃\" (violet tabs), coded labels writing on as named; on \"last practical\" a small grey tag \"P03: matched at 0.010 mol/L\" writes top left (dims at \"Why\"); on \"same concentration\" a single bracket over all four, empty for now; on \"This time\" the bracket fills: \"all 0.100 mol/L\". On \"concentrated weak acid\" a small grey recall card from C05 slides in on the left: \"1.0 mol/L acetic acid, pH 2.4 | 0.0010 mol/L HCl, pH 3.0\" with a pen mark on \"lower pH, but weak\" (then dims). On \"two things\" a two-dial icon (C05: \"strength\", \"concentration\") writes with both dials turning together, tag \"unmatched: can't separate them\". On \"strength\" the concentration dial locks (a small padlock, tag \"matched\") and only the strength dial stays bright. Recall card and dial labels dim. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "routine-recall": [
+        "adjust",
+        "the routine card from P03 writes small in the right zone in four lines, each lighting on its cue: \"1 Calibrate: pH 7.00, 4.00, 10.00, 25 °C\" (three `m6-buffer-bottle-v1.png` copies, small); \"2 Rinse, blot\"; \"3 Wait for steady\"; \"4 Three readings, fresh portions\" (grey tag \"P03\").",
+        "The routine, from the last practical: Measure them exactly as in the last practical: calibrate with buffers, rinse and blot the probe between samples, wait for a steady reading, and take three readings in fresh portions.",
+        "calibrate / fresh portions / outside",
+        "On the spoken cues: On \"calibrate\" the probe moves on its arc through the three buffers quickly (one second in total). On \"outside\" a coded pH scale draws under the beakers, green band from 4 to 10, with two terracotta marks near 1 and 13, tag \"outside the calibrated band: less certain\"; a grey tag \"a buffer near each end, if available\" (dims).",
+        "explain",
+        "the routine card from P03 writes small in the right zone in four lines, each lighting on its cue: \"1 Calibrate: pH 7.00, 4.00, 10.00, 25 °C\" (three `m6-buffer-bottle-v1.png` copies, small); \"2 Rinse, blot\"; \"3 Wait for steady\"; \"4 Three readings, fresh portions\" (grey tag \"P03\"). On \"calibrate\" the probe moves on its arc through the three buffers quickly (one second in total). On \"outside\" a coded pH scale draws under the beakers, green band from 4 to 10, with two terracotta marks near 1 and 13, tag \"outside the calibrated band: less certain\"; a grey tag \"a buffer near each end, if available\" (dims). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "results": [
+        "new",
+        "the results table writes in the right zone: columns \"solution / readings / mean\"; rows on their names: \"HCl 1.07, 1.09, 1.08 → 1.08\"; \"ethanoic acid 2.91, 2.89, 2.90 → 2.90\"; \"NaOH 12.92, 12.89, 12.92 → 12.91\"; \"ammonia 11.09, 11.10, 11.11 → 11.10\".",
+        "Results at the same concentration: Here are one class's means.",
+        "one point zero eight / two point nine zero / eleven point one zero",
+        "On the spoken cues: As each row writes, the probe moves on its arc into that beaker, the readout settles on the mean, and the mean pins as a chip on the beaker. On \"zero point zero three\" the readings column gets a small bracket \"range 0.02 to 0.03\". Earlier rows dim to grey once their chip has pinned.",
+        "explain",
+        "the results table writes in the right zone: columns \"solution / readings / mean\"; rows on their names: \"HCl 1.07, 1.09, 1.08 → 1.08\"; \"ethanoic acid 2.91, 2.89, 2.90 → 2.90\"; \"NaOH 12.92, 12.89, 12.92 → 12.91\"; \"ammonia 11.09, 11.10, 11.11 → 11.10\". As each row writes, the probe moves on its arc into that beaker, the readout settles on the mean, and the mean pins as a chip on the beaker. On \"zero point zero three\" the readings column gets a small bracket \"range 0.02 to 0.03\". Earlier rows dim to grey once their chip has pinned. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "the-gap": [
+        "new",
+        "the table shrinks out; the coded pH scale fills the lower centre with the four chips on it.",
+        "What the gap means: At the same concentration, hydrochloric acid reads almost two units lower.",
+        "two units / seventy times / small fraction / hydroxide",
+        "On the spoken cues: On \"two units\" a bracket from 1.08 to 2.90 reads \"1.82 units\"; on \"a hundred times\" a grey ghost tick \"2 units = 100 ×\" sits just beyond the bracket end; on \"seventy times\" the bracket adds \"about 70 × more H₃O⁺\" and the ghost tick dims; grey tag \"from these readings\". On \"small fraction\" the bracket, its chip and the grey tag dim to grey before the lenses open; two C05-style lenses open above the chips (schematic,",
+        "explain",
+        "the table shrinks out; the coded pH scale fills the lower centre with the four chips on it. On \"two units\" a bracket from 1.08 to 2.90 reads \"1.82 units\"; on \"a hundred times\" a grey ghost tick \"2 units = 100 ×\" sits just beyond the bracket end; on \"seventy times\" the bracket adds \"about 70 × more H₃O⁺\" and the ghost tick dims; grey tag \"from these readings\". On \"small fraction\" the bracket, its chip and the grey tag dim to grey before the lenses open; two C05-style lenses open above the chips (schematic, uncountable fields running past the rim): HCl all teal hydronium with grey chloride, no amber molecules; ethanoic acid a dense amber field with one highlighted split molecule, counter \"a small fraction ionised\". On \"Single arrow, double arrow\" C05's equation strip writes under the lenses: \"HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)\" and \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" (the arrows pulse once; the lens counter dims to grey as the equations write). On \"hydroxide\" the base chips get a violet bracket \"12.91 vs 11.10: far more OH⁻ from NaOH\". Bright at the end: the two equations and the violet bracket. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Cam lens zoom",
+            "DrawPath",
+            "table build",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "dilution-method": [
+        "adjust",
+        "the beaker row slides up and dims.",
+        "Test 2: dilute tenfold: But test one trusts the labels, and a wrong label could fool you.",
+        "volumetric pipette / volumetric flask / tenfold / moves",
+        "On the spoken cues: Centre: `m6-volumetric-pipette-filler-v1.png` (native aspect) over `m6-volumetric-flask-v1.png`. On \"volumetric pipette\" a coded liquid column fills the pipette bulb to its line, tag \"10.00 mL\"; a coded stream runs from the tip into the flask. On \"volumetric flask\" a tag \"100.0 mL\" pins to the neck mark; the wash bottle plate adds a coded stream until the meniscus meets the mark, tag \"make up to the mark; stopper;",
+        "explain",
+        "the beaker row slides up and dims. Centre: `m6-volumetric-pipette-filler-v1.png` (native aspect) over `m6-volumetric-flask-v1.png`. On \"volumetric pipette\" a coded liquid column fills the pipette bulb to its line, tag \"10.00 mL\"; a coded stream runs from the tip into the flask. On \"volumetric flask\" a tag \"100.0 mL\" pins to the neck mark; the wash bottle plate adds a coded stream until the meniscus meets the mark, tag \"make up to the mark; stopper; invert to mix\". On \"tenfold\" a strip writes \"10.00 mL → 100.0 mL: ÷ 10\" and, small and grey beneath, \"c₂ = 0.100 × 10.00 ÷ 100.0 = 0.0100 mol/L\" (Year 11 recall); a pen ring circles \"÷ 10\" and a grey tag \"true whatever the label says\". On \"moves\" a second beaker row (four copies) slides in under the first, labelled \"÷ 10\". Earlier tags dim. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "dilution-results": [
+        "new",
+        "the table returns in the right zone with three columns \"0.100 mol/L / ÷ 10 / change\": \"HCl 1.08 → 2.04, +0.96\"; \"ethanoic acid 2.90 → 3.39, +0.49\"; \"NaOH 12.91 → 11.95, −0.96\"; \"ammonia 11.10 → 10.60, −0.50\".",
+        "The dilution results: Here's what happened.",
+        "one / half",
+        "On the spoken cues: As each row writes, a change bar draws beside it on a small vertical pH axis from the first reading to the second: solid and long for HCl and NaOH, outlined and short for ethanoic acid and ammonia. On \"one\" the HCl bar gets a bracket \"0.96\"; on \"half\" the ethanoic acid bar gets \"0.49\". Earlier rows dim. Bright at the end: the four bars.",
+        "explain",
+        "the table returns in the right zone with three columns \"0.100 mol/L / ÷ 10 / change\": \"HCl 1.08 → 2.04, +0.96\"; \"ethanoic acid 2.90 → 3.39, +0.49\"; \"NaOH 12.91 → 11.95, −0.96\"; \"ammonia 11.10 → 10.60, −0.50\". As each row writes, a change bar draws beside it on a small vertical pH axis from the first reading to the second: solid and long for HCl and NaOH, outlined and short for ethanoic acid and ammonia. On \"one\" the HCl bar gets a bracket \"0.96\"; on \"half\" the ethanoic acid bar gets \"0.49\". Earlier rows dim. Bright at the end: the four bars. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "strong-moves-one": [
+        "new",
+        "the HCl lens from scene 5 reopens at centre: on \"ionised\" its field is all teal hydronium; on \"tenth\" the lens widens (a ten-times-larger dashed outline) and the same tokens spread out; a counter writes \"H₃O⁺ per litre: ÷ 10\"; under it a single step on a short pH line \"+1\".",
+        "Why the strong acid moves about one unit: Why about a whole unit?",
+        "ionised / tenth",
+        "On the spoken cues: Tag \"nothing left to ionise\". Small grey tag beside the step (silent, screen only): \"measured +0.96: real ions affect each other a little, so meters read just under 1\".",
+        "explain",
+        "the HCl lens from scene 5 reopens at centre: on \"ionised\" its field is all teal hydronium; on \"tenth\" the lens widens (a ten-times-larger dashed outline) and the same tokens spread out; a counter writes \"H₃O⁺ per litre: ÷ 10\"; under it a single step on a short pH line \"+1\". Tag \"nothing left to ionise\". Small grey tag beside the step (silent, screen only): \"measured +0.96: real ions affect each other a little, so meters read just under 1\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "token flight",
+            "Cam lens zoom",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "weak-moves-half": [
+        "new",
+        "the ethanoic acid lens opens beside the HCl lens (schematic as in C05).",
+        "Why the weak acid moves only half: Ethanoic acid is different.",
+        "meet less often / bigger fraction / make up / less than ten times",
+        "On the spoken cues: On \"meet less often\" the lens widens and two highlighted ion pairs (teal hydronium beside grey-violet ethanoate) drift apart instead of rejoining; a small inset of the narrow lens shows one amber molecule re-forming there, and none re-forms in the wide lens; tag \"ions meet less often\". On \"bigger fraction\" two more amber molecules split, their teal tokens highlighted, counter \"fraction ionised: small → bigger\" (the",
+        "explain",
+        "the ethanoic acid lens opens beside the HCl lens (schematic as in C05). On \"meet less often\" the lens widens and two highlighted ion pairs (teal hydronium beside grey-violet ethanoate) drift apart instead of rejoining; a small inset of the narrow lens shows one amber molecule re-forming there, and none re-forms in the wide lens; tag \"ions meet less often\". On \"bigger fraction\" two more amber molecules split, their teal tokens highlighted, counter \"fraction ionised: small → bigger\" (the \"meet less often\" tag dims). On \"make up\" a small teal \"+\" arrow feeds into the counter \"H₃O⁺ per litre: falls, but less than ÷ 10\". On \"less than ten times\" the short pH line beside it steps \"+0.5\", next to the HCl lens's \"+1\" for contrast. Bright at the end: the two steps \"+1\" and \"+0.5\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "bases-and-check": [
+        "new",
+        "the change bars return small in the centre: NaOH solid long \"−0.96\", ammonia outlined short \"−0.50\", tag \"partly reacts: more react on dilution\".",
+        "The bases, and a check: The bases mirror this.",
+        "last practical / gap / narrows the gap",
+        "On the spoken cues: On \"last practical\" a small grey P03 card slides beside the \"÷ 10\" column: \"P03 (0.010 mol/L): 2.03, 3.40, 11.96, 10.59\", each value linking with a pen line to its partner (2.04, 3.39, 11.95, 10.60), tag \"within 0.01\"; the base bars dim. On \"gap\" the card and pen lines dim to grey; on the small pH axis a grey bracket from 1.08 to 2.90 reads \"1.82 units\" (the scene 5 bracket), and on \"one point four\" a bright bracket",
+        "explain",
+        "the change bars return small in the centre: NaOH solid long \"−0.96\", ammonia outlined short \"−0.50\", tag \"partly reacts: more react on dilution\". On \"last practical\" a small grey P03 card slides beside the \"÷ 10\" column: \"P03 (0.010 mol/L): 2.03, 3.40, 11.96, 10.59\", each value linking with a pen line to its partner (2.04, 3.39, 11.95, 10.60), tag \"within 0.01\"; the base bars dim. On \"gap\" the card and pen lines dim to grey; on the small pH axis a grey bracket from 1.08 to 2.90 reads \"1.82 units\" (the scene 5 bracket), and on \"one point four\" a bright bracket from 2.04 to 3.39 reads \"1.35 units\" beside it; on \"twenty three times\" a tag writes \"P03: about 23 ×\". On \"narrows the gap\" the outlined ethanoic acid change bar pulses (short, so the weak acid closes in on the strong one). Bright at the end: the 1.35 bracket and the P03 tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone, one row per cue: \"Independent: test 1, which substance; test 2, diluted or not\"; \"Dependent: pH (test 1); change in pH (test 2)\"; \"Controlled: 0.100 mol/L (test 1); exactly ÷ 10 (test 2); 25 °C; 20 mL; same calibrated meter; same rinse routine\".",
+        "The variables: So, the variables.",
+        "independent variable / dependent variable / control",
+        "On the spoken cues: As each controlled item is spoken a pen link points to the matching thing (the bracket, the flask's mark, the beaker levels, the meter, the wash bottle).",
+        "explain",
+        "the variables card writes in the right zone, one row per cue: \"Independent: test 1, which substance; test 2, diluted or not\"; \"Dependent: pH (test 1); change in pH (test 2)\"; \"Controlled: 0.100 mol/L (test 1); exactly ÷ 10 (test 2); 25 °C; 20 mL; same calibrated meter; same rinse routine\". As each controlled item is spoken a pen link points to the matching thing (the bracket, the flask's mark, the beaker levels, the meter, the wash bottle). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "new",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures strength?",
+        "Validity, reliability and accuracy: Validity: does the test measure strength?",
+        "Validity / Reliability / Accuracy / big gaps",
+        "On the spoken cues: Matched 0.100 mol/L; the dilution test doesn't rely on labels.\" \"Reliability: repeats agree? Within 0.03; diluted values match P03 within 0.01.\" \"Accuracy: close to the true pH? Strong readings outside the 4 to 10 calibration: less certain.\" On \"big gaps\" a chip pins under the accuracy card: \"1.82 units; 0.96 vs 0.49: far bigger than the uncertainty\". A small grey footer: \"NESA glossary: validity, the extent to",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures strength? Matched 0.100 mol/L; the dilution test doesn't rely on labels.\" \"Reliability: repeats agree? Within 0.03; diluted values match P03 within 0.01.\" \"Accuracy: close to the true pH? Strong readings outside the 4 to 10 calibration: less certain.\" On \"big gaps\" a chip pins under the accuracy card: \"1.82 units; 0.96 vs 0.49: far bigger than the uncertainty\". A small grey footer: \"NESA glossary: validity, the extent to which tests measure what was intended.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses (`m5x-safety-glasses-v1.png`); rinse splashes with water\"; \"0.100 mol/L HCl, ethanoic acid, NH₃: below classification limits\" / \"eye irritation from a splash\" / \"safety glasses; small volumes; cap the ammonia\"; \"concentrated stocks (conc.",
+        "The risk assessment: The risk assessment.",
+        "irritant / corrosive / filler",
+        "On the spoken cues: HCl, glacial ethanoic acid, conc. ammonia, solid NaOH): corrosive, H314\" / \"severe burns\" / \"teacher only\" (`m5x-ammonia-bottle-v1.png` small with tag \"teacher only\"); \"pipetting\" / \"swallowing solution\" / \"pipette filler (the plate's red bulb ringed)\"; \"glass bulb, glassware\" / \"cuts\" / \"probe in its holder; flask on the bench, not held by the neck\". Footer chip: \"follow your school's risk assessment and each",
+        "explain",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses (`m5x-safety-glasses-v1.png`); rinse splashes with water\"; \"0.100 mol/L HCl, ethanoic acid, NH₃: below classification limits\" / \"eye irritation from a splash\" / \"safety glasses; small volumes; cap the ammonia\"; \"concentrated stocks (conc. HCl, glacial ethanoic acid, conc. ammonia, solid NaOH): corrosive, H314\" / \"severe burns\" / \"teacher only\" (`m5x-ammonia-bottle-v1.png` small with tag \"teacher only\"); \"pipetting\" / \"swallowing solution\" / \"pipette filler (the plate's red bulb ringed)\"; \"glass bulb, glassware\" / \"cuts\" / \"probe in its holder; flask on the bench, not held by the neck\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Rows dim as each new row writes. Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    ],
+    "memory-aid": [
+        "new",
+        "the aid writes large and handwritten in two lines: \"Match, then compare.\"",
+        "Memory aid: Here's the rule to remember: match, then compare.",
+        "match, then compare / strong moves about one, weak moves about half",
+        "On the spoken cues: \"Dilute ten times: strong moves about one, weak moves about half.\" Small icons beside them: the padlocked concentration dial; the two change bars (solid long, outlined short). Condition tag beneath: \"exact ÷ 10 with volumetric glassware; weak acid mostly un-ionised\".",
+        "explain",
+        "the aid writes large and handwritten in two lines: \"Match, then compare.\" \"Dilute ten times: strong moves about one, weak moves about half.\" Small icons beside them: the padlocked concentration dial; the two change bars (solid long, outlined short). Condition tag beneath: \"exact ÷ 10 with volumetric glassware; weak acid mostly un-ionised\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student measures zero point five",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student wants to compare the strengths of methanoic acid (HCOOH) and nitric acid (HNO₃). Using a calibrated pH meter at 25 °C, she measures the pH of 0.50 mol/L methanoic acid as 2.03 and the pH of 0.0020 mol/L nitric acid as 2.70. She concludes that methanoic acid is the stronger acid. Evaluate her conclusion and describe how she should change her method.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no dials, no padlock, no bracket.",
+        [
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "concentrations / same concentration / trap",
+        "On the spoken cues: On \"concentrations\" \"0.50 mol/L\" and \"0.0020 mol/L\" are underlined and a chip writes \"0.50 ÷ 0.0020 = 250 times\"; the two dials appear small, both turning, tag \"two things mixed\". On \"same concentration\" \"calibrated pH meter at 25 °C\" is underlined and the concentration dial locks; answer chip \"match: both 0.100 mol/L; nitric acid (strong) reads lower\". On \"trap\" a chip \"lower pH, so stronger acid\" fades in and is",
+        "explain",
+        "the question card shrinks to the top. On \"concentrations\" \"0.50 mol/L\" and \"0.0020 mol/L\" are underlined and a chip writes \"0.50 ÷ 0.0020 = 250 times\"; the two dials appear small, both turning, tag \"two things mixed\". On \"same concentration\" \"calibrated pH meter at 25 °C\" is underlined and the concentration dial locks; answer chip \"match: both 0.100 mol/L; nitric acid (strong) reads lower\". On \"trap\" a chip \"lower pH, so stronger acid\" fades in and is crossed (caption \"only at the same concentration\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student has a solution of a monoprotic acid of unknown concentration.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. An acid of unknown concentration has",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student has a solution of a monoprotic acid of unknown concentration. Its pH is 2.40. She uses a volumetric pipette to transfer 10.00 mL of it into a 100.0 mL volumetric flask and makes it up to the mark with distilled water. The diluted solution has a pH of 2.90. Determine whether the acid is strong or weak. Justify your answer.\" Beside it the pipette and flask plates, small. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no change bars, no pH line.",
+        [
+            "bar fill",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "on \"weak\" a verdict chip \"weak\" pins.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "weak / tenfold / zero point five zero",
+        "On the spoken cues: On \"tenfold\" \"10.00 mL\" and \"100.0 mL\" are underlined and \"÷ 10\" writes between them. On \"one unit\" a ghost change bar (solid) draws from 2.40 to 3.40, tag \"if strong\". On \"zero point five zero\" \"pH is 2.40\" and \"pH of 2.90\" are underlined and the real bar (outlined) draws from 2.40 to 2.90, \"+0.50\", beside the ghost; tag \"more molecules ionised on dilution: partial\". On \"nothing about strength\" a chip \"pH 2.40 is",
+        "explain",
+        "on \"weak\" a verdict chip \"weak\" pins. On \"tenfold\" \"10.00 mL\" and \"100.0 mL\" are underlined and \"÷ 10\" writes between them. On \"one unit\" a ghost change bar (solid) draws from 2.40 to 3.40, tag \"if strong\". On \"zero point five zero\" \"pH is 2.40\" and \"pH of 2.90\" are underlined and the real bar (outlined) draws from 2.40 to 2.90, \"+0.50\", beside the ghost; tag \"more molecules ionised on dilution: partial\". On \"nothing about strength\" a chip \"pH 2.40 is low, so it's strong\" fades in and is crossed (caption \"unknown concentration\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 Same concentration, same routine: lower pH = stronger acid (higher = stronger base).\"",
+        "Decision rule and handoff: So, to use pH to show strength: match the concentrations and compare, or dilute exactly tenfold and see how far the pH moves.",
+        "Next",
+        "On the spoken cues: \"2 Dilute exactly ÷ 10: strong moves about 1 unit; weak moves less (about 0.5 here).\" \"3 Never judge strength from one pH at an unknown concentration.\" On \"Next\" a chip \"Next: conjugate pairs and amphiprotic species\" appears with the scene 5 equation strip small, the \"Cl⁻\" and \"CH₃COO⁻\" each ringed with a \"?\".",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Same concentration, same routine: lower pH = stronger acid (higher = stronger base).\" \"2 Dilute exactly ÷ 10: strong moves about 1 unit; weak moves less (about 0.5 here).\" \"3 Never judge strength from one pH at an unknown concentration.\" On \"Next\" a chip \"Next: conjugate pairs and amphiprotic species\" appears with the scene 5 equation strip small, the \"Cl⁻\" and \"CH₃COO⁻\" each ringed with a \"?\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6P05_ROWS = {
+    "hook": [
+        "adjust",
+        "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled in code \"solution X\" and \"solution Y\".",
+        "Hook (same pH, which is the buffer?): These two beakers both read pH four point six eight.",
+        "four point six eight / dilute hydrochloric acid / does",
+        "On the spoken cues: On \"four point six eight\" both readouts settle on \"4.68\" with the \"stable\" dot; beaker Y's readout drifts by a hundredth or two and settles about a second after beaker X's (an unbuffered solution this dilute settles slowly). On \"dilute hydrochloric acid\" the labels flip briefly to reveal \"buffer?\" and \"HCl, about 0.00002 mol/L?\" with a grey \"?\" between them, then flip back. On \"does\" a heading writes: \"A buffer is",
+        "explain",
+        "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled in code \"solution X\" and \"solution Y\". On \"four point six eight\" both readouts settle on \"4.68\" with the \"stable\" dot; beaker Y's readout drifts by a hundredth or two and settles about a second after beaker X's (an unbuffered solution this dilute settles slowly). On \"dilute hydrochloric acid\" the labels flip briefly to reveal \"buffer?\" and \"HCl, about 0.00002 mol/L?\" with a grey \"?\" between them, then flip back. On \"does\" a heading writes: \"A buffer is what it does\" and a small chip \"resists a pH change (C11)\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "choose-pair": [
+        "adjust",
+        "two reagent bottles (`m6-buffer-bottle-v1.png`, coded label bands \"ethanoic acid, 0.100 mol/L\" amber and \"sodium ethanoate, 0.100 mol/L\" grey-violet) stand in the right zone.",
+        "Choose the pair and the amounts: From the buffers video, a buffer needs a weak acid and its conjugate base, both in large amounts.",
+        "weak acid / conjugate base / equal moles / four point seven four",
+        "On the spoken cues: On \"weak acid\" and \"conjugate base\" each bottle's band lights in turn, with C11's tags \"HA: weak acid\" and \"A⁻: its conjugate base\". On \"equal moles\" C11's ratio bar draws with two equal columns, tag \"ratio 1 : 1\". On \"four point seven four\" a prediction card writes: \"equal moles: pH = pKa = −log(1.8 × 10⁻⁵) = 4.74\", with a grey tag \"Ka and pKa video\". Earlier tags dim.",
+        "explain",
+        "two reagent bottles (`m6-buffer-bottle-v1.png`, coded label bands \"ethanoic acid, 0.100 mol/L\" amber and \"sodium ethanoate, 0.100 mol/L\" grey-violet) stand in the right zone. On \"weak acid\" and \"conjugate base\" each bottle's band lights in turn, with C11's tags \"HA: weak acid\" and \"A⁻: its conjugate base\". On \"equal moles\" C11's ratio bar draws with two equal columns, tag \"ratio 1 : 1\". On \"four point seven four\" a prediction card writes: \"equal moles: pH = pKa = −log(1.8 × 10⁻⁵) = 4.74\", with a grey tag \"Ka and pKa video\". Earlier tags dim. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "prepare": [
+        "adjust",
+        "centre: `m6-volumetric-pipette-filler-v1.png` (native aspect) above a `m6-beaker-v1.png` copy labelled \"buffer, about 100 mL (0.00500 mol of each)\".",
+        "Make it accurately, and make enough: Use a volumetric pipette to transfer fifty millilitres of each solution into a clean, dry beaker, and swirl.",
+        "volumetric pipette / ratio / enough",
+        "On the spoken cues: On \"volumetric pipette\" a coded amber stream runs from the pipette tip into the beaker, tag \"50.0 mL ethanoic acid\", then a grey-violet stream, tag \"50.0 mL sodium ethanoate\"; the coded fill rises. A givens strip writes in the right zone: \"n = c × V = 0.100 mol/L × 0.0500 L = 0.00500 mol each\" (both columns of the ratio bar tagged \"0.00500 mol\"). On \"ratio\" the ratio bar pulses. On \"enough\" a small volume tally",
+        "explain",
+        "centre: `m6-volumetric-pipette-filler-v1.png` (native aspect) above a `m6-beaker-v1.png` copy labelled \"buffer, about 100 mL (0.00500 mol of each)\". On \"volumetric pipette\" a coded amber stream runs from the pipette tip into the beaker, tag \"50.0 mL ethanoic acid\", then a grey-violet stream, tag \"50.0 mL sodium ethanoate\"; the coded fill rises. A givens strip writes in the right zone: \"n = c × V = 0.100 mol/L × 0.0500 L = 0.00500 mol each\" (both columns of the ratio bar tagged \"0.00500 mol\"). On \"ratio\" the ratio bar pulses. On \"enough\" a small volume tally writes: \"2 × 20.0 mL portions + 10.00 mL for dilution + pipette rinses and a spare ≈ 70 mL per set\", and a chip \"make 50 mL\" fades in and is crossed (caption \"nothing left for rinsing or a re-test\"). Earlier lines dim. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "measure-start": [
+        "new",
+        "the probe moves on its arc into the buffer beaker; the readout settles on \"4.68\".",
+        "Measure its pH: Measure it with the calibrated meter, using the routine from the pH practical.",
+        "four point six eight / do / changes",
+        "On the spoken cues: In the right zone a two-line card: \"predicted 4.74 | measured 4.68 (mean of three sets: 4.67, 4.69, 4.68)\". On \"do\" a grey tag \"real ions affect each other; stock concentrations\" writes beneath. On \"changes\" a chip \"the reading should equal 4.74 exactly\" fades in and is crossed (caption \"small offsets are normal; compare changes\"), and a small \"Δ\" symbol pins beside the readout.",
+        "explain",
+        "the probe moves on its arc into the buffer beaker; the readout settles on \"4.68\". In the right zone a two-line card: \"predicted 4.74 | measured 4.68 (mean of three sets: 4.67, 4.69, 4.68)\". On \"do\" a grey tag \"real ions affect each other; stock concentrations\" writes beneath. On \"changes\" a chip \"the reading should equal 4.74 exactly\" fades in and is crossed (caption \"small offsets are normal; compare changes\"), and a small \"Δ\" symbol pins beside the readout. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "test-design": [
+        "adjust",
+        "the batch beaker slides left and a 2 × 2 grid of `m6-beaker-v1.png` copies writes in the centre: top row \"buffer, 20.0 mL\" (teal-grey tabs), bottom row \"water, 20.0 mL\" (grey tabs); columns headed \"+ acid\" and \"+ base\".",
+        "Design the test: split, control, dose: Use a pipette to split the buffer into twenty millilitre portions, with matching twenty millilitre portions of distilled water.",
+        "split / control / dose / different",
+        "On the spoken cues: On \"split\" coded streams fill the top row from the batch; on \"control\" the bottom row fills from the wash bottle, and the term writes in the right zone: \"control: same treatment, not buffered\". Once the grid is filled, the four beaker labels and the two column headers dim to grey; on \"dose\" the control term dims too, and the graduated pipette plate (`m5x-graduated-pipette-v1.png`, native aspect) hovers over each",
+        "explain",
+        "the batch beaker slides left and a 2 × 2 grid of `m6-beaker-v1.png` copies writes in the centre: top row \"buffer, 20.0 mL\" (teal-grey tabs), bottom row \"water, 20.0 mL\" (grey tabs); columns headed \"+ acid\" and \"+ base\". On \"split\" coded streams fill the top row from the batch; on \"control\" the bottom row fills from the wash bottle, and the term writes in the right zone: \"control: same treatment, not buffered\". Once the grid is filled, the four beaker labels and the two column headers dim to grey; on \"dose\" the control term dims too, and the graduated pipette plate (`m5x-graduated-pipette-v1.png`, native aspect) hovers over each column and releases one coded drop into each beaker, tag \"1.00 mL of 0.100 mol/L HCl\" over the left column and \"1.00 mL of 0.100 mol/L NaOH\" over the right. On \"different\" a single-beaker inset shows acid then base going into one beaker, with a chip \"base after acid, same beaker\" crossed (caption \"the base just neutralises the acid you added\"). Earlier tags dim. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "results": [
+        "new",
+        "the results table writes in the right zone: columns \"portion / start / after / change\"; rows \"buffer + HCl 4.68 → 4.59, −0.09\"; \"buffer + NaOH 4.68 → 4.77, +0.09\"; \"water + HCl 5.93 → 2.35, −3.58\"; \"water + NaOH 5.93 → 11.63, +5.70\".",
+        "The results: acid and base: The buffer went from four point six eight to four point five nine with acid, and to four point seven seven with base.",
+        "less than a tenth / plunged / resists",
+        "On the spoken cues: As each row writes, the probe moves on its arc into that grid beaker and the readout settles; a change bar draws beside the row on a shared vertical pH axis (0 to 14): two tiny teal bars for the buffer, two long pale blue bars for water. On \"less than a tenth\" a bracket \"< 0.1\" pins over the teal bars. On \"dissolved carbon dioxide\" a small grey tag \"5.93: CO₂ from the air (P03)\"; on \"further to rise\" a faint dashed",
+        "explain",
+        "the results table writes in the right zone: columns \"portion / start / after / change\"; rows \"buffer + HCl 4.68 → 4.59, −0.09\"; \"buffer + NaOH 4.68 → 4.77, +0.09\"; \"water + HCl 5.93 → 2.35, −3.58\"; \"water + NaOH 5.93 → 11.63, +5.70\". As each row writes, the probe moves on its arc into that grid beaker and the readout settles; a change bar draws beside the row on a shared vertical pH axis (0 to 14): two tiny teal bars for the buffer, two long pale blue bars for water. On \"less than a tenth\" a bracket \"< 0.1\" pins over the teal bars. On \"dissolved carbon dioxide\" a small grey tag \"5.93: CO₂ from the air (P03)\"; on \"further to rise\" a faint dashed line marks pH 7 on the shared axis, with the 5.93 start below it. On \"plunged\" the long bars pulse. On \"resists\" a chip \"resists, not prevents\" writes under the bars. Earlier rows dim. Bright at the end: the four bars and the chip. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build",
+            "NumberTicker",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "why-small": [
+        "new",
+        "the board clears to the three zones.",
+        "Why the buffer barely moved: Why so little?",
+        "one tenth / ratio / four point six six",
+        "On the spoken cues: Task line: \"Predict the buffer's pH after the acid\". Equation strip: \"[H₃O⁺] = Ka × n(CH₃COOH) ÷ n(CH₃COO⁻)\" (grey, tag \"buffers video\"). Givens, grouped with units: \"each partner: 0.0500 mol/L × 0.0200 L = 0.00100 mol\" | \"HCl: 0.100 mol/L × 0.00100 L = 1.00 × 10⁻⁴ mol\" | \"Ka = 1.8 × 10⁻⁵\". On \"one tenth\" a bracket links the two mole values, \"1.00 × 10⁻⁴ is a tenth of 0.00100\". On \"ethanoate takes up\" the ratio bar",
+        "explain",
+        "the board clears to the three zones. Task line: \"Predict the buffer's pH after the acid\". Equation strip: \"[H₃O⁺] = Ka × n(CH₃COOH) ÷ n(CH₃COO⁻)\" (grey, tag \"buffers video\"). Givens, grouped with units: \"each partner: 0.0500 mol/L × 0.0200 L = 0.00100 mol\" | \"HCl: 0.100 mol/L × 0.00100 L = 1.00 × 10⁻⁴ mol\" | \"Ka = 1.8 × 10⁻⁵\". On \"one tenth\" a bracket links the two mole values, \"1.00 × 10⁻⁴ is a tenth of 0.00100\". On \"ethanoate takes up\" the ratio bar shifts (no separate equation write; C11 owns it): \"CH₃COOH 0.00110 mol | CH₃COO⁻ 0.000900 mol\"; the givens dim. On \"ratio\" the working writes quickly in grey, one line at a time: \"ratio = 0.00110 ÷ 0.000900 = 1.22\"; \"[H₃O⁺] = 1.8 × 10⁻⁵ × 1.22 = 2.2 × 10⁻⁵ mol/L\". On \"four point six six\" a bright line \"pH = 4.66 (2 decimal places: Ka has 2 s.f.)\" writes and a kept chip pins: \"predicted 4.74 → 4.66; measured 4.68 → 4.59: both under 0.1\". Bright at the end: the pH line and the chip. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "dilution": [
+        "adjust",
+        "the pipette and `m6-volumetric-flask-v1.png` take the centre (P04 motion): a coded stream \"10.00 mL buffer\", then the wash bottle fills to the mark, tag \"100.0 mL: ÷ 10\".",
+        "Property 3: dilution: Now a property an unbuffered acid can't copy.",
+        "equally / four point seven two / a whole unit",
+        "On the spoken cues: On \"equally\" the ratio bar beside the flask shrinks both columns to a tenth of their height together, tag \"ratio still 1 : 1\". On \"four point seven two\" the readout settles on \"4.72\", change bar \"+0.04\" (tiny, teal). On \"a whole unit\" a grey P04 chip slides in: \"P04: HCl 1.08 → 2.04, +0.96\" with its long solid bar beside the tiny teal one.",
+        "explain",
+        "the pipette and `m6-volumetric-flask-v1.png` take the centre (P04 motion): a coded stream \"10.00 mL buffer\", then the wash bottle fills to the mark, tag \"100.0 mL: ÷ 10\". On \"equally\" the ratio bar beside the flask shrinks both columns to a tenth of their height together, tag \"ratio still 1 : 1\". On \"four point seven two\" the readout settles on \"4.72\", change bar \"+0.04\" (tiny, teal). On \"a whole unit\" a grey P04 chip slides in: \"P04: HCl 1.08 → 2.04, +0.96\" with its long solid bar beside the tiny teal one. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "chip pop",
+            "NumberTicker",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "capacity": [
+        "new",
+        "one beaker labelled \"diluted buffer, 20.0 mL\" at centre with its ratio bar (both columns short, tagged \"1.00 × 10⁻⁴ mol each\").",
+        "Property 4: capacity: But the diluted buffer has paid a price.",
+        "tenth / all / three point four one",
+        "On the spoken cues: On \"tenth\" a tag \"a tenth of the partners\". On \"all\" the graduated pipette releases one drop, tag \"1.00 × 10⁻⁴ mol HCl\", and the ethanoate column empties and greys out, tag \"ethanoate used up\". On \"three point four one\" the readout runs down \"4.72 → 3.41\", change bar \"−1.31\" (long, teal outlined in terracotta), beside the original buffer's \"−0.09\" bar. A chip writes \"same pH, less capacity\" with a grey tag \"buffers",
+        "explain",
+        "one beaker labelled \"diluted buffer, 20.0 mL\" at centre with its ratio bar (both columns short, tagged \"1.00 × 10⁻⁴ mol each\"). On \"tenth\" a tag \"a tenth of the partners\". On \"all\" the graduated pipette releases one drop, tag \"1.00 × 10⁻⁴ mol HCl\", and the ethanoate column empties and greys out, tag \"ethanoate used up\". On \"three point four one\" the readout runs down \"4.72 → 3.41\", change bar \"−1.31\" (long, teal outlined in terracotta), beside the original buffer's \"−0.09\" bar. A chip writes \"same pH, less capacity\" with a grey tag \"buffers video\" (C11's capacity idea). Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "NumberTicker",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone, one row per cue: \"Independent: buffer or water; acid, base or dilution\"; \"Dependent: change in pH\"; \"Controlled: 20.0 mL portions; 1.00 mL of 0.100 mol/L; 25 °C; same calibrated meter; same rinse routine; same wait for a steady reading\".",
+        "The variables: So, the variables.",
+        "independent variable / dependent variable / control",
+        "On the spoken cues: As each controlled item is spoken a pen link points to the matching thing (the grid beakers, the graduated pipette, the thermometer chip, the meter, the wash bottle).",
+        "explain",
+        "the variables card writes in the right zone, one row per cue: \"Independent: buffer or water; acid, base or dilution\"; \"Dependent: change in pH\"; \"Controlled: 20.0 mL portions; 1.00 mL of 0.100 mol/L; 25 °C; same calibrated meter; same rinse routine; same wait for a steady reading\". As each controlled item is spoken a pen link points to the matching thing (the grid beakers, the graduated pipette, the thermometer chip, the meter, the wash bottle). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "new",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: shows buffering?",
+        "Validity, reliability and accuracy: Validity: does the test show buffering?",
+        "Validity / plunge / Reliability / Accuracy / changes",
+        "On the spoken cues: Water control, same dose and volume; fresh portion per test.\" On \"plunge\" the hook's beaker Y returns small beside the card with a long pale blue bar \"4.68 → 2.32\" and a bright chip \"unbuffered control at pH 4.68 (dilute HCl): same pH, no buffering\"; the validity card dims to grey as the chip writes. \"Reliability: repeats agree? Three fresh batches; buffer changes within 0.02.\" (the validity card, chip, beaker Y and",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: shows buffering? Water control, same dose and volume; fresh portion per test.\" On \"plunge\" the hook's beaker Y returns small beside the card with a long pale blue bar \"4.68 → 2.32\" and a bright chip \"unbuffered control at pH 4.68 (dilute HCl): same pH, no buffering\"; the validity card dims to grey as the chip writes. \"Reliability: repeats agree? Three fresh batches; buffer changes within 0.02.\" (the validity card, chip, beaker Y and bar dim to grey as this card writes). \"Accuracy: close to the true pH? Calibrated meter; volumetric and graduated pipettes.\" On \"changes\" a chip pins: \"the same offset in both readings: the change is unaffected\" with \"4.68 → 4.59\" and a ghost \"4.74 → 4.66\" side by side, both \"≈ −0.09\". A small footer, grey throughout: \"NESA glossary: accuracy, how close measurements are to the true value.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.100 mol/L ethanoic acid, sodium ethanoate, HCl: below classification limits\" / \"eye irritation from a splash\" / \"safety glasses (`m5x-safety-glasses-v1.png`); small volumes\"; \"0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses; rinse splashes with water\"; \"glacial ethanoic acid (H226, H314)\" / \"flammable; severe burns; irritating vapour\" / \"teacher only; not on the student bench\"; \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\"; \"glassware, probe bulb\" / \"cuts\" / \"probe in its holder; never stir with it\".",
+        "The risk assessment: The risk assessment.",
+        "classification / flammable / filler",
+        "On the spoken cues: Grey row: \"waste: dilute, near-neutral after mixing; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Rows dim as each new row writes.",
+        "explain",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.100 mol/L ethanoic acid, sodium ethanoate, HCl: below classification limits\" / \"eye irritation from a splash\" / \"safety glasses (`m5x-safety-glasses-v1.png`); small volumes\"; \"0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses; rinse splashes with water\"; \"glacial ethanoic acid (H226, H314)\" / \"flammable; severe burns; irritating vapour\" / \"teacher only; not on the student bench\"; \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\"; \"glassware, probe bulb\" / \"cuts\" / \"probe in its holder; never stir with it\". Grey row: \"waste: dilute, near-neutral after mixing; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Rows dim as each new row writes. Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    ],
+    "memory-aid": [
+        "new",
+        "the aid writes large and handwritten in three short words with small icons: \"Split.\"",
+        "Memory aid: Here's the method to remember: split, dose, compare.",
+        "split, dose, compare",
+        "On the spoken cues: (the grid filling from the batch), \"Dose.\" (the graduated pipette drop), \"Compare.\" (the tiny teal bar beside the long pale blue bar). Condition tag beneath: \"fresh portion for each test; same volume, same dose; water control\".",
+        "explain",
+        "the aid writes large and handwritten in three short words with small icons: \"Split.\" (the grid filling from the batch), \"Dose.\" (the graduated pipette drop), \"Compare.\" (the tiny teal bar beside the long pale blue bar). Condition tag beneath: \"fresh portion for each test; same volume, same dose; water control\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student adds one millilitre of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student tests whether a solution is a buffer. She adds 1.00 mL of 0.100 mol/L hydrochloric acid to 20.0 mL of the solution, and the pH changes from 4.68 to 4.59. She then adds 1.00 mL of 0.100 mol/L sodium hydroxide to the same beaker, and the pH returns to 4.68. She concludes that the solution is a buffer that resists both acid and base. Evaluate her method.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no water beaker, no grid.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "no control / same beaker",
+        "On the spoken cues: On \"no control\" \"20.0 mL of the solution\" is underlined and a ghost water beaker draws beside it with a green tag \"control: same dose, 20.0 mL water\". On \"same beaker\" \"to the same beaker\" and \"returns to 4.68\" are underlined; answer chip \"fresh portion for the base test\". A chip \"the pH came back, so it resists base too\" fades in and is crossed (caption \"the base just undid the acid\").",
+        "explain",
+        "the question card shrinks to the top. On \"no control\" \"20.0 mL of the solution\" is underlined and a ghost water beaker draws beside it with a green tag \"control: same dose, 20.0 mL water\". On \"same beaker\" \"to the same beaker\" and \"returns to 4.68\" are underlined; answer chip \"fresh portion for the base test\". A chip \"the pH came back, so it resists base too\" fades in and is crossed (caption \"the base just undid the acid\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student mixes 30.0 mL of 0.100 mol/L ethanoic acid with 10.0 mL of 0.100 mol/L sodium ethanoate at 25 °C.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. A student mixes thirty millilitres of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student mixes 30.0 mL of 0.100 mol/L ethanoic acid with 10.0 mL of 0.100 mol/L sodium ethanoate at 25 °C. Calculate the expected pH of the mixture. Ka(CH₃COOH) = 1.8 × 10⁻⁵.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ratio bar, no equation strip.",
+        [
+            "bar fill",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "on \"zero point zero zero three zero zero\" \"30.0 mL of 0.100 mol/L\" is underlined and \"n(CH₃COOH) = 0.100 × 0.0300 = 3.00 × 10⁻³ mol\" writes; then \"10.0 mL of 0.100 mol/L\" is underlined and \"n(CH₃COO⁻) = 0.100 × 0.0100 = 1.00 × 10⁻³ mol\"; ratio bar draws 3 : 1.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "zero point zero zero three zero zero / five point four times ten to the minus five / four point two seven",
+        "On the spoken cues: On \"five point four\" \"Ka = 1.8 × 10⁻⁵\" is underlined and \"[H₃O⁺] = 1.8 × 10⁻⁵ × 3.00 = 5.4 × 10⁻⁵ mol/L\" writes. On \"four point two seven\" \"pH = −log(5.4 × 10⁻⁵) = 4.27\" writes and an answer chip pins. On \"equal amounts\" a chip \"pH = pKa = 4.74\" fades in and is crossed (caption \"only when the moles are equal\").",
+        "explain",
+        "on \"zero point zero zero three zero zero\" \"30.0 mL of 0.100 mol/L\" is underlined and \"n(CH₃COOH) = 0.100 × 0.0300 = 3.00 × 10⁻³ mol\" writes; then \"10.0 mL of 0.100 mol/L\" is underlined and \"n(CH₃COO⁻) = 0.100 × 0.0100 = 1.00 × 10⁻³ mol\"; ratio bar draws 3 : 1. On \"five point four\" \"Ka = 1.8 × 10⁻⁵\" is underlined and \"[H₃O⁺] = 1.8 × 10⁻⁵ × 3.00 = 5.4 × 10⁻⁵ mol/L\" writes. On \"four point two seven\" \"pH = −log(5.4 × 10⁻⁵) = 4.27\" writes and an answer chip pins. On \"equal amounts\" a chip \"pH = pKa = 4.74\" fades in and is crossed (caption \"only when the moles are equal\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the plan card writes, each line lighting on its words: \"1 Weak acid + conjugate base, measured with pipettes; make enough.\"",
+        "Decision rule and handoff: So, to prepare and test a buffer: mix a weak acid and its conjugate base in measured amounts, predict its pH from the ratio, then split it, dose it alongside water, and compare the changes.",
+        "Next",
+        "On the spoken cues: \"2 Predict: [H₃O⁺] = Ka × n(HA) ÷ n(A⁻).\" \"3 Split into fresh portions; water control; same dose.\" \"4 Compare changes: acid, base, dilution, capacity.\" On \"Next\" a chip \"Next: titration to find an unknown concentration\" appears with `m6-burette-clamp-stand-v1.png` small.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Weak acid + conjugate base, measured with pipettes; make enough.\" \"2 Predict: [H₃O⁺] = Ka × n(HA) ÷ n(A⁻).\" \"3 Split into fresh portions; water control; same dose.\" \"4 Compare changes: acid, base, dilution, capacity.\" On \"Next\" a chip \"Next: titration to find an unknown concentration\" appears with `m6-burette-clamp-stand-v1.png` small. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6P06_ROWS = {
+    "hook": [
+        "adjust",
+        "two `m6-burette-clamp-stand-v1.png` plates side by side, each with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png`, coded bench tags \"bench A\" and \"bench B\".",
+        "Hook (concordant, but which is right?): Two lab benches titrate the same hydrochloric acid against the same standard.",
+        "twenty four point three three / twenty four point eight two / wrong",
+        "On the spoken cues: Under each, a mini titre table writes, three rows ringed teal: A \"24.35, 24.30, 24.35\", B \"24.80, 24.85, 24.80\", each with a small concordance bracket \"within 0.05 mL\". On \"twenty four point three three\" A's mean chip writes \"mean 24.33 mL\"; on \"twenty four point eight two\" B's writes \"mean 24.82 mL\", and a grey bracket \"0.49 mL apart\" joins them. On \"wrong\" a heading writes: \"Concordant... but right?\" Bright at the",
+        "explain",
+        "two `m6-burette-clamp-stand-v1.png` plates side by side, each with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png`, coded bench tags \"bench A\" and \"bench B\". Under each, a mini titre table writes, three rows ringed teal: A \"24.35, 24.30, 24.35\", B \"24.80, 24.85, 24.80\", each with a small concordance bracket \"within 0.05 mL\". On \"twenty four point three three\" A's mean chip writes \"mean 24.33 mL\"; on \"twenty four point eight two\" B's writes \"mean 24.82 mL\", and a grey bracket \"0.49 mL apart\" joins them. On \"wrong\" a heading writes: \"Concordant... but right?\" Bright at the end: the two mean chips and the heading. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "plan": [
+        "adjust",
+        "the board clears.",
+        "The plan: The unknown is hydrochloric acid, roughly zero point one moles per litre.",
+        "sodium carbonate / burette / two",
+        "On the spoken cues: Centre: the burette plate (coded fill amber, label \"unknown HCl, about 0.1 mol/L\") over the conical flask (coded label \"Na₂CO₃ standard, 25.00 mL\", navy). On \"sodium carbonate\" a small `m6-volumetric-flask-v1.png` appears at the right with a navy tag \"standard: made from the solid\". On \"burette\" the amber label pulses. On \"two\" the equation strip writes \"Na₂CO₃(aq) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\", its",
+        "explain",
+        "the board clears. Centre: the burette plate (coded fill amber, label \"unknown HCl, about 0.1 mol/L\") over the conical flask (coded label \"Na₂CO₃ standard, 25.00 mL\", navy). On \"sodium carbonate\" a small `m6-volumetric-flask-v1.png` appears at the right with a navy tag \"standard: made from the solid\". On \"burette\" the amber label pulses. On \"two\" the equation strip writes \"Na₂CO₃(aq) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\", its coefficients pulse \"1 : 2\", and C12's mole bridge thumbnail (known → ratio → unknown) writes beneath with a grey tag \"titration video\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "make-standard": [
+        "adjust",
+        "right zone, step card \"1 Make the standard\" with a grey tag \"desiccator: sealed jar with a drying agent\".",
+        "Make the standard: dry, weigh, rinse it all in: Start with sodium carbonate dried in an oven and cooled in a desiccator, so none of its mass is water.",
+        "desiccator / one point three six five six / rinse",
+        "On the spoken cues: Centre: `m6-analytical-balance-v1.png` (new plate) with `m6-beaker-v1.png` small on its pan; on \"one point three six five six\" the coded readout settles \"1.3656 g\" (navy), with a grey tag \"analytical balance: reads to 0.0001 g\" and a chip \"record every digit\". On \"Dissolve it\" the beaker moves to the funnel (`m6-funnel-v1.png`) in the neck of `m6-volumetric-flask-v1.png`; a coded stream runs in. On \"rinse\" the wash",
+        "explain",
+        "right zone, step card \"1 Make the standard\" with a grey tag \"desiccator: sealed jar with a drying agent\". Centre: `m6-analytical-balance-v1.png` (new plate) with `m6-beaker-v1.png` small on its pan; on \"one point three six five six\" the coded readout settles \"1.3656 g\" (navy), with a grey tag \"analytical balance: reads to 0.0001 g\" and a chip \"record every digit\". On \"Dissolve it\" the beaker moves to the funnel (`m6-funnel-v1.png`) in the neck of `m6-volumetric-flask-v1.png`; a coded stream runs in. On \"rinse\" the wash bottle (`m6-wash-bottle-v1.png`) sends three short coded streams into the beaker and through the funnel, a counter \"rinse 1, 2, 3\" ticks, and a reason tag writes: \"quantitative transfer: every grain into the flask\". Earlier tags dim (the desiccator tag carries \"sealed jar with a drying agent\", so the narration does not say it). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "make-up-concentration": [
+        "new",
+        "P04's fill-to-mark motion: the coded level rises, slows near the neck mark, and the last drops land singly; on \"mark\" a magnifier ring opens on the neck with the curved surface touching the line and a tag \"meniscus: the curved surface; its bottom on the mark\".",
+        "Make up to the mark, and its concentration: Add water until the bottom of the meniscus sits on the mark, at eye level, then stopper and invert it many times, so every aliquot is the same. n equals m over M gives zero point zero one two eight eight four moles, and over zero point two five zero zero litres, that's zero point zero five one five four moles per litre.",
+        "mark / invert / zero point zero five one five four",
+        "On the spoken cues: On \"invert\" the flask plate rotates whole through 180° and back three times (coded motion, no hand), tag \"mixed: every aliquot the same\". Then the right zone becomes the calculation card. Task line: \"c(Na₂CO₃) standard\". Givens: \"m = 1.3656 g | M(Na₂CO₃) = 105.99 g/mol | V = 250.0 mL\". Lines, one at a time, earlier dimming: \"n = m ÷ M = 1.3656 ÷ 105.99 = 0.012884 mol\" (grey tag \"keep the digits; round at the end\",",
+        "explain",
+        "P04's fill-to-mark motion: the coded level rises, slows near the neck mark, and the last drops land singly; on \"mark\" a magnifier ring opens on the neck with the curved surface touching the line and a tag \"meniscus: the curved surface; its bottom on the mark\". On \"invert\" the flask plate rotates whole through 180° and back three times (coded motion, no hand), tag \"mixed: every aliquot the same\". Then the right zone becomes the calculation card. Task line: \"c(Na₂CO₃) standard\". Givens: \"m = 1.3656 g | M(Na₂CO₃) = 105.99 g/mol | V = 250.0 mL\". Lines, one at a time, earlier dimming: \"n = m ÷ M = 1.3656 ÷ 105.99 = 0.012884 mol\" (grey tag \"keep the digits; round at the end\", dims); on \"zero point zero five one five four\" \"c = n ÷ V = 0.012884 ÷ 0.2500 = 0.05154 mol/L\" and a navy kept chip pins: \"c(Na₂CO₃) = 0.05154 mol/L\", with a small grey tag \"practised in the next video\" (dims). Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "aliquot": [
+        "adjust",
+        "right zone, step card \"2 Pipette the aliquot\".",
+        "The aliquot: rinse, fill, drain, leave the last drop: Now the aliquot.",
+        "carbonate solution / drop / distilled water / yellow",
+        "On the spoken cues: Centre: `m6-volumetric-pipette-filler-v1.png` (native aspect). On \"carbonate solution\" a short navy coded stream rinses up and out of the pipette, reason tag \"rinse with the carbonate: no water to dilute it\". The pipette fills to its mark (coded level, magnifier ring on the mark), then drains into `m6-conical-flask-v1.png`; the tip touches the flask wall. On \"drop\" the small coded drop stays in the tip, ringed, with",
+        "explain",
+        "right zone, step card \"2 Pipette the aliquot\". Centre: `m6-volumetric-pipette-filler-v1.png` (native aspect). On \"carbonate solution\" a short navy coded stream rinses up and out of the pipette, reason tag \"rinse with the carbonate: no water to dilute it\". The pipette fills to its mark (coded level, magnifier ring on the mark), then drains into `m6-conical-flask-v1.png`; the tip touches the flask wall. On \"drop\" the small coded drop stays in the tip, ringed, with a chip \"blow out the last drop\" fading in and crossed (caption \"calibrated to leave it\"). On \"distilled water\" the step card's reason tag dims and the crossed \"blow out the last drop\" chip fades to grey first; then a thin coded film shows in the flask, tag \"water adds no moles\", and a second small chip \"rinse the flask with carbonate\" fades in and is crossed (caption \"flask: distilled water only\"; no error chain, because attempt 2 tests it), silent. On \"yellow\" three coded drops fall and the flask swaps to the yellow endpoint plate (see Assets). Earlier tags dim. Bright at the end: the yellow flask, the tag \"water adds no moles\" and one crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "burette-setup": [
+        "adjust",
+        "right zone, step card \"3 Set up the burette\".",
+        "The burette: rinse, fill, take the funnel out, no bubble: Next, the burette.",
+        "hydrochloric acid / out / air bubble",
+        "On the spoken cues: Centre: the burette plate, its clamp lowered so the top sits below a dashed grey line labelled \"eye level\" (no eye drawn). On \"hydrochloric acid\" two short amber rinses run in and out through the tap (the tap turns in coded motion), reason tag \"rinse with the acid: no water to dilute it\". On \"out\" the funnel (`m6-funnel-v1.png`, small) lifts away from the burette top, tag \"funnel out: no stray drips\". On \"air",
+        "explain",
+        "right zone, step card \"3 Set up the burette\". Centre: the burette plate, its clamp lowered so the top sits below a dashed grey line labelled \"eye level\" (no eye drawn). On \"hydrochloric acid\" two short amber rinses run in and out through the tap (the tap turns in coded motion), reason tag \"rinse with the acid: no water to dilute it\". On \"out\" the funnel (`m6-funnel-v1.png`, small) lifts away from the burette top, tag \"funnel out: no stray drips\". On \"air bubble\" a magnifier ring on the tip shows a coded air pocket; the tap opens, a short stream runs into a waste beaker (`m6-beaker-v1.png`, small) and the pocket leaves; tag \"tip full: no bubble\". Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "burette-reading": [
+        "adjust",
+        "the burette shrinks to the left; centre: `m6-burette-meniscus-closeup-v1.png` (new plate, native aspect) with coded scale numerals \"0.0, 0.1 ... 0.6\" beside its painted graduation lines (numbers increase downwards).",
+        "Reading the burette: Read it with your eye level with the bottom of the meniscus.",
+        "meniscus / bigger / above / parallax / half / zero point four zero",
+        "On the spoken cues: On \"meniscus\" the bottom of the curve is ringed. On \"bigger\" a small grey arrow \"↓ increasing\" draws down the numerals (before any sight line appears). On \"Look from above\" the coded sight line starts tilted down from above the tube; on \"above\" the point where it crosses the scale is ringed at 0.30 and the coded reading beside it shows \"0.30\" in grey (the ring on the meniscus dims); on \"parallax\" the term writes",
+        "explain",
+        "the burette shrinks to the left; centre: `m6-burette-meniscus-closeup-v1.png` (new plate, native aspect) with coded scale numerals \"0.0, 0.1 ... 0.6\" beside its painted graduation lines (numbers increase downwards). On \"meniscus\" the bottom of the curve is ringed. On \"bigger\" a small grey arrow \"↓ increasing\" draws down the numerals (before any sight line appears). On \"Look from above\" the coded sight line starts tilted down from above the tube; on \"above\" the point where it crosses the scale is ringed at 0.30 and the coded reading beside it shows \"0.30\" in grey (the ring on the meniscus dims); on \"parallax\" the term writes with \"the reading shifts with your eye position\" and the sight line levels at the meniscus bottom, the grey \"0.30\" and its ring fading. On \"half\" a bracket spans one 0.1 mL gap with a midpoint tick, tag \"read to ±0.05 mL\". On \"zero point four zero\" the reading settles \"initial: 0.40 mL\" (amber) and pins as a chip; a silent chip \"start at exactly 0.00\" fades in and is crossed (caption \"record wherever it starts\"). Bright at the end: the ringed meniscus, the reading chip and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "titrate": [
+        "adjust",
+        "right zone, step card \"4 Titrate\".",
+        "Rough first, then drop by drop: The first run is a quick rough titration.",
+        "rough / drop by drop / orange",
+        "On the spoken cues: Centre: the full set-up, burette fill gauge and volume counter (C12). On \"rough\" the counter runs fast to \"24.90\" and the flask swaps yellow → red; a grey tag \"rough: overshot, not used\" and the colour thumbnail `m6-indicator-methyl-orange-set-v1.png` small in the corner with coded labels \"yellow: before\", \"orange: endpoint\", \"red: past it\". The flask resets yellow. On \"about a millilitre short\" the counter runs",
+        "explain",
+        "right zone, step card \"4 Titrate\". Centre: the full set-up, burette fill gauge and volume counter (C12). On \"rough\" the counter runs fast to \"24.90\" and the flask swaps yellow → red; a grey tag \"rough: overshot, not used\" and the colour thumbnail `m6-indicator-methyl-orange-set-v1.png` small in the corner with coded labels \"yellow: before\", \"orange: endpoint\", \"red: past it\". The flask resets yellow. On \"about a millilitre short\" the counter runs fast to \"23.9\" with a marker \"rough − 1 mL\". On \"drop by drop\" single coded drops fall, each followed by a short swirl wobble of the flask plate (coded rotation, no hand); a brief orange flash fades back to yellow twice. Between drops a thin wash-bottle stream runs down the inside of the flask, with a silent tag \"rinse splashes down with distilled water: no moles added\". On \"orange\" the flask swaps to the orange plate and holds; tag \"first permanent orange (stays after swirling)\". A grey tag \"why methyl orange: the indicators video\" (dims). Hold about 1 second. Hold about 1 second.",
+        [
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "results": [
+        "new",
+        "the right zone widens for C12's titre table: columns \"run | initial (mL) | final (mL) | titre (mL)\"; rows \"rough | 0.00 | 24.90 | 24.90\" (greyed, \"not used\"); \"1 | 0.40 | 24.75 | 24.35\"; \"2 | 0.15 | 24.80 | 24.65\"; \"3 | 0.20 | 24.50 | 24.30\"; \"4 | 1.05 | 25.40 | 24.35\"; each titre cell writes as \"final − initial\".",
+        "The results, and a run with a known fault: Here are bench A's results: each titre is final minus initial.",
+        "twenty four point six five / repeated / twenty four point three three",
+        "On the spoken cues: On \"twenty four point six five\" row 2 pulses and a grey note writes beside it \"bubble left tip\". A thumbnail of the burette tip replays the bubble leaving while the counter jumps and no liquid enters the flask; tag \"bubble counted as acid: titre too big\". On \"repeated\" row 2 takes a grey cross with the caption \"excluded: known fault; repeated (run 4)\". C12's concordance strip draws (24.25 to 24.70 mL): the bracket",
+        "explain",
+        "the right zone widens for C12's titre table: columns \"run | initial (mL) | final (mL) | titre (mL)\"; rows \"rough | 0.00 | 24.90 | 24.90\" (greyed, \"not used\"); \"1 | 0.40 | 24.75 | 24.35\"; \"2 | 0.15 | 24.80 | 24.65\"; \"3 | 0.20 | 24.50 | 24.30\"; \"4 | 1.05 | 25.40 | 24.35\"; each titre cell writes as \"final − initial\". On \"twenty four point six five\" row 2 pulses and a grey note writes beside it \"bubble left tip\". A thumbnail of the burette tip replays the bubble leaving while the counter jumps and no liquid enters the flask; tag \"bubble counted as acid: titre too big\". On \"repeated\" row 2 takes a grey cross with the caption \"excluded: known fault; repeated (run 4)\". C12's concordance strip draws (24.25 to 24.70 mL): the bracket \"spread 0.05 mL\" covers 24.30 to 24.35, with a small grey label \"rule: within 0.10 mL\" beside it, the 24.65 dot crossed outside. On \"twenty four point three three\" rows 1, 3 and 4 ring teal and \"(24.35 + 24.30 + 24.35) ÷ 3 = 24.33 mL\" writes and shrinks to a kept chip \"mean titre = 24.33 mL\". Bright at the end: the ringed rows, the crossed row and the kept chip. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "table build",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "calculation": [
+        "new",
+        "the table dims to a strip.",
+        "The calculation: Now the calculation.",
+        "one point two eight eight five times ten to the minus three / two point five seven seven times ten to the minus three / zero point one zero five nine",
+        "On the spoken cues: Task line: \"Find c(HCl)\". Equation strip (from scene 2, small). C12's mole bridge draws. Givens: \"Na₂CO₃: c = 0.05154 mol/L, V = 25.00 mL\" (navy) | \"HCl: mean titre 24.33 mL\" (amber). Lines one at a time, earlier dimming: on \"one point two eight eight five\" \"n(Na₂CO₃) = 0.05154 × 0.02500 = 1.2885 × 10⁻³ mol\" (grey tag \"keep the digits; round at the end\", dims), known box fills; on \"two point five seven seven\"",
+        "explain",
+        "the table dims to a strip. Task line: \"Find c(HCl)\". Equation strip (from scene 2, small). C12's mole bridge draws. Givens: \"Na₂CO₃: c = 0.05154 mol/L, V = 25.00 mL\" (navy) | \"HCl: mean titre 24.33 mL\" (amber). Lines one at a time, earlier dimming: on \"one point two eight eight five\" \"n(Na₂CO₃) = 0.05154 × 0.02500 = 1.2885 × 10⁻³ mol\" (grey tag \"keep the digits; round at the end\", dims), known box fills; on \"two point five seven seven\" \"n(HCl) = 2 × 1.2885 × 10⁻³ = 2.577 × 10⁻³ mol\", ratio and unknown boxes fill; on \"zero point one zero five nine\" \"c(HCl) = 2.577 × 10⁻³ ÷ 0.02433 = 0.1059 mol/L\" and the answer chip pins \"bench A: c(HCl) = 0.1059 mol/L\", grey tag \"4 s.f., like the data\" (dims). Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "bench-b-error": [
+        "new",
+        "the bench B mini table returns from the hook at the left.",
+        "Bench B: trace the error through the titre: So what happened on bench B?",
+        "big / dilutes / low / rinse with what's going in",
+        "On the spoken cues: On \"big\" its three titres pulse beside A's mean chip, tag \"each ≈ 0.5 mL bigger\". The error chain draws in the right zone, one chip per cue: on \"dilutes\" \"water in burette → acid diluted\" (grey) with a coded burette whose amber fill pales slightly; \"→ titre bigger\" (violet) on \"more millilitres are needed\"; on \"divided by more millilitres\" the line \"2.577 × 10⁻³ ÷ 0.02482 = 0.1038 mol/L\" writes small beside A's",
+        "explain",
+        "the bench B mini table returns from the hook at the left. On \"big\" its three titres pulse beside A's mean chip, tag \"each ≈ 0.5 mL bigger\". The error chain draws in the right zone, one chip per cue: on \"dilutes\" \"water in burette → acid diluted\" (grey) with a coded burette whose amber fill pales slightly; \"→ titre bigger\" (violet) on \"more millilitres are needed\"; on \"divided by more millilitres\" the line \"2.577 × 10⁻³ ÷ 0.02482 = 0.1038 mol/L\" writes small beside A's \"2.577 × 10⁻³ ÷ 0.02433 = 0.1059\", the same \"2.577 × 10⁻³\" lit in both and the bigger \"0.02482\" lit violet; on \"low\" \"→ answer too low\" (terracotta) writes with \"(2% low)\" beside the 0.1038, and the two lines dim to grey. On \"rinse with what's going in\" the aid writes large and handwritten, with its condition tag beneath: \"burette: the solution it delivers; pipette: the solution it measures; volumetric and conical flasks: distilled water\". Bright at the end: the chain's last chip, the aid and its tag. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "controlled": [
+        "new",
+        "right zone, card \"Measured: the titre\".",
+        "Controlled conditions: In a titration, nothing is changed to test its effect.",
+        "same / colour",
+        "On the spoken cues: On \"same\" a controlled list writes, one row per spoken item, each with a pen link to its object: \"25.00 mL aliquot, same pipette\" (pipette), \"same standard, 0.05154 mol/L\" (flask), \"3 drops methyl orange\" (dropper icon from the drops), \"same endpoint: first permanent orange\" (orange flask plate, on \"colour\"); a grey row \"same temperature, same burette\" (silent). Then, under \"Measured: the titre\", a grey line writes",
+        "explain",
+        "right zone, card \"Measured: the titre\". On \"same\" a controlled list writes, one row per spoken item, each with a pen link to its object: \"25.00 mL aliquot, same pipette\" (pipette), \"same standard, 0.05154 mol/L\" (flask), \"3 drops methyl orange\" (dropper icon from the drops), \"same endpoint: first permanent orange\" (orange flask plate, on \"colour\"); a grey row \"same temperature, same burette\" (silent). Then, under \"Measured: the titre\", a grey line writes and stays (silent): \"If a task asks for variables: the titre is what you measure; the aliquot, standard, indicator, endpoint colour and temperature are controlled; nothing is varied to test its effect.\" Earlier rows dim as it writes. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "new",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: answers the question?",
+        "Validity, reliability and accuracy: Validity: does the method answer the question?",
+        "Validity / Reliability / Accuracy / wrong",
+        "On the spoken cues: One measured quantity, the titre, everything else controlled; 1 : 2 at the methyl orange endpoint.\" \"Reliability: repeats agree? Three titres within 0.05 mL; the bubble run excluded for its cause and repeated.\" \"Accuracy: close to the true value? Dried, exactly weighed standard; rinse with what's going in; read at eye level; no bubble; volumetric glassware; analytical balance.\" On \"wrong\" bench B's mini table and",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: answers the question? One measured quantity, the titre, everything else controlled; 1 : 2 at the methyl orange endpoint.\" \"Reliability: repeats agree? Three titres within 0.05 mL; the bubble run excluded for its cause and repeated.\" \"Accuracy: close to the true value? Dried, exactly weighed standard; rinse with what's going in; read at eye level; no bubble; volumetric glassware; analytical balance.\" On \"wrong\" bench B's mini table and chip \"concordant but 2% low\" slide in beside the accuracy card, with A's \"0.1059\" beside B's \"0.1038\". A small grey footer, quoting only the verified NESA wording: 'Accuracy (NESA, Science Years 7 to 10 Syllabus, 2018): \"the extent to which a measured value agrees with its true value\".' (Verified 21 Oct against the NSW Department of Education resource \"Evaluating scientific investigations\", which reproduces the definition from that syllabus, © NESA; the full entry continues \"(namely - reference value)\", which is left off; the quoted words are exact and in order.) Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"solid Na₂CO₃ (H319)\" / \"serious eye irritation from dust\" / \"safety glasses (`m5x-safety-glasses-v1.png`); spatula; clean spills\"; \"0.1 mol/L HCl, 0.05 mol/L Na₂CO₃: below GHS classification limits\" / \"eye irritation from a splash\" / \"safety glasses; wash spills with water\"; \"methyl orange: solid H301; indicator solution (about 0.1%) below limits\" / \"toxic if swallowed (solid)\" / \"a few drops; cap the bottle; wash hands\"; \"filling the burette\" / \"splash into the eyes\" / \"top below eye level; funnel removed; clamp firm\"; \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\".",
+        "The risk assessment: The risk assessment.",
+        "classification / below eye level / filler",
+        "On the spoken cues: Grey rows: \"drying oven: teacher only (hot glassware)\"; \"waste: neutral sodium chloride solution; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\".",
+        "explain",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"solid Na₂CO₃ (H319)\" / \"serious eye irritation from dust\" / \"safety glasses (`m5x-safety-glasses-v1.png`); spatula; clean spills\"; \"0.1 mol/L HCl, 0.05 mol/L Na₂CO₃: below GHS classification limits\" / \"eye irritation from a splash\" / \"safety glasses; wash spills with water\"; \"methyl orange: solid H301; indicator solution (about 0.1%) below limits\" / \"toxic if swallowed (solid)\" / \"a few drops; cap the bottle; wash hands\"; \"filling the burette\" / \"splash into the eyes\" / \"top below eye level; funnel removed; clamp firm\"; \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\". Grey rows: \"drying oven: teacher only (hot glassware)\"; \"waste: neutral sodium chloride solution; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student rinses her pipette with",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student rinses a 25.00 mL pipette with distilled water and then, without drying it, uses it to transfer the sodium carbonate aliquot into the conical flask. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no error chain, no aid.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "fewer moles / smaller / high",
+        "On the spoken cues: On \"fewer moles\" \"with distilled water\" and \"without drying it\" are underlined and the error chain writes its first chip \"wet pipette → fewer moles of Na₂CO₃ in the flask\" (grey). On \"smaller\" \"the sodium carbonate aliquot\" is underlined and the chip \"→ titre smaller\" (violet) writes. On \"high\" \"calculated concentration of the hydrochloric acid\" is underlined and \"→ c(HCl) too high\" (terracotta) writes, with a small",
+        "explain",
+        "the question card shrinks to the top. On \"fewer moles\" \"with distilled water\" and \"without drying it\" are underlined and the error chain writes its first chip \"wet pipette → fewer moles of Na₂CO₃ in the flask\" (grey). On \"smaller\" \"the sodium carbonate aliquot\" is underlined and the chip \"→ titre smaller\" (violet) writes. On \"high\" \"calculated concentration of the hydrochloric acid\" is underlined and \"→ c(HCl) too high\" (terracotta) writes, with a small line \"c = n(calculated) ÷ smaller titre\". A chip \"diluted, so c(HCl) too low\" fades in and is crossed (caption \"follow the titre, not the word diluted\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. Before adding the aliquot, a student",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Before adding the aliquot, a student rinses the conical flask with the sodium carbonate solution. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no error chain, no aid, no flask film.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "solution / bigger / low / flask",
+        "On the spoken cues: On \"solution\" \"rinses the conical flask with the sodium carbonate solution\" is underlined, a thin navy coded film shows inside `m6-conical-flask-v1.png` (small), and the chain's first chip writes \"carbonate film + aliquot → more moles of Na₂CO₃ in the flask\" (grey). On \"bigger\" \"All other steps are carried out correctly\" is underlined and \"→ titre bigger\" (violet) writes; on \"low\" \"calculated concentration of the",
+        "explain",
+        "the question card shrinks to the top. On \"solution\" \"rinses the conical flask with the sodium carbonate solution\" is underlined, a thin navy coded film shows inside `m6-conical-flask-v1.png` (small), and the chain's first chip writes \"carbonate film + aliquot → more moles of Na₂CO₃ in the flask\" (grey). On \"bigger\" \"All other steps are carried out correctly\" is underlined and \"→ titre bigger\" (violet) writes; on \"low\" \"calculated concentration of the hydrochloric acid\" is underlined and \"→ c(HCl) too low\" (terracotta) writes, with a small line \"c = n(aliquot only) ÷ bigger titre\". On \"flask\" a chip \"rinsing with the solution is correct, so no effect\" fades in and is crossed (caption \"pipette: the solution; flask: distilled water only\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the plan card writes, each line lighting on its words: \"1 Standard: dried, weighed exactly, rinsed in, made to the mark, inverted.\"",
+        "Decision rule and handoff: So, for a titration you can trust: rinse with what's going in, clear the bubble, read at eye level, and average concordant titres.",
+        "Next",
+        "On the spoken cues: \"2 Rinse with what's going in; flasks with distilled water.\" \"3 No tip bubble; read the meniscus at eye level, to 0.05 mL.\" \"4 Rough run, then dropwise to the first permanent colour; concordant titres.\" \"5 Error → titre bigger or smaller → answer lower or higher.\" On \"Next\" a chip \"Next: standardisation and titration calculations (practice)\" appears with a small `m6-volumetric-flask-v1.png`.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Standard: dried, weighed exactly, rinsed in, made to the mark, inverted.\" \"2 Rinse with what's going in; flasks with distilled water.\" \"3 No tip bubble; read the meniscus at eye level, to 0.05 mL.\" \"4 Rough run, then dropwise to the first permanent colour; concordant titres.\" \"5 Error → titre bigger or smaller → answer lower or higher.\" On \"Next\" a chip \"Next: standardisation and titration calculations (practice)\" appears with a small `m6-volumetric-flask-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 50 seconds with pause invitation"
+    ]
+}
+
+M6G01C_ROWS = {
+    "hook": [
+        "adjust",
+        "heading \"Strong acid and base pH: which method?\" writes on.",
+        "Hook: A strong acid or base question can do more than hand you a concentration and ask for the pH.",
+        "What's in there / In what volume / does the answer make sense",
+        "On the spoken cues: Four small stimulus thumbnails fan out on the right on \"dilute it, mix it with a base, or hide a two\": `m6-volumetric-flask-v1.png` (small, coded label \"250.0 mL\"), two `m6-beaker-v1.png` plates tilting together, and a typeset \"Ba(OH)₂\" (no ring: the ring belongs to 5b, where it explains the step).",
+        "explain",
+        "heading \"Strong acid and base pH: which method?\" writes on. Four small stimulus thumbnails fan out on the right on \"dilute it, mix it with a base, or hide a two\": `m6-volumetric-flask-v1.png` (small, coded label \"250.0 mL\"), two `m6-beaker-v1.png` plates tilting together, and a typeset \"Ba(OH)₂\" (no ring: the ring belongs to 5b, where it explains the step). On the three checks, the check strip builds on the left, one row per cue: \"what's in there?\" (a teal and a violet token), \"in what volume?\" (a small volume outline), \"does it make sense?\" (a short pH track 0 to 14 with a tick on one side of 7). On \"four HSC-style questions\" the thumbnails become four numbered question cards with one shared tag line beneath them, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+        [
+            "HandText write-on",
+            "tick",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second; the check strip shrinks to the far left"
+    ],
+    "q1-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 1: a dilute strong acid) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. A nitric acid solution has a",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: a dilute strong acid)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on as an exam question: \"A solution of nitric acid, HNO₃, has a concentration of 0.00250 mol/L at 25 °C.\" Demands: \"(a) Calculate the pH of the solution.\" \"(b) Calculate the hydroxide ion concentration, [OH⁻], in the solution. (Kw = 1.0 × 10⁻¹⁴ at 25 °C)\". Two answer boxes. A small `m6-beaker-v1.png` with a coded label \"HNO₃(aq), 0.00250 mol/L\" sits at the card's upper right. Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-ph": [
+        "new",
+        "the card shrinks to a strip.",
+        "What's in there: Nitric acid is strong, with one proton per molecule, so every molecule gives its proton to water, and the hydronium concentration equals the acid's, two point five zero times ten to the minus three.",
+        "strong / two point six zero two / three decimal places",
+        "On the spoken cues: Type badge \"Strong acid\". On \"strong\" \"nitric acid, HNO₃\" underlines amber and the check strip's \"what's in there?\" row lights; the equation strip writes \"HNO₃(aq) + H₂O(l) → H₃O⁺(aq) + NO₃⁻(aq)\" (single arrow pulses once). \"0.00250 mol/L\" underlines and the first line writes: \"[H₃O⁺] = 0.00250",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Strong acid\". On \"strong\" \"nitric acid, HNO₃\" underlines amber and the check strip's \"what's in there?\" row lights; the equation strip writes \"HNO₃(aq) + H₂O(l) → H₃O⁺(aq) + NO₃⁻(aq)\" (single arrow pulses once). \"0.00250 mol/L\" underlines and the first line writes: \"[H₃O⁺] = 0.00250 mol/L = 2.50 × 10⁻³ mol/L\"; the strip dims. On \"two point six zero two\" the next line writes \"pH = −log(2.50 × 10⁻³) = 2.602\" and the first line dims; answer box (a) fills \"pH = 2.602\". On \"three decimal places\" a pen ring circles \"250\" in 2.50 with a chip \"3 s.f.\" and a tie runs to \".602\" with \"3 d.p.\" (the C07 rule card returns small as a grey tag \"C07: decimal places = s.f. in [H₃O⁺]\", fading at the end of the sentence). Strip: \"what's in there?\" ticks.",
+        [
+            "Mark underline",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-hydroxide": [
+        "new",
+        "the pH line dims to a kept chip \"pH = 2.602\".",
+        "Kw: Now the hydroxide.",
+        "one point zero times ten to the minus fourteen / four point zero times ten to the minus twelve",
+        "On the spoken cues: On \"Now the hydroxide\" a small lens shows many teal tokens and one lone violet token among pale blue water (tag \"a little OH⁻ from water\", fading on \"K w\"). On \"one point zero times ten to the minus fourteen\" \"Kw = 1.0 × 10⁻¹⁴ at 25 °C\" underlines in the strip and the line writes \"[OH⁻] = Kw ÷",
+        "explain",
+        "the pH line dims to a kept chip \"pH = 2.602\". On \"Now the hydroxide\" a small lens shows many teal tokens and one lone violet token among pale blue water (tag \"a little OH⁻ from water\", fading on \"K w\"). On \"one point zero times ten to the minus fourteen\" \"Kw = 1.0 × 10⁻¹⁴ at 25 °C\" underlines in the strip and the line writes \"[OH⁻] = Kw ÷ [H₃O⁺] = 1.0 × 10⁻¹⁴ ÷ 2.50 × 10⁻³\"; on \"four point zero times ten to the minus twelve\" it completes \"= 4.0 × 10⁻¹² mol/L\" with a small grey tag \"2 s.f., from Kw\" and answer box (b) fills. On \"as it should be in an acid\" C07's `IonBars` thumbnail shows a tall teal bar and a sliver of violet, with \"[H₃O⁺] > [OH⁻]: acidic ✓\"; the lens fades. Strip: \"does it make sense?\" ticks.",
+        [
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"0.00250 mol/L is dilute, so HNO₃ is weak here\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"strong = fully ionised; dilute = small c\".",
+        "The classic mistake: The classic mistake is thinking an acid this dilute must be weak.",
+        "the classic mistake / strong = fully ionised; dilute = small c / how fully it ionises, not how much is there",
+        "On the spoken cues: On \"how fully it ionises, not how much is there\" a grey tag writes small: \"C05: strength is how much it breaks up; concentration is how much you put in\". Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"0.00250 mol/L is dilute, so HNO₃ is weak here\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"strong = fully ionised; dilute = small c\". On \"how fully it ionises, not how much is there\" a grey tag writes small: \"C05: strength is how much it breaks up; concentration is how much you put in\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 2: made up to the mark) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. A student uses a pipette to",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: made up to the mark)",
+        "explain",
+        "board clears. Type badge hidden. `m6-volumetric-pipette-filler-v1.png` and `m6-volumetric-flask-v1.png` sit small at the card's upper right, untouched (no motion during the attempt). The card writes on: \"A student uses a pipette to transfer 25.0 mL of 0.120 mol/L hydrochloric acid into a 250.0 mL volumetric flask, then makes the solution up to the mark with distilled water.\" Demand: \"Calculate the pH of the diluted solution at 25 °C.\" One answer box. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-moles": [
+        "new",
+        "the card shrinks to a strip; type badge \"Dilution\".",
+        "In what volume: Adding water doesn't change the moles of acid, so start with moles.",
+        "zero point zero zero three zero zero / Made up to / one point nine two one",
+        "On the spoken cues: The pipette plate tilts along a coded arc into the flask, and a coded water fill rises to the calibration ring (C07 `PipettePlate` and `FlaskFill`); a `VolBox` lens shows six teal tokens whose outline widens tenfold while the count stays six (tag \"same moles, bigger volume\", fading on the next",
+        "explain",
+        "the card shrinks to a strip; type badge \"Dilution\". The pipette plate tilts along a coded arc into the flask, and a coded water fill rises to the calibration ring (C07 `PipettePlate` and `FlaskFill`); a `VolBox` lens shows six teal tokens whose outline widens tenfold while the count stays six (tag \"same moles, bigger volume\", fading on the next line). Task line: \"Find the pH after dilution\". On \"zero point zero zero three zero zero\" \"25.0 mL of 0.120 mol/L\" underlines and the line writes \"n(H₃O⁺) = 0.120 × 0.0250 = 0.00300 mol\"; the plates shrink to grey thumbnails. On \"Made up to\" \"up to the mark\" and \"250.0 mL\" underline and the flask thumbnail's ring pulses; the line writes \"V = 250.0 mL = 0.2500 L (final volume)\"; the n line dims. Then \"c = 0.00300 ÷ 0.2500 = 0.0120 mol/L\", and on \"one point nine two one\" \"pH = −log(0.0120) = 1.921\"; the earlier lines dim and answer box fills \"pH = 1.921\". Strip: \"what's in there?\" and \"in what volume?\" tick.",
+        [
+            "Mark underline",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-check": [
+        "new",
+        "the working lines dim to a kept chip \"pH = 1.921\".",
+        "Does it make sense: Does that make sense?",
+        "exactly one / one point nine two one",
+        "On the spoken cues: C07's `LogRuler` draws small across the lower third (concentrations 10⁰ to 10⁻³ above, pH 0 to 3 below). On \"ten times\" a marker labelled \"0.120\" slides along the concentration scale to \"0.0120\", bracket \"÷ 10\". On \"exactly one\" the pH scale under it shows a bracket \"+1.000\" from a grey \"0.921",
+        "explain",
+        "the working lines dim to a kept chip \"pH = 1.921\". C07's `LogRuler` draws small across the lower third (concentrations 10⁰ to 10⁻³ above, pH 0 to 3 below). On \"ten times\" a marker labelled \"0.120\" slides along the concentration scale to \"0.0120\", bracket \"÷ 10\". On \"exactly one\" the pH scale under it shows a bracket \"+1.000\" from a grey \"0.921 (before)\" to \"1.921 (after)\". On \"checks out\" the kept chip takes a tick and the bank aid writes small: \"One pH unit is ten times.\" Strip: \"does it make sense?\" ticks.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"V = 25.0 + 250.0 = 275.0 mL: pH 1.962\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"made up to = final volume\".",
+        "The classic mistake: The classic mistake is adding the two volumes, as if two hundred and fifty millilitres of water went in.",
+        "the classic mistake / made up to = final volume / Made up to means the total",
+        "On the spoken cues: On \"Made up to means the total\" the flask thumbnail returns with its ring and a coded label \"250.0 mL in total\". Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"V = 25.0 + 250.0 = 275.0 mL: pH 1.962\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"made up to = final volume\". On \"Made up to means the total\" the flask thumbnail returns with its ring and a coded label \"250.0 mL in total\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 3: mixing two pH values) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. Thirty millilitres of hydrochloric acid with",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: mixing two pH values)",
+        "explain",
+        "board clears. Type badge hidden. Two `m6-beaker-v1.png` plates sit at the card's upper right with coded labels \"HCl(aq), pH 1.00, 30.0 mL\" and \"NaOH(aq), pH 13.00, 20.0 mL\" (no meters, no motion). The card writes on: \"30.0 mL of hydrochloric acid with a pH of 1.00 is mixed with 20.0 mL of sodium hydroxide solution with a pH of 13.00. Both solutions are at 25 °C. Assume the volumes add.\" Demand: \"Calculate the pH of the resulting mixture.\" One answer box. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-moles": [
+        "new",
+        "the card shrinks to a strip; type badge \"Mixing\".",
+        "PH to concentration to moles: You can't mix pH values, because they're logs, so turn each one into a concentration.",
+        "zero point one zero / zero point zero zero three zero",
+        "On the spoken cues: Task line: \"Find the pH of the mixture\". On \"zero point one zero\" \"pH of 1.00\" underlines and the line writes \"[H₃O⁺] = 10⁻¹·⁰⁰ = 0.10 mol/L\" with a small grey tag \"2 d.p. → 2 s.f.\" (fades at the end of the sentence). On \"the pOH is fourteen minus thirteen\" \"pH of 13.00\" underlines; the line writes",
+        "explain",
+        "the card shrinks to a strip; type badge \"Mixing\". Task line: \"Find the pH of the mixture\". On \"zero point one zero\" \"pH of 1.00\" underlines and the line writes \"[H₃O⁺] = 10⁻¹·⁰⁰ = 0.10 mol/L\" with a small grey tag \"2 d.p. → 2 s.f.\" (fades at the end of the sentence). On \"the pOH is fourteen minus thirteen\" \"pH of 13.00\" underlines; the line writes \"pOH = 14.00 − 13.00 = 1.00; [OH⁻] = 0.10 mol/L\" (violet-tinted); the first line dims. On \"zero point zero zero three zero\" \"30.0 mL\" and \"20.0 mL\" underline and two lines write together: \"n(H₃O⁺) = 0.10 × 0.0300 = 0.0030 mol\" (teal) and \"n(OH⁻) = 0.10 × 0.0200 = 0.0020 mol\" (violet); the concentration lines dim. Strip: \"what's in there?\" ticks.",
+        [
+            "Mark underline",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-excess": [
+        "new",
+        "the two n lines fold into C07's `IonBars` two-bar comparison (teal \"H₃O⁺ 0.0030 mol\", violet \"OH⁻ 0.0020 mol\"); on \"runs out\" the violet bar empties as the same length of teal empties, leaving a teal stub; chip \"excess H₃O⁺ = 0.0010 mol\".",
+        "Neutralise first, then dilute: Neutralise first: hydronium and hydroxide make water until the hydroxide runs out, leaving zero point zero zero one zero moles of hydronium.",
+        "runs out / zero point zero zero one zero / fifty millilitres / one point seven zero",
+        "On the spoken cues: On \"fifty millilitres\" both volumes underline in the strip and the line writes \"V(total) = 30.0 + 20.0 = 50.0 mL = 0.0500 L\", the teal stub spreading into a wide outline; then \"[H₃O⁺] = 0.0010 ÷ 0.0500 = 0.020 mol/L\" and, on \"one point seven zero\", \"pH = −log(0.020) = 1.70\"; earlier lines dim;",
+        "explain",
+        "the two n lines fold into C07's `IonBars` two-bar comparison (teal \"H₃O⁺ 0.0030 mol\", violet \"OH⁻ 0.0020 mol\"); on \"runs out\" the violet bar empties as the same length of teal empties, leaving a teal stub; chip \"excess H₃O⁺ = 0.0010 mol\". On \"fifty millilitres\" both volumes underline in the strip and the line writes \"V(total) = 30.0 + 20.0 = 50.0 mL = 0.0500 L\", the teal stub spreading into a wide outline; then \"[H₃O⁺] = 0.0010 ÷ 0.0500 = 0.020 mol/L\" and, on \"one point seven zero\", \"pH = −log(0.020) = 1.70\"; earlier lines dim; answer box fills \"pH = 1.70\". On \"Check\" a `PHTrack` writes small under the answer: 0 to 14 with a teal wall at 7 and a marker at 1.70 on the acid side, tag \"acid in excess: below 7 ✓\". Strip: \"in what volume?\" and \"does it make sense?\" tick.",
+        [
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"(1.00 + 13.00) ÷ 2 = 7.00, neutral\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"work in moles, not pH\".",
+        "The classic mistake: The classic mistake is averaging the two pH values.",
+        "the classic mistake / work in moles, not pH / more acid than base",
+        "On the spoken cues: On \"more acid than base\" the `IonBars` thumbnail pulses its leftover teal stub. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"(1.00 + 13.00) ÷ 2 = 7.00, neutral\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"work in moles, not pH\". On \"more acid than base\" the `IonBars` thumbnail pulses its leftover teal stub. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q4-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 4: barium hydroxide and hydrochloric acid) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question four. Forty millilitres of zero point zero",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 4: barium hydroxide and hydrochloric acid)",
+        "explain",
+        "board clears. Type badge hidden. Two `m6-beaker-v1.png` plates at the card's upper right, coded labels \"Ba(OH)₂(aq)\" and \"HCl(aq)\". The card writes on: \"40.0 mL of 0.0500 mol/L barium hydroxide, Ba(OH)₂, is mixed with 30.0 mL of 0.100 mol/L hydrochloric acid at 25 °C. Assume the volumes add.\" Demand: \"Calculate the pH of the resulting solution.\" One answer box. Nothing answer-bearing (no ring on the 2). **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q4-excess": [
+        "new",
+        "the card shrinks to a strip; type badge \"Mixing: excess base\".",
+        "Count the hydroxides: Count the hydroxides first.",
+        "two / zero point zero zero four zero zero / hydroxide",
+        "On the spoken cues: Equation strip: \"Ba(OH)₂(aq) → Ba²⁺(aq) + 2OH⁻(aq)\". On \"two\" the subscript 2 in \"Ba(OH)₂\" in the strip gets a pen ring and two violet tokens drop from it; \"40.0 mL of 0.0500 mol/L barium hydroxide\" underlines and the line writes \"n(OH⁻) = 2 × 0.0500 × 0.0400 = 0.00400 mol\"; the equation strip",
+        "explain",
+        "the card shrinks to a strip; type badge \"Mixing: excess base\". Equation strip: \"Ba(OH)₂(aq) → Ba²⁺(aq) + 2OH⁻(aq)\". On \"two\" the subscript 2 in \"Ba(OH)₂\" in the strip gets a pen ring and two violet tokens drop from it; \"40.0 mL of 0.0500 mol/L barium hydroxide\" underlines and the line writes \"n(OH⁻) = 2 × 0.0500 × 0.0400 = 0.00400 mol\"; the equation strip dims. On \"zero point zero zero three zero zero\" \"30.0 mL of 0.100 mol/L hydrochloric acid\" underlines and \"n(H₃O⁺) = 0.100 × 0.0300 = 0.00300 mol\" writes. On \"hydroxide\" the two lines fold into `IonBars` (violet longer); the teal bar empties first, leaving a violet stub; kept chip \"excess OH⁻ = 0.00100 mol\". Strip: \"what's in there?\" ticks.",
+        [
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q4-ph": [
+        "new",
+        "the bars shrink to a thumbnail beside the kept chip.",
+        "Total volume, pOH, pH: That spreads through seventy millilitres, so the hydroxide is zero point zero one four three moles per litre.",
+        "seventy millilitres / twelve point one five five",
+        "On the spoken cues: On \"seventy millilitres\" both volumes underline and the line writes \"V(total) = 40.0 + 30.0 = 70.0 mL = 0.0700 L\"; then \"[OH⁻] = 0.00100 ÷ 0.0700 = 0.0143 mol/L\"; then \"pOH = −log(0.014286) = 1.845\" (violet-tinted); then, on \"twelve point one five five\", \"pH = 14.00 − 1.845 = 12.155\"; each earlier",
+        "explain",
+        "the bars shrink to a thumbnail beside the kept chip. On \"seventy millilitres\" both volumes underline and the line writes \"V(total) = 40.0 + 30.0 = 70.0 mL = 0.0700 L\"; then \"[OH⁻] = 0.00100 ÷ 0.0700 = 0.0143 mol/L\"; then \"pOH = −log(0.014286) = 1.845\" (violet-tinted); then, on \"twelve point one five five\", \"pH = 14.00 − 1.845 = 12.155\"; each earlier line dims; answer box fills \"pH = 12.155\". On \"Check\" the `PHTrack` returns small with a marker at 12.155 on the base side, tag \"base in excess: above 7 ✓\". Strip: \"in what volume?\" and \"does it make sense?\" tick.",
+        [
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q4-mistake": [
+        "new",
+        "a ghost line \"n(OH⁻) = 0.0500 × 0.0400 = 0.00200 mol\" writes under the real one with a ghost `IonBars` pair where the teal bar is longer; a chip \"excess H₃O⁺: pH 1.845\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"Ba(OH)₂ gives 2 OH⁻\".",
+        "The classic mistake: The classic mistake is forgetting the two.",
+        "the classic mistake / Ba(OH)₂ gives 2 OH⁻ / the wrong side of seven",
+        "On the spoken cues: On \"the wrong side of seven\" the `PHTrack` thumbnail shows a grey crossed marker at 1.845 and the real marker at 12.155. Hold about 1.5 seconds.",
+        "explain",
+        "a ghost line \"n(OH⁻) = 0.0500 × 0.0400 = 0.00200 mol\" writes under the real one with a ghost `IonBars` pair where the teal bar is longer; a chip \"excess H₃O⁺: pH 1.845\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"Ba(OH)₂ gives 2 OH⁻\". On \"the wrong side of seven\" the `PHTrack` thumbnail shows a grey crossed marker at 1.845 and the real marker at 12.155. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "adjust",
+        "the check strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a strong acid or base → [H₃O⁺] = c, or [OH⁻] = c × number of OH⁻ (Q1, Q4)\"; \"diluted → moles stay the same; ÷ final volume (Q2)\"; \"mixed → moles of each, subtract, ÷ total volume (Q3, Q4)\"; \"any answer → right side of 7? right size of change? (all)\".",
+        "Decision board: So here's how to start any strong acid or base question.",
+        "strong / final / neutralise first, then dilute / side of seven",
+        "On the spoken cues: The bank aid \"Mixing: neutralise first, then dilute.\" writes small under row 3. On \"Next\" a chip \"Next: weak acid and weak base pH with an ICE table\" slides in at the lower right with `m6-ph-meter-probe-beaker-v1.png` small. Hold about 2 seconds.",
+        "explain",
+        "the check strip returns full size as a two-column board, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a strong acid or base → [H₃O⁺] = c, or [OH⁻] = c × number of OH⁻ (Q1, Q4)\"; \"diluted → moles stay the same; ÷ final volume (Q2)\"; \"mixed → moles of each, subtract, ÷ total volume (Q3, Q4)\"; \"any answer → right side of 7? right size of change? (all)\". The bank aid \"Mixing: neutralise first, then dilute.\" writes small under row 3. On \"Next\" a chip \"Next: weak acid and weak base pH with an ICE table\" slides in at the lower right with `m6-ph-meter-probe-beaker-v1.png` small. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6G02C_ROWS = {
+    "hook": [
+        "adjust",
+        "heading \"Weak acids: which method fits the data?\" writes on.",
+        "Hook: Weak acid questions give you different data, and the data choose the method.",
+        "check / backwards / Compare",
+        "On the spoken cues: Three small data chips fan out on the right, one per cue: \"Ka = ... , c = ...\" with C08's check-ruler thumbnail on \"check\"; `m6-ph-meter-probe-beaker-v1.png` small with an amber readout \"pH ...\" and a back arrow on \"backwards\"; \"HCO₃⁻\" with two short arrows, one each way, on \"Compare\". The check",
+        "explain",
+        "heading \"Weak acids: which method fits the data?\" writes on. Three small data chips fan out on the right, one per cue: \"Ka = ... , c = ...\" with C08's check-ruler thumbnail on \"check\"; `m6-ph-meter-probe-beaker-v1.png` small with an amber readout \"pH ...\" and a back arrow on \"backwards\"; \"HCO₃⁻\" with two short arrows, one each way, on \"Compare\". The check strip builds on the left as the chips land: \"what data?\", \"is x small?\", \"does it make sense?\". On \"four HSC-style questions\" the chips become four numbered question cards with one shared tag line beneath them, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second; the check strip shrinks to the far left"
+    ],
+    "q1-question": [
+        "new",
+        "fresh board.",
+        "HSC-style question (question 1: hypochlorous acid) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. Hypochlorous acid is a weak acid",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: hypochlorous acid)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"Hypochlorous acid, HOCl, is a weak monoprotic acid that forms when chlorine is added to pool water. Ka(HOCl) = 3.0 × 10⁻⁸ at 25 °C.\" Demand: \"Calculate the pH of a 0.0500 mol/L solution of hypochlorous acid at 25 °C. Justify any approximation you make.\" One answer box. No plate (a worded question). Nothing answer-bearing: no table, no ruler. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-estimate": [
+        "new",
+        "the card shrinks to a strip.",
+        "Ka and c given: the shortcut: K a and a concentration, so set up the ICE table: the acid goes down by x, and each ion goes up by x.",
+        "tiny / one point five times ten to the minus nine / three point nine times ten to the minus five",
+        "On the spoken cues: Type badge \"Ka given: shortcut\". \"Ka(HOCl) = 3.0 × 10⁻⁸\" and \"0.0500 mol/L\" underline amber; the check strip's \"what data?\" row lights. Equation strip: \"HOCl(aq) + H₂O(l) ⇌ H₃O⁺(aq) + OCl⁻(aq)\". On \"set up the ICE table\" `IceRows` fills fast, row by row (I \"0.0500, 0, 0\"; C \"−x, +x, +x\"; E \"0.0500",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Ka given: shortcut\". \"Ka(HOCl) = 3.0 × 10⁻⁸\" and \"0.0500 mol/L\" underline amber; the check strip's \"what data?\" row lights. Equation strip: \"HOCl(aq) + H₂O(l) ⇌ H₃O⁺(aq) + OCl⁻(aq)\". On \"set up the ICE table\" `IceRows` fills fast, row by row (I \"0.0500, 0, 0\"; C \"−x, +x, +x\"; E \"0.0500 − x, x, x\"), then the I and C rows dim; the strip dims. `KaFrac` writes \"Ka = x² / (0.0500 − x) = 3.0 × 10⁻⁸\". On \"tiny\" the \"− x\" greys and slides out (\"≈\" replaces \"=\"), and the E-row cell becomes \"≈ 0.0500\". On \"one point five times ten to the minus nine\" the line \"x² = 3.0 × 10⁻⁸ × 0.0500 = 1.5 × 10⁻⁹\" writes; on \"three point nine times ten to the minus five\" \"x = √(1.5 × 10⁻⁹) = 3.87 × 10⁻⁵ → 3.9 × 10⁻⁵ mol/L\" writes and shrinks to a kept chip \"x = [H₃O⁺] = 3.9 × 10⁻⁵ mol/L\"; earlier lines dim. Strip: \"what data?\" ticks.",
+        [
+            "Mark underline",
+            "Enter slide",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-check": [
+        "new",
+        "`XRuler` draws: a long bar \"0.0500\" with a hair-thin teal sliver at its end and a dashed 5% line far to the left of the end; on \"zero point zero seven seven percent\" the label \"3.87 × 10⁻⁵ ÷ 0.0500 × 100% = 0.077% < 5% ✓\" writes and \"Justify any approximation\" underlines in the strip; the ruler dims.",
+        "Justify it, then the pH: Now justify it.",
+        "zero point zero seven seven percent / four point four one / below seven",
+        "On the spoken cues: On \"four point four one\" the line \"pH = −log(3.87 × 10⁻⁵) = 4.41\" writes and answer box fills \"pH = 4.41 (approximation valid: 0.077% < 5%)\", with a small grey tag \"x: 2 s.f. (from Ka) → 2 d.p.\" that fades after its sentence. On \"below seven\" a `PHTrack` writes small: 0 to 14, a teal wall at 7, a",
+        "explain",
+        "`XRuler` draws: a long bar \"0.0500\" with a hair-thin teal sliver at its end and a dashed 5% line far to the left of the end; on \"zero point zero seven seven percent\" the label \"3.87 × 10⁻⁵ ÷ 0.0500 × 100% = 0.077% < 5% ✓\" writes and \"Justify any approximation\" underlines in the strip; the ruler dims. On \"four point four one\" the line \"pH = −log(3.87 × 10⁻⁵) = 4.41\" writes and answer box fills \"pH = 4.41 (approximation valid: 0.077% < 5%)\", with a small grey tag \"x: 2 s.f. (from Ka) → 2 d.p.\" that fades after its sentence. On \"below seven\" a `PHTrack` writes small: 0 to 14, a teal wall at 7, a marker at 4.41 on the acid side, tag \"acid: below 7 ✓\". Strip: \"is x small?\" and \"does it make sense?\" tick.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"x = Ka × c = 1.5 × 10⁻⁹: pH 8.82\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"x² = Ka × c, so take the square root\".",
+        "The classic mistake: The classic mistake is forgetting the square root.",
+        "the classic mistake / x² = Ka × c, so take the square root / a basic pH for an acid",
+        "On the spoken cues: On \"a basic pH for an acid\" the `PHTrack` thumbnail shows a grey crossed marker at 8.82 on the base side beside the real one at 4.41. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"x = Ka × c = 1.5 × 10⁻⁹: pH 8.82\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"x² = Ka × c, so take the square root\". On \"a basic pH for an acid\" the `PHTrack` thumbnail shows a grey crossed marker at 8.82 on the base side beside the real one at 4.41. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "new",
+        "board clears.",
+        "HSC-style question (question 2: chloroethanoic acid) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. Chloroethanoic acid is a weak monoprotic",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: chloroethanoic acid)",
+        "explain",
+        "board clears. Type badge hidden. The card writes on: \"Chloroethanoic acid, CH₂ClCOOH, is a weak monoprotic acid. Ka = 1.4 × 10⁻³ at 25 °C.\" Demands: \"(a) Show that the simplifying assumption [HA] ≈ c cannot be used for a 0.0200 mol/L solution.\" \"(b) Calculate the pH of the 0.0200 mol/L solution at 25 °C.\" Two answer boxes. Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-check-fails": [
+        "new",
+        "the card shrinks to a strip; type badge \"Ka given: full equation\".",
+        "Try the shortcut, and check it: Try the shortcut first.",
+        "check / twenty six percent / nowhere near c / Keep the x",
+        "On the spoken cues: \"Ka = 1.4 × 10⁻³\" and \"0.0200 mol/L\" underline. A compact E row writes (\"0.0200 − x | x | x\") with the `KaFrac` line \"Ka = x² / (0.0200 − x)\"; the \"− x\" greys (trial only, grey tag \"try: drop x\"). Lines: \"x² ≈ 1.4 × 10⁻³ × 0.0200 = 2.8 × 10⁻⁵; x ≈ 5.29 × 10⁻³ mol/L\" (in grey, as a trial). On",
+        "explain",
+        "the card shrinks to a strip; type badge \"Ka given: full equation\". \"Ka = 1.4 × 10⁻³\" and \"0.0200 mol/L\" underline. A compact E row writes (\"0.0200 − x | x | x\") with the `KaFrac` line \"Ka = x² / (0.0200 − x)\"; the \"− x\" greys (trial only, grey tag \"try: drop x\"). Lines: \"x² ≈ 1.4 × 10⁻³ × 0.0200 = 2.8 × 10⁻⁵; x ≈ 5.29 × 10⁻³ mol/L\" (in grey, as a trial). On \"check\" `XRuler` draws: this time the sliver is a visible chunk; on \"twenty six percent\" it reaches far past the dashed 5% line, which turns amber; label \"5.29 × 10⁻³ ÷ 0.0200 × 100% = 26% > 5% ✗\"; \"Show that the simplifying assumption ... cannot be used\" underlines and answer box (a) fills \"x ÷ c ≈ 26%, over 5%, so [HA] ≈ c is not valid\". On \"nowhere near c\" the E-row cell \"0.0200 − x\" pulses beside the long bar, whose teal chunk is about a quarter of it. On \"Keep the x\" the greyed \"− x\" slides back into the `KaFrac` line in white and the trial lines dim. Strip: \"what data?\" and \"is x small?\" tick.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q2-full": [
+        "new",
+        "the ruler shrinks to a thumbnail (amber ✗).",
+        "Solve the full equation: So K a equals x squared over zero point zero two zero zero minus x.",
+        "equals zero / positive root / two point three three",
+        "On the spoken cues: Three short lines write, one per cue, each earlier one dimming: \"x² = 1.4 × 10⁻³ (0.0200 − x)\" (after \"Multiply both sides by the bottom\"); on \"equals zero\" \"x² + 1.4 × 10⁻³ x − 2.8 × 10⁻⁵ = 0\"; on \"positive root\" \"x = [−1.4 × 10⁻³ + √((1.4 × 10⁻³)² + 4 × 2.8 × 10⁻⁵)] ÷ 2 = 4.64 × 10⁻³ → 4.6 × 10⁻³",
+        "explain",
+        "the ruler shrinks to a thumbnail (amber ✗). Three short lines write, one per cue, each earlier one dimming: \"x² = 1.4 × 10⁻³ (0.0200 − x)\" (after \"Multiply both sides by the bottom\"); on \"equals zero\" \"x² + 1.4 × 10⁻³ x − 2.8 × 10⁻⁵ = 0\"; on \"positive root\" \"x = [−1.4 × 10⁻³ + √((1.4 × 10⁻³)² + 4 × 2.8 × 10⁻⁵)] ÷ 2 = 4.64 × 10⁻³ → 4.6 × 10⁻³ mol/L\" with a grey tag \"the negative root is not a concentration\" that fades. A tick line writes small: \"check: (4.64 × 10⁻³)² ÷ (0.0200 − 0.00464) = 1.4 × 10⁻³ ✓\". On \"two point three three\" \"pH = −log(4.64 × 10⁻³) = 2.33\" writes and answer box (b) fills \"pH = 2.33\". Strip: \"does it make sense?\" ticks.",
+        [
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"check failed, but pH = −log(5.29 × 10⁻³) = 2.28 kept\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"failed check: solve the full equation\".",
+        "The classic mistake: The classic mistake is keeping the shortcut answer after the check has failed.",
+        "the classic mistake / failed check: solve the full equation / zero point zero five out",
+        "On the spoken cues: On \"zero point zero five out\" a small pH bracket joins \"2.28\" (grey) and \"2.33\" (white). Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"check failed, but pH = −log(5.29 × 10⁻³) = 2.28 kept\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"failed check: solve the full equation\". On \"zero point zero five out\" a small pH bracket joins \"2.28\" (grey) and \"2.33\" (white). Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 3: benzoic acid, from a measured pH) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. Benzoic acid is a weak monoprotic",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: benzoic acid, from a measured pH)",
+        "explain",
+        "board clears. Type badge hidden. `m6-ph-meter-probe-beaker-v1.png` sits small at the card's upper right, its beaker labelled (coded) \"benzoic acid, 0.0150 mol/L\" and its amber readout showing \"3.03\" (given data). The card writes on: \"Benzoic acid, C₆H₅COOH, is a weak monoprotic acid used as a food preservative. A 0.0150 mol/L solution of benzoic acid has a measured pH of 3.03 at 25 °C.\" Demand: \"Calculate the acid dissociation constant, Ka, and the pKa of benzoic acid.\" One answer box. Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-backwards": [
+        "new",
+        "the card shrinks to a strip; type badge \"pH given: backwards\".",
+        "PH given: run the table backwards: This time the pH is given, so work backwards.",
+        "backwards / nine point three three times ten to the minus four / zero point zero one four one",
+        "On the spoken cues: Equation strip: \"C₆H₅COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + C₆H₅COO⁻(aq)\". On \"backwards\" \"measured pH of 3.03\" underlines, the meter thumbnail's readout pulses, and `IceRows` draws with its E row filling first, as in C10 (\"work backwards\" arrow up the table). On \"nine point three three times ten to the",
+        "explain",
+        "the card shrinks to a strip; type badge \"pH given: backwards\". Equation strip: \"C₆H₅COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + C₆H₅COO⁻(aq)\". On \"backwards\" \"measured pH of 3.03\" underlines, the meter thumbnail's readout pulses, and `IceRows` draws with its E row filling first, as in C10 (\"work backwards\" arrow up the table). On \"nine point three three times ten to the minus four\" the line \"[H₃O⁺] = 10⁻³·⁰³ = 9.33 × 10⁻⁴ mol/L\" writes with C10's grey tag \"keep the digits; round at the end\" (fades after its sentence), and the E-row cell under H₃O⁺ fills. On \"benzoate is the same\" the E-row cell under C₆H₅COO⁻ fills \"9.33 × 10⁻⁴\". On \"zero point zero one four one\" \"0.0150 mol/L\" underlines and the E-row cell under the acid fills \"0.0150 − 0.000933 = 0.0141\"; the I and C rows stay dim. As the cell fills, a small grey tag \"[H₃O⁺] is measured: no 5% check\" writes and fades at the end of the scene (Revision 2: this tag now carries the trimmed sentence). Strip: \"what data?\" ticks.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-ka": [
+        "new",
+        "the table dims to its E row.",
+        "Ka, then pKa: So K a is hydronium times benzoate, over the acid: nine point three three times ten to the minus four, squared, over zero point zero one four one.",
+        "six point two times ten to the minus five / four point two one",
+        "On the spoken cues: `KaFrac` writes \"Ka = [H₃O⁺][C₆H₅COO⁻] / [C₆H₅COOH] = (9.33 × 10⁻⁴)² / 0.0141\"; on \"six point two times ten to the minus five\" it completes \"= 6.17 × 10⁻⁵ → 6.2 × 10⁻⁵\" with a small grey tag \"pH 2 d.p. → 2 s.f.\" (fades). On \"four point two one\" the `KaFrac` line dims and the line \"pKa = −log(6.17 ×",
+        "explain",
+        "the table dims to its E row. `KaFrac` writes \"Ka = [H₃O⁺][C₆H₅COO⁻] / [C₆H₅COOH] = (9.33 × 10⁻⁴)² / 0.0141\"; on \"six point two times ten to the minus five\" it completes \"= 6.17 × 10⁻⁵ → 6.2 × 10⁻⁵\" with a small grey tag \"pH 2 d.p. → 2 s.f.\" (fades). On \"four point two one\" the `KaFrac` line dims and the line \"pKa = −log(6.17 × 10⁻⁵) = 4.21\" writes; answer box fills \"Ka = 6.2 × 10⁻⁵; pKa = 4.21\". A `PKRuler` thumbnail shows a navy marker at 4.21 between C10's two grey markers, methanoic acid (3.74) and ethanoic acid (4.74), tag \"pKa 4.21: between methanoic acid (3.74) and ethanoic acid (4.74) ✓\" (check: a realistic size for a carboxylic acid, not just the label \"weak\"). Strip: \"does it make sense?\" ticks.",
+        [
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"pKa = pH = 3.03\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"pH: this solution; pKa: the acid\".",
+        "The classic mistake: The classic mistake is writing the p K a as three point zero three, the same as the pH.",
+        "the classic mistake / pH: this solution; pKa: the acid / this concentration / the acid itself",
+        "On the spoken cues: On \"this concentration\" the \"0.0150 mol/L\" label on the meter thumbnail pulses; on \"the acid itself\" the pKa answer \"4.21\" pulses. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"pKa = pH = 3.03\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"pH: this solution; pKa: the acid\". On \"this concentration\" the \"0.0150 mol/L\" label on the meter thumbnail pulses; on \"the acid itself\" the pKa answer \"4.21\" pulses. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q4-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 4: two amphiprotic ions) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question four. The hydrogen carbonate ion, from baking",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 4: two amphiprotic ions)",
+        "explain",
+        "board clears. Type badge hidden. `m6-baking-soda-box-v1.png` and `m6-fertiliser-granules-v1.png` sit small at the card's upper right, with coded labels \"NaHCO₃\" and \"KH₂PO₄\". The card writes on: \"Sodium hydrogen carbonate, NaHCO₃ (baking soda), and potassium dihydrogen phosphate, KH₂PO₄ (used in some fertilisers), dissolve in water to give the amphiprotic ions HCO₃⁻ and H₂PO₄⁻.\" Data block, one line each: \"Ka(H₂CO₃) = 4.3 × 10⁻⁷\", \"Ka(HCO₃⁻) = 4.7 × 10⁻¹¹\", \"Ka(H₃PO₄) = 7.1 × 10⁻³\", \"Ka(H₂PO₄⁻) = 6.3 × 10⁻⁸\", \"Kw = 1.0 × 10⁻¹⁴ (all at 25 °C)\". Demands: \"(a) For each ion, write an equation for its reaction with water as an acid, and as a base.\" \"(b) Use Ka and Kb values to determine which reaction mainly occurs for each ion.\" \"(c) Predict whether a solution of each salt is acidic or basic.\" Three answer boxes. Nothing answer-bearing (no arrows, no chains, no equations). **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q4-carbonate": [
+        "new",
+        "the card shrinks to a strip; type badge \"Amphiprotic: Ka against Kb\".",
+        "Two reactions, two constants: An amphiprotic ion runs two reactions with water, so compare their constants.",
+        "donating / four point seven times ten to the minus eleven / Accepting / conjugate acid / two point three times ten to the minus eight / basic",
+        "On the spoken cues: The two-reaction fork draws: \"HCO₃⁻\" centre (split-outlined amber and violet, C06 style; grey tag \"C06: amphi means both\", which fades on \"compare their constants\"). On \"donating\" the right arrow draws with its full equation \"HCO₃⁻(aq) + H₂O(l) ⇌ CO₃²⁻(aq) + H₃O⁺(aq)\", which also writes into answer",
+        "explain",
+        "the card shrinks to a strip; type badge \"Amphiprotic: Ka against Kb\". The two-reaction fork draws: \"HCO₃⁻\" centre (split-outlined amber and violet, C06 style; grey tag \"C06: amphi means both\", which fades on \"compare their constants\"). On \"donating\" the right arrow draws with its full equation \"HCO₃⁻(aq) + H₂O(l) ⇌ CO₃²⁻(aq) + H₃O⁺(aq)\", which also writes into answer box (a). On \"four point seven times ten to the minus eleven\" \"Ka(HCO₃⁻) = 4.7 × 10⁻¹¹\" underlines, a teal chip \"Ka = 4.7 × 10⁻¹¹\" pins on the right arrow, and the arrow's equation reduces to the short label \"donates → CO₃²⁻ + H₃O⁺\". On \"Accepting\" the left arrow draws with its full equation \"HCO₃⁻(aq) + H₂O(l) ⇌ H₂CO₃(aq) + OH⁻(aq)\", which also writes into answer box (a). On \"becomes carbonic acid\" the mini chain \"H₂CO₃ ⇄ HCO₃⁻ ⇄ CO₃²⁻\" writes small with H₂CO₃ ringed (tag \"one proton up\"); on \"conjugate acid\" a C10-style bracket \"conjugate pair\" joins H₂CO₃ and HCO₃⁻. \"Ka(H₂CO₃) = 4.3 × 10⁻⁷\" underlines; on \"two point three times ten to the minus eight\" the mini chain dims and the line \"Kb(HCO₃⁻) = Kw ÷ Ka(H₂CO₃) = 1.0 × 10⁻¹⁴ ÷ 4.3 × 10⁻⁷ = 2.3 × 10⁻⁸\" writes; a violet chip \"Kb = 2.3 × 10⁻⁸\" pins on the left arrow, the Kb line dims as the chip pins, and the left arrow's equation reduces to \"accepts → H₂CO₃ + OH⁻\". On \"five hundred times\" the left arrow thickens (tag \"Kb ≈ 500 × Ka\"). On \"basic\" answer boxes (b) and (c) fill \"HCO₃⁻: Kb > Ka, mainly accepts\" and \"NaHCO₃: basic (OH⁻ formed)\", and the ratio tag fades. Bright in the working area at any moment: the fork (centre ion, two arrows, their chips), one working item (the full equation being written, the mini chain or the Kb line) and at most one tag. Strip: \"what data?\" ticks.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q4-phosphate": [
+        "new",
+        "the HCO₃⁻ fork shrinks to a grey thumbnail with its result chip \"accepts: basic\".",
+        "The other way round: Dihydrogen phosphate is the other way round.",
+        "Donating / six point three times ten to the minus eight / Accepting / one point four times ten to the minus twelve / K a wins / acidic",
+        "On the spoken cues: A new fork draws for \"H₂PO₄⁻\". On \"Donating\" the right arrow draws with its full equation \"H₂PO₄⁻(aq) + H₂O(l) ⇌ HPO₄²⁻(aq) + H₃O⁺(aq)\", which also writes into answer box (a). On \"six point three times ten to the minus eight\" \"Ka(H₂PO₄⁻) = 6.3 × 10⁻⁸\" underlines, the teal chip pins and the equation",
+        "explain",
+        "the HCO₃⁻ fork shrinks to a grey thumbnail with its result chip \"accepts: basic\". A new fork draws for \"H₂PO₄⁻\". On \"Donating\" the right arrow draws with its full equation \"H₂PO₄⁻(aq) + H₂O(l) ⇌ HPO₄²⁻(aq) + H₃O⁺(aq)\", which also writes into answer box (a). On \"six point three times ten to the minus eight\" \"Ka(H₂PO₄⁻) = 6.3 × 10⁻⁸\" underlines, the teal chip pins and the equation reduces to \"donates → HPO₄²⁻ + H₃O⁺\". On \"Accepting\" the left arrow draws with its full equation \"H₂PO₄⁻(aq) + H₂O(l) ⇌ H₃PO₄(aq) + OH⁻(aq)\", also into answer box (a). On \"phosphoric acid\" the mini chain \"H₃PO₄ ⇄ H₂PO₄⁻ ⇄ HPO₄²⁻\" writes small with H₃PO₄ ringed (\"one proton up\"); \"Ka(H₃PO₄) = 7.1 × 10⁻³\" underlines; on \"one point four times ten to the minus twelve\" the chain dims and \"Kb(H₂PO₄⁻) = 1.0 × 10⁻¹⁴ ÷ 7.1 × 10⁻³ = 1.4 × 10⁻¹²\" writes; the violet chip pins, the Kb line dims and the left equation reduces to \"accepts → H₃PO₄ + OH⁻\". On \"K a wins\" the right arrow thickens (tag \"Ka ≈ 45 000 × Kb\"). On \"acidic\" answer boxes (b) and (c) add \"H₂PO₄⁻: Ka > Kb, mainly donates\" and \"KH₂PO₄: acidic (H₃O⁺ formed)\", and the ratio tag fades. Only then the strip's \"does it make sense?\" row ticks, with a grey tag \"C06: baking soda neutralised acid\" (the C06 hook, consistent with a basic solution). Revision 2: no `PKRuler` thumbnail and no pKb values (pKb is not taught in C10). Same clutter limit as 5b.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q4-mistake": [
+        "new",
+        "the two fork thumbnails dim.",
+        "The classic mistake: The classic mistake is finding K b from the ion's own K a.",
+        "hydrogen phosphate / conjugate pair / one proton up",
+        "On the spoken cues: A chip \"Kb(H₂PO₄⁻) = Kw ÷ 6.3 × 10⁻⁸ = 1.6 × 10⁻⁷, so basic\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"hydrogen phosphate\" the caption \"that's the Kb of HPO₄²⁻\" writes under the cross. On \"conjugate pair\" the mini chain \"H₃PO₄ ⇄ H₂PO₄⁻ ⇄ HPO₄²⁻\" returns small and a",
+        "explain",
+        "the two fork thumbnails dim. A chip \"Kb(H₂PO₄⁻) = Kw ÷ 6.3 × 10⁻⁸ = 1.6 × 10⁻⁷, so basic\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"hydrogen phosphate\" the caption \"that's the Kb of HPO₄²⁻\" writes under the cross. On \"conjugate pair\" the mini chain \"H₃PO₄ ⇄ H₂PO₄⁻ ⇄ HPO₄²⁻\" returns small and a C10-style bracket \"conjugate pair\" joins H₃PO₄ and H₂PO₄⁻. On \"one proton up\" an arrow climbs from H₂PO₄⁻ to H₃PO₄ and the new aid writes small: \"For an ion's Kb, use the Ka one proton up.\" Bright: the crossed chip, the chain and the aid. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "adjust",
+        "the check strip returns full size as a two-column board, \"What you're given\" and \"What you do first\", each row lighting on its cue with its question number badge: \"Ka and c → ICE, x ≈ √(Ka × c), check x ÷ c < 5% (Q1)\"; \"check fails → keep the x: x² + Ka·x − Ka·c = 0, positive root (Q2)\"; \"pH and c → [H₃O⁺] = 10⁻ᵖᴴ, table backwards, Ka, pKa; no 5% check (Q3)\"; \"an amphiprotic ion → Ka against Kb = Kw ÷ Ka(one proton up); bigger wins (Q4)\".",
+        "Decision board: So here's how to start any weak acid question.",
+        "five percent / backwards / one proton up",
+        "On the spoken cues: Under the board, small: \"Every answer: pH below 7 for an acid; pH d.p. = s.f. in x.\" On \"Next\" a chip \"Next: how a buffer resists a change in pH\" slides in at the lower right with `m6-beaker-v1.png` small. Hold about 2 seconds.",
+        "explain",
+        "the check strip returns full size as a two-column board, \"What you're given\" and \"What you do first\", each row lighting on its cue with its question number badge: \"Ka and c → ICE, x ≈ √(Ka × c), check x ÷ c < 5% (Q1)\"; \"check fails → keep the x: x² + Ka·x − Ka·c = 0, positive root (Q2)\"; \"pH and c → [H₃O⁺] = 10⁻ᵖᴴ, table backwards, Ka, pKa; no 5% check (Q3)\"; \"an amphiprotic ion → Ka against Kb = Kw ÷ Ka(one proton up); bigger wins (Q4)\". Under the board, small: \"Every answer: pH below 7 for an acid; pH d.p. = s.f. in x.\" On \"Next\" a chip \"Next: how a buffer resists a change in pH\" slides in at the lower right with `m6-beaker-v1.png` small. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6G03C_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Titration calculations: follow the moles\" writes on.",
+        "Hook: Titration questions often chain several steps: make the standard, choose the titres, use the ratio, scale up from an aliquot, then turn moles into a percentage.",
+        "scale up / percentage / twenty five times / follow the moles",
+        "On the spoken cues: A chain of five small linked chips draws across the right, one per spoken step: \"standard: m → c\", \"titres\", \"ratio\", on \"scale up\" \"aliquot → flask\", on \"percentage\" \"% by mass\". On \"Lose one link\" the middle link greys and every chip after it greys with it, then they relight. On \"twenty five",
+        "explain",
+        "heading \"Titration calculations: follow the moles\" writes on. A chain of five small linked chips draws across the right, one per spoken step: \"standard: m → c\", \"titres\", \"ratio\", on \"scale up\" \"aliquot → flask\", on \"percentage\" \"% by mass\". On \"Lose one link\" the middle link greys and every chip after it greys with it, then they relight. On \"twenty five times\" a small grey answer chip \"aliquot's c\" sits beside a larger ghost chip \"sample's c: 25 × bigger\" (no Q2 values, so nothing answer-bearing before the Q2 attempt), and both fade. The check strip builds on the left: \"titres chosen?\", \"ratio from the equation?\", \"scaled up?\", \"units and sense?\". On \"follow the moles\" C12's mole bridge thumbnail pulses under the chain and the chips become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold about 1 second; the check strip shrinks to the far left"
+    ],
+    "q1-question": [
+        "new",
+        "fresh board.",
+        "HSC-style question (question 1: standardising sodium hydroxide) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. A student dissolves one point five",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: standardising sodium hydroxide)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A student standardises a sodium hydroxide solution. She dissolves 1.5822 g of oxalic acid dihydrate, H₂C₂O₄·2H₂O, in distilled water and makes the solution up to 250.0 mL in a volumetric flask. She titrates 25.00 mL aliquots of this solution with the sodium hydroxide, using phenolphthalein indicator. H₂C₂O₄(aq) + 2NaOH(aq) → Na₂C₂O₄(aq) + 2H₂O(l)\". Table: \"Titration | Rough | 1 | 2 | 3 | 4\"; \"Final reading (mL) | 24.60 | 24.55 | 24.50 | 25.20 | 24.30\"; \"Initial reading (mL) | 0.00 | 0.50 | 0.10 | 1.20 | 0.35\". Demands: \"(a) Calculate the concentration of the oxalic acid solution.\" \"(b) Calculate the concentration of the sodium hydroxide solution.\" Two answer boxes. Nothing answer-bearing: no titre row, no molar mass. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-standard": [
+        "new",
+        "the card shrinks to a strip.",
+        "The hydrate's molar mass: First, the standard.",
+        "includes / zero point zero one two five five / zero point zero five zero two zero",
+        "On the spoken cues: Type badge \"Standardisation: mass to c\". \"H₂C₂O₄·2H₂O\" underlines amber and the \"·2H₂O\" part rings; a grey tag \"water of crystallisation: part of the crystal, weighed with it\" writes and fades. On \"includes\" the line \"M = 2(1.008) + 2(12.01) + 4(16.00) + 2 × 18.016 = 126.07 g/mol\" writes, the \"+ 2",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Standardisation: mass to c\". \"H₂C₂O₄·2H₂O\" underlines amber and the \"·2H₂O\" part rings; a grey tag \"water of crystallisation: part of the crystal, weighed with it\" writes and fades. On \"includes\" the line \"M = 2(1.008) + 2(12.01) + 4(16.00) + 2 × 18.016 = 126.07 g/mol\" writes, the \"+ 2 × 18.016\" segment lit. On \"zero point zero one two five five\" \"1.5822 g\" underlines and \"n = 1.5822 ÷ 126.07 = 0.012550 mol\" writes (the M line dims). On \"zero point zero five zero two zero\" \"250.0 mL\" underlines and \"c = 0.012550 ÷ 0.2500 = 0.05020 mol/L\" writes; answer box (a) fills \"c(H₂C₂O₄) = 0.05020 mol/L\" and shrinks to a navy kept chip.",
+        [
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "q1-titres": [
+        "new",
+        "the card's table underlines both reading rows.",
+        "Readings to titres, then choose: Next, the titres.",
+        "twenty four point four zero / zero point one zero / twenty four point zero zero",
+        "On the spoken cues: One table only (Revision 2): a third row, \"Titre (mL)\", adds directly under the card's two reading rows, filling cell by cell as \"final − initial\": \"24.60 | 24.05 | 24.40 | 24.00 | 23.95\", each cell aligned under its readings. The rough cell greys (\"not used\"). On \"twenty four point four zero\" the",
+        "explain",
+        "the card's table underlines both reading rows. One table only (Revision 2): a third row, \"Titre (mL)\", adds directly under the card's two reading rows, filling cell by cell as \"final − initial\": \"24.60 | 24.05 | 24.40 | 24.00 | 23.95\", each cell aligned under its readings. The rough cell greys (\"not used\"). On \"twenty four point four zero\" the run 2 cell pulses. On \"zero point one zero\" the concordance strip draws under the table (23.90 to 24.45 mL): the \"0.10 mL\" bracket covers 23.95 to 24.05, the 24.40 dot outside; run 2 takes a grey cross and runs 1, 3 and 4 ring teal (grey tag \"average only concordant titres\", fades). On \"twenty four point zero zero\" \"(24.05 + 24.00 + 23.95) ÷ 3 = 24.00 mL\" writes and shrinks to a kept chip \"mean titre = 24.00 mL\". Strip: \"titres chosen?\" ticks.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-naoh": [
+        "new",
+        "the table dims to a strip.",
+        "Known to moles, ratio, unknown: Now known to moles, ratio, unknown.",
+        "one point two five five times ten to the minus three / two / zero point one zero four six",
+        "On the spoken cues: The mole bridge draws: \"known: H₂C₂O₄\" → \"ratio\" → \"unknown: NaOH\". On \"one point two five five\" \"25.00 mL aliquots\" underlines and \"n(H₂C₂O₄) = 0.05020 × 0.02500 = 1.255 × 10⁻³ mol\" writes and fills the known box. On \"two\" the equation's \"2NaOH\" underlines, the ratio box fills \"1 : 2\" and \"n(NaOH)",
+        "explain",
+        "the table dims to a strip. The mole bridge draws: \"known: H₂C₂O₄\" → \"ratio\" → \"unknown: NaOH\". On \"one point two five five\" \"25.00 mL aliquots\" underlines and \"n(H₂C₂O₄) = 0.05020 × 0.02500 = 1.255 × 10⁻³ mol\" writes and fills the known box. On \"two\" the equation's \"2NaOH\" underlines, the ratio box fills \"1 : 2\" and \"n(NaOH) = 2 × 1.255 × 10⁻³ = 2.510 × 10⁻³ mol\" writes (the first line dims). On \"zero point one zero four six\" \"c(NaOH) = 2.510 × 10⁻³ ÷ 0.02400 = 0.1046 mol/L\" writes; answer box (b) fills \"c(NaOH) = 0.1046 mol/L\", with a small grey tag \"4 s.f., like the data\" (fades). On \"close to the zero point one\" strip: \"ratio from the equation?\" and \"units and sense?\" tick (a grey tag \"near 0.1 mol/L, as a lab NaOH is usually made\" fades).",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"M = 90.04 g/mol (no ·2H₂O): c(H₂C₂O₄) = 0.07029 mol/L\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"the waters were weighed: include them in M\".",
+        "The classic mistake: The classic mistake is leaving out the water of crystallisation.",
+        "The classic mistake / the waters were weighed: include them in M / zero point one four six four",
+        "On the spoken cues: On \"zero point one four six four\" a small grey \"c(NaOH) = 0.1464\" sits beside the white \"0.1046\". Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"M = 90.04 g/mol (no ·2H₂O): c(H₂C₂O₄) = 0.07029 mol/L\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"the waters were weighed: include them in M\". On \"zero point one four six four\" a small grey \"c(NaOH) = 0.1464\" sits beside the white \"0.1046\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "new",
+        "board clears.",
+        "HSC-style question (question 2: a diluted brick cleaner) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. A brick cleaner contains hydrochloric acid.",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: a diluted brick cleaner)",
+        "explain",
+        "board clears. Type badge hidden. The card writes on: \"A brick cleaner contains hydrochloric acid. Assume hydrochloric acid is the only substance in the cleaner that reacts with sodium hydroxide. A 10.00 mL sample of the cleaner is diluted with distilled water to 250.0 mL in a volumetric flask. 20.00 mL aliquots of the diluted solution are titrated with the sodium hydroxide standardised in Question 1, 0.1046 mol/L. The concordant titres are 24.40 mL, 24.35 mL and 24.45 mL. The density of the brick cleaner is 1.05 g/mL.\" Demands: \"(a) Calculate the concentration of hydrochloric acid in the brick cleaner, in mol/L.\" \"(b) Calculate the percentage by mass of hydrochloric acid in the brick cleaner.\" Two answer boxes. No plate. Nothing answer-bearing: no flask diagram, no equation. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-aliquot": [
+        "new",
+        "the card shrinks to a strip; type badge \"Diluted sample: scale up\".",
+        "Moles in one aliquot: This aliquot came from a diluted sample, so track moles, not concentrations.",
+        "diluted / two point five five two times ten to the minus three / same",
+        "On the spoken cues: On \"diluted\" \"diluted with distilled water to 250.0 mL\" underlines and the scale-up flask draws in outline at the right, empty, labelled \"250.0 mL\", with a small \"10.00 mL sample\" beaker icon pouring into it (coded). The three titres underline and a kept chip \"mean titre = 24.40 mL\" writes (grey",
+        "explain",
+        "the card shrinks to a strip; type badge \"Diluted sample: scale up\". On \"diluted\" \"diluted with distilled water to 250.0 mL\" underlines and the scale-up flask draws in outline at the right, empty, labelled \"250.0 mL\", with a small \"10.00 mL sample\" beaker icon pouring into it (coded). The three titres underline and a kept chip \"mean titre = 24.40 mL\" writes (grey tag \"all concordant\", fades). Equation strip: \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". On \"two point five five two\" \"0.1046 mol/L\" underlines and \"n(NaOH) = 0.1046 × 0.02440 = 2.552 × 10⁻³ mol\" writes; the mole bridge fills its known box. On \"same\" the ratio box fills \"1 : 1\" and the unknown box \"n(HCl) in 20.00 mL = 2.552 × 10⁻³ mol\". Strip: \"titres chosen?\" and \"ratio from the equation?\" tick.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-scale-up": [
+        "new",
+        "a fourth box joins the mole bridge, \"× flask ÷ aliquot\".",
+        "From the aliquot to the cleaner: But the flask held two hundred and fifty millilitres, twelve and a half aliquots' worth.",
+        "twelve and a half / zero point zero three one nine zero / three point one nine zero",
+        "On the spoken cues: On \"twelve and a half\" \"20.00 mL aliquots\" underlines and the scale-up flask fills with stacked aliquot-sized bands, twelve full and one half, counter \"250.0 ÷ 20.00 = 12.5\"; the fourth box fills \"× 12.5\", and the flask bands and counter dim to grey. On \"zero point zero three one nine zero\" \"n(HCl)",
+        "explain",
+        "a fourth box joins the mole bridge, \"× flask ÷ aliquot\". On \"twelve and a half\" \"20.00 mL aliquots\" underlines and the scale-up flask fills with stacked aliquot-sized bands, twelve full and one half, counter \"250.0 ÷ 20.00 = 12.5\"; the fourth box fills \"× 12.5\", and the flask bands and counter dim to grey. On \"zero point zero three one nine zero\" \"n(HCl) in flask = 12.5 × 2.552 × 10⁻³ = 0.03190 mol\" writes and an arrow runs from the flask back to the \"10.00 mL sample\" beaker, tag \"all of it came from the sample\" (fades at its sentence end). On \"three point one nine zero\" \"A 10.00 mL sample\" underlines and \"c = 0.03190 ÷ 0.01000 = 3.190 mol/L\" writes as the \"n(HCl) in flask\" line dims; answer box (a) fills \"c(HCl) = 3.190 mol/L\" and shrinks to a kept chip. On \"diluted twenty five times\" strip: \"scaled up?\" ticks, with a tag \"250.0 ÷ 10.00 = 25: the cleaner is 25 times as concentrated (0.1276 × 25 = 3.190)\" that fades at the scene end. Bright at the end: the c line, answer box (a) and the tag.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-percent": [
+        "new",
+        "the mass box draws: an outer bar \"1 L of cleaner: 1.05 g/mL × 1000 mL = 1050 g\" (on \"masses\", \"1.05 g/mL\" underlines) and an inner amber bar.",
+        "Masses, through the density: A percentage by mass needs two masses, so use the density.",
+        "masses / one hundred and sixteen point three / eleven point one per cent",
+        "On the spoken cues: On \"one hundred and sixteen point three\" \"m(HCl) = 3.190 mol × 36.46 g/mol = 116.3 g\" writes and fills the inner bar. On \"eleven point one per cent\" \"% = 116.3 ÷ 1050 × 100% = 11.1%\" writes on the dividing line; answer box (b) fills \"11.1% HCl by mass\", with a small grey tag \"density 3 s.f. → 3",
+        "explain",
+        "the mass box draws: an outer bar \"1 L of cleaner: 1.05 g/mL × 1000 mL = 1050 g\" (on \"masses\", \"1.05 g/mL\" underlines) and an inner amber bar. On \"one hundred and sixteen point three\" \"m(HCl) = 3.190 mol × 36.46 g/mol = 116.3 g\" writes and fills the inner bar. On \"eleven point one per cent\" \"% = 116.3 ÷ 1050 × 100% = 11.1%\" writes on the dividing line; answer box (b) fills \"11.1% HCl by mass\", with a small grey tag \"density 3 s.f. → 3 s.f.\" (fades). Strip: \"units and sense?\" ticks (grey tag \"below 100%; mass ÷ mass, both in grams\", fades).",
+        [
+            "HandText write-on",
+            "Mark underline",
+            "DrawPath",
+            "lineage split",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"c(HCl) = 2.552 × 10⁻³ ÷ 0.02000 = 0.1276 mol/L\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"that's the diluted solution\".",
+        "The classic mistake: The classic mistake is stopping at the aliquot.",
+        "Scale up from the aliquot",
+        "On the spoken cues: On \"Scale up from the aliquot\" the bank aid writes small under the cross with the flask thumbnail. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"c(HCl) = 2.552 × 10⁻³ ÷ 0.02000 = 0.1276 mol/L\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"that's the diluted solution\". On \"Scale up from the aliquot\" the bank aid writes small under the cross with the flask thumbnail. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 3: an antacid tablet) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. An antacid tablet contains sodium hydrogen",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: an antacid tablet)",
+        "explain",
+        "board clears. Type badge hidden. `m6-antacid-tablets-v1.png` sits small at the card's upper right. The card writes on: \"An antacid tablet contains sodium hydrogen carbonate, NaHCO₃. Its other ingredients dissolve in water but do not react with acid. A tablet of mass 1.3200 g is dissolved in distilled water and made up to 100.0 mL in a volumetric flask. 20.00 mL aliquots are titrated with 0.1059 mol/L hydrochloric acid, using methyl orange indicator. The titres are 23.05 mL, 23.10 mL and 23.15 mL.\" Demand: \"Calculate the percentage by mass of sodium hydrogen carbonate in the tablet.\" One answer box. Nothing answer-bearing: no equation. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-ratio": [
+        "new",
+        "the card shrinks to a strip; type badge \"Solid sample: % by mass\".",
+        "Write the equation first: No equation is given, so write it.",
+        "write / one / two point four four six times ten to the minus three",
+        "On the spoken cues: On \"write\" the equation strip writes letter by letter: \"NaHCO₃(aq) + HCl(aq) → NaCl(aq) + H₂O(l) + CO₂(g)\". On \"one\" a mini chain \"CO₃²⁻ → HCO₃⁻ → H₂CO₃\" writes small with HCO₃⁻ ringed and one arrow lit (grey tag \"conjugates video: one proton to go\", fades), and the ratio box fills \"1 : 1\". The",
+        "explain",
+        "the card shrinks to a strip; type badge \"Solid sample: % by mass\". On \"write\" the equation strip writes letter by letter: \"NaHCO₃(aq) + HCl(aq) → NaCl(aq) + H₂O(l) + CO₂(g)\". On \"one\" a mini chain \"CO₃²⁻ → HCO₃⁻ → H₂CO₃\" writes small with HCO₃⁻ ringed and one arrow lit (grey tag \"conjugates video: one proton to go\", fades), and the ratio box fills \"1 : 1\". The three titres underline (all within 0.10 mL) and a kept chip \"mean titre = 23.10 mL\" writes. On \"two point four four six\" \"0.1059 mol/L\" underlines and \"n(HCl) = 0.1059 × 0.02310 = 2.446 × 10⁻³ mol\" writes, filling the known box; the unknown box fills \"n(NaHCO₃) in 20.00 mL = 2.446 × 10⁻³ mol\". Strip: \"titres chosen?\" and \"ratio from the equation?\" tick.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-percent": [
+        "new",
+        "the scale-up flask returns with \"100.0 mL\" and five aliquot bands; on \"five\" \"20.00 mL aliquots\" and \"100.0 mL\" underline, counter \"100.0 ÷ 20.00 = 5\", the fourth bridge box fills \"× 5\" and \"n(NaHCO₃) in tablet = 5 × 2.446 × 10⁻³ = 1.2230 × 10⁻² mol\" writes.",
+        "Scale up, then the tablet's mass: Scale up: one hundred millilitres is five aliquots, so the tablet held one point two two three zero times ten to the minus two moles.",
+        "five / one point zero two seven four / seventy seven point eight four per cent / no density",
+        "On the spoken cues: On \"one point zero two seven four\" \"m = 1.2230 × 10⁻² × 84.01 = 1.0274 g\" writes (grey tag \"M(NaHCO₃) = 22.99 + 1.008 + 12.01 + 3(16.00) = 84.01 g/mol\", fades; grey tag \"keep the digits; round at the end\", fades). On \"seventy seven point eight four\" \"1.3200 g\" underlines, the mass box draws (outer",
+        "explain",
+        "the scale-up flask returns with \"100.0 mL\" and five aliquot bands; on \"five\" \"20.00 mL aliquots\" and \"100.0 mL\" underline, counter \"100.0 ÷ 20.00 = 5\", the fourth bridge box fills \"× 5\" and \"n(NaHCO₃) in tablet = 5 × 2.446 × 10⁻³ = 1.2230 × 10⁻² mol\" writes. On \"one point zero two seven four\" \"m = 1.2230 × 10⁻² × 84.01 = 1.0274 g\" writes (grey tag \"M(NaHCO₃) = 22.99 + 1.008 + 12.01 + 3(16.00) = 84.01 g/mol\", fades; grey tag \"keep the digits; round at the end\", fades). On \"seventy seven point eight four\" \"1.3200 g\" underlines, the mass box draws (outer bar \"tablet 1.3200 g\", inner bar \"NaHCO₃ 1.0274 g\") and \"% = 1.0274 ÷ 1.3200 × 100% = 77.84%\" writes; answer box fills \"77.84% NaHCO₃ by mass\". On \"no density\" Q2's mass box thumbnail (\"1.05 g/mL × 1000 mL\") appears beside it and greys, tag \"liquid: density; solid: weighed mass\". Strip: \"scaled up?\" and \"units and sense?\" tick.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"NaHCO₃ : HCl = 1 : 2, so 38.92%\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"write the equation for this base\".",
+        "The classic mistake: The classic mistake is borrowing carbonate's one to two ratio.",
+        "one",
+        "On the spoken cues: On \"one more\" the mini chain returns: CO₃²⁻ with two arrows lit (grey, \"Na₂CO₃ + 2HCl (to the methyl orange endpoint)\"), HCO₃⁻ with one arrow lit (white, \"NaHCO₃ + HCl\"). Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"NaHCO₃ : HCl = 1 : 2, so 38.92%\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"write the equation for this base\". On \"one more\" the mini chain returns: CO₃²⁻ with two arrows lit (grey, \"Na₂CO₃ + 2HCl (to the methyl orange endpoint)\"), HCO₃⁻ with one arrow lit (white, \"NaHCO₃ + HCl\"). Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "adjust",
+        "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: \"Standard from a solid → M includes ·xH₂O; c = (m ÷ M) ÷ V (Q1)\"; on \"concordant\" \"Titres → final − initial; concordant within 0.10 mL; rough out (Q1)\"; on \"balanced equation\" \"Ratio → from the equation you write: CO₃²⁻ takes 2 (to the methyl orange endpoint), HCO₃⁻ takes 1 (Q1, Q3)\"; on \"scale up\" \"Aliquot from a flask → × (flask volume ÷ aliquot volume) (Q2, Q3)\"; then \"% by mass → mass ÷ mass: liquid via density, solid via its weighed mass (Q2, Q3)\".",
+        "Decision board: So for any titration calculation, follow the moles.",
+        "concordant / balanced equation / scale up",
+        "On the spoken cues: Under the board, small: \"Results to the data's significant figures.\" On \"Next\" a chip \"Next: which indicator fits a titration?\" slides in at the lower right with `m6-indicator-methyl-orange-set-v1.png` small. Hold about 2 seconds.",
+        "explain",
+        "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: \"Standard from a solid → M includes ·xH₂O; c = (m ÷ M) ÷ V (Q1)\"; on \"concordant\" \"Titres → final − initial; concordant within 0.10 mL; rough out (Q1)\"; on \"balanced equation\" \"Ratio → from the equation you write: CO₃²⁻ takes 2 (to the methyl orange endpoint), HCO₃⁻ takes 1 (Q1, Q3)\"; on \"scale up\" \"Aliquot from a flask → × (flask volume ÷ aliquot volume) (Q2, Q3)\"; then \"% by mass → mass ÷ mass: liquid via density, solid via its weighed mass (Q2, Q3)\". Under the board, small: \"Results to the data's significant figures.\" On \"Next\" a chip \"Next: which indicator fits a titration?\" slides in at the lower right with `m6-indicator-methyl-orange-set-v1.png` small. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# END generated rows: m6p02-m6p06, m6g01c-m6g03c
+# BEGIN generated rows: m6p01c, m6g04, m6p07, skills05, m7c01, m7c02
+M6P01C_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-clip-red-cabbage-purple-v1.png` centre.",
+        "Hook (purple, red, green, red): Here's a beaker of purple juice from a red cabbage.",
+        "red / green / comes back",
+        "On the spoken cues: The \"0.10 mol/L HCl\" dropper bottle (`p03-dropper-bottle-v1.png`, teal tab) stands left, the \"0.10 mol/L NaOH\" bottle (violet tab) right. On \"red\" the HCl dropper lifts on a coded arc, a coded droplet falls, and the beaker crossfades to the new aligned plate `m6-clip-red-cabbage-red-v1.png` (Codex item 4) as the droplet lands. On \"green\" the NaOH dropper does the same and the beaker crossfades to",
+        "explain",
+        "`m6-clip-red-cabbage-purple-v1.png` centre. The \"0.10 mol/L HCl\" dropper bottle (`p03-dropper-bottle-v1.png`, teal tab) stands left, the \"0.10 mol/L NaOH\" bottle (violet tab) right. On \"red\" the HCl dropper lifts on a coded arc, a coded droplet falls, and the beaker crossfades to the new aligned plate `m6-clip-red-cabbage-red-v1.png` (Codex item 4) as the droplet lands. On \"green\" the NaOH dropper does the same and the beaker crossfades to `m6-clip-red-cabbage-green-v1.png`. On \"comes back\" the HCl dropper again, back to red; a small coded loop arrow draws around the beaker (\"acid → base → acid\"). Heading writes: \"A cabbage indicator: does it run both ways?\" Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Plate crossfade",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "pigments": [
+        "new",
+        "the beaker shrinks to the left (purple).",
+        "Where the colour comes from: The purple comes from pigments called anthocyanins, stored inside the cabbage's cells, and they dissolve in water.",
+        "anthocyanins / more than one proton / mix",
+        "On the spoken cues: On \"anthocyanins\" the word and its meaning write in the right zone: \"anthocyanins: the purple pigments in red cabbage; they dissolve in water\". A small coded lens on the purple liquid opens: the C13 indicator token pair, here a white-outlined \"HIn\" token with a grey tag \"C13: indicator = weak acid, two coloured forms\" (dims after its sentence). On \"more than one proton\" the lens shows three tokens in a row, red,",
+        "explain",
+        "the beaker shrinks to the left (purple). On \"anthocyanins\" the word and its meaning write in the right zone: \"anthocyanins: the purple pigments in red cabbage; they dissolve in water\". A small coded lens on the purple liquid opens: the C13 indicator token pair, here a white-outlined \"HIn\" token with a grey tag \"C13: indicator = weak acid, two coloured forms\" (dims after its sentence). On \"more than one proton\" the lens shows three tokens in a row, red, purple and green, each step with a teal hydronium token hopping off (C01 hop), arrows \"lose H⁺ →\"; tag \"several forms, several colours\". On \"mix\" the meaning line dims to grey and two more faint token rows slide in under the first, each slightly offset in hue (so their steps fall at slightly different places); the first tag dims and a new tag writes \"a mixture: colours blend\". No structures. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "token flight",
+            "Cam lens zoom",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "prepare": [
+        "adjust",
+        "the right zone becomes a method card, one line per step, earlier lines dimming.",
+        "Preparing the extract: To prepare it, your teacher chops about twenty grams of cabbage and covers it with a hundred millilitres of hot water for ten minutes.",
+        "hot water / leaks out / filter / cool / purple",
+        "On the spoken cues: `p01-red-cabbage-chopped-v1.png` (Codex item 1: a quarter of a red cabbage with a small heap of chopped shreds, no knife, no hands) left, with a coded tag \"about 20 g\". On \"hot water\" `m6-conical-flask-hotplate-v1.png` appears small beside it (tag \"100 mL hot water\"), then both crossfade into `p01-cabbage-steeping-beaker-v1.png` (Codex item 2: a beaker of hot water turning purple with cabbage shreds in it, faint",
+        "explain",
+        "the right zone becomes a method card, one line per step, earlier lines dimming. `p01-red-cabbage-chopped-v1.png` (Codex item 1: a quarter of a red cabbage with a small heap of chopped shreds, no knife, no hands) left, with a coded tag \"about 20 g\". On \"hot water\" `m6-conical-flask-hotplate-v1.png` appears small beside it (tag \"100 mL hot water\"), then both crossfade into `p01-cabbage-steeping-beaker-v1.png` (Codex item 2: a beaker of hot water turning purple with cabbage shreds in it, faint steam); a coded clock chip \"10 min\" runs. On \"leaks out\" a small coded lens on one shred shows a cell outline holding an internal purple pigment compartment (the vacuole, unlabelled); on \"leaks out\" the compartment's edge and the cell outline break and purple dots drift out (tag \"heat damages the membranes: pigment leaks out\"); the lens closes. On \"filter\" the beaker crossfades to `p01-filter-funnel-flask-v1.png` (Codex item 3: a funnel with folded filter paper holding cabbage shreds, standing in a conical flask collecting purple filtrate); tag \"filtrate: the liquid that passes through\". On \"cool\" a coded thermometer chip falls from \"hot\" to \"room temperature\" (grey tag \"safer to handle; colours compared at room temperature\"). On \"purple\" the filtrate crossfades to `m6-clip-red-cabbage-purple-v1.png` and a recording row writes: \"Starting colour: purple\". Method card lines: \"1 Chop (teacher), about 20 g.\" \"2 Hot water, 100 mL, 10 min.\" \"3 Filter off solids.\" \"4 Cool; record starting colour.\" Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Plate crossfade",
+            "chip pop",
+            "Cam lens zoom",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "calibrate": [
+        "adjust",
+        "`p03-well-plate-white-tile-v1.png` centre (native aspect, scaled uniformly).",
+        "Giving each colour a meaning: Next, find out what each colour means.",
+        "solutions of known pH / three drops / same",
+        "On the spoken cues: On \"solutions of known pH\" coded labels write under seven wells of one row: \"pH 2\", \"4\", \"6\", \"7\", \"8\", \"10\", \"12\", and each well gets a faint colourless coded fill; tag \"reference solutions: known pH (buffers, checked with a meter)\", with `m6-ph-meter-probe-beaker-v1.png` small at the right, readout \"7.00\". On \"three drops\" the reference tag and the meter dim to grey as the extract dropper starts, so the drop",
+        "explain",
+        "`p03-well-plate-white-tile-v1.png` centre (native aspect, scaled uniformly). On \"solutions of known pH\" coded labels write under seven wells of one row: \"pH 2\", \"4\", \"6\", \"7\", \"8\", \"10\", \"12\", and each well gets a faint colourless coded fill; tag \"reference solutions: known pH (buffers, checked with a meter)\", with `m6-ph-meter-probe-beaker-v1.png` small at the right, readout \"7.00\". On \"three drops\" the reference tag and the meter dim to grey as the extract dropper starts, so the drop counter is the only bright chip during the drops; the \"extract\" dropper bottle moves along the row on a coded arc, three coded droplets falling into each well, a drop counter \"3 drops\" pulsing at each; each well's coded fill blooms into its colour as the third drop lands (red, pink, violet, purple, blue, blue-green, green). On \"same\" the drop counter dims and a grey side pair appears small: one well with 1 drop (pale) and one with 8 drops (dark), both \"pH 7\", tag \"same pH, different depth: keep the drops equal\". The meter and the side pair leave at the end. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "colour-chart": [
+        "new",
+        "the seven well colours lift off the plate into a coded colour chart strip in the right zone: seven swatches with their pH labels beneath; under it the C13 pH ruler (0 to 14).",
+        "Reading the colour chart: Here's a typical result: red at pH two, pink at four, violet at six, purple at seven, blue at eight, blue-green at ten, and green at twelve.",
+        "several / spacing",
+        "On the spoken cues: The swatches write on in turn as each colour is named. On \"several\" small brackets draw between neighbouring swatches where the hue changes (2 to 4, 4 to 6, 7 to 8, 8 to 10, 10 to 12), tag \"several gradual changes, not one\". On \"spacing\" the gap between the pH 8 and pH 10 swatches gets a bracket \"2 units apart\" and a grey tag \"a colour between them: pH between 8 and 10\". Grey footer: \"results vary with the cabbage",
+        "explain",
+        "the seven well colours lift off the plate into a coded colour chart strip in the right zone: seven swatches with their pH labels beneath; under it the C13 pH ruler (0 to 14). The swatches write on in turn as each colour is named. On \"several\" small brackets draw between neighbouring swatches where the hue changes (2 to 4, 4 to 6, 7 to 8, 8 to 10, 10 to 12), tag \"several gradual changes, not one\". On \"spacing\" the gap between the pH 8 and pH 10 swatches gets a bracket \"2 units apart\" and a grey tag \"a colour between them: pH between 8 and 10\". Grey footer: \"results vary with the cabbage and the extract\". Hold about 2 seconds (reading hold; the chart returns in attempt 2 and the key notes). Hold about 2 seconds (reading hold; the chart returns in attempt 2 and the key notes).",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds (reading hold; the chart returns in attempt 2 and the key notes)"
+    ],
+    "water-control": [
+        "new",
+        "the well plate returns, a second row: three wells labelled (coded) \"A HCl\" (teal tab), \"B water\" (grey tab), \"C NaOH\" (violet tab).",
+        "The water control: Now test the extract in three wells: dilute hydrochloric acid, distilled water, and dilute sodium hydroxide.",
+        "hydrochloric acid / sodium hydroxide / dilutes / not dilution",
+        "On the spoken cues: On \"hydrochloric acid\" well A fills red; on \"sodium hydroxide\" well C fills green, and a small grey tag writes beside it as it fills, \"read it straight away\" (it dims after its sentence and returns in scene 9); well B fills purple. On \"dilutes\" a swatch of the stock extract appears above well B, and well B's purple is visibly paler than it; tag \"water: paler, still purple\". On \"not dilution\" wells A and C get pen",
+        "explain",
+        "the well plate returns, a second row: three wells labelled (coded) \"A HCl\" (teal tab), \"B water\" (grey tab), \"C NaOH\" (violet tab). On \"hydrochloric acid\" well A fills red; on \"sodium hydroxide\" well C fills green, and a small grey tag writes beside it as it fills, \"read it straight away\" (it dims after its sentence and returns in scene 9); well B fills purple. On \"dilutes\" a swatch of the stock extract appears above well B, and well B's purple is visibly paler than it; tag \"water: paler, still purple\". On \"not dilution\" wells A and C get pen rings; tag \"control: same dilution, no acid or base\". Grey tag (dims): \"the extract shows the pH of what it's in\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle"
+        ],
+        "Hold about 1 second"
+    ],
+    "cycle": [
+        "adjust",
+        "centre: `m6-clip-red-cabbage-purple-v1.png` with a coded tag \"2.0 mL extract\"; the two dropper bottles stand either side.",
+        "The reversibility cycle: Now the key test.",
+        "red / green / back / three times",
+        "On the spoken cues: On \"red\" the HCl dropper releases droplets, a drop counter \"+10 drops HCl\" ticks, and the beaker crossfades to red. On \"green\" the NaOH dropper releases droplets one at a time (\"+12 drops NaOH\") and the beaker crossfades to green as the last drop lands; tag \"until it just turns green\". Then HCl again, back to red. On \"Base removes hydronium\" a small lens on the beaker shows a violet hydroxide token meeting a teal",
+        "explain",
+        "centre: `m6-clip-red-cabbage-purple-v1.png` with a coded tag \"2.0 mL extract\"; the two dropper bottles stand either side. On \"red\" the HCl dropper releases droplets, a drop counter \"+10 drops HCl\" ticks, and the beaker crossfades to red. On \"green\" the NaOH dropper releases droplets one at a time (\"+12 drops NaOH\") and the beaker crossfades to green as the last drop lands; tag \"until it just turns green\". Then HCl again, back to red. On \"Base removes hydronium\" a small lens on the beaker shows a violet hydroxide token meeting a teal hydronium token (they leave as a water token) and the red token becoming green; on \"back\" the reverse; equilibrium line small: \"red forms ⇌ H⁺ + green forms\" with a grey tag \"C13: Le Chatelier\" (dims). On \"three times\" a cycle tracker writes: three small loops, each ticking as the beaker swings red, green, red quickly (about 1 second per cycle). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Plate crossfade",
+            "tick",
+            "token flight",
+            "Cam lens zoom",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "same-sample": [
+        "new",
+        "on \"Fresh wells\" two separate wells (red, green) appear small, joined by a grey \"≠ reversal\" sign; on \"runs both ways\" the single beaker with its loop arrow pulses.",
+        "Why the same sample, and why three cycles: Why the same sample?",
+        "runs both ways / paler / same two colours",
+        "On the spoken cues: On \"paler\" the three cycles' colours line up as coded swatch pairs (red and green for cycle 1, 2 and 3), each pair a little lighter than the one before; tag \"diluted: lighter, same hue\". On \"same two colours\" a bracket joins the three red swatches and another the three green swatches, tag \"same colours return\". Result row writes: \"Evidence: reversible; pigment not used up.\"",
+        "explain",
+        "on \"Fresh wells\" two separate wells (red, green) appear small, joined by a grey \"≠ reversal\" sign; on \"runs both ways\" the single beaker with its loop arrow pulses. On \"paler\" the three cycles' colours line up as coded swatch pairs (red and green for cycle 1, 2 and 3), each pair a little lighter than the one before; tag \"diluted: lighter, same hue\". On \"same two colours\" a bracket joins the three red swatches and another the three green swatches, tag \"same colours return\". Result row writes: \"Evidence: reversible; pigment not used up.\" Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "no-return": [
+        "adjust",
+        "a second, small beaker beside the cycle: green, with a coded clock chip \"a long time, strong NaOH\".",
+        "When a colour doesn't come back: But a colour that doesn't come back is a warning.",
+        "well C / yellow / break down",
+        "On the spoken cues: On \"well C\" a thumbnail of scene 6's well C (green, with its grey tag \"read it straight away\", now bright) slides in beside the beaker, then dims. On \"yellow\" the beaker crossfades to the new aligned plate `m6-clip-red-cabbage-yellow-v1.png` (Codex item 5). The HCl dropper adds droplets; the beaker stays yellow; a grey \"?\" chip. On \"break down\" the lens shows the green token bending out of shape, then cracking into",
+        "explain",
+        "a second, small beaker beside the cycle: green, with a coded clock chip \"a long time, strong NaOH\". On \"well C\" a thumbnail of scene 6's well C (green, with its grey tag \"read it straight away\", now bright) slides in beside the beaker, then dims. On \"yellow\" the beaker crossfades to the new aligned plate `m6-clip-red-cabbage-yellow-v1.png` (Codex item 5). The HCl dropper adds droplets; the beaker stays yellow; a grey \"?\" chip. On \"break down\" the lens shows the green token bending out of shape, then cracking into two grey fragments; tag \"pigment changed or destroyed: not the acid-base equilibrium\". Control tag (green): \"base only until green; cycle straight away\". Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "Plate crossfade",
+            "chip pop",
+            "token flight",
+            "Cam lens zoom",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "use-and-limits": [
+        "adjust",
+        "the colour chart strip stays in the right zone (small).",
+        "Using the chart, and its limits: Now use your chart.",
+        "pH meter / sharp",
+        "On the spoken cues: `m6-vinegar-bottle-v1.png` small with a well beside it filling pink-red; an arrow points to the chart between the pH 2 and 4 swatches; chip \"between pH 2 and 4\". `m6-household-cleaner-bottle-v1.png` (coded label \"ammonia cleaner\") small with a green well; chip \"about 11 to 12\". On \"pH meter\" `m6-ph-meter-probe-beaker-v1.png` appears small; its readout \"2.5\" writes beside the vinegar chip, then the vinegar pair",
+        "explain",
+        "the colour chart strip stays in the right zone (small). `m6-vinegar-bottle-v1.png` small with a well beside it filling pink-red; an arrow points to the chart between the pH 2 and 4 swatches; chip \"between pH 2 and 4\". `m6-household-cleaner-bottle-v1.png` (coded label \"ammonia cleaner\") small with a green well; chip \"about 11 to 12\". On \"pH meter\" `m6-ph-meter-probe-beaker-v1.png` appears small; its readout \"2.5\" writes beside the vinegar chip, then the vinegar pair (well, chip and readout) dims as \"11.4\" writes beside the cleaner chip (grey tag \"meter: a value; chart: a range\"). On \"sharp\" the chips dim and a comparison writes: the chart strip on the C13 pH ruler beside the phenolphthalein band (8.3 to 10.0) with `m6-indicator-phenolphthalein-set-v1.png` small; tag \"titration: one sharp change inside the jump (C13)\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "new",
+        "the variables card writes in the right zone: on \"pH\" \"Independent: pH of the solution\"; on \"colour\" \"Dependent: colour of the extract\"; then \"Controlled: same extract batch, 3 drops, about 1 mL of solution, white tile, same lighting\".",
+        "Variables, validity, reliability and accuracy: What are the variables?",
+        "pH / colour / Validity / Reliability / Accuracy",
+        "On the spoken cues: The card dims; three cards write in turn, the previous one dimming: \"Validity: measures what it should? One batch; water control; equal drops.\" \"Reliability: repeats agree? Repeat wells and three cycles give the same colours.\" \"Accuracy: close to the true pH? Chart: about ±1 unit. Calibrated meter: within a few hundredths.\" A small grey footer: \"Reliability means: repeated measurements under identical circumstances",
+        "explain",
+        "the variables card writes in the right zone: on \"pH\" \"Independent: pH of the solution\"; on \"colour\" \"Dependent: colour of the extract\"; then \"Controlled: same extract batch, 3 drops, about 1 mL of solution, white tile, same lighting\". The card dims; three cards write in turn, the previous one dimming: \"Validity: measures what it should? One batch; water control; equal drops.\" \"Reliability: repeats agree? Repeat wells and three cycles give the same colours.\" \"Accuracy: close to the true pH? Chart: about ±1 unit. Calibrated meter: within a few hundredths.\" A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\" (same wording as P02 and P03). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its plate small in the hazard cell: \"hot water (near boiling)\" (`m6-conical-flask-hotplate-v1.png`) / \"scalds\" / \"teacher prepares; heat-resistant beaker; cool before use\"; \"knife\" / \"cuts\" / \"teacher chops the cabbage\"; \"0.10 mol/L HCl (0.36 %): low hazard at this concentration\" / \"eye irritation from a splash\" / \"safety glasses; rinse with plenty of water\"; on \"irritant\" the NaOH row writes: \"0.10 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses; rinse splashes with plenty of water (`m6-wash-bottle-v1.png`); separate labelled droppers\"; \"buffer solutions\" / \"see each SDS\" / \"safety glasses; follow the label\"; \"cabbage extract\" / \"stains skin and clothing\" / \"wipe spills; no tasting in the laboratory\"; \"waste\" / \"none at these strengths\" / \"dilute to the sink with plenty of water, if school rules allow; solids in the bin\".",
+        "The risk assessment: Before you start, the risk assessment.",
+        "scald / irritant / stains",
+        "On the spoken cues: Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; gloves (`m5x-gloves-v1.png`) small with grey tag \"optional, per school (stains)\". Footer chip: \"follow your school's risk assessment and each safety data sheet\". Rows dim as each new row writes.",
+        "explain",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, each with its plate small in the hazard cell: \"hot water (near boiling)\" (`m6-conical-flask-hotplate-v1.png`) / \"scalds\" / \"teacher prepares; heat-resistant beaker; cool before use\"; \"knife\" / \"cuts\" / \"teacher chops the cabbage\"; \"0.10 mol/L HCl (0.36 %): low hazard at this concentration\" / \"eye irritation from a splash\" / \"safety glasses; rinse with plenty of water\"; on \"irritant\" the NaOH row writes: \"0.10 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses; rinse splashes with plenty of water (`m6-wash-bottle-v1.png`); separate labelled droppers\"; \"buffer solutions\" / \"see each SDS\" / \"safety glasses; follow the label\"; \"cabbage extract\" / \"stains skin and clothing\" / \"wipe spills; no tasting in the laboratory\"; \"waste\" / \"none at these strengths\" / \"dilute to the sink with plenty of water, if school rules allow; solids in the bin\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; gloves (`m5x-gloves-v1.png`) small with grey tag \"optional, per school (stains)\". Footer chip: \"follow your school's risk assessment and each safety data sheet\". Rows dim as each new row writes. Hold about 3 seconds (reading hold; the table returns in the key notes). Hold about 3 seconds (reading hold; the table returns in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the table returns in the key notes)"
+    ],
+    "memory-aid": [
+        "new",
+        "the aid writes large and handwritten: \"Steep.",
+        "Memory aid: Three words for this practical: steep, chart, cycle.",
+        "steep, chart, cycle",
+        "On the spoken cues: Chart. Cycle.\" Under each word a small icon: the steeping beaker thumbnail; the colour chart strip thumbnail; the red-green-red loop around one beaker. Condition tag: \"cycle one sample, not fresh wells\".",
+        "explain",
+        "the aid writes large and handwritten: \"Steep. Chart. Cycle.\" Under each word a small icon: the steeping beaker thumbnail; the colour chart strip thumbnail; the red-green-red loop around one beaker. Condition tag: \"cycle one sample, not fresh wells\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student adds three drops of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student adds 3 drops of red cabbage extract to each of three wells. Well A contains dilute hydrochloric acid, well B contains distilled water and well C contains dilute sodium hydroxide solution. Well A turns red, well B stays purple but is slightly paler than the extract, and well C turns green. (a) Explain why the student included well B. (b) Describe a test the student could carry out to show that the colour change of the extract is reversible.\" Beside it the well plate with three coded wells, labelled \"A\", \"B\", \"C\" only, filled red, pale purple and green. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no loop arrow, no droppers, no \"control\" tag.",
+        [
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "control / one sample",
+        "On the spoken cues: On \"control\" \"well B contains distilled water\" and \"slightly paler than the extract\" are underlined; answer box (a) fills \"B = control: dilution only pales it; red and green come from acid and base\". On \"one sample\" \"show that the colour change of the extract is reversible\" is underlined; the cycle beaker thumbnail returns with its loop arrow and tracker; answer box (b) fills \"one sample: base until green, acid",
+        "explain",
+        "the question card shrinks to the top. On \"control\" \"well B contains distilled water\" and \"slightly paler than the extract\" are underlined; answer box (a) fills \"B = control: dilution only pales it; red and green come from acid and base\". On \"one sample\" \"show that the colour change of the extract is reversible\" is underlined; the cycle beaker thumbnail returns with its loop arrow and tracker; answer box (b) fills \"one sample: base until green, acid until red; repeat 3 times; same colours return\". On \"fresh wells\" a chip \"test acid and base again in fresh wells\" fades in and is crossed (caption \"fresh wells show each colour, not a reversal\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card, worded as printed: \"A student made a colour chart for her red cabbage extract using buffer solutions: pH 2 red, pH 4 pink, pH 6 violet, pH 7 purple, pH 8 blue, pH 10 blue-green, pH 12 green.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. Her colour chart reads: red at",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student made a colour chart for her red cabbage extract using buffer solutions: pH 2 red, pH 4 pink, pH 6 violet, pH 7 purple, pH 8 blue, pH 10 blue-green, pH 12 green. Three drops of the extract turned a solution of baking soda blue, with a slight green tint. (a) Estimate the pH of the baking soda solution. (b) Assess the accuracy of this method compared with a calibrated pH meter.\" Beside it the coded chart strip (seven swatches with labels) and `m6-baking-soda-box-v1.png` small with a well of blue, faintly green liquid. The full question and chart stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no arrow onto the chart, no meter.",
+        [
+            "DrawPath",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "on \"eight to nine\" \"blue, with a slight green tint\" is underlined; an arrow from the sample well lands on the chart between the pH 8 and pH 10 swatches, nearer 8; answer box (a) fills \"about pH 8 to 9\".",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "eight to nine / accurate",
+        "On the spoken cues: On \"accurate\" \"pH 8 blue, pH 10 blue-green\" are underlined (the step), `m6-ph-meter-probe-beaker-v1.png` appears small with readout \"8.34\"; answer box (b) fills \"less accurate: steps 2 units wide, colour judged by eye; a calibrated meter is within a few hundredths\". On \"eight point zero\" a chip \"pH = 8.0\" fades in and is crossed (caption \"a colour match gives a range\").",
+        "explain",
+        "on \"eight to nine\" \"blue, with a slight green tint\" is underlined; an arrow from the sample well lands on the chart between the pH 8 and pH 10 swatches, nearer 8; answer box (a) fills \"about pH 8 to 9\". On \"accurate\" \"pH 8 blue, pH 10 blue-green\" are underlined (the step), `m6-ph-meter-probe-beaker-v1.png` appears small with readout \"8.34\"; answer box (b) fills \"less accurate: steps 2 units wide, colour judged by eye; a calibrated meter is within a few hundredths\". On \"eight point zero\" a chip \"pH = 8.0\" fades in and is crossed (caption \"a colour match gives a range\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the plan card writes, each line lighting on its words: \"1 Steep in hot water, filter, cool; record the colour.\"",
+        "Decision rule and handoff: So: steep and filter the extract, chart its colours against known pH with equal drops, use a water control, and cycle one sample to show the change is reversible.",
+        "Next",
+        "On the spoken cues: \"2 Chart: equal drops into solutions of known pH.\" \"3 Water control: dilution alone.\" \"4 Cycle one sample three times: same colours return.\" On \"Next\" a chip \"Next: what titration curves and conductivity graphs reveal\" appears with `m6-burette-clamp-stand-v1.png` small.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Steep in hot water, filter, cool; record the colour.\" \"2 Chart: equal drops into solutions of known pH.\" \"3 Water control: dilution alone.\" \"4 Cycle one sample three times: same colours return.\" On \"Next\" a chip \"Next: what titration curves and conductivity graphs reveal\" appears with `m6-burette-clamp-stand-v1.png` small. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6G04_ROWS = {
+    "hook": [
+        "adjust",
+        "heading \"Curves, indicators, back titration: where is equivalence?\" writes on.",
+        "Hook: Titration questions hand you a pH curve, an indicator, a sample that won't dissolve, or a conductivity graph.",
+        "equivalence point / way",
+        "On the spoken cues: Four small thumbnails fan out on the right, one per item named: a pH curve (C14 style, teal), a range band (methyl red colours), `m6-conical-flask-v1.png` small with a grey \"excess acid\" tag, a conductivity thumbnail with two crossing lines. On \"equivalence point\" a pen ring lands on the steep part",
+        "explain",
+        "heading \"Curves, indicators, back titration: where is equivalence?\" writes on. Four small thumbnails fan out on the right, one per item named: a pH curve (C14 style, teal), a range band (methyl red colours), `m6-conical-flask-v1.png` small with a grey \"excess acid\" tag, a conductivity thumbnail with two crossing lines. On \"equivalence point\" a pen ring lands on the steep part of the curve thumbnail and the crossing of the conductivity thumbnail. On \"way\" a small up-down arrow pair appears beside the flask thumbnail. The check strip builds on the left: \"where is equivalence?\", \"which way does it move?\", \"does it make sense?\". On \"four HSC-style questions\" the thumbnails become four numbered question cards with one shared tag line beneath them, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second; the check strip shrinks to the far left"
+    ],
+    "q1-question": [
+        "new",
+        "fresh board.",
+        "HSC-style question (question 1: an ammonia curve) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. Twenty millilitres of ammonia solution is",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: an ammonia curve)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A 20.00 mL sample of ammonia solution, NH₃(aq), was titrated with 0.100 mol/L hydrochloric acid. The pH of the solution in the flask was recorded. The results are shown in the graph.\" Demands: \"(a) Use the graph to determine the concentration of the ammonia solution.\" \"(b) Select the most suitable indicator from the table, and justify your choice.\" Indicator table on the card: \"methyl orange 3.1 to 4.4 (red to yellow) | methyl red 4.4 to 6.2 (red to yellow) | bromothymol blue 6.0 to 7.6 (yellow to blue) | phenolphthalein 8.3 to 10.0 (colourless to pink)\". Beside it the coded graph: x axis \"volume of 0.100 mol/L HCl added (mL)\" 0 to 40, grid every 2 mL, labels every 4 mL; y axis \"pH\" 0 to 12, grid and labels every 1 unit; the computed curve (author note a) drawn as a teal line: starting near 11.2, a gentle fall through about 9.3 at 12 mL, a near-vertical drop at 24 mL, then levelling near 1.6 by 40 mL. No points labelled, no equivalence marker. Two answer boxes. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card and graph stay on screen. Nothing answer-bearing: no vertical line, no range band on the graph.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-concentration": [
+        "new",
+        "the card shrinks to a strip; type badge \"pH curve: equivalence and indicator\".",
+        "Where is equivalence?: Find the equivalence point first.",
+        "steepest / twenty four point zero / two point four zero times ten to the minus three / zero point one two zero",
+        "On the spoken cues: On \"steepest\" a pen bracket marks the near-vertical section, a dashed vertical drops from its midpoint to the x axis and a chip \"24.0 mL\" lands on the axis; a faint grey tag \"middle of the steep part, not pH 7\" fades after its sentence. Equation strip: \"NH₃(aq) + HCl(aq) → NH₄Cl(aq)\". On \"two point",
+        "explain",
+        "the card shrinks to a strip; type badge \"pH curve: equivalence and indicator\". On \"steepest\" a pen bracket marks the near-vertical section, a dashed vertical drops from its midpoint to the x axis and a chip \"24.0 mL\" lands on the axis; a faint grey tag \"middle of the steep part, not pH 7\" fades after its sentence. Equation strip: \"NH₃(aq) + HCl(aq) → NH₄Cl(aq)\". On \"two point four zero times ten to the minus three\" \"0.100 mol/L hydrochloric acid\" underlines and the line \"n(HCl) = 0.100 × 0.0240 = 2.40 × 10⁻³ mol\" writes. \"Ammonia reacts one to one\" writes \"n(NH₃) = 2.40 × 10⁻³ mol (1 : 1)\"; on \"zero point one two zero\" \"20.00 mL sample\" underlines and \"c(NH₃) = 2.40 × 10⁻³ ÷ 0.02000 = 0.120 mol/L\" writes; earlier lines dim; answer box (a) fills \"V(eq) = 24.0 mL; c(NH₃) = 0.120 mol/L\". Grey tag (fades): \"3 s.f.: 0.100 and a graph reading to 0.1 mL\". Strip: \"where is equivalence?\" ticks.",
+        [
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-indicator": [
+        "new",
+        "the working lines dim to the kept chip \"c(NH₃) = 0.120 mol/L\".",
+        "Which indicator?: Now the indicator.",
+        "acidic / six point six to four / inside / foot",
+        "On the spoken cues: On \"acidic\" a small equation writes: \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\" (grey tag \"C13: the salt takes after its stronger parent\", fades), and an amber dot lands on the curve at 24.0 mL, pH about 5.3, tag \"equivalence pH ≈ 5\"; the equation dims to grey as the dot lands. On \"six point six to",
+        "explain",
+        "the working lines dim to the kept chip \"c(NH₃) = 0.120 mol/L\". On \"acidic\" a small equation writes: \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\" (grey tag \"C13: the salt takes after its stronger parent\", fades), and an amber dot lands on the curve at 24.0 mL, pH about 5.3, tag \"equivalence pH ≈ 5\"; the equation dims to grey as the dot lands. On \"six point six to four\" a pale vertical bracket on the y axis spans one drop either side of equivalence (23.95 to 24.05 mL: about 6.6 to 3.9), labelled \"about 6.6 to 4 (one drop either side)\"; the dot's tag dims. On \"inside\" the C13 range band overlay slides methyl red's band (4.4 to 6.2, red to yellow) onto the y axis; the band's crossing of the curve shades entirely within the bracket; \"Select the most suitable indicator\" underlines; answer box (b) fills \"methyl red: equivalence acidic (NH₄⁺ + H₂O); its change (6.2 to 4.4) lies inside the steep drop (about 6.6 to 4)\". On \"foot\" methyl red's band dims and methyl orange's band (3.1 to 4.4) slides in beside it in a paler tone, its crossing shading just below the bracket; tag (bright, replacing the dot tag): \"methyl orange: changes just after the drop, slightly late; also accepted\"; answer box (b) adds \"methyl orange: slightly late, also acceptable\". Strip: \"does it make sense?\" ticks (equivalence pH below 7, as the salt rule predicts).",
+        [
+            "Mark underline",
+            "Enter slide",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"bromothymol blue: neutralisation gives pH 7\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"equivalence here is about pH 5\".",
+        "The classic mistake: The classic mistake is bromothymol blue, because neutralisation should give pH seven.",
+        "early",
+        "On the spoken cues: On \"early\" bromothymol blue's band (6.0 to 7.6, yellow to blue) slides onto the y axis in grey beside methyl red's; its crossing of the curve shades from about 23.5 mL, mostly above the steep part, with a small bracket \"starts about 0.5 mL early\". Hold about 1 second.",
+        "explain",
+        "a chip \"bromothymol blue: neutralisation gives pH 7\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"equivalence here is about pH 5\". On \"early\" bromothymol blue's band (6.0 to 7.6, yellow to blue) slides onto the y axis in grey beside methyl red's; its crossing of the curve shades from about 23.5 mL, mostly above the steep part, with a small bracket \"starts about 0.5 mL early\". Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "q2-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 2: the same titration, the other way round) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. Another student titrates the same ammonia",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: the same titration, the other way round)",
+        "explain",
+        "board clears. Type badge hidden. `m6-burette-clamp-stand-v1.png` small at the card's upper right with `m6-conical-flask-v1.png` under its tip; coded labels \"NH₃(aq)\" on the burette and \"HCl + phenolphthalein\" on the flask. The card writes on: \"A second student titrates the same ammonia solution the other way round. She places 25.00 mL of 0.100 mol/L hydrochloric acid and a few drops of phenolphthalein in a conical flask, then adds the ammonia solution from a burette until the solution first turns faint pink.\" Demand: \"Explain the effect of her choice of indicator on her calculated concentration of the ammonia solution.\" The indicator table stays on the card. No graph (picturing it is part of the task). One answer box. Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-picture": [
+        "new",
+        "the card shrinks to a strip; type badge \"Indicator error: which way?\".",
+        "Picture the curve this way round: Picture the curve this way round.",
+        "one / twenty point eight / seven / buffer",
+        "On the spoken cues: The burette and flask thumbnail stays, labels pulsing (\"NH₃ in the burette\"). A new coded graph draws point by point (author note b): x axis \"volume of NH₃ added (mL)\" 0 to 30, y axis \"pH\" 0 to 12. On \"one\" the curve starts at 1.0 and rises slowly (an empty grey tag \"excess HCl\" over the early",
+        "explain",
+        "the card shrinks to a strip; type badge \"Indicator error: which way?\". The burette and flask thumbnail stays, labels pulsing (\"NH₃ in the burette\"). A new coded graph draws point by point (author note b): x axis \"volume of NH₃ added (mL)\" 0 to 30, y axis \"pH\" 0 to 12. On \"one\" the curve starts at 1.0 and rises slowly (an empty grey tag \"excess HCl\" over the early part). On \"twenty point eight\" Q1's kept chip \"c(NH₃) = 0.120 mol/L\" returns small and a grey line writes \"V(eq) = 2.50 × 10⁻³ mol ÷ 0.120 mol/L = 20.8 mL\"; the curve reaches about pH 5.3 at 20.8 mL, amber dot \"equivalence ≈ pH 5\". On \"seven\" the curve draws its short, near-vertical jump from about 3 (20.5 mL) to about 7.2 (21.0 mL), and a short bracket on it reads \"jump: about 3 to 7\"; the grey V(eq) line dims. On \"buffer\" the curve after 21 mL rises slowly from about 7 through 8 to about 8.9 at 30 mL; tag \"excess NH₃ + NH₄⁺: buffer (C14)\". Strip: \"where is equivalence?\" ticks.",
+        [
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-direction": [
+        "new",
+        "on \"two more millilitres\" phenolphthalein's band (8.3 to 10.0, colourless to pink) slides onto the y axis; the curve meets 8.3 at about 23.1 mL, and a bracket between 20.8 and 23.1 mL reads \"about 2 mL of extra NH₃\"; \"until the solution first turns faint pink\" underlines.",
+        "Follow the titre through the formula: Phenolphthalein turns pink at eight point three, and in that buffer the pH gets there only after about two more millilitres of ammonia.",
+        "two more millilitres / large / small",
+        "On the spoken cues: On \"large\" the error chain writes: \"late pink → titre ↑\". On \"small\" the band and the bracket dim to grey (the chain and the tile stay bright) and the formula tile writes \"c(NH₃) = n(HCl) ÷ V(titre)\" with \"25.00 mL of 0.100 mol/L\" underlined (\"n(HCl) = 2.50 × 10⁻³ mol\", unchanged), the volume block",
+        "explain",
+        "on \"two more millilitres\" phenolphthalein's band (8.3 to 10.0, colourless to pink) slides onto the y axis; the curve meets 8.3 at about 23.1 mL, and a bracket between 20.8 and 23.1 mL reads \"about 2 mL of extra NH₃\"; \"until the solution first turns faint pink\" underlines. On \"large\" the error chain writes: \"late pink → titre ↑\". On \"small\" the band and the bracket dim to grey (the chain and the tile stay bright) and the formula tile writes \"c(NH₃) = n(HCl) ÷ V(titre)\" with \"25.00 mL of 0.100 mol/L\" underlined (\"n(HCl) = 2.50 × 10⁻³ mol\", unchanged), the volume block on the bottom grows from \"20.8 mL\" to \"23.1 mL\" and the result shrinks; the chain completes \"→ c(NH₃) ↓\"; a grey line \"2.50 × 10⁻³ ÷ 0.0231 = 0.108 mol/L (true 0.120)\". Answer box fills \"phenolphthalein turns pink only after excess NH₃ (buffer, pH < 8.3 at equivalence): titre too large; c = n ÷ V, so c(NH₃) too low\". Strip: \"which way does it move?\" and \"does it make sense?\" tick.",
+        [
+            "Mark underline",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"titre too large, so c(NH₃) too high\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"unknown in the burette: c = n ÷ V\".",
+        "The classic mistake: The classic mistake is saying a bigger titre means a bigger concentration.",
+        "burette",
+        "On the spoken cues: On \"burette\" two small formula tiles sit side by side: \"unknown in flask: c = c(titrant) × V(titre) ÷ V(sample)\" (V(titre) on top, grey) and \"unknown in burette: c = n ÷ V(titre)\" (V(titre) on the bottom, white, ringed). The new aid writes small: \"Move the titre, then follow it through the",
+        "explain",
+        "a chip \"titre too large, so c(NH₃) too high\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"unknown in the burette: c = n ÷ V\". On \"burette\" two small formula tiles sit side by side: \"unknown in flask: c = c(titrant) × V(titre) ÷ V(sample)\" (V(titre) on top, grey) and \"unknown in burette: c = n ÷ V(titre)\" (V(titre) on the bottom, white, ringed). The new aid writes small: \"Move the titre, then follow it through the formula.\" Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "q3-question": [
+        "new",
+        "board clears.",
+        "HSC-style question (question 3: a back titration, and an error) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. Zero point two zero zero grams",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: a back titration, and an error)",
+        "explain",
+        "board clears. Type badge hidden. The card writes on: \"Eggshell is mainly calcium carbonate. A 0.200 g sample of crushed eggshell was added to 25.00 mL of 0.2500 mol/L hydrochloric acid, an excess. When the reaction was complete, the mixture was boiled to remove carbon dioxide, then cooled. The leftover acid required 24.90 mL of 0.1000 mol/L sodium hydroxide solution.\" Data lines: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\", \"M(CaCO₃) = 100.1 g/mol\". Demands: \"(a) Calculate the percentage by mass of calcium carbonate in the eggshell.\" \"(b) Before filling the burette, the student rinsed it with distilled water only. Explain the effect of this on the calculated percentage of calcium carbonate.\" Two answer boxes. No plate (a worded question; an eggshell picture would carry no part of the reasoning). Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-calculate": [
+        "new",
+        "the card shrinks to a strip; type badge \"Back titration: subtract, then the error\".",
+        "Four steps: The four back titration steps.",
+        "six point two five zero times ten to the minus three / two point four nine zero times ten to the minus three / three point seven six zero times ten to the minus three / one to two ratio / one point eight eight zero times ten to the minus three / zero point one eight eight two / zero point two zero zero / ninety four point one per cent",
+        "On the spoken cues: A four-step ladder writes, one rung per cue, earlier rungs dimming: on \"six point two five zero\" \"25.00 mL of 0.2500 mol/L\" underlines and \"n(HCl added) = 0.2500 × 0.02500 = 6.250 × 10⁻³ mol\"; on \"two point four nine zero\" \"24.90 mL of 0.1000 mol/L\" underlines and \"n(HCl left) = n(NaOH) = 0.1000 ×",
+        "explain",
+        "the card shrinks to a strip; type badge \"Back titration: subtract, then the error\". A four-step ladder writes, one rung per cue, earlier rungs dimming: on \"six point two five zero\" \"25.00 mL of 0.2500 mol/L\" underlines and \"n(HCl added) = 0.2500 × 0.02500 = 6.250 × 10⁻³ mol\"; on \"two point four nine zero\" \"24.90 mL of 0.1000 mol/L\" underlines and \"n(HCl left) = n(NaOH) = 0.1000 × 0.02490 = 2.490 × 10⁻³ mol\"; on \"three point seven six zero\" \"n(HCl used) = 6.250 × 10⁻³ − 2.490 × 10⁻³ = 3.760 × 10⁻³ mol\" with a C15 grey tag \"subtract moles, not volumes\" (fades); on \"one to two ratio\" the equation on the card underlines (its \"CaCO₃ + 2HCl\"), and on \"one point eight eight zero\" the line \"n(CaCO₃) = 3.760 × 10⁻³ ÷ 2 = 1.880 × 10⁻³ mol\" writes; on \"zero point one eight eight two\" \"M(CaCO₃) = 100.1 g/mol\" underlines and \"m = 1.880 × 10⁻³ × 100.1 = 0.1882 g\" writes; on \"zero point two zero zero\" \"0.200 g\" underlines; on \"ninety four point one\" \"% = 0.1882 ÷ 0.200 × 100 = 94.1%\" writes; one result line lands per spoken cue, each earlier rung dimming; answer box (a) fills \"94.1% CaCO₃\". Grey tag (fades): \"3 s.f.: limited by 0.200 g\". Strip: \"does it make sense?\" ticks (under 100%; eggshell is mostly calcium carbonate).",
+        [
+            "Mark underline",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-error": [
+        "adjust",
+        "the ladder shrinks to a thumbnail (kept chip \"94.1%\").",
+        "Which way does it move?: Now the burette.",
+        "dilutes / big / low",
+        "On the spoken cues: `m6-burette-clamp-stand-v1.png` small with a few coded water droplets inside the tube and `m6-wash-bottle-v1.png` beside it (grey tag \"distilled water only\"); \"rinsed it with distilled water only\" underlines. On \"dilutes\" the coded fill in the burette pales slightly (tag \"NaOH a little weaker than",
+        "explain",
+        "the ladder shrinks to a thumbnail (kept chip \"94.1%\"). `m6-burette-clamp-stand-v1.png` small with a few coded water droplets inside the tube and `m6-wash-bottle-v1.png` beside it (grey tag \"distilled water only\"); \"rinsed it with distilled water only\" underlines. On \"dilutes\" the coded fill in the burette pales slightly (tag \"NaOH a little weaker than 0.1000\"). On \"big\" the error chain writes, each arrow lighting in turn: \"titre ↑ → n(HCl left) ↑ → n(HCl used) ↓ → n(CaCO₃) ↓ → % ↓\"; the ladder thumbnail's rung 2 gets an up arrow and rung 3 a down arrow. On \"low\" answer box (b) fills \"diluted NaOH: back titre too large → leftover acid overestimated → acid used underestimated → % CaCO₃ too low\". On \"rinse the burette\" the P06 rule writes small in green: \"burette: rinse with the solution it will deliver\". Strip: \"which way does it move?\" ticks.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"titre too large, so % CaCO₃ too high\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"back titre = leftover acid\".",
+        "The classic mistake: The classic mistake is thinking a bigger titre means more calcium carbonate.",
+        "left over",
+        "On the spoken cues: On \"left over\" a small bar splits: \"acid added\" (full bar) into \"used by eggshell\" and \"left over\"; the \"left over\" part grows and the \"used\" part shrinks. Hold about 1 second.",
+        "explain",
+        "a chip \"titre too large, so % CaCO₃ too high\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"back titre = leftover acid\". On \"left over\" a small bar splits: \"acid added\" (full bar) into \"used by eggshell\" and \"left over\"; the \"left over\" part grows and the \"used\" part shrinks. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "q4-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 4: an ammonia conductivity graph) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question four. Fifty millilitres of blue-dyed ammonia is",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 4: an ammonia conductivity graph)",
+        "explain",
+        "board clears. Type badge hidden. `m6-conductivity-meter-titration-v1.png` small at the card's upper right (coded label \"blue-dyed NH₃(aq)\" on the beaker; blank screen). The card writes on: \"A 50.00 mL sample of an ammonia solution coloured with a blue dye was titrated with 0.500 mol/L hydrochloric acid. The dye hides indicator colours. The acid was added in 1.00 mL portions and the conductivity was measured after each addition. The results, corrected for the volume added, are shown in the graph.\" Demands: \"(a) Explain the shape of the graph.\" \"(b) Use the graph to determine the concentration of the ammonia solution.\" Beside it the coded graph: x axis \"volume of 0.500 mol/L HCl added (mL)\" 0 to 16, grid every 1 mL; y axis \"conductivity (relative)\", no numbers; 17 amber points (author note d), no lines drawn. Two answer boxes. Nothing answer-bearing: no lines, no tally, no marker. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q4-shape": [
+        "new",
+        "the card shrinks to a strip; type badge \"Conductivity: where the lines cross\".",
+        "Why it starts low, rises gently, then steeply: Ammonia is a weak base, so it's mostly whole molecules, with few ions: the conductivity starts low.",
+        "low / gently / steeply",
+        "On the spoken cues: A C14-style ion tally sits under the graph (tokens sized by how well each ion conducts; grey tag \"C14: H₃O⁺ and OH⁻ conduct far better\", fades). On \"low\" the 0 mL point rings; the tally shows mostly grey whole NH₃ molecules with a few ions; \"Explain the shape\" underlines. On \"gently\" the points",
+        "explain",
+        "the card shrinks to a strip; type badge \"Conductivity: where the lines cross\". A C14-style ion tally sits under the graph (tokens sized by how well each ion conducts; grey tag \"C14: H₃O⁺ and OH⁻ conduct far better\", fades). On \"low\" the 0 mL point rings; the tally shows mostly grey whole NH₃ molecules with a few ions; \"Explain the shape\" underlines. On \"gently\" the points from 1 to 8 mL light in turn; the tally adds an NH₄⁺ and a Cl⁻ token per portion (equation chip \"NH₃ + H₃O⁺ → NH₄⁺ + H₂O\"); tag \"ions added: NH₄⁺ and Cl⁻\". On \"steeply\" the points from 9 to 16 mL light; the tally adds large teal H₃O⁺ tokens with Cl⁻; tag \"excess H₃O⁺: conducts far better\". Answer box (a) fills \"weak base: few ions, low start; NH₄⁺ and Cl⁻ form, gentle rise; after equivalence excess H₃O⁺ (high conductivity), steep rise\". Strip: \"where is equivalence?\" (outline only, not yet ticked).",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q4-crossing": [
+        "new",
+        "the tally dims.",
+        "Read where the lines cross: Equivalence is where the two straight stretches meet.",
+        "cross / eight point four zero / four point two zero times ten to the minus three / zero point zero eight four zero",
+        "On the spoken cues: On \"cross\" two teal best-fit lines draw through the 2 to 7 mL points and the 10 to 16 mL points (C15 ruler style) and extend to meet; a dashed vertical drops from the crossing to the axis, chip \"8.40 mL\", with a small bracket showing the crossing sits between the 8 mL and 9 mL readings. On \"four",
+        "explain",
+        "the tally dims. On \"cross\" two teal best-fit lines draw through the 2 to 7 mL points and the 10 to 16 mL points (C15 ruler style) and extend to meet; a dashed vertical drops from the crossing to the axis, chip \"8.40 mL\", with a small bracket showing the crossing sits between the 8 mL and 9 mL readings. On \"four point two zero times ten to the minus three\" \"0.500 mol/L hydrochloric acid\" underlines and \"n(HCl) = 0.500 × 0.00840 = 4.20 × 10⁻³ mol = n(NH₃) (1 : 1)\" writes. On \"zero point zero eight four zero\" \"50.00 mL sample\" underlines and \"c(NH₃) = 4.20 × 10⁻³ ÷ 0.05000 = 0.0840 mol/L\" writes; answer box (b) fills \"equivalence where the lines cross: 8.40 mL; c(NH₃) = 0.0840 mol/L\". Grey tag (fades): \"3 s.f.: 0.500 mol/L; crossing read as 8.40 mL\". Strip: \"where is equivalence?\" and \"does it make sense?\" tick.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q4-mistake": [
+        "new",
+        "a chip \"V(eq) = 9.00 mL, the first steep reading: c = 0.0900 mol/L\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"read where the lines cross\".",
+        "The classic mistake: The classic mistake is reading equivalence at nine millilitres, the first reading on the steep part.",
+        "between",
+        "On the spoken cues: On \"between\" the 8 mL and 9 mL points pulse either side of the crossing. Hold about 1 second.",
+        "explain",
+        "a chip \"V(eq) = 9.00 mL, the first steep reading: c = 0.0900 mol/L\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"read where the lines cross\". On \"between\" the 8 mL and 9 mL points pulse either side of the crossing. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-board": [
+        "adjust",
+        "the check strip returns full size as a two-column board, \"What you're given\" and \"What you do first\", each row lighting on its cue with its question number badge: \"pH curve → equivalence: middle of the steepest part; indicator: changes inside it (Q1)\"; \"an error → which way does the titre move? Then follow it through the formula; unknown in the burette: V on the bottom (Q2)\"; \"back titration → more left over, less sample (Q3)\"; \"conductivity graph → equivalence where the best-fit lines cross (Q4)\".",
+        "Decision board: A pH curve?",
+        "inside / titre / lines cross",
+        "On the spoken cues: The back-titration error table is not shown here (it would be unspoken reading on a busy board); it appears in key note 4, where the quiet hold gives time to read it. On \"Next\" a chip \"Next: which analysis method fits a sample?\" slides in at the lower right with `m6-ph-meter-probe-beaker-v1.png`",
+        "explain",
+        "the check strip returns full size as a two-column board, \"What you're given\" and \"What you do first\", each row lighting on its cue with its question number badge: \"pH curve → equivalence: middle of the steepest part; indicator: changes inside it (Q1)\"; \"an error → which way does the titre move? Then follow it through the formula; unknown in the burette: V on the bottom (Q2)\"; \"back titration → more left over, less sample (Q3)\"; \"conductivity graph → equivalence where the best-fit lines cross (Q4)\". The back-titration error table is not shown here (it would be unspoken reading on a busy board); it appears in key note 4, where the quiet hold gives time to read it. On \"Next\" a chip \"Next: which analysis method fits a sample?\" slides in at the lower right with `m6-ph-meter-probe-beaker-v1.png` small. Hold about 2 seconds.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6P07_ROWS = {
+    "hook": [
+        "adjust",
+        "`m6-vinegar-bottle-v1.png` at the left with its coded label \"white vinegar: 4% acidity\" (grey).",
+        "Hook (one vinegar, two pH values): A pH probe reads this white vinegar at two point four six.",
+        "two point four six / two point nine six / say",
+        "On the spoken cues: Two `m6-ph-meter-probe-beaker-v1.png` plates side by side in the centre, beaker tags \"neat vinegar\" and \"diluted ten times\" (amber). On \"two point four six\" the left readout settles \"2.46\" (violet); on \"two point nine six\" the right readout settles \"2.96\" (violet) and a small grey bracket joins them \"same vinegar\", with a silent grey tag \"+0.50: a weak acid on tenfold dilution (dilution practical)\" (dims). On",
+        "explain",
+        "`m6-vinegar-bottle-v1.png` at the left with its coded label \"white vinegar: 4% acidity\" (grey). Two `m6-ph-meter-probe-beaker-v1.png` plates side by side in the centre, beaker tags \"neat vinegar\" and \"diluted ten times\" (amber). On \"two point four six\" the left readout settles \"2.46\" (violet); on \"two point nine six\" the right readout settles \"2.96\" (violet) and a small grey bracket joins them \"same vinegar\", with a silent grey tag \"+0.50: a weak acid on tenfold dilution (dilution practical)\" (dims). On \"neither one measures how much\" a grey chip \"pH ≠ amount (method choice video)\" writes under the meters and dims. On \"say\" the heading writes: \"What does each number mean?\" Bright at the end: the two readouts and the heading. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "two-questions": [
+        "adjust",
+        "the board clears.",
+        "Two questions, two measurements: Start with the questions.",
+        "pH / amount / direct",
+        "On the spoken cues: Right zone: C16's two-question card, small: on \"pH\" row 1 lights \"How acidic now? → pH (calibrated probe)\" (violet) with the meter thumbnail; on \"amount\" row 2 lights \"How much in total? → titration\" (amber) with the burette thumbnail (`m6-burette-clamp-stand-v1.png`, small) and a grey tag \"method choice video\" (dims). On \"direct\" a tick chip writes beside row 2: \"clear + fast → direct titration, phenolphthalein\"",
+        "explain",
+        "the board clears. Right zone: C16's two-question card, small: on \"pH\" row 1 lights \"How acidic now? → pH (calibrated probe)\" (violet) with the meter thumbnail; on \"amount\" row 2 lights \"How much in total? → titration\" (amber) with the burette thumbnail (`m6-burette-clamp-stand-v1.png`, small) and a grey tag \"method choice video\" (dims). On \"direct\" a tick chip writes beside row 2: \"clear + fast → direct titration, phenolphthalein\" and a grey tag \"why phenolphthalein: the indicators video\" (dims). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "ph-first": [
+        "adjust",
+        "right zone, step card \"1 Measure pH\".",
+        "PH first, on the sample as it is: Measure the pH first.",
+        "two / undiluted / two point four six",
+        "On the spoken cues: Centre: two `m6-buffer-bottle-v1.png` plates (P03 request; fallback: two small `m6-beaker-v1.png` plates with coded labels) tagged \"pH 7.00\" and \"pH 2.00\"; the probe dips into each in turn (coded motion, a short wash-bottle stream rinses it between them), the readout settling \"7.00\" then \"2.00\" with a stability tick. On \"two\" a coded number line \"pH 2 to 7\" draws under the buffers with a violet marker \"vinegar ≈",
+        "explain",
+        "right zone, step card \"1 Measure pH\". Centre: two `m6-buffer-bottle-v1.png` plates (P03 request; fallback: two small `m6-beaker-v1.png` plates with coded labels) tagged \"pH 7.00\" and \"pH 2.00\"; the probe dips into each in turn (coded motion, a short wash-bottle stream rinses it between them), the readout settling \"7.00\" then \"2.00\" with a stability tick. On \"two\" a coded number line \"pH 2 to 7\" draws under the buffers with a violet marker \"vinegar ≈ 2.5\" falling between the two ends, tag \"buffers either side of the sample\", and a small grey tick at 4 on the line with the tag \"method choice video: pH 4 suits most acidic samples; vinegar reads below 4\" (dims). On \"undiluted\" the probe moves into a beaker tagged \"neat vinegar, from the bottle\"; the hook's diluted beaker ghosts in beside it and takes a grey cross with the caption \"a different solution: a different pH\". On \"Three readings\" a small reading table writes, one value per beat: \"2.46 | 2.45 | 2.46\", with a bracket \"within 0.01\"; on \"two point four six\" the kept chip pins \"pH = 2.46 (25 °C)\" (violet). Earlier tags dim. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "table build",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "plan-from-label": [
+        "new",
+        "right zone, card \"2 Plan from the label\".",
+        "Plan the titration from the label: Now the amount.",
+        "zero point six seven / three",
+        "On the spoken cues: Task line: \"Estimate the titre before you start\". Lines one at a time, grey (estimates): \"label: 4 g per 100 mL = 40 g/L\"; on \"zero point six seven\" \"c ≈ 40 ÷ 60.05 ≈ 0.67 mol/L\" (grey tag \"M(CH₃COOH) = 60.05 g/mol\", dims); then \"n in 25.00 mL ≈ 0.67 × 0.02500 ≈ 0.017 mol\" and \"V(NaOH) ≈ 0.017 ÷ 0.1 ≈ 170 mL\". On \"three\" the burette fill counter draws four burette outlines in a row; three fill completely and the",
+        "explain",
+        "right zone, card \"2 Plan from the label\". Task line: \"Estimate the titre before you start\". Lines one at a time, grey (estimates): \"label: 4 g per 100 mL = 40 g/L\"; on \"zero point six seven\" \"c ≈ 40 ÷ 60.05 ≈ 0.67 mol/L\" (grey tag \"M(CH₃COOH) = 60.05 g/mol\", dims); then \"n in 25.00 mL ≈ 0.67 × 0.02500 ≈ 0.017 mol\" and \"V(NaOH) ≈ 0.017 ÷ 0.1 ≈ 170 mL\". On \"three\" the burette fill counter draws four burette outlines in a row; three fill completely and the fourth fills a third, tag \"50 mL burette: refill after refill\". Bright at the end: the 170 mL line and the counter. Hold about 1 second. Hold about 1 second.",
+        [
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "dilute": [
+        "adjust",
+        "on \"corrosive\" a chip \"0.5 mol/L NaOH instead?\" fades in with a small terracotta hazard tag \"corrosive\" and takes a grey cross (caption \"dilute the sample instead\").",
+        "Dilute the sample, not strengthen the base: You could use a stronger base, but half molar sodium hydroxide counts as corrosive in school safety guides.",
+        "corrosive / multiply by ten / seventeen",
+        "On the spoken cues: Centre: `m6-volumetric-pipette-filler-v1.png` drains into `m6-volumetric-flask-v1.png` (coded amber stream; a grey tag \"rinse the pipette with vinegar first (titration practical)\" dims); P04's fill-to-mark motion; the flask rotates whole through 180° and back twice (coded, no hand), tag \"inverted: the same everywhere\". P04's particle lens opens on the flask: the same twelve amber acid dots spread through a bigger",
+        "explain",
+        "on \"corrosive\" a chip \"0.5 mol/L NaOH instead?\" fades in with a small terracotta hazard tag \"corrosive\" and takes a grey cross (caption \"dilute the sample instead\"). Centre: `m6-volumetric-pipette-filler-v1.png` drains into `m6-volumetric-flask-v1.png` (coded amber stream; a grey tag \"rinse the pipette with vinegar first (titration practical)\" dims); P04's fill-to-mark motion; the flask rotates whole through 180° and back twice (coded, no hand), tag \"inverted: the same everywhere\". P04's particle lens opens on the flask: the same twelve amber acid dots spread through a bigger volume. On \"multiply by ten\" the scale bar draws from the flask back to the bottle, labelled \"dilution factor: 250.0 ÷ 25.00 = 10\", with a silent grey chip under it: \"or a smaller pipette: also fine; dilution gives many aliquots from one careful transfer\" (dims). On \"seventeen\" the burette counter from scene 4 resets to one burette, a third full, tag \"expected titre ≈ 17 mL\". Bright at the end: the scale bar, the crossed chip and the titre tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "titrate": [
+        "adjust",
+        "right zone, step card \"3 Titrate\".",
+        "The titration: The sodium hydroxide was standardised, because it absorbs carbon dioxide from the air: zero point zero nine nine four zero moles per litre.",
+        "zero point zero nine nine four zero / pink",
+        "On the spoken cues: Centre: the full set-up (`m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png` on `m6-white-tile-v1.png`), the burette's coded fill navy with the label \"NaOH, standardised\"; on \"zero point zero nine nine four zero\" the label completes \"0.09940 mol/L\" (navy) and pins as a kept chip, with a grey tag \"standardised: NaOH absorbs CO₂ (titration video)\" (dims). A pipette thumbnail drains into the flask, tag \"25.00 mL",
+        "explain",
+        "right zone, step card \"3 Titrate\". Centre: the full set-up (`m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png` on `m6-white-tile-v1.png`), the burette's coded fill navy with the label \"NaOH, standardised\"; on \"zero point zero nine nine four zero\" the label completes \"0.09940 mol/L\" (navy) and pins as a kept chip, with a grey tag \"standardised: NaOH absorbs CO₂ (titration video)\" (dims). A pipette thumbnail drains into the flask, tag \"25.00 mL diluted vinegar\" (amber); two coded drops fall, flask = `m6-clip-phenolphthalein-colourless-v1.png`. A grey tag \"technique: the titration practical\" (dims). The volume counter runs quickly, then single drops with a swirl wobble (coded rotation); a brief pink flash fades once. On \"pink\" the flask swaps to `m6-clip-phenolphthalein-pink-v1.png`, a small coded timer counts \"30 s\" and ticks, tag \"first faint pink that lasts 30 s (the pink can fade as CO₂ from air dissolves)\". Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "tick",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "results": [
+        "new",
+        "the right zone widens for C12's titre table: columns \"run | initial (mL) | final (mL) | titre (mL)\"; rows \"rough | 0.00 | 17.4 | 17.4\" (greyed, \"not used\"); \"1 | 0.20 | 17.25 | 17.05\"; \"2 | 0.50 | 17.60 | 17.10\"; \"3 | 0.10 | 17.25 | 17.15\"; each titre cell writes as \"final − initial\".",
+        "The results: The rough run went to about seventeen point four.",
+        "seventeen point one zero",
+        "On the spoken cues: C12's concordance strip (17.00 to 17.20 mL) draws, the bracket \"0.10 mL\" spanning 17.05 to 17.15 with all three dots inside. On \"seventeen point one zero\" rows 1 to 3 ring teal and \"(17.05 + 17.10 + 17.15) ÷ 3 = 17.10 mL\" writes and shrinks to a kept chip \"mean titre = 17.10 mL\". Bright at the end: the ringed rows and the kept chip.",
+        "explain",
+        "the right zone widens for C12's titre table: columns \"run | initial (mL) | final (mL) | titre (mL)\"; rows \"rough | 0.00 | 17.4 | 17.4\" (greyed, \"not used\"); \"1 | 0.20 | 17.25 | 17.05\"; \"2 | 0.50 | 17.60 | 17.10\"; \"3 | 0.10 | 17.25 | 17.15\"; each titre cell writes as \"final − initial\". C12's concordance strip (17.00 to 17.20 mL) draws, the bracket \"0.10 mL\" spanning 17.05 to 17.15 with all three dots inside. On \"seventeen point one zero\" rows 1 to 3 ring teal and \"(17.05 + 17.10 + 17.15) ÷ 3 = 17.10 mL\" writes and shrinks to a kept chip \"mean titre = 17.10 mL\". Bright at the end: the ringed rows and the kept chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "calculation": [
+        "new",
+        "the table dims to a strip.",
+        "The calculation: Ethanoic acid reacts one to one with sodium hydroxide.",
+        "one point six nine nine seven times ten to the minus three / zero point zero six seven nine nine / zero point six seven nine nine",
+        "On the spoken cues: Task line: \"Find c(CH₃COOH) in the vinegar\". Equation strip: \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\", coefficients pulsing \"1 : 1\". C12's mole bridge draws. Givens, grouped: \"NaOH: c = 0.09940 mol/L, mean titre 17.10 mL\" (navy) | \"diluted vinegar: aliquot 25.00 mL\" (amber) | \"dilution: 25.00 mL to 250.0 mL\" (grey). Lines one at a time, earlier dimming: on \"one point six nine nine seven\" \"n(NaOH) = 0.09940 ×",
+        "explain",
+        "the table dims to a strip. Task line: \"Find c(CH₃COOH) in the vinegar\". Equation strip: \"CH₃COOH(aq) + NaOH(aq) → CH₃COONa(aq) + H₂O(l)\", coefficients pulsing \"1 : 1\". C12's mole bridge draws. Givens, grouped: \"NaOH: c = 0.09940 mol/L, mean titre 17.10 mL\" (navy) | \"diluted vinegar: aliquot 25.00 mL\" (amber) | \"dilution: 25.00 mL to 250.0 mL\" (grey). Lines one at a time, earlier dimming: on \"one point six nine nine seven\" \"n(NaOH) = 0.09940 × 0.01710 = 1.6997 × 10⁻³ mol = n(CH₃COOH)\" (grey tag \"keep the digits; round at the end\", dims); on \"zero point zero six seven nine nine\" \"c(diluted) = 1.6997 × 10⁻³ ÷ 0.02500 = 0.06799 mol/L\"; on \"zero point six seven nine nine\" the scale bar from scene 5 returns, \"× 10\", and \"c(vinegar) = 10 × 0.06799 = 0.6799 mol/L\" writes; the answer chip pins \"vinegar: 0.6799 mol/L ethanoic acid\", grey tag \"4 s.f., like the data\" (dims). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "report-label": [
+        "new",
+        "right zone, card \"4 Report\".",
+        "Report it the way the label does: The label's four percent means about four grams per hundred millilitres, so convert.",
+        "four point zero eight three grams / close",
+        "On the spoken cues: Lines one at a time: \"mass per litre = 0.6799 × 60.05 = 40.83 g/L\"; on \"four point zero eight three grams\" \"= 4.083 g per 100 mL\" and the label comparison bar draws: a grey bar \"label: 4 g per 100 mL\" and an amber bar \"measured: 4.083 g per 100 mL\", with a small bracket \"+2 % of the label value\". On \"close\" a tick chip \"consistent with the label\" (green) writes, with a grey tag \"labels state a nominal value\". Bright",
+        "explain",
+        "right zone, card \"4 Report\". Lines one at a time: \"mass per litre = 0.6799 × 60.05 = 40.83 g/L\"; on \"four point zero eight three grams\" \"= 4.083 g per 100 mL\" and the label comparison bar draws: a grey bar \"label: 4 g per 100 mL\" and an amber bar \"measured: 4.083 g per 100 mL\", with a small bracket \"+2 % of the label value\". On \"close\" a tick chip \"consistent with the label\" (green) writes, with a grey tag \"labels state a nominal value\". Bright at the end: the two bars and the tick. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "two-results": [
+        "new",
+        "the report card holds two result rows, written as spoken: \"how acidic: pH 2.46 (25 °C)\" (violet) and \"how much: 4.083 g per 100 mL\" (amber).",
+        "Two results, two meanings: The pH says how acidic the vinegar is.",
+        "two point four six / zero point zero one out / as ethanoic acid",
+        "On the spoken cues: On \"fit together\" a small check line writes between them: \"Ka = 1.8 × 10⁻⁵, c = 0.6799 mol/L → [H₃O⁺] ≈ 3.5 × 10⁻³ mol/L → pH ≈ 2.46\" (grey tag \"weak acid pH video\", dims); on \"two point four six\" the predicted value rings beside the measured 2.46 with a teal tick. On \"zero point zero one out\" the check line dims and a grey strip writes: \"pH 2.45 → 0.70 mol/L | 2.46 → 0.67 | 2.47 → 0.64\" (grey tag \"the titration",
+        "explain",
+        "the report card holds two result rows, written as spoken: \"how acidic: pH 2.46 (25 °C)\" (violet) and \"how much: 4.083 g per 100 mL\" (amber). On \"fit together\" a small check line writes between them: \"Ka = 1.8 × 10⁻⁵, c = 0.6799 mol/L → [H₃O⁺] ≈ 3.5 × 10⁻³ mol/L → pH ≈ 2.46\" (grey tag \"weak acid pH video\", dims); on \"two point four six\" the predicted value rings beside the measured 2.46 with a teal tick. On \"zero point zero one out\" the check line dims and a grey strip writes: \"pH 2.45 → 0.70 mol/L | 2.46 → 0.67 | 2.47 → 0.64\" (grey tag \"the titration video\", dims), with a small caption \"pH checks the titration; it can't replace it\". On \"as ethanoic acid\" the amber row completes: \"titratable acidity: 4.083 g per 100 mL, as ethanoic acid\", with a grey tag \"titratable acidity: all acid that reacts up to the endpoint, counted as one named acid\". Bright at the end: the two rows and the tick. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "limitations": [
+        "new",
+        "right zone, card \"5 Limitations\", grey rows writing one per spoken limit, each with a small icon from the board: \"one bottle: result for the tested bottle\" (the vinegar bottle thumbnail, with two ghost bottles beside it tagged \"batch or brand: sample more bottles\"); \"other acids: counted as ethanoic acid\" (the amber row's \"as ethanoic acid\" pulses); on \"density\" \"g per 100 mL ≠ % by mass: needs the density (practice video)\" (grey tag dims); on \"temperature\" \"pH at 25 °C: record the temperature\" (the meter thumbnail).",
+        "The limits of the result: Then report the limits.",
+        "density / temperature",
+        "On the spoken cues: Bright at the end: the last two rows.",
+        "explain",
+        "right zone, card \"5 Limitations\", grey rows writing one per spoken limit, each with a small icon from the board: \"one bottle: result for the tested bottle\" (the vinegar bottle thumbnail, with two ghost bottles beside it tagged \"batch or brand: sample more bottles\"); \"other acids: counted as ethanoic acid\" (the amber row's \"as ethanoic acid\" pulses); on \"density\" \"g per 100 mL ≠ % by mass: needs the density (practice video)\" (grey tag dims); on \"temperature\" \"pH at 25 °C: record the temperature\" (the meter thumbnail). Bright at the end: the last two rows. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter reveals"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "new",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what was intended?",
+        "Validity, reliability and accuracy: Validity: the titration measures the total acid, because vinegar is clear, it reacts one to one and the endpoint is close to equivalence.",
+        "Validity / Reliability / Accuracy",
+        "On the spoken cues: Clear sample, 1 : 1 reaction, phenolphthalein endpoint near equivalence; pH on the undiluted sample; held the same: aliquot, NaOH, indicator dose, endpoint rule.\" (green list row for the controls, silent). \"Reliability: repeats agree? Titres 17.05 to 17.15 mL (within 0.10 mL); pH 2.45 to 2.46.\" \"Accuracy: close to the true value? Standardised NaOH; volumetric pipette and flask; buffers pH 2.00 and 7.00 either side;",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what was intended? Clear sample, 1 : 1 reaction, phenolphthalein endpoint near equivalence; pH on the undiluted sample; held the same: aliquot, NaOH, indicator dose, endpoint rule.\" (green list row for the controls, silent). \"Reliability: repeats agree? Titres 17.05 to 17.15 mL (within 0.10 mL); pH 2.45 to 2.46.\" \"Accuracy: close to the true value? Standardised NaOH; volumetric pipette and flask; buffers pH 2.00 and 7.00 either side; readings at eye level.\" A small grey footer: \"NESA glossary (2025): accuracy, the extent to which measurements are considered to be close to the true value.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"0.09940 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); school guides treat 0.05 to < 0.5 mol/L as an irritant; supplier sheets vary, so check yours\" / \"treat a splash as harmful to eyes and skin\" / \"safety glasses (`m5x-safety-glasses-v1.png`); rinse splashes with water\"; \"vinegar (4 g per 100 mL) and its dilution: not classified\" / \"a food product, but lab samples may be contaminated\" / \"label it; never taste lab samples\"; on \"flammable\" \"phenolphthalein indicator (about 0.5 % in ethanol): flammable (H225 or H226); the solid is Carc. 1B, may cause cancer (H350); the solution's label varies by supplier, so check yours\" / \"fire; long-term harm from repeated exposure\" / \"two drops; cap the bottle; no flames; wash hands\"; \"pH buffers 2.00 and 7.00: check the label\" / \"eye irritation from a splash\" / \"safety glasses\"; on \"filler\" \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\".",
+        "The risk assessment: The risk assessment.",
+        "flammable / filler",
+        "On the spoken cues: Grey row: \"waste: neutralised sodium ethanoate solution; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\".",
+        "explain",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"0.09940 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); school guides treat 0.05 to < 0.5 mol/L as an irritant; supplier sheets vary, so check yours\" / \"treat a splash as harmful to eyes and skin\" / \"safety glasses (`m5x-safety-glasses-v1.png`); rinse splashes with water\"; \"vinegar (4 g per 100 mL) and its dilution: not classified\" / \"a food product, but lab samples may be contaminated\" / \"label it; never taste lab samples\"; on \"flammable\" \"phenolphthalein indicator (about 0.5 % in ethanol): flammable (H225 or H226); the solid is Carc. 1B, may cause cancer (H350); the solution's label varies by supplier, so check yours\" / \"fire; long-term harm from repeated exposure\" / \"two drops; cap the bottle; no flames; wash hands\"; \"pH buffers 2.00 and 7.00: check the label\" / \"eye irritation from a splash\" / \"safety glasses\"; on \"filler\" \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\". Grey row: \"waste: neutralised sodium ethanoate solution; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A cleaning vinegar is labelled six",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. `m6-vinegar-bottle-v1.png` small at the card's upper right with the coded label \"cleaning vinegar: 6% acidity\". Question card, worded as printed: \"A cleaning vinegar is labelled '6% acidity', meaning 6 g of ethanoic acid per 100 mL. A student plans to titrate 25.00 mL aliquots of the undiluted cleaning vinegar with 0.09940 mol/L sodium hydroxide from a 50.00 mL burette. M(CH₃COOH) = 60.05 g/mol. Use the label to estimate the expected titre, and explain how the student should change the plan.\" Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no burette counter, no scale bar.",
+        [
+            "HandText write-on",
+            "NumberTicker",
+            "bar fill",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "one / two hundred and fifty / twenty five",
+        "On the spoken cues: On \"one\" \"6 g of ethanoic acid per 100 mL\" and \"60.05 g/mol\" are underlined and \"c ≈ 60 ÷ 60.05 ≈ 1 mol/L\" writes (grey, estimate). On \"two hundred and fifty\" \"25.00 mL aliquots\" and \"0.09940 mol/L\" are underlined; \"n ≈ 1 × 0.02500 ≈ 0.025 mol → V ≈ 0.025 ÷ 0.09940 ≈ 250 mL\" writes, and \"50.00 mL burette\" is underlined as the burette fill counter fills five outlines. On \"twenty five\" the scale bar draws \"25.00 mL →",
+        "explain",
+        "the question card shrinks to the top. On \"one\" \"6 g of ethanoic acid per 100 mL\" and \"60.05 g/mol\" are underlined and \"c ≈ 60 ÷ 60.05 ≈ 1 mol/L\" writes (grey, estimate). On \"two hundred and fifty\" \"25.00 mL aliquots\" and \"0.09940 mol/L\" are underlined; \"n ≈ 1 × 0.02500 ≈ 0.025 mol → V ≈ 0.025 ÷ 0.09940 ≈ 250 mL\" writes, and \"50.00 mL burette\" is underlined as the burette fill counter fills five outlines. On \"twenty five\" the scale bar draws \"25.00 mL → 250.0 mL volumetric flask: × 10\" and \"dilute × 10 (or a 2.50 mL aliquot): titre ≈ 25 mL\" writes; the counter drops to one burette, half full. A chip \"refill the burette five times\" fades in and is crossed (caption \"ten readings: more reading error\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "NumberTicker",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "`m6-household-cleaner-bottle-v1.png` small at the card's upper right with the coded label \"ammonia cleaner\".",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more, this time a base. A student",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "`m6-household-cleaner-bottle-v1.png` small at the card's upper right with the coded label \"ammonia cleaner\". Question card, worded as printed: \"A student analyses a household ammonia cleaner. She pours some of the cleaner into an open beaker and leaves it on the bench for 40 minutes. She then pipettes 25.00 mL of it into a 250.0 mL volumetric flask, makes it up to the mark, and titrates 25.00 mL aliquots with standardised hydrochloric acid using methyl orange indicator. All other steps are carried out correctly. Explain the effect of leaving the cleaner in the open beaker on her calculated concentration of ammonia in the cleaner.\" Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "on \"gas\" \"open beaker\" and \"40 minutes\" are underlined and P06's error chain writes its first chip \"open beaker → NH₃ gas escapes → fewer moles of NH₃ in the sample\" (grey), with a few coded NH₃ dots rising out of a beaker thumbnail.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "gas / smaller / low",
+        "On the spoken cues: On \"smaller\" \"titrates 25.00 mL aliquots with standardised hydrochloric acid\" is underlined and \"→ titre smaller\" (violet) writes, with a small grey equation strip \"NH₃(aq) + HCl(aq) → NH₄Cl(aq)\". On \"low\" \"calculated concentration of ammonia in the cleaner\" is underlined and \"→ c(NH₃) too low\" (terracotta) writes. A chip \"water evaporates, so too high\" fades in and is crossed (caption \"ammonia escapes much faster",
+        "explain",
+        "on \"gas\" \"open beaker\" and \"40 minutes\" are underlined and P06's error chain writes its first chip \"open beaker → NH₃ gas escapes → fewer moles of NH₃ in the sample\" (grey), with a few coded NH₃ dots rising out of a beaker thumbnail. On \"smaller\" \"titrates 25.00 mL aliquots with standardised hydrochloric acid\" is underlined and \"→ titre smaller\" (violet) writes, with a small grey equation strip \"NH₃(aq) + HCl(aq) → NH₄Cl(aq)\". On \"low\" \"calculated concentration of ammonia in the cleaner\" is underlined and \"→ c(NH₃) too low\" (terracotta) writes. A chip \"water evaporates, so too high\" fades in and is crossed (caption \"ammonia escapes much faster than water\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 pH, amount, or both?\"",
+        "Decision rule and handoff: So, to analyse a household sample: ask whether you need its pH, an amount, or both.",
+        "Next",
+        "On the spoken cues: \"2 pH: calibrated probe, buffers either side, the undiluted sample.\" \"3 Amount: estimate the titre from the label; dilute if needed; × the dilution factor.\" \"4 Report: pH; g per 100 mL as one named acid; the limits.\" A grey tag beneath, silent: \"other samples change one step: juice (citric acid, 3 H⁺), soft drink (degas first), wine (pH endpoint), antacid (back titration)\". On \"Next\" a chip \"Next: Module 7, organic",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 pH, amount, or both?\" \"2 pH: calibrated probe, buffers either side, the undiluted sample.\" \"3 Amount: estimate the titre from the label; dilute if needed; × the dilution factor.\" \"4 Report: pH; g per 100 mL as one named acid; the limits.\" A grey tag beneath, silent: \"other samples change one step: juice (citric acid, 3 H⁺), soft drink (degas first), wine (pH endpoint), antacid (back titration)\". On \"Next\" a chip \"Next: Module 7, organic chemistry\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+SKILLS05_ROWS = {
+    "hook": [
+        "new",
+        "A column of command chips builds, tallest first: \"explain 28\", \"calculate 24\", \"justify 12\" (bars, ink; Chemistry-only counts, matching the spoken \"Chemistry papers\").",
+        "Hook: In the last five HSC Chemistry papers, calculate was the second most common command in the written section, after explain, and the commonest value was four marks.",
+        "four marks / units / numbers",
+        "On the spoken cues: \"calculate\" lights amber. `GreyTag`: \"question parts with their own marks, NESA Chemistry papers, Section II, 2021 to 2025 (HSCScience count)\". On \"four marks\" the calculate bar opens into a small mark-value bar chart: 2 (2), 3 (6), 4 (11), 5 (3), 6 (1), 7 (1); the 4 bar lights amber. On \"units\" six Chemistry report tiles (2020 to 2025) each take a red `Flag` in turn, and three short chips write beside them: \"hidden",
+        "explain",
+        "A column of command chips builds, tallest first: \"explain 28\", \"calculate 24\", \"justify 12\" (bars, ink; Chemistry-only counts, matching the spoken \"Chemistry papers\"). \"calculate\" lights amber. `GreyTag`: \"question parts with their own marks, NESA Chemistry papers, Section II, 2021 to 2025 (HSCScience count)\". On \"four marks\" the calculate bar opens into a small mark-value bar chart: 2 (2), 3 (6), 4 (11), 5 (3), 6 (1), 7 (1); the 4 bar lights amber. On \"units\" six Chemistry report tiles (2020 to 2025) each take a red `Flag` in turn, and three short chips write beside them: \"hidden steps\", \"lost units\", \"rounded too early\". `GreyTag`: \"NESA marking feedback, Chemistry 2020 to 2025: 6 of 6 reports\". On \"numbers\" two small Biology chips: \"probability (Biology 2024)\" and \"number of people affected, from a graph (Biology 2024)\"; a tag \"the word calculate: Chemistry 24, Biology 0\". On \"full marks\" the chips clear and a working column draws as four empty ruled lines with a final boxed line. Heading writes on: \"Calculation answers that get full marks\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "question-card": [
+        "adjust",
+        "`QuestionCard` writes on.",
+        "Question-card: Here's an HSC-style Chemistry question.",
+        "calculate",
+        "On the spoken cues: Badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Card text: \"A student mixed 60.0 mL of 0.800 mol L-1 hydrochloric acid with 40.0 mL of 1.00 mol L-1 sodium hydroxide solution in a polystyrene cup. The temperature of the mixture rose from 20.6 °C to 25.8 °C.\" \"Assume the density of the mixture is 1.00 g mL-1 and its specific heat capacity is 4.18 J g-1 °C-1.\" \"Calculate the molar enthalpy of",
+        "explain",
+        "`QuestionCard` writes on. Badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Card text: \"A student mixed 60.0 mL of 0.800 mol L-1 hydrochloric acid with 40.0 mL of 1.00 mol L-1 sodium hydroxide solution in a polystyrene cup. The temperature of the mixture rose from 20.6 °C to 25.8 °C.\" \"Assume the density of the mixture is 1.00 g mL-1 and its specific heat capacity is 4.18 J g-1 °C-1.\" \"Calculate the molar enthalpy of neutralisation for this reaction.\" \"(4 marks)\" `m6-foam-cup-calorimeter-v1.png` small at the card's right (tag \"polystyrene cup\"); a coded amber readout chip on its thermometer stem counts from \"20.6 °C\" to \"25.8 °C\" on \"twenty five point eight\". Empty `AnswerBox` below (eight lines), counter \"0 / 4\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "read-it": [
+        "new",
+        "`RoutineStrip` mini at the far left; rows light on their cues.",
+        "Read-it: Run the routine.",
+        "calculate / kilojoules per mole / use",
+        "On the spoken cues: Annotations (`Ann`): highlighter on \"Calculate\"; a chip under it: \"calculate → work out an answer from given information\" with `GreyTag` \"NESA glossary, paraphrased\". Ring on \"(4 marks)\" lifting to a `MarksBadge` \"4\". On \"kilojoules per mole\" a teal bracket on \"molar enthalpy of neutralisation\" and a target chip in the answer box's last line: \"ΔH = ? kJ mol-1\" with a small \"±?\" sign slot. Under it a grey chip: \"kJ",
+        "explain",
+        "`RoutineStrip` mini at the far left; rows light on their cues. Annotations (`Ann`): highlighter on \"Calculate\"; a chip under it: \"calculate → work out an answer from given information\" with `GreyTag` \"NESA glossary, paraphrased\". Ring on \"(4 marks)\" lifting to a `MarksBadge` \"4\". On \"kilojoules per mole\" a teal bracket on \"molar enthalpy of neutralisation\" and a target chip in the answer box's last line: \"ΔH = ? kJ mol-1\" with a small \"±?\" sign slot. Under it a grey chip: \"kJ mol⁻¹ = kJ/mol (both fine)\" (C03 and C07 wrote kJ/mol and mol/L; this video uses the HSC paper form). On screen every \"mol-1\", \"L-1\", \"g-1\", \"°C-1\" and \"10^-3\" in this file renders with true superscripts. On \"use\" a ghost list (\"60.0 mL, 0.800, 40.0 mL, 1.00, 20.6, 25.8 ...\") writes in grey, takes a grey tag \"copied, not used\", and fades. The card shrinks to about 0.72 and keeps its annotations.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark highlight",
+            "DrawPath"
+        ],
+        "Settle about 1 second"
+    ],
+    "four-steps": [
+        "new",
+        "`StepRail` builds full size in the side column, each row on its cue: \"Equation: symbols first\"; \"Substitute: values with units\"; \"Solve: answer, units, sign, sig figs\"; \"Sense check: size, sign, unit\".",
+        "Four-steps: Every calculation answer can follow the same four steps.",
+        "equation / Substitute / Solve / sense check",
+        "On the spoken cues: On \"one E and three S's\" the initials E, S, S, S light amber down the left edge of the rail. Memory aid writes large and handwritten under the rail: \"One E and three S's\". The rail then shrinks to a tab in the side column; its rows light on cue in scenes 5 to 7.",
+        "explain",
+        "`StepRail` builds full size in the side column, each row on its cue: \"Equation: symbols first\"; \"Substitute: values with units\"; \"Solve: answer, units, sign, sig figs\"; \"Sense check: size, sign, unit\". On \"one E and three S's\" the initials E, S, S, S light amber down the left edge of the rail. Memory aid writes large and handwritten under the rail: \"One E and three S's\". The rail then shrinks to a tab in the side column; its rows light on cue in scenes 5 to 7.",
+        [
+            "HandText write-on"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-1": [
+        "new",
+        "Rail row \"Equation\" lights; answer row 1 writes: \"q = mcΔT\" (margin \"E\").",
+        "Step-1 (heat): Step one, the heat: q equals m c delta T.",
+        "one hundred grams / kilojoules",
+        "On the spoken cues: On \"one hundred grams\" pen underlines on \"60.0 mL\" and \"40.0 mL\" and on \"1.00 g mL-1\"; `UnitChip`s ride down: \"60.0 mL + 40.0 mL = 100.0 mL; × 1.00 g mL-1 → 100 g\". Row 2: \"m = 100 g\" with a small grey tag \"3 sig figs (from 1.00 g mL-1)\". On \"five point two\" underlines on \"20.6 °C\" and \"25.8 °C\". Row 3: \"ΔT = 25.8 - 20.6 = 5.2 °C\". Rail row \"Substitute\" lights. Row 4: \"q = 100 g × 4.18 J g-1 °C-1 × 5.2 °C\" (margin",
+        "explain",
+        "Rail row \"Equation\" lights; answer row 1 writes: \"q = mcΔT\" (margin \"E\"). On \"one hundred grams\" pen underlines on \"60.0 mL\" and \"40.0 mL\" and on \"1.00 g mL-1\"; `UnitChip`s ride down: \"60.0 mL + 40.0 mL = 100.0 mL; × 1.00 g mL-1 → 100 g\". Row 2: \"m = 100 g\" with a small grey tag \"3 sig figs (from 1.00 g mL-1)\". On \"five point two\" underlines on \"20.6 °C\" and \"25.8 °C\". Row 3: \"ΔT = 25.8 - 20.6 = 5.2 °C\". Rail row \"Substitute\" lights. Row 4: \"q = 100 g × 4.18 J g-1 °C-1 × 5.2 °C\" (margin \"S\"), the three unit chips cancelling to \"J\" with a small strike on each matched unit. Underline on \"4.18 J g-1 °C-1\". On \"kilojoules\" row 5: \"= 2173.6 J = 2.1736 kJ\" (margin \"S\"); tick, \"1 / 4\"; a kept chip \"q = 2.1736 kJ\" lifts to the side. On \"Keep every digit\" a small grey tag \"not rounded yet\". Bright: the current row, its underline on the card, the kept chip. Earlier rows dim.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Mark underline"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-2": [
+        "new",
+        "Rows 1 to 5 collapse to the kept chip \"q = 2.1736 kJ\".",
+        "Step-2 (moles): Step two, the moles of water.",
+        "runs out first / why",
+        "On the spoken cues: New rows: \"n(HCl) = cV = 0.800 mol L-1 × 0.0600 L = 0.0480 mol\" (underlines on \"60.0 mL\" and \"0.800 mol L-1\"; a `UnitChip` converts \"60.0 mL → 0.0600 L\"). \"n(NaOH) = 1.00 mol L-1 × 0.0400 L = 0.0400 mol\" (underlines on \"40.0 mL\" and \"1.00 mol L-1\"). On \"runs out first\" C03's two-bar comparison draws small at the side (teal H+ bar 0.0480, violet OH- bar 0.0400; the violet bar ends first). Row: \"NaOH runs out first,",
+        "explain",
+        "Rows 1 to 5 collapse to the kept chip \"q = 2.1736 kJ\". New rows: \"n(HCl) = cV = 0.800 mol L-1 × 0.0600 L = 0.0480 mol\" (underlines on \"60.0 mL\" and \"0.800 mol L-1\"; a `UnitChip` converts \"60.0 mL → 0.0600 L\"). \"n(NaOH) = 1.00 mol L-1 × 0.0400 L = 0.0400 mol\" (underlines on \"40.0 mL\" and \"1.00 mol L-1\"). On \"runs out first\" C03's two-bar comparison draws small at the side (teal H+ bar 0.0480, violet OH- bar 0.0400; the violet bar ends first). Row: \"NaOH runs out first, so n(H2O) = 0.0400 mol\". Tick, \"2 / 4\"; kept chip \"n = 0.0400 mol\". On \"why\" the stated reason (\"NaOH runs out first\") takes an amber underline and a margin tag \"choice stated\".",
+        [
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Settle about 1 second"
+    ],
+    "step-3": [
+        "new",
+        "Rail row \"Solve\" lights.",
+        "Step-3 (answer and check): Step three: divide, then add the sign.",
+        "rose / fifty four / heat loss",
+        "On the spoken cues: The two kept chips slide into the row \"ΔH = -q / n = -2.1736 kJ ÷ 0.0400 mol = -54.34 kJ mol-1\" (margin \"S\"). On \"rose\" the cup's readout arrow pulses up, and the minus sign writes in teal. Tick on the ΔH = -q / n line (applied, with sign and unit), \"3 / 4\". On \"fifty four\" the final line boxes: \"ΔH = -54 kJ mol-1\". Tick, \"4 / 4\" (correct value to two significant figures). Grey label \"HSCScience marking guide",
+        "explain",
+        "Rail row \"Solve\" lights. The two kept chips slide into the row \"ΔH = -q / n = -2.1736 kJ ÷ 0.0400 mol = -54.34 kJ mol-1\" (margin \"S\"). On \"rose\" the cup's readout arrow pulses up, and the minus sign writes in teal. Tick on the ΔH = -q / n line (applied, with sign and unit), \"3 / 4\". On \"fifty four\" the final line boxes: \"ΔH = -54 kJ mol-1\". Tick, \"4 / 4\" (correct value to two significant figures). Grey label \"HSCScience marking guide (illustrative)\". Rail row \"Sense check\" lights. `SenseGauge` draws in the side column: reference tick \"about -57 (C03)\"; the needle settles at -54 inside the green zone \"a little less negative\". On \"heat loss\" small orange arrows leave through the cup plate's wall and lid gap; tag \"heat lost, so ΔT a little low\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "sig-figs": [
+        "new",
+        "The working column dims except the boxed answer.",
+        "Sig-figs: Why fifty four, and not fifty four point three?",
+        "subtraction / two",
+        "On the spoken cues: `SigFigLens` moves along a row of the data values: \"60.0\" (3), \"0.800\" (3), \"1.00\" (3), \"4.18\" (3); the leading zero in \"0.800\" greys with a tag \"leading zeros don't count\". On \"subtraction\" \"25.8 - 20.6\" writes with the decimal places aligned; on \"two\" the lens shows \"5.2\" with two amber digits. Chip: \"÷ or ×: fewest significant figures; + or -: fewest decimal places\". \"-54.34\" rounds to \"-54\" with a pen ring on",
+        "explain",
+        "The working column dims except the boxed answer. `SigFigLens` moves along a row of the data values: \"60.0\" (3), \"0.800\" (3), \"1.00\" (3), \"4.18\" (3); the leading zero in \"0.800\" greys with a tag \"leading zeros don't count\". On \"subtraction\" \"25.8 - 20.6\" writes with the decimal places aligned; on \"two\" the lens shows \"5.2\" with two amber digits. Chip: \"÷ or ×: fewest significant figures; + or -: fewest decimal places\". \"-54.34\" rounds to \"-54\" with a pen ring on the \"5.2\" chip and a link arrow. Before \"Exact numbers\" the lens row and the rule chip dim. On \"Exact numbers\" a grey chip \"exact: counts, mole ratios, 1000 mL = 1 L (never limit)\". (The pH decimal-places chip moves to feedback 1, where it is used.) On \"two\" (second cue) the exact-numbers chip dims and a three-rung `BandLadder` draws: \"3: correct calculations, with correct significant figures\"; \"2: substantially correct, OR correct with incorrect significant figures\"; \"1: some relevant information\". The \"incorrect significant figures\" phrase takes an amber underline. `GreyTag`: \"a NESA Chemistry marking guideline, 2025 (3 marks)\". A second grey tag: \"also named in other criteria: 2021, 2022, 2023, 2024 (one question each)\". At most three bright items at any moment: the lens value, the rule chip, then (after both dim) the exact-numbers chip, then the ladder rung.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "Cam lens zoom",
+            "DrawPath"
+        ],
+        "Settle about 1 second"
+    ],
+    "round-once": [
+        "new",
+        "Two short columns side by side: left \"q = 2.1736 kJ → -54.34 → -54 kJ mol-1\" (tick); right \"q ≈ 2.2 kJ → -55.0 → -55 kJ mol-1\" with the \"2.2\" ringed red and a tag \"rounded too early\".",
+        "Round-once: And round only once.",
+        "fifty five / last line / range / reading",
+        "On the spoken cues: On \"fifty five\" the right column's answer flashes and a red scribble cross lands on \"2.2\". On \"last line\" a small grey sample-answer strip writes (coded, not a scan): \"a 2022 sample answer: 0.026362 → 0.052724 → 2.9446 → 68.163% → 68.2%\". Only the digit tails light, and amber lands on the last line only. Tag: \"a different question: watch the digits, not the chemistry\". `GreyTag`: \"a NESA sample answer, Chemistry",
+        "explain",
+        "Two short columns side by side: left \"q = 2.1736 kJ → -54.34 → -54 kJ mol-1\" (tick); right \"q ≈ 2.2 kJ → -55.0 → -55 kJ mol-1\" with the \"2.2\" ringed red and a tag \"rounded too early\". On \"fifty five\" the right column's answer flashes and a red scribble cross lands on \"2.2\". On \"last line\" a small grey sample-answer strip writes (coded, not a scan): \"a 2022 sample answer: 0.026362 → 0.052724 → 2.9446 → 68.163% → 68.2%\". Only the digit tails light, and amber lands on the last line only. Tag: \"a different question: watch the digits, not the chemistry\". `GreyTag`: \"a NESA sample answer, Chemistry 2022 (sample answers guide, they are not model answers)\". On \"range\" a coded graph sketch draws (two axes, a line, a reading dropped to the axis) with a short bracket on the axis: \"accepted range of readings\". `GreyTag`: \"a NESA Chemistry marking guideline, 2021 (2 marks)\". On \"reading\" the bracket stays and a small chip writes under it: \"the range covers reading the graph; your arithmetic still rounds once, to the right figures\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "working-when-wrong": [
+        "new",
+        "`WeakStrongPanel`: left \"Answer A\": one line, \"ΔH = -45 kJ mol-1\".",
+        "Working-when-wrong: Now suppose you slip.",
+        "nothing / two / main steps / question by question / visible / sense check",
+        "On the spoken cues: Right \"Answer B\": the full column with the slip: \"q = mcΔT\"; \"q = 100 g × 4.18 J g-1 °C-1 × 5.2 °C = 2.1736 kJ\"; \"n(HCl) = 0.0480 mol\" (ringed red, tag \"used the excess reactant\"); \"ΔH = -q ÷ n = -2.1736 kJ ÷ 0.0480 mol = -45 kJ mol-1\". On \"nothing\" Answer A's counter \"0 / 4\". On \"two\" Answer B's margin ticks land beside the q lines (\"q, with units\") and the ΔH = -q ÷ n line (\"ΔH = -q ÷ n, sign and unit\"); counter",
+        "explain",
+        "`WeakStrongPanel`: left \"Answer A\": one line, \"ΔH = -45 kJ mol-1\". Right \"Answer B\": the full column with the slip: \"q = mcΔT\"; \"q = 100 g × 4.18 J g-1 °C-1 × 5.2 °C = 2.1736 kJ\"; \"n(HCl) = 0.0480 mol\" (ringed red, tag \"used the excess reactant\"); \"ΔH = -q ÷ n = -2.1736 kJ ÷ 0.0480 mol = -45 kJ mol-1\". On \"nothing\" Answer A's counter \"0 / 4\". On \"two\" Answer B's margin ticks land beside the q lines (\"q, with units\") and the ΔH = -q ÷ n line (\"ΔH = -q ÷ n, sign and unit\"); counter \"2 / 4\". Grey label \"HSCScience marking guide (illustrative)\". `LostMarksTag` on B: \"-2: wrong moles of water, so wrong value\". On \"main steps\" the panel dims and a four-rung `BandLadder` draws on its own: \"4: correct answer\"; \"3: the main steps of the calculation\"; \"2: some relevant steps of the calculation\"; \"1: some relevant information\". `GreyTag`: \"a NESA Chemistry marking guideline, 2021 (4 marks)\". Neither answer is placed on the ladder. On \"question by question\" a grey chip: \"no general carried-forward rule in the published guidelines\". On \"visible\" Answer B's lines brighten again. On \"sense check\" the `SenseGauge` returns small: the needle at -45 lands outside the green zone; tag \"recheck: which reactant ran out?\". Answer B's ringed line pulses. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-1": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Do the one in your subject,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text: \"0.200 g of sodium hydroxide is dissolved in water and the solution is made up to 250.0 mL in a volumetric flask at 25 °C.\" \"Calculate the pH of this solution.\" \"(3 marks)\" `m6-volumetric-flask-v1.png` small at the right with a coded label \"250.0 mL\". Nothing answer-bearing. Empty answer box, counter \"0 / 3\". `StepRail` mini at the side (all rows unlit). `DrillCountdown` 10 seconds with \"Pause here to answer.\" `RoutineStrip` dims.",
+        [
+            "HandText write-on",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "Annotations land fast: highlighter on \"Calculate\", ring on \"(3 marks)\", underlines on \"0.200 g\", \"250.0 mL\" and \"25 °C\" as each is used.",
+        "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "one point six nine nine / twelve point three zero one / three decimal places / above seven / twelve point three",
+        "On the spoken cues: Rows write with step letters and ticks: \"n(NaOH) = m / M = 0.200 g ÷ 40.00 g mol-1 = 5.00 × 10^-3 mol\" (E then S). Tick, \"1 / 3\". \"[OH-] = n / V = 5.00 × 10^-3 mol ÷ 0.2500 L = 0.0200 mol L-1\" (`UnitChip` \"250.0 mL → 0.2500 L\"). Tick, \"2 / 3\". \"pOH = -log(0.0200) = 1.699; pH = 14.00 - 1.699 = 12.301\". Tick, \"3 / 3\". A grey tag hangs from \"14.00\": \"14.00 at 25 °C: treated as exact here (C07)\" (Revision 2, blocker",
+        "explain",
+        "Annotations land fast: highlighter on \"Calculate\", ring on \"(3 marks)\", underlines on \"0.200 g\", \"250.0 mL\" and \"25 °C\" as each is used. Rows write with step letters and ticks: \"n(NaOH) = m / M = 0.200 g ÷ 40.00 g mol-1 = 5.00 × 10^-3 mol\" (E then S). Tick, \"1 / 3\". \"[OH-] = n / V = 5.00 × 10^-3 mol ÷ 0.2500 L = 0.0200 mol L-1\" (`UnitChip` \"250.0 mL → 0.2500 L\"). Tick, \"2 / 3\". \"pOH = -log(0.0200) = 1.699; pH = 14.00 - 1.699 = 12.301\". Tick, \"3 / 3\". A grey tag hangs from \"14.00\": \"14.00 at 25 °C: treated as exact here (C07)\" (Revision 2, blocker fix: it stops the scene 8 subtraction rule from reading as 12.30). On \"three decimal places\" `SigFigLens` lights the three figures of \"0.0200\" and the three decimals of \"12.301\", joined by an amber link. A small grey chip (moved from scene 8): \"pH: decimal places = sig figs in [OH-] or [H3O+] (C07)\". Earlier rows dim, so the bright items are the pH line, the lens link and the chip. On \"above seven\" a short pH track 0 to 14 draws with a dot at 12.301 on the basic side. On \"twelve point three\" a `CrossedHabit` chip \"pH = 12.3\" takes a red scribble cross. Caption \"three sig figs in [OH-] → three decimal places\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "Cam lens zoom",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-2": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Now Biology. Two hundred and fifty bearded dragons",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\". Card text: \"A sample of 250 central bearded dragons was genotyped at one single nucleotide polymorphism (SNP) with two alleles, C and T.\" Table: \"Genotype | Number of dragons\"; \"CC | 90\"; \"CT | 110\"; \"TT | 50\". \"Calculate the frequency of the T allele in this sample.\" \"(2 marks)\" `b2-desert-lizard-v2.png` small at the right, cropped to the dragon (the egg cut-away below the sand line is masked off), tag \"central bearded dragon\". Nothing answer-bearing. Empty answer box, counter \"0 / 2\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims.",
+        [
+            "HandText write-on",
+            "table build",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "Annotations land fast: highlighter on \"Calculate\", ring on \"(2 marks)\", underlines on \"250\", \"CT | 110\" and \"TT | 50\" as each is used.",
+        "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "five hundred / zero point four two / exact / one / counts dragons",
+        "On the spoken cues: Rows write with step letters and ticks: \"frequency of T = T alleles ÷ all alleles\" (E). \"all alleles = 2 × 250 = 500; T alleles = 110 + (2 × 50) = 210\" (S). Tick, \"1 / 2\". \"f(T) = 210 ÷ 500 = 0.42 (42%)\" (S). Tick, \"2 / 2\". On \"exact\" a grey chip \"counts are exact: they don't limit the figures; 210 ÷ 500 = 0.42 exactly\". On \"one\" the C count writes first as an independent check, \"C: (2 × 90 + 110) ÷ 500 = 0.58\",",
+        "explain",
+        "Annotations land fast: highlighter on \"Calculate\", ring on \"(2 marks)\", underlines on \"250\", \"CT | 110\" and \"TT | 50\" as each is used. Rows write with step letters and ticks: \"frequency of T = T alleles ÷ all alleles\" (E). \"all alleles = 2 × 250 = 500; T alleles = 110 + (2 × 50) = 210\" (S). Tick, \"1 / 2\". \"f(T) = 210 ÷ 500 = 0.42 (42%)\" (S). Tick, \"2 / 2\". On \"exact\" a grey chip \"counts are exact: they don't limit the figures; 210 ÷ 500 = 0.42 exactly\". On \"one\" the C count writes first as an independent check, \"C: (2 × 90 + 110) ÷ 500 = 0.58\", then a short two-part bar draws: \"C 0.58\" and \"T 0.42\", summing to \"1.00\" (sense check). The \"five hundred\" cue is retimed from the recording (it now falls in the first sentence). On \"counts dragons\" a `CrossedHabit` chip \"50 ÷ 250 = 0.20\" takes a red scribble cross. Caption \"count alleles, not individuals (B11)\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "`StepRail` returns full size as the decision board, each row lighting on its cue with a one-line example from the worked question: \"q = mcΔT\"; \"100 g × 4.18 J g-1 °C-1 × 5.2 °C; NaOH runs out first\"; \"-54.34 → -54 kJ mol-1 (ΔT: 2 sig figs)\"; \"about -57: a little less negative, heat loss\".",
+        "Decision-rule: So, every time you see calculate.",
+        "equation / Substitute / Solve / sense check / Next",
+        "On the spoken cues: Memory aid small under the rail: \"One E and three S's\". On \"Next\" a chip slides in: \"Next: graphs and data questions\". A small axes doodle sits beside it.",
+        "explain",
+        "`StepRail` returns full size as the decision board, each row lighting on its cue with a one-line example from the worked question: \"q = mcΔT\"; \"100 g × 4.18 J g-1 °C-1 × 5.2 °C; NaOH runs out first\"; \"-54.34 → -54 kJ mol-1 (ΔT: 2 sig figs)\"; \"about -57: a little less negative, heat loss\". Memory aid small under the rail: \"One E and three S's\". On \"Next\" a chip slides in: \"Next: graphs and data questions\". A small axes doodle sits beside it. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 50 seconds with pause invitation"
+    ]
+}
+
+M7C01_ROWS = {
+    "hook": [
+        "adjust",
+        "`m7-camping-gas-burner-v1.png` centre-right, medium, flame flickering gently (coded flicker on the plate's flame region only).",
+        "Hook (a name is a set of instructions): The canister under this camping stove holds butane, often mixed with propane.",
+        "butane / three-methylpent-one-ene",
+        "On the spoken cues: On \"butane\" a coded tag on the canister writes \"butane\", then splits into two coloured pieces, \"but\" (pale blue) and \"ane\" (teal), each with a tiny caption: \"4 carbons\", \"single bonds only\"; a skeletal butane zigzag draws beside the tag. On \"three-methylpent-one-ene\" the plate slides small to the right and the name writes large centre, its parts in the name-builder colours: \"3-methyl\" amber, \"pent\" pale blue,",
+        "explain",
+        "`m7-camping-gas-burner-v1.png` centre-right, medium, flame flickering gently (coded flicker on the plate's flame region only). On \"butane\" a coded tag on the canister writes \"butane\", then splits into two coloured pieces, \"but\" (pale blue) and \"ane\" (teal), each with a tiny caption: \"4 carbons\", \"single bonds only\"; a skeletal butane zigzag draws beside the tag. On \"three-methylpent-one-ene\" the plate slides small to the right and the name writes large centre, its parts in the name-builder colours: \"3-methyl\" amber, \"pent\" pale blue, \"-1-ene\" teal; three faint arrows point from the parts to a blank structure board with a \"?\". Heading: \"How do we name and draw a carbon chain?\". The butane tag and captions dim when their sentence ends. Bright at the end: the heading, the coloured name and the \"?\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "four-bonds": [
+        "new",
+        "the board clears.",
+        "Carbon's four bonds, chains and branches: You know from Year 11 that carbon has four valence electrons, so each carbon forms four covalent bonds.",
+        "four / chains / branches / zigzag",
+        "On the spoken cues: On \"four\" one carbon draws with four bond lines and four grey H atoms (tag \"4 bonds per carbon\", Year 11 chip \"from Year 11\" small). On \"chains\" carbons join one by one into a four-carbon chain, H atoms rearranging so every carbon keeps four bonds. On \"branches\" a fifth carbon attaches to the second carbon as an amber branch (tag \"branch\"). On \"zigzag\" the flat drawing lifts into the ink ball-and-stick of butane",
+        "explain",
+        "the board clears. On \"four\" one carbon draws with four bond lines and four grey H atoms (tag \"4 bonds per carbon\", Year 11 chip \"from Year 11\" small). On \"chains\" carbons join one by one into a four-carbon chain, H atoms rearranging so every carbon keeps four bonds. On \"branches\" a fifth carbon attaches to the second carbon as an amber branch (tag \"branch\"). On \"zigzag\" the flat drawing lifts into the ink ball-and-stick of butane (ported engine3d math, paper-toned atoms, ink bonds), which turns slowly through about 60° so the zigzag is visible, then flattens back to a zigzag line (tag \"real chains zigzag\"). No bond angles labelled. Bright at the end: the zigzag and its tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "three-drawings": [
+        "new",
+        "task line \"Butane, three ways\".",
+        "Three ways to draw a chain: There are three common ways to draw a chain.",
+        "full structural formula / condensed formula / skeletal formula / four bonds",
+        "On the spoken cues: On \"full structural formula\" butane draws in full (four C, ten H, every line); tag \"every atom, every bond\". On \"condensed formula\" the structure board morphs: each carbon's hydrogens slide in beside it to read \"CH₃CH₂CH₂CH₃\" (tag \"carbons with their hydrogens\"; the full drawing dims to a small kept thumbnail at the left). On \"skeletal formula\" the condensed line morphs into a zigzag of three strokes; the carbons",
+        "explain",
+        "task line \"Butane, three ways\". On \"full structural formula\" butane draws in full (four C, ten H, every line); tag \"every atom, every bond\". On \"condensed formula\" the structure board morphs: each carbon's hydrogens slide in beside it to read \"CH₃CH₂CH₂CH₃\" (tag \"carbons with their hydrogens\"; the full drawing dims to a small kept thumbnail at the left). On \"skeletal formula\" the condensed line morphs into a zigzag of three strokes; the carbons shrink into the corners and ends (tag \"corners and ends = carbons\"). On \"four bonds\" the implied-H counter runs: grey H ghosts appear on the left end carbon (three) and the next corner (two), each ghost ticking a \"bonds: 4\" chip, then fade; on \"branch joins\" a one-stroke branch grows from the second corner and that corner's ghosts drop to one (tag \"branch point: 1 H\", dims), then the branch retracts. Bright at the end: the skeletal zigzag, the H ghosts and the \"bonds: 4\" chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "rule-stem": [
+        "new",
+        "the board clears.",
+        "Rule 1: the stem counts the carbons: Now the naming rules, one at a time.",
+        "Meth / Monkeys Eat Peeled Bananas / pent",
+        "On the spoken cues: Rule chip \"Rule 1 of 5: the stem counts carbons\". A stem ladder writes down the left, each line lighting on its word and then dimming: \"meth 1\", \"eth 2\", \"prop 3\", \"but 4\". On \"Monkeys Eat Peeled Bananas\" the mnemonic writes handwritten beside the first four, its initials (M, E, P, B) underlined in pale blue. On \"pent\" small coded outlines draw beside \"pent 5\" (a pentagon), \"hex 6\" (a hexagon), \"hept 7\" (a heptagon)",
+        "explain",
+        "the board clears. Rule chip \"Rule 1 of 5: the stem counts carbons\". A stem ladder writes down the left, each line lighting on its word and then dimming: \"meth 1\", \"eth 2\", \"prop 3\", \"but 4\". On \"Monkeys Eat Peeled Bananas\" the mnemonic writes handwritten beside the first four, its initials (M, E, P, B) underlined in pale blue. On \"pent\" small coded outlines draw beside \"pent 5\" (a pentagon), \"hex 6\" (a hexagon), \"hept 7\" (a heptagon) and \"oct 8\" (an octagon) as each word is spoken; each earlier pair dims. The name builder appears at the bottom with its \"stem\" slot glowing. Bright at the end: the mnemonic, \"oct 8\" with its octagon, and the glowing slot. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "rule-ending": [
+        "new",
+        "rule chip \"Rule 2 of 5: the ending shows the bonds\".",
+        "Rule 2: the ending shows the bonds: Rule two: the ending tells you the bonds between carbons.",
+        "Ane / Ene / yne / a, e and y",
+        "On the spoken cues: Three short two-carbon skeletons draw in a column, each lighting on its word: on \"Ane\" \"C–C\" (ink) with tag \"-ane: single bonds only = saturated (full of H)\"; on \"Ene\" \"C=C\" (teal) with tag \"-ene: a C=C double bond\"; on \"yne\" \"C≡C\" (teal) with tag \"-yne: a C≡C triple bond\"; on \"unsaturated\" a bracket groups the lower two, \"unsaturated\". Earlier tags dim as each new one lights. On \"a, e and y\" the three endings'",
+        "explain",
+        "rule chip \"Rule 2 of 5: the ending shows the bonds\". Three short two-carbon skeletons draw in a column, each lighting on its word: on \"Ane\" \"C–C\" (ink) with tag \"-ane: single bonds only = saturated (full of H)\"; on \"Ene\" \"C=C\" (teal) with tag \"-ene: a C=C double bond\"; on \"yne\" \"C≡C\" (teal) with tag \"-yne: a C≡C triple bond\"; on \"unsaturated\" a bracket groups the lower two, \"unsaturated\". Earlier tags dim as each new one lights. On \"a, e and y\" the three endings' first letters scale up and line up with \"1, 2, 3 bonds\" (memory aid, handwritten: \"a, e, y: 1, 2, 3 bonds\"). The name builder's \"ending\" slot glows. Bright at the end: the aid, the bracket and the slot. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "rule-longest-chain": [
+        "new",
+        "the board clears.",
+        "Rule 3: the longest chain, even round a bend: Rule three: find the longest continuous chain of carbons.",
+        "longest / bend / five",
+        "On the spoken cues: Rule chip \"Rule 3 of 5: longest chain (it can bend)\". The structure board draws a condensed-style skeleton with labelled carbons: four carbons in a horizontal row, with a two-carbon branch hanging down from the second carbon (this is CH₃CH₂CH(CH₃)CH₂CH₃ drawn in its misleading form). On \"longest\" the chain tracer runs along the horizontal row in grey and its tally reads \"4\"; a grey tag \"2-ethylbutane?\" writes",
+        "explain",
+        "the board clears. Rule chip \"Rule 3 of 5: longest chain (it can bend)\". The structure board draws a condensed-style skeleton with labelled carbons: four carbons in a horizontal row, with a two-carbon branch hanging down from the second carbon (this is CH₃CH₂CH(CH₃)CH₂CH₃ drawn in its misleading form). On \"longest\" the chain tracer runs along the horizontal row in grey and its tally reads \"4\"; a grey tag \"2-ethylbutane?\" writes (dims). On \"bend\" nothing changes yet but the hanging branch pulses. On \"five\" the tracer starts at the end of the hanging branch, turns up into the row and runs right, painting the path pale blue; the tally reads \"5\"; the leftover carbon (the row's left end) turns amber, tag \"branch: 1 carbon\". The name builder fills its stem slot \"pent\" and its ending \"ane\". Bright at the end: the pale blue five-carbon path, the amber branch and the builder. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "rule-number": [
+        "new",
+        "rule chip \"Rule 4 of 5: number from the nearer end\".",
+        "Branch names and rule 4: number from the nearer end: A branch is named from its carbons, with yl on the end: one carbon is methyl, two is ethyl.",
+        "methyl / nearer / three-methylpentane / two / wrong end",
+        "On the spoken cues: The scene 6 molecule redraws as a straight pale blue five-carbon chain with the amber methyl on the middle carbon. On \"methyl\" a small tag \"CH₃ = methyl, C₂H₅ = ethyl (-yl = a branch)\" writes, then dims fully at the end of its sentence, before the locant counter runs (learning M2). On \"nearer\" the locant counter pops 1 to 5 from the left, then from the right; both put \"3\" under the branch (tag \"locant = which",
+        "explain",
+        "rule chip \"Rule 4 of 5: number from the nearer end\". The scene 6 molecule redraws as a straight pale blue five-carbon chain with the amber methyl on the middle carbon. On \"methyl\" a small tag \"CH₃ = methyl, C₂H₅ = ethyl (-yl = a branch)\" writes, then dims fully at the end of its sentence, before the locant counter runs (learning M2). On \"nearer\" the locant counter pops 1 to 5 from the left, then from the right; both put \"3\" under the branch (tag \"locant = which carbon\"). On \"three-methylpentane\" the builder's branch slot fills \"3-methyl\", giving \"3-methylpentane\" (answer chip). The molecule leaves; a four-carbon chain draws with an amber methyl on the second carbon from the left (CH₃CH(CH₃)CH₂CH₃). On \"two\" the locant counter pops from the left, \"2\" under the branch; the builder reads \"2-methylbutane\". On \"wrong end\" a ghost set of numbers pops from the right (\"3\" under the branch) and a chip \"3-methylbutane\" fades in and is crossed (caption \"lowest locant: count from the nearer end\"). Bright at the end: the chain with its left-end numbers, the builder and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "rule-several-branches": [
+        "new",
+        "rule chip \"Rule 5 of 5: several branches\".",
+        "Rule 5: more than one branch: Rule five covers more than one branch.",
+        "di / alphabetical / three-ethyl-two-methylpentane",
+        "On the spoken cues: A pale blue five-carbon chain draws with amber methyls on carbons 2 and 3 (CH₃CH(CH₃)CH(CH₃)CH₂CH₃). On \"di\" the builder writes \"2,3-dimethyl\" + \"pent\" + \"ane\", the comma and the hyphen briefly circled (tags \"comma between numbers\", \"hyphen: number to word\", both dim). The molecule leaves; a new pale blue five-carbon chain draws with an amber methyl on carbon 2 and an amber two-carbon ethyl on carbon 3",
+        "explain",
+        "rule chip \"Rule 5 of 5: several branches\". A pale blue five-carbon chain draws with amber methyls on carbons 2 and 3 (CH₃CH(CH₃)CH(CH₃)CH₂CH₃). On \"di\" the builder writes \"2,3-dimethyl\" + \"pent\" + \"ane\", the comma and the hyphen briefly circled (tags \"comma between numbers\", \"hyphen: number to word\", both dim). The molecule leaves; a new pale blue five-carbon chain draws with an amber methyl on carbon 2 and an amber two-carbon ethyl on carbon 3 (CH₃CH(CH₃)CH(C₂H₅)CH₂CH₃), locants popping from the left. On \"alphabetical\" two cards \"ethyl\" and \"methyl\" sort themselves, \"e\" and \"m\" underlined. On \"three-ethyl-two-methylpentane\" the builder fills \"3-ethyl-2-methyl\" + \"pent\" + \"ane\" (answer chip); a small grey chip \"methyl first because 2 < 3?\" fades in and dims (said positively, not crossed). Bright at the end: the molecule, the sorted cards and the builder. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "multiple-bonds": [
+        "new",
+        "the board clears.",
+        "Double and triple bonds: Double and triple bonds add one more step.",
+        "contain / but-one-ene / two / but-two-ene / one",
+        "On the spoken cues: Rule chip \"Double or triple bond: in the main chain, lowest number\". A four-carbon skeletal chain draws with a teal double bond at the left end (CH₂=CHCH₂CH₃). On \"contain\" the tracer paints the main chain through both double-bond carbons (tag \"the C=C must be in the main chain\", dims). The locant counter pops from the left; the builder fills \"but\" + \"-1-ene\", the \"1\" lifting to sit before \"ene\" (tag \"locant before",
+        "explain",
+        "the board clears. Rule chip \"Double or triple bond: in the main chain, lowest number\". A four-carbon skeletal chain draws with a teal double bond at the left end (CH₂=CHCH₂CH₃). On \"contain\" the tracer paints the main chain through both double-bond carbons (tag \"the C=C must be in the main chain\", dims). The locant counter pops from the left; the builder fills \"but\" + \"-1-ene\", the \"1\" lifting to sit before \"ene\" (tag \"locant before the ending\", dims). On \"two\" the implied-H counter runs on but-1-ene: the end C=C carbon gets two grey H ghosts, the next C=C carbon one, the other carbons two and three as in scene 3, each ghost ticking the \"bonds: 4\" chip (tag \"C=C: one fewer H on each carbon\"); the ghosts fade and the tag dims before the bond moves. On \"but-two-ene\" the teal double bond slides to the middle of the chain (CH₃CH=CHCH₃), numbers pop from either end giving \"2\", and the builder reads \"but-2-ene\". On \"one\" two small structures draw at the side, ethene (CH₂=CH₂) and propene (CH₂=CHCH₃), with the tag \"only one place: no number\". Bright at the end: but-2-ene, its builder and the side tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "bond-wins": [
+        "new",
+        "the board clears.",
+        "The multiple bond wins the numbering: What if there's a branch as well?",
+        "wins / four-methylpent-one-ene / wrong / pent-two-yne",
+        "On the spoken cues: A five-carbon skeletal chain draws with a teal double bond at the left end and an amber methyl on the fourth carbon from the left (CH₂=CHCH₂CH(CH₃)CH₃). On \"wins\" the double bond pulses (tag \"multiple bond first, then branches\"). The locant counter pops from the left: \"1\" under the double bond, \"4\" under the methyl; on \"four-methylpent-one-ene\" the builder fills \"4-methyl\" + \"pent\" + \"-1-ene\" (answer chip). On",
+        "explain",
+        "the board clears. A five-carbon skeletal chain draws with a teal double bond at the left end and an amber methyl on the fourth carbon from the left (CH₂=CHCH₂CH(CH₃)CH₃). On \"wins\" the double bond pulses (tag \"multiple bond first, then branches\"). The locant counter pops from the left: \"1\" under the double bond, \"4\" under the methyl; on \"four-methylpent-one-ene\" the builder fills \"4-methyl\" + \"pent\" + \"-1-ene\" (answer chip). On \"wrong\" ghost numbers pop from the right (\"2\" under the methyl, \"4\" under the double bond) and a chip \"2-methylpent-4-ene\" fades in and is crossed (caption \"the C=C gets the lowest number\"). The molecule leaves; on \"pent-two-yne\" a five-carbon chain draws with a teal triple bond between carbons 2 and 3, drawn straight through the triple bond (CH₃C≡CCH₂CH₃), and the builder reads \"pent-2-yne\". Bright at the end: pent-2-yne, the builder and the crossed chip (dimmed). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "name-to-structure": [
+        "new",
+        "the board clears.",
+        "Reading a name back into a molecule: Names work backwards too.",
+        "five / two / seven / short",
+        "On the spoken cues: Task line \"Draw 2,2-dimethylpentane\". The name writes in the builder, coloured by part. On \"five\" the \"pent\" slot lights and a pale blue five-carbon chain draws in full structural style (carbons only, numbered 1 to 5). On \"two\" the \"2,2-dimethyl\" slot lights and two amber CH₃ groups attach to carbon 2, one above and one below. On \"four bonds\" grey H atoms fill in around every carbon (carbon 2 gets none, tag \"C2:",
+        "explain",
+        "the board clears. Task line \"Draw 2,2-dimethylpentane\". The name writes in the builder, coloured by part. On \"five\" the \"pent\" slot lights and a pale blue five-carbon chain draws in full structural style (carbons only, numbered 1 to 5). On \"two\" the \"2,2-dimethyl\" slot lights and two amber CH₃ groups attach to carbon 2, one above and one below. On \"four bonds\" grey H atoms fill in around every carbon (carbon 2 gets none, tag \"C2: four carbons, no H\"; the implied-H counter ticks each carbon to four). On \"seven\" a count strip writes \"C: 5 + 2 = 7; H: 16 → C₇H₁₆\" (answer chip). On \"short\" a chip \"C₆H₁₄\" fades in and is crossed (caption \"count every branch\"). Bright at the end: the full structure, the C₇H₁₆ chip and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, to name a chain: find the longest chain that holds any double or triple bond.",
+        "lowest / branches, stem, ending",
+        "On the spoken cues: Three short lines write, handwritten, each lighting on its words and earlier ones dimming slightly: \"1 Longest chain (with the C=C or C≡C)\", \"2 Lowest numbers: multiple bond first, then branches\", \"3 Write: branches (a to z) + stem + ending\". On \"branches, stem, ending\" the name builder strip slides up large under the lines, its three slots labelled \"branches\", \"stem\", \"ending\", and the hook's name",
+        "explain",
+        "the board clears. Three short lines write, handwritten, each lighting on its words and earlier ones dimming slightly: \"1 Longest chain (with the C=C or C≡C)\", \"2 Lowest numbers: multiple bond first, then branches\", \"3 Write: branches (a to z) + stem + ending\". On \"branches, stem, ending\" the name builder strip slides up large under the lines, its three slots labelled \"branches\", \"stem\", \"ending\", and the hook's name \"3-methylpent-1-ene\" drops into the slots, coloured; a small structure of it draws beside (CH₂=CHCH(CH₃)CH₂CH₃), answering the hook's \"?\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Give the IUPAC name and the",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"The skeletal formula of a hydrocarbon is shown. Give its IUPAC name and its molecular formula.\" Beside it the skeletal formula of 5-methylhex-2-ene, drawn in plain ink (no colours, no numbers, no tracer): a six-carbon zigzag with a double bond between the second and third carbons from the left and a one-stroke methyl branch on the fifth carbon. The full question and structure stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no rule chips, no builder, no aid.",
+        [
+            "chip pop",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "six / two / five-methylhex-two-ene / one hydrogen / C seven H fourteen / wins",
+        "On the spoken cues: On \"six\" the tracer paints the six-carbon chain pale blue, the double bond teal and the methyl amber; \"hydrocarbon\" and \"skeletal formula\" are underlined. On \"two\" the locant counter pops from the left: \"2\" at the double bond, \"5\" at the methyl. On \"five-methylhex-two-ene\" the builder fills \"5-methyl\" + \"hex\" + \"-2-ene\" and \"IUPAC name\" is underlined; on \"one hydrogen\" the implied-H counter shows one grey H ghost on",
+        "explain",
+        "the card stays, shrunk to the top. On \"six\" the tracer paints the six-carbon chain pale blue, the double bond teal and the methyl amber; \"hydrocarbon\" and \"skeletal formula\" are underlined. On \"two\" the locant counter pops from the left: \"2\" at the double bond, \"5\" at the methyl. On \"five-methylhex-two-ene\" the builder fills \"5-methyl\" + \"hex\" + \"-2-ene\" and \"IUPAC name\" is underlined; on \"one hydrogen\" the implied-H counter shows one grey H ghost on each C=C carbon (the other ghosts stay faint); on \"C seven H fourteen\" the ghosts fade and \"molecular formula\" is underlined; answer chip \"5-methylhex-2-ene, C₇H₁₄\". On \"wins\" a chip \"2-methylhex-4-ene\" fades in and is crossed (caption \"the C=C gets the lowest number\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student names a hydrocarbon '2-ethylpentane'.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A student names a hydrocarbon two-ethylpentane.",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student names a hydrocarbon '2-ethylpentane'. Explain why this name is incorrect. Give the correct IUPAC name and draw the skeletal formula of the compound.\" No structure is drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card stays, shrunk to the top; \"'2-ethylpentane'\" is underlined.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "six / three / three-methylhexane / wrong end",
+        "On the spoken cues: A five-carbon chain draws with a two-carbon branch on carbon 2, as the student described. On \"six\" the tracer runs from the branch's end through carbon 2 to the far end of the chain, tally \"6\" (tag \"the ethyl is part of the longest chain\"); the leftover carbon turns amber. On \"three\" the chain redraws as a skeletal six-carbon zigzag with an amber methyl, locants popping from the end nearer the branch (\"3\"); \"correct",
+        "explain",
+        "the card stays, shrunk to the top; \"'2-ethylpentane'\" is underlined. A five-carbon chain draws with a two-carbon branch on carbon 2, as the student described. On \"six\" the tracer runs from the branch's end through carbon 2 to the far end of the chain, tally \"6\" (tag \"the ethyl is part of the longest chain\"); the leftover carbon turns amber. On \"three\" the chain redraws as a skeletal six-carbon zigzag with an amber methyl, locants popping from the end nearer the branch (\"3\"); \"correct IUPAC name\" and \"skeletal formula\" are underlined. On \"three-methylhexane\" the builder fills \"3-methyl\" + \"hex\" + \"ane\"; answer chip \"3-methylhexane\". On \"wrong end\" a chip \"4-methylhexane\" fades in and is crossed (caption \"lowest locant\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So a name tells you the chain length, the bonds and every branch, and you can rebuild the molecule from it.",
+        "Next",
+        "On the spoken cues: The name builder strip shows \"branches | stem | ending\" with a tick beside each slot as the first sentence names \"chain length\" (stem), \"bonds\" (ending) and \"every branch\" (branches). On \"C four H ten\" `m7-camping-gas-burner-v1.png` returns small at the right with its \"butane\" tag and the skeletal butane; a molecular formula chip \"C₄H₁₀\" writes and a second, empty structure board appears beside the butane with a",
+        "explain",
+        "the board clears. The name builder strip shows \"branches | stem | ending\" with a tick beside each slot as the first sentence names \"chain length\" (stem), \"bonds\" (ending) and \"every branch\" (branches). On \"C four H ten\" `m7-camping-gas-burner-v1.png` returns small at the right with its \"butane\" tag and the skeletal butane; a molecular formula chip \"C₄H₁₀\" writes and a second, empty structure board appears beside the butane with a \"?\". On \"Next\" a chip \"Next: how can the same formula make different molecules?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C02_ROWS = {
+    "hook": [
+        "adjust",
+        "`m7-ethanol-fuel-bottle-v1.png` small at the left, tag \"ethanol\"; a formula chip \"C₂H₆O\" writes under it.",
+        "Hook (same atoms, different substances): Ethanol, the alcohol in this bottle, has the formula C two H six O.",
+        "Methoxymethane / same / seventy eight / minus twenty five",
+        "On the spoken cues: On \"Methoxymethane\" `m7-aerosol-spray-can-v1.png` slides in small at the right, tag \"methoxymethane\". On \"same\" a second \"C₂H₆O\" chip writes under the can and the atom tally card drops between them, \"C 2, H 6, O 1\", with a tick to each side. On \"seventy eight\" a coded thermometer beside the bottle rises to \"78 °C\" (tag \"boils\"); on \"minus twenty five\" a thermometer beside the can drops below zero to \"about −25 °C\",",
+        "explain",
+        "`m7-ethanol-fuel-bottle-v1.png` small at the left, tag \"ethanol\"; a formula chip \"C₂H₆O\" writes under it. On \"Methoxymethane\" `m7-aerosol-spray-can-v1.png` slides in small at the right, tag \"methoxymethane\". On \"same\" a second \"C₂H₆O\" chip writes under the can and the atom tally card drops between them, \"C 2, H 6, O 1\", with a tick to each side. On \"seventy eight\" a coded thermometer beside the bottle rises to \"78 °C\" (tag \"boils\"); on \"minus twenty five\" a thermometer beside the can drops below zero to \"about −25 °C\", and faint gas wisps rise from the can's nozzle (coded, no hand). Heading: \"How can the same formula make different molecules?\". Bright at the end: the heading, the tally card and the two temperatures. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "formula-vs-structure": [
+        "new",
+        "the plates leave; the tally card \"C 2, H 6, O 1\" stays top centre.",
+        "A formula counts atoms, not how they're joined: A molecular formula only counts the atoms.",
+        "joined / O H / between / structural isomers",
+        "On the spoken cues: On \"joined\" the full structural formulas draw side by side: ethanol (CH₃CH₂OH) on the left, methoxymethane (CH₃OCH₃) on the right, each atom popping in as the tally card ticks off its count. On \"O H\" ethanol's O and H circle red-brown (tag \"O–H group\"). On \"between\" methoxymethane's oxygen circles (tag \"O between two carbons\"). Both structures briefly lift into the ink ball-and-stick (engine3d port) and turn about",
+        "explain",
+        "the plates leave; the tally card \"C 2, H 6, O 1\" stays top centre. On \"joined\" the full structural formulas draw side by side: ethanol (CH₃CH₂OH) on the left, methoxymethane (CH₃OCH₃) on the right, each atom popping in as the tally card ticks off its count. On \"O H\" ethanol's O and H circle red-brown (tag \"O–H group\"). On \"between\" methoxymethane's oxygen circles (tag \"O between two carbons\"). Both structures briefly lift into the ink ball-and-stick (engine3d port) and turn about 40°, then settle flat. On \"structural isomers\" the definition writes under the pair: \"structural isomers: same molecular formula, atoms joined differently\". On \"last video\" a small c01 name-builder thumbnail appears and a tag \"one name → one structure; one formula → several structures\" writes, then dims. Bright at the end: the pair, the tally card and the definition. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "why-arrangement-matters": [
+        "new",
+        "the pair shrinks; each structure is copied three times into a small cluster.",
+        "Why the arrangement matters: And the arrangement changes the properties.",
+        "hydrogen bond / can't / size / three",
+        "On the spoken cues: On \"hydrogen bond\" dotted violet lines link the O–H of one ethanol to the O of the next (Year 11 chip \"from Year 11: H bonded to O, N or F\"). Under the dotted lines a small grey caption writes, \"H on O attracted to the O of the next molecule\", and the Year 11 chip dims as it does; the caption dims at the end of its sentence. On \"can't\" the methoxymethane cluster shows no dotted lines; a grey tag \"no O–H: no hydrogen",
+        "explain",
+        "the pair shrinks; each structure is copied three times into a small cluster. On \"hydrogen bond\" dotted violet lines link the O–H of one ethanol to the O of the next (Year 11 chip \"from Year 11: H bonded to O, N or F\"). Under the dotted lines a small grey caption writes, \"H on O attracted to the O of the next molecule\", and the Year 11 chip dims as it does; the caption dims at the end of its sentence. On \"can't\" the methoxymethane cluster shows no dotted lines; a grey tag \"no O–H: no hydrogen bonds between its molecules\" writes; the two hook temperatures return only as small grey values under the clusters (78 °C, about −25 °C), with no thermometer graphics and no plates (learning S3). On \"size\" a small grey \"C₂H₆O = C₂H₆O\" mark sits between the clusters, then dims. On \"three\" the clusters fade and the what-changed card draws at the right with three blank rows: \"skeleton\", \"position\", \"group\". Bright at the end: the what-changed card (the grey temperature values dimmed). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "chain-isomers": [
+        "adjust",
+        "the tally card writes \"C 4, H 10\".",
+        "Chain isomers: First, chain isomers.",
+        "chain / two-methylpropane / different",
+        "On the spoken cues: On \"chain\" skeletal butane draws on the left (pale blue main chain). The chain shortener runs: the right-end carbon lifts off and docks on the second carbon as an amber branch; on \"two-methylpropane\" the right structure is 2-methylpropane and the builder writes its name under it. The tally card ticks both. The what-changed card: \"skeleton: different\" lights violet, \"position: n/a\", \"group: same (alkane)\"; label",
+        "explain",
+        "the tally card writes \"C 4, H 10\". On \"chain\" skeletal butane draws on the left (pale blue main chain). The chain shortener runs: the right-end carbon lifts off and docks on the second carbon as an amber branch; on \"two-methylpropane\" the right structure is 2-methylpropane and the builder writes its name under it. The tally card ticks both. The what-changed card: \"skeleton: different\" lights violet, \"position: n/a\", \"group: same (alkane)\"; label \"chain isomers\". On \"different\" `m7-camping-gas-burner-v1.png` appears small at the left with two small grey chips, \"butane: about −1 °C\" and \"2-methylpropane: about −12 °C\" (screen only), and a tag \"why? next video\". Bright at the end: the pair, the card's lit row and the plate. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "position-isomers": [
+        "new",
+        "the board clears to a new pair; the tally card writes \"C 4, H 8\".",
+        "Position isomers: Second, position isomers.",
+        "position / one / two / ol",
+        "On the spoken cues: On \"position\" skeletal but-1-ene draws on the left; on \"one\" the locant counter pops \"1\" under the teal double bond; on \"two\" but-2-ene draws on the right with the teal double bond in the middle and \"2\" under it; the tally card ticks both. The what-changed card: \"skeleton: same\", \"group: same (C=C)\", \"position: different\" lights violet; label \"position isomers\". On \"ol\" the pair is replaced: the tally card writes \"C",
+        "explain",
+        "the board clears to a new pair; the tally card writes \"C 4, H 8\". On \"position\" skeletal but-1-ene draws on the left; on \"one\" the locant counter pops \"1\" under the teal double bond; on \"two\" but-2-ene draws on the right with the teal double bond in the middle and \"2\" under it; the tally card ticks both. The what-changed card: \"skeleton: same\", \"group: same (C=C)\", \"position: different\" lights violet; label \"position isomers\". On \"ol\" the pair is replaced: the tally card writes \"C 3, H 8, O 1\"; propan-1-ol and propan-2-ol draw (skeletal, with the O–H shown in red-brown), a tag \"-ol = an O–H group; the number = which carbon\" writes, and locants pop \"1\" and \"2\" under the O–H. The card's position row stays lit. On \"different products\" a small grey tag \"different reactions: later (alcohols video)\" writes under the pair, then dims. Bright at the end: the propanol pair, the \"-ol\" tag and the lit row. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "functional-group-isomers": [
+        "new",
+        "the board clears.",
+        "Functional group isomers: Third, functional group isomers.",
+        "functional group / itself / ring / cycloalkanes / saturated",
+        "On the spoken cues: On \"functional group\" a tag writes \"functional group: the part that gives a family its reactions (C=C, O–H)\". On \"itself\" the ethanol and methoxymethane pair returns small at the top (O–H against O between carbons, tag \"alcohol vs O between carbons\", dims). The tally card writes \"C 4, H 8\". But-1-ene draws skeletal on the left (teal double bond). On \"ring\" a copy of the four carbons on the right slides apart from",
+        "explain",
+        "the board clears. On \"functional group\" a tag writes \"functional group: the part that gives a family its reactions (C=C, O–H)\". On \"itself\" the ethanol and methoxymethane pair returns small at the top (O–H against O between carbons, tag \"alcohol vs O between carbons\", dims). The tally card writes \"C 4, H 8\". But-1-ene draws skeletal on the left (teal double bond). On \"ring\" a copy of the four carbons on the right slides apart from the double bond, the double bond turns to a single bond, and the chain's ends swing round and join into a square (cyclobutane); the implied-H counter shows two grey H on each corner (8 in all); tag \"cyclo = carbons in a ring\" (dims). The tally card ticks both. On \"cycloalkanes\" a bracket tag \"cycloalkane (no C=C)\" writes under the ring (it stays as the ring's bracket). On \"saturated\" brackets label \"alkene: unsaturated (C=C)\" and the ring's bracket extends to \"cycloalkane: saturated (no C=C)\". The what-changed card: \"group: different\" lights violet (skeleton and position rows grey, \"n/a\"); label \"functional group isomers\". Bright at the end: the C₄H₈ pair, the two brackets and the lit row. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "why-group-matters": [
+        "new",
+        "the C₄H₈ pair stays centre with the tally card.",
+        "Why the group matters: And a different group means different chemistry.",
+        "reacts / apart",
+        "On the spoken cues: On \"reacts\" the teal double bond in but-1-ene pulses and a small teal spark marks it (tag \"C=C: where an alkene reacts\"); cyclobutane's ring gets a grey tag \"no C=C\". On \"apart\" a small grey chip \"a test tells them apart: later\" appears with a faint coded outline of a test tube (no plate; the bromine water plates belong to chem-m7-c04a), then dims. On \"the full arrangement sets the name\" the builder writes both",
+        "explain",
+        "the C₄H₈ pair stays centre with the tally card. On \"reacts\" the teal double bond in but-1-ene pulses and a small teal spark marks it (tag \"C=C: where an alkene reacts\"); cyclobutane's ring gets a grey tag \"no C=C\". On \"apart\" a small grey chip \"a test tells them apart: later\" appears with a faint coded outline of a test tube (no plate; the bromine water plates belong to chem-m7-c04a), then dims. On \"the full arrangement sets the name\" the builder writes both names under the pair. Bright at the end: the pair with its names and the \"C=C\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "classify-a-pair": [
+        "new",
+        "the board clears.",
+        "How to classify a pair: So, to classify a pair, ask three questions.",
+        "family / skeleton / position / change",
+        "On the spoken cues: A three-step check writes down the centre, each line lighting on its words and earlier lines dimming: \"1 Same molecular formula? No → not isomers.\" (beside it, small: butane C₄H₁₀ and but-1-ene C₄H₈ with a grey \"≠\" between the formulas, then dims) \"2 Different family (group)? → functional group isomers.\" On \"skeleton\" and \"position\" line 3 writes \"3 Same family: skeleton changed → chain; group moved → position.\" The",
+        "explain",
+        "the board clears. A three-step check writes down the centre, each line lighting on its words and earlier lines dimming: \"1 Same molecular formula? No → not isomers.\" (beside it, small: butane C₄H₁₀ and but-1-ene C₄H₈ with a grey \"≠\" between the formulas, then dims) \"2 Different family (group)? → functional group isomers.\" On \"skeleton\" and \"position\" line 3 writes \"3 Same family: skeleton changed → chain; group moved → position.\" The what-changed card's three rows pulse in turn beside the matching line. On \"classic slip\" the propanol pair returns small with a chip \"propan-1-ol / propan-2-ol: functional group isomers\" that fades in and, on \"change\", is crossed (caption \"same O–H group, moved: position isomers\"). Bright at the end: line 3, the propanol pair and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "find-every-isomer": [
+        "new",
+        "the board clears.",
+        "Finding every isomer: To find every isomer of a formula, work systematically.",
+        "systematically / pentane / two-methylbutane / two, two-dimethylpropane / all three",
+        "On the spoken cues: Task line \"All isomers of C₅H₁₂\". The tally card writes \"C 5, H 12\". On \"systematically\" a method strip writes small at the top: \"longest chain first, then shorten by one\". On \"pentane\" skeletal pentane draws (pale blue, tally 5); the builder names it. On \"two-methylbutane\" the chain shortener removes the end carbon and docks it as an amber branch on carbon 2 of a four-carbon chain; the builder names it; pentane",
+        "explain",
+        "the board clears. Task line \"All isomers of C₅H₁₂\". The tally card writes \"C 5, H 12\". On \"systematically\" a method strip writes small at the top: \"longest chain first, then shorten by one\". On \"pentane\" skeletal pentane draws (pale blue, tally 5); the builder names it. On \"two-methylbutane\" the chain shortener removes the end carbon and docks it as an amber branch on carbon 2 of a four-carbon chain; the builder names it; pentane dims to a kept thumbnail. On \"two, two-dimethylpropane\" a second carbon leaves the chain and both amber branches dock on the middle carbon of a three-carbon chain; the builder names it. On \"Shorten once more\" a ghost two-carbon chain appears with an amber branch that the tracer immediately runs through, tally rising back to 3 and 4 (tag \"branches on an end carbon just lengthen the chain\"), then the ghost fades. (Learning M4: earlier, on \"carbon two\", the chain shortener shows the floating carbon's ghost positions on C1 and C3 of the four-carbon chain; each greys out visibly with a small grey tag, \"C1: just a longer chain\" and \"C3: C2 from the other end\", before the branch docks on C2; both tags dim before scene 10, which names both cases.) On \"all three\" the three structures line up in a row, each with its name and a tick on the tally card. Chip \"C₅H₁₂: 3 isomers\". Bright at the end: the three named structures and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "spot-duplicates": [
+        "new",
+        "the three structures stay small along the top.",
+        "Spotting duplicates: But watch for duplicates.",
+        "duplicates / pentane / end / name",
+        "On the spoken cues: On \"duplicates\" a bent pentane draws centre (three carbons across, two down at a right angle); on \"pentane\" the chain tracer runs round the bend, tally \"5\", and the builder names it \"pentane\"; the duplicate stamp \"=\" lands between it and the top-row pentane. On \"end\" a four-carbon chain draws with an amber methyl on carbon 1; the tracer runs through the methyl, tally \"5\"; a chip \"1-methylbutane\" fades in and is",
+        "explain",
+        "the three structures stay small along the top. On \"duplicates\" a bent pentane draws centre (three carbons across, two down at a right angle); on \"pentane\" the chain tracer runs round the bend, tally \"5\", and the builder names it \"pentane\"; the duplicate stamp \"=\" lands between it and the top-row pentane. On \"end\" a four-carbon chain draws with an amber methyl on carbon 1; the tracer runs through the methyl, tally \"5\"; a chip \"1-methylbutane\" fades in and is crossed (caption \"it's just a longer chain: pentane\"). On \"wrong end\" a 2-methylbutane drawn mirror-image draws with ghost locants from the far side (\"3\"), and the \"=\" stamp lands between it and the top-row 2-methylbutane (tag \"number from the nearer end\", c01 callback, dims). On \"name\" a tag writes \"name every structure: same name = same molecule\". Bright at the end: the tag, the last \"=\" stamp and the crossed chip (dimmed). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So remember: same formula, different arrangement.",
+        "same formula, different arrangement / chain / position / group",
+        "On the spoken cues: The aid writes large and handwritten: \"Same formula, different arrangement.\" Under it, on each word, three small icons draw from earlier scenes and label themselves: \"chain\" (butane and 2-methylpropane), \"position\" (but-1-ene and but-2-ene), \"group\" (but-1-ene and cyclobutane). Each earlier line dims slightly as the next writes.",
+        "explain",
+        "the board clears. The aid writes large and handwritten: \"Same formula, different arrangement.\" Under it, on each word, three small icons draw from earlier scenes and label themselves: \"chain\" (butane and 2-methylpropane), \"position\" (but-1-ene and but-2-ene), \"group\" (but-1-ene and cyclobutane). Each earlier line dims slightly as the next writes. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Classify each pair as chain, position",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Classify each pair of compounds as chain, position or functional group isomers. (a) pent-1-ene and pent-2-ene (b) pentane and 2,2-dimethylpropane (c) cyclopentane and pent-1-ene\". Beside each part, the two skeletal formulas in plain ink (no colours, no numbers, no tally card): (a) pent-1-ene and pent-2-ene; (b) pentane and 2,2-dimethylpropane; (c) a five-carbon ring (pentagon) and pent-1-ene. The full question and structures stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no what-changed card, no aid.",
+        [
+            "ScribbleCircle",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top; at the start \"chain, position or functional group\" in the question is underlined.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "position / chain / functional group / slip",
+        "On the spoken cues: On \"position\" the (a) pair lights; \"pent-1-ene and pent-2-ene\" is underlined; the locant counter pops \"1\" and \"2\" under the teal double bonds; chip \"(a) position\". On \"chain\" the (b) pair lights; \"pentane and 2,2-dimethylpropane\" is underlined; the tracer shows five carbons in a row against three with two amber branches; the tally card \"C 5, H 12\" ticks both; chip \"(b) chain\". On \"functional group\" the (c) pair",
+        "explain",
+        "the card stays, shrunk to the top; at the start \"chain, position or functional group\" in the question is underlined. On \"position\" the (a) pair lights; \"pent-1-ene and pent-2-ene\" is underlined; the locant counter pops \"1\" and \"2\" under the teal double bonds; chip \"(a) position\". On \"chain\" the (b) pair lights; \"pentane and 2,2-dimethylpropane\" is underlined; the tracer shows five carbons in a row against three with two amber branches; the tally card \"C 5, H 12\" ticks both; chip \"(b) chain\". On \"functional group\" the (c) pair lights; \"cyclopentane and pent-1-ene\" is underlined; brackets \"cycloalkane (no C=C)\" and \"alkene (C=C)\" draw; the tally card \"C 5, H 10\" ticks both; chip \"(c) functional group\". On \"slip\" a chip \"(a) chain isomers\" fades in and is crossed (caption \"the C=C moved; the chain didn't change\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student draws structures A, B and C and states that they show three different structural isomers of C₅H₁₂.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A student draws these three structures,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student draws structures A, B and C and states that they show three different structural isomers of C₅H₁₂. Evaluate the student's statement.\" Beside it, three skeletal formulas in plain ink labelled A, B, C: A, a straight five-carbon zigzag; B, a five-carbon chain drawn with a right-angle bend (three carbons across, two down); C, 2-methylbutane. The full question and structures stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "pentane / two-methylbutane / incorrect / two, two-dimethylpropane / slip",
+        "On the spoken cues: On \"pentane\" the tracer runs through A and round B's bend, tally \"5\" for each; the builder writes \"pentane\" under both and the duplicate stamp \"=\" lands between them; \"three different structural isomers\" is underlined. On \"two-methylbutane\" the builder names C. On \"incorrect\" \"Evaluate the student's statement\" is underlined and a judgement chip \"Incorrect\" writes. On \"two, two-dimethylpropane\" a fourth structure",
+        "explain",
+        "the card stays, shrunk to the top. On \"pentane\" the tracer runs through A and round B's bend, tally \"5\" for each; the builder writes \"pentane\" under both and the duplicate stamp \"=\" lands between them; \"three different structural isomers\" is underlined. On \"two-methylbutane\" the builder names C. On \"incorrect\" \"Evaluate the student's statement\" is underlined and a judgement chip \"Incorrect\" writes. On \"two, two-dimethylpropane\" a fourth structure draws in amber outline, named (tag \"not drawn\"); \"C₅H₁₂\" is underlined; the judgement chip completes as the answer chip \"Incorrect: only 2 different isomers shown (A = B); 2,2-dimethylpropane not drawn\". On \"slip\" a chip \"three isomers shown\" fades in and is crossed (caption \"same name = same molecule\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "new",
+        "the board clears.",
+        "Handoff: So isomers share a formula, but not a structure, and the structure decides the name and the properties.",
+        "Next",
+        "On the spoken cues: The memory aid line returns small at the top. The butane and 2-methylpropane pair returns with the camping gas plate and the two grey boiling point chips (about −1 °C, about −12 °C), a \"?\" between them. On \"Next\" a chip \"Next: how does carbon bonding explain hydrocarbon properties?\" appears with a small thumbnail of a ball-and-stick ethene.",
+        "explain",
+        "the board clears. The memory aid line returns small at the top. The butane and 2-methylpropane pair returns with the camping gas plate and the two grey boiling point chips (about −1 °C, about −12 °C), a \"?\" between them. On \"Next\" a chip \"Next: how does carbon bonding explain hydrocarbon properties?\" appears with a small thumbnail of a ball-and-stick ethene. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# END generated rows: m6p01c, m6g04, m6p07, skills05, m7c01, m7c02
 
 
 LESSONS = {
@@ -8619,6 +12744,192 @@ LESSONS = {
         'rows': M6C16_ROWS,
     },
     # END generated entries: m6c15-m6c16
+    # BEGIN generated entries: m6p02-m6p06, m6g01c-m6g03c
+    'm6p02': {
+        'design': D + 'lessons/chem-m6-p02.md',
+        'learning_review': D + 'checks/m6p02-learning-review.md',
+        'science_check': D + 'checks/m6p02-claude-science-check.md',
+        'meta': {"title": "Measuring the enthalpy of neutralisation: how do you measure a temperature you never see?", "subtitle": "The thermometer never catches the full temperature rise, because heat escapes from the moment it is made. So how do you set up the enthalpy of neutralisation experiment, and how do you recover the temperature you never see?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 4, "lessonIntent": "setting up an insulated, lidded, supported cup and explaining each part; measuring and averaging both starting temperatures; logging past the peak; plotting the temperature-time graph and extrapolating the cooling line to the mixing time, with its assumption; calculating ΔH from the extrapolated rise; naming the controlled variables of a repeated measurement; tracing an error through ΔT, q and ΔH; judging validity, reliability and accuracy; writing the risk rows for 1.00 mol/L NaOH and HCl. No weak acids (chem-m6-c09), no applications (chem-m6-c04), no percentage uncertainty."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "setup", "start-temperature", "mix-log", "graph", "extrapolate", "calculate", "variables", "errors", "validity-reliability", "risk-assessment", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m6-c03 (net ionic reaction, ΔH negative for a rise, enthalpy of neutralisation per mole of water, about −57 kJ/mol for fully ionised pairs, q = mcΔT with the total mass, n = cV, ΔH = −q ÷ n(H₂O), rounding to the data's significant figures, heat loss named as the likely reason a result is less negative). chem-m5-p01 (validity, reliability and accuracy in plain words; risk assessment as hazard, harm, control; independent, dependent and controlled variables). Year 11 Module 4 (calorimetry, specific heat capacity). Year 11 Working Scientifically (drawing a line of best fit).", "startsWith": "Set up an insulated calorimeter and record starting conditions. The video opens: Here's an odd thing about this experiment. When you mix an acid and a base in a foam cup, the thermometer doesn't show the highest temperature the mixture could reach. Heat starts escaping the moment it's made, so by the time the reading peaks, some is already gone.", "stopsAfter": "setting up an insulated, lidded, supported cup and explaining each part; measuring and averaging both starting temperatures; logging past the peak; plotting the temperature-time graph and extrapolating the cooling line to the mixing time, with its assumption; calculating ΔH from the extrapolated rise; naming the controlled variables of a repeated measurement; tracing an error through ΔT, q and ΔH; judging validity, reliability and accuracy; writing the risk rows for 1.00 mol/L NaOH and HCl. No weak acids (chem-m6-c09), no applications (chem-m6-c04), no percentage uncertainty.", "nextLesson": "where neutralisation solves a real problem (route chem-m6-c04)."},
+        'teaching': {"task": "The thermometer never catches the full temperature rise, because heat escapes from the moment it is made. So how do you set up the enthalpy of neutralisation experiment, and how do you recover the temperature you never see?", "causalExplanation": "(1) heat escapes from the moment it is made, so the highest reading is too low (1); (2) foam traps air and conducts little heat; the lid cuts the heat carried away by warm air and vapour; the beaker stops tipping; measured volumes set both the moles and the mass (2); (3) a warmer solution would raise the reading without any reaction, so both starting temperatures are measured and averaged (3); (4) the readings after the peak are needed for the cooling line (4); (5) the cup loses heat during the rise as well, so the peak is lower than the no-loss temperature (5); (6) the reaction itself is almost instant, so with no loss the temperature would jump at the moment of mixing; extending the straight cooling line back to that time estimates the no-loss temperature, assuming the same cooling rate (6); (7) the C03 calculation with the extrapolated rise gives a value closer to −57 than the highest reading does (7); (8) a repeated measurement has controlled variables but no deliberately changed variable between runs (8); (9) each error traced through ΔT, q and ΔH; heat loss and heat absorbed by the cup and probe push ΔH less negative, but a starting temperature recorded too low pushes it more negative; name the cause (9); (10) validity, reliability, accuracy; repeats cannot fix heat loss, because it lowers every run (10); (11) the real hazards and their controls (11); memory aid (12); attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).", "conversationalApproach": "the thermometer never shows the temperature the mixture could reach, because heat escapes from the moment it is made, and the practical is built around recovering that hidden peak. Each part of the set-up is given its reason (a foam cup in a beaker, a lid, measured volumes), both starting temperatures are measured and averaged, readings are logged every 30 seconds well past the peak, and the cooling line on the temperature-time graph is extended back to the moment of mixing because the reaction itself is almost instant. The C03 calculation is staged one line at a time with the extrapolated rise; the variables of a repeated measurement, each error traced through delta T, q and delta H, validity, reliability and accuracy, and the risk assessment follow. The memory aid \"Lid on. Log on. Line back.\" closes the method. Two exam questions follow with brief feedback.", "openingDecision": "Here's an odd thing about this experiment. When you mix an acid and a base in a foam cup, the thermometer doesn't show the highest temperature the mixture could reach. Heat starts escaping the moment it's made, so by the time the reading peaks, some is already gone. That's partly why the last video's answer fell short of minus fifty seven. So how do you set it up, and how do you measure a temperature you never actually see?", "understandingCheck": "(A1) \"50.0 mL of 1.00 mol/L nitric acid and 50.0 mL of 1.00 mol/L potassium hydroxide solution, both at 20.9 °C, are mixed in a lidded polystyrene cup at time 0. The temperature is recorded every 30 seconds, as shown in the graph. Assume the density of the mixture is 1.00 g/mL and its specific heat capacity is 4.18 J g⁻¹ °C⁻¹. Use the graph to determine the temperature change, then calculate the molar enthalpy of neutralisation.\" New acid and base, new numbers, the viewer must extrapolate. Answer −54 kJ/mol. Crossed mistake: the highest reading, 27.1 °C, giving −52 kJ/mol. (A2) \"A student mixes 50.0 mL of 1.00 mol/L hydrochloric acid with 50.0 mL of 1.00 mol/L sodium hydroxide solution in an uncovered glass beaker. She records the highest temperature shown on a thermometer and calculates the enthalpy of neutralisation as −46 kJ/mol. Identify the main source of error in her method, explain its effect on the calculated value, and suggest one improvement.\" Answer: heat loss through the glass and open top; ΔT, q too small; ΔH less negative; lidded foam cup and extrapolation. Crossed mistake: \"human error\".", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to measure the enthalpy of neutralisation (ACSCH093)\" this video prepares students to carry out and analyse the calorimetry practical; it does not claim that watching it is conducting it. It teaches: the insulated, lidded, supported cup and why each part is there; measuring both starting temperatures and averaging them; logging temperature at intervals past the peak; the temperature-time graph; extrapolating the cooling line back to the moment of mixing, and its assumption; the error chain (source, then ΔT, then q, then ΔH); the controlled variables of a repeated measurement; validity, reliability and accuracy for this practical; the risk assessment. Not re-taught: why neutralisation releases heat, the sign of ΔH, the per-mole-of-water definition, q = mcΔT with the total mass, moles of water from the reactant that runs out (all chem-m6-c03; scene 7 runs the C03 method in one compact pass, one stage per line, saying \"as in the last video\"). Not here: weak acids and why their values differ (chem-m6-c09; the site's L10 strong-against-weak comparison is not used); applications (chem-m6-c04); Hess's law; percentage uncertainty arithmetic. Validity, reliability and accuracy were given plain meanings in chem-m5-p01; scene 10 recalls them in one clause each and applies them here."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C03): H⁺ teal, OH⁻ violet (only if a lens is used; none is planned); heat warm orange arrows; the temperature readout amber digits; graph points amber, the cooling line teal, the extrapolation dashed teal; hazards terracotta, controls green. Board layout (three zones, constant): top-left the short task line; the centre holds the apparatus or the graph; the right third holds the current card (method step, working, error chain, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Reuse: `m6-foam-cup-calorimeter-v1.png` (inspected 21 Oct: lidded white foam cup, cutaway window with clear liquid, steel probe through a bung; no readout, no stirrer, no support beaker; coded readout chip on the probe top as in C03); `m6-beaker-v1.png` (the starting solutions, coded labels and coded liquid fill; also the uncovered glass beaker in attempt 2); `c8-thermometer-hot-v1.png` (attempt 2 only, the glass thermometer); `m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png` (risk table head; gloves \"optional\" tag); `m6-wash-bottle-v1.png` (risk row: wash splashes off). New plates: see Codex asset brief (two items). No human figures.", "transitionPlan": "The foam cup calorimeter plate opens the hook with its amber readout counting up as orange heat arrows leave; the cup-in-beaker plate and two measuring cylinders build the set-up with a tag per part; the two readouts pulse and the average line writes; the cylinder tilts along a coded arc into the cup, the stopwatch chip starts and the results table fills; the coded lineGraph plots the rise, peak and cooling points, then the teal best-fit line draws and its dashed extension runs back to t = 0 with the grey instant-step ghost; the graph shrinks left with its two values kept while the task line, equation strip, grouped givens and working write one stage per line; the variables card, the error-chain boxes with their arrows, the three evaluation cards and the risk table write in the right zone in turn; the memory aid writes large with three small icons; each attempt clears the board and its feedback underlines the givens as the graph or error chain returns small; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M6P02_ROWS,
+    },
+    'm6p03': {
+        'design': D + 'lessons/chem-m6-p03.md',
+        'learning_review': D + 'checks/m6p03-learning-review.md',
+        'science_check': D + 'checks/m6p03-claude-science-check.md',
+        'meta': {"title": "Measuring the pH of a range of acids and bases: how do you get a reading you can trust?", "subtitle": "A freshly calibrated pH meter reads distilled water as 5.8. Is the meter wrong, the method wrong, or the water? How do you measure the pH of a range of acids and bases so the readings can be trusted, and what does each reading tell you about the ions in the sample?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 7, "lessonIntent": "choosing a range of solutions at one concentration; explaining why a pH meter needs calibrating and doing it with buffers on both sides of 7, as close to the readings as possible; carrying out the measuring routine and explaining rinsing, blotting, waiting and fresh portions; recording means; stating whether each solution has more hydronium or more hydroxide, and comparing two readings by factors of ten; explaining why open distilled water reads below 7; comparing a meter with indicator paper; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No pH calculation (chem-m6-c07), no strength investigation (chem-m6-p04), no buffer chemistry (chem-m6-c11)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "range", "meter", "calibration", "routine", "results", "ions", "water", "meter-vs-indicator", "variables", "validity-reliability", "risk-assessment", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m6-c05 (strong and weak; a pH meter reading; lower pH means more hydronium; one pH unit is ten times as many hydronium ions; ammonia is a weak base; NaOH a strong base; compare at the same concentration). chem-m6-c01 (H₃O⁺; acids give protons to water; bases produce OH⁻). chem-m5-p01 (validity, reliability, accuracy in plain words; risk assessment as hazard, harm, control; variables). Stage 5 (the pH scale; universal indicator). Year 11 Module 2 (concentration in mol/L).", "startsWith": "Calibrate a pH meter and choose a range of solutions. The video opens: This pH meter has just been calibrated, and it reads distilled water as five point eight two. Shouldn't pure water be seven? So is the meter faulty?", "stopsAfter": "choosing a range of solutions at one concentration; explaining why a pH meter needs calibrating and doing it with buffers on both sides of 7, as close to the readings as possible; carrying out the measuring routine and explaining rinsing, blotting, waiting and fresh portions; recording means; stating whether each solution has more hydronium or more hydroxide, and comparing two readings by factors of ten; explaining why open distilled water reads below 7; comparing a meter with indicator paper; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No pH calculation (chem-m6-c07), no strength investigation (chem-m6-p04), no buffer chemistry (chem-m6-c11).", "nextLesson": "using pH to show the difference between strong and weak acids and bases (route chem-m6-p04)."},
+        'teaching': {"task": "A freshly calibrated pH meter reads distilled water as 5.8. Is the meter wrong, the method wrong, or the water? How do you measure the pH of a range of acids and bases so the readings can be trusted, and what does each reading tell you about the ions in the sample?", "causalExplanation": "(1) a calibrated meter reads distilled water below 7: faulty, or real? (1); (2) one concentration for the acids and bases, so differences come from the substance; fresh portions in clean labelled beakers (2); (3) the glass bulb responds to hydronium ions with a small voltage; the meter turns it into pH; that link drifts with age and temperature (3); (4) so the meter is shown known values: buffers at pH 7, 4 and 10; the meter draws a straight line through those points and reads every sample from it (extended a little beyond 4 and 10); one buffer gives one point, so the slope would be guessed; buffers on both sides of 7 check the line for acids and bases; calibrate at the measuring temperature (4); (5) solution left on the probe is carried into the next sample and changes it, so rinse and blot; the glass needs time to respond, so a reading is recorded only once it stops changing; repeats use fresh portions so one contaminated portion cannot affect all three (5); (6) results as means; the acids and bases repeat closely (6); (7) below 7 more hydronium than hydroxide, above 7 more hydroxide; each step ten times, two steps a hundred; HCl about 1.4 lower than acetic acid, so in between: about 23 times the hydronium (C05 strength, recalled) (7); (8) carbon dioxide from the air dissolves and makes a little carbonic acid, which gives a few hydronium ions to the water, so open distilled water really is slightly acidic (boiling drives the CO₂ out: grey tag); with very few ions the reading drifts (8); (9) indicator paper gives about whole numbers and colour judgements vary; a meter's two decimal places mean something only if it is calibrated (9); variables (10); validity, reliability, accuracy (11); risk (12); memory aid (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).", "conversationalApproach": "a freshly calibrated meter reads distilled water as 5.82, and the question of whether the meter is faulty runs through the practical. The range of solutions is matched at 0.010 mol/L so differences come from the substance; the glass bulb lens shows how hydronium makes a voltage, and calibration with pH 7, 4 and 10 buffers shows why two or more known points fix the line; the measuring routine gives a reason for each step (rinse, blot, immerse, wait for steady, three fresh readings). One class's results are read as more hydronium or more hydroxide, each pH step ten times; the water puzzle is resolved by dissolved carbon dioxide and very few ions; the meter is compared with indicator paper, then the variables, validity, reliability and accuracy, and the risk assessment follow. The memory aid \"Calibrate first. Rinse between. Wait for steady.\" closes the method. Two exam questions follow with brief feedback.", "openingDecision": "This pH meter has just been calibrated, and it reads distilled water as five point eight two. Shouldn't pure water be seven? So is the meter faulty? Hold that thought. In this practical you measure the pH of a range of acids and bases, and before you trust a number like this, the method has to be right.", "understandingCheck": "(A1) \"A student measures the pH of 0.010 mol/L sodium hydroxide solution with a calibrated pH meter. Without rinsing the probe, she then measures a sample of distilled water and obtains a reading of 9.2. Other groups measured the same distilled water at about 6. Explain the difference between her reading and the other groups' readings, and describe how she should change her method.\" Answer: NaOH carried over on the probe added hydroxide; water has very few ions of its own, so a trace shifts its pH a lot; rinse and blot between samples, measure a fresh portion. Crossed mistake: \"take three readings and average them\" (without rinsing, the carried-over hydroxide still pushes the average up). (A2, Revision 2) \"A student calibrates a pH meter with a pH 7.00 buffer only. She then measures the pH of 0.010 mol/L hydrochloric acid three times, using a fresh portion each time, and obtains 2.31, 2.30 and 2.32. Another group calibrated with pH 7.00 and pH 4.00 buffers and obtained 2.03 for the same solution. Evaluate the reliability and accuracy of the first student's results.\" Answer: reliable (range 0.02) but not accurate (about 0.3 above 2.03); with one buffer the meter assumed its slope, so every reading shares the same error; calibrate with pH 4.00 as well and repeat. Crossed mistake: \"they agree, so they're accurate\". Revision 1's A2 (3.4 against 5.4, \"about twice\") is retired: it retested C05 scene 3.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to measure the pH of a range of acids and bases\" this video prepares students to carry out and analyse the pH measurement practical; it does not claim that watching it is conducting it. It teaches: choosing a range of solutions (two acids, two bases, distilled water) at one concentration; what the meter's glass probe responds to and why calibration is needed; calibrating with buffers that cover the readings; the measuring routine (rinse, blot, immerse, wait for steady, repeat in fresh portions) and why each step matters; recording means; reading each value as hydronium against hydroxide ions, with each pH step a factor of ten; why distilled water open to air reads below 7; meter against universal indicator; variables; validity, reliability and accuracy; the risk assessment. Placement limits (playlist order 7): pH = −log[H⁺], pOH, Kw and every pH calculation are chem-m6-c07 (order 10), so no reading is calculated from a concentration and no concentration from a reading; expected values are not derived on screen. The relation to ions uses only what C05 taught (lower pH, more hydronium; one unit is ten times). Why HCl and acetic acid differ at the same concentration is C05's strength idea, recalled in one clause; testing strength with pH is chem-m6-p04 (order 8), which uses 0.100 mol/L matched solutions and a dilute-HCl challenge, so this video makes no strength conclusion and no concentration-matching argument beyond \"so the difference comes from the substance\". Buffers are named as \"solutions that hold a known pH\" only (how they work is chem-m6-c11). Water's self-ionisation is chem-m6-c06; scene 7 says only \"more hydronium than hydroxide\" below 7."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C01, C05): hydronium teal, hydroxide violet; readout amber digits; acids marked with a small teal tab on their beaker labels, bases a violet tab, water grey; controls green, hazards terracotta. Board layout (three zones, constant): top-left the short task line; the centre holds the meter and the beaker row; the right third holds the current card (routine, results table, variables, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: `m6-ph-meter-probe-beaker-v1.png` (inspected 21 Oct: bench meter with a blank green screen, probe on a cable standing in a beaker of clear liquid; coded readout in the screen, as in C05), `m6-beaker-v1.png` (inspected 21 Oct: empty clear beaker; five copies with coded labels and coded colourless fills), `m6-wash-bottle-v1.png` (rinse), `m6-indicator-paper-chart-v1.png` (inspected 21 Oct: a strip and a six-colour chart, red to violet, no numbers; coded pH numbers placed under the swatches), `m5x-safety-glasses-v1.png` (risk table), `m5x-ammonia-bottle-v1.png` (risk row, the stock bottle, small, with tag \"teacher only\"). New plates: see Codex asset brief (three items). No human figures.", "transitionPlan": "The pH meter plate opens the hook with its readout settling at 5.82 and a ghost \"7.00?\" chip; the meter slides left and five labelled beakers slide into a row; the probe plate enlarges and a lens opens on the glass bulb with hydronium tokens and a millivolt needle; three buffer bottles stand in the right zone while the calibration line pins and tilts; the routine card writes one line per cue as the wash bottle stream, tissue and probe act it out; the results table fills and the chips drop onto a coded pH scale with hydronium and hydroxide bar pairs; the water beaker enlarges as carbon dioxide tokens drift in and the carbonic acid strip writes; the indicator chart and a bracket sit beside the two-decimal readout; the variables card, the three evaluation cards and the risk table write in the right zone in turn; the memory aid writes large with three icons; each attempt clears the board and its feedback underlines the question as small plates return; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M6P03_ROWS,
+    },
+    'm6p04': {
+        'design': D + 'lessons/chem-m6-p04.md',
+        'learning_review': D + 'checks/m6p04-learning-review.md',
+        'science_check': D + 'checks/m6p04-claude-science-check.md',
+        'meta': {"title": "Using pH to show the difference between strong and weak acids and bases: what pH evidence separates them?", "subtitle": "Two bottles, both labelled 0.100 mol/L: one hydrochloric acid, one ethanoic acid. How can a pH meter show which acid is strong, what makes the comparison fair, and how could you still tell them apart if you couldn't trust the label?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 8, "lessonIntent": "explaining why strength must be compared at matched concentration; carrying out the matched comparison and explaining the pH gap by extent of ionisation; designing and carrying out a tenfold dilution with volumetric glassware; explaining why a strong acid's pH rises by about one unit and a weak acid's by much less (about half for ethanoic acid), and that the bases mirror this; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No pH calculation (chem-m6-c07), no Ka or Kb (chem-m6-c10), no conjugate pairs (chem-m6-c06), no conductivity."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "matched-concentration", "routine-recall", "results", "the-gap", "dilution-method", "dilution-results", "strong-moves-one", "weak-moves-half", "bases-and-check", "variables", "validity-reliability", "risk-assessment", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m6-c05 (strong and weak as complete and partial ionisation; ethanoic/acetic acid stops early at equilibrium; the single and double arrow; NaOH a strong base, ammonia a weak base; concentration is a separate quantity; a concentrated weak acid can read lower than a dilute strong one; compare strength at the same concentration; diluting a weak acid lets a bigger fraction ionise; lower pH means more hydronium, one unit is ten times). chem-m6-p03 (the pH meter routine: calibrate with buffers covering the readings, rinse and blot, wait for steady, three readings in fresh portions; the 0.010 mol/L readings HCl 2.03, acetic acid 3.40, ammonia 10.59, NaOH 11.96). chem-m5-p01 (validity, reliability, accuracy; variables; risk as hazard, harm, control). Module 5 equilibrium (a reversible reaction settles at a balance; a reverse step that needs two dissolved particles to meet slows more on dilution, so the balance shifts toward the side with more dissolved particles; used in scene 9). Year 11 Module 2 (concentration in mol/L; dilution, c₁V₁ = c₂V₂; volumetric pipette and flask). Not assumed: pH = −log[H₃O⁺], pOH, Kw, Ka, Kb, conjugate pairs.", "startsWith": "Prepare equal-concentration strong and weak comparison solutions. The video opens: Two bottles, both labelled zero point one zero zero moles per litre. One's hydrochloric acid, the other's ethanoic acid. You've only got a pH meter.", "stopsAfter": "explaining why strength must be compared at matched concentration; carrying out the matched comparison and explaining the pH gap by extent of ionisation; designing and carrying out a tenfold dilution with volumetric glassware; explaining why a strong acid's pH rises by about one unit and a weak acid's by much less (about half for ethanoic acid), and that the bases mirror this; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No pH calculation (chem-m6-c07), no Ka or Kb (chem-m6-c10), no conjugate pairs (chem-m6-c06), no conductivity.", "nextLesson": "conjugate pairs and amphiprotic species: why chloride never takes its proton back but ethanoate does (route chem-m6-c06)."},
+        'teaching': {"task": "Two bottles, both labelled 0.100 mol/L: one hydrochloric acid, one ethanoic acid. How can a pH meter show which acid is strong, what makes the comparison fair, and how could you still tell them apart if you couldn't trust the label?", "causalExplanation": "(1) two acids labelled 0.100 mol/L: which is strong, and could a wrong label fool you? (1); (2) same concentration, so any pH difference comes from strength; a concentrated weak acid can read lower than a dilute strong one (C05), so unmatched solutions prove nothing; P03 used this test at 0.010 mol/L, and this time all four are at 0.100 mol/L (2); (3) the P03 routine, plus a note that readings near 1 and 13 sit outside the 4 to 10 calibration (3); (4) results: HCl 1.08 against ethanoic acid 2.90; NaOH 12.91 against ammonia 11.10 (4); (5) at the same concentration, HCl has about 70 times as much hydronium (two units would be 100 times; 1.82 units is a bit less), because every HCl molecule ionises and only a small fraction of ethanoic acid molecules do (C05, with the arrows recalled); the bases mirror it (5); (6) but this relies on the label; the dilution test: 10.00 mL made up to 100.0 mL is exactly tenfold, whatever the starting concentration (6); (7) results: HCl and NaOH move 0.96, almost exactly one unit; ethanoic acid and ammonia about 0.50 (7); (8) a strong acid is already fully ionised, so diluting tenfold leaves a tenth of the hydronium per litre: about one pH unit (8); (9) diluted, the hydronium and ethanoate ions meet less often, so fewer rejoin into molecules and a bigger fraction of the acid stays ionised, which partly makes up the loss, so hydronium falls by much less than ten times: about half a unit (9); (10) the bases mirror this; the diluted readings match P03's 0.010 mol/L readings; the acid gap narrows from 1.82 to 1.35 units on dilution, which is why P03 found about 23 times, not 70 (10); variables (11); validity, reliability, accuracy (12); risk (13); memory aid (14); attempts and brief feedback (15 to 18); decision rule and handoff (19); key notes (20).", "conversationalApproach": "two bottles both labelled 0.100 mol/L hold hydrochloric and ethanoic acid, and the practical asks how a pH meter can show which is strong, and what to do if a label might be wrong. Test 1 compares at the same concentration because a concentrated weak acid can read a lower pH than a dilute strong one; the P03 routine is reused, and one class's means are read as about seventy times as much hydronium. Test 2 dilutes exactly tenfold with a volumetric pipette and flask: the strong acid rises about one unit because the same ions are spread through ten times the volume, and the weak acid only about half because more molecules ionise when the ions meet less often; the bases mirror this and the readings agree with P03. The variables, validity, reliability and accuracy, and the risk assessment follow, and the memory aid is \"Match, then compare. Dilute ten times: strong moves about one, weak moves about half.\" Two exam questions follow with brief feedback.", "openingDecision": "Two bottles, both labelled zero point one zero zero moles per litre. One's hydrochloric acid, the other's ethanoic acid. You've only got a pH meter. Can you show which acid is strong? And here's the harder part: what if one label is wrong? Today you'll build two pH tests of strength, and the second one doesn't trust the label at all.", "understandingCheck": "(A1) \"A student wants to compare the strengths of methanoic acid (HCOOH) and nitric acid (HNO₃). Using a calibrated pH meter at 25 °C, she measures the pH of 0.50 mol/L methanoic acid as 2.03 and the pH of 0.0020 mol/L nitric acid as 2.70. She concludes that methanoic acid is the stronger acid. Evaluate her conclusion and describe how she should change her method.\" Answer: the conclusion is not valid: the concentrations differ by 250 times, so the pH depends on concentration as well as strength; test both at the same concentration (for example 0.100 mol/L), same temperature and meter; nitric acid, which ionises completely, would then read lower. Crossed mistake: \"lower pH, so stronger acid\". (A2) \"A student has a solution of a monoprotic acid of unknown concentration. Its pH is 2.40. She uses a volumetric pipette to transfer 10.00 mL of it into a 100.0 mL volumetric flask and makes it up to the mark with distilled water. The diluted solution has a pH of 2.90. Determine whether the acid is strong or weak. Justify your answer.\" Answer: weak: a tenfold dilution of a strong acid leaves a tenth of the hydronium, raising the pH by about 1 (to about 3.4); it rose by only 0.50, so hydronium fell by much less than ten times; more molecules ionised on dilution, which only happens with partial ionisation. Crossed mistake: \"pH 2.40 is low, so it's a strong acid\".", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct an investigation to demonstrate the use of pH to indicate the differences between the strength of acids and bases (ACSCH102)\" this video prepares students to carry out and analyse the strength investigation; it does not claim that watching it is conducting it. It teaches two pH tests of strength: (1) the matched comparison: a strong and a weak acid (and a strong and a weak base) at the same concentration, 0.100 mol/L, so the pH gap comes from how completely each ionises; (2) the tenfold dilution test: dilute each solution exactly tenfold with volumetric glassware and watch how far the pH moves (strong acid about one unit, weak acid about half a unit; the bases mirror this), which does not depend on trusting the label's concentration. It also covers the variables, validity, reliability and accuracy, and the risk assessment. Placement limits (playlist order 8): this video comes before conjugate pairs (chem-m6-c06, order 9), pH calculation (chem-m6-c07, order 10), ICE tables (chem-m6-c08, order 12) and Ka (chem-m6-c10, order 14). So no pH is calculated from a concentration, no Ka or Kb appears, and the half-unit result for the weak acid is explained with C05's particle idea only (diluting a weak acid lets a bigger fraction of its molecules ionise), not derived. The pH meter routine (calibrate, rinse, blot, wait for steady, three readings in fresh portions) is P03's and is recalled in one scene, not re-taught. The particle model of strong against weak, the arrows and the \"concentrated weak can read lower than dilute strong\" surprise are C05's and are recalled, not re-taught. Conductivity is not used (open decision)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C01, C05, P03): hydronium teal, hydroxide violet; whole acid molecules amber outline; readout amber digits; acids marked with a small teal tab on their beaker labels, bases a violet tab; strong solutions' change bars solid, weak solutions' change bars outlined; controls green, hazards terracotta. Board layout (three zones, constant): top-left the short task line; the centre holds the meter and the beaker row (or the dilution glassware); the right third holds the current card (method recall, results, variables, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: `m6-ph-meter-probe-beaker-v1.png` (inspected for P03 on 21 Oct: bench meter with a blank green screen, probe on a cable in a beaker of clear liquid; coded amber readout in the screen), `m6-beaker-v1.png` (empty clear beaker; eight coded copies across scenes 2 and 6), `m6-volumetric-pipette-filler-v1.png` (inspected 21 Oct: bulb pipette with a red pipette filler, tip down at an angle; used at native aspect, rotated as a whole only), `m6-volumetric-flask-v1.png` (inspected 21 Oct: stoppered volumetric flask with a calibration mark on the neck; a coded fill rises to the mark), `m6-wash-bottle-v1.png` (rinse recall and making up to the mark), `m5x-safety-glasses-v1.png` (risk table), `m5x-ammonia-bottle-v1.png` (risk row, the stock bottle, small, \"teacher only\"), `m6-buffer-bottle-v1.png` (three calibration buffers, as in P03), `m6-ph-probe-holder-v1.png` and `m6-lab-tissue-v1.png` (P03 recall). The last three are P03's Codex asset brief items 1 to 3, not yet painted; this video needs them only if P03's brief is delivered first, and its scene 3 can fall back to the meter plate alone. No human figures.", "transitionPlan": "Two labelled beaker plates open the hook with the concentrations underlined and a \"strong = ionises completely\" chip; the beakers become four in a row with a grey P03 tag; the small P03 routine card writes beside three buffer bottles; the results table fills and the chips drop onto a coded pH scale with a bracket and a ghost \"100 ×\" tick; the beaker row slides up as the volumetric pipette and flask plates take the centre and a coded stream fills to the mark; the dilution table returns with a change bar beside each row; the HCl lens widens and its tokens spread with a \"÷ 10\" counter, then the ethanoic acid lens opens beside it as ion pairs drift apart and fewer rejoin; the change bars and a small P03 card return for the bases and the check; the variables card, the three evaluation cards and the risk table write in turn; the memory aid writes large with the padlocked dial and the two bars; each attempt clears the board and its feedback underlines the givens as dials or ghost bars draw; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M6P04_ROWS,
+    },
+    'm6p05': {
+        'design': D + 'lessons/chem-m6-p05.md',
+        'learning_review': D + 'checks/m6p05-learning-review.md',
+        'science_check': D + 'checks/m6p05-claude-science-check.md',
+        'meta': {"title": "Preparing a buffer and demonstrating its properties: how do you prove it's a buffer?", "subtitle": "Two beakers both read pH 4.68: one is a buffer you've just made, the other is very dilute hydrochloric acid. How do you prepare a buffer, and what tests prove that it behaves like one?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 17, "lessonIntent": "choosing a buffer pair and amounts for a target pH near pKa; preparing about 100 mL accurately and making enough for every test; predicting and measuring its pH and explaining a small difference; designing tests with a water control, the same dose and separate fresh portions; comparing pH changes for added acid and base; explaining the acid result with the ratio; showing that dilution barely changes the pH but cuts the capacity; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No Henderson-Hasselbalch log form, no partial-neutralisation preparation (chem-m6-c14), no capacity curve (chem-m6-c11), no blood buffers (chem-m6-c11)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "choose-pair", "prepare", "measure-start", "test-design", "results", "why-small", "dilution", "capacity", "variables", "validity-reliability", "risk-assessment", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m6-c11 (a buffer is a weak acid and its conjugate base, both in large amounts; the conjugate base takes up added hydronium and the weak acid takes up added hydroxide; [H₃O⁺] = Ka × n(HA) ÷ n(A⁻) with moles because the volume cancels; equal amounts give pH = pKa; capacity depends on the amounts). chem-m6-c10 (ethanoic acid Ka 1.8 × 10⁻⁵, pKa 4.74). chem-m6-c07 (pH from [H₃O⁺]; the decimal-places rule). chem-m6-p03 (the meter routine; open distilled water reads near 5.9 because of dissolved CO₂). chem-m6-p04 (tenfold dilution with a volumetric pipette and flask; a strong acid's pH moves about one unit, 0.96 in its class data). chem-m5-p01 (validity, reliability, accuracy; variables; risk). Year 11: n = c × V.", "startsWith": "Prepare a weak acid and conjugate base mixture. The video opens: These two beakers both read pH four point six eight. One is a buffer you've just made. The other is very dilute hydrochloric acid.", "stopsAfter": "choosing a buffer pair and amounts for a target pH near pKa; preparing about 100 mL accurately and making enough for every test; predicting and measuring its pH and explaining a small difference; designing tests with a water control, the same dose and separate fresh portions; comparing pH changes for added acid and base; explaining the acid result with the ratio; showing that dilution barely changes the pH but cuts the capacity; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No Henderson-Hasselbalch log form, no partial-neutralisation preparation (chem-m6-c14), no capacity curve (chem-m6-c11), no blood buffers (chem-m6-c11).", "nextLesson": "direct titration to find an unknown concentration (route chem-m6-c12)."},
+        'teaching': {"task": "Two beakers both read pH 4.68: one is a buffer you've just made, the other is very dilute hydrochloric acid. How do you prepare a buffer, and what tests prove that it behaves like one?", "causalExplanation": "(1) same pH, so which is the buffer? You must test what it does (1); (2) a weak acid and its conjugate base in equal moles, so the pH should be close to pKa, 4.74 (2); (3) accurate volumes, because the ratio sets the pH; enough solution for every test (3); (4) measured 4.68, a little below prediction, because real ions affect each other and stocks aren't perfect; the practical compares changes (4); (5) split into fresh 20.0 mL portions with water controls; the same 1.00 mL dose; acid and base in separate portions, because base added after acid would just undo the acid (5); (6) the buffer moves less than a tenth of a unit; water moves 3.58 and 5.70 units (from 5.93, because of dissolved CO₂, P03) (6); (7) why: the dose is a tenth of the ethanoate, so the ratio moves from 1 to about 1.2 and the predicted pH from 4.74 to 4.66, the same small drop as measured (7); (8) dilute tenfold: both partners dilute equally, so the ratio and the pH barely change (4.68 to 4.72) (8); (9) but the diluted portion holds a tenth of the partners, and the same dose uses up all its ethanoate: the pH falls to 3.41; capacity depends on amounts (9); variables (10); validity, reliability, accuracy (11); risk (12); memory aid (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).", "conversationalApproach": "two beakers both read pH 4.68, one a buffer just made and one very dilute hydrochloric acid, so the practical asks how to prepare a buffer and which tests prove that it behaves like one. The pair (ethanoic acid and sodium ethanoate) and the amounts come from the buffers video, the buffer is made with volumetric pipettes in a batch large enough to split, and its measured pH is compared with the ratio prediction. The test is designed with fresh 20 mL portions, a water control given the same dose, and acid and base additions; the results show the buffer moving under a tenth of a unit while the water moves by units, and the C11 ratio calculation shows why. Dilution leaves the ratio, and so the pH, nearly unchanged, while capacity falls because a tenth of the partners is used up by the same dose. The variables, validity, reliability and accuracy, and the risk assessment follow, and the memory aid is \"Split. Dose. Compare.\" Two exam questions follow with brief feedback.", "openingDecision": "These two beakers both read pH four point six eight. One is a buffer you've just made. The other is very dilute hydrochloric acid. Which is which? You can't tell from the reading, because a buffer isn't defined by its pH. It's defined by what it does. So in this practical you'll make a buffer, and then prove it.", "understandingCheck": "(A1) \"A student tests whether a solution is a buffer. She adds 1.00 mL of 0.100 mol/L hydrochloric acid to 20.0 mL of the solution, and the pH changes from 4.68 to 4.59. She then adds 1.00 mL of 0.100 mol/L sodium hydroxide to the same beaker, and the pH returns to 4.68. She concludes that the solution is a buffer that resists both acid and base. Evaluate her method.\" Answer: the small change is consistent with a buffer, but (1) there is no control: the same additions to 20.0 mL of water are needed to show the change is unusually small; (2) the base was added to the beaker that already held the acid, so it just neutralised that acid and the return to 4.68 shows nothing about resisting base; use a fresh portion. Crossed mistake: \"the pH came back, so it resists base too\". (A2) \"A student mixes 30.0 mL of 0.100 mol/L ethanoic acid with 10.0 mL of 0.100 mol/L sodium ethanoate at 25 °C. Calculate the expected pH of the mixture. Ka(CH₃COOH) = 1.8 × 10⁻⁵.\" Answer: n(CH₃COOH) = 3.00 × 10⁻³ mol, n(CH₃COO⁻) = 1.00 × 10⁻³ mol; [H₃O⁺] = 1.8 × 10⁻⁵ × 3.00 = 5.4 × 10⁻⁵ mol/L; pH 4.27. Crossed mistake: \"pH = pKa = 4.74\" (true only for equal amounts).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to prepare a buffer and demonstrate its properties (ACSCH080)\" this video prepares students to carry out and analyse the buffer practical; it does not claim that watching it is conducting it. It teaches: choosing the pair and the amounts (ethanoic acid and sodium ethanoate in equal moles, so the pH should sit near pKa, a C11 callback); preparing about 100 mL with volumetric pipettes (the pipettes fix the moles) and making enough for every test; measuring its pH and comparing it with the prediction; testing four properties with a water control: resisting a small addition of acid, resisting a small addition of base (each in its own fresh portion), resisting dilution, and limited capacity (the diluted buffer and the same dose); explaining the acid result with C11's [H₃O⁺] = Ka × n(HA) ÷ n(A⁻); the variables; validity, reliability and accuracy; the risk assessment. Placement (playlist order 17): after C07 (pH calculation), C08 (weak acids stay mostly un-ionised), C10 (Ka, pKa) and C11 (buffers), so pH calculations and C11's ratio method are used, not re-taught. Not re-taught: why the conjugate base takes up hydronium and the weak acid takes up hydroxide, the two equations, why a strong acid with its salt is not a buffer, blood buffers (all C11; recalled in one clause each where needed). Not here: the Henderson-Hasselbalch log form (C11 decided to leave it out); preparing a buffer by partial neutralisation (chem-m6-c14); a dropwise capacity curve (C11 scene 8 shows it; this video demonstrates capacity with one test instead); buffer range \"pKa ± 1\"."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C11, P03): ethanoic acid amber, ethanoate grey-violet (C11 ratio bar), hydronium teal, hydroxide violet; readout amber digits; buffer beakers marked with a teal-grey tab, water beakers grey; buffer change bars teal, water change bars pale blue; controls green, hazards terracotta. Board layout (three zones, constant): top-left the short task line; the centre holds the glassware, the beaker grid and the meter; the right third holds the current card (prediction, method, results, calculation, variables, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: `m6-ph-meter-probe-beaker-v1.png` (inspected for P03 on 21 Oct; coded readout), `m6-beaker-v1.png` (coded copies, up to six on screen), `m6-volumetric-pipette-filler-v1.png` (inspected 21 Oct: bulb pipette with red filler; native aspect, rotated whole; the 50.0 mL, 20.0 mL and 10.00 mL transfers), `m5x-graduated-pipette-v1.png` (inspected 21 Oct: graduated pipette with red filler, at an angle; the 1.00 mL doses), `m6-volumetric-flask-v1.png` (inspected 21 Oct; the tenfold dilution), `m6-wash-bottle-v1.png`, `m5x-safety-glasses-v1.png`, `m6-vinegar-bottle-v1.png` is not used (glacial ethanoic acid is a teacher stock, not vinegar). From P03's Codex asset brief (not yet painted): `m6-buffer-bottle-v1.png` (used here for the two reagent bottles and the calibration buffers), `m6-ph-probe-holder-v1.png`, `m6-lab-tissue-v1.png`; if `m6-buffer-bottle-v1.png` is not delivered, `p03-dropper-bottle-v1.png` (inspected 21 Oct: clear dropper bottle with a blank label) is the fallback for the reagent bottles. No human figures.", "transitionPlan": "Two meter-and-beaker plates open the hook with both readouts settling on 4.68; two reagent bottles stand in the right zone for the chosen pair; the volumetric pipette sends coded streams into the batch beaker; the probe moves on its arc into the buffer and the predicted and measured card writes; the batch slides left and a 2 × 2 grid of buffer and water portions writes with its dose columns; the results table fills with change bars, tiny for the buffer and long for the water; the board clears to the task line, the grey ratio equation strip, grouped givens and one working line per stage; the pipette and volumetric flask return for the tenfold dilution as the ratio bar keeps its shape; the diluted beaker's short ratio bar empties under the same dose; the variables card, the three evaluation cards and the risk table write in turn; the memory aid writes large with three icons; each attempt clears the board and its feedback underlines the givens as a ghost control beaker or the mole lines write; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M6P05_ROWS,
+    },
+    'm6p06': {
+        'design': D + 'lessons/chem-m6-p06.md',
+        'learning_review': D + 'checks/m6p06-learning-review.md',
+        'science_check': D + 'checks/m6p06-claude-science-check.md',
+        'meta': {"title": "Determining an unknown concentration by titration: how do you get a titre you can trust?", "subtitle": "Two benches titrate the same hydrochloric acid against the same standard. Both get concordant titres, but their means differ by half a millilitre. How do you carry out a titration step by step so the titre can be trusted, and how do you trace what went wrong?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 19, "lessonIntent": "preparing a sodium carbonate standard and explaining each step; calculating its concentration; pipetting an aliquot and explaining the rinse, the filler and the last drop; explaining why the conical flask may be wet; setting up and reading a burette to 0.05 mL at eye level, with no tip bubble; carrying out a rough run and accurate runs to the first permanent orange; recording a titre table, excluding a faulty run for a known cause and repeating it; calculating the unknown concentration; tracing a technique error through the titre to the answer; naming the controlled conditions; judging validity, reliability and accuracy, including why concordant titres can still be inaccurate; writing the risk rows. No indicator choice (chem-m6-c13), no error-direction tables (chem-m6-g04), no aliquot scale-up or percentage by mass (chem-m6-g03), no percentage uncertainty."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "plan", "make-standard", "make-up-concentration", "aliquot", "burette-setup", "burette-reading", "titrate", "results", "calculation", "bench-b-error", "controlled", "validity-reliability", "risk-assessment", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m6-c12 (titration, standard solution, primary standard, aliquot, burette, titrant, titre, indicator, endpoint, equivalence point, rough and concordant titres within 0.10 mL, the four steps \"known to moles, ratio, unknown\", Na₂CO₃ + 2HCl, sodium carbonate dried before weighing). chem-m6-p04 and p05 (volumetric pipette and flask used in a dilution; the pipette filler). chem-m5-p01 (validity, reliability, accuracy; variables; risk). Year 11 (n = m/M, n = cV). Not assumed: rinsing rules, meniscus reading, bubbles, error direction.", "startsWith": "Prepare or select a standard, then set up burette and pipette. The video opens: Two lab benches titrate the same hydrochloric acid against the same standard. Each bench's titres agree within zero point zero five millilitres. But bench A's average is twenty four point three three, and bench B's is twenty four point eight two.", "stopsAfter": "preparing a sodium carbonate standard and explaining each step; calculating its concentration; pipetting an aliquot and explaining the rinse, the filler and the last drop; explaining why the conical flask may be wet; setting up and reading a burette to 0.05 mL at eye level, with no tip bubble; carrying out a rough run and accurate runs to the first permanent orange; recording a titre table, excluding a faulty run for a known cause and repeating it; calculating the unknown concentration; tracing a technique error through the titre to the answer; naming the controlled conditions; judging validity, reliability and accuracy, including why concordant titres can still be inaccurate; writing the risk rows. No indicator choice (chem-m6-c13), no error-direction tables (chem-m6-g04), no aliquot scale-up or percentage by mass (chem-m6-g03), no percentage uncertainty.", "nextLesson": "standardisation and titration calculation practice (route chem-m6-g03)."},
+        'teaching': {"task": "Two benches titrate the same hydrochloric acid against the same standard. Both get concordant titres, but their means differ by half a millilitre. How do you carry out a titration step by step so the titre can be trusted, and how do you trace what went wrong?", "causalExplanation": "(1) concordant titres on both benches, different means: which is right? (1); (2) the plan: a weighed standard in the flask, the unknown in the burette, carbonate takes two HCl (C12) (2); (3) dry the solid so none of its mass is water; weigh exactly; rinse every grain into the flask (3); (4) make up to the mark and invert so every aliquot is the same; the standard's concentration from its mass (4); (5) rinse the pipette with the carbonate because water would dilute it; leave the last drop because the pipette is calibrated that way; the flask can be wet because water adds no moles (5); (6) rinse the burette with the acid; remove the funnel; fill the tip so no bubble is counted as acid (6); (7) read at eye level to 0.05 mL; the numbers get bigger going down, so a reading from above is too low (7); (8) a rough run finds the endpoint; accurate runs go dropwise near it, to the first permanent orange (8); (9) titre = final − initial; a run with a known fault (a bubble) is excluded and repeated; mean of three concordant titres (9); (10) the calculation (10); (11) bench B: water in the burette dilutes the acid, so more millilitres react with the same carbonate, the titre is too big and the answer too low; rinse with what's going in (11); controlled conditions (12); validity, reliability, accuracy (13); risk (14); attempts and brief feedback (15 to 18); decision rule and handoff (19); key notes (20).", "conversationalApproach": "two benches titrate the same acid against the same standard and both get concordant titres, yet their means differ by half a millilitre, so the practical asks how to carry out each step so a titre can be trusted and how to trace what went wrong. The plan puts a weighed sodium carbonate standard in the flask and the unknown hydrochloric acid in the burette; each step then gets its reason: dry, weigh and rinse every grain in, make up to the mark and invert, rinse the pipette and burette with what goes in, clear the tip bubble, read the meniscus at eye level, titrate a rough run first and then drop by drop. Bench A's table drops the run with a recorded fault, the C12 calculation is staged one line per stage, and bench B's water-rinsed burette is traced through the titre to a concentration that comes out too low. Controlled conditions, validity, reliability and accuracy, and the risk assessment follow. Two exam questions follow with brief feedback.", "openingDecision": "Two lab benches titrate the same hydrochloric acid against the same standard. Each bench's titres agree within zero point zero five millilitres. But bench A's average is twenty four point three three, and bench B's is twenty four point eight two. So how do you run a titration you can trust, and spot what went wrong?", "understandingCheck": "(A1) \"A student rinses a 25.00 mL pipette with distilled water and then, without drying it, uses it to transfer the sodium carbonate aliquot into the conical flask. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid.\" Answer: the water left in the pipette dilutes the aliquot, so it holds fewer moles of carbonate than calculated; less acid is needed, so the titre is smaller; the calculation divides the full calculated moles by a smaller titre, so c(HCl) is too high. Crossed mistake: \"the carbonate is diluted, so c(HCl) comes out too low\". (A2, Revision 2, the learning review's alternative) \"Before adding the aliquot, a student rinses the conical flask with the sodium carbonate solution. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid.\" Answer: the rinse leaves a film of carbonate solution in the flask, so the flask holds more moles than the aliquot alone; more acid is needed, so the titre is bigger; the calculation divides the aliquot's moles by a bigger titre, so c(HCl) is too low. Crossed mistake: \"rinsing with the solution is correct, so no effect\". The two answers differ (A1 too high, A2 too low).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" this video prepares students to carry out and analyse a titration practical; it does not claim that watching it is conducting it. It teaches: preparing a sodium carbonate primary standard (dried, weighed, dissolved, transferred with rinsings, made up to the mark, inverted) and why each step matters; pipetting the aliquot (rinse with the solution, filler, drain, touch the tip, leave the last drop); why the conical flask may be wet with distilled water; setting up the burette (rinse with the acid, fill below eye level, remove the funnel, fill the tip, no bubble); reading the burette at eye level to 0.05 mL; the rough run and the accurate runs (fast to about 1 mL short, then dropwise with swirling, first permanent orange); the results table, a faulty run identified by its cause, excluded and repeated (the C12 draft correction 2 fix); the calculation in one compact pass (C12 callback); tracing a technique error through the titre to the answer (water-rinsed burette, bubble); controlled conditions; validity, reliability and accuracy, including \"concordant is not the same as accurate\"; the risk assessment. Placement (playlist order 19): after C12 (order 18), before G03 (order 20) and before C13 (indicators, order 21), C14 (curves), C15 (back and conductometric titrations) and C16 (method choice). So methyl orange is named, with its colours, but not justified (C13 owns indicator choice); no curve, conductivity or back titration appears. Not re-taught: what a titration, standard solution, aliquot, titre, endpoint, equivalence point, primary standard and concordance are; the four-step calculation; why carbonate takes two HCl (all C12; recalled in one clause each). Not here: indicator choice and equivalence pH (chem-m6-c13); error-direction tables across many errors (chem-m6-g04); aliquot scale-up, percentage by mass and the full mass-to-concentration practice (chem-m6-g03); percentage uncertainty arithmetic; boiling out carbon dioxide near the endpoint (author note e)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C12): the known solution's values (standard) navy; the unknown's values amber; the ratio box teal; concordant titres ringed teal, excluded rows crossed grey; error-chain chips: cause grey, \"titre bigger\" or \"titre smaller\" violet, \"answer too low\" or \"too high\" terracotta; controls green, hazards terracotta; methyl orange yellow, orange and red as painted. Board layout (three zones, constant, as P05): top-left the short task line; the centre holds the apparatus; the right third holds the current card (procedure step, reason, titre table, calculation, error chain, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: painted plates, inspected 21 Oct: `m6-burette-clamp-stand-v1.png` (retort stand, clamp, burette with blue tap; the fill gauge drawn over its tube), `m6-conical-flask-v1.png`, `m6-white-tile-v1.png`, `m6-volumetric-flask-v1.png` (stoppered, with a neck mark), `m6-volumetric-pipette-filler-v1.png` (bulb pipette with red filler, native aspect, rotated whole), `m6-funnel-v1.png` (glass funnel; the standard transfer and the burette fill), `m6-beaker-v1.png` (the weighing beaker; the beaker of unknown acid), `m6-wash-bottle-v1.png` (rinses), `m6-indicator-methyl-orange-set-v1.png` (three conical flasks, red, orange and yellow, in one plate; scene 8 thumbnail of the colour order and the fallback for the endpoint flask, see Assets), `m5x-safety-glasses-v1.png` (risk). From P03's Codex asset brief (not yet painted): `m6-buffer-bottle-v1.png` is not needed here. Not used: `m6-clip-phenolphthalein-*` (wrong indicator for this titration), the bench balance clip art in `public/assets/` root (`scale.png`, `lab-footage-balance-beaker.png`: inspected, white-background icon style that does not match the painted plates). No human figures.", "transitionPlan": "Two burette, flask and tile plates open the hook with their bench tags and mini titre tables; the board clears to one set-up with its coded labels for the plan; the analytical balance plate, beaker and funnel build the standard with a step card in the right zone; the volumetric flask fills to the mark and a magnifier ring opens on the meniscus; the pipette rinses, fills and drains with reason tags; the burette lowers below a dashed eye-level line, rinses, fills and loses its funnel and tip bubble; the meniscus close-up plate takes the centre with coded scale numerals and three sight lines; the volume counter runs fast for the rough run and then drop by drop as the flask colour swaps; C12's titre table widens the right zone and run 2 is greyed with its fault note; the table dims to a strip as the task line, mole bridge, givens and working write one stage per line; bench B's table returns and the error chain draws chip by chip; the controlled list, the three evaluation cards and the risk table write in turn; each attempt clears the board and its feedback underlines the question as the error chain writes; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M6P06_ROWS,
+    },
+    'm6g01c': {
+        'design': D + 'lessons/chem-m6-g01.md',
+        'learning_review': D + 'checks/m6g01c-learning-review.md',
+        'science_check': D + 'checks/m6g01c-claude-science-check.md',
+        'meta': {"title": "Strong Acid and Base pH: Dilution and Mixing Practice Questions", "subtitle": "When a strong acid or base question dilutes a solution, mixes two, or hides a 2 in a formula, which method fits, and how do you check the answer?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 11, "lessonIntent": "calculating the pH of a dilute strong acid and the hydroxide concentration in it with Kw; calculating pH after a \"made up to\" dilution through moles, and checking the change with the log scale; converting two pH values to concentrations and calculating the pH after mixing, using the excess and the total volume; calculating the pH after mixing barium hydroxide with hydrochloric acid, counting two hydroxide ions per formula unit and finishing through pOH; checking each answer is on the right side of 7."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question", "q4-question"],
+        'ids': ["hook", "q1-question", "q1-ph", "q1-hydroxide", "q1-mistake", "q2-question", "q2-moles", "q2-check", "q2-mistake", "q3-question", "q3-moles", "q3-excess", "q3-mistake", "q4-question", "q4-excess", "q4-ph", "q4-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From C05: strong acids and bases ionise or dissociate completely; nitric and hydrochloric acids are strong; barium hydroxide is a strong base releasing two OH⁻ per formula unit; strength is not concentration. From C07: pH = −log₁₀[H₃O⁺], [H₃O⁺] = 10⁻ᵖᴴ; decimal places in pH = significant figures in [H₃O⁺]; Kw = [H₃O⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C in every aqueous solution; pOH and pH + pOH = 14.00 at 25 °C; dilution conserves moles and moves pH toward 7; mixing: neutralise first, then divide the excess by the total volume. From C03: H⁺ + OH⁻ → H₂O, and the reactant that runs out. Year 11: n = cV with V in litres; \"made up to\" in volumetric work (C07 scene 9 showed a flask made up to the mark). Not assumed: any weak-acid method.", "startsWith": "An unseen strong acid or base pH question. The video opens: A strong acid or base question can do more than hand you a concentration and ask for the pH.", "stopsAfter": "calculating the pH of a dilute strong acid and the hydroxide concentration in it with Kw; calculating pH after a \"made up to\" dilution through moles, and checking the change with the log scale; converting two pH values to concentrations and calculating the pH after mixing, using the excess and the total volume; calculating the pH after mixing barium hydroxide with hydrochloric acid, counting two hydroxide ions per formula unit and finishing through pOH; checking each answer is on the right side of 7.", "nextLesson": "weak acid and weak base pH with an ICE table (route chem-m6-c08)."},
+        'teaching': {"task": "When a strong acid or base question dilutes a solution, mixes two, or hides a 2 in a formula, which method fits, and how do you check the answer?", "causalExplanation": "Why a dilute nitric acid still gives [H₃O⁺] = c: strength is how fully it ionises (2b, 2d). Why an acid has hydroxide: water's equilibrium is always present, so Kw fixes [OH⁻] (2c). Why dilution is worked in moles: water adds no acid (3b). Why the pH rises by exactly 1: tenfold lower concentration on a log scale (3c). Why pH values cannot be averaged: pH is a log scale and the acid and base react, so moles decide (4b, 4d). Why the excess sets the pH and spreads through the total volume (4c, 5c). Why barium hydroxide doubles the hydroxide: two OH⁻ per formula unit (5b). Why the forgotten 2 flips the answer: the wrong count makes the acid look in excess (5d).", "conversationalApproach": "A strong acid or base question can dilute the solution, mix it with a base or hide a two in a formula, and each of the four walkthroughs comes down to three checks: what is in there and how much, in what volume, and does the answer make sense. Q1 (dilute nitric acid) shows that a strong acid stays strong when dilute and that Kw still gives the hydroxide in an acid; Q2 follows the moles through a \"made up to\" dilution and checks the pH rise of one unit on the log scale; Q3 turns two pH values into concentrations, neutralises first and then dilutes into the total volume; Q4 counts the two hydroxides in barium hydroxide, finds the base in excess and goes through the pOH. Each question ends with its spoken, crossed classic mistake (dilute means weak, adding the volumes, averaging pH values, forgetting the 2), and the decision board gives the first move for each kind of question.", "openingDecision": "A strong acid or base question can do more than hand you a concentration and ask for the pH. It can dilute it, mix it with a base, or hide a two in a formula. Each one here comes down to three checks. What's in there, and how much? In what volume? And does the answer make sense? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.", "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a): concentrations, volumes, pH values, 25 °C, \"assume the volumes add\" (Q3, Q4) and Kw (Q1). Nothing answer-bearing during the holds; the check strip dims.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p53), as printed: \"calculate pH, pOH, hydrogen ion concentration ([H+]) and hydroxide ion concentration ([OH–]) for a range of solutions (ACSCH102)\" \"calculate the pH of the resultant solution when solutions of acids and/or bases are diluted or mixed\" Practice and transfer only: the coverage rows stay with chem-m6-c07; G01 adds a practice row, not first coverage. starts at the route's \"Present an unfamiliar pH task and protect an attempt\" and stops at its \"Work through moles, total volume and logarithms, then check the result\". Four strong acid and strong base questions, each with a trap: a dilute strong acid and the hydroxide in it; a \"made up to\" dilution; a mixture given by pH values; a barium hydroxide mixture where forgetting the 2 flips which reactant is in excess. Each walkthrough ends with a sense check (the pH is on the right side of 7, or it moved by the right amount). Not here: weak acid and weak base pH (chem-m6-c08, the next video); Ka and pKa (chem-m6-c10); sulfuric acid pH (C07 states only the \"assume both\" condition; no item here, see Open decisions); buffers (chem-m6-c11); salt and equivalence-point pH (chem-m6-c13, c14); Kw at other temperatures (C07 scene 6; every question here is at 25 °C)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the bio-m6-g01 layout: top-left the question card (stem, data and demand, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Strong acid\", \"Dilution\", \"Mixing\", \"Mixing: excess base\"), hidden during each attempt where it would name the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). A check strip on the far left carries three rows, \"what's in there?\", \"in what volume?\", \"does it make sense?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Working follows the C07 staging: a short task line, an equation strip where the reaction matters, one stage per line, each earlier line dimming, kept chips for the one result the next scene needs. Colour key from C07: H₃O⁺ teal, OH⁻ violet, water pale blue, spectator ions grey, meter readouts amber digits, pOH lines violet-tinted, pH lines teal-tinted; amber is used only for underlined givens and for the sense check. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.", "transitionPlan": "The heading writes on and four stimulus thumbnails fan out with the three-check strip; each question opens on a fresh board with the type badge hidden while the worded card writes with its beaker, pipette or flask plates; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used while the working writes one stage per line and earlier lines dim to kept chips; the ion lens, the C07 LogRuler, the pipette arc into the flask and the IonBars comparison draw at their cues; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."},
+        'rows': M6G01C_ROWS,
+    },
+    'm6g02c': {
+        'design': D + 'lessons/chem-m6-g02.md',
+        'learning_review': D + 'checks/m6g02c-learning-review.md',
+        'science_check': D + 'checks/m6g02c-claude-science-check.md',
+        'meta': {"title": "Weak Acid pH, Ka and Amphiprotic Ions: HSC-Style Practice Questions", "subtitle": "A weak acid question gives you a Ka, a measured pH, or an ion that can go either way. Which method fits those data, and how do you check the answer?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 15, "lessonIntent": "calculating the pH of a weak acid with the shortcut and justifying it with the 5% check; recognising a failed check, solving the full equation for x and comparing the result with the shortcut; calculating Ka and pKa from a measured pH and concentration, with no 5% check because [H₃O⁺] is measured, and explaining why pKa is not the pH; writing the equations for HCO₃⁻ and H₂PO₄⁻ reacting with water as an acid and as a base, and deciding which way each mainly reacts with water by comparing its Ka with its Kb from the acid one proton up, and predicting whether solutions of NaHCO₃ and KH₂PO₄ are basic or acidic."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question", "q4-question"],
+        'ids': ["hook", "q1-question", "q1-estimate", "q1-check", "q1-mistake", "q2-question", "q2-check-fails", "q2-full", "q2-mistake", "q3-question", "q3-backwards", "q3-ka", "q3-mistake", "q4-question", "q4-carbonate", "q4-phosphate", "q4-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From C08: a weak acid ionises partly; the ICE table (c, 0, 0; −x, +x, +x; c − x, x, x); Ka = x²/(c − x); drop x when Ka is tiny next to c, so x = √(Ka × c); check x ÷ c under 5%, a rule of thumb; if the check fails, solve the full equation; x has the significant figures of Ka, so pH has that many decimal places. From C10: [H₃O⁺] = 10⁻ᵖᴴ; the table run backwards ([A⁻] = [H₃O⁺], [HA] = c − [H₃O⁺]) needs no 5% check, because [H₃O⁺] is measured; pKa = −log Ka, with two decimal places for a two-significant-figure Ka; pH describes a solution and Ka describes the acid; Ka × Kb = Kw for a conjugate pair. From C06: amphiprotic species give or take a proton depending on the partner; the proton chains H₂CO₃, HCO₃⁻, CO₃²⁻ and H₃PO₄, H₂PO₄⁻, HPO₄²⁻, PO₄³⁻; NaHCO₃ and KH₂PO₄ dissolve to give the amphiprotic anion with a spectator cation. From Module 5 (chem-m5-c06b): \"multiply both sides by the bottom, then divide\" for rearranging. Mathematics: the quadratic formula (Mathematics Advanced). For students without it, the formula line on screen shows every substituted value, and the substitution check confirms the root. Not assumed: buffers, salt hydrolysis, half-equivalence.", "startsWith": "Unseen weak-acid data. The video opens: Weak acid questions give you different data, and the data choose the method.", "stopsAfter": "calculating the pH of a weak acid with the shortcut and justifying it with the 5% check; recognising a failed check, solving the full equation for x and comparing the result with the shortcut; calculating Ka and pKa from a measured pH and concentration, with no 5% check because [H₃O⁺] is measured, and explaining why pKa is not the pH; writing the equations for HCO₃⁻ and H₂PO₄⁻ reacting with water as an acid and as a base, and deciding which way each mainly reacts with water by comparing its Ka with its Kb from the acid one proton up, and predicting whether solutions of NaHCO₃ and KH₂PO₄ are basic or acidic.", "nextLesson": "how a buffer resists a change in pH (route chem-m6-c11)."},
+        'teaching': {"task": "A weak acid question gives you a Ka, a measured pH, or an ion that can go either way. Which method fits those data, and how do you check the answer?", "causalExplanation": "Why x can be dropped in Q1: Ka is tiny next to c, so very little ionises (2b), confirmed by the check (2c). Why the shortcut fails in Q2: about a quarter of the acid ionises, so c − x is nowhere near c (3b). Why the full equation is needed and which root to keep (3c). Why [A⁻] equals [H₃O⁺] when working backwards: each molecule that ionises makes one of each (4b). Why there is no 5% check backwards: [H₃O⁺] is measured, not estimated (4b grey tag, decision board, key note 3). Why pKa is not pH: pH depends on this solution's concentration, pKa on the acid (4d). Why an amphiprotic ion goes one way: its two reactions with water compete, and the larger constant wins (5b, 5c). Why the Kb uses the Ka one proton up: accepting a proton turns the ion into its conjugate acid (5b, spoken), and Ka × Kb = Kw holds only for a conjugate pair (5d, spoken).", "conversationalApproach": "Weak acid questions give different data, and the data choose the method: a Ka and a concentration (estimate x, then check it was fair), a measured pH (run the table backwards), or an ion that can go either way (compare Ka with Kb). Q1 (hypochlorous acid) uses the shortcut and justifies it with the under-five-per-cent check; Q2 (chloroethanoic acid) tries the shortcut, sees the check fail because about a quarter ionises, and solves the full quadratic; Q3 (benzoic acid) goes from a measured pH to [H3O+], the equilibrium row, Ka and pKa; Q4 compares the two reactions of hydrogen carbonate and of dihydrogen phosphate with water, finding each Kb from the conjugate acid's Ka. Each question ends with its spoken, crossed classic mistake (no square root, keeping a failed shortcut, pKa equal to pH, Kb from the ion's own Ka), and the decision board chooses the method from the data.", "openingDecision": "Weak acid questions give you different data, and the data choose the method. A K a and a concentration? Estimate x, then check it was fair. A measured pH? Work backwards to K a. An ion that can give or take a proton? Compare its K a with its K b. Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.", "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a): concentrations, Ka values, the measured pH, 25 °C, \"monoprotic\" (Q2, Q3), all five constants in Q4 and Q4's three demands, including the equations. Nothing answer-bearing during the holds; the check strip dims.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p53), as printed: \"calculate pH, pOH, hydrogen ion concentration ([H+]) and hydroxide ion concentration ([OH–]) for a range of solutions (ACSCH102)\" \"calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)\" \"write ionic equations to represent the dissociation of acids and bases in water, conjugate acid/base pairs in solution and amphiprotic nature of some salts, for example: - sodium hydrogen carbonate - potassium dihydrogen phosphate\" The route entry lists C6-IQ2-02 only. Q3 applies C6-IQ3-04 (Ka and pKa) and Q4 applies C6-IQ2-04 (the two named amphiprotic salts) with C10's Ka × Kb = Kw, so both are quoted. Practice and transfer only: the coverage rows stay with chem-m6-c06, c08 and c10; G02 adds practice rows, not first coverage. Root to decide whether the route entry adds C6-IQ3-04 and C6-IQ2-04 as practice actions. starts at the route's \"Present unfamiliar weak-acid data and protect an attempt\" and stops at its \"Choose an approximation or full method, test the assumption and check pH\". Four questions, each chosen by the data it gives: a Ka and a concentration where the shortcut passes; a Ka and a concentration where the 5% check fails and the full equation is solved; a measured pH, worked backwards to Ka and pKa; and the amphiprotic Ka-against-Kb item assigned here by the route review (`../../module6-route-review-claude.md`, Additions, 19 Oct: \"Amphiprotic Ka against Kb (which way an amphiprotic ion reacts): C10 deferred it and C11 leaves it out. It goes to chem-m6-g02 (practice).\"). Not here: weak bases (C08 worked one; no new method); buffers and Henderson-Hasselbalch (chem-m6-c11, the next video); salt pH calculations and hydrolysis of ions from one weak parent (chem-m6-c13, c14); polyprotic pH calculations (C10 decision: out); the pH of an amphiprotic salt solution (Q4 predicts acidic or basic only, with no number)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the bio-m6-g01 layout: top-left the question card (stem, data and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Ka given: shortcut\", \"Ka given: full equation\", \"pH given: backwards\", \"Amphiprotic: Ka against Kb\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). A check strip on the far left carries three rows, \"what data?\", \"is x small?\", \"does it make sense?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Working follows the C08 and C10 staging: equation strip, the ICE table as one item (once filled, only its equilibrium row stays bright), the C08 check ruler (a long bar for c, a sliver for x, a dashed 5% line), one stage per line, earlier lines dimming, one kept chip into the next scene. Colour key from C08 and C10: H₃O⁺ teal, OH⁻ violet, whole weak-acid molecules amber-outlined, the acid's anion grey-violet, Ka values teal, pKa navy, Kb violet-tinted, meter readouts amber digits; amber is otherwise used only for underlined givens and the check. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.", "transitionPlan": "The heading writes on and three data chips fan out, one per cue; each question opens on a fresh board with the type badge hidden while the worded card writes, with the meter, baking soda or fertiliser plates small at its corner; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as the ICE table, XRuler sliver, quadratic lines or KaFrac write one stage per line with earlier lines dimming; the two-reaction fork draws for each amphiprotic ion and shrinks to a grey thumbnail with its result chip; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."},
+        'rows': M6G02C_ROWS,
+    },
+    'm6g03c': {
+        'design': D + 'lessons/chem-m6-g03.md',
+        'learning_review': D + 'checks/m6g03c-learning-review.md',
+        'science_check': D + 'checks/m6g03c-claude-science-check.md',
+        'meta': {"title": "Titration Calculations: Standardisation, Aliquots and % by Mass: HSC-Style Practice", "subtitle": "A titration question gives you a weighed standard, a table of burette readings, a sample diluted in a flask, or a tablet. How do you follow the moles from the standard to the answer, and check the titres, the scale-up and the units on the way?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 20, "lessonIntent": "calculating a standard's concentration from the mass of a hydrate, with the water of crystallisation in the molar mass; turning burette readings into titres and choosing the concordant ones; standardising sodium hydroxide with a 1 : 2 ratio; scaling moles up from an aliquot to the flask and back to the original sample; calculating a concentration and a percentage by mass for a liquid from its density; writing the equation for hydrogen carbonate with acid and using its 1 : 1 ratio; calculating a percentage by mass for a solid from its weighed mass; checking each answer for size and units."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question"],
+        'ids': ["hook", "q1-question", "q1-standard", "q1-titres", "q1-naoh", "q1-mistake", "q2-question", "q2-aliquot", "q2-scale-up", "q2-percent", "q2-mistake", "q3-question", "q3-ratio", "q3-percent", "q3-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From C12: the four steps (\"known to moles, ratio, unknown\"); concordant titres within 0.10 mL, rough run excluded; Na₂CO₃ + 2HCl; H₂SO₄ + 2NaOH (a diprotic acid takes two hydroxides); the unknown may be in the burette or the flask; results to the data's significant figures. From P06: making a standard from a weighed solid (n = m/M, then c = n/V); titre = final − initial reading; readings to 0.05 mL. From C06: carbonate accepts two protons; hydrogen carbonate is amphiprotic and accepts one. From C02: acid + hydrogen carbonate → salt + water + carbon dioxide. From Year 11: molar mass from the data sheet, water of crystallisation in a formula, n = m/M, n = cV, mass = density × volume, percentage by mass. Not assumed: aliquot scale-up, percentage by mass from density.", "startsWith": "An unseen standardisation. The video opens: Titration questions often chain several steps: make the standard, choose the titres, use the ratio, scale up from an aliquot, then turn moles into a percentage.", "stopsAfter": "calculating a standard's concentration from the mass of a hydrate, with the water of crystallisation in the molar mass; turning burette readings into titres and choosing the concordant ones; standardising sodium hydroxide with a 1 : 2 ratio; scaling moles up from an aliquot to the flask and back to the original sample; calculating a concentration and a percentage by mass for a liquid from its density; writing the equation for hydrogen carbonate with acid and using its 1 : 1 ratio; calculating a percentage by mass for a solid from its weighed mass; checking each answer for size and units.", "nextLesson": "which indicator fits a titration (route chem-m6-c13)."},
+        'teaching': {"task": "A titration question gives you a weighed standard, a table of burette readings, a sample diluted in a flask, or a tablet. How do you follow the moles from the standard to the answer, and check the titres, the scale-up and the units on the way?", "causalExplanation": "Why the hydrate's M includes the waters: they were weighed as part of the crystal (2b, 2e). Why run 2 and the rough run are left out: the rough run only locates the endpoint, and run 2 disagrees with the others (2c). Why the ratio is 1 : 2 in Q1: oxalic acid gives two protons (the given equation, 2d). Why moles are tracked, not concentrations, after a dilution: dilution changes the concentration but not the moles taken from the sample (3b). Why × 12.5: the flask holds 12.5 aliquots, and all its acid came from the 10.00 mL sample (3c). Why the density: a percentage by mass needs two masses (3d). Why 1 : 1 for hydrogen carbonate: it accepts only one more proton (4b, 4d). Why no density for the tablet: it was weighed (4c).", "conversationalApproach": "Titration questions chain several steps (make the standard, choose the titres, use the ratio, scale up from an aliquot, turn moles into a percentage), and losing one loses the answer, so every walkthrough follows the moles. Q1 standardises sodium hydroxide with oxalic acid dihydrate, using a molar mass that includes the waters because they were weighed, readings turned into titres with the rough run and the outlier left out, and the four steps known to moles, ratio, unknown; Q2 titrates aliquots of a diluted brick cleaner, scales up by the flask over the aliquot and uses the density for a percentage by mass; Q3 writes the hydrogen carbonate equation first to get a one to one ratio, then scales up to the tablet's mass. Each question ends with its spoken, crossed classic mistake (no waters, stopping at the aliquot, borrowing carbonate's 1 : 2), and the decision board lists the checks for any titration calculation.", "openingDecision": "Titration questions often chain several steps: make the standard, choose the titres, use the ratio, scale up from an aliquot, then turn moles into a percentage. Lose one link, and every number after it is wrong: stop one step early in a dilution question, and your answer can be twenty five times too small. Here are three HSC-style questions. Pause and try each one, then we'll follow the moles, one step at a time.", "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): the mass, formula with \"·2H₂O\", flask and aliquot volumes, the equation and all ten readings in Q1; the \"only substance that reacts with sodium hydroxide\" condition, the sample volume, flask and aliquot volumes, the NaOH concentration (restated), three titres and the density in Q2; the tablet's mass, \"do not react with acid\", volumes, the acid's concentration and three titres in Q3. Nothing answer-bearing during the holds; the check strip dims.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p53), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" Practice and transfer only: the coverage rows stay with chem-m6-c12 (method and calculation) and chem-m6-p06 (conduct and errors); G03 adds practice rows, not first coverage. starts at the route's \"Present a new standardisation and titre table and protect an attempt\" and stops at its \"Calculate concentration with stoichiometry and check units and titre choice\". Three questions, each a chain of steps with one trap: (1) standardising sodium hydroxide against a primary standard made from a weighed hydrate, with a titre table of burette readings (titre choice; the hydrate's molar mass); (2) a liquid product diluted in a volumetric flask, titrated with that standardised base, reported in mol/L and as a percentage by mass through its density (aliquot scale-up, assigned here by C12 Open decisions; percentage by mass from density, assigned here by C12, C15 and C16 Boundaries); (3) a solid tablet made up to volume, titrated with the P06 acid, reported as a percentage by mass of the weighed tablet, with no equation given (the ratio the student must write; scale-up again with a different factor). Not here: back titrations (chem-m6-c15); indicator choice and equivalence pH (chem-m6-c13, the next video; indicators are named in the stems as data only); curves and conductivity (chem-m6-c14); error direction (chem-m6-p06 taught it for technique; chem-m6-g04 practises tables); percentage uncertainty; polyprotic stages beyond the overall ratio."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the G01 and G02 layout: top-left the question card (stem, data, table and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Standardisation: mass to c\", \"Diluted sample: scale up\", \"Solid sample: % by mass\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). A check strip on the far left carries four rows, \"titres chosen?\", \"ratio from the equation?\", \"scaled up?\", \"units and sense?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Strip readability (build rule, Revision 2): the shrunk question strip must stay large enough that an underlined given can be read at playback speed (checked in the stills pass and at playback); if Q1's reading table cannot be read when shrunk, the table stays at full size and only the stem shrinks. Working follows the C12 staging: equation strip, the mole bridge (known → ratio → unknown) with a fourth box added in Q2 and Q3 (\"× flask ÷ aliquot\"), the titre table and concordance strip (Q1), one stage per line, earlier lines dimming, one kept chip into the next scene. Colour key from C12: the known solution's values navy, the unknown's amber, the ratio box teal, concordant titres ringed teal, excluded rows crossed grey; amber is otherwise used only for underlined givens. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.", "transitionPlan": "The heading writes on and a chain of five linked chips draws across the right, one per spoken step; each question opens on a fresh board with the type badge hidden while the worded card writes with its data table or the antacid plate; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used; the titre row fills under the card's own table with the rough and outlier runs crossed; the mole bridge draws box by box, gaining a \"× flask ÷ aliquot\" box for the scale-up and an outer mass bar for the percentage; working lines write one stage per line with earlier lines dimming; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."},
+        'rows': M6G03C_ROWS,
+    },
+    # END generated entries: m6p02-m6p06, m6g01c-m6g03c
+    # BEGIN generated entries: m6p01c, m6g04, m6p07, skills05, m7c01, m7c02
+    'm6p01c': {
+        'design': D + 'lessons/chem-m6-p01.md',
+        'learning_review': D + 'checks/m6p01c-learning-review.md',
+        'science_check': D + 'checks/m6p01c-claude-science-check.md',
+        'meta': {"title": "Preparing and testing a natural indicator: can a red cabbage show acid-base behaviour, and run it in reverse?", "subtitle": "Purple juice from a red cabbage turns red in acid, green in base, and red again. How do you prepare it as an indicator, give each colour a meaning, and show that its colour change is a reversible reaction?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 22, "lessonIntent": "explaining where the extract's colour comes from; preparing the extract and justifying each step; recording its starting colour; calibrating it against solutions of known pH with equal drops; reading its colour chart and stating its limits; using a water control; carrying out and explaining the reversibility cycle in one sample; recognising a colour change that is not reversible; estimating a pH from the chart and checking it with a meter; explaining why the extract is a poor titration indicator; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No titration curves (chem-m6-c14), no anthocyanin structures, no meter calibration (chem-m6-p03)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "pigments", "prepare", "calibrate", "colour-chart", "water-control", "cycle", "same-sample", "no-return", "use-and-limits", "validity-reliability", "risk-assessment", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m6-c13 (indicator as a weak acid HIn whose two forms differ in colour; the colour change as a reversible equilibrium shifted by acid and base; transition ranges; choose an indicator whose change falls inside the jump). chem-m6-c02 (properties of acids and bases; litmus). chem-m6-p03 (a calibrated pH meter; buffers as solutions that hold a known pH; colour judgements on indicator paper vary). chem-m6-c11 (buffers, by name). chem-m5-p01 (validity, reliability and accuracy in plain words; variables; risk assessment as hazard, harm, control). Stage 5 (the pH scale; universal indicator). Year 11 Biology is not assumed: \"membranes\" is said with its plain meaning (\"the membranes in the cabbage cells, the thin layers that hold the pigment in\") and shown on screen as a cell outline holding an internal pigment compartment, whose membranes break, so the cell wall is not mistaken for the barrier.", "startsWith": "Prepare or select an indicator and record its initial colour. The video opens: Here's a beaker of purple juice from a red cabbage. Add a few drops of acid, and it turns red. Add a base, and it turns green.", "stopsAfter": "explaining where the extract's colour comes from; preparing the extract and justifying each step; recording its starting colour; calibrating it against solutions of known pH with equal drops; reading its colour chart and stating its limits; using a water control; carrying out and explaining the reversibility cycle in one sample; recognising a colour change that is not reversible; estimating a pH from the chart and checking it with a meter; explaining why the extract is a poor titration indicator; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No titration curves (chem-m6-c14), no anthocyanin structures, no meter calibration (chem-m6-p03).", "nextLesson": "what a whole titration curve and a conductivity graph can tell you (route chem-m6-c14)."},
+        'teaching': {"task": "Purple juice from a red cabbage turns red in acid, green in base, and red again. How do you prepare it as an indicator, give each colour a meaning, and show that its colour change is a reversible reaction?", "causalExplanation": "(1) one purple extract goes red, green and red again: can a vegetable work as an indicator, and how do you show the change runs both ways? (1); (2) the colour comes from anthocyanins; each behaves like the weak-acid indicator HIn from C13, but can lose more than one proton, and the extract is a mix of several of them, so it passes through several colours that blend gradually (2); (3) heat damages the membranes in the cabbage cells, the thin layers that hold the pigment in, so the pigment leaks out faster, and the pigment dissolves in water; filtering removes the solids so you see the solution's colour; the extract is cooled before use; its starting colour is recorded (3); (4) the colours mean nothing until they are matched to known pH; equal drops of extract in every well, because colour depth depends on how much pigment is present and you are comparing colour (4); (5) the chart shows several gradual changes; its precision is set by the spacing of the reference solutions (5); (6) adding any liquid dilutes the pigment, so the colour pales; the water well shows that paler purple, so a red or green well comes from the acid or base, not dilution; well C is read straight away (6); (7) one sample cycled: added base removes hydronium, so the pigment's equilibrium shifts to the forms that have lost protons, and acid shifts it back (C13 callback, one clause); three cycles in the same tube (7); (8) fresh wells show each colour separately, but only one sample going back and forth shows the reaction runs both ways; three cycles guard against a misread; the sample pales because it is diluted, but the same two colours return, which is evidence the pigment is not used up (8); (9) a colour that does not return is a warning: in strong base, like well C, for a long time the pigment molecules can change shape and break down (a different reaction), so base is added only until green and the cycle is run straight away (9); (10) the chart estimates household pH within a range, checked with a meter; the extract changes gradually, in steps, across the scale, while a titration needs one sharp change inside the jump (C13 callback), so it is a poor endpoint indicator (10); (11) variables; validity, reliability, accuracy (11); (12) the real hazards and controls (12); memory aid (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).", "conversationalApproach": "purple red cabbage juice turns red in acid, green in base and red again, so the practical asks how to prepare it as an indicator, give each colour a meaning and show that its colour change is a reversible reaction. The colour is traced to anthocyanins that behave like HIn from the indicator video; the extract is prepared by the teacher in hot water (heat opens the cells), filtered and cooled; equal drops in wells of known pH give the colour chart; a water well is the control that shows dilution alone only makes the purple paler; one sample is cycled from acid to base and back three times, because fresh wells only show each colour separately; a colour that does not come back after a long time in strong base is a warning that the pigment has broken down. The chart is then used on vinegar and an ammonia cleaner, with its two-unit steps as its limit, followed by the variables, validity, reliability and accuracy, and the risk assessment. The memory aid is \"Steep. Chart. Cycle.\" Two exam questions follow with brief feedback.", "openingDecision": "Here's a beaker of purple juice from a red cabbage. Add a few drops of acid, and it turns red. Add a base, and it turns green. Add acid again, and the red comes back. So can you make a working indicator from a vegetable? And how would you show that its colour change really runs both ways?", "understandingCheck": "(A1) \"A student adds 3 drops of red cabbage extract to each of three wells. Well A contains dilute hydrochloric acid, well B contains distilled water and well C contains dilute sodium hydroxide solution. Well A turns red, well B stays purple but is slightly paler than the extract, and well C turns green. (a) Explain why the student included well B. (b) Describe a test the student could carry out to show that the colour change of the extract is reversible.\" Answer: (a) well B is the control: it shows that adding liquid alone only dilutes the purple, so the red and green come from the acid and the base; (b) in one sample, add sodium hydroxide dropwise until green, then hydrochloric acid until red, and repeat the cycle three times; the same two colours returning shows the change runs both ways. Crossed mistake: \"test the acid and the base again in fresh wells\" (fresh wells show each colour, not a reversal). (A2) \"A student made a colour chart for her red cabbage extract using buffer solutions: pH 2 red, pH 4 pink, pH 6 violet, pH 7 purple, pH 8 blue, pH 10 blue-green, pH 12 green. Three drops of the extract turned a solution of baking soda blue, with a slight green tint. (a) Estimate the pH of the baking soda solution. (b) Assess the accuracy of this method compared with a calibrated pH meter.\" Answer: (a) between 8 and 10, closer to 8: about 8 to 9; (b) less accurate: the chart steps are up to two units wide, the change between them is gradual, and colour is judged by eye, so it gives a range, while a calibrated meter is accurate to within a few hundredths. Crossed mistake: \"pH = 8.0\" (false precision: a colour match gives a range).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct an investigation to demonstrate the preparation and use of indicators as illustrators of the characteristics and properties of acids and bases and their reversible reactions (ACSCH101)\" this video prepares students to carry out and analyse the natural indicator practical; it does not claim that watching it is conducting it. It teaches: what gives red cabbage its colour (a mixture of anthocyanin pigments that behave like C13's weak-acid indicator, each with more than one proton to lose, so several gradual colours); preparing the extract (chop, steep in hot water, filter, cool) and why each step matters; recording the starting colour; calibrating the extract against solutions of known pH with equal drops on a white tile, and why the drops must be equal; reading the colour chart and why its precision depends on the spacing of the reference solutions; the water control, which separates dilution from a pH effect; the reversibility test (one sample cycled acid, base, acid, three times) and why it must be the same sample; what a colour that does not return means (the pigment changing shape and breaking down, a different reaction); using the chart to estimate the pH of household samples and checking with a meter; why a natural extract is a poor titration indicator; variables; validity, reliability and accuracy; the risk assessment. Not re-taught (chem-m6-c13, recalled in one clause each): an indicator as a weak acid HIn whose two forms differ in colour; the colour change as an equilibrium shifted by added acid or base (Le Chatelier); transition ranges; choosing an indicator that changes inside the jump. Not here: titration curves and conductivity graphs (chem-m6-c14, the next video); the chemistry of individual anthocyanin forms (author note b); calibrating a pH meter (chem-m6-p03, recalled); how buffers work (chem-m6-c11; named here as \"solutions that hold a known pH\", as in P03); calculating a concentration from a colour (colour is categorical; plan note kept)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C01, C13): hydronium teal, hydroxide violet; acid bottles carry a teal tab, base bottles a violet tab, water grey; the extract's colours as coded swatches matched to the painted plates; controls green, hazards terracotta. Board layout (three zones, constant): top-left the short task line; the centre holds the plates (beaker, well plate, filter); the right third holds the current card (method step, colour chart, VRA, risk table), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: `m6-clip-red-cabbage-purple-v1.png` and `m6-clip-red-cabbage-green-v1.png` (an aligned pair: the same glass beaker, about two-thirds full of purple and of green liquid, 2048 × 1700; the extract and the base colour; the cycle in scenes 1, 7 and 8; the starting colour in scene 3); `p03-well-plate-white-tile-v1.png` (a clear 48-well plate on a white tile, empty wells, 2048 × 1365; scenes 4 to 6, A1; coded fills in the wells); `p03-dropper-bottle-v1.png` (a clear glass dropper bottle with a black bulb and a blank cream label; copies with coded labels \"extract\", \"0.10 mol/L HCl\" with a teal tab, \"0.10 mol/L NaOH\" with a violet tab; scenes 4, 6 and 7); `m6-funnel-v1.png` (a clear glass filter funnel, empty; inspected and not used: a coded paper cone on it would be a coded object, so Codex item 3 replaces it); `m6-conical-flask-hotplate-v1.png` (a conical flask of boiling clear water on a hotplate, with steam; scene 3, the hot water, before the cabbage goes in; risk row); `m6-ph-meter-probe-beaker-v1.png` (scene 10 and feedback 2, coded readout as in P03); `m6-vinegar-bottle-v1.png` and `m6-household-cleaner-bottle-v1.png` (scene 10, household samples, small, coded labels); `m6-baking-soda-box-v1.png` (A2, small, coded label \"baking soda\"); `m6-indicator-phenolphthalein-set-v1.png` (scene 10 comparison thumbnail, small); `m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`, `m6-wash-bottle-v1.png` (risk table); `m6-burette-clamp-stand-v1.png` (handoff chip, small). New plates: see Codex asset brief (five items). No human figures.", "transitionPlan": "The red cabbage beaker plate opens the hook as the dropper bottles tilt and the coded fill swaps purple, red, green and red; the beaker shrinks left as the anthocyanin meaning and the HIn strip write; the right zone becomes a method card with the cabbage and filter plates for the extract; the well plate on its white tile takes the centre and seven known-pH wells fill, then lift off into a coded colour chart strip; a second row of three labelled wells writes for the water control; the beaker cycles colour on each dropper tilt with a cycle counter, and small fresh-well thumbnails sit beside it; a second small beaker turns yellow beside a clock chip and its red does not return; the vinegar and cleaner plates take their places against the chart with range brackets; the variables card, the evaluation cards and the risk table write in the right zone in turn; the memory aid writes large with three icons; each attempt clears the board and its feedback underlines the question as wells or the chart return small; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M6P01C_ROWS,
+    },
+    'm6g04': {
+        'design': D + 'lessons/chem-m6-g04.md',
+        'learning_review': D + 'checks/m6g04-learning-review.md',
+        'science_check': D + 'checks/m6g04-claude-science-check.md',
+        'meta': {"title": "Titration Curves, Indicators and Back Titration: HSC-Style Practice Questions", "subtitle": "A titration question gives you a pH curve, an indicator, a back titration or a conductivity graph. Where is the equivalence point, does the method find it, and if it misses, which way does the answer move?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 25, "lessonIntent": "reading the equivalence volume from a pH curve and calculating a concentration; explaining why the equivalence point of a strong acid/weak base titration is acidic and choosing the indicator whose colour change falls inside the steep part; predicting and explaining the direction of the error from a late indicator when the unknown is in the burette; calculating a percentage by mass from back titration data and explaining the direction of the error from a water-rinsed burette; explaining the conductivity profile of a weak base titrated with a strong acid and reading equivalence where the best-fit lines cross."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question", "q4-question"],
+        'ids': ["hook", "q1-question", "q1-concentration", "q1-indicator", "q1-mistake", "q2-question", "q2-picture", "q2-direction", "q2-mistake", "q3-question", "q3-calculate", "q3-error", "q3-mistake", "q4-question", "q4-shape", "q4-crossing", "q4-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From C12: a titration counts moles; n = cV; the balanced ratio; c = n ÷ V for the unknown; the unknown can be in the burette. From C13: the salt at equivalence (ammonium gives protons to water, so a strong acid with a weak base has an acidic equivalence point); choose the indicator whose colour change falls inside the steep part; a wrong indicator moves the endpoint; four ranges (methyl orange 3.1 to 4.4, methyl red 4.4 to 6.2, bromothymol blue 6.0 to 7.6, phenolphthalein 8.3 to 10.0). From C14: a curve plots pH against volume added; equivalence is in the middle of the steepest part; the strong acid/weak base profile, including the level stretch after equivalence when ammonia is added from the burette (excess ammonia and ammonium form a buffer); conductivity: hydronium and hydroxide conduct far better than other ions; a weak acid starts low and rises gently, then steeply after equivalence. From C15: the four back-titration steps (acid added, acid left over, subtract moles, mole ratio), percentage by mass; carbon dioxide boiled off; read conductometric equivalence where two best-fit lines cross; readings corrected for the volume added. From P06 (playlist order 19): rinse a burette with the solution it will deliver; a water-rinsed burette dilutes its solution. Year 11: n = m ÷ M. Not assumed: half-equivalence for a base; five-region pH calculations.", "startsWith": "Unseen curve and titration data. The video opens: Titration questions hand you a pH curve, an indicator, a sample that won't dissolve, or a conductivity graph.", "stopsAfter": "reading the equivalence volume from a pH curve and calculating a concentration; explaining why the equivalence point of a strong acid/weak base titration is acidic and choosing the indicator whose colour change falls inside the steep part; predicting and explaining the direction of the error from a late indicator when the unknown is in the burette; calculating a percentage by mass from back titration data and explaining the direction of the error from a water-rinsed burette; explaining the conductivity profile of a weak base titrated with a strong acid and reading equivalence where the best-fit lines cross.", "nextLesson": "choosing the right analysis method for a sample (route chem-m6-c16)."},
+        'teaching': {"task": "A titration question gives you a pH curve, an indicator, a back titration or a conductivity graph. Where is the equivalence point, does the method find it, and if it misses, which way does the answer move?", "causalExplanation": "Why equivalence is not read at pH 7: the salt at equivalence is acidic here (2b tag, 2c). Why the equivalence point is acidic: ammonium gives protons to water (2c). Why methyl red: its change lies inside the steep drop, one drop either side of equivalence, about 6.6 to 4 (2c). Why methyl orange is acceptable but second best: it changes at the foot of the drop, slightly late (2c). Why bromothymol blue fails: its change starts above the drop, before equivalence (2d). Why phenolphthalein turns pink late with ammonia in the burette: at equivalence the pH jumps only to about 7, then excess ammonia and ammonium form a buffer, so the pH reaches 8.3 only after extra ammonia (3b, 3c). Why a larger titre gives a smaller concentration here: the unknown is in the burette, so its volume divides the moles (3c, 3d). Why a water-rinsed burette lowers the percentage: diluted sodium hydroxide gives a larger back titre, so the leftover acid looks larger and the acid used smaller (4c). Why bigger back titres mean less sample: the back titre measures what is left over (4d). Why the conductivity starts low: a weak base is mostly molecules (5b). Why it rises gently: ions are added, not replaced, before equivalence (5b). Why it climbs steeply: excess hydronium conducts far better (5b). Why read the crossing: equivalence falls between readings (5c, 5d).", "conversationalApproach": "Titration questions hand you a pH curve, an indicator, a sample that will not dissolve or a conductivity graph, and each asks where the equivalence point is, whether the method finds it, and which way the answer moves if it misses. Q1 (ammonia titrated with hydrochloric acid) reads equivalence in the middle of the steepest part of the curve, finds the concentration, and chooses an indicator that changes inside the steep part because ammonium makes the equivalence pH acidic; Q2 runs the same titration the other way round with phenolphthalein, pictures the new curve and follows the too-large titre through the formula with the unknown in the burette; Q3 is a back titration of eggshell in four steps, then traces a water-wet burette to a percentage that comes out too low; Q4 explains the shape of an ammonia conductivity graph from the ions present and reads equivalence where two best-fit lines cross. Each question ends with its spoken, crossed classic mistake (bromothymol blue because neutral is 7, bigger titre means bigger concentration, bigger titre means more carbonate, the first steep reading), and the decision board gives the first move for each kind of data.", "openingDecision": "Titration questions hand you a pH curve, an indicator, a sample that won't dissolve, or a conductivity graph. Each one asks: where is the equivalence point, does the method find it, and if it misses, which way does the answer move? Here are four HSC-style questions.", "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a): volumes, concentrations, the indicator table (Q1, Q2), the curve (Q1), \"the same ammonia\" (Q2, so Q1's answer may be used), the equation and molar mass (Q3), \"corrected for the volume added\" and the points (Q4). Nothing answer-bearing during the holds; the check strip dims.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p53), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" \"investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example: - strong acid/strong base - strong acid/weak base - weak acid/strong base (ACSCH080, ACSCH102)\" Practice and transfer only: the coverage rows stay with chem-m6-c12 to c15 and chem-m6-p06; G04 adds practice rows, not first coverage. starts at the route's \"Present unfamiliar curve and titration data and protect an attempt\" and stops at its \"Choose an indicator or method and show the short calculation or reason\". Four questions, chosen from what the earlier designs hand on: error direction for indicator choices beyond \"titre too small\" (`chem-m6-c13.md` Boundary: \"error-direction tables beyond 'titre too small' (chem-m6-g04)\"; C13 site correction 3: \"The direction of the error depends on which solution is in the burette\"; `chem-m6-c14.md` Boundary: \"error direction for indicator choices (chem-m6-g04)\") is Q2; error direction for back titrations beyond the carbon dioxide step (`chem-m6-c15.md` Boundary: \"error direction tables beyond the carbon dioxide step (chem-m6-g04)\") is Q3 and key note 4's error table; reading a pH curve for the equivalence volume and choosing an indicator from it is Q1; reading a conductivity graph by its crossing lines is Q4. The strong acid/weak base profile, the syllabus example the earlier attempts used least (C13 A2 in words only; C14 scene 7 as a demonstration), is the system in Q1, Q2 and Q4, met three ways: a pH curve with the acid added, the same titration with the solutions swapped, and a conductivity graph. Not here: the five-region pH calculations (C14 open decision: \"recommended: leave out\"; the site labels them Extension and exam questions analyse supplied curves; left out, recorded under Open decisions); barium hydroxide with sulfuric acid (C15 attempt 2 used it); weak acid with weak base (site Extension); half-equivalence for a base (pKa of ammonium from the curve: not taught in C14, which read pKa for a weak acid only); aliquot scale-up (chem-m6-g03); choosing among pH probes, direct, back and conductivity titrations for a range of samples (chem-m6-c16, the next video; the decision board names when each tool in this video applies, without the full method choice); burette technique itself (chem-m6-p06; Q3 recalls its rinsing rule in one clause)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the G02 layout: top-left the question card (stem, data, graph and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"pH curve: equivalence and indicator\", \"Indicator error: which way?\", \"Back titration: subtract, then the error\", \"Conductivity: where the lines cross\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip (the graph stays full size beside it) and each given is underlined in amber in the question text at the cue where it is used (no givens card). A check strip on the far left carries three rows, \"where is equivalence?\", \"which way does it move?\", \"does it make sense?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Colour key from C13 to C15: the ammonia curve teal, the hydrochloric acid titrant navy (C12), indicator range bands in their own two colours, conductivity points amber with teal best-fit lines, hydronium teal, hydroxide violet, ammonium grey-violet, chloride grey; amber is otherwise used only for underlined givens. Clutter rule (owner): besides the question strip, the graph and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.", "transitionPlan": "The heading writes on and four small thumbnails fan out, one per kind of data; each question opens on a fresh board with the type badge hidden while the worded card writes with its coded lineGraph, indicator table or apparatus plate kept on screen; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as working lines write one stage per line, earlier lines dimming to kept chips; indicator colour bands lay over the steep part of the curve and the reversed curve draws as a ghost; the four-step back titration ladder builds and shrinks to a thumbnail as the burette plate and error chain return; ion tallies build under the conductivity graph and two teal best-fit lines draw and ring their crossing; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."},
+        'rows': M6G04_ROWS,
+    },
+    'm6p07': {
+        'design': D + 'lessons/chem-m6-p07.md',
+        'learning_review': D + 'checks/m6p07-learning-review.md',
+        'science_check': D + 'checks/m6p07-claude-science-check.md',
+        'meta': {"title": "Analysing a household substance for its acidity: how acidic is this vinegar, and how much acid does it hold?", "subtitle": "A pH probe reads the same white vinegar as 2.46 neat and 2.96 diluted tenfold, and neither number is the amount of acid in the bottle. How do you prepare, measure and report a household sample so that each number means what you say it means?", "subject": "Chemistry", "yearLevel": 12, "module": 6, "lesson": 27, "lessonIntent": "stating the two questions a household acidity analysis can answer and the measurement for each; measuring pH on the undiluted sample with a probe calibrated by buffers either side; estimating a titre from a label and choosing a dilution; diluting with volumetric glassware and explaining why the moles are unchanged; titrating with standardised base to the first faint pink lasting 30 s; calculating the concentration with the dilution factor; reporting grams per 100 mL as titratable acidity, as ethanoic acid, and comparing with the label; checking pH against concentration through Ka; stating the result's limits; judging validity, reliability and accuracy; writing the risk rows; applying the method to an ammonia cleaner. No method tree (chem-m6-c16), no back titration (chem-m6-c15), no percentage uncertainty."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "two-questions", "ph-first", "plan-from-label", "dilute", "titrate", "results", "calculation", "report-label", "two-results", "limitations", "validity-reliability", "risk-assessment", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m6-c16 (pH or amount; a probe gives pH, a titration gives total titratable acid; calibrate with two buffers close to the samples, ideally either side; clear and fast samples suit a direct titration); chem-m6-p06 (titration technique: rinse with what's going in, read at eye level to 0.05 mL, rough run then dropwise, concordant titres, error tracing); chem-m6-c12 (four steps, 1 : 1 for ethanoic acid with NaOH, NaOH is standardised because it absorbs water and CO₂); chem-m6-c13 (phenolphthalein suits a weak acid titrated with a strong base); chem-m6-c08 and c10 (weak acid pH from Ka; ethanoic acid Ka 1.8 × 10⁻⁵); chem-m6-p03 (meter routine: rinse, blot, read, record temperature); chem-m6-p04 (diluting a weak acid tenfold raises its pH by less than one unit; volumetric dilution); chem-m6-g03 (scale-up from an aliquot; percentage by mass needs a density); chem-m5-p01 (validity, reliability, accuracy, risk). Year 11: n = cV, n = m/M.", "startsWith": "Choose a household sample, preparation and suitable analysis method. The video opens: A pH probe reads this white vinegar at two point four six. Dilute it ten times, and it reads two point nine six. Same vinegar, two different pH values, and neither one measures how much acid is in the bottle.", "stopsAfter": "stating the two questions a household acidity analysis can answer and the measurement for each; measuring pH on the undiluted sample with a probe calibrated by buffers either side; estimating a titre from a label and choosing a dilution; diluting with volumetric glassware and explaining why the moles are unchanged; titrating with standardised base to the first faint pink lasting 30 s; calculating the concentration with the dilution factor; reporting grams per 100 mL as titratable acidity, as ethanoic acid, and comparing with the label; checking pH against concentration through Ka; stating the result's limits; judging validity, reliability and accuracy; writing the risk rows; applying the method to an ammonia cleaner. No method tree (chem-m6-c16), no back titration (chem-m6-c15), no percentage uncertainty.", "nextLesson": "Module 7, organic chemistry (the next module's first video; no Module 6 entry follows)."},
+        'teaching': {"task": "A pH probe reads the same white vinegar as 2.46 neat and 2.96 diluted tenfold, and neither number is the amount of acid in the bottle. How do you prepare, measure and report a household sample so that each number means what you say it means?", "causalExplanation": "(1) the same vinegar gives two pH values, and neither is an amount (1); (2) two questions need two measurements: pH for how acidic, a titration for how much; clear, fast vinegar suits a direct titration (2); (3) pH describes the solution the probe sits in, so it is measured on the undiluted sample, with buffers either side (3); (4) the label lets you estimate the titre before you start; neat vinegar would need more than three burette fills (4); (5) dilute the sample, not strengthen the base: stronger base is corrosive, and dilution keeps the moles, so you multiply back by ten (5); (6) the base is standardised because it absorbs CO₂; the endpoint is the first faint pink that lasts 30 s (6); (7) concordant titres give the mean (7); (8) 1 : 1 ratio, moles in the aliquot, concentration of the dilution, times ten (8); (9) report as the label does, grams per 100 mL, and compare (9); (10) two results with two meanings, consistent through Ka; the titration counts every acid, so \"as ethanoic acid\" (10); (11) the limits of the result (11); validity, reliability, accuracy (12); risk (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).", "conversationalApproach": "a probe reads the same white vinegar at pH 2.46 neat and 2.96 diluted tenfold, and neither number is the amount of acid in the bottle, so the practical asks how to prepare, measure and report a household sample so that each number means what you say it means. Two questions need two measurements: pH for how acidic it is now, measured on the sample as it is with a probe calibrated by pH 7 and pH 2 buffers, and a titration for how much acid it holds. The titration is planned from the label's 4% so the titre fits the burette, and the vinegar is diluted tenfold rather than using a corrosive stronger base; the standardised sodium hydroxide, the concordant titres, the C12 calculation one line per stage and the conversion to grams per 100 mL follow, and the two results are shown to fit together through Ka. The limits of the result (one bottle, other acids, the endpoint), validity, reliability and accuracy, and the risk assessment close the method. Two exam questions follow with brief feedback, the second on an ammonia cleaner left open on the bench.", "openingDecision": "A pH probe reads this white vinegar at two point four six. Dilute it ten times, and it reads two point nine six. Same vinegar, two different pH values, and neither one measures how much acid is in the bottle. So how do you analyse a household sample so that every number you report means what you say it means?", "understandingCheck": "(A1) \"A cleaning vinegar is labelled '6% acidity', meaning 6 g of ethanoic acid per 100 mL. A student plans to titrate 25.00 mL aliquots of the undiluted cleaning vinegar with 0.09940 mol/L sodium hydroxide from a 50.00 mL burette. M(CH₃COOH) = 60.05 g/mol. Use the label to estimate the expected titre, and explain how the student should change the plan.\" Answer: about 1 mol/L; about 0.025 mol per aliquot; about 250 mL of base, five burette fills; dilute tenfold (25.00 mL to 250.0 mL in a volumetric flask), giving titres of about 25 mL, then multiply by ten, or use a 2.50 mL aliquot of the neat vinegar (also about 25 mL of base; accepted). Crossed mistake: \"just refill the burette five times\" (each refill adds two readings and their error, and time). (A2) \"A student analyses a household ammonia cleaner. She pours some of the cleaner into an open beaker and leaves it on the bench for 40 minutes. She then pipettes 25.00 mL of it into a 250.0 mL volumetric flask, makes it up to the mark, and titrates 25.00 mL aliquots with standardised hydrochloric acid using methyl orange indicator. All other steps are carried out correctly. Explain the effect of leaving the cleaner in the open beaker on her calculated concentration of ammonia in the cleaner.\" Answer: ammonia is a dissolved gas and some escapes from the open beaker, so her sample holds fewer moles of NH₃ than the bottle; less acid is needed; the titre is smaller; the calculated concentration is too low for the cleaner in the bottle. Crossed mistake: \"water evaporates, so it becomes more concentrated and the answer is too high\" (ammonia leaves the solution much faster than water does; author note i).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a chemical analysis of a common household substance for its acidity or basicity (ACSCH080)   , for example:; soft drink; wine; juice; medicine\" this video prepares students to carry out and report a household acidity analysis; it does not claim that watching it is conducting it. It teaches: framing the analysis as two questions (how acidic now: pH; how much in total: titration), with C16's choice recalled in one clause; measuring the pH first, on the undiluted sample, with a probe calibrated by buffers either side of the sample, because pH describes the solution the probe sits in; planning the titration from the label (estimate the concentration and the titre before starting); diluting the sample tenfold rather than using a more concentrated, corrosive base; carrying out the titration (C12 and P06 technique recalled, not re-taught); the titre table and the calculation with the dilution factor; reporting on the label's basis (grams per 100 mL) as titratable acidity \"as ethanoic acid\"; checking that the pH and the concentration are consistent through Ka (C08 callback, one sentence); the limitations of the result; validity, reliability and accuracy; the risk assessment. Basicity is applied in attempt 2 (an ammonia cleaner). Placement (playlist order 27): the last Chemistry Module 6 video, after C16 (order 26), G04 (order 25), C15 (order 24), C14, C13, G03 and P06. So indicator choice, the probe's calibration roles, the method tree and percentage by mass from density are all available as callbacks. Not re-taught: pH versus amount (C16, recalled as a two-question card); how a probe works and which buffer sets which parameter (C16); rinsing, meniscus reading, rough runs and error tracing (P06); the four-step titration calculation (C12); why phenolphthalein suits a weak acid with a strong base (C13); scale-up and percentage by mass (G03); weak acid pH from Ka (C08). Not here: back titration of an antacid (C15 and G03); red wine, soft drink and juice analyses (C16 tags; author note h); percentage uncertainty arithmetic; the Aboriginal and Torres Strait Islander knowledge scene (C16)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C12 and P06): the known solution's values (standardised NaOH) navy; the unknown's values (vinegar) amber; the ratio box teal; concordant titres ringed teal; pH values violet (a measurement of \"how acidic\", kept visually apart from amounts); the label's claim grey; limitations grey; controls green, hazards terracotta; phenolphthalein colourless and pink as painted. Board layout (three zones, constant, as P06): top-left the short task line; the centre holds the apparatus; the right third holds the current card (question card, reading table, plan, titre table, calculation, report, limitations, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: painted plates, inspected 21 Oct on the dark board: `m6-vinegar-bottle-v1.png` (glass bottle with a cork-coloured cap; the painted liquid is pale gold, so the coded label \"white vinegar, 4% acidity\" carries the identity, as in C12; see Open decisions), `m6-ph-meter-probe-beaker-v1.png` (bench meter with a blank display, probe in a beaker; readout coded), `m6-burette-clamp-stand-v1.png`, `m6-conical-flask-v1.png`, `m6-white-tile-v1.png`, `m6-volumetric-flask-v1.png`, `m6-volumetric-pipette-filler-v1.png`, `m6-beaker-v1.png`, `m6-wash-bottle-v1.png`, `m6-clip-phenolphthalein-colourless-v1.png` and `m6-clip-phenolphthalein-pink-v1.png` (aligned pair, 2048 × 1700; the pink is pale, which suits \"first faint pink\"), `m6-household-cleaner-bottle-v1.png` (blue spray bottle; attempt 2 with the coded label \"ammonia cleaner\"), `m5x-safety-glasses-v1.png` (risk). From P03's Codex asset brief (requested, not yet painted): `m6-buffer-bottle-v1.png` (scene 3; fallback below). Not used: `m6-red-wine-vinegar-bottle-v1.png` and `m6-red-wine-glass-v1.png` (C15 and C16 samples), `m6-lemon-v1.png` (juice is a C16 tag only), `m6-agricultural-liming-v1.png` (owner rule). No human figures.", "transitionPlan": "The vinegar bottle plate opens the hook beside a probe beaker whose readout changes from 2.46 to 2.96 as a dilution arrow draws; the board clears to C16's two-question card with its rows lighting for pH and amount; two buffer bottles and the probe build the pH step card; the plan-from-label card writes the task line and estimate lines one at a time with the burette capacity bar; a corrosive chip fades in and takes a cross as the pipette and volumetric flask dilute the vinegar tenfold; the full titration set-up runs with its volume counter and flask colour swap; C12's titre table widens the right zone with the rough run greyed; the table dims to a strip as the task line, equation strip, givens and working write one stage per line; the report card converts to grams per 100 mL and holds the two result rows beside the label; the limitations card writes grey rows one per spoken limit; the three evaluation cards and the risk table write in turn; each attempt clears the board and its feedback underlines the question as estimate lines or P06's error chain write; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M6P07_ROWS,
+    },
+    'skills05': {
+        'design': D + 'lessons/skills-s05.md',
+        'learning_review': D + 'checks/skills05-learning-review.md',
+        'science_check': D + 'checks/skills05-claude-science-check.md',
+        'meta': {"title": "Calculation answers that get full marks", "subtitle": "When a question says calculate, what does a full-mark answer show, and how does showing it protect you when something goes wrong?", "subject": "Chemistry and Biology", "yearLevel": 12, "module": 0, "lesson": 5, "lessonIntent": "the four steps; a worked 4-mark molar enthalpy calculation; significant figures done strictly, with one accepted-range example; round once; visible working when a step is wrong; the sense check; one Chemistry pH drill and one Biology allele-frequency drill."},
+        'hold_seconds': 10,
+        'holds': ["drill-1", "drill-2"],
+        'ids': ["hook", "question-card", "read-it", "four-steps", "step-1", "step-2", "step-3", "sig-figs", "round-once", "working-when-wrong", "drill-1", "feedback-1", "drill-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "Series: s01 (reading routine: verb, marks, content words and givens, constraint, tick each part) and s02. s03 and s04 are not assumed. Chemistry: Year 11 significant figures, n = m/M, n = cV with V in litres; M6 C03 (q = mcΔT with the total mass, the reactant that runs out sets the moles of water, ΔH = -q / n in kJ mol-1, negative for a temperature rise, about -57 kJ mol-1, heat loss gives a less negative result; C03 already rounded to two significant figures from ΔT); M6 C07 (pH, pOH, pH + pOH = 14.00 at 25 °C, decimal places in pH = significant figures in the concentration). Biology: Year 11 significant figures (as for Chemistry, Year 10 percentages at least); B11 (allele frequency as copies over total copies; SNP genotypes read directly; \"Count alleles, not people\").", "startsWith": "Calculate is the second most common command. The video opens: In the last five HSC Chemistry papers, calculate was the second most common command in the written section, after explain, and the commonest value was four marks. In every one of the last six Chemistry marking feedback reports, NESA flagged the same kinds of problem: hidden steps, lost units, or rounding too early. Recent Biology papers didn't use the word calculate, but still asked for numbers, like a probability or a number of people from a graph.", "stopsAfter": "the four steps; a worked 4-mark molar enthalpy calculation; significant figures done strictly, with one accepted-range example; round once; visible working when a step is wrong; the sense check; one Chemistry pH drill and one Biology allele-frequency drill.", "nextLesson": "s06, graphs and data questions."},
+        'teaching': {"task": "When a question says calculate, what does a full-mark answer show, and how does showing it protect you when something goes wrong?", "causalExplanation": "(1) calculate was the second most common command in the last five HSC Chemistry papers, most often for four marks, and every recent Chemistry marking feedback report flagged hidden steps, lost units or early rounding; Biology still asks for numbers (1); (2) one HSC-style Chemistry molar enthalpy question is set up (2); (3) the reading routine: the verb, four marks meaning steps to show, the quantity asked for (3); (4) the four steps with the memory aid \"one E and three S's\": equation, substitute, solve, sense check (4); (5) step one, the heat with the combined mass (5); (6) step two, the moles of water from the reactant that runs out (6); (7) step three, divide, add the sign, round once and sense check against minus fifty seven (7); (8) significant figures follow the least precise measurement, a subtraction keeps decimal places and exact numbers never limit (8); (9) round only once, and an accepted range allows for reading a graph, not for rounding (9); (10) when a step slips, visible working can still earn marks while a bare answer earns none, though bands are set question by question (10); two drills, one per subject, with feedback (11 to 14); decision rule and handoff (15); key notes (16).", "conversationalApproach": "one fact carries the video: calculate is the second most common command in recent HSC Chemistry papers, and marking feedback keeps flagging hidden steps, lost units and early rounding. One HSC-style molar enthalpy question is read with the routine and then worked in four steps (equation, substitute, solve, sense check: one E and three S's), one answer row per stage with kept chips; significant figures are set by the least precise measurement, with the subtraction rule and exact numbers, the answer is rounded once at the end, and two answers with the same slip show why visible working protects marks. Two drills, one per subject (a Chemistry concentration and a Biology allele frequency), practise the layout.", "openingDecision": "In the last five HSC Chemistry papers, calculate was the second most common command in the written section, after explain, and the commonest value was four marks. In every one of the last six Chemistry marking feedback reports, NESA flagged the same kinds of problem: hidden steps, lost units, or rounding too early. Recent Biology papers didn't use the word calculate, but still asked for numbers, like a probability or a number of people from a graph. So let's set out a calculation a marker can follow.", "understandingCheck": "the narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, calculate, 3 marks: \"0.200 g of sodium hydroxide is dissolved in water and the solution is made up to 250.0 mL in a volumetric flask at 25 °C. Calculate the pH of this solution.\" Content: Year 11 n = m/M and c = n/V; C07 (pOH, pH + pOH = 14.00 at 25 °C, the decimal-places rule). Answer: n = 0.200 g / 40.00 g mol-1 = 5.00 x 10^-3 mol; [OH-] = 5.00 x 10^-3 mol / 0.2500 L = 0.0200 mol L-1; pOH = 1.699; pH = 14.00 - 1.699 = 12.301. Crossed habit: \"pH = 12.3\" (three significant figures in [OH-] give three decimal places in the pH). Drill 2, Biology, calculate, 2 marks: \"A sample of 250 central bearded dragons was genotyped at one SNP with two alleles, C and T. The results were: CC 90, CT 110, TT 50. Calculate the frequency of the T allele in this sample.\" Content: B11 (allele frequency = copies over total copies, two per individual; reading both copies shows every genotype). Answer: T copies = 110 + 2 x 50 = 210; total copies = 2 x 250 = 500; 210 / 500 = 0.42 (42%). Sense check (an independent count): f(C) = (2 x 90 + 110) / 500 = 290 / 500 = 0.58, and 0.42 + 0.58 = 1. Precision: counts are exact, so they do not limit the figures; 0.42 needs no rounding only because 210 / 500 divides exactly (a ratio such as 175 / 460 would still be rounded to a sensible length). Crossed habit: \"50 / 250 = 0.20\" (counts dragons, not alleles; B11's bank trap \"Count alleles, not people\"). Why these two: each tests the video's main presentation habits on a calculation students already know how to do, and each carries a different precision lesson (logs: decimal places; counts: exact numbers). Neither re-teaches content: C07 and B11 taught the methods. Magnification (plan example) not used: magnification is Year 11 Biology (Module 1), so it is not HSC examination content; allele frequency is the Year 12 Biology calculation in the plan's list. The plan's other examples are covered: pH (drill 1), moles (worked question and drill 1), frequencies (drill 2). Ksp (plan example) is not used, because the nearest audited guideline item (Chemistry 2024 Q32) is a Ksp-to-concentration calculation, and a Ksp drill would sit close to it.", "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"calculate is the second most common command\". It stops after the four-step layout, a worked 4-mark calculation, significant figures (least precise measurement, subtraction and decimal places, exact numbers, the pH rule), round once, one accepted-range example, visible working when a step is wrong (with the no-automatic-carried-forward caveat), the sense check, and two drills. It does not cover graph reading and drawing (s06), practical uncertainty and accuracy (s07) or extended responses (s08)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. the shared skills kit (`src/explainer/lessons/skills-shared/`): `QuestionCard` with its annotation layer (`Ann` kinds verb, marks, given, constraint, ring, tag, pulse; `CardDim`), `MarksBadge`, `AnswerBox` (rows, margin ticks, counter, slots, `AAnn` under, ring), `MarkCounter`, `LostMarksTag`, `WeakStrongPanel`, `RoutineStrip` (mini at the far left), `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate` and `mkPlate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`. New lesson-local components (suggested folder `src/explainer/lessons/skills-s05`): `StepRail`: a four-row card (icons: an equation strip \"q = mcΔT\" glyph for Equation, a down arrow dropping a number into a slot for Substitute, an equals sign with a boxed result for Solve, a small gauge needle for Sense check; no hands or people), built like `RoutineStrip` and s04's `VerdictStrip` (mini and full states, rows lighting on cue). Each working row in the answer box carries a small step letter in the margin (E, S, S, S, with the word on first use). `UnitChip`: a small ink chip that rides with each number from the card into the working (\"60.0 mL\", \"0.0600 L\"), so units visibly travel and convert. Built from `Chip` at size 20. `SigFigLens`: a coded magnifier frame over a number that lights its significant digits (amber) and greys the placeholders; used on 0.0400, 100.0, 25.8, 20.6 and 5.2 (scene 8) and on 0.0200 and 12.301 (feedback 1). `SenseGauge`: a coded horizontal scale of ΔH from -40 to -60 kJ mol-1 with a fixed reference tick \"about -57 (C03)\" and a needle that settles on the answer; a green zone \"a little less negative: heat loss\" from about -50 to -57. Coded abstract diagram only. `BandLadder`: s04's band ladder (root may promote it to the shared kit; otherwise a lesson-local copy). Plates: `m6-foam-cup-calorimeter-v1.png` (worked question), `m6-volumetric-flask-v1.png` (drill 1), `b2-desert-lizard-v2.png` (drill 2). New `mkPlate` entries are needed (alpha boxes measured 21 Oct; see Assets). No people, hands or faces.", "transitionPlan": "The command chip column builds tallest first and three problem tags from the feedback reports write beside it; the QuestionCard writes on with its badge and tag; the mini RoutineStrip lights its rows as the verb, marks and quantity are annotated; the StepRail builds full size in the side column and lights the row in use as the answer box fills one row per stage, earlier rows collapsing to kept chips; the SigFigLens moves along the data values while the working dims except the boxed answer; two short columns compare rounding once with rounding early; the WeakStrongPanel sets Answer A beside Answer B with margin ticks and a mark counter; each drill clears the board and its feedback lands the annotations fast before the model answer writes with ticks; the StepRail returns full size as the decision board and the next chip closes; scene crossfade with settle."},
+        'rows': SKILLS05_ROWS,
+    },
+    'm7c01': {
+        'design': D + 'lessons/chem-m7-c01.md',
+        'learning_review': D + 'checks/m7c01-learning-review.md',
+        'science_check': D + 'checks/m7c01-claude-science-check.md',
+        'meta': {"title": "How do we name and draw a carbon chain? Three drawings, five naming rules, and reading a name back into a molecule", "subtitle": "A name like 3-methylpent-1-ene looks like a code. How do you read a name like that, write one from a drawing, and draw the molecule back from the name?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 1, "lessonIntent": "drawing a hydrocarbon three ways and counting implied hydrogens; naming straight and branched alkanes, alkenes and alkynes up to C8 with methyl and ethyl branches (longest chain, nearer-end numbering, di- and alphabetical order, multiple-bond locant and priority); drawing a structure from a name and checking its molecular formula by counting. No isomers (chem-m7-c02), no shapes, bond angles, general formulas or homologous series (chem-m7-c03), no other families, no safety."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "four-bonds", "three-drawings", "rule-stem", "rule-ending", "rule-longest-chain", "rule-number", "rule-several-branches", "multiple-bonds", "bond-wins", "name-to-structure", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "Year 11: carbon has four valence electrons and forms four covalent bonds; single, double and triple covalent bonds; drawing simple molecules with lines for bonds; molecular formulas. Not assumed: any IUPAC rule, skeletal formulas, the words parent chain, locant, substituent, saturated, unsaturated. No earlier Year 12 video is assumed (route entry knowledge).", "startsWith": "Identify the parent chain and bond type. The video opens: The canister under this camping stove holds butane, often mixed with propane. That name isn't a brand. It's a code: but means four carbons, and ane means only single bonds between them.", "stopsAfter": "drawing a hydrocarbon three ways and counting implied hydrogens; naming straight and branched alkanes, alkenes and alkynes up to C8 with methyl and ethyl branches (longest chain, nearer-end numbering, di- and alphabetical order, multiple-bond locant and priority); drawing a structure from a name and checking its molecular formula by counting. No isomers (chem-m7-c02), no shapes, bond angles, general formulas or homologous series (chem-m7-c03), no other families, no safety.", "nextLesson": "the same atoms can be joined in different ways (route chem-m7-c02, \"How can the same formula make different molecules?\")."},
+        'teaching': {"task": "A name like 3-methylpent-1-ene looks like a code. How do you read a name like that, write one from a drawing, and draw the molecule back from the name?", "causalExplanation": "(1) a name such as butane is a code for a structure (1); (2) carbon forms four bonds and bonds to other carbons, so chains and branches give millions of compounds, and each needs a name that points to one structure; real chains zigzag (2); (3) three drawings, and the four-bond rule that restores implied hydrogens (3); (4) the stem counts carbons (4); (5) the ending shows the bonds, so it tells you whether the chain is saturated (5); (6) the longest chain is the main chain, traced even round a bend, because a branch drawn hanging down can be part of it (6); (7) branches are named by their carbons, and numbering from the nearer end gives the lowest locants (7); (8) several branches: di- and alphabetical order (8); (9) a double or triple bond must be in the main chain and gets a locant before the ending (9); (10) the multiple bond wins the numbering (10); (11) names reverse into structures, checked by counting (11); memory aid (12); two attempts and brief feedback (13 to 16); handoff (17); key notes (18).", "conversationalApproach": "the camping gas canister holds butane, and the name is a code (but means four carbons, ane only single bonds), so the video asks how to read a name like 3-methylpent-1-ene, write one from a drawing and draw the molecule back from the name. Carbon's four bonds explain chains and branches; one chain is drawn three ways (full structural, condensed, skeletal); the naming rules then come one at a time: the stem counts the carbons in the longest continuous chain, even round a bend; the ending shows the bonds (saturated ane, ene, yne); branches are named with yl and the chain is numbered from the end nearer the branch; several branches take di and alphabetical order with commas and hyphens; a double or triple bond must be in the main chain and wins the low numbers. Reading 2,2-dimethylpentane back into a skeletal formula shows names work both ways, and the memory aid gathers the order: longest chain with the multiple bond, number it, then write the name. Two exam questions follow with brief feedback.", "openingDecision": "The canister under this camping stove holds butane, often mixed with propane. That name isn't a brand. It's a code: but means four carbons, and ane means only single bonds between them. Chemists name carbon compounds this way, so a name like three-methylpent-one-ene is really a set of drawing instructions. So how do you read a name like that, and write one from a drawing?", "understandingCheck": "(A1) \"The skeletal formula of a hydrocarbon is shown. Give its IUPAC name and its molecular formula.\" Structure: 5-methylhex-2-ene, CH₃CH=CHCH₂CH(CH₃)CH₃, drawn skeletal (zigzag of six with the double bond second from the left end and a methyl branch on the fifth carbon). New compound, tests the longest chain containing the double bond, double-bond priority and implied-hydrogen counting. Crossed mistake: \"2-methylhex-4-ene\" (numbered for the branch). (A2) \"A student names a hydrocarbon '2-ethylpentane'. Explain why this name is incorrect. Give the correct IUPAC name and draw the skeletal formula of the compound.\" Answer 3-methylhexane (site A2 item 1's compound, reached by a new route). Tests the longest chain and nearer-end numbering. Crossed mistake: \"4-methylhexane\" (wrong end).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127); alkanes; alkenes; alkynes; alcohols (primary, secondary and tertiary); aldehydes and ketones; carboxylic acids; amines and amides; halogenated organic compounds\" This video covers the first three examples (alkanes, alkenes and alkynes) with methyl and ethyl branches. The other families are named in the videos that teach them (see Open decisions on the route mapping). this video starts from the parent chain and bond type and stops at naming and drawing simple branched alkanes, alkenes and alkynes up to C8. It teaches: carbon's four bonds let it form chains and branches (Year 11 callback), so each compound needs a name that points to one structure; real chains zigzag, which is why skeletal formulas zigzag; full structural, condensed and skeletal formulas, and counting implied hydrogens (end carbon three, corner two, branch point one; scene 9 adds that a C=C counts as two bonds, so each of its carbons has one fewer hydrogen); rule 1, the stem counts the main chain's carbons (meth to oct); rule 2, the ending shows the carbon to carbon bonds (-ane, -ene, -yne), with saturated and unsaturated given plain meanings; rule 3, the longest continuous chain, which may bend on the page; branch names (methyl, ethyl) and rule 4, numbering from the nearer end (locant); rule 5, several branches (di-, commas and hyphens, alphabetical order ignoring di-); double and triple bonds (the main chain contains the multiple bond, the locant sits before the ending, no locant for ethene or propene); the multiple bond wins the numbering over a branch; reading a name back into a structure and checking the molecular formula by counting. Not here: structural isomers (chem-m7-c02, the next video; 2-methylbutane and pentane appear only as separate examples, never compared as isomers); bond angles and shapes (tetrahedral, trigonal planar, linear), general formulas CnH2n+2, CnH2n, CnH2n−2 and homologous series (chem-m7-c03, which owns C7-IQ2-01); physical properties; functional-group families beyond hydrocarbons (alcohols in chem-m7-c05, carbonyls in chem-m7-c08b, acids in chem-m7-c09, amines and amides in chem-m7-c11, haloalkanes with their reactions); cycloalkanes (one appearance in chem-m7-c02); safe handling and disposal (C7-IQ2-05, the P videos' risk tables, route review change 5); \"first point of difference\" tie-breaks and substituent-numbering subtleties beyond the cases shown."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout: carbon skeleton ink; hydrogens soft grey; the main chain highlighted pale blue by the tracer; branches amber; the double or triple bond teal; locant numbers small navy; the name builder's slots: branches amber, stem pale blue, ending teal (matching what each part describes). Board layout (constant): top-left the short task line or rule chip (\"Rule 3 of 5: longest chain\"); centre the structure board, one molecule at a time; bottom the name builder strip; a plate sits small at the right only in the hook and handoff. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous worked case leaves the board before the next one draws. Reuse: painted plate `m7-camping-gas-burner-v1.png` (inspected 21 Oct: a lit blue camping stove on a blue unlabelled gas canister, silver pot supports, brass valve, blue flame; no person or hand, no text; 2000 × 2000; hook and scene 17's callback, small, never stretched). Considered, not used: `m7-crude-oil-barrel-v1.png` (inspected: a plain dark steel drum; it carries no naming idea here and belongs to chem-m7-c03), `m7-ethanol-fuel-bottle-v1.png` (inspected: an amber stoppered bottle of pale liquid; used in chem-m7-c02). No new plates. No human figures.", "transitionPlan": "The camping gas burner plate opens the hook as the name splits into its coded parts; the board clears to one carbon with four bond lines that joins into a chain and a branch; butane draws full, condensed and skeletal in a row; each naming rule gets its own rule chip (Rule 1 of 5 to Rule 5 of 5) as the stem ladder, the three two-carbon bond skeletons, the bent chain with the chain tracer painting the longest path pale blue, the locant counter running from the nearer end and the amber branches with the name builder slots write in turn; the double bond scenes draw teal bonds inside the traced chain and the counter compares both ends; the name builds back into a skeletal formula one part at a time with hydrogens checked; the memory aid writes three handwritten lines, earlier lines dimming; each attempt clears the board and its feedback traces the chain and fills the name builder under the question card; the name builder ticks each slot as the butane formula question hands off; scene crossfade with settle."},
+        'rows': M7C01_ROWS,
+    },
+    'm7c02': {
+        'design': D + 'lessons/chem-m7-c02.md',
+        'learning_review': D + 'checks/m7c02-learning-review.md',
+        'science_check': D + 'checks/m7c02-claude-science-check.md',
+        'meta': {"title": "How can the same formula make different molecules? Chain, position and functional group isomers, and finding every isomer without duplicates", "subtitle": "Ethanol and methoxymethane are made of exactly the same atoms, yet one is a liquid and the other a gas. How can one molecular formula make different molecules, and how do you tell which kind of isomer you are looking at?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 2, "lessonIntent": "defining structural isomers; classifying a pair as chain, position or functional group isomers with a reason, including saturated and unsaturated hydrocarbons; drawing every isomer of a small alkane systematically and rejecting duplicates by naming. No boiling point explanations for branching (chem-m7-c03), no homologous series (chem-m7-c03), no further family naming, no stereoisomers."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "formula-vs-structure", "why-arrangement-matters", "chain-isomers", "position-isomers", "functional-group-isomers", "why-group-matters", "classify-a-pair", "find-every-isomer", "spot-duplicates", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c01 (skeletal and full structural formulas, implied hydrogens, stems meth to oct, endings -ane, -ene, -yne, saturated and unsaturated, longest chain, locants, methyl and ethyl, di-, double-bond locants). Year 11: hydrogen bonding needs an H on O, N or F, and stronger attractions between molecules raise the boiling point; molecular formulas. Not assumed: isomer, functional group, \"-ol\", cyclo, ether.", "startsWith": "Hold molecular formula constant. The video opens: Ethanol, the alcohol in this bottle, has the formula C two H six O. Methoxymethane, used as a propellant in some spray cans, has exactly the same formula: two carbons, six hydrogens, one oxygen. Yet ethanol boils at seventy eight degrees, and methoxymethane at about minus twenty five, so it's a gas at room temperature.", "stopsAfter": "defining structural isomers; classifying a pair as chain, position or functional group isomers with a reason, including saturated and unsaturated hydrocarbons; drawing every isomer of a small alkane systematically and rejecting duplicates by naming. No boiling point explanations for branching (chem-m7-c03), no homologous series (chem-m7-c03), no further family naming, no stereoisomers.", "nextLesson": "how carbon's bonds give hydrocarbons their shapes, and why chain length and branching change boiling points (route chem-m7-c03, \"How does carbon bonding explain hydrocarbon properties?\")."},
+        'teaching': {"task": "Ethanol and methoxymethane are made of exactly the same atoms, yet one is a liquid and the other a gas. How can one molecular formula make different molecules, and how do you tell which kind of isomer you are looking at?", "causalExplanation": "(1) two compounds with the same formula behave differently (1); (2) a molecular formula counts atoms but does not show how they're joined; structural isomers are different compounds (2); (3) the arrangement decides properties: ethanol's O–H lets its molecules hydrogen bond, methoxymethane's oxygen has no hydrogen, so weaker attractions and a lower boiling point (3); (4) chain isomers: same family, different skeleton (4); (5) position isomers: same skeleton and family, group on a different carbon; \"-ol\" means an O–H group; moving a group can change its reactions (5); (6) functional group isomers: a different family with the same formula; an unsaturated alkene and a saturated ring (6); (7) the group decides the reactions, so the two C₄H₈ isomers behave differently and a test can tell them apart (7); (8) the three-question check, including a non-isomer pair, and why moving a group does not change it (8); (9) finding every isomer by shortening the chain, and why the count stops (9); (10) duplicates are the same molecule drawn differently, so name every structure (10); memory aid (11); two attempts and brief feedback (12 to 15); handoff (16); key notes (17).", "conversationalApproach": "ethanol and methoxymethane have exactly the same formula, yet one is a liquid fuel and the other a propellant gas, so the video asks how one molecular formula can make different molecules and how to tell which kind of isomer you are looking at. A formula counts atoms but not how they are joined, and the arrangement changes the properties (ethanol's OH lets its molecules hydrogen bond). The three kinds then come one at a time on the same board: chain isomers change the skeleton within one family (butane and 2-methylpropane), position isomers move the group along the same skeleton (but-1-ene and but-2-ene), and functional group isomers change the group and so the family and its reactions (but-1-ene and cyclobutane). A three-question check classifies any pair, starting with the formula; finding every isomer of C5H12 works systematically by shortening the chain, and duplicates are spotted by tracing the longest chain and naming each structure. The memory aid is \"Same formula, different arrangement.\" Two exam questions follow with brief feedback.", "openingDecision": "Ethanol, the alcohol in this bottle, has the formula C two H six O. Methoxymethane, used as a propellant in some spray cans, has exactly the same formula: two carbons, six hydrogens, one oxygen. Yet ethanol boils at seventy eight degrees, and methoxymethane at about minus twenty five, so it's a gas at room temperature. Same atoms, different substances. So how can one formula make different molecules?", "understandingCheck": "(A1) \"Classify each pair of compounds as chain, position or functional group isomers. (a) pent-1-ene and pent-2-ene (b) pentane and 2,2-dimethylpropane (c) cyclopentane and pent-1-ene\", with the skeletal formula of each compound beside its name. New compounds (C₅ instead of C₄), all hydrocarbons, one of each type. Crossed mistake: \"(a) chain isomers\" (the double bond moved; the chain did not change). (A2) \"A student draws structures A, B and C and states that they show three different structural isomers of C₅H₁₂. Evaluate the student's statement.\" A: pentane as a straight zigzag; B: pentane drawn with a right-angle bend (three carbons across, two down); C: 2-methylbutane. Tests the naming check for duplicates and the systematic count. Crossed mistake: \"three isomers shown\" (B is A drawn differently).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"explore and distinguish the different types of structural isomers, including saturated and unsaturated hydrocarbons, including: (ACSCH035); chain isomers; position isomers; functional group isomers\" this video starts by holding a molecular formula constant and stops at distinguishing chain, position and functional group isomers. It teaches: a molecular formula counts atoms but does not show how they are joined; structural isomers (same molecular formula, atoms joined in a different order) are different compounds with different names and properties; ethanol against methoxymethane as the opening case, with one Year 11 cause for their different boiling points (hydrogen bonding between ethanol molecules); chain isomers (butane and 2-methylpropane); position isomers (but-1-ene and but-2-ene; propan-1-ol and propan-2-ol, with \"-ol\" given a one-line meaning); functional group isomers, with \"functional group\" given a plain meaning (ethanol and methoxymethane; but-1-ene and cyclobutane, a saturated and an unsaturated hydrocarbon with the same formula); a three-question check to classify a pair (same formula? same family? skeleton or position?); a systematic method to find every isomer of a formula (C₅H₁₂: shorten the chain one carbon at a time); spotting duplicates by naming (a bent chain, a methyl on an end carbon, numbering from the wrong end). Not here: why branching lowers boiling points and how chain length changes properties (chem-m7-c03, the next video; one handoff sentence); homologous series (chem-m7-c03; see Decisions); naming alcohols beyond reading \"-ol\" (chem-m7-c05), aldehydes and ketones (chem-m7-c08b), esters and acids (chem-m7-c09, chem-m7-c10); ether naming (not in the 2017 dotpoints; \"methoxymethane\" is a name to recognise only); cycloalkane naming rules (only \"cyclo means a ring\"); stereoisomers, including cis and trans (not in the 2017 syllabus; author note e); counting isomers of C₆ and above; distinguishing an alkene from a cycloalkane by a test (bromine water in chem-m7-c04a and chem-m7-p02)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c01: carbon skeleton ink; hydrogens soft grey; main chain pale blue; branches amber; double bond teal; locants small navy; oxygen red-brown with its hydrogen grey; the what-changed card's changed row lights violet. Board layout (constant): a pair of structures side by side in the centre, the atom tally card between them at the top, the what-changed card at the right when classifying; plates small at the left or right only in scenes 1, 4 and 16. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; one pair on the board at a time. Reuse: painted plates (inspected 21 Oct): `m7-ethanol-fuel-bottle-v1.png` (an amber stoppered glass bottle, half full of pale liquid, no label, no text, no person or hand; 2000 × 2000; hook only, small; Revision 2 no longer brings it back in scene 3), `m7-camping-gas-burner-v1.png` (as in chem-m7-c01; scenes 4 and 16, small). New plate: `m7-aerosol-spray-can-v1.png` (hook only); see Assets. No human figures.", "transitionPlan": "The ethanol fuel bottle and spray can plates open the hook with a shared formula card; the plates leave and the atom tally card stays top centre as the two structures draw with their OH and C-O-C groups; each structure copies into a small cluster and hydrogen bonds draw between the ethanol molecules only; the board clears to each isomer pair in turn with the tally card rewriting its formula, the chain tracer painting the main chain pale blue, the moving double bond in teal and a functional group tag; the C4H8 pair stays as the double bond pulses for its reactions; a three-step check writes down the centre, each line lighting on its words; the C5H12 task line builds three structures by shortening the chain; a bent pentane and an end-methyl drawing are traced and crossed as duplicates; the memory aid writes large; each attempt clears the board and its feedback traces and names each structure under the question card; the memory aid line and the butane pair return small as the next chip closes; scene crossfade with settle."},
+        'rows': M7C02_ROWS,
+    },
+    # END generated entries: m6p01c, m6g04, m6p07, skills05, m7c01, m7c02
 }
 
 
@@ -8632,7 +12943,7 @@ def ready(design):
 def build(key):
     cfg = LESSONS[key]
     s = io.open(cfg['design'], encoding='utf8').read()
-    parts = re.split(r'^### \d+[a-d]?\. ', s, flags=re.M)[1:]
+    parts = re.split(r'^### \d+[a-z]?\. ', s, flags=re.M)[1:]
     assert len(parts) == len(cfg['ids']), (key, len(parts))
     assert set(cfg['rows']) == set(cfg['ids']), key
     hold = cfg['hold_seconds'] * FPS

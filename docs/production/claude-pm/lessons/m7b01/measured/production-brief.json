@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b01/measured/lesson.json",
+    "lessonSha256": "900e179b25f700521fc94a01bf0afef189cf5c512d5434c0066a098aae53e9ed"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From bio-m5-b06a: prokaryotes have no nucleus, their DNA sits in the cytoplasm (the nucleoid); eukaryotic cells have a nucleus; cells contain ribosomes. From B2c (route bio-m5-b02b), background only: a bacterium is a single cell that copies itself by splitting in two. From Year 11 Module 1: cells, cell walls, the cytoplasm, proteins and nucleic acids (DNA and RNA). Not assumed: infectious against non-infectious, pathogen, host, the three groups, fungi and protozoa as pathogens, helminths, viruses as non-cellular, viroids, prions, why drugs are group-specific.",
+    "startsWith": "Separate infectious from non-infectious disease and sort pathogens by structure. The video opens: In 1928, Alexander Fleming noticed a mould growing on one of his culture dishes.",
+    "stopsAfter": "defining an infectious disease as one caused by a pathogen (most can pass between hosts), with tuberculosis against type 2 diabetes, and noting that most microbes are not pathogens; sorting pathogens by whether they are made of cells, and then whether they are many-celled animals, into microorganisms (bacteria, fungi, protozoa), macroorganisms (helminths, ectoparasites) and non-cellular pathogens (viruses, viroids, prions); describing each type's key structure with a named disease and its true relative size; distinguishing viroids (RNA only, known in plants) from prions (protein only, misfolding normal proteins, known in animals); showing the same groups in plants; explaining that a treatment must target something the pathogen has and the host lacks, so antibiotics act on bacteria but not on viruses or prions; classifying three unseen agents with justification and explaining an antibiotic's action on bovine TB but not BSE.",
+    "nextLesson": "how Pasteur and Koch showed that microbes come from other microbes and that a specific microbe causes a specific disease (route entry bio-m7-b02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b01.md"
+  ],
+  "teaching": {
+    "task": "What makes a disease infectious, and why does knowing which kind of pathogen causes it decide how it can be treated?",
+    "causalExplanation": "Causes: why a disease spreads (the pathogen passes between hosts, 2); why viruses are not microorganisms (not cells, 3); why bacteria differ from fungi and protozoa (nucleus, 4); why a virus needs a host cell (no ribosomes or cytoplasm, 6); how a prion spreads with no genes (converting normal copies, 7); why drugs are group-specific (a target the host lacks, 9). Visible case: the clear ring around the mould; the jump between host circles; the zoom ladder with true-scale pairs; the misfolding row; the tree filling with plant cases and treatment chips. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the full tree in scene 8 is the densest frame, so its leaf labels are small and grey and only the newest plant tag is bright.",
+    "conversationalApproach": "Fleming's mould killed the bacteria around it and led to penicillin, yet penicillin does nothing against many infections, so the question is what makes a disease infectious and why the kind of pathogen decides how it can be treated; an infectious disease is caused by a pathogen living in or on a host and harming it, and most can pass between hosts. The SorterTree then sorts pathogens with one question at a time: is it made of cells (microorganisms against macroorganisms and non-cellular agents), does the cell have a nucleus (bacteria as prokaryotes, against fungi and protozoa), which macroorganisms are parasitic animals (helminths inside, ectoparasites outside), and for non-cellular pathogens whether it is genes in a protein coat (a virus), RNA only (a viroid) or protein only (a prion), with plants as hosts too; a drug has to hit something the pathogen has and the host does not, so the group decides treatment. Two exam questions follow with brief feedback.",
+    "openingDecision": "In 1928, Alexander Fleming noticed a mould growing on one of his culture dishes. Around it, the bacteria had died, leaving a clear ring. That mould led to penicillin. But penicillin does nothing for the flu, for tinea, for malaria or for a tapeworm. So what makes a disease infectious, and why does the kind of pathogen decide how we can fight it?",
+    "understandingCheck": "11a is a classify-and-justify item: three agents described only by their structure (a single cell with its own nucleus and no wall inside a bird's red blood cells; a small circle of RNA with no protein coat from deformed potato tubers; a flat segmented worm two metres long from a dog's intestine). It tests the sorting questions on new descriptions with no plates (a plate would give the answer away). 11c is an explain item: bovine tuberculosis (a rod-shaped bacterium) against BSE (a prion); explain why an antibiotic could act on one pathogen but not the other. It tests the treatment link. Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Each feedback is brief (about 20 to 25 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ1-01: \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117)\", with its listed example \"classifying different pathogens that cause disease in plants and animals (ACSBL117)\". This video covers the \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens\" stem and the classifying example. The data-collection stem and the other three examples (epidemic transmission, microbial testing of water or food, modes of transmission) stay open for b03, p01 and p02. Verbs: \"describe\" (scenes 2 to 8: named diseases with their pathogens) and \"classify\", which NESA examines as distinguish or identify with justification (scenes 3 to 8 and attempt 1); the treatment link (scene 9 and attempt 2) is an \"explain\"."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One pathogen sorter: a branching tree drawn in code on the dark board. Root node \"pathogen\"; first fork \"made of cells?\" into three branches, \"microorganisms\", \"macroorganisms\" and \"non-cellular\"; leaves \"bacteria\", \"fungi\", \"protozoa\" | \"helminths\", \"ectoparasites\" | \"viruses\", \"viroids\", \"prions\". Each leaf is headed by its painted plate thumbnail. The tree builds branch by branch in scenes 3 to 7, the plant examples join beside the leaves in scene 8, and in scene 9 each leaf gains a small treatment chip. A size ruler (a coded horizontal scale bar whose label changes: metres, millimetres, thousandths of a millimetre, ten-thousandths of a millimetre) runs along the lower edge during the zoom in scenes 4 to 7: each zoom step shows the new pathogen beside the previous one at true relative scale where both can be seen in one frame (bacterium beside a red blood cell, at the start of scene 6; virus beside the bacterium; tobacco mosaic virus beside the coronavirus; viroid beside a virus; the prion is shown in its own half with a grey tag \"one protein molecule: far smaller than a virus\" and is not paired at scale, because a single protein would be a dot beside a virus), and uses a camera zoom where they cannot (tapeworm to tick to red blood cell). Plates are scaled proportionally, never stretched. Real organisms, cells and objects are painted plates; the tree, ruler, arrows, host circles, chips and glyph copies are coded. No people, hands, faces, patients or doctors. Hosts that are people are shown as abstract coded host circles only. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey tree labels; tags fade when the next cue lands; branches not being spoken about dim to grey.",
+    "transitionPlan": "The Fleming mould plate opens the hook with its clear ring and a penicillin tag; the definition writes on with pathogen and host labels; the SorterTree root writes and branches on the cells question; the tree shrinks to a thumbnail as the microorganism branch opens on the nucleus question with the bacterium, fungus and protozoan plates; a coded zoom-out sweep relabels the ruler in metres for the tapeworm and the external parasites; the zoom runs back in to a virus drawn at true scale beside the red blood cell and the TB rod; the viroid and prion halves open side by side; the full tree returns with plant slots beside each leaf; target chips light where a drug can act and dim where it cannot; four question chips write down the tree's left edge for the memory aid; each attempt clears the board and its feedback underlines the card as an AnsTable or two-column comparison fills; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. `m7-fleming-mould-plate-v1.png` (new) sits centre, large.",
+      "teachingReason": "Hook (one drug, many pathogens): In 1928, Alexander Fleming noticed a mould growing on one of his culture dishes.",
+      "narrationCue": "a mould growing / the bacteria had died, leaving a clear ring / That mould led to penicillin / does nothing for the flu / what makes a disease infectious",
+      "motionPurpose": "On the spoken cues: On \"a mould growing\" a thin scribble rings the blue-green mould colony; on \"the bacteria had died, leaving a clear ring\" a coded dashed circle traces the clear zone and the small bacterial colonies near it fade slightly (grey tag \"1928: a clear ring around the mould\"). On \"That mould led to",
+      "motionRole": "explain",
+      "onScreenChange": "no people. `m7-fleming-mould-plate-v1.png` (new) sits centre, large. On \"a mould growing\" a thin scribble rings the blue-green mould colony; on \"the bacteria had died, leaving a clear ring\" a coded dashed circle traces the clear zone and the small bacterial colonies near it fade slightly (grey tag \"1928: a clear ring around the mould\"). On \"That mould led to penicillin\" the dish shrinks to the upper left with a small grey tag \"penicillin\". On \"does nothing for the flu\" four plates write in a row, one per word: `m7-virus-particle-v1.png` (tag \"flu (a virus)\", so the plate stands for the group, not the strain), `m7-fungal-hyphae-v1.png` (tag \"tinea\"), `m7-plasmodium-red-cell-v1.png` (tag \"malaria\"), `m7-tapeworm-v1.png` (tag \"tapeworm\"); a thin grey arrow from \"penicillin\" to each takes a small grey cross as it lands. On \"what makes a disease infectious\" the tags fade and the heading writes on: \"What kind of pathogen is it?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "infectious-pathogen-host",
+      "visualDecision": "adjust",
+      "visualReference": "the hook clears.",
+      "teachingReason": "Infectious, pathogen, host: An infectious disease is caused by a pathogen, an organism or agent that lives in or on another organism, its host, and harms it.",
+      "narrationCue": "infectious / pathogen / host",
+      "motionPurpose": "On the spoken cues: The definition writes on: \"Infectious disease: caused by a pathogen; most can pass between hosts.\" On \"a pathogen\" `m7-tb-bacilli-v1.png` (new) appears small with the gloss \"pathogen: an organism or agent that lives in or on a host and harms it\"; on \"its host\" one coded host circle appears with the",
+      "motionRole": "explain",
+      "onScreenChange": "the hook clears. The definition writes on: \"Infectious disease: caused by a pathogen; most can pass between hosts.\" On \"a pathogen\" `m7-tb-bacilli-v1.png` (new) appears small with the gloss \"pathogen: an organism or agent that lives in or on a host and harms it\"; on \"its host\" one coded host circle appears with the bacilli glyph moving into it (gloss \"host: the organism it lives in or on\", replacing the pathogen gloss). On \"pass from one host to the next\" the `HostCircles` row draws: five circles, the glyph jumping circle to circle along coded arrows (tag \"it can spread\"). On \"Tuberculosis is infectious\" the left half holds that row with the label \"tuberculosis: a bacterium\". On \"Type 2 diabetes isn't\" a second row of five circles draws on the right, each with a small grey inner mark and no arrows between them (label \"type 2 diabetes: genes and lifestyle, no pathogen\"). The definition dims to grey. On \"most microbes aren't pathogens\" both rows fade and a field of about thirty `b6a-bacterium-v1.png` glyphs fills the lower half, all grey-teal, two of them marked with a small amber coded ring as the pathogens (no tint over the plate glyphs; tag \"most microbes: harmless or helpful\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "made-of-cells",
+      "visualDecision": "adjust",
+      "visualReference": "the bacterium field clears.",
+      "teachingReason": "The first question: is it made of cells?: Biologists sort pathogens with a few questions.",
+      "narrationCue": "microorganisms / macroorganisms / non-cellular",
+      "motionPurpose": "On the spoken cues: The `SorterTree` root writes on at the top: \"pathogen\". On \"is it made of cells?\" the first fork draws with the question on it in small amber handwriting. On \"microorganisms\" the left branch draws and three empty leaf slots appear under it, headed \"bacteria\", \"fungi\", \"protozoa\"; small thumbnails",
+      "motionRole": "explain",
+      "onScreenChange": "the bacterium field clears. The `SorterTree` root writes on at the top: \"pathogen\". On \"is it made of cells?\" the first fork draws with the question on it in small amber handwriting. On \"microorganisms\" the left branch draws and three empty leaf slots appear under it, headed \"bacteria\", \"fungi\", \"protozoa\"; small thumbnails slide into them (`m7-tb-bacilli-v1.png`, `m7-fungal-hyphae-v1.png`, `m7-plasmodium-red-cell-v1.png`); the branch label reads \"microorganisms: single cells or threads\". On \"macroorganisms\" the centre branch draws with two leaves, \"helminths\" (`m7-tapeworm-v1.png`) and \"ectoparasites\" (`m7-tick-vector-v1.png`); label \"macroorganisms: many-celled animals\"; the left branch label dims to grey. On \"non-cellular\" the right branch draws with three leaves, \"viruses\" (`m7-virus-particle-v1.png`), \"viroids\" (`m7-viroid-rna-v1.png`, new) and \"prions\" (`m7-prion-folded-protein-v1.png`); label \"non-cellular: not cells, multiply only inside a host\"; the centre label dims. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "microorganisms",
+      "visualDecision": "adjust",
+      "visualReference": "the tree shrinks to a grey thumbnail at the upper left with the microorganism branch lit.",
+      "teachingReason": "Microorganisms: does it have a nucleus?: Inside the microorganisms, ask a second question: does the cell have a nucleus?",
+      "narrationCue": "bacterium / Fungi / protozoa",
+      "motionPurpose": "On the spoken cues: The second question writes small in amber: \"nucleus?\" On \"A bacterium doesn't\" `m7-tb-bacilli-v1.png` fills the left half; a coded inset outline of one rod shows a DNA loop lying in the cytoplasm, with no nucleus (grey tag \"prokaryote: no nucleus\", recalled from b06a); on \"a wall containing ...",
+      "motionRole": "explain",
+      "onScreenChange": "the tree shrinks to a grey thumbnail at the upper left with the microorganism branch lit. The second question writes small in amber: \"nucleus?\" On \"A bacterium doesn't\" `m7-tb-bacilli-v1.png` fills the left half; a coded inset outline of one rod shows a DNA loop lying in the cytoplasm, with no nucleus (grey tag \"prokaryote: no nucleus\", recalled from b06a); on \"a wall containing ... peptidoglycan\" the rod's outline pulses (tag \"wall: peptidoglycan\", replacing the prokaryote tag). On \"a few thousandths of a millimetre\" the `SizeRuler` draws along the lower edge, labelled \"a few thousandths of a mm\" under the rod. On \"Fungi and protozoa do have a nucleus\" the rod slides left and a grey tag \"eukaryotes: have a nucleus\" writes beside the next two plates. On \"Fungi grow as threads\" `m7-fungal-hyphae-v1.png` appears (tag \"threads (hyphae) and spores\"; on \"chitin\" the tag extends \"wall contains chitin\"); on \"Tinea\" a small grey tag \"tinea: a fungal skin infection\" replaces it. On \"Protozoa are single cells\" `m7-plasmodium-red-cell-v1.png` appears at the right; on \"inside red blood cells\" the parasite inside the cell is ringed (the rod beside the red cell pairing moves to the start of scene 6, so nothing appears here without a spoken referent) (tag \"Plasmodium: inside red blood cells\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "macroorganisms",
+      "visualDecision": "adjust",
+      "visualReference": "the camera pulls back fast (a coded zoom-out sweep; the ruler relabels \"metres\").",
+      "teachingReason": "Macroorganisms: Macroorganisms are parasitic animals.",
+      "narrationCue": "Helminths / ectoparasites",
+      "motionPurpose": "On the spoken cues: On \"Helminths\" `m7-tapeworm-v1.png` stretches across the frame at its own proportions (scaled, never stretched; the plate's long body runs across the width) with a coded scribble ring on the head end (tag \"hooks onto the gut wall\"); on \"several metres\" the ruler shows a bracket \"up to several",
+      "motionRole": "explain",
+      "onScreenChange": "the camera pulls back fast (a coded zoom-out sweep; the ruler relabels \"metres\"). On \"Helminths\" `m7-tapeworm-v1.png` stretches across the frame at its own proportions (scaled, never stretched; the plate's long body runs across the width) with a coded scribble ring on the head end (tag \"hooks onto the gut wall\"); on \"several metres\" the ruler shows a bracket \"up to several metres\". On \"Others live on the outside\" the camera zooms in a thousand times (ruler relabels \"millimetres\") and `m7-tick-vector-v1.png` appears (tag \"tick: a few millimetres\"). On \"Ecto means outside\" two short handwritten chips write one per cue: \"ecto- = outside: ticks, lice\" (beside the tick) and \"endo- = inside: tapeworms\" (beside a small tapeworm thumbnail). The macroorganism leaves on the tree thumbnail pulse. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Cam lens zoom",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "viruses",
+      "visualDecision": "adjust",
+      "visualReference": "on \"Now zoom in to a smaller example\" the TB rod plate is drawn beside the red blood cell **at true relative scale** (a rod about 3 thousandths of a mm against a red cell about 7.5 thousandths of a mm, so the rod is roughly half the cell's width; ruler relabels \"thousandths of a mm\"), then the camera zooms in past the red blood cell to the rod.",
+      "teachingReason": "Viruses: not cells: Now zoom in to a smaller example.",
+      "narrationCue": "virus",
+      "motionPurpose": "On the spoken cues: On \"A virus\" `m7-virus-particle-v1.png` fills the right half; on \"genetic material\" its coiled genome is ringed (tag \"DNA or RNA\"); on \"protein coat\" the coat outline pulses (tag \"protein coat\", replacing the genome tag). On \"no cytoplasm and no ribosomes\" a short grey chip \"no cytoplasm, no",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Now zoom in to a smaller example\" the TB rod plate is drawn beside the red blood cell **at true relative scale** (a rod about 3 thousandths of a mm against a red cell about 7.5 thousandths of a mm, so the rod is roughly half the cell's width; ruler relabels \"thousandths of a mm\"), then the camera zooms in past the red blood cell to the rod. On \"A virus\" `m7-virus-particle-v1.png` fills the right half; on \"genetic material\" its coiled genome is ringed (tag \"DNA or RNA\"); on \"protein coat\" the coat outline pulses (tag \"protein coat\", replacing the genome tag). On \"no cytoplasm and no ribosomes\" a short grey chip \"no cytoplasm, no ribosomes\" writes and dims. On \"makes that cell build new viruses\" `m5x-cell-protein-synthesis-v1.png` appears small with one virus glyph entering and five leaving (tag \"the host cell builds new viruses\"). On \"about a ten-thousandth of a millimetre\" the cell plate fades, the ruler relabels \"ten-thousandths of a mm\", and the virus is redrawn beside one TB rod **at true relative scale** (about 0.1 thousandths of a mm against about 3, so roughly thirty viruses along the rod; a dotted row of virus glyphs runs along the rod on \"dozens would fit\"). On \"tobacco mosaic virus\" `m7-tmv-particle-v1.png` (new) appears beside the coronavirus at true relative scale (a rod about 300 by 18 millionths of a mm against a sphere about 100 across) with the tag \"tobacco mosaic virus: a rod of RNA in a protein coat\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "viroids-and-prions",
+      "visualDecision": "adjust",
+      "visualReference": "on \"easy to mix up\" the two halves open.",
+      "teachingReason": "Viroids and prions: Two non-cellular pathogens are even simpler, and easy to mix up.",
+      "narrationCue": "viroid / prion",
+      "motionPurpose": "On the spoken cues: The left half shows `m7-viroid-rna-v1.png` (new) beside a virus glyph at true relative scale (the viroid is a short rod-like circle, a fraction of the virus's width), with the tag \"viroid: RNA only, no coat\". On \"potato tubers\" the aligned pair `m7-potato-tuber-normal-v1.png` and",
+      "motionRole": "explain",
+      "onScreenChange": "on \"easy to mix up\" the two halves open. The left half shows `m7-viroid-rna-v1.png` (new) beside a virus glyph at true relative scale (the viroid is a short rod-like circle, a fraction of the virus's width), with the tag \"viroid: RNA only, no coat\". On \"potato tubers\" the aligned pair `m7-potato-tuber-normal-v1.png` and `m7-potato-tuber-spindle-v1.png` (both new) appear small below, normal first, then crossfading to the spindle tuber (tag \"potato spindle tuber viroid\"). On \"A prion is the opposite\" the right half shows `m7-prion-folded-protein-v1.png` on its own, not paired with the virus, with the tag \"prion: protein only, no DNA or RNA\" and a small grey tag beneath, \"one protein molecule: far smaller than a virus\" (the viroid tag dims). On \"a normal protein\" `m7-prion-normal-protein-v1.png` (new, aligned to the prion plate) appears beside it, labelled small \"normal form\". On \"makes them fold the same wrong way\" the `MisfoldSpread` runs: a row of five normal-form copies; the misfolded plate touches the first, which crossfades to the misfolded form, then the next, and so on, one at a time (tag \"one misfolded protein converts the next\"). On \"like one bad apple\" a small grey chip \"the bad apple\" writes and dims. On \"mad cow disease\" `b3b-dairy-cow-side-v1.png` appears small (tag \"BSE: mad cow disease\"). On \"a viroid is RNA only\" two handwritten lines write one per cue under the halves: \"viroid: RNA only\" and \"prion: protein only\", each with its plate thumbnail; the other tags fade. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "plant-hosts",
+      "visualDecision": "adjust",
+      "visualReference": "the full `SorterTree` returns at medium size.",
+      "teachingReason": "Plants are hosts too: Plants are hosts too, and most of the same groups attack them.",
+      "narrationCue": "crown gall / wheat stem rust / root-knot nematodes / two exceptions",
+      "motionPurpose": "On the spoken cues: Beside each leaf a small plant slot opens, filled one per cue: on \"crown gall\" `m7-crown-gall-stem-v1.png` (new) beside \"bacteria\" (tag \"crown gall: a swelling at the stem base\"); on \"wheat stem rust\" `b3b-wheat-rust-leaf-v1.png` beside \"fungi\" (tag \"wheat stem rust\"); on \"root-knot nematodes\"",
+      "motionRole": "explain",
+      "onScreenChange": "the full `SorterTree` returns at medium size. Beside each leaf a small plant slot opens, filled one per cue: on \"crown gall\" `m7-crown-gall-stem-v1.png` (new) beside \"bacteria\" (tag \"crown gall: a swelling at the stem base\"); on \"wheat stem rust\" `b3b-wheat-rust-leaf-v1.png` beside \"fungi\" (tag \"wheat stem rust\"); on \"root-knot nematodes\" `m7-root-knot-galls-v1.png` (new) beside \"helminths\" (tag \"root-knot nematodes: tiny roundworms\"); as the nematode tag dims, the protozoa slot shows, silently, only a small grey tag \"rare in plants (e.g. Phytomonas in palms)\" (the spoken sentence was cut for length in Revision 2); the virus slot holds a small `m7-tmv-particle-v1.png` silently. Earlier tags dim to grey as each new one lands. On \"two exceptions\" the viroid leaf's plant slot fills with the spindle tuber thumbnail and its animal side shows a grey dash; the prion leaf's animal side shows the cow thumbnail and its plant slot a grey dash (chips \"viroids: known in plants\", \"prions: known in animals\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "treatment",
+      "visualDecision": "adjust",
+      "visualReference": "the tree stays; plant slots dim to grey.",
+      "teachingReason": "Why the group decides treatment: So why does the group matter so much?",
+      "narrationCue": "something the pathogen has and the host doesn't / Antibiotics / peptidoglycan wall and ribosomes shaped differently from ours / A virus has neither / antifungals and antimalarials / no known cure",
+      "motionPurpose": "On the spoken cues: On \"something the pathogen has and the host doesn't\" a short chip writes at the top: \"target: something the pathogen has, the host doesn't\". On \"Antibiotics\" the Fleming dish thumbnail returns small and a treatment chip \"antibiotics\" attaches under the bacteria leaf; on \"peptidoglycan wall and",
+      "motionRole": "explain",
+      "onScreenChange": "the tree stays; plant slots dim to grey. On \"something the pathogen has and the host doesn't\" a short chip writes at the top: \"target: something the pathogen has, the host doesn't\". On \"Antibiotics\" the Fleming dish thumbnail returns small and a treatment chip \"antibiotics\" attaches under the bacteria leaf; on \"peptidoglycan wall and ribosomes shaped differently from ours\" a generic `b6a-bacterium-v1.png` glyph (no species named) appears beside the bacteria leaf and its wall outline and small coded ribosome dots pulse amber (tag \"targets: wall, bacterial-type ribosomes\"). The TB rod is not used for penicillin's target, because *Mycobacterium* resists penicillin. The leaf chip reads \"antibiotics\", not \"penicillin\". On \"A virus has neither\" a grey arrow from \"antibiotics\" to the viruses leaf takes a grey cross (tag \"flu: a virus, so no effect\", replacing the targets tag). On \"antifungals and antimalarials\" chips attach under fungi (\"antifungals\") and protozoa (\"antimalarials\"), with a small grey tag \"eukaryotes like us: harder to target\". As the antimalarials chip lands, the chip \"anthelmintics: worm drugs\" attaches silently under helminths. On \"no known cure\" the prions leaf gains a grey chip \"no known cure\". The chip at the top dims as the last chips land. At most three bright text items besides the small chips. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the tree dims and four question chips write in a column down its left edge, one per cue, each lighting the fork it decides: \"made of cells?\" (first fork), \"many-celled animal?\" (macro against micro), \"nucleus?\" (bacteria against fungi and protozoa), \"RNA only, protein only, or genes in a coat?\" (viroid, prion, virus).",
+      "teachingReason": "Memory: Sort any pathogen in order.",
+      "narrationCue": "not a cell means antibiotics are useless",
+      "motionPurpose": "On the spoken cues: On \"not a cell means antibiotics are useless\" one handwritten line writes on large across the lower third, with the non-cellular branch pulsing and the \"antibiotics\" chip crossed beside it. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "the tree dims and four question chips write in a column down its left edge, one per cue, each lighting the fork it decides: \"made of cells?\" (first fork), \"many-celled animal?\" (macro against micro), \"nucleus?\" (bacteria against fungi and protozoa), \"RNA only, protein only, or genes in a coat?\" (viroid, prion, virus). On \"not a cell means antibiotics are useless\" one handwritten line writes on large across the lower third, with the non-cellular branch pulsing and the \"antibiotics\" chip crossed beside it. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (three agents)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. Three agents were",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (three agents))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Three disease-causing agents were isolated from infected organisms.\" A small three-row table: \"Agent P: a single cell with its own nucleus and no cell wall, found inside the red blood cells of a wild bird\"; \"Agent Q: a small circular RNA molecule with no protein coat, isolated from deformed potato tubers\"; \"Agent R: a flat, segmented worm about 2 m long, attached to the intestine wall of a dog\". Demand: \"Classify each agent as a type of pathogen. Justify each classification. (3 marks)\". One lined answer box. No plates and nothing answer-bearing: no tree, leaves or thumbnails. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "P is a protozoan / Q is a viroid / R is a helminth / the classic mistake / a virus has a protein coat",
+      "motionPurpose": "On the spoken cues: A three-row `AnsTable` fills one row per cue: on \"P is a protozoan\" \"a single cell\", \"with its own nucleus\" and \"no cell wall\" underline amber and the row \"P: protozoan (microorganism): one cell, nucleus, no wall\" fills, with `m7-plasmodium-red-cell-v1.png` small at its end; on \"Q is a viroid\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A three-row `AnsTable` fills one row per cue: on \"P is a protozoan\" \"a single cell\", \"with its own nucleus\" and \"no cell wall\" underline amber and the row \"P: protozoan (microorganism): one cell, nucleus, no wall\" fills, with `m7-plasmodium-red-cell-v1.png` small at its end; on \"Q is a viroid\" \"circular RNA\" and \"no protein coat\" underline and the row \"Q: viroid (non-cellular): RNA only\" fills, with the viroid thumbnail; on \"R is a helminth\" \"segmented worm\" and \"2 m long\" underline and the row \"R: helminth (macroorganism): many-celled animal\" fills, with the tapeworm thumbnail. The first two rows dim as the third fills. On \"the classic mistake\" the chip \"Q is a small virus\" writes on and takes a grey scribble cross, with the small grey reason \"a virus has a protein coat\". Settle on the table for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b3b-dairy-cow-side-v1.png` small at its upper left (the host only; no pathogen plate).",
+      "teachingReason": "Unseen transfer task (attempt two (two cattle diseases)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Bovine tuberculosis is caused by a rod-shaped",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two cattle diseases))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b3b-dairy-cow-side-v1.png` small at its upper left (the host only; no pathogen plate). Stem: \"Bovine tuberculosis is caused by *Mycobacterium bovis*, a rod-shaped bacterium. Bovine spongiform encephalopathy (BSE) is caused by a prion.\" Demand: \"Explain why an antibiotic could act on the pathogen that causes one of these diseases but not on the other. (3 marks)\". One lined answer box. Nothing answer-bearing: no tree or chips. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "the tuberculosis bacterium / bacterial ribosomes and the enzymes that build its wall / misfolded protein / nothing to act on / the classic mistake",
+      "motionPurpose": "On the spoken cues: A two-column comparison writes beneath it, headings \"bovine TB\" and \"BSE\": on \"the tuberculosis bacterium\" \"rod-shaped bacterium\" underlines amber and the left column fills \"prokaryotic cell\" with the TB rod thumbnail; on \"bacterial ribosomes and the enzymes that build its wall\" a row \"antibiotic",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A two-column comparison writes beneath it, headings \"bovine TB\" and \"BSE\": on \"the tuberculosis bacterium\" \"rod-shaped bacterium\" underlines amber and the left column fills \"prokaryotic cell\" with the TB rod thumbnail; on \"bacterial ribosomes and the enzymes that build its wall\" a row \"antibiotic targets\" fills \"bacterial ribosomes, wall-building enzymes\" with a small amber tick; on \"misfolded protein\" \"a prion\" underlines and the right column fills \"misfolded protein: no cell\" with the prion thumbnail; on \"nothing to act on\" the targets row fills \"none\" with a grey cross. On \"the classic mistake\" the chip \"the prion is too small for the drug to reach\" writes on and takes a grey scribble cross. Settle on the comparison for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "three step chips write on in a column, one per cue: \"a pathogen, or something else?\", \"sort it: cells? many-celled animal? nucleus? what is it made of?\", \"its group predicts the treatment\".",
+      "teachingReason": "Decision rule and handoff: So when a question names a disease, first ask what causes it: a pathogen, or something else.",
+      "narrationCue": "So when a question names a disease, first",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how Pasteur and Koch linked microbes to disease\" (small `m7-tb-bacilli-v1.png` thumbnail). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on in a column, one per cue: \"a pathogen, or something else?\", \"sort it: cells? many-celled animal? nucleus? what is it made of?\", \"its group predicts the treatment\". A \"Next\" chip slides in at the lower right: \"Next: how Pasteur and Koch linked microbes to disease\" (small `m7-tb-bacilli-v1.png` thumbnail). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b01-learning-review.md",
+      "sha256": "d88c66701210330fbf059566302fc52ee5ffa15c2ab06056c61d1419ec61f596"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b01-claude-science-check.md",
+      "sha256": "d48ee90985866aa615ef621491c0661cef12bf56d3207c9fc2c2db8fd23afbd5"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

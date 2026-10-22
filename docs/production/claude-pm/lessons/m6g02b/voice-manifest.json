@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-G02-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6g02b/lesson.json",
+  "lessonSha256": "c01d99d3b9e073566027a02f25bbb407a236c6a8d5ada4ff16c39bb0d2dfc27d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6g02b/lesson.production-brief.json",
+    "sha256": "e689ce18cbd440c19becab7ed330588aa6f6ebb7018e06e8e8078813d81d71c1"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Some of the biggest HSC Biology questions ask you to assess or evaluate a biotechnology. Markers want the technology linked to its effect on biodiversity, not just on the organism, and ethics answers need the same link to the people and animals involved. You have the routine: a verdict, the criteria you judge by, and evidence from the question. Here are three HSC-style questions. Plan each one, then we'll build the answer.",
+      "hash": "74e07b2497c4",
+      "textSha256": "74e07b2497c424305f88dd4d870d4f71695c22bb5ef99a2dcd8fc2fccb721ff9",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/hook.74e07b2497c4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/hook.74e07b2497c4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/hook.74e07b2497c4.generation.json",
+      "plannedRequestSha256": "dd9af68668aeef69a283f42c84a3ba701b6babedb19ad165836339373442c86a"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. A farming district switched from ordinary maize, sprayed against caterpillars, to a maize that makes its own insect-killing protein. The table shows data from before the switch and ten years later. Assess the effect of this change on biodiversity in the district. Pause here to answer.",
+      "hash": "85bf6801123f",
+      "textSha256": "85bf6801123f29c0fd0ba99ecca517aa9f7aee5fcad0284b992a28e18d688633",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-question.85bf6801123f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-question.85bf6801123f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-question.85bf6801123f.generation.json",
+      "plannedRequestSha256": "e2592bf3c8dc7fcb3006acdfa9dcb49b9514757185126712347a78c40db452f3"
+    },
+    {
+      "id": "q1-plan",
+      "parentSceneId": "q1-plan",
+      "text": "Assess means judge how far, so your verdict says how much biodiversity changed, and which way. Your criteria are the levels: species and genetic. The baseline is the one the question gives you, sprayed maize, not untouched land. Now sort the evidence. Sprays and insect species are the species level. Varieties are the crop's genetic level. Surviving caterpillars show a genetic change in the pest.",
+      "hash": "4c35afd549bc",
+      "textSha256": "4c35afd549bccc0b74efc20ae6a47033bc03264e407000ff90208d67a1f5a3ab",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-plan.4c35afd549bc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-plan.4c35afd549bc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-plan.4c35afd549bc.generation.json",
+      "plannedRequestSha256": "98030a32d50015eafb34fec726bba8e55a324383204e7fcc5047b3f4a45791b6"
+    },
+    {
+      "id": "q1-build",
+      "parentSceneId": "q1-build",
+      "text": "Biodiversity rose at the species level, but the crop's genetic diversity fell, so the change is mixed. Species: sprays fell from six to one, so fewer insects that don't eat maize were killed, and recorded species rose from seventeen to twenty-five. Genetic: varieties fell from fifteen to four, so one new disease could hit most of the district's crop. And surviving caterpillars are rising: resistance alleles are becoming more common in the pest, which threatens the species gain.",
+      "hash": "86a5fd9bd9ff",
+      "textSha256": "86a5fd9bd9ffcb48d44b10f73a68145836f5077b039efeba578c35cd23d2cb7b",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-build.86a5fd9bd9ff.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-build.86a5fd9bd9ff.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-build.86a5fd9bd9ff.generation.json",
+      "plannedRequestSha256": "beecbebcb55c4020477938ebaa7f23299aace2d886399cf70275609cb17ed77e"
+    },
+    {
+      "id": "q1-weigh",
+      "parentSceneId": "q1-weigh",
+      "text": "Only three farms in ten plant refuges, so resistance can keep spreading. If it does, spraying returns, and the species gain could be lost. So close the loop. Overall, the effect is mixed: species diversity rose to a moderate extent, but crop genetic diversity fell. The gain lasts provided refuges are planted, and more varieties with the trait would reduce the loss. Ecosystem effects aren't in the data, so don't invent them.",
+      "hash": "239ee0dfc5c9",
+      "textSha256": "239ee0dfc5c9c33ea535aec4bcfae3955f9ec9ff5783ba381d5549f4da73602e",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-weigh.239ee0dfc5c9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-weigh.239ee0dfc5c9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-weigh.239ee0dfc5c9.generation.json",
+      "plannedRequestSha256": "1e2ee0b813620d8eef61bbfa7865c49fd63cd1223faa7324dd578f00d8687d44"
+    },
+    {
+      "id": "q1-weak",
+      "parentSceneId": "q1-weak",
+      "text": "Here's a weaker answer. \"The maize is good because it kills caterpillars and gives bigger harvests, but pests could become resistant.\" It's all about the organism and the farm. It never names a level of biodiversity, uses no data, and has no real verdict.",
+      "hash": "f794b6c4f5ca",
+      "textSha256": "f794b6c4f5ca5e55862f921ef59781687760449d38885735e27fcefd9c92f890",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-weak.f794b6c4f5ca.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-weak.f794b6c4f5ca.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q1-weak.f794b6c4f5ca.generation.json",
+      "plannedRequestSha256": "dce8320b04b6fddabaf3fb1d050c00fb06ad9341655eb2431be8f12e6e89639d"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. A rare wild sheep species survives as about three hundred animals, all descended from eight founders. A cell bank holds frozen skin cells from ten wild sheep that died thirty years ago, who carried alleles now missing from the herd. Scientists plan to clone them, using eggs and surrogate mothers from domestic sheep. Evaluate this plan as a way to protect the species. Refer to genetic diversity, animal welfare and one alternative. Pause here to answer.",
+      "hash": "bc0459e0596a",
+      "textSha256": "bc0459e0596a26a968b21f9a9f5a72dbd86383d62d1c68f825a90821b8c5748c",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-question.bc0459e0596a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-question.bc0459e0596a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-question.bc0459e0596a.generation.json",
+      "plannedRequestSha256": "a7032a741fe411f50e3c7261137660869a1e498f90a6c7316f7fa59c968deec0"
+    },
+    {
+      "id": "q2-genetic",
+      "parentSceneId": "q2-genetic",
+      "text": "Evaluate, and the question hands you three criteria. First, the mechanism: each clone's nuclear DNA matches its cell donor, so it brings back that donor's alleles. Now genetic diversity. Clones of ten different donors carry alleles the herd has lost, so when they breed with living sheep, those alleles re-enter the gene pool. But count the donors, not the clones. Ten clones of one sheep add no more alleles than one.",
+      "hash": "cd609ff907b3",
+      "textSha256": "cd609ff907b3504c838d1e863eabd5eac44ced16b61db830f5dfd15cb1c1477a",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-genetic.cd609ff907b3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-genetic.cd609ff907b3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-genetic.cd609ff907b3.generation.json",
+      "plannedRequestSha256": "fdadac406b36cceec7cdc6828eb8c054cbba5d664a3412f86a92af4cea8d58d1"
+    },
+    {
+      "id": "q2-welfare",
+      "parentSceneId": "q2-welfare",
+      "text": "Next, welfare. If only about two in a hundred embryos become lambs, many domestic ewes go through embryo transfer, and most embryos are lost, so the cost to them is high. Then the alternative: manage breeding among the living sheep and protect their habitat. That removes threats cloning can't, but it can't bring back lost alleles. So, the verdict. The plan is worth it to a moderate extent, as a small trial alongside habitat protection, provided the clones survive and breed into the herd.",
+      "hash": "7a4958e190a0",
+      "textSha256": "7a4958e190a08a9833bb6f1320cfaa6f2ca10e0eed17638be058cb58b8e2d8ea",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-welfare.7a4958e190a0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-welfare.7a4958e190a0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-welfare.7a4958e190a0.generation.json",
+      "plannedRequestSha256": "be17a62edcab82cb6b5b62080e30c9a799493d532cb4de3519529889a8d629b7"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is writing that clones are identical, so cloning can never increase genetic diversity. A clone is identical to its donor, not to the herd. Here, the donors carry alleles the herd has lost.",
+      "hash": "5f441349067d",
+      "textSha256": "5f441349067da97485d27402220dd97914d4ab1ee743316fe75aa7b3aabe7652",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-mistake.5f441349067d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-mistake.5f441349067d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q2-mistake.5f441349067d.generation.json",
+      "plannedRequestSha256": "4898b71edd3d7200d0546473ef65cb351df466831f718a19f3803360e3d0aee9"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. Thousands of people with kidney failure wait years for a donor kidney. Scientists have gene-edited pigs so their kidneys suit humans better, and inactivated copies of a virus built into the pig's DNA. Since 2024, a few patients have received these kidneys with special permission, and one worked for about nine months before it was removed. Assess the use of gene-edited pigs as a source of kidneys. Refer to benefits and ethical issues. Pause here to answer.",
+      "hash": "c34b03098f98",
+      "textSha256": "c34b03098f984caada8c27b8f40a82c8777afaba4d61339c496dbf695e26db86",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-question.c34b03098f98.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-question.c34b03098f98.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-question.c34b03098f98.generation.json",
+      "plannedRequestSha256": "1a6dd41f6ec2afc3eb28ddff6b2d13ec13cc3f02dabe80e4c1e5644b8da7562f"
+    },
+    {
+      "id": "q3-benefit",
+      "parentSceneId": "q3-benefit",
+      "text": "Assess means judge how far, so size the benefit first. Better than what? Than waiting years for a human kidney, which some people don't survive. A pig could supply a kidney when it's needed. Shown how? A few patients, and kidneys lasting months, not years. So the benefit would be large if it works, but it isn't shown yet.",
+      "hash": "594a1eb6665b",
+      "textSha256": "594a1eb6665bb63b60c9bb90d3fbf8c4512e1e33badd6a5f0caf4f785505b42d",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-benefit.594a1eb6665b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-benefit.594a1eb6665b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-benefit.594a1eb6665b.generation.json",
+      "plannedRequestSha256": "43d4d18368e064d1549bea84a70aea2b8e3141e9eb75576c169db70dc60c1bff"
+    },
+    {
+      "id": "q3-ethics",
+      "parentSceneId": "q3-ethics",
+      "text": "Now the ethical issues, and who carries each one. The pigs are bred, confined and killed for their organs. Early patients take a high risk, so they need to understand it and agree freely. And a pig virus crossing into a patient could spread to other people, which is why those viral copies were inactivated. Some people object in principle, and evidence can't settle that.",
+      "hash": "0b800c9578eb",
+      "textSha256": "0b800c9578eb42a4c20bf912734c1a600fed1ab2b08bdedb2ad9546672a171d8",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-ethics.0b800c9578eb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-ethics.0b800c9578eb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-ethics.0b800c9578eb.generation.json",
+      "plannedRequestSha256": "358570744086896e9778a5cb2c266cafe3633e51e35d36d89b5ca3cfa2849f04"
+    },
+    {
+      "id": "q3-verdict",
+      "parentSceneId": "q3-verdict",
+      "text": "Gene-edited pig kidneys are justified to a moderate extent, as carefully regulated trials, provided patients give informed consent, the pigs' welfare is protected, and recipients are monitored for infection. They aren't yet a replacement for human donors.",
+      "hash": "587fca16fdf9",
+      "textSha256": "587fca16fdf9b7e2a1ff3790fc89492ca56accba67304f124a3b78fe9a193ed3",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-verdict.587fca16fdf9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-verdict.587fca16fdf9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-verdict.587fca16fdf9.generation.json",
+      "plannedRequestSha256": "02c17e5ad4e69e0d405be27946da5e5a2c6bf4bf4c1b2ab85a2fc5ff8f34b934"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is treating one kidney that worked for nine months as proof that pig kidneys solve the shortage. It doesn't show how long, how often, or how safely.",
+      "hash": "5b65a86a2904",
+      "textSha256": "5b65a86a29048250126369647a50db5ffae62765ed9e98e59c6d5233d6b232e5",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-mistake.5b65a86a2904.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-mistake.5b65a86a2904.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/q3-mistake.5b65a86a2904.generation.json",
+      "plannedRequestSha256": "016fcf62d61ddf2991fcccf2607f5b3f7786e9536fa7f64a231c2e6a4ecd6095"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "For any biotechnology question, give one mechanism link. Judge it against criteria, with evidence from the question, naming the biodiversity level, or who carries each risk. Then finish with a verdict and a condition that evidence could check. Next, why a technology that works can still have little lasting effect on a population.",
+      "hash": "390d9528ebda",
+      "textSha256": "390d9528ebdad70435ada7575e10e97c1aeedf14ec9f11c569200d417d5b1435",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/decision-board.390d9528ebda.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/decision-board.390d9528ebda.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/decision-board.390d9528ebda.generation.json",
+      "plannedRequestSha256": "391ff92f02e596bbc94cbf9367462b39f0ba0be8f91e97685728fe069d08a740"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-G02-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M6-P01-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6p01b/lesson.json",
+  "lessonSha256": "4015f3b5a527dabfb653d8016f232afac4d43f57da8c0fff9b356b7044897632",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6p01b/lesson.production-brief.json",
+    "sha256": "708570f8b5ef1d7c2cbf450fccd90e77af5d385db3d578e9c73ff431b02a46c8"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the mutagens video, you saw these numbers: a hundred and forty two yeast colonies with no UV, and just five after two minutes. And you saw that fewer colonies doesn't prove more mutants. But why not? If some cells mutated and survived, where would they be? They'd be hiding inside the colonies that grew. So what can colony counts really tell you?",
+      "hash": "7e1b27d8b6fd",
+      "textSha256": "7e1b27d8b6fdacfd2b5f1ac73fc87962aa960fa1e185699353d4aa60c062faf4",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/hook.7e1b27d8b6fd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/hook.7e1b27d8b6fd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/hook.7e1b27d8b6fd.generation.json",
+      "plannedRequestSha256": "0c920528ebb8a08a12c3e673f805c8726be5fa77a86715e1a919a1d91f1edb5c"
+    },
+    {
+      "id": "what-a-colony-is",
+      "parentSceneId": "what-a-colony-is",
+      "text": "First, what's a colony? Spread about a hundred and fifty yeast cells thinly on agar, and each cell that can still divide makes a pile of millions of copies in two days. That pile is a colony, big enough to see. Each colony grew from a surviving cell or small clump that kept dividing. A cell that can't divide leaves nothing to see.",
+      "hash": "67dfd2a1d470",
+      "textSha256": "67dfd2a1d470ae5fe54cccc745bea1506f8bca13b144f997bab1e57fbebd0c0b",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/what-a-colony-is.67dfd2a1d470.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/what-a-colony-is.67dfd2a1d470.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/what-a-colony-is.67dfd2a1d470.generation.json",
+      "plannedRequestSha256": "6e49b1524a8df31e959784b9b46c26b3d271314606695306db74f062bfe24baa"
+    },
+    {
+      "id": "four-fates",
+      "parentSceneId": "four-fates",
+      "text": "Now add UV, which joins neighbouring thymines, as you saw. Each cell then has one of four fates. No damage: it grows a colony. Damaged, but repaired: a colony. Too much damage: copying stalls at many dimers, so the cell can't divide, and there's no colony. Or a changed base gets copied, the cell lives, and it grows a colony that looks just like the others. So the count measures survival, and any mutants are counted as survivors.",
+      "hash": "7ab78853221c",
+      "textSha256": "7ab78853221c95379a3fe720078a9055c0e62b6072158bf6b42f3ed24bd855fe",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/four-fates.7ab78853221c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/four-fates.7ab78853221c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/four-fates.7ab78853221c.generation.json",
+      "plannedRequestSha256": "a0c74d2f03bdfb74d4f73b4c1d8dca90bb5839ac0571cd2761a64f06d7bbc797"
+    },
+    {
+      "id": "who-collects",
+      "parentSceneId": "who-collects",
+      "text": "In this practical, a teacher collects the data, not students. The lamp gives out UVC, and it can burn skin and injure eyes after a short exposure. So the plates go into an interlocked cabinet, which switches the lamp off whenever the door opens. Your job in this practical is the analysis.",
+      "hash": "58b5b6448b33",
+      "textSha256": "58b5b6448b33eefb49ffe4398ceac9d3cbfb4a72a5d92070b71574fbeacbd1de",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/who-collects.58b5b6448b33.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/who-collects.58b5b6448b33.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/who-collects.58b5b6448b33.generation.json",
+      "plannedRequestSha256": "18a63e9ba96d716d0dbca74c494b75143b3301f6909bd81b09f998cdae538bff"
+    },
+    {
+      "id": "fair-test",
+      "parentSceneId": "fair-test",
+      "text": "The independent variable is exposure time: zero, fifteen, thirty, sixty and a hundred and twenty seconds. The dependent variable is the number of colonies after forty eight hours at thirty degrees. Everything else stays the same: the same yeast suspension, the same hundred microlitres on each plate, the same lamp at the same twenty centimetres, and the same incubation.",
+      "hash": "e280cb93254e",
+      "textSha256": "e280cb93254e03357d0e73fef06dc8a00d371b68ed39c970f24407de8bf7ef3b",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/fair-test.e280cb93254e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/fair-test.e280cb93254e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/fair-test.e280cb93254e.generation.json",
+      "plannedRequestSha256": "d47f2451c17941bc188ff02dc11e4c7c35f1cb0fec8eadbe4c8eebd574096aaf"
+    },
+    {
+      "id": "control-same",
+      "parentSceneId": "control-same",
+      "text": "The zero second plates are the control. They go into the cabinet too, with their lids off for the same time, but the lamp stays off. Then the only difference between a control plate and an exposed plate is the UV. Leave the controls on the bench, and handling could explain the difference.",
+      "hash": "f7ef913afda4",
+      "textSha256": "f7ef913afda414cacea6f0ec6aad0c43cc71e2086322e0353f46f1f3da480750",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/control-same.f7ef913afda4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/control-same.f7ef913afda4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/control-same.f7ef913afda4.generation.json",
+      "plannedRequestSha256": "b268b99c624905dbfa517f5f0fd21199c93661b9e7599103ec3f8917dfa6e8ec"
+    },
+    {
+      "id": "three-plates",
+      "parentSceneId": "three-plates",
+      "text": "Each time has three plates, made the same way. At zero seconds, they grew a hundred and thirty three, a hundred and forty four and a hundred and forty nine colonies, a mean of a hundred and forty two. They don't match exactly, because each hundred microlitres picks up a slightly different number of cells. The mean evens that out.",
+      "hash": "d3b429cd8b9b",
+      "textSha256": "d3b429cd8b9b66edb2e917f4f11a8263b50bdf4d5fc202967e73691ec1c23fb7",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/three-plates.d3b429cd8b9b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/three-plates.d3b429cd8b9b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/three-plates.d3b429cd8b9b.generation.json",
+      "plannedRequestSha256": "6854c2d796dfbd47dda14bf30c978960e868d1280a244bd1799dadbb510ffd4d"
+    },
+    {
+      "id": "relative-survival",
+      "parentSceneId": "relative-survival",
+      "text": "To compare the times, turn each mean into a relative survival: the mean divided by the control mean, times a hundred. At thirty seconds, sixty one over a hundred and forty two gives forty three point zero percent. After two minutes, it's just three point five percent.",
+      "hash": "18752c5c6ccd",
+      "textSha256": "18752c5c6ccd8d60a9e674995b1183eb06b2a5cbc621c27d3644e6c5d035aa51",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/relative-survival.18752c5c6ccd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/relative-survival.18752c5c6ccd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/relative-survival.18752c5c6ccd.generation.json",
+      "plannedRequestSha256": "d5530f767e5944f5795bfffa7f4e2bb8e508791d47c60fafcc99cd809d7dd1d8"
+    },
+    {
+      "id": "graph",
+      "parentSceneId": "graph",
+      "text": "Graph exposure time on the x axis and relative survival on the y. Plot each mean, and show every plate as a small point, so the spread is visible. Survival falls steeply at first, then levels off towards zero. So longer exposure to this lamp, at this distance, went with lower survival.",
+      "hash": "9f0826703c34",
+      "textSha256": "9f0826703c340c185f35af614e8e5ee95691d9c53a2064f442430efa5245fe4e",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/graph.9f0826703c34.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/graph.9f0826703c34.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/graph.9f0826703c34.generation.json",
+      "plannedRequestSha256": "eb3598aeabb2e181287e5393b200c52aef44f67176cd55802784d9fb83bde0a2"
+    },
+    {
+      "id": "supports",
+      "parentSceneId": "supports",
+      "text": "So what do the data support? That UVC exposure reduced the survival of these yeast cells under these conditions. What don't they show? Whether any survivors mutated. The missing colonies tell you about cells that couldn't divide, and the mutants, if there are any, are among the cells that lived.",
+      "hash": "f544e263657a",
+      "textSha256": "f544e263657afc235905d925b784c3fca9e19c91c22b0443d1bf90754dbc76f9",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/supports.f544e263657a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/supports.f544e263657a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/supports.f544e263657a.generation.json",
+      "plannedRequestSha256": "7bad659a9e888c7e625cf5861b442215281166defe0275f29852f1740bd68649"
+    },
+    {
+      "id": "measure-mutation",
+      "parentSceneId": "measure-mutation",
+      "text": "To measure mutation, you'd test the survivors for a new trait that's inherited. Mutants are rare, so spread millions of exposed cells on a medium that normal yeast can't grow on, like the antibiotic dish in the first video. Count the colonies that grow as a fraction of survivors, and compare it with unexposed cells. Then grow those colonies again, to check the trait is passed on.",
+      "hash": "32afe394b4d8",
+      "textSha256": "32afe394b4d834ee438cf15a0e6b9e361a0bff6cf7b21886509f61f59109bca7",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/measure-mutation.32afe394b4d8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/measure-mutation.32afe394b4d8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/measure-mutation.32afe394b4d8.generation.json",
+      "plannedRequestSha256": "efea6790ba82919a26c8fccdaec25b0af8f6806e4fe4c15507ac4b8b2853641c"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Validity: with one variable changed and a control handled the same way, the counts validly compare survival, but they aren't a valid measure of mutation. Reliability: the three plates at each time differ only as much as chance predicts, like fifty five to sixty seven at thirty seconds. Accuracy: count through the lid on a grid, with a second counter. And time alone isn't dose: to know the dose, measure the lamp's output at the plate.",
+      "hash": "0edff04f1334",
+      "textSha256": "0edff04f13343e4ad78be7a1920e7cff56594f4e21955089493613d1d6eef843",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/validity-reliability.0edff04f1334.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/validity-reliability.0edff04f1334.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/validity-reliability.0edff04f1334.generation.json",
+      "plannedRequestSha256": "5d5cb51dd687d485f14e910b62a9acdabed225cbd5396bf9ea774518fc975db5"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. UVC: only trained staff run the interlocked cabinet, and the lamp is never on with the door open. The yeast is a risk group one organism, unlikely to cause disease, but other microbes can grow on the plates too. So grown plates stay sealed and are sterilised before disposal. The bench is wiped with seventy percent ethanol, which is flammable, so keep it away from flames.",
+      "hash": "0b11cbbb7838",
+      "textSha256": "0b11cbbb78388ca0004d723be52cab5e554f2924eb3fcdf3cd3ac33bf7f5fe2f",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/risk-assessment.0b11cbbb7838.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/risk-assessment.0b11cbbb7838.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/risk-assessment.0b11cbbb7838.generation.json",
+      "plannedRequestSha256": "b48823c12035c6d5bdf85ad94abff82aaf6a9fea18b1303612c30b090f6c6ff0"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. In a repeat of this investigation, the zero second plates grew a hundred and forty five, a hundred and fifty one and a hundred and sixty colonies. The plates exposed for forty five seconds grew thirty six, forty one and forty six. Calculate the relative survival at forty five seconds. Pause here to answer.",
+      "hash": "0614f9412962",
+      "textSha256": "0614f9412962562b1df84944ad6216835deb78234c5256e791947b9a622f032b",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/attempt-1.0614f9412962.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/attempt-1.0614f9412962.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/attempt-1.0614f9412962.generation.json",
+      "plannedRequestSha256": "52c4400fa02a5e8706abe360048d92ee1d2f15761075a01aab180c627a96508f"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The control mean is four hundred and fifty six over three, a hundred and fifty two. The forty five second mean is a hundred and twenty three over three, forty one. Forty one over a hundred and fifty two, times a hundred, is twenty seven point zero percent. Seventy three percent is the trap: that's the share that didn't form colonies.",
+      "hash": "1fd94fb6a5da",
+      "textSha256": "1fd94fb6a5da53dbc8ef01c8ffe65d292547e5e4856694cdb674de1be5baf95a",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/feedback-1.1fd94fb6a5da.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/feedback-1.1fd94fb6a5da.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/feedback-1.1fd94fb6a5da.generation.json",
+      "plannedRequestSha256": "404bfb48bf13e4732c6fcee19c6f7e4414da1a3c5bc80650a2e804104b96dfcc"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. To have more colonies to count at a hundred and twenty seconds, a student spread those plates with a yeast suspension ten times as concentrated as all the others. The control mean was a hundred and forty two, and the hundred and twenty second mean was fifty two. She reported a relative survival of thirty six point six percent. Evaluate her result. Pause here to answer.",
+      "hash": "0c88bd77bda3",
+      "textSha256": "0c88bd77bda3b3b5451f75ad0eb59396ccb6512ec119e097977e30c0d3060b3f",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/attempt-2.0c88bd77bda3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/attempt-2.0c88bd77bda3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/attempt-2.0c88bd77bda3.generation.json",
+      "plannedRequestSha256": "9941d6635f62b3cd92f585626b9fa8c9166c793b3488c81a77638cc4a0a1aed2"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "As reported, her result isn't valid. The hundred and twenty second plates got ten times as many cells, so two things changed at once. Fifty two colonies there match about five point two on a standard plate, which is a survival of about three point seven percent, close to the main data. Her mistake was comparing plates given different numbers of cells without correcting for it.",
+      "hash": "a7fb4dfef787",
+      "textSha256": "a7fb4dfef78718aeee4c7d4e487f5c3684ef60730ea7eed29b06b2f61089fb3b",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/feedback-2.a7fb4dfef787.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/feedback-2.a7fb4dfef787.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/feedback-2.a7fb4dfef787.generation.json",
+      "plannedRequestSha256": "eed63bc4f36e19eb670f6a49d2b5d4026e21698d19095f5fcb8c929000d0594f"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, to analyse a survival investigation: change one variable, handle the control the same way, use repeats, turn means into relative survival, and graph every plate. Then claim only what you measured: colony counts measure survival, not mutation. Next: what one changed base can do to a protein.",
+      "hash": "51d9e7b9f195",
+      "textSha256": "51d9e7b9f19568491e02476dbfccae9a66de08127273ae9aafb85c6ab4880538",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/decision-rule.51d9e7b9f195.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/decision-rule.51d9e7b9f195.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/decision-rule.51d9e7b9f195.generation.json",
+      "plannedRequestSha256": "e75273058ca998b502b3e000a83d716197ef81af5393991fda2b24b8f32369d8"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M6-P01-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

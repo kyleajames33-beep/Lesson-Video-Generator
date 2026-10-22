@@ -4368,6 +4368,1833 @@ M6B15_ROWS = {
     "key-notes": ["new", "Key notes card with the numbered notes, the memory aid in large writing and its condition tag", "Essentials to copy into books", "key notes", "Notes appear then stay still for copying", "hold", "The notes and the memory aid appear and lock", ["Enter reveals"], "Quiet copy hold of about 60 seconds with pause invitation"],
 }
 # --- M6 b13 and b15 rows (end) ---
+# --- M6 b16, b18, b19 and g02 rows (start) ---
+M6B16_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. `m6-blackface-ewe-v1.png` (new) stands at the left; on \"a white-faced lamb was born\" `m6-white-faced-lamb-v1.png` (new) slides in beside her, and a small grey tag \"July 1996, Scotland\" writes and fades.",
+        "Hook (a white lamb, a black-faced mother): In July 1996, a white-faced lamb was born in Scotland to a black-faced ewe.",
+        "clone",
+        "On the spoken cues: On \"wasn't that ewe's daughter\" a coded question mark sits between the two faces, the black face and the white face each ringed by a thin scribble. On \"a clone of a different sheep\" `m6-white-sheep-v1.png` appears faint at the top right with a dotted line to the lamb (tag \"a clone of ... ?\"). On",
+        "explain",
+        "no people. `m6-blackface-ewe-v1.png` (new) stands at the left; on \"a white-faced lamb was born\" `m6-white-faced-lamb-v1.png` (new) slides in beside her, and a small grey tag \"July 1996, Scotland\" writes and fades. On \"wasn't that ewe's daughter\" a coded question mark sits between the two faces, the black face and the white face each ringed by a thin scribble. On \"a clone of a different sheep\" `m6-white-sheep-v1.png` appears faint at the top right with a dotted line to the lamb (tag \"a clone of ... ?\"). On \"cloning genes\" the right half shows `m6-agar-dish-top-v1.png` small with coded colonies, and one amber gene segment above it multiplies into a stack of identical segments (b09's `StripCopy`; tag \"billions of copies of one gene\", replacing the clone tag). On \"So what does each kind\" a thin bracket joins the lamb and the dish, labelled small \"cloning\". On \"how well does each do the job\" the tags fade and the heading writes on: \"What is being copied?\" Hold about two seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "one-word-two-jobs": [
+        "adjust",
+        "the hook clears.",
+        "One word, two jobs: A clone is a genetically identical copy.",
+        "clone / Whole-organism cloning / Gene cloning",
+        "On the spoken cues: The definition writes on large: \"Clone: a genetically identical copy.\" On \"a copy of what?\" the words \"of what?\" underline amber. On \"natural clones\" `b1-clone-row-disease-v1.png` (healthy version) appears small under the definition with a grey tag \"same alleles as the parent\", and",
+        "explain",
+        "the hook clears. The definition writes on large: \"Clone: a genetically identical copy.\" On \"a copy of what?\" the words \"of what?\" underline amber. On \"natural clones\" `b1-clone-row-disease-v1.png` (healthy version) appears small under the definition with a grey tag \"same alleles as the parent\", and `b1-cavendish-bunch-v1.png` sits small beside it (no tag). On \"Whole-organism cloning\" the `CopyBoard` draws its left column, headed by the lamb plate, labelled \"whole organism\" with the gloss \"a new individual, same DNA\"; the clone row and its tag fade. On \"Gene cloning\" the right column draws, headed by `m6-bacterium-plasmid-v1.png`, labelled \"one gene\" with the gloss \"many copies of one piece of DNA\". On \"what is being copied\" the two \"what is copied\" bays light: a whole coded nucleus outline in the left bay, one short amber gene segment in the right; the glosses dim to grey. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark underline",
+            "DrawPath",
+            "lineage split",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "nuclear-transfer": [
+        "adjust",
+        "the left column's \"how\" bay expands to fill most of the screen; the right column dims to grey.",
+        "Somatic cell nuclear transfer: Here's how Dolly was made, by a method called somatic cell nuclear transfer.",
+        "somatic cell nuclear transfer",
+        "On the spoken cues: The method's name writes on with three grey glosses that appear one at a time under its words: \"somatic: a body cell\" (on \"Somatic just means\"), \"nuclear: the nucleus\", \"transfer: moved into an egg\" (the last two write in silently with the first; all three fade out fully, not just dim, before \"the",
+        "explain",
+        "the left column's \"how\" bay expands to fill most of the screen; the right column dims to grey. The method's name writes on with three grey glosses that appear one at a time under its words: \"somatic: a body cell\" (on \"Somatic just means\"), \"nuclear: the nucleus\", \"transfer: moved into an egg\" (the last two write in silently with the first; all three fade out fully, not just dim, before \"the udder of a white-faced ewe\"). Each ewe's grey tag shows only while that ewe is spoken about, then dims to grey. On \"the udder of a white-faced ewe\" `m6-white-sheep-v1.png` sits at the left of a process strip with a grey tag \"nucleus donor\" and a coded arrow to the donor body cell plate (`m5x-cell-protein-synthesis-v1.png`, its purple nucleus ringed). On \"an egg from a black-faced ewe\" `m6-blackface-ewe-v1.png` appears below with a grey tag \"egg donor\" and an arrow to `b3a-egg-v1.png`. On \"sucked out its nucleus\" `m6-icsi-v1.png` takes the egg's place at the same scale (the holding pipette steadies it); by coded motion the needle draws the separable `b3a-egg-nucleus-v1.png` out of the egg and away (`EnucleateMotion`); a grey screen label \"enucleated egg: nucleus removed\" writes under it (tag \"no chromosomes of its own\"). On \"An electric pulse fused\" the donor cell slides against the empty egg; a short amber flash (`FusePulse`) merges the outlines, and the donor's purple nucleus now sits inside the egg (tag \"fused + started dividing\", replacing the previous tag). On \"started it dividing\" the cell crossfades through `b3a-cleavage-1-v1.png`, `-2`, `-3` and `-5` (one, two, four cells, then a hollow ball), with a small grey clock tag \"about a week\". On \"another black-faced ewe\" a second copy of the blackface plate appears at the right with a grey tag \"surrogate\" and a coded uterus outline drawn faintly over her body; the embryo glyph travels into it. At most three bright text items besides the three ewe tags, which are small and grey. Hold one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "lineage split",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "who-she-matches": [
+        "new",
+        "the three ewes line up small across the top with their grey tags (nucleus donor, egg donor, surrogate) and the lamb plate below them.",
+        "Who is she a copy of?: So Dolly had three mothers.",
+        "nucleus donor / mitochondria",
+        "On the spoken cues: On \"Which one does she match?\" a coded question mark sits over the lamb. On \"Her nucleus came from the white-faced ewe\" a thick amber line runs from the nucleus donor to the lamb, and the lamb's white face and the donor's white face pulse together; the other two ewes dim (chip \"nuclear DNA: the",
+        "explain",
+        "the three ewes line up small across the top with their grey tags (nucleus donor, egg donor, surrogate) and the lamb plate below them. On \"Which one does she match?\" a coded question mark sits over the lamb. On \"Her nucleus came from the white-faced ewe\" a thick amber line runs from the nucleus donor to the lamb, and the lamb's white face and the donor's white face pulse together; the other two ewes dim (chip \"nuclear DNA: the nucleus donor\"). On \"not the egg donor or the ewe who gave birth\" grey thin lines from the two black-faced ewes take small grey crosses. On \"mitochondria\" an inset of the fused egg shows a few small coded mitochondria glyphs in the cytoplasm tinted the egg donor's colour, with a thin grey line back to the egg donor (chip \"mitochondrial DNA: the egg\", replacing the previous chip). On \"a clone develops in a different uterus\" the inset fades and a small coded balance \"genes + environment\" sits under the lamb (b07's style, recalled, no tag beyond the two words). On \"size, markings or health\" three small grey tags \"size\", \"markings\", \"health\" write beside the lamb and dim together. The left column's \"what is copied\" bay now reads \"nuclear DNA (not mitochondria)\". At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "reliability": [
+        "new",
+        "the left column's \"how well\" bay expands.",
+        "Does it work? reliability: Now assess it, starting with reliability.",
+        "fused 277 udder cells / Only 29 / just one became a live lamb / Why so few? / like the ones on histones / switched",
+        "On the spoken cues: On \"fused 277 udder cells\" the `AttemptFunnel` draws: a block of 277 small dots (the number written small above it: \"277 fused cells\"); on \"Only 29\" all but 29 dots fade to grey (\"29 embryos transferred\"); on \"just one became a live lamb\" one dot remains bright and becomes a tiny lamb glyph (\"1",
+        "explain",
+        "the left column's \"how well\" bay expands. On \"fused 277 udder cells\" the `AttemptFunnel` draws: a block of 277 small dots (the number written small above it: \"277 fused cells\"); on \"Only 29\" all but 29 dots fade to grey (\"29 embryos transferred\"); on \"just one became a live lamb\" one dot remains bright and becomes a tiny lamb glyph (\"1 lamb\"). The reliability bar of the `CriteriaMeter` fills only a sliver, coded red-brown (chip \"reliability: low\"). On \"Why so few?\" the funnel shrinks aside and the donor nucleus appears large (coded chromosomes inside the purple nucleus plate area, slim and painted-style). On \"like the ones on histones\" a small grey thumbnail of b06a's histone spool with tag dots appears at the corner and fades on \"switched\"; on \"switched many of its genes off\" small switch glyphs appear along the chromosomes, most set to \"off\" (grey screen label \"epigenetic marks: tags that switch genes on or off\", small and grey). On \"the egg has to reset those switches\" the switches flip one by one toward \"on\"; on \"only partly\" a few stay stuck, each ringed with a thin grey scribble (tag \"resetting is often incomplete\"). On \"die before or soon after birth\" the stuck switches dim and a small row of five coded embryo circles appears, three fading out (tag \"pregnancy losses, deaths at birth\", replacing the reset tag); on \"unusually large\" one lamb glyph in a short row is drawn larger than the others (grey screen label \"large offspring syndrome\"). On \"most attempts still fail\" the reliability bar rises a little but stays short (tag \"improved, still low\"). At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "health-and-purpose": [
+        "adjust",
+        "the lamb plate returns small in the \"how well\" bay.",
+        "Health, and effective for what?: What about Dolly's health?",
+        "arthritis / That alone can't show / four later clones / depends on the purpose / too unreliable / worth it",
+        "On the spoken cues: On \"arthritis\" and \"lung disease\" two small grey tags write beside it (\"arthritis\", \"lung disease: a virus, also in other sheep in the flock\"). On \"That alone can't show\" a grey chip \"Dolly = early ageing?\" writes and takes a grey scribble cross. On \"four later clones\" four small lamb glyphs line",
+        "explain",
+        "the lamb plate returns small in the \"how well\" bay. On \"arthritis\" and \"lung disease\" two small grey tags write beside it (\"arthritis\", \"lung disease: a virus, also in other sheep in the flock\"). On \"That alone can't show\" a grey chip \"Dolly = early ageing?\" writes and takes a grey scribble cross. On \"four later clones\" four small lamb glyphs line up with a grey tag \"same cells, healthy for their age at 7 to 9\" (the tags from Dolly fade). The health bar of the `CriteriaMeter` fills to about half, amber (chip \"health: mixed, not doomed\"). On \"depends on the purpose\" the meter's three bars sit side by side and the bay splits into two short verdict lines that write on one per cue: \"everyday breeding: too unreliable\" (on \"too unreliable\", grey cross icon) and \"copying one rare animal: can be worth it\" (on \"worth it\", amber tick). On \"black-footed ferret\" `m6-black-footed-ferret-v1.png` (new) appears with a small coded frozen vial beside it (grey tag \"cells frozen 1988\"); on \"have given clones\" ferret glyphs appear (tag \"clones from 2020\"); on \"had babies\" small kit glyphs follow one clone glyph (tag \"2024: a clone has young (kits)\", replacing the 2020 tag); on \"passing on alleles\" b08's coloured ring cluster beside it gains two new ring colours (chip \"previously unrepresented alleles passed on\"). No screen text says how many clones are alive. `b1-cavendish-bunch-v1.png` sits as a silent grey thumbnail in the corner on \"rare animal\" (the banana problem: copies of one genotype narrow a population if overused; unspoken). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "gene-cloning": [
+        "adjust",
+        "the left column shrinks to a grey thumbnail; the right column's \"how\" bay expands.",
+        "Gene cloning: Gene cloning has a narrower aim: lots of copies of one gene.",
+        "plasmid / vector / host / PCR",
+        "On the spoken cues: On \"one gene\" a single amber gene segment writes on. On \"into a plasmid\" a coded plasmid ring draws beside it and the segment slides into a gap in the ring (no cutting shown: that is the next video), and a grey gloss \"plasmid: small ring of DNA\" writes under it. On \"vector\" the gloss is replaced by",
+        "explain",
+        "the left column shrinks to a grey thumbnail; the right column's \"how\" bay expands. On \"one gene\" a single amber gene segment writes on. On \"into a plasmid\" a coded plasmid ring draws beside it and the segment slides into a gap in the ring (no cutting shown: that is the next video), and a grey gloss \"plasmid: small ring of DNA\" writes under it. On \"vector\" the gloss is replaced by the term \"vector: a carrier of DNA into a cell\". On \"the host\" `m6-plasmid-uptake-start-v1.png` appears (ring outside the cell) and crossfades to `m6-plasmid-uptake-end-v1.png` (ring inside), with the ring tinted to show the amber segment (term \"host: the cell that takes it up\", replacing the vector term). On \"Each time the host divides\" the `DivisionTree` draws: one bacterium glyph splits into two, each with a small amber-marked ring, then four, eight (tag \"each new cell gets the plasmid\"). On \"every half hour or so\" a small coded clock ring sweeps once per doubling and the tree runs faster to a dense fan, then cuts to `m6-agar-dish-top-v1.png` with coded colonies spreading (tag \"a day: billions\", replacing the earlier tag). On \"no cells\" the dish dims and a small coded tube outline appears with the `PcrStrip` beside a small thermometer glyph (grey screen tag \"PCR: copies a gene in a tube\"). On \"Heat separates\" the thermometer pulses hot and the double strip splits into its two strands; on \"an enzyme copies each one\" the thermometer cools, a small coded enzyme blob runs along each strand and each strand gains a new partner; on \"every cycle doubles the gene\" the cycle repeats quickly, 2, 4, 8 strips. The right column's \"what is copied\" bay reads \"one gene, many copies\". At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "lineage split",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "judging-gene-cloning": [
+        "adjust",
+        "the right column's \"how well\" bay expands with its `CriteriaMeter`, relabelled for this purpose: \"reliable enough\", \"identical copies\", \"useful\".",
+        "Judging gene cloning: So how effective is it?",
+        "Only a few bacteria take up a plasmid / you need just one / easy to check / study a gene, make its protein, or put it into another organism / Its limits are small",
+        "On the spoken cues: On \"Only a few bacteria take up a plasmid\" a field of about twenty bacterium glyphs appears and only two take an amber ring; on \"you need just one\" one of them pulses and a mini division fan grows from it (chip \"one host is enough\"); the first bar fills high, teal. On \"easy to check\" a short coded",
+        "explain",
+        "the right column's \"how well\" bay expands with its `CriteriaMeter`, relabelled for this purpose: \"reliable enough\", \"identical copies\", \"useful\". On \"Only a few bacteria take up a plasmid\" a field of about twenty bacterium glyphs appears and only two take an amber ring; on \"you need just one\" one of them pulses and a mini division fan grows from it (chip \"one host is enough\"); the first bar fills high, teal. On \"easy to check\" a short coded strip of cream bands writes beside the dish with a tick (no letters read; tag \"check the sequence\"); the second bar fills high. On \"study a gene, make its protein, or put it into another organism\" three small icons write in a row, one per phrase: a strip under a magnifier outline, `m6-insulin-vial-v1.png` small, `m6-bt-cotton-v1.png` small (chip \"uses: study, protein, modification\", replacing the earlier chip); the third bar fills high. On \"Its limits are small\" one small grey tag writes under the meter: \"the gene doesn't always go in: check colonies\". At most three bright text items besides the meter labels, which are small and grey. Hold one second.",
+        [
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the full `CopyBoard`, both columns at equal weight, all bays small and grey.",
+        "The test, and memory: To tell them apart, ask what exists at the end that didn't before.",
+        "The clone matches the nucleus donor / gene cloning copies a gene; organism cloning copies an individual",
+        "On the spoken cues: On \"what exists at the end\" a large question writes across the top: \"What exists at the end?\" On \"A new organism\" the left column's lamb pulses (small amber label \"an organism\"); on \"Many copies of one gene\" the right column's colony dish pulses (\"many copies of one gene\"). On \"Two things to hold",
+        "explain",
+        "the full `CopyBoard`, both columns at equal weight, all bays small and grey. On \"what exists at the end\" a large question writes across the top: \"What exists at the end?\" On \"A new organism\" the left column's lamb pulses (small amber label \"an organism\"); on \"Many copies of one gene\" the right column's colony dish pulses (\"many copies of one gene\"). On \"Two things to hold on to\" the board dims and two handwritten lines write on large, one per cue: \"The clone matches the nucleus donor.\" (with the white-faced ewe and lamb thumbnails joined by the amber line), \"Gene cloning copies a gene; organism cloning copies an individual.\" (with the gene stack and lamb thumbnails). As the second line completes, both meters return small beneath the lines, side by side (silent; scene 11 speaks the purpose test). Hold half a second.",
+        [
+            "HandText write-on",
+            "lineage split"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt one (a cloned bull)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First. A company made",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a cloned bull))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b3b-dairy-bull-side-v1.png` small at its upper left and two calf plates (`b3b-calf-side-v1.png` and `m6-dairy-calf-horn-buds-v1.png`, whose patches differ) small at the upper right. Stem: \"A company used somatic cell nuclear transfer to produce 100 embryos from skin cells of a prize dairy bull. The table shows the results (hypothetical data).\" A small coded table: \"embryos transferred: 100\", \"calves born: 6\", \"calves alive at one year: 4\". Below it: \"The surviving calves' black and white patch patterns differed from the bull's and from each other's.\" Demand: \"Assess the effectiveness of cloning as a method of copying this bull. (5 marks)\". One lined answer box. Nothing answer-bearing: no meter, funnel or switch glyphs. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "four live calves from a hundred embryos / two of the six born died / nuclear DNA matches / patches differ / valuable enough / the classic mistake",
+        "On the spoken cues: A four-row `AnsTable` fills one row per cue, each row naming a criterion: on \"four live calves from a hundred embryos\" \"100\" and \"4\" underline amber and the row \"reliability: 4 in 100, low\" fills; on \"two of the six born died\" \"calves born: 6\" and \"calves alive at one year: 4\" underline and the row",
+        "explain",
+        "the card shrinks to a strip at the top. A four-row `AnsTable` fills one row per cue, each row naming a criterion: on \"four live calves from a hundred embryos\" \"100\" and \"4\" underline amber and the row \"reliability: 4 in 100, low\" fills; on \"two of the six born died\" \"calves born: 6\" and \"calves alive at one year: 4\" underline and the row \"health: 2 of 6 calves died\" fills; on \"nuclear DNA matches\" \"skin cells of a prize dairy bull\" underlines and the row \"identity: same nuclear DNA as the bull\" fills; on \"patches differ\" \"patch patterns differed\" underlines and the row extends \"patches: shaped in development\"; on \"valuable enough\" \"prize\" underlines and a verdict bar writes \"worth it only for a very valuable bull\", with \"only\" underlined. The first three rows dim to grey as the verdict writes, so at most three bright items show. On \"the classic mistake\" the chip \"different patches, so the DNA wasn't copied\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "adjust",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m6-northern-white-rhino-v1.png` small at its upper left: \"A zoo stores frozen skin cells from a male northern white rhinoceros that has died. Scientists propose two projects (hypothetical). Project A: make many copies of one of the rhino's genes so that its DNA sequence can be studied. Project B: produce a living rhinoceros calf from the frozen cells.\" Demand: \"Distinguish between the types of cloning used in Project A and Project B. (4 marks)\".",
+        "Unseen transfer task (attempt two (two rhino projects)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. A zoo stores frozen skin cells from",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two rhino projects))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m6-northern-white-rhino-v1.png` small at its upper left: \"A zoo stores frozen skin cells from a male northern white rhinoceros that has died. Scientists propose two projects (hypothetical). Project A: make many copies of one of the rhino's genes so that its DNA sequence can be studied. Project B: produce a living rhinoceros calf from the frozen cells.\" Demand: \"Distinguish between the types of cloning used in Project A and Project B. (4 marks)\". One lined answer box. Nothing answer-bearing: no board, plasmid or egg. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Project A is gene cloning / many copies of one gene / Project B is whole-organism cloning / a calf whose nuclear DNA matches / the classic mistake",
+        "On the spoken cues: A two-column comparison writes on beneath it, headings \"Project A\" and \"Project B\", with rows that fill pair by pair: on \"Project A is gene cloning\" row \"type\": \"gene cloning\" | (empty until the B cue); on \"many copies of one gene\" \"many copies of one of the rhino's genes\" underlines amber and row",
+        "explain",
+        "the card shrinks to a strip. A two-column comparison writes on beneath it, headings \"Project A\" and \"Project B\", with rows that fill pair by pair: on \"Project A is gene cloning\" row \"type\": \"gene cloning\" | (empty until the B cue); on \"many copies of one gene\" \"many copies of one of the rhino's genes\" underlines amber and row \"product\": \"many copies of one gene\" fills; on \"Project B is whole-organism cloning\" row \"type\" fills \"whole-organism cloning\"; on \"a calf whose nuclear DNA matches\" \"a living rhinoceros calf\" underlines and row \"product\" fills \"a calf with the rhino's nuclear DNA\"; a row \"how\" fills in small grey on the two method cues (\"gene in a plasmid, copied by dividing bacteria\" | \"skin-cell nucleus into an enucleated egg\"). On \"the classic mistake\" the chip \"both projects make a copy of the rhino\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "three step chips write on in a column, one per cue: \"what is copied? an individual or one gene\", \"how is the copy made?\", \"judge against the purpose: reliable, identical, healthy or useful\".",
+        "Decision rule and handoff: So when a question says cloning, first ask what is being copied: a whole individual, or one gene.",
+        "So when a question says cloning, first ask",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how recombinant DNA is made and gets into a host\" (small `m6-plasmid-uptake-end-v1.png` thumbnail). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on in a column, one per cue: \"what is copied? an individual or one gene\", \"how is the copy made?\", \"judge against the purpose: reliable, identical, healthy or useful\". A \"Next\" chip slides in at the lower right: \"Next: how recombinant DNA is made and gets into a host\" (small `m6-plasmid-uptake-end-v1.png` thumbnail). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "lineage split",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6B18_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. Left: `m6-bacterium-plasmid-v1.png`; on \"human insulin\" a small grey cross sits beside it, then lifts on \"Yet since the nineteen-eighties\" as coded protein glyphs stream from the bacterium into `m6-insulin-vial-v1.png` (grey tag \"since 1982\").",
+        "Hook (two organisms doing something new): Bacteria don't make human insulin, and cotton plants don't make a caterpillar poison.",
+        "human insulin / Yet since the nineteen-eighties / caterpillar poison / makes its own insect toxin / DNA from another species / cut out ... join ... get it into ... uses it",
+        "On the spoken cues: Right: `m6-bt-cotton-v1.png`; on \"caterpillar poison\" a coded caterpillar outline on a boll, with a grey cross that lifts on \"makes its own insect toxin\" as the caterpillar outline curls and fades (tag \"Bt cotton\", replacing the 1982 tag). On \"DNA from another species\" a short amber strand segment",
+        "explain",
+        "no people. Left: `m6-bacterium-plasmid-v1.png`; on \"human insulin\" a small grey cross sits beside it, then lifts on \"Yet since the nineteen-eighties\" as coded protein glyphs stream from the bacterium into `m6-insulin-vial-v1.png` (grey tag \"since 1982\"). Right: `m6-bt-cotton-v1.png`; on \"caterpillar poison\" a coded caterpillar outline on a boll, with a grey cross that lifts on \"makes its own insect toxin\" as the caterpillar outline curls and fades (tag \"Bt cotton\", replacing the 1982 tag). On \"DNA from another species\" a short amber strand segment draws inside each organism (a ring in the bacterium; a strip in a cotton cell inset) with a bracket \"DNA from another species\". On \"cut out ... join ... get it into ... uses it\" the five-station `ToolTrack` sketches faintly across the top, one outline per verb. On \"actually uses it\" the bracket fades and the heading writes on: \"Cut, paste, put in, pick\". Hold about two seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "right-dna": [
+        "adjust",
+        "the hook clears; station 1 \"get the DNA\" enlarges into the stage.",
+        "Get the right DNA first: First, you need the right piece of DNA.",
+        "introns",
+        "On the spoken cues: A coded gene strip draws: amber coding blocks separated by two grey blocks. On \"Remember\" a small grey thumbnail of b05's `IntronCut` strip appears at the corner (recall cue, no text) and fades on \"introns\". On \"introns\" the strip copies into an mRNA strip below (terracotta, b06b's colour), and the",
+        "explain",
+        "the hook clears; station 1 \"get the DNA\" enlarges into the stage. A coded gene strip draws: amber coding blocks separated by two grey blocks. On \"Remember\" a small grey thumbnail of b05's `IntronCut` strip appears at the corner (recall cue, no text) and fades on \"introns\". On \"introns\" the strip copies into an mRNA strip below (terracotta, b06b's colour), and the grey pieces lift out and fade while the amber pieces close up (`SpliceStrip`, drawn to match b05's intron look); the term writes on with the gloss \"pieces cut out of the mRNA before it's read\" (recalled, so it writes quickly). On \"Bacteria can't do that cutting\" `b6a-bacterium-v1.png` appears small; the uncut strip slides into it, and a short coded protein chain comes out with a kink and grey wrong beads (tag \"introns read as code: wrong protein\"). On \"copied from the cell's finished mRNA\" the finished mRNA strip produces a new DNA copy of amber blocks only (grey screen label \"cDNA, made by reverse transcriptase\", small); on \"built from scratch\" a second strip assembles block by block (tag \"intron-free DNA: two ways\", replacing the wrong-protein tag). On \"insulin's two chains\" two short amber strips write on, labelled small \"A chain\" and \"B chain\" (grey tag \"late 1970s: built from scratch\"). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "cut": [
+        "adjust",
+        "station 2 \"cut\" enlarges; station 1 shrinks to a grey thumbnail holding the amber strip.",
+        "Cut: Next, cut.",
+        "restriction enzyme / sticky ends",
+        "On the spoken cues: A longer double strand draws with the amber gene in its middle. On \"restriction enzyme\" the slate scissor-jaw blob slides along the strand and stops at a short stretch that lights (grey screen label \"recognition sequence\", small); the term writes on with the gloss \"cuts DNA at one short sequence\".",
+        "explain",
+        "station 2 \"cut\" enlarges; station 1 shrinks to a grey thumbnail holding the amber strip. A longer double strand draws with the amber gene in its middle. On \"restriction enzyme\" the slate scissor-jaw blob slides along the strand and stops at a short stretch that lights (grey screen label \"recognition sequence\", small); the term writes on with the gloss \"cuts DNA at one short sequence\". On \"invading viruses\" `m6-bacteriophage-t4-v1.png` appears small at the upper right, a coded viral strand entering a bacterium glyph is chopped into pieces by the blob (tag \"its natural job: chop up virus DNA\"), then the inset fades. On \"slightly different points\" the blob cuts the strand at both ends of the gene with a staggered step (`StaggerCut`): each end shows four unpaired base glyphs on one strand (tag \"staggered cut\", replacing the virus tag). On \"sticky ends\" the overhangs pulse amber and the term writes on with the gloss \"unpaired bases that can pair\". On \"open the plasmid\" the teal plasmid ring appears to the right; the same blob cuts it once, leaving overhangs that match the gene's in shape and colour (grey tag \"same enzyme, or matching ends\"). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "paste": [
+        "new",
+        "station 3 \"paste\" enlarges.",
+        "Paste: Then, paste.",
+        "DNA ligase / recombinant DNA / marker",
+        "On the spoken cues: The amber gene drifts into the gap in the teal ring; on \"pair up, base to base\" the overhang glyphs on both sides meet and pair (`EndPair`), with faint short lines between paired bases (tag \"ends pair\"). On \"weak hydrogen bonds\" the pairing lines flicker and a small gap shows in each backbone line",
+        "explain",
+        "station 3 \"paste\" enlarges. The amber gene drifts into the gap in the teal ring; on \"pair up, base to base\" the overhang glyphs on both sides meet and pair (`EndPair`), with faint short lines between paired bases (tag \"ends pair\"). On \"weak hydrogen bonds\" the pairing lines flicker and a small gap shows in each backbone line at the two joins (tag \"backbone still open\", replacing \"ends pair\"). On \"DNA ligase\" the ochre clasp blob moves to each join and the backbone gaps close with a small flash; the term writes on with the gloss \"seals the backbone\". On \"recombinant DNA\" the closed ring (`RecombinantRing`) turns once, the amber insert glowing, and the term writes on with the gloss \"DNA joined from two sources\" (the ligase gloss dims). On \"a marker\" a short grey-green band on the ring lights, labelled small \"marker: antibiotic resistance\". At most three bright text items. Hold one second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold one second"
+    ],
+    "put-in": [
+        "adjust",
+        "station 4 \"put in\" enlarges.",
+        "Put in: Now, put it in.",
+        "transformation",
+        "On the spoken cues: New `m6-water-bath-tube-v1.png` appears at the left; on \"chill them in calcium chloride\" a small coded snowflake glyph and a grey tag \"cold + CaCl₂\" sit beside the tube. On \"helps DNA stick to the cell surface\" an inset shows a bacterium outline with a few rings settling against its surface and",
+        "explain",
+        "station 4 \"put in\" enlarges. New `m6-water-bath-tube-v1.png` appears at the left; on \"chill them in calcium chloride\" a small coded snowflake glyph and a grey tag \"cold + CaCl₂\" sit beside the tube. On \"helps DNA stick to the cell surface\" an inset shows a bacterium outline with a few rings settling against its surface and staying there. On \"add the plasmids\" a few small recombinant rings drop into the tube. On \"a quick heat shock\" the `ShockPulse` flicks the tube's tag from \"cold\" to \"42 °C, under a minute\" in amber, then back. On \"lets DNA into the cell\" the stage cuts to `m6-plasmid-uptake-start-v1.png` crossfading to `m6-plasmid-uptake-end-v1.png` (the ring passing into the cell), and the term \"transformation\" writes on with the gloss \"a cell taking up DNA\". On \"only a small fraction\" a field of about thirty bacterium glyphs appears and only three gain a ring (tag \"only a few take one up\", replacing the gloss). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "pick": [
+        "adjust",
+        "station 5 \"pick\" enlarges.",
+        "Pick: So, pick.",
+        "Spread the bacteria / agar containing the antibiotic / only they grow into colonies / Only bacteria carrying a plasmid / surviving doesn't prove the gene is there / a second check",
+        "On the spoken cues: A small coded tube glyph sits at the top centre. On \"Spread the bacteria\" two short coded arrows run from the tube to two plates side by side, both starting as the new empty plate `m6-antibiotic-colonies-empty-v1.png` (the same dish and agar as the aligned pair, with no colonies): the left plate is",
+        "explain",
+        "station 5 \"pick\" enlarges. A small coded tube glyph sits at the top centre. On \"Spread the bacteria\" two short coded arrows run from the tube to two plates side by side, both starting as the new empty plate `m6-antibiotic-colonies-empty-v1.png` (the same dish and agar as the aligned pair, with no colonies): the left plate is tagged small grey \"no antibiotic\", the right \"with antibiotic\" (the right tag is the bright one, on \"agar containing the antibiotic\"). On \"only they grow into colonies\" both plates grow at the same time: the left crossfades slowly from empty to `m6-antibiotic-colonies-before-v1.png` (crowded) and the right from empty to `m6-antibiotic-colonies-after-v1.png` (a few colonies), so selection reads as \"only these could grow\", never as colonies dying on a plate. The three plates are an aligned set at one scale; never a crossfade from the crowded plate to the sparse one. After the growth, the left plate dims to grey and the right plate moves to centre for the rest of the scene. Fallback if the empty plate is not ready: both plates are the aligned pair, each revealed by coded agar-coloured discs over its colonies that shrink to nothing (colonies appear to grow). On \"Only bacteria carrying a plasmid\" each surviving colony takes a tiny ring glyph (tag \"survivors carry a plasmid\"). On \"surviving doesn't prove the gene is there\" two of the rings enlarge as insets: one with the amber insert, one closed up empty (a grey ring with only its marker band), and a small grey \"?\" sits over the survivors (tag \"plasmid, but gene?\", replacing the survivors tag). On \"a second check\" the `TwoCheck` marks the colonies: those holding the insert take an amber tick, the empty-ring colonies a grey cross (grey screen label \"second marker, or read the DNA\"). On \"Each of those colonies is a clone\" one ticked colony pulses and b16's `DivisionTree` grows briefly from it (tag \"a clone of one transformed cell\"). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "use-it": [
+        "adjust",
+        "a sixth station \"use\" slides onto the track and enlarges; the five finished stations sit as grey thumbnails.",
+        "Use it: Copying the gene isn't the same as using it.",
+        "promoter",
+        "On the spoken cues: The recombinant ring returns large. On \"promoter\" a grey-plum block lights just before the amber insert (b06b's promoter colour), and the small ochre polymerase bean from b06b settles on it (the term writes on with the gloss \"where RNA polymerase starts\"). On \"reads it like one of its own genes\" an",
+        "explain",
+        "a sixth station \"use\" slides onto the track and enlarges; the five finished stations sit as grey thumbnails. The recombinant ring returns large. On \"promoter\" a grey-plum block lights just before the amber insert (b06b's promoter colour), and the small ochre polymerase bean from b06b settles on it (the term writes on with the gloss \"where RNA polymerase starts\"). On \"reads it like one of its own genes\" an mRNA strip peels off the insert toward a ribosome glyph. On \"the genetic code is shared\" the `CodonMatch` draws: one codon box in the centre, a bacterial ribosome glyph on its left and a human-cell ribosome glyph on its right, both producing the same amino acid bead (tag \"same codons, same amino acids\", replacing the promoter gloss). On \"two chains separately\" two short coded chains (A and B) come out of two bacterium glyphs; on \"joined them into insulin\" the chains move together and two small bond ticks link them, then the joined shape drops into `m6-insulin-vial-v1.png` (tag \"chains made apart, then joined\"). On \"huge tanks\" new `m6-fermenter-tank-v1.png` appears with coded bacterium glyphs swirling in a window inset (grey tag \"fermenters\", replacing the chains tag). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "plants": [
+        "adjust",
+        "the track resets to show the same stations with the plant parts swapped in (\"cut\" and \"paste\" thumbnails stay; \"put in\" and \"pick\" get leaf icons).",
+        "Plants need a different carrier: Plants need a different carrier, because the gene has to cross a tough cell wall and end up in the plant's own chromosomes.",
+        "Agrobacterium / transgenic",
+        "On the spoken cues: `b6a-plant-cell-v1.png` appears; on \"tough cell wall\" its wall outline pulses with a thin amber trace (tag \"cell wall\"); on \"the plant's own chromosomes\" a thin ring marks its nucleus, with slim coded chromosomes inside (tag \"into the chromosomes\", replacing \"cell wall\"). On \"Agrobacterium\"",
+        "explain",
+        "the track resets to show the same stations with the plant parts swapped in (\"cut\" and \"paste\" thumbnails stay; \"put in\" and \"pick\" get leaf icons). `b6a-plant-cell-v1.png` appears; on \"tough cell wall\" its wall outline pulses with a thin amber trace (tag \"cell wall\"); on \"the plant's own chromosomes\" a thin ring marks its nucleus, with slim coded chromosomes inside (tag \"into the chromosomes\", replacing \"cell wall\"). On \"Agrobacterium\" `b6a-bacterium-v1.png` appears tinted beside the cell (term writes on with the gloss \"a soil bacterium that puts DNA into plant chromosomes\"). On \"inserts a piece of its plasmid DNA\" `AgroTransfer` passes a short teal strip from the bacterium's ring through the wall and into the nucleus, where it joins one of the chromosomes. On \"remove its disease-causing genes\" a red-brown block on that strip lifts out and an amber block slides in (b09's `StripInsert`; tag \"disease genes out, useful gene in\"). On \"Bt cotton\" `m6-bt-cotton-v1.png` appears at the right with a grey screen tag \"gene from *Bacillus thuringiensis*\" (italic species name, screen only). On \"grown into whole plants\" `m6-tissue-culture-jars-v1.png` appears between the cell and the cotton plant, with coded arrows cell, jars, plant (grey screen label \"transformed cells selected with a marker, grown into plants\"). On \"Every cell\" the cotton plate takes a faint amber wash and a small seed glyph below it takes the same amber strip (tag \"in every cell, and in the seeds\"). On \"transgenic\" the term writes on with the gloss \"DNA from another species, inserted\". During the hold, silent and small in grey: b09's lane 2 icon (a pair of parent strips sending a reshuffled strip to an offspring) with a grey tag \"breeding: only parents that can interbreed\" (no narration; the contrast is in key note 5). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the full track, stations at equal weight.",
+        "Memory: Here's the whole method in four words: cut, paste, put in, pick.",
+        "cut, paste, put in, pick / matching sticky ends",
+        "On the spoken cues: Four handwritten words write on large, one per cue, each above its station thumbnail: \"Cut,\" (scissor-jaw blob), \"paste,\" (clasp blob), \"put in,\" (ring entering the bacterium), \"pick.\" (dish with a few colonies). On \"matching sticky ends\" a second line writes beneath: \"Same enzyme, matching sticky",
+        "explain",
+        "the full track, stations at equal weight. Four handwritten words write on large, one per cue, each above its station thumbnail: \"Cut,\" (scissor-jaw blob), \"paste,\" (clasp blob), \"put in,\" (ring entering the bacterium), \"pick.\" (dish with a few colonies). On \"matching sticky ends\" a second line writes beneath: \"Same enzyme, matching sticky ends.\" with a small pair of overhangs fitting together. A small grey unspoken note sits under it: \"(or any enzyme pair that leaves matching ends)\". Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "adjust",
+        "the track clears.",
+        "Unseen transfer task (attempt one (cheese enzyme bacteria)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First. Scientists have an",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (cheese enzyme bacteria))",
+        "explain",
+        "the track clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m6-bacterium-plasmid-v1.png` small at its upper left: \"Chymosin is an enzyme used in cheesemaking. Scientists have an intron-free copy of the calf gene for chymosin, and a plasmid that carries a gene for resistance to the antibiotic ampicillin.\" Demand: \"Describe how the scientists could produce *Escherichia coli* bacteria that carry the chymosin gene, and how they could identify these bacteria. (5 marks)\". One lined answer box. Nothing answer-bearing: no stations, enzymes or dishes. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "same restriction enzyme / ligase seals / Heat-shock / grow them on ampicillin / the classic mistake",
+        "On the spoken cues: A four-row `AnsTable` fills one row per cue, each row a station thumbnail and a short line: on \"same restriction enzyme\" \"intron-free copy of the calf gene\" and \"a plasmid\" underline amber, and row \"cut: same enzyme, matching sticky ends\" fills; on \"ligase seals\" row \"paste: ligase seals the",
+        "explain",
+        "the card shrinks to a strip at the top. A four-row `AnsTable` fills one row per cue, each row a station thumbnail and a short line: on \"same restriction enzyme\" \"intron-free copy of the calf gene\" and \"a plasmid\" underline amber, and row \"cut: same enzyme, matching sticky ends\" fills; on \"ligase seals\" row \"paste: ligase seals the joins\"; on \"Heat-shock\" row \"put in: heat shock, some take it up\"; on \"grow them on ampicillin\" \"resistance to the antibiotic ampicillin\" underlines and row \"pick: ampicillin plate, then check for the gene\" fills. On \"the classic mistake\" the chip \"every surviving colony carries the gene\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "adjust",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b6a-bacterium-v1.png` small at its upper left: \"A student inserts a human gene into a plasmid, next to a promoter recognised by bacteria. Copy 1 of the gene was taken directly from human chromosomal DNA. Copy 2 was made from the mRNA of the same gene. Bacteria given Copy 1 produce a faulty protein. Bacteria given Copy 2 produce the working human protein.\" Demand: \"Explain these results. (4 marks)\".",
+        "Unseen transfer task (attempt two (a gene that fails)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. A student puts a human gene, copied",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a gene that fails))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b6a-bacterium-v1.png` small at its upper left: \"A student inserts a human gene into a plasmid, next to a promoter recognised by bacteria. Copy 1 of the gene was taken directly from human chromosomal DNA. Copy 2 was made from the mRNA of the same gene. Bacteria given Copy 1 produce a faulty protein. Bacteria given Copy 2 produce the working human protein.\" Demand: \"Explain these results. (4 marks)\". One lined answer box. Nothing answer-bearing: no splicing strip or codon match. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "still has its introns / already removed / same genetic code / the classic mistake",
+        "On the spoken cues: Two short rows write on beneath it: on \"still has its introns\" \"taken directly from human chromosomal DNA\" underlines amber and row \"Copy 1: introns kept, read as code, faulty protein\" fills, with a tiny coded strip showing grey blocks inside the amber; on \"already removed\" \"made from the mRNA\"",
+        "explain",
+        "the card shrinks to a strip. Two short rows write on beneath it: on \"still has its introns\" \"taken directly from human chromosomal DNA\" underlines amber and row \"Copy 1: introns kept, read as code, faulty protein\" fills, with a tiny coded strip showing grey blocks inside the amber; on \"already removed\" \"made from the mRNA\" underlines and row \"Copy 2: introns removed, correct coding sequence, working protein\" fills, with an all-amber strip; on \"same genetic code\" \"a promoter recognised by bacteria\" underlines in grey and a small note \"promoter and code both fine in each\" writes in grey. On \"the classic mistake\" the chip \"bacteria use a different genetic code\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "six step chips write on in a row, one per cue, each with its station icon: \"intron-free DNA\", \"cut: restriction enzyme\", \"join: ligase\", \"put in: host\", \"pick: marker + check\", \"read: promoter\".",
+        "Decision rule and handoff: So to describe recombinant DNA technology, name each tool and its job, in order.",
+        "So to describe recombinant DNA technology, name each",
+        "On the spoken cues: A bracket under them: \"then: the product (insulin, Bt cotton)\". A \"Next\" chip slides in at the lower right: \"Next: which benefits hold up?\" (small insulin vial and cotton boll thumbnails). Hold half a second before the notes.",
+        "explain",
+        "six step chips write on in a row, one per cue, each with its station icon: \"intron-free DNA\", \"cut: restriction enzyme\", \"join: ligase\", \"put in: host\", \"pick: marker + check\", \"read: promoter\". A bracket under them: \"then: the product (insulin, Bt cotton)\". A \"Next\" chip slides in at the lower right: \"Next: which benefits hold up?\" (small insulin vial and cotton boll thumbnails). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "table build"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6B19_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. Left: `m6-bacterium-plasmid-v1.png` with coded protein glyphs streaming into `m6-insulin-vial-v1.png` (grey tag \"1982: approved\").",
+        "Hook (two health promises): In 1982, human insulin made by bacteria was approved, and it's now used around the world.",
+        "In 2018 / condemned it / Both used genetic technology / health benefit / that label alone / hold up",
+        "On the spoken cues: On \"In 2018\" the right side shows `m6-icsi-v1.png` (an egg with a fine injection needle), grey tag \"2018: embryos edited\" (the 1982 tag dims). On \"condemned it\" a small grey \"condemned\" chip sits under the egg (no gavel, no figures). On \"Both used genetic technology\" a thin bracket joins the two",
+        "explain",
+        "no people. Left: `m6-bacterium-plasmid-v1.png` with coded protein glyphs streaming into `m6-insulin-vial-v1.png` (grey tag \"1982: approved\"). On \"In 2018\" the right side shows `m6-icsi-v1.png` (an egg with a fine injection needle), grey tag \"2018: embryos edited\" (the 1982 tag dims). On \"condemned it\" a small grey \"condemned\" chip sits under the egg (no gavel, no figures). On \"Both used genetic technology\" a thin bracket joins the two plates, labelled \"genetic technology\"; on \"health benefit\" a second label under it, \"promised health benefit\". On \"that label alone\" the bracket label \"genetic technology\" dims and a \"?\" sits between the plates. On \"hold up\" the heading writes on: \"Better than what? Shown how? Who gets it?\" Hold about two seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "three-tests": [
+        "adjust",
+        "the heading splits into three test chips that settle as row labels down the left edge (the empty `BenefitBoard` frame sketches faintly behind them; columns not yet labelled).",
+        "Three tests (tried on the embryo edit): A benefit is never just good in general.",
+        "Better than what? / Shown how? / Who gets it?",
+        "On the spoken cues: On each test cue its chip lights. On \"Try them on the embryo edit\" `m6-icsi-v1.png` returns small at the right with a narrow fourth column labelled grey \"2018 edit\". On \"IVF\" a small grey screen gloss \"IVF: egg fertilised in a lab\" writes and fades. On \"washing his sperm\" a chip \"already protected:",
+        "explain",
+        "the heading splits into three test chips that settle as row labels down the left edge (the empty `BenefitBoard` frame sketches faintly behind them; columns not yet labelled). On each test cue its chip lights. On \"Try them on the embryo edit\" `m6-icsi-v1.png` returns small at the right with a narrow fourth column labelled grey \"2018 edit\". On \"IVF\" a small grey screen gloss \"IVF: egg fertilised in a lab\" writes and fades. On \"washing his sperm\" a chip \"already protected: sperm washing; other HIV prevention\" writes into the first cell (its second half lands on \"other ways later in life\"), with a grey ring dot (tag \"better than what? nothing gained\"). On \"natural protective version\" a chip \"untested edits, not the natural variant\" (grey screen label \"CCR5\") fills the second cell, grey ring dot. On \"no say\" a chip \"children carry the risk, no consent\" fills the third cell, grey ring dot. On \"fails all three\" the narrow column takes a grey scribble cross and slides off; the three row labels stay. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "farm": [
+        "adjust",
+        "the board's first column opens large, headed \"farm\".",
+        "Farm (virus-resistant papaya): Start on the farm, where benefits include harvests, pest resistance and nutrition.",
+        "harvests, pest resistance and nutrition / killing papaya trees / no ordinary variety resisted it / a copy of one of the virus's genes / recognise ... destroy it / Better than what?",
+        "On the spoken cues: On \"harvests, pest resistance and nutrition\" three small grey chips write and fade (\"harvest\", \"resistance\", \"nutrition\"). On \"killing papaya trees\" new `m6-papaya-healthy-v1.png` crossfades to `m6-papaya-ringspot-v1.png` (aligned pair: mottled, yellowed leaves, ringed fruit) with a grey tag",
+        "explain",
+        "the board's first column opens large, headed \"farm\". On \"harvests, pest resistance and nutrition\" three small grey chips write and fade (\"harvest\", \"resistance\", \"nutrition\"). On \"killing papaya trees\" new `m6-papaya-healthy-v1.png` crossfades to `m6-papaya-ringspot-v1.png` (aligned pair: mottled, yellowed leaves, ringed fruit) with a grey tag \"papaya ringspot virus\"; on \"no ordinary variety resisted it\" a short row of three tiny coded tree icons each takes a grey cross (tag \"no resistant variety\"). On \"a copy of one of the virus's genes\" a coded viral RNA strip (thin terracotta line) shows one amber stretch (one gene, short relative to the whole viral genome) copying into a coded DNA strip inside a plant-cell outline (tag \"gene from the virus\"). On \"recognise ... destroy it\" an incoming terracotta viral strand meets the amber stretch and breaks into fragments (tag \"plant destroys the virus's RNA\", replacing the earlier tag). On \"Better than what?\" the \"Better than what?\" cell fills \"dying trees, no resistant variety\", amber filled dot. On \"roughly halved\" a two-bar coded harvest strip shows the first bar dropping to about half (grey label \"main district, 1992 to 1998\"); on \"harvests climbed back\" a third bar rises to about three quarters of the first bar, not full height, after a small \"1998: seed released\" tick (grey label \"2001\"); the \"Shown how?\" cell fills \"harvests climbed back after 1998\", amber filled dot. On \"The growers\" the third cell fills \"growers\", amber filled dot. On \"holds up strongly\" the column dims to grey. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "medicine": [
+        "adjust",
+        "the second column opens large, headed \"medicine\".",
+        "Medicine (insulin): Now medicine.",
+        "supply",
+        "On the spoken cues: `m8-pancreas-v1.png` appears at the left with a grey tag \"pig and cattle pancreases, 1922 to 1980s\"; `m6-insulin-vial-v1.png` at the right. On \"one amino acid\" two short `AminoChain` bead strips draw (human above, pig below), with one bead on the pig strip ringed amber (tag \"pig: 1 different\"); on",
+        "explain",
+        "the second column opens large, headed \"medicine\". `m8-pancreas-v1.png` appears at the left with a grey tag \"pig and cattle pancreases, 1922 to 1980s\"; `m6-insulin-vial-v1.png` at the right. On \"one amino acid\" two short `AminoChain` bead strips draw (human above, pig below), with one bead on the pig strip ringed amber (tag \"pig: 1 different\"); on \"cattle insulin by three\" a third strip with three ringed beads (tag \"cattle: 3 different\", replacing the pig tag). On \"work much better\" a grey thought chip \"human = better?\" writes. On \"trials compared them\" the strips fade and `TrialBars` draws two equal bars, \"human insulin\" and \"purified pig insulin\", with a bracket \"about the same for most patients\" (grey screen label \"randomised trials, Cochrane review 2005\"); the \"human = better?\" chip takes a grey scribble cross. On \"So the benefit that holds up\" the trial bars, their bracket, the Cochrane label and the crossed chip fade out fully before anything else draws. On \"supply\" a `SupplyLine` draws from the pancreas to the vial, thin and dashed; on \"abattoirs\" the pancreas dims; on \"fermenters\" new `m6-fermenter-tank-v1.png` replaces it and the line thickens (tag \"reliable, scalable supply\"). Cells fill one per cue, each dimming as the next lands: on \"fermenters\" (after the tag fades) \"Better than what?\" \"pig and cattle insulin worked too\", amber half dot, and \"Shown how?\" \"trials: similar control; supply grew\", amber filled dot; on \"depends on price\" \"Who gets it?\" \"depends on price\", amber half dot. On \"can't reliably get it\" a small grey world-outline glyph with a few dimmed vial icons sits beside the \"Who gets it?\" cell (tag \"access: price and distribution\"; fades at the scene end). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "growth-hormone": [
+        "adjust",
+        "the insulin column shrinks to the board.",
+        "Growth hormone (when the old source was dangerous): Now compare growth hormone, given to children whose bodies don't make enough.",
+        "Better than what",
+        "On the spoken cues: On \"growth hormone\" new `m6-growth-hormone-vial-v1.png` (a small vial of white powder) appears; the medicine column shows a second, narrower sub-column \"growth hormone\". On \"pituitary glands\" a grey tag \"pituitary gland: a small gland under the brain\" writes; as it fades, a second grey tag \"until",
+        "explain",
+        "the insulin column shrinks to the board. On \"growth hormone\" new `m6-growth-hormone-vial-v1.png` (a small vial of white powder) appears; the medicine column shows a second, narrower sub-column \"growth hormone\". On \"pituitary glands\" a grey tag \"pituitary gland: a small gland under the brain\" writes; as it fades, a second grey tag \"until 1985: from donors who had died\" writes (no body, no person drawn; text only). On \"scarce\" a coded supply line draws thin, with a few dashes missing; on \"fatal brain disease\" one dash turns grey-red with a small warning ring (grey screen label \"Creutzfeldt-Jakob disease\"). On \"made by bacteria\" `m6-bacterium-plasmid-v1.png` appears small and the supply line thickens and turns amber (tag \"1985: made by bacteria\"). The sub-column's \"Better than what?\" cell fills \"scarce, and some batches unsafe\", amber filled dot. On \"replaced it\" (unspoken chip) its \"Shown how?\" cell fills \"harm from old source documented; replaced 1985\", amber filled dot. Its \"Who gets it?\" cell stays empty in this scene. On \"Better than what\" the first row's label pulses on the board. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "factory": [
+        "adjust",
+        "the third column opens large, headed \"industry\".",
+        "Factory (chymosin): Industry follows the same logic.",
+        "chymosin",
+        "On the spoken cues: On \"factory scale\" `m6-fermenter-tank-v1.png` appears small at the right (grey tag \"same logic as medicine\"). On \"chymosin\" new `m6-cheese-wheel-v1.png` appears centre; the term writes on with the gloss \"the enzyme that curdles milk\". On \"calves' stomachs\" `m6-dairy-calf-horn-buds-v1.png` appears",
+        "explain",
+        "the third column opens large, headed \"industry\". On \"factory scale\" `m6-fermenter-tank-v1.png` appears small at the right (grey tag \"same logic as medicine\"). On \"chymosin\" new `m6-cheese-wheel-v1.png` appears centre; the term writes on with the gloss \"the enzyme that curdles milk\". On \"calves' stomachs\" `m6-dairy-calf-horn-buds-v1.png` appears small at the left with a grey tag \"calf rennet\" (no organ drawn). On \"the same enzyme\" a coded enzyme glyph from the calf side and one from the fermenter side slide together and match exactly (tag \"identical enzyme\"); the calf plate dims. After \"supply doesn't depend on calves\" (unspoken) a small grey third glyph appears with a slightly different shape and a grey tag \"fungal enzymes: can taste bitter in aged cheese\"; it dims. Cells fill: \"Better than what?\" \"same enzyme, no calves needed\", amber filled dot; on \"Since about 1990\" \"Shown how?\" \"used since about 1990, much of world's cheese\", amber filled dot; on \"Cheesemakers\" \"Who gets it?\" \"cheesemakers: steady, cheaper supply\", amber filled dot. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "tank-or-field": [
+        "adjust",
+        "the board shrinks to the upper right and a small grey heading writes at the top of the stage: \"Why is farming the most argued over?\" (it carries the question the narration no longer asks; it fades on \"released\").",
+        "Tank or field (why farming is the most argued over): In medicine and industry, the engineered microbes usually stay sealed in tanks, and only the purified product leaves.",
+        "released / only the purified product leaves / pests can evolve resistance / genetic diversity narrows / Bt cotton / A gain in harvest",
+        "On the spoken cues: `TankField` draws: left, the fermenter plate with a sealed outline and coded microbe dots swirling inside; on \"only the purified product leaves\" one small vial icon passes out through a valve while the dots stay (tag \"contained\"). Right, `m6-field-monoculture-mixed-v1.png` (its mixed half dims; the",
+        "explain",
+        "the board shrinks to the upper right and a small grey heading writes at the top of the stage: \"Why is farming the most argued over?\" (it carries the question the narration no longer asks; it fades on \"released\"). `TankField` draws: left, the fermenter plate with a sealed outline and coded microbe dots swirling inside; on \"only the purified product leaves\" one small vial icon passes out through a valve while the dots stay (tag \"contained\"). Right, `m6-field-monoculture-mixed-v1.png` (its mixed half dims; the monoculture half stays) with an open outline. On \"released\" small arrows leave the field edge (pollen dots, insect glyphs). On \"pests can evolve resistance\" one insect glyph turns amber (tag \"resistance evolves\"); on \"genetic diversity narrows\" b12's levels mini-board appears as a thumbnail with its genetic row arrow pointing down (grey tag \"b12: the banana problem returns\"; the resistance tag fades). On \"Bt cotton\" `m6-bt-cotton-v1.png` appears small with b13's two spray bars as a thumbnail (\"ordinary cotton\", \"Bt cotton\"; grey tag \"about 85% less insecticide\") and a small refuge strip beside it (tag \"holds while refuges work\"). On \"A gain in harvest\" the screen label \"biodiversity trade-off\" writes small and grey under the field, with a grey tag \"b12: yield isn't a level\" beside it (the Bt cotton tags have faded by then). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "ranking": [
+        "new",
+        "the `BenefitBoard` enlarges to full stage with all columns and cells (dimmed).",
+        "Ranking (which benefits hold up best): So which benefits hold up best?",
+        "did something the old method couldn't / measures the real outcome / reaches the people / Growth hormone and the papaya / with clear evidence / Insulin and chymosin",
+        "On the spoken cues: On \"did something the old method couldn't\" the first row's amber filled dots brighten; on \"measures the real outcome\" the second row's; on \"reaches the people\" the third row's; all dim again before the next sentence. On \"Growth hormone and the papaya\" only those two columns' \"Better than what?\" and",
+        "explain",
+        "the `BenefitBoard` enlarges to full stage with all columns and cells (dimmed). On \"did something the old method couldn't\" the first row's amber filled dots brighten; on \"measures the real outcome\" the second row's; on \"reaches the people\" the third row's; all dim again before the next sentence. On \"Growth hormone and the papaya\" only those two columns' \"Better than what?\" and \"Shown how?\" cells ring amber (all four are amber filled dots: papaya from scene 3, growth hormone from scene 5); on \"with clear evidence\" the two \"Shown how?\" rings pulse. Growth hormone's \"Who gets it?\" cell stays empty and a grey tag \"depends on cost\" writes beside it; the papaya's \"growers\" cell stays dimmed, not ringed. On \"Insulin and chymosin\" those columns ring thinner, and the insulin \"Who gets it?\" half dot pulses (tag \"reach depends on price\", replacing the cost tag). On \"Other farm crops\" and \"how they're managed\" a small Bt cotton thumbnail with its refuge strip appears beside the farm column with a grey tag \"depends on management\". On \"how advanced\" a grey chip \"most advanced = most beneficial\" writes and takes a grey scribble cross. At most three bright text items. Hold half a second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "table build"
+        ],
+        "Hold half a second"
+    ],
+    "memory": [
+        "new",
+        "the board fades to its three row labels.",
+        "Memory: Here's the test in three questions.",
+        "Better than what? Shown how? Who gets it? / a gain in harvest isn't a gain in biodiversity",
+        "On the spoken cues: Three handwritten questions write on large, one per cue, each with a small icon (a two-pan outline, a magnifier, a group of small dots for recipients; no people). On \"a gain in harvest\" a second line writes beneath: \"A gain in harvest isn't a gain in biodiversity.\" with a small field icon. Hold",
+        "explain",
+        "the board fades to its three row labels. Three handwritten questions write on large, one per cue, each with a small icon (a two-pan outline, a magnifier, a group of small dots for recipients; no people). On \"a gain in harvest\" a second line writes beneath: \"A gain in harvest isn't a gain in biodiversity.\" with a small field icon. Hold half a second.",
+        [
+            "HandText write-on",
+            "table build"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt one (laundry enzymes)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. A company makes laundry",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (laundry enzymes))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with new `m6-washing-machine-v1.png` small at its upper left: \"A company produces laundry enzymes using genetically modified microorganisms. The enzymes remove common stains in water at 20 °C. Older detergents needed water at 40 to 60 °C to remove the same stains. Most of the energy used by a washing machine is used to heat the water.\" Demand: \"The company claims that its enzymes reduce household energy use. Assess this claim. (4 marks)\". One lined answer box. Nothing answer-bearing. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Compared with a hot wash / heating the water / only if people choose / measured energy use / the classic mistake",
+        "On the spoken cues: A three-row `AnsTable` fills one row per cue: on \"Compared with a hot wash\" \"40 to 60 °C\" and \"20 °C\" underline amber, and row \"better than what? a hot wash: most energy saved\" fills; on \"heating the water\" \"used to heat the water\" underlines; on \"only if people choose\" row \"shown how? only if",
+        "explain",
+        "the card shrinks to a strip at the top. A three-row `AnsTable` fills one row per cue: on \"Compared with a hot wash\" \"40 to 60 °C\" and \"20 °C\" underline amber, and row \"better than what? a hot wash: most energy saved\" fills; on \"heating the water\" \"used to heat the water\" underlines; on \"only if people choose\" row \"shown how? only if people wash cold\" fills (amber half dot); on \"measured energy use\" row \"evidence: energy use in real homes\" fills. Verdict chip \"partly supported, provided people wash cold\" writes under the table. On \"the classic mistake\" the chip \"the enzyme saves energy by itself\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "adjust",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `y11-budding-yeast-v1.png` and `m7-vaccine-vial-syringe-v1.png` small at its upper left: \"Vaccine A (from 1981): hepatitis B surface protein purified from the blood plasma of people chronically infected with hepatitis B virus. Vaccine B (from 1986): the same surface protein made by yeast cells carrying the gene for it, grown in fermenters. Both vaccines gave strong protection against hepatitis B.\" Demand: \"Evaluate the benefit of Vaccine B compared with Vaccine A. (5 marks)\".",
+        "Unseen transfer task (attempt two (two hepatitis B vaccines)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. The first hepatitis B vaccine, from 1981,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two hepatitis B vaccines))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `y11-budding-yeast-v1.png` and `m7-vaccine-vial-syringe-v1.png` small at its upper left: \"Vaccine A (from 1981): hepatitis B surface protein purified from the blood plasma of people chronically infected with hepatitis B virus. Vaccine B (from 1986): the same surface protein made by yeast cells carrying the gene for it, grown in fermenters. Both vaccines gave strong protection against hepatitis B.\" Demand: \"Evaluate the benefit of Vaccine B compared with Vaccine A. (5 marks)\". One lined answer box. Nothing answer-bearing. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "both protected well / no longer depended on plasma / eased fears / every baby / the classic mistake",
+        "On the spoken cues: Three rows write beneath it: on \"both protected well\" \"Both vaccines gave strong protection\" underlines amber and row \"protection: the same, not the gain\" fills (grey); on \"no longer depended on plasma\" \"blood plasma of people chronically infected\" underlines and row \"supply: no infected donors",
+        "explain",
+        "the card shrinks to a strip. Three rows write beneath it: on \"both protected well\" \"Both vaccines gave strong protection\" underlines amber and row \"protection: the same, not the gain\" fills (grey); on \"no longer depended on plasma\" \"blood plasma of people chronically infected\" underlines and row \"supply: no infected donors needed; fermenters scale\" fills (amber filled dot); on \"eased fears\" row \"safety: no blood-derived material\" fills; on \"every baby\" a small grey tag \"routine infant vaccination (Australia: since 2000)\". Verdict chip \"large benefit, from supply and safety\" writes. On \"the classic mistake\" the chip \"Vaccine B protects better\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "four step chips write on in a row, one per cue: \"domain + exact benefit\" (three small column thumbnails), \"better than what? shown how? who gets it?\" (the three icons), \"weigh the trade-off (farm: biodiversity)\" (field icon), \"verdict\" (amber).",
+        "Decision rule and handoff: So to evaluate a benefit, name the domain and the exact benefit.",
+        "So to evaluate a benefit, name the domain",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: practice: benefits, biodiversity and ethics\" (small `m6-maize-hybrid-rows-v1.png` and `m6-white-sheep-v1.png` thumbnails). Hold half a second before the notes.",
+        "explain",
+        "four step chips write on in a row, one per cue: \"domain + exact benefit\" (three small column thumbnails), \"better than what? shown how? who gets it?\" (the three icons), \"weigh the trade-off (farm: biodiversity)\" (field icon), \"verdict\" (amber). A \"Next\" chip slides in at the lower right: \"Next: practice: benefits, biodiversity and ethics\" (small `m6-maize-hybrid-rows-v1.png` and `m6-white-sheep-v1.png` thumbnails). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M6G02B_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Verdict, criteria, evidence: biotechnology\" writes on.",
+        "Hook: Some of the biggest HSC Biology questions ask you to assess or evaluate a biotechnology.",
+        "biodiversity / verdict / criteria / evidence",
+        "On the spoken cues: On \"biodiversity\" a short quotation chip writes, word for word from the NESA feedback: \"linking the biotechnology to its effect on biodiversity, rather than its effect on the organism\" with a `GreyTag` \"NESA marking feedback, Biology 2023 Q34\". On \"ethics answers\" a small grey tag \"HSCScience",
+        "explain",
+        "heading \"Verdict, criteria, evidence: biotechnology\" writes on. On \"biodiversity\" a short quotation chip writes, word for word from the NESA feedback: \"linking the biotechnology to its effect on biodiversity, rather than its effect on the organism\" with a `GreyTag` \"NESA marking feedback, Biology 2023 Q34\". On \"ethics answers\" a small grey tag \"HSCScience advice for ethics items\" writes beside it, so the extension is not read as part of the quotation. On \"verdict\", \"criteria\" and \"evidence\" the `VerdictStrip` builds at full size, one row per cue (balance, ruler and magnifier icons; grey tag \"skills-s04\"), with the memory aid small beneath: \"No verdict without a reason, no reason without evidence.\" On \"three HSC-style questions\" three small numbered card thumbnails fan out (maize rows, a wild sheep, a pig) with one shared tag line \"HSC-style questions, written for HSCScience\". The strip shrinks to the far left; the quotation chip fades. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "q1-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 1: insect-resistant maize) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. A farming district switched from ordinary",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: insect-resistant maize)",
+        "explain",
+        "fresh board. Type badge hidden. `m6-maize-hybrid-rows-v1.png` sits small at the card's upper left. The card writes on as an exam question: \"A farming district replaced conventional maize, sprayed with insecticide against caterpillar pests, with an insect-resistant maize. The insect-resistant maize produces a protein that kills caterpillars that feed on it. The table shows data for the district before the change and ten years after it.\" `QTable`: \"Measure | Before (sprayed conventional maize) | Ten years after (insect-resistant maize)\"; \"Insecticide sprays per season | 6 | 1\"; \"Insect species recorded in maize fields | 17 | 25\"; \"Maize varieties grown in the district | 15 | 4\"; \"Farms planting refuge strips of non-resistant maize | not applicable | 3 in 10\"; \"Caterpillars surviving on resistant maize in laboratory tests | not applicable | none until year 7, rising since year 8\". Grey chip: \"data are illustrative\". Demand: \"Assess the effect of this change on biodiversity in the district. (6 marks)\". An eight-line `AnswerBox`, counter \"0 / 6\". Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the verdict strip dims; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-plan": [
+        "new",
+        "the card shrinks; type badge \"Biodiversity\".",
+        "Verb, levels, baseline: Assess means judge how far, so your verdict says how much biodiversity changed, and which way.",
+        "Assess / levels / sprayed maize / genetic",
+        "On the spoken cues: On \"Assess\" the verb gets a highlighter and a chip \"assess: how far, which way\" (grey tag \"s04\"); the strip's \"verdict\" row lights. On \"levels\" b12's levels mini-board draws small in the side column (rows genetic, species, ecosystem; grey tag \"b12: which level? compared with what?\"); the strip's",
+        "explain",
+        "the card shrinks; type badge \"Biodiversity\". On \"Assess\" the verb gets a highlighter and a chip \"assess: how far, which way\" (grey tag \"s04\"); the strip's \"verdict\" row lights. On \"levels\" b12's levels mini-board draws small in the side column (rows genetic, species, ecosystem; grey tag \"b12: which level? compared with what?\"); the strip's \"criteria\" row lights. On \"sprayed maize\" \"sprayed with insecticide\" underlines amber and a baseline chip \"baseline: sprayed maize\" pins under the board. On \"sort the evidence\" the strip's \"evidence\" row lights: the \"sprays\" and \"insect species\" table rows take teal \"species\" tags; on \"genetic\" the \"varieties\" row takes a plum \"genetic (crop)\" tag; on \"genetic change in the pest\" the \"caterpillars surviving\" row takes a grey outlined \"allele change (pest)\" tag, deliberately not the plum diversity tag. The ecosystem row of the mini-board stays grey with a small \"?\" (no data). The assess chip fades.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-build": [
+        "new",
+        "answer rows write, each with a `RoleTag`: (1) on \"Biodiversity rose\" \"Species diversity increased but the crop's genetic diversity decreased, so the effect is mixed.\" (verdict; dashed slot \"condition to come\").",
+        "Verdict and two levels: Biodiversity rose at the species level, but the crop's genetic diversity fell, so the change is mixed.",
+        "six to one / fifteen to four / rising",
+        "On the spoken cues: (2) On \"six to one\" the \"6\" and \"1\" underline amber, then \"17\" and \"25\"; row \"Species level: sprays fell from 6 to 1, so fewer non-target insects were killed; insect species rose from 17 to 25.\" (criterion + evidence), tick, \"1 / 6\", then \"2 / 6\" as the cause clause completes. A small coded insect",
+        "explain",
+        "answer rows write, each with a `RoleTag`: (1) on \"Biodiversity rose\" \"Species diversity increased but the crop's genetic diversity decreased, so the effect is mixed.\" (verdict; dashed slot \"condition to come\"). (2) On \"six to one\" the \"6\" and \"1\" underline amber, then \"17\" and \"25\"; row \"Species level: sprays fell from 6 to 1, so fewer non-target insects were killed; insect species rose from 17 to 25.\" (criterion + evidence), tick, \"1 / 6\", then \"2 / 6\" as the cause clause completes. A small coded insect glyph cluster in the side column grows from a few to more (tag \"fewer sprays: more species\"). (3) On \"fifteen to four\" \"15\" and \"4\" underline; row \"Genetic level (crop): varieties fell from 15 to 4, so the crop's gene pool narrowed and one disease could affect most of it.\" Tick, \"3 / 6\". The mini-board's genetic arrow points down (grey tag \"b12: the banana problem returns\"). (4) On \"rising\" \"rising since year 8\" underlines; row \"Pest: surviving caterpillars rising: resistance alleles becoming more common; a threat to the species gain.\" (evidence, with a grey \"allele frequency, not lost diversity\" tag that fades on the next cue). Tick, \"4 / 6\". A thin dashed arrow runs from row 4 to the insect glyph cluster (tag \"threatens the species gain\"). Filled rows dim as the next writes.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-weigh": [
+        "new",
+        "on \"three farms in ten\" \"3 in 10\" underlines amber; a small coded refuge strip beside the maize thumbnail shows three of ten farm squares shaded.",
+        "Condition and close the loop: Only three farms in ten plant refuges, so resistance can keep spreading.",
+        "three farms in ten / mixed / provided",
+        "On the spoken cues: On \"spraying returns\" the insect cluster shrinks back a little with a dashed outline (tag \"gain reversible\"). Row (5) \"Limitation: refuges on only 3 in 10 farms, so resistance may spread, sprays may return and the species gain may be lost.\" (limitation, grey), tick, \"5 / 6\". On \"mixed\" row (6)",
+        "explain",
+        "on \"three farms in ten\" \"3 in 10\" underlines amber; a small coded refuge strip beside the maize thumbnail shows three of ten farm squares shaded. On \"spraying returns\" the insect cluster shrinks back a little with a dashed outline (tag \"gain reversible\"). Row (5) \"Limitation: refuges on only 3 in 10 farms, so resistance may spread, sprays may return and the species gain may be lost.\" (limitation, grey), tick, \"5 / 6\". On \"mixed\" row (6) writes: \"Overall, mixed: species diversity up to a moderate extent, crop genetic diversity down;\" (verdict), and on \"provided\" it continues \"the gain lasts provided refuges are planted; more varieties with the trait would reduce the loss.\" (condition), tick, \"6 / 6\"; a `PenArrow` curves from row 6 up to row 1's verdict (\"mixed\" in both) and the dashed slot fills. On \"ecosystem effects\" the mini-board's grey ecosystem \"?\" pulses once (tag \"no data: not judged\"). Hold about 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "q1-weak": [
+        "new",
+        "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"6 / 6\" and its role tags); the weak answer writes on as \"Answer A\".",
+        "Weak against strong: Here's a weaker answer.",
+        "the organism and the farm / names a level / no real verdict",
+        "On the spoken cues: On \"the organism and the farm\" \"kills caterpillars\" and \"bigger harvests\" ring grey with a small tag \"organism, not biodiversity\". On \"names a level\" three dashed empty slots appear under Answer A: \"which level?\", \"data?\", \"verdict?\". One tick lands beside \"pests could become resistant\" (counter \"1",
+        "explain",
+        "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"6 / 6\" and its role tags); the weak answer writes on as \"Answer A\". On \"the organism and the farm\" \"kills caterpillars\" and \"bigger harvests\" ring grey with a small tag \"organism, not biodiversity\". On \"names a level\" three dashed empty slots appear under Answer A: \"which level?\", \"data?\", \"verdict?\". One tick lands beside \"pests could become resistant\" (counter \"1 / 6\"; grey label \"HSCScience marking guide (illustrative)\"). `LostMarksTag`: \"-5: no biodiversity level, no data, no judgement\". On \"no real verdict\", once the lost-marks tag has settled, the chip \"bigger harvests = more biodiversity\" writes on and takes a grey scribble cross (grey tag \"b19: a gain in harvest isn't a gain in biodiversity\"; the line is no longer spoken, Revision 2 reserve trim). Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold about 1 second"
+    ],
+    "q2-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 2: a cloned wild sheep) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. A rare wild sheep species survives",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: a cloned wild sheep)",
+        "explain",
+        "board clears. Type badge hidden. New `m6-wild-mountain-sheep-v1.png` sits small at the card's upper left, `m6-insemination-straw-tank-v1.png` beside \"frozen\" (grey label \"cell store\"), `m6-white-sheep-v1.png` beside \"domestic sheep\". The card writes on: \"A rare wild sheep species survives as one population of about 300 animals, all descended from 8 founders. A cell bank holds frozen skin cells taken from 10 wild sheep of this species that died 30 years ago. These 10 animals carried alleles that are no longer found in the living population. Scientists plan to use somatic cell nuclear transfer, with eggs and surrogate mothers from domestic sheep. In past cloning of this kind, about 2 of every 100 embryos transferred to surrogates produced a live lamb.\" Grey chip: \"constructed example\". Demand: \"Evaluate this plan as a way to protect the species. In your answer, refer to genetic diversity, animal welfare and one alternative. (7 marks)\". An eight-line `AnswerBox`, counter \"0 / 7\". Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "counter and bar fill",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-genetic": [
+        "new",
+        "the card shrinks; type badge \"Cloning\".",
+        "Mechanism, then genetic diversity: Evaluate, and the question hands you three criteria.",
+        "Evaluate / cell donor / lost",
+        "On the spoken cues: On \"Evaluate\" the verb highlights (chip \"evaluate: against criteria\", grey tag \"s04\") and the three criteria in the demand (\"genetic diversity\", \"animal welfare\", \"one alternative\") take teal brackets; the strip's \"criteria\" row lights. On \"the mechanism\" and \"cell donor\" b16's nuclear-transfer",
+        "explain",
+        "the card shrinks; type badge \"Cloning\". On \"Evaluate\" the verb highlights (chip \"evaluate: against criteria\", grey tag \"s04\") and the three criteria in the demand (\"genetic diversity\", \"animal welfare\", \"one alternative\") take teal brackets; the strip's \"criteria\" row lights. On \"the mechanism\" and \"cell donor\" b16's nuclear-transfer strip runs small in the side column (frozen cell nucleus into an emptied domestic egg; grey tag \"b16: the clone matches the nucleus donor\"). On \"the mechanism\" (continuing) \"8 founders\" underlines and a gene-pool ring cluster draws with eight colours of rings (unspoken; the card carries the founder count). On \"lost\" \"no longer found in the living population\" and \"10 wild sheep\" underline; ten new ring colours drop into the cluster one by one (tag \"lost alleles return\"). Row (1) \"Mechanism: each clone's nuclear DNA matches its donor, so it carries that donor's alleles.\" Tick, \"1 / 7\". Row (2) \"Genetic diversity: clones of 10 donors carry alleles lost from the herd; bred into the herd, they widen the gene pool.\" Tick, \"2 / 7\". The nuclear-transfer strip fades out after row (2) writes. On \"count the donors\" the plan's cluster keeps its ten new colours (dimmed, untouched), and a separate small side cluster draws beside it with a grey label \"if all 10 clones came from 1 donor\": ten clone glyphs that all share one colour, adding a single new colour to a copy of the herd ring (screen line \"count the donors, not the clones\", grey tag \"like b15: count the fathers\"). The side cluster fades when row (3) writes. On \"no more alleles than one\" the side cluster fades, and (unspoken; the mitochondria sentence is a Revision 2 reserve trim) a small egg glyph labelled \"domestic egg\" sends a tiny mitochondrion dot into the clone glyph (grey tag \"mtDNA: mainly domestic sheep\"). Row (3) \"Limit: diversity gained depends on the number of donors; mitochondrial DNA comes mainly from domestic sheep.\" Tick, \"3 / 7\". Filled rows dim.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q2-welfare": [
+        "adjust",
+        "on \"two in a hundred\" \"about 2 of every 100 embryos\" underlines amber; a coded grid of 100 small embryo dots draws, two turn amber, the rest grey (tag \"98 fail\"); `m6-white-sheep-v1.png` sits beside it (grey tag \"domestic surrogates\").",
+        "Welfare, alternative, verdict: Next, welfare.",
+        "two in a hundred / habitat / provided",
+        "On the spoken cues: Row (4) \"Welfare: only about 2 in 100 embryos give a lamb, so many surrogate ewes undergo embryo transfer and failed pregnancies.\" Tick, \"4 / 7\". On \"habitat\" \"one alternative\" in the demand rings; a small grey icon pair (a breeding-plan doodle of linked rings, a landscape outline) writes; row (5)",
+        "explain",
+        "on \"two in a hundred\" \"about 2 of every 100 embryos\" underlines amber; a coded grid of 100 small embryo dots draws, two turn amber, the rest grey (tag \"98 fail\"); `m6-white-sheep-v1.png` sits beside it (grey tag \"domestic surrogates\"). Row (4) \"Welfare: only about 2 in 100 embryos give a lamb, so many surrogate ewes undergo embryo transfer and failed pregnancies.\" Tick, \"4 / 7\". On \"habitat\" \"one alternative\" in the demand rings; a small grey icon pair (a breeding-plan doodle of linked rings, a landscape outline) writes; row (5) \"Alternative: managed breeding and habitat protection remove threats, but cannot restore lost alleles.\" Tick, \"5 / 7\". On \"can't bring back lost alleles\" the plan's ten new ring colours in the dimmed cluster brighten briefly (tag \"only the frozen cells hold these\"), which is why the verdict keeps cloning as a small trial alongside habitat protection. On \"the verdict\" row (6) \"Overall, worthwhile to a moderate extent as a small trial alongside habitat protection,\" (verdict) and on \"provided\" row (6) continues \"provided the clones survive and breed into the herd.\" (condition), ticks \"6 / 7\", \"7 / 7\"; a `PenArrow` loops to the strip's \"verdict\" row. Hold about 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "tick",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"clones are identical, so cloning can't add diversity\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is writing that clones are identical, so cloning can never increase genetic diversity.",
+        "the classic mistake / identical to its donor",
+        "On the spoken cues: On \"identical to its donor\" one donor glyph and its clone glyph link with an \"=\" while the herd cluster beside them shows different colours (tag \"same as donor, new to the herd\"). One crossed mistake only. Hold about 1 second.",
+        "explain",
+        "a chip \"clones are identical, so cloning can't add diversity\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"identical to its donor\" one donor glyph and its clone glyph link with an \"=\" while the herd cluster beside them shows different colours (tag \"same as donor, new to the herd\"). One crossed mistake only. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "q3-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 3: kidneys from gene-edited pigs) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. Thousands of people with kidney failure",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: kidneys from gene-edited pigs)",
+        "explain",
+        "board clears. Type badge hidden. New `m6-pig-side-v1.png` sits small at the card's upper left, `m8-kidney-nephron-v1.png` beside it. The card writes on: \"Many thousands of people with kidney failure wait years for a kidney from a human donor, and some die while waiting. Scientists have gene-edited pigs so that their kidneys are more suitable for transplant into humans: three pig genes whose products trigger rapid rejection by the human immune system were inactivated, seven human genes that help control immune and clotting reactions were added, and copies of a virus built into the pig genome were inactivated. The pigs are raised in sealed, disease-controlled facilities. Since 2024, a small number of patients have received these kidneys with special permission. Clinical trials of other gene-edited pig kidneys have also begun. One patient's kidney worked for about nine months before it was removed; others are still being followed.\" Demand: \"Assess the use of gene-edited pigs as a source of kidneys for transplant. Refer to benefits and ethical issues. (6 marks)\". An eight-line `AnswerBox`, counter \"0 / 6\". Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "counter and bar fill",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-benefit": [
+        "new",
+        "the card shrinks; type badge \"Ethics\".",
+        "Size the benefit, then the evidence: Assess means judge how far, so size the benefit first.",
+        "Assess / months / shown",
+        "On the spoken cues: On \"Assess\" the verb highlights (chip \"how far?\"). b19's three test chips appear small in the side column (grey tag \"b19\"). On \"waiting years\" \"wait years\" and \"some die while waiting\" underline amber; first test chip fills \"waiting list: large need\" (amber filled dot). On \"when it's needed\" a",
+        "explain",
+        "the card shrinks; type badge \"Ethics\". On \"Assess\" the verb highlights (chip \"how far?\"). b19's three test chips appear small in the side column (grey tag \"b19\"). On \"waiting years\" \"wait years\" and \"some die while waiting\" underline amber; first test chip fills \"waiting list: large need\" (amber filled dot). On \"when it's needed\" a small coded supply line runs from the pig plate to a kidney glyph. On \"months\" \"a small number of patients\" and \"worked for about nine months before it was removed\" underline; second chip fills \"few patients, months\" (amber half dot); a short coded evidence ladder (b11 style: \"idea\", \"lab\", \"first patients\", \"proven\") lights to \"first patients\" (grey tag \"b11: how far has the evidence got?\"). Row (1) \"Benefit: could supply kidneys for the many people waiting, a large benefit if it works.\" (criterion), tick \"1 / 6\". Row (2) \"Evidence: few patients; kidneys worked for months, not years, so the benefit is not yet shown.\" (evidence), tick \"2 / 6\". On \"shown\" the ladder's \"proven\" rung stays grey with a small \"not yet\" (screen line \"promising is not proven\", grey tag \"b11\").",
+        [
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-ethics": [
+        "new",
+        "three small coded bearer icons build in the side column, each on its cue, with no people drawn: a pig glyph (\"pigs\"), a hospital-bed outline with no figure (\"early patients\"), a ring of small dots (\"others\").",
+        "Who carries each risk: Now the ethical issues, and who carries each one.",
+        "pigs / patients / other people / principle",
+        "On the spoken cues: On \"pigs\" \"raised in sealed, disease-controlled facilities\" underlines; row (3) \"Animal welfare: pigs are bred, confined and killed for organs.\" (criterion), tick \"3 / 6\". On \"agree freely\" row (4) \"Patients: high risk in early use, so informed, voluntary consent is essential.\" Tick \"4 / 6\". On",
+        "explain",
+        "three small coded bearer icons build in the side column, each on its cue, with no people drawn: a pig glyph (\"pigs\"), a hospital-bed outline with no figure (\"early patients\"), a ring of small dots (\"others\"). On \"pigs\" \"raised in sealed, disease-controlled facilities\" underlines; row (3) \"Animal welfare: pigs are bred, confined and killed for organs.\" (criterion), tick \"3 / 6\". On \"agree freely\" row (4) \"Patients: high risk in early use, so informed, voluntary consent is essential.\" Tick \"4 / 6\". On \"other people\" \"copies of a virus built into the pig genome were inactivated\" underlines; `ViralCopyStrip` shows a coded pig DNA strip with several grey virus-copy blocks that each take a small cross (grey screen label \"porcine endogenous retroviruses\"); row (5) \"Others: a pig virus could spread beyond the patient; reduced by inactivating viral copies, not removed.\" Tick \"5 / 6\". On \"principle\" a grey chip \"objection in principle: evidence can't settle it\" (grey tag \"b10\") writes beside the rows. Filled rows dim.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-verdict": [
+        "new",
+        "row (6) writes: \"Overall, justified to a moderate extent as regulated trials,\" (verdict) then \"provided consent, animal welfare and infection monitoring are in place; not yet a replacement for human donors.\" (condition).",
+        "Close the loop: Gene-edited pig kidneys are justified to a moderate extent, as carefully regulated trials, provided patients give informed consent, the pigs' welfare is protected, and recipients are monitored for infection.",
+        "moderate extent",
+        "On the spoken cues: Tick \"6 / 6\". A `PenArrow` loops to the strip's verdict row; all strip rows light together briefly. Hold about 1 second.",
+        "explain",
+        "row (6) writes: \"Overall, justified to a moderate extent as regulated trials,\" (verdict) then \"provided consent, animal welfare and infection monitoring are in place; not yet a replacement for human donors.\" (condition). Tick \"6 / 6\". A `PenArrow` loops to the strip's verdict row; all strip rows light together briefly. Hold about 1 second.",
+        [
+            "DrawPath",
+            "tick",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"a kidney worked for 9 months, so pig kidneys solve the shortage\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is treating one kidney that worked for nine months as proof that pig kidneys solve the shortage.",
+        "the classic mistake / how long, how often, or how safely",
+        "On the spoken cues: On \"how long, how often, or how safely\" three small grey question chips write in a row (\"how long?\", \"how often?\", \"how safely?\"). One crossed mistake only. Hold about 1 second.",
+        "explain",
+        "a chip \"a kidney worked for 9 months, so pig kidneys solve the shortage\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"how long, how often, or how safely\" three small grey question chips write in a row (\"how long?\", \"how often?\", \"how safely?\"). One crossed mistake only. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-board": [
+        "adjust",
+        "the verdict strip returns full size as a three-column board, \"What to do\", \"Biodiversity questions\", \"Ethics questions\", each row lighting on its cue with the question number badges: \"one mechanism link (Q2: the clone matches its donor)\"; \"criteria + evidence: name the level and the baseline (Q1) / name who carries each risk (Q3)\"; \"verdict + condition: to a ... extent, provided that ... (Q1 to Q3)\".",
+        "Decision board: For any biotechnology question, give one mechanism link.",
+        "biodiversity level / who carries each risk / condition",
+        "On the spoken cues: The memory aid \"No verdict without a reason, no reason without evidence.\" writes small under the board, with b13's \"Verdict, provided that ...\" beside it. On \"Next\" a chip \"Next: why a technology that works can still have little lasting effect\" slides in at the lower right (small seed vault",
+        "explain",
+        "the verdict strip returns full size as a three-column board, \"What to do\", \"Biodiversity questions\", \"Ethics questions\", each row lighting on its cue with the question number badges: \"one mechanism link (Q2: the clone matches its donor)\"; \"criteria + evidence: name the level and the baseline (Q1) / name who carries each risk (Q3)\"; \"verdict + condition: to a ... extent, provided that ... (Q1 to Q3)\". The memory aid \"No verdict without a reason, no reason without evidence.\" writes small under the board, with b13's \"Verdict, provided that ...\" beside it. On \"Next\" a chip \"Next: why a technology that works can still have little lasting effect\" slides in at the lower right (small seed vault thumbnail, `m6-seed-bank-vault-v1.png`). Hold about 1 second.",
+        [
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# --- M6 b16, b18, b19 and g02 rows (end) ---
+# --- M6 p01 and M7 b01, b02 rows (start) ---
+M6P01B_ROWS = {
+    "hook": [
+        "adjust",
+        "two new plates side by side on the bench: `m6-yeast-plate-000s-v1.png` (tag \"0 s: mean 142\") and `m6-yeast-plate-120s-v1.png` (on \"five\", tag \"120 s: mean 5\"), counts amber, times violet; a grey tag \"mutagens video\" (dims).",
+        "Hook (where would the mutants be?): In the mutagens video, you saw these numbers: a hundred and forty two yeast colonies with no UV, and just five after two minutes.",
+        "five / why not / inside the colonies that grew",
+        "On the spoken cues: On \"doesn't prove more mutants\" a chip \"fewer colonies = more mutants?\" writes in terracotta with a question mark and a small grey tag \"mutagens video: not proven\"; on \"why not\" the question mark pulses. On \"where would they be?\" a faint coded magnifier sweeps the empty agar of the 120 s plate and finds nothing (tag \"empty agar: no cells to test\"). On \"inside the colonies that grew\" the magnifier moves onto one of",
+        "explain",
+        "two new plates side by side on the bench: `m6-yeast-plate-000s-v1.png` (tag \"0 s: mean 142\") and `m6-yeast-plate-120s-v1.png` (on \"five\", tag \"120 s: mean 5\"), counts amber, times violet; a grey tag \"mutagens video\" (dims). On \"doesn't prove more mutants\" a chip \"fewer colonies = more mutants?\" writes in terracotta with a question mark and a small grey tag \"mutagens video: not proven\"; on \"why not\" the question mark pulses. On \"where would they be?\" a faint coded magnifier sweeps the empty agar of the 120 s plate and finds nothing (tag \"empty agar: no cells to test\"). On \"inside the colonies that grew\" the magnifier moves onto one of the five colonies and a small terracotta \"?\" sits inside it. The question writes at the top left: \"What can colony counts tell you?\" Bright at the end: the two counts and the question. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "what-a-colony-is": [
+        "adjust",
+        "step rail lights \"1 what a colony means\".",
+        "What a colony is: First, what's a colony?",
+        "colony / surviving",
+        "On the spoken cues: Centre: `y11-budding-yeast-v1.png` small at the left with a grey tag \"yeast: single-celled fungus\" (dims). `m6-agar-dish-top-v1.png` in the centre: a scatter of tiny coded dots appears across the agar (tag \"about 150 cells, spread thin\"). A coded time bar runs \"0 h → 48 h at 30 °C\"; most dots swell into cream colonies (the plate cross-fades to `m6-yeast-plate-000s-v1.png`); two dots stay tiny and grey. On \"colony\"",
+        "explain",
+        "step rail lights \"1 what a colony means\". Centre: `y11-budding-yeast-v1.png` small at the left with a grey tag \"yeast: single-celled fungus\" (dims). `m6-agar-dish-top-v1.png` in the centre: a scatter of tiny coded dots appears across the agar (tag \"about 150 cells, spread thin\"). A coded time bar runs \"0 h → 48 h at 30 °C\"; most dots swell into cream colonies (the plate cross-fades to `m6-yeast-plate-000s-v1.png`); two dots stay tiny and grey. On \"colony\" one colony is ringed with the gloss \"colony: a visible pile of cells grown from one cell or small clump\". On \"surviving\" a teal tag writes: \"one colony = one surviving cell or small clump\" and the two grey dots get a small grey tag \"can't divide: no colony\". Bright at the end: the ring, the teal tag and the grey tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "four-fates": [
+        "adjust",
+        "right zone: the four-fates fork.",
+        "Four fates under UV: Now add UV, which joins neighbouring thymines, as you saw.",
+        "repaired / stalls / no colony / survival",
+        "On the spoken cues: A single cell icon at the left with b02's `SlimStrand` lens beside it, small; on \"joins neighbouring thymines\" a dimer kink appears on the strand, and on \"repaired\" (below) a `RepairRace` blob moves toward it (grey tag \"mutagens video\", dims; `m6-uv-skin-v1.png` thumbnail not shown, to keep the board to yeast). The fork branches into four rows, each writing on its cue: \"no damage → colony\" (cream colony icon from",
+        "explain",
+        "right zone: the four-fates fork. A single cell icon at the left with b02's `SlimStrand` lens beside it, small; on \"joins neighbouring thymines\" a dimer kink appears on the strand, and on \"repaired\" (below) a `RepairRace` blob moves toward it (grey tag \"mutagens video\", dims; `m6-uv-skin-v1.png` thumbnail not shown, to keep the board to yeast). The fork branches into four rows, each writing on its cue: \"no damage → colony\" (cream colony icon from the 0 s plate); on \"repaired\" \"damaged, repaired → colony\"; on \"stalls\" a short coded copy-fork marker runs along the strand lens and halts at two kinks; on \"no colony\" \"many dimers: copying stalls → stops dividing → no colony\" (an empty agar patch, ringed grey); \"changed base copied, cell lives → colony (looks normal)\" with the terracotta \"?\" inside its colony icon. On \"survival\" a teal bracket groups rows 1, 2 and 4 with the label \"counted: survivors\", row 3 bracketed grey \"not counted\"; a terracotta tag under row 4: \"mutants hide here\". Once both brackets have drawn, the text of rows 1, 2 and 4 dims to grey (the bracket and tag carry them). Bright at the end: the teal bracket, the terracotta tag and row 3's \"no colony\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "ScribbleCircle",
+            "Cam lens zoom",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "who-collects": [
+        "adjust",
+        "step rail lights \"2 the fair test\".",
+        "Who collects the data: In this practical, a teacher collects the data, not students.",
+        "interlocked cabinet / analysis",
+        "On the spoken cues: Centre: `m6-uv-cabinet-closed-v1.png` (new plate: door shut, no light visible). On \"UVC\" a terracotta hazard tag writes beside it: \"UVC: the shortest-wavelength UV, used in germicidal lamps; burns skin and eyes\", with a grey tag \"trained staff only\". On \"interlocked cabinet\" a coded padlock-and-switch icon on the door's edge lights green with the gloss \"interlock: door open → lamp off\". On \"analysis\" the cabinet",
+        "explain",
+        "step rail lights \"2 the fair test\". Centre: `m6-uv-cabinet-closed-v1.png` (new plate: door shut, no light visible). On \"UVC\" a terracotta hazard tag writes beside it: \"UVC: the shortest-wavelength UV, used in germicidal lamps; burns skin and eyes\", with a grey tag \"trained staff only\". On \"interlocked cabinet\" a coded padlock-and-switch icon on the door's edge lights green with the gloss \"interlock: door open → lamp off\". On \"analysis\" the cabinet slides to the left and a coded data table outline (empty) draws in the right zone, with the corner tag \"teacher-prepared dataset (constructed example)\". Bright at the end: the interlock gloss and the empty table heading \"your job: the analysis\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "fair-test": [
+        "adjust",
+        "right zone: the variables card.",
+        "The fair test: The independent variable is exposure time: zero, fifteen, thirty, sixty and a hundred and twenty seconds.",
+        "exposure time / colonies / incubation",
+        "On the spoken cues: On \"exposure time\" row 1 writes \"independent: UV exposure time (s): 0, 15, 30, 60, 120\" (violet), with five small closed-cabinet timer chips \"0 s ... 120 s\". On \"colonies\" row 2 writes \"dependent: colonies per plate after 48 h at 30 °C\" (amber), linked by a pen line to a plate thumbnail. On \"Everything else\" row 3 opens \"controlled\" (green) and lists, one per spoken item, each with a pen link to its object: \"same",
+        "explain",
+        "right zone: the variables card. On \"exposure time\" row 1 writes \"independent: UV exposure time (s): 0, 15, 30, 60, 120\" (violet), with five small closed-cabinet timer chips \"0 s ... 120 s\". On \"colonies\" row 2 writes \"dependent: colonies per plate after 48 h at 30 °C\" (amber), linked by a pen line to a plate thumbnail. On \"Everything else\" row 3 opens \"controlled\" (green) and lists, one per spoken item, each with a pen link to its object: \"same yeast suspension\" (`m6-micropipette-spreader-v1.png`, new plate: its capped tube), \"100 µL per plate\" (the micropipette), \"same lamp, fixed 20 cm\" (the closed cabinet thumbnail), on \"incubation\" \"same incubation: 30 °C, 48 h, inverted\" and silent rows \"same agar batch, same plate size, same counting rule\" and \"kept in the dark, all plates (light lets cells repair UV damage)\". Bright at the end: the three row headings. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "control-same": [
+        "new",
+        "the variables card dims to a strip.",
+        "The control is handled the same: The zero second plates are the control.",
+        "control / UV",
+        "On the spoken cues: Centre: two plate outlines side by side, \"0 s control\" (outlined green) and \"60 s\", each with a coded lid lifting off and back on in step (coded motion inside a closed-cabinet outline; no lamp drawn, a small grey \"lamp off\" tag on the control and a violet \"60 s exposure\" tag on the other, the cabinet itself closed). A comparison strip writes under them: \"same: suspension, volume, lids off, time in cabinet,",
+        "explain",
+        "the variables card dims to a strip. Centre: two plate outlines side by side, \"0 s control\" (outlined green) and \"60 s\", each with a coded lid lifting off and back on in step (coded motion inside a closed-cabinet outline; no lamp drawn, a small grey \"lamp off\" tag on the control and a violet \"60 s exposure\" tag on the other, the cabinet itself closed). A comparison strip writes under them: \"same: suspension, volume, lids off, time in cabinet, incubation | different: UV only\". On \"UV\" the word \"UV only\" rings violet. On \"on the bench\" a ghost control plate slides out to a bench thumbnail and a chip \"control left on the bench\" fades in and takes a grey cross (caption \"then handling differs too\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "three-plates": [
+        "new",
+        "step rail lights \"3 the data\".",
+        "Three plates each: Each time has three plates, made the same way.",
+        "three / a hundred and forty two",
+        "On the spoken cues: Right zone: the data table writes: columns \"exposure (s) | plate 1 | plate 2 | plate 3 | mean\"; rows write in turn, the 0 s row first, cell by cell as spoken: \"0 | 133 | 144 | 149 |\"; on \"a hundred and forty two\" \"(133 + 144 + 149) ÷ 3 = 142\" writes in the mean cell (amber). Then the other rows write silently, one per beat: \"15 | 91 | 97 | 106 | 98\"; \"30 | 55 | 61 | 67 | 61\"; \"60 | 20 | 24 | 28 | 24\"; \"120 | 3 | 5 |",
+        "explain",
+        "step rail lights \"3 the data\". Right zone: the data table writes: columns \"exposure (s) | plate 1 | plate 2 | plate 3 | mean\"; rows write in turn, the 0 s row first, cell by cell as spoken: \"0 | 133 | 144 | 149 |\"; on \"a hundred and forty two\" \"(133 + 144 + 149) ÷ 3 = 142\" writes in the mean cell (amber). Then the other rows write silently, one per beat: \"15 | 91 | 97 | 106 | 98\"; \"30 | 55 | 61 | 67 | 61\"; \"60 | 20 | 24 | 28 | 24\"; \"120 | 3 | 5 | 7 | 5\". On \"slightly different number of cells\" a coded micropipette drop splits into three drops with slightly different dot counts (tag \"random sampling of cells\"). Bright at the end: the 0 s row, its mean and the tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "relative-survival": [
+        "new",
+        "step rail lights \"4 the analysis\".",
+        "Relative survival: To compare the times, turn each mean into a relative survival: the mean divided by the control mean, times a hundred.",
+        "relative survival / forty three point zero percent / three point five",
+        "On the spoken cues: The table gains a column \"relative survival (%)\". The formula writes above it: \"relative survival = mean ÷ control mean × 100\" with the gloss \"relative survival: a time's mean as a % of the control's mean\". The survival bar row draws beside the table: five bars, the 0 s bar full (100.0). On \"forty three point zero\" \"61 ÷ 142 × 100 = 43.0\" writes in the 30 s cell and its bar fills to 43 %; the 15 s and 60 s cells",
+        "explain",
+        "step rail lights \"4 the analysis\". The table gains a column \"relative survival (%)\". The formula writes above it: \"relative survival = mean ÷ control mean × 100\" with the gloss \"relative survival: a time's mean as a % of the control's mean\". The survival bar row draws beside the table: five bars, the 0 s bar full (100.0). On \"forty three point zero\" \"61 ÷ 142 × 100 = 43.0\" writes in the 30 s cell and its bar fills to 43 %; the 15 s and 60 s cells fill silently, \"69.0\" and \"16.9\"; on \"three point five\" \"5 ÷ 142 × 100 = 3.5\" writes and its bar fills to a sliver. Bright at the end: the formula, the 30 s working and the 3.5. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "graph": [
+        "new",
+        "the table shrinks to a strip.",
+        "Graph every plate: Graph exposure time on the x axis and relative survival on the y.",
+        "steeply / lower survival",
+        "On the spoken cues: Coded `lineGraph`: x \"UV exposure time (s)\", 0 to 120; y \"relative survival (%)\", 0 to 110. Means as larger amber points joined by a line: (0, 100.0), (15, 69.0), (30, 43.0), (60, 16.9), (120, 3.5). On \"every plate\" fifteen small grey points appear in groups of three (author table \"Plate points\"), and short range bars draw through each group. On \"steeply\" the first segment pulses and a tag writes \"first 15 s: about",
+        "explain",
+        "the table shrinks to a strip. Coded `lineGraph`: x \"UV exposure time (s)\", 0 to 120; y \"relative survival (%)\", 0 to 110. Means as larger amber points joined by a line: (0, 100.0), (15, 69.0), (30, 43.0), (60, 16.9), (120, 3.5). On \"every plate\" fifteen small grey points appear in groups of three (author table \"Plate points\"), and short range bars draw through each group. On \"steeply\" the first segment pulses and a tag writes \"first 15 s: about a third lost\"; the tail flattens with a tag \"levelling off towards zero\". On \"lower survival\" a teal summary line writes under the graph: \"longer exposure, lower survival (this lamp, 20 cm, this yeast)\". Bright at the end: the curve, the range bars and the summary line. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "supports": [
+        "new",
+        "step rail lights \"5 the conclusion\".",
+        "What it supports, and what it doesn't: So what do the data support?",
+        "mutated / lived",
+        "On the spoken cues: Right zone: the conclusion card with two columns. Left \"supported\" (teal): \"longer UVC exposure → lower survival (these yeast, this lamp, 20 cm)\". Right, on \"mutated\", \"not shown\" (terracotta): \"whether any survivors mutated\". The four-fates fork from scene 3 returns small under the card; on \"lived\" its \"mutants hide here\" tag pulses inside the survivors' bracket. A chip \"fewer colonies = more mutants\" fades in and",
+        "explain",
+        "step rail lights \"5 the conclusion\". Right zone: the conclusion card with two columns. Left \"supported\" (teal): \"longer UVC exposure → lower survival (these yeast, this lamp, 20 cm)\". Right, on \"mutated\", \"not shown\" (terracotta): \"whether any survivors mutated\". The four-fates fork from scene 3 returns small under the card; on \"lived\" its \"mutants hide here\" tag pulses inside the survivors' bracket. A chip \"fewer colonies = more mutants\" fades in and takes a grey cross (caption \"counts measure survival\"), with a grey tag \"as in the mutagens video\". Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "measure-mutation": [
+        "adjust",
+        "the survival plates slide off.",
+        "How you'd measure mutation: To measure mutation, you'd test the survivors for a new trait that's inherited.",
+        "survivors / rare / fraction of survivors / passed on",
+        "On the spoken cues: On \"rare\" a grey tag writes: \"induced mutants: about 1 in 10⁴ to 10⁶ survivors\". Centre left: `m6-agar-dish-top-v1.png` with the coded label \"selective medium: normal yeast can't grow\"; a coded micropipette drop lands and a faint cream stipple spreads across it, labelled \"about 2 × 10⁷ exposed cells (20 million)\"; a coded time bar \"48 h\"; the stipple fades and the dish cross-fades to",
+        "explain",
+        "the survival plates slide off. On \"rare\" a grey tag writes: \"induced mutants: about 1 in 10⁴ to 10⁶ survivors\". Centre left: `m6-agar-dish-top-v1.png` with the coded label \"selective medium: normal yeast can't grow\"; a coded micropipette drop lands and a faint cream stipple spreads across it, labelled \"about 2 × 10⁷ exposed cells (20 million)\"; a coded time bar \"48 h\"; the stipple fades and the dish cross-fades to `m6-yeast-selective-plate-v1.png` (new plate: the same dish, three small colonies). A grey tag \"like the antibiotic dish in the first video\" (dims). Centre right, smaller: `m6-yeast-plate-030s-v1.png` with the tag \"diluted, ordinary agar: count survivors\". On \"fraction of survivors\" a line writes: \"mutation frequency = mutant colonies ÷ survivors plated\", with a green chip \"compare with unexposed cells\" beside a ghost 0 s pair. On \"passed on\" a small copy of the selective plate thumbnail appears with an arrow \"regrow on selective medium\" and a tick, tag \"regrow: does the trait stay?\". A grey tag under all, silent: \"or look for a new colour among survivors (mutagens video)\". Bright at the end: the frequency line, the comparison chip and the regrow tick. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "adjust",
+        "step rail lights \"6 evaluate\".",
+        "Validity, reliability and accuracy: Validity: with one variable changed and a control handled the same way, the counts validly compare survival, but they aren't a valid measure of mutation.",
+        "Validity / Reliability / Accuracy / output",
+        "On the spoken cues: Three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what was intended? Survival: yes (one variable, same handling, lamp-off control). Mutation: no (survivors not tested).\" \"Reliability: repeats agree? 30 s plates: 55, 61, 67 (range 12, about what random sampling gives); means smooth chance variation.\" \"Accuracy: close",
+        "explain",
+        "step rail lights \"6 evaluate\". Three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what was intended? Survival: yes (one variable, same handling, lamp-off control). Mutation: no (survivors not tested).\" \"Reliability: repeats agree? 30 s plates: 55, 61, 67 (range 12, about what random sampling gives); means smooth chance variation.\" \"Accuracy: close to the true value? Count through the lid on a grid, tally each colony, a second counter; plates below about 30 colonies (60 s, 120 s) carry more chance variation.\" On \"Accuracy\" the colony count grid lays over `m6-yeast-plate-030s-v1.png` and tally marks tick across a few colonies. On \"output\" a small grey line writes: \"dose = lamp output at the plate × time; with a warmed-up, steady lamp, more time means more dose (lamps warm up and age)\". Footer, small grey: \"NESA glossary: reliability, the extent to which repeated observations and/or measurements taken under identical circumstances will yield similar results.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "tick",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"UVC from the cabinet lamp (non-ionising radiation; not a GHS chemical hazard)\" / \"skin burns and eye injury (photokeratitis) after a short exposure\" / \"trained staff only; interlocked cabinet (`m6-uv-cabinet-closed-v1.png` thumbnail); lamp off before the door opens; students analyse data\"; \"yeast, *Saccharomyces cerevisiae* (risk group 1)\" / \"low; possible irritation or allergy in sensitive people\" / \"aseptic technique; wash hands\"; on \"sealed\" \"contaminating microbes on grown plates (unknown, treat as potentially harmful)\" / \"infection or allergy if plates are opened\" / \"plates taped shut, counted through the lid, never opened; sterilised (autoclaved) before disposal (`m6-autoclave-bag-plates-v1.png`)\"; on \"flammable\" \"70 % ethanol for wiping benches (H225, flammable; many suppliers add H319, eye irritation)\" / \"fire; eye irritation\" / \"no flames nearby; small squeeze bottle; safety glasses if splashing\".",
+        "The risk assessment: The risk assessment.",
+        "sealed / flammable",
+        "On the spoken cues: Grey row: \"incubator 30 °C: low risk\". Footer chip: \"follow your school's risk assessment, its microbiology procedure and each bottle's safety data sheet\".",
+        "explain",
+        "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"UVC from the cabinet lamp (non-ionising radiation; not a GHS chemical hazard)\" / \"skin burns and eye injury (photokeratitis) after a short exposure\" / \"trained staff only; interlocked cabinet (`m6-uv-cabinet-closed-v1.png` thumbnail); lamp off before the door opens; students analyse data\"; \"yeast, *Saccharomyces cerevisiae* (risk group 1)\" / \"low; possible irritation or allergy in sensitive people\" / \"aseptic technique; wash hands\"; on \"sealed\" \"contaminating microbes on grown plates (unknown, treat as potentially harmful)\" / \"infection or allergy if plates are opened\" / \"plates taped shut, counted through the lid, never opened; sterilised (autoclaved) before disposal (`m6-autoclave-bag-plates-v1.png`)\"; on \"flammable\" \"70 % ethanol for wiping benches (H225, flammable; many suppliers add H319, eye irritation)\" / \"fire; eye irritation\" / \"no flames nearby; small squeeze bottle; safety glasses if splashing\". Grey row: \"incubator 30 °C: low risk\". Footer chip: \"follow your school's risk assessment, its microbiology procedure and each bottle's safety data sheet\". Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. In a repeat of this investigation,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"In a repeat of this investigation, yeast was spread on agar plates and exposed to UV light in a cabinet at a fixed distance. After incubation, the control plates (0 s) had 145, 151 and 160 colonies. The plates exposed for 45 s had 36, 41 and 46 colonies. Calculate the relative survival of the yeast at 45 s (mean colonies at 45 s as a percentage of the control mean). Show your working.\" Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no formula, no bars.",
+        [
+            "HandText write-on",
+            "bar fill",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "a hundred and fifty two / forty one / twenty seven point zero percent",
+        "On the spoken cues: On \"a hundred and fifty two\" \"145, 151 and 160\" is underlined and \"(145 + 151 + 160) ÷ 3 = 456 ÷ 3 = 152\" writes. On \"forty one\" \"36, 41 and 46\" is underlined and \"(36 + 41 + 46) ÷ 3 = 123 ÷ 3 = 41\" writes. On \"twenty seven point zero\" \"relative survival of the yeast at 45 s\" is underlined and \"41 ÷ 152 × 100 = 27.0 %\" writes in the answer box, with a small survival bar filling to 27 %. A chip \"73.0 %\" fades in and",
+        "explain",
+        "the question card shrinks to the top. On \"a hundred and fifty two\" \"145, 151 and 160\" is underlined and \"(145 + 151 + 160) ÷ 3 = 456 ÷ 3 = 152\" writes. On \"forty one\" \"36, 41 and 46\" is underlined and \"(36 + 41 + 46) ÷ 3 = 123 ÷ 3 = 41\" writes. On \"twenty seven point zero\" \"relative survival of the yeast at 45 s\" is underlined and \"41 ÷ 152 × 100 = 27.0 %\" writes in the answer box, with a small survival bar filling to 27 %. A chip \"73.0 %\" fades in and is crossed (caption \"that's the share lost, not survival\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student repeated the investigation.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. To have more colonies to count",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student repeated the investigation. To have more colonies to count at 120 s, she spread the 120 s plates with a yeast suspension ten times as concentrated as the one used for all other plates. The control plates (0 s) had a mean of 142 colonies and the 120 s plates had a mean of 52 colonies. She reported a relative survival of 36.6 % at 120 s. Evaluate her result.\" Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "on \"ten times\" \"ten times as concentrated\" is underlined and a comparison strip writes: \"120 s plates: 10 × the cells | all other plates: 1 ×\" with a terracotta tag \"two variables changed: time and cells plated\".",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "ten times / three point seven / correcting",
+        "On the spoken cues: On \"three point seven\" \"a mean of 52 colonies\" and \"a mean of 142 colonies\" are underlined and the lines write: \"52 ÷ 10 ≈ 5.2 colonies per standard plate\" and \"5.2 ÷ 142 × 100 ≈ 3.7 %\", with a grey tag \"main data: 3.5 %\". On \"correcting\" a chip \"36.6 % survival\" fades in and is crossed (caption \"different numbers of cells plated, not corrected\"), and a small grey line writes: \"fair fix: same suspension for every",
+        "explain",
+        "on \"ten times\" \"ten times as concentrated\" is underlined and a comparison strip writes: \"120 s plates: 10 × the cells | all other plates: 1 ×\" with a terracotta tag \"two variables changed: time and cells plated\". On \"three point seven\" \"a mean of 52 colonies\" and \"a mean of 142 colonies\" are underlined and the lines write: \"52 ÷ 10 ≈ 5.2 colonies per standard plate\" and \"5.2 ÷ 142 × 100 ≈ 3.7 %\", with a grey tag \"main data: 3.5 %\". On \"correcting\" a chip \"36.6 % survival\" fades in and is crossed (caption \"different numbers of cells plated, not corrected\"), and a small grey line writes: \"fair fix: same suspension for every plate, or correct for the cells plated\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 One independent variable; control handled the same (lamp off).\"",
+        "Decision rule and handoff: So, to analyse a survival investigation: change one variable, handle the control the same way, use repeats, turn means into relative survival, and graph every plate.",
+        "Next",
+        "On the spoken cues: \"2 Three plates per time; means.\" \"3 Relative survival = mean ÷ control mean × 100.\" \"4 Graph means and every plate.\" \"5 Claim what was measured: survival, not mutation.\" On \"Next\" a chip \"Next: what one changed base can do to a protein\" appears.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 One independent variable; control handled the same (lamp off).\" \"2 Three plates per time; means.\" \"3 Relative survival = mean ÷ control mean × 100.\" \"4 Graph means and every plate.\" \"5 Claim what was measured: survival, not mutation.\" On \"Next\" a chip \"Next: what one changed base can do to a protein\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B01_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. `m7-fleming-mould-plate-v1.png` (new) sits centre, large.",
+        "Hook (one drug, many pathogens): In 1928, Alexander Fleming noticed a mould growing on one of his culture dishes.",
+        "a mould growing / the bacteria had died, leaving a clear ring / That mould led to penicillin / does nothing for the flu / what makes a disease infectious",
+        "On the spoken cues: On \"a mould growing\" a thin scribble rings the blue-green mould colony; on \"the bacteria had died, leaving a clear ring\" a coded dashed circle traces the clear zone and the small bacterial colonies near it fade slightly (grey tag \"1928: a clear ring around the mould\"). On \"That mould led to",
+        "explain",
+        "no people. `m7-fleming-mould-plate-v1.png` (new) sits centre, large. On \"a mould growing\" a thin scribble rings the blue-green mould colony; on \"the bacteria had died, leaving a clear ring\" a coded dashed circle traces the clear zone and the small bacterial colonies near it fade slightly (grey tag \"1928: a clear ring around the mould\"). On \"That mould led to penicillin\" the dish shrinks to the upper left with a small grey tag \"penicillin\". On \"does nothing for the flu\" four plates write in a row, one per word: `m7-virus-particle-v1.png` (tag \"flu (a virus)\", so the plate stands for the group, not the strain), `m7-fungal-hyphae-v1.png` (tag \"tinea\"), `m7-plasmodium-red-cell-v1.png` (tag \"malaria\"), `m7-tapeworm-v1.png` (tag \"tapeworm\"); a thin grey arrow from \"penicillin\" to each takes a small grey cross as it lands. On \"what makes a disease infectious\" the tags fade and the heading writes on: \"What kind of pathogen is it?\" Hold about two seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "infectious-pathogen-host": [
+        "adjust",
+        "the hook clears.",
+        "Infectious, pathogen, host: An infectious disease is caused by a pathogen, an organism or agent that lives in or on another organism, its host, and harms it.",
+        "infectious / pathogen / host",
+        "On the spoken cues: The definition writes on: \"Infectious disease: caused by a pathogen; most can pass between hosts.\" On \"a pathogen\" `m7-tb-bacilli-v1.png` (new) appears small with the gloss \"pathogen: an organism or agent that lives in or on a host and harms it\"; on \"its host\" one coded host circle appears with the",
+        "explain",
+        "the hook clears. The definition writes on: \"Infectious disease: caused by a pathogen; most can pass between hosts.\" On \"a pathogen\" `m7-tb-bacilli-v1.png` (new) appears small with the gloss \"pathogen: an organism or agent that lives in or on a host and harms it\"; on \"its host\" one coded host circle appears with the bacilli glyph moving into it (gloss \"host: the organism it lives in or on\", replacing the pathogen gloss). On \"pass from one host to the next\" the `HostCircles` row draws: five circles, the glyph jumping circle to circle along coded arrows (tag \"it can spread\"). On \"Tuberculosis is infectious\" the left half holds that row with the label \"tuberculosis: a bacterium\". On \"Type 2 diabetes isn't\" a second row of five circles draws on the right, each with a small grey inner mark and no arrows between them (label \"type 2 diabetes: genes and lifestyle, no pathogen\"). The definition dims to grey. On \"most microbes aren't pathogens\" both rows fade and a field of about thirty `b6a-bacterium-v1.png` glyphs fills the lower half, all grey-teal, two of them marked with a small amber coded ring as the pathogens (no tint over the plate glyphs; tag \"most microbes: harmless or helpful\"). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "made-of-cells": [
+        "adjust",
+        "the bacterium field clears.",
+        "The first question: is it made of cells?: Biologists sort pathogens with a few questions.",
+        "microorganisms / macroorganisms / non-cellular",
+        "On the spoken cues: The `SorterTree` root writes on at the top: \"pathogen\". On \"is it made of cells?\" the first fork draws with the question on it in small amber handwriting. On \"microorganisms\" the left branch draws and three empty leaf slots appear under it, headed \"bacteria\", \"fungi\", \"protozoa\"; small thumbnails",
+        "explain",
+        "the bacterium field clears. The `SorterTree` root writes on at the top: \"pathogen\". On \"is it made of cells?\" the first fork draws with the question on it in small amber handwriting. On \"microorganisms\" the left branch draws and three empty leaf slots appear under it, headed \"bacteria\", \"fungi\", \"protozoa\"; small thumbnails slide into them (`m7-tb-bacilli-v1.png`, `m7-fungal-hyphae-v1.png`, `m7-plasmodium-red-cell-v1.png`); the branch label reads \"microorganisms: single cells or threads\". On \"macroorganisms\" the centre branch draws with two leaves, \"helminths\" (`m7-tapeworm-v1.png`) and \"ectoparasites\" (`m7-tick-vector-v1.png`); label \"macroorganisms: many-celled animals\"; the left branch label dims to grey. On \"non-cellular\" the right branch draws with three leaves, \"viruses\" (`m7-virus-particle-v1.png`), \"viroids\" (`m7-viroid-rna-v1.png`, new) and \"prions\" (`m7-prion-folded-protein-v1.png`); label \"non-cellular: not cells, multiply only inside a host\"; the centre label dims. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "microorganisms": [
+        "adjust",
+        "the tree shrinks to a grey thumbnail at the upper left with the microorganism branch lit.",
+        "Microorganisms: does it have a nucleus?: Inside the microorganisms, ask a second question: does the cell have a nucleus?",
+        "bacterium / Fungi / protozoa",
+        "On the spoken cues: The second question writes small in amber: \"nucleus?\" On \"A bacterium doesn't\" `m7-tb-bacilli-v1.png` fills the left half; a coded inset outline of one rod shows a DNA loop lying in the cytoplasm, with no nucleus (grey tag \"prokaryote: no nucleus\", recalled from b06a); on \"a wall containing ...",
+        "explain",
+        "the tree shrinks to a grey thumbnail at the upper left with the microorganism branch lit. The second question writes small in amber: \"nucleus?\" On \"A bacterium doesn't\" `m7-tb-bacilli-v1.png` fills the left half; a coded inset outline of one rod shows a DNA loop lying in the cytoplasm, with no nucleus (grey tag \"prokaryote: no nucleus\", recalled from b06a); on \"a wall containing ... peptidoglycan\" the rod's outline pulses (tag \"wall: peptidoglycan\", replacing the prokaryote tag). On \"a few thousandths of a millimetre\" the `SizeRuler` draws along the lower edge, labelled \"a few thousandths of a mm\" under the rod. On \"Fungi and protozoa do have a nucleus\" the rod slides left and a grey tag \"eukaryotes: have a nucleus\" writes beside the next two plates. On \"Fungi grow as threads\" `m7-fungal-hyphae-v1.png` appears (tag \"threads (hyphae) and spores\"; on \"chitin\" the tag extends \"wall contains chitin\"); on \"Tinea\" a small grey tag \"tinea: a fungal skin infection\" replaces it. On \"Protozoa are single cells\" `m7-plasmodium-red-cell-v1.png` appears at the right; on \"inside red blood cells\" the parasite inside the cell is ringed (the rod beside the red cell pairing moves to the start of scene 6, so nothing appears here without a spoken referent) (tag \"Plasmodium: inside red blood cells\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "macroorganisms": [
+        "adjust",
+        "the camera pulls back fast (a coded zoom-out sweep; the ruler relabels \"metres\").",
+        "Macroorganisms: Macroorganisms are parasitic animals.",
+        "Helminths / ectoparasites",
+        "On the spoken cues: On \"Helminths\" `m7-tapeworm-v1.png` stretches across the frame at its own proportions (scaled, never stretched; the plate's long body runs across the width) with a coded scribble ring on the head end (tag \"hooks onto the gut wall\"); on \"several metres\" the ruler shows a bracket \"up to several",
+        "explain",
+        "the camera pulls back fast (a coded zoom-out sweep; the ruler relabels \"metres\"). On \"Helminths\" `m7-tapeworm-v1.png` stretches across the frame at its own proportions (scaled, never stretched; the plate's long body runs across the width) with a coded scribble ring on the head end (tag \"hooks onto the gut wall\"); on \"several metres\" the ruler shows a bracket \"up to several metres\". On \"Others live on the outside\" the camera zooms in a thousand times (ruler relabels \"millimetres\") and `m7-tick-vector-v1.png` appears (tag \"tick: a few millimetres\"). On \"Ecto means outside\" two short handwritten chips write one per cue: \"ecto- = outside: ticks, lice\" (beside the tick) and \"endo- = inside: tapeworms\" (beside a small tapeworm thumbnail). The macroorganism leaves on the tree thumbnail pulse. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Cam lens zoom",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "viruses": [
+        "adjust",
+        "on \"Now zoom in to a smaller example\" the TB rod plate is drawn beside the red blood cell **at true relative scale** (a rod about 3 thousandths of a mm against a red cell about 7.5 thousandths of a mm, so the rod is roughly half the cell's width; ruler relabels \"thousandths of a mm\"), then the camera zooms in past the red blood cell to the rod.",
+        "Viruses: not cells: Now zoom in to a smaller example.",
+        "virus",
+        "On the spoken cues: On \"A virus\" `m7-virus-particle-v1.png` fills the right half; on \"genetic material\" its coiled genome is ringed (tag \"DNA or RNA\"); on \"protein coat\" the coat outline pulses (tag \"protein coat\", replacing the genome tag). On \"no cytoplasm and no ribosomes\" a short grey chip \"no cytoplasm, no",
+        "explain",
+        "on \"Now zoom in to a smaller example\" the TB rod plate is drawn beside the red blood cell **at true relative scale** (a rod about 3 thousandths of a mm against a red cell about 7.5 thousandths of a mm, so the rod is roughly half the cell's width; ruler relabels \"thousandths of a mm\"), then the camera zooms in past the red blood cell to the rod. On \"A virus\" `m7-virus-particle-v1.png` fills the right half; on \"genetic material\" its coiled genome is ringed (tag \"DNA or RNA\"); on \"protein coat\" the coat outline pulses (tag \"protein coat\", replacing the genome tag). On \"no cytoplasm and no ribosomes\" a short grey chip \"no cytoplasm, no ribosomes\" writes and dims. On \"makes that cell build new viruses\" `m5x-cell-protein-synthesis-v1.png` appears small with one virus glyph entering and five leaving (tag \"the host cell builds new viruses\"). On \"about a ten-thousandth of a millimetre\" the cell plate fades, the ruler relabels \"ten-thousandths of a mm\", and the virus is redrawn beside one TB rod **at true relative scale** (about 0.1 thousandths of a mm against about 3, so roughly thirty viruses along the rod; a dotted row of virus glyphs runs along the rod on \"dozens would fit\"). On \"tobacco mosaic virus\" `m7-tmv-particle-v1.png` (new) appears beside the coronavirus at true relative scale (a rod about 300 by 18 millionths of a mm against a sphere about 100 across) with the tag \"tobacco mosaic virus: a rod of RNA in a protein coat\". At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "viroids-and-prions": [
+        "adjust",
+        "on \"easy to mix up\" the two halves open.",
+        "Viroids and prions: Two non-cellular pathogens are even simpler, and easy to mix up.",
+        "viroid / prion",
+        "On the spoken cues: The left half shows `m7-viroid-rna-v1.png` (new) beside a virus glyph at true relative scale (the viroid is a short rod-like circle, a fraction of the virus's width), with the tag \"viroid: RNA only, no coat\". On \"potato tubers\" the aligned pair `m7-potato-tuber-normal-v1.png` and",
+        "explain",
+        "on \"easy to mix up\" the two halves open. The left half shows `m7-viroid-rna-v1.png` (new) beside a virus glyph at true relative scale (the viroid is a short rod-like circle, a fraction of the virus's width), with the tag \"viroid: RNA only, no coat\". On \"potato tubers\" the aligned pair `m7-potato-tuber-normal-v1.png` and `m7-potato-tuber-spindle-v1.png` (both new) appear small below, normal first, then crossfading to the spindle tuber (tag \"potato spindle tuber viroid\"). On \"A prion is the opposite\" the right half shows `m7-prion-folded-protein-v1.png` on its own, not paired with the virus, with the tag \"prion: protein only, no DNA or RNA\" and a small grey tag beneath, \"one protein molecule: far smaller than a virus\" (the viroid tag dims). On \"a normal protein\" `m7-prion-normal-protein-v1.png` (new, aligned to the prion plate) appears beside it, labelled small \"normal form\". On \"makes them fold the same wrong way\" the `MisfoldSpread` runs: a row of five normal-form copies; the misfolded plate touches the first, which crossfades to the misfolded form, then the next, and so on, one at a time (tag \"one misfolded protein converts the next\"). On \"like one bad apple\" a small grey chip \"the bad apple\" writes and dims. On \"mad cow disease\" `b3b-dairy-cow-side-v1.png` appears small (tag \"BSE: mad cow disease\"). On \"a viroid is RNA only\" two handwritten lines write one per cue under the halves: \"viroid: RNA only\" and \"prion: protein only\", each with its plate thumbnail; the other tags fade. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "plant-hosts": [
+        "adjust",
+        "the full `SorterTree` returns at medium size.",
+        "Plants are hosts too: Plants are hosts too, and most of the same groups attack them.",
+        "crown gall / wheat stem rust / root-knot nematodes / two exceptions",
+        "On the spoken cues: Beside each leaf a small plant slot opens, filled one per cue: on \"crown gall\" `m7-crown-gall-stem-v1.png` (new) beside \"bacteria\" (tag \"crown gall: a swelling at the stem base\"); on \"wheat stem rust\" `b3b-wheat-rust-leaf-v1.png` beside \"fungi\" (tag \"wheat stem rust\"); on \"root-knot nematodes\"",
+        "explain",
+        "the full `SorterTree` returns at medium size. Beside each leaf a small plant slot opens, filled one per cue: on \"crown gall\" `m7-crown-gall-stem-v1.png` (new) beside \"bacteria\" (tag \"crown gall: a swelling at the stem base\"); on \"wheat stem rust\" `b3b-wheat-rust-leaf-v1.png` beside \"fungi\" (tag \"wheat stem rust\"); on \"root-knot nematodes\" `m7-root-knot-galls-v1.png` (new) beside \"helminths\" (tag \"root-knot nematodes: tiny roundworms\"); as the nematode tag dims, the protozoa slot shows, silently, only a small grey tag \"rare in plants (e.g. Phytomonas in palms)\" (the spoken sentence was cut for length in Revision 2); the virus slot holds a small `m7-tmv-particle-v1.png` silently. Earlier tags dim to grey as each new one lands. On \"two exceptions\" the viroid leaf's plant slot fills with the spindle tuber thumbnail and its animal side shows a grey dash; the prion leaf's animal side shows the cow thumbnail and its plant slot a grey dash (chips \"viroids: known in plants\", \"prions: known in animals\"). At most three bright text items. Hold one second.",
+        [
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "treatment": [
+        "adjust",
+        "the tree stays; plant slots dim to grey.",
+        "Why the group decides treatment: So why does the group matter so much?",
+        "something the pathogen has and the host doesn't / Antibiotics / peptidoglycan wall and ribosomes shaped differently from ours / A virus has neither / antifungals and antimalarials / no known cure",
+        "On the spoken cues: On \"something the pathogen has and the host doesn't\" a short chip writes at the top: \"target: something the pathogen has, the host doesn't\". On \"Antibiotics\" the Fleming dish thumbnail returns small and a treatment chip \"antibiotics\" attaches under the bacteria leaf; on \"peptidoglycan wall and",
+        "explain",
+        "the tree stays; plant slots dim to grey. On \"something the pathogen has and the host doesn't\" a short chip writes at the top: \"target: something the pathogen has, the host doesn't\". On \"Antibiotics\" the Fleming dish thumbnail returns small and a treatment chip \"antibiotics\" attaches under the bacteria leaf; on \"peptidoglycan wall and ribosomes shaped differently from ours\" a generic `b6a-bacterium-v1.png` glyph (no species named) appears beside the bacteria leaf and its wall outline and small coded ribosome dots pulse amber (tag \"targets: wall, bacterial-type ribosomes\"). The TB rod is not used for penicillin's target, because *Mycobacterium* resists penicillin. The leaf chip reads \"antibiotics\", not \"penicillin\". On \"A virus has neither\" a grey arrow from \"antibiotics\" to the viruses leaf takes a grey cross (tag \"flu: a virus, so no effect\", replacing the targets tag). On \"antifungals and antimalarials\" chips attach under fungi (\"antifungals\") and protozoa (\"antimalarials\"), with a small grey tag \"eukaryotes like us: harder to target\". As the antimalarials chip lands, the chip \"anthelmintics: worm drugs\" attaches silently under helminths. On \"no known cure\" the prions leaf gains a grey chip \"no known cure\". The chip at the top dims as the last chips land. At most three bright text items besides the small chips. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the tree dims and four question chips write in a column down its left edge, one per cue, each lighting the fork it decides: \"made of cells?\" (first fork), \"many-celled animal?\" (macro against micro), \"nucleus?\" (bacteria against fungi and protozoa), \"RNA only, protein only, or genes in a coat?\" (viroid, prion, virus).",
+        "Memory: Sort any pathogen in order.",
+        "not a cell means antibiotics are useless",
+        "On the spoken cues: On \"not a cell means antibiotics are useless\" one handwritten line writes on large across the lower third, with the non-cellular branch pulsing and the \"antibiotics\" chip crossed beside it. Hold half a second.",
+        "explain",
+        "the tree dims and four question chips write in a column down its left edge, one per cue, each lighting the fork it decides: \"made of cells?\" (first fork), \"many-celled animal?\" (macro against micro), \"nucleus?\" (bacteria against fungi and protozoa), \"RNA only, protein only, or genes in a coat?\" (viroid, prion, virus). On \"not a cell means antibiotics are useless\" one handwritten line writes on large across the lower third, with the non-cellular branch pulsing and the \"antibiotics\" chip crossed beside it. Hold half a second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (three agents)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First. Three agents were",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (three agents))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Three disease-causing agents were isolated from infected organisms.\" A small three-row table: \"Agent P: a single cell with its own nucleus and no cell wall, found inside the red blood cells of a wild bird\"; \"Agent Q: a small circular RNA molecule with no protein coat, isolated from deformed potato tubers\"; \"Agent R: a flat, segmented worm about 2 m long, attached to the intestine wall of a dog\". Demand: \"Classify each agent as a type of pathogen. Justify each classification. (3 marks)\". One lined answer box. No plates and nothing answer-bearing: no tree, leaves or thumbnails. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "adjust",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "P is a protozoan / Q is a viroid / R is a helminth / the classic mistake / a virus has a protein coat",
+        "On the spoken cues: A three-row `AnsTable` fills one row per cue: on \"P is a protozoan\" \"a single cell\", \"with its own nucleus\" and \"no cell wall\" underline amber and the row \"P: protozoan (microorganism): one cell, nucleus, no wall\" fills, with `m7-plasmodium-red-cell-v1.png` small at its end; on \"Q is a viroid\"",
+        "explain",
+        "the card shrinks to a strip at the top. A three-row `AnsTable` fills one row per cue: on \"P is a protozoan\" \"a single cell\", \"with its own nucleus\" and \"no cell wall\" underline amber and the row \"P: protozoan (microorganism): one cell, nucleus, no wall\" fills, with `m7-plasmodium-red-cell-v1.png` small at its end; on \"Q is a viroid\" \"circular RNA\" and \"no protein coat\" underline and the row \"Q: viroid (non-cellular): RNA only\" fills, with the viroid thumbnail; on \"R is a helminth\" \"segmented worm\" and \"2 m long\" underline and the row \"R: helminth (macroorganism): many-celled animal\" fills, with the tapeworm thumbnail. The first two rows dim as the third fills. On \"the classic mistake\" the chip \"Q is a small virus\" writes on and takes a grey scribble cross, with the small grey reason \"a virus has a protein coat\". Settle on the table for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "adjust",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b3b-dairy-cow-side-v1.png` small at its upper left (the host only; no pathogen plate).",
+        "Unseen transfer task (attempt two (two cattle diseases)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. Bovine tuberculosis is caused by a rod-shaped",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two cattle diseases))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b3b-dairy-cow-side-v1.png` small at its upper left (the host only; no pathogen plate). Stem: \"Bovine tuberculosis is caused by *Mycobacterium bovis*, a rod-shaped bacterium. Bovine spongiform encephalopathy (BSE) is caused by a prion.\" Demand: \"Explain why an antibiotic could act on the pathogen that causes one of these diseases but not on the other. (3 marks)\". One lined answer box. Nothing answer-bearing: no tree or chips. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "the tuberculosis bacterium / bacterial ribosomes and the enzymes that build its wall / misfolded protein / nothing to act on / the classic mistake",
+        "On the spoken cues: A two-column comparison writes beneath it, headings \"bovine TB\" and \"BSE\": on \"the tuberculosis bacterium\" \"rod-shaped bacterium\" underlines amber and the left column fills \"prokaryotic cell\" with the TB rod thumbnail; on \"bacterial ribosomes and the enzymes that build its wall\" a row \"antibiotic",
+        "explain",
+        "the card shrinks to a strip. A two-column comparison writes beneath it, headings \"bovine TB\" and \"BSE\": on \"the tuberculosis bacterium\" \"rod-shaped bacterium\" underlines amber and the left column fills \"prokaryotic cell\" with the TB rod thumbnail; on \"bacterial ribosomes and the enzymes that build its wall\" a row \"antibiotic targets\" fills \"bacterial ribosomes, wall-building enzymes\" with a small amber tick; on \"misfolded protein\" \"a prion\" underlines and the right column fills \"misfolded protein: no cell\" with the prion thumbnail; on \"nothing to act on\" the targets row fills \"none\" with a grey cross. On \"the classic mistake\" the chip \"the prion is too small for the drug to reach\" writes on and takes a grey scribble cross. Settle on the comparison for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "three step chips write on in a column, one per cue: \"a pathogen, or something else?\", \"sort it: cells? many-celled animal? nucleus? what is it made of?\", \"its group predicts the treatment\".",
+        "Decision rule and handoff: So when a question names a disease, first ask what causes it: a pathogen, or something else.",
+        "So when a question names a disease, first",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how Pasteur and Koch linked microbes to disease\" (small `m7-tb-bacilli-v1.png` thumbnail). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on in a column, one per cue: \"a pathogen, or something else?\", \"sort it: cells? many-celled animal? nucleus? what is it made of?\", \"its group predicts the treatment\". A \"Next\" chip slides in at the lower right: \"Next: how Pasteur and Koch linked microbes to disease\" (small `m7-tb-bacilli-v1.png` thumbnail). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B02_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. `m7-straight-neck-flask-clear-v1.png` (new) sits centre; on \"turns cloudy\" it crossfades to its aligned partner `m7-straight-neck-flask-cloudy-v1.png` (new) while a small `GrowthCounter` inset in the corner multiplies from a few glyphs to a crowd (grey tag \"a few days\").",
+        "Hook (cloudy broth): Leave some broth out for a few days, and it turns cloudy with microbes.",
+        "turns cloudy / sprang from the broth itself / disease came from bad air / Louis Pasteur / Robert Koch / how did their experiments establish germ theory?",
+        "On the spoken cues: On \"sprang from the broth itself\" small coded glyphs pop up out of the broth surface with a grey question mark (tag \"life from broth?\"). On \"disease came from bad air\" a faint coded grey haze drifts across the upper half (tag \"disease from bad air?\", replacing the first tag). On \"Louis Pasteur\" the",
+        "explain",
+        "no people. `m7-straight-neck-flask-clear-v1.png` (new) sits centre; on \"turns cloudy\" it crossfades to its aligned partner `m7-straight-neck-flask-cloudy-v1.png` (new) while a small `GrowthCounter` inset in the corner multiplies from a few glyphs to a crowd (grey tag \"a few days\"). On \"sprang from the broth itself\" small coded glyphs pop up out of the broth surface with a grey question mark (tag \"life from broth?\"). On \"disease came from bad air\" a faint coded grey haze drifts across the upper half (tag \"disease from bad air?\", replacing the first tag). On \"Louis Pasteur\" the haze clears and `m7-swan-neck-flask-clear-v1.png` (new) slides in at the left with a small grey tag \"Pasteur, around 1860\". On \"Robert Koch\" `m7-tb-bacilli-v1.png` (from b01) appears small at the right with a grey tag \"Koch: one microbe, one disease\". On \"how did their experiments establish germ theory?\" the tags fade and the heading writes on: \"How do you prove a microbe causes a disease?\" Hold about two seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "old-ideas": [
+        "new",
+        "the hook clears.",
+        "Two old ideas, and what germ theory needed: Two older ideas stood in the way.",
+        "Spontaneous generation / Miasma / Germ theory",
+        "On the spoken cues: Two old-idea chips write on, one per cue, each with its small picture: on \"Spontaneous generation\" the cloudy flask thumbnail with popping glyphs, chip \"spontaneous generation: life from non-living matter\"; on \"Miasma\" the coded grey haze over a small heap outline (coded, abstract), chip \"miasma:",
+        "explain",
+        "the hook clears. Two old-idea chips write on, one per cue, each with its small picture: on \"Spontaneous generation\" the cloudy flask thumbnail with popping glyphs, chip \"spontaneous generation: life from non-living matter\"; on \"Miasma\" the coded grey haze over a small heap outline (coded, abstract), chip \"miasma: disease from bad air\". Both chips dim to grey. On \"Germ theory\" a third chip writes, amber: \"germ theory: pathogens cause infectious disease; microbes come from microbes\", with b01's `HostCircles` glyph jumping between two circles. On \"two things\" the `EvidenceBench` draws: a banner with two questions that write one per cue, \"1. Where do microbes come from?\" (on \"don't arise from the broth itself\") and \"2. Which microbe causes which disease?\" (on \"a specific microbe causes a specific disease\"), each heading an empty bay. The old-idea chips fade fully. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "pasteur-setup": [
+        "adjust",
+        "the left bay expands; the right bay dims to grey.",
+        "Pasteur's set-up: Pasteur filled flasks with nutrient broth, then heated each neck and bent it into a long S-shaped curve, like a swan's neck.",
+        "filled flasks with nutrient broth / bent it into a long S-shaped curve / boiled the broth / air could flow in and out / heavier than air / settled in the low bend",
+        "On the spoken cues: On \"filled flasks with nutrient broth\" `m7-swan-neck-flask-clear-v1.png` appears large (tag \"nutrient broth\"). On \"bent it into a long S-shaped curve\" a coded amber line traces the neck's curve from the bulb to the open tip (tag \"swan neck: open at the end\"). On \"boiled the broth\"",
+        "explain",
+        "the left bay expands; the right bay dims to grey. On \"filled flasks with nutrient broth\" `m7-swan-neck-flask-clear-v1.png` appears large (tag \"nutrient broth\"). On \"bent it into a long S-shaped curve\" a coded amber line traces the neck's curve from the bulb to the open tip (tag \"swan neck: open at the end\"). On \"boiled the broth\" `m5x-bunsen-burner-v1.png` slides under the flask at proportional scale, and `SteamWisps` rise from the neck tip briefly (tag \"boiled: microbes killed\", replacing the previous tag); the burner then slides away. On \"air could flow in and out\" thin coded pale-blue arrows move in and out along the whole neck (chip \"air in\"). On \"heavier than air\" the specks are drawn slightly larger and darker than the air arrows. On \"settled in the low bend\" `DustPath` runs: small grey and teal specks drift in at the tip, slow as the air slows in the curve, and drop to the lowest point of the bend, where the plate's painted dust specks sit; a thin scribble rings that point (chip \"microbes trapped\", so the bay label reads \"air in, microbes trapped\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "clear-broth": [
+        "adjust",
+        "the swan-neck flask stays clear; a small grey clock tag \"months\" sweeps beside it and the `GrowthCounter` inset stays empty.",
+        "Clear broth, with air: The broth stayed clear, with no growth, for months.",
+        "supporters of spontaneous generation argued / the air could still reach the broth / Boiled broth in flasks with short, straight necks / turned cloudy within days",
+        "On the spoken cues: On \"supporters of spontaneous generation argued\" a grey chip writes: \"objection: boiling or sealing destroys or shuts out something in the air\". On \"the air could still reach the broth\" the pale-blue air arrows pulse along the open neck again and the objection chip takes a grey scribble cross. On",
+        "explain",
+        "the swan-neck flask stays clear; a small grey clock tag \"months\" sweeps beside it and the `GrowthCounter` inset stays empty. On \"supporters of spontaneous generation argued\" a grey chip writes: \"objection: boiling or sealing destroys or shuts out something in the air\". On \"the air could still reach the broth\" the pale-blue air arrows pulse along the open neck again and the objection chip takes a grey scribble cross. On \"Boiled broth in flasks with short, straight necks\" `m7-straight-neck-flask-clear-v1.png` appears to the right at the same scale, with a brief `SteamWisps` flick over its neck (it was boiled too); `DustPath` specks fall straight down its neck into the broth; on \"turned cloudy within days\" it crossfades to `m7-straight-neck-flask-cloudy-v1.png` and its own small growth inset fills (tag \"open to dust: cloudy in days\"). The months tag dims. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "break-the-neck": [
+        "adjust",
+        "the straight-neck pair shrinks to a grey thumbnail.",
+        "The critical step: break the neck: Then came the critical step.",
+        "broke the neck off / Within days, the same broth turned cloudy / Same broth, same air / The only difference / from the air, not from the broth itself",
+        "On the spoken cues: On \"broke the neck off\" the swan-neck flask crossfades to its aligned partner `m7-swan-neck-flask-broken-clear-v1.png` (new), a short coded crack line flashing at the break (tag \"neck broken\"); `DustPath` specks now fall straight into the broth. On \"Within days, the same broth turned cloudy\" it",
+        "explain",
+        "the straight-neck pair shrinks to a grey thumbnail. On \"broke the neck off\" the swan-neck flask crossfades to its aligned partner `m7-swan-neck-flask-broken-clear-v1.png` (new), a short coded crack line flashing at the break (tag \"neck broken\"); `DustPath` specks now fall straight into the broth. On \"Within days, the same broth turned cloudy\" it crossfades to `m7-swan-neck-flask-broken-cloudy-v1.png` (new) and the growth inset fills (tag \"same broth: cloudy\", replacing \"neck broken\"). On \"Same broth, same air\" the intact clear flask thumbnail returns beside the broken cloudy one, and two short grey labels write under both: \"same broth\", \"same air\". On \"The only difference\" a single amber bracket joins the two necks, labelled \"can particles reach the broth?\" On \"from the air, not from the broth itself\" a short handwritten line writes across the bay: \"Microbes come from microbes.\" At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "what-pasteur-showed": [
+        "new",
+        "the three flask states sit in a row, small (intact clear, straight cloudy, broken cloudy).",
+        "What Pasteur showed, and what he didn't: In exam terms, the independent variable was whether airborne particles could reach the broth.",
+        "independent variable / dependent variable / kept the same / microbes come from other microbes / boiling, sterilising and covering food / didn't link any particular microbe to a disease",
+        "On the spoken cues: On \"independent variable\" a grey label \"IV: can particles reach the broth?\" writes under the row with the necks ringed; on \"dependent variable\" \"DV: growth (cloudiness)\" writes with the broths ringed; on \"kept the same\" \"controlled: broth, boiling, air\" writes. The three labels stay small and grey",
+        "explain",
+        "the three flask states sit in a row, small (intact clear, straight cloudy, broken cloudy). On \"independent variable\" a grey label \"IV: can particles reach the broth?\" writes under the row with the necks ringed; on \"dependent variable\" \"DV: growth (cloudiness)\" writes with the broths ringed; on \"kept the same\" \"controlled: broth, boiling, air\" writes. The three labels stay small and grey after writing; only the newest is bright. On \"microbes come from other microbes\" the bay's question 1 in the banner gains an amber tick. On \"boiling, sterilising and covering food\" three tiny grey tags write in a row and dim (\"boil\", \"sterilise\", \"cover\"). On \"didn't link any particular microbe to a disease\" question 2 in the banner pulses with a grey dash beside it; a grey chip \"Pasteur proved germs cause disease?\" writes and takes a grey scribble cross. On \"That was Koch's job\" the left bay dims and the right bay brightens. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "koch-find-grow": [
+        "adjust",
+        "the right bay expands into its four step bays, labelled small \"find it\", \"grow it\", \"give it\", \"find it again\" (the last three grey for now).",
+        "Koch: find it, grow it: In 1882, Koch announced the cause of tuberculosis, which he said caused about one in seven of all deaths.",
+        "pure culture",
+        "On the spoken cues: On \"In 1882\" a grey tag \"Koch, 1882: tuberculosis\" writes; on \"one in seven of all deaths\" a small coded row of seven dots with one amber (tag \"Koch: about 1 in 7 of all deaths\"). On \"looked at tissue from many tuberculosis cases\" `m7-microscope-v1.png` appears in the \"find it\" bay with a coded",
+        "explain",
+        "the right bay expands into its four step bays, labelled small \"find it\", \"grow it\", \"give it\", \"find it again\" (the last three grey for now). On \"In 1882\" a grey tag \"Koch, 1882: tuberculosis\" writes; on \"one in seven of all deaths\" a small coded row of seven dots with one amber (tag \"Koch: about 1 in 7 of all deaths\"). On \"looked at tissue from many tuberculosis cases\" `m7-microscope-v1.png` appears in the \"find it\" bay with a coded circular field beside it holding `m7-tb-stained-field-v1.png` (new); a row of five small copies of the field writes beneath (grey label \"TB cases\"). On \"the same thin, rod-shaped bacterium\" a few rods in the field are ringed (tag \"same rod in every case\"). On \"didn't find it in healthy tissue\" one more field, `m7-healthy-tissue-field-v1.png` (new, the same stained tissue with no rods), appears at the end of the row with a grey label \"healthy tissue: none\". On \"Second, he grew it on its own\" the \"grow it\" bay lights: the first TB tissue field sends a coded arrow, with `m7-inoculating-loop-v1.png` small on it (scaled, never stretched), straight to `m7-serum-slope-tube-v1.png` (new); on \"pure culture\" its cream colonies are ringed (term \"pure culture: only one kind of microbe\", replacing the previous tag). Koch put tissue material directly onto the serum slope; no mixed plate is shown. On \"took weeks\" a small grey clock tag \"weeks\" sweeps once. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "koch-give-find-again": [
+        "adjust",
+        "on \"gave the pure culture to healthy guinea pigs\" the \"give it\" bay lights: the serum tube thumbnail sends a coded arrow to `m7-guinea-pig-v1.png` (new; drawn at least 1.5 times the tube's height), which crossfades to its aligned partner `m7-guinea-pig-unwell-v1.png` (new) on \"developed tuberculosis\" (tag \"healthy host: now has TB\").",
+        "Give it, find it again, and why all four: Third, he gave the pure culture to healthy guinea pigs, and they developed tuberculosis.",
+        "gave the pure culture to healthy guinea pigs / developed tuberculosis / recovered the same bacterium / Why all four? / only shows it's there alongside the disease / might have moved in after",
+        "On the spoken cues: On \"recovered the same bacterium\" the \"find it again\" bay lights: a stained field like the first, with rods ringed, and an amber equals sign joining it back to the \"find it\" field (tag \"same bacterium\"). On \"Why all four?\" the four bays shrink into one strip and a grey label appears under each, one",
+        "explain",
+        "on \"gave the pure culture to healthy guinea pigs\" the \"give it\" bay lights: the serum tube thumbnail sends a coded arrow to `m7-guinea-pig-v1.png` (new; drawn at least 1.5 times the tube's height), which crossfades to its aligned partner `m7-guinea-pig-unwell-v1.png` (new) on \"developed tuberculosis\" (tag \"healthy host: now has TB\"). On \"recovered the same bacterium\" the \"find it again\" bay lights: a stained field like the first, with rods ringed, and an amber equals sign joining it back to the \"find it\" field (tag \"same bacterium\"). On \"Why all four?\" the four bays shrink into one strip and a grey label appears under each, one per cue: under \"find it\" on \"only shows it's there alongside the disease\" \"association only\" (with a grey screen word \"correlation\"); on \"might have moved in after\" one coded host circle gains its illness mark first, then a microbe glyph enters it afterwards (grey label \"came in later?\"), then fades; under \"give it\" on \"shows that the microbe causes it\" \"causation\", in amber; under \"find it again\" on \"rules out a different microbe\" \"confirmation\". Only the newest label is bright; earlier ones dim. At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "limits": [
+        "adjust",
+        "the four-step strip stays, labelled across the top \"Koch's postulates\".",
+        "Where the postulates struggle: These four steps are called Koch's postulates, and their logic is still the standard, but they don't fit every pathogen.",
+        "Koch's postulates",
+        "On the spoken cues: One limit at a time attaches to the step it breaks, with a `StepCheck` grey gap on that step: on \"Viruses can't be grown on their own\" `m7-virus-particle-v1.png` sits on `m5x-cell-protein-synthesis-v1.png` small under \"grow it\" (tag \"viruses: need living cells\"); on \"leprosy\"",
+        "explain",
+        "the four-step strip stays, labelled across the top \"Koch's postulates\". One limit at a time attaches to the step it breaks, with a `StepCheck` grey gap on that step: on \"Viruses can't be grown on their own\" `m7-virus-particle-v1.png` sits on `m5x-cell-protein-synthesis-v1.png` small under \"grow it\" (tag \"viruses: need living cells\"); on \"leprosy\" `m6-agar-dish-top-v1.png` small and empty under \"grow it\" (tag \"leprosy bacterium: no culture on its own\", replacing the virus tag); on \"healthy people carry a pathogen\" b01's `HostCircles`: one circle holding a pathogen glyph with no illness mark, under \"find it\" (tag \"healthy carriers\"); on \"deliberately infecting a healthy person\" a host circle labelled \"healthy person\" with a grey cross under \"give it\" (tag \"ethics: human-only diseases\"). Each tag dims as the next lands. On \"detect a microbe's DNA\" a short coded DNA strip appears under \"find it\" and is matched by an identical strip from a sick-host circle, with a small amber tick (tag \"DNA evidence instead of culture\"). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the full `EvidenceBench`, both bays small.",
+        "Memory: Here's how to hold it.",
+        "find it, grow it, give it, find it again",
+        "On the spoken cues: On \"find it, grow it, give it, find it again\" the four step labels light one per phrase and one handwritten line writes large across the lower third. On \"two different questions\" the banner's two questions return bright; on \"Pasteur showed where microbes come from\" the broken cloudy flask thumbnail",
+        "explain",
+        "the full `EvidenceBench`, both bays small. On \"find it, grow it, give it, find it again\" the four step labels light one per phrase and one handwritten line writes large across the lower third. On \"two different questions\" the banner's two questions return bright; on \"Pasteur showed where microbes come from\" the broken cloudy flask thumbnail pulses under question 1; on \"Koch showed which microbe causes which disease\" the guinea pig pair thumbnail pulses under question 2. Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt one (a sheep lung disease)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First. Sheep on a",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a sheep lung disease))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b3b-merino-sheep-side-v1.png` small at its upper left. Stem: \"Sheep on a farm developed a lung disease. A scientist investigated whether bacterium X causes the disease. Her results are shown (hypothetical data).\" A small table: \"Sheep with the disease: bacterium X found in lung tissue of 20 out of 20\"; \"Healthy sheep: bacterium X found in 0 out of 20\"; \"X grown in pure culture: yes\"; \"Pure culture of X given to 5 healthy sheep: 4 developed the disease\". Demand: \"Assess whether this evidence shows that bacterium X causes the disease. (4 marks)\". One lined answer box. Nothing answer-bearing: no step strip or labels. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "every sick sheep and no healthy one / grown pure / four of five healthy sheep / step four is missing / the classic mistake",
+        "On the spoken cues: The four-step strip returns small beneath it, and each step takes a tick or a gap one per cue: on \"every sick sheep and no healthy one\" \"20 out of 20\" and \"0 out of 20\" underline amber and \"find it\" ticks; on \"grown pure\" \"pure culture: yes\" underlines and \"grow it\" ticks; on \"four of five healthy",
+        "explain",
+        "the card shrinks to a strip at the top. The four-step strip returns small beneath it, and each step takes a tick or a gap one per cue: on \"every sick sheep and no healthy one\" \"20 out of 20\" and \"0 out of 20\" underline amber and \"find it\" ticks; on \"grown pure\" \"pure culture: yes\" underlines and \"grow it\" ticks; on \"four of five healthy sheep\" \"4 developed the disease\" underlines and \"give it\" ticks (small grey note \"4 of 5: one may have resisted\"); on \"step four is missing\" \"find it again\" takes a grey gap and a grey label \"not done: recover X from the 4 sick sheep\". A verdict bar writes: \"strong support, but step 4 needed to confirm\". The first three ticks dim. On \"the classic mistake\" the chip \"all steps done, so X is proven\" writes on and takes a grey scribble cross. Settle on the verdict for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "adjust",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m5x-koala-v1.png` small at its upper left.",
+        "Unseen transfer task (attempt two (koala chlamydia)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. Chlamydia pecorum is a bacterium that causes",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (koala chlamydia))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m5x-koala-v1.png` small at its upper left. Stem: \"*Chlamydia pecorum* is a bacterium that causes eye and urinary tract disease in koalas. It can reproduce only inside living host cells. Koalas in New South Wales are listed as an endangered species.\" Demand: \"Explain TWO reasons why it is difficult to apply Koch's postulates to this disease. (4 marks)\". One lined answer box. Nothing answer-bearing: no step strip. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "grows only inside living cells / deliberately infecting healthy koalas / the classic mistake / a bacterium that needs host cells",
+        "On the spoken cues: The four-step strip returns small; on \"grows only inside living cells\" \"only inside living host cells\" underlines amber and \"grow it\" takes a grey gap with the label \"reason 1: no pure culture on its own\"; on \"deliberately infecting healthy koalas\" \"endangered species\" underlines and \"give it\"",
+        "explain",
+        "the card shrinks to a strip. The four-step strip returns small; on \"grows only inside living cells\" \"only inside living host cells\" underlines amber and \"grow it\" takes a grey gap with the label \"reason 1: no pure culture on its own\"; on \"deliberately infecting healthy koalas\" \"endangered species\" underlines and \"give it\" takes a grey gap with the label \"reason 2: ethics, endangered host\". On \"the classic mistake\" the chip \"Chlamydia is a virus\" writes on and takes a grey scribble cross, with the small grey reason \"a bacterium that needs host cells\". Settle on the strip for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "three step chips write on in a column, one per cue: \"Pasteur: microbes come from microbes (only particle access changed)\", \"Koch: four steps link one microbe to one disease\", \"a step can't be done? name it and say why\".",
+        "Decision rule and handoff: So for a germ theory question, match each scientist to the question he answered.",
+        "So for a germ theory question, match each",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how a pathogen moves between hosts\" (small `m7-mosquito-vector-v1.png` thumbnail). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on in a column, one per cue: \"Pasteur: microbes come from microbes (only particle access changed)\", \"Koch: four steps link one microbe to one disease\", \"a step can't be done? name it and say why\". A \"Next\" chip slides in at the lower right: \"Next: how a pathogen moves between hosts\" (small `m7-mosquito-vector-v1.png` thumbnail). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# --- M6 p01 and M7 b01, b02 rows (end) ---
 
 
 LESSONS = {
@@ -4875,6 +6702,101 @@ LESSONS = {
         'rows': M6B15_ROWS,
     },
     # --- M6 b13 and b15 entries (end) ---
+    # --- M6 b16, b18, b19 and g02 entries (start) ---
+    'm6b16': {
+        'design': D + 'lessons/bio-m6-b16.md',
+        'learning_review': D + 'checks/m6b16-learning-review.md',
+        'science_check': D + 'checks/m6b16-claude-science-check.md',
+        'meta': {"title": "Whole-Organism Cloning vs Gene Cloning: How Dolly Was Made and How Well Cloning Works", "subtitle": "Dolly the sheep and a flask of bacteria copying one gene are both called cloning. So what does each kind of cloning copy, how is the copy made, and how well does each do the job it's meant for?", "subject": "Biology", "yearLevel": 12, "module": 6, "lesson": 15, "lessonIntent": "defining a clone as a genetically identical copy and separating whole-organism cloning (a new individual with the same nuclear DNA as an existing one) from gene cloning (many copies of one selected piece of DNA); tracing somatic cell nuclear transfer with Dolly (a body cell from a white-faced ewe's udder; an egg from a black-faced ewe with its nucleus removed; an electric pulse fuses them and starts division; the embryo carried by a black-faced surrogate); explaining that the clone's nuclear DNA matches the nucleus donor while its mitochondrial DNA comes from the egg, and that development and environment can still make it differ; assessing whole-organism cloning by reliability (277 fused cells, 29 embryos, one lamb, because the egg often resets the body-cell nucleus's gene switches only partly), identity and health (pregnancy losses and abnormal births are common; Dolly's illnesses do not show early ageing; later clones from her cells aged healthily), with a verdict by purpose (too unreliable for routine breeding; worth it to copy one rare or valuable animal, as with the black-footed ferret); tracing gene cloning (a gene in a plasmid vector, taken up by a bacterial host, copied at every division into billions of copies; PCR copies a gene without cells) and assessing it (very effective for a narrow, checkable aim: one bacterium is enough; colonies must be checked for the gene; rare copying errors); distinguishing the two by what exists at the end; applying this to an unseen assess item and an unseen distinguish item."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "one-word-two-jobs", "nuclear-transfer", "who-she-matches", "reliability", "health-and-purpose", "gene-cloning", "judging-gene-cloning", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From bio-m5-b01: a clone has the same alleles as its parent; bananas are grown from pieces of a parent; copying is fast but gives no variety. From bio-m5-b05a: mitosis copies every chromosome into both new cells. From bio-m5-b06a: bacteria carry small rings of DNA called plasmids as well as their main chromosome; eukaryotic DNA is in the nucleus, wound on histones, and chemical tags on the histones loosen or tighten the winding where genes are read; mitochondria carry a little DNA. From bio-m5-b03a: an egg, an early embryo dividing into a ball of cells, and a uterus that carries a pregnancy. From bio-m5-b07: phenotype depends on genes and environment. From b09: cloning is in the \"copies DNA\" lane; copying keeps a valuable allele combination together. From b12: the banana problem (many copies of one genotype share one weakness). Not assumed: somatic, nuclear transfer, enucleated egg (spoken as \"sucked out its nucleus\"), vector, host, why cloning so often fails, how to judge effectiveness against a purpose, PCR.", "startsWith": "A donor somatic nucleus and an enucleated egg, then a target gene and a vector. The video opens: In July 1996, a white-faced lamb was born in Scotland to a black-faced ewe.", "stopsAfter": "defining a clone as a genetically identical copy and separating whole-organism cloning (a new individual with the same nuclear DNA as an existing one) from gene cloning (many copies of one selected piece of DNA); tracing somatic cell nuclear transfer with Dolly (a body cell from a white-faced ewe's udder; an egg from a black-faced ewe with its nucleus removed; an electric pulse fuses them and starts division; the embryo carried by a black-faced surrogate); explaining that the clone's nuclear DNA matches the nucleus donor while its mitochondrial DNA comes from the egg, and that development and environment can still make it differ; assessing whole-organism cloning by reliability (277 fused cells, 29 embryos, one lamb, because the egg often resets the body-cell nucleus's gene switches only partly), identity and health (pregnancy losses and abnormal births are common; Dolly's illnesses do not show early ageing; later clones from her cells aged healthily), with a verdict by purpose (too unreliable for routine breeding; worth it to copy one rare or valuable animal, as with the black-footed ferret); tracing gene cloning (a gene in a plasmid vector, taken up by a bacterial host, copied at every division into billions of copies; PCR copies a gene without cells) and assessing it (very effective for a narrow, checkable aim: one bacterium is enough; colonies must be checked for the gene; rare copying errors); distinguishing the two by what exists at the end; applying this to an unseen assess item and an unseen distinguish item.", "nextLesson": "how scientists cut a gene out, join it into a plasmid, get it into a host and make it work there (route entry bio-m6-b18)."},
+        'teaching': {"task": "Dolly the sheep and a flask of bacteria copying one gene are both called cloning. So what does each kind of cloning copy, how is the copy made, and how well does each do the job it's meant for?", "causalExplanation": "Causes: why the clone matches the white-faced ewe (the nucleus carries the chromosomes, 4); why it is still not a perfect copy (mitochondria from the egg; development and environment, 4); why most attempts fail (the egg resets the body-cell nucleus's gene switches only partly, 5); why Dolly's illnesses don't prove early ageing (a flock virus; later clones from the same cells aged healthily, 6); why cloning can still be worth it (one rare genotype's alleles, 6); why gene cloning yields billions (every division copies the plasmid, 7); why it is effective (one host is enough; easy to check, 8). Visible case: the three ewes and the white face; the funnel from 277 to 1; the switches that stay stuck; the division tree filling a dish. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; attempt 1's card with its table is the densest frame and is the task.", "conversationalApproach": "Dolly the sheep and a flask of bacteria copying one gene are both called cloning, so the question is what each kind copies, how the copy is made and how well each does its job; a clone is a genetically identical copy, and the question is a copy of what. Somatic cell nuclear transfer is traced step by step (an udder cell nucleus fused with an enucleated egg, an embryo placed in a surrogate), and Dolly's three mothers show that her chromosomes match the nucleus donor; reliability (277 fusions, 29 embryos, one lamb) and health are assessed against the purpose. Gene cloning puts one gene into a plasmid vector that bacteria copy as they divide, and it is judged effective for its narrower purpose because one taker is enough and the result is easy to check. The test is what exists at the end that did not before. Two exam questions follow with brief feedback.", "openingDecision": "In July 1996, a white-faced lamb was born in Scotland to a black-faced ewe. She was Dolly, and she wasn't that ewe's daughter. She was a clone of a different sheep. Meanwhile, labs were routinely cloning genes, copying one piece of DNA billions of times inside bacteria. So what does each kind of cloning copy, how is the copy made, and how well does each do the job it's meant for?", "understandingCheck": "10a is an assess item: hypothetical data from a company cloning a prize dairy bull (100 embryos, 6 calves born, 4 alive at one year, coat patches differing from the bull's and each other's); assess the effectiveness of cloning for copying this bull. It tests the three criteria and the verdict by purpose on new data. 10c is a distinguish item: a zoo's frozen northern white rhino skin cells and two hypothetical projects (copies of one gene to study; a living calf); distinguish the cloning used in each. It tests the \"what is copied, what exists at the end\" test. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): the answer, the key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B6-IQ3-03: \"investigate and assess the effectiveness of cloning, including but not limited to:\" with its two listed examples, \"whole organism cloning\" and \"gene cloning\". This video covers the \"assess\" demand of B6-IQ3-03 for both listed examples; the \"investigate\" component (ledger flag `depthStudyOrPractical: true`) stays open for the practical or depth-study entries (Revision 2, science check finding 10). It also completes B6-IQ3-01 (\"investigate the uses and advantages of current genetic technologies that induce genetic change\") for cloning: uses (copying a valuable or rare animal; copies of a gene for study, protein production and genetic modification) and advantages (keeps an allele combination together; one bacterium gives billions of copies). Update the ledger rows when this design passes review. The verbs: \"assess\" is carried by scenes 5, 6 and 8 and attempt 1 (judge effectiveness against stated criteria and reach a qualified judgement); \"distinguish\" by scene 9 and attempt 2 (a stated point of difference that lets each case be identified)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One \"What is being copied?\" board: two tall columns that fill across the video. Left column \"whole organism\" (headed by `m6-white-faced-lamb-v1.png`, new); right column \"one gene\" (headed by `m6-bacterium-plasmid-v1.png`). Each column has three stacked bays: \"how\" (the process strip), \"what is copied\" (a coded DNA icon: the left shows a whole nucleus outline, the right one short amber gene segment), and \"how well\" (an assessment meter of three short criterion bars: reliability, identical, health or usefulness, filled by coded colour, never numbers). The left column builds in scenes 3 to 6 and the right in scenes 7 and 8; scene 9 shows both at equal weight. The process strips are painted-plate sequences joined by coded arrows: left, `m6-white-sheep-v1.png` (the white-faced nucleus donor), a donor body cell (`m5x-cell-protein-synthesis-v1.png`, inspect: a generic animal cell with a visible purple nucleus; fallback `b6a-animal-cell-v1.png`), `m6-blackface-ewe-v1.png` (new; egg donor and surrogate, shown twice with grey tags \"egg donor\" and \"surrogate\"), `b3a-egg-v1.png` with its separable `b3a-egg-nucleus-v1.png`, `m6-icsi-v1.png` (holding pipette and fine needle at an egg; no hand), `b3a-cleavage-1-v1.png`, `-2`, `-3`, `-5` (the embryo dividing), then the lamb plate. Right: `m6-bacterium-plasmid-v1.png`, `m6-plasmid-uptake-start-v1.png` and `m6-plasmid-uptake-end-v1.png` (the aligned pair: a ring outside, then inside the cell), a coded division tree of small bacterium glyphs (`b6a-bacterium-v1.png` at glyph size), `m6-agar-dish-top-v1.png` with coded colonies. Real organisms, cells and objects are painted plates; chromosomes, gene segments, switches, arrows, meters and data are coded. No people, no hands, no faces of people. Never used: `m6-hand-pollination-v1.png` and `m6-agricultural-liming-v1.png` (retired hand plates); `b3a-embryo-v1.png` (a later vertebrate embryo, wrong stage and species for this story). Plates are scaled proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey bay labels; each tag fades when the next cue lands; the column not being spoken about dims to grey.", "transitionPlan": "The blackface ewe and white-faced lamb plates open the hook beside a flask of bacteria; the definition writes large and \"of what?\" splits the CopyBoard into two columns; the left column's \"how\" bay expands as the nuclear transfer steps draw from udder cell to egg to surrogate while the right column dims; the three ewes line up with their grey tags above the lamb; the \"how well\" bay expands with the AttemptFunnel from 277 dots down to one, then the CriteriaMeter and health tags; the left column shrinks to a thumbnail as the gene segment, plasmid ring and dividing bacteria fill the right column, which then judges gene cloning on the meter; the full CopyBoard returns at equal weight for the test question and memory lines; each attempt clears the board and its feedback underlines the card as an AnsTable or two-column comparison fills; the decision rule chips and next chip close; scene crossfade with settle."},
+        'rows': M6B16_ROWS,
+    },
+    'm6b18': {
+        'design': D + 'lessons/bio-m6-b18.md',
+        'learning_review': D + 'checks/m6b18-learning-review.md',
+        'science_check': D + 'checks/m6b18-claude-science-check.md',
+        'meta': {"title": "Recombinant DNA Technology: Restriction Enzymes, Ligase, Plasmids and Transgenic Organisms", "subtitle": "Bacteria don't make human insulin, and cotton doesn't make a caterpillar poison, yet both now do. So how do scientists cut out a useful piece of DNA, join it into a carrier, get it into a host, and make sure the host actually uses it?", "subject": "Biology", "yearLevel": 12, "module": 6, "lesson": 16, "lessonIntent": "explaining why an intron-free copy of a human gene is needed for bacteria (bacteria cannot remove introns), made from mRNA or built from scratch, as for the first insulin; describing in order how recombinant DNA is made and put into a host: a restriction enzyme cuts at one specific sequence, leaving sticky ends, and the plasmid is opened with the same enzyme or one that leaves matching ends; the ends pair and DNA ligase seals the backbones, making recombinant DNA; the plasmid carries a marker gene; bacteria take up the plasmid by transformation (calcium chloride helps DNA stick to the cell surface, then a heat shock lets it in), only a small fraction of them; antibiotic selection keeps bacteria with a plasmid, and a second check finds those carrying the gene; explaining that the host makes the protein only if the gene sits beside a promoter the host recognises, and that the shared genetic code means the same codons give the same amino acids; describing the insulin application (two chains made separately in bacteria, joined, made in large fermenters) and the agricultural application (plants need a different carrier because of the cell wall and because the gene must enter the plant's chromosomes; Agrobacterium carries the Bt gene into cotton cells' chromosomes, and the cells grow into whole plants that pass it on in their seeds); defining a transgenic organism (the contrast with selective breeding is in key note 5 only); applying this to an unseen describe item and an unseen explain item."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "right-dna", "cut", "paste", "put-in", "pick", "use-it", "plants", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From bio-m5-b06a: bacteria carry plasmids. From bio-m5-b06b: RNA polymerase binds a promoter before a gene and copies the gene into mRNA. From bio-m5-b06c: ribosomes read mRNA three bases at a time (codons), each coding for an amino acid. From bio-m5-b04: DNA's two strands are held together by base pairs (A with T, C with G) along a sugar-phosphate backbone. From Year 11: enzymes are specific. From b09: recombinant DNA means DNA joined from different sources; bacteria make human insulin (since 1982); Bt cotton carries a gene from a soil bacterium. From b16: gene cloning puts a gene into a plasmid vector, a bacterial host copies it every time it divides; a colony is a clone. From bio-m6-b05: many genes contain introns, stretches cut out of the mRNA before translation. Not assumed: restriction enzymes, sticky ends, ligase, marker genes, transformation, selection, why a host needs a promoter it recognises, Agrobacterium, \"transgenic\" by name.", "startsWith": "A DNA fragment and a vector. The video opens: Bacteria don't make human insulin, and cotton plants don't make a caterpillar poison.", "stopsAfter": "explaining why an intron-free copy of a human gene is needed for bacteria (bacteria cannot remove introns), made from mRNA or built from scratch, as for the first insulin; describing in order how recombinant DNA is made and put into a host: a restriction enzyme cuts at one specific sequence, leaving sticky ends, and the plasmid is opened with the same enzyme or one that leaves matching ends; the ends pair and DNA ligase seals the backbones, making recombinant DNA; the plasmid carries a marker gene; bacteria take up the plasmid by transformation (calcium chloride helps DNA stick to the cell surface, then a heat shock lets it in), only a small fraction of them; antibiotic selection keeps bacteria with a plasmid, and a second check finds those carrying the gene; explaining that the host makes the protein only if the gene sits beside a promoter the host recognises, and that the shared genetic code means the same codons give the same amino acids; describing the insulin application (two chains made separately in bacteria, joined, made in large fermenters) and the agricultural application (plants need a different carrier because of the cell wall and because the gene must enter the plant's chromosomes; Agrobacterium carries the Bt gene into cotton cells' chromosomes, and the cells grow into whole plants that pass it on in their seeds); defining a transgenic organism (the contrast with selective breeding is in key note 5 only); applying this to an unseen describe item and an unseen explain item.", "nextLesson": "which benefits of genetic technologies in agriculture, medicine and industry hold up under evidence (route entry bio-m6-b19)."},
+        'teaching': {"task": "Bacteria don't make human insulin, and cotton doesn't make a caterpillar poison, yet both now do. So how do scientists cut out a useful piece of DNA, join it into a carrier, get it into a host, and make sure the host actually uses it?", "causalExplanation": "Causes: why an intron-free copy is needed (bacteria cannot remove introns, 2); why sticky ends join (unpaired bases pair with matching bases, 3); why ligase is needed (pairing alone gives only weak bonds; the backbone stays open, 4); why the marker matters (only bacteria with a plasmid survive the antibiotic, 6); why survival is not proof (empty plasmids also carry the marker, 6); why the host makes a human protein (a promoter it recognises and a shared code, 7); why the plant needs a different carrier (the cell wall, and the gene must enter the plant's chromosomes) and how the trait reaches the seeds (Agrobacterium inserts DNA into the chromosomes; every cell carries the gene, 8). The selective breeding contrast is key note 5 only (Revision 2). Visible case: the splicing strip, the staggered cut, the clasp sealing the gaps, the two plates growing side by side, the codon read by two ribosomes. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; attempt 2's card is the densest frame and is the task.", "conversationalApproach": "Bacteria now make human insulin and cotton makes a caterpillar poison, so the question is how scientists cut out a useful piece of DNA, join it into a carrier, get it into a host and make sure the host uses it. A station track follows the method one step at a time: get intron-free DNA because bacteria cannot remove introns, cut with a restriction enzyme that recognises one short sequence and leaves sticky ends, paste with sticky-end pairing sealed by DNA ligase, put the plasmid into bacteria with calcium chloride and a heat shock, and pick the hosts on antibiotic agar; using the gene needs a promoter the host recognises, and plants need Agrobacterium to carry the gene across the cell wall into the plant's chromosomes. The memory aid is cut, paste, put in, pick. Two exam questions follow with brief feedback.", "openingDecision": "Bacteria don't make human insulin, and cotton plants don't make a caterpillar poison. Yet since the nineteen-eighties, bacteria have made human insulin for people with diabetes, and most Australian cotton now makes its own insect toxin. Both carry DNA from another species. So how do scientists cut out a useful piece of DNA, join it into a carrier, get it into a host, and make sure the host actually uses it?", "understandingCheck": "10a is a describe item: scientists have an intron-free copy of the calf gene for chymosin and a plasmid with an ampicillin-resistance gene; describe how they could produce E. coli carrying the chymosin gene and identify those bacteria. It tests the whole chain in order on a new product. 10c is an explain item: a human gene copied directly from a chromosome gives a faulty protein in bacteria, while a copy made from the same gene's mRNA gives a working one; explain the results. It tests scene 2's and scene 7's causes. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): the answer, the key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B6-IQ3-04: \"describe techniques and applications used in recombinant DNA technology, for example:\" with its example \"the development of transgenic organisms in agricultural and medical applications (ACSBL087)\". This video owns full coverage of B6-IQ3-04: techniques (obtaining intron-free DNA, restriction enzymes, ligase, vectors, transformation, selection, expression) and applications (insulin-making bacteria in medicine; Bt cotton in agriculture; chymosin in attempt 1). It also completes B6-IQ3-01 for recombinant DNA (use and advantage: a trait or product from another species in one generation). Update the ledger rows when this design passes review. The verbs: \"describe\" (what-markers-reward: give characteristics and features, in order, with the tool responsible at each step) is carried by scenes 3 to 6 and attempt 1; \"explain\" (cause and effect) by scenes 2 and 7 and attempt 2."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One toolchain bench: a horizontal track of five stations across the top of the screen, filled left to right one per scene, each with a small painted object or coded tool and a one-word grey label: \"get the DNA\" (scene 2), \"cut\" (scene 3), \"paste\" (scene 4), \"put in\" (scene 5), \"pick\" (scene 6), then \"use\" (scene 7) as a sixth station that slides in. The active station enlarges into the main stage below; finished stations shrink to grey thumbnails on the track. DNA is coded throughout in b01's `SlimStrand` style: a double strand of cream base glyphs on two backbone lines, with the useful gene as an amber stretch and the plasmid as a teal ring, never base letters spoken. Enzymes are small coded shapes in the explainer style (restriction enzyme: a slate scissor-jaw blob; ligase: an ochre clasp blob), labelled once. Painted plates for real things: `m6-bacteriophage-t4-v1.png` (scene 3), `m6-bacterium-plasmid-v1.png`, `m6-plasmid-uptake-start-v1.png` and `-end-v1.png` (scene 5), new `m6-water-bath-tube-v1.png` (scene 5), new `m6-antibiotic-colonies-empty-v1.png` with the existing `m6-antibiotic-colonies-before-v1.png` and `-after-v1.png` (scene 6; an aligned set: the empty dish grows into the crowded dish on the \"no antibiotic\" plate and into the sparse dish on the \"with antibiotic\" plate, side by side; never a crowded-to-sparse crossfade), `m6-agar-dish-top-v1.png`, `m6-insulin-vial-v1.png`, new `m6-fermenter-tank-v1.png` (scene 7), `m6-bt-cotton-v1.png`, `b6a-plant-cell-v1.png` and `m6-tissue-culture-jars-v1.png` (scene 8), `b6a-bacterium-v1.png` (Agrobacterium glyph source, tinted). No people, no hands. Never used: `m6-hand-pollination-v1.png` and `m6-agricultural-liming-v1.png` (retired hand plates). Plates scale proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey station labels; each tag fades when the next cue lands; completed stations dim to grey.", "transitionPlan": "The bacterium-with-plasmid and Bt cotton plates open the hook, their grey crosses lifting as protein glyphs stream into the insulin vial and the caterpillar outline fades, with an amber foreign-DNA segment drawn inside each; station 1 enlarges as a coded gene strip loses its introns; each later station enlarges in turn while the previous one shrinks to a grey thumbnail: the restriction enzyme cuts a double strand and the plasmid ring at matching sites, the gene drifts into the ring and its overhang glyphs pair before ligase seals the joins, the water bath tube chills and heat-shocks the cells, and coded arrows spread the bacteria onto antibiotic agar where only plasmid carriers grow; a sixth station adds the promoter and the protein output; the track resets with the plant parts and Agrobacterium swapped in; the four memory words write large above their thumbnails; each attempt clears the track and its feedback underlines the card as an AnsTable or two rows fill; the six step chips and next chip close; scene crossfade with settle."},
+        'rows': M6B18_ROWS,
+    },
+    'm6b19': {
+        'design': D + 'lessons/bio-m6-b19.md',
+        'learning_review': D + 'checks/m6b19-learning-review.md',
+        'science_check': D + 'checks/m6b19-claude-science-check.md',
+        'meta': {"title": "Benefits of Genetic Technologies: Agriculture, Medicine and Industry", "subtitle": "Bacteria making insulin and an edited human embryo both used genetic technology to promise a health benefit, yet one is accepted worldwide and the other was condemned. So which benefits of genetic technology actually hold up, and how can you tell?", "subject": "Biology", "yearLevel": 12, "module": 6, "lesson": 17, "lessonIntent": "stating that a benefit must be better than an alternative, shown by evidence and received by someone, and testing a claim with \"Better than what? Shown how? Who gets it?\"; explaining why the 2018 embryo edit fails all three (an existing method already protected the embryos, and HIV can be prevented in other ways later in life; the edits were untested and did not copy the natural protective variant; the children carried the risk without consent); evaluating virus-resistant papaya (no ordinary variety resisted the virus; harvests climbed back after 1998, to about three quarters of the earlier level by 2001; growers gained); evaluating recombinant insulin (it controls blood sugar about as well as purified pig insulin for most patients, so its clear benefit is a reliable, scalable supply; access depends on price); explaining why recombinant growth hormone's benefit is larger (the old pituitary source was scarce and some batches spread a fatal brain disease); evaluating microbe-made chymosin (the same enzyme without depending on calves); explaining why agriculture is the most contested domain (organisms are released, so pests evolve and crop genetic diversity can narrow; Bt cotton's benefit holds while refuges keep resistance rare); ranking benefits by irreplaceability, evidence and reach rather than by how advanced the technology is (growth hormone and the papaya far better than what came before, with clear evidence; insulin and chymosin clear on supply; growth hormone's and insulin's reach depend on cost); applying this to an unseen assess item and an unseen evaluate item."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "three-tests", "farm", "medicine", "growth-hormone", "factory", "tank-or-field", "ranking", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b09: biotechnology spans agriculture, medicine and industry; insulin came from pig and cattle pancreases from 1922 and from bacteria from 1982; chymosin for cheese, once from calves' stomachs, is now mostly made by microbes. From b18: how DNA for human insulin is put into bacteria, which make insulin chains in large fermenters; chymosin bacteria (attempt 1). From b10: judgements name who gains and who carries the risk. From b11: CRISPR cuts chosen DNA; working in a trial is not the same as proven or available. From b12: biodiversity has genetic, species and ecosystem levels; an effect is a change from a baseline; one variety everywhere narrows a crop's genetic diversity. From b13: Bt cotton cut insecticide use by about 85 per cent compared with conventional cotton; refuges slow resistance; verdicts carry a condition. From bio-m5-b06c: genes code for proteins as amino acid sequences. From skills-s04: evaluate means judge against criteria with evidence. Not assumed: the papaya case, the animal and human insulin trial comparison, the growth hormone history, sperm washing, germline editing's specific case.", "startsWith": "Compare agricultural, medical and industrial cases. The video opens: In 1982, human insulin made by bacteria was approved, and it's now used around the world.", "stopsAfter": "stating that a benefit must be better than an alternative, shown by evidence and received by someone, and testing a claim with \"Better than what? Shown how? Who gets it?\"; explaining why the 2018 embryo edit fails all three (an existing method already protected the embryos, and HIV can be prevented in other ways later in life; the edits were untested and did not copy the natural protective variant; the children carried the risk without consent); evaluating virus-resistant papaya (no ordinary variety resisted the virus; harvests climbed back after 1998, to about three quarters of the earlier level by 2001; growers gained); evaluating recombinant insulin (it controls blood sugar about as well as purified pig insulin for most patients, so its clear benefit is a reliable, scalable supply; access depends on price); explaining why recombinant growth hormone's benefit is larger (the old pituitary source was scarce and some batches spread a fatal brain disease); evaluating microbe-made chymosin (the same enzyme without depending on calves); explaining why agriculture is the most contested domain (organisms are released, so pests evolve and crop genetic diversity can narrow; Bt cotton's benefit holds while refuges keep resistance rare); ranking benefits by irreplaceability, evidence and reach rather than by how advanced the technology is (growth hormone and the papaya far better than what came before, with clear evidence; insulin and chymosin clear on supply; growth hormone's and insulin's reach depend on cost); applying this to an unseen assess item and an unseen evaluate item.", "nextLesson": "practice questions that weigh benefits against biodiversity and ethics (route entry bio-m6-g02), then why social context can limit long-term genetic change (bio-m6-b20)."},
+        'teaching': {"task": "Bacteria making insulin and an edited human embryo both used genetic technology to promise a health benefit, yet one is accepted worldwide and the other was condemned. So which benefits of genetic technology actually hold up, and how can you tell?", "causalExplanation": "Causes: why a benefit needs a comparison (a benefit is a difference from what came before, 2); why the embryo edit fails (an existing method already protected the embryos and HIV can be prevented in other ways later in life; untested edits; risk without consent, 2); why the papaya benefit is strong (no alternative worked; harvests climbed back, 3); why insulin's benefit is supply rather than effect (pig insulin worked about as well in trials; the old supply depended on abattoirs, 4); why growth hormone's benefit is bigger (the old source was scarce and some batches carried a fatal disease, 5); why chymosin holds up (the same enzyme without calves, 6; fungal enzymes' bitterness is a screen tag); why agriculture is most contested (released organisms meet wild species, pests evolve, one variety narrows diversity, 7); why the ranking falls as it does (irreplaceability, real-outcome evidence, reach; scene 8 claims only what the board shows: growth hormone's and the papaya's first two cells, with growth hormone's reach left open as \"depends on cost\", 8). Visible case: the dying and healthy papaya pair, the bead strips with one and three differences, the equal trial bars, the supply line thickening, the matching enzyme glyphs, the sealed tank beside the open field. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the board cells are two to four words.", "conversationalApproach": "Bacteria-made insulin and an edited human embryo both promised a health benefit, yet one is accepted worldwide and the other was condemned, so the question is which benefits of genetic technology hold up and how to tell. A benefit is always better than something, shown by evidence, for someone, so three tests (better than what, shown how, who gets it) are tried on the embryo edit and then applied across the BenefitBoard: virus-resistant papaya on the farm, insulin and growth hormone in medicine (where the old source was scarce, impure or dangerous), and chymosin in industry; tank or field explains why farm uses are argued over most (the modified organism is released), and the ranking shows benefits are strongest where the technology did something the old method could not do safely and the evidence measures the real outcome. A gain in harvest is not a gain in biodiversity. Two exam questions follow with brief feedback.", "openingDecision": "In 1982, human insulin made by bacteria was approved, and it's now used around the world. In 2018, a researcher edited a gene in human embryos, hoping twin girls would resist HIV. Scientists everywhere condemned it, and he was sent to prison. Both used genetic technology, and both promised a health benefit. So that label alone can't tell you which one to trust. Which benefits actually hold up, and how can you tell?", "understandingCheck": "10a is an assess item: laundry enzymes from modified microbes clean at 20 °C; most of a wash's energy heats the water; assess the company's claim that its enzymes cut household energy use. It tests \"shown how?\" (the benefit happens only if people wash cold). 10c is an evaluate item: the plasma-derived hepatitis B vaccine (1981) against the yeast-made vaccine (1986), both protective; evaluate the yeast vaccine's benefit. It transfers scene 4's insight (when the old product worked, the benefit is supply and safety). Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): the answer, the key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B6-IQ3-05: \"evaluate the benefits of using genetic technologies in agricultural, medical and industrial applications (ACSBL086)\". This video owns first coverage of B6-IQ3-05. It also touches B6-IQ2-01's example \"evaluating the potential benefits for society of research using genetic technologies\" (scene 2 and the attempts), shared with b11 and g02. Update the ledger rows when this design passes review. The verb \"evaluate\" (skills-s04: make a judgement and support it with relevant criteria and evidence) is carried by the three tests (the criteria), each case's evidence, the ranking verdict (scene 8) and attempt 2; \"assess\" (how far, how much) by attempt 1."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One benefit board: a coded three-by-three grid, columns \"farm\", \"medicine\", \"industry\" (each headed by a small painted thumbnail), rows \"Better than what?\", \"Shown how?\", \"Who gets it?\". Each case scene opens its column large in the main stage (the board shrinks to the upper right), and each test answer writes into its cell as a two to four word chip with a coloured strength dot (amber filled: holds up strongly; amber half: partly; grey ring: not shown). Finished cells dim to grey. Scene 8 enlarges the whole board for the ranking. Painted plates for real things: `m6-insulin-vial-v1.png`, `m6-icsi-v1.png` (the injected egg; hook and scene 2), new `m6-papaya-healthy-v1.png` and `m6-papaya-ringspot-v1.png` (an aligned pair, scene 3), `m8-pancreas-v1.png` (scene 4), `m6-bacterium-plasmid-v1.png` (hook, scene 5), new `m6-fermenter-tank-v1.png` (scenes 4 and 7; requested by b18), new `m6-growth-hormone-vial-v1.png` (scene 5), `m6-dairy-calf-horn-buds-v1.png` (scene 6, the calf, small), new `m6-cheese-wheel-v1.png` (scene 6), `m6-bt-cotton-v1.png` and `m6-field-monoculture-mixed-v1.png` (scene 7), new `m6-washing-machine-v1.png` (attempt 1), `y11-budding-yeast-v1.png` and `m7-vaccine-vial-syringe-v1.png` (attempt 2). Coded: the board, chips, strength dots, the amino acid bead strips, the trial bar pair, the supply line, the tank and field outlines, the arrows. No people, no hands, no faces. The twins, the researcher and patients are never drawn; the embryo case is shown only by the injected-egg plate and chips. Never used: `m6-hand-pollination-v1.png` and `m6-agricultural-liming-v1.png` (retired hand plates). Plates scale proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey board labels; each tag fades when the next cue lands; filled cells dim.", "transitionPlan": "The bacterium and insulin vial plates open the hook, joined by the injected egg plate with its grey \"condemned\" chip and a bracket that dims to a \"?\"; the heading splits into three test chips that settle as row labels down the empty BenefitBoard and are tried on the embryo case; the farm column opens large with the papaya plates and its three cells fill; the medicine column opens with the pancreas plate and insulin, then the growth hormone vial; the industry column opens with the fermenter tank and chymosin; the board shrinks as the tank-or-field contrast draws; the BenefitBoard enlarges with all cells dimmed and the strongest light for the ranking; the three questions write large with icons; each attempt clears the board and its feedback underlines the card as an AnsTable or three rows fill; the decision rule chips and next chip close; scene crossfade with settle."},
+        'rows': M6B19_ROWS,
+    },
+    'm6g02b': {
+        'design': D + 'lessons/bio-m6-g02.md',
+        'learning_review': D + 'checks/m6g02b-learning-review.md',
+        'science_check': D + 'checks/m6g02b-claude-science-check.md',
+        'meta': {"title": "Evaluating Biotechnology: HSC-Style Practice Questions", "subtitle": "When an HSC question asks you to assess or evaluate a biotechnology, how do you turn what you know into a judgement that links the technology to biodiversity, or to the people and animals affected, and back it with evidence from the question?", "subject": "Biology", "yearLevel": 12, "module": 6, "lesson": 18, "lessonIntent": "assessing the effect of a switch to insect-resistant maize on a district's biodiversity from data (species diversity up compared with sprayed maize; crop genetic diversity down, so the effect is mixed; resistance alleles becoming more common in the pest, an allele-frequency change that threatens the species gain; a verdict to a moderate extent with a checkable condition; the ecosystem level not judged without data); evaluating a plan to clone a rare sheep species from frozen cells (clones of several donors can return lost alleles; donors, not clone numbers, set the gain; mitochondria come from the domestic egg; low success and surrogate welfare costs; breeding management and habitat protection as the alternative, which removes threats but cannot restore lost alleles; a conditional verdict); assessing gene-edited pig kidneys (a large need and a plausible benefit, with early evidence only; costs to the pigs, risks to early patients and a possible virus risk to others; objections in principle; a conditional verdict); recognising a weak answer that describes the organism instead of biodiversity."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question"],
+        'ids': ["hook", "q1-question", "q1-plan", "q1-build", "q1-weigh", "q1-weak", "q2-question", "q2-genetic", "q2-welfare", "q2-mistake", "q3-question", "q3-benefit", "q3-ethics", "q3-verdict", "q3-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From skills-s04: assess and evaluate both need a judgement with criteria and evidence; evaluate leans on criteria, assess on how far or how much; memory aid \"No verdict without a reason, no reason without evidence.\" From b12: three biodiversity levels; an effect is a change from a baseline; one variety everywhere narrows genetic diversity. From b13: weigh with conditions; \"Verdict, provided that ...\"; reversibility. From b19: \"Better than what? Shown how? Who gets it?\"; released organisms against contained ones. From b16: somatic cell nuclear transfer; the clone matches the nucleus donor, mitochondria come from the egg; low success rates, pregnancy losses; frozen ferret cells returned lost alleles. From b15: count the fathers (alleles come from the breeding animals, not the headcount). From b10: stakeholders; animal welfare; consequences, distribution and principle objections. From b11: how far evidence has got; trials are not proof. Not assumed: xenotransplantation by name (screen only), porcine endogenous retroviruses by name (screen only; spoken \"copies of a virus built into the pig's DNA\").", "startsWith": "An unfamiliar biotechnology case and a judgement verb. The video opens: Some of the biggest HSC Biology questions ask you to assess or evaluate a biotechnology.", "stopsAfter": "assessing the effect of a switch to insect-resistant maize on a district's biodiversity from data (species diversity up compared with sprayed maize; crop genetic diversity down, so the effect is mixed; resistance alleles becoming more common in the pest, an allele-frequency change that threatens the species gain; a verdict to a moderate extent with a checkable condition; the ecosystem level not judged without data); evaluating a plan to clone a rare sheep species from frozen cells (clones of several donors can return lost alleles; donors, not clone numbers, set the gain; mitochondria come from the domestic egg; low success and surrogate welfare costs; breeding management and habitat protection as the alternative, which removes threats but cannot restore lost alleles; a conditional verdict); assessing gene-edited pig kidneys (a large need and a plausible benefit, with early evidence only; costs to the pigs, risks to early patients and a possible virus risk to others; objections in principle; a conditional verdict); recognising a weak answer that describes the organism instead of biodiversity.", "nextLesson": "why a technology that works scientifically can still have little lasting effect on a population (route entry bio-m6-b20)."},
+        'teaching': {"task": "When an HSC question asks you to assess or evaluate a biotechnology, how do you turn what you know into a judgement that links the technology to biodiversity, or to the people and animals affected, and back it with evidence from the question?", "causalExplanation": "Why sprays falling raises insect species (fewer non-target insects killed, 2c); why fewer varieties is a genetic loss (narrower crop gene pool, one disease could spread, 2c); why rising survivors matter (resistance alleles becoming more common, an allele-frequency change rather than lost diversity; sprays could return and reverse the gain, 2c, 2d); why the alternative cannot replace cloning entirely (breeding and habitat protection cannot restore lost alleles, 3c); why clones of frozen donors can add diversity (each clone carries its donor's alleles, absent from the herd, 3b); why the number of donors, not clones, sets the gain (3b); why welfare costs are high (2 in 100 succeed; many surrogate pregnancies fail, 3c); why cloning alone cannot protect the species (habitat threats remain, 3c); why pig kidneys are not yet proven (few patients, months of function, 4b); why viral copies were inactivated (a virus could spread beyond the patient, 4c).", "conversationalApproach": "The biggest HSC Biology questions ask students to assess or evaluate a biotechnology, and markers want the technology linked to its effect on biodiversity or on the people and animals affected, so each walkthrough builds a verdict, criteria and evidence from the question. Q1 (insect-resistant maize) reads the verb as how far, takes the species and genetic levels as criteria against the sprayed-maize baseline, finds a mixed change (fewer sprays raise insect species while fewer varieties narrow the crop gene pool), adds the refuge condition and closes the loop, then sets a weak organism-only answer beside the strong one; Q2 (a cloned wild sheep) evaluates against the three given criteria, with each clone bringing back its donor's alleles, a high welfare cost to the domestic ewes and a conditional verdict; Q3 (kidneys from gene-edited pigs) sizes the benefit against waiting for a human kidney, names who carries each ethical risk and gives a verdict to a moderate extent with its conditions. Q2 and Q3 end with a spoken, crossed classic mistake, and the decision board gives the moves for biodiversity and ethics questions.", "openingDecision": "Some of the biggest HSC Biology questions ask you to assess or evaluate a biotechnology. Markers want the technology linked to its effect on biodiversity, not just on the organism, and ethics answers need the same link to the people and animals involved. You have the routine: a verdict, the criteria you judge by, and evidence from the question. Here are three HSC-style questions. Plan each one, then we'll build the answer.", "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds; the verdict strip dims.", "curriculumScope": "Practice and transfer only; the ledger rows stay with the core videos, and G02 adds practice rows."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "The skills kit layout (`src/explainer/lessons/skills-shared/`), as in skills-s04: the `QuestionCard` on top (`ZONE.card`) with its annotation layer (`Ann` verb, marks, given, constraint, ring, tag; `CardDim`), the `AnswerBox` below (`ZONE.box`) with margin ticks and a `MarkCounter`, the side column (`ZONE.side`) for plates and the small coded diagrams, and s04's `VerdictStrip` (verdict, criteria, evidence, verdict again) as the mini strip at the far left (`ZONE.strip`), lighting the row each scene builds and dimming to an outline during every countdown. s04's `RoleTag` sits in the answer margin beside each row (\"verdict\" amber, \"criterion\" teal, \"evidence\" ink, \"limitation\" grey, plus one new tag \"condition\", amber outline). Q1's mistake scene uses `WeakStrongPanel` (the strong answer moves aside as \"Answer B\"; the weak answer writes on as \"Answer A\" with its own counter and a `LostMarksTag`). Each answer row is short (one line, two at most); filled rows dim to grey when the next row writes. When a walkthrough starts, the card shrinks to about 0.7 and each given is underlined in amber in the question text at the cue where it is used (no givens card); a question's type badge (\"Biodiversity\", \"Cloning\", \"Ethics\") stays hidden during each attempt. Earlier questions clear before the next card writes on. Painted plates for real things: `m6-maize-hybrid-rows-v1.png` and `m6-helicoverpa-larva-boll-v1.png` (Q1; the larva plate is shown as \"a caterpillar pest\", not on maize; see Assets), new `m6-wild-mountain-sheep-v1.png`, `m6-white-sheep-v1.png` (the domestic surrogate) and `m6-insemination-straw-tank-v1.png` (as the frozen cell store) (Q2), new `m6-pig-side-v1.png` and `m8-kidney-nephron-v1.png` (Q3). Coded abstract diagrams only: b12's levels mini-board, a gene-pool ring cluster (b08 and b12 style), a small viral-copy strip, arrows. No people, no hands, no faces; patients and surgeons are never drawn. Never used: `m6-hand-pollination-v1.png` and `m6-agricultural-liming-v1.png` (retired hand plates). Plates scale proportionally, never stretched. Clutter rule (owner, 19 Oct): besides the question strip and the verdict strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands.", "transitionPlan": "The heading writes on and a word-for-word marking feedback chip writes on \"biodiversity\"; each question opens on a fresh board with the type badge hidden while the worded card and its data table write, with the maize, wild sheep or pig plate small at its corner; the walkthrough shrinks the card, highlights the verb with its meaning chip and underlines each given in amber as answer rows write with role tags (verdict, criterion, evidence, condition); the refuge strip, the embryo grid and three coded bearer icons build at their cues; the WeakStrongPanel moves the strong answer aside and writes the weak one with its missing roles; each classic mistake writes as a chip and takes a grey scribble cross; the verdict strip returns full size as the three-column decision board, row by row; scene crossfade with settle."},
+        'rows': M6G02B_ROWS,
+    },
+    # --- M6 b16, b18, b19 and g02 entries (end) ---
+    # --- M6 p01 and M7 b01, b02 entries (start) ---
+    'm6p01b': {
+        'design': D + 'lessons/bio-m6-p01.md',
+        'learning_review': D + 'checks/m6p01b-learning-review.md',
+        'science_check': D + 'checks/m6p01b-claude-science-check.md',
+        'meta': {"title": "Analysing UV exposure and yeast colony survival: what can colony counts tell you, and what can't they?", "subtitle": "After two minutes of UV, a plate of yeast grows five colonies instead of a hundred and forty two. If some cells did mutate, where would they be? What can colony counts tell you about UV exposure, how do you collect and analyse them fairly, and what can't they tell you about mutation?", "subject": "Biology", "yearLevel": 12, "module": 6, "lesson": 3, "lessonIntent": "explaining why each colony grew from a surviving cell or small clump that kept dividing; explaining the four fates of a cell under UV and why mutants are counted among survivors; stating who collects UV data and why (UVC, interlocked cabinet, trained staff); naming the independent, dependent and controlled variables; explaining why the control is handled the same with the lamp off; explaining replicate variation and calculating means; calculating relative survival; graphing means with every plate shown; stating what the data support and what they do not; describing how mutation would be measured; judging validity, reliability and accuracy, including time against dose; writing the risk rows; applying this to a new dataset and to an inoculum flaw. No point-mutation names (bio-m6-b03), no cancer (bio-m6-b05), no survival-curve mathematics."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "what-a-colony-is", "four-fates", "who-collects", "fair-test", "control-same", "three-plates", "relative-survival", "graph", "supports", "measure-mutation", "validity-reliability", "risk-assessment", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "bio-m6-b02 (mutagen against mutation; damage is usually repaired; a damaged base becomes a mutation when it is copied before repair; UV is not ionising and joins neighbouring thymines into a dimer that distorts DNA; exposure raises risk, not a guarantee; the five mean counts and the \"survival, not mutation\" verdict from attempt 11c); bio-m6-b01 (mutation as a lasting change in base sequence that can make a new allele; bacteria and yeast pass it to both daughter cells; the antibiotic dish lets only resistant cells grow, and replica plating copies colonies onto it with a velvet pad); Year 11 Biology (cells divide by mitosis; yeast is a single-celled fungus that reproduces by budding; aseptic technique); chem/bio Working Scientifically (independent, dependent and controlled variables; validity, reliability, accuracy; risk assessments). Not assumed: what a colony represents, relative survival, the difference between time and dose.", "startsWith": "Compare teacher-prepared yeast colony counts across UV exposure times. The video opens: In the mutagens video, you saw these numbers: a hundred and forty two yeast colonies with no UV, and just five after two minutes. And you saw that fewer colonies doesn't prove more mutants. But why not?", "stopsAfter": "explaining why each colony grew from a surviving cell or small clump that kept dividing; explaining the four fates of a cell under UV and why mutants are counted among survivors; stating who collects UV data and why (UVC, interlocked cabinet, trained staff); naming the independent, dependent and controlled variables; explaining why the control is handled the same with the lamp off; explaining replicate variation and calculating means; calculating relative survival; graphing means with every plate shown; stating what the data support and what they do not; describing how mutation would be measured; judging validity, reliability and accuracy, including time against dose; writing the risk rows; applying this to a new dataset and to an inoculum flaw. No point-mutation names (bio-m6-b03), no cancer (bio-m6-b05), no survival-curve mathematics.", "nextLesson": "what one changed base can do to a protein (route entry bio-m6-b03)."},
+        'teaching': {"task": "After two minutes of UV, a plate of yeast grows five colonies instead of a hundred and forty two. If some cells did mutate, where would they be? What can colony counts tell you about UV exposure, how do you collect and analyse them fairly, and what can't they tell you about mutation?", "causalExplanation": "(1) the b02 numbers and verdict, and the puzzle of why not: where would any mutants be? (1); (2) a colony grows from a surviving cell or small clump that kept dividing, so colony counts estimate survival (2); (3) under UV each cell has one of four fates, and only one leaves no colony (copying stalls at many dimers); mutants are counted as survivors (3); (4) UVC is hazardous, so a teacher collects the data in an interlocked cabinet; students analyse (4); (5) one independent variable, one dependent variable, everything else held the same (5); (6) the control plates are handled the same with the lamp off, so UV is the only difference (6); (7) plates differ because each 100 µL picks up a slightly different number of cells; three plates per time and their mean (7); (8) relative survival compares times on one scale (8); (9) the graph with every plate shows the trend and the spread (9); (10) what the data support (reduced survival under these conditions) and what they do not (mutation) (10); (11) how mutation would be measured: mutants are rare, so millions of exposed cells go on a selective medium; mutant colonies as a fraction of survivors, against unexposed cells, then confirmed (11); validity, reliability, accuracy (12); risk (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).", "conversationalApproach": "the mutagens video showed 142 yeast colonies with no UV and five after two minutes, and that fewer colonies does not mean more mutation, so this data-analysis practical asks where any mutants would be, what colony counts can tell you and what they cannot. A colony grows from a cell that can still divide, so it marks survival; UV gives each cell one of four fates, and only some survivors could carry a mutation. A teacher collects the data in an interlocked cabinet because UVC burns skin and eyes; the fair test changes only exposure time, the zero second control plates go into the cabinet with their lids off and the lamp off, and three plates at each time give means that are turned into relative survival and graphed with every plate shown. The data support reduced survival under these conditions but not mutation, which would need the survivors tested on a selective medium for an inherited trait; validity, reliability and accuracy and the risk assessment follow. Two exam questions follow with brief feedback, the second on a plate spread with a tenfold more concentrated suspension.", "openingDecision": "In the mutagens video, you saw these numbers: a hundred and forty two yeast colonies with no UV, and just five after two minutes. And you saw that fewer colonies doesn't prove more mutants. But why not? If some cells mutated and survived, where would they be? They'd be hiding inside the colonies that grew. So what can colony counts really tell you?", "understandingCheck": "(A1) \"In a repeat of this investigation, yeast was spread on agar plates and exposed to UV light in a cabinet at a fixed distance. After incubation, the control plates (0 s) had 145, 151 and 160 colonies. The plates exposed for 45 s had 36, 41 and 46 colonies. Calculate the relative survival of the yeast at 45 s (mean colonies at 45 s as a percentage of the control mean). Show your working.\" Answer: control mean (145 + 151 + 160) ÷ 3 = 456 ÷ 3 = 152; 45 s mean (36 + 41 + 46) ÷ 3 = 123 ÷ 3 = 41; 41 ÷ 152 × 100 = 27.0 %. Crossed mistake: \"73.0 %\" (the share that did not form colonies, not the survival). Card defines relative survival as \"mean colonies at 45 s as a percentage of the control mean\" (learning review M2). (A2) \"A student repeated the investigation. To have more colonies to count at 120 s, she spread the 120 s plates with a yeast suspension ten times as concentrated as the one used for all other plates. The control plates (0 s) had a mean of 142 colonies and the 120 s plates had a mean of 52 colonies. She reported a relative survival of 36.6 % at 120 s. Evaluate her result.\" Answer: not valid as reported: the 120 s plates received ten times as many cells, so two variables changed; 52 colonies correspond to about 5.2 on a standard plate; 5.2 ÷ 142 × 100 = 3.7 %, close to the main data's 3.5 %; correct for the tenfold suspension (5.2 ÷ 142 × 100 ≈ 3.7 %), or use the same suspension for every plate; plating more cells at a high exposure is a valid method when the result is corrected (Revision 2, science check S3). Crossed mistake: \"36.6 % survival\" (comparing plates given different numbers of cells without correcting for it).", "curriculumScope": "Syllabus (NSW Biology Stage 6, 2017), as printed: \"explain how a range of mutagens operate, including but not limited to:; electromagnetic radiation sources; chemicals; naturally occurring mutagens\" this video is a data-analysis practical. Students analyse a teacher-prepared dataset; they do not expose anything to UV. No student is shown operating a UV source, opening an exposed or incubated plate, or standing near a lit lamp; the UV lamp is never shown lit as a safe operating step (route decision, 21 Oct). It teaches: what a colony is and why each colony grew from a surviving cell or small clump that kept dividing; the four fates of a cell under UV (no damage, repaired, too damaged to divide, mutated but alive) and why mutants are counted among the survivors; who collects the data and why (UVC, an interlocked cabinet, trained staff); the fair test (independent, dependent and controlled variables); a control handled the same way as the exposed plates, with the lamp off; replicate plates and their means; relative survival; graphing every plate as well as the means; what the data support and what they do not; how mutation would be measured (test survivors for a new inherited trait, as a fraction of survivors, against the 0 s plates, then confirm it is inherited); validity, reliability and accuracy, including \"time is not dose\"; the risk assessment (UVC, the biological risk of cultures, ethanol). Placement (Biology playlist order 3): after b01 (order 1) and b02 (order 2), before b03 (order 4, point mutations). So \"mutation\" means a lasting change in base sequence (b01, b02), the thymine dimer and the repair race are known (b02), and the antibiotic dish and replica plating are known (b01). Point-mutation types are not named (b03). Not re-taught: how UV forms dimers, repair, copying before repair, \"mutagen is the cause, mutation is the change\", ionising radiation and chemical mutagens (b02, recalled in one clause each); b01's antibiotic dish (recalled in one clause in scene 11, Revision 2; replica plating itself is no longer shown). Not here: cancer and somatic against germ-line effects (b05); point-mutation names (b03); the dose-response mathematics of survival curves (author note f); performing a microbiology plating method (author note b, teacher method only)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: exposure time violet (the independent variable); colony counts and survival amber (the dependent variable); controls green; the 0 s control plates outlined green; \"survival\" teal and \"mutation\" terracotta, kept apart wherever both appear; hazards terracotta; grey for tags and callbacks. Clutter rule: at most three bright text items; every tag dims when its sentence ends. A small grey corner tag stays on every data scene: \"teacher-prepared dataset (constructed example)\". Reuse: painted plates, inspected 21 Oct on the dark board: `public/assets/biology/y11-budding-yeast-v1.png` (three yeast cells, one budding, 1374 × 1145; scene 2), `m6-agar-dish-top-v1.png` (top-down blank agar plate, 2000 × 2000; scene 2's spread plate and scene 11's selective plate before incubation), `m6-uv-skin-v1.png` (b02's sun and skin block; scene 3 thumbnail only, as the b02 callback). Inspected and not used: `m6-velvet-replica-block-v1.png` (b01's velvet block; dropped in Revision 2 because replica plating one plate cannot detect rare mutants, science check S1); `m6-uv-cabinet-v1.png` (2000 × 2000: its door is open and its lamp glows violet, which would show a lit lamp with an open door; the route decision and the pre-design both rule this out; replaced by the new closed cabinet plate); `m6-antibiotic-colonies-before-v1.png` and `-after-v1.png` (b01's bacterial plates, about 250 and about 15 colonies; their counts do not match this dataset, and reusing an antibiotic plate as yeast would confuse a student who watched b01; fallback only, see Assets); `m7-petri-colonies-v1.png` (mixed moulds and bacteria: wrong organism); `b3a-petri-dish-v1.png` (empty side view; no use here); `m6-hand-pollination-v1.png` (owner rule). No human figures.", "transitionPlan": "Two yeast plates, untreated and two-minute, open the hook with their colony counts and a \"where are the mutants?\" question; the step rail lights its first stage as the budding yeast plate and a spread plate show one cell becoming one colony; the four-fates fork draws from a single cell with b02's slim strand lens; the closed UV cabinet plate takes the centre with its interlock tag; the variables card writes row by row and dims to a strip as two plate outlines show the control handled the same way; the data table writes plate by plate with its means and gains a relative survival column as the formula writes; the coded lineGraph plots each mean with every plate as a small point; the conclusion card fills its supported and not-shown columns; the survival plates slide off as the selective plate and a grey rarity tag show how mutation would be measured; the three evaluation cards and the risk table write in turn; each attempt clears the board and its feedback underlines the question as the mean lines or a comparison strip write; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M6P01B_ROWS,
+    },
+    'm7b01': {
+        'design': D + 'lessons/bio-m7-b01.md',
+        'learning_review': D + 'checks/m7b01-learning-review.md',
+        'science_check': D + 'checks/m7b01-claude-science-check.md',
+        'meta': {"title": "What Makes a Disease Infectious? Classifying Pathogens: Bacteria to Prions", "subtitle": "What makes a disease infectious, and why does knowing which kind of pathogen causes it decide how it can be treated?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 1, "lessonIntent": "defining an infectious disease as one caused by a pathogen (most can pass between hosts), with tuberculosis against type 2 diabetes, and noting that most microbes are not pathogens; sorting pathogens by whether they are made of cells, and then whether they are many-celled animals, into microorganisms (bacteria, fungi, protozoa), macroorganisms (helminths, ectoparasites) and non-cellular pathogens (viruses, viroids, prions); describing each type's key structure with a named disease and its true relative size; distinguishing viroids (RNA only, known in plants) from prions (protein only, misfolding normal proteins, known in animals); showing the same groups in plants; explaining that a treatment must target something the pathogen has and the host lacks, so antibiotics act on bacteria but not on viruses or prions; classifying three unseen agents with justification and explaining an antibiotic's action on bovine TB but not BSE."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "infectious-pathogen-host", "made-of-cells", "microorganisms", "macroorganisms", "viruses", "viroids-and-prions", "plant-hosts", "treatment", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From bio-m5-b06a: prokaryotes have no nucleus, their DNA sits in the cytoplasm (the nucleoid); eukaryotic cells have a nucleus; cells contain ribosomes. From B2c (route bio-m5-b02b), background only: a bacterium is a single cell that copies itself by splitting in two. From Year 11 Module 1: cells, cell walls, the cytoplasm, proteins and nucleic acids (DNA and RNA). Not assumed: infectious against non-infectious, pathogen, host, the three groups, fungi and protozoa as pathogens, helminths, viruses as non-cellular, viroids, prions, why drugs are group-specific.", "startsWith": "Separate infectious from non-infectious disease and sort pathogens by structure. The video opens: In 1928, Alexander Fleming noticed a mould growing on one of his culture dishes.", "stopsAfter": "defining an infectious disease as one caused by a pathogen (most can pass between hosts), with tuberculosis against type 2 diabetes, and noting that most microbes are not pathogens; sorting pathogens by whether they are made of cells, and then whether they are many-celled animals, into microorganisms (bacteria, fungi, protozoa), macroorganisms (helminths, ectoparasites) and non-cellular pathogens (viruses, viroids, prions); describing each type's key structure with a named disease and its true relative size; distinguishing viroids (RNA only, known in plants) from prions (protein only, misfolding normal proteins, known in animals); showing the same groups in plants; explaining that a treatment must target something the pathogen has and the host lacks, so antibiotics act on bacteria but not on viruses or prions; classifying three unseen agents with justification and explaining an antibiotic's action on bovine TB but not BSE.", "nextLesson": "how Pasteur and Koch showed that microbes come from other microbes and that a specific microbe causes a specific disease (route entry bio-m7-b02)."},
+        'teaching': {"task": "What makes a disease infectious, and why does knowing which kind of pathogen causes it decide how it can be treated?", "causalExplanation": "Causes: why a disease spreads (the pathogen passes between hosts, 2); why viruses are not microorganisms (not cells, 3); why bacteria differ from fungi and protozoa (nucleus, 4); why a virus needs a host cell (no ribosomes or cytoplasm, 6); how a prion spreads with no genes (converting normal copies, 7); why drugs are group-specific (a target the host lacks, 9). Visible case: the clear ring around the mould; the jump between host circles; the zoom ladder with true-scale pairs; the misfolding row; the tree filling with plant cases and treatment chips. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the full tree in scene 8 is the densest frame, so its leaf labels are small and grey and only the newest plant tag is bright.", "conversationalApproach": "Fleming's mould killed the bacteria around it and led to penicillin, yet penicillin does nothing against many infections, so the question is what makes a disease infectious and why the kind of pathogen decides how it can be treated; an infectious disease is caused by a pathogen living in or on a host and harming it, and most can pass between hosts. The SorterTree then sorts pathogens with one question at a time: is it made of cells (microorganisms against macroorganisms and non-cellular agents), does the cell have a nucleus (bacteria as prokaryotes, against fungi and protozoa), which macroorganisms are parasitic animals (helminths inside, ectoparasites outside), and for non-cellular pathogens whether it is genes in a protein coat (a virus), RNA only (a viroid) or protein only (a prion), with plants as hosts too; a drug has to hit something the pathogen has and the host does not, so the group decides treatment. Two exam questions follow with brief feedback.", "openingDecision": "In 1928, Alexander Fleming noticed a mould growing on one of his culture dishes. Around it, the bacteria had died, leaving a clear ring. That mould led to penicillin. But penicillin does nothing for the flu, for tinea, for malaria or for a tapeworm. So what makes a disease infectious, and why does the kind of pathogen decide how we can fight it?", "understandingCheck": "11a is a classify-and-justify item: three agents described only by their structure (a single cell with its own nucleus and no wall inside a bird's red blood cells; a small circle of RNA with no protein coat from deformed potato tubers; a flat segmented worm two metres long from a dog's intestine). It tests the sorting questions on new descriptions with no plates (a plate would give the answer away). 11c is an explain item: bovine tuberculosis (a rod-shaped bacterium) against BSE (a prion); explain why an antibiotic could act on one pathogen but not the other. It tests the treatment link. Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Each feedback is brief (about 20 to 25 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ1-01: \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117)\", with its listed example \"classifying different pathogens that cause disease in plants and animals (ACSBL117)\". This video covers the \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens\" stem and the classifying example. The data-collection stem and the other three examples (epidemic transmission, microbial testing of water or food, modes of transmission) stay open for b03, p01 and p02. Verbs: \"describe\" (scenes 2 to 8: named diseases with their pathogens) and \"classify\", which NESA examines as distinguish or identify with justification (scenes 3 to 8 and attempt 1); the treatment link (scene 9 and attempt 2) is an \"explain\"."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One pathogen sorter: a branching tree drawn in code on the dark board. Root node \"pathogen\"; first fork \"made of cells?\" into three branches, \"microorganisms\", \"macroorganisms\" and \"non-cellular\"; leaves \"bacteria\", \"fungi\", \"protozoa\" | \"helminths\", \"ectoparasites\" | \"viruses\", \"viroids\", \"prions\". Each leaf is headed by its painted plate thumbnail. The tree builds branch by branch in scenes 3 to 7, the plant examples join beside the leaves in scene 8, and in scene 9 each leaf gains a small treatment chip. A size ruler (a coded horizontal scale bar whose label changes: metres, millimetres, thousandths of a millimetre, ten-thousandths of a millimetre) runs along the lower edge during the zoom in scenes 4 to 7: each zoom step shows the new pathogen beside the previous one at true relative scale where both can be seen in one frame (bacterium beside a red blood cell, at the start of scene 6; virus beside the bacterium; tobacco mosaic virus beside the coronavirus; viroid beside a virus; the prion is shown in its own half with a grey tag \"one protein molecule: far smaller than a virus\" and is not paired at scale, because a single protein would be a dot beside a virus), and uses a camera zoom where they cannot (tapeworm to tick to red blood cell). Plates are scaled proportionally, never stretched. Real organisms, cells and objects are painted plates; the tree, ruler, arrows, host circles, chips and glyph copies are coded. No people, hands, faces, patients or doctors. Hosts that are people are shown as abstract coded host circles only. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey tree labels; tags fade when the next cue lands; branches not being spoken about dim to grey.", "transitionPlan": "The Fleming mould plate opens the hook with its clear ring and a penicillin tag; the definition writes on with pathogen and host labels; the SorterTree root writes and branches on the cells question; the tree shrinks to a thumbnail as the microorganism branch opens on the nucleus question with the bacterium, fungus and protozoan plates; a coded zoom-out sweep relabels the ruler in metres for the tapeworm and the external parasites; the zoom runs back in to a virus drawn at true scale beside the red blood cell and the TB rod; the viroid and prion halves open side by side; the full tree returns with plant slots beside each leaf; target chips light where a drug can act and dim where it cannot; four question chips write down the tree's left edge for the memory aid; each attempt clears the board and its feedback underlines the card as an AnsTable or two-column comparison fills; the decision rule chips and next chip close; scene crossfade with settle."},
+        'rows': M7B01_ROWS,
+    },
+    'm7b02': {
+        'design': D + 'lessons/bio-m7-b02.md',
+        'learning_review': D + 'checks/m7b02-learning-review.md',
+        'science_check': D + 'checks/m7b02-claude-science-check.md',
+        'meta': {"title": "How Germ Theory Was Proved: Pasteur's Swan-Neck Flask and Koch's Postulates", "subtitle": "For centuries many people believed microbes sprang from broth and disease came from bad air. How did Pasteur's flasks and Koch's four steps show, instead, that microbes come from other microbes and that a specific microbe causes a specific disease?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 2, "lessonIntent": "naming spontaneous generation and miasma as the ideas germ theory replaced, and stating the two things germ theory needed; describing Pasteur's swan-neck experiment (boiled broth, open S-shaped neck, dust settling in the bend, clear broth for months while open straight-necked flasks clouded, cloudy within days after the neck was broken) and explaining why it disproved spontaneous generation (air reached the broth throughout; only particle access changed; the same broth could support growth), with the independent, dependent and controlled variables; stating that Pasteur did not link a microbe to a disease; describing Koch's four steps through his 1882 tuberculosis work (found in every case and not in healthy tissue; grown in pure culture; caused the disease in healthy guinea pigs; recovered again) and explaining why all four are needed (presence only shows association; giving the pure microbe shows cause; recovery rules out another microbe); outlining the limits (viruses need living cells; some bacteria cannot be cultured; healthy carriers; ethics) and the DNA-based alternative; assessing unseen data against the postulates and explaining why they are hard to apply to koala chlamydia."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "old-ideas", "pasteur-setup", "clear-broth", "break-the-neck", "what-pasteur-showed", "koch-find-grow", "koch-give-find-again", "limits", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From bio-m7-b01: pathogen, host, bacterium, virus as non-cellular and needing a host cell, tuberculosis caused by a rod-shaped bacterium. From Year 11 (Working Scientifically): independent, dependent and controlled variables, and the purpose of a control. From Module 5 B2c: bacteria multiply by splitting, so a few become a visible crowd. Not assumed: spontaneous generation, miasma, germ theory, the swan-neck design, pure culture, the postulates, correlation against causation, the postulates' limits.", "startsWith": "Compare Pasteur's and Koch's investigations. The video opens: Leave some broth out for a few days, and it turns cloudy with microbes.", "stopsAfter": "naming spontaneous generation and miasma as the ideas germ theory replaced, and stating the two things germ theory needed; describing Pasteur's swan-neck experiment (boiled broth, open S-shaped neck, dust settling in the bend, clear broth for months while open straight-necked flasks clouded, cloudy within days after the neck was broken) and explaining why it disproved spontaneous generation (air reached the broth throughout; only particle access changed; the same broth could support growth), with the independent, dependent and controlled variables; stating that Pasteur did not link a microbe to a disease; describing Koch's four steps through his 1882 tuberculosis work (found in every case and not in healthy tissue; grown in pure culture; caused the disease in healthy guinea pigs; recovered again) and explaining why all four are needed (presence only shows association; giving the pure microbe shows cause; recovery rules out another microbe); outlining the limits (viruses need living cells; some bacteria cannot be cultured; healthy carriers; ethics) and the DNA-based alternative; assessing unseen data against the postulates and explaining why they are hard to apply to koala chlamydia.", "nextLesson": "how a pathogen moves between hosts: direct contact, indirect contact and vectors (route entry bio-m7-b03)."},
+        'teaching': {"task": "For centuries many people believed microbes sprang from broth and disease came from bad air. How did Pasteur's flasks and Koch's four steps show, instead, that microbes come from other microbes and that a specific microbe causes a specific disease?", "causalExplanation": "Causes: why the swan-neck broth stays clear while air reaches it (particles settle in the bend, 3, 4); why the design defeats the \"something in the air\" objection (air still reaches the broth, 4); why breaking the neck is the critical control (same broth supports growth once particles reach it, 5); why Pasteur did not prove disease causation (no microbe linked to a disease, 6); why presence alone is not proof (the microbe might move in after, 8); why giving the pure microbe shows cause and recovery confirms it (8); why each limit breaks a named step (9). Visible case: three flask states changing by aligned crossfades; dust settling in the bend, then falling into a broken neck; the four step bays filling with real evidence; ticks and gaps on the steps. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the attempt 1 card with its table is the densest frame and is the task.", "conversationalApproach": "Broth left out turns cloudy with microbes, and for centuries many people believed the microbes sprang from the broth and that disease came from bad air, so the question is how Pasteur's flasks and Koch's four steps showed that microbes come from other microbes and that a specific microbe causes a specific disease. Pasteur's swan-neck flasks are traced step by step: boiled broth stays clear for months although air reaches it, answering the claim that boiling or sealing destroyed something in the air, and breaking the neck lets dust fall in so the same broth turns cloudy within days; the variables show what he did and did not show. Koch's tuberculosis work then follows four steps (find it, grow it, give it, find it again) with the reason each is needed, and the postulates' limits are named for viruses, carriers and pathogens that cannot ethically be given to a host. The memory aid matches each scientist to the question he answered. Two exam questions follow with brief feedback.", "openingDecision": "Leave some broth out for a few days, and it turns cloudy with microbes. For a long time, many people thought those microbes simply sprang from the broth itself, and that disease came from bad air. Around 1860, Louis Pasteur tested the first idea with a flask that let air in but kept microbes out. Then Robert Koch worked out how to prove that one particular microbe causes one particular disease. So how did their experiments establish germ theory?", "understandingCheck": "11a is an assess item: hypothetical data on a lung disease in sheep, where postulates 1 to 3 are met and postulate 4 is missing; assess whether the evidence shows that bacterium X causes the disease. It tests the four steps applied to new data and the correlation trap. 11c is an explain item: Chlamydia pecorum in koalas grows only inside living cells and koalas in New South Wales are listed as endangered; explain two reasons why the postulates are hard to apply. It tests the limits on a new case. Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Each feedback is brief (about 25 to 30 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ1-02: \"investigate the work of Robert Koch and Louis Pasteur, to explain the causes and transmission of infectious diseases, including:\" with its listed examples \"Koch's postulates\" and \"Pasteur's experiments on microbial contamination\". This video covers both listed examples. The ledger flags the dotpoint `depthStudyOrPractical: true`; the video is the secondary-sourced investigation of the two scientists' work (experimental design, controls, results and conclusions). A hands-on contamination experiment is not part of this entry; p02 provides the microbial testing practical. The ledger's investigation component stays open for p02 (microbial contamination practical) and any depth-study entry. Verb demands: \"investigate\" (scenes 3 to 9 trace each design and its evidence) and \"explain\" (scenes 6 and 8, and both attempts: why each design licenses its conclusion)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One evidence bench: a two-bay board under a banner of two questions. Left bay, \"Where do microbes come from?\" (Pasteur): a row of painted flasks that changes state by aligned crossfades. Right bay, \"Which microbe causes which disease?\" (Koch): a strip of four step bays, \"find it\", \"grow it\", \"give it\", \"find it again\", each filled with painted plates. The left bay builds in scenes 3 to 6 and the right in scenes 7 and 8; scene 9 marks limits on the right bay; scene 10 shows both. Broth changes (clear to cloudy) are aligned plate pairs, never coded tints over a plate; airborne dust and microbes are coded specks drifting along the neck (abstract particles, not organisms). No people, hands, faces, patients or doctors. Sick and healthy hosts that would be people appear only as coded host circles or as tissue on a microscope field. Plates are scaled proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey bay labels; tags fade when the next cue lands; the bay not being spoken about dims to grey.", "transitionPlan": "The straight-neck flask plate opens the hook and crossfades to cloudy; two old-idea chips write on with their small icons and the germ theory need writes beneath; the EvidenceBench's left bay expands for Pasteur as the swan-neck flask is filled, heated, bent and boiled; a clock tag sweeps \"months\" beside the clear flask while a straight-neck pair turns cloudy; the neck breaks off and dust falls in as the broth clouds within days; the three flask states sit in a row with the variables labelled; the right bay expands into Koch's four step bays, lighting find it and grow it with the tissue and culture plates, then give it and find it again; the four-step strip takes its \"Koch's postulates\" label and each limit greys one step at a time; the full bench returns small for the memory lines; each attempt clears the board and its feedback underlines the card as the four-step strip returns and each step is ticked or crossed; the decision rule chips and next chip close; scene crossfade with settle."},
+        'rows': M7B02_ROWS,
+    },
+    # --- M6 p01 and M7 b01, b02 entries (end) ---
 }
 
 
@@ -4888,7 +6810,7 @@ def ready(design):
 def build(key):
     cfg = LESSONS[key]
     s = io.open(cfg['design'], encoding='utf8').read()
-    parts = re.split(r'^### \d+[a-d]?\. ', s, flags=re.M)[1:]
+    parts = re.split(r'^### \d+[a-z]?\. ', s, flags=re.M)[1:]
     assert len(parts) == len(cfg['ids']), (key, len(parts))
     assert set(cfg['rows']) == set(cfg['ids']), key
     hold = cfg['hold_seconds'] * FPS

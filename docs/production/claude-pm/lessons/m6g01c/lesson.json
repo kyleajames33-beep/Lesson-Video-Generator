@@ -1,0 +1,184 @@
+{
+  "title": "Strong Acid and Base pH: Dilution and Mixing Practice Questions",
+  "subtitle": "When a strong acid or base question dilutes a solution, mixes two, or hides a 2 in a formula, which method fits, and how do you check the answer?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 11,
+  "lessonIntent": "calculating the pH of a dilute strong acid and the hydroxide concentration in it with Kw; calculating pH after a \"made up to\" dilution through moles, and checking the change with the log scale; converting two pH values to concentrations and calculating the pH after mixing, using the excess and the total volume; calculating the pH after mixing barium hydroxide with hydrochloric acid, counting two hydroxide ions per formula unit and finishing through pOH; checking each answer is on the right side of 7.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A strong acid or base question can do more than hand you a concentration and ask for the pH. It can dilute it, mix it with a base, or hide a two in a formula. Each one here comes down to three checks. What's in there, and how much? In what volume? And does the answer make sense? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. A nitric acid solution has a concentration of zero point zero zero two five zero moles per litre at twenty five degrees. Calculate its pH. Then calculate the hydroxide ion concentration in the same solution. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-ph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Nitric acid is strong, with one proton per molecule, so every molecule gives its proton to water, and the hydronium concentration equals the acid's, two point five zero times ten to the minus three. The negative log gives two point six zero two. Three significant figures in the concentration, so three decimal places in the pH."
+      }
+    },
+    {
+      "id": "q1-hydroxide",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the hydroxide. An acid solution still has some, because water's own equilibrium is still there. K w is hydronium times hydroxide, so divide one point zero times ten to the minus fourteen by the hydronium. That's four point zero times ten to the minus twelve moles per litre, hundreds of millions of times less than the hydronium, as it should be in an acid."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is thinking an acid this dilute must be weak. Strength is about how fully it ionises, not how much is there. Dilute nitric acid is still a strong acid, so the hydronium still equals its concentration."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. A student uses a pipette to transfer twenty five millilitres of zero point one two zero moles per litre hydrochloric acid into a volumetric flask, then makes it up to two hundred and fifty millilitres with water. Calculate the pH of the diluted solution. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-moles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Adding water doesn't change the moles of acid, so start with moles. Zero point one two zero times zero point zero two five zero litres is zero point zero zero three zero zero moles. Made up to means that's the final volume, two hundred and fifty millilitres. So the concentration is zero point zero one two zero moles per litre, and the pH is one point nine two one."
+      }
+    },
+    {
+      "id": "q2-check",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Does that make sense? The volume went up ten times, so the concentration fell ten times. One pH unit is ten times, so the pH should rise by exactly one. The undiluted acid had a pH of zero point nine two one, so one point nine two one checks out."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is adding the two volumes, as if two hundred and fifty millilitres of water went in. That gives two hundred and seventy five millilitres, and a pH of one point nine six two. Made up to means the total is two hundred and fifty."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. Thirty millilitres of hydrochloric acid with a pH of one point zero zero is mixed with twenty millilitres of sodium hydroxide solution with a pH of thirteen point zero zero, at twenty five degrees. Assume the volumes add. Calculate the pH of the mixture. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-moles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "You can't mix pH values, because they're logs, so turn each one into a concentration. A pH of one point zero zero means zero point one zero moles per litre of hydronium. For the base, the pOH is fourteen minus thirteen, so the hydroxide is also zero point one zero. In moles, that's zero point zero zero three zero of hydronium and zero point zero zero two zero of hydroxide."
+      }
+    },
+    {
+      "id": "q3-excess",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Neutralise first: hydronium and hydroxide make water until the hydroxide runs out, leaving zero point zero zero one zero moles of hydronium. Then dilute: it spreads through all fifty millilitres, so it's zero point zero two zero moles per litre, and the pH is one point seven zero. Check: acid was in excess, so the pH should be below seven, and it is."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is averaging the two pH values. One and thirteen average to seven, neutral. But pH is a log scale, and there's more acid than base, so the mixture is still acidic."
+      }
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four. Forty millilitres of zero point zero five zero zero moles per litre barium hydroxide is mixed with thirty millilitres of zero point one zero zero moles per litre hydrochloric acid, at twenty five degrees. Assume the volumes add. Calculate the pH of the resulting solution. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4-excess",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Count the hydroxides first. Each barium hydroxide releases two, so the hydroxide is two times zero point zero five zero zero times zero point zero four zero zero litres, zero point zero zero four zero zero moles. The acid gives zero point zero zero three zero zero moles of hydronium. So this time the hydroxide is in excess, by zero point zero zero one zero zero moles."
+      }
+    },
+    {
+      "id": "q4-ph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "That spreads through seventy millilitres, so the hydroxide is zero point zero one four three moles per litre. Hydroxide is what's left, so go through the pOH: one point eight four five. Then the pH is fourteen minus that, twelve point one five five. Check: base in excess, so the pH should be above seven, and it is."
+      }
+    },
+    {
+      "id": "q4-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is forgetting the two. Then the base gives only zero point zero zero two zero zero moles, the acid looks like it's in excess, and you get one point eight four five, the wrong side of seven entirely."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start any strong acid or base question. Check it's strong, then find the hydronium or hydroxide, counting the hydroxides. If it's diluted, the moles stay the same, so divide by the final volume. If an acid and a base are mixed, neutralise first, then dilute, using the total volume. And check the answer is on the right side of seven. Next, weak acids, with an ICE table."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

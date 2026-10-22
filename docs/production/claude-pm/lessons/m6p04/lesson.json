@@ -1,0 +1,184 @@
+{
+  "title": "Using pH to show the difference between strong and weak acids and bases: what pH evidence separates them?",
+  "subtitle": "Two bottles, both labelled 0.100 mol/L: one hydrochloric acid, one ethanoic acid. How can a pH meter show which acid is strong, what makes the comparison fair, and how could you still tell them apart if you couldn't trust the label?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 8,
+  "lessonIntent": "explaining why strength must be compared at matched concentration; carrying out the matched comparison and explaining the pH gap by extent of ionisation; designing and carrying out a tenfold dilution with volumetric glassware; explaining why a strong acid's pH rises by about one unit and a weak acid's by much less (about half for ethanoic acid), and that the bases mirror this; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No pH calculation (chem-m6-c07), no Ka or Kb (chem-m6-c10), no conjugate pairs (chem-m6-c06), no conductivity.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two bottles, both labelled zero point one zero zero moles per litre. One's hydrochloric acid, the other's ethanoic acid. You've only got a pH meter. Can you show which acid is strong? And here's the harder part: what if one label is wrong? Today you'll build two pH tests of strength, and the second one doesn't trust the label at all."
+      }
+    },
+    {
+      "id": "matched-concentration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The first test is from the strong and weak video, and the last practical used it too: compare at the same concentration. Why does that matter? Because a concentrated weak acid can read a lower pH than a dilute strong one. So if the concentrations differ, the pH mixes up two things. Match them, and any pH difference has to come from strength. This time, all four are at zero point one zero zero."
+      }
+    },
+    {
+      "id": "routine-recall",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Measure them exactly as in the last practical: calibrate with buffers, rinse and blot the probe between samples, wait for a steady reading, and take three readings in fresh portions. One new point: the strong acid and base will read near one and thirteen, outside the four to ten range you calibrated."
+      }
+    },
+    {
+      "id": "results",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are one class's means. Hydrochloric acid, one point zero eight. Ethanoic acid, two point nine zero. Sodium hydroxide, twelve point nine one, and ammonia, eleven point one zero. Each set of three readings agreed within about zero point zero three."
+      }
+    },
+    {
+      "id": "the-gap",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At the same concentration, hydrochloric acid reads almost two units lower. Two units would be a hundred times, and this is a bit less, so from these readings it's about seventy times as much hydronium. That's because every hydrochloric acid molecule gives its proton to water, but only a small fraction of ethanoic acid molecules do. Single arrow, double arrow. The bases mirror it: sodium hydroxide gives far more hydroxide than ammonia does."
+      }
+    },
+    {
+      "id": "dilution-method",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But test one trusts the labels, and a wrong label could fool you. So here's the second test. Use a volumetric pipette to transfer ten millilitres of each solution into a hundred millilitre volumetric flask, and make it up to the mark with distilled water. That's exactly tenfold dilution, whatever the starting concentration was. Then see how far the pH moves."
+      }
+    },
+    {
+      "id": "dilution-results",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's what happened. Hydrochloric acid went from one point zero eight to two point zero four, up almost exactly one unit. Ethanoic acid went from two point nine zero to three point three nine, up only about half a unit. And the bases? Sodium hydroxide dropped about one unit, ammonia about half."
+      }
+    },
+    {
+      "id": "strong-moves-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why about a whole unit? Hydrochloric acid is already completely ionised. Diluting it just spreads the same hydronium ions through ten times the volume, so there's a tenth as much hydronium in each litre. A tenth is one pH unit."
+      }
+    },
+    {
+      "id": "weak-moves-half",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ethanoic acid is different. When you dilute it, the hydronium and ethanoate ions are spread out, so they meet less often, and fewer join back into whole molecules. The balance settles with a bigger fraction ionised. Those extra ions partly make up for the dilution. So the hydronium per litre falls by much less than ten times, and for ethanoic acid the pH rises only about half a unit."
+      }
+    },
+    {
+      "id": "bases-and-check",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The bases mirror this. Ammonia only partly reacts with water, so dilution lets more of it react, and its pH falls only about half a unit. The diluted readings match the last practical, too. But look at the gap between the two acids: almost two units before dilution, about one point four after. That's why the last practical found about twenty three times, not seventy. Dilution narrows the gap, because the weak acid ionises more."
+      }
+    },
+    {
+      "id": "variables",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, the variables. In test one, the independent variable is which acid or base you use, and in test two it's the dilution. The dependent variable is the pH, or its change. And you control the concentration, the temperature, the volume in each beaker, the calibrated meter and the rinsing routine."
+      }
+    },
+    {
+      "id": "validity-reliability",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Validity: does the test measure strength? Matching the concentration makes test one valid, and test two checks it without trusting the labels. Reliability: repeats agree within a few hundredths, and across two sessions. Accuracy: the readings near one and thirteen are less certain, outside the calibration. But the conclusions rest on big gaps, so they still hold."
+      }
+    },
+    {
+      "id": "risk-assessment",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The risk assessment. Zero point one zero zero moles per litre sodium hydroxide sits just under the irritant limit, so treat a splash as harmful and wear safety glasses. The acids and ammonia are well below their limits, but glasses stay on. The concentrated stocks are corrosive and stay with your teacher. And handle the pipette with a filler, never by mouth."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the rule to remember: match, then compare. And when you dilute tenfold, strong moves about one, weak moves about half."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A student measures zero point five zero moles per litre methanoic acid at pH two point zero three, and zero point zero zero two zero moles per litre nitric acid at two point seven zero. She concludes methanoic acid is stronger. Evaluate her conclusion, and describe how she should change her method. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Her conclusion isn't valid. The concentrations differ by two hundred and fifty times, so the pH depends on concentration as well as strength. She should test both acids at the same concentration, with the same meter and temperature. Then nitric acid, which ionises completely, would read lower. \"Lower pH, so stronger acid\" is the trap."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more. An acid of unknown concentration has a pH of two point four zero. She dilutes it exactly tenfold with a volumetric pipette and flask, and the pH becomes two point nine zero. Is the acid strong or weak? Justify your answer. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "It's weak. Ten millilitres to a hundred is a tenfold dilution. A strong acid would leave a tenth of the hydronium and rise about one unit, to three point four. This one rose only zero point five zero, so more molecules ionised as it was diluted, and that only happens when an acid is partly ionised. A low starting pH tells you nothing about strength on its own."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to use pH to show strength: match the concentrations and compare, or dilute exactly tenfold and see how far the pH moves. Strong moves about one unit, weak moves less. But why does chloride never take its proton back, while ethanoate does? Next: conjugate pairs, and the species that can go both ways."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

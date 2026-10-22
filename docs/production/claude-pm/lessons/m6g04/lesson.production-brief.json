@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6g04/lesson.json",
+    "lessonSha256": "a74590daf9e8aa04d964bf1b0f90640c5fd3ee78638b45baa803c9a2a9362b57"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From C12: a titration counts moles; n = cV; the balanced ratio; c = n ÷ V for the unknown; the unknown can be in the burette. From C13: the salt at equivalence (ammonium gives protons to water, so a strong acid with a weak base has an acidic equivalence point); choose the indicator whose colour change falls inside the steep part; a wrong indicator moves the endpoint; four ranges (methyl orange 3.1 to 4.4, methyl red 4.4 to 6.2, bromothymol blue 6.0 to 7.6, phenolphthalein 8.3 to 10.0). From C14: a curve plots pH against volume added; equivalence is in the middle of the steepest part; the strong acid/weak base profile, including the level stretch after equivalence when ammonia is added from the burette (excess ammonia and ammonium form a buffer); conductivity: hydronium and hydroxide conduct far better than other ions; a weak acid starts low and rises gently, then steeply after equivalence. From C15: the four back-titration steps (acid added, acid left over, subtract moles, mole ratio), percentage by mass; carbon dioxide boiled off; read conductometric equivalence where two best-fit lines cross; readings corrected for the volume added. From P06 (playlist order 19): rinse a burette with the solution it will deliver; a water-rinsed burette dilutes its solution. Year 11: n = m ÷ M. Not assumed: half-equivalence for a base; five-region pH calculations.",
+    "startsWith": "Unseen curve and titration data. The video opens: Titration questions hand you a pH curve, an indicator, a sample that won't dissolve, or a conductivity graph.",
+    "stopsAfter": "reading the equivalence volume from a pH curve and calculating a concentration; explaining why the equivalence point of a strong acid/weak base titration is acidic and choosing the indicator whose colour change falls inside the steep part; predicting and explaining the direction of the error from a late indicator when the unknown is in the burette; calculating a percentage by mass from back titration data and explaining the direction of the error from a water-rinsed burette; explaining the conductivity profile of a weak base titrated with a strong acid and reading equivalence where the best-fit lines cross.",
+    "nextLesson": "choosing the right analysis method for a sample (route chem-m6-c16)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-g04.md"
+  ],
+  "teaching": {
+    "task": "A titration question gives you a pH curve, an indicator, a back titration or a conductivity graph. Where is the equivalence point, does the method find it, and if it misses, which way does the answer move?",
+    "causalExplanation": "Why equivalence is not read at pH 7: the salt at equivalence is acidic here (2b tag, 2c). Why the equivalence point is acidic: ammonium gives protons to water (2c). Why methyl red: its change lies inside the steep drop, one drop either side of equivalence, about 6.6 to 4 (2c). Why methyl orange is acceptable but second best: it changes at the foot of the drop, slightly late (2c). Why bromothymol blue fails: its change starts above the drop, before equivalence (2d). Why phenolphthalein turns pink late with ammonia in the burette: at equivalence the pH jumps only to about 7, then excess ammonia and ammonium form a buffer, so the pH reaches 8.3 only after extra ammonia (3b, 3c). Why a larger titre gives a smaller concentration here: the unknown is in the burette, so its volume divides the moles (3c, 3d). Why a water-rinsed burette lowers the percentage: diluted sodium hydroxide gives a larger back titre, so the leftover acid looks larger and the acid used smaller (4c). Why bigger back titres mean less sample: the back titre measures what is left over (4d). Why the conductivity starts low: a weak base is mostly molecules (5b). Why it rises gently: ions are added, not replaced, before equivalence (5b). Why it climbs steeply: excess hydronium conducts far better (5b). Why read the crossing: equivalence falls between readings (5c, 5d).",
+    "conversationalApproach": "Titration questions hand you a pH curve, an indicator, a sample that will not dissolve or a conductivity graph, and each asks where the equivalence point is, whether the method finds it, and which way the answer moves if it misses. Q1 (ammonia titrated with hydrochloric acid) reads equivalence in the middle of the steepest part of the curve, finds the concentration, and chooses an indicator that changes inside the steep part because ammonium makes the equivalence pH acidic; Q2 runs the same titration the other way round with phenolphthalein, pictures the new curve and follows the too-large titre through the formula with the unknown in the burette; Q3 is a back titration of eggshell in four steps, then traces a water-wet burette to a percentage that comes out too low; Q4 explains the shape of an ammonia conductivity graph from the ions present and reads equivalence where two best-fit lines cross. Each question ends with its spoken, crossed classic mistake (bromothymol blue because neutral is 7, bigger titre means bigger concentration, bigger titre means more carbonate, the first steep reading), and the decision board gives the first move for each kind of data.",
+    "openingDecision": "Titration questions hand you a pH curve, an indicator, a sample that won't dissolve, or a conductivity graph. Each one asks: where is the equivalence point, does the method find it, and if it misses, which way does the answer move? Here are four HSC-style questions.",
+    "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a): volumes, concentrations, the indicator table (Q1, Q2), the curve (Q1), \"the same ammonia\" (Q2, so Q1's answer may be used), the equation and molar mass (Q3), \"corrected for the volume added\" and the points (Q4). Nothing answer-bearing during the holds; the check strip dims.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p53), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" \"investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example: - strong acid/strong base - strong acid/weak base - weak acid/strong base (ACSCH080, ACSCH102)\" Practice and transfer only: the coverage rows stay with chem-m6-c12 to c15 and chem-m6-p06; G04 adds practice rows, not first coverage. starts at the route's \"Present unfamiliar curve and titration data and protect an attempt\" and stops at its \"Choose an indicator or method and show the short calculation or reason\". Four questions, chosen from what the earlier designs hand on: error direction for indicator choices beyond \"titre too small\" (`chem-m6-c13.md` Boundary: \"error-direction tables beyond 'titre too small' (chem-m6-g04)\"; C13 site correction 3: \"The direction of the error depends on which solution is in the burette\"; `chem-m6-c14.md` Boundary: \"error direction for indicator choices (chem-m6-g04)\") is Q2; error direction for back titrations beyond the carbon dioxide step (`chem-m6-c15.md` Boundary: \"error direction tables beyond the carbon dioxide step (chem-m6-g04)\") is Q3 and key note 4's error table; reading a pH curve for the equivalence volume and choosing an indicator from it is Q1; reading a conductivity graph by its crossing lines is Q4. The strong acid/weak base profile, the syllabus example the earlier attempts used least (C13 A2 in words only; C14 scene 7 as a demonstration), is the system in Q1, Q2 and Q4, met three ways: a pH curve with the acid added, the same titration with the solutions swapped, and a conductivity graph. Not here: the five-region pH calculations (C14 open decision: \"recommended: leave out\"; the site labels them Extension and exam questions analyse supplied curves; left out, recorded under Open decisions); barium hydroxide with sulfuric acid (C15 attempt 2 used it); weak acid with weak base (site Extension); half-equivalence for a base (pKa of ammonium from the curve: not taught in C14, which read pKa for a weak acid only); aliquot scale-up (chem-m6-g03); choosing among pH probes, direct, back and conductivity titrations for a range of samples (chem-m6-c16, the next video; the decision board names when each tool in this video applies, without the full method choice); burette technique itself (chem-m6-p06; Q3 recalls its rinsing rule in one clause)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G02 layout: top-left the question card (stem, data, graph and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"pH curve: equivalence and indicator\", \"Indicator error: which way?\", \"Back titration: subtract, then the error\", \"Conductivity: where the lines cross\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip (the graph stays full size beside it) and each given is underlined in amber in the question text at the cue where it is used (no givens card). A check strip on the far left carries three rows, \"where is equivalence?\", \"which way does it move?\", \"does it make sense?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Colour key from C13 to C15: the ammonia curve teal, the hydrochloric acid titrant navy (C12), indicator range bands in their own two colours, conductivity points amber with teal best-fit lines, hydronium teal, hydroxide violet, ammonium grey-violet, chloride grey; amber is otherwise used only for underlined givens. Clutter rule (owner): besides the question strip, the graph and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.",
+    "transitionPlan": "The heading writes on and four small thumbnails fan out, one per kind of data; each question opens on a fresh board with the type badge hidden while the worded card writes with its coded lineGraph, indicator table or apparatus plate kept on screen; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as working lines write one stage per line, earlier lines dimming to kept chips; indicator colour bands lay over the steep part of the curve and the reversed curve draws as a ghost; the four-step back titration ladder builds and shrinks to a thumbnail as the burette plate and error chain return; ion tallies build under the conductivity graph and two teal best-fit lines draw and ring their crossing; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading \"Curves, indicators, back titration: where is equivalence?\" writes on.",
+      "teachingReason": "Hook: Titration questions hand you a pH curve, an indicator, a sample that won't dissolve, or a conductivity graph.",
+      "narrationCue": "equivalence point / way",
+      "motionPurpose": "On the spoken cues: Four small thumbnails fan out on the right, one per item named: a pH curve (C14 style, teal), a range band (methyl red colours), `m6-conical-flask-v1.png` small with a grey \"excess acid\" tag, a conductivity thumbnail with two crossing lines. On \"equivalence point\" a pen ring lands on the steep part",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Curves, indicators, back titration: where is equivalence?\" writes on. Four small thumbnails fan out on the right, one per item named: a pH curve (C14 style, teal), a range band (methyl red colours), `m6-conical-flask-v1.png` small with a grey \"excess acid\" tag, a conductivity thumbnail with two crossing lines. On \"equivalence point\" a pen ring lands on the steep part of the curve thumbnail and the crossing of the conductivity thumbnail. On \"way\" a small up-down arrow pair appears beside the flask thumbnail. The check strip builds on the left: \"where is equivalence?\", \"which way does it move?\", \"does it make sense?\". On \"four HSC-style questions\" the thumbnails become four numbered question cards with one shared tag line beneath them, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second; the check strip shrinks to the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: an ammonia curve) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. Twenty millilitres of ammonia solution is",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: an ammonia curve)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A 20.00 mL sample of ammonia solution, NH₃(aq), was titrated with 0.100 mol/L hydrochloric acid. The pH of the solution in the flask was recorded. The results are shown in the graph.\" Demands: \"(a) Use the graph to determine the concentration of the ammonia solution.\" \"(b) Select the most suitable indicator from the table, and justify your choice.\" Indicator table on the card: \"methyl orange 3.1 to 4.4 (red to yellow) | methyl red 4.4 to 6.2 (red to yellow) | bromothymol blue 6.0 to 7.6 (yellow to blue) | phenolphthalein 8.3 to 10.0 (colourless to pink)\". Beside it the coded graph: x axis \"volume of 0.100 mol/L HCl added (mL)\" 0 to 40, grid every 2 mL, labels every 4 mL; y axis \"pH\" 0 to 12, grid and labels every 1 unit; the computed curve (author note a) drawn as a teal line: starting near 11.2, a gentle fall through about 9.3 at 12 mL, a near-vertical drop at 24 mL, then levelling near 1.6 by 40 mL. No points labelled, no equivalence marker. Two answer boxes. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card and graph stay on screen. Nothing answer-bearing: no vertical line, no range band on the graph.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-concentration",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"pH curve: equivalence and indicator\".",
+      "teachingReason": "Where is equivalence?: Find the equivalence point first.",
+      "narrationCue": "steepest / twenty four point zero / two point four zero times ten to the minus three / zero point one two zero",
+      "motionPurpose": "On the spoken cues: On \"steepest\" a pen bracket marks the near-vertical section, a dashed vertical drops from its midpoint to the x axis and a chip \"24.0 mL\" lands on the axis; a faint grey tag \"middle of the steep part, not pH 7\" fades after its sentence. Equation strip: \"NH₃(aq) + HCl(aq) → NH₄Cl(aq)\". On \"two point",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"pH curve: equivalence and indicator\". On \"steepest\" a pen bracket marks the near-vertical section, a dashed vertical drops from its midpoint to the x axis and a chip \"24.0 mL\" lands on the axis; a faint grey tag \"middle of the steep part, not pH 7\" fades after its sentence. Equation strip: \"NH₃(aq) + HCl(aq) → NH₄Cl(aq)\". On \"two point four zero times ten to the minus three\" \"0.100 mol/L hydrochloric acid\" underlines and the line \"n(HCl) = 0.100 × 0.0240 = 2.40 × 10⁻³ mol\" writes. \"Ammonia reacts one to one\" writes \"n(NH₃) = 2.40 × 10⁻³ mol (1 : 1)\"; on \"zero point one two zero\" \"20.00 mL sample\" underlines and \"c(NH₃) = 2.40 × 10⁻³ ÷ 0.02000 = 0.120 mol/L\" writes; earlier lines dim; answer box (a) fills \"V(eq) = 24.0 mL; c(NH₃) = 0.120 mol/L\". Grey tag (fades): \"3 s.f.: 0.100 and a graph reading to 0.1 mL\". Strip: \"where is equivalence?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-indicator",
+      "visualDecision": "new",
+      "visualReference": "the working lines dim to the kept chip \"c(NH₃) = 0.120 mol/L\".",
+      "teachingReason": "Which indicator?: Now the indicator.",
+      "narrationCue": "acidic / six point six to four / inside / foot",
+      "motionPurpose": "On the spoken cues: On \"acidic\" a small equation writes: \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\" (grey tag \"C13: the salt takes after its stronger parent\", fades), and an amber dot lands on the curve at 24.0 mL, pH about 5.3, tag \"equivalence pH ≈ 5\"; the equation dims to grey as the dot lands. On \"six point six to",
+      "motionRole": "explain",
+      "onScreenChange": "the working lines dim to the kept chip \"c(NH₃) = 0.120 mol/L\". On \"acidic\" a small equation writes: \"NH₄⁺(aq) + H₂O(l) ⇌ NH₃(aq) + H₃O⁺(aq)\" (grey tag \"C13: the salt takes after its stronger parent\", fades), and an amber dot lands on the curve at 24.0 mL, pH about 5.3, tag \"equivalence pH ≈ 5\"; the equation dims to grey as the dot lands. On \"six point six to four\" a pale vertical bracket on the y axis spans one drop either side of equivalence (23.95 to 24.05 mL: about 6.6 to 3.9), labelled \"about 6.6 to 4 (one drop either side)\"; the dot's tag dims. On \"inside\" the C13 range band overlay slides methyl red's band (4.4 to 6.2, red to yellow) onto the y axis; the band's crossing of the curve shades entirely within the bracket; \"Select the most suitable indicator\" underlines; answer box (b) fills \"methyl red: equivalence acidic (NH₄⁺ + H₂O); its change (6.2 to 4.4) lies inside the steep drop (about 6.6 to 4)\". On \"foot\" methyl red's band dims and methyl orange's band (3.1 to 4.4) slides in beside it in a paler tone, its crossing shading just below the bracket; tag (bright, replacing the dot tag): \"methyl orange: changes just after the drop, slightly late; also accepted\"; answer box (b) adds \"methyl orange: slightly late, also acceptable\". Strip: \"does it make sense?\" ticks (equivalence pH below 7, as the salt rule predicts).",
+      "motionTools": [
+        "Mark underline",
+        "Enter slide",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"bromothymol blue: neutralisation gives pH 7\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"equivalence here is about pH 5\".",
+      "teachingReason": "The classic mistake: The classic mistake is bromothymol blue, because neutralisation should give pH seven.",
+      "narrationCue": "early",
+      "motionPurpose": "On the spoken cues: On \"early\" bromothymol blue's band (6.0 to 7.6, yellow to blue) slides onto the y axis in grey beside methyl red's; its crossing of the curve shades from about 23.5 mL, mostly above the steep part, with a small bracket \"starts about 0.5 mL early\". Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"bromothymol blue: neutralisation gives pH 7\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"equivalence here is about pH 5\". On \"early\" bromothymol blue's band (6.0 to 7.6, yellow to blue) slides onto the y axis in grey beside methyl red's; its crossing of the curve shades from about 23.5 mL, mostly above the steep part, with a small bracket \"starts about 0.5 mL early\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: the same titration, the other way round) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. Another student titrates the same ammonia",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: the same titration, the other way round)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. `m6-burette-clamp-stand-v1.png` small at the card's upper right with `m6-conical-flask-v1.png` under its tip; coded labels \"NH₃(aq)\" on the burette and \"HCl + phenolphthalein\" on the flask. The card writes on: \"A second student titrates the same ammonia solution the other way round. She places 25.00 mL of 0.100 mol/L hydrochloric acid and a few drops of phenolphthalein in a conical flask, then adds the ammonia solution from a burette until the solution first turns faint pink.\" Demand: \"Explain the effect of her choice of indicator on her calculated concentration of the ammonia solution.\" The indicator table stays on the card. No graph (picturing it is part of the task). One answer box. Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-picture",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Indicator error: which way?\".",
+      "teachingReason": "Picture the curve this way round: Picture the curve this way round.",
+      "narrationCue": "one / twenty point eight / seven / buffer",
+      "motionPurpose": "On the spoken cues: The burette and flask thumbnail stays, labels pulsing (\"NH₃ in the burette\"). A new coded graph draws point by point (author note b): x axis \"volume of NH₃ added (mL)\" 0 to 30, y axis \"pH\" 0 to 12. On \"one\" the curve starts at 1.0 and rises slowly (an empty grey tag \"excess HCl\" over the early",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Indicator error: which way?\". The burette and flask thumbnail stays, labels pulsing (\"NH₃ in the burette\"). A new coded graph draws point by point (author note b): x axis \"volume of NH₃ added (mL)\" 0 to 30, y axis \"pH\" 0 to 12. On \"one\" the curve starts at 1.0 and rises slowly (an empty grey tag \"excess HCl\" over the early part). On \"twenty point eight\" Q1's kept chip \"c(NH₃) = 0.120 mol/L\" returns small and a grey line writes \"V(eq) = 2.50 × 10⁻³ mol ÷ 0.120 mol/L = 20.8 mL\"; the curve reaches about pH 5.3 at 20.8 mL, amber dot \"equivalence ≈ pH 5\". On \"seven\" the curve draws its short, near-vertical jump from about 3 (20.5 mL) to about 7.2 (21.0 mL), and a short bracket on it reads \"jump: about 3 to 7\"; the grey V(eq) line dims. On \"buffer\" the curve after 21 mL rises slowly from about 7 through 8 to about 8.9 at 30 mL; tag \"excess NH₃ + NH₄⁺: buffer (C14)\". Strip: \"where is equivalence?\" ticks.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-direction",
+      "visualDecision": "new",
+      "visualReference": "on \"two more millilitres\" phenolphthalein's band (8.3 to 10.0, colourless to pink) slides onto the y axis; the curve meets 8.3 at about 23.1 mL, and a bracket between 20.8 and 23.1 mL reads \"about 2 mL of extra NH₃\"; \"until the solution first turns faint pink\" underlines.",
+      "teachingReason": "Follow the titre through the formula: Phenolphthalein turns pink at eight point three, and in that buffer the pH gets there only after about two more millilitres of ammonia.",
+      "narrationCue": "two more millilitres / large / small",
+      "motionPurpose": "On the spoken cues: On \"large\" the error chain writes: \"late pink → titre ↑\". On \"small\" the band and the bracket dim to grey (the chain and the tile stay bright) and the formula tile writes \"c(NH₃) = n(HCl) ÷ V(titre)\" with \"25.00 mL of 0.100 mol/L\" underlined (\"n(HCl) = 2.50 × 10⁻³ mol\", unchanged), the volume block",
+      "motionRole": "explain",
+      "onScreenChange": "on \"two more millilitres\" phenolphthalein's band (8.3 to 10.0, colourless to pink) slides onto the y axis; the curve meets 8.3 at about 23.1 mL, and a bracket between 20.8 and 23.1 mL reads \"about 2 mL of extra NH₃\"; \"until the solution first turns faint pink\" underlines. On \"large\" the error chain writes: \"late pink → titre ↑\". On \"small\" the band and the bracket dim to grey (the chain and the tile stay bright) and the formula tile writes \"c(NH₃) = n(HCl) ÷ V(titre)\" with \"25.00 mL of 0.100 mol/L\" underlined (\"n(HCl) = 2.50 × 10⁻³ mol\", unchanged), the volume block on the bottom grows from \"20.8 mL\" to \"23.1 mL\" and the result shrinks; the chain completes \"→ c(NH₃) ↓\"; a grey line \"2.50 × 10⁻³ ÷ 0.0231 = 0.108 mol/L (true 0.120)\". Answer box fills \"phenolphthalein turns pink only after excess NH₃ (buffer, pH < 8.3 at equivalence): titre too large; c = n ÷ V, so c(NH₃) too low\". Strip: \"which way does it move?\" and \"does it make sense?\" tick.",
+      "motionTools": [
+        "Mark underline",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"titre too large, so c(NH₃) too high\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"unknown in the burette: c = n ÷ V\".",
+      "teachingReason": "The classic mistake: The classic mistake is saying a bigger titre means a bigger concentration.",
+      "narrationCue": "burette",
+      "motionPurpose": "On the spoken cues: On \"burette\" two small formula tiles sit side by side: \"unknown in flask: c = c(titrant) × V(titre) ÷ V(sample)\" (V(titre) on top, grey) and \"unknown in burette: c = n ÷ V(titre)\" (V(titre) on the bottom, white, ringed). The new aid writes small: \"Move the titre, then follow it through the",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"titre too large, so c(NH₃) too high\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"unknown in the burette: c = n ÷ V\". On \"burette\" two small formula tiles sit side by side: \"unknown in flask: c = c(titrant) × V(titre) ÷ V(sample)\" (V(titre) on top, grey) and \"unknown in burette: c = n ÷ V(titre)\" (V(titre) on the bottom, white, ringed). The new aid writes small: \"Move the titre, then follow it through the formula.\" Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: a back titration, and an error) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. Zero point two zero zero grams",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: a back titration, and an error)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The card writes on: \"Eggshell is mainly calcium carbonate. A 0.200 g sample of crushed eggshell was added to 25.00 mL of 0.2500 mol/L hydrochloric acid, an excess. When the reaction was complete, the mixture was boiled to remove carbon dioxide, then cooled. The leftover acid required 24.90 mL of 0.1000 mol/L sodium hydroxide solution.\" Data lines: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\", \"M(CaCO₃) = 100.1 g/mol\". Demands: \"(a) Calculate the percentage by mass of calcium carbonate in the eggshell.\" \"(b) Before filling the burette, the student rinsed it with distilled water only. Explain the effect of this on the calculated percentage of calcium carbonate.\" Two answer boxes. No plate (a worded question; an eggshell picture would carry no part of the reasoning). Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-calculate",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Back titration: subtract, then the error\".",
+      "teachingReason": "Four steps: The four back titration steps.",
+      "narrationCue": "six point two five zero times ten to the minus three / two point four nine zero times ten to the minus three / three point seven six zero times ten to the minus three / one to two ratio / one point eight eight zero times ten to the minus three / zero point one eight eight two / zero point two zero zero / ninety four point one per cent",
+      "motionPurpose": "On the spoken cues: A four-step ladder writes, one rung per cue, earlier rungs dimming: on \"six point two five zero\" \"25.00 mL of 0.2500 mol/L\" underlines and \"n(HCl added) = 0.2500 × 0.02500 = 6.250 × 10⁻³ mol\"; on \"two point four nine zero\" \"24.90 mL of 0.1000 mol/L\" underlines and \"n(HCl left) = n(NaOH) = 0.1000 ×",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Back titration: subtract, then the error\". A four-step ladder writes, one rung per cue, earlier rungs dimming: on \"six point two five zero\" \"25.00 mL of 0.2500 mol/L\" underlines and \"n(HCl added) = 0.2500 × 0.02500 = 6.250 × 10⁻³ mol\"; on \"two point four nine zero\" \"24.90 mL of 0.1000 mol/L\" underlines and \"n(HCl left) = n(NaOH) = 0.1000 × 0.02490 = 2.490 × 10⁻³ mol\"; on \"three point seven six zero\" \"n(HCl used) = 6.250 × 10⁻³ − 2.490 × 10⁻³ = 3.760 × 10⁻³ mol\" with a C15 grey tag \"subtract moles, not volumes\" (fades); on \"one to two ratio\" the equation on the card underlines (its \"CaCO₃ + 2HCl\"), and on \"one point eight eight zero\" the line \"n(CaCO₃) = 3.760 × 10⁻³ ÷ 2 = 1.880 × 10⁻³ mol\" writes; on \"zero point one eight eight two\" \"M(CaCO₃) = 100.1 g/mol\" underlines and \"m = 1.880 × 10⁻³ × 100.1 = 0.1882 g\" writes; on \"zero point two zero zero\" \"0.200 g\" underlines; on \"ninety four point one\" \"% = 0.1882 ÷ 0.200 × 100 = 94.1%\" writes; one result line lands per spoken cue, each earlier rung dimming; answer box (a) fills \"94.1% CaCO₃\". Grey tag (fades): \"3 s.f.: limited by 0.200 g\". Strip: \"does it make sense?\" ticks (under 100%; eggshell is mostly calcium carbonate).",
+      "motionTools": [
+        "Mark underline",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-error",
+      "visualDecision": "adjust",
+      "visualReference": "the ladder shrinks to a thumbnail (kept chip \"94.1%\").",
+      "teachingReason": "Which way does it move?: Now the burette.",
+      "narrationCue": "dilutes / big / low",
+      "motionPurpose": "On the spoken cues: `m6-burette-clamp-stand-v1.png` small with a few coded water droplets inside the tube and `m6-wash-bottle-v1.png` beside it (grey tag \"distilled water only\"); \"rinsed it with distilled water only\" underlines. On \"dilutes\" the coded fill in the burette pales slightly (tag \"NaOH a little weaker than",
+      "motionRole": "explain",
+      "onScreenChange": "the ladder shrinks to a thumbnail (kept chip \"94.1%\"). `m6-burette-clamp-stand-v1.png` small with a few coded water droplets inside the tube and `m6-wash-bottle-v1.png` beside it (grey tag \"distilled water only\"); \"rinsed it with distilled water only\" underlines. On \"dilutes\" the coded fill in the burette pales slightly (tag \"NaOH a little weaker than 0.1000\"). On \"big\" the error chain writes, each arrow lighting in turn: \"titre ↑ → n(HCl left) ↑ → n(HCl used) ↓ → n(CaCO₃) ↓ → % ↓\"; the ladder thumbnail's rung 2 gets an up arrow and rung 3 a down arrow. On \"low\" answer box (b) fills \"diluted NaOH: back titre too large → leftover acid overestimated → acid used underestimated → % CaCO₃ too low\". On \"rinse the burette\" the P06 rule writes small in green: \"burette: rinse with the solution it will deliver\". Strip: \"which way does it move?\" ticks.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"titre too large, so % CaCO₃ too high\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"back titre = leftover acid\".",
+      "teachingReason": "The classic mistake: The classic mistake is thinking a bigger titre means more calcium carbonate.",
+      "narrationCue": "left over",
+      "motionPurpose": "On the spoken cues: On \"left over\" a small bar splits: \"acid added\" (full bar) into \"used by eggshell\" and \"left over\"; the \"left over\" part grows and the \"used\" part shrinks. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"titre too large, so % CaCO₃ too high\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"back titre = leftover acid\". On \"left over\" a small bar splits: \"acid added\" (full bar) into \"used by eggshell\" and \"left over\"; the \"left over\" part grows and the \"used\" part shrinks. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q4-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 4: an ammonia conductivity graph) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question four. Fifty millilitres of blue-dyed ammonia is",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 4: an ammonia conductivity graph)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. `m6-conductivity-meter-titration-v1.png` small at the card's upper right (coded label \"blue-dyed NH₃(aq)\" on the beaker; blank screen). The card writes on: \"A 50.00 mL sample of an ammonia solution coloured with a blue dye was titrated with 0.500 mol/L hydrochloric acid. The dye hides indicator colours. The acid was added in 1.00 mL portions and the conductivity was measured after each addition. The results, corrected for the volume added, are shown in the graph.\" Demands: \"(a) Explain the shape of the graph.\" \"(b) Use the graph to determine the concentration of the ammonia solution.\" Beside it the coded graph: x axis \"volume of 0.500 mol/L HCl added (mL)\" 0 to 16, grid every 1 mL; y axis \"conductivity (relative)\", no numbers; 17 amber points (author note d), no lines drawn. Two answer boxes. Nothing answer-bearing: no lines, no tally, no marker. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q4-shape",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Conductivity: where the lines cross\".",
+      "teachingReason": "Why it starts low, rises gently, then steeply: Ammonia is a weak base, so it's mostly whole molecules, with few ions: the conductivity starts low.",
+      "narrationCue": "low / gently / steeply",
+      "motionPurpose": "On the spoken cues: A C14-style ion tally sits under the graph (tokens sized by how well each ion conducts; grey tag \"C14: H₃O⁺ and OH⁻ conduct far better\", fades). On \"low\" the 0 mL point rings; the tally shows mostly grey whole NH₃ molecules with a few ions; \"Explain the shape\" underlines. On \"gently\" the points",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Conductivity: where the lines cross\". A C14-style ion tally sits under the graph (tokens sized by how well each ion conducts; grey tag \"C14: H₃O⁺ and OH⁻ conduct far better\", fades). On \"low\" the 0 mL point rings; the tally shows mostly grey whole NH₃ molecules with a few ions; \"Explain the shape\" underlines. On \"gently\" the points from 1 to 8 mL light in turn; the tally adds an NH₄⁺ and a Cl⁻ token per portion (equation chip \"NH₃ + H₃O⁺ → NH₄⁺ + H₂O\"); tag \"ions added: NH₄⁺ and Cl⁻\". On \"steeply\" the points from 9 to 16 mL light; the tally adds large teal H₃O⁺ tokens with Cl⁻; tag \"excess H₃O⁺: conducts far better\". Answer box (a) fills \"weak base: few ions, low start; NH₄⁺ and Cl⁻ form, gentle rise; after equivalence excess H₃O⁺ (high conductivity), steep rise\". Strip: \"where is equivalence?\" (outline only, not yet ticked).",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q4-crossing",
+      "visualDecision": "new",
+      "visualReference": "the tally dims.",
+      "teachingReason": "Read where the lines cross: Equivalence is where the two straight stretches meet.",
+      "narrationCue": "cross / eight point four zero / four point two zero times ten to the minus three / zero point zero eight four zero",
+      "motionPurpose": "On the spoken cues: On \"cross\" two teal best-fit lines draw through the 2 to 7 mL points and the 10 to 16 mL points (C15 ruler style) and extend to meet; a dashed vertical drops from the crossing to the axis, chip \"8.40 mL\", with a small bracket showing the crossing sits between the 8 mL and 9 mL readings. On \"four",
+      "motionRole": "explain",
+      "onScreenChange": "the tally dims. On \"cross\" two teal best-fit lines draw through the 2 to 7 mL points and the 10 to 16 mL points (C15 ruler style) and extend to meet; a dashed vertical drops from the crossing to the axis, chip \"8.40 mL\", with a small bracket showing the crossing sits between the 8 mL and 9 mL readings. On \"four point two zero times ten to the minus three\" \"0.500 mol/L hydrochloric acid\" underlines and \"n(HCl) = 0.500 × 0.00840 = 4.20 × 10⁻³ mol = n(NH₃) (1 : 1)\" writes. On \"zero point zero eight four zero\" \"50.00 mL sample\" underlines and \"c(NH₃) = 4.20 × 10⁻³ ÷ 0.05000 = 0.0840 mol/L\" writes; answer box (b) fills \"equivalence where the lines cross: 8.40 mL; c(NH₃) = 0.0840 mol/L\". Grey tag (fades): \"3 s.f.: 0.500 mol/L; crossing read as 8.40 mL\". Strip: \"where is equivalence?\" and \"does it make sense?\" tick.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q4-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"V(eq) = 9.00 mL, the first steep reading: c = 0.0900 mol/L\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"read where the lines cross\".",
+      "teachingReason": "The classic mistake: The classic mistake is reading equivalence at nine millilitres, the first reading on the steep part.",
+      "narrationCue": "between",
+      "motionPurpose": "On the spoken cues: On \"between\" the 8 mL and 9 mL points pulse either side of the crossing. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"V(eq) = 9.00 mL, the first steep reading: c = 0.0900 mol/L\" writes on and, on \"the classic mistake\", takes a grey scribble cross with the caption \"read where the lines cross\". On \"between\" the 8 mL and 9 mL points pulse either side of the crossing. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the check strip returns full size as a two-column board, \"What you're given\" and \"What you do first\", each row lighting on its cue with its question number badge: \"pH curve → equivalence: middle of the steepest part; indicator: changes inside it (Q1)\"; \"an error → which way does the titre move? Then follow it through the formula; unknown in the burette: V on the bottom (Q2)\"; \"back titration → more left over, less sample (Q3)\"; \"conductivity graph → equivalence where the best-fit lines cross (Q4)\".",
+      "teachingReason": "Decision board: A pH curve?",
+      "narrationCue": "inside / titre / lines cross",
+      "motionPurpose": "On the spoken cues: The back-titration error table is not shown here (it would be unspoken reading on a busy board); it appears in key note 4, where the quiet hold gives time to read it. On \"Next\" a chip \"Next: which analysis method fits a sample?\" slides in at the lower right with `m6-ph-meter-probe-beaker-v1.png`",
+      "motionRole": "explain",
+      "onScreenChange": "the check strip returns full size as a two-column board, \"What you're given\" and \"What you do first\", each row lighting on its cue with its question number badge: \"pH curve → equivalence: middle of the steepest part; indicator: changes inside it (Q1)\"; \"an error → which way does the titre move? Then follow it through the formula; unknown in the burette: V on the bottom (Q2)\"; \"back titration → more left over, less sample (Q3)\"; \"conductivity graph → equivalence where the best-fit lines cross (Q4)\". The back-titration error table is not shown here (it would be unspoken reading on a busy board); it appears in key note 4, where the quiet hold gives time to read it. On \"Next\" a chip \"Next: which analysis method fits a sample?\" slides in at the lower right with `m6-ph-meter-probe-beaker-v1.png` small. Hold about 2 seconds.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6g04-learning-review.md",
+      "sha256": "8d7f1484362826710f8c1806873ba71f1f1d5176cdf297d453cd8a11353f76e6"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6g04-claude-science-check.md",
+      "sha256": "2cfebdeb618968093e3da8e4d4032d33f9074872a6ed16efa7f3e4b3bbaca8b9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

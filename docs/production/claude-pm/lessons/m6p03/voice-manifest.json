@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-P03-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6p03/lesson.json",
+  "lessonSha256": "10efc4e1a7d26e9859ef9f69a1371185ae229a60e7fa9c1aa80c3bdaae9f77ab",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6p03/lesson.production-brief.json",
+    "sha256": "97addf91e2a5d878e893de4efcfd1a6e62804395083da3d2d4d755e31dc9e1cb"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This pH meter has just been calibrated, and it reads distilled water as five point eight two. Shouldn't pure water be seven? So is the meter faulty? Hold that thought. In this practical you measure the pH of a range of acids and bases, and before you trust a number like this, the method has to be right.",
+      "hash": "a09a80daa7a7",
+      "textSha256": "a09a80daa7a771e8b30822800fc4216c665dcdf6fbb782dc533f6358993e50c1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/hook.a09a80daa7a7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/hook.a09a80daa7a7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/hook.a09a80daa7a7.generation.json",
+      "plannedRequestSha256": "359fea21f70fc14a60cd531a481f801ed5795f18d552f0419b3261022dc14a3d"
+    },
+    {
+      "id": "range",
+      "parentSceneId": "range",
+      "text": "Here's the range: hydrochloric acid, acetic acid, distilled water, ammonia solution and sodium hydroxide. The two acids and two bases are all zero point zero one zero moles per litre, so any difference comes from the substance, not the amount dissolved. Pour about twenty millilitres of each into a clean, labelled beaker.",
+      "hash": "5fbe1fab6d6a",
+      "textSha256": "5fbe1fab6d6a53b550c902ae1ef927fef0f5fe597f26faf821e1377a3144bc49",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/range.5fbe1fab6d6a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/range.5fbe1fab6d6a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/range.5fbe1fab6d6a.generation.json",
+      "plannedRequestSha256": "999b055efe2f34008497ee9c6edef5d055e6d4062aae64576c6847c7df064e1e"
+    },
+    {
+      "id": "meter",
+      "parentSceneId": "meter",
+      "text": "How does the meter know? The probe has a thin glass bulb at its tip. Hydronium ions in the solution produce a tiny voltage across that glass, and the meter turns the voltage into a pH number. But the link between voltage and pH drifts as the probe ages, and it changes with temperature. So the meter has to be shown what the right answers look like.",
+      "hash": "99899618a54e",
+      "textSha256": "99899618a54e5a228db6b2774084095987769eb48e570413997a0604f0ef5783",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/meter.99899618a54e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/meter.99899618a54e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/meter.99899618a54e.generation.json",
+      "plannedRequestSha256": "2325a40f09849d695aa19a0267ba6b865baaa7a511a8843c7ca13bcf05b025a6"
+    },
+    {
+      "id": "calibration",
+      "parentSceneId": "calibration",
+      "text": "That's calibration. You dip the probe into buffer solutions, which hold a known, steady pH. Start with the pH seven buffer, then pH four, and add pH ten because you'll measure bases too. The meter draws a straight line through those known points. One buffer gives only one point, so the meter would have to guess the slope. Buffers on both sides of seven check the line for acids and for bases. Calibrate at the same temperature as your samples, on the day you measure.",
+      "hash": "39e4f20d4ff7",
+      "textSha256": "39e4f20d4ff713844aee0a9650f4c130dbce365f2eaad14dc8dda8337a7b8823",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/calibration.39e4f20d4ff7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/calibration.39e4f20d4ff7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/calibration.39e4f20d4ff7.generation.json",
+      "plannedRequestSha256": "0614418a0e57a5cc22b08d3d9bc880a2a2b4d8d4a7229a197cf1e099d3dcc0b2"
+    },
+    {
+      "id": "routine",
+      "parentSceneId": "routine",
+      "text": "Then, for every sample: rinse the probe with distilled water, and gently blot it. Any solution left on the glass would be carried into the next beaker, and change its reading. Lower the bulb fully in, swirl gently, and wait until the reading stops changing, because the glass needs time to respond. Take three readings, each in a fresh portion, so one contaminated portion can't affect all three.",
+      "hash": "1377433aca67",
+      "textSha256": "1377433aca672094f871a34353a36f21ddbaff9e47d78fbb5e4b430b34340928",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/routine.1377433aca67.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/routine.1377433aca67.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/routine.1377433aca67.generation.json",
+      "plannedRequestSha256": "d23f46dc2c9d44d86251a862bb02c93e763440ab641a5eebb2f20b39b0bb0b66"
+    },
+    {
+      "id": "results",
+      "parentSceneId": "results",
+      "text": "Here are one class's results, as means of three readings. Hydrochloric acid, two point zero three. Acetic acid, three point four zero. Distilled water, five point nine six, with readings that wandered. Ammonia, ten point five nine. And sodium hydroxide, eleven point nine six. Notice the repeats for each acid and base agree within about zero point zero two.",
+      "hash": "5f65e6098861",
+      "textSha256": "5f65e6098861d15caeb97102c6d9e72444c02ef8bb683ad5a8066bc4d85d361e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/results.5f65e6098861.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/results.5f65e6098861.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/results.5f65e6098861.generation.json",
+      "plannedRequestSha256": "9f3bddf5d7a6a65ba227f888f41f29d3283633e41b5e5c265f3fdecc309e4f39"
+    },
+    {
+      "id": "ions",
+      "parentSceneId": "ions",
+      "text": "So what do the numbers say about the ions? Below seven, a solution has more hydronium ions than hydroxide ions. Above seven, more hydroxide. Hydrochloric acid reads about one point four lower than acetic acid. Each pH step is ten times, so two steps would be a hundred, and this is in between: about twenty three times as many hydronium ions, at the same concentration. That's strength, and the next practical tests it properly. Both bases have extra hydroxide, sodium hydroxide far more.",
+      "hash": "9e7ec7c98f01",
+      "textSha256": "9e7ec7c98f01ac1a32b073123401f94ada57aad88f2606f45f2d5f07a6262344",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/ions.9e7ec7c98f01.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/ions.9e7ec7c98f01.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/ions.9e7ec7c98f01.generation.json",
+      "plannedRequestSha256": "9f09a7309487bcbe06d0fc5eade9abc852469092219bed5601f3b72dcafa1304"
+    },
+    {
+      "id": "water",
+      "parentSceneId": "water",
+      "text": "Now the water. The meter wasn't faulty. Carbon dioxide from the air dissolves in water and forms a little carbonic acid, which gives a few hydronium ions to the water. So water left open to the air really is slightly acidic. And with so few ions, the probe struggles to settle, so the readings drift and spread. Distilled doesn't always mean neutral.",
+      "hash": "7bf9aae6b6e8",
+      "textSha256": "7bf9aae6b6e81ef7d6836276fa476c1d37d7ccb56c09039e919806bc4bcf86dd",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/water.7bf9aae6b6e8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/water.7bf9aae6b6e8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/water.7bf9aae6b6e8.generation.json",
+      "plannedRequestSha256": "c1bdd66f4a229a6c123e55184a681da1f0ca0a66863c98c602af04ed2be98f4a"
+    },
+    {
+      "id": "meter-vs-indicator",
+      "parentSceneId": "meter-vs-indicator",
+      "text": "Why use a meter at all? Universal indicator paper gives a colour, which you match to a chart to about the nearest whole number, and two people can judge the same colour differently. The meter gives two decimal places. But careful: those decimals only mean something if the meter is calibrated.",
+      "hash": "8c78980aadc4",
+      "textSha256": "8c78980aadc4428ebc5e6964f8916c555daa0f22c8ca3c62192b74a64b895d9a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/meter-vs-indicator.8c78980aadc4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/meter-vs-indicator.8c78980aadc4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/meter-vs-indicator.8c78980aadc4.generation.json",
+      "plannedRequestSha256": "dc954c9c1de0cafbeec3edcb399d0598f490a944e0b7491443395a0fe57bb674"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "So, the variables. The independent variable is which solution you test. The dependent variable is the pH. And the controlled variables are the concentration, the temperature, the volume in each beaker, the same calibrated meter, and the same rinsing routine.",
+      "hash": "3a12dd48ab0f",
+      "textSha256": "3a12dd48ab0f6ba4fcd72d76dc6ab981609eacd0a3b9cb37ff73d0bfd2cecb58",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/variables.3a12dd48ab0f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/variables.3a12dd48ab0f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/variables.3a12dd48ab0f.generation.json",
+      "plannedRequestSha256": "85f23fec66eea21f3943e6f4c448ac5d77343b1c48cac09503b6d28e7610af0f"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Now the three words from the equilibrium practical. Validity: are you measuring the pH of the solution you meant to? Rinsing, fresh portions and labelled beakers keep anything else out of the reading. Reliability: do repeated readings agree? For the acids and bases, yes. For the water, no. Accuracy: how close is the reading to the true pH? That depends on calibration: buffers on both sides of seven, as close to your readings as you can, at your samples' temperature.",
+      "hash": "5805b0cbb5f8",
+      "textSha256": "5805b0cbb5f8f1ea32898e1a9f519e1ca94368c26993d5e6d482f7c8250b783a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/validity-reliability.5805b0cbb5f8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/validity-reliability.5805b0cbb5f8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/validity-reliability.5805b0cbb5f8.generation.json",
+      "plannedRequestSha256": "ac85d8ebd4791a8d63a5653c92eddfb2048623539081925a6679431bd9985d9f"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. At zero point zero one zero moles per litre, these acids and bases are too dilute to be classified as hazardous, but wear safety glasses anyway, because a splash in the eye can still irritate. They're made up from stronger stocks, and the concentrated ones are corrosive. The glass bulb is thin and breaks easily, so keep the probe in its holder, and never stir with it.",
+      "hash": "93246fbded0d",
+      "textSha256": "93246fbded0dcb8290464e7b7d485ffeddd39ccafc334e231c017bd9d8ae4860",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/risk-assessment.93246fbded0d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/risk-assessment.93246fbded0d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/risk-assessment.93246fbded0d.generation.json",
+      "plannedRequestSha256": "a5f3714f7ff0bea5cd08cd5a66569f3a2a9f2a99539c2603e740aca6bf9db825"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here's the routine to remember: calibrate first, rinse between, wait for steady. And when you read the result, one pH step is ten times the hydronium.",
+      "hash": "615b77d6938a",
+      "textSha256": "615b77d6938a99fe3ba6bf645c359755ee34ab65dc792f1253ef1343fb4c1c84",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/memory-aid.615b77d6938a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/memory-aid.615b77d6938a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/memory-aid.615b77d6938a.generation.json",
+      "plannedRequestSha256": "aa024f76d50ea06729cb07b2eae374d2de2751f5f9dfca3fc45970a9e498cb62"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student measures sodium hydroxide solution, then, without rinsing the probe, measures distilled water and gets nine point two. Other groups got about six for the same water. Explain the difference, and describe how she should change her method. Pause here to answer.",
+      "hash": "6181b570b066",
+      "textSha256": "6181b570b066ef5846fe922969937b8bc1f1ec3f3650e26407ab1901e2a6a264",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/attempt-1.6181b570b066.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/attempt-1.6181b570b066.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/attempt-1.6181b570b066.generation.json",
+      "plannedRequestSha256": "c3d5cf3eebcecb8051c77a52bd188af6a1c4ba047d3df84e9326c6ae79bb2d9d"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Sodium hydroxide left on the probe was carried into the water. Water has almost no ions of its own, so a tiny amount of hydroxide raises its pH a lot. She should rinse and blot the probe between samples, then measure a fresh portion. Averaging more readings wouldn't fix it: without rinsing, the carried-over hydroxide still pushes the average up.",
+      "hash": "fd7ecac0e4ef",
+      "textSha256": "fd7ecac0e4ef9d84264db6d8f43aa868bf5f88a02630d7474b6ab8cd649583d3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/feedback-1.fd7ecac0e4ef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/feedback-1.fd7ecac0e4ef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/feedback-1.fd7ecac0e4ef.generation.json",
+      "plannedRequestSha256": "a518a8ab0f26dbeb41de2bb42c2ad5cc2351c3a69724f7a61907abced3dc7524"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. A student calibrates with a pH seven buffer only, then reads the hydrochloric acid three times: two point three one, two point three zero and two point three two. Another group, using pH seven and four buffers, gets two point zero three. Evaluate the reliability and accuracy of her results. Pause here to answer.",
+      "hash": "4417a88456ff",
+      "textSha256": "4417a88456ffe8db60a418482fb62f3f3f6b86692c373e7d9fd8cc588f095646",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/attempt-2.4417a88456ff.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/attempt-2.4417a88456ff.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/attempt-2.4417a88456ff.generation.json",
+      "plannedRequestSha256": "3e8dba5869b4562e42f2960b2e3429d9a337256ca5b6d8ace18e007c57a6c200"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Her results are reliable: the three readings agree within zero point zero two. But they aren't accurate: they sit about zero point three above the other group's two point zero three. With one buffer, the meter had to guess its slope, so every reading shares the same error. Calibrate with pH four as well, then repeat. \"They agree, so they're accurate\" is the classic slip.",
+      "hash": "a93f1cc2138f",
+      "textSha256": "a93f1cc2138f04a76de576e35e0d85d2a26c21bd365e3f96a0796d7c633615da",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/feedback-2.a93f1cc2138f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/feedback-2.a93f1cc2138f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/feedback-2.a93f1cc2138f.generation.json",
+      "plannedRequestSha256": "d124eb7c31abe72f20ca99fe35634f07f385e7fd2ed510a6e40665d73cd9c840"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: calibrate with buffers on both sides of seven, rinse and blot between samples, wait for a steady reading, and repeat in fresh portions. Then read each number as hydronium against hydroxide, each step ten times. Next: using pH to compare strong and weak acids and bases.",
+      "hash": "99cfc98bf1ef",
+      "textSha256": "99cfc98bf1ef341a1444c824dc33fa40d1e50255553ccd589d4e843289734192",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/decision-rule.99cfc98bf1ef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/decision-rule.99cfc98bf1ef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/decision-rule.99cfc98bf1ef.generation.json",
+      "plannedRequestSha256": "1f9d26a22a2ce5d8058e87bd10bc23a3128b6ecdcb7820f6d3ed562f7d63ca47"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P03-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

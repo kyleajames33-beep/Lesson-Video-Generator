@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-G04-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6g04/lesson.json",
+  "lessonSha256": "a74590daf9e8aa04d964bf1b0f90640c5fd3ee78638b45baa803c9a2a9362b57",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6g04/lesson.production-brief.json",
+    "sha256": "86da9cd817062b6273fdd9a64e4d72ab2deac198c8c5432b57886576ebd49415"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Titration questions hand you a pH curve, an indicator, a sample that won't dissolve, or a conductivity graph. Each one asks: where is the equivalence point, does the method find it, and if it misses, which way does the answer move? Here are four HSC-style questions.",
+      "hash": "a3a97cbaaccb",
+      "textSha256": "a3a97cbaaccb16fe29002e685bbc56d281f43999f28feabca09872f4116642c9",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/hook.a3a97cbaaccb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/hook.a3a97cbaaccb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/hook.a3a97cbaaccb.generation.json",
+      "plannedRequestSha256": "5138c35b8ec9bde9a343647eb68990338a601d19751dd0dd78d5e5013093b1a0"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Twenty millilitres of ammonia solution is titrated with zero point one zero zero moles per litre hydrochloric acid, and the graph shows the pH. Use the graph to find the concentration of the ammonia. Then select the most suitable indicator from the table, and justify your choice. Pause here to answer.",
+      "hash": "9d011d2c3f96",
+      "textSha256": "9d011d2c3f968a3837558549a63577add87b58c4cde80e9cd05c2e77fa70e22b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-question.9d011d2c3f96.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-question.9d011d2c3f96.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-question.9d011d2c3f96.generation.json",
+      "plannedRequestSha256": "e9a67710a468ac5515856e688c3557d48f0f50913f7c69896de0e1702d782f9c"
+    },
+    {
+      "id": "q1-concentration",
+      "parentSceneId": "q1-concentration",
+      "text": "Find the equivalence point first. It's in the middle of the steepest part of the curve, at twenty four point zero millilitres. Moles of acid: two point four zero times ten to the minus three. Ammonia reacts one to one, so divide by the twenty millilitre sample: zero point one two zero moles per litre.",
+      "hash": "30973fd5a67b",
+      "textSha256": "30973fd5a67b52a610bfc5295f6847a9555271795d56ae5805e51bac6d06f624",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-concentration.30973fd5a67b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-concentration.30973fd5a67b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-concentration.30973fd5a67b.generation.json",
+      "plannedRequestSha256": "7e06f6eb3d9160da7aa1cef19a91061b988f0c7faa849c5f0992285f2cbe3996"
+    },
+    {
+      "id": "q1-indicator",
+      "parentSceneId": "q1-indicator",
+      "text": "Now the indicator. At equivalence, the flask holds ammonium chloride, and ammonium gives protons to water, so the pH there is acidic, about five. One drop either side of equivalence, the pH falls from about six point six to four. Methyl red changes between six point two and four point four, right inside that drop, so it fits best. Methyl orange changes at the foot of the drop: slightly late, but acceptable.",
+      "hash": "bf4355ad42a4",
+      "textSha256": "bf4355ad42a4d02a15388c3d9e88334134b79120e5b7f586396ca48483f91211",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-indicator.bf4355ad42a4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-indicator.bf4355ad42a4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-indicator.bf4355ad42a4.generation.json",
+      "plannedRequestSha256": "5ce8a8f7aad4d6c24ad7be8131e46f6ddf7cc7592b5c90c11537941eb18f740e"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is bromothymol blue, because neutralisation should give pH seven. It starts changing about half a millilitre early, above the steep part, so the titre would come out a little too small.",
+      "hash": "a30eacafe4f6",
+      "textSha256": "a30eacafe4f6d32ce711963075a734be621fc45270f39f2ef4c808177bfcc73d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-mistake.a30eacafe4f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-mistake.a30eacafe4f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q1-mistake.a30eacafe4f6.generation.json",
+      "plannedRequestSha256": "ae37b8f0c7189a0a991cb44e064e9c27f5fe67d99d3c4f4115e124e85443cf27"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. Another student titrates the same ammonia the other way round: twenty five millilitres of the zero point one zero zero moles per litre acid and phenolphthalein in the flask, and ammonia in the burette, until the solution turns faint pink. Explain the effect of her indicator on her calculated ammonia concentration. Pause here to answer.",
+      "hash": "ad2f0b54e7e1",
+      "textSha256": "ad2f0b54e7e166e20bd4ed3f12098dc5556872e6418ba3d9a08f643252ffd8d6",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-question.ad2f0b54e7e1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-question.ad2f0b54e7e1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-question.ad2f0b54e7e1.generation.json",
+      "plannedRequestSha256": "d4e1f4767c0efa6f64a76a9648f06154de4bcb0543c7cafc48881f19e4210086"
+    },
+    {
+      "id": "q2-picture",
+      "parentSceneId": "q2-picture",
+      "text": "Picture the curve this way round. It starts low, near pH one, and the equivalence point is still acidic, about five. With question one's answer, that's at about twenty point eight millilitres. There the pH jumps, but only to about seven. Then the extra ammonia and the ammonium form a buffer, so the pH creeps up slowly instead of leaping on to ten.",
+      "hash": "6646aafdea2a",
+      "textSha256": "6646aafdea2af45cbb78fa3ebcfdfe3530d915cb608d56836489e8e89d367c70",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-picture.6646aafdea2a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-picture.6646aafdea2a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-picture.6646aafdea2a.generation.json",
+      "plannedRequestSha256": "eb282ac9a0e73063c925bc95f045cb39a2a279bee33b44c8e30f098d6af09572"
+    },
+    {
+      "id": "q2-direction",
+      "parentSceneId": "q2-direction",
+      "text": "Phenolphthalein turns pink at eight point three, and in that buffer the pH gets there only after about two more millilitres of ammonia. So her titre is too large. She divides the same moles of acid by that bigger volume, so her ammonia concentration comes out too small: about zero point one zero eight, not zero point one two zero.",
+      "hash": "53221ae703df",
+      "textSha256": "53221ae703dfe7b496694127a67b1445b657da08ad4a97f6c4c57122bc4726ea",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-direction.53221ae703df.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-direction.53221ae703df.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-direction.53221ae703df.generation.json",
+      "plannedRequestSha256": "d8c9594d0e334ad98d9f1d9fcdf89541b62879951387c289f8d5b663f6d3ab86"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is saying a bigger titre means a bigger concentration. That's true when the unknown is in the flask. Here the unknown is in the burette, so its volume goes on the bottom.",
+      "hash": "435f485698e5",
+      "textSha256": "435f485698e5839425f89af69ae71e460110cd47d2d818106b8fe41c2176bbd4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-mistake.435f485698e5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-mistake.435f485698e5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q2-mistake.435f485698e5.generation.json",
+      "plannedRequestSha256": "399263872302c53119a0c723265e5b006996a767f54976635aa0c54d06b16ccd"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. Zero point two zero zero grams of crushed eggshell reacts with twenty five millilitres of zero point two five zero zero moles per litre hydrochloric acid, an excess. After boiling, the leftover acid needs twenty four point nine zero millilitres of zero point one zero zero zero moles per litre sodium hydroxide. Find the percentage of calcium carbonate, and explain the effect of a burette rinsed only with water. Pause here to answer.",
+      "hash": "d78035b945da",
+      "textSha256": "d78035b945da054624a59c77056e2b7e37cef86fccd0b24c917979d9a994765d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-question.d78035b945da.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-question.d78035b945da.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-question.d78035b945da.generation.json",
+      "plannedRequestSha256": "7ef02854464f306a58aaa5386e1dccb5851b0d5b9abcfc14d70c04fbed26527c"
+    },
+    {
+      "id": "q3-calculate",
+      "parentSceneId": "q3-calculate",
+      "text": "The four back titration steps. Added: six point two five zero times ten to the minus three moles. Left over, equal to the sodium hydroxide: two point four nine zero times ten to the minus three. Subtract: the eggshell used three point seven six zero times ten to the minus three. Halve it for the one to two ratio: one point eight eight zero times ten to the minus three moles of calcium carbonate. That's zero point one eight eight two grams, out of zero point two zero zero: ninety four point one per cent.",
+      "hash": "881e031fd9aa",
+      "textSha256": "881e031fd9aa4acf2f49d068221a4f904d9f5519349fb60fbb459cee8d9dcaf2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-calculate.881e031fd9aa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-calculate.881e031fd9aa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-calculate.881e031fd9aa.generation.json",
+      "plannedRequestSha256": "b50707567631ea5e7c3b44a2606bb7242aaa155346a97a1521686792c13e5062"
+    },
+    {
+      "id": "q3-error",
+      "parentSceneId": "q3-error",
+      "text": "Now the burette. Water left inside dilutes the sodium hydroxide, so it takes more of it to neutralise the leftover acid. The titre is too big, so the leftover acid looks too big, the acid used looks too small, and the percentage of calcium carbonate comes out too low. The fix: rinse the burette with the solution it will deliver.",
+      "hash": "fbd46c878a98",
+      "textSha256": "fbd46c878a98bf3c21b9635aa5b4b81751d97ddbea98446b3c41e181a5d00f07",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-error.fbd46c878a98.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-error.fbd46c878a98.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-error.fbd46c878a98.generation.json",
+      "plannedRequestSha256": "c1b07643c5782bb4edb9e96126d3eb71bc2a1872fa935f8e5d57f7aab4310d1b"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is thinking a bigger titre means more calcium carbonate. In a back titration, the titre measures what's left over. So more left over means less sample.",
+      "hash": "c9cef83c7841",
+      "textSha256": "c9cef83c784198529d31def17bd16f8d0198098b2f4c65ca484e39a6e5975ede",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-mistake.c9cef83c7841.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-mistake.c9cef83c7841.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q3-mistake.c9cef83c7841.generation.json",
+      "plannedRequestSha256": "556eecd585b2f6553cc0311160d9649aa8ea16240d038cde08ded5c5f3471976"
+    },
+    {
+      "id": "q4-question",
+      "parentSceneId": "q4-question",
+      "text": "Question four. Fifty millilitres of blue-dyed ammonia is titrated with zero point five zero zero moles per litre hydrochloric acid, and the graph shows the corrected conductivity. Explain its shape, and use it to find the ammonia's concentration. Pause here to answer.",
+      "hash": "16fc9804c683",
+      "textSha256": "16fc9804c6839bb7203c48c92d93637489ee100bf78894491002c3798e321fc3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-question.16fc9804c683.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-question.16fc9804c683.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-question.16fc9804c683.generation.json",
+      "plannedRequestSha256": "f3974fdbd41152835e5236bd86cbfba971eab1da274ef08d90648a5fdf720069"
+    },
+    {
+      "id": "q4-shape",
+      "parentSceneId": "q4-shape",
+      "text": "Ammonia is a weak base, so it's mostly whole molecules, with few ions: the conductivity starts low. Each portion of acid turns ammonia into ammonium ions and adds chloride ions, so ions build up steadily, and the graph rises gently. After equivalence there's almost no ammonia left, so the extra acid adds hydronium, which conducts far better, and the graph climbs steeply.",
+      "hash": "2160cfa10255",
+      "textSha256": "2160cfa10255b88ea00bd7a89e8dff9cec4de17b6ecab4533eb7000c9babb4d3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-shape.2160cfa10255.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-shape.2160cfa10255.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-shape.2160cfa10255.generation.json",
+      "plannedRequestSha256": "68aa9519012d3fe726a781bc848969d64d1627cd8ec7b289bf43b5760e5de76b"
+    },
+    {
+      "id": "q4-crossing",
+      "parentSceneId": "q4-crossing",
+      "text": "Equivalence is where the two straight stretches meet. Draw a best-fit line through each, and they cross at eight point four zero millilitres, between two readings. Moles of acid: four point two zero times ten to the minus three, one to one with ammonia. Divide by the fifty millilitre sample: zero point zero eight four zero moles per litre.",
+      "hash": "a53911971810",
+      "textSha256": "a539119718106508c9920f2a9f5cca2f4e030d232cf6b48b152459a0f9a467d1",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-crossing.a53911971810.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-crossing.a53911971810.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-crossing.a53911971810.generation.json",
+      "plannedRequestSha256": "259a929b33b1dd12312c12a0e9f0fdde15d8c87d3805e409a84b50a212180806"
+    },
+    {
+      "id": "q4-mistake",
+      "parentSceneId": "q4-mistake",
+      "text": "The classic mistake is reading equivalence at nine millilitres, the first reading on the steep part. That gives zero point zero nine zero zero, too high. Equivalence usually falls between readings, so use the lines.",
+      "hash": "cb95ca7decda",
+      "textSha256": "cb95ca7decda2805bfecbade13a00576f1168a3a55c3239188ddc85e949843d2",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-mistake.cb95ca7decda.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-mistake.cb95ca7decda.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/q4-mistake.cb95ca7decda.generation.json",
+      "plannedRequestSha256": "e16300a0aec61f1caae7f52d91daf386e63b665a8f011396c6c96b45ac6d9206"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "A pH curve? Equivalence is in the middle of the steepest part, and the indicator must change inside it. An error? Decide which way the titre moves, then follow it through the formula. In a back titration, more left over means less sample. A conductivity graph? Read where the lines cross. Next, how to choose the right method for a sample.",
+      "hash": "0d25813ce508",
+      "textSha256": "0d25813ce508560154af4e425e40006e1d71e519adf07a18f61661fc4528c18d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/decision-board.0d25813ce508.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/decision-board.0d25813ce508.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/decision-board.0d25813ce508.generation.json",
+      "plannedRequestSha256": "d138e9954f875d065a64c405c1ca5de8999c596ac52b95d8b1d4f0a12eeed3af"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G04-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

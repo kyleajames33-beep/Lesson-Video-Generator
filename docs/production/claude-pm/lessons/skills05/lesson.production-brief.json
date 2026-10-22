@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/skills05/lesson.json",
+    "lessonSha256": "3ab12ad6a93b933ff1a58d3f418e62fb47ef0716ce076e1bad7c814ee275b49b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Series: s01 (reading routine: verb, marks, content words and givens, constraint, tick each part) and s02. s03 and s04 are not assumed. Chemistry: Year 11 significant figures, n = m/M, n = cV with V in litres; M6 C03 (q = mcΔT with the total mass, the reactant that runs out sets the moles of water, ΔH = -q / n in kJ mol-1, negative for a temperature rise, about -57 kJ mol-1, heat loss gives a less negative result; C03 already rounded to two significant figures from ΔT); M6 C07 (pH, pOH, pH + pOH = 14.00 at 25 °C, decimal places in pH = significant figures in the concentration). Biology: Year 11 significant figures (as for Chemistry, Year 10 percentages at least); B11 (allele frequency as copies over total copies; SNP genotypes read directly; \"Count alleles, not people\").",
+    "startsWith": "Calculate is the second most common command. The video opens: In the last five HSC Chemistry papers, calculate was the second most common command in the written section, after explain, and the commonest value was four marks. In every one of the last six Chemistry marking feedback reports, NESA flagged the same kinds of problem: hidden steps, lost units, or rounding too early. Recent Biology papers didn't use the word calculate, but still asked for numbers, like a probability or a number of people from a graph.",
+    "stopsAfter": "the four steps; a worked 4-mark molar enthalpy calculation; significant figures done strictly, with one accepted-range example; round once; visible working when a step is wrong; the sense check; one Chemistry pH drill and one Biology allele-frequency drill.",
+    "nextLesson": "s06, graphs and data questions."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/skills-s05.md"
+  ],
+  "teaching": {
+    "task": "When a question says calculate, what does a full-mark answer show, and how does showing it protect you when something goes wrong?",
+    "causalExplanation": "(1) calculate was the second most common command in the last five HSC Chemistry papers, most often for four marks, and every recent Chemistry marking feedback report flagged hidden steps, lost units or early rounding; Biology still asks for numbers (1); (2) one HSC-style Chemistry molar enthalpy question is set up (2); (3) the reading routine: the verb, four marks meaning steps to show, the quantity asked for (3); (4) the four steps with the memory aid \"one E and three S's\": equation, substitute, solve, sense check (4); (5) step one, the heat with the combined mass (5); (6) step two, the moles of water from the reactant that runs out (6); (7) step three, divide, add the sign, round once and sense check against minus fifty seven (7); (8) significant figures follow the least precise measurement, a subtraction keeps decimal places and exact numbers never limit (8); (9) round only once, and an accepted range allows for reading a graph, not for rounding (9); (10) when a step slips, visible working can still earn marks while a bare answer earns none, though bands are set question by question (10); two drills, one per subject, with feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "one fact carries the video: calculate is the second most common command in recent HSC Chemistry papers, and marking feedback keeps flagging hidden steps, lost units and early rounding. One HSC-style molar enthalpy question is read with the routine and then worked in four steps (equation, substitute, solve, sense check: one E and three S's), one answer row per stage with kept chips; significant figures are set by the least precise measurement, with the subtraction rule and exact numbers, the answer is rounded once at the end, and two answers with the same slip show why visible working protects marks. Two drills, one per subject (a Chemistry concentration and a Biology allele frequency), practise the layout.",
+    "openingDecision": "In the last five HSC Chemistry papers, calculate was the second most common command in the written section, after explain, and the commonest value was four marks. In every one of the last six Chemistry marking feedback reports, NESA flagged the same kinds of problem: hidden steps, lost units, or rounding too early. Recent Biology papers didn't use the word calculate, but still asked for numbers, like a probability or a number of people from a graph. So let's set out a calculation a marker can follow.",
+    "understandingCheck": "the narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, calculate, 3 marks: \"0.200 g of sodium hydroxide is dissolved in water and the solution is made up to 250.0 mL in a volumetric flask at 25 °C. Calculate the pH of this solution.\" Content: Year 11 n = m/M and c = n/V; C07 (pOH, pH + pOH = 14.00 at 25 °C, the decimal-places rule). Answer: n = 0.200 g / 40.00 g mol-1 = 5.00 x 10^-3 mol; [OH-] = 5.00 x 10^-3 mol / 0.2500 L = 0.0200 mol L-1; pOH = 1.699; pH = 14.00 - 1.699 = 12.301. Crossed habit: \"pH = 12.3\" (three significant figures in [OH-] give three decimal places in the pH). Drill 2, Biology, calculate, 2 marks: \"A sample of 250 central bearded dragons was genotyped at one SNP with two alleles, C and T. The results were: CC 90, CT 110, TT 50. Calculate the frequency of the T allele in this sample.\" Content: B11 (allele frequency = copies over total copies, two per individual; reading both copies shows every genotype). Answer: T copies = 110 + 2 x 50 = 210; total copies = 2 x 250 = 500; 210 / 500 = 0.42 (42%). Sense check (an independent count): f(C) = (2 x 90 + 110) / 500 = 290 / 500 = 0.58, and 0.42 + 0.58 = 1. Precision: counts are exact, so they do not limit the figures; 0.42 needs no rounding only because 210 / 500 divides exactly (a ratio such as 175 / 460 would still be rounded to a sensible length). Crossed habit: \"50 / 250 = 0.20\" (counts dragons, not alleles; B11's bank trap \"Count alleles, not people\"). Why these two: each tests the video's main presentation habits on a calculation students already know how to do, and each carries a different precision lesson (logs: decimal places; counts: exact numbers). Neither re-teaches content: C07 and B11 taught the methods. Magnification (plan example) not used: magnification is Year 11 Biology (Module 1), so it is not HSC examination content; allele frequency is the Year 12 Biology calculation in the plan's list. The plan's other examples are covered: pH (drill 1), moles (worked question and drill 1), frequencies (drill 2). Ksp (plan example) is not used, because the nearest audited guideline item (Chemistry 2024 Q32) is a Ksp-to-concentration calculation, and a Ksp drill would sit close to it.",
+    "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"calculate is the second most common command\". It stops after the four-step layout, a worked 4-mark calculation, significant figures (least precise measurement, subtraction and decimal places, exact numbers, the pH rule), round once, one accepted-range example, visible working when a step is wrong (with the no-automatic-carried-forward caveat), the sense check, and two drills. It does not cover graph reading and drawing (s06), practical uncertainty and accuracy (s07) or extended responses (s08)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. the shared skills kit (`src/explainer/lessons/skills-shared/`): `QuestionCard` with its annotation layer (`Ann` kinds verb, marks, given, constraint, ring, tag, pulse; `CardDim`), `MarksBadge`, `AnswerBox` (rows, margin ticks, counter, slots, `AAnn` under, ring), `MarkCounter`, `LostMarksTag`, `WeakStrongPanel`, `RoutineStrip` (mini at the far left), `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate` and `mkPlate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`. New lesson-local components (suggested folder `src/explainer/lessons/skills-s05`): `StepRail`: a four-row card (icons: an equation strip \"q = mcΔT\" glyph for Equation, a down arrow dropping a number into a slot for Substitute, an equals sign with a boxed result for Solve, a small gauge needle for Sense check; no hands or people), built like `RoutineStrip` and s04's `VerdictStrip` (mini and full states, rows lighting on cue). Each working row in the answer box carries a small step letter in the margin (E, S, S, S, with the word on first use). `UnitChip`: a small ink chip that rides with each number from the card into the working (\"60.0 mL\", \"0.0600 L\"), so units visibly travel and convert. Built from `Chip` at size 20. `SigFigLens`: a coded magnifier frame over a number that lights its significant digits (amber) and greys the placeholders; used on 0.0400, 100.0, 25.8, 20.6 and 5.2 (scene 8) and on 0.0200 and 12.301 (feedback 1). `SenseGauge`: a coded horizontal scale of ΔH from -40 to -60 kJ mol-1 with a fixed reference tick \"about -57 (C03)\" and a needle that settles on the answer; a green zone \"a little less negative: heat loss\" from about -50 to -57. Coded abstract diagram only. `BandLadder`: s04's band ladder (root may promote it to the shared kit; otherwise a lesson-local copy). Plates: `m6-foam-cup-calorimeter-v1.png` (worked question), `m6-volumetric-flask-v1.png` (drill 1), `b2-desert-lizard-v2.png` (drill 2). New `mkPlate` entries are needed (alpha boxes measured 21 Oct; see Assets). No people, hands or faces.",
+    "transitionPlan": "The command chip column builds tallest first and three problem tags from the feedback reports write beside it; the QuestionCard writes on with its badge and tag; the mini RoutineStrip lights its rows as the verb, marks and quantity are annotated; the StepRail builds full size in the side column and lights the row in use as the answer box fills one row per stage, earlier rows collapsing to kept chips; the SigFigLens moves along the data values while the working dims except the boxed answer; two short columns compare rounding once with rounding early; the WeakStrongPanel sets Answer A beside Answer B with margin ticks and a mark counter; each drill clears the board and its feedback lands the annotations fast before the model answer writes with ticks; the StepRail returns full size as the decision board and the next chip closes; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "A column of command chips builds, tallest first: \"explain 28\", \"calculate 24\", \"justify 12\" (bars, ink; Chemistry-only counts, matching the spoken \"Chemistry papers\").",
+      "teachingReason": "Hook: In the last five HSC Chemistry papers, calculate was the second most common command in the written section, after explain, and the commonest value was four marks.",
+      "narrationCue": "four marks / units / numbers",
+      "motionPurpose": "On the spoken cues: \"calculate\" lights amber. `GreyTag`: \"question parts with their own marks, NESA Chemistry papers, Section II, 2021 to 2025 (HSCScience count)\". On \"four marks\" the calculate bar opens into a small mark-value bar chart: 2 (2), 3 (6), 4 (11), 5 (3), 6 (1), 7 (1); the 4 bar lights amber. On \"units\" six Chemistry report tiles (2020 to 2025) each take a red `Flag` in turn, and three short chips write beside them: \"hidden",
+      "motionRole": "explain",
+      "onScreenChange": "A column of command chips builds, tallest first: \"explain 28\", \"calculate 24\", \"justify 12\" (bars, ink; Chemistry-only counts, matching the spoken \"Chemistry papers\"). \"calculate\" lights amber. `GreyTag`: \"question parts with their own marks, NESA Chemistry papers, Section II, 2021 to 2025 (HSCScience count)\". On \"four marks\" the calculate bar opens into a small mark-value bar chart: 2 (2), 3 (6), 4 (11), 5 (3), 6 (1), 7 (1); the 4 bar lights amber. On \"units\" six Chemistry report tiles (2020 to 2025) each take a red `Flag` in turn, and three short chips write beside them: \"hidden steps\", \"lost units\", \"rounded too early\". `GreyTag`: \"NESA marking feedback, Chemistry 2020 to 2025: 6 of 6 reports\". On \"numbers\" two small Biology chips: \"probability (Biology 2024)\" and \"number of people affected, from a graph (Biology 2024)\"; a tag \"the word calculate: Chemistry 24, Biology 0\". On \"full marks\" the chips clear and a working column draws as four empty ruled lines with a final boxed line. Heading writes on: \"Calculation answers that get full marks\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "question-card",
+      "visualDecision": "adjust",
+      "visualReference": "`QuestionCard` writes on.",
+      "teachingReason": "Question-card: Here's an HSC-style Chemistry question.",
+      "narrationCue": "calculate",
+      "motionPurpose": "On the spoken cues: Badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Card text: \"A student mixed 60.0 mL of 0.800 mol L-1 hydrochloric acid with 40.0 mL of 1.00 mol L-1 sodium hydroxide solution in a polystyrene cup. The temperature of the mixture rose from 20.6 °C to 25.8 °C.\" \"Assume the density of the mixture is 1.00 g mL-1 and its specific heat capacity is 4.18 J g-1 °C-1.\" \"Calculate the molar enthalpy of",
+      "motionRole": "explain",
+      "onScreenChange": "`QuestionCard` writes on. Badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Card text: \"A student mixed 60.0 mL of 0.800 mol L-1 hydrochloric acid with 40.0 mL of 1.00 mol L-1 sodium hydroxide solution in a polystyrene cup. The temperature of the mixture rose from 20.6 °C to 25.8 °C.\" \"Assume the density of the mixture is 1.00 g mL-1 and its specific heat capacity is 4.18 J g-1 °C-1.\" \"Calculate the molar enthalpy of neutralisation for this reaction.\" \"(4 marks)\" `m6-foam-cup-calorimeter-v1.png` small at the card's right (tag \"polystyrene cup\"); a coded amber readout chip on its thermometer stem counts from \"20.6 °C\" to \"25.8 °C\" on \"twenty five point eight\". Empty `AnswerBox` below (eight lines), counter \"0 / 4\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "read-it",
+      "visualDecision": "new",
+      "visualReference": "`RoutineStrip` mini at the far left; rows light on their cues.",
+      "teachingReason": "Read-it: Run the routine.",
+      "narrationCue": "calculate / kilojoules per mole / use",
+      "motionPurpose": "On the spoken cues: Annotations (`Ann`): highlighter on \"Calculate\"; a chip under it: \"calculate → work out an answer from given information\" with `GreyTag` \"NESA glossary, paraphrased\". Ring on \"(4 marks)\" lifting to a `MarksBadge` \"4\". On \"kilojoules per mole\" a teal bracket on \"molar enthalpy of neutralisation\" and a target chip in the answer box's last line: \"ΔH = ? kJ mol-1\" with a small \"±?\" sign slot. Under it a grey chip: \"kJ",
+      "motionRole": "explain",
+      "onScreenChange": "`RoutineStrip` mini at the far left; rows light on their cues. Annotations (`Ann`): highlighter on \"Calculate\"; a chip under it: \"calculate → work out an answer from given information\" with `GreyTag` \"NESA glossary, paraphrased\". Ring on \"(4 marks)\" lifting to a `MarksBadge` \"4\". On \"kilojoules per mole\" a teal bracket on \"molar enthalpy of neutralisation\" and a target chip in the answer box's last line: \"ΔH = ? kJ mol-1\" with a small \"±?\" sign slot. Under it a grey chip: \"kJ mol⁻¹ = kJ/mol (both fine)\" (C03 and C07 wrote kJ/mol and mol/L; this video uses the HSC paper form). On screen every \"mol-1\", \"L-1\", \"g-1\", \"°C-1\" and \"10^-3\" in this file renders with true superscripts. On \"use\" a ghost list (\"60.0 mL, 0.800, 40.0 mL, 1.00, 20.6, 25.8 ...\") writes in grey, takes a grey tag \"copied, not used\", and fades. The card shrinks to about 0.72 and keeps its annotations.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark highlight",
+        "DrawPath"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "four-steps",
+      "visualDecision": "new",
+      "visualReference": "`StepRail` builds full size in the side column, each row on its cue: \"Equation: symbols first\"; \"Substitute: values with units\"; \"Solve: answer, units, sign, sig figs\"; \"Sense check: size, sign, unit\".",
+      "teachingReason": "Four-steps: Every calculation answer can follow the same four steps.",
+      "narrationCue": "equation / Substitute / Solve / sense check",
+      "motionPurpose": "On the spoken cues: On \"one E and three S's\" the initials E, S, S, S light amber down the left edge of the rail. Memory aid writes large and handwritten under the rail: \"One E and three S's\". The rail then shrinks to a tab in the side column; its rows light on cue in scenes 5 to 7.",
+      "motionRole": "explain",
+      "onScreenChange": "`StepRail` builds full size in the side column, each row on its cue: \"Equation: symbols first\"; \"Substitute: values with units\"; \"Solve: answer, units, sign, sig figs\"; \"Sense check: size, sign, unit\". On \"one E and three S's\" the initials E, S, S, S light amber down the left edge of the rail. Memory aid writes large and handwritten under the rail: \"One E and three S's\". The rail then shrinks to a tab in the side column; its rows light on cue in scenes 5 to 7.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-1",
+      "visualDecision": "new",
+      "visualReference": "Rail row \"Equation\" lights; answer row 1 writes: \"q = mcΔT\" (margin \"E\").",
+      "teachingReason": "Step-1 (heat): Step one, the heat: q equals m c delta T.",
+      "narrationCue": "one hundred grams / kilojoules",
+      "motionPurpose": "On the spoken cues: On \"one hundred grams\" pen underlines on \"60.0 mL\" and \"40.0 mL\" and on \"1.00 g mL-1\"; `UnitChip`s ride down: \"60.0 mL + 40.0 mL = 100.0 mL; × 1.00 g mL-1 → 100 g\". Row 2: \"m = 100 g\" with a small grey tag \"3 sig figs (from 1.00 g mL-1)\". On \"five point two\" underlines on \"20.6 °C\" and \"25.8 °C\". Row 3: \"ΔT = 25.8 - 20.6 = 5.2 °C\". Rail row \"Substitute\" lights. Row 4: \"q = 100 g × 4.18 J g-1 °C-1 × 5.2 °C\" (margin",
+      "motionRole": "explain",
+      "onScreenChange": "Rail row \"Equation\" lights; answer row 1 writes: \"q = mcΔT\" (margin \"E\"). On \"one hundred grams\" pen underlines on \"60.0 mL\" and \"40.0 mL\" and on \"1.00 g mL-1\"; `UnitChip`s ride down: \"60.0 mL + 40.0 mL = 100.0 mL; × 1.00 g mL-1 → 100 g\". Row 2: \"m = 100 g\" with a small grey tag \"3 sig figs (from 1.00 g mL-1)\". On \"five point two\" underlines on \"20.6 °C\" and \"25.8 °C\". Row 3: \"ΔT = 25.8 - 20.6 = 5.2 °C\". Rail row \"Substitute\" lights. Row 4: \"q = 100 g × 4.18 J g-1 °C-1 × 5.2 °C\" (margin \"S\"), the three unit chips cancelling to \"J\" with a small strike on each matched unit. Underline on \"4.18 J g-1 °C-1\". On \"kilojoules\" row 5: \"= 2173.6 J = 2.1736 kJ\" (margin \"S\"); tick, \"1 / 4\"; a kept chip \"q = 2.1736 kJ\" lifts to the side. On \"Keep every digit\" a small grey tag \"not rounded yet\". Bright: the current row, its underline on the card, the kept chip. Earlier rows dim.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Mark underline"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-2",
+      "visualDecision": "new",
+      "visualReference": "Rows 1 to 5 collapse to the kept chip \"q = 2.1736 kJ\".",
+      "teachingReason": "Step-2 (moles): Step two, the moles of water.",
+      "narrationCue": "runs out first / why",
+      "motionPurpose": "On the spoken cues: New rows: \"n(HCl) = cV = 0.800 mol L-1 × 0.0600 L = 0.0480 mol\" (underlines on \"60.0 mL\" and \"0.800 mol L-1\"; a `UnitChip` converts \"60.0 mL → 0.0600 L\"). \"n(NaOH) = 1.00 mol L-1 × 0.0400 L = 0.0400 mol\" (underlines on \"40.0 mL\" and \"1.00 mol L-1\"). On \"runs out first\" C03's two-bar comparison draws small at the side (teal H+ bar 0.0480, violet OH- bar 0.0400; the violet bar ends first). Row: \"NaOH runs out first,",
+      "motionRole": "explain",
+      "onScreenChange": "Rows 1 to 5 collapse to the kept chip \"q = 2.1736 kJ\". New rows: \"n(HCl) = cV = 0.800 mol L-1 × 0.0600 L = 0.0480 mol\" (underlines on \"60.0 mL\" and \"0.800 mol L-1\"; a `UnitChip` converts \"60.0 mL → 0.0600 L\"). \"n(NaOH) = 1.00 mol L-1 × 0.0400 L = 0.0400 mol\" (underlines on \"40.0 mL\" and \"1.00 mol L-1\"). On \"runs out first\" C03's two-bar comparison draws small at the side (teal H+ bar 0.0480, violet OH- bar 0.0400; the violet bar ends first). Row: \"NaOH runs out first, so n(H2O) = 0.0400 mol\". Tick, \"2 / 4\"; kept chip \"n = 0.0400 mol\". On \"why\" the stated reason (\"NaOH runs out first\") takes an amber underline and a margin tag \"choice stated\".",
+      "motionTools": [
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "step-3",
+      "visualDecision": "new",
+      "visualReference": "Rail row \"Solve\" lights.",
+      "teachingReason": "Step-3 (answer and check): Step three: divide, then add the sign.",
+      "narrationCue": "rose / fifty four / heat loss",
+      "motionPurpose": "On the spoken cues: The two kept chips slide into the row \"ΔH = -q / n = -2.1736 kJ ÷ 0.0400 mol = -54.34 kJ mol-1\" (margin \"S\"). On \"rose\" the cup's readout arrow pulses up, and the minus sign writes in teal. Tick on the ΔH = -q / n line (applied, with sign and unit), \"3 / 4\". On \"fifty four\" the final line boxes: \"ΔH = -54 kJ mol-1\". Tick, \"4 / 4\" (correct value to two significant figures). Grey label \"HSCScience marking guide",
+      "motionRole": "explain",
+      "onScreenChange": "Rail row \"Solve\" lights. The two kept chips slide into the row \"ΔH = -q / n = -2.1736 kJ ÷ 0.0400 mol = -54.34 kJ mol-1\" (margin \"S\"). On \"rose\" the cup's readout arrow pulses up, and the minus sign writes in teal. Tick on the ΔH = -q / n line (applied, with sign and unit), \"3 / 4\". On \"fifty four\" the final line boxes: \"ΔH = -54 kJ mol-1\". Tick, \"4 / 4\" (correct value to two significant figures). Grey label \"HSCScience marking guide (illustrative)\". Rail row \"Sense check\" lights. `SenseGauge` draws in the side column: reference tick \"about -57 (C03)\"; the needle settles at -54 inside the green zone \"a little less negative\". On \"heat loss\" small orange arrows leave through the cup plate's wall and lid gap; tag \"heat lost, so ΔT a little low\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "sig-figs",
+      "visualDecision": "new",
+      "visualReference": "The working column dims except the boxed answer.",
+      "teachingReason": "Sig-figs: Why fifty four, and not fifty four point three?",
+      "narrationCue": "subtraction / two",
+      "motionPurpose": "On the spoken cues: `SigFigLens` moves along a row of the data values: \"60.0\" (3), \"0.800\" (3), \"1.00\" (3), \"4.18\" (3); the leading zero in \"0.800\" greys with a tag \"leading zeros don't count\". On \"subtraction\" \"25.8 - 20.6\" writes with the decimal places aligned; on \"two\" the lens shows \"5.2\" with two amber digits. Chip: \"÷ or ×: fewest significant figures; + or -: fewest decimal places\". \"-54.34\" rounds to \"-54\" with a pen ring on",
+      "motionRole": "explain",
+      "onScreenChange": "The working column dims except the boxed answer. `SigFigLens` moves along a row of the data values: \"60.0\" (3), \"0.800\" (3), \"1.00\" (3), \"4.18\" (3); the leading zero in \"0.800\" greys with a tag \"leading zeros don't count\". On \"subtraction\" \"25.8 - 20.6\" writes with the decimal places aligned; on \"two\" the lens shows \"5.2\" with two amber digits. Chip: \"÷ or ×: fewest significant figures; + or -: fewest decimal places\". \"-54.34\" rounds to \"-54\" with a pen ring on the \"5.2\" chip and a link arrow. Before \"Exact numbers\" the lens row and the rule chip dim. On \"Exact numbers\" a grey chip \"exact: counts, mole ratios, 1000 mL = 1 L (never limit)\". (The pH decimal-places chip moves to feedback 1, where it is used.) On \"two\" (second cue) the exact-numbers chip dims and a three-rung `BandLadder` draws: \"3: correct calculations, with correct significant figures\"; \"2: substantially correct, OR correct with incorrect significant figures\"; \"1: some relevant information\". The \"incorrect significant figures\" phrase takes an amber underline. `GreyTag`: \"a NESA Chemistry marking guideline, 2025 (3 marks)\". A second grey tag: \"also named in other criteria: 2021, 2022, 2023, 2024 (one question each)\". At most three bright items at any moment: the lens value, the rule chip, then (after both dim) the exact-numbers chip, then the ladder rung.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "round-once",
+      "visualDecision": "new",
+      "visualReference": "Two short columns side by side: left \"q = 2.1736 kJ → -54.34 → -54 kJ mol-1\" (tick); right \"q ≈ 2.2 kJ → -55.0 → -55 kJ mol-1\" with the \"2.2\" ringed red and a tag \"rounded too early\".",
+      "teachingReason": "Round-once: And round only once.",
+      "narrationCue": "fifty five / last line / range / reading",
+      "motionPurpose": "On the spoken cues: On \"fifty five\" the right column's answer flashes and a red scribble cross lands on \"2.2\". On \"last line\" a small grey sample-answer strip writes (coded, not a scan): \"a 2022 sample answer: 0.026362 → 0.052724 → 2.9446 → 68.163% → 68.2%\". Only the digit tails light, and amber lands on the last line only. Tag: \"a different question: watch the digits, not the chemistry\". `GreyTag`: \"a NESA sample answer, Chemistry",
+      "motionRole": "explain",
+      "onScreenChange": "Two short columns side by side: left \"q = 2.1736 kJ → -54.34 → -54 kJ mol-1\" (tick); right \"q ≈ 2.2 kJ → -55.0 → -55 kJ mol-1\" with the \"2.2\" ringed red and a tag \"rounded too early\". On \"fifty five\" the right column's answer flashes and a red scribble cross lands on \"2.2\". On \"last line\" a small grey sample-answer strip writes (coded, not a scan): \"a 2022 sample answer: 0.026362 → 0.052724 → 2.9446 → 68.163% → 68.2%\". Only the digit tails light, and amber lands on the last line only. Tag: \"a different question: watch the digits, not the chemistry\". `GreyTag`: \"a NESA sample answer, Chemistry 2022 (sample answers guide, they are not model answers)\". On \"range\" a coded graph sketch draws (two axes, a line, a reading dropped to the axis) with a short bracket on the axis: \"accepted range of readings\". `GreyTag`: \"a NESA Chemistry marking guideline, 2021 (2 marks)\". On \"reading\" the bracket stays and a small chip writes under it: \"the range covers reading the graph; your arithmetic still rounds once, to the right figures\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "working-when-wrong",
+      "visualDecision": "new",
+      "visualReference": "`WeakStrongPanel`: left \"Answer A\": one line, \"ΔH = -45 kJ mol-1\".",
+      "teachingReason": "Working-when-wrong: Now suppose you slip.",
+      "narrationCue": "nothing / two / main steps / question by question / visible / sense check",
+      "motionPurpose": "On the spoken cues: Right \"Answer B\": the full column with the slip: \"q = mcΔT\"; \"q = 100 g × 4.18 J g-1 °C-1 × 5.2 °C = 2.1736 kJ\"; \"n(HCl) = 0.0480 mol\" (ringed red, tag \"used the excess reactant\"); \"ΔH = -q ÷ n = -2.1736 kJ ÷ 0.0480 mol = -45 kJ mol-1\". On \"nothing\" Answer A's counter \"0 / 4\". On \"two\" Answer B's margin ticks land beside the q lines (\"q, with units\") and the ΔH = -q ÷ n line (\"ΔH = -q ÷ n, sign and unit\"); counter",
+      "motionRole": "explain",
+      "onScreenChange": "`WeakStrongPanel`: left \"Answer A\": one line, \"ΔH = -45 kJ mol-1\". Right \"Answer B\": the full column with the slip: \"q = mcΔT\"; \"q = 100 g × 4.18 J g-1 °C-1 × 5.2 °C = 2.1736 kJ\"; \"n(HCl) = 0.0480 mol\" (ringed red, tag \"used the excess reactant\"); \"ΔH = -q ÷ n = -2.1736 kJ ÷ 0.0480 mol = -45 kJ mol-1\". On \"nothing\" Answer A's counter \"0 / 4\". On \"two\" Answer B's margin ticks land beside the q lines (\"q, with units\") and the ΔH = -q ÷ n line (\"ΔH = -q ÷ n, sign and unit\"); counter \"2 / 4\". Grey label \"HSCScience marking guide (illustrative)\". `LostMarksTag` on B: \"-2: wrong moles of water, so wrong value\". On \"main steps\" the panel dims and a four-rung `BandLadder` draws on its own: \"4: correct answer\"; \"3: the main steps of the calculation\"; \"2: some relevant steps of the calculation\"; \"1: some relevant information\". `GreyTag`: \"a NESA Chemistry marking guideline, 2021 (4 marks)\". Neither answer is placed on the ladder. On \"question by question\" a grey chip: \"no general carried-forward rule in the published guidelines\". On \"visible\" Answer B's lines brighten again. On \"sense check\" the `SenseGauge` returns small: the needle at -45 lands outside the green zone; tag \"recheck: which reactant ran out?\". Answer B's ringed line pulses. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-1",
+      "visualDecision": "adjust",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Do the one in your subject,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text: \"0.200 g of sodium hydroxide is dissolved in water and the solution is made up to 250.0 mL in a volumetric flask at 25 °C.\" \"Calculate the pH of this solution.\" \"(3 marks)\" `m6-volumetric-flask-v1.png` small at the right with a coded label \"250.0 mL\". Nothing answer-bearing. Empty answer box, counter \"0 / 3\". `StepRail` mini at the side (all rows unlit). `DrillCountdown` 10 seconds with \"Pause here to answer.\" `RoutineStrip` dims.",
+      "motionTools": [
+        "HandText write-on",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"Calculate\", ring on \"(3 marks)\", underlines on \"0.200 g\", \"250.0 mL\" and \"25 °C\" as each is used.",
+      "teachingReason": "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "one point six nine nine / twelve point three zero one / three decimal places / above seven / twelve point three",
+      "motionPurpose": "On the spoken cues: Rows write with step letters and ticks: \"n(NaOH) = m / M = 0.200 g ÷ 40.00 g mol-1 = 5.00 × 10^-3 mol\" (E then S). Tick, \"1 / 3\". \"[OH-] = n / V = 5.00 × 10^-3 mol ÷ 0.2500 L = 0.0200 mol L-1\" (`UnitChip` \"250.0 mL → 0.2500 L\"). Tick, \"2 / 3\". \"pOH = -log(0.0200) = 1.699; pH = 14.00 - 1.699 = 12.301\". Tick, \"3 / 3\". A grey tag hangs from \"14.00\": \"14.00 at 25 °C: treated as exact here (C07)\" (Revision 2, blocker",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"Calculate\", ring on \"(3 marks)\", underlines on \"0.200 g\", \"250.0 mL\" and \"25 °C\" as each is used. Rows write with step letters and ticks: \"n(NaOH) = m / M = 0.200 g ÷ 40.00 g mol-1 = 5.00 × 10^-3 mol\" (E then S). Tick, \"1 / 3\". \"[OH-] = n / V = 5.00 × 10^-3 mol ÷ 0.2500 L = 0.0200 mol L-1\" (`UnitChip` \"250.0 mL → 0.2500 L\"). Tick, \"2 / 3\". \"pOH = -log(0.0200) = 1.699; pH = 14.00 - 1.699 = 12.301\". Tick, \"3 / 3\". A grey tag hangs from \"14.00\": \"14.00 at 25 °C: treated as exact here (C07)\" (Revision 2, blocker fix: it stops the scene 8 subtraction rule from reading as 12.30). On \"three decimal places\" `SigFigLens` lights the three figures of \"0.0200\" and the three decimals of \"12.301\", joined by an amber link. A small grey chip (moved from scene 8): \"pH: decimal places = sig figs in [OH-] or [H3O+] (C07)\". Earlier rows dim, so the bright items are the pH line, the lens link and the chip. On \"above seven\" a short pH track 0 to 14 draws with a dot at 12.301 on the basic side. On \"twelve point three\" a `CrossedHabit` chip \"pH = 12.3\" takes a red scribble cross. Caption \"three sig figs in [OH-] → three decimal places\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "Cam lens zoom",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-2",
+      "visualDecision": "adjust",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Now Biology. Two hundred and fifty bearded dragons",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\". Card text: \"A sample of 250 central bearded dragons was genotyped at one single nucleotide polymorphism (SNP) with two alleles, C and T.\" Table: \"Genotype | Number of dragons\"; \"CC | 90\"; \"CT | 110\"; \"TT | 50\". \"Calculate the frequency of the T allele in this sample.\" \"(2 marks)\" `b2-desert-lizard-v2.png` small at the right, cropped to the dragon (the egg cut-away below the sand line is masked off), tag \"central bearded dragon\". Nothing answer-bearing. Empty answer box, counter \"0 / 2\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"Calculate\", ring on \"(2 marks)\", underlines on \"250\", \"CT | 110\" and \"TT | 50\" as each is used.",
+      "teachingReason": "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "five hundred / zero point four two / exact / one / counts dragons",
+      "motionPurpose": "On the spoken cues: Rows write with step letters and ticks: \"frequency of T = T alleles ÷ all alleles\" (E). \"all alleles = 2 × 250 = 500; T alleles = 110 + (2 × 50) = 210\" (S). Tick, \"1 / 2\". \"f(T) = 210 ÷ 500 = 0.42 (42%)\" (S). Tick, \"2 / 2\". On \"exact\" a grey chip \"counts are exact: they don't limit the figures; 210 ÷ 500 = 0.42 exactly\". On \"one\" the C count writes first as an independent check, \"C: (2 × 90 + 110) ÷ 500 = 0.58\",",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"Calculate\", ring on \"(2 marks)\", underlines on \"250\", \"CT | 110\" and \"TT | 50\" as each is used. Rows write with step letters and ticks: \"frequency of T = T alleles ÷ all alleles\" (E). \"all alleles = 2 × 250 = 500; T alleles = 110 + (2 × 50) = 210\" (S). Tick, \"1 / 2\". \"f(T) = 210 ÷ 500 = 0.42 (42%)\" (S). Tick, \"2 / 2\". On \"exact\" a grey chip \"counts are exact: they don't limit the figures; 210 ÷ 500 = 0.42 exactly\". On \"one\" the C count writes first as an independent check, \"C: (2 × 90 + 110) ÷ 500 = 0.58\", then a short two-part bar draws: \"C 0.58\" and \"T 0.42\", summing to \"1.00\" (sense check). The \"five hundred\" cue is retimed from the recording (it now falls in the first sentence). On \"counts dragons\" a `CrossedHabit` chip \"50 ÷ 250 = 0.20\" takes a red scribble cross. Caption \"count alleles, not individuals (B11)\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "`StepRail` returns full size as the decision board, each row lighting on its cue with a one-line example from the worked question: \"q = mcΔT\"; \"100 g × 4.18 J g-1 °C-1 × 5.2 °C; NaOH runs out first\"; \"-54.34 → -54 kJ mol-1 (ΔT: 2 sig figs)\"; \"about -57: a little less negative, heat loss\".",
+      "teachingReason": "Decision-rule: So, every time you see calculate.",
+      "narrationCue": "equation / Substitute / Solve / sense check / Next",
+      "motionPurpose": "On the spoken cues: Memory aid small under the rail: \"One E and three S's\". On \"Next\" a chip slides in: \"Next: graphs and data questions\". A small axes doodle sits beside it.",
+      "motionRole": "explain",
+      "onScreenChange": "`StepRail` returns full size as the decision board, each row lighting on its cue with a one-line example from the worked question: \"q = mcΔT\"; \"100 g × 4.18 J g-1 °C-1 × 5.2 °C; NaOH runs out first\"; \"-54.34 → -54 kJ mol-1 (ΔT: 2 sig figs)\"; \"about -57: a little less negative, heat loss\". Memory aid small under the rail: \"One E and three S's\". On \"Next\" a chip slides in: \"Next: graphs and data questions\". A small axes doodle sits beside it. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills05-learning-review.md",
+      "sha256": "4ddebfab0c2469eb16b3537de7693b00427d3b5d6e9afaeb6e3f30349bcb6d14"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills05-claude-science-check.md",
+      "sha256": "3d59a197f7ab68b4ab70b3e09e670990a21fdda944a7806cf6db4f2d3e23dfb6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

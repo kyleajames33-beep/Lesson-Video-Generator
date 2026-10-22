@@ -1,0 +1,184 @@
+{
+  "title": "Determining an unknown concentration by titration: how do you get a titre you can trust?",
+  "subtitle": "Two benches titrate the same hydrochloric acid against the same standard. Both get concordant titres, but their means differ by half a millilitre. How do you carry out a titration step by step so the titre can be trusted, and how do you trace what went wrong?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 19,
+  "lessonIntent": "preparing a sodium carbonate standard and explaining each step; calculating its concentration; pipetting an aliquot and explaining the rinse, the filler and the last drop; explaining why the conical flask may be wet; setting up and reading a burette to 0.05 mL at eye level, with no tip bubble; carrying out a rough run and accurate runs to the first permanent orange; recording a titre table, excluding a faulty run for a known cause and repeating it; calculating the unknown concentration; tracing a technique error through the titre to the answer; naming the controlled conditions; judging validity, reliability and accuracy, including why concordant titres can still be inaccurate; writing the risk rows. No indicator choice (chem-m6-c13), no error-direction tables (chem-m6-g04), no aliquot scale-up or percentage by mass (chem-m6-g03), no percentage uncertainty.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two lab benches titrate the same hydrochloric acid against the same standard. Each bench's titres agree within zero point zero five millilitres. But bench A's average is twenty four point three three, and bench B's is twenty four point eight two. So how do you run a titration you can trust, and spot what went wrong?"
+      }
+    },
+    {
+      "id": "plan",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The unknown is hydrochloric acid, roughly zero point one moles per litre. The known is a sodium carbonate standard, made from the solid. A pipette puts an aliquot of it in the flask, and the acid goes in the burette. As in the titration video, carbonate takes two hydrochloric acid."
+      }
+    },
+    {
+      "id": "make-standard",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with sodium carbonate dried in an oven and cooled in a desiccator, so none of its mass is water. Weigh it into a beaker and record the exact mass: one point three six five six grams. Dissolve it, pour it through a funnel into a two hundred and fifty millilitre volumetric flask, then rinse the beaker and funnel in, so every grain ends up inside."
+      }
+    },
+    {
+      "id": "make-up-concentration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Add water until the bottom of the meniscus sits on the mark, at eye level, then stopper and invert it many times, so every aliquot is the same. n equals m over M gives zero point zero one two eight eight four moles, and over zero point two five zero zero litres, that's zero point zero five one five four moles per litre."
+      }
+    },
+    {
+      "id": "aliquot",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the aliquot. Rinse the pipette with a little carbonate solution, because water left inside would dilute it. Fill it with a filler to the mark, drain it into the conical flask, and touch the tip to the glass, but leave the last drop: the pipette is calibrated for that. The flask can be wet with distilled water, because water adds no carbonate. Add three drops of methyl orange: yellow."
+      }
+    },
+    {
+      "id": "burette-setup",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Next, the burette. Rinse it twice with a little hydrochloric acid, out through the tap. Fill it through a funnel, with its top below eye level, then take the funnel out, because drips could change the reading. Open the tap to fill the tip, with no air bubble left."
+      }
+    },
+    {
+      "id": "burette-reading",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Read it with your eye level with the bottom of the meniscus. On a burette the numbers get bigger as you go down. Look from above, and your line of sight meets the scale above the meniscus, where the numbers are smaller, so the reading comes out too low. That's parallax. The lines are a tenth of a millilitre apart, so estimate to the nearest half line, zero point zero five millilitres. This start reading is zero point four zero."
+      }
+    },
+    {
+      "id": "titrate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The first run is a quick rough titration. It overshot to red at about twenty four point nine, but now you know where the endpoint is. In each accurate run, add acid quickly to about a millilitre short, then drop by drop, swirling the flask over the white tile. Stop at the first permanent orange, and read the burette again."
+      }
+    },
+    {
+      "id": "results",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are bench A's results: each titre is final minus initial. Run two came out at twenty four point six five, and the notebook says an air bubble left the tip. The bubble's volume was counted as acid, so that titre is too big. The cause is known, so that run is left out and repeated. The other three agree within zero point zero five, with a mean of twenty four point three three."
+      }
+    },
+    {
+      "id": "calculation",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the calculation. The aliquot holds zero point zero five one five four times zero point zero two five zero zero litres: one point two eight eight five times ten to the minus three moles of carbonate. Times two: two point five seven seven times ten to the minus three moles of acid. Divide by the mean titre in litres: zero point one zero five nine moles per litre."
+      }
+    },
+    {
+      "id": "bench-b-error",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So what happened on bench B? Its titres agreed, but each was about half a millilitre too big. Bench B rinsed its burette with distilled water before each fill. That water dilutes the acid, so more millilitres are needed to react with the same carbonate. A bigger titre means a smaller answer, because the same moles of acid are divided by more millilitres: zero point one zero three eight, about two per cent low. The fix: rinse with what's going in."
+      }
+    },
+    {
+      "id": "controlled",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In a titration, nothing is changed to test its effect. You're measuring one thing, the titre, so keep everything else the same: the aliquot, the standard, the indicator and how much of it, and the endpoint colour."
+      }
+    },
+    {
+      "id": "validity-reliability",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Validity: does the method answer the question? Yes, if everything but the titre is controlled, and the one to two ratio holds at this endpoint. Reliability: concordant titres, with a faulty run repeated. Accuracy: bench B shows that titres can agree and still be wrong."
+      }
+    },
+    {
+      "id": "risk-assessment",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The risk assessment. Solid sodium carbonate causes serious eye irritation, so wear safety glasses and avoid its dust. The dilute solutions are below their classification limits, but glasses stay on for splashes. Methyl orange powder is toxic if swallowed, but a few drops of dilute indicator are low risk. Fill the burette below eye level, and use a pipette filler."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A student rinses her pipette with distilled water, and then, without drying it, uses it to transfer the sodium carbonate aliquot. Everything else is done correctly. Explain the effect on her calculated concentration of hydrochloric acid. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The water left inside dilutes the aliquot, so it holds fewer moles of carbonate than the calculation assumes. That needs less acid, so the titre is smaller. The calculation divides the full moles by that smaller titre, so the answer is too high. Saying \"diluted, so it's too low\" forgets that the acid is the unknown."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more. Before adding the aliquot, a student rinses the conical flask with the sodium carbonate solution. Everything else is done correctly. Explain the effect on her calculated concentration of hydrochloric acid. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The rinse leaves a film of carbonate solution in the flask, so it holds more moles than the aliquot alone. That needs more acid, so the titre is bigger. The calculation divides the aliquot's moles by that bigger titre, so the answer is too low. Rinsing with the solution is right for the pipette, not the flask."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, for a titration you can trust: rinse with what's going in, clear the bubble, read at eye level, and average concordant titres. Trace any error through the titre. Next: titration calculation practice."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Skills-S05-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/skills05/lesson.json",
+  "lessonSha256": "3ab12ad6a93b933ff1a58d3f418e62fb47ef0716ce076e1bad7c814ee275b49b",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/skills05/lesson.production-brief.json",
+    "sha256": "6673c321c4f20782166f6ba68dc3fcb12aaf54fc398edfa149ed39216a569857"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the last five HSC Chemistry papers, calculate was the second most common command in the written section, after explain, and the commonest value was four marks. In every one of the last six Chemistry marking feedback reports, NESA flagged the same kinds of problem: hidden steps, lost units, or rounding too early. Recent Biology papers didn't use the word calculate, but still asked for numbers, like a probability or a number of people from a graph. So let's set out a calculation a marker can follow.",
+      "hash": "4ac6a4d06a5d",
+      "textSha256": "4ac6a4d06a5da64c17bfe6ce5e0f5b607d349c1e19ef3a0aa44f3a97e72bd2b0",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/hook.4ac6a4d06a5d.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/hook.4ac6a4d06a5d.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/hook.4ac6a4d06a5d.generation.json",
+      "plannedRequestSha256": "78d00efe52deafb3b6c6ab6cbb90a7d38423dc9cdff48edcd3d2afd5f66d0388"
+    },
+    {
+      "id": "question-card",
+      "parentSceneId": "question-card",
+      "text": "Here's an HSC-style Chemistry question. Sixty millilitres of hydrochloric acid is mixed with forty millilitres of sodium hydroxide solution in a polystyrene cup, and the temperature rises from twenty point six to twenty five point eight degrees. The question asks you to calculate the molar enthalpy of neutralisation. Four marks. If you take Biology, you don't need the chemistry here. Watch how each line is laid out: your question is coming.",
+      "hash": "f319747f39ca",
+      "textSha256": "f319747f39ca747adeb3b86331ce8e788dc877313d9d67e3c10b69926ce5f34c",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/question-card.f319747f39ca.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/question-card.f319747f39ca.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/question-card.f319747f39ca.generation.json",
+      "plannedRequestSha256": "8e49da7b4f100303ac027859f821f65ebc938959b38b2b554e3a5d2b007b754f"
+    },
+    {
+      "id": "read-it",
+      "parentSceneId": "read-it",
+      "text": "Run the routine. The verb is calculate: work out an answer from the information given. Four marks for one number is a hint: there are steps to show. The thing asked for is a molar enthalpy, so the answer needs kilojoules per mole, and a sign. Now the givens. Don't copy them into a list. You'll underline each one as you use it.",
+      "hash": "3398469b55f3",
+      "textSha256": "3398469b55f3d5b20e776c69375383dee7ddd0e0e0b84b8f65b418f99324c266",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/read-it.3398469b55f3.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/read-it.3398469b55f3.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/read-it.3398469b55f3.generation.json",
+      "plannedRequestSha256": "6363959f4f497ddd5189263296289af766595bc2eb901b2b2914c3ff8e41083b"
+    },
+    {
+      "id": "four-steps",
+      "parentSceneId": "four-steps",
+      "text": "Every calculation answer can follow the same four steps. Write the equation. Substitute the values, with their units. Solve, and give the answer with units and sensible significant figures. Then sense check: are the size and the sign believable? Here's the memory aid: one E and three S's. Equation, substitute, solve, sense check.",
+      "hash": "a389648fcb5f",
+      "textSha256": "a389648fcb5f8010d9188824188570cf3e680b512e3855bcfe7f0b50d8ff042d",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/four-steps.a389648fcb5f.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/four-steps.a389648fcb5f.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/four-steps.a389648fcb5f.generation.json",
+      "plannedRequestSha256": "9b0ba668cc2e2ad3e0a1b2c573482d0e034e2a717dc4f4235489a85146ff537e"
+    },
+    {
+      "id": "step-1",
+      "parentSceneId": "step-1",
+      "text": "Step one, the heat: q equals m c delta T. The mass is both solutions together, a hundred millilitres, so one hundred grams. Delta T is twenty five point eight minus twenty point six: five point two degrees. Substitute, with units: one hundred, times four point one eight, times five point two. That's two thousand, one hundred and seventy three point six joules, or two point one seven three six kilojoules. Keep every digit.",
+      "hash": "bc0770386b61",
+      "textSha256": "bc0770386b61875a7878207c50dd674966f937bb36b3d90e8f1a358568bfb820",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-1.bc0770386b61.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-1.bc0770386b61.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-1.bc0770386b61.generation.json",
+      "plannedRequestSha256": "d9459b4efcc11b48c8401c45249d692a78cfb84f90bac1c509b029d36e2f4155"
+    },
+    {
+      "id": "step-2",
+      "parentSceneId": "step-2",
+      "text": "Step two, the moles of water. Acid: zero point zero six zero zero litres, times zero point eight zero zero, gives zero point zero four eight zero moles. Base: zero point zero four zero zero litres, times one point zero zero, gives zero point zero four zero zero moles. The base runs out first, so it sets the water: zero point zero four zero zero moles. Write that sentence. It tells the marker which value you chose, and why.",
+      "hash": "0cbad2178314",
+      "textSha256": "0cbad21783141afa16df9ec3e8fbafd03ddf33e89155446d66baacb192d389a0",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-2.0cbad2178314.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-2.0cbad2178314.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-2.0cbad2178314.generation.json",
+      "plannedRequestSha256": "980218d3789d4ca12fc610eadc163125801b96e937fece785fba5696e9a5ace6"
+    },
+    {
+      "id": "step-3",
+      "parentSceneId": "step-3",
+      "text": "Step three: divide, then add the sign. Two point one seven three six kilojoules over zero point zero four zero zero moles is fifty four point three four. The temperature rose, so heat was released, and delta H is negative. Round once, at the end: minus fifty four kilojoules per mole. Now the sense check. The usual value is about minus fifty seven. Ours is a little less negative, which fits some heat loss from the cup.",
+      "hash": "e3b2fa35c294",
+      "textSha256": "e3b2fa35c2944baeb03cbb65bc79628b67624c13685ee82b3ed22b914a77c424",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-3.e3b2fa35c294.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-3.e3b2fa35c294.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/step-3.e3b2fa35c294.generation.json",
+      "plannedRequestSha256": "01cec6ff937f7c68b787355351bf43b271f4c776be754717124da127d220f170"
+    },
+    {
+      "id": "sig-figs",
+      "parentSceneId": "sig-figs",
+      "text": "Why fifty four, and not fifty four point three? An answer is only as precise as its least precise measurement. Most values here have three significant figures. But delta T came from a subtraction, which keeps decimal places, not figures: five point two has only two. Exact numbers, like a count or a mole ratio, never limit you. Several recent marking guidelines named significant figures in the top band, and in one three-mark question, correct working with the wrong significant figures got two. Not every guideline mentions them, so get them right every time.",
+      "hash": "a30b1f8a5558",
+      "textSha256": "a30b1f8a555856b3bd537c20014b460bb233bcf75b56f05b4f33c9f41fbc2b60",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/sig-figs.a30b1f8a5558.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/sig-figs.a30b1f8a5558.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/sig-figs.a30b1f8a5558.generation.json",
+      "plannedRequestSha256": "1df39329e9c5bd965651fffdad64b005fc7e5ac2421d16d9c73cfe5fbb448ef2"
+    },
+    {
+      "id": "round-once",
+      "parentSceneId": "round-once",
+      "text": "And round only once. If you'd rounded the heat to two point two kilojoules halfway through, you'd get minus fifty five, not minus fifty four. NESA's own sample answers keep the extra digits until the last line. Sometimes a range is accepted: when values are read off a graph, one guideline left the acceptable range of readings to the marking centre. That allows for reading, not for rounding.",
+      "hash": "2306cff87478",
+      "textSha256": "2306cff87478060c2e1ba3d9953266005cb732e3b48cadebdc5a693ab46f6a42",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/round-once.2306cff87478.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/round-once.2306cff87478.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/round-once.2306cff87478.generation.json",
+      "plannedRequestSha256": "29877b0591065b8eb6993c23a81c67f1ee0228834d827650e9de47da247e0ddd"
+    },
+    {
+      "id": "working-when-wrong",
+      "parentSceneId": "working-when-wrong",
+      "text": "Now suppose you slip. Two students divide by the acid's moles, and both get minus forty five. Answer A writes just that. Answer B shows every step. In our marking guide, A earns nothing. B is still wrong, but its right steps are visible, so B earns two for them. In one recent four-mark calculation, NESA's bands paid for the main steps, and for some relevant steps. But bands are set question by question, so don't count on carried-forward marks. Make every step visible. And a sense check helps: minus forty five is far from minus fifty seven, so recheck which reactant ran out.",
+      "hash": "4b5e9c55ccd9",
+      "textSha256": "4b5e9c55ccd984020b7eae4da10ddbac05eab280b53f00fda5b4fac535bc90ce",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/working-when-wrong.4b5e9c55ccd9.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/working-when-wrong.4b5e9c55ccd9.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/working-when-wrong.4b5e9c55ccd9.generation.json",
+      "plannedRequestSha256": "709a01d69e823d77302cb23d09fe372be6df5ce5b3510d847bd51d41d529e433"
+    },
+    {
+      "id": "drill-1",
+      "parentSceneId": "drill-1",
+      "text": "Your turn. Do the one in your subject, or both. Chemistry first. Zero point two zero zero grams of sodium hydroxide is dissolved and made up to two hundred and fifty point zero millilitres at twenty five degrees. Calculate the pH of the solution. Three marks. Pause here to answer.",
+      "hash": "a0955da62f18",
+      "textSha256": "a0955da62f18df4c45515820d9dbee13b0538c3ba968e8c85efb04155678b3d6",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/drill-1.a0955da62f18.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/drill-1.a0955da62f18.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/drill-1.a0955da62f18.generation.json",
+      "plannedRequestSha256": "2d744b65b09156b63ed4920c1c06cb0b0cc6b28fac565c684f7a32fab0686cb1"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Moles: zero point two zero zero over forty point zero zero, five point zero zero times ten to the minus three. Divide by the litres: zero point zero two zero zero moles per litre. pOH is one point six nine nine, so pH is twelve point three zero one. Three significant figures in the hydroxide give three decimal places. It's a base, so above seven. The habit to drop: rounding to twelve point three.",
+      "hash": "9793b543e228",
+      "textSha256": "9793b543e228654da0900559f33a0091a3a3297358963881a4cbeea03068dbb2",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/feedback-1.9793b543e228.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/feedback-1.9793b543e228.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/feedback-1.9793b543e228.generation.json",
+      "plannedRequestSha256": "e38b5fd49c8cf54a9abbc7699120abc7f9a6231a174fe01d279b6095c5a020d3"
+    },
+    {
+      "id": "drill-2",
+      "parentSceneId": "drill-2",
+      "text": "Now Biology. Two hundred and fifty bearded dragons were genotyped at one snip, with alleles C and T. Ninety were C C, a hundred and ten were C T, and fifty were T T. Calculate the frequency of the T allele in this sample. Two marks. Pause here to answer.",
+      "hash": "aee0f4ab71e3",
+      "textSha256": "aee0f4ab71e3148502431df6316396ece0cb03e2f60a36f6a2e30bc4c73fecda",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/drill-2.aee0f4ab71e3.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/drill-2.aee0f4ab71e3.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/drill-2.aee0f4ab71e3.generation.json",
+      "plannedRequestSha256": "5e64751dc44f304be0121068b62618d7c61462f49111c7b6270dc644803a0791"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Count alleles, not dragons: five hundred copies. T alleles: a hundred and ten from C T, plus a hundred from T T, makes two hundred and ten. Over five hundred, that's zero point four two. Counts are exact, and this divides exactly, so nothing to round. Check: C is zero point five eight, and together they make one. The habit to drop: fifty over two hundred and fifty, which counts dragons.",
+      "hash": "5df74c5b04a3",
+      "textSha256": "5df74c5b04a3131284c34aea618ef1a34f6d6d539f3e484202bb05fb08cf8df1",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/feedback-2.5df74c5b04a3.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/feedback-2.5df74c5b04a3.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/feedback-2.5df74c5b04a3.generation.json",
+      "plannedRequestSha256": "e9342a2f17397a1f063914bc26cee96e47e0b3f41a53bdeb5a7c8edf5a11d60c"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, every time you see calculate. Write the equation. Substitute with units, and say which value you chose and why. Solve, carrying every digit, then round once, to the least precise measurement, with the unit and the sign. Then sense check the size and the sign. Next: graphs and data questions.",
+      "hash": "ec52e7a31dac",
+      "textSha256": "ec52e7a31dacd0d2964c5192edd8e007118196bd253d614a9c83b73e1b7d2dcc",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/decision-rule.ec52e7a31dac.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/decision-rule.ec52e7a31dac.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/decision-rule.ec52e7a31dac.generation.json",
+      "plannedRequestSha256": "c1fc13cdc9d19a31eb95d3ea0bf53ff6a274080d040e2c41a4d708407f8e6805"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Skills-S05-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Skills-S05-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Skills-S05-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

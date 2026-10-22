@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B02-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b02/lesson.json",
+  "lessonSha256": "676244daa06dc0f1db6d1950355cb59d3fef509ec471374dfac25ac97c25afd6",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b02/lesson.production-brief.json",
+    "sha256": "fd741eca9de82366db471ffb38edd73f2a9edbb5453c9b5e49ecd52048a7fa99"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Leave some broth out for a few days, and it turns cloudy with microbes. For a long time, many people thought those microbes simply sprang from the broth itself, and that disease came from bad air. Around 1860, Louis Pasteur tested the first idea with a flask that let air in but kept microbes out. Then Robert Koch worked out how to prove that one particular microbe causes one particular disease. So how did their experiments establish germ theory?",
+      "hash": "4dd4ae1136e0",
+      "textSha256": "4dd4ae1136e096e81492dca3ff5cd1d362fad394a9e64981a06dd55732d43886",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/hook.4dd4ae1136e0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/hook.4dd4ae1136e0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/hook.4dd4ae1136e0.generation.json",
+      "plannedRequestSha256": "3be5ac5e5bb82f54d93d5456698ba83b97dd0588659b72ec2863dffe4520b01a"
+    },
+    {
+      "id": "old-ideas",
+      "parentSceneId": "old-ideas",
+      "text": "Two older ideas stood in the way. Spontaneous generation was the idea that living things can arise from non-living matter, like microbes from broth. Miasma was the idea that disease comes from bad air, given off by rotting matter. Germ theory says something different: infectious diseases are caused by microbes and other pathogens, and microbes come only from other microbes. To prove it, scientists needed two things. Show that microbes don't arise from the broth itself. And show that a specific microbe causes a specific disease.",
+      "hash": "7493061cdcdd",
+      "textSha256": "7493061cdcdd58a3dd35645b5335be9d628483882073fc5f77fb425379c7ff8c",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/old-ideas.7493061cdcdd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/old-ideas.7493061cdcdd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/old-ideas.7493061cdcdd.generation.json",
+      "plannedRequestSha256": "207197951e534e743f6f39c97f86ab049444c545ad1cb3a26a207ef1ab971e31"
+    },
+    {
+      "id": "pasteur-setup",
+      "parentSceneId": "pasteur-setup",
+      "text": "Pasteur filled flasks with nutrient broth, then heated each neck and bent it into a long S-shaped curve, like a swan's neck. He boiled the broth to kill any microbes already in it. The end of the neck stayed open, so air could flow in and out. But dust and microbes are heavier than air, so they settled in the low bend and couldn't climb up to the broth.",
+      "hash": "a2dce63d111d",
+      "textSha256": "a2dce63d111d84786754994ce788d30771d1a8ba03abee56353b76baf8d16aa5",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/pasteur-setup.a2dce63d111d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/pasteur-setup.a2dce63d111d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/pasteur-setup.a2dce63d111d.generation.json",
+      "plannedRequestSha256": "310a28238d2ae08d133658bcaf32bce72a801a74e183462a3a58346937425565"
+    },
+    {
+      "id": "clear-broth",
+      "parentSceneId": "clear-broth",
+      "text": "The broth stayed clear, with no growth, for months. That mattered, because supporters of spontaneous generation argued that boiling or sealing a flask destroyed or shut out something in the air that life needed. Here, the air could still reach the broth. Boiled broth in flasks with short, straight necks, open to falling dust, turned cloudy within days.",
+      "hash": "8e46b275615e",
+      "textSha256": "8e46b275615e1c6a1c0623155e833889aa918d253c514d2e7de09aaacd0dea62",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/clear-broth.8e46b275615e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/clear-broth.8e46b275615e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/clear-broth.8e46b275615e.generation.json",
+      "plannedRequestSha256": "5e66deddd3a197df7505fb4096c12e70baa86bc7c27728976172954ec59a6d02"
+    },
+    {
+      "id": "break-the-neck",
+      "parentSceneId": "break-the-neck",
+      "text": "Then came the critical step. Pasteur broke the neck off some swan-neck flasks, so dust could fall straight in. Within days, the same broth turned cloudy. So the broth could support growth. It just needed microbes to reach it. Same broth, same air. The only difference was whether airborne particles could get to the broth, so the microbes came from the air, not from the broth itself.",
+      "hash": "aac117b1007e",
+      "textSha256": "aac117b1007e4c3e54e507558a75b22730a680fffe95335332853a7c90132a36",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/break-the-neck.aac117b1007e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/break-the-neck.aac117b1007e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/break-the-neck.aac117b1007e.generation.json",
+      "plannedRequestSha256": "bba6a9b13efe5122b8e5bcaca6555c9f12f2020c8eb05e017600e30cd8fc7304"
+    },
+    {
+      "id": "what-pasteur-showed",
+      "parentSceneId": "what-pasteur-showed",
+      "text": "In exam terms, the independent variable was whether airborne particles could reach the broth. The dependent variable was microbial growth, seen as cloudiness. The broth, the boiling and the air were kept the same. So Pasteur showed that microbes come from other microbes, which is why boiling, sterilising and covering food work. But his flasks didn't link any particular microbe to a disease. That was Koch's job.",
+      "hash": "340c8e3b90fc",
+      "textSha256": "340c8e3b90fc6ea6f1e200502a9ad1f9dd192228c94fbdf1e5172d4b934ff61d",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/what-pasteur-showed.340c8e3b90fc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/what-pasteur-showed.340c8e3b90fc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/what-pasteur-showed.340c8e3b90fc.generation.json",
+      "plannedRequestSha256": "7150929c2aea97b2179fe438645a0ac6d3c2540810b79b3fd6cba9bd22481e2f"
+    },
+    {
+      "id": "koch-find-grow",
+      "parentSceneId": "koch-find-grow",
+      "text": "In 1882, Koch announced the cause of tuberculosis, which he said caused about one in seven of all deaths. First, he looked at tissue from many tuberculosis cases. In every one, after staining, he found the same thin, rod-shaped bacterium, and he didn't find it in healthy tissue. Second, he grew it on its own, in a pure culture, a culture containing only one kind of microbe. That took weeks, because this bacterium grows very slowly.",
+      "hash": "ea0999855ee9",
+      "textSha256": "ea0999855ee998eb2dafd6f69a5f4b2cdc9a31a2fdb73a286e5935de5560e0fd",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/koch-find-grow.ea0999855ee9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/koch-find-grow.ea0999855ee9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/koch-find-grow.ea0999855ee9.generation.json",
+      "plannedRequestSha256": "06351036422986ee6c3a1edc83c2e2387a034e20d5223629aa061b02217b8ad4"
+    },
+    {
+      "id": "koch-give-find-again",
+      "parentSceneId": "koch-give-find-again",
+      "text": "Third, he gave the pure culture to healthy guinea pigs, and they developed tuberculosis. Fourth, he recovered the same bacterium from those sick animals. Why all four? Finding a microbe in sick hosts only shows it's there alongside the disease. It might have moved in after the disease began. Giving the pure microbe to a healthy host, and seeing the disease appear, shows that the microbe causes it. Recovering it again rules out a different microbe sneaking in.",
+      "hash": "495045b7a716",
+      "textSha256": "495045b7a71661768d0bb90ba5c9e9db138cb26385037168664e09b028b1e0af",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/koch-give-find-again.495045b7a716.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/koch-give-find-again.495045b7a716.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/koch-give-find-again.495045b7a716.generation.json",
+      "plannedRequestSha256": "d0c8dabee28001ec320aa9f35d3711ecdb2a8f08b9acf398ef61a8206045b6bd"
+    },
+    {
+      "id": "limits",
+      "parentSceneId": "limits",
+      "text": "These four steps are called Koch's postulates, and their logic is still the standard, but they don't fit every pathogen. Viruses can't be grown on their own, because they need living cells. Some bacteria, like the one that causes leprosy, still can't be grown on their own in a lab. Some healthy people carry a pathogen without getting sick, which breaks the first step. And for a disease that only infects humans, deliberately infecting a healthy person is rarely ethical. Today, scientists often detect a microbe's DNA instead of growing it.",
+      "hash": "bd89f94f1c63",
+      "textSha256": "bd89f94f1c63068062be0c9793030f73f916cd778a5484ec30dd544e172c3bc4",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/limits.bd89f94f1c63.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/limits.bd89f94f1c63.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/limits.bd89f94f1c63.generation.json",
+      "plannedRequestSha256": "15910f9f8ae0fca5a83e9bc2374ad55e804ec46bfaa73594f7fb647564aa0dd3"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Here's how to hold it. Koch's postulates: find it, grow it, give it, find it again. And the two scientists answered two different questions. Pasteur showed where microbes come from. Koch showed which microbe causes which disease.",
+      "hash": "c88eb3fa4246",
+      "textSha256": "c88eb3fa42469316f1e3643c2d55e62492d2bd8abcc6fa8cb7c5d8090efdc692",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/memory.c88eb3fa4246.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/memory.c88eb3fa4246.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/memory.c88eb3fa4246.generation.json",
+      "plannedRequestSha256": "b3143f5f5b27a532f2084632c7ede3185790a7885d6e451aba3025bd6d676eb9"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. Sheep on a farm developed a lung disease. A scientist found bacterium X in the lungs of all twenty sick sheep, and in none of twenty healthy sheep. She grew X in pure culture and gave it to five healthy sheep. Four of them developed the disease. Assess whether this evidence shows that X causes the disease. Pause here to answer.",
+      "hash": "ec20c4e38d06",
+      "textSha256": "ec20c4e38d0622b27a4337f021822e1b5c49ecc4a2bd0fba6b40eac93450a8cb",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/attempt.ec20c4e38d06.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/attempt.ec20c4e38d06.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/attempt.ec20c4e38d06.generation.json",
+      "plannedRequestSha256": "58e896094a4de73ebee877152d75fd9417dd591870e09f8e27a5cef17281caed"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The evidence strongly supports it. X was in every sick sheep and no healthy one, it was grown pure, and it caused the disease in four of five healthy sheep. But step four is missing: X must be recovered from those newly sick sheep and shown to be the same. Saying the evidence already proves X causes the disease is the classic mistake.",
+      "hash": "886d1bd305dd",
+      "textSha256": "886d1bd305ddcfdd896c73cce1df975b0e167844516492205f1bd3e389a88dec",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/feedback-one.886d1bd305dd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/feedback-one.886d1bd305dd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/feedback-one.886d1bd305dd.generation.json",
+      "plannedRequestSha256": "65f15b30de328b108eb2ca20437f69ac2eccb13c1dda2eaf86a993a932025fff"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Chlamydia pecorum is a bacterium that causes eye and urinary disease in koalas. It grows only inside living cells. Koalas in New South Wales are listed as an endangered species. Explain two reasons why Koch's postulates are difficult to apply to this disease. Pause here to answer.",
+      "hash": "98eb5093b112",
+      "textSha256": "98eb5093b112b43b5a9c3177fbe1826a5551bba8975cc2740aabbae2697d9fb9",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/attempt-two.98eb5093b112.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/attempt-two.98eb5093b112.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/attempt-two.98eb5093b112.generation.json",
+      "plannedRequestSha256": "78fb657ae0736826bae1139cff52e8bb15f9e5e292167d18dbae3993dce25876"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "First, the bacterium grows only inside living cells, so it can't be grown in a pure culture on its own, which step two needs. Second, step three means deliberately infecting healthy koalas, which is hard to justify for an endangered species. Saying the postulates fail because Chlamydia is a virus is the classic mistake. It's a bacterium that needs host cells.",
+      "hash": "514fad02bd04",
+      "textSha256": "514fad02bd04d5716cbe25cf278bb21af8a36c606bc761dbbae048bb1951024c",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/feedback-two.514fad02bd04.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/feedback-two.514fad02bd04.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/feedback-two.514fad02bd04.generation.json",
+      "plannedRequestSha256": "350b43bd47c462ee2292790014a98b9a8be0b43dc1c1298c4202e5e07978a5d7"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for a germ theory question, match each scientist to the question he answered. Pasteur's flasks show that microbes come from other microbes, because only particle access changed. Koch's four steps link one microbe to one disease. And when a step can't be done, say which step and why. Next, how a pathogen gets from one host to the next.",
+      "hash": "e36e287115c2",
+      "textSha256": "e36e287115c2c5eb59854629242d0343369219ed20913698337da265a72e0e9b",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/decision-rule.e36e287115c2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/decision-rule.e36e287115c2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/decision-rule.e36e287115c2.generation.json",
+      "plannedRequestSha256": "ccd4b9524e201f772caf136919dac43c4d8db1d0753a57cad5ef9af64cbe1405"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B02-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

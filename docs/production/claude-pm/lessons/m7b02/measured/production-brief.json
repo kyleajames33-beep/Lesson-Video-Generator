@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b02/measured/lesson.json",
+    "lessonSha256": "76616f2638dc0a31fcb0fff9bdb990ca093ac23fa80bc1bdd8318d3be95b4aa5"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From bio-m7-b01: pathogen, host, bacterium, virus as non-cellular and needing a host cell, tuberculosis caused by a rod-shaped bacterium. From Year 11 (Working Scientifically): independent, dependent and controlled variables, and the purpose of a control. From Module 5 B2c: bacteria multiply by splitting, so a few become a visible crowd. Not assumed: spontaneous generation, miasma, germ theory, the swan-neck design, pure culture, the postulates, correlation against causation, the postulates' limits.",
+    "startsWith": "Compare Pasteur's and Koch's investigations. The video opens: Leave some broth out for a few days, and it turns cloudy with microbes.",
+    "stopsAfter": "naming spontaneous generation and miasma as the ideas germ theory replaced, and stating the two things germ theory needed; describing Pasteur's swan-neck experiment (boiled broth, open S-shaped neck, dust settling in the bend, clear broth for months while open straight-necked flasks clouded, cloudy within days after the neck was broken) and explaining why it disproved spontaneous generation (air reached the broth throughout; only particle access changed; the same broth could support growth), with the independent, dependent and controlled variables; stating that Pasteur did not link a microbe to a disease; describing Koch's four steps through his 1882 tuberculosis work (found in every case and not in healthy tissue; grown in pure culture; caused the disease in healthy guinea pigs; recovered again) and explaining why all four are needed (presence only shows association; giving the pure microbe shows cause; recovery rules out another microbe); outlining the limits (viruses need living cells; some bacteria cannot be cultured; healthy carriers; ethics) and the DNA-based alternative; assessing unseen data against the postulates and explaining why they are hard to apply to koala chlamydia.",
+    "nextLesson": "how a pathogen moves between hosts: direct contact, indirect contact and vectors (route entry bio-m7-b03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b02.md"
+  ],
+  "teaching": {
+    "task": "For centuries many people believed microbes sprang from broth and disease came from bad air. How did Pasteur's flasks and Koch's four steps show, instead, that microbes come from other microbes and that a specific microbe causes a specific disease?",
+    "causalExplanation": "Causes: why the swan-neck broth stays clear while air reaches it (particles settle in the bend, 3, 4); why the design defeats the \"something in the air\" objection (air still reaches the broth, 4); why breaking the neck is the critical control (same broth supports growth once particles reach it, 5); why Pasteur did not prove disease causation (no microbe linked to a disease, 6); why presence alone is not proof (the microbe might move in after, 8); why giving the pure microbe shows cause and recovery confirms it (8); why each limit breaks a named step (9). Visible case: three flask states changing by aligned crossfades; dust settling in the bend, then falling into a broken neck; the four step bays filling with real evidence; ticks and gaps on the steps. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; the attempt 1 card with its table is the densest frame and is the task.",
+    "conversationalApproach": "Broth left out turns cloudy with microbes, and for centuries many people believed the microbes sprang from the broth and that disease came from bad air, so the question is how Pasteur's flasks and Koch's four steps showed that microbes come from other microbes and that a specific microbe causes a specific disease. Pasteur's swan-neck flasks are traced step by step: boiled broth stays clear for months although air reaches it, answering the claim that boiling or sealing destroyed something in the air, and breaking the neck lets dust fall in so the same broth turns cloudy within days; the variables show what he did and did not show. Koch's tuberculosis work then follows four steps (find it, grow it, give it, find it again) with the reason each is needed, and the postulates' limits are named for viruses, carriers and pathogens that cannot ethically be given to a host. The memory aid matches each scientist to the question he answered. Two exam questions follow with brief feedback.",
+    "openingDecision": "Leave some broth out for a few days, and it turns cloudy with microbes. For a long time, many people thought those microbes simply sprang from the broth itself, and that disease came from bad air. Around 1860, Louis Pasteur tested the first idea with a flask that let air in but kept microbes out. Then Robert Koch worked out how to prove that one particular microbe causes one particular disease. So how did their experiments establish germ theory?",
+    "understandingCheck": "11a is an assess item: hypothetical data on a lung disease in sheep, where postulates 1 to 3 are met and postulate 4 is missing; assess whether the evidence shows that bacterium X causes the disease. It tests the four steps applied to new data and the correlation trap. 11c is an explain item: Chlamydia pecorum in koalas grows only inside living cells and koalas in New South Wales are listed as endangered; explain two reasons why the postulates are hard to apply. It tests the limits on a new case. Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Each feedback is brief (about 25 to 30 s): the answer, the key reason, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ1-02: \"investigate the work of Robert Koch and Louis Pasteur, to explain the causes and transmission of infectious diseases, including:\" with its listed examples \"Koch's postulates\" and \"Pasteur's experiments on microbial contamination\". This video covers both listed examples. The ledger flags the dotpoint `depthStudyOrPractical: true`; the video is the secondary-sourced investigation of the two scientists' work (experimental design, controls, results and conclusions). A hands-on contamination experiment is not part of this entry; p02 provides the microbial testing practical. The ledger's investigation component stays open for p02 (microbial contamination practical) and any depth-study entry. Verb demands: \"investigate\" (scenes 3 to 9 trace each design and its evidence) and \"explain\" (scenes 6 and 8, and both attempts: why each design licenses its conclusion)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One evidence bench: a two-bay board under a banner of two questions. Left bay, \"Where do microbes come from?\" (Pasteur): a row of painted flasks that changes state by aligned crossfades. Right bay, \"Which microbe causes which disease?\" (Koch): a strip of four step bays, \"find it\", \"grow it\", \"give it\", \"find it again\", each filled with painted plates. The left bay builds in scenes 3 to 6 and the right in scenes 7 and 8; scene 9 marks limits on the right bay; scene 10 shows both. Broth changes (clear to cloudy) are aligned plate pairs, never coded tints over a plate; airborne dust and microbes are coded specks drifting along the neck (abstract particles, not organisms). No people, hands, faces, patients or doctors. Sick and healthy hosts that would be people appear only as coded host circles or as tissue on a microscope field. Plates are scaled proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey bay labels; tags fade when the next cue lands; the bay not being spoken about dims to grey.",
+    "transitionPlan": "The straight-neck flask plate opens the hook and crossfades to cloudy; two old-idea chips write on with their small icons and the germ theory need writes beneath; the EvidenceBench's left bay expands for Pasteur as the swan-neck flask is filled, heated, bent and boiled; a clock tag sweeps \"months\" beside the clear flask while a straight-neck pair turns cloudy; the neck breaks off and dust falls in as the broth clouds within days; the three flask states sit in a row with the variables labelled; the right bay expands into Koch's four step bays, lighting find it and grow it with the tissue and culture plates, then give it and find it again; the four-step strip takes its \"Koch's postulates\" label and each limit greys one step at a time; the full bench returns small for the memory lines; each attempt clears the board and its feedback underlines the card as the four-step strip returns and each step is ticked or crossed; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. `m7-straight-neck-flask-clear-v1.png` (new) sits centre; on \"turns cloudy\" it crossfades to its aligned partner `m7-straight-neck-flask-cloudy-v1.png` (new) while a small `GrowthCounter` inset in the corner multiplies from a few glyphs to a crowd (grey tag \"a few days\").",
+      "teachingReason": "Hook (cloudy broth): Leave some broth out for a few days, and it turns cloudy with microbes.",
+      "narrationCue": "turns cloudy / sprang from the broth itself / disease came from bad air / Louis Pasteur / Robert Koch / how did their experiments establish germ theory?",
+      "motionPurpose": "On the spoken cues: On \"sprang from the broth itself\" small coded glyphs pop up out of the broth surface with a grey question mark (tag \"life from broth?\"). On \"disease came from bad air\" a faint coded grey haze drifts across the upper half (tag \"disease from bad air?\", replacing the first tag). On \"Louis Pasteur\" the",
+      "motionRole": "explain",
+      "onScreenChange": "no people. `m7-straight-neck-flask-clear-v1.png` (new) sits centre; on \"turns cloudy\" it crossfades to its aligned partner `m7-straight-neck-flask-cloudy-v1.png` (new) while a small `GrowthCounter` inset in the corner multiplies from a few glyphs to a crowd (grey tag \"a few days\"). On \"sprang from the broth itself\" small coded glyphs pop up out of the broth surface with a grey question mark (tag \"life from broth?\"). On \"disease came from bad air\" a faint coded grey haze drifts across the upper half (tag \"disease from bad air?\", replacing the first tag). On \"Louis Pasteur\" the haze clears and `m7-swan-neck-flask-clear-v1.png` (new) slides in at the left with a small grey tag \"Pasteur, around 1860\". On \"Robert Koch\" `m7-tb-bacilli-v1.png` (from b01) appears small at the right with a grey tag \"Koch: one microbe, one disease\". On \"how did their experiments establish germ theory?\" the tags fade and the heading writes on: \"How do you prove a microbe causes a disease?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "old-ideas",
+      "visualDecision": "new",
+      "visualReference": "the hook clears.",
+      "teachingReason": "Two old ideas, and what germ theory needed: Two older ideas stood in the way.",
+      "narrationCue": "Spontaneous generation / Miasma / Germ theory",
+      "motionPurpose": "On the spoken cues: Two old-idea chips write on, one per cue, each with its small picture: on \"Spontaneous generation\" the cloudy flask thumbnail with popping glyphs, chip \"spontaneous generation: life from non-living matter\"; on \"Miasma\" the coded grey haze over a small heap outline (coded, abstract), chip \"miasma:",
+      "motionRole": "explain",
+      "onScreenChange": "the hook clears. Two old-idea chips write on, one per cue, each with its small picture: on \"Spontaneous generation\" the cloudy flask thumbnail with popping glyphs, chip \"spontaneous generation: life from non-living matter\"; on \"Miasma\" the coded grey haze over a small heap outline (coded, abstract), chip \"miasma: disease from bad air\". Both chips dim to grey. On \"Germ theory\" a third chip writes, amber: \"germ theory: pathogens cause infectious disease; microbes come from microbes\", with b01's `HostCircles` glyph jumping between two circles. On \"two things\" the `EvidenceBench` draws: a banner with two questions that write one per cue, \"1. Where do microbes come from?\" (on \"don't arise from the broth itself\") and \"2. Which microbe causes which disease?\" (on \"a specific microbe causes a specific disease\"), each heading an empty bay. The old-idea chips fade fully. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "pasteur-setup",
+      "visualDecision": "adjust",
+      "visualReference": "the left bay expands; the right bay dims to grey.",
+      "teachingReason": "Pasteur's set-up: Pasteur filled flasks with nutrient broth, then heated each neck and bent it into a long S-shaped curve, like a swan's neck.",
+      "narrationCue": "filled flasks with nutrient broth / bent it into a long S-shaped curve / boiled the broth / air could flow in and out / heavier than air / settled in the low bend",
+      "motionPurpose": "On the spoken cues: On \"filled flasks with nutrient broth\" `m7-swan-neck-flask-clear-v1.png` appears large (tag \"nutrient broth\"). On \"bent it into a long S-shaped curve\" a coded amber line traces the neck's curve from the bulb to the open tip (tag \"swan neck: open at the end\"). On \"boiled the broth\"",
+      "motionRole": "explain",
+      "onScreenChange": "the left bay expands; the right bay dims to grey. On \"filled flasks with nutrient broth\" `m7-swan-neck-flask-clear-v1.png` appears large (tag \"nutrient broth\"). On \"bent it into a long S-shaped curve\" a coded amber line traces the neck's curve from the bulb to the open tip (tag \"swan neck: open at the end\"). On \"boiled the broth\" `m5x-bunsen-burner-v1.png` slides under the flask at proportional scale, and `SteamWisps` rise from the neck tip briefly (tag \"boiled: microbes killed\", replacing the previous tag); the burner then slides away. On \"air could flow in and out\" thin coded pale-blue arrows move in and out along the whole neck (chip \"air in\"). On \"heavier than air\" the specks are drawn slightly larger and darker than the air arrows. On \"settled in the low bend\" `DustPath` runs: small grey and teal specks drift in at the tip, slow as the air slows in the curve, and drop to the lowest point of the bend, where the plate's painted dust specks sit; a thin scribble rings that point (chip \"microbes trapped\", so the bay label reads \"air in, microbes trapped\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "clear-broth",
+      "visualDecision": "adjust",
+      "visualReference": "the swan-neck flask stays clear; a small grey clock tag \"months\" sweeps beside it and the `GrowthCounter` inset stays empty.",
+      "teachingReason": "Clear broth, with air: The broth stayed clear, with no growth, for months.",
+      "narrationCue": "supporters of spontaneous generation argued / the air could still reach the broth / Boiled broth in flasks with short, straight necks / turned cloudy within days",
+      "motionPurpose": "On the spoken cues: On \"supporters of spontaneous generation argued\" a grey chip writes: \"objection: boiling or sealing destroys or shuts out something in the air\". On \"the air could still reach the broth\" the pale-blue air arrows pulse along the open neck again and the objection chip takes a grey scribble cross. On",
+      "motionRole": "explain",
+      "onScreenChange": "the swan-neck flask stays clear; a small grey clock tag \"months\" sweeps beside it and the `GrowthCounter` inset stays empty. On \"supporters of spontaneous generation argued\" a grey chip writes: \"objection: boiling or sealing destroys or shuts out something in the air\". On \"the air could still reach the broth\" the pale-blue air arrows pulse along the open neck again and the objection chip takes a grey scribble cross. On \"Boiled broth in flasks with short, straight necks\" `m7-straight-neck-flask-clear-v1.png` appears to the right at the same scale, with a brief `SteamWisps` flick over its neck (it was boiled too); `DustPath` specks fall straight down its neck into the broth; on \"turned cloudy within days\" it crossfades to `m7-straight-neck-flask-cloudy-v1.png` and its own small growth inset fills (tag \"open to dust: cloudy in days\"). The months tag dims. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "break-the-neck",
+      "visualDecision": "adjust",
+      "visualReference": "the straight-neck pair shrinks to a grey thumbnail.",
+      "teachingReason": "The critical step: break the neck: Then came the critical step.",
+      "narrationCue": "broke the neck off / Within days, the same broth turned cloudy / Same broth, same air / The only difference / from the air, not from the broth itself",
+      "motionPurpose": "On the spoken cues: On \"broke the neck off\" the swan-neck flask crossfades to its aligned partner `m7-swan-neck-flask-broken-clear-v1.png` (new), a short coded crack line flashing at the break (tag \"neck broken\"); `DustPath` specks now fall straight into the broth. On \"Within days, the same broth turned cloudy\" it",
+      "motionRole": "explain",
+      "onScreenChange": "the straight-neck pair shrinks to a grey thumbnail. On \"broke the neck off\" the swan-neck flask crossfades to its aligned partner `m7-swan-neck-flask-broken-clear-v1.png` (new), a short coded crack line flashing at the break (tag \"neck broken\"); `DustPath` specks now fall straight into the broth. On \"Within days, the same broth turned cloudy\" it crossfades to `m7-swan-neck-flask-broken-cloudy-v1.png` (new) and the growth inset fills (tag \"same broth: cloudy\", replacing \"neck broken\"). On \"Same broth, same air\" the intact clear flask thumbnail returns beside the broken cloudy one, and two short grey labels write under both: \"same broth\", \"same air\". On \"The only difference\" a single amber bracket joins the two necks, labelled \"can particles reach the broth?\" On \"from the air, not from the broth itself\" a short handwritten line writes across the bay: \"Microbes come from microbes.\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "what-pasteur-showed",
+      "visualDecision": "new",
+      "visualReference": "the three flask states sit in a row, small (intact clear, straight cloudy, broken cloudy).",
+      "teachingReason": "What Pasteur showed, and what he didn't: In exam terms, the independent variable was whether airborne particles could reach the broth.",
+      "narrationCue": "independent variable / dependent variable / kept the same / microbes come from other microbes / boiling, sterilising and covering food / didn't link any particular microbe to a disease",
+      "motionPurpose": "On the spoken cues: On \"independent variable\" a grey label \"IV: can particles reach the broth?\" writes under the row with the necks ringed; on \"dependent variable\" \"DV: growth (cloudiness)\" writes with the broths ringed; on \"kept the same\" \"controlled: broth, boiling, air\" writes. The three labels stay small and grey",
+      "motionRole": "explain",
+      "onScreenChange": "the three flask states sit in a row, small (intact clear, straight cloudy, broken cloudy). On \"independent variable\" a grey label \"IV: can particles reach the broth?\" writes under the row with the necks ringed; on \"dependent variable\" \"DV: growth (cloudiness)\" writes with the broths ringed; on \"kept the same\" \"controlled: broth, boiling, air\" writes. The three labels stay small and grey after writing; only the newest is bright. On \"microbes come from other microbes\" the bay's question 1 in the banner gains an amber tick. On \"boiling, sterilising and covering food\" three tiny grey tags write in a row and dim (\"boil\", \"sterilise\", \"cover\"). On \"didn't link any particular microbe to a disease\" question 2 in the banner pulses with a grey dash beside it; a grey chip \"Pasteur proved germs cause disease?\" writes and takes a grey scribble cross. On \"That was Koch's job\" the left bay dims and the right bay brightens. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "koch-find-grow",
+      "visualDecision": "adjust",
+      "visualReference": "the right bay expands into its four step bays, labelled small \"find it\", \"grow it\", \"give it\", \"find it again\" (the last three grey for now).",
+      "teachingReason": "Koch: find it, grow it: In 1882, Koch announced the cause of tuberculosis, which he said caused about one in seven of all deaths.",
+      "narrationCue": "pure culture",
+      "motionPurpose": "On the spoken cues: On \"In 1882\" a grey tag \"Koch, 1882: tuberculosis\" writes; on \"one in seven of all deaths\" a small coded row of seven dots with one amber (tag \"Koch: about 1 in 7 of all deaths\"). On \"looked at tissue from many tuberculosis cases\" `m7-microscope-v1.png` appears in the \"find it\" bay with a coded",
+      "motionRole": "explain",
+      "onScreenChange": "the right bay expands into its four step bays, labelled small \"find it\", \"grow it\", \"give it\", \"find it again\" (the last three grey for now). On \"In 1882\" a grey tag \"Koch, 1882: tuberculosis\" writes; on \"one in seven of all deaths\" a small coded row of seven dots with one amber (tag \"Koch: about 1 in 7 of all deaths\"). On \"looked at tissue from many tuberculosis cases\" `m7-microscope-v1.png` appears in the \"find it\" bay with a coded circular field beside it holding `m7-tb-stained-field-v1.png` (new); a row of five small copies of the field writes beneath (grey label \"TB cases\"). On \"the same thin, rod-shaped bacterium\" a few rods in the field are ringed (tag \"same rod in every case\"). On \"didn't find it in healthy tissue\" one more field, `m7-healthy-tissue-field-v1.png` (new, the same stained tissue with no rods), appears at the end of the row with a grey label \"healthy tissue: none\". On \"Second, he grew it on its own\" the \"grow it\" bay lights: the first TB tissue field sends a coded arrow, with `m7-inoculating-loop-v1.png` small on it (scaled, never stretched), straight to `m7-serum-slope-tube-v1.png` (new); on \"pure culture\" its cream colonies are ringed (term \"pure culture: only one kind of microbe\", replacing the previous tag). Koch put tissue material directly onto the serum slope; no mixed plate is shown. On \"took weeks\" a small grey clock tag \"weeks\" sweeps once. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "koch-give-find-again",
+      "visualDecision": "adjust",
+      "visualReference": "on \"gave the pure culture to healthy guinea pigs\" the \"give it\" bay lights: the serum tube thumbnail sends a coded arrow to `m7-guinea-pig-v1.png` (new; drawn at least 1.5 times the tube's height), which crossfades to its aligned partner `m7-guinea-pig-unwell-v1.png` (new) on \"developed tuberculosis\" (tag \"healthy host: now has TB\").",
+      "teachingReason": "Give it, find it again, and why all four: Third, he gave the pure culture to healthy guinea pigs, and they developed tuberculosis.",
+      "narrationCue": "gave the pure culture to healthy guinea pigs / developed tuberculosis / recovered the same bacterium / Why all four? / only shows it's there alongside the disease / might have moved in after",
+      "motionPurpose": "On the spoken cues: On \"recovered the same bacterium\" the \"find it again\" bay lights: a stained field like the first, with rods ringed, and an amber equals sign joining it back to the \"find it\" field (tag \"same bacterium\"). On \"Why all four?\" the four bays shrink into one strip and a grey label appears under each, one",
+      "motionRole": "explain",
+      "onScreenChange": "on \"gave the pure culture to healthy guinea pigs\" the \"give it\" bay lights: the serum tube thumbnail sends a coded arrow to `m7-guinea-pig-v1.png` (new; drawn at least 1.5 times the tube's height), which crossfades to its aligned partner `m7-guinea-pig-unwell-v1.png` (new) on \"developed tuberculosis\" (tag \"healthy host: now has TB\"). On \"recovered the same bacterium\" the \"find it again\" bay lights: a stained field like the first, with rods ringed, and an amber equals sign joining it back to the \"find it\" field (tag \"same bacterium\"). On \"Why all four?\" the four bays shrink into one strip and a grey label appears under each, one per cue: under \"find it\" on \"only shows it's there alongside the disease\" \"association only\" (with a grey screen word \"correlation\"); on \"might have moved in after\" one coded host circle gains its illness mark first, then a microbe glyph enters it afterwards (grey label \"came in later?\"), then fades; under \"give it\" on \"shows that the microbe causes it\" \"causation\", in amber; under \"find it again\" on \"rules out a different microbe\" \"confirmation\". Only the newest label is bright; earlier ones dim. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "limits",
+      "visualDecision": "adjust",
+      "visualReference": "the four-step strip stays, labelled across the top \"Koch's postulates\".",
+      "teachingReason": "Where the postulates struggle: These four steps are called Koch's postulates, and their logic is still the standard, but they don't fit every pathogen.",
+      "narrationCue": "Koch's postulates",
+      "motionPurpose": "On the spoken cues: One limit at a time attaches to the step it breaks, with a `StepCheck` grey gap on that step: on \"Viruses can't be grown on their own\" `m7-virus-particle-v1.png` sits on `m5x-cell-protein-synthesis-v1.png` small under \"grow it\" (tag \"viruses: need living cells\"); on \"leprosy\"",
+      "motionRole": "explain",
+      "onScreenChange": "the four-step strip stays, labelled across the top \"Koch's postulates\". One limit at a time attaches to the step it breaks, with a `StepCheck` grey gap on that step: on \"Viruses can't be grown on their own\" `m7-virus-particle-v1.png` sits on `m5x-cell-protein-synthesis-v1.png` small under \"grow it\" (tag \"viruses: need living cells\"); on \"leprosy\" `m6-agar-dish-top-v1.png` small and empty under \"grow it\" (tag \"leprosy bacterium: no culture on its own\", replacing the virus tag); on \"healthy people carry a pathogen\" b01's `HostCircles`: one circle holding a pathogen glyph with no illness mark, under \"find it\" (tag \"healthy carriers\"); on \"deliberately infecting a healthy person\" a host circle labelled \"healthy person\" with a grey cross under \"give it\" (tag \"ethics: human-only diseases\"). Each tag dims as the next lands. On \"detect a microbe's DNA\" a short coded DNA strip appears under \"find it\" and is matched by an identical strip from a sick-host circle, with a small amber tick (tag \"DNA evidence instead of culture\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the full `EvidenceBench`, both bays small.",
+      "teachingReason": "Memory: Here's how to hold it.",
+      "narrationCue": "find it, grow it, give it, find it again",
+      "motionPurpose": "On the spoken cues: On \"find it, grow it, give it, find it again\" the four step labels light one per phrase and one handwritten line writes large across the lower third. On \"two different questions\" the banner's two questions return bright; on \"Pasteur showed where microbes come from\" the broken cloudy flask thumbnail",
+      "motionRole": "explain",
+      "onScreenChange": "the full `EvidenceBench`, both bays small. On \"find it, grow it, give it, find it again\" the four step labels light one per phrase and one handwritten line writes large across the lower third. On \"two different questions\" the banner's two questions return bright; on \"Pasteur showed where microbes come from\" the broken cloudy flask thumbnail pulses under question 1; on \"Koch showed which microbe causes which disease\" the guinea pig pair thumbnail pulses under question 2. Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (a sheep lung disease)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. Sheep on a",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a sheep lung disease))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b3b-merino-sheep-side-v1.png` small at its upper left. Stem: \"Sheep on a farm developed a lung disease. A scientist investigated whether bacterium X causes the disease. Her results are shown (hypothetical data).\" A small table: \"Sheep with the disease: bacterium X found in lung tissue of 20 out of 20\"; \"Healthy sheep: bacterium X found in 0 out of 20\"; \"X grown in pure culture: yes\"; \"Pure culture of X given to 5 healthy sheep: 4 developed the disease\". Demand: \"Assess whether this evidence shows that bacterium X causes the disease. (4 marks)\". One lined answer box. Nothing answer-bearing: no step strip or labels. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "every sick sheep and no healthy one / grown pure / four of five healthy sheep / step four is missing / the classic mistake",
+      "motionPurpose": "On the spoken cues: The four-step strip returns small beneath it, and each step takes a tick or a gap one per cue: on \"every sick sheep and no healthy one\" \"20 out of 20\" and \"0 out of 20\" underline amber and \"find it\" ticks; on \"grown pure\" \"pure culture: yes\" underlines and \"grow it\" ticks; on \"four of five healthy",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. The four-step strip returns small beneath it, and each step takes a tick or a gap one per cue: on \"every sick sheep and no healthy one\" \"20 out of 20\" and \"0 out of 20\" underline amber and \"find it\" ticks; on \"grown pure\" \"pure culture: yes\" underlines and \"grow it\" ticks; on \"four of five healthy sheep\" \"4 developed the disease\" underlines and \"give it\" ticks (small grey note \"4 of 5: one may have resisted\"); on \"step four is missing\" \"find it again\" takes a grey gap and a grey label \"not done: recover X from the 4 sick sheep\". A verdict bar writes: \"strong support, but step 4 needed to confirm\". The first three ticks dim. On \"the classic mistake\" the chip \"all steps done, so X is proven\" writes on and takes a grey scribble cross. Settle on the verdict for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m5x-koala-v1.png` small at its upper left.",
+      "teachingReason": "Unseen transfer task (attempt two (koala chlamydia)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Chlamydia pecorum is a bacterium that causes",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (koala chlamydia))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m5x-koala-v1.png` small at its upper left. Stem: \"*Chlamydia pecorum* is a bacterium that causes eye and urinary tract disease in koalas. It can reproduce only inside living host cells. Koalas in New South Wales are listed as an endangered species.\" Demand: \"Explain TWO reasons why it is difficult to apply Koch's postulates to this disease. (4 marks)\". One lined answer box. Nothing answer-bearing: no step strip. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "grows only inside living cells / deliberately infecting healthy koalas / the classic mistake / a bacterium that needs host cells",
+      "motionPurpose": "On the spoken cues: The four-step strip returns small; on \"grows only inside living cells\" \"only inside living host cells\" underlines amber and \"grow it\" takes a grey gap with the label \"reason 1: no pure culture on its own\"; on \"deliberately infecting healthy koalas\" \"endangered species\" underlines and \"give it\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. The four-step strip returns small; on \"grows only inside living cells\" \"only inside living host cells\" underlines amber and \"grow it\" takes a grey gap with the label \"reason 1: no pure culture on its own\"; on \"deliberately infecting healthy koalas\" \"endangered species\" underlines and \"give it\" takes a grey gap with the label \"reason 2: ethics, endangered host\". On \"the classic mistake\" the chip \"Chlamydia is a virus\" writes on and takes a grey scribble cross, with the small grey reason \"a bacterium that needs host cells\". Settle on the strip for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "three step chips write on in a column, one per cue: \"Pasteur: microbes come from microbes (only particle access changed)\", \"Koch: four steps link one microbe to one disease\", \"a step can't be done? name it and say why\".",
+      "teachingReason": "Decision rule and handoff: So for a germ theory question, match each scientist to the question he answered.",
+      "narrationCue": "So for a germ theory question, match each",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how a pathogen moves between hosts\" (small `m7-mosquito-vector-v1.png` thumbnail). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on in a column, one per cue: \"Pasteur: microbes come from microbes (only particle access changed)\", \"Koch: four steps link one microbe to one disease\", \"a step can't be done? name it and say why\". A \"Next\" chip slides in at the lower right: \"Next: how a pathogen moves between hosts\" (small `m7-mosquito-vector-v1.png` thumbnail). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b02-learning-review.md",
+      "sha256": "7cb5c45855572890137d63a8b43b4a75eb098247dcf8f3411bffa6451e35fd77"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b02-claude-science-check.md",
+      "sha256": "26e66967e73da7d0dd288477336734c50bee499c3bc0a5099694fbc0a165c1a3"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

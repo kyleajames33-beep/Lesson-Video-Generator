@@ -1,0 +1,168 @@
+{
+  "title": "Measuring the enthalpy of neutralisation: how do you measure a temperature you never see?",
+  "subtitle": "The thermometer never catches the full temperature rise, because heat escapes from the moment it is made. So how do you set up the enthalpy of neutralisation experiment, and how do you recover the temperature you never see?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 4,
+  "lessonIntent": "setting up an insulated, lidded, supported cup and explaining each part; measuring and averaging both starting temperatures; logging past the peak; plotting the temperature-time graph and extrapolating the cooling line to the mixing time, with its assumption; calculating ΔH from the extrapolated rise; naming the controlled variables of a repeated measurement; tracing an error through ΔT, q and ΔH; judging validity, reliability and accuracy; writing the risk rows for 1.00 mol/L NaOH and HCl. No weak acids (chem-m6-c09), no applications (chem-m6-c04), no percentage uncertainty.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's an odd thing about this experiment. When you mix an acid and a base in a foam cup, the thermometer doesn't show the highest temperature the mixture could reach. Heat starts escaping the moment it's made, so by the time the reading peaks, some is already gone. That's partly why the last video's answer fell short of minus fifty seven. So how do you set it up, and how do you measure a temperature you never actually see?"
+      }
+    },
+    {
+      "id": "setup",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the set-up. Fifty millilitres of one mole per litre hydrochloric acid goes into a polystyrene foam cup, standing in a beaker so it can't tip. Foam is full of trapped air, so it lets very little heat through: it's an insulator. A lid cuts the heat carried away by warm air and vapour. Measure both solutions with measuring cylinders, because the moles and the mass both come from those volumes."
+      }
+    },
+    {
+      "id": "start-temperature",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Before mixing, measure the temperature of each solution, and wait until both are steady. If the acid reads twenty one point four and the base twenty one point six, use the average, twenty one point five, because you're mixing equal volumes. Why bother? A warm base would raise the temperature even with no reaction at all."
+      }
+    },
+    {
+      "id": "mix-log",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now pour in the sodium hydroxide quickly, put the lid on, and stir. Read the temperature every thirty seconds, and keep going for several minutes past the peak. It's tempting to stop at the highest reading. But the readings after the peak turn out to be the most useful part."
+      }
+    },
+    {
+      "id": "graph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Plot temperature against time. The temperature shoots up for about a minute, peaks at twenty seven point eight, then falls slowly in a straight line as the cup loses heat. But the cup was losing heat during the rise as well. So that peak is lower than the temperature the mixture would have reached if no heat had escaped."
+      }
+    },
+    {
+      "id": "extrapolate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So draw a straight line through the cooling points, and extend it back to the moment of mixing. Why there? The reaction itself is almost instant, so with no heat lost, the temperature would jump to its peak the moment you mix. Here the line meets twenty eight point one degrees, our best estimate of the temperature with no heat lost. Extending a line past your measured points is called extrapolation. It assumes the cup was losing heat at about the same rate during the rise as afterwards."
+      }
+    },
+    {
+      "id": "calculate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the calculation, as in the last video. The rise is twenty eight point one minus twenty one point five, six point six degrees. With one hundred grams of solution, q is about two thousand seven hundred and fifty nine joules. There's zero point zero five zero zero moles of water, so delta H is minus fifty five kilojoules per mole. Using the highest reading instead gives only minus fifty three."
+      }
+    },
+    {
+      "id": "variables",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So what are the variables? Here you aren't changing anything between runs: you're measuring one value, three times. So the controlled variables matter most: the same concentrations and volumes, the same starting temperature, and the same cup, lid, stirring and timing."
+      }
+    },
+    {
+      "id": "errors",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why is minus fifty five still short of minus fifty seven? Follow each error through the chain: what it does to delta T, then q, then delta H. Heat escaping through the walls and lid, or soaking into the cup and probe, makes delta T too small, so q is too small, and delta H comes out less negative. Most errors here push the same way, but not every one: if you used only the cooler acid's starting temperature, delta T would come out too big, and delta H too negative. And never write \"human error\". Name the actual cause."
+      }
+    },
+    {
+      "id": "validity-reliability",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the three words from the equilibrium practical. Validity: does the experiment measure what it's meant to? Here, the rise must come from the reaction alone, with the heat kept in: both starting temperatures averaged, a lidded foam cup, and extrapolation. Reliability: do repeats agree? Three runs gave minus fifty five, minus fifty four and minus fifty six, so they're reliable. Accuracy: how close is it to the accepted value, about minus fifty seven? Repeats can't fix that: heat escapes in every run, so every run comes out low. Cutting heat loss can."
+      }
+    },
+    {
+      "id": "risk-assessment",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Before you start, the risk assessment. One mole per litre sodium hydroxide is corrosive: it can cause severe skin burns and eye damage. So wear safety glasses or goggles, and rinse any splash off with plenty of water. The hydrochloric acid is low hazard at this strength, but keep it out of your eyes too. Stand the cup in a beaker so it can't tip, and stir with the stirrer, not a glass thermometer."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Six words to keep: lid on, log on, line back. A lid keeps more heat in, logging past the peak gives you the cooling line, and drawing that line back finds the temperature you never saw."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Fifty millilitres each of one mole per litre nitric acid and potassium hydroxide, both at twenty point nine degrees, are mixed in a lidded polystyrene cup. The graph shows the readings. Use it to find the temperature change, then calculate the molar enthalpy of neutralisation. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Draw the cooling line back to time zero: it meets twenty seven point four degrees, so delta T is six point five, and q is two thousand seven hundred and seventeen joules. Divide by zero point zero five zero zero moles of water: delta H is minus fifty four kilojoules per mole. Using the highest reading gives minus fifty two, which ignores the heat already lost."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more. Another student mixes the same hydrochloric acid and sodium hydroxide in an uncovered glass beaker, records the highest temperature on a thermometer, and gets minus forty six kilojoules per mole. Identify the main source of error, explain its effect on the result, and suggest one improvement. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The main error is heat loss. Glass lets heat through far more easily than foam, the beaker soaks up some heat itself, and the open top lets warm air escape. So the measured rise is too small, q is too small, and delta H is less negative. Improve it with a lidded foam cup, and extrapolate the cooling line back. Writing \"human error\" doesn't name a cause, so nobody can fix it."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So: insulate and cover the cup, measure and average both starting temperatures, log past the peak, and extrapolate the cooling line back to the moment of mixing. Then trace each error through delta T, q and delta H. Next: where neutralisation solves real problems."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

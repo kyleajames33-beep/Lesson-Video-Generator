@@ -1,0 +1,168 @@
+{
+  "title": "How do we name and draw a carbon chain? Three drawings, five naming rules, and reading a name back into a molecule",
+  "subtitle": "A name like 3-methylpent-1-ene looks like a code. How do you read a name like that, write one from a drawing, and draw the molecule back from the name?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 1,
+  "lessonIntent": "drawing a hydrocarbon three ways and counting implied hydrogens; naming straight and branched alkanes, alkenes and alkynes up to C8 with methyl and ethyl branches (longest chain, nearer-end numbering, di- and alphabetical order, multiple-bond locant and priority); drawing a structure from a name and checking its molecular formula by counting. No isomers (chem-m7-c02), no shapes, bond angles, general formulas or homologous series (chem-m7-c03), no other families, no safety.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The canister under this camping stove holds butane, often mixed with propane. That name isn't a brand. It's a code: but means four carbons, and ane means only single bonds between them. Chemists name carbon compounds this way, so a name like three-methylpent-one-ene is really a set of drawing instructions. So how do you read a name like that, and write one from a drawing?"
+      }
+    },
+    {
+      "id": "four-bonds",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "You know from Year 11 that carbon has four valence electrons, so each carbon forms four covalent bonds. Carbon can bond to other carbons, so it builds long chains, and a chain can grow branches. That's why there are millions of carbon compounds, and why each one needs a name that points to just one structure. Real chains aren't straight, either. The bonds spread out, so the carbons zigzag."
+      }
+    },
+    {
+      "id": "three-drawings",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "There are three common ways to draw a chain. A full structural formula shows every atom and every bond. A condensed formula writes each carbon with its hydrogens: C H three, C H two, C H two, C H three. A skeletal formula keeps just the zigzag. Every corner and every end is a carbon, and the hydrogens are left out. You put them back in your head, enough to give each carbon four bonds: three on an end carbon, two on a corner, and one where a branch joins."
+      }
+    },
+    {
+      "id": "rule-stem",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the naming rules, one at a time. Rule one: the start of the name, the stem, counts the carbons in the main chain. Meth is one, eth two, prop three, but four. A way to remember those: Monkeys Eat Peeled Bananas. From five, the stems match shapes you know: pent as in pentagon, hex as in hexagon, hept as in heptagon, and oct, as in octagon, for eight."
+      }
+    },
+    {
+      "id": "rule-ending",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Rule two: the ending tells you the bonds between carbons. Ane means only single bonds. Chemists call that saturated: each carbon holds as many hydrogens as it can. Ene means there's a carbon to carbon double bond, and yne means a triple bond. Those are unsaturated. To remember the order, a, e and y go alphabetically, just as one, two and three bonds go in order."
+      }
+    },
+    {
+      "id": "rule-longest-chain",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Rule three: find the longest continuous chain of carbons. That's the main chain, also called the parent chain, and it can bend on the page. Look at this one. It's drawn as four carbons in a row, with two more hanging down, so you might call it two-ethylbutane. But trace a path that turns down into that branch, and you get five carbons. So the main chain is pentane, and the real branch is just one carbon."
+      }
+    },
+    {
+      "id": "rule-number",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A branch is named from its carbons, with yl on the end: one carbon is methyl, two is ethyl. Rule four: number the main chain from the end nearer the branch, so the branch gets the lowest number, and everyone writes the same name. That number is called a locant, and it says which carbon. Here the methyl sits on carbon three, from either end, so this is three-methylpentane. On this shorter chain, counting from the left puts the methyl on carbon two: two-methylbutane. Three-methylbutane counts from the wrong end."
+      }
+    },
+    {
+      "id": "rule-several-branches",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Rule five covers more than one branch. Two of the same get di, as in two, three-dimethylpentane. Commas go between numbers, and a hyphen joins a number to a word. Different branches go in alphabetical order, ignoring di. So this one is three-ethyl-two-methylpentane. E comes before m, even though the methyl has the lower number."
+      }
+    },
+    {
+      "id": "multiple-bonds",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Double and triple bonds add one more step. The main chain has to contain the double bond, because the ending, ene or yne, describes the main chain's bonds. Then you number from the end that gives it the lowest number. That locant goes just before the ending. In but-one-ene, the double bond starts at carbon one. In a skeletal drawing, a double bond counts as two of a carbon's four bonds, so each carbon in it has one fewer hydrogen. Move the double bond to the middle, and you get but-two-ene. Ethene and propene don't need a number at all, because there's only one place the double bond can go."
+      }
+    },
+    {
+      "id": "bond-wins",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "What if there's a branch as well? The double bond wins, because it's named in the ending, so it gets first claim on the low numbers. In this chain of five, numbering from the left puts the double bond on carbon one, and the methyl on carbon four: four-methylpent-one-ene. From the right, the methyl would get a two, but the double bond would get a four, so two-methylpent-four-ene is wrong. A triple bond follows the same rules: this is pent-two-yne."
+      }
+    },
+    {
+      "id": "name-to-structure",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Names work backwards too. Take two, two-dimethylpentane. Draw the main chain first: pent, so five carbons. Put two methyls on carbon two. Then add hydrogens, so every carbon has four bonds. Check by counting: seven carbons and sixteen hydrogens. Count only one of the methyls, and you'd write C six H fourteen: one carbon and two hydrogens short, so it can't be this molecule."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to name a chain: find the longest chain that holds any double or triple bond. Number it so that bond, then the branches, get the lowest numbers. Then write the name in the order branches, stem, ending."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Give the IUPAC name and the molecular formula of the hydrocarbon in this skeletal formula. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The longest chain has six carbons and holds the double bond, so it's a hexene. Number from the left, nearer the double bond: it starts on carbon two, and the methyl's on carbon five. That's five-methylhex-two-ene. Each double-bond carbon has just one hydrogen, so it's C seven H fourteen. Two-methylhex-four-ene numbers for the branch, but the double bond wins."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A student names a hydrocarbon two-ethylpentane. Explain why that name is incorrect. Then give the correct IUPAC name, and draw the skeletal formula. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Draw what the student described, then trace the longest chain through the ethyl branch: that's six carbons, not five. So the main chain is hexane, with a methyl branch. Number from the nearer end, and the methyl sits on carbon three: three-methylhexane. Four-methylhexane counts from the wrong end."
+      }
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So a name tells you the chain length, the bonds and every branch, and you can rebuild the molecule from it. And here's something to think about. Butane has the formula C four H ten. Can those same atoms be joined another way? Next: how the same formula can make different molecules."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

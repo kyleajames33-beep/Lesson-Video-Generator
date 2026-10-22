@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C02-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c02/lesson.json",
+  "lessonSha256": "d76e04f46a545e6c9878f1102d19644c8d3e0a0f9ed41cbc82452a3554b666e4",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c02/lesson.production-brief.json",
+    "sha256": "39c9075daa4e224eac8554651bbc67e429c4c19e603f74aac8f14549fce46d91"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Ethanol, the alcohol in this bottle, has the formula C two H six O. Methoxymethane, used as a propellant in some spray cans, has exactly the same formula: two carbons, six hydrogens, one oxygen. Yet ethanol boils at seventy eight degrees, and methoxymethane at about minus twenty five, so it's a gas at room temperature. Same atoms, different substances. So how can one formula make different molecules?",
+      "hash": "4ad8c63be01a",
+      "textSha256": "4ad8c63be01a289d576b5492e9690c753130706e8d4eea71c086d615f0003d8d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/hook.4ad8c63be01a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/hook.4ad8c63be01a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/hook.4ad8c63be01a.generation.json",
+      "plannedRequestSha256": "b271e242a9d22c49655b933f36cd8359c77cb2b6f3916710e3f8e53a64802048"
+    },
+    {
+      "id": "formula-vs-structure",
+      "parentSceneId": "formula-vs-structure",
+      "text": "A molecular formula only counts the atoms. It doesn't show how they're joined. In ethanol, the oxygen sits at the end of the chain with a hydrogen on it: an O H group. In methoxymethane, the oxygen sits between the two carbons. Compounds with the same molecular formula, but their atoms joined in a different order, are called structural isomers. They're different compounds, with different names and different properties. In the last video, every name pointed to one structure. Now one formula can point to several.",
+      "hash": "3dea31991440",
+      "textSha256": "3dea31991440d602d56211aed641eb933de42233af85196834d4ff4fe8aef2fa",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/formula-vs-structure.3dea31991440.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/formula-vs-structure.3dea31991440.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/formula-vs-structure.3dea31991440.generation.json",
+      "plannedRequestSha256": "509271e6eb20a51d1393a3117e0bf1bff30f868864851df9938b30424d489af5"
+    },
+    {
+      "id": "why-arrangement-matters",
+      "parentSceneId": "why-arrangement-matters",
+      "text": "And the arrangement changes the properties. That O H lets ethanol molecules hydrogen bond to each other, which you met in Year 11: the hydrogen on one molecule's oxygen is attracted to the oxygen of the next. Methoxymethane has no hydrogen on its oxygen, so its molecules can't hydrogen bond to each other. They have the same atoms, so they're about the same size. The hydrogen bonds make the difference. Weaker attractions between molecules mean a lower boiling point. Isomers come in three kinds, and the kind depends on what changed.",
+      "hash": "06198a98055c",
+      "textSha256": "06198a98055c2aa295eea990594271609a28bcffdb83cd143d4fc7aa11fb2119",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/why-arrangement-matters.06198a98055c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/why-arrangement-matters.06198a98055c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/why-arrangement-matters.06198a98055c.generation.json",
+      "plannedRequestSha256": "07f07f4fb45e757a46817254f7c288e005750531fd06026aba56ca0f866c9680"
+    },
+    {
+      "id": "chain-isomers",
+      "parentSceneId": "chain-isomers",
+      "text": "First, chain isomers. The carbon skeleton changes, but the family, here the alkanes, stays the same. Butane is four carbons in a row. Take a carbon off the end and hang it on the middle, and you get two-methylpropane. Both are C four H ten, both are alkanes. Camping gas often contains both, and they boil at different temperatures. The next video explains why branching does that.",
+      "hash": "df082cdef193",
+      "textSha256": "df082cdef193029314d7b1fb06693d0c679a8e76bb29561366668c015389f3bc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/chain-isomers.df082cdef193.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/chain-isomers.df082cdef193.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/chain-isomers.df082cdef193.generation.json",
+      "plannedRequestSha256": "cde879b4d8a24678f53578abfa8a612f6ee12c1af59461bd610c8e6a52a6ff61"
+    },
+    {
+      "id": "position-isomers",
+      "parentSceneId": "position-isomers",
+      "text": "Second, position isomers. The skeleton stays the same, and so does the family. Only the group moves to a different carbon. In but-one-ene, the double bond starts at carbon one. In but-two-ene it starts at carbon two. The same goes for an O H group. The ending ol means an O H, which is why ethanol ends in ol, and the number says which carbon carries it: propan-one-ol and propan-two-ol are position isomers too. Moving a group can change how it reacts, and you'll see later that these two alcohols give different products.",
+      "hash": "72814f6f5251",
+      "textSha256": "72814f6f5251f73d9881a3b36fe7af8f37fa5eab1bf37da797a220f58ca12daf",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/position-isomers.72814f6f5251.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/position-isomers.72814f6f5251.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/position-isomers.72814f6f5251.generation.json",
+      "plannedRequestSha256": "7a39df8829762d2e48b70573ee06cad07450221218eadc3a886a9849c6b7a7a4"
+    },
+    {
+      "id": "functional-group-isomers",
+      "parentSceneId": "functional-group-isomers",
+      "text": "Third, functional group isomers. A functional group is the part of a molecule that gives its family its reactions, like a double bond, or an O H. In these isomers, the group itself is different. Ethanol and methoxymethane are one pair. Here's a pair of hydrocarbons. But-one-ene is C four H eight, with a double bond. Join the four carbons into a ring instead, and you get cyclobutane. It's also C four H eight, but it has only single bonds, so it's in a different family: the cycloalkanes, rings of carbons with only single bonds. One is unsaturated, the other saturated.",
+      "hash": "01a6fdfccca7",
+      "textSha256": "01a6fdfccca7458a221b59fc3af463c742c4735e410615cb0d6c929b789bd827",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/functional-group-isomers.01a6fdfccca7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/functional-group-isomers.01a6fdfccca7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/functional-group-isomers.01a6fdfccca7.generation.json",
+      "plannedRequestSha256": "ffdca2dc488f60c1988f8ced0dbc4fc2b1333cb4334effe790099726cbba0532"
+    },
+    {
+      "id": "why-group-matters",
+      "parentSceneId": "why-group-matters",
+      "text": "And a different group means different chemistry. The double bond is where an alkene reacts, so cyclobutane, with no double bond, won't react the same way. That's why chemists care which isomer they have, and later you'll meet a simple test that tells these two apart. So the group sets the family's reactions, and the full arrangement sets the name.",
+      "hash": "37014e9e3744",
+      "textSha256": "37014e9e37442c9870f7336c6b28b6857fca902a7ebae1f06eff4a55a42b1824",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/why-group-matters.37014e9e3744.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/why-group-matters.37014e9e3744.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/why-group-matters.37014e9e3744.generation.json",
+      "plannedRequestSha256": "f1ba93f1dca0f0b2c0fb27950e4bbb74f194510207cee497a34746a3983c527c"
+    },
+    {
+      "id": "classify-a-pair",
+      "parentSceneId": "classify-a-pair",
+      "text": "So, to classify a pair, ask three questions. Same molecular formula? If not, they aren't isomers at all. Butane and but-one-ene, for example, aren't isomers: but-one-ene has two fewer hydrogens. Different family? Then they're functional group isomers. Same family? Then check whether the skeleton changed, or only the group's position. Watch the classic slip: propan-one-ol and propan-two-ol aren't functional group isomers. Both are alcohols. The group moved, it didn't change.",
+      "hash": "bb577f67bf2a",
+      "textSha256": "bb577f67bf2a29d6309402a28e5af4890c9d40ba0993c91561fa9c6de6a0bb8a",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/classify-a-pair.bb577f67bf2a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/classify-a-pair.bb577f67bf2a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/classify-a-pair.bb577f67bf2a.generation.json",
+      "plannedRequestSha256": "6005857f2d5c600243bdcad3fb36902b29652f51095d1fde17a5ed63003a5e94"
+    },
+    {
+      "id": "find-every-isomer",
+      "parentSceneId": "find-every-isomer",
+      "text": "To find every isomer of a formula, work systematically. For C five H twelve, start with the longest chain: pentane. Shorten the chain by one, and put that carbon back as a branch on carbon two: two-methylbutane. Shorten it again, and both spare carbons go on the middle carbon: two, two-dimethylpropane. Shorten once more, to two carbons, and any branch you add just makes a longer chain again. So that's all three.",
+      "hash": "833da0ead0dc",
+      "textSha256": "833da0ead0dcc08c0b840dffd463be410d0bbb007e267ac329e5771d94192d4e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/find-every-isomer.833da0ead0dc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/find-every-isomer.833da0ead0dc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/find-every-isomer.833da0ead0dc.generation.json",
+      "plannedRequestSha256": "30bf009792a9e410e998fc3d674b342918ce36f166c94350a8ba23dc44c3855d"
+    },
+    {
+      "id": "spot-duplicates",
+      "parentSceneId": "spot-duplicates",
+      "text": "But watch for duplicates. Bending a chain on the page doesn't make a new molecule: this bent drawing is still pentane. A methyl on an end carbon just makes the chain longer, so one-methylbutane is pentane again. And three-methylbutane is two-methylbutane counted from the wrong end. The test is to name every structure. Same name, same molecule.",
+      "hash": "f0094046377f",
+      "textSha256": "f0094046377f3101c5b1647b875c73abac06051ce15e2423a2b07566cd8bae86",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/spot-duplicates.f0094046377f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/spot-duplicates.f0094046377f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/spot-duplicates.f0094046377f.generation.json",
+      "plannedRequestSha256": "64b09fd67eb24ee063f82e7956d3107634c543070703ed865ffc4b93718b1775"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So remember: same formula, different arrangement. Isomers always have the same atoms, so check the formula first. Then ask what changed: the chain, the position, or the group.",
+      "hash": "9a06334a70ea",
+      "textSha256": "9a06334a70ea016e7a90a4e28f0f231b8e9b4ea46ec09baf83df715b6775aaa0",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/memory-aid.9a06334a70ea.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/memory-aid.9a06334a70ea.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/memory-aid.9a06334a70ea.generation.json",
+      "plannedRequestSha256": "16ba695b701fddcdcf03b15f0d58a98c5aa6a9a3323c88b50f4aef8f68e0178e"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Classify each pair as chain, position or functional group isomers. Pent-one-ene and pent-two-ene. Pentane and two, two-dimethylpropane. Cyclopentane and pent-one-ene. Pause here to answer.",
+      "hash": "a563d3c4ee2f",
+      "textSha256": "a563d3c4ee2f84ad599136702dd70765f180654a4230efa6285304db64af292b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/attempt-1.a563d3c4ee2f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/attempt-1.a563d3c4ee2f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/attempt-1.a563d3c4ee2f.generation.json",
+      "plannedRequestSha256": "0758e959d1c22bc38d5a1599f3ba71e07a670580c9fe1a80b8b968e45b62fd15"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "First pair: same chain, same double bond, it just moved, so position isomers. Second pair: both alkanes, with a different skeleton, so chain isomers. Cyclopentane is a cycloalkane, a ring with no double bond, so it's a different family from pent-one-ene: functional group isomers. Calling the first pair chain isomers is the slip. The chain didn't change.",
+      "hash": "f9fe3d4ce260",
+      "textSha256": "f9fe3d4ce260cc9147c7fe13e50521aee21b8aff885611f1206a534a9d613d30",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/feedback-1.f9fe3d4ce260.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/feedback-1.f9fe3d4ce260.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/feedback-1.f9fe3d4ce260.generation.json",
+      "plannedRequestSha256": "b16827765d81fdbd826e1bee8808327a537210d088926be1dc95a2cc0670c86e"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student draws these three structures, and says they show three different isomers of C five H twelve. Evaluate the student's statement. Pause here to answer.",
+      "hash": "ce0007dedeaa",
+      "textSha256": "ce0007dedeaa20171753b88a1694b8db01e67af2712b5c73a7801e27fdbf6646",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/attempt-2.ce0007dedeaa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/attempt-2.ce0007dedeaa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/attempt-2.ce0007dedeaa.generation.json",
+      "plannedRequestSha256": "e4cfef550d1f2b380f91097d1f11b3356c3fd2b3882d208c55a973a5b526fb6a"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Name each one, and trace the longest chain. A and B are both pentane. B is the same chain drawn with a bend. C is two-methylbutane. So the statement is incorrect: the drawings show only two different isomers. The third, two, two-dimethylpropane, isn't drawn. Counting a bent drawing as a new molecule is the slip.",
+      "hash": "b1cdaaeb34fb",
+      "textSha256": "b1cdaaeb34fb8b488ad8e9c8f490cc7aee0e9dfdfb474419608c0ee81dd1b0df",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/feedback-2.b1cdaaeb34fb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/feedback-2.b1cdaaeb34fb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/feedback-2.b1cdaaeb34fb.generation.json",
+      "plannedRequestSha256": "e40c30195e446f3cd9f1cbcf207c846811d0b1f8bedf8b145d176e962ba20f9c"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So isomers share a formula, but not a structure, and the structure decides the name and the properties. Next: how carbon's bonds give hydrocarbons their shapes, and why chain length and branching change their boiling points.",
+      "hash": "837efa6056aa",
+      "textSha256": "837efa6056aab36e2f7b815998ca35dcb8a27082019d5c4b4489618e74e0db19",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/handoff.837efa6056aa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/handoff.837efa6056aa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/handoff.837efa6056aa.generation.json",
+      "plannedRequestSha256": "b1f53ff5925aa43b2db9ddabed85d365a65bb30a1f3bf85f20e78e6554bada5e"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C02-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

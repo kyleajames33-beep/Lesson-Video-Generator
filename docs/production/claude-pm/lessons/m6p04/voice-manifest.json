@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-P04-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6p04/lesson.json",
+  "lessonSha256": "cabfbaf2507eb1c4c5282e277e2006b1802356db8dbdfe6f385bd796c2ae939a",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6p04/lesson.production-brief.json",
+    "sha256": "fba919c67396e5cd264ebd2639d859ecf184e939f00934e958d8b1dd7d3188d9"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Two bottles, both labelled zero point one zero zero moles per litre. One's hydrochloric acid, the other's ethanoic acid. You've only got a pH meter. Can you show which acid is strong? And here's the harder part: what if one label is wrong? Today you'll build two pH tests of strength, and the second one doesn't trust the label at all.",
+      "hash": "4ea1bfde1400",
+      "textSha256": "4ea1bfde1400202968767e389f641cdfee08f847f8d95a447877833827781202",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/hook.4ea1bfde1400.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/hook.4ea1bfde1400.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/hook.4ea1bfde1400.generation.json",
+      "plannedRequestSha256": "4074c24a8b6fe82de1cd4d0f81669553998e508332dc632671ed32cc6298302b"
+    },
+    {
+      "id": "matched-concentration",
+      "parentSceneId": "matched-concentration",
+      "text": "The first test is from the strong and weak video, and the last practical used it too: compare at the same concentration. Why does that matter? Because a concentrated weak acid can read a lower pH than a dilute strong one. So if the concentrations differ, the pH mixes up two things. Match them, and any pH difference has to come from strength. This time, all four are at zero point one zero zero.",
+      "hash": "0ff99d9916a8",
+      "textSha256": "0ff99d9916a8b383586fb9535b4133dc6921e542b065c29992aa5915146a6d08",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/matched-concentration.0ff99d9916a8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/matched-concentration.0ff99d9916a8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/matched-concentration.0ff99d9916a8.generation.json",
+      "plannedRequestSha256": "f9b09663e3e74a99b49c5fd4de94c64ba8d424983a4a171959446ef9436ea6fb"
+    },
+    {
+      "id": "routine-recall",
+      "parentSceneId": "routine-recall",
+      "text": "Measure them exactly as in the last practical: calibrate with buffers, rinse and blot the probe between samples, wait for a steady reading, and take three readings in fresh portions. One new point: the strong acid and base will read near one and thirteen, outside the four to ten range you calibrated.",
+      "hash": "f9a90062f179",
+      "textSha256": "f9a90062f179749f26e55b075e1ba1c77ebd053513dcbffead043a482d7fed44",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/routine-recall.f9a90062f179.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/routine-recall.f9a90062f179.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/routine-recall.f9a90062f179.generation.json",
+      "plannedRequestSha256": "4e47423e8e0e5a25f387c7d0389f3a9b62471fad865912a5c0eaedff6ff07e36"
+    },
+    {
+      "id": "results",
+      "parentSceneId": "results",
+      "text": "Here are one class's means. Hydrochloric acid, one point zero eight. Ethanoic acid, two point nine zero. Sodium hydroxide, twelve point nine one, and ammonia, eleven point one zero. Each set of three readings agreed within about zero point zero three.",
+      "hash": "216d0ffc3175",
+      "textSha256": "216d0ffc31754dd863d18e84048c929ea12e52a3d9823e4a57afe4881133746a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/results.216d0ffc3175.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/results.216d0ffc3175.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/results.216d0ffc3175.generation.json",
+      "plannedRequestSha256": "ae28130e186ed225ee604bbaef563f46e893357b325d29553a1ddb092f8d19bb"
+    },
+    {
+      "id": "the-gap",
+      "parentSceneId": "the-gap",
+      "text": "At the same concentration, hydrochloric acid reads almost two units lower. Two units would be a hundred times, and this is a bit less, so from these readings it's about seventy times as much hydronium. That's because every hydrochloric acid molecule gives its proton to water, but only a small fraction of ethanoic acid molecules do. Single arrow, double arrow. The bases mirror it: sodium hydroxide gives far more hydroxide than ammonia does.",
+      "hash": "e1cf2a0e6464",
+      "textSha256": "e1cf2a0e6464d8c400f6fa5ed5edd04b67cbbcfbe5fb995370c247bbb2c94915",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/the-gap.e1cf2a0e6464.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/the-gap.e1cf2a0e6464.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/the-gap.e1cf2a0e6464.generation.json",
+      "plannedRequestSha256": "035c5a1a9f338fd47a8e48ca372a021bc97e20d7e8476da874eb7b0b3ab126a2"
+    },
+    {
+      "id": "dilution-method",
+      "parentSceneId": "dilution-method",
+      "text": "But test one trusts the labels, and a wrong label could fool you. So here's the second test. Use a volumetric pipette to transfer ten millilitres of each solution into a hundred millilitre volumetric flask, and make it up to the mark with distilled water. That's exactly tenfold dilution, whatever the starting concentration was. Then see how far the pH moves.",
+      "hash": "748d2f91fda5",
+      "textSha256": "748d2f91fda5a2089d7aefec23ecfe05f2364ec026619adcd9e31bb9082e872e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/dilution-method.748d2f91fda5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/dilution-method.748d2f91fda5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/dilution-method.748d2f91fda5.generation.json",
+      "plannedRequestSha256": "c86f9389073e727656e71b9d9a1ab07201539c740cfd6690271fc95934e8882f"
+    },
+    {
+      "id": "dilution-results",
+      "parentSceneId": "dilution-results",
+      "text": "Here's what happened. Hydrochloric acid went from one point zero eight to two point zero four, up almost exactly one unit. Ethanoic acid went from two point nine zero to three point three nine, up only about half a unit. And the bases? Sodium hydroxide dropped about one unit, ammonia about half.",
+      "hash": "6d065f8e26d4",
+      "textSha256": "6d065f8e26d4780df83dd317a4f9703bfbeb87a87bd2d7b4103a9fb668ba721b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/dilution-results.6d065f8e26d4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/dilution-results.6d065f8e26d4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/dilution-results.6d065f8e26d4.generation.json",
+      "plannedRequestSha256": "3553785500957e9232223433faf42927adee997d8871e48ebf213085ffea3eed"
+    },
+    {
+      "id": "strong-moves-one",
+      "parentSceneId": "strong-moves-one",
+      "text": "Why about a whole unit? Hydrochloric acid is already completely ionised. Diluting it just spreads the same hydronium ions through ten times the volume, so there's a tenth as much hydronium in each litre. A tenth is one pH unit.",
+      "hash": "3b63536c64d0",
+      "textSha256": "3b63536c64d0670319b416b8f2b4743a933db9a61955abbddf5c42715811d4ae",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/strong-moves-one.3b63536c64d0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/strong-moves-one.3b63536c64d0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/strong-moves-one.3b63536c64d0.generation.json",
+      "plannedRequestSha256": "82bad972c94ce004cdeb24114ba25c241c8e43cb6d94b10ae9652c43a291e48a"
+    },
+    {
+      "id": "weak-moves-half",
+      "parentSceneId": "weak-moves-half",
+      "text": "Ethanoic acid is different. When you dilute it, the hydronium and ethanoate ions are spread out, so they meet less often, and fewer join back into whole molecules. The balance settles with a bigger fraction ionised. Those extra ions partly make up for the dilution. So the hydronium per litre falls by much less than ten times, and for ethanoic acid the pH rises only about half a unit.",
+      "hash": "601453e055da",
+      "textSha256": "601453e055da2f49ebd7d3dfc52d2b30f01150bc9509c3e8d02aa6ca768d8464",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/weak-moves-half.601453e055da.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/weak-moves-half.601453e055da.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/weak-moves-half.601453e055da.generation.json",
+      "plannedRequestSha256": "5e3788b1bfe639a210cefeaaaab27530f3b608286648bfa3fa9278b32dc13401"
+    },
+    {
+      "id": "bases-and-check",
+      "parentSceneId": "bases-and-check",
+      "text": "The bases mirror this. Ammonia only partly reacts with water, so dilution lets more of it react, and its pH falls only about half a unit. The diluted readings match the last practical, too. But look at the gap between the two acids: almost two units before dilution, about one point four after. That's why the last practical found about twenty three times, not seventy. Dilution narrows the gap, because the weak acid ionises more.",
+      "hash": "1c53b52eaa7a",
+      "textSha256": "1c53b52eaa7ac9c3e5022d0f44e16279f73cfdca9d79f015ac134054361d561d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/bases-and-check.1c53b52eaa7a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/bases-and-check.1c53b52eaa7a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/bases-and-check.1c53b52eaa7a.generation.json",
+      "plannedRequestSha256": "1a2c847f11c248a3d64a5888875d0637d053993a5e31e6a6b32c905a612729c9"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "So, the variables. In test one, the independent variable is which acid or base you use, and in test two it's the dilution. The dependent variable is the pH, or its change. And you control the concentration, the temperature, the volume in each beaker, the calibrated meter and the rinsing routine.",
+      "hash": "83bc464bf21b",
+      "textSha256": "83bc464bf21b8b6377f9c6db487a3e30f19a840da5cb1a7034e7f911728967cc",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/variables.83bc464bf21b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/variables.83bc464bf21b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/variables.83bc464bf21b.generation.json",
+      "plannedRequestSha256": "2962d7ea3e3c939ac125789fc3875f15bdee85d8c7cf6025d80a73bd37e0ad00"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Validity: does the test measure strength? Matching the concentration makes test one valid, and test two checks it without trusting the labels. Reliability: repeats agree within a few hundredths, and across two sessions. Accuracy: the readings near one and thirteen are less certain, outside the calibration. But the conclusions rest on big gaps, so they still hold.",
+      "hash": "1ab2de7d960c",
+      "textSha256": "1ab2de7d960c20958aff4073fff763344e3becce243aca9e260eff96df47efc6",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/validity-reliability.1ab2de7d960c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/validity-reliability.1ab2de7d960c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/validity-reliability.1ab2de7d960c.generation.json",
+      "plannedRequestSha256": "9a114a33f7262f686004f91af2f1e5f2c09239cf3122fb275a22350e2eb51f0b"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. Zero point one zero zero moles per litre sodium hydroxide sits just under the irritant limit, so treat a splash as harmful and wear safety glasses. The acids and ammonia are well below their limits, but glasses stay on. The concentrated stocks are corrosive and stay with your teacher. And handle the pipette with a filler, never by mouth.",
+      "hash": "f05c8ec3a4c6",
+      "textSha256": "f05c8ec3a4c649120c26042b50a85f6e7aeecf4bccc057c7d7c6b209a2342184",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/risk-assessment.f05c8ec3a4c6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/risk-assessment.f05c8ec3a4c6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/risk-assessment.f05c8ec3a4c6.generation.json",
+      "plannedRequestSha256": "d42ba11f265f56bbd3aa97d777943d9c1ca8701b9fa084ff3ae24b245b64a020"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here's the rule to remember: match, then compare. And when you dilute tenfold, strong moves about one, weak moves about half.",
+      "hash": "7182f91b32c4",
+      "textSha256": "7182f91b32c4bc1b3b11762cfa33348e6e389aa6dcc71a01cf3cdb06d85b5d71",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/memory-aid.7182f91b32c4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/memory-aid.7182f91b32c4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/memory-aid.7182f91b32c4.generation.json",
+      "plannedRequestSha256": "4ad9aa5394dda75b30f5a1b090276d301f601c4c41d4d24984adf7a9a94db670"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student measures zero point five zero moles per litre methanoic acid at pH two point zero three, and zero point zero zero two zero moles per litre nitric acid at two point seven zero. She concludes methanoic acid is stronger. Evaluate her conclusion, and describe how she should change her method. Pause here to answer.",
+      "hash": "d6202e211d8f",
+      "textSha256": "d6202e211d8fdf8482fc9635379dd9b6a82662c9604eee8c17c001e0fcb7741b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/attempt-1.d6202e211d8f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/attempt-1.d6202e211d8f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/attempt-1.d6202e211d8f.generation.json",
+      "plannedRequestSha256": "181a31cc53797a48aa7def842cc824a8989eba8c7c38d3569b72e6b6e6b9475e"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Her conclusion isn't valid. The concentrations differ by two hundred and fifty times, so the pH depends on concentration as well as strength. She should test both acids at the same concentration, with the same meter and temperature. Then nitric acid, which ionises completely, would read lower. \"Lower pH, so stronger acid\" is the trap.",
+      "hash": "0c497d5051d1",
+      "textSha256": "0c497d5051d1dc840b0586eb1dc1d984315e0fd0ee94594ae97c4960375a6e26",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/feedback-1.0c497d5051d1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/feedback-1.0c497d5051d1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/feedback-1.0c497d5051d1.generation.json",
+      "plannedRequestSha256": "0402c3ca08bbff875c5e49ba72d8191a0617c025b519b7b7cd38d7a3d9356394"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. An acid of unknown concentration has a pH of two point four zero. She dilutes it exactly tenfold with a volumetric pipette and flask, and the pH becomes two point nine zero. Is the acid strong or weak? Justify your answer. Pause here to answer.",
+      "hash": "cb0097d02700",
+      "textSha256": "cb0097d0270093b134e3d0dc798bfad7f7ac57528199fe6a04ec4a4f897cdc5c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/attempt-2.cb0097d02700.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/attempt-2.cb0097d02700.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/attempt-2.cb0097d02700.generation.json",
+      "plannedRequestSha256": "88bfd8db729bcc1bc148ed638cff60842a37bfe7e4bc97e7b99a476d1b9affca"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "It's weak. Ten millilitres to a hundred is a tenfold dilution. A strong acid would leave a tenth of the hydronium and rise about one unit, to three point four. This one rose only zero point five zero, so more molecules ionised as it was diluted, and that only happens when an acid is partly ionised. A low starting pH tells you nothing about strength on its own.",
+      "hash": "03b73fdec220",
+      "textSha256": "03b73fdec220d415689b7482fba406d3b62b74b3ef84b6d089c6aeffb9723a2c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/feedback-2.03b73fdec220.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/feedback-2.03b73fdec220.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/feedback-2.03b73fdec220.generation.json",
+      "plannedRequestSha256": "828bb3ef974dba2606d133712c6932bb05e80b71a7b89d1a88d10e9cad8abeec"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, to use pH to show strength: match the concentrations and compare, or dilute exactly tenfold and see how far the pH moves. Strong moves about one unit, weak moves less. But why does chloride never take its proton back, while ethanoate does? Next: conjugate pairs, and the species that can go both ways.",
+      "hash": "8931c85ec0d8",
+      "textSha256": "8931c85ec0d88763c5293cb6ebf2068583122a3d93410e9517073e32bb795827",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/decision-rule.8931c85ec0d8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/decision-rule.8931c85ec0d8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/decision-rule.8931c85ec0d8.generation.json",
+      "plannedRequestSha256": "da4bfef226499a7397f948944248d3b83354eae8eab32cefdd79fa361433ae47"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-P04-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "title": "Preparing a buffer and demonstrating its properties: how do you prove it's a buffer?",
+  "subtitle": "Two beakers both read pH 4.68: one is a buffer you've just made, the other is very dilute hydrochloric acid. How do you prepare a buffer, and what tests prove that it behaves like one?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 17,
+  "lessonIntent": "choosing a buffer pair and amounts for a target pH near pKa; preparing about 100 mL accurately and making enough for every test; predicting and measuring its pH and explaining a small difference; designing tests with a water control, the same dose and separate fresh portions; comparing pH changes for added acid and base; explaining the acid result with the ratio; showing that dilution barely changes the pH but cuts the capacity; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No Henderson-Hasselbalch log form, no partial-neutralisation preparation (chem-m6-c14), no capacity curve (chem-m6-c11), no blood buffers (chem-m6-c11).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "These two beakers both read pH four point six eight. One is a buffer you've just made. The other is very dilute hydrochloric acid. Which is which? You can't tell from the reading, because a buffer isn't defined by its pH. It's defined by what it does. So in this practical you'll make a buffer, and then prove it."
+      }
+    },
+    {
+      "id": "choose-pair",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "From the buffers video, a buffer needs a weak acid and its conjugate base, both in large amounts. We'll use ethanoic acid, and sodium ethanoate to supply the ethanoate. Mix equal moles of each, and the ratio is one, so the pH should come out at the pKa: about four point seven four."
+      }
+    },
+    {
+      "id": "prepare",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Use a volumetric pipette to transfer fifty millilitres of each solution into a clean, dry beaker, and swirl. That's one hundred millilitres, with zero point zero zero five zero zero moles of each partner. Pipettes matter, because the ratio sets the pH. And make enough: each set of tests uses about seventy millilitres, so fifty would leave nothing for rinsing or a re-test."
+      }
+    },
+    {
+      "id": "measure-start",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Measure it with the calibrated meter, using the routine from the pH practical. One class's mean was four point six eight, a little below the prediction. The simple ratio calculation treats the ions as if they don't affect each other, and real ions do, a little. What matters here is how much the pH changes."
+      }
+    },
+    {
+      "id": "test-design",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Use a pipette to split the buffer into twenty millilitre portions, with matching twenty millilitre portions of distilled water. Water is the control: same treatment, but not buffered. Read each starting pH, then add the same dose to each pair: one millilitre of zero point one zero zero moles per litre hydrochloric acid, or sodium hydroxide. Acid and base go into different portions, because base added after acid would just undo it."
+      }
+    },
+    {
+      "id": "results",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The buffer went from four point six eight to four point five nine with acid, and to four point seven seven with base. That's less than a tenth of a unit either way. The water started at five point nine three, because of dissolved carbon dioxide, so it had further to rise than to fall. It plunged to two point three five with acid, and shot up to eleven point six three with base. The buffer resists the change. It doesn't prevent it."
+      }
+    },
+    {
+      "id": "why-small",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why so little? Each buffer portion holds zero point zero zero one zero zero moles of each partner, and the acid dose is only one tenth of that. It's the buffers video's example at a tenth of the scale: ethanoate takes up the hydronium, the ratio moves from one to about one point two, and the predicted pH falls to four point six six. That's the same small drop you measured."
+      }
+    },
+    {
+      "id": "dilution",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now a property an unbuffered acid can't copy. Dilute ten millilitres of buffer to a hundred millilitres in a volumetric flask, just like the strength practical. Both partners are diluted equally, so the ratio stays at one, and the pH should barely move. It went from four point six eight to four point seven two. Diluting hydrochloric acid tenfold moved its pH about a whole unit."
+      }
+    },
+    {
+      "id": "capacity",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But the diluted buffer has paid a price. A twenty millilitre portion of it now holds only a tenth of the partners, so the same one millilitre of acid uses up all its ethanoate. And the pH? It fell from four point seven two to three point four one, more than a whole unit. Same pH as before, much less capacity."
+      }
+    },
+    {
+      "id": "variables",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, the variables. The independent variable is what's being tested, buffer or water, with acid, base, or dilution. The dependent variable is the change in pH. And you control the portion volume, the dose of acid or base, the temperature, the calibrated meter and the rinsing routine."
+      }
+    },
+    {
+      "id": "validity-reliability",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Validity: does the test show buffering? Only because the water control gets the same dose in the same volume, and every test uses a fresh portion. An even closer control is that dilute hydrochloric acid from the start: same pH, same dose, and it would plunge to about two point three. Reliability: three fresh batches agreed within zero point zero two. Accuracy: calibrate the meter, and measure volumes with pipettes. And because you compare changes, a constant offset in every reading cancels out."
+      }
+    },
+    {
+      "id": "risk-assessment",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The risk assessment. The dilute acids and sodium ethanoate are well below their classification limits, but wear safety glasses anyway. Zero point one zero zero moles per litre sodium hydroxide sits just under the irritant limit, so treat a splash as harmful. Glacial ethanoic acid, the concentrated stock, is flammable and corrosive, and stays with your teacher. And always use a pipette filler."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the method to remember: split, dose, compare. Split into fresh portions, give the buffer and the water the same dose, and compare the changes."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A student adds one millilitre of acid to twenty millilitres of a solution, and the pH goes from four point six eight to four point five nine. Then she adds the same amount of sodium hydroxide to the same beaker, and it returns to four point six eight. She concludes it's a buffer. Evaluate her method. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The small drop fits a buffer, but the method has two flaws. There's no control: she needs the same additions to twenty millilitres of water to show the change is unusually small. And the base went into the same beaker, so it just neutralised the acid she'd added. That return to four point six eight tells you nothing about base. Use a fresh portion."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more. A student mixes thirty millilitres of zero point one zero zero moles per litre ethanoic acid with ten millilitres of zero point one zero zero moles per litre sodium ethanoate at twenty five degrees. Calculate the expected pH. K a is one point eight times ten to the minus five. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Find the moles first. Ethanoic acid, zero point zero zero three zero zero moles. Ethanoate, zero point zero zero one zero zero. So the ratio is three. Hydronium is K a times three, five point four times ten to the minus five, and the pH is four point two seven. It's not four point seven four. That's only for equal amounts."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to prepare and test a buffer: mix a weak acid and its conjugate base in measured amounts, predict its pH from the ratio, then split it, dose it alongside water, and compare the changes. Check dilution, and capacity too. Next: titration, where a measured volume of one solution reveals the concentration of another."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

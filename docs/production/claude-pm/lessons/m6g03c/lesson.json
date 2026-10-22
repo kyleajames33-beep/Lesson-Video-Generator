@@ -1,0 +1,164 @@
+{
+  "title": "Titration Calculations: Standardisation, Aliquots and % by Mass: HSC-Style Practice",
+  "subtitle": "A titration question gives you a weighed standard, a table of burette readings, a sample diluted in a flask, or a tablet. How do you follow the moles from the standard to the answer, and check the titres, the scale-up and the units on the way?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 20,
+  "lessonIntent": "calculating a standard's concentration from the mass of a hydrate, with the water of crystallisation in the molar mass; turning burette readings into titres and choosing the concordant ones; standardising sodium hydroxide with a 1 : 2 ratio; scaling moles up from an aliquot to the flask and back to the original sample; calculating a concentration and a percentage by mass for a liquid from its density; writing the equation for hydrogen carbonate with acid and using its 1 : 1 ratio; calculating a percentage by mass for a solid from its weighed mass; checking each answer for size and units.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Titration questions often chain several steps: make the standard, choose the titres, use the ratio, scale up from an aliquot, then turn moles into a percentage. Lose one link, and every number after it is wrong: stop one step early in a dilution question, and your answer can be twenty five times too small. Here are three HSC-style questions. Pause and try each one, then we'll follow the moles, one step at a time."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. A student dissolves one point five eight two two grams of oxalic acid dihydrate and makes it up to two hundred and fifty millilitres. She titrates twenty five millilitre aliquots with sodium hydroxide, and her burette readings are in the table. Calculate the concentration of the oxalic acid, then of the sodium hydroxide. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-standard",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, the standard. The formula has two waters of crystallisation, and she weighed them too, so the molar mass includes them: one hundred and twenty six point zero seven grams per mole. Then n is m over M, zero point zero one two five five moles, and over zero point two five zero zero litres, the oxalic acid is zero point zero five zero two zero moles per litre."
+      }
+    },
+    {
+      "id": "q1-titres",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Next, the titres. Subtract each initial reading from the final one. The rough run isn't used. Run two, twenty four point four zero, is well above the rest. Twenty four point zero five, twenty four point zero zero and twenty three point nine five agree within zero point one zero, so their mean is exactly twenty four point zero zero millilitres."
+      }
+    },
+    {
+      "id": "q1-naoh",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now known to moles, ratio, unknown. The aliquot holds zero point zero five zero two zero times zero point zero two five zero zero: one point two five five times ten to the minus three moles of oxalic acid. The equation says two hydroxides for each one, so that's two point five one zero times ten to the minus three moles, in twenty four point zero zero millilitres. The sodium hydroxide is zero point one zero four six moles per litre, close to the zero point one you'd expect."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is leaving out the water of crystallisation. Using ninety point zero four makes the oxalic acid look forty per cent more concentrated, and the sodium hydroxide comes out at zero point one four six four, far too high."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. A brick cleaner contains hydrochloric acid. Ten millilitres of it is diluted to two hundred and fifty millilitres, and twenty millilitre aliquots are titrated with the sodium hydroxide from question one. Calculate the cleaner's concentration of hydrochloric acid, and its percentage by mass. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-aliquot",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This aliquot came from a diluted sample, so track moles, not concentrations. The mean titre is exactly twenty four point four zero millilitres. Moles of hydroxide: zero point one zero four six times zero point zero two four four zero, two point five five two times ten to the minus three. Hydrochloric acid reacts one to one, so the aliquot held the same moles of acid."
+      }
+    },
+    {
+      "id": "q2-scale-up",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But the flask held two hundred and fifty millilitres, twelve and a half aliquots' worth. So the flask, and the ten millilitre sample poured into it, held twelve point five times as much acid: zero point zero three one nine zero moles. Divide by the sample's zero point zero one zero zero zero litres, and the brick cleaner is three point one nine zero moles per litre. That's sensible: it was diluted twenty five times, so the cleaner should be about twenty five times as concentrated as the diluted solution."
+      }
+    },
+    {
+      "id": "q2-percent",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A percentage by mass needs two masses, so use the density. One litre of cleaner has a mass of one thousand and fifty grams. It holds three point one nine zero moles of acid, times thirty six point four six grams per mole: one hundred and sixteen point three grams. That's eleven point one per cent, three significant figures, from the density."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is stopping at the aliquot. Zero point one two seven six moles per litre is the diluted solution, not the cleaner. Scale up from the aliquot."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. An antacid tablet contains sodium hydrogen carbonate, and its other ingredients don't react with acid. A one point three two zero zero gram tablet is dissolved and made up to one hundred millilitres, and twenty millilitre aliquots are titrated with zero point one zero five nine moles per litre hydrochloric acid. Calculate the percentage by mass of sodium hydrogen carbonate in the tablet. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-ratio",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "No equation is given, so write it. Hydrogen carbonate accepts just one proton, making water and carbon dioxide, so the ratio is one to one. The mean titre is exactly twenty three point one zero, so the acid is zero point one zero five nine times zero point zero two three one zero: two point four four six times ten to the minus three moles, and the aliquot held the same moles of hydrogen carbonate."
+      }
+    },
+    {
+      "id": "q3-percent",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Scale up: one hundred millilitres is five aliquots, so the tablet held one point two two three zero times ten to the minus two moles. Times eighty four point zero one grams per mole, that's one point zero two seven four grams. Out of one point three two zero zero grams, it's seventy seven point eight four per cent. A tablet is weighed directly, so there's no density here."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is borrowing carbonate's one to two ratio. That halves the moles and gives thirty eight point nine two per cent. Carbonate takes two protons. Hydrogen carbonate already has one, so it takes only one more."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any titration calculation, follow the moles. Use the full molar mass, waters of crystallisation included. Average only concordant titres. Go known to moles, ratio, unknown, with the ratio from a balanced equation. If the aliquot came from a flask, scale up. And for a percentage by mass, use masses: density for a liquid, the weighed mass for a solid. Next, which indicator fits a titration."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6p04/measured/lesson.json",
+    "lessonSha256": "3dc2acb3466c2d1866ec1e4346cbd33def8a92ac89492956c7a6415000733861"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m6-c05 (strong and weak as complete and partial ionisation; ethanoic/acetic acid stops early at equilibrium; the single and double arrow; NaOH a strong base, ammonia a weak base; concentration is a separate quantity; a concentrated weak acid can read lower than a dilute strong one; compare strength at the same concentration; diluting a weak acid lets a bigger fraction ionise; lower pH means more hydronium, one unit is ten times). chem-m6-p03 (the pH meter routine: calibrate with buffers covering the readings, rinse and blot, wait for steady, three readings in fresh portions; the 0.010 mol/L readings HCl 2.03, acetic acid 3.40, ammonia 10.59, NaOH 11.96). chem-m5-p01 (validity, reliability, accuracy; variables; risk as hazard, harm, control). Module 5 equilibrium (a reversible reaction settles at a balance; a reverse step that needs two dissolved particles to meet slows more on dilution, so the balance shifts toward the side with more dissolved particles; used in scene 9). Year 11 Module 2 (concentration in mol/L; dilution, c₁V₁ = c₂V₂; volumetric pipette and flask). Not assumed: pH = −log[H₃O⁺], pOH, Kw, Ka, Kb, conjugate pairs.",
+    "startsWith": "Prepare equal-concentration strong and weak comparison solutions. The video opens: Two bottles, both labelled zero point one zero zero moles per litre. One's hydrochloric acid, the other's ethanoic acid. You've only got a pH meter.",
+    "stopsAfter": "explaining why strength must be compared at matched concentration; carrying out the matched comparison and explaining the pH gap by extent of ionisation; designing and carrying out a tenfold dilution with volumetric glassware; explaining why a strong acid's pH rises by about one unit and a weak acid's by much less (about half for ethanoic acid), and that the bases mirror this; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No pH calculation (chem-m6-c07), no Ka or Kb (chem-m6-c10), no conjugate pairs (chem-m6-c06), no conductivity.",
+    "nextLesson": "conjugate pairs and amphiprotic species: why chloride never takes its proton back but ethanoate does (route chem-m6-c06)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-p04.md"
+  ],
+  "teaching": {
+    "task": "Two bottles, both labelled 0.100 mol/L: one hydrochloric acid, one ethanoic acid. How can a pH meter show which acid is strong, what makes the comparison fair, and how could you still tell them apart if you couldn't trust the label?",
+    "causalExplanation": "(1) two acids labelled 0.100 mol/L: which is strong, and could a wrong label fool you? (1); (2) same concentration, so any pH difference comes from strength; a concentrated weak acid can read lower than a dilute strong one (C05), so unmatched solutions prove nothing; P03 used this test at 0.010 mol/L, and this time all four are at 0.100 mol/L (2); (3) the P03 routine, plus a note that readings near 1 and 13 sit outside the 4 to 10 calibration (3); (4) results: HCl 1.08 against ethanoic acid 2.90; NaOH 12.91 against ammonia 11.10 (4); (5) at the same concentration, HCl has about 70 times as much hydronium (two units would be 100 times; 1.82 units is a bit less), because every HCl molecule ionises and only a small fraction of ethanoic acid molecules do (C05, with the arrows recalled); the bases mirror it (5); (6) but this relies on the label; the dilution test: 10.00 mL made up to 100.0 mL is exactly tenfold, whatever the starting concentration (6); (7) results: HCl and NaOH move 0.96, almost exactly one unit; ethanoic acid and ammonia about 0.50 (7); (8) a strong acid is already fully ionised, so diluting tenfold leaves a tenth of the hydronium per litre: about one pH unit (8); (9) diluted, the hydronium and ethanoate ions meet less often, so fewer rejoin into molecules and a bigger fraction of the acid stays ionised, which partly makes up the loss, so hydronium falls by much less than ten times: about half a unit (9); (10) the bases mirror this; the diluted readings match P03's 0.010 mol/L readings; the acid gap narrows from 1.82 to 1.35 units on dilution, which is why P03 found about 23 times, not 70 (10); variables (11); validity, reliability, accuracy (12); risk (13); memory aid (14); attempts and brief feedback (15 to 18); decision rule and handoff (19); key notes (20).",
+    "conversationalApproach": "two bottles both labelled 0.100 mol/L hold hydrochloric and ethanoic acid, and the practical asks how a pH meter can show which is strong, and what to do if a label might be wrong. Test 1 compares at the same concentration because a concentrated weak acid can read a lower pH than a dilute strong one; the P03 routine is reused, and one class's means are read as about seventy times as much hydronium. Test 2 dilutes exactly tenfold with a volumetric pipette and flask: the strong acid rises about one unit because the same ions are spread through ten times the volume, and the weak acid only about half because more molecules ionise when the ions meet less often; the bases mirror this and the readings agree with P03. The variables, validity, reliability and accuracy, and the risk assessment follow, and the memory aid is \"Match, then compare. Dilute ten times: strong moves about one, weak moves about half.\" Two exam questions follow with brief feedback.",
+    "openingDecision": "Two bottles, both labelled zero point one zero zero moles per litre. One's hydrochloric acid, the other's ethanoic acid. You've only got a pH meter. Can you show which acid is strong? And here's the harder part: what if one label is wrong? Today you'll build two pH tests of strength, and the second one doesn't trust the label at all.",
+    "understandingCheck": "(A1) \"A student wants to compare the strengths of methanoic acid (HCOOH) and nitric acid (HNO₃). Using a calibrated pH meter at 25 °C, she measures the pH of 0.50 mol/L methanoic acid as 2.03 and the pH of 0.0020 mol/L nitric acid as 2.70. She concludes that methanoic acid is the stronger acid. Evaluate her conclusion and describe how she should change her method.\" Answer: the conclusion is not valid: the concentrations differ by 250 times, so the pH depends on concentration as well as strength; test both at the same concentration (for example 0.100 mol/L), same temperature and meter; nitric acid, which ionises completely, would then read lower. Crossed mistake: \"lower pH, so stronger acid\". (A2) \"A student has a solution of a monoprotic acid of unknown concentration. Its pH is 2.40. She uses a volumetric pipette to transfer 10.00 mL of it into a 100.0 mL volumetric flask and makes it up to the mark with distilled water. The diluted solution has a pH of 2.90. Determine whether the acid is strong or weak. Justify your answer.\" Answer: weak: a tenfold dilution of a strong acid leaves a tenth of the hydronium, raising the pH by about 1 (to about 3.4); it rose by only 0.50, so hydronium fell by much less than ten times; more molecules ionised on dilution, which only happens with partial ionisation. Crossed mistake: \"pH 2.40 is low, so it's a strong acid\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct an investigation to demonstrate the use of pH to indicate the differences between the strength of acids and bases (ACSCH102)\" this video prepares students to carry out and analyse the strength investigation; it does not claim that watching it is conducting it. It teaches two pH tests of strength: (1) the matched comparison: a strong and a weak acid (and a strong and a weak base) at the same concentration, 0.100 mol/L, so the pH gap comes from how completely each ionises; (2) the tenfold dilution test: dilute each solution exactly tenfold with volumetric glassware and watch how far the pH moves (strong acid about one unit, weak acid about half a unit; the bases mirror this), which does not depend on trusting the label's concentration. It also covers the variables, validity, reliability and accuracy, and the risk assessment. Placement limits (playlist order 8): this video comes before conjugate pairs (chem-m6-c06, order 9), pH calculation (chem-m6-c07, order 10), ICE tables (chem-m6-c08, order 12) and Ka (chem-m6-c10, order 14). So no pH is calculated from a concentration, no Ka or Kb appears, and the half-unit result for the weak acid is explained with C05's particle idea only (diluting a weak acid lets a bigger fraction of its molecules ionise), not derived. The pH meter routine (calibrate, rinse, blot, wait for steady, three readings in fresh portions) is P03's and is recalled in one scene, not re-taught. The particle model of strong against weak, the arrows and the \"concentrated weak can read lower than dilute strong\" surprise are C05's and are recalled, not re-taught. Conductivity is not used (open decision)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C01, C05, P03): hydronium teal, hydroxide violet; whole acid molecules amber outline; readout amber digits; acids marked with a small teal tab on their beaker labels, bases a violet tab; strong solutions' change bars solid, weak solutions' change bars outlined; controls green, hazards terracotta. Board layout (three zones, constant): top-left the short task line; the centre holds the meter and the beaker row (or the dilution glassware); the right third holds the current card (method recall, results, variables, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: `m6-ph-meter-probe-beaker-v1.png` (inspected for P03 on 21 Oct: bench meter with a blank green screen, probe on a cable in a beaker of clear liquid; coded amber readout in the screen), `m6-beaker-v1.png` (empty clear beaker; eight coded copies across scenes 2 and 6), `m6-volumetric-pipette-filler-v1.png` (inspected 21 Oct: bulb pipette with a red pipette filler, tip down at an angle; used at native aspect, rotated as a whole only), `m6-volumetric-flask-v1.png` (inspected 21 Oct: stoppered volumetric flask with a calibration mark on the neck; a coded fill rises to the mark), `m6-wash-bottle-v1.png` (rinse recall and making up to the mark), `m5x-safety-glasses-v1.png` (risk table), `m5x-ammonia-bottle-v1.png` (risk row, the stock bottle, small, \"teacher only\"), `m6-buffer-bottle-v1.png` (three calibration buffers, as in P03), `m6-ph-probe-holder-v1.png` and `m6-lab-tissue-v1.png` (P03 recall). The last three are P03's Codex asset brief items 1 to 3, not yet painted; this video needs them only if P03's brief is delivered first, and its scene 3 can fall back to the meter plate alone. No human figures.",
+    "transitionPlan": "Two labelled beaker plates open the hook with the concentrations underlined and a \"strong = ionises completely\" chip; the beakers become four in a row with a grey P03 tag; the small P03 routine card writes beside three buffer bottles; the results table fills and the chips drop onto a coded pH scale with a bracket and a ghost \"100 ×\" tick; the beaker row slides up as the volumetric pipette and flask plates take the centre and a coded stream fills to the mark; the dilution table returns with a change bar beside each row; the HCl lens widens and its tokens spread with a \"÷ 10\" counter, then the ethanoic acid lens opens beside it as ion pairs drift apart and fewer rejoin; the change bars and a small P03 card return for the bases and the check; the variables card, the three evaluation cards and the risk table write in turn; the memory aid writes large with the padlocked dial and the two bars; each attempt clears the board and its feedback underlines the givens as dials or ghost bars draw; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `m6-beaker-v1.png` copies at centre with coded colourless fills and coded labels \"acid A, 0.100 mol/L\" and \"acid B, 0.100 mol/L\" (teal tabs).",
+      "teachingReason": "Hook (two labels, one meter): Two bottles, both labelled zero point one zero zero moles per litre.",
+      "narrationCue": "zero point one zero zero moles per litre / strong / wrong",
+      "motionPurpose": "On the spoken cues: On \"zero point one zero zero\" both labels' concentrations get a pen underline. On \"strong\" a chip \"strong = ionises completely (C05)\" writes small above them. On \"wrong\" acid B's label flickers and a grey \"?\" pins over its \"0.100\", tag \"label you can't trust?\". Heading writes: \"Two pH tests of strength\". The meter plate `m6-ph-meter-probe-beaker-v1.png` sits small at left, readout dark.",
+      "motionRole": "explain",
+      "onScreenChange": "two `m6-beaker-v1.png` copies at centre with coded colourless fills and coded labels \"acid A, 0.100 mol/L\" and \"acid B, 0.100 mol/L\" (teal tabs). On \"zero point one zero zero\" both labels' concentrations get a pen underline. On \"strong\" a chip \"strong = ionises completely (C05)\" writes small above them. On \"wrong\" acid B's label flickers and a grey \"?\" pins over its \"0.100\", tag \"label you can't trust?\". Heading writes: \"Two pH tests of strength\". The meter plate `m6-ph-meter-probe-beaker-v1.png` sits small at left, readout dark. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Mark underline",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "matched-concentration",
+      "visualDecision": "new",
+      "visualReference": "the two beakers become four in a row: \"HCl\", \"ethanoic acid (acetic acid)\" (teal tabs), \"NaOH\", \"ammonia, NH₃\" (violet tabs), coded labels writing on as named; on \"last practical\" a small grey tag \"P03: matched at 0.010 mol/L\" writes top left (dims at \"Why\"); on \"same concentration\" a single bracket over all four, empty for now; on \"This time\" the bracket fills: \"all 0.100 mol/L\".",
+      "teachingReason": "Test 1: match the concentration: The first test is from the strong and weak video, and the last practical used it too: compare at the same concentration.",
+      "narrationCue": "same concentration / strength",
+      "motionPurpose": "On the spoken cues: On \"concentrated weak acid\" a small grey recall card from C05 slides in on the left: \"1.0 mol/L acetic acid, pH 2.4 | 0.0010 mol/L HCl, pH 3.0\" with a pen mark on \"lower pH, but weak\" (then dims). On \"two things\" a two-dial icon (C05: \"strength\", \"concentration\") writes with both dials turning together, tag \"unmatched: can't separate them\". On \"strength\" the concentration dial locks (a small padlock, tag \"matched\")",
+      "motionRole": "explain",
+      "onScreenChange": "the two beakers become four in a row: \"HCl\", \"ethanoic acid (acetic acid)\" (teal tabs), \"NaOH\", \"ammonia, NH₃\" (violet tabs), coded labels writing on as named; on \"last practical\" a small grey tag \"P03: matched at 0.010 mol/L\" writes top left (dims at \"Why\"); on \"same concentration\" a single bracket over all four, empty for now; on \"This time\" the bracket fills: \"all 0.100 mol/L\". On \"concentrated weak acid\" a small grey recall card from C05 slides in on the left: \"1.0 mol/L acetic acid, pH 2.4 | 0.0010 mol/L HCl, pH 3.0\" with a pen mark on \"lower pH, but weak\" (then dims). On \"two things\" a two-dial icon (C05: \"strength\", \"concentration\") writes with both dials turning together, tag \"unmatched: can't separate them\". On \"strength\" the concentration dial locks (a small padlock, tag \"matched\") and only the strength dial stays bright. Recall card and dial labels dim. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "routine-recall",
+      "visualDecision": "adjust",
+      "visualReference": "the routine card from P03 writes small in the right zone in four lines, each lighting on its cue: \"1 Calibrate: pH 7.00, 4.00, 10.00, 25 °C\" (three `m6-buffer-bottle-v1.png` copies, small); \"2 Rinse, blot\"; \"3 Wait for steady\"; \"4 Three readings, fresh portions\" (grey tag \"P03\").",
+      "teachingReason": "The routine, from the last practical: Measure them exactly as in the last practical: calibrate with buffers, rinse and blot the probe between samples, wait for a steady reading, and take three readings in fresh portions.",
+      "narrationCue": "calibrate / fresh portions / outside",
+      "motionPurpose": "On the spoken cues: On \"calibrate\" the probe moves on its arc through the three buffers quickly (one second in total). On \"outside\" a coded pH scale draws under the beakers, green band from 4 to 10, with two terracotta marks near 1 and 13, tag \"outside the calibrated band: less certain\"; a grey tag \"a buffer near each end, if available\" (dims).",
+      "motionRole": "explain",
+      "onScreenChange": "the routine card from P03 writes small in the right zone in four lines, each lighting on its cue: \"1 Calibrate: pH 7.00, 4.00, 10.00, 25 °C\" (three `m6-buffer-bottle-v1.png` copies, small); \"2 Rinse, blot\"; \"3 Wait for steady\"; \"4 Three readings, fresh portions\" (grey tag \"P03\"). On \"calibrate\" the probe moves on its arc through the three buffers quickly (one second in total). On \"outside\" a coded pH scale draws under the beakers, green band from 4 to 10, with two terracotta marks near 1 and 13, tag \"outside the calibrated band: less certain\"; a grey tag \"a buffer near each end, if available\" (dims). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "results",
+      "visualDecision": "new",
+      "visualReference": "the results table writes in the right zone: columns \"solution / readings / mean\"; rows on their names: \"HCl 1.07, 1.09, 1.08 → 1.08\"; \"ethanoic acid 2.91, 2.89, 2.90 → 2.90\"; \"NaOH 12.92, 12.89, 12.92 → 12.91\"; \"ammonia 11.09, 11.10, 11.11 → 11.10\".",
+      "teachingReason": "Results at the same concentration: Here are one class's means.",
+      "narrationCue": "one point zero eight / two point nine zero / eleven point one zero",
+      "motionPurpose": "On the spoken cues: As each row writes, the probe moves on its arc into that beaker, the readout settles on the mean, and the mean pins as a chip on the beaker. On \"zero point zero three\" the readings column gets a small bracket \"range 0.02 to 0.03\". Earlier rows dim to grey once their chip has pinned.",
+      "motionRole": "explain",
+      "onScreenChange": "the results table writes in the right zone: columns \"solution / readings / mean\"; rows on their names: \"HCl 1.07, 1.09, 1.08 → 1.08\"; \"ethanoic acid 2.91, 2.89, 2.90 → 2.90\"; \"NaOH 12.92, 12.89, 12.92 → 12.91\"; \"ammonia 11.09, 11.10, 11.11 → 11.10\". As each row writes, the probe moves on its arc into that beaker, the readout settles on the mean, and the mean pins as a chip on the beaker. On \"zero point zero three\" the readings column gets a small bracket \"range 0.02 to 0.03\". Earlier rows dim to grey once their chip has pinned. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "the-gap",
+      "visualDecision": "new",
+      "visualReference": "the table shrinks out; the coded pH scale fills the lower centre with the four chips on it.",
+      "teachingReason": "What the gap means: At the same concentration, hydrochloric acid reads almost two units lower.",
+      "narrationCue": "two units / seventy times / small fraction / hydroxide",
+      "motionPurpose": "On the spoken cues: On \"two units\" a bracket from 1.08 to 2.90 reads \"1.82 units\"; on \"a hundred times\" a grey ghost tick \"2 units = 100 ×\" sits just beyond the bracket end; on \"seventy times\" the bracket adds \"about 70 × more H₃O⁺\" and the ghost tick dims; grey tag \"from these readings\". On \"small fraction\" the bracket, its chip and the grey tag dim to grey before the lenses open; two C05-style lenses open above the chips (schematic,",
+      "motionRole": "explain",
+      "onScreenChange": "the table shrinks out; the coded pH scale fills the lower centre with the four chips on it. On \"two units\" a bracket from 1.08 to 2.90 reads \"1.82 units\"; on \"a hundred times\" a grey ghost tick \"2 units = 100 ×\" sits just beyond the bracket end; on \"seventy times\" the bracket adds \"about 70 × more H₃O⁺\" and the ghost tick dims; grey tag \"from these readings\". On \"small fraction\" the bracket, its chip and the grey tag dim to grey before the lenses open; two C05-style lenses open above the chips (schematic, uncountable fields running past the rim): HCl all teal hydronium with grey chloride, no amber molecules; ethanoic acid a dense amber field with one highlighted split molecule, counter \"a small fraction ionised\". On \"Single arrow, double arrow\" C05's equation strip writes under the lenses: \"HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)\" and \"CH₃COOH(aq) + H₂O(l) ⇌ H₃O⁺(aq) + CH₃COO⁻(aq)\" (the arrows pulse once; the lens counter dims to grey as the equations write). On \"hydroxide\" the base chips get a violet bracket \"12.91 vs 11.10: far more OH⁻ from NaOH\". Bright at the end: the two equations and the violet bracket. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Cam lens zoom",
+        "DrawPath",
+        "table build",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "dilution-method",
+      "visualDecision": "adjust",
+      "visualReference": "the beaker row slides up and dims.",
+      "teachingReason": "Test 2: dilute tenfold: But test one trusts the labels, and a wrong label could fool you.",
+      "narrationCue": "volumetric pipette / volumetric flask / tenfold / moves",
+      "motionPurpose": "On the spoken cues: Centre: `m6-volumetric-pipette-filler-v1.png` (native aspect) over `m6-volumetric-flask-v1.png`. On \"volumetric pipette\" a coded liquid column fills the pipette bulb to its line, tag \"10.00 mL\"; a coded stream runs from the tip into the flask. On \"volumetric flask\" a tag \"100.0 mL\" pins to the neck mark; the wash bottle plate adds a coded stream until the meniscus meets the mark, tag \"make up to the mark; stopper;",
+      "motionRole": "explain",
+      "onScreenChange": "the beaker row slides up and dims. Centre: `m6-volumetric-pipette-filler-v1.png` (native aspect) over `m6-volumetric-flask-v1.png`. On \"volumetric pipette\" a coded liquid column fills the pipette bulb to its line, tag \"10.00 mL\"; a coded stream runs from the tip into the flask. On \"volumetric flask\" a tag \"100.0 mL\" pins to the neck mark; the wash bottle plate adds a coded stream until the meniscus meets the mark, tag \"make up to the mark; stopper; invert to mix\". On \"tenfold\" a strip writes \"10.00 mL → 100.0 mL: ÷ 10\" and, small and grey beneath, \"c₂ = 0.100 × 10.00 ÷ 100.0 = 0.0100 mol/L\" (Year 11 recall); a pen ring circles \"÷ 10\" and a grey tag \"true whatever the label says\". On \"moves\" a second beaker row (four copies) slides in under the first, labelled \"÷ 10\". Earlier tags dim. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "dilution-results",
+      "visualDecision": "new",
+      "visualReference": "the table returns in the right zone with three columns \"0.100 mol/L / ÷ 10 / change\": \"HCl 1.08 → 2.04, +0.96\"; \"ethanoic acid 2.90 → 3.39, +0.49\"; \"NaOH 12.91 → 11.95, −0.96\"; \"ammonia 11.10 → 10.60, −0.50\".",
+      "teachingReason": "The dilution results: Here's what happened.",
+      "narrationCue": "one / half",
+      "motionPurpose": "On the spoken cues: As each row writes, a change bar draws beside it on a small vertical pH axis from the first reading to the second: solid and long for HCl and NaOH, outlined and short for ethanoic acid and ammonia. On \"one\" the HCl bar gets a bracket \"0.96\"; on \"half\" the ethanoic acid bar gets \"0.49\". Earlier rows dim. Bright at the end: the four bars.",
+      "motionRole": "explain",
+      "onScreenChange": "the table returns in the right zone with three columns \"0.100 mol/L / ÷ 10 / change\": \"HCl 1.08 → 2.04, +0.96\"; \"ethanoic acid 2.90 → 3.39, +0.49\"; \"NaOH 12.91 → 11.95, −0.96\"; \"ammonia 11.10 → 10.60, −0.50\". As each row writes, a change bar draws beside it on a small vertical pH axis from the first reading to the second: solid and long for HCl and NaOH, outlined and short for ethanoic acid and ammonia. On \"one\" the HCl bar gets a bracket \"0.96\"; on \"half\" the ethanoic acid bar gets \"0.49\". Earlier rows dim. Bright at the end: the four bars. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "strong-moves-one",
+      "visualDecision": "new",
+      "visualReference": "the HCl lens from scene 5 reopens at centre: on \"ionised\" its field is all teal hydronium; on \"tenth\" the lens widens (a ten-times-larger dashed outline) and the same tokens spread out; a counter writes \"H₃O⁺ per litre: ÷ 10\"; under it a single step on a short pH line \"+1\".",
+      "teachingReason": "Why the strong acid moves about one unit: Why about a whole unit?",
+      "narrationCue": "ionised / tenth",
+      "motionPurpose": "On the spoken cues: Tag \"nothing left to ionise\". Small grey tag beside the step (silent, screen only): \"measured +0.96: real ions affect each other a little, so meters read just under 1\".",
+      "motionRole": "explain",
+      "onScreenChange": "the HCl lens from scene 5 reopens at centre: on \"ionised\" its field is all teal hydronium; on \"tenth\" the lens widens (a ten-times-larger dashed outline) and the same tokens spread out; a counter writes \"H₃O⁺ per litre: ÷ 10\"; under it a single step on a short pH line \"+1\". Tag \"nothing left to ionise\". Small grey tag beside the step (silent, screen only): \"measured +0.96: real ions affect each other a little, so meters read just under 1\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "token flight",
+        "Cam lens zoom",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "weak-moves-half",
+      "visualDecision": "new",
+      "visualReference": "the ethanoic acid lens opens beside the HCl lens (schematic as in C05).",
+      "teachingReason": "Why the weak acid moves only half: Ethanoic acid is different.",
+      "narrationCue": "meet less often / bigger fraction / make up / less than ten times",
+      "motionPurpose": "On the spoken cues: On \"meet less often\" the lens widens and two highlighted ion pairs (teal hydronium beside grey-violet ethanoate) drift apart instead of rejoining; a small inset of the narrow lens shows one amber molecule re-forming there, and none re-forms in the wide lens; tag \"ions meet less often\". On \"bigger fraction\" two more amber molecules split, their teal tokens highlighted, counter \"fraction ionised: small → bigger\" (the",
+      "motionRole": "explain",
+      "onScreenChange": "the ethanoic acid lens opens beside the HCl lens (schematic as in C05). On \"meet less often\" the lens widens and two highlighted ion pairs (teal hydronium beside grey-violet ethanoate) drift apart instead of rejoining; a small inset of the narrow lens shows one amber molecule re-forming there, and none re-forms in the wide lens; tag \"ions meet less often\". On \"bigger fraction\" two more amber molecules split, their teal tokens highlighted, counter \"fraction ionised: small → bigger\" (the \"meet less often\" tag dims). On \"make up\" a small teal \"+\" arrow feeds into the counter \"H₃O⁺ per litre: falls, but less than ÷ 10\". On \"less than ten times\" the short pH line beside it steps \"+0.5\", next to the HCl lens's \"+1\" for contrast. Bright at the end: the two steps \"+1\" and \"+0.5\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "token flight",
+        "Cam lens zoom",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "bases-and-check",
+      "visualDecision": "new",
+      "visualReference": "the change bars return small in the centre: NaOH solid long \"−0.96\", ammonia outlined short \"−0.50\", tag \"partly reacts: more react on dilution\".",
+      "teachingReason": "The bases, and a check: The bases mirror this.",
+      "narrationCue": "last practical / gap / narrows the gap",
+      "motionPurpose": "On the spoken cues: On \"last practical\" a small grey P03 card slides beside the \"÷ 10\" column: \"P03 (0.010 mol/L): 2.03, 3.40, 11.96, 10.59\", each value linking with a pen line to its partner (2.04, 3.39, 11.95, 10.60), tag \"within 0.01\"; the base bars dim. On \"gap\" the card and pen lines dim to grey; on the small pH axis a grey bracket from 1.08 to 2.90 reads \"1.82 units\" (the scene 5 bracket), and on \"one point four\" a bright bracket",
+      "motionRole": "explain",
+      "onScreenChange": "the change bars return small in the centre: NaOH solid long \"−0.96\", ammonia outlined short \"−0.50\", tag \"partly reacts: more react on dilution\". On \"last practical\" a small grey P03 card slides beside the \"÷ 10\" column: \"P03 (0.010 mol/L): 2.03, 3.40, 11.96, 10.59\", each value linking with a pen line to its partner (2.04, 3.39, 11.95, 10.60), tag \"within 0.01\"; the base bars dim. On \"gap\" the card and pen lines dim to grey; on the small pH axis a grey bracket from 1.08 to 2.90 reads \"1.82 units\" (the scene 5 bracket), and on \"one point four\" a bright bracket from 2.04 to 3.39 reads \"1.35 units\" beside it; on \"twenty three times\" a tag writes \"P03: about 23 ×\". On \"narrows the gap\" the outlined ethanoic acid change bar pulses (short, so the weak acid closes in on the strong one). Bright at the end: the 1.35 bracket and the P03 tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "variables",
+      "visualDecision": "new",
+      "visualReference": "the variables card writes in the right zone, one row per cue: \"Independent: test 1, which substance; test 2, diluted or not\"; \"Dependent: pH (test 1); change in pH (test 2)\"; \"Controlled: 0.100 mol/L (test 1); exactly ÷ 10 (test 2); 25 °C; 20 mL; same calibrated meter; same rinse routine\".",
+      "teachingReason": "The variables: So, the variables.",
+      "narrationCue": "independent variable / dependent variable / control",
+      "motionPurpose": "On the spoken cues: As each controlled item is spoken a pen link points to the matching thing (the bracket, the flask's mark, the beaker levels, the meter, the wash bottle).",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone, one row per cue: \"Independent: test 1, which substance; test 2, diluted or not\"; \"Dependent: pH (test 1); change in pH (test 2)\"; \"Controlled: 0.100 mol/L (test 1); exactly ÷ 10 (test 2); 25 °C; 20 mL; same calibrated meter; same rinse routine\". As each controlled item is spoken a pen link points to the matching thing (the bracket, the flask's mark, the beaker levels, the meter, the wash bottle). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures strength?",
+      "teachingReason": "Validity, reliability and accuracy: Validity: does the test measure strength?",
+      "narrationCue": "Validity / Reliability / Accuracy / big gaps",
+      "motionPurpose": "On the spoken cues: Matched 0.100 mol/L; the dilution test doesn't rely on labels.\" \"Reliability: repeats agree? Within 0.03; diluted values match P03 within 0.01.\" \"Accuracy: close to the true pH? Strong readings outside the 4 to 10 calibration: less certain.\" On \"big gaps\" a chip pins under the accuracy card: \"1.82 units; 0.96 vs 0.49: far bigger than the uncertainty\". A small grey footer: \"NESA glossary: validity, the extent to",
+      "motionRole": "explain",
+      "onScreenChange": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures strength? Matched 0.100 mol/L; the dilution test doesn't rely on labels.\" \"Reliability: repeats agree? Within 0.03; diluted values match P03 within 0.01.\" \"Accuracy: close to the true pH? Strong readings outside the 4 to 10 calibration: less certain.\" On \"big gaps\" a chip pins under the accuracy card: \"1.82 units; 0.96 vs 0.49: far bigger than the uncertainty\". A small grey footer: \"NESA glossary: validity, the extent to which tests measure what was intended.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses (`m5x-safety-glasses-v1.png`); rinse splashes with water\"; \"0.100 mol/L HCl, ethanoic acid, NH₃: below classification limits\" / \"eye irritation from a splash\" / \"safety glasses; small volumes; cap the ammonia\"; \"concentrated stocks (conc.",
+      "teachingReason": "The risk assessment: The risk assessment.",
+      "narrationCue": "irritant / corrosive / filler",
+      "motionPurpose": "On the spoken cues: HCl, glacial ethanoic acid, conc. ammonia, solid NaOH): corrosive, H314\" / \"severe burns\" / \"teacher only\" (`m5x-ammonia-bottle-v1.png` small with tag \"teacher only\"); \"pipetting\" / \"swallowing solution\" / \"pipette filler (the plate's red bulb ringed)\"; \"glass bulb, glassware\" / \"cuts\" / \"probe in its holder; flask on the bench, not held by the neck\". Footer chip: \"follow your school's risk assessment and each",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses (`m5x-safety-glasses-v1.png`); rinse splashes with water\"; \"0.100 mol/L HCl, ethanoic acid, NH₃: below classification limits\" / \"eye irritation from a splash\" / \"safety glasses; small volumes; cap the ammonia\"; \"concentrated stocks (conc. HCl, glacial ethanoic acid, conc. ammonia, solid NaOH): corrosive, H314\" / \"severe burns\" / \"teacher only\" (`m5x-ammonia-bottle-v1.png` small with tag \"teacher only\"); \"pipetting\" / \"swallowing solution\" / \"pipette filler (the plate's red bulb ringed)\"; \"glass bulb, glassware\" / \"cuts\" / \"probe in its holder; flask on the bench, not held by the neck\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Rows dim as each new row writes. Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the aid writes large and handwritten in two lines: \"Match, then compare.\"",
+      "teachingReason": "Memory aid: Here's the rule to remember: match, then compare.",
+      "narrationCue": "match, then compare / strong moves about one, weak moves about half",
+      "motionPurpose": "On the spoken cues: \"Dilute ten times: strong moves about one, weak moves about half.\" Small icons beside them: the padlocked concentration dial; the two change bars (solid long, outlined short). Condition tag beneath: \"exact ÷ 10 with volumetric glassware; weak acid mostly un-ionised\".",
+      "motionRole": "explain",
+      "onScreenChange": "the aid writes large and handwritten in two lines: \"Match, then compare.\" \"Dilute ten times: strong moves about one, weak moves about half.\" Small icons beside them: the padlocked concentration dial; the two change bars (solid long, outlined short). Condition tag beneath: \"exact ÷ 10 with volumetric glassware; weak acid mostly un-ionised\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student measures zero point five",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A student wants to compare the strengths of methanoic acid (HCOOH) and nitric acid (HNO₃). Using a calibrated pH meter at 25 °C, she measures the pH of 0.50 mol/L methanoic acid as 2.03 and the pH of 0.0020 mol/L nitric acid as 2.70. She concludes that methanoic acid is the stronger acid. Evaluate her conclusion and describe how she should change her method.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no dials, no padlock, no bracket.",
+      "motionTools": [
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "concentrations / same concentration / trap",
+      "motionPurpose": "On the spoken cues: On \"concentrations\" \"0.50 mol/L\" and \"0.0020 mol/L\" are underlined and a chip writes \"0.50 ÷ 0.0020 = 250 times\"; the two dials appear small, both turning, tag \"two things mixed\". On \"same concentration\" \"calibrated pH meter at 25 °C\" is underlined and the concentration dial locks; answer chip \"match: both 0.100 mol/L; nitric acid (strong) reads lower\". On \"trap\" a chip \"lower pH, so stronger acid\" fades in and is",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"concentrations\" \"0.50 mol/L\" and \"0.0020 mol/L\" are underlined and a chip writes \"0.50 ÷ 0.0020 = 250 times\"; the two dials appear small, both turning, tag \"two things mixed\". On \"same concentration\" \"calibrated pH meter at 25 °C\" is underlined and the concentration dial locks; answer chip \"match: both 0.100 mol/L; nitric acid (strong) reads lower\". On \"trap\" a chip \"lower pH, so stronger acid\" fades in and is crossed (caption \"only at the same concentration\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A student has a solution of a monoprotic acid of unknown concentration.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more. An acid of unknown concentration has",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student has a solution of a monoprotic acid of unknown concentration. Its pH is 2.40. She uses a volumetric pipette to transfer 10.00 mL of it into a 100.0 mL volumetric flask and makes it up to the mark with distilled water. The diluted solution has a pH of 2.90. Determine whether the acid is strong or weak. Justify your answer.\" Beside it the pipette and flask plates, small. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no change bars, no pH line.",
+      "motionTools": [
+        "bar fill",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "on \"weak\" a verdict chip \"weak\" pins.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "weak / tenfold / zero point five zero",
+      "motionPurpose": "On the spoken cues: On \"tenfold\" \"10.00 mL\" and \"100.0 mL\" are underlined and \"÷ 10\" writes between them. On \"one unit\" a ghost change bar (solid) draws from 2.40 to 3.40, tag \"if strong\". On \"zero point five zero\" \"pH is 2.40\" and \"pH of 2.90\" are underlined and the real bar (outlined) draws from 2.40 to 2.90, \"+0.50\", beside the ghost; tag \"more molecules ionised on dilution: partial\". On \"nothing about strength\" a chip \"pH 2.40 is",
+      "motionRole": "explain",
+      "onScreenChange": "on \"weak\" a verdict chip \"weak\" pins. On \"tenfold\" \"10.00 mL\" and \"100.0 mL\" are underlined and \"÷ 10\" writes between them. On \"one unit\" a ghost change bar (solid) draws from 2.40 to 3.40, tag \"if strong\". On \"zero point five zero\" \"pH is 2.40\" and \"pH of 2.90\" are underlined and the real bar (outlined) draws from 2.40 to 2.90, \"+0.50\", beside the ghost; tag \"more molecules ionised on dilution: partial\". On \"nothing about strength\" a chip \"pH 2.40 is low, so it's strong\" fades in and is crossed (caption \"unknown concentration\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Same concentration, same routine: lower pH = stronger acid (higher = stronger base).\"",
+      "teachingReason": "Decision rule and handoff: So, to use pH to show strength: match the concentrations and compare, or dilute exactly tenfold and see how far the pH moves.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Dilute exactly ÷ 10: strong moves about 1 unit; weak moves less (about 0.5 here).\" \"3 Never judge strength from one pH at an unknown concentration.\" On \"Next\" a chip \"Next: conjugate pairs and amphiprotic species\" appears with the scene 5 equation strip small, the \"Cl⁻\" and \"CH₃COO⁻\" each ringed with a \"?\".",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Same concentration, same routine: lower pH = stronger acid (higher = stronger base).\" \"2 Dilute exactly ÷ 10: strong moves about 1 unit; weak moves less (about 0.5 here).\" \"3 Never judge strength from one pH at an unknown concentration.\" On \"Next\" a chip \"Next: conjugate pairs and amphiprotic species\" appears with the scene 5 equation strip small, the \"Cl⁻\" and \"CH₃COO⁻\" each ringed with a \"?\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p04-learning-review.md",
+      "sha256": "c0df21eab6bd65eba17539edd0befbbbf6e5d51427915fc4a29877ddbbfc1eab"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p04-claude-science-check.md",
+      "sha256": "74550de3f6d26d20adf12ceee93966e9a2d8cf6dd248ad6a63fa73825fd81c18"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

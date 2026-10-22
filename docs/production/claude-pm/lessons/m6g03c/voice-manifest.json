@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-G03-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6g03c/lesson.json",
+  "lessonSha256": "00e58b95f01069ba0c2efb60ab937bbb35ea0b9de12f1856ea7513bc680e53a7",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6g03c/lesson.production-brief.json",
+    "sha256": "b7ce732e21262b0c50f14acd73724cd0e41c99788f39216b94052cd28471cffa"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Titration questions often chain several steps: make the standard, choose the titres, use the ratio, scale up from an aliquot, then turn moles into a percentage. Lose one link, and every number after it is wrong: stop one step early in a dilution question, and your answer can be twenty five times too small. Here are three HSC-style questions. Pause and try each one, then we'll follow the moles, one step at a time.",
+      "hash": "74370495d8b0",
+      "textSha256": "74370495d8b08737414742cad6fd12a2ceb81bb313db43fc67e4b3ee0cc6c2a3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/hook.74370495d8b0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/hook.74370495d8b0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/hook.74370495d8b0.generation.json",
+      "plannedRequestSha256": "41a5f37b0a904cec588a103ee231163d87b3dd94c1b82f864daa021219fe48b9"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. A student dissolves one point five eight two two grams of oxalic acid dihydrate and makes it up to two hundred and fifty millilitres. She titrates twenty five millilitre aliquots with sodium hydroxide, and her burette readings are in the table. Calculate the concentration of the oxalic acid, then of the sodium hydroxide. Pause here to answer.",
+      "hash": "a5f391104822",
+      "textSha256": "a5f391104822cc021f2b7324aa56e572a08cac5ec17b05bc9a265706c4860d12",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-question.a5f391104822.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-question.a5f391104822.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-question.a5f391104822.generation.json",
+      "plannedRequestSha256": "8368393d83b9457e1e0bd9c591c06cb5335dadc2f92d3b3cdaabc0066b3f3be3"
+    },
+    {
+      "id": "q1-standard",
+      "parentSceneId": "q1-standard",
+      "text": "First, the standard. The formula has two waters of crystallisation, and she weighed them too, so the molar mass includes them: one hundred and twenty six point zero seven grams per mole. Then n is m over M, zero point zero one two five five moles, and over zero point two five zero zero litres, the oxalic acid is zero point zero five zero two zero moles per litre.",
+      "hash": "581e7a281a45",
+      "textSha256": "581e7a281a452bee90630cf562378d997e3f5036da472f9b152a3afd34dff5bf",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-standard.581e7a281a45.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-standard.581e7a281a45.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-standard.581e7a281a45.generation.json",
+      "plannedRequestSha256": "5e0d75d56928de443c106af553161c4c4ef992c4fe2ab066ee8aa2ed7ddc55c7"
+    },
+    {
+      "id": "q1-titres",
+      "parentSceneId": "q1-titres",
+      "text": "Next, the titres. Subtract each initial reading from the final one. The rough run isn't used. Run two, twenty four point four zero, is well above the rest. Twenty four point zero five, twenty four point zero zero and twenty three point nine five agree within zero point one zero, so their mean is exactly twenty four point zero zero millilitres.",
+      "hash": "9e9857579142",
+      "textSha256": "9e9857579142e31b5eaa437e2a18a2cfc4affa34a058c4a1fea32ca2905fa76b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-titres.9e9857579142.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-titres.9e9857579142.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-titres.9e9857579142.generation.json",
+      "plannedRequestSha256": "5fc15c06126e51ea898549770169f1530cbe013e663683704dea559e306f3ffd"
+    },
+    {
+      "id": "q1-naoh",
+      "parentSceneId": "q1-naoh",
+      "text": "Now known to moles, ratio, unknown. The aliquot holds zero point zero five zero two zero times zero point zero two five zero zero: one point two five five times ten to the minus three moles of oxalic acid. The equation says two hydroxides for each one, so that's two point five one zero times ten to the minus three moles, in twenty four point zero zero millilitres. The sodium hydroxide is zero point one zero four six moles per litre, close to the zero point one you'd expect.",
+      "hash": "d5c8bf7de5bf",
+      "textSha256": "d5c8bf7de5bf6542a72c5411218af10f9eda4fa4681cd700e0f1e887517e85e3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-naoh.d5c8bf7de5bf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-naoh.d5c8bf7de5bf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-naoh.d5c8bf7de5bf.generation.json",
+      "plannedRequestSha256": "7c5e1457e775028c32ceb354e515929435d0dda95f65bdd32e0f9621ec38dd2c"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is leaving out the water of crystallisation. Using ninety point zero four makes the oxalic acid look forty per cent more concentrated, and the sodium hydroxide comes out at zero point one four six four, far too high.",
+      "hash": "181f77df37c3",
+      "textSha256": "181f77df37c38ce9e3eed9b04193b503edcfa9c52efa56a29987959319ef6787",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-mistake.181f77df37c3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-mistake.181f77df37c3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q1-mistake.181f77df37c3.generation.json",
+      "plannedRequestSha256": "4b4e817f82805b72045b838ccf71aa8c2a018b666b1fd571c6bc5cdb36686273"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. A brick cleaner contains hydrochloric acid. Ten millilitres of it is diluted to two hundred and fifty millilitres, and twenty millilitre aliquots are titrated with the sodium hydroxide from question one. Calculate the cleaner's concentration of hydrochloric acid, and its percentage by mass. Pause here to answer.",
+      "hash": "466240162f79",
+      "textSha256": "466240162f7954f809800841909b05b85e2c02731b239885acc35a1591d71e0d",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-question.466240162f79.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-question.466240162f79.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-question.466240162f79.generation.json",
+      "plannedRequestSha256": "b85adbc19c9f258cb13f92883677e672ba5164a467fdded845ec448880efdfdb"
+    },
+    {
+      "id": "q2-aliquot",
+      "parentSceneId": "q2-aliquot",
+      "text": "This aliquot came from a diluted sample, so track moles, not concentrations. The mean titre is exactly twenty four point four zero millilitres. Moles of hydroxide: zero point one zero four six times zero point zero two four four zero, two point five five two times ten to the minus three. Hydrochloric acid reacts one to one, so the aliquot held the same moles of acid.",
+      "hash": "edc53ca9e198",
+      "textSha256": "edc53ca9e198993fb961f8487ea005f030d7f04b40a9644cec5e0ebed442a79a",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-aliquot.edc53ca9e198.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-aliquot.edc53ca9e198.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-aliquot.edc53ca9e198.generation.json",
+      "plannedRequestSha256": "35f950eef6d67c9fd652fe0b0fa94307a570727351f647239484d8f0a138fd2e"
+    },
+    {
+      "id": "q2-scale-up",
+      "parentSceneId": "q2-scale-up",
+      "text": "But the flask held two hundred and fifty millilitres, twelve and a half aliquots' worth. So the flask, and the ten millilitre sample poured into it, held twelve point five times as much acid: zero point zero three one nine zero moles. Divide by the sample's zero point zero one zero zero zero litres, and the brick cleaner is three point one nine zero moles per litre. That's sensible: it was diluted twenty five times, so the cleaner should be about twenty five times as concentrated as the diluted solution.",
+      "hash": "be29f6775a95",
+      "textSha256": "be29f6775a9516df3a08e006dc7e1b8b9da39d1255442e50655e2763d1ef6db4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-scale-up.be29f6775a95.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-scale-up.be29f6775a95.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-scale-up.be29f6775a95.generation.json",
+      "plannedRequestSha256": "2e5156afa21c440678e2da2e02fcb178e0a500aafdde6764bf7758b2b0f926d7"
+    },
+    {
+      "id": "q2-percent",
+      "parentSceneId": "q2-percent",
+      "text": "A percentage by mass needs two masses, so use the density. One litre of cleaner has a mass of one thousand and fifty grams. It holds three point one nine zero moles of acid, times thirty six point four six grams per mole: one hundred and sixteen point three grams. That's eleven point one per cent, three significant figures, from the density.",
+      "hash": "8784a3a98077",
+      "textSha256": "8784a3a98077f8035cea0890231e8096ebff050606eac253f4ef82ce04cb7f8c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-percent.8784a3a98077.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-percent.8784a3a98077.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-percent.8784a3a98077.generation.json",
+      "plannedRequestSha256": "0dc938efab923dd3ee9e884881ff28d6e991ac0ddfa8848fa2baae87a6967b47"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is stopping at the aliquot. Zero point one two seven six moles per litre is the diluted solution, not the cleaner. Scale up from the aliquot.",
+      "hash": "74f8502e8378",
+      "textSha256": "74f8502e83787682572ccc72d1c4a7b4c77e3a7fe687d341d189d42efc08caae",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-mistake.74f8502e8378.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-mistake.74f8502e8378.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q2-mistake.74f8502e8378.generation.json",
+      "plannedRequestSha256": "4b1445e3e389b893dadecfcb5c56056654c024e186636711b776f086bd1de2d1"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. An antacid tablet contains sodium hydrogen carbonate, and its other ingredients don't react with acid. A one point three two zero zero gram tablet is dissolved and made up to one hundred millilitres, and twenty millilitre aliquots are titrated with zero point one zero five nine moles per litre hydrochloric acid. Calculate the percentage by mass of sodium hydrogen carbonate in the tablet. Pause here to answer.",
+      "hash": "6d35454c5107",
+      "textSha256": "6d35454c5107ecfd19879ff29ff5624d35a5d4f5704be2f2a36e76ff607bfc2b",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-question.6d35454c5107.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-question.6d35454c5107.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-question.6d35454c5107.generation.json",
+      "plannedRequestSha256": "933ca86eb2f5039024353d52638d2b9bb70d16d6f3917350f226aeb68f9beba1"
+    },
+    {
+      "id": "q3-ratio",
+      "parentSceneId": "q3-ratio",
+      "text": "No equation is given, so write it. Hydrogen carbonate accepts just one proton, making water and carbon dioxide, so the ratio is one to one. The mean titre is exactly twenty three point one zero, so the acid is zero point one zero five nine times zero point zero two three one zero: two point four four six times ten to the minus three moles, and the aliquot held the same moles of hydrogen carbonate.",
+      "hash": "a4a4e9e85426",
+      "textSha256": "a4a4e9e85426095af2d8ebfea4f9610c0c08717476e8175f773a733335d41ec7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-ratio.a4a4e9e85426.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-ratio.a4a4e9e85426.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-ratio.a4a4e9e85426.generation.json",
+      "plannedRequestSha256": "b4662fb9a451e50df5de70db747c8fade959c0617612c952828c7356bd796595"
+    },
+    {
+      "id": "q3-percent",
+      "parentSceneId": "q3-percent",
+      "text": "Scale up: one hundred millilitres is five aliquots, so the tablet held one point two two three zero times ten to the minus two moles. Times eighty four point zero one grams per mole, that's one point zero two seven four grams. Out of one point three two zero zero grams, it's seventy seven point eight four per cent. A tablet is weighed directly, so there's no density here.",
+      "hash": "2619ffa5a607",
+      "textSha256": "2619ffa5a607caaeba47f6b8a9b351757f68e64a12a8184714ca1d09ab1a60ba",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-percent.2619ffa5a607.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-percent.2619ffa5a607.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-percent.2619ffa5a607.generation.json",
+      "plannedRequestSha256": "f028916b125c8ba973688812e0426c76122ae8966c2bbf6f3ff0cc696c984136"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is borrowing carbonate's one to two ratio. That halves the moles and gives thirty eight point nine two per cent. Carbonate takes two protons. Hydrogen carbonate already has one, so it takes only one more.",
+      "hash": "37a37e2fde10",
+      "textSha256": "37a37e2fde10d8dac7f510dc5a064aec2627681c01ae0d4995c3d6064c93cba5",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-mistake.37a37e2fde10.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-mistake.37a37e2fde10.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/q3-mistake.37a37e2fde10.generation.json",
+      "plannedRequestSha256": "22bcb769387f8196a42cf11052b8e34d5b449a25ea130e698ef99e320d3dcf8c"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So for any titration calculation, follow the moles. Use the full molar mass, waters of crystallisation included. Average only concordant titres. Go known to moles, ratio, unknown, with the ratio from a balanced equation. If the aliquot came from a flask, scale up. And for a percentage by mass, use masses: density for a liquid, the weighed mass for a solid. Next, which indicator fits a titration.",
+      "hash": "30ea1108a532",
+      "textSha256": "30ea1108a532440de8aa6ad6edd500a9ae6c090426ad55b5d74e5b92ee33ced3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/decision-board.30ea1108a532.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/decision-board.30ea1108a532.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/decision-board.30ea1108a532.generation.json",
+      "plannedRequestSha256": "2e15d63aae0119110508294f335489f09a46883870d70e22e41f397b19a80565"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G03-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

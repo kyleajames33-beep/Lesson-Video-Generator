@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6p05/measured/lesson.json",
+    "lessonSha256": "94d9dad05d0e56ff3c63f0be7f08b04e7a714e885c10ea98f668ace5550fd068"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m6-c11 (a buffer is a weak acid and its conjugate base, both in large amounts; the conjugate base takes up added hydronium and the weak acid takes up added hydroxide; [H₃O⁺] = Ka × n(HA) ÷ n(A⁻) with moles because the volume cancels; equal amounts give pH = pKa; capacity depends on the amounts). chem-m6-c10 (ethanoic acid Ka 1.8 × 10⁻⁵, pKa 4.74). chem-m6-c07 (pH from [H₃O⁺]; the decimal-places rule). chem-m6-p03 (the meter routine; open distilled water reads near 5.9 because of dissolved CO₂). chem-m6-p04 (tenfold dilution with a volumetric pipette and flask; a strong acid's pH moves about one unit, 0.96 in its class data). chem-m5-p01 (validity, reliability, accuracy; variables; risk). Year 11: n = c × V.",
+    "startsWith": "Prepare a weak acid and conjugate base mixture. The video opens: These two beakers both read pH four point six eight. One is a buffer you've just made. The other is very dilute hydrochloric acid.",
+    "stopsAfter": "choosing a buffer pair and amounts for a target pH near pKa; preparing about 100 mL accurately and making enough for every test; predicting and measuring its pH and explaining a small difference; designing tests with a water control, the same dose and separate fresh portions; comparing pH changes for added acid and base; explaining the acid result with the ratio; showing that dilution barely changes the pH but cuts the capacity; naming the variables; judging validity, reliability and accuracy; writing the risk rows. No Henderson-Hasselbalch log form, no partial-neutralisation preparation (chem-m6-c14), no capacity curve (chem-m6-c11), no blood buffers (chem-m6-c11).",
+    "nextLesson": "direct titration to find an unknown concentration (route chem-m6-c12)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-p05.md"
+  ],
+  "teaching": {
+    "task": "Two beakers both read pH 4.68: one is a buffer you've just made, the other is very dilute hydrochloric acid. How do you prepare a buffer, and what tests prove that it behaves like one?",
+    "causalExplanation": "(1) same pH, so which is the buffer? You must test what it does (1); (2) a weak acid and its conjugate base in equal moles, so the pH should be close to pKa, 4.74 (2); (3) accurate volumes, because the ratio sets the pH; enough solution for every test (3); (4) measured 4.68, a little below prediction, because real ions affect each other and stocks aren't perfect; the practical compares changes (4); (5) split into fresh 20.0 mL portions with water controls; the same 1.00 mL dose; acid and base in separate portions, because base added after acid would just undo the acid (5); (6) the buffer moves less than a tenth of a unit; water moves 3.58 and 5.70 units (from 5.93, because of dissolved CO₂, P03) (6); (7) why: the dose is a tenth of the ethanoate, so the ratio moves from 1 to about 1.2 and the predicted pH from 4.74 to 4.66, the same small drop as measured (7); (8) dilute tenfold: both partners dilute equally, so the ratio and the pH barely change (4.68 to 4.72) (8); (9) but the diluted portion holds a tenth of the partners, and the same dose uses up all its ethanoate: the pH falls to 3.41; capacity depends on amounts (9); variables (10); validity, reliability, accuracy (11); risk (12); memory aid (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).",
+    "conversationalApproach": "two beakers both read pH 4.68, one a buffer just made and one very dilute hydrochloric acid, so the practical asks how to prepare a buffer and which tests prove that it behaves like one. The pair (ethanoic acid and sodium ethanoate) and the amounts come from the buffers video, the buffer is made with volumetric pipettes in a batch large enough to split, and its measured pH is compared with the ratio prediction. The test is designed with fresh 20 mL portions, a water control given the same dose, and acid and base additions; the results show the buffer moving under a tenth of a unit while the water moves by units, and the C11 ratio calculation shows why. Dilution leaves the ratio, and so the pH, nearly unchanged, while capacity falls because a tenth of the partners is used up by the same dose. The variables, validity, reliability and accuracy, and the risk assessment follow, and the memory aid is \"Split. Dose. Compare.\" Two exam questions follow with brief feedback.",
+    "openingDecision": "These two beakers both read pH four point six eight. One is a buffer you've just made. The other is very dilute hydrochloric acid. Which is which? You can't tell from the reading, because a buffer isn't defined by its pH. It's defined by what it does. So in this practical you'll make a buffer, and then prove it.",
+    "understandingCheck": "(A1) \"A student tests whether a solution is a buffer. She adds 1.00 mL of 0.100 mol/L hydrochloric acid to 20.0 mL of the solution, and the pH changes from 4.68 to 4.59. She then adds 1.00 mL of 0.100 mol/L sodium hydroxide to the same beaker, and the pH returns to 4.68. She concludes that the solution is a buffer that resists both acid and base. Evaluate her method.\" Answer: the small change is consistent with a buffer, but (1) there is no control: the same additions to 20.0 mL of water are needed to show the change is unusually small; (2) the base was added to the beaker that already held the acid, so it just neutralised that acid and the return to 4.68 shows nothing about resisting base; use a fresh portion. Crossed mistake: \"the pH came back, so it resists base too\". (A2) \"A student mixes 30.0 mL of 0.100 mol/L ethanoic acid with 10.0 mL of 0.100 mol/L sodium ethanoate at 25 °C. Calculate the expected pH of the mixture. Ka(CH₃COOH) = 1.8 × 10⁻⁵.\" Answer: n(CH₃COOH) = 3.00 × 10⁻³ mol, n(CH₃COO⁻) = 1.00 × 10⁻³ mol; [H₃O⁺] = 1.8 × 10⁻⁵ × 3.00 = 5.4 × 10⁻⁵ mol/L; pH 4.27. Crossed mistake: \"pH = pKa = 4.74\" (true only for equal amounts).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to prepare a buffer and demonstrate its properties (ACSCH080)\" this video prepares students to carry out and analyse the buffer practical; it does not claim that watching it is conducting it. It teaches: choosing the pair and the amounts (ethanoic acid and sodium ethanoate in equal moles, so the pH should sit near pKa, a C11 callback); preparing about 100 mL with volumetric pipettes (the pipettes fix the moles) and making enough for every test; measuring its pH and comparing it with the prediction; testing four properties with a water control: resisting a small addition of acid, resisting a small addition of base (each in its own fresh portion), resisting dilution, and limited capacity (the diluted buffer and the same dose); explaining the acid result with C11's [H₃O⁺] = Ka × n(HA) ÷ n(A⁻); the variables; validity, reliability and accuracy; the risk assessment. Placement (playlist order 17): after C07 (pH calculation), C08 (weak acids stay mostly un-ionised), C10 (Ka, pKa) and C11 (buffers), so pH calculations and C11's ratio method are used, not re-taught. Not re-taught: why the conjugate base takes up hydronium and the weak acid takes up hydroxide, the two equations, why a strong acid with its salt is not a buffer, blood buffers (all C11; recalled in one clause each where needed). Not here: the Henderson-Hasselbalch log form (C11 decided to leave it out); preparing a buffer by partial neutralisation (chem-m6-c14); a dropwise capacity curve (C11 scene 8 shows it; this video demonstrates capacity with one test instead); buffer range \"pKa ± 1\"."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C11, P03): ethanoic acid amber, ethanoate grey-violet (C11 ratio bar), hydronium teal, hydroxide violet; readout amber digits; buffer beakers marked with a teal-grey tab, water beakers grey; buffer change bars teal, water change bars pale blue; controls green, hazards terracotta. Board layout (three zones, constant): top-left the short task line; the centre holds the glassware, the beaker grid and the meter; the right third holds the current card (prediction, method, results, calculation, variables, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: `m6-ph-meter-probe-beaker-v1.png` (inspected for P03 on 21 Oct; coded readout), `m6-beaker-v1.png` (coded copies, up to six on screen), `m6-volumetric-pipette-filler-v1.png` (inspected 21 Oct: bulb pipette with red filler; native aspect, rotated whole; the 50.0 mL, 20.0 mL and 10.00 mL transfers), `m5x-graduated-pipette-v1.png` (inspected 21 Oct: graduated pipette with red filler, at an angle; the 1.00 mL doses), `m6-volumetric-flask-v1.png` (inspected 21 Oct; the tenfold dilution), `m6-wash-bottle-v1.png`, `m5x-safety-glasses-v1.png`, `m6-vinegar-bottle-v1.png` is not used (glacial ethanoic acid is a teacher stock, not vinegar). From P03's Codex asset brief (not yet painted): `m6-buffer-bottle-v1.png` (used here for the two reagent bottles and the calibration buffers), `m6-ph-probe-holder-v1.png`, `m6-lab-tissue-v1.png`; if `m6-buffer-bottle-v1.png` is not delivered, `p03-dropper-bottle-v1.png` (inspected 21 Oct: clear dropper bottle with a blank label) is the fallback for the reagent bottles. No human figures.",
+    "transitionPlan": "Two meter-and-beaker plates open the hook with both readouts settling on 4.68; two reagent bottles stand in the right zone for the chosen pair; the volumetric pipette sends coded streams into the batch beaker; the probe moves on its arc into the buffer and the predicted and measured card writes; the batch slides left and a 2 × 2 grid of buffer and water portions writes with its dose columns; the results table fills with change bars, tiny for the buffer and long for the water; the board clears to the task line, the grey ratio equation strip, grouped givens and one working line per stage; the pipette and volumetric flask return for the tenfold dilution as the ratio bar keeps its shape; the diluted beaker's short ratio bar empties under the same dose; the variables card, the three evaluation cards and the risk table write in turn; the memory aid writes large with three icons; each attempt clears the board and its feedback underlines the givens as a ghost control beaker or the mole lines write; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled in code \"solution X\" and \"solution Y\".",
+      "teachingReason": "Hook (same pH, which is the buffer?): These two beakers both read pH four point six eight.",
+      "narrationCue": "four point six eight / dilute hydrochloric acid / does",
+      "motionPurpose": "On the spoken cues: On \"four point six eight\" both readouts settle on \"4.68\" with the \"stable\" dot; beaker Y's readout drifts by a hundredth or two and settles about a second after beaker X's (an unbuffered solution this dilute settles slowly). On \"dilute hydrochloric acid\" the labels flip briefly to reveal \"buffer?\" and \"HCl, about 0.00002 mol/L?\" with a grey \"?\" between them, then flip back. On \"does\" a heading writes: \"A buffer is",
+      "motionRole": "explain",
+      "onScreenChange": "two `m6-ph-meter-probe-beaker-v1.png` plates side by side, beakers labelled in code \"solution X\" and \"solution Y\". On \"four point six eight\" both readouts settle on \"4.68\" with the \"stable\" dot; beaker Y's readout drifts by a hundredth or two and settles about a second after beaker X's (an unbuffered solution this dilute settles slowly). On \"dilute hydrochloric acid\" the labels flip briefly to reveal \"buffer?\" and \"HCl, about 0.00002 mol/L?\" with a grey \"?\" between them, then flip back. On \"does\" a heading writes: \"A buffer is what it does\" and a small chip \"resists a pH change (C11)\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "choose-pair",
+      "visualDecision": "adjust",
+      "visualReference": "two reagent bottles (`m6-buffer-bottle-v1.png`, coded label bands \"ethanoic acid, 0.100 mol/L\" amber and \"sodium ethanoate, 0.100 mol/L\" grey-violet) stand in the right zone.",
+      "teachingReason": "Choose the pair and the amounts: From the buffers video, a buffer needs a weak acid and its conjugate base, both in large amounts.",
+      "narrationCue": "weak acid / conjugate base / equal moles / four point seven four",
+      "motionPurpose": "On the spoken cues: On \"weak acid\" and \"conjugate base\" each bottle's band lights in turn, with C11's tags \"HA: weak acid\" and \"A⁻: its conjugate base\". On \"equal moles\" C11's ratio bar draws with two equal columns, tag \"ratio 1 : 1\". On \"four point seven four\" a prediction card writes: \"equal moles: pH = pKa = −log(1.8 × 10⁻⁵) = 4.74\", with a grey tag \"Ka and pKa video\". Earlier tags dim.",
+      "motionRole": "explain",
+      "onScreenChange": "two reagent bottles (`m6-buffer-bottle-v1.png`, coded label bands \"ethanoic acid, 0.100 mol/L\" amber and \"sodium ethanoate, 0.100 mol/L\" grey-violet) stand in the right zone. On \"weak acid\" and \"conjugate base\" each bottle's band lights in turn, with C11's tags \"HA: weak acid\" and \"A⁻: its conjugate base\". On \"equal moles\" C11's ratio bar draws with two equal columns, tag \"ratio 1 : 1\". On \"four point seven four\" a prediction card writes: \"equal moles: pH = pKa = −log(1.8 × 10⁻⁵) = 4.74\", with a grey tag \"Ka and pKa video\". Earlier tags dim. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "prepare",
+      "visualDecision": "adjust",
+      "visualReference": "centre: `m6-volumetric-pipette-filler-v1.png` (native aspect) above a `m6-beaker-v1.png` copy labelled \"buffer, about 100 mL (0.00500 mol of each)\".",
+      "teachingReason": "Make it accurately, and make enough: Use a volumetric pipette to transfer fifty millilitres of each solution into a clean, dry beaker, and swirl.",
+      "narrationCue": "volumetric pipette / ratio / enough",
+      "motionPurpose": "On the spoken cues: On \"volumetric pipette\" a coded amber stream runs from the pipette tip into the beaker, tag \"50.0 mL ethanoic acid\", then a grey-violet stream, tag \"50.0 mL sodium ethanoate\"; the coded fill rises. A givens strip writes in the right zone: \"n = c × V = 0.100 mol/L × 0.0500 L = 0.00500 mol each\" (both columns of the ratio bar tagged \"0.00500 mol\"). On \"ratio\" the ratio bar pulses. On \"enough\" a small volume tally",
+      "motionRole": "explain",
+      "onScreenChange": "centre: `m6-volumetric-pipette-filler-v1.png` (native aspect) above a `m6-beaker-v1.png` copy labelled \"buffer, about 100 mL (0.00500 mol of each)\". On \"volumetric pipette\" a coded amber stream runs from the pipette tip into the beaker, tag \"50.0 mL ethanoic acid\", then a grey-violet stream, tag \"50.0 mL sodium ethanoate\"; the coded fill rises. A givens strip writes in the right zone: \"n = c × V = 0.100 mol/L × 0.0500 L = 0.00500 mol each\" (both columns of the ratio bar tagged \"0.00500 mol\"). On \"ratio\" the ratio bar pulses. On \"enough\" a small volume tally writes: \"2 × 20.0 mL portions + 10.00 mL for dilution + pipette rinses and a spare ≈ 70 mL per set\", and a chip \"make 50 mL\" fades in and is crossed (caption \"nothing left for rinsing or a re-test\"). Earlier lines dim. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "measure-start",
+      "visualDecision": "new",
+      "visualReference": "the probe moves on its arc into the buffer beaker; the readout settles on \"4.68\".",
+      "teachingReason": "Measure its pH: Measure it with the calibrated meter, using the routine from the pH practical.",
+      "narrationCue": "four point six eight / do / changes",
+      "motionPurpose": "On the spoken cues: In the right zone a two-line card: \"predicted 4.74 | measured 4.68 (mean of three sets: 4.67, 4.69, 4.68)\". On \"do\" a grey tag \"real ions affect each other; stock concentrations\" writes beneath. On \"changes\" a chip \"the reading should equal 4.74 exactly\" fades in and is crossed (caption \"small offsets are normal; compare changes\"), and a small \"Δ\" symbol pins beside the readout.",
+      "motionRole": "explain",
+      "onScreenChange": "the probe moves on its arc into the buffer beaker; the readout settles on \"4.68\". In the right zone a two-line card: \"predicted 4.74 | measured 4.68 (mean of three sets: 4.67, 4.69, 4.68)\". On \"do\" a grey tag \"real ions affect each other; stock concentrations\" writes beneath. On \"changes\" a chip \"the reading should equal 4.74 exactly\" fades in and is crossed (caption \"small offsets are normal; compare changes\"), and a small \"Δ\" symbol pins beside the readout. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "test-design",
+      "visualDecision": "adjust",
+      "visualReference": "the batch beaker slides left and a 2 × 2 grid of `m6-beaker-v1.png` copies writes in the centre: top row \"buffer, 20.0 mL\" (teal-grey tabs), bottom row \"water, 20.0 mL\" (grey tabs); columns headed \"+ acid\" and \"+ base\".",
+      "teachingReason": "Design the test: split, control, dose: Use a pipette to split the buffer into twenty millilitre portions, with matching twenty millilitre portions of distilled water.",
+      "narrationCue": "split / control / dose / different",
+      "motionPurpose": "On the spoken cues: On \"split\" coded streams fill the top row from the batch; on \"control\" the bottom row fills from the wash bottle, and the term writes in the right zone: \"control: same treatment, not buffered\". Once the grid is filled, the four beaker labels and the two column headers dim to grey; on \"dose\" the control term dims too, and the graduated pipette plate (`m5x-graduated-pipette-v1.png`, native aspect) hovers over each",
+      "motionRole": "explain",
+      "onScreenChange": "the batch beaker slides left and a 2 × 2 grid of `m6-beaker-v1.png` copies writes in the centre: top row \"buffer, 20.0 mL\" (teal-grey tabs), bottom row \"water, 20.0 mL\" (grey tabs); columns headed \"+ acid\" and \"+ base\". On \"split\" coded streams fill the top row from the batch; on \"control\" the bottom row fills from the wash bottle, and the term writes in the right zone: \"control: same treatment, not buffered\". Once the grid is filled, the four beaker labels and the two column headers dim to grey; on \"dose\" the control term dims too, and the graduated pipette plate (`m5x-graduated-pipette-v1.png`, native aspect) hovers over each column and releases one coded drop into each beaker, tag \"1.00 mL of 0.100 mol/L HCl\" over the left column and \"1.00 mL of 0.100 mol/L NaOH\" over the right. On \"different\" a single-beaker inset shows acid then base going into one beaker, with a chip \"base after acid, same beaker\" crossed (caption \"the base just neutralises the acid you added\"). Earlier tags dim. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "results",
+      "visualDecision": "new",
+      "visualReference": "the results table writes in the right zone: columns \"portion / start / after / change\"; rows \"buffer + HCl 4.68 → 4.59, −0.09\"; \"buffer + NaOH 4.68 → 4.77, +0.09\"; \"water + HCl 5.93 → 2.35, −3.58\"; \"water + NaOH 5.93 → 11.63, +5.70\".",
+      "teachingReason": "The results: acid and base: The buffer went from four point six eight to four point five nine with acid, and to four point seven seven with base.",
+      "narrationCue": "less than a tenth / plunged / resists",
+      "motionPurpose": "On the spoken cues: As each row writes, the probe moves on its arc into that grid beaker and the readout settles; a change bar draws beside the row on a shared vertical pH axis (0 to 14): two tiny teal bars for the buffer, two long pale blue bars for water. On \"less than a tenth\" a bracket \"< 0.1\" pins over the teal bars. On \"dissolved carbon dioxide\" a small grey tag \"5.93: CO₂ from the air (P03)\"; on \"further to rise\" a faint dashed",
+      "motionRole": "explain",
+      "onScreenChange": "the results table writes in the right zone: columns \"portion / start / after / change\"; rows \"buffer + HCl 4.68 → 4.59, −0.09\"; \"buffer + NaOH 4.68 → 4.77, +0.09\"; \"water + HCl 5.93 → 2.35, −3.58\"; \"water + NaOH 5.93 → 11.63, +5.70\". As each row writes, the probe moves on its arc into that grid beaker and the readout settles; a change bar draws beside the row on a shared vertical pH axis (0 to 14): two tiny teal bars for the buffer, two long pale blue bars for water. On \"less than a tenth\" a bracket \"< 0.1\" pins over the teal bars. On \"dissolved carbon dioxide\" a small grey tag \"5.93: CO₂ from the air (P03)\"; on \"further to rise\" a faint dashed line marks pH 7 on the shared axis, with the 5.93 start below it. On \"plunged\" the long bars pulse. On \"resists\" a chip \"resists, not prevents\" writes under the bars. Earlier rows dim. Bright at the end: the four bars and the chip. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build",
+        "NumberTicker",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "why-small",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the three zones.",
+      "teachingReason": "Why the buffer barely moved: Why so little?",
+      "narrationCue": "one tenth / ratio / four point six six",
+      "motionPurpose": "On the spoken cues: Task line: \"Predict the buffer's pH after the acid\". Equation strip: \"[H₃O⁺] = Ka × n(CH₃COOH) ÷ n(CH₃COO⁻)\" (grey, tag \"buffers video\"). Givens, grouped with units: \"each partner: 0.0500 mol/L × 0.0200 L = 0.00100 mol\" | \"HCl: 0.100 mol/L × 0.00100 L = 1.00 × 10⁻⁴ mol\" | \"Ka = 1.8 × 10⁻⁵\". On \"one tenth\" a bracket links the two mole values, \"1.00 × 10⁻⁴ is a tenth of 0.00100\". On \"ethanoate takes up\" the ratio bar",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the three zones. Task line: \"Predict the buffer's pH after the acid\". Equation strip: \"[H₃O⁺] = Ka × n(CH₃COOH) ÷ n(CH₃COO⁻)\" (grey, tag \"buffers video\"). Givens, grouped with units: \"each partner: 0.0500 mol/L × 0.0200 L = 0.00100 mol\" | \"HCl: 0.100 mol/L × 0.00100 L = 1.00 × 10⁻⁴ mol\" | \"Ka = 1.8 × 10⁻⁵\". On \"one tenth\" a bracket links the two mole values, \"1.00 × 10⁻⁴ is a tenth of 0.00100\". On \"ethanoate takes up\" the ratio bar shifts (no separate equation write; C11 owns it): \"CH₃COOH 0.00110 mol | CH₃COO⁻ 0.000900 mol\"; the givens dim. On \"ratio\" the working writes quickly in grey, one line at a time: \"ratio = 0.00110 ÷ 0.000900 = 1.22\"; \"[H₃O⁺] = 1.8 × 10⁻⁵ × 1.22 = 2.2 × 10⁻⁵ mol/L\". On \"four point six six\" a bright line \"pH = 4.66 (2 decimal places: Ka has 2 s.f.)\" writes and a kept chip pins: \"predicted 4.74 → 4.66; measured 4.68 → 4.59: both under 0.1\". Bright at the end: the pH line and the chip. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "dilution",
+      "visualDecision": "adjust",
+      "visualReference": "the pipette and `m6-volumetric-flask-v1.png` take the centre (P04 motion): a coded stream \"10.00 mL buffer\", then the wash bottle fills to the mark, tag \"100.0 mL: ÷ 10\".",
+      "teachingReason": "Property 3: dilution: Now a property an unbuffered acid can't copy.",
+      "narrationCue": "equally / four point seven two / a whole unit",
+      "motionPurpose": "On the spoken cues: On \"equally\" the ratio bar beside the flask shrinks both columns to a tenth of their height together, tag \"ratio still 1 : 1\". On \"four point seven two\" the readout settles on \"4.72\", change bar \"+0.04\" (tiny, teal). On \"a whole unit\" a grey P04 chip slides in: \"P04: HCl 1.08 → 2.04, +0.96\" with its long solid bar beside the tiny teal one.",
+      "motionRole": "explain",
+      "onScreenChange": "the pipette and `m6-volumetric-flask-v1.png` take the centre (P04 motion): a coded stream \"10.00 mL buffer\", then the wash bottle fills to the mark, tag \"100.0 mL: ÷ 10\". On \"equally\" the ratio bar beside the flask shrinks both columns to a tenth of their height together, tag \"ratio still 1 : 1\". On \"four point seven two\" the readout settles on \"4.72\", change bar \"+0.04\" (tiny, teal). On \"a whole unit\" a grey P04 chip slides in: \"P04: HCl 1.08 → 2.04, +0.96\" with its long solid bar beside the tiny teal one. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "NumberTicker",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "capacity",
+      "visualDecision": "new",
+      "visualReference": "one beaker labelled \"diluted buffer, 20.0 mL\" at centre with its ratio bar (both columns short, tagged \"1.00 × 10⁻⁴ mol each\").",
+      "teachingReason": "Property 4: capacity: But the diluted buffer has paid a price.",
+      "narrationCue": "tenth / all / three point four one",
+      "motionPurpose": "On the spoken cues: On \"tenth\" a tag \"a tenth of the partners\". On \"all\" the graduated pipette releases one drop, tag \"1.00 × 10⁻⁴ mol HCl\", and the ethanoate column empties and greys out, tag \"ethanoate used up\". On \"three point four one\" the readout runs down \"4.72 → 3.41\", change bar \"−1.31\" (long, teal outlined in terracotta), beside the original buffer's \"−0.09\" bar. A chip writes \"same pH, less capacity\" with a grey tag \"buffers",
+      "motionRole": "explain",
+      "onScreenChange": "one beaker labelled \"diluted buffer, 20.0 mL\" at centre with its ratio bar (both columns short, tagged \"1.00 × 10⁻⁴ mol each\"). On \"tenth\" a tag \"a tenth of the partners\". On \"all\" the graduated pipette releases one drop, tag \"1.00 × 10⁻⁴ mol HCl\", and the ethanoate column empties and greys out, tag \"ethanoate used up\". On \"three point four one\" the readout runs down \"4.72 → 3.41\", change bar \"−1.31\" (long, teal outlined in terracotta), beside the original buffer's \"−0.09\" bar. A chip writes \"same pH, less capacity\" with a grey tag \"buffers video\" (C11's capacity idea). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "NumberTicker",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "variables",
+      "visualDecision": "new",
+      "visualReference": "the variables card writes in the right zone, one row per cue: \"Independent: buffer or water; acid, base or dilution\"; \"Dependent: change in pH\"; \"Controlled: 20.0 mL portions; 1.00 mL of 0.100 mol/L; 25 °C; same calibrated meter; same rinse routine; same wait for a steady reading\".",
+      "teachingReason": "The variables: So, the variables.",
+      "narrationCue": "independent variable / dependent variable / control",
+      "motionPurpose": "On the spoken cues: As each controlled item is spoken a pen link points to the matching thing (the grid beakers, the graduated pipette, the thermometer chip, the meter, the wash bottle).",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone, one row per cue: \"Independent: buffer or water; acid, base or dilution\"; \"Dependent: change in pH\"; \"Controlled: 20.0 mL portions; 1.00 mL of 0.100 mol/L; 25 °C; same calibrated meter; same rinse routine; same wait for a steady reading\". As each controlled item is spoken a pen link points to the matching thing (the grid beakers, the graduated pipette, the thermometer chip, the meter, the wash bottle). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: shows buffering?",
+      "teachingReason": "Validity, reliability and accuracy: Validity: does the test show buffering?",
+      "narrationCue": "Validity / plunge / Reliability / Accuracy / changes",
+      "motionPurpose": "On the spoken cues: Water control, same dose and volume; fresh portion per test.\" On \"plunge\" the hook's beaker Y returns small beside the card with a long pale blue bar \"4.68 → 2.32\" and a bright chip \"unbuffered control at pH 4.68 (dilute HCl): same pH, no buffering\"; the validity card dims to grey as the chip writes. \"Reliability: repeats agree? Three fresh batches; buffer changes within 0.02.\" (the validity card, chip, beaker Y and",
+      "motionRole": "explain",
+      "onScreenChange": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: shows buffering? Water control, same dose and volume; fresh portion per test.\" On \"plunge\" the hook's beaker Y returns small beside the card with a long pale blue bar \"4.68 → 2.32\" and a bright chip \"unbuffered control at pH 4.68 (dilute HCl): same pH, no buffering\"; the validity card dims to grey as the chip writes. \"Reliability: repeats agree? Three fresh batches; buffer changes within 0.02.\" (the validity card, chip, beaker Y and bar dim to grey as this card writes). \"Accuracy: close to the true pH? Calibrated meter; volumetric and graduated pipettes.\" On \"changes\" a chip pins: \"the same offset in both readings: the change is unaffected\" with \"4.68 → 4.59\" and a ghost \"4.74 → 4.66\" side by side, both \"≈ −0.09\". A small footer, grey throughout: \"NESA glossary: accuracy, how close measurements are to the true value.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.100 mol/L ethanoic acid, sodium ethanoate, HCl: below classification limits\" / \"eye irritation from a splash\" / \"safety glasses (`m5x-safety-glasses-v1.png`); small volumes\"; \"0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses; rinse splashes with water\"; \"glacial ethanoic acid (H226, H314)\" / \"flammable; severe burns; irritating vapour\" / \"teacher only; not on the student bench\"; \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\"; \"glassware, probe bulb\" / \"cuts\" / \"probe in its holder; never stir with it\".",
+      "teachingReason": "The risk assessment: The risk assessment.",
+      "narrationCue": "classification / flammable / filler",
+      "motionPurpose": "On the spoken cues: Grey row: \"waste: dilute, near-neutral after mixing; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Rows dim as each new row writes.",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue: \"0.100 mol/L ethanoic acid, sodium ethanoate, HCl: below classification limits\" / \"eye irritation from a splash\" / \"safety glasses (`m5x-safety-glasses-v1.png`); small volumes\"; \"0.100 mol/L NaOH (0.40 %): just below the EU irritant limit (0.5 %); supplier sheets vary, so check yours\" / \"a splash can still harm eyes and skin: treat it as harmful\" / \"safety glasses; rinse splashes with water\"; \"glacial ethanoic acid (H226, H314)\" / \"flammable; severe burns; irritating vapour\" / \"teacher only; not on the student bench\"; \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\"; \"glassware, probe bulb\" / \"cuts\" / \"probe in its holder; never stir with it\". Grey row: \"waste: dilute, near-neutral after mixing; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Rows dim as each new row writes. Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the aid writes large and handwritten in three short words with small icons: \"Split.\"",
+      "teachingReason": "Memory aid: Here's the method to remember: split, dose, compare.",
+      "narrationCue": "split, dose, compare",
+      "motionPurpose": "On the spoken cues: (the grid filling from the batch), \"Dose.\" (the graduated pipette drop), \"Compare.\" (the tiny teal bar beside the long pale blue bar). Condition tag beneath: \"fresh portion for each test; same volume, same dose; water control\".",
+      "motionRole": "explain",
+      "onScreenChange": "the aid writes large and handwritten in three short words with small icons: \"Split.\" (the grid filling from the batch), \"Dose.\" (the graduated pipette drop), \"Compare.\" (the tiny teal bar beside the long pale blue bar). Condition tag beneath: \"fresh portion for each test; same volume, same dose; water control\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student adds one millilitre of",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A student tests whether a solution is a buffer. She adds 1.00 mL of 0.100 mol/L hydrochloric acid to 20.0 mL of the solution, and the pH changes from 4.68 to 4.59. She then adds 1.00 mL of 0.100 mol/L sodium hydroxide to the same beaker, and the pH returns to 4.68. She concludes that the solution is a buffer that resists both acid and base. Evaluate her method.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no water beaker, no grid.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "no control / same beaker",
+      "motionPurpose": "On the spoken cues: On \"no control\" \"20.0 mL of the solution\" is underlined and a ghost water beaker draws beside it with a green tag \"control: same dose, 20.0 mL water\". On \"same beaker\" \"to the same beaker\" and \"returns to 4.68\" are underlined; answer chip \"fresh portion for the base test\". A chip \"the pH came back, so it resists base too\" fades in and is crossed (caption \"the base just undid the acid\").",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"no control\" \"20.0 mL of the solution\" is underlined and a ghost water beaker draws beside it with a green tag \"control: same dose, 20.0 mL water\". On \"same beaker\" \"to the same beaker\" and \"returns to 4.68\" are underlined; answer chip \"fresh portion for the base test\". A chip \"the pH came back, so it resists base too\" fades in and is crossed (caption \"the base just undid the acid\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A student mixes 30.0 mL of 0.100 mol/L ethanoic acid with 10.0 mL of 0.100 mol/L sodium ethanoate at 25 °C.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more. A student mixes thirty millilitres of",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student mixes 30.0 mL of 0.100 mol/L ethanoic acid with 10.0 mL of 0.100 mol/L sodium ethanoate at 25 °C. Calculate the expected pH of the mixture. Ka(CH₃COOH) = 1.8 × 10⁻⁵.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ratio bar, no equation strip.",
+      "motionTools": [
+        "bar fill",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "on \"zero point zero zero three zero zero\" \"30.0 mL of 0.100 mol/L\" is underlined and \"n(CH₃COOH) = 0.100 × 0.0300 = 3.00 × 10⁻³ mol\" writes; then \"10.0 mL of 0.100 mol/L\" is underlined and \"n(CH₃COO⁻) = 0.100 × 0.0100 = 1.00 × 10⁻³ mol\"; ratio bar draws 3 : 1.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "zero point zero zero three zero zero / five point four times ten to the minus five / four point two seven",
+      "motionPurpose": "On the spoken cues: On \"five point four\" \"Ka = 1.8 × 10⁻⁵\" is underlined and \"[H₃O⁺] = 1.8 × 10⁻⁵ × 3.00 = 5.4 × 10⁻⁵ mol/L\" writes. On \"four point two seven\" \"pH = −log(5.4 × 10⁻⁵) = 4.27\" writes and an answer chip pins. On \"equal amounts\" a chip \"pH = pKa = 4.74\" fades in and is crossed (caption \"only when the moles are equal\").",
+      "motionRole": "explain",
+      "onScreenChange": "on \"zero point zero zero three zero zero\" \"30.0 mL of 0.100 mol/L\" is underlined and \"n(CH₃COOH) = 0.100 × 0.0300 = 3.00 × 10⁻³ mol\" writes; then \"10.0 mL of 0.100 mol/L\" is underlined and \"n(CH₃COO⁻) = 0.100 × 0.0100 = 1.00 × 10⁻³ mol\"; ratio bar draws 3 : 1. On \"five point four\" \"Ka = 1.8 × 10⁻⁵\" is underlined and \"[H₃O⁺] = 1.8 × 10⁻⁵ × 3.00 = 5.4 × 10⁻⁵ mol/L\" writes. On \"four point two seven\" \"pH = −log(5.4 × 10⁻⁵) = 4.27\" writes and an answer chip pins. On \"equal amounts\" a chip \"pH = pKa = 4.74\" fades in and is crossed (caption \"only when the moles are equal\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Weak acid + conjugate base, measured with pipettes; make enough.\"",
+      "teachingReason": "Decision rule and handoff: So, to prepare and test a buffer: mix a weak acid and its conjugate base in measured amounts, predict its pH from the ratio, then split it, dose it alongside water, and compare the changes.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Predict: [H₃O⁺] = Ka × n(HA) ÷ n(A⁻).\" \"3 Split into fresh portions; water control; same dose.\" \"4 Compare changes: acid, base, dilution, capacity.\" On \"Next\" a chip \"Next: titration to find an unknown concentration\" appears with `m6-burette-clamp-stand-v1.png` small.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Weak acid + conjugate base, measured with pipettes; make enough.\" \"2 Predict: [H₃O⁺] = Ka × n(HA) ÷ n(A⁻).\" \"3 Split into fresh portions; water control; same dose.\" \"4 Compare changes: acid, base, dilution, capacity.\" On \"Next\" a chip \"Next: titration to find an unknown concentration\" appears with `m6-burette-clamp-stand-v1.png` small. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p05-learning-review.md",
+      "sha256": "1aa79c32189992171ad53d1152a1e931df0a9dc7dfbc7e9928cbe42a517e68f0"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p05-claude-science-check.md",
+      "sha256": "449804f83708ab31ed37049f554c76e2ddd2ac7a1fcce493c527e6ff179ed153"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

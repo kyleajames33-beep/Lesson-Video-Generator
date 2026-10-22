@@ -1,0 +1,160 @@
+{
+  "title": "How can the same formula make different molecules? Chain, position and functional group isomers, and finding every isomer without duplicates",
+  "subtitle": "Ethanol and methoxymethane are made of exactly the same atoms, yet one is a liquid and the other a gas. How can one molecular formula make different molecules, and how do you tell which kind of isomer you are looking at?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 2,
+  "lessonIntent": "defining structural isomers; classifying a pair as chain, position or functional group isomers with a reason, including saturated and unsaturated hydrocarbons; drawing every isomer of a small alkane systematically and rejecting duplicates by naming. No boiling point explanations for branching (chem-m7-c03), no homologous series (chem-m7-c03), no further family naming, no stereoisomers.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Ethanol, the alcohol in this bottle, has the formula C two H six O. Methoxymethane, used as a propellant in some spray cans, has exactly the same formula: two carbons, six hydrogens, one oxygen. Yet ethanol boils at seventy eight degrees, and methoxymethane at about minus twenty five, so it's a gas at room temperature. Same atoms, different substances. So how can one formula make different molecules?"
+      }
+    },
+    {
+      "id": "formula-vs-structure",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A molecular formula only counts the atoms. It doesn't show how they're joined. In ethanol, the oxygen sits at the end of the chain with a hydrogen on it: an O H group. In methoxymethane, the oxygen sits between the two carbons. Compounds with the same molecular formula, but their atoms joined in a different order, are called structural isomers. They're different compounds, with different names and different properties. In the last video, every name pointed to one structure. Now one formula can point to several."
+      }
+    },
+    {
+      "id": "why-arrangement-matters",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "And the arrangement changes the properties. That O H lets ethanol molecules hydrogen bond to each other, which you met in Year 11: the hydrogen on one molecule's oxygen is attracted to the oxygen of the next. Methoxymethane has no hydrogen on its oxygen, so its molecules can't hydrogen bond to each other. They have the same atoms, so they're about the same size. The hydrogen bonds make the difference. Weaker attractions between molecules mean a lower boiling point. Isomers come in three kinds, and the kind depends on what changed."
+      }
+    },
+    {
+      "id": "chain-isomers",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, chain isomers. The carbon skeleton changes, but the family, here the alkanes, stays the same. Butane is four carbons in a row. Take a carbon off the end and hang it on the middle, and you get two-methylpropane. Both are C four H ten, both are alkanes. Camping gas often contains both, and they boil at different temperatures. The next video explains why branching does that."
+      }
+    },
+    {
+      "id": "position-isomers",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second, position isomers. The skeleton stays the same, and so does the family. Only the group moves to a different carbon. In but-one-ene, the double bond starts at carbon one. In but-two-ene it starts at carbon two. The same goes for an O H group. The ending ol means an O H, which is why ethanol ends in ol, and the number says which carbon carries it: propan-one-ol and propan-two-ol are position isomers too. Moving a group can change how it reacts, and you'll see later that these two alcohols give different products."
+      }
+    },
+    {
+      "id": "functional-group-isomers",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Third, functional group isomers. A functional group is the part of a molecule that gives its family its reactions, like a double bond, or an O H. In these isomers, the group itself is different. Ethanol and methoxymethane are one pair. Here's a pair of hydrocarbons. But-one-ene is C four H eight, with a double bond. Join the four carbons into a ring instead, and you get cyclobutane. It's also C four H eight, but it has only single bonds, so it's in a different family: the cycloalkanes, rings of carbons with only single bonds. One is unsaturated, the other saturated."
+      }
+    },
+    {
+      "id": "why-group-matters",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "And a different group means different chemistry. The double bond is where an alkene reacts, so cyclobutane, with no double bond, won't react the same way. That's why chemists care which isomer they have, and later you'll meet a simple test that tells these two apart. So the group sets the family's reactions, and the full arrangement sets the name."
+      }
+    },
+    {
+      "id": "classify-a-pair",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to classify a pair, ask three questions. Same molecular formula? If not, they aren't isomers at all. Butane and but-one-ene, for example, aren't isomers: but-one-ene has two fewer hydrogens. Different family? Then they're functional group isomers. Same family? Then check whether the skeleton changed, or only the group's position. Watch the classic slip: propan-one-ol and propan-two-ol aren't functional group isomers. Both are alcohols. The group moved, it didn't change."
+      }
+    },
+    {
+      "id": "find-every-isomer",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To find every isomer of a formula, work systematically. For C five H twelve, start with the longest chain: pentane. Shorten the chain by one, and put that carbon back as a branch on carbon two: two-methylbutane. Shorten it again, and both spare carbons go on the middle carbon: two, two-dimethylpropane. Shorten once more, to two carbons, and any branch you add just makes a longer chain again. So that's all three."
+      }
+    },
+    {
+      "id": "spot-duplicates",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But watch for duplicates. Bending a chain on the page doesn't make a new molecule: this bent drawing is still pentane. A methyl on an end carbon just makes the chain longer, so one-methylbutane is pentane again. And three-methylbutane is two-methylbutane counted from the wrong end. The test is to name every structure. Same name, same molecule."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So remember: same formula, different arrangement. Isomers always have the same atoms, so check the formula first. Then ask what changed: the chain, the position, or the group."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Classify each pair as chain, position or functional group isomers. Pent-one-ene and pent-two-ene. Pentane and two, two-dimethylpropane. Cyclopentane and pent-one-ene. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First pair: same chain, same double bond, it just moved, so position isomers. Second pair: both alkanes, with a different skeleton, so chain isomers. Cyclopentane is a cycloalkane, a ring with no double bond, so it's a different family from pent-one-ene: functional group isomers. Calling the first pair chain isomers is the slip. The chain didn't change."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A student draws these three structures, and says they show three different isomers of C five H twelve. Evaluate the student's statement. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Name each one, and trace the longest chain. A and B are both pentane. B is the same chain drawn with a bend. C is two-methylbutane. So the statement is incorrect: the drawings show only two different isomers. The third, two, two-dimethylpropane, isn't drawn. Counting a bent drawing as a new molecule is the slip."
+      }
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So isomers share a formula, but not a structure, and the structure decides the name and the properties. Next: how carbon's bonds give hydrocarbons their shapes, and why chain length and branching change their boiling points."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6g02b/lesson.json",
+    "lessonSha256": "c01d99d3b9e073566027a02f25bbb407a236c6a8d5ada4ff16c39bb0d2dfc27d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From skills-s04: assess and evaluate both need a judgement with criteria and evidence; evaluate leans on criteria, assess on how far or how much; memory aid \"No verdict without a reason, no reason without evidence.\" From b12: three biodiversity levels; an effect is a change from a baseline; one variety everywhere narrows genetic diversity. From b13: weigh with conditions; \"Verdict, provided that ...\"; reversibility. From b19: \"Better than what? Shown how? Who gets it?\"; released organisms against contained ones. From b16: somatic cell nuclear transfer; the clone matches the nucleus donor, mitochondria come from the egg; low success rates, pregnancy losses; frozen ferret cells returned lost alleles. From b15: count the fathers (alleles come from the breeding animals, not the headcount). From b10: stakeholders; animal welfare; consequences, distribution and principle objections. From b11: how far evidence has got; trials are not proof. Not assumed: xenotransplantation by name (screen only), porcine endogenous retroviruses by name (screen only; spoken \"copies of a virus built into the pig's DNA\").",
+    "startsWith": "An unfamiliar biotechnology case and a judgement verb. The video opens: Some of the biggest HSC Biology questions ask you to assess or evaluate a biotechnology.",
+    "stopsAfter": "assessing the effect of a switch to insect-resistant maize on a district's biodiversity from data (species diversity up compared with sprayed maize; crop genetic diversity down, so the effect is mixed; resistance alleles becoming more common in the pest, an allele-frequency change that threatens the species gain; a verdict to a moderate extent with a checkable condition; the ecosystem level not judged without data); evaluating a plan to clone a rare sheep species from frozen cells (clones of several donors can return lost alleles; donors, not clone numbers, set the gain; mitochondria come from the domestic egg; low success and surrogate welfare costs; breeding management and habitat protection as the alternative, which removes threats but cannot restore lost alleles; a conditional verdict); assessing gene-edited pig kidneys (a large need and a plausible benefit, with early evidence only; costs to the pigs, risks to early patients and a possible virus risk to others; objections in principle; a conditional verdict); recognising a weak answer that describes the organism instead of biodiversity.",
+    "nextLesson": "why a technology that works scientifically can still have little lasting effect on a population (route entry bio-m6-b20)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-g02.md"
+  ],
+  "teaching": {
+    "task": "When an HSC question asks you to assess or evaluate a biotechnology, how do you turn what you know into a judgement that links the technology to biodiversity, or to the people and animals affected, and back it with evidence from the question?",
+    "causalExplanation": "Why sprays falling raises insect species (fewer non-target insects killed, 2c); why fewer varieties is a genetic loss (narrower crop gene pool, one disease could spread, 2c); why rising survivors matter (resistance alleles becoming more common, an allele-frequency change rather than lost diversity; sprays could return and reverse the gain, 2c, 2d); why the alternative cannot replace cloning entirely (breeding and habitat protection cannot restore lost alleles, 3c); why clones of frozen donors can add diversity (each clone carries its donor's alleles, absent from the herd, 3b); why the number of donors, not clones, sets the gain (3b); why welfare costs are high (2 in 100 succeed; many surrogate pregnancies fail, 3c); why cloning alone cannot protect the species (habitat threats remain, 3c); why pig kidneys are not yet proven (few patients, months of function, 4b); why viral copies were inactivated (a virus could spread beyond the patient, 4c).",
+    "conversationalApproach": "The biggest HSC Biology questions ask students to assess or evaluate a biotechnology, and markers want the technology linked to its effect on biodiversity or on the people and animals affected, so each walkthrough builds a verdict, criteria and evidence from the question. Q1 (insect-resistant maize) reads the verb as how far, takes the species and genetic levels as criteria against the sprayed-maize baseline, finds a mixed change (fewer sprays raise insect species while fewer varieties narrow the crop gene pool), adds the refuge condition and closes the loop, then sets a weak organism-only answer beside the strong one; Q2 (a cloned wild sheep) evaluates against the three given criteria, with each clone bringing back its donor's alleles, a high welfare cost to the domestic ewes and a conditional verdict; Q3 (kidneys from gene-edited pigs) sizes the benefit against waiting for a human kidney, names who carries each ethical risk and gives a verdict to a moderate extent with its conditions. Q2 and Q3 end with a spoken, crossed classic mistake, and the decision board gives the moves for biodiversity and ethics questions.",
+    "openingDecision": "Some of the biggest HSC Biology questions ask you to assess or evaluate a biotechnology. Markers want the technology linked to its effect on biodiversity, not just on the organism, and ethics answers need the same link to the people and animals involved. You have the routine: a verdict, the criteria you judge by, and evidence from the question. Here are three HSC-style questions. Plan each one, then we'll build the answer.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds; the verdict strip dims.",
+    "curriculumScope": "Practice and transfer only; the ledger rows stay with the core videos, and G02 adds practice rows."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "The skills kit layout (`src/explainer/lessons/skills-shared/`), as in skills-s04: the `QuestionCard` on top (`ZONE.card`) with its annotation layer (`Ann` verb, marks, given, constraint, ring, tag; `CardDim`), the `AnswerBox` below (`ZONE.box`) with margin ticks and a `MarkCounter`, the side column (`ZONE.side`) for plates and the small coded diagrams, and s04's `VerdictStrip` (verdict, criteria, evidence, verdict again) as the mini strip at the far left (`ZONE.strip`), lighting the row each scene builds and dimming to an outline during every countdown. s04's `RoleTag` sits in the answer margin beside each row (\"verdict\" amber, \"criterion\" teal, \"evidence\" ink, \"limitation\" grey, plus one new tag \"condition\", amber outline). Q1's mistake scene uses `WeakStrongPanel` (the strong answer moves aside as \"Answer B\"; the weak answer writes on as \"Answer A\" with its own counter and a `LostMarksTag`). Each answer row is short (one line, two at most); filled rows dim to grey when the next row writes. When a walkthrough starts, the card shrinks to about 0.7 and each given is underlined in amber in the question text at the cue where it is used (no givens card); a question's type badge (\"Biodiversity\", \"Cloning\", \"Ethics\") stays hidden during each attempt. Earlier questions clear before the next card writes on. Painted plates for real things: `m6-maize-hybrid-rows-v1.png` and `m6-helicoverpa-larva-boll-v1.png` (Q1; the larva plate is shown as \"a caterpillar pest\", not on maize; see Assets), new `m6-wild-mountain-sheep-v1.png`, `m6-white-sheep-v1.png` (the domestic surrogate) and `m6-insemination-straw-tank-v1.png` (as the frozen cell store) (Q2), new `m6-pig-side-v1.png` and `m8-kidney-nephron-v1.png` (Q3). Coded abstract diagrams only: b12's levels mini-board, a gene-pool ring cluster (b08 and b12 style), a small viral-copy strip, arrows. No people, no hands, no faces; patients and surgeons are never drawn. Never used: `m6-hand-pollination-v1.png` and `m6-agricultural-liming-v1.png` (retired hand plates). Plates scale proportionally, never stretched. Clutter rule (owner, 19 Oct): besides the question strip and the verdict strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands.",
+    "transitionPlan": "The heading writes on and a word-for-word marking feedback chip writes on \"biodiversity\"; each question opens on a fresh board with the type badge hidden while the worded card and its data table write, with the maize, wild sheep or pig plate small at its corner; the walkthrough shrinks the card, highlights the verb with its meaning chip and underlines each given in amber as answer rows write with role tags (verdict, criterion, evidence, condition); the refuge strip, the embryo grid and three coded bearer icons build at their cues; the WeakStrongPanel moves the strong answer aside and writes the weak one with its missing roles; each classic mistake writes as a chip and takes a grey scribble cross; the verdict strip returns full size as the three-column decision board, row by row; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Verdict, criteria, evidence: biotechnology\" writes on.",
+      "teachingReason": "Hook: Some of the biggest HSC Biology questions ask you to assess or evaluate a biotechnology.",
+      "narrationCue": "biodiversity / verdict / criteria / evidence",
+      "motionPurpose": "On the spoken cues: On \"biodiversity\" a short quotation chip writes, word for word from the NESA feedback: \"linking the biotechnology to its effect on biodiversity, rather than its effect on the organism\" with a `GreyTag` \"NESA marking feedback, Biology 2023 Q34\". On \"ethics answers\" a small grey tag \"HSCScience",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Verdict, criteria, evidence: biotechnology\" writes on. On \"biodiversity\" a short quotation chip writes, word for word from the NESA feedback: \"linking the biotechnology to its effect on biodiversity, rather than its effect on the organism\" with a `GreyTag` \"NESA marking feedback, Biology 2023 Q34\". On \"ethics answers\" a small grey tag \"HSCScience advice for ethics items\" writes beside it, so the extension is not read as part of the quotation. On \"verdict\", \"criteria\" and \"evidence\" the `VerdictStrip` builds at full size, one row per cue (balance, ruler and magnifier icons; grey tag \"skills-s04\"), with the memory aid small beneath: \"No verdict without a reason, no reason without evidence.\" On \"three HSC-style questions\" three small numbered card thumbnails fan out (maize rows, a wild sheep, a pig) with one shared tag line \"HSC-style questions, written for HSCScience\". The strip shrinks to the far left; the quotation chip fades. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: insect-resistant maize) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. A farming district switched from ordinary",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: insect-resistant maize)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. `m6-maize-hybrid-rows-v1.png` sits small at the card's upper left. The card writes on as an exam question: \"A farming district replaced conventional maize, sprayed with insecticide against caterpillar pests, with an insect-resistant maize. The insect-resistant maize produces a protein that kills caterpillars that feed on it. The table shows data for the district before the change and ten years after it.\" `QTable`: \"Measure | Before (sprayed conventional maize) | Ten years after (insect-resistant maize)\"; \"Insecticide sprays per season | 6 | 1\"; \"Insect species recorded in maize fields | 17 | 25\"; \"Maize varieties grown in the district | 15 | 4\"; \"Farms planting refuge strips of non-resistant maize | not applicable | 3 in 10\"; \"Caterpillars surviving on resistant maize in laboratory tests | not applicable | none until year 7, rising since year 8\". Grey chip: \"data are illustrative\". Demand: \"Assess the effect of this change on biodiversity in the district. (6 marks)\". An eight-line `AnswerBox`, counter \"0 / 6\". Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the verdict strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-plan",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks; type badge \"Biodiversity\".",
+      "teachingReason": "Verb, levels, baseline: Assess means judge how far, so your verdict says how much biodiversity changed, and which way.",
+      "narrationCue": "Assess / levels / sprayed maize / genetic",
+      "motionPurpose": "On the spoken cues: On \"Assess\" the verb gets a highlighter and a chip \"assess: how far, which way\" (grey tag \"s04\"); the strip's \"verdict\" row lights. On \"levels\" b12's levels mini-board draws small in the side column (rows genetic, species, ecosystem; grey tag \"b12: which level? compared with what?\"); the strip's",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks; type badge \"Biodiversity\". On \"Assess\" the verb gets a highlighter and a chip \"assess: how far, which way\" (grey tag \"s04\"); the strip's \"verdict\" row lights. On \"levels\" b12's levels mini-board draws small in the side column (rows genetic, species, ecosystem; grey tag \"b12: which level? compared with what?\"); the strip's \"criteria\" row lights. On \"sprayed maize\" \"sprayed with insecticide\" underlines amber and a baseline chip \"baseline: sprayed maize\" pins under the board. On \"sort the evidence\" the strip's \"evidence\" row lights: the \"sprays\" and \"insect species\" table rows take teal \"species\" tags; on \"genetic\" the \"varieties\" row takes a plum \"genetic (crop)\" tag; on \"genetic change in the pest\" the \"caterpillars surviving\" row takes a grey outlined \"allele change (pest)\" tag, deliberately not the plum diversity tag. The ecosystem row of the mini-board stays grey with a small \"?\" (no data). The assess chip fades.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-build",
+      "visualDecision": "new",
+      "visualReference": "answer rows write, each with a `RoleTag`: (1) on \"Biodiversity rose\" \"Species diversity increased but the crop's genetic diversity decreased, so the effect is mixed.\" (verdict; dashed slot \"condition to come\").",
+      "teachingReason": "Verdict and two levels: Biodiversity rose at the species level, but the crop's genetic diversity fell, so the change is mixed.",
+      "narrationCue": "six to one / fifteen to four / rising",
+      "motionPurpose": "On the spoken cues: (2) On \"six to one\" the \"6\" and \"1\" underline amber, then \"17\" and \"25\"; row \"Species level: sprays fell from 6 to 1, so fewer non-target insects were killed; insect species rose from 17 to 25.\" (criterion + evidence), tick, \"1 / 6\", then \"2 / 6\" as the cause clause completes. A small coded insect",
+      "motionRole": "explain",
+      "onScreenChange": "answer rows write, each with a `RoleTag`: (1) on \"Biodiversity rose\" \"Species diversity increased but the crop's genetic diversity decreased, so the effect is mixed.\" (verdict; dashed slot \"condition to come\"). (2) On \"six to one\" the \"6\" and \"1\" underline amber, then \"17\" and \"25\"; row \"Species level: sprays fell from 6 to 1, so fewer non-target insects were killed; insect species rose from 17 to 25.\" (criterion + evidence), tick, \"1 / 6\", then \"2 / 6\" as the cause clause completes. A small coded insect glyph cluster in the side column grows from a few to more (tag \"fewer sprays: more species\"). (3) On \"fifteen to four\" \"15\" and \"4\" underline; row \"Genetic level (crop): varieties fell from 15 to 4, so the crop's gene pool narrowed and one disease could affect most of it.\" Tick, \"3 / 6\". The mini-board's genetic arrow points down (grey tag \"b12: the banana problem returns\"). (4) On \"rising\" \"rising since year 8\" underlines; row \"Pest: surviving caterpillars rising: resistance alleles becoming more common; a threat to the species gain.\" (evidence, with a grey \"allele frequency, not lost diversity\" tag that fades on the next cue). Tick, \"4 / 6\". A thin dashed arrow runs from row 4 to the insect glyph cluster (tag \"threatens the species gain\"). Filled rows dim as the next writes.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-weigh",
+      "visualDecision": "new",
+      "visualReference": "on \"three farms in ten\" \"3 in 10\" underlines amber; a small coded refuge strip beside the maize thumbnail shows three of ten farm squares shaded.",
+      "teachingReason": "Condition and close the loop: Only three farms in ten plant refuges, so resistance can keep spreading.",
+      "narrationCue": "three farms in ten / mixed / provided",
+      "motionPurpose": "On the spoken cues: On \"spraying returns\" the insect cluster shrinks back a little with a dashed outline (tag \"gain reversible\"). Row (5) \"Limitation: refuges on only 3 in 10 farms, so resistance may spread, sprays may return and the species gain may be lost.\" (limitation, grey), tick, \"5 / 6\". On \"mixed\" row (6)",
+      "motionRole": "explain",
+      "onScreenChange": "on \"three farms in ten\" \"3 in 10\" underlines amber; a small coded refuge strip beside the maize thumbnail shows three of ten farm squares shaded. On \"spraying returns\" the insect cluster shrinks back a little with a dashed outline (tag \"gain reversible\"). Row (5) \"Limitation: refuges on only 3 in 10 farms, so resistance may spread, sprays may return and the species gain may be lost.\" (limitation, grey), tick, \"5 / 6\". On \"mixed\" row (6) writes: \"Overall, mixed: species diversity up to a moderate extent, crop genetic diversity down;\" (verdict), and on \"provided\" it continues \"the gain lasts provided refuges are planted; more varieties with the trait would reduce the loss.\" (condition), tick, \"6 / 6\"; a `PenArrow` curves from row 6 up to row 1's verdict (\"mixed\" in both) and the dashed slot fills. On \"ecosystem effects\" the mini-board's grey ecosystem \"?\" pulses once (tag \"no data: not judged\"). Hold about 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q1-weak",
+      "visualDecision": "new",
+      "visualReference": "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"6 / 6\" and its role tags); the weak answer writes on as \"Answer A\".",
+      "teachingReason": "Weak against strong: Here's a weaker answer.",
+      "narrationCue": "the organism and the farm / names a level / no real verdict",
+      "motionPurpose": "On the spoken cues: On \"the organism and the farm\" \"kills caterpillars\" and \"bigger harvests\" ring grey with a small tag \"organism, not biodiversity\". On \"names a level\" three dashed empty slots appear under Answer A: \"which level?\", \"data?\", \"verdict?\". One tick lands beside \"pests could become resistant\" (counter \"1",
+      "motionRole": "explain",
+      "onScreenChange": "`WeakStrongPanel`: the strong answer moves aside as \"Answer B\" (keeps \"6 / 6\" and its role tags); the weak answer writes on as \"Answer A\". On \"the organism and the farm\" \"kills caterpillars\" and \"bigger harvests\" ring grey with a small tag \"organism, not biodiversity\". On \"names a level\" three dashed empty slots appear under Answer A: \"which level?\", \"data?\", \"verdict?\". One tick lands beside \"pests could become resistant\" (counter \"1 / 6\"; grey label \"HSCScience marking guide (illustrative)\"). `LostMarksTag`: \"-5: no biodiversity level, no data, no judgement\". On \"no real verdict\", once the lost-marks tag has settled, the chip \"bigger harvests = more biodiversity\" writes on and takes a grey scribble cross (grey tag \"b19: a gain in harvest isn't a gain in biodiversity\"; the line is no longer spoken, Revision 2 reserve trim). Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: a cloned wild sheep) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. A rare wild sheep species survives",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: a cloned wild sheep)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. New `m6-wild-mountain-sheep-v1.png` sits small at the card's upper left, `m6-insemination-straw-tank-v1.png` beside \"frozen\" (grey label \"cell store\"), `m6-white-sheep-v1.png` beside \"domestic sheep\". The card writes on: \"A rare wild sheep species survives as one population of about 300 animals, all descended from 8 founders. A cell bank holds frozen skin cells taken from 10 wild sheep of this species that died 30 years ago. These 10 animals carried alleles that are no longer found in the living population. Scientists plan to use somatic cell nuclear transfer, with eggs and surrogate mothers from domestic sheep. In past cloning of this kind, about 2 of every 100 embryos transferred to surrogates produced a live lamb.\" Grey chip: \"constructed example\". Demand: \"Evaluate this plan as a way to protect the species. In your answer, refer to genetic diversity, animal welfare and one alternative. (7 marks)\". An eight-line `AnswerBox`, counter \"0 / 7\". Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "counter and bar fill",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-genetic",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks; type badge \"Cloning\".",
+      "teachingReason": "Mechanism, then genetic diversity: Evaluate, and the question hands you three criteria.",
+      "narrationCue": "Evaluate / cell donor / lost",
+      "motionPurpose": "On the spoken cues: On \"Evaluate\" the verb highlights (chip \"evaluate: against criteria\", grey tag \"s04\") and the three criteria in the demand (\"genetic diversity\", \"animal welfare\", \"one alternative\") take teal brackets; the strip's \"criteria\" row lights. On \"the mechanism\" and \"cell donor\" b16's nuclear-transfer",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks; type badge \"Cloning\". On \"Evaluate\" the verb highlights (chip \"evaluate: against criteria\", grey tag \"s04\") and the three criteria in the demand (\"genetic diversity\", \"animal welfare\", \"one alternative\") take teal brackets; the strip's \"criteria\" row lights. On \"the mechanism\" and \"cell donor\" b16's nuclear-transfer strip runs small in the side column (frozen cell nucleus into an emptied domestic egg; grey tag \"b16: the clone matches the nucleus donor\"). On \"the mechanism\" (continuing) \"8 founders\" underlines and a gene-pool ring cluster draws with eight colours of rings (unspoken; the card carries the founder count). On \"lost\" \"no longer found in the living population\" and \"10 wild sheep\" underline; ten new ring colours drop into the cluster one by one (tag \"lost alleles return\"). Row (1) \"Mechanism: each clone's nuclear DNA matches its donor, so it carries that donor's alleles.\" Tick, \"1 / 7\". Row (2) \"Genetic diversity: clones of 10 donors carry alleles lost from the herd; bred into the herd, they widen the gene pool.\" Tick, \"2 / 7\". The nuclear-transfer strip fades out after row (2) writes. On \"count the donors\" the plan's cluster keeps its ten new colours (dimmed, untouched), and a separate small side cluster draws beside it with a grey label \"if all 10 clones came from 1 donor\": ten clone glyphs that all share one colour, adding a single new colour to a copy of the herd ring (screen line \"count the donors, not the clones\", grey tag \"like b15: count the fathers\"). The side cluster fades when row (3) writes. On \"no more alleles than one\" the side cluster fades, and (unspoken; the mitochondria sentence is a Revision 2 reserve trim) a small egg glyph labelled \"domestic egg\" sends a tiny mitochondrion dot into the clone glyph (grey tag \"mtDNA: mainly domestic sheep\"). Row (3) \"Limit: diversity gained depends on the number of donors; mitochondrial DNA comes mainly from domestic sheep.\" Tick, \"3 / 7\". Filled rows dim.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-welfare",
+      "visualDecision": "adjust",
+      "visualReference": "on \"two in a hundred\" \"about 2 of every 100 embryos\" underlines amber; a coded grid of 100 small embryo dots draws, two turn amber, the rest grey (tag \"98 fail\"); `m6-white-sheep-v1.png` sits beside it (grey tag \"domestic surrogates\").",
+      "teachingReason": "Welfare, alternative, verdict: Next, welfare.",
+      "narrationCue": "two in a hundred / habitat / provided",
+      "motionPurpose": "On the spoken cues: Row (4) \"Welfare: only about 2 in 100 embryos give a lamb, so many surrogate ewes undergo embryo transfer and failed pregnancies.\" Tick, \"4 / 7\". On \"habitat\" \"one alternative\" in the demand rings; a small grey icon pair (a breeding-plan doodle of linked rings, a landscape outline) writes; row (5)",
+      "motionRole": "explain",
+      "onScreenChange": "on \"two in a hundred\" \"about 2 of every 100 embryos\" underlines amber; a coded grid of 100 small embryo dots draws, two turn amber, the rest grey (tag \"98 fail\"); `m6-white-sheep-v1.png` sits beside it (grey tag \"domestic surrogates\"). Row (4) \"Welfare: only about 2 in 100 embryos give a lamb, so many surrogate ewes undergo embryo transfer and failed pregnancies.\" Tick, \"4 / 7\". On \"habitat\" \"one alternative\" in the demand rings; a small grey icon pair (a breeding-plan doodle of linked rings, a landscape outline) writes; row (5) \"Alternative: managed breeding and habitat protection remove threats, but cannot restore lost alleles.\" Tick, \"5 / 7\". On \"can't bring back lost alleles\" the plan's ten new ring colours in the dimmed cluster brighten briefly (tag \"only the frozen cells hold these\"), which is why the verdict keeps cloning as a small trial alongside habitat protection. On \"the verdict\" row (6) \"Overall, worthwhile to a moderate extent as a small trial alongside habitat protection,\" (verdict) and on \"provided\" row (6) continues \"provided the clones survive and breed into the herd.\" (condition), ticks \"6 / 7\", \"7 / 7\"; a `PenArrow` loops to the strip's \"verdict\" row. Hold about 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "tick",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"clones are identical, so cloning can't add diversity\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is writing that clones are identical, so cloning can never increase genetic diversity.",
+      "narrationCue": "the classic mistake / identical to its donor",
+      "motionPurpose": "On the spoken cues: On \"identical to its donor\" one donor glyph and its clone glyph link with an \"=\" while the herd cluster beside them shows different colours (tag \"same as donor, new to the herd\"). One crossed mistake only. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"clones are identical, so cloning can't add diversity\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"identical to its donor\" one donor glyph and its clone glyph link with an \"=\" while the herd cluster beside them shows different colours (tag \"same as donor, new to the herd\"). One crossed mistake only. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: kidneys from gene-edited pigs) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. Thousands of people with kidney failure",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: kidneys from gene-edited pigs)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. New `m6-pig-side-v1.png` sits small at the card's upper left, `m8-kidney-nephron-v1.png` beside it. The card writes on: \"Many thousands of people with kidney failure wait years for a kidney from a human donor, and some die while waiting. Scientists have gene-edited pigs so that their kidneys are more suitable for transplant into humans: three pig genes whose products trigger rapid rejection by the human immune system were inactivated, seven human genes that help control immune and clotting reactions were added, and copies of a virus built into the pig genome were inactivated. The pigs are raised in sealed, disease-controlled facilities. Since 2024, a small number of patients have received these kidneys with special permission. Clinical trials of other gene-edited pig kidneys have also begun. One patient's kidney worked for about nine months before it was removed; others are still being followed.\" Demand: \"Assess the use of gene-edited pigs as a source of kidneys for transplant. Refer to benefits and ethical issues. (6 marks)\". An eight-line `AnswerBox`, counter \"0 / 6\". Nothing answer-bearing. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "counter and bar fill",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-benefit",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks; type badge \"Ethics\".",
+      "teachingReason": "Size the benefit, then the evidence: Assess means judge how far, so size the benefit first.",
+      "narrationCue": "Assess / months / shown",
+      "motionPurpose": "On the spoken cues: On \"Assess\" the verb highlights (chip \"how far?\"). b19's three test chips appear small in the side column (grey tag \"b19\"). On \"waiting years\" \"wait years\" and \"some die while waiting\" underline amber; first test chip fills \"waiting list: large need\" (amber filled dot). On \"when it's needed\" a",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks; type badge \"Ethics\". On \"Assess\" the verb highlights (chip \"how far?\"). b19's three test chips appear small in the side column (grey tag \"b19\"). On \"waiting years\" \"wait years\" and \"some die while waiting\" underline amber; first test chip fills \"waiting list: large need\" (amber filled dot). On \"when it's needed\" a small coded supply line runs from the pig plate to a kidney glyph. On \"months\" \"a small number of patients\" and \"worked for about nine months before it was removed\" underline; second chip fills \"few patients, months\" (amber half dot); a short coded evidence ladder (b11 style: \"idea\", \"lab\", \"first patients\", \"proven\") lights to \"first patients\" (grey tag \"b11: how far has the evidence got?\"). Row (1) \"Benefit: could supply kidneys for the many people waiting, a large benefit if it works.\" (criterion), tick \"1 / 6\". Row (2) \"Evidence: few patients; kidneys worked for months, not years, so the benefit is not yet shown.\" (evidence), tick \"2 / 6\". On \"shown\" the ladder's \"proven\" rung stays grey with a small \"not yet\" (screen line \"promising is not proven\", grey tag \"b11\").",
+      "motionTools": [
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-ethics",
+      "visualDecision": "new",
+      "visualReference": "three small coded bearer icons build in the side column, each on its cue, with no people drawn: a pig glyph (\"pigs\"), a hospital-bed outline with no figure (\"early patients\"), a ring of small dots (\"others\").",
+      "teachingReason": "Who carries each risk: Now the ethical issues, and who carries each one.",
+      "narrationCue": "pigs / patients / other people / principle",
+      "motionPurpose": "On the spoken cues: On \"pigs\" \"raised in sealed, disease-controlled facilities\" underlines; row (3) \"Animal welfare: pigs are bred, confined and killed for organs.\" (criterion), tick \"3 / 6\". On \"agree freely\" row (4) \"Patients: high risk in early use, so informed, voluntary consent is essential.\" Tick \"4 / 6\". On",
+      "motionRole": "explain",
+      "onScreenChange": "three small coded bearer icons build in the side column, each on its cue, with no people drawn: a pig glyph (\"pigs\"), a hospital-bed outline with no figure (\"early patients\"), a ring of small dots (\"others\"). On \"pigs\" \"raised in sealed, disease-controlled facilities\" underlines; row (3) \"Animal welfare: pigs are bred, confined and killed for organs.\" (criterion), tick \"3 / 6\". On \"agree freely\" row (4) \"Patients: high risk in early use, so informed, voluntary consent is essential.\" Tick \"4 / 6\". On \"other people\" \"copies of a virus built into the pig genome were inactivated\" underlines; `ViralCopyStrip` shows a coded pig DNA strip with several grey virus-copy blocks that each take a small cross (grey screen label \"porcine endogenous retroviruses\"); row (5) \"Others: a pig virus could spread beyond the patient; reduced by inactivating viral copies, not removed.\" Tick \"5 / 6\". On \"principle\" a grey chip \"objection in principle: evidence can't settle it\" (grey tag \"b10\") writes beside the rows. Filled rows dim.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-verdict",
+      "visualDecision": "new",
+      "visualReference": "row (6) writes: \"Overall, justified to a moderate extent as regulated trials,\" (verdict) then \"provided consent, animal welfare and infection monitoring are in place; not yet a replacement for human donors.\" (condition).",
+      "teachingReason": "Close the loop: Gene-edited pig kidneys are justified to a moderate extent, as carefully regulated trials, provided patients give informed consent, the pigs' welfare is protected, and recipients are monitored for infection.",
+      "narrationCue": "moderate extent",
+      "motionPurpose": "On the spoken cues: Tick \"6 / 6\". A `PenArrow` loops to the strip's verdict row; all strip rows light together briefly. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "row (6) writes: \"Overall, justified to a moderate extent as regulated trials,\" (verdict) then \"provided consent, animal welfare and infection monitoring are in place; not yet a replacement for human donors.\" (condition). Tick \"6 / 6\". A `PenArrow` loops to the strip's verdict row; all strip rows light together briefly. Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"a kidney worked for 9 months, so pig kidneys solve the shortage\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is treating one kidney that worked for nine months as proof that pig kidneys solve the shortage.",
+      "narrationCue": "the classic mistake / how long, how often, or how safely",
+      "motionPurpose": "On the spoken cues: On \"how long, how often, or how safely\" three small grey question chips write in a row (\"how long?\", \"how often?\", \"how safely?\"). One crossed mistake only. Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"a kidney worked for 9 months, so pig kidneys solve the shortage\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"how long, how often, or how safely\" three small grey question chips write in a row (\"how long?\", \"how often?\", \"how safely?\"). One crossed mistake only. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the verdict strip returns full size as a three-column board, \"What to do\", \"Biodiversity questions\", \"Ethics questions\", each row lighting on its cue with the question number badges: \"one mechanism link (Q2: the clone matches its donor)\"; \"criteria + evidence: name the level and the baseline (Q1) / name who carries each risk (Q3)\"; \"verdict + condition: to a ... extent, provided that ... (Q1 to Q3)\".",
+      "teachingReason": "Decision board: For any biotechnology question, give one mechanism link.",
+      "narrationCue": "biodiversity level / who carries each risk / condition",
+      "motionPurpose": "On the spoken cues: The memory aid \"No verdict without a reason, no reason without evidence.\" writes small under the board, with b13's \"Verdict, provided that ...\" beside it. On \"Next\" a chip \"Next: why a technology that works can still have little lasting effect\" slides in at the lower right (small seed vault",
+      "motionRole": "explain",
+      "onScreenChange": "the verdict strip returns full size as a three-column board, \"What to do\", \"Biodiversity questions\", \"Ethics questions\", each row lighting on its cue with the question number badges: \"one mechanism link (Q2: the clone matches its donor)\"; \"criteria + evidence: name the level and the baseline (Q1) / name who carries each risk (Q3)\"; \"verdict + condition: to a ... extent, provided that ... (Q1 to Q3)\". The memory aid \"No verdict without a reason, no reason without evidence.\" writes small under the board, with b13's \"Verdict, provided that ...\" beside it. On \"Next\" a chip \"Next: why a technology that works can still have little lasting effect\" slides in at the lower right (small seed vault thumbnail, `m6-seed-bank-vault-v1.png`). Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6g02b-learning-review.md",
+      "sha256": "de9e8a77804a812cfa5ca7c82c8ab63b875873c041e9e74792f2144c0daba5a7"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6g02b-claude-science-check.md",
+      "sha256": "f133eba26ffcbb40bf8bb010fe1c8878dd71fa24e01ee611c9a2c66756128148"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6b16/lesson.json",
+    "lessonSha256": "b7cbd8b67e2b661721675c8ab96ced238dc9e627dfc71d315dd82bef8ab2962b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From bio-m5-b01: a clone has the same alleles as its parent; bananas are grown from pieces of a parent; copying is fast but gives no variety. From bio-m5-b05a: mitosis copies every chromosome into both new cells. From bio-m5-b06a: bacteria carry small rings of DNA called plasmids as well as their main chromosome; eukaryotic DNA is in the nucleus, wound on histones, and chemical tags on the histones loosen or tighten the winding where genes are read; mitochondria carry a little DNA. From bio-m5-b03a: an egg, an early embryo dividing into a ball of cells, and a uterus that carries a pregnancy. From bio-m5-b07: phenotype depends on genes and environment. From b09: cloning is in the \"copies DNA\" lane; copying keeps a valuable allele combination together. From b12: the banana problem (many copies of one genotype share one weakness). Not assumed: somatic, nuclear transfer, enucleated egg (spoken as \"sucked out its nucleus\"), vector, host, why cloning so often fails, how to judge effectiveness against a purpose, PCR.",
+    "startsWith": "A donor somatic nucleus and an enucleated egg, then a target gene and a vector. The video opens: In July 1996, a white-faced lamb was born in Scotland to a black-faced ewe.",
+    "stopsAfter": "defining a clone as a genetically identical copy and separating whole-organism cloning (a new individual with the same nuclear DNA as an existing one) from gene cloning (many copies of one selected piece of DNA); tracing somatic cell nuclear transfer with Dolly (a body cell from a white-faced ewe's udder; an egg from a black-faced ewe with its nucleus removed; an electric pulse fuses them and starts division; the embryo carried by a black-faced surrogate); explaining that the clone's nuclear DNA matches the nucleus donor while its mitochondrial DNA comes from the egg, and that development and environment can still make it differ; assessing whole-organism cloning by reliability (277 fused cells, 29 embryos, one lamb, because the egg often resets the body-cell nucleus's gene switches only partly), identity and health (pregnancy losses and abnormal births are common; Dolly's illnesses do not show early ageing; later clones from her cells aged healthily), with a verdict by purpose (too unreliable for routine breeding; worth it to copy one rare or valuable animal, as with the black-footed ferret); tracing gene cloning (a gene in a plasmid vector, taken up by a bacterial host, copied at every division into billions of copies; PCR copies a gene without cells) and assessing it (very effective for a narrow, checkable aim: one bacterium is enough; colonies must be checked for the gene; rare copying errors); distinguishing the two by what exists at the end; applying this to an unseen assess item and an unseen distinguish item.",
+    "nextLesson": "how scientists cut a gene out, join it into a plasmid, get it into a host and make it work there (route entry bio-m6-b18)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-b16.md"
+  ],
+  "teaching": {
+    "task": "Dolly the sheep and a flask of bacteria copying one gene are both called cloning. So what does each kind of cloning copy, how is the copy made, and how well does each do the job it's meant for?",
+    "causalExplanation": "Causes: why the clone matches the white-faced ewe (the nucleus carries the chromosomes, 4); why it is still not a perfect copy (mitochondria from the egg; development and environment, 4); why most attempts fail (the egg resets the body-cell nucleus's gene switches only partly, 5); why Dolly's illnesses don't prove early ageing (a flock virus; later clones from the same cells aged healthily, 6); why cloning can still be worth it (one rare genotype's alleles, 6); why gene cloning yields billions (every division copies the plasmid, 7); why it is effective (one host is enough; easy to check, 8). Visible case: the three ewes and the white face; the funnel from 277 to 1; the switches that stay stuck; the division tree filling a dish. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; attempt 1's card with its table is the densest frame and is the task.",
+    "conversationalApproach": "Dolly the sheep and a flask of bacteria copying one gene are both called cloning, so the question is what each kind copies, how the copy is made and how well each does its job; a clone is a genetically identical copy, and the question is a copy of what. Somatic cell nuclear transfer is traced step by step (an udder cell nucleus fused with an enucleated egg, an embryo placed in a surrogate), and Dolly's three mothers show that her chromosomes match the nucleus donor; reliability (277 fusions, 29 embryos, one lamb) and health are assessed against the purpose. Gene cloning puts one gene into a plasmid vector that bacteria copy as they divide, and it is judged effective for its narrower purpose because one taker is enough and the result is easy to check. The test is what exists at the end that did not before. Two exam questions follow with brief feedback.",
+    "openingDecision": "In July 1996, a white-faced lamb was born in Scotland to a black-faced ewe. She was Dolly, and she wasn't that ewe's daughter. She was a clone of a different sheep. Meanwhile, labs were routinely cloning genes, copying one piece of DNA billions of times inside bacteria. So what does each kind of cloning copy, how is the copy made, and how well does each do the job it's meant for?",
+    "understandingCheck": "10a is an assess item: hypothetical data from a company cloning a prize dairy bull (100 embryos, 6 calves born, 4 alive at one year, coat patches differing from the bull's and each other's); assess the effectiveness of cloning for copying this bull. It tests the three criteria and the verdict by purpose on new data. 10c is a distinguish item: a zoo's frozen northern white rhino skin cells and two hypothetical projects (copies of one gene to study; a living calf); distinguish the cloning used in each. It tests the \"what is copied, what exists at the end\" test. Each ends \"Pause here to answer.\" with a 10 s countdown; the full card stays on screen during and after the countdown. Each feedback is brief (about 25 to 30 s): the answer, the key reason, the givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B6-IQ3-03: \"investigate and assess the effectiveness of cloning, including but not limited to:\" with its two listed examples, \"whole organism cloning\" and \"gene cloning\". This video covers the \"assess\" demand of B6-IQ3-03 for both listed examples; the \"investigate\" component (ledger flag `depthStudyOrPractical: true`) stays open for the practical or depth-study entries (Revision 2, science check finding 10). It also completes B6-IQ3-01 (\"investigate the uses and advantages of current genetic technologies that induce genetic change\") for cloning: uses (copying a valuable or rare animal; copies of a gene for study, protein production and genetic modification) and advantages (keeps an allele combination together; one bacterium gives billions of copies). Update the ledger rows when this design passes review. The verbs: \"assess\" is carried by scenes 5, 6 and 8 and attempt 1 (judge effectiveness against stated criteria and reach a qualified judgement); \"distinguish\" by scene 9 and attempt 2 (a stated point of difference that lets each case be identified)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One \"What is being copied?\" board: two tall columns that fill across the video. Left column \"whole organism\" (headed by `m6-white-faced-lamb-v1.png`, new); right column \"one gene\" (headed by `m6-bacterium-plasmid-v1.png`). Each column has three stacked bays: \"how\" (the process strip), \"what is copied\" (a coded DNA icon: the left shows a whole nucleus outline, the right one short amber gene segment), and \"how well\" (an assessment meter of three short criterion bars: reliability, identical, health or usefulness, filled by coded colour, never numbers). The left column builds in scenes 3 to 6 and the right in scenes 7 and 8; scene 9 shows both at equal weight. The process strips are painted-plate sequences joined by coded arrows: left, `m6-white-sheep-v1.png` (the white-faced nucleus donor), a donor body cell (`m5x-cell-protein-synthesis-v1.png`, inspect: a generic animal cell with a visible purple nucleus; fallback `b6a-animal-cell-v1.png`), `m6-blackface-ewe-v1.png` (new; egg donor and surrogate, shown twice with grey tags \"egg donor\" and \"surrogate\"), `b3a-egg-v1.png` with its separable `b3a-egg-nucleus-v1.png`, `m6-icsi-v1.png` (holding pipette and fine needle at an egg; no hand), `b3a-cleavage-1-v1.png`, `-2`, `-3`, `-5` (the embryo dividing), then the lamb plate. Right: `m6-bacterium-plasmid-v1.png`, `m6-plasmid-uptake-start-v1.png` and `m6-plasmid-uptake-end-v1.png` (the aligned pair: a ring outside, then inside the cell), a coded division tree of small bacterium glyphs (`b6a-bacterium-v1.png` at glyph size), `m6-agar-dish-top-v1.png` with coded colonies. Real organisms, cells and objects are painted plates; chromosomes, gene segments, switches, arrows, meters and data are coded. No people, no hands, no faces of people. Never used: `m6-hand-pollination-v1.png` and `m6-agricultural-liming-v1.png` (retired hand plates); `b3a-embryo-v1.png` (a later vertebrate embryo, wrong stage and species for this story). Plates are scaled proportionally, never stretched. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides the small grey bay labels; each tag fades when the next cue lands; the column not being spoken about dims to grey.",
+    "transitionPlan": "The blackface ewe and white-faced lamb plates open the hook beside a flask of bacteria; the definition writes large and \"of what?\" splits the CopyBoard into two columns; the left column's \"how\" bay expands as the nuclear transfer steps draw from udder cell to egg to surrogate while the right column dims; the three ewes line up with their grey tags above the lamb; the \"how well\" bay expands with the AttemptFunnel from 277 dots down to one, then the CriteriaMeter and health tags; the left column shrinks to a thumbnail as the gene segment, plasmid ring and dividing bacteria fill the right column, which then judges gene cloning on the meter; the full CopyBoard returns at equal weight for the test question and memory lines; each attempt clears the board and its feedback underlines the card as an AnsTable or two-column comparison fills; the decision rule chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. `m6-blackface-ewe-v1.png` (new) stands at the left; on \"a white-faced lamb was born\" `m6-white-faced-lamb-v1.png` (new) slides in beside her, and a small grey tag \"July 1996, Scotland\" writes and fades.",
+      "teachingReason": "Hook (a white lamb, a black-faced mother): In July 1996, a white-faced lamb was born in Scotland to a black-faced ewe.",
+      "narrationCue": "clone",
+      "motionPurpose": "On the spoken cues: On \"wasn't that ewe's daughter\" a coded question mark sits between the two faces, the black face and the white face each ringed by a thin scribble. On \"a clone of a different sheep\" `m6-white-sheep-v1.png` appears faint at the top right with a dotted line to the lamb (tag \"a clone of ... ?\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "no people. `m6-blackface-ewe-v1.png` (new) stands at the left; on \"a white-faced lamb was born\" `m6-white-faced-lamb-v1.png` (new) slides in beside her, and a small grey tag \"July 1996, Scotland\" writes and fades. On \"wasn't that ewe's daughter\" a coded question mark sits between the two faces, the black face and the white face each ringed by a thin scribble. On \"a clone of a different sheep\" `m6-white-sheep-v1.png` appears faint at the top right with a dotted line to the lamb (tag \"a clone of ... ?\"). On \"cloning genes\" the right half shows `m6-agar-dish-top-v1.png` small with coded colonies, and one amber gene segment above it multiplies into a stack of identical segments (b09's `StripCopy`; tag \"billions of copies of one gene\", replacing the clone tag). On \"So what does each kind\" a thin bracket joins the lamb and the dish, labelled small \"cloning\". On \"how well does each do the job\" the tags fade and the heading writes on: \"What is being copied?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "one-word-two-jobs",
+      "visualDecision": "adjust",
+      "visualReference": "the hook clears.",
+      "teachingReason": "One word, two jobs: A clone is a genetically identical copy.",
+      "narrationCue": "clone / Whole-organism cloning / Gene cloning",
+      "motionPurpose": "On the spoken cues: The definition writes on large: \"Clone: a genetically identical copy.\" On \"a copy of what?\" the words \"of what?\" underline amber. On \"natural clones\" `b1-clone-row-disease-v1.png` (healthy version) appears small under the definition with a grey tag \"same alleles as the parent\", and",
+      "motionRole": "explain",
+      "onScreenChange": "the hook clears. The definition writes on large: \"Clone: a genetically identical copy.\" On \"a copy of what?\" the words \"of what?\" underline amber. On \"natural clones\" `b1-clone-row-disease-v1.png` (healthy version) appears small under the definition with a grey tag \"same alleles as the parent\", and `b1-cavendish-bunch-v1.png` sits small beside it (no tag). On \"Whole-organism cloning\" the `CopyBoard` draws its left column, headed by the lamb plate, labelled \"whole organism\" with the gloss \"a new individual, same DNA\"; the clone row and its tag fade. On \"Gene cloning\" the right column draws, headed by `m6-bacterium-plasmid-v1.png`, labelled \"one gene\" with the gloss \"many copies of one piece of DNA\". On \"what is being copied\" the two \"what is copied\" bays light: a whole coded nucleus outline in the left bay, one short amber gene segment in the right; the glosses dim to grey. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark underline",
+        "DrawPath",
+        "lineage split",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "nuclear-transfer",
+      "visualDecision": "adjust",
+      "visualReference": "the left column's \"how\" bay expands to fill most of the screen; the right column dims to grey.",
+      "teachingReason": "Somatic cell nuclear transfer: Here's how Dolly was made, by a method called somatic cell nuclear transfer.",
+      "narrationCue": "somatic cell nuclear transfer",
+      "motionPurpose": "On the spoken cues: The method's name writes on with three grey glosses that appear one at a time under its words: \"somatic: a body cell\" (on \"Somatic just means\"), \"nuclear: the nucleus\", \"transfer: moved into an egg\" (the last two write in silently with the first; all three fade out fully, not just dim, before \"the",
+      "motionRole": "explain",
+      "onScreenChange": "the left column's \"how\" bay expands to fill most of the screen; the right column dims to grey. The method's name writes on with three grey glosses that appear one at a time under its words: \"somatic: a body cell\" (on \"Somatic just means\"), \"nuclear: the nucleus\", \"transfer: moved into an egg\" (the last two write in silently with the first; all three fade out fully, not just dim, before \"the udder of a white-faced ewe\"). Each ewe's grey tag shows only while that ewe is spoken about, then dims to grey. On \"the udder of a white-faced ewe\" `m6-white-sheep-v1.png` sits at the left of a process strip with a grey tag \"nucleus donor\" and a coded arrow to the donor body cell plate (`m5x-cell-protein-synthesis-v1.png`, its purple nucleus ringed). On \"an egg from a black-faced ewe\" `m6-blackface-ewe-v1.png` appears below with a grey tag \"egg donor\" and an arrow to `b3a-egg-v1.png`. On \"sucked out its nucleus\" `m6-icsi-v1.png` takes the egg's place at the same scale (the holding pipette steadies it); by coded motion the needle draws the separable `b3a-egg-nucleus-v1.png` out of the egg and away (`EnucleateMotion`); a grey screen label \"enucleated egg: nucleus removed\" writes under it (tag \"no chromosomes of its own\"). On \"An electric pulse fused\" the donor cell slides against the empty egg; a short amber flash (`FusePulse`) merges the outlines, and the donor's purple nucleus now sits inside the egg (tag \"fused + started dividing\", replacing the previous tag). On \"started it dividing\" the cell crossfades through `b3a-cleavage-1-v1.png`, `-2`, `-3` and `-5` (one, two, four cells, then a hollow ball), with a small grey clock tag \"about a week\". On \"another black-faced ewe\" a second copy of the blackface plate appears at the right with a grey tag \"surrogate\" and a coded uterus outline drawn faintly over her body; the embryo glyph travels into it. At most three bright text items besides the three ewe tags, which are small and grey. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "lineage split",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "who-she-matches",
+      "visualDecision": "new",
+      "visualReference": "the three ewes line up small across the top with their grey tags (nucleus donor, egg donor, surrogate) and the lamb plate below them.",
+      "teachingReason": "Who is she a copy of?: So Dolly had three mothers.",
+      "narrationCue": "nucleus donor / mitochondria",
+      "motionPurpose": "On the spoken cues: On \"Which one does she match?\" a coded question mark sits over the lamb. On \"Her nucleus came from the white-faced ewe\" a thick amber line runs from the nucleus donor to the lamb, and the lamb's white face and the donor's white face pulse together; the other two ewes dim (chip \"nuclear DNA: the",
+      "motionRole": "explain",
+      "onScreenChange": "the three ewes line up small across the top with their grey tags (nucleus donor, egg donor, surrogate) and the lamb plate below them. On \"Which one does she match?\" a coded question mark sits over the lamb. On \"Her nucleus came from the white-faced ewe\" a thick amber line runs from the nucleus donor to the lamb, and the lamb's white face and the donor's white face pulse together; the other two ewes dim (chip \"nuclear DNA: the nucleus donor\"). On \"not the egg donor or the ewe who gave birth\" grey thin lines from the two black-faced ewes take small grey crosses. On \"mitochondria\" an inset of the fused egg shows a few small coded mitochondria glyphs in the cytoplasm tinted the egg donor's colour, with a thin grey line back to the egg donor (chip \"mitochondrial DNA: the egg\", replacing the previous chip). On \"a clone develops in a different uterus\" the inset fades and a small coded balance \"genes + environment\" sits under the lamb (b07's style, recalled, no tag beyond the two words). On \"size, markings or health\" three small grey tags \"size\", \"markings\", \"health\" write beside the lamb and dim together. The left column's \"what is copied\" bay now reads \"nuclear DNA (not mitochondria)\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "reliability",
+      "visualDecision": "new",
+      "visualReference": "the left column's \"how well\" bay expands.",
+      "teachingReason": "Does it work? reliability: Now assess it, starting with reliability.",
+      "narrationCue": "fused 277 udder cells / Only 29 / just one became a live lamb / Why so few? / like the ones on histones / switched",
+      "motionPurpose": "On the spoken cues: On \"fused 277 udder cells\" the `AttemptFunnel` draws: a block of 277 small dots (the number written small above it: \"277 fused cells\"); on \"Only 29\" all but 29 dots fade to grey (\"29 embryos transferred\"); on \"just one became a live lamb\" one dot remains bright and becomes a tiny lamb glyph (\"1",
+      "motionRole": "explain",
+      "onScreenChange": "the left column's \"how well\" bay expands. On \"fused 277 udder cells\" the `AttemptFunnel` draws: a block of 277 small dots (the number written small above it: \"277 fused cells\"); on \"Only 29\" all but 29 dots fade to grey (\"29 embryos transferred\"); on \"just one became a live lamb\" one dot remains bright and becomes a tiny lamb glyph (\"1 lamb\"). The reliability bar of the `CriteriaMeter` fills only a sliver, coded red-brown (chip \"reliability: low\"). On \"Why so few?\" the funnel shrinks aside and the donor nucleus appears large (coded chromosomes inside the purple nucleus plate area, slim and painted-style). On \"like the ones on histones\" a small grey thumbnail of b06a's histone spool with tag dots appears at the corner and fades on \"switched\"; on \"switched many of its genes off\" small switch glyphs appear along the chromosomes, most set to \"off\" (grey screen label \"epigenetic marks: tags that switch genes on or off\", small and grey). On \"the egg has to reset those switches\" the switches flip one by one toward \"on\"; on \"only partly\" a few stay stuck, each ringed with a thin grey scribble (tag \"resetting is often incomplete\"). On \"die before or soon after birth\" the stuck switches dim and a small row of five coded embryo circles appears, three fading out (tag \"pregnancy losses, deaths at birth\", replacing the reset tag); on \"unusually large\" one lamb glyph in a short row is drawn larger than the others (grey screen label \"large offspring syndrome\"). On \"most attempts still fail\" the reliability bar rises a little but stays short (tag \"improved, still low\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "health-and-purpose",
+      "visualDecision": "adjust",
+      "visualReference": "the lamb plate returns small in the \"how well\" bay.",
+      "teachingReason": "Health, and effective for what?: What about Dolly's health?",
+      "narrationCue": "arthritis / That alone can't show / four later clones / depends on the purpose / too unreliable / worth it",
+      "motionPurpose": "On the spoken cues: On \"arthritis\" and \"lung disease\" two small grey tags write beside it (\"arthritis\", \"lung disease: a virus, also in other sheep in the flock\"). On \"That alone can't show\" a grey chip \"Dolly = early ageing?\" writes and takes a grey scribble cross. On \"four later clones\" four small lamb glyphs line",
+      "motionRole": "explain",
+      "onScreenChange": "the lamb plate returns small in the \"how well\" bay. On \"arthritis\" and \"lung disease\" two small grey tags write beside it (\"arthritis\", \"lung disease: a virus, also in other sheep in the flock\"). On \"That alone can't show\" a grey chip \"Dolly = early ageing?\" writes and takes a grey scribble cross. On \"four later clones\" four small lamb glyphs line up with a grey tag \"same cells, healthy for their age at 7 to 9\" (the tags from Dolly fade). The health bar of the `CriteriaMeter` fills to about half, amber (chip \"health: mixed, not doomed\"). On \"depends on the purpose\" the meter's three bars sit side by side and the bay splits into two short verdict lines that write on one per cue: \"everyday breeding: too unreliable\" (on \"too unreliable\", grey cross icon) and \"copying one rare animal: can be worth it\" (on \"worth it\", amber tick). On \"black-footed ferret\" `m6-black-footed-ferret-v1.png` (new) appears with a small coded frozen vial beside it (grey tag \"cells frozen 1988\"); on \"have given clones\" ferret glyphs appear (tag \"clones from 2020\"); on \"had babies\" small kit glyphs follow one clone glyph (tag \"2024: a clone has young (kits)\", replacing the 2020 tag); on \"passing on alleles\" b08's coloured ring cluster beside it gains two new ring colours (chip \"previously unrepresented alleles passed on\"). No screen text says how many clones are alive. `b1-cavendish-bunch-v1.png` sits as a silent grey thumbnail in the corner on \"rare animal\" (the banana problem: copies of one genotype narrow a population if overused; unspoken). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "gene-cloning",
+      "visualDecision": "adjust",
+      "visualReference": "the left column shrinks to a grey thumbnail; the right column's \"how\" bay expands.",
+      "teachingReason": "Gene cloning: Gene cloning has a narrower aim: lots of copies of one gene.",
+      "narrationCue": "plasmid / vector / host / PCR",
+      "motionPurpose": "On the spoken cues: On \"one gene\" a single amber gene segment writes on. On \"into a plasmid\" a coded plasmid ring draws beside it and the segment slides into a gap in the ring (no cutting shown: that is the next video), and a grey gloss \"plasmid: small ring of DNA\" writes under it. On \"vector\" the gloss is replaced by",
+      "motionRole": "explain",
+      "onScreenChange": "the left column shrinks to a grey thumbnail; the right column's \"how\" bay expands. On \"one gene\" a single amber gene segment writes on. On \"into a plasmid\" a coded plasmid ring draws beside it and the segment slides into a gap in the ring (no cutting shown: that is the next video), and a grey gloss \"plasmid: small ring of DNA\" writes under it. On \"vector\" the gloss is replaced by the term \"vector: a carrier of DNA into a cell\". On \"the host\" `m6-plasmid-uptake-start-v1.png` appears (ring outside the cell) and crossfades to `m6-plasmid-uptake-end-v1.png` (ring inside), with the ring tinted to show the amber segment (term \"host: the cell that takes it up\", replacing the vector term). On \"Each time the host divides\" the `DivisionTree` draws: one bacterium glyph splits into two, each with a small amber-marked ring, then four, eight (tag \"each new cell gets the plasmid\"). On \"every half hour or so\" a small coded clock ring sweeps once per doubling and the tree runs faster to a dense fan, then cuts to `m6-agar-dish-top-v1.png` with coded colonies spreading (tag \"a day: billions\", replacing the earlier tag). On \"no cells\" the dish dims and a small coded tube outline appears with the `PcrStrip` beside a small thermometer glyph (grey screen tag \"PCR: copies a gene in a tube\"). On \"Heat separates\" the thermometer pulses hot and the double strip splits into its two strands; on \"an enzyme copies each one\" the thermometer cools, a small coded enzyme blob runs along each strand and each strand gains a new partner; on \"every cycle doubles the gene\" the cycle repeats quickly, 2, 4, 8 strips. The right column's \"what is copied\" bay reads \"one gene, many copies\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "judging-gene-cloning",
+      "visualDecision": "adjust",
+      "visualReference": "the right column's \"how well\" bay expands with its `CriteriaMeter`, relabelled for this purpose: \"reliable enough\", \"identical copies\", \"useful\".",
+      "teachingReason": "Judging gene cloning: So how effective is it?",
+      "narrationCue": "Only a few bacteria take up a plasmid / you need just one / easy to check / study a gene, make its protein, or put it into another organism / Its limits are small",
+      "motionPurpose": "On the spoken cues: On \"Only a few bacteria take up a plasmid\" a field of about twenty bacterium glyphs appears and only two take an amber ring; on \"you need just one\" one of them pulses and a mini division fan grows from it (chip \"one host is enough\"); the first bar fills high, teal. On \"easy to check\" a short coded",
+      "motionRole": "explain",
+      "onScreenChange": "the right column's \"how well\" bay expands with its `CriteriaMeter`, relabelled for this purpose: \"reliable enough\", \"identical copies\", \"useful\". On \"Only a few bacteria take up a plasmid\" a field of about twenty bacterium glyphs appears and only two take an amber ring; on \"you need just one\" one of them pulses and a mini division fan grows from it (chip \"one host is enough\"); the first bar fills high, teal. On \"easy to check\" a short coded strip of cream bands writes beside the dish with a tick (no letters read; tag \"check the sequence\"); the second bar fills high. On \"study a gene, make its protein, or put it into another organism\" three small icons write in a row, one per phrase: a strip under a magnifier outline, `m6-insulin-vial-v1.png` small, `m6-bt-cotton-v1.png` small (chip \"uses: study, protein, modification\", replacing the earlier chip); the third bar fills high. On \"Its limits are small\" one small grey tag writes under the meter: \"the gene doesn't always go in: check colonies\". At most three bright text items besides the meter labels, which are small and grey. Hold one second.",
+      "motionTools": [
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the full `CopyBoard`, both columns at equal weight, all bays small and grey.",
+      "teachingReason": "The test, and memory: To tell them apart, ask what exists at the end that didn't before.",
+      "narrationCue": "The clone matches the nucleus donor / gene cloning copies a gene; organism cloning copies an individual",
+      "motionPurpose": "On the spoken cues: On \"what exists at the end\" a large question writes across the top: \"What exists at the end?\" On \"A new organism\" the left column's lamb pulses (small amber label \"an organism\"); on \"Many copies of one gene\" the right column's colony dish pulses (\"many copies of one gene\"). On \"Two things to hold",
+      "motionRole": "explain",
+      "onScreenChange": "the full `CopyBoard`, both columns at equal weight, all bays small and grey. On \"what exists at the end\" a large question writes across the top: \"What exists at the end?\" On \"A new organism\" the left column's lamb pulses (small amber label \"an organism\"); on \"Many copies of one gene\" the right column's colony dish pulses (\"many copies of one gene\"). On \"Two things to hold on to\" the board dims and two handwritten lines write on large, one per cue: \"The clone matches the nucleus donor.\" (with the white-faced ewe and lamb thumbnails joined by the amber line), \"Gene cloning copies a gene; organism cloning copies an individual.\" (with the gene stack and lamb thumbnails). As the second line completes, both meters return small beneath the lines, side by side (silent; scene 11 speaks the purpose test). Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "lineage split"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (a cloned bull)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. A company made",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a cloned bull))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `b3b-dairy-bull-side-v1.png` small at its upper left and two calf plates (`b3b-calf-side-v1.png` and `m6-dairy-calf-horn-buds-v1.png`, whose patches differ) small at the upper right. Stem: \"A company used somatic cell nuclear transfer to produce 100 embryos from skin cells of a prize dairy bull. The table shows the results (hypothetical data).\" A small coded table: \"embryos transferred: 100\", \"calves born: 6\", \"calves alive at one year: 4\". Below it: \"The surviving calves' black and white patch patterns differed from the bull's and from each other's.\" Demand: \"Assess the effectiveness of cloning as a method of copying this bull. (5 marks)\". One lined answer box. Nothing answer-bearing: no meter, funnel or switch glyphs. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "four live calves from a hundred embryos / two of the six born died / nuclear DNA matches / patches differ / valuable enough / the classic mistake",
+      "motionPurpose": "On the spoken cues: A four-row `AnsTable` fills one row per cue, each row naming a criterion: on \"four live calves from a hundred embryos\" \"100\" and \"4\" underline amber and the row \"reliability: 4 in 100, low\" fills; on \"two of the six born died\" \"calves born: 6\" and \"calves alive at one year: 4\" underline and the row",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A four-row `AnsTable` fills one row per cue, each row naming a criterion: on \"four live calves from a hundred embryos\" \"100\" and \"4\" underline amber and the row \"reliability: 4 in 100, low\" fills; on \"two of the six born died\" \"calves born: 6\" and \"calves alive at one year: 4\" underline and the row \"health: 2 of 6 calves died\" fills; on \"nuclear DNA matches\" \"skin cells of a prize dairy bull\" underlines and the row \"identity: same nuclear DNA as the bull\" fills; on \"patches differ\" \"patch patterns differed\" underlines and the row extends \"patches: shaped in development\"; on \"valuable enough\" \"prize\" underlines and a verdict bar writes \"worth it only for a very valuable bull\", with \"only\" underlined. The first three rows dim to grey as the verdict writes, so at most three bright items show. On \"the classic mistake\" the chip \"different patches, so the DNA wasn't copied\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m6-northern-white-rhino-v1.png` small at its upper left: \"A zoo stores frozen skin cells from a male northern white rhinoceros that has died. Scientists propose two projects (hypothetical). Project A: make many copies of one of the rhino's genes so that its DNA sequence can be studied. Project B: produce a living rhinoceros calf from the frozen cells.\" Demand: \"Distinguish between the types of cloning used in Project A and Project B. (4 marks)\".",
+      "teachingReason": "Unseen transfer task (attempt two (two rhino projects)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A zoo stores frozen skin cells from",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two rhino projects))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\", with `m6-northern-white-rhino-v1.png` small at its upper left: \"A zoo stores frozen skin cells from a male northern white rhinoceros that has died. Scientists propose two projects (hypothetical). Project A: make many copies of one of the rhino's genes so that its DNA sequence can be studied. Project B: produce a living rhinoceros calf from the frozen cells.\" Demand: \"Distinguish between the types of cloning used in Project A and Project B. (4 marks)\". One lined answer box. Nothing answer-bearing: no board, plasmid or egg. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Project A is gene cloning / many copies of one gene / Project B is whole-organism cloning / a calf whose nuclear DNA matches / the classic mistake",
+      "motionPurpose": "On the spoken cues: A two-column comparison writes on beneath it, headings \"Project A\" and \"Project B\", with rows that fill pair by pair: on \"Project A is gene cloning\" row \"type\": \"gene cloning\" | (empty until the B cue); on \"many copies of one gene\" \"many copies of one of the rhino's genes\" underlines amber and row",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A two-column comparison writes on beneath it, headings \"Project A\" and \"Project B\", with rows that fill pair by pair: on \"Project A is gene cloning\" row \"type\": \"gene cloning\" | (empty until the B cue); on \"many copies of one gene\" \"many copies of one of the rhino's genes\" underlines amber and row \"product\": \"many copies of one gene\" fills; on \"Project B is whole-organism cloning\" row \"type\" fills \"whole-organism cloning\"; on \"a calf whose nuclear DNA matches\" \"a living rhinoceros calf\" underlines and row \"product\" fills \"a calf with the rhino's nuclear DNA\"; a row \"how\" fills in small grey on the two method cues (\"gene in a plasmid, copied by dividing bacteria\" | \"skin-cell nucleus into an enucleated egg\"). On \"the classic mistake\" the chip \"both projects make a copy of the rhino\" writes on and takes a grey scribble cross. Settle on the model answer for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "three step chips write on in a column, one per cue: \"what is copied? an individual or one gene\", \"how is the copy made?\", \"judge against the purpose: reliable, identical, healthy or useful\".",
+      "teachingReason": "Decision rule and handoff: So when a question says cloning, first ask what is being copied: a whole individual, or one gene.",
+      "narrationCue": "So when a question says cloning, first ask",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how recombinant DNA is made and gets into a host\" (small `m6-plasmid-uptake-end-v1.png` thumbnail). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on in a column, one per cue: \"what is copied? an individual or one gene\", \"how is the copy made?\", \"judge against the purpose: reliable, identical, healthy or useful\". A \"Next\" chip slides in at the lower right: \"Next: how recombinant DNA is made and gets into a host\" (small `m6-plasmid-uptake-end-v1.png` thumbnail). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b16-learning-review.md",
+      "sha256": "9bdfa58c7db29b0d554e938ea0311fc3ac87c0e6bf2b023e7ebd74feb09570fa"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6b16-claude-science-check.md",
+      "sha256": "f362bdd59a495398f768e2de4d1c1f0125ebb021ecef93328844effb7c1b83ba"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C01-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c01/lesson.json",
+  "lessonSha256": "bb1aa43365b344793229badb9eeabecfebc564673713ad18bd147e5ec1a988cd",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c01/lesson.production-brief.json",
+    "sha256": "95232a7005b2c7d6d24624119a1dbaeff9e489d68ad302ef9a4c19a2fcc44242"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "The canister under this camping stove holds butane, often mixed with propane. That name isn't a brand. It's a code: but means four carbons, and ane means only single bonds between them. Chemists name carbon compounds this way, so a name like three-methylpent-one-ene is really a set of drawing instructions. So how do you read a name like that, and write one from a drawing?",
+      "hash": "fcb196c971b0",
+      "textSha256": "fcb196c971b0259ff8f24a5f0a32eed3b84a0bf8f550291124cbe0d6ce6d5940",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/hook.fcb196c971b0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/hook.fcb196c971b0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/hook.fcb196c971b0.generation.json",
+      "plannedRequestSha256": "ad39f2474efce7851d9a4875a14e76251e8920c0aa4ce32d353e66f9b3e33d6b"
+    },
+    {
+      "id": "four-bonds",
+      "parentSceneId": "four-bonds",
+      "text": "You know from Year 11 that carbon has four valence electrons, so each carbon forms four covalent bonds. Carbon can bond to other carbons, so it builds long chains, and a chain can grow branches. That's why there are millions of carbon compounds, and why each one needs a name that points to just one structure. Real chains aren't straight, either. The bonds spread out, so the carbons zigzag.",
+      "hash": "fab39232b2b0",
+      "textSha256": "fab39232b2b07df428da6071901076effffbd3afba4435ee4067d400c5dbf247",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/four-bonds.fab39232b2b0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/four-bonds.fab39232b2b0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/four-bonds.fab39232b2b0.generation.json",
+      "plannedRequestSha256": "a1c0cf99c73617b29ecb07dd5e3043ebc2c0a9708039682d9d8ae4f6468750f2"
+    },
+    {
+      "id": "three-drawings",
+      "parentSceneId": "three-drawings",
+      "text": "There are three common ways to draw a chain. A full structural formula shows every atom and every bond. A condensed formula writes each carbon with its hydrogens: C H three, C H two, C H two, C H three. A skeletal formula keeps just the zigzag. Every corner and every end is a carbon, and the hydrogens are left out. You put them back in your head, enough to give each carbon four bonds: three on an end carbon, two on a corner, and one where a branch joins.",
+      "hash": "1a742d446ba8",
+      "textSha256": "1a742d446ba85166965197d9755e9164afd4a56db9449dfa45283d976ad2cb4b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/three-drawings.1a742d446ba8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/three-drawings.1a742d446ba8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/three-drawings.1a742d446ba8.generation.json",
+      "plannedRequestSha256": "7e64af18a631bb1f4fb495dbddfbc242847fcbfbf6ad2e7fded23828898aecc2"
+    },
+    {
+      "id": "rule-stem",
+      "parentSceneId": "rule-stem",
+      "text": "Now the naming rules, one at a time. Rule one: the start of the name, the stem, counts the carbons in the main chain. Meth is one, eth two, prop three, but four. A way to remember those: Monkeys Eat Peeled Bananas. From five, the stems match shapes you know: pent as in pentagon, hex as in hexagon, hept as in heptagon, and oct, as in octagon, for eight.",
+      "hash": "948e18facb19",
+      "textSha256": "948e18facb19596359b79d21aed391bd2deaf4158da2986a65ba1b2785797a46",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-stem.948e18facb19.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-stem.948e18facb19.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-stem.948e18facb19.generation.json",
+      "plannedRequestSha256": "9ae36bbf18735313e8b22027ea74c463a6dfff29e63de291457ec5494dd5313d"
+    },
+    {
+      "id": "rule-ending",
+      "parentSceneId": "rule-ending",
+      "text": "Rule two: the ending tells you the bonds between carbons. Ane means only single bonds. Chemists call that saturated: each carbon holds as many hydrogens as it can. Ene means there's a carbon to carbon double bond, and yne means a triple bond. Those are unsaturated. To remember the order, a, e and y go alphabetically, just as one, two and three bonds go in order.",
+      "hash": "72f4c8835d6d",
+      "textSha256": "72f4c8835d6d420f748568a22ca34e835afdbb80af01b7fdbbdc28174aaa3225",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-ending.72f4c8835d6d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-ending.72f4c8835d6d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-ending.72f4c8835d6d.generation.json",
+      "plannedRequestSha256": "4bfc41d7656713600f5e79dbc62310075e85836bbaf5623a4b640a26407c99dc"
+    },
+    {
+      "id": "rule-longest-chain",
+      "parentSceneId": "rule-longest-chain",
+      "text": "Rule three: find the longest continuous chain of carbons. That's the main chain, also called the parent chain, and it can bend on the page. Look at this one. It's drawn as four carbons in a row, with two more hanging down, so you might call it two-ethylbutane. But trace a path that turns down into that branch, and you get five carbons. So the main chain is pentane, and the real branch is just one carbon.",
+      "hash": "5c28514a7a94",
+      "textSha256": "5c28514a7a94579581d900a11c366862744f1559ae78c3b729fd0d7a78ab6596",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-longest-chain.5c28514a7a94.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-longest-chain.5c28514a7a94.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-longest-chain.5c28514a7a94.generation.json",
+      "plannedRequestSha256": "22ed84a0d1bde83e7d487e469f9fbf356d40a4cb8f2f359b613020c9b472ec60"
+    },
+    {
+      "id": "rule-number",
+      "parentSceneId": "rule-number",
+      "text": "A branch is named from its carbons, with yl on the end: one carbon is methyl, two is ethyl. Rule four: number the main chain from the end nearer the branch, so the branch gets the lowest number, and everyone writes the same name. That number is called a locant, and it says which carbon. Here the methyl sits on carbon three, from either end, so this is three-methylpentane. On this shorter chain, counting from the left puts the methyl on carbon two: two-methylbutane. Three-methylbutane counts from the wrong end.",
+      "hash": "b1eb3c464688",
+      "textSha256": "b1eb3c4646888419ff2fc458327df58aee1e8ad0913f3eab5637781f40a766f4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-number.b1eb3c464688.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-number.b1eb3c464688.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-number.b1eb3c464688.generation.json",
+      "plannedRequestSha256": "d1039bed9ce8914f362b38617f9fc491bb3aaf9a59a7c66c6ae8ea3bbd05ac8d"
+    },
+    {
+      "id": "rule-several-branches",
+      "parentSceneId": "rule-several-branches",
+      "text": "Rule five covers more than one branch. Two of the same get di, as in two, three-dimethylpentane. Commas go between numbers, and a hyphen joins a number to a word. Different branches go in alphabetical order, ignoring di. So this one is three-ethyl-two-methylpentane. E comes before m, even though the methyl has the lower number.",
+      "hash": "ee1d521b21d4",
+      "textSha256": "ee1d521b21d454b10dfba03323aa82e8d116d69d816d7885407c1d2958cd2381",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-several-branches.ee1d521b21d4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-several-branches.ee1d521b21d4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/rule-several-branches.ee1d521b21d4.generation.json",
+      "plannedRequestSha256": "d05f54482b053d3b285c2b2b60f11776978df0d5e2158163be70b2e1f9e647c6"
+    },
+    {
+      "id": "multiple-bonds",
+      "parentSceneId": "multiple-bonds",
+      "text": "Double and triple bonds add one more step. The main chain has to contain the double bond, because the ending, ene or yne, describes the main chain's bonds. Then you number from the end that gives it the lowest number. That locant goes just before the ending. In but-one-ene, the double bond starts at carbon one. In a skeletal drawing, a double bond counts as two of a carbon's four bonds, so each carbon in it has one fewer hydrogen. Move the double bond to the middle, and you get but-two-ene. Ethene and propene don't need a number at all, because there's only one place the double bond can go.",
+      "hash": "8d0f0cac9062",
+      "textSha256": "8d0f0cac9062d45bd2517f0d124ffc688d5422960d7c8fd8ac6f0f9667253b58",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/multiple-bonds.8d0f0cac9062.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/multiple-bonds.8d0f0cac9062.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/multiple-bonds.8d0f0cac9062.generation.json",
+      "plannedRequestSha256": "3694a89196b9a891e54710cfb7a00842a738d79c0765cb20cc7abad0bc104143"
+    },
+    {
+      "id": "bond-wins",
+      "parentSceneId": "bond-wins",
+      "text": "What if there's a branch as well? The double bond wins, because it's named in the ending, so it gets first claim on the low numbers. In this chain of five, numbering from the left puts the double bond on carbon one, and the methyl on carbon four: four-methylpent-one-ene. From the right, the methyl would get a two, but the double bond would get a four, so two-methylpent-four-ene is wrong. A triple bond follows the same rules: this is pent-two-yne.",
+      "hash": "856bef449ddf",
+      "textSha256": "856bef449ddfebd845a6808760498754ce8d58c0a15fc81aa9ad468411f3d396",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/bond-wins.856bef449ddf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/bond-wins.856bef449ddf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/bond-wins.856bef449ddf.generation.json",
+      "plannedRequestSha256": "6750fcfc04b54058227cf0f9cf8dbce9eefdc04ae61a59afc1dc1171c43b1334"
+    },
+    {
+      "id": "name-to-structure",
+      "parentSceneId": "name-to-structure",
+      "text": "Names work backwards too. Take two, two-dimethylpentane. Draw the main chain first: pent, so five carbons. Put two methyls on carbon two. Then add hydrogens, so every carbon has four bonds. Check by counting: seven carbons and sixteen hydrogens. Count only one of the methyls, and you'd write C six H fourteen: one carbon and two hydrogens short, so it can't be this molecule.",
+      "hash": "448e7f2e93b8",
+      "textSha256": "448e7f2e93b824259803711711cdade21e8262d62c3cf5401e82c397cc351364",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/name-to-structure.448e7f2e93b8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/name-to-structure.448e7f2e93b8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/name-to-structure.448e7f2e93b8.generation.json",
+      "plannedRequestSha256": "5cfe522768bd04277fc044bea0531eaf5b77336d0fdcbb10a3dbd5bf49890bf0"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, to name a chain: find the longest chain that holds any double or triple bond. Number it so that bond, then the branches, get the lowest numbers. Then write the name in the order branches, stem, ending.",
+      "hash": "9fe8d6fe3e6c",
+      "textSha256": "9fe8d6fe3e6cd236649553298478a900aaa2d91cb49e89bd4ca6fbd40c2262a7",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/memory-aid.9fe8d6fe3e6c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/memory-aid.9fe8d6fe3e6c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/memory-aid.9fe8d6fe3e6c.generation.json",
+      "plannedRequestSha256": "5f32f1ee26884de4c93fe81aa9f4d0a4f714fd19f68edfdfd90326532c109858"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Give the IUPAC name and the molecular formula of the hydrocarbon in this skeletal formula. Pause here to answer.",
+      "hash": "f38eb421a0ba",
+      "textSha256": "f38eb421a0ba0d2e023524675311279804c8c03ec7a794b89abfb8b6668df462",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/attempt-1.f38eb421a0ba.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/attempt-1.f38eb421a0ba.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/attempt-1.f38eb421a0ba.generation.json",
+      "plannedRequestSha256": "ad63e95b8f0c25490232321b6479fd0e6287454dce0758ee965c8a645e2a59be"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The longest chain has six carbons and holds the double bond, so it's a hexene. Number from the left, nearer the double bond: it starts on carbon two, and the methyl's on carbon five. That's five-methylhex-two-ene. Each double-bond carbon has just one hydrogen, so it's C seven H fourteen. Two-methylhex-four-ene numbers for the branch, but the double bond wins.",
+      "hash": "f3089914b609",
+      "textSha256": "f3089914b60948e4afd80b33775ded63d00535416df63215800fa86a520ba3a2",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/feedback-1.f3089914b609.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/feedback-1.f3089914b609.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/feedback-1.f3089914b609.generation.json",
+      "plannedRequestSha256": "d1b241f30fd140acff114909938a67c1a82a93c3899cae55de478017a0cfc4ea"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student names a hydrocarbon two-ethylpentane. Explain why that name is incorrect. Then give the correct IUPAC name, and draw the skeletal formula. Pause here to answer.",
+      "hash": "4e66d643b855",
+      "textSha256": "4e66d643b85599589de9fce3a9d8cef3ab0195d4e093f0725d95a7a2508af333",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/attempt-2.4e66d643b855.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/attempt-2.4e66d643b855.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/attempt-2.4e66d643b855.generation.json",
+      "plannedRequestSha256": "c6b6e21c03e02f15c4a7bcd69d4f327aa159902f6590e3fc2b8a5c3042b06dfa"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Draw what the student described, then trace the longest chain through the ethyl branch: that's six carbons, not five. So the main chain is hexane, with a methyl branch. Number from the nearer end, and the methyl sits on carbon three: three-methylhexane. Four-methylhexane counts from the wrong end.",
+      "hash": "cce884250e50",
+      "textSha256": "cce884250e509c89684fcc5dd18690435cb033802b6293164953ec17b39f86ba",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/feedback-2.cce884250e50.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/feedback-2.cce884250e50.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/feedback-2.cce884250e50.generation.json",
+      "plannedRequestSha256": "cc9d8ba667647c40abae6de1631d3666c7d77edf1346479a91918f87fa086fe0"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So a name tells you the chain length, the bonds and every branch, and you can rebuild the molecule from it. And here's something to think about. Butane has the formula C four H ten. Can those same atoms be joined another way? Next: how the same formula can make different molecules.",
+      "hash": "fb9a160d5749",
+      "textSha256": "fb9a160d57498147ccf5d9a9ecf4141136f921f47194a078b85bef44ab828f3c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/handoff.fb9a160d5749.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/handoff.fb9a160d5749.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/handoff.fb9a160d5749.generation.json",
+      "plannedRequestSha256": "1fdf674501b1fc0617a6689324100083e9ed097351d2a39b2f50c63357c46b50"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C01-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

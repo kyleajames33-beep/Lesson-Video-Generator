@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M6-G01-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m6g01c/lesson.json",
+  "lessonSha256": "2f44428b3ac71f831dc5ed5f73033e99c2629ee8abffcecea96c0c99c7a0b62e",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m6g01c/lesson.production-brief.json",
+    "sha256": "0eb851fbf7218180118a670bf5d959d869518eef153ac0544e01f7b0f32aeaef"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A strong acid or base question can do more than hand you a concentration and ask for the pH. It can dilute it, mix it with a base, or hide a two in a formula. Each one here comes down to three checks. What's in there, and how much? In what volume? And does the answer make sense? Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.",
+      "hash": "c4978979977e",
+      "textSha256": "c4978979977e896d717c8155187a66741fc9da409eb8e8cdd04c64f34c94b8db",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/hook.c4978979977e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/hook.c4978979977e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/hook.c4978979977e.generation.json",
+      "plannedRequestSha256": "587aecff67b94e7b5d78c622b3790de6f5532985649141fed98fa0a1cf409061"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. A nitric acid solution has a concentration of zero point zero zero two five zero moles per litre at twenty five degrees. Calculate its pH. Then calculate the hydroxide ion concentration in the same solution. Pause here to answer.",
+      "hash": "6b70d44fb0fb",
+      "textSha256": "6b70d44fb0fbe1ef2877c607ef56c7a8e0c920c111f01e68aff32e517c46bcbb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-question.6b70d44fb0fb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-question.6b70d44fb0fb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-question.6b70d44fb0fb.generation.json",
+      "plannedRequestSha256": "c2fe93f77ed53ba4523eb00633ffbe88abb8dab60b84a078fd0529c484c3f365"
+    },
+    {
+      "id": "q1-ph",
+      "parentSceneId": "q1-ph",
+      "text": "Nitric acid is strong, with one proton per molecule, so every molecule gives its proton to water, and the hydronium concentration equals the acid's, two point five zero times ten to the minus three. The negative log gives two point six zero two. Three significant figures in the concentration, so three decimal places in the pH.",
+      "hash": "a64a589d7c38",
+      "textSha256": "a64a589d7c38622e232bea78554e0fd1311df4d8d508eaed044b8b7f71df1399",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-ph.a64a589d7c38.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-ph.a64a589d7c38.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-ph.a64a589d7c38.generation.json",
+      "plannedRequestSha256": "748d2bbec680389cc1fc7177b85f268e868c6694d45101298716e73099c8f1a3"
+    },
+    {
+      "id": "q1-hydroxide",
+      "parentSceneId": "q1-hydroxide",
+      "text": "Now the hydroxide. An acid solution still has some, because water's own equilibrium is still there. K w is hydronium times hydroxide, so divide one point zero times ten to the minus fourteen by the hydronium. That's four point zero times ten to the minus twelve moles per litre, hundreds of millions of times less than the hydronium, as it should be in an acid.",
+      "hash": "d14fba0e9fc5",
+      "textSha256": "d14fba0e9fc5402262b7d8fb5c80e5fc55c36bd2d7158469a2ea89accd3eb777",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-hydroxide.d14fba0e9fc5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-hydroxide.d14fba0e9fc5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-hydroxide.d14fba0e9fc5.generation.json",
+      "plannedRequestSha256": "f134d375f1428996c2da497682767eb8ff0b9159a663880cac60843d795e76ff"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is thinking an acid this dilute must be weak. Strength is about how fully it ionises, not how much is there. Dilute nitric acid is still a strong acid, so the hydronium still equals its concentration.",
+      "hash": "b4e0d496dfe6",
+      "textSha256": "b4e0d496dfe6cf37d087194de61123591d4a4a0d0847ef184851fd039c54ae23",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-mistake.b4e0d496dfe6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-mistake.b4e0d496dfe6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q1-mistake.b4e0d496dfe6.generation.json",
+      "plannedRequestSha256": "fb4b6773b7eab4fd4e9542abed55e61d00f65dcc80e14dc97065fe26791cbf90"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. A student uses a pipette to transfer twenty five millilitres of zero point one two zero moles per litre hydrochloric acid into a volumetric flask, then makes it up to two hundred and fifty millilitres with water. Calculate the pH of the diluted solution. Pause here to answer.",
+      "hash": "964ee786f89f",
+      "textSha256": "964ee786f89fd658d4fe9a247726648342d0d3baf2e0614a980dfb89943647e0",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-question.964ee786f89f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-question.964ee786f89f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-question.964ee786f89f.generation.json",
+      "plannedRequestSha256": "f304bea4a212df0693f4f5e49cd48881597ec5dca69f0589b42b36f30d93431e"
+    },
+    {
+      "id": "q2-moles",
+      "parentSceneId": "q2-moles",
+      "text": "Adding water doesn't change the moles of acid, so start with moles. Zero point one two zero times zero point zero two five zero litres is zero point zero zero three zero zero moles. Made up to means that's the final volume, two hundred and fifty millilitres. So the concentration is zero point zero one two zero moles per litre, and the pH is one point nine two one.",
+      "hash": "804ede763e6e",
+      "textSha256": "804ede763e6e1aa9a3741919b2b8c958bd767aea031d52f866dac56fb7419653",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-moles.804ede763e6e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-moles.804ede763e6e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-moles.804ede763e6e.generation.json",
+      "plannedRequestSha256": "1bacd1f4b50575cb0b5f5dedb61b5424df228e84bd44f6d73b6acb411be0eb1a"
+    },
+    {
+      "id": "q2-check",
+      "parentSceneId": "q2-check",
+      "text": "Does that make sense? The volume went up ten times, so the concentration fell ten times. One pH unit is ten times, so the pH should rise by exactly one. The undiluted acid had a pH of zero point nine two one, so one point nine two one checks out.",
+      "hash": "71740757255e",
+      "textSha256": "71740757255e4d7eca5231562ac02fa883da972c618bc7edae088a6eec8f49ba",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-check.71740757255e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-check.71740757255e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-check.71740757255e.generation.json",
+      "plannedRequestSha256": "6c6b8d67318ead331bbda54ef84a2f313bf3b75992c73f8e72109eed2fa45747"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is adding the two volumes, as if two hundred and fifty millilitres of water went in. That gives two hundred and seventy five millilitres, and a pH of one point nine six two. Made up to means the total is two hundred and fifty.",
+      "hash": "cf792503fb91",
+      "textSha256": "cf792503fb9129d45311f2e39bb7f4c89b100f801e6f0a8c2f9c908ec7aae35e",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-mistake.cf792503fb91.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-mistake.cf792503fb91.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q2-mistake.cf792503fb91.generation.json",
+      "plannedRequestSha256": "6a19dc9555dfaa8a63fa5515619479914b52df3732d856a75956f5e403c3bcee"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. Thirty millilitres of hydrochloric acid with a pH of one point zero zero is mixed with twenty millilitres of sodium hydroxide solution with a pH of thirteen point zero zero, at twenty five degrees. Assume the volumes add. Calculate the pH of the mixture. Pause here to answer.",
+      "hash": "9022215905c5",
+      "textSha256": "9022215905c5deedaebf19b407c4436cef07398d67f84d9026f64198380f8b15",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-question.9022215905c5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-question.9022215905c5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-question.9022215905c5.generation.json",
+      "plannedRequestSha256": "3ec0566fc021cc91bdb8536b935fbee8f4bb46e3031c6e3dc241d5191488ecac"
+    },
+    {
+      "id": "q3-moles",
+      "parentSceneId": "q3-moles",
+      "text": "You can't mix pH values, because they're logs, so turn each one into a concentration. A pH of one point zero zero means zero point one zero moles per litre of hydronium. For the base, the pOH is fourteen minus thirteen, so the hydroxide is also zero point one zero. In moles, that's zero point zero zero three zero of hydronium and zero point zero zero two zero of hydroxide.",
+      "hash": "0937ecd9493d",
+      "textSha256": "0937ecd9493dbd97b86432bb197b545dad84332bcb437e3735df49bd571e0115",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-moles.0937ecd9493d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-moles.0937ecd9493d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-moles.0937ecd9493d.generation.json",
+      "plannedRequestSha256": "306eb27b491566448101c39f6007d306074d85de9a365b0d123e4251673b7f61"
+    },
+    {
+      "id": "q3-excess",
+      "parentSceneId": "q3-excess",
+      "text": "Neutralise first: hydronium and hydroxide make water until the hydroxide runs out, leaving zero point zero zero one zero moles of hydronium. Then dilute: it spreads through all fifty millilitres, so it's zero point zero two zero moles per litre, and the pH is one point seven zero. Check: acid was in excess, so the pH should be below seven, and it is.",
+      "hash": "23850bba6c8b",
+      "textSha256": "23850bba6c8b840f7f2711f18c956af88191e99b7a9f9274a393bd85b9c26abb",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-excess.23850bba6c8b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-excess.23850bba6c8b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-excess.23850bba6c8b.generation.json",
+      "plannedRequestSha256": "2c605d0a4c88fb52ef1c3385fc4d2d962b83034b917e74c546050516834170d2"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is averaging the two pH values. One and thirteen average to seven, neutral. But pH is a log scale, and there's more acid than base, so the mixture is still acidic.",
+      "hash": "375c978da7c7",
+      "textSha256": "375c978da7c7e8ac399b001931c19e77b9c06774e185e02036a8da92b6994650",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-mistake.375c978da7c7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-mistake.375c978da7c7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q3-mistake.375c978da7c7.generation.json",
+      "plannedRequestSha256": "ac769eb2e532a29826be7dec0e7015e6a2741a79f93e495bf2fc0902ca114c4b"
+    },
+    {
+      "id": "q4-question",
+      "parentSceneId": "q4-question",
+      "text": "Question four. Forty millilitres of zero point zero five zero zero moles per litre barium hydroxide is mixed with thirty millilitres of zero point one zero zero moles per litre hydrochloric acid, at twenty five degrees. Assume the volumes add. Calculate the pH of the resulting solution. Pause here to answer.",
+      "hash": "e301ba8bb276",
+      "textSha256": "e301ba8bb27647776f81b7fad34f762c3e23b2d60bbeaf8ee1c9062eb78ea326",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-question.e301ba8bb276.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-question.e301ba8bb276.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-question.e301ba8bb276.generation.json",
+      "plannedRequestSha256": "4f9905f5d41a702b2acbde40cbd433bb4a297d02e27ca02c6c2875e2e983875c"
+    },
+    {
+      "id": "q4-excess",
+      "parentSceneId": "q4-excess",
+      "text": "Count the hydroxides first. Each barium hydroxide releases two, so the hydroxide is two times zero point zero five zero zero times zero point zero four zero zero litres, zero point zero zero four zero zero moles. The acid gives zero point zero zero three zero zero moles of hydronium. So this time the hydroxide is in excess, by zero point zero zero one zero zero moles.",
+      "hash": "545072a036b8",
+      "textSha256": "545072a036b8e4293af064157cdc21fb77ecc06440f378cdab324a768906f1e3",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-excess.545072a036b8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-excess.545072a036b8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-excess.545072a036b8.generation.json",
+      "plannedRequestSha256": "e2fd8338487f3506c3a989b010179ee3a7046f7ff0a8019a774aaa2b3e34362b"
+    },
+    {
+      "id": "q4-ph",
+      "parentSceneId": "q4-ph",
+      "text": "That spreads through seventy millilitres, so the hydroxide is zero point zero one four three moles per litre. Hydroxide is what's left, so go through the pOH: one point eight four five. Then the pH is fourteen minus that, twelve point one five five. Check: base in excess, so the pH should be above seven, and it is.",
+      "hash": "a21181b3703a",
+      "textSha256": "a21181b3703abe59223c0e8edce1bce4d88edf090bbd36bb73dd256f26b1a33c",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-ph.a21181b3703a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-ph.a21181b3703a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-ph.a21181b3703a.generation.json",
+      "plannedRequestSha256": "15b33f776a37a47f63dacf45a62834736e975f7a5e623cde08bce1a77ef8a470"
+    },
+    {
+      "id": "q4-mistake",
+      "parentSceneId": "q4-mistake",
+      "text": "The classic mistake is forgetting the two. Then the base gives only zero point zero zero two zero zero moles, the acid looks like it's in excess, and you get one point eight four five, the wrong side of seven entirely.",
+      "hash": "3176ead2f61b",
+      "textSha256": "3176ead2f61b28822db5aaa3430e2605433eec06d0f23ea304675f4f07ccc882",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-mistake.3176ead2f61b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-mistake.3176ead2f61b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/q4-mistake.3176ead2f61b.generation.json",
+      "plannedRequestSha256": "0c54cc5e261e21079bf57cb006f8085c72fa48f040b3ecb0bb5f7ff6f480cb8f"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start any strong acid or base question. Check it's strong, then find the hydronium or hydroxide, counting the hydroxides. If it's diluted, the moles stay the same, so divide by the final volume. If an acid and a base are mixed, neutralise first, then dilute, using the total volume. And check the answer is on the right side of seven. Next, weak acids, with an ICE table.",
+      "hash": "438c69268323",
+      "textSha256": "438c69268323c12c1caf4e99cbd6a6279b9e502deb71c85c61aedc6c9c4c99e7",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/decision-board.438c69268323.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/decision-board.438c69268323.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/decision-board.438c69268323.generation.json",
+      "plannedRequestSha256": "07d7530327d4d2d4d1583624c09ea670102b46af67be599547eeb89b5c032997"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M6-G01-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6p06/measured/lesson.json",
+    "lessonSha256": "689b28cc01d2e755da9b78348dc67ea4c22a0a25081ba2d49c6f6f9de19c24e9"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m6-c12 (titration, standard solution, primary standard, aliquot, burette, titrant, titre, indicator, endpoint, equivalence point, rough and concordant titres within 0.10 mL, the four steps \"known to moles, ratio, unknown\", Na₂CO₃ + 2HCl, sodium carbonate dried before weighing). chem-m6-p04 and p05 (volumetric pipette and flask used in a dilution; the pipette filler). chem-m5-p01 (validity, reliability, accuracy; variables; risk). Year 11 (n = m/M, n = cV). Not assumed: rinsing rules, meniscus reading, bubbles, error direction.",
+    "startsWith": "Prepare or select a standard, then set up burette and pipette. The video opens: Two lab benches titrate the same hydrochloric acid against the same standard. Each bench's titres agree within zero point zero five millilitres. But bench A's average is twenty four point three three, and bench B's is twenty four point eight two.",
+    "stopsAfter": "preparing a sodium carbonate standard and explaining each step; calculating its concentration; pipetting an aliquot and explaining the rinse, the filler and the last drop; explaining why the conical flask may be wet; setting up and reading a burette to 0.05 mL at eye level, with no tip bubble; carrying out a rough run and accurate runs to the first permanent orange; recording a titre table, excluding a faulty run for a known cause and repeating it; calculating the unknown concentration; tracing a technique error through the titre to the answer; naming the controlled conditions; judging validity, reliability and accuracy, including why concordant titres can still be inaccurate; writing the risk rows. No indicator choice (chem-m6-c13), no error-direction tables (chem-m6-g04), no aliquot scale-up or percentage by mass (chem-m6-g03), no percentage uncertainty.",
+    "nextLesson": "standardisation and titration calculation practice (route chem-m6-g03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-p06.md"
+  ],
+  "teaching": {
+    "task": "Two benches titrate the same hydrochloric acid against the same standard. Both get concordant titres, but their means differ by half a millilitre. How do you carry out a titration step by step so the titre can be trusted, and how do you trace what went wrong?",
+    "causalExplanation": "(1) concordant titres on both benches, different means: which is right? (1); (2) the plan: a weighed standard in the flask, the unknown in the burette, carbonate takes two HCl (C12) (2); (3) dry the solid so none of its mass is water; weigh exactly; rinse every grain into the flask (3); (4) make up to the mark and invert so every aliquot is the same; the standard's concentration from its mass (4); (5) rinse the pipette with the carbonate because water would dilute it; leave the last drop because the pipette is calibrated that way; the flask can be wet because water adds no moles (5); (6) rinse the burette with the acid; remove the funnel; fill the tip so no bubble is counted as acid (6); (7) read at eye level to 0.05 mL; the numbers get bigger going down, so a reading from above is too low (7); (8) a rough run finds the endpoint; accurate runs go dropwise near it, to the first permanent orange (8); (9) titre = final − initial; a run with a known fault (a bubble) is excluded and repeated; mean of three concordant titres (9); (10) the calculation (10); (11) bench B: water in the burette dilutes the acid, so more millilitres react with the same carbonate, the titre is too big and the answer too low; rinse with what's going in (11); controlled conditions (12); validity, reliability, accuracy (13); risk (14); attempts and brief feedback (15 to 18); decision rule and handoff (19); key notes (20).",
+    "conversationalApproach": "two benches titrate the same acid against the same standard and both get concordant titres, yet their means differ by half a millilitre, so the practical asks how to carry out each step so a titre can be trusted and how to trace what went wrong. The plan puts a weighed sodium carbonate standard in the flask and the unknown hydrochloric acid in the burette; each step then gets its reason: dry, weigh and rinse every grain in, make up to the mark and invert, rinse the pipette and burette with what goes in, clear the tip bubble, read the meniscus at eye level, titrate a rough run first and then drop by drop. Bench A's table drops the run with a recorded fault, the C12 calculation is staged one line per stage, and bench B's water-rinsed burette is traced through the titre to a concentration that comes out too low. Controlled conditions, validity, reliability and accuracy, and the risk assessment follow. Two exam questions follow with brief feedback.",
+    "openingDecision": "Two lab benches titrate the same hydrochloric acid against the same standard. Each bench's titres agree within zero point zero five millilitres. But bench A's average is twenty four point three three, and bench B's is twenty four point eight two. So how do you run a titration you can trust, and spot what went wrong?",
+    "understandingCheck": "(A1) \"A student rinses a 25.00 mL pipette with distilled water and then, without drying it, uses it to transfer the sodium carbonate aliquot into the conical flask. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid.\" Answer: the water left in the pipette dilutes the aliquot, so it holds fewer moles of carbonate than calculated; less acid is needed, so the titre is smaller; the calculation divides the full calculated moles by a smaller titre, so c(HCl) is too high. Crossed mistake: \"the carbonate is diluted, so c(HCl) comes out too low\". (A2, Revision 2, the learning review's alternative) \"Before adding the aliquot, a student rinses the conical flask with the sodium carbonate solution. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid.\" Answer: the rinse leaves a film of carbonate solution in the flask, so the flask holds more moles than the aliquot alone; more acid is needed, so the titre is bigger; the calculation divides the aliquot's moles by a bigger titre, so c(HCl) is too low. Crossed mistake: \"rinsing with the solution is correct, so no effect\". The two answers differ (A1 too high, A2 too low).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" this video prepares students to carry out and analyse a titration practical; it does not claim that watching it is conducting it. It teaches: preparing a sodium carbonate primary standard (dried, weighed, dissolved, transferred with rinsings, made up to the mark, inverted) and why each step matters; pipetting the aliquot (rinse with the solution, filler, drain, touch the tip, leave the last drop); why the conical flask may be wet with distilled water; setting up the burette (rinse with the acid, fill below eye level, remove the funnel, fill the tip, no bubble); reading the burette at eye level to 0.05 mL; the rough run and the accurate runs (fast to about 1 mL short, then dropwise with swirling, first permanent orange); the results table, a faulty run identified by its cause, excluded and repeated (the C12 draft correction 2 fix); the calculation in one compact pass (C12 callback); tracing a technique error through the titre to the answer (water-rinsed burette, bubble); controlled conditions; validity, reliability and accuracy, including \"concordant is not the same as accurate\"; the risk assessment. Placement (playlist order 19): after C12 (order 18), before G03 (order 20) and before C13 (indicators, order 21), C14 (curves), C15 (back and conductometric titrations) and C16 (method choice). So methyl orange is named, with its colours, but not justified (C13 owns indicator choice); no curve, conductivity or back titration appears. Not re-taught: what a titration, standard solution, aliquot, titre, endpoint, equivalence point, primary standard and concordance are; the four-step calculation; why carbonate takes two HCl (all C12; recalled in one clause each). Not here: indicator choice and equivalence pH (chem-m6-c13); error-direction tables across many errors (chem-m6-g04); aliquot scale-up, percentage by mass and the full mass-to-concentration practice (chem-m6-g03); percentage uncertainty arithmetic; boiling out carbon dioxide near the endpoint (author note e)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key on screen throughout (C12): the known solution's values (standard) navy; the unknown's values amber; the ratio box teal; concordant titres ringed teal, excluded rows crossed grey; error-chain chips: cause grey, \"titre bigger\" or \"titre smaller\" violet, \"answer too low\" or \"too high\" terracotta; controls green, hazards terracotta; methyl orange yellow, orange and red as painted. Board layout (three zones, constant, as P05): top-left the short task line; the centre holds the apparatus; the right third holds the current card (procedure step, reason, titre table, calculation, error chain, VRA, risk), one at a time. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: painted plates, inspected 21 Oct: `m6-burette-clamp-stand-v1.png` (retort stand, clamp, burette with blue tap; the fill gauge drawn over its tube), `m6-conical-flask-v1.png`, `m6-white-tile-v1.png`, `m6-volumetric-flask-v1.png` (stoppered, with a neck mark), `m6-volumetric-pipette-filler-v1.png` (bulb pipette with red filler, native aspect, rotated whole), `m6-funnel-v1.png` (glass funnel; the standard transfer and the burette fill), `m6-beaker-v1.png` (the weighing beaker; the beaker of unknown acid), `m6-wash-bottle-v1.png` (rinses), `m6-indicator-methyl-orange-set-v1.png` (three conical flasks, red, orange and yellow, in one plate; scene 8 thumbnail of the colour order and the fallback for the endpoint flask, see Assets), `m5x-safety-glasses-v1.png` (risk). From P03's Codex asset brief (not yet painted): `m6-buffer-bottle-v1.png` is not needed here. Not used: `m6-clip-phenolphthalein-*` (wrong indicator for this titration), the bench balance clip art in `public/assets/` root (`scale.png`, `lab-footage-balance-beaker.png`: inspected, white-background icon style that does not match the painted plates). No human figures.",
+    "transitionPlan": "Two burette, flask and tile plates open the hook with their bench tags and mini titre tables; the board clears to one set-up with its coded labels for the plan; the analytical balance plate, beaker and funnel build the standard with a step card in the right zone; the volumetric flask fills to the mark and a magnifier ring opens on the meniscus; the pipette rinses, fills and drains with reason tags; the burette lowers below a dashed eye-level line, rinses, fills and loses its funnel and tip bubble; the meniscus close-up plate takes the centre with coded scale numerals and three sight lines; the volume counter runs fast for the rough run and then drop by drop as the flask colour swaps; C12's titre table widens the right zone and run 2 is greyed with its fault note; the table dims to a strip as the task line, mole bridge, givens and working write one stage per line; bench B's table returns and the error chain draws chip by chip; the controlled list, the three evaluation cards and the risk table write in turn; each attempt clears the board and its feedback underlines the question as the error chain writes; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `m6-burette-clamp-stand-v1.png` plates side by side, each with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png`, coded bench tags \"bench A\" and \"bench B\".",
+      "teachingReason": "Hook (concordant, but which is right?): Two lab benches titrate the same hydrochloric acid against the same standard.",
+      "narrationCue": "twenty four point three three / twenty four point eight two / wrong",
+      "motionPurpose": "On the spoken cues: Under each, a mini titre table writes, three rows ringed teal: A \"24.35, 24.30, 24.35\", B \"24.80, 24.85, 24.80\", each with a small concordance bracket \"within 0.05 mL\". On \"twenty four point three three\" A's mean chip writes \"mean 24.33 mL\"; on \"twenty four point eight two\" B's writes \"mean 24.82 mL\", and a grey bracket \"0.49 mL apart\" joins them. On \"wrong\" a heading writes: \"Concordant... but right?\" Bright at the",
+      "motionRole": "explain",
+      "onScreenChange": "two `m6-burette-clamp-stand-v1.png` plates side by side, each with `m6-conical-flask-v1.png` on `m6-white-tile-v1.png`, coded bench tags \"bench A\" and \"bench B\". Under each, a mini titre table writes, three rows ringed teal: A \"24.35, 24.30, 24.35\", B \"24.80, 24.85, 24.80\", each with a small concordance bracket \"within 0.05 mL\". On \"twenty four point three three\" A's mean chip writes \"mean 24.33 mL\"; on \"twenty four point eight two\" B's writes \"mean 24.82 mL\", and a grey bracket \"0.49 mL apart\" joins them. On \"wrong\" a heading writes: \"Concordant... but right?\" Bright at the end: the two mean chips and the heading. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "plan",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "The plan: The unknown is hydrochloric acid, roughly zero point one moles per litre.",
+      "narrationCue": "sodium carbonate / burette / two",
+      "motionPurpose": "On the spoken cues: Centre: the burette plate (coded fill amber, label \"unknown HCl, about 0.1 mol/L\") over the conical flask (coded label \"Na₂CO₃ standard, 25.00 mL\", navy). On \"sodium carbonate\" a small `m6-volumetric-flask-v1.png` appears at the right with a navy tag \"standard: made from the solid\". On \"burette\" the amber label pulses. On \"two\" the equation strip writes \"Na₂CO₃(aq) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\", its",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Centre: the burette plate (coded fill amber, label \"unknown HCl, about 0.1 mol/L\") over the conical flask (coded label \"Na₂CO₃ standard, 25.00 mL\", navy). On \"sodium carbonate\" a small `m6-volumetric-flask-v1.png` appears at the right with a navy tag \"standard: made from the solid\". On \"burette\" the amber label pulses. On \"two\" the equation strip writes \"Na₂CO₃(aq) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\", its coefficients pulse \"1 : 2\", and C12's mole bridge thumbnail (known → ratio → unknown) writes beneath with a grey tag \"titration video\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "make-standard",
+      "visualDecision": "adjust",
+      "visualReference": "right zone, step card \"1 Make the standard\" with a grey tag \"desiccator: sealed jar with a drying agent\".",
+      "teachingReason": "Make the standard: dry, weigh, rinse it all in: Start with sodium carbonate dried in an oven and cooled in a desiccator, so none of its mass is water.",
+      "narrationCue": "desiccator / one point three six five six / rinse",
+      "motionPurpose": "On the spoken cues: Centre: `m6-analytical-balance-v1.png` (new plate) with `m6-beaker-v1.png` small on its pan; on \"one point three six five six\" the coded readout settles \"1.3656 g\" (navy), with a grey tag \"analytical balance: reads to 0.0001 g\" and a chip \"record every digit\". On \"Dissolve it\" the beaker moves to the funnel (`m6-funnel-v1.png`) in the neck of `m6-volumetric-flask-v1.png`; a coded stream runs in. On \"rinse\" the wash",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, step card \"1 Make the standard\" with a grey tag \"desiccator: sealed jar with a drying agent\". Centre: `m6-analytical-balance-v1.png` (new plate) with `m6-beaker-v1.png` small on its pan; on \"one point three six five six\" the coded readout settles \"1.3656 g\" (navy), with a grey tag \"analytical balance: reads to 0.0001 g\" and a chip \"record every digit\". On \"Dissolve it\" the beaker moves to the funnel (`m6-funnel-v1.png`) in the neck of `m6-volumetric-flask-v1.png`; a coded stream runs in. On \"rinse\" the wash bottle (`m6-wash-bottle-v1.png`) sends three short coded streams into the beaker and through the funnel, a counter \"rinse 1, 2, 3\" ticks, and a reason tag writes: \"quantitative transfer: every grain into the flask\". Earlier tags dim (the desiccator tag carries \"sealed jar with a drying agent\", so the narration does not say it). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "make-up-concentration",
+      "visualDecision": "new",
+      "visualReference": "P04's fill-to-mark motion: the coded level rises, slows near the neck mark, and the last drops land singly; on \"mark\" a magnifier ring opens on the neck with the curved surface touching the line and a tag \"meniscus: the curved surface; its bottom on the mark\".",
+      "teachingReason": "Make up to the mark, and its concentration: Add water until the bottom of the meniscus sits on the mark, at eye level, then stopper and invert it many times, so every aliquot is the same. n equals m over M gives zero point zero one two eight eight four moles, and over zero point two five zero zero litres, that's zero point zero five one five four moles per litre.",
+      "narrationCue": "mark / invert / zero point zero five one five four",
+      "motionPurpose": "On the spoken cues: On \"invert\" the flask plate rotates whole through 180° and back three times (coded motion, no hand), tag \"mixed: every aliquot the same\". Then the right zone becomes the calculation card. Task line: \"c(Na₂CO₃) standard\". Givens: \"m = 1.3656 g | M(Na₂CO₃) = 105.99 g/mol | V = 250.0 mL\". Lines, one at a time, earlier dimming: \"n = m ÷ M = 1.3656 ÷ 105.99 = 0.012884 mol\" (grey tag \"keep the digits; round at the end\",",
+      "motionRole": "explain",
+      "onScreenChange": "P04's fill-to-mark motion: the coded level rises, slows near the neck mark, and the last drops land singly; on \"mark\" a magnifier ring opens on the neck with the curved surface touching the line and a tag \"meniscus: the curved surface; its bottom on the mark\". On \"invert\" the flask plate rotates whole through 180° and back three times (coded motion, no hand), tag \"mixed: every aliquot the same\". Then the right zone becomes the calculation card. Task line: \"c(Na₂CO₃) standard\". Givens: \"m = 1.3656 g | M(Na₂CO₃) = 105.99 g/mol | V = 250.0 mL\". Lines, one at a time, earlier dimming: \"n = m ÷ M = 1.3656 ÷ 105.99 = 0.012884 mol\" (grey tag \"keep the digits; round at the end\", dims); on \"zero point zero five one five four\" \"c = n ÷ V = 0.012884 ÷ 0.2500 = 0.05154 mol/L\" and a navy kept chip pins: \"c(Na₂CO₃) = 0.05154 mol/L\", with a small grey tag \"practised in the next video\" (dims). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "aliquot",
+      "visualDecision": "adjust",
+      "visualReference": "right zone, step card \"2 Pipette the aliquot\".",
+      "teachingReason": "The aliquot: rinse, fill, drain, leave the last drop: Now the aliquot.",
+      "narrationCue": "carbonate solution / drop / distilled water / yellow",
+      "motionPurpose": "On the spoken cues: Centre: `m6-volumetric-pipette-filler-v1.png` (native aspect). On \"carbonate solution\" a short navy coded stream rinses up and out of the pipette, reason tag \"rinse with the carbonate: no water to dilute it\". The pipette fills to its mark (coded level, magnifier ring on the mark), then drains into `m6-conical-flask-v1.png`; the tip touches the flask wall. On \"drop\" the small coded drop stays in the tip, ringed, with",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, step card \"2 Pipette the aliquot\". Centre: `m6-volumetric-pipette-filler-v1.png` (native aspect). On \"carbonate solution\" a short navy coded stream rinses up and out of the pipette, reason tag \"rinse with the carbonate: no water to dilute it\". The pipette fills to its mark (coded level, magnifier ring on the mark), then drains into `m6-conical-flask-v1.png`; the tip touches the flask wall. On \"drop\" the small coded drop stays in the tip, ringed, with a chip \"blow out the last drop\" fading in and crossed (caption \"calibrated to leave it\"). On \"distilled water\" the step card's reason tag dims and the crossed \"blow out the last drop\" chip fades to grey first; then a thin coded film shows in the flask, tag \"water adds no moles\", and a second small chip \"rinse the flask with carbonate\" fades in and is crossed (caption \"flask: distilled water only\"; no error chain, because attempt 2 tests it), silent. On \"yellow\" three coded drops fall and the flask swaps to the yellow endpoint plate (see Assets). Earlier tags dim. Bright at the end: the yellow flask, the tag \"water adds no moles\" and one crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "burette-setup",
+      "visualDecision": "adjust",
+      "visualReference": "right zone, step card \"3 Set up the burette\".",
+      "teachingReason": "The burette: rinse, fill, take the funnel out, no bubble: Next, the burette.",
+      "narrationCue": "hydrochloric acid / out / air bubble",
+      "motionPurpose": "On the spoken cues: Centre: the burette plate, its clamp lowered so the top sits below a dashed grey line labelled \"eye level\" (no eye drawn). On \"hydrochloric acid\" two short amber rinses run in and out through the tap (the tap turns in coded motion), reason tag \"rinse with the acid: no water to dilute it\". On \"out\" the funnel (`m6-funnel-v1.png`, small) lifts away from the burette top, tag \"funnel out: no stray drips\". On \"air",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, step card \"3 Set up the burette\". Centre: the burette plate, its clamp lowered so the top sits below a dashed grey line labelled \"eye level\" (no eye drawn). On \"hydrochloric acid\" two short amber rinses run in and out through the tap (the tap turns in coded motion), reason tag \"rinse with the acid: no water to dilute it\". On \"out\" the funnel (`m6-funnel-v1.png`, small) lifts away from the burette top, tag \"funnel out: no stray drips\". On \"air bubble\" a magnifier ring on the tip shows a coded air pocket; the tap opens, a short stream runs into a waste beaker (`m6-beaker-v1.png`, small) and the pocket leaves; tag \"tip full: no bubble\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "burette-reading",
+      "visualDecision": "adjust",
+      "visualReference": "the burette shrinks to the left; centre: `m6-burette-meniscus-closeup-v1.png` (new plate, native aspect) with coded scale numerals \"0.0, 0.1 ... 0.6\" beside its painted graduation lines (numbers increase downwards).",
+      "teachingReason": "Reading the burette: Read it with your eye level with the bottom of the meniscus.",
+      "narrationCue": "meniscus / bigger / above / parallax / half / zero point four zero",
+      "motionPurpose": "On the spoken cues: On \"meniscus\" the bottom of the curve is ringed. On \"bigger\" a small grey arrow \"↓ increasing\" draws down the numerals (before any sight line appears). On \"Look from above\" the coded sight line starts tilted down from above the tube; on \"above\" the point where it crosses the scale is ringed at 0.30 and the coded reading beside it shows \"0.30\" in grey (the ring on the meniscus dims); on \"parallax\" the term writes",
+      "motionRole": "explain",
+      "onScreenChange": "the burette shrinks to the left; centre: `m6-burette-meniscus-closeup-v1.png` (new plate, native aspect) with coded scale numerals \"0.0, 0.1 ... 0.6\" beside its painted graduation lines (numbers increase downwards). On \"meniscus\" the bottom of the curve is ringed. On \"bigger\" a small grey arrow \"↓ increasing\" draws down the numerals (before any sight line appears). On \"Look from above\" the coded sight line starts tilted down from above the tube; on \"above\" the point where it crosses the scale is ringed at 0.30 and the coded reading beside it shows \"0.30\" in grey (the ring on the meniscus dims); on \"parallax\" the term writes with \"the reading shifts with your eye position\" and the sight line levels at the meniscus bottom, the grey \"0.30\" and its ring fading. On \"half\" a bracket spans one 0.1 mL gap with a midpoint tick, tag \"read to ±0.05 mL\". On \"zero point four zero\" the reading settles \"initial: 0.40 mL\" (amber) and pins as a chip; a silent chip \"start at exactly 0.00\" fades in and is crossed (caption \"record wherever it starts\"). Bright at the end: the ringed meniscus, the reading chip and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "titrate",
+      "visualDecision": "adjust",
+      "visualReference": "right zone, step card \"4 Titrate\".",
+      "teachingReason": "Rough first, then drop by drop: The first run is a quick rough titration.",
+      "narrationCue": "rough / drop by drop / orange",
+      "motionPurpose": "On the spoken cues: Centre: the full set-up, burette fill gauge and volume counter (C12). On \"rough\" the counter runs fast to \"24.90\" and the flask swaps yellow → red; a grey tag \"rough: overshot, not used\" and the colour thumbnail `m6-indicator-methyl-orange-set-v1.png` small in the corner with coded labels \"yellow: before\", \"orange: endpoint\", \"red: past it\". The flask resets yellow. On \"about a millilitre short\" the counter runs",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, step card \"4 Titrate\". Centre: the full set-up, burette fill gauge and volume counter (C12). On \"rough\" the counter runs fast to \"24.90\" and the flask swaps yellow → red; a grey tag \"rough: overshot, not used\" and the colour thumbnail `m6-indicator-methyl-orange-set-v1.png` small in the corner with coded labels \"yellow: before\", \"orange: endpoint\", \"red: past it\". The flask resets yellow. On \"about a millilitre short\" the counter runs fast to \"23.9\" with a marker \"rough − 1 mL\". On \"drop by drop\" single coded drops fall, each followed by a short swirl wobble of the flask plate (coded rotation, no hand); a brief orange flash fades back to yellow twice. Between drops a thin wash-bottle stream runs down the inside of the flask, with a silent tag \"rinse splashes down with distilled water: no moles added\". On \"orange\" the flask swaps to the orange plate and holds; tag \"first permanent orange (stays after swirling)\". A grey tag \"why methyl orange: the indicators video\" (dims). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "results",
+      "visualDecision": "new",
+      "visualReference": "the right zone widens for C12's titre table: columns \"run | initial (mL) | final (mL) | titre (mL)\"; rows \"rough | 0.00 | 24.90 | 24.90\" (greyed, \"not used\"); \"1 | 0.40 | 24.75 | 24.35\"; \"2 | 0.15 | 24.80 | 24.65\"; \"3 | 0.20 | 24.50 | 24.30\"; \"4 | 1.05 | 25.40 | 24.35\"; each titre cell writes as \"final − initial\".",
+      "teachingReason": "The results, and a run with a known fault: Here are bench A's results: each titre is final minus initial.",
+      "narrationCue": "twenty four point six five / repeated / twenty four point three three",
+      "motionPurpose": "On the spoken cues: On \"twenty four point six five\" row 2 pulses and a grey note writes beside it \"bubble left tip\". A thumbnail of the burette tip replays the bubble leaving while the counter jumps and no liquid enters the flask; tag \"bubble counted as acid: titre too big\". On \"repeated\" row 2 takes a grey cross with the caption \"excluded: known fault; repeated (run 4)\". C12's concordance strip draws (24.25 to 24.70 mL): the bracket",
+      "motionRole": "explain",
+      "onScreenChange": "the right zone widens for C12's titre table: columns \"run | initial (mL) | final (mL) | titre (mL)\"; rows \"rough | 0.00 | 24.90 | 24.90\" (greyed, \"not used\"); \"1 | 0.40 | 24.75 | 24.35\"; \"2 | 0.15 | 24.80 | 24.65\"; \"3 | 0.20 | 24.50 | 24.30\"; \"4 | 1.05 | 25.40 | 24.35\"; each titre cell writes as \"final − initial\". On \"twenty four point six five\" row 2 pulses and a grey note writes beside it \"bubble left tip\". A thumbnail of the burette tip replays the bubble leaving while the counter jumps and no liquid enters the flask; tag \"bubble counted as acid: titre too big\". On \"repeated\" row 2 takes a grey cross with the caption \"excluded: known fault; repeated (run 4)\". C12's concordance strip draws (24.25 to 24.70 mL): the bracket \"spread 0.05 mL\" covers 24.30 to 24.35, with a small grey label \"rule: within 0.10 mL\" beside it, the 24.65 dot crossed outside. On \"twenty four point three three\" rows 1, 3 and 4 ring teal and \"(24.35 + 24.30 + 24.35) ÷ 3 = 24.33 mL\" writes and shrinks to a kept chip \"mean titre = 24.33 mL\". Bright at the end: the ringed rows, the crossed row and the kept chip. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "table build",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "calculation",
+      "visualDecision": "new",
+      "visualReference": "the table dims to a strip.",
+      "teachingReason": "The calculation: Now the calculation.",
+      "narrationCue": "one point two eight eight five times ten to the minus three / two point five seven seven times ten to the minus three / zero point one zero five nine",
+      "motionPurpose": "On the spoken cues: Task line: \"Find c(HCl)\". Equation strip (from scene 2, small). C12's mole bridge draws. Givens: \"Na₂CO₃: c = 0.05154 mol/L, V = 25.00 mL\" (navy) | \"HCl: mean titre 24.33 mL\" (amber). Lines one at a time, earlier dimming: on \"one point two eight eight five\" \"n(Na₂CO₃) = 0.05154 × 0.02500 = 1.2885 × 10⁻³ mol\" (grey tag \"keep the digits; round at the end\", dims), known box fills; on \"two point five seven seven\"",
+      "motionRole": "explain",
+      "onScreenChange": "the table dims to a strip. Task line: \"Find c(HCl)\". Equation strip (from scene 2, small). C12's mole bridge draws. Givens: \"Na₂CO₃: c = 0.05154 mol/L, V = 25.00 mL\" (navy) | \"HCl: mean titre 24.33 mL\" (amber). Lines one at a time, earlier dimming: on \"one point two eight eight five\" \"n(Na₂CO₃) = 0.05154 × 0.02500 = 1.2885 × 10⁻³ mol\" (grey tag \"keep the digits; round at the end\", dims), known box fills; on \"two point five seven seven\" \"n(HCl) = 2 × 1.2885 × 10⁻³ = 2.577 × 10⁻³ mol\", ratio and unknown boxes fill; on \"zero point one zero five nine\" \"c(HCl) = 2.577 × 10⁻³ ÷ 0.02433 = 0.1059 mol/L\" and the answer chip pins \"bench A: c(HCl) = 0.1059 mol/L\", grey tag \"4 s.f., like the data\" (dims). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "bench-b-error",
+      "visualDecision": "new",
+      "visualReference": "the bench B mini table returns from the hook at the left.",
+      "teachingReason": "Bench B: trace the error through the titre: So what happened on bench B?",
+      "narrationCue": "big / dilutes / low / rinse with what's going in",
+      "motionPurpose": "On the spoken cues: On \"big\" its three titres pulse beside A's mean chip, tag \"each ≈ 0.5 mL bigger\". The error chain draws in the right zone, one chip per cue: on \"dilutes\" \"water in burette → acid diluted\" (grey) with a coded burette whose amber fill pales slightly; \"→ titre bigger\" (violet) on \"more millilitres are needed\"; on \"divided by more millilitres\" the line \"2.577 × 10⁻³ ÷ 0.02482 = 0.1038 mol/L\" writes small beside A's",
+      "motionRole": "explain",
+      "onScreenChange": "the bench B mini table returns from the hook at the left. On \"big\" its three titres pulse beside A's mean chip, tag \"each ≈ 0.5 mL bigger\". The error chain draws in the right zone, one chip per cue: on \"dilutes\" \"water in burette → acid diluted\" (grey) with a coded burette whose amber fill pales slightly; \"→ titre bigger\" (violet) on \"more millilitres are needed\"; on \"divided by more millilitres\" the line \"2.577 × 10⁻³ ÷ 0.02482 = 0.1038 mol/L\" writes small beside A's \"2.577 × 10⁻³ ÷ 0.02433 = 0.1059\", the same \"2.577 × 10⁻³\" lit in both and the bigger \"0.02482\" lit violet; on \"low\" \"→ answer too low\" (terracotta) writes with \"(2% low)\" beside the 0.1038, and the two lines dim to grey. On \"rinse with what's going in\" the aid writes large and handwritten, with its condition tag beneath: \"burette: the solution it delivers; pipette: the solution it measures; volumetric and conical flasks: distilled water\". Bright at the end: the chain's last chip, the aid and its tag. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "controlled",
+      "visualDecision": "new",
+      "visualReference": "right zone, card \"Measured: the titre\".",
+      "teachingReason": "Controlled conditions: In a titration, nothing is changed to test its effect.",
+      "narrationCue": "same / colour",
+      "motionPurpose": "On the spoken cues: On \"same\" a controlled list writes, one row per spoken item, each with a pen link to its object: \"25.00 mL aliquot, same pipette\" (pipette), \"same standard, 0.05154 mol/L\" (flask), \"3 drops methyl orange\" (dropper icon from the drops), \"same endpoint: first permanent orange\" (orange flask plate, on \"colour\"); a grey row \"same temperature, same burette\" (silent). Then, under \"Measured: the titre\", a grey line writes",
+      "motionRole": "explain",
+      "onScreenChange": "right zone, card \"Measured: the titre\". On \"same\" a controlled list writes, one row per spoken item, each with a pen link to its object: \"25.00 mL aliquot, same pipette\" (pipette), \"same standard, 0.05154 mol/L\" (flask), \"3 drops methyl orange\" (dropper icon from the drops), \"same endpoint: first permanent orange\" (orange flask plate, on \"colour\"); a grey row \"same temperature, same burette\" (silent). Then, under \"Measured: the titre\", a grey line writes and stays (silent): \"If a task asks for variables: the titre is what you measure; the aliquot, standard, indicator, endpoint colour and temperature are controlled; nothing is varied to test its effect.\" Earlier rows dim as it writes. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: answers the question?",
+      "teachingReason": "Validity, reliability and accuracy: Validity: does the method answer the question?",
+      "narrationCue": "Validity / Reliability / Accuracy / wrong",
+      "motionPurpose": "On the spoken cues: One measured quantity, the titre, everything else controlled; 1 : 2 at the methyl orange endpoint.\" \"Reliability: repeats agree? Three titres within 0.05 mL; the bubble run excluded for its cause and repeated.\" \"Accuracy: close to the true value? Dried, exactly weighed standard; rinse with what's going in; read at eye level; no bubble; volumetric glassware; analytical balance.\" On \"wrong\" bench B's mini table and",
+      "motionRole": "explain",
+      "onScreenChange": "three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: answers the question? One measured quantity, the titre, everything else controlled; 1 : 2 at the methyl orange endpoint.\" \"Reliability: repeats agree? Three titres within 0.05 mL; the bubble run excluded for its cause and repeated.\" \"Accuracy: close to the true value? Dried, exactly weighed standard; rinse with what's going in; read at eye level; no bubble; volumetric glassware; analytical balance.\" On \"wrong\" bench B's mini table and chip \"concordant but 2% low\" slide in beside the accuracy card, with A's \"0.1059\" beside B's \"0.1038\". A small grey footer, quoting only the verified NESA wording: 'Accuracy (NESA, Science Years 7 to 10 Syllabus, 2018): \"the extent to which a measured value agrees with its true value\".' (Verified 21 Oct against the NSW Department of Education resource \"Evaluating scientific investigations\", which reproduces the definition from that syllabus, © NESA; the full entry continues \"(namely - reference value)\", which is left off; the quoted words are exact and in order.) Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"solid Na₂CO₃ (H319)\" / \"serious eye irritation from dust\" / \"safety glasses (`m5x-safety-glasses-v1.png`); spatula; clean spills\"; \"0.1 mol/L HCl, 0.05 mol/L Na₂CO₃: below GHS classification limits\" / \"eye irritation from a splash\" / \"safety glasses; wash spills with water\"; \"methyl orange: solid H301; indicator solution (about 0.1%) below limits\" / \"toxic if swallowed (solid)\" / \"a few drops; cap the bottle; wash hands\"; \"filling the burette\" / \"splash into the eyes\" / \"top below eye level; funnel removed; clamp firm\"; \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\".",
+      "teachingReason": "The risk assessment: The risk assessment.",
+      "narrationCue": "classification / below eye level / filler",
+      "motionPurpose": "On the spoken cues: Grey rows: \"drying oven: teacher only (hot glassware)\"; \"waste: neutral sodium chloride solution; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\".",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"solid Na₂CO₃ (H319)\" / \"serious eye irritation from dust\" / \"safety glasses (`m5x-safety-glasses-v1.png`); spatula; clean spills\"; \"0.1 mol/L HCl, 0.05 mol/L Na₂CO₃: below GHS classification limits\" / \"eye irritation from a splash\" / \"safety glasses; wash spills with water\"; \"methyl orange: solid H301; indicator solution (about 0.1%) below limits\" / \"toxic if swallowed (solid)\" / \"a few drops; cap the bottle; wash hands\"; \"filling the burette\" / \"splash into the eyes\" / \"top below eye level; funnel removed; clamp firm\"; \"pipetting\" / \"swallowing solution\" / \"pipette filler (the red bulb ringed), never by mouth\". Grey rows: \"drying oven: teacher only (hot glassware)\"; \"waste: neutral sodium chloride solution; sink with water if school rules allow\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student rinses her pipette with",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A student rinses a 25.00 mL pipette with distilled water and then, without drying it, uses it to transfer the sodium carbonate aliquot into the conical flask. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no error chain, no aid.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "fewer moles / smaller / high",
+      "motionPurpose": "On the spoken cues: On \"fewer moles\" \"with distilled water\" and \"without drying it\" are underlined and the error chain writes its first chip \"wet pipette → fewer moles of Na₂CO₃ in the flask\" (grey). On \"smaller\" \"the sodium carbonate aliquot\" is underlined and the chip \"→ titre smaller\" (violet) writes. On \"high\" \"calculated concentration of the hydrochloric acid\" is underlined and \"→ c(HCl) too high\" (terracotta) writes, with a small",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"fewer moles\" \"with distilled water\" and \"without drying it\" are underlined and the error chain writes its first chip \"wet pipette → fewer moles of Na₂CO₃ in the flask\" (grey). On \"smaller\" \"the sodium carbonate aliquot\" is underlined and the chip \"→ titre smaller\" (violet) writes. On \"high\" \"calculated concentration of the hydrochloric acid\" is underlined and \"→ c(HCl) too high\" (terracotta) writes, with a small line \"c = n(calculated) ÷ smaller titre\". A chip \"diluted, so c(HCl) too low\" fades in and is crossed (caption \"follow the titre, not the word diluted\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more. Before adding the aliquot, a student",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Before adding the aliquot, a student rinses the conical flask with the sodium carbonate solution. All other steps are carried out correctly. Explain the effect of this on the calculated concentration of the hydrochloric acid.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no error chain, no aid, no flask film.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "solution / bigger / low / flask",
+      "motionPurpose": "On the spoken cues: On \"solution\" \"rinses the conical flask with the sodium carbonate solution\" is underlined, a thin navy coded film shows inside `m6-conical-flask-v1.png` (small), and the chain's first chip writes \"carbonate film + aliquot → more moles of Na₂CO₃ in the flask\" (grey). On \"bigger\" \"All other steps are carried out correctly\" is underlined and \"→ titre bigger\" (violet) writes; on \"low\" \"calculated concentration of the",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"solution\" \"rinses the conical flask with the sodium carbonate solution\" is underlined, a thin navy coded film shows inside `m6-conical-flask-v1.png` (small), and the chain's first chip writes \"carbonate film + aliquot → more moles of Na₂CO₃ in the flask\" (grey). On \"bigger\" \"All other steps are carried out correctly\" is underlined and \"→ titre bigger\" (violet) writes; on \"low\" \"calculated concentration of the hydrochloric acid\" is underlined and \"→ c(HCl) too low\" (terracotta) writes, with a small line \"c = n(aliquot only) ÷ bigger titre\". On \"flask\" a chip \"rinsing with the solution is correct, so no effect\" fades in and is crossed (caption \"pipette: the solution; flask: distilled water only\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Standard: dried, weighed exactly, rinsed in, made to the mark, inverted.\"",
+      "teachingReason": "Decision rule and handoff: So, for a titration you can trust: rinse with what's going in, clear the bubble, read at eye level, and average concordant titres.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Rinse with what's going in; flasks with distilled water.\" \"3 No tip bubble; read the meniscus at eye level, to 0.05 mL.\" \"4 Rough run, then dropwise to the first permanent colour; concordant titres.\" \"5 Error → titre bigger or smaller → answer lower or higher.\" On \"Next\" a chip \"Next: standardisation and titration calculations (practice)\" appears with a small `m6-volumetric-flask-v1.png`.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Standard: dried, weighed exactly, rinsed in, made to the mark, inverted.\" \"2 Rinse with what's going in; flasks with distilled water.\" \"3 No tip bubble; read the meniscus at eye level, to 0.05 mL.\" \"4 Rough run, then dropwise to the first permanent colour; concordant titres.\" \"5 Error → titre bigger or smaller → answer lower or higher.\" On \"Next\" a chip \"Next: standardisation and titration calculations (practice)\" appears with a small `m6-volumetric-flask-v1.png`. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p06-learning-review.md",
+      "sha256": "624f7537baba26d9435bd98d7c72e19b4db8d8f2bd10f9155e0b14bd4ede367a"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p06-claude-science-check.md",
+      "sha256": "f5c28235646f3a3d98ecc6078c2e584cb12a2b41d5a039514bcc78e567ae4413"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

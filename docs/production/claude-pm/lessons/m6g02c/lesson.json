@@ -1,0 +1,184 @@
+{
+  "title": "Weak Acid pH, Ka and Amphiprotic Ions: HSC-Style Practice Questions",
+  "subtitle": "A weak acid question gives you a Ka, a measured pH, or an ion that can go either way. Which method fits those data, and how do you check the answer?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 15,
+  "lessonIntent": "calculating the pH of a weak acid with the shortcut and justifying it with the 5% check; recognising a failed check, solving the full equation for x and comparing the result with the shortcut; calculating Ka and pKa from a measured pH and concentration, with no 5% check because [H₃O⁺] is measured, and explaining why pKa is not the pH; writing the equations for HCO₃⁻ and H₂PO₄⁻ reacting with water as an acid and as a base, and deciding which way each mainly reacts with water by comparing its Ka with its Kb from the acid one proton up, and predicting whether solutions of NaHCO₃ and KH₂PO₄ are basic or acidic.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Weak acid questions give you different data, and the data choose the method. A K a and a concentration? Estimate x, then check it was fair. A measured pH? Work backwards to K a. An ion that can give or take a proton? Compare its K a with its K b. Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Hypochlorous acid is a weak acid that forms when chlorine is added to pool water. Calculate the pH of a zero point zero five zero zero moles per litre solution at twenty five degrees, given that K a is three point zero times ten to the minus eight. Justify any approximation you make. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-estimate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "K a and a concentration, so set up the ICE table: the acid goes down by x, and each ion goes up by x. K a is tiny next to zero point zero five zero zero, so drop the x from the bottom. Then x squared is K a times c, one point five times ten to the minus nine, and x is three point nine times ten to the minus five moles per litre."
+      }
+    },
+    {
+      "id": "q1-check",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now justify it. x is only zero point zero seven seven percent of the concentration, far under five percent, so dropping x was fair. The pH is four point four one, two decimal places because x has two significant figures, from K a. And it's below seven, as an acid's should be."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is forgetting the square root. Then x is one point five times ten to the minus nine, and the pH comes out at eight point eight two, a basic pH for an acid."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. Chloroethanoic acid is a weak monoprotic acid with a K a of one point four times ten to the minus three at twenty five degrees. Show that the simplifying assumption can't be used for a zero point zero two zero zero moles per litre solution. Then calculate its pH. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-check-fails",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Try the shortcut first. x squared is K a times c, two point eight times ten to the minus five, so x is about five point three times ten to the minus three. Now check: that's twenty six percent of the concentration, far over five. About a quarter of the acid ionises, so c minus x is nowhere near c, and the shortcut doesn't hold. Keep the x."
+      }
+    },
+    {
+      "id": "q2-full",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So K a equals x squared over zero point zero two zero zero minus x. Multiply both sides by the bottom, and gather everything on one side: x squared, plus K a times x, minus two point eight times ten to the minus five, equals zero. The quadratic formula, or your calculator's solver, gives one positive root: four point six times ten to the minus three. So the pH is two point three three."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is keeping the shortcut answer after the check has failed. That gives two point two eight, about zero point zero five out. Once the check fails, the shortcut's answer goes too."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. Benzoic acid is a weak monoprotic acid used as a food preservative. A zero point zero one five zero moles per litre solution of benzoic acid has a measured pH of three point zero three at twenty five degrees. Calculate K a and p K a for benzoic acid. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-backwards",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This time the pH is given, so work backwards. The hydronium is ten to the minus three point zero three, nine point three three times ten to the minus four moles per litre. Each ionised molecule makes one hydronium and one benzoate, so benzoate is the same. The acid left is zero point zero one five zero minus that, zero point zero one four one."
+      }
+    },
+    {
+      "id": "q3-ka",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So K a is hydronium times benzoate, over the acid: nine point three three times ten to the minus four, squared, over zero point zero one four one. That's six point two times ten to the minus five, two significant figures from the pH's two decimal places. Then p K a is the negative log, four point two one."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is writing the p K a as three point zero three, the same as the pH. The pH describes this solution, at this concentration. The p K a describes the acid itself."
+      }
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four. The hydrogen carbonate ion, from baking soda, and the dihydrogen phosphate ion, from a fertiliser salt, are both amphiprotic. Write an equation for each ion donating a proton to water and accepting one from it. Use the K a values to decide which mainly happens, and predict whether each salt's solution is acidic or basic. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4-carbonate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "An amphiprotic ion runs two reactions with water, so compare their constants. For hydrogen carbonate donating, K a is given: four point seven times ten to the minus eleven. Accepting, it becomes carbonic acid, its conjugate acid, so its K b is K w over carbonic acid's K a: two point three times ten to the minus eight. K b is about five hundred times bigger, so it mainly accepts a proton, making hydroxide. Sodium hydrogen carbonate solution is basic."
+      }
+    },
+    {
+      "id": "q4-phosphate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Dihydrogen phosphate is the other way round. Donating, its K a is six point three times ten to the minus eight. Accepting, it becomes phosphoric acid, so its K b is K w over seven point one times ten to the minus three, just one point four times ten to the minus twelve. Now K a wins, so it mainly donates, making hydronium. Potassium dihydrogen phosphate solution is acidic."
+      }
+    },
+    {
+      "id": "q4-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is finding K b from the ion's own K a. That gives one point six times ten to the minus seven, the K b of hydrogen phosphate, and the wrong answer, basic. K a times K b is K w only for a conjugate pair, so for an ion's K b, use the K a one proton up."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start any weak acid question. Read the data first. Given K a and a concentration? Estimate x, then check it's under five percent. If it isn't, solve the full equation. Given a pH? Work backwards, with no five percent check. Given an amphiprotic ion? Compare its K a with its K b, taken from the acid one proton up. Next, how a buffer resists a change in pH."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

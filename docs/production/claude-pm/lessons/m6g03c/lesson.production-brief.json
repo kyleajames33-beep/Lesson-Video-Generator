@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6g03c/lesson.json",
+    "lessonSha256": "00e58b95f01069ba0c2efb60ab937bbb35ea0b9de12f1856ea7513bc680e53a7"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From C12: the four steps (\"known to moles, ratio, unknown\"); concordant titres within 0.10 mL, rough run excluded; Na₂CO₃ + 2HCl; H₂SO₄ + 2NaOH (a diprotic acid takes two hydroxides); the unknown may be in the burette or the flask; results to the data's significant figures. From P06: making a standard from a weighed solid (n = m/M, then c = n/V); titre = final − initial reading; readings to 0.05 mL. From C06: carbonate accepts two protons; hydrogen carbonate is amphiprotic and accepts one. From C02: acid + hydrogen carbonate → salt + water + carbon dioxide. From Year 11: molar mass from the data sheet, water of crystallisation in a formula, n = m/M, n = cV, mass = density × volume, percentage by mass. Not assumed: aliquot scale-up, percentage by mass from density.",
+    "startsWith": "An unseen standardisation. The video opens: Titration questions often chain several steps: make the standard, choose the titres, use the ratio, scale up from an aliquot, then turn moles into a percentage.",
+    "stopsAfter": "calculating a standard's concentration from the mass of a hydrate, with the water of crystallisation in the molar mass; turning burette readings into titres and choosing the concordant ones; standardising sodium hydroxide with a 1 : 2 ratio; scaling moles up from an aliquot to the flask and back to the original sample; calculating a concentration and a percentage by mass for a liquid from its density; writing the equation for hydrogen carbonate with acid and using its 1 : 1 ratio; calculating a percentage by mass for a solid from its weighed mass; checking each answer for size and units.",
+    "nextLesson": "which indicator fits a titration (route chem-m6-c13)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m6-g03.md"
+  ],
+  "teaching": {
+    "task": "A titration question gives you a weighed standard, a table of burette readings, a sample diluted in a flask, or a tablet. How do you follow the moles from the standard to the answer, and check the titres, the scale-up and the units on the way?",
+    "causalExplanation": "Why the hydrate's M includes the waters: they were weighed as part of the crystal (2b, 2e). Why run 2 and the rough run are left out: the rough run only locates the endpoint, and run 2 disagrees with the others (2c). Why the ratio is 1 : 2 in Q1: oxalic acid gives two protons (the given equation, 2d). Why moles are tracked, not concentrations, after a dilution: dilution changes the concentration but not the moles taken from the sample (3b). Why × 12.5: the flask holds 12.5 aliquots, and all its acid came from the 10.00 mL sample (3c). Why the density: a percentage by mass needs two masses (3d). Why 1 : 1 for hydrogen carbonate: it accepts only one more proton (4b, 4d). Why no density for the tablet: it was weighed (4c).",
+    "conversationalApproach": "Titration questions chain several steps (make the standard, choose the titres, use the ratio, scale up from an aliquot, turn moles into a percentage), and losing one loses the answer, so every walkthrough follows the moles. Q1 standardises sodium hydroxide with oxalic acid dihydrate, using a molar mass that includes the waters because they were weighed, readings turned into titres with the rough run and the outlier left out, and the four steps known to moles, ratio, unknown; Q2 titrates aliquots of a diluted brick cleaner, scales up by the flask over the aliquot and uses the density for a percentage by mass; Q3 writes the hydrogen carbonate equation first to get a one to one ratio, then scales up to the tablet's mass. Each question ends with its spoken, crossed classic mistake (no waters, stopping at the aliquot, borrowing carbonate's 1 : 2), and the decision board lists the checks for any titration calculation.",
+    "openingDecision": "Titration questions often chain several steps: make the standard, choose the titres, use the ratio, scale up from an aliquot, then turn moles into a percentage. Lose one link, and every number after it is wrong: stop one step early in a dilution question, and your answer can be twenty five times too small. Here are three HSC-style questions. Pause and try each one, then we'll follow the moles, one step at a time.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): the mass, formula with \"·2H₂O\", flask and aliquot volumes, the equation and all ten readings in Q1; the \"only substance that reacts with sodium hydroxide\" condition, the sample volume, flask and aliquot volumes, the NaOH concentration (restated), three titres and the density in Q2; the tablet's mass, \"do not react with acid\", volumes, the acid's concentration and three titres in Q3. Nothing answer-bearing during the holds; the check strip dims.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p53), as printed: \"conduct practical investigations to analyse the concentration of an unknown acid or base by titration\" Practice and transfer only: the coverage rows stay with chem-m6-c12 (method and calculation) and chem-m6-p06 (conduct and errors); G03 adds practice rows, not first coverage. starts at the route's \"Present a new standardisation and titre table and protect an attempt\" and stops at its \"Calculate concentration with stoichiometry and check units and titre choice\". Three questions, each a chain of steps with one trap: (1) standardising sodium hydroxide against a primary standard made from a weighed hydrate, with a titre table of burette readings (titre choice; the hydrate's molar mass); (2) a liquid product diluted in a volumetric flask, titrated with that standardised base, reported in mol/L and as a percentage by mass through its density (aliquot scale-up, assigned here by C12 Open decisions; percentage by mass from density, assigned here by C12, C15 and C16 Boundaries); (3) a solid tablet made up to volume, titrated with the P06 acid, reported as a percentage by mass of the weighed tablet, with no equation given (the ratio the student must write; scale-up again with a different factor). Not here: back titrations (chem-m6-c15); indicator choice and equivalence pH (chem-m6-c13, the next video; indicators are named in the stems as data only); curves and conductivity (chem-m6-c14); error direction (chem-m6-p06 taught it for technique; chem-m6-g04 practises tables); percentage uncertainty; polyprotic stages beyond the overall ratio."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G01 and G02 layout: top-left the question card (stem, data, table and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Standardisation: mass to c\", \"Diluted sample: scale up\", \"Solid sample: % by mass\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). A check strip on the far left carries four rows, \"titres chosen?\", \"ratio from the equation?\", \"scaled up?\", \"units and sense?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Strip readability (build rule, Revision 2): the shrunk question strip must stay large enough that an underlined given can be read at playback speed (checked in the stills pass and at playback); if Q1's reading table cannot be read when shrunk, the table stays at full size and only the stem shrinks. Working follows the C12 staging: equation strip, the mole bridge (known → ratio → unknown) with a fourth box added in Q2 and Q3 (\"× flask ÷ aliquot\"), the titre table and concordance strip (Q1), one stage per line, earlier lines dimming, one kept chip into the next scene. Colour key from C12: the known solution's values navy, the unknown's amber, the ratio box teal, concordant titres ringed teal, excluded rows crossed grey; amber is otherwise used only for underlined givens. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.",
+    "transitionPlan": "The heading writes on and a chain of five linked chips draws across the right, one per spoken step; each question opens on a fresh board with the type badge hidden while the worded card writes with its data table or the antacid plate; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used; the titre row fills under the card's own table with the rough and outlier runs crossed; the mole bridge draws box by box, gaining a \"× flask ÷ aliquot\" box for the scale-up and an outer mass bar for the percentage; working lines write one stage per line with earlier lines dimming; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Titration calculations: follow the moles\" writes on.",
+      "teachingReason": "Hook: Titration questions often chain several steps: make the standard, choose the titres, use the ratio, scale up from an aliquot, then turn moles into a percentage.",
+      "narrationCue": "scale up / percentage / twenty five times / follow the moles",
+      "motionPurpose": "On the spoken cues: A chain of five small linked chips draws across the right, one per spoken step: \"standard: m → c\", \"titres\", \"ratio\", on \"scale up\" \"aliquot → flask\", on \"percentage\" \"% by mass\". On \"Lose one link\" the middle link greys and every chip after it greys with it, then they relight. On \"twenty five",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Titration calculations: follow the moles\" writes on. A chain of five small linked chips draws across the right, one per spoken step: \"standard: m → c\", \"titres\", \"ratio\", on \"scale up\" \"aliquot → flask\", on \"percentage\" \"% by mass\". On \"Lose one link\" the middle link greys and every chip after it greys with it, then they relight. On \"twenty five times\" a small grey answer chip \"aliquot's c\" sits beside a larger ghost chip \"sample's c: 25 × bigger\" (no Q2 values, so nothing answer-bearing before the Q2 attempt), and both fade. The check strip builds on the left: \"titres chosen?\", \"ratio from the equation?\", \"scaled up?\", \"units and sense?\". On \"follow the moles\" C12's mole bridge thumbnail pulses under the chain and the chips become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second; the check strip shrinks to the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: standardising sodium hydroxide) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. A student dissolves one point five",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: standardising sodium hydroxide)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A student standardises a sodium hydroxide solution. She dissolves 1.5822 g of oxalic acid dihydrate, H₂C₂O₄·2H₂O, in distilled water and makes the solution up to 250.0 mL in a volumetric flask. She titrates 25.00 mL aliquots of this solution with the sodium hydroxide, using phenolphthalein indicator. H₂C₂O₄(aq) + 2NaOH(aq) → Na₂C₂O₄(aq) + 2H₂O(l)\". Table: \"Titration | Rough | 1 | 2 | 3 | 4\"; \"Final reading (mL) | 24.60 | 24.55 | 24.50 | 25.20 | 24.30\"; \"Initial reading (mL) | 0.00 | 0.50 | 0.10 | 1.20 | 0.35\". Demands: \"(a) Calculate the concentration of the oxalic acid solution.\" \"(b) Calculate the concentration of the sodium hydroxide solution.\" Two answer boxes. Nothing answer-bearing: no titre row, no molar mass. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-standard",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "The hydrate's molar mass: First, the standard.",
+      "narrationCue": "includes / zero point zero one two five five / zero point zero five zero two zero",
+      "motionPurpose": "On the spoken cues: Type badge \"Standardisation: mass to c\". \"H₂C₂O₄·2H₂O\" underlines amber and the \"·2H₂O\" part rings; a grey tag \"water of crystallisation: part of the crystal, weighed with it\" writes and fades. On \"includes\" the line \"M = 2(1.008) + 2(12.01) + 4(16.00) + 2 × 18.016 = 126.07 g/mol\" writes, the \"+ 2",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Standardisation: mass to c\". \"H₂C₂O₄·2H₂O\" underlines amber and the \"·2H₂O\" part rings; a grey tag \"water of crystallisation: part of the crystal, weighed with it\" writes and fades. On \"includes\" the line \"M = 2(1.008) + 2(12.01) + 4(16.00) + 2 × 18.016 = 126.07 g/mol\" writes, the \"+ 2 × 18.016\" segment lit. On \"zero point zero one two five five\" \"1.5822 g\" underlines and \"n = 1.5822 ÷ 126.07 = 0.012550 mol\" writes (the M line dims). On \"zero point zero five zero two zero\" \"250.0 mL\" underlines and \"c = 0.012550 ÷ 0.2500 = 0.05020 mol/L\" writes; answer box (a) fills \"c(H₂C₂O₄) = 0.05020 mol/L\" and shrinks to a navy kept chip.",
+      "motionTools": [
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-titres",
+      "visualDecision": "new",
+      "visualReference": "the card's table underlines both reading rows.",
+      "teachingReason": "Readings to titres, then choose: Next, the titres.",
+      "narrationCue": "twenty four point four zero / zero point one zero / twenty four point zero zero",
+      "motionPurpose": "On the spoken cues: One table only (Revision 2): a third row, \"Titre (mL)\", adds directly under the card's two reading rows, filling cell by cell as \"final − initial\": \"24.60 | 24.05 | 24.40 | 24.00 | 23.95\", each cell aligned under its readings. The rough cell greys (\"not used\"). On \"twenty four point four zero\" the",
+      "motionRole": "explain",
+      "onScreenChange": "the card's table underlines both reading rows. One table only (Revision 2): a third row, \"Titre (mL)\", adds directly under the card's two reading rows, filling cell by cell as \"final − initial\": \"24.60 | 24.05 | 24.40 | 24.00 | 23.95\", each cell aligned under its readings. The rough cell greys (\"not used\"). On \"twenty four point four zero\" the run 2 cell pulses. On \"zero point one zero\" the concordance strip draws under the table (23.90 to 24.45 mL): the \"0.10 mL\" bracket covers 23.95 to 24.05, the 24.40 dot outside; run 2 takes a grey cross and runs 1, 3 and 4 ring teal (grey tag \"average only concordant titres\", fades). On \"twenty four point zero zero\" \"(24.05 + 24.00 + 23.95) ÷ 3 = 24.00 mL\" writes and shrinks to a kept chip \"mean titre = 24.00 mL\". Strip: \"titres chosen?\" ticks.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-naoh",
+      "visualDecision": "new",
+      "visualReference": "the table dims to a strip.",
+      "teachingReason": "Known to moles, ratio, unknown: Now known to moles, ratio, unknown.",
+      "narrationCue": "one point two five five times ten to the minus three / two / zero point one zero four six",
+      "motionPurpose": "On the spoken cues: The mole bridge draws: \"known: H₂C₂O₄\" → \"ratio\" → \"unknown: NaOH\". On \"one point two five five\" \"25.00 mL aliquots\" underlines and \"n(H₂C₂O₄) = 0.05020 × 0.02500 = 1.255 × 10⁻³ mol\" writes and fills the known box. On \"two\" the equation's \"2NaOH\" underlines, the ratio box fills \"1 : 2\" and \"n(NaOH)",
+      "motionRole": "explain",
+      "onScreenChange": "the table dims to a strip. The mole bridge draws: \"known: H₂C₂O₄\" → \"ratio\" → \"unknown: NaOH\". On \"one point two five five\" \"25.00 mL aliquots\" underlines and \"n(H₂C₂O₄) = 0.05020 × 0.02500 = 1.255 × 10⁻³ mol\" writes and fills the known box. On \"two\" the equation's \"2NaOH\" underlines, the ratio box fills \"1 : 2\" and \"n(NaOH) = 2 × 1.255 × 10⁻³ = 2.510 × 10⁻³ mol\" writes (the first line dims). On \"zero point one zero four six\" \"c(NaOH) = 2.510 × 10⁻³ ÷ 0.02400 = 0.1046 mol/L\" writes; answer box (b) fills \"c(NaOH) = 0.1046 mol/L\", with a small grey tag \"4 s.f., like the data\" (fades). On \"close to the zero point one\" strip: \"ratio from the equation?\" and \"units and sense?\" tick (a grey tag \"near 0.1 mol/L, as a lab NaOH is usually made\" fades).",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"M = 90.04 g/mol (no ·2H₂O): c(H₂C₂O₄) = 0.07029 mol/L\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"the waters were weighed: include them in M\".",
+      "teachingReason": "The classic mistake: The classic mistake is leaving out the water of crystallisation.",
+      "narrationCue": "The classic mistake / the waters were weighed: include them in M / zero point one four six four",
+      "motionPurpose": "On the spoken cues: On \"zero point one four six four\" a small grey \"c(NaOH) = 0.1464\" sits beside the white \"0.1046\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"M = 90.04 g/mol (no ·2H₂O): c(H₂C₂O₄) = 0.07029 mol/L\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"the waters were weighed: include them in M\". On \"zero point one four six four\" a small grey \"c(NaOH) = 0.1464\" sits beside the white \"0.1046\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: a diluted brick cleaner) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. A brick cleaner contains hydrochloric acid.",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: a diluted brick cleaner)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The card writes on: \"A brick cleaner contains hydrochloric acid. Assume hydrochloric acid is the only substance in the cleaner that reacts with sodium hydroxide. A 10.00 mL sample of the cleaner is diluted with distilled water to 250.0 mL in a volumetric flask. 20.00 mL aliquots of the diluted solution are titrated with the sodium hydroxide standardised in Question 1, 0.1046 mol/L. The concordant titres are 24.40 mL, 24.35 mL and 24.45 mL. The density of the brick cleaner is 1.05 g/mL.\" Demands: \"(a) Calculate the concentration of hydrochloric acid in the brick cleaner, in mol/L.\" \"(b) Calculate the percentage by mass of hydrochloric acid in the brick cleaner.\" Two answer boxes. No plate. Nothing answer-bearing: no flask diagram, no equation. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-aliquot",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Diluted sample: scale up\".",
+      "teachingReason": "Moles in one aliquot: This aliquot came from a diluted sample, so track moles, not concentrations.",
+      "narrationCue": "diluted / two point five five two times ten to the minus three / same",
+      "motionPurpose": "On the spoken cues: On \"diluted\" \"diluted with distilled water to 250.0 mL\" underlines and the scale-up flask draws in outline at the right, empty, labelled \"250.0 mL\", with a small \"10.00 mL sample\" beaker icon pouring into it (coded). The three titres underline and a kept chip \"mean titre = 24.40 mL\" writes (grey",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Diluted sample: scale up\". On \"diluted\" \"diluted with distilled water to 250.0 mL\" underlines and the scale-up flask draws in outline at the right, empty, labelled \"250.0 mL\", with a small \"10.00 mL sample\" beaker icon pouring into it (coded). The three titres underline and a kept chip \"mean titre = 24.40 mL\" writes (grey tag \"all concordant\", fades). Equation strip: \"HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\". On \"two point five five two\" \"0.1046 mol/L\" underlines and \"n(NaOH) = 0.1046 × 0.02440 = 2.552 × 10⁻³ mol\" writes; the mole bridge fills its known box. On \"same\" the ratio box fills \"1 : 1\" and the unknown box \"n(HCl) in 20.00 mL = 2.552 × 10⁻³ mol\". Strip: \"titres chosen?\" and \"ratio from the equation?\" tick.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-scale-up",
+      "visualDecision": "new",
+      "visualReference": "a fourth box joins the mole bridge, \"× flask ÷ aliquot\".",
+      "teachingReason": "From the aliquot to the cleaner: But the flask held two hundred and fifty millilitres, twelve and a half aliquots' worth.",
+      "narrationCue": "twelve and a half / zero point zero three one nine zero / three point one nine zero",
+      "motionPurpose": "On the spoken cues: On \"twelve and a half\" \"20.00 mL aliquots\" underlines and the scale-up flask fills with stacked aliquot-sized bands, twelve full and one half, counter \"250.0 ÷ 20.00 = 12.5\"; the fourth box fills \"× 12.5\", and the flask bands and counter dim to grey. On \"zero point zero three one nine zero\" \"n(HCl)",
+      "motionRole": "explain",
+      "onScreenChange": "a fourth box joins the mole bridge, \"× flask ÷ aliquot\". On \"twelve and a half\" \"20.00 mL aliquots\" underlines and the scale-up flask fills with stacked aliquot-sized bands, twelve full and one half, counter \"250.0 ÷ 20.00 = 12.5\"; the fourth box fills \"× 12.5\", and the flask bands and counter dim to grey. On \"zero point zero three one nine zero\" \"n(HCl) in flask = 12.5 × 2.552 × 10⁻³ = 0.03190 mol\" writes and an arrow runs from the flask back to the \"10.00 mL sample\" beaker, tag \"all of it came from the sample\" (fades at its sentence end). On \"three point one nine zero\" \"A 10.00 mL sample\" underlines and \"c = 0.03190 ÷ 0.01000 = 3.190 mol/L\" writes as the \"n(HCl) in flask\" line dims; answer box (a) fills \"c(HCl) = 3.190 mol/L\" and shrinks to a kept chip. On \"diluted twenty five times\" strip: \"scaled up?\" ticks, with a tag \"250.0 ÷ 10.00 = 25: the cleaner is 25 times as concentrated (0.1276 × 25 = 3.190)\" that fades at the scene end. Bright at the end: the c line, answer box (a) and the tag.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-percent",
+      "visualDecision": "new",
+      "visualReference": "the mass box draws: an outer bar \"1 L of cleaner: 1.05 g/mL × 1000 mL = 1050 g\" (on \"masses\", \"1.05 g/mL\" underlines) and an inner amber bar.",
+      "teachingReason": "Masses, through the density: A percentage by mass needs two masses, so use the density.",
+      "narrationCue": "masses / one hundred and sixteen point three / eleven point one per cent",
+      "motionPurpose": "On the spoken cues: On \"one hundred and sixteen point three\" \"m(HCl) = 3.190 mol × 36.46 g/mol = 116.3 g\" writes and fills the inner bar. On \"eleven point one per cent\" \"% = 116.3 ÷ 1050 × 100% = 11.1%\" writes on the dividing line; answer box (b) fills \"11.1% HCl by mass\", with a small grey tag \"density 3 s.f. → 3",
+      "motionRole": "explain",
+      "onScreenChange": "the mass box draws: an outer bar \"1 L of cleaner: 1.05 g/mL × 1000 mL = 1050 g\" (on \"masses\", \"1.05 g/mL\" underlines) and an inner amber bar. On \"one hundred and sixteen point three\" \"m(HCl) = 3.190 mol × 36.46 g/mol = 116.3 g\" writes and fills the inner bar. On \"eleven point one per cent\" \"% = 116.3 ÷ 1050 × 100% = 11.1%\" writes on the dividing line; answer box (b) fills \"11.1% HCl by mass\", with a small grey tag \"density 3 s.f. → 3 s.f.\" (fades). Strip: \"units and sense?\" ticks (grey tag \"below 100%; mass ÷ mass, both in grams\", fades).",
+      "motionTools": [
+        "HandText write-on",
+        "Mark underline",
+        "DrawPath",
+        "lineage split",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"c(HCl) = 2.552 × 10⁻³ ÷ 0.02000 = 0.1276 mol/L\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"that's the diluted solution\".",
+      "teachingReason": "The classic mistake: The classic mistake is stopping at the aliquot.",
+      "narrationCue": "Scale up from the aliquot",
+      "motionPurpose": "On the spoken cues: On \"Scale up from the aliquot\" the bank aid writes small under the cross with the flask thumbnail. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"c(HCl) = 2.552 × 10⁻³ ÷ 0.02000 = 0.1276 mol/L\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"that's the diluted solution\". On \"Scale up from the aliquot\" the bank aid writes small under the cross with the flask thumbnail. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: an antacid tablet) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. An antacid tablet contains sodium hydrogen",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: an antacid tablet)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. `m6-antacid-tablets-v1.png` sits small at the card's upper right. The card writes on: \"An antacid tablet contains sodium hydrogen carbonate, NaHCO₃. Its other ingredients dissolve in water but do not react with acid. A tablet of mass 1.3200 g is dissolved in distilled water and made up to 100.0 mL in a volumetric flask. 20.00 mL aliquots are titrated with 0.1059 mol/L hydrochloric acid, using methyl orange indicator. The titres are 23.05 mL, 23.10 mL and 23.15 mL.\" Demand: \"Calculate the percentage by mass of sodium hydrogen carbonate in the tablet.\" One answer box. Nothing answer-bearing: no equation. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-ratio",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Solid sample: % by mass\".",
+      "teachingReason": "Write the equation first: No equation is given, so write it.",
+      "narrationCue": "write / one / two point four four six times ten to the minus three",
+      "motionPurpose": "On the spoken cues: On \"write\" the equation strip writes letter by letter: \"NaHCO₃(aq) + HCl(aq) → NaCl(aq) + H₂O(l) + CO₂(g)\". On \"one\" a mini chain \"CO₃²⁻ → HCO₃⁻ → H₂CO₃\" writes small with HCO₃⁻ ringed and one arrow lit (grey tag \"conjugates video: one proton to go\", fades), and the ratio box fills \"1 : 1\". The",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Solid sample: % by mass\". On \"write\" the equation strip writes letter by letter: \"NaHCO₃(aq) + HCl(aq) → NaCl(aq) + H₂O(l) + CO₂(g)\". On \"one\" a mini chain \"CO₃²⁻ → HCO₃⁻ → H₂CO₃\" writes small with HCO₃⁻ ringed and one arrow lit (grey tag \"conjugates video: one proton to go\", fades), and the ratio box fills \"1 : 1\". The three titres underline (all within 0.10 mL) and a kept chip \"mean titre = 23.10 mL\" writes. On \"two point four four six\" \"0.1059 mol/L\" underlines and \"n(HCl) = 0.1059 × 0.02310 = 2.446 × 10⁻³ mol\" writes, filling the known box; the unknown box fills \"n(NaHCO₃) in 20.00 mL = 2.446 × 10⁻³ mol\". Strip: \"titres chosen?\" and \"ratio from the equation?\" tick.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-percent",
+      "visualDecision": "new",
+      "visualReference": "the scale-up flask returns with \"100.0 mL\" and five aliquot bands; on \"five\" \"20.00 mL aliquots\" and \"100.0 mL\" underline, counter \"100.0 ÷ 20.00 = 5\", the fourth bridge box fills \"× 5\" and \"n(NaHCO₃) in tablet = 5 × 2.446 × 10⁻³ = 1.2230 × 10⁻² mol\" writes.",
+      "teachingReason": "Scale up, then the tablet's mass: Scale up: one hundred millilitres is five aliquots, so the tablet held one point two two three zero times ten to the minus two moles.",
+      "narrationCue": "five / one point zero two seven four / seventy seven point eight four per cent / no density",
+      "motionPurpose": "On the spoken cues: On \"one point zero two seven four\" \"m = 1.2230 × 10⁻² × 84.01 = 1.0274 g\" writes (grey tag \"M(NaHCO₃) = 22.99 + 1.008 + 12.01 + 3(16.00) = 84.01 g/mol\", fades; grey tag \"keep the digits; round at the end\", fades). On \"seventy seven point eight four\" \"1.3200 g\" underlines, the mass box draws (outer",
+      "motionRole": "explain",
+      "onScreenChange": "the scale-up flask returns with \"100.0 mL\" and five aliquot bands; on \"five\" \"20.00 mL aliquots\" and \"100.0 mL\" underline, counter \"100.0 ÷ 20.00 = 5\", the fourth bridge box fills \"× 5\" and \"n(NaHCO₃) in tablet = 5 × 2.446 × 10⁻³ = 1.2230 × 10⁻² mol\" writes. On \"one point zero two seven four\" \"m = 1.2230 × 10⁻² × 84.01 = 1.0274 g\" writes (grey tag \"M(NaHCO₃) = 22.99 + 1.008 + 12.01 + 3(16.00) = 84.01 g/mol\", fades; grey tag \"keep the digits; round at the end\", fades). On \"seventy seven point eight four\" \"1.3200 g\" underlines, the mass box draws (outer bar \"tablet 1.3200 g\", inner bar \"NaHCO₃ 1.0274 g\") and \"% = 1.0274 ÷ 1.3200 × 100% = 77.84%\" writes; answer box fills \"77.84% NaHCO₃ by mass\". On \"no density\" Q2's mass box thumbnail (\"1.05 g/mL × 1000 mL\") appears beside it and greys, tag \"liquid: density; solid: weighed mass\". Strip: \"scaled up?\" and \"units and sense?\" tick.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"NaHCO₃ : HCl = 1 : 2, so 38.92%\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"write the equation for this base\".",
+      "teachingReason": "The classic mistake: The classic mistake is borrowing carbonate's one to two ratio.",
+      "narrationCue": "one",
+      "motionPurpose": "On the spoken cues: On \"one more\" the mini chain returns: CO₃²⁻ with two arrows lit (grey, \"Na₂CO₃ + 2HCl (to the methyl orange endpoint)\"), HCO₃⁻ with one arrow lit (white, \"NaHCO₃ + HCl\"). Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"NaHCO₃ : HCl = 1 : 2, so 38.92%\" writes on and, on \"The classic mistake\", takes a grey scribble cross with the caption \"write the equation for this base\". On \"one more\" the mini chain returns: CO₃²⁻ with two arrows lit (grey, \"Na₂CO₃ + 2HCl (to the methyl orange endpoint)\"), HCO₃⁻ with one arrow lit (white, \"NaHCO₃ + HCl\"). Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: \"Standard from a solid → M includes ·xH₂O; c = (m ÷ M) ÷ V (Q1)\"; on \"concordant\" \"Titres → final − initial; concordant within 0.10 mL; rough out (Q1)\"; on \"balanced equation\" \"Ratio → from the equation you write: CO₃²⁻ takes 2 (to the methyl orange endpoint), HCO₃⁻ takes 1 (Q1, Q3)\"; on \"scale up\" \"Aliquot from a flask → × (flask volume ÷ aliquot volume) (Q2, Q3)\"; then \"% by mass → mass ÷ mass: liquid via density, solid via its weighed mass (Q2, Q3)\".",
+      "teachingReason": "Decision board: So for any titration calculation, follow the moles.",
+      "narrationCue": "concordant / balanced equation / scale up",
+      "motionPurpose": "On the spoken cues: Under the board, small: \"Results to the data's significant figures.\" On \"Next\" a chip \"Next: which indicator fits a titration?\" slides in at the lower right with `m6-indicator-methyl-orange-set-v1.png` small. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: \"Standard from a solid → M includes ·xH₂O; c = (m ÷ M) ÷ V (Q1)\"; on \"concordant\" \"Titres → final − initial; concordant within 0.10 mL; rough out (Q1)\"; on \"balanced equation\" \"Ratio → from the equation you write: CO₃²⁻ takes 2 (to the methyl orange endpoint), HCO₃⁻ takes 1 (Q1, Q3)\"; on \"scale up\" \"Aliquot from a flask → × (flask volume ÷ aliquot volume) (Q2, Q3)\"; then \"% by mass → mass ÷ mass: liquid via density, solid via its weighed mass (Q2, Q3)\". Under the board, small: \"Results to the data's significant figures.\" On \"Next\" a chip \"Next: which indicator fits a titration?\" slides in at the lower right with `m6-indicator-methyl-orange-set-v1.png` small. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6g03c-learning-review.md",
+      "sha256": "52a9c40840f2e8ac44f8e4ebd5674f804ba5c84a79a7b8594612c76603ce9e73"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6g03c-claude-science-check.md",
+      "sha256": "dcaf93c9e9ed1977611e600bd5a5cc275c235db3ee60819daf277af0bd4521b9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

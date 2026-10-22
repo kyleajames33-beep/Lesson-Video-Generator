@@ -1,0 +1,176 @@
+{
+  "title": "Analysing UV exposure and yeast colony survival: what can colony counts tell you, and what can't they?",
+  "subtitle": "After two minutes of UV, a plate of yeast grows five colonies instead of a hundred and forty two. If some cells did mutate, where would they be? What can colony counts tell you about UV exposure, how do you collect and analyse them fairly, and what can't they tell you about mutation?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 6,
+  "lesson": 3,
+  "lessonIntent": "explaining why each colony grew from a surviving cell or small clump that kept dividing; explaining the four fates of a cell under UV and why mutants are counted among survivors; stating who collects UV data and why (UVC, interlocked cabinet, trained staff); naming the independent, dependent and controlled variables; explaining why the control is handled the same with the lamp off; explaining replicate variation and calculating means; calculating relative survival; graphing means with every plate shown; stating what the data support and what they do not; describing how mutation would be measured; judging validity, reliability and accuracy, including time against dose; writing the risk rows; applying this to a new dataset and to an inoculum flaw. No point-mutation names (bio-m6-b03), no cancer (bio-m6-b05), no survival-curve mathematics.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In the mutagens video, you saw these numbers: a hundred and forty two yeast colonies with no UV, and just five after two minutes. And you saw that fewer colonies doesn't prove more mutants. But why not? If some cells mutated and survived, where would they be? They'd be hiding inside the colonies that grew. So what can colony counts really tell you?"
+      }
+    },
+    {
+      "id": "what-a-colony-is",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, what's a colony? Spread about a hundred and fifty yeast cells thinly on agar, and each cell that can still divide makes a pile of millions of copies in two days. That pile is a colony, big enough to see. Each colony grew from a surviving cell or small clump that kept dividing. A cell that can't divide leaves nothing to see."
+      }
+    },
+    {
+      "id": "four-fates",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now add UV, which joins neighbouring thymines, as you saw. Each cell then has one of four fates. No damage: it grows a colony. Damaged, but repaired: a colony. Too much damage: copying stalls at many dimers, so the cell can't divide, and there's no colony. Or a changed base gets copied, the cell lives, and it grows a colony that looks just like the others. So the count measures survival, and any mutants are counted as survivors."
+      }
+    },
+    {
+      "id": "who-collects",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "In this practical, a teacher collects the data, not students. The lamp gives out UVC, and it can burn skin and injure eyes after a short exposure. So the plates go into an interlocked cabinet, which switches the lamp off whenever the door opens. Your job in this practical is the analysis."
+      }
+    },
+    {
+      "id": "fair-test",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The independent variable is exposure time: zero, fifteen, thirty, sixty and a hundred and twenty seconds. The dependent variable is the number of colonies after forty eight hours at thirty degrees. Everything else stays the same: the same yeast suspension, the same hundred microlitres on each plate, the same lamp at the same twenty centimetres, and the same incubation."
+      }
+    },
+    {
+      "id": "control-same",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The zero second plates are the control. They go into the cabinet too, with their lids off for the same time, but the lamp stays off. Then the only difference between a control plate and an exposed plate is the UV. Leave the controls on the bench, and handling could explain the difference."
+      }
+    },
+    {
+      "id": "three-plates",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Each time has three plates, made the same way. At zero seconds, they grew a hundred and thirty three, a hundred and forty four and a hundred and forty nine colonies, a mean of a hundred and forty two. They don't match exactly, because each hundred microlitres picks up a slightly different number of cells. The mean evens that out."
+      }
+    },
+    {
+      "id": "relative-survival",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To compare the times, turn each mean into a relative survival: the mean divided by the control mean, times a hundred. At thirty seconds, sixty one over a hundred and forty two gives forty three point zero percent. After two minutes, it's just three point five percent."
+      }
+    },
+    {
+      "id": "graph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Graph exposure time on the x axis and relative survival on the y. Plot each mean, and show every plate as a small point, so the spread is visible. Survival falls steeply at first, then levels off towards zero. So longer exposure to this lamp, at this distance, went with lower survival."
+      }
+    },
+    {
+      "id": "supports",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So what do the data support? That UVC exposure reduced the survival of these yeast cells under these conditions. What don't they show? Whether any survivors mutated. The missing colonies tell you about cells that couldn't divide, and the mutants, if there are any, are among the cells that lived."
+      }
+    },
+    {
+      "id": "measure-mutation",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "To measure mutation, you'd test the survivors for a new trait that's inherited. Mutants are rare, so spread millions of exposed cells on a medium that normal yeast can't grow on, like the antibiotic dish in the first video. Count the colonies that grow as a fraction of survivors, and compare it with unexposed cells. Then grow those colonies again, to check the trait is passed on."
+      }
+    },
+    {
+      "id": "validity-reliability",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Validity: with one variable changed and a control handled the same way, the counts validly compare survival, but they aren't a valid measure of mutation. Reliability: the three plates at each time differ only as much as chance predicts, like fifty five to sixty seven at thirty seconds. Accuracy: count through the lid on a grid, with a second counter. And time alone isn't dose: to know the dose, measure the lamp's output at the plate."
+      }
+    },
+    {
+      "id": "risk-assessment",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The risk assessment. UVC: only trained staff run the interlocked cabinet, and the lamp is never on with the door open. The yeast is a risk group one organism, unlikely to cause disease, but other microbes can grow on the plates too. So grown plates stay sealed and are sterilised before disposal. The bench is wiped with seventy percent ethanol, which is flammable, so keep it away from flames."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. In a repeat of this investigation, the zero second plates grew a hundred and forty five, a hundred and fifty one and a hundred and sixty colonies. The plates exposed for forty five seconds grew thirty six, forty one and forty six. Calculate the relative survival at forty five seconds. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The control mean is four hundred and fifty six over three, a hundred and fifty two. The forty five second mean is a hundred and twenty three over three, forty one. Forty one over a hundred and fifty two, times a hundred, is twenty seven point zero percent. Seventy three percent is the trap: that's the share that didn't form colonies."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more. To have more colonies to count at a hundred and twenty seconds, a student spread those plates with a yeast suspension ten times as concentrated as all the others. The control mean was a hundred and forty two, and the hundred and twenty second mean was fifty two. She reported a relative survival of thirty six point six percent. Evaluate her result. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "As reported, her result isn't valid. The hundred and twenty second plates got ten times as many cells, so two things changed at once. Fifty two colonies there match about five point two on a standard plate, which is a survival of about three point seven percent, close to the main data. Her mistake was comparing plates given different numbers of cells without correcting for it."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, to analyse a survival investigation: change one variable, handle the control the same way, use repeats, turn means into relative survival, and graph every plate. Then claim only what you measured: colony counts measure survival, not mutation. Next: what one changed base can do to a protein."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m6p01b/lesson.json",
+    "lessonSha256": "4015f3b5a527dabfb653d8016f232afac4d43f57da8c0fff9b356b7044897632"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "bio-m6-b02 (mutagen against mutation; damage is usually repaired; a damaged base becomes a mutation when it is copied before repair; UV is not ionising and joins neighbouring thymines into a dimer that distorts DNA; exposure raises risk, not a guarantee; the five mean counts and the \"survival, not mutation\" verdict from attempt 11c); bio-m6-b01 (mutation as a lasting change in base sequence that can make a new allele; bacteria and yeast pass it to both daughter cells; the antibiotic dish lets only resistant cells grow, and replica plating copies colonies onto it with a velvet pad); Year 11 Biology (cells divide by mitosis; yeast is a single-celled fungus that reproduces by budding; aseptic technique); chem/bio Working Scientifically (independent, dependent and controlled variables; validity, reliability, accuracy; risk assessments). Not assumed: what a colony represents, relative survival, the difference between time and dose.",
+    "startsWith": "Compare teacher-prepared yeast colony counts across UV exposure times. The video opens: In the mutagens video, you saw these numbers: a hundred and forty two yeast colonies with no UV, and just five after two minutes. And you saw that fewer colonies doesn't prove more mutants. But why not?",
+    "stopsAfter": "explaining why each colony grew from a surviving cell or small clump that kept dividing; explaining the four fates of a cell under UV and why mutants are counted among survivors; stating who collects UV data and why (UVC, interlocked cabinet, trained staff); naming the independent, dependent and controlled variables; explaining why the control is handled the same with the lamp off; explaining replicate variation and calculating means; calculating relative survival; graphing means with every plate shown; stating what the data support and what they do not; describing how mutation would be measured; judging validity, reliability and accuracy, including time against dose; writing the risk rows; applying this to a new dataset and to an inoculum flaw. No point-mutation names (bio-m6-b03), no cancer (bio-m6-b05), no survival-curve mathematics.",
+    "nextLesson": "what one changed base can do to a protein (route entry bio-m6-b03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m6-p01.md"
+  ],
+  "teaching": {
+    "task": "After two minutes of UV, a plate of yeast grows five colonies instead of a hundred and forty two. If some cells did mutate, where would they be? What can colony counts tell you about UV exposure, how do you collect and analyse them fairly, and what can't they tell you about mutation?",
+    "causalExplanation": "(1) the b02 numbers and verdict, and the puzzle of why not: where would any mutants be? (1); (2) a colony grows from a surviving cell or small clump that kept dividing, so colony counts estimate survival (2); (3) under UV each cell has one of four fates, and only one leaves no colony (copying stalls at many dimers); mutants are counted as survivors (3); (4) UVC is hazardous, so a teacher collects the data in an interlocked cabinet; students analyse (4); (5) one independent variable, one dependent variable, everything else held the same (5); (6) the control plates are handled the same with the lamp off, so UV is the only difference (6); (7) plates differ because each 100 µL picks up a slightly different number of cells; three plates per time and their mean (7); (8) relative survival compares times on one scale (8); (9) the graph with every plate shows the trend and the spread (9); (10) what the data support (reduced survival under these conditions) and what they do not (mutation) (10); (11) how mutation would be measured: mutants are rare, so millions of exposed cells go on a selective medium; mutant colonies as a fraction of survivors, against unexposed cells, then confirmed (11); validity, reliability, accuracy (12); risk (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).",
+    "conversationalApproach": "the mutagens video showed 142 yeast colonies with no UV and five after two minutes, and that fewer colonies does not mean more mutation, so this data-analysis practical asks where any mutants would be, what colony counts can tell you and what they cannot. A colony grows from a cell that can still divide, so it marks survival; UV gives each cell one of four fates, and only some survivors could carry a mutation. A teacher collects the data in an interlocked cabinet because UVC burns skin and eyes; the fair test changes only exposure time, the zero second control plates go into the cabinet with their lids off and the lamp off, and three plates at each time give means that are turned into relative survival and graphed with every plate shown. The data support reduced survival under these conditions but not mutation, which would need the survivors tested on a selective medium for an inherited trait; validity, reliability and accuracy and the risk assessment follow. Two exam questions follow with brief feedback, the second on a plate spread with a tenfold more concentrated suspension.",
+    "openingDecision": "In the mutagens video, you saw these numbers: a hundred and forty two yeast colonies with no UV, and just five after two minutes. And you saw that fewer colonies doesn't prove more mutants. But why not? If some cells mutated and survived, where would they be? They'd be hiding inside the colonies that grew. So what can colony counts really tell you?",
+    "understandingCheck": "(A1) \"In a repeat of this investigation, yeast was spread on agar plates and exposed to UV light in a cabinet at a fixed distance. After incubation, the control plates (0 s) had 145, 151 and 160 colonies. The plates exposed for 45 s had 36, 41 and 46 colonies. Calculate the relative survival of the yeast at 45 s (mean colonies at 45 s as a percentage of the control mean). Show your working.\" Answer: control mean (145 + 151 + 160) ÷ 3 = 456 ÷ 3 = 152; 45 s mean (36 + 41 + 46) ÷ 3 = 123 ÷ 3 = 41; 41 ÷ 152 × 100 = 27.0 %. Crossed mistake: \"73.0 %\" (the share that did not form colonies, not the survival). Card defines relative survival as \"mean colonies at 45 s as a percentage of the control mean\" (learning review M2). (A2) \"A student repeated the investigation. To have more colonies to count at 120 s, she spread the 120 s plates with a yeast suspension ten times as concentrated as the one used for all other plates. The control plates (0 s) had a mean of 142 colonies and the 120 s plates had a mean of 52 colonies. She reported a relative survival of 36.6 % at 120 s. Evaluate her result.\" Answer: not valid as reported: the 120 s plates received ten times as many cells, so two variables changed; 52 colonies correspond to about 5.2 on a standard plate; 5.2 ÷ 142 × 100 = 3.7 %, close to the main data's 3.5 %; correct for the tenfold suspension (5.2 ÷ 142 × 100 ≈ 3.7 %), or use the same suspension for every plate; plating more cells at a high exposure is a valid method when the result is corrected (Revision 2, science check S3). Crossed mistake: \"36.6 % survival\" (comparing plates given different numbers of cells without correcting for it).",
+    "curriculumScope": "Syllabus (NSW Biology Stage 6, 2017), as printed: \"explain how a range of mutagens operate, including but not limited to:; electromagnetic radiation sources; chemicals; naturally occurring mutagens\" this video is a data-analysis practical. Students analyse a teacher-prepared dataset; they do not expose anything to UV. No student is shown operating a UV source, opening an exposed or incubated plate, or standing near a lit lamp; the UV lamp is never shown lit as a safe operating step (route decision, 21 Oct). It teaches: what a colony is and why each colony grew from a surviving cell or small clump that kept dividing; the four fates of a cell under UV (no damage, repaired, too damaged to divide, mutated but alive) and why mutants are counted among the survivors; who collects the data and why (UVC, an interlocked cabinet, trained staff); the fair test (independent, dependent and controlled variables); a control handled the same way as the exposed plates, with the lamp off; replicate plates and their means; relative survival; graphing every plate as well as the means; what the data support and what they do not; how mutation would be measured (test survivors for a new inherited trait, as a fraction of survivors, against the 0 s plates, then confirm it is inherited); validity, reliability and accuracy, including \"time is not dose\"; the risk assessment (UVC, the biological risk of cultures, ethanol). Placement (Biology playlist order 3): after b01 (order 1) and b02 (order 2), before b03 (order 4, point mutations). So \"mutation\" means a lasting change in base sequence (b01, b02), the thymine dimer and the repair race are known (b02), and the antibiotic dish and replica plating are known (b01). Point-mutation types are not named (b03). Not re-taught: how UV forms dimers, repair, copying before repair, \"mutagen is the cause, mutation is the change\", ionising radiation and chemical mutagens (b02, recalled in one clause each); b01's antibiotic dish (recalled in one clause in scene 11, Revision 2; replica plating itself is no longer shown). Not here: cancer and somatic against germ-line effects (b05); point-mutation names (b03); the dose-response mathematics of survival curves (author note f); performing a microbiology plating method (author note b, teacher method only)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: exposure time violet (the independent variable); colony counts and survival amber (the dependent variable); controls green; the 0 s control plates outlined green; \"survival\" teal and \"mutation\" terracotta, kept apart wherever both appear; hazards terracotta; grey for tags and callbacks. Clutter rule: at most three bright text items; every tag dims when its sentence ends. A small grey corner tag stays on every data scene: \"teacher-prepared dataset (constructed example)\". Reuse: painted plates, inspected 21 Oct on the dark board: `public/assets/biology/y11-budding-yeast-v1.png` (three yeast cells, one budding, 1374 × 1145; scene 2), `m6-agar-dish-top-v1.png` (top-down blank agar plate, 2000 × 2000; scene 2's spread plate and scene 11's selective plate before incubation), `m6-uv-skin-v1.png` (b02's sun and skin block; scene 3 thumbnail only, as the b02 callback). Inspected and not used: `m6-velvet-replica-block-v1.png` (b01's velvet block; dropped in Revision 2 because replica plating one plate cannot detect rare mutants, science check S1); `m6-uv-cabinet-v1.png` (2000 × 2000: its door is open and its lamp glows violet, which would show a lit lamp with an open door; the route decision and the pre-design both rule this out; replaced by the new closed cabinet plate); `m6-antibiotic-colonies-before-v1.png` and `-after-v1.png` (b01's bacterial plates, about 250 and about 15 colonies; their counts do not match this dataset, and reusing an antibiotic plate as yeast would confuse a student who watched b01; fallback only, see Assets); `m7-petri-colonies-v1.png` (mixed moulds and bacteria: wrong organism); `b3a-petri-dish-v1.png` (empty side view; no use here); `m6-hand-pollination-v1.png` (owner rule). No human figures.",
+    "transitionPlan": "Two yeast plates, untreated and two-minute, open the hook with their colony counts and a \"where are the mutants?\" question; the step rail lights its first stage as the budding yeast plate and a spread plate show one cell becoming one colony; the four-fates fork draws from a single cell with b02's slim strand lens; the closed UV cabinet plate takes the centre with its interlock tag; the variables card writes row by row and dims to a strip as two plate outlines show the control handled the same way; the data table writes plate by plate with its means and gains a relative survival column as the formula writes; the coded lineGraph plots each mean with every plate as a small point; the conclusion card fills its supported and not-shown columns; the survival plates slide off as the selective plate and a grey rarity tag show how mutation would be measured; the three evaluation cards and the risk table write in turn; each attempt clears the board and its feedback underlines the question as the mean lines or a comparison strip write; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two new plates side by side on the bench: `m6-yeast-plate-000s-v1.png` (tag \"0 s: mean 142\") and `m6-yeast-plate-120s-v1.png` (on \"five\", tag \"120 s: mean 5\"), counts amber, times violet; a grey tag \"mutagens video\" (dims).",
+      "teachingReason": "Hook (where would the mutants be?): In the mutagens video, you saw these numbers: a hundred and forty two yeast colonies with no UV, and just five after two minutes.",
+      "narrationCue": "five / why not / inside the colonies that grew",
+      "motionPurpose": "On the spoken cues: On \"doesn't prove more mutants\" a chip \"fewer colonies = more mutants?\" writes in terracotta with a question mark and a small grey tag \"mutagens video: not proven\"; on \"why not\" the question mark pulses. On \"where would they be?\" a faint coded magnifier sweeps the empty agar of the 120 s plate and finds nothing (tag \"empty agar: no cells to test\"). On \"inside the colonies that grew\" the magnifier moves onto one of",
+      "motionRole": "explain",
+      "onScreenChange": "two new plates side by side on the bench: `m6-yeast-plate-000s-v1.png` (tag \"0 s: mean 142\") and `m6-yeast-plate-120s-v1.png` (on \"five\", tag \"120 s: mean 5\"), counts amber, times violet; a grey tag \"mutagens video\" (dims). On \"doesn't prove more mutants\" a chip \"fewer colonies = more mutants?\" writes in terracotta with a question mark and a small grey tag \"mutagens video: not proven\"; on \"why not\" the question mark pulses. On \"where would they be?\" a faint coded magnifier sweeps the empty agar of the 120 s plate and finds nothing (tag \"empty agar: no cells to test\"). On \"inside the colonies that grew\" the magnifier moves onto one of the five colonies and a small terracotta \"?\" sits inside it. The question writes at the top left: \"What can colony counts tell you?\" Bright at the end: the two counts and the question. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "what-a-colony-is",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"1 what a colony means\".",
+      "teachingReason": "What a colony is: First, what's a colony?",
+      "narrationCue": "colony / surviving",
+      "motionPurpose": "On the spoken cues: Centre: `y11-budding-yeast-v1.png` small at the left with a grey tag \"yeast: single-celled fungus\" (dims). `m6-agar-dish-top-v1.png` in the centre: a scatter of tiny coded dots appears across the agar (tag \"about 150 cells, spread thin\"). A coded time bar runs \"0 h → 48 h at 30 °C\"; most dots swell into cream colonies (the plate cross-fades to `m6-yeast-plate-000s-v1.png`); two dots stay tiny and grey. On \"colony\"",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"1 what a colony means\". Centre: `y11-budding-yeast-v1.png` small at the left with a grey tag \"yeast: single-celled fungus\" (dims). `m6-agar-dish-top-v1.png` in the centre: a scatter of tiny coded dots appears across the agar (tag \"about 150 cells, spread thin\"). A coded time bar runs \"0 h → 48 h at 30 °C\"; most dots swell into cream colonies (the plate cross-fades to `m6-yeast-plate-000s-v1.png`); two dots stay tiny and grey. On \"colony\" one colony is ringed with the gloss \"colony: a visible pile of cells grown from one cell or small clump\". On \"surviving\" a teal tag writes: \"one colony = one surviving cell or small clump\" and the two grey dots get a small grey tag \"can't divide: no colony\". Bright at the end: the ring, the teal tag and the grey tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "four-fates",
+      "visualDecision": "adjust",
+      "visualReference": "right zone: the four-fates fork.",
+      "teachingReason": "Four fates under UV: Now add UV, which joins neighbouring thymines, as you saw.",
+      "narrationCue": "repaired / stalls / no colony / survival",
+      "motionPurpose": "On the spoken cues: A single cell icon at the left with b02's `SlimStrand` lens beside it, small; on \"joins neighbouring thymines\" a dimer kink appears on the strand, and on \"repaired\" (below) a `RepairRace` blob moves toward it (grey tag \"mutagens video\", dims; `m6-uv-skin-v1.png` thumbnail not shown, to keep the board to yeast). The fork branches into four rows, each writing on its cue: \"no damage → colony\" (cream colony icon from",
+      "motionRole": "explain",
+      "onScreenChange": "right zone: the four-fates fork. A single cell icon at the left with b02's `SlimStrand` lens beside it, small; on \"joins neighbouring thymines\" a dimer kink appears on the strand, and on \"repaired\" (below) a `RepairRace` blob moves toward it (grey tag \"mutagens video\", dims; `m6-uv-skin-v1.png` thumbnail not shown, to keep the board to yeast). The fork branches into four rows, each writing on its cue: \"no damage → colony\" (cream colony icon from the 0 s plate); on \"repaired\" \"damaged, repaired → colony\"; on \"stalls\" a short coded copy-fork marker runs along the strand lens and halts at two kinks; on \"no colony\" \"many dimers: copying stalls → stops dividing → no colony\" (an empty agar patch, ringed grey); \"changed base copied, cell lives → colony (looks normal)\" with the terracotta \"?\" inside its colony icon. On \"survival\" a teal bracket groups rows 1, 2 and 4 with the label \"counted: survivors\", row 3 bracketed grey \"not counted\"; a terracotta tag under row 4: \"mutants hide here\". Once both brackets have drawn, the text of rows 1, 2 and 4 dims to grey (the bracket and tag carry them). Bright at the end: the teal bracket, the terracotta tag and row 3's \"no colony\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Cam lens zoom",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "who-collects",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"2 the fair test\".",
+      "teachingReason": "Who collects the data: In this practical, a teacher collects the data, not students.",
+      "narrationCue": "interlocked cabinet / analysis",
+      "motionPurpose": "On the spoken cues: Centre: `m6-uv-cabinet-closed-v1.png` (new plate: door shut, no light visible). On \"UVC\" a terracotta hazard tag writes beside it: \"UVC: the shortest-wavelength UV, used in germicidal lamps; burns skin and eyes\", with a grey tag \"trained staff only\". On \"interlocked cabinet\" a coded padlock-and-switch icon on the door's edge lights green with the gloss \"interlock: door open → lamp off\". On \"analysis\" the cabinet",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"2 the fair test\". Centre: `m6-uv-cabinet-closed-v1.png` (new plate: door shut, no light visible). On \"UVC\" a terracotta hazard tag writes beside it: \"UVC: the shortest-wavelength UV, used in germicidal lamps; burns skin and eyes\", with a grey tag \"trained staff only\". On \"interlocked cabinet\" a coded padlock-and-switch icon on the door's edge lights green with the gloss \"interlock: door open → lamp off\". On \"analysis\" the cabinet slides to the left and a coded data table outline (empty) draws in the right zone, with the corner tag \"teacher-prepared dataset (constructed example)\". Bright at the end: the interlock gloss and the empty table heading \"your job: the analysis\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "fair-test",
+      "visualDecision": "adjust",
+      "visualReference": "right zone: the variables card.",
+      "teachingReason": "The fair test: The independent variable is exposure time: zero, fifteen, thirty, sixty and a hundred and twenty seconds.",
+      "narrationCue": "exposure time / colonies / incubation",
+      "motionPurpose": "On the spoken cues: On \"exposure time\" row 1 writes \"independent: UV exposure time (s): 0, 15, 30, 60, 120\" (violet), with five small closed-cabinet timer chips \"0 s ... 120 s\". On \"colonies\" row 2 writes \"dependent: colonies per plate after 48 h at 30 °C\" (amber), linked by a pen line to a plate thumbnail. On \"Everything else\" row 3 opens \"controlled\" (green) and lists, one per spoken item, each with a pen link to its object: \"same",
+      "motionRole": "explain",
+      "onScreenChange": "right zone: the variables card. On \"exposure time\" row 1 writes \"independent: UV exposure time (s): 0, 15, 30, 60, 120\" (violet), with five small closed-cabinet timer chips \"0 s ... 120 s\". On \"colonies\" row 2 writes \"dependent: colonies per plate after 48 h at 30 °C\" (amber), linked by a pen line to a plate thumbnail. On \"Everything else\" row 3 opens \"controlled\" (green) and lists, one per spoken item, each with a pen link to its object: \"same yeast suspension\" (`m6-micropipette-spreader-v1.png`, new plate: its capped tube), \"100 µL per plate\" (the micropipette), \"same lamp, fixed 20 cm\" (the closed cabinet thumbnail), on \"incubation\" \"same incubation: 30 °C, 48 h, inverted\" and silent rows \"same agar batch, same plate size, same counting rule\" and \"kept in the dark, all plates (light lets cells repair UV damage)\". Bright at the end: the three row headings. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "control-same",
+      "visualDecision": "new",
+      "visualReference": "the variables card dims to a strip.",
+      "teachingReason": "The control is handled the same: The zero second plates are the control.",
+      "narrationCue": "control / UV",
+      "motionPurpose": "On the spoken cues: Centre: two plate outlines side by side, \"0 s control\" (outlined green) and \"60 s\", each with a coded lid lifting off and back on in step (coded motion inside a closed-cabinet outline; no lamp drawn, a small grey \"lamp off\" tag on the control and a violet \"60 s exposure\" tag on the other, the cabinet itself closed). A comparison strip writes under them: \"same: suspension, volume, lids off, time in cabinet,",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card dims to a strip. Centre: two plate outlines side by side, \"0 s control\" (outlined green) and \"60 s\", each with a coded lid lifting off and back on in step (coded motion inside a closed-cabinet outline; no lamp drawn, a small grey \"lamp off\" tag on the control and a violet \"60 s exposure\" tag on the other, the cabinet itself closed). A comparison strip writes under them: \"same: suspension, volume, lids off, time in cabinet, incubation | different: UV only\". On \"UV\" the word \"UV only\" rings violet. On \"on the bench\" a ghost control plate slides out to a bench thumbnail and a chip \"control left on the bench\" fades in and takes a grey cross (caption \"then handling differs too\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "three-plates",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"3 the data\".",
+      "teachingReason": "Three plates each: Each time has three plates, made the same way.",
+      "narrationCue": "three / a hundred and forty two",
+      "motionPurpose": "On the spoken cues: Right zone: the data table writes: columns \"exposure (s) | plate 1 | plate 2 | plate 3 | mean\"; rows write in turn, the 0 s row first, cell by cell as spoken: \"0 | 133 | 144 | 149 |\"; on \"a hundred and forty two\" \"(133 + 144 + 149) ÷ 3 = 142\" writes in the mean cell (amber). Then the other rows write silently, one per beat: \"15 | 91 | 97 | 106 | 98\"; \"30 | 55 | 61 | 67 | 61\"; \"60 | 20 | 24 | 28 | 24\"; \"120 | 3 | 5 |",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"3 the data\". Right zone: the data table writes: columns \"exposure (s) | plate 1 | plate 2 | plate 3 | mean\"; rows write in turn, the 0 s row first, cell by cell as spoken: \"0 | 133 | 144 | 149 |\"; on \"a hundred and forty two\" \"(133 + 144 + 149) ÷ 3 = 142\" writes in the mean cell (amber). Then the other rows write silently, one per beat: \"15 | 91 | 97 | 106 | 98\"; \"30 | 55 | 61 | 67 | 61\"; \"60 | 20 | 24 | 28 | 24\"; \"120 | 3 | 5 | 7 | 5\". On \"slightly different number of cells\" a coded micropipette drop splits into three drops with slightly different dot counts (tag \"random sampling of cells\"). Bright at the end: the 0 s row, its mean and the tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "relative-survival",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"4 the analysis\".",
+      "teachingReason": "Relative survival: To compare the times, turn each mean into a relative survival: the mean divided by the control mean, times a hundred.",
+      "narrationCue": "relative survival / forty three point zero percent / three point five",
+      "motionPurpose": "On the spoken cues: The table gains a column \"relative survival (%)\". The formula writes above it: \"relative survival = mean ÷ control mean × 100\" with the gloss \"relative survival: a time's mean as a % of the control's mean\". The survival bar row draws beside the table: five bars, the 0 s bar full (100.0). On \"forty three point zero\" \"61 ÷ 142 × 100 = 43.0\" writes in the 30 s cell and its bar fills to 43 %; the 15 s and 60 s cells",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"4 the analysis\". The table gains a column \"relative survival (%)\". The formula writes above it: \"relative survival = mean ÷ control mean × 100\" with the gloss \"relative survival: a time's mean as a % of the control's mean\". The survival bar row draws beside the table: five bars, the 0 s bar full (100.0). On \"forty three point zero\" \"61 ÷ 142 × 100 = 43.0\" writes in the 30 s cell and its bar fills to 43 %; the 15 s and 60 s cells fill silently, \"69.0\" and \"16.9\"; on \"three point five\" \"5 ÷ 142 × 100 = 3.5\" writes and its bar fills to a sliver. Bright at the end: the formula, the 30 s working and the 3.5. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "graph",
+      "visualDecision": "new",
+      "visualReference": "the table shrinks to a strip.",
+      "teachingReason": "Graph every plate: Graph exposure time on the x axis and relative survival on the y.",
+      "narrationCue": "steeply / lower survival",
+      "motionPurpose": "On the spoken cues: Coded `lineGraph`: x \"UV exposure time (s)\", 0 to 120; y \"relative survival (%)\", 0 to 110. Means as larger amber points joined by a line: (0, 100.0), (15, 69.0), (30, 43.0), (60, 16.9), (120, 3.5). On \"every plate\" fifteen small grey points appear in groups of three (author table \"Plate points\"), and short range bars draw through each group. On \"steeply\" the first segment pulses and a tag writes \"first 15 s: about",
+      "motionRole": "explain",
+      "onScreenChange": "the table shrinks to a strip. Coded `lineGraph`: x \"UV exposure time (s)\", 0 to 120; y \"relative survival (%)\", 0 to 110. Means as larger amber points joined by a line: (0, 100.0), (15, 69.0), (30, 43.0), (60, 16.9), (120, 3.5). On \"every plate\" fifteen small grey points appear in groups of three (author table \"Plate points\"), and short range bars draw through each group. On \"steeply\" the first segment pulses and a tag writes \"first 15 s: about a third lost\"; the tail flattens with a tag \"levelling off towards zero\". On \"lower survival\" a teal summary line writes under the graph: \"longer exposure, lower survival (this lamp, 20 cm, this yeast)\". Bright at the end: the curve, the range bars and the summary line. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "supports",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"5 the conclusion\".",
+      "teachingReason": "What it supports, and what it doesn't: So what do the data support?",
+      "narrationCue": "mutated / lived",
+      "motionPurpose": "On the spoken cues: Right zone: the conclusion card with two columns. Left \"supported\" (teal): \"longer UVC exposure → lower survival (these yeast, this lamp, 20 cm)\". Right, on \"mutated\", \"not shown\" (terracotta): \"whether any survivors mutated\". The four-fates fork from scene 3 returns small under the card; on \"lived\" its \"mutants hide here\" tag pulses inside the survivors' bracket. A chip \"fewer colonies = more mutants\" fades in and",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"5 the conclusion\". Right zone: the conclusion card with two columns. Left \"supported\" (teal): \"longer UVC exposure → lower survival (these yeast, this lamp, 20 cm)\". Right, on \"mutated\", \"not shown\" (terracotta): \"whether any survivors mutated\". The four-fates fork from scene 3 returns small under the card; on \"lived\" its \"mutants hide here\" tag pulses inside the survivors' bracket. A chip \"fewer colonies = more mutants\" fades in and takes a grey cross (caption \"counts measure survival\"), with a grey tag \"as in the mutagens video\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "measure-mutation",
+      "visualDecision": "adjust",
+      "visualReference": "the survival plates slide off.",
+      "teachingReason": "How you'd measure mutation: To measure mutation, you'd test the survivors for a new trait that's inherited.",
+      "narrationCue": "survivors / rare / fraction of survivors / passed on",
+      "motionPurpose": "On the spoken cues: On \"rare\" a grey tag writes: \"induced mutants: about 1 in 10⁴ to 10⁶ survivors\". Centre left: `m6-agar-dish-top-v1.png` with the coded label \"selective medium: normal yeast can't grow\"; a coded micropipette drop lands and a faint cream stipple spreads across it, labelled \"about 2 × 10⁷ exposed cells (20 million)\"; a coded time bar \"48 h\"; the stipple fades and the dish cross-fades to",
+      "motionRole": "explain",
+      "onScreenChange": "the survival plates slide off. On \"rare\" a grey tag writes: \"induced mutants: about 1 in 10⁴ to 10⁶ survivors\". Centre left: `m6-agar-dish-top-v1.png` with the coded label \"selective medium: normal yeast can't grow\"; a coded micropipette drop lands and a faint cream stipple spreads across it, labelled \"about 2 × 10⁷ exposed cells (20 million)\"; a coded time bar \"48 h\"; the stipple fades and the dish cross-fades to `m6-yeast-selective-plate-v1.png` (new plate: the same dish, three small colonies). A grey tag \"like the antibiotic dish in the first video\" (dims). Centre right, smaller: `m6-yeast-plate-030s-v1.png` with the tag \"diluted, ordinary agar: count survivors\". On \"fraction of survivors\" a line writes: \"mutation frequency = mutant colonies ÷ survivors plated\", with a green chip \"compare with unexposed cells\" beside a ghost 0 s pair. On \"passed on\" a small copy of the selective plate thumbnail appears with an arrow \"regrow on selective medium\" and a tick, tag \"regrow: does the trait stay?\". A grey tag under all, silent: \"or look for a new colour among survivors (mutagens video)\". Bright at the end: the frequency line, the comparison chip and the regrow tick. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"6 evaluate\".",
+      "teachingReason": "Validity, reliability and accuracy: Validity: with one variable changed and a control handled the same way, the counts validly compare survival, but they aren't a valid measure of mutation.",
+      "narrationCue": "Validity / Reliability / Accuracy / output",
+      "motionPurpose": "On the spoken cues: Three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what was intended? Survival: yes (one variable, same handling, lamp-off control). Mutation: no (survivors not tested).\" \"Reliability: repeats agree? 30 s plates: 55, 61, 67 (range 12, about what random sampling gives); means smooth chance variation.\" \"Accuracy: close",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"6 evaluate\". Three cards write in turn in the right zone, each with its plain question and this practical's answer, the previous card dimming: \"Validity: measures what was intended? Survival: yes (one variable, same handling, lamp-off control). Mutation: no (survivors not tested).\" \"Reliability: repeats agree? 30 s plates: 55, 61, 67 (range 12, about what random sampling gives); means smooth chance variation.\" \"Accuracy: close to the true value? Count through the lid on a grid, tally each colony, a second counter; plates below about 30 colonies (60 s, 120 s) carry more chance variation.\" On \"Accuracy\" the colony count grid lays over `m6-yeast-plate-030s-v1.png` and tally marks tick across a few colonies. On \"output\" a small grey line writes: \"dose = lamp output at the plate × time; with a warmed-up, steady lamp, more time means more dose (lamps warm up and age)\". Footer, small grey: \"NESA glossary: reliability, the extent to which repeated observations and/or measurements taken under identical circumstances will yield similar results.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"UVC from the cabinet lamp (non-ionising radiation; not a GHS chemical hazard)\" / \"skin burns and eye injury (photokeratitis) after a short exposure\" / \"trained staff only; interlocked cabinet (`m6-uv-cabinet-closed-v1.png` thumbnail); lamp off before the door opens; students analyse data\"; \"yeast, *Saccharomyces cerevisiae* (risk group 1)\" / \"low; possible irritation or allergy in sensitive people\" / \"aseptic technique; wash hands\"; on \"sealed\" \"contaminating microbes on grown plates (unknown, treat as potentially harmful)\" / \"infection or allergy if plates are opened\" / \"plates taped shut, counted through the lid, never opened; sterilised (autoclaved) before disposal (`m6-autoclave-bag-plates-v1.png`)\"; on \"flammable\" \"70 % ethanol for wiping benches (H225, flammable; many suppliers add H319, eye irritation)\" / \"fire; eye irritation\" / \"no flames nearby; small squeeze bottle; safety glasses if splashing\".",
+      "teachingReason": "The risk assessment: The risk assessment.",
+      "narrationCue": "sealed / flammable",
+      "motionPurpose": "On the spoken cues: Grey row: \"incubator 30 °C: low risk\". Footer chip: \"follow your school's risk assessment, its microbiology procedure and each bottle's safety data sheet\".",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, rows dimming as each new row writes: \"UVC from the cabinet lamp (non-ionising radiation; not a GHS chemical hazard)\" / \"skin burns and eye injury (photokeratitis) after a short exposure\" / \"trained staff only; interlocked cabinet (`m6-uv-cabinet-closed-v1.png` thumbnail); lamp off before the door opens; students analyse data\"; \"yeast, *Saccharomyces cerevisiae* (risk group 1)\" / \"low; possible irritation or allergy in sensitive people\" / \"aseptic technique; wash hands\"; on \"sealed\" \"contaminating microbes on grown plates (unknown, treat as potentially harmful)\" / \"infection or allergy if plates are opened\" / \"plates taped shut, counted through the lid, never opened; sterilised (autoclaved) before disposal (`m6-autoclave-bag-plates-v1.png`)\"; on \"flammable\" \"70 % ethanol for wiping benches (H225, flammable; many suppliers add H319, eye irritation)\" / \"fire; eye irritation\" / \"no flames nearby; small squeeze bottle; safety glasses if splashing\". Grey row: \"incubator 30 °C: low risk\". Footer chip: \"follow your school's risk assessment, its microbiology procedure and each bottle's safety data sheet\". Hold about 3 seconds (reading hold; the risks return in the key notes). Hold about 3 seconds (reading hold; the risks return in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold; the risks return in the key notes)"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. In a repeat of this investigation,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"In a repeat of this investigation, yeast was spread on agar plates and exposed to UV light in a cabinet at a fixed distance. After incubation, the control plates (0 s) had 145, 151 and 160 colonies. The plates exposed for 45 s had 36, 41 and 46 colonies. Calculate the relative survival of the yeast at 45 s (mean colonies at 45 s as a percentage of the control mean). Show your working.\" Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no formula, no bars.",
+      "motionTools": [
+        "HandText write-on",
+        "bar fill",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "a hundred and fifty two / forty one / twenty seven point zero percent",
+      "motionPurpose": "On the spoken cues: On \"a hundred and fifty two\" \"145, 151 and 160\" is underlined and \"(145 + 151 + 160) ÷ 3 = 456 ÷ 3 = 152\" writes. On \"forty one\" \"36, 41 and 46\" is underlined and \"(36 + 41 + 46) ÷ 3 = 123 ÷ 3 = 41\" writes. On \"twenty seven point zero\" \"relative survival of the yeast at 45 s\" is underlined and \"41 ÷ 152 × 100 = 27.0 %\" writes in the answer box, with a small survival bar filling to 27 %. A chip \"73.0 %\" fades in and",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. On \"a hundred and fifty two\" \"145, 151 and 160\" is underlined and \"(145 + 151 + 160) ÷ 3 = 456 ÷ 3 = 152\" writes. On \"forty one\" \"36, 41 and 46\" is underlined and \"(36 + 41 + 46) ÷ 3 = 123 ÷ 3 = 41\" writes. On \"twenty seven point zero\" \"relative survival of the yeast at 45 s\" is underlined and \"41 ÷ 152 × 100 = 27.0 %\" writes in the answer box, with a small survival bar filling to 27 %. A chip \"73.0 %\" fades in and is crossed (caption \"that's the share lost, not survival\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A student repeated the investigation.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more. To have more colonies to count",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student repeated the investigation. To have more colonies to count at 120 s, she spread the 120 s plates with a yeast suspension ten times as concentrated as the one used for all other plates. The control plates (0 s) had a mean of 142 colonies and the 120 s plates had a mean of 52 colonies. She reported a relative survival of 36.6 % at 120 s. Evaluate her result.\" Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "on \"ten times\" \"ten times as concentrated\" is underlined and a comparison strip writes: \"120 s plates: 10 × the cells | all other plates: 1 ×\" with a terracotta tag \"two variables changed: time and cells plated\".",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "ten times / three point seven / correcting",
+      "motionPurpose": "On the spoken cues: On \"three point seven\" \"a mean of 52 colonies\" and \"a mean of 142 colonies\" are underlined and the lines write: \"52 ÷ 10 ≈ 5.2 colonies per standard plate\" and \"5.2 ÷ 142 × 100 ≈ 3.7 %\", with a grey tag \"main data: 3.5 %\". On \"correcting\" a chip \"36.6 % survival\" fades in and is crossed (caption \"different numbers of cells plated, not corrected\"), and a small grey line writes: \"fair fix: same suspension for every",
+      "motionRole": "explain",
+      "onScreenChange": "on \"ten times\" \"ten times as concentrated\" is underlined and a comparison strip writes: \"120 s plates: 10 × the cells | all other plates: 1 ×\" with a terracotta tag \"two variables changed: time and cells plated\". On \"three point seven\" \"a mean of 52 colonies\" and \"a mean of 142 colonies\" are underlined and the lines write: \"52 ÷ 10 ≈ 5.2 colonies per standard plate\" and \"5.2 ÷ 142 × 100 ≈ 3.7 %\", with a grey tag \"main data: 3.5 %\". On \"correcting\" a chip \"36.6 % survival\" fades in and is crossed (caption \"different numbers of cells plated, not corrected\"), and a small grey line writes: \"fair fix: same suspension for every plate, or correct for the cells plated\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 One independent variable; control handled the same (lamp off).\"",
+      "teachingReason": "Decision rule and handoff: So, to analyse a survival investigation: change one variable, handle the control the same way, use repeats, turn means into relative survival, and graph every plate.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Three plates per time; means.\" \"3 Relative survival = mean ÷ control mean × 100.\" \"4 Graph means and every plate.\" \"5 Claim what was measured: survival, not mutation.\" On \"Next\" a chip \"Next: what one changed base can do to a protein\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 One independent variable; control handled the same (lamp off).\" \"2 Three plates per time; means.\" \"3 Relative survival = mean ÷ control mean × 100.\" \"4 Graph means and every plate.\" \"5 Claim what was measured: survival, not mutation.\" On \"Next\" a chip \"Next: what one changed base can do to a protein\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p01b-learning-review.md",
+      "sha256": "1509580e6e8a195215e2f28680c351a0566c09d5c293e4454581df3fbf81ce54"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m6p01b-claude-science-check.md",
+      "sha256": "e71fce30124e5b32d1978d3930387a5cb195288e442b938f18f2430797284dd2"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}
