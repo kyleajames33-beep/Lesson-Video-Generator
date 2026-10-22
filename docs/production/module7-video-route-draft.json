@@ -1650,7 +1650,7 @@
           ],
           "entryKnowledge": "Recall bio-m7-b07, bio-m7-b08.",
           "next": [
-            "bio-m7-b10"
+            "bio-m7-g03"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
@@ -1661,6 +1661,36 @@
             "docs/production/claude-pm/site-extracts/bio-m7-l13.md",
             "docs/production/claude-pm/site-extracts/bio-m7-l14.md"
           ]
+        },
+        {
+          "id": "bio-m7-g03",
+          "title": "Immune response practice",
+          "type": "practice",
+          "siteLessons": [
+            "L11",
+            "L12",
+            "L13"
+          ],
+          "syllabusActions": [
+            "B7-IQ2-02",
+            "B7-IQ3-01",
+            "B7-IQ3-02",
+            "B7-IQ4-02"
+          ],
+          "prerequisites": [
+            "bio-m7-b06",
+            "bio-m7-b07",
+            "bio-m7-b08",
+            "bio-m7-b09"
+          ],
+          "estimatedMinutes": 9,
+          "start": "Sequence the events from entry to antibody production.",
+          "stop": "Read a primary and secondary antibody graph; distinguish active from passive immunity.",
+          "playlistOrder": 14,
+          "next": [
+            "bio-m7-b10"
+          ],
+          "status": "draft (added by Claude route review change 7, 22 Oct)"
         },
         {
           "id": "bio-m7-b10",
@@ -1681,7 +1711,7 @@
           "estimatedMinutes": 8.5,
           "start": "Locate transmission links that controls can interrupt.",
           "stop": "Evaluate hygiene, isolation and public-health measures.",
-          "playlistOrder": 14,
+          "playlistOrder": 15,
           "planAnchor": "B10",
           "sourceCandidates": [
             {
@@ -1727,7 +1757,7 @@
           "estimatedMinutes": 8.5,
           "start": "Compare bacterial structures with viral replication.",
           "stop": "Assess treatment evidence and resistance.",
-          "playlistOrder": 15,
+          "playlistOrder": 16,
           "planAnchor": "B11",
           "sourceCandidates": [
             {
@@ -1766,7 +1796,7 @@
           "estimatedMinutes": 7,
           "start": "Set up safe controlled agar comparisons.",
           "stop": "Interpret inhibition zones without overclaiming clinical effectiveness.",
-          "playlistOrder": 16,
+          "playlistOrder": 17,
           "planAnchor": "P05",
           "sourceCandidates": [
             {
@@ -1807,7 +1837,7 @@
           "estimatedMinutes": 8.5,
           "start": "Follow a vector life cycle and environmental intervention.",
           "stop": "Evaluate pesticides and genetic strategies with trade-offs.",
-          "playlistOrder": 17,
+          "playlistOrder": 18,
           "planAnchor": "B12",
           "sourceCandidates": [
             {
@@ -1849,7 +1879,7 @@
           "estimatedMinutes": 8.5,
           "start": "Read incidence and prevalence data for a named disease.",
           "stop": "Combine biological and social causes of control success or failure.",
-          "playlistOrder": 18,
+          "playlistOrder": 19,
           "planAnchor": "B13",
           "sourceCandidates": [
             {
@@ -1891,7 +1921,7 @@
           "estimatedMinutes": 8,
           "start": "Read a disease table or graph and identify its denominator.",
           "stop": "Calculate or compare incidence and prevalence, then justify control.",
-          "playlistOrder": 19,
+          "playlistOrder": 20,
           "planAnchor": "G01",
           "sourceCandidates": [
             {
@@ -1943,7 +1973,7 @@
           "estimatedMinutes": 8.5,
           "start": "Compare historical, culturally diverse and current strategies.",
           "stop": "Evaluate each against transmission evidence and context.",
-          "playlistOrder": 20,
+          "playlistOrder": 21,
           "planAnchor": "B14",
           "sourceCandidates": [
             {
@@ -1983,7 +2013,7 @@
           "estimatedMinutes": 8.5,
           "start": "Identify knowledge holders and a named medicine example.",
           "stop": "Explain consent, recognition and protection of cultural and intellectual property.",
-          "playlistOrder": 21,
+          "playlistOrder": 22,
           "planAnchor": "B15",
           "sourceCandidates": [
             {
@@ -2030,7 +2060,7 @@
           "estimatedMinutes": 8,
           "start": "Read a case with biological and social evidence.",
           "stop": "Write a justified evaluation with conditions and limits.",
-          "playlistOrder": 22,
+          "playlistOrder": 23,
           "planAnchor": "G02",
           "sourceCandidates": [
             {
