@@ -1,6 +1,11 @@
 # M6 P05: Preparing a buffer and demonstrating its properties: how do you prove it's a buffer? (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 97 resolved; ready to voice.
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+## Changes in Revision 3 (22 Oct)
+
+No changes: Codex check 97 found no errors in this design. Narration recounted by script on 22 Oct: 6,245 characters, unchanged; timing unchanged.
 
 Revision 2 (21 Oct) resolves `../checks/m6p05-learning-review.md` and `../checks/m6p05-claude-science-check.md`. Narration 6,245 characters, 19 scenes, about 9.5 minutes (570 s) including holds and the notes hold (counted by script with the build parser rules; see "Narration length estimate"). Nothing recorded; human listening pending. Revision 1 (21 Oct) was the first design (6,251 characters).
 

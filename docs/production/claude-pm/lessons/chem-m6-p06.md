@@ -1,6 +1,12 @@
 # M6 P06: Determining an unknown concentration by titration: how do you get a titre you can trust? (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 97 resolved; ready to voice.
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+## Changes in Revision 3 (22 Oct)
+
+1. Scene 9 Visual, concordance strip (Codex check 97, item 1). The bracket now reads "spread 0.05 mL" over 24.30 to 24.35 (24.35 minus 24.30). A small grey label "rule: within 0.10 mL" beside it states the acceptance rule, as Codex suggested, so the strip shows both the spread and C12's rule. Narration unchanged.
+2. Narration recounted by script: 6,140 characters, unchanged; timing unchanged.
 
 Revision 1 (21 Oct) was the first design. Narration and timing: see "Narration length estimate". Nothing recorded; human listening pending.
 
@@ -99,7 +105,7 @@ Visual: right zone, step card "4 Titrate". Centre: the full set-up, burette fill
 ### 9. the results, and a run with a known fault
 > Here are bench A's results: each titre is final minus initial. Run two came out at **twenty four point six five**, and the notebook says an air bubble left the tip. The bubble's volume was counted as acid, so that titre is too big. The cause is known, so that run is left out and **repeated**. The other three agree within zero point zero five, with a mean of **twenty four point three three**.
 
-Visual: the right zone widens for C12's titre table: columns "run | initial (mL) | final (mL) | titre (mL)"; rows "rough | 0.00 | 24.90 | 24.90" (greyed, "not used"); "1 | 0.40 | 24.75 | 24.35"; "2 | 0.15 | 24.80 | 24.65"; "3 | 0.20 | 24.50 | 24.30"; "4 | 1.05 | 25.40 | 24.35"; each titre cell writes as "final − initial". On "twenty four point six five" row 2 pulses and a grey note writes beside it "bubble left tip". A thumbnail of the burette tip replays the bubble leaving while the counter jumps and no liquid enters the flask; tag "bubble counted as acid: titre too big". On "repeated" row 2 takes a grey cross with the caption "excluded: known fault; repeated (run 4)". C12's concordance strip draws (24.25 to 24.70 mL): the bracket "0.10 mL" covers 24.30 to 24.35, the 24.65 dot crossed outside. On "twenty four point three three" rows 1, 3 and 4 ring teal and "(24.35 + 24.30 + 24.35) ÷ 3 = 24.33 mL" writes and shrinks to a kept chip "mean titre = 24.33 mL". Bright at the end: the ringed rows, the crossed row and the kept chip. Hold about 2 seconds.
+Visual: the right zone widens for C12's titre table: columns "run | initial (mL) | final (mL) | titre (mL)"; rows "rough | 0.00 | 24.90 | 24.90" (greyed, "not used"); "1 | 0.40 | 24.75 | 24.35"; "2 | 0.15 | 24.80 | 24.65"; "3 | 0.20 | 24.50 | 24.30"; "4 | 1.05 | 25.40 | 24.35"; each titre cell writes as "final − initial". On "twenty four point six five" row 2 pulses and a grey note writes beside it "bubble left tip". A thumbnail of the burette tip replays the bubble leaving while the counter jumps and no liquid enters the flask; tag "bubble counted as acid: titre too big". On "repeated" row 2 takes a grey cross with the caption "excluded: known fault; repeated (run 4)". C12's concordance strip draws (24.25 to 24.70 mL): the bracket "spread 0.05 mL" covers 24.30 to 24.35, with a small grey label "rule: within 0.10 mL" beside it, the 24.65 dot crossed outside. On "twenty four point three three" rows 1, 3 and 4 ring teal and "(24.35 + 24.30 + 24.35) ÷ 3 = 24.33 mL" writes and shrinks to a kept chip "mean titre = 24.33 mL". Bright at the end: the ringed rows, the crossed row and the kept chip. Hold about 2 seconds.
 
 ### 10. the calculation
 > Now the calculation. The aliquot holds zero point zero five one five four times zero point zero two five zero zero litres: **one point two eight eight five times ten to the minus three** moles of carbonate. Times two: **two point five seven seven times ten to the minus three** moles of acid. Divide by the mean titre in litres: **zero point one zero five nine** moles per litre.

@@ -1,6 +1,11 @@
 # G03 (Chemistry, Module 6): Standardisation and titration calculations: HSC-style practice (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 97 resolved; ready to voice.
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+## Changes in Revision 3 (22 Oct)
+
+No changes: Codex check 97 found no errors in this design. Narration recounted by script on 22 Oct: 5,806 characters, unchanged; timing unchanged.
 
 Revision 2 changes (21 Oct), resolving `../checks/m6g03c-learning-review.md` and `../checks/m6g03c-claude-science-check.md`:
 

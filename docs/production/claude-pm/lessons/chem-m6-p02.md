@@ -1,6 +1,11 @@
 # M6 P02: Measuring the enthalpy of neutralisation: how do you measure a temperature you never see? (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 96 resolved; ready to voice.
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+## Changes in Revision 3 (22 Oct)
+
+No changes: Codex check 96 found no errors in this design. Narration recounted by script on 22 Oct: 6,279 characters, unchanged; timing unchanged.
 
 Revision 2 (21 Oct) resolves `../checks/m6p02-learning-review.md` (S1 to S4, M1 to M4) and `../checks/m6p02-claude-science-check.md` (S1 to S3, M1 to M7). Narration 6,279 characters, 18 scenes, about 9.5 minutes (570 s) including holds and the notes hold (counted by script; method under "Narration length estimate"). Nothing recorded; human listening pending.
 

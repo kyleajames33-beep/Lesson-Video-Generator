@@ -1,6 +1,11 @@
 # M6 P03: Measuring the pH of a range of acids and bases: how do you get a reading you can trust? (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 96 resolved; ready to voice.
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+## Changes in Revision 3 (22 Oct)
+
+No changes: Codex check 96 found no errors in this design. Narration recounted by script on 22 Oct: 6,268 characters, unchanged; timing unchanged.
 
 Revision 2 (21 Oct) resolves `../checks/m6p03-learning-review.md` (B1, S1 to S4, M1 to M3) and `../checks/m6p03-claude-science-check.md` (B1, S1, S2, M1 to M8). Narration 6,268 characters, 19 scenes, about 9.5 minutes (570 s) including holds and the notes hold (counted by script; method under "Narration length estimate"). Nothing recorded; human listening pending.
 

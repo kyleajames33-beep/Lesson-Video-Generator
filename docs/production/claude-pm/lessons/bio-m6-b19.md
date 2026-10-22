@@ -1,7 +1,12 @@
 # B6-19: Which genetic technology benefits hold up? (design)
 
-Status: Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (22 Oct): Codex check 97 resolved; ready to voice.
+Earlier status, Revision 2 (21 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 Narration 5,991 characters by script (6,005 with whole-file joining spaces; 1,014 words, 15 scene files), about 9.5 minutes (570 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+
+## Changes in Revision 3 (22 Oct)
+
+No changes: Codex check 97 found no errors in this design. Narration recounted by script on 22 Oct: 5,991 characters, unchanged; timing unchanged.
 
 ## Revision 2 changes (21 Oct)
 
