@@ -46,7 +46,7 @@ export const SceneHook: React.FC = () => {
 			{S.map((s, i) => <PlateAt key={i} p={s.p} x={s.x} y={s.y} h={s.h} at={s.at} />)}
 			{chips.map((c, i) => <IconChip key={i} x={cxs[i]} y={CY} text={c.t} k={c.k} at={c.at} />)}
 			{fl ? [0, 1, 2, 3].map(i => {
-				const j = (i + 1 + (phase % 3)) % 4;
+				const j = (i + 1 + (((phase % 3) + 3) % 3)) % 4;
 				const o = Math.sin(clamp01(((f - K1.which + 40) % 22) / 22) * Math.PI) * 0.8;
 				return <line key={i} x1={cxs[i] + ws[i] / 2} y1={CY + CH + 6} x2={sCx(j)} y2={S[j].y - 14} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="9 8" opacity={o} />;
 			}) : null}
