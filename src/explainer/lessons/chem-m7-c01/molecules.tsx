@@ -24,6 +24,10 @@ export const MULTI = TEAL;
 export const HGREY = '#9a948a';
 export const NAVY = '#24407a';
 export const CARDC = '#fffdf8';
+/** Oxygen (red-brown, M7 C02 on) and the bonding-direction lobes / hydrogen bonds (violet, M7 C02 and C03). */
+export const OXY = '#b5583c', OXY_INK = '#8f3f26';
+export const VIOLET = '#7a5bb5', VIOLET_SOFT = '#e6ddf5';
+export const DISP = '#8fbfe3';
 export type V2 = [number, number];
 const vis = (f: number, at: number, out?: number, d = 12) => prog(f, at, d) * (out === undefined ? 1 : 1 - prog(f, out, d));
 
@@ -283,7 +287,7 @@ export const slotCharX = (x: number, widths: [number, number, number], slot: num
 export const builderW = (widths: [number, number, number] = [380, 210, 230], gap = 18) => widths[0] + widths[1] + widths[2] + 2 * gap;
 
 // ---------- full structural formula ----------
-export type FAtom = {el: 'C' | 'H'; p: V2; at: number; to?: V2; moveAt?: number; moveDur?: number; out?: number; color?: string; label?: string};
+export type FAtom = {el: 'C' | 'H' | 'O'; p: V2; at: number; to?: V2; moveAt?: number; moveDur?: number; out?: number; color?: string; label?: string};
 export type FBond = {a: number; b: number; order?: 1 | 2 | 3; at?: number; out?: number; color?: string};
 /** Full structural formula: letters on atoms, bonds between them (trimmed round the letters). Atoms can move. */
 export const FullMol: React.FC<{atoms: FAtom[]; bonds: FBond[]; at?: number; out?: number; size?: number; o?: number}> = ({atoms, bonds, at = -1000, out, size = 40, o = 1}) => {
@@ -317,7 +321,7 @@ export const FullMol: React.FC<{atoms: FAtom[]; bonds: FBond[]; at?: number; out
 				if (op <= 0.01) return null;
 				const p = pos(i);
 				const isH = a.el === 'H';
-				return <g key={i} opacity={op}><Sx x={p[0]} y={p[1] + (isH ? size * 0.3 : size * 0.36)} text={a.label ?? a.el} size={isH ? size * 0.82 : size} color={a.color ?? (isH ? HGREY : INK)} anchor="middle" weight={isH ? 700 : 800} at={-1000} /></g>;
+				return <g key={i} opacity={op}><Sx x={p[0]} y={p[1] + (isH ? size * 0.3 : size * 0.36)} text={a.label ?? a.el} size={isH ? size * 0.82 : size} color={a.color ?? (isH ? HGREY : a.el === 'O' ? OXY_INK : INK)} anchor="middle" weight={isH ? 700 : 800} at={-1000} /></g>;
 			})}
 		</g>
 	);
@@ -369,7 +373,7 @@ export const rotate3 = ([x, y, z]: Vec3, yaw: number, pitch: number): Vec3 => {
 };
 export const project3 = (p: Vec3, cx: number, cy: number, unitPx: number) => { const s = CAMERA / (CAMERA - p[2]); return {x: cx + p[0] * unitPx * s, y: cy - p[1] * unitPx * s, s, z: p[2]}; };
 export const depthLerp = (z: number, far: number, near: number, range = 1) => far + (near - far) * Math.min(1, Math.max(0, (z / range + 1) / 2));
-export type Atom3 = {el: 'C' | 'H'; p: Vec3};
+export type Atom3 = {el: 'C' | 'H' | 'O'; p: Vec3};
 /** Butane-like chain in 3D: carbons zigzag in the xy plane, hydrogens tetrahedral-ish (two out of plane per CH2). */
 export const chain3d = (n: number, bond = 1): {atoms: Atom3[]; bonds: [number, number][]} => {
 	const atoms: Atom3[] = [], bonds: [number, number][] = [];
@@ -389,19 +393,39 @@ export const chain3d = (n: number, bond = 1): {atoms: Atom3[]; bonds: [number, n
 	}
 	return {atoms, bonds};
 };
-/** The ink ball-and-stick: flat paper-toned atoms with ink outlines, ink bonds, painter-sorted by depth. */
-export const BallStick: React.FC<{atoms: Atom3[]; bonds: [number, number][]; cx: number; cy: number; unitPx: number; yaw: number; pitch: number; o?: number}> = ({atoms, bonds, cx, cy, unitPx, yaw, pitch, o = 1}) => {
+/**
+ * The ink ball-and-stick: flat paper-toned atoms with ink outlines, ink bonds, painter-sorted by depth.
+ * Optional (M7 C02 on, all backward compatible): orders (per bond 1, 2 or 3: parallel strokes in screen space),
+ * bondColors, atomO (per-atom opacity), shift (per-atom 3D offset before rotation, for atoms that float off),
+ * bondO (per-bond opacity), glowAtoms (per-atom ring colour).
+ */
+export const BallStick: React.FC<{atoms: Atom3[]; bonds: [number, number][]; cx: number; cy: number; unitPx: number; yaw: number; pitch: number; o?: number; orders?: number[]; bondColors?: (string | undefined)[]; atomO?: (i: number) => number; shift?: (i: number) => Vec3; bondO?: (k: number) => number; glowAtoms?: (i: number) => string | undefined; scaleR?: number}> = ({atoms, bonds, cx, cy, unitPx, yaw, pitch, o = 1, orders, bondColors, atomO, shift, bondO, glowAtoms, scaleR = 1}) => {
 	if (o <= 0.01) return null;
-	const P = atoms.map(a => project3(rotate3(a.p, yaw, pitch), cx, cy, unitPx));
+	const P = atoms.map((a, i) => { const d = shift ? shift(i) : ([0, 0, 0] as Vec3); return project3(rotate3([a.p[0] + d[0], a.p[1] + d[1], a.p[2] + d[2]], yaw, pitch), cx, cy, unitPx); });
 	const items: {d: number; el: React.ReactNode}[] = [];
+	const k0 = unitPx / 230;
 	bonds.forEach(([a, b], k) => {
 		const pa = P[a], pb = P[b];
-		items.push({d: (pa.z + pb.z) / 2 - 0.01, el: <line key={'b' + k} x1={pa.x} y1={pa.y} x2={pb.x} y2={pb.y} stroke={INK} strokeWidth={7 * ((pa.s + pb.s) / 2)} strokeLinecap="round" opacity={depthLerp((pa.z + pb.z) / 2, 0.5, 1, 1.4)} />});
+		const bo = (bondO ? bondO(k) : 1) * Math.min(atomO ? atomO(a) : 1, atomO ? atomO(b) : 1);
+		if (bo <= 0.01) return;
+		const ord = orders?.[k] ?? 1;
+		const col = bondColors?.[k] ?? INK;
+		const sw = 7 * ((pa.s + pb.s) / 2) * Math.max(0.55, k0) * (ord > 1 ? 0.62 : 1);
+		const L = Math.hypot(pb.x - pa.x, pb.y - pa.y) || 1;
+		const nx = (-(pb.y - pa.y) / L) * sw * 1.25, ny = ((pb.x - pa.x) / L) * sw * 1.25;
+		const offs = ord === 1 ? [0] : ord === 2 ? [-0.5, 0.5] : [-1, 0, 1];
+		const op = depthLerp((pa.z + pb.z) / 2, 0.5, 1, 1.4) * bo;
+		items.push({d: (pa.z + pb.z) / 2 - 0.01, el: <g key={'b' + k} opacity={op}>{offs.map((m, j) => <line key={j} x1={pa.x + nx * m} y1={pa.y + ny * m} x2={pb.x + nx * m} y2={pb.y + ny * m} stroke={col} strokeWidth={sw} strokeLinecap="round" />)}</g>});
 	});
 	atoms.forEach((a, i) => {
 		const p = P[i];
-		const r = (a.el === 'C' ? 30 : 17) * p.s;
-		items.push({d: p.z, el: <g key={'a' + i} opacity={depthLerp(p.z, 0.6, 1, 1.4)}><circle cx={p.x} cy={p.y} r={r} fill={a.el === 'C' ? '#4a4540' : '#f3ede1'} stroke={INK} strokeWidth={3} />{a.el === 'C' ? <circle cx={p.x - r * 0.3} cy={p.y - r * 0.3} r={r * 0.22} fill="#6e675f" /> : null}</g>});
+		const ao = atomO ? atomO(i) : 1;
+		if (ao <= 0.01) return;
+		const r = (a.el === 'C' ? 30 : a.el === 'O' ? 28 : 17) * p.s * Math.max(0.5, k0) * scaleR;
+		const fill = a.el === 'C' ? '#4a4540' : a.el === 'O' ? OXY : '#f3ede1';
+		const hi = a.el === 'C' ? '#6e675f' : a.el === 'O' ? '#d88a6e' : null;
+		const g = glowAtoms ? glowAtoms(i) : undefined;
+		items.push({d: p.z, el: <g key={'a' + i} opacity={depthLerp(p.z, 0.6, 1, 1.4) * ao}>{g ? <circle cx={p.x} cy={p.y} r={r * 1.55} fill={g} opacity={0.45} /> : null}<circle cx={p.x} cy={p.y} r={r} fill={fill} stroke={INK} strokeWidth={3 * Math.max(0.6, k0)} />{hi ? <circle cx={p.x - r * 0.3} cy={p.y - r * 0.3} r={r * 0.22} fill={hi} /> : null}</g>});
 	});
 	return <g opacity={o}>{[...items].sort((x, y) => x.d - y.d).map(q => q.el)}</g>;
 };
@@ -464,4 +488,271 @@ export const Crossed: React.FC<{x: number; y: number; text: string; at: number; 
 			{note ? <Sx x={x + 8} y={y + h + size + 4} text={note} size={size * 0.9} color={TEAL} hand at={cross + 16} /> : null}
 		</g>
 	);
+};
+
+// ====================== M7 C02 and C03 additions (all new exports; nothing above changes for C01) ======================
+// README for Claude:
+// - ringPts / ringBonds: skeletal rings (cyclobutane, cyclopentane) for Skel.
+// - 3D builders: zig3 (zigzag heavy-atom chain), withH (adds hydrogens by geometry: 'tet' tetrahedral, 'trig' trigonal
+//   planar in the plane with normal `normal`, 'lin' linear), branchAt (a branch position on a tetrahedral carbon).
+//   Ready molecules: methane3d, ethane3d, ethene3d, ethyne3d, propene3d, propyne3d, alkane3d(n), ethanol3d,
+//   methoxymethane3d, isomer3d('2-methylbutane' | '2,2-dimethylpropane' | '2-methylpropane' | '2,3-dimethylbutane').
+//   Each returns {atoms, bonds, orders} for BallStick (pass orders; colour multiple bonds with bondColors).
+// - Lobes: violet bonding-direction lobes from a 3D centre (the direction spreader); AngleArc: a navy angle arc with a
+//   label; Edges: faint outline joining points (tetrahedron or triangle outline).
+// - QCardX: the HSC-style question card with extra space after chosen lines (structures beside parts) and underlines.
+// - Brace (labelled bracket), Dots (dotted flicker line: dispersion pale blue, hydrogen bond violet), Place
+//   (keyframed move and scale of a group), NameLbl (coloured name parts), Stamp (the "=" duplicate stamp).
+export const ringPts = (n: number, cx: number, cy: number, r: number, rot = -Math.PI / 2): V2[] => Array.from({length: n}, (_, i) => [cx + r * Math.cos(rot + (i * 2 * Math.PI) / n), cy + r * Math.sin(rot + (i * 2 * Math.PI) / n)]);
+export const ringBonds = (n: number): Bond[] => Array.from({length: n}, (_, i) => ({a: i, b: (i + 1) % n}));
+
+// ---------- 3D geometry ----------
+const a3 = (a: Vec3, b: Vec3): Vec3 => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];
+const s3 = (a: Vec3, b: Vec3): Vec3 => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
+const k3 = (a: Vec3, k: number): Vec3 => [a[0] * k, a[1] * k, a[2] * k];
+const d3 = (a: Vec3, b: Vec3) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+const x3 = (a: Vec3, b: Vec3): Vec3 => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
+export const n3 = (a: Vec3): Vec3 => { const L = Math.hypot(a[0], a[1], a[2]) || 1; return [a[0] / L, a[1] / L, a[2] / L]; };
+export const lerp3 = (a: Vec3, b: Vec3, t: number): Vec3 => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t];
+export const add3 = a3;
+export const TET: Vec3[] = [n3([0, 1, 0.0001]), n3([0.943, -0.333, 0]), n3([-0.471, -0.333, 0.816]), n3([-0.471, -0.333, -0.816])];
+const perpHint = (n: Vec3, hint: Vec3): Vec3 => { const u = s3(hint, k3(n, d3(hint, n))); return Math.hypot(...u) < 1e-3 ? n3(s3([0, 1, 0], k3(n, n[1]))) : n3(u); };
+/** Free directions completing a tetrahedron round a centre whose neighbours lie along unit vectors nbr. */
+export const freeDirs = (nbr: Vec3[], k: number, hint: Vec3 = [0, 1, 0]): Vec3[] => {
+	if (nbr.length === 0) return TET.slice(0, k);
+	if (nbr.length === 1) {
+		const n = nbr[0], u = perpHint(n, hint), v = x3(n, u);
+		const c = (2 * Math.SQRT2) / 3;
+		return [0, 1, 2].slice(0, k).map(j => { const ph = (j * 2 * Math.PI) / 3; return n3(a3(k3(n, -1 / 3), a3(k3(u, c * Math.cos(ph)), k3(v, c * Math.sin(ph))))); });
+	}
+	if (nbr.length === 2) {
+		const b = n3(k3(a3(nbr[0], nbr[1]), -1)), p = n3(x3(nbr[0], nbr[1]));
+		const ca = Math.cos(0.9556), sa = Math.sin(0.9556);
+		return [a3(k3(b, ca), k3(p, sa)), a3(k3(b, ca), k3(p, -sa))].slice(0, k);
+	}
+	return [n3(k3(nbr.reduce((s, q) => a3(s, q), [0, 0, 0] as Vec3), -1))].slice(0, k);
+};
+const rotAbout = (v: Vec3, ax: Vec3, ang: number): Vec3 => { const c = Math.cos(ang), s = Math.sin(ang); return a3(a3(k3(v, c), k3(x3(ax, v), s)), k3(ax, d3(ax, v) * (1 - c))); };
+export type Heavy = {el: 'C' | 'O'; p: Vec3; geo?: 'tet' | 'trig' | 'lin'; normal?: Vec3; hint?: Vec3};
+export type Mol3 = {atoms: Atom3[]; bonds: [number, number][]; orders: number[]};
+/** Heavy atoms plus bonds [a, b, order]; hydrogens are added to fill each valence (C 4, O 2) by the atom's geometry. */
+export const withH = (heavy: Heavy[], hb: [number, number, number?][], len = 0.62): Mol3 => {
+	const atoms: Atom3[] = heavy.map(h => ({el: h.el, p: h.p}));
+	const bonds: [number, number][] = hb.map(b => [b[0], b[1]]);
+	const orders = hb.map(b => b[2] ?? 1);
+	heavy.forEach((h, i) => {
+		const mine = hb.filter(b => b[0] === i || b[1] === i);
+		const used = mine.reduce((s, b) => s + (b[2] ?? 1), 0);
+		const need = (h.el === 'C' ? 4 : 2) - used;
+		if (need <= 0) return;
+		const nbrI = mine.map(b => (b[0] === i ? b[1] : b[0]));
+		const nbr = nbrI.map(j => n3(s3(heavy[j].p, h.p)));
+		const L = h.el === 'O' ? len * 0.85 : len;
+		let dirs: Vec3[];
+		if (h.geo === 'lin') dirs = [k3(nbr[0], -1)];
+		else if (h.geo === 'trig') {
+			const nm = h.normal ?? [0, 0, 1];
+			dirs = nbr.length === 1 ? [rotAbout(nbr[0], nm, (2 * Math.PI) / 3), rotAbout(nbr[0], nm, -(2 * Math.PI) / 3)].slice(0, need) : [n3(k3(a3(nbr[0], nbr[1]), -1))];
+		} else {
+			let hint = h.hint;
+			if (!hint && nbrI.length === 1) {
+				const j = nbrI[0];
+				const second = hb.map(b => (b[0] === j ? b[1] : b[1] === j ? b[0] : -1)).find(q => q >= 0 && q !== i);
+				hint = second !== undefined ? s3(heavy[j].p, heavy[second].p) : [0, 1, 0];
+			}
+			dirs = freeDirs(nbr, need, hint);
+		}
+		dirs.forEach(d => { atoms.push({el: 'H', p: a3(h.p, k3(d, L))}); bonds.push([i, atoms.length - 1]); orders.push(1); });
+	});
+	return {atoms, bonds, orders};
+};
+/** Zigzag heavy-atom positions in the xy plane, bond length `bond`, centred on the origin (as chain3d). */
+export const zig3 = (n: number, bond = 1): Vec3[] => { const dx = bond * 0.82, dy = bond * 0.29, x0 = (-(n - 1) * dx) / 2; return Array.from({length: n}, (_, i) => [x0 + i * dx, i % 2 ? dy : -dy, 0] as Vec3); };
+/** Position of a branch atom on tetrahedral atom i (slot 0 or 1 of its free directions). */
+export const branchAt = (pos: Vec3[], nbrs: number[], i: number, slot = 0, bond = 1): Vec3 => a3(pos[i], k3(freeDirs(nbrs.map(j => n3(s3(pos[j], pos[i]))), 2)[slot], bond));
+const chainB = (n: number): [number, number, number?][] => Array.from({length: n - 1}, (_, i) => [i, i + 1] as [number, number]);
+export const methane3d = (): Mol3 => withH([{el: 'C', p: [0, 0, 0]}], []);
+export const ethane3d = (): Mol3 => withH([{el: 'C', p: [-0.5, 0, 0], hint: [0, 1, 0]}, {el: 'C', p: [0.5, 0, 0], hint: [0, -1, 0]}], [[0, 1]]);
+export const alkane3d = (n: number): Mol3 => (n === 1 ? methane3d() : n === 2 ? ethane3d() : withH(zig3(n).map(p => ({el: 'C' as const, p})), chainB(n)));
+export const ethene3d = (): Mol3 => withH([{el: 'C', p: [-0.42, 0, 0], geo: 'trig'}, {el: 'C', p: [0.42, 0, 0], geo: 'trig'}], [[0, 1, 2]]);
+export const ethyne3d = (): Mol3 => withH([{el: 'C', p: [-0.38, 0, 0], geo: 'lin'}, {el: 'C', p: [0.38, 0, 0], geo: 'lin'}], [[0, 1, 3]]);
+export const propene3d = (): Mol3 => { const c1: Vec3 = [0.1, 0.2, 0]; return withH([{el: 'C', p: a3(c1, [-0.866, -0.5, 0])}, {el: 'C', p: c1, geo: 'trig'}, {el: 'C', p: a3(c1, k3([0.866, -0.5, 0], 0.86)), geo: 'trig'}], [[0, 1], [1, 2, 2]]); };
+export const propyne3d = (): Mol3 => withH([{el: 'C', p: [-0.95, 0, 0], hint: [0, 1, 0]}, {el: 'C', p: [0, 0, 0], geo: 'lin'}, {el: 'C', p: [0.76, 0, 0], geo: 'lin'}], [[0, 1], [1, 2, 3]]);
+export const ethanol3d = (): Mol3 => { const z = zig3(3); return withH([{el: 'C', p: z[0]}, {el: 'C', p: z[1]}, {el: 'O', p: lerp3(z[1], z[2], 0.95)}], [[0, 1], [1, 2]]); };
+export const methoxymethane3d = (): Mol3 => { const z = zig3(3); return withH([{el: 'C', p: z[0]}, {el: 'O', p: z[1]}, {el: 'C', p: z[2]}], [[0, 1], [1, 2]]); };
+/** Branched alkanes: main zigzag plus branches on tetrahedral slots, centred on the heavy-atom centroid. */
+export const isomer3d = (name: '2-methylpropane' | '2-methylbutane' | '2,2-dimethylpropane' | '2,3-dimethylbutane'): Mol3 => {
+	const spec: Record<string, {n: number; br: [number, number][]}> = {'2-methylpropane': {n: 3, br: [[1, 0]]}, '2-methylbutane': {n: 4, br: [[1, 0]]}, '2,2-dimethylpropane': {n: 3, br: [[1, 0], [1, 1]]}, '2,3-dimethylbutane': {n: 4, br: [[1, 0], [2, 1]]}};
+	const {n, br} = spec[name];
+	const pos = zig3(n);
+	const b = chainB(n);
+	br.forEach(([on, slot]) => { pos.push(branchAt(pos.slice(0, n), [on - 1, on + 1].filter(j => j >= 0 && j < n), on, slot)); b.push([on, pos.length - 1]); });
+	const c = pos.reduce((s, p) => a3(s, p), [0, 0, 0] as Vec3);
+	const mid = k3(c, 1 / pos.length);
+	return withH(pos.map(p => ({el: 'C' as const, p: s3(p, mid)})), b);
+};
+/** Screen points of a Mol3 (for overlays such as lobes, arcs and outlines). */
+export const proj = (m: {atoms: Atom3[]}, cx: number, cy: number, unitPx: number, yaw: number, pitch: number, shift?: (i: number) => Vec3): V2[] => m.atoms.map((a, i) => { const d = shift ? shift(i) : ([0, 0, 0] as Vec3); const q = project3(rotate3(a3(a.p, d), yaw, pitch), cx, cy, unitPx); return [q.x, q.y]; });
+export const proj1 = (p: Vec3, cx: number, cy: number, unitPx: number, yaw: number, pitch: number): V2 => { const q = project3(rotate3(p, yaw, pitch), cx, cy, unitPx); return [q.x, q.y]; };
+
+// ---------- direction lobes, angle arcs, outlines ----------
+/**
+ * Violet bonding-direction lobes from centre3 (3D, default origin) along dirs, projected with the BallStick camera.
+ * spread 0..1 moves each lobe from bunched (near `bunch`) to its final direction. fat[i] widens a lobe (a double or
+ * triple bond counted as one direction).
+ */
+export const Lobes: React.FC<{cx: number; cy: number; unitPx: number; dirs: Vec3[]; yaw: number; pitch: number; len?: number; o?: number; spread?: number; bunch?: Vec3; fat?: number[]; centre3?: Vec3; color?: string; fill?: string}> = ({cx, cy, unitPx, dirs, yaw, pitch, len = 0.8, o = 1, spread = 1, bunch = [1, 0.3, 0.2], fat = [], centre3 = [0, 0, 0], color = VIOLET, fill = VIOLET_SOFT}) => {
+	if (o <= 0.01) return null;
+	const c = project3(rotate3(centre3, yaw, pitch), cx, cy, unitPx);
+	const items = dirs.map((d0, i) => {
+		const d = n3(lerp3(n3(a3(n3(bunch), k3(d0, 0.22))), d0, spread));
+		const tip3 = a3(centre3, k3(d, len));
+		const t = project3(rotate3(tip3, yaw, pitch), cx, cy, unitPx);
+		const dx = t.x - c.x, dy = t.y - c.y, L = Math.hypot(dx, dy);
+		const ang = (Math.atan2(dy, dx) * 180) / Math.PI;
+		const w = unitPx * len * 0.2 * (fat[i] ?? 1);
+		return {z: t.z, el: <ellipse key={i} cx={c.x + dx * 0.55} cy={c.y + dy * 0.55} rx={Math.max(L * 0.55, w * 0.9)} ry={w} transform={`rotate(${ang},${c.x + dx * 0.55},${c.y + dy * 0.55})`} fill={fill} stroke={color} strokeWidth={3} opacity={depthLerp(t.z, 0.55, 0.92, 1)} />};
+	});
+	return <g opacity={o}>{items.sort((a, b) => a.z - b.z).map(q => q.el)}</g>;
+};
+/** Angle arc at c between screen points a and b (radius r) with a label beyond the arc (big: the reflex side). */
+export const AngleArc: React.FC<{c: V2; a: V2; b: V2; r?: number; text: string; at: number; out?: number; color?: string; size?: number; o?: number; lab?: number; big?: boolean}> = ({c, a, b, r = 60, text, at, out, color = NAVY, size = 34, o = 1, lab = 1.9, big = false}) => {
+	const f = useCurrentFrame();
+	const v = vis(f, at, out, 10) * o;
+	if (v <= 0.01) return null;
+	const t1 = Math.atan2(a[1] - c[1], a[0] - c[0]);
+	let dt = Math.atan2(b[1] - c[1], b[0] - c[0]) - t1;
+	while (dt > Math.PI) dt -= 2 * Math.PI;
+	while (dt < -Math.PI) dt += 2 * Math.PI;
+	if (big) dt = dt > 0 ? dt - 2 * Math.PI : dt + 2 * Math.PI;
+	const p = prog(f, at, 14);
+	const te = t1 + dt * p;
+	const large = Math.abs(dt * p) > Math.PI ? 1 : 0;
+	const sweep = dt > 0 ? 1 : 0;
+	const tm = t1 + dt / 2;
+	const lx = c[0] + r * lab * Math.cos(tm), ly = c[1] + r * lab * Math.sin(tm);
+	const w = mw(text, size, false, 800);
+	return (
+		<g opacity={v}>
+			<path d={`M${c[0] + r * Math.cos(t1)},${c[1] + r * Math.sin(t1)} A${r},${r} 0 ${large} ${sweep} ${c[0] + r * Math.cos(te)},${c[1] + r * Math.sin(te)}`} fill="none" stroke={color} strokeWidth={4} strokeLinecap="round" />
+			<g opacity={prog(f, at + 8, 8)}>
+				<rect x={lx - w / 2 - 10} y={ly - size * 0.75} width={w + 20} height={size * 1.25} rx={10} fill={CARDC} opacity={0.92} />
+				<Sx x={lx} y={ly + size * 0.32} text={text} size={size} color={color} anchor="middle" weight={800} at={-1000} />
+			</g>
+		</g>
+	);
+};
+/** Faint dashed outline joining every pair of points (4 points: a tetrahedron; 3: a triangle). */
+export const Edges: React.FC<{pts: V2[]; at: number; out?: number; color?: string; o?: number; width?: number; fill?: string}> = ({pts, at, out, color = VIOLET, o = 1, width = 2.5, fill}) => {
+	const f = useCurrentFrame();
+	const v = vis(f, at, out, 12) * o;
+	if (v <= 0.01) return null;
+	const pairs: [number, number][] = [];
+	for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) pairs.push([i, j]);
+	return (
+		<g opacity={v}>
+			{fill && pts.length >= 3 ? <path d={'M' + pts.map(p => `${p[0]},${p[1]}`).join(' L') + ' Z'} fill={fill} opacity={0.35} /> : null}
+			{pairs.map(([i, j], k) => <line key={k} x1={pts[i][0]} y1={pts[i][1]} x2={pts[j][0]} y2={pts[j][1]} stroke={color} strokeWidth={width} strokeDasharray="8 6" strokeLinecap="round" />)}
+		</g>
+	);
+};
+
+// ---------- question card with room for structures ----------
+export type ULine = {line: number; phrase: string; at: number; color?: string};
+/** Baseline y of line i in a QCardX at y (size, gaps as passed to the card). */
+export const qLineY = (y: number, size: number, gaps: number[], i: number) => y + 64 + size + i * size * 1.4 + gaps.slice(0, i).reduce((s, g) => s + (g ?? 0), 0);
+export const qCardH = (n: number, size: number, gaps: number[] = []) => 64 + n * size * 1.4 + gaps.reduce((s, g) => s + (g ?? 0), 0) + 26;
+/** HSC-style question card (as C01's): lines of text, the HSCScience tag, extra space after line i (gaps[i]), pen
+ *  underlines on phrases as they are used. */
+export const QCardX: React.FC<{lines: string[]; at: number; y?: number; size?: number; under?: ULine[]; x?: number; w?: number; gaps?: number[]; o?: number}> = ({lines, at, y = 200, size = 40, under = [], x = 140, w = 1640, gaps = [], o = 1}) => {
+	const f = useCurrentFrame();
+	const v = prog(f, at, 12) * o;
+	if (v <= 0.01) return null;
+	const h = qCardH(lines.length, size, gaps);
+	const tag = 'HSC-style question, written for HSCScience';
+	const tw2 = mw(tag, 24, true, 700) + 36;
+	return (
+		<g opacity={v}>
+			<rect x={x + 4} y={y + 7} width={w} height={h} rx={18} fill="rgba(60,45,20,0.07)" />
+			<rect x={x} y={y} width={w} height={h} rx={18} fill={CARDC} stroke="rgba(60,45,20,0.24)" strokeWidth={2.5} />
+			<rect x={x + 24} y={y + 16} width={150} height={34} rx={8} fill="#0d6b52" />
+			<Sx x={x + 99} y={y + 40} text="CHEMISTRY" size={20} color="#fffdf8" anchor="middle" weight={800} at={-1000} />
+			<rect x={x + w - 22 - tw2} y={y + 14} width={tw2} height={38} rx={19} fill="none" stroke={INK_SOFT} strokeWidth={2} strokeDasharray="7 5" />
+			<Sx x={x + w - 22 - tw2 / 2} y={y + 41} text={tag} size={24} color={INK_SOFT} anchor="middle" hand at={-1000} />
+			{lines.map((t, i) => <Sx key={i} x={x + 32} y={qLineY(y, size, gaps, i)} text={t} size={size} color={INK} weight={500} at={at + 4 + i * 8} />)}
+			{under.map((u, k) => {
+				const t = lines[u.line];
+				const s = t.indexOf(u.phrase);
+				if (s < 0) throw new Error('QCardX phrase not found: ' + u.phrase);
+				const x1 = x + 32 + mw(t.slice(0, s), size, false, 500), x2 = x1 + mw(u.phrase, size, false, 500);
+				const yy = qLineY(y, size, gaps, u.line) + 10;
+				return <DrawPath key={k} d={`M${x1},${yy} C${x1 + (x2 - x1) * 0.3},${yy + 3} ${x1 + (x2 - x1) * 0.7},${yy - 2} ${x2},${yy + 1}`} at={u.at} dur={14} color={u.color ?? '#2c4a7c'} width={4} />;
+			})}
+		</g>
+	);
+};
+
+// ---------- small board pieces ----------
+/** Square bracket under (dir 1) or over (dir -1) the span x1..x2 at y, with a label. */
+export const Brace: React.FC<{x1: number; x2: number; y: number; text: string; at: number; out?: number; color?: string; dir?: 1 | -1; size?: number; o?: number; hand?: boolean}> = ({x1, x2, y, text, at, out, color = INK_SOFT, dir = 1, size = 28, o = 1, hand = true}) => {
+	const f = useCurrentFrame();
+	const v = vis(f, at, out, 10) * o;
+	if (v <= 0.01) return null;
+	const h = 16 * dir;
+	return (
+		<g opacity={v}>
+			<DrawPath d={`M${x1},${y} L${x1},${y + h} L${x2},${y + h} L${x2},${y}`} at={at} dur={12} color={color} width={3.5} cap="butt" />
+			<Sx x={(x1 + x2) / 2} y={dir === 1 ? y + h + size + 8 : y + h - 14} text={text} size={size} color={color} anchor="middle" hand={hand} weight={hand ? 700 : 600} at={at + 6} />
+		</g>
+	);
+};
+/** Dotted line between two points; flicker makes the dashes crawl and the opacity shimmer (dispersion forces). */
+export const Dots: React.FC<{a: V2; b: V2; at: number; out?: number; color?: string; width?: number; flicker?: boolean; o?: number; dash?: string}> = ({a, b, at, out, color = VIOLET, width = 4, flicker = false, o = 1, dash = '3 9'}) => {
+	const f = useCurrentFrame();
+	const v = vis(f, at, out, 10) * o * (flicker ? 0.75 + 0.25 * Math.sin(f * 0.45 + a[0] * 0.01) : 1);
+	if (v <= 0.01) return null;
+	const p = prog(f, at, 12);
+	return <line x1={a[0]} y1={a[1]} x2={a[0] + (b[0] - a[0]) * p} y2={a[1] + (b[1] - a[1]) * p} stroke={color} strokeWidth={width} strokeDasharray={dash} strokeDashoffset={flicker ? -f * 0.6 : 0} strokeLinecap="round" opacity={v} />;
+};
+/** Keyframed placement: the group moves and scales between keys (each transition starts at its key's `at`). */
+export type PKey = {at: number; x: number; y: number; s?: number; o?: number};
+export const Place: React.FC<{keys: PKey[]; dur?: number; children: React.ReactNode}> = ({keys, dur = 24, children}) => {
+	const f = useCurrentFrame();
+	let x = keys[0].x, y = keys[0].y, s = keys[0].s ?? 1, o = keys[0].o ?? 1;
+	for (let i = 1; i < keys.length; i++) {
+		const k = keys[i];
+		const t = smooth(prog(f, k.at, dur));
+		x += (k.x - x) * t; y += (k.y - y) * t; s += ((k.s ?? s) - s) * t; o += ((k.o ?? o) - o) * t;
+	}
+	if (o <= 0.01) return null;
+	return <g opacity={o} transform={`translate(${x},${y}) scale(${s})`}>{children}</g>;
+};
+/** A name in coloured parts, centred at x (e.g. [['2-methyl', BRANCH_INK], ['butane', CHAIN_INK]]). */
+export const NameLbl: React.FC<{x: number; y: number; parts: [string, string][]; at: number; out?: number; size?: number; o?: number}> = ({x, y, parts, at, out, size = 36, o = 1}) => {
+	const f = useCurrentFrame();
+	const v = vis(f, at, out, 10) * o;
+	if (v <= 0.01) return null;
+	const ws = parts.map(([t]) => mw(t, size, false, 800));
+	let cx = x - ws.reduce((s, w) => s + w, 0) / 2;
+	return <g opacity={v} transform={`translate(0,${(1 - smooth(prog(f, at, 12))) * -14})`}>{parts.map(([t, c], i) => { const px = cx; cx += ws[i]; return <Sx key={i} x={px} y={y} text={t} size={size} color={c} weight={800} at={-1000} />; })}</g>;
+};
+/** The duplicate stamp: a round "=" stamp that lands (scales down) at `at`. */
+export const Stamp: React.FC<{x: number; y: number; at: number; out?: number; text?: string; r?: number; color?: string; o?: number}> = ({x, y, at, out, text = '=', r = 38, color = '#2f8a5b', o = 1}) => {
+	const f = useCurrentFrame();
+	const v = vis(f, at, out, 8) * o;
+	if (v <= 0.01) return null;
+	const s = 1 + 0.8 * (1 - smooth(prog(f, at, 10)));
+	return (
+		<g opacity={v} transform={`translate(${x},${y}) scale(${s}) rotate(-8)`}>
+			<circle r={r} fill="#e3f3e9" stroke={color} strokeWidth={5} />
+			<Sx x={0} y={r * 0.42} text={text} size={r * 1.3} color={color} anchor="middle" weight={900} at={-1000} />
+		</g>
+	);
+};
+/** Green tick drawn at (x, y). */
+export const TickMark: React.FC<{x: number; y: number; at: number; out?: number; s?: number; o?: number}> = ({x, y, at, out, s = 1, o = 1}) => {
+	const f = useCurrentFrame();
+	const v = vis(f, at, out, 8) * o;
+	if (v <= 0.01) return null;
+	return <g opacity={v}><DrawPath d={`M${x - 14 * s},${y} l${12 * s},${14 * s} l${24 * s},${-30 * s}`} at={at} dur={10} color="#2f8a5b" width={6 * s} /></g>;
 };
