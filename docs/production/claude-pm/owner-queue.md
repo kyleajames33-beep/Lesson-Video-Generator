@@ -330,3 +330,18 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - **Owner questions:**
   - Should an Aboriginal cultural reviewer read bio-m7-b15 before it is published?
   - Should design work pause while Codex catches up (currently paused)?
+
+## 23 Oct morning: state
+
+- **Rendered, verified and hashed (11 of 12 owner-passed):** C15, B13, B15, P02, B16, P03, B18, P04, B19, P05, bio G02. C16 is re-rendering after a code fix (hook index crash, no visual change). Upload brief 28w follows once C16 is done.
+- **Previews waiting for the owner:**
+  - Chemistry M6 P06, G01 and G02: http://127.0.0.1:8778/Explainer-chem-m6-p06-preview-v1/, http://127.0.0.1:8778/Explainer-chem-m6-g01-preview-v1/, http://127.0.0.1:8778/Explainer-chem-m6-g02-preview-v1/
+  - Biology M6 P01: http://127.0.0.1:8778/Explainer-bio-m6-p01-preview-v1/
+- **Building:** chem M6 G03 and G04; chem M6 P01 and P07 (the last of Module 6).
+- **Voiced, waiting to build:** S05; M7 C01 to C06, C04a, C04b, G01, P01, P02; M7 B01 to B07, bio P02.
+- **Codex briefs to send, in order:** 102 (banksia retake), 103 (C07, P03, B08, B09), 104 (S07, G02, G03, B10), 105 (C08a, C08b, B11, B12).
+- **Design paused again** until Codex catches up. Next up when work resumes:
+  - Chemistry: P04, C09 to C15, G03, G04, P05, P06.
+  - Biology: B13 to B15, P01, P05, G01, G02, plus S06 and S08.
+- **Owner question still open:** should an Aboriginal cultural reviewer read bio-m7-b15 before publication?
+- **Disk:** about 15 GB free. Back up masters to Drive (`scripts/backup-masters.mjs`) and clear old preview folders after the next upload.
