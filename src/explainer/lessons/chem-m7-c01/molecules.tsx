@@ -373,7 +373,7 @@ export const rotate3 = ([x, y, z]: Vec3, yaw: number, pitch: number): Vec3 => {
 };
 export const project3 = (p: Vec3, cx: number, cy: number, unitPx: number) => { const s = CAMERA / (CAMERA - p[2]); return {x: cx + p[0] * unitPx * s, y: cy - p[1] * unitPx * s, s, z: p[2]}; };
 export const depthLerp = (z: number, far: number, near: number, range = 1) => far + (near - far) * Math.min(1, Math.max(0, (z / range + 1) / 2));
-export type Atom3 = {el: 'C' | 'H' | 'O'; p: Vec3};
+export type Atom3 = {el: 'C' | 'H' | 'O' | 'Br' | 'Cl'; p: Vec3};
 /** Butane-like chain in 3D: carbons zigzag in the xy plane, hydrogens tetrahedral-ish (two out of plane per CH2). */
 export const chain3d = (n: number, bond = 1): {atoms: Atom3[]; bonds: [number, number][]} => {
 	const atoms: Atom3[] = [], bonds: [number, number][] = [];
@@ -421,14 +421,17 @@ export const BallStick: React.FC<{atoms: Atom3[]; bonds: [number, number][]; cx:
 		const p = P[i];
 		const ao = atomO ? atomO(i) : 1;
 		if (ao <= 0.01) return;
-		const r = (a.el === 'C' ? 30 : a.el === 'O' ? 28 : 17) * p.s * Math.max(0.5, k0) * scaleR;
-		const fill = a.el === 'C' ? '#4a4540' : a.el === 'O' ? OXY : '#f3ede1';
-		const hi = a.el === 'C' ? '#6e675f' : a.el === 'O' ? '#d88a6e' : null;
+		const hal = a.el === 'Br' ? HAL3.Br : a.el === 'Cl' ? HAL3.Cl : null;
+		const r = (hal ? hal.r : a.el === 'C' ? 30 : a.el === 'O' ? 28 : 17) * p.s * Math.max(0.5, k0) * scaleR;
+		const fill = hal ? hal.fill : a.el === 'C' ? '#4a4540' : a.el === 'O' ? OXY : '#f3ede1';
+		const hi = hal ? hal.hi : a.el === 'C' ? '#6e675f' : a.el === 'O' ? '#d88a6e' : null;
 		const g = glowAtoms ? glowAtoms(i) : undefined;
 		items.push({d: p.z, el: <g key={'a' + i} opacity={depthLerp(p.z, 0.6, 1, 1.4) * ao}>{g ? <circle cx={p.x} cy={p.y} r={r * 1.55} fill={g} opacity={0.45} /> : null}<circle cx={p.x} cy={p.y} r={r} fill={fill} stroke={INK} strokeWidth={3 * Math.max(0.6, k0)} />{hi ? <circle cx={p.x - r * 0.3} cy={p.y - r * 0.3} r={r * 0.22} fill={hi} /> : null}</g>});
 	});
 	return <g opacity={o}>{[...items].sort((x, y) => x.d - y.d).map(q => q.el)}</g>;
 };
+/** Halogen atoms in the ink ball-and-stick (M7 C04a on): bromine deep orange-brown, chlorine green. */
+export const HAL3 = {Br: {r: 36, fill: '#a4522a', hi: '#d38a5e'}, Cl: {r: 32, fill: '#4f9a4f', hi: '#8cc58a'}};
 /** Screen positions of the carbons of a BallStick (for laying a 2D zigzag over them). */
 export const projCarbons = (atoms: Atom3[], cx: number, cy: number, unitPx: number, yaw: number, pitch: number): V2[] => atoms.filter(a => a.el === 'C').map(a => { const q = project3(rotate3(a.p, yaw, pitch), cx, cy, unitPx); return [q.x, q.y]; });
 
