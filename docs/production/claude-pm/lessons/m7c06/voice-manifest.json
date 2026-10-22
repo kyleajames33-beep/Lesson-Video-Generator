@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C06-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c06/lesson.json",
+  "lessonSha256": "70533792fd05f7bd90826b67cabdc54d8be4b7ed94ae6e6dc016aae9324b8d72",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c06/lesson.production-brief.json",
+    "sha256": "6f61c5512caa0e3478f1448b36ecab371f668077ac58eaff6572b211d9855c28"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This bottle holds ethanol. It could have started as sugar, fermented by yeast. It could have started as ethene, a gas made from crude oil or natural gas. Or, in a lab, it could come from a haloalkane, like bromoethane, heated in a flask. Same molecule every time. So how can we make ethanol, and which way would you choose? That depends on what you start with, the conditions each route needs, and how you get the ethanol out at the end.",
+      "hash": "03617fda3577",
+      "textSha256": "03617fda3577d85b71fffc6f13a12d295dbac75505c3c855800a4b72495c4390",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/hook.03617fda3577.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/hook.03617fda3577.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/hook.03617fda3577.generation.json",
+      "plannedRequestSha256": "857e89bc11c115cc7a8b2821fbed24b483b9869ff574220c6e207a660d64d30f"
+    },
+    {
+      "id": "hydration-equilibrium",
+      "parentSceneId": "hydration-equilibrium",
+      "text": "Start with the route you've already seen. In the addition video, ethene and steam made ethanol, with a phosphoric acid catalyst, about three hundred degrees and high pressure, about sixty to seventy atmospheres in industry. Remember, it's reversible, so it's an equilibrium, written with two half arrows. Two gas molecules become one, so high pressure pushes it towards ethanol.",
+      "hash": "61afe230d2f8",
+      "textSha256": "61afe230d2f899989fad8425d7b65a7794a47724f7c7f8a3684deb1e3a2f754a",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/hydration-equilibrium.61afe230d2f8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/hydration-equilibrium.61afe230d2f8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/hydration-equilibrium.61afe230d2f8.generation.json",
+      "plannedRequestSha256": "231b9aaa8f37342852d8fa7499270a672f414957f514e4064b115ceadab0d728"
+    },
+    {
+      "id": "catalyst-temperature",
+      "parentSceneId": "catalyst-temperature",
+      "text": "Two more conditions matter for judging this route. The catalyst speeds up both directions equally, so equilibrium comes sooner, but it doesn't move the equilibrium. And the temperature is a compromise. The forward reaction releases heat, so a lower temperature would give more ethanol at equilibrium, but far too slowly.",
+      "hash": "9815b0438763",
+      "textSha256": "9815b04387639cc457072349ccd87982cbf325b1308a4739e1681359f16dec8d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/catalyst-temperature.9815b0438763.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/catalyst-temperature.9815b0438763.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/catalyst-temperature.9815b0438763.generation.json",
+      "plannedRequestSha256": "97b38b534f875846abe5bd94d266dd1fc88de8b644ec49884286e8f4deb2a194"
+    },
+    {
+      "id": "recycle-and-separate",
+      "parentSceneId": "recycle-and-separate",
+      "text": "Even so, only a few percent of the ethene reacts on each pass through the reactor. So the gas mixture is cooled. Ethanol and water condense to a liquid, while ethene stays a gas, and it's sent back through the reactor, again and again. The ethanol is then separated from the water by distillation. The plant runs nonstop, so it's fast and continuous, but the ethene comes from crude oil or natural gas.",
+      "hash": "09c10c5b1449",
+      "textSha256": "09c10c5b14496b41fce4ec6a7b4ee04d431dad49bb2e54a605a50234f94b7ac9",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/recycle-and-separate.09c10c5b1449.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/recycle-and-separate.09c10c5b1449.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/recycle-and-separate.09c10c5b1449.generation.json",
+      "plannedRequestSha256": "0df0ef5cb902e4ee01c826406672efcd094024ff981d4aef8442a3ee1d7b7b97"
+    },
+    {
+      "id": "substitution-swap",
+      "parentSceneId": "substitution-swap",
+      "text": "Route two starts with a haloalkane. Heat bromoethane with aqueous sodium hydroxide, meaning it's dissolved in water, and the bromine is swapped for an O H, giving ethanol and sodium bromide. Here's why. Bromine pulls electrons from the carbon it's on, so that carbon is slightly positive, and the negative hydroxide ion is attracted to it. The hydroxide bonds to that carbon, and the bromine leaves as a bromide ion. It's a substitution, like the swap in the alkane video, but this time the halogen is the atom pushed out.",
+      "hash": "6a2776f7e006",
+      "textSha256": "6a2776f7e00695d4b3e4e1e4cd921f6168b0545845cd95b47f07c6480e71309b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/substitution-swap.6a2776f7e006.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/substitution-swap.6a2776f7e006.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/substitution-swap.6a2776f7e006.generation.json",
+      "plannedRequestSha256": "a0a8dc9c968036f55002dbab70a12aa9f0cf5cc73c870b4c34309f9bf1864295"
+    },
+    {
+      "id": "reflux-same-carbon",
+      "parentSceneId": "reflux-same-carbon",
+      "text": "Why heat it under reflux? Heating speeds the reaction up, but bromoethane boils at thirty eight degrees and ethanol at seventy eight, so they'd escape as vapour. The upright condenser cools those vapours, and they drip back into the flask. Afterwards, the alcohol is distilled out of the mixture. And the O H lands exactly where the halogen was: two-bromopropane gives propan-two-ol. So this route can make a particular alcohol, not just ethanol.",
+      "hash": "443ba8a8c60a",
+      "textSha256": "443ba8a8c60a778a3f4b382ba3b810b9cafa5d2c4714811fe628addd266cdf11",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/reflux-same-carbon.443ba8a8c60a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/reflux-same-carbon.443ba8a8c60a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/reflux-same-carbon.443ba8a8c60a.generation.json",
+      "plannedRequestSha256": "cc9715d110260706199b71578aa9be7179a84bc7f516feb4a39a9c472b69aac2"
+    },
+    {
+      "id": "fermentation-equation",
+      "parentSceneId": "fermentation-equation",
+      "text": "Route three is the oldest. Yeast ferments glucose: one glucose makes two ethanol and two carbon dioxide. Check it: six carbons, twelve hydrogens and six oxygens on each side. Enzymes inside the yeast are the catalyst, so the yeast goes on the arrow, not in the equation.",
+      "hash": "8bfbdd6f54c9",
+      "textSha256": "8bfbdd6f54c9f5bfa44bdc8ef606b308f6655369ebfd9e30864815149a34d266",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/fermentation-equation.8bfbdd6f54c9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/fermentation-equation.8bfbdd6f54c9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/fermentation-equation.8bfbdd6f54c9.generation.json",
+      "plannedRequestSha256": "7412bd271db71548728c3ed871728cba55951c402c20e138da0ba58b84ba58da"
+    },
+    {
+      "id": "fermentation-setup",
+      "parentSceneId": "fermentation-setup",
+      "text": "Here's a school setup. Glucose solution and yeast go in a flask, in a warm water bath at about thirty five degrees. That's warm enough for the enzymes to work quickly, but not so hot that it damages them. A bung and delivery tube keep air out, because with oxygen, yeast can respire aerobically, breaking some sugar down fully to carbon dioxide and water, so less ethanol forms. The tube also lets gas escape, so pressure can't build up. Bubble it through limewater, and the limewater turns milky, showing carbon dioxide.",
+      "hash": "c61b19bac888",
+      "textSha256": "c61b19bac8881833bd1626ca7e6ba92f0c772eb77ff63d40143036088b715a4e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/fermentation-setup.c61b19bac888.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/fermentation-setup.c61b19bac888.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/fermentation-setup.c61b19bac888.generation.json",
+      "plannedRequestSha256": "b1c3b8cb10caa6c5349f218c199883b4a7b51a02d2a8057b59cc1d91941881f6"
+    },
+    {
+      "id": "distil-fermentation",
+      "parentSceneId": "distil-fermentation",
+      "text": "After a few days, the bubbling slows. Fermentation usually stops at around fifteen percent ethanol, because that much ethanol poisons the yeast. To get more concentrated ethanol, filter out the yeast and distil the mixture. Ethanol boils at seventy eight degrees and water at one hundred, so the vapour that comes off is richer in ethanol. Industry uses fractional distillation to go further.",
+      "hash": "44591cda1a3e",
+      "textSha256": "44591cda1a3e006413802b91ee92c6f31c4222307b9818cbc6d984294ba73d89",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/distil-fermentation.44591cda1a3e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/distil-fermentation.44591cda1a3e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/distil-fermentation.44591cda1a3e.generation.json",
+      "plannedRequestSha256": "52d3ac3e63ce8114bab0fbd2aedade0f50bdbf46dbf9152a463465d6fe341d81"
+    },
+    {
+      "id": "judge-routes",
+      "parentSceneId": "judge-routes",
+      "text": "So which route is best? Compare them one feature at a time. Hydration is fast and continuous, but it needs high temperature and pressure, and a non-renewable feedstock. Fermentation runs warm, not hot, from a renewable sugar crop, but it's slow, its dilute product takes energy to distil, and growing the crop takes land and water. Substitution suits making a particular alcohol in the lab, but the haloalkane has to be made first. So there's no single winner. It depends on the feedstock, the energy, and the purity you need.",
+      "hash": "bcaa3fa940ea",
+      "textSha256": "bcaa3fa940ea31d4c47753b1dce549c5844064584dbc04f5c29bee1d1c949f1e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/judge-routes.bcaa3fa940ea.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/judge-routes.bcaa3fa940ea.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/judge-routes.bcaa3fa940ea.generation.json",
+      "plannedRequestSha256": "5bd194aa288cf98ea2ec6db56178ac0ed6283abff925e5fa60a3f3f05ccf472d"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, three routes to ethanol. Hydration: ethene and steam, hot, under pressure, with an acid catalyst. Substitution: a haloalkane with aqueous hydroxide, under reflux. Fermentation: glucose with yeast, warm, no air. Then, for each one, ask how you'd get the ethanol out.",
+      "hash": "3c14d2202ba0",
+      "textSha256": "3c14d2202ba06fa64341e0f8850b7f3068758314121b395655ad80e6a429adba",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/memory-aid.3c14d2202ba0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/memory-aid.3c14d2202ba0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/memory-aid.3c14d2202ba0.generation.json",
+      "plannedRequestSha256": "999cee573ba864bc7d451fbe4f4c62efbceae17590581e40a765dbfc49643c89"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student keeps two flasks of glucose solution and yeast at thirty five degrees. Flask A has a bung and delivery tube. Air is bubbled through flask B the whole time. After two days, flask B holds less ethanol than flask A. Explain this difference, and write a balanced equation for the fermentation of glucose. Pause here to answer.",
+      "hash": "9ab8216db010",
+      "textSha256": "9ab8216db010980bbd130beef0c14357406fb0d55c2b9bb7d7b316eb71f6bb06",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/attempt-1.9ab8216db010.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/attempt-1.9ab8216db010.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/attempt-1.9ab8216db010.generation.json",
+      "plannedRequestSha256": "1f37d076fec48c025fd1478111b1675ffb5c8a648610956c575f0f5a0696a529"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Air was bubbled through flask B, so its yeast had oxygen. With oxygen, yeast can respire aerobically, breaking some sugar down fully to carbon dioxide and water, so less ethanol forms. The temperature was the same in both. The equation: C six H twelve O six gives two C two H five O H, plus two C O two. Yeast as a reactant is the classic slip. Its enzymes are the catalyst, so yeast goes on the arrow.",
+      "hash": "e498b9537940",
+      "textSha256": "e498b9537940574077cb7eca19b47239b1a1547e6feca8b84852c8e4e51dc648",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/feedback-1.e498b9537940.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/feedback-1.e498b9537940.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/feedback-1.e498b9537940.generation.json",
+      "plannedRequestSha256": "856d15f0425fd964df60fe1efbd38160a30b2c3ddbc3ce73d5408d02cd3b6812"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. One-bromobutane is heated under reflux with aqueous sodium hydroxide. Write a balanced equation for the reaction, name the organic product, and explain why the mixture is heated under reflux. Pause here to answer.",
+      "hash": "aad715bf87b4",
+      "textSha256": "aad715bf87b49df3e79cf90c041d71eaf516171d4d07843d5e23546e7379a842",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/attempt-2.aad715bf87b4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/attempt-2.aad715bf87b4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/attempt-2.aad715bf87b4.generation.json",
+      "plannedRequestSha256": "5a1adef32e02d91d01fdd5eb18d656a4dd7491822425dfab5f4eed1c0bdc0538"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The hydroxide swaps for the bromine, on the same carbon. C H three, C H two, C H two, C H two Br, plus Na O H, gives C H three, C H two, C H two, C H two O H, plus Na Br. The product is butan-one-ol. Heating speeds it up, and reflux stops the volatile liquids escaping: the condenser returns their vapours. Writing butan-two-ol is the slip. The O H takes the halogen's place.",
+      "hash": "e702ae8cd8b1",
+      "textSha256": "e702ae8cd8b1b87379d7cae859506a3799d7adbb38568beeedc10d3922922863",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/feedback-2.e702ae8cd8b1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/feedback-2.e702ae8cd8b1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/feedback-2.e702ae8cd8b1.generation.json",
+      "plannedRequestSha256": "f0c1c13e7bd5c04049a4791cab753fdecee63220b6214c53ae7d03ee5fef06c5"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So ethanol can come from crude oil or natural gas, or from plants, and each route sets its own conditions and its own separation. Next: what happens when ethanol burns, and what that means for choosing a fuel.",
+      "hash": "2c33c93071eb",
+      "textSha256": "2c33c93071eb8dbe9c7a7700b0b6bbeb9b3940d6a208cbc90d0ac06716b659a0",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/handoff.2c33c93071eb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/handoff.2c33c93071eb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/handoff.2c33c93071eb.generation.json",
+      "plannedRequestSha256": "cff96a30a7e715f2c87c9c065f61597b42575e8a07d4e4b2a87a66b2afdf5145"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C06-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

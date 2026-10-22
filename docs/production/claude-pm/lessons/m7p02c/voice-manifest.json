@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-P02-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p02c/lesson.json",
+  "lessonSha256": "9516af3ab00884e004f33199425a6808416a726107277ed6eaa81b0d06b437a2",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p02c/lesson.production-brief.json",
+    "sha256": "3100068c11a94e8b4a7bf8b850254c4e706e48aee642a4d52dbe053139b887e1"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here are two clear liquids, cyclohexane and cyclohexene. Both have a ring of six carbons, and they boil about two degrees apart. Shake each with orange bromine water. In one tube, the colour vanishes. In the other, the water goes pale too, but look closer: the orange has moved into a layer on top. So how do you run this test fairly, and what does the result really tell you?",
+      "hash": "93f7c9fd78d6",
+      "textSha256": "93f7c9fd78d6d22fe7456951613785625636c0bc634bf10077b586e23feb8771",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/hook.93f7c9fd78d6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/hook.93f7c9fd78d6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/hook.93f7c9fd78d6.generation.json",
+      "plannedRequestSha256": "bca794c383ec7c20295836534ee7039154f708268f28653374cf9c694d4f9e89"
+    },
+    {
+      "id": "what-it-means",
+      "parentSceneId": "what-it-means",
+      "text": "You've seen the chemistry in the last two videos. Bromine water gets its orange colour from the bromine molecules dissolved in it. Bromine adds across a carbon to carbon double bond, so the bromine is used up, and its colour goes. An alkane has no double bond to open, so in the dark, nothing adds. That makes these two a fair pair: the same ring of six carbons, and the only real difference is one double bond.",
+      "hash": "1837753ea3e5",
+      "textSha256": "1837753ea3e5b35971d36ddab0de70d31be753dc7f60700fd893de217b7035d3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/what-it-means.1837753ea3e5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/what-it-means.1837753ea3e5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/what-it-means.1837753ea3e5.generation.json",
+      "plannedRequestSha256": "999ea815993ae0306ca3c2d3c626c22caa3a73cc1e1c50439c1f2a233b7d981d"
+    },
+    {
+      "id": "fair-test",
+      "parentSceneId": "fair-test",
+      "text": "Now plan it so the result can only come from that double bond. Use matched amounts: one millilitre of each hydrocarbon into two millilitres of the same bromine water. Set up a third tube with one millilitre of plain water instead, as a control: it's diluted by the same amount, but there's nothing in it for the bromine to react with. Stopper each tube, shake it the same way for ten seconds, and stand it against a white tile, so a faint colour shows. Work in normal room light, away from sunlight, because bright light can start a slow reaction with an alkane.",
+      "hash": "33b9acb3588a",
+      "textSha256": "33b9acb3588a1a452d40626c931008b4f95d12e313e168f8f0b44e9ca14de9ae",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/fair-test.33b9acb3588a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/fair-test.33b9acb3588a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/fair-test.33b9acb3588a.generation.json",
+      "plannedRequestSha256": "5fc786c77cc4bc58dddb254b387427941b06af32824e7e93dfc4dafaa425336d"
+    },
+    {
+      "id": "alkene-result",
+      "parentSceneId": "alkene-result",
+      "text": "Cyclohexene first. The orange disappears within seconds, leaving two colourless layers. The double bond opens and bromine adds across it, so the bromine is used up. One possible product is one, two-dibromocyclohexane, with a bromine atom on each carbon of the old double bond. In water, other colourless addition products can form too, so nothing is left to give colour. With bromine in an organic solvent instead, you get just the dibromo compound: two reactants, one product. That's addition.",
+      "hash": "b4911b8b8e39",
+      "textSha256": "b4911b8b8e39a0c782563f6b2455ca34782fde3a57f30ac4aef4f7308d8103fc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/alkene-result.b4911b8b8e39.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/alkene-result.b4911b8b8e39.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/alkene-result.b4911b8b8e39.generation.json",
+      "plannedRequestSha256": "03f5c243c35e075ab403ca017d687e1f26dad006b03a241b2b9687d051f32d98"
+    },
+    {
+      "id": "alkane-trap",
+      "parentSceneId": "alkane-trap",
+      "text": "Now cyclohexane, and here's the trap. Cyclohexane doesn't mix with water, so it floats as a top layer. Bromine is non-polar, so it dissolves far better in cyclohexane than in water, and when you shake, most of it moves up. The water goes pale, but the top layer turns orange. The colour has moved, not disappeared. Now look at the control. It's been diluted just as much, and it's still clearly orange. So dilution can't explain the pale water. The bromine is still there, in the top layer. No reaction.",
+      "hash": "aaae3b20debd",
+      "textSha256": "aaae3b20debd251120803198df8bfe32e470f3fb8419c465f217679b01fff973",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/alkane-trap.aaae3b20debd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/alkane-trap.aaae3b20debd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/alkane-trap.aaae3b20debd.generation.json",
+      "plannedRequestSha256": "475393082b2bf798f827a9366ca02da6fd15f9b2200280e240e3585873824719"
+    },
+    {
+      "id": "light-demo",
+      "parentSceneId": "light-demo",
+      "text": "So can an alkane react with bromine at all? Yes, with light, as in the last video. In a teacher demonstration, take that orange top layer: it's bromine dissolved in cyclohexane. In the dark, it stays orange. Under a UV lamp, the colour slowly fades, and damp blue litmus paper at the mouth of the tube turns red. A strip over a tube kept in the dark changes far less, so the red isn't just bromine vapour. That's hydrogen bromide, an acidic gas, and it's the evidence for substitution: cyclohexane and bromine give bromocyclohexane and H Br.",
+      "hash": "e8b6c86182c3",
+      "textSha256": "e8b6c86182c3c98e3f74e175a8dbe0f8131aa12e2b357b5634dbe8fbe8b6dafa",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/light-demo.e8b6c86182c3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/light-demo.e8b6c86182c3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/light-demo.e8b6c86182c3.generation.json",
+      "plannedRequestSha256": "9db0e5817f4026d34746ae11d157834aec4af415a78c6252eabd19fc5c094b5f"
+    },
+    {
+      "id": "limits",
+      "parentSceneId": "limits",
+      "text": "So what does a colourless result tell you? There's a carbon to carbon double or triple bond. As the last video showed, alkynes decolourise it too, usually more slowly, so the test alone can't tell you which. No colour change points to no double or triple bond, even when the formula looks unsaturated: cyclohexane is C six H twelve, the same formula as hexene. And some other kinds of compounds can decolourise bromine water too, so treat it as a quick test: strong evidence, not proof.",
+      "hash": "9c1aaa7492af",
+      "textSha256": "9c1aaa7492af333f93f70cdaa64e6dab5a7481f35be1a50a08911b38238909cc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/limits.9c1aaa7492af.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/limits.9c1aaa7492af.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/limits.9c1aaa7492af.generation.json",
+      "plannedRequestSha256": "a2ca6bd91b50580c4007faeec302a9216689454b0d9762e704c87922adbf9755"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Now the variables. You change the hydrocarbon: with or without a double bond. You observe the colour of both layers. Everything else stays the same: the volumes, the bromine water, the shaking, the light and the timing. Validity: the matched pair and the control mean the result comes from the double bond, not from dilution. Reliability: repeats give the same result. And for a yes or no test, accuracy means getting the right answer, which you check with known samples.",
+      "hash": "94f0e55cd580",
+      "textSha256": "94f0e55cd580c518c73db6a2338c884eee8e3a2402d360bda722528cd0ff3c1b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/validity-reliability.94f0e55cd580.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/validity-reliability.94f0e55cd580.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/validity-reliability.94f0e55cd580.generation.json",
+      "plannedRequestSha256": "ee2532705e7e1d97bd6ca8ed52ecad6968a40ba8f901cb2a89faab89aa5fda9e"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. Cyclohexane and cyclohexene are highly flammable, so no flames anywhere near them, and their vapour shouldn't be breathed, so work in a fume cupboard. Bromine water gives off bromine vapour, which irritates the eyes and lungs, so your teacher dispenses it in the fume cupboard, and you wear safety glasses and gloves. The products contain bromine, so every residue goes into the labelled organic waste container, never the sink.",
+      "hash": "9b4dce0983b6",
+      "textSha256": "9b4dce0983b6b8f5ecb9ac5d2666b1d03676fcad99d94b862efb4010d9866461",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/risk-assessment.9b4dce0983b6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/risk-assessment.9b4dce0983b6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/risk-assessment.9b4dce0983b6.generation.json",
+      "plannedRequestSha256": "c4e93f36d78a3b393c76b26cbaad7bdd0dc1c48e9c3c7dc12f08da18060d05ed"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "To read the tube, remember: gone, not moved. If the colour has gone from both layers, the bromine was used up, so there's a multiple bond. If it has only moved into the top layer, nothing reacted.",
+      "hash": "5a88b3c5fe01",
+      "textSha256": "5a88b3c5fe014e8b57ef211218855d7c8a32e9ee8a926d8eede92061f02c512c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/memory-aid.5a88b3c5fe01.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/memory-aid.5a88b3c5fe01.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/memory-aid.5a88b3c5fe01.generation.json",
+      "plannedRequestSha256": "dae5ee32583de11300963e8e51eea6760168ac2c15d6850ee0fe93f6ee257121"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A liquid hydrocarbon, X, has the molecular formula C five H ten. A student shakes an excess of X with a little bromine water in normal room light. Two layers form: the top layer is orange, and the bottom layer is pale yellow. Identify X as pent-one-ene or cyclopentane, and justify your answer. Pause here to answer.",
+      "hash": "f838fc70ad67",
+      "textSha256": "f838fc70ad6787193005e8c404e08c24400f8dfeb07726d962a56e2e417a3059",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/attempt-1.f838fc70ad67.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/attempt-1.f838fc70ad67.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/attempt-1.f838fc70ad67.generation.json",
+      "plannedRequestSha256": "cb8bc2dd41f48358b07483bee3f17508ea950d4367c2d24ea916b7f7de62b636"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "X is cyclopentane. Both compounds are C five H ten, so the formula can't decide. X floats on the water, so the top layer is X. It's orange, so the bromine dissolved in X instead of reacting: it moved, it didn't go. An excess of pent-one-ene would have used it all up. Calling the paler bottom layer a positive result is the classic mistake.",
+      "hash": "a3782f2dda88",
+      "textSha256": "a3782f2dda8880a0049558780c044dffc44434764377386cac7b5632b6177883",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/feedback-1.a3782f2dda88.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/feedback-1.a3782f2dda88.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/feedback-1.a3782f2dda88.generation.json",
+      "plannedRequestSha256": "d3763c7e43ef3ca83a6d074c9c8d764e92136a949ef9c43768a955c1f0c6fdec"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. In a teacher demonstration, a solution of bromine in heptane stays orange in a dark cupboard. In bright light, its colour slowly fades, and the gas at the mouth of the tube turns damp blue litmus red. Explain these observations, and write a balanced equation, using structural formulas, for the formation of one organic product. Pause here to answer.",
+      "hash": "efaa080322d0",
+      "textSha256": "efaa080322d007c92c10e8b6f624012b97a9bb36bcb122d24b392be903a9e283",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/attempt-2.efaa080322d0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/attempt-2.efaa080322d0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/attempt-2.efaa080322d0.generation.json",
+      "plannedRequestSha256": "8abc2f695faa68f05658f3b4adeeb359864cfe4fe829f4fa82d47cef0ba729bf"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Heptane has only single bonds, so in the dark, nothing adds. Light supplies the energy to start a substitution: one hydrogen is swapped for a bromine, and the hydrogen leaves as H Br, the acidic gas that turned the litmus red. For example, heptane plus bromine gives two-bromoheptane plus H Br. Writing C seven H sixteen Br two can't be right: there's no double bond to add across.",
+      "hash": "6969f76525f6",
+      "textSha256": "6969f76525f69b4b4787d445aea2b29c33df6ce06204c17e8f4b5263b106371f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/feedback-2.6969f76525f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/feedback-2.6969f76525f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/feedback-2.6969f76525f6.generation.json",
+      "plannedRequestSha256": "3bb66032b12603c8115fff9b294c9212e511fb92838e0b679ea60a498eb644b4"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: match the samples, add a water control, shake each tube the same way in normal light, and read both layers. Gone means a multiple bond, moved means none. And say what the test can't tell you. Next: practice questions on naming, isomers and these reactions.",
+      "hash": "35945e39e699",
+      "textSha256": "35945e39e69906320cc59ab703f7de46b11b47afa1010e7e09cac59f08b11df1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/decision-rule.35945e39e699.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/decision-rule.35945e39e699.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/decision-rule.35945e39e699.generation.json",
+      "plannedRequestSha256": "86be836cf6984858a30c711a6d6337280f6ee9d8d166c94ade035f6bf6e39de6"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P02-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

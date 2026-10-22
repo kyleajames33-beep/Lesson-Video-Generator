@@ -7306,6 +7306,563 @@ M7B05_ROWS = {
     ]
 }
 # --- M7 b03, p02, b04 and b05 rows (end) ---
+# --- M7 b06 and b07 rows (start) ---
+M7B06_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. `m7-starfish-larva-thorn-v1.png` (new) appears at the centre left at medium size (grey tags \"starfish larva, about 1 mm long\" and \"Metchnikoff, 1882\"); the thorn tip inside the larva is ringed on \"a rose thorn\".",
+        "Hook (a thorn in a starfish larva): In 1882, the zoologist Élie Metchnikoff pushed a rose thorn into a see-through starfish larva.",
+        "a rose thorn / By the next morning / makes no antibodies / a splinter carries bacteria into your skin / what happens first",
+        "On the spoken cues: On \"By the next morning\" it crossfades to its aligned partner `m7-starfish-larva-thorn-cells-v1.png` (new), in which a cluster of wandering cells surrounds the thorn tip; the cluster is ringed (tag \"moving cells gather at the thorn\"). On \"makes no antibodies\" a small grey chip writes: \"no",
+        "explain",
+        "no people. `m7-starfish-larva-thorn-v1.png` (new) appears at the centre left at medium size (grey tags \"starfish larva, about 1 mm long\" and \"Metchnikoff, 1882\"); the thorn tip inside the larva is ringed on \"a rose thorn\". On \"By the next morning\" it crossfades to its aligned partner `m7-starfish-larva-thorn-cells-v1.png` (new), in which a cluster of wandering cells surrounds the thorn tip; the cluster is ringed (tag \"moving cells gather at the thorn\"). On \"makes no antibodies\" a small grey chip writes: \"no antibodies\", with a smaller grey gloss under it: \"antibodies: proteins aimed at one pathogen (next video)\". On \"a splinter carries bacteria into your skin\" the larva shrinks to the upper left and `m7-skin-splinter-v1.png` (new) appears at the centre right (grey tag \"skin, cut section\"), its splinter ringed. On \"what happens first\" the heading writes on: \"What happens first when bacteria get in?\" Hold about one second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about one second"
+    ],
+    "send-cells": [
+        "adjust",
+        "`m7-root-cells-defended-v1.png` (from b05) appears small at the left (grey tag \"b05: each plant cell defends itself where it is\").",
+        "Animals can send cells: In the last video, a banksia had to defend each cell where it stood.",
+        "carry defending cells in the blood / send them to where a pathogen gets in / it has to get in",
+        "On the spoken cues: On \"carry defending cells in the blood\" a coded `VesselChannel` draws across the lower board (two ink lines with a pale red fill), and three small copies of `m7-neutrophil-v1.png` (scaled together, not stretched) drift along it (tag \"animals: cells travel in the blood\"). On \"send them to where a",
+        "explain",
+        "`m7-root-cells-defended-v1.png` (from b05) appears small at the left (grey tag \"b05: each plant cell defends itself where it is\"). On \"carry defending cells in the blood\" a coded `VesselChannel` draws across the lower board (two ink lines with a pale red fill), and three small copies of `m7-neutrophil-v1.png` (scaled together, not stretched) drift along it (tag \"animals: cells travel in the blood\"). On \"send them to where a pathogen gets in\" the channel bends up towards the skin plate's splinter and the cells follow it (tag replaced: \"sent to the site\"). On \"it has to get in\" the channel and the b05 thumbnail dim to grey. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "barriers": [
+        "adjust",
+        "the `ResponseStrip` draws at the right third with four empty grey rungs; the top rung writes and lights teal: \"always there: barriers\".",
+        "The walls: barriers: Most microbes never get past the outside.",
+        "Your skin is the main wall / keep flaking away / The airways / traps microbes / beat and sweep it up / Stomach acid",
+        "On the spoken cues: On \"Your skin is the main wall\" `b5a-epithelium-shedding-v1.png` appears at the upper left (grey label \"skin's outer layers\"). On \"keep flaking away\" the lifting flakes are ringed and a few small coded specks (microbes) ride off with them (tag \"dead cells flake off, microbes go too\"). On \"The",
+        "explain",
+        "the `ResponseStrip` draws at the right third with four empty grey rungs; the top rung writes and lights teal: \"always there: barriers\". On \"Your skin is the main wall\" `b5a-epithelium-shedding-v1.png` appears at the upper left (grey label \"skin's outer layers\"). On \"keep flaking away\" the lifting flakes are ringed and a few small coded specks (microbes) ride off with them (tag \"dead cells flake off, microbes go too\"). On \"The airways\" `m7-airway-cilia-mucus-v1.png` (new) appears at the lower left; on \"traps microbes\" the trapped particles in the mucus are ringed (tag \"mucus traps\"); on \"beat and sweep it up\" short coded arrows run along the top of the mucus in one direction (gloss \"cilia: tiny beating hair-like parts of cells\"; tag \"swept up to the throat\"). On \"Stomach acid\" the skin and airway plate tags and the cilia gloss all dim to grey and a chip writes: \"stomach acid: kills many swallowed microbes\". On \"lysozyme\" the acid chip dims and a second chip writes: \"lysozyme: breaks down many bacterial walls\" (gloss \"an enzyme in tears and saliva\"). The two chips sit under a small grey heading \"chemical barriers\"; the two plates under a small grey heading \"physical barriers\" (both headings stay grey throughout). At most three bright text items: only the current tag or chip, its gloss and the lit rung. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "splinter": [
+        "adjust",
+        "the board clears to the infection site layout; the barrier plates shrink into the top rung as small grey thumbnails.",
+        "A splinter gets through: A splinter breaks straight through that wall and pushes bacteria into the living tissue underneath.",
+        "innate immune system",
+        "On the spoken cues: `m7-skin-splinter-v1.png` fills the left two-thirds. On \"breaks straight through\" the splinter's path through the outer skin is traced with a thin coded line (tag \"barrier broken\"). On \"pushes bacteria into the living tissue\" a coded zoom box draws around the splinter tip and the close-up",
+        "explain",
+        "the board clears to the infection site layout; the barrier plates shrink into the top rung as small grey thumbnails. `m7-skin-splinter-v1.png` fills the left two-thirds. On \"breaks straight through\" the splinter's path through the outer skin is traced with a thin coded line (tag \"barrier broken\"). On \"pushes bacteria into the living tissue\" a coded zoom box draws around the splinter tip and the close-up `m7-dermis-splinter-early-v1.png` (new) opens from it to fill the left two-thirds (grey tag \"close-up under the splinter tip, about 0.15 mm across\"); the small rods beside the splinter tip are ringed (tag \"bacteria in living tissue\"). On \"innate immune system\" the strip's next two rungs write in grey (\"minutes: inflammation\", \"hours: phagocytes\") and a teal bracket labelled \"innate\" spans the top three rungs (gloss \"innate: born with it, same response to many pathogens (barriers included)\"); on \"With the barriers\" the top rung's thumbnails pulse once inside the bracket. The fourth rung stays grey and empty. At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "alarm": [
+        "adjust",
+        "the \"minutes: inflammation\" rung lights teal.",
+        "Raising the alarm: Damaged cells raise the alarm with chemical signals, and so do immune cells already waiting in the tissue.",
+        "Mast cells / histamine",
+        "On the spoken cues: On \"Damaged cells raise the alarm\" small coded specks spread from the torn cells along the splinter track (tag \"alarm signals\"). On \"Mast cells\" the mast cell in the close-up is ringed and `m7-mast-cell-v1.png` appears as a small inset beside it (gloss \"mast cell: sits beside small vessels\"). On",
+        "explain",
+        "the \"minutes: inflammation\" rung lights teal. On \"Damaged cells raise the alarm\" small coded specks spread from the torn cells along the splinter track (tag \"alarm signals\"). On \"Mast cells\" the mast cell in the close-up is ringed and `m7-mast-cell-v1.png` appears as a small inset beside it (gloss \"mast cell: sits beside small vessels\"). On \"histamine\" the mast cell region of the aligned partner `m7-dermis-splinter-inflamed-v1.png` is revealed in place (the cell now with fewer granules and released granules beside it), and coded amber specks drift from it to the small vessel (tag \"histamine\"). On \"vessels widen\" the vessel region of the inflamed plate is revealed: the small vessel wider, with more red blood cells packed in (tag \"wider: more blood\"). On \"walls leaky\" the fluid region is revealed: paler, swollen spaces between the fibres around the small vessel, with a few small coded droplets and a few smaller coded protein dots crossing the wall through the gaps (tag \"leaky: fluid and proteins seep out\"). Each earlier tag dims to grey when the next writes. Each region is a masked crossfade of the matching part of the partner plate, not a drawing on top. At most three bright text items. Hold one second.",
+        [
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "four-signs": [
+        "adjust",
+        "the close-up shrinks to the right of the left area and the low-zoom pair returns at the left: on \"you can see it\" `m7-skin-splinter-v1.png` crossfades to its aligned partner `m7-skin-splinter-inflamed-v1.png` (new), the skin around the splinter reddened and raised (title chip \"inflammation\").",
+        "Four signs, one purpose: This response is inflammation, and you can see it.",
+        "inflammation",
+        "On the spoken cues: A small cause list builds under the plate, one row per cue, each linking a sign to its cause with a short coded arrow; only the current row is bright: on \"red and warm\" the reddened area is ringed and the row writes \"red, warm ← more blood (wider vessels)\"; on \"swell\" the raised skin is ringed and",
+        "explain",
+        "the close-up shrinks to the right of the left area and the low-zoom pair returns at the left: on \"you can see it\" `m7-skin-splinter-v1.png` crossfades to its aligned partner `m7-skin-splinter-inflamed-v1.png` (new), the skin around the splinter reddened and raised (title chip \"inflammation\"). A small cause list builds under the plate, one row per cue, each linking a sign to its cause with a short coded arrow; only the current row is bright: on \"red and warm\" the reddened area is ringed and the row writes \"red, warm ← more blood (wider vessels)\"; on \"swell\" the raised skin is ringed and the row writes \"swollen ← fluid leaked (leaky vessels)\"; on \"set off pain nerves\" the row writes \"pain ← chemicals and pressure\" (grey screen tag \"e.g. prostaglandins, bradykinin\"). On \"aren't the body failing\" a grey chip \"inflammation = just symptoms\" fades in and takes a grey scribble cross. On \"deliver defending cells and helpful proteins\" the close-up brightens and short teal arrows run from the wide small vessel out into the tissue towards the bacteria (tag \"purpose: brings cells and proteins\"; grey screen tag \"proteins include complement\"). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "Cam lens zoom",
+            "DrawPath",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "neutrophils": [
+        "adjust",
+        "the close-up returns to fill the left two-thirds; the \"hours: phagocytes\" rung lights teal.",
+        "Calling the phagocytes: The tissue also releases signal chemicals that spread out from the infection, so they're strongest near the bacteria.",
+        "Neutrophils",
+        "On the spoken cues: On \"signal chemicals that spread out\" a coded `Gradient` draws: soft concentric rings centred on the bacteria, fading outwards to the small vessel (tag \"strongest near the bacteria\"; grey screen tag \"chemokines\"). On \"Neutrophils\" `m7-neutrophil-v1.png` appears as a small inset (gloss \"neutrophil:",
+        "explain",
+        "the close-up returns to fill the left two-thirds; the \"hours: phagocytes\" rung lights teal. On \"signal chemicals that spread out\" a coded `Gradient` draws: soft concentric rings centred on the bacteria, fading outwards to the small vessel (tag \"strongest near the bacteria\"; grey screen tag \"chemokines\"). On \"Neutrophils\" `m7-neutrophil-v1.png` appears as a small inset (gloss \"neutrophil: white blood cell in the blood\"). On \"stick to the vessel wall near the infection\" the neutrophil region of the inflamed plate is revealed: a neutrophil flattened against the inside of the small vessel's wall (tag \"stick (only near the infection)\"); on \"squeeze out between the cells\" a second revealed region shows a neutrophil half through the wall between two wall cells (tag \"squeeze out\"); on \"crawl towards the stronger signal\" a coded dotted path runs from that cell up the gradient to the bacteria (tag \"follow the signal\"). On \"within hours\" a small coded clock mark sits on the rung. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "phagocytosis": [
+        "adjust",
+        "the close-up shrinks to a thumbnail at the upper left.",
+        "Eating the bacteria: Neutrophils, and larger cells called macrophages that live in the tissue, are phagocytes: cells that engulf and digest.",
+        "macrophages / phagocytes / lysosomes",
+        "On the spoken cues: On \"Neutrophils, and larger cells called macrophages\" `m7-neutrophil-v1.png` and `m7-macrophage-v1.png` appear side by side at true relative size (grey tags \"neutrophil, about 12 µm\", \"macrophage, about 20 µm\"); on \"phagocytes\" both are bracketed (gloss \"phagocyte: a cell that engulfs and",
+        "explain",
+        "the close-up shrinks to a thumbnail at the upper left. On \"Neutrophils, and larger cells called macrophages\" `m7-neutrophil-v1.png` and `m7-macrophage-v1.png` appear side by side at true relative size (grey tags \"neutrophil, about 12 µm\", \"macrophage, about 20 µm\"); on \"phagocytes\" both are bracketed (gloss \"phagocyte: a cell that engulfs and digests\"). Then the pair fades and the four-plate phagocytosis set fills the left two-thirds, with a coded step counter (1 to 4) under it, one step lit per cue. On \"Receptors ... bind\" `m7-macrophage-engulf-before-v1.png`: the contact point between the reaching arm and the rod is ringed and three short teal tick marks join them (step 1, tag \"bind: fits molecules common to bacteria\"; grey screen tag \"PAMPs\"; a small grey tag on the set, kept for all four steps: \"bacterium drawn larger than real\"). The counter's unlit steps stay grey. On \"wraps its membrane around\" it crossfades to `m7-macrophage-engulf-wrap-v1.png` (new) (step 2, tag \"wrap\"). On \"pulls it inside, sealed in a bubble\" it crossfades to `m7-macrophage-engulf-after-v2.png` (new) (step 3, tag \"sealed inside\"; gloss \"phagosome\"). On \"lysosomes\" it crossfades to `m7-macrophage-engulf-digest-v1.png` (new); the lysosomes merging with the bubble are ringed (step 4, gloss \"lysosome: sac of digestive enzymes\"; tag \"enzymes digest it\"). **Engulf transitions (Revision 3):** the bacterium must never appear twice. Each change between engulf states is either a short crossfade (about 6 frames, 0.2 s) or a masked one: a soft coded mask over the rod fades the old rod out completely before the new rod fades in, while the cell body crossfades underneath. The change into `m7-macrophage-engulf-after-v2.png` (rod outside to rod inside) always uses the mask, because the art QA overlay shows the rod at two positions at 50% opacity. Check at playback speed. The plates' clear margins (8.9% to 9.8%) are accepted by root. At most three bright text items. Hold one second.",
+        [
+            "counter and bar fill",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "holding": [
+        "adjust",
+        "the close-up returns and crossfades to its third aligned partner `m7-dermis-splinter-contained-v1.png` (new).",
+        "Holding the bacteria back: Neutrophils die after a short time.",
+        "Neutrophils die / If an infection spreads / raise the body's temperature / speed up some immune reactions / clears a small infection on its own",
+        "On the spoken cues: On \"Neutrophils die\" the collapsed, rounded neutrophils near the splinter tip are ringed (tag \"pus: dead neutrophils, bacteria, fluid\"). On \"If an infection spreads\" a coded line leaves the small vessel and runs up off the board edge (grey tag \"signals in the blood\"); on \"raise the body's",
+        "explain",
+        "the close-up returns and crossfades to its third aligned partner `m7-dermis-splinter-contained-v1.png` (new). On \"Neutrophils die\" the collapsed, rounded neutrophils near the splinter tip are ringed (tag \"pus: dead neutrophils, bacteria, fluid\"). On \"If an infection spreads\" a coded line leaves the small vessel and runs up off the board edge (grey tag \"signals in the blood\"); on \"raise the body's temperature\" a small coded `SetPointGauge` appears at the upper right: its mark slides up a short scale (tag \"fever: the brain raises the set point\"; no numbers, no thermometer icon). On \"speed up some immune reactions\" a grey sub-tag writes \"can speed some reactions\". On \"clears a small infection on its own\" the gauge dims and the few remaining rods in the close-up are ringed (tag \"often cleared here\"). At most three bright text items. Hold one second.",
+        [
+            "Enter slide",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "alert-adaptive": [
+        "adjust",
+        "on \"second defence\" the fourth rung writes and lights amber: \"days: adaptive\"; the innate bracket stays lit (both run at once).",
+        "Alerting the adaptive cells: Meanwhile, the body starts building a second defence, aimed at this exact pathogen.",
+        "Dendritic cells / lymph node / adaptive",
+        "On the spoken cues: On \"Dendritic cells\" `m7-dendritic-cell-v1.png` (new) appears in the close-up area, a bacterium being taken in at the end of one arm ringed (gloss \"dendritic cell: phagocyte with branching arms\"). On \"travel along lymph vessels\" the close-up shrinks to the left edge and a coded dotted path runs",
+        "explain",
+        "on \"second defence\" the fourth rung writes and lights amber: \"days: adaptive\"; the innate bracket stays lit (both run at once). On \"Dendritic cells\" `m7-dendritic-cell-v1.png` (new) appears in the close-up area, a bacterium being taken in at the end of one arm ringed (gloss \"dendritic cell: phagocyte with branching arms\"). On \"travel along lymph vessels\" the close-up shrinks to the left edge and a coded dotted path runs from it across the board to `m7-lymph-node-v1.png` (new), which appears at the right of the left area (gloss \"lymph: fluid drained from tissues\"); a small copy of the dendritic cell travels along the path. On \"a small organ where white blood cells gather\" the node is ringed (gloss \"lymph node\"), and the \"lymph\" gloss and the dendritic cell gloss dim to grey; only the current gloss and the amber rung are bright. On \"show pieces of the bacteria to T cells\" the dendritic cell thumbnail sits inside the node beside a small `m7-t-cell-v1.png`, with three small coded fragment marks on the dendritic cell's surface and a short teal arrow to the T cell (tag \"shows pieces to T cells\"). On \"adaptive\" a gloss writes beside the amber rung: \"adaptive: aimed at one pathogen; days to build\". At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "two-speeds": [
+        "new",
+        "the board clears to the full `ResponseStrip`, enlarged to the centre, with the innate bracket teal and the adaptive rung amber.",
+        "Two speeds, working together: So the innate response is fast and broad.",
+        "fast and broad / doesn't get better with practice / slow the first time, but it's specific / work together / hold the bacteria back",
+        "On the spoken cues: A short coded time axis runs beside it (\"minutes\", \"hours\", \"days\", small grey ticks; no values between ticks). On \"fast and broad\" the innate bracket brightens with a tag \"fast, broad\"; on \"doesn't get better with practice\" a grey sub-tag \"same response every time\". On \"slow the first time, but",
+        "explain",
+        "the board clears to the full `ResponseStrip`, enlarged to the centre, with the innate bracket teal and the adaptive rung amber. A short coded time axis runs beside it (\"minutes\", \"hours\", \"days\", small grey ticks; no values between ticks). On \"fast and broad\" the innate bracket brightens with a tag \"fast, broad\"; on \"doesn't get better with practice\" a grey sub-tag \"same response every time\". On \"slow the first time, but it's specific\" the amber rung brightens with a tag \"slow at first, specific\". On \"work together\" a grey chip \"innate is weak; adaptive does the real work\" fades in and takes a grey scribble cross; on \"hold the bacteria back\" a teal arrow from the \"hours\" rung runs down to the \"days\" rung (tag \"holds back, then shows the target\"), with the dendritic cell thumbnail on the arrow. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the strip stays at the centre.",
+        "Memory: So remember the order: block, alarm, eat, alert.",
+        "block, alarm, eat, alert.",
+        "On the spoken cues: One handwritten word writes large beside each rung, one per beat: \"block\", \"alarm\", \"eat\", \"alert\" (the first three teal, the last amber). On the second sentence each rung's small thumbnail pulses in turn (the skin plate, the inflamed small vessel region, the digest plate, the dendritic cell). Hold",
+        "explain",
+        "the strip stays at the centre. One handwritten word writes large beside each rung, one per beat: \"block\", \"alarm\", \"eat\", \"alert\" (the first three teal, the last amber). On the second sentence each rung's small thumbnail pulses in turn (the skin plate, the inflamed small vessel region, the digest plate, the dendritic cell). Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (a blue dye)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. In an experiment, a",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a blue dye))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A blue dye that binds to proteins in blood plasma was injected into the bloodstream of a mouse. Histamine solution was then injected into one small area of its skin, and saline (salt solution) into another area as a control. After 15 minutes, the skin at the histamine site was stained blue. The skin at the saline site was not.\" Demand: \"Explain the result. Explain how this change helps to defend tissue against bacteria. (3 marks)\". One lined answer box. No plates and nothing answer-bearing (no strip, no vessel). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Histamine made the small vessels there leaky / carrying the blood proteins and the dye / turned blue / The control / proteins and white blood cells reach the bacteria / the classic mistake",
+        "On the spoken cues: A short answer block writes beneath it. On \"Histamine made the small vessels there leaky\" \"Histamine solution\" underlines teal and a row writes \"histamine → leaky vessel walls\"; on \"carrying the blood proteins and the dye\" \"binds to proteins in blood plasma\" underlines teal and the row extends",
+        "explain",
+        "the card shrinks to a strip at the top. A short answer block writes beneath it. On \"Histamine made the small vessels there leaky\" \"Histamine solution\" underlines teal and a row writes \"histamine → leaky vessel walls\"; on \"carrying the blood proteins and the dye\" \"binds to proteins in blood plasma\" underlines teal and the row extends \"proteins and dye leave the blood\"; on \"turned blue\" \"stained blue\" underlines. On \"The control\" \"saline ... as a control\" underlines (row \"control: not the injection itself\"). On \"proteins and white blood cells reach the bacteria\" a small row \"defence: cells and proteins reach the site\". On \"the classic mistake\" the chip \"vessels widened, so dye showed\" writes on and takes a grey scribble cross, with the small grey reason \"widening: more blood, not leakage\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (neutrophils that can't leave)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. A child has an inherited condition in",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (neutrophils that can't leave))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A child has an inherited condition in which neutrophils cannot attach to the inner wall of blood vessels. Blood tests show a higher than normal number of neutrophils in the blood. The child has repeated bacterial skin infections, and infected wounds form little or no pus.\" Demand: \"Explain these observations. (4 marks)\". One lined answer box. No plates (a cell plate would hint at the answer). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "must stick to the vessel wall / stay in the blood / fewer bacteria are engulfed / Pus is mostly dead neutrophils / the classic mistake / they must reach the tissue",
+        "On the spoken cues: A three-row answer table writes beneath it, one row per observation. On \"must stick to the vessel wall\" \"cannot attach to the inner wall\" underlines teal; on \"stay in the blood\" \"higher than normal number of neutrophils in the blood\" underlines and row 1 fills \"can't leave: they stay in the blood\".",
+        "explain",
+        "the card shrinks to a strip. A three-row answer table writes beneath it, one row per observation. On \"must stick to the vessel wall\" \"cannot attach to the inner wall\" underlines teal; on \"stay in the blood\" \"higher than normal number of neutrophils in the blood\" underlines and row 1 fills \"can't leave: they stay in the blood\". On \"fewer bacteria are engulfed\" \"repeated bacterial skin infections\" underlines and row 2 fills \"none at the site: bacteria not engulfed\". On \"Pus is mostly dead neutrophils\" \"little or no pus\" underlines and row 3 fills \"no neutrophils arriving: no pus\". On \"the classic mistake\" the chip \"more neutrophils in blood = stronger defence\" writes on and takes a grey scribble cross, with the small grey reason \"they must reach the tissue\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "the `ResponseStrip` returns small at the left; four step chips write on beside its rungs, one per cue: \"barrier crossed\", \"vessels: wider, leaky\", \"phagocytes: reach, bind, engulf, digest\", \"dendritic cells alert T cells\".",
+        "Decision rule and handoff: So for any infection question, follow the order: which barrier was crossed, how inflammation changes the vessels, how phagocytes reach and digest the pathogen, and how adaptive cells are alerted.",
+        "So for any infection question, follow the order:",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how B cells target an antigen\" (small grey tag only). Hold half a second before the notes.",
+        "explain",
+        "the `ResponseStrip` returns small at the left; four step chips write on beside its rungs, one per cue: \"barrier crossed\", \"vessels: wider, leaky\", \"phagocytes: reach, bind, engulf, digest\", \"dendritic cells alert T cells\". A \"Next\" chip slides in at the lower right: \"Next: how B cells target an antigen\" (small grey tag only). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B07_ROWS = {
+    "hook": [
+        "adjust",
+        "no people, no portrait. `m7-wound-bacterium-v1.png` (from b06's brief) appears at the left with three kinds of small coded antigen patches on its surface (grey tag \"the splinter's bacteria, from b06\").",
+        "Hook (selection, not design): Your body can make antibodies that fit a bacterium it has never met before.",
+        "So how does it design them / Burnet / it doesn't design anything / The right cells already exist / the infection picks them out / clonal selection",
+        "On the spoken cues: On \"So how does it design them\" a grey chip \"design an antibody to order?\" writes beside it. On \"Burnet\" a small grey tag writes: \"Burnet, Walter and Eliza Hall Institute, Melbourne, 1957\". On \"it doesn't design anything\" the chip takes a grey scribble cross. On \"The right cells already exist\" a",
+        "explain",
+        "no people, no portrait. `m7-wound-bacterium-v1.png` (from b06's brief) appears at the left with three kinds of small coded antigen patches on its surface (grey tag \"the splinter's bacteria, from b06\"). On \"So how does it design them\" a grey chip \"design an antibody to order?\" writes beside it. On \"Burnet\" a small grey tag writes: \"Burnet, Walter and Eliza Hall Institute, Melbourne, 1957\". On \"it doesn't design anything\" the chip takes a grey scribble cross. On \"The right cells already exist\" a coded grid of twelve small copies of `m7-b-cell-bare-v1.png` (new) fades in at the right, each carrying coded receptors with a different tip notch (grey tag \"B cells, each with its own receptor shape (model)\"). On \"the infection picks them out\" the bacterium drifts across the grid and two cells whose tips match its patches light teal while the rest dim (tag \"picked out\"). On \"clonal selection\" the heading writes on: \"How do B cells target an antigen?\"; on \"B cells\" a small grey gloss writes under it: \"B cells: white blood cells that make antibodies\". Hold about two seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "lymph-node": [
+        "adjust",
+        "the board clears to the lymph node layout.",
+        "Into the lymph node: In the last video, phagocytes held the splinter's bacteria back, and dendritic cells carried pieces of them to a lymph node.",
+        "lymphocytes / B cells",
+        "On the spoken cues: At the right third, b06's `ResponseStrip` draws with its first three rungs as small grey thumbnails (\"barriers\", \"inflammation\", \"phagocytes\") and the fourth rung lit amber, \"days: adaptive\". `m7-lymph-node-v1.png` (from b06's brief) fills the left two-thirds. On \"dendritic cells carried pieces of",
+        "explain",
+        "the board clears to the lymph node layout. At the right third, b06's `ResponseStrip` draws with its first three rungs as small grey thumbnails (\"barriers\", \"inflammation\", \"phagocytes\") and the fourth rung lit amber, \"days: adaptive\". `m7-lymph-node-v1.png` (from b06's brief) fills the left two-thirds. On \"dendritic cells carried pieces of them\" a small `m7-dendritic-cell-v1.png` thumbnail travels along a coded dotted path into the node (grey tag \"b06\"). On \"Bacteria and their molecules also drain there\" small coded specks and two tiny bacterium thumbnails flow in along the entering lymph vessels (tag \"bacteria and their molecules arrive\"). On \"lymphocytes\" the round follicles in the outer layer are ringed (gloss \"lymphocytes: white blood cells of the adaptive response\"). On \"B cells\" a coded zoom box opens from one follicle and `m7-b-cell-v1.png` appears enlarged beside it (tag \"B cell\"). At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "antigens": [
+        "adjust",
+        "the node shrinks to a grey thumbnail at the upper left.",
+        "Antigens: B cells recognise antigens.",
+        "antigens",
+        "On the spoken cues: `m7-wound-bacterium-v1.png` fills the left two-thirds with its coded antigen patches (grey tag \"model: antigens drawn far larger than real\"). On \"antigens\" gloss \"antigen: a molecule the immune system can recognise\" (grey screen sub-gloss \"antigen: antibody generator\"). On \"a protein or a sugar",
+        "explain",
+        "the node shrinks to a grey thumbnail at the upper left. `m7-wound-bacterium-v1.png` fills the left two-thirds with its coded antigen patches (grey tag \"model: antigens drawn far larger than real\"). On \"antigens\" gloss \"antigen: a molecule the immune system can recognise\" (grey screen sub-gloss \"antigen: antibody generator\"). On \"a protein or a sugar chain on the surface\" the patches are ringed (tag \"on the surface\"). On \"many different antigens\" the three kinds of patch pulse in turn, each kind in its own muted colour (tag \"one bacterium: many antigens\"). On \"just one small part of its surface\" a coded zoom inset opens onto one patch, showing one notch-shaped part outlined teal (tag \"binds one small part\"; grey gloss \"epitope\"). At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "antibody-shape": [
+        "adjust",
+        "on \"using receptors\" `m7-b-cell-v1.png` appears at the left with its painted surface receptors ringed (tag \"receptors\").",
+        "The antibody's shape: B cells recognise antigens using receptors, and each receptor is an antibody held in the cell's membrane.",
+        "antibody",
+        "On the spoken cues: On \"each receptor is an antibody held in the cell's membrane\" a coded zoom from one receptor opens to `m7-antibody-v1.png`, which fills the centre (tag \"receptor = antibody held in the membrane\"). On \"Its stem is the same\" the stem is ringed (gloss \"constant region: same in many antibodies\"). On",
+        "explain",
+        "on \"using receptors\" `m7-b-cell-v1.png` appears at the left with its painted surface receptors ringed (tag \"receptors\"). On \"each receptor is an antibody held in the cell's membrane\" a coded zoom from one receptor opens to `m7-antibody-v1.png`, which fills the centre (tag \"receptor = antibody held in the membrane\"). On \"Its stem is the same\" the stem is ringed (gloss \"constant region: same in many antibodies\"). On \"The tips of its two arms\" both arm tips are ringed teal (gloss \"variable region: the binding sites\"). On \"fits one small part of an antigen\" a coded notch shape appears at each tip and the matching antigen patch from scene 3 slides into one tip (tag \"fits one shape\"). On \"Both tips are identical\" a second matching patch slides into the other tip (tag \"two identical binding sites\"). At most three bright text items. Hold one second.",
+        [
+            "Enter slide",
+            "Cam lens zoom",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "one-shape": [
+        "adjust",
+        "`m7-b-cell-v1.png` returns at the left; on \"all the receptors have the same shape\" it crossfades to its aligned partner `m7-b-cell-bare-v1.png` (new) while coded `ShapeReceptor`s with triangle tips appear exactly where the painted receptors were (tag \"one cell: one receptor shape\"; grey tag \"model: receptors drawn far larger than real\").",
+        "One cell, one shape: On any one B cell, all the receptors have the same shape.",
+        "all the receptors have the same shape / different B cells have different shapes / shuffles pieces of its receptor genes at random / billions of B cells / Most will never meet anything they fit",
+        "On the spoken cues: On \"different B cells have different shapes\" three more copies of the bare plate appear beside it with round, square and wave tips. On \"shuffles pieces of its receptor genes at random\" a clean coded diagram writes under the row: three short groups of thin ink bars, one bar from each group lifting",
+        "explain",
+        "`m7-b-cell-v1.png` returns at the left; on \"all the receptors have the same shape\" it crossfades to its aligned partner `m7-b-cell-bare-v1.png` (new) while coded `ShapeReceptor`s with triangle tips appear exactly where the painted receptors were (tag \"one cell: one receptor shape\"; grey tag \"model: receptors drawn far larger than real\"). On \"different B cells have different shapes\" three more copies of the bare plate appear beside it with round, square and wave tips. On \"shuffles pieces of its receptor genes at random\" a clean coded diagram writes under the row: three short groups of thin ink bars, one bar from each group lifting out and joining into one short bar (tag \"random shuffling of receptor genes\"; grey gloss \"while B cells develop, in the bone marrow\"); the shuffle runs twice and each result points to a different cell in the row. On \"billions of B cells\" the row zooms out into a field of many tiny cells, each with a tiny tip mark (grey tag \"millions of shapes, before any infection\"). On \"Most will never meet anything they fit\" most of the field dims to grey. At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "DrawPath",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "selection": [
+        "adjust",
+        "a row of eight bare B cell copies with different tips lines the lower left; the bacterium with its patches drifts along the row.",
+        "Selection: In the lymph node, the bacterium's antigens meet huge numbers of B cells.",
+        "helper T cell",
+        "On the spoken cues: On \"Only the few whose receptors fit\" the triangle-tip cell and the round-tip cell lock onto matching patches (their receptor tips seat into the patches, teal) while the others stay grey (tag \"only fitting cells bind\"). The strip's first step chip writes and lights: \"fit\". On \"The antigen doesn't",
+        "explain",
+        "a row of eight bare B cell copies with different tips lines the lower left; the bacterium with its patches drifts along the row. On \"Only the few whose receptors fit\" the triangle-tip cell and the round-tip cell lock onto matching patches (their receptor tips seat into the patches, teal) while the others stay grey (tag \"only fitting cells bind\"). The strip's first step chip writes and lights: \"fit\". On \"The antigen doesn't tell a B cell what to make\" a grey chip \"antigen tells the cell what to make\" fades in and takes a grey scribble cross, with the small grey reason \"the shape already existed\". On \"helper T cell\" a small `m7-t-cell-v1.png` appears beside the triangle-tip cell with a short coded signal arrow to it (tag \"go-ahead signal\"; gloss \"helper T cell: next video\"); the strip's second chip lights: \"go-ahead\". On \"the dendritic cells alerted\" a small `m7-dendritic-cell-v1.png` thumbnail fades in beside the T cell and then fades out (grey tag \"b06\"), recalling b06 scene 10. A small grey tag under the round-tip cell: \"this clone does the same\". At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "clone": [
+        "adjust",
+        "the triangle-tip cell moves to the left edge.",
+        "Making a clone: Once it's switched on, the B cell divides, and its daughter cells divide again and again over several days, making thousands of identical cells.",
+        "clone",
+        "On the spoken cues: On \"divides\" its bare plate crossfades to the aligned partner `m7-b-cell-dividing-v1.png` (new), then the image separates into two copies of the bare plate, each with triangle-tip receptors. On \"again and again\" a coded `CloneTree` draws to the right: 2, 4, 8, then a dense cluster of small copies",
+        "explain",
+        "the triangle-tip cell moves to the left edge. On \"divides\" its bare plate crossfades to the aligned partner `m7-b-cell-dividing-v1.png` (new), then the image separates into two copies of the bare plate, each with triangle-tip receptors. On \"again and again\" a coded `CloneTree` draws to the right: 2, 4, 8, then a dense cluster of small copies (tag \"a clone: identical cells\"); every copy carries triangle tips. The strip's third chip lights: \"clone\". On \"a first response takes days\" a short coded day axis draws under the tree, from \"day 0\" to \"several days\" (grey ticks only; tag \"first time: days\"). On \"A few rare cells\" the starting cell is ringed against the cluster (tag \"rare cells, multiplied\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "plasma-memory": [
+        "adjust",
+        "many of the clone cluster's cells crossfade, one by one, to small copies of `m7-plasma-cell-v1.png` (new).",
+        "Plasma cells and memory cells: Many cells in the clone become plasma cells.",
+        "plasma cells / memory B cells",
+        "On the spoken cues: On \"plasma cells\" one plasma cell enlarges at the left (true size against a bare B cell copy: visibly larger). **Plasma cell scale (Revision 3):** the `m7-plasma-cell-v1.png` plate is scaled up uniformly in the scene, never stretched, so that the plasma cell reads about 1.5 times the bare B cell's",
+        "explain",
+        "many of the clone cluster's cells crossfade, one by one, to small copies of `m7-plasma-cell-v1.png` (new). On \"plasma cells\" one plasma cell enlarges at the left (true size against a bare B cell copy: visibly larger). **Plasma cell scale (Revision 3):** the `m7-plasma-cell-v1.png` plate is scaled up uniformly in the scene, never stretched, so that the plasma cell reads about 1.5 times the bare B cell's width (about 12 µm against 8 µm). On its fixed canvas the painted cell is only about 1.2 times the B cell plate's width (art QA, Brief 101), so its scene scale is about 1.25 times the B cell plate's scale; measure the painted cell outlines, not the canvases. Keep the same ratio wherever the two cells appear side by side. On \"packed with the machinery for making protein\" its stacked internal membranes are ringed (small grey gloss \"rough ER: makes proteins for export, Year 11\"). On \"thousands of antibody molecules every second\" small coded Y shapes stream out from its surface (tag \"thousands per second\"; grey tag \"antibodies drawn far larger than real\"). On \"the same binding shape\" the \"thousands per second\" tag dims to grey and one released Y enlarges, its tips showing the triangle notch, beside the original cell's triangle receptor (tag \"same shape as the selected receptor\"). The strip's fourth chip lights: \"plasma cells\". On \"The blood carries them to the infection\" the previous tag dims, the cells shrink left, and a few coded Ys stream from a small lymph node thumbnail along a coded vessel line to a small thumbnail of b06's inflamed close-up, `m7-dermis-splinter-inflamed-v1.png` (grey tag \"b06: leaky vessels let them out\"). On \"memory B cells\" three cells at the edge of the cluster stay as bare B cell copies with triangle tips and are ringed (tag \"memory B cells: stay for later\"; small grey tag \"b09\"), and the travel thumbnails dim. At most three bright text items: only the current tag, the strip chip and at most one gloss; each tag dims when the next lands. Hold one second.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "antibody-actions": [
+        "adjust",
+        "on \"don't kill bacteria by themselves\" a grey chip \"antibodies kill bacteria\" fades in and takes a grey scribble cross.",
+        "What antibodies do: Antibodies don't kill bacteria by themselves.",
+        "don't kill bacteria by themselves / cover the parts a bacterium uses to stick to our cells / link bacteria into clumps / coat bacteria / receptors for the antibody's stem",
+        "On the spoken cues: Three panels build across the left two-thirds, one per cue; each earlier panel dims to grey. (1) On \"cover the parts a bacterium uses to stick to our cells\" the bacterium sits above a coded host cell membrane edge (as in b03); its coded surface threads reaching for the membrane are covered by coded",
+        "explain",
+        "on \"don't kill bacteria by themselves\" a grey chip \"antibodies kill bacteria\" fades in and takes a grey scribble cross. Three panels build across the left two-thirds, one per cue; each earlier panel dims to grey. (1) On \"cover the parts a bacterium uses to stick to our cells\" the bacterium sits above a coded host cell membrane edge (as in b03); its coded surface threads reaching for the membrane are covered by coded Ys, and it drifts off without gripping (tag \"block: can't attach\"; grey tag \"b03: fimbriae\"; grey screen tag \"also blocks toxins\"). (2) On \"link bacteria into clumps\" four copies of the bacterium plate (scaled together) are pulled into a cluster by coded Ys bridging pairs of patches (tag \"clump: two arms link bacteria\"; grey gloss \"agglutination\"). (3) On \"coat bacteria\" a bacterium covered in coded Ys meets `m7-macrophage-v1.png` (at true relative size, much larger); on \"receptors for the antibody's stem\" small coded receptors on the macrophage edge grip the Y stems and the edge begins to curve round the bacterium (tag \"coat: phagocytes grab it faster\"; grey gloss \"opsonisation\"; grey tag \"b06: phagocytosis\"). The strip's fifth chip lights: \"antibodies bind\". A small grey tag at the end: \"also: activate complement proteins\". At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "specific": [
+        "adjust",
+        "the splinter bacterium returns at the left, coated in triangle-tip Ys (tag \"fits: bound\").",
+        "What specific means: That's what specific means.",
+        "A different bacterium / select its own B cells / Each pathogen gets its own matching clones",
+        "On the spoken cues: On \"A different bacterium\" the round coccus from `m7-bacterium-rod-coccus-v1.png` (cropped by position to the coccus, scaled, not stretched) appears at the right with square and wave coded patches (grey tag \"a different bacterium\"); triangle-tip Ys drift past it without attaching (tag \"different",
+        "explain",
+        "the splinter bacterium returns at the left, coated in triangle-tip Ys (tag \"fits: bound\"). On \"A different bacterium\" the round coccus from `m7-bacterium-rod-coccus-v1.png` (cropped by position to the coccus, scaled, not stretched) appears at the right with square and wave coded patches (grey tag \"a different bacterium\"); triangle-tip Ys drift past it without attaching (tag \"different shapes: usually not bound\"). On \"select its own B cells\" the square-tip cell in the grey library row lights (tag \"its own clone\"). On \"Each pathogen gets its own matching clones\" a grey chip \"every B cell responds to every antigen\" fades in and takes a grey scribble cross. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "sequence": [
+        "new",
+        "the board clears to the full `ResponseStrip`, enlarged to the centre: b06's three innate rungs above (grey, with their thumbnails), then the five B cell chips in the expanded fourth rung, connected by short arrows.",
+        "The whole sequence: So here's the whole sequence.",
+        "bind it / helper T cell's signal / divide into a clone / Plasma cells release antibodies / help remove the pathogen",
+        "On the spoken cues: The chips brighten in order, one per cue, each with its small thumbnail: \"fit\" (the bacterium patch seated in a receptor tip) on \"bind it\", \"go-ahead\" (T cell thumbnail) on \"helper T cell's signal\", \"clone\" (the clone tree) on \"divide into a clone\", \"plasma cells\" (plasma cell thumbnail) on \"Plasma",
+        "explain",
+        "the board clears to the full `ResponseStrip`, enlarged to the centre: b06's three innate rungs above (grey, with their thumbnails), then the five B cell chips in the expanded fourth rung, connected by short arrows. The chips brighten in order, one per cue, each with its small thumbnail: \"fit\" (the bacterium patch seated in a receptor tip) on \"bind it\", \"go-ahead\" (T cell thumbnail) on \"helper T cell's signal\", \"clone\" (the clone tree) on \"divide into a clone\", \"plasma cells\" (plasma cell thumbnail) on \"Plasma cells release antibodies\", \"antibodies bind\" (the coated bacterium) on \"help remove the pathogen\". Only the current chip is bright. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "lineage split"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the board clears.",
+        "Memory: So remember: clonal selection, the name is the process.",
+        "clonal selection, the name is the process.",
+        "On the spoken cues: One handwritten line writes on large across the centre: \"Clonal selection: the name is the process.\" Under it, on \"selected\", the row of bare B cells returns small with only the triangle-tip cell lit; on \"cloned\", the clone tree grows from it. Hold half a second.",
+        "explain",
+        "the board clears. One handwritten line writes on large across the centre: \"Clonal selection: the name is the process.\" Under it, on \"selected\", the row of bare B cells returns small with only the triangle-tip cell lit; on \"cloned\", the clone tree grows from it. Hold half a second.",
+        [
+            "HandText write-on",
+            "table build"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (two tubes)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First. A mouse was",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (two tubes))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A mouse was injected with killed cells of bacterium A. Two weeks later, a sample of serum (the liquid part of the blood, without cells) was taken from the mouse. The serum was mixed with bacterium A in tube 1 and with bacterium B in tube 2. In tube 1, the bacteria clumped together. In tube 2, the bacteria stayed evenly spread through the liquid.\" Demand: \"Explain the results in both tubes. (4 marks)\". One lined answer box. No plates, no tubes drawn and nothing answer-bearing (no strip, no shape model). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Bacterium A's antigens selected the B cells / released antibodies / linked them into clumps / didn't visibly clump / this test alone can't show that / the classic mistake",
+        "On the spoken cues: A two-row answer table writes beneath it (\"tube 1\", \"tube 2\"). On \"Bacterium A's antigens selected the B cells\" \"killed cells of bacterium A\" underlines teal and a small row writes above the table \"A's antigens → fitting B cells → clone → plasma cells\"; on \"released antibodies\" \"Two weeks later\"",
+        "explain",
+        "the card shrinks to a strip at the top. A two-row answer table writes beneath it (\"tube 1\", \"tube 2\"). On \"Bacterium A's antigens selected the B cells\" \"killed cells of bacterium A\" underlines teal and a small row writes above the table \"A's antigens → fitting B cells → clone → plasma cells\"; on \"released antibodies\" \"Two weeks later\" and \"serum\" underline (row extends \"antibodies in serum\"). On \"linked them into clumps\" \"clumped together\" underlines teal and the tube 1 row fills \"antibodies bind A; two arms link cells\". On \"didn't visibly clump\" \"stayed evenly spread\" underlines and the tube 2 row fills \"no visible clumping: no evidence of antibodies linking B\"; on \"this test alone can't show that\" a small grey line adds \"B may lack the matching antigen: this test alone can't tell\" (Revision 3: no absence of binding is claimed). On \"the classic mistake\" the chip \"antibodies killed bacterium A\" writes on and takes a grey scribble cross, with the small grey reason \"clumping shows binding, not killing\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (a claim about time)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. Antibodies against a new pathogen usually appear",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a claim about time))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"After a first infection with a new pathogen, antibodies against it are usually first detected in the blood about 7 to 10 days later.\" Student's claim, in a small box: \"It takes this long because B cells must first design an antibody that fits the new pathogen.\" Demand: \"Evaluate the student's claim. (3 marks)\". One lined answer box. No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "The delay is real, but the reason is wrong / already exist before infection / those cells are rare / divide many times / the classic mistake",
+        "On the spoken cues: A short answer block writes beneath it. On \"The delay is real, but the reason is wrong\" a verdict chip \"delay: real; reason: not supported\". On \"already exist before infection\" \"design an antibody\" underlines amber and a row writes \"fitting B cells already exist: selection, not design\". On \"those",
+        "explain",
+        "the card shrinks to a strip. A short answer block writes beneath it. On \"The delay is real, but the reason is wrong\" a verdict chip \"delay: real; reason: not supported\". On \"already exist before infection\" \"design an antibody\" underlines amber and a row writes \"fitting B cells already exist: selection, not design\". On \"those cells are rare\" \"about 7 to 10 days later\" underlines teal and a row writes \"delay: rare cells must be selected and multiply\"; on \"divide many times\" a small grey clone tree thumbnail sits beside the row. On \"the classic mistake\" the chip \"pathogen tells the cell what to make\" writes on and takes a grey scribble cross. Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "lineage split",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "the `ResponseStrip` returns small at the left with its five B cell chips; four step chips write on beside it, one per cue: \"which B cells fit\", \"selected, then cloned\", \"plasma cells: antibodies\", \"antibodies: block, clump, coat\".",
+        "Decision rule and handoff: So for any antibody question, say which B cells fit the antigen, how they're selected and multiplied, what plasma cells release, and what the antibodies do when they bind.",
+        "So for any antibody question, say which B",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how T cells respond to infected cells\" (small grey tag; the T cell thumbnail beside it). Hold half a second before the notes.",
+        "explain",
+        "the `ResponseStrip` returns small at the left with its five B cell chips; four step chips write on beside it, one per cue: \"which B cells fit\", \"selected, then cloned\", \"plasma cells: antibodies\", \"antibodies: block, clump, coat\". A \"Next\" chip slides in at the lower right: \"Next: how T cells respond to infected cells\" (small grey tag; the T cell thumbnail beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# --- M7 b06 and b07 rows (end) ---
 
 
 LESSONS = {
@@ -7962,6 +8519,34 @@ LESSONS = {
         'rows': M7B05_ROWS,
     },
     # --- M7 b03, p02, b04 and b05 entries (end) ---
+    # --- M7 b06 and b07 entries (start) ---
+    'm7b06': {
+        'design': D + 'lessons/bio-m7-b06.md',
+        'learning_review': D + 'checks/m7b06-learning-review.md',
+        'science_check': D + 'checks/m7b06-claude-science-check.md',
+        'meta': {"title": "What Happens When Bacteria Get Through Your Skin? Inflammation and Phagocytes", "subtitle": "A splinter pushes bacteria through your skin. What does your body do in the first hours, before any defence built for that pathogen is ready, and how do those first defences hold the bacteria back?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 9, "lessonIntent": "explaining how barriers keep most microbes out (skin's dead, flaking outer layers; mucus and cilia; stomach acid; lysozyme); defining the innate immune system (the barriers plus the fast responses after a breach); explaining how a breach triggers inflammation (damaged cells and mast cells release chemicals; histamine widens small vessels and makes them leaky, so fluid and blood proteins seep out) and linking redness, warmth, swelling and pain to those causes and to their purpose (delivering cells and proteins); explaining how neutrophils leave the blood and follow a chemical trail; describing phagocytosis step by step (bind, wrap, seal inside, lysosomes digest); explaining pus, and fever as a response when infection spreads; explaining how dendritic cells carry pieces of the pathogen to a lymph node and alert T cells, starting the adaptive response while the innate response is still going; comparing innate and adaptive responses and saying how they work together; interpreting a dye leak experiment and explaining the effects of a neutrophil adhesion defect."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "send-cells", "barriers", "splinter", "alarm", "four-signs", "neutrophils", "phagocytosis", "holding", "alert-adaptive", "two-speeds", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: bacteria are single cells with a wall containing peptidoglycan; pathogens and hosts; viruses are not cells. From b03: pathogens enter through breaks in the skin and through mucous membranes; fimbriae help bacteria grip against mucus. From b05 (playlist order, not a route prerequisite): a plant defends cell by cell because it has no circulating immune cells. From Year 11: cells, membranes, organelles including lysosomes (sacs of digestive enzymes); blood vessels and capillaries carry blood through tissues; enzymes. Not assumed: innate and adaptive immunity, mast cells, histamine, inflammation and its causes, neutrophils, macrophages, phagocytes and phagocytosis, dendritic cells, lymph and lymph nodes, T cells, fever as a deliberate response, pus.", "startsWith": "Follow barriers, inflammation and phagocytosis. The video opens: In 1882, the zoologist Élie Metchnikoff pushed a rose thorn into a see-through starfish larva.", "stopsAfter": "explaining how barriers keep most microbes out (skin's dead, flaking outer layers; mucus and cilia; stomach acid; lysozyme); defining the innate immune system (the barriers plus the fast responses after a breach); explaining how a breach triggers inflammation (damaged cells and mast cells release chemicals; histamine widens small vessels and makes them leaky, so fluid and blood proteins seep out) and linking redness, warmth, swelling and pain to those causes and to their purpose (delivering cells and proteins); explaining how neutrophils leave the blood and follow a chemical trail; describing phagocytosis step by step (bind, wrap, seal inside, lysosomes digest); explaining pus, and fever as a response when infection spreads; explaining how dendritic cells carry pieces of the pathogen to a lymph node and alert T cells, starting the adaptive response while the innate response is still going; comparing innate and adaptive responses and saying how they work together; interpreting a dye leak experiment and explaining the effects of a neutrophil adhesion defect.", "nextLesson": "how B cells recognise and target an antigen (route entry bio-m7-b07)."},
+        'teaching': {"task": "A splinter pushes bacteria through your skin. What does your body do in the first hours, before any defence built for that pathogen is ready, and how do those first defences hold the bacteria back?", "causalExplanation": "Causes: why animals can respond differently from plants (cells travel in blood; scene 2); how each barrier stops entry, not just its name (the 2025 Q21 marker comment; scene 3); why a splinter needs a second line (barrier broken; scene 4); what causes each sign (wider vessels, leaky walls, chemicals and pressure; scenes 5 and 6); why the signs help (delivery of cells and proteins; scene 6); how neutrophils find bacteria (stick, squeeze out, follow a trail that is strongest near the bacteria; scene 7); how a phagocyte destroys a bacterium without digesting itself (sealed bubble, then lysosomes; scene 8); why pus forms (scene 9); how the adaptive response is started (dendritic cells carry pieces to a lymph node; scene 10); why innate and adaptive are one interacting response, not two lists (the 2024 Q32 marker comment; scene 11). Visible case: the same splinter tissue changing in place from scene 4 to 9. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 3 (two plates, two chips) and scene 6 (the cause list) are the densest, so only the current row or chip is bright.", "conversationalApproach": "In 1882 Elie Metchnikoff pushed a rose thorn into a see-through starfish larva and by morning moving cells had crowded around it, with no antibodies involved, so the question is what the body does first when a splinter carries bacteria into the skin, before any defence built for that pathogen is ready. Animals, unlike the banksia, can send defending cells through the blood, but a pathogen first has to get in. Barriers come first: skin's dead, flaking outer layers, mucus and cilia in the airways, stomach acid and lysozyme. A splinter breaks that wall, and the innate immune system (defences you are born with, acting the same way against many pathogens) takes over. Damaged cells and mast cells raise the alarm, histamine widens and leaks the small vessels, and the four signs of inflammation are traced to their causes as a delivery route for cells and proteins rather than a failure. Signal chemicals strongest near the bacteria draw neutrophils to stick, squeeze out and crawl in, and neutrophils and macrophages act as phagocytes that bind, engulf and digest bacteria with lysosome enzymes; pus and fever are explained, and dendritic cells carry pieces of bacteria to a lymph node to start the slower, specific adaptive response. The two speeds work together, and the memory aid is block, alarm, eat, alert. Two exam questions follow with brief feedback.", "openingDecision": "In 1882, the zoologist Élie Metchnikoff pushed a rose thorn into a see-through starfish larva. By the next morning, moving cells had crowded around the thorn. A starfish larva makes no antibodies, yet its cells found the intruder and closed in. Your body runs a similar response when a splinter carries bacteria into your skin. So what happens first, before any defence built for that pathogen is ready?", "understandingCheck": "13a: explain a dye leak result from histamine, and how that change helps defence (analyse the chemical change and the physical change it causes). 13c: explain three observations in a child whose neutrophils can't stick to vessel walls (the route's stop: how innate cells reach and contain a pathogen). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ2-02: \"analyse responses to the presence of pathogens by assessing the physical and chemical changes that occur in the host animals cells and tissues (ACSBL119, ACSBL120, ACSBL121, ACSBL122)\". B7-IQ3-01: \"investigate and model the innate and adaptive immune systems in the human body (ACSBL119)\". Physical changes taught: vessels widening, walls becoming leaky, swelling, neutrophils leaving the blood, engulfing, pus. Chemical changes taught: alarm signals from damaged cells, histamine, signal chemicals that form a trail, digestive enzymes in lysosomes, temperature signals in fever. Verb \"analyse\" (identify components and the relationship between them): attempt 1 asks why one result follows from one chemical change, and scene 6 links each sign to its cause. \"Investigate and model\": the response strip and the aligned tissue plates are the model (route change 6); this video models the innate half and alerts the adaptive half, which b07 and b08 model."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One infection site board. Left two-thirds: painted tissue and cell plates on which each change is shown in place: a low-zoom cut section of skin with the splinter (an aligned pair, normal and inflamed) and a close-up of the tissue under the splinter tip (an aligned triplet: early, inflamed, contained), whose changes are revealed by masked regions of the next plate at the cue where each is narrated (the small vessel widens, fluid appears, the mast cell empties, a neutrophil squeezes out; the vessel is a small venule just past a capillary, and every on-screen tag calls it \"small vessel\", never \"capillary\"), as in b05's root cell pair. Phagocytosis is an aligned set of four macrophage plates (the existing \"before\" plate plus three new partners). Right third: the coded response strip, four rungs filled as taught, top to bottom: \"always there: barriers\" (scene 3), \"minutes: inflammation\" (scene 5), \"hours: phagocytes\" (scene 7), \"days: adaptive\" (scene 10, amber; the rung b07 and b08 expand). A bracket labelled \"innate\" spans the first three rungs from scene 4. The strip is the model the syllabus asks for, and its four rungs carry the memory aid (scene 12) and the decision rule (scene 14). No people, hands or faces: the body appears only as tissue sections, cells and one organ (a lymph node); the skin block is an isolated cut section with no limb or finger. The starfish larva in the hook is a whole animal, not a person. Coded elements are abstract only (no coded lymph node, cell or thermometer icons): the response strip, a vessel channel (two ink lines), chemical gradients as soft concentric rings, small coded specks for released chemicals and microbes in motion, arrows, a temperature set-point gauge (a short vertical scale with a moving mark, no thermometer icon), chips, glosses and step counters. Scale: the close-up spans about 0.15 mm; within it, bacteria (about 2 µm) are small rods, red blood cells about 7 µm, a neutrophil about 12 µm, a mast cell about 12 µm and a macrophage about 20 µm, and grey size tags say so where it matters (scene 8). Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.", "transitionPlan": "The starfish larva plate opens the hook with its thorn tip ringed, then crossfades to its aligned partner with moving cells clustered at the thorn; the banksia root cells thumbnail sits beside a coded VesselChannel along which neutrophil plates drift and bend towards the splinter; the ResponseStrip draws its rungs as the skin shedding plate sheds coded specks and the airway cilia plate sweeps its mucus with coded arrows; the board clears to the splinter plate, a coded line traces the broken barrier and a zoom box opens the close-up under the splinter tip with its bacteria ringed; the inflammation rung lights as alarm specks spread and the inflamed close-up reveals region by region the degranulated mast cell, wider vessel and leaked fluid; the skin plate crossfades to its reddened partner as a cause list builds sign by sign; a coded Gradient draws around the bacteria and revealed regions show a neutrophil sticking, squeezing out and crawling; the phagocyte pair appears at true relative size before the four-plate phagocytosis set runs step by step; the contained close-up rings the pus and a SetPointGauge rises; the adaptive rung lights amber as the dendritic cell plate travels a dotted path to the lymph node plate; the full strip enlarges with a time axis; one handwritten word writes beside each rung; each attempt clears the board and its feedback underlines the card as an answer block or table fills and a crossed chip lands; the strip, step chips and next chip close; scene crossfade with settle."},
+        'rows': M7B06_ROWS,
+    },
+    'm7b07': {
+        'design': D + 'lessons/bio-m7-b07.md',
+        'learning_review': D + 'checks/m7b07-learning-review.md',
+        'science_check': D + 'checks/m7b07-claude-science-check.md',
+        'meta': {"title": "How B Cells Make Antibodies: Antigens and Clonal Selection", "subtitle": "Your body can make antibodies that fit a bacterium it has never met. How does it find the right B cells, and how do the antibodies they make target that bacterium?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 11, "lessonIntent": "defining an antigen and explaining that receptors and antibodies bind one small part with a particular shape; describing the antibody (Y-shaped protein, two identical binding sites at the arm tips, a stem shared by many different antibodies) and that a B cell's receptors are antibodies held in its membrane; explaining that each B cell has one receptor shape and that billions of B cells with millions of shapes exist before infection because receptor genes are shuffled at random; explaining clonal selection (the antigen picks out the few B cells that already fit; usually a helper T cell's go-ahead is also needed); explaining clonal expansion and why a first response takes days; distinguishing plasma cells (release antibodies with the selected binding shape, which the blood carries to the infection) from memory B cells (stay for later); explaining how antibodies help without killing (block attachment and toxins, clump bacteria, coat them for phagocytes); explaining specific binding; interpreting a serum clumping experiment and evaluating a \"design\" claim."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "lymph-node", "antigens", "antibody-shape", "one-shape", "selection", "clone", "plasma-memory", "antibody-actions", "specific", "sequence", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b06: barriers, inflammation, phagocytes and phagocytosis; dendritic cells carry pieces of a pathogen to a lymph node and show them to T cells; innate is fast and broad, adaptive is specific and takes days. From b01: bacteria are cells. From b03: bacteria grip host cells with surface threads (fimbriae); viruses use surface proteins to bind host cells. From Year 11: proteins have shapes that fit other molecules (enzyme and substrate); cells divide by mitosis into identical cells; DNA codes for proteins; the rough endoplasmic reticulum makes proteins for export. Not assumed: antigen, antibody structure, B cell receptors, clonal selection, clonal expansion, plasma cells, memory B cells, helper T cells (named only), the actions of antibodies.", "startsWith": "Introduce antigens and matching receptors. The video opens: Your body can make antibodies that fit a bacterium it has never met before.", "stopsAfter": "defining an antigen and explaining that receptors and antibodies bind one small part with a particular shape; describing the antibody (Y-shaped protein, two identical binding sites at the arm tips, a stem shared by many different antibodies) and that a B cell's receptors are antibodies held in its membrane; explaining that each B cell has one receptor shape and that billions of B cells with millions of shapes exist before infection because receptor genes are shuffled at random; explaining clonal selection (the antigen picks out the few B cells that already fit; usually a helper T cell's go-ahead is also needed); explaining clonal expansion and why a first response takes days; distinguishing plasma cells (release antibodies with the selected binding shape, which the blood carries to the infection) from memory B cells (stay for later); explaining how antibodies help without killing (block attachment and toxins, clump bacteria, coat them for phagocytes); explaining specific binding; interpreting a serum clumping experiment and evaluating a \"design\" claim.", "nextLesson": "how T cells respond to infected cells (route entry bio-m7-b08)."},
+        'teaching': {"task": "Your body can make antibodies that fit a bacterium it has never met. How does it find the right B cells, and how do the antibodies they make target that bacterium?", "causalExplanation": "Causes: why the body needn't design antibodies (the shapes already exist; hook, scene 5); why one cell has one shape and the body has millions (random gene shuffling during development; scene 5); why only some B cells respond (shape fit; scene 6); why a first response takes days (rare cells must multiply; scene 7 and attempt 2); why plasma cells make the right antibody (they release the selected receptor's shape; scenes 4 and 8); how binding helps without killing (block, clump, coat, linked back to b06's phagocytes; scene 9); what specific means (scene 10). Visible case: the same splinter bacterium from b06, and one B cell followed from the library to its clone. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 5 (row, shuffle diagram, field) and scene 9 (three panels) are the densest, so earlier parts dim at each cue.", "conversationalApproach": "Your body can make antibodies that fit a bacterium it has never met, and in 1957 Melbourne's Frank Macfarlane Burnet proposed that nothing is designed: the right cells already exist and the infection picks them out, so the question is how B cells find and target a pathogen. Following on from the dendritic cells of the last video, bacteria and their molecules reach a lymph node packed with lymphocytes, and this video follows the B cells. An antigen is a molecule the immune system can recognise, usually a protein or sugar chain on a pathogen's surface, and a receptor fits one small part of it. Each receptor is an antibody held in the membrane, a Y-shaped protein with a shared stem and two identical binding tips. Each B cell carries one receptor shape, made by random shuffling of receptor gene pieces in the bone marrow, so millions of shapes exist before any infection. Only the B cells that fit bind the antigen, usually with a helper T cell's go-ahead; that is selection, not instruction. The chosen cell divides over several days into a clone, which is why a first response takes days, and the clone becomes plasma cells that release antibodies and memory B cells that stay. Antibodies do not kill by themselves; they block attachment and toxins, link bacteria into clumps and coat them for phagocytes, and specific means each pathogen selects its own clones. The memory aid is clonal selection, the name is the process. Two exam questions follow with brief feedback.", "openingDecision": "Your body can make antibodies that fit a bacterium it has never met before. So how does it design them in time? In 1957, the Melbourne scientist Frank Macfarlane Burnet proposed that it doesn't design anything. The right cells already exist before the infection, and the infection picks them out. That idea, clonal selection, explains how B cells target a pathogen.", "understandingCheck": "13a explains a serum clumping result in two tubes (specific binding and antibody production, the route's stop). 13c evaluates the claim that B cells take a week because they must design an antibody (selection, rarity and expansion). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ3-01: \"investigate and model the innate and adaptive immune systems in the human body (ACSBL119)\". This video models the B cell (humoral) part of the adaptive system; b06 modelled the innate part, and b08 models the T cell part. Verb \"investigate and model\": the coded shape model of receptors and antigens (a deliberately simplified model, tagged as one) and the response strip are the model; attempt 1 investigates a serum experiment."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One lymph node board. Left two-thirds: painted cells (B cell, plasma cell, the bacterium, macrophage, T cell) with a coded shape model laid on them: each B cell's receptors are drawn as small coded Y shapes whose two tips carry one simple notch shape (triangle, round, square or wave), and the bacterium's antigens as small coded patches of matching shapes on its surface. A grey tag \"model: receptors and antigens drawn far larger than real, shapes simplified\" appears whenever the model is first used in a scene. Changes happen in place: the painted B cell crossfades to its aligned bare partner so coded receptors replace the painted ones exactly where they were (scene 5); the bare B cell crossfades to its aligned dividing partner before splitting (scene 7). Right third: b06's `ResponseStrip`, its first three rungs shrunk to grey thumbnails, the fourth rung (\"days: adaptive\", amber) expanded into five step chips filled as taught: \"fit\" (scene 6), \"go-ahead\" (scene 6), \"clone\" (scene 7), \"plasma cells\" (scene 8), \"antibodies bind\" (scene 9). No people, hands or faces: the body appears only as a lymph node, cells and molecules; the serum test in attempt 1 is a worded card with no tubes drawn. Coded elements are abstract only: the shape model, the response strip, a clone tree (branching lines with cell copies at the ends), a host cell membrane edge (as b03), a short day axis, arrows, chips and glosses. Scale: B cell about 8 µm, plasma cell about 12 to 15 µm, bacterium about 2 µm long, macrophage about 20 µm; the painted cells keep these proportions when shown together; antibodies (about 0.01 µm) are visible only as the enlarged coded model. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.", "transitionPlan": "The wound bacterium plate opens the hook with coded antigen patches as a design-to-order chip writes and takes a grey scribble cross, then a coded grid of bare B cell plates fades in, each with its own receptor tip; the board clears to the lymph node layout with b06's ResponseStrip at the right, a dendritic cell thumbnail and coded specks flowing into the node plate; the bacterium fills the board as its patches pulse by kind and a zoom inset outlines one notch-shaped part; the B cell plate's receptors are ringed and a coded zoom opens to the antibody plate with its stem and tips ringed and a patch sliding into one tip; the B cell crossfades to its bare partner under coded ShapeReceptors, more cells take other tips and a coded gene shuffling diagram writes; the bacterium drifts along a row of B cells and only the matching ones lock on as a crossed chip lands and a T cell thumbnail gives the go-ahead; the dividing plate splits into a coded CloneTree over a day axis; clone cells crossfade one by one to plasma cell plates at true scale, with coded antibodies streaming out and memory cells kept; three panels build for block, clump and coat; triangle-tip antibodies coat the splinter bacterium and drift past a different coccus; the full strip enlarges and its five B cell chips brighten in order; one handwritten line writes over the row and clone tree; each attempt clears the board and its feedback underlines the card as an answer table or verdict block fills and a crossed chip lands; the strip, step chips and next chip close; scene crossfade with settle."},
+        'rows': M7B07_ROWS,
+    },
+    # --- M7 b06 and b07 entries (end) ---
 }
 
 

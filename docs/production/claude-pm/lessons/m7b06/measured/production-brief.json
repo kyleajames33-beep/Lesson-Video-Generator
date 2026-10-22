@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b06/measured/lesson.json",
+    "lessonSha256": "d37dd1c2cf48f06ece86daefb593cba2a38db210a4127347dfa69f353cc4c9d7"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: bacteria are single cells with a wall containing peptidoglycan; pathogens and hosts; viruses are not cells. From b03: pathogens enter through breaks in the skin and through mucous membranes; fimbriae help bacteria grip against mucus. From b05 (playlist order, not a route prerequisite): a plant defends cell by cell because it has no circulating immune cells. From Year 11: cells, membranes, organelles including lysosomes (sacs of digestive enzymes); blood vessels and capillaries carry blood through tissues; enzymes. Not assumed: innate and adaptive immunity, mast cells, histamine, inflammation and its causes, neutrophils, macrophages, phagocytes and phagocytosis, dendritic cells, lymph and lymph nodes, T cells, fever as a deliberate response, pus.",
+    "startsWith": "Follow barriers, inflammation and phagocytosis. The video opens: In 1882, the zoologist Élie Metchnikoff pushed a rose thorn into a see-through starfish larva.",
+    "stopsAfter": "explaining how barriers keep most microbes out (skin's dead, flaking outer layers; mucus and cilia; stomach acid; lysozyme); defining the innate immune system (the barriers plus the fast responses after a breach); explaining how a breach triggers inflammation (damaged cells and mast cells release chemicals; histamine widens small vessels and makes them leaky, so fluid and blood proteins seep out) and linking redness, warmth, swelling and pain to those causes and to their purpose (delivering cells and proteins); explaining how neutrophils leave the blood and follow a chemical trail; describing phagocytosis step by step (bind, wrap, seal inside, lysosomes digest); explaining pus, and fever as a response when infection spreads; explaining how dendritic cells carry pieces of the pathogen to a lymph node and alert T cells, starting the adaptive response while the innate response is still going; comparing innate and adaptive responses and saying how they work together; interpreting a dye leak experiment and explaining the effects of a neutrophil adhesion defect.",
+    "nextLesson": "how B cells recognise and target an antigen (route entry bio-m7-b07)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b06.md"
+  ],
+  "teaching": {
+    "task": "A splinter pushes bacteria through your skin. What does your body do in the first hours, before any defence built for that pathogen is ready, and how do those first defences hold the bacteria back?",
+    "causalExplanation": "Causes: why animals can respond differently from plants (cells travel in blood; scene 2); how each barrier stops entry, not just its name (the 2025 Q21 marker comment; scene 3); why a splinter needs a second line (barrier broken; scene 4); what causes each sign (wider vessels, leaky walls, chemicals and pressure; scenes 5 and 6); why the signs help (delivery of cells and proteins; scene 6); how neutrophils find bacteria (stick, squeeze out, follow a trail that is strongest near the bacteria; scene 7); how a phagocyte destroys a bacterium without digesting itself (sealed bubble, then lysosomes; scene 8); why pus forms (scene 9); how the adaptive response is started (dendritic cells carry pieces to a lymph node; scene 10); why innate and adaptive are one interacting response, not two lists (the 2024 Q32 marker comment; scene 11). Visible case: the same splinter tissue changing in place from scene 4 to 9. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 3 (two plates, two chips) and scene 6 (the cause list) are the densest, so only the current row or chip is bright.",
+    "conversationalApproach": "In 1882 Elie Metchnikoff pushed a rose thorn into a see-through starfish larva and by morning moving cells had crowded around it, with no antibodies involved, so the question is what the body does first when a splinter carries bacteria into the skin, before any defence built for that pathogen is ready. Animals, unlike the banksia, can send defending cells through the blood, but a pathogen first has to get in. Barriers come first: skin's dead, flaking outer layers, mucus and cilia in the airways, stomach acid and lysozyme. A splinter breaks that wall, and the innate immune system (defences you are born with, acting the same way against many pathogens) takes over. Damaged cells and mast cells raise the alarm, histamine widens and leaks the small vessels, and the four signs of inflammation are traced to their causes as a delivery route for cells and proteins rather than a failure. Signal chemicals strongest near the bacteria draw neutrophils to stick, squeeze out and crawl in, and neutrophils and macrophages act as phagocytes that bind, engulf and digest bacteria with lysosome enzymes; pus and fever are explained, and dendritic cells carry pieces of bacteria to a lymph node to start the slower, specific adaptive response. The two speeds work together, and the memory aid is block, alarm, eat, alert. Two exam questions follow with brief feedback.",
+    "openingDecision": "In 1882, the zoologist Élie Metchnikoff pushed a rose thorn into a see-through starfish larva. By the next morning, moving cells had crowded around the thorn. A starfish larva makes no antibodies, yet its cells found the intruder and closed in. Your body runs a similar response when a splinter carries bacteria into your skin. So what happens first, before any defence built for that pathogen is ready?",
+    "understandingCheck": "13a: explain a dye leak result from histamine, and how that change helps defence (analyse the chemical change and the physical change it causes). 13c: explain three observations in a child whose neutrophils can't stick to vessel walls (the route's stop: how innate cells reach and contain a pathogen). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ2-02: \"analyse responses to the presence of pathogens by assessing the physical and chemical changes that occur in the host animals cells and tissues (ACSBL119, ACSBL120, ACSBL121, ACSBL122)\". B7-IQ3-01: \"investigate and model the innate and adaptive immune systems in the human body (ACSBL119)\". Physical changes taught: vessels widening, walls becoming leaky, swelling, neutrophils leaving the blood, engulfing, pus. Chemical changes taught: alarm signals from damaged cells, histamine, signal chemicals that form a trail, digestive enzymes in lysosomes, temperature signals in fever. Verb \"analyse\" (identify components and the relationship between them): attempt 1 asks why one result follows from one chemical change, and scene 6 links each sign to its cause. \"Investigate and model\": the response strip and the aligned tissue plates are the model (route change 6); this video models the innate half and alerts the adaptive half, which b07 and b08 model."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One infection site board. Left two-thirds: painted tissue and cell plates on which each change is shown in place: a low-zoom cut section of skin with the splinter (an aligned pair, normal and inflamed) and a close-up of the tissue under the splinter tip (an aligned triplet: early, inflamed, contained), whose changes are revealed by masked regions of the next plate at the cue where each is narrated (the small vessel widens, fluid appears, the mast cell empties, a neutrophil squeezes out; the vessel is a small venule just past a capillary, and every on-screen tag calls it \"small vessel\", never \"capillary\"), as in b05's root cell pair. Phagocytosis is an aligned set of four macrophage plates (the existing \"before\" plate plus three new partners). Right third: the coded response strip, four rungs filled as taught, top to bottom: \"always there: barriers\" (scene 3), \"minutes: inflammation\" (scene 5), \"hours: phagocytes\" (scene 7), \"days: adaptive\" (scene 10, amber; the rung b07 and b08 expand). A bracket labelled \"innate\" spans the first three rungs from scene 4. The strip is the model the syllabus asks for, and its four rungs carry the memory aid (scene 12) and the decision rule (scene 14). No people, hands or faces: the body appears only as tissue sections, cells and one organ (a lymph node); the skin block is an isolated cut section with no limb or finger. The starfish larva in the hook is a whole animal, not a person. Coded elements are abstract only (no coded lymph node, cell or thermometer icons): the response strip, a vessel channel (two ink lines), chemical gradients as soft concentric rings, small coded specks for released chemicals and microbes in motion, arrows, a temperature set-point gauge (a short vertical scale with a moving mark, no thermometer icon), chips, glosses and step counters. Scale: the close-up spans about 0.15 mm; within it, bacteria (about 2 µm) are small rods, red blood cells about 7 µm, a neutrophil about 12 µm, a mast cell about 12 µm and a macrophage about 20 µm, and grey size tags say so where it matters (scene 8). Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The starfish larva plate opens the hook with its thorn tip ringed, then crossfades to its aligned partner with moving cells clustered at the thorn; the banksia root cells thumbnail sits beside a coded VesselChannel along which neutrophil plates drift and bend towards the splinter; the ResponseStrip draws its rungs as the skin shedding plate sheds coded specks and the airway cilia plate sweeps its mucus with coded arrows; the board clears to the splinter plate, a coded line traces the broken barrier and a zoom box opens the close-up under the splinter tip with its bacteria ringed; the inflammation rung lights as alarm specks spread and the inflamed close-up reveals region by region the degranulated mast cell, wider vessel and leaked fluid; the skin plate crossfades to its reddened partner as a cause list builds sign by sign; a coded Gradient draws around the bacteria and revealed regions show a neutrophil sticking, squeezing out and crawling; the phagocyte pair appears at true relative size before the four-plate phagocytosis set runs step by step; the contained close-up rings the pus and a SetPointGauge rises; the adaptive rung lights amber as the dendritic cell plate travels a dotted path to the lymph node plate; the full strip enlarges with a time axis; one handwritten word writes beside each rung; each attempt clears the board and its feedback underlines the card as an answer block or table fills and a crossed chip lands; the strip, step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. `m7-starfish-larva-thorn-v1.png` (new) appears at the centre left at medium size (grey tags \"starfish larva, about 1 mm long\" and \"Metchnikoff, 1882\"); the thorn tip inside the larva is ringed on \"a rose thorn\".",
+      "teachingReason": "Hook (a thorn in a starfish larva): In 1882, the zoologist Élie Metchnikoff pushed a rose thorn into a see-through starfish larva.",
+      "narrationCue": "a rose thorn / By the next morning / makes no antibodies / a splinter carries bacteria into your skin / what happens first",
+      "motionPurpose": "On the spoken cues: On \"By the next morning\" it crossfades to its aligned partner `m7-starfish-larva-thorn-cells-v1.png` (new), in which a cluster of wandering cells surrounds the thorn tip; the cluster is ringed (tag \"moving cells gather at the thorn\"). On \"makes no antibodies\" a small grey chip writes: \"no",
+      "motionRole": "explain",
+      "onScreenChange": "no people. `m7-starfish-larva-thorn-v1.png` (new) appears at the centre left at medium size (grey tags \"starfish larva, about 1 mm long\" and \"Metchnikoff, 1882\"); the thorn tip inside the larva is ringed on \"a rose thorn\". On \"By the next morning\" it crossfades to its aligned partner `m7-starfish-larva-thorn-cells-v1.png` (new), in which a cluster of wandering cells surrounds the thorn tip; the cluster is ringed (tag \"moving cells gather at the thorn\"). On \"makes no antibodies\" a small grey chip writes: \"no antibodies\", with a smaller grey gloss under it: \"antibodies: proteins aimed at one pathogen (next video)\". On \"a splinter carries bacteria into your skin\" the larva shrinks to the upper left and `m7-skin-splinter-v1.png` (new) appears at the centre right (grey tag \"skin, cut section\"), its splinter ringed. On \"what happens first\" the heading writes on: \"What happens first when bacteria get in?\" Hold about one second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about one second"
+    },
+    {
+      "sceneId": "send-cells",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-root-cells-defended-v1.png` (from b05) appears small at the left (grey tag \"b05: each plant cell defends itself where it is\").",
+      "teachingReason": "Animals can send cells: In the last video, a banksia had to defend each cell where it stood.",
+      "narrationCue": "carry defending cells in the blood / send them to where a pathogen gets in / it has to get in",
+      "motionPurpose": "On the spoken cues: On \"carry defending cells in the blood\" a coded `VesselChannel` draws across the lower board (two ink lines with a pale red fill), and three small copies of `m7-neutrophil-v1.png` (scaled together, not stretched) drift along it (tag \"animals: cells travel in the blood\"). On \"send them to where a",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-root-cells-defended-v1.png` (from b05) appears small at the left (grey tag \"b05: each plant cell defends itself where it is\"). On \"carry defending cells in the blood\" a coded `VesselChannel` draws across the lower board (two ink lines with a pale red fill), and three small copies of `m7-neutrophil-v1.png` (scaled together, not stretched) drift along it (tag \"animals: cells travel in the blood\"). On \"send them to where a pathogen gets in\" the channel bends up towards the skin plate's splinter and the cells follow it (tag replaced: \"sent to the site\"). On \"it has to get in\" the channel and the b05 thumbnail dim to grey. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "barriers",
+      "visualDecision": "adjust",
+      "visualReference": "the `ResponseStrip` draws at the right third with four empty grey rungs; the top rung writes and lights teal: \"always there: barriers\".",
+      "teachingReason": "The walls: barriers: Most microbes never get past the outside.",
+      "narrationCue": "Your skin is the main wall / keep flaking away / The airways / traps microbes / beat and sweep it up / Stomach acid",
+      "motionPurpose": "On the spoken cues: On \"Your skin is the main wall\" `b5a-epithelium-shedding-v1.png` appears at the upper left (grey label \"skin's outer layers\"). On \"keep flaking away\" the lifting flakes are ringed and a few small coded specks (microbes) ride off with them (tag \"dead cells flake off, microbes go too\"). On \"The",
+      "motionRole": "explain",
+      "onScreenChange": "the `ResponseStrip` draws at the right third with four empty grey rungs; the top rung writes and lights teal: \"always there: barriers\". On \"Your skin is the main wall\" `b5a-epithelium-shedding-v1.png` appears at the upper left (grey label \"skin's outer layers\"). On \"keep flaking away\" the lifting flakes are ringed and a few small coded specks (microbes) ride off with them (tag \"dead cells flake off, microbes go too\"). On \"The airways\" `m7-airway-cilia-mucus-v1.png` (new) appears at the lower left; on \"traps microbes\" the trapped particles in the mucus are ringed (tag \"mucus traps\"); on \"beat and sweep it up\" short coded arrows run along the top of the mucus in one direction (gloss \"cilia: tiny beating hair-like parts of cells\"; tag \"swept up to the throat\"). On \"Stomach acid\" the skin and airway plate tags and the cilia gloss all dim to grey and a chip writes: \"stomach acid: kills many swallowed microbes\". On \"lysozyme\" the acid chip dims and a second chip writes: \"lysozyme: breaks down many bacterial walls\" (gloss \"an enzyme in tears and saliva\"). The two chips sit under a small grey heading \"chemical barriers\"; the two plates under a small grey heading \"physical barriers\" (both headings stay grey throughout). At most three bright text items: only the current tag or chip, its gloss and the lit rung. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "splinter",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the infection site layout; the barrier plates shrink into the top rung as small grey thumbnails.",
+      "teachingReason": "A splinter gets through: A splinter breaks straight through that wall and pushes bacteria into the living tissue underneath.",
+      "narrationCue": "innate immune system",
+      "motionPurpose": "On the spoken cues: `m7-skin-splinter-v1.png` fills the left two-thirds. On \"breaks straight through\" the splinter's path through the outer skin is traced with a thin coded line (tag \"barrier broken\"). On \"pushes bacteria into the living tissue\" a coded zoom box draws around the splinter tip and the close-up",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the infection site layout; the barrier plates shrink into the top rung as small grey thumbnails. `m7-skin-splinter-v1.png` fills the left two-thirds. On \"breaks straight through\" the splinter's path through the outer skin is traced with a thin coded line (tag \"barrier broken\"). On \"pushes bacteria into the living tissue\" a coded zoom box draws around the splinter tip and the close-up `m7-dermis-splinter-early-v1.png` (new) opens from it to fill the left two-thirds (grey tag \"close-up under the splinter tip, about 0.15 mm across\"); the small rods beside the splinter tip are ringed (tag \"bacteria in living tissue\"). On \"innate immune system\" the strip's next two rungs write in grey (\"minutes: inflammation\", \"hours: phagocytes\") and a teal bracket labelled \"innate\" spans the top three rungs (gloss \"innate: born with it, same response to many pathogens (barriers included)\"); on \"With the barriers\" the top rung's thumbnails pulse once inside the bracket. The fourth rung stays grey and empty. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "alarm",
+      "visualDecision": "adjust",
+      "visualReference": "the \"minutes: inflammation\" rung lights teal.",
+      "teachingReason": "Raising the alarm: Damaged cells raise the alarm with chemical signals, and so do immune cells already waiting in the tissue.",
+      "narrationCue": "Mast cells / histamine",
+      "motionPurpose": "On the spoken cues: On \"Damaged cells raise the alarm\" small coded specks spread from the torn cells along the splinter track (tag \"alarm signals\"). On \"Mast cells\" the mast cell in the close-up is ringed and `m7-mast-cell-v1.png` appears as a small inset beside it (gloss \"mast cell: sits beside small vessels\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "the \"minutes: inflammation\" rung lights teal. On \"Damaged cells raise the alarm\" small coded specks spread from the torn cells along the splinter track (tag \"alarm signals\"). On \"Mast cells\" the mast cell in the close-up is ringed and `m7-mast-cell-v1.png` appears as a small inset beside it (gloss \"mast cell: sits beside small vessels\"). On \"histamine\" the mast cell region of the aligned partner `m7-dermis-splinter-inflamed-v1.png` is revealed in place (the cell now with fewer granules and released granules beside it), and coded amber specks drift from it to the small vessel (tag \"histamine\"). On \"vessels widen\" the vessel region of the inflamed plate is revealed: the small vessel wider, with more red blood cells packed in (tag \"wider: more blood\"). On \"walls leaky\" the fluid region is revealed: paler, swollen spaces between the fibres around the small vessel, with a few small coded droplets and a few smaller coded protein dots crossing the wall through the gaps (tag \"leaky: fluid and proteins seep out\"). Each earlier tag dims to grey when the next writes. Each region is a masked crossfade of the matching part of the partner plate, not a drawing on top. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "four-signs",
+      "visualDecision": "adjust",
+      "visualReference": "the close-up shrinks to the right of the left area and the low-zoom pair returns at the left: on \"you can see it\" `m7-skin-splinter-v1.png` crossfades to its aligned partner `m7-skin-splinter-inflamed-v1.png` (new), the skin around the splinter reddened and raised (title chip \"inflammation\").",
+      "teachingReason": "Four signs, one purpose: This response is inflammation, and you can see it.",
+      "narrationCue": "inflammation",
+      "motionPurpose": "On the spoken cues: A small cause list builds under the plate, one row per cue, each linking a sign to its cause with a short coded arrow; only the current row is bright: on \"red and warm\" the reddened area is ringed and the row writes \"red, warm ← more blood (wider vessels)\"; on \"swell\" the raised skin is ringed and",
+      "motionRole": "explain",
+      "onScreenChange": "the close-up shrinks to the right of the left area and the low-zoom pair returns at the left: on \"you can see it\" `m7-skin-splinter-v1.png` crossfades to its aligned partner `m7-skin-splinter-inflamed-v1.png` (new), the skin around the splinter reddened and raised (title chip \"inflammation\"). A small cause list builds under the plate, one row per cue, each linking a sign to its cause with a short coded arrow; only the current row is bright: on \"red and warm\" the reddened area is ringed and the row writes \"red, warm ← more blood (wider vessels)\"; on \"swell\" the raised skin is ringed and the row writes \"swollen ← fluid leaked (leaky vessels)\"; on \"set off pain nerves\" the row writes \"pain ← chemicals and pressure\" (grey screen tag \"e.g. prostaglandins, bradykinin\"). On \"aren't the body failing\" a grey chip \"inflammation = just symptoms\" fades in and takes a grey scribble cross. On \"deliver defending cells and helpful proteins\" the close-up brightens and short teal arrows run from the wide small vessel out into the tissue towards the bacteria (tag \"purpose: brings cells and proteins\"; grey screen tag \"proteins include complement\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Cam lens zoom",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "neutrophils",
+      "visualDecision": "adjust",
+      "visualReference": "the close-up returns to fill the left two-thirds; the \"hours: phagocytes\" rung lights teal.",
+      "teachingReason": "Calling the phagocytes: The tissue also releases signal chemicals that spread out from the infection, so they're strongest near the bacteria.",
+      "narrationCue": "Neutrophils",
+      "motionPurpose": "On the spoken cues: On \"signal chemicals that spread out\" a coded `Gradient` draws: soft concentric rings centred on the bacteria, fading outwards to the small vessel (tag \"strongest near the bacteria\"; grey screen tag \"chemokines\"). On \"Neutrophils\" `m7-neutrophil-v1.png` appears as a small inset (gloss \"neutrophil:",
+      "motionRole": "explain",
+      "onScreenChange": "the close-up returns to fill the left two-thirds; the \"hours: phagocytes\" rung lights teal. On \"signal chemicals that spread out\" a coded `Gradient` draws: soft concentric rings centred on the bacteria, fading outwards to the small vessel (tag \"strongest near the bacteria\"; grey screen tag \"chemokines\"). On \"Neutrophils\" `m7-neutrophil-v1.png` appears as a small inset (gloss \"neutrophil: white blood cell in the blood\"). On \"stick to the vessel wall near the infection\" the neutrophil region of the inflamed plate is revealed: a neutrophil flattened against the inside of the small vessel's wall (tag \"stick (only near the infection)\"); on \"squeeze out between the cells\" a second revealed region shows a neutrophil half through the wall between two wall cells (tag \"squeeze out\"); on \"crawl towards the stronger signal\" a coded dotted path runs from that cell up the gradient to the bacteria (tag \"follow the signal\"). On \"within hours\" a small coded clock mark sits on the rung. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "phagocytosis",
+      "visualDecision": "adjust",
+      "visualReference": "the close-up shrinks to a thumbnail at the upper left.",
+      "teachingReason": "Eating the bacteria: Neutrophils, and larger cells called macrophages that live in the tissue, are phagocytes: cells that engulf and digest.",
+      "narrationCue": "macrophages / phagocytes / lysosomes",
+      "motionPurpose": "On the spoken cues: On \"Neutrophils, and larger cells called macrophages\" `m7-neutrophil-v1.png` and `m7-macrophage-v1.png` appear side by side at true relative size (grey tags \"neutrophil, about 12 µm\", \"macrophage, about 20 µm\"); on \"phagocytes\" both are bracketed (gloss \"phagocyte: a cell that engulfs and",
+      "motionRole": "explain",
+      "onScreenChange": "the close-up shrinks to a thumbnail at the upper left. On \"Neutrophils, and larger cells called macrophages\" `m7-neutrophil-v1.png` and `m7-macrophage-v1.png` appear side by side at true relative size (grey tags \"neutrophil, about 12 µm\", \"macrophage, about 20 µm\"); on \"phagocytes\" both are bracketed (gloss \"phagocyte: a cell that engulfs and digests\"). Then the pair fades and the four-plate phagocytosis set fills the left two-thirds, with a coded step counter (1 to 4) under it, one step lit per cue. On \"Receptors ... bind\" `m7-macrophage-engulf-before-v1.png`: the contact point between the reaching arm and the rod is ringed and three short teal tick marks join them (step 1, tag \"bind: fits molecules common to bacteria\"; grey screen tag \"PAMPs\"; a small grey tag on the set, kept for all four steps: \"bacterium drawn larger than real\"). The counter's unlit steps stay grey. On \"wraps its membrane around\" it crossfades to `m7-macrophage-engulf-wrap-v1.png` (new) (step 2, tag \"wrap\"). On \"pulls it inside, sealed in a bubble\" it crossfades to `m7-macrophage-engulf-after-v2.png` (new) (step 3, tag \"sealed inside\"; gloss \"phagosome\"). On \"lysosomes\" it crossfades to `m7-macrophage-engulf-digest-v1.png` (new); the lysosomes merging with the bubble are ringed (step 4, gloss \"lysosome: sac of digestive enzymes\"; tag \"enzymes digest it\"). **Engulf transitions (Revision 3):** the bacterium must never appear twice. Each change between engulf states is either a short crossfade (about 6 frames, 0.2 s) or a masked one: a soft coded mask over the rod fades the old rod out completely before the new rod fades in, while the cell body crossfades underneath. The change into `m7-macrophage-engulf-after-v2.png` (rod outside to rod inside) always uses the mask, because the art QA overlay shows the rod at two positions at 50% opacity. Check at playback speed. The plates' clear margins (8.9% to 9.8%) are accepted by root. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "holding",
+      "visualDecision": "adjust",
+      "visualReference": "the close-up returns and crossfades to its third aligned partner `m7-dermis-splinter-contained-v1.png` (new).",
+      "teachingReason": "Holding the bacteria back: Neutrophils die after a short time.",
+      "narrationCue": "Neutrophils die / If an infection spreads / raise the body's temperature / speed up some immune reactions / clears a small infection on its own",
+      "motionPurpose": "On the spoken cues: On \"Neutrophils die\" the collapsed, rounded neutrophils near the splinter tip are ringed (tag \"pus: dead neutrophils, bacteria, fluid\"). On \"If an infection spreads\" a coded line leaves the small vessel and runs up off the board edge (grey tag \"signals in the blood\"); on \"raise the body's",
+      "motionRole": "explain",
+      "onScreenChange": "the close-up returns and crossfades to its third aligned partner `m7-dermis-splinter-contained-v1.png` (new). On \"Neutrophils die\" the collapsed, rounded neutrophils near the splinter tip are ringed (tag \"pus: dead neutrophils, bacteria, fluid\"). On \"If an infection spreads\" a coded line leaves the small vessel and runs up off the board edge (grey tag \"signals in the blood\"); on \"raise the body's temperature\" a small coded `SetPointGauge` appears at the upper right: its mark slides up a short scale (tag \"fever: the brain raises the set point\"; no numbers, no thermometer icon). On \"speed up some immune reactions\" a grey sub-tag writes \"can speed some reactions\". On \"clears a small infection on its own\" the gauge dims and the few remaining rods in the close-up are ringed (tag \"often cleared here\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "alert-adaptive",
+      "visualDecision": "adjust",
+      "visualReference": "on \"second defence\" the fourth rung writes and lights amber: \"days: adaptive\"; the innate bracket stays lit (both run at once).",
+      "teachingReason": "Alerting the adaptive cells: Meanwhile, the body starts building a second defence, aimed at this exact pathogen.",
+      "narrationCue": "Dendritic cells / lymph node / adaptive",
+      "motionPurpose": "On the spoken cues: On \"Dendritic cells\" `m7-dendritic-cell-v1.png` (new) appears in the close-up area, a bacterium being taken in at the end of one arm ringed (gloss \"dendritic cell: phagocyte with branching arms\"). On \"travel along lymph vessels\" the close-up shrinks to the left edge and a coded dotted path runs",
+      "motionRole": "explain",
+      "onScreenChange": "on \"second defence\" the fourth rung writes and lights amber: \"days: adaptive\"; the innate bracket stays lit (both run at once). On \"Dendritic cells\" `m7-dendritic-cell-v1.png` (new) appears in the close-up area, a bacterium being taken in at the end of one arm ringed (gloss \"dendritic cell: phagocyte with branching arms\"). On \"travel along lymph vessels\" the close-up shrinks to the left edge and a coded dotted path runs from it across the board to `m7-lymph-node-v1.png` (new), which appears at the right of the left area (gloss \"lymph: fluid drained from tissues\"); a small copy of the dendritic cell travels along the path. On \"a small organ where white blood cells gather\" the node is ringed (gloss \"lymph node\"), and the \"lymph\" gloss and the dendritic cell gloss dim to grey; only the current gloss and the amber rung are bright. On \"show pieces of the bacteria to T cells\" the dendritic cell thumbnail sits inside the node beside a small `m7-t-cell-v1.png`, with three small coded fragment marks on the dendritic cell's surface and a short teal arrow to the T cell (tag \"shows pieces to T cells\"). On \"adaptive\" a gloss writes beside the amber rung: \"adaptive: aimed at one pathogen; days to build\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "two-speeds",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the full `ResponseStrip`, enlarged to the centre, with the innate bracket teal and the adaptive rung amber.",
+      "teachingReason": "Two speeds, working together: So the innate response is fast and broad.",
+      "narrationCue": "fast and broad / doesn't get better with practice / slow the first time, but it's specific / work together / hold the bacteria back",
+      "motionPurpose": "On the spoken cues: A short coded time axis runs beside it (\"minutes\", \"hours\", \"days\", small grey ticks; no values between ticks). On \"fast and broad\" the innate bracket brightens with a tag \"fast, broad\"; on \"doesn't get better with practice\" a grey sub-tag \"same response every time\". On \"slow the first time, but",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the full `ResponseStrip`, enlarged to the centre, with the innate bracket teal and the adaptive rung amber. A short coded time axis runs beside it (\"minutes\", \"hours\", \"days\", small grey ticks; no values between ticks). On \"fast and broad\" the innate bracket brightens with a tag \"fast, broad\"; on \"doesn't get better with practice\" a grey sub-tag \"same response every time\". On \"slow the first time, but it's specific\" the amber rung brightens with a tag \"slow at first, specific\". On \"work together\" a grey chip \"innate is weak; adaptive does the real work\" fades in and takes a grey scribble cross; on \"hold the bacteria back\" a teal arrow from the \"hours\" rung runs down to the \"days\" rung (tag \"holds back, then shows the target\"), with the dendritic cell thumbnail on the arrow. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the strip stays at the centre.",
+      "teachingReason": "Memory: So remember the order: block, alarm, eat, alert.",
+      "narrationCue": "block, alarm, eat, alert.",
+      "motionPurpose": "On the spoken cues: One handwritten word writes large beside each rung, one per beat: \"block\", \"alarm\", \"eat\", \"alert\" (the first three teal, the last amber). On the second sentence each rung's small thumbnail pulses in turn (the skin plate, the inflamed small vessel region, the digest plate, the dendritic cell). Hold",
+      "motionRole": "explain",
+      "onScreenChange": "the strip stays at the centre. One handwritten word writes large beside each rung, one per beat: \"block\", \"alarm\", \"eat\", \"alert\" (the first three teal, the last amber). On the second sentence each rung's small thumbnail pulses in turn (the skin plate, the inflamed small vessel region, the digest plate, the dendritic cell). Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (a blue dye)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. In an experiment, a",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a blue dye))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A blue dye that binds to proteins in blood plasma was injected into the bloodstream of a mouse. Histamine solution was then injected into one small area of its skin, and saline (salt solution) into another area as a control. After 15 minutes, the skin at the histamine site was stained blue. The skin at the saline site was not.\" Demand: \"Explain the result. Explain how this change helps to defend tissue against bacteria. (3 marks)\". One lined answer box. No plates and nothing answer-bearing (no strip, no vessel). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Histamine made the small vessels there leaky / carrying the blood proteins and the dye / turned blue / The control / proteins and white blood cells reach the bacteria / the classic mistake",
+      "motionPurpose": "On the spoken cues: A short answer block writes beneath it. On \"Histamine made the small vessels there leaky\" \"Histamine solution\" underlines teal and a row writes \"histamine → leaky vessel walls\"; on \"carrying the blood proteins and the dye\" \"binds to proteins in blood plasma\" underlines teal and the row extends",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A short answer block writes beneath it. On \"Histamine made the small vessels there leaky\" \"Histamine solution\" underlines teal and a row writes \"histamine → leaky vessel walls\"; on \"carrying the blood proteins and the dye\" \"binds to proteins in blood plasma\" underlines teal and the row extends \"proteins and dye leave the blood\"; on \"turned blue\" \"stained blue\" underlines. On \"The control\" \"saline ... as a control\" underlines (row \"control: not the injection itself\"). On \"proteins and white blood cells reach the bacteria\" a small row \"defence: cells and proteins reach the site\". On \"the classic mistake\" the chip \"vessels widened, so dye showed\" writes on and takes a grey scribble cross, with the small grey reason \"widening: more blood, not leakage\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (neutrophils that can't leave)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A child has an inherited condition in",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (neutrophils that can't leave))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A child has an inherited condition in which neutrophils cannot attach to the inner wall of blood vessels. Blood tests show a higher than normal number of neutrophils in the blood. The child has repeated bacterial skin infections, and infected wounds form little or no pus.\" Demand: \"Explain these observations. (4 marks)\". One lined answer box. No plates (a cell plate would hint at the answer). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "must stick to the vessel wall / stay in the blood / fewer bacteria are engulfed / Pus is mostly dead neutrophils / the classic mistake / they must reach the tissue",
+      "motionPurpose": "On the spoken cues: A three-row answer table writes beneath it, one row per observation. On \"must stick to the vessel wall\" \"cannot attach to the inner wall\" underlines teal; on \"stay in the blood\" \"higher than normal number of neutrophils in the blood\" underlines and row 1 fills \"can't leave: they stay in the blood\".",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A three-row answer table writes beneath it, one row per observation. On \"must stick to the vessel wall\" \"cannot attach to the inner wall\" underlines teal; on \"stay in the blood\" \"higher than normal number of neutrophils in the blood\" underlines and row 1 fills \"can't leave: they stay in the blood\". On \"fewer bacteria are engulfed\" \"repeated bacterial skin infections\" underlines and row 2 fills \"none at the site: bacteria not engulfed\". On \"Pus is mostly dead neutrophils\" \"little or no pus\" underlines and row 3 fills \"no neutrophils arriving: no pus\". On \"the classic mistake\" the chip \"more neutrophils in blood = stronger defence\" writes on and takes a grey scribble cross, with the small grey reason \"they must reach the tissue\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the `ResponseStrip` returns small at the left; four step chips write on beside its rungs, one per cue: \"barrier crossed\", \"vessels: wider, leaky\", \"phagocytes: reach, bind, engulf, digest\", \"dendritic cells alert T cells\".",
+      "teachingReason": "Decision rule and handoff: So for any infection question, follow the order: which barrier was crossed, how inflammation changes the vessels, how phagocytes reach and digest the pathogen, and how adaptive cells are alerted.",
+      "narrationCue": "So for any infection question, follow the order:",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how B cells target an antigen\" (small grey tag only). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the `ResponseStrip` returns small at the left; four step chips write on beside its rungs, one per cue: \"barrier crossed\", \"vessels: wider, leaky\", \"phagocytes: reach, bind, engulf, digest\", \"dendritic cells alert T cells\". A \"Next\" chip slides in at the lower right: \"Next: how B cells target an antigen\" (small grey tag only). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b06-learning-review.md",
+      "sha256": "a09610f2d55c0c7e3030080aa784223e358ca99f903eff136ed931550a038765"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b06-claude-science-check.md",
+      "sha256": "96f6f6d2917f4c2a8600ac6e3287edadadcd5c5e92bbeddfe750fc4704f69bcf"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

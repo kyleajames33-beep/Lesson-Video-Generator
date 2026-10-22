@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7p02c/lesson.json",
+    "lessonSha256": "9516af3ab00884e004f33199425a6808416a726107277ed6eaa81b0d06b437a2"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c04a (addition across a C=C: two reactants, one product; the reagent splits, one piece on each carbon; bromine water loses its colour when an alkene adds bromine; halogen prefixes with locants, for example 1,2-dibromoethane), chem-m7-c04b (alkanes react with halogens only with UV light, by substitution, with HX as a second product; UV light is energy, not a catalyst; alkynes add twice; alkenes and alkynes both decolourise bromine water, and for an open chain with one multiple bond the formula decides which), chem-m7-c03 (non-polar hydrocarbons do not mix with water and float on it; \"like dissolves like\"; general formulas, \"no ring\" condition), chem-m7-c02 (\"cyclo\": carbons joined in a ring; ring and alkene isomers such as cyclobutane and but-1-ene), chem-m7-p01 (risk assessment for flammable hydrocarbons; fume cupboard; organic waste). Module 6: litmus (blue turns red in acid). chem-m5-p01 and chem-m6-p02 (validity, reliability, accuracy, variables, risk assessments). Not assumed: the layer behaviour of bromine, controls in a qualitative test, accuracy for a yes-or-no test, cyclohexene by name.",
+    "startsWith": "Plan safe matched hydrocarbon samples and observations. The video opens: Here are two clear liquids, cyclohexane and cyclohexene. Both have a ring of six carbons, and they boil about two degrees apart. Shake each with orange bromine water.",
+    "stopsAfter": "planning a matched test with a water control; describing and explaining the alkene result with an addition equation and model; recognising the moved colour as a negative result; describing the substitution demonstration and its evidence with an equation; stating what a colourless result shows and its limits; judging validity, reliability and accuracy; writing the risk assessment and disposal for cyclohexane, cyclohexene and bromine water. No other addition reagents at the bench, no quantitative bromine test, no Markovnikov.",
+    "nextLesson": "mixed practice on naming, isomers and hydrocarbon reactions (chem-m7-g01, \"Hydrocarbon naming and reaction practice\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-p02.md"
+  ],
+  "teaching": {
+    "task": "Shake orange bromine water with two clear liquids: in one tube the colour vanishes, in the other it only seems to. How do you run the bromine water test fairly and safely, and what does the colour change really tell you about a hydrocarbon?",
+    "causalExplanation": "(1) the same-looking liquids give different results, one of them misleading (1); (2) bromine adds across a C=C and is used up, so its colour goes; an alkane has no bond to open, so in the dark nothing adds; the pair differs only by one C=C (2); (3) matched volumes and the same shaking make the tubes comparable; the water control is diluted by the same amount but has nothing to react with; the white tile shows faint colour; bright light could start a slow alkane reaction and blur the comparison (3); (4) cyclohexene: the double bond opens and bromine adds, so it is used up; colourless in both layers; 1,2-dibromocyclohexane is one possible product, and other colourless addition products can form in water; with bromine in an organic solvent the dibromo compound is the one product: addition (4); (5) cyclohexane: does not mix with water, so it forms a top layer; non-polar bromine dissolves better in it than in water, so the colour moves up; the control, diluted just as much, stays clearly orange, so dilution cannot explain the pale water layer; the bromine is still there, in the top layer: no reaction (5); (6) with UV light the alkane does react, slowly, by substitution; the orange top layer from (5) is the sample, so the bromine that moved is shown to be unreacted; hydrogen bromide is an acidic gas, so damp blue litmus turns red; a strip over a tube kept in the dark changes far less, so the red is not just bromine vapour, and it is the evidence for substitution (6); (7) colourless shows a double or triple bond; alkynes react too, usually more slowly (c04b callback); not which; no change points to no double or triple bond; the formula can mislead (a ring fits CnH2n); other kinds of compounds can decolourise it too, so a quick test, not proof (7); (8) one variable changed, colour observed, the rest controlled; the matched pair and the control give validity; repeats give reliability; known samples check accuracy (8); (9) the hazards and their controls, and disposal of brominated residues (9); memory aid (10); attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).",
+    "conversationalApproach": "orange bromine water shaken with cyclohexene loses its colour, while with cyclohexane the water also goes pale but the orange has only moved into a top layer, so the practical asks how to run the bromine water test fairly and what the colour change really tells you. Bromine adds across a C=C bond and is used up, while an alkane has nothing to add to in the dark, so the ring pair differs only by one double bond. The plan matches volumes, adds a plain water control for dilution, shakes each stoppered tube the same way against a white tile in normal room light, away from sunlight. Cyclohexene decolourises both layers within seconds by addition; cyclohexane is the trap, because non-polar bromine dissolves into the floating hydrocarbon layer, and the still-orange control rules out dilution. A teacher demonstration shows the alkane does react under UV light, with damp blue litmus turning red from hydrogen bromide as evidence of substitution. A colourless result shows a double or triple bond but not which, cyclohexane shares hexene's formula, and other compounds can decolourise it too, so it is a quick test, not proof. The variables, validity, reliability and accuracy and the risk assessment follow, and the memory aid is gone, not moved. Two exam questions follow with brief feedback.",
+    "openingDecision": "Here are two clear liquids, cyclohexane and cyclohexene. Both have a ring of six carbons, and they boil about two degrees apart. Shake each with orange bromine water. In one tube, the colour vanishes. In the other, the water goes pale too, but look closer: the orange has moved into a layer on top. So how do you run this test fairly, and what does the result really tell you?",
+    "understandingCheck": "(A1) \"A liquid hydrocarbon, X, has the molecular formula C₅H₁₀. A student shakes an excess of X with a small volume of bromine water in a stoppered test tube, in normal room light. Two layers form: the top layer is orange and the bottom layer is pale yellow. Identify X as either pent-1-ene or cyclopentane. Justify your answer.\" Skeletal formulas of both shown with the names. New compounds (the scenes use C6 rings); tests the layer trap and the ring point together. Answer: cyclopentane (the colour moved into X's layer, so no C=C). Crossed mistake: \"the bottom layer lost colour, so X is pent-1-ene\". (A2) \"In a teacher demonstration, a solution of bromine in heptane stays orange in a dark cupboard. In bright light its colour slowly fades, and the gas at the mouth of the test tube turns damp blue litmus paper red. Explain these observations. Write a balanced equation, using structural formulas, for the formation of one organic product.\" New alkane (the scene uses cyclohexane); tests why the dark and the light differ, the HBr evidence and the substitution equation. Answer: 2-bromoheptane + HBr (any monobromoheptane accepted; 2-bromoheptane shown because secondary hydrogens are substituted preferentially). Crossed mistake: \"C₇H₁₆Br₂\" (an addition product; there is no bond to open). Neither attempt repeats chem-m7-g01's Q4 (evaluating \"it decolourised, so it is an alkene\"), which follows next.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:; hydrogen (H2); halogens (X2); hydrogen halides (HX); water (H2O) (ACSCH136)\" \"investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" This practical covers the halogen (X₂) investigation for the first dotpoint (the other reagents were chem-m7-c04a and c04b, where their conditions put them outside a student bench: pressurised hydrogen with a nickel catalyst, steam at about 300 °C), and the investigation half of the second. this video prepares students to plan, carry out and interpret the bromine water test; it does not claim that watching it is conducting it. It teaches: why cyclohexane and cyclohexene are a fair pair (same ring, same carbon count, one C=C the only difference); matched volumes, a water control for dilution, the same shaking, a white tile, normal room light and reading at once; the alkene result (colour gone from both layers within seconds) and its equation with structural formulas, built as a model; the alkane result and its trap (bromine dissolves better in the hydrocarbon, so the colour moves into the top layer: moved, not gone), read against the control; the alkane's slow substitution with bromine under UV light as a teacher demonstration, using the orange cyclohexane layer from the test (no liquid bromine), with damp blue litmus turning red, compared with a strip over a tube kept in the dark, as the evidence for hydrogen bromide, and its equation; what a colourless result can and cannot show (a C=C or C≡C; alkynes too, usually more slowly; not which; a ring with the alkene formula does not react; other kinds of compounds can decolourise bromine water too, so it is a quick test, not proof); the variables, validity, reliability and accuracy for a yes-or-no test; the risk assessment and disposal. Not re-taught: why a C=C adds and an alkane does not, addition against substitution, UV light as an energy source rather than a catalyst, alkyne two-step addition, general formulas (chem-m7-c03, c04a, c04b; recalled in one clause each, \"as in the last video\"); \"like dissolves like\" (chem-m7-c03, one clause). Not here: hydrogenation, hydrohalogenation and hydration as bench work (chem-m7-c04a; conditions unsuitable for a student bench); ethyne generation (calcium carbide; not a student practical; alkynes stay a spoken limit); Markovnikov's rule; naming the bromo-alcohol product of bromine water (scene 4 says only \"other colourless addition products\"; author note c); the quantitative bromine test (measured amounts; site correction recorded by c04b); IR or NMR; Module 8 analysis (Module 8 P05 refers back here)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c01 to c04b: carbon skeleton ink; hydrogens soft grey; the C=C teal; bromine deep orange-brown (the Br₂ dumbbells in the layer lens too); condition chips navy on the arrow, \"UV light\" violet; the swapped-out H bright grey and the HBr box thin violet (c04b); plus, for this practical, cyclohexene labels and tags teal and cyclohexane labels and tags grey-blue, the control tube's label plain grey; hazards terracotta, controls green. Board layout (three zones, constant, as chem-m6-p02): top-left the short task line; the centre holds the tubes (on the white tile) or the equation strip; the right third holds the current card (method step, variables, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Reuse: `m7-bromine-water-orange-v1.png` (2000 × 2000: an open clear test tube about half full of bright orange liquid; no label, no hands), the \"before\" tube in scenes 1 and 3 (twice, side by side); `m7-bromine-water-pair-v1.png` (2000 × 2000: an orange tube and a colourless tube side by side), small in scene 15 and the key notes; `p03-dropper-bottle-v1.png` (2000 × 2000: a clear glass dropper bottle with a black bulb and a blank cream label), twice with coded labels \"cyclohexane C₆H₁₂\" and \"cyclohexene C₆H₁₀\"; `m5x-graduated-pipette-v1.png` (a long graduated pipette with a red pipette filler, drawn at an angle; no hands), dispensing by coded tilt; `m5x-stopper-v1.png` (a black rubber stopper); `m6-white-tile-v1.png` (a plain white glazed tile, 2048 × 2048) under the tubes; `m6-litmus-blue-v1.png` (2000 × 2000: a blue litmus strip on a white tile, its right end already turning pink) and `m6-litmus-red-v1.png` (the same tile with a fully red strip), cross-faded in scene 6 and feedback 2; in scene 6 two blue copies are used, one over the lit tube and one over the dark comparison tube, which stays blue (the plate's slight pink tip is acceptable as \"little change\"); `m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`, `m5x-waste-bottle-v1.png` (an amber jar with a blank label; coded label \"Organic waste: halogenated\"). Requested by chem-m7-c04b and not yet in `public/assets/chemistry/` (22 Oct): `m7-bromine-hexane-orange-v1.png`, `m7-bromine-hexane-faded-v1.png` (a tube of bromine in a hydrocarbon solvent, orange, then pale straw with faint fumes; used here with a coded label \"bromine in cyclohexane (top layer)\": the plates show no solvent identity; in scene 6 the orange plate appears twice, the lit sample and the dark comparison) and `m7-uv-lamp-v1.png`, all in scene 6 and attempt 2; requested by chem-m7-p01: `m7-fume-cupboard-v1.png` (scenes 3 and 9). Considered, not used: `m8-bromine-water-orange-v1.png` and `m8-bromine-water-clear-v1.png` (inspected: the same kind of tubes standing in a wooden rack; a different style from the m7 tube set, and Module 8 P05 uses them), `m7-separating-funnel-clear-v1.png` (a two-layer funnel on a stand; the test is done in a test tube). New plates: `m7-bromine-layers-orange-top-v1.png`, `m7-bromine-layers-colourless-v1.png` and `m7-bromine-water-control-v1.png`; see Codex asset brief. No human figures.",
+    "transitionPlan": "Two dropper bottle plates and two orange bromine water tubes on a white tile open the hook as drops fall, stoppers drop and the tubes rock, then one tube crossfades in place to colourless and the other to an orange top layer that takes a pen ring; the board clears to a small equation strip where an orange Br2 dumbbell splits, docks and fades, and the two skeletal rings return with the one double bond ringed teal; three tubes line up on the tile with the fume cupboard faint behind, the pipette tilts over each on a coded arc as the method card writes and a 10 s chip counts the shake; the cyclohexene tube crossfades to colourless as the layer lens shows dumbbells vanishing and the ball-and-stick ring takes one Br on each carbon; the cyclohexane tube crossfades to its orange top layer as dumbbells drift up through the lens, a ghost decolourised tag is crossed and the control tube stays orange; the pipette moves the top layer into two tubes, one under a dark vignette, as the UV lamp plate fades the other and the litmus crossfades to red; skeletal tiles take ticks, a clock and a shared formula chip on the result card; the variables card, three short cards and the risk table write row by row; the memory line writes over the two small tubes; each attempt clears the board and its feedback underlines the card as the layer lens, swap docker and structural equation fill; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "two `p03-dropper-bottle-v1.png` plates left, coded labels on their blank labels: \"cyclohexane C₆H₁₂\" (grey-blue edge) and \"cyclohexene C₆H₁₀\" (teal edge); on \"cyclohexene\" small skeletal rings draw above them (the second with one teal double bond), then dim.",
+      "teachingReason": "Hook (one colour vanishes, one only seems to): Here are two clear liquids, cyclohexane and cyclohexene.",
+      "narrationCue": "cyclohexene / vanishes / layer",
+      "motionPurpose": "On the spoken cues: Centre: two `m7-bromine-water-orange-v1.png` tubes side by side on `m6-white-tile-v1.png`. Coded drops fall from each bottle into its tube; `m5x-stopper-v1.png` drops onto each; both tubes rock (shake). On \"vanishes\" the cyclohexene tube cross-fades in place to `m7-bromine-layers-colourless-v1.png` (tag \"colour gone\"). The cyclohexane tube cross-fades to `m7-bromine-layers-orange-top-v1.png`; on \"layer\" a pen ring",
+      "motionRole": "explain",
+      "onScreenChange": "two `p03-dropper-bottle-v1.png` plates left, coded labels on their blank labels: \"cyclohexane C₆H₁₂\" (grey-blue edge) and \"cyclohexene C₆H₁₀\" (teal edge); on \"cyclohexene\" small skeletal rings draw above them (the second with one teal double bond), then dim. Centre: two `m7-bromine-water-orange-v1.png` tubes side by side on `m6-white-tile-v1.png`. Coded drops fall from each bottle into its tube; `m5x-stopper-v1.png` drops onto each; both tubes rock (shake). On \"vanishes\" the cyclohexene tube cross-fades in place to `m7-bromine-layers-colourless-v1.png` (tag \"colour gone\"). The cyclohexane tube cross-fades to `m7-bromine-layers-orange-top-v1.png`; on \"layer\" a pen ring circles its orange top layer and a dashed ghost tag \"decolourised?\" appears beside the pale lower layer with a question mark. Heading writes: \"Gone, or just moved?\". Bright at the end: the heading, the ring and the question tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "what-it-means",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "What the colour change means: You've seen the chemistry in the last two videos.",
+      "narrationCue": "used up / double bond",
+      "motionPurpose": "On the spoken cues: A small c04a equation strip writes in grey at the top: \"C=C + Br₂ → addition product\" with a \"last video\" chip; on \"used up\" an orange Br₂ dumbbell beside a teal \"C=C\" splits and docks, and the dumbbell's orange fades (tag \"Br₂ used up → colour gone\"). A grey line beneath: \"alkane: no C=C → nothing adds (dark)\" with c04b's \"last video\" chip. On \"double bond\" the two skeletal rings return large side by side, the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A small c04a equation strip writes in grey at the top: \"C=C + Br₂ → addition product\" with a \"last video\" chip; on \"used up\" an orange Br₂ dumbbell beside a teal \"C=C\" splits and docks, and the dumbbell's orange fades (tag \"Br₂ used up → colour gone\"). A grey line beneath: \"alkane: no C=C → nothing adds (dark)\" with c04b's \"last video\" chip. On \"double bond\" the two skeletal rings return large side by side, the single difference ringed in teal on cyclohexene (tag \"one C=C: the only difference\"); a green tick \"fair pair\". Bright at the end: the two rings, the teal ring mark and the tick. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "fair-test",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Planning a fair test: Now plan it so the result can only come from that double bond.",
+      "narrationCue": "matched / water / white tile / sunlight",
+      "motionPurpose": "On the spoken cues: `m7-fume-cupboard-v1.png` at lower opacity behind the centre. Three `m7-bromine-water-orange-v1.png` tubes in a row on the white tile, coded labels under them as they are named: \"cyclohexene\", \"cyclohexane\", \"control\". On \"matched\" `m5x-graduated-pipette-v1.png` tilts along a coded arc over each tube in turn (no hands) and a method card writes in the right zone: \"2.0 mL bromine water (same bottle) + 1.0 mL sample\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m7-fume-cupboard-v1.png` at lower opacity behind the centre. Three `m7-bromine-water-orange-v1.png` tubes in a row on the white tile, coded labels under them as they are named: \"cyclohexene\", \"cyclohexane\", \"control\". On \"matched\" `m5x-graduated-pipette-v1.png` tilts along a coded arc over each tube in turn (no hands) and a method card writes in the right zone: \"2.0 mL bromine water (same bottle) + 1.0 mL sample\". On \"water\" the third tube's label brightens: \"control: + 1.0 mL water\" (tag \"same dilution, nothing to react with\"). Stoppers drop on; each tube rocks for ten short beats while a coded \"10 s\" chip counts (card line \"stopper; shake 10 s\"). On \"white tile\" the tile brightens under the tubes (card line \"white tile behind: faint colour shows\"). On \"sunlight\" a soft sun icon at the window edge is crossed (card line \"normal room light; read at once\") and a grey tag writes \"bright light: slow alkane reaction (scene 6)\". Earlier card lines dim. Bright at the end: the three labels and the last card line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "alkene-result",
+      "visualDecision": "adjust",
+      "visualReference": "the cyclohexene tube moves to the centre and cross-fades in place from `m7-bromine-water-orange-v1.png` to `m7-bromine-layers-colourless-v1.png` on \"within seconds\" (tag \"colourless: both layers\").",
+      "teachingReason": "The cyclohexene result: Cyclohexene first.",
+      "narrationCue": "within seconds / one, two-dibromocyclohexane / addition",
+      "motionPurpose": "On the spoken cues: The layer lens hovers over the top layer: small cyclohexene rings, each with a teal double bond, meet orange Br₂ dumbbells, which vanish as product molecules form. The tube shrinks to the left. Centre: the ink ball-and-stick cyclohexene (engine3d), its two C=C carbons flat; Br₂ splits (c04a's reagent splitter) and on \"one, two-dibromocyclohexane\" one Br docks on each carbon, both carbons turning tetrahedral. On",
+      "motionRole": "explain",
+      "onScreenChange": "the cyclohexene tube moves to the centre and cross-fades in place from `m7-bromine-water-orange-v1.png` to `m7-bromine-layers-colourless-v1.png` on \"within seconds\" (tag \"colourless: both layers\"). The layer lens hovers over the top layer: small cyclohexene rings, each with a teal double bond, meet orange Br₂ dumbbells, which vanish as product molecules form. The tube shrinks to the left. Centre: the ink ball-and-stick cyclohexene (engine3d), its two C=C carbons flat; Br₂ splits (c04a's reagent splitter) and on \"one, two-dibromocyclohexane\" one Br docks on each carbon, both carbons turning tetrahedral. On \"one, two-dibromocyclohexane\" a grey tag writes beside the tube: \"bromine water: one possible product; other colourless addition products can form in water\". On \"organic solvent\" the equation strip writes underneath with skeletal structures: cyclohexene + Br–Br → 1,2-dibromocyclohexane (Br on two neighbouring ring carbons), with the condition chip \"Br₂ in an organic solvent\" and \"room temperature, no catalyst\" under the arrow, and the molecular line small in grey: \"C₆H₁₀ + Br₂ → C₆H₁₀Br₂\". On \"one product\" a product counter reads \"1 product\" (c04b). Bright at the end: the structural equation, its condition chip and the counter. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Cam lens zoom",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "alkane-trap",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "The cyclohexane result, and the trap: Now cyclohexane, and here's the trap.",
+      "narrationCue": "top layer / moves / disappeared / control",
+      "motionPurpose": "On the spoken cues: The cyclohexane tube centre, cross-fading from orange to `m7-bromine-layers-orange-top-v1.png`. On \"top layer\" a bracket marks the top layer \"cyclohexane (less dense, doesn't mix)\" (grey \"from the properties video: floats on water\" chip, c03). The layer lens over the boundary: on \"moves\" orange Br₂ dumbbells drift from among the V-shaped water molecules up into the grey zigzag layer (tag \"like dissolves like:",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The cyclohexane tube centre, cross-fading from orange to `m7-bromine-layers-orange-top-v1.png`. On \"top layer\" a bracket marks the top layer \"cyclohexane (less dense, doesn't mix)\" (grey \"from the properties video: floats on water\" chip, c03). The layer lens over the boundary: on \"moves\" orange Br₂ dumbbells drift from among the V-shaped water molecules up into the grey zigzag layer (tag \"like dissolves like: non-polar Br₂ → non-polar layer\", dims). On \"disappeared\" the scene 1 ghost tag \"decolourised?\" returns beside the pale lower layer and is crossed (caption \"colour moved, not used up\"). On \"control\" the control tube (`m7-bromine-water-control-v1.png`, coded label \"control: same dilution\") slides in beside it. On \"still clearly orange\" a pen bracket links the control to the cyclohexane tube's pale lower layer (\"same dilution, much paler\"), then a pen arrow runs from the pale layer up to the orange top layer (\"so it moved here\"). Answer chip: \"no reaction: bromine still there\". Bright at the end: the crossed tag, the arrow tag and the chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "Cam lens zoom",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "light-demo",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "How an alkane does react: the light demonstration: So can an alkane react with bromine at all?",
+      "narrationCue": "light / red / substitution",
+      "motionPurpose": "On the spoken cues: A grey chip \"teacher demonstration, fume cupboard\" at the top left, `m7-fume-cupboard-v1.png` faint behind. The scene 5 cyclohexane tube (`m7-bromine-layers-orange-top-v1.png`) stands at the left; on \"take that orange top layer\" `m5x-graduated-pipette-v1.png` dips into its top layer on a coded path and tilts along a coded arc over two clean tubes in turn, and the two tubes appear as",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A grey chip \"teacher demonstration, fume cupboard\" at the top left, `m7-fume-cupboard-v1.png` faint behind. The scene 5 cyclohexane tube (`m7-bromine-layers-orange-top-v1.png`) stands at the left; on \"take that orange top layer\" `m5x-graduated-pipette-v1.png` dips into its top layer on a coded path and tilts along a coded arc over two clean tubes in turn, and the two tubes appear as `m7-bromine-hexane-orange-v1.png`, each with the coded label \"bromine in cyclohexane (top layer)\". The right-hand tube moves under a dark vignette with a small grey tag \"kept in the dark\" (tag \"dark: no change\"). On \"light\" `m7-uv-lamp-v1.png` slides in beside the left-hand tube, three violet wave strokes run to it, and it cross-fades in place to `m7-bromine-hexane-faded-v1.png` (tag \"slow fade\"). Two `m6-litmus-blue-v1.png` plates slide on coded paths to just above the two tube mouths; on \"red\" faint fume wisps reach the strip over the lit tube and it cross-fades to `m6-litmus-red-v1.png` (tag \"acidic gas\"). On \"kept in the dark\" the strip over the dark tube stays blue (the plate's own pink tip is its only change) and a pen bracket joins the two strips: \"lit: red; dark: little change → HBr, not just Br₂ vapour\". On \"substitution\" the plates shrink left and c04b's swap docker runs on a skeletal cyclohexane ring: one H lifts off, a Br docks in its place, and the H joins the other Br as H–Br in a violet-outlined second box; the equation strip writes: cyclohexane + Br₂ → bromocyclohexane + HBr, with the violet \"UV light\" chip on the arrow, and the molecular line small in grey: \"C₆H₁₂ + Br₂ → C₆H₁₁Br + HBr\". Product counter: \"2 products\". Bright at the end: the equation, the counter and the litmus bracket. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "limits",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "What the result can and cannot tell you: So what does a colourless result tell you?",
+      "narrationCue": "double or triple / more slowly / hexene / quick test",
+      "motionPurpose": "On the spoken cues: A result card in the right zone, one line per cue. On \"double or triple\" two skeletal tiles (hex-1-ene with a teal C=C, hex-1-yne with a teal C≡C) get ticks \"decolourises\", and a line writes \"colourless → C=C or C≡C\". On \"more slowly\" a small grey clock icon sits on the alkyne tile (tag \"usually slower\"), with a grey \"last video\" chip (c04b); a bracket over both tiles reads \"but which?\" (grey \"molecular formula",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A result card in the right zone, one line per cue. On \"double or triple\" two skeletal tiles (hex-1-ene with a teal C=C, hex-1-yne with a teal C≡C) get ticks \"decolourises\", and a line writes \"colourless → C=C or C≡C\". On \"more slowly\" a small grey clock icon sits on the alkyne tile (tag \"usually slower\"), with a grey \"last video\" chip (c04b); a bracket over both tiles reads \"but which?\" (grey \"molecular formula decides\" chip). On \"hexene\" skeletal cyclohexane and hex-1-ene appear side by side under a shared chip \"C₆H₁₂\"; cyclohexane gets \"no change\", hex-1-ene \"decolourises\" (tag \"same formula, different result\"). On \"quick test\" a grey tag writes \"other compounds too (e.g. phenols, some aldehydes)\" and the card's last line writes: \"a quick test: strong evidence, not proof\". Earlier lines dim. Bright at the end: the \"but which?\" bracket, the C₆H₁₂ pair tag and the last line. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "the variables card writes in the right zone, with the three tubes small at the left: on \"hydrocarbon\" \"Independent: the hydrocarbon (C=C or not)\"; on \"colour\" \"Dependent: colour of both layers\" (pen lines to both layers of each tube); the controlled list writes one item per phrase, each linked to its part: \"volumes 1.0 mL + 2.0 mL\", \"same bromine water\", \"shake 10 s\", \"room light\", \"read at once\".",
+      "teachingReason": "Variables, validity, reliability and accuracy: Now the variables.",
+      "narrationCue": "hydrocarbon / colour / Validity / Reliability / accuracy",
+      "motionPurpose": "On the spoken cues: The card dims and three short cards write in turn: on \"Validity\" \"Validity: one difference (C=C), plus a water control\"; on \"Reliability\" \"Reliability: repeats give the same result\" (three small repeat tube icons per sample, identical); on \"accuracy\" \"Accuracy: right answer? Known samples: cyclohexene colourless, cyclohexane not\". A small grey footer: \"Reliability means: repeated measurements under identical",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone, with the three tubes small at the left: on \"hydrocarbon\" \"Independent: the hydrocarbon (C=C or not)\"; on \"colour\" \"Dependent: colour of both layers\" (pen lines to both layers of each tube); the controlled list writes one item per phrase, each linked to its part: \"volumes 1.0 mL + 2.0 mL\", \"same bromine water\", \"shake 10 s\", \"room light\", \"read at once\". The card dims and three short cards write in turn: on \"Validity\" \"Validity: one difference (C=C), plus a water control\"; on \"Reliability\" \"Reliability: repeats give the same result\" (three small repeat tube icons per sample, identical); on \"accuracy\" \"Accuracy: right answer? Known samples: cyclohexene colourless, cyclohexane not\". A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\" Bright at the end: the accuracy card and its two known results. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue (the first on \"highly flammable\"), the current row and the header bright, earlier rows dimming: \"cyclohexane, cyclohexene: highly flammable liquid and vapour (H225)\" / \"fire; vapour travels to an ignition source\" / \"no flames or hot plates near them; fume cupboard\"; \"cyclohexane vapour (H336); both: H304; cyclohexene H302\" / \"drowsiness; fatal if swallowed liquid enters the airways; harmful if swallowed\" / \"fume cupboard; small volumes; never pipette by mouth (pipette filler)\"; \"dilute bromine water: bromine vapour\" / \"irritates eyes, skin and lungs\" / \"teacher dispenses in the fume cupboard; safety glasses; gloves\"; \"stoppered tube of volatile liquid\" / \"pressure can push the stopper out; splashes\" / \"shake gently; release the stopper pointing away, inside the fume cupboard\"; \"UV lamp and hydrogen bromide gas (demonstration only)\" / \"UV: eye and skin damage; HBr: corrosive, irritates the airways\" / \"teacher only; shielded lamp; inside the fume cupboard\"; \"waste: brominated products and leftover hydrocarbons (aquatic toxicity: cyclohexane H410, cyclohexene H411)\" / \"harm to aquatic life; flammable vapour in drains\" / \"labelled organic waste container (halogenated, if your school separates them); never the sink\".",
+      "teachingReason": "The risk assessment: The risk assessment.",
+      "narrationCue": "highly flammable / fume cupboard / organic waste",
+      "motionPurpose": "On the spoken cues: On \"fume cupboard\" `m7-fume-cupboard-v1.png` returns small at the left; on \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste: halogenated\" and a tube plate tilts along a coded arc towards it. Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue (the first on \"highly flammable\"), the current row and the header bright, earlier rows dimming: \"cyclohexane, cyclohexene: highly flammable liquid and vapour (H225)\" / \"fire; vapour travels to an ignition source\" / \"no flames or hot plates near them; fume cupboard\"; \"cyclohexane vapour (H336); both: H304; cyclohexene H302\" / \"drowsiness; fatal if swallowed liquid enters the airways; harmful if swallowed\" / \"fume cupboard; small volumes; never pipette by mouth (pipette filler)\"; \"dilute bromine water: bromine vapour\" / \"irritates eyes, skin and lungs\" / \"teacher dispenses in the fume cupboard; safety glasses; gloves\"; \"stoppered tube of volatile liquid\" / \"pressure can push the stopper out; splashes\" / \"shake gently; release the stopper pointing away, inside the fume cupboard\"; \"UV lamp and hydrogen bromide gas (demonstration only)\" / \"UV: eye and skin damage; HBr: corrosive, irritates the airways\" / \"teacher only; shielded lamp; inside the fume cupboard\"; \"waste: brominated products and leftover hydrocarbons (aquatic toxicity: cyclohexane H410, cyclohexene H411)\" / \"harm to aquatic life; flammable vapour in drains\" / \"labelled organic waste container (halogenated, if your school separates them); never the sink\". On \"fume cupboard\" `m7-fume-cupboard-v1.png` returns small at the left; on \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste: halogenated\" and a tube plate tilts along a coded arc towards it. Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 3 seconds (reading hold; the table returns in the key notes). Hold about 3 seconds (reading hold; the table returns in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 3 seconds (reading hold; the table returns in the key notes)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "adjust",
+      "visualReference": "on \"gone, not moved\" the aid writes large and handwritten: \"Gone, not moved.\"",
+      "teachingReason": "Memory aid: To read the tube, remember: gone, not moved.",
+      "narrationCue": "gone, not moved",
+      "motionPurpose": "On the spoken cues: Under \"Gone\" `m7-bromine-layers-colourless-v1.png` small with a tick \"used up: C=C or C≡C\"; under \"moved\" `m7-bromine-layers-orange-top-v1.png` small with a pen arrow up into the orange layer and a cross \"dissolved: no reaction\". Condition tag: \"check both layers, beside a control\".",
+      "motionRole": "explain",
+      "onScreenChange": "on \"gone, not moved\" the aid writes large and handwritten: \"Gone, not moved.\" Under \"Gone\" `m7-bromine-layers-colourless-v1.png` small with a tick \"used up: C=C or C≡C\"; under \"moved\" `m7-bromine-layers-orange-top-v1.png` small with a pen arrow up into the orange layer and a cross \"dissolved: no reaction\". Condition tag: \"check both layers, beside a control\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "tick",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A liquid hydrocarbon, X, has the",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A liquid hydrocarbon, X, has the molecular formula C₅H₁₀. A student shakes an excess of X with a small volume of bromine water in a stoppered test tube, in normal room light. Two layers form: the top layer is orange and the bottom layer is pale yellow. Identify X as either pent-1-ene or cyclopentane. Justify your answer.\" Beside it the two names with their skeletal formulas (pent-1-ene with a plain ink double bond, not teal; cyclopentane), and `m7-bromine-layers-orange-top-v1.png` small with a coded tag \"X + bromine water, shaken\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ticks, no arrows, no lens.",
+      "motionTools": [
+        "tick",
+        "Cam lens zoom",
+        "DrawPath",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "cyclopentane / dissolved",
+      "motionPurpose": "On the spoken cues: On \"cyclopentane\" its structure gets the answer chip. \"C₅H₁₀\" is underlined (tag \"both fit: formula can't decide\"). On \"dissolved\" \"the top layer is orange\" is underlined and the layer lens shows Br₂ dumbbells sitting in the top layer among grey ring molecules (tag \"top layer = X; moved, not gone\"). On \"used it all up\" \"an excess of X\" is underlined and \"pent-1-ene\" gets a grey cross \"in excess: would decolourise",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to the top. On \"cyclopentane\" its structure gets the answer chip. \"C₅H₁₀\" is underlined (tag \"both fit: formula can't decide\"). On \"dissolved\" \"the top layer is orange\" is underlined and the layer lens shows Br₂ dumbbells sitting in the top layer among grey ring molecules (tag \"top layer = X; moved, not gone\"). On \"used it all up\" \"an excess of X\" is underlined and \"pent-1-ene\" gets a grey cross \"in excess: would decolourise both layers\". On \"classic mistake\" a chip \"bottom layer paler, so X is an alkene\" fades in and is crossed (caption \"read the top layer too\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "Cam lens zoom"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "question card, worded as printed: \"In a teacher demonstration, a solution of bromine in heptane stays orange in a dark cupboard.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more. In a teacher demonstration, a solution",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"In a teacher demonstration, a solution of bromine in heptane stays orange in a dark cupboard. In bright light its colour slowly fades, and the gas at the mouth of the test tube turns damp blue litmus paper red. Explain these observations. Write a balanced equation, using structural formulas, for the formation of one organic product.\" Beside it `m7-bromine-hexane-orange-v1.png` small with coded label \"bromine in heptane\" and `m6-litmus-blue-v1.png` small; no lamp, no arrows. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no structures, no equation, no HBr.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "single / substitution / two-bromoheptane",
+      "motionPurpose": "On the spoken cues: On \"single\" \"heptane\" is underlined and its skeletal formula draws, all single bonds (tag \"no C=C: nothing adds in the dark\"); \"stays orange in a dark cupboard\" is underlined. On \"substitution\" \"In bright light\" is underlined and the swap docker runs on carbon 2; \"turns damp blue litmus paper red\" is underlined as the H–Br box forms and the litmus plate cross-fades to `m6-litmus-red-v1.png`. On \"two-bromoheptane\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to the top. On \"single\" \"heptane\" is underlined and its skeletal formula draws, all single bonds (tag \"no C=C: nothing adds in the dark\"); \"stays orange in a dark cupboard\" is underlined. On \"substitution\" \"In bright light\" is underlined and the swap docker runs on carbon 2; \"turns damp blue litmus paper red\" is underlined as the H–Br box forms and the litmus plate cross-fades to `m6-litmus-red-v1.png`. On \"two-bromoheptane\" the equation writes with full structural formulas: CH₃CH₂CH₂CH₂CH₂CH₂CH₃ + Br₂ → CH₃CHBrCH₂CH₂CH₂CH₂CH₃ + HBr, \"light (UV)\" on the arrow in violet, and a small grey tag \"any one position is accepted: 1-, 2-, 3- or 4-bromoheptane\"; answer chip pins. On \"can't be right\" a chip \"C₇H₁₆ + Br₂ → C₇H₁₆Br₂\" fades in and is crossed (caption \"no bond to open: substitution gives two products\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Matched pair; same volumes; water control.\"",
+      "teachingReason": "Decision rule and handoff: So: match the samples, add a water control, shake each tube the same way in normal light, and read both layers.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Stopper, shake 10 s, white tile, room light, read at once.\" \"3 Read both layers: gone = C=C or C≡C; moved = none.\" \"4 Limits: not which bond; rings fit CnH2n; a quick test, not proof.\" `m7-bromine-water-pair-v1.png` small at the right. On \"Next\" a chip \"Next: hydrocarbon naming and reaction practice\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Matched pair; same volumes; water control.\" \"2 Stopper, shake 10 s, white tile, room light, read at once.\" \"3 Read both layers: gone = C=C or C≡C; moved = none.\" \"4 Limits: not which bond; rings fit CnH2n; a quick test, not proof.\" `m7-bromine-water-pair-v1.png` small at the right. On \"Next\" a chip \"Next: hydrocarbon naming and reaction practice\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p02c-learning-review.md",
+      "sha256": "88b4e5afa5ea68cf8e13554571c004513754c27c756701d416254efa3fca2a4d"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p02c-claude-science-check.md",
+      "sha256": "4ecb0a715bfb99faf5389a42e8334ccf3490cbd866bf5eec63469f5664a809df"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

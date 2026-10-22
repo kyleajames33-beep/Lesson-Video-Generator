@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C05-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c05/lesson.json",
+  "lessonSha256": "b275a53e42b2c6a1512e7db5c837fa005b1234d957115294f703f1f4e3028e28",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c05/lesson.production-brief.json",
+    "sha256": "7b40723747baed8426700aff7cbddde90e5a7a1119006d258ca2cc1271986046"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "The gas in this camping stove is mostly butane, which boils near minus one degree. The liquid in this bottle is ethanol. Ethanol molecules have fewer electrons than butane, so you'd expect weaker dispersion forces and a lower boiling point. Instead, ethanol boils at about seventy eight degrees. And it mixes completely with water, while butane barely dissolves. The difference is one O H group. So how does an O H group change a molecule's properties?",
+      "hash": "e73be0dd3988",
+      "textSha256": "e73be0dd3988428b2026b416666ccdf9fdbfa40411a8048326e9327f91ec3f1c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hook.e73be0dd3988.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hook.e73be0dd3988.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hook.e73be0dd3988.generation.json",
+      "plannedRequestSha256": "42ff30cb91acf25dc5e6f668faf947996c9c53652cd5be318d02884b72f9e652"
+    },
+    {
+      "id": "hydroxyl-group",
+      "parentSceneId": "hydroxyl-group",
+      "text": "On paper, take ethane and swap one hydrogen for an O H group. That gives ethanol, an alcohol. This O H is a hydroxyl group, on a carbon with only single bonds. It's covalently bonded, so it isn't a hydroxide ion. Inside the molecule, oxygen pulls the shared electrons more strongly than hydrogen does. So the O H bond is polar: the oxygen is slightly negative, the hydrogen slightly positive. And the oxygen keeps two lone pairs, electrons not used in bonding.",
+      "hash": "e4e01c7e6cd0",
+      "textSha256": "e4e01c7e6cd04c4541b66387449651134cd2f1d9efa39cf3c4ae791e60be77b3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hydroxyl-group.e4e01c7e6cd0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hydroxyl-group.e4e01c7e6cd0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hydroxyl-group.e4e01c7e6cd0.generation.json",
+      "plannedRequestSha256": "dbeb444b7081d8d037dcc16712ed18ced69bf5188b2d38158536d51206bf1adf"
+    },
+    {
+      "id": "naming-alcohols",
+      "parentSceneId": "naming-alcohols",
+      "text": "Naming uses the rules you already know, with one change. Find the longest chain that holds the carbon with the O H. Take the alkane's name, drop its final e, and add ol. Number from the end nearer the O H, and put that number before ol. So C H three, C H two, C H two O H is propan-one-ol. Move the O H to the middle carbon, and it's propan-two-ol. Methanol and ethanol need no number, because there's only one place the O H can go.",
+      "hash": "78c800f18ff0",
+      "textSha256": "78c800f18ff002ba80bbaea34100d106b2ff9aac8e471a9ddb62df2e07752862",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/naming-alcohols.78c800f18ff0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/naming-alcohols.78c800f18ff0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/naming-alcohols.78c800f18ff0.generation.json",
+      "plannedRequestSha256": "aa3a760769a2585752b560c55c1cbd9339791507bdb6023e6b8a909961f9a47f"
+    },
+    {
+      "id": "oh-wins-numbering",
+      "parentSceneId": "oh-wins-numbering",
+      "text": "With a branch as well, the O H wins the numbering, like a double bond, because it's named in the ending. In this chain of five, numbering from the left puts the O H on carbon two, and the methyl on carbon four: four-methylpentan-two-ol. From the right, the methyl would get a two, but the O H would get a four, so that name is wrong.",
+      "hash": "ea8091ee88a1",
+      "textSha256": "ea8091ee88a11c21a2f09de9234a49aced183d4f0ab3ebf8df2bc01d42c944ec",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/oh-wins-numbering.ea8091ee88a1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/oh-wins-numbering.ea8091ee88a1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/oh-wins-numbering.ea8091ee88a1.generation.json",
+      "plannedRequestSha256": "8c822862d6d9e2d0d60767c847db239e8d1497c8efb3e9c2546b339f7b1f94d0"
+    },
+    {
+      "id": "classify-alcohols",
+      "parentSceneId": "classify-alcohols",
+      "text": "Now find the carbon holding the O H, and count the carbons bonded directly to it. One carbon makes a primary alcohol, like ethanol. Two carbons make it secondary, like propan-two-ol. Three make it tertiary, like two-methylpropan-two-ol. Count only carbons, not hydrogens or the oxygen. Methanol has no other carbon at all, but it's counted as primary.",
+      "hash": "8a7894501173",
+      "textSha256": "8a7894501173e43acafdec96114595f53fdf7687537c0ca0e912bb580bfc7c68",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/classify-alcohols.8a7894501173.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/classify-alcohols.8a7894501173.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/classify-alcohols.8a7894501173.generation.json",
+      "plannedRequestSha256": "d3580fd23e5f82b34061ebbb4bf2e14baad28c3fcc9028b79033f28d5fee3b0a"
+    },
+    {
+      "id": "class-not-branching",
+      "parentSceneId": "class-not-branching",
+      "text": "Don't judge the class by how branched a molecule looks. Two-methylpropan-one-ol has a branch, but its O H carbon is bonded to just one other carbon, so it's primary. Always go to the O H carbon first, then count.",
+      "hash": "81407f173708",
+      "textSha256": "81407f1737088be1075449d4c44596fc7ac86f5c8da70f1a0d6a32e7b85cd084",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/class-not-branching.81407f173708.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/class-not-branching.81407f173708.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/class-not-branching.81407f173708.generation.json",
+      "plannedRequestSha256": "b6f6a074865e893f8181dda9b904057c8c1d30362caeeb88a21753aef585e32a"
+    },
+    {
+      "id": "hydrogen-bonds",
+      "parentSceneId": "hydrogen-bonds",
+      "text": "Back to the boiling point puzzle. In liquid ethanol, the slightly positive hydrogen of one O H is attracted to a lone pair on the oxygen of a neighbouring molecule. That's a hydrogen bond. The hydrogen is the donor, and the oxygen's lone pair is the acceptor. It's still far weaker than a covalent bond. Alcohols also have dispersion forces from their chains, like alkanes.",
+      "hash": "97141adf1fbd",
+      "textSha256": "97141adf1fbdab982610eef37265a3a4affa91d5299ee28aaa3d35668c49f3e7",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hydrogen-bonds.97141adf1fbd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hydrogen-bonds.97141adf1fbd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/hydrogen-bonds.97141adf1fbd.generation.json",
+      "plannedRequestSha256": "93352f241a454fcac19f37ea95efd0824bc155fe3892f30751721326023f856e"
+    },
+    {
+      "id": "same-electrons",
+      "parentSceneId": "same-electrons",
+      "text": "So compare a fair pair. Propane and ethanol each have twenty six electrons, so their dispersion forces are similar. Propane boils at minus forty two degrees. Ethanol boils at seventy eight, about one hundred and twenty degrees higher. The extra comes from hydrogen bonding. Boiling overcomes both attractions between the molecules, but the O H bond inside each one stays intact.",
+      "hash": "49483edafd55",
+      "textSha256": "49483edafd5590c22df4c0f0c361e96b43a0e8451c3bfe1435fd187efbb1fd92",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/same-electrons.49483edafd55.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/same-electrons.49483edafd55.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/same-electrons.49483edafd55.generation.json",
+      "plannedRequestSha256": "e4a27d8ea5bede56d223462b979d61cc326b3812112c96b4d8e3953f7a67f2dd"
+    },
+    {
+      "id": "along-the-series",
+      "parentSceneId": "along-the-series",
+      "text": "Along the series, each of these alcohols has one O H, so the hydrogen bonding is about the same. What changes is the chain. Methanol boils at sixty five degrees, ethanol at seventy eight, propan-one-ol at ninety seven, and butan-one-ol at one hundred and eighteen. Each extra C H two adds electrons and contact, so the dispersion forces grow, and the boiling point climbs steadily.",
+      "hash": "26158ba5e14d",
+      "textSha256": "26158ba5e14d65c784068f433b167db6ea4f178f835bea9e4bfb575105986157",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/along-the-series.26158ba5e14d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/along-the-series.26158ba5e14d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/along-the-series.26158ba5e14d.generation.json",
+      "plannedRequestSha256": "6ba8fe474b6285fe97d362580803c18d1fecca33545702710edf11186ea9f116"
+    },
+    {
+      "id": "isomers-shape",
+      "parentSceneId": "isomers-shape",
+      "text": "Now hold the formula fixed. Butan-one-ol, butan-two-ol and two-methylpropan-two-ol are all C four H ten O, and all three hydrogen bond about equally. But their boiling points fall: one hundred and eighteen, about one hundred, then eighty two degrees. The tertiary one is the most compact, like a ball, so it touches its neighbours less, and its dispersion forces are weaker. So for isomers, primary usually boils highest and tertiary lowest, but it's the shape doing the work.",
+      "hash": "2cfcb62a7527",
+      "textSha256": "2cfcb62a7527c4ad2391ae8185cd45fa791db02c3448d5e83ee1fcc363cca5bb",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/isomers-shape.2cfcb62a7527.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/isomers-shape.2cfcb62a7527.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/isomers-shape.2cfcb62a7527.generation.json",
+      "plannedRequestSha256": "ba80ad6df461561b8180dca346ad1d169d289e39128c60c8d643f2a72bcf0fc8"
+    },
+    {
+      "id": "solubility-water",
+      "parentSceneId": "solubility-water",
+      "text": "Solubility comes down to the same O H. Water molecules hold each other with hydrogen bonds. Hexane couldn't replace those, so it stayed as a layer. An alcohol's O H can: it hydrogen bonds with water, replacing the bonds it breaks. So methanol, ethanol and propan-one-ol mix with water in any proportion.",
+      "hash": "9b0cb3638653",
+      "textSha256": "9b0cb3638653f7361e21023bf214237337974be7c3fda7a3cf5e4680a3f41452",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/solubility-water.9b0cb3638653.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/solubility-water.9b0cb3638653.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/solubility-water.9b0cb3638653.generation.json",
+      "plannedRequestSha256": "c8d05dae7827eb58ce51726ef790e44ae533ae78cf3179d16efc6b195062dbda"
+    },
+    {
+      "id": "longer-chain-solubility",
+      "parentSceneId": "longer-chain-solubility",
+      "text": "But the non-polar chain still has to push in between water molecules, breaking hydrogen bonds it can't replace. The longer the chain, the more it breaks, and one O H can't make up for it. So solubility drops gradually. Butan-one-ol dissolves partly, and hexan-one-ol barely dissolves, so it forms a layer on top.",
+      "hash": "99908378a401",
+      "textSha256": "99908378a40175514317a345a58aa7e1eb20a193fa585cfea5d6ae092d291d08",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/longer-chain-solubility.99908378a401.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/longer-chain-solubility.99908378a401.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/longer-chain-solubility.99908378a401.generation.json",
+      "plannedRequestSha256": "b9ed9b528dd0f571ae543fe4025672e64d1893d514ad0f8e7b8949e3282b26e7"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, the O H group gives an alcohol hydrogen bonds. That's why it boils higher than an alkane of the same size, and small alcohols mix with water. Then the chain sets the trend: longer chains boil higher, but dissolve less. Same size? Hydrogen bonding wins. Same family? Size wins. And to classify, go to the O H carbon, and count its carbons.",
+      "hash": "774e6b4f9557",
+      "textSha256": "774e6b4f95574e93d0e6c5bff826835d28b0644f654298e36872168eb04c4fc5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/memory-aid.774e6b4f9557.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/memory-aid.774e6b4f9557.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/memory-aid.774e6b4f9557.generation.json",
+      "plannedRequestSha256": "8aa4e3df9ed692e1561e5f7e49cd7cfb98d271700e2e593204617f9206a84bc7"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. An alcohol has the condensed formula C H three, C H O H, C H C H three, C H three. Give its IUPAC name, and classify it as primary, secondary or tertiary. Justify your classification. Pause here to answer.",
+      "hash": "298fa75350c7",
+      "textSha256": "298fa75350c7e0af6e7f4264cb0e0b8421f885be74a75848dbd315dbee7640a6",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/attempt-1.298fa75350c7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/attempt-1.298fa75350c7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/attempt-1.298fa75350c7.generation.json",
+      "plannedRequestSha256": "c16d8a15452bdd91421bff7609472b6f833351f06559e8ba2c283fde4b7a8691"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The longest chain has four carbons and holds the O H carbon, so it's a butanol. Number from the left, nearer the O H: it's on carbon two, with the methyl on carbon three. So it's three-methylbutan-two-ol. The O H carbon is bonded to two other carbons, so it's secondary. Two-methylbutan-three-ol numbers for the branch, but the O H wins.",
+      "hash": "39b0cbba4b9e",
+      "textSha256": "39b0cbba4b9e24b7f724bba31a57afbc3c98657e947e9e739c50deabb5a44543",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/feedback-1.39b0cbba4b9e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/feedback-1.39b0cbba4b9e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/feedback-1.39b0cbba4b9e.generation.json",
+      "plannedRequestSha256": "26f7ead116af205288b439051403d3d0c0234403a6db4efdf5789681db5919f5"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Butane boils at minus one degree. Propan-one-ol boils at ninety seven degrees. Both molecules have thirty four electrons. Explain the difference in boiling points, with reference to the intramolecular and intermolecular bonding present. Pause here to answer.",
+      "hash": "8f4070bde0cc",
+      "textSha256": "8f4070bde0cc67bf96b69c4ef726ff1cd50dddd1f27662c84618db18b092c6c7",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/attempt-2.8f4070bde0cc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/attempt-2.8f4070bde0cc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/attempt-2.8f4070bde0cc.generation.json",
+      "plannedRequestSha256": "9b3392307d09fac9cc770aba617609c50952e8c106d08bea63bb94673ea1449b"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Both have thirty four electrons, so their dispersion forces are similar. But propan-one-ol has a polar O H bond, so its molecules also form hydrogen bonds with each other, which butane can't. More energy is needed to separate them, so it boils higher. Boiling leaves the covalent bonds inside both molecules intact. Just writing \"propan-one-ol is polar\" isn't enough. Name the force.",
+      "hash": "a95764afd869",
+      "textSha256": "a95764afd869fdaccb6af07acd8f0d8ba28576d748179bac0a8bc99df6bc7473",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/feedback-2.a95764afd869.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/feedback-2.a95764afd869.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/feedback-2.a95764afd869.generation.json",
+      "plannedRequestSha256": "58bb65c917cce84ef036469d58a3625b0a8e1343dd7071fa6f3a3701385fe5fc"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So one O H group adds hydrogen bonding, and the chain decides how much the dispersion forces add. Next: how we actually make ethanol, from ethene, from a haloalkane, or from sugar and yeast.",
+      "hash": "aa89fe0330c7",
+      "textSha256": "aa89fe0330c7489592147947d131add357430433f5cb92733cbbdec378041f90",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/handoff.aa89fe0330c7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/handoff.aa89fe0330c7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/handoff.aa89fe0330c7.generation.json",
+      "plannedRequestSha256": "b22f95a66bb48afcddc13451a9d67ad6be0b5dbd2f7394314c1c5dc7d60db2f3"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C05-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

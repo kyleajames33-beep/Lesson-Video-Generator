@@ -13113,6 +13113,1170 @@ M7G01_ROWS = {
     ]
 }
 # END generated rows: m7c03, m7c04a, m7c04b, m7g01
+# BEGIN generated rows: m7p01c, m7p02c, m7c05, m7c06
+M7P01C_ROWS = {
+    "hook": [
+        "adjust",
+        "three `p03-dropper-bottle-v1.png` plates side by side, centre, same size, coded label text on each blank label in turn as named: \"heptane C₇H₁₆\" (teal edge), \"octane C₈H₁₈\" (amber edge), \"nonane C₉H₂₀\" (violet edge).",
+        "Hook (three liquids that look the same): Here are three bottles of clear, colourless liquid: heptane, octane and nonane.",
+        "heptane / test",
+        "On the spoken cues: On \"heptane\" each bottle shows a small skeletal formula above it (7, 8, 9 carbons), drawn from left to right, then the skeletal formulas dim to grey. A small grey chip \"last video: longer chain → stronger dispersion forces\" writes at the top left. On \"test\" the chip gets a pen question mark, a handwritten heading writes: \"Claim → evidence?\", and the three bottle labels dim to grey as it writes. Bright at the end:",
+        "explain",
+        "three `p03-dropper-bottle-v1.png` plates side by side, centre, same size, coded label text on each blank label in turn as named: \"heptane C₇H₁₆\" (teal edge), \"octane C₈H₁₈\" (amber edge), \"nonane C₉H₂₀\" (violet edge). On \"heptane\" each bottle shows a small skeletal formula above it (7, 8, 9 carbons), drawn from left to right, then the skeletal formulas dim to grey. A small grey chip \"last video: longer chain → stronger dispersion forces\" writes at the top left. On \"test\" the chip gets a pen question mark, a handwritten heading writes: \"Claim → evidence?\", and the three bottle labels dim to grey as it writes. Bright at the end: the heading and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "choose-members": [
+        "adjust",
+        "the board clears.",
+        "Choosing the members: First, choose members of one series with straight chains, so the only thing that changes is the length, one C H two at a time.",
+        "straight chains / liquids / gases",
+        "On the spoken cues: A small coded series ladder (c03's) draws at the centre: skeletal heptane, octane, nonane stacked, each step with a \"+CH₂\" tag glowing pale blue. On \"straight chains\" a green tick \"one change: chain length\". A grey skeletal 2-methylhexane slides in beside heptane and is crossed (caption \"shape changes too\"). On \"liquids\" the three dropper bottles return small beside their skeletal formulas (tag \"liquids at 25 °C\").",
+        "explain",
+        "the board clears. A small coded series ladder (c03's) draws at the centre: skeletal heptane, octane, nonane stacked, each step with a \"+CH₂\" tag glowing pale blue. On \"straight chains\" a green tick \"one change: chain length\". A grey skeletal 2-methylhexane slides in beside heptane and is crossed (caption \"shape changes too\"). On \"liquids\" the three dropper bottles return small beside their skeletal formulas (tag \"liquids at 25 °C\"). On \"gases\" four small grey formulas CH₄, C₂H₆, C₃H₈, C₄H₁₀ write below, with `m7-camping-gas-burner-v1.png` small beside them (tag \"gases at 25 °C\"), then dim. On \"thirty six\" a chip \"pentane: boils at 36 °C; extremely flammable\" writes and is crossed in terracotta. Bright at the end: the three liquids and the two crossed chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "choose-test": [
+        "new",
+        "the board clears.",
+        "Choosing a safe property test: Next, choose a property.",
+        "flame / evaporates / cools",
+        "On the spoken cues: Left: a coded line sketch of a test tube over a grey flame outline with vapour wisps reaching the flame; on \"flame\" the wisps touch the flame and a small terracotta flash marks the ignition point; the sketch is crossed (caption \"heating a flammable liquid: no\"). On \"evaporates\" the force view from c03 shows a surface of liquid heptane molecules (ball-and-stick, small) at room temperature, each jiggling by a",
+        "explain",
+        "the board clears. Left: a coded line sketch of a test tube over a grey flame outline with vapour wisps reaching the flame; on \"flame\" the wisps touch the flame and a small terracotta flash marks the ignition point; the sketch is crossed (caption \"heating a flammable liquid: no\"). On \"evaporates\" the force view from c03 shows a surface of liquid heptane molecules (ball-and-stick, small) at room temperature, each jiggling by a different amount; the molecule at the surface with the largest jiggle (the fastest) breaks free upward, carrying a small warm-orange dot (tag \"evaporate: escape from the surface, below the boiling point\"). On \"cools\" the molecules left behind jiggle less on average, a tag writes \"fastest escape → the rest are slower → cooler\", and a small amber thermometer chip beside them drops from \"21.8 °C\" by a few tenths. A grey line writes: \"faster evaporation → bigger temperature drop\", and the first tag dims. Bright at the end: the surface view, the cooling chip and the grey rule. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "method": [
+        "adjust",
+        "the new plate `m7-temp-probe-sleeve-stand-v1.png` centre (probe clamped vertically, filter-paper sleeve on its tip), with the coded amber readout chip on the cable reading \"21.8 °C\".",
+        "The method: Wrap a small sleeve of filter paper around the tip of a temperature probe.",
+        "out / falling / fume cupboard",
+        "On the spoken cues: `m7-bromine-water-colourless-v1.png` (a tube of colourless liquid, coded tag \"heptane\") rises along a vertical path until the sleeve is under the liquid; a small coded timer chip counts \"0 s\" to \"30 s\" fast (tag \"soak: paper reaches the sample's temperature\"). On \"out\" the tube lowers away and slides off; pale-grey wisps leave the sleeve with tiny orange dots and the readout ticks down: 21.8, 20.4, 18.1. On",
+        "explain",
+        "the new plate `m7-temp-probe-sleeve-stand-v1.png` centre (probe clamped vertically, filter-paper sleeve on its tip), with the coded amber readout chip on the cable reading \"21.8 °C\". `m7-bromine-water-colourless-v1.png` (a tube of colourless liquid, coded tag \"heptane\") rises along a vertical path until the sleeve is under the liquid; a small coded timer chip counts \"0 s\" to \"30 s\" fast (tag \"soak: paper reaches the sample's temperature\"). On \"out\" the tube lowers away and slides off; pale-grey wisps leave the sleeve with tiny orange dots and the readout ticks down: 21.8, 20.4, 18.1. On \"falling\" a step card writes in the right zone: \"ΔT = start − lowest\". On \"fume cupboard\" the new plate `m7-fume-cupboard-v1.png` fades in behind the whole set-up at lower opacity, so the stand sits inside it (tag \"draws vapour away\"), and a \"× 3 trials each\" chip writes under the step card. Bright at the end: the readout, the ΔT card and the trials chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone; the probe set-up stays small at the left.",
+        "The variables: So what are the variables?",
+        "carbons / temperature drop / air",
+        "On the spoken cues: On \"carbons\" \"Independent: number of carbons (7, 8, 9)\" with the three label colours as dots. On \"temperature drop\" \"Dependent: ΔT (°C)\". The controlled list writes one item per phrase, each pen-linked to the matching part of the set-up: \"paper sleeve size\" (to the sleeve), \"soak time 30 s\" (to the timer chip), \"starting temperature 21.8 °C\" (to the readout), \"same position, same sash height\" (to the fume cupboard",
+        "explain",
+        "the variables card writes in the right zone; the probe set-up stays small at the left. On \"carbons\" \"Independent: number of carbons (7, 8, 9)\" with the three label colours as dots. On \"temperature drop\" \"Dependent: ΔT (°C)\". The controlled list writes one item per phrase, each pen-linked to the matching part of the set-up: \"paper sleeve size\" (to the sleeve), \"soak time 30 s\" (to the timer chip), \"starting temperature 21.8 °C\" (to the readout), \"same position, same sash height\" (to the fume cupboard frame). On \"air\" a few pale arrows drift across the sleeve inside the cupboard and the wisps lean with them (tag \"air flow speeds evaporation\"). Bright at the end: the card's header and the air-flow tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "logged-runs": [
+        "new",
+        "the coded lineGraph fills the centre: x axis \"time after lifting (s)\" 0 to 180, y axis \"temperature (°C)\" 15 to 23, grid every 20 s and 1 °C, y labels every 1 °C; a small grey tag \"sample results\" at the top right of the graph.",
+        "The logged runs: Here's one run of each.",
+        "fifteen point eight / nineteen point five / twenty one point one",
+        "On the spoken cues: A dashed grey line at 21.8 °C, tag \"start: 21.8 °C\". The heptane run (teal) plots point by point from author note (a); on \"fifteen point eight\" its lowest point (100 s) gets a ring and the tag \"15.8 °C\". On \"warms up\" a small grey tag by the rising part: \"liquid gone: heat flows back in\". The octane run (amber) plots; on \"nineteen point five\" its lowest point (140 s) gets a ring and \"19.5 °C\". The nonane run",
+        "explain",
+        "the coded lineGraph fills the centre: x axis \"time after lifting (s)\" 0 to 180, y axis \"temperature (°C)\" 15 to 23, grid every 20 s and 1 °C, y labels every 1 °C; a small grey tag \"sample results\" at the top right of the graph. A dashed grey line at 21.8 °C, tag \"start: 21.8 °C\". The heptane run (teal) plots point by point from author note (a); on \"fifteen point eight\" its lowest point (100 s) gets a ring and the tag \"15.8 °C\". On \"warms up\" a small grey tag by the rising part: \"liquid gone: heat flows back in\". The octane run (amber) plots; on \"nineteen point five\" its lowest point (140 s) gets a ring and \"19.5 °C\". The nonane run (violet) plots; on \"twenty one point one\" its lowest point (160 s) gets a ring and \"21.1 °C\". As each ring appears, a ΔT bracket draws from the start line down to it, without numbers yet. Earlier tags dim as each new run plots. Bright at the end: the three rings and their brackets. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "results": [
+        "new",
+        "the graph shrinks to the left, keeping its three brackets.",
+        "The results: Now the table.",
+        "six point zero / two point two / zero point seven / smaller",
+        "On the spoken cues: The results table writes in the right zone, header \"ΔT (°C): trial 1, 2, 3, mean\" with a small grey tag \"sample results\". Row \"heptane: 5.8, 6.2, 6.0\" writes on the spoken values; on \"six point zero\" the mean cell fills \"6.0\" and the heptane bracket on the graph gets \"6.0\". On \"two point two\" the octane row writes whole: \"2.3, 2.0, 2.4, mean 2.2\"; on \"zero point seven\" \"nonane: 0.7, 0.6, 0.8, mean 0.7\"; each mean",
+        "explain",
+        "the graph shrinks to the left, keeping its three brackets. The results table writes in the right zone, header \"ΔT (°C): trial 1, 2, 3, mean\" with a small grey tag \"sample results\". Row \"heptane: 5.8, 6.2, 6.0\" writes on the spoken values; on \"six point zero\" the mean cell fills \"6.0\" and the heptane bracket on the graph gets \"6.0\". On \"two point two\" the octane row writes whole: \"2.3, 2.0, 2.4, mean 2.2\"; on \"zero point seven\" \"nonane: 0.7, 0.6, 0.8, mean 0.7\"; each mean also labels its bracket. On \"smaller\" three bars draw small under the table (teal, amber, violet), shrinking, with a pen arrow \"+CH₂ → smaller drop\". Earlier rows dim to grey except the mean column. Bright at the end: the mean column and the bar arrow. Hold about 1 second (the table returns small in scene 11). Hold about 1 second (the table returns small in scene 11).",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 1 second (the table returns small in scene 11)"
+    ],
+    "bonding": [
+        "new",
+        "the board clears.",
+        "Explaining the trend with bonding: Why?",
+        "any / stronger / free",
+        "On the spoken cues: Task line \"Why does the drop shrink?\". c03's force view: two heptane molecules side by side (left) and two nonane molecules (right), ball-and-stick. On \"any\" every covalent bond glows solid ink and green ticks \"covalent bonds: all intact\" sit beside each molecule (tag \"intramolecular: unchanged, unbroken\"). On \"stronger\" dotted pale-blue flicker lines appear between each pair; the nonane pair has visibly more lines",
+        "explain",
+        "the board clears. Task line \"Why does the drop shrink?\". c03's force view: two heptane molecules side by side (left) and two nonane molecules (right), ball-and-stick. On \"any\" every covalent bond glows solid ink and green ticks \"covalent bonds: all intact\" sit beside each molecule (tag \"intramolecular: unchanged, unbroken\"). On \"stronger\" dotted pale-blue flicker lines appear between each pair; the nonane pair has visibly more lines along a longer contact (c03's contact highlighter), a small tally reads \"fewer\" for heptane and \"more\" for nonane (tag \"intermolecular: dispersion forces\"; small grey \"last video\" chip). On \"free\" each pair sits at a liquid surface: several heptane molecules break away upward with orange energy dots, one nonane molecule does. A grey chain writes under the view: \"stronger forces → fewer escape each second → slower evaporation → smaller drop\". Bright at the end: the two tags and the chain. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Mark highlight"
+        ],
+        "Hold about 1 second"
+    ],
+    "secondary-data": [
+        "new",
+        "the board clears.",
+        "Extending it with published data: Methane to butane can't be tested this way at all.",
+        "secondary data / every / twenty five",
+        "On the spoken cues: A coded lineGraph: x axis \"number of carbon atoms\" 1 to 9, y axis \"normal boiling point (°C)\" −180 to 160, grid every 20 °C, labels every 40 °C; a dashed grey line at 25 °C, tag \"room temperature\". On \"secondary data\" a grey source chip writes: \"data book: normal boiling points (101.3 kPa)\" with the meaning \"secondary data: measured and published by others\". On \"every\" the nine points plot one by one with small",
+        "explain",
+        "the board clears. A coded lineGraph: x axis \"number of carbon atoms\" 1 to 9, y axis \"normal boiling point (°C)\" −180 to 160, grid every 20 °C, labels every 40 °C; a dashed grey line at 25 °C, tag \"room temperature\". On \"secondary data\" a grey source chip writes: \"data book: normal boiling points (101.3 kPa)\" with the meaning \"secondary data: measured and published by others\". On \"every\" the nine points plot one by one with small value tags (−161.5, −88.6, −42.1, −0.5, 36.1, 68.7, 98.4, 125.6, 150.8) and a smooth curve draws through them; the C7, C8 and C9 points take the teal, amber and violet colours (C6, hexane, stays plain ink: it is a data-book point only). Step labels write between neighbouring points: \"+72.9\", \"+46.5\", \"+41.6\", \"+36.6\", \"+32.6\", \"+29.7\", \"+27.2\", \"+25.2\"; each value tag dims to grey as the step label beside it writes, and the middle six step labels write in grey. On \"twenty five\" the first and last step labels (\"+72.9\", \"+25.2\") brighten and a grey tag writes \"rises every step; steps shrink\". On \"beyond this course\" a small grey chip \"describe the pattern; don't invent a reason\" writes. Bright at the end: the curve, the two highlighted steps and the grey tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "methods-agree": [
+        "new",
+        "the graph shrinks to the left with only its C7 to C9 points bright.",
+        "Two methods agree: And the two methods agree: the higher the boiling point, the smaller the temperature drop.",
+        "higher / smaller",
+        "On the spoken cues: The agreement strip writes in the right zone: three rows in the run colours, \"heptane: 98.4 °C | ΔT 6.0 °C\", \"octane: 125.6 °C | ΔT 2.2 °C\", \"nonane: 150.8 °C | ΔT 0.7 °C\". On \"higher\" an up arrow runs down the boiling point column; on \"smaller\" a down arrow runs down the ΔT column; a pen bracket joins them: \"same forces, two kinds of evidence\". Bright at the end: the two arrows and the bracket.",
+        "explain",
+        "the graph shrinks to the left with only its C7 to C9 points bright. The agreement strip writes in the right zone: three rows in the run colours, \"heptane: 98.4 °C | ΔT 6.0 °C\", \"octane: 125.6 °C | ΔT 2.2 °C\", \"nonane: 150.8 °C | ΔT 0.7 °C\". On \"higher\" an up arrow runs down the boiling point column; on \"smaller\" a down arrow runs down the ΔT column; a pen bracket joins them: \"same forces, two kinds of evidence\". Bright at the end: the two arrows and the bracket. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "adjust",
+        "three cards write in turn in the right zone, each with its plain question and this investigation's answer, the previous card dimming: \"Validity: measures what it should?",
+        "Validity, reliability and accuracy: Validity: does it measure what it's meant to?",
+        "Validity / Reliability / Accuracy / ranking",
+        "On the spoken cues: Only chain length changes (straight chains; same paper, soak time, start temperature, position).\" \"Reliability: repeats agree? Each set spans 0.4 °C or less\" (the table's three trial columns return small with a bracket per row: \"0.4\", \"0.4\", \"0.2 °C\"). \"Accuracy: close to the true value? Check the probe against a calibrated thermometer.\" (`m5x-thermometer-cold-v1.png` small beside the probe plate, scaled uniformly,",
+        "explain",
+        "three cards write in turn in the right zone, each with its plain question and this investigation's answer, the previous card dimming: \"Validity: measures what it should? Only chain length changes (straight chains; same paper, soak time, start temperature, position).\" \"Reliability: repeats agree? Each set spans 0.4 °C or less\" (the table's three trial columns return small with a bracket per row: \"0.4\", \"0.4\", \"0.2 °C\"). \"Accuracy: close to the true value? Check the probe against a calibrated thermometer.\" (`m5x-thermometer-cold-v1.png` small beside the probe plate, scaled uniformly, both with coded readout chips \"21.8 °C\", and a green tick between them). On \"ranking\" the agreement strip's arrows return small beside the card with a grey tag \"ranking matches the data book: agreement, not accuracy\". A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\" Bright at the end: the accuracy card, the arrows and the agreement tag. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "table build",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "limits": [
+        "new",
+        "a limits card writes in the right zone, one line per cue: on \"compares\" \"ΔT ranks evaporation; not a boiling point, not a force measurement\"; on \"repeat\" \"air flow, liquid on the paper: scatter → repeat and average\" (the sleeve icon with two different wet patches); on \"straight\" \"conclusion: straight-chain alkanes only\" with the grey crossed 2-methylhexane from scene 2 returning small (tag \"branched: boils lower\").",
+        "The limits of the method: The temperature drop compares how quickly the liquids evaporate.",
+        "compares / repeat / straight",
+        "On the spoken cues: Earlier lines dim. Bright at the end: the third line and the first line's \"not a boiling point\".",
+        "explain",
+        "a limits card writes in the right zone, one line per cue: on \"compares\" \"ΔT ranks evaporation; not a boiling point, not a force measurement\"; on \"repeat\" \"air flow, liquid on the paper: scatter → repeat and average\" (the sleeve icon with two different wet patches); on \"straight\" \"conclusion: straight-chain alkanes only\" with the grey crossed 2-methylhexane from scene 2 returning small (tag \"branched: boils lower\"). Earlier lines dim. Bright at the end: the third line and the first line's \"not a boiling point\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue (the first on \"highly flammable\"), the current row and the header bright, earlier rows dimming: \"heptane, octane: highly flammable liquid and vapour (H225); nonane: flammable liquid and vapour (H226)\" / \"fire; vapour can travel to an ignition source\" / \"no flames or hot plates in the work area; fume cupboard\"; \"vapour (H336)\" / \"drowsiness, dizziness\" / \"fume cupboard, sash low; small volumes\"; \"swallowed liquid (H304)\" / \"can be fatal if it enters the airways\" / \"never pipette by mouth; stoppered tubes\"; \"skin contact (H315)\" / \"skin irritation\" / \"safety glasses; gloves if your school requires\"; \"waste (aquatic toxicity: H400, H410)\" / \"harms aquatic life; flammable vapour in drains\" / \"labelled organic waste container; never the sink\".",
+        "The risk assessment: The risk assessment.",
+        "highly flammable / fume cupboard / hexane / organic waste",
+        "On the spoken cues: On \"fume cupboard\" `m7-fume-cupboard-v1.png` returns small at the left. On \"hexane\" a green chip writes above the table: \"Substitution first: hexane (H372: nerve damage with repeated exposure) → heptane, octane, nonane\", with a small grey skeletal hexane crossed beside it; the chip dims when the next row writes. On \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste\" and the",
+        "explain",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue (the first on \"highly flammable\"), the current row and the header bright, earlier rows dimming: \"heptane, octane: highly flammable liquid and vapour (H225); nonane: flammable liquid and vapour (H226)\" / \"fire; vapour can travel to an ignition source\" / \"no flames or hot plates in the work area; fume cupboard\"; \"vapour (H336)\" / \"drowsiness, dizziness\" / \"fume cupboard, sash low; small volumes\"; \"swallowed liquid (H304)\" / \"can be fatal if it enters the airways\" / \"never pipette by mouth; stoppered tubes\"; \"skin contact (H315)\" / \"skin irritation\" / \"safety glasses; gloves if your school requires\"; \"waste (aquatic toxicity: H400, H410)\" / \"harms aquatic life; flammable vapour in drains\" / \"labelled organic waste container; never the sink\". On \"fume cupboard\" `m7-fume-cupboard-v1.png` returns small at the left. On \"hexane\" a green chip writes above the table: \"Substitution first: hexane (H372: nerve damage with repeated exposure) → heptane, octane, nonane\", with a small grey skeletal hexane crossed beside it; the chip dims when the next row writes. On \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste\" and the sample tube plate tilts along a coded arc towards it; `m5x-stopper-v1.png` drops onto a tube. Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; gloves (`m5x-gloves-v1.png`) small with grey tag \"if your school requires\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 2 seconds (reading hold; the table returns in the key notes). Hold about 2 seconds (reading hold; the table returns in the key notes).",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds (reading hold; the table returns in the key notes)"
+    ],
+    "memory-aid": [
+        "new",
+        "on \"longer chain, smaller chill\" the aid writes large and handwritten: \"Longer chain, smaller chill.\"",
+        "Memory aid: A short way to keep the result: longer chain, smaller chill.",
+        "longer chain, smaller chill",
+        "On the spoken cues: Under it the three bars from scene 7 shrink left to right in the run colours, and a small sleeve icon with fewer wisps under each longer chain. Condition tag: \"same series, straight chains, same conditions\".",
+        "explain",
+        "on \"longer chain, smaller chill\" the aid writes large and handwritten: \"Longer chain, smaller chill.\" Under it the three bars from scene 7 shrink left to right in the run colours, and a small sleeve icon with fewer wisps under each longer chain. Condition tag: \"same series, straight chains, same conditions\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. The table gives the normal boiling",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"The table shows the normal boiling points of four straight-chain alkenes. Describe the trend in boiling point and explain it with reference to the intramolecular and intermolecular bonding present.\" Table beside it: \"but-1-ene −6.3 °C | pent-1-ene 30.0 °C | hex-1-ene 63.5 °C | hept-1-ene 93.6 °C\", each name with a small skeletal formula. The full question and table stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no step labels, no arrows, no forces.",
+        [
+            "DrawPath",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card shrinks to the top; the table stays.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "smaller / unbroken / stronger",
+        "On the spoken cues: On \"smaller\" the four values are underlined in turn and step labels write between them: \"+36.3\", \"+33.5\", \"+30.1\" (tag \"rises; steps shrink\"). On \"unbroken\" \"intramolecular\" in the question is underlined and a line writes \"intramolecular: C–C, C=C, C–H covalent bonds; not broken on boiling\". On \"stronger\" \"intermolecular\" is underlined and a line writes \"intermolecular: dispersion forces; +CH₂ → more electrons, more",
+        "explain",
+        "the card shrinks to the top; the table stays. On \"smaller\" the four values are underlined in turn and step labels write between them: \"+36.3\", \"+33.5\", \"+30.1\" (tag \"rises; steps shrink\"). On \"unbroken\" \"intramolecular\" in the question is underlined and a line writes \"intramolecular: C–C, C=C, C–H covalent bonds; not broken on boiling\". On \"stronger\" \"intermolecular\" is underlined and a line writes \"intermolecular: dispersion forces; +CH₂ → more electrons, more contact → stronger → higher boiling point\"; answer chip pins. On \"misses the point\" a chip \"longer chains have stronger covalent bonds\" fades in and is crossed (caption \"boiling separates molecules; covalent bonds stay\"). Earlier lines dim. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card, worded as printed: \"A student plans to find the effect of chain length on volatility by heating pentane, hexane and 2-methylpentane in an open test tube over a Bunsen burner and recording the temperature at which each liquid boils.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. A student plans to find the",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student plans to find the effect of chain length on volatility by heating pentane, hexane and 2-methylpentane in an open test tube over a Bunsen burner and recording the temperature at which each liquid boils. Evaluate the validity and safety of this plan.\" Beside it `m7-bromine-water-colourless-v1.png` small (coded tag \"sample\") above `m5x-bunsen-burner-v1.png` (inspected 22 Oct: a lit Bunsen burner with a blue flame on a steel base, no hands, no text), no arrows. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no structures, no crosses, no hazard chips.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "on \"branched\" \"2-methylpentane\" in the question is underlined and its skeletal formula draws beside hexane's, the branch amber (tag \"two changes: length and shape\").",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "branched / fire / Instead",
+        "On the spoken cues: On \"fire\" \"Bunsen burner\" and \"open test tube\" are underlined; grey vapour wisps from the tube reach the flame and a terracotta flash marks it; \"pentane\" is underlined with a chip \"boils at 36 °C\". On \"Instead\" the scene 4 set-up appears small in its fume cupboard; answer chip \"not valid for chain length (branched isomer changes shape too), not safe (flame + flammable vapour): straight chains, evaporative cooling,",
+        "explain",
+        "on \"branched\" \"2-methylpentane\" in the question is underlined and its skeletal formula draws beside hexane's, the branch amber (tag \"two changes: length and shape\"). On \"fire\" \"Bunsen burner\" and \"open test tube\" are underlined; grey vapour wisps from the tube reach the flame and a terracotta flash marks it; \"pentane\" is underlined with a chip \"boils at 36 °C\". On \"Instead\" the scene 4 set-up appears small in its fume cupboard; answer chip \"not valid for chain length (branched isomer changes shape too), not safe (flame + flammable vapour): straight chains, evaporative cooling, no flames, fume cupboard\". On \"doesn't fix it\" a chip \"use a smaller flame\" fades in and is crossed (caption \"any flame can ignite the vapour\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 Straight chains, one series: only length changes.\"",
+        "Decision rule and handoff: So: choose straight-chain members of one series, test a property you can measure without flames, keep everything but chain length the same, repeat, and back it up with published data.",
+        "Next",
+        "On the spoken cues: \"2 No-flame property: evaporative cooling (ΔT).\" \"3 Control paper, soak, start temperature, air flow; 3 trials.\" \"4 Extend with data-book boiling points.\" \"5 Explain: intermolecular forces, not covalent bonds.\" On \"Next\" a chip \"Next: what can add across a C=C bond?\" appears with a small teal skeletal C=C.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Straight chains, one series: only length changes.\" \"2 No-flame property: evaporative cooling (ΔT).\" \"3 Control paper, soak, start temperature, air flow; 3 trials.\" \"4 Extend with data-book boiling points.\" \"5 Explain: intermolecular forces, not covalent bonds.\" On \"Next\" a chip \"Next: what can add across a C=C bond?\" appears with a small teal skeletal C=C. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7P02C_ROWS = {
+    "hook": [
+        "adjust",
+        "two `p03-dropper-bottle-v1.png` plates left, coded labels on their blank labels: \"cyclohexane C₆H₁₂\" (grey-blue edge) and \"cyclohexene C₆H₁₀\" (teal edge); on \"cyclohexene\" small skeletal rings draw above them (the second with one teal double bond), then dim.",
+        "Hook (one colour vanishes, one only seems to): Here are two clear liquids, cyclohexane and cyclohexene.",
+        "cyclohexene / vanishes / layer",
+        "On the spoken cues: Centre: two `m7-bromine-water-orange-v1.png` tubes side by side on `m6-white-tile-v1.png`. Coded drops fall from each bottle into its tube; `m5x-stopper-v1.png` drops onto each; both tubes rock (shake). On \"vanishes\" the cyclohexene tube cross-fades in place to `m7-bromine-layers-colourless-v1.png` (tag \"colour gone\"). The cyclohexane tube cross-fades to `m7-bromine-layers-orange-top-v1.png`; on \"layer\" a pen ring",
+        "explain",
+        "two `p03-dropper-bottle-v1.png` plates left, coded labels on their blank labels: \"cyclohexane C₆H₁₂\" (grey-blue edge) and \"cyclohexene C₆H₁₀\" (teal edge); on \"cyclohexene\" small skeletal rings draw above them (the second with one teal double bond), then dim. Centre: two `m7-bromine-water-orange-v1.png` tubes side by side on `m6-white-tile-v1.png`. Coded drops fall from each bottle into its tube; `m5x-stopper-v1.png` drops onto each; both tubes rock (shake). On \"vanishes\" the cyclohexene tube cross-fades in place to `m7-bromine-layers-colourless-v1.png` (tag \"colour gone\"). The cyclohexane tube cross-fades to `m7-bromine-layers-orange-top-v1.png`; on \"layer\" a pen ring circles its orange top layer and a dashed ghost tag \"decolourised?\" appears beside the pale lower layer with a question mark. Heading writes: \"Gone, or just moved?\". Bright at the end: the heading, the ring and the question tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "what-it-means": [
+        "new",
+        "the board clears.",
+        "What the colour change means: You've seen the chemistry in the last two videos.",
+        "used up / double bond",
+        "On the spoken cues: A small c04a equation strip writes in grey at the top: \"C=C + Br₂ → addition product\" with a \"last video\" chip; on \"used up\" an orange Br₂ dumbbell beside a teal \"C=C\" splits and docks, and the dumbbell's orange fades (tag \"Br₂ used up → colour gone\"). A grey line beneath: \"alkane: no C=C → nothing adds (dark)\" with c04b's \"last video\" chip. On \"double bond\" the two skeletal rings return large side by side, the",
+        "explain",
+        "the board clears. A small c04a equation strip writes in grey at the top: \"C=C + Br₂ → addition product\" with a \"last video\" chip; on \"used up\" an orange Br₂ dumbbell beside a teal \"C=C\" splits and docks, and the dumbbell's orange fades (tag \"Br₂ used up → colour gone\"). A grey line beneath: \"alkane: no C=C → nothing adds (dark)\" with c04b's \"last video\" chip. On \"double bond\" the two skeletal rings return large side by side, the single difference ringed in teal on cyclohexene (tag \"one C=C: the only difference\"); a green tick \"fair pair\". Bright at the end: the two rings, the teal ring mark and the tick. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick"
+        ],
+        "Hold about 1 second"
+    ],
+    "fair-test": [
+        "adjust",
+        "the board clears.",
+        "Planning a fair test: Now plan it so the result can only come from that double bond.",
+        "matched / water / white tile / sunlight",
+        "On the spoken cues: `m7-fume-cupboard-v1.png` at lower opacity behind the centre. Three `m7-bromine-water-orange-v1.png` tubes in a row on the white tile, coded labels under them as they are named: \"cyclohexene\", \"cyclohexane\", \"control\". On \"matched\" `m5x-graduated-pipette-v1.png` tilts along a coded arc over each tube in turn (no hands) and a method card writes in the right zone: \"2.0 mL bromine water (same bottle) + 1.0 mL sample\".",
+        "explain",
+        "the board clears. `m7-fume-cupboard-v1.png` at lower opacity behind the centre. Three `m7-bromine-water-orange-v1.png` tubes in a row on the white tile, coded labels under them as they are named: \"cyclohexene\", \"cyclohexane\", \"control\". On \"matched\" `m5x-graduated-pipette-v1.png` tilts along a coded arc over each tube in turn (no hands) and a method card writes in the right zone: \"2.0 mL bromine water (same bottle) + 1.0 mL sample\". On \"water\" the third tube's label brightens: \"control: + 1.0 mL water\" (tag \"same dilution, nothing to react with\"). Stoppers drop on; each tube rocks for ten short beats while a coded \"10 s\" chip counts (card line \"stopper; shake 10 s\"). On \"white tile\" the tile brightens under the tubes (card line \"white tile behind: faint colour shows\"). On \"sunlight\" a soft sun icon at the window edge is crossed (card line \"normal room light; read at once\") and a grey tag writes \"bright light: slow alkane reaction (scene 6)\". Earlier card lines dim. Bright at the end: the three labels and the last card line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "alkene-result": [
+        "adjust",
+        "the cyclohexene tube moves to the centre and cross-fades in place from `m7-bromine-water-orange-v1.png` to `m7-bromine-layers-colourless-v1.png` on \"within seconds\" (tag \"colourless: both layers\").",
+        "The cyclohexene result: Cyclohexene first.",
+        "within seconds / one, two-dibromocyclohexane / addition",
+        "On the spoken cues: The layer lens hovers over the top layer: small cyclohexene rings, each with a teal double bond, meet orange Br₂ dumbbells, which vanish as product molecules form. The tube shrinks to the left. Centre: the ink ball-and-stick cyclohexene (engine3d), its two C=C carbons flat; Br₂ splits (c04a's reagent splitter) and on \"one, two-dibromocyclohexane\" one Br docks on each carbon, both carbons turning tetrahedral. On",
+        "explain",
+        "the cyclohexene tube moves to the centre and cross-fades in place from `m7-bromine-water-orange-v1.png` to `m7-bromine-layers-colourless-v1.png` on \"within seconds\" (tag \"colourless: both layers\"). The layer lens hovers over the top layer: small cyclohexene rings, each with a teal double bond, meet orange Br₂ dumbbells, which vanish as product molecules form. The tube shrinks to the left. Centre: the ink ball-and-stick cyclohexene (engine3d), its two C=C carbons flat; Br₂ splits (c04a's reagent splitter) and on \"one, two-dibromocyclohexane\" one Br docks on each carbon, both carbons turning tetrahedral. On \"one, two-dibromocyclohexane\" a grey tag writes beside the tube: \"bromine water: one possible product; other colourless addition products can form in water\". On \"organic solvent\" the equation strip writes underneath with skeletal structures: cyclohexene + Br–Br → 1,2-dibromocyclohexane (Br on two neighbouring ring carbons), with the condition chip \"Br₂ in an organic solvent\" and \"room temperature, no catalyst\" under the arrow, and the molecular line small in grey: \"C₆H₁₀ + Br₂ → C₆H₁₀Br₂\". On \"one product\" a product counter reads \"1 product\" (c04b). Bright at the end: the structural equation, its condition chip and the counter. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "alkane-trap": [
+        "adjust",
+        "the board clears.",
+        "The cyclohexane result, and the trap: Now cyclohexane, and here's the trap.",
+        "top layer / moves / disappeared / control",
+        "On the spoken cues: The cyclohexane tube centre, cross-fading from orange to `m7-bromine-layers-orange-top-v1.png`. On \"top layer\" a bracket marks the top layer \"cyclohexane (less dense, doesn't mix)\" (grey \"from the properties video: floats on water\" chip, c03). The layer lens over the boundary: on \"moves\" orange Br₂ dumbbells drift from among the V-shaped water molecules up into the grey zigzag layer (tag \"like dissolves like:",
+        "explain",
+        "the board clears. The cyclohexane tube centre, cross-fading from orange to `m7-bromine-layers-orange-top-v1.png`. On \"top layer\" a bracket marks the top layer \"cyclohexane (less dense, doesn't mix)\" (grey \"from the properties video: floats on water\" chip, c03). The layer lens over the boundary: on \"moves\" orange Br₂ dumbbells drift from among the V-shaped water molecules up into the grey zigzag layer (tag \"like dissolves like: non-polar Br₂ → non-polar layer\", dims). On \"disappeared\" the scene 1 ghost tag \"decolourised?\" returns beside the pale lower layer and is crossed (caption \"colour moved, not used up\"). On \"control\" the control tube (`m7-bromine-water-control-v1.png`, coded label \"control: same dilution\") slides in beside it. On \"still clearly orange\" a pen bracket links the control to the cyclohexane tube's pale lower layer (\"same dilution, much paler\"), then a pen arrow runs from the pale layer up to the orange top layer (\"so it moved here\"). Answer chip: \"no reaction: bromine still there\". Bright at the end: the crossed tag, the arrow tag and the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "Cam lens zoom",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "light-demo": [
+        "adjust",
+        "the board clears.",
+        "How an alkane does react: the light demonstration: So can an alkane react with bromine at all?",
+        "light / red / substitution",
+        "On the spoken cues: A grey chip \"teacher demonstration, fume cupboard\" at the top left, `m7-fume-cupboard-v1.png` faint behind. The scene 5 cyclohexane tube (`m7-bromine-layers-orange-top-v1.png`) stands at the left; on \"take that orange top layer\" `m5x-graduated-pipette-v1.png` dips into its top layer on a coded path and tilts along a coded arc over two clean tubes in turn, and the two tubes appear as",
+        "explain",
+        "the board clears. A grey chip \"teacher demonstration, fume cupboard\" at the top left, `m7-fume-cupboard-v1.png` faint behind. The scene 5 cyclohexane tube (`m7-bromine-layers-orange-top-v1.png`) stands at the left; on \"take that orange top layer\" `m5x-graduated-pipette-v1.png` dips into its top layer on a coded path and tilts along a coded arc over two clean tubes in turn, and the two tubes appear as `m7-bromine-hexane-orange-v1.png`, each with the coded label \"bromine in cyclohexane (top layer)\". The right-hand tube moves under a dark vignette with a small grey tag \"kept in the dark\" (tag \"dark: no change\"). On \"light\" `m7-uv-lamp-v1.png` slides in beside the left-hand tube, three violet wave strokes run to it, and it cross-fades in place to `m7-bromine-hexane-faded-v1.png` (tag \"slow fade\"). Two `m6-litmus-blue-v1.png` plates slide on coded paths to just above the two tube mouths; on \"red\" faint fume wisps reach the strip over the lit tube and it cross-fades to `m6-litmus-red-v1.png` (tag \"acidic gas\"). On \"kept in the dark\" the strip over the dark tube stays blue (the plate's own pink tip is its only change) and a pen bracket joins the two strips: \"lit: red; dark: little change → HBr, not just Br₂ vapour\". On \"substitution\" the plates shrink left and c04b's swap docker runs on a skeletal cyclohexane ring: one H lifts off, a Br docks in its place, and the H joins the other Br as H–Br in a violet-outlined second box; the equation strip writes: cyclohexane + Br₂ → bromocyclohexane + HBr, with the violet \"UV light\" chip on the arrow, and the molecular line small in grey: \"C₆H₁₂ + Br₂ → C₆H₁₁Br + HBr\". Product counter: \"2 products\". Bright at the end: the equation, the counter and the litmus bracket. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "limits": [
+        "new",
+        "the board clears.",
+        "What the result can and cannot tell you: So what does a colourless result tell you?",
+        "double or triple / more slowly / hexene / quick test",
+        "On the spoken cues: A result card in the right zone, one line per cue. On \"double or triple\" two skeletal tiles (hex-1-ene with a teal C=C, hex-1-yne with a teal C≡C) get ticks \"decolourises\", and a line writes \"colourless → C=C or C≡C\". On \"more slowly\" a small grey clock icon sits on the alkyne tile (tag \"usually slower\"), with a grey \"last video\" chip (c04b); a bracket over both tiles reads \"but which?\" (grey \"molecular formula",
+        "explain",
+        "the board clears. A result card in the right zone, one line per cue. On \"double or triple\" two skeletal tiles (hex-1-ene with a teal C=C, hex-1-yne with a teal C≡C) get ticks \"decolourises\", and a line writes \"colourless → C=C or C≡C\". On \"more slowly\" a small grey clock icon sits on the alkyne tile (tag \"usually slower\"), with a grey \"last video\" chip (c04b); a bracket over both tiles reads \"but which?\" (grey \"molecular formula decides\" chip). On \"hexene\" skeletal cyclohexane and hex-1-ene appear side by side under a shared chip \"C₆H₁₂\"; cyclohexane gets \"no change\", hex-1-ene \"decolourises\" (tag \"same formula, different result\"). On \"quick test\" a grey tag writes \"other compounds too (e.g. phenols, some aldehydes)\" and the card's last line writes: \"a quick test: strong evidence, not proof\". Earlier lines dim. Bright at the end: the \"but which?\" bracket, the C₆H₁₂ pair tag and the last line. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "validity-reliability": [
+        "new",
+        "the variables card writes in the right zone, with the three tubes small at the left: on \"hydrocarbon\" \"Independent: the hydrocarbon (C=C or not)\"; on \"colour\" \"Dependent: colour of both layers\" (pen lines to both layers of each tube); the controlled list writes one item per phrase, each linked to its part: \"volumes 1.0 mL + 2.0 mL\", \"same bromine water\", \"shake 10 s\", \"room light\", \"read at once\".",
+        "Variables, validity, reliability and accuracy: Now the variables.",
+        "hydrocarbon / colour / Validity / Reliability / accuracy",
+        "On the spoken cues: The card dims and three short cards write in turn: on \"Validity\" \"Validity: one difference (C=C), plus a water control\"; on \"Reliability\" \"Reliability: repeats give the same result\" (three small repeat tube icons per sample, identical); on \"accuracy\" \"Accuracy: right answer? Known samples: cyclohexene colourless, cyclohexane not\". A small grey footer: \"Reliability means: repeated measurements under identical",
+        "explain",
+        "the variables card writes in the right zone, with the three tubes small at the left: on \"hydrocarbon\" \"Independent: the hydrocarbon (C=C or not)\"; on \"colour\" \"Dependent: colour of both layers\" (pen lines to both layers of each tube); the controlled list writes one item per phrase, each linked to its part: \"volumes 1.0 mL + 2.0 mL\", \"same bromine water\", \"shake 10 s\", \"room light\", \"read at once\". The card dims and three short cards write in turn: on \"Validity\" \"Validity: one difference (C=C), plus a water control\"; on \"Reliability\" \"Reliability: repeats give the same result\" (three small repeat tube icons per sample, identical); on \"accuracy\" \"Accuracy: right answer? Known samples: cyclohexene colourless, cyclohexane not\". A small grey footer: \"Reliability means: repeated measurements under identical circumstances give similar results.\" Bright at the end: the accuracy card and its two known results. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue (the first on \"highly flammable\"), the current row and the header bright, earlier rows dimming: \"cyclohexane, cyclohexene: highly flammable liquid and vapour (H225)\" / \"fire; vapour travels to an ignition source\" / \"no flames or hot plates near them; fume cupboard\"; \"cyclohexane vapour (H336); both: H304; cyclohexene H302\" / \"drowsiness; fatal if swallowed liquid enters the airways; harmful if swallowed\" / \"fume cupboard; small volumes; never pipette by mouth (pipette filler)\"; \"dilute bromine water: bromine vapour\" / \"irritates eyes, skin and lungs\" / \"teacher dispenses in the fume cupboard; safety glasses; gloves\"; \"stoppered tube of volatile liquid\" / \"pressure can push the stopper out; splashes\" / \"shake gently; release the stopper pointing away, inside the fume cupboard\"; \"UV lamp and hydrogen bromide gas (demonstration only)\" / \"UV: eye and skin damage; HBr: corrosive, irritates the airways\" / \"teacher only; shielded lamp; inside the fume cupboard\"; \"waste: brominated products and leftover hydrocarbons (aquatic toxicity: cyclohexane H410, cyclohexene H411)\" / \"harm to aquatic life; flammable vapour in drains\" / \"labelled organic waste container (halogenated, if your school separates them); never the sink\".",
+        "The risk assessment: The risk assessment.",
+        "highly flammable / fume cupboard / organic waste",
+        "On the spoken cues: On \"fume cupboard\" `m7-fume-cupboard-v1.png` returns small at the left; on \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste: halogenated\" and a tube plate tilts along a coded arc towards it. Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data",
+        "explain",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue (the first on \"highly flammable\"), the current row and the header bright, earlier rows dimming: \"cyclohexane, cyclohexene: highly flammable liquid and vapour (H225)\" / \"fire; vapour travels to an ignition source\" / \"no flames or hot plates near them; fume cupboard\"; \"cyclohexane vapour (H336); both: H304; cyclohexene H302\" / \"drowsiness; fatal if swallowed liquid enters the airways; harmful if swallowed\" / \"fume cupboard; small volumes; never pipette by mouth (pipette filler)\"; \"dilute bromine water: bromine vapour\" / \"irritates eyes, skin and lungs\" / \"teacher dispenses in the fume cupboard; safety glasses; gloves\"; \"stoppered tube of volatile liquid\" / \"pressure can push the stopper out; splashes\" / \"shake gently; release the stopper pointing away, inside the fume cupboard\"; \"UV lamp and hydrogen bromide gas (demonstration only)\" / \"UV: eye and skin damage; HBr: corrosive, irritates the airways\" / \"teacher only; shielded lamp; inside the fume cupboard\"; \"waste: brominated products and leftover hydrocarbons (aquatic toxicity: cyclohexane H410, cyclohexene H411)\" / \"harm to aquatic life; flammable vapour in drains\" / \"labelled organic waste container (halogenated, if your school separates them); never the sink\". On \"fume cupboard\" `m7-fume-cupboard-v1.png` returns small at the left; on \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste: halogenated\" and a tube plate tilts along a coded arc towards it. Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 3 seconds (reading hold; the table returns in the key notes). Hold about 3 seconds (reading hold; the table returns in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 3 seconds (reading hold; the table returns in the key notes)"
+    ],
+    "memory-aid": [
+        "adjust",
+        "on \"gone, not moved\" the aid writes large and handwritten: \"Gone, not moved.\"",
+        "Memory aid: To read the tube, remember: gone, not moved.",
+        "gone, not moved",
+        "On the spoken cues: Under \"Gone\" `m7-bromine-layers-colourless-v1.png` small with a tick \"used up: C=C or C≡C\"; under \"moved\" `m7-bromine-layers-orange-top-v1.png` small with a pen arrow up into the orange layer and a cross \"dissolved: no reaction\". Condition tag: \"check both layers, beside a control\".",
+        "explain",
+        "on \"gone, not moved\" the aid writes large and handwritten: \"Gone, not moved.\" Under \"Gone\" `m7-bromine-layers-colourless-v1.png` small with a tick \"used up: C=C or C≡C\"; under \"moved\" `m7-bromine-layers-orange-top-v1.png` small with a pen arrow up into the orange layer and a cross \"dissolved: no reaction\". Condition tag: \"check both layers, beside a control\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A liquid hydrocarbon, X, has the",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A liquid hydrocarbon, X, has the molecular formula C₅H₁₀. A student shakes an excess of X with a small volume of bromine water in a stoppered test tube, in normal room light. Two layers form: the top layer is orange and the bottom layer is pale yellow. Identify X as either pent-1-ene or cyclopentane. Justify your answer.\" Beside it the two names with their skeletal formulas (pent-1-ene with a plain ink double bond, not teal; cyclopentane), and `m7-bromine-layers-orange-top-v1.png` small with a coded tag \"X + bromine water, shaken\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no ticks, no arrows, no lens.",
+        [
+            "tick",
+            "Cam lens zoom",
+            "DrawPath",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "cyclopentane / dissolved",
+        "On the spoken cues: On \"cyclopentane\" its structure gets the answer chip. \"C₅H₁₀\" is underlined (tag \"both fit: formula can't decide\"). On \"dissolved\" \"the top layer is orange\" is underlined and the layer lens shows Br₂ dumbbells sitting in the top layer among grey ring molecules (tag \"top layer = X; moved, not gone\"). On \"used it all up\" \"an excess of X\" is underlined and \"pent-1-ene\" gets a grey cross \"in excess: would decolourise",
+        "explain",
+        "the card shrinks to the top. On \"cyclopentane\" its structure gets the answer chip. \"C₅H₁₀\" is underlined (tag \"both fit: formula can't decide\"). On \"dissolved\" \"the top layer is orange\" is underlined and the layer lens shows Br₂ dumbbells sitting in the top layer among grey ring molecules (tag \"top layer = X; moved, not gone\"). On \"used it all up\" \"an excess of X\" is underlined and \"pent-1-ene\" gets a grey cross \"in excess: would decolourise both layers\". On \"classic mistake\" a chip \"bottom layer paler, so X is an alkene\" fades in and is crossed (caption \"read the top layer too\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "Cam lens zoom"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card, worded as printed: \"In a teacher demonstration, a solution of bromine in heptane stays orange in a dark cupboard.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. In a teacher demonstration, a solution",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"In a teacher demonstration, a solution of bromine in heptane stays orange in a dark cupboard. In bright light its colour slowly fades, and the gas at the mouth of the test tube turns damp blue litmus paper red. Explain these observations. Write a balanced equation, using structural formulas, for the formation of one organic product.\" Beside it `m7-bromine-hexane-orange-v1.png` small with coded label \"bromine in heptane\" and `m6-litmus-blue-v1.png` small; no lamp, no arrows. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no structures, no equation, no HBr.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "single / substitution / two-bromoheptane",
+        "On the spoken cues: On \"single\" \"heptane\" is underlined and its skeletal formula draws, all single bonds (tag \"no C=C: nothing adds in the dark\"); \"stays orange in a dark cupboard\" is underlined. On \"substitution\" \"In bright light\" is underlined and the swap docker runs on carbon 2; \"turns damp blue litmus paper red\" is underlined as the H–Br box forms and the litmus plate cross-fades to `m6-litmus-red-v1.png`. On \"two-bromoheptane\"",
+        "explain",
+        "the card shrinks to the top. On \"single\" \"heptane\" is underlined and its skeletal formula draws, all single bonds (tag \"no C=C: nothing adds in the dark\"); \"stays orange in a dark cupboard\" is underlined. On \"substitution\" \"In bright light\" is underlined and the swap docker runs on carbon 2; \"turns damp blue litmus paper red\" is underlined as the H–Br box forms and the litmus plate cross-fades to `m6-litmus-red-v1.png`. On \"two-bromoheptane\" the equation writes with full structural formulas: CH₃CH₂CH₂CH₂CH₂CH₂CH₃ + Br₂ → CH₃CHBrCH₂CH₂CH₂CH₂CH₃ + HBr, \"light (UV)\" on the arrow in violet, and a small grey tag \"any one position is accepted: 1-, 2-, 3- or 4-bromoheptane\"; answer chip pins. On \"can't be right\" a chip \"C₇H₁₆ + Br₂ → C₇H₁₆Br₂\" fades in and is crossed (caption \"no bond to open: substitution gives two products\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the plan card writes, each line lighting on its words: \"1 Matched pair; same volumes; water control.\"",
+        "Decision rule and handoff: So: match the samples, add a water control, shake each tube the same way in normal light, and read both layers.",
+        "Next",
+        "On the spoken cues: \"2 Stopper, shake 10 s, white tile, room light, read at once.\" \"3 Read both layers: gone = C=C or C≡C; moved = none.\" \"4 Limits: not which bond; rings fit CnH2n; a quick test, not proof.\" `m7-bromine-water-pair-v1.png` small at the right. On \"Next\" a chip \"Next: hydrocarbon naming and reaction practice\" appears.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Matched pair; same volumes; water control.\" \"2 Stopper, shake 10 s, white tile, room light, read at once.\" \"3 Read both layers: gone = C=C or C≡C; moved = none.\" \"4 Limits: not which bond; rings fit CnH2n; a quick test, not proof.\" `m7-bromine-water-pair-v1.png` small at the right. On \"Next\" a chip \"Next: hydrocarbon naming and reaction practice\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C05_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Alcohols: what does the OH group change?\".",
+        "Hook (fewer electrons, yet a higher boiling point): The gas in this camping stove is mostly butane, which boils near minus one degree.",
+        "ethanol / water / O H",
+        "On the spoken cues: Left: `m7-camping-gas-burner-v1.png` small, coded chip \"butane, C₄H₁₀: 34 electrons, boils near −1 °C\" (c03 \"from the properties video\" chip small). On \"ethanol\" `m7-ethanol-fuel-bottle-v1.png` slides in small at the right, coded label \"ethanol\", chip \"C₂H₅OH: 26 electrons\". On \"seventy eight\" the ethanol chip adds \"boils at 78 °C\" and a small up arrow with \"about +80 °C\" appears between the two chips. On \"water\" a",
+        "explain",
+        "heading writes on: \"Alcohols: what does the OH group change?\". Left: `m7-camping-gas-burner-v1.png` small, coded chip \"butane, C₄H₁₀: 34 electrons, boils near −1 °C\" (c03 \"from the properties video\" chip small). On \"ethanol\" `m7-ethanol-fuel-bottle-v1.png` slides in small at the right, coded label \"ethanol\", chip \"C₂H₅OH: 26 electrons\". On \"seventy eight\" the ethanol chip adds \"boils at 78 °C\" and a small up arrow with \"about +80 °C\" appears between the two chips. On \"water\" a small grey chip under the bottle reads \"mixes with water\"; under the stove, \"barely dissolves\". On \"O H\" the skeletal ethanol draws above the bottle and its OH is ringed red, pulsing once; as it pulses, the two property chips and the \"mixes with water\" and \"barely dissolves\" chips dim. Bright at the end: the heading, the \"+80 °C\" arrow and the ringed OH. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "hydroxyl-group": [
+        "new",
+        "the plates leave.",
+        "The hydroxyl group and its polar bond: On paper, take ethane and swap one hydrogen for an O H group.",
+        "alcohol / polar / lone pairs",
+        "On the spoken cues: Task chip \"The OH group\". Ethane in full structural form; one H on the right carbon lifts off (grey) and an O–H docks in its place, drawn as separate O and H atoms (C–O–H, site Exam Rule); the OH is ringed red and the name builder writes \"ethan\" + \"ol\". On \"alcohol\" a chip writes \"alcohol: OH on a carbon with only single bonds\". A small grey line \"covalent OH, not OH⁻: not alkaline\" writes and dims. The ink",
+        "explain",
+        "the plates leave. Task chip \"The OH group\". Ethane in full structural form; one H on the right carbon lifts off (grey) and an O–H docks in its place, drawn as separate O and H atoms (C–O–H, site Exam Rule); the OH is ringed red and the name builder writes \"ethan\" + \"ol\". On \"alcohol\" a chip writes \"alcohol: OH on a carbon with only single bonds\". A small grey line \"covalent OH, not OH⁻: not alkaline\" writes and dims. The ink ball-and-stick ethanol builds beside the structure (engine3d port), showing the bent C–O–H. On \"polar\" the polar pull runs on the O–H bond: the shared pair slides towards O, \"δ−\" writes on O and \"δ+\" on H (tag \"polar O–H: intramolecular\"). On \"lone pairs\" two red dot pairs glow on the oxygen of both the structure and the model (tag \"2 lone pairs\"). Bright at the end: the model with δ− and δ+, the lone pairs and the polar tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "naming-alcohols": [
+        "new",
+        "the board clears.",
+        "Naming alcohols: Naming uses the rules you already know, with one change.",
+        "ol / propan-one-ol / propan-two-ol",
+        "On the spoken cues: Task chip \"Name it\". The name builder (c01) shows three slots: \"branches\", \"stem\", \"ending\". Propan-1-ol draws in full structural form (OH ringed red, C1 to C3 locants small). The chain glows pale blue on \"longest chain\"; on \"ol\" the builder writes \"propane\", the final \"e\" is struck through in grey and \"ol\" writes in red in the ending slot; on \"number\" the locant counter pops \"1\" on the OH carbon; on \"propan-one-ol\"",
+        "explain",
+        "the board clears. Task chip \"Name it\". The name builder (c01) shows three slots: \"branches\", \"stem\", \"ending\". Propan-1-ol draws in full structural form (OH ringed red, C1 to C3 locants small). The chain glows pale blue on \"longest chain\"; on \"ol\" the builder writes \"propane\", the final \"e\" is struck through in grey and \"ol\" writes in red in the ending slot; on \"number\" the locant counter pops \"1\" on the OH carbon; on \"propan-one-ol\" the builder resolves \"propan-1-ol\", the \"1\" sliding in before \"ol\". On \"propan-two-ol\" a ghost copy moves the OH to the middle carbon; the builder writes \"propan-2-ol\" (small grey chip \"c02: position isomers\"). On \"Methanol and ethanol\" two small structures appear with their names, no locant, and a grey tag \"one position only\". Bright at the end: the two propanol names and the \"one position only\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "oh-wins-numbering": [
+        "new",
+        "the board clears.",
+        "The OH wins the numbering: With a branch as well, the O H wins the numbering, like a double bond, because it's named in the ending.",
+        "four-methylpentan-two-ol / wrong",
+        "On the spoken cues: The skeletal formula of 4-methylpentan-2-ol draws (CH₃CH(OH)CH₂CH(CH₃)CH₃; OH ringed red, methyl branch amber). The chain of five glows pale blue. On \"wins the numbering\" a small grey chip recalls c01: \"the multiple bond wins: now the OH wins\". Locants pop from the left: \"1\", \"2\" (OH), \"3\", \"4\" (methyl), \"5\"; on \"four-methylpentan-two-ol\" the builder writes \"4-methyl\" + \"pentan\" + \"-2-ol\". Then ghost locants count",
+        "explain",
+        "the board clears. The skeletal formula of 4-methylpentan-2-ol draws (CH₃CH(OH)CH₂CH(CH₃)CH₃; OH ringed red, methyl branch amber). The chain of five glows pale blue. On \"wins the numbering\" a small grey chip recalls c01: \"the multiple bond wins: now the OH wins\". Locants pop from the left: \"1\", \"2\" (OH), \"3\", \"4\" (methyl), \"5\"; on \"four-methylpentan-two-ol\" the builder writes \"4-methyl\" + \"pentan\" + \"-2-ol\". Then ghost locants count from the right in grey: the methyl gets \"2\", the OH \"4\"; on \"wrong\" a chip \"2-methylpentan-4-ol\" fades in and is crossed (caption \"the OH gets the lower number\"). Bright at the end: the structure with left locants, the correct name and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "classify-alcohols": [
+        "new",
+        "the board clears.",
+        "Primary, secondary and tertiary: Now find the carbon holding the O H, and count the carbons bonded directly to it.",
+        "carbons / secondary / tertiary",
+        "On the spoken cues: Task chip \"Classify it\". Three full structural formulas in a row: ethanol, propan-2-ol, 2-methylpropan-2-ol. On \"carbons\" the carbon counter runs on ethanol: the C–OH carbon ringed red, its one carbon neighbour ticks \"1\", class chip \"primary (1°)\". On \"secondary\" it runs on propan-2-ol: \"1\", \"2\", chip \"secondary (2°)\". On \"tertiary\" it runs on 2-methylpropan-2-ol: \"1\", \"2\", \"3\", chip \"tertiary (3°)\". On \"not",
+        "explain",
+        "the board clears. Task chip \"Classify it\". Three full structural formulas in a row: ethanol, propan-2-ol, 2-methylpropan-2-ol. On \"carbons\" the carbon counter runs on ethanol: the C–OH carbon ringed red, its one carbon neighbour ticks \"1\", class chip \"primary (1°)\". On \"secondary\" it runs on propan-2-ol: \"1\", \"2\", chip \"secondary (2°)\". On \"tertiary\" it runs on 2-methylpropan-2-ol: \"1\", \"2\", \"3\", chip \"tertiary (3°)\". On \"not hydrogens or the oxygen\" the H atoms and O on the tertiary carbon flash grey with a small \"not counted\" tag. On \"Methanol\" a small methanol structure appears at the far left, its carbon counter showing \"0\", chip \"primary (by convention)\". On the last \"primary\" a small grey forward chip \"reactions: later video\" writes and dims (silent). The methanol chip and the \"not counted\" tag then dim before the end state. Bright at the end: the three class chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "class-not-branching": [
+        "new",
+        "the board clears. 2-methylpropan-1-ol draws in full structural form, the branch amber.",
+        "The class comes from the OH carbon, not the branching: Don't judge the class by how branched a molecule looks.",
+        "one / count",
+        "On the spoken cues: A grey ghost chip \"branched, so tertiary?\" fades in and out (said positively, not crossed). On \"one\" the carbon counter runs on the C–OH carbon (an end CH₂): one tick \"1\", chip \"primary (1°)\". On \"count\" a two-step chip writes \"1 find the C–OH carbon; 2 count its carbons\". Bright at the end: the structure, the \"primary\" chip and the two-step chip.",
+        "explain",
+        "the board clears. 2-methylpropan-1-ol draws in full structural form, the branch amber. A grey ghost chip \"branched, so tertiary?\" fades in and out (said positively, not crossed). On \"one\" the carbon counter runs on the C–OH carbon (an end CH₂): one tick \"1\", chip \"primary (1°)\". On \"count\" a two-step chip writes \"1 find the C–OH carbon; 2 count its carbons\". Bright at the end: the structure, the \"primary\" chip and the two-step chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "hydrogen-bonds": [
+        "new",
+        "the board clears.",
+        "Hydrogen bonds between alcohol molecules: Back to the boiling point puzzle.",
+        "lone pair / dispersion",
+        "On the spoken cues: Task chip \"Why higher?\". Four ink ball-and-stick ethanol molecules in a loose cluster, each O carrying δ− and its lone pairs, each OH hydrogen δ+. On \"lone pair\" the hydrogen-bond linker draws a dotted violet line from one δ+ H to a lone pair on a neighbour's O, then two more form around the cluster (tag \"hydrogen bond\"); small grey tags \"donor: H\" and \"acceptor: lone pair on O\" sit on the first one, and a small",
+        "explain",
+        "the board clears. Task chip \"Why higher?\". Four ink ball-and-stick ethanol molecules in a loose cluster, each O carrying δ− and its lone pairs, each OH hydrogen δ+. On \"lone pair\" the hydrogen-bond linker draws a dotted violet line from one δ+ H to a lone pair on a neighbour's O, then two more form around the cluster (tag \"hydrogen bond\"); small grey tags \"donor: H\" and \"acceptor: lone pair on O\" sit on the first one, and a small grey callback chip \"c02: ethanol 78 °C, methoxymethane −25 °C\" writes and dims with the first tag (screen only). On \"far weaker than a covalent bond\" the O–H bond in one molecule glows solid ink beside the dotted violet line (tag \"covalent O–H: much stronger\", dims). On \"dispersion\" dotted pale-blue flicker lines appear between the ethyl chains (tag \"dispersion forces too\"). Bright at the end: the cluster with violet and pale-blue lines and the two tags. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "same-electrons": [
+        "new",
+        "the board clears.",
+        "Same electrons, very different boiling points: So compare a fair pair.",
+        "electrons / one hundred and twenty / O H bond",
+        "On the spoken cues: Two skeletal structures side by side: propane and ethanol, each with a chip \"26 electrons\" (on \"electrons\" the chips pulse together; tag \"similar dispersion forces\"). The boiling point strip (c03) draws at the right with its dashed \"room temperature, 25 °C\" line. Propane drops to \"−42 °C\"; ethanol rises to \"78 °C\"; on \"one hundred and twenty\" a bracket between the marks reads \"about 120 °C: hydrogen bonding\". As the",
+        "explain",
+        "the board clears. Two skeletal structures side by side: propane and ethanol, each with a chip \"26 electrons\" (on \"electrons\" the chips pulse together; tag \"similar dispersion forces\"). The boiling point strip (c03) draws at the right with its dashed \"room temperature, 25 °C\" line. Propane drops to \"−42 °C\"; ethanol rises to \"78 °C\"; on \"one hundred and twenty\" a bracket between the marks reads \"about 120 °C: hydrogen bonding\". As the bracket writes, the \"similar dispersion forces\" tag dims. When the force view runs, the two skeletal structures and their \"26 electrons\" chips shrink and dim; the force view runs under each: propane's molecules held by pale-blue lines only; ethanol's by pale-blue and violet lines. On \"O H bond\" the ethanol molecules drift apart: the violet and pale-blue lines stretch and vanish, while each O–H glows ink with a green tick \"covalent bonds: all intact\"; a chip \"boiling breaks the O–H bond?\" fades in and is crossed (caption \"boiling separates molecules\"). Bright at the end: the 120 °C bracket, the green tick and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "along-the-series": [
+        "new",
+        "the board clears; the boiling point strip stays.",
+        "Along the series: the chain sets the trend: Along the series, each of these alcohols has one O H, so the hydrogen bonding is about the same.",
+        "butan-one-ol / climbs",
+        "On the spoken cues: A short series ladder (c03) of skeletal primary alcohols builds upward: methanol, ethanol, propan-1-ol, butan-1-ol, each OH ringed red and each new CH₂ glowing with \"+CH₂\". A grey tag \"1 OH each: similar hydrogen bonding\" sits beside the OH column. Each molecule drops to its mark as named: \"65 °C\", \"78 °C\", \"97 °C\", on \"butan-one-ol\" \"118 °C\". On \"climbs\" an up arrow runs beside the marks (tag \"longer chain:",
+        "explain",
+        "the board clears; the boiling point strip stays. A short series ladder (c03) of skeletal primary alcohols builds upward: methanol, ethanol, propan-1-ol, butan-1-ol, each OH ringed red and each new CH₂ glowing with \"+CH₂\". A grey tag \"1 OH each: similar hydrogen bonding\" sits beside the OH column. Each molecule drops to its mark as named: \"65 °C\", \"78 °C\", \"97 °C\", on \"butan-one-ol\" \"118 °C\". On \"climbs\" an up arrow runs beside the marks (tag \"longer chain: stronger dispersion\"). Bright at the end: the four marks, the up arrow and its tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "isomers-shape": [
+        "new",
+        "the board clears; the strip clears its marks.",
+        "Isomers: shape, not the label: Now hold the formula fixed.",
+        "fall / ball / shape",
+        "On the spoken cues: Three ink ball-and-stick isomers in a row (engine3d port), names and class chips small (1°, 2°, 3°), a shared chip \"C₄H₁₀O: same electrons, 1 OH each\". On \"fall\" each drops to its mark: \"118 °C\", \"100 °C\", \"82 °C\". On \"ball\" the row of three dims and two contact pairs replace it (four models): a butan-1-ol pair upper and a 2-methylpropan-2-ol pair lower; butan-2-ol's mark stays on the strip only. The contact",
+        "explain",
+        "the board clears; the strip clears its marks. Three ink ball-and-stick isomers in a row (engine3d port), names and class chips small (1°, 2°, 3°), a shared chip \"C₄H₁₀O: same electrons, 1 OH each\". On \"fall\" each drops to its mark: \"118 °C\", \"100 °C\", \"82 °C\". On \"ball\" the row of three dims and two contact pairs replace it (four models): a butan-1-ol pair upper and a 2-methylpropan-2-ol pair lower; butan-2-ol's mark stays on the strip only. The contact highlighter (c03) shades a long overlap between the two butan-1-ol models and a small patch between the two 2-methylpropan-2-ol models (handwritten tags \"spaghetti\" and \"ball\", c03 callback). On \"shape\" a chip writes \"compact shape → less contact → lower boiling point\", and the class chips dim while the shapes stay bright. Bright at the end: the two contact pairs and the shape chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Mark highlight"
+        ],
+        "Hold about 1 second"
+    ],
+    "solubility-water": [
+        "new",
+        "the board clears; the strip leaves.",
+        "Solubility: the OH can replace what it breaks: Solubility comes down to the same O H.",
+        "can / any",
+        "On the spoken cues: Task chip \"Why does ethanol mix with water?\". The water lattice (c03) draws with dotted violet hydrogen bonds. A small c03 thumbnail shows hexane pushed out (grey tag \"hexane: breaks, can't replace\", dims). On \"can\" an ethanol molecule slides into the lattice: two of water's violet bonds break and, at once, the ethanol OH forms new violet bonds to neighbouring water molecules, both as donor and acceptor (tag \"OH ↔",
+        "explain",
+        "the board clears; the strip leaves. Task chip \"Why does ethanol mix with water?\". The water lattice (c03) draws with dotted violet hydrogen bonds. A small c03 thumbnail shows hexane pushed out (grey tag \"hexane: breaks, can't replace\", dims). On \"can\" an ethanol molecule slides into the lattice: two of water's violet bonds break and, at once, the ethanol OH forms new violet bonds to neighbouring water molecules, both as donor and acceptor (tag \"OH ↔ water: hydrogen bonds replaced\"). On \"any\" a small row of three skeletal alcohols (methanol, ethanol, propan-1-ol) writes with a chip \"miscible: mix in any proportion\". Bright at the end: the ethanol in the lattice, its tag and the miscible chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "longer-chain-solubility": [
+        "adjust",
+        "the ethanol leaves the lattice.",
+        "A longer chain dissolves less: But the non-polar chain still has to push in between water molecules, breaking hydrogen bonds it can't replace.",
+        "drops / layer",
+        "On the spoken cues: A hexan-1-ol molecule (skeletal, OH ringed red, chain pale blue) pushes in: its OH forms violet bonds, but along the chain several violet water bonds flash red-brown and break with nothing replacing them (tag \"long chain: breaks bonds, can't replace\"). On \"drops\" a horizontal strip writes left to right, each label lighting and the previous one dimming: \"C1 to C3: mix in any proportion\", \"butan-1-ol: partly\",",
+        "explain",
+        "the ethanol leaves the lattice. A hexan-1-ol molecule (skeletal, OH ringed red, chain pale blue) pushes in: its OH forms violet bonds, but along the chain several violet water bonds flash red-brown and break with nothing replacing them (tag \"long chain: breaks bonds, can't replace\"). On \"drops\" a horizontal strip writes left to right, each label lighting and the previous one dimming: \"C1 to C3: mix in any proportion\", \"butan-1-ol: partly\", \"hexan-1-ol: barely\" (grey tag \"no sharp cut-off\"). On \"layer\" the three-label strip dims and `m7-alcohol-water-tubes-v1.png` appears small at the right; coded labels point to the left tube (\"ethanol + water: one layer\") and then the right tube (\"hexan-1-ol on top, water below\"). After the tube labels, during the hold, a small chip writes silently: \"long chains: mix with non-polar solvents (dispersion forces)\" (key note 4 keeps it). Bright at the end: the two tube labels and the solvent chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, the O H group gives an alcohol hydrogen bonds.",
+        "Size / count",
+        "On the spoken cues: Handwritten line: \"Same size? Hydrogen bonding wins. Same family? Size wins.\" Under it, three small coded cards light one at a time on their cues, each dimming as the next lights: \"OH: hydrogen bonds → higher boiling point than an alkane of the same size; small alcohols mix with water\"; \"longer chain: higher boiling point, lower solubility (polar head, non-polar tail)\"; on \"count\" \"classify: C–OH carbon, count its",
+        "explain",
+        "the board clears. Handwritten line: \"Same size? Hydrogen bonding wins. Same family? Size wins.\" Under it, three small coded cards light one at a time on their cues, each dimming as the next lights: \"OH: hydrogen bonds → higher boiling point than an alkane of the same size; small alcohols mix with water\"; \"longer chain: higher boiling point, lower solubility (polar head, non-polar tail)\"; on \"count\" \"classify: C–OH carbon, count its carbons: 1°, 2°, 3°\". The small propane and ethanol marks from scene 8 sit beside the first card. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. An alcohol has the condensed formula",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"An alcohol has the condensed structural formula CH₃CH(OH)CH(CH₃)CH₃. Give its IUPAC name, and classify it as a primary, secondary or tertiary alcohol. Justify your classification.\" Beside it the skeletal formula in plain ink (no colours, no locants, no ring on the OH). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no carbon counter, no memory aid.",
+        [
+            "ScribbleCircle",
+            "NumberTicker",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "four / two / three-methylbutan-two-ol / secondary / wins",
+        "On the spoken cues: On \"four\" the chain of four glows pale blue on the skeletal formula and the OH is ringed red. On \"two\" locants pop from the left: \"1\", \"2\" (OH), \"3\" (methyl), \"4\"; \"IUPAC name\" is underlined. On \"three-methylbutan-two-ol\" the builder writes \"3-methyl\" + \"butan\" + \"-2-ol\" (the answer, bright). On \"secondary\" the carbon counter ticks \"1\", \"2\" on the C–OH carbon's neighbours, chip \"secondary (2°)\"; \"classify\" and",
+        "explain",
+        "the card stays, shrunk to the top. On \"four\" the chain of four glows pale blue on the skeletal formula and the OH is ringed red. On \"two\" locants pop from the left: \"1\", \"2\" (OH), \"3\" (methyl), \"4\"; \"IUPAC name\" is underlined. On \"three-methylbutan-two-ol\" the builder writes \"3-methyl\" + \"butan\" + \"-2-ol\" (the answer, bright). On \"secondary\" the carbon counter ticks \"1\", \"2\" on the C–OH carbon's neighbours, chip \"secondary (2°)\"; \"classify\" and \"Justify your classification\" are underlined. On \"wins\" a chip \"2-methylbutan-3-ol\" fades in and is crossed (caption \"number from the end nearer the OH\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"Butane, C₄H₁₀, boils at −1 °C.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Butane boils at minus one degree.",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"Butane, C₄H₁₀, boils at −1 °C. Propan-1-ol, CH₃CH₂CH₂OH, boils at 97 °C. Both molecules have 34 electrons. Explain the difference in boiling points, with reference to the intramolecular and intermolecular bonding present.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "thirty four electrons / hydrogen bonds / covalent / Name",
+        "On the spoken cues: On \"thirty four electrons\" \"Both molecules have 34 electrons\" is underlined and two skeletal structures draw (butane; propan-1-ol with its OH ringed red), chip \"similar dispersion forces\". On \"hydrogen bonds\" \"intermolecular\" is underlined; the force view shows propan-1-ol molecules with violet hydrogen bonds and pale-blue dispersion lines, butane with pale-blue lines only. On \"covalent\" \"intramolecular\" is",
+        "explain",
+        "the card stays, shrunk to the top. On \"thirty four electrons\" \"Both molecules have 34 electrons\" is underlined and two skeletal structures draw (butane; propan-1-ol with its OH ringed red), chip \"similar dispersion forces\". On \"hydrogen bonds\" \"intermolecular\" is underlined; the force view shows propan-1-ol molecules with violet hydrogen bonds and pale-blue dispersion lines, butane with pale-blue lines only. On \"covalent\" \"intramolecular\" is underlined and the covalent bonds in both glow ink with a green tick \"intact when boiling\". Answer chip (bright): \"propan-1-ol: hydrogen bonds + similar dispersion → more energy to separate → higher boiling point; covalent bonds not broken\". On \"Name\" a chip \"Propan-1-ol is polar, so it has a higher boiling point.\" fades in and is crossed (caption \"name the force: hydrogen bonding\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So one O H group adds hydrogen bonding, and the chain decides how much the dispersion forces add.",
+        "Next",
+        "On the spoken cues: The memory aid line returns small at the top with its three cards. `m7-ethanol-fuel-bottle-v1.png` appears small at the right with its \"ethanol\" label. On \"Next\" a chip \"Next: how can we make ethanol?\" appears.",
+        "explain",
+        "the board clears. The memory aid line returns small at the top with its three cards. `m7-ethanol-fuel-bottle-v1.png` appears small at the right with its \"ethanol\" label. On \"Next\" a chip \"Next: how can we make ethanol?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C06_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"How can we make ethanol?\".",
+        "Hook (one molecule, three starting materials): This bottle holds ethanol.",
+        "sugar / ethene / haloalkane / out",
+        "On the spoken cues: Centre bottom: `m7-ethanol-fuel-bottle-v1.png` small with the coded label \"ethanol, C₂H₅OH\". The route board draws three empty columns above it. On \"sugar\" `m7-fermentation-setup-start-v1.png` appears small at the top of the left column (coded label \"glucose + yeast\"). On \"ethene\" `m7-crude-oil-barrel-v1.png` appears small at the top of the middle column with a small coded ethene structure (CH₂=CH₂, teal C=C) and a",
+        "explain",
+        "heading writes on: \"How can we make ethanol?\". Centre bottom: `m7-ethanol-fuel-bottle-v1.png` small with the coded label \"ethanol, C₂H₅OH\". The route board draws three empty columns above it. On \"sugar\" `m7-fermentation-setup-start-v1.png` appears small at the top of the left column (coded label \"glucose + yeast\"). On \"ethene\" `m7-crude-oil-barrel-v1.png` appears small at the top of the middle column with a small coded ethene structure (CH₂=CH₂, teal C=C) and a label \"crude oil or gas → ethene\". On \"haloalkane\" a coded bromoethane structure (CH₃CH₂Br) appears at the top of the right column, label \"bromoethane\" (small grey \"in a lab\"). As three arrows converge on the bottle (tag \"same product\"), the three column labels dim. On \"out\" three small grey chips write under the columns, each lighting in turn: \"start\", \"conditions\", \"separation\". Bright at the end: the heading, the three converging arrows and the three chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "hydration-equilibrium": [
+        "new",
+        "the board clears.",
+        "Route 1: hydration, and the equilibrium arrow: Start with the route you've already seen.",
+        "equilibrium / one",
+        "On the spoken cues: Task chip \"Route 1: hydration\". c04a's conditions card slides in small at the right, its hydration row lit briefly, then dims (small grey chip \"from the addition video\"). The equation stage strip builds: CH₂=CH₂ (teal) + H₂O; the arrow, with navy chips \"H₃PO₄ catalyst\", \"about 300 °C\", \"60 to 70 atm\"; CH₃CH₂OH (OH ringed red). On \"equilibrium\" a faint reverse arrow runs from ethanol back to ethene and steam and the",
+        "explain",
+        "the board clears. Task chip \"Route 1: hydration\". c04a's conditions card slides in small at the right, its hydration row lit briefly, then dims (small grey chip \"from the addition video\"). The equation stage strip builds: CH₂=CH₂ (teal) + H₂O; the arrow, with navy chips \"H₃PO₄ catalyst\", \"about 300 °C\", \"60 to 70 atm\"; CH₃CH₂OH (OH ringed red). On \"equilibrium\" a faint reverse arrow runs from ethanol back to ethene and steam and the single arrow splits into the navy equilibrium arrow with two half heads, as c04a drew it; a small chip writes \"⇌: reversible (Module 5)\". State symbols write in grey: \"(g) + (g) ⇌ (g)\". On \"one\" two small gas-particle dots on the left merge into one on the right; a chip writes \"2 gas → 1 gas: high pressure favours ethanol\" (small grey \"from the addition video\" chip); the \"H₃PO₄ catalyst\" and \"about 300 °C\" chips dim. Bright at the end: the strip with ⇌, the \"60 to 70 atm\" chip and the pressure chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "catalyst-temperature": [
+        "new",
+        "the strip stays with its state symbols; the pressure chip dims.",
+        "The catalyst and the temperature: Two more conditions matter for judging this route.",
+        "slowly",
+        "On the spoken cues: On \"The catalyst\" the catalyst chip lights and pulses; on \"both directions\" it pulses again and two equal arrows flash on both half heads (tag \"catalyst: faster both ways, same position\"). On \"compromise\" a small balance graphic writes: left pan \"lower temperature: more ethanol\", right pan \"higher temperature: faster\"; on \"slowly\" the pointer settles at a mark \"about 300 °C\" (tag \"rate against yield\") and the two",
+        "explain",
+        "the strip stays with its state symbols; the pressure chip dims. On \"The catalyst\" the catalyst chip lights and pulses; on \"both directions\" it pulses again and two equal arrows flash on both half heads (tag \"catalyst: faster both ways, same position\"). On \"compromise\" a small balance graphic writes: left pan \"lower temperature: more ethanol\", right pan \"higher temperature: faster\"; on \"slowly\" the pointer settles at a mark \"about 300 °C\" (tag \"rate against yield\") and the two pan labels dim. A grey ghost chip \"higher temperature, higher yield?\" fades in and out (said positively). Bright at the end: the catalyst tag and the balance at 300 °C with its tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "recycle-and-separate": [
+        "adjust",
+        "the strip shrinks to the top.",
+        "Little reacts per pass, so recycle and separate: Even so, only a few percent of the ethene reacts on each pass through the reactor.",
+        "cooled / back / crude oil",
+        "On the spoken cues: The recycle loop draws centre: reactor box (its three condition chips small), arrow to a cooler box, arrow to a separator box. Grey ethene dots stream into the reactor; only a few turn into red-ringed ethanol dots (tag \"a few percent per pass\"). On \"cooled\" the ethanol and water dots drop to the bottom of the separator as liquid (tag \"ethanol + water condense\"). On \"back\" the remaining ethene dots return along the",
+        "explain",
+        "the strip shrinks to the top. The recycle loop draws centre: reactor box (its three condition chips small), arrow to a cooler box, arrow to a separator box. Grey ethene dots stream into the reactor; only a few turn into red-ringed ethanol dots (tag \"a few percent per pass\"). On \"cooled\" the ethanol and water dots drop to the bottom of the separator as liquid (tag \"ethanol + water condense\"). On \"back\" the remaining ethene dots return along the curved recycle arrow to the reactor inlet; the reactor and cooler box chips dim as the pass counter starts ticking \"pass 1\", \"pass 2\", \"pass 3\" (tag \"unreacted ethene recycled\"). On \"distillation\" `m7-school-distillation-setup-v1.png` flashes small at the right with a label \"distil: ethanol from water\", then dims. On \"crude oil\" the loop's tags dim and `m7-crude-oil-barrel-v1.png` appears small at the left with a tag \"non-renewable feedstock\" and a grey \"feedstock: what you start from\" chip. Bright at the end: the recycle loop and the feedstock tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "substitution-swap": [
+        "new",
+        "the board clears.",
+        "Route 2: swap the halogen for an OH: Route two starts with a haloalkane.",
+        "swapped / hydroxide / out",
+        "On the spoken cues: Task chip \"Route 2: substitution\". The strip builds: CH₃CH₂Br (full structural, Br orange-brown); \"+ NaOH(aq)\"; the arrow, with a navy chip \"heat under reflux\" (dim until scene 6); then on \"swapped\" the swap docker runs on the C–Br carbon: the Br lifts off and an OH docks in its place (ringed red), giving CH₃CH₂OH; \"+ NaBr\" slides into a grey second product box, and a small grey tag \"Na⁺ just stays in solution\"",
+        "explain",
+        "the board clears. Task chip \"Route 2: substitution\". The strip builds: CH₃CH₂Br (full structural, Br orange-brown); \"+ NaOH(aq)\"; the arrow, with a navy chip \"heat under reflux\" (dim until scene 6); then on \"swapped\" the swap docker runs on the C–Br carbon: the Br lifts off and an OH docks in its place (ringed red), giving CH₃CH₂OH; \"+ NaBr\" slides into a grey second product box, and a small grey tag \"Na⁺ just stays in solution\" writes and dims. A grey chip \"aqueous = dissolved in water\" writes under the NaOH. On \"Here's why\" the strip shrinks to the top and a large C–Br bond draws: the dipole tug slides the shared pair towards Br, \"δ+\" on C and \"δ−\" on Br. On \"hydroxide\" an OH⁻ ion (O red, \"−\" charge) drifts towards the δ+ carbon and bonds as the Br drifts away as \"Br⁻\" (tag \"δ+ carbon attracts OH⁻\"); a small grey chip \"also called nucleophilic substitution\" sits in the corner. On \"out\" a small c04b thumbnail shows its H-for-Br swap beside this Br-for-OH swap (tags \"c04b: H out\" and \"now: Br out\"). During the hold after \"out\", a smaller grey chip appears and dims without narration: \"in ethanol instead: tends to give an alkene (later video)\". Bright at the end: the δ+ carbon with the bonded OH, the \"δ+ carbon attracts OH⁻\" tag and the two swap thumbnails. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "reflux-same-carbon": [
+        "adjust",
+        "the board clears.",
+        "Why reflux, and where the OH lands: Why heat it under reflux?",
+        "reflux / back / propan-two-ol",
+        "On the spoken cues: `m7-reflux-apparatus-v1.png` appears at the left, medium-small. The strip's \"heat under reflux\" chip lights. On \"reflux\" a label points to the upright condenser (\"reflux: vapours drip back\"). On \"escape\" two small chips write beside the flask: \"bromoethane boils at 38 °C\", \"ethanol boils at 78 °C\". On \"back\" the vapour return runs: coded wisps rise into the condenser, coded droplets fall back into the flask, twice.",
+        "explain",
+        "the board clears. `m7-reflux-apparatus-v1.png` appears at the left, medium-small. The strip's \"heat under reflux\" chip lights. On \"reflux\" a label points to the upright condenser (\"reflux: vapours drip back\"). On \"escape\" two small chips write beside the flask: \"bromoethane boils at 38 °C\", \"ethanol boils at 78 °C\". On \"back\" the vapour return runs: coded wisps rise into the condenser, coded droplets fall back into the flask, twice. On \"distilled\" a small grey line \"then distil the alcohol out\" writes and dims. The plate dims. On \"propan-two-ol\" a new strip writes at the right: CH₃CHBrCH₃ + NaOH(aq) → CH₃CH(OH)CH₃ + NaBr, with the Br and the OH on the same middle carbon highlighted by a matching ring (tag \"OH takes the halogen's place\"); the name builder writes \"propan-2-ol\" (small c05 chip \"secondary, as the haloalkane was\"). Bright at the end: the propan-2-ol strip, its tag and the reflux label. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "fermentation-equation": [
+        "new",
+        "the board clears.",
+        "Route 3: fermentation, balanced: Route three is the oldest.",
+        "ferments / arrow",
+        "On the spoken cues: Task chip \"Route 3: fermentation\". The strip builds: C₆H₁₂O₆; the arrow; \"2C₂H₅OH\" (OH ringed red); \"+ 2CO₂\" in a grey second product box. On \"Check it\" an atom tally writes under each side, lighting element by element: \"C 6 | 4 + 2\", \"H 12 | 12\", \"O 6 | 2 + 4\", each with a tick. On \"arrow\" a navy chip \"yeast\" writes on the arrow (tag \"enzymes in yeast: the catalyst\"). Bright at the end: the balanced equation with",
+        "explain",
+        "the board clears. Task chip \"Route 3: fermentation\". The strip builds: C₆H₁₂O₆; the arrow; \"2C₂H₅OH\" (OH ringed red); \"+ 2CO₂\" in a grey second product box. On \"Check it\" an atom tally writes under each side, lighting element by element: \"C 6 | 4 + 2\", \"H 12 | 12\", \"O 6 | 2 + 4\", each with a tick. On \"arrow\" a navy chip \"yeast\" writes on the arrow (tag \"enzymes in yeast: the catalyst\"). Bright at the end: the balanced equation with \"yeast\" on the arrow and the three ticks. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "fermentation-setup": [
+        "adjust",
+        "the board clears; the strip stays small at the top.",
+        "The school setup, and why each condition: Here's a school setup.",
+        "water bath / out / limewater",
+        "On the spoken cues: `m7-fermentation-setup-start-v1.png` appears centre, medium (the apparatus is the content here). The condition tags light one at a time and each dims as the next lights: on \"water bath\" a tag on the bath, \"about 35 °C: enzymes work fast; too hot damages them\"; on \"out\" a tag on the bung, \"air kept out (anaerobic: no air)\", with a small grey side chip \"with O₂: some sugar → CO₂ + H₂O, less ethanol\"; on \"escape\" a tag",
+        "explain",
+        "the board clears; the strip stays small at the top. `m7-fermentation-setup-start-v1.png` appears centre, medium (the apparatus is the content here). The condition tags light one at a time and each dims as the next lights: on \"water bath\" a tag on the bath, \"about 35 °C: enzymes work fast; too hot damages them\"; on \"out\" a tag on the bung, \"air kept out (anaerobic: no air)\", with a small grey side chip \"with O₂: some sugar → CO₂ + H₂O, less ethanol\"; on \"escape\" a tag on the delivery tube, \"CO₂ escapes: no pressure build-up\". On \"limewater\" the plate cross-fades in place to `m7-fermentation-setup-bubbling-v1.png` (same position and size: froth on the mixture, bubbles in the flask and at the end of the delivery tube, the limewater now milky white); tag \"CO₂ turns limewater milky\". Bright at the end: the bubbling plate, the limewater tag and the dim strip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "distil-fermentation": [
+        "adjust",
+        "the bubbling plate shrinks to the left; its bubbles slow and stop.",
+        "It stops at about fifteen percent, so distil: After a few days, the bubbling slows.",
+        "fifteen / distil / ethanol",
+        "On the spoken cues: On \"fifteen\" a coded gauge beside the flask fills to \"about 15% ethanol\" and a small tag reads \"ethanol inhibits yeast\". On \"distil\" `m7-school-distillation-setup-v1.png` appears centre-right, medium, with a label \"distilling the fermented mixture\"; a small grey line \"filter out the yeast first\" writes and dims. On \"seventy eight\" two chips write by the thermometer: \"ethanol 78 °C\", \"water 100 °C\". On \"ethanol\"",
+        "explain",
+        "the bubbling plate shrinks to the left; its bubbles slow and stop. On \"fifteen\" a coded gauge beside the flask fills to \"about 15% ethanol\" and a small tag reads \"ethanol inhibits yeast\". On \"distil\" `m7-school-distillation-setup-v1.png` appears centre-right, medium, with a label \"distilling the fermented mixture\"; a small grey line \"filter out the yeast first\" writes and dims. On \"seventy eight\" two chips write by the thermometer: \"ethanol 78 °C\", \"water 100 °C\". On \"ethanol\" coded droplets fall into the collecting flask, tagged \"richer in ethanol\". A small grey chip \"industry: fractional distillation\" writes and dims. Bright at the end: the distillation plate, the two boiling point chips and the \"richer in ethanol\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "judge-routes": [
+        "new",
+        "the board clears.",
+        "Judging the three routes: So which route is best?",
+        "non-renewable / renewable / first",
+        "On the spoken cues: The route board returns as three narrow cards side by side, each lighting on its sentence while the others dim, and within a lit card only the line being spoken is bright: \"Hydration: fast, continuous / 300 °C, 60 to 70 atm / ethene from crude oil or gas (non-renewable)\"; \"Fermentation: about 35 °C, slow, batch / sugar crop (renewable) / about 15%: distil\" (a small \"land and water\" line shows only while spoken, then",
+        "explain",
+        "the board clears. The route board returns as three narrow cards side by side, each lighting on its sentence while the others dim, and within a lit card only the line being spoken is bright: \"Hydration: fast, continuous / 300 °C, 60 to 70 atm / ethene from crude oil or gas (non-renewable)\"; \"Fermentation: about 35 °C, slow, batch / sugar crop (renewable) / about 15%: distil\" (a small \"land and water\" line shows only while spoken, then leaves); \"Substitution: reflux / makes a chosen alcohol / haloalkane made first (UV light or HX: earlier videos)\". On \"non-renewable\" and \"renewable\" the feedstock line on each card underlines. On \"first\" a small arrow on the substitution card points back to two thumbnails (c04b alkane + Br₂, UV; c04a alkene + HBr). On \"no single winner\" a grey ghost chip \"fermentation: always the greener choice?\" fades in and out (said positively), and a chip writes \"judge: feedstock, energy, rate, purity\". Bright at the end: the three cards (dimmed to equal brightness) and the judging chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, three routes to ethanol.",
+        "yeast, warm, no air / out",
+        "On the spoken cues: Handwritten line: \"Fermentation: yeast, warm, no air.\" Above it three small coded equation cards light on their cues: \"CH₂=CH₂ + H₂O ⇌ CH₃CH₂OH (H₃PO₄, about 300 °C, 60 to 70 atm)\"; \"CH₃CH₂Br + NaOH(aq) → CH₃CH₂OH + NaBr (reflux)\"; \"C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (yeast, about 35 °C, no air)\". On \"out\" a fourth small chip: \"then separate: recycle and distil / distil / filter and distil\".",
+        "explain",
+        "the board clears. Handwritten line: \"Fermentation: yeast, warm, no air.\" Above it three small coded equation cards light on their cues: \"CH₂=CH₂ + H₂O ⇌ CH₃CH₂OH (H₃PO₄, about 300 °C, 60 to 70 atm)\"; \"CH₃CH₂Br + NaOH(aq) → CH₃CH₂OH + NaBr (reflux)\"; \"C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (yeast, about 35 °C, no air)\". On \"out\" a fourth small chip: \"then separate: recycle and distil / distil / filter and distil\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student keeps two flasks of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student keeps two flasks of glucose solution and yeast at 35 °C. Flask A is fitted with a bung and delivery tube. Air is bubbled through flask B the whole time. After two days, flask B contains less ethanol than flask A. Explain this difference, and write a balanced equation for the fermentation of glucose.\" No apparatus drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no memory aid, no equation cards, no setup plate.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "oxygen / temperature / C O two / catalyst",
+        "On the spoken cues: On \"oxygen\" \"Air is bubbled through flask B\" and \"less ethanol\" are underlined; a chip writes \"O₂ in → some sugar respired → CO₂ + H₂O, less ethanol\". On \"temperature\" \"at 35 °C\" is underlined with a small tick \"same in both\". `m7-fermentation-setup-start-v1.png` flashes small with its bung and tube ringed (tag \"flask A: air kept out\"), then dims. On \"C O two\" \"balanced equation\" is underlined and the strip builds:",
+        "explain",
+        "the card stays, shrunk to the top. On \"oxygen\" \"Air is bubbled through flask B\" and \"less ethanol\" are underlined; a chip writes \"O₂ in → some sugar respired → CO₂ + H₂O, less ethanol\". On \"temperature\" \"at 35 °C\" is underlined with a small tick \"same in both\". `m7-fermentation-setup-start-v1.png` flashes small with its bung and tube ringed (tag \"flask A: air kept out\"), then dims. On \"C O two\" \"balanced equation\" is underlined and the strip builds: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ with \"yeast\" on the arrow; the strip stays bright as the answer. On \"classic slip\" a chip \"C₆H₁₂O₆ + yeast → 2C₂H₅OH + 2CO₂\" fades in and, on \"catalyst\", is crossed (caption \"yeast supplies the enzymes that catalyse fermentation: write yeast over the arrow as a condition, not as a reactant\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"1-Bromobutane is heated under reflux with aqueous sodium hydroxide.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. One-bromobutane is heated under reflux with",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"1-Bromobutane is heated under reflux with aqueous sodium hydroxide. Write a balanced equation for the reaction, name the organic product, and explain why the mixture is heated under reflux.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "bromine / butan-one-ol / place",
+        "On the spoken cues: On \"bromine\" \"1-Bromobutane\" and \"aqueous sodium hydroxide\" are underlined; the strip builds: CH₃CH₂CH₂CH₂Br (Br on carbon 1, locants small) + NaOH(aq), the arrow with \"heat under reflux\"; the swap docker runs on carbon 1, giving CH₃CH₂CH₂CH₂OH; \"+ NaBr\" slides into the grey box; \"balanced equation\" is underlined. On \"butan-one-ol\" \"name the organic product\" is underlined and the name builder writes \"butan-1-ol\";",
+        "explain",
+        "the card stays, shrunk to the top. On \"bromine\" \"1-Bromobutane\" and \"aqueous sodium hydroxide\" are underlined; the strip builds: CH₃CH₂CH₂CH₂Br (Br on carbon 1, locants small) + NaOH(aq), the arrow with \"heat under reflux\"; the swap docker runs on carbon 1, giving CH₃CH₂CH₂CH₂OH; \"+ NaBr\" slides into the grey box; \"balanced equation\" is underlined. On \"butan-one-ol\" \"name the organic product\" is underlined and the name builder writes \"butan-1-ol\"; the strip and name stay bright as the answer. On \"Reflux\" \"explain why ... reflux\" is underlined; `m7-reflux-apparatus-v1.png` flashes small with the vapour return looping once (tag \"heat: faster; condenser: no vapour lost\"). On \"slip\" a chip \"product: butan-2-ol\" fades in and, on \"place\", is crossed (caption \"OH goes on carbon 1, where the Br was\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So ethanol can come from crude oil or natural gas, or from plants, and each route sets its own conditions and its own separation.",
+        "Next",
+        "On the spoken cues: The route board returns small at the top with its three starting materials converging on `m7-ethanol-fuel-bottle-v1.png`. On \"Next\" a chip \"Next: what does burning an alcohol tell us about fuel choice?\" appears.",
+        "explain",
+        "the board clears. The route board returns small at the top with its three starting materials converging on `m7-ethanol-fuel-bottle-v1.png`. On \"Next\" a chip \"Next: what does burning an alcohol tell us about fuel choice?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# END generated rows: m7p01c, m7p02c, m7c05, m7c06
 
 
 LESSONS = {
@@ -14065,6 +15229,60 @@ LESSONS = {
         'rows': M7G01_ROWS,
     },
     # END generated entries: m7c03, m7c04a, m7c04b, m7g01
+    # BEGIN generated entries: m7p01c, m7p02c, m7c05, m7c06
+    'm7p01c': {
+        'design': D + 'lessons/chem-m7-p01.md',
+        'learning_review': D + 'checks/m7p01c-learning-review.md',
+        'science_check': D + 'checks/m7p01c-claude-science-check.md',
+        'meta': {"title": "Investigating a hydrocarbon homologous series: how do you test \"longer chain, stronger forces\" safely?", "subtitle": "The last video said a longer chain means stronger dispersion forces. How do you test that safely in a school lab, what do the results show, and how far can you trust them?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 4, "lessonIntent": "choosing straight-chain members of one series and a property that needs no heating; describing the evaporative cooling method with its variables, controls and repeats; reading the logged runs and the results table; explaining the trend with intramolecular and intermolecular bonding; extending it with published boiling points and describing the shrinking step; judging validity, reliability and accuracy; stating the limits; writing the risk assessment and disposal for heptane, octane and nonane, including why hexane is substituted. No reactions (chem-m7-c04a), no reason for the shrinking step, no alcohols (chem-m7-c05)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "choose-members", "choose-test", "method", "variables", "logged-runs", "results", "bonding", "secondary-data", "methods-agree", "validity-reliability", "limits", "risk-assessment", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c03 (homologous series; CnH2n+2; intramolecular covalent bonds against intermolecular dispersion forces; boiling separates molecules without breaking covalent bonds; longer chains have more electrons and more contact, so stronger dispersion forces and higher boiling points; branching lowers boiling point; four reference boiling points: methane −162 °C, butane about −1 °C, octane 126 °C, wax solid). chem-m7-c01 (alkane names to C8). chem-m5-p01 and chem-m6-p02 (validity, reliability and accuracy in plain words; independent, dependent and controlled variables; risk assessment as hazard, harm, control; a logged temperature-time graph). Year 11 (kinetic particle model: temperature as average kinetic energy; evaporation from the surface). Not assumed: evaporative cooling as a method, volatility, secondary data as a term, GHS hazard codes.", "startsWith": "Choose comparable members and a safe property test. The video opens: Here are three bottles of clear, colourless liquid: heptane, octane and nonane. They're alkane neighbours, and they look identical. The last video said a longer chain means stronger dispersion forces.", "stopsAfter": "choosing straight-chain members of one series and a property that needs no heating; describing the evaporative cooling method with its variables, controls and repeats; reading the logged runs and the results table; explaining the trend with intramolecular and intermolecular bonding; extending it with published boiling points and describing the shrinking step; judging validity, reliability and accuracy; stating the limits; writing the risk assessment and disposal for heptane, octane and nonane, including why hexane is substituted. No reactions (chem-m7-c04a), no reason for the shrinking step, no alcohols (chem-m7-c05).", "nextLesson": "what happens when a double bond meets a reagent (chem-m7-c04a, \"What can add across a C=C bond?\", playlist order 5; see Open decisions on the route's next field)."},
+        'teaching': {"task": "The last video said a longer chain means stronger dispersion forces. How do you test that safely in a school lab, what do the results show, and how far can you trust them?", "causalExplanation": "(1) the three liquids look identical, so a claim about forces needs a test (1); (2) straight-chain members of one series differ only by CH₂, so chain length is the single change; a branch changes shape too; methane to butane are gases; pentane boils at 36 °C, so its vapour builds up fastest and it is the biggest fire risk (2); (3) boiling would mean heating a flammable liquid near an ignition source; only the fastest molecules have enough energy to escape, so those left behind are slower on average and the liquid cools; faster evaporation, bigger drop (3); (4) the soaked sleeve starts at the sample's temperature, so the drop comes from evaporation alone; logging until the lowest reading catches the full drop; repeats (4); (5) one independent variable, one dependent, and the controls, including air flow, because moving air speeds up evaporation (5); (6) heptane falls fastest and furthest, then warms once the liquid has gone (6); (7) the means fall with each extra carbon (7); (8) evaporating breaks no covalent bonds, and those bonds are the same kind in every member; each CH₂ adds electrons and contact, so stronger dispersion forces hold the molecules back, fewer escape each second, and the drop is smaller (8); (9) published boiling points reach the members that cannot be tested at room temperature and rise at every step, by a shrinking amount (9); (10) a higher boiling point goes with a smaller drop, so two independent methods agree (10); (11) validity needs chain length as the only change; repeats agree within about half a degree; accuracy means the probe reads true temperatures, checked against a calibrated thermometer; the ranking that matches the data book is agreement, which supports the conclusion but is not accuracy (11); (12) the drop compares evaporation, it is not a boiling point or a force measurement; air flow and the amount of liquid on the paper cause scatter; the conclusion covers straight chains only (12); (13) the hazards and their controls, starting with substitution (hexane left out because repeated exposure can damage nerves), and disposal (13); memory aid (14); attempts and brief feedback (15 to 18); decision rule and handoff (19); key notes (20).", "conversationalApproach": "three bottles of heptane, octane and nonane look identical, and the last video claimed that a longer chain means stronger dispersion forces, so the practical asks how to test that claim safely in a school lab and how far the result can be trusted. Straight-chain members of one series are chosen so only chain length changes, liquids rather than gases, with pentane left out as the biggest fire risk. Heating a flammable liquid is ruled out, so the test is evaporative cooling at room temperature: only the fastest molecules escape, the liquid left behind cools, and a faster evaporation gives a bigger temperature drop. The method (filter paper sleeve on a probe, a 30 second soak, logging until the reading stops falling, three trials in a fume cupboard) and the variables are each given a reason, the logged runs and the results table show the drop shrinking with each extra carbon, and the trend is explained by dispersion forces between molecules while no covalent bond breaks. Published boiling points extend the series and agree with the drops; validity, reliability and accuracy are separated (agreement is not accuracy), the limits and the risk assessment follow, with hexane swapped out as a substitution control. The memory aid is longer chain, smaller chill. Two exam questions follow with brief feedback.", "openingDecision": "Here are three bottles of clear, colourless liquid: heptane, octane and nonane. They're alkane neighbours, and they look identical. The last video said a longer chain means stronger dispersion forces. That's a claim. So how do you test it in a school lab, safely, and how far can you trust what you find?", "understandingCheck": "(A1) \"The table shows the normal boiling points of four straight-chain alkenes. Describe the trend in boiling point and explain it with reference to the intramolecular and intermolecular bonding present.\" Table: but-1-ene −6.3 °C; pent-1-ene 30.0 °C; hex-1-ene 63.5 °C; hept-1-ene 93.6 °C. A new series (alkenes; the scenes use alkanes); tests describing the trend with the shrinking step and the bonding explanation in the syllabus's words. Crossed mistake: \"longer chains have stronger covalent bonds\" (site card 3 Common error). (A2) \"A student plans to find the effect of chain length on volatility by heating pentane, hexane and 2-methylpentane in an open test tube over a Bunsen burner and recording the temperature at which each liquid boils. Evaluate the validity and safety of this plan.\" Tests both route boundaries (comparable members; a safe property test). The aim names chain length (Revision 3, Codex check 101): branching is a valid variable in a general volatility comparison, so the plan is judged only on whether it can isolate chain length. Answer: not valid for this aim (2-methylpentane is branched, so shape changes as well as chain length, and the effect of length cannot be isolated; use straight chains such as heptane, octane and nonane); not safe (an open flame near highly flammable vapour; pentane boils at 36 °C); improvement: evaporative cooling in a fume cupboard with no flames, or published boiling points. Crossed mistake: \"use a smaller flame\".", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct an investigation to compare the properties of organic chemical compounds within a homologous series, and explain these differences in terms of bonding (ACSCH035)\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" this video prepares students to plan, carry out and evaluate a first-hand comparison within the alkane series, and extends it with the secondary boiling point data that chem-m7-c03 handed over; it does not claim that watching it is conducting it. It teaches: choosing members of one series with straight chains so that chain length is the only change; why heptane, octane and nonane (liquids at room temperature) and not methane to butane (gases), pentane (boils at 36 °C, extremely flammable) or hexane (nerve damage with repeated exposure, so it is substituted); choosing a property that can be measured without heating a flammable liquid: evaporation, measured as the temperature drop of a probe wrapped in a soaked filter-paper sleeve; why evaporation cools (only the fastest molecules escape, so those left behind are slower on average); the method, the variables and the repeats; reading logged temperature-time runs; the results table and means; explaining the trend in terms of bonding (intramolecular covalent bonds unchanged and unbroken; intermolecular dispersion forces stronger with each CH₂, so fewer molecules escape each second); extending the trend with published boiling points for C1 to C9 at 101.3 kPa, with the shrinking step described, not explained; two methods agreeing; validity, reliability and accuracy for this investigation; the limits of the method; the risk assessment and disposal. Not re-taught: why dispersion forces grow with chain length, intramolecular against intermolecular, branching and contact (chem-m7-c03, recalled in one clause each, \"as the last video showed\"); the meanings of validity, reliability and accuracy (chem-m5-p01; recalled in one clause each and applied). Not here: alkenes and alkynes as subjects of the practical (attempt 1 uses alkene data only to transfer the trend); reactions of hydrocarbons (chem-m7-c04a onward); solubility (chem-m7-c03); a quantitative link between temperature drop and force strength; the reason the boiling point step shrinks (site correction 5 in c03; beyond this course); alcohols (chem-m7-c05)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c03: carbon ink; hydrogens soft grey; main chain pale blue; covalent bonds solid ink; dispersion forces dotted pale-blue flicker lines; plus, for this practical, the three alkanes' runs in three fixed colours (heptane teal, octane amber, nonane violet), used on bottles' label edges, graph lines, table rows and the agreement strip; the temperature readout amber digits; evaporation wisps pale grey with warm-orange energy dots; hazards terracotta, controls green. Board layout (three zones, constant, as chem-m6-p02): top-left the short task line; the centre holds the apparatus or the graph; the right third holds the current card (method step, variables, table, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Reuse: `p03-dropper-bottle-v1.png` (2000 × 2000: a clear glass dropper bottle with a black bulb, clear liquid inside and a blank cream label; no text, no hands), shown three times side by side with coded label text on the blank label (\"heptane C₇H₁₆\", \"octane C₈H₁₈\", \"nonane C₉H₂₀\"); `m7-bromine-water-colourless-v1.png` (2000 × 2000: an open clear test tube about half full of colourless liquid, no label), used here only as a sample tube of colourless liquid with a coded tag under it (the plate shows nothing bromine-specific); `m5x-stopper-v1.png` (a black rubber stopper, placed on the sample tubes in scene 13 by a coded drop); `m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png` (risk table head; gloves tagged \"if your school requires\"); `m5x-waste-bottle-v1.png` (2000 × 2000: an amber glass jar with a black cap and a blank cream label; coded label \"Organic waste\"); `m7-camping-gas-burner-v1.png` (scene 2, small, for methane to butane as gases; chem-m7-c03's hook plate). Considered, not used: `m6-ph-probe-holder-v1.png` (inspected: a pH electrode with a blue body in a stand holder; it is not a temperature probe), `c8-thermometer-hot-v1.png` (a glass thermometer: the method needs a logging probe, and a glass bulb wrapped in paper would mislead), `m6-burette-clamp-stand-v1.png` (the stand holds a burette). New plates: `m7-temp-probe-sleeve-stand-v1.png` and `m7-fume-cupboard-v1.png`; see Codex asset brief. No human figures.", "transitionPlan": "Three dropper bottle plates open the hook as their labels write and small skeletal formulas draw above them, then a claim chip takes a question mark under the heading \"Claim, then evidence?\"; the board clears to c03's series ladder with +CH2 tags as a branched isomer is crossed, the gases dim and a pentane chip is crossed; a coded tube over a flame flashes at its ignition point and is crossed, then the force view shows the fastest surface molecule escaping and the rest slowing; the probe and sleeve plate takes a rising tube while a timer chip counts the soak and the readout ticks down, then the fume cupboard plate frames it; the variables card writes with pen links to the sleeve, timer, readout and cupboard as air arrows lean the wisps; the coded lineGraph plots the three runs with their lowest points ringed; the graph shrinks as the results table fills mean by mean and three bars shrink; the force view shows intact covalent bonds and more dispersion lines on the nonane pair; a data-book lineGraph plots nine boiling points with shrinking step labels; the agreement strip pairs two arrows under a bracket; three cards write validity, reliability and accuracy in turn; the limits card and the risk table write row by row; the memory line writes over the shrinking bars; each attempt clears the board and its feedback underlines the card as step labels, lines and crossed chips fill; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M7P01C_ROWS,
+    },
+    'm7p02c': {
+        'design': D + 'lessons/chem-m7-p02.md',
+        'learning_review': D + 'checks/m7p02c-learning-review.md',
+        'science_check': D + 'checks/m7p02c-claude-science-check.md',
+        'meta': {"title": "The bromine water test: how do you run it fairly, and what does the colour change really tell you?", "subtitle": "Shake orange bromine water with two clear liquids: in one tube the colour vanishes, in the other it only seems to. How do you run the bromine water test fairly and safely, and what does the colour change really tell you about a hydrocarbon?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 6, "lessonIntent": "planning a matched test with a water control; describing and explaining the alkene result with an addition equation and model; recognising the moved colour as a negative result; describing the substitution demonstration and its evidence with an equation; stating what a colourless result shows and its limits; judging validity, reliability and accuracy; writing the risk assessment and disposal for cyclohexane, cyclohexene and bromine water. No other addition reagents at the bench, no quantitative bromine test, no Markovnikov."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "what-it-means", "fair-test", "alkene-result", "alkane-trap", "light-demo", "limits", "validity-reliability", "risk-assessment", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c04a (addition across a C=C: two reactants, one product; the reagent splits, one piece on each carbon; bromine water loses its colour when an alkene adds bromine; halogen prefixes with locants, for example 1,2-dibromoethane), chem-m7-c04b (alkanes react with halogens only with UV light, by substitution, with HX as a second product; UV light is energy, not a catalyst; alkynes add twice; alkenes and alkynes both decolourise bromine water, and for an open chain with one multiple bond the formula decides which), chem-m7-c03 (non-polar hydrocarbons do not mix with water and float on it; \"like dissolves like\"; general formulas, \"no ring\" condition), chem-m7-c02 (\"cyclo\": carbons joined in a ring; ring and alkene isomers such as cyclobutane and but-1-ene), chem-m7-p01 (risk assessment for flammable hydrocarbons; fume cupboard; organic waste). Module 6: litmus (blue turns red in acid). chem-m5-p01 and chem-m6-p02 (validity, reliability, accuracy, variables, risk assessments). Not assumed: the layer behaviour of bromine, controls in a qualitative test, accuracy for a yes-or-no test, cyclohexene by name.", "startsWith": "Plan safe matched hydrocarbon samples and observations. The video opens: Here are two clear liquids, cyclohexane and cyclohexene. Both have a ring of six carbons, and they boil about two degrees apart. Shake each with orange bromine water.", "stopsAfter": "planning a matched test with a water control; describing and explaining the alkene result with an addition equation and model; recognising the moved colour as a negative result; describing the substitution demonstration and its evidence with an equation; stating what a colourless result shows and its limits; judging validity, reliability and accuracy; writing the risk assessment and disposal for cyclohexane, cyclohexene and bromine water. No other addition reagents at the bench, no quantitative bromine test, no Markovnikov.", "nextLesson": "mixed practice on naming, isomers and hydrocarbon reactions (chem-m7-g01, \"Hydrocarbon naming and reaction practice\")."},
+        'teaching': {"task": "Shake orange bromine water with two clear liquids: in one tube the colour vanishes, in the other it only seems to. How do you run the bromine water test fairly and safely, and what does the colour change really tell you about a hydrocarbon?", "causalExplanation": "(1) the same-looking liquids give different results, one of them misleading (1); (2) bromine adds across a C=C and is used up, so its colour goes; an alkane has no bond to open, so in the dark nothing adds; the pair differs only by one C=C (2); (3) matched volumes and the same shaking make the tubes comparable; the water control is diluted by the same amount but has nothing to react with; the white tile shows faint colour; bright light could start a slow alkane reaction and blur the comparison (3); (4) cyclohexene: the double bond opens and bromine adds, so it is used up; colourless in both layers; 1,2-dibromocyclohexane is one possible product, and other colourless addition products can form in water; with bromine in an organic solvent the dibromo compound is the one product: addition (4); (5) cyclohexane: does not mix with water, so it forms a top layer; non-polar bromine dissolves better in it than in water, so the colour moves up; the control, diluted just as much, stays clearly orange, so dilution cannot explain the pale water layer; the bromine is still there, in the top layer: no reaction (5); (6) with UV light the alkane does react, slowly, by substitution; the orange top layer from (5) is the sample, so the bromine that moved is shown to be unreacted; hydrogen bromide is an acidic gas, so damp blue litmus turns red; a strip over a tube kept in the dark changes far less, so the red is not just bromine vapour, and it is the evidence for substitution (6); (7) colourless shows a double or triple bond; alkynes react too, usually more slowly (c04b callback); not which; no change points to no double or triple bond; the formula can mislead (a ring fits CnH2n); other kinds of compounds can decolourise it too, so a quick test, not proof (7); (8) one variable changed, colour observed, the rest controlled; the matched pair and the control give validity; repeats give reliability; known samples check accuracy (8); (9) the hazards and their controls, and disposal of brominated residues (9); memory aid (10); attempts and brief feedback (11 to 14); decision rule and handoff (15); key notes (16).", "conversationalApproach": "orange bromine water shaken with cyclohexene loses its colour, while with cyclohexane the water also goes pale but the orange has only moved into a top layer, so the practical asks how to run the bromine water test fairly and what the colour change really tells you. Bromine adds across a C=C bond and is used up, while an alkane has nothing to add to in the dark, so the ring pair differs only by one double bond. The plan matches volumes, adds a plain water control for dilution, shakes each stoppered tube the same way against a white tile in normal room light, away from sunlight. Cyclohexene decolourises both layers within seconds by addition; cyclohexane is the trap, because non-polar bromine dissolves into the floating hydrocarbon layer, and the still-orange control rules out dilution. A teacher demonstration shows the alkane does react under UV light, with damp blue litmus turning red from hydrogen bromide as evidence of substitution. A colourless result shows a double or triple bond but not which, cyclohexane shares hexene's formula, and other compounds can decolourise it too, so it is a quick test, not proof. The variables, validity, reliability and accuracy and the risk assessment follow, and the memory aid is gone, not moved. Two exam questions follow with brief feedback.", "openingDecision": "Here are two clear liquids, cyclohexane and cyclohexene. Both have a ring of six carbons, and they boil about two degrees apart. Shake each with orange bromine water. In one tube, the colour vanishes. In the other, the water goes pale too, but look closer: the orange has moved into a layer on top. So how do you run this test fairly, and what does the result really tell you?", "understandingCheck": "(A1) \"A liquid hydrocarbon, X, has the molecular formula C₅H₁₀. A student shakes an excess of X with a small volume of bromine water in a stoppered test tube, in normal room light. Two layers form: the top layer is orange and the bottom layer is pale yellow. Identify X as either pent-1-ene or cyclopentane. Justify your answer.\" Skeletal formulas of both shown with the names. New compounds (the scenes use C6 rings); tests the layer trap and the ring point together. Answer: cyclopentane (the colour moved into X's layer, so no C=C). Crossed mistake: \"the bottom layer lost colour, so X is pent-1-ene\". (A2) \"In a teacher demonstration, a solution of bromine in heptane stays orange in a dark cupboard. In bright light its colour slowly fades, and the gas at the mouth of the test tube turns damp blue litmus paper red. Explain these observations. Write a balanced equation, using structural formulas, for the formation of one organic product.\" New alkane (the scene uses cyclohexane); tests why the dark and the light differ, the HBr evidence and the substitution equation. Answer: 2-bromoheptane + HBr (any monobromoheptane accepted; 2-bromoheptane shown because secondary hydrogens are substituted preferentially). Crossed mistake: \"C₇H₁₆Br₂\" (an addition product; there is no bond to open). Neither attempt repeats chem-m7-g01's Q4 (evaluating \"it decolourised, so it is an alkene\"), which follows next.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:; hydrogen (H2); halogens (X2); hydrogen halides (HX); water (H2O) (ACSCH136)\" \"investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" This practical covers the halogen (X₂) investigation for the first dotpoint (the other reagents were chem-m7-c04a and c04b, where their conditions put them outside a student bench: pressurised hydrogen with a nickel catalyst, steam at about 300 °C), and the investigation half of the second. this video prepares students to plan, carry out and interpret the bromine water test; it does not claim that watching it is conducting it. It teaches: why cyclohexane and cyclohexene are a fair pair (same ring, same carbon count, one C=C the only difference); matched volumes, a water control for dilution, the same shaking, a white tile, normal room light and reading at once; the alkene result (colour gone from both layers within seconds) and its equation with structural formulas, built as a model; the alkane result and its trap (bromine dissolves better in the hydrocarbon, so the colour moves into the top layer: moved, not gone), read against the control; the alkane's slow substitution with bromine under UV light as a teacher demonstration, using the orange cyclohexane layer from the test (no liquid bromine), with damp blue litmus turning red, compared with a strip over a tube kept in the dark, as the evidence for hydrogen bromide, and its equation; what a colourless result can and cannot show (a C=C or C≡C; alkynes too, usually more slowly; not which; a ring with the alkene formula does not react; other kinds of compounds can decolourise bromine water too, so it is a quick test, not proof); the variables, validity, reliability and accuracy for a yes-or-no test; the risk assessment and disposal. Not re-taught: why a C=C adds and an alkane does not, addition against substitution, UV light as an energy source rather than a catalyst, alkyne two-step addition, general formulas (chem-m7-c03, c04a, c04b; recalled in one clause each, \"as in the last video\"); \"like dissolves like\" (chem-m7-c03, one clause). Not here: hydrogenation, hydrohalogenation and hydration as bench work (chem-m7-c04a; conditions unsuitable for a student bench); ethyne generation (calcium carbide; not a student practical; alkynes stay a spoken limit); Markovnikov's rule; naming the bromo-alcohol product of bromine water (scene 4 says only \"other colourless addition products\"; author note c); the quantitative bromine test (measured amounts; site correction recorded by c04b); IR or NMR; Module 8 analysis (Module 8 P05 refers back here)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c01 to c04b: carbon skeleton ink; hydrogens soft grey; the C=C teal; bromine deep orange-brown (the Br₂ dumbbells in the layer lens too); condition chips navy on the arrow, \"UV light\" violet; the swapped-out H bright grey and the HBr box thin violet (c04b); plus, for this practical, cyclohexene labels and tags teal and cyclohexane labels and tags grey-blue, the control tube's label plain grey; hazards terracotta, controls green. Board layout (three zones, constant, as chem-m6-p02): top-left the short task line; the centre holds the tubes (on the white tile) or the equation strip; the right third holds the current card (method step, variables, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Reuse: `m7-bromine-water-orange-v1.png` (2000 × 2000: an open clear test tube about half full of bright orange liquid; no label, no hands), the \"before\" tube in scenes 1 and 3 (twice, side by side); `m7-bromine-water-pair-v1.png` (2000 × 2000: an orange tube and a colourless tube side by side), small in scene 15 and the key notes; `p03-dropper-bottle-v1.png` (2000 × 2000: a clear glass dropper bottle with a black bulb and a blank cream label), twice with coded labels \"cyclohexane C₆H₁₂\" and \"cyclohexene C₆H₁₀\"; `m5x-graduated-pipette-v1.png` (a long graduated pipette with a red pipette filler, drawn at an angle; no hands), dispensing by coded tilt; `m5x-stopper-v1.png` (a black rubber stopper); `m6-white-tile-v1.png` (a plain white glazed tile, 2048 × 2048) under the tubes; `m6-litmus-blue-v1.png` (2000 × 2000: a blue litmus strip on a white tile, its right end already turning pink) and `m6-litmus-red-v1.png` (the same tile with a fully red strip), cross-faded in scene 6 and feedback 2; in scene 6 two blue copies are used, one over the lit tube and one over the dark comparison tube, which stays blue (the plate's slight pink tip is acceptable as \"little change\"); `m5x-safety-glasses-v1.png`, `m5x-gloves-v1.png`, `m5x-waste-bottle-v1.png` (an amber jar with a blank label; coded label \"Organic waste: halogenated\"). Requested by chem-m7-c04b and not yet in `public/assets/chemistry/` (22 Oct): `m7-bromine-hexane-orange-v1.png`, `m7-bromine-hexane-faded-v1.png` (a tube of bromine in a hydrocarbon solvent, orange, then pale straw with faint fumes; used here with a coded label \"bromine in cyclohexane (top layer)\": the plates show no solvent identity; in scene 6 the orange plate appears twice, the lit sample and the dark comparison) and `m7-uv-lamp-v1.png`, all in scene 6 and attempt 2; requested by chem-m7-p01: `m7-fume-cupboard-v1.png` (scenes 3 and 9). Considered, not used: `m8-bromine-water-orange-v1.png` and `m8-bromine-water-clear-v1.png` (inspected: the same kind of tubes standing in a wooden rack; a different style from the m7 tube set, and Module 8 P05 uses them), `m7-separating-funnel-clear-v1.png` (a two-layer funnel on a stand; the test is done in a test tube). New plates: `m7-bromine-layers-orange-top-v1.png`, `m7-bromine-layers-colourless-v1.png` and `m7-bromine-water-control-v1.png`; see Codex asset brief. No human figures.", "transitionPlan": "Two dropper bottle plates and two orange bromine water tubes on a white tile open the hook as drops fall, stoppers drop and the tubes rock, then one tube crossfades in place to colourless and the other to an orange top layer that takes a pen ring; the board clears to a small equation strip where an orange Br2 dumbbell splits, docks and fades, and the two skeletal rings return with the one double bond ringed teal; three tubes line up on the tile with the fume cupboard faint behind, the pipette tilts over each on a coded arc as the method card writes and a 10 s chip counts the shake; the cyclohexene tube crossfades to colourless as the layer lens shows dumbbells vanishing and the ball-and-stick ring takes one Br on each carbon; the cyclohexane tube crossfades to its orange top layer as dumbbells drift up through the lens, a ghost decolourised tag is crossed and the control tube stays orange; the pipette moves the top layer into two tubes, one under a dark vignette, as the UV lamp plate fades the other and the litmus crossfades to red; skeletal tiles take ticks, a clock and a shared formula chip on the result card; the variables card, three short cards and the risk table write row by row; the memory line writes over the two small tubes; each attempt clears the board and its feedback underlines the card as the layer lens, swap docker and structural equation fill; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M7P02C_ROWS,
+    },
+    'm7c05': {
+        'design': D + 'lessons/chem-m7-c05.md',
+        'learning_review': D + 'checks/m7c05-learning-review.md',
+        'science_check': D + 'checks/m7c05-claude-science-check.md',
+        'meta': {"title": "How does an OH group change alcohol properties? Naming and classifying alcohols, hydrogen bonds, and why the chain sets the boiling and solubility trends", "subtitle": "An ethanol molecule has fewer electrons than butane, yet ethanol boils about eighty degrees higher and mixes with water. How does one OH group change an alcohol's properties, and how do we name and classify alcohols?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 8, "lessonIntent": "identifying the OH group and its polar bond; naming alcohols up to C8 with methyl or ethyl branches; classifying alcohols as primary, secondary or tertiary; explaining why an alcohol boils higher than an alkane of the same size; explaining the boiling point trend along the series and across C₄H₁₀O isomers; explaining why short-chain alcohols mix with water and longer ones barely dissolve. No reactions, no production, no combustion data."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "hydroxyl-group", "naming-alcohols", "oh-wins-numbering", "classify-alcohols", "class-not-branching", "hydrogen-bonds", "same-electrons", "along-the-series", "isomers-shape", "solubility-water", "longer-chain-solubility", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c03 (intramolecular against intermolecular; dispersion forces from temporary dipoles; more electrons and more contact give stronger dispersion forces; branching lowers boiling point, \"spaghetti and balls\"; water's hydrogen bonds and why hexane forms a layer; \"like dissolves like\"; tetrahedral carbons), chem-m7-c01 and g01 (naming rules: longest chain, nearer end, locants, methyl and ethyl branches, the multiple bond wins the numbering), chem-m7-c02 (\"-ol means an O–H group, the number says which carbon\"; propan-1-ol and propan-2-ol as position isomers; ethanol), chem-m7-c04a (ethanol from ethene and steam; propan-1-ol and propan-2-ol named as possible products). Year 11: electronegativity and polar bonds; lone pairs; hydrogen bonding as an intermolecular force between H on N, O or F and a lone pair on N, O or F. Not assumed: alcohol, hydroxyl group, primary, secondary, tertiary, donor, acceptor.", "startsWith": "Identify the OH group and classify its carbon. The video opens: The gas in this camping stove is mostly butane, which boils near minus one degree. The liquid in this bottle is ethanol. Ethanol molecules have fewer electrons than butane, so you'd expect weaker dispersion forces and a lower boiling point.", "stopsAfter": "identifying the OH group and its polar bond; naming alcohols up to C8 with methyl or ethyl branches; classifying alcohols as primary, secondary or tertiary; explaining why an alcohol boils higher than an alkane of the same size; explaining the boiling point trend along the series and across C₄H₁₀O isomers; explaining why short-chain alcohols mix with water and longer ones barely dissolve. No reactions, no production, no combustion data.", "nextLesson": "making ethanol by hydration, haloalkane substitution and fermentation (route chem-m7-c06, \"How can we make ethanol?\")."},
+        'teaching': {"task": "An ethanol molecule has fewer electrons than butane, yet ethanol boils about eighty degrees higher and mixes with water. How does one OH group change an alcohol's properties, and how do we name and classify alcohols?", "causalExplanation": "(1) ethanol has fewer electrons than butane yet boils higher and mixes with water (1); (2) an alcohol is an alkane with one H swapped for a covalent OH; oxygen pulls the shared electrons, so the O–H bond is polar, and O keeps two lone pairs (2); (3) the name locates the OH: \"-ol\" with the locant from the nearer end (3); (4) the OH wins the numbering over a branch, because it is in the ending (4); (5) count the carbons on the C–OH carbon to classify (5); (6) branching elsewhere does not change the class (6); (7) the δ+ H of one molecule is attracted to a lone pair on a neighbour's O: a hydrogen bond, added to the chain's dispersion forces (7); (8) with equal electrons, the alcohol boils far higher, because of the hydrogen bonds; boiling breaks no covalent bond (8); (9) along the series the OH is constant, the chain grows, so dispersion forces and boiling points rise (9); (10) for isomers, compact shapes touch less, so weaker dispersion forces and lower boiling points; all still hydrogen bond (10); (11) the OH hydrogen bonds with water, replacing what it breaks, so small alcohols mix (11); (12) the chain breaks water's hydrogen bonds without replacing them, so solubility falls as it grows; long chains suit non-polar solvents (12); memory aid (13); two attempts and brief feedback (14 to 17); handoff (18); key notes (19).", "conversationalApproach": "ethanol has fewer electrons than butane yet boils about eighty degrees higher and mixes with water, so the video asks how one OH group changes a molecule's properties and how alcohols are named and classified. The hydroxyl group is introduced on a carbon with only single bonds, covalent and not a hydroxide ion, with a polar O-H bond and two lone pairs on the oxygen. Naming drops the alkane's final e and adds ol with the OH carbon's number, and the OH wins the numbering over a branch. Class comes from counting the carbons bonded to the OH carbon (primary, secondary, tertiary, methanol by convention), never from how branched a molecule looks. Hydrogen bonds form between a hydrogen of one OH and a lone pair on a neighbour's oxygen, so propane and ethanol, with the same electrons, boil about 120 degrees apart. Along the series the chain sets the trend because each alcohol has one OH; among isomers the compact tertiary one touches less and boils lowest, so shape does the work. Small alcohols mix with water because the OH replaces the hydrogen bonds it breaks, while a longer chain breaks more than it can replace and dissolves less. The memory aid is same size, hydrogen bonding wins; same family, size wins. Two exam questions follow with brief feedback.", "openingDecision": "The gas in this camping stove is mostly butane, which boils near minus one degree. The liquid in this bottle is ethanol. Ethanol molecules have fewer electrons than butane, so you'd expect weaker dispersion forces and a lower boiling point. Instead, ethanol boils at about seventy eight degrees. And it mixes completely with water, while butane barely dissolves. The difference is one O H group. So how does an O H group change a molecule's properties?", "understandingCheck": "(A1) \"An alcohol has the condensed structural formula CH₃CH(OH)CH(CH₃)CH₃. Give its IUPAC name, and classify it as a primary, secondary or tertiary alcohol. Justify your classification.\" A skeletal formula is shown beside it (plain ink, no colours). New molecule (scenes use 4-methylpentan-2-ol and 2-methylpropan-1-ol); tests the OH winning the numbering and the carbon count. Crossed mistake: \"2-methylbutan-3-ol\" (numbered for the branch; the c01 feedback 1 pattern). (A2) \"Butane, C₄H₁₀, boils at −1 °C. Propan-1-ol, CH₃CH₂CH₂OH, boils at 97 °C. Both molecules have 34 electrons. Explain the difference in boiling points, with reference to the intramolecular and intermolecular bonding present.\" New pair (the scene uses propane and ethanol); the syllabus wording. Crossed mistake: \"Propan-1-ol is polar, so it has a higher boiling point.\" (names no force; the marker-reported mistake in 2020 Q32, `../research/question-types-chem-m7.md`).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127); alkanes; alkenes; alkynes; alcohols (primary, secondary and tertiary); aldehydes and ketones; carboxylic acids; amines and amides; halogenated organic compounds\" This video covers alcohols only (hydrocarbons were chem-m7-c01 and g01; haloalkanes chem-m7-c04a). \"investigate the structural formulae, properties and functional group including:; primary; secondary; tertiary alcohols\" \"explain the properties within and between the homologous series of alcohols with reference to the intermolecular and intramolecular bonding present\" this video starts by identifying the OH group and classifying the carbon that holds it, and stops at explaining the boiling point and solubility trends of alcohols. It teaches: an alcohol has an OH (hydroxyl) group on a carbon with only single bonds; the OH is covalently bonded, not a hydroxide ion (spoken), so alcohols do not make water alkaline (screen line only); intramolecular bonding: the O–H bond (and the C–O bond) is polar because oxygen attracts the shared electrons more strongly, so O is δ− and H is δ+, and the oxygen keeps two lone pairs; naming alcohols by IUPAC rules (longest chain containing the C–OH carbon; drop the alkane's final \"e\" and add \"ol\"; number from the end nearer the OH; locant before \"ol\"; methanol and ethanol need no locant; branches as in c01; the OH wins the numbering over a branch); classification by counting the carbons bonded to the C–OH carbon (1 primary, 2 secondary, 3 tertiary; methanol counted as primary by convention; branching elsewhere does not change the class); hydrogen bonding between alcohol molecules (δ+ H of one OH to a lone pair on a neighbour's O; H donor, O acceptor), alongside dispersion forces from the chain; between series: an alcohol boils far higher than an alkane with the same number of electrons (propane and ethanol, 26 electrons each), and boiling overcomes the intermolecular forces without breaking the O–H bond; within the series: one OH each, so similar hydrogen bonding, and boiling point rises with chain length (methanol to butan-1-ol); isomers of C₄H₁₀O: boiling point usually falls from primary to secondary to tertiary because the more compact shape gives less contact and weaker dispersion forces, while all three hydrogen bond; solubility: the OH hydrogen bonds with water, replacing the bonds it breaks, so methanol to propan-1-ol mix in any proportion; the non-polar chain breaks water's hydrogen bonds without replacing them, so solubility falls gradually with chain length (butan-1-ol partly, hexan-1-ol barely, as a layer); long-chain alcohols mix with non-polar solvents. Not here: alcohol reactions (combustion chem-m7-c07; dehydration, substitution with HX and oxidation chem-m7-c08; the class is used there, so one forward clause only); producing alcohols (chem-m7-c06, the next video); enthalpy of combustion (chem-m7-c07, p03, g02; the site's L11 figures are not used); methanol's toxicity (site hook; it is metabolic, not an intermolecular-force property, see Decisions); diols and alcohols with a C=C (not needed up to this route stop; author note e); branching and water solubility (2-methylpropan-2-ol; author note d; key notes leave it out); comparison with carboxylic acids, aldehydes and ketones (chem-m7-c08b, c09); hydrogen bond energies as numbers."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c01 to c04b: carbon skeleton ink; hydrogens soft grey; main chain pale blue; branches amber; oxygen brick red, the OH group ringed red as the functional group; δ− and δ+ small in navy; lone pairs as two small red dot pairs on O; hydrogen bonds dotted violet; dispersion forces dotted pale blue. Board layout (constant): top-left the short task chip (\"Name it\", \"Classify it\", \"Why higher?\"); centre the structure board or force view, one molecule or one comparison at a time; the boiling point strip at the right only in scenes 8 to 10; plates small at the left or right only in scenes 1, 8, 12 and 18. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 22 Oct): `m7-camping-gas-burner-v1.png` (a lit blue camping stove on an unlabelled blue gas canister; 2000 × 2000; hook and scene 8 callback, as in c01 and c03) and `m7-ethanol-fuel-bottle-v1.png` (an amber glass bottle with a glass stopper, about two-thirds full of a pale liquid, no label or text; 2000 × 2000; hook and handoff, with a coded label \"ethanol\"). Both small, scale uniformly only, never stretched. Considered, not used: `m6-red-wine-glass-v1.png` (inspected: a red wine glass; a drink would raise alcohol-consumption context the question does not need), `m7-crude-oil-barrel-v1.png` (inspected: plain steel drum; belongs to production in c06). New plate: `m7-alcohol-water-tubes-v1.png` (scene 12); see Assets. No human figures.", "transitionPlan": "The camping gas burner and ethanol bottle plates open the hook with electron and boiling point chips, an up arrow between them and the skeletal ethanol's OH ringed red; the plates leave as ethane loses a hydrogen and an OH docks in its place, the name builder writes ethanol and the ball-and-stick model shows the polar pull and two lone pairs; the name builder strikes the e, writes ol and slides in each locant as the OH moves; left and ghost right locants pop on a branched chain and the wrong name is crossed; the carbon counter ticks on three alcohols in a row with their class chips, then on a branched primary alcohol; the hydrogen-bond linker draws dotted violet lines in a ball-and-stick cluster beside a glowing covalent O-H; propane and ethanol drop to their marks on the boiling point strip with a 120 degree bracket and the force view; the series ladder climbs to four marks with an up arrow; three isomers drop to falling marks and the contact highlighter shades spaghetti against ball; the water lattice takes an ethanol molecule that replaces its broken bonds, then a hexan-1-ol whose chain breaks bonds in red-brown before the alcohol and water tubes plate shows one layer and two; the memory line writes with three cards; each attempt clears the board and its feedback underlines the card as the name builder, carbon counter or force view runs and a crossed chip lands; the memory line, ethanol bottle and next chip close; scene crossfade with settle."},
+        'rows': M7C05_ROWS,
+    },
+    'm7c06': {
+        'design': D + 'lessons/chem-m7-c06.md',
+        'learning_review': D + 'checks/m7c06-learning-review.md',
+        'science_check': D + 'checks/m7c06-claude-science-check.md',
+        'meta': {"title": "How can we make ethanol? Hydration of ethene, substitution of a haloalkane and fermentation, with the conditions and separation for each", "subtitle": "The ethanol in this bottle could have started as ethene from crude oil or natural gas, as a haloalkane in a flask, or as sugar fermented by yeast. How can we make ethanol, and how do the conditions and the separation help us judge each route?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 9, "lessonIntent": "writing the equation and conditions for each of the three routes; explaining the equilibrium arrow, the pressure, the catalyst, the temperature compromise and recycling in hydration; explaining why hydroxide substitutes a haloalkane and why it is heated under reflux; explaining each fermentation condition and the limewater result; explaining why each product must be separated and how; judging the routes by feedstock, conditions, rate and separation. No combustion, no elimination, no mechanism names."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "hydration-equilibrium", "catalyst-temperature", "recycle-and-separate", "substitution-swap", "reflux-same-carbon", "fermentation-equation", "fermentation-setup", "distil-fermentation", "judge-routes", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c04a (hydration of ethene: equation, steam, phosphoric acid, about 300 °C, high pressure, two gas molecules to one; conditions on the arrow; the conditions card), chem-m7-c04b (substitution as a swap, two products; haloalkanes made from alkanes with UV light), chem-m7-c05 (ethanol; naming and classifying alcohols; the polar O–H bond; ethanol boils at 78 °C; the ethanol bottle plate), chem-m7-c01 (naming), Module 5: chem-m5-c02 (reversible reactions reach equilibrium; the ⇌ arrow), chem-m5-c04 (pressure and gas molecules; a catalyst speeds both directions and does not shift the position), chem-m5-c03 (temperature and exothermic reactions; recommended prerequisite). Year 11: balancing equations; ionic compounds such as NaBr; limewater turns milky with carbon dioxide; distillation separates liquids by boiling point. Year 11 or Biology: enzymes are biological catalysts damaged by high temperature; respiration with and without oxygen (one clause, with a plain meaning). Not assumed: fermentation, reflux, aqueous (given a plain meaning), feedstock (given a plain meaning), single-pass recycling.", "startsWith": "Compare hydration, substitution and fermentation starting materials. The video opens: This bottle holds ethanol. It could have started as sugar, fermented by yeast. It could have started as ethene, a gas made from crude oil or natural gas.", "stopsAfter": "writing the equation and conditions for each of the three routes; explaining the equilibrium arrow, the pressure, the catalyst, the temperature compromise and recycling in hydration; explaining why hydroxide substitutes a haloalkane and why it is heated under reflux; explaining each fermentation condition and the limewater result; explaining why each product must be separated and how; judging the routes by feedstock, conditions, rate and separation. No combustion, no elimination, no mechanism names.", "nextLesson": "burning ethanol and alcohols as fuels (route chem-m7-c07, \"What does burning an alcohol tell us about fuel choice?\")."},
+        'teaching': {"task": "The ethanol in this bottle could have started as ethene from crude oil or natural gas, as a haloalkane in a flask, or as sugar fermented by yeast. How can we make ethanol, and how do the conditions and the separation help us judge each route?", "causalExplanation": "(1) one product, three starting materials; choose by starting material, conditions and separation (1); (2) hydration recalled: reversible, so ⇌; two gas molecules become one, so pressure favours ethanol (2); (3) the catalyst speeds both directions; lower temperature would give more ethanol but too slowly (3); (4) little reacts per pass, so cool, condense, recycle ethene, distil the ethanol from water; the plant runs nonstop, so fast and continuous, but from crude oil or natural gas (4); (5) bromine leaves its carbon slightly positive, so hydroxide is attracted, bonds, and bromide leaves: substitution (5); (6) heat speeds it, reflux keeps the volatile liquids, distil the product; the OH lands where the halogen was, so a chosen alcohol can be made (6); (7) glucose to two ethanol and two CO₂, balanced; yeast's enzymes are the catalyst, on the arrow (7); (8) warm for the enzymes, air out so less sugar is respired aerobically and more goes to ethanol, gas out so pressure cannot build; limewater shows CO₂ (8); (9) ethanol poisons the yeast at about 15%, so filter and distil; the vapour is richer in ethanol because it boils lower (9); (10) each route wins on something different, so the judgement depends on feedstock, energy and purity needed (10); memory aid (11); two attempts and brief feedback (12 to 15); handoff (16); key notes (17).", "conversationalApproach": "the ethanol in one bottle could have started as sugar, as ethene from crude oil or natural gas, or as a haloalkane in a flask, so the video asks how we can make ethanol and how each route's starting material, conditions and separation decide which to choose. Hydration of ethene with steam returns from the addition video as an equilibrium with two half arrows, where high pressure favours one gas molecule from two, the catalyst speeds both directions without moving the equilibrium, and about 300 degrees is a rate against yield compromise. Only a few per cent reacts per pass, so the mixture is cooled, unreacted ethene is recycled and the ethanol distilled, a fast continuous process from a non-renewable feedstock. Substitution swaps the bromine of bromoethane for an OH from aqueous hydroxide, because the bromine leaves its carbon slightly positive for the hydroxide ion to attack; reflux keeps the volatile liquids in the flask while heating speeds it up, and the OH lands where the halogen was. Fermentation is balanced atom by atom with yeast on the arrow as the catalyst, and the school setup gives each condition its reason (about 35 degrees, air kept out, gas let out, limewater turning milky), stopping near 15 per cent so the mixture is distilled. The routes are judged feature by feature with no single winner, and the memory aid is yeast, warm, no air. Two exam questions follow with brief feedback.", "openingDecision": "This bottle holds ethanol. It could have started as sugar, fermented by yeast. It could have started as ethene, a gas made from crude oil or natural gas. Or, in a lab, it could come from a haloalkane, like bromoethane, heated in a flask. Same molecule every time. So how can we make ethanol, and which way would you choose? That depends on what you start with, the conditions each route needs, and how you get the ethanol out at the end.", "understandingCheck": "(A1) \"A student keeps two flasks of glucose solution and yeast at 35 °C. Flask A is fitted with a bung and delivery tube. Air is bubbled through flask B the whole time. After two days, flask B contains less ethanol than flask A. Explain this difference, and write a balanced equation for the fermentation of glucose.\" New framing (Revision 2: a controlled comparison that really occurs; the scenes show flask A's setup; the one changed condition is the cause to find); the shared temperature rules out warmth as the cause. Crossed mistake: \"C₆H₁₂O₆ + yeast → 2C₂H₅OH + 2CO₂\" (yeast written as a reactant; the marker-reported mistake in 2021 Q25, a non-consumed substance written as a reactant, `../research/question-types-chem-m7.md`). (A2) \"1-Bromobutane is heated under reflux with aqueous sodium hydroxide. Write a balanced equation for the reaction, name the organic product, and explain why the mixture is heated under reflux.\" New haloalkane (the scenes use bromoethane and 2-bromopropane; the site uses 1-chloropropane); tests the swap on the same carbon, the salt, c05 naming and the reason for reflux. Crossed mistake: \"butan-2-ol\" (the OH moved to another carbon; the site MC Q1 distractor pattern).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the production of alcohols, including:; substitution reactions of halogenated organic compounds; fermentation\" Hydration of ethene is not listed under this dotpoint (it is `C7-IQ3-01`, chem-m7-c04a); it is recalled here as the third route because the route start compares all three starting materials. this video starts by comparing the starting materials of three routes to ethanol (ethene from crude oil or natural gas, a haloalkane, and glucose from plants), and stops at judging each route's conditions and how the ethanol is separated. It teaches: hydration recalled from chem-m7-c04a (ethene and steam, phosphoric acid catalyst, about 300 °C, about 60 to 70 atmospheres); the reaction is reversible, so it is written with an equilibrium arrow (chem-m5-c02 callback); at 300 °C all three substances are gases, two gas molecules become one, so high pressure favours ethanol (chem-m5-c04 callback); the catalyst speeds both directions and does not move the equilibrium (chem-m5-c04 callback); the forward reaction releases heat, so 300 °C is a compromise between yield and rate (one sentence; Module 5 temperature callback, see Open decisions); only a few percent of the ethene reacts per pass, so the mixture is cooled, ethanol and water condense, and unreacted ethene is recycled; the ethanol is then distilled from the water; substitution: a haloalkane heated with aqueous sodium hydroxide gives an alcohol and a sodium halide (bromoethane to ethanol and NaBr), because the halogen leaves the carbon slightly positive and the negative hydroxide ion is attracted to it; the OH takes the halogen's place on the same carbon (2-bromopropane gives propan-2-ol), so the route can make a chosen alcohol; heating under reflux speeds the reaction without losing the volatile haloalkane and alcohol, because the upright condenser returns their vapours; the alcohol is then distilled from the mixture; fermentation: glucose to ethanol and carbon dioxide, balanced, with yeast on the arrow because its enzymes are the catalyst; the school setup as a short apparatus sequence (glucose solution and yeast in a flask, a warm water bath at about 35 °C, a bung and delivery tube that keep air out and let carbon dioxide escape, limewater turning milky); why each condition (enzymes work fastest when warm and are damaged when too hot; with oxygen, yeast can respire some sugar aerobically to carbon dioxide and water, so less ethanol forms; gas must escape so pressure cannot build); fermentation usually stops at about 15% ethanol, so the yeast is filtered off and the mixture distilled, the vapour richer in ethanol because ethanol boils at 78 °C and water at 100 °C (fractional distillation in industry, one clause); judging the routes by feedstock (renewable or not), conditions and energy, rate (continuous or batch) and separation, with no single best route. Not here: the four alkene additions and their conditions in full (chem-m7-c04a; recalled once with the conditions card); naming and classifying alcohols, boiling points (chem-m7-c05); burning ethanol, combustion equations and enthalpy, biofuel energy data (chem-m7-c07; the site's L11 figures are not used); elimination with ethanolic hydroxide (screen chip only; chem-m7-c08 and c13); the substitution mechanism by name (SN1, SN2) and leaving-group order (site card 2 feature 3; author note e); Markovnikov's rule; starch hydrolysis by amylase (site, author note h); breadmaking and carbonation (site Insight); country case studies (Brazil, Germany; correction 8); the 95.6% azeotrope (author note i)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c04a, c04b and c05: carbon skeleton ink; hydrogens soft grey; oxygen brick red, the OH ringed red; the C=C teal; bromine deep orange-brown; condition chips navy on the arrow; the equilibrium arrow navy with two half heads; the second product boxed in thin grey (\"+ NaBr\", \"+ 2CO₂\"). Board layout (constant): top-left the short task chip (\"Route 1: hydration\", \"Route 2: substitution\", \"Route 3: fermentation\"); centre the equation stage strip, one equation at a time; plates small at the left or right (larger only in scenes 8 and 9, where the apparatus is the content); the route board returns small at the top in scenes 10 and 16. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous equation or plate leaves before the next one draws. Reuse: painted plates (inspected 22 Oct): `m7-ethanol-fuel-bottle-v1.png` (an amber glass bottle with a glass stopper, pale liquid, no label; 2000 × 2000; hook and handoff, coded label \"ethanol\"); `m7-crude-oil-barrel-v1.png` (a plain dark steel drum, no label; 2000 × 2000; hook and scene 4, coded label \"crude oil → ethene\"); `m7-reflux-apparatus-v1.png` (a round-bottom flask of pale orange liquid on a heating mantle, an upright water-jacketed condenser clamped to a retort stand, red and blue water hoses; no people; 2000 × 2000; scene 6 and feedback 2); `m7-school-distillation-setup-v1.png` (a flask on a heating mantle, a still head with a thermometer, a sloping water-jacketed condenser with hoses on its own stand, a conical collecting flask; no people; 2000 × 2000; scenes 4 (small, silent) and 9). All small, scale uniformly only, never stretched. Considered, not used: `m6-limewater-clear-v1.png` and `m6-limewater-milky-v1.png` (inspected: a limewater tube in a wooden rack with a bent delivery tube entering from the upper left; a separate flask plate could not be joined to that tube reliably, so the limewater tube is drawn inside the new setup plates in the same style); `m6-conical-flask-v1.png` (inspected: an empty conical flask; no bung, tube or contents); `g1-sugar-bowl-v1.png` (inspected: a bowl of table sugar with a spoon; sucrose, not the glucose solution in the equation); `m6-red-wine-glass-v1.png` (inspected: a glass of red wine; drink context not needed). New plates: `m7-fermentation-setup-start-v1.png` and `m7-fermentation-setup-bubbling-v1.png` (hook, scene 8, feedback 1); see Assets. No human figures.", "transitionPlan": "The ethanol bottle plate opens the hook under a route board whose three columns fill one per cue with the fermentation setup plate, the crude oil barrel with a teal ethene structure and a coded bromoethane, then three arrows converge on the bottle; the equation stage strip builds the hydration with navy condition chips, its arrow splitting into equilibrium half heads as two gas dots merge into one; the catalyst chip pulses both ways and a small balance settles at about 300 degrees; the recycle loop runs ethene dots through reactor, cooler and separator with a pass counter and a distillation flash; the strip builds the substitution as the swap docker lifts Br off and docks an OH, then the dipole tug and a hydroxide ion explain the attack; the reflux apparatus plate runs its vapour return and a second strip highlights the same middle carbon for propan-2-ol; the fermentation equation builds with an atom tally and yeast on the arrow; the fermentation setup plate lights its condition tags and crossfades in place to bubbling with milky limewater; the bubbling stops, a gauge fills to about 15 per cent and the school distillation plate drips ethanol-rich droplets; three route cards light line by line with feedstock lines underlined; the memory line writes over three equation cards; each attempt clears the board and its feedback underlines the card as the strip, swap docker and name builder run and a crossed chip lands; the route board and next chip close; scene crossfade with settle."},
+        'rows': M7C06_ROWS,
+    },
+    # END generated entries: m7p01c, m7p02c, m7c05, m7c06
 }
 
 

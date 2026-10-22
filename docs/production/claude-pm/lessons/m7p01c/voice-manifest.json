@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-P01-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p01c/lesson.json",
+  "lessonSha256": "3b8cdf607f5ed48b4d14e4d9d5662459ea8eed3d0664cdeb7b6ad6e816949574",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p01c/lesson.production-brief.json",
+    "sha256": "44ce6ddd88dccd805c8c6b57810ed16a9f971692d302b85beabc26e9fefe41e5"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Here are three bottles of clear, colourless liquid: heptane, octane and nonane. They're alkane neighbours, and they look identical. The last video said a longer chain means stronger dispersion forces. That's a claim. So how do you test it in a school lab, safely, and how far can you trust what you find?",
+      "hash": "f57993a15ae0",
+      "textSha256": "f57993a15ae0ba5d884b90eb2b066de64f9d150260c8219b31b5c988d48e3b4c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/hook.f57993a15ae0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/hook.f57993a15ae0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/hook.f57993a15ae0.generation.json",
+      "plannedRequestSha256": "309b118037c8bfb7b8ba5420e497bbee974d86b1efd26c1fbaa4e9692efb6e2b"
+    },
+    {
+      "id": "choose-members",
+      "parentSceneId": "choose-members",
+      "text": "First, choose members of one series with straight chains, so the only thing that changes is the length, one C H two at a time. A branched isomer would change the shape as well. Heptane, octane and nonane are all liquids at room temperature. Methane to butane are gases, and pentane boils at thirty six degrees, so its vapour builds up fastest, which makes it the biggest fire risk in a class test.",
+      "hash": "224d1b16c014",
+      "textSha256": "224d1b16c0145a013c0ebd74928e7f0d06736b999c82f25424f2319abbed3c9b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/choose-members.224d1b16c014.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/choose-members.224d1b16c014.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/choose-members.224d1b16c014.generation.json",
+      "plannedRequestSha256": "b8f969900fbf8b7c1150e4d46f2038ba1d2d4ffd1755f365318466a8fd33cbf7"
+    },
+    {
+      "id": "choose-test",
+      "parentSceneId": "choose-test",
+      "text": "Next, choose a property. Boiling point is the obvious one, but that means heating a flammable liquid, and any flame or hot surface nearby could ignite its vapour. So measure something at room temperature: how fast each liquid evaporates. Only the fastest molecules have enough energy to escape, so the ones left behind are slower on average, and the liquid cools. The faster it evaporates, the bigger the temperature drop.",
+      "hash": "d68eaedde68a",
+      "textSha256": "d68eaedde68a8e3fc86bba6af90e9de131b82955666553e54e2b81e0b6b5bb28",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/choose-test.d68eaedde68a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/choose-test.d68eaedde68a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/choose-test.d68eaedde68a.generation.json",
+      "plannedRequestSha256": "083e71dac6683f0f8abb8601b177ac45fa7946bff160fbd5a863927121c652f6"
+    },
+    {
+      "id": "method",
+      "parentSceneId": "method",
+      "text": "Wrap a small sleeve of filter paper around the tip of a temperature probe. Dip it in the heptane for thirty seconds, so the paper soaks up liquid at the sample's temperature. Then lift it out, and log the temperature every couple of seconds until it stops falling. The start reading minus the lowest reading is the temperature drop, delta T. Do it in a fume cupboard, three times for each alkane.",
+      "hash": "18ec1b7d45ac",
+      "textSha256": "18ec1b7d45ac7386ca0feefe549ca5aca66ee3a0b6b15f245982e37705b163bb",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/method.18ec1b7d45ac.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/method.18ec1b7d45ac.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/method.18ec1b7d45ac.generation.json",
+      "plannedRequestSha256": "951f8e9c1194d747b01ca1608c6fbccb1a4f67d7219bf4411df8d53ef7dfc2be"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "So what are the variables? The independent variable is the number of carbons: seven, eight or nine. The dependent variable is the temperature drop. And everything else stays the same: the size of the paper, the soaking time, the starting temperature, and the probe's place in the fume cupboard, because moving air speeds up evaporation.",
+      "hash": "4f003b737c40",
+      "textSha256": "4f003b737c409431dd2e7b7f942d399fcd7712adfd7c957abb1681db2ccaecab",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/variables.4f003b737c40.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/variables.4f003b737c40.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/variables.4f003b737c40.generation.json",
+      "plannedRequestSha256": "9d4b8dbce11aefd05469e662f35e390b036b5b9eacd40c635b819fbaf1326d73"
+    },
+    {
+      "id": "logged-runs",
+      "parentSceneId": "logged-runs",
+      "text": "Here's one run of each. Heptane drops fastest, bottoming out at fifteen point eight degrees, then warms up again once the liquid's gone. Octane falls more slowly, to nineteen point five. Nonane barely moves, to twenty one point one.",
+      "hash": "813c463a5a86",
+      "textSha256": "813c463a5a860e68ca5c2fcf7f933fd6d48e16f425fb03c41a1f03638c27dcc1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/logged-runs.813c463a5a86.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/logged-runs.813c463a5a86.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/logged-runs.813c463a5a86.generation.json",
+      "plannedRequestSha256": "876b64f41935935f195826abcefc465e16ded624b45e659abd916be0930133c5"
+    },
+    {
+      "id": "results",
+      "parentSceneId": "results",
+      "text": "Now the table. Heptane's three drops were five point eight, six point two and six point zero degrees, a mean of six point zero. Octane's mean is two point two, and nonane's is just zero point seven. Each extra carbon makes the drop smaller.",
+      "hash": "d9f3a7248a86",
+      "textSha256": "d9f3a7248a86deb10e2534a98ad410fbd134d8d88ad840a3314063c671036428",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/results.d9f3a7248a86.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/results.d9f3a7248a86.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/results.d9f3a7248a86.generation.json",
+      "plannedRequestSha256": "4ffdba8dc88e76f2e40d7adb2e55f6e72e162fb28f294ed1d344045cf2c91df5"
+    },
+    {
+      "id": "bonding",
+      "parentSceneId": "bonding",
+      "text": "Why? Inside each molecule there are only carbon to carbon and carbon to hydrogen covalent bonds, and evaporating doesn't break any of them. Between the molecules there are dispersion forces, and each extra C H two adds electrons and contact, so those forces get stronger, as the last video showed. Fewer molecules have enough energy to break free each second, so nonane evaporates slowest, and cools least.",
+      "hash": "0592f4345e85",
+      "textSha256": "0592f4345e853ad242b704b0f53ea861aec205d296859f6e727072697e4c3b44",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/bonding.0592f4345e85.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/bonding.0592f4345e85.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/bonding.0592f4345e85.generation.json",
+      "plannedRequestSha256": "8a78c6a227f0e28a9b1a96f157ba870ac1839577f3b16c46b3acdbdf2d78f47e"
+    },
+    {
+      "id": "secondary-data",
+      "parentSceneId": "secondary-data",
+      "text": "Methane to butane can't be tested this way at all. So extend it with secondary data: boiling points measured and published by others, for the first nine alkanes. Boiling point rises at every step. But each step is smaller than the last: about seventy three degrees from methane to ethane, and only about twenty five from octane to nonane. Describe that pattern. The reason goes beyond this course.",
+      "hash": "e2e7bd700f02",
+      "textSha256": "e2e7bd700f02f515e0daf64b4bb5b7de61eedcf16bdf9bfbcd6ae80e5c254b34",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/secondary-data.e2e7bd700f02.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/secondary-data.e2e7bd700f02.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/secondary-data.e2e7bd700f02.generation.json",
+      "plannedRequestSha256": "53521641bda930cec8ee819a7658b410e05cc50aea3de9d9a83e6103dbbd7ec9"
+    },
+    {
+      "id": "methods-agree",
+      "parentSceneId": "methods-agree",
+      "text": "And the two methods agree: the higher the boiling point, the smaller the temperature drop. Two independent methods pointing the same way make a stronger conclusion.",
+      "hash": "7a33ddc0e6bd",
+      "textSha256": "7a33ddc0e6bd9718896477d2ba515d50b4917ea17e4a5ec985035ac78ef8d64d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/methods-agree.7a33ddc0e6bd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/methods-agree.7a33ddc0e6bd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/methods-agree.7a33ddc0e6bd.generation.json",
+      "plannedRequestSha256": "7fbc000593e121cd51bbe1e6b19c133bbe51852eb53862da4d73b09f5e9c6f6f"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Validity: does it measure what it's meant to? Only if chain length is the one thing that changes, so the controls matter. Reliability: do the repeats agree? Each alkane's drops sit within half a degree of each other. Accuracy depends on the probe reading true temperatures, so check it against a calibrated thermometer. The ranking matching the published boiling points supports the conclusion, but that's agreement, not accuracy.",
+      "hash": "ff5b9d96ea4e",
+      "textSha256": "ff5b9d96ea4edbdb8052d1a2cd08a0e8d4aa6aa1674f05cc6cfbe5221c2e6f5e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/validity-reliability.ff5b9d96ea4e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/validity-reliability.ff5b9d96ea4e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/validity-reliability.ff5b9d96ea4e.generation.json",
+      "plannedRequestSha256": "ac490fa1602c9923ca59699a599a7f7517b5760265d4606a792bf5f0a801cfa6"
+    },
+    {
+      "id": "limits",
+      "parentSceneId": "limits",
+      "text": "The temperature drop compares how quickly the liquids evaporate. It isn't a boiling point, and it doesn't measure the forces directly. Changes in air flow, or in how much liquid the paper holds, shift the readings, which is why you repeat. And the conclusion covers straight chains only: branched isomers boil lower.",
+      "hash": "beca4290e1ac",
+      "textSha256": "beca4290e1acc3c91811670ff1051d7e26837a8c273aaef33c8176c8b9a6d106",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/limits.beca4290e1ac.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/limits.beca4290e1ac.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/limits.beca4290e1ac.generation.json",
+      "plannedRequestSha256": "9d9219feaf8b3f7a73a940d89254a239be38cc267a30fdabfc72bef079cbdbe6"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. Heptane and octane are highly flammable, and nonane is flammable. Their vapour can drift to a flame, so keep flames and hot plates well away. Work in a fume cupboard, because breathing the vapour can make you drowsy. We swapped out hexane, because repeated exposure can damage nerves. Wear safety glasses, keep small volumes in stoppered tubes, and pour leftovers into the labelled organic waste container, never the sink.",
+      "hash": "0e3e048653ac",
+      "textSha256": "0e3e048653ac3f56446ee515ed858a57ba398163621e273dbec3c322c349064c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/risk-assessment.0e3e048653ac.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/risk-assessment.0e3e048653ac.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/risk-assessment.0e3e048653ac.generation.json",
+      "plannedRequestSha256": "de0c6b35bb73265137296cc9660dce3e78858080853d00f06fd544b9e49f49b8"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "A short way to keep the result: longer chain, smaller chill. More carbons mean stronger dispersion forces, so slower evaporation, and a smaller temperature drop.",
+      "hash": "30fbdbb62f1e",
+      "textSha256": "30fbdbb62f1e29d43bb1cdc21cfcdd223955494e477de2c1a4b3b1c383af6fcd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/memory-aid.30fbdbb62f1e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/memory-aid.30fbdbb62f1e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/memory-aid.30fbdbb62f1e.generation.json",
+      "plannedRequestSha256": "475feba301364b935bbe462fbff631f0aa11e7b55a200fb4fa7cdb796d949e5f"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. The table gives the normal boiling points of four straight-chain alkenes. Describe the trend, and explain it with reference to the intramolecular and intermolecular bonding present. Pause here to answer.",
+      "hash": "e53691e4d3f0",
+      "textSha256": "e53691e4d3f07e31eb1f96a3729a45966c1e62be30d8348e51eb110309a217cb",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/attempt-1.e53691e4d3f0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/attempt-1.e53691e4d3f0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/attempt-1.e53691e4d3f0.generation.json",
+      "plannedRequestSha256": "19d744a78d64da7cb6ec130609272b0acfdffccd38f5abfede0e07f01d99f1c8"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Boiling point rises with chain length, by a smaller step each time: about thirty six, then thirty four, then thirty degrees. Inside each molecule, the covalent bonds stay unbroken. Between molecules, each extra C H two adds electrons and contact, so dispersion forces get stronger, and more energy is needed to separate them. \"Longer chains have stronger covalent bonds\" misses the point.",
+      "hash": "bda2b1a3dbd6",
+      "textSha256": "bda2b1a3dbd6a8fa94657e2068f31453f087566f82fc7d85a24ce5ded502a858",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/feedback-1.bda2b1a3dbd6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/feedback-1.bda2b1a3dbd6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/feedback-1.bda2b1a3dbd6.generation.json",
+      "plannedRequestSha256": "431b266352ea71b33f57561a25a62f32cdcc186d16b10d35b6171ce15884f657"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. A student plans to find the effect of chain length on volatility by heating pentane, hexane and two-methylpentane in an open test tube over a Bunsen burner, and recording each boiling point. Evaluate the validity and safety of this plan. Pause here to answer.",
+      "hash": "4a8b25ffecc4",
+      "textSha256": "4a8b25ffecc46f5da6584c93291141ffc96a59e4303365c1059c1faff18a4bc5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/attempt-2.4a8b25ffecc4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/attempt-2.4a8b25ffecc4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/attempt-2.4a8b25ffecc4.generation.json",
+      "plannedRequestSha256": "5182ed3be2a0b7d61f85263210b595dd25f094a88888096f4e628c9dffde5647"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The plan can't isolate chain length, and it isn't safe. Two-methylpentane is branched, so it changes shape as well as chain length. And an open flame near highly flammable vapour could start a fire, especially with pentane, which boils at thirty six degrees. Instead, compare straight chains by evaporation in a fume cupboard, or use published boiling points. A smaller flame doesn't fix it.",
+      "hash": "0a2d49c932cc",
+      "textSha256": "0a2d49c932cc06f634705c31b686737ead669ea03690486614b3e1b22108ff01",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/feedback-2.0a2d49c932cc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/feedback-2.0a2d49c932cc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/feedback-2.0a2d49c932cc.generation.json",
+      "plannedRequestSha256": "02ba1d6f4176a6d41728c6865dc2f0b0706eb11803371a4d226011a3ecd688e3"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: choose straight-chain members of one series, test a property you can measure without flames, keep everything but chain length the same, repeat, and back it up with published data. Then explain the trend with the forces between molecules, not the bonds inside them. Next: what happens when a double bond meets a reagent.",
+      "hash": "66d7829db01e",
+      "textSha256": "66d7829db01ef4d4773ca894e385e440e4c0fcf713905f77a2b163a0f8b7dfc3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/decision-rule.66d7829db01e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/decision-rule.66d7829db01e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/decision-rule.66d7829db01e.generation.json",
+      "plannedRequestSha256": "55fe36621260f7a1ec06dea67b2187c2a18db34268642518e27c08014af7b157"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P01-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

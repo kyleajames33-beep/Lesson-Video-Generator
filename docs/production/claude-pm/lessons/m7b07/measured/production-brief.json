@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b07/measured/lesson.json",
+    "lessonSha256": "19e8ac30bfa48daf1825839bc5eef7fd7bae03552d18964789209911d247250e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b06: barriers, inflammation, phagocytes and phagocytosis; dendritic cells carry pieces of a pathogen to a lymph node and show them to T cells; innate is fast and broad, adaptive is specific and takes days. From b01: bacteria are cells. From b03: bacteria grip host cells with surface threads (fimbriae); viruses use surface proteins to bind host cells. From Year 11: proteins have shapes that fit other molecules (enzyme and substrate); cells divide by mitosis into identical cells; DNA codes for proteins; the rough endoplasmic reticulum makes proteins for export. Not assumed: antigen, antibody structure, B cell receptors, clonal selection, clonal expansion, plasma cells, memory B cells, helper T cells (named only), the actions of antibodies.",
+    "startsWith": "Introduce antigens and matching receptors. The video opens: Your body can make antibodies that fit a bacterium it has never met before.",
+    "stopsAfter": "defining an antigen and explaining that receptors and antibodies bind one small part with a particular shape; describing the antibody (Y-shaped protein, two identical binding sites at the arm tips, a stem shared by many different antibodies) and that a B cell's receptors are antibodies held in its membrane; explaining that each B cell has one receptor shape and that billions of B cells with millions of shapes exist before infection because receptor genes are shuffled at random; explaining clonal selection (the antigen picks out the few B cells that already fit; usually a helper T cell's go-ahead is also needed); explaining clonal expansion and why a first response takes days; distinguishing plasma cells (release antibodies with the selected binding shape, which the blood carries to the infection) from memory B cells (stay for later); explaining how antibodies help without killing (block attachment and toxins, clump bacteria, coat them for phagocytes); explaining specific binding; interpreting a serum clumping experiment and evaluating a \"design\" claim.",
+    "nextLesson": "how T cells respond to infected cells (route entry bio-m7-b08)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b07.md"
+  ],
+  "teaching": {
+    "task": "Your body can make antibodies that fit a bacterium it has never met. How does it find the right B cells, and how do the antibodies they make target that bacterium?",
+    "causalExplanation": "Causes: why the body needn't design antibodies (the shapes already exist; hook, scene 5); why one cell has one shape and the body has millions (random gene shuffling during development; scene 5); why only some B cells respond (shape fit; scene 6); why a first response takes days (rare cells must multiply; scene 7 and attempt 2); why plasma cells make the right antibody (they release the selected receptor's shape; scenes 4 and 8); how binding helps without killing (block, clump, coat, linked back to b06's phagocytes; scene 9); what specific means (scene 10). Visible case: the same splinter bacterium from b06, and one B cell followed from the library to its clone. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scene 5 (row, shuffle diagram, field) and scene 9 (three panels) are the densest, so earlier parts dim at each cue.",
+    "conversationalApproach": "Your body can make antibodies that fit a bacterium it has never met, and in 1957 Melbourne's Frank Macfarlane Burnet proposed that nothing is designed: the right cells already exist and the infection picks them out, so the question is how B cells find and target a pathogen. Following on from the dendritic cells of the last video, bacteria and their molecules reach a lymph node packed with lymphocytes, and this video follows the B cells. An antigen is a molecule the immune system can recognise, usually a protein or sugar chain on a pathogen's surface, and a receptor fits one small part of it. Each receptor is an antibody held in the membrane, a Y-shaped protein with a shared stem and two identical binding tips. Each B cell carries one receptor shape, made by random shuffling of receptor gene pieces in the bone marrow, so millions of shapes exist before any infection. Only the B cells that fit bind the antigen, usually with a helper T cell's go-ahead; that is selection, not instruction. The chosen cell divides over several days into a clone, which is why a first response takes days, and the clone becomes plasma cells that release antibodies and memory B cells that stay. Antibodies do not kill by themselves; they block attachment and toxins, link bacteria into clumps and coat them for phagocytes, and specific means each pathogen selects its own clones. The memory aid is clonal selection, the name is the process. Two exam questions follow with brief feedback.",
+    "openingDecision": "Your body can make antibodies that fit a bacterium it has never met before. So how does it design them in time? In 1957, the Melbourne scientist Frank Macfarlane Burnet proposed that it doesn't design anything. The right cells already exist before the infection, and the infection picks them out. That idea, clonal selection, explains how B cells target a pathogen.",
+    "understandingCheck": "13a explains a serum clumping result in two tubes (specific binding and antibody production, the route's stop). 13c evaluates the claim that B cells take a week because they must design an antibody (selection, rarity and expansion). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ3-01: \"investigate and model the innate and adaptive immune systems in the human body (ACSBL119)\". This video models the B cell (humoral) part of the adaptive system; b06 modelled the innate part, and b08 models the T cell part. Verb \"investigate and model\": the coded shape model of receptors and antigens (a deliberately simplified model, tagged as one) and the response strip are the model; attempt 1 investigates a serum experiment."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One lymph node board. Left two-thirds: painted cells (B cell, plasma cell, the bacterium, macrophage, T cell) with a coded shape model laid on them: each B cell's receptors are drawn as small coded Y shapes whose two tips carry one simple notch shape (triangle, round, square or wave), and the bacterium's antigens as small coded patches of matching shapes on its surface. A grey tag \"model: receptors and antigens drawn far larger than real, shapes simplified\" appears whenever the model is first used in a scene. Changes happen in place: the painted B cell crossfades to its aligned bare partner so coded receptors replace the painted ones exactly where they were (scene 5); the bare B cell crossfades to its aligned dividing partner before splitting (scene 7). Right third: b06's `ResponseStrip`, its first three rungs shrunk to grey thumbnails, the fourth rung (\"days: adaptive\", amber) expanded into five step chips filled as taught: \"fit\" (scene 6), \"go-ahead\" (scene 6), \"clone\" (scene 7), \"plasma cells\" (scene 8), \"antibodies bind\" (scene 9). No people, hands or faces: the body appears only as a lymph node, cells and molecules; the serum test in attempt 1 is a worded card with no tubes drawn. Coded elements are abstract only: the shape model, the response strip, a clone tree (branching lines with cell copies at the ends), a host cell membrane edge (as b03), a short day axis, arrows, chips and glosses. Scale: B cell about 8 µm, plasma cell about 12 to 15 µm, bacterium about 2 µm long, macrophage about 20 µm; the painted cells keep these proportions when shown together; antibodies (about 0.01 µm) are visible only as the enlarged coded model. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The wound bacterium plate opens the hook with coded antigen patches as a design-to-order chip writes and takes a grey scribble cross, then a coded grid of bare B cell plates fades in, each with its own receptor tip; the board clears to the lymph node layout with b06's ResponseStrip at the right, a dendritic cell thumbnail and coded specks flowing into the node plate; the bacterium fills the board as its patches pulse by kind and a zoom inset outlines one notch-shaped part; the B cell plate's receptors are ringed and a coded zoom opens to the antibody plate with its stem and tips ringed and a patch sliding into one tip; the B cell crossfades to its bare partner under coded ShapeReceptors, more cells take other tips and a coded gene shuffling diagram writes; the bacterium drifts along a row of B cells and only the matching ones lock on as a crossed chip lands and a T cell thumbnail gives the go-ahead; the dividing plate splits into a coded CloneTree over a day axis; clone cells crossfade one by one to plasma cell plates at true scale, with coded antibodies streaming out and memory cells kept; three panels build for block, clump and coat; triangle-tip antibodies coat the splinter bacterium and drift past a different coccus; the full strip enlarges and its five B cell chips brighten in order; one handwritten line writes over the row and clone tree; each attempt clears the board and its feedback underlines the card as an answer table or verdict block fills and a crossed chip lands; the strip, step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people, no portrait. `m7-wound-bacterium-v1.png` (from b06's brief) appears at the left with three kinds of small coded antigen patches on its surface (grey tag \"the splinter's bacteria, from b06\").",
+      "teachingReason": "Hook (selection, not design): Your body can make antibodies that fit a bacterium it has never met before.",
+      "narrationCue": "So how does it design them / Burnet / it doesn't design anything / The right cells already exist / the infection picks them out / clonal selection",
+      "motionPurpose": "On the spoken cues: On \"So how does it design them\" a grey chip \"design an antibody to order?\" writes beside it. On \"Burnet\" a small grey tag writes: \"Burnet, Walter and Eliza Hall Institute, Melbourne, 1957\". On \"it doesn't design anything\" the chip takes a grey scribble cross. On \"The right cells already exist\" a",
+      "motionRole": "explain",
+      "onScreenChange": "no people, no portrait. `m7-wound-bacterium-v1.png` (from b06's brief) appears at the left with three kinds of small coded antigen patches on its surface (grey tag \"the splinter's bacteria, from b06\"). On \"So how does it design them\" a grey chip \"design an antibody to order?\" writes beside it. On \"Burnet\" a small grey tag writes: \"Burnet, Walter and Eliza Hall Institute, Melbourne, 1957\". On \"it doesn't design anything\" the chip takes a grey scribble cross. On \"The right cells already exist\" a coded grid of twelve small copies of `m7-b-cell-bare-v1.png` (new) fades in at the right, each carrying coded receptors with a different tip notch (grey tag \"B cells, each with its own receptor shape (model)\"). On \"the infection picks them out\" the bacterium drifts across the grid and two cells whose tips match its patches light teal while the rest dim (tag \"picked out\"). On \"clonal selection\" the heading writes on: \"How do B cells target an antigen?\"; on \"B cells\" a small grey gloss writes under it: \"B cells: white blood cells that make antibodies\". Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "lymph-node",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the lymph node layout.",
+      "teachingReason": "Into the lymph node: In the last video, phagocytes held the splinter's bacteria back, and dendritic cells carried pieces of them to a lymph node.",
+      "narrationCue": "lymphocytes / B cells",
+      "motionPurpose": "On the spoken cues: At the right third, b06's `ResponseStrip` draws with its first three rungs as small grey thumbnails (\"barriers\", \"inflammation\", \"phagocytes\") and the fourth rung lit amber, \"days: adaptive\". `m7-lymph-node-v1.png` (from b06's brief) fills the left two-thirds. On \"dendritic cells carried pieces of",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the lymph node layout. At the right third, b06's `ResponseStrip` draws with its first three rungs as small grey thumbnails (\"barriers\", \"inflammation\", \"phagocytes\") and the fourth rung lit amber, \"days: adaptive\". `m7-lymph-node-v1.png` (from b06's brief) fills the left two-thirds. On \"dendritic cells carried pieces of them\" a small `m7-dendritic-cell-v1.png` thumbnail travels along a coded dotted path into the node (grey tag \"b06\"). On \"Bacteria and their molecules also drain there\" small coded specks and two tiny bacterium thumbnails flow in along the entering lymph vessels (tag \"bacteria and their molecules arrive\"). On \"lymphocytes\" the round follicles in the outer layer are ringed (gloss \"lymphocytes: white blood cells of the adaptive response\"). On \"B cells\" a coded zoom box opens from one follicle and `m7-b-cell-v1.png` appears enlarged beside it (tag \"B cell\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "antigens",
+      "visualDecision": "adjust",
+      "visualReference": "the node shrinks to a grey thumbnail at the upper left.",
+      "teachingReason": "Antigens: B cells recognise antigens.",
+      "narrationCue": "antigens",
+      "motionPurpose": "On the spoken cues: `m7-wound-bacterium-v1.png` fills the left two-thirds with its coded antigen patches (grey tag \"model: antigens drawn far larger than real\"). On \"antigens\" gloss \"antigen: a molecule the immune system can recognise\" (grey screen sub-gloss \"antigen: antibody generator\"). On \"a protein or a sugar",
+      "motionRole": "explain",
+      "onScreenChange": "the node shrinks to a grey thumbnail at the upper left. `m7-wound-bacterium-v1.png` fills the left two-thirds with its coded antigen patches (grey tag \"model: antigens drawn far larger than real\"). On \"antigens\" gloss \"antigen: a molecule the immune system can recognise\" (grey screen sub-gloss \"antigen: antibody generator\"). On \"a protein or a sugar chain on the surface\" the patches are ringed (tag \"on the surface\"). On \"many different antigens\" the three kinds of patch pulse in turn, each kind in its own muted colour (tag \"one bacterium: many antigens\"). On \"just one small part of its surface\" a coded zoom inset opens onto one patch, showing one notch-shaped part outlined teal (tag \"binds one small part\"; grey gloss \"epitope\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "antibody-shape",
+      "visualDecision": "adjust",
+      "visualReference": "on \"using receptors\" `m7-b-cell-v1.png` appears at the left with its painted surface receptors ringed (tag \"receptors\").",
+      "teachingReason": "The antibody's shape: B cells recognise antigens using receptors, and each receptor is an antibody held in the cell's membrane.",
+      "narrationCue": "antibody",
+      "motionPurpose": "On the spoken cues: On \"each receptor is an antibody held in the cell's membrane\" a coded zoom from one receptor opens to `m7-antibody-v1.png`, which fills the centre (tag \"receptor = antibody held in the membrane\"). On \"Its stem is the same\" the stem is ringed (gloss \"constant region: same in many antibodies\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "on \"using receptors\" `m7-b-cell-v1.png` appears at the left with its painted surface receptors ringed (tag \"receptors\"). On \"each receptor is an antibody held in the cell's membrane\" a coded zoom from one receptor opens to `m7-antibody-v1.png`, which fills the centre (tag \"receptor = antibody held in the membrane\"). On \"Its stem is the same\" the stem is ringed (gloss \"constant region: same in many antibodies\"). On \"The tips of its two arms\" both arm tips are ringed teal (gloss \"variable region: the binding sites\"). On \"fits one small part of an antigen\" a coded notch shape appears at each tip and the matching antigen patch from scene 3 slides into one tip (tag \"fits one shape\"). On \"Both tips are identical\" a second matching patch slides into the other tip (tag \"two identical binding sites\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "Cam lens zoom",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "one-shape",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-b-cell-v1.png` returns at the left; on \"all the receptors have the same shape\" it crossfades to its aligned partner `m7-b-cell-bare-v1.png` (new) while coded `ShapeReceptor`s with triangle tips appear exactly where the painted receptors were (tag \"one cell: one receptor shape\"; grey tag \"model: receptors drawn far larger than real\").",
+      "teachingReason": "One cell, one shape: On any one B cell, all the receptors have the same shape.",
+      "narrationCue": "all the receptors have the same shape / different B cells have different shapes / shuffles pieces of its receptor genes at random / billions of B cells / Most will never meet anything they fit",
+      "motionPurpose": "On the spoken cues: On \"different B cells have different shapes\" three more copies of the bare plate appear beside it with round, square and wave tips. On \"shuffles pieces of its receptor genes at random\" a clean coded diagram writes under the row: three short groups of thin ink bars, one bar from each group lifting",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-b-cell-v1.png` returns at the left; on \"all the receptors have the same shape\" it crossfades to its aligned partner `m7-b-cell-bare-v1.png` (new) while coded `ShapeReceptor`s with triangle tips appear exactly where the painted receptors were (tag \"one cell: one receptor shape\"; grey tag \"model: receptors drawn far larger than real\"). On \"different B cells have different shapes\" three more copies of the bare plate appear beside it with round, square and wave tips. On \"shuffles pieces of its receptor genes at random\" a clean coded diagram writes under the row: three short groups of thin ink bars, one bar from each group lifting out and joining into one short bar (tag \"random shuffling of receptor genes\"; grey gloss \"while B cells develop, in the bone marrow\"); the shuffle runs twice and each result points to a different cell in the row. On \"billions of B cells\" the row zooms out into a field of many tiny cells, each with a tiny tip mark (grey tag \"millions of shapes, before any infection\"). On \"Most will never meet anything they fit\" most of the field dims to grey. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "DrawPath",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "selection",
+      "visualDecision": "adjust",
+      "visualReference": "a row of eight bare B cell copies with different tips lines the lower left; the bacterium with its patches drifts along the row.",
+      "teachingReason": "Selection: In the lymph node, the bacterium's antigens meet huge numbers of B cells.",
+      "narrationCue": "helper T cell",
+      "motionPurpose": "On the spoken cues: On \"Only the few whose receptors fit\" the triangle-tip cell and the round-tip cell lock onto matching patches (their receptor tips seat into the patches, teal) while the others stay grey (tag \"only fitting cells bind\"). The strip's first step chip writes and lights: \"fit\". On \"The antigen doesn't",
+      "motionRole": "explain",
+      "onScreenChange": "a row of eight bare B cell copies with different tips lines the lower left; the bacterium with its patches drifts along the row. On \"Only the few whose receptors fit\" the triangle-tip cell and the round-tip cell lock onto matching patches (their receptor tips seat into the patches, teal) while the others stay grey (tag \"only fitting cells bind\"). The strip's first step chip writes and lights: \"fit\". On \"The antigen doesn't tell a B cell what to make\" a grey chip \"antigen tells the cell what to make\" fades in and takes a grey scribble cross, with the small grey reason \"the shape already existed\". On \"helper T cell\" a small `m7-t-cell-v1.png` appears beside the triangle-tip cell with a short coded signal arrow to it (tag \"go-ahead signal\"; gloss \"helper T cell: next video\"); the strip's second chip lights: \"go-ahead\". On \"the dendritic cells alerted\" a small `m7-dendritic-cell-v1.png` thumbnail fades in beside the T cell and then fades out (grey tag \"b06\"), recalling b06 scene 10. A small grey tag under the round-tip cell: \"this clone does the same\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "clone",
+      "visualDecision": "adjust",
+      "visualReference": "the triangle-tip cell moves to the left edge.",
+      "teachingReason": "Making a clone: Once it's switched on, the B cell divides, and its daughter cells divide again and again over several days, making thousands of identical cells.",
+      "narrationCue": "clone",
+      "motionPurpose": "On the spoken cues: On \"divides\" its bare plate crossfades to the aligned partner `m7-b-cell-dividing-v1.png` (new), then the image separates into two copies of the bare plate, each with triangle-tip receptors. On \"again and again\" a coded `CloneTree` draws to the right: 2, 4, 8, then a dense cluster of small copies",
+      "motionRole": "explain",
+      "onScreenChange": "the triangle-tip cell moves to the left edge. On \"divides\" its bare plate crossfades to the aligned partner `m7-b-cell-dividing-v1.png` (new), then the image separates into two copies of the bare plate, each with triangle-tip receptors. On \"again and again\" a coded `CloneTree` draws to the right: 2, 4, 8, then a dense cluster of small copies (tag \"a clone: identical cells\"); every copy carries triangle tips. The strip's third chip lights: \"clone\". On \"a first response takes days\" a short coded day axis draws under the tree, from \"day 0\" to \"several days\" (grey ticks only; tag \"first time: days\"). On \"A few rare cells\" the starting cell is ringed against the cluster (tag \"rare cells, multiplied\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "plasma-memory",
+      "visualDecision": "adjust",
+      "visualReference": "many of the clone cluster's cells crossfade, one by one, to small copies of `m7-plasma-cell-v1.png` (new).",
+      "teachingReason": "Plasma cells and memory cells: Many cells in the clone become plasma cells.",
+      "narrationCue": "plasma cells / memory B cells",
+      "motionPurpose": "On the spoken cues: On \"plasma cells\" one plasma cell enlarges at the left (true size against a bare B cell copy: visibly larger). **Plasma cell scale (Revision 3):** the `m7-plasma-cell-v1.png` plate is scaled up uniformly in the scene, never stretched, so that the plasma cell reads about 1.5 times the bare B cell's",
+      "motionRole": "explain",
+      "onScreenChange": "many of the clone cluster's cells crossfade, one by one, to small copies of `m7-plasma-cell-v1.png` (new). On \"plasma cells\" one plasma cell enlarges at the left (true size against a bare B cell copy: visibly larger). **Plasma cell scale (Revision 3):** the `m7-plasma-cell-v1.png` plate is scaled up uniformly in the scene, never stretched, so that the plasma cell reads about 1.5 times the bare B cell's width (about 12 µm against 8 µm). On its fixed canvas the painted cell is only about 1.2 times the B cell plate's width (art QA, Brief 101), so its scene scale is about 1.25 times the B cell plate's scale; measure the painted cell outlines, not the canvases. Keep the same ratio wherever the two cells appear side by side. On \"packed with the machinery for making protein\" its stacked internal membranes are ringed (small grey gloss \"rough ER: makes proteins for export, Year 11\"). On \"thousands of antibody molecules every second\" small coded Y shapes stream out from its surface (tag \"thousands per second\"; grey tag \"antibodies drawn far larger than real\"). On \"the same binding shape\" the \"thousands per second\" tag dims to grey and one released Y enlarges, its tips showing the triangle notch, beside the original cell's triangle receptor (tag \"same shape as the selected receptor\"). The strip's fourth chip lights: \"plasma cells\". On \"The blood carries them to the infection\" the previous tag dims, the cells shrink left, and a few coded Ys stream from a small lymph node thumbnail along a coded vessel line to a small thumbnail of b06's inflamed close-up, `m7-dermis-splinter-inflamed-v1.png` (grey tag \"b06: leaky vessels let them out\"). On \"memory B cells\" three cells at the edge of the cluster stay as bare B cell copies with triangle tips and are ringed (tag \"memory B cells: stay for later\"; small grey tag \"b09\"), and the travel thumbnails dim. At most three bright text items: only the current tag, the strip chip and at most one gloss; each tag dims when the next lands. Hold one second.",
+      "motionTools": [
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "antibody-actions",
+      "visualDecision": "adjust",
+      "visualReference": "on \"don't kill bacteria by themselves\" a grey chip \"antibodies kill bacteria\" fades in and takes a grey scribble cross.",
+      "teachingReason": "What antibodies do: Antibodies don't kill bacteria by themselves.",
+      "narrationCue": "don't kill bacteria by themselves / cover the parts a bacterium uses to stick to our cells / link bacteria into clumps / coat bacteria / receptors for the antibody's stem",
+      "motionPurpose": "On the spoken cues: Three panels build across the left two-thirds, one per cue; each earlier panel dims to grey. (1) On \"cover the parts a bacterium uses to stick to our cells\" the bacterium sits above a coded host cell membrane edge (as in b03); its coded surface threads reaching for the membrane are covered by coded",
+      "motionRole": "explain",
+      "onScreenChange": "on \"don't kill bacteria by themselves\" a grey chip \"antibodies kill bacteria\" fades in and takes a grey scribble cross. Three panels build across the left two-thirds, one per cue; each earlier panel dims to grey. (1) On \"cover the parts a bacterium uses to stick to our cells\" the bacterium sits above a coded host cell membrane edge (as in b03); its coded surface threads reaching for the membrane are covered by coded Ys, and it drifts off without gripping (tag \"block: can't attach\"; grey tag \"b03: fimbriae\"; grey screen tag \"also blocks toxins\"). (2) On \"link bacteria into clumps\" four copies of the bacterium plate (scaled together) are pulled into a cluster by coded Ys bridging pairs of patches (tag \"clump: two arms link bacteria\"; grey gloss \"agglutination\"). (3) On \"coat bacteria\" a bacterium covered in coded Ys meets `m7-macrophage-v1.png` (at true relative size, much larger); on \"receptors for the antibody's stem\" small coded receptors on the macrophage edge grip the Y stems and the edge begins to curve round the bacterium (tag \"coat: phagocytes grab it faster\"; grey gloss \"opsonisation\"; grey tag \"b06: phagocytosis\"). The strip's fifth chip lights: \"antibodies bind\". A small grey tag at the end: \"also: activate complement proteins\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "specific",
+      "visualDecision": "adjust",
+      "visualReference": "the splinter bacterium returns at the left, coated in triangle-tip Ys (tag \"fits: bound\").",
+      "teachingReason": "What specific means: That's what specific means.",
+      "narrationCue": "A different bacterium / select its own B cells / Each pathogen gets its own matching clones",
+      "motionPurpose": "On the spoken cues: On \"A different bacterium\" the round coccus from `m7-bacterium-rod-coccus-v1.png` (cropped by position to the coccus, scaled, not stretched) appears at the right with square and wave coded patches (grey tag \"a different bacterium\"); triangle-tip Ys drift past it without attaching (tag \"different",
+      "motionRole": "explain",
+      "onScreenChange": "the splinter bacterium returns at the left, coated in triangle-tip Ys (tag \"fits: bound\"). On \"A different bacterium\" the round coccus from `m7-bacterium-rod-coccus-v1.png` (cropped by position to the coccus, scaled, not stretched) appears at the right with square and wave coded patches (grey tag \"a different bacterium\"); triangle-tip Ys drift past it without attaching (tag \"different shapes: usually not bound\"). On \"select its own B cells\" the square-tip cell in the grey library row lights (tag \"its own clone\"). On \"Each pathogen gets its own matching clones\" a grey chip \"every B cell responds to every antigen\" fades in and takes a grey scribble cross. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "sequence",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the full `ResponseStrip`, enlarged to the centre: b06's three innate rungs above (grey, with their thumbnails), then the five B cell chips in the expanded fourth rung, connected by short arrows.",
+      "teachingReason": "The whole sequence: So here's the whole sequence.",
+      "narrationCue": "bind it / helper T cell's signal / divide into a clone / Plasma cells release antibodies / help remove the pathogen",
+      "motionPurpose": "On the spoken cues: The chips brighten in order, one per cue, each with its small thumbnail: \"fit\" (the bacterium patch seated in a receptor tip) on \"bind it\", \"go-ahead\" (T cell thumbnail) on \"helper T cell's signal\", \"clone\" (the clone tree) on \"divide into a clone\", \"plasma cells\" (plasma cell thumbnail) on \"Plasma",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the full `ResponseStrip`, enlarged to the centre: b06's three innate rungs above (grey, with their thumbnails), then the five B cell chips in the expanded fourth rung, connected by short arrows. The chips brighten in order, one per cue, each with its small thumbnail: \"fit\" (the bacterium patch seated in a receptor tip) on \"bind it\", \"go-ahead\" (T cell thumbnail) on \"helper T cell's signal\", \"clone\" (the clone tree) on \"divide into a clone\", \"plasma cells\" (plasma cell thumbnail) on \"Plasma cells release antibodies\", \"antibodies bind\" (the coated bacterium) on \"help remove the pathogen\". Only the current chip is bright. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "lineage split"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory: So remember: clonal selection, the name is the process.",
+      "narrationCue": "clonal selection, the name is the process.",
+      "motionPurpose": "On the spoken cues: One handwritten line writes on large across the centre: \"Clonal selection: the name is the process.\" Under it, on \"selected\", the row of bare B cells returns small with only the triangle-tip cell lit; on \"cloned\", the clone tree grows from it. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. One handwritten line writes on large across the centre: \"Clonal selection: the name is the process.\" Under it, on \"selected\", the row of bare B cells returns small with only the triangle-tip cell lit; on \"cloned\", the clone tree grows from it. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (two tubes)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. A mouse was",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (two tubes))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A mouse was injected with killed cells of bacterium A. Two weeks later, a sample of serum (the liquid part of the blood, without cells) was taken from the mouse. The serum was mixed with bacterium A in tube 1 and with bacterium B in tube 2. In tube 1, the bacteria clumped together. In tube 2, the bacteria stayed evenly spread through the liquid.\" Demand: \"Explain the results in both tubes. (4 marks)\". One lined answer box. No plates, no tubes drawn and nothing answer-bearing (no strip, no shape model). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Bacterium A's antigens selected the B cells / released antibodies / linked them into clumps / didn't visibly clump / this test alone can't show that / the classic mistake",
+      "motionPurpose": "On the spoken cues: A two-row answer table writes beneath it (\"tube 1\", \"tube 2\"). On \"Bacterium A's antigens selected the B cells\" \"killed cells of bacterium A\" underlines teal and a small row writes above the table \"A's antigens → fitting B cells → clone → plasma cells\"; on \"released antibodies\" \"Two weeks later\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A two-row answer table writes beneath it (\"tube 1\", \"tube 2\"). On \"Bacterium A's antigens selected the B cells\" \"killed cells of bacterium A\" underlines teal and a small row writes above the table \"A's antigens → fitting B cells → clone → plasma cells\"; on \"released antibodies\" \"Two weeks later\" and \"serum\" underline (row extends \"antibodies in serum\"). On \"linked them into clumps\" \"clumped together\" underlines teal and the tube 1 row fills \"antibodies bind A; two arms link cells\". On \"didn't visibly clump\" \"stayed evenly spread\" underlines and the tube 2 row fills \"no visible clumping: no evidence of antibodies linking B\"; on \"this test alone can't show that\" a small grey line adds \"B may lack the matching antigen: this test alone can't tell\" (Revision 3: no absence of binding is claimed). On \"the classic mistake\" the chip \"antibodies killed bacterium A\" writes on and takes a grey scribble cross, with the small grey reason \"clumping shows binding, not killing\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (a claim about time)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Antibodies against a new pathogen usually appear",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a claim about time))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"After a first infection with a new pathogen, antibodies against it are usually first detected in the blood about 7 to 10 days later.\" Student's claim, in a small box: \"It takes this long because B cells must first design an antibody that fits the new pathogen.\" Demand: \"Evaluate the student's claim. (3 marks)\". One lined answer box. No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "The delay is real, but the reason is wrong / already exist before infection / those cells are rare / divide many times / the classic mistake",
+      "motionPurpose": "On the spoken cues: A short answer block writes beneath it. On \"The delay is real, but the reason is wrong\" a verdict chip \"delay: real; reason: not supported\". On \"already exist before infection\" \"design an antibody\" underlines amber and a row writes \"fitting B cells already exist: selection, not design\". On \"those",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A short answer block writes beneath it. On \"The delay is real, but the reason is wrong\" a verdict chip \"delay: real; reason: not supported\". On \"already exist before infection\" \"design an antibody\" underlines amber and a row writes \"fitting B cells already exist: selection, not design\". On \"those cells are rare\" \"about 7 to 10 days later\" underlines teal and a row writes \"delay: rare cells must be selected and multiply\"; on \"divide many times\" a small grey clone tree thumbnail sits beside the row. On \"the classic mistake\" the chip \"pathogen tells the cell what to make\" writes on and takes a grey scribble cross. Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "lineage split",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the `ResponseStrip` returns small at the left with its five B cell chips; four step chips write on beside it, one per cue: \"which B cells fit\", \"selected, then cloned\", \"plasma cells: antibodies\", \"antibodies: block, clump, coat\".",
+      "teachingReason": "Decision rule and handoff: So for any antibody question, say which B cells fit the antigen, how they're selected and multiplied, what plasma cells release, and what the antibodies do when they bind.",
+      "narrationCue": "So for any antibody question, say which B",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: how T cells respond to infected cells\" (small grey tag; the T cell thumbnail beside it). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the `ResponseStrip` returns small at the left with its five B cell chips; four step chips write on beside it, one per cue: \"which B cells fit\", \"selected, then cloned\", \"plasma cells: antibodies\", \"antibodies: block, clump, coat\". A \"Next\" chip slides in at the lower right: \"Next: how T cells respond to infected cells\" (small grey tag; the T cell thumbnail beside it). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b07-learning-review.md",
+      "sha256": "704119decba47fbabcf46a01ade6b0d19bc2c33141dddbceb2dc61a9f2241ba1"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b07-claude-science-check.md",
+      "sha256": "6d3e58e7b0ab2dd0ca2978ac6699749cc8a8acff03a151ff713dfd9fe646ffd0"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

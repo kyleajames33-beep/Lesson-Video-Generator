@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c05/measured/lesson.json",
+    "lessonSha256": "3c33090bcad25e66c4d1944ccc16137ce96c8260ac03b483263eb34e6bcc7d15"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c03 (intramolecular against intermolecular; dispersion forces from temporary dipoles; more electrons and more contact give stronger dispersion forces; branching lowers boiling point, \"spaghetti and balls\"; water's hydrogen bonds and why hexane forms a layer; \"like dissolves like\"; tetrahedral carbons), chem-m7-c01 and g01 (naming rules: longest chain, nearer end, locants, methyl and ethyl branches, the multiple bond wins the numbering), chem-m7-c02 (\"-ol means an O–H group, the number says which carbon\"; propan-1-ol and propan-2-ol as position isomers; ethanol), chem-m7-c04a (ethanol from ethene and steam; propan-1-ol and propan-2-ol named as possible products). Year 11: electronegativity and polar bonds; lone pairs; hydrogen bonding as an intermolecular force between H on N, O or F and a lone pair on N, O or F. Not assumed: alcohol, hydroxyl group, primary, secondary, tertiary, donor, acceptor.",
+    "startsWith": "Identify the OH group and classify its carbon. The video opens: The gas in this camping stove is mostly butane, which boils near minus one degree. The liquid in this bottle is ethanol. Ethanol molecules have fewer electrons than butane, so you'd expect weaker dispersion forces and a lower boiling point.",
+    "stopsAfter": "identifying the OH group and its polar bond; naming alcohols up to C8 with methyl or ethyl branches; classifying alcohols as primary, secondary or tertiary; explaining why an alcohol boils higher than an alkane of the same size; explaining the boiling point trend along the series and across C₄H₁₀O isomers; explaining why short-chain alcohols mix with water and longer ones barely dissolve. No reactions, no production, no combustion data.",
+    "nextLesson": "making ethanol by hydration, haloalkane substitution and fermentation (route chem-m7-c06, \"How can we make ethanol?\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c05.md"
+  ],
+  "teaching": {
+    "task": "An ethanol molecule has fewer electrons than butane, yet ethanol boils about eighty degrees higher and mixes with water. How does one OH group change an alcohol's properties, and how do we name and classify alcohols?",
+    "causalExplanation": "(1) ethanol has fewer electrons than butane yet boils higher and mixes with water (1); (2) an alcohol is an alkane with one H swapped for a covalent OH; oxygen pulls the shared electrons, so the O–H bond is polar, and O keeps two lone pairs (2); (3) the name locates the OH: \"-ol\" with the locant from the nearer end (3); (4) the OH wins the numbering over a branch, because it is in the ending (4); (5) count the carbons on the C–OH carbon to classify (5); (6) branching elsewhere does not change the class (6); (7) the δ+ H of one molecule is attracted to a lone pair on a neighbour's O: a hydrogen bond, added to the chain's dispersion forces (7); (8) with equal electrons, the alcohol boils far higher, because of the hydrogen bonds; boiling breaks no covalent bond (8); (9) along the series the OH is constant, the chain grows, so dispersion forces and boiling points rise (9); (10) for isomers, compact shapes touch less, so weaker dispersion forces and lower boiling points; all still hydrogen bond (10); (11) the OH hydrogen bonds with water, replacing what it breaks, so small alcohols mix (11); (12) the chain breaks water's hydrogen bonds without replacing them, so solubility falls as it grows; long chains suit non-polar solvents (12); memory aid (13); two attempts and brief feedback (14 to 17); handoff (18); key notes (19).",
+    "conversationalApproach": "ethanol has fewer electrons than butane yet boils about eighty degrees higher and mixes with water, so the video asks how one OH group changes a molecule's properties and how alcohols are named and classified. The hydroxyl group is introduced on a carbon with only single bonds, covalent and not a hydroxide ion, with a polar O-H bond and two lone pairs on the oxygen. Naming drops the alkane's final e and adds ol with the OH carbon's number, and the OH wins the numbering over a branch. Class comes from counting the carbons bonded to the OH carbon (primary, secondary, tertiary, methanol by convention), never from how branched a molecule looks. Hydrogen bonds form between a hydrogen of one OH and a lone pair on a neighbour's oxygen, so propane and ethanol, with the same electrons, boil about 120 degrees apart. Along the series the chain sets the trend because each alcohol has one OH; among isomers the compact tertiary one touches less and boils lowest, so shape does the work. Small alcohols mix with water because the OH replaces the hydrogen bonds it breaks, while a longer chain breaks more than it can replace and dissolves less. The memory aid is same size, hydrogen bonding wins; same family, size wins. Two exam questions follow with brief feedback.",
+    "openingDecision": "The gas in this camping stove is mostly butane, which boils near minus one degree. The liquid in this bottle is ethanol. Ethanol molecules have fewer electrons than butane, so you'd expect weaker dispersion forces and a lower boiling point. Instead, ethanol boils at about seventy eight degrees. And it mixes completely with water, while butane barely dissolves. The difference is one O H group. So how does an O H group change a molecule's properties?",
+    "understandingCheck": "(A1) \"An alcohol has the condensed structural formula CH₃CH(OH)CH(CH₃)CH₃. Give its IUPAC name, and classify it as a primary, secondary or tertiary alcohol. Justify your classification.\" A skeletal formula is shown beside it (plain ink, no colours). New molecule (scenes use 4-methylpentan-2-ol and 2-methylpropan-1-ol); tests the OH winning the numbering and the carbon count. Crossed mistake: \"2-methylbutan-3-ol\" (numbered for the branch; the c01 feedback 1 pattern). (A2) \"Butane, C₄H₁₀, boils at −1 °C. Propan-1-ol, CH₃CH₂CH₂OH, boils at 97 °C. Both molecules have 34 electrons. Explain the difference in boiling points, with reference to the intramolecular and intermolecular bonding present.\" New pair (the scene uses propane and ethanol); the syllabus wording. Crossed mistake: \"Propan-1-ol is polar, so it has a higher boiling point.\" (names no force; the marker-reported mistake in 2020 Q32, `../research/question-types-chem-m7.md`).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127); alkanes; alkenes; alkynes; alcohols (primary, secondary and tertiary); aldehydes and ketones; carboxylic acids; amines and amides; halogenated organic compounds\" This video covers alcohols only (hydrocarbons were chem-m7-c01 and g01; haloalkanes chem-m7-c04a). \"investigate the structural formulae, properties and functional group including:; primary; secondary; tertiary alcohols\" \"explain the properties within and between the homologous series of alcohols with reference to the intermolecular and intramolecular bonding present\" this video starts by identifying the OH group and classifying the carbon that holds it, and stops at explaining the boiling point and solubility trends of alcohols. It teaches: an alcohol has an OH (hydroxyl) group on a carbon with only single bonds; the OH is covalently bonded, not a hydroxide ion (spoken), so alcohols do not make water alkaline (screen line only); intramolecular bonding: the O–H bond (and the C–O bond) is polar because oxygen attracts the shared electrons more strongly, so O is δ− and H is δ+, and the oxygen keeps two lone pairs; naming alcohols by IUPAC rules (longest chain containing the C–OH carbon; drop the alkane's final \"e\" and add \"ol\"; number from the end nearer the OH; locant before \"ol\"; methanol and ethanol need no locant; branches as in c01; the OH wins the numbering over a branch); classification by counting the carbons bonded to the C–OH carbon (1 primary, 2 secondary, 3 tertiary; methanol counted as primary by convention; branching elsewhere does not change the class); hydrogen bonding between alcohol molecules (δ+ H of one OH to a lone pair on a neighbour's O; H donor, O acceptor), alongside dispersion forces from the chain; between series: an alcohol boils far higher than an alkane with the same number of electrons (propane and ethanol, 26 electrons each), and boiling overcomes the intermolecular forces without breaking the O–H bond; within the series: one OH each, so similar hydrogen bonding, and boiling point rises with chain length (methanol to butan-1-ol); isomers of C₄H₁₀O: boiling point usually falls from primary to secondary to tertiary because the more compact shape gives less contact and weaker dispersion forces, while all three hydrogen bond; solubility: the OH hydrogen bonds with water, replacing the bonds it breaks, so methanol to propan-1-ol mix in any proportion; the non-polar chain breaks water's hydrogen bonds without replacing them, so solubility falls gradually with chain length (butan-1-ol partly, hexan-1-ol barely, as a layer); long-chain alcohols mix with non-polar solvents. Not here: alcohol reactions (combustion chem-m7-c07; dehydration, substitution with HX and oxidation chem-m7-c08; the class is used there, so one forward clause only); producing alcohols (chem-m7-c06, the next video); enthalpy of combustion (chem-m7-c07, p03, g02; the site's L11 figures are not used); methanol's toxicity (site hook; it is metabolic, not an intermolecular-force property, see Decisions); diols and alcohols with a C=C (not needed up to this route stop; author note e); branching and water solubility (2-methylpropan-2-ol; author note d; key notes leave it out); comparison with carboxylic acids, aldehydes and ketones (chem-m7-c08b, c09); hydrogen bond energies as numbers."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c01 to c04b: carbon skeleton ink; hydrogens soft grey; main chain pale blue; branches amber; oxygen brick red, the OH group ringed red as the functional group; δ− and δ+ small in navy; lone pairs as two small red dot pairs on O; hydrogen bonds dotted violet; dispersion forces dotted pale blue. Board layout (constant): top-left the short task chip (\"Name it\", \"Classify it\", \"Why higher?\"); centre the structure board or force view, one molecule or one comparison at a time; the boiling point strip at the right only in scenes 8 to 10; plates small at the left or right only in scenes 1, 8, 12 and 18. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 22 Oct): `m7-camping-gas-burner-v1.png` (a lit blue camping stove on an unlabelled blue gas canister; 2000 × 2000; hook and scene 8 callback, as in c01 and c03) and `m7-ethanol-fuel-bottle-v1.png` (an amber glass bottle with a glass stopper, about two-thirds full of a pale liquid, no label or text; 2000 × 2000; hook and handoff, with a coded label \"ethanol\"). Both small, scale uniformly only, never stretched. Considered, not used: `m6-red-wine-glass-v1.png` (inspected: a red wine glass; a drink would raise alcohol-consumption context the question does not need), `m7-crude-oil-barrel-v1.png` (inspected: plain steel drum; belongs to production in c06). New plate: `m7-alcohol-water-tubes-v1.png` (scene 12); see Assets. No human figures.",
+    "transitionPlan": "The camping gas burner and ethanol bottle plates open the hook with electron and boiling point chips, an up arrow between them and the skeletal ethanol's OH ringed red; the plates leave as ethane loses a hydrogen and an OH docks in its place, the name builder writes ethanol and the ball-and-stick model shows the polar pull and two lone pairs; the name builder strikes the e, writes ol and slides in each locant as the OH moves; left and ghost right locants pop on a branched chain and the wrong name is crossed; the carbon counter ticks on three alcohols in a row with their class chips, then on a branched primary alcohol; the hydrogen-bond linker draws dotted violet lines in a ball-and-stick cluster beside a glowing covalent O-H; propane and ethanol drop to their marks on the boiling point strip with a 120 degree bracket and the force view; the series ladder climbs to four marks with an up arrow; three isomers drop to falling marks and the contact highlighter shades spaghetti against ball; the water lattice takes an ethanol molecule that replaces its broken bonds, then a hexan-1-ol whose chain breaks bonds in red-brown before the alcohol and water tubes plate shows one layer and two; the memory line writes with three cards; each attempt clears the board and its feedback underlines the card as the name builder, carbon counter or force view runs and a crossed chip lands; the memory line, ethanol bottle and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Alcohols: what does the OH group change?\".",
+      "teachingReason": "Hook (fewer electrons, yet a higher boiling point): The gas in this camping stove is mostly butane, which boils near minus one degree.",
+      "narrationCue": "ethanol / water / O H",
+      "motionPurpose": "On the spoken cues: Left: `m7-camping-gas-burner-v1.png` small, coded chip \"butane, C₄H₁₀: 34 electrons, boils near −1 °C\" (c03 \"from the properties video\" chip small). On \"ethanol\" `m7-ethanol-fuel-bottle-v1.png` slides in small at the right, coded label \"ethanol\", chip \"C₂H₅OH: 26 electrons\". On \"seventy eight\" the ethanol chip adds \"boils at 78 °C\" and a small up arrow with \"about +80 °C\" appears between the two chips. On \"water\" a",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Alcohols: what does the OH group change?\". Left: `m7-camping-gas-burner-v1.png` small, coded chip \"butane, C₄H₁₀: 34 electrons, boils near −1 °C\" (c03 \"from the properties video\" chip small). On \"ethanol\" `m7-ethanol-fuel-bottle-v1.png` slides in small at the right, coded label \"ethanol\", chip \"C₂H₅OH: 26 electrons\". On \"seventy eight\" the ethanol chip adds \"boils at 78 °C\" and a small up arrow with \"about +80 °C\" appears between the two chips. On \"water\" a small grey chip under the bottle reads \"mixes with water\"; under the stove, \"barely dissolves\". On \"O H\" the skeletal ethanol draws above the bottle and its OH is ringed red, pulsing once; as it pulses, the two property chips and the \"mixes with water\" and \"barely dissolves\" chips dim. Bright at the end: the heading, the \"+80 °C\" arrow and the ringed OH. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "hydroxyl-group",
+      "visualDecision": "new",
+      "visualReference": "the plates leave.",
+      "teachingReason": "The hydroxyl group and its polar bond: On paper, take ethane and swap one hydrogen for an O H group.",
+      "narrationCue": "alcohol / polar / lone pairs",
+      "motionPurpose": "On the spoken cues: Task chip \"The OH group\". Ethane in full structural form; one H on the right carbon lifts off (grey) and an O–H docks in its place, drawn as separate O and H atoms (C–O–H, site Exam Rule); the OH is ringed red and the name builder writes \"ethan\" + \"ol\". On \"alcohol\" a chip writes \"alcohol: OH on a carbon with only single bonds\". A small grey line \"covalent OH, not OH⁻: not alkaline\" writes and dims. The ink",
+      "motionRole": "explain",
+      "onScreenChange": "the plates leave. Task chip \"The OH group\". Ethane in full structural form; one H on the right carbon lifts off (grey) and an O–H docks in its place, drawn as separate O and H atoms (C–O–H, site Exam Rule); the OH is ringed red and the name builder writes \"ethan\" + \"ol\". On \"alcohol\" a chip writes \"alcohol: OH on a carbon with only single bonds\". A small grey line \"covalent OH, not OH⁻: not alkaline\" writes and dims. The ink ball-and-stick ethanol builds beside the structure (engine3d port), showing the bent C–O–H. On \"polar\" the polar pull runs on the O–H bond: the shared pair slides towards O, \"δ−\" writes on O and \"δ+\" on H (tag \"polar O–H: intramolecular\"). On \"lone pairs\" two red dot pairs glow on the oxygen of both the structure and the model (tag \"2 lone pairs\"). Bright at the end: the model with δ− and δ+, the lone pairs and the polar tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "naming-alcohols",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Naming alcohols: Naming uses the rules you already know, with one change.",
+      "narrationCue": "ol / propan-one-ol / propan-two-ol",
+      "motionPurpose": "On the spoken cues: Task chip \"Name it\". The name builder (c01) shows three slots: \"branches\", \"stem\", \"ending\". Propan-1-ol draws in full structural form (OH ringed red, C1 to C3 locants small). The chain glows pale blue on \"longest chain\"; on \"ol\" the builder writes \"propane\", the final \"e\" is struck through in grey and \"ol\" writes in red in the ending slot; on \"number\" the locant counter pops \"1\" on the OH carbon; on \"propan-one-ol\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Name it\". The name builder (c01) shows three slots: \"branches\", \"stem\", \"ending\". Propan-1-ol draws in full structural form (OH ringed red, C1 to C3 locants small). The chain glows pale blue on \"longest chain\"; on \"ol\" the builder writes \"propane\", the final \"e\" is struck through in grey and \"ol\" writes in red in the ending slot; on \"number\" the locant counter pops \"1\" on the OH carbon; on \"propan-one-ol\" the builder resolves \"propan-1-ol\", the \"1\" sliding in before \"ol\". On \"propan-two-ol\" a ghost copy moves the OH to the middle carbon; the builder writes \"propan-2-ol\" (small grey chip \"c02: position isomers\"). On \"Methanol and ethanol\" two small structures appear with their names, no locant, and a grey tag \"one position only\". Bright at the end: the two propanol names and the \"one position only\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "oh-wins-numbering",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "The OH wins the numbering: With a branch as well, the O H wins the numbering, like a double bond, because it's named in the ending.",
+      "narrationCue": "four-methylpentan-two-ol / wrong",
+      "motionPurpose": "On the spoken cues: The skeletal formula of 4-methylpentan-2-ol draws (CH₃CH(OH)CH₂CH(CH₃)CH₃; OH ringed red, methyl branch amber). The chain of five glows pale blue. On \"wins the numbering\" a small grey chip recalls c01: \"the multiple bond wins: now the OH wins\". Locants pop from the left: \"1\", \"2\" (OH), \"3\", \"4\" (methyl), \"5\"; on \"four-methylpentan-two-ol\" the builder writes \"4-methyl\" + \"pentan\" + \"-2-ol\". Then ghost locants count",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The skeletal formula of 4-methylpentan-2-ol draws (CH₃CH(OH)CH₂CH(CH₃)CH₃; OH ringed red, methyl branch amber). The chain of five glows pale blue. On \"wins the numbering\" a small grey chip recalls c01: \"the multiple bond wins: now the OH wins\". Locants pop from the left: \"1\", \"2\" (OH), \"3\", \"4\" (methyl), \"5\"; on \"four-methylpentan-two-ol\" the builder writes \"4-methyl\" + \"pentan\" + \"-2-ol\". Then ghost locants count from the right in grey: the methyl gets \"2\", the OH \"4\"; on \"wrong\" a chip \"2-methylpentan-4-ol\" fades in and is crossed (caption \"the OH gets the lower number\"). Bright at the end: the structure with left locants, the correct name and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "classify-alcohols",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Primary, secondary and tertiary: Now find the carbon holding the O H, and count the carbons bonded directly to it.",
+      "narrationCue": "carbons / secondary / tertiary",
+      "motionPurpose": "On the spoken cues: Task chip \"Classify it\". Three full structural formulas in a row: ethanol, propan-2-ol, 2-methylpropan-2-ol. On \"carbons\" the carbon counter runs on ethanol: the C–OH carbon ringed red, its one carbon neighbour ticks \"1\", class chip \"primary (1°)\". On \"secondary\" it runs on propan-2-ol: \"1\", \"2\", chip \"secondary (2°)\". On \"tertiary\" it runs on 2-methylpropan-2-ol: \"1\", \"2\", \"3\", chip \"tertiary (3°)\". On \"not",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Classify it\". Three full structural formulas in a row: ethanol, propan-2-ol, 2-methylpropan-2-ol. On \"carbons\" the carbon counter runs on ethanol: the C–OH carbon ringed red, its one carbon neighbour ticks \"1\", class chip \"primary (1°)\". On \"secondary\" it runs on propan-2-ol: \"1\", \"2\", chip \"secondary (2°)\". On \"tertiary\" it runs on 2-methylpropan-2-ol: \"1\", \"2\", \"3\", chip \"tertiary (3°)\". On \"not hydrogens or the oxygen\" the H atoms and O on the tertiary carbon flash grey with a small \"not counted\" tag. On \"Methanol\" a small methanol structure appears at the far left, its carbon counter showing \"0\", chip \"primary (by convention)\". On the last \"primary\" a small grey forward chip \"reactions: later video\" writes and dims (silent). The methanol chip and the \"not counted\" tag then dim before the end state. Bright at the end: the three class chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "class-not-branching",
+      "visualDecision": "new",
+      "visualReference": "the board clears. 2-methylpropan-1-ol draws in full structural form, the branch amber.",
+      "teachingReason": "The class comes from the OH carbon, not the branching: Don't judge the class by how branched a molecule looks.",
+      "narrationCue": "one / count",
+      "motionPurpose": "On the spoken cues: A grey ghost chip \"branched, so tertiary?\" fades in and out (said positively, not crossed). On \"one\" the carbon counter runs on the C–OH carbon (an end CH₂): one tick \"1\", chip \"primary (1°)\". On \"count\" a two-step chip writes \"1 find the C–OH carbon; 2 count its carbons\". Bright at the end: the structure, the \"primary\" chip and the two-step chip.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. 2-methylpropan-1-ol draws in full structural form, the branch amber. A grey ghost chip \"branched, so tertiary?\" fades in and out (said positively, not crossed). On \"one\" the carbon counter runs on the C–OH carbon (an end CH₂): one tick \"1\", chip \"primary (1°)\". On \"count\" a two-step chip writes \"1 find the C–OH carbon; 2 count its carbons\". Bright at the end: the structure, the \"primary\" chip and the two-step chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "hydrogen-bonds",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Hydrogen bonds between alcohol molecules: Back to the boiling point puzzle.",
+      "narrationCue": "lone pair / dispersion",
+      "motionPurpose": "On the spoken cues: Task chip \"Why higher?\". Four ink ball-and-stick ethanol molecules in a loose cluster, each O carrying δ− and its lone pairs, each OH hydrogen δ+. On \"lone pair\" the hydrogen-bond linker draws a dotted violet line from one δ+ H to a lone pair on a neighbour's O, then two more form around the cluster (tag \"hydrogen bond\"); small grey tags \"donor: H\" and \"acceptor: lone pair on O\" sit on the first one, and a small",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Why higher?\". Four ink ball-and-stick ethanol molecules in a loose cluster, each O carrying δ− and its lone pairs, each OH hydrogen δ+. On \"lone pair\" the hydrogen-bond linker draws a dotted violet line from one δ+ H to a lone pair on a neighbour's O, then two more form around the cluster (tag \"hydrogen bond\"); small grey tags \"donor: H\" and \"acceptor: lone pair on O\" sit on the first one, and a small grey callback chip \"c02: ethanol 78 °C, methoxymethane −25 °C\" writes and dims with the first tag (screen only). On \"far weaker than a covalent bond\" the O–H bond in one molecule glows solid ink beside the dotted violet line (tag \"covalent O–H: much stronger\", dims). On \"dispersion\" dotted pale-blue flicker lines appear between the ethyl chains (tag \"dispersion forces too\"). Bright at the end: the cluster with violet and pale-blue lines and the two tags. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "same-electrons",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Same electrons, very different boiling points: So compare a fair pair.",
+      "narrationCue": "electrons / one hundred and twenty / O H bond",
+      "motionPurpose": "On the spoken cues: Two skeletal structures side by side: propane and ethanol, each with a chip \"26 electrons\" (on \"electrons\" the chips pulse together; tag \"similar dispersion forces\"). The boiling point strip (c03) draws at the right with its dashed \"room temperature, 25 °C\" line. Propane drops to \"−42 °C\"; ethanol rises to \"78 °C\"; on \"one hundred and twenty\" a bracket between the marks reads \"about 120 °C: hydrogen bonding\". As the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two skeletal structures side by side: propane and ethanol, each with a chip \"26 electrons\" (on \"electrons\" the chips pulse together; tag \"similar dispersion forces\"). The boiling point strip (c03) draws at the right with its dashed \"room temperature, 25 °C\" line. Propane drops to \"−42 °C\"; ethanol rises to \"78 °C\"; on \"one hundred and twenty\" a bracket between the marks reads \"about 120 °C: hydrogen bonding\". As the bracket writes, the \"similar dispersion forces\" tag dims. When the force view runs, the two skeletal structures and their \"26 electrons\" chips shrink and dim; the force view runs under each: propane's molecules held by pale-blue lines only; ethanol's by pale-blue and violet lines. On \"O H bond\" the ethanol molecules drift apart: the violet and pale-blue lines stretch and vanish, while each O–H glows ink with a green tick \"covalent bonds: all intact\"; a chip \"boiling breaks the O–H bond?\" fades in and is crossed (caption \"boiling separates molecules\"). Bright at the end: the 120 °C bracket, the green tick and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "along-the-series",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the boiling point strip stays.",
+      "teachingReason": "Along the series: the chain sets the trend: Along the series, each of these alcohols has one O H, so the hydrogen bonding is about the same.",
+      "narrationCue": "butan-one-ol / climbs",
+      "motionPurpose": "On the spoken cues: A short series ladder (c03) of skeletal primary alcohols builds upward: methanol, ethanol, propan-1-ol, butan-1-ol, each OH ringed red and each new CH₂ glowing with \"+CH₂\". A grey tag \"1 OH each: similar hydrogen bonding\" sits beside the OH column. Each molecule drops to its mark as named: \"65 °C\", \"78 °C\", \"97 °C\", on \"butan-one-ol\" \"118 °C\". On \"climbs\" an up arrow runs beside the marks (tag \"longer chain:",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the boiling point strip stays. A short series ladder (c03) of skeletal primary alcohols builds upward: methanol, ethanol, propan-1-ol, butan-1-ol, each OH ringed red and each new CH₂ glowing with \"+CH₂\". A grey tag \"1 OH each: similar hydrogen bonding\" sits beside the OH column. Each molecule drops to its mark as named: \"65 °C\", \"78 °C\", \"97 °C\", on \"butan-one-ol\" \"118 °C\". On \"climbs\" an up arrow runs beside the marks (tag \"longer chain: stronger dispersion\"). Bright at the end: the four marks, the up arrow and its tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "isomers-shape",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the strip clears its marks.",
+      "teachingReason": "Isomers: shape, not the label: Now hold the formula fixed.",
+      "narrationCue": "fall / ball / shape",
+      "motionPurpose": "On the spoken cues: Three ink ball-and-stick isomers in a row (engine3d port), names and class chips small (1°, 2°, 3°), a shared chip \"C₄H₁₀O: same electrons, 1 OH each\". On \"fall\" each drops to its mark: \"118 °C\", \"100 °C\", \"82 °C\". On \"ball\" the row of three dims and two contact pairs replace it (four models): a butan-1-ol pair upper and a 2-methylpropan-2-ol pair lower; butan-2-ol's mark stays on the strip only. The contact",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the strip clears its marks. Three ink ball-and-stick isomers in a row (engine3d port), names and class chips small (1°, 2°, 3°), a shared chip \"C₄H₁₀O: same electrons, 1 OH each\". On \"fall\" each drops to its mark: \"118 °C\", \"100 °C\", \"82 °C\". On \"ball\" the row of three dims and two contact pairs replace it (four models): a butan-1-ol pair upper and a 2-methylpropan-2-ol pair lower; butan-2-ol's mark stays on the strip only. The contact highlighter (c03) shades a long overlap between the two butan-1-ol models and a small patch between the two 2-methylpropan-2-ol models (handwritten tags \"spaghetti\" and \"ball\", c03 callback). On \"shape\" a chip writes \"compact shape → less contact → lower boiling point\", and the class chips dim while the shapes stay bright. Bright at the end: the two contact pairs and the shape chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Mark highlight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "solubility-water",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the strip leaves.",
+      "teachingReason": "Solubility: the OH can replace what it breaks: Solubility comes down to the same O H.",
+      "narrationCue": "can / any",
+      "motionPurpose": "On the spoken cues: Task chip \"Why does ethanol mix with water?\". The water lattice (c03) draws with dotted violet hydrogen bonds. A small c03 thumbnail shows hexane pushed out (grey tag \"hexane: breaks, can't replace\", dims). On \"can\" an ethanol molecule slides into the lattice: two of water's violet bonds break and, at once, the ethanol OH forms new violet bonds to neighbouring water molecules, both as donor and acceptor (tag \"OH ↔",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the strip leaves. Task chip \"Why does ethanol mix with water?\". The water lattice (c03) draws with dotted violet hydrogen bonds. A small c03 thumbnail shows hexane pushed out (grey tag \"hexane: breaks, can't replace\", dims). On \"can\" an ethanol molecule slides into the lattice: two of water's violet bonds break and, at once, the ethanol OH forms new violet bonds to neighbouring water molecules, both as donor and acceptor (tag \"OH ↔ water: hydrogen bonds replaced\"). On \"any\" a small row of three skeletal alcohols (methanol, ethanol, propan-1-ol) writes with a chip \"miscible: mix in any proportion\". Bright at the end: the ethanol in the lattice, its tag and the miscible chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "longer-chain-solubility",
+      "visualDecision": "adjust",
+      "visualReference": "the ethanol leaves the lattice.",
+      "teachingReason": "A longer chain dissolves less: But the non-polar chain still has to push in between water molecules, breaking hydrogen bonds it can't replace.",
+      "narrationCue": "drops / layer",
+      "motionPurpose": "On the spoken cues: A hexan-1-ol molecule (skeletal, OH ringed red, chain pale blue) pushes in: its OH forms violet bonds, but along the chain several violet water bonds flash red-brown and break with nothing replacing them (tag \"long chain: breaks bonds, can't replace\"). On \"drops\" a horizontal strip writes left to right, each label lighting and the previous one dimming: \"C1 to C3: mix in any proportion\", \"butan-1-ol: partly\",",
+      "motionRole": "explain",
+      "onScreenChange": "the ethanol leaves the lattice. A hexan-1-ol molecule (skeletal, OH ringed red, chain pale blue) pushes in: its OH forms violet bonds, but along the chain several violet water bonds flash red-brown and break with nothing replacing them (tag \"long chain: breaks bonds, can't replace\"). On \"drops\" a horizontal strip writes left to right, each label lighting and the previous one dimming: \"C1 to C3: mix in any proportion\", \"butan-1-ol: partly\", \"hexan-1-ol: barely\" (grey tag \"no sharp cut-off\"). On \"layer\" the three-label strip dims and `m7-alcohol-water-tubes-v1.png` appears small at the right; coded labels point to the left tube (\"ethanol + water: one layer\") and then the right tube (\"hexan-1-ol on top, water below\"). After the tube labels, during the hold, a small chip writes silently: \"long chains: mix with non-polar solvents (dispersion forces)\" (key note 4 keeps it). Bright at the end: the two tube labels and the solvent chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So, the O H group gives an alcohol hydrogen bonds.",
+      "narrationCue": "Size / count",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"Same size? Hydrogen bonding wins. Same family? Size wins.\" Under it, three small coded cards light one at a time on their cues, each dimming as the next lights: \"OH: hydrogen bonds → higher boiling point than an alkane of the same size; small alcohols mix with water\"; \"longer chain: higher boiling point, lower solubility (polar head, non-polar tail)\"; on \"count\" \"classify: C–OH carbon, count its",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Same size? Hydrogen bonding wins. Same family? Size wins.\" Under it, three small coded cards light one at a time on their cues, each dimming as the next lights: \"OH: hydrogen bonds → higher boiling point than an alkane of the same size; small alcohols mix with water\"; \"longer chain: higher boiling point, lower solubility (polar head, non-polar tail)\"; on \"count\" \"classify: C–OH carbon, count its carbons: 1°, 2°, 3°\". The small propane and ethanol marks from scene 8 sit beside the first card. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. An alcohol has the condensed formula",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"An alcohol has the condensed structural formula CH₃CH(OH)CH(CH₃)CH₃. Give its IUPAC name, and classify it as a primary, secondary or tertiary alcohol. Justify your classification.\" Beside it the skeletal formula in plain ink (no colours, no locants, no ring on the OH). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no carbon counter, no memory aid.",
+      "motionTools": [
+        "ScribbleCircle",
+        "NumberTicker",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "four / two / three-methylbutan-two-ol / secondary / wins",
+      "motionPurpose": "On the spoken cues: On \"four\" the chain of four glows pale blue on the skeletal formula and the OH is ringed red. On \"two\" locants pop from the left: \"1\", \"2\" (OH), \"3\" (methyl), \"4\"; \"IUPAC name\" is underlined. On \"three-methylbutan-two-ol\" the builder writes \"3-methyl\" + \"butan\" + \"-2-ol\" (the answer, bright). On \"secondary\" the carbon counter ticks \"1\", \"2\" on the C–OH carbon's neighbours, chip \"secondary (2°)\"; \"classify\" and",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"four\" the chain of four glows pale blue on the skeletal formula and the OH is ringed red. On \"two\" locants pop from the left: \"1\", \"2\" (OH), \"3\" (methyl), \"4\"; \"IUPAC name\" is underlined. On \"three-methylbutan-two-ol\" the builder writes \"3-methyl\" + \"butan\" + \"-2-ol\" (the answer, bright). On \"secondary\" the carbon counter ticks \"1\", \"2\" on the C–OH carbon's neighbours, chip \"secondary (2°)\"; \"classify\" and \"Justify your classification\" are underlined. On \"wins\" a chip \"2-methylbutan-3-ol\" fades in and is crossed (caption \"number from the end nearer the OH\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"Butane, C₄H₁₀, boils at −1 °C.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Butane boils at minus one degree.",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"Butane, C₄H₁₀, boils at −1 °C. Propan-1-ol, CH₃CH₂CH₂OH, boils at 97 °C. Both molecules have 34 electrons. Explain the difference in boiling points, with reference to the intramolecular and intermolecular bonding present.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "thirty four electrons / hydrogen bonds / covalent / Name",
+      "motionPurpose": "On the spoken cues: On \"thirty four electrons\" \"Both molecules have 34 electrons\" is underlined and two skeletal structures draw (butane; propan-1-ol with its OH ringed red), chip \"similar dispersion forces\". On \"hydrogen bonds\" \"intermolecular\" is underlined; the force view shows propan-1-ol molecules with violet hydrogen bonds and pale-blue dispersion lines, butane with pale-blue lines only. On \"covalent\" \"intramolecular\" is",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"thirty four electrons\" \"Both molecules have 34 electrons\" is underlined and two skeletal structures draw (butane; propan-1-ol with its OH ringed red), chip \"similar dispersion forces\". On \"hydrogen bonds\" \"intermolecular\" is underlined; the force view shows propan-1-ol molecules with violet hydrogen bonds and pale-blue dispersion lines, butane with pale-blue lines only. On \"covalent\" \"intramolecular\" is underlined and the covalent bonds in both glow ink with a green tick \"intact when boiling\". Answer chip (bright): \"propan-1-ol: hydrogen bonds + similar dispersion → more energy to separate → higher boiling point; covalent bonds not broken\". On \"Name\" a chip \"Propan-1-ol is polar, so it has a higher boiling point.\" fades in and is crossed (caption \"name the force: hydrogen bonding\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: So one O H group adds hydrogen bonding, and the chain decides how much the dispersion forces add.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The memory aid line returns small at the top with its three cards. `m7-ethanol-fuel-bottle-v1.png` appears small at the right with its \"ethanol\" label. On \"Next\" a chip \"Next: how can we make ethanol?\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The memory aid line returns small at the top with its three cards. `m7-ethanol-fuel-bottle-v1.png` appears small at the right with its \"ethanol\" label. On \"Next\" a chip \"Next: how can we make ethanol?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c05-learning-review.md",
+      "sha256": "fe66d2efeb08033fc1523193132f737d540a060be054fb16a65145a00080525e"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c05-claude-science-check.md",
+      "sha256": "42f7c0555ba4656efb3fa416386b0c06e51d1b977983b0a34dc0cda2fb1a8769"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

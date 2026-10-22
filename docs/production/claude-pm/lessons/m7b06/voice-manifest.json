@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B06-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b06/lesson.json",
+  "lessonSha256": "d3b22e08b230b161f3e2b4874711a428e666c4cbb2d8e862337e67ad4c554227",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b06/lesson.production-brief.json",
+    "sha256": "b9e14407d16d154bb6b92843e059cd7c3912ec8063f9e8dfe3df100ef27956d1"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 1882, the zoologist Élie Metchnikoff pushed a rose thorn into a see-through starfish larva. By the next morning, moving cells had crowded around the thorn. A starfish larva makes no antibodies, yet its cells found the intruder and closed in. Your body runs a similar response when a splinter carries bacteria into your skin. So what happens first, before any defence built for that pathogen is ready?",
+      "hash": "9c6c075622c6",
+      "textSha256": "9c6c075622c6de2e0fde8b09e5a0ca9f9ccb91460c481a729b516989f6a9cbf0",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/hook.9c6c075622c6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/hook.9c6c075622c6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/hook.9c6c075622c6.generation.json",
+      "plannedRequestSha256": "94abd403e5381114340c5fd28253ce23d1844f2ee14fad47d316ec5fdc0f9ee6"
+    },
+    {
+      "id": "send-cells",
+      "parentSceneId": "send-cells",
+      "text": "In the last video, a banksia had to defend each cell where it stood. Animals can do something plants can't. They carry defending cells in the blood and send them to where a pathogen gets in. First, it has to get in.",
+      "hash": "2cdd1be05080",
+      "textSha256": "2cdd1be05080fcbaefcc5c6e2aa057a64b08c8cb306aefb6120d6adb973b052e",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/send-cells.2cdd1be05080.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/send-cells.2cdd1be05080.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/send-cells.2cdd1be05080.generation.json",
+      "plannedRequestSha256": "12acfeb66f261a574bbe14637a498633a87f40e7a86fe53917efd0bfa1c08f66"
+    },
+    {
+      "id": "barriers",
+      "parentSceneId": "barriers",
+      "text": "Most microbes never get past the outside. Your skin is the main wall. Its outer layers are tough, dead cells that keep flaking away, taking microbes with them. The airways are lined with sticky mucus that traps microbes, and tiny hair-like cilia beat and sweep it up to the throat to be swallowed. Chemicals help too. Stomach acid kills many swallowed microbes, and lysozyme, an enzyme in tears and saliva, breaks down the walls of many bacteria.",
+      "hash": "4f41007ddebc",
+      "textSha256": "4f41007ddebc7d68acb0c1b627e210e798c1498ee0f8bd149b63fbcbcfa81c87",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/barriers.4f41007ddebc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/barriers.4f41007ddebc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/barriers.4f41007ddebc.generation.json",
+      "plannedRequestSha256": "feba641201648a56c9ffb3f542945703f0dc60b63df9578a964c8fb191b0ab06"
+    },
+    {
+      "id": "splinter",
+      "parentSceneId": "splinter",
+      "text": "A splinter breaks straight through that wall and pushes bacteria into the living tissue underneath. Now the body needs defences that act at once, against almost any invader. With the barriers, these make up the innate immune system: defences you're born with, which respond in much the same way to many different pathogens.",
+      "hash": "a4e71d8677e7",
+      "textSha256": "a4e71d8677e7477610b4063dcf76fe0f2e5ca303d43dba465db999ae208cc8d7",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/splinter.a4e71d8677e7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/splinter.a4e71d8677e7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/splinter.a4e71d8677e7.generation.json",
+      "plannedRequestSha256": "18ab65700435f309bdf6270897dcf76d24e0ff39ff97f08191b5ce507068816b"
+    },
+    {
+      "id": "alarm",
+      "parentSceneId": "alarm",
+      "text": "Damaged cells raise the alarm with chemical signals, and so do immune cells already waiting in the tissue. Mast cells, which sit beside small blood vessels, release a chemical called histamine. Histamine makes those vessels widen, so more blood flows in. It also makes their walls leaky, so fluid and blood proteins seep out into the tissue.",
+      "hash": "207b4efda4d5",
+      "textSha256": "207b4efda4d56e84581d2ddde0ea5782cff9b645dedd0cdb513607c2cbb79f17",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/alarm.207b4efda4d5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/alarm.207b4efda4d5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/alarm.207b4efda4d5.generation.json",
+      "plannedRequestSha256": "b928df3937442e665ccf28c802a09073f21f35324d553276e7f4ae8247bc0d17"
+    },
+    {
+      "id": "four-signs",
+      "parentSceneId": "four-signs",
+      "text": "This response is inflammation, and you can see it. The extra blood makes the area red and warm. The leaked fluid makes it swell. Chemicals made at the site, plus the pressure of the swelling, set off pain nerves, so it hurts. These signs aren't the body failing. The wider, leakier vessels deliver defending cells and helpful proteins right to the bacteria.",
+      "hash": "b2d4063282a5",
+      "textSha256": "b2d4063282a5e21d078654826dd07bbc56edb5adf78ba9eac723a4326a7835ab",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/four-signs.b2d4063282a5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/four-signs.b2d4063282a5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/four-signs.b2d4063282a5.generation.json",
+      "plannedRequestSha256": "96c56326f6b0953f79d236abf23ee2a81628718703e25a763be8fe40ca98fe08"
+    },
+    {
+      "id": "neutrophils",
+      "parentSceneId": "neutrophils",
+      "text": "The tissue also releases signal chemicals that spread out from the infection, so they're strongest near the bacteria. Neutrophils, white blood cells carried in the blood, stick to the vessel wall near the infection, squeeze out between the cells of its wall, and crawl towards the stronger signal. They're usually the first cells to arrive in large numbers, within hours.",
+      "hash": "6325aff5f4b0",
+      "textSha256": "6325aff5f4b06c3bd5d4693ad8cfb90bab58be11616210edeadc9a04900f290c",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/neutrophils.6325aff5f4b0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/neutrophils.6325aff5f4b0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/neutrophils.6325aff5f4b0.generation.json",
+      "plannedRequestSha256": "88e81565355f62b9679509baae92618bc68c5f0ecfd7d4865dabdac4a96c10fb"
+    },
+    {
+      "id": "phagocytosis",
+      "parentSceneId": "phagocytosis",
+      "text": "Neutrophils, and larger cells called macrophages that live in the tissue, are phagocytes: cells that engulf and digest. Receptors on a phagocyte bind molecules found on many bacteria but not on our own cells. The phagocyte wraps its membrane around the bacterium and pulls it inside, sealed in a bubble. Then lysosomes, sacs of digestive enzymes, join the bubble, and the enzymes break the bacterium down.",
+      "hash": "4aded384981c",
+      "textSha256": "4aded384981c008e7097185de518eb8275dc1576fa32bc0cc5a11f7c018f0e85",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/phagocytosis.4aded384981c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/phagocytosis.4aded384981c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/phagocytosis.4aded384981c.generation.json",
+      "plannedRequestSha256": "cdf017fbd55f11b326392a2a30fd0cc6e0357969b6f0a4a4c7ce4b8dfc2455c1"
+    },
+    {
+      "id": "holding",
+      "parentSceneId": "holding",
+      "text": "Neutrophils die after a short time. Their remains, with dead bacteria and fluid, can collect as pus, a sign the response has been fighting there. If an infection spreads, signals in the blood can also raise the body's temperature, a fever, which can speed up some immune reactions. Often, the innate response clears a small infection on its own.",
+      "hash": "c33b7a57e358",
+      "textSha256": "c33b7a57e35873d4a0bb980ca1df1989b24ee14abd1f406979cde5c603f4eeee",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/holding.c33b7a57e358.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/holding.c33b7a57e358.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/holding.c33b7a57e358.generation.json",
+      "plannedRequestSha256": "ceea10097003393f2580385b275665bd15cb625059bd462ccd74e62e246d17b5"
+    },
+    {
+      "id": "alert-adaptive",
+      "parentSceneId": "alert-adaptive",
+      "text": "Meanwhile, the body starts building a second defence, aimed at this exact pathogen. Dendritic cells, phagocytes with long, branching arms, take up bacteria in the tissue. Then they travel along lymph vessels to a lymph node, a small organ where white blood cells gather, and show pieces of the bacteria to T cells. That starts the adaptive response, which takes days to build.",
+      "hash": "719405dafee7",
+      "textSha256": "719405dafee7cb6cef07c53ce0d7cbb82b6e7d10a7b0d5b069047c180f2a8376",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/alert-adaptive.719405dafee7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/alert-adaptive.719405dafee7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/alert-adaptive.719405dafee7.generation.json",
+      "plannedRequestSha256": "da46089b9c261101767c83205cc6072862692a0f2d7516f0e3da3f4d618a53f6"
+    },
+    {
+      "id": "two-speeds",
+      "parentSceneId": "two-speeds",
+      "text": "So the innate response is fast and broad. It starts within minutes and works against almost any invader, but it isn't aimed at one pathogen, and it doesn't get better with practice. The adaptive response is slow the first time, but it's specific. And the two work together. Innate cells hold the bacteria back, and they show the adaptive cells what to target.",
+      "hash": "aadb4dd5330a",
+      "textSha256": "aadb4dd5330abae710d29db387efcc6e646ca1a7184f25429df9267eab91f5cb",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/two-speeds.aadb4dd5330a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/two-speeds.aadb4dd5330a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/two-speeds.aadb4dd5330a.generation.json",
+      "plannedRequestSha256": "f3998bd57a3507e88d6dce30136cd0ffab1d1a885a1367b4acb58a8a4c1454b3"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So remember the order: block, alarm, eat, alert. Barriers block, inflammation raises the alarm, phagocytes eat, and dendritic cells alert the adaptive response.",
+      "hash": "1cf33131886d",
+      "textSha256": "1cf33131886d167644d89e5ecec4dda67924859087b577ac35d7346b05f58b6a",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/memory.1cf33131886d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/memory.1cf33131886d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/memory.1cf33131886d.generation.json",
+      "plannedRequestSha256": "73a5ef3ff3fc9496f356d1482619188a0f8859b060359218ba0b195762a96e15"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. In an experiment, a blue dye that binds to blood proteins was injected into a mouse's blood. Histamine was then injected into one small patch of its skin, and salt solution into another as a control. Within fifteen minutes, the histamine patch had turned blue, but the control patch hadn't. Explain this result, and how this change helps defend tissue against bacteria. Pause here to answer.",
+      "hash": "ede409804c3c",
+      "textSha256": "ede409804c3cae85ca5222dacfb5a54f7ea88c728257cf31f38cb31eb22d9f2b",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/attempt.ede409804c3c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/attempt.ede409804c3c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/attempt.ede409804c3c.generation.json",
+      "plannedRequestSha256": "69077eda72d8395efa1ae5a6586f7f74115a3bbc6bb9c9b90dcc6766c931116d"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Histamine made the small vessels there leaky. Fluid escaped into the skin, carrying the blood proteins and the dye stuck to them, so the skin turned blue. The control shows the injection alone didn't cause it. In an infection, leaky vessels let proteins and white blood cells reach the bacteria. Saying the vessels just widened is the classic mistake, because only leaky walls let the dye out.",
+      "hash": "7b5bf6babcf2",
+      "textSha256": "7b5bf6babcf26160dd0dfc0380d136f34c795c853dfa9f60107876a8895e2d20",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/feedback-one.7b5bf6babcf2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/feedback-one.7b5bf6babcf2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/feedback-one.7b5bf6babcf2.generation.json",
+      "plannedRequestSha256": "50016c81c52b53511115d83f1ff189ce2ec0f3da7b87ba53364267ab8a7e2ba1"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A child has an inherited condition in which neutrophils can't stick to the walls of blood vessels. Their blood contains more neutrophils than normal, yet they get repeated bacterial skin infections, and the infected sites form little or no pus. Explain these observations. Pause here to answer.",
+      "hash": "4941263691ee",
+      "textSha256": "4941263691ee70f1f4d59cd687c500b3af1e29b0ff3c1702b6a8d099f3b65ec9",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/attempt-two.4941263691ee.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/attempt-two.4941263691ee.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/attempt-two.4941263691ee.generation.json",
+      "plannedRequestSha256": "33baf6382ac173f8b84ec54a635c3fd355beca86716ea758b1c2184d07a08b1d"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Neutrophils must stick to the vessel wall to squeeze out into tissue. These can't, so they stay in the blood, which is why the count is high. Few reach the bacteria, so fewer bacteria are engulfed, and infections keep coming back. Pus is mostly dead neutrophils, so little pus forms. Thinking more neutrophils in the blood means a stronger defence is the classic mistake.",
+      "hash": "ce5eef09e4ef",
+      "textSha256": "ce5eef09e4efeca544b5a756fcd2dcc322628136bcae5a1cc29f7cb595ecdf00",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/feedback-two.ce5eef09e4ef.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/feedback-two.ce5eef09e4ef.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/feedback-two.ce5eef09e4ef.generation.json",
+      "plannedRequestSha256": "0611a99685be356244393ebc178f065bbe819162c9acfb28da36a0b9c08c7ae3"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any infection question, follow the order: which barrier was crossed, how inflammation changes the vessels, how phagocytes reach and digest the pathogen, and how adaptive cells are alerted. Next, how B cells recognise that pathogen and target it.",
+      "hash": "056f26ccf2be",
+      "textSha256": "056f26ccf2be0d0ba56f41951379300e193e0377759364aab11056908da60a7f",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/decision-rule.056f26ccf2be.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/decision-rule.056f26ccf2be.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/decision-rule.056f26ccf2be.generation.json",
+      "plannedRequestSha256": "bae15ac62af09f11d879f2e0b829bd2b6de70ca56eea9181f075706de7778f25"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B06-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

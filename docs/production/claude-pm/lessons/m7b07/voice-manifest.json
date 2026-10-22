@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B07-claude-2026-10-22-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b07/lesson.json",
+  "lessonSha256": "c5686ee37c640817eae3ad78b0bb2f9f574a76424d14610dd31e9656ce78ab03",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b07/lesson.production-brief.json",
+    "sha256": "f36298d248eaa079e2ee5a1cd110074d7afc0d4e095e223c3522d8973fb31f0a"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Your body can make antibodies that fit a bacterium it has never met before. So how does it design them in time? In 1957, the Melbourne scientist Frank Macfarlane Burnet proposed that it doesn't design anything. The right cells already exist before the infection, and the infection picks them out. That idea, clonal selection, explains how B cells target a pathogen.",
+      "hash": "6f808291c7b8",
+      "textSha256": "6f808291c7b88405dc2c348faa6a9593ca0c395b1f637ef40400413e7961dd4d",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/hook.6f808291c7b8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/hook.6f808291c7b8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/hook.6f808291c7b8.generation.json",
+      "plannedRequestSha256": "21759ed0781bf220dcdc3ba6192f44db3b82d310a897575405ae6ed2255bf27c"
+    },
+    {
+      "id": "lymph-node",
+      "parentSceneId": "lymph-node",
+      "text": "In the last video, phagocytes held the splinter's bacteria back, and dendritic cells carried pieces of them to a lymph node. Bacteria and their molecules also drain there in the lymph. Lymph nodes are packed with lymphocytes, the white blood cells of the adaptive response. This video follows one kind, B cells.",
+      "hash": "745e03c86f90",
+      "textSha256": "745e03c86f904523454dd111cbd3d2562cc17001968b0cb7486ec578c9209d61",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/lymph-node.745e03c86f90.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/lymph-node.745e03c86f90.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/lymph-node.745e03c86f90.generation.json",
+      "plannedRequestSha256": "49b876a2ca9c23920ad4ec3d4cd5995a6082958db140f8d2ae05eef9bc555f17"
+    },
+    {
+      "id": "antigens",
+      "parentSceneId": "antigens",
+      "text": "B cells recognise antigens. An antigen is a molecule that the immune system can recognise and respond to, usually a protein or a sugar chain on the surface of a pathogen. One bacterium carries many different antigens. And a receptor doesn't fit the whole antigen, just one small part of its surface, which has a particular shape.",
+      "hash": "9afd92b89561",
+      "textSha256": "9afd92b8956166b4ff5316824a8c2a1b9141aaa39b4739b7e9777949afa86953",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antigens.9afd92b89561.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antigens.9afd92b89561.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antigens.9afd92b89561.generation.json",
+      "plannedRequestSha256": "9428939762f111139c5b65a66c4edf91657e7a1053913d336aa94def7d4dd1d7"
+    },
+    {
+      "id": "antibody-shape",
+      "parentSceneId": "antibody-shape",
+      "text": "B cells recognise antigens using receptors, and each receptor is an antibody held in the cell's membrane. An antibody is a Y-shaped protein. Its stem is the same in many different antibodies. The tips of its two arms are the binding sites, and their shape fits one small part of an antigen. Both tips are identical, so one antibody can grip two copies of the same shape.",
+      "hash": "fa2ab05bc3cc",
+      "textSha256": "fa2ab05bc3cc9545cc7de98331ff61f363a1b3c8650f38bdd5f684673fe4c543",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antibody-shape.fa2ab05bc3cc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antibody-shape.fa2ab05bc3cc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antibody-shape.fa2ab05bc3cc.generation.json",
+      "plannedRequestSha256": "85bf8831b6d251f47aed0e52dce5046dac0b227e618e6ea6d91c43145079ecaa"
+    },
+    {
+      "id": "one-shape",
+      "parentSceneId": "one-shape",
+      "text": "On any one B cell, all the receptors have the same shape. But different B cells have different shapes. As each B cell develops in the bone marrow, it shuffles pieces of its receptor genes at random. So before any infection, you already have billions of B cells, with millions of different receptor shapes. Most will never meet anything they fit.",
+      "hash": "679285305954",
+      "textSha256": "679285305954cddf7984d53c6d1c205e3beb9e1badf69a89f64b6d699ac13b87",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/one-shape.679285305954.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/one-shape.679285305954.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/one-shape.679285305954.generation.json",
+      "plannedRequestSha256": "f2cfbd6e7ec21b9f1c99f326393a78f15e78b133213525d0d8e1b919a3ac535e"
+    },
+    {
+      "id": "selection",
+      "parentSceneId": "selection",
+      "text": "In the lymph node, the bacterium's antigens meet huge numbers of B cells. Only the few whose receptors fit one of those shapes can bind. That's the selection. The antigen doesn't tell a B cell what to make, it picks out the B cells that already fit. Usually, a chosen B cell also needs a go-ahead signal from a helper T cell, one of the T cells the dendritic cells alerted to this pathogen. The next video shows how.",
+      "hash": "341df33c6941",
+      "textSha256": "341df33c69410773adc566d18fbfec7b80a46473fe52260e8218236df8eace46",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/selection.341df33c6941.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/selection.341df33c6941.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/selection.341df33c6941.generation.json",
+      "plannedRequestSha256": "2ba5e432a04742e3ae529ec67356172f70fee55fc30a057ea796f954de56cdde"
+    },
+    {
+      "id": "clone",
+      "parentSceneId": "clone",
+      "text": "Once it's switched on, the B cell divides, and its daughter cells divide again and again over several days, making thousands of identical cells. That's a clone, and every cell in it has the same receptor shape. This is why a first response takes days. A few rare cells have to multiply into thousands before there are enough to matter.",
+      "hash": "fb1810e239a3",
+      "textSha256": "fb1810e239a33dce89905048c4d9c852b11559634692a83abc4882e28fe49b5a",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/clone.fb1810e239a3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/clone.fb1810e239a3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/clone.fb1810e239a3.generation.json",
+      "plannedRequestSha256": "c52751fdc625fbbabc14ffe126a5d82edc9e21365d6a54d4760ce51d33cccf3b"
+    },
+    {
+      "id": "plasma-memory",
+      "parentSceneId": "plasma-memory",
+      "text": "Many cells in the clone become plasma cells. A plasma cell is packed with the machinery for making protein, and it can release thousands of antibody molecules every second, each with the same binding shape as the receptor that was selected. The blood carries them to the infection. Some cells in the clone become memory B cells instead. They stay in the body long after the infection, and a later video shows what they do.",
+      "hash": "7a9ff3e74c60",
+      "textSha256": "7a9ff3e74c60e307fcc7d09c9736f6dea2185b53a14525862e73d2d0b51bb72f",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/plasma-memory.7a9ff3e74c60.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/plasma-memory.7a9ff3e74c60.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/plasma-memory.7a9ff3e74c60.generation.json",
+      "plannedRequestSha256": "145cfa169d182b00a5fd628a1adf7d9c24fc2b4f5702742030ae0b40fbafbb19"
+    },
+    {
+      "id": "antibody-actions",
+      "parentSceneId": "antibody-actions",
+      "text": "Antibodies don't kill bacteria by themselves. They bind, and binding helps in three ways. They can cover the parts a bacterium uses to stick to our cells, or the toxins it releases, so those can't work. With two arms, they can link bacteria into clumps. And they coat bacteria, so phagocytes, which have receptors for the antibody's stem, grab and engulf them much faster.",
+      "hash": "fa917cf8c88f",
+      "textSha256": "fa917cf8c88f4d481b57b53c7b6028626d1cd80cb791587f87043ea94aeb6877",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antibody-actions.fa917cf8c88f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antibody-actions.fa917cf8c88f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/antibody-actions.fa917cf8c88f.generation.json",
+      "plannedRequestSha256": "6f5e12749871ea9ebee049db997edd909c9a6b9475b5c9939891f4b4bfe24680"
+    },
+    {
+      "id": "specific",
+      "parentSceneId": "specific",
+      "text": "That's what specific means. Antibodies made against this bacterium bind the shapes on its surface. A different bacterium, with differently shaped antigens, usually isn't bound, so it has to select its own B cells. Each pathogen gets its own matching clones.",
+      "hash": "0480bc30e408",
+      "textSha256": "0480bc30e408847bacf3ce97edc3bb3e738b5ab2863810c796fcd698d95f8399",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/specific.0480bc30e408.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/specific.0480bc30e408.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/specific.0480bc30e408.generation.json",
+      "plannedRequestSha256": "0673a3aee9d5c36d18c6a46b6ed320e7b5049846a94e0184ca7a95dd4d4f98a7"
+    },
+    {
+      "id": "sequence",
+      "parentSceneId": "sequence",
+      "text": "So here's the whole sequence. The antigen reaches a lymph node, and B cells whose receptors fit it bind it. With a helper T cell's signal, they're switched on and divide into a clone. Plasma cells release antibodies, and the antibodies bind the antigen and help remove the pathogen.",
+      "hash": "2e1116478bdb",
+      "textSha256": "2e1116478bdba741ed091ed8715044738373e00f7fe591ae9ee68571b2c33b27",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/sequence.2e1116478bdb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/sequence.2e1116478bdb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/sequence.2e1116478bdb.generation.json",
+      "plannedRequestSha256": "72c660f3c0415cc3f028769bf67de90f7724e27eb9ee993321f6fe7a400f18f2"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So remember: clonal selection, the name is the process. The B cell that fits is selected, and then it's cloned.",
+      "hash": "7d40938e34b1",
+      "textSha256": "7d40938e34b103e328d20ad4124a51cb43c615e93ee73dcdae3acd4baa4f2557",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/memory.7d40938e34b1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/memory.7d40938e34b1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/memory.7d40938e34b1.generation.json",
+      "plannedRequestSha256": "9c76e42dd0064bdf4879cd3b34d367bd1b64797cb26062a6698508ad9d318c38"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. A mouse was injected with killed cells of bacterium A. Two weeks later, serum, the liquid part of its blood, was taken from the mouse. The serum was mixed with bacterium A in tube one, and with bacterium B in tube two. In tube one, the bacteria clumped together. In tube two, they stayed evenly spread. Explain the results in both tubes. Pause here to answer.",
+      "hash": "137e9c56ac70",
+      "textSha256": "137e9c56ac7026a5487971e67571c661e91358d945d14ec8dad6e502645e3a67",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/attempt.137e9c56ac70.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/attempt.137e9c56ac70.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/attempt.137e9c56ac70.generation.json",
+      "plannedRequestSha256": "177e6aeaaa88c9fed4f4fa61effc317dcc46cb1da46f95b4570110893c3e9efe"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Bacterium A's antigens selected the B cells that fit them, and these multiplied into plasma cells that released antibodies. In tube one, antibodies bound A and, with two arms each, linked them into clumps. Tube two didn't visibly clump, so there's no evidence the antibodies linked B. B may lack the matching antigen, but this test alone can't show that. Saying they killed A is the classic mistake.",
+      "hash": "02206e864c75",
+      "textSha256": "02206e864c75a3b60027b9b4b06577fc2a48399f8048e5bbcd852712272c502a",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/feedback-one.02206e864c75.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/feedback-one.02206e864c75.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/feedback-one.02206e864c75.generation.json",
+      "plannedRequestSha256": "86ec4f6581e7452b61526e21f9c6d3a7dca9ef15f852d2051e6ec78171f0a964"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Antibodies against a new pathogen usually appear in the blood only a week or more after infection. A student says, this is because B cells must first design an antibody that fits the new pathogen. Evaluate the student's claim. Pause here to answer.",
+      "hash": "d1b057d531c1",
+      "textSha256": "d1b057d531c17b1c6d6c646e983a5cca8ca75b6496203688d116c42a5997e73c",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/attempt-two.d1b057d531c1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/attempt-two.d1b057d531c1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/attempt-two.d1b057d531c1.generation.json",
+      "plannedRequestSha256": "b31ff1dcbf993e659fdd5b38225d0290a31cfcf16637f66c20b0cb7f96da5811"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The delay is real, but the reason is wrong. B cells with fitting receptors already exist before infection, made by random gene shuffling, so nothing is designed. The delay happens because those cells are rare. They must be selected, switched on and divide many times before plasma cells release enough antibody to detect. Thinking the pathogen tells the B cell what to make is the classic mistake.",
+      "hash": "16c9bda14c57",
+      "textSha256": "16c9bda14c57b0bf0d3c99239ced2110d741a26603d8fe8aca8475c7d697cfc4",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/feedback-two.16c9bda14c57.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/feedback-two.16c9bda14c57.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/feedback-two.16c9bda14c57.generation.json",
+      "plannedRequestSha256": "263c2a26ed4b1f0adbe96a114832d24e599e4354067d18e7ff8771a65d55ba16"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any antibody question, say which B cells fit the antigen, how they're selected and multiplied, what plasma cells release, and what the antibodies do when they bind. Next, the T cells: helpers that give the go-ahead, and killers that destroy infected cells.",
+      "hash": "3c5400eb116a",
+      "textSha256": "3c5400eb116a6790c36f7e773b24755ce49370625ab17427343a45723f2645c6",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/decision-rule.3c5400eb116a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/decision-rule.3c5400eb116a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/decision-rule.3c5400eb116a.generation.json",
+      "plannedRequestSha256": "7045b17089c812150fe72776407f4fda8c1999125e0431fb03999c6e07b9ba61"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B07-claude-2026-10-22-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
