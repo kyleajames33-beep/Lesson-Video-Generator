@@ -86,3 +86,4 @@ Each design goes through the full pipeline.
 - **Route JSON updated (22 Oct, Biology):** bio-m7-p03 (folded into b05) and bio-m7-p04 (cut) are removed. bio-m7-b04 gains the prerequisite bio-m5-b03b. bio-m7-b05 now hands on to b06, and b06 to b07.
 - **Route JSON updated (22 Oct, immunity block):** bio-m7-g03 (immune response practice, change 7) added after b09 at playlist order 14, with later Biology entries shifted by one. b09 now hands on to g03, and g03 to b10. **Herd immunity moves to bio-m7-b10** (the b09 author moved it out because b09 is full); the b10 design must cover it.
 - **Plate note:** `m7-b-cell-bare-v1.png` has painted pixels touching its left edge. The b07 builder must not tile it edge to edge, and Codex should re-matte it in the next plate brief.
+- **Route JSON updated (23 Oct):** chem-m7-c08 is split into c08a (L12) and c08b (L13), both delivery parts of c08. The preceding entry hands on to c08a. Later prerequisites now point to c08b.

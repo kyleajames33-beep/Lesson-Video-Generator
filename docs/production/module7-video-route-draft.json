@@ -639,7 +639,7 @@
           ],
           "entryKnowledge": "Recall chem-m7-p03.",
           "next": [
-            "chem-m7-c08"
+            "chem-m7-c08a"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
@@ -651,24 +651,24 @@
           ]
         },
         {
-          "id": "chem-m7-c08",
+          "id": "chem-m7-c08a",
           "title": "Where can an alcohol reaction lead?",
           "type": "core",
           "siteLessons": [
-            "L12",
-            "L13"
+            "L12"
           ],
           "syllabusActions": [
             "C7-IQ4-04",
-            "C7-IQ4-06",
-            "C7-IQ5-01"
+            "C7-IQ4-06"
           ],
           "prerequisites": [
-            "chem-m7-c05"
+            "chem-m7-c05",
+            "chem-m7-c04a",
+            "chem-m7-c06"
           ],
           "estimatedMinutes": 8.5,
           "start": "Compare dehydration, substitution and oxidation.",
-          "stop": "Predict an aldehyde, ketone or acid from alcohol class and conditions.",
+          "stop": "Predict an aldehyde, ketone, acid or no reaction from alcohol class and conditions.",
           "playlistOrder": 13,
           "planAnchor": "C08",
           "sourceCandidates": [
@@ -676,7 +676,44 @@
               "id": "Chemistry-Y12-M7-L12",
               "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson12.sa.html",
               "scope": "Use the portion within this route boundary; site content has not been approved as a video."
-            },
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c05.",
+          "next": [
+            "chem-m7-c08b"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "Where can an alcohol reaction lead?",
+          "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-alcohol-reactions.md",
+          "siteExtracts": [
+            "docs/production/claude-pm/site-extracts/chem-m7-l12.md",
+            "docs/production/claude-pm/site-extracts/chem-m7-l13.md"
+          ],
+          "deliveryPartOf": "chem-m7-c08"
+        },
+        {
+          "id": "chem-m7-c08b",
+          "title": "Aldehyde or ketone: how can you tell?",
+          "type": "core",
+          "siteLessons": [
+            "L13"
+          ],
+          "syllabusActions": [
+            "C7-IQ5-01",
+            "C7-IQ1-01",
+            "C7-IQ4-06"
+          ],
+          "prerequisites": [
+            "chem-m7-c08a"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Recall alcohol oxidation from c08a.",
+          "stop": "Predict an aldehyde, ketone or acid from alcohol class and conditions.",
+          "playlistOrder": 13,
+          "planAnchor": "C08",
+          "sourceCandidates": [
             {
               "id": "Chemistry-Y12-M7-L13",
               "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson13.sa.html",
@@ -695,7 +732,8 @@
           "siteExtracts": [
             "docs/production/claude-pm/site-extracts/chem-m7-l12.md",
             "docs/production/claude-pm/site-extracts/chem-m7-l13.md"
-          ]
+          ],
+          "deliveryPartOf": "chem-m7-c08"
         },
         {
           "id": "chem-m7-p04",
@@ -710,7 +748,7 @@
             "C7-IQ2-05"
           ],
           "prerequisites": [
-            "chem-m7-c08"
+            "chem-m7-c08b"
           ],
           "estimatedMinutes": 7,
           "start": "Choose an oxidation and collection method.",
@@ -757,7 +795,7 @@
             "C7-IQ5-04"
           ],
           "prerequisites": [
-            "chem-m7-c08",
+            "chem-m7-c08b",
             "chem-m6-c05",
             "chem-m6-c10"
           ],
@@ -1004,7 +1042,7 @@
           "prerequisites": [
             "chem-m7-c04b",
             "chem-m7-c06",
-            "chem-m7-c08",
+            "chem-m7-c08b",
             "chem-m7-c10",
             "chem-m7-c11"
           ],
