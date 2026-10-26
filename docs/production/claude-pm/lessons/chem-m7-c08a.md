@@ -1,8 +1,17 @@
 # M7 C08a: Where can an alcohol reaction lead? Dehydration, substitution with HX, and oxidation predicted from the alcohol's class and the conditions (design)
 
-Status: Revision 2 (23 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (27 Oct): Codex check 105 found no error; ready to voice.
+
+Earlier status, Revision 2 (23 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 
 Narration 6,200 characters, 19 scenes, about 9.4 minutes (561 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (27 Oct; from `../checks/codex-check-105.md`):
+- Codex check 105 ("chem-m7-c08a" section) reports no error in this design, and `../checks/codex-interim-findings-closure.md` lists no open finding for it. Narration, attempts, feedback, key notes and metadata are unchanged.
+- Plates: none commissioned for this video. The reused `m8-dichromate-orange-v1.png` and `m8-dichromate-green-v1.png` pair is in `public/assets/chemistry/`.
+- Narration recounted by script: 6,200 characters (unchanged), about 561 s.
+
+Ready to voice. Human listening and the exact voiced preview review remain pending.
 
 Revision 2 changes (23 Oct; resolving `../checks/m7c08a-learning-review.md` and `../checks/m7c08a-claude-science-check.md`):
 - Scene 3 (learning S1, science S1): hydration no longer described as "plenty of water". New narration: "To add water to ethene, we used steam, at high pressure. To take water out, we use concentrated acid, which soaks up water, and the alkene escapes from the hot mixture. It's the same equilibrium. From Module five, adding water pushes it towards the alcohol, and removing water pushes it towards the alkene." On "steam" the "steam" and "high pressure" chips pulse together; on "escapes" a grey tag under the dehydration arrow writes "→: water and ethene removed, so it runs one way", answering ⇌ against →. Decisions, cause chain and teaching checks updated to match (the industrial process uses excess ethene, as c06 author note a says).

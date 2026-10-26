@@ -1,6 +1,15 @@
 # S07: Practical questions: validity, reliability, accuracy and fixes that fix (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (27 Oct): Codex check 104 found no error; ready to voice.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Revision 3 changes (27 Oct; from `../checks/codex-check-104.md`):
+- Codex check 104 ("skills-s07" section) reports no error in this design, and `../checks/codex-interim-findings-closure.md` lists no open finding for it. Narration, attempts, feedback, key notes and metadata are unchanged.
+- Plates: none commissioned for s07. The two plates it depends on, `m7-spirit-burner-calorimeter-v1.png` and `m7-spirit-burner-calorimeter-shield-v1.png`, were delivered through chem-m7-p03 in brief 103 and are in `public/assets/chemistry/`. Assets and Open decision 5 updated.
+- Narration recounted by script: 5,882 characters (unchanged), about 555 s.
+
+Ready to voice. Human listening and the exact voiced preview review remain pending.
 
 Revision 2 changes (from `../checks/skills07-learning-review.md` and `../checks/skills07-claude-science-check.md`):
 - Worked data replaced so the card agrees with chem-m7-p03 (learning S1, science F1): ethanol −592, −585, −598 (mean −592, 43% of its data value); propan-1-ol −693, −705, −687 (mean −695, 34%). Spreads stay 13 and 18 and the gap stays about 100 kJ mol⁻¹. Every dependent line updated: card table, scenes 5, 6, 7 and 14 (narration and screen), model answers, Decisions, PercentBars, Numbers to verify. Scene 6 now says "well under half" and "an uncovered, unshielded can".
@@ -391,7 +400,7 @@ Have (inspected 22 Oct; never stretched, uniform scale only):
 - `public/assets/biology/m7-sample-bottles-three-v1.png` (drill 2; 2000 square, alpha box 322,575 to 1679,1407 measured with PIL, alpha > 20; three capped sample bottles with blank labels, left and right clear, middle cloudy with specks; used twice, each instance cropped by position to one clear bottle, the cloudy bottle never shown).
 - `public/assets/biology/m7-plate-sparse-v1.png` and `m7-plate-countable-v1.png` (feedback 2; as bio-m7-p02; countable plate alpha box 295,290 to 1706,1690).
 
-Dependent on chem-m7-p03's commission (not new for s07; not yet in `public/assets/chemistry/` on 22 Oct):
+Dependent on chem-m7-p03's commission (not new for s07; not yet in `public/assets/chemistry/` on 22 Oct; Revision 3: both **delivered** in brief 103 and now in `public/assets/chemistry/`):
 - `m7-spirit-burner-calorimeter-v1.png` (scenes 4, 6, 7).
 - `m7-spirit-burner-calorimeter-shield-v1.png` (scene 6).
 If they are not delivered before build, s07 waits for them; a coded set-up is not an option (owner rule).
@@ -443,7 +452,7 @@ No new plates. Start only after the learning review and science check pass and t
 2. **Worked question length: closed (Revision 2).** Part (a) is kept, as the learning review recommends (it makes "reliable, yet not valid" visible in one stimulus and carries the spread-against-gap skill). The stem is tightened to four sentences and the demands not in use dim to grey in scenes 5 to 7.
 3. **Ethanol plausibility: closed (Revision 2).** Trials lowered to 43% (ethanol) and 34% (propan-1-ol), matching p03's unshielded level; the card says "with no draught shield".
 4. **Glossary quotation:** quoted word for word from `vra-definitions.md`, with the version labelled (unlike s01 to s05, which paraphrased the key-words glossary; these are syllabus glossary terms with exact wording on file).
-5. **Spirit-burner plates:** s07 cannot build until chem-m7-p03's commissioned plates arrive.
+5. **Spirit-burner plates:** s07 cannot build until chem-m7-p03's commissioned plates arrive. Resolved (Revision 3): delivered in brief 103.
 
 ## Review notes (author, not learner copy)
 

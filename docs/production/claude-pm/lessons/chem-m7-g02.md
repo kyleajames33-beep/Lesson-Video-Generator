@@ -1,6 +1,15 @@
 # G02 (Chemistry, Module 7): Combustion enthalpy calculations: HSC-style practice (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (27 Oct): Codex check 104 found no error; ready to voice.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+
+Revision 3 changes (27 Oct; from `../checks/codex-check-104.md`):
+- Codex check 104 ("chem-m7-g02" section) reports no error in this design, and `../checks/codex-interim-findings-closure.md` lists no open finding for it. Narration, attempts, feedback, key notes and metadata are unchanged.
+- Plates: none commissioned for G02. The three plates it depends on (`m7-spirit-burner-calorimeter-v1.png`, `m7-spirit-burner-on-balance-v1.png`, `m7-spirit-burner-calorimeter-shield-v1.png`) were delivered through chem-m7-p03 in brief 103 and are in `public/assets/chemistry/`. Noted under Assets.
+- Narration recounted by script: 5,599 characters (unchanged), about 543 s.
+
+Ready to voice. Human listening and the exact voiced preview review remain pending.
 
 Revision 2 changes (from `../checks/m7g02-learning-review.md` and `../checks/m7g02-claude-science-check.md`):
 - Q1 uses the alternative final mass, 150.54 g (root decision; learning S1, science F1): Δm 1.10 g, n 0.034332 mol, ΔHc −365 kJ mol⁻¹, heat released 24.925 kJ, 50.3%, crossed −11.4 (kJ per gram). Updated in the card, the hook's job sorter chips, 2b to 2e (narration and screen), 4d ("question one's fifty"), key note 2, the Decisions table, the precision and data bullets, model answer 1, Numbers to verify, significant figures and the pronunciation note. p03's −383 is no longer repeated. Open decision closed.
@@ -239,7 +248,7 @@ Holds (10 s countdown after the speech, "Pause here to answer." on screen, card 
 
 Have (reuse; inspected 22 Oct): `public/assets/chemistry/m7-ethanol-fuel-bottle-v1.png` (Q2 card; amber bottle, no label; coded label "ethanol"). Uniform scale only, never stretched.
 
-Dependent on chem-m7-p03's commission (not new for G02; not yet in `public/assets/chemistry/` on 22 Oct): `m7-spirit-burner-calorimeter-v1.png` (Q1 card, 2d), `m7-spirit-burner-on-balance-v1.png` (2b), `m7-spirit-burner-calorimeter-shield-v1.png` (Q3 card). G02 builds after they arrive; a coded set-up is not an option (owner rule). p03's evaporation wisp thumbnail (4c) is a coded part, imported.
+Dependent on chem-m7-p03's commission (not new for G02; not yet in `public/assets/chemistry/` on 22 Oct; Revision 3: all three **delivered** in brief 103 and now in `public/assets/chemistry/`): `m7-spirit-burner-calorimeter-v1.png` (Q1 card, 2d), `m7-spirit-burner-on-balance-v1.png` (2b), `m7-spirit-burner-calorimeter-shield-v1.png` (Q3 card). G02 builds after they arrive; a coded set-up is not an option (owner rule). p03's evaporation wisp thumbnail (4c) is a coded part, imported.
 
 Need: **no new plates.**
 

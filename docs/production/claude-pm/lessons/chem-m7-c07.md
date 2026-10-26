@@ -1,8 +1,17 @@
 # M7 C07: What does burning an alcohol tell us about fuel choice? Combustion equations, the enthalpy trend, energy per gram, and ethanol against petrol (design)
 
-Status: Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (27 Oct): Codex check 103 found no error; ready to voice.
+
+Earlier status, Revision 2 (22 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 
 Narration 6,237 characters, 18 scenes, about 9.4 minutes, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (27 Oct; from `../checks/codex-check-103.md`):
+- Codex check 103 ("Chemistry C07" section) reports no error in this design, and `../checks/codex-interim-findings-closure.md` lists no open finding for it. Narration, attempts, feedback, key notes and metadata are unchanged.
+- Plates delivered (brief 103; `../assets/brief103-provenance.json`): `m7-spirit-burner-calorimeter-v1.png`, `m7-spirit-burner-calorimeter-sooty-v1.png` and `m7-sugarcane-stalks-v1.png` are in `public/assets/chemistry/`. Noted under Assets.
+- Narration recounted by script: 6,237 characters (unchanged), about 9.4 minutes.
+
+Ready to voice. Human listening and the exact voiced preview review remain pending.
 
 Revision 2 changes (22 Oct; from `../checks/m7c07-learning-review.md` and `../checks/m7c07-claude-science-check.md`):
 - Scene 9 (learning S2, science S1): "a renewable source with less net carbon dioxide" becomes "a renewable source that can add less net carbon dioxide".
@@ -232,7 +241,7 @@ Revision 2 count (22 Oct; counted by script with the build parser rules: `### N.
 
 Have (inspected 22 Oct): `public/assets/chemistry/m7-ethanol-fuel-bottle-v1.png` (hook, scene 8, handoff), `m7-crude-oil-barrel-v1.png` (hook, scene 8), `m7-oil-gas-rig-v1.png` (scene 10); all 2000 × 2000, scale uniformly only, never stretched. Coded: equation stage strip, balance tally (c06), calorimetry strip and readout chip (C03), series ladder, bond ledger, per-gram switch, carbon loops, production ledger, implications board, criteria card, field and wheat line icon, crossed chips, countdown ring, key notes board.
 
-Need: **three new plates.** Two are shared with chem-m7-p03, which commissions the full spirit-burner set; the descriptions below are identical to p03's.
+Need: **three new plates.** Two are shared with chem-m7-p03, which commissions the full spirit-burner set; the descriptions below are identical to p03's. Revision 3: all three **delivered** in brief 103 (`../assets/brief103-provenance.json`).
 - `public/assets/chemistry/m7-spirit-burner-calorimeter-v1.png` (scenes 4, 5, 17): the base set-up, lit, blue flame, clean can (full description in the Codex asset brief).
 - `public/assets/chemistry/m7-spirit-burner-calorimeter-sooty-v1.png` (scenes 4, 14): the identical set-up with a yellow smoky flame and soot on the can base (matched pair; full description in the Codex asset brief).
 - `public/assets/chemistry/m7-sugarcane-stalks-v1.png` (scenes 8, 9, 16): new, this video only.
