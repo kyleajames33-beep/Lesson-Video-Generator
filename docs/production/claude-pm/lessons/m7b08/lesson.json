@@ -1,0 +1,160 @@
+{
+  "title": "How T Cells Find Infected Cells: Helper and Cytotoxic T Cells",
+  "subtitle": "Antibodies can't reach a virus once it is inside your cells. How do T cells find the infected cells, and what do they do?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 12,
+  "lessonIntent": "explaining why antibodies can't reach a virus inside a cell; explaining antigen presentation (every cell displays pieces of the proteins it makes, so an infected cell displays virus pieces; dendritic cells display pieces of what they took up); explaining that a T cell receptor fits only a piece displayed on a cell, checked together with the display molecule, not free virus; explaining T cell selection and cloning in the lymph node and that two main kinds form; describing helper T cells as coordinators that release cytokines (the go-ahead for B cells, signals that make cytotoxic T cells multiply, signals that make macrophages better at destroying what they engulf) and kill nothing; describing cytotoxic T cells travelling to the infection, binding infected cells that display the matching piece, and triggering apoptosis so the virus loses its factory, while healthy cells are left alone; contrasting innate NK cells (no receptor made for one pathogen; respond to stress signals and too few display molecules) with cytotoxic T cells; describing the two arms of adaptive immunity and helper T cells linking them; interpreting a killing experiment and evaluating a claim about helper T cell loss.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Antibodies are good at grabbing viruses outside cells. But a virus doesn't stay outside. It gets into your own cells and copies itself there, where antibodies can't reach it. So how does your body find the infected cells among billions of healthy ones? In 1973, in Canberra, Peter Doherty and Rolf Zinkernagel helped answer that, and later shared a Nobel Prize for it. The answer involves T cells."
+      }
+    },
+    {
+      "id": "virus-enters",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's our case. A virus lands on the lining of your airways. A protein on its surface fits a molecule on an airway cell, so it binds and gets in. Inside, it takes over the cell and uses it to make many new viruses. Those leave and infect the cells next door. While the virus is inside a cell, antibodies can't touch it."
+      }
+    },
+    {
+      "id": "display-pieces",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So the body checks cells from the outside. Almost every one of your cells cuts up some of the proteins it's making, and displays small pieces on its surface, held in display molecules. A healthy cell displays pieces of its own proteins. An infected cell is making virus proteins too, so it displays virus pieces as well. Showing pieces like this is called antigen presentation."
+      }
+    },
+    {
+      "id": "t-cell-receptor",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "T cells are lymphocytes, like B cells. Each T cell has receptors of one shape, made at random as it developed. But here's the difference. A T cell receptor doesn't bind a free virus. It only fits a piece that's displayed on a cell, held in a display molecule. Doherty and Zinkernagel found the clue: a T cell recognises a virus only together with the cell's own display molecule. So it checks the display molecule and the piece together."
+      }
+    },
+    {
+      "id": "find-t-cells",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, though, the right T cells have to be found. In the last two videos, dendritic cells carried pieces of the pathogen to a lymph node and displayed them. Only the few T cells whose receptors fit those pieces are selected. They divide into clones over several days, just as B cells do. And the clones are of two main kinds, helper T cells and cytotoxic T cells."
+      }
+    },
+    {
+      "id": "helper-t-cells",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Helper T cells mainly coordinate. They send signals that help other cells act. When a helper T cell finds the same pieces displayed on a B cell that has taken in the antigen, it releases signal chemicals called cytokines. That's the go-ahead signal from the last video. Helper T cells also release cytokines that make cytotoxic T cells multiply, and make macrophages better at destroying what they engulf."
+      }
+    },
+    {
+      "id": "cytotoxic-find",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Cytotoxic T cells are the killers. They leave the lymph node, travel in the blood, and squeeze out into the infected airway. There, they check the pieces displayed on each cell. Healthy cells, displaying only their own pieces, are left alone. When a cytotoxic T cell's receptor fits a virus piece on an infected cell, it binds to that cell."
+      }
+    },
+    {
+      "id": "apoptosis",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Then it releases proteins. Some make holes in the infected cell's membrane. Others pass through and switch on the cell's own self-destruct program, called apoptosis. The cell breaks itself up in a tidy way, and phagocytes clear the pieces. Virus copies still being built inside are lost with it, so the virus loses its factory. The T cell then moves on to the next infected cell."
+      }
+    },
+    {
+      "id": "nk-cells",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Cytotoxic T cells aren't the only cells that kill infected cells. Natural killer cells, or NK cells, are part of the innate system. They don't have receptors made for one pathogen. They respond to stress signals on a cell, and to cells displaying too few display molecules, which is one way some viruses hide from T cells. NK cells act early. Cytotoxic T cells take longer, but they target one pathogen."
+      }
+    },
+    {
+      "id": "two-arms",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So the adaptive response has two arms. In the antibody arm, B cells make antibodies that act on pathogens outside cells, in blood and tissue fluid. In the cell-mediated arm, cytotoxic T cells destroy infected cells. You need both, because a virus is outside cells while it travels between them, and inside cells while it copies itself. Helper T cells sit in the middle, switching on both. Some T cells also become memory T cells, and the next video shows why that matters."
+      }
+    },
+    {
+      "id": "memory",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a way to keep them apart. B cells make antiBodies. T cells Terminate or Tell. Cytotoxic T cells terminate infected cells. Helper T cells tell other cells to act."
+      }
+    },
+    {
+      "id": "attempt",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two exam questions now. First. Cytotoxic T cells were taken from a mouse infected with virus X. They were mixed with three groups of cells, all from mice of the same strain. Group one cells were uninfected. Group two cells were infected with virus X. Group three cells were infected with virus Y. Only the group two cells were killed. Explain these results. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Virus X selected cytotoxic T cells whose receptors fit X's pieces. Group two cells displayed virus X pieces, so the T cells bound them and triggered apoptosis. Group one cells displayed only their own pieces. Group three displayed virus Y pieces, which didn't fit these receptors. So neither was killed. Saying the T cells attacked the virus itself is the classic mistake."
+      }
+    },
+    {
+      "id": "attempt-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second. HIV infects and destroys helper T cells. Without treatment, their number in the blood falls over several years. A student says, this weakens only the T cell arm of the immune system, because antibodies are made by B cells. Evaluate the student's claim. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-two",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "B cells do make antibodies, but the claim isn't supported. Most B cells need a helper T cell's go-ahead before they multiply into plasma cells, so antibody responses weaken too. Cytotoxic T cells rely on helper cytokines to multiply, so killing of infected cells weakens as well. Both arms weaken together. Thinking B cells work without helper T cells is the classic mistake."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any T cell question, say which cell displays the antigen, which T cells fit it and multiply, what helper T cells signal, and how cytotoxic T cells destroy infected cells. Next, why a second infection is often stopped much faster."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

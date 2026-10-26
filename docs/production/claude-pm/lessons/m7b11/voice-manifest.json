@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B11-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b11/lesson.json",
+  "lessonSha256": "ff7c3755d5c97b417785727af837412e762cfb6b679ee2d387bf1dde2a4e8f05",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b11/lesson.production-brief.json",
+    "sha256": "5922021ed6e28e411bfaf662b54f94d27a83c30e29f687e50afaec2af46ee48b"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Every winter, people with the flu ask their doctor for antibiotics. The antibiotics do nothing to the flu virus. But a flu antiviral called oseltamivir can shorten the illness by about a day, if it's started within two days of the first symptoms. So why does one drug miss the virus completely, and why does the other only help if you take it early?",
+      "hash": "5e1263cd7272",
+      "textSha256": "5e1263cd7272a6d800f42cc2fd61f681b19080d9138c24fdcff31dc39893cf4f",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/hook.5e1263cd7272.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/hook.5e1263cd7272.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/hook.5e1263cd7272.generation.json",
+      "plannedRequestSha256": "84092115fe7ca5631ea61cf4f63d0a56ddb003dc2af2850bb3e9836d0917ceb0"
+    },
+    {
+      "id": "selective-toxicity",
+      "parentSceneId": "selective-toxicity",
+      "text": "You've seen the rule already. A useful drug harms the pathogen much more than the host. That's called selective toxicity. Often the drug hits something the pathogen has and your cells don't, or have in a different form. A bacterium is a whole cell, so it has plenty of parts that differ from ours.",
+      "hash": "73a400dae445",
+      "textSha256": "73a400dae445b6380c2daa515aa1fd89eb79503d980a8d2ccb35fdf3cc328658",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/selective-toxicity.73a400dae445.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/selective-toxicity.73a400dae445.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/selective-toxicity.73a400dae445.generation.json",
+      "plannedRequestSha256": "4002e63281184592729c69f8b18b4d3104471761e7489754c891e44497727b4d"
+    },
+    {
+      "id": "antibiotic-targets",
+      "parentSceneId": "antibiotic-targets",
+      "text": "Penicillin stops a bacterium building its cell wall, a tough mesh that stops the cell swelling and bursting. So when a growing bacterium can't strengthen its wall, water rushes in by osmosis, and the cell bursts. Your cells have no wall, so penicillin leaves them alone. Other antibiotics jam bacterial ribosomes, which are shaped differently from ours, so the bacterium can't make proteins.",
+      "hash": "a90d0e85b134",
+      "textSha256": "a90d0e85b13455a27ee4e77c5d48d8667d5edccd2815c996c20827b5332d921f",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/antibiotic-targets.a90d0e85b134.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/antibiotic-targets.a90d0e85b134.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/antibiotic-targets.a90d0e85b134.generation.json",
+      "plannedRequestSha256": "463286e3e383c5203baf6ad8cc1436c33a93dae3805f3bbb9ef6732b5d542a0a"
+    },
+    {
+      "id": "no-target-in-virus",
+      "parentSceneId": "no-target-in-virus",
+      "text": "Now look at a virus. It's genes in a protein coat, with no wall and no ribosomes of its own. Inside your cell, it uses your cell's ribosomes to make new viruses. So an antibiotic has nothing in the virus to hit. But it still acts on the bacteria living in your throat and gut, so antibiotics for a cold can help resistant bacteria multiply.",
+      "hash": "08df57932dc8",
+      "textSha256": "08df57932dc8bb582ae6999ed9456426fd74f9607a49dc85ee8d0db4137e21e3",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/no-target-in-virus.08df57932dc8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/no-target-in-virus.08df57932dc8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/no-target-in-virus.08df57932dc8.generation.json",
+      "plannedRequestSha256": "8db020a3e5537755de6724dcee8795c82bc4eb5bae2452f646e355e4bd0e35e9"
+    },
+    {
+      "id": "antiviral-steps",
+      "parentSceneId": "antiviral-steps",
+      "text": "So how can any drug stop a virus? Viruses bring a few tools of their own. Flu carries an enzyme called neuraminidase, which cuts new viruses free from the cell that made them. Oseltamivir blocks that enzyme, so the new viruses stay stuck to the cell and can't infect more cells. Other antivirals block a virus's own copying enzyme, or stop it getting into a cell. Many antivirals target viral enzymes like these, but some block a part of your cell the virus needs, such as its entry receptor.",
+      "hash": "49f3c6243c76",
+      "textSha256": "49f3c6243c768cc2036f645db48ca6344796241ee2e17f0592e364199f614e70",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/antiviral-steps.49f3c6243c76.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/antiviral-steps.49f3c6243c76.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/antiviral-steps.49f3c6243c76.generation.json",
+      "plannedRequestSha256": "610c5d925c43ee058bbe1d68af833cb0d3f18cab577c83f0d5bba6756f40c8d2"
+    },
+    {
+      "id": "stop-new-viruses",
+      "parentSceneId": "stop-new-viruses",
+      "text": "Antivirals don't destroy virus particles that already exist. They stop new ones being made or released. So with flu, the antiviral helps most early, before the virus has spread through millions of airway cells. Most antivirals are also narrow, though some act on several virus families, and each disease still needs its own clinical evidence. And because viruses rely so heavily on our cells, safe targets are rare, so there are far fewer antivirals than antibiotics.",
+      "hash": "d59e6382ce1a",
+      "textSha256": "d59e6382ce1a534042b1d9c47dfa62d316deaf464049937509b53228267275c0",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/stop-new-viruses.d59e6382ce1a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/stop-new-viruses.d59e6382ce1a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/stop-new-viruses.d59e6382ce1a.generation.json",
+      "plannedRequestSha256": "88cc7c74e5876ec47275032013967d1b8b13ab98ecc40d83b72de7c123c10b0a"
+    },
+    {
+      "id": "resistance",
+      "parentSceneId": "resistance",
+      "text": "Both kinds of drug can stop working, and you've seen why. A drug stops the microbes it can, and the few that already carry resistance survive and multiply. The drug selects resistance. It doesn't create it. Bacteria also pass resistance genes to each other on plasmids, small loops of DNA, even between different species. And it's the bacteria that become resistant, never the person.",
+      "hash": "7324cd4d7fa4",
+      "textSha256": "7324cd4d7fa475cffe2615b93e3af0b08be048253f394664f232d73e0d1d6fab",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/resistance.7324cd4d7fa4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/resistance.7324cd4d7fa4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/resistance.7324cd4d7fa4.generation.json",
+      "plannedRequestSha256": "4f3a081d282087fefc7098f2a8cc91709164362ca7be66b4a4eef3e6ba1793e0"
+    },
+    {
+      "id": "combination",
+      "parentSceneId": "combination",
+      "text": "HIV copies itself billions of times a day, with frequent copying errors, so resistant variants keep appearing. Given one drug at a time, HIV in many people became resistant. So from 1996, doctors combined three drugs, hitting at least two different steps. To survive, one virus would need resistance to all three at once, and that's very unlikely.",
+      "hash": "2caf14d5f44e",
+      "textSha256": "2caf14d5f44eff5a3becdebfa731755f9e0747ac0bd4f91b322f2492cc2fd9eb",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/combination.2caf14d5f44e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/combination.2caf14d5f44e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/combination.2caf14d5f44e.generation.json",
+      "plannedRequestSha256": "2f753ad4dd1d8c68aa96ad30cbf4e10b47e2f83814dfef19aa577147c73632dc"
+    },
+    {
+      "id": "use-well",
+      "parentSceneId": "use-well",
+      "text": "So resistance spreads fastest where drugs are used the most. That's why antibiotics shouldn't be used for viral infections, or given routinely to healthy farm animals. Patients should take them exactly as prescribed, and never share leftovers. And hospitals keep some antibiotics in reserve, for infections nothing else can treat.",
+      "hash": "05d931c3c64c",
+      "textSha256": "05d931c3c64c22ee29fa7b87a37502408c89873446ddd13323c1cb2fa63a4722",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/use-well.05d931c3c64c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/use-well.05d931c3c64c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/use-well.05d931c3c64c.generation.json",
+      "plannedRequestSha256": "5ec9a303f834285b0dce0f87904ca5f2a13fa8cf75274a0df52ce1d16676ef2e"
+    },
+    {
+      "id": "assess",
+      "parentSceneId": "assess",
+      "text": "So how effective are these drugs? Judge them on how safely they hit the pathogen, how many infections they treat, and how long they keep working. Antibiotics hit parts our cells lack or make differently, and oseltamivir fits the flu enzyme far better than ours, so both can spare our cells. Antibiotics can cure most bacterial infections. Antivirals are narrower, though for HIV, combinations can control an infection for decades. But every use selects resistant microbes, so careless use can make a drug stop working. Resistance already costs lives. In 2021, resistant bacteria directly caused about one point one million deaths worldwide. So both work well, but only on the right pathogen, and only while they're used carefully.",
+      "hash": "8c4f50a52a4a",
+      "textSha256": "8c4f50a52a4a9eaaf840e028b7fc4203a071c87be2ee4b35d6efc3ba0534822f",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/assess.8c4f50a52a4a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/assess.8c4f50a52a4a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/assess.8c4f50a52a4a.generation.json",
+      "plannedRequestSha256": "b8cd4e7fc3f1ac876ebd54d5dee2e1fa368cf202335f67346930fb6184c75d0a"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two ideas to keep. Antivirals block a step the virus needs. And for resistance, the drug selects resistance; it doesn't create it.",
+      "hash": "f52f762f8740",
+      "textSha256": "f52f762f8740bdd0b7bec246fff98f4f161490abf9eda54caf16ed4a098542c0",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/memory.f52f762f8740.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/memory.f52f762f8740.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/memory.f52f762f8740.generation.json",
+      "plannedRequestSha256": "25045175708eda7aca930c187161e9bb2c60133a8354dd2933721fd696d688a0"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. Virus V copies its RNA using an enzyme called V polymerase. Human cells have no enzyme like it. Drug K blocks V polymerase. A patient infected with virus V asks for penicillin instead. Explain why drug K, but not penicillin, can treat the infection, and why drug K works best soon after symptoms start. Pause here to answer.",
+      "hash": "6d2bfc503766",
+      "textSha256": "6d2bfc50376688bbfb7760967eb46c83f9158d964a2d4a0a566697ca3e36081e",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/attempt.6d2bfc503766.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/attempt.6d2bfc503766.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/attempt.6d2bfc503766.generation.json",
+      "plannedRequestSha256": "8281554650d58d2f5c2843f1934d144556b3521422079995d402a94e7f15a4a2"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Drug K blocks an enzyme only the virus uses, so it stops new viruses being made without harming the patient's cells. Penicillin stops bacteria building a wall, and a virus has no wall, so penicillin has nothing to act on. And drug K works best early, because it stops new copies, but it doesn't destroy viruses already made. Saying the virus is resistant to penicillin is the classic mistake.",
+      "hash": "32ce4e4aa6c6",
+      "textSha256": "32ce4e4aa6c6d777855a2dea051c5f72162c4d2f2192604a0525216901c1caf3",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/feedback-one.32ce4e4aa6c6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/feedback-one.32ce4e4aa6c6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/feedback-one.32ce4e4aa6c6.generation.json",
+      "plannedRequestSha256": "4adc23406ce37ae671e71bad91f9027f555b6b99a87935b3de47df9314e8a9a8"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. In an untreated patient, virus W makes about ten billion new particles a day. About one particle in a hundred thousand is resistant to drug A. The same is true for drugs B and C, and resistance to each drug arises separately. Explain why treating with drugs A, B and C together is more effective than using drug A alone. Pause here to answer.",
+      "hash": "b393d8dafd54",
+      "textSha256": "b393d8dafd54bb48c2c79cb116ee8678f7e17c2803fd1b38d32e0c2fcfc48f9d",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/attempt-two.b393d8dafd54.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/attempt-two.b393d8dafd54.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/attempt-two.b393d8dafd54.generation.json",
+      "plannedRequestSha256": "2618047f0d7c2d58af39ac383c8df8b658586a76ab1be1ff2bda5fd7beb72186"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "With drug A alone, about a hundred thousand new particles a day are already resistant. That's ten billion divided by a hundred thousand. They survive and multiply, so drug A soon fails. To survive all three, one particle needs resistance to A, B and C at once, about one in a million billion. That's fewer than one a century. Saying the drugs make the virus mutate is the classic mistake.",
+      "hash": "991c9c744dd3",
+      "textSha256": "991c9c744dd337cfda3f6f5e608568b9926822631f8d1c43d775f305e89a7952",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/feedback-two.991c9c744dd3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/feedback-two.991c9c744dd3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/feedback-two.991c9c744dd3.generation.json",
+      "plannedRequestSha256": "67bd4e72cdd8bc6400b6c2ea81fe4cb9a1bb58eb54b83adbc74dc927778a6ee6"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any drug question, ask why the drug harms the pathogen more than our cells, which step it blocks, and how resistance could be selected. Next, a practical: testing what stops bacteria growing on agar.",
+      "hash": "f44423533a42",
+      "textSha256": "f44423533a42b3f4f9ee47d0cbf17ce7d73266d4d4a1acc3f9da13297e5efdfe",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/decision-rule.f44423533a42.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/decision-rule.f44423533a42.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/decision-rule.f44423533a42.generation.json",
+      "plannedRequestSha256": "fce04e4f7962b3e1c839767708571b269875ca4fbc2e1f3e61c1264d60e6259d"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B11-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

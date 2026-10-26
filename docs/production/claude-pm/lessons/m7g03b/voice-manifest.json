@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-G03-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7g03b/lesson.json",
+  "lessonSha256": "f1174ab8891cbc0e3eeddff1aac34ddd69ded4535f60ab1dfb7a5d4f52135716",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7g03b/lesson.production-brief.json",
+    "sha256": "de569f4fbb04f6a82ebfa76e265f2892af22f8faa8c6b4d9d5855986d3e594f0"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Immunity questions often ask you to do one of three things. Put the response in order, from the moment a pathogen gets in to the moment antibodies appear. Read a graph of antibody levels. Or name the immunity someone has, active or passive, natural or artificial. Each one hides a trap that costs marks. Here are three HSC-style questions, one of each. Pause and try each one, then we'll work through it together.",
+      "hash": "c2cd22afe582",
+      "textSha256": "c2cd22afe5823cbb8b408f1353b4e0f32a2a4367a8c6cc0854804411178bd3ad",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/hook.c2cd22afe582.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/hook.c2cd22afe582.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/hook.c2cd22afe582.generation.json",
+      "plannedRequestSha256": "32685ae47e2534082ad7707edaad2bb2ec0d205a0bf3fdd1e6720971864e230a"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Pruning secateurs nick a gardener's thumb, and soil bacteria get into the cut. Eight events are listed out of order. Put them in order, from entry to antibody production. Then explain why antibodies against these bacteria aren't found in the blood until about a week after the cut. Pause here to answer.",
+      "hash": "470ab12eb294",
+      "textSha256": "470ab12eb294c4b7e22035ed1b96f31f4da2152079107ee4aa8ee295e3bad422",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-question.470ab12eb294.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-question.470ab12eb294.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-question.470ab12eb294.generation.json",
+      "plannedRequestSha256": "ea206b5b5ed6a5c0d85e548eac3e5706ec4a594fb7c650954f8fa99943c884c4"
+    },
+    {
+      "id": "q1-innate",
+      "parentSceneId": "q1-innate",
+      "text": "Start where the pathogen starts. C, the bacteria get past the skin, the first barrier. Then come the innate defences, which are always ready. E, damaged cells and mast cells release chemicals such as histamine, so small vessels widen and leak. That's a chemical change causing physical ones, redness and swelling. G, neutrophils leave the blood and engulf bacteria. And F, a dendritic cell carries pieces of the bacteria to a lymph node. That's block, alarm, eat, alert.",
+      "hash": "69b5359e0e97",
+      "textSha256": "69b5359e0e976faa0cb194bc8fa60c10afc1710f060f08dbf5a609558e859930",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-innate.69b5359e0e97.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-innate.69b5359e0e97.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-innate.69b5359e0e97.generation.json",
+      "plannedRequestSha256": "d9844ee428164ceef8dade0a2601c18851d5097f20183d23d0b0182b666743af"
+    },
+    {
+      "id": "q1-adaptive",
+      "parentSceneId": "q1-adaptive",
+      "text": "Now the adaptive response, in the lymph node. A, the few B cells whose receptors already fit an antigen on the bacteria bind it. D, a helper T cell, already switched on by the dendritic cell, gives them the go-ahead. H, they divide into a clone, and most become plasma cells, while some become memory cells. B, plasma cells release antibodies, which bind the bacteria. So the order is C, E, G, F, A, D, H, B. Notice that the dendritic cell is the bridge between the two halves.",
+      "hash": "f44727111e19",
+      "textSha256": "f44727111e193af1494112f7cd8c48ee43fb559f308bb0a34abb1d2f07cefdea",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-adaptive.f44727111e19.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-adaptive.f44727111e19.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-adaptive.f44727111e19.generation.json",
+      "plannedRequestSha256": "9764f2f3fc7d00b0fe178478f8935572f1f840307768d4d49859b338aecf012d"
+    },
+    {
+      "id": "q1-days",
+      "parentSceneId": "q1-days",
+      "text": "Part b asks why it takes about a week. Only a few B cells fit this antigen to begin with. They have to meet it, get the go-ahead, and then divide many times before there are enough plasma cells to make antibodies you can measure. Meanwhile, the innate defences hold the bacteria back.",
+      "hash": "bca46b16d102",
+      "textSha256": "bca46b16d102deadadc6d7fd5632739dda2014aa69a78a09ff910cbfc50a70b4",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-days.bca46b16d102.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-days.bca46b16d102.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-days.bca46b16d102.generation.json",
+      "plannedRequestSha256": "78a82a3a0cc14495d05cf9f4ca8934787cba51e0cad2d7770066ef0d282fba57"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is writing that the body makes a new antibody to fit the bacteria. It doesn't design anything. It selects B cells that already fit, and copies them.",
+      "hash": "74b1eea5c8b1",
+      "textSha256": "74b1eea5c8b1f65a6734fd371e868e57ba0126f3fbe283418ba5f3a21ffc5b41",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-mistake.74b1eea5c8b1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-mistake.74b1eea5c8b1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-mistake.74b1eea5c8b1.generation.json",
+      "plannedRequestSha256": "25ce8c17576344230f1b5f99ab799c24dfa2dc795323f070939a86666e54a0a8"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. A volunteer in a vaccine trial is given two doses, on day zero and day twenty-eight. The graph shows the antibody level in their blood, with a dashed line at the level that protects against the disease. Compare the responses to the two doses, using data from the graph. Then explain the difference. Pause here to answer.",
+      "hash": "9df62583c800",
+      "textSha256": "9df62583c80063b6010bf9b4dd4041e090256b6a4c97ef99059b64f0e073ce54",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-question.9df62583c800.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-question.9df62583c800.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-question.9df62583c800.generation.json",
+      "plannedRequestSha256": "311b13d2fd693922844b5b1481014ba0fdb17101da006121ad074a7b08e56bc4"
+    },
+    {
+      "id": "q2-read",
+      "parentSceneId": "q2-read",
+      "text": "First, check the scale. Each gridline is ten times the one below it. Then find the lag, the flat start before the curve rises. After dose one, the level stays flat for about six days, then antibodies peak at about forty units on day fourteen, below the protective line. After dose two, they rise within about two days and peak at about two thousand units on day thirty-five. That's about fifty times higher, and it stays above the protective line.",
+      "hash": "266d06e2f10c",
+      "textSha256": "266d06e2f10ce64b8a777430bfc12215b92a7ca9c7d49baa033f18576ef09900",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-read.266d06e2f10c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-read.266d06e2f10c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-read.266d06e2f10c.generation.json",
+      "plannedRequestSha256": "4a1dbee6552c75c3de05f51c3598918b14d3032ed5133caa5075a1f3b1c3a952"
+    },
+    {
+      "id": "q2-explain",
+      "parentSceneId": "q2-explain",
+      "text": "Now explain it. Dose one gave a primary response. Only a few B cells fit the vaccine antigen, so they had to be selected and multiply, which took days, and some became memory cells. Dose two is the same antigen, so it met a secondary response. Many memory cells were already waiting. They became plasma cells quickly, with fewer divisions, so antibody rose sooner and much higher. After dose one, the level never reached the protective line, so one dose alone wouldn't have protected this volunteer. That's why many vaccines are given as more than one dose.",
+      "hash": "4c0abf46af1b",
+      "textSha256": "4c0abf46af1bef4fce36310e23a65187eefb8d1d74d735c26f16aa3f493fa9ee",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-explain.4c0abf46af1b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-explain.4c0abf46af1b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-explain.4c0abf46af1b.generation.json",
+      "plannedRequestSha256": "51eaeffb6d9572d5f71fec0e345d5be16fb0ca5ba42c0b723fa2260beb87b555"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is counting gridlines. On a log scale, two thousand sits less than two gridlines above forty, so students write that the second peak is about twice as high. Read the values off the axis, then divide.",
+      "hash": "8ac74aebb512",
+      "textSha256": "8ac74aebb5124e46462423ed3a692447744624d92b6c412f35a880506c183904",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-mistake.8ac74aebb512.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-mistake.8ac74aebb512.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-mistake.8ac74aebb512.generation.json",
+      "plannedRequestSha256": "cfd682d467259c3dce7ecbd9ffe45922603b5618511c1740f3e23b105a3c3c75"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A wildlife carer is scratched by a flying fox. Some Australian flying foxes carry a lyssavirus, a close relative of rabies. Rabies vaccine and rabies antibodies are used to prevent this infection, and they're highly effective in almost all cases. Once symptoms start, it's almost always fatal. The wound is washed with soap and water. She's then given an injection of rabies antibodies, and the first dose of rabies vaccine. Identify the type of immunity each injection gives. Then explain why both are given. Pause here to answer.",
+      "hash": "41cb44ab25fa",
+      "textSha256": "41cb44ab25fa19b58da4f56cd8a93b8340d36e93527096c8d613cef8d721a9eb",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-question.41cb44ab25fa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-question.41cb44ab25fa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-question.41cb44ab25fa.generation.json",
+      "plannedRequestSha256": "e86d3830f23177f7d54672b0681ed9ecf7be8bb6ba8ae0980b01b95e6314a72a"
+    },
+    {
+      "id": "q3-types",
+      "parentSceneId": "q3-types",
+      "text": "Use the two questions from the last video. Who made the antibodies? The injected antibodies were made by other people's immune systems, so they give artificial passive immunity. The vaccine gives her the antigen, so her own B cells make antibodies and memory cells. That's artificial active immunity. Both are artificial, because they come from medical treatment. Natural would mean she'd caught the infection, or received antibodies from her mother.",
+      "hash": "ca68c2643ce0",
+      "textSha256": "ca68c2643ce0feb3ac277aef05a88f4300b9f5e6923d2dd4b793bbae71770674",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-types.ca68c2643ce0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-types.ca68c2643ce0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-types.ca68c2643ce0.generation.json",
+      "plannedRequestSha256": "f9b95ca4c8e59c252f81a6ce3213d7b7df62f1ba186e1e939f665be883dcd625"
+    },
+    {
+      "id": "q3-why-both",
+      "parentSceneId": "q3-why-both",
+      "text": "Now why both. Her own response to the vaccine takes a week or more to make useful antibodies, and the virus could already be entering nerves near the wound. The injected antibodies work straight away, binding virus at the wound, but they fade over weeks and leave no memory. So the injected antibodies cover the gap, and the vaccine builds lasting protection. This works because symptoms usually take weeks or months to appear.",
+      "hash": "9541594b0d4f",
+      "textSha256": "9541594b0d4ff6e33d1c8436e0458e6c44e8481c95b9a19208ec60dbea2ae0bb",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-why-both.9541594b0d4f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-why-both.9541594b0d4f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-why-both.9541594b0d4f.generation.json",
+      "plannedRequestSha256": "24e5af559645e60d0c11a56d8b5a082a36087a80388c04732db24d9433127eb4"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is saying the vaccine works straight away, so the antibody injection isn't needed. A vaccine starts a primary response, and that takes time.",
+      "hash": "6a86cc0660d1",
+      "textSha256": "6a86cc0660d159985602a9c428441dc80886d77c0b1c1a9215d9c9041a31ec85",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-mistake.6a86cc0660d1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-mistake.6a86cc0660d1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-mistake.6a86cc0660d1.generation.json",
+      "plannedRequestSha256": "4bf569e839ed8df631ba4c61e4079f28df654fd3ebebadb5266633993d9cf8ad"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start each type. To put a response in order, start at the barrier, run the innate steps, block, alarm, eat, alert, then the adaptive ones, fit, go-ahead, clone, plasma cells, antibodies. For a graph, read the scale, then ask, same antigen, or a new one? For immunity, ask who made the antibodies, and was it natural or medical? Next, how hygiene and quarantine interrupt spread.",
+      "hash": "b3e0178e5d82",
+      "textSha256": "b3e0178e5d82cdc17e42636fb1e7410f79a5a6226658741dc59fb36c3842e7a1",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/decision-board.b3e0178e5d82.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/decision-board.b3e0178e5d82.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/decision-board.b3e0178e5d82.generation.json",
+      "plannedRequestSha256": "9c7a5f0f5f58074a561b527cf80eec8012e98d8e7f836ca61dd47ac2551e39a2"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

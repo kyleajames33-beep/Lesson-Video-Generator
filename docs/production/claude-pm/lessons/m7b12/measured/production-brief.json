@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b12/measured/lesson.json",
+    "lessonSha256": "8290b9dc16d38e4c3ad7b13a0db75d201230b7978ccbc423ab87ea4f32a66848"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b03: a vector is a living carrier (a mosquito or tick) that takes a pathogen between hosts; Plasmodium develops inside Anopheles; \"bed nets, repellent, and draining standing water where mosquitoes breed\"; attempt 1 used draining and larvicide for Ross River virus. From b10: environmental management changes places so pathogens can't reach new hosts; the control board; evaluating by which link, how fast, how long and cost. From b11: \"the drug selects resistance; it doesn't create it\". From bio-m6-b01: selection raises the frequency of an existing resistance allele. From bio-m6-b18: an inserted gene from another source (recombinant DNA) can be expressed in a host. From bio-m6-b11 (flagged above): a gene drive copies itself to the partner chromosome so nearly all offspring inherit it; it has not been released in the wild. Not assumed: the Aedes life cycle, container breeding, larvicides, insecticide modes of action, day against night biting, the sterile insect technique, self-limiting males, Wolbachia, cytoplasmic incompatibility.",
+    "startsWith": "Follow a vector life cycle and environmental intervention. The video opens: In the 1950s, the world sprayed DDT to wipe out malaria, and within years, many mosquitoes could survive it.",
+    "stopsAfter": "explaining that a mosquito passes dengue on only if it bites an infected person, survives while the virus multiplies and bites again, so infection falls with fewer mosquitoes, fewer bites or mosquitoes that rarely pass the virus on; describing the *Aedes aegypti* life cycle (eggs above the waterline in containers, surviving dry months; larvae and pupae in water; adults in about a week; only females bite); explaining environmental management by removing breeding water and why it needs nearly every household (public health campaigns); explaining larvicides and adult sprays (insecticides that attack insect nerves) and why bed nets suit mostly night-biting *Anopheles* while indoor spraying of resting sites works against both (in Queensland, against day-biting *Aedes* in dengue outbreaks); explaining insecticide resistance by selection and the harm of sprays (other insects; DDT building up in food chains and thinning raptor eggshells); explaining the sterile insect technique and why releases must continue; explaining self-limiting genetically engineered males and recalling why gene drives are hard to reverse; explaining that Wolbachia isn't genetic engineering, blocks dengue in the mosquito and spreads by itself (passed through eggs; infected females' eggs hatch whichever male they mate with; eggs of uninfected females mated by infected males don't hatch); evaluating each method by how much it cuts transmission, how long it lasts, cost and harm, and justifying combined methods.",
+    "nextLesson": "what limits malaria and dengue control in practice (route entry bio-m7-b13)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b12.md"
+  ],
+  "teaching": {
+    "task": "In the 1950s, spraying DDT on mosquitoes bred resistance. In 2014, Townsville released more mosquitoes, and local dengue stayed rare for about ten years. How can controlling a vector reduce infection, and how do you judge which method to use?",
+    "causalExplanation": "Causes: why vector control cuts infection (transmission needs a bite, survival and a second bite; 2); why removing water works and fails (no water, no larvae; one missed container keeps breeding; 3, 4); why the method depends on biting time (nets only work when people are under them; 5); why sprays stop working (selection; 6); why sprays harm more than mosquitoes (broad action; build-up along food chains; 6); why sterile males cut numbers and why releases must continue (no offspring either way; 7); why self-limiting males cut biting females (daughters die; 8); why gene drives are risky (spread by themselves; 8); why Wolbachia spreads and lasts (passed through eggs; failed eggs for uninfected females; 9); why programs combine methods (each has a gap; 10). Visible case: the same wheel gains a break mark at the stage each method attacks; the same population row thins or turns teal. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 5 (pesticides and biting times) and 9 (Wolbachia's two pairings) are the densest, so earlier tags dim.",
+    "conversationalApproach": "In the 1950s the world sprayed DDT to wipe out malaria and within years many mosquitoes could survive it, while in 2014 Townsville released more mosquitoes and local dengue stayed rare for about ten years, so the question is how controlling a vector reduces infection and how to judge which method to use. A vector is a living carrier, and Aedes aegypti carries dengue, so there are three ways to cut the link: fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on. The life cycle in a container of water shows the simplest control, taking away the water through public health campaigns. Pesticides kill larvae and adults, and timing matters because Aedes bites in the day, but insecticides select resistance alleles each generation and can harm other species. Sterile males reared and released leave no offspring, engineered males carry a gene that kills their female offspring, and gene drives could spread a gene through a population. Wolbachia is a natural bacterium, not genetic engineering, that blocks dengue inside the mosquito and passes from mothers to offspring, so the mosquitoes stay but dengue is blocked. Methods are judged by how much they cut transmission, how long the effect lasts, what they cost and what else they harm, and the memory aid is fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on. Two exam questions follow with brief feedback.",
+    "openingDecision": "In the 1950s, the world sprayed DDT to wipe out malaria, and within years, many mosquitoes could survive it. In 2014, Townsville tried something that sounds backwards. It released more mosquitoes, carrying a bacterium. After the bacterium spread through the city's mosquitoes, local dengue stayed rare for about ten years. So how does controlling a vector cut infection, and why did adding mosquitoes help?",
+    "understandingCheck": "12a is an explain-and-propose item with survival data (resistance by selection; a change that resistance doesn't defeat). 12c is an explain item comparing two towns after releases stop (sterile males against Wolbachia: persistence, the route's \"trade-offs\"). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ4-02 (p 55): \"investigate procedures that can be employed to prevent the spread of disease, including but not limited to: (ACSBL124)\", with the listed items \"public health campaigns\", \"use of pesticides\" and \"genetic engineering\" (this video; \"hygiene practices\", \"quarantine\" and \"vaccination, including passive and active immunity (ACSBL100, ACSBL123)\" were b10's). B7-IQ4-04 (p 55): \"investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic\" (this video: environmental management of a vector's breeding sites, scene 4, evaluated in scene 10; quarantine was b10's). Verb \"investigate\": attempt 1 reads resistance survey data; the hook and scene 9 read Townsville as evidence. Verb \"evaluate\": scene 10 gives four criteria and judges each method; attempt 2 compares the persistence of two methods. Public health campaigns: scene 4 names the household campaign to remove breeding water (Queensland's \"tip, toss and cover\" advice is a screen tag only)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One mosquito life cycle wheel, drawn in scene 3 and kept at the left from then on: four stations round a circle, \"eggs on a container wall\", \"larvae in water\", \"pupae\", \"adult female bites\", each with its painted plate. Each method then lands on the wheel at the stage it attacks, as a coded `BreakMark` (b03's) with a small plate or chip: environmental management at \"larvae in water\" (the container tips), larvicide at \"larvae\", adult spray at \"adult\", bed nets at \"bites\" (for Anopheles, shown as a small second wheel thumbnail), sterile males at \"eggs\" (eggs don't hatch), self-limiting males at \"larvae to adult\" (daughters die), Wolbachia at \"bites\" (the virus is blocked, the mosquito lives). A coded population counter (a row of small Aedes glyph outlines that thins or refills) sits under the wheel in scenes 7 to 9. Wolbachia is a coded teal dot inside a mosquito glyph, explained once with the new painted `m7-wolbachia-cell-v1.png`. Scene 6 uses a coded survival bar across three generations and the aligned eggshell pair. Scene 10 is a coded four-column criteria table, b10's `CriteriaTable` re-used. No people, hands or faces: no households, sprayer operators, sleepers under nets, residents or scientists; the bed net plate (`m7-bed-net-v1.png`) is an empty bed; the sprayer is a plate without an operator; Townsville is a coded coastline outline with a dot. Scale: the mosquito, the larva and pupa plate, the container, the eggshell pair and the Wolbachia cell are never shown at one scale; each has its own grey label, and the Wolbachia cell carries \"drawn far larger than real\". Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched (the container may rotate when it tips, never squash).",
+    "transitionPlan": "The insecticide sprayer and Anopheles mosquito plates open the hook as a PopulationRow keeps its two resistant survivors, then a coded coastline marks Townsville and the Aedes plate's glyph row gains teal dots; the hook shrinks as b03's route board draws small across the top with three break points; the LifeCycleWheel draws large with its four stations and a flooded bucket plate; the bucket tips out and a BreakMark lands; coded pellets fall into the bucket and a spray mark lands on the adult station beside a day clock; SurvivalBars write three generations with more resistant glyphs each time and a non-target chip; the mosquito cage plate and a coded radiation trefoil send sterile male glyphs to the wheel and an EggHatchRow stays mostly dark; a coded chromosome pair with an amber band writes beside the Aedes plate and an OffspringRow loses its females, then a small gene drive thumbnail fills almost all amber; the Wolbachia cell plate appears large as coded dengue particles fail to copy and the bacteria pass to the offspring; b10's CriteriaTable fills row by row; the memory line writes with a thumbnail under each phrase; each attempt clears the board and its feedback underlines the card as a small bar chart or two columns fill and a crossed chip lands; the wheel, step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people, no planes. Left half: the new `m7-insecticide-sprayer-v1.png` (grey tag \"1950s: DDT spraying\") beside `m5x-anopheles-mosquito-v1.png` (grey tag \"*Anopheles*: malaria\").",
+      "teachingReason": "Hook (spray them, or add more): In the 1950s, the world sprayed DDT to wipe out malaria, and within years, many mosquitoes could survive it.",
+      "narrationCue": "many mosquitoes could survive it / In 2014, Townsville / released more mosquitoes / local dengue stayed rare",
+      "motionPurpose": "On the spoken cues: On \"many mosquitoes could survive it\" a coded `PopulationRow` of ten *Anopheles* glyph outlines writes under them: eight fade, two with amber rings survive and multiply to fill the row (tag \"survivors breed\"). Right half: on \"In 2014, Townsville\" the DDT half dims to a grey thumbnail and a coded",
+      "motionRole": "explain",
+      "onScreenChange": "no people, no planes. Left half: the new `m7-insecticide-sprayer-v1.png` (grey tag \"1950s: DDT spraying\") beside `m5x-anopheles-mosquito-v1.png` (grey tag \"*Anopheles*: malaria\"). On \"many mosquitoes could survive it\" a coded `PopulationRow` of ten *Anopheles* glyph outlines writes under them: eight fade, two with amber rings survive and multiply to fill the row (tag \"survivors breed\"). Right half: on \"In 2014, Townsville\" the DDT half dims to a grey thumbnail and a coded north Queensland coastline outline draws with one dot labelled \"Townsville, 2014\"; on \"released more mosquitoes\" `m6-aedes-mosquito-v1.png` appears beside it and a coded row of *Aedes* glyph outlines writes, each gaining a small teal dot (tag \"carrying a bacterium\"). On \"local dengue stayed rare\" the \"carrying a bacterium\" tag dims and a grey dated tag writes under the row: \"local dengue rare for about ten years; 16 local cases in 2024 to 2025\" (grey source tags \"O'Neill et al., 2018 to 2019\"; \"Thompson et al., 2026\"). On the question the heading writes on: \"How can vector control reduce infection?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "three-ways",
+      "visualDecision": "adjust",
+      "visualReference": "the hook shrinks to a thumbnail at the upper left.",
+      "teachingReason": "Three ways to cut the link: A vector is a living carrier that takes a pathogen between hosts.",
+      "narrationCue": "Aedes aegypti / bites an infected person / survives while the virus multiplies / bites someone else / three ways",
+      "motionPurpose": "On the spoken cues: b03's route board draws small across the top: two host circles, \"infected host\" and \"new host\", with the \"travel\" lane carrying `m6-aedes-mosquito-v1.png` (grey tag \"b03: vector, a living carrier\"; grey screen tag \"every control measure breaks a link\"). On \"Aedes aegypti\" a grey tag \"dengue: a",
+      "motionRole": "explain",
+      "onScreenChange": "the hook shrinks to a thumbnail at the upper left. b03's route board draws small across the top: two host circles, \"infected host\" and \"new host\", with the \"travel\" lane carrying `m6-aedes-mosquito-v1.png` (grey tag \"b03: vector, a living carrier\"; grey screen tag \"every control measure breaks a link\"). On \"Aedes aegypti\" a grey tag \"dengue: a virus, carried by *Aedes aegypti* (north Queensland)\" writes under the mosquito. On \"bites an infected person\" an amber arrow runs from the infected host circle to the mosquito; on \"survives while the virus multiplies\" a small coded day bar under the mosquito fills (grey label \"about 8 to 12 days inside the mosquito\"); on \"bites someone else\" an amber arrow runs on to the new host circle. On \"three ways\" three chips write on below, one per cue: \"fewer mosquitoes\" (the mosquito thumbnail with a thinning row of glyphs), \"fewer bites\" (the arrow to the new host dashes), \"mosquitoes that rarely pass the virus on\" (the mosquito gains a small teal dot and the amber arrow greys). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "life-cycle",
+      "visualDecision": "adjust",
+      "visualReference": "the coded `LifeCycleWheel` draws large at the centre: four stations round a circle with arrows.",
+      "teachingReason": "The life cycle in a bucket: Start with the life cycle.",
+      "narrationCue": "lays her eggs on the inside wall / an old tyre / When rain floods them / becomes a pupa / about a week after hatching / an adult flies off",
+      "motionPurpose": "On the spoken cues: On \"lays her eggs on the inside wall\" station 1 fills with the new `m7-aedes-container-dry-v1.png` (a cut-away bucket with a band of tiny dark eggs on its inner wall above a shallow puddle; tag \"eggs above the waterline\"); on \"an old tyre\" two small grey chips write beside it, \"plant saucer\", \"old",
+      "motionRole": "explain",
+      "onScreenChange": "the coded `LifeCycleWheel` draws large at the centre: four stations round a circle with arrows. On \"lays her eggs on the inside wall\" station 1 fills with the new `m7-aedes-container-dry-v1.png` (a cut-away bucket with a band of tiny dark eggs on its inner wall above a shallow puddle; tag \"eggs above the waterline\"); on \"an old tyre\" two small grey chips write beside it, \"plant saucer\", \"old tyre\" (no plates), and a small grey tag \"eggs survive months dry\" writes under the dry bucket (the spoken sentence was cut in Revision 2; the tag carries it). On \"When rain floods them\" coded rain lines fall and the bucket crossfades to the aligned `m7-aedes-container-flooded-v1.png` (the same bucket filled, the egg band under water, larvae and pupae in the water); station 2 \"larvae in water\" lights, with the new `m7-aedes-larva-pupa-v1.png` beside it as a close-up (tag \"larva: a wriggler\"); on \"becomes a pupa\" the pupa in the close-up rings (station 3 \"pupae\"; gloss \"pupa: the resting stage before the adult\"). On \"about a week after hatching\" a coded strip \"about 7 to 10 days, egg to adult (warm weather)\" writes along the arrows. On \"an adult flies off\" station 4 fills with `m6-aedes-mosquito-v1.png`; on \"Only females bite\" a grey tag \"only females bite: blood to make eggs\". Earlier tags dim. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "remove-water",
+      "visualDecision": "new",
+      "visualReference": "the wheel shrinks to the left third.",
+      "teachingReason": "Take away the water: So the simplest control is to take away the water.",
+      "narrationCue": "environmental management",
+      "motionPurpose": "On the spoken cues: On \"take away the water\" the flooded bucket returns large and rotates to tip (coded water pours out; the plate rotates, never squashes) and then sits upright as the dry bucket again (tag \"tipped out\"). On \"Public health campaigns\" three chips write, one per cue: \"tip out containers\", \"screen",
+      "motionRole": "explain",
+      "onScreenChange": "the wheel shrinks to the left third. On \"take away the water\" the flooded bucket returns large and rotates to tip (coded water pours out; the plate rotates, never squashes) and then sits upright as the dry bucket again (tag \"tipped out\"). On \"Public health campaigns\" three chips write, one per cue: \"tip out containers\", \"screen rainwater tanks\", \"clear blocked gutters\" (grey screen tag \"Queensland: tip, toss and cover\"). On \"the eggs don't hatch\" a `BreakMark` lands on the wheel between \"eggs\" and \"larvae\" and the larvae station dims (tag \"no water: no larvae\"). On \"environmental management\" a gloss writes: \"environmental management: changing places so a vector can't breed\" (grey tag \"b10: changing places\"). On \"cheap and uses no chemicals\" a small grey note \"no chemicals, low cost\"; on \"nearly every household\" a coded street of twelve container outlines writes: eleven tip, one stays full and its egg band hatches into larvae (tag \"one missed container keeps breeding\"). The campaign chips dim as the gloss writes. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "pesticides",
+      "visualDecision": "adjust",
+      "visualReference": "the wheel returns.",
+      "teachingReason": "Pesticides, and who bites when: Where water can't be emptied, a pesticide, a chemical that kills pests, can kill the larvae, and adults can be sprayed too.",
+      "narrationCue": "pesticide",
+      "motionPurpose": "On the spoken cues: On \"can kill the larvae\" coded pellet drops fall into the flooded bucket thumbnail and a `BreakMark` lands at \"larvae\" (gloss \"pesticide: a chemical that kills pests\"; grey screen tag \"larvicide\"). On \"adults can be sprayed\" the sprayer plate appears small at the \"adult\" station with a `BreakMark`",
+      "motionRole": "explain",
+      "onScreenChange": "the wheel returns. On \"can kill the larvae\" coded pellet drops fall into the flooded bucket thumbnail and a `BreakMark` lands at \"larvae\" (gloss \"pesticide: a chemical that kills pests\"; grey screen tag \"larvicide\"). On \"adults can be sprayed\" the sprayer plate appears small at the \"adult\" station with a `BreakMark` (grey screen tag \"adulticide\"). On \"attack insect nerves\" a small coded nerve line with pulses that freeze (grey tag \"DDT, pyrethroids: insect nerves keep firing\"). On \"the vector's habits\" the larvicide and adulticide tags and the nerve line dim, and a split writes below the wheel: left \"*Anopheles*: bites mostly at night\" with `m5x-anopheles-mosquito-v1.png` and a small coded moon arc; right \"*Aedes*: bites by day\" with `m6-aedes-mosquito-v1.png` and a small coded sun arc (small grey tags \"malaria: *Plasmodium*\" and \"dengue: a virus\"). On \"bed nets\" `m7-bed-net-v1.png` (an empty bed under a net, no person) lands under the left side with a `BreakMark` on its bite arrow (tag \"treated net: night bites blocked\"). On \"spray the dark indoor corners\" the bed net tag dims and the right side shows a coded room corner outline with shaded under-furniture spots where the sprayer's coded mist lands (tag \"indoor spraying where *Aedes* rests\"; grey tags \"dengue outbreaks\" and \"indoor spraying is used against *Anopheles* too\"). The pesticide gloss dims when the split writes. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "resistance-harm",
+      "visualDecision": "adjust",
+      "visualReference": "the coded `SurvivalBars` write: three generations, each a row of twenty mosquito glyph outlines under \"spray\": generation 1, two survive (amber rings); generation 2, six; generation 3, fifteen (tag \"each generation: more survive\"; grey tag \"b11: the drug selects resistance\").",
+      "teachingReason": "Resistance, and what else sprays hit: But insecticides select resistance, like antibiotics.",
+      "narrationCue": "1969 / now widespread / kill other insects / builds up along food chains / thinning the eggshells",
+      "motionPurpose": "On the spoken cues: On \"1969\" a small dated chip: \"1969: global malaria eradication goal abandoned; resistance one reason\". On \"now widespread\" a grey tag \"today: pyrethroid resistance widespread in *Anopheles*\". On \"kill other insects\" `b2b-bee-flying-v1.png` appears small with a grey cross (tag \"other insects killed",
+      "motionRole": "explain",
+      "onScreenChange": "the coded `SurvivalBars` write: three generations, each a row of twenty mosquito glyph outlines under \"spray\": generation 1, two survive (amber rings); generation 2, six; generation 3, fifteen (tag \"each generation: more survive\"; grey tag \"b11: the drug selects resistance\"). On \"1969\" a small dated chip: \"1969: global malaria eradication goal abandoned; resistance one reason\". On \"now widespread\" a grey tag \"today: pyrethroid resistance widespread in *Anopheles*\". On \"kill other insects\" `b2b-bee-flying-v1.png` appears small with a grey cross (tag \"other insects killed too\"). On \"builds up along food chains\" a coded four-step food chain line writes (water insects, small fish, larger fish, bird of prey) with the dose dots getting denser at each step (grey screen tag \"bioaccumulation: stored in fat, not broken down, so it concentrates up the chain\"); on \"thinning the eggshells\" the new aligned pair `m7-falcon-egg-normal-v1.png` crossfades to `m7-falcon-egg-thin-v1.png` (tag \"thin, cracked shell\"). The survival bars dim as the food chain writes. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "sterile-males",
+      "visualDecision": "adjust",
+      "visualReference": "the wheel returns at the left.",
+      "teachingReason": "Sterile males: In the sterile insect technique, huge numbers of males are reared, sterilised with radiation, and released.",
+      "narrationCue": "sterile insect technique",
+      "motionPurpose": "On the spoken cues: On \"huge numbers of males\" `m6-mosquito-cage-v1.png` appears at the right (tag \"reared males\"); on \"sterilised with radiation\" a small coded radiation trefoil outline (line only) pulses beside the cage and the male glyphs gain grey outlines (tag \"sterile males\"). On \"released\" coded male glyphs",
+      "motionRole": "explain",
+      "onScreenChange": "the wheel returns at the left. On \"huge numbers of males\" `m6-mosquito-cage-v1.png` appears at the right (tag \"reared males\"); on \"sterilised with radiation\" a small coded radiation trefoil outline (line only) pulses beside the cage and the male glyphs gain grey outlines (tag \"sterile males\"). On \"released\" coded male glyphs stream from the cage to the wheel. On \"lay eggs that don't hatch\" an `EggHatchRow` of ten egg glyphs writes at the \"eggs\" station: eight stay dark and unhatched (from females mated by sterile males), two hatch (tag \"most eggs don't hatch\"); a `BreakMark` lands at \"eggs\". The `PopulationRow` under the wheel thins over three steps (tag \"fewer each generation\"). On \"don't bite\" a grey tag \"males don't bite\"; on \"only affect their own species\" a grey tag \"species-specific\". On \"releases must continue\" the release stream stops and the population row refills over three steps (tag \"stop releasing: it bounces back\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "engineered-males",
+      "visualDecision": "adjust",
+      "visualReference": "on \"Genetic engineering\" a coded slim chromosome pair (bio-m6-b11's `ChromoPair` style) appears beside `m6-aedes-mosquito-v1.png` with a short amber band (tag \"an inserted gene\"; grey tag \"Module 6: recombinant DNA\").",
+      "teachingReason": "Engineered males, and gene drives: Genetic engineering does a similar job with a gene.",
+      "narrationCue": "Genetic engineering",
+      "motionPurpose": "On the spoken cues: On \"kills their female offspring\" an `OffspringRow` of eight glyphs writes: four male glyphs stay, four female glyphs fade before the \"adult\" station (tag \"daughters die before adulthood\"); a `BreakMark` lands on the wheel between \"pupae\" and \"adult\" for females only (grey screen tag \"self-limiting",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Genetic engineering\" a coded slim chromosome pair (bio-m6-b11's `ChromoPair` style) appears beside `m6-aedes-mosquito-v1.png` with a short amber band (tag \"an inserted gene\"; grey tag \"Module 6: recombinant DNA\"). On \"kills their female offspring\" an `OffspringRow` of eight glyphs writes: four male glyphs stay, four female glyphs fade before the \"adult\" station (tag \"daughters die before adulthood\"); a `BreakMark` lands on the wheel between \"pupae\" and \"adult\" for females only (grey screen tag \"self-limiting males\"). On \"Again, releases must keep going\" a small grey loop arrow \"repeat releases\" writes. On \"gene drives\" a small thumbnail of bio-m6-b11's drive panel slides in (grey tag \"Module 6: gene drive\"), its offspring row filling almost all amber. On \"hard to reverse\" a grey tag \"spreads by itself; hard to recall\"; on \"none has been released yet\" a grey dated tag \"no wild release (checked October 2026)\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "wolbachia",
+      "visualDecision": "adjust",
+      "visualReference": "on \"Wolbachia\" the new `m7-wolbachia-cell-v1.png` appears large (grey tag \"Wolbachia inside a mosquito cell, drawn far larger than real\"); gloss \"Wolbachia: a bacterium living naturally in many insects\".",
+      "teachingReason": "Wolbachia: Townsville's bacterium is Wolbachia.",
+      "narrationCue": "Wolbachia",
+      "motionPurpose": "On the spoken cues: On \"isn't genetic engineering\" a grey chip \"Wolbachia is genetic engineering\" takes a grey scribble cross (small grey reason \"no gene inserted\"). On \"much harder for dengue to multiply\" the cell shrinks and `m6-aedes-mosquito-v1.png` takes a teal dot; on the wheel the bite arrow from \"adult female",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Wolbachia\" the new `m7-wolbachia-cell-v1.png` appears large (grey tag \"Wolbachia inside a mosquito cell, drawn far larger than real\"); gloss \"Wolbachia: a bacterium living naturally in many insects\". On \"isn't genetic engineering\" a grey chip \"Wolbachia is genetic engineering\" takes a grey scribble cross (small grey reason \"no gene inserted\"). On \"much harder for dengue to multiply\" the cell shrinks and `m6-aedes-mosquito-v1.png` takes a teal dot; on the wheel the bite arrow from \"adult female bites\" greys and a teal `BreakMark` lands on the virus, not the mosquito (tag \"mosquito lives; virus blocked\"). On \"spreads by itself\" a coded two-row cross diagram frame writes beneath, two pairings only. On \"nearly all their eggs\" row 1 fills: \"infected female (teal dot) × any male\" with an `EggHatchRow` of eggs all hatching, each egg with a teal dot (tag \"passed through eggs\"); on \"whichever male they mate with\" row 1's \"any male\" label pulses. On \"uninfected female mates with an infected male\" row 2 fills: \"uninfected female × infected male\" with eggs staying dark (tag \"eggs don't hatch\"; grey screen tag \"cytoplasmic incompatibility\"). On \"out-breed the rest\" the `PopulationRow` under the wheel turns teal glyph by glyph to about nine in ten (tag \"Wolbachia spreads\"); on \"releases can stop\" the release arrow fades while the row stays teal (tag \"keeps going without releases\"). The cell gloss dims when the cross rows write. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "judge",
+      "visualDecision": "new",
+      "visualReference": "b10's coded `CriteriaTable` draws: rows \"remove water\", \"insecticides\", \"sterile or engineered males\", \"Wolbachia\"; columns \"cuts transmission?\", \"how long?\", \"cost?\", \"harms what else?\", headers writing one per cue.",
+      "teachingReason": "Judge the methods: So how do you judge these methods?",
+      "narrationCue": "Removing water / Insecticides act fast / Sterile or engineered males / Wolbachia / combine methods",
+      "motionPurpose": "On the spoken cues: On \"Removing water\" row 1 fills \"fewer mosquitoes\", \"only while kept up\", \"low\", \"very little\" with the dry bucket thumbnail, plus a grey note \"needs everyone\". On \"Insecticides act fast\" row 2 fills \"fast\", \"falls as resistance rises\", \"low to moderate\", \"other insects, food chains\" with the",
+      "motionRole": "explain",
+      "onScreenChange": "b10's coded `CriteriaTable` draws: rows \"remove water\", \"insecticides\", \"sterile or engineered males\", \"Wolbachia\"; columns \"cuts transmission?\", \"how long?\", \"cost?\", \"harms what else?\", headers writing one per cue. On \"Removing water\" row 1 fills \"fewer mosquitoes\", \"only while kept up\", \"low\", \"very little\" with the dry bucket thumbnail, plus a grey note \"needs everyone\". On \"Insecticides act fast\" row 2 fills \"fast\", \"falls as resistance rises\", \"low to moderate\", \"other insects, food chains\" with the sprayer thumbnail. On \"Sterile or engineered males\" row 3 fills \"fewer mosquitoes\", \"only while releases go on\", \"high\", \"very little\" with the cage thumbnail. On \"Wolbachia\" row 4 fills \"mosquitoes rarely pass on dengue\", \"self-sustaining\", \"high at first, then low\", \"very little\" with the teal *Aedes* thumbnail. Filled rows dim as the next fills. On \"combine methods\" all four rows brighten together and four `BreakMark`s land on the wheel thumbnail at once (tag \"combine: each covers another's gap\"). A grey chip \"insecticides are always best: they're fastest\" takes a grey scribble cross. At most three bright text items at once besides the table headers. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "one handwritten line writes on large: \"Fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on.\" Under each phrase a small thumbnail: the tipped bucket and cage under \"fewer mosquitoes\", the bed net under \"fewer bites\", the teal-dotted *Aedes* under \"rarely pass it on\".",
+      "teachingReason": "Memory: One line to keep.",
+      "narrationCue": "fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on.",
+      "motionPurpose": "On the spoken cues: Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "one handwritten line writes on large: \"Fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on.\" Under each phrase a small thumbnail: the tipped bucket and cage under \"fewer mosquitoes\", the bed net under \"fewer bites\", the teal-dotted *Aedes* under \"rarely pass it on\". Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (insecticide X)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. A town sprayed insecticide",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (insecticide X))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A town sprayed insecticide X once a year to control the *Aedes aegypti* mosquitoes that carry dengue virus. Each year, a sample of mosquitoes was caught and exposed to a standard dose of insecticide X in the laboratory.\" A small two-row table: \"Year: 2016, 2018, 2020, 2022\"; \"Mosquitoes surviving the standard dose (%): 2, 9, 38, 75\". Demand: \"Explain the trend in the data, and propose one change to the town's mosquito control program. Justify your proposal. (4 marks)\". One lined answer box. No plates, no wheel. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Survival rose / selected resistant mosquitoes / remove breeding water / the classic mistake / individuals don't adapt; the population changes",
+      "motionPurpose": "On the spoken cues: A coded small bar chart of the four survival values draws beneath it as the narration starts. On \"Survival rose\" \"2, 9, 38, 75\" underlines amber and row 1 writes \"trend: survival rose from 2% to 75%\". On \"selected resistant mosquitoes\" \"sprayed ... once a year\" underlines amber and row 2 writes",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A coded small bar chart of the four survival values draws beneath it as the narration starts. On \"Survival rose\" \"2, 9, 38, 75\" underlines amber and row 1 writes \"trend: survival rose from 2% to 75%\". On \"selected resistant mosquitoes\" \"sprayed ... once a year\" underlines amber and row 2 writes \"spraying selected resistance alleles that were already present; survivors bred; allele frequency rose each generation\". On \"remove breeding water\" \"propose one change\" underlines teal and row 3 writes \"change: remove breeding water, or use Wolbachia; neither is defeated by insecticide resistance\". Rows 1 and 2 dim as row 3 writes. On \"the classic mistake\" the chip \"the mosquitoes got used to the spray\" writes on and takes a grey scribble cross, with the small grey reason \"individuals don't adapt; the population changes\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (two towns)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. Town P releases sterile male Aedes every",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two towns))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Two towns use different methods against *Aedes aegypti*, which carries dengue virus. Town P releases sterile male *Aedes* every week for two years, then stops. Town Q releases male and female *Aedes* carrying *Wolbachia* bacteria for four months, then stops. Two years after releases end: in town P, *Aedes* numbers have returned to their original level; in town Q, about 90% of *Aedes* carry *Wolbachia* and local dengue cases remain rare.\" Demand: \"Explain the difference between the long-term outcomes in the two towns. (3 marks)\". One lined answer box. No plates, no wheel. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Sterile males leave no offspring / passes from mothers to their eggs / rarely pass on dengue / the classic mistake / the mosquitoes stay; dengue is blocked",
+      "motionPurpose": "On the spoken cues: Two columns write beneath it, \"town P\" and \"town Q\". On \"Sterile males leave no offspring\" \"sterile male\" and \"then stops\" underline amber and column P fills \"sterile males leave no offspring; when releases stop, survivors breed back\" with a small population row refilling. On \"passes from mothers",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Two columns write beneath it, \"town P\" and \"town Q\". On \"Sterile males leave no offspring\" \"sterile male\" and \"then stops\" underline amber and column P fills \"sterile males leave no offspring; when releases stop, survivors breed back\" with a small population row refilling. On \"passes from mothers to their eggs\" \"carrying *Wolbachia*\" and \"about 90%\" underline teal and column Q fills \"passed to eggs; uninfected females mated by infected males: eggs don't hatch; Wolbachia stays\" with a small row staying teal. On \"rarely pass on dengue\" \"local dengue cases remain rare\" underlines teal and column Q adds \"infected *Aedes* rarely transmit dengue\". On \"the classic mistake\" the chip \"Wolbachia kills the mosquitoes\" writes on and takes a grey scribble cross, with the small grey reason \"the mosquitoes stay; dengue is blocked\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the wheel returns small at the left with its break marks; three step chips write on, one per cue: \"follow the life cycle\", \"find the step it attacks\", \"weigh how long it lasts against harm\".",
+      "teachingReason": "Decision rule and handoff: So for any vector question, follow the life cycle, find the step a method attacks, and weigh how long it lasts against what it might harm.",
+      "narrationCue": "So for any vector question, follow the life",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: what limits malaria or dengue control?\" (small grey tag; `m5x-anopheles-mosquito-v1.png` and `m6-aedes-mosquito-v1.png` thumbnails beside it). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the wheel returns small at the left with its break marks; three step chips write on, one per cue: \"follow the life cycle\", \"find the step it attacks\", \"weigh how long it lasts against harm\". A \"Next\" chip slides in at the lower right: \"Next: what limits malaria or dengue control?\" (small grey tag; `m5x-anopheles-mosquito-v1.png` and `m6-aedes-mosquito-v1.png` thumbnails beside it). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b12-learning-review.md",
+      "sha256": "dacc91fffada89464e499ce0b2b1a94dc0621df0f2b89a7a5ae45f1bdd56e67c"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b12-claude-science-check.md",
+      "sha256": "be43303c11155f6cd96e9a570b5c8b750cf43d273dad65e338f4be2a4c7daffc"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

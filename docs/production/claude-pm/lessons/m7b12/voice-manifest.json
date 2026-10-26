@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B12-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b12/lesson.json",
+  "lessonSha256": "9a55a14a4347e31596527ec2fcd5b58e789607a903ddb5d93d2488c79eede0ec",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b12/lesson.production-brief.json",
+    "sha256": "eda623dd01aafad02f4e558bcbdd006d695e3fca245879f41b19b1fedde03dce"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the 1950s, the world sprayed DDT to wipe out malaria, and within years, many mosquitoes could survive it. In 2014, Townsville tried something that sounds backwards. It released more mosquitoes, carrying a bacterium. After the bacterium spread through the city's mosquitoes, local dengue stayed rare for about ten years. So how does controlling a vector cut infection, and why did adding mosquitoes help?",
+      "hash": "a8104f271723",
+      "textSha256": "a8104f271723dbec9e63207145e27f9cc5d0f3c436aeba304dd7585335e66a22",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/hook.a8104f271723.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/hook.a8104f271723.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/hook.a8104f271723.generation.json",
+      "plannedRequestSha256": "b36016e2590c9afe80d3f248b7c8d54015e62781441cb0debcac09e5f75f53e2"
+    },
+    {
+      "id": "three-ways",
+      "parentSceneId": "three-ways",
+      "text": "A vector is a living carrier that takes a pathogen between hosts. Dengue is a virus carried mainly by the Aedes aegypti mosquito. A mosquito passes dengue on only if it bites an infected person, survives while the virus multiplies, and then bites someone else. So there are three ways to cut infection: fewer mosquitoes, fewer bites, or mosquitoes that rarely pass the virus on.",
+      "hash": "0cde387e0197",
+      "textSha256": "0cde387e0197006f15ae426ecbb02678e516bf3dd36285b4e5ebe7f9933e7f15",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/three-ways.0cde387e0197.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/three-ways.0cde387e0197.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/three-ways.0cde387e0197.generation.json",
+      "plannedRequestSha256": "9db4a6640053b7c5c2b999f45d68fcfaf69a2d339d938adda7cb85f39fd70e05"
+    },
+    {
+      "id": "life-cycle",
+      "parentSceneId": "life-cycle",
+      "text": "Start with the life cycle. A female Aedes lays her eggs on the inside wall of a container, just above the water, in a bucket or an old tyre. When rain floods them, they hatch into larvae, wrigglers that live in the water. Each larva becomes a pupa, and about a week after hatching, an adult flies off. Only females bite, because they need blood to make eggs.",
+      "hash": "1599d38ce667",
+      "textSha256": "1599d38ce667405e3350817056279f5af18de188dd8a00ef0701decc75acf47c",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/life-cycle.1599d38ce667.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/life-cycle.1599d38ce667.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/life-cycle.1599d38ce667.generation.json",
+      "plannedRequestSha256": "13c2751e196c81eb526c4a5e1afa58b733aaee0b98ce1e581f1425f18eca3023"
+    },
+    {
+      "id": "remove-water",
+      "parentSceneId": "remove-water",
+      "text": "So the simplest control is to take away the water. Public health campaigns ask households to tip out containers, screen rainwater tanks and clear blocked gutters. Without water, the eggs don't hatch, so there are no larvae and no new adults. Changing places so a vector can't breed there is environmental management. It's cheap and uses no chemicals, but it only works if nearly every household keeps doing it.",
+      "hash": "45a3b53481db",
+      "textSha256": "45a3b53481dbbff087b0e2098fc23b7b7b79ce9e63110bef3e758bb48db2e526",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/remove-water.45a3b53481db.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/remove-water.45a3b53481db.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/remove-water.45a3b53481db.generation.json",
+      "plannedRequestSha256": "0a0bf3c55601b67d0f5af278604568f04cacf11abe55c0000708a2ff7cbfcab3"
+    },
+    {
+      "id": "pesticides",
+      "parentSceneId": "pesticides",
+      "text": "Where water can't be emptied, a pesticide, a chemical that kills pests, can kill the larvae, and adults can be sprayed too. Insecticides like DDT and the pyrethroids attack insect nerves. And the vector's habits decide the method. Malaria's Anopheles mosquitoes mostly bite at night, so insecticide-treated bed nets protect sleepers. Aedes bites by day, so in dengue outbreaks, Queensland teams spray the dark indoor corners where adults rest.",
+      "hash": "0d2725205f36",
+      "textSha256": "0d2725205f360a929fedc62c2d399f83e8354f9b5e24f5cbf7607df0418ccc63",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/pesticides.0d2725205f36.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/pesticides.0d2725205f36.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/pesticides.0d2725205f36.generation.json",
+      "plannedRequestSha256": "352d991af29a1964c9cef2da2392bf74381a44d60c108156bdc46798b9a7647c"
+    },
+    {
+      "id": "resistance-harm",
+      "parentSceneId": "resistance-harm",
+      "text": "But insecticides select resistance, like antibiotics. Mosquitoes that already carry resistance alleles survive the spray and breed, so each generation holds more of them. DDT resistance helped end the first attempt to eradicate malaria, in 1969, and Anopheles resistance to pyrethroids is now widespread. Sprays also kill other insects, and DDT builds up along food chains, thinning the eggshells of birds of prey.",
+      "hash": "c14641da06a4",
+      "textSha256": "c14641da06a4cc370c267348fa37e56028f937714e47b766d715bd9fc6d9b6e7",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/resistance-harm.c14641da06a4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/resistance-harm.c14641da06a4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/resistance-harm.c14641da06a4.generation.json",
+      "plannedRequestSha256": "9329b15d57c269e9674d8d9d34d8774d1a428edf21c950015e17b7e3401cd732"
+    },
+    {
+      "id": "sterile-males",
+      "parentSceneId": "sterile-males",
+      "text": "In the sterile insect technique, huge numbers of males are reared, sterilised with radiation, and released. Wild females that mate with them lay eggs that don't hatch. Male mosquitoes don't bite, and the released males only affect their own species. But they leave no offspring, so releases must continue, or the population bounces back.",
+      "hash": "c5d96d3099aa",
+      "textSha256": "c5d96d3099aa2da87a5f348f40a38640fb72988e180b2736598878efbd587794",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/sterile-males.c5d96d3099aa.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/sterile-males.c5d96d3099aa.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/sterile-males.c5d96d3099aa.generation.json",
+      "plannedRequestSha256": "f76251b1008c845037e08aec6a46167784615152c8d7df30fc0cf8966fd3a540"
+    },
+    {
+      "id": "engineered-males",
+      "parentSceneId": "engineered-males",
+      "text": "Genetic engineering does a similar job with a gene. Some male Aedes carry an inserted gene that kills their female offspring before adulthood, so fewer biting females emerge. Again, releases must keep going. You've also met gene drives, genes that copy themselves into almost every offspring. A drive could spread through a wild population by itself, but it would be hard to reverse, and none has been released yet.",
+      "hash": "68630002f75e",
+      "textSha256": "68630002f75e3d306acb1c543c68154bfe9ae3d7fa1d1a7acceed7c9cf0ae390",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/engineered-males.68630002f75e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/engineered-males.68630002f75e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/engineered-males.68630002f75e.generation.json",
+      "plannedRequestSha256": "08d0b4676b6d6e3a769b8885e33f6ff7b6f7761b2fa9d039ec3fb357ffa6edaf"
+    },
+    {
+      "id": "wolbachia",
+      "parentSceneId": "wolbachia",
+      "text": "Townsville's bacterium is Wolbachia. It isn't genetic engineering. No gene is inserted, and Wolbachia lives naturally in many insects. Inside Aedes, it makes it much harder for dengue to multiply, so the mosquito rarely passes the virus on. And it spreads by itself. Infected females pass it to nearly all their eggs, and their eggs hatch whichever male they mate with. But when an uninfected female mates with an infected male, her eggs don't hatch. So infected females out-breed the rest, and releases can stop.",
+      "hash": "e231700cd81b",
+      "textSha256": "e231700cd81b169094a315e29aca660d0091286481947aa8aa545480b42f4cb4",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/wolbachia.e231700cd81b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/wolbachia.e231700cd81b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/wolbachia.e231700cd81b.generation.json",
+      "plannedRequestSha256": "3fead33e5d5dee3a61d19663ddc7fb4a08b4b69a333ca04fdbed1f927b4cf32a"
+    },
+    {
+      "id": "judge",
+      "parentSceneId": "judge",
+      "text": "So how do you judge these methods? Ask how much they cut transmission, how long the effect lasts, what they cost, and what else they harm. Removing water is cheap and safe, but needs everyone. Insecticides act fast, but select resistance and harm other species. Sterile or engineered males are precise, but releases have to keep going. Wolbachia keeps working after releases end. That's why programs combine methods.",
+      "hash": "f07fc14e3f41",
+      "textSha256": "f07fc14e3f41a713aa9d154f352faa4f5a14412a18c4c32508795cac8d8f40fe",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/judge.f07fc14e3f41.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/judge.f07fc14e3f41.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/judge.f07fc14e3f41.generation.json",
+      "plannedRequestSha256": "3e730778f26824b2846bda306ab9fd0364cef1d99d901991cd579644ba226d94"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "One line to keep. Cut vector-borne disease three ways: fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on.",
+      "hash": "f30d1520c262",
+      "textSha256": "f30d1520c2625185267cf5ea76dc47a483c4fc552320b419431c5f04179b2fe5",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/memory.f30d1520c262.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/memory.f30d1520c262.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/memory.f30d1520c262.generation.json",
+      "plannedRequestSha256": "f3ce2f32e5573bf1b719d4c84635ff71efc5f5d758112d220ceefcc1e0d41d17"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. A town sprayed insecticide X every year. Each year, mosquitoes were caught and exposed to a standard dose. Two per cent survived in 2016, nine per cent in 2018, thirty-eight per cent in 2020, and seventy-five per cent in 2022. Explain this trend, and propose one change to the town's mosquito control. Pause here to answer.",
+      "hash": "5022df45fb92",
+      "textSha256": "5022df45fb92004a9e2d34e49da5fad30fc5b301d8405c3256d32a39ed7ed7a1",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/attempt.5022df45fb92.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/attempt.5022df45fb92.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/attempt.5022df45fb92.generation.json",
+      "plannedRequestSha256": "95adb6cd759a43c8c85dbe1f19e0227e7f98c48c5e118bc68492f9384e277a54"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Survival rose because spraying selected resistant mosquitoes. A few already carried resistance alleles. They survived, bred and passed the alleles on, so each generation held a larger share. One change: remove breeding water, or switch to a method insecticide resistance can't defeat, such as Wolbachia. Saying the mosquitoes got used to the spray is the classic mistake.",
+      "hash": "feeb2efe7eea",
+      "textSha256": "feeb2efe7eeabc8ffe53561d50f5b3fe9ddf59987890b9de90c95e4333eaaf3d",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/feedback-one.feeb2efe7eea.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/feedback-one.feeb2efe7eea.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/feedback-one.feeb2efe7eea.generation.json",
+      "plannedRequestSha256": "f6051404a15fad4e55b263a08f7ae6fe4e5e27a45474815a47fa4a13a82af1f2"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Town P releases sterile male Aedes every week for two years, then stops. Town Q releases Aedes carrying Wolbachia for four months, then stops. Two years later, Aedes numbers in town P are back to normal. In town Q, most Aedes still carry Wolbachia, and local dengue stays rare. Explain the difference between the two towns. Pause here to answer.",
+      "hash": "632fb3920c42",
+      "textSha256": "632fb3920c42cf9ddb6811821addb34e26d6f5148d45f9ac9c18f870df274f36",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/attempt-two.632fb3920c42.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/attempt-two.632fb3920c42.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/attempt-two.632fb3920c42.generation.json",
+      "plannedRequestSha256": "8e3386f492e016bff0fdd700c398d73113bb6da65f95f52dd1d9f58003596700"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Sterile males leave no offspring, so when releases stopped, nothing kept the effect going, and the survivors bred back. Wolbachia passes from mothers to their eggs, and uninfected females mated by infected males lay eggs that don't hatch, so it stays in the population. And those mosquitoes rarely pass on dengue. Saying Wolbachia kills the mosquitoes is the classic mistake.",
+      "hash": "9b4b5e268048",
+      "textSha256": "9b4b5e26804826ff3d4c77a870ab26a1f9c9902fff50a6339b6fb95ea4f3879a",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/feedback-two.9b4b5e268048.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/feedback-two.9b4b5e268048.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/feedback-two.9b4b5e268048.generation.json",
+      "plannedRequestSha256": "1ab2107c1bf3e951701544f33c373a54ae5afe54793fbb4e512a27b0521513ca"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any vector question, follow the life cycle, find the step a method attacks, and weigh how long it lasts against what it might harm. Next, what limits malaria and dengue control in practice.",
+      "hash": "070ffa6c2692",
+      "textSha256": "070ffa6c269223d2643f907e34de600501b352e72b60fa5693e37fa87c46f5ec",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/decision-rule.070ffa6c2692.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/decision-rule.070ffa6c2692.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/decision-rule.070ffa6c2692.generation.json",
+      "plannedRequestSha256": "f380fbd9ea36000cd41816293b9404f4c71898b0cb42ed88325a48897a693eb8"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B12-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

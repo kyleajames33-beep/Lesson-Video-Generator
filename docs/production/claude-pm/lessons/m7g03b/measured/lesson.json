@@ -1,0 +1,7241 @@
+{
+  "title": "Immune Response Practice: Sequence, Antibody Graphs, Active vs Passive",
+  "subtitle": "When an immunity question asks you to put the response in order, read an antibody graph, or name someone's immunity, how do you work it out step by step?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 14,
+  "lessonIntent": "ordering eight events from a pathogen's entry through the innate response (barrier, histamine and leaky vessels, neutrophils, dendritic cell to lymph node) to the adaptive response (B cells that fit bind the antigen, helper T cell go-ahead, clone of plasma and memory cells, antibodies bind) and explaining why antibody takes about a week (few fitting B cells must meet the antigen, get the go-ahead and divide many times; innate defences hold the bacteria meanwhile); reading a log-scale antibody graph (lag, peak values, a protective level) and comparing two doses with data (about fifty times higher, sooner, above the protective line), then explaining the difference by memory cells from the first dose; classifying a rabies antibody injection as artificial passive and a rabies vaccine as artificial active immunity, and explaining why both are given (immediate cover while the slower active response builds lasting protection, possible because symptoms take weeks or months).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 920,
+      "voiceover": {
+        "text": "Immunity questions often ask you to do one of three things. Put the response in order, from the moment a pathogen gets in to the moment antibodies appear. Read a graph of antibody levels. Or name the immunity someone has, active or passive, natural or artificial. Each one hides a trap that costs marks. Here are three HSC-style questions, one of each. Pause and try each one, then we'll work through it together.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/hook.c2cd22afe582.mp3",
+        "startFrame": 0,
+        "endFrame": 860
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Immunity",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " often",
+          "startMs": 1200,
+          "endMs": 1520,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 1640,
+          "endMs": 1760,
+          "timestampMs": 1700,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 1840,
+          "endMs": 1920,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 2080,
+          "endMs": 2240,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 2320,
+          "endMs": 2400,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 2480,
+          "endMs": 2640,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 2720,
+          "endMs": 2960,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " things.",
+          "startMs": 3040,
+          "endMs": 3800,
+          "timestampMs": 3420,
+          "confidence": null
+        },
+        {
+          "text": " Put",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4280,
+          "endMs": 4320,
+          "timestampMs": 4300,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 4560,
+          "endMs": 4800,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " order,",
+          "startMs": 5040,
+          "endMs": 5760,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 5840,
+          "endMs": 5920,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5960,
+          "endMs": 6000,
+          "timestampMs": 5980,
+          "confidence": null
+        },
+        {
+          "text": " moment",
+          "startMs": 6080,
+          "endMs": 6320,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " pathogen",
+          "startMs": 6600,
+          "endMs": 6960,
+          "timestampMs": 6780,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 7040,
+          "endMs": 7280,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 7360,
+          "endMs": 7600,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7920,
+          "endMs": 7960,
+          "timestampMs": 7940,
+          "confidence": null
+        },
+        {
+          "text": " moment",
+          "startMs": 8000,
+          "endMs": 8320,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 8400,
+          "endMs": 8960,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " appear.",
+          "startMs": 9160,
+          "endMs": 9680,
+          "timestampMs": 9420,
+          "confidence": null
+        },
+        {
+          "text": " Read",
+          "startMs": 10000,
+          "endMs": 10160,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10240,
+          "endMs": 10280,
+          "timestampMs": 10260,
+          "confidence": null
+        },
+        {
+          "text": " graph",
+          "startMs": 10320,
+          "endMs": 10640,
+          "timestampMs": 10480,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " antibody",
+          "startMs": 10880,
+          "endMs": 11360,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " levels.",
+          "startMs": 11440,
+          "endMs": 12120,
+          "timestampMs": 11780,
+          "confidence": null
+        },
+        {
+          "text": " Or",
+          "startMs": 12320,
+          "endMs": 12640,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " name",
+          "startMs": 13120,
+          "endMs": 13360,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13440,
+          "endMs": 13480,
+          "timestampMs": 13460,
+          "confidence": null
+        },
+        {
+          "text": " immunity",
+          "startMs": 13520,
+          "endMs": 14080,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " someone",
+          "startMs": 14160,
+          "endMs": 14480,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " has,",
+          "startMs": 14560,
+          "endMs": 15280,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " active",
+          "startMs": 15480,
+          "endMs": 15680,
+          "timestampMs": 15580,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 15720,
+          "endMs": 15760,
+          "timestampMs": 15740,
+          "confidence": null
+        },
+        {
+          "text": " passive,",
+          "startMs": 15840,
+          "endMs": 16560,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " natural",
+          "startMs": 16640,
+          "endMs": 17120,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 17200,
+          "endMs": 17280,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " artificial.",
+          "startMs": 17360,
+          "endMs": 18000,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " Each",
+          "startMs": 18560,
+          "endMs": 18800,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 18880,
+          "endMs": 19120,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " hides",
+          "startMs": 19200,
+          "endMs": 19440,
+          "timestampMs": 19320,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " trap",
+          "startMs": 19800,
+          "endMs": 20000,
+          "timestampMs": 19900,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 20080,
+          "endMs": 20240,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " costs",
+          "startMs": 20400,
+          "endMs": 20640,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " marks.",
+          "startMs": 20720,
+          "endMs": 21680,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " Here",
+          "startMs": 21760,
+          "endMs": 21920,
+          "timestampMs": 21840,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 22240,
+          "endMs": 22400,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " HSC-style",
+          "startMs": 22560,
+          "endMs": 23440,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " questions,",
+          "startMs": 23520,
+          "endMs": 24320,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 24400,
+          "endMs": 24480,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 24520,
+          "endMs": 24560,
+          "timestampMs": 24540,
+          "confidence": null
+        },
+        {
+          "text": " each.",
+          "startMs": 24640,
+          "endMs": 25240,
+          "timestampMs": 24940,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 25520,
+          "endMs": 25920,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 26000,
+          "endMs": 26080,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " try",
+          "startMs": 26200,
+          "endMs": 26320,
+          "timestampMs": 26260,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 26400,
+          "endMs": 26560,
+          "timestampMs": 26480,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 26640,
+          "endMs": 27120,
+          "timestampMs": 26880,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 27200,
+          "endMs": 27360,
+          "timestampMs": 27280,
+          "confidence": null
+        },
+        {
+          "text": " we'll",
+          "startMs": 27440,
+          "endMs": 27520,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 27600,
+          "endMs": 27760,
+          "timestampMs": 27680,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 27840,
+          "endMs": 27920,
+          "timestampMs": 27880,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 27960,
+          "endMs": 28000,
+          "timestampMs": 27980,
+          "confidence": null
+        },
+        {
+          "text": " together.",
+          "startMs": 28080,
+          "endMs": 28640,
+          "timestampMs": 28360,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 968,
+      "voiceover": {
+        "text": "Question one. Pruning secateurs nick a gardener's thumb, and soil bacteria get into the cut. Eight events are listed out of order. Put them in order, from entry to antibody production. Then explain why antibodies against these bacteria aren't found in the blood until about a week after the cut. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-question.470ab12eb294.mp3",
+        "startFrame": 0,
+        "endFrame": 632
+      },
+      "responseHold": {
+        "startFrame": 644,
+        "endFrame": 944
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 375,
+          "timestampMs": 187.5,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 400,
+          "endMs": 800,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " Pruning",
+          "startMs": 880,
+          "endMs": 1712,
+          "timestampMs": 1296,
+          "confidence": null
+        },
+        {
+          "text": " secateurs",
+          "startMs": 1760,
+          "endMs": 2480,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " nick",
+          "startMs": 2560,
+          "endMs": 2800,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2840,
+          "endMs": 2880,
+          "timestampMs": 2860,
+          "confidence": null
+        },
+        {
+          "text": " gardener's",
+          "startMs": 3000,
+          "endMs": 3360,
+          "timestampMs": 3180,
+          "confidence": null
+        },
+        {
+          "text": " thumb,",
+          "startMs": 3440,
+          "endMs": 4000,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 4080,
+          "endMs": 4160,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " soil",
+          "startMs": 4240,
+          "endMs": 4560,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " bacteria",
+          "startMs": 4600,
+          "endMs": 5200,
+          "timestampMs": 4900,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 5280,
+          "endMs": 5360,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 5440,
+          "endMs": 5600,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5680,
+          "endMs": 5760,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " cut.",
+          "startMs": 5840,
+          "endMs": 6480,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " Eight",
+          "startMs": 6800,
+          "endMs": 6960,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " events",
+          "startMs": 7160,
+          "endMs": 7360,
+          "timestampMs": 7260,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 7400,
+          "endMs": 7440,
+          "timestampMs": 7420,
+          "confidence": null
+        },
+        {
+          "text": " listed",
+          "startMs": 7520,
+          "endMs": 7840,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 8000,
+          "endMs": 8160,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 8200,
+          "endMs": 8240,
+          "timestampMs": 8220,
+          "confidence": null
+        },
+        {
+          "text": " order.",
+          "startMs": 8320,
+          "endMs": 8880,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " Put",
+          "startMs": 9120,
+          "endMs": 9280,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 9520,
+          "endMs": 9680,
+          "timestampMs": 9600,
+          "confidence": null
+        },
+        {
+          "text": " order,",
+          "startMs": 9840,
+          "endMs": 10240,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 10360,
+          "endMs": 10480,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " entry",
+          "startMs": 10560,
+          "endMs": 10960,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " antibody",
+          "startMs": 11200,
+          "endMs": 11680,
+          "timestampMs": 11440,
+          "confidence": null
+        },
+        {
+          "text": " production.",
+          "startMs": 11760,
+          "endMs": 12520,
+          "timestampMs": 12140,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 12720,
+          "endMs": 13040,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 13280,
+          "endMs": 13760,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 13880,
+          "endMs": 14000,
+          "timestampMs": 13940,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 14080,
+          "endMs": 14720,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " against",
+          "startMs": 14920,
+          "endMs": 15120,
+          "timestampMs": 15020,
+          "confidence": null
+        },
+        {
+          "text": " these",
+          "startMs": 15240,
+          "endMs": 15360,
+          "timestampMs": 15300,
+          "confidence": null
+        },
+        {
+          "text": " bacteria",
+          "startMs": 15400,
+          "endMs": 16000,
+          "timestampMs": 15700,
+          "confidence": null
+        },
+        {
+          "text": " aren't",
+          "startMs": 16160,
+          "endMs": 16480,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " found",
+          "startMs": 16600,
+          "endMs": 16720,
+          "timestampMs": 16660,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 16760,
+          "endMs": 16800,
+          "timestampMs": 16780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16880,
+          "endMs": 16920,
+          "timestampMs": 16900,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 16960,
+          "endMs": 17280,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " until",
+          "startMs": 17360,
+          "endMs": 17600,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 17680,
+          "endMs": 17840,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 17920,
+          "endMs": 18080,
+          "timestampMs": 18000,
+          "confidence": null
+        },
+        {
+          "text": " week",
+          "startMs": 18240,
+          "endMs": 18400,
+          "timestampMs": 18320,
+          "confidence": null
+        },
+        {
+          "text": " after",
+          "startMs": 18480,
+          "endMs": 18720,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18760,
+          "endMs": 18800,
+          "timestampMs": 18780,
+          "confidence": null
+        },
+        {
+          "text": " cut.",
+          "startMs": 18880,
+          "endMs": 19480,
+          "timestampMs": 19180,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 19760,
+          "endMs": 20000,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 20080,
+          "endMs": 20240,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20320,
+          "endMs": 20400,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 20480,
+          "endMs": 21040,
+          "timestampMs": 20760,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 944,
+        "responseHoldStart": 644,
+        "pausePrompt": 644
+      }
+    },
+    {
+      "id": "q1-innate",
+      "type": "concept",
+      "durationInFrames": 1097,
+      "voiceover": {
+        "text": "Start where the pathogen starts. C, the bacteria get past the skin, the first barrier. Then come the innate defences, which are always ready. E, damaged cells and mast cells release chemicals such as histamine, so small vessels widen and leak. That's a chemical change causing physical ones, redness and swelling. G, neutrophils leave the blood and engulf bacteria. And F, a dendritic cell carries pieces of the bacteria to a lymph node. That's block, alarm, eat, alert.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-innate.69b5359e0e97.mp3",
+        "startFrame": 0,
+        "endFrame": 1037
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Start",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 680,
+          "endMs": 720,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " pathogen",
+          "startMs": 880,
+          "endMs": 1360,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " starts.",
+          "startMs": 1440,
+          "endMs": 2000,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " C,",
+          "startMs": 2560,
+          "endMs": 3160,
+          "timestampMs": 2860,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3360,
+          "endMs": 3400,
+          "timestampMs": 3380,
+          "confidence": null
+        },
+        {
+          "text": " bacteria",
+          "startMs": 3440,
+          "endMs": 3920,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 4000,
+          "endMs": 4160,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " past",
+          "startMs": 4240,
+          "endMs": 4480,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " skin,",
+          "startMs": 4720,
+          "endMs": 5360,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5400,
+          "endMs": 5440,
+          "timestampMs": 5420,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 5520,
+          "endMs": 5760,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " barrier.",
+          "startMs": 5840,
+          "endMs": 6480,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " come",
+          "startMs": 6960,
+          "endMs": 7120,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7200,
+          "endMs": 7280,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " innate",
+          "startMs": 7400,
+          "endMs": 7600,
+          "timestampMs": 7500,
+          "confidence": null
+        },
+        {
+          "text": " defences,",
+          "startMs": 7680,
+          "endMs": 8400,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 8680,
+          "endMs": 8800,
+          "timestampMs": 8740,
+          "confidence": null
+        },
+        {
+          "text": " always",
+          "startMs": 9000,
+          "endMs": 9200,
+          "timestampMs": 9100,
+          "confidence": null
+        },
+        {
+          "text": " ready.",
+          "startMs": 9280,
+          "endMs": 9600,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " E,",
+          "startMs": 10160,
+          "endMs": 10560,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " damaged",
+          "startMs": 10960,
+          "endMs": 11360,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 11440,
+          "endMs": 11840,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11920,
+          "endMs": 12000,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " mast",
+          "startMs": 12080,
+          "endMs": 12480,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 12680,
+          "endMs": 12880,
+          "timestampMs": 12780,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 12960,
+          "endMs": 13280,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " chemicals",
+          "startMs": 13360,
+          "endMs": 13840,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " such",
+          "startMs": 13920,
+          "endMs": 14080,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " histamine,",
+          "startMs": 14360,
+          "endMs": 15120,
+          "timestampMs": 14740,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 15200,
+          "endMs": 15280,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " small",
+          "startMs": 15360,
+          "endMs": 15680,
+          "timestampMs": 15520,
+          "confidence": null
+        },
+        {
+          "text": " vessels",
+          "startMs": 15760,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " widen",
+          "startMs": 16239.999999999998,
+          "endMs": 16720,
+          "timestampMs": 16480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " leak.",
+          "startMs": 16960,
+          "endMs": 17360,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 17760,
+          "endMs": 17920,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 17960,
+          "endMs": 18000,
+          "timestampMs": 17980,
+          "confidence": null
+        },
+        {
+          "text": " chemical",
+          "startMs": 18080,
+          "endMs": 18480,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 18560,
+          "endMs": 18880,
+          "timestampMs": 18720,
+          "confidence": null
+        },
+        {
+          "text": " causing",
+          "startMs": 18960,
+          "endMs": 19280,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " physical",
+          "startMs": 19360,
+          "endMs": 19760,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " ones,",
+          "startMs": 19840,
+          "endMs": 20480,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " redness",
+          "startMs": 20560,
+          "endMs": 21040,
+          "timestampMs": 20800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " swelling.",
+          "startMs": 21360,
+          "endMs": 21840,
+          "timestampMs": 21600,
+          "confidence": null
+        },
+        {
+          "text": " G,",
+          "startMs": 22400,
+          "endMs": 23120,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " neutrophils",
+          "startMs": 23200,
+          "endMs": 23840,
+          "timestampMs": 23520,
+          "confidence": null
+        },
+        {
+          "text": " leave",
+          "startMs": 23920,
+          "endMs": 24160,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24200,
+          "endMs": 24240,
+          "timestampMs": 24220,
+          "confidence": null
+        },
+        {
+          "text": " blood",
+          "startMs": 24320,
+          "endMs": 24640,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24720,
+          "endMs": 24800,
+          "timestampMs": 24760,
+          "confidence": null
+        },
+        {
+          "text": " engulf",
+          "startMs": 24920,
+          "endMs": 25280,
+          "timestampMs": 25100,
+          "confidence": null
+        },
+        {
+          "text": " bacteria.",
+          "startMs": 25360,
+          "endMs": 26080,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 26480,
+          "endMs": 26640,
+          "timestampMs": 26560,
+          "confidence": null
+        },
+        {
+          "text": " F,",
+          "startMs": 26800,
+          "endMs": 27280,
+          "timestampMs": 27040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 27440,
+          "endMs": 27520,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " dendritic",
+          "startMs": 27560,
+          "endMs": 28080,
+          "timestampMs": 27820,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 28160,
+          "endMs": 28400,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " carries",
+          "startMs": 28480,
+          "endMs": 28880,
+          "timestampMs": 28680,
+          "confidence": null
+        },
+        {
+          "text": " pieces",
+          "startMs": 29040,
+          "endMs": 29200,
+          "timestampMs": 29120,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 29280,
+          "endMs": 29360,
+          "timestampMs": 29320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29400,
+          "endMs": 29440,
+          "timestampMs": 29420,
+          "confidence": null
+        },
+        {
+          "text": " bacteria",
+          "startMs": 29520,
+          "endMs": 30000,
+          "timestampMs": 29760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 30080,
+          "endMs": 30160,
+          "timestampMs": 30120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 30240,
+          "endMs": 30280,
+          "timestampMs": 30260,
+          "confidence": null
+        },
+        {
+          "text": " lymph",
+          "startMs": 30320,
+          "endMs": 30560,
+          "timestampMs": 30440,
+          "confidence": null
+        },
+        {
+          "text": " node.",
+          "startMs": 30640,
+          "endMs": 30960,
+          "timestampMs": 30800,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 31360,
+          "endMs": 31680,
+          "timestampMs": 31520,
+          "confidence": null
+        },
+        {
+          "text": " block,",
+          "startMs": 31840,
+          "endMs": 32400,
+          "timestampMs": 32120,
+          "confidence": null
+        },
+        {
+          "text": " alarm,",
+          "startMs": 32680,
+          "endMs": 33280,
+          "timestampMs": 32980,
+          "confidence": null
+        },
+        {
+          "text": " eat,",
+          "startMs": 33440,
+          "endMs": 33840,
+          "timestampMs": 33640,
+          "confidence": null
+        },
+        {
+          "text": " alert.",
+          "startMs": 34080,
+          "endMs": 34560,
+          "timestampMs": 34320,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-adaptive",
+      "type": "concept",
+      "durationInFrames": 1169,
+      "voiceover": {
+        "text": "Now the adaptive response, in the lymph node. A, the few B cells whose receptors already fit an antigen on the bacteria bind it. D, a helper T cell, already switched on by the dendritic cell, gives them the go-ahead. H, they divide into a clone, and most become plasma cells, while some become memory cells. B, plasma cells release antibodies, which bind the bacteria. So the order is C, E, G, F, A, D, H, B. Notice that the dendritic cell is the bridge between the two halves.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-adaptive.f44727111e19.mp3",
+        "startFrame": 0,
+        "endFrame": 1109
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 200,
+          "timestampMs": 100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 240,
+          "endMs": 373,
+          "timestampMs": 306.5,
+          "confidence": null
+        },
+        {
+          "text": " adaptive",
+          "startMs": 400,
+          "endMs": 925,
+          "timestampMs": 662.5,
+          "confidence": null
+        },
+        {
+          "text": " response,",
+          "startMs": 960,
+          "endMs": 1920,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2000,
+          "endMs": 2080,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2160,
+          "endMs": 2200,
+          "timestampMs": 2180,
+          "confidence": null
+        },
+        {
+          "text": " lymph",
+          "startMs": 2240,
+          "endMs": 2480,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " node.",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " A,",
+          "startMs": 3360,
+          "endMs": 3680,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 4320,
+          "endMs": 4560,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 4640,
+          "endMs": 4800,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 4880,
+          "endMs": 5200,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " whose",
+          "startMs": 5280,
+          "endMs": 5440,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " receptors",
+          "startMs": 5520,
+          "endMs": 6080,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 6160,
+          "endMs": 6560,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " fit",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 6920,
+          "endMs": 6960,
+          "timestampMs": 6940,
+          "confidence": null
+        },
+        {
+          "text": " antigen",
+          "startMs": 7040,
+          "endMs": 7440,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 7480,
+          "endMs": 7520,
+          "timestampMs": 7500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7600,
+          "endMs": 7640,
+          "timestampMs": 7620,
+          "confidence": null
+        },
+        {
+          "text": " bacteria",
+          "startMs": 7680,
+          "endMs": 8320,
+          "timestampMs": 8000,
+          "confidence": null
+        },
+        {
+          "text": " bind",
+          "startMs": 8560,
+          "endMs": 8800,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 8880,
+          "endMs": 9360,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " D,",
+          "startMs": 9680,
+          "endMs": 10320,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " helper",
+          "startMs": 10640,
+          "endMs": 10800,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " T",
+          "startMs": 10880,
+          "endMs": 11040,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " cell,",
+          "startMs": 11120,
+          "endMs": 11680,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 11880,
+          "endMs": 12080,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " switched",
+          "startMs": 12160,
+          "endMs": 12480,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12840,
+          "endMs": 12880,
+          "timestampMs": 12860,
+          "confidence": null
+        },
+        {
+          "text": " dendritic",
+          "startMs": 12960,
+          "endMs": 13440,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " cell,",
+          "startMs": 13520,
+          "endMs": 14000,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 14040,
+          "endMs": 14240,
+          "timestampMs": 14140,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14440,
+          "endMs": 14480,
+          "timestampMs": 14460,
+          "confidence": null
+        },
+        {
+          "text": " go-ahead.",
+          "startMs": 14560,
+          "endMs": 15120,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " H,",
+          "startMs": 15600,
+          "endMs": 16320,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 16400,
+          "endMs": 16480,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " divide",
+          "startMs": 16560,
+          "endMs": 16880,
+          "timestampMs": 16720,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 16960,
+          "endMs": 17120,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 17200,
+          "endMs": 17280,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " clone,",
+          "startMs": 17360,
+          "endMs": 17920,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18000,
+          "endMs": 18080,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 18160,
+          "endMs": 18400,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " become",
+          "startMs": 18480,
+          "endMs": 18720,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " plasma",
+          "startMs": 18800,
+          "endMs": 19200,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " cells,",
+          "startMs": 19280,
+          "endMs": 19760,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " while",
+          "startMs": 19840,
+          "endMs": 19920,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 20080,
+          "endMs": 20320,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " become",
+          "startMs": 20400,
+          "endMs": 20640,
+          "timestampMs": 20520,
+          "confidence": null
+        },
+        {
+          "text": " memory",
+          "startMs": 20720,
+          "endMs": 21040,
+          "timestampMs": 20880,
+          "confidence": null
+        },
+        {
+          "text": " cells.",
+          "startMs": 21120,
+          "endMs": 21600,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " B,",
+          "startMs": 22160,
+          "endMs": 22680,
+          "timestampMs": 22420,
+          "confidence": null
+        },
+        {
+          "text": " plasma",
+          "startMs": 22880,
+          "endMs": 23280,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 23360,
+          "endMs": 23600,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " release",
+          "startMs": 23680,
+          "endMs": 24000,
+          "timestampMs": 23840,
+          "confidence": null
+        },
+        {
+          "text": " antibodies,",
+          "startMs": 24080,
+          "endMs": 24880,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 24960,
+          "endMs": 25040,
+          "timestampMs": 25000,
+          "confidence": null
+        },
+        {
+          "text": " bind",
+          "startMs": 25120,
+          "endMs": 25360,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25400,
+          "endMs": 25440,
+          "timestampMs": 25420,
+          "confidence": null
+        },
+        {
+          "text": " bacteria.",
+          "startMs": 25520,
+          "endMs": 26160,
+          "timestampMs": 25840,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 26800,
+          "endMs": 26880,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26960,
+          "endMs": 27040,
+          "timestampMs": 27000,
+          "confidence": null
+        },
+        {
+          "text": " order",
+          "startMs": 27120,
+          "endMs": 27360,
+          "timestampMs": 27240,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 27440,
+          "endMs": 27680,
+          "timestampMs": 27560,
+          "confidence": null
+        },
+        {
+          "text": " C,",
+          "startMs": 28160,
+          "endMs": 28640,
+          "timestampMs": 28400,
+          "confidence": null
+        },
+        {
+          "text": " E,",
+          "startMs": 28800,
+          "endMs": 29120,
+          "timestampMs": 28960,
+          "confidence": null
+        },
+        {
+          "text": " G,",
+          "startMs": 29440,
+          "endMs": 29880,
+          "timestampMs": 29660,
+          "confidence": null
+        },
+        {
+          "text": " F,",
+          "startMs": 30000,
+          "endMs": 30320,
+          "timestampMs": 30160,
+          "confidence": null
+        },
+        {
+          "text": " A,",
+          "startMs": 30640,
+          "endMs": 31040,
+          "timestampMs": 30840,
+          "confidence": null
+        },
+        {
+          "text": " D,",
+          "startMs": 31200,
+          "endMs": 31600,
+          "timestampMs": 31400,
+          "confidence": null
+        },
+        {
+          "text": " H,",
+          "startMs": 31760,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32000,
+          "confidence": null
+        },
+        {
+          "text": " B.",
+          "startMs": 32320,
+          "endMs": 32640,
+          "timestampMs": 32480,
+          "confidence": null
+        },
+        {
+          "text": " Notice",
+          "startMs": 33280,
+          "endMs": 33600,
+          "timestampMs": 33440,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 33680,
+          "endMs": 33760,
+          "timestampMs": 33720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33800,
+          "endMs": 33840,
+          "timestampMs": 33820,
+          "confidence": null
+        },
+        {
+          "text": " dendritic",
+          "startMs": 33880,
+          "endMs": 34400,
+          "timestampMs": 34140,
+          "confidence": null
+        },
+        {
+          "text": " cell",
+          "startMs": 34480,
+          "endMs": 34720,
+          "timestampMs": 34600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 34800,
+          "endMs": 34880,
+          "timestampMs": 34840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 34960,
+          "endMs": 35040,
+          "timestampMs": 35000,
+          "confidence": null
+        },
+        {
+          "text": " bridge",
+          "startMs": 35120,
+          "endMs": 35440,
+          "timestampMs": 35280,
+          "confidence": null
+        },
+        {
+          "text": " between",
+          "startMs": 35520,
+          "endMs": 35840,
+          "timestampMs": 35680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 35880,
+          "endMs": 35920,
+          "timestampMs": 35900,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 36000,
+          "endMs": 36160,
+          "timestampMs": 36080,
+          "confidence": null
+        },
+        {
+          "text": " halves.",
+          "startMs": 36240,
+          "endMs": 36960,
+          "timestampMs": 36600,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-days",
+      "type": "concept",
+      "durationInFrames": 603,
+      "voiceover": {
+        "text": "Part b asks why it takes about a week. Only a few B cells fit this antigen to begin with. They have to meet it, get the go-ahead, and then divide many times before there are enough plasma cells to make antibodies you can measure. Meanwhile, the innate defences hold the bacteria back.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-days.bca46b16d102.mp3",
+        "startFrame": 0,
+        "endFrame": 543
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Part",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " b",
+          "startMs": 400,
+          "endMs": 720,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " asks",
+          "startMs": 880,
+          "endMs": 1280,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 1600,
+          "endMs": 1680,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " takes",
+          "startMs": 1760,
+          "endMs": 2000,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 2120,
+          "endMs": 2240,
+          "timestampMs": 2180,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2280,
+          "endMs": 2320,
+          "timestampMs": 2300,
+          "confidence": null
+        },
+        {
+          "text": " week.",
+          "startMs": 2400,
+          "endMs": 2800,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " Only",
+          "startMs": 3280,
+          "endMs": 3520,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3600,
+          "endMs": 3760,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 3840,
+          "endMs": 4000,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 4320,
+          "endMs": 4640,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " fit",
+          "startMs": 4760,
+          "endMs": 4880,
+          "timestampMs": 4820,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 4960,
+          "endMs": 5040,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " antigen",
+          "startMs": 5120,
+          "endMs": 5520,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 5560,
+          "endMs": 5600,
+          "timestampMs": 5580,
+          "confidence": null
+        },
+        {
+          "text": " begin",
+          "startMs": 5680,
+          "endMs": 5920,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " with.",
+          "startMs": 6000,
+          "endMs": 6560,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " They",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 6960,
+          "endMs": 7040,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " meet",
+          "startMs": 7280,
+          "endMs": 7440,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 7520,
+          "endMs": 7920,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 8000,
+          "endMs": 8080,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8119.999999999999,
+          "endMs": 8160,
+          "timestampMs": 8140,
+          "confidence": null
+        },
+        {
+          "text": " go-ahead,",
+          "startMs": 8240,
+          "endMs": 9040,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9080,
+          "endMs": 9120,
+          "timestampMs": 9100,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " divide",
+          "startMs": 9360,
+          "endMs": 9760,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 9920,
+          "endMs": 10160,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 10240,
+          "endMs": 10640,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 10720,
+          "endMs": 10960,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 11160,
+          "endMs": 11200,
+          "timestampMs": 11180,
+          "confidence": null
+        },
+        {
+          "text": " enough",
+          "startMs": 11280,
+          "endMs": 11600,
+          "timestampMs": 11440,
+          "confidence": null
+        },
+        {
+          "text": " plasma",
+          "startMs": 11680,
+          "endMs": 12000,
+          "timestampMs": 11840,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 12080,
+          "endMs": 12320,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12400,
+          "endMs": 12480,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 12720,
+          "endMs": 13360,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 13400,
+          "endMs": 13440,
+          "timestampMs": 13420,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " measure.",
+          "startMs": 13680,
+          "endMs": 14080,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " Meanwhile,",
+          "startMs": 14720,
+          "endMs": 15440,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15520,
+          "endMs": 15600,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " innate",
+          "startMs": 15680,
+          "endMs": 15920,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " defences",
+          "startMs": 16000,
+          "endMs": 16480,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " hold",
+          "startMs": 16640,
+          "endMs": 16800,
+          "timestampMs": 16720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16840,
+          "endMs": 16880,
+          "timestampMs": 16860,
+          "confidence": null
+        },
+        {
+          "text": " bacteria",
+          "startMs": 16920,
+          "endMs": 17440,
+          "timestampMs": 17180,
+          "confidence": null
+        },
+        {
+          "text": " back.",
+          "startMs": 17600,
+          "endMs": 18080,
+          "timestampMs": 17840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 394,
+      "voiceover": {
+        "text": "The classic mistake is writing that the body makes a new antibody to fit the bacteria. It doesn't design anything. It selects B cells that already fit, and copies them.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q1-mistake.74b1eea5c8b1.mp3",
+        "startFrame": 0,
+        "endFrame": 334
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1280,
+          "endMs": 1360,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " writing",
+          "startMs": 1440,
+          "endMs": 1840,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 1880,
+          "endMs": 1920,
+          "timestampMs": 1900,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2000,
+          "endMs": 2080,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " body",
+          "startMs": 2160,
+          "endMs": 2400,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 2520,
+          "endMs": 2640,
+          "timestampMs": 2580,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 2880,
+          "endMs": 3040,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " antibody",
+          "startMs": 3200,
+          "endMs": 3760,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " fit",
+          "startMs": 4000,
+          "endMs": 4160,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4240,
+          "endMs": 4280,
+          "timestampMs": 4260,
+          "confidence": null
+        },
+        {
+          "text": " bacteria.",
+          "startMs": 4320,
+          "endMs": 5040,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 5760,
+          "endMs": 6000,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " design",
+          "startMs": 6240,
+          "endMs": 6480,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " anything.",
+          "startMs": 6640,
+          "endMs": 7200,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 7680,
+          "endMs": 7760,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " selects",
+          "startMs": 7840,
+          "endMs": 8240,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 8320,
+          "endMs": 8480,
+          "timestampMs": 8400,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 8560,
+          "endMs": 8880,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 9000,
+          "endMs": 9120,
+          "timestampMs": 9060,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 9360,
+          "endMs": 9600,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " fit,",
+          "startMs": 9760,
+          "endMs": 10160,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " copies",
+          "startMs": 10400,
+          "endMs": 10720,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 10800,
+          "endMs": 11120,
+          "timestampMs": 10960,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 1011,
+      "voiceover": {
+        "text": "Question two. A volunteer in a vaccine trial is given two doses, on day zero and day twenty-eight. The graph shows the antibody level in their blood, with a dashed line at the level that protects against the disease. Compare the responses to the two doses, using data from the graph. Then explain the difference. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-question.9df62583c800.mp3",
+        "startFrame": 0,
+        "endFrame": 675
+      },
+      "responseHold": {
+        "startFrame": 687,
+        "endFrame": 987
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " two.",
+          "startMs": 480,
+          "endMs": 880,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " volunteer",
+          "startMs": 1600,
+          "endMs": 2160,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2240,
+          "endMs": 2320,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2360,
+          "endMs": 2400,
+          "timestampMs": 2380,
+          "confidence": null
+        },
+        {
+          "text": " vaccine",
+          "startMs": 2480,
+          "endMs": 2880,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " trial",
+          "startMs": 2960,
+          "endMs": 3360,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3440,
+          "endMs": 3520,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " given",
+          "startMs": 3600,
+          "endMs": 3920,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 4000,
+          "endMs": 4080,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " doses,",
+          "startMs": 4160,
+          "endMs": 5040,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 5120,
+          "endMs": 5200,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " day",
+          "startMs": 5280,
+          "endMs": 5440,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 5520,
+          "endMs": 5920,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " day",
+          "startMs": 6320,
+          "endMs": 6400,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " twenty-eight.",
+          "startMs": 6560,
+          "endMs": 7200,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 7920,
+          "endMs": 8000,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " graph",
+          "startMs": 8080,
+          "endMs": 8320,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " shows",
+          "startMs": 8400,
+          "endMs": 8640,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8720,
+          "endMs": 8800,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " antibody",
+          "startMs": 8920,
+          "endMs": 9360,
+          "timestampMs": 9140,
+          "confidence": null
+        },
+        {
+          "text": " level",
+          "startMs": 9440,
+          "endMs": 9680,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 9720,
+          "endMs": 9760,
+          "timestampMs": 9740,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 9840,
+          "endMs": 10000,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " blood,",
+          "startMs": 10200,
+          "endMs": 10640,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " dashed",
+          "startMs": 11000,
+          "endMs": 11280,
+          "timestampMs": 11140,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 11360,
+          "endMs": 11680,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 11760,
+          "endMs": 11840,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11880,
+          "endMs": 11920,
+          "timestampMs": 11900,
+          "confidence": null
+        },
+        {
+          "text": " level",
+          "startMs": 12000,
+          "endMs": 12240,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 12320,
+          "endMs": 12400,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " protects",
+          "startMs": 12600,
+          "endMs": 12880,
+          "timestampMs": 12740,
+          "confidence": null
+        },
+        {
+          "text": " against",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13240,
+          "endMs": 13280,
+          "timestampMs": 13260,
+          "confidence": null
+        },
+        {
+          "text": " disease.",
+          "startMs": 13360,
+          "endMs": 14000,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " Compare",
+          "startMs": 14720,
+          "endMs": 15040,
+          "timestampMs": 14880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15080,
+          "endMs": 15120,
+          "timestampMs": 15100,
+          "confidence": null
+        },
+        {
+          "text": " responses",
+          "startMs": 15440,
+          "endMs": 15760,
+          "timestampMs": 15600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15960,
+          "endMs": 16000,
+          "timestampMs": 15980,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 16079.999999999998,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16159.999999999998,
+          "confidence": null
+        },
+        {
+          "text": " doses,",
+          "startMs": 16320,
+          "endMs": 17040,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " using",
+          "startMs": 17120,
+          "endMs": 17360,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " data",
+          "startMs": 17440,
+          "endMs": 17760,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 17840,
+          "endMs": 17920,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17960,
+          "endMs": 18000,
+          "timestampMs": 17980,
+          "confidence": null
+        },
+        {
+          "text": " graph.",
+          "startMs": 18080,
+          "endMs": 18560,
+          "timestampMs": 18320,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 19040,
+          "endMs": 19280,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 19520,
+          "endMs": 19920,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19960,
+          "endMs": 20000,
+          "timestampMs": 19980,
+          "confidence": null
+        },
+        {
+          "text": " difference.",
+          "startMs": 20280,
+          "endMs": 20840,
+          "timestampMs": 20560,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 21120,
+          "endMs": 21360,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 21440,
+          "endMs": 21680,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21760,
+          "endMs": 21840,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 22040,
+          "endMs": 22480,
+          "timestampMs": 22260,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 987,
+        "responseHoldStart": 687,
+        "pausePrompt": 687
+      }
+    },
+    {
+      "id": "q2-read",
+      "type": "concept",
+      "durationInFrames": 999,
+      "voiceover": {
+        "text": "First, check the scale. Each gridline is ten times the one below it. Then find the lag, the flat start before the curve rises. After dose one, the level stays flat for about six days, then antibodies peak at about forty units on day fourteen, below the protective line. After dose two, they rise within about two days and peak at about two thousand units on day thirty-five. That's about fifty times higher, and it stays above the protective line.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-read.266d06e2f10c.mp3",
+        "startFrame": 0,
+        "endFrame": 939
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "First,",
+          "startMs": 0,
+          "endMs": 640,
+          "timestampMs": 320,
+          "confidence": null
+        },
+        {
+          "text": " check",
+          "startMs": 760,
+          "endMs": 880,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 920,
+          "endMs": 960,
+          "timestampMs": 940,
+          "confidence": null
+        },
+        {
+          "text": " scale.",
+          "startMs": 1040,
+          "endMs": 1600,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " Each",
+          "startMs": 2080,
+          "endMs": 2320,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " gridline",
+          "startMs": 2440,
+          "endMs": 2880,
+          "timestampMs": 2660,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3000,
+          "endMs": 3120,
+          "timestampMs": 3060,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 3200,
+          "endMs": 3440,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 3520,
+          "endMs": 3920,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4000,
+          "endMs": 4040,
+          "timestampMs": 4020,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " below",
+          "startMs": 4320,
+          "endMs": 4560,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 4640,
+          "endMs": 5120,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 5440,
+          "endMs": 5680,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 5920,
+          "endMs": 6160,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6200,
+          "endMs": 6240,
+          "timestampMs": 6220,
+          "confidence": null
+        },
+        {
+          "text": " lag,",
+          "startMs": 6320,
+          "endMs": 7120,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7200,
+          "endMs": 7280,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " flat",
+          "startMs": 7360,
+          "endMs": 7600,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 7680,
+          "endMs": 8000,
+          "timestampMs": 7840,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 8080,
+          "endMs": 8480,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8520,
+          "endMs": 8560,
+          "timestampMs": 8540,
+          "confidence": null
+        },
+        {
+          "text": " curve",
+          "startMs": 8640,
+          "endMs": 8880,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " rises.",
+          "startMs": 8960,
+          "endMs": 9880,
+          "timestampMs": 9420,
+          "confidence": null
+        },
+        {
+          "text": " After",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " dose",
+          "startMs": 10560,
+          "endMs": 10800,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 10960,
+          "endMs": 11440,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11480,
+          "endMs": 11520,
+          "timestampMs": 11500,
+          "confidence": null
+        },
+        {
+          "text": " level",
+          "startMs": 11640,
+          "endMs": 11760,
+          "timestampMs": 11700,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 11840,
+          "endMs": 12160,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " flat",
+          "startMs": 12240,
+          "endMs": 12480,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 12800,
+          "endMs": 12960,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 13120,
+          "endMs": 13280,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " days,",
+          "startMs": 13360,
+          "endMs": 14240,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 14320,
+          "endMs": 14640,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 14720,
+          "endMs": 15280,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " peak",
+          "startMs": 15360,
+          "endMs": 15600,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 15640,
+          "endMs": 15680,
+          "timestampMs": 15660,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 15800,
+          "endMs": 15920,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " forty",
+          "startMs": 16079.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " units",
+          "startMs": 16480,
+          "endMs": 16800,
+          "timestampMs": 16640,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " day",
+          "startMs": 17040,
+          "endMs": 17200,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " fourteen,",
+          "startMs": 17360,
+          "endMs": 18160,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " below",
+          "startMs": 18240,
+          "endMs": 18560,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " protective",
+          "startMs": 18920,
+          "endMs": 19200,
+          "timestampMs": 19060,
+          "confidence": null
+        },
+        {
+          "text": " line.",
+          "startMs": 19280,
+          "endMs": 19680,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " After",
+          "startMs": 20240,
+          "endMs": 20480,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " dose",
+          "startMs": 20560,
+          "endMs": 20800,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 20880,
+          "endMs": 21440,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 21480,
+          "endMs": 21520,
+          "timestampMs": 21500,
+          "confidence": null
+        },
+        {
+          "text": " rise",
+          "startMs": 21680,
+          "endMs": 21920,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " within",
+          "startMs": 22000,
+          "endMs": 22160,
+          "timestampMs": 22080,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 22320,
+          "endMs": 22480,
+          "timestampMs": 22400,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 22560,
+          "endMs": 22720,
+          "timestampMs": 22640,
+          "confidence": null
+        },
+        {
+          "text": " days",
+          "startMs": 22800,
+          "endMs": 23200,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23360,
+          "endMs": 23440,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " peak",
+          "startMs": 23520,
+          "endMs": 23760,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 23800,
+          "endMs": 23840,
+          "timestampMs": 23820,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 24000,
+          "endMs": 24160,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 24240,
+          "endMs": 24320,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 24560,
+          "endMs": 24960,
+          "timestampMs": 24760,
+          "confidence": null
+        },
+        {
+          "text": " units",
+          "startMs": 25040,
+          "endMs": 25360,
+          "timestampMs": 25200,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 25440,
+          "endMs": 25520,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " day",
+          "startMs": 25600,
+          "endMs": 25760,
+          "timestampMs": 25680,
+          "confidence": null
+        },
+        {
+          "text": " thirty-five.",
+          "startMs": 25840,
+          "endMs": 26720,
+          "timestampMs": 26280,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 27200,
+          "endMs": 27360,
+          "timestampMs": 27280,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 27480,
+          "endMs": 27600,
+          "timestampMs": 27540,
+          "confidence": null
+        },
+        {
+          "text": " fifty",
+          "startMs": 27760,
+          "endMs": 28080,
+          "timestampMs": 27920,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 28160,
+          "endMs": 28480,
+          "timestampMs": 28320,
+          "confidence": null
+        },
+        {
+          "text": " higher,",
+          "startMs": 28560,
+          "endMs": 29200,
+          "timestampMs": 28880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 29240,
+          "endMs": 29280,
+          "timestampMs": 29260,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 29360,
+          "endMs": 29440,
+          "timestampMs": 29400,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 29520,
+          "endMs": 29920,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " above",
+          "startMs": 30040,
+          "endMs": 30160,
+          "timestampMs": 30100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 30200,
+          "endMs": 30240,
+          "timestampMs": 30220,
+          "confidence": null
+        },
+        {
+          "text": " protective",
+          "startMs": 30320,
+          "endMs": 30720,
+          "timestampMs": 30520,
+          "confidence": null
+        },
+        {
+          "text": " line.",
+          "startMs": 30800,
+          "endMs": 31280,
+          "timestampMs": 31040,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-explain",
+      "type": "concept",
+      "durationInFrames": 1215,
+      "voiceover": {
+        "text": "Now explain it. Dose one gave a primary response. Only a few B cells fit the vaccine antigen, so they had to be selected and multiply, which took days, and some became memory cells. Dose two is the same antigen, so it met a secondary response. Many memory cells were already waiting. They became plasma cells quickly, with fewer divisions, so antibody rose sooner and much higher. After dose one, the level never reached the protective line, so one dose alone wouldn't have protected this volunteer. That's why many vaccines are given as more than one dose.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-explain.4c0abf46af1b.mp3",
+        "startFrame": 0,
+        "endFrame": 1155
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 320,
+          "endMs": 720,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 800,
+          "endMs": 1240,
+          "timestampMs": 1020,
+          "confidence": null
+        },
+        {
+          "text": " Dose",
+          "startMs": 1520,
+          "endMs": 1840,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 1920,
+          "endMs": 2240,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " gave",
+          "startMs": 2320,
+          "endMs": 2480,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " primary",
+          "startMs": 2720,
+          "endMs": 3120,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " response.",
+          "startMs": 3200,
+          "endMs": 3840,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " Only",
+          "startMs": 4320,
+          "endMs": 4560,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 5040,
+          "endMs": 5200,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 5280,
+          "endMs": 5600,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " fit",
+          "startMs": 5680,
+          "endMs": 5840,
+          "timestampMs": 5760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5880,
+          "endMs": 5920,
+          "timestampMs": 5900,
+          "confidence": null
+        },
+        {
+          "text": " vaccine",
+          "startMs": 6000,
+          "endMs": 6400,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " antigen,",
+          "startMs": 6520,
+          "endMs": 7280,
+          "timestampMs": 6900,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 7360,
+          "endMs": 7440,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 7520,
+          "endMs": 7600,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 7680,
+          "endMs": 7760,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7840,
+          "endMs": 7880,
+          "timestampMs": 7860,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 7920,
+          "endMs": 8000,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " selected",
+          "startMs": 8080,
+          "endMs": 8640,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8800,
+          "endMs": 8960,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " multiply,",
+          "startMs": 9040,
+          "endMs": 9840,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 9920,
+          "endMs": 10000,
+          "timestampMs": 9960,
+          "confidence": null
+        },
+        {
+          "text": " took",
+          "startMs": 10080,
+          "endMs": 10240,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " days,",
+          "startMs": 10400,
+          "endMs": 11200,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11280,
+          "endMs": 11360,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 11440,
+          "endMs": 11680,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " became",
+          "startMs": 11760,
+          "endMs": 12080,
+          "timestampMs": 11920,
+          "confidence": null
+        },
+        {
+          "text": " memory",
+          "startMs": 12160,
+          "endMs": 12480,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " cells.",
+          "startMs": 12560,
+          "endMs": 13040,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " Dose",
+          "startMs": 13760,
+          "endMs": 14080,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 14160,
+          "endMs": 14480,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14720,
+          "endMs": 14880,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 14960,
+          "endMs": 15200,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " antigen,",
+          "startMs": 15320,
+          "endMs": 15920,
+          "timestampMs": 15620,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 16000,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " met",
+          "startMs": 16360,
+          "endMs": 16480,
+          "timestampMs": 16420,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " secondary",
+          "startMs": 16720,
+          "endMs": 17200,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " response.",
+          "startMs": 17480,
+          "endMs": 17840,
+          "timestampMs": 17660,
+          "confidence": null
+        },
+        {
+          "text": " Many",
+          "startMs": 18480,
+          "endMs": 18720,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " memory",
+          "startMs": 18800,
+          "endMs": 19040,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 19120,
+          "endMs": 19360,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 19440,
+          "endMs": 19600,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 19680,
+          "endMs": 20000,
+          "timestampMs": 19840,
+          "confidence": null
+        },
+        {
+          "text": " waiting.",
+          "startMs": 20080,
+          "endMs": 20640,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " They",
+          "startMs": 21040,
+          "endMs": 21120,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " became",
+          "startMs": 21200,
+          "endMs": 21520,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " plasma",
+          "startMs": 21600,
+          "endMs": 21920,
+          "timestampMs": 21760,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 22000,
+          "endMs": 22240,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " quickly,",
+          "startMs": 22320,
+          "endMs": 22880,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 22960,
+          "endMs": 23040,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " fewer",
+          "startMs": 23200,
+          "endMs": 23440,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " divisions,",
+          "startMs": 23520,
+          "endMs": 24240,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 24360,
+          "endMs": 24480,
+          "timestampMs": 24420,
+          "confidence": null
+        },
+        {
+          "text": " antibody",
+          "startMs": 24600,
+          "endMs": 25040,
+          "timestampMs": 24820,
+          "confidence": null
+        },
+        {
+          "text": " rose",
+          "startMs": 25200,
+          "endMs": 25360,
+          "timestampMs": 25280,
+          "confidence": null
+        },
+        {
+          "text": " sooner",
+          "startMs": 25440,
+          "endMs": 25760,
+          "timestampMs": 25600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 26000,
+          "endMs": 26160,
+          "timestampMs": 26080,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 26320,
+          "endMs": 26560,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " higher.",
+          "startMs": 26760,
+          "endMs": 27120,
+          "timestampMs": 26940,
+          "confidence": null
+        },
+        {
+          "text": " After",
+          "startMs": 27840,
+          "endMs": 28080,
+          "timestampMs": 27960,
+          "confidence": null
+        },
+        {
+          "text": " dose",
+          "startMs": 28120,
+          "endMs": 28400,
+          "timestampMs": 28260,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 28480,
+          "endMs": 29040,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29080,
+          "endMs": 29120,
+          "timestampMs": 29100,
+          "confidence": null
+        },
+        {
+          "text": " level",
+          "startMs": 29200,
+          "endMs": 29440,
+          "timestampMs": 29320,
+          "confidence": null
+        },
+        {
+          "text": " never",
+          "startMs": 29600,
+          "endMs": 29840,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " reached",
+          "startMs": 29920,
+          "endMs": 30160,
+          "timestampMs": 30040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 30200,
+          "endMs": 30240,
+          "timestampMs": 30220,
+          "confidence": null
+        },
+        {
+          "text": " protective",
+          "startMs": 30320,
+          "endMs": 30800,
+          "timestampMs": 30560,
+          "confidence": null
+        },
+        {
+          "text": " line,",
+          "startMs": 30880,
+          "endMs": 31520,
+          "timestampMs": 31200,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 31600,
+          "endMs": 31760,
+          "timestampMs": 31680,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 31840,
+          "endMs": 32000,
+          "timestampMs": 31920,
+          "confidence": null
+        },
+        {
+          "text": " dose",
+          "startMs": 32080,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32160,
+          "confidence": null
+        },
+        {
+          "text": " alone",
+          "startMs": 32320,
+          "endMs": 32720,
+          "timestampMs": 32520,
+          "confidence": null
+        },
+        {
+          "text": " wouldn't",
+          "startMs": 32880,
+          "endMs": 33120,
+          "timestampMs": 33000,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 33200,
+          "endMs": 33280,
+          "timestampMs": 33240,
+          "confidence": null
+        },
+        {
+          "text": " protected",
+          "startMs": 33520,
+          "endMs": 33760,
+          "timestampMs": 33640,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 33840,
+          "endMs": 33920,
+          "timestampMs": 33880,
+          "confidence": null
+        },
+        {
+          "text": " volunteer.",
+          "startMs": 34000,
+          "endMs": 34640,
+          "timestampMs": 34320,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 35200,
+          "endMs": 35440,
+          "timestampMs": 35320,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 35520,
+          "endMs": 35600,
+          "timestampMs": 35560,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 35680,
+          "endMs": 35840,
+          "timestampMs": 35760,
+          "confidence": null
+        },
+        {
+          "text": " vaccines",
+          "startMs": 35920,
+          "endMs": 36400,
+          "timestampMs": 36160,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 36480,
+          "endMs": 36560,
+          "timestampMs": 36520,
+          "confidence": null
+        },
+        {
+          "text": " given",
+          "startMs": 36680,
+          "endMs": 36800,
+          "timestampMs": 36740,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 36880,
+          "endMs": 37040,
+          "timestampMs": 36960,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 37120,
+          "endMs": 37360,
+          "timestampMs": 37240,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 37440,
+          "endMs": 37520,
+          "timestampMs": 37480,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 37600,
+          "endMs": 37760,
+          "timestampMs": 37680,
+          "confidence": null
+        },
+        {
+          "text": " dose.",
+          "startMs": 37840,
+          "endMs": 38480,
+          "timestampMs": 38160,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 512,
+      "voiceover": {
+        "text": "The classic mistake is counting gridlines. On a log scale, two thousand sits less than two gridlines above forty, so students write that the second peak is about twice as high. Read the values off the axis, then divide.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q2-mistake.8ac74aebb512.mp3",
+        "startFrame": 0,
+        "endFrame": 452
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " counting",
+          "startMs": 1440,
+          "endMs": 1840,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " gridlines.",
+          "startMs": 1920,
+          "endMs": 2880,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " On",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3280,
+          "endMs": 3360,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " log",
+          "startMs": 3480,
+          "endMs": 3600,
+          "timestampMs": 3540,
+          "confidence": null
+        },
+        {
+          "text": " scale,",
+          "startMs": 3680,
+          "endMs": 4320,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " thousand",
+          "startMs": 4640,
+          "endMs": 5040,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " sits",
+          "startMs": 5120,
+          "endMs": 5360,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 5520,
+          "endMs": 5760,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 5840,
+          "endMs": 6000,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 6080,
+          "endMs": 6240,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " gridlines",
+          "startMs": 6320,
+          "endMs": 6800,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " above",
+          "startMs": 6880,
+          "endMs": 7120,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " forty,",
+          "startMs": 7200,
+          "endMs": 8080,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 8160,
+          "endMs": 8240,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " students",
+          "startMs": 8440,
+          "endMs": 8640,
+          "timestampMs": 8540,
+          "confidence": null
+        },
+        {
+          "text": " write",
+          "startMs": 8720,
+          "endMs": 8960,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9160,
+          "endMs": 9200,
+          "timestampMs": 9180,
+          "confidence": null
+        },
+        {
+          "text": " second",
+          "startMs": 9280,
+          "endMs": 9600,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " peak",
+          "startMs": 9680,
+          "endMs": 9920,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 10160,
+          "endMs": 10400,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " twice",
+          "startMs": 10480,
+          "endMs": 10800,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " high.",
+          "startMs": 11040,
+          "endMs": 11440,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " Read",
+          "startMs": 12080,
+          "endMs": 12320,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12360,
+          "endMs": 12400,
+          "timestampMs": 12380,
+          "confidence": null
+        },
+        {
+          "text": " values",
+          "startMs": 12480,
+          "endMs": 12800,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 12960,
+          "endMs": 13120,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13200,
+          "endMs": 13280,
+          "timestampMs": 13240,
+          "confidence": null
+        },
+        {
+          "text": " axis,",
+          "startMs": 13360,
+          "endMs": 14080,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 14200,
+          "endMs": 14320,
+          "timestampMs": 14260,
+          "confidence": null
+        },
+        {
+          "text": " divide.",
+          "startMs": 14600,
+          "endMs": 15040,
+          "timestampMs": 14820,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 1510,
+      "voiceover": {
+        "text": "Question three. A wildlife carer is scratched by a flying fox. Some Australian flying foxes carry a lyssavirus, a close relative of rabies. Rabies vaccine and rabies antibodies are used to prevent this infection, and they're highly effective in almost all cases. Once symptoms start, it's almost always fatal. The wound is washed with soap and water. She's then given an injection of rabies antibodies, and the first dose of rabies vaccine. Identify the type of immunity each injection gives. Then explain why both are given. Pause here to answer.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-question.41cb44ab25fa.mp3",
+        "startFrame": 0,
+        "endFrame": 1174
+      },
+      "responseHold": {
+        "startFrame": 1186,
+        "endFrame": 1486
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Question",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 480,
+          "endMs": 1160,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " wildlife",
+          "startMs": 1600,
+          "endMs": 2080,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " carer",
+          "startMs": 2160,
+          "endMs": 2560,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " scratched",
+          "startMs": 2800,
+          "endMs": 3280,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 3360,
+          "endMs": 3440,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3480,
+          "endMs": 3520,
+          "timestampMs": 3500,
+          "confidence": null
+        },
+        {
+          "text": " flying",
+          "startMs": 3600,
+          "endMs": 4000,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " fox.",
+          "startMs": 4080,
+          "endMs": 4880,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " Some",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " Australian",
+          "startMs": 5640,
+          "endMs": 5920,
+          "timestampMs": 5780,
+          "confidence": null
+        },
+        {
+          "text": " flying",
+          "startMs": 6000,
+          "endMs": 6320,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " foxes",
+          "startMs": 6400,
+          "endMs": 6800,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 6880,
+          "endMs": 7200,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " lyssavirus,",
+          "startMs": 7440,
+          "endMs": 8480,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8520,
+          "endMs": 8560,
+          "timestampMs": 8540,
+          "confidence": null
+        },
+        {
+          "text": " close",
+          "startMs": 8640,
+          "endMs": 8880,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " relative",
+          "startMs": 8960,
+          "endMs": 9360,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 9440,
+          "endMs": 9600,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " rabies.",
+          "startMs": 9680,
+          "endMs": 10320,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " Rabies",
+          "startMs": 11040,
+          "endMs": 11360,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " vaccine",
+          "startMs": 11440,
+          "endMs": 12000,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " rabies",
+          "startMs": 12360,
+          "endMs": 12640,
+          "timestampMs": 12500,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 12800,
+          "endMs": 13440,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 13520,
+          "endMs": 13680,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " used",
+          "startMs": 13760,
+          "endMs": 13920,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 13960,
+          "endMs": 14000,
+          "timestampMs": 13980,
+          "confidence": null
+        },
+        {
+          "text": " prevent",
+          "startMs": 14080,
+          "endMs": 14400,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 14480,
+          "endMs": 14560,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " infection,",
+          "startMs": 14640,
+          "endMs": 15520,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15560,
+          "endMs": 15600,
+          "timestampMs": 15580,
+          "confidence": null
+        },
+        {
+          "text": " they're",
+          "startMs": 15680,
+          "endMs": 15920,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " highly",
+          "startMs": 16040,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16140,
+          "confidence": null
+        },
+        {
+          "text": " effective",
+          "startMs": 16320,
+          "endMs": 16800,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " almost",
+          "startMs": 17160,
+          "endMs": 17360,
+          "timestampMs": 17260,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 17520,
+          "endMs": 17680,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " cases.",
+          "startMs": 17760,
+          "endMs": 18400,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " Once",
+          "startMs": 19040,
+          "endMs": 19200,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " symptoms",
+          "startMs": 19280,
+          "endMs": 19680,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " start,",
+          "startMs": 19880,
+          "endMs": 20400,
+          "timestampMs": 20140,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 20440,
+          "endMs": 20640,
+          "timestampMs": 20540,
+          "confidence": null
+        },
+        {
+          "text": " almost",
+          "startMs": 20840,
+          "endMs": 21040,
+          "timestampMs": 20940,
+          "confidence": null
+        },
+        {
+          "text": " always",
+          "startMs": 21200,
+          "endMs": 21680,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " fatal.",
+          "startMs": 21760,
+          "endMs": 22600,
+          "timestampMs": 22180,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " wound",
+          "startMs": 23200,
+          "endMs": 23440,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 23520,
+          "endMs": 23600,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " washed",
+          "startMs": 23680,
+          "endMs": 23920,
+          "timestampMs": 23800,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 24000,
+          "endMs": 24080,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " soap",
+          "startMs": 24160,
+          "endMs": 24400,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24440,
+          "endMs": 24480,
+          "timestampMs": 24460,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 24560,
+          "endMs": 25200,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " She's",
+          "startMs": 25440,
+          "endMs": 25600,
+          "timestampMs": 25520,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 25680,
+          "endMs": 25840,
+          "timestampMs": 25760,
+          "confidence": null
+        },
+        {
+          "text": " given",
+          "startMs": 25920,
+          "endMs": 26080,
+          "timestampMs": 26000,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 26120,
+          "endMs": 26160,
+          "timestampMs": 26140,
+          "confidence": null
+        },
+        {
+          "text": " injection",
+          "startMs": 26240,
+          "endMs": 26800,
+          "timestampMs": 26520,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 26880,
+          "endMs": 26960,
+          "timestampMs": 26920,
+          "confidence": null
+        },
+        {
+          "text": " rabies",
+          "startMs": 27040,
+          "endMs": 27440,
+          "timestampMs": 27240,
+          "confidence": null
+        },
+        {
+          "text": " antibodies,",
+          "startMs": 27520,
+          "endMs": 28320,
+          "timestampMs": 27920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28360,
+          "endMs": 28400,
+          "timestampMs": 28380,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 28480,
+          "endMs": 28560,
+          "timestampMs": 28520,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 28640,
+          "endMs": 28880,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " dose",
+          "startMs": 28960,
+          "endMs": 29280,
+          "timestampMs": 29120,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 29360,
+          "endMs": 29440,
+          "timestampMs": 29400,
+          "confidence": null
+        },
+        {
+          "text": " rabies",
+          "startMs": 29520,
+          "endMs": 29840,
+          "timestampMs": 29680,
+          "confidence": null
+        },
+        {
+          "text": " vaccine.",
+          "startMs": 29920,
+          "endMs": 30560,
+          "timestampMs": 30240,
+          "confidence": null
+        },
+        {
+          "text": " Identify",
+          "startMs": 31200,
+          "endMs": 31760,
+          "timestampMs": 31480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 31840,
+          "endMs": 31920,
+          "timestampMs": 31880,
+          "confidence": null
+        },
+        {
+          "text": " type",
+          "startMs": 32000,
+          "endMs": 32240.000000000004,
+          "timestampMs": 32120,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 32320,
+          "endMs": 32360,
+          "timestampMs": 32340,
+          "confidence": null
+        },
+        {
+          "text": " immunity",
+          "startMs": 32400,
+          "endMs": 32960,
+          "timestampMs": 32680,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 33120,
+          "endMs": 33280,
+          "timestampMs": 33200,
+          "confidence": null
+        },
+        {
+          "text": " injection",
+          "startMs": 33360,
+          "endMs": 33840,
+          "timestampMs": 33600,
+          "confidence": null
+        },
+        {
+          "text": " gives.",
+          "startMs": 33920,
+          "endMs": 34400,
+          "timestampMs": 34160,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 34800,
+          "endMs": 35120,
+          "timestampMs": 34960,
+          "confidence": null
+        },
+        {
+          "text": " explain",
+          "startMs": 35440,
+          "endMs": 35920,
+          "timestampMs": 35680,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 36000,
+          "endMs": 36160,
+          "timestampMs": 36080,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 36320,
+          "endMs": 36640,
+          "timestampMs": 36480,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 36680,
+          "endMs": 36720,
+          "timestampMs": 36700,
+          "confidence": null
+        },
+        {
+          "text": " given.",
+          "startMs": 36800,
+          "endMs": 37200,
+          "timestampMs": 37000,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 37840,
+          "endMs": 38080,
+          "timestampMs": 37960,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 38160,
+          "endMs": 38320,
+          "timestampMs": 38240,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 38400,
+          "endMs": 38480,
+          "timestampMs": 38440,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 38680,
+          "endMs": 39120,
+          "timestampMs": 38900,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 1486,
+        "responseHoldStart": 1186,
+        "pausePrompt": 1186
+      }
+    },
+    {
+      "id": "q3-types",
+      "type": "concept",
+      "durationInFrames": 932,
+      "voiceover": {
+        "text": "Use the two questions from the last video. Who made the antibodies? The injected antibodies were made by other people's immune systems, so they give artificial passive immunity. The vaccine gives her the antigen, so her own B cells make antibodies and memory cells. That's artificial active immunity. Both are artificial, because they come from medical treatment. Natural would mean she'd caught the infection, or received antibodies from her mother.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-types.ca68c2643ce0.mp3",
+        "startFrame": 0,
+        "endFrame": 872
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Use",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 480,
+          "endMs": 560,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 640,
+          "endMs": 1120,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1320,
+          "endMs": 1360,
+          "timestampMs": 1340,
+          "confidence": null
+        },
+        {
+          "text": " last",
+          "startMs": 1440,
+          "endMs": 1680,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " video.",
+          "startMs": 1760,
+          "endMs": 2480,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " Who",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3240,
+          "endMs": 3280,
+          "timestampMs": 3260,
+          "confidence": null
+        },
+        {
+          "text": " antibodies?",
+          "startMs": 3360,
+          "endMs": 4160,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " injected",
+          "startMs": 4800,
+          "endMs": 5280,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 5440,
+          "endMs": 6080,
+          "timestampMs": 5760,
+          "confidence": null
+        },
+        {
+          "text": " were",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 6360,
+          "endMs": 6480,
+          "timestampMs": 6420,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 6560,
+          "endMs": 6800,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 6920,
+          "endMs": 7040,
+          "timestampMs": 6980,
+          "confidence": null
+        },
+        {
+          "text": " people's",
+          "startMs": 7120,
+          "endMs": 7440,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " immune",
+          "startMs": 7520,
+          "endMs": 7760,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " systems,",
+          "startMs": 7840,
+          "endMs": 8720,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 8800,
+          "endMs": 8880,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 9000,
+          "endMs": 9120,
+          "timestampMs": 9060,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 9280,
+          "endMs": 9440,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " artificial",
+          "startMs": 9560,
+          "endMs": 10160,
+          "timestampMs": 9860,
+          "confidence": null
+        },
+        {
+          "text": " passive",
+          "startMs": 10320,
+          "endMs": 10720,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " immunity.",
+          "startMs": 10800,
+          "endMs": 11640,
+          "timestampMs": 11220,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 11920,
+          "endMs": 12000,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " vaccine",
+          "startMs": 12040,
+          "endMs": 12560,
+          "timestampMs": 12300,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 12640,
+          "endMs": 12800,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 12880,
+          "endMs": 12960,
+          "timestampMs": 12920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13040,
+          "endMs": 13120,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " antigen,",
+          "startMs": 13200,
+          "endMs": 14080,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 14360,
+          "endMs": 14480,
+          "timestampMs": 14420,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 14560,
+          "endMs": 14800,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " B",
+          "startMs": 14880,
+          "endMs": 15040,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " cells",
+          "startMs": 15120,
+          "endMs": 15440,
+          "timestampMs": 15280,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 15560,
+          "endMs": 15680,
+          "timestampMs": 15620,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 15760,
+          "endMs": 16480,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " memory",
+          "startMs": 16720,
+          "endMs": 17040,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " cells.",
+          "startMs": 17120,
+          "endMs": 17600,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 18000,
+          "endMs": 18400,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " artificial",
+          "startMs": 18520,
+          "endMs": 19040,
+          "timestampMs": 18780,
+          "confidence": null
+        },
+        {
+          "text": " active",
+          "startMs": 19200,
+          "endMs": 19600,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " immunity.",
+          "startMs": 19680,
+          "endMs": 20520,
+          "timestampMs": 20100,
+          "confidence": null
+        },
+        {
+          "text": " Both",
+          "startMs": 20800,
+          "endMs": 21040,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " artificial,",
+          "startMs": 21280,
+          "endMs": 22000,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 22120,
+          "endMs": 22240,
+          "timestampMs": 22180,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 22320,
+          "endMs": 22400,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " come",
+          "startMs": 22480,
+          "endMs": 22640,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 22720,
+          "endMs": 22800,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " medical",
+          "startMs": 22880,
+          "endMs": 23200,
+          "timestampMs": 23040,
+          "confidence": null
+        },
+        {
+          "text": " treatment.",
+          "startMs": 23280,
+          "endMs": 24080,
+          "timestampMs": 23680,
+          "confidence": null
+        },
+        {
+          "text": " Natural",
+          "startMs": 24400,
+          "endMs": 24960,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 25040,
+          "endMs": 25200,
+          "timestampMs": 25120,
+          "confidence": null
+        },
+        {
+          "text": " mean",
+          "startMs": 25280,
+          "endMs": 25440,
+          "timestampMs": 25360,
+          "confidence": null
+        },
+        {
+          "text": " she'd",
+          "startMs": 25520,
+          "endMs": 25760,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " caught",
+          "startMs": 25880,
+          "endMs": 26000,
+          "timestampMs": 25940,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26040,
+          "endMs": 26080,
+          "timestampMs": 26060,
+          "confidence": null
+        },
+        {
+          "text": " infection,",
+          "startMs": 26160,
+          "endMs": 26960,
+          "timestampMs": 26560,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 27040,
+          "endMs": 27120,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " received",
+          "startMs": 27200,
+          "endMs": 27600,
+          "timestampMs": 27400,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 27720,
+          "endMs": 28160,
+          "timestampMs": 27940,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 28240,
+          "endMs": 28320,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " her",
+          "startMs": 28400,
+          "endMs": 28480,
+          "timestampMs": 28440,
+          "confidence": null
+        },
+        {
+          "text": " mother.",
+          "startMs": 28640,
+          "endMs": 29040,
+          "timestampMs": 28840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-why-both",
+      "type": "concept",
+      "durationInFrames": 888,
+      "voiceover": {
+        "text": "Now why both. Her own response to the vaccine takes a week or more to make useful antibodies, and the virus could already be entering nerves near the wound. The injected antibodies work straight away, binding virus at the wound, but they fade over weeks and leave no memory. So the injected antibodies cover the gap, and the vaccine builds lasting protection. This works because symptoms usually take weeks or months to appear.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-why-both.9541594b0d4f.mp3",
+        "startFrame": 0,
+        "endFrame": 828
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 200,
+          "timestampMs": 100,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 240,
+          "endMs": 560,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " both.",
+          "startMs": 640,
+          "endMs": 1560,
+          "timestampMs": 1100,
+          "confidence": null
+        },
+        {
+          "text": " Her",
+          "startMs": 1840,
+          "endMs": 2000,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 2080,
+          "endMs": 2240,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 2480,
+          "endMs": 2720,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 2760,
+          "endMs": 2800,
+          "timestampMs": 2780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2880,
+          "endMs": 2920,
+          "timestampMs": 2900,
+          "confidence": null
+        },
+        {
+          "text": " vaccine",
+          "startMs": 2960,
+          "endMs": 3440,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " takes",
+          "startMs": 3520,
+          "endMs": 3760,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3800,
+          "endMs": 3840,
+          "timestampMs": 3820,
+          "confidence": null
+        },
+        {
+          "text": " week",
+          "startMs": 4000,
+          "endMs": 4160,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 4400,
+          "endMs": 4560,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 5040,
+          "endMs": 5360,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " antibodies,",
+          "startMs": 5440,
+          "endMs": 6480,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6520,
+          "endMs": 6560,
+          "timestampMs": 6540,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6640,
+          "endMs": 6720,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " virus",
+          "startMs": 6800,
+          "endMs": 7200,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 7320,
+          "endMs": 7440,
+          "timestampMs": 7380,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 7520,
+          "endMs": 7920,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 8000,
+          "endMs": 8080,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " entering",
+          "startMs": 8160,
+          "endMs": 8480,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " nerves",
+          "startMs": 8560,
+          "endMs": 8960,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " near",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9200,
+          "endMs": 9240,
+          "timestampMs": 9220,
+          "confidence": null
+        },
+        {
+          "text": " wound.",
+          "startMs": 9280,
+          "endMs": 9760,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 10320,
+          "endMs": 10400,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " injected",
+          "startMs": 10480,
+          "endMs": 10880,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 10960,
+          "endMs": 11520,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 11640,
+          "endMs": 11760,
+          "timestampMs": 11700,
+          "confidence": null
+        },
+        {
+          "text": " straight",
+          "startMs": 11840,
+          "endMs": 12160,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " away,",
+          "startMs": 12360,
+          "endMs": 12880,
+          "timestampMs": 12620,
+          "confidence": null
+        },
+        {
+          "text": " binding",
+          "startMs": 12960,
+          "endMs": 13360,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " virus",
+          "startMs": 13440,
+          "endMs": 13760,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 13840,
+          "endMs": 14000,
+          "timestampMs": 13920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14040,
+          "endMs": 14080,
+          "timestampMs": 14060,
+          "confidence": null
+        },
+        {
+          "text": " wound,",
+          "startMs": 14160,
+          "endMs": 14880,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 14960,
+          "endMs": 15040,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 15160,
+          "endMs": 15280,
+          "timestampMs": 15220,
+          "confidence": null
+        },
+        {
+          "text": " fade",
+          "startMs": 15360,
+          "endMs": 15600,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 15720,
+          "endMs": 15840,
+          "timestampMs": 15780,
+          "confidence": null
+        },
+        {
+          "text": " weeks",
+          "startMs": 15920,
+          "endMs": 16320,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16400,
+          "endMs": 16480,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " leave",
+          "startMs": 16600,
+          "endMs": 16720,
+          "timestampMs": 16660,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 16800,
+          "endMs": 16960,
+          "timestampMs": 16880,
+          "confidence": null
+        },
+        {
+          "text": " memory.",
+          "startMs": 17040,
+          "endMs": 17520,
+          "timestampMs": 17280,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 18080,
+          "endMs": 18160,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18200,
+          "endMs": 18240,
+          "timestampMs": 18220,
+          "confidence": null
+        },
+        {
+          "text": " injected",
+          "startMs": 18320,
+          "endMs": 18800,
+          "timestampMs": 18560,
+          "confidence": null
+        },
+        {
+          "text": " antibodies",
+          "startMs": 18920,
+          "endMs": 19440,
+          "timestampMs": 19180,
+          "confidence": null
+        },
+        {
+          "text": " cover",
+          "startMs": 19520,
+          "endMs": 19680,
+          "timestampMs": 19600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19760,
+          "endMs": 19840,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " gap,",
+          "startMs": 19920,
+          "endMs": 20560,
+          "timestampMs": 20240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20600,
+          "endMs": 20640,
+          "timestampMs": 20620,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20720,
+          "endMs": 20800,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " vaccine",
+          "startMs": 20880,
+          "endMs": 21440,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " builds",
+          "startMs": 21520,
+          "endMs": 21840,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " lasting",
+          "startMs": 21920,
+          "endMs": 22320,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " protection.",
+          "startMs": 22400,
+          "endMs": 22960,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " This",
+          "startMs": 23520,
+          "endMs": 23680,
+          "timestampMs": 23600,
+          "confidence": null
+        },
+        {
+          "text": " works",
+          "startMs": 23760,
+          "endMs": 24080,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 24160,
+          "endMs": 24400,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " symptoms",
+          "startMs": 24480,
+          "endMs": 24960,
+          "timestampMs": 24720,
+          "confidence": null
+        },
+        {
+          "text": " usually",
+          "startMs": 25040,
+          "endMs": 25440,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " take",
+          "startMs": 25560,
+          "endMs": 25680,
+          "timestampMs": 25620,
+          "confidence": null
+        },
+        {
+          "text": " weeks",
+          "startMs": 25760,
+          "endMs": 26080,
+          "timestampMs": 25920,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 26160,
+          "endMs": 26320,
+          "timestampMs": 26240,
+          "confidence": null
+        },
+        {
+          "text": " months",
+          "startMs": 26480,
+          "endMs": 26800,
+          "timestampMs": 26640,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26840,
+          "endMs": 26880,
+          "timestampMs": 26860,
+          "confidence": null
+        },
+        {
+          "text": " appear.",
+          "startMs": 26960,
+          "endMs": 27600,
+          "timestampMs": 27280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 375,
+      "voiceover": {
+        "text": "The classic mistake is saying the vaccine works straight away, so the antibody injection isn't needed. A vaccine starts a primary response, and that takes time.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/q3-mistake.6a86cc0660d1.mp3",
+        "startFrame": 0,
+        "endFrame": 315
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " classic",
+          "startMs": 360,
+          "endMs": 560,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " mistake",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " saying",
+          "startMs": 1320,
+          "endMs": 1600,
+          "timestampMs": 1460,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1640,
+          "endMs": 1680,
+          "timestampMs": 1660,
+          "confidence": null
+        },
+        {
+          "text": " vaccine",
+          "startMs": 1760,
+          "endMs": 2160,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " works",
+          "startMs": 2240,
+          "endMs": 2560,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " straight",
+          "startMs": 2720,
+          "endMs": 2880,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " away,",
+          "startMs": 3080,
+          "endMs": 3440,
+          "timestampMs": 3260,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 3520,
+          "endMs": 3680,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3720,
+          "endMs": 3760,
+          "timestampMs": 3740,
+          "confidence": null
+        },
+        {
+          "text": " antibody",
+          "startMs": 3840,
+          "endMs": 4320,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " injection",
+          "startMs": 4400,
+          "endMs": 4800,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 4960,
+          "endMs": 5200,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " needed.",
+          "startMs": 5400,
+          "endMs": 5680,
+          "timestampMs": 5540,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 6320,
+          "endMs": 6400,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " vaccine",
+          "startMs": 6480,
+          "endMs": 6960,
+          "timestampMs": 6720,
+          "confidence": null
+        },
+        {
+          "text": " starts",
+          "startMs": 7160,
+          "endMs": 7360,
+          "timestampMs": 7260,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7440,
+          "endMs": 7600,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " primary",
+          "startMs": 7880,
+          "endMs": 8160,
+          "timestampMs": 8020,
+          "confidence": null
+        },
+        {
+          "text": " response,",
+          "startMs": 8240,
+          "endMs": 9040,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9120,
+          "endMs": 9200,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 9280,
+          "endMs": 9440,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " takes",
+          "startMs": 9520,
+          "endMs": 9760,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " time.",
+          "startMs": 9840,
+          "endMs": 10480,
+          "timestampMs": 10160,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 977,
+      "voiceover": {
+        "text": "So here's how to start each type. To put a response in order, start at the barrier, run the innate steps, block, alarm, eat, alert, then the adaptive ones, fit, go-ahead, clone, plasma cells, antibodies. For a graph, read the scale, then ask, same antigen, or a new one? For immunity, ask who made the antibodies, and was it natural or medical? Next, how hygiene and quarantine interrupt spread.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/decision-board.b3e0178e5d82.mp3",
+        "startFrame": 0,
+        "endFrame": 917
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " here's",
+          "startMs": 240,
+          "endMs": 480,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 560,
+          "endMs": 640,
+          "timestampMs": 600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 680,
+          "endMs": 720,
+          "timestampMs": 700,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 800,
+          "endMs": 1120,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 1200,
+          "endMs": 1440,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " type.",
+          "startMs": 1520,
+          "endMs": 1920,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " To",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " put",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2680,
+          "endMs": 2720,
+          "timestampMs": 2700,
+          "confidence": null
+        },
+        {
+          "text": " response",
+          "startMs": 2960,
+          "endMs": 3200,
+          "timestampMs": 3080,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3240,
+          "endMs": 3280,
+          "timestampMs": 3260,
+          "confidence": null
+        },
+        {
+          "text": " order,",
+          "startMs": 3440,
+          "endMs": 4080,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 4160,
+          "endMs": 4400,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 4480,
+          "endMs": 4520,
+          "timestampMs": 4500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " barrier,",
+          "startMs": 4720,
+          "endMs": 5440,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " run",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " innate",
+          "startMs": 6000,
+          "endMs": 6320,
+          "timestampMs": 6160,
+          "confidence": null
+        },
+        {
+          "text": " steps,",
+          "startMs": 6400,
+          "endMs": 7120,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " block,",
+          "startMs": 7200,
+          "endMs": 7760,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " alarm,",
+          "startMs": 8000,
+          "endMs": 8480,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " eat,",
+          "startMs": 8560,
+          "endMs": 9040,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " alert,",
+          "startMs": 9280,
+          "endMs": 10000,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 10120,
+          "endMs": 10240,
+          "timestampMs": 10180,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10280,
+          "endMs": 10320,
+          "timestampMs": 10300,
+          "confidence": null
+        },
+        {
+          "text": " adaptive",
+          "startMs": 10600,
+          "endMs": 10880,
+          "timestampMs": 10740,
+          "confidence": null
+        },
+        {
+          "text": " ones,",
+          "startMs": 10960,
+          "endMs": 11680,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " fit,",
+          "startMs": 11760,
+          "endMs": 12320,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " go-ahead,",
+          "startMs": 12400,
+          "endMs": 13200,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " clone,",
+          "startMs": 13280,
+          "endMs": 13920,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " plasma",
+          "startMs": 13960,
+          "endMs": 14320,
+          "timestampMs": 14140,
+          "confidence": null
+        },
+        {
+          "text": " cells,",
+          "startMs": 14400,
+          "endMs": 14960,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " antibodies.",
+          "startMs": 15080,
+          "endMs": 15760,
+          "timestampMs": 15420,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 16239.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16440,
+          "endMs": 16480,
+          "timestampMs": 16460,
+          "confidence": null
+        },
+        {
+          "text": " graph,",
+          "startMs": 16560,
+          "endMs": 17280,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " read",
+          "startMs": 17360,
+          "endMs": 17600,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17640,
+          "endMs": 17680,
+          "timestampMs": 17660,
+          "confidence": null
+        },
+        {
+          "text": " scale,",
+          "startMs": 17760,
+          "endMs": 18400,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 18480,
+          "endMs": 18560,
+          "timestampMs": 18520,
+          "confidence": null
+        },
+        {
+          "text": " ask,",
+          "startMs": 18640,
+          "endMs": 19200,
+          "timestampMs": 18920,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 19280,
+          "endMs": 19520,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " antigen,",
+          "startMs": 19600,
+          "endMs": 20240,
+          "timestampMs": 19920,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 20320,
+          "endMs": 20400,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 20440,
+          "endMs": 20480,
+          "timestampMs": 20460,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 20560,
+          "endMs": 20640,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " one?",
+          "startMs": 20720,
+          "endMs": 21040,
+          "timestampMs": 20880,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 21520,
+          "endMs": 21600,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " immunity,",
+          "startMs": 21680,
+          "endMs": 22480,
+          "timestampMs": 22080,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 22560,
+          "endMs": 22800,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " who",
+          "startMs": 23120,
+          "endMs": 23280,
+          "timestampMs": 23200,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 23360,
+          "endMs": 23600,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23640,
+          "endMs": 23680,
+          "timestampMs": 23660,
+          "confidence": null
+        },
+        {
+          "text": " antibodies,",
+          "startMs": 23760,
+          "endMs": 24640,
+          "timestampMs": 24200,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24680,
+          "endMs": 24720,
+          "timestampMs": 24700,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 24800,
+          "endMs": 24880,
+          "timestampMs": 24840,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 24960,
+          "endMs": 25040,
+          "timestampMs": 25000,
+          "confidence": null
+        },
+        {
+          "text": " natural",
+          "startMs": 25120,
+          "endMs": 25600,
+          "timestampMs": 25360,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 25760,
+          "endMs": 25840,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " medical?",
+          "startMs": 25920,
+          "endMs": 26400,
+          "timestampMs": 26160,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 26960,
+          "endMs": 27520,
+          "timestampMs": 27240,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 27680,
+          "endMs": 27840,
+          "timestampMs": 27760,
+          "confidence": null
+        },
+        {
+          "text": " hygiene",
+          "startMs": 28000,
+          "endMs": 28480,
+          "timestampMs": 28240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28520,
+          "endMs": 28560,
+          "timestampMs": 28540,
+          "confidence": null
+        },
+        {
+          "text": " quarantine",
+          "startMs": 28720,
+          "endMs": 29360,
+          "timestampMs": 29040,
+          "confidence": null
+        },
+        {
+          "text": " interrupt",
+          "startMs": 29440,
+          "endMs": 29920,
+          "timestampMs": 29680,
+          "confidence": null
+        },
+        {
+          "text": " spread.",
+          "startMs": 30000,
+          "endMs": 30560,
+          "timestampMs": 30280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 759,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Biology-Y12-M7-G03-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 440,
+          "endMs": 480,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 800,
+          "endMs": 1440,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2920,
+          "endMs": 3040,
+          "timestampMs": 2980,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4200,
+          "endMs": 4480,
+          "timestampMs": 4340,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

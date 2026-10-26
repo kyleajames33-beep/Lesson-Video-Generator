@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C08b-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c08b/lesson.json",
+  "lessonSha256": "9e2b00e97f722426315fdb8999c25726523a5cd70d93db307bc54ef0e02e025e",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c08b/lesson.production-brief.json",
+    "sha256": "07ea0a7cf6b2330b88d66ee434f7c0379211c997ae6050e41bb490f4ae49d00c"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the alcohol reactions video, oxidising propan-two-ol gave a ketone, propanone. Oxidise propan-one-ol and distil, as we did with ethanol, and you get an aldehyde, propanal. Both have the formula C three H six O. Both are colourless liquids. Yet warm each one with this reagent, and one coats the tube in a silver mirror, while the other does nothing. What's the difference, and how do we name and test these compounds?",
+      "hash": "2df5ded7925f",
+      "textSha256": "2df5ded7925fc76ea87743aec5127390d0de4e00a4f1e85accc5ec9ccd0e847c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/hook.2df5ded7925f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/hook.2df5ded7925f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/hook.2df5ded7925f.generation.json",
+      "plannedRequestSha256": "d38df737e12e9d35941ef32a159528879769de80ab109a71188fdfb5c08b2d4f"
+    },
+    {
+      "id": "carbonyl-position",
+      "parentSceneId": "carbonyl-position",
+      "text": "Both contain a carbonyl group, a carbon double bonded to oxygen. Oxygen pulls the shared electrons more strongly, so the C double bond O is polar: the oxygen is slightly negative, and the carbon slightly positive. The difference is where it sits. In an aldehyde, the carbonyl is at the end of the chain, so its carbon carries a hydrogen. In a ketone, it's inside the chain, with a carbon on each side, and no hydrogen.",
+      "hash": "9c22fc3ab8c6",
+      "textSha256": "9c22fc3ab8c64e1586bb60a09073ca6c4f9c32dba2223d16b4f7b80e69263bfd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/carbonyl-position.9c22fc3ab8c6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/carbonyl-position.9c22fc3ab8c6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/carbonyl-position.9c22fc3ab8c6.generation.json",
+      "plannedRequestSha256": "afca7dd4a96bd42309e9110733fdda22b60423257f6e1c556b1796eff014a0da"
+    },
+    {
+      "id": "naming-aldehydes",
+      "parentSceneId": "naming-aldehydes",
+      "text": "To name an aldehyde, find the longest chain that includes the carbonyl carbon. Take the alkane's name, drop the final e, and add al. The carbonyl carbon is always carbon one, so there's no number: methanal, ethanal, propanal, butanal. Any branch is numbered from the carbonyl end. So this one is two-methylpropanal.",
+      "hash": "11086c14ec34",
+      "textSha256": "11086c14ec34b4073774a3ab60310010ac252b2e6ca25d56f112962bb170fbfd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/naming-aldehydes.11086c14ec34.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/naming-aldehydes.11086c14ec34.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/naming-aldehydes.11086c14ec34.generation.json",
+      "plannedRequestSha256": "fbdacc8c2360a7d9416ff8a93b28f2625706b84483456537596fc6416140d2f4"
+    },
+    {
+      "id": "naming-ketones",
+      "parentSceneId": "naming-ketones",
+      "text": "Ketones end in one. Propanone needs no number, because the carbonyl can only sit in the middle. Butanone is the same, though you'll often see it written butan-two-one. From five carbons, the position matters. Number from the end nearer the carbonyl. This is pentan-two-one, and this is pentan-three-one.",
+      "hash": "c1a24c7b26f6",
+      "textSha256": "c1a24c7b26f6de547917b58f6dcbc4d1dff931ad4af7bc0bc2012e1d9cf18bdb",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/naming-ketones.c1a24c7b26f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/naming-ketones.c1a24c7b26f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/naming-ketones.c1a24c7b26f6.generation.json",
+      "plannedRequestSha256": "798afd13d06df2d0ca60990ac4423836bca6add4f5350987739a9458009a2385"
+    },
+    {
+      "id": "functional-group-isomers",
+      "parentSceneId": "functional-group-isomers",
+      "text": "Now count the atoms in propanal and propanone. Both are C three H six O. Same formula, different functional group, so they're functional group isomers. Once there are three or more carbons, every aldehyde has a ketone isomer like this. When a question asks for every isomer with a C double bond O, that pair is easy to miss.",
+      "hash": "2ba4a016d755",
+      "textSha256": "2ba4a016d7553ec577689d467a73985d3396a25d52ffd25479ada9e0c8ce0aec",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/functional-group-isomers.2ba4a016d755.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/functional-group-isomers.2ba4a016d755.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/functional-group-isomers.2ba4a016d755.generation.json",
+      "plannedRequestSha256": "ed12ed1fb828ff9a732025b4e0492ff6b5e69930605116fecdb11c7905471bff"
+    },
+    {
+      "id": "forces-boiling",
+      "parentSceneId": "forces-boiling",
+      "text": "Between the molecules, the polar C double bond O gives dipole-dipole attractions: the slightly positive carbon of one molecule attracts the slightly negative oxygen of the next. That's on top of dispersion forces. But there's no O H, so these molecules can't hydrogen bond to each other. That puts their boiling points in the middle. For molecules of similar size, pentane boils at thirty six degrees, butanal at seventy five, butan-two-one at eighty, which is close, and butan-one-ol at one hundred and eighteen.",
+      "hash": "f72900eb5254",
+      "textSha256": "f72900eb5254e97c2db6057b5b3af98bb1284b8b12451002b02f502246aae27e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/forces-boiling.f72900eb5254.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/forces-boiling.f72900eb5254.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/forces-boiling.f72900eb5254.generation.json",
+      "plannedRequestSha256": "5f2707892b3799ab803bb86f567a4ba56e6bc8f8f5beb52ed8b25b608afef939"
+    },
+    {
+      "id": "aldehyde-h-solubility",
+      "parentSceneId": "aldehyde-h-solubility",
+      "text": "And the aldehyde's hydrogen? It's bonded to carbon, not oxygen, so it isn't positive enough to hydrogen bond. But the carbonyl oxygen does have lone pairs. So water molecules can hydrogen bond to it. That's why small aldehydes and ketones, like propanone, mix with water. As the chain grows, solubility falls, just like the alcohols.",
+      "hash": "8e5ae18bfac8",
+      "textSha256": "8e5ae18bfac84c6233ca47eb9e298a4b69e01f6fdf7f1e4b66e97bb1edfa3b7d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/aldehyde-h-solubility.8e5ae18bfac8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/aldehyde-h-solubility.8e5ae18bfac8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/aldehyde-h-solubility.8e5ae18bfac8.generation.json",
+      "plannedRequestSha256": "d7b38ef193be8171ae63b7e80f78b241a18b1d81b9ef5623c9ad577f90ab0422"
+    },
+    {
+      "id": "one-hydrogen",
+      "parentSceneId": "one-hydrogen",
+      "text": "Now the chemistry. In the alcohol reactions video, a ketone stopped, because its carbonyl carbon had no hydrogen to remove. An aldehyde still has one. So it's easily oxidised, even by mild oxidising agents. That gives us tests. The aldehyde is oxidised, and the reagent is reduced, which we can see. A ketone usually does nothing.",
+      "hash": "33bc85a65cff",
+      "textSha256": "33bc85a65cffe623a0eb98fac800be7331ef87d43a3e8b00015c6942e9df2a49",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/one-hydrogen.33bc85a65cff.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/one-hydrogen.33bc85a65cff.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/one-hydrogen.33bc85a65cff.generation.json",
+      "plannedRequestSha256": "4866fdd7f0fa2bfdd125c39c8da5688e93191a574d153d4075927d4efda52774"
+    },
+    {
+      "id": "tollens-test",
+      "parentSceneId": "tollens-test",
+      "text": "The first test is Tollens' reagent: silver ions, held in an ammonia solution. Warm it gently with an aldehyde in a water bath. The aldehyde reduces the silver ions to silver metal, which coats the glass as a mirror. With a ketone, the solution stays clear. Tollens' reagent is made fresh, just before use, and disposed of straight after, because on standing it can form an explosive solid.",
+      "hash": "d8b0e950b5c4",
+      "textSha256": "d8b0e950b5c4ff6d59ec4c8a871a7d940060679e868e83ec78ed10bfa17d14f8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/tollens-test.d8b0e950b5c4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/tollens-test.d8b0e950b5c4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/tollens-test.d8b0e950b5c4.generation.json",
+      "plannedRequestSha256": "bfb9c596e6105b696fc62ed91d07e8f53e1eefb10201ad07fea3cb70c275361e"
+    },
+    {
+      "id": "fehlings-test",
+      "parentSceneId": "fehlings-test",
+      "text": "The second is Fehling's solution, or the similar Benedict's solution. It's deep blue, from copper two ions. Warm it with an aldehyde, and the copper two ions are reduced to copper one, which forms copper one oxide, a brick-red precipitate, meaning a solid that forms in the solution. A ketone leaves it blue. So having a C double bond O isn't enough. It takes that hydrogen.",
+      "hash": "4092763b4602",
+      "textSha256": "4092763b46025e7446a01175cb6050f4e3cf49f291f68254a0251156891e1a42",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/fehlings-test.4092763b4602.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/fehlings-test.4092763b4602.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/fehlings-test.4092763b4602.generation.json",
+      "plannedRequestSha256": "7e8104e28529a2192db8eecd8ec2d41bf17e817ee6b2746427666ac5f6204d6c"
+    },
+    {
+      "id": "three-tests-one-question",
+      "parentSceneId": "three-tests-one-question",
+      "text": "And acidified dichromate, from the alcohol reactions video? An aldehyde turns it green, and a ketone leaves it orange. So, for an aldehyde or a ketone, all three tests ask one question. Is there a hydrogen on the carbonyl carbon?",
+      "hash": "5d053cc009d2",
+      "textSha256": "5d053cc009d204ca01e7281689641e4e1a06145812f301b9d01bc2fa6e5c715f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/three-tests-one-question.5d053cc009d2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/three-tests-one-question.5d053cc009d2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/three-tests-one-question.5d053cc009d2.generation.json",
+      "plannedRequestSha256": "5034762a497af8c041c4e585936a369fe66c431158ec116cdbb4fe78453e1384"
+    },
+    {
+      "id": "testing-the-product",
+      "parentSceneId": "testing-the-product",
+      "text": "Here's how this fits with oxidation. Oxidise an unknown alcohol. If the dichromate turns green, distil off the product. Then test the product. A silver mirror means an aldehyde, so the alcohol was primary. No mirror means a ketone, so it was secondary. Don't rely on dichromate for this step. Primary and secondary alcohols turn it green too.",
+      "hash": "9839825253de",
+      "textSha256": "9839825253de1e80c679cd3f2bd8c484b485227fad5842e6f67045019c319b75",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/testing-the-product.9839825253de.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/testing-the-product.9839825253de.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/testing-the-product.9839825253de.generation.json",
+      "plannedRequestSha256": "31023a8022234e6623efe0a7e4fe2a7b4d55bf94431c5a47c79f7999e314a2df"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, aldehyde at the end, ketone in the middle. Aldehydes end in al, ketones in one. Both have dipole-dipole forces, but no hydrogen bonds between their own molecules. And every test asks one question: is there an H on the carbonyl carbon? Yes means an aldehyde: a silver mirror, a brick-red solid, a green colour.",
+      "hash": "2c73c572c474",
+      "textSha256": "2c73c572c474e14fc679c8d8179fd39854590cd554aea20a14b320775dff6dd5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/memory-aid.2c73c572c474.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/memory-aid.2c73c572c474.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/memory-aid.2c73c572c474.generation.json",
+      "plannedRequestSha256": "e20ebebab3b96723e2c4807d21d1d53b6f1c66e64ff055bda684103171eca118"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A compound has the condensed formula shown. State whether it's an aldehyde or a ketone, giving a reason, and give its IUPAC name. Pause here to answer.",
+      "hash": "213a24ae8974",
+      "textSha256": "213a24ae89747427025b51f9e92816b702fef29eaee27062f90207066969007f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/attempt-1.213a24ae8974.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/attempt-1.213a24ae8974.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/attempt-1.213a24ae8974.generation.json",
+      "plannedRequestSha256": "50d43a18434fe3f5fed745714126d9039c73b9bb1bc0e1796f618cadcddca6c8"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The carbonyl carbon has a carbon on each side, so it's a ketone. The longest chain has five carbons, with the carbonyl on carbon three from either end. So number to give the methyl the lower number. It's on carbon two. That's two-methylpentan-three-one. Four-methylpentan-three-one numbers from the wrong end.",
+      "hash": "5af8209db11a",
+      "textSha256": "5af8209db11a357401dda389fc25c648131892c6b6148e9c45ade6acc3e6c4be",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/feedback-1.5af8209db11a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/feedback-1.5af8209db11a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/feedback-1.5af8209db11a.generation.json",
+      "plannedRequestSha256": "5506b56ef75a152e0accfe5058c72e6a2e81dc4f41ab5424fad7927cecfdef22"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Compounds A and B both have the formula C four H eight O, and both contain a C double bond O group. Warmed with Tollens' reagent, A forms a silver mirror, and B shows no change. A has an unbranched chain. Identify A and B by name, and explain the difference in their results. Pause here to answer.",
+      "hash": "c320f6e989a3",
+      "textSha256": "c320f6e989a3301a07786ee5f299e4410d9634d8ac1d0234347bd613c0d9e84c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/attempt-2.c320f6e989a3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/attempt-2.c320f6e989a3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/attempt-2.c320f6e989a3.generation.json",
+      "plannedRequestSha256": "f4f96144cfafa1a8ef409ac9660727db07ed73f959fd5011db1f5fa686513807"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "A forms a mirror, so it was oxidised: an aldehyde, with an H on its carbonyl carbon. Unbranched, with four carbons, it's butanal. B has a C double bond O, but doesn't react, so it's a ketone: butan-two-one, with no H on its carbonyl carbon. Saying both should react because both have a C double bond O misses the point. The hydrogen decides.",
+      "hash": "627f09031797",
+      "textSha256": "627f09031797ef1dd4de620d2f7b410e7806657009c6199b937891006186e8b5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/feedback-2.627f09031797.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/feedback-2.627f09031797.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/feedback-2.627f09031797.generation.json",
+      "plannedRequestSha256": "3dff8f475c355873280023adfef4f39a34c22f6cd3a929ccf282c6605337b121"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So the carbonyl's position decides the name, the forces, and the test results. Next: into the lab. Oxidising alcohols ourselves, collecting the products, and testing them.",
+      "hash": "0134d8165792",
+      "textSha256": "0134d816579296be9fd8681cc0c54a502cd3854d9bb6f2dce1bb39b0f2f81095",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/handoff.0134d8165792.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/handoff.0134d8165792.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/handoff.0134d8165792.generation.json",
+      "plannedRequestSha256": "cf2c77b3614e5e926f69927c3c6871682d1648135eadd8d079d73375c15fae8c"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08b-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

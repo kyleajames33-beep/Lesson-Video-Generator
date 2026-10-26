@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-P03-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p03c/lesson.json",
+  "lessonSha256": "e9160e17d1dfd44f471d5115ea351ececb164f0b1b7a89f5c749fcb014f07fe6",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p03c/lesson.production-brief.json",
+    "sha256": "9ba9275e9f35794f29f667a43123d71999aa9f27d22b5581442196f0f8c2a67b"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In the last video, burning methanol under a can of water caught only about half the energy. That's normal for this practical. So how do you measure the enthalpy of combustion of several alcohols, compare them reliably anyway, and explain where the rest of the energy goes?",
+      "hash": "0c1e03932b24",
+      "textSha256": "0c1e03932b24aecd1b14b275e02accdd27c4fd8df2aaf12350881b3a4594c4d1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/hook.0c1e03932b24.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/hook.0c1e03932b24.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/hook.0c1e03932b24.generation.json",
+      "plannedRequestSha256": "e04a000f9a8b138276f513745bc1c974e5fbebfed8355587989974133edf963f"
+    },
+    {
+      "id": "setup",
+      "parentSceneId": "setup",
+      "text": "Here's the set-up. A spirit burner holds the alcohol: it's a small glass lamp with a wick. Above it, a metal can of water is clamped close to the flame. The heat has to get into the water through the base, and metal lets heat through easily. A draught shield blocks air currents that would carry heat away, and a lid cuts the heat lost from the water's surface.",
+      "hash": "90385809f2f3",
+      "textSha256": "90385809f2f3d201aba8a14bf544fae9df5d902618cddbd1c905bcda99b929e8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/setup.90385809f2f3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/setup.90385809f2f3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/setup.90385809f2f3.generation.json",
+      "plannedRequestSha256": "71dddc42caed53892d091200ae1cec91e2dc27f80e51e7e18fbfc8033a04e56f"
+    },
+    {
+      "id": "method",
+      "parentSceneId": "method",
+      "text": "Measure two hundred millilitres of water into the can: two hundred grams. Weigh the burner with its cap on, and record the starting temperature. Light it, stir, and heat until the water is almost twenty degrees warmer. Cap the burner to put it out, keep stirring, and record the highest temperature. Reweigh straight away, cap on. Why the cap? Alcohol evaporates from the wick, and that lost mass would look like fuel burnt.",
+      "hash": "7beb2c9464f1",
+      "textSha256": "7beb2c9464f1783995cde8bbd244ada9d64db48a4ce3e37dd308528d90d74099",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/method.7beb2c9464f1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/method.7beb2c9464f1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/method.7beb2c9464f1.generation.json",
+      "plannedRequestSha256": "04cb7149194d1e65c24b0c987a1cc9a80b94f6c5798371424e1083388ea34c7d"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "To compare fairly, change only the alcohol. You measure the temperature rise and the mass burnt, which give the molar enthalpy. Keep everything else the same: the water's mass, the can, the flame's distance, the shield and lid, and the twenty degree rise. Why the same rise? Hotter water loses heat faster, so equal rises keep the heat lost from the water similar.",
+      "hash": "19ebc23ab804",
+      "textSha256": "19ebc23ab8045524f08c7f54619060aab7f0366744b4c4f293dd2c9c861d7a79",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/variables.19ebc23ab804.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/variables.19ebc23ab804.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/variables.19ebc23ab804.generation.json",
+      "plannedRequestSha256": "24ca2c397cbb538177d30e4fc3e278c92fc79e6b2341be3825b48f24b474a0db"
+    },
+    {
+      "id": "calculate",
+      "parentSceneId": "calculate",
+      "text": "Here's the first methanol trial. The water rose twenty point zero degrees. q is m c delta T, with m the mass of the water: sixteen point seven two kilojoules. The burner lost one point four zero grams, which is zero point zero four three seven moles of methanol. So delta H is minus q over n: minus three hundred and eighty three kilojoules per mole. Same steps as neutralisation, but n is now the moles of fuel burnt.",
+      "hash": "98aa3fcf613f",
+      "textSha256": "98aa3fcf613f110521620742c5da8843d10ed7443a071a29ad23285da678a7ef",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/calculate.98aa3fcf613f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/calculate.98aa3fcf613f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/calculate.98aa3fcf613f.generation.json",
+      "plannedRequestSha256": "6c66e47409cad8910647a490da9e51422ae05731b7cac4df33a5f3ea9e87fffd"
+    },
+    {
+      "id": "compare-range",
+      "parentSceneId": "compare-range",
+      "text": "Do three trials for each alcohol and take the mean. Methanol, minus three eighty three. Ethanol, about minus six ninety. Propan-one-ol, about minus nine eighty five. Butan-one-ol, about minus twelve hundred. The values get more negative as the chain gets longer, just as the data values do. But every one is only about half its data value.",
+      "hash": "a3e2fa6e4e00",
+      "textSha256": "a3e2fa6e4e0031ed630dd55d58c3b788b2b8cfdd89ac7a7960d7d4877cd7cab3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/compare-range.a3e2fa6e4e00.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/compare-range.a3e2fa6e4e00.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/compare-range.a3e2fa6e4e00.generation.json",
+      "plannedRequestSha256": "bb889d92e71302dc7cc9d2508d91752feca99c73081c4f2c722960222e06bbb1"
+    },
+    {
+      "id": "reliable-comparison",
+      "parentSceneId": "reliable-comparison",
+      "text": "Are they reliable? Each alcohol's three trials agreed within about two percent, so yes. And here's what makes the comparison trustworthy: the gap between neighbouring alcohols, two to three hundred kilojoules per mole, is far bigger than the spread within any alcohol's trials. So the order isn't a fluke, even though every value is low.",
+      "hash": "08a795339d35",
+      "textSha256": "08a795339d35151cb1ea3ddd085f0456a33744ea3b098d64a5882518d65898a5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/reliable-comparison.08a795339d35.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/reliable-comparison.08a795339d35.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/reliable-comparison.08a795339d35.generation.json",
+      "plannedRequestSha256": "c28e9bde652fba981a6b38f652793e2826151d4aedefcdda8ec0f7c6cd039abf"
+    },
+    {
+      "id": "error-chain",
+      "parentSceneId": "error-chain",
+      "text": "But they aren't accurate. Follow each error through the chain, as in the neutralisation practical. Heat warms the can, the clamp and the air instead of the water, so q is too small. A sooty flame means incomplete combustion, so less energy is released, and soot on the can slows heat getting in. Alcohol that evaporates without burning makes n too big. All three make delta H less negative. Not every error does: recording more water than the can holds makes delta H too negative.",
+      "hash": "043797274250",
+      "textSha256": "043797274250ec06a55c68877c04e991ef157306300b12c5c1de7d278d806ed8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/error-chain.043797274250.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/error-chain.043797274250.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/error-chain.043797274250.generation.json",
+      "plannedRequestSha256": "c1a814a8778690d1453f9bd0112cc278e12d48a4d47fbfe11ec2b2418c2468ec"
+    },
+    {
+      "id": "extrapolation-contrast",
+      "parentSceneId": "extrapolation-contrast",
+      "text": "In the neutralisation practical, you extended the cooling line back to recover lost heat. Why not here? That reaction was almost instant. Here the flame heats for several minutes, losing heat the whole time. Extending the line back to when the flame went out corrects only the last little bit. So the real fix is to stop the heat escaping in the first place.",
+      "hash": "f0fbc9c6a42b",
+      "textSha256": "f0fbc9c6a42b8569d256da162cf3903cca9c29dc7d742bc4a0bab0d76a73396a",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/extrapolation-contrast.f0fbc9c6a42b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/extrapolation-contrast.f0fbc9c6a42b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/extrapolation-contrast.f0fbc9c6a42b.generation.json",
+      "plannedRequestSha256": "adb0bbc192f088793755236c1b2e51228682bef410d65404395fdcd309186664"
+    },
+    {
+      "id": "improvements",
+      "parentSceneId": "improvements",
+      "text": "So match each fix to its cause. Air currents carry heat away, so use a draught shield and a lid. Heat spreads into the air around the flame, so keep the flame close to the can. Soot means too little oxygen, so trim the wick for a smaller flame, which usually burns cleaner, and wipe the can's base. Evaporation inflates the mass, so keep the cap on. Repeats can't fix any of these: they make results reliable, not accurate.",
+      "hash": "0554fd93a104",
+      "textSha256": "0554fd93a104810d1f77dcce7cc13778290eda3b741db986b74a9ce920ab2ce3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/improvements.0554fd93a104.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/improvements.0554fd93a104.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/improvements.0554fd93a104.generation.json",
+      "plannedRequestSha256": "da6f2f7206cbeb3b0d106df4bc4fa25815ab89160f81ab2ae969f7f86d4fa40c"
+    },
+    {
+      "id": "validity",
+      "parentSceneId": "validity",
+      "text": "Is it valid, meaning, does it measure what you intended? For ranking the alcohols, mostly yes: only the alcohol changes, so the losses are similar. The percentages drift down a little, but that drift is smaller than the gaps between alcohols, so the order holds. As a measure of each enthalpy, it's less valid, because it captures only the heat that reaches the water.",
+      "hash": "502e89cf1c89",
+      "textSha256": "502e89cf1c89dce777e520a69aeba3deb58633bd20beb87a844a0bd18e209207",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/validity.502e89cf1c89.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/validity.502e89cf1c89.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/validity.502e89cf1c89.generation.json",
+      "plannedRequestSha256": "fae9c7925bbc2fb689e7d38d77ed03cc80aa919647e0d5e0fcc151bbfe708220"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "Now the risks. All four alcohols are flammable, and three are highly flammable. So never refill a burner near a flame or while it's warm, and cap it to put it out. Methanol is also toxic: swallowed, breathed in or through the skin, it can damage organs, including eyesight. Propan-one-ol and butan-one-ol can seriously damage eyes, so wear safety glasses. Leftover alcohol goes in the labelled organic waste container, not the sink.",
+      "hash": "189296063b47",
+      "textSha256": "189296063b4792c084e49cd1aedfb16559189241c19b50f4bee2744d6b966497",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/risk-assessment.189296063b47.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/risk-assessment.189296063b47.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/risk-assessment.189296063b47.generation.json",
+      "plannedRequestSha256": "0bca71d11235f2c4b7e94211c8300ac2dcb7dceca20a1dc6c911b64144a66b05"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Two phrases to keep. Water in q, fuel in n: the water's mass goes into q, and the fuel's mass lost gives n. And for accuracy: shield, lid, close, cap. Each one fixes a named cause.",
+      "hash": "7d527f507bd0",
+      "textSha256": "7d527f507bd03e450b8fea73b19eb5b574ec1934066a7edc9e84f4c90dbb24be",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/memory-aid.7d527f507bd0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/memory-aid.7d527f507bd0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/memory-aid.7d527f507bd0.generation.json",
+      "plannedRequestSha256": "d79f64a2387c22fdc65a6922c74b98e4d8ec0c199a9bba7d9c2ebadaab8ab398"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. An ethanol spirit burner heats two hundred grams of water. The temperatures, the burner's masses and the molar mass are on screen. Calculate the molar enthalpy of combustion of ethanol. Pause here to answer.",
+      "hash": "e63d9f1049cd",
+      "textSha256": "e63d9f1049cd1fe22364484298d27d3bd79ee47d3d2820f5623c1b52b2f059e1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/attempt-1.e63d9f1049cd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/attempt-1.e63d9f1049cd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/attempt-1.e63d9f1049cd.generation.json",
+      "plannedRequestSha256": "d2977d1b7dddc29a8afe0425c0a89713f69954d79cc04c1e6f0e2d8b080514a5"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Delta T is eighteen point six degrees. q uses the water: about fifteen thousand five hundred and fifty joules. The burner lost one point zero six grams, so n is zero point zero two three zero moles. Delta H is minus six hundred and seventy six kilojoules per mole. Putting the fuel's mass into q is the classic slip: it gives about minus three point six. Water in q, fuel in n.",
+      "hash": "98725aeed934",
+      "textSha256": "98725aeed934bd8d1c83c84084734a100ad0e7642f78f2ada4f9eb86d69153a5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/feedback-1.98725aeed934.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/feedback-1.98725aeed934.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/feedback-1.98725aeed934.generation.json",
+      "plannedRequestSha256": "75733ca6eb6e75635b18402c096a33d255975558ab42a7a341f9412380360d86"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student burns methanol and butan-one-ol under an uncovered copper can, with no draught shield. Her results, on screen, are far less negative than the data values. Explain why, and suggest one improvement that would reduce the difference. Pause here to answer.",
+      "hash": "eb245b41937a",
+      "textSha256": "eb245b41937a638e1790f0b59283ffe6d1b6c61b59ebeeedd41801b786766d6c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/attempt-2.eb245b41937a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/attempt-2.eb245b41937a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/attempt-2.eb245b41937a.generation.json",
+      "plannedRequestSha256": "b881e505dacfde3516c7f96aa7983178f1ff624cec03804e4cf965af201b65ae"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "With no shield and no lid, heat escapes to the air and the can instead of the water. So the measured q is too small, and delta H comes out less negative. Improve it with a draught shield and a lid, so more of the heat stays with the water. Repeating it more times isn't the fix: repeats improve reliability, but heat escapes in every run.",
+      "hash": "0eef64ae7eca",
+      "textSha256": "0eef64ae7eca6bf4b2b1c59730981d674d2136dc4c619ba89d8d7a9a87235a9f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/feedback-2.0eef64ae7eca.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/feedback-2.0eef64ae7eca.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/feedback-2.0eef64ae7eca.generation.json",
+      "plannedRequestSha256": "d8dab50618c256f220d72539d9eea11f37c3680a8cecad9ec99b228ed015266b"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: change only the alcohol, put the water's mass in q and the fuel's in n, trace each error to q or n, and stop heat loss at its source. Next: how to answer practical questions like these in the exam.",
+      "hash": "a24b45841f6b",
+      "textSha256": "a24b45841f6b8ed6c5bd5b74752c19f213a3da447bfa71c5e0e97b2b596e293e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/decision-rule.a24b45841f6b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/decision-rule.a24b45841f6b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/decision-rule.a24b45841f6b.generation.json",
+      "plannedRequestSha256": "0e1bfd57942da55589c996ffd8505483391dde7d195b146b059df0fdb28bcce4"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P03-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

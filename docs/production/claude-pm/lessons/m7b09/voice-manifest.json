@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B09-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b09/lesson.json",
+  "lessonSha256": "77b429b2a888366db3ebe36691669a13086a07c4f5c583a548baca7d7ef5a687",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b09/lesson.production-brief.json",
+    "sha256": "98c0085273342c5d9818851741f385f4b29341411d5f06d951d7a553884d9722"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Most people who've had chickenpox don't catch it again. Years later, they can breathe in the same virus and usually don't get sick. You might think that's because antibodies from the first time are still in their blood. But by then, the antibody level has usually fallen far below its peak. So what's stopping the virus?",
+      "hash": "3dfa90f723cd",
+      "textSha256": "3dfa90f723cd7f219289225f2b6f0bd67e9e9e176f3f7bfd8f241ad52aff7a85",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/hook.3dfa90f723cd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/hook.3dfa90f723cd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/hook.3dfa90f723cd.generation.json",
+      "plannedRequestSha256": "a8a48a6cbc4745cfa974a3a0d85c4b3f02a189541e6a683a38e1f37711af9660"
+    },
+    {
+      "id": "primary",
+      "parentSceneId": "primary",
+      "text": "Let's go back to the first infection. As you saw in the last two videos, only a few B cells and T cells fit the virus at first. They have to be selected and divide for days, while innate defences hold the virus back. So antibodies only appear in the blood a week or more after infection, and they peak later. Meanwhile the virus spreads, and you get sick. This first reaction is the primary response.",
+      "hash": "f9556c62e812",
+      "textSha256": "f9556c62e81216c2004af5a5808d492051e6febd934a95e162afc4ca9ad27050",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/primary.f9556c62e812.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/primary.f9556c62e812.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/primary.f9556c62e812.generation.json",
+      "plannedRequestSha256": "050da5bb000842d1312fbf3392fa34dd83b42624b2b94f22b2012cff187c3ced"
+    },
+    {
+      "id": "what-stays",
+      "parentSceneId": "what-stays",
+      "text": "Then the infection is cleared. Most plasma cells die within weeks, so the antibody level falls. But the clones also made memory cells, memory B cells and memory T cells. These are long-lived and stay in the body for years, many for decades. And there are now far more cells that fit this virus than there were before. So the memory is stored mainly in cells, not in leftover antibody.",
+      "hash": "2bbfbedb0d01",
+      "textSha256": "2bbfbedb0d014e8beb77cf7c5e1a2e7365a46626bc21cb8f1b1243875978ed90",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/what-stays.2bbfbedb0d01.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/what-stays.2bbfbedb0d01.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/what-stays.2bbfbedb0d01.generation.json",
+      "plannedRequestSha256": "88c18888418da35009f5f36db66b18f9e16aed5a8ea728c2732cef930ceb8c37"
+    },
+    {
+      "id": "secondary",
+      "parentSceneId": "secondary",
+      "text": "Now the same virus arrives again. This time, many fitting cells are already waiting, so the virus's antigens meet them quickly. Memory B cells need fewer divisions, and they turn into plasma cells fast. Memory helper T cells give the go-ahead quickly, and memory cytotoxic T cells destroy infected cells sooner. So antibodies rise within days, climb far higher, and stay up longer. This is the secondary response, and it often clears the virus before you feel sick.",
+      "hash": "2e7c1d86d529",
+      "textSha256": "2e7c1d86d52969fcaeefecfeca77066ab40dfddd2885033d990db0ef9144c87f",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/secondary.2e7c1d86d529.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/secondary.2e7c1d86d529.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/secondary.2e7c1d86d529.generation.json",
+      "plannedRequestSha256": "9ac8e645b8885d412813b0abc98ffc74a6abe6636f47d81fb70eed21e9d4281e"
+    },
+    {
+      "id": "read-graph",
+      "parentSceneId": "read-graph",
+      "text": "On a graph of antibody level against time, the primary response is a slow, low hump. The secondary response is a fast, tall peak. The scale is often logarithmic, because the second peak can be ten to a hundred times higher. But this only happens for the same antigen. If a different antigen arrives at the same time, it gets a primary response, slow and low, because no memory cells fit it.",
+      "hash": "3a028c4de4f1",
+      "textSha256": "3a028c4de4f1741476a970cc46e6af0057b4cfe6852c3e9f7be1900d651dfd0a",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/read-graph.3a028c4de4f1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/read-graph.3a028c4de4f1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/read-graph.3a028c4de4f1.generation.json",
+      "plannedRequestSha256": "121b12ed7d62d5067d7796bdac4eebf7c692c7b9b5e3bbdb190894ad9afb7f42"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "So remember: second exposure, faster, bigger, longer. It starts sooner, makes much more antibody and lasts longer, because memory cells are already there.",
+      "hash": "8419c2a61869",
+      "textSha256": "8419c2a61869641c31bb57b5bb1131fc8b3dde284b6b9f5447a366cdd6412876",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/memory.8419c2a61869.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/memory.8419c2a61869.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/memory.8419c2a61869.generation.json",
+      "plannedRequestSha256": "c304c93a076a13f69d9f6556f079e2d66270d2d13d2ffa978e9c721e3c33a067"
+    },
+    {
+      "id": "vaccination",
+      "parentSceneId": "vaccination",
+      "text": "Vaccination uses this. A vaccine gives you the antigen in a form that doesn't cause the full disease. It might be a weakened live virus, like the chickenpox vaccine, a killed pathogen, just one of its proteins, or instructions that let your cells make that protein. Your body makes a primary response and memory cells, without the illness. Then a real infection meets a secondary response.",
+      "hash": "99ca2b0fb70c",
+      "textSha256": "99ca2b0fb70c2a245e8d2c7818502b6a6a77d533fbb24a5ecfd9fa25a77f5a7e",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/vaccination.99ca2b0fb70c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/vaccination.99ca2b0fb70c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/vaccination.99ca2b0fb70c.generation.json",
+      "plannedRequestSha256": "cb6bdb8cd8c7517b86f799715e1b55b74cd7a9b88c2638c09fa693c2ca62025f"
+    },
+    {
+      "id": "boosters",
+      "parentSceneId": "boosters",
+      "text": "Some vaccines need an extra dose later, called a booster. It's another exposure, so it triggers a secondary response, which raises the antibody level and adds more memory cells. And a vaccine prepares you before an infection. It doesn't cure an illness you already have.",
+      "hash": "02418e5464e6",
+      "textSha256": "02418e5464e6b5702b22480a89ffe5cb682e9334650b38fded7fbee17917f37f",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/boosters.02418e5464e6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/boosters.02418e5464e6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/boosters.02418e5464e6.generation.json",
+      "plannedRequestSha256": "bc2507fe8ba1c33000667b05be0eb24687c9616a629b39050732d01d16c98f7e"
+    },
+    {
+      "id": "active",
+      "parentSceneId": "active",
+      "text": "Immunity from vaccines and infections is called active immunity, because your own immune system did the work and made memory cells. It often lasts a long time, and a booster can top it up, but it takes a week or more to build. Catching the disease gives natural active immunity. A vaccine gives artificial active immunity.",
+      "hash": "f88648dcb5c2",
+      "textSha256": "f88648dcb5c238bd2b915034e95a41a950fe7091f6ad9d395d4e0e6f9f94c1cf",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/active.f88648dcb5c2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/active.f88648dcb5c2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/active.f88648dcb5c2.generation.json",
+      "plannedRequestSha256": "d1b7ecf3ef390cca37f64acb9f83bcb171e3e056e494b0296872a3fc9ea5a9bf"
+    },
+    {
+      "id": "passive",
+      "parentSceneId": "passive",
+      "text": "Passive immunity is different. You're given antibodies that another person or animal made. They work straight away, but receiving them doesn't itself make your B cells form memory cells. The antibodies are broken down over weeks to months, and protection fades. A baby gets natural passive immunity from its mother's antibodies, across the placenta and in breast milk. That protects it for its first months, until it can build its own.",
+      "hash": "db591a5de8fb",
+      "textSha256": "db591a5de8fbf2bd2b141ad27c24b3288782283136317a9c4c223771e9253e26",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/passive.db591a5de8fb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/passive.db591a5de8fb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/passive.db591a5de8fb.generation.json",
+      "plannedRequestSha256": "d7a182774f55df3a1a4d115355298aede086329971c4576f3835fafffafc8a14"
+    },
+    {
+      "id": "antivenom",
+      "parentSceneId": "antivenom",
+      "text": "Artificial passive immunity is an injection of antibodies. Antivenom for a snakebite is the classic example. It's made by giving an animal, often a horse, small doses of venom and collecting the antibodies it makes. A bite victim needs those antibodies now, because their own primary response would take far too long.",
+      "hash": "3d2ea99b75d7",
+      "textSha256": "3d2ea99b75d7abb08590ebb7fc1471a4bec41337648b38628a68cf323fd035ea",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/antivenom.3d2ea99b75d7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/antivenom.3d2ea99b75d7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/antivenom.3d2ea99b75d7.generation.json",
+      "plannedRequestSha256": "999d0ffa417aa54617f898158662b1641928eb5e5f10dc41fc597c0251e33217"
+    },
+    {
+      "id": "two-questions",
+      "parentSceneId": "two-questions",
+      "text": "Active and passive immunity are both acquired immunity, gained during your life, unlike the innate defences you're born with. Put it together with two questions. Who made the antibodies, you or something else? And how did it happen, naturally, or by medical treatment? Active, you do the work. Passive, you're handed the antibodies. So a snakebite needs ready-made antibodies now, while lasting protection against a disease comes from active immunity, such as a vaccine.",
+      "hash": "16d1f8b3ff1d",
+      "textSha256": "16d1f8b3ff1d867691830d909711661abd57c8297d1cb93aa9f2e007501cd54b",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/two-questions.16d1f8b3ff1d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/two-questions.16d1f8b3ff1d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/two-questions.16d1f8b3ff1d.generation.json",
+      "plannedRequestSha256": "dcc6fe488b17138f507f81304b50a2a4d883f91cec69151a7b202cdc60d985ea"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. The graph shows antibody levels in the blood of a rabbit. On day zero, it was injected with antigen P. On day forty, it was injected with antigen P again, along with a new antigen, Q. Explain the difference between the responses to P and to Q after day forty. Pause here to answer.",
+      "hash": "68d481a1d77e",
+      "textSha256": "68d481a1d77e7724eccecd84c52fde8c26f390d32c7308138169613e13f930ee",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/attempt.68d481a1d77e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/attempt.68d481a1d77e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/attempt.68d481a1d77e.generation.json",
+      "plannedRequestSha256": "81cf74493980dbd2ae9c331356e334b9d71cfc71179d8246ee1eab66a26000ab"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "After day forty, antibodies to P rose within days to a much higher peak. That's a secondary response. The first injection left memory cells that fit P, so many cells were ready. Q got a slow, low primary response, because no memory cells fit Q, and its few fitting B cells had to be selected and multiply first. Thinking the first injection boosts every antibody is the classic mistake.",
+      "hash": "ab90eed6b392",
+      "textSha256": "ab90eed6b392a231e0ff58a6a1edae7ffb335ed545eeb450031ccc8f812401f0",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/feedback-one.ab90eed6b392.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/feedback-one.ab90eed6b392.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/feedback-one.ab90eed6b392.generation.json",
+      "plannedRequestSha256": "38b9f5bb7c0d61d3e67f356c577af34f0af54b4831f29a58a679d2ba0e75d55e"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A bushwalker is bitten by a brown snake, given antivenom, and recovers. A year later, she's bitten again. Her friend says she's now immune, because she's already had antibodies against the venom. Evaluate the friend's claim. Pause here to answer.",
+      "hash": "c52db1ea52bc",
+      "textSha256": "c52db1ea52bc50a92d4b699458efe6979e400282d600d5880c2f99863687bd5a",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/attempt-two.c52db1ea52bc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/attempt-two.c52db1ea52bc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/attempt-two.c52db1ea52bc.generation.json",
+      "plannedRequestSha256": "f964cf69c12864f4c62962f141081002a9bd2948aee63e5f7b7d01712b6080b1"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The claim is wrong. Antivenom gives artificial passive immunity. It supplied horse antibodies, which fade within weeks. Receiving them doesn't make her own B cells form memory cells. So it gave her no dependable protection against another bite, and she'd need antivenom again. Calling antivenom a vaccine is the classic mistake.",
+      "hash": "dff8b4885d96",
+      "textSha256": "dff8b4885d961eb6f00a0a8a7474fbb0b49d206921ab71367873f4c60f149b83",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/feedback-two.dff8b4885d96.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/feedback-two.dff8b4885d96.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/feedback-two.dff8b4885d96.generation.json",
+      "plannedRequestSha256": "91eabccfb15c5c4f8c076ec094094f4ca5c2875845501637b4450856de481483"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any immunity question, ask two things. Are there memory cells for this antigen? And who made the antibodies? Then decide: primary or secondary, active or passive. Next, practice questions that put the whole immune response together.",
+      "hash": "1de64e3387b5",
+      "textSha256": "1de64e3387b55153b903ce74478256854c5d0b09e99a9d0c9270d274c01d86d9",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/decision-rule.1de64e3387b5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/decision-rule.1de64e3387b5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/decision-rule.1de64e3387b5.generation.json",
+      "plannedRequestSha256": "940e1b0ff195d774d1314e4ee8ff0a209e482ab2e0418421c22898cd70926b72"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B09-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

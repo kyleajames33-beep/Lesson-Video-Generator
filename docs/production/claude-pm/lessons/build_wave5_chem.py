@@ -14277,6 +14277,1730 @@ M7C06_ROWS = {
     ]
 }
 # END generated rows: m7p01c, m7p02c, m7c05, m7c06
+# BEGIN generated rows: m7c07, m7p03c, m7g02, m7c08a, m7c08b, skills07
+M7C07_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"What does burning an alcohol tell us about fuel choice?\".",
+        "Hook (less energy, still in the tank): In Australia, E10 petrol is up to ten percent ethanol.",
+        "ethanol / energy / carbon",
+        "On the spoken cues: `m7-ethanol-fuel-bottle-v1.png` small at the left (coded label \"ethanol\"), `m7-crude-oil-barrel-v1.png` small at the right (coded label \"crude oil → petrol\"). Between them a coded fuel bar fills grey-blue to 90% with a green 10% cap; on \"ethanol\" a chip writes \"E10: up to 10% ethanol\". On \"Litre for litre\" two coded energy bars (one litre each) grow side by side, the ethanol bar shorter (no numbers yet). On \"energy\"",
+        "explain",
+        "heading writes on: \"What does burning an alcohol tell us about fuel choice?\". `m7-ethanol-fuel-bottle-v1.png` small at the left (coded label \"ethanol\"), `m7-crude-oil-barrel-v1.png` small at the right (coded label \"crude oil → petrol\"). Between them a coded fuel bar fills grey-blue to 90% with a green 10% cap; on \"ethanol\" a chip writes \"E10: up to 10% ethanol\". On \"Litre for litre\" two coded energy bars (one litre each) grow side by side, the ethanol bar shorter (no numbers yet). On \"energy\" a small orange arrow icon lights above the bars; on \"carbon\" a small CO₂ icon lights above the two plates. The bar labels dim. Bright at the end: the heading and the two icon chips \"energy\" and \"carbon\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "complete-combustion": [
+        "new",
+        "the board clears.",
+        "Complete combustion: balance with the alcohol's own oxygen: Start with the equation.",
+        "completely / one / three",
+        "On the spoken cues: Task chip \"Complete combustion\". The equation stage strip builds: coded ethanol (full structural, OH ringed red) + \"? O₂\" → \"? CO₂ + ? H₂O\" in the grey product box; a grey chip \"complete combustion: plenty of O₂ → CO₂ + H₂O\". The balance tally writes under the strip; on \"two C O two\" the C row lights \"2 | 2\" and \"2\" writes before CO₂; on \"three waters\" the H row lights \"6 | 6\" and \"3\" writes before H₂O; the C and H",
+        "explain",
+        "the board clears. Task chip \"Complete combustion\". The equation stage strip builds: coded ethanol (full structural, OH ringed red) + \"? O₂\" → \"? CO₂ + ? H₂O\" in the grey product box; a grey chip \"complete combustion: plenty of O₂ → CO₂ + H₂O\". The balance tally writes under the strip; on \"two C O two\" the C row lights \"2 | 2\" and \"2\" writes before CO₂; on \"three waters\" the H row lights \"6 | 6\" and \"3\" writes before H₂O; the C and H rows dim. On \"seven\" the O row writes \"? | 4 + 3 = 7\". On \"one\" the red \"+1 from the OH\" chip slides from the ringed OH onto the left side of the O row. On \"three\" the O row completes \"1 + 6 = 7 | 7\" and \"3\" writes before O₂. The strip now reads C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. Bright at the end: the balanced strip, the O row and the \"+1 from the OH\" chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "per-mole-sign": [
+        "new",
+        "the ethanol strip shrinks to the top and dims.",
+        "Per mole of fuel, and the sign: Methanol works the same way, but it needs one and a half O two.",
+        "one mole / minus seven hundred and twenty six / releases",
+        "On the spoken cues: A new strip builds: CH₃OH + 3/2 O₂ → CO₂ + 2H₂O, the \"3/2\" written in the same weight as other coefficients; a small tally \"O: 1 + 3 = 4 | 2 + 2 = 4\" writes and dims. On \"one mole\" a navy bracket under CH₃OH reads \"1 mol of fuel\" (tag \"ΔHc: per mole of fuel\"). State symbols write in grey: \"(l) + (g) → (g) + (l)\", with a small grey chip \"data values: liquid water\". On \"minus seven hundred and twenty six\" \"ΔH = −726",
+        "explain",
+        "the ethanol strip shrinks to the top and dims. A new strip builds: CH₃OH + 3/2 O₂ → CO₂ + 2H₂O, the \"3/2\" written in the same weight as other coefficients; a small tally \"O: 1 + 3 = 4 | 2 + 2 = 4\" writes and dims. On \"one mole\" a navy bracket under CH₃OH reads \"1 mol of fuel\" (tag \"ΔHc: per mole of fuel\"). State symbols write in grey: \"(l) + (g) → (g) + (l)\", with a small grey chip \"data values: liquid water\". On \"minus seven hundred and twenty six\" \"ΔH = −726 kJ mol⁻¹\" writes after the strip, and the \"1 mol of fuel\" bracket and the \"data values: liquid water\" chip dim to grey. On \"releases\" orange heat arrows leave the strip outward and a small chip \"heat out → ΔH negative (Module 5)\". Bright at the end: the methanol strip, the ΔH value and the heat chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "incomplete-combustion": [
+        "adjust",
+        "the board clears.",
+        "Incomplete combustion: soot reports the oxygen: If oxygen runs short, combustion is incomplete.",
+        "incomplete / soot / less energy",
+        "On the spoken cues: `m7-spirit-burner-calorimeter-v1.png` appears centre-left, medium (blue flame, clean can). On \"incomplete\" a grey chip writes \"incomplete: too little O₂\". Two strips write small at the right, one per cue: on \"carbon monoxide\" \"C₂H₅OH + 2O₂ → 2CO + 3H₂O\" (CO ringed, tag \"toxic\"); on \"soot\" \"C₂H₅OH + O₂ → 2C + 3H₂O\" (C ringed charcoal, tag \"soot: solid carbon\"). On \"You can see it\" the flame switch runs: the plate",
+        "explain",
+        "the board clears. `m7-spirit-burner-calorimeter-v1.png` appears centre-left, medium (blue flame, clean can). On \"incomplete\" a grey chip writes \"incomplete: too little O₂\". Two strips write small at the right, one per cue: on \"carbon monoxide\" \"C₂H₅OH + 2O₂ → 2CO + 3H₂O\" (CO ringed, tag \"toxic\"); on \"soot\" \"C₂H₅OH + O₂ → 2C + 3H₂O\" (C ringed charcoal, tag \"soot: solid carbon\"). On \"You can see it\" the flame switch runs: the plate cross-fades in place to `m7-spirit-burner-calorimeter-sooty-v1.png` (yellow smoky flame, black patch on the can base), with coded charcoal specks drifting up to the patch. On \"less energy\" the \"less energy\" bar beside the flame shrinks against a dashed full-length outline. On \"oxygen supply\" a ring circles the gap around the flame, tag \"soot: O₂ couldn't keep up\". The two strips dim to grey. Bright at the end: the sooty plate, the shrunken energy bar and the oxygen tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "where-numbers-come-from": [
+        "adjust",
+        "the sooty plate cross-fades back to `m7-spirit-burner-calorimeter-v1.png`, shrunk to the left, with the coded amber readout chip on its thermometer counting \"21.5 °C\" to \"41.5 °C\".",
+        "Where the numbers come from (q = mcΔT, recalled): How do we know how much energy a fuel gives?",
+        "zero point seven four / water / eleven / half",
+        "On the spoken cues: Task line: \"Energy per gram of methanol (school can)\". Equation strip: \"q = mcΔT\". Givens, grouped with units, small at the top right: \"water: 100.0 g | 21.5 °C → 41.5 °C | c = 4.18 J g⁻¹ °C⁻¹\" and \"burner: 143.82 g → 143.08 g\". Task line, strip and givens stay grey while the working writes; one line per cue, earlier lines dimming: on \"zero point seven four\" \"methanol burnt = 143.82 − 143.08 = 0.74 g\"; on \"water\"",
+        "explain",
+        "the sooty plate cross-fades back to `m7-spirit-burner-calorimeter-v1.png`, shrunk to the left, with the coded amber readout chip on its thermometer counting \"21.5 °C\" to \"41.5 °C\". Task line: \"Energy per gram of methanol (school can)\". Equation strip: \"q = mcΔT\". Givens, grouped with units, small at the top right: \"water: 100.0 g | 21.5 °C → 41.5 °C | c = 4.18 J g⁻¹ °C⁻¹\" and \"burner: 143.82 g → 143.08 g\". Task line, strip and givens stay grey while the working writes; one line per cue, earlier lines dimming: on \"zero point seven four\" \"methanol burnt = 143.82 − 143.08 = 0.74 g\"; on \"water\" \"ΔT = 41.5 − 21.5 = 20.0 °C\", then \"q = 100.0 × 4.18 × 20.0 = 8360 J = 8.36 kJ\" with the C03 grey tag \"m = water, not fuel\" and \"keep the digits; round at the end\"; on \"eleven\" \"8.36 kJ ÷ 0.74 g = 11.3 → 11 kJ g⁻¹ (2 s.f.)\"; on \"half\" a comparison chip \"careful value: about 22.7 kJ g⁻¹\" (no division shown here; dividing by molar mass is spoken and shown in scene 7) and a two-bar strip (11 against 22.7) with a bracket \"about 50% reached the water\". On \"where the rest goes\" a small \"?\" tag sits on the gap (tag \"next video: the practical\"). Bright at the end: the 11 kJ g⁻¹ line, the two-bar strip and the \"?\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "series-trend": [
+        "new",
+        "the board clears.",
+        "The trend per mole, and why it's steady: Now the data values.",
+        "six hundred and fifty / forms / same",
+        "On the spoken cues: Task chip \"Enthalpy of combustion along the series\". The series ladder writes: CH₃OH −726, CH₃CH₂OH −1367, CH₃CH₂CH₂OH −2021, CH₃CH₂CH₂CH₂OH −2676 kJ mol⁻¹, names small under each; each bar extends on its row, the new CH₂ glowing teal. On \"six hundred and fifty\" brackets between bars write \"641\", \"654\", \"655\" in grey and one navy bracket \"about 650 kJ mol⁻¹ per CH₂\". On \"breaking\" the bond ledger runs on one lifted",
+        "explain",
+        "the board clears. Task chip \"Enthalpy of combustion along the series\". The series ladder writes: CH₃OH −726, CH₃CH₂OH −1367, CH₃CH₂CH₂OH −2021, CH₃CH₂CH₂CH₂OH −2676 kJ mol⁻¹, names small under each; each bar extends on its row, the new CH₂ glowing teal. On \"six hundred and fifty\" brackets between bars write \"641\", \"654\", \"655\" in grey and one navy bracket \"about 650 kJ mol⁻¹ per CH₂\". On \"breaking\" the bond ledger runs on one lifted teal CH₂: two C–H and one C–C bond lines and a \"1.5 O=O\" chip crack in grey with a small \"energy in\" arrow. On \"forms\" one coded CO₂ and one H₂O assemble with a larger \"energy out\" arrow. On \"same\" the net arrow \"about 650 kJ mol⁻¹ out\" writes and the lifted CH₂ drops back into the ladder. The grey increment numbers dim. Bright at the end: the ladder, the 650 bracket and the net arrow. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "per-gram": [
+        "new",
+        "the ladder stays.",
+        "Per gram is what matters for a fuel: But a bigger molecule also weighs more.",
+        "weighs / gram / forty eight / partly oxidised",
+        "On the spoken cues: On \"weighs\" molar masses write small beside each formula (32.04, 46.07, 60.09, 74.12 g mol⁻¹). On \"gram\" the molar masses dim and the per-gram switch runs: the bars re-scale to kJ g⁻¹ and close up (22.7, 29.7, 33.6, 36.1), tag \"energy density: kJ per gram\". Task chip changes to \"Energy per gram\". On \"thirty\" the ethanol bar lights (29.7). On \"forty eight\" a grey-blue octane bar extends beyond them, labelled \"octane",
+        "explain",
+        "the ladder stays. On \"weighs\" molar masses write small beside each formula (32.04, 46.07, 60.09, 74.12 g mol⁻¹). On \"gram\" the molar masses dim and the per-gram switch runs: the bars re-scale to kJ g⁻¹ and close up (22.7, 29.7, 33.6, 36.1), tag \"energy density: kJ per gram\". Task chip changes to \"Energy per gram\". On \"thirty\" the ethanol bar lights (29.7). On \"forty eight\" a grey-blue octane bar extends beyond them, labelled \"octane C₈H₁₈: 47.9 kJ g⁻¹\", with a coded skeletal octane. The other alcohol bars dim. On \"Its oxygen\" the ethanol OH oxygen pulses with a tag \"O adds 16 g mol⁻¹, no energy\". On \"partly oxidised\" the \"O adds 16 g mol⁻¹\" tag dims and the C–O carbon rings red, tag \"partly oxidised: already bonded to oxygen\". On \"Per litre\" the alcohol and octane bar labels dim (the bars stay, grey) and two small litre bars write: \"ethanol about 23 MJ L⁻¹\", \"petrol about 34 MJ L⁻¹\" (the hook's bars, now numbered). Bright at the end: the partly-oxidised tag and the two litre bars. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "same-products-carbon": [
+        "adjust",
+        "the board clears.",
+        "Same products, different carbon: So why use ethanol at all?",
+        "same / sugarcane / underground",
+        "On the spoken cues: Task chip \"Ethanol or petrol?\". Two strips write side by side, small: \"C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O\" and \"2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O\"; on \"same\" both product boxes pulse together (tag \"same products\"); the strips dim. The carbon loop draws: on \"sugarcane\" `m7-sugarcane-stalks-v1.png` appears centre-left, medium, with green CO₂ arrows from the air into the leaves (tag \"photosynthesis: CO₂ in\"), then a small coded",
+        "explain",
+        "the board clears. Task chip \"Ethanol or petrol?\". Two strips write side by side, small: \"C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O\" and \"2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O\"; on \"same\" both product boxes pulse together (tag \"same products\"); the strips dim. The carbon loop draws: on \"sugarcane\" `m7-sugarcane-stalks-v1.png` appears centre-left, medium, with green CO₂ arrows from the air into the leaves (tag \"photosynthesis: CO₂ in\"), then a small coded fermentation flask chip (\"fermented to ethanol, video c06\") and the ethanol bottle plate small, and a coded flame returning green CO₂ arrows to the air, closing the circle (tag \"recent carbon: back to the air\"). On \"underground\" the \"photosynthesis: CO₂ in\" tag and the fermentation chip dim, and `m7-crude-oil-barrel-v1.png` appears centre-right above a coded brown rock layer; a one-way dark brown arrow rises from the rock to the air through a coded flame, and the \"+ CO₂\" counter ticks up (tag \"fossil carbon: extra CO₂\"). Bright at the end: the two loop tags (\"recent carbon: back to the air\", \"fossil carbon: extra CO₂\"), with the loops drawn beneath them. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "not-carbon-neutral": [
+        "new",
+        "the sugarcane loop stays; the fossil loop dims.",
+        "But not automatically carbon neutral: That doesn't make bioethanol carbon neutral, though.",
+        "energy / land",
+        "On the spoken cues: The production ledger draws: on \"energy\" small dark-brown energy-in arrows enter the green loop at three points labelled \"grow and harvest\", \"ferment\", \"distil\"; the green circle gains a small brown \"+ CO₂\" tick of its own (tag \"production energy: some net CO₂\"). A grey ghost chip \"carbon neutral?\" fades in and out (said positively), with the meaning \"carbon neutral: adds no net CO₂\" small beneath. On \"land\" a coded",
+        "explain",
+        "the sugarcane loop stays; the fossil loop dims. The production ledger draws: on \"energy\" small dark-brown energy-in arrows enter the green loop at three points labelled \"grow and harvest\", \"ferment\", \"distil\"; the green circle gains a small brown \"+ CO₂\" tick of its own (tag \"production energy: some net CO₂\"). A grey ghost chip \"carbon neutral?\" fades in and out (said positively), with the meaning \"carbon neutral: adds no net CO₂\" small beneath. On \"land\" a coded field outline with a small wheat-head icon chip \"land and water: food crops compete\" (coded line icon, no people). Bright at the end: the loop with its production arrows and the land chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "obtaining-hydrocarbons": [
+        "adjust",
+        "the board clears.",
+        "Obtaining hydrocarbons from the Earth: Petrol has costs before it's ever burned, because the hydrocarbons are taken from the Earth.",
+        "economic / environmental / sociocultural",
+        "On the spoken cues: `m7-oil-gas-rig-v1.png` small at the top centre. The implications board draws three columns; each heading lights on its word and its lines write while spoken, earlier columns dimming: \"Economic: jobs, export income / energy security\"; \"Environmental: oil spills, habitat loss / possible water contamination (fracking, contested)\"; \"Sociocultural: community health and opposition / Aboriginal and Torres Strait Islander",
+        "explain",
+        "the board clears. `m7-oil-gas-rig-v1.png` small at the top centre. The implications board draws three columns; each heading lights on its word and its lines write while spoken, earlier columns dimming: \"Economic: jobs, export income / energy security\"; \"Environmental: oil spills, habitat loss / possible water contamination (fracking, contested)\"; \"Sociocultural: community health and opposition / Aboriginal and Torres Strait Islander land and sea Country\". When the Sociocultural column lights, the Economic and Environmental lines dim (their headings stay). A grey chip \"sociocultural: affecting communities and culture\" sits under the third heading and leaves when the pen arrow runs. On \"rather than on those burning the fuel\" a pen arrow runs from the rig to the Sociocultural column, tag \"costs fall near the site\". Bright at the end: the Sociocultural column and the tag (the other two headings stay, dimmed to grey). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "judge-fuel": [
+        "new",
+        "the board clears.",
+        "Judging the fuel: So which fuel?",
+        "energy / renewable / compromise",
+        "On the spoken cues: The criteria card writes, ethanol and petrol columns, one row per phrase (the current row bright, earlier rows dim): \"energy per gram: 29.7 | 47.9 kJ g⁻¹\"; \"energy per litre: about 23 | about 34 MJ L⁻¹\"; \"carbon: recent (crops) | fossil\"; \"production: farming, fermenting, distilling | drilling, refining\"; \"land and people: crop land, water | extraction sites\". On \"energy\" the petrol energy cells tick. On \"renewable\"",
+        "explain",
+        "the board clears. The criteria card writes, ethanol and petrol columns, one row per phrase (the current row bright, earlier rows dim): \"energy per gram: 29.7 | 47.9 kJ g⁻¹\"; \"energy per litre: about 23 | about 34 MJ L⁻¹\"; \"carbon: recent (crops) | fossil\"; \"production: farming, fermenting, distilling | drilling, refining\"; \"land and people: crop land, water | extraction sites\". On \"energy\" the petrol energy cells tick. On \"renewable\" the ethanol carbon cell ticks. A grey ghost chip \"renewable means better?\" fades in and out (said positively). On \"compromise\" the hook's E10 bar returns small, tag \"E10: some of each\". Bright at the end: the two tick rows and the E10 tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: Two lines to keep.",
+        "C H two adds about six fifty / oxygen costs energy",
+        "On the spoken cues: Handwritten lines: \"Per mole: each CH₂ adds about 650 kJ.\" \"Per gram: oxygen costs energy.\" Under the first, the ladder thumbnail with its teal CH₂ glow; under the second, the ethanol and octane bars thumbnail. A small third chip writes on \"unless\": \"short of O₂ → CO and soot\".",
+        "explain",
+        "the board clears. Handwritten lines: \"Per mole: each CH₂ adds about 650 kJ.\" \"Per gram: oxygen costs energy.\" Under the first, the ladder thumbnail with its teal CH₂ glow; under the second, the ethanol and octane bars thumbnail. A small third chip writes on \"unless\": \"short of O₂ → CO and soot\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Butan-one-ol is burned in a spirit",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Butan-1-ol is burned in a spirit burner beneath a metal can of water. (a) Write a balanced equation for the complete combustion of butan-1-ol. (b) After a few minutes, a black deposit forms on the base of the can. Explain how this deposit forms.\" No apparatus or structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no tally, no sooty plate, no memory aid.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "six / oxygen in the O H / incomplete",
+        "On the spoken cues: On \"six\" \"complete combustion of butan-1-ol\" is underlined and the strip builds: C₄H₉OH + 6O₂ → 4CO₂ + 5H₂O; the balance tally writes \"C 4 | 4, H 10 | 10, O 1 + 12 | 8 + 5\"; the strip stays bright as the answer. On \"oxygen in the O H\" a chip \"C₄H₉OH + 13/2 O₂ → 4CO₂ + 5H₂O\" fades in and is crossed (caption \"the OH already supplies one O\"). On \"incomplete\" \"black deposit\" is underlined,",
+        "explain",
+        "the card stays, shrunk to the top. On \"six\" \"complete combustion of butan-1-ol\" is underlined and the strip builds: C₄H₉OH + 6O₂ → 4CO₂ + 5H₂O; the balance tally writes \"C 4 | 4, H 10 | 10, O 1 + 12 | 8 + 5\"; the strip stays bright as the answer. On \"oxygen in the O H\" a chip \"C₄H₉OH + 13/2 O₂ → 4CO₂ + 5H₂O\" fades in and is crossed (caption \"the OH already supplies one O\"). On \"incomplete\" \"black deposit\" is underlined, `m7-spirit-burner-calorimeter-sooty-v1.png` flashes small with its patch ringed, and an answer chip writes \"soot = C; too little O₂ for the fuel → incomplete combustion\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"The molar enthalpy of combustion of ethanol is −1367 kJ mol⁻¹ (M = 46.07 g mol⁻¹) and of octane is −5471 kJ mol⁻¹ (M = 114.2 g mol⁻¹).",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Ethanol's molar enthalpy of combustion is",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"The molar enthalpy of combustion of ethanol is −1367 kJ mol⁻¹ (M = 46.07 g mol⁻¹) and of octane is −5471 kJ mol⁻¹ (M = 114.2 g mol⁻¹). (a) Calculate the energy released per gram of each fuel. (b) Compare ethanol and octane as fuels, including one advantage of ethanol that is not related to energy.\" No bars or plates. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "bar fill",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "twenty nine point six seven / forty seven point nine one / per gram / renewable",
+        "On the spoken cues: On \"twenty nine point six seven\" \"−1367 kJ mol⁻¹\" and \"46.07 g mol⁻¹\" are underlined and \"1367 ÷ 46.07 = 29.67 kJ g⁻¹ (4 s.f.)\" writes; on \"forty seven point nine one\" \"−5471 kJ mol⁻¹\" and \"114.2 g mol⁻¹\" are underlined and \"5471 ÷ 114.2 = 47.91 kJ g⁻¹ (4 s.f.)\" writes; earlier line dims; answer chip \"octane: more energy per gram\". On \"per gram\" a chip \"octane: 4 × the energy per mole, so 4 × better\" fades in and is",
+        "explain",
+        "the card stays, shrunk to the top. On \"twenty nine point six seven\" \"−1367 kJ mol⁻¹\" and \"46.07 g mol⁻¹\" are underlined and \"1367 ÷ 46.07 = 29.67 kJ g⁻¹ (4 s.f.)\" writes; on \"forty seven point nine one\" \"−5471 kJ mol⁻¹\" and \"114.2 g mol⁻¹\" are underlined and \"5471 ÷ 114.2 = 47.91 kJ g⁻¹ (4 s.f.)\" writes; earlier line dims; answer chip \"octane: more energy per gram\". On \"per gram\" a chip \"octane: 4 × the energy per mole, so 4 × better\" fades in and is crossed (caption \"compare per gram: octane molecules are heavier\"). On \"renewable\" \"one advantage of ethanol\" is underlined and the sugarcane loop thumbnail flashes small; answer chip \"ethanol: renewable crops; carbon recently from the air\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So an alcohol's energy grows with its chain, its oxygen lowers the energy per gram, and choosing a fuel weighs energy against carbon and cost.",
+        "Next",
+        "On the spoken cues: The ladder thumbnail, the per-gram bars and the two carbon loops sit small in a row, each lighting on its phrase. On \"Next\" `m7-spirit-burner-calorimeter-v1.png` appears small with the two-bar \"about 50%\" strip from scene 5, and a chip \"Next: measure and compare alcohol combustion enthalpy\".",
+        "explain",
+        "the board clears. The ladder thumbnail, the per-gram bars and the two carbon loops sit small in a row, each lighting on its phrase. On \"Next\" `m7-spirit-burner-calorimeter-v1.png` appears small with the two-bar \"about 50%\" strip from scene 5, and a chip \"Next: measure and compare alcohol combustion enthalpy\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7P03C_ROWS = {
+    "hook": [
+        "adjust",
+        "`m7-spirit-burner-calorimeter-v1.png` centre, lit, with the readout chip on the thermometer.",
+        "Hook (about half, and that's fine): In the last video, burning methanol under a can of water caught only about half the energy.",
+        "half / reliably / goes",
+        "On the spoken cues: The c07 two-bar strip writes small at the right (\"measured 11 kJ g⁻¹ | careful 22.7 kJ g⁻¹\", bracket \"about 50%\"). On \"reliably\" four small coloured chips write under the plate: \"methanol\", \"ethanol\", \"propan-1-ol\", \"butan-1-ol\". On \"goes\" orange heat arrows curl off the can's sides into the air, and a \"?\" tag sits beside them. Heading writes: \"Half the energy, and a fair comparison anyway.\" Bright at the end: the",
+        "explain",
+        "`m7-spirit-burner-calorimeter-v1.png` centre, lit, with the readout chip on the thermometer. The c07 two-bar strip writes small at the right (\"measured 11 kJ g⁻¹ | careful 22.7 kJ g⁻¹\", bracket \"about 50%\"). On \"reliably\" four small coloured chips write under the plate: \"methanol\", \"ethanol\", \"propan-1-ol\", \"butan-1-ol\". On \"goes\" orange heat arrows curl off the can's sides into the air, and a \"?\" tag sits beside them. Heading writes: \"Half the energy, and a fair comparison anyway.\" Bright at the end: the heading, the four chips and the \"?\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "setup": [
+        "adjust",
+        "the base plate stays centre.",
+        "The set-up, and why each part is there: Here's the set-up.",
+        "close / draught shield / lid",
+        "On the spoken cues: On \"spirit burner\" a label points to the burner (\"spirit burner: lamp with a wick\"). On \"close\" a small bracket between flame tip and can base, tag \"flame close to the can\". The heat path runs: most orange arrows rise into the base and the water glows faintly; on \"metal\" a tag \"metal: lets heat in\" (a grey thumbnail of chem-m6-p02's foam cup appears and dims, tag \"foam: kept heat in\"). On \"draught shield\" the plate",
+        "explain",
+        "the base plate stays centre. On \"spirit burner\" a label points to the burner (\"spirit burner: lamp with a wick\"). On \"close\" a small bracket between flame tip and can base, tag \"flame close to the can\". The heat path runs: most orange arrows rise into the base and the water glows faintly; on \"metal\" a tag \"metal: lets heat in\" (a grey thumbnail of chem-m6-p02's foam cup appears and dims, tag \"foam: kept heat in\"). On \"draught shield\" the plate cross-fades in place to `m7-spirit-burner-calorimeter-shield-v1.png`; the side arrows meet the shield and turn back (tag \"shield: blocks air currents\"). On \"lid\" the lid on the shielded plate gets a ring, and arrows above the water stop at it (tag \"lid: less heat lost from the surface\"). A small grey tag \"heatproof mat\" sits on the mat (shown, not spoken). Earlier tags dim as each new one writes. Bright at the end: the shielded plate with its two tags \"shield\" and \"lid\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "method": [
+        "adjust",
+        "the shielded plate shrinks to the centre-left.",
+        "The method: Measure two hundred millilitres of water into the can: two hundred grams.",
+        "cap / twenty degrees / highest / evaporates",
+        "On the spoken cues: The method card writes in the right zone, one step per cue, earlier steps dimming: on \"two hundred millilitres\" `m6-measuring-cylinder-v1.png` appears with a coded fill to 200 mL and tilts along a coded arc into the can (no hands); step \"1 200 mL water, or weigh it: 200.0 g\". On \"cap\" `m7-spirit-burner-on-balance-v1.png` appears small at the right with the balance readout \"151.64 g\"; step \"2 weigh burner + cap\". The",
+        "explain",
+        "the shielded plate shrinks to the centre-left. The method card writes in the right zone, one step per cue, earlier steps dimming: on \"two hundred millilitres\" `m6-measuring-cylinder-v1.png` appears with a coded fill to 200 mL and tilts along a coded arc into the can (no hands); step \"1 200 mL water, or weigh it: 200.0 g\". On \"cap\" `m7-spirit-burner-on-balance-v1.png` appears small at the right with the balance readout \"151.64 g\"; step \"2 weigh burner + cap\". The readout chip on the thermometer shows \"22.4 °C\"; step \"3 starting temperature\". On \"twenty degrees\" the coded flame lights on the burner and the readout counts up to \"41.9 °C\"; step \"4 heat until almost a 20 °C rise; stir\". On \"highest\" the cap drops at 41.9 °C, the flame shrinks out, the readout climbs a little more and stops at \"42.4 °C\" with an amber ring (a small grey tag \"rise = 42.4 − 22.4 = 20.0 °C\"); step \"5 cap, stir, highest temperature\". On \"reweigh\" the balance readout changes to \"150.24 g\"; step \"6 reweigh at once, cap on\". On \"evaporates\" an uncapped burner thumbnail shows evaporation wisps with no flame, tag \"mass lost, no heat\", then dims. Bright at the end: steps 5 and 6 and the balance readout. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone: on \"alcohol\" \"Independent: the alcohol\" with the four coloured chips; on \"You measure\" \"Dependent: ΔHc (from ΔT and mass lost)\"; on \"same\" \"Controlled:\" and its list writes one item per phrase, each pen-linked to the matching part of the shielded plate: \"water 200.0 g\", \"same can\", \"flame distance\", \"shield and lid\", \"rise 20.0 °C\".",
+        "The variables in a comparison: To compare fairly, change only the alcohol.",
+        "alcohol / same / lost",
+        "On the spoken cues: On \"lost\" a small coded sketch writes under the card: three water-temperature levels above a dashed \"room\" line, with loss arrows getting longer as the level rises; tag \"hotter water loses heat faster: same rise, similar loss from the water\". Bright at the end: the controlled list's \"rise 20.0 °C\" item and the loss sketch.",
+        "explain",
+        "the variables card writes in the right zone: on \"alcohol\" \"Independent: the alcohol\" with the four coloured chips; on \"You measure\" \"Dependent: ΔHc (from ΔT and mass lost)\"; on \"same\" \"Controlled:\" and its list writes one item per phrase, each pen-linked to the matching part of the shielded plate: \"water 200.0 g\", \"same can\", \"flame distance\", \"shield and lid\", \"rise 20.0 °C\". On \"lost\" a small coded sketch writes under the card: three water-temperature levels above a dashed \"room\" line, with loss arrows getting longer as the level rises; tag \"hotter water loses heat faster: same rise, similar loss from the water\". Bright at the end: the controlled list's \"rise 20.0 °C\" item and the loss sketch. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "calculate": [
+        "new",
+        "the plate shrinks to the left.",
+        "The calculation: water in q, fuel in n: Here's the first methanol trial.",
+        "twenty point zero / water / zero point zero four three seven / minus three hundred and eighty three / fuel",
+        "On the spoken cues: Task line: \"Find ΔHc of methanol (trial 1)\". Equation strip: \"CH₃OH(l) + 3/2 O₂(g) → CO₂(g) + 2H₂O(l)\". Givens, grouped with units, small at the top of the right zone: \"water: 200.0 g | 22.4 °C → 42.4 °C | c = 4.18 J g⁻¹ °C⁻¹\" and \"burner: 151.64 g → 150.24 g | M(CH₃OH) = 32.04 g mol⁻¹\". Task line, equation strip and givens stay grey while the working writes; one line per cue, earlier lines dimming: on \"twenty point",
+        "explain",
+        "the plate shrinks to the left. Task line: \"Find ΔHc of methanol (trial 1)\". Equation strip: \"CH₃OH(l) + 3/2 O₂(g) → CO₂(g) + 2H₂O(l)\". Givens, grouped with units, small at the top of the right zone: \"water: 200.0 g | 22.4 °C → 42.4 °C | c = 4.18 J g⁻¹ °C⁻¹\" and \"burner: 151.64 g → 150.24 g | M(CH₃OH) = 32.04 g mol⁻¹\". Task line, equation strip and givens stay grey while the working writes; one line per cue, earlier lines dimming: on \"twenty point zero\" \"ΔT = 42.4 − 22.4 = 20.0 °C\"; on \"water\" \"q = m(water) c ΔT = 200.0 × 4.18 × 20.0 = 16 720 J = 16.72 kJ\" with the C03 grey tag \"keep the digits; round at the end\" and a navy tag \"m = water, not fuel\"; on \"zero point zero four three seven\" \"Δm = 151.64 − 150.24 = 1.40 g\" then \"n = 1.40 ÷ 32.04 = 0.043695 mol\" (grey tag \"initial − final: a positive mass\"); on \"minus three hundred and eighty three\" \"ΔHc = −q ÷ n = −16.72 kJ ÷ 0.043695 mol = −382.65 → −383 kJ mol⁻¹ (3 s.f.)\" and the answer chip pins. On \"fuel\" a small chip \"neutralisation: n of water | here: n of fuel\" writes and dims. Bright at the end: the answer chip, the \"m = water\" tag and the n line. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "compare-range": [
+        "new",
+        "the results table writes in the right zone, one row per cue, in the alcohol colours: \"methanol | −383, −377, −388 | mean −383 kJ mol⁻¹\"; \"ethanol | −688, −676, −700 | mean −688\"; \"propan-1-ol | −985, −975, −995 | mean −985\"; \"butan-1-ol | −1.20, −1.19, −1.21 (× 10³) | mean −1.20 × 10³\".",
+        "Comparing the range: Do three trials for each alcohol and take the mean.",
+        "negative / half",
+        "On the spoken cues: On \"negative\" the series graph draws in the centre (x \"number of carbons\" 1 to 4, y \"|ΔHc| (kJ mol⁻¹)\" 0 to 2800): the four amber means plot with small error bars, rising. On \"half\" the grey data points (726, 1367, 2021, 2676) plot above them, and one small grey column of percentages writes at the right of the graph, in the alcohol colours (\"53% / 50% / 49% / 45% of the data value\"; one item). The table's trial",
+        "explain",
+        "the results table writes in the right zone, one row per cue, in the alcohol colours: \"methanol | −383, −377, −388 | mean −383 kJ mol⁻¹\"; \"ethanol | −688, −676, −700 | mean −688\"; \"propan-1-ol | −985, −975, −995 | mean −985\"; \"butan-1-ol | −1.20, −1.19, −1.21 (× 10³) | mean −1.20 × 10³\". On \"negative\" the series graph draws in the centre (x \"number of carbons\" 1 to 4, y \"|ΔHc| (kJ mol⁻¹)\" 0 to 2800): the four amber means plot with small error bars, rising. On \"half\" the grey data points (726, 1367, 2021, 2676) plot above them, and one small grey column of percentages writes at the right of the graph, in the alcohol colours (\"53% / 50% / 49% / 45% of the data value\"; one item). The table's trial columns dim, leaving the means. Bright at the end: the graph's two point sets and the percentage column. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "reliable-comparison": [
+        "new",
+        "the graph stays; the table shrinks out.",
+        "A reliable comparison: Are they reliable?",
+        "two percent / bigger",
+        "On the spoken cues: On \"two percent\" the error bars brighten and a tag writes \"trials within about 2% of each mean\" with the reliability card header small: \"Reliability: repeats agree\". On \"bigger\" the gap-against-spread brace runs: a tall brace between the ethanol and propan-1-ol points \"gap about 300 kJ mol⁻¹\", and a tiny brace on the ethanol error bar \"spread about 25 kJ mol⁻¹\"; tag \"gap much bigger than spread: the order is",
+        "explain",
+        "the graph stays; the table shrinks out. On \"two percent\" the error bars brighten and a tag writes \"trials within about 2% of each mean\" with the reliability card header small: \"Reliability: repeats agree\". On \"bigger\" the gap-against-spread brace runs: a tall brace between the ethanol and propan-1-ol points \"gap about 300 kJ mol⁻¹\", and a tiny brace on the ethanol error bar \"spread about 25 kJ mol⁻¹\"; tag \"gap much bigger than spread: the order is reliable\". Bright at the end: the two braces and the tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "error-chain": [
+        "adjust",
+        "the accuracy card header writes small: \"Accuracy: close to the data value?",
+        "Where the rest goes: the error chain: But they aren't accurate.",
+        "can / incomplete / evaporates / less negative",
+        "On the spoken cues: About half.\" The error-chain rows write in the right zone, each lighting on its cue while the previous dims: on \"can\" \"heat to can, clamp, air → q ↓ → ΔH less negative\" (orange q box), with the base plate small at the left and orange arrows into the can wall, clamp and air; on \"incomplete\" \"incomplete combustion, soot → q ↓ → ΔH less negative\" (orange q box), the plate cross-fading to",
+        "explain",
+        "the accuracy card header writes small: \"Accuracy: close to the data value? About half.\" The error-chain rows write in the right zone, each lighting on its cue while the previous dims: on \"can\" \"heat to can, clamp, air → q ↓ → ΔH less negative\" (orange q box), with the base plate small at the left and orange arrows into the can wall, clamp and air; on \"incomplete\" \"incomplete combustion, soot → q ↓ → ΔH less negative\" (orange q box), the plate cross-fading to `m7-spirit-burner-calorimeter-sooty-v1.png`; on \"evaporates\" \"evaporation from the wick → n ↑ → ΔH less negative\" (blue n box), with the evaporation wisp on a capless thumbnail. On \"less negative\" all three ΔH boxes pulse together, tag \"systematic: pushes every trial the same way\". On \"Not every error\" the accuracy header and the \"systematic\" tag dim, and a fourth row writes in amber: \"water recorded as more than it was → q ↑ → ΔH more negative\", with up arrows. Bright at the end: the three ΔH boxes and the amber row. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "extrapolation-contrast": [
+        "new",
+        "the board clears.",
+        "Why extrapolation helps only a little here: In the neutralisation practical, you extended the cooling line back to recover lost heat.",
+        "instant / several minutes",
+        "On the spoken cues: Left, a small grey thumbnail of chem-m6-p02's temperature-time graph with its dashed line back to the moment of mixing, tag \"neutralisation: almost instant\". On \"instant\" the thumbnail's dashed line pulses. On \"several minutes\" the burn timeline draws in the centre: a temperature-time sketch rising over a heating section labelled \"flame on: several minutes\", then a short cooling section; orange loss ticks appear",
+        "explain",
+        "the board clears. Left, a small grey thumbnail of chem-m6-p02's temperature-time graph with its dashed line back to the moment of mixing, tag \"neutralisation: almost instant\". On \"instant\" the thumbnail's dashed line pulses. On \"several minutes\" the burn timeline draws in the centre: a temperature-time sketch rising over a heating section labelled \"flame on: several minutes\", then a short cooling section; orange loss ticks appear along the whole heating section. On \"corrects only the last little bit\" a short dashed extrapolation draws back from the cooling section to the flame-out time, and a bracket covers only the final tick, tag \"corrects only this\". Bright at the end: the timeline with its loss ticks and the \"corrects only this\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "improvements": [
+        "new",
+        "the error rows from scene 8 return small in the right zone.",
+        "Improvements that fix their cause: So match each fix to its cause.",
+        "draught shield / close / cap / accurate",
+        "On the spoken cues: The fix matcher runs, one chip per cue, each docking beside its row with a pen link: on \"draught shield\" \"shield + lid\" docks to the heat row (the shielded plate appears small at the left); on \"close\" \"flame close\" docks to the same row; on \"trim the wick\" \"short wick, clean base\" docks to the soot row; on \"cap\" \"cap on, reweigh at once\" docks to the evaporation row. On \"accurate\" a chip \"more repeats → more",
+        "explain",
+        "the error rows from scene 8 return small in the right zone. The fix matcher runs, one chip per cue, each docking beside its row with a pen link: on \"draught shield\" \"shield + lid\" docks to the heat row (the shielded plate appears small at the left); on \"close\" \"flame close\" docks to the same row; on \"trim the wick\" \"short wick, clean base\" docks to the soot row; on \"cap\" \"cap on, reweigh at once\" docks to the evaporation row. On \"accurate\" a chip \"more repeats → more accurate\" fades in and is crossed (caption \"repeats improve reliability; the losses lower every trial\"). Bright at the end: the docked fix chips and the crossed chip. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "validity": [
+        "new",
+        "the validity card writes in the right zone: header \"Validity: measures what was intended?\"; two rows lighting in turn: \"Ranking the alcohols: valid (one variable changed; similar losses)\" with a small green tick and the four graph points thumbnail; on \"drift\" the scene 6 percentage column (53, 50, 49, 45%) returns small in grey beside the validity row, then dims as the next row writes (author note l); on \"reaches\" \"Each enthalpy value: less valid (only the water's heat is measured)\" with an amber tilde and the heat-path thumbnail showing arrows escaping.",
+        "Is it valid?: Is it valid, meaning, does it measure what you intended?",
+        "drift / reaches",
+        "On the spoken cues: A small grey footer: \"Reliability: repeats agree. Accuracy: close to the data value.\" Bright at the end: the two validity rows.",
+        "explain",
+        "the validity card writes in the right zone: header \"Validity: measures what was intended?\"; two rows lighting in turn: \"Ranking the alcohols: valid (one variable changed; similar losses)\" with a small green tick and the four graph points thumbnail; on \"drift\" the scene 6 percentage column (53, 50, 49, 45%) returns small in grey beside the validity row, then dims as the next row writes (author note l); on \"reaches\" \"Each enthalpy value: less valid (only the water's heat is measured)\" with an amber tilde and the heat-path thumbnail showing arrows escaping. A small grey footer: \"Reliability: repeats agree. Accuracy: close to the data value.\" Bright at the end: the two validity rows. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, the current row and header bright, earlier rows dimming: \"methanol, ethanol, propan-1-ol: highly flammable (H225); butan-1-ol: flammable (H226)\" / \"fire; vapour can reach a flame\" / \"refill only when cold, away from flames (station or fume cupboard); cap to extinguish; stock bottles away\"; \"methanol: toxic if swallowed, inhaled or on skin (H301, H331, H311); damages organs (H370)\" / \"poisoning; damage to eyesight and nerves\" / \"small volumes; no skin contact; ventilate; teacher fills burners\"; \"propan-1-ol, butan-1-ol: serious eye damage (H318)\" / \"eye injury from a splash\" / \"safety glasses\"; \"hot can and clamp\" / \"burns\" / \"let it cool before handling\" (row shown, not spoken); \"waste\" / \"flammable, harms drains\" / \"labelled organic waste container; never the sink\".",
+        "The risk assessment: Now the risks.",
+        "toxic / eyes / organic waste",
+        "On the spoken cues: On \"flammable\" `m7-ethanol-fuel-bottle-v1.png` appears small with a coded label \"alcohol stock\", and `m7-fume-cupboard-v1.png` small beside the refilling control. On \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\".",
+        "explain",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, the current row and header bright, earlier rows dimming: \"methanol, ethanol, propan-1-ol: highly flammable (H225); butan-1-ol: flammable (H226)\" / \"fire; vapour can reach a flame\" / \"refill only when cold, away from flames (station or fume cupboard); cap to extinguish; stock bottles away\"; \"methanol: toxic if swallowed, inhaled or on skin (H301, H331, H311); damages organs (H370)\" / \"poisoning; damage to eyesight and nerves\" / \"small volumes; no skin contact; ventilate; teacher fills burners\"; \"propan-1-ol, butan-1-ol: serious eye damage (H318)\" / \"eye injury from a splash\" / \"safety glasses\"; \"hot can and clamp\" / \"burns\" / \"let it cool before handling\" (row shown, not spoken); \"waste\" / \"flammable, harms drains\" / \"labelled organic waste container; never the sink\". On \"flammable\" `m7-ethanol-fuel-bottle-v1.png` appears small with a coded label \"alcohol stock\", and `m7-fume-cupboard-v1.png` small beside the refilling control. On \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 2 seconds (reading hold; the table returns in the key notes). Hold about 2 seconds (reading hold; the table returns in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds (reading hold; the table returns in the key notes)"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: Two phrases to keep.",
+        "Water in q, fuel in n / shield, lid, close, cap",
+        "On the spoken cues: Handwritten lines: \"Water in q, fuel in n.\" and \"Shield, lid, close, cap.\" Under the first, two small arrows from the plate thumbnail: one from the water to \"q = m c ΔT\", one from the burner on the balance to \"n = Δm ÷ M\". Under the second, four small icons light in turn (shield, lid, flame bracket, cap), each with its cause in grey (\"air currents\", \"surface loss\", \"heat to the air\", \"evaporation\").",
+        "explain",
+        "the board clears. Handwritten lines: \"Water in q, fuel in n.\" and \"Shield, lid, close, cap.\" Under the first, two small arrows from the plate thumbnail: one from the water to \"q = m c ΔT\", one from the burner on the balance to \"n = Δm ÷ M\". Under the second, four small icons light in turn (shield, lid, flame bracket, cap), each with its cause in grey (\"air currents\", \"surface loss\", \"heat to the air\", \"evaporation\"). Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. An ethanol spirit burner heats two",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A spirit burner containing ethanol (M = 46.07 g mol⁻¹) is used to heat 200.0 g of water from 20.3 °C to 38.9 °C. The mass of the spirit burner decreases from 158.42 g to 157.36 g. The specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹. Calculate the molar enthalpy of combustion of ethanol.\" No apparatus drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no strip, no memory aid.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "eighteen point six / zero point zero two three zero / minus six hundred and seventy six / fuel in n",
+        "On the spoken cues: One line per cue, earlier lines dimming: on \"eighteen point six\" \"20.3 °C to 38.9 °C\" is underlined and \"ΔT = 38.9 − 20.3 = 18.6 °C\" writes; \"200.0 g of water\" and \"4.18 J g⁻¹ °C⁻¹\" are underlined as \"q = 200.0 × 4.18 × 18.6 = 15 549.6 J = 15.5496 kJ\" writes; on \"zero point zero two three zero\" \"158.42 g to 157.36 g\" and \"46.07 g mol⁻¹\" are underlined as \"Δm = 1.06 g; n = 1.06 ÷ 46.07 = 0.023008 mol\" writes; on",
+        "explain",
+        "the card stays, shrunk to the top. One line per cue, earlier lines dimming: on \"eighteen point six\" \"20.3 °C to 38.9 °C\" is underlined and \"ΔT = 38.9 − 20.3 = 18.6 °C\" writes; \"200.0 g of water\" and \"4.18 J g⁻¹ °C⁻¹\" are underlined as \"q = 200.0 × 4.18 × 18.6 = 15 549.6 J = 15.5496 kJ\" writes; on \"zero point zero two three zero\" \"158.42 g to 157.36 g\" and \"46.07 g mol⁻¹\" are underlined as \"Δm = 1.06 g; n = 1.06 ÷ 46.07 = 0.023008 mol\" writes; on \"minus six hundred and seventy six\" \"ΔHc = −15.5496 ÷ 0.023008 = −675.8 → −676 kJ mol⁻¹ (3 s.f.)\" and the answer chip pins. On \"classic slip\" a chip \"q = 1.06 × 4.18 × 18.6 = 82.4 J → −3.58 kJ mol⁻¹\" fades in and, on \"fuel in n\", is crossed (caption \"m in q is the water: 200.0 g\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card, worded as printed: \"A student burns methanol and then butan-1-ol in a spirit burner beneath an uncovered copper can, with no draught shield, heating the water by 20 °C each time.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A student burns methanol and butan-one-ol",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student burns methanol and then butan-1-ol in a spirit burner beneath an uncovered copper can, with no draught shield, heating the water by 20 °C each time. Her mean molar enthalpies of combustion are −310 kJ mol⁻¹ for methanol and −1050 kJ mol⁻¹ for butan-1-ol. The data values are −726 kJ mol⁻¹ and −2676 kJ mol⁻¹. Each was repeated three times. Explain why her values are less negative than the data values, and suggest one improvement that would reduce this difference.\" Beside it `m7-spirit-burner-calorimeter-v1.png` small (no heat arrows). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no arrows, no shield, no error chain.",
+        [
+            "DrawPath",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "water / less negative / draught shield",
+        "On the spoken cues: On \"water\" \"uncovered copper can, with no draught shield\" is underlined and orange arrows leave the plate's can sides and open top. On \"less negative\" the error-chain row writes small: \"heat lost → q ↓ → ΔH less negative\", with \"−310\" and \"−1050\" underlined. On \"draught shield\" the plate cross-fades to `m7-spirit-burner-calorimeter-shield-v1.png`, the arrows turning back at the shield; answer chip \"heat loss; shield",
+        "explain",
+        "the card stays, shrunk to the top. On \"water\" \"uncovered copper can, with no draught shield\" is underlined and orange arrows leave the plate's can sides and open top. On \"less negative\" the error-chain row writes small: \"heat lost → q ↓ → ΔH less negative\", with \"−310\" and \"−1050\" underlined. On \"draught shield\" the plate cross-fades to `m7-spirit-burner-calorimeter-shield-v1.png`, the arrows turning back at the shield; answer chip \"heat loss; shield + lid keeps more heat in the water\". On \"Repeating\" \"Each was repeated three times\" is underlined and a chip \"repeat more times\" fades in and is crossed (caption \"repeats: reliability, not accuracy\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 Same water, can, flame distance, shield, lid, 20.0 °C rise.\"",
+        "Decision rule and handoff: So: change only the alcohol, put the water's mass in q and the fuel's in n, trace each error to q or n, and stop heat loss at its source.",
+        "Next",
+        "On the spoken cues: \"2 Water in q, fuel in n.\" \"3 Error → q or n → ΔH.\" \"4 Fix the cause: shield, lid, close, cap.\" On \"Next\" a chip \"Next: practical and investigation questions (exam skills)\" appears, with a smaller grey chip \"then: combustion enthalpy practice\".",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Same water, can, flame distance, shield, lid, 20.0 °C rise.\" \"2 Water in q, fuel in n.\" \"3 Error → q or n → ΔH.\" \"4 Fix the cause: shield, lid, close, cap.\" On \"Next\" a chip \"Next: practical and investigation questions (exam skills)\" appears, with a smaller grey chip \"then: combustion enthalpy practice\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7G02_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Combustion calculations: water in q, fuel in n\" writes on.",
+        "Hook: A combustion question hands you three numbers that look alike: the water's mass, its temperature rise, and the mass of fuel burnt.",
+        "job / q / n / belong",
+        "On the spoken cues: The job sorter runs: three grey chips \"150.0 g\", \"20.0 °C\", \"1.10 g\" write in a row (no context, so nothing answer-bearing); on \"job\" two trays draw beneath; on \"q\" the first two chips drop into the orange tray \"q: the water\"; on \"n\" the third drops into the blue tray \"n: the fuel\". On \"Swap them\"",
+        "explain",
+        "heading \"Combustion calculations: water in q, fuel in n\" writes on. The job sorter runs: three grey chips \"150.0 g\", \"20.0 °C\", \"1.10 g\" write in a row (no context, so nothing answer-bearing); on \"job\" two trays draw beneath; on \"q\" the first two chips drop into the orange tray \"q: the water\"; on \"n\" the third drops into the blue tray \"n: the fuel\". On \"Swap them\" the chips jump trays and a grey tag writes \"fuel mass in q: answer far too small\" (no value), then they jump back. On \"belong\" four small grey bars draw at the right, one clearly short, with a \"?\" tag. The check strip builds on the left: \"water in q?\", \"fuel in n?\", \"kJ, per mole, sign?\", \"makes sense?\". The bars become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "table build"
+        ],
+        "Hold about 1 second; the check strip shrinks to the far left"
+    ],
+    "q1-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 1: methanol from raw data) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. A methanol spirit burner heats a",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: methanol from raw data)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A student used a spirit burner containing methanol (CH₃OH, M = 32.04 g mol⁻¹) to heat 150.0 g of water in a copper can. The temperature of the water rose from 22.4 °C to 42.4 °C. The mass of the spirit burner and methanol decreased from 151.64 g to 150.54 g. The specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹. The molar enthalpy of combustion of methanol is −726 kJ mol⁻¹.\" Demands: \"(a) Calculate the molar enthalpy of combustion of methanol from these results.\" \"(b) Calculate the percentage of the heat released by the burning methanol that was absorbed by the water.\" Two answer boxes. `m7-spirit-burner-calorimeter-v1.png` small at the right (no readouts, no arrows). Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-q-and-n": [
+        "adjust",
+        "the card shrinks to a strip.",
+        "The water, then the fuel: Start with the water.",
+        "twenty point zero / kilojoules / zero point zero three four three three",
+        "On the spoken cues: Type badge \"Raw data: q, n, ΔH\". On \"twenty point zero\" \"22.4 °C to 42.4 °C\" underlines and \"ΔT = 42.4 − 22.4 = 20.0 °C\" writes (orange). \"150.0 g of water\" and \"4.18 J g⁻¹ °C⁻¹\" underline as \"q = m(water) c ΔT = 150.0 × 4.18 × 20.0 = 12 540 J\" writes; on \"kilojoules\" \"= 12.540 kJ\" adds, with p03's",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Raw data: q, n, ΔH\". On \"twenty point zero\" \"22.4 °C to 42.4 °C\" underlines and \"ΔT = 42.4 − 22.4 = 20.0 °C\" writes (orange). \"150.0 g of water\" and \"4.18 J g⁻¹ °C⁻¹\" underline as \"q = m(water) c ΔT = 150.0 × 4.18 × 20.0 = 12 540 J\" writes; on \"kilojoules\" \"= 12.540 kJ\" adds, with p03's grey tag \"keep the digits; round at the end\" (fades). The q line shrinks to an orange kept chip \"q = 12.540 kJ\". Strip: \"water in q?\" ticks. On \"one point one zero\" `m7-spirit-burner-on-balance-v1.png` appears small with the balance readout reading \"151.64 g\" then \"150.54 g\"; \"151.64 g to 150.54 g\" underlines and \"Δm = 151.64 − 150.54 = 1.10 g\" writes (blue; grey tag \"initial − final\"). On \"zero point zero three four three three\" \"M = 32.04 g mol⁻¹\" underlines and \"n = 1.10 ÷ 32.04 = 0.034332 mol\" writes (blue). Strip: \"fuel in n?\" ticks. Bright at the end: the kept q chip, the n line, the balance readout.",
+        [
+            "Mark underline",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "q1-dh": [
+        "new",
+        "the Δm line dims; the q chip and n line slide into \"ΔHc = −q ÷ n = −12.540 kJ ÷ 0.034332 mol = −365.26 kJ mol⁻¹\" (teal).",
+        "Minus q over n: Delta H is minus q over n: minus twelve point five four zero kilojoules, over zero point zero three four three three moles.",
+        "three hundred and sixty five / negative",
+        "On the spoken cues: On \"three hundred and sixty five\" answer box (a) fills \"ΔHc = −365 kJ mol⁻¹\" with a grey tag \"3 s.f.: 1.10 g and 20.0 °C\". On \"negative\" the minus sign pulses, grey tag \"heat released: ΔH negative\". Strip: \"kJ, per mole, sign?\" ticks. The answer shrinks to a teal kept chip.",
+        "explain",
+        "the Δm line dims; the q chip and n line slide into \"ΔHc = −q ÷ n = −12.540 kJ ÷ 0.034332 mol = −365.26 kJ mol⁻¹\" (teal). On \"three hundred and sixty five\" answer box (a) fills \"ΔHc = −365 kJ mol⁻¹\" with a grey tag \"3 s.f.: 1.10 g and 20.0 °C\". On \"negative\" the minus sign pulses, grey tag \"heat released: ΔH negative\". Strip: \"kJ, per mole, sign?\" ticks. The answer shrinks to a teal kept chip.",
+        [
+            "Enter slide",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-percent": [
+        "new",
+        "\"−726 kJ mol⁻¹\" underlines.",
+        "How much reached the water: Part b asks how much of the heat reached the water.",
+        "twenty four point nine three / fifty point three",
+        "On the spoken cues: \"heat released = n × 726 = 0.034332 × 726 = 24.925 kJ\" writes. On \"twenty four point nine three\" the heat split bar draws: a full bar \"24.93 kJ released\". On \"fifty point three\" its orange share fills \"12.54 kJ to the water\" and \"12.540 ÷ 24.925 × 100 = 50.3%\" writes; answer box (b) fills \"50.3%\".",
+        "explain",
+        "\"−726 kJ mol⁻¹\" underlines. \"heat released = n × 726 = 0.034332 × 726 = 24.925 kJ\" writes. On \"twenty four point nine three\" the heat split bar draws: a full bar \"24.93 kJ released\". On \"fifty point three\" its orange share fills \"12.54 kJ to the water\" and \"12.540 ÷ 24.925 × 100 = 50.3%\" writes; answer box (b) fills \"50.3%\". The grey remainder labels \"to the can and air\" with small orange arrows leaving the plate's can sides. A grey tag \"check: 365 ÷ 726 = 50.3% too\" (fades). Strip: \"makes sense?\" ticks. Bright at the end: the split bar and answer (b).",
+        [
+            "Mark underline",
+            "DrawPath",
+            "lineage split",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"ΔHc = −12.540 ÷ 1.10 = −11.4 kJ mol⁻¹\" fades in; on \"gram\" \"1.10 g\" in the chip rings and the chip takes a red scribble cross (caption \"÷ grams gives kJ per gram; ΔHc is per mole of fuel\").",
+        "The classic mistake: The classic slip is dividing by the grams instead of the moles.",
+        "gram",
+        "On the spoken cues: a chip \"ΔHc = −12.540 ÷ 1.10 = −11.4 kJ mol⁻¹\" fades in; on \"gram\" \"1.10 g\" in the chip rings and the chip takes a red scribble cross (caption \"÷ grams gives kJ per gram; ΔHc is per mole of fuel\").",
+        "explain",
+        "a chip \"ΔHc = −12.540 ÷ 1.10 = −11.4 kJ mol⁻¹\" fades in; on \"gram\" \"1.10 g\" in the chip rings and the chip takes a red scribble cross (caption \"÷ grams gives kJ per gram; ΔHc is per mole of fuel\").",
+        [
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "q2-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 2: backwards to a mass) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two runs the other way. A student",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: backwards to a mass)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A student plans to heat 250.0 g of water from 20.0 °C to 35.0 °C using a spirit burner containing ethanol (C₂H₅OH, M = 46.07 g mol⁻¹). In earlier trials with the same apparatus, the water absorbed 45.0% of the heat released by the burning ethanol. The molar enthalpy of combustion of ethanol is −1367 kJ mol⁻¹, and the specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹. Calculate the mass of ethanol that the student should expect to burn.\" One answer box. `m7-ethanol-fuel-bottle-v1.png` small at the right with a coded label \"ethanol\". Nothing answer-bearing. **Countdown ring 10 seconds**; check strip dims; card stays on screen.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-heat": [
+        "new",
+        "the card shrinks to a strip.",
+        "Heat the water needs, then heat released: First, the heat the water needs: two hundred and fifty, times four point one eight, times fifteen point zero.",
+        "fifteen point six seven five / more / thirty four point eight three",
+        "On the spoken cues: Type badge \"Backwards: heat to mass\". \"250.0 g of water\" and \"20.0 °C to 35.0 °C\" underline; \"ΔT = 35.0 − 20.0 = 15.0 °C\" and \"q(water) = 250.0 × 4.18 × 15.0 = 15 675 J = 15.675 kJ\" write (orange). On \"fifteen point six seven five\" the q line shrinks to an orange kept chip. Strip: \"water in q?\"",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Backwards: heat to mass\". \"250.0 g of water\" and \"20.0 °C to 35.0 °C\" underline; \"ΔT = 35.0 − 20.0 = 15.0 °C\" and \"q(water) = 250.0 × 4.18 × 15.0 = 15 675 J = 15.675 kJ\" write (orange). On \"fifteen point six seven five\" the q line shrinks to an orange kept chip. Strip: \"water in q?\" ticks. On \"more\" \"45.0%\" underlines and the heat split bar draws empty with only its orange share known, \"15.675 kJ = 45.0% of the heat released\", and a \"?\" over the full bar. On \"thirty four point eight three\" \"heat released = 15.675 ÷ 0.450 = 34.833 kJ\" writes, and the full bar fills \"34.83 kJ\". Bright at the end: the split bar and the heat released line.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-mass": [
+        "new",
+        "\"−1367 kJ mol⁻¹\" underlines.",
+        "Heat to moles to mass: Now the fuel.",
+        "zero point zero two five four eight / one point one seven",
+        "On the spoken cues: \"n(ethanol) = 34.833 ÷ 1367 = 0.025482 mol\" writes (blue; grey tag \"use the size, 1367: the sign only says heat is released\"). On \"one point one seven\" \"M = 46.07 g mol⁻¹\" underlines and \"m = 0.025482 × 46.07 = 1.1739 g → 1.17 g\" writes; the answer box fills \"1.17 g\" with a grey tag \"3 s.f.: 15.0",
+        "explain",
+        "\"−1367 kJ mol⁻¹\" underlines. \"n(ethanol) = 34.833 ÷ 1367 = 0.025482 mol\" writes (blue; grey tag \"use the size, 1367: the sign only says heat is released\"). On \"one point one seven\" \"M = 46.07 g mol⁻¹\" underlines and \"m = 0.025482 × 46.07 = 1.1739 g → 1.17 g\" writes; the answer box fills \"1.17 g\" with a grey tag \"3 s.f.: 15.0 °C and 45.0%\". Strip: \"fuel in n?\" and \"kJ, per mole, sign?\" tick.",
+        [
+            "Mark underline",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"15.675 × 0.450 = 7.05 kJ → 0.238 g\" fades in.",
+        "The classic mistake: The classic slip is multiplying by zero point four five zero instead of dividing.",
+        "more",
+        "On the spoken cues: On \"more\" a short number line writes under it with three marks: \"0.238 g (× 0.450)\", \"0.528 g (no heat lost)\", \"1.17 g (55% lost)\"; an arrow labelled \"heat lost → more fuel\" points right from 0.528. The 0.238 chip takes a red scribble cross (caption \"less heat reaches the water, so more fuel must",
+        "explain",
+        "a chip \"15.675 × 0.450 = 7.05 kJ → 0.238 g\" fades in. On \"more\" a short number line writes under it with three marks: \"0.238 g (× 0.450)\", \"0.528 g (no heat lost)\", \"1.17 g (55% lost)\"; an arrow labelled \"heat lost → more fuel\" points right from 0.528. The 0.238 chip takes a red scribble cross (caption \"less heat reaches the water, so more fuel must burn\"). Strip: \"makes sense?\" ticks.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 3: is trial 3 anomalous?) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. A student burns propan-one-ol in four",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: is trial 3 anomalous?)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A student burned propan-1-ol (C₃H₇OH, M = 60.09 g mol⁻¹) in a spirit burner beneath a copper can with a draught shield and lid. In each trial she heated 250.0 g of fresh water. The specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹.\" Table: \"Trial | Temperature rise (°C) | Mass lost by burner (g) | ΔHc (kJ mol⁻¹)\"; \"1 | 18.0 | 1.16 | −974\"; \"2 | 17.9 | 1.15 | −977\"; \"3 | 18.2 | 1.62 | (blank cell)\"; \"4 | 18.1 | 1.17 | −971\". Demands: \"(a) Calculate the molar enthalpy of combustion of propan-1-ol for trial 3.\" \"(b) Explain whether trial 3 should be included when calculating the mean, and calculate the mean molar enthalpy of combustion.\" Two answer boxes. `m7-spirit-burner-calorimeter-shield-v1.png` small at the right. Nothing answer-bearing (no trial strip, no highlighted row). **Countdown ring 10 seconds**; check strip dims; card stays on screen.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-trial3": [
+        "new",
+        "the card shrinks to a strip, the table kept readable (G03 build rule: if the table cannot be read when shrunk, it stays full size and only the stem shrinks).",
+        "Same steps for trial 3: Trial three, same steps.",
+        "nineteen thousand and nineteen / seven hundred and five",
+        "On the spoken cues: Type badge \"Table: is it anomalous?\", with the grey gloss under it: \"anomalous result: doesn't fit the pattern of the others\". Row 3's \"18.2\" and \"250.0 g\" underline as \"q = 250.0 × 4.18 × 18.2 = 19 019 J = 19.019 kJ\" writes (orange). \"1.62\" and \"60.09\" underline as \"n = 1.62 ÷ 60.09 = 0.026960",
+        "explain",
+        "the card shrinks to a strip, the table kept readable (G03 build rule: if the table cannot be read when shrunk, it stays full size and only the stem shrinks). Type badge \"Table: is it anomalous?\", with the grey gloss under it: \"anomalous result: doesn't fit the pattern of the others\". Row 3's \"18.2\" and \"250.0 g\" underline as \"q = 250.0 × 4.18 × 18.2 = 19 019 J = 19.019 kJ\" writes (orange). \"1.62\" and \"60.09\" underline as \"n = 1.62 ÷ 60.09 = 0.026960 mol\" writes (blue). On \"seven hundred and five\" \"ΔHc = −19.019 ÷ 0.026960 = −705.46 → −705 kJ mol⁻¹\" writes; answer box (a) fills \"−705 kJ mol⁻¹\" and the table's blank cell fills \"−705\" in teal. On \"close to minus nine seventy five\" the trial strip draws: four bars of |ΔHc|, with a dashed band through trials 1, 2 and 4 and bar 3 well short of it. Strip: \"water in q?\", \"fuel in n?\" tick.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-judge": [
+        "new",
+        "the table's temperature column underlines (18.0, 17.9, 18.2, 18.1, grey tag \"rises match\"); on \"half a gram\" the mass column underlines and \"1.62\" rings amber against \"1.15 to 1.17\" (tag \"about 0.45 g more for the same heat\").",
+        "Find the cause before you drop it: So does it belong?",
+        "half a gram / evaporated / less negative",
+        "On the spoken cues: On \"evaporated\" p03's evaporation wisp thumbnail appears small (an uncapped burner, pale wisps, tag \"mass lost, no heat\"). On \"less negative\" the error-chain row writes small: \"fuel lost without burning → n ↑ → ΔH less negative\" (blue n box), with a small grey tag under it: \"other possible causes:",
+        "explain",
+        "the table's temperature column underlines (18.0, 17.9, 18.2, 18.1, grey tag \"rises match\"); on \"half a gram\" the mass column underlines and \"1.62\" rings amber against \"1.15 to 1.17\" (tag \"about 0.45 g more for the same heat\"). On \"evaporated\" p03's evaporation wisp thumbnail appears small (an uncapped burner, pale wisps, tag \"mass lost, no heat\"). On \"less negative\" the error-chain row writes small: \"fuel lost without burning → n ↑ → ΔH less negative\" (blue n box), with a small grey tag under it: \"other possible causes: a draught or a sooty flame in that trial\". Answer box (b) writes two short lines: \"Trial 3: same rise, but about 0.45 g more fuel lost → that fuel gave the water no heat (likely evaporation or a spill).\" / \"n too big → ΔH less negative. Exclude it; repeat if possible.\" (The full sentence stays in the model answer.) Strip: \"makes sense?\" ticks. Bright at the end: the ringed 1.62, the error-chain row, the two answer lines.",
+        [
+            "Mark underline",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-mean": [
+        "new",
+        "rows 1, 2 and 4's ΔHc cells underline; \"mean = (−974 + −977 + −971) ÷ 3 = −974 kJ mol⁻¹\" writes (grey tag \"unrounded trials give −974.4: the same\"); answer box (b) adds \"Mean of trials 1, 2 and 4: −974 kJ mol⁻¹\".",
+        "The mean of the trials that fit: Average the other three.",
+        "nine hundred and seventy four / explain",
+        "On the spoken cues: A small grey chip \"974 ÷ 2021 = 48%: about half, as expected\". On \"explain\" a handwritten line under the board: \"Only drop a result when you can explain it.\"",
+        "explain",
+        "rows 1, 2 and 4's ΔHc cells underline; \"mean = (−974 + −977 + −971) ÷ 3 = −974 kJ mol⁻¹\" writes (grey tag \"unrounded trials give −974.4: the same\"); answer box (b) adds \"Mean of trials 1, 2 and 4: −974 kJ mol⁻¹\". A small grey chip \"974 ÷ 2021 = 48%: about half, as expected\". On \"explain\" a handwritten line under the board: \"Only drop a result when you can explain it.\"",
+        [
+            "HandText write-on",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"mean of all four = −907 kJ mol⁻¹\" fades in; on \"no\" a coded tick at −907 appears on the trial strip, below the dashed band where no bar ends; the chip takes a red scribble cross (caption \"one faulty trial drags the mean away from every good trial\").",
+        "The classic mistake: The classic mistake is averaging all four.",
+        "no",
+        "On the spoken cues: a chip \"mean of all four = −907 kJ mol⁻¹\" fades in; on \"no\" a coded tick at −907 appears on the trial strip, below the dashed band where no bar ends; the chip takes a red scribble cross (caption \"one faulty trial drags the mean away from every good trial\").",
+        "explain",
+        "a chip \"mean of all four = −907 kJ mol⁻¹\" fades in; on \"no\" a coded tick at −907 appears on the trial strip, below the dashed band where no bar ends; the chip takes a red scribble cross (caption \"one faulty trial drags the mean away from every good trial\").",
+        [
+            "Mark cross",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "decision-board": [
+        "new",
+        "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"q\" \"Water in q → q = m(water) × 4.18 × ΔT, in J then kJ (Q1, Q2, Q3)\"; on \"n\" \"Fuel in n → n = (initial − final mass) ÷ M (Q1, Q3)\"; \"kJ, per mole, sign → ΔHc = −q ÷ n; ÷ grams gives kJ per gram (Q1)\"; on \"divide\" \"Part of the heat → heat released = q(water) ÷ fraction; heat lost means more fuel (Q2)\"; on \"cause\" \"Odd trial → find the cause (q or n?); exclude only if explained; mean the rest (Q3)\".",
+        "Decision board: So for any combustion calculation: the water's mass and rise go into q, the fuel's mass lost gives n, and delta H is minus q over n, in kilojoules per mole.",
+        "q / n / divide / cause",
+        "On the spoken cues: Under the board, small: \"Answers to the data's significant figures.\" On \"Next\" a chip \"Next: where can an alcohol reaction lead?\" slides in at the lower right. Hold about 2 seconds.",
+        "explain",
+        "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"q\" \"Water in q → q = m(water) × 4.18 × ΔT, in J then kJ (Q1, Q2, Q3)\"; on \"n\" \"Fuel in n → n = (initial − final mass) ÷ M (Q1, Q3)\"; \"kJ, per mole, sign → ΔHc = −q ÷ n; ÷ grams gives kJ per gram (Q1)\"; on \"divide\" \"Part of the heat → heat released = q(water) ÷ fraction; heat lost means more fuel (Q2)\"; on \"cause\" \"Odd trial → find the cause (q or n?); exclude only if explained; mean the rest (Q3)\". Under the board, small: \"Answers to the data's significant figures.\" On \"Next\" a chip \"Next: where can an alcohol reaction lead?\" slides in at the lower right. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "lineage split",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C08A_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Alcohol reactions: where can they lead?\".",
+        "Hook (one oxidant, two alcohols): Burning an alcohol completely breaks it right down, to carbon dioxide and water.",
+        "new / ethanol / green / orange",
+        "On the spoken cues: A small grey thumbnail of c07's combustion equation (C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O) sits top-left with the tag \"skeleton gone\". On \"new\" ethanol (condensed, OH ringed red) draws in the centre and three blank arrows grow from it towards three empty dashed boxes (top, right, bottom), each tagged \"?\". The arrows and boxes shrink to the upper right. `m8-dichromate-orange-v1.png` appears medium at the left with the coded",
+        "explain",
+        "heading writes on: \"Alcohol reactions: where can they lead?\". A small grey thumbnail of c07's combustion equation (C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O) sits top-left with the tag \"skeleton gone\". On \"new\" ethanol (condensed, OH ringed red) draws in the centre and three blank arrows grow from it towards three empty dashed boxes (top, right, bottom), each tagged \"?\". The arrows and boxes shrink to the upper right. `m8-dichromate-orange-v1.png` appears medium at the left with the coded label \"acidified dichromate (oxidising agent)\". On \"ethanol\" a small ethanol chip slides onto the tube and a grey \"warm\" chip writes; on \"green\" the plate cross-fades to `m8-dichromate-green-v1.png` (aligned pair, same position). On \"orange\" a second `m8-dichromate-orange-v1.png` appears at the right, same size, with the chip \"2-methylpropan-2-ol\" and the skeletal structure small above it, and stays orange (tag \"no change\"). As the question is asked the label and the \"warm\" chip dim. Bright at the end: the two tubes (green, orange) and the heading. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "dehydration": [
+        "new",
+        "the plates leave.",
+        "Dehydration: take out water, make a double bond: First, dehydration, which means removing water.",
+        "dehydration / double bond / seventy",
+        "On the spoken cues: Task chip \"Reaction 1: dehydration\". Ethanol in full structural form. On \"dehydration\" a chip writes \"dehydration: remove H₂O\" with a small grey screen word \"(elimination)\". The water lift runs: on \"O H leaves\" the OH on C1 is ringed red; on \"next door\" one H on C2 is ringed red; on \"water molecule\" the two ringed pieces slide together into \"H₂O\" and drift right. On \"double bond\" each carbon shows a grey \"one bond",
+        "explain",
+        "the plates leave. Task chip \"Reaction 1: dehydration\". Ethanol in full structural form. On \"dehydration\" a chip writes \"dehydration: remove H₂O\" with a small grey screen word \"(elimination)\". The water lift runs: on \"O H leaves\" the OH on C1 is ringed red; on \"next door\" one H on C2 is ringed red; on \"water molecule\" the two ringed pieces slide together into \"H₂O\" and drift right. On \"double bond\" each carbon shows a grey \"one bond short\" notch, then a red second line draws between them, giving CH₂=CH₂. The equation stage strip builds under it: \"CH₃CH₂OH → CH₂=CH₂ + H₂O\". On \"arrow\" the condition chips write on and under the arrow one at a time: \"conc. H₂SO₄ (or conc. H₃PO₄)\", on \"seventy\" \"about 170 °C\". A small grey chip \"conc. H₂SO₄: corrosive\" writes and dims. Bright at the end: the equation, its two condition chips and the \"remove H₂O\" chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "hydration-reversed": [
+        "new",
+        "the dehydration strip shrinks to the lower half.",
+        "Hydration, run backwards: If that looks familiar, it should.",
+        "hydration / removing / dilute",
+        "On the spoken cues: Above it, c04a's hydration strip returns (grey \"addition video\" chip): \"C₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)\" with its chips \"steam\", \"H₃PO₄ catalyst\", \"about 300 °C\", \"high pressure\". On \"hydration\" the direction swap runs: a vertical double arrow joins the two strips (tag \"same reaction, opposite directions\"). On \"steam\" the \"steam\" and \"high pressure\" chips pulse together; on \"soaks up water\" a small grey tag \"conc. acid",
+        "explain",
+        "the dehydration strip shrinks to the lower half. Above it, c04a's hydration strip returns (grey \"addition video\" chip): \"C₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)\" with its chips \"steam\", \"H₃PO₄ catalyst\", \"about 300 °C\", \"high pressure\". On \"hydration\" the direction swap runs: a vertical double arrow joins the two strips (tag \"same reaction, opposite directions\"). On \"steam\" the \"steam\" and \"high pressure\" chips pulse together; on \"soaks up water\" a small grey tag \"conc. acid takes up H₂O\" writes beside the dehydration chips; on \"escapes\" a small grey tag writes under the dehydration arrow: \"→: water and ethene removed, so it runs one way\" (the hydration strip keeps its ⇌), then dims. On \"removing\" a small equilibrium see-saw (Module 5 style) tips: \"+ water → alcohol\" on the left, \"− water → alkene\" on the right, each half lighting on its phrase. On \"dilute\" a chip \"dehydration: dilute H₂SO₄ + H₂O\" fades in and is crossed (caption \"remove water: concentrated acid\"). The hydration strip's chips dim. Bright at the end: the see-saw's \"− water → alkene\" half, the crossed chip and the dehydration strip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "two-alkenes": [
+        "new",
+        "the board clears.",
+        "Two neighbours, two possible alkenes: With a longer alcohol, there can be a choice.",
+        "each / but-two-ene / both",
+        "On the spoken cues: Task chip \"Dehydration: which alkene?\". Butan-2-ol in full structural form (OH ringed red on C2; C1 to C4 locants small). On \"each\" C1 and C3 glow pale blue with one H on each ringed red. Two branches of the strip build: upper, the H from C1 leaves with the OH (water lift) giving CH₂=CHCH₂CH₃, named \"but-1-ene\"; lower, on \"but-two-ene\", the H from C3 leaves giving CH₃CH=CHCH₃, named \"but-2-ene\". Both arrows carry",
+        "explain",
+        "the board clears. Task chip \"Dehydration: which alkene?\". Butan-2-ol in full structural form (OH ringed red on C2; C1 to C4 locants small). On \"each\" C1 and C3 glow pale blue with one H on each ringed red. Two branches of the strip build: upper, the H from C1 leaves with the OH (water lift) giving CH₂=CHCH₂CH₃, named \"but-1-ene\"; lower, on \"but-two-ene\", the H from C3 leaves giving CH₃CH=CHCH₃, named \"but-2-ene\". Both arrows carry the same chips \"conc. H₂SO₄, heat\". On \"usually the main product\" a small tag \"usually major\" sits beside but-2-ene and \"minor\" beside but-1-ene. A grey chip \"addition video: two possible products\" writes and dims. On \"both\" the two names pulse together. Bright at the end: the two product names and the \"usually major\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "substitution-hx": [
+        "adjust",
+        "the board clears.",
+        "Substitution with HX: swap the OH, make water: Second, substitution with a hydrogen halide, H X.",
+        "substitution / bromoethane / water / other",
+        "On the spoken cues: Task chip \"Reaction 2: substitution\". The strip builds: CH₃CH₂OH (full structural, OH ringed red); \"+ H–Br\"; the arrow. On \"substitution\" the swap docker (c06) runs: the OH lifts off the carbon and Br docks in its place, giving CH₃CH₂Br (named \"bromoethane\"). On \"water\" the lifted OH and the H from H–Br join into \"H₂O\" in the product box (tag \"OH + H → H₂O\"). On \"reflux\" the arrow chip \"heat under reflux\" writes,",
+        "explain",
+        "the board clears. Task chip \"Reaction 2: substitution\". The strip builds: CH₃CH₂OH (full structural, OH ringed red); \"+ H–Br\"; the arrow. On \"substitution\" the swap docker (c06) runs: the OH lifts off the carbon and Br docks in its place, giving CH₃CH₂Br (named \"bromoethane\"). On \"water\" the lifted OH and the H from H–Br join into \"H₂O\" in the product box (tag \"OH + H → H₂O\"). On \"reflux\" the arrow chip \"heat under reflux\" writes, and `m7-reflux-apparatus-v1.png` appears small at the left with the label \"reflux: vapours drip back\" (c06 callback). A small grey chip writes and dims: \"fume cupboard: HBr fumes are corrosive\". The reflux plate and its label dim before the c06 thumbnail writes. On \"other\" the c06 thumbnail \"CH₃CH₂Br + NaOH(aq) → CH₃CH₂OH + NaBr\" appears small above, and a grey double arrow links the two strips (tags \"c06: OH⁻ pushes out Br\", \"now: Br pushes out OH\"). Bright at the end: the equation, its reflux chip and the \"OH + H → H₂O\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "addition-or-substitution": [
+        "new",
+        "the board clears.",
+        "Same HBr: addition or substitution?: Careful, because hydrogen bromide also adds to alkenes.",
+        "starting / and water",
+        "On the spoken cues: Two strips, one above the other. Upper (grey chip \"addition video\"): \"CH₂=CH₂ + HBr → CH₃CH₂Br\", tag \"addition\". Lower: \"CH₃CH₂OH + HBr → CH₃CH₂Br + H₂O\", tag \"substitution\". On \"starting\" the two reactants are ringed (C=C in the upper, OH in the lower). On \"nothing left over\" the upper product box glows with the tag \"joined into one molecule: nothing else formed\". On \"and water\" the lower \"+ H₂O\" glows red-ringed",
+        "explain",
+        "the board clears. Two strips, one above the other. Upper (grey chip \"addition video\"): \"CH₂=CH₂ + HBr → CH₃CH₂Br\", tag \"addition\". Lower: \"CH₃CH₂OH + HBr → CH₃CH₂Br + H₂O\", tag \"substitution\". On \"starting\" the two reactants are ringed (C=C in the upper, OH in the lower). On \"nothing left over\" the upper product box glows with the tag \"joined into one molecule: nothing else formed\". On \"and water\" the lower \"+ H₂O\" glows red-ringed with the tag \"water formed → alcohol substitution\". Bright at the end: the two reaction tags and the water tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "oxidation": [
+        "adjust",
+        "the board clears.",
+        "Oxidation: two hydrogens off, a C=O on: Third, oxidation.",
+        "oxidation / carbonyl / start / green / cancer",
+        "On the spoken cues: Task chip \"Reaction 3: oxidation\". Ethanol in full structural form, the C–OH carbon (C1) ringed red. On \"oxidation\" the hydrogen strip-off runs: the H of the O–H and one H on C1 are ringed red, lift off together and slide into a small \"[O]\" bubble that turns into \"H₂O\"; on \"double bond\" a red second line draws between C1 and O, giving CH₃CHO. On \"carbonyl\" a tag writes under the C=O: \"carbonyl group: C=O\". The strip",
+        "explain",
+        "the board clears. Task chip \"Reaction 3: oxidation\". Ethanol in full structural form, the C–OH carbon (C1) ringed red. On \"oxidation\" the hydrogen strip-off runs: the H of the O–H and one H on C1 are ringed red, lift off together and slide into a small \"[O]\" bubble that turns into \"H₂O\"; on \"double bond\" a red second line draws between C1 and O, giving CH₃CHO. On \"carbonyl\" a tag writes under the C=O: \"carbonyl group: C=O\". The strip builds: \"CH₃CH₂OH + [O] → CH₃CHO + H₂O\" (grey chip \"[O] = oxygen from the oxidant\"). On \"acidified potassium dichromate\" a condition chip writes on the arrow: \"K₂Cr₂O₇ / dilute H₂SO₄\" (later scenes shorten it to \"K₂Cr₂O₇ / H⁺\"). On \"start\" the hook's small two-tube thumbnail (green, orange) flashes top-left and dims. `m8-dichromate-orange-v1.png` appears small at the right; on \"green\" it cross-fades to the green plate (label \"orange Cr₂O₇²⁻ → green Cr³⁺\"). A small silent grey chip writes and dims: \"also used: acidified KMnO₄, purple → colourless\". On \"cancer\" a navy hazard chip writes beside the plate: \"chromium(VI): toxic, carcinogen. Small amounts, gloves, goggles, collect waste\". Bright at the end: the equation, the hazard chip and the green plate's label. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "class-decides": [
+        "adjust",
+        "the board clears.",
+        "The class decides: count the hydrogens: Now the clue makes sense, because oxidation needs a hydrogen on the O H carbon.",
+        "secondary / ketone / tertiary / none / orange",
+        "On the spoken cues: Task chip \"Which product?\". A small grey c05 chip \"classify: count the carbons on the C–OH carbon\" writes and dims. Two structures side by side: propan-2-ol (left) and 2-methylpropan-2-ol (right), each C–OH carbon ringed red. On \"secondary\" the H counter runs on propan-2-ol: one H ticks \"1\" (chip \"2°: 1 H\"). The strip builds under it: \"CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O\", the C=O second line drawing in red, with",
+        "explain",
+        "the board clears. Task chip \"Which product?\". A small grey c05 chip \"classify: count the carbons on the C–OH carbon\" writes and dims. Two structures side by side: propan-2-ol (left) and 2-methylpropan-2-ol (right), each C–OH carbon ringed red. On \"secondary\" the H counter runs on propan-2-ol: one H ticks \"1\" (chip \"2°: 1 H\"). The strip builds under it: \"CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O\", the C=O second line drawing in red, with the arrow chip \"K₂Cr₂O₇ / H⁺, heat\". On \"ketone\" a chip writes \"propanone: ketone (C=O inside the chain, '-one')\", with a small grey chip \"propan-2-ol → propanone: '-ol' becomes '-one'\" and a small grey \"naming: next video\" chip, both dimming. On \"tertiary\" the H counter runs on 2-methylpropan-2-ol: the three carbons flash grey (\"bonded to 3 C + O\"), and the H count shows \"0\" (chip \"3°: 0 H\"). On \"orange\" a small `m8-dichromate-orange-v1.png` appears under it with the tag \"no reaction: stays orange\", and the arrow from 2-methylpropan-2-ol is drawn and crossed. Bright at the end: the ketone chip, the \"0 H\" chip and the \"stays orange\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "primary-to-acid": [
+        "new",
+        "the board clears.",
+        "Primary: aldehyde first, then acid: A primary alcohol, like ethanol, has two hydrogens on that carbon.",
+        "primary / aldehyde / again / stops",
+        "On the spoken cues: The product ladder builds downwards. Top: ethanol, the C–OH carbon ringed red, H counter \"2\" (chip \"1°: 2 H\"). On \"aldehyde\" the first step draws: arrow with \"[O]\" and the product CH₃CHO (C=O red, carbonyl H ringed grey), chip \"ethanal: aldehyde (C=O at the end, '-al')\". On \"still holds a hydrogen\" that carbonyl H pulses. On \"again\" the second step draws: arrow with \"[O]\" and CH₃COOH, chip \"ethanoic acid: carboxylic",
+        "explain",
+        "the board clears. The product ladder builds downwards. Top: ethanol, the C–OH carbon ringed red, H counter \"2\" (chip \"1°: 2 H\"). On \"aldehyde\" the first step draws: arrow with \"[O]\" and the product CH₃CHO (C=O red, carbonyl H ringed grey), chip \"ethanal: aldehyde (C=O at the end, '-al')\". On \"still holds a hydrogen\" that carbonyl H pulses. On \"again\" the second step draws: arrow with \"[O]\" and CH₃COOH, chip \"ethanoic acid: carboxylic acid ('-oic acid')\". The combined line writes beside the ladder: \"CH₃CH₂OH + 2[O] → CH₃COOH + H₂O\". On \"stops\" a small propanone thumbnail sits to the right with its carbonyl carbon ringed and \"0 H\" (tag \"ketone: no H left, stops\"). Bright at the end: the ladder's last two chips and the \"stops\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "distil-or-reflux": [
+        "adjust",
+        "the board clears; the ladder shrinks to a thin strip at the top (ethanol → ethanal → ethanoic acid).",
+        "Distil to catch the aldehyde, reflux for the acid: So how do you stop at the aldehyde?",
+        "twenty / distil / reflux",
+        "On the spoken cues: On \"twenty\" two chips write: \"ethanal 20 °C\", \"ethanol 78 °C\" (grey tag \"no O–H: no hydrogen bonds between ethanal molecules\"). On \"distil\" `m7-school-distillation-setup-v1.png` appears at the left, medium; coded vapour wisps rise from the flask and droplets fall into the receiving flask, tagged \"ethanal collected\"; a small grey chip \"excess alcohol\" sits under the plate and dims with it; on the ladder strip, the",
+        "explain",
+        "the board clears; the ladder shrinks to a thin strip at the top (ethanol → ethanal → ethanoic acid). On \"twenty\" two chips write: \"ethanal 20 °C\", \"ethanol 78 °C\" (grey tag \"no O–H: no hydrogen bonds between ethanal molecules\"). On \"distil\" `m7-school-distillation-setup-v1.png` appears at the left, medium; coded vapour wisps rise from the flask and droplets fall into the receiving flask, tagged \"ethanal collected\"; a small grey chip \"excess alcohol\" sits under the plate and dims with it; on the ladder strip, the first arrow lights and the second dims (tag \"removed before the second step\"). On \"reflux\" `m7-reflux-apparatus-v1.png` appears at the right, medium, same scale; the vapour return runs (wisps rise into the upright condenser and drip back, twice), tagged \"ethanal returns\"; the second ladder arrow lights, with the chip \"excess oxidant\". Arrow chips under each plate: \"distil → aldehyde\", \"reflux, excess [O] → carboxylic acid\". Bright at the end: the two arrow chips and the lit ladder. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "green-not-product": [
+        "adjust",
+        "the board clears.",
+        "Green means oxidised, not which product: One warning about the colour.",
+        "oxidised / which",
+        "On the spoken cues: `m8-dichromate-green-v1.png` small at the centre-left. On \"oxidised\" a chip writes \"green: primary or secondary alcohol oxidised\" and a small \"3°\" chip beside it is struck grey. On \"which\" three grey candidate chips fan out to the right: \"aldehyde?\", \"ketone?\", \"carboxylic acid?\", each with a question mark; a chip \"green → it's an aldehyde\" fades in and is crossed (caption \"colour shows oxidation, not the product\").",
+        "explain",
+        "the board clears. `m8-dichromate-green-v1.png` small at the centre-left. On \"oxidised\" a chip writes \"green: primary or secondary alcohol oxidised\" and a small \"3°\" chip beside it is struck grey. On \"which\" three grey candidate chips fan out to the right: \"aldehyde?\", \"ketone?\", \"carboxylic acid?\", each with a question mark; a chip \"green → it's an aldehyde\" fades in and is crossed (caption \"colour shows oxidation, not the product\"). A small forward chip \"test the product: next video\" writes and dims. Bright at the end: the \"primary or secondary\" chip, the crossed chip and the three candidates. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "alcohol-hub": [
+        "new",
+        "the board clears.",
+        "The alcohol is a hub: Put it together, and an alcohol is a hub.",
+        "alkene / haloalkane / acid",
+        "On the spoken cues: Hub map: \"alcohol\" in a red ring at the centre. Dashed grey arrows in (left): \"alkene + steam (addition video)\", \"haloalkane + OH⁻(aq) (ethanol video)\". Solid arrows out, each lighting on its cue with its condition chip (c04a conditions-card style): on \"alkene\" \"conc. H₂SO₄, about 170 °C → alkene\"; on \"haloalkane\" \"HX, reflux → haloalkane\"; on \"acid\" a branching arrow \"K₂Cr₂O₇ / H⁺ → 1° aldehyde (distil) or acid",
+        "explain",
+        "the board clears. Hub map: \"alcohol\" in a red ring at the centre. Dashed grey arrows in (left): \"alkene + steam (addition video)\", \"haloalkane + OH⁻(aq) (ethanol video)\". Solid arrows out, each lighting on its cue with its condition chip (c04a conditions-card style): on \"alkene\" \"conc. H₂SO₄, about 170 °C → alkene\"; on \"haloalkane\" \"HX, reflux → haloalkane\"; on \"acid\" a branching arrow \"K₂Cr₂O₇ / H⁺ → 1° aldehyde (distil) or acid (reflux); 2° ketone; 3° no reaction\". The three empty boxes from the hook fill in. Bright at the end: the three outward arrows (incoming arrows dimmed). Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, dehydration takes out water, and makes an alkene.",
+        "budge / reflux",
+        "On the spoken cues: Handwritten line: \"Primary goes all the way, secondary stops at ketone, tertiary won't budge.\" Second handwritten line on \"reflux\": \"Distil to catch the aldehyde, reflux to go all the way.\" Under them, three small coded cards light one at a time as named, each dimming as the next lights: \"dehydration: −H₂O → alkene (conc. acid, heat)\"; \"substitution: + HX → haloalkane + H₂O (reflux)\"; \"oxidation: count H on the C–OH",
+        "explain",
+        "the board clears. Handwritten line: \"Primary goes all the way, secondary stops at ketone, tertiary won't budge.\" Second handwritten line on \"reflux\": \"Distil to catch the aldehyde, reflux to go all the way.\" Under them, three small coded cards light one at a time as named, each dimming as the next lights: \"dehydration: −H₂O → alkene (conc. acid, heat)\"; \"substitution: + HX → haloalkane + H₂O (reflux)\"; \"oxidation: count H on the C–OH carbon: 2, 1, 0\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Propan-one-ol is used in two separate",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Propan-1-ol is used in two separate experiments. In experiment 1, it is heated with concentrated sulfuric acid. In experiment 2, it is heated under reflux with hydrogen bromide. For each experiment, name the organic product and identify the type of reaction.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no hub, no memory aid, no strips.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "acid / propene / one-bromopropane / double bond",
+        "On the spoken cues: On \"acid\" \"concentrated sulfuric acid\" is underlined; the strip writes \"CH₃CH₂CH₂OH → CH₃CH=CH₂ + H₂O\" with the chip \"conc. H₂SO₄, heat\" on the arrow; on \"propene\" the answer chip \"1: propene, dehydration\" lights. On \"one-bromopropane\" \"heated under reflux with hydrogen bromide\" is underlined; the second strip writes \"CH₃CH₂CH₂OH + HBr → CH₃CH₂CH₂Br + H₂O\" with \"reflux\"; answer chip \"2: 1-bromopropane,",
+        "explain",
+        "the card stays, shrunk to the top. On \"acid\" \"concentrated sulfuric acid\" is underlined; the strip writes \"CH₃CH₂CH₂OH → CH₃CH=CH₂ + H₂O\" with the chip \"conc. H₂SO₄, heat\" on the arrow; on \"propene\" the answer chip \"1: propene, dehydration\" lights. On \"one-bromopropane\" \"heated under reflux with hydrogen bromide\" is underlined; the second strip writes \"CH₃CH₂CH₂OH + HBr → CH₃CH₂CH₂Br + H₂O\" with \"reflux\"; answer chip \"2: 1-bromopropane, substitution\". The first strip dims as the second writes. On \"double bond\" a chip \"Experiment 2: addition reaction\" fades in and is crossed (caption \"no C=C in an alcohol: the OH is replaced, and water forms\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"Butan-2-ol and 2-methylbutan-2-ol are each heated under reflux with excess acidified potassium dichromate solution.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Butan-two-ol and two-methylbutan-two-ol are each heated",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"Butan-2-ol and 2-methylbutan-2-ol are each heated under reflux with excess acidified potassium dichromate solution. For each alcohol, predict the colour change and the organic product, if any. Explain the difference.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "secondary / green / tertiary / orange / trap",
+        "On the spoken cues: On \"secondary\" \"Butan-2-ol\" is underlined; its structure draws with the C–OH carbon ringed and the H counter \"1\"; the strip writes \"CH₃CH(OH)CH₂CH₃ + [O] → CH₃COCH₂CH₃ + H₂O\" (chip \"butan-2-one (butanone): ketone\"; \"butanone\", \"butan-2-one\" or a correct structure all accepted); on \"green\" a small `m8-dichromate-green-v1.png` appears beside it. On \"tertiary\" \"2-methylbutan-2-ol\" is underlined; its structure draws",
+        "explain",
+        "the card stays, shrunk to the top. On \"secondary\" \"Butan-2-ol\" is underlined; its structure draws with the C–OH carbon ringed and the H counter \"1\"; the strip writes \"CH₃CH(OH)CH₂CH₃ + [O] → CH₃COCH₂CH₃ + H₂O\" (chip \"butan-2-one (butanone): ketone\"; \"butanone\", \"butan-2-one\" or a correct structure all accepted); on \"green\" a small `m8-dichromate-green-v1.png` appears beside it. On \"tertiary\" \"2-methylbutan-2-ol\" is underlined; its structure draws with the H counter \"0\" (\"bonded to 3 C + O\"); on \"orange\" a small `m8-dichromate-orange-v1.png` appears beside it, tag \"no reaction\". \"predict the colour change\" and \"Explain the difference\" are underlined as each result lights. Answer chip (bright): \"2°: 1 H → butan-2-one (butanone), orange → green. 3°: 0 H → no reaction, stays orange\". On \"trap\" \"under reflux\" and \"excess\" are underlined, and a chip \"Butan-2-ol under reflux → butanoic acid\" fades in and is crossed (caption \"a ketone has no H on its C=O carbon: it stops\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "new",
+        "the board clears.",
+        "Handoff: So the alcohol's class, and the conditions, decide where it leads.",
+        "Next",
+        "On the spoken cues: The hub map returns small at the centre with its three outward arrows. On \"Next\" the \"aldehyde\" and \"ketone\" boxes enlarge slightly, and a chip \"Next: aldehyde or ketone, how can you tell?\" appears.",
+        "explain",
+        "the board clears. The hub map returns small at the centre with its three outward arrows. On \"Next\" the \"aldehyde\" and \"ketone\" boxes enlarge slightly, and a chip \"Next: aldehyde or ketone, how can you tell?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C08B_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Aldehydes and ketones: how can you tell?\".",
+        "Hook (same formula, one silver mirror): In the alcohol reactions video, oxidising propan-two-ol gave a ketone, propanone.",
+        "silver mirror / nothing",
+        "On the spoken cues: A small grey thumbnail sits top-left, its lines in the narration's order: \"propan-2-ol + [O] → propanone\" (grey \"c08a\" chip), then, writing on as it is said, \"propan-1-ol + [O] (distil) → propanal\" with a small grey tag \"like ethanol → ethanal\". Propanal and propanone draw side by side as condensed formulas, each with a chip \"C₃H₆O\" that pulses together. Below each, `m7-tollens-tube-clear-v1.png` appears small, same",
+        "explain",
+        "heading writes on: \"Aldehydes and ketones: how can you tell?\". A small grey thumbnail sits top-left, its lines in the narration's order: \"propan-2-ol + [O] → propanone\" (grey \"c08a\" chip), then, writing on as it is said, \"propan-1-ol + [O] (distil) → propanal\" with a small grey tag \"like ethanol → ethanal\". Propanal and propanone draw side by side as condensed formulas, each with a chip \"C₃H₆O\" that pulses together. Below each, `m7-tollens-tube-clear-v1.png` appears small, same size (label \"Tollens' reagent, warmed\" on the left tube only). On \"silver mirror\" the left plate cross-fades to `m7-tollens-tube-mirror-v1.png` (aligned pair) while the mirror coat runs (tag \"propanal\"). On \"nothing\" the right tube stays clear (tag \"propanone: no change\"). As the question is asked the c08a thumbnail and the label dim. Bright at the end: the heading, the mirror tube and the \"no change\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "carbonyl-position": [
+        "new",
+        "the plates leave.",
+        "The carbonyl, at the end or in the middle: Both contain a carbonyl group, a carbon double bonded to oxygen.",
+        "carbonyl / polar / where / hydrogen / each",
+        "On the spoken cues: Task chip \"Aldehyde or ketone?\". Propanal (left) and propanone (right) redraw in full structural form, each C=O ringed red; ink ball-and-stick versions sit small beneath them (engine3d port). On \"carbonyl\" a chip writes \"carbonyl: C=O\" (grey \"c08a\" chip). On \"polar\" the polar pull runs on both C=O bonds: the shared pair slides towards O, \"δ−\" on O and \"δ+\" on C. On \"where\" the carbonyl locator travels along each",
+        "explain",
+        "the plates leave. Task chip \"Aldehyde or ketone?\". Propanal (left) and propanone (right) redraw in full structural form, each C=O ringed red; ink ball-and-stick versions sit small beneath them (engine3d port). On \"carbonyl\" a chip writes \"carbonyl: C=O\" (grey \"c08a\" chip). On \"polar\" the polar pull runs on both C=O bonds: the shared pair slides towards O, \"δ−\" on O and \"δ+\" on C. On \"where\" the carbonyl locator travels along each chain. On \"hydrogen\" it settles on propanal's end carbon and the carbonyl H glows grey-white (tag \"aldehyde: C=O at the end, H on the carbonyl carbon, –CHO\"). On \"each\" it settles on propanone's middle carbon and two ink arrows point to the carbons either side (tag \"ketone: C=O inside, a carbon each side, no H\"). The δ labels dim. Bright at the end: the two structures and their two tags. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "naming-aldehydes": [
+        "new",
+        "the board clears.",
+        "Naming aldehydes: -al, and no number needed: To name an aldehyde, find the longest chain that includes the carbonyl carbon.",
+        "al / butanal / two-methylpropanal",
+        "On the spoken cues: Task chip \"Name it\". The name builder (c01) with slots \"branches\", \"stem\", \"ending\". Butanal draws in full structural form (C=O ringed red, the carbonyl H grey-white). On \"longest chain\" the four carbons glow pale blue, including the carbonyl carbon. On \"al\" the builder writes \"butane\", the final \"e\" is struck grey and \"al\" writes in red in the ending slot. On \"carbon one\" the locant counter pops \"1\" on the carbonyl",
+        "explain",
+        "the board clears. Task chip \"Name it\". The name builder (c01) with slots \"branches\", \"stem\", \"ending\". Butanal draws in full structural form (C=O ringed red, the carbonyl H grey-white). On \"longest chain\" the four carbons glow pale blue, including the carbonyl carbon. On \"al\" the builder writes \"butane\", the final \"e\" is struck grey and \"al\" writes in red in the ending slot. On \"carbon one\" the locant counter pops \"1\" on the carbonyl carbon (grey tag \"always C1: no number\"). On \"butanal\" a small column writes beside it: \"HCHO methanal\", \"CH₃CHO ethanal\", \"CH₃CH₂CHO propanal\", \"CH₃CH₂CH₂CHO butanal\", each lighting and dimming in turn. On \"two-methylpropanal\" butanal leaves and (CH₃)₂CHCHO draws (branch amber); locants pop \"1\" (carbonyl carbon), \"2\" (branch carbon), \"3\"; the builder writes \"2-methyl\" + \"propan\" + \"al\". Bright at the end: the 2-methylpropanal structure, its name and the \"always C1\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "naming-ketones": [
+        "new",
+        "the board clears.",
+        "Naming ketones: -one, and a number from five carbons: Ketones end in one.",
+        "one / pentan-two-one / pentan-three-one",
+        "On the spoken cues: The builder stays. On \"one\" propanone draws (skeletal, C=O ringed red); the builder writes \"propane\", strikes the \"e\" and adds \"one\" in red (grey tag \"only one place: no number\"). On \"Butanone\" CH₃COCH₂CH₃ draws small with the chip \"butanone = butan-2-one\". On \"position matters\" two pentanones draw one above the other: CH₃COCH₂CH₂CH₃ and CH₃CH₂COCH₂CH₃, chains pale blue. On \"nearer\" locants pop on the upper one from",
+        "explain",
+        "the board clears. The builder stays. On \"one\" propanone draws (skeletal, C=O ringed red); the builder writes \"propane\", strikes the \"e\" and adds \"one\" in red (grey tag \"only one place: no number\"). On \"Butanone\" CH₃COCH₂CH₃ draws small with the chip \"butanone = butan-2-one\". On \"position matters\" two pentanones draw one above the other: CH₃COCH₂CH₂CH₃ and CH₃CH₂COCH₂CH₃, chains pale blue. On \"nearer\" locants pop on the upper one from the left: \"1\", \"2\" (C=O), ...; on \"pentan-two-one\" the builder writes \"pentan-2-one\"; ghost locants from the right show \"4\" in grey on the C=O and fade. On \"pentan-three-one\" locants pop on the lower one: the C=O is \"3\" from either end (tag \"3 from both ends\"); the builder writes \"pentan-3-one\". Bright at the end: the two pentanone names and the \"3 from both ends\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "functional-group-isomers": [
+        "new",
+        "the board clears.",
+        "Same formula, different group: Now count the atoms in propanal and propanone.",
+        "functional group isomers / miss",
+        "On the spoken cues: Propanal and propanone return side by side (full structural). An atom tally (c06 style) counts each: \"C 3, H 6, O 1\" under both, and the chips \"C₃H₆O\" glow together. On \"functional group isomers\" a bracket joins them with the tag \"functional group isomers: same formula, different group\" (small grey c02 chip \"c02: structural isomers\"). On \"three or more carbons\" a small ethanal structure appears in grey with the tag",
+        "explain",
+        "the board clears. Propanal and propanone return side by side (full structural). An atom tally (c06 style) counts each: \"C 3, H 6, O 1\" under both, and the chips \"C₃H₆O\" glow together. On \"functional group isomers\" a bracket joins them with the tag \"functional group isomers: same formula, different group\" (small grey c02 chip \"c02: structural isomers\"). On \"three or more carbons\" a small ethanal structure appears in grey with the tag \"C2: no ketone possible (needs a carbon each side)\" and dims. On \"miss\" a dashed outline around propanone flashes once (tag \"the pair students miss\"). Bright at the end: the two structures, the bracket tag and the \"students miss\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "forces-boiling": [
+        "new",
+        "the board clears.",
+        "Forces: polar, but no hydrogen bonds between them: Between the molecules, the polar C double bond O gives dipole-dipole attractions: the slightly positive carbon of one molecule attracts the slightly negative oxygen of the next.",
+        "dipole-dipole / attracts / middle / eighteen",
+        "On the spoken cues: Task chip \"Forces\". The force view: four butanal molecules (skeletal, C=O ringed red, δ− and δ+ small); on \"dipole-dipole\" the δ+ and δ− labels brighten; on \"attracts\" dotted teal lines link a δ+ carbonyl carbon to a δ− oxygen on a neighbour, three times (tag \"dipole–dipole: δ+ C attracts δ− O\"); pale-blue dispersion lines flicker along the chains (tag \"dispersion\"). On \"can't hydrogen bond\" a chip \"aldehyde: O, so",
+        "explain",
+        "the board clears. Task chip \"Forces\". The force view: four butanal molecules (skeletal, C=O ringed red, δ− and δ+ small); on \"dipole-dipole\" the δ+ and δ− labels brighten; on \"attracts\" dotted teal lines link a δ+ carbonyl carbon to a δ− oxygen on a neighbour, three times (tag \"dipole–dipole: δ+ C attracts δ− O\"); pale-blue dispersion lines flicker along the chains (tag \"dispersion\"). On \"can't hydrogen bond\" a chip \"aldehyde: O, so hydrogen bonds?\" fades in and is crossed (caption \"no O–H: no hydrogen bonds between them\"). On \"middle\" the force view shrinks and the boiling point strip draws at the right with its dashed \"room temperature, 25 °C\" line. A small grey c05 chip \"Same size? Hydrogen bonding wins.\" writes as the force view shrinks, and dims before \"eighteen\". Four skeletal structures drop to their marks as named: pentane \"36 °C\", just above the 25 °C line (tag \"dispersion only\"), butanal \"75 °C\", butan-2-one \"80 °C\" (the two bracketed, tag \"dipole–dipole: close\"), on \"eighteen\" butan-1-ol \"118 °C\" (tag \"hydrogen bonding\"). Bright at the end: the four marks, the \"close\" bracket and the \"hydrogen bonding\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "aldehyde-h-solubility": [
+        "new",
+        "the board clears; the strip leaves.",
+        "The aldehyde H, and why small ones dissolve: And the aldehyde's hydrogen?",
+        "carbon / to / water",
+        "On the spoken cues: Propanal in full structural form; on \"carbon\" its carbonyl H glows grey-white with a crossed violet line beside it (tag \"C–H: not a hydrogen bond donor\"). A small grey chip \"c05: O–H donates\" writes and dims. On \"lone pairs\" two red dot pairs glow on the carbonyl O. On \"to\" the water lattice (c03) draws around a propanone molecule; two water molecules form dotted violet hydrogen bonds from their δ+ H to the carbonyl",
+        "explain",
+        "the board clears; the strip leaves. Propanal in full structural form; on \"carbon\" its carbonyl H glows grey-white with a crossed violet line beside it (tag \"C–H: not a hydrogen bond donor\"). A small grey chip \"c05: O–H donates\" writes and dims. On \"lone pairs\" two red dot pairs glow on the carbonyl O. On \"to\" the water lattice (c03) draws around a propanone molecule; two water molecules form dotted violet hydrogen bonds from their δ+ H to the carbonyl O's lone pairs (tag \"water donates, C=O accepts\"). On \"water\" a chip writes \"propanone, ethanal: mix with water\". On \"solubility falls\" a short strip writes left to right, each label lighting and the previous dimming: \"propanone: mixes\", \"butan-2-one: partly\", \"pentan-3-one: a little\" (grey tag \"longer chain, less soluble\"). Bright at the end: the propanone in the lattice, its tag and the last strip label. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "one-hydrogen": [
+        "new",
+        "the board clears.",
+        "One hydrogen makes the difference: Now the chemistry.",
+        "easily / reduced / nothing",
+        "On the spoken cues: Task chip \"Test it\". The small c08a product ladder returns at the left (ethanol → ethanal → ethanoic acid; propan-2-ol → propanone, stop). On \"no hydrogen to remove\" the H counter runs on propanone's carbonyl carbon: \"0\". On \"still has one\" it runs on propanal's: \"1\", the H glowing. On \"easily\" a short arrow from propanal with \"mild oxidant\" leads to a chip \"oxidised\" (grey tag \"aldehyde: easily oxidised\"). On",
+        "explain",
+        "the board clears. Task chip \"Test it\". The small c08a product ladder returns at the left (ethanol → ethanal → ethanoic acid; propan-2-ol → propanone, stop). On \"no hydrogen to remove\" the H counter runs on propanone's carbonyl carbon: \"0\". On \"still has one\" it runs on propanal's: \"1\", the H glowing. On \"easily\" a short arrow from propanal with \"mild oxidant\" leads to a chip \"oxidised\" (grey tag \"aldehyde: easily oxidised\"). On \"reduced\" a second small arrow under it, in navy, reads \"reagent: reduced → visible change\" (grey chip \"reduced: gains electrons\"). On \"nothing\" propanone's arrow draws and is crossed (tag \"ketone: usually no reaction\"). Bright at the end: the two H counts and the \"visible change\" chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "tollens-test": [
+        "adjust",
+        "the board clears.",
+        "Tollens' reagent: a silver mirror: The first test is Tollens' reagent: silver ions, held in an ammonia solution.",
+        "Tollens' / metal / clear / explosive",
+        "On the spoken cues: `m7-tollens-tube-clear-v1.png` appears medium at the centre-left with the label \"Tollens' reagent: Ag⁺ in ammonia solution\"; a grey chip \"warm water bath\" writes under it. On \"metal\" the plate cross-fades to `m7-tollens-tube-mirror-v1.png` while the mirror coat runs; a label points to the tube wall: \"Ag⁺ → Ag: silver metal on the glass\" (tag \"+ aldehyde\"). On \"clear\" a second `m7-tollens-tube-clear-v1.png` appears",
+        "explain",
+        "the board clears. `m7-tollens-tube-clear-v1.png` appears medium at the centre-left with the label \"Tollens' reagent: Ag⁺ in ammonia solution\"; a grey chip \"warm water bath\" writes under it. On \"metal\" the plate cross-fades to `m7-tollens-tube-mirror-v1.png` while the mirror coat runs; a label points to the tube wall: \"Ag⁺ → Ag: silver metal on the glass\" (tag \"+ aldehyde\"). On \"clear\" a second `m7-tollens-tube-clear-v1.png` appears at the right, same size, tag \"+ ketone: no change\". On \"explosive\" a navy hazard chip writes beside the plates: \"make fresh, use at once, dispose straight after: aged reagent can form an explosive solid\". Bright at the end: the two tubes, the mirror label and the hazard chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "fehlings-test": [
+        "adjust",
+        "the board clears.",
+        "Fehling's solution: blue to brick red: The second is Fehling's solution, or the similar Benedict's solution.",
+        "Fehling's / brick-red / blue",
+        "On the spoken cues: `m7-fehlings-tube-blue-v1.png` appears medium at the centre-left with the label \"Fehling's (or Benedict's): blue Cu²⁺\"; a grey chip \"warm\" writes under it, and a small grey chip \"alkaline: corrosive\" writes and dims. On \"brick-red\" the plate cross-fades to `m7-fehlings-tube-brickred-v1.png` while the settle runs; a label points to the base: \"Cu²⁺ → Cu₂O: brick-red precipitate\" (tag \"+ aldehyde\"). On \"blue\" a second",
+        "explain",
+        "the board clears. `m7-fehlings-tube-blue-v1.png` appears medium at the centre-left with the label \"Fehling's (or Benedict's): blue Cu²⁺\"; a grey chip \"warm\" writes under it, and a small grey chip \"alkaline: corrosive\" writes and dims. On \"brick-red\" the plate cross-fades to `m7-fehlings-tube-brickred-v1.png` while the settle runs; a label points to the base: \"Cu²⁺ → Cu₂O: brick-red precipitate\" (tag \"+ aldehyde\"). On \"blue\" a second `m7-fehlings-tube-blue-v1.png` appears at the right, same size, tag \"+ ketone: stays blue\". On \"isn't enough\" a chip \"any C=O gives a positive test\" fades in and is crossed (caption \"only an H on the carbonyl carbon is oxidised\"). Bright at the end: the two tubes, the precipitate label and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "three-tests-one-question": [
+        "adjust",
+        "the board clears.",
+        "Three tests, one question: And acidified dichromate, from the alcohol reactions video?",
+        "green / hydrogen",
+        "On the spoken cues: The results grid builds: columns \"aldehyde\", \"ketone\"; rows fill as named: \"Tollens'\" (mirror icon, clear icon), \"Fehling's / Benedict's\" (brick-red icon, blue icon), on \"green\" \"acidified dichromate\" (green icon, orange icon, cropped from `m8-dichromate-green-v1.png` and `m8-dichromate-orange-v1.png`, uniform scale). Every aldehyde cell is ringed green (\"+\"), every ketone cell grey (\"−\"). On \"hydrogen\" a banner",
+        "explain",
+        "the board clears. The results grid builds: columns \"aldehyde\", \"ketone\"; rows fill as named: \"Tollens'\" (mirror icon, clear icon), \"Fehling's / Benedict's\" (brick-red icon, blue icon), on \"green\" \"acidified dichromate\" (green icon, orange icon, cropped from `m8-dichromate-green-v1.png` and `m8-dichromate-orange-v1.png`, uniform scale). Every aldehyde cell is ringed green (\"+\"), every ketone cell grey (\"−\"). On \"hydrogen\" a banner writes across the top of the grid: \"Is there an H on the carbonyl carbon?\" with \"yes\" over the aldehyde column and \"no\" over the ketone column. Bright at the end: the banner and the two column headings. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "testing-the-product": [
+        "new",
+        "the board clears.",
+        "Naming the product, naming the alcohol: Here's how this fits with oxidation.",
+        "product / primary / secondary / too",
+        "On the spoken cues: A three-step flow builds left to right: \"unknown alcohol + K₂Cr₂O₇ / H⁺: green\" (small green icon), \"distil off the product\", on \"product\" \"test the product with Tollens'\". Two outcomes branch: on \"primary\" \"silver mirror → aldehyde → primary alcohol\" (mirror icon); on \"secondary\" \"no mirror → ketone → secondary alcohol\" (clear icon). A small grey chip \"stayed orange at the start → tertiary\" sits under the first",
+        "explain",
+        "the board clears. A three-step flow builds left to right: \"unknown alcohol + K₂Cr₂O₇ / H⁺: green\" (small green icon), \"distil off the product\", on \"product\" \"test the product with Tollens'\". Two outcomes branch: on \"primary\" \"silver mirror → aldehyde → primary alcohol\" (mirror icon); on \"secondary\" \"no mirror → ketone → secondary alcohol\" (clear icon). A small grey chip \"stayed orange at the start → tertiary\" sits under the first step. On \"too\" a chip \"product turns dichromate green → aldehyde\" fades in and is crossed (caption \"1° and 2° alcohols turn it green too\"). Bright at the end: the two outcome rows and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, aldehyde at the end, ketone in the middle.",
+        "carbon / green",
+        "On the spoken cues: Handwritten line: \"Aldehyde at the end, ketone in the middle.\" Second handwritten line on \"carbon\": \"Every test asks: is there an H on the carbonyl carbon?\". Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"aldehyde –CHO: '-al', no number; ketone C–CO–C: '-one', number from C5\"; \"dipole–dipole + dispersion; no hydrogen bonds between them: alkane < aldehyde,",
+        "explain",
+        "the board clears. Handwritten line: \"Aldehyde at the end, ketone in the middle.\" Second handwritten line on \"carbon\": \"Every test asks: is there an H on the carbonyl carbon?\". Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"aldehyde –CHO: '-al', no number; ketone C–CO–C: '-one', number from C5\"; \"dipole–dipole + dispersion; no hydrogen bonds between them: alkane < aldehyde, ketone < alcohol\"; on \"green\" \"aldehyde: mirror, brick red, green. Ketone: no change\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A compound has the condensed formula",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A compound has the condensed structural formula CH₃CH₂COCH(CH₃)CH₃. State whether it is an aldehyde or a ketone, giving a reason, and give its IUPAC name.\" Beside it the skeletal formula in plain ink (no colours, no locants, no ring on the C=O). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no locator, no memory aid.",
+        [
+            "ScribbleCircle",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "each / five / two / wrong",
+        "On the spoken cues: On \"each\" the C=O is ringed red on the skeletal formula and two ink arrows point to the carbons either side; \"aldehyde or a ketone\" and \"giving a reason\" are underlined; chip \"ketone: a carbon each side of C=O\". On \"five\" the chain of five glows pale blue (the methyl branch amber); locants pop from both ends showing the C=O as \"3\" each way. On \"two\" locants settle from the right: \"1\", \"2\" (methyl), \"3\" (C=O), \"4\",",
+        "explain",
+        "the card stays, shrunk to the top. On \"each\" the C=O is ringed red on the skeletal formula and two ink arrows point to the carbons either side; \"aldehyde or a ketone\" and \"giving a reason\" are underlined; chip \"ketone: a carbon each side of C=O\". On \"five\" the chain of five glows pale blue (the methyl branch amber); locants pop from both ends showing the C=O as \"3\" each way. On \"two\" locants settle from the right: \"1\", \"2\" (methyl), \"3\" (C=O), \"4\", \"5\"; \"IUPAC name\" is underlined; the builder writes \"2-methyl\" + \"pentan\" + \"-3-one\" (the answer, bright). On \"wrong\" a chip \"4-methylpentan-3-one\" fades in and is crossed (caption \"C=O ties at 3, so the branch gets the lower number\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"Compounds A and B both have the molecular formula C₄H₈O, and both contain a C=O group.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Compounds A and B both have",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"Compounds A and B both have the molecular formula C₄H₈O, and both contain a C=O group. When each is warmed with Tollens' reagent, A forms a silver mirror and B shows no change. A has an unbranched chain. Identify A and B by IUPAC name, and explain the difference in their results.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "mirror / butanal / butan-two-one / hydrogen",
+        "On the spoken cues: On \"mirror\" \"A forms a silver mirror\" is underlined and a small `m7-tollens-tube-mirror-v1.png` appears at the left; butanal draws (full structural), its carbonyl H glowing, H counter \"1\"; on \"butanal\" \"unbranched chain\" and \"C₄H₈O\" are underlined and the answer chip \"A: butanal\" lights. On \"butan-two-one\" \"B shows no change\" and \"both contain a C=O group\" are underlined; butan-2-one draws with the H counter \"0\" and",
+        "explain",
+        "the card stays, shrunk to the top. On \"mirror\" \"A forms a silver mirror\" is underlined and a small `m7-tollens-tube-mirror-v1.png` appears at the left; butanal draws (full structural), its carbonyl H glowing, H counter \"1\"; on \"butanal\" \"unbranched chain\" and \"C₄H₈O\" are underlined and the answer chip \"A: butanal\" lights. On \"butan-two-one\" \"B shows no change\" and \"both contain a C=O group\" are underlined; butan-2-one draws with the H counter \"0\" and a small `m7-tollens-tube-clear-v1.png` beside it; answer chip \"B: butan-2-one\". \"explain the difference\" is underlined as the chip \"aldehyde: H on C=O carbon, oxidised, Ag⁺ reduced to Ag. Ketone: no H, no reaction\" lights. On \"hydrogen\" a chip \"Both have a C=O group, so both should form a mirror.\" fades in and is crossed (caption \"the H on the carbonyl carbon decides\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So the carbonyl's position decides the name, the forces, and the test results.",
+        "Next",
+        "On the spoken cues: The memory aid line returns small at the top with the results grid beneath it. On \"Next\" `m7-school-distillation-setup-v1.png` appears small at the right beside a small `m7-tollens-tube-mirror-v1.png`, and a chip \"Next: investigate alcohol oxidation products\" appears.",
+        "explain",
+        "the board clears. The memory aid line returns small at the top with the results grid beneath it. On \"Next\" `m7-school-distillation-setup-v1.png` appears small at the right beside a small `m7-tollens-tube-mirror-v1.png`, and a chip \"Next: investigate alcohol oxidation products\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+SKILLS07_ROWS = {
+    "hook": [
+        "new",
+        "Three word chips write in a row, ink: \"validity\", \"reliability\", \"accuracy\".",
+        "Hook: Practical questions often ask about validity, reliability or accuracy, and then ask you to improve the method.",
+        "difference / justified / fix",
+        "On the spoken cues: On \"difference\" they slide over each other and blur into one grey smudge; 12 small report tiles (Chemistry and Biology, 2020 to 2025) write beneath, and 4 take a red `Flag` in turn. `GreyTag`: \"NESA marking feedback, Chemistry and Biology 2020 to 2025: 4 of 12 reports\". On \"justified\" the tiles dim and two small answer chips write: \"change: add a lid\" (grey) and \"change: add a lid, so less heat escapes and q is",
+        "explain",
+        "Three word chips write in a row, ink: \"validity\", \"reliability\", \"accuracy\". On \"difference\" they slide over each other and blur into one grey smudge; 12 small report tiles (Chemistry and Biology, 2020 to 2025) write beneath, and 4 take a red `Flag` in turn. `GreyTag`: \"NESA marking feedback, Chemistry and Biology 2020 to 2025: 4 of 12 reports\". On \"justified\" the tiles dim and two small answer chips write: \"change: add a lid\" (grey) and \"change: add a lid, so less heat escapes and q is closer to the true value\" (ink, with an amber underline under \"so ...\"). `GreyTag`: \"a NESA Chemistry marking guideline, 2025\". On \"fix\" the three word chips separate again into three clean columns, and the heading writes on: \"Practical questions: fixes that fix\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "three-words": [
+        "new",
+        "Three columns, each lighting on its cue with the plain question large and the NESA wording small and grey beneath: \"Validity: does it measure what it was meant to?\"",
+        "Three-words: Three words, three different questions.",
+        "Validity / Reliability / Accuracy / accurate / reliable / wrong target",
+        "On the spoken cues: (tag \"2017 syllabus glossary (Chemistry wording): 'An extent to which tests measure what was intended ...'\"); \"Reliability: repeat it the same way: do results agree?\" (tag \"2017 syllabus glossary: 'An extent to which repeated observations and/or measurements taken under identical circumstances will yield similar results.'\"); \"Accuracy: how close to the true value?\" (tag \"2025 syllabus glossary: 'The extent to which",
+        "explain",
+        "Three columns, each lighting on its cue with the plain question large and the NESA wording small and grey beneath: \"Validity: does it measure what it was meant to?\" (tag \"2017 syllabus glossary (Chemistry wording): 'An extent to which tests measure what was intended ...'\"); \"Reliability: repeat it the same way: do results agree?\" (tag \"2017 syllabus glossary: 'An extent to which repeated observations and/or measurements taken under identical circumstances will yield similar results.'\"); \"Accuracy: how close to the true value?\" (tag \"2025 syllabus glossary: 'The extent to which measurements are considered to be close to the true value.' The 2017 syllabus has no entry.\"). Each column dims to its header as the next lights. On \"Picture a target\" the columns shrink to headers and `TargetTrio` builds in the centre. On \"accurate\": target 1, a tight cluster off centre, label \"reliable, not accurate\". On \"reliable\": target 2, five dots scattered around the centre, label \"not reliable\". Target 3 (tight on the centre, \"reliable and accurate\") writes silently. On \"wrong target\" a fourth target slides in apart from the others, a tight cluster on its centre, labelled in grey \"wrong target\"; a terracotta label: \"not valid: measures the wrong thing\". Grey tag under the row: \"a picture, not a definition\". On \"Right target, repeats agree, close to true\" the aid writes large and handwritten, each phrase linked by a pen arrow to its column header: validity, reliability, accuracy. Bright at the end: the aid and the wrong-target label. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "word-feature-fix": [
+        "new",
+        "`FixRail` builds full size in the side column, each row on its cue: \"Word: which quality?\"; \"Feature: which part of this method, and what it does to the result\"; \"Fix: a change that removes that cause\".",
+        "Word-feature-fix: So every answer needs three things.",
+        "word / feature / fix / any",
+        "On the spoken cues: On \"Word, feature, fix\" the initials W, F, F light amber down the rail's edge. In the answer box each line carries a margin mark: \"W\", \"F\", or the rail's small spanner glyph for fix. On \"any\" a generic chip \"repeat it and be more careful\" writes beside the rail, a ghost copy of it stamps onto three different small grey apparatus thumbnails in turn (the spirit-burner set-up, the foam cup, an agar plate), and the chip",
+        "explain",
+        "`FixRail` builds full size in the side column, each row on its cue: \"Word: which quality?\"; \"Feature: which part of this method, and what it does to the result\"; \"Fix: a change that removes that cause\". On \"Word, feature, fix\" the initials W, F, F light amber down the rail's edge. In the answer box each line carries a margin mark: \"W\", \"F\", or the rail's small spanner glyph for fix. On \"any\" a generic chip \"repeat it and be more careful\" writes beside the rail, a ghost copy of it stamps onto three different small grey apparatus thumbnails in turn (the spirit-burner set-up, the foam cup, an agar plate), and the chip takes a grey tag \"fits everything, fixes nothing in particular\". It fades. The rail shrinks to a tab in the side column; its rows light on cue in scenes 5 to 7.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Settle about 1 second"
+    ],
+    "question-card": [
+        "adjust",
+        "`QuestionCard` writes on.",
+        "Question-card (countdown, 10 seconds): Here's an HSC-style Chemistry question.",
+        "taller",
+        "On the spoken cues: Badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Card text and table exactly as Decisions (the worked question), with the three demands and their mark values. `m7-spirit-burner-calorimeter-v1.png` small at the card's right (tag \"spirit burner, uncovered copper can, no shield\"). On \"taller\" a coded bracket between the flame tip and the can base stretches from a label \"2 cm\" to \"6 cm\" and holds",
+        "explain",
+        "`QuestionCard` writes on. Badge \"Chemistry\". Tag \"HSC-style question, written for HSCScience\". Card text and table exactly as Decisions (the worked question), with the three demands and their mark values. `m7-spirit-burner-calorimeter-v1.png` small at the card's right (tag \"spirit burner, uncovered copper can, no shield\"). On \"taller\" a coded bracket between the flame tip and the can base stretches from a label \"2 cm\" to \"6 cm\" and holds there (it shows only what the card says). Empty `AnswerBox` below with three labelled slots \"(a)\", \"(b)\", \"(c)\"; counter \"0 / 7\". `RoutineStrip` mini at the far left dims. `DrillCountdown` 10 seconds with \"Pause here to answer.\" The full card stays on screen.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "part-a": [
+        "new",
+        "The card shrinks to about 0.72 and keeps its table readable; demands (b) and (c) dim to grey and stay legible.",
+        "Part-a (reliability): Part a: reliability.",
+        "repeats / one percent / hundred",
+        "On the spoken cues: Highlighter on \"Assess\" (grey chip \"assess: a judgement, with evidence (s04)\") and on \"reliability\". Rail row \"Word\" lights; a margin chip \"W: reliability = do repeats agree?\". On \"repeats\" the table's trial cells underline amber. On \"one percent\" `TableSpread` draws a small bracket over the ethanol row \"spread 13\" and over the propan-1-ol row \"spread 18\"; a grey tag \"largest difference from the mean: about 1.1%",
+        "explain",
+        "The card shrinks to about 0.72 and keeps its table readable; demands (b) and (c) dim to grey and stay legible. Highlighter on \"Assess\" (grey chip \"assess: a judgement, with evidence (s04)\") and on \"reliability\". Rail row \"Word\" lights; a margin chip \"W: reliability = do repeats agree?\". On \"repeats\" the table's trial cells underline amber. On \"one percent\" `TableSpread` draws a small bracket over the ethanol row \"spread 13\" and over the propan-1-ol row \"spread 18\"; a grey tag \"largest difference from the mean: about 1.1% (ethanol), 1.4% (propan-1-ol)\". Answer row (a) writes: \"Reliable: each alcohol's trials agree within about 1.5% of the mean\" (margin \"F\"). Tick, \"1 / 7\". On \"hundred\" a tall bracket between the two means: \"gap about 100 kJ mol⁻¹\". Row (a) adds: \"the gap between alcohols (about 100 kJ mol⁻¹) is much bigger than the spread (13, 18)\". Tick, \"2 / 7\". Grey label \"HSCScience marking guide (illustrative)\". Bright at the end: row (a), the gap bracket, the counter.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath",
+            "table build",
+            "NumberTicker"
+        ],
+        "Settle about 1 second"
+    ],
+    "part-b": [
+        "adjust",
+        "Demands (a) and (c) dim to grey and stay legible; row (a) dims.",
+        "Part-b (accuracy and the repeats claim): Part b: she says ten trials would bring her values closer to the data values.",
+        "accuracy / every / draught shield",
+        "On the spoken cues: Underline on \"ten trials\" and on \"closer to the data values\". Rail row \"Word\" relights; margin chip \"W: closer to the data value = accuracy\". On \"accuracy\" the means and data values in the table pair up with a small grey link each: \"−592 vs −1367\", \"−695 vs −2021\"; a grey chip \"under half: no shield, no lid (the combustion practical)\". On \"every\" the links and the \"under half\" chip dim. The spirit-burner plate shows",
+        "explain",
+        "Demands (a) and (c) dim to grey and stay legible; row (a) dims. Underline on \"ten trials\" and on \"closer to the data values\". Rail row \"Word\" relights; margin chip \"W: closer to the data value = accuracy\". On \"accuracy\" the means and data values in the table pair up with a small grey link each: \"−592 vs −1367\", \"−695 vs −2021\"; a grey chip \"under half: no shield, no lid (the combustion practical)\". On \"every\" the links and the \"under half\" chip dim. The spirit-burner plate shows orange heat arrows leaving the can's sides and open top; three small trial icons under it each get the same arrows; the chem-m6-p02 error-chain row writes small: \"heat lost → q ↓ → ΔH less negative\", with a grey tag \"same push in every trial: systematic\". Answer row (b) writes: \"Incorrect: heat is lost in every trial, so every value is less negative than the data value; ten trials give a better mean of the same low values\" (margin \"F\"). Tick, \"3 / 7\". Then \"Repeats improve reliability, not accuracy.\" Tick, \"4 / 7\". On \"repeats improve reliability\" a `CrossedHabit` chip \"ten trials → closer to the data values\" takes a red scribble cross. Caption \"repeats: reliability, not accuracy\". On \"draught shield\" the error-chain row dims; the plate cross-fades to `m7-spirit-burner-calorimeter-shield-v1.png` and the side arrows turn back at the shield; a supporting row writes in grey: \"To improve accuracy: draught shield and lid, which cut the heat that escapes\" (spanner margin mark). Bright at the end: the cross, the \"repeats improve reliability\" line and the shielded plate.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "part-c": [
+        "new",
+        "Demands (a) and (b) dim to grey and stay legible; row (b) dims.",
+        "Part-c (validity and the fix): Part c: validity.",
+        "alcohol / forty three / two centimetres",
+        "On the spoken cues: Highlighter on \"validity\" and \"comparison\". Rail row \"Word\" lights; margin chip \"W: validity = measures only the alcohol's effect?\". On \"alcohol\" a small variables strip writes under the card: \"independent: the alcohol | controlled: water, can, rise, distance\". Rail row \"Feature\" lights. On \"raised the can\" pen underlines \"2 cm\" and \"raised it to 6 cm\" in the card, and the \"distance\" item in the strip turns",
+        "explain",
+        "Demands (a) and (b) dim to grey and stay legible; row (b) dims. Highlighter on \"validity\" and \"comparison\". Rail row \"Word\" lights; margin chip \"W: validity = measures only the alcohol's effect?\". On \"alcohol\" a small variables strip writes under the card: \"independent: the alcohol | controlled: water, can, rise, distance\". Rail row \"Feature\" lights. On \"raised the can\" pen underlines \"2 cm\" and \"raised it to 6 cm\" in the card, and the \"distance\" item in the strip turns terracotta: \"distance: not controlled\". The plate thumbnail shows the coded bracket at 6 cm with more orange arrows curling into the air than at 2 cm (a side-by-side pair of small thumbnails, 2 cm and 6 cm). On \"forty three\" the two thumbnails dim and `PercentBars` draws: \"ethanol: 592 ÷ 1367 = 43%\" and \"propan-1-ol: 695 ÷ 2021 = 34%\"; underlines on the two means and two data values in the table. A small grey tag beside the bars: \"normal drift between these two alcohols at the same distance: about 2 points (the combustion practical)\". Answer row (c) writes: \"The can was raised to 6 cm for propan-1-ol only, so it lost more heat (34% against 43% caught): the difference is not caused by the alcohol alone\" (margin \"F\"). Ticks, \"5 / 7\" (feature) and \"6 / 7\" (effect). Rail row \"Fix\" lights. On \"two centimetres\" `PercentBars` and its tag dim, and row (c) adds: \"Fix: keep the can 2 cm above the wick for both alcohols; trim the propan-1-ol wick so its flame does not touch the can\" (spanner margin mark). Tick, \"7 / 7\". The 6 cm bracket on the thumbnail drops to 2 cm and the terracotta \"distance\" item turns green. Bright at the end: the fix line, the green strip item and the counter.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath",
+            "table build",
+            "NumberTicker",
+            "bar fill"
+        ],
+        "Settle about 1 second"
+    ],
+    "fixes-that-fix": [
+        "new",
+        "`WeakStrongPanel`: left \"Answer A\": \"Repeat the experiment more times and be more careful when measuring.\"",
+        "Fixes-that-fix: Now compare two improvements for part c.",
+        "be more careful / justified / two / reliability",
+        "On the spoken cues: Right \"Answer B\": \"Keep the can 2 cm above the wick for both alcohols, trimming the propan-1-ol wick, so both lose a similar share of heat and the difference is caused by the alcohol.\" On \"be more careful\" Answer A's two phrases each take a grey tag: \"repeat → reliability, not the distance\"; \"be more careful → which step?\". `LostMarksTag` on A: \"fix mark: 0\". Answer B's \"so both lose a similar share of heat\" takes",
+        "explain",
+        "`WeakStrongPanel`: left \"Answer A\": \"Repeat the experiment more times and be more careful when measuring.\" Right \"Answer B\": \"Keep the can 2 cm above the wick for both alcohols, trimming the propan-1-ol wick, so both lose a similar share of heat and the difference is caused by the alcohol.\" On \"be more careful\" Answer A's two phrases each take a grey tag: \"repeat → reliability, not the distance\"; \"be more careful → which step?\". `LostMarksTag` on A: \"fix mark: 0\". Answer B's \"so both lose a similar share of heat\" takes an amber underline; tick \"fix mark: 1\". Grey label \"HSCScience marking guide (illustrative)\". On \"justified\" the panel dims and a three-rung `BandLadder` draws on its own: \"3: two changes, each justified by its effect on accuracy\"; \"2: one justified change, OR two changes named without reasons\"; \"1: some relevant information\". On \"two\" the phrase \"named without reasons\" takes an amber underline. `GreyTag`: \"a NESA Chemistry marking guideline, 2025 (3 marks), paraphrased\". Neither answer is placed on the ladder. On \"reliability\" the ladder dims and a single chip writes: \"reliability question: 'repeat it' + how it shows whether results agree → marks\". `GreyTag`: \"a NESA Biology marking guideline, 2024 (2 marks)\". Beside it a small two-way sign: \"systematic error or validity problem → repeats don't fix it\" / \"reliability question → explain the repeats\". Bright at the end: the chip and the two-way sign. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk-answers": [
+        "adjust",
+        "A three-column strip writes in the centre: \"Hazard | Harm | Control\".",
+        "Risk-answers: Risk questions work the same way: the hazard, the harm it causes, and a control that stops it, for this substance.",
+        "hazard / flammable / lab coat / prevents",
+        "On the spoken cues: On \"hazard\" the strip's headers light in turn. On \"flammable\" one row fills from chem-m7-p03's risk table: \"alcohols: flammable (methanol, ethanol, propan-1-ol highly flammable) | fire; vapour reaches a flame | refill cold, away from flames; cap to put it out\". `m7-ethanol-fuel-bottle-v1.png` small in the hazard cell with a coded label \"alcohol\". Grey tag \"from the combustion practical's risk table\". On \"lab coat\" a",
+        "explain",
+        "A three-column strip writes in the centre: \"Hazard | Harm | Control\". On \"hazard\" the strip's headers light in turn. On \"flammable\" one row fills from chem-m7-p03's risk table: \"alcohols: flammable (methanol, ethanol, propan-1-ol highly flammable) | fire; vapour reaches a flame | refill cold, away from flames; cap to put it out\". `m7-ethanol-fuel-bottle-v1.png` small in the hazard cell with a coded label \"alcohol\". Grey tag \"from the combustion practical's risk table\". On \"lab coat\" a `CrossedHabit` chip \"wear a lab coat\" (alone, no hazard named) takes a red scribble cross. Caption \"which hazard? which harm?\". On \"prevents\" a grey chip: \"a safety answer that earned the marks: the precaution, and how it prevents infection\". `GreyTag`: \"a NESA Biology marking guideline, 2024 (2 marks)\". Bright at the end: the filled row, the cross, the chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-1": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Do the one in your subject,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text: \"Two students each measured the molar enthalpy of neutralisation of hydrochloric acid with sodium hydroxide three times, using a lidded polystyrene cup. The accepted value is about −57 kJ mol⁻¹.\" Table: \"Student | Trial 1 | Trial 2 | Trial 3 (kJ mol⁻¹)\"; \"X | −51 | −52 | −51\"; \"Y | −60 | −53 | −58\". \"Compare the reliability and accuracy of the two students' results.\" \"(3 marks)\" `m6-foam-cup-calorimeter-v1.png` small at the right (tag \"lidded polystyrene cup\"). Nothing answer-bearing: no means, no spread brackets, no number line. Empty answer box, counter \"0 / 3\". `FixRail` mini at the side (all rows unlit). `DrillCountdown` 10 seconds with \"Pause here to answer.\" `RoutineStrip` dims.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "Annotations land fast: highlighter on \"Compare\", ring on \"(3 marks)\", underlines on X's and Y's rows and on \"−57 kJ mol⁻¹\" as each is used.",
+        "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "one / reliable / accurate",
+        "On the spoken cues: On \"one\" a coded number line from −62 to −50 draws under the card with a fixed reference tick \"−57 (accepted)\"; X's three dots land as a tight cluster at −51 and −52 (bracket \"spread 1\"), Y's three dots land spread at −60, −58 and −53 (bracket \"spread 7\"). Rows write with margin letters and ticks, paired as s03 taught (\"X | Y\" on the same feature): \"Reliability: X's trials agree within 1 kJ mol⁻¹, Y's spread over 7,",
+        "explain",
+        "Annotations land fast: highlighter on \"Compare\", ring on \"(3 marks)\", underlines on X's and Y's rows and on \"−57 kJ mol⁻¹\" as each is used. On \"one\" a coded number line from −62 to −50 draws under the card with a fixed reference tick \"−57 (accepted)\"; X's three dots land as a tight cluster at −51 and −52 (bracket \"spread 1\"), Y's three dots land spread at −60, −58 and −53 (bracket \"spread 7\"). Rows write with margin letters and ticks, paired as s03 taught (\"X | Y\" on the same feature): \"Reliability: X's trials agree within 1 kJ mol⁻¹, Y's spread over 7, so X is more reliable.\" Tick, \"1 / 3\". On \"accurate\": \"Accuracy: Y's values are within 4 of −57 (mean −57); X's are 5 to 6 less negative (mean about −51), so Y is more accurate.\" Tick, \"2 / 3\". \"X is consistently less negative: a systematic error, such as heat loss.\" Tick, \"3 / 3\". Grey label \"HSCScience marking guide (illustrative)\". The number line echoes `TargetTrio`: a small grey thumbnail of target 1 beside X's cluster and target 2 beside Y's dots. On \"Agreeing is reliability\" a `CrossedHabit` chip \"X is more accurate because its results agree\" takes a red scribble cross. Caption \"agree = reliable; close to −57 = accurate\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-2": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Now Biology. A student compares the microbes that",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\". Card text exactly as Decisions (drill 2), ending \"Explain why this conclusion is not valid, and propose a change that fixes the problem.\" \"(3 marks)\" `m7-sample-bottles-three-v1.png` used twice, each instance cropped by position to one clear bottle (the left bottle tagged \"tap\", the right bottle tagged \"tank\"; the cloudy middle bottle is never shown). Never stretched. Nothing answer-bearing: no clocks, no plates. Empty answer box, counter \"0 / 3\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims.",
+        [
+            "HandText write-on",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "Annotations land fast: highlighter on \"not valid\", ring on \"(3 marks)\", underlines on \"after 24 hours\" and \"after 72 hours\" as they are used.",
+        "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "changed / both / unequal",
+        "On the spoken cues: On \"changed\" two plates stand side by side: `m7-plate-sparse-v1.png` tagged \"tap: 31\" with `ClockChip` \"24 h\", and `m7-plate-countable-v1.png` tagged \"tank: 118\" with `ClockChip` \"72 h\" (counts from the card; the plates illustrate fewer and more colonies, not the exact counts). A small variables strip: \"independent: water source | controlled: agar, 0.1 mL, 28 °C, time\"; \"time\" turns terracotta. Rows write with",
+        "explain",
+        "Annotations land fast: highlighter on \"not valid\", ring on \"(3 marks)\", underlines on \"after 24 hours\" and \"after 72 hours\" as they are used. On \"changed\" two plates stand side by side: `m7-plate-sparse-v1.png` tagged \"tap: 31\" with `ClockChip` \"24 h\", and `m7-plate-countable-v1.png` tagged \"tank: 118\" with `ClockChip` \"72 h\" (counts from the card; the plates illustrate fewer and more colonies, not the exact counts). A small variables strip: \"independent: water source | controlled: agar, 0.1 mL, 28 °C, time\"; \"time\" turns terracotta. Rows write with margin letters and ticks: \"Feature: incubation time differed (24 h against 72 h) as well as the water source.\" Tick, \"1 / 3\". \"Effect: longer incubation lets more colonies grow large enough to count, so the difference may be caused by time, not the water.\" Tick, \"2 / 3\". On \"both\": \"Fix: incubate both plates at 28 °C for the same time (for example 48 h) and count them at the same time.\" Tick, \"3 / 3\". Both clocks turn to \"48 h\" and \"time\" turns green. Grey label \"HSCScience marking guide (illustrative)\". On \"unequal\" a `CrossedHabit` chip \"repeat with more plates of each sample\" takes a red scribble cross. Caption \"repeats: reliability; the times are still unequal\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "`FixRail` returns full size as the decision board, each row lighting on its cue with a one-line example from this video: \"Word: validity / reliability / accuracy (right target, repeats agree, close to true)\"; \"Feature: can raised to 6 cm for propan-1-ol: more heat lost, 34% against 43%\"; \"Fix: same 2 cm for both, trimmed wick\".",
+        "Decision-rule: So, in every practical question.",
+        "word / feature / fix / Next",
+        "On the spoken cues: On \"Repeats help reliability\" a small chip under the rail: \"repeats → reliability, not a systematic error\". On \"Next\" a chip slides in: \"Next: extended responses (6 to 9 marks)\".",
+        "explain",
+        "`FixRail` returns full size as the decision board, each row lighting on its cue with a one-line example from this video: \"Word: validity / reliability / accuracy (right target, repeats agree, close to true)\"; \"Feature: can raised to 6 cm for propan-1-ol: more heat lost, 34% against 43%\"; \"Fix: same 2 cm for both, trimmed wick\". On \"Repeats help reliability\" a small chip under the rail: \"repeats → reliability, not a systematic error\". On \"Next\" a chip slides in: \"Next: extended responses (6 to 9 marks)\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 50 seconds with pause invitation"
+    ]
+}
+# END generated rows: m7c07, m7p03c, m7g02, m7c08a, m7c08b, skills07
 
 
 LESSONS = {
@@ -15283,6 +17007,86 @@ LESSONS = {
         'rows': M7C06_ROWS,
     },
     # END generated entries: m7p01c, m7p02c, m7c05, m7c06
+    # BEGIN generated entries: m7c07, m7p03c, m7g02, m7c08a, m7c08b, skills07
+    'm7c07': {
+        'design': D + 'lessons/chem-m7-c07.md',
+        'learning_review': D + 'checks/m7c07-learning-review.md',
+        'science_check': D + 'checks/m7c07-claude-science-check.md',
+        'meta': {"title": "What does burning an alcohol tell us about fuel choice? Combustion equations, the enthalpy trend, energy per gram, and ethanol against petrol", "subtitle": "E10 petrol is up to ten percent ethanol, yet litre for litre ethanol carries less energy than petrol. What does burning an alcohol tell us about choosing a fuel: its products, its energy per mole and per gram, and where its carbon comes from?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 10, "lessonIntent": "writing balanced complete and incomplete combustion equations for alcohols, per mole of fuel, with state symbols; explaining soot as limited oxygen; saying where data values come from and why a simple can gives a low value (reasons left to p03); explaining the steady increase in molar enthalpy of combustion with chain length; comparing fuels per gram and explaining why alcohols give less; comparing ethanol and petrol by products, carbon source, production energy, land and water; describing the economic, environmental and sociocultural implications of obtaining hydrocarbons; judging a fuel on several criteria. No molar calculation from spirit-burner data, no method, errors or risk table (chem-m7-p03)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "complete-combustion", "per-mole-sign", "incomplete-combustion", "where-numbers-come-from", "series-trend", "per-gram", "same-products-carbon", "not-carbon-neutral", "obtaining-hydrocarbons", "judge-fuel", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c05 (alcohol names methanol to butan-1-ol; the OH group; condensed formulas), chem-m7-c06 (fermentation of glucose by yeast from crops; ethanol from ethene and crude oil; the ethanol bottle and crude oil barrel plates), chem-m7-c03 (hydrocarbons from crude oil; octane named), chem-m5-g01 (combustion releases heat; ΔH negative; runs to completion), chem-m6-c03 (q = mcΔT, c = 4.18 J g⁻¹ °C⁻¹, \"keep the digits; round at the end\"; recommended prerequisite, change 10). Year 11: balancing equations; molar mass; carbon monoxide is toxic; photosynthesis takes in carbon dioxide (Biology or Year 10). Not assumed: incomplete combustion as a term, energy per gram (energy density), oxidation state, carbon neutral, sociocultural (given a plain meaning).", "startsWith": "Write alcohol combustion equations and compare fuel sources. The video opens: In Australia, E10 petrol is up to ten percent ethanol. Litre for litre, ethanol carries less energy than petrol. So why blend it in at all?", "stopsAfter": "writing balanced complete and incomplete combustion equations for alcohols, per mole of fuel, with state symbols; explaining soot as limited oxygen; saying where data values come from and why a simple can gives a low value (reasons left to p03); explaining the steady increase in molar enthalpy of combustion with chain length; comparing fuels per gram and explaining why alcohols give less; comparing ethanol and petrol by products, carbon source, production energy, land and water; describing the economic, environmental and sociocultural implications of obtaining hydrocarbons; judging a fuel on several criteria. No molar calculation from spirit-burner data, no method, errors or risk table (chem-m7-p03).", "nextLesson": "measuring the enthalpy of combustion of alcohols with a spirit burner (route chem-m7-p03, \"Measure and compare alcohol combustion enthalpy\")."},
+        'teaching': {"task": "E10 petrol is up to ten percent ethanol, yet litre for litre ethanol carries less energy than petrol. What does burning an alcohol tell us about choosing a fuel: its products, its energy per mole and per gram, and where its carbon comes from?", "causalExplanation": "(1) a fuel choice depends on energy and on where the carbon came from (1); (2) complete combustion gives CO₂ and water; balance C, H, then O, counting the alcohol's own O (2); (3) the equation is written per mole of fuel, so a half O₂ is fine; ΔH is negative because heat is released (3); (4) too little oxygen leaves carbon as CO or soot, so less energy is released; soot reports the oxygen supply (4); (5) data values come from burning a weighed fuel and measuring the heat taken in by water; a simple can catches only about half (5); (6) each CH₂ adds the same bonds to break and the same extra CO₂ and H₂O to form, so the energy per mole rises by about the same amount each time (6); (7) a bigger molecule weighs more, so fuels are compared per gram; alcohols give less per gram because the oxygen adds mass and its carbon is partly oxidised (7); (8) ethanol and petrol make the same products; the difference is whether the carbon came recently from the air or from underground (8); (9) production uses energy, land and water, so ethanol is not automatically carbon neutral (9); (10) obtaining hydrocarbons brings economic benefits with environmental and sociocultural costs, often borne by people near the site (10); (11) each fuel wins on something, so judge on several criteria (11); memory aid (12); two attempts and brief feedback (13 to 16); handoff (17); key notes (18).", "conversationalApproach": "E10 petrol is up to ten per cent ethanol, yet litre for litre ethanol carries less energy than petrol, so the video asks what burning an alcohol tells us about choosing a fuel. Complete combustion is balanced carbon, then hydrogen, then oxygen, counting the oxygen the alcohol already carries; the equation is written per mole of fuel, so methanol's one and a half O2 is fine, and delta H is negative because heat is released. Too little oxygen leaves carbon as carbon monoxide or soot and releases less energy, so soot reports the oxygen supply. One recalled q = mc delta T shows where data values come from and that a simple can catches only about half. Along the series each CH2 adds the same bonds to break and the same extra products to form, so the molar enthalpy rises by about 650 kilojoules each time; per gram is the fuel comparison, and alcohols give less because the oxygen adds mass and one carbon is already partly oxidised. Ethanol and petrol give the same products, but ethanol's carbon came recently from the air; production energy, land and water mean it is not automatically carbon neutral, and obtaining hydrocarbons brings economic benefits with environmental and sociocultural costs near the site. Fuels are judged on several criteria. The memory aid is per mole, each CH2 adds about 650; per gram, oxygen costs energy. Two exam questions follow with brief feedback.", "openingDecision": "In Australia, E10 petrol is up to ten percent ethanol. Litre for litre, ethanol carries less energy than petrol. So why blend it in at all? Burning an alcohol tells you two things that matter for choosing a fuel: how much energy you get, and where the carbon came from. So what does burning an alcohol tell us about fuel choice?", "understandingCheck": "(A1) \"Butan-1-ol is burned in a spirit burner beneath a metal can of water. (a) Write a balanced equation for the complete combustion of butan-1-ol. (b) After a few minutes, a black deposit forms on the base of the can. Explain how this deposit forms.\" New alcohol (the scenes balance ethanol and methanol); (b) targets the 2020 Q24 marker-reported mistake (soot blamed on the fuel without the oxygen supply, `../research/question-types-chem-m7.md`), answered positively in the feedback. Crossed mistake: \"C₄H₉OH + 13/2 O₂ → 4CO₂ + 5H₂O\" (the alcohol's own oxygen forgotten). (A2) \"The molar enthalpy of combustion of ethanol is −1367 kJ mol⁻¹ (M = 46.07 g mol⁻¹) and of octane is −5471 kJ mol⁻¹ (M = 114.2 g mol⁻¹). (a) Calculate the energy released per gram of each fuel. (b) Compare ethanol and octane as fuels, including one advantage of ethanol that is not related to energy.\" Tests scene 7's unit choice and scene 8's carbon source with given data. Crossed mistake: \"octane releases four times the energy per mole, so it is four times better\" (the site Must Do, kJ/mol against kJ/g).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):; combustion; dehydration; substitution with HX; oxidation\" \"compare and contrast fuels from organic sources to biofuels, including ethanol\" \"examine the environmental, economic and sociocultural implications of obtaining and using hydrocarbons from the Earth\" Only the combustion example of `C7-IQ4-04` is taught here; dehydration, substitution with HX and oxidation are chem-m7-c08a. this video starts by writing alcohol combustion equations and stops at assessing energy, production and environmental trade-offs between ethanol and petrol. It teaches: complete combustion of an alcohol to carbon dioxide and water, balanced by carbon, then hydrogen, then oxygen, counting the oxygen the alcohol already carries (ethanol); the equation written per mole of fuel, with a fractional O₂ coefficient (methanol), and ΔH negative because heat is released (chem-m5-g01 recall); state symbols with liquid water for the data values; incomplete combustion when oxygen is limited, giving carbon monoxide (toxic) and soot (carbon), a yellow smoky flame and less energy released; soot as evidence about the oxygen supply; where the data values come from, through one compact recall of q = mcΔT with Codex's methanol hook dataset (0.74 g warms 100.0 g of water by 20.0 °C: 8.36 kJ, about 11 kJ per gram against about 22.7 kJ per gram in careful measurements, so the can caught about half; the reasons are chem-m7-p03); the molar enthalpies of combustion of methanol to butan-1-ol and the steady increase of about 650 kJ/mol per CH₂, explained by bonds broken and formed; energy per gram as the fuel comparison (ethanol 29.7, octane 47.9 kJ/g) and why alcohols give less (the oxygen adds mass and the carbon bonded to oxygen is already partly oxidised); about 30% less energy per litre for ethanol; same combustion products for ethanol and petrol, but recently captured carbon (fermented sugarcane, chem-m7-c06) against fossil carbon; why bioethanol is not automatically carbon neutral (production energy), and its land and water cost; the economic, environmental and sociocultural implications of obtaining hydrocarbons from the Earth; judging fuels on several criteria, with E10 as a compromise. Not here: the full molar enthalpy calculation from spirit-burner data, the set-up, the method, the error chain, improvements, validity, reliability and accuracy, and the risk table (chem-m7-p03); calculation practice and anomalous results (chem-m7-g02); bond enthalpy arithmetic (author note c; HSC Chemistry does not require it); dehydration, substitution with HX and oxidation (chem-m7-c08a); fermentation conditions (chem-m7-c06, recalled in one clause); Gibbs free energy (chem-m5-g01, recalled only for the sign); country case studies (correction 13); the bomb calorimeter (correction 11)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c05 and c06: carbon skeleton ink; hydrogens soft grey; oxygen brick red, the OH ringed red; O₂ molecules red pairs; CO₂ and H₂O products in a grey product box; each CH₂ in the series teal; heat as warm-orange arrows (chem-m6-c03 convention); soot specks charcoal; fossil carbon dark brown; recently captured carbon green. Board layout (constant): top-left the short task chip (\"Complete combustion\", \"Energy per gram\", \"Ethanol or petrol?\"); centre the equation stage strip, ladder or loop, one at a time; plates small at the left or right (larger only in scenes 4, 5 and 8, where the object carries the explanation). Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous strip or plate leaves before the next draws. Reuse: `m7-ethanol-fuel-bottle-v1.png` (2000 × 2000: an amber glass bottle with a glass stopper, pale liquid, no label; hook, scene 8, handoff; coded label \"ethanol\"); `m7-crude-oil-barrel-v1.png` (2000 × 2000: a plain dark steel drum, no label; hook, scene 8, coded label \"crude oil → petrol\"); `m7-oil-gas-rig-v1.png` (2000 × 2000: an offshore platform with a derrick and crane standing in painted sea; no people visible; scene 10). Considered, not used: `m7-camping-gas-burner-v1.png` (inspected: a blue gas canister stove with a blue flame; its fuel is butane or propane, not an alcohol, so it would mislead in scenes 2 to 5); `g1-flame-v1.png` and `c7-flame-energy-v1.png` (inspected: a free-floating orange flame and a flame on a nozzle; neither shows an alcohol burning under a can); `m6-foam-cup-calorimeter-v1.png` (neutralisation, not combustion; the plate audit says so); `c8-thermometer-hot-v1.png` (a free-standing thermometer; the new set-up plate includes its own). New plates: `m7-spirit-burner-calorimeter-v1.png` and `m7-spirit-burner-calorimeter-sooty-v1.png` (shared with chem-m7-p03, which commissions the full set) and `m7-sugarcane-stalks-v1.png`; see Assets. No human figures.", "transitionPlan": "The ethanol bottle and crude oil barrel plates open the hook with an E10 chip; the board clears to the equation stage strip as the balance tally lights C, H and O in turn and a red chip slides in from the OH; the methanol strip writes its 3/2 coefficient and a per-mole chip; the spirit burner calorimeter plate cross-fades to its sooty partner as grey carbon specks and coded CO molecules rise and a less-energy bar shrinks; the plate returns small with its amber readout as the task line, equation strip, grouped givens and one working line write; the series ladder extends one bar per alcohol with a teal CH2 glow and a bracket, and the bond ledger cracks and forms bonds with energy arrows; the per-gram switch re-scales the bars and an octane bar extends past them; two carbon loops draw for sugarcane and the fossil drum, then the production ledger adds energy arrows; the implications board lights three columns under the oil rig plate; the criteria card lights row by row; the memory lines write with small thumbnails; each attempt clears the board and its feedback underlines the card as the strip or per-gram lines write and a crossed chip lands; the thumbnails and next chip close; scene crossfade with settle."},
+        'rows': M7C07_ROWS,
+    },
+    'm7p03c': {
+        'design': D + 'lessons/chem-m7-p03.md',
+        'learning_review': D + 'checks/m7p03c-learning-review.md',
+        'science_check': D + 'checks/m7p03c-claude-science-check.md',
+        'meta': {"title": "Measuring the enthalpy of combustion of alcohols: if your spirit burner catches only half the energy, how can you still compare alcohols reliably?", "subtitle": "Your spirit burner will catch only about half the energy of each alcohol. So how do you measure the enthalpy of combustion of several alcohols, compare them reliably anyway, and explain where the rest of the energy goes?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 11, "lessonIntent": "setting up the spirit burner and can, with a draught shield and lid, and explaining each part; weighing with the cap on and recording the highest temperature; naming the variables of the comparison and why the same rise is used; calculating molar enthalpy of combustion from water mass, temperature rise and mass of fuel lost; judging that the comparison is reliable and valid for ranking though each value is inaccurate; tracing heat loss, incomplete combustion and evaporation to q or n and to ΔH; explaining why extrapolation helps little here; matching each improvement to its cause; writing the risk rows for the four alcohols. No anomalous results (chem-m7-g02), no answer technique drill (s07)."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "setup", "method", "variables", "calculate", "compare-range", "reliable-comparison", "error-chain", "extrapolation-contrast", "improvements", "validity", "risk-assessment", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c07 (complete and incomplete combustion equations; the data values −726, −1367, −2021, −2676 kJ/mol; soot means too little oxygen; a simple can catches about half; the spirit-burner set-up plate). chem-m6-c03 (q = mcΔT, c = 4.18 J g⁻¹ °C⁻¹, ΔH = −q ÷ n, kJ, \"keep the digits; round at the end\"; recommended prerequisite, change 10). chem-m6-p02 (the error chain source to ΔT to q to ΔH; not every error pushes the same way; extrapolating a cooling line; validity, reliability and accuracy for a calorimetry practical; recommended prerequisite). chem-m5-p01 (validity, reliability, accuracy, variables and risk assessment in plain words). chem-m7-c05 (alcohol names). Year 11: molar mass, n = m ÷ M; significant figures. Not assumed: spirit burner, draught shield (given a plain meaning), GHS hazard codes.", "startsWith": "Measure water warming and fuel mass with a spirit burner. The video opens: In the last video, burning methanol under a can of water caught only about half the energy. That's normal for this practical. So how do you measure the enthalpy of combustion of several alcohols, compare them reliably anyway, and explain where the rest of the energy goes?", "stopsAfter": "setting up the spirit burner and can, with a draught shield and lid, and explaining each part; weighing with the cap on and recording the highest temperature; naming the variables of the comparison and why the same rise is used; calculating molar enthalpy of combustion from water mass, temperature rise and mass of fuel lost; judging that the comparison is reliable and valid for ranking though each value is inaccurate; tracing heat loss, incomplete combustion and evaporation to q or n and to ΔH; explaining why extrapolation helps little here; matching each improvement to its cause; writing the risk rows for the four alcohols. No anomalous results (chem-m7-g02), no answer technique drill (s07).", "nextLesson": "answering practical and investigation questions in the exam (exam skills s07, placed after p03 by change 11), then calculation practice (chem-m7-g02)."},
+        'teaching': {"task": "Your spirit burner will catch only about half the energy of each alcohol. So how do you measure the enthalpy of combustion of several alcohols, compare them reliably anyway, and explain where the rest of the energy goes?", "causalExplanation": "(1) a simple can catches about half the energy; the practical must compare alcohols reliably anyway (1); (2) heat must get into the water through the base, so a metal can sits close above the flame; a shield and a lid cut heat carried away by air (2); (3) the cap stops evaporation being counted as fuel burnt; the highest reading is the rise (3); (4) hotter water loses heat faster, so the same rise keeps the heat lost from the water similar for every alcohol (4); (5) the water's mass sets q; the fuel's mass lost sets n; ΔH = −q ÷ n per mole of fuel (5); (6) the values grow more negative with chain length, but each is about half (6); (7) trials agree, and the gaps between alcohols dwarf the spread, so the order is reliable (7); (8) heat to the can, clamp and air, incomplete combustion and soot make q too small; evaporation makes n too big; most errors make ΔH less negative, but not every one (8); (9) the flame loses heat for minutes, so extrapolation helps little; stop the loss at its source (9); (10) each improvement fixes a named cause; repeats fix reliability only (10); (11) one variable changed with losses similar makes the comparison valid; measuring only the water's heat makes each value less valid as an absolute measure (11); (12) the hazards and their controls (12); memory aid (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).", "conversationalApproach": "the last video's methanol caught only about half the energy, which is normal for a spirit burner, so the practical asks how to measure the enthalpy of combustion of several alcohols, compare them reliably anyway and explain where the rest goes. Each part of the set-up is given its reason (a metal can close above the flame, a draught shield and lid, a capped burner), the method weighs the burner and records the highest temperature, and the same 20 degree rise keeps the heat lost similar for every alcohol. The calculation is staged one line at a time: the water's mass goes into q, the fuel's mass lost gives n, and delta H is minus q over n. Three trials per alcohol agree within about two per cent and the gaps between alcohols dwarf the spread, so the ranking is reliable but not accurate; the error chain traces heat to the can, clamp and air, incomplete combustion and evaporation through q or n to delta H, extrapolation helps only a little because the flame loses heat for minutes, and each improvement fixes a named cause while repeats fix reliability only. Validity and the risk assessment follow. The memory aids are water in q, fuel in n, and shield, lid, close, cap. Two exam questions follow with brief feedback.", "openingDecision": "In the last video, burning methanol under a can of water caught only about half the energy. That's normal for this practical. So how do you measure the enthalpy of combustion of several alcohols, compare them reliably anyway, and explain where the rest of the energy goes?", "understandingCheck": "(A1) \"A spirit burner containing ethanol (M = 46.07 g mol⁻¹) is used to heat 200.0 g of water from 20.3 °C to 38.9 °C. The mass of the spirit burner decreases from 158.42 g to 157.36 g. The specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹. Calculate the molar enthalpy of combustion of ethanol.\" New numbers (the scenes work methanol); every given is on the card. Answer −676 kJ/mol (3 s.f.), 49.4% of −1367. Crossed mistake: the fuel's mass in q (1.06 × 4.18 × 18.6 = 82.4 J, giving about −3.58 kJ/mol), the 2019 Q23 marker-reported mistake (`../research/question-types-chem-m7.md`). (A2) \"A student burns methanol and then butan-1-ol in a spirit burner beneath an uncovered copper can, with no draught shield, heating the water by 20 °C each time. Her mean molar enthalpies of combustion are −310 kJ mol⁻¹ for methanol and −1050 kJ mol⁻¹ for butan-1-ol. The data values are −726 kJ mol⁻¹ and −2676 kJ mol⁻¹. Each was repeated three times. Explain why her values are less negative than the data values, and suggest one improvement that would reduce this difference.\" Tests the error chain and an improvement matched to its cause. Answer: heat lost to the air and can (no shield, no lid), so q too small, ΔH less negative; a draught shield and lid. Crossed mistake: \"repeat more times\" (repeats improve reliability, not accuracy).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to measure and reliably compare the enthalpy of combustion for a range of alcohols\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" (carried by the risk table, change 5 of the route review) this video prepares students to carry out and analyse the spirit-burner investigation; it does not claim that watching it is conducting it. It teaches: the set-up (spirit burner, metal can of water clamped close above the flame, draught shield, lid, heatproof mat) and why each part is there; the method (measured water, burner weighed with its cap on before and after, starting and highest temperatures, the same temperature rise for each alcohol, capping just before that rise to put the flame out, reweighing straight away); the variables of a comparison (independent: the alcohol; dependent: the molar enthalpy from ΔT and mass lost; controlled: water mass, can, flame distance, shield, lid, temperature rise), and why the same rise keeps losses comparable; the molar calculation in three stages with \"water in q, fuel in n\"; a results table for methanol to butan-1-ol, means of three trials; why the comparison is reliable (trials agree, and the gaps between alcohols are far bigger than the spread); why the values are inaccurate (about half the data values), traced through the error chain (heat to the can, clamp and air; incomplete combustion and soot; evaporation from the wick); why extrapolation helps little here, unlike chem-m6-p02; improvements matched to their causes; validity for comparing against validity as an absolute measure; the risk assessment and disposal of the alcohols. Recalled, not re-taught: q = mcΔT and c (chem-m6-c03); the error chain, \"not every error pushes the same way\", extrapolation and the meanings of validity, reliability and accuracy (chem-m6-p02, chem-m5-p01); combustion equations, incomplete combustion, the data values and \"about half\" (chem-m7-c07). Not here: anomalous results and further calculation practice (chem-m7-g02); answer technique for practical questions (s07); the bomb calorimeter and its figures (site correction 11); percentage uncertainty arithmetic; the calorimeter's heat capacity as a calculation."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m6-p02 and chem-m7-c07: heat warm-orange arrows; the temperature and balance readouts amber digits; the four alcohols in fixed colours across table rows, graph points and chips (methanol teal, ethanol amber, propan-1-ol violet, butan-1-ol blue); data values grey; q boxes orange, n boxes blue in the error chain; soot charcoal; hazards terracotta, controls green. Board layout (three zones, constant, as chem-m6-p02): top-left the short task line; the centre holds the apparatus or the graph; the right third holds the current card (method step, working, table, error chain, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Reuse: `m6-measuring-cylinder-v1.png` (2000 × 2000: an empty clear glass measuring cylinder with a hexagonal base, faint unlabelled graduations; scene 3, coded fill to 200 mL and coded label); `m7-ethanol-fuel-bottle-v1.png` (2000 × 2000: an amber glass bottle with a glass stopper, pale liquid, no label; scene 12 as an alcohol stock bottle, with a coded label); `m5x-safety-glasses-v1.png` (2000 × 2000: clear safety glasses; risk table head, \"always\"); `m5x-waste-bottle-v1.png` (2000 × 2000: an amber jar with a black cap and a blank cream label; scene 12, coded label \"Organic waste\"); `m7-fume-cupboard-v1.png` (2000 × 2000: a white fume cupboard with its sash part open; scene 12, small, beside \"refill away from flames\", tagged \"or a refilling station, per school\"). Considered, not used: `c8-thermometer-hot-v1.png` (inspected: a free-standing glass thermometer; the set-up plates include their own thermometer, and a separate one could not be placed in the can reliably); `m6-analytical-balance-v1.png` (inspected: an analytical balance with a glass draft enclosure holding a small beaker; a spirit burner is weighed on a top-pan balance, and the enclosure would hide or misplace it); `m6-foam-cup-calorimeter-v1.png` and `p02-foam-cup-in-beaker-v1.png` (neutralisation; shown only as a small grey thumbnail in scene 9's p02 recall, tagged \"neutralisation practical\"); `m5x-bunsen-burner-v1.png` (a gas burner, not a spirit burner). New plates: four (see Assets). No human figures.", "transitionPlan": "The spirit burner calorimeter plate opens the hook lit with its readout chip as c07's two-bar strip writes about half and four alcohol chips line up; labels point to the burner, can and flame gap and the heat path arrows run as the shield and lid plate takes over; the method card writes one step per cue with the measuring cylinder, balance and readout acting it out; the variables card writes with the four coloured chips; the plate shrinks left as the task line, equation strip, grouped givens and one working line per stage write; the results table fills row by row and the coded graph plots each mean with error bars; the gap-against-spread bracket lights for reliability; the error-chain rows write one per cue, each arrow running to q or n and then delta H; a grey thumbnail of the neutralisation graph sits beside the burner's long cooling line for the extrapolation contrast; the fix matcher docks one chip per error row; the validity card and the risk table write in turn; the memory lines write with their arrows; each attempt clears the board and its feedback underlines the givens as the working or error rows write and a crossed chip lands; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M7P03C_ROWS,
+    },
+    'm7g02': {
+        'design': D + 'lessons/chem-m7-g02.md',
+        'learning_review': D + 'checks/m7g02-learning-review.md',
+        'science_check': D + 'checks/m7g02-claude-science-check.md',
+        'meta': {"title": "Combustion Enthalpy Calculations: HSC-Style Practice", "subtitle": "A combustion question gives you a water mass, a temperature rise and a fuel mass that all look alike. How do you give each its job, get the molar enthalpy and the share of heat that reached the water, run the calculation backwards, and decide whether an odd result belongs?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 12, "lessonIntent": "calculating ΔHc from raw spirit-burner data; the percentage of released heat that reached the water; the mass of fuel needed when only a stated fraction reaches the water; calculating a trial's ΔHc, identifying it as anomalous by its cause and excluding it from the mean; checking each answer's size, unit and sign."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question"],
+        'ids': ["hook", "q1-question", "q1-q-and-n", "q1-dh", "q1-percent", "q1-mistake", "q2-question", "q2-heat", "q2-mass", "q2-mistake", "q3-question", "q3-trial3", "q3-judge", "q3-mean", "q3-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From p03: \"water in q, fuel in n\"; Δm = initial − final; ΔHc = −q ÷ n per mole of fuel; results about half the data values; heat to the can, clamp and air makes q too small; evaporation makes n too big; capping the burner and reweighing at once. From skills-s07: word, feature, fix (name the feature of the method and its effect before proposing a fix); G02 applies the same habit to an anomalous trial for the first time. From c07: the data values (−726, −1367, −2021 kJ mol⁻¹); ΔHc is per mole of fuel; kJ per gram is a different quantity. From m6-c03: q = mcΔT with c = 4.18 J g⁻¹ °C⁻¹; keep the digits, round at the end. From Year 11: n = m ÷ M; molar masses from the data sheet; significant figures (decimal places in a subtraction).", "startsWith": "An unseen methanol dataset. The video opens: A combustion question hands you three numbers that look alike: the water's mass, its temperature rise, and the mass of fuel burnt.", "stopsAfter": "calculating ΔHc from raw spirit-burner data; the percentage of released heat that reached the water; the mass of fuel needed when only a stated fraction reaches the water; calculating a trial's ΔHc, identifying it as anomalous by its cause and excluding it from the mean; checking each answer's size, unit and sign.", "nextLesson": "alcohol reactions (route chem-m7-c08, \"Where can an alcohol reaction lead?\")."},
+        'teaching': {"task": "A combustion question gives you a water mass, a temperature rise and a fuel mass that all look alike. How do you give each its job, get the molar enthalpy and the share of heat that reached the water, run the calculation backwards, and decide whether an odd result belongs?", "causalExplanation": "Why the water's mass goes in q: the water is what warms (2b). Why the fuel's mass lost gives n: ΔHc is per mole of fuel (2b, 2e). Why ΔH is negative: heat is released (2c). Why only about half reaches the water: the rest warms the can and the air (2d). Why the heat released is bigger than q(water): only 45% reaches the water (3b). Why multiplying by 0.450 must be wrong: heat lost means more fuel, so the answer must exceed the no-loss mass (3d). Why trial 3 is anomalous: same heat, more mass lost, so that fuel never heated the water (most likely it left without burning), making n too big (4c). Why it may be excluded: its cause is identified (4c, 4d). Why averaging it in is wrong: an explained faulty trial drags the mean away from every good trial (4e).", "conversationalApproach": "A combustion question hands you three numbers that look alike (the water's mass, its temperature rise and the mass of fuel burnt), and each has one job, so every walkthrough sorts the givens before calculating: the water goes into q, the fuel's mass lost gives n, and delta H is minus q over n. Q1 (methanol from raw data) finds q, n and the molar enthalpy one line at a time, then compares the heat released by complete combustion with the heat the water gained to give the share that reached it; Q2 runs backwards from the heat a planned warming needs, divides by the share that reaches the water, and turns heat into moles and moles into a mass of ethanol; Q3 asks whether one of four propan-1-ol trials is anomalous, works trial 3 the same way, finds the cause (extra mass lost for the same rise) before dropping it, and averages the trials that fit. Each question ends with its spoken, crossed classic mistake (dividing by grams, multiplying by the share instead of dividing, averaging all four trials), and the decision board gives the steps for any combustion calculation.", "openingDecision": "A combustion question hands you three numbers that look alike: the water's mass, its temperature rise, and the mass of fuel burnt. Each one has a single job. The water's mass and its rise go into q. The fuel's mass gives n. Swap them, and the answer can be out by a factor of a hundred or more. Here are three HSC-style questions, and the last one hides a result that doesn't belong. Pause and try each one, then we'll work through it, one step at a time.", "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): every mass, temperature, c, M and data value; Q2's 45.0% and its \"same apparatus\" condition; Q3's table, the shield and lid, \"fresh water\", M and c. Nothing answer-bearing during the holds; the check strip dims.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p55), as printed: \"conduct a practical investigation to measure and reliably compare the enthalpy of combustion for a range of alcohols\" Related Year 11 content (NSW Chemistry Stage 6, 2017, Module 4, recalled, quoted from the official 2017 syllabus DOCX): \"investigate enthalpy changes in reactions using calorimetry and q = mcΔT (heat capacity formula) to calculate, analyse and compare experimental results with reliable secondary-sourced data, and to explain any differences\". Practice and transfer only: the coverage rows stay with chem-m7-p03 (conduct and errors) and chem-m7-c07 (equations and data values); G02 adds practice rows, not first coverage. starts at the route's \"Separate water mass, temperature rise and fuel mass\" and stops at its \"Calculate molar enthalpy and evaluate an anomalous result\". Three questions, each a chain of steps with one trap: (1) methanol from raw burner data: ΔT, q from the water, n from the burner's mass lost, ΔHc, then the percentage of the released heat that reached the water (trap: dividing by grams); (2) the reverse: the mass of ethanol needed for a planned temperature rise when only a stated fraction of the heat reaches the water (trap: multiplying by the fraction instead of dividing); (3) a results table for propan-1-ol with one anomalous trial: calculate it, judge it by its cause, and take a suitable mean (trap: averaging all four). Not here: the method, set-up, errors list and improvements (chem-m7-p03); answer technique for validity, reliability and accuracy (skills-s07); balancing combustion equations and energy per gram (chem-m7-c07); graphing a homologous series (left out; see near-match check); the calorimeter's heat capacity; percentage uncertainty; bond enthalpies."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the G01 and G03 layout: top-left the question card (stem, data, table and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through each question; the working fills the right two thirds; a type badge top-right (\"Raw data: q, n, ΔH\", \"Backwards: heat to mass\", \"Table: is it anomalous?\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used. A check strip on the far left carries four rows, \"water in q?\", \"fuel in n?\", \"kJ, per mole, sign?\", \"makes sense?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Working follows the C03 and p03 staging: equation strip, one stage per line, earlier lines dimming, one kept chip into the next scene. Colour key from p03: water quantities (m, ΔT, q) orange, fuel quantities (Δm, n) blue, ΔH teal; amber only for underlined givens. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.", "transitionPlan": "The heading writes on and the job sorter drops three grey number chips into a water tray and a fuel tray; each question opens on a fresh board with the type badge hidden while the worded card writes with its spirit burner plate or trial table kept readable; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used while q, n and delta H write one stage per line in their colours, earlier lines dimming to kept chips; the heat split bar fills its share of the energy released; a number line places three fuel masses for the backwards question; the trial strip draws a dashed band and rings trial 3's mass; each classic mistake writes as a chip and takes a red scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."},
+        'rows': M7G02_ROWS,
+    },
+    'm7c08a': {
+        'design': D + 'lessons/chem-m7-c08a.md',
+        'learning_review': D + 'checks/m7c08a-learning-review.md',
+        'science_check': D + 'checks/m7c08a-claude-science-check.md',
+        'meta': {"title": "Where can an alcohol reaction lead? Dehydration, substitution with HX, and oxidation predicted from the alcohol's class and the conditions", "subtitle": "Warm an orange oxidising agent with ethanol and it turns green; warm it with 2-methylpropan-2-ol and it stays orange. Where can an alcohol reaction lead, and what decides the product: the reagent, the conditions or the alcohol's class?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 13, "lessonIntent": "writing equations with conditions for dehydration (including two possible alkenes), substitution with HX and oxidation of alcohols; telling alcohol substitution from alkene addition; predicting aldehyde, carboxylic acid, ketone or no reaction from the class and the conditions (distil or reflux); stating the dichromate colour change and what it does and does not show. No product tests, no aldehyde and ketone naming rules or properties, no practical method."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "dehydration", "hydration-reversed", "two-alkenes", "substitution-hx", "addition-or-substitution", "oxidation", "class-decides", "primary-to-acid", "distil-or-reflux", "green-not-product", "alcohol-hub", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c05 (primary, secondary and tertiary by counting carbons on the C–OH carbon; naming alcohols; hydrogen bonding between alcohol molecules; boiling points); chem-m7-c04a (hydration of ethene: steam, H₃PO₄, about 300 °C, high pressure, ⇌; HBr addition to ethene, one product; two possible products from an unsymmetrical case); chem-m7-c06 (bromoethane and aqueous hydroxide to ethanol under reflux; why reflux; distillation separates by boiling point); chem-m7-c07 (complete combustion); Module 5 (Le Chatelier: adding or removing a substance shifts an equilibrium). Year 11: balancing; oxidation as loss of electrons or hydrogen at an introductory level; electronegativity. Not assumed: dehydration, carbonyl, aldehyde, ketone, carboxylic acid (named as products here), oxidising agent as [O].", "startsWith": "Compare dehydration, substitution and oxidation. The video opens: Burning an alcohol completely breaks it right down, to carbon dioxide and water. Today, three reactions that turn an alcohol into a new compound instead. Here's a clue.", "stopsAfter": "writing equations with conditions for dehydration (including two possible alkenes), substitution with HX and oxidation of alcohols; telling alcohol substitution from alkene addition; predicting aldehyde, carboxylic acid, ketone or no reaction from the class and the conditions (distil or reflux); stating the dichromate colour change and what it does and does not show. No product tests, no aldehyde and ketone naming rules or properties, no practical method.", "nextLesson": "aldehydes and ketones, how to name them and how a test tells them apart (route chem-m7-c08, delivery part c08b)."},
+        'teaching': {"task": "Warm an orange oxidising agent with ethanol and it turns green; warm it with 2-methylpropan-2-ol and it stays orange. Where can an alcohol reaction lead, and what decides the product: the reagent, the conditions or the alcohol's class?", "causalExplanation": "(1) burning destroys the skeleton; three other reactions keep it, and one oxidant tells two alcohols apart (1); (2) dehydration: OH plus a neighbouring H leave as water, the carbons each one bond short form C=C (2); (3) it is hydration reversed; adding water favours the alcohol, removing water favours the alkene, so the conditions are opposite, and the alkene escaping makes dehydration run one way (3); (4) different neighbours, two possible alkenes (4); (5) substitution: the halogen takes the OH's place, and the OH plus the H of HX make water; reflux keeps volatile materials in (5); (6) water as a product separates alcohol substitution from alkene addition (6); (7) oxidation removes two H atoms, giving C=O; dichromate orange to green; hazard (7); (8) the class decides: secondary has one H (ketone), tertiary none (no reaction, orange) (8); (9) primary has two: aldehyde first, and the aldehyde's carbonyl carbon still has an H, so it oxidises again to the acid; a ketone has none left, so it stops (9); (10) the aldehyde boils low (no hydrogen bonding between its molecules), so distilling removes it before further oxidation; reflux with excess oxidant returns it until it is an acid (10); (11) green shows oxidation happened, not which product or class (11); (12) the alcohol is a hub (12); memory aid (13); two attempts and brief feedback (14 to 17); handoff (18); key notes (19).", "conversationalApproach": "burning destroys an alcohol's skeleton, while one orange oxidant turns green with ethanol and stays orange with 2-methylpropan-2-ol, so the video asks where an alcohol reaction can lead and what decides the product. Dehydration takes the OH and a neighbouring hydrogen out as water so the two carbons form a C=C; it is hydration run backwards, so concentrated acid and heat replace steam and pressure, and an alcohol with two different neighbours can give two alkenes. Substitution with a hydrogen halide swaps the OH for the halogen under reflux, and the water made separates it from alkene addition of the same HBr. Oxidation removes the H of the OH and one H on its carbon to make a C=O, with acidified dichromate turning from orange to green; counting the hydrogens on the OH carbon decides the product: a secondary alcohol gives a ketone, a tertiary alcohol has none and stays orange, and a primary alcohol gives an aldehyde that still has an H and oxidises on to an acid. The aldehyde boils low because its molecules cannot hydrogen bond, so distilling catches it and reflux with excess oxidant takes it all the way; green shows oxidation, not which product. The alcohol is a hub, and the memory aid is primary goes all the way, secondary stops at ketone, tertiary won't budge. Two exam questions follow with brief feedback.", "openingDecision": "Burning an alcohol completely breaks it right down, to carbon dioxide and water. Today, three reactions that turn an alcohol into a new compound instead. Here's a clue. This orange solution is an oxidising agent. Warm it with ethanol, and it turns green. Warm it with two-methylpropan-two-ol, another alcohol, and it stays orange. So where can an alcohol reaction lead, and what decides it?", "understandingCheck": "(A1) \"Propan-1-ol is used in two separate experiments. In experiment 1, it is heated with concentrated sulfuric acid. In experiment 2, it is heated under reflux with hydrogen bromide. For each experiment, name the organic product and identify the type of reaction.\" New molecule (the scenes use ethanol and butan-2-ol); tests both new reactions and their conditions. Crossed mistake: \"Experiment 2: addition reaction\" (the marker-reported confusion, 2025 Q24(b)). (A2) \"Butan-2-ol and 2-methylbutan-2-ol are each heated under reflux with excess acidified potassium dichromate solution. For each alcohol, predict the colour change and the organic product, if any. Explain the difference.\" New pair (scenes use propan-2-ol and 2-methylpropan-2-ol); tests the class rule and the reflux trap for a secondary alcohol. Crossed mistake: \"Butan-2-ol under reflux → butanoic acid\".", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):; combustion; dehydration; substitution with HX; oxidation\" Combustion was chem-m7-c07; this video covers dehydration, substitution with HX and oxidation. \"investigate the products of the oxidation of primary and secondary alcohols\" This video predicts the products and the conditions that select them; the tests that identify the products are chem-m7-c08b, and the investigation itself is chem-m7-p04. this video starts by comparing dehydration, substitution and oxidation of an alcohol, and stops at predicting an aldehyde, ketone, carboxylic acid or no reaction from the alcohol's class and the conditions. It teaches: dehydration removes the OH and an H from the neighbouring carbon as water, forming a C=C bond (ethanol to ethene; conditions concentrated H₂SO₄ or concentrated H₃PO₄, about 170 °C for ethanol); dehydration is hydration (c04a) run in reverse, with opposite conditions, explained by the equilibrium (excess water favours the alcohol, removing water favours the alkene; Module 5 recall); a secondary alcohol with different neighbours can give two alkenes (butan-2-ol to but-1-ene and but-2-ene, but-2-ene usually the main product); substitution with HX swaps the OH for a halogen and the OH leaves in water (ethanol and HBr to bromoethane and water; heat under reflux, recalled from c06); telling alcohol substitution from alkene addition with the same HX (water as a product marks the alcohol reaction); oxidation removes the H of the O–H and an H from the C–OH carbon, so that carbon forms C=O (the carbonyl group, named here, taught fully in c08b); the oxidant written as [O]; acidified potassium dichromate as the oxidant, orange to green; the hazard of chromium(VI), stated once; the class decides the product because oxidation needs an H on the C–OH carbon (secondary has one: ketone; tertiary has none: no reaction, stays orange; primary has two: aldehyde, then carboxylic acid, because the aldehyde's carbonyl carbon still has an H); distil to collect the aldehyde (low boiling point, no hydrogen bonding between its molecules), reflux with excess oxidant for the acid; the green colour shows that oxidation happened, not which product; the alcohol as a hub with three exits. Not here: combustion (chem-m7-c07); naming aldehydes and ketones beyond reading the \"-al\" and \"-one\" endings, their properties and the tests that tell them apart (chem-m7-c08b); the practical procedure, apparatus details and risk table (chem-m7-p04, with `C7-IQ2-05`); mechanism names (elimination is a screen word only; \"nucleophilic\" is not used); Zaitsev's rule by name; cis and trans but-2-ene; the full dichromate half-equations and balanced redox equations (author note d); ether formation at lower temperature (author note b); carboxylic acid properties (chem-m7-c09); esterification (chem-m7-c10); multi-step synthesis (chem-m7-c13, g03)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c04a to c07: carbon skeleton ink; hydrogens soft grey; oxygen brick red, the OH ringed red as the functional group; halogens orange-brown; the new C=C or C=O second bond drawn in red as it forms; atoms about to leave ringed red; condition chips navy on and under the arrow. Board layout (constant): top-left the short task chip (\"Reaction 1: dehydration\", \"Reaction 2: substitution\", \"Reaction 3: oxidation\", \"Which product?\"); centre the equation stage strip, one equation at a time, built stage by stage (reactant, reagent, arrow, conditions, products); plates small at the left or right only in scenes 1, 5, 7, 8, 10, 11 and 17. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous equation shrinks to a grey thumbnail or leaves before the next one builds. Reuse: painted plates (inspected 23 Oct): `m8-dichromate-orange-v1.png` and `m8-dichromate-green-v1.png` (one clear test tube in an identical single-hole wooden rack, about one third full; orange solution and green solution; the tube and rack sit in the same position in both, so they cross-fade as an aligned pair; 2000 × 2000; hook, scenes 7, 8, 11, attempt feedback 2). Before use, check the green plate's alpha: its non-transparent bounds run almost to the canvas edges (20 to 1980 px) while the orange plate's stop at 353 to 1646 px, which suggests stray semi-transparent pixels; both show a faint red-yellow matting fringe along the rack edges on a dark background (Codex asset brief). The green is a bright emerald; chromium(III) in sulfate solution is a duller blue-green, acceptable at small size (Open decisions). `m7-school-distillation-setup-v1.png` (heating mantle, round-bottom flask with a thermometer, sloping water-jacketed condenser, conical receiving flask on a third stand; 2000 × 2000; scene 10) and `m7-reflux-apparatus-v1.png` (heating mantle, round-bottom flask with an amber liquid, upright condenser with water hoses; 2000 × 2000; scenes 5 and 10), both used in c06. `m7-fume-cupboard-v1.png` not used (a chip says \"fume cupboard\"). Considered, not used: `m8-permanganate-purple-v1.png` and `m8-permanganate-clear-v1.png` (inspected only for size; permanganate stays a chip to keep one oxidant on screen); `m7-ethanol-fuel-bottle-v1.png` (the hook needs the reaction, not the fuel). All plates small or medium, scale uniformly only, never stretched. No human figures.", "transitionPlan": "The combustion thumbnail sits top-left as the hook's ethanol writes and two dichromate tube plates turn green and stay orange; the board clears to ethanol in full structural form as the water lift takes the OH and a neighbouring H out and a teal C=C draws; c04a's hydration strip returns above the dehydration strip with opposite condition chips; butan-2-ol's two neighbours glow and the strip branches into two alkenes; the swap docker lifts the OH off and docks a bromine with a grey water box; two strips set addition beside substitution with their reactants and products ringed; the hydrogen strip-off lifts two hydrogens into an [O] bubble and a red C=O draws as the dichromate plates swap colour; the H counter runs on propan-2-ol and 2-methylpropan-2-ol; the product ladder builds from ethanol to ethanal to ethanoic acid; boiling point chips write beside the school distillation and reflux plates; the green tube plate strikes a tertiary chip; the hub map lights its arrows in and out; the memory lines write over three small cards; each attempt clears the board and its feedback underlines the card as the strips and H counter run and a crossed chip lands; the hub map and next chip close; scene crossfade with settle."},
+        'rows': M7C08A_ROWS,
+    },
+    'm7c08b': {
+        'design': D + 'lessons/chem-m7-c08b.md',
+        'learning_review': D + 'checks/m7c08b-learning-review.md',
+        'science_check': D + 'checks/m7c08b-claude-science-check.md',
+        'meta': {"title": "Aldehyde or ketone: how can you tell? Naming, intermolecular forces and the tests that depend on one hydrogen", "subtitle": "Oxidise propan-1-ol and distil, and you get propanal; oxidise propan-2-ol, and you get propanone. Both are C₃H₆O, and both are colourless liquids, yet only one turns a test tube into a silver mirror. How do we name aldehydes and ketones, how does the carbonyl's position change their properties, and how can a test tell them apart?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 13, "lessonIntent": "identifying an aldehyde or ketone from the carbonyl's position; naming both up to C8 with methyl or ethyl branches; recognising functional group isomers; explaining their boiling points and solubility from their forces; explaining why an aldehyde gives a positive Tollens', Fehling's or dichromate test and a ketone does not; using a test on an oxidation product to identify the alcohol's class. No carboxylic acid properties, no practical procedure."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "carbonyl-position", "naming-aldehydes", "naming-ketones", "functional-group-isomers", "forces-boiling", "aldehyde-h-solubility", "one-hydrogen", "tollens-test", "fehlings-test", "three-tests-one-question", "testing-the-product", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c08a (oxidation removes two H and forms C=O, the carbonyl group; primary to aldehyde to acid, secondary to ketone, tertiary no reaction; distil for the aldehyde; acidified dichromate orange to green; \"-al\" and \"-one\" read as endings); chem-m7-c05 (alcohol naming, hydrogen bonding between O–H groups, boiling points, solubility, \"Same size? Hydrogen bonding wins.\"); chem-m7-c03 (dispersion forces, the water lattice, \"like dissolves like\"); chem-m7-c01 and g01 (naming rules, locants, branches); chem-m7-c02 (isomers). Year 11: electronegativity, polar bonds, lone pairs, dipole–dipole forces, reduction as gain of electrons. Not assumed: aldehyde and ketone naming rules, functional group isomer (c02 named structural isomers; this video adds the functional group kind with a plain meaning), Tollens', Fehling's, Benedict's, precipitate (Year 11 term, given a plain meaning).", "startsWith": "Locate the carbonyl and name aldehydes and ketones. The video opens: In the alcohol reactions video, oxidising propan-two-ol gave a ketone, propanone. Oxidise propan-one-ol and distil, as we did with ethanol, and you get an aldehyde, propanal. Both have the formula C three H six O.", "stopsAfter": "identifying an aldehyde or ketone from the carbonyl's position; naming both up to C8 with methyl or ethyl branches; recognising functional group isomers; explaining their boiling points and solubility from their forces; explaining why an aldehyde gives a positive Tollens', Fehling's or dichromate test and a ketone does not; using a test on an oxidation product to identify the alcohol's class. No carboxylic acid properties, no practical procedure.", "nextLesson": "oxidising alcohols and testing the products in the lab (route chem-m7-p04, \"Investigate alcohol oxidation products\")."},
+        'teaching': {"task": "Oxidise propan-1-ol and distil, and you get propanal; oxidise propan-2-ol, and you get propanone. Both are C₃H₆O, and both are colourless liquids, yet only one turns a test tube into a silver mirror. How do we name aldehydes and ketones, how does the carbonyl's position change their properties, and how can a test tell them apart?", "causalExplanation": "(1) propanal and propanone share a formula, yet one gives a silver mirror (1); (2) both have a polar carbonyl; the aldehyde's is at the end, so its carbonyl carbon carries an H; the ketone's is inside, with a carbon each side (2); (3) aldehyde names: \"-al\", the carbonyl carbon is C1, so no number (3); (4) ketone names: \"-one\", a number from C5, from the end nearer the C=O (4); (5) same formula, different group: functional group isomers, easy to miss (5); (6) the polar C=O gives dipole–dipole forces, but no O–H means no hydrogen bonding between their molecules, so their boiling points sit between alkane and alcohol (6); (7) the aldehyde H is on carbon, so it can't hydrogen bond; water can hydrogen bond to the carbonyl oxygen, so small ones dissolve (7); (8) the aldehyde's carbonyl H lets mild oxidants oxidise it, and the reduced reagent changes visibly; a ketone has none (8); (9) Tollens': silver ions reduced to a silver mirror (9); (10) Fehling's: blue copper(II) reduced to a brick-red copper(I) oxide precipitate (10); (11) dichromate too; all three ask one question (11); (12) testing the distilled product identifies the alcohol's class; dichromate alone can't (12); memory aid (13); two attempts and brief feedback (14 to 17); handoff (18); key notes (19).", "conversationalApproach": "oxidising propan-1-ol and distilling gives propanal while propan-2-ol gives propanone, both C3H6O, yet only one makes a silver mirror, so the video asks how to name aldehydes and ketones, how the carbonyl's position shapes their forces, and how a test tells them apart. Both have a polar C=O; an aldehyde's carbonyl is at the end of the chain, so its carbon carries a hydrogen, while a ketone's sits inside with a carbon on each side. Aldehydes take al with no number because the carbonyl carbon is carbon one; ketones take one, with a number from five carbons, counted from the end nearer the C=O; the pair are functional group isomers. The polar C=O gives dipole-dipole forces but no hydrogen bonds between the molecules, so boiling points sit between the alkane and the alcohol, while water can hydrogen bond to the carbonyl oxygen, so small ones dissolve. The aldehyde's one hydrogen lets mild oxidants oxidise it: Tollens' reagent leaves a silver mirror, Fehling's or Benedict's solution turns from blue to a brick-red precipitate, and acidified dichromate turns green, while a ketone leaves each unchanged. Testing the distilled product of an oxidation identifies the alcohol's class. The memory aid is aldehyde at the end, ketone in the middle, and every test asks whether there is an H on the carbonyl carbon. Two exam questions follow with brief feedback.", "openingDecision": "In the alcohol reactions video, oxidising propan-two-ol gave a ketone, propanone. Oxidise propan-one-ol and distil, as we did with ethanol, and you get an aldehyde, propanal. Both have the formula C three H six O. Both are colourless liquids. Yet warm each one with this reagent, and one coats the tube in a silver mirror, while the other does nothing. What's the difference, and how do we name and test these compounds?", "understandingCheck": "(A1) \"A compound has the condensed structural formula CH₃CH₂COCH(CH₃)CH₃. State whether it is an aldehyde or a ketone, giving a reason, and give its IUPAC name.\" A skeletal formula is shown beside it in plain ink (no colours, no locants). New molecule (scenes use straight-chain pentanones and 2-methylpropanal); tests the carbonyl's position and branch numbering. Crossed mistake: \"4-methylpentan-3-one\" (numbered from the wrong end; the c01 and c05 feedback pattern). (A2) \"Compounds A and B both have the molecular formula C₄H₈O, and both contain a C=O group. When each is warmed with Tollens' reagent, A forms a silver mirror and B shows no change. A has an unbranched chain. Identify A and B by IUPAC name, and explain the difference in their results.\" New pair (scenes use propanal and propanone); tests the one-hydrogen reason. Crossed mistake: \"Both have a C=O group, so both should form a mirror.\" (the site's Common Error, Fehling's version).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127); alkanes; alkenes; alkynes; alcohols (primary, secondary and tertiary); aldehydes and ketones; carboxylic acids; amines and amides; halogenated organic compounds\" This video covers aldehydes and ketones only (hydrocarbons chem-m7-c01 and g01; haloalkanes chem-m7-c04a; alcohols chem-m7-c05). \"investigate the structural formulae, properties and functional group including:; primary, secondary and tertiary alcohols; aldehydes and ketones (ACSCH127); amines and amides; carboxylic acids\" This video covers aldehydes and ketones (alcohols chem-m7-c05; carboxylic acids chem-m7-c09; amines and amides chem-m7-c11). \"investigate the products of the oxidation of primary and secondary alcohols\" This video shows how the products are told apart; chem-m7-c08a predicted them, and chem-m7-p04 carries out the investigation. this video starts by locating the carbonyl group in an aldehyde and a ketone and naming both families, and stops at explaining how tests distinguish an aldehyde from a ketone and using them to identify the product of an alcohol oxidation. It teaches: the carbonyl group (recalled from c08a) is polar because oxygen attracts the shared electrons more strongly; in an aldehyde the C=O is at the end of the chain and the carbonyl carbon carries an H (–CHO); in a ketone the C=O is inside the chain, with a carbon on each side and no H on the carbonyl carbon; naming aldehydes (longest chain including the carbonyl carbon, drop the final \"e\", add \"al\"; the carbonyl carbon is C1, so no locant; branches numbered from it: 2-methylpropanal); naming ketones (\"one\"; propanone and butanone need no locant; from C5 a locant from the end nearer the C=O: pentan-2-one, pentan-3-one; branches as in c01); aldehydes and ketones with the same number of carbons (three or more) are functional group isomers (propanal and propanone, C₃H₆O); intermolecular forces: dipole–dipole from the C=O plus dispersion, and no hydrogen bonding between their own molecules (no O–H), so for similar sizes their boiling points sit between an alkane and an alcohol; the aldehyde H is on carbon, not oxygen, so it cannot donate a hydrogen bond; water can hydrogen bond to the carbonyl oxygen's lone pairs, so small aldehydes and ketones dissolve in water, less as the chain grows; tests: the aldehyde's carbonyl H lets it be oxidised by mild oxidising agents while the reagent is reduced; Tollens' reagent (silver ions in ammonia solution, warmed) gives a silver mirror with an aldehyde and no change with a ketone; Fehling's or Benedict's solution (blue, copper(II)) gives a brick-red precipitate of copper(I) oxide with an aldehyde and stays blue with a ketone; acidified dichromate turns green with an aldehyde and stays orange with a ketone; using a test on the distilled product of an alcohol oxidation to identify a primary or secondary alcohol, and why dichromate alone cannot (primary and secondary alcohols turn it green too); Tollens' hazard: made fresh, used at once and disposed of promptly, because on standing it can form an explosive solid. Not here: alcohol reactions and conditions (chem-m7-c08a, recalled); carboxylic acids, their dimers, boiling points and acidity (chem-m7-c09); the practical procedure, reagent preparation and risk table (chem-m7-p04, with `C7-IQ2-05`); half-equations for the tests (author note d); aromatic aldehydes and ketones (vanillin, raspberry ketone; author note g); reduction of carbonyl compounds; aldehyde and ketone uses beyond one hook line; cyclic ketones; the site's olfactory-receptor discussion."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c08a: carbon skeleton ink; hydrogens soft grey (the aldehyde's carbonyl H grey-white and slightly larger); main chain pale blue; branches amber; oxygen brick red, the C=O ringed red as the functional group; δ− and δ+ small in navy; lone pairs as two small red dot pairs on O; dipole–dipole attractions dotted teal; hydrogen bonds dotted violet; dispersion forces dotted pale blue. Board layout (constant): top-left the short task chip (\"Aldehyde or ketone?\", \"Name it\", \"Forces\", \"Test it\"); centre the structure board, one molecule or one pair at a time; the boiling point strip at the right only in scene 6; plates small or medium at the left or right only in scenes 1, 9, 10, 11, 12 and 17. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 23 Oct): `m8-dichromate-orange-v1.png` and `m8-dichromate-green-v1.png` (aligned pair, as in c08a; scene 11, small; same pre-build alpha check as c08a). No other existing plate fits: the `c5-copper-tube-*` pair shows a copper(II) equilibrium colour shift, not a precipitate; `m7-bromine-water-pair-v1.png` is a different test. Four new plates (two aligned pairs; Assets). All plates small or medium, scale uniformly only, never stretched. No human figures.", "transitionPlan": "A grey thumbnail writes the two oxidation lines in the narration's order as the two Tollens' tube plates sit side by side and one cross-fades to a mirror; the board clears to propanal and propanone in full structural form with their C=O ringed red and ink ball-and-stick models beneath; the name builder writes butanal from the traced chain, then strikes the e and adds one for propanone and the numbered ketones; an atom tally counts both C3H6O and a bracket joins them as functional group isomers; the force view links four butanal molecules with dotted teal dipole lines while a crossed violet line rules out hydrogen bonds, and the boiling point strip drops each molecule to its mark; the water lattice bonds to the carbonyl oxygen; the c08a product ladder returns and the H counter runs on each carbonyl carbon; the Tollens' plate cross-fades from clear to mirror and the Fehling's plate from blue to brick red with their reduction chips; the results grid builds row by row; the three-step flow branches to primary and secondary outcomes; the memory lines write with three small cards; each attempt clears the board and its feedback underlines the card as the name builder or tube plates return and a crossed chip lands; the memory line, results grid and next chip close; scene crossfade with settle."},
+        'rows': M7C08B_ROWS,
+    },
+    'skills07': {
+        'design': D + 'lessons/skills-s07.md',
+        'learning_review': D + 'checks/skills07-learning-review.md',
+        'science_check': D + 'checks/skills07-claude-science-check.md',
+        'meta': {"title": "Practical questions: validity, reliability, accuracy and fixes that fix", "subtitle": "When a practical question asks about validity, reliability or accuracy, or asks you to improve a method, how do you name the right quality, point to the feature of this method that affects it, and propose a fix that actually fixes that cause?", "subject": "Chemistry and Biology", "yearLevel": 12, "module": 0, "lesson": 7, "lessonIntent": "the three words with a picture and NESA's wording; word, feature, fix; a worked three-part spirit-burner question; improvements that fix the stated problem, with one guideline's bands; when \"repeat it\" earns marks; risk as hazard, harm and control; one Chemistry drill (reliability against accuracy) and one Biology drill (validity through a controlled variable)."},
+        'hold_seconds': 10,
+        'holds': ["drill-1", "drill-2"],
+        'ids': ["hook", "three-words", "word-feature-fix", "question-card", "part-a", "part-b", "part-c", "fixes-that-fix", "risk-answers", "drill-1", "feedback-1", "drill-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "Series: s01 (reading routine: verb, marks, content words and givens, constraint, tick each part), s02 (explain shows the link), s03 (compare in pairs, used in drill 1), s04 (assess and evaluate need a judgement with evidence, used in parts a and b), s05 (calculation layout; not needed here). s06 is not assumed. Chemistry: chem-m7-p03 (the spirit-burner set-up, method and comparison; the variables, with flame distance controlled; \"about half\"; shield, lid, close, cap; repeats improve reliability, not accuracy; the risk rows); chem-m7-c07 (data values −1367 and −2021 kJ mol⁻¹); chem-m6-c03 and chem-m6-p02 (the neutralisation calorimeter, about −57 kJ mol⁻¹, heat loss lowering every run); chem-m5-p01 (validity, reliability, accuracy and variables in plain words). Biology: bio-m7-p02 (agar plates, serial dilution, taped plates upside down at 25 to 30 °C, controlled variables including incubation time and temperature, three plates per dilution, colonies counted in the 30 to 300 range); earlier Biology practicals for variables (bio-m5-p03, bio-m6-p01).", "startsWith": "Practical questions ask about validity, reliability or accuracy. The video opens: Practical questions often ask about validity, reliability or accuracy, and then ask you to improve the method. In four of the last twelve Chemistry and Biology marking feedback reports, NESA asked for a clearer understanding of these three words and the difference between them. And in one recent Chemistry guideline, full marks needed each change to be justified by what it does for accuracy.", "stopsAfter": "the three words with a picture and NESA's wording; word, feature, fix; a worked three-part spirit-burner question; improvements that fix the stated problem, with one guideline's bands; when \"repeat it\" earns marks; risk as hazard, harm and control; one Chemistry drill (reliability against accuracy) and one Biology drill (validity through a controlled variable).", "nextLesson": "s08, extended responses."},
+        'teaching': {"task": "When a practical question asks about validity, reliability or accuracy, or asks you to improve a method, how do you name the right quality, point to the feature of this method that affects it, and propose a fix that actually fixes that cause?", "causalExplanation": "(1) practical questions ask about validity, reliability or accuracy and then ask for an improvement, and recent Chemistry and Biology marking feedback reports flag answers that mix the three words up or offer fixes that fix nothing (1); (2) three words, three questions: validity, does it measure what it was meant to; reliability, do repeats agree; accuracy, is it close to the true value (2); (3) every answer needs the word, the feature of this method that affects it, and a fix that removes that cause (3); (4) one HSC-style Chemistry spirit burner question is set up (4); (5) part a, reliability, is judged from how closely the repeats agree (5); (6) part b, more trials improve reliability, not accuracy, because the same heat loss repeats in every trial (6); (7) part c, raising the can for one alcohol changes a second variable, so the comparison is not valid, and the fix is to keep the distance the same (7); (8) a fix that fixes names the cause and removes it, while repeat and be more careful could go on any practical (8); (9) risk answers follow the same pattern: hazard, harm and a control for this substance (9); two drills, one per subject, with feedback (10 to 13); decision rule (14); key notes (15).", "conversationalApproach": "practical questions often ask about validity, reliability or accuracy and then ask you to improve the method, and many answers mix the three words up or offer a fix that fixes nothing. Each word is given its plain question (does it measure what it was meant to, do repeats agree, is it close to the true value), and every answer is built from three parts: the word, the feature of this method that affects it, and a fix that removes that cause. One HSC-style Chemistry spirit burner question is worked part by part: the repeats are judged for reliability, the claim that ten trials bring values closer to the data value is shown to be about accuracy, which repeats cannot fix, and a can raised for one alcohol makes the comparison invalid. A weak and a strong improvement are compared, and risk answers follow the same hazard, harm and control pattern. Two drills, one per subject (a Chemistry neutralisation comparison and a Biology colony count with different incubation times), practise the routine.", "openingDecision": "Practical questions often ask about validity, reliability or accuracy, and then ask you to improve the method. In four of the last twelve Chemistry and Biology marking feedback reports, NESA asked for a clearer understanding of these three words and the difference between them. And in one recent Chemistry guideline, full marks needed each change to be justified by what it does for accuracy. So let's get the three words straight, and write fixes that actually fix the problem.", "understandingCheck": "the narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, compare, 3 marks: \"Two students each measured the molar enthalpy of neutralisation of hydrochloric acid with sodium hydroxide three times, using a lidded polystyrene cup. The accepted value is about −57 kJ mol⁻¹. Student X: −51, −52, −51 kJ mol⁻¹. Student Y: −60, −53, −58 kJ mol⁻¹. Compare the reliability and accuracy of the two students' results.\" Content: chem-m6-c03 and chem-m6-p02 (the accepted value, heat loss lowering every run). Answer: X is more reliable (spread 1 kJ mol⁻¹ against 7); Y is more accurate (each of Y's values is within 4 kJ mol⁻¹ of −57, X's are 5 to 6 less negative; Y's mean is −57, X's about −51); X's results are consistently less negative, a sign of a systematic error such as heat loss. Crossed habit: \"X is more accurate because its results agree\" (reliability mistaken for accuracy). Drill 2, Biology, explain and propose, 3 marks: \"A student compared the microbes that grow from tap water and from rainwater tank water. She spread 0.1 mL of each sample onto its own nutrient agar plate, taped the lids and incubated both plates upside down at 28 °C. She counted the tap water plate after 24 hours and the tank water plate after 72 hours. The tap water plate had 31 colonies and the tank water plate had 118 colonies. She concluded that more microbes grew from the tank water than from the tap water. Explain why this conclusion is not valid, and propose a change that fixes the problem.\" Content: bio-m7-p02 (controlled variables include incubation time and temperature; colonies grow from single cells over time; 25 to 30 °C, taped, upside down). Answer: the incubation time differed (24 h against 72 h) as well as the water source; given longer, more colonies grow large enough to see and count, so the difference may come from the time, not the water; fix: incubate both plates at 28 °C for the same time (for example 48 hours) and count them at the same time. Crossed habit: \"Repeat with more plates of each sample\" (better reliability, but every repeat still has unequal times). Why these two: each tests a different word with the answer move, in a case students already understand: drill 1 separates reliability from accuracy with numbers (the confusion the hook names); drill 2 is validity through a controlled variable, with the \"repeat it\" habit crossed where it earns nothing. The worked question covers all three words; the drills isolate the two confusions most likely to cost marks. Precision: drill 1's values are integers in kJ mol⁻¹, as reported in the stem; Y's mean is −171 ÷ 3 = −57 exactly; X's mean is −51.3, said \"about minus fifty one\". Drill 2's counts are within bio-m7-p02's 30 to 300 counting range, so plate counting is not a second flaw.", "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"practical questions ask about validity, reliability or accuracy\". Stops after the three words and their picture, the word, feature, fix move, a worked three-part question (reliability from a table, a repeats claim judged against accuracy, validity from an uncontrolled variable with its fix), weak against strong improvements with one guideline's bands, when \"repeat it\" earns marks, risk answers, and two drills."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. the shared skills kit (`src/explainer/lessons/skills-shared/`): `QuestionCard` with its annotation layer (`Ann` kinds verb, marks, given, constraint, ring, tag, pulse; `CardDim`), `MarksBadge`, `AnswerBox` (rows, margin ticks, counter, slots, `AAnn` under, ring), `MarkCounter`, `LostMarksTag`, `WeakStrongPanel`, `RoutineStrip` (mini at the far left), `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate` and `mkPlate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`; `BandLadder` from s04 and s05 (root may promote it to the shared kit). Imported (not copied): the error-chain row from chem-m6-p02's parts file (used once, small, in scene 6: \"heat lost → q ↓ → ΔH less negative\"); the gap-against-spread brace from chem-m7-p03 (scene 5). New lesson-local components (suggested folder `src/explainer/lessons/skills-s07`): `TargetTrio`: four coded targets (concentric rings, five dots each), built in turn; labels as Decisions. Abstract diagram, coded. A small grey tag \"a picture, not a definition\". `FixRail`: a three-row card, \"Word: which quality?\", \"Feature: which part of this method, and what it does\", \"Fix: removes that cause\", with small coded icons (a speech-bubble-free word chip \"V R A\", a pen ring around a step, a spanner glyph); mini and full states, rows lighting on cue, built like s05's `StepRail`. Each answer line in the walkthrough carries a margin mark: \"W\", \"F\", or the rail's small spanner glyph for fix (no letter \"X\", which would collide with drill 1's Student X). `TableSpread`: an overlay for the card's results table that draws a small bracket over each row's three trials with its spread (\"13\", \"18\") and a tall bracket between the two means (\"gap about 100\"). Reuses p03's brace style. `PercentBars`: two short horizontal bars \"ethanol 43% of its data value\" and \"propan-1-ol 34%\", each with a faint full-length outline for 100%. `ClockChip`: a small coded clock face with an hour label (\"24 h\", \"72 h\", then \"48 h\" on both), for drill 2's feedback. Plates: listed under Assets (no new plates; two are commissioned by chem-m7-p03). No people, hands or faces.", "transitionPlan": "Three word chips write in a row and blur into one grey smudge above twelve small report tiles; the three columns light one per cue with each plain question large and the glossary wording small; the FixRail builds full size in the side column, one row per cue; the QuestionCard writes on with its badge and tag; each part highlights its verb and quality word while the other demands dim and stay legible, the rail row in use lights and margin chips write word, feature and fix; the WeakStrongPanel sets Answer A beside Answer B with margin ticks; a hazard, harm and control strip writes its headers in turn; each drill clears the board and its feedback lands the annotations fast before the model answer writes with ticks; the FixRail returns full size as the decision board with one example per row; scene crossfade with settle."},
+        'rows': SKILLS07_ROWS,
+    },
+    # END generated entries: m7c07, m7p03c, m7g02, m7c08a, m7c08b, skills07
 }
 
 

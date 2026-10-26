@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C08a-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c08a/lesson.json",
+  "lessonSha256": "5eafd86a5b7eada8a1dd322948468b0746adb321d107fe53bc5c2792fad983a7",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c08a/lesson.production-brief.json",
+    "sha256": "2bf73596c4737e721c53e32fb52bd1a18c992be63723fa6a3a586830e2b058c5"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Burning an alcohol completely breaks it right down, to carbon dioxide and water. Today, three reactions that turn an alcohol into a new compound instead. Here's a clue. This orange solution is an oxidising agent. Warm it with ethanol, and it turns green. Warm it with two-methylpropan-two-ol, another alcohol, and it stays orange. So where can an alcohol reaction lead, and what decides it?",
+      "hash": "d37e9605f9bd",
+      "textSha256": "d37e9605f9bdc421dc2454e369ea3b5678be2095a8c3edceff0cc8b11abe8850",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/hook.d37e9605f9bd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/hook.d37e9605f9bd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/hook.d37e9605f9bd.generation.json",
+      "plannedRequestSha256": "dc23052ada1f25e3d0ad0e798f2d68f8d4833a65b88ddc4400ebd256e60944c6"
+    },
+    {
+      "id": "dehydration",
+      "parentSceneId": "dehydration",
+      "text": "First, dehydration, which means removing water. The O H leaves from one carbon, and a hydrogen leaves from the carbon next door. Together, they make a water molecule. The two carbons, each now one bond short, form a double bond. So ethanol gives ethene, and water. The conditions go on the arrow: concentrated sulfuric acid, or concentrated phosphoric acid, at about one hundred and seventy degrees.",
+      "hash": "f9f3857436ae",
+      "textSha256": "f9f3857436ae7d13ca60b83aa4066855531f2a5db14cecca5311cca794ab03e1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/dehydration.f9f3857436ae.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/dehydration.f9f3857436ae.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/dehydration.f9f3857436ae.generation.json",
+      "plannedRequestSha256": "832ca0a1108316037e3a007d4946a39a5fbc6471e21173bafd2eea4047d94a28"
+    },
+    {
+      "id": "hydration-reversed",
+      "parentSceneId": "hydration-reversed",
+      "text": "If that looks familiar, it should. It's hydration, run backwards. To add water to ethene, we used steam, at high pressure. To take water out, we use concentrated acid, which soaks up water, and the alkene escapes from the hot mixture. It's the same equilibrium. From Module five, adding water pushes it towards the alcohol, and removing water pushes it towards the alkene. So never write water as a reactant, or dilute acid, for dehydration.",
+      "hash": "537dff43af12",
+      "textSha256": "537dff43af12960e650e6b09d80eee11c41231431afbf989b9a1f8e6f98466ab",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/hydration-reversed.537dff43af12.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/hydration-reversed.537dff43af12.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/hydration-reversed.537dff43af12.generation.json",
+      "plannedRequestSha256": "1dcca53ed72d7aee824072b71b75747f7957f387b784ebfaac6b15ba9166be25"
+    },
+    {
+      "id": "two-alkenes",
+      "parentSceneId": "two-alkenes",
+      "text": "With a longer alcohol, there can be a choice. In butan-two-ol, the O H carbon has a neighbour on each side. The hydrogen can leave from either one. So you can get but-one-ene, or but-two-ene. Both form, and but-two-ene is usually the main product. If a question asks for every possible product, give both.",
+      "hash": "0bb3bbcfd7ef",
+      "textSha256": "0bb3bbcfd7efd5909c643c878e44a69afe43051f6cbd343216e9141ca61a45e6",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/two-alkenes.0bb3bbcfd7ef.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/two-alkenes.0bb3bbcfd7ef.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/two-alkenes.0bb3bbcfd7ef.generation.json",
+      "plannedRequestSha256": "246927481b19165646c4c5b604fc57705fec8fff9dacbe8f9383c5e018a123b3"
+    },
+    {
+      "id": "substitution-hx",
+      "parentSceneId": "substitution-hx",
+      "text": "Second, substitution with a hydrogen halide, H X. The halogen takes the O H's place. Ethanol and hydrogen bromide give bromoethane. And the O H doesn't vanish. It joins the H from H B r, to make water. We heat it under reflux, so volatile chemicals drip back instead of escaping. It's the ethanol video's route, run the other way. There, hydroxide pushed out a halogen. Here, a halogen pushes out the O H.",
+      "hash": "f221aea8c862",
+      "textSha256": "f221aea8c86215a6c2f25c976c6cd976cbc0876f2f2334e1f587efc89a4499e2",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/substitution-hx.f221aea8c862.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/substitution-hx.f221aea8c862.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/substitution-hx.f221aea8c862.generation.json",
+      "plannedRequestSha256": "f803f2229ed6c00bdd19afd9a3bf1130baa8b53faccd46ed76f80fa7fff63227"
+    },
+    {
+      "id": "addition-or-substitution",
+      "parentSceneId": "addition-or-substitution",
+      "text": "Careful, because hydrogen bromide also adds to alkenes. So how do you tell the two apart? Look at the starting molecule, and the products. An alkene and H B r join into one molecule, with nothing left over. That's addition. An alcohol plus H B r gives a haloalkane and water. That's substitution.",
+      "hash": "962237a18cd6",
+      "textSha256": "962237a18cd623c1f17a78896458226cd03fee0466a26b8e7dc0ba364a12ffdd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/addition-or-substitution.962237a18cd6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/addition-or-substitution.962237a18cd6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/addition-or-substitution.962237a18cd6.generation.json",
+      "plannedRequestSha256": "ba4d5b18607db92aa9c2f5ab9ce8014f0c49b143470bc1b2918eb0a5f8ed24d1"
+    },
+    {
+      "id": "oxidation",
+      "parentSceneId": "oxidation",
+      "text": "Third, oxidation. Here, an oxidising agent removes two hydrogens: the H from the O H, and an H from the carbon holding it. That carbon then forms a double bond to the oxygen. A C double bond O is called a carbonyl group. We write the oxidant as O in square brackets, and the hydrogens it removes leave as water. A common oxidant is acidified potassium dichromate, the orange solution from the start. It turns from orange to green as it reacts. Dichromate is toxic and can cause cancer, so schools use small amounts, with gloves and goggles, and collect the waste.",
+      "hash": "aa8e148be529",
+      "textSha256": "aa8e148be52964e9ef0c7f185eb2655910974259fc8e34b0e4ba59e753262a72",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/oxidation.aa8e148be529.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/oxidation.aa8e148be529.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/oxidation.aa8e148be529.generation.json",
+      "plannedRequestSha256": "f84ee7bc83a1795214e63f91d6e1f6739317f05b4e2beb4c6836221d1511c5fc"
+    },
+    {
+      "id": "class-decides",
+      "parentSceneId": "class-decides",
+      "text": "Now the clue makes sense, because oxidation needs a hydrogen on the O H carbon. A secondary alcohol, like propan-two-ol, has one. Remove it, and the carbonyl forms in the middle of the chain: propanone, a ketone. A tertiary alcohol, like two-methylpropan-two-ol, has none. Its carbon is already bonded to three carbons and the oxygen. Ordinary oxidants can't remove a hydrogen that isn't there, so the dichromate stays orange.",
+      "hash": "52fe3292515f",
+      "textSha256": "52fe3292515f7cb6645aee368fc122e748c759f6649d0d23fcf8975370974aa1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/class-decides.52fe3292515f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/class-decides.52fe3292515f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/class-decides.52fe3292515f.generation.json",
+      "plannedRequestSha256": "7e01c8b356b611867a5f5ad411acb620b3b59396403fb26ebd46c15c76f03aae"
+    },
+    {
+      "id": "primary-to-acid",
+      "parentSceneId": "primary-to-acid",
+      "text": "A primary alcohol, like ethanol, has two hydrogens on that carbon. Oxidise it once, and you get a carbonyl at the end of the chain: ethanal, an aldehyde. But an aldehyde's carbonyl carbon still holds a hydrogen. So it can be oxidised again, to ethanoic acid, a carboxylic acid. A ketone's carbonyl carbon has no hydrogen left, so it stops at the ketone.",
+      "hash": "0ff953270127",
+      "textSha256": "0ff95327012730662566022e0593f2ce598d795345a8e97955af898a6b3da1fa",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/primary-to-acid.0ff953270127.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/primary-to-acid.0ff953270127.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/primary-to-acid.0ff953270127.generation.json",
+      "plannedRequestSha256": "513fd03b8f8e71e6f7237afa2b2c8380a7e5cc692bd3a4873ca2bb1ab7ac5fe4"
+    },
+    {
+      "id": "distil-or-reflux",
+      "parentSceneId": "distil-or-reflux",
+      "text": "So how do you stop at the aldehyde? Use boiling points. Ethanal has no O H, so its molecules can't hydrogen bond to each other. It boils at about twenty degrees, far below ethanol. Heat gently and distil: the aldehyde boils off as it forms, before it meets more oxidant. For the acid, heat under reflux with excess oxidant. The aldehyde drips back into the flask, and keeps reacting until it's an acid.",
+      "hash": "4cef9ea959a1",
+      "textSha256": "4cef9ea959a170a5deaa54106b65fe9111aa81fa330cd4223ea9f25612308f52",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/distil-or-reflux.4cef9ea959a1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/distil-or-reflux.4cef9ea959a1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/distil-or-reflux.4cef9ea959a1.generation.json",
+      "plannedRequestSha256": "1a5edb97516558d645ffcf1afc9b0045bea79e3db73e689b33817274afab97d0"
+    },
+    {
+      "id": "green-not-product",
+      "parentSceneId": "green-not-product",
+      "text": "One warning about the colour. Green tells you something was oxidised, so the alcohol was primary or secondary, not tertiary. It doesn't tell you which class, or which product formed. For that, you need the conditions, and a test on the product.",
+      "hash": "427bd8e62176",
+      "textSha256": "427bd8e62176bb550b8247802b596b7d818b2c3292c6e1bf21812bce317e9885",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/green-not-product.427bd8e62176.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/green-not-product.427bd8e62176.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/green-not-product.427bd8e62176.generation.json",
+      "plannedRequestSha256": "31c4f599e7e1eb26d10d1ffa9ec229aa7415c04e16dbbf64344b5e0e71f089c6"
+    },
+    {
+      "id": "alcohol-hub",
+      "parentSceneId": "alcohol-hub",
+      "text": "Put it together, and an alcohol is a hub. You can make it from an alkene, or a haloalkane. And it can lead to an alkene, a haloalkane, or, by oxidation, an aldehyde, ketone or acid. Each arrow has its own conditions.",
+      "hash": "803fcae48c4d",
+      "textSha256": "803fcae48c4d9f496ffef415e24e11dfe7cc4fff8d8b38838f9dbc732925f7c0",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/alcohol-hub.803fcae48c4d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/alcohol-hub.803fcae48c4d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/alcohol-hub.803fcae48c4d.generation.json",
+      "plannedRequestSha256": "8657bfcb8d962791ea449130302afe100eca320be41969a0bf1ad21a52556b86"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, dehydration takes out water, and makes an alkene. Substitution swaps the O H for a halogen, and makes water too. For oxidation, count the hydrogens on the O H carbon. Primary goes all the way, secondary stops at ketone, tertiary won't budge. And to choose the primary product: distil to catch the aldehyde, reflux to go all the way.",
+      "hash": "be75d3f7f180",
+      "textSha256": "be75d3f7f1805716919069c2235ce0534f7d39032c16ad78b02de0ecef007571",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/memory-aid.be75d3f7f180.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/memory-aid.be75d3f7f180.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/memory-aid.be75d3f7f180.generation.json",
+      "plannedRequestSha256": "c0eab6d1152a9d2a66435ad8e93746ca7a80a17717700f2d7150205b5caccbcb"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Propan-one-ol is used in two separate experiments. In experiment one, it's heated with concentrated sulfuric acid. In experiment two, it's heated under reflux with hydrogen bromide. For each experiment, name the organic product, and identify the type of reaction. Pause here to answer.",
+      "hash": "ceb14b43a2af",
+      "textSha256": "ceb14b43a2af3d86e3a42f54f7c38255ccb9b9558e04a50cf9b7aaa4d4f65660",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/attempt-1.ceb14b43a2af.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/attempt-1.ceb14b43a2af.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/attempt-1.ceb14b43a2af.generation.json",
+      "plannedRequestSha256": "ec8dcfd8de0520361afa531eed0cbf4ee4fb2d2d64a5cfa15340832d37782e8b"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "With concentrated acid and heat, propan-one-ol loses water. That's dehydration, giving propene. With hydrogen bromide, bromine replaces the O H. That's substitution, giving one-bromopropane, and water. Calling the second one addition is the slip. Addition needs a double bond, and propan-one-ol hasn't got one.",
+      "hash": "e1cabc7cf59e",
+      "textSha256": "e1cabc7cf59e68283290755d981f667e409b4e70a04fa2146db0030f54c5d558",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/feedback-1.e1cabc7cf59e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/feedback-1.e1cabc7cf59e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/feedback-1.e1cabc7cf59e.generation.json",
+      "plannedRequestSha256": "5a8c397e96d2022cd3f34f74987297ed3175ed5490673cd920395c45191d009f"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Butan-two-ol and two-methylbutan-two-ol are each heated under reflux with excess acidified potassium dichromate solution. For each alcohol, predict the colour change, and the organic product, if any. Explain the difference. Pause here to answer.",
+      "hash": "c7d9c97c8be0",
+      "textSha256": "c7d9c97c8be04b461d30d14949a47c1cc2e58ccfec342bd666352c518e618708",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/attempt-2.c7d9c97c8be0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/attempt-2.c7d9c97c8be0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/attempt-2.c7d9c97c8be0.generation.json",
+      "plannedRequestSha256": "5b803f206acf0a6857bcc5a96622387b2f067dea0c66a2bc039380460fbd16b3"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Butan-two-ol is secondary. Its O H carbon has one hydrogen, so it's oxidised to butan-two-one, a ketone, and the solution turns green. Two-methylbutan-two-ol is tertiary. There's no hydrogen on that carbon, so there's no reaction, and it stays orange. Reflux doesn't turn a ketone into an acid, so butanoic acid is the trap.",
+      "hash": "33339ea4aa34",
+      "textSha256": "33339ea4aa341287f54ed0ffaf1e75d7317afa0a4256ce7b6cbb91120fb718fa",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/feedback-2.33339ea4aa34.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/feedback-2.33339ea4aa34.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/feedback-2.33339ea4aa34.generation.json",
+      "plannedRequestSha256": "4910706dd6f96c4163f8c690408f6d5b7b1f717ed1e54f83151f0a419bd75609"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So the alcohol's class, and the conditions, decide where it leads. Next: aldehydes and ketones up close. How we name them, and how a silver mirror tells them apart.",
+      "hash": "401c6f0291b1",
+      "textSha256": "401c6f0291b16ceea15ac5c71ae8f017ce17da3d3caa2affd5e1a5584cfeb3e3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/handoff.401c6f0291b1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/handoff.401c6f0291b1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/handoff.401c6f0291b1.generation.json",
+      "plannedRequestSha256": "cd25a7f11c7a395c586a6c99504c1f8a1d7fa462e3dfb4ac7fef943369e0514b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C08a-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

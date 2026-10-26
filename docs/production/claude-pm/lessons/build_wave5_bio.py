@@ -7863,6 +7863,1638 @@ M7B07_ROWS = {
     ]
 }
 # --- M7 b06 and b07 rows (end) ---
+# --- M7 b08, b09, g03, b10, b11 and b12 rows (start) ---
+M7B08_ROWS = {
+    "hook": [
+        "adjust",
+        "no people, no portraits. `m7-virus-particle-v1.png` appears at the left, coated with a few coded Ys from b07 (grey tag \"antibodies bind viruses outside cells, b07\").",
+        "Hook (a virus hides inside): Antibodies are good at grabbing viruses outside cells.",
+        "T cells",
+        "On the spoken cues: On \"It gets into your own cells\" a second copy of the virus slips through the edge of `m7-airway-cell-v1.png` (new, small, at the right) and disappears inside; coded Ys drift against the membrane and stop there (tag \"antibodies can't get in\"). On \"among billions of healthy ones\" the airway cell",
+        "explain",
+        "no people, no portraits. `m7-virus-particle-v1.png` appears at the left, coated with a few coded Ys from b07 (grey tag \"antibodies bind viruses outside cells, b07\"). On \"It gets into your own cells\" a second copy of the virus slips through the edge of `m7-airway-cell-v1.png` (new, small, at the right) and disappears inside; coded Ys drift against the membrane and stop there (tag \"antibodies can't get in\"). On \"among billions of healthy ones\" the airway cell zooms out into a row of identical small airway cells, one of them faintly ringed (grey tag \"which one is infected?\"). On \"In 1973, in Canberra\" a small grey tag writes: \"Doherty and Zinkernagel, John Curtin School of Medical Research, ANU, 1973; Nobel Prize 1996\". On \"T cells\" the heading writes on: \"How do T cells respond to infected cells?\" Hold about two seconds.",
+        [
+            "HandText write-on",
+            "Cam lens zoom",
+            "table build",
+            "Plate"
+        ],
+        "Hold about two seconds"
+    ],
+    "virus-enters": [
+        "adjust",
+        "the board clears to the airway layout.",
+        "A virus gets in: Here's our case.",
+        "A virus lands / an airway cell / A protein on its surface fits a molecule / gets in / takes over the cell / infect the cells next door",
+        "On the spoken cues: At the right third, the `ResponseStrip` draws: three grey innate thumbnails, then the fourth rung (\"days: adaptive\", amber) with b07's five B cell chips in grey and an empty second column beside them (grey header \"T cells\"). `m7-airway-cilia-mucus-v1.png` (from b06) fills the left two-thirds; on \"A",
+        "explain",
+        "the board clears to the airway layout. At the right third, the `ResponseStrip` draws: three grey innate thumbnails, then the fourth rung (\"days: adaptive\", amber) with b07's five B cell chips in grey and an empty second column beside them (grey header \"T cells\"). `m7-airway-cilia-mucus-v1.png` (from b06) fills the left two-thirds; on \"A virus lands\" a few small coded red specks settle in the mucus (grey tag \"virus drawn far larger than real\"; grey tag \"b06: mucus and cilia\"). On \"an airway cell\" a coded zoom box opens from one column cell and `m7-airway-cell-v1.png` (new) fills the left area. On \"A protein on its surface fits a molecule\" a small `m7-virus-particle-v1.png` sits on the cell's top edge, its red spike against the membrane (tag \"spike fits a molecule on the cell\"; grey tag \"b03\"). On \"gets in\" it slips inside. On \"takes over the cell\" the plate crossfades to its aligned partner `m7-airway-cell-infected-v1.png` (new): virus particles now fill the cytoplasm and bud from the surface (tag \"the cell makes new viruses\"). On \"infect the cells next door\" a few coded red specks leave the top edge and drift towards a grey outline of the neighbouring cell. On \"antibodies can't touch it\" coded Ys bind the specks outside the cell and stop at the membrane (tag \"antibodies: outside only\"). At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "display-pieces": [
+        "adjust",
+        "the healthy `m7-airway-cell-v1.png` returns at the left and the infected partner at the right, scaled together.",
+        "Cells display pieces: So the body checks cells from the outside.",
+        "antigen presentation",
+        "On the spoken cues: On \"cuts up some of the proteins it's making\" a short coded path inside the healthy cell: a thin ink chain breaks into short pieces that travel to the membrane (grey tag \"model\"). On \"held in display molecules\" small coded `DisplayCup`s appear along the healthy cell's rim, each holding a grey",
+        "explain",
+        "the healthy `m7-airway-cell-v1.png` returns at the left and the infected partner at the right, scaled together. On \"cuts up some of the proteins it's making\" a short coded path inside the healthy cell: a thin ink chain breaks into short pieces that travel to the membrane (grey tag \"model\"). On \"held in display molecules\" small coded `DisplayCup`s appear along the healthy cell's rim, each holding a grey notched piece (gloss \"display molecule\"; grey sub-gloss \"MHC\"; grey tag \"model: drawn far larger than real\"). On \"pieces of its own proteins\" the grey pieces pulse (tag \"own pieces: healthy\"). On \"displays virus pieces as well\" the infected cell's rim fills with cups, most holding grey pieces and several holding red pieces (tag \"virus pieces: infected\"). On \"antigen presentation\" a gloss writes: \"antigen presentation: displaying pieces on the cell surface\". At most three bright text items. Hold one second.",
+        [
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "t-cell-receptor": [
+        "adjust",
+        "`m7-t-cell-v1.png` appears at the left with small coded `TReceptor` forks on its rim (gloss \"T cells: lymphocytes, mature in the thymus\"; grey tag \"model: receptors drawn far larger than real\").",
+        "The T cell's receptor: T cells are lymphocytes, like B cells.",
+        "T cells",
+        "On the spoken cues: On \"receptors of one shape, made at random\" three more small T cell copies line up beside it, each fork with a different inner notch (grey tag \"as B cells, b07\"). On \"doesn't bind a free virus\" a free `m7-virus-particle-v1.png` drifts past a fork with no attachment; a grey chip \"T cells bind free",
+        "explain",
+        "`m7-t-cell-v1.png` appears at the left with small coded `TReceptor` forks on its rim (gloss \"T cells: lymphocytes, mature in the thymus\"; grey tag \"model: receptors drawn far larger than real\"). On \"receptors of one shape, made at random\" three more small T cell copies line up beside it, each fork with a different inner notch (grey tag \"as B cells, b07\"). On \"doesn't bind a free virus\" a free `m7-virus-particle-v1.png` drifts past a fork with no attachment; a grey chip \"T cells bind free virus\" fades in and takes a grey scribble cross. On \"only fits a piece that's displayed\" the infected cell's rim slides in from the right; one fork seats over a cup holding a red piece (tag \"fits a displayed piece\"). On \"found the clue\" the 1973 grey tag from the hook returns small (grey sub-tag \"virus + the cell's own display molecule\"). On \"checks the display molecule and the piece together\" both the cup and the piece inside the fork's notch outline teal (tag \"cup + piece, together\"). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "find-t-cells": [
+        "adjust",
+        "`m7-lymph-node-v1.png` fills the left area briefly, then a coded zoom box opens onto one follicle edge and the lymph node plate dims to grey.",
+        "Finding the right T cells: First, though, the right T cells have to be found.",
+        "helper T cells / cytotoxic T cells",
+        "On the spoken cues: On \"dendritic cells carried pieces\" `m7-dendritic-cell-v1.png` appears enlarged with coded cups holding red pieces along its long arms (grey tag \"b06\"). On \"displayed them\" the T branch's first chip writes and lights: \"shown\". On \"Only the few T cells whose receptors fit\" a row of six small T cell",
+        "explain",
+        "`m7-lymph-node-v1.png` fills the left area briefly, then a coded zoom box opens onto one follicle edge and the lymph node plate dims to grey. On \"dendritic cells carried pieces\" `m7-dendritic-cell-v1.png` appears enlarged with coded cups holding red pieces along its long arms (grey tag \"b06\"). On \"displayed them\" the T branch's first chip writes and lights: \"shown\". On \"Only the few T cells whose receptors fit\" a row of six small T cell copies with different forks passes the dendritic cell; two forks seat over red pieces and light, the rest stay grey (tag \"only fitting T cells\"). On \"are selected\" the second chip lights: \"fit\". On \"divide into clones\" a coded `CloneTree` grows from each lit cell (grey tag \"clonal selection, as in b07\"; grey tag \"several days\"); the third chip lights: \"clone\", and the tag \"only fitting T cells\" dims. On \"helper T cells\" one clone's copies keep the plain `m7-t-cell-v1.png` look with a teal ring (label \"helper T cells\"); on \"cytotoxic T cells\" the other clone's copies crossfade to the aligned partner `m7-t-cell-killer-v1.png` (new) with an amber ring (label \"cytotoxic T cells\"). Only after that label writes do the small grey sub-labels \"CD4\" and \"CD8\" write under the two labels. At most three bright text items. Hold one second.",
+        [
+            "Cam lens zoom",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "helper-t-cells": [
+        "adjust",
+        "one teal-ringed helper T cell sits at the centre.",
+        "Helper T cells coordinate: Helper T cells mainly coordinate.",
+        "cytokines",
+        "On the spoken cues: On \"mainly coordinate\" a grey chip \"helper T cells are the main killers of infected cells\" fades in and takes a grey scribble cross. On \"on a B cell that has taken in the antigen\" `m7-b-cell-bare-v1.png` appears at the left with coded cups holding red pieces on its rim (grey tag \"b07: the B cell",
+        "explain",
+        "one teal-ringed helper T cell sits at the centre. On \"mainly coordinate\" a grey chip \"helper T cells are the main killers of infected cells\" fades in and takes a grey scribble cross. On \"on a B cell that has taken in the antigen\" `m7-b-cell-bare-v1.png` appears at the left with coded cups holding red pieces on its rim (grey tag \"b07: the B cell takes the antigen in\"); the helper's fork seats over one cup (tag \"same pieces, matching helper\"). On \"cytokines\" small coded dots stream from the helper to the B cell (gloss \"cytokines: signal chemicals\"); in the strip, b07's grey \"go-ahead\" chip brightens and a teal arrow draws to it from the T branch, where the fourth chip lights: \"helpers: signal\". On \"make cytotoxic T cells multiply\" the dot stream swings to an amber-ringed cytotoxic T cell at the right, which doubles into a small clone tree (tag \"killers multiply\"). On \"make macrophages better\" a small `m7-macrophage-v1.png` at the lower right takes a dot stream and its edge brightens (tag \"macrophages: better at destroying\"). Each tag dims when the next lands. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "cytotoxic-find": [
+        "adjust",
+        "on \"leave the lymph node, travel in the blood\" a small amber-ringed cytotoxic T cell travels from a lymph node thumbnail along a coded `VesselChannel` to a small thumbnail of the airway lining (grey tag \"b06: cells leave leaky vessels\").",
+        "Cytotoxic T cells find the target: Cytotoxic T cells are the killers.",
+        "leave the lymph node, travel in the blood / the infected airway / check the pieces displayed on each cell / fits a virus piece on an infected cell",
+        "On the spoken cues: On \"the infected airway\" the board returns to the airway cells: the healthy `m7-airway-cell-v1.png` at the left and `m7-airway-cell-infected-v1.png` at the right, with the cytotoxic T cell (at true relative size, about a quarter of the cell's height) beside the healthy cell. On \"check the pieces",
+        "explain",
+        "on \"leave the lymph node, travel in the blood\" a small amber-ringed cytotoxic T cell travels from a lymph node thumbnail along a coded `VesselChannel` to a small thumbnail of the airway lining (grey tag \"b06: cells leave leaky vessels\"). On \"the infected airway\" the board returns to the airway cells: the healthy `m7-airway-cell-v1.png` at the left and `m7-airway-cell-infected-v1.png` at the right, with the cytotoxic T cell (at true relative size, about a quarter of the cell's height) beside the healthy cell. On \"check the pieces displayed on each cell\" the T cell's forks touch the healthy cell's grey pieces and nothing seats (tag \"own pieces: left alone\"). On \"fits a virus piece on an infected cell\" the T cell moves to the infected cell; a fork seats over a red piece and the contact outlines amber (tag \"binds the infected cell\"). A grey chip \"killer T cells attack free virus\" fades in and takes a grey scribble cross. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "apoptosis": [
+        "adjust",
+        "the bound pair fills the left area.",
+        "The infected cell self-destructs: Then it releases proteins.",
+        "apoptosis",
+        "On the spoken cues: On \"releases proteins\" small coded specks pass from the T cell's contact edge to the infected cell's membrane. On \"make holes\" three small coded rings (pores) appear in the membrane at the contact (grey gloss \"perforin\"). On \"pass through\" specks enter through the rings (grey gloss \"granzymes\"). On",
+        "explain",
+        "the bound pair fills the left area. On \"releases proteins\" small coded specks pass from the T cell's contact edge to the infected cell's membrane. On \"make holes\" three small coded rings (pores) appear in the membrane at the contact (grey gloss \"perforin\"). On \"pass through\" specks enter through the rings (grey gloss \"granzymes\"). On \"apoptosis\" the infected plate crossfades to its aligned partner `m7-airway-cell-apoptotic-v1.png` (new): the cell shrunk, its membrane bubbling into small round blebs, its nucleus condensed and broken into dark fragments (gloss \"apoptosis: the cell's own self-destruct program\"). On \"phagocytes clear the pieces\" a small `m7-macrophage-v1.png` at the lower edge reaches towards the blebs (grey tag \"b06: phagocytes\"; grey chip \"the T cell eats the cell\" fades in and takes a grey scribble cross). On \"the virus loses its factory\" the T branch's fifth chip lights: \"killers: destroy infected cells\" (tag \"no factory, fewer new viruses\"). On \"moves on\" the T cell detaches and drifts towards a second infected cell outline. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "nk-cells": [
+        "adjust",
+        "the NK cell is shown as a cell, not a word (Revision 2; no new plate).",
+        "NK cells: the innate killers: Cytotoxic T cells aren't the only cells that kill infected cells.",
+        "Natural killer cells",
+        "On the spoken cues: Two columns build across the left area, one per cue. Left column, teal header \"NK cells: innate\". On \"Natural killer cells\" the new `m7-t-cell-killer-v1.png` appears at the same size as the cytotoxic T cell, with a **teal** ring and **no receptor forks** (grey tag \"NK cell: a lymphocyte with",
+        "explain",
+        "the NK cell is shown as a cell, not a word (Revision 2; no new plate). Two columns build across the left area, one per cue. Left column, teal header \"NK cells: innate\". On \"Natural killer cells\" the new `m7-t-cell-killer-v1.png` appears at the same size as the cytotoxic T cell, with a **teal** ring and **no receptor forks** (grey tag \"NK cell: a lymphocyte with granules, no receptor for one pathogen\"). On \"They don't have receptors made for one pathogen\" a second grey tag writes beside it: \"looks like a killer T cell, recognises differently\". On \"They respond to stress signals on a cell\" an infected airway cell outline beside it shows a small coded stress mark (a jagged grey flag) on its rim (tag \"stress signals\"). On \"too few display molecules\" a second infected cell outline has only two cups left on its rim, its other cups fading out (grey tag \"a way some viruses hide from T cells\"); the amber-ringed cytotoxic T cell moves up to it, its fork touches the rim and nothing seats (tag \"nothing for the T cell to check\"); then the NK cell moves in and binds, and that cell outline crossfades to a small `m7-airway-cell-apoptotic-v1.png` thumbnail (tag \"NK cell: kills anyway\"). Each earlier tag dims as the next lands. Right column, amber header \"cytotoxic T cells: adaptive\", with the amber-ringed T cell thumbnail and its fork seated on a red piece of a normal infected cell (tag \"receptor for one pathogen\"). On \"act early\" a short coded day axis draws under both columns: a teal bar at the early end, an amber bar starting later (\"days\"; no values). In the strip, a small grey \"NK cells\" tag sits beside the \"hours: phagocytes\" rung. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "two-arms": [
+        "new",
+        "the board clears to the full `ResponseStrip`, enlarged to the centre: three grey innate rungs above, then the fourth rung split into two columns.",
+        "Two arms, one system: So the adaptive response has two arms.",
+        "the antibody arm / cell-mediated arm / You need both / Helper T cells sit in the middle / memory T cells",
+        "On the spoken cues: On \"the antibody arm\" the B cell column brightens with a plasma cell thumbnail and a coated virus thumbnail (tag \"antibody arm: outside cells\"; grey gloss \"humoral\"). On \"cell-mediated arm\" the T cell column brightens with the apoptotic cell thumbnail (tag \"cell-mediated arm: infected cells\"; gloss",
+        "explain",
+        "the board clears to the full `ResponseStrip`, enlarged to the centre: three grey innate rungs above, then the fourth rung split into two columns. On \"the antibody arm\" the B cell column brightens with a plasma cell thumbnail and a coated virus thumbnail (tag \"antibody arm: outside cells\"; grey gloss \"humoral\"). On \"cell-mediated arm\" the T cell column brightens with the apoptotic cell thumbnail (tag \"cell-mediated arm: infected cells\"; gloss \"cell-mediated: T cells act on infected cells\"). On \"You need both\" the earlier tags dim and a small coded loop draws under the strip: a red virus speck travels between two small airway cell outlines (teal label \"between cells: antibodies\") and then sits inside one (amber label \"inside cells: cytotoxic T cells\"). On \"Helper T cells sit in the middle\" the helper thumbnail moves to sit between the columns with teal arrows to the B cell \"go-ahead\" chip and the T cell \"killers\" chip (tag \"helpers switch on both\"). On \"memory T cells\" three small T cell copies at the foot of the T column are ringed (grey tag \"b09\"). Only the current column or tag is bright. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "lineage split"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the board clears.",
+        "Memory: Here's a way to keep them apart.",
+        "B cells make antiBodies. T cells Terminate or Tell.",
+        "On the spoken cues: Two handwritten lines write on large across the centre, one per beat: \"B cells make antiBodies.\" and \"T cells Terminate or Tell.\" The capital B in \"antiBodies\" and the T, T in \"Terminate or Tell\" are amber. On \"terminate infected cells\" a small amber-ringed cytotoxic T cell thumbnail sits under",
+        "explain",
+        "the board clears. Two handwritten lines write on large across the centre, one per beat: \"B cells make antiBodies.\" and \"T cells Terminate or Tell.\" The capital B in \"antiBodies\" and the T, T in \"Terminate or Tell\" are amber. On \"terminate infected cells\" a small amber-ringed cytotoxic T cell thumbnail sits under \"Terminate\"; on \"tell other cells to act\" a small teal-ringed helper thumbnail sits under \"Tell\". Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (three groups of cells)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions now. First. Cytotoxic T cells",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (three groups of cells))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Cytotoxic T cells were collected from a mouse infected with virus X. The T cells were mixed with three groups of body cells, all taken from mice of the same strain. Group 1: uninfected cells. Group 2: cells infected with virus X. Group 3: cells infected with virus Y. Only the cells in group 2 were killed.\" Demand: \"Explain these results. (4 marks)\". One lined answer box. No plates, no mice drawn and nothing answer-bearing (no strip, no display model). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Virus X selected cytotoxic T cells / Group two cells displayed virus X pieces / only their own pieces / virus Y pieces / the classic mistake / they kill infected cells",
+        "On the spoken cues: A three-row answer table writes beneath it (\"group 1\", \"group 2\", \"group 3\"). On \"Virus X selected cytotoxic T cells\" \"a mouse infected with virus X\" underlines teal and a small row writes above the table \"virus X → fitting cytotoxic T cells selected and cloned\". On \"Group two cells displayed virus",
+        "explain",
+        "the card shrinks to a strip at the top. A three-row answer table writes beneath it (\"group 1\", \"group 2\", \"group 3\"). On \"Virus X selected cytotoxic T cells\" \"a mouse infected with virus X\" underlines teal and a small row writes above the table \"virus X → fitting cytotoxic T cells selected and cloned\". On \"Group two cells displayed virus X pieces\" \"infected with virus X\" (group 2) and \"Only the cells in group 2 were killed\" underline teal and the group 2 row fills \"displays X pieces → receptors fit → apoptosis\". On \"only their own pieces\" \"uninfected cells\" underlines and the group 1 row fills \"own pieces only: no fit\". On \"virus Y pieces\" \"infected with virus Y\" underlines and the group 3 row fills \"Y pieces: don't fit X receptors\". On \"the classic mistake\" the chip \"T cells killed the virus\" writes on and takes a grey scribble cross, with the small grey reason \"they kill infected cells\". A small grey author-side line under the table: \"same strain: same display molecules\" (not spoken). Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (a claim about HIV)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. HIV infects and destroys helper T cells.",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a claim about HIV))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"HIV (human immunodeficiency virus) infects and destroys helper T cells. Over several years without treatment, the number of helper T cells in the blood falls.\" Student's claim, in a small box: \"Losing helper T cells weakens only the T cell arm of the immune system, because antibodies are made by B cells.\" Demand: \"Evaluate the student's claim. (4 marks)\". One lined answer box. No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "B cells do make antibodies / the claim isn't supported / Most B cells need a helper T cell's go-ahead / Cytotoxic T cells rely on helper cytokines / Both arms weaken together / the classic mistake",
+        "On the spoken cues: A short answer block writes beneath it. On \"B cells do make antibodies\" \"antibodies are made by B cells\" underlines amber; on \"the claim isn't supported\" a verdict chip writes: \"B cells make antibodies: true. Only the T cell arm: not supported\". On \"Most B cells need a helper T cell's go-ahead\" a",
+        "explain",
+        "the card shrinks to a strip. A short answer block writes beneath it. On \"B cells do make antibodies\" \"antibodies are made by B cells\" underlines amber; on \"the claim isn't supported\" a verdict chip writes: \"B cells make antibodies: true. Only the T cell arm: not supported\". On \"Most B cells need a helper T cell's go-ahead\" a row writes \"B cells: usually need the helper's go-ahead → fewer plasma cells, less antibody\". On \"Cytotoxic T cells rely on helper cytokines\" \"destroys helper T cells\" underlines teal and a row writes \"cytotoxic T cells: rely on helper cytokines to multiply → fewer killers\"; on \"Both arms weaken together\" a small grey strip thumbnail sits beside the rows with both columns dimming (tag \"both arms weaken\"). On \"the classic mistake\" the chip \"B cells work without helper T cells\" writes on and takes a grey scribble cross. Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "the `ResponseStrip` returns small at the left with both adaptive columns; four step chips write on beside it, one per cue: \"who displays the pieces\", \"fitting T cells: selected, cloned\", \"helpers: cytokines to B cells and killers\", \"killers: bind, apoptosis\".",
+        "Decision rule and handoff: So for any T cell question, say which cell displays the antigen, which T cells fit it and multiply, what helper T cells signal, and how cytotoxic T cells destroy infected cells.",
+        "So for any T cell question, say which",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: why a second infection is often stopped faster\" (small grey tag; a memory cell thumbnail beside it). Hold half a second before the notes.",
+        "explain",
+        "the `ResponseStrip` returns small at the left with both adaptive columns; four step chips write on beside it, one per cue: \"who displays the pieces\", \"fitting T cells: selected, cloned\", \"helpers: cytokines to B cells and killers\", \"killers: bind, apoptosis\". A \"Next\" chip slides in at the lower right: \"Next: why a second infection is often stopped faster\" (small grey tag; a memory cell thumbnail beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B09_ROWS = {
+    "hook": [
+        "adjust",
+        "no people, no child, no rash. `m7-varicella-virus-v1.png` (new) appears at the left (grey tag \"chickenpox virus (varicella-zoster), drawn far larger than real\").",
+        "Hook (chickenpox once): Most people who've had chickenpox don't catch it again.",
+        "Years later / breathe in the same virus / antibodies from the first time are still in their blood / fallen far below its peak / So what's stopping the virus?",
+        "On the spoken cues: On \"Years later\" a short coded time arrow draws under it from \"first infection\" to \"years later\" (grey ticks only). On \"breathe in the same virus\" a second copy of the virus slides in at the right end of the arrow (tag \"same virus, years later\"). On \"antibodies from the first time are still in",
+        "explain",
+        "no people, no child, no rash. `m7-varicella-virus-v1.png` (new) appears at the left (grey tag \"chickenpox virus (varicella-zoster), drawn far larger than real\"). On \"Years later\" a short coded time arrow draws under it from \"first infection\" to \"years later\" (grey ticks only). On \"breathe in the same virus\" a second copy of the virus slides in at the right end of the arrow (tag \"same virus, years later\"). On \"antibodies from the first time are still in their blood\" a grey chip writes: \"leftover antibodies?\"; on \"fallen far below its peak\" a small coded line draws under the arrow, high at the left and sinking low by the right but staying clearly above the axis (grey tag \"antibody level\"), and the chip takes a grey question mark rather than a cross (answered in scene 3). On \"So what's stopping the virus?\" the heading writes on: \"Why is a second infection often stopped faster?\" Hold one second (Revision 2; was two).",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second (Revision 2; was two)"
+    ],
+    "primary": [
+        "adjust",
+        "the board clears to the memory layout.",
+        "The first time: Let's go back to the first infection.",
+        "primary response",
+        "On the spoken cues: At the right third, the complete `ResponseStrip` draws small (innate rungs grey; both adaptive columns grey). At the upper left, the `CellCountField` draws: a grid of about forty small `m7-b-cell-bare-v1.png` copies and ten `m7-t-cell-v1.png` copies; on \"only a few B cells and T cells fit\" two B",
+        "explain",
+        "the board clears to the memory layout. At the right third, the complete `ResponseStrip` draws small (innate rungs grey; both adaptive columns grey). At the upper left, the `CellCountField` draws: a grid of about forty small `m7-b-cell-bare-v1.png` copies and ten `m7-t-cell-v1.png` copies; on \"only a few B cells and T cells fit\" two B cells and one T cell light teal (tag \"a few fitting cells\"). On \"selected and divide for days\" a small `CloneTree` thumbnail grows from one lit cell (grey tag \"b07, b08\"); on \"innate defences hold the virus back\" the strip's innate rungs pulse once (grey tag \"b06\"). Below, the coded antibody graph draws its axes (\"time after first exposure (days)\", \"antibody level\"; linear, no values on the y axis) with an amber arrow at day 0 (\"first infection\"). On \"a week or more after infection\" the curve stays flat along the axis for the first stretch (bracket \"lag: cells being selected and multiplied\"; no day numbers) and then rises; on \"they peak later\" it reaches a low peak (tag \"peak\"; small grey gloss \"mainly IgM at first\"). On \"you get sick\" a soft grey band shades the lag and rise (grey label \"illness while the response builds\"). On \"primary response\" the curve outlines teal and a gloss writes: \"primary response: the first response to an antigen\". At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "lineage split",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "what-stays": [
+        "adjust",
+        "on \"the infection is cleared\" the graph's curve continues past its peak.",
+        "What stays: Then the infection is cleared.",
+        "memory cells",
+        "On the spoken cues: On \"Most plasma cells die within weeks\" small `m7-plasma-cell-v1.png` copies beside the graph (scaled as b07 sets, never stretched) fade one by one while the curve falls towards, but not to, the axis (tag \"plasma cells die: antibody falls\"). On \"memory cells\" the `CellCountField` changes: about",
+        "explain",
+        "on \"the infection is cleared\" the graph's curve continues past its peak. On \"Most plasma cells die within weeks\" small `m7-plasma-cell-v1.png` copies beside the graph (scaled as b07 sets, never stretched) fade one by one while the curve falls towards, but not to, the axis (tag \"plasma cells die: antibody falls\"). On \"memory cells\" the `CellCountField` changes: about fifteen B cells and five T cells now light teal, each with a small grey \"M\" mark (gloss \"memory cells: long-lived B and T cells\"); in the strip, small teal rings mark the foot of both adaptive columns (grey tag \"memory B cells, b07; memory T cells, b08\"). On \"for years, many for decades\" a long flat grey bracket runs along the low tail of the curve (tag \"antibody low, memory cells still there\"). On \"far more cells that fit\" the field's two earlier lit cells (from scene 2) flash beside the many now lit (tag \"before: a few. now: many\"). The hook's \"leftover antibodies?\" chip returns small and takes a grey scribble cross with the reason \"mainly memory cells, not leftover antibody\"; on \"stored mainly in cells\" the lit field brightens once (tag \"memory: mainly in cells\"), while the low antibody tail stays visible. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "secondary": [
+        "new",
+        "a second amber arrow lands on the graph's x axis well to the right (\"same virus again\"); the x axis compresses to fit.",
+        "The second time: Now the same virus arrives again.",
+        "secondary response",
+        "On the spoken cues: On \"many fitting cells are already waiting\" the many lit cells in the field pulse (tag \"many already fit\"). On \"fewer divisions\" a short `CloneTree` thumbnail (only two levels of branching, against scene 2's many) grows from one lit cell (tag \"fewer divisions\"; \"many already fit\" dims). On \"turn",
+        "explain",
+        "a second amber arrow lands on the graph's x axis well to the right (\"same virus again\"); the x axis compresses to fit. On \"many fitting cells are already waiting\" the many lit cells in the field pulse (tag \"many already fit\"). On \"fewer divisions\" a short `CloneTree` thumbnail (only two levels of branching, against scene 2's many) grows from one lit cell (tag \"fewer divisions\"; \"many already fit\" dims). On \"turn into plasma cells fast\" several lit B cells crossfade to small plasma cell copies (tag \"quickly become plasma cells\"; \"fewer divisions\" dims). On \"Memory helper T cells give the go-ahead quickly\" the lit T cells in the field pulse and, in the strip, the T column's \"helpers: signal\" chip flashes once; on \"memory cytotoxic T cells destroy infected cells sooner\" its \"killers: destroy\" chip flashes (grey tag \"b08\"; the plasma cell tag dims). On \"antibodies rise within days\" the second curve leaves the axis after a short lag (bracket \"short lag\"); on \"climb far higher\" it rises far above the first peak; on \"stay up longer\" it falls slowly. Small grey glosses beside the peak: \"mainly IgG; binds more tightly\". On \"secondary response\" the second curve outlines amber and a gloss writes: \"secondary response: same antigen, again\"; by the end only this gloss and one tag are bright. On \"before you feel sick\" the grey illness band appears only faintly under the first days of the second curve and then fades (grey label \"often no illness\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "read-graph": [
+        "new",
+        "the cells shrink away; the graph fills the left two-thirds.",
+        "Reading the graph: On a graph of antibody level against time, the primary response is a slow, low hump.",
+        "slow, low hump / fast, tall peak / logarithmic, because the second peak / ten to a hundred times higher / a different antigen arrives at the same time / no memory cells fit it",
+        "On the spoken cues: On \"slow, low hump\" the first curve lights teal (tag \"primary: slow, low\"); on \"fast, tall peak\" the second lights amber (tag \"secondary: fast, tall\"). On \"logarithmic, because the second peak\" the y axis relabels with log ticks \"1, 10, 100, 1000\" and the curves redraw to match (gloss \"log scale:",
+        "explain",
+        "the cells shrink away; the graph fills the left two-thirds. On \"slow, low hump\" the first curve lights teal (tag \"primary: slow, low\"); on \"fast, tall peak\" the second lights amber (tag \"secondary: fast, tall\"). On \"logarithmic, because the second peak\" the y axis relabels with log ticks \"1, 10, 100, 1000\" and the curves redraw to match (gloss \"log scale: each step is ten times more\"); on \"ten to a hundred times higher\" a short bracket spans the two peak heights (tag \"10 to 100 times higher\"). Earlier tags dim. On \"a different antigen arrives at the same time\" a second marker joins the second amber arrow (\"+ a new antigen\") and a dashed grey curve draws from it: a slow, low hump the same shape as the first primary curve (tag \"new antigen: primary response\"). On \"no memory cells fit it\" a small grey version of the cell count field shows no lit cells for the new antigen (grey tag \"no memory for it\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the graph stays.",
+        "Memory: So remember: second exposure, faster, bigger, longer.",
+        "second exposure, faster, bigger, longer.",
+        "On the spoken cues: One handwritten line writes on large above it: \"Second exposure: faster, bigger, longer.\" On \"starts sooner\" the short lag bracket pulses; on \"much more antibody\" the peak bracket; on \"lasts longer\" the slow tail. On \"memory cells are already there\" the lit cell field returns small beside the line.",
+        "explain",
+        "the graph stays. One handwritten line writes on large above it: \"Second exposure: faster, bigger, longer.\" On \"starts sooner\" the short lag bracket pulses; on \"much more antibody\" the peak bracket; on \"lasts longer\" the slow tail. On \"memory cells are already there\" the lit cell field returns small beside the line. Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "vaccination": [
+        "adjust",
+        "the board clears to a fresh graph at the lower left and `m7-vaccine-vial-syringe-v1.png` at the upper left (tag \"vaccine\").",
+        "Vaccination: Vaccination uses this.",
+        "Vaccination",
+        "On the spoken cues: On \"doesn't cause the full disease\" a gloss writes: \"vaccine: antigen in a form that doesn't cause the full disease\". On \"a weakened live virus\" a small faded copy of the varicella plate sits beside the vial (grey gloss \"live attenuated\"; tag \"chickenpox vaccine\"); on \"a killed pathogen\", \"just one",
+        "explain",
+        "the board clears to a fresh graph at the lower left and `m7-vaccine-vial-syringe-v1.png` at the upper left (tag \"vaccine\"). On \"doesn't cause the full disease\" a gloss writes: \"vaccine: antigen in a form that doesn't cause the full disease\". On \"a weakened live virus\" a small faded copy of the varicella plate sits beside the vial (grey gloss \"live attenuated\"; tag \"chickenpox vaccine\"); on \"a killed pathogen\", \"just one of its proteins\" and \"instructions\" three small grey labels write in a row under it, one per cue (\"inactivated\", \"subunit (one protein)\", \"mRNA instructions\"), each earlier label dimming. A small grey tag at the corner: \"Jenner, 1796: cowpox\". On \"a primary response and memory cells, without the illness\" an amber arrow labelled \"vaccine\" lands at day 0 of the fresh graph and a low primary curve draws with no illness band (tag \"memory, no illness\"); the cell count field lights its many memory cells. On \"a real infection meets a secondary response\" a second arrow, \"real virus\", lands later and a tall secondary curve draws (tag \"infection meets memory\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "boosters": [
+        "new",
+        "the fresh graph stays.",
+        "Boosters: Some vaccines need an extra dose later, called a booster.",
+        "booster",
+        "On the spoken cues: On \"an extra dose later\" a second amber arrow labelled \"booster\" lands on the axis between the vaccine and the real virus, and a taller curve draws from it (gloss \"booster: a later extra dose of the same vaccine\"). On \"adds more memory cells\" a few more cells in the field light teal (tag \"more",
+        "explain",
+        "the fresh graph stays. On \"an extra dose later\" a second amber arrow labelled \"booster\" lands on the axis between the vaccine and the real virus, and a taller curve draws from it (gloss \"booster: a later extra dose of the same vaccine\"). On \"adds more memory cells\" a few more cells in the field light teal (tag \"more memory cells\"). On \"prepares you before an infection\" a grey chip \"a vaccine treats the disease\" fades in and takes a grey scribble cross, with the small grey reason \"it builds memory first\". At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "active": [
+        "new",
+        "the board clears to the empty coded `ImmunityTable` (two rows, two columns, grey headers \"natural\" and \"artificial\").",
+        "Active immunity: Immunity from vaccines and infections is called active immunity, because your own immune system did the work and made memory cells.",
+        "active immunity",
+        "On the spoken cues: On \"active immunity\" the top row header writes and lights: \"active\" (gloss \"active: your own response; memory cells\"). On \"It often lasts a long time\" a small grey row note writes \"long-lasting\" (on \"a booster can top it up\" a tiny grey \"+ booster\" joins it); on \"a week or more to build\" a second",
+        "explain",
+        "the board clears to the empty coded `ImmunityTable` (two rows, two columns, grey headers \"natural\" and \"artificial\"). On \"active immunity\" the top row header writes and lights: \"active\" (gloss \"active: your own response; memory cells\"). On \"It often lasts a long time\" a small grey row note writes \"long-lasting\" (on \"a booster can top it up\" a tiny grey \"+ booster\" joins it); on \"a week or more to build\" a second note \"slow to start\". On \"natural active\" the top-left quadrant fills with the varicella thumbnail and \"catching the disease\"; on \"artificial active\" the top-right quadrant fills with the vaccine vial thumbnail and \"vaccination\". At most three bright text items. Hold one second.",
+        [
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "passive": [
+        "adjust",
+        "on \"Passive immunity\" the bottom row header writes and lights: \"passive\" (gloss \"passive: given ready-made antibodies; they make no memory\").",
+        "Passive immunity: Passive immunity is different.",
+        "Passive immunity",
+        "On the spoken cues: On \"They work straight away\" a grey row note \"immediate\"; on \"form memory cells\" the cell count field returns small with no new lit cells (grey tag \"no memory from given antibodies\"); a grey chip \"passive immunity leaves memory\" fades in and takes a grey scribble cross. On \"broken down over weeks",
+        "explain",
+        "on \"Passive immunity\" the bottom row header writes and lights: \"passive\" (gloss \"passive: given ready-made antibodies; they make no memory\"). On \"They work straight away\" a grey row note \"immediate\"; on \"form memory cells\" the cell count field returns small with no new lit cells (grey tag \"no memory from given antibodies\"); a grey chip \"passive immunity leaves memory\" fades in and takes a grey scribble cross. On \"broken down over weeks to months\" a small coded line draws beside the row: high at once, then falling to the axis (grey row note \"fades\"; grey tag \"weeks to months\"). On \"across the placenta\" the bottom-left quadrant fills with `m7-placenta-villus-v1.png` (new; tag \"antibodies cross the placenta\"), with small coded Ys passing from the maternal blood space into the villus capillary; on \"in breast milk\" `b3a2-milk-gland-full-v1.png` sits small beside it (grey tag \"breast milk\"). Quadrant label \"from the mother\". On \"for its first months\" the falling line beside the row gains a grey tag \"first months\", and a small grey arrow points to the artificial active quadrant (tag \"then its own vaccines\"). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "antivenom": [
+        "adjust",
+        "the bottom-right quadrant fills with `m7-brown-snake-v1.png` (new; grey tag \"eastern brown snake\") and the label \"antibody injection: antivenom\".",
+        "Antivenom: Artificial passive immunity is an injection of antibodies.",
+        "made by giving an animal / needs those antibodies now / their own primary response would take far too long",
+        "On the spoken cues: On \"made by giving an animal\" a small grey line of three coded steps writes under the quadrant (\"venom, small doses → horse makes antibodies → antibodies collected\"; text only, no horse drawn). On \"needs those antibodies now\" small coded Ys bind coded venom specks beside the snake (tag \"binds venom",
+        "explain",
+        "the bottom-right quadrant fills with `m7-brown-snake-v1.png` (new; grey tag \"eastern brown snake\") and the label \"antibody injection: antivenom\". On \"made by giving an animal\" a small grey line of three coded steps writes under the quadrant (\"venom, small doses → horse makes antibodies → antibodies collected\"; text only, no horse drawn). On \"needs those antibodies now\" small coded Ys bind coded venom specks beside the snake (tag \"binds venom at once\"). On \"their own primary response would take far too long\" the scene 2 primary curve returns as a small grey thumbnail with its lag bracket pulsing (tag \"too slow for venom\"). At most three bright text items. Hold one second.",
+        [
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "two-questions": [
+        "new",
+        "the full table enlarges to the centre with its four thumbnails.",
+        "Two questions: Active and passive immunity are both acquired immunity, gained during your life, unlike the innate defences you're born with.",
+        "Active, you do the work. Passive, you're handed the antibodies.",
+        "On the spoken cues: On \"both acquired immunity\" a grey bracket \"acquired\" draws down the left side across both rows, and a gloss writes: \"acquired: gained during life (active or passive)\"; on \"the innate defences you're born with\" the strip's innate rungs pulse once, small at the right (grey tag \"innate: born with",
+        "explain",
+        "the full table enlarges to the centre with its four thumbnails. On \"both acquired immunity\" a grey bracket \"acquired\" draws down the left side across both rows, and a gloss writes: \"acquired: gained during life (active or passive)\"; on \"the innate defences you're born with\" the strip's innate rungs pulse once, small at the right (grey tag \"innate: born with it\"), then the gloss dims. On \"Who made the antibodies\" an arrow runs down the row headers (tag \"who made them? active or passive\"); on \"naturally, or by medical treatment\" an arrow runs across the column headers (tag \"how? natural or artificial\"). On the last sentence one handwritten line writes on under the table: \"Active: you do the work. Passive: you're handed the antibodies.\" The two row headers brighten in turn. On \"a snakebite needs ready-made antibodies now\" the snake quadrant brightens (tag \"now: passive\"); on \"lasting protection against a disease comes from active immunity\" both active quadrants brighten, then the vaccine quadrant stays bright on \"such as a vaccine\" (tag \"lasting: active\"). Nothing on screen links the vaccine to the snake. Hold one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (two antigens)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. The graph shows antibody",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (two antigens))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A rabbit was injected with antigen P on day 0. On day 40, it was injected with antigen P again and with a new antigen, Q. The graph shows the concentration of antibodies against P and against Q in the rabbit's blood.\" A coded graph on the card: x axis \"time (days)\", 0 to 70, ticks every 10; y axis \"antibody concentration (arbitrary units, log scale)\", ticks 1, 10, 100, 1000. Solid line \"anti-P\": flat near 1 to day 6, rising to about 20 at day 14, falling to about 4 by day 40; after day 40 rising from day 42 to about 800 at day 48, then falling slowly to about 300 by day 70. Dashed line \"anti-Q\": flat near 1 from day 40 to day 46, rising to about 20 at day 54, falling to about 8 by day 70. Arrows on the x axis at day 0 (\"P\") and day 40 (\"P + Q\"). Demand: \"Explain the difference between the responses to antigens P and Q after day 40. (4 marks)\". One lined answer box. Nothing answer-bearing (no labels \"primary\" or \"secondary\", no cells). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "tick",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip at the top, its graph enlarged beside a two-row answer table (\"anti-P after day 40\", \"anti-Q after day 40\").",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "antibodies to P rose within days to a much higher peak / The first injection left memory cells / Q got a slow, low primary response / had to be selected and multiply first / the classic mistake / memory is specific to P",
+        "On the spoken cues: On \"antibodies to P rose within days to a much higher peak\" the solid line after day 40 outlines amber and \"injected with antigen P again\" underlines amber; the P row fills \"short lag, peak about 40 times higher: secondary\". On \"The first injection left memory cells\" \"antigen P on day 0\" underlines",
+        "explain",
+        "the card shrinks to a strip at the top, its graph enlarged beside a two-row answer table (\"anti-P after day 40\", \"anti-Q after day 40\"). On \"antibodies to P rose within days to a much higher peak\" the solid line after day 40 outlines amber and \"injected with antigen P again\" underlines amber; the P row fills \"short lag, peak about 40 times higher: secondary\". On \"The first injection left memory cells\" \"antigen P on day 0\" underlines teal and the row extends \"memory cells from day 0 fit P\". On \"Q got a slow, low primary response\" the dashed line outlines teal and \"a new antigen, Q\" underlines teal; the Q row fills \"lag about a week, low peak: primary\". On \"had to be selected and multiply first\" the row extends \"no memory: few fitting cells\". On \"the classic mistake\" the chip \"the first injection boosts every antibody\" writes on and takes a grey scribble cross, with the small grey reason \"memory is specific to P\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (antivenom)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. A bushwalker is bitten by a brown",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (antivenom))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A bushwalker was bitten by an eastern brown snake. She was given brown snake antivenom (antibodies against the venom, collected from horses) and recovered. A year later, she was bitten by the same species again.\" Friend's claim, in a small box: \"She is now immune to the venom, because she has already had antibodies against it.\" Demand: \"Evaluate the friend's claim. (3 marks)\". One lined answer box. No plates, no person. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "The claim is wrong / artificial passive immunity / fade within weeks / form memory cells / dependable protection / the classic mistake",
+        "On the spoken cues: A short answer block writes beneath it. On \"The claim is wrong\" a verdict chip \"claim: not supported\". On \"artificial passive immunity\" \"antibodies against the venom, collected from horses\" underlines teal and a row writes \"made by a horse: artificial passive\"; the table's bottom-right quadrant",
+        "explain",
+        "the card shrinks to a strip. A short answer block writes beneath it. On \"The claim is wrong\" a verdict chip \"claim: not supported\". On \"artificial passive immunity\" \"antibodies against the venom, collected from horses\" underlines teal and a row writes \"made by a horse: artificial passive\"; the table's bottom-right quadrant thumbnail sits beside it. On \"fade within weeks\" a row writes \"horse antibodies fade within weeks\". On \"form memory cells\" a row writes \"receiving antibodies: no memory made\". On \"dependable protection\" \"A year later\" underlines amber and a row writes \"no dependable protection: needs antivenom again\". Earlier rows dim as each new row writes. On \"the classic mistake\" the chip \"antivenom is a vaccine\" writes on and takes a grey scribble cross, with the small grey reason \"a vaccine gives antigen, not antibodies\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "the table returns small at the left beside a small graph thumbnail; two step chips write on, one per cue: \"memory cells for this antigen? secondary : primary\" and \"who made the antibodies? active : passive\"; on \"Then decide\" both chips brighten together.",
+        "Decision rule and handoff: So for any immunity question, ask two things.",
+        "Then decide",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: immune response practice\" (small grey tag; the complete strip thumbnail beside it). Hold half a second before the notes.",
+        "explain",
+        "the table returns small at the left beside a small graph thumbnail; two step chips write on, one per cue: \"memory cells for this antigen? secondary : primary\" and \"who made the antibodies? active : passive\"; on \"Then decide\" both chips brighten together. A \"Next\" chip slides in at the lower right: \"Next: immune response practice\" (small grey tag; the complete strip thumbnail beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "table build"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7G03B_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Order it, read it, name it\" writes on.",
+        "Hook: Immunity questions often ask you to do one of three things.",
+        "in order / Read a graph / name the immunity",
+        "On the spoken cues: Three small stimulus thumbnails fan out on the right, one per cue: on \"in order\" the complete `ResponseStrip` thumbnail (grey, as b09 left it); on \"Read a graph\" a small two-hump antibody graph (no values); on \"name the immunity\" b09's two-by-two table thumbnail with empty quadrants. On \"three",
+        "explain",
+        "heading \"Order it, read it, name it\" writes on. Three small stimulus thumbnails fan out on the right, one per cue: on \"in order\" the complete `ResponseStrip` thumbnail (grey, as b09 left it); on \"Read a graph\" a small two-hump antibody graph (no values); on \"name the immunity\" b09's two-by-two table thumbnail with empty quadrants. On \"three HSC-style questions\" the thumbnails become three numbered question cards with one shared tag line beneath them, \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+        [
+            "HandText write-on",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "q1-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 1: eight events out of order) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. Pruning secateurs nick a gardener's thumb,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: eight events out of order)",
+        "explain",
+        "fresh board. Type badge hidden. `m7-pruning-secateurs-v1.png` sits small at the card's upper left beside `m7-wound-bacterium-v1.png` (grey tag \"soil bacteria, drawn far larger than real\"). The card writes on as an exam question: \"A gardener's thumb is cut by pruning secateurs, and soil bacteria enter the cut. The events below occur in the gardener's body. They are listed in random order.\" Eight lettered `EventCard`s in two columns: Demands: \"(a) Write the letters in the order the events occur, from entry to antibody production. (3 marks)\" \"(b) Explain why antibodies against these bacteria are not detected in the blood until about a week after the cut. (2 marks)\". An answer line of eight boxes and one lined box. No strip, no cell thumbnails (answer-bearing). **Countdown ring 10 seconds** after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-innate": [
+        "adjust",
+        "the card shrinks to a strip (the eight event lines stay readable); type badge \"Sequence\".",
+        "Barrier, then the innate response: Start where the pathogen starts.",
+        "C / E / G / F",
+        "On the spoken cues: The `ResponseStrip` draws at the right two-thirds, empty rungs with b06's grey labels (\"always there: barriers\", \"minutes: inflammation\", \"hours: phagocytes\", \"days: adaptive\"). On \"C\" event C lifts out of the strip, underlines amber, and slides onto the barrier rung with a small",
+        "explain",
+        "the card shrinks to a strip (the eight event lines stay readable); type badge \"Sequence\". The `ResponseStrip` draws at the right two-thirds, empty rungs with b06's grey labels (\"always there: barriers\", \"minutes: inflammation\", \"hours: phagocytes\", \"days: adaptive\"). On \"C\" event C lifts out of the strip, underlines amber, and slides onto the barrier rung with a small `m7-skin-splinter-v1.png` thumbnail cropped to the skin surface only (no splinter visible; if the crop cannot hide the splinter, use a grey rung tag \"skin breached\" instead); answer box 1 fills \"C\". On \"E\" event E slides onto the inflammation rung with `m7-mast-cell-v1.png` small; on \"chemical change causing physical ones\" two small grey glosses write beside it, \"chemical: histamine\" and \"physical: vessels widen and leak\" (B7-IQ2-02); box 2 fills \"E\". On \"G\" event G slides onto the phagocyte rung with `m7-neutrophil-v1.png`; box 3 fills \"G\". On \"F\" event F slides onto the bottom of the phagocyte rung with an arrow down to the adaptive rung, `m7-dendritic-cell-v1.png` and `m7-lymph-node-v1.png` small (grey tag \"starts the adaptive response\"); box 4 fills \"F\". Earlier glosses dim as each lands. On \"block, alarm, eat, alert\" the four verbs write small and grey beside the four placed events, one per word (one item; grey tag \"b06\"); \"chemical: histamine\" and \"physical: vessels widen and leak\" dim to grey as the verbs start; only after the four verbs have landed, a small grey note writes under boxes 2 to 4: \"E, G and F overlap in time\". At most three bright text items in the working area. Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold 1 second"
+    ],
+    "q1-adaptive": [
+        "adjust",
+        "the adaptive rung expands into b07's five teal chip slots (grey, empty).",
+        "The adaptive response in the lymph node: Now the adaptive response, in the lymph node.",
+        "A / D / H / B",
+        "On the spoken cues: On \"A\" event A slides into the \"fit\" chip with `m7-b-cell-v1.png` small; \"fit an antigen\" underlines amber in the strip; box 5 fills \"A\". On \"D\" event D slides into the \"go-ahead\" chip with `m7-t-cell-v1.png` small; a thin arrow from the placed F event to the T cell thumbnail draws on \"already",
+        "explain",
+        "the adaptive rung expands into b07's five teal chip slots (grey, empty). On \"A\" event A slides into the \"fit\" chip with `m7-b-cell-v1.png` small; \"fit an antigen\" underlines amber in the strip; box 5 fills \"A\". On \"D\" event D slides into the \"go-ahead\" chip with `m7-t-cell-v1.png` small; a thin arrow from the placed F event to the T cell thumbnail draws on \"already switched on by the dendritic cell\" (grey tag \"b08\"); box 6 fills \"D\". On \"H\" event H slides into the \"clone\" chip with b07's `CloneTree` thumbnail; on \"most become plasma cells\" the \"plasma cells\" chip lights with `m7-plasma-cell-v1.png`; on \"some become memory cells\" a small grey \"M\" ring marks the foot of the column (b09's memory mark); box 7 fills \"H\". On \"B\" event B slides into the \"antibodies bind\" chip with coded Ys on the bacterium thumbnail; box 8 fills \"B\". On \"So the order is\" the eight boxes brighten left to right, one per letter, and the strip glows once along its whole length. On \"the bridge between the two halves\" the F to T cell arrow pulses once (tag \"dendritic cell: innate to adaptive\"). Earlier tags dim. Hold 1 second.",
+        [
+            "Mark underline",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold 1 second"
+    ],
+    "q1-days": [
+        "new",
+        "on \"about a week\" \"about a week after the cut\" underlines amber in the strip.",
+        "Part b: about a week: Part b asks why it takes about a week.",
+        "about a week / Only a few B cells fit / divide many times / antibodies you can measure / innate defences hold the bacteria back",
+        "On the spoken cues: A short day axis (0 to 10 days, grey) draws under the adaptive rung. On \"Only a few B cells fit\" the \"fit\" chip pulses and three tiny lit B cells sit in a field of grey ones (tag \"few fit at first\"). On \"divide many times\" the `CloneTree` thumbnail grows several levels while a marker moves along",
+        "explain",
+        "on \"about a week\" \"about a week after the cut\" underlines amber in the strip. A short day axis (0 to 10 days, grey) draws under the adaptive rung. On \"Only a few B cells fit\" the \"fit\" chip pulses and three tiny lit B cells sit in a field of grey ones (tag \"few fit at first\"). On \"divide many times\" the `CloneTree` thumbnail grows several levels while a marker moves along the day axis (tag \"days of division\"; \"few fit at first\" dims). On \"antibodies you can measure\" a low curve leaves the day axis near day 7 (tag \"detectable after about a week\"). On \"innate defences hold the bacteria back\" the innate rungs pulse once (grey tag \"meanwhile: innate\"). Answer box (b) fills \"few B cells fit at first; they must bind the antigen, get a helper T cell's go-ahead and divide many times before enough plasma cells release measurable antibody; innate defences hold the bacteria meanwhile\". Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold 1 second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"the body makes an antibody to fit the bacteria\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is writing that the body makes a new antibody to fit the bacteria.",
+        "the classic mistake / selects B cells that already fit / copies them",
+        "On the spoken cues: On \"selects B cells that already fit\" the \"fit\" chip brightens and a small grey tag writes \"clonal selection: the name is the process\" (b07). On \"copies them\" the clone chip pulses. A second crossed chip, unspoken, lands after the spoken cross has settled: \"B before A (antibodies before any B cell",
+        "explain",
+        "a chip \"the body makes an antibody to fit the bacteria\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"selects B cells that already fit\" the \"fit\" chip brightens and a small grey tag writes \"clonal selection: the name is the process\" (b07). On \"copies them\" the clone chip pulses. A second crossed chip, unspoken, lands after the spoken cross has settled: \"B before A (antibodies before any B cell is selected)\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 2: two doses on a log scale) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. A volunteer in a vaccine trial",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: two doses on a log scale)",
+        "explain",
+        "board clears. Type badge hidden. `m7-vaccine-vial-syringe-v1.png` sits small at the card's upper left. The card writes on: \"A volunteer in a vaccine trial was given two doses of the same vaccine, on day 0 and on day 28. The graph shows the concentration of antibodies against the vaccine antigen in the volunteer's blood. The dashed line shows the antibody level that protects against the disease.\" Grey chip: \"illustrative values\". Coded graph (house `lineGraph`): x axis \"time (days)\", 0 to 56, ticks every 7; y axis \"antibody concentration (arbitrary units, log scale)\", gridlines at 1, 10, 100, 1000, 10 000. Dashed horizontal line at 100, labelled \"protective level\". Curve: flat at about 1 from day 0 to day 6, rising to a peak of about 40 at day 14, falling to about 10 by day 28; after day 28, flat to day 30, rising to a peak of about 2000 at day 35, falling slowly to about 1000 by day 56. Arrows on the x axis at day 0 (\"dose 1\") and day 28 (\"dose 2\"). Demands: \"(a) Compare the antibody responses to dose 1 and dose 2. Use data from the graph. (3 marks)\" \"(b) Explain the difference between the two responses. (3 marks)\". Two lined answer boxes. No labels \"primary\" or \"secondary\", no cells. **Countdown 10 seconds**; the whole card, graph included, stays on screen.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "tick",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-read": [
+        "new",
+        "the card shrinks to a strip; type badge \"Antibody graph\".",
+        "Read the scale, then the numbers: First, check the scale.",
+        "forty / two days / two thousand / fifty times higher",
+        "On the spoken cues: The graph enlarges in the working area. On \"check the scale\" the y axis labels 1, 10, 100, 1000, 10 000 pulse one by one, and \"log scale\" underlines amber in the y axis label \"antibody concentration (arbitrary units, log scale)\", the given an exam prints (gloss \"each step: ten times more\"). On \"the",
+        "explain",
+        "the card shrinks to a strip; type badge \"Antibody graph\". The graph enlarges in the working area. On \"check the scale\" the y axis labels 1, 10, 100, 1000, 10 000 pulse one by one, and \"log scale\" underlines amber in the y axis label \"antibody concentration (arbitrary units, log scale)\", the given an exam prints (gloss \"each step: ten times more\"). On \"the flat start\" the first flat stretch of the curve outlines grey (gloss \"lag: flat start before the rise\"; the scale gloss dims). On \"stays flat for about six days\" a bracket spans day 0 to 6 on the flat start (tag \"lag about 6 days\"). On \"forty\" a dotted reading guide drops from the first peak to the y axis and the value \"about 40 (day 14)\" writes; on \"below the protective line\" the peak and the dashed line flash together (\"dashed line\" underlines). On \"two days\" a short bracket spans day 28 to 30 (tag \"lag about 2 days\"; the first bracket dims). On \"two thousand\" a second reading guide gives \"about 2000 (day 35)\". On \"fifty times higher\" a small working line writes \"2000 ÷ 40 = 50\" and a bracket joins the two peaks (tag \"about 50 times higher\"); on \"stays above the protective line\" the curve segment from day 31 to day 56 outlines amber above the dashed line. Answer box (a) fills \"dose 1: lag about 6 days, peak about 40 units (day 14), below protective level; dose 2: lag about 2 days, peak about 2000 units (day 35), about 50 times higher, above protective level to day 56\". At most three bright text items. Hold 1 second.",
+        [
+            "Mark underline",
+            "counter and bar fill"
+        ],
+        "Hold 1 second"
+    ],
+    "q2-explain": [
+        "adjust",
+        "on \"primary response\" the first hump outlines teal (tag \"primary\"); a small grey cell field (b09's `CellCountField`, `m7-b-cell-bare-v1.png` copies, scaled uniformly) shows two lit cells.",
+        "Primary, then secondary: Now explain it.",
+        "primary response / memory cells / secondary response",
+        "On the spoken cues: On \"memory cells\" about a dozen cells in the field light with small grey \"M\" marks (tag \"memory cells from dose 1\"). On \"same antigen\" \"two doses of the same vaccine\" underlines amber in the strip. On \"secondary response\" the second peak outlines amber (tag \"secondary\"; \"primary\" dims). On \"fewer",
+        "explain",
+        "on \"primary response\" the first hump outlines teal (tag \"primary\"); a small grey cell field (b09's `CellCountField`, `m7-b-cell-bare-v1.png` copies, scaled uniformly) shows two lit cells. On \"memory cells\" about a dozen cells in the field light with small grey \"M\" marks (tag \"memory cells from dose 1\"). On \"same antigen\" \"two doses of the same vaccine\" underlines amber in the strip. On \"secondary response\" the second peak outlines amber (tag \"secondary\"; \"primary\" dims). On \"fewer divisions\" a short two-level `CloneTree` grows from one lit cell. On \"sooner and much higher\" the two lag brackets and the peak bracket from 3b pulse once. The bank line \"Second exposure: faster, bigger, longer.\" writes small under the graph (grey tag \"b09\"). On \"never reached the protective line\" the first peak and the dashed line flash together and \"dashed line\" underlines in the strip (tag \"dose 1 alone: below protective level\"). On \"more than one dose\" the dose 2 arrow brightens. Answer box (b) fills \"dose 1: primary response; few fitting B cells selected and cloned, slow, low; memory cells formed. Dose 2: same antigen meets many memory cells, which quickly become plasma cells with fewer divisions, so antibody rises sooner and higher (secondary response)\". Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold 1 second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a ghost linear ruler beside the y axis counts the two gridline gaps between the peaks; a chip \"the second peak is about twice as high\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is counting gridlines.",
+        "the classic mistake / Read the values off the axis",
+        "On the spoken cues: On \"Read the values off the axis\" the two reading guides pulse and \"2000 ÷ 40 = 50\" rings amber. A second crossed chip, unspoken: \"the person was protected after dose 1 (peak below the dashed line)\". Hold about 1.5 seconds.",
+        "explain",
+        "a ghost linear ruler beside the y axis counts the two gridline gaps between the peaks; a chip \"the second peak is about twice as high\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Read the values off the axis\" the two reading guides pulse and \"2000 ÷ 40 = 50\" rings amber. A second crossed chip, unspoken: \"the person was protected after dose 1 (peak below the dashed line)\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 3: a flying fox scratch) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. A wildlife carer is scratched by",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: a flying fox scratch)",
+        "explain",
+        "board clears. Type badge hidden. The new `m7-flying-fox-v1.png` sits at the card's upper left (no person). The card writes on: \"A wildlife carer is scratched by a flying fox. Some Australian flying foxes carry Australian bat lyssavirus, a close relative of the rabies virus. Rabies vaccine and human rabies immunoglobulin (rabies antibodies) are used to prevent Australian bat lyssavirus infection and are highly effective in almost all cases. Infection is almost always fatal once symptoms start. Symptoms usually take weeks or months to appear. The scratch is washed thoroughly with soap and water. On the same day, she is given: an injection of rabies antibodies (immunoglobulin collected from human blood donors), into and around the wound; and the first dose of rabies vaccine. Further vaccine doses follow over the next two weeks.\" Demands: \"(a) Identify the type of immunity provided by each injection. (2 marks)\" \"(b) Explain why both injections are given. (3 marks)\". A two-row answer table (\"rabies antibodies\", \"rabies vaccine\") and one lined box. No table thumbnails, no curves. **Countdown 10 seconds**; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-types": [
+        "adjust",
+        "the card shrinks to a strip; type badge \"Type of immunity\".",
+        "Who made the antibodies?: Use the two questions from the last video.",
+        "artificial passive / artificial active",
+        "On the spoken cues: b09's `ImmunityTable` draws in the working area, empty, rows \"active\" and \"passive\", columns \"natural\" and \"artificial\" (grey tag \"b09\"). On \"Who made the antibodies?\" an arrow runs down the row headers (tag \"who made them?\"). On \"made by other people's immune systems\" \"collected from human blood",
+        "explain",
+        "the card shrinks to a strip; type badge \"Type of immunity\". b09's `ImmunityTable` draws in the working area, empty, rows \"active\" and \"passive\", columns \"natural\" and \"artificial\" (grey tag \"b09\"). On \"Who made the antibodies?\" an arrow runs down the row headers (tag \"who made them?\"). On \"made by other people's immune systems\" \"collected from human blood donors\" underlines amber; the passive-artificial quadrant fills \"rabies antibodies\" with a small coded vial outline from the card (text only, no person); answer row 1 fills \"artificial passive\". On \"her own B cells make antibodies and memory cells\" \"first dose of rabies vaccine\" underlines amber; the active-artificial quadrant fills \"rabies vaccine\" with `m7-vaccine-vial-syringe-v1.png` small; answer row 2 fills \"artificial active\". On \"medical treatment\" an arrow runs across the \"artificial\" column (tag \"how? medical: artificial\"); the two natural quadrants stay grey. On \"Natural would mean\" the two natural quadrants show grey text only, \"catching the infection\" and \"antibodies from the mother\" (b09's thumbnails not shown), then dim. The bank line \"Active: you do the work. Passive: you're handed the antibodies.\" writes small under the table. At most three bright text items. Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold 1 second"
+    ],
+    "q3-why-both": [
+        "new",
+        "a small coded two-curve sketch draws beside the table: x axis \"weeks after the scratch\" (0 to 8, no values on y).",
+        "Cover the gap, then build memory: Now why both.",
+        "takes a week or more / entering nerves near the wound / work straight away / fade over weeks / cover the gap / weeks or months to appear",
+        "On the spoken cues: On \"takes a week or more\" a teal curve (\"her own antibodies (vaccine)\") stays near the axis for the first week then rises and stays high (tag \"slow to start, lasting\"). On \"entering nerves near the wound\" a small grey gloss: \"virus spreads along nerves towards the brain\" (no anatomy drawn). On",
+        "explain",
+        "a small coded two-curve sketch draws beside the table: x axis \"weeks after the scratch\" (0 to 8, no values on y). On \"takes a week or more\" a teal curve (\"her own antibodies (vaccine)\") stays near the axis for the first week then rises and stays high (tag \"slow to start, lasting\"). On \"entering nerves near the wound\" a small grey gloss: \"virus spreads along nerves towards the brain\" (no anatomy drawn). On \"work straight away\" an amber curve (\"injected antibodies\") starts high at day 0 (tag \"immediate\"); on \"fade over weeks\" it falls towards the axis (tag \"fades; no memory\"; \"slow to start, lasting\" dims); \"into and around the wound\" underlines amber. On \"cover the gap\" the region where the amber curve is high and the teal curve is still low shades softly (tag \"the gap\"). On \"weeks or months to appear\" that phrase underlines amber in the strip. Answer box (b) fills \"own response to the vaccine takes a week or more; injected antibodies act immediately at the wound but fade with no memory; together they protect during the gap while the vaccine builds memory, possible because symptoms take weeks or months\". Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold 1 second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"the vaccine works straight away\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is saying the vaccine works straight away, so the antibody injection isn't needed.",
+        "the classic mistake / a primary response, and that takes time",
+        "On the spoken cues: On \"a primary response, and that takes time\" the teal curve's flat first week pulses (tag \"primary: a week or more\"). A second crossed chip, unspoken: \"the antibody injection protects her next year too\". Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"the vaccine works straight away\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"a primary response, and that takes time\" the teal curve's flat first week pulses (tag \"primary: a week or more\"). A second crossed chip, unspoken: \"the antibody injection protects her next year too\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "adjust",
+        "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a list of events → barrier, then block, alarm, eat, alert, then fit, go-ahead, clone, plasma cells, antibodies (Q1)\" with the complete strip thumbnail; \"an antibody graph → read the scale (log?), then: same antigen or new? (Q2)\" with the graph thumbnail; \"a case → who made the antibodies? natural or medical? (Q3)\" with the table thumbnail.",
+        "Decision board: So here's how to start each type.",
+        "Next",
+        "On the spoken cues: On \"Next\" a chip \"Next: how hygiene and quarantine interrupt spread\" slides in at the lower right with `m7-handwashing-sink-v1.png` small. Hold about 2 seconds.",
+        "explain",
+        "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a list of events → barrier, then block, alarm, eat, alert, then fit, go-ahead, clone, plasma cells, antibodies (Q1)\" with the complete strip thumbnail; \"an antibody graph → read the scale (log?), then: same antigen or new? (Q2)\" with the graph thumbnail; \"a case → who made the antibodies? natural or medical? (Q3)\" with the table thumbnail. On \"Next\" a chip \"Next: how hygiene and quarantine interrupt spread\" slides in at the lower right with `m7-handwashing-sink-v1.png` small. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B10_ROWS = {
+    "hook": [
+        "adjust",
+        "no people, no beds, no rooms. Two coded column labels write on, \"First Clinic (doctors and medical students)\" and \"Second Clinic (midwives)\", with the coded `ClinicBars` beneath (y axis \"mothers who died (%)\", 0 to 12, grey).",
+        "Hook (two clinics, one basin): In 1847, a Vienna hospital had two maternity clinics.",
+        "about one mother in ten / far fewer died / came straight from autopsies / wash their hands in a chlorine solution / deaths fell to about the midwives' level / nobody could see",
+        "On the spoken cues: On \"about one mother in ten\" the First Clinic bar grows to 11.4 (grey tag \"1846\"); on \"far fewer died\" the Second Clinic bar grows to 2.8. On \"came straight from autopsies\" a grey chip writes under the First Clinic label: \"doctors came from autopsies\". On \"wash their hands in a chlorine solution\"",
+        "explain",
+        "no people, no beds, no rooms. Two coded column labels write on, \"First Clinic (doctors and medical students)\" and \"Second Clinic (midwives)\", with the coded `ClinicBars` beneath (y axis \"mothers who died (%)\", 0 to 12, grey). On \"about one mother in ten\" the First Clinic bar grows to 11.4 (grey tag \"1846\"); on \"far fewer died\" the Second Clinic bar grows to 2.8. On \"came straight from autopsies\" a grey chip writes under the First Clinic label: \"doctors came from autopsies\". On \"wash their hands in a chlorine solution\" the new `m7-chlorinated-lime-basin-v1.png` slides in between the labels (grey tag \"chlorinated lime solution, from May 1847\"). On \"deaths fell to about the midwives' level\" a second pair of bars grows beside the first: First Clinic 1.27, Second Clinic 1.33 (grey tag \"1848\"); a bracket joins the two short bars (tag \"about level\"). Screen load: the clinic labels turn small grey once the bars have grown; \"doctors came from autopsies\" dims to grey when the basin lands; \"about level\" dims when \"germ theory not yet accepted\" writes. On \"nobody could see\" a grey tag: \"germ theory not yet accepted\". On the question the heading writes on: \"How can hygiene and quarantine interrupt spread?\" At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "which-link": [
+        "adjust",
+        "the bars shrink to a small thumbnail at the upper left.",
+        "The link each measure breaks: A pathogen has to leave one host, travel, and enter a next host it can infect.",
+        "a next host it can infect / Every control measure breaks a link / Hygiene cuts the travel link / Isolation and quarantine / vaccination",
+        "On the spoken cues: b03's route chain board draws across the centre: two host circles, \"infected host\" and \"new host\", and the three stations \"leave\", \"travel\", \"enter\" (grey tag \"b03\"). On \"a next host it can infect\" a fourth small station draws after \"enter\": \"can it be infected?\". On \"Every control measure breaks a",
+        "explain",
+        "the bars shrink to a small thumbnail at the upper left. b03's route chain board draws across the centre: two host circles, \"infected host\" and \"new host\", and the three stations \"leave\", \"travel\", \"enter\" (grey tag \"b03\"). On \"a next host it can infect\" a fourth small station draws after \"enter\": \"can it be infected?\". On \"Every control measure breaks a link\" the bank line writes small under the board (grey tag \"b03\"). On \"Hygiene cuts the travel link\" the \"travel\" station lights amber with a small `m7-handwashing-sink-v1.png` thumbnail; on \"Isolation and quarantine\" the \"leave\" station lights with `m8-hospital-bed-v1.png` small; on \"vaccination\" the last station lights with `m7-vaccine-vial-syringe-v1.png` small. Each earlier station dims as the next lights. The \"enter\" station stays grey and unlit (it belongs to b03's masks and later videos). At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "hands": [
+        "adjust",
+        "the board's \"travel\" lane enlarges.",
+        "Hands: In Vienna, the travel link was the doctors' hands.",
+        "Material from the autopsies carried bacteria / The chlorine solution killed them / soap and water do the job / Soap lifts oil / Alcohol hand rub kills many microbes / doesn't reliably kill norovirus or bacterial spores",
+        "On the spoken cues: On \"Material from the autopsies carried bacteria\" `m7-bacterium-rod-coccus-v1.png` appears small in the lane (grey tag \"bacteria, drawn far larger than real\"), and coded specks travel from the infected host circle along the lane (grey label \"on hands\"). On \"The chlorine solution killed them\" the",
+        "explain",
+        "the board's \"travel\" lane enlarges. On \"Material from the autopsies carried bacteria\" `m7-bacterium-rod-coccus-v1.png` appears small in the lane (grey tag \"bacteria, drawn far larger than real\"), and coded specks travel from the infected host circle along the lane (grey label \"on hands\"). On \"The chlorine solution killed them\" the basin thumbnail drops into the lane, the specks fade, and a `BreakMark` cuts the lane. On \"soap and water do the job\" `m7-handwashing-sink-v1.png` replaces the basin (tag \"today: soap and water\"). On \"Soap lifts oil\" a small coded close-up writes beside the sink: a skin-surface line with an oil film and specks; the film and specks lift off as small coded soap marks attach, then a coded water stream carries them away (gloss \"soap lifts; water rinses away\"; no hand drawn). On \"Alcohol hand rub kills many microbes\" a grey chip \"alcohol rub\" writes with a tick beside \"many bacteria and viruses\"; on \"doesn't reliably kill norovirus or bacterial spores\" two grey labels write under it, \"norovirus\" and \"bacterial spores\", each with a small grey cross through the tick (tag \"soap and water better here\"); a grey chip \"sanitiser always beats soap\" takes a grey scribble cross. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "environmental": [
+        "adjust",
+        "the \"travel\" lane splits into three small sub-lanes, each lighting on its cue: on \"Cleaning surfaces\" `m7-door-handle-v1.png` (tag \"surfaces\"); on \"cooking food properly\" `m7-raw-chicken-v1.png` (tag \"food\"); on \"treating drinking water\" `m7-broad-street-pump-nohandle-v1.png` small (tag \"water\", grey tag \"b03: Snow\"); on \"carrying sewage away\" a coded pipe line runs under the water sub-lane (grey label \"sewage carried away\").",
+        "Places: environmental management: Hygiene also works on places, not just hands.",
+        "environmental management",
+        "On the spoken cues: Each sub-lane takes a `BreakMark`. On \"environmental management\" a gloss writes: \"environmental management: changing places so pathogens can't reach new hosts\". On \"Treated water and sewers\" the water sub-lane's break mark and the sewage pipe hold steady while a small grey note writes \"works all",
+        "explain",
+        "the \"travel\" lane splits into three small sub-lanes, each lighting on its cue: on \"Cleaning surfaces\" `m7-door-handle-v1.png` (tag \"surfaces\"); on \"cooking food properly\" `m7-raw-chicken-v1.png` (tag \"food\"); on \"treating drinking water\" `m7-broad-street-pump-nohandle-v1.png` small (tag \"water\", grey tag \"b03: Snow\"); on \"carrying sewage away\" a coded pipe line runs under the water sub-lane (grey label \"sewage carried away\"). Each sub-lane takes a `BreakMark`. On \"environmental management\" a gloss writes: \"environmental management: changing places so pathogens can't reach new hosts\". On \"Treated water and sewers\" the water sub-lane's break mark and the sewage pipe hold steady while a small grey note writes \"works all the time\". Earlier tags dim. At most three bright text items. Hold one second.",
+        [
+            "lineage split",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "air-route": [
+        "adjust",
+        "the board returns whole.",
+        "A route hygiene can't break: But hygiene can't break every link.",
+        "spreads through the air / up to two hours / Washing your hands does little / keep people apart / make them immune",
+        "On the spoken cues: The new `m7-measles-virus-v1.png` appears at the left (grey tag \"measles virus, drawn far larger than real\"). On \"spreads through the air\" the \"travel\" lane fills with drifting coded dots leaving the infected host circle (grey label \"air\"). On \"up to two hours\" a small coded clock-free bar under",
+        "explain",
+        "the board returns whole. The new `m7-measles-virus-v1.png` appears at the left (grey tag \"measles virus, drawn far larger than real\"). On \"spreads through the air\" the \"travel\" lane fills with drifting coded dots leaving the infected host circle (grey label \"air\"). On \"up to two hours\" a small coded clock-free bar under the lane fills from 0 to 2 (grey label \"hours the virus can stay in a room's air\"; no clock icon), and the infected host circle fades out of the room outline while the dots stay. On \"Washing your hands does little\" the sink thumbnail slides into the lane floor; its `BreakMark` draws under the dots, which float above it (tag \"hygiene misses the air route\"); a grey chip \"hygiene stops every disease\" takes a grey scribble cross. On \"keep people apart\" the \"leave\" station lights amber; on \"make them immune\" the last station glows briefly grey (a preview, not lit until scene 9). At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "isolation": [
+        "adjust",
+        "`m8-hospital-bed-v1.png` takes the \"leave\" station (tag \"isolation\"); a coded room outline with a closed door line draws around it, and the drifting dots stop at the outline.",
+        "Isolation and its catch: Keeping infected people away from others is called isolation.",
+        "isolation",
+        "On the spoken cues: Gloss: \"isolation: separating people who are infected\". Below the board the coded `CaseTimeline` draws: a day strip \"days after infection\" 0 to 21; on \"until four days after the rash appears\" a rash marker lands at about day 14 and an amber bracket \"isolated\" runs from the rash to 4 days after it.",
+        "explain",
+        "`m8-hospital-bed-v1.png` takes the \"leave\" station (tag \"isolation\"); a coded room outline with a closed door line draws around it, and the drifting dots stop at the outline. Gloss: \"isolation: separating people who are infected\". Below the board the coded `CaseTimeline` draws: a day strip \"days after infection\" 0 to 21; on \"until four days after the rash appears\" a rash marker lands at about day 14 and an amber bracket \"isolated\" runs from the rash to 4 days after it. On \"infectious from about four days before the rash\" a red-orange bracket \"infectious\" draws from about day 10 to day 18, overlapping the isolation bracket only in its second half; the uncovered first part shades (tag \"spreads before anyone knows\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "quarantine": [
+        "adjust",
+        "on \"are traced\" three small abstract contact circles draw around the isolated case circle, with dotted lines back to it (tag \"contacts\"; gloss \"contact tracing: finding who was exposed\").",
+        "Contact tracing and quarantine: So the case's contacts, the people who shared the air, are traced.",
+        "contact tracing / quarantine / incubation period",
+        "On the spoken cues: On \"aren't immune\" one contact circle has a teal ring (immune, released) and two stay grey. On \"quarantine\" the existing `m7-quarantine-sign-v1.png` (blank yellow board) appears at the \"leave\" station with coded text \"quarantine\" set on its face, and a dashed `BreakMark` (dashed because these",
+        "explain",
+        "on \"are traced\" three small abstract contact circles draw around the isolated case circle, with dotted lines back to it (tag \"contacts\"; gloss \"contact tracing: finding who was exposed\"). On \"aren't immune\" one contact circle has a teal ring (immune, released) and two stay grey. On \"quarantine\" the existing `m7-quarantine-sign-v1.png` (blank yellow board) appears at the \"leave\" station with coded text \"quarantine\" set on its face, and a dashed `BreakMark` (dashed because these contacts may not be infected) cuts their lanes; gloss \"quarantine: separating people who were exposed but aren't sick\". On \"incubation period\" the timeline gains a grey bracket from day 0 to the first symptoms (about day 10) and on to the rash (tag \"incubation: infection to symptoms\"); on \"up to about eighteen days\" a dashed bracket \"quarantine\" spans day 0 to day 18 after last contact (grey tag \"NSW childcare and primary school: non-immune contacts exposed outside the facility stay away until 18 days after last contact\"; other settings, including health facilities, follow a public health unit assessment). On \"move into isolation\" one contact circle turns amber and slides inside the isolation room outline. At most three bright text items; the timeline's earlier brackets dim to grey; the contact tracing gloss dims when the quarantine gloss writes, and the incubation tag dims when the quarantine bracket lands. Hold one second.",
+        [
+            "ScribbleCircle",
+            "Enter slide",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "border": [
+        "adjust",
+        "the board shrinks to the left; a coded coastline line (a single ink line, labelled \"border\") draws down the right third.",
+        "Border quarantine: Quarantine works at borders too.",
+        "checks travellers, cargo / imported animals / in 2020",
+        "On the spoken cues: On \"checks travellers, cargo\" `m7-shipping-container-v1.png` sits at the line (tag \"cargo inspected\") and the new `m7-airport-biosecurity-bin-v1.png` beside it (tag \"airport biosecurity bin\"). On \"imported animals\" the quarantine sign thumbnail sits at the line with the grey label \"post-entry",
+        "explain",
+        "the board shrinks to the left; a coded coastline line (a single ink line, labelled \"border\") draws down the right third. On \"checks travellers, cargo\" `m7-shipping-container-v1.png` sits at the line (tag \"cargo inspected\") and the new `m7-airport-biosecurity-bin-v1.png` beside it (tag \"airport biosecurity bin\"). On \"imported animals\" the quarantine sign thumbnail sits at the line with the grey label \"post-entry quarantine\". On \"in 2020\" a small grey dated chip writes: \"2020: 14-day quarantine for returning travellers\"; a `BreakMark` cuts an arrow crossing the border line (tag \"slows entry\"). No people, no plane, no hotel. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "herd-immunity": [
+        "new",
+        "the board's last station \"can it be infected?\" enlarges into the coded `ContactNetwork`: about 40 small abstract host circles joined by thin contact lines.",
+        "Herd immunity: A vaccinated person usually has memory cells, so the pathogen can't use them.",
+        "herd immunity",
+        "On the spoken cues: On \"A vaccinated person usually has memory cells\" one circle takes a teal ring and the vaccine thumbnail (grey tag \"b09: memory cells\"). On \"when enough people are immune\" most circles take teal rings (about nine in ten; tag \"most immune\"). On \"meets too few people who can catch it\" one amber",
+        "explain",
+        "the board's last station \"can it be infected?\" enlarges into the coded `ContactNetwork`: about 40 small abstract host circles joined by thin contact lines. On \"A vaccinated person usually has memory cells\" one circle takes a teal ring and the vaccine thumbnail (grey tag \"b09: memory cells\"). On \"when enough people are immune\" most circles take teal rings (about nine in ten; tag \"most immune\"). On \"meets too few people who can catch it\" one amber circle appears; amber pulses run along its contact lines and stop at each teal circle; one grey circle turns amber, its pulses also stop, and the chain ends (tag \"chain dies out\"). On \"fewer than one new person on average\" a small counter writes \"new cases per case: below 1\". On \"herd immunity\" a gloss writes: \"herd immunity: enough people immune that chains die out\". On \"babies too young\" one small grey circle near the start, never reached, gains a grey label \"too young to vaccinate: protected by those around it\". At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "how-many": [
+        "new",
+        "the network resets to all grey.",
+        "How many must be immune?: The more contagious a disease is, the more people need to be immune.",
+        "one measles case can infect about fifteen people / more than fourteen in every fifteen / about ninety-three per cent / aim for ninety-five / local coverage matters / brought in by a traveller",
+        "On the spoken cues: On \"one measles case can infect about fifteen people\" one amber circle draws fifteen contact lines to fifteen grey circles (tag \"about 15 per case where no one is immune\"; grey gloss \"R₀ for measles: 12 to 18\"). On \"more than fourteen in every fifteen\" fourteen of the fifteen circles take teal",
+        "explain",
+        "the network resets to all grey. On \"one measles case can infect about fifteen people\" one amber circle draws fifteen contact lines to fifteen grey circles (tag \"about 15 per case where no one is immune\"; grey gloss \"R₀ for measles: 12 to 18\"). On \"more than fourteen in every fifteen\" fourteen of the fifteen circles take teal rings, one stays grey (tag \"14 of 15 immune: 1 left\"). On \"about ninety-three per cent\" a small working line writes \"14 ÷ 15 ≈ 93%\" with a grey extension gloss \"threshold = 1 − 1/R₀: 92 to 94% for measles\". On \"aim for ninety-five\" a coverage bar fills to 95 with a small grey band labelled \"some vaccinated people aren't protected\". On \"local coverage matters\" the network shows two clusters side by side: one mostly teal (tag \"school A: 96%\"), one mostly grey (tag \"school B: 80%\"); on \"brought in by a traveller\" an amber circle enters each cluster: in the first, pulses stop; in the second, amber spreads through the grey circles (tag \"outbreak where coverage is low\"). Earlier tags dim. At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "judge": [
+        "new",
+        "the coded `CriteriaTable` draws: rows \"hygiene and environmental management\", \"isolation and quarantine\", \"vaccination\"; columns \"which link?\", \"how fast?\", \"how long can it last?\", \"cost to people?\", headers writing one per cue.",
+        "Judge the measures: So how do you judge a measure?",
+        "Hygiene is cheap and lasting / mostly stops routes through hands / Isolation and quarantine work fast / only work if cases and contacts are found / Vaccination lasts / needs a vaccine and high coverage",
+        "On the spoken cues: On \"Hygiene is cheap and lasting\" row 1 fills \"travel\", \"ongoing\", \"lasting\", \"low\" with the sink thumbnail; on \"mostly stops routes through hands\" a small grey note \"not the air route\". On \"Isolation and quarantine work fast\" row 2 fills \"leave\", \"fast\", \"hard to keep up\", \"high\" with the hospital",
+        "explain",
+        "the coded `CriteriaTable` draws: rows \"hygiene and environmental management\", \"isolation and quarantine\", \"vaccination\"; columns \"which link?\", \"how fast?\", \"how long can it last?\", \"cost to people?\", headers writing one per cue. On \"Hygiene is cheap and lasting\" row 1 fills \"travel\", \"ongoing\", \"lasting\", \"low\" with the sink thumbnail; on \"mostly stops routes through hands\" a small grey note \"not the air route\". On \"Isolation and quarantine work fast\" row 2 fills \"leave\", \"fast\", \"hard to keep up\", \"high\" with the hospital bed thumbnail; on \"only work if cases and contacts are found\" one contact circle from scene 7 with no dotted line back to the case returns small beside the row (tag \"missed contact\"; row note \"misses contacts who aren't found\"). On \"Vaccination lasts\" row 3 fills \"next host\", \"takes weeks to build coverage\", \"lasting\", \"low to moderate\" with the vaccine thumbnail; on \"needs a vaccine and high coverage\" a grey note \"95% for measles\". Filled rows dim as the next fills. On \"several measures at once\" the three rows brighten together and three `BreakMark`s land on the board thumbnail at once (tag \"layers: each catches what another misses\"). At most three bright text items at once besides the table headers. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "one handwritten line writes on large: \"Isolate the infected. Quarantine the exposed.\" with the hospital bed and quarantine sign thumbnails under the two halves.",
+        "Memory: Two ideas to keep.",
+        "Isolate the infected, quarantine the exposed. / break enough links and the chain dies out.",
+        "On the spoken cues: On \"break enough links\" a second line writes: \"Herd immunity: break enough links and the chain dies out.\" with the network thumbnail's chain stopping at teal circles. Hold half a second.",
+        "explain",
+        "one handwritten line writes on large: \"Isolate the infected. Quarantine the exposed.\" with the hospital bed and quarantine sign thumbnails under the two halves. On \"break enough links\" a second line writes: \"Herd immunity: break enough links and the chain dies out.\" with the network thumbnail's chain stopping at teal circles. Hold half a second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (a quarantine plan)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. A new virus has",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a quarantine plan))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A newly identified virus spreads between people by close contact. Its incubation period is 5 to 14 days. Infected people can transmit the virus from 2 days before their symptoms start. A town's health plan states: 'Contacts of a case will be quarantined for 7 days after their last contact with the case. Anyone who develops symptoms will be isolated.'\" Demand: \"Evaluate this plan. (4 marks)\". One lined answer box. No timeline, no plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "only partly effective / Isolating people with symptoms is right / seven days is too short / as late as day fourteen / from day twelve / fourteen days",
+        "On the spoken cues: A small coded day strip (0 to 14) draws beneath it. On \"only partly effective\" a verdict chip \"partly effective\". On \"Isolating people with symptoms is right\" \"Anyone who develops symptoms will be isolated\" underlines teal and a row writes \"isolation: removes known sources\". On \"seven days is too",
+        "explain",
+        "the card shrinks to a strip. A small coded day strip (0 to 14) draws beneath it. On \"only partly effective\" a verdict chip \"partly effective\". On \"Isolating people with symptoms is right\" \"Anyone who develops symptoms will be isolated\" underlines teal and a row writes \"isolation: removes known sources\". On \"seven days is too short\" \"quarantined for 7 days\" underlines amber and a bracket \"released day 7\" draws; on \"as late as day fourteen\" \"5 to 14 days\" underlines amber and a symptom marker lands at day 14; on \"from day twelve\" \"from 2 days before their symptoms\" underlines amber and an infectious bracket draws from day 12 (tag \"spreads after release\"). On \"fourteen days\" a row writes \"quarantine should cover the 14-day incubation period\". On \"the classic mistake\" the chip \"quarantine is for people with symptoms\" writes on and takes a grey scribble cross, with the small grey reason \"quarantine: exposed, not yet sick\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (two towns)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. For disease Y, herd immunity needs about",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two towns))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Disease Y is an airborne viral disease. A vaccine is available. For disease Y, about 80% of a population must be immune for herd immunity. Town A: 92% of people immune. Town B: 70% of people immune. A visitor infectious with disease Y spends a day in each town.\" Demand: \"Explain why an outbreak of disease Y is more likely in town B than in town A, and why a baby who is too young to be vaccinated and has no antibodies against disease Y is protected in town A. (3 marks)\". One lined answer box. No network, no plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "below the eighty per cent needed / above eighty / before they reach the baby / the classic mistake / no memory cells or antibodies; protected by those around it",
+        "On the spoken cues: Two small coded networks draw beneath it, labelled \"town B\" and \"town A\". On \"below the eighty per cent needed\" \"Town B: 70%\" and \"about 80%\" underline amber; in the town B network amber spreads through the grey circles (row \"B: 70% < 80%: each case infects more than one; outbreak grows\"). On",
+        "explain",
+        "the card shrinks to a strip. Two small coded networks draw beneath it, labelled \"town B\" and \"town A\". On \"below the eighty per cent needed\" \"Town B: 70%\" and \"about 80%\" underline amber; in the town B network amber spreads through the grey circles (row \"B: 70% < 80%: each case infects more than one; outbreak grows\"). On \"above eighty\" \"Town A: 92%\" underlines teal; in the town A network the chain stops at teal circles (row \"A: 92% > 80%: fewer than one per case; chain dies out\"). On \"before they reach the baby\" a small grey circle in town A, never reached, gains the label \"baby\" (\"too young to be vaccinated\" and \"has no antibodies against disease Y\" underline). On \"the classic mistake\" the chip \"the baby is immune\" writes on and takes a grey scribble cross, with the small grey reason \"no memory cells or antibodies; protected by those around it\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the board returns small at the left with its four lit stations; three step chips write on, one per cue: \"name the route\", \"find the link\", \"judge: speed, how long, cost\".",
+        "Decision rule and handoff: So for any control question, name the route, find the link, and judge the measure on speed, how long it lasts, and cost.",
+        "So for any control question, name the route,",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: why antibiotics and antivirals work differently\" (small grey tag; `m7-bacterium-rod-coccus-v1.png` and `m7-virus-particle-v1.png` thumbnails beside it). Hold half a second before the notes.",
+        "explain",
+        "the board returns small at the left with its four lit stations; three step chips write on, one per cue: \"name the route\", \"find the link\", \"judge: speed, how long, cost\". A \"Next\" chip slides in at the lower right: \"Next: why antibiotics and antivirals work differently\" (small grey tag; `m7-bacterium-rod-coccus-v1.png` and `m7-virus-particle-v1.png` thumbnails beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B11_ROWS = {
+    "hook": [
+        "adjust",
+        "no people, no clinic. Centre: `m7-virus-particle-v1.png` (grey tag \"flu virus, drawn far larger than real\", the b01 convention: the plate stands for the group).",
+        "Hook (the flu puzzle): Every winter, people with the flu ask their doctor for antibiotics.",
+        "do nothing to the flu virus / shorten the illness by about a day / within two days of the first symptoms",
+        "On the spoken cues: Two copies of the new `m7-capsule-blister-blank-v1.png` sit below it, left and right, each with a coded chip on its foil: amber \"antibiotic\" on the left, teal \"antiviral: oseltamivir\" on the right. On \"do nothing to the flu virus\" a thin grey arrow runs from the left pack to the virus and takes a",
+        "explain",
+        "no people, no clinic. Centre: `m7-virus-particle-v1.png` (grey tag \"flu virus, drawn far larger than real\", the b01 convention: the plate stands for the group). Two copies of the new `m7-capsule-blister-blank-v1.png` sit below it, left and right, each with a coded chip on its foil: amber \"antibiotic\" on the left, teal \"antiviral: oseltamivir\" on the right. On \"do nothing to the flu virus\" a thin grey arrow runs from the left pack to the virus and takes a grey cross (tag \"no effect on the virus\"). On \"shorten the illness by about a day\" a teal arrow runs from the right pack and a small coded bar pair writes beside it: \"symptoms: about 1 day shorter on average\" (grey source tag \"trials, adults\"). On \"within two days of the first symptoms\" a coded day strip draws under the bar, days 0 to 7, with a teal bracket over days 0 to 2 (tag \"start within 2 days\"); the \"no effect\" tag dims. On the question the heading writes on: \"Why do antibiotics and antivirals work differently?\" At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "selective-toxicity": [
+        "adjust",
+        "the hook shrinks to a thumbnail at the upper left.",
+        "Hit what the pathogen has: You've seen the rule already.",
+        "selective toxicity",
+        "On the spoken cues: The drug-target bench draws: two labelled lanes, \"bacterium\" (top) and \"virus\" (bottom), with the virus lane still blank and grey. On \"You've seen the rule already\" b01's idea writes small in grey under the heading: \"find a difference between pathogen and host\" (grey tag \"b01\"). On \"selective",
+        "explain",
+        "the hook shrinks to a thumbnail at the upper left. The drug-target bench draws: two labelled lanes, \"bacterium\" (top) and \"virus\" (bottom), with the virus lane still blank and grey. On \"You've seen the rule already\" b01's idea writes small in grey under the heading: \"find a difference between pathogen and host\" (grey tag \"b01\"). On \"selective toxicity\" a gloss writes: \"selective toxicity: harms the pathogen much more than the host\". On \"or have in a different form\" a small grey tag writes under the gloss: \"a part we lack, or have in a different form\". On \"a whole cell\" `m6-bacterium-plasmid-v1.png` slides into the top lane (grey tag \"bacterium, drawn far larger than real\"); beside it, small and grey, the existing `b6a-animal-cell-v1.png` (tag \"one of your cells\"). On \"plenty of parts that differ\" four coded amber target rings blink on the bacterium (unlabelled yet). At most three bright text items. Hold one second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "antibiotic-targets": [
+        "adjust",
+        "the top lane enlarges.",
+        "Two antibiotic targets: Penicillin stops a bacterium building its cell wall, a tough mesh that stops the cell swelling and bursting.",
+        "Penicillin / its cell wall / a tough mesh / can't strengthen its wall / water rushes in by osmosis / Your cells have no wall",
+        "On the spoken cues: On \"Penicillin\" an amber chip \"penicillin\" slides in; on \"its cell wall\" the wall ring lights and the chip locks onto the wall (tick; tag \"target: wall-building enzymes\"; grey screen-only gloss \"peptidoglycan wall\"). On \"a tough mesh\" a coded close-up inset of a short wall section writes as a",
+        "explain",
+        "the top lane enlarges. On \"Penicillin\" an amber chip \"penicillin\" slides in; on \"its cell wall\" the wall ring lights and the chip locks onto the wall (tick; tag \"target: wall-building enzymes\"; grey screen-only gloss \"peptidoglycan wall\"). On \"a tough mesh\" a coded close-up inset of a short wall section writes as a cross-hatched mesh; on \"can't strengthen its wall\" two cross-links in the mesh fade, leaving gaps. On \"water rushes in by osmosis\" small coded blue arrows point inward through the wall (small grey tag \"osmosis: water moves into the cell\") and the bacterium crossfades to the new aligned `m7-bacterium-wall-burst-v1.png` (the same rod, burst open at one side, contents spilling; tag \"burst\"). On \"Your cells have no wall\" the grey animal cell thumbnail gains a small grey label \"no wall: nothing to hit\" and the burst and osmosis tags dim. On \"jam bacterial ribosomes\" the penicillin chip, the wall tag and the peptidoglycan gloss dim to grey, and the burst plate crossfades back to the intact `m6-bacterium-plasmid-v1.png` (a second bacterium, grey tag \"another bacterium\"); a second amber chip \"tetracycline\" slides in and locks onto the ribosome ring; `m5x-ribosome-v1.png` appears small beside it with the grey tag \"bacterial ribosome (70S); ours: 80S\"; on \"can't make proteins\" a short coded protein chain stops mid-build. In the hold after \"can't make proteins\" (reserve cut 1 applied in Revision 3, so these are silent) the tetracycline chip dims and two small grey chips write under the lane: \"kills bacteria (bactericidal)\" with a tiny burst glyph, \"stops them multiplying (bacteriostatic)\" with a tiny paused division glyph; then a small grey `m7-macrophage-v1.png` thumbnail (b06) slides beside the second chip. Screen-only, grey and small on the bacterium: \"DNA-copying enzymes\" and \"folate making\" rings with the tag \"other targets\". Earlier tags dim. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "no-target-in-virus": [
+        "adjust",
+        "the bottom lane lights.",
+        "Nothing to hit in a virus: Now look at a virus.",
+        "a virus / no wall and no ribosomes / Inside your cell / nothing in the virus to hit / bacteria living in your throat and gut / help resistant bacteria multiply",
+        "On the spoken cues: On \"a virus\" `m7-virus-particle-v1.png` slides in at the left of the lane (grey tag \"b01: genes in a protein coat\"); on \"no wall and no ribosomes\" the bacterium's two amber rings ghost down beside the virus as grey dashed rings with nothing inside them (tag \"no wall, no ribosomes\"). On \"Inside your",
+        "explain",
+        "the bottom lane lights. On \"a virus\" `m7-virus-particle-v1.png` slides in at the left of the lane (grey tag \"b01: genes in a protein coat\"); on \"no wall and no ribosomes\" the bacterium's two amber rings ghost down beside the virus as grey dashed rings with nothing inside them (tag \"no wall, no ribosomes\"). On \"Inside your cell\" b08's zoom box opens on `m7-airway-cell-v1.png`, which crossfades to the aligned `m7-airway-cell-infected-v1.png` (grey tag \"an airway cell making new viruses\"); one small arrow from the cell's own ribosome dots to a virus particle (tag \"the cell's ribosomes\"). On \"nothing in the virus to hit\" the amber \"penicillin\" and \"tetracycline\" chips slide down to the lane and each takes a grey cross (grey tag \"b01: not a cell means antibiotics are useless\"). On \"bacteria living in your throat and gut\" a small coded population of about 30 tinted bacterium glyphs writes at the lane's right (grey label \"your normal bacteria\"), two of them with resistance rings; on \"help resistant bacteria multiply\" the plain glyphs fade and the two ringed glyphs divide into eight (tag \"resistant ones left\", with a small grey tag under it \"they can later cause infections or share genes\"). A grey chip \"a stronger dose would work on a virus\" takes a grey scribble cross. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "Cam lens zoom",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "antiviral-steps": [
+        "adjust",
+        "the airway cell enlarges; the coded `VirusStepStrip` writes under it: \"enter\", \"copy\", \"build\", \"release\".",
+        "Antivirals block a step the virus needs: So how can any drug stop a virus?",
+        "a few tools of their own / neuraminidase / Oseltamivir blocks that enzyme / can't infect more cells / copying enzyme / copy",
+        "On the spoken cues: On \"a few tools of their own\" three small teal rings appear on the virus plate (tag \"the virus's own enzymes and proteins\"). On \"neuraminidase\" the \"release\" step lights and a gloss writes: \"neuraminidase: cuts new flu viruses free\"; on the infected cell's top surface the budding particles lift off",
+        "explain",
+        "the airway cell enlarges; the coded `VirusStepStrip` writes under it: \"enter\", \"copy\", \"build\", \"release\". On \"a few tools of their own\" three small teal rings appear on the virus plate (tag \"the virus's own enzymes and proteins\"). On \"neuraminidase\" the \"release\" step lights and a gloss writes: \"neuraminidase: cuts new flu viruses free\"; on the infected cell's top surface the budding particles lift off one by one and drift away (coded motion of small cut-outs of the plate's own particles). On \"Oseltamivir blocks that enzyme\" a teal chip \"oseltamivir\" slides onto the \"release\" step as a block; the cell crossfades to the new aligned `m7-airway-cell-release-blocked-v1.png` (the same infected cell with new particles clumped and stuck on its top surface), and on \"can't infect more cells\" a short grey arrow to a neighbouring cell outline takes a grey cross (tag \"release blocked\"). On \"copying enzyme\" a teal block lands on \"copy\" (grey tag \"for example aciclovir: herpes\"); on \"getting into a cell\" a teal block lands on \"enter\" (grey tag \"for example, HIV entry blockers\"). On \"viral enzymes like these\" the three teal blocks pulse together. On \"a part of your cell the virus needs\" a small grey ring lights on the airway cell's surface beside the \"enter\" block (grey tag \"some block a host receptor: for example maraviroc, HIV\"). The neuraminidase gloss dims as the second block lands. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "stop-new-viruses": [
+        "adjust",
+        "the blocked cell stays.",
+        "Stopping new viruses, not old ones: Antivirals don't destroy virus particles that already exist.",
+        "don't destroy virus particles that already exist / helps most early / Most antivirals are also narrow / several virus families / far fewer antivirals than antibiotics",
+        "On the spoken cues: On \"don't destroy virus particles that already exist\" the already-released particles from scene 5 stay drifting, untouched (tag \"existing viruses untouched\", with a small grey tag \"your immune system clears these\" and the grey `m7-macrophage-v1.png` thumbnail from scene 3); a grey chip \"antivirals",
+        "explain",
+        "the blocked cell stays. On \"don't destroy virus particles that already exist\" the already-released particles from scene 5 stay drifting, untouched (tag \"existing viruses untouched\", with a small grey tag \"your immune system clears these\" and the grey `m7-macrophage-v1.png` thumbnail from scene 3); a grey chip \"antivirals kill viruses like antibiotics kill bacteria\" writes on and takes a grey scribble cross. On \"helps most early\" the hook's day strip returns small with the grey label \"flu example\": at day 1 a coded field of four cells with one infected; at day 5 the field shows twenty cells, most infected (tag \"later: millions of cells infected\"); the teal bracket over days 0 to 2 relights. On \"Most antivirals are also narrow\" the oseltamivir chip gains a grey tag \"oseltamivir: flu only\"; on \"several virus families\" a small grey tag writes beside it: \"a few act more widely; evidence needed for each disease\". On \"far fewer antivirals than antibiotics\" two coded stacks of blank chips write side by side, a tall amber stack and a short teal stack (grey label \"rough comparison, not to scale\"). Earlier tags dim. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "resistance": [
+        "adjust",
+        "the bench shrinks to the left.",
+        "Resistance: selected, then shared: Both kinds of drug can stop working, and you've seen why.",
+        "stops the microbes it can / survive and multiply / selects resistance / pass resistance genes to each other / plasmids, small loops of DNA / even between different species",
+        "On the spoken cues: bio-m6-b01's coded population board returns (about 60 tinted bacterium glyphs, two with amber resistance rings; grey tag \"Module 6: mutation\") with its `DayStrip` \"day 0\" to \"day 3\". On \"stops the microbes it can\" the unringed glyphs fade to grey outlines and fall away; on \"survive and multiply\"",
+        "explain",
+        "the bench shrinks to the left. bio-m6-b01's coded population board returns (about 60 tinted bacterium glyphs, two with amber resistance rings; grey tag \"Module 6: mutation\") with its `DayStrip` \"day 0\" to \"day 3\". On \"stops the microbes it can\" the unringed glyphs fade to grey outlines and fall away; on \"survive and multiply\" the two ringed glyphs divide to fill the board (tag \"resistant ones multiply\"). On \"selects resistance\" a short line writes: \"selects, doesn't create\" (grey tag \"Module 6\"). On \"pass resistance genes to each other\" the new `m7-bacteria-conjugation-v1.png` slides in at the right (two rods of different shape joined by a thin bridge, a plasmid copy passing across); on \"plasmids, small loops of DNA\" the plasmid ring pulses teal (gloss \"plasmid: small loop of DNA\"; grey screen-only tag \"horizontal gene transfer\"); on \"even between different species\" the two rods' grey labels write: \"species A\", \"species B\". On \"never the person\" a grey chip \"my body is resistant\" takes a grey scribble cross (small grey reason \"the bacteria are\"). Screen-only, small and grey at the lower right, writing on only after \"never the person\" so it does not split attention during the plasmid beat, for the curious: \"how resistance works: an enzyme breaks the drug, the target changes shape, a pump pushes the drug out\". At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "combination": [
+        "new",
+        "the coded `ThreeLock` diagram: one abstract virus glyph (a circle with a red fringe, no species plate; grey tag \"HIV\") above the step strip.",
+        "Three drugs at once: HIV copies itself billions of times a day, with frequent copying errors, so resistant variants keep appearing.",
+        "billions of times a day / frequent copying errors / one drug at a time / copy / combined three drugs / build",
+        "On the spoken cues: On \"billions of times a day\" a small counter writes \"new copies a day: billions\"; on \"frequent copying errors\" a few glyphs flicker amber (tag \"variants\"). On \"one drug at a time\" one teal lock lands on \"copy\"; one amber variant passes the lock and multiplies (tag \"one drug: resistance selected\").",
+        "explain",
+        "the coded `ThreeLock` diagram: one abstract virus glyph (a circle with a red fringe, no species plate; grey tag \"HIV\") above the step strip. On \"billions of times a day\" a small counter writes \"new copies a day: billions\"; on \"frequent copying errors\" a few glyphs flicker amber (tag \"variants\"). On \"one drug at a time\" one teal lock lands on \"copy\"; one amber variant passes the lock and multiplies (tag \"one drug: resistance selected\"). On \"combined three drugs\" the board resets and three teal locks land: two on \"copy\" and one on \"build\" (tag \"from 1996: two copy blockers + one build blocker\"); \"enter\" stays unlit. Each lock is still a separate drug, so the walk-through below is unchanged. On \"resistance to all three at once\" a variant glyph meets the first lock (passes), the second (passes), the third (stops), and a grey working line writes \"all three at once: very unlikely\". In the hold after \"very unlikely\" (reserve cut 2 applied in Revision 3) a small grey tag: \"controlled, not cured\". At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "use-well": [
+        "new",
+        "four coded rule chips write on in a column, one per cue, each with a small grey glyph (no people, no animals drawn): \"not for viral infections\" (virus thumbnail with a grey cross through an amber chip); \"not routinely for healthy farm animals\" (a coded barn outline, lines only); \"exactly as prescribed; no sharing leftovers\" (the blister pack thumbnail with one coded capsule outline crossed from a second pack); \"reserve antibiotics for when nothing else works\" (a coded locked box outline with an amber chip inside; grey screen-only tag \"stewardship: using antibiotics only when needed\").",
+        "Using drugs well: So resistance spreads fastest where drugs are used the most.",
+        "So resistance spreads fastest where drugs are used",
+        "On the spoken cues: Each chip dims as the next writes. At most three bright text items. Hold one second.",
+        "explain",
+        "four coded rule chips write on in a column, one per cue, each with a small grey glyph (no people, no animals drawn): \"not for viral infections\" (virus thumbnail with a grey cross through an amber chip); \"not routinely for healthy farm animals\" (a coded barn outline, lines only); \"exactly as prescribed; no sharing leftovers\" (the blister pack thumbnail with one coded capsule outline crossed from a second pack); \"reserve antibiotics for when nothing else works\" (a coded locked box outline with an amber chip inside; grey screen-only tag \"stewardship: using antibiotics only when needed\"). Each chip dims as the next writes. At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "assess": [
+        "new",
+        "the coded `AssessTable` draws: columns \"antibiotics\" (amber) and \"antivirals\" (teal), rows \"how safely?\", \"how many infections?\", \"how long do they keep working?\", headers writing one per cue.",
+        "How effective are they?: So how effective are these drugs?",
+        "parts our cells lack or make differently / fits the flu enzyme / cure most bacterial infections / Antivirals are narrower / every use selects resistant microbes / In 2021",
+        "On the spoken cues: On \"parts our cells lack or make differently\" the antibiotic \"how safely?\" cell fills \"wall: we have none; ribosomes: ours differ\", with the bacterium thumbnail; on \"fits the flu enzyme\" the antiviral \"how safely?\" cell fills \"oseltamivir: fits flu neuraminidase, not ours\", with the blocked airway",
+        "explain",
+        "the coded `AssessTable` draws: columns \"antibiotics\" (amber) and \"antivirals\" (teal), rows \"how safely?\", \"how many infections?\", \"how long do they keep working?\", headers writing one per cue. On \"parts our cells lack or make differently\" the antibiotic \"how safely?\" cell fills \"wall: we have none; ribosomes: ours differ\", with the bacterium thumbnail; on \"fits the flu enzyme\" the antiviral \"how safely?\" cell fills \"oseltamivir: fits flu neuraminidase, not ours\", with the blocked airway cell thumbnail. On \"cure most bacterial infections\" the antibiotic breadth cell fills \"most bacterial infections\". On \"Antivirals are narrower\" the antiviral breadth cell fills \"mostly narrow; HIV: controlled for decades\". On \"every use selects resistant microbes\" the third row fills across both columns: \"every use selects resistance: lasts only with careful use\", with \"combinations slow resistance (HIV)\" small in the antiviral cell. On \"In 2021\" a small dated chip writes beside the table: \"2021: about 1.14 million deaths directly caused by resistant bacteria\" (grey source tag \"GRAM study, Lancet 2024\"; grey label \"size of the problem in one year\"). On \"only on the right pathogen\" a verdict chip writes across both columns: \"effective on the right pathogen, used carefully\". Filled rows dim as the next fills. At most three bright text items at once besides the table headers. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "one handwritten line writes on large: \"Antivirals block a step the virus needs.\" with the step strip thumbnail and its teal blocks beneath.",
+        "Memory: Two ideas to keep.",
+        "Antivirals block a step the virus needs. / the drug selects resistance; it doesn't create it.",
+        "On the spoken cues: On \"the drug selects resistance\" a second line writes: \"The drug selects resistance; it doesn't create it.\" with the population board thumbnail (ringed glyphs filling the board). Hold half a second.",
+        "explain",
+        "one handwritten line writes on large: \"Antivirals block a step the virus needs.\" with the step strip thumbnail and its teal blocks beneath. On \"the drug selects resistance\" a second line writes: \"The drug selects resistance; it doesn't create it.\" with the population board thumbnail (ringed glyphs filling the board). Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (drug K)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. Virus V copies its",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (drug K))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Virus V is an RNA virus. It copies its RNA genome using its own enzyme, V polymerase. Human cells have no enzyme like V polymerase, so drug K does not bind to any human enzyme. Drug K binds to V polymerase and blocks it. A patient infected with virus V asks to be given penicillin instead of drug K.\" Demand: \"Explain why drug K, but not penicillin, can treat this infection, and why drug K is most effective when taken soon after symptoms begin. (3 marks)\". One lined answer box. No plates and nothing answer-bearing. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "an enzyme only the virus uses / a virus has no wall / works best early / the classic mistake / there is no target to resist",
+        "On the spoken cues: A three-row `AnsTable` fills one row per cue: on \"an enzyme only the virus uses\" \"its own enzyme, V polymerase\" and \"Human cells have no enzyme like V polymerase\" underline teal and the row \"K: blocks a virus-only enzyme; host cells unharmed\" fills; on \"a virus has no wall\" \"penicillin\" underlines",
+        "explain",
+        "the card shrinks to a strip. A three-row `AnsTable` fills one row per cue: on \"an enzyme only the virus uses\" \"its own enzyme, V polymerase\" and \"Human cells have no enzyme like V polymerase\" underline teal and the row \"K: blocks a virus-only enzyme; host cells unharmed\" fills; on \"a virus has no wall\" \"penicillin\" underlines amber and the row \"penicillin: targets wall building; a virus has no wall\" fills with a small grey cross; on \"works best early\" \"soon after symptoms begin\" underlines teal and the row \"early: K stops new copies, doesn't destroy existing viruses\" fills. Earlier rows dim. On \"the classic mistake\" the chip \"the virus is resistant to penicillin\" writes on and takes a grey scribble cross, with the small grey reason \"there is no target to resist\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (one drug or three)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. In an untreated patient, virus W makes",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (one drug or three))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"In an untreated patient, virus W produces about 10 000 000 000 (10¹⁰) new virus particles each day. About 1 in every 100 000 new particles (a probability of 10⁻⁵) carries resistance to drug A. The same is true for drug B and for drug C. Resistance to each drug arises independently, and each drug blocks a different step in the virus's replication.\" Demand: \"Explain why treatment with drugs A, B and C together is more effective than treatment with drug A alone. (3 marks)\". One lined answer box. No plates, no locks. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "about a hundred thousand / resistance to A, B and C at once / fewer than one a century / the classic mistake / variants arise by chance; the drug selects",
+        "On the spoken cues: Two working rows write beneath it. On \"about a hundred thousand\" \"10¹⁰\" and \"1 in every 100 000\" underline amber and row 1 writes \"A alone: 10¹⁰ ÷ 10⁵ = 10⁵ resistant particles a day: selected, so A fails\". On \"resistance to A, B and C at once\" \"arises independently\" underlines teal and row 2",
+        "explain",
+        "the card shrinks to a strip. Two working rows write beneath it. On \"about a hundred thousand\" \"10¹⁰\" and \"1 in every 100 000\" underline amber and row 1 writes \"A alone: 10¹⁰ ÷ 10⁵ = 10⁵ resistant particles a day: selected, so A fails\". On \"resistance to A, B and C at once\" \"arises independently\" underlines teal and row 2 writes \"A, B and C: 10⁻⁵ × 10⁻⁵ × 10⁻⁵ = 10⁻¹⁵ per particle; 10¹⁰ × 10⁻¹⁵ = 10⁻⁵ a day\"; on \"fewer than one a century\" a small grey working line: \"1 every 100 000 days (about 270 years)\". Row 1 dims as row 2 writes. On \"the classic mistake\" the chip \"the drugs make the virus mutate\" writes on and takes a grey scribble cross, with the small grey reason \"variants arise by chance; the drug selects\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the bench returns small at the left with both lanes lit; three step chips write on, one per cue: \"why does it harm the pathogen more than us?\", \"which step does it block?\", \"how could resistance be selected?\".",
+        "Decision rule and handoff: So for any drug question, ask why the drug harms the pathogen more than our cells, which step it blocks, and how resistance could be selected.",
+        "So for any drug question, ask why the",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: testing antimicrobials on agar\" (small grey tag; `m7-agar-antibiotic-before-v1.png` thumbnail beside it). Hold half a second before the notes.",
+        "explain",
+        "the bench returns small at the left with both lanes lit; three step chips write on, one per cue: \"why does it harm the pathogen more than us?\", \"which step does it block?\", \"how could resistance be selected?\". A \"Next\" chip slides in at the lower right: \"Next: testing antimicrobials on agar\" (small grey tag; `m7-agar-antibiotic-before-v1.png` thumbnail beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B12_ROWS = {
+    "hook": [
+        "adjust",
+        "no people, no planes. Left half: the new `m7-insecticide-sprayer-v1.png` (grey tag \"1950s: DDT spraying\") beside `m5x-anopheles-mosquito-v1.png` (grey tag \"*Anopheles*: malaria\").",
+        "Hook (spray them, or add more): In the 1950s, the world sprayed DDT to wipe out malaria, and within years, many mosquitoes could survive it.",
+        "many mosquitoes could survive it / In 2014, Townsville / released more mosquitoes / local dengue stayed rare",
+        "On the spoken cues: On \"many mosquitoes could survive it\" a coded `PopulationRow` of ten *Anopheles* glyph outlines writes under them: eight fade, two with amber rings survive and multiply to fill the row (tag \"survivors breed\"). Right half: on \"In 2014, Townsville\" the DDT half dims to a grey thumbnail and a coded",
+        "explain",
+        "no people, no planes. Left half: the new `m7-insecticide-sprayer-v1.png` (grey tag \"1950s: DDT spraying\") beside `m5x-anopheles-mosquito-v1.png` (grey tag \"*Anopheles*: malaria\"). On \"many mosquitoes could survive it\" a coded `PopulationRow` of ten *Anopheles* glyph outlines writes under them: eight fade, two with amber rings survive and multiply to fill the row (tag \"survivors breed\"). Right half: on \"In 2014, Townsville\" the DDT half dims to a grey thumbnail and a coded north Queensland coastline outline draws with one dot labelled \"Townsville, 2014\"; on \"released more mosquitoes\" `m6-aedes-mosquito-v1.png` appears beside it and a coded row of *Aedes* glyph outlines writes, each gaining a small teal dot (tag \"carrying a bacterium\"). On \"local dengue stayed rare\" the \"carrying a bacterium\" tag dims and a grey dated tag writes under the row: \"local dengue rare for about ten years; 16 local cases in 2024 to 2025\" (grey source tags \"O'Neill et al., 2018 to 2019\"; \"Thompson et al., 2026\"). On the question the heading writes on: \"How can vector control reduce infection?\" At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "three-ways": [
+        "adjust",
+        "the hook shrinks to a thumbnail at the upper left.",
+        "Three ways to cut the link: A vector is a living carrier that takes a pathogen between hosts.",
+        "Aedes aegypti / bites an infected person / survives while the virus multiplies / bites someone else / three ways",
+        "On the spoken cues: b03's route board draws small across the top: two host circles, \"infected host\" and \"new host\", with the \"travel\" lane carrying `m6-aedes-mosquito-v1.png` (grey tag \"b03: vector, a living carrier\"; grey screen tag \"every control measure breaks a link\"). On \"Aedes aegypti\" a grey tag \"dengue: a",
+        "explain",
+        "the hook shrinks to a thumbnail at the upper left. b03's route board draws small across the top: two host circles, \"infected host\" and \"new host\", with the \"travel\" lane carrying `m6-aedes-mosquito-v1.png` (grey tag \"b03: vector, a living carrier\"; grey screen tag \"every control measure breaks a link\"). On \"Aedes aegypti\" a grey tag \"dengue: a virus, carried by *Aedes aegypti* (north Queensland)\" writes under the mosquito. On \"bites an infected person\" an amber arrow runs from the infected host circle to the mosquito; on \"survives while the virus multiplies\" a small coded day bar under the mosquito fills (grey label \"about 8 to 12 days inside the mosquito\"); on \"bites someone else\" an amber arrow runs on to the new host circle. On \"three ways\" three chips write on below, one per cue: \"fewer mosquitoes\" (the mosquito thumbnail with a thinning row of glyphs), \"fewer bites\" (the arrow to the new host dashes), \"mosquitoes that rarely pass the virus on\" (the mosquito gains a small teal dot and the amber arrow greys). At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "life-cycle": [
+        "adjust",
+        "the coded `LifeCycleWheel` draws large at the centre: four stations round a circle with arrows.",
+        "The life cycle in a bucket: Start with the life cycle.",
+        "lays her eggs on the inside wall / an old tyre / When rain floods them / becomes a pupa / about a week after hatching / an adult flies off",
+        "On the spoken cues: On \"lays her eggs on the inside wall\" station 1 fills with the new `m7-aedes-container-dry-v1.png` (a cut-away bucket with a band of tiny dark eggs on its inner wall above a shallow puddle; tag \"eggs above the waterline\"); on \"an old tyre\" two small grey chips write beside it, \"plant saucer\", \"old",
+        "explain",
+        "the coded `LifeCycleWheel` draws large at the centre: four stations round a circle with arrows. On \"lays her eggs on the inside wall\" station 1 fills with the new `m7-aedes-container-dry-v1.png` (a cut-away bucket with a band of tiny dark eggs on its inner wall above a shallow puddle; tag \"eggs above the waterline\"); on \"an old tyre\" two small grey chips write beside it, \"plant saucer\", \"old tyre\" (no plates), and a small grey tag \"eggs survive months dry\" writes under the dry bucket (the spoken sentence was cut in Revision 2; the tag carries it). On \"When rain floods them\" coded rain lines fall and the bucket crossfades to the aligned `m7-aedes-container-flooded-v1.png` (the same bucket filled, the egg band under water, larvae and pupae in the water); station 2 \"larvae in water\" lights, with the new `m7-aedes-larva-pupa-v1.png` beside it as a close-up (tag \"larva: a wriggler\"); on \"becomes a pupa\" the pupa in the close-up rings (station 3 \"pupae\"; gloss \"pupa: the resting stage before the adult\"). On \"about a week after hatching\" a coded strip \"about 7 to 10 days, egg to adult (warm weather)\" writes along the arrows. On \"an adult flies off\" station 4 fills with `m6-aedes-mosquito-v1.png`; on \"Only females bite\" a grey tag \"only females bite: blood to make eggs\". Earlier tags dim. At most three bright text items. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "remove-water": [
+        "new",
+        "the wheel shrinks to the left third.",
+        "Take away the water: So the simplest control is to take away the water.",
+        "environmental management",
+        "On the spoken cues: On \"take away the water\" the flooded bucket returns large and rotates to tip (coded water pours out; the plate rotates, never squashes) and then sits upright as the dry bucket again (tag \"tipped out\"). On \"Public health campaigns\" three chips write, one per cue: \"tip out containers\", \"screen",
+        "explain",
+        "the wheel shrinks to the left third. On \"take away the water\" the flooded bucket returns large and rotates to tip (coded water pours out; the plate rotates, never squashes) and then sits upright as the dry bucket again (tag \"tipped out\"). On \"Public health campaigns\" three chips write, one per cue: \"tip out containers\", \"screen rainwater tanks\", \"clear blocked gutters\" (grey screen tag \"Queensland: tip, toss and cover\"). On \"the eggs don't hatch\" a `BreakMark` lands on the wheel between \"eggs\" and \"larvae\" and the larvae station dims (tag \"no water: no larvae\"). On \"environmental management\" a gloss writes: \"environmental management: changing places so a vector can't breed\" (grey tag \"b10: changing places\"). On \"cheap and uses no chemicals\" a small grey note \"no chemicals, low cost\"; on \"nearly every household\" a coded street of twelve container outlines writes: eleven tip, one stays full and its egg band hatches into larvae (tag \"one missed container keeps breeding\"). The campaign chips dim as the gloss writes. At most three bright text items. Hold one second.",
+        [
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "pesticides": [
+        "adjust",
+        "the wheel returns.",
+        "Pesticides, and who bites when: Where water can't be emptied, a pesticide, a chemical that kills pests, can kill the larvae, and adults can be sprayed too.",
+        "pesticide",
+        "On the spoken cues: On \"can kill the larvae\" coded pellet drops fall into the flooded bucket thumbnail and a `BreakMark` lands at \"larvae\" (gloss \"pesticide: a chemical that kills pests\"; grey screen tag \"larvicide\"). On \"adults can be sprayed\" the sprayer plate appears small at the \"adult\" station with a `BreakMark`",
+        "explain",
+        "the wheel returns. On \"can kill the larvae\" coded pellet drops fall into the flooded bucket thumbnail and a `BreakMark` lands at \"larvae\" (gloss \"pesticide: a chemical that kills pests\"; grey screen tag \"larvicide\"). On \"adults can be sprayed\" the sprayer plate appears small at the \"adult\" station with a `BreakMark` (grey screen tag \"adulticide\"). On \"attack insect nerves\" a small coded nerve line with pulses that freeze (grey tag \"DDT, pyrethroids: insect nerves keep firing\"). On \"the vector's habits\" the larvicide and adulticide tags and the nerve line dim, and a split writes below the wheel: left \"*Anopheles*: bites mostly at night\" with `m5x-anopheles-mosquito-v1.png` and a small coded moon arc; right \"*Aedes*: bites by day\" with `m6-aedes-mosquito-v1.png` and a small coded sun arc (small grey tags \"malaria: *Plasmodium*\" and \"dengue: a virus\"). On \"bed nets\" `m7-bed-net-v1.png` (an empty bed under a net, no person) lands under the left side with a `BreakMark` on its bite arrow (tag \"treated net: night bites blocked\"). On \"spray the dark indoor corners\" the bed net tag dims and the right side shows a coded room corner outline with shaded under-furniture spots where the sprayer's coded mist lands (tag \"indoor spraying where *Aedes* rests\"; grey tags \"dengue outbreaks\" and \"indoor spraying is used against *Anopheles* too\"). The pesticide gloss dims when the split writes. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "lineage split",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "resistance-harm": [
+        "adjust",
+        "the coded `SurvivalBars` write: three generations, each a row of twenty mosquito glyph outlines under \"spray\": generation 1, two survive (amber rings); generation 2, six; generation 3, fifteen (tag \"each generation: more survive\"; grey tag \"b11: the drug selects resistance\").",
+        "Resistance, and what else sprays hit: But insecticides select resistance, like antibiotics.",
+        "1969 / now widespread / kill other insects / builds up along food chains / thinning the eggshells",
+        "On the spoken cues: On \"1969\" a small dated chip: \"1969: global malaria eradication goal abandoned; resistance one reason\". On \"now widespread\" a grey tag \"today: pyrethroid resistance widespread in *Anopheles*\". On \"kill other insects\" `b2b-bee-flying-v1.png` appears small with a grey cross (tag \"other insects killed",
+        "explain",
+        "the coded `SurvivalBars` write: three generations, each a row of twenty mosquito glyph outlines under \"spray\": generation 1, two survive (amber rings); generation 2, six; generation 3, fifteen (tag \"each generation: more survive\"; grey tag \"b11: the drug selects resistance\"). On \"1969\" a small dated chip: \"1969: global malaria eradication goal abandoned; resistance one reason\". On \"now widespread\" a grey tag \"today: pyrethroid resistance widespread in *Anopheles*\". On \"kill other insects\" `b2b-bee-flying-v1.png` appears small with a grey cross (tag \"other insects killed too\"). On \"builds up along food chains\" a coded four-step food chain line writes (water insects, small fish, larger fish, bird of prey) with the dose dots getting denser at each step (grey screen tag \"bioaccumulation: stored in fat, not broken down, so it concentrates up the chain\"); on \"thinning the eggshells\" the new aligned pair `m7-falcon-egg-normal-v1.png` crossfades to `m7-falcon-egg-thin-v1.png` (tag \"thin, cracked shell\"). The survival bars dim as the food chain writes. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "sterile-males": [
+        "adjust",
+        "the wheel returns at the left.",
+        "Sterile males: In the sterile insect technique, huge numbers of males are reared, sterilised with radiation, and released.",
+        "sterile insect technique",
+        "On the spoken cues: On \"huge numbers of males\" `m6-mosquito-cage-v1.png` appears at the right (tag \"reared males\"); on \"sterilised with radiation\" a small coded radiation trefoil outline (line only) pulses beside the cage and the male glyphs gain grey outlines (tag \"sterile males\"). On \"released\" coded male glyphs",
+        "explain",
+        "the wheel returns at the left. On \"huge numbers of males\" `m6-mosquito-cage-v1.png` appears at the right (tag \"reared males\"); on \"sterilised with radiation\" a small coded radiation trefoil outline (line only) pulses beside the cage and the male glyphs gain grey outlines (tag \"sterile males\"). On \"released\" coded male glyphs stream from the cage to the wheel. On \"lay eggs that don't hatch\" an `EggHatchRow` of ten egg glyphs writes at the \"eggs\" station: eight stay dark and unhatched (from females mated by sterile males), two hatch (tag \"most eggs don't hatch\"); a `BreakMark` lands at \"eggs\". The `PopulationRow` under the wheel thins over three steps (tag \"fewer each generation\"). On \"don't bite\" a grey tag \"males don't bite\"; on \"only affect their own species\" a grey tag \"species-specific\". On \"releases must continue\" the release stream stops and the population row refills over three steps (tag \"stop releasing: it bounces back\"). At most three bright text items. Hold one second.",
+        [
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "engineered-males": [
+        "adjust",
+        "on \"Genetic engineering\" a coded slim chromosome pair (bio-m6-b11's `ChromoPair` style) appears beside `m6-aedes-mosquito-v1.png` with a short amber band (tag \"an inserted gene\"; grey tag \"Module 6: recombinant DNA\").",
+        "Engineered males, and gene drives: Genetic engineering does a similar job with a gene.",
+        "Genetic engineering",
+        "On the spoken cues: On \"kills their female offspring\" an `OffspringRow` of eight glyphs writes: four male glyphs stay, four female glyphs fade before the \"adult\" station (tag \"daughters die before adulthood\"); a `BreakMark` lands on the wheel between \"pupae\" and \"adult\" for females only (grey screen tag \"self-limiting",
+        "explain",
+        "on \"Genetic engineering\" a coded slim chromosome pair (bio-m6-b11's `ChromoPair` style) appears beside `m6-aedes-mosquito-v1.png` with a short amber band (tag \"an inserted gene\"; grey tag \"Module 6: recombinant DNA\"). On \"kills their female offspring\" an `OffspringRow` of eight glyphs writes: four male glyphs stay, four female glyphs fade before the \"adult\" station (tag \"daughters die before adulthood\"); a `BreakMark` lands on the wheel between \"pupae\" and \"adult\" for females only (grey screen tag \"self-limiting males\"). On \"Again, releases must keep going\" a small grey loop arrow \"repeat releases\" writes. On \"gene drives\" a small thumbnail of bio-m6-b11's drive panel slides in (grey tag \"Module 6: gene drive\"), its offspring row filling almost all amber. On \"hard to reverse\" a grey tag \"spreads by itself; hard to recall\"; on \"none has been released yet\" a grey dated tag \"no wild release (checked October 2026)\". At most three bright text items. Hold one second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "wolbachia": [
+        "adjust",
+        "on \"Wolbachia\" the new `m7-wolbachia-cell-v1.png` appears large (grey tag \"Wolbachia inside a mosquito cell, drawn far larger than real\"); gloss \"Wolbachia: a bacterium living naturally in many insects\".",
+        "Wolbachia: Townsville's bacterium is Wolbachia.",
+        "Wolbachia",
+        "On the spoken cues: On \"isn't genetic engineering\" a grey chip \"Wolbachia is genetic engineering\" takes a grey scribble cross (small grey reason \"no gene inserted\"). On \"much harder for dengue to multiply\" the cell shrinks and `m6-aedes-mosquito-v1.png` takes a teal dot; on the wheel the bite arrow from \"adult female",
+        "explain",
+        "on \"Wolbachia\" the new `m7-wolbachia-cell-v1.png` appears large (grey tag \"Wolbachia inside a mosquito cell, drawn far larger than real\"); gloss \"Wolbachia: a bacterium living naturally in many insects\". On \"isn't genetic engineering\" a grey chip \"Wolbachia is genetic engineering\" takes a grey scribble cross (small grey reason \"no gene inserted\"). On \"much harder for dengue to multiply\" the cell shrinks and `m6-aedes-mosquito-v1.png` takes a teal dot; on the wheel the bite arrow from \"adult female bites\" greys and a teal `BreakMark` lands on the virus, not the mosquito (tag \"mosquito lives; virus blocked\"). On \"spreads by itself\" a coded two-row cross diagram frame writes beneath, two pairings only. On \"nearly all their eggs\" row 1 fills: \"infected female (teal dot) × any male\" with an `EggHatchRow` of eggs all hatching, each egg with a teal dot (tag \"passed through eggs\"); on \"whichever male they mate with\" row 1's \"any male\" label pulses. On \"uninfected female mates with an infected male\" row 2 fills: \"uninfected female × infected male\" with eggs staying dark (tag \"eggs don't hatch\"; grey screen tag \"cytoplasmic incompatibility\"). On \"out-breed the rest\" the `PopulationRow` under the wheel turns teal glyph by glyph to about nine in ten (tag \"Wolbachia spreads\"); on \"releases can stop\" the release arrow fades while the row stays teal (tag \"keeps going without releases\"). The cell gloss dims when the cross rows write. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "judge": [
+        "new",
+        "b10's coded `CriteriaTable` draws: rows \"remove water\", \"insecticides\", \"sterile or engineered males\", \"Wolbachia\"; columns \"cuts transmission?\", \"how long?\", \"cost?\", \"harms what else?\", headers writing one per cue.",
+        "Judge the methods: So how do you judge these methods?",
+        "Removing water / Insecticides act fast / Sterile or engineered males / Wolbachia / combine methods",
+        "On the spoken cues: On \"Removing water\" row 1 fills \"fewer mosquitoes\", \"only while kept up\", \"low\", \"very little\" with the dry bucket thumbnail, plus a grey note \"needs everyone\". On \"Insecticides act fast\" row 2 fills \"fast\", \"falls as resistance rises\", \"low to moderate\", \"other insects, food chains\" with the",
+        "explain",
+        "b10's coded `CriteriaTable` draws: rows \"remove water\", \"insecticides\", \"sterile or engineered males\", \"Wolbachia\"; columns \"cuts transmission?\", \"how long?\", \"cost?\", \"harms what else?\", headers writing one per cue. On \"Removing water\" row 1 fills \"fewer mosquitoes\", \"only while kept up\", \"low\", \"very little\" with the dry bucket thumbnail, plus a grey note \"needs everyone\". On \"Insecticides act fast\" row 2 fills \"fast\", \"falls as resistance rises\", \"low to moderate\", \"other insects, food chains\" with the sprayer thumbnail. On \"Sterile or engineered males\" row 3 fills \"fewer mosquitoes\", \"only while releases go on\", \"high\", \"very little\" with the cage thumbnail. On \"Wolbachia\" row 4 fills \"mosquitoes rarely pass on dengue\", \"self-sustaining\", \"high at first, then low\", \"very little\" with the teal *Aedes* thumbnail. Filled rows dim as the next fills. On \"combine methods\" all four rows brighten together and four `BreakMark`s land on the wheel thumbnail at once (tag \"combine: each covers another's gap\"). A grey chip \"insecticides are always best: they're fastest\" takes a grey scribble cross. At most three bright text items at once besides the table headers. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "one handwritten line writes on large: \"Fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on.\" Under each phrase a small thumbnail: the tipped bucket and cage under \"fewer mosquitoes\", the bed net under \"fewer bites\", the teal-dotted *Aedes* under \"rarely pass it on\".",
+        "Memory: One line to keep.",
+        "fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on.",
+        "On the spoken cues: Hold half a second.",
+        "explain",
+        "one handwritten line writes on large: \"Fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on.\" Under each phrase a small thumbnail: the tipped bucket and cage under \"fewer mosquitoes\", the bed net under \"fewer bites\", the teal-dotted *Aedes* under \"rarely pass it on\". Hold half a second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (insecticide X)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. A town sprayed insecticide",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (insecticide X))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A town sprayed insecticide X once a year to control the *Aedes aegypti* mosquitoes that carry dengue virus. Each year, a sample of mosquitoes was caught and exposed to a standard dose of insecticide X in the laboratory.\" A small two-row table: \"Year: 2016, 2018, 2020, 2022\"; \"Mosquitoes surviving the standard dose (%): 2, 9, 38, 75\". Demand: \"Explain the trend in the data, and propose one change to the town's mosquito control program. Justify your proposal. (4 marks)\". One lined answer box. No plates, no wheel. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Survival rose / selected resistant mosquitoes / remove breeding water / the classic mistake / individuals don't adapt; the population changes",
+        "On the spoken cues: A coded small bar chart of the four survival values draws beneath it as the narration starts. On \"Survival rose\" \"2, 9, 38, 75\" underlines amber and row 1 writes \"trend: survival rose from 2% to 75%\". On \"selected resistant mosquitoes\" \"sprayed ... once a year\" underlines amber and row 2 writes",
+        "explain",
+        "the card shrinks to a strip. A coded small bar chart of the four survival values draws beneath it as the narration starts. On \"Survival rose\" \"2, 9, 38, 75\" underlines amber and row 1 writes \"trend: survival rose from 2% to 75%\". On \"selected resistant mosquitoes\" \"sprayed ... once a year\" underlines amber and row 2 writes \"spraying selected resistance alleles that were already present; survivors bred; allele frequency rose each generation\". On \"remove breeding water\" \"propose one change\" underlines teal and row 3 writes \"change: remove breeding water, or use Wolbachia; neither is defeated by insecticide resistance\". Rows 1 and 2 dim as row 3 writes. On \"the classic mistake\" the chip \"the mosquitoes got used to the spray\" writes on and takes a grey scribble cross, with the small grey reason \"individuals don't adapt; the population changes\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (two towns)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. Town P releases sterile male Aedes every",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (two towns))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Two towns use different methods against *Aedes aegypti*, which carries dengue virus. Town P releases sterile male *Aedes* every week for two years, then stops. Town Q releases male and female *Aedes* carrying *Wolbachia* bacteria for four months, then stops. Two years after releases end: in town P, *Aedes* numbers have returned to their original level; in town Q, about 90% of *Aedes* carry *Wolbachia* and local dengue cases remain rare.\" Demand: \"Explain the difference between the long-term outcomes in the two towns. (3 marks)\". One lined answer box. No plates, no wheel. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "Sterile males leave no offspring / passes from mothers to their eggs / rarely pass on dengue / the classic mistake / the mosquitoes stay; dengue is blocked",
+        "On the spoken cues: Two columns write beneath it, \"town P\" and \"town Q\". On \"Sterile males leave no offspring\" \"sterile male\" and \"then stops\" underline amber and column P fills \"sterile males leave no offspring; when releases stop, survivors breed back\" with a small population row refilling. On \"passes from mothers",
+        "explain",
+        "the card shrinks to a strip. Two columns write beneath it, \"town P\" and \"town Q\". On \"Sterile males leave no offspring\" \"sterile male\" and \"then stops\" underline amber and column P fills \"sterile males leave no offspring; when releases stop, survivors breed back\" with a small population row refilling. On \"passes from mothers to their eggs\" \"carrying *Wolbachia*\" and \"about 90%\" underline teal and column Q fills \"passed to eggs; uninfected females mated by infected males: eggs don't hatch; Wolbachia stays\" with a small row staying teal. On \"rarely pass on dengue\" \"local dengue cases remain rare\" underlines teal and column Q adds \"infected *Aedes* rarely transmit dengue\". On \"the classic mistake\" the chip \"Wolbachia kills the mosquitoes\" writes on and takes a grey scribble cross, with the small grey reason \"the mosquitoes stay; dengue is blocked\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "the wheel returns small at the left with its break marks; three step chips write on, one per cue: \"follow the life cycle\", \"find the step it attacks\", \"weigh how long it lasts against harm\".",
+        "Decision rule and handoff: So for any vector question, follow the life cycle, find the step a method attacks, and weigh how long it lasts against what it might harm.",
+        "So for any vector question, follow the life",
+        "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: what limits malaria or dengue control?\" (small grey tag; `m5x-anopheles-mosquito-v1.png` and `m6-aedes-mosquito-v1.png` thumbnails beside it). Hold half a second before the notes.",
+        "explain",
+        "the wheel returns small at the left with its break marks; three step chips write on, one per cue: \"follow the life cycle\", \"find the step it attacks\", \"weigh how long it lasts against harm\". A \"Next\" chip slides in at the lower right: \"Next: what limits malaria or dengue control?\" (small grey tag; `m5x-anopheles-mosquito-v1.png` and `m6-aedes-mosquito-v1.png` thumbnails beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# --- M7 b08, b09, g03, b10, b11 and b12 rows (end) ---
 
 
 LESSONS = {
@@ -8547,6 +10179,86 @@ LESSONS = {
         'rows': M7B07_ROWS,
     },
     # --- M7 b06 and b07 entries (end) ---
+    # --- M7 b08, b09, g03, b10, b11 and b12 entries (start) ---
+    'm7b08': {
+        'design': D + 'lessons/bio-m7-b08.md',
+        'learning_review': D + 'checks/m7b08-learning-review.md',
+        'science_check': D + 'checks/m7b08-claude-science-check.md',
+        'meta': {"title": "How T Cells Find Infected Cells: Helper and Cytotoxic T Cells", "subtitle": "Antibodies can't reach a virus once it is inside your cells. How do T cells find the infected cells, and what do they do?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 12, "lessonIntent": "explaining why antibodies can't reach a virus inside a cell; explaining antigen presentation (every cell displays pieces of the proteins it makes, so an infected cell displays virus pieces; dendritic cells display pieces of what they took up); explaining that a T cell receptor fits only a piece displayed on a cell, checked together with the display molecule, not free virus; explaining T cell selection and cloning in the lymph node and that two main kinds form; describing helper T cells as coordinators that release cytokines (the go-ahead for B cells, signals that make cytotoxic T cells multiply, signals that make macrophages better at destroying what they engulf) and kill nothing; describing cytotoxic T cells travelling to the infection, binding infected cells that display the matching piece, and triggering apoptosis so the virus loses its factory, while healthy cells are left alone; contrasting innate NK cells (no receptor made for one pathogen; respond to stress signals and too few display molecules) with cytotoxic T cells; describing the two arms of adaptive immunity and helper T cells linking them; interpreting a killing experiment and evaluating a claim about helper T cell loss."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "virus-enters", "display-pieces", "t-cell-receptor", "find-t-cells", "helper-t-cells", "cytotoxic-find", "apoptosis", "nk-cells", "two-arms", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b06: barriers (airway mucus and cilia), phagocytes and phagocytosis; dendritic cells carry pieces of a pathogen to a lymph node and show them to T cells; innate is fast and broad, adaptive is specific and takes days. From b07: antigens; each lymphocyte has receptors of one shape, made at random; clonal selection and expansion; plasma cells and antibodies; antibodies block, clump and coat pathogens outside cells; a B cell usually needs a helper T cell's go-ahead (named only). From b01 and b03: viruses are not cells and must enter a host cell to copy themselves; viruses use surface proteins to bind host cells. From Year 11: proteins are made by cells from instructions in their DNA. Not assumed: antigen presentation, display molecules, T cell receptors, helper and cytotoxic T cells, cytokines, apoptosis, NK cells, the terms humoral and cell-mediated.", "startsWith": "Follow antigen presentation and T cell activation. The video opens: Antibodies are good at grabbing viruses outside cells.", "stopsAfter": "explaining why antibodies can't reach a virus inside a cell; explaining antigen presentation (every cell displays pieces of the proteins it makes, so an infected cell displays virus pieces; dendritic cells display pieces of what they took up); explaining that a T cell receptor fits only a piece displayed on a cell, checked together with the display molecule, not free virus; explaining T cell selection and cloning in the lymph node and that two main kinds form; describing helper T cells as coordinators that release cytokines (the go-ahead for B cells, signals that make cytotoxic T cells multiply, signals that make macrophages better at destroying what they engulf) and kill nothing; describing cytotoxic T cells travelling to the infection, binding infected cells that display the matching piece, and triggering apoptosis so the virus loses its factory, while healthy cells are left alone; contrasting innate NK cells (no receptor made for one pathogen; respond to stress signals and too few display molecules) with cytotoxic T cells; describing the two arms of adaptive immunity and helper T cells linking them; interpreting a killing experiment and evaluating a claim about helper T cell loss.", "nextLesson": "why a second infection is often stopped faster (route entry bio-m7-b09)."},
+        'teaching': {"task": "Antibodies can't reach a virus once it is inside your cells. How do T cells find the infected cells, and what do they do?", "causalExplanation": "Causes: why a second, cell-based defence is needed (antibodies can't enter cells; hook, scene 2); how an infected cell can be told apart from outside (it displays virus pieces because it is making virus proteins; scene 3); why T cells don't bind free virus (receptors fit displayed pieces only; scene 4); why only some T cells respond and why it takes days (selection and cloning, as b07; scene 5); how helper T cells matter without killing (cytokines switch on B cells, killers and macrophages; scene 6); how the killer finds the right cell and spares healthy ones (scene 7); why killing your own cell helps (the factory stops; scene 8); how innate and adaptive killers differ (scene 9). Visible case: one airway cell changing in place from healthy to infected to self-destructing. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 6 (three targets of the helper) and 10 (the full strip) are the densest, so each tag dims as the next lands.", "conversationalApproach": "Antibodies grab viruses outside cells, but a virus gets into your own cells and copies itself there, so the question is how T cells find the infected cells and what they do. A virus binds an airway cell and gets in; almost every cell cuts up some of the proteins it is making and displays small pieces on its surface, so an infected cell displays virus pieces. T cells are lymphocytes with receptors of one shape made at random, and unlike B cells they recognise a piece displayed on a cell, not a free antigen. In the lymph node, dendritic cells display the pathogen's pieces and the few fitting T cells are selected and multiply. Helper T cells mainly coordinate, giving B cells the go-ahead and signalling other cells; cytotoxic T cells leave the node, travel in the blood, check the pieces on airway cells and bind an infected one, then release proteins that make holes and switch on the cell's own self-destruct program, apoptosis. NK cells are innate killers that recognise stressed cells without receptors for one antigen. The adaptive response has two arms, antibodies outside cells and T cells for cells already infected, and the memory aid is B cells make antiBodies, T cells Terminate or Tell. Two exam questions follow with brief feedback.", "openingDecision": "Antibodies are good at grabbing viruses outside cells. But a virus doesn't stay outside. It gets into your own cells and copies itself there, where antibodies can't reach it. So how does your body find the infected cells among billions of healthy ones? In 1973, in Canberra, Peter Doherty and Rolf Zinkernagel helped answer that, and later shared a Nobel Prize for it. The answer involves T cells.", "understandingCheck": "13a explains a killing experiment with three groups of cells (recognition of displayed pieces and specificity, the route's stop for cytotoxic T cells). 13c evaluates the claim that losing helper T cells weakens only the T cell arm (helper roles across both arms, the route's stop for helper T cells). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ3-01: \"investigate and model the innate and adaptive immune systems in the human body (ACSBL119)\". This video models the T cell (cell-mediated) part of the adaptive system and joins it to b07's B cell part; scene 9 places NK cells in the innate system beside it. Verb \"investigate and model\": the response strip, the coded display-and-receptor shape model and the aligned airway cell plates (healthy, infected, self-destructing) are the model; attempt 1 investigates a killing experiment."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One infected airway board. Left two-thirds: painted cells, changing in place. The airway lining plate sets the scene; a coded zoom box opens onto one airway cell, shown as an aligned triplet (`m7-airway-cell-v1.png`, `-infected-v1.png`, `-apoptotic-v1.png`, all new) that crossfades at the cue where each change is narrated. Lymphocytes: the existing `m7-t-cell-v1.png` is the helper T cell; a new aligned partner `m7-t-cell-killer-v1.png` (the same lymphocyte with a cluster of dark granules at one side) is the cytotoxic T cell, so the two read as the same kind of cell with different jobs. Helper cells carry a small teal ring and cytotoxic cells an amber ring whenever both appear. In scene 9 only, the NK cell is the same `m7-t-cell-killer-v1.png` plate at the same size with a teal ring and no receptor forks, always with its grey tag \"NK cell\", so it is never mistaken for a helper T cell (no helper appears in scene 9). Coded display model: on every cell surface, small coded cup shapes (display molecules) each hold one small notched piece: grey pieces for the cell's own proteins, red pieces for virus proteins (matching the red spikes of `m7-virus-particle-v1.png`). T cell receptors are small coded two-pronged forks whose inner notch fits one cup-and-piece pair. A grey tag \"model: display molecules, pieces and receptors drawn far larger than real\" appears whenever the model is first used in a scene. Right third: the `ResponseStrip` from b06 and b07, first three rungs as grey thumbnails, the fourth rung showing b07's five B cell chips (grey) and, beside them, the new T cell branch of five chips lit one at a time. No people, hands or faces: the body appears only as airway lining, a lymph node, cells and molecules; attempt 1's mice and attempt 2's patient are words only. Coded elements are abstract only: the display model, the response strip, a clone tree (as b07), a vessel channel (two ink lines, as b06) for travel in the blood, arrows, chips and glosses. Scale: airway column cell about 25 µm tall and 8 µm wide, T cell about 7 µm, dendritic cell body about 12 µm with processes several times longer, B cell about 8 µm, macrophage about 20 µm; painted cells keep these proportions when shown together, so a T cell beside the airway cell is about a quarter of the cell's height. Virus particles (about 0.1 µm) are shown enlarged inside the airway cell plate and as a separate large plate, each time with a grey tag \"virus drawn far larger than real\". Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.", "transitionPlan": "The virus particle plate opens the hook coated with b07's coded antibodies while a second copy slips into an airway cell and the antibodies stop at the membrane, then the cell zooms out into a row of identical cells; the board clears to the airway layout with the ResponseStrip at the right as the virus binds and enters; the healthy and infected airway cell plates sit side by side as coded protein pieces are cut and displayed on each surface; the T cell plate shows its coded receptor forks and a piece fits one displayed on a cell; the lymph node plate opens a zoom box where a dendritic cell displays pieces and only fitting T cells lock on and divide; a helper T cell signals a B cell and other cells with coded arrows while a crossed chip lands; a cytotoxic T cell travels along a coded vessel into the airway and checks cells until it binds one; coded specks pass through small pores into the bound infected cell, which crossfades to its aligned apoptotic partner as a macrophage reaches for the pieces; two columns compare the NK cell with the cytotoxic T cell; the full ResponseStrip enlarges with its adaptive rung split into two arms; two handwritten lines write with their capitals lit; each attempt clears the board and its feedback underlines the card as an answer table or verdict block fills and a crossed chip lands; the strip, step chips and next chip close; scene crossfade with settle."},
+        'rows': M7B08_ROWS,
+    },
+    'm7b09': {
+        'design': D + 'lessons/bio-m7-b09.md',
+        'learning_review': D + 'checks/m7b09-learning-review.md',
+        'science_check': D + 'checks/m7b09-claude-science-check.md',
+        'meta': {"title": "Why You Rarely Catch Chickenpox Twice: Immune Memory and Vaccination", "subtitle": "Most people who've had chickenpox don't catch it again. What changed after the first infection, and how do vaccines and antibody injections give protection?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 13, "lessonIntent": "describing the primary response (only a few fitting B and T cells; selection and division take days; antibody appears after a week or more; illness while it builds); explaining what remains (antibody falls far below its peak as most plasma cells die; long-lived memory B and T cells, far more fitting cells than before, so memory is stored mainly in cells); explaining the secondary response (many fitting cells already waiting, so the antigen meets them quickly, fewer divisions, memory B cells quickly become plasma cells, memory helper T cells give the go-ahead quickly and memory cytotoxic T cells destroy infected cells sooner; antibody rises within days, much higher, lasts longer; often cleared before illness); reading a primary and secondary antibody graph, including that memory applies only to the same antigen; explaining vaccination as a safe first exposure (weakened live, killed, a protein, or instructions to make a protein) giving memory without the illness, and boosters as a later extra dose; naming both active and passive immunity as acquired immunity, unlike innate defences; distinguishing active immunity (own response, memory, often long-lasting, slow to build; natural by infection, artificial by vaccine) from passive immunity (antibodies made by another person or animal, immediate, receiving them makes no memory cells, fades over weeks to months; natural from the mother across the placenta and in breast milk, artificial by injection such as antivenom); choosing between them in a situation."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "primary", "what-stays", "secondary", "read-graph", "memory", "vaccination", "boosters", "active", "passive", "antivenom", "two-questions", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b06: innate defences hold a pathogen back while the adaptive response builds; adaptive responses take days the first time. From b07: antigens; each B cell has one receptor shape; clonal selection and expansion; plasma cells release antibodies; memory B cells \"stay for later\" (named only); antibodies block, clump and coat pathogens. From b08: T cells, antigen presentation, helper and cytotoxic T cells; some T cells become memory T cells (named only). From Year 11 and b01: viruses are not cells. Not assumed: primary and secondary response, memory cells in action, the antibody graph, vaccination, vaccine types, boosters, active and passive immunity, natural and artificial immunity, antivenom.", "startsWith": "Compare primary and secondary responses. The video opens: Most people who've had chickenpox don't catch it again.", "stopsAfter": "describing the primary response (only a few fitting B and T cells; selection and division take days; antibody appears after a week or more; illness while it builds); explaining what remains (antibody falls far below its peak as most plasma cells die; long-lived memory B and T cells, far more fitting cells than before, so memory is stored mainly in cells); explaining the secondary response (many fitting cells already waiting, so the antigen meets them quickly, fewer divisions, memory B cells quickly become plasma cells, memory helper T cells give the go-ahead quickly and memory cytotoxic T cells destroy infected cells sooner; antibody rises within days, much higher, lasts longer; often cleared before illness); reading a primary and secondary antibody graph, including that memory applies only to the same antigen; explaining vaccination as a safe first exposure (weakened live, killed, a protein, or instructions to make a protein) giving memory without the illness, and boosters as a later extra dose; naming both active and passive immunity as acquired immunity, unlike innate defences; distinguishing active immunity (own response, memory, often long-lasting, slow to build; natural by infection, artificial by vaccine) from passive immunity (antibodies made by another person or animal, immediate, receiving them makes no memory cells, fades over weeks to months; natural from the mother across the placenta and in breast milk, artificial by injection such as antivenom); choosing between them in a situation.", "nextLesson": "immune response practice (route entry bio-m7-g03), then how hygiene and quarantine interrupt spread (bio-m7-b10)."},
+        'teaching': {"task": "Most people who've had chickenpox don't catch it again. What changed after the first infection, and how do vaccines and antibody injections give protection?", "causalExplanation": "Causes: why the first response is slow (few fitting cells must be selected and multiply; scene 2); why antibody falls but protection stays (plasma cells die, memory cells remain; scene 3, answering the hook's surprise); why the second response is faster and bigger (more fitting cells waiting, fewer divisions, fast change to plasma cells; scene 4); why memory doesn't help against a new antigen (scene 5); how a vaccine gives memory without illness (scene 7); why a booster helps (scene 8); why passive immunity is immediate but temporary (ready-made antibodies, no selection, broken down; scene 10); when passive immunity is the only choice (scene 11). Visible case: the same graph and the same cell field change in place from first infection to second exposure. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 4 (cells and graph together) and 7 (vaccine types) are the densest, so each earlier tag or label dims.", "conversationalApproach": "Most people who have had chickenpox do not catch it again, so the question is what changed after the first infection and how vaccines and antibody injections give protection. In the first infection only a few B and T cells fit the virus, so they must be selected and multiply, and antibodies take days to rise; when the infection is cleared most plasma cells die and the antibody level falls, but memory B and T cells stay. On a second exposure many fitting cells are already waiting, so the response starts sooner, makes much more antibody and lasts longer, and the antibody graph shows a slow, low primary hump against a fast, tall secondary peak, often on a log scale. Vaccination gives the antigen in a form that does not cause the full disease, so the first response happens safely and memory cells form, and a booster triggers a secondary response. Vaccines and infections give active immunity because your own system made the memory cells, while passive immunity gives ready-made antibodies that work at once but fade and leave no memory, with antivenom as artificial passive immunity. Both are acquired immunity, and two questions sort any case: are there memory cells for this antigen, and who made the antibodies. The memory aid is second exposure, faster, bigger, longer. Two exam questions follow with brief feedback.", "openingDecision": "Most people who've had chickenpox don't catch it again. Years later, they can breathe in the same virus and usually don't get sick. You might think that's because antibodies from the first time are still in their blood. But by then, the antibody level has usually fallen far below its peak. So what's stopping the virus?", "understandingCheck": "13a explains a two-antigen antibody graph (primary against secondary response, the route's start, and specificity of memory). 13c evaluates a claim that antivenom has made a bushwalker immune (passive against active immunity, the route's stop). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ3-02 (p 54): \"explain how the immune system responds after primary exposure to a pathogen, including innate and acquired immunity\". B7-IQ4-02 (p 55): \"investigate procedures that can be employed to prevent the spread of disease, including but not limited to: (ACSBL124)\", with the listed item \"vaccination, including passive and active immunity (ACSBL100, ACSBL123)\". Verb \"explain\" (B7-IQ3-02): scenes 3 to 5 give the cause of each difference between the responses (more fitting cells waiting, fewer divisions, fast change to plasma cells). \"Acquired immunity\" in the dotpoint is taught as active immunity acquired naturally or artificially (scene 9), with innate immunity recalled as the response that holds the pathogen back during the primary lag (scene 2, one clause). \"Investigate\" (B7-IQ4-02): attempt 1 interprets a two-antigen experiment; attempt 2 applies the active and passive distinction to a real procedure."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One memory board. Left two-thirds: a coded antibody graph (b07's style; the house coded `lineGraph`, never an AI image) on which the response is drawn as each step is narrated: x axis \"time after first exposure (days)\", y axis \"antibody level\" (log scale in scenes 5 and 13a, tagged), exposure markers as small amber arrows on the x axis. Beside or above the graph, painted cells show what the curve is caused by: a cell count field of small `m7-b-cell-bare-v1.png` copies (with a few `m7-t-cell-v1.png` copies) in which the cells that fit the virus are lit teal: two or three before the first infection, many after it. Plasma cells (`m7-plasma-cell-v1.png`) appear when antibody rises and fade when it falls. The virus is a new `m7-varicella-virus-v1.png`. Scenes 7 and 8 add the existing `m7-vaccine-vial-syringe-v1.png`. Scenes 9 to 12 build the coded two-by-two table (rows \"active\", \"passive\"; columns \"natural\", \"artificial\"), one quadrant per cue, each with one painted thumbnail: the varicella virus (natural active), the vaccine vial (artificial active), the new `m7-placenta-villus-v1.png` with the existing `b3a2-milk-gland-full-v1.png` (natural passive) and the new `m7-brown-snake-v1.png` (artificial passive). Right third, small: b06 to b08's `ResponseStrip`, complete, with memory cells marked at the foot of both adaptive columns (scene 3). No people, hands or faces: no child with chickenpox, no arm being injected, no mother or baby (the existing `b3a-fetus-placenta-v1.png` shows a fetus and is not used); the body appears only as cells, a placental villus and a gland. The snake is an animal, painted alone with no person. Coded elements are abstract only: the graph, the cell count field layout, the table, arrows, chips, glosses and the strip. Scale: B cell about 8 µm, plasma cell about 12 µm (scaled up uniformly against the B cell plate as in b07, never stretched), T cell about 7 µm; the varicella virus (about 0.2 µm) is only ever shown as its own enlarged plate with a grey tag \"drawn far larger than real\"; the placental villus close-up spans about 0.2 mm. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.", "transitionPlan": "The chickenpox virus plate opens the hook on a coded time arrow as a leftover-antibodies chip takes a question mark over a sinking antibody line; the board clears to the memory layout with the complete ResponseStrip small at the right while a coded antibody graph draws and a few fitting cells divide in a coded cell field; plasma cell plates fade as the curve falls and memory cells stay lit; a second amber arrow lands on the axis and the full cell field meets the virus quickly as a tall peak draws; the graph fills the board as the primary hump and secondary peak light with their tags and the log scale gridlines label; the memory line writes over the graph with its lag, peak and length marks pulsing; the vaccine vial and syringe plate sits beside a fresh graph whose first response draws safely, then a booster arrow lifts the level; the ImmunityTable fills active natural and artificial cells, then the passive row with the antibody thumbnails, and the brown snake plate fills the antivenom cell; the full table enlarges with its acquired bracket and the two question chips write; each attempt clears the board and its feedback underlines the card as an answer table or verdict block fills and a crossed chip lands; the table, graph thumbnail, step chips and next chip close; scene crossfade with settle."},
+        'rows': M7B09_ROWS,
+    },
+    'm7g03b': {
+        'design': D + 'lessons/bio-m7-g03.md',
+        'learning_review': D + 'checks/m7g03b-learning-review.md',
+        'science_check': D + 'checks/m7g03b-claude-science-check.md',
+        'meta': {"title": "Immune Response Practice: Sequence, Antibody Graphs, Active vs Passive", "subtitle": "When an immunity question asks you to put the response in order, read an antibody graph, or name someone's immunity, how do you work it out step by step?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 14, "lessonIntent": "ordering eight events from a pathogen's entry through the innate response (barrier, histamine and leaky vessels, neutrophils, dendritic cell to lymph node) to the adaptive response (B cells that fit bind the antigen, helper T cell go-ahead, clone of plasma and memory cells, antibodies bind) and explaining why antibody takes about a week (few fitting B cells must meet the antigen, get the go-ahead and divide many times; innate defences hold the bacteria meanwhile); reading a log-scale antibody graph (lag, peak values, a protective level) and comparing two doses with data (about fifty times higher, sooner, above the protective line), then explaining the difference by memory cells from the first dose; classifying a rabies antibody injection as artificial passive and a rabies vaccine as artificial active immunity, and explaining why both are given (immediate cover while the slower active response builds lasting protection, possible because symptoms take weeks or months)."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question"],
+        'ids': ["hook", "q1-question", "q1-innate", "q1-adaptive", "q1-days", "q1-mistake", "q2-question", "q2-read", "q2-explain", "q2-mistake", "q3-question", "q3-types", "q3-why-both", "q3-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b06: barriers; histamine from damaged cells and mast cells widens small vessels and makes them leaky (redness, warmth, swelling); neutrophils follow a chemical trail and engulf bacteria; dendritic cells carry pieces of the pathogen to a lymph node; \"Block, alarm, eat, alert\"; the response strip's four rungs. From b07: antigen; each B cell has one receptor shape, made before infection; clonal selection; a helper T cell's go-ahead; clonal expansion; plasma cells release antibodies; memory B cells; antibodies block, clump and coat; the strip's five B cell chips (\"fit\", \"go-ahead\", \"clone\", \"plasma cells\", \"antibodies bind\"). From b08: helper T cells are switched on by pieces shown on dendritic cells and give B cells the go-ahead. From b09: primary and secondary responses; the antibody graph and log scale; memory stored mainly in cells; vaccination and boosters; active and passive, natural and artificial, and the two questions (\"Who made the antibodies?\"; \"naturally, or by medical treatment?\"). Not assumed: lyssavirus (glossed in the Q3 stem as \"a close relative of rabies\"), immunoglobulin (screen only; spoken as \"rabies antibodies\").", "startsWith": "An unfamiliar immunity question: a list of events, an antibody graph, or a case. The video opens: Immunity questions often ask you to do one of three things.", "stopsAfter": "ordering eight events from a pathogen's entry through the innate response (barrier, histamine and leaky vessels, neutrophils, dendritic cell to lymph node) to the adaptive response (B cells that fit bind the antigen, helper T cell go-ahead, clone of plasma and memory cells, antibodies bind) and explaining why antibody takes about a week (few fitting B cells must meet the antigen, get the go-ahead and divide many times; innate defences hold the bacteria meanwhile); reading a log-scale antibody graph (lag, peak values, a protective level) and comparing two doses with data (about fifty times higher, sooner, above the protective line), then explaining the difference by memory cells from the first dose; classifying a rabies antibody injection as artificial passive and a rabies vaccine as artificial active immunity, and explaining why both are given (immediate cover while the slower active response builds lasting protection, possible because symptoms take weeks or months).", "nextLesson": "how hygiene and quarantine interrupt spread (route entry bio-m7-b10)."},
+        'teaching': {"task": "When an immunity question asks you to put the response in order, read an antibody graph, or name someone's immunity, how do you work it out step by step?", "causalExplanation": "Why histamine causes redness and swelling (2b, one clause, recalled); why the dendritic cell links the two halves (2b, 2c); why antibody takes about a week (few fitting cells, selection, go-ahead and many divisions; 2d); why the second dose gives a faster, much higher response (memory cells from the first dose, fewer divisions, quick change to plasma cells; 3c); why the injected antibodies act at once but fade (ready-made, no B cells selected; 4c); why the vaccine needs time (a primary response; 4c, 4d); why giving both works (immediate cover while memory builds, and a long incubation; 4c).", "conversationalApproach": "Immunity questions ask you to put the response in order, read an antibody graph or name someone's immunity, and each walkthrough works from the question one step at a time. Q1 orders eight events after soil bacteria enter a gardener's cut: the barrier first, then the innate alarm, phagocytes and dendritic cell, then selection of the few fitting B cells, the helper T cell's go-ahead, division into a clone and plasma cells releasing antibodies, and part b explains why that takes about a week; Q2 reads a two-dose vaccine graph on a log scale, checking that each gridline is ten times the one below before comparing the lag and the peaks, then explains the primary and secondary responses from memory cells; Q3 classifies the antibody injection and the vaccine given after a flying fox scratch as passive and active by asking who made the antibodies, and explains why both are given (the injection covers the gap while the vaccine builds memory). Each question ends with its spoken, crossed classic mistake (the body designs an antibody, counting gridlines as a linear scale, the vaccine works straight away), and the decision board gives the first move for each kind of question.", "openingDecision": "Immunity questions often ask you to do one of three things. Put the response in order, from the moment a pathogen gets in to the moment antibodies appear. Read a graph of antibody levels. Or name the immunity someone has, active or passive, natural or artificial. Each one hides a trap that costs marks. Here are three HSC-style questions, one of each. Pause and try each one, then we'll work through it together.", "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds.", "curriculumScope": "Syllabus (2017, `docs/production/programme/syllabus/bio-2017-y12.json`; practice and transfer only, first coverage stays with b06 to b09): B7-IQ2-02 (p 54): \"analyse responses to the presence of pathogens by assessing the physical and chemical changes that occur in the host animals cells and tissues (ACSBL119, ACSBL120, ACSBL121, ACSBL122)\". Q1 event E and scene 2b (histamine, a chemical change, causing vessel widening and leaking, physical changes). B7-IQ3-01 (p 54): \"investigate and model the innate and adaptive immune systems in the human body (ACSBL119)\". Q1 (sequence the whole model, b06 to b08's response strip). B7-IQ3-02 (p 54): \"explain how the immune system responds after primary exposure to a pathogen, including innate and acquired immunity\". Q1 part (b) and Q2. B7-IQ4-02 (p 55): \"investigate procedures that can be employed to prevent the spread of disease, including but not limited to: (ACSBL124)\", with the listed item \"vaccination, including passive and active immunity (ACSBL100, ACSBL123)\". Q2 (a two-dose vaccine) and Q3 (post-exposure antibodies and vaccine)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in m6-g01's layout: top-left the question card (stem, data and demands as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Sequence\", \"Antibody graph\", \"Type of immunity\"), hidden during each attempt. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). Earlier questions are cleared before the next card writes on. Q1's working is b06 to b08's response strip, rebuilt rung by rung as each event card slides onto its rung, with small cell thumbnails (existing plates). Q2's working is the coded `lineGraph` (log axis, protective line, two exposure arrows) with reading guides. Q3's working is b09's coded two-by-two immunity table plus a small coded two-curve sketch (injected antibodies, own antibodies). No people, hands or faces: the gardener and the wildlife carer are words only; the cut appears only as the secateurs plate and a bacterium plate; the flying fox is an animal plate alone. Coded elements are abstract only. Clutter rule (owner, 19 Oct): besides the question strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands. Plates are scaled proportionally, never stretched.", "transitionPlan": "The heading writes on and three small stimulus thumbnails fan out, one per cue (the ResponseStrip, an antibody graph and the ImmunityTable); each question opens on a fresh board with the type badge hidden while the worded card writes with the secateurs and wound, vaccine vial or flying fox plate small at its corner; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used; event letters slide into the ResponseStrip's innate rungs and then b07's five adaptive chip slots, and a short day axis draws for part b; the graph enlarges as the log axis gridlines light, the lag brackets and the peak readings write, and b09's cell field fills for memory cells; b09's ImmunityTable fills its passive and active cells and a two-curve sketch shows the gap being covered; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."},
+        'rows': M7G03B_ROWS,
+    },
+    'm7b10': {
+        'design': D + 'lessons/bio-m7-b10.md',
+        'learning_review': D + 'checks/m7b10-learning-review.md',
+        'science_check': D + 'checks/m7b10-claude-science-check.md',
+        'meta': {"title": "How Hygiene, Quarantine and Herd Immunity Stop Disease Spreading", "subtitle": "In 1847, washing hands in chlorine cut deaths in a maternity clinic, years before anyone accepted that germs cause disease. How do hygiene, isolation, quarantine and vaccination each break the chain of spread, and how do you judge which one works?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 15, "lessonIntent": "reading Semmelweis's clinic data as evidence that hands carried the pathogen; locating the link each of four measures breaks (travel: hygiene; leave: isolation and quarantine; the next host: vaccination); explaining how soap and water remove microbes and why alcohol rub works less well against norovirus and bacterial spores; explaining environmental management (cleaning surfaces, cooking food, treating water, removing sewage) and its strength (works without anyone remembering); explaining why hygiene does little against an airborne pathogen such as measles; defining isolation (separating infected people) and its limit (spread before symptoms); defining contact tracing and quarantine (separating exposed people who aren't sick yet) and explaining why quarantine lasts about as long as the incubation period; describing border quarantine and biosecurity; explaining herd immunity (enough immune people, so each case infects fewer than one other on average; protects those who can't be vaccinated) and why more contagious diseases need higher coverage (measles about 93 per cent threshold, 95 per cent target) and why local coverage matters; evaluating measures by which link, speed, how long they can last, and cost, and justifying layered control."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "which-link", "hands", "environmental", "air-route", "isolation", "quarantine", "border", "herd-immunity", "how-many", "judge", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b03: a pathogen leaves one host, travels and enters the next (stations \"leave\", \"travel\", \"enter\"); modes of transmission (direct, indirect through objects, food, water or air, vectors); \"Every control measure breaks a link\"; the route board and its `BreakMark`. From b06: skin and mucus as barriers. From b09: vaccination gives memory cells. From g03: wound washing appeared in the Q3 stem. Not assumed: hygiene mechanism, environmental management, isolation, quarantine, contact tracing, incubation period, biosecurity, herd immunity, R₀ (screen only), coverage.", "startsWith": "Locate transmission links that controls can interrupt. The video opens: In 1847, a Vienna hospital had two maternity clinics.", "stopsAfter": "reading Semmelweis's clinic data as evidence that hands carried the pathogen; locating the link each of four measures breaks (travel: hygiene; leave: isolation and quarantine; the next host: vaccination); explaining how soap and water remove microbes and why alcohol rub works less well against norovirus and bacterial spores; explaining environmental management (cleaning surfaces, cooking food, treating water, removing sewage) and its strength (works without anyone remembering); explaining why hygiene does little against an airborne pathogen such as measles; defining isolation (separating infected people) and its limit (spread before symptoms); defining contact tracing and quarantine (separating exposed people who aren't sick yet) and explaining why quarantine lasts about as long as the incubation period; describing border quarantine and biosecurity; explaining herd immunity (enough immune people, so each case infects fewer than one other on average; protects those who can't be vaccinated) and why more contagious diseases need higher coverage (measles about 93 per cent threshold, 95 per cent target) and why local coverage matters; evaluating measures by which link, speed, how long they can last, and cost, and justifying layered control.", "nextLesson": "why antibiotics and antivirals work differently (route entry bio-m7-b11)."},
+        'teaching': {"task": "In 1847, washing hands in chlorine cut deaths in a maternity clinic, years before anyone accepted that germs cause disease. How do hygiene, isolation, quarantine and vaccination each break the chain of spread, and how do you judge which one works?", "causalExplanation": "Causes: why handwashing cut deaths (hands were the travel link; the solution killed the bacteria; hook, 3); how soap works and why alcohol rub differs (3); why environmental management lasts (4); why hygiene fails for measles (the virus travels in air and lingers; 5); why isolation starts late (infectious before the rash; 6); why quarantine lasts about the incubation period (an infected contact shows symptoms within it; 7); why herd immunity stops chains and protects the unvaccinated (each case meets too few susceptible people; 9); why measles needs higher coverage (each case would infect about 15; 10); why measures are layered (each misses something; 11). Visible case: the same board gains one break per measure; the same timeline shows the isolation gap and the quarantine window. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 7 (tracing, quarantine, incubation, post-exposure) and 11 (criteria table) are the densest, so earlier brackets and rows dim.", "conversationalApproach": "In 1847 a Vienna hospital's doctors' clinic lost about one mother in ten to fever after birth while the midwives' clinic lost far fewer, and washing hands in chlorine cut the deaths years before germs were accepted, so the question is how hygiene, isolation, quarantine and vaccination each break the chain of spread and how to judge which one works. A pathogen has to leave one host, travel and enter a next host it can infect, and every control measure breaks a link. Handwashing broke the travel link carried by the doctors' hands, and environmental management (cleaning surfaces, cooking food, treating water and carrying sewage away) works on places. Hygiene cannot break an airborne route such as measles, so isolation keeps infected people away from others, but people can spread disease before symptoms, so contacts are traced and those not immune are quarantined for the incubation period; border quarantine keeps pests and diseases out. Vaccination removes hosts the pathogen can use, and when enough people are immune each case infects fewer than one other on average, so the chain dies out (herd immunity); a more contagious disease needs more people immune. Measures are judged by which link they break, how fast they work, how long they last and what they cost people, and the memory aid is isolate the infected, quarantine the exposed. Two exam questions follow with brief feedback.", "openingDecision": "In 1847, a Vienna hospital had two maternity clinics. In the doctors' clinic, about one mother in ten died of a fever after giving birth. In the midwives' clinic, far fewer died. Ignaz Semmelweis noticed that the doctors came straight from autopsies. He made them wash their hands in a chlorine solution, and deaths fell to about the midwives' level. So how can washing, or keeping people apart, stop a disease nobody could see?", "understandingCheck": "The stem compared vaccination percentages with an 80% immunity threshold. It now gives the proportions immune: spoken 13c \"In town A, ninety-two per cent are immune. In town B, seventy per cent are.\"; card \"Town A: 92% of people immune. Town B: 70% of people immune.\" Feedback 13d says \"In town B, immunity is below the eighty per cent needed\" and \"In town A, it's above eighty\"; the cues are \"below the eighty per cent needed\" and \"above eighty\". The question summary, model and attempt description match. The author-note argument that a margin above 80% made vaccination coverage enough evidence is removed, and Revision 2 note 12 is marked superseded.", "curriculumScope": "B7-IQ4-02 (p 55): \"investigate procedures that can be employed to prevent the spread of disease, including but not limited to: (ACSBL124)\", with the listed items \"hygiene practices\", \"quarantine\" and \"vaccination, including passive and active immunity (ACSBL100, ACSBL123)\" (this video: hygiene, quarantine, and vaccination at population level as herd immunity; \"public health campaigns\" is touched by vaccination coverage only; \"use of pesticides\" and \"genetic engineering\" are b12). B7-IQ4-04 (p 55): \"investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic\". Verb \"investigate\" (B7-IQ4-02): the hook reads Semmelweis's clinic data as evidence, and attempt 1 tests a quarantine plan against incubation data. Verb \"evaluate\" (B7-IQ4-04): scene 11 gives the four criteria and judges hygiene, environmental management, isolation and quarantine, and vaccination against them; attempt 1 is an evaluate item. Environmental management is taught as changing places (surfaces, food, water, sewage) so the pathogen can't reach new hosts (scene 4); border quarantine for an epidemic or pandemic is scene 8."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One control board, b03's route chain board extended: two coded host circles (b03's `HostCircles` style; abstract, never people), \"infected host\" at the left and \"new host\" at the right, with b03's three stations \"leave\", \"travel\", \"enter\" and a fourth small station after \"enter\", \"can it be infected?\" (added in scene 2). Each control lands at its station as a painted plate plus b03's coded `BreakMark` (a short scribble cut across the lane): hygiene at \"travel\", isolation at \"leave\", quarantine at \"leave\" (dashed, because the exposed host may or may not be infected), vaccination at \"can it be infected?\". Scene 1 and the hook's evidence use a coded clinic bar chart (two bars per period, First Clinic and Second Clinic, per cent of mothers who died; values from Semmelweis's tables) beside the new chlorinated lime basin plate; the two clinics are text labels only, no rooms, no beds, no people. Scenes 5 to 7 use a coded timeline strip for one measles case (days from infection: incubation, infectious period, rash, isolation, contacts' quarantine window). Scenes 9 and 10 use a coded contact network of about 40 small abstract host circles (grey: can be infected; teal ring: immune; amber: infected), in which an infection spreads along contact lines and stops at teal circles. Scene 11 is a coded four-column criteria table. No people, hands or faces: no doctors, mothers, babies, travellers, patients or health workers; the clinic, the hospital room and the border are shown by objects only (basin, hospital bed, amnesty bin, shipping container, sign). Hands appear in no plate: `m7-handwashing-sink-v1.png` shows the sink and soap only (checked). Coded elements are abstract only: host circles, the network, the bar chart, timeline strip, the criteria table, arrows, break marks, chips and glosses. Scale: plates of objects are shown at a size that reads, not to one scale, each with its own grey label; the measles virus (about 0.15 µm) only ever appears as its own enlarged plate with a grey tag \"drawn far larger than real\"; the bacterium and norovirus are not drawn to scale against objects. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.", "transitionPlan": "Two coded column labels for the clinics write on and the ClinicBars grow, the chlorinated lime basin plate slides in between them and a second pair of bars grows to about the same level; the bars shrink as b03's route chain board draws two host circles with leave, travel, enter and can-it-be-infected stations, each measure chip landing on its link; the travel lane enlarges with the bacterium plate carried along a coded path and a BreakMark at the basin; the lane splits into three sub-lanes for the door handle, food and water plates; the measles virus plate drifts in coded droplets through the air lane past the hygiene marks; the hospital bed plate takes the leave station inside a coded room line; contacts draw around the isolated case and a quarantine sign plate and day strip mark the incubation period; a coded coastline draws for border biosecurity; the ContactNetwork lights amber cases spreading through grey hosts until enough turn teal and the chain stops; one case draws fifteen contact lines for measles and the threshold bar fills; the CriteriaTable fills row by row; the memory line writes with its two thumbnails; each attempt clears the board and its feedback underlines the card as a day strip or two small networks draw and a crossed chip lands; the board, step chips and next chip close; scene crossfade with settle."},
+        'rows': M7B10_ROWS,
+    },
+    'm7b11': {
+        'design': D + 'lessons/bio-m7-b11.md',
+        'learning_review': D + 'checks/m7b11-learning-review.md',
+        'science_check': D + 'checks/m7b11-claude-science-check.md',
+        'meta': {"title": "Antibiotics vs Antivirals: How They Work and Why Resistance Spreads", "subtitle": "Antibiotics do nothing for the flu, but a flu antiviral can shorten it, if it's taken early. Why do antibiotics and antivirals work so differently, and how effective is each?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 16, "lessonIntent": "defining selective toxicity; explaining how penicillin kills growing bacteria (wall not built, water enters, the cell bursts) and why it spares human cells (no wall); explaining that other antibiotics block bacterial ribosomes, shaped differently from ours, and showing on screen (silent since Revision 3) that some antibiotics kill while others stop growth so the immune system clears the rest; explaining why antibiotics do nothing to a virus (no wall, no ribosomes; it uses the host cell's) and how using them for a viral infection selects resistant bacteria; explaining that antivirals block a step the virus needs (oseltamivir blocks neuraminidase so new flu viruses stay stuck to the cell; others block a viral copying enzyme or entry; some block a host part the virus needs); explaining that antivirals stop new viruses but don't destroy existing ones, so the flu antiviral helps most early, while HIV treatment controls an established infection; that most antivirals are narrow, though some act on several virus families; and that they are fewer than antibiotics; explaining resistance as selection of microbes that already carry resistance, and how bacteria share resistance genes on plasmids, even between species; explaining why combination therapy prevents HIV resistance; describing sensible use (not for viral infections, not routinely in healthy farm animals, exactly as prescribed, reserve antibiotics); assessing the effectiveness of each class by selectivity, breadth and durability, with durability judged from selection and a dated figure for the size of the resistance burden."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "selective-toxicity", "antibiotic-targets", "no-target-in-virus", "antiviral-steps", "stop-new-viruses", "resistance", "combination", "use-well", "assess", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: bacteria are cells (prokaryotes, DNA in the cytoplasm, ribosomes, a peptidoglycan wall); a virus is genetic material in a protein coat with no cytoplasm and no ribosomes, which makes a host cell build new viruses; \"a drug has to hit something the pathogen has and the host doesn't\" (Revision 3: scene 2 refines it as harming the pathogen much more than the host, often through such a difference, after Codex check 105); \"Not a cell means antibiotics are useless\"; the Fleming plate. From b06: infected cells, the airway lining (via b08's plates, which b11 reuses). From b08: the infected airway cell with viruses budding from its surface. From bio-m6-b01: mutation makes a new allele by chance (\"random with respect to need\"); an antibiotic kills susceptible bacteria and the few already carrying a resistance allele survive and divide; \"The antibiotic didn't create the allele. It changed how common it is, and that's natural selection.\" From bio-m5-b06a: bacteria carry plasmids. Not assumed: selective toxicity, how penicillin kills, bacterial ribosomes as a target, neuraminidase, why the flu antiviral helps most early, horizontal gene transfer by name, combination therapy, stewardship, assessing effectiveness.", "startsWith": "Compare bacterial structures with viral replication. The video opens: Every winter, people with the flu ask their doctor for antibiotics.", "stopsAfter": "defining selective toxicity; explaining how penicillin kills growing bacteria (wall not built, water enters, the cell bursts) and why it spares human cells (no wall); explaining that other antibiotics block bacterial ribosomes, shaped differently from ours, and showing on screen (silent since Revision 3) that some antibiotics kill while others stop growth so the immune system clears the rest; explaining why antibiotics do nothing to a virus (no wall, no ribosomes; it uses the host cell's) and how using them for a viral infection selects resistant bacteria; explaining that antivirals block a step the virus needs (oseltamivir blocks neuraminidase so new flu viruses stay stuck to the cell; others block a viral copying enzyme or entry; some block a host part the virus needs); explaining that antivirals stop new viruses but don't destroy existing ones, so the flu antiviral helps most early, while HIV treatment controls an established infection; that most antivirals are narrow, though some act on several virus families; and that they are fewer than antibiotics; explaining resistance as selection of microbes that already carry resistance, and how bacteria share resistance genes on plasmids, even between species; explaining why combination therapy prevents HIV resistance; describing sensible use (not for viral infections, not routinely in healthy farm animals, exactly as prescribed, reserve antibiotics); assessing the effectiveness of each class by selectivity, breadth and durability, with durability judged from selection and a dated figure for the size of the resistance burden.", "nextLesson": "testing which substances stop bacteria growing on agar (route entry bio-m7-p05)."},
+        'teaching': {"task": "Antibiotics do nothing for the flu, but a flu antiviral can shorten it, if it's taken early. Why do antibiotics and antivirals work so differently, and how effective is each?", "causalExplanation": "Causes: why antibiotics spare our cells (no wall; differently shaped ribosomes; 2, 3); why a wall-blocked bacterium bursts (water enters; 3); why antibiotics miss viruses (no wall, no ribosomes; the virus uses ours; 4); why antibiotics for a cold still matter (they select resistant bacteria in the body; 4); how an antiviral can work at all (many target the virus's own enzymes, some a host part the virus needs; 5); why the flu antiviral helps most early (it stops new copies, not existing viruses; 6), while HIV treatment controls an established infection (8, 10); why most are narrow and they're few (most target one virus's enzyme, though some act on several families; few safe targets; 6); how safely each class hits the pathogen (the wall and ribosome differences; oseltamivir's fit to the flu enzyme; 10); why durability depends on use (every use selects resistance; the 2021 figure shows burden, not a trend; 10); why resistance spreads (selection; plasmid sharing; 7); why three drugs stop resistance (all three at once is very unlikely; 8, 12c). Visible case: the same bacterium bursts in place; the same airway cell keeps its viruses stuck in place. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 3 (two targets, kill against stop-growth) and 10 (assess table) are the densest, so earlier tags and rows dim.", "conversationalApproach": "Every winter people with the flu ask for antibiotics that do nothing to the virus, while a flu antiviral can shorten the illness if taken early, so the question is why antibiotics and antivirals work so differently and how effective each is. A useful drug harms the pathogen much more than the host (selective toxicity), often by hitting something the pathogen has and our cells lack. Penicillin stops a growing bacterium building its cell wall, so it bursts, and other antibiotics block bacterial ribosomes, which differ from ours. A virus is genes in a protein coat with no wall or ribosomes, and it uses our cell's machinery, so antibiotics have nothing to hit. Antivirals block a step the virus needs with its own tools, such as the neuraminidase that cuts new flu viruses free, so they stop new viruses being made or released rather than destroying existing ones and help most early. Resistance is selected, not created: microbes that already carry resistance survive and multiply, and bacteria can share resistance genes, so for HIV, which copies itself billions of times with errors, three drugs at once mean a virus would need resistance to all three. Using drugs well slows resistance, and the drugs are assessed on how safely they hit the pathogen, how many infections they treat and how long they keep working. The memory aid is antivirals block a step the virus needs, and the drug selects resistance; it doesn't create it. Two exam questions follow with brief feedback.", "openingDecision": "Every winter, people with the flu ask their doctor for antibiotics. The antibiotics do nothing to the flu virus. But a flu antiviral called oseltamivir can shorten the illness by about a day, if it's started within two days of the first symptoms. So why does one drug miss the virus completely, and why does the other only help if you take it early?", "understandingCheck": "12a is an explain item on an invented virus and drug: why a drug that blocks a virus-only enzyme works and penicillin doesn't, and why the drug works best early (selective toxicity, no targets, timing). 12c is an explain item with numbers: why three drugs at once beat one (resistance by selection, combination therapy, the \"assess\" half). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ4-03 (p 55): \"investigate and assess the effectiveness of pharmaceuticals as treatment strategies for the control of infectious disease, for example:\" with its examples \"antivirals\" and \"antibiotics\". This video owns full coverage of B7-IQ4-03 apart from the \"investigate\" practical, which p05 carries. Verb \"assess\" (make a judgement of value, quality, outcomes, results or size): scene 10 states the criteria (how selectively the drug hits the pathogen, how many infections it treats, how long it keeps working) and gives a qualified judgement; attempt 2 assesses combination therapy with numbers. Verb \"investigate\": the hook reads trial evidence (about a day shorter, if started within two days), and scene 8 reads the history of single against combined HIV therapy as evidence."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One drug-target bench, split into two lanes. Top lane, \"bacterium\": `m6-bacterium-plasmid-v1.png` (a cutaway rod with a layered wall, nucleoid and plasmid) with coded target markers (small amber rings) that light on cue: \"wall\", \"ribosomes\", and, screen-only and grey, \"DNA-copying enzymes\" and \"folate making\". Bottom lane, \"virus\": b08's aligned airway cell set (`m7-airway-cell-v1.png`, `-infected-v1.png`) plus one new aligned partner, `m7-airway-cell-release-blocked-v1.png`, so the antiviral's effect is shown as a change in place on the same cell. A coded virus step strip runs under the cell: \"enter\", \"copy\", \"build\", \"release\", with each antiviral landing as a small coded block on its step. Each drug is a coded chip (amber for antibiotics, teal for antivirals) that slides to its lane and either locks onto a target (tick) or finds nothing (grey cross). Scene 7 reuses bio-m6-b01's coded population board (small tinted bacterium glyphs, resistance rings) and adds the new `m7-bacteria-conjugation-v1.png`. Scene 8 is a coded three-lock diagram: a virus glyph with three padlock-shaped step markers, abstract only. Scene 10 is a coded three-column assess table. No people, hands or faces: no patients, doctors, pharmacists, farmers or hospital rooms; drugs are shown as `m7-capsule-blister-blank-v1.png` (new, blank) with coded tags, never a branded pack. Scale: the bacterium and the airway cell are never drawn at one scale; each carries its own grey tag (\"drawn far larger than real\"). The virus particles on the airway cell are far larger than real (b08's own note). Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.", "transitionPlan": "The virus particle plate opens the hook above two capsule blister packs, the antibiotic arrow taking a grey cross while the antiviral arrow gains a symptom bar pair and a two-day bracket; the hook shrinks as the drug-target bench draws a bacterium lane and a virus lane; the bacterium lane enlarges as a penicillin chip locks onto the wall ring and the cell swells and bursts, then a second chip blocks a coded ribosome; the virus lane lights with the virus plate, its coat and genes, and empty target slots; the airway cell enlarges with the VirusStepStrip as teal blocks land on the release and copy steps; already-released particles drift on while new ones stop; b01's coded population board returns as a drug clears all but two amber resistant glyphs, which multiply, and the bacteria conjugation plate passes a plasmid between two rods; the ThreeLock diagram counts billions of copies and lands one lock, then three; four rule chips write in a column; the AssessTable fills its antibiotic and antiviral columns row by row; the memory lines write with the step strip thumbnail; each attempt clears the board and its feedback underlines the card as an AnsTable or working rows fill and a crossed chip lands; the bench, step chips and next chip close; scene crossfade with settle."},
+        'rows': M7B11_ROWS,
+    },
+    'm7b12': {
+        'design': D + 'lessons/bio-m7-b12.md',
+        'learning_review': D + 'checks/m7b12-learning-review.md',
+        'science_check': D + 'checks/m7b12-claude-science-check.md',
+        'meta': {"title": "Mosquito Control: Insecticides, Sterile Males and Wolbachia", "subtitle": "In the 1950s, spraying DDT on mosquitoes bred resistance. In 2014, Townsville released more mosquitoes, and local dengue stayed rare for about ten years. How can controlling a vector reduce infection, and how do you judge which method to use?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 18, "lessonIntent": "explaining that a mosquito passes dengue on only if it bites an infected person, survives while the virus multiplies and bites again, so infection falls with fewer mosquitoes, fewer bites or mosquitoes that rarely pass the virus on; describing the *Aedes aegypti* life cycle (eggs above the waterline in containers, surviving dry months; larvae and pupae in water; adults in about a week; only females bite); explaining environmental management by removing breeding water and why it needs nearly every household (public health campaigns); explaining larvicides and adult sprays (insecticides that attack insect nerves) and why bed nets suit mostly night-biting *Anopheles* while indoor spraying of resting sites works against both (in Queensland, against day-biting *Aedes* in dengue outbreaks); explaining insecticide resistance by selection and the harm of sprays (other insects; DDT building up in food chains and thinning raptor eggshells); explaining the sterile insect technique and why releases must continue; explaining self-limiting genetically engineered males and recalling why gene drives are hard to reverse; explaining that Wolbachia isn't genetic engineering, blocks dengue in the mosquito and spreads by itself (passed through eggs; infected females' eggs hatch whichever male they mate with; eggs of uninfected females mated by infected males don't hatch); evaluating each method by how much it cuts transmission, how long it lasts, cost and harm, and justifying combined methods."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "three-ways", "life-cycle", "remove-water", "pesticides", "resistance-harm", "sterile-males", "engineered-males", "wolbachia", "judge", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b03: a vector is a living carrier (a mosquito or tick) that takes a pathogen between hosts; Plasmodium develops inside Anopheles; \"bed nets, repellent, and draining standing water where mosquitoes breed\"; attempt 1 used draining and larvicide for Ross River virus. From b10: environmental management changes places so pathogens can't reach new hosts; the control board; evaluating by which link, how fast, how long and cost. From b11: \"the drug selects resistance; it doesn't create it\". From bio-m6-b01: selection raises the frequency of an existing resistance allele. From bio-m6-b18: an inserted gene from another source (recombinant DNA) can be expressed in a host. From bio-m6-b11 (flagged above): a gene drive copies itself to the partner chromosome so nearly all offspring inherit it; it has not been released in the wild. Not assumed: the Aedes life cycle, container breeding, larvicides, insecticide modes of action, day against night biting, the sterile insect technique, self-limiting males, Wolbachia, cytoplasmic incompatibility.", "startsWith": "Follow a vector life cycle and environmental intervention. The video opens: In the 1950s, the world sprayed DDT to wipe out malaria, and within years, many mosquitoes could survive it.", "stopsAfter": "explaining that a mosquito passes dengue on only if it bites an infected person, survives while the virus multiplies and bites again, so infection falls with fewer mosquitoes, fewer bites or mosquitoes that rarely pass the virus on; describing the *Aedes aegypti* life cycle (eggs above the waterline in containers, surviving dry months; larvae and pupae in water; adults in about a week; only females bite); explaining environmental management by removing breeding water and why it needs nearly every household (public health campaigns); explaining larvicides and adult sprays (insecticides that attack insect nerves) and why bed nets suit mostly night-biting *Anopheles* while indoor spraying of resting sites works against both (in Queensland, against day-biting *Aedes* in dengue outbreaks); explaining insecticide resistance by selection and the harm of sprays (other insects; DDT building up in food chains and thinning raptor eggshells); explaining the sterile insect technique and why releases must continue; explaining self-limiting genetically engineered males and recalling why gene drives are hard to reverse; explaining that Wolbachia isn't genetic engineering, blocks dengue in the mosquito and spreads by itself (passed through eggs; infected females' eggs hatch whichever male they mate with; eggs of uninfected females mated by infected males don't hatch); evaluating each method by how much it cuts transmission, how long it lasts, cost and harm, and justifying combined methods.", "nextLesson": "what limits malaria and dengue control in practice (route entry bio-m7-b13)."},
+        'teaching': {"task": "In the 1950s, spraying DDT on mosquitoes bred resistance. In 2014, Townsville released more mosquitoes, and local dengue stayed rare for about ten years. How can controlling a vector reduce infection, and how do you judge which method to use?", "causalExplanation": "Causes: why vector control cuts infection (transmission needs a bite, survival and a second bite; 2); why removing water works and fails (no water, no larvae; one missed container keeps breeding; 3, 4); why the method depends on biting time (nets only work when people are under them; 5); why sprays stop working (selection; 6); why sprays harm more than mosquitoes (broad action; build-up along food chains; 6); why sterile males cut numbers and why releases must continue (no offspring either way; 7); why self-limiting males cut biting females (daughters die; 8); why gene drives are risky (spread by themselves; 8); why Wolbachia spreads and lasts (passed through eggs; failed eggs for uninfected females; 9); why programs combine methods (each has a gap; 10). Visible case: the same wheel gains a break mark at the stage each method attacks; the same population row thins or turns teal. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 5 (pesticides and biting times) and 9 (Wolbachia's two pairings) are the densest, so earlier tags dim.", "conversationalApproach": "In the 1950s the world sprayed DDT to wipe out malaria and within years many mosquitoes could survive it, while in 2014 Townsville released more mosquitoes and local dengue stayed rare for about ten years, so the question is how controlling a vector reduces infection and how to judge which method to use. A vector is a living carrier, and Aedes aegypti carries dengue, so there are three ways to cut the link: fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on. The life cycle in a container of water shows the simplest control, taking away the water through public health campaigns. Pesticides kill larvae and adults, and timing matters because Aedes bites in the day, but insecticides select resistance alleles each generation and can harm other species. Sterile males reared and released leave no offspring, engineered males carry a gene that kills their female offspring, and gene drives could spread a gene through a population. Wolbachia is a natural bacterium, not genetic engineering, that blocks dengue inside the mosquito and passes from mothers to offspring, so the mosquitoes stay but dengue is blocked. Methods are judged by how much they cut transmission, how long the effect lasts, what they cost and what else they harm, and the memory aid is fewer mosquitoes, fewer bites, or mosquitoes that rarely pass it on. Two exam questions follow with brief feedback.", "openingDecision": "In the 1950s, the world sprayed DDT to wipe out malaria, and within years, many mosquitoes could survive it. In 2014, Townsville tried something that sounds backwards. It released more mosquitoes, carrying a bacterium. After the bacterium spread through the city's mosquitoes, local dengue stayed rare for about ten years. So how does controlling a vector cut infection, and why did adding mosquitoes help?", "understandingCheck": "12a is an explain-and-propose item with survival data (resistance by selection; a change that resistance doesn't defeat). 12c is an explain item comparing two towns after releases stop (sterile males against Wolbachia: persistence, the route's \"trade-offs\"). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ4-02 (p 55): \"investigate procedures that can be employed to prevent the spread of disease, including but not limited to: (ACSBL124)\", with the listed items \"public health campaigns\", \"use of pesticides\" and \"genetic engineering\" (this video; \"hygiene practices\", \"quarantine\" and \"vaccination, including passive and active immunity (ACSBL100, ACSBL123)\" were b10's). B7-IQ4-04 (p 55): \"investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic\" (this video: environmental management of a vector's breeding sites, scene 4, evaluated in scene 10; quarantine was b10's). Verb \"investigate\": attempt 1 reads resistance survey data; the hook and scene 9 read Townsville as evidence. Verb \"evaluate\": scene 10 gives four criteria and judges each method; attempt 2 compares the persistence of two methods. Public health campaigns: scene 4 names the household campaign to remove breeding water (Queensland's \"tip, toss and cover\" advice is a screen tag only)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One mosquito life cycle wheel, drawn in scene 3 and kept at the left from then on: four stations round a circle, \"eggs on a container wall\", \"larvae in water\", \"pupae\", \"adult female bites\", each with its painted plate. Each method then lands on the wheel at the stage it attacks, as a coded `BreakMark` (b03's) with a small plate or chip: environmental management at \"larvae in water\" (the container tips), larvicide at \"larvae\", adult spray at \"adult\", bed nets at \"bites\" (for Anopheles, shown as a small second wheel thumbnail), sterile males at \"eggs\" (eggs don't hatch), self-limiting males at \"larvae to adult\" (daughters die), Wolbachia at \"bites\" (the virus is blocked, the mosquito lives). A coded population counter (a row of small Aedes glyph outlines that thins or refills) sits under the wheel in scenes 7 to 9. Wolbachia is a coded teal dot inside a mosquito glyph, explained once with the new painted `m7-wolbachia-cell-v1.png`. Scene 6 uses a coded survival bar across three generations and the aligned eggshell pair. Scene 10 is a coded four-column criteria table, b10's `CriteriaTable` re-used. No people, hands or faces: no households, sprayer operators, sleepers under nets, residents or scientists; the bed net plate (`m7-bed-net-v1.png`) is an empty bed; the sprayer is a plate without an operator; Townsville is a coded coastline outline with a dot. Scale: the mosquito, the larva and pupa plate, the container, the eggshell pair and the Wolbachia cell are never shown at one scale; each has its own grey label, and the Wolbachia cell carries \"drawn far larger than real\". Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched (the container may rotate when it tips, never squash).", "transitionPlan": "The insecticide sprayer and Anopheles mosquito plates open the hook as a PopulationRow keeps its two resistant survivors, then a coded coastline marks Townsville and the Aedes plate's glyph row gains teal dots; the hook shrinks as b03's route board draws small across the top with three break points; the LifeCycleWheel draws large with its four stations and a flooded bucket plate; the bucket tips out and a BreakMark lands; coded pellets fall into the bucket and a spray mark lands on the adult station beside a day clock; SurvivalBars write three generations with more resistant glyphs each time and a non-target chip; the mosquito cage plate and a coded radiation trefoil send sterile male glyphs to the wheel and an EggHatchRow stays mostly dark; a coded chromosome pair with an amber band writes beside the Aedes plate and an OffspringRow loses its females, then a small gene drive thumbnail fills almost all amber; the Wolbachia cell plate appears large as coded dengue particles fail to copy and the bacteria pass to the offspring; b10's CriteriaTable fills row by row; the memory line writes with a thumbnail under each phrase; each attempt clears the board and its feedback underlines the card as a small bar chart or two columns fill and a crossed chip lands; the wheel, step chips and next chip close; scene crossfade with settle."},
+        'rows': M7B12_ROWS,
+    },
+    # --- M7 b08, b09, g03, b10, b11 and b12 entries (end) ---
 }
 
 

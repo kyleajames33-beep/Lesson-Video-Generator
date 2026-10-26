@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-G02-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7g02/lesson.json",
+  "lessonSha256": "2e78304af0eb95be005e16234d9c35dc6387d2541f15456176ebcb516f992a91",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7g02/lesson.production-brief.json",
+    "sha256": "715dcee5c599f5475a305b3ad102a455e31b0bf1fe08f3bbc186e217d2d24e64"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A combustion question hands you three numbers that look alike: the water's mass, its temperature rise, and the mass of fuel burnt. Each one has a single job. The water's mass and its rise go into q. The fuel's mass gives n. Swap them, and the answer can be out by a factor of a hundred or more. Here are three HSC-style questions, and the last one hides a result that doesn't belong. Pause and try each one, then we'll work through it, one step at a time.",
+      "hash": "4f7cba405580",
+      "textSha256": "4f7cba40558011438ccbbf2e504e33f07f16d0db9330892d1e755c5e9c66c82b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/hook.4f7cba405580.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/hook.4f7cba405580.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/hook.4f7cba405580.generation.json",
+      "plannedRequestSha256": "1d11ec2b96a9627e30192466405314296318ade8d7dc585893666df474bfce31"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. A methanol spirit burner heats a hundred and fifty grams of water from twenty two point four to forty two point four degrees. The burner's masses before and after are on the card. Calculate the molar enthalpy of combustion of methanol, then the percentage of the methanol's heat that reached the water. Pause here to answer.",
+      "hash": "973a7ed172ff",
+      "textSha256": "973a7ed172ff0e12a31b53f0fb4f37e4d88133462036ae6a6b9aedc2f9f2a50a",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-question.973a7ed172ff.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-question.973a7ed172ff.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-question.973a7ed172ff.generation.json",
+      "plannedRequestSha256": "93ad4b96962bedeec42d2f4a0dd4fcb56d2224aca7d6c8bc0ddabe01e88cadfb"
+    },
+    {
+      "id": "q1-q-and-n",
+      "parentSceneId": "q1-q-and-n",
+      "text": "Start with the water. Delta T is twenty point zero degrees, so q is a hundred and fifty, times four point one eight, times twenty: twelve thousand five hundred and forty joules, or twelve point five four zero kilojoules. Keep every digit for now. Now the fuel. The burner lost one point one zero grams. Divide by thirty two point zero four, and that's zero point zero three four three three moles of methanol.",
+      "hash": "5cad7f4339e5",
+      "textSha256": "5cad7f4339e587a94c23b9b99bfc307b1aa199be0f0c7676cfcfc2cf54501eb6",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-q-and-n.5cad7f4339e5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-q-and-n.5cad7f4339e5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-q-and-n.5cad7f4339e5.generation.json",
+      "plannedRequestSha256": "79eb91358b2a4e3ce5ffd93ff768a2c636600d8f63920a41551a64a89ee69905"
+    },
+    {
+      "id": "q1-dh",
+      "parentSceneId": "q1-dh",
+      "text": "Delta H is minus q over n: minus twelve point five four zero kilojoules, over zero point zero three four three three moles. That's minus three sixty five point two six, so minus three hundred and sixty five kilojoules per mole. Three significant figures, from the mass lost and the temperature rise. And it's negative, because burning releases heat.",
+      "hash": "09af83bb9aaa",
+      "textSha256": "09af83bb9aaa134a483065b16b22d17263079adeefdbec3e05dcc6cd8580a36e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-dh.09af83bb9aaa.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-dh.09af83bb9aaa.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-dh.09af83bb9aaa.generation.json",
+      "plannedRequestSha256": "3d28cf0a17c121a5d215defd36983991720004e6d4cbee0811a4a5b52958a753"
+    },
+    {
+      "id": "q1-percent",
+      "parentSceneId": "q1-percent",
+      "text": "Part b asks how much of the heat reached the water. If those zero point zero three four three three moles burned completely, they'd release that times seven hundred and twenty six: twenty four point nine three kilojoules. The water took in twelve point five four. That's fifty point three percent: about half, which is typical for a spirit burner and can. The rest warmed the can and the air.",
+      "hash": "3a76184b7336",
+      "textSha256": "3a76184b7336ab8fa021468a68c9805f7c61fa8fc57a3048c485267ba06dcc29",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-percent.3a76184b7336.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-percent.3a76184b7336.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-percent.3a76184b7336.generation.json",
+      "plannedRequestSha256": "b5a587c37a9b98bdc80803f21586e085fdceb7b69af28845bd4622038f330f6a"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic slip is dividing by the grams instead of the moles. Twelve point five four over one point one zero gives eleven point four, but that's kilojoules per gram, not per mole.",
+      "hash": "535baf644262",
+      "textSha256": "535baf6442620d306f880ad1381a111ff39d3ff04a8cd4169f1ffdbd1d125e5c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-mistake.535baf644262.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-mistake.535baf644262.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q1-mistake.535baf644262.generation.json",
+      "plannedRequestSha256": "c9e8af8f792cea63d5bbdff49615c8791681cf3fddd23bcfa2a0c611b4d07f41"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two runs the other way. A student wants to warm two hundred and fifty grams of water by fifteen degrees with an ethanol burner. Earlier trials showed the water takes in forty five percent of the heat released. Using the data value for ethanol, calculate the mass of ethanol she should expect to burn. Pause here to answer.",
+      "hash": "adf88b5921ca",
+      "textSha256": "adf88b5921ca2e74838fda66e79f46815bd050667d2372330ebc558c4312b619",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-question.adf88b5921ca.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-question.adf88b5921ca.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-question.adf88b5921ca.generation.json",
+      "plannedRequestSha256": "7d5cdc36cf1eeab7f52fa9a4a417bc94f57a6c2fb98f9fc6607c055c3e903dc1"
+    },
+    {
+      "id": "q2-heat",
+      "parentSceneId": "q2-heat",
+      "text": "First, the heat the water needs: two hundred and fifty, times four point one eight, times fifteen point zero. That's fifteen point six seven five kilojoules. But only forty five percent of the burner's heat reaches the water, so it must release more than that: fifteen point six seven five divided by zero point four five zero is thirty four point eight three kilojoules.",
+      "hash": "99cd586bf9bb",
+      "textSha256": "99cd586bf9bb65a67e6c659f999b8f3845605477519d9f493f9d54e4c1dc05da",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-heat.99cd586bf9bb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-heat.99cd586bf9bb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-heat.99cd586bf9bb.generation.json",
+      "plannedRequestSha256": "ab821de17ac59e51ede022e4a78c6c83f0fd874efe0f246d9a4235cbeb0ba2de"
+    },
+    {
+      "id": "q2-mass",
+      "parentSceneId": "q2-mass",
+      "text": "Now the fuel. Each mole of ethanol releases thirteen hundred and sixty seven kilojoules, so thirty four point eight three over thirteen sixty seven is zero point zero two five four eight moles. Times forty six point zero seven: one point one seven grams. Three significant figures, from the fifteen point zero degrees and the forty five point zero percent.",
+      "hash": "fed88ef4e3b8",
+      "textSha256": "fed88ef4e3b8bbe663d3f53cdadb40edde970676226cef26b22603245279d9d9",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-mass.fed88ef4e3b8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-mass.fed88ef4e3b8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-mass.fed88ef4e3b8.generation.json",
+      "plannedRequestSha256": "56f1a0439eb5305c1939edeee8960d9026b19f6e19f815086d6aeac24e2467d4"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic slip is multiplying by zero point four five zero instead of dividing. That gives zero point two three eight grams. But if heat is lost, you need more fuel, not less, so the answer has to be bigger than the no-loss mass, zero point five two eight grams.",
+      "hash": "77a04513845d",
+      "textSha256": "77a04513845d413a89a5b4732944082ad70b8a9a6a7bcc19b0c48407f4f3f25a",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-mistake.77a04513845d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-mistake.77a04513845d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q2-mistake.77a04513845d.generation.json",
+      "plannedRequestSha256": "66023708624fa03e9429a0b08ea78cd2ea04fe3008b72d0d9ed04f7084568c6f"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A student burns propan-one-ol in four trials, heating two hundred and fifty grams of water each time. The table gives each temperature rise, the mass the burner lost, and three of the molar enthalpies. Calculate the molar enthalpy for trial three. Then explain whether trial three should be included in the mean, and calculate the mean. Pause here to answer.",
+      "hash": "7a7f76496be9",
+      "textSha256": "7a7f76496be9b41f7ff44e392f21b3586086103504e155ff5fc3b04bc186fb30",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-question.7a7f76496be9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-question.7a7f76496be9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-question.7a7f76496be9.generation.json",
+      "plannedRequestSha256": "0419dc5ebd5eac7a8fa2a9c5c538016463a9122736be5484d1ab6e1437c2132f"
+    },
+    {
+      "id": "q3-trial3",
+      "parentSceneId": "q3-trial3",
+      "text": "Trial three, same steps. q is two hundred and fifty, times four point one eight, times eighteen point two: nineteen thousand and nineteen joules. n is one point six two over sixty point zero nine: zero point zero two six nine six moles. So delta H is minus seven hundred and five kilojoules per mole. The other three trials all sit close to minus nine seventy five, so this one is far less negative.",
+      "hash": "9d1b26710e63",
+      "textSha256": "9d1b26710e63dd2a3adc825848d134056279bf835e4d322adee630c4b6000d71",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-trial3.9d1b26710e63.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-trial3.9d1b26710e63.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-trial3.9d1b26710e63.generation.json",
+      "plannedRequestSha256": "52a83e6ed5cf21515beeca69a26ec51b00ddae74828e70637540798e492cef5c"
+    },
+    {
+      "id": "q3-judge",
+      "parentSceneId": "q3-judge",
+      "text": "So does it belong? Look for the cause. Trial three's temperature rise matches the others, but the burner lost nearly half a gram more. Extra mass with no extra heat means that fuel never heated the water. Most likely it left without burning: the burner was left uncapped and evaporated, or some spilled. That makes n too big, and delta H less negative. It's an anomaly with a likely cause, so leave it out of the mean, and repeat that trial if you can.",
+      "hash": "bb7402760788",
+      "textSha256": "bb7402760788ffcd304504f37db599c9264869a44d2e40803a03f28571de7419",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-judge.bb7402760788.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-judge.bb7402760788.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-judge.bb7402760788.generation.json",
+      "plannedRequestSha256": "d25054099d1904b00ae148d3fcf0a781ba96a5a2ac0df7c8d6e80341ce44a094"
+    },
+    {
+      "id": "q3-mean",
+      "parentSceneId": "q3-mean",
+      "text": "Average the other three. Minus nine seventy four, minus nine seventy seven and minus nine seventy one give a mean of minus nine hundred and seventy four kilojoules per mole. That's about forty eight percent of the data value, in line with question one's fifty, so the three that fit look like normal trials. Only drop a result when you can explain it.",
+      "hash": "69b4a1032e56",
+      "textSha256": "69b4a1032e56049a1f12d6f238325948245b3e0d0b1d9ac24ca1e7330bef212f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-mean.69b4a1032e56.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-mean.69b4a1032e56.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-mean.69b4a1032e56.generation.json",
+      "plannedRequestSha256": "19872d3462a4c10158a7d9fff66f2c9c8b17b18435b3b25f97b07d871073fc34"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is averaging all four. Trial three drags the mean to minus nine hundred and seven, a value that no good trial gave.",
+      "hash": "1ece948f6305",
+      "textSha256": "1ece948f6305ca917da206f5901179feda5f9a3dcae69db9247aede5a035fc42",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-mistake.1ece948f6305.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-mistake.1ece948f6305.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/q3-mistake.1ece948f6305.generation.json",
+      "plannedRequestSha256": "ef98a39a3c99bf801e73498d1e65fdec24a78c1b7d275e02c80b8ae6850b73f0"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So for any combustion calculation: the water's mass and rise go into q, the fuel's mass lost gives n, and delta H is minus q over n, in kilojoules per mole. If only part of the heat reaches the water, divide by that fraction to find the heat released. And when one trial doesn't fit, find its cause before you leave it out. Next, where an alcohol goes when it reacts.",
+      "hash": "d2ff5945faed",
+      "textSha256": "d2ff5945faed77688e33cba6f1adc824d11327d9f256a5fe5ae180b4c7325f19",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/decision-board.d2ff5945faed.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/decision-board.d2ff5945faed.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/decision-board.d2ff5945faed.generation.json",
+      "plannedRequestSha256": "931dc08172e545175e12111a5c246565fcc0a2ea4d3211bc52fb97eccaecdcf5"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G02-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

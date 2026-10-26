@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c08b/lesson.json",
+    "lessonSha256": "9e2b00e97f722426315fdb8999c25726523a5cd70d93db307bc54ef0e02e025e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c08a (oxidation removes two H and forms C=O, the carbonyl group; primary to aldehyde to acid, secondary to ketone, tertiary no reaction; distil for the aldehyde; acidified dichromate orange to green; \"-al\" and \"-one\" read as endings); chem-m7-c05 (alcohol naming, hydrogen bonding between O–H groups, boiling points, solubility, \"Same size? Hydrogen bonding wins.\"); chem-m7-c03 (dispersion forces, the water lattice, \"like dissolves like\"); chem-m7-c01 and g01 (naming rules, locants, branches); chem-m7-c02 (isomers). Year 11: electronegativity, polar bonds, lone pairs, dipole–dipole forces, reduction as gain of electrons. Not assumed: aldehyde and ketone naming rules, functional group isomer (c02 named structural isomers; this video adds the functional group kind with a plain meaning), Tollens', Fehling's, Benedict's, precipitate (Year 11 term, given a plain meaning).",
+    "startsWith": "Locate the carbonyl and name aldehydes and ketones. The video opens: In the alcohol reactions video, oxidising propan-two-ol gave a ketone, propanone. Oxidise propan-one-ol and distil, as we did with ethanol, and you get an aldehyde, propanal. Both have the formula C three H six O.",
+    "stopsAfter": "identifying an aldehyde or ketone from the carbonyl's position; naming both up to C8 with methyl or ethyl branches; recognising functional group isomers; explaining their boiling points and solubility from their forces; explaining why an aldehyde gives a positive Tollens', Fehling's or dichromate test and a ketone does not; using a test on an oxidation product to identify the alcohol's class. No carboxylic acid properties, no practical procedure.",
+    "nextLesson": "oxidising alcohols and testing the products in the lab (route chem-m7-p04, \"Investigate alcohol oxidation products\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c08b.md"
+  ],
+  "teaching": {
+    "task": "Oxidise propan-1-ol and distil, and you get propanal; oxidise propan-2-ol, and you get propanone. Both are C₃H₆O, and both are colourless liquids, yet only one turns a test tube into a silver mirror. How do we name aldehydes and ketones, how does the carbonyl's position change their properties, and how can a test tell them apart?",
+    "causalExplanation": "(1) propanal and propanone share a formula, yet one gives a silver mirror (1); (2) both have a polar carbonyl; the aldehyde's is at the end, so its carbonyl carbon carries an H; the ketone's is inside, with a carbon each side (2); (3) aldehyde names: \"-al\", the carbonyl carbon is C1, so no number (3); (4) ketone names: \"-one\", a number from C5, from the end nearer the C=O (4); (5) same formula, different group: functional group isomers, easy to miss (5); (6) the polar C=O gives dipole–dipole forces, but no O–H means no hydrogen bonding between their molecules, so their boiling points sit between alkane and alcohol (6); (7) the aldehyde H is on carbon, so it can't hydrogen bond; water can hydrogen bond to the carbonyl oxygen, so small ones dissolve (7); (8) the aldehyde's carbonyl H lets mild oxidants oxidise it, and the reduced reagent changes visibly; a ketone has none (8); (9) Tollens': silver ions reduced to a silver mirror (9); (10) Fehling's: blue copper(II) reduced to a brick-red copper(I) oxide precipitate (10); (11) dichromate too; all three ask one question (11); (12) testing the distilled product identifies the alcohol's class; dichromate alone can't (12); memory aid (13); two attempts and brief feedback (14 to 17); handoff (18); key notes (19).",
+    "conversationalApproach": "oxidising propan-1-ol and distilling gives propanal while propan-2-ol gives propanone, both C3H6O, yet only one makes a silver mirror, so the video asks how to name aldehydes and ketones, how the carbonyl's position shapes their forces, and how a test tells them apart. Both have a polar C=O; an aldehyde's carbonyl is at the end of the chain, so its carbon carries a hydrogen, while a ketone's sits inside with a carbon on each side. Aldehydes take al with no number because the carbonyl carbon is carbon one; ketones take one, with a number from five carbons, counted from the end nearer the C=O; the pair are functional group isomers. The polar C=O gives dipole-dipole forces but no hydrogen bonds between the molecules, so boiling points sit between the alkane and the alcohol, while water can hydrogen bond to the carbonyl oxygen, so small ones dissolve. The aldehyde's one hydrogen lets mild oxidants oxidise it: Tollens' reagent leaves a silver mirror, Fehling's or Benedict's solution turns from blue to a brick-red precipitate, and acidified dichromate turns green, while a ketone leaves each unchanged. Testing the distilled product of an oxidation identifies the alcohol's class. The memory aid is aldehyde at the end, ketone in the middle, and every test asks whether there is an H on the carbonyl carbon. Two exam questions follow with brief feedback.",
+    "openingDecision": "In the alcohol reactions video, oxidising propan-two-ol gave a ketone, propanone. Oxidise propan-one-ol and distil, as we did with ethanol, and you get an aldehyde, propanal. Both have the formula C three H six O. Both are colourless liquids. Yet warm each one with this reagent, and one coats the tube in a silver mirror, while the other does nothing. What's the difference, and how do we name and test these compounds?",
+    "understandingCheck": "(A1) \"A compound has the condensed structural formula CH₃CH₂COCH(CH₃)CH₃. State whether it is an aldehyde or a ketone, giving a reason, and give its IUPAC name.\" A skeletal formula is shown beside it in plain ink (no colours, no locants). New molecule (scenes use straight-chain pentanones and 2-methylpropanal); tests the carbonyl's position and branch numbering. Crossed mistake: \"4-methylpentan-3-one\" (numbered from the wrong end; the c01 and c05 feedback pattern). (A2) \"Compounds A and B both have the molecular formula C₄H₈O, and both contain a C=O group. When each is warmed with Tollens' reagent, A forms a silver mirror and B shows no change. A has an unbranched chain. Identify A and B by IUPAC name, and explain the difference in their results.\" New pair (scenes use propanal and propanone); tests the one-hydrogen reason. Crossed mistake: \"Both have a C=O group, so both should form a mirror.\" (the site's Common Error, Fehling's version).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127); alkanes; alkenes; alkynes; alcohols (primary, secondary and tertiary); aldehydes and ketones; carboxylic acids; amines and amides; halogenated organic compounds\" This video covers aldehydes and ketones only (hydrocarbons chem-m7-c01 and g01; haloalkanes chem-m7-c04a; alcohols chem-m7-c05). \"investigate the structural formulae, properties and functional group including:; primary, secondary and tertiary alcohols; aldehydes and ketones (ACSCH127); amines and amides; carboxylic acids\" This video covers aldehydes and ketones (alcohols chem-m7-c05; carboxylic acids chem-m7-c09; amines and amides chem-m7-c11). \"investigate the products of the oxidation of primary and secondary alcohols\" This video shows how the products are told apart; chem-m7-c08a predicted them, and chem-m7-p04 carries out the investigation. this video starts by locating the carbonyl group in an aldehyde and a ketone and naming both families, and stops at explaining how tests distinguish an aldehyde from a ketone and using them to identify the product of an alcohol oxidation. It teaches: the carbonyl group (recalled from c08a) is polar because oxygen attracts the shared electrons more strongly; in an aldehyde the C=O is at the end of the chain and the carbonyl carbon carries an H (–CHO); in a ketone the C=O is inside the chain, with a carbon on each side and no H on the carbonyl carbon; naming aldehydes (longest chain including the carbonyl carbon, drop the final \"e\", add \"al\"; the carbonyl carbon is C1, so no locant; branches numbered from it: 2-methylpropanal); naming ketones (\"one\"; propanone and butanone need no locant; from C5 a locant from the end nearer the C=O: pentan-2-one, pentan-3-one; branches as in c01); aldehydes and ketones with the same number of carbons (three or more) are functional group isomers (propanal and propanone, C₃H₆O); intermolecular forces: dipole–dipole from the C=O plus dispersion, and no hydrogen bonding between their own molecules (no O–H), so for similar sizes their boiling points sit between an alkane and an alcohol; the aldehyde H is on carbon, not oxygen, so it cannot donate a hydrogen bond; water can hydrogen bond to the carbonyl oxygen's lone pairs, so small aldehydes and ketones dissolve in water, less as the chain grows; tests: the aldehyde's carbonyl H lets it be oxidised by mild oxidising agents while the reagent is reduced; Tollens' reagent (silver ions in ammonia solution, warmed) gives a silver mirror with an aldehyde and no change with a ketone; Fehling's or Benedict's solution (blue, copper(II)) gives a brick-red precipitate of copper(I) oxide with an aldehyde and stays blue with a ketone; acidified dichromate turns green with an aldehyde and stays orange with a ketone; using a test on the distilled product of an alcohol oxidation to identify a primary or secondary alcohol, and why dichromate alone cannot (primary and secondary alcohols turn it green too); Tollens' hazard: made fresh, used at once and disposed of promptly, because on standing it can form an explosive solid. Not here: alcohol reactions and conditions (chem-m7-c08a, recalled); carboxylic acids, their dimers, boiling points and acidity (chem-m7-c09); the practical procedure, reagent preparation and risk table (chem-m7-p04, with `C7-IQ2-05`); half-equations for the tests (author note d); aromatic aldehydes and ketones (vanillin, raspberry ketone; author note g); reduction of carbonyl compounds; aldehyde and ketone uses beyond one hook line; cyclic ketones; the site's olfactory-receptor discussion."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c08a: carbon skeleton ink; hydrogens soft grey (the aldehyde's carbonyl H grey-white and slightly larger); main chain pale blue; branches amber; oxygen brick red, the C=O ringed red as the functional group; δ− and δ+ small in navy; lone pairs as two small red dot pairs on O; dipole–dipole attractions dotted teal; hydrogen bonds dotted violet; dispersion forces dotted pale blue. Board layout (constant): top-left the short task chip (\"Aldehyde or ketone?\", \"Name it\", \"Forces\", \"Test it\"); centre the structure board, one molecule or one pair at a time; the boiling point strip at the right only in scene 6; plates small or medium at the left or right only in scenes 1, 9, 10, 11, 12 and 17. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 23 Oct): `m8-dichromate-orange-v1.png` and `m8-dichromate-green-v1.png` (aligned pair, as in c08a; scene 11, small; same pre-build alpha check as c08a). No other existing plate fits: the `c5-copper-tube-*` pair shows a copper(II) equilibrium colour shift, not a precipitate; `m7-bromine-water-pair-v1.png` is a different test. Four new plates (two aligned pairs; Assets). All plates small or medium, scale uniformly only, never stretched. No human figures.",
+    "transitionPlan": "A grey thumbnail writes the two oxidation lines in the narration's order as the two Tollens' tube plates sit side by side and one cross-fades to a mirror; the board clears to propanal and propanone in full structural form with their C=O ringed red and ink ball-and-stick models beneath; the name builder writes butanal from the traced chain, then strikes the e and adds one for propanone and the numbered ketones; an atom tally counts both C3H6O and a bracket joins them as functional group isomers; the force view links four butanal molecules with dotted teal dipole lines while a crossed violet line rules out hydrogen bonds, and the boiling point strip drops each molecule to its mark; the water lattice bonds to the carbonyl oxygen; the c08a product ladder returns and the H counter runs on each carbonyl carbon; the Tollens' plate cross-fades from clear to mirror and the Fehling's plate from blue to brick red with their reduction chips; the results grid builds row by row; the three-step flow branches to primary and secondary outcomes; the memory lines write with three small cards; each attempt clears the board and its feedback underlines the card as the name builder or tube plates return and a crossed chip lands; the memory line, results grid and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Aldehydes and ketones: how can you tell?\".",
+      "teachingReason": "Hook (same formula, one silver mirror): In the alcohol reactions video, oxidising propan-two-ol gave a ketone, propanone.",
+      "narrationCue": "silver mirror / nothing",
+      "motionPurpose": "On the spoken cues: A small grey thumbnail sits top-left, its lines in the narration's order: \"propan-2-ol + [O] → propanone\" (grey \"c08a\" chip), then, writing on as it is said, \"propan-1-ol + [O] (distil) → propanal\" with a small grey tag \"like ethanol → ethanal\". Propanal and propanone draw side by side as condensed formulas, each with a chip \"C₃H₆O\" that pulses together. Below each, `m7-tollens-tube-clear-v1.png` appears small, same",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Aldehydes and ketones: how can you tell?\". A small grey thumbnail sits top-left, its lines in the narration's order: \"propan-2-ol + [O] → propanone\" (grey \"c08a\" chip), then, writing on as it is said, \"propan-1-ol + [O] (distil) → propanal\" with a small grey tag \"like ethanol → ethanal\". Propanal and propanone draw side by side as condensed formulas, each with a chip \"C₃H₆O\" that pulses together. Below each, `m7-tollens-tube-clear-v1.png` appears small, same size (label \"Tollens' reagent, warmed\" on the left tube only). On \"silver mirror\" the left plate cross-fades to `m7-tollens-tube-mirror-v1.png` (aligned pair) while the mirror coat runs (tag \"propanal\"). On \"nothing\" the right tube stays clear (tag \"propanone: no change\"). As the question is asked the c08a thumbnail and the label dim. Bright at the end: the heading, the mirror tube and the \"no change\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "carbonyl-position",
+      "visualDecision": "new",
+      "visualReference": "the plates leave.",
+      "teachingReason": "The carbonyl, at the end or in the middle: Both contain a carbonyl group, a carbon double bonded to oxygen.",
+      "narrationCue": "carbonyl / polar / where / hydrogen / each",
+      "motionPurpose": "On the spoken cues: Task chip \"Aldehyde or ketone?\". Propanal (left) and propanone (right) redraw in full structural form, each C=O ringed red; ink ball-and-stick versions sit small beneath them (engine3d port). On \"carbonyl\" a chip writes \"carbonyl: C=O\" (grey \"c08a\" chip). On \"polar\" the polar pull runs on both C=O bonds: the shared pair slides towards O, \"δ−\" on O and \"δ+\" on C. On \"where\" the carbonyl locator travels along each",
+      "motionRole": "explain",
+      "onScreenChange": "the plates leave. Task chip \"Aldehyde or ketone?\". Propanal (left) and propanone (right) redraw in full structural form, each C=O ringed red; ink ball-and-stick versions sit small beneath them (engine3d port). On \"carbonyl\" a chip writes \"carbonyl: C=O\" (grey \"c08a\" chip). On \"polar\" the polar pull runs on both C=O bonds: the shared pair slides towards O, \"δ−\" on O and \"δ+\" on C. On \"where\" the carbonyl locator travels along each chain. On \"hydrogen\" it settles on propanal's end carbon and the carbonyl H glows grey-white (tag \"aldehyde: C=O at the end, H on the carbonyl carbon, –CHO\"). On \"each\" it settles on propanone's middle carbon and two ink arrows point to the carbons either side (tag \"ketone: C=O inside, a carbon each side, no H\"). The δ labels dim. Bright at the end: the two structures and their two tags. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "naming-aldehydes",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Naming aldehydes: -al, and no number needed: To name an aldehyde, find the longest chain that includes the carbonyl carbon.",
+      "narrationCue": "al / butanal / two-methylpropanal",
+      "motionPurpose": "On the spoken cues: Task chip \"Name it\". The name builder (c01) with slots \"branches\", \"stem\", \"ending\". Butanal draws in full structural form (C=O ringed red, the carbonyl H grey-white). On \"longest chain\" the four carbons glow pale blue, including the carbonyl carbon. On \"al\" the builder writes \"butane\", the final \"e\" is struck grey and \"al\" writes in red in the ending slot. On \"carbon one\" the locant counter pops \"1\" on the carbonyl",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Name it\". The name builder (c01) with slots \"branches\", \"stem\", \"ending\". Butanal draws in full structural form (C=O ringed red, the carbonyl H grey-white). On \"longest chain\" the four carbons glow pale blue, including the carbonyl carbon. On \"al\" the builder writes \"butane\", the final \"e\" is struck grey and \"al\" writes in red in the ending slot. On \"carbon one\" the locant counter pops \"1\" on the carbonyl carbon (grey tag \"always C1: no number\"). On \"butanal\" a small column writes beside it: \"HCHO methanal\", \"CH₃CHO ethanal\", \"CH₃CH₂CHO propanal\", \"CH₃CH₂CH₂CHO butanal\", each lighting and dimming in turn. On \"two-methylpropanal\" butanal leaves and (CH₃)₂CHCHO draws (branch amber); locants pop \"1\" (carbonyl carbon), \"2\" (branch carbon), \"3\"; the builder writes \"2-methyl\" + \"propan\" + \"al\". Bright at the end: the 2-methylpropanal structure, its name and the \"always C1\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "naming-ketones",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Naming ketones: -one, and a number from five carbons: Ketones end in one.",
+      "narrationCue": "one / pentan-two-one / pentan-three-one",
+      "motionPurpose": "On the spoken cues: The builder stays. On \"one\" propanone draws (skeletal, C=O ringed red); the builder writes \"propane\", strikes the \"e\" and adds \"one\" in red (grey tag \"only one place: no number\"). On \"Butanone\" CH₃COCH₂CH₃ draws small with the chip \"butanone = butan-2-one\". On \"position matters\" two pentanones draw one above the other: CH₃COCH₂CH₂CH₃ and CH₃CH₂COCH₂CH₃, chains pale blue. On \"nearer\" locants pop on the upper one from",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The builder stays. On \"one\" propanone draws (skeletal, C=O ringed red); the builder writes \"propane\", strikes the \"e\" and adds \"one\" in red (grey tag \"only one place: no number\"). On \"Butanone\" CH₃COCH₂CH₃ draws small with the chip \"butanone = butan-2-one\". On \"position matters\" two pentanones draw one above the other: CH₃COCH₂CH₂CH₃ and CH₃CH₂COCH₂CH₃, chains pale blue. On \"nearer\" locants pop on the upper one from the left: \"1\", \"2\" (C=O), ...; on \"pentan-two-one\" the builder writes \"pentan-2-one\"; ghost locants from the right show \"4\" in grey on the C=O and fade. On \"pentan-three-one\" locants pop on the lower one: the C=O is \"3\" from either end (tag \"3 from both ends\"); the builder writes \"pentan-3-one\". Bright at the end: the two pentanone names and the \"3 from both ends\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "functional-group-isomers",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Same formula, different group: Now count the atoms in propanal and propanone.",
+      "narrationCue": "functional group isomers / miss",
+      "motionPurpose": "On the spoken cues: Propanal and propanone return side by side (full structural). An atom tally (c06 style) counts each: \"C 3, H 6, O 1\" under both, and the chips \"C₃H₆O\" glow together. On \"functional group isomers\" a bracket joins them with the tag \"functional group isomers: same formula, different group\" (small grey c02 chip \"c02: structural isomers\"). On \"three or more carbons\" a small ethanal structure appears in grey with the tag",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Propanal and propanone return side by side (full structural). An atom tally (c06 style) counts each: \"C 3, H 6, O 1\" under both, and the chips \"C₃H₆O\" glow together. On \"functional group isomers\" a bracket joins them with the tag \"functional group isomers: same formula, different group\" (small grey c02 chip \"c02: structural isomers\"). On \"three or more carbons\" a small ethanal structure appears in grey with the tag \"C2: no ketone possible (needs a carbon each side)\" and dims. On \"miss\" a dashed outline around propanone flashes once (tag \"the pair students miss\"). Bright at the end: the two structures, the bracket tag and the \"students miss\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "forces-boiling",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Forces: polar, but no hydrogen bonds between them: Between the molecules, the polar C double bond O gives dipole-dipole attractions: the slightly positive carbon of one molecule attracts the slightly negative oxygen of the next.",
+      "narrationCue": "dipole-dipole / attracts / middle / eighteen",
+      "motionPurpose": "On the spoken cues: Task chip \"Forces\". The force view: four butanal molecules (skeletal, C=O ringed red, δ− and δ+ small); on \"dipole-dipole\" the δ+ and δ− labels brighten; on \"attracts\" dotted teal lines link a δ+ carbonyl carbon to a δ− oxygen on a neighbour, three times (tag \"dipole–dipole: δ+ C attracts δ− O\"); pale-blue dispersion lines flicker along the chains (tag \"dispersion\"). On \"can't hydrogen bond\" a chip \"aldehyde: O, so",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Forces\". The force view: four butanal molecules (skeletal, C=O ringed red, δ− and δ+ small); on \"dipole-dipole\" the δ+ and δ− labels brighten; on \"attracts\" dotted teal lines link a δ+ carbonyl carbon to a δ− oxygen on a neighbour, three times (tag \"dipole–dipole: δ+ C attracts δ− O\"); pale-blue dispersion lines flicker along the chains (tag \"dispersion\"). On \"can't hydrogen bond\" a chip \"aldehyde: O, so hydrogen bonds?\" fades in and is crossed (caption \"no O–H: no hydrogen bonds between them\"). On \"middle\" the force view shrinks and the boiling point strip draws at the right with its dashed \"room temperature, 25 °C\" line. A small grey c05 chip \"Same size? Hydrogen bonding wins.\" writes as the force view shrinks, and dims before \"eighteen\". Four skeletal structures drop to their marks as named: pentane \"36 °C\", just above the 25 °C line (tag \"dispersion only\"), butanal \"75 °C\", butan-2-one \"80 °C\" (the two bracketed, tag \"dipole–dipole: close\"), on \"eighteen\" butan-1-ol \"118 °C\" (tag \"hydrogen bonding\"). Bright at the end: the four marks, the \"close\" bracket and the \"hydrogen bonding\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "aldehyde-h-solubility",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the strip leaves.",
+      "teachingReason": "The aldehyde H, and why small ones dissolve: And the aldehyde's hydrogen?",
+      "narrationCue": "carbon / to / water",
+      "motionPurpose": "On the spoken cues: Propanal in full structural form; on \"carbon\" its carbonyl H glows grey-white with a crossed violet line beside it (tag \"C–H: not a hydrogen bond donor\"). A small grey chip \"c05: O–H donates\" writes and dims. On \"lone pairs\" two red dot pairs glow on the carbonyl O. On \"to\" the water lattice (c03) draws around a propanone molecule; two water molecules form dotted violet hydrogen bonds from their δ+ H to the carbonyl",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the strip leaves. Propanal in full structural form; on \"carbon\" its carbonyl H glows grey-white with a crossed violet line beside it (tag \"C–H: not a hydrogen bond donor\"). A small grey chip \"c05: O–H donates\" writes and dims. On \"lone pairs\" two red dot pairs glow on the carbonyl O. On \"to\" the water lattice (c03) draws around a propanone molecule; two water molecules form dotted violet hydrogen bonds from their δ+ H to the carbonyl O's lone pairs (tag \"water donates, C=O accepts\"). On \"water\" a chip writes \"propanone, ethanal: mix with water\". On \"solubility falls\" a short strip writes left to right, each label lighting and the previous dimming: \"propanone: mixes\", \"butan-2-one: partly\", \"pentan-3-one: a little\" (grey tag \"longer chain, less soluble\"). Bright at the end: the propanone in the lattice, its tag and the last strip label. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "one-hydrogen",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "One hydrogen makes the difference: Now the chemistry.",
+      "narrationCue": "easily / reduced / nothing",
+      "motionPurpose": "On the spoken cues: Task chip \"Test it\". The small c08a product ladder returns at the left (ethanol → ethanal → ethanoic acid; propan-2-ol → propanone, stop). On \"no hydrogen to remove\" the H counter runs on propanone's carbonyl carbon: \"0\". On \"still has one\" it runs on propanal's: \"1\", the H glowing. On \"easily\" a short arrow from propanal with \"mild oxidant\" leads to a chip \"oxidised\" (grey tag \"aldehyde: easily oxidised\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Test it\". The small c08a product ladder returns at the left (ethanol → ethanal → ethanoic acid; propan-2-ol → propanone, stop). On \"no hydrogen to remove\" the H counter runs on propanone's carbonyl carbon: \"0\". On \"still has one\" it runs on propanal's: \"1\", the H glowing. On \"easily\" a short arrow from propanal with \"mild oxidant\" leads to a chip \"oxidised\" (grey tag \"aldehyde: easily oxidised\"). On \"reduced\" a second small arrow under it, in navy, reads \"reagent: reduced → visible change\" (grey chip \"reduced: gains electrons\"). On \"nothing\" propanone's arrow draws and is crossed (tag \"ketone: usually no reaction\"). Bright at the end: the two H counts and the \"visible change\" chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "tollens-test",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Tollens' reagent: a silver mirror: The first test is Tollens' reagent: silver ions, held in an ammonia solution.",
+      "narrationCue": "Tollens' / metal / clear / explosive",
+      "motionPurpose": "On the spoken cues: `m7-tollens-tube-clear-v1.png` appears medium at the centre-left with the label \"Tollens' reagent: Ag⁺ in ammonia solution\"; a grey chip \"warm water bath\" writes under it. On \"metal\" the plate cross-fades to `m7-tollens-tube-mirror-v1.png` while the mirror coat runs; a label points to the tube wall: \"Ag⁺ → Ag: silver metal on the glass\" (tag \"+ aldehyde\"). On \"clear\" a second `m7-tollens-tube-clear-v1.png` appears",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m7-tollens-tube-clear-v1.png` appears medium at the centre-left with the label \"Tollens' reagent: Ag⁺ in ammonia solution\"; a grey chip \"warm water bath\" writes under it. On \"metal\" the plate cross-fades to `m7-tollens-tube-mirror-v1.png` while the mirror coat runs; a label points to the tube wall: \"Ag⁺ → Ag: silver metal on the glass\" (tag \"+ aldehyde\"). On \"clear\" a second `m7-tollens-tube-clear-v1.png` appears at the right, same size, tag \"+ ketone: no change\". On \"explosive\" a navy hazard chip writes beside the plates: \"make fresh, use at once, dispose straight after: aged reagent can form an explosive solid\". Bright at the end: the two tubes, the mirror label and the hazard chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "fehlings-test",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Fehling's solution: blue to brick red: The second is Fehling's solution, or the similar Benedict's solution.",
+      "narrationCue": "Fehling's / brick-red / blue",
+      "motionPurpose": "On the spoken cues: `m7-fehlings-tube-blue-v1.png` appears medium at the centre-left with the label \"Fehling's (or Benedict's): blue Cu²⁺\"; a grey chip \"warm\" writes under it, and a small grey chip \"alkaline: corrosive\" writes and dims. On \"brick-red\" the plate cross-fades to `m7-fehlings-tube-brickred-v1.png` while the settle runs; a label points to the base: \"Cu²⁺ → Cu₂O: brick-red precipitate\" (tag \"+ aldehyde\"). On \"blue\" a second",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m7-fehlings-tube-blue-v1.png` appears medium at the centre-left with the label \"Fehling's (or Benedict's): blue Cu²⁺\"; a grey chip \"warm\" writes under it, and a small grey chip \"alkaline: corrosive\" writes and dims. On \"brick-red\" the plate cross-fades to `m7-fehlings-tube-brickred-v1.png` while the settle runs; a label points to the base: \"Cu²⁺ → Cu₂O: brick-red precipitate\" (tag \"+ aldehyde\"). On \"blue\" a second `m7-fehlings-tube-blue-v1.png` appears at the right, same size, tag \"+ ketone: stays blue\". On \"isn't enough\" a chip \"any C=O gives a positive test\" fades in and is crossed (caption \"only an H on the carbonyl carbon is oxidised\"). Bright at the end: the two tubes, the precipitate label and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "three-tests-one-question",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Three tests, one question: And acidified dichromate, from the alcohol reactions video?",
+      "narrationCue": "green / hydrogen",
+      "motionPurpose": "On the spoken cues: The results grid builds: columns \"aldehyde\", \"ketone\"; rows fill as named: \"Tollens'\" (mirror icon, clear icon), \"Fehling's / Benedict's\" (brick-red icon, blue icon), on \"green\" \"acidified dichromate\" (green icon, orange icon, cropped from `m8-dichromate-green-v1.png` and `m8-dichromate-orange-v1.png`, uniform scale). Every aldehyde cell is ringed green (\"+\"), every ketone cell grey (\"−\"). On \"hydrogen\" a banner",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The results grid builds: columns \"aldehyde\", \"ketone\"; rows fill as named: \"Tollens'\" (mirror icon, clear icon), \"Fehling's / Benedict's\" (brick-red icon, blue icon), on \"green\" \"acidified dichromate\" (green icon, orange icon, cropped from `m8-dichromate-green-v1.png` and `m8-dichromate-orange-v1.png`, uniform scale). Every aldehyde cell is ringed green (\"+\"), every ketone cell grey (\"−\"). On \"hydrogen\" a banner writes across the top of the grid: \"Is there an H on the carbonyl carbon?\" with \"yes\" over the aldehyde column and \"no\" over the ketone column. Bright at the end: the banner and the two column headings. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "testing-the-product",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Naming the product, naming the alcohol: Here's how this fits with oxidation.",
+      "narrationCue": "product / primary / secondary / too",
+      "motionPurpose": "On the spoken cues: A three-step flow builds left to right: \"unknown alcohol + K₂Cr₂O₇ / H⁺: green\" (small green icon), \"distil off the product\", on \"product\" \"test the product with Tollens'\". Two outcomes branch: on \"primary\" \"silver mirror → aldehyde → primary alcohol\" (mirror icon); on \"secondary\" \"no mirror → ketone → secondary alcohol\" (clear icon). A small grey chip \"stayed orange at the start → tertiary\" sits under the first",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A three-step flow builds left to right: \"unknown alcohol + K₂Cr₂O₇ / H⁺: green\" (small green icon), \"distil off the product\", on \"product\" \"test the product with Tollens'\". Two outcomes branch: on \"primary\" \"silver mirror → aldehyde → primary alcohol\" (mirror icon); on \"secondary\" \"no mirror → ketone → secondary alcohol\" (clear icon). A small grey chip \"stayed orange at the start → tertiary\" sits under the first step. On \"too\" a chip \"product turns dichromate green → aldehyde\" fades in and is crossed (caption \"1° and 2° alcohols turn it green too\"). Bright at the end: the two outcome rows and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So, aldehyde at the end, ketone in the middle.",
+      "narrationCue": "carbon / green",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"Aldehyde at the end, ketone in the middle.\" Second handwritten line on \"carbon\": \"Every test asks: is there an H on the carbonyl carbon?\". Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"aldehyde –CHO: '-al', no number; ketone C–CO–C: '-one', number from C5\"; \"dipole–dipole + dispersion; no hydrogen bonds between them: alkane < aldehyde,",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Aldehyde at the end, ketone in the middle.\" Second handwritten line on \"carbon\": \"Every test asks: is there an H on the carbonyl carbon?\". Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"aldehyde –CHO: '-al', no number; ketone C–CO–C: '-one', number from C5\"; \"dipole–dipole + dispersion; no hydrogen bonds between them: alkane < aldehyde, ketone < alcohol\"; on \"green\" \"aldehyde: mirror, brick red, green. Ketone: no change\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A compound has the condensed formula",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A compound has the condensed structural formula CH₃CH₂COCH(CH₃)CH₃. State whether it is an aldehyde or a ketone, giving a reason, and give its IUPAC name.\" Beside it the skeletal formula in plain ink (no colours, no locants, no ring on the C=O). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no locator, no memory aid.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "each / five / two / wrong",
+      "motionPurpose": "On the spoken cues: On \"each\" the C=O is ringed red on the skeletal formula and two ink arrows point to the carbons either side; \"aldehyde or a ketone\" and \"giving a reason\" are underlined; chip \"ketone: a carbon each side of C=O\". On \"five\" the chain of five glows pale blue (the methyl branch amber); locants pop from both ends showing the C=O as \"3\" each way. On \"two\" locants settle from the right: \"1\", \"2\" (methyl), \"3\" (C=O), \"4\",",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"each\" the C=O is ringed red on the skeletal formula and two ink arrows point to the carbons either side; \"aldehyde or a ketone\" and \"giving a reason\" are underlined; chip \"ketone: a carbon each side of C=O\". On \"five\" the chain of five glows pale blue (the methyl branch amber); locants pop from both ends showing the C=O as \"3\" each way. On \"two\" locants settle from the right: \"1\", \"2\" (methyl), \"3\" (C=O), \"4\", \"5\"; \"IUPAC name\" is underlined; the builder writes \"2-methyl\" + \"pentan\" + \"-3-one\" (the answer, bright). On \"wrong\" a chip \"4-methylpentan-3-one\" fades in and is crossed (caption \"C=O ties at 3, so the branch gets the lower number\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"Compounds A and B both have the molecular formula C₄H₈O, and both contain a C=O group.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Compounds A and B both have",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"Compounds A and B both have the molecular formula C₄H₈O, and both contain a C=O group. When each is warmed with Tollens' reagent, A forms a silver mirror and B shows no change. A has an unbranched chain. Identify A and B by IUPAC name, and explain the difference in their results.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "mirror / butanal / butan-two-one / hydrogen",
+      "motionPurpose": "On the spoken cues: On \"mirror\" \"A forms a silver mirror\" is underlined and a small `m7-tollens-tube-mirror-v1.png` appears at the left; butanal draws (full structural), its carbonyl H glowing, H counter \"1\"; on \"butanal\" \"unbranched chain\" and \"C₄H₈O\" are underlined and the answer chip \"A: butanal\" lights. On \"butan-two-one\" \"B shows no change\" and \"both contain a C=O group\" are underlined; butan-2-one draws with the H counter \"0\" and",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"mirror\" \"A forms a silver mirror\" is underlined and a small `m7-tollens-tube-mirror-v1.png` appears at the left; butanal draws (full structural), its carbonyl H glowing, H counter \"1\"; on \"butanal\" \"unbranched chain\" and \"C₄H₈O\" are underlined and the answer chip \"A: butanal\" lights. On \"butan-two-one\" \"B shows no change\" and \"both contain a C=O group\" are underlined; butan-2-one draws with the H counter \"0\" and a small `m7-tollens-tube-clear-v1.png` beside it; answer chip \"B: butan-2-one\". \"explain the difference\" is underlined as the chip \"aldehyde: H on C=O carbon, oxidised, Ag⁺ reduced to Ag. Ketone: no H, no reaction\" lights. On \"hydrogen\" a chip \"Both have a C=O group, so both should form a mirror.\" fades in and is crossed (caption \"the H on the carbonyl carbon decides\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: So the carbonyl's position decides the name, the forces, and the test results.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The memory aid line returns small at the top with the results grid beneath it. On \"Next\" `m7-school-distillation-setup-v1.png` appears small at the right beside a small `m7-tollens-tube-mirror-v1.png`, and a chip \"Next: investigate alcohol oxidation products\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The memory aid line returns small at the top with the results grid beneath it. On \"Next\" `m7-school-distillation-setup-v1.png` appears small at the right beside a small `m7-tollens-tube-mirror-v1.png`, and a chip \"Next: investigate alcohol oxidation products\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c08b-learning-review.md",
+      "sha256": "13af1b567b95043bc4807ad4258399f5e2bfa39ea979b484beab1acae7b8b867"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c08b-claude-science-check.md",
+      "sha256": "9d1020494a9871f367b4c95f2af5d626af98b3df840d8208ae1697ede46fcce6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7g02/lesson.json",
+    "lessonSha256": "2e78304af0eb95be005e16234d9c35dc6387d2541f15456176ebcb516f992a91"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From p03: \"water in q, fuel in n\"; Δm = initial − final; ΔHc = −q ÷ n per mole of fuel; results about half the data values; heat to the can, clamp and air makes q too small; evaporation makes n too big; capping the burner and reweighing at once. From skills-s07: word, feature, fix (name the feature of the method and its effect before proposing a fix); G02 applies the same habit to an anomalous trial for the first time. From c07: the data values (−726, −1367, −2021 kJ mol⁻¹); ΔHc is per mole of fuel; kJ per gram is a different quantity. From m6-c03: q = mcΔT with c = 4.18 J g⁻¹ °C⁻¹; keep the digits, round at the end. From Year 11: n = m ÷ M; molar masses from the data sheet; significant figures (decimal places in a subtraction).",
+    "startsWith": "An unseen methanol dataset. The video opens: A combustion question hands you three numbers that look alike: the water's mass, its temperature rise, and the mass of fuel burnt.",
+    "stopsAfter": "calculating ΔHc from raw spirit-burner data; the percentage of released heat that reached the water; the mass of fuel needed when only a stated fraction reaches the water; calculating a trial's ΔHc, identifying it as anomalous by its cause and excluding it from the mean; checking each answer's size, unit and sign.",
+    "nextLesson": "alcohol reactions (route chem-m7-c08, \"Where can an alcohol reaction lead?\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-g02.md"
+  ],
+  "teaching": {
+    "task": "A combustion question gives you a water mass, a temperature rise and a fuel mass that all look alike. How do you give each its job, get the molar enthalpy and the share of heat that reached the water, run the calculation backwards, and decide whether an odd result belongs?",
+    "causalExplanation": "Why the water's mass goes in q: the water is what warms (2b). Why the fuel's mass lost gives n: ΔHc is per mole of fuel (2b, 2e). Why ΔH is negative: heat is released (2c). Why only about half reaches the water: the rest warms the can and the air (2d). Why the heat released is bigger than q(water): only 45% reaches the water (3b). Why multiplying by 0.450 must be wrong: heat lost means more fuel, so the answer must exceed the no-loss mass (3d). Why trial 3 is anomalous: same heat, more mass lost, so that fuel never heated the water (most likely it left without burning), making n too big (4c). Why it may be excluded: its cause is identified (4c, 4d). Why averaging it in is wrong: an explained faulty trial drags the mean away from every good trial (4e).",
+    "conversationalApproach": "A combustion question hands you three numbers that look alike (the water's mass, its temperature rise and the mass of fuel burnt), and each has one job, so every walkthrough sorts the givens before calculating: the water goes into q, the fuel's mass lost gives n, and delta H is minus q over n. Q1 (methanol from raw data) finds q, n and the molar enthalpy one line at a time, then compares the heat released by complete combustion with the heat the water gained to give the share that reached it; Q2 runs backwards from the heat a planned warming needs, divides by the share that reaches the water, and turns heat into moles and moles into a mass of ethanol; Q3 asks whether one of four propan-1-ol trials is anomalous, works trial 3 the same way, finds the cause (extra mass lost for the same rise) before dropping it, and averages the trials that fit. Each question ends with its spoken, crossed classic mistake (dividing by grams, multiplying by the share instead of dividing, averaging all four trials), and the decision board gives the steps for any combustion calculation.",
+    "openingDecision": "A combustion question hands you three numbers that look alike: the water's mass, its temperature rise, and the mass of fuel burnt. Each one has a single job. The water's mass and its rise go into q. The fuel's mass gives n. Swap them, and the answer can be out by a factor of a hundred or more. Here are three HSC-style questions, and the last one hides a result that doesn't belong. Pause and try each one, then we'll work through it, one step at a time.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): every mass, temperature, c, M and data value; Q2's 45.0% and its \"same apparatus\" condition; Q3's table, the shield and lid, \"fresh water\", M and c. Nothing answer-bearing during the holds; the check strip dims.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p55), as printed: \"conduct a practical investigation to measure and reliably compare the enthalpy of combustion for a range of alcohols\" Related Year 11 content (NSW Chemistry Stage 6, 2017, Module 4, recalled, quoted from the official 2017 syllabus DOCX): \"investigate enthalpy changes in reactions using calorimetry and q = mcΔT (heat capacity formula) to calculate, analyse and compare experimental results with reliable secondary-sourced data, and to explain any differences\". Practice and transfer only: the coverage rows stay with chem-m7-p03 (conduct and errors) and chem-m7-c07 (equations and data values); G02 adds practice rows, not first coverage. starts at the route's \"Separate water mass, temperature rise and fuel mass\" and stops at its \"Calculate molar enthalpy and evaluate an anomalous result\". Three questions, each a chain of steps with one trap: (1) methanol from raw burner data: ΔT, q from the water, n from the burner's mass lost, ΔHc, then the percentage of the released heat that reached the water (trap: dividing by grams); (2) the reverse: the mass of ethanol needed for a planned temperature rise when only a stated fraction of the heat reaches the water (trap: multiplying by the fraction instead of dividing); (3) a results table for propan-1-ol with one anomalous trial: calculate it, judge it by its cause, and take a suitable mean (trap: averaging all four). Not here: the method, set-up, errors list and improvements (chem-m7-p03); answer technique for validity, reliability and accuracy (skills-s07); balancing combustion equations and energy per gram (chem-m7-c07); graphing a homologous series (left out; see near-match check); the calorimeter's heat capacity; percentage uncertainty; bond enthalpies."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G01 and G03 layout: top-left the question card (stem, data, table and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through each question; the working fills the right two thirds; a type badge top-right (\"Raw data: q, n, ΔH\", \"Backwards: heat to mass\", \"Table: is it anomalous?\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used. A check strip on the far left carries four rows, \"water in q?\", \"fuel in n?\", \"kJ, per mole, sign?\", \"makes sense?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Working follows the C03 and p03 staging: equation strip, one stage per line, earlier lines dimming, one kept chip into the next scene. Colour key from p03: water quantities (m, ΔT, q) orange, fuel quantities (Δm, n) blue, ΔH teal; amber only for underlined givens. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once; each tag fades when the next cue lands.",
+    "transitionPlan": "The heading writes on and the job sorter drops three grey number chips into a water tray and a fuel tray; each question opens on a fresh board with the type badge hidden while the worded card writes with its spirit burner plate or trial table kept readable; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used while q, n and delta H write one stage per line in their colours, earlier lines dimming to kept chips; the heat split bar fills its share of the energy released; a number line places three fuel masses for the backwards question; the trial strip draws a dashed band and rings trial 3's mass; each classic mistake writes as a chip and takes a red scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Combustion calculations: water in q, fuel in n\" writes on.",
+      "teachingReason": "Hook: A combustion question hands you three numbers that look alike: the water's mass, its temperature rise, and the mass of fuel burnt.",
+      "narrationCue": "job / q / n / belong",
+      "motionPurpose": "On the spoken cues: The job sorter runs: three grey chips \"150.0 g\", \"20.0 °C\", \"1.10 g\" write in a row (no context, so nothing answer-bearing); on \"job\" two trays draw beneath; on \"q\" the first two chips drop into the orange tray \"q: the water\"; on \"n\" the third drops into the blue tray \"n: the fuel\". On \"Swap them\"",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Combustion calculations: water in q, fuel in n\" writes on. The job sorter runs: three grey chips \"150.0 g\", \"20.0 °C\", \"1.10 g\" write in a row (no context, so nothing answer-bearing); on \"job\" two trays draw beneath; on \"q\" the first two chips drop into the orange tray \"q: the water\"; on \"n\" the third drops into the blue tray \"n: the fuel\". On \"Swap them\" the chips jump trays and a grey tag writes \"fuel mass in q: answer far too small\" (no value), then they jump back. On \"belong\" four small grey bars draw at the right, one clearly short, with a \"?\" tag. The check strip builds on the left: \"water in q?\", \"fuel in n?\", \"kJ, per mole, sign?\", \"makes sense?\". The bars become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second; the check strip shrinks to the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: methanol from raw data) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. A methanol spirit burner heats a",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: methanol from raw data)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A student used a spirit burner containing methanol (CH₃OH, M = 32.04 g mol⁻¹) to heat 150.0 g of water in a copper can. The temperature of the water rose from 22.4 °C to 42.4 °C. The mass of the spirit burner and methanol decreased from 151.64 g to 150.54 g. The specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹. The molar enthalpy of combustion of methanol is −726 kJ mol⁻¹.\" Demands: \"(a) Calculate the molar enthalpy of combustion of methanol from these results.\" \"(b) Calculate the percentage of the heat released by the burning methanol that was absorbed by the water.\" Two answer boxes. `m7-spirit-burner-calorimeter-v1.png` small at the right (no readouts, no arrows). Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-q-and-n",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "The water, then the fuel: Start with the water.",
+      "narrationCue": "twenty point zero / kilojoules / zero point zero three four three three",
+      "motionPurpose": "On the spoken cues: Type badge \"Raw data: q, n, ΔH\". On \"twenty point zero\" \"22.4 °C to 42.4 °C\" underlines and \"ΔT = 42.4 − 22.4 = 20.0 °C\" writes (orange). \"150.0 g of water\" and \"4.18 J g⁻¹ °C⁻¹\" underline as \"q = m(water) c ΔT = 150.0 × 4.18 × 20.0 = 12 540 J\" writes; on \"kilojoules\" \"= 12.540 kJ\" adds, with p03's",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Raw data: q, n, ΔH\". On \"twenty point zero\" \"22.4 °C to 42.4 °C\" underlines and \"ΔT = 42.4 − 22.4 = 20.0 °C\" writes (orange). \"150.0 g of water\" and \"4.18 J g⁻¹ °C⁻¹\" underline as \"q = m(water) c ΔT = 150.0 × 4.18 × 20.0 = 12 540 J\" writes; on \"kilojoules\" \"= 12.540 kJ\" adds, with p03's grey tag \"keep the digits; round at the end\" (fades). The q line shrinks to an orange kept chip \"q = 12.540 kJ\". Strip: \"water in q?\" ticks. On \"one point one zero\" `m7-spirit-burner-on-balance-v1.png` appears small with the balance readout reading \"151.64 g\" then \"150.54 g\"; \"151.64 g to 150.54 g\" underlines and \"Δm = 151.64 − 150.54 = 1.10 g\" writes (blue; grey tag \"initial − final\"). On \"zero point zero three four three three\" \"M = 32.04 g mol⁻¹\" underlines and \"n = 1.10 ÷ 32.04 = 0.034332 mol\" writes (blue). Strip: \"fuel in n?\" ticks. Bright at the end: the kept q chip, the n line, the balance readout.",
+      "motionTools": [
+        "Mark underline",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-dh",
+      "visualDecision": "new",
+      "visualReference": "the Δm line dims; the q chip and n line slide into \"ΔHc = −q ÷ n = −12.540 kJ ÷ 0.034332 mol = −365.26 kJ mol⁻¹\" (teal).",
+      "teachingReason": "Minus q over n: Delta H is minus q over n: minus twelve point five four zero kilojoules, over zero point zero three four three three moles.",
+      "narrationCue": "three hundred and sixty five / negative",
+      "motionPurpose": "On the spoken cues: On \"three hundred and sixty five\" answer box (a) fills \"ΔHc = −365 kJ mol⁻¹\" with a grey tag \"3 s.f.: 1.10 g and 20.0 °C\". On \"negative\" the minus sign pulses, grey tag \"heat released: ΔH negative\". Strip: \"kJ, per mole, sign?\" ticks. The answer shrinks to a teal kept chip.",
+      "motionRole": "explain",
+      "onScreenChange": "the Δm line dims; the q chip and n line slide into \"ΔHc = −q ÷ n = −12.540 kJ ÷ 0.034332 mol = −365.26 kJ mol⁻¹\" (teal). On \"three hundred and sixty five\" answer box (a) fills \"ΔHc = −365 kJ mol⁻¹\" with a grey tag \"3 s.f.: 1.10 g and 20.0 °C\". On \"negative\" the minus sign pulses, grey tag \"heat released: ΔH negative\". Strip: \"kJ, per mole, sign?\" ticks. The answer shrinks to a teal kept chip.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-percent",
+      "visualDecision": "new",
+      "visualReference": "\"−726 kJ mol⁻¹\" underlines.",
+      "teachingReason": "How much reached the water: Part b asks how much of the heat reached the water.",
+      "narrationCue": "twenty four point nine three / fifty point three",
+      "motionPurpose": "On the spoken cues: \"heat released = n × 726 = 0.034332 × 726 = 24.925 kJ\" writes. On \"twenty four point nine three\" the heat split bar draws: a full bar \"24.93 kJ released\". On \"fifty point three\" its orange share fills \"12.54 kJ to the water\" and \"12.540 ÷ 24.925 × 100 = 50.3%\" writes; answer box (b) fills \"50.3%\".",
+      "motionRole": "explain",
+      "onScreenChange": "\"−726 kJ mol⁻¹\" underlines. \"heat released = n × 726 = 0.034332 × 726 = 24.925 kJ\" writes. On \"twenty four point nine three\" the heat split bar draws: a full bar \"24.93 kJ released\". On \"fifty point three\" its orange share fills \"12.54 kJ to the water\" and \"12.540 ÷ 24.925 × 100 = 50.3%\" writes; answer box (b) fills \"50.3%\". The grey remainder labels \"to the can and air\" with small orange arrows leaving the plate's can sides. A grey tag \"check: 365 ÷ 726 = 50.3% too\" (fades). Strip: \"makes sense?\" ticks. Bright at the end: the split bar and answer (b).",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "lineage split",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"ΔHc = −12.540 ÷ 1.10 = −11.4 kJ mol⁻¹\" fades in; on \"gram\" \"1.10 g\" in the chip rings and the chip takes a red scribble cross (caption \"÷ grams gives kJ per gram; ΔHc is per mole of fuel\").",
+      "teachingReason": "The classic mistake: The classic slip is dividing by the grams instead of the moles.",
+      "narrationCue": "gram",
+      "motionPurpose": "On the spoken cues: a chip \"ΔHc = −12.540 ÷ 1.10 = −11.4 kJ mol⁻¹\" fades in; on \"gram\" \"1.10 g\" in the chip rings and the chip takes a red scribble cross (caption \"÷ grams gives kJ per gram; ΔHc is per mole of fuel\").",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"ΔHc = −12.540 ÷ 1.10 = −11.4 kJ mol⁻¹\" fades in; on \"gram\" \"1.10 g\" in the chip rings and the chip takes a red scribble cross (caption \"÷ grams gives kJ per gram; ΔHc is per mole of fuel\").",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 2: backwards to a mass) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two runs the other way. A student",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: backwards to a mass)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A student plans to heat 250.0 g of water from 20.0 °C to 35.0 °C using a spirit burner containing ethanol (C₂H₅OH, M = 46.07 g mol⁻¹). In earlier trials with the same apparatus, the water absorbed 45.0% of the heat released by the burning ethanol. The molar enthalpy of combustion of ethanol is −1367 kJ mol⁻¹, and the specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹. Calculate the mass of ethanol that the student should expect to burn.\" One answer box. `m7-ethanol-fuel-bottle-v1.png` small at the right with a coded label \"ethanol\". Nothing answer-bearing. **Countdown ring 10 seconds**; check strip dims; card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-heat",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Heat the water needs, then heat released: First, the heat the water needs: two hundred and fifty, times four point one eight, times fifteen point zero.",
+      "narrationCue": "fifteen point six seven five / more / thirty four point eight three",
+      "motionPurpose": "On the spoken cues: Type badge \"Backwards: heat to mass\". \"250.0 g of water\" and \"20.0 °C to 35.0 °C\" underline; \"ΔT = 35.0 − 20.0 = 15.0 °C\" and \"q(water) = 250.0 × 4.18 × 15.0 = 15 675 J = 15.675 kJ\" write (orange). On \"fifteen point six seven five\" the q line shrinks to an orange kept chip. Strip: \"water in q?\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Backwards: heat to mass\". \"250.0 g of water\" and \"20.0 °C to 35.0 °C\" underline; \"ΔT = 35.0 − 20.0 = 15.0 °C\" and \"q(water) = 250.0 × 4.18 × 15.0 = 15 675 J = 15.675 kJ\" write (orange). On \"fifteen point six seven five\" the q line shrinks to an orange kept chip. Strip: \"water in q?\" ticks. On \"more\" \"45.0%\" underlines and the heat split bar draws empty with only its orange share known, \"15.675 kJ = 45.0% of the heat released\", and a \"?\" over the full bar. On \"thirty four point eight three\" \"heat released = 15.675 ÷ 0.450 = 34.833 kJ\" writes, and the full bar fills \"34.83 kJ\". Bright at the end: the split bar and the heat released line.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mass",
+      "visualDecision": "new",
+      "visualReference": "\"−1367 kJ mol⁻¹\" underlines.",
+      "teachingReason": "Heat to moles to mass: Now the fuel.",
+      "narrationCue": "zero point zero two five four eight / one point one seven",
+      "motionPurpose": "On the spoken cues: \"n(ethanol) = 34.833 ÷ 1367 = 0.025482 mol\" writes (blue; grey tag \"use the size, 1367: the sign only says heat is released\"). On \"one point one seven\" \"M = 46.07 g mol⁻¹\" underlines and \"m = 0.025482 × 46.07 = 1.1739 g → 1.17 g\" writes; the answer box fills \"1.17 g\" with a grey tag \"3 s.f.: 15.0",
+      "motionRole": "explain",
+      "onScreenChange": "\"−1367 kJ mol⁻¹\" underlines. \"n(ethanol) = 34.833 ÷ 1367 = 0.025482 mol\" writes (blue; grey tag \"use the size, 1367: the sign only says heat is released\"). On \"one point one seven\" \"M = 46.07 g mol⁻¹\" underlines and \"m = 0.025482 × 46.07 = 1.1739 g → 1.17 g\" writes; the answer box fills \"1.17 g\" with a grey tag \"3 s.f.: 15.0 °C and 45.0%\". Strip: \"fuel in n?\" and \"kJ, per mole, sign?\" tick.",
+      "motionTools": [
+        "Mark underline",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"15.675 × 0.450 = 7.05 kJ → 0.238 g\" fades in.",
+      "teachingReason": "The classic mistake: The classic slip is multiplying by zero point four five zero instead of dividing.",
+      "narrationCue": "more",
+      "motionPurpose": "On the spoken cues: On \"more\" a short number line writes under it with three marks: \"0.238 g (× 0.450)\", \"0.528 g (no heat lost)\", \"1.17 g (55% lost)\"; an arrow labelled \"heat lost → more fuel\" points right from 0.528. The 0.238 chip takes a red scribble cross (caption \"less heat reaches the water, so more fuel must",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"15.675 × 0.450 = 7.05 kJ → 0.238 g\" fades in. On \"more\" a short number line writes under it with three marks: \"0.238 g (× 0.450)\", \"0.528 g (no heat lost)\", \"1.17 g (55% lost)\"; an arrow labelled \"heat lost → more fuel\" points right from 0.528. The 0.238 chip takes a red scribble cross (caption \"less heat reaches the water, so more fuel must burn\"). Strip: \"makes sense?\" ticks.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 3: is trial 3 anomalous?) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. A student burns propan-one-ol in four",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: is trial 3 anomalous?)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A student burned propan-1-ol (C₃H₇OH, M = 60.09 g mol⁻¹) in a spirit burner beneath a copper can with a draught shield and lid. In each trial she heated 250.0 g of fresh water. The specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹.\" Table: \"Trial | Temperature rise (°C) | Mass lost by burner (g) | ΔHc (kJ mol⁻¹)\"; \"1 | 18.0 | 1.16 | −974\"; \"2 | 17.9 | 1.15 | −977\"; \"3 | 18.2 | 1.62 | (blank cell)\"; \"4 | 18.1 | 1.17 | −971\". Demands: \"(a) Calculate the molar enthalpy of combustion of propan-1-ol for trial 3.\" \"(b) Explain whether trial 3 should be included when calculating the mean, and calculate the mean molar enthalpy of combustion.\" Two answer boxes. `m7-spirit-burner-calorimeter-shield-v1.png` small at the right. Nothing answer-bearing (no trial strip, no highlighted row). **Countdown ring 10 seconds**; check strip dims; card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-trial3",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip, the table kept readable (G03 build rule: if the table cannot be read when shrunk, it stays full size and only the stem shrinks).",
+      "teachingReason": "Same steps for trial 3: Trial three, same steps.",
+      "narrationCue": "nineteen thousand and nineteen / seven hundred and five",
+      "motionPurpose": "On the spoken cues: Type badge \"Table: is it anomalous?\", with the grey gloss under it: \"anomalous result: doesn't fit the pattern of the others\". Row 3's \"18.2\" and \"250.0 g\" underline as \"q = 250.0 × 4.18 × 18.2 = 19 019 J = 19.019 kJ\" writes (orange). \"1.62\" and \"60.09\" underline as \"n = 1.62 ÷ 60.09 = 0.026960",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip, the table kept readable (G03 build rule: if the table cannot be read when shrunk, it stays full size and only the stem shrinks). Type badge \"Table: is it anomalous?\", with the grey gloss under it: \"anomalous result: doesn't fit the pattern of the others\". Row 3's \"18.2\" and \"250.0 g\" underline as \"q = 250.0 × 4.18 × 18.2 = 19 019 J = 19.019 kJ\" writes (orange). \"1.62\" and \"60.09\" underline as \"n = 1.62 ÷ 60.09 = 0.026960 mol\" writes (blue). On \"seven hundred and five\" \"ΔHc = −19.019 ÷ 0.026960 = −705.46 → −705 kJ mol⁻¹\" writes; answer box (a) fills \"−705 kJ mol⁻¹\" and the table's blank cell fills \"−705\" in teal. On \"close to minus nine seventy five\" the trial strip draws: four bars of |ΔHc|, with a dashed band through trials 1, 2 and 4 and bar 3 well short of it. Strip: \"water in q?\", \"fuel in n?\" tick.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-judge",
+      "visualDecision": "new",
+      "visualReference": "the table's temperature column underlines (18.0, 17.9, 18.2, 18.1, grey tag \"rises match\"); on \"half a gram\" the mass column underlines and \"1.62\" rings amber against \"1.15 to 1.17\" (tag \"about 0.45 g more for the same heat\").",
+      "teachingReason": "Find the cause before you drop it: So does it belong?",
+      "narrationCue": "half a gram / evaporated / less negative",
+      "motionPurpose": "On the spoken cues: On \"evaporated\" p03's evaporation wisp thumbnail appears small (an uncapped burner, pale wisps, tag \"mass lost, no heat\"). On \"less negative\" the error-chain row writes small: \"fuel lost without burning → n ↑ → ΔH less negative\" (blue n box), with a small grey tag under it: \"other possible causes:",
+      "motionRole": "explain",
+      "onScreenChange": "the table's temperature column underlines (18.0, 17.9, 18.2, 18.1, grey tag \"rises match\"); on \"half a gram\" the mass column underlines and \"1.62\" rings amber against \"1.15 to 1.17\" (tag \"about 0.45 g more for the same heat\"). On \"evaporated\" p03's evaporation wisp thumbnail appears small (an uncapped burner, pale wisps, tag \"mass lost, no heat\"). On \"less negative\" the error-chain row writes small: \"fuel lost without burning → n ↑ → ΔH less negative\" (blue n box), with a small grey tag under it: \"other possible causes: a draught or a sooty flame in that trial\". Answer box (b) writes two short lines: \"Trial 3: same rise, but about 0.45 g more fuel lost → that fuel gave the water no heat (likely evaporation or a spill).\" / \"n too big → ΔH less negative. Exclude it; repeat if possible.\" (The full sentence stays in the model answer.) Strip: \"makes sense?\" ticks. Bright at the end: the ringed 1.62, the error-chain row, the two answer lines.",
+      "motionTools": [
+        "Mark underline",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-mean",
+      "visualDecision": "new",
+      "visualReference": "rows 1, 2 and 4's ΔHc cells underline; \"mean = (−974 + −977 + −971) ÷ 3 = −974 kJ mol⁻¹\" writes (grey tag \"unrounded trials give −974.4: the same\"); answer box (b) adds \"Mean of trials 1, 2 and 4: −974 kJ mol⁻¹\".",
+      "teachingReason": "The mean of the trials that fit: Average the other three.",
+      "narrationCue": "nine hundred and seventy four / explain",
+      "motionPurpose": "On the spoken cues: A small grey chip \"974 ÷ 2021 = 48%: about half, as expected\". On \"explain\" a handwritten line under the board: \"Only drop a result when you can explain it.\"",
+      "motionRole": "explain",
+      "onScreenChange": "rows 1, 2 and 4's ΔHc cells underline; \"mean = (−974 + −977 + −971) ÷ 3 = −974 kJ mol⁻¹\" writes (grey tag \"unrounded trials give −974.4: the same\"); answer box (b) adds \"Mean of trials 1, 2 and 4: −974 kJ mol⁻¹\". A small grey chip \"974 ÷ 2021 = 48%: about half, as expected\". On \"explain\" a handwritten line under the board: \"Only drop a result when you can explain it.\"",
+      "motionTools": [
+        "HandText write-on",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"mean of all four = −907 kJ mol⁻¹\" fades in; on \"no\" a coded tick at −907 appears on the trial strip, below the dashed band where no bar ends; the chip takes a red scribble cross (caption \"one faulty trial drags the mean away from every good trial\").",
+      "teachingReason": "The classic mistake: The classic mistake is averaging all four.",
+      "narrationCue": "no",
+      "motionPurpose": "On the spoken cues: a chip \"mean of all four = −907 kJ mol⁻¹\" fades in; on \"no\" a coded tick at −907 appears on the trial strip, below the dashed band where no bar ends; the chip takes a red scribble cross (caption \"one faulty trial drags the mean away from every good trial\").",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"mean of all four = −907 kJ mol⁻¹\" fades in; on \"no\" a coded tick at −907 appears on the trial strip, below the dashed band where no bar ends; the chip takes a red scribble cross (caption \"one faulty trial drags the mean away from every good trial\").",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "new",
+      "visualReference": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"q\" \"Water in q → q = m(water) × 4.18 × ΔT, in J then kJ (Q1, Q2, Q3)\"; on \"n\" \"Fuel in n → n = (initial − final mass) ÷ M (Q1, Q3)\"; \"kJ, per mole, sign → ΔHc = −q ÷ n; ÷ grams gives kJ per gram (Q1)\"; on \"divide\" \"Part of the heat → heat released = q(water) ÷ fraction; heat lost means more fuel (Q2)\"; on \"cause\" \"Odd trial → find the cause (q or n?); exclude only if explained; mean the rest (Q3)\".",
+      "teachingReason": "Decision board: So for any combustion calculation: the water's mass and rise go into q, the fuel's mass lost gives n, and delta H is minus q over n, in kilojoules per mole.",
+      "narrationCue": "q / n / divide / cause",
+      "motionPurpose": "On the spoken cues: Under the board, small: \"Answers to the data's significant figures.\" On \"Next\" a chip \"Next: where can an alcohol reaction lead?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"q\" \"Water in q → q = m(water) × 4.18 × ΔT, in J then kJ (Q1, Q2, Q3)\"; on \"n\" \"Fuel in n → n = (initial − final mass) ÷ M (Q1, Q3)\"; \"kJ, per mole, sign → ΔHc = −q ÷ n; ÷ grams gives kJ per gram (Q1)\"; on \"divide\" \"Part of the heat → heat released = q(water) ÷ fraction; heat lost means more fuel (Q2)\"; on \"cause\" \"Odd trial → find the cause (q or n?); exclude only if explained; mean the rest (Q3)\". Under the board, small: \"Answers to the data's significant figures.\" On \"Next\" a chip \"Next: where can an alcohol reaction lead?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "lineage split",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g02-learning-review.md",
+      "sha256": "72c3e00c2f8e14b1d00148eaed7e3851b38d46854fd277e6b96b92c876437bf7"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g02-claude-science-check.md",
+      "sha256": "4dd7eef0e2f4c78bf47daa6944956826331545ffb13095c5646d270c8208ff8b"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

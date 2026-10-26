@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b11/measured/lesson.json",
+    "lessonSha256": "4cc074cc32d835fab7c6e1d4a3785376a141e7dcb8d4426b8fba8eadcd83a2ce"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: bacteria are cells (prokaryotes, DNA in the cytoplasm, ribosomes, a peptidoglycan wall); a virus is genetic material in a protein coat with no cytoplasm and no ribosomes, which makes a host cell build new viruses; \"a drug has to hit something the pathogen has and the host doesn't\" (Revision 3: scene 2 refines it as harming the pathogen much more than the host, often through such a difference, after Codex check 105); \"Not a cell means antibiotics are useless\"; the Fleming plate. From b06: infected cells, the airway lining (via b08's plates, which b11 reuses). From b08: the infected airway cell with viruses budding from its surface. From bio-m6-b01: mutation makes a new allele by chance (\"random with respect to need\"); an antibiotic kills susceptible bacteria and the few already carrying a resistance allele survive and divide; \"The antibiotic didn't create the allele. It changed how common it is, and that's natural selection.\" From bio-m5-b06a: bacteria carry plasmids. Not assumed: selective toxicity, how penicillin kills, bacterial ribosomes as a target, neuraminidase, why the flu antiviral helps most early, horizontal gene transfer by name, combination therapy, stewardship, assessing effectiveness.",
+    "startsWith": "Compare bacterial structures with viral replication. The video opens: Every winter, people with the flu ask their doctor for antibiotics.",
+    "stopsAfter": "defining selective toxicity; explaining how penicillin kills growing bacteria (wall not built, water enters, the cell bursts) and why it spares human cells (no wall); explaining that other antibiotics block bacterial ribosomes, shaped differently from ours, and showing on screen (silent since Revision 3) that some antibiotics kill while others stop growth so the immune system clears the rest; explaining why antibiotics do nothing to a virus (no wall, no ribosomes; it uses the host cell's) and how using them for a viral infection selects resistant bacteria; explaining that antivirals block a step the virus needs (oseltamivir blocks neuraminidase so new flu viruses stay stuck to the cell; others block a viral copying enzyme or entry; some block a host part the virus needs); explaining that antivirals stop new viruses but don't destroy existing ones, so the flu antiviral helps most early, while HIV treatment controls an established infection; that most antivirals are narrow, though some act on several virus families; and that they are fewer than antibiotics; explaining resistance as selection of microbes that already carry resistance, and how bacteria share resistance genes on plasmids, even between species; explaining why combination therapy prevents HIV resistance; describing sensible use (not for viral infections, not routinely in healthy farm animals, exactly as prescribed, reserve antibiotics); assessing the effectiveness of each class by selectivity, breadth and durability, with durability judged from selection and a dated figure for the size of the resistance burden.",
+    "nextLesson": "testing which substances stop bacteria growing on agar (route entry bio-m7-p05)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b11.md"
+  ],
+  "teaching": {
+    "task": "Antibiotics do nothing for the flu, but a flu antiviral can shorten it, if it's taken early. Why do antibiotics and antivirals work so differently, and how effective is each?",
+    "causalExplanation": "Causes: why antibiotics spare our cells (no wall; differently shaped ribosomes; 2, 3); why a wall-blocked bacterium bursts (water enters; 3); why antibiotics miss viruses (no wall, no ribosomes; the virus uses ours; 4); why antibiotics for a cold still matter (they select resistant bacteria in the body; 4); how an antiviral can work at all (many target the virus's own enzymes, some a host part the virus needs; 5); why the flu antiviral helps most early (it stops new copies, not existing viruses; 6), while HIV treatment controls an established infection (8, 10); why most are narrow and they're few (most target one virus's enzyme, though some act on several families; few safe targets; 6); how safely each class hits the pathogen (the wall and ribosome differences; oseltamivir's fit to the flu enzyme; 10); why durability depends on use (every use selects resistance; the 2021 figure shows burden, not a trend; 10); why resistance spreads (selection; plasmid sharing; 7); why three drugs stop resistance (all three at once is very unlikely; 8, 12c). Visible case: the same bacterium bursts in place; the same airway cell keeps its viruses stuck in place. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 3 (two targets, kill against stop-growth) and 10 (assess table) are the densest, so earlier tags and rows dim.",
+    "conversationalApproach": "Every winter people with the flu ask for antibiotics that do nothing to the virus, while a flu antiviral can shorten the illness if taken early, so the question is why antibiotics and antivirals work so differently and how effective each is. A useful drug harms the pathogen much more than the host (selective toxicity), often by hitting something the pathogen has and our cells lack. Penicillin stops a growing bacterium building its cell wall, so it bursts, and other antibiotics block bacterial ribosomes, which differ from ours. A virus is genes in a protein coat with no wall or ribosomes, and it uses our cell's machinery, so antibiotics have nothing to hit. Antivirals block a step the virus needs with its own tools, such as the neuraminidase that cuts new flu viruses free, so they stop new viruses being made or released rather than destroying existing ones and help most early. Resistance is selected, not created: microbes that already carry resistance survive and multiply, and bacteria can share resistance genes, so for HIV, which copies itself billions of times with errors, three drugs at once mean a virus would need resistance to all three. Using drugs well slows resistance, and the drugs are assessed on how safely they hit the pathogen, how many infections they treat and how long they keep working. The memory aid is antivirals block a step the virus needs, and the drug selects resistance; it doesn't create it. Two exam questions follow with brief feedback.",
+    "openingDecision": "Every winter, people with the flu ask their doctor for antibiotics. The antibiotics do nothing to the flu virus. But a flu antiviral called oseltamivir can shorten the illness by about a day, if it's started within two days of the first symptoms. So why does one drug miss the virus completely, and why does the other only help if you take it early?",
+    "understandingCheck": "12a is an explain item on an invented virus and drug: why a drug that blocks a virus-only enzyme works and penicillin doesn't, and why the drug works best early (selective toxicity, no targets, timing). 12c is an explain item with numbers: why three drugs at once beat one (resistance by selection, combination therapy, the \"assess\" half). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ4-03 (p 55): \"investigate and assess the effectiveness of pharmaceuticals as treatment strategies for the control of infectious disease, for example:\" with its examples \"antivirals\" and \"antibiotics\". This video owns full coverage of B7-IQ4-03 apart from the \"investigate\" practical, which p05 carries. Verb \"assess\" (make a judgement of value, quality, outcomes, results or size): scene 10 states the criteria (how selectively the drug hits the pathogen, how many infections it treats, how long it keeps working) and gives a qualified judgement; attempt 2 assesses combination therapy with numbers. Verb \"investigate\": the hook reads trial evidence (about a day shorter, if started within two days), and scene 8 reads the history of single against combined HIV therapy as evidence."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One drug-target bench, split into two lanes. Top lane, \"bacterium\": `m6-bacterium-plasmid-v1.png` (a cutaway rod with a layered wall, nucleoid and plasmid) with coded target markers (small amber rings) that light on cue: \"wall\", \"ribosomes\", and, screen-only and grey, \"DNA-copying enzymes\" and \"folate making\". Bottom lane, \"virus\": b08's aligned airway cell set (`m7-airway-cell-v1.png`, `-infected-v1.png`) plus one new aligned partner, `m7-airway-cell-release-blocked-v1.png`, so the antiviral's effect is shown as a change in place on the same cell. A coded virus step strip runs under the cell: \"enter\", \"copy\", \"build\", \"release\", with each antiviral landing as a small coded block on its step. Each drug is a coded chip (amber for antibiotics, teal for antivirals) that slides to its lane and either locks onto a target (tick) or finds nothing (grey cross). Scene 7 reuses bio-m6-b01's coded population board (small tinted bacterium glyphs, resistance rings) and adds the new `m7-bacteria-conjugation-v1.png`. Scene 8 is a coded three-lock diagram: a virus glyph with three padlock-shaped step markers, abstract only. Scene 10 is a coded three-column assess table. No people, hands or faces: no patients, doctors, pharmacists, farmers or hospital rooms; drugs are shown as `m7-capsule-blister-blank-v1.png` (new, blank) with coded tags, never a branded pack. Scale: the bacterium and the airway cell are never drawn at one scale; each carries its own grey tag (\"drawn far larger than real\"). The virus particles on the airway cell are far larger than real (b08's own note). Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The virus particle plate opens the hook above two capsule blister packs, the antibiotic arrow taking a grey cross while the antiviral arrow gains a symptom bar pair and a two-day bracket; the hook shrinks as the drug-target bench draws a bacterium lane and a virus lane; the bacterium lane enlarges as a penicillin chip locks onto the wall ring and the cell swells and bursts, then a second chip blocks a coded ribosome; the virus lane lights with the virus plate, its coat and genes, and empty target slots; the airway cell enlarges with the VirusStepStrip as teal blocks land on the release and copy steps; already-released particles drift on while new ones stop; b01's coded population board returns as a drug clears all but two amber resistant glyphs, which multiply, and the bacteria conjugation plate passes a plasmid between two rods; the ThreeLock diagram counts billions of copies and lands one lock, then three; four rule chips write in a column; the AssessTable fills its antibiotic and antiviral columns row by row; the memory lines write with the step strip thumbnail; each attempt clears the board and its feedback underlines the card as an AnsTable or working rows fill and a crossed chip lands; the bench, step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people, no clinic. Centre: `m7-virus-particle-v1.png` (grey tag \"flu virus, drawn far larger than real\", the b01 convention: the plate stands for the group).",
+      "teachingReason": "Hook (the flu puzzle): Every winter, people with the flu ask their doctor for antibiotics.",
+      "narrationCue": "do nothing to the flu virus / shorten the illness by about a day / within two days of the first symptoms",
+      "motionPurpose": "On the spoken cues: Two copies of the new `m7-capsule-blister-blank-v1.png` sit below it, left and right, each with a coded chip on its foil: amber \"antibiotic\" on the left, teal \"antiviral: oseltamivir\" on the right. On \"do nothing to the flu virus\" a thin grey arrow runs from the left pack to the virus and takes a",
+      "motionRole": "explain",
+      "onScreenChange": "no people, no clinic. Centre: `m7-virus-particle-v1.png` (grey tag \"flu virus, drawn far larger than real\", the b01 convention: the plate stands for the group). Two copies of the new `m7-capsule-blister-blank-v1.png` sit below it, left and right, each with a coded chip on its foil: amber \"antibiotic\" on the left, teal \"antiviral: oseltamivir\" on the right. On \"do nothing to the flu virus\" a thin grey arrow runs from the left pack to the virus and takes a grey cross (tag \"no effect on the virus\"). On \"shorten the illness by about a day\" a teal arrow runs from the right pack and a small coded bar pair writes beside it: \"symptoms: about 1 day shorter on average\" (grey source tag \"trials, adults\"). On \"within two days of the first symptoms\" a coded day strip draws under the bar, days 0 to 7, with a teal bracket over days 0 to 2 (tag \"start within 2 days\"); the \"no effect\" tag dims. On the question the heading writes on: \"Why do antibiotics and antivirals work differently?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "selective-toxicity",
+      "visualDecision": "adjust",
+      "visualReference": "the hook shrinks to a thumbnail at the upper left.",
+      "teachingReason": "Hit what the pathogen has: You've seen the rule already.",
+      "narrationCue": "selective toxicity",
+      "motionPurpose": "On the spoken cues: The drug-target bench draws: two labelled lanes, \"bacterium\" (top) and \"virus\" (bottom), with the virus lane still blank and grey. On \"You've seen the rule already\" b01's idea writes small in grey under the heading: \"find a difference between pathogen and host\" (grey tag \"b01\"). On \"selective",
+      "motionRole": "explain",
+      "onScreenChange": "the hook shrinks to a thumbnail at the upper left. The drug-target bench draws: two labelled lanes, \"bacterium\" (top) and \"virus\" (bottom), with the virus lane still blank and grey. On \"You've seen the rule already\" b01's idea writes small in grey under the heading: \"find a difference between pathogen and host\" (grey tag \"b01\"). On \"selective toxicity\" a gloss writes: \"selective toxicity: harms the pathogen much more than the host\". On \"or have in a different form\" a small grey tag writes under the gloss: \"a part we lack, or have in a different form\". On \"a whole cell\" `m6-bacterium-plasmid-v1.png` slides into the top lane (grey tag \"bacterium, drawn far larger than real\"); beside it, small and grey, the existing `b6a-animal-cell-v1.png` (tag \"one of your cells\"). On \"plenty of parts that differ\" four coded amber target rings blink on the bacterium (unlabelled yet). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "antibiotic-targets",
+      "visualDecision": "adjust",
+      "visualReference": "the top lane enlarges.",
+      "teachingReason": "Two antibiotic targets: Penicillin stops a bacterium building its cell wall, a tough mesh that stops the cell swelling and bursting.",
+      "narrationCue": "Penicillin / its cell wall / a tough mesh / can't strengthen its wall / water rushes in by osmosis / Your cells have no wall",
+      "motionPurpose": "On the spoken cues: On \"Penicillin\" an amber chip \"penicillin\" slides in; on \"its cell wall\" the wall ring lights and the chip locks onto the wall (tick; tag \"target: wall-building enzymes\"; grey screen-only gloss \"peptidoglycan wall\"). On \"a tough mesh\" a coded close-up inset of a short wall section writes as a",
+      "motionRole": "explain",
+      "onScreenChange": "the top lane enlarges. On \"Penicillin\" an amber chip \"penicillin\" slides in; on \"its cell wall\" the wall ring lights and the chip locks onto the wall (tick; tag \"target: wall-building enzymes\"; grey screen-only gloss \"peptidoglycan wall\"). On \"a tough mesh\" a coded close-up inset of a short wall section writes as a cross-hatched mesh; on \"can't strengthen its wall\" two cross-links in the mesh fade, leaving gaps. On \"water rushes in by osmosis\" small coded blue arrows point inward through the wall (small grey tag \"osmosis: water moves into the cell\") and the bacterium crossfades to the new aligned `m7-bacterium-wall-burst-v1.png` (the same rod, burst open at one side, contents spilling; tag \"burst\"). On \"Your cells have no wall\" the grey animal cell thumbnail gains a small grey label \"no wall: nothing to hit\" and the burst and osmosis tags dim. On \"jam bacterial ribosomes\" the penicillin chip, the wall tag and the peptidoglycan gloss dim to grey, and the burst plate crossfades back to the intact `m6-bacterium-plasmid-v1.png` (a second bacterium, grey tag \"another bacterium\"); a second amber chip \"tetracycline\" slides in and locks onto the ribosome ring; `m5x-ribosome-v1.png` appears small beside it with the grey tag \"bacterial ribosome (70S); ours: 80S\"; on \"can't make proteins\" a short coded protein chain stops mid-build. In the hold after \"can't make proteins\" (reserve cut 1 applied in Revision 3, so these are silent) the tetracycline chip dims and two small grey chips write under the lane: \"kills bacteria (bactericidal)\" with a tiny burst glyph, \"stops them multiplying (bacteriostatic)\" with a tiny paused division glyph; then a small grey `m7-macrophage-v1.png` thumbnail (b06) slides beside the second chip. Screen-only, grey and small on the bacterium: \"DNA-copying enzymes\" and \"folate making\" rings with the tag \"other targets\". Earlier tags dim. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "no-target-in-virus",
+      "visualDecision": "adjust",
+      "visualReference": "the bottom lane lights.",
+      "teachingReason": "Nothing to hit in a virus: Now look at a virus.",
+      "narrationCue": "a virus / no wall and no ribosomes / Inside your cell / nothing in the virus to hit / bacteria living in your throat and gut / help resistant bacteria multiply",
+      "motionPurpose": "On the spoken cues: On \"a virus\" `m7-virus-particle-v1.png` slides in at the left of the lane (grey tag \"b01: genes in a protein coat\"); on \"no wall and no ribosomes\" the bacterium's two amber rings ghost down beside the virus as grey dashed rings with nothing inside them (tag \"no wall, no ribosomes\"). On \"Inside your",
+      "motionRole": "explain",
+      "onScreenChange": "the bottom lane lights. On \"a virus\" `m7-virus-particle-v1.png` slides in at the left of the lane (grey tag \"b01: genes in a protein coat\"); on \"no wall and no ribosomes\" the bacterium's two amber rings ghost down beside the virus as grey dashed rings with nothing inside them (tag \"no wall, no ribosomes\"). On \"Inside your cell\" b08's zoom box opens on `m7-airway-cell-v1.png`, which crossfades to the aligned `m7-airway-cell-infected-v1.png` (grey tag \"an airway cell making new viruses\"); one small arrow from the cell's own ribosome dots to a virus particle (tag \"the cell's ribosomes\"). On \"nothing in the virus to hit\" the amber \"penicillin\" and \"tetracycline\" chips slide down to the lane and each takes a grey cross (grey tag \"b01: not a cell means antibiotics are useless\"). On \"bacteria living in your throat and gut\" a small coded population of about 30 tinted bacterium glyphs writes at the lane's right (grey label \"your normal bacteria\"), two of them with resistance rings; on \"help resistant bacteria multiply\" the plain glyphs fade and the two ringed glyphs divide into eight (tag \"resistant ones left\", with a small grey tag under it \"they can later cause infections or share genes\"). A grey chip \"a stronger dose would work on a virus\" takes a grey scribble cross. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "Cam lens zoom",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "antiviral-steps",
+      "visualDecision": "adjust",
+      "visualReference": "the airway cell enlarges; the coded `VirusStepStrip` writes under it: \"enter\", \"copy\", \"build\", \"release\".",
+      "teachingReason": "Antivirals block a step the virus needs: So how can any drug stop a virus?",
+      "narrationCue": "a few tools of their own / neuraminidase / Oseltamivir blocks that enzyme / can't infect more cells / copying enzyme / copy",
+      "motionPurpose": "On the spoken cues: On \"a few tools of their own\" three small teal rings appear on the virus plate (tag \"the virus's own enzymes and proteins\"). On \"neuraminidase\" the \"release\" step lights and a gloss writes: \"neuraminidase: cuts new flu viruses free\"; on the infected cell's top surface the budding particles lift off",
+      "motionRole": "explain",
+      "onScreenChange": "the airway cell enlarges; the coded `VirusStepStrip` writes under it: \"enter\", \"copy\", \"build\", \"release\". On \"a few tools of their own\" three small teal rings appear on the virus plate (tag \"the virus's own enzymes and proteins\"). On \"neuraminidase\" the \"release\" step lights and a gloss writes: \"neuraminidase: cuts new flu viruses free\"; on the infected cell's top surface the budding particles lift off one by one and drift away (coded motion of small cut-outs of the plate's own particles). On \"Oseltamivir blocks that enzyme\" a teal chip \"oseltamivir\" slides onto the \"release\" step as a block; the cell crossfades to the new aligned `m7-airway-cell-release-blocked-v1.png` (the same infected cell with new particles clumped and stuck on its top surface), and on \"can't infect more cells\" a short grey arrow to a neighbouring cell outline takes a grey cross (tag \"release blocked\"). On \"copying enzyme\" a teal block lands on \"copy\" (grey tag \"for example aciclovir: herpes\"); on \"getting into a cell\" a teal block lands on \"enter\" (grey tag \"for example, HIV entry blockers\"). On \"viral enzymes like these\" the three teal blocks pulse together. On \"a part of your cell the virus needs\" a small grey ring lights on the airway cell's surface beside the \"enter\" block (grey tag \"some block a host receptor: for example maraviroc, HIV\"). The neuraminidase gloss dims as the second block lands. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "stop-new-viruses",
+      "visualDecision": "adjust",
+      "visualReference": "the blocked cell stays.",
+      "teachingReason": "Stopping new viruses, not old ones: Antivirals don't destroy virus particles that already exist.",
+      "narrationCue": "don't destroy virus particles that already exist / helps most early / Most antivirals are also narrow / several virus families / far fewer antivirals than antibiotics",
+      "motionPurpose": "On the spoken cues: On \"don't destroy virus particles that already exist\" the already-released particles from scene 5 stay drifting, untouched (tag \"existing viruses untouched\", with a small grey tag \"your immune system clears these\" and the grey `m7-macrophage-v1.png` thumbnail from scene 3); a grey chip \"antivirals",
+      "motionRole": "explain",
+      "onScreenChange": "the blocked cell stays. On \"don't destroy virus particles that already exist\" the already-released particles from scene 5 stay drifting, untouched (tag \"existing viruses untouched\", with a small grey tag \"your immune system clears these\" and the grey `m7-macrophage-v1.png` thumbnail from scene 3); a grey chip \"antivirals kill viruses like antibiotics kill bacteria\" writes on and takes a grey scribble cross. On \"helps most early\" the hook's day strip returns small with the grey label \"flu example\": at day 1 a coded field of four cells with one infected; at day 5 the field shows twenty cells, most infected (tag \"later: millions of cells infected\"); the teal bracket over days 0 to 2 relights. On \"Most antivirals are also narrow\" the oseltamivir chip gains a grey tag \"oseltamivir: flu only\"; on \"several virus families\" a small grey tag writes beside it: \"a few act more widely; evidence needed for each disease\". On \"far fewer antivirals than antibiotics\" two coded stacks of blank chips write side by side, a tall amber stack and a short teal stack (grey label \"rough comparison, not to scale\"). Earlier tags dim. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "resistance",
+      "visualDecision": "adjust",
+      "visualReference": "the bench shrinks to the left.",
+      "teachingReason": "Resistance: selected, then shared: Both kinds of drug can stop working, and you've seen why.",
+      "narrationCue": "stops the microbes it can / survive and multiply / selects resistance / pass resistance genes to each other / plasmids, small loops of DNA / even between different species",
+      "motionPurpose": "On the spoken cues: bio-m6-b01's coded population board returns (about 60 tinted bacterium glyphs, two with amber resistance rings; grey tag \"Module 6: mutation\") with its `DayStrip` \"day 0\" to \"day 3\". On \"stops the microbes it can\" the unringed glyphs fade to grey outlines and fall away; on \"survive and multiply\"",
+      "motionRole": "explain",
+      "onScreenChange": "the bench shrinks to the left. bio-m6-b01's coded population board returns (about 60 tinted bacterium glyphs, two with amber resistance rings; grey tag \"Module 6: mutation\") with its `DayStrip` \"day 0\" to \"day 3\". On \"stops the microbes it can\" the unringed glyphs fade to grey outlines and fall away; on \"survive and multiply\" the two ringed glyphs divide to fill the board (tag \"resistant ones multiply\"). On \"selects resistance\" a short line writes: \"selects, doesn't create\" (grey tag \"Module 6\"). On \"pass resistance genes to each other\" the new `m7-bacteria-conjugation-v1.png` slides in at the right (two rods of different shape joined by a thin bridge, a plasmid copy passing across); on \"plasmids, small loops of DNA\" the plasmid ring pulses teal (gloss \"plasmid: small loop of DNA\"; grey screen-only tag \"horizontal gene transfer\"); on \"even between different species\" the two rods' grey labels write: \"species A\", \"species B\". On \"never the person\" a grey chip \"my body is resistant\" takes a grey scribble cross (small grey reason \"the bacteria are\"). Screen-only, small and grey at the lower right, writing on only after \"never the person\" so it does not split attention during the plasmid beat, for the curious: \"how resistance works: an enzyme breaks the drug, the target changes shape, a pump pushes the drug out\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "combination",
+      "visualDecision": "new",
+      "visualReference": "the coded `ThreeLock` diagram: one abstract virus glyph (a circle with a red fringe, no species plate; grey tag \"HIV\") above the step strip.",
+      "teachingReason": "Three drugs at once: HIV copies itself billions of times a day, with frequent copying errors, so resistant variants keep appearing.",
+      "narrationCue": "billions of times a day / frequent copying errors / one drug at a time / copy / combined three drugs / build",
+      "motionPurpose": "On the spoken cues: On \"billions of times a day\" a small counter writes \"new copies a day: billions\"; on \"frequent copying errors\" a few glyphs flicker amber (tag \"variants\"). On \"one drug at a time\" one teal lock lands on \"copy\"; one amber variant passes the lock and multiplies (tag \"one drug: resistance selected\").",
+      "motionRole": "explain",
+      "onScreenChange": "the coded `ThreeLock` diagram: one abstract virus glyph (a circle with a red fringe, no species plate; grey tag \"HIV\") above the step strip. On \"billions of times a day\" a small counter writes \"new copies a day: billions\"; on \"frequent copying errors\" a few glyphs flicker amber (tag \"variants\"). On \"one drug at a time\" one teal lock lands on \"copy\"; one amber variant passes the lock and multiplies (tag \"one drug: resistance selected\"). On \"combined three drugs\" the board resets and three teal locks land: two on \"copy\" and one on \"build\" (tag \"from 1996: two copy blockers + one build blocker\"); \"enter\" stays unlit. Each lock is still a separate drug, so the walk-through below is unchanged. On \"resistance to all three at once\" a variant glyph meets the first lock (passes), the second (passes), the third (stops), and a grey working line writes \"all three at once: very unlikely\". In the hold after \"very unlikely\" (reserve cut 2 applied in Revision 3) a small grey tag: \"controlled, not cured\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "use-well",
+      "visualDecision": "new",
+      "visualReference": "four coded rule chips write on in a column, one per cue, each with a small grey glyph (no people, no animals drawn): \"not for viral infections\" (virus thumbnail with a grey cross through an amber chip); \"not routinely for healthy farm animals\" (a coded barn outline, lines only); \"exactly as prescribed; no sharing leftovers\" (the blister pack thumbnail with one coded capsule outline crossed from a second pack); \"reserve antibiotics for when nothing else works\" (a coded locked box outline with an amber chip inside; grey screen-only tag \"stewardship: using antibiotics only when needed\").",
+      "teachingReason": "Using drugs well: So resistance spreads fastest where drugs are used the most.",
+      "narrationCue": "So resistance spreads fastest where drugs are used",
+      "motionPurpose": "On the spoken cues: Each chip dims as the next writes. At most three bright text items. Hold one second.",
+      "motionRole": "explain",
+      "onScreenChange": "four coded rule chips write on in a column, one per cue, each with a small grey glyph (no people, no animals drawn): \"not for viral infections\" (virus thumbnail with a grey cross through an amber chip); \"not routinely for healthy farm animals\" (a coded barn outline, lines only); \"exactly as prescribed; no sharing leftovers\" (the blister pack thumbnail with one coded capsule outline crossed from a second pack); \"reserve antibiotics for when nothing else works\" (a coded locked box outline with an amber chip inside; grey screen-only tag \"stewardship: using antibiotics only when needed\"). Each chip dims as the next writes. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "assess",
+      "visualDecision": "new",
+      "visualReference": "the coded `AssessTable` draws: columns \"antibiotics\" (amber) and \"antivirals\" (teal), rows \"how safely?\", \"how many infections?\", \"how long do they keep working?\", headers writing one per cue.",
+      "teachingReason": "How effective are they?: So how effective are these drugs?",
+      "narrationCue": "parts our cells lack or make differently / fits the flu enzyme / cure most bacterial infections / Antivirals are narrower / every use selects resistant microbes / In 2021",
+      "motionPurpose": "On the spoken cues: On \"parts our cells lack or make differently\" the antibiotic \"how safely?\" cell fills \"wall: we have none; ribosomes: ours differ\", with the bacterium thumbnail; on \"fits the flu enzyme\" the antiviral \"how safely?\" cell fills \"oseltamivir: fits flu neuraminidase, not ours\", with the blocked airway",
+      "motionRole": "explain",
+      "onScreenChange": "the coded `AssessTable` draws: columns \"antibiotics\" (amber) and \"antivirals\" (teal), rows \"how safely?\", \"how many infections?\", \"how long do they keep working?\", headers writing one per cue. On \"parts our cells lack or make differently\" the antibiotic \"how safely?\" cell fills \"wall: we have none; ribosomes: ours differ\", with the bacterium thumbnail; on \"fits the flu enzyme\" the antiviral \"how safely?\" cell fills \"oseltamivir: fits flu neuraminidase, not ours\", with the blocked airway cell thumbnail. On \"cure most bacterial infections\" the antibiotic breadth cell fills \"most bacterial infections\". On \"Antivirals are narrower\" the antiviral breadth cell fills \"mostly narrow; HIV: controlled for decades\". On \"every use selects resistant microbes\" the third row fills across both columns: \"every use selects resistance: lasts only with careful use\", with \"combinations slow resistance (HIV)\" small in the antiviral cell. On \"In 2021\" a small dated chip writes beside the table: \"2021: about 1.14 million deaths directly caused by resistant bacteria\" (grey source tag \"GRAM study, Lancet 2024\"; grey label \"size of the problem in one year\"). On \"only on the right pathogen\" a verdict chip writes across both columns: \"effective on the right pathogen, used carefully\". Filled rows dim as the next fills. At most three bright text items at once besides the table headers. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "one handwritten line writes on large: \"Antivirals block a step the virus needs.\" with the step strip thumbnail and its teal blocks beneath.",
+      "teachingReason": "Memory: Two ideas to keep.",
+      "narrationCue": "Antivirals block a step the virus needs. / the drug selects resistance; it doesn't create it.",
+      "motionPurpose": "On the spoken cues: On \"the drug selects resistance\" a second line writes: \"The drug selects resistance; it doesn't create it.\" with the population board thumbnail (ringed glyphs filling the board). Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "one handwritten line writes on large: \"Antivirals block a step the virus needs.\" with the step strip thumbnail and its teal blocks beneath. On \"the drug selects resistance\" a second line writes: \"The drug selects resistance; it doesn't create it.\" with the population board thumbnail (ringed glyphs filling the board). Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (drug K)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. Virus V copies its",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (drug K))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Virus V is an RNA virus. It copies its RNA genome using its own enzyme, V polymerase. Human cells have no enzyme like V polymerase, so drug K does not bind to any human enzyme. Drug K binds to V polymerase and blocks it. A patient infected with virus V asks to be given penicillin instead of drug K.\" Demand: \"Explain why drug K, but not penicillin, can treat this infection, and why drug K is most effective when taken soon after symptoms begin. (3 marks)\". One lined answer box. No plates and nothing answer-bearing. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "an enzyme only the virus uses / a virus has no wall / works best early / the classic mistake / there is no target to resist",
+      "motionPurpose": "On the spoken cues: A three-row `AnsTable` fills one row per cue: on \"an enzyme only the virus uses\" \"its own enzyme, V polymerase\" and \"Human cells have no enzyme like V polymerase\" underline teal and the row \"K: blocks a virus-only enzyme; host cells unharmed\" fills; on \"a virus has no wall\" \"penicillin\" underlines",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A three-row `AnsTable` fills one row per cue: on \"an enzyme only the virus uses\" \"its own enzyme, V polymerase\" and \"Human cells have no enzyme like V polymerase\" underline teal and the row \"K: blocks a virus-only enzyme; host cells unharmed\" fills; on \"a virus has no wall\" \"penicillin\" underlines amber and the row \"penicillin: targets wall building; a virus has no wall\" fills with a small grey cross; on \"works best early\" \"soon after symptoms begin\" underlines teal and the row \"early: K stops new copies, doesn't destroy existing viruses\" fills. Earlier rows dim. On \"the classic mistake\" the chip \"the virus is resistant to penicillin\" writes on and takes a grey scribble cross, with the small grey reason \"there is no target to resist\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (one drug or three)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. In an untreated patient, virus W makes",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (one drug or three))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"In an untreated patient, virus W produces about 10 000 000 000 (10¹⁰) new virus particles each day. About 1 in every 100 000 new particles (a probability of 10⁻⁵) carries resistance to drug A. The same is true for drug B and for drug C. Resistance to each drug arises independently, and each drug blocks a different step in the virus's replication.\" Demand: \"Explain why treatment with drugs A, B and C together is more effective than treatment with drug A alone. (3 marks)\". One lined answer box. No plates, no locks. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "about a hundred thousand / resistance to A, B and C at once / fewer than one a century / the classic mistake / variants arise by chance; the drug selects",
+      "motionPurpose": "On the spoken cues: Two working rows write beneath it. On \"about a hundred thousand\" \"10¹⁰\" and \"1 in every 100 000\" underline amber and row 1 writes \"A alone: 10¹⁰ ÷ 10⁵ = 10⁵ resistant particles a day: selected, so A fails\". On \"resistance to A, B and C at once\" \"arises independently\" underlines teal and row 2",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Two working rows write beneath it. On \"about a hundred thousand\" \"10¹⁰\" and \"1 in every 100 000\" underline amber and row 1 writes \"A alone: 10¹⁰ ÷ 10⁵ = 10⁵ resistant particles a day: selected, so A fails\". On \"resistance to A, B and C at once\" \"arises independently\" underlines teal and row 2 writes \"A, B and C: 10⁻⁵ × 10⁻⁵ × 10⁻⁵ = 10⁻¹⁵ per particle; 10¹⁰ × 10⁻¹⁵ = 10⁻⁵ a day\"; on \"fewer than one a century\" a small grey working line: \"1 every 100 000 days (about 270 years)\". Row 1 dims as row 2 writes. On \"the classic mistake\" the chip \"the drugs make the virus mutate\" writes on and takes a grey scribble cross, with the small grey reason \"variants arise by chance; the drug selects\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "the bench returns small at the left with both lanes lit; three step chips write on, one per cue: \"why does it harm the pathogen more than us?\", \"which step does it block?\", \"how could resistance be selected?\".",
+      "teachingReason": "Decision rule and handoff: So for any drug question, ask why the drug harms the pathogen more than our cells, which step it blocks, and how resistance could be selected.",
+      "narrationCue": "So for any drug question, ask why the",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: testing antimicrobials on agar\" (small grey tag; `m7-agar-antibiotic-before-v1.png` thumbnail beside it). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the bench returns small at the left with both lanes lit; three step chips write on, one per cue: \"why does it harm the pathogen more than us?\", \"which step does it block?\", \"how could resistance be selected?\". A \"Next\" chip slides in at the lower right: \"Next: testing antimicrobials on agar\" (small grey tag; `m7-agar-antibiotic-before-v1.png` thumbnail beside it). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b11-learning-review.md",
+      "sha256": "30bb094d3cca9dba7969cd12be5b61ba679cdcd0d683e059739d47fef5e3f75a"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b11-claude-science-check.md",
+      "sha256": "cdf5d712b8c31648114a2b1ad373ae775ab6d3fc221bc21ad7d9ecb07b0cb5a3"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

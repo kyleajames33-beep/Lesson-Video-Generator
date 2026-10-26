@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B08-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b08/lesson.json",
+  "lessonSha256": "0e3ce4a160b41caa5caa14df2b04a2158e4ca576d552f4b2d35fe6f18db05d2d",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b08/lesson.production-brief.json",
+    "sha256": "594c64d361da85cb80267ce22d5bbf7f8ac4c4034eaf2de29b5fe7ec2e00f67b"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Antibodies are good at grabbing viruses outside cells. But a virus doesn't stay outside. It gets into your own cells and copies itself there, where antibodies can't reach it. So how does your body find the infected cells among billions of healthy ones? In 1973, in Canberra, Peter Doherty and Rolf Zinkernagel helped answer that, and later shared a Nobel Prize for it. The answer involves T cells.",
+      "hash": "ab488cd5f417",
+      "textSha256": "ab488cd5f4175279256032b2ced686e31ba2fe4e477a84fc28cc1d413daaab1a",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/hook.ab488cd5f417.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/hook.ab488cd5f417.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/hook.ab488cd5f417.generation.json",
+      "plannedRequestSha256": "7006b1f7dfc1cdcd42b4e519b92b5bfa8b82063f57f30c99ca91a65ea2b894f9"
+    },
+    {
+      "id": "virus-enters",
+      "parentSceneId": "virus-enters",
+      "text": "Here's our case. A virus lands on the lining of your airways. A protein on its surface fits a molecule on an airway cell, so it binds and gets in. Inside, it takes over the cell and uses it to make many new viruses. Those leave and infect the cells next door. While the virus is inside a cell, antibodies can't touch it.",
+      "hash": "cce2340abd4e",
+      "textSha256": "cce2340abd4e89af8294fc9bb516371b720e866b3b492cb456853e1c7d49463f",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/virus-enters.cce2340abd4e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/virus-enters.cce2340abd4e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/virus-enters.cce2340abd4e.generation.json",
+      "plannedRequestSha256": "be952631f1dca8119d3883e2ae967ec557dab87bf8abc5a1cd6bdb5c440df66f"
+    },
+    {
+      "id": "display-pieces",
+      "parentSceneId": "display-pieces",
+      "text": "So the body checks cells from the outside. Almost every one of your cells cuts up some of the proteins it's making, and displays small pieces on its surface, held in display molecules. A healthy cell displays pieces of its own proteins. An infected cell is making virus proteins too, so it displays virus pieces as well. Showing pieces like this is called antigen presentation.",
+      "hash": "ff5f1dbaa686",
+      "textSha256": "ff5f1dbaa68697943222d1f6f83f48675ae80dab019909e42ac20c3aecd3dc64",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/display-pieces.ff5f1dbaa686.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/display-pieces.ff5f1dbaa686.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/display-pieces.ff5f1dbaa686.generation.json",
+      "plannedRequestSha256": "f8e92295c184435739596d07d5b3c5746f0a3f038293518b976fdfe396f4b44e"
+    },
+    {
+      "id": "t-cell-receptor",
+      "parentSceneId": "t-cell-receptor",
+      "text": "T cells are lymphocytes, like B cells. Each T cell has receptors of one shape, made at random as it developed. But here's the difference. A T cell receptor doesn't bind a free virus. It only fits a piece that's displayed on a cell, held in a display molecule. Doherty and Zinkernagel found the clue: a T cell recognises a virus only together with the cell's own display molecule. So it checks the display molecule and the piece together.",
+      "hash": "d2cf458a7f22",
+      "textSha256": "d2cf458a7f22bbe5d7d68183f4e7e262e0d2dac1229d558cab2aaa2292d6ee0a",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/t-cell-receptor.d2cf458a7f22.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/t-cell-receptor.d2cf458a7f22.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/t-cell-receptor.d2cf458a7f22.generation.json",
+      "plannedRequestSha256": "95ec91762baa24daf7063e8afeca50ec93d0fcf692304f89fb0441e48208ce62"
+    },
+    {
+      "id": "find-t-cells",
+      "parentSceneId": "find-t-cells",
+      "text": "First, though, the right T cells have to be found. In the last two videos, dendritic cells carried pieces of the pathogen to a lymph node and displayed them. Only the few T cells whose receptors fit those pieces are selected. They divide into clones over several days, just as B cells do. And the clones are of two main kinds, helper T cells and cytotoxic T cells.",
+      "hash": "09a53a2abee4",
+      "textSha256": "09a53a2abee43422657b4c4c35c809c211aa6d2d8db69708cf27e1bea641d653",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/find-t-cells.09a53a2abee4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/find-t-cells.09a53a2abee4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/find-t-cells.09a53a2abee4.generation.json",
+      "plannedRequestSha256": "d12e1b5787e182ea41c1f646ebb9c937e56da07397ebf0bc6e2e155f4128cc06"
+    },
+    {
+      "id": "helper-t-cells",
+      "parentSceneId": "helper-t-cells",
+      "text": "Helper T cells mainly coordinate. They send signals that help other cells act. When a helper T cell finds the same pieces displayed on a B cell that has taken in the antigen, it releases signal chemicals called cytokines. That's the go-ahead signal from the last video. Helper T cells also release cytokines that make cytotoxic T cells multiply, and make macrophages better at destroying what they engulf.",
+      "hash": "b446f32352df",
+      "textSha256": "b446f32352dfff72f85c5515c3d7c22a492daac34a1ed0f90ef8ae5f815fe805",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/helper-t-cells.b446f32352df.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/helper-t-cells.b446f32352df.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/helper-t-cells.b446f32352df.generation.json",
+      "plannedRequestSha256": "f1f20b53ef14dc94030d58926867c295ee761a9c3dfc80c09409f0ef728f9a38"
+    },
+    {
+      "id": "cytotoxic-find",
+      "parentSceneId": "cytotoxic-find",
+      "text": "Cytotoxic T cells are the killers. They leave the lymph node, travel in the blood, and squeeze out into the infected airway. There, they check the pieces displayed on each cell. Healthy cells, displaying only their own pieces, are left alone. When a cytotoxic T cell's receptor fits a virus piece on an infected cell, it binds to that cell.",
+      "hash": "55aad303cb50",
+      "textSha256": "55aad303cb5025ea90ee314f5a7fc8f038acd8aa4b4f661a419464a8e0d027c1",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/cytotoxic-find.55aad303cb50.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/cytotoxic-find.55aad303cb50.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/cytotoxic-find.55aad303cb50.generation.json",
+      "plannedRequestSha256": "ad60b0a44a7d1efe892af2a616546dd30c92ff585e438bbea8ac8add56d8246e"
+    },
+    {
+      "id": "apoptosis",
+      "parentSceneId": "apoptosis",
+      "text": "Then it releases proteins. Some make holes in the infected cell's membrane. Others pass through and switch on the cell's own self-destruct program, called apoptosis. The cell breaks itself up in a tidy way, and phagocytes clear the pieces. Virus copies still being built inside are lost with it, so the virus loses its factory. The T cell then moves on to the next infected cell.",
+      "hash": "5e671d709181",
+      "textSha256": "5e671d70918129da5762a0c0086fd8bdc24325f414354ce6b0f7d51291b860c0",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/apoptosis.5e671d709181.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/apoptosis.5e671d709181.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/apoptosis.5e671d709181.generation.json",
+      "plannedRequestSha256": "05f077d26de17e4dd3f07751ab2e87a456a0a82a2203c8b933e9cbe2a7e8d0eb"
+    },
+    {
+      "id": "nk-cells",
+      "parentSceneId": "nk-cells",
+      "text": "Cytotoxic T cells aren't the only cells that kill infected cells. Natural killer cells, or NK cells, are part of the innate system. They don't have receptors made for one pathogen. They respond to stress signals on a cell, and to cells displaying too few display molecules, which is one way some viruses hide from T cells. NK cells act early. Cytotoxic T cells take longer, but they target one pathogen.",
+      "hash": "372c0056f3ca",
+      "textSha256": "372c0056f3ca3f05f4c2ddeaccfb238a90403c8adbb5b3162331736296505a1d",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/nk-cells.372c0056f3ca.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/nk-cells.372c0056f3ca.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/nk-cells.372c0056f3ca.generation.json",
+      "plannedRequestSha256": "111d0a181213784cbc4f320c56e2722b000d33ae356ff91f19097d943632904c"
+    },
+    {
+      "id": "two-arms",
+      "parentSceneId": "two-arms",
+      "text": "So the adaptive response has two arms. In the antibody arm, B cells make antibodies that act on pathogens outside cells, in blood and tissue fluid. In the cell-mediated arm, cytotoxic T cells destroy infected cells. You need both, because a virus is outside cells while it travels between them, and inside cells while it copies itself. Helper T cells sit in the middle, switching on both. Some T cells also become memory T cells, and the next video shows why that matters.",
+      "hash": "78bcf4d8206a",
+      "textSha256": "78bcf4d8206a6f08bf307b8f3e172240f23cdbb19915ea2009854c5c17558bc8",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/two-arms.78bcf4d8206a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/two-arms.78bcf4d8206a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/two-arms.78bcf4d8206a.generation.json",
+      "plannedRequestSha256": "fb2821fcd1163e4e8d970d8b26302c218bd92c69f1624921311db345183a09e5"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Here's a way to keep them apart. B cells make antiBodies. T cells Terminate or Tell. Cytotoxic T cells terminate infected cells. Helper T cells tell other cells to act.",
+      "hash": "6b8bec9b8197",
+      "textSha256": "6b8bec9b8197817ace074a9cb0e34f2d112ac8193ef695c77840eb53cd7838ed",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/memory.6b8bec9b8197.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/memory.6b8bec9b8197.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/memory.6b8bec9b8197.generation.json",
+      "plannedRequestSha256": "0b9037a4167d18dc96e6c46e45d7a709f84620768ba038083d4306f3a697aeb3"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions now. First. Cytotoxic T cells were taken from a mouse infected with virus X. They were mixed with three groups of cells, all from mice of the same strain. Group one cells were uninfected. Group two cells were infected with virus X. Group three cells were infected with virus Y. Only the group two cells were killed. Explain these results. Pause here to answer.",
+      "hash": "76938ec1be1f",
+      "textSha256": "76938ec1be1fd8e2ad2cb681ed8e17acf2908b18f128c4717845a6821f2bc82a",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/attempt.76938ec1be1f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/attempt.76938ec1be1f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/attempt.76938ec1be1f.generation.json",
+      "plannedRequestSha256": "f5f2b807a14a22adc481e8d86853bbb3aa3b52338376d4ae95e9010b3cf18626"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Virus X selected cytotoxic T cells whose receptors fit X's pieces. Group two cells displayed virus X pieces, so the T cells bound them and triggered apoptosis. Group one cells displayed only their own pieces. Group three displayed virus Y pieces, which didn't fit these receptors. So neither was killed. Saying the T cells attacked the virus itself is the classic mistake.",
+      "hash": "ef9ef9da0922",
+      "textSha256": "ef9ef9da09228a451b11efe36812dd58787b85e3d04cbb8c865c3bec00929c09",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/feedback-one.ef9ef9da0922.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/feedback-one.ef9ef9da0922.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/feedback-one.ef9ef9da0922.generation.json",
+      "plannedRequestSha256": "9071b740a8bcb54dac51873d2d90719fd07bfc4c84c7f4829dff6f8f97a44b70"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. HIV infects and destroys helper T cells. Without treatment, their number in the blood falls over several years. A student says, this weakens only the T cell arm of the immune system, because antibodies are made by B cells. Evaluate the student's claim. Pause here to answer.",
+      "hash": "7592de492560",
+      "textSha256": "7592de49256032eefe8462a3132b293f6872b4f9cc43ac21200c9888e008dcde",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/attempt-two.7592de492560.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/attempt-two.7592de492560.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/attempt-two.7592de492560.generation.json",
+      "plannedRequestSha256": "4bd79ae31c2bfd2be0c297a1c31b45ba17176a0c58d76084f5459714552702e5"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "B cells do make antibodies, but the claim isn't supported. Most B cells need a helper T cell's go-ahead before they multiply into plasma cells, so antibody responses weaken too. Cytotoxic T cells rely on helper cytokines to multiply, so killing of infected cells weakens as well. Both arms weaken together. Thinking B cells work without helper T cells is the classic mistake.",
+      "hash": "3c305784b0c0",
+      "textSha256": "3c305784b0c0d42f9772894b564c649d8febd309f93ecc865246c1f434de79d0",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/feedback-two.3c305784b0c0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/feedback-two.3c305784b0c0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/feedback-two.3c305784b0c0.generation.json",
+      "plannedRequestSha256": "f7a79be5d893bf3549d32d43ffeef65406d4fd3551e8c060cf3c1490a34cfb7e"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any T cell question, say which cell displays the antigen, which T cells fit it and multiply, what helper T cells signal, and how cytotoxic T cells destroy infected cells. Next, why a second infection is often stopped much faster.",
+      "hash": "46fe136a10e4",
+      "textSha256": "46fe136a10e4fd247b77b94c63d0b815767eba67208fe0420621110e3c2dcfc7",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/decision-rule.46fe136a10e4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/decision-rule.46fe136a10e4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/decision-rule.46fe136a10e4.generation.json",
+      "plannedRequestSha256": "5c0889051bfd829d06aed1f09543a8fb3c6641c904c0974cc6aa57bc0d6d6f3b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B08-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

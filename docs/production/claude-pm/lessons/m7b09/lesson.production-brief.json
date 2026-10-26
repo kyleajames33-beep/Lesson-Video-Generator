@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b09/lesson.json",
+    "lessonSha256": "77b429b2a888366db3ebe36691669a13086a07c4f5c583a548baca7d7ef5a687"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b06: innate defences hold a pathogen back while the adaptive response builds; adaptive responses take days the first time. From b07: antigens; each B cell has one receptor shape; clonal selection and expansion; plasma cells release antibodies; memory B cells \"stay for later\" (named only); antibodies block, clump and coat pathogens. From b08: T cells, antigen presentation, helper and cytotoxic T cells; some T cells become memory T cells (named only). From Year 11 and b01: viruses are not cells. Not assumed: primary and secondary response, memory cells in action, the antibody graph, vaccination, vaccine types, boosters, active and passive immunity, natural and artificial immunity, antivenom.",
+    "startsWith": "Compare primary and secondary responses. The video opens: Most people who've had chickenpox don't catch it again.",
+    "stopsAfter": "describing the primary response (only a few fitting B and T cells; selection and division take days; antibody appears after a week or more; illness while it builds); explaining what remains (antibody falls far below its peak as most plasma cells die; long-lived memory B and T cells, far more fitting cells than before, so memory is stored mainly in cells); explaining the secondary response (many fitting cells already waiting, so the antigen meets them quickly, fewer divisions, memory B cells quickly become plasma cells, memory helper T cells give the go-ahead quickly and memory cytotoxic T cells destroy infected cells sooner; antibody rises within days, much higher, lasts longer; often cleared before illness); reading a primary and secondary antibody graph, including that memory applies only to the same antigen; explaining vaccination as a safe first exposure (weakened live, killed, a protein, or instructions to make a protein) giving memory without the illness, and boosters as a later extra dose; naming both active and passive immunity as acquired immunity, unlike innate defences; distinguishing active immunity (own response, memory, often long-lasting, slow to build; natural by infection, artificial by vaccine) from passive immunity (antibodies made by another person or animal, immediate, receiving them makes no memory cells, fades over weeks to months; natural from the mother across the placenta and in breast milk, artificial by injection such as antivenom); choosing between them in a situation.",
+    "nextLesson": "immune response practice (route entry bio-m7-g03), then how hygiene and quarantine interrupt spread (bio-m7-b10)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b09.md"
+  ],
+  "teaching": {
+    "task": "Most people who've had chickenpox don't catch it again. What changed after the first infection, and how do vaccines and antibody injections give protection?",
+    "causalExplanation": "Causes: why the first response is slow (few fitting cells must be selected and multiply; scene 2); why antibody falls but protection stays (plasma cells die, memory cells remain; scene 3, answering the hook's surprise); why the second response is faster and bigger (more fitting cells waiting, fewer divisions, fast change to plasma cells; scene 4); why memory doesn't help against a new antigen (scene 5); how a vaccine gives memory without illness (scene 7); why a booster helps (scene 8); why passive immunity is immediate but temporary (ready-made antibodies, no selection, broken down; scene 10); when passive immunity is the only choice (scene 11). Visible case: the same graph and the same cell field change in place from first infection to second exposure. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 4 (cells and graph together) and 7 (vaccine types) are the densest, so each earlier tag or label dims.",
+    "conversationalApproach": "Most people who have had chickenpox do not catch it again, so the question is what changed after the first infection and how vaccines and antibody injections give protection. In the first infection only a few B and T cells fit the virus, so they must be selected and multiply, and antibodies take days to rise; when the infection is cleared most plasma cells die and the antibody level falls, but memory B and T cells stay. On a second exposure many fitting cells are already waiting, so the response starts sooner, makes much more antibody and lasts longer, and the antibody graph shows a slow, low primary hump against a fast, tall secondary peak, often on a log scale. Vaccination gives the antigen in a form that does not cause the full disease, so the first response happens safely and memory cells form, and a booster triggers a secondary response. Vaccines and infections give active immunity because your own system made the memory cells, while passive immunity gives ready-made antibodies that work at once but fade and leave no memory, with antivenom as artificial passive immunity. Both are acquired immunity, and two questions sort any case: are there memory cells for this antigen, and who made the antibodies. The memory aid is second exposure, faster, bigger, longer. Two exam questions follow with brief feedback.",
+    "openingDecision": "Most people who've had chickenpox don't catch it again. Years later, they can breathe in the same virus and usually don't get sick. You might think that's because antibodies from the first time are still in their blood. But by then, the antibody level has usually fallen far below its peak. So what's stopping the virus?",
+    "understandingCheck": "13a explains a two-antigen antibody graph (primary against secondary response, the route's start, and specificity of memory). 13c evaluates a claim that antivenom has made a bushwalker immune (passive against active immunity, the route's stop). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ3-02 (p 54): \"explain how the immune system responds after primary exposure to a pathogen, including innate and acquired immunity\". B7-IQ4-02 (p 55): \"investigate procedures that can be employed to prevent the spread of disease, including but not limited to: (ACSBL124)\", with the listed item \"vaccination, including passive and active immunity (ACSBL100, ACSBL123)\". Verb \"explain\" (B7-IQ3-02): scenes 3 to 5 give the cause of each difference between the responses (more fitting cells waiting, fewer divisions, fast change to plasma cells). \"Acquired immunity\" in the dotpoint is taught as active immunity acquired naturally or artificially (scene 9), with innate immunity recalled as the response that holds the pathogen back during the primary lag (scene 2, one clause). \"Investigate\" (B7-IQ4-02): attempt 1 interprets a two-antigen experiment; attempt 2 applies the active and passive distinction to a real procedure."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One memory board. Left two-thirds: a coded antibody graph (b07's style; the house coded `lineGraph`, never an AI image) on which the response is drawn as each step is narrated: x axis \"time after first exposure (days)\", y axis \"antibody level\" (log scale in scenes 5 and 13a, tagged), exposure markers as small amber arrows on the x axis. Beside or above the graph, painted cells show what the curve is caused by: a cell count field of small `m7-b-cell-bare-v1.png` copies (with a few `m7-t-cell-v1.png` copies) in which the cells that fit the virus are lit teal: two or three before the first infection, many after it. Plasma cells (`m7-plasma-cell-v1.png`) appear when antibody rises and fade when it falls. The virus is a new `m7-varicella-virus-v1.png`. Scenes 7 and 8 add the existing `m7-vaccine-vial-syringe-v1.png`. Scenes 9 to 12 build the coded two-by-two table (rows \"active\", \"passive\"; columns \"natural\", \"artificial\"), one quadrant per cue, each with one painted thumbnail: the varicella virus (natural active), the vaccine vial (artificial active), the new `m7-placenta-villus-v1.png` with the existing `b3a2-milk-gland-full-v1.png` (natural passive) and the new `m7-brown-snake-v1.png` (artificial passive). Right third, small: b06 to b08's `ResponseStrip`, complete, with memory cells marked at the foot of both adaptive columns (scene 3). No people, hands or faces: no child with chickenpox, no arm being injected, no mother or baby (the existing `b3a-fetus-placenta-v1.png` shows a fetus and is not used); the body appears only as cells, a placental villus and a gland. The snake is an animal, painted alone with no person. Coded elements are abstract only: the graph, the cell count field layout, the table, arrows, chips, glosses and the strip. Scale: B cell about 8 µm, plasma cell about 12 µm (scaled up uniformly against the B cell plate as in b07, never stretched), T cell about 7 µm; the varicella virus (about 0.2 µm) is only ever shown as its own enlarged plate with a grey tag \"drawn far larger than real\"; the placental villus close-up spans about 0.2 mm. Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The chickenpox virus plate opens the hook on a coded time arrow as a leftover-antibodies chip takes a question mark over a sinking antibody line; the board clears to the memory layout with the complete ResponseStrip small at the right while a coded antibody graph draws and a few fitting cells divide in a coded cell field; plasma cell plates fade as the curve falls and memory cells stay lit; a second amber arrow lands on the axis and the full cell field meets the virus quickly as a tall peak draws; the graph fills the board as the primary hump and secondary peak light with their tags and the log scale gridlines label; the memory line writes over the graph with its lag, peak and length marks pulsing; the vaccine vial and syringe plate sits beside a fresh graph whose first response draws safely, then a booster arrow lifts the level; the ImmunityTable fills active natural and artificial cells, then the passive row with the antibody thumbnails, and the brown snake plate fills the antivenom cell; the full table enlarges with its acquired bracket and the two question chips write; each attempt clears the board and its feedback underlines the card as an answer table or verdict block fills and a crossed chip lands; the table, graph thumbnail, step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people, no child, no rash. `m7-varicella-virus-v1.png` (new) appears at the left (grey tag \"chickenpox virus (varicella-zoster), drawn far larger than real\").",
+      "teachingReason": "Hook (chickenpox once): Most people who've had chickenpox don't catch it again.",
+      "narrationCue": "Years later / breathe in the same virus / antibodies from the first time are still in their blood / fallen far below its peak / So what's stopping the virus?",
+      "motionPurpose": "On the spoken cues: On \"Years later\" a short coded time arrow draws under it from \"first infection\" to \"years later\" (grey ticks only). On \"breathe in the same virus\" a second copy of the virus slides in at the right end of the arrow (tag \"same virus, years later\"). On \"antibodies from the first time are still in",
+      "motionRole": "explain",
+      "onScreenChange": "no people, no child, no rash. `m7-varicella-virus-v1.png` (new) appears at the left (grey tag \"chickenpox virus (varicella-zoster), drawn far larger than real\"). On \"Years later\" a short coded time arrow draws under it from \"first infection\" to \"years later\" (grey ticks only). On \"breathe in the same virus\" a second copy of the virus slides in at the right end of the arrow (tag \"same virus, years later\"). On \"antibodies from the first time are still in their blood\" a grey chip writes: \"leftover antibodies?\"; on \"fallen far below its peak\" a small coded line draws under the arrow, high at the left and sinking low by the right but staying clearly above the axis (grey tag \"antibody level\"), and the chip takes a grey question mark rather than a cross (answered in scene 3). On \"So what's stopping the virus?\" the heading writes on: \"Why is a second infection often stopped faster?\" Hold one second (Revision 2; was two).",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second (Revision 2; was two)"
+    },
+    {
+      "sceneId": "primary",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the memory layout.",
+      "teachingReason": "The first time: Let's go back to the first infection.",
+      "narrationCue": "primary response",
+      "motionPurpose": "On the spoken cues: At the right third, the complete `ResponseStrip` draws small (innate rungs grey; both adaptive columns grey). At the upper left, the `CellCountField` draws: a grid of about forty small `m7-b-cell-bare-v1.png` copies and ten `m7-t-cell-v1.png` copies; on \"only a few B cells and T cells fit\" two B",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the memory layout. At the right third, the complete `ResponseStrip` draws small (innate rungs grey; both adaptive columns grey). At the upper left, the `CellCountField` draws: a grid of about forty small `m7-b-cell-bare-v1.png` copies and ten `m7-t-cell-v1.png` copies; on \"only a few B cells and T cells fit\" two B cells and one T cell light teal (tag \"a few fitting cells\"). On \"selected and divide for days\" a small `CloneTree` thumbnail grows from one lit cell (grey tag \"b07, b08\"); on \"innate defences hold the virus back\" the strip's innate rungs pulse once (grey tag \"b06\"). Below, the coded antibody graph draws its axes (\"time after first exposure (days)\", \"antibody level\"; linear, no values on the y axis) with an amber arrow at day 0 (\"first infection\"). On \"a week or more after infection\" the curve stays flat along the axis for the first stretch (bracket \"lag: cells being selected and multiplied\"; no day numbers) and then rises; on \"they peak later\" it reaches a low peak (tag \"peak\"; small grey gloss \"mainly IgM at first\"). On \"you get sick\" a soft grey band shades the lag and rise (grey label \"illness while the response builds\"). On \"primary response\" the curve outlines teal and a gloss writes: \"primary response: the first response to an antigen\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "lineage split",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "what-stays",
+      "visualDecision": "adjust",
+      "visualReference": "on \"the infection is cleared\" the graph's curve continues past its peak.",
+      "teachingReason": "What stays: Then the infection is cleared.",
+      "narrationCue": "memory cells",
+      "motionPurpose": "On the spoken cues: On \"Most plasma cells die within weeks\" small `m7-plasma-cell-v1.png` copies beside the graph (scaled as b07 sets, never stretched) fade one by one while the curve falls towards, but not to, the axis (tag \"plasma cells die: antibody falls\"). On \"memory cells\" the `CellCountField` changes: about",
+      "motionRole": "explain",
+      "onScreenChange": "on \"the infection is cleared\" the graph's curve continues past its peak. On \"Most plasma cells die within weeks\" small `m7-plasma-cell-v1.png` copies beside the graph (scaled as b07 sets, never stretched) fade one by one while the curve falls towards, but not to, the axis (tag \"plasma cells die: antibody falls\"). On \"memory cells\" the `CellCountField` changes: about fifteen B cells and five T cells now light teal, each with a small grey \"M\" mark (gloss \"memory cells: long-lived B and T cells\"); in the strip, small teal rings mark the foot of both adaptive columns (grey tag \"memory B cells, b07; memory T cells, b08\"). On \"for years, many for decades\" a long flat grey bracket runs along the low tail of the curve (tag \"antibody low, memory cells still there\"). On \"far more cells that fit\" the field's two earlier lit cells (from scene 2) flash beside the many now lit (tag \"before: a few. now: many\"). The hook's \"leftover antibodies?\" chip returns small and takes a grey scribble cross with the reason \"mainly memory cells, not leftover antibody\"; on \"stored mainly in cells\" the lit field brightens once (tag \"memory: mainly in cells\"), while the low antibody tail stays visible. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "secondary",
+      "visualDecision": "new",
+      "visualReference": "a second amber arrow lands on the graph's x axis well to the right (\"same virus again\"); the x axis compresses to fit.",
+      "teachingReason": "The second time: Now the same virus arrives again.",
+      "narrationCue": "secondary response",
+      "motionPurpose": "On the spoken cues: On \"many fitting cells are already waiting\" the many lit cells in the field pulse (tag \"many already fit\"). On \"fewer divisions\" a short `CloneTree` thumbnail (only two levels of branching, against scene 2's many) grows from one lit cell (tag \"fewer divisions\"; \"many already fit\" dims). On \"turn",
+      "motionRole": "explain",
+      "onScreenChange": "a second amber arrow lands on the graph's x axis well to the right (\"same virus again\"); the x axis compresses to fit. On \"many fitting cells are already waiting\" the many lit cells in the field pulse (tag \"many already fit\"). On \"fewer divisions\" a short `CloneTree` thumbnail (only two levels of branching, against scene 2's many) grows from one lit cell (tag \"fewer divisions\"; \"many already fit\" dims). On \"turn into plasma cells fast\" several lit B cells crossfade to small plasma cell copies (tag \"quickly become plasma cells\"; \"fewer divisions\" dims). On \"Memory helper T cells give the go-ahead quickly\" the lit T cells in the field pulse and, in the strip, the T column's \"helpers: signal\" chip flashes once; on \"memory cytotoxic T cells destroy infected cells sooner\" its \"killers: destroy\" chip flashes (grey tag \"b08\"; the plasma cell tag dims). On \"antibodies rise within days\" the second curve leaves the axis after a short lag (bracket \"short lag\"); on \"climb far higher\" it rises far above the first peak; on \"stay up longer\" it falls slowly. Small grey glosses beside the peak: \"mainly IgG; binds more tightly\". On \"secondary response\" the second curve outlines amber and a gloss writes: \"secondary response: same antigen, again\"; by the end only this gloss and one tag are bright. On \"before you feel sick\" the grey illness band appears only faintly under the first days of the second curve and then fades (grey label \"often no illness\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "read-graph",
+      "visualDecision": "new",
+      "visualReference": "the cells shrink away; the graph fills the left two-thirds.",
+      "teachingReason": "Reading the graph: On a graph of antibody level against time, the primary response is a slow, low hump.",
+      "narrationCue": "slow, low hump / fast, tall peak / logarithmic, because the second peak / ten to a hundred times higher / a different antigen arrives at the same time / no memory cells fit it",
+      "motionPurpose": "On the spoken cues: On \"slow, low hump\" the first curve lights teal (tag \"primary: slow, low\"); on \"fast, tall peak\" the second lights amber (tag \"secondary: fast, tall\"). On \"logarithmic, because the second peak\" the y axis relabels with log ticks \"1, 10, 100, 1000\" and the curves redraw to match (gloss \"log scale:",
+      "motionRole": "explain",
+      "onScreenChange": "the cells shrink away; the graph fills the left two-thirds. On \"slow, low hump\" the first curve lights teal (tag \"primary: slow, low\"); on \"fast, tall peak\" the second lights amber (tag \"secondary: fast, tall\"). On \"logarithmic, because the second peak\" the y axis relabels with log ticks \"1, 10, 100, 1000\" and the curves redraw to match (gloss \"log scale: each step is ten times more\"); on \"ten to a hundred times higher\" a short bracket spans the two peak heights (tag \"10 to 100 times higher\"). Earlier tags dim. On \"a different antigen arrives at the same time\" a second marker joins the second amber arrow (\"+ a new antigen\") and a dashed grey curve draws from it: a slow, low hump the same shape as the first primary curve (tag \"new antigen: primary response\"). On \"no memory cells fit it\" a small grey version of the cell count field shows no lit cells for the new antigen (grey tag \"no memory for it\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the graph stays.",
+      "teachingReason": "Memory: So remember: second exposure, faster, bigger, longer.",
+      "narrationCue": "second exposure, faster, bigger, longer.",
+      "motionPurpose": "On the spoken cues: One handwritten line writes on large above it: \"Second exposure: faster, bigger, longer.\" On \"starts sooner\" the short lag bracket pulses; on \"much more antibody\" the peak bracket; on \"lasts longer\" the slow tail. On \"memory cells are already there\" the lit cell field returns small beside the line.",
+      "motionRole": "explain",
+      "onScreenChange": "the graph stays. One handwritten line writes on large above it: \"Second exposure: faster, bigger, longer.\" On \"starts sooner\" the short lag bracket pulses; on \"much more antibody\" the peak bracket; on \"lasts longer\" the slow tail. On \"memory cells are already there\" the lit cell field returns small beside the line. Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "vaccination",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to a fresh graph at the lower left and `m7-vaccine-vial-syringe-v1.png` at the upper left (tag \"vaccine\").",
+      "teachingReason": "Vaccination: Vaccination uses this.",
+      "narrationCue": "Vaccination",
+      "motionPurpose": "On the spoken cues: On \"doesn't cause the full disease\" a gloss writes: \"vaccine: antigen in a form that doesn't cause the full disease\". On \"a weakened live virus\" a small faded copy of the varicella plate sits beside the vial (grey gloss \"live attenuated\"; tag \"chickenpox vaccine\"); on \"a killed pathogen\", \"just one",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to a fresh graph at the lower left and `m7-vaccine-vial-syringe-v1.png` at the upper left (tag \"vaccine\"). On \"doesn't cause the full disease\" a gloss writes: \"vaccine: antigen in a form that doesn't cause the full disease\". On \"a weakened live virus\" a small faded copy of the varicella plate sits beside the vial (grey gloss \"live attenuated\"; tag \"chickenpox vaccine\"); on \"a killed pathogen\", \"just one of its proteins\" and \"instructions\" three small grey labels write in a row under it, one per cue (\"inactivated\", \"subunit (one protein)\", \"mRNA instructions\"), each earlier label dimming. A small grey tag at the corner: \"Jenner, 1796: cowpox\". On \"a primary response and memory cells, without the illness\" an amber arrow labelled \"vaccine\" lands at day 0 of the fresh graph and a low primary curve draws with no illness band (tag \"memory, no illness\"); the cell count field lights its many memory cells. On \"a real infection meets a secondary response\" a second arrow, \"real virus\", lands later and a tall secondary curve draws (tag \"infection meets memory\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "boosters",
+      "visualDecision": "new",
+      "visualReference": "the fresh graph stays.",
+      "teachingReason": "Boosters: Some vaccines need an extra dose later, called a booster.",
+      "narrationCue": "booster",
+      "motionPurpose": "On the spoken cues: On \"an extra dose later\" a second amber arrow labelled \"booster\" lands on the axis between the vaccine and the real virus, and a taller curve draws from it (gloss \"booster: a later extra dose of the same vaccine\"). On \"adds more memory cells\" a few more cells in the field light teal (tag \"more",
+      "motionRole": "explain",
+      "onScreenChange": "the fresh graph stays. On \"an extra dose later\" a second amber arrow labelled \"booster\" lands on the axis between the vaccine and the real virus, and a taller curve draws from it (gloss \"booster: a later extra dose of the same vaccine\"). On \"adds more memory cells\" a few more cells in the field light teal (tag \"more memory cells\"). On \"prepares you before an infection\" a grey chip \"a vaccine treats the disease\" fades in and takes a grey scribble cross, with the small grey reason \"it builds memory first\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "active",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the empty coded `ImmunityTable` (two rows, two columns, grey headers \"natural\" and \"artificial\").",
+      "teachingReason": "Active immunity: Immunity from vaccines and infections is called active immunity, because your own immune system did the work and made memory cells.",
+      "narrationCue": "active immunity",
+      "motionPurpose": "On the spoken cues: On \"active immunity\" the top row header writes and lights: \"active\" (gloss \"active: your own response; memory cells\"). On \"It often lasts a long time\" a small grey row note writes \"long-lasting\" (on \"a booster can top it up\" a tiny grey \"+ booster\" joins it); on \"a week or more to build\" a second",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the empty coded `ImmunityTable` (two rows, two columns, grey headers \"natural\" and \"artificial\"). On \"active immunity\" the top row header writes and lights: \"active\" (gloss \"active: your own response; memory cells\"). On \"It often lasts a long time\" a small grey row note writes \"long-lasting\" (on \"a booster can top it up\" a tiny grey \"+ booster\" joins it); on \"a week or more to build\" a second note \"slow to start\". On \"natural active\" the top-left quadrant fills with the varicella thumbnail and \"catching the disease\"; on \"artificial active\" the top-right quadrant fills with the vaccine vial thumbnail and \"vaccination\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "passive",
+      "visualDecision": "adjust",
+      "visualReference": "on \"Passive immunity\" the bottom row header writes and lights: \"passive\" (gloss \"passive: given ready-made antibodies; they make no memory\").",
+      "teachingReason": "Passive immunity: Passive immunity is different.",
+      "narrationCue": "Passive immunity",
+      "motionPurpose": "On the spoken cues: On \"They work straight away\" a grey row note \"immediate\"; on \"form memory cells\" the cell count field returns small with no new lit cells (grey tag \"no memory from given antibodies\"); a grey chip \"passive immunity leaves memory\" fades in and takes a grey scribble cross. On \"broken down over weeks",
+      "motionRole": "explain",
+      "onScreenChange": "on \"Passive immunity\" the bottom row header writes and lights: \"passive\" (gloss \"passive: given ready-made antibodies; they make no memory\"). On \"They work straight away\" a grey row note \"immediate\"; on \"form memory cells\" the cell count field returns small with no new lit cells (grey tag \"no memory from given antibodies\"); a grey chip \"passive immunity leaves memory\" fades in and takes a grey scribble cross. On \"broken down over weeks to months\" a small coded line draws beside the row: high at once, then falling to the axis (grey row note \"fades\"; grey tag \"weeks to months\"). On \"across the placenta\" the bottom-left quadrant fills with `m7-placenta-villus-v1.png` (new; tag \"antibodies cross the placenta\"), with small coded Ys passing from the maternal blood space into the villus capillary; on \"in breast milk\" `b3a2-milk-gland-full-v1.png` sits small beside it (grey tag \"breast milk\"). Quadrant label \"from the mother\". On \"for its first months\" the falling line beside the row gains a grey tag \"first months\", and a small grey arrow points to the artificial active quadrant (tag \"then its own vaccines\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "antivenom",
+      "visualDecision": "adjust",
+      "visualReference": "the bottom-right quadrant fills with `m7-brown-snake-v1.png` (new; grey tag \"eastern brown snake\") and the label \"antibody injection: antivenom\".",
+      "teachingReason": "Antivenom: Artificial passive immunity is an injection of antibodies.",
+      "narrationCue": "made by giving an animal / needs those antibodies now / their own primary response would take far too long",
+      "motionPurpose": "On the spoken cues: On \"made by giving an animal\" a small grey line of three coded steps writes under the quadrant (\"venom, small doses → horse makes antibodies → antibodies collected\"; text only, no horse drawn). On \"needs those antibodies now\" small coded Ys bind coded venom specks beside the snake (tag \"binds venom",
+      "motionRole": "explain",
+      "onScreenChange": "the bottom-right quadrant fills with `m7-brown-snake-v1.png` (new; grey tag \"eastern brown snake\") and the label \"antibody injection: antivenom\". On \"made by giving an animal\" a small grey line of three coded steps writes under the quadrant (\"venom, small doses → horse makes antibodies → antibodies collected\"; text only, no horse drawn). On \"needs those antibodies now\" small coded Ys bind coded venom specks beside the snake (tag \"binds venom at once\"). On \"their own primary response would take far too long\" the scene 2 primary curve returns as a small grey thumbnail with its lag bracket pulsing (tag \"too slow for venom\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "two-questions",
+      "visualDecision": "new",
+      "visualReference": "the full table enlarges to the centre with its four thumbnails.",
+      "teachingReason": "Two questions: Active and passive immunity are both acquired immunity, gained during your life, unlike the innate defences you're born with.",
+      "narrationCue": "Active, you do the work. Passive, you're handed the antibodies.",
+      "motionPurpose": "On the spoken cues: On \"both acquired immunity\" a grey bracket \"acquired\" draws down the left side across both rows, and a gloss writes: \"acquired: gained during life (active or passive)\"; on \"the innate defences you're born with\" the strip's innate rungs pulse once, small at the right (grey tag \"innate: born with",
+      "motionRole": "explain",
+      "onScreenChange": "the full table enlarges to the centre with its four thumbnails. On \"both acquired immunity\" a grey bracket \"acquired\" draws down the left side across both rows, and a gloss writes: \"acquired: gained during life (active or passive)\"; on \"the innate defences you're born with\" the strip's innate rungs pulse once, small at the right (grey tag \"innate: born with it\"), then the gloss dims. On \"Who made the antibodies\" an arrow runs down the row headers (tag \"who made them? active or passive\"); on \"naturally, or by medical treatment\" an arrow runs across the column headers (tag \"how? natural or artificial\"). On the last sentence one handwritten line writes on under the table: \"Active: you do the work. Passive: you're handed the antibodies.\" The two row headers brighten in turn. On \"a snakebite needs ready-made antibodies now\" the snake quadrant brightens (tag \"now: passive\"); on \"lasting protection against a disease comes from active immunity\" both active quadrants brighten, then the vaccine quadrant stays bright on \"such as a vaccine\" (tag \"lasting: active\"). Nothing on screen links the vaccine to the snake. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (two antigens)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. The graph shows antibody",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (two antigens))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A rabbit was injected with antigen P on day 0. On day 40, it was injected with antigen P again and with a new antigen, Q. The graph shows the concentration of antibodies against P and against Q in the rabbit's blood.\" A coded graph on the card: x axis \"time (days)\", 0 to 70, ticks every 10; y axis \"antibody concentration (arbitrary units, log scale)\", ticks 1, 10, 100, 1000. Solid line \"anti-P\": flat near 1 to day 6, rising to about 20 at day 14, falling to about 4 by day 40; after day 40 rising from day 42 to about 800 at day 48, then falling slowly to about 300 by day 70. Dashed line \"anti-Q\": flat near 1 from day 40 to day 46, rising to about 20 at day 54, falling to about 8 by day 70. Arrows on the x axis at day 0 (\"P\") and day 40 (\"P + Q\"). Demand: \"Explain the difference between the responses to antigens P and Q after day 40. (4 marks)\". One lined answer box. Nothing answer-bearing (no labels \"primary\" or \"secondary\", no cells). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "tick",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top, its graph enlarged beside a two-row answer table (\"anti-P after day 40\", \"anti-Q after day 40\").",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "antibodies to P rose within days to a much higher peak / The first injection left memory cells / Q got a slow, low primary response / had to be selected and multiply first / the classic mistake / memory is specific to P",
+      "motionPurpose": "On the spoken cues: On \"antibodies to P rose within days to a much higher peak\" the solid line after day 40 outlines amber and \"injected with antigen P again\" underlines amber; the P row fills \"short lag, peak about 40 times higher: secondary\". On \"The first injection left memory cells\" \"antigen P on day 0\" underlines",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top, its graph enlarged beside a two-row answer table (\"anti-P after day 40\", \"anti-Q after day 40\"). On \"antibodies to P rose within days to a much higher peak\" the solid line after day 40 outlines amber and \"injected with antigen P again\" underlines amber; the P row fills \"short lag, peak about 40 times higher: secondary\". On \"The first injection left memory cells\" \"antigen P on day 0\" underlines teal and the row extends \"memory cells from day 0 fit P\". On \"Q got a slow, low primary response\" the dashed line outlines teal and \"a new antigen, Q\" underlines teal; the Q row fills \"lag about a week, low peak: primary\". On \"had to be selected and multiply first\" the row extends \"no memory: few fitting cells\". On \"the classic mistake\" the chip \"the first injection boosts every antibody\" writes on and takes a grey scribble cross, with the small grey reason \"memory is specific to P\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (antivenom)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A bushwalker is bitten by a brown",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (antivenom))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A bushwalker was bitten by an eastern brown snake. She was given brown snake antivenom (antibodies against the venom, collected from horses) and recovered. A year later, she was bitten by the same species again.\" Friend's claim, in a small box: \"She is now immune to the venom, because she has already had antibodies against it.\" Demand: \"Evaluate the friend's claim. (3 marks)\". One lined answer box. No plates, no person. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "The claim is wrong / artificial passive immunity / fade within weeks / form memory cells / dependable protection / the classic mistake",
+      "motionPurpose": "On the spoken cues: A short answer block writes beneath it. On \"The claim is wrong\" a verdict chip \"claim: not supported\". On \"artificial passive immunity\" \"antibodies against the venom, collected from horses\" underlines teal and a row writes \"made by a horse: artificial passive\"; the table's bottom-right quadrant",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A short answer block writes beneath it. On \"The claim is wrong\" a verdict chip \"claim: not supported\". On \"artificial passive immunity\" \"antibodies against the venom, collected from horses\" underlines teal and a row writes \"made by a horse: artificial passive\"; the table's bottom-right quadrant thumbnail sits beside it. On \"fade within weeks\" a row writes \"horse antibodies fade within weeks\". On \"form memory cells\" a row writes \"receiving antibodies: no memory made\". On \"dependable protection\" \"A year later\" underlines amber and a row writes \"no dependable protection: needs antivenom again\". Earlier rows dim as each new row writes. On \"the classic mistake\" the chip \"antivenom is a vaccine\" writes on and takes a grey scribble cross, with the small grey reason \"a vaccine gives antigen, not antibodies\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the table returns small at the left beside a small graph thumbnail; two step chips write on, one per cue: \"memory cells for this antigen? secondary : primary\" and \"who made the antibodies? active : passive\"; on \"Then decide\" both chips brighten together.",
+      "teachingReason": "Decision rule and handoff: So for any immunity question, ask two things.",
+      "narrationCue": "Then decide",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: immune response practice\" (small grey tag; the complete strip thumbnail beside it). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the table returns small at the left beside a small graph thumbnail; two step chips write on, one per cue: \"memory cells for this antigen? secondary : primary\" and \"who made the antibodies? active : passive\"; on \"Then decide\" both chips brighten together. A \"Next\" chip slides in at the lower right: \"Next: immune response practice\" (small grey tag; the complete strip thumbnail beside it). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b09-learning-review.md",
+      "sha256": "474eae91bd5ce08f4e383f6b404536283d715ac7e6cec3d093b976b66872da2d"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b09-claude-science-check.md",
+      "sha256": "b88b1b606c8cd5ebcc5ea4f4285640906777a0ba98da09c179da6dda0924de59"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

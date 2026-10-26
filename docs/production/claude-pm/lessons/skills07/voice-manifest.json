@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Skills-S07-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/skills07/lesson.json",
+  "lessonSha256": "a9b1ec5f5c2f96ed48d4b398e020d100e450584780637e87b627835af4686e5f",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/skills07/lesson.production-brief.json",
+    "sha256": "3e22559e09cad9bfe69b130b0e48e7b4596bf0a70d121f9f9db7e479e8bebaaa"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Practical questions often ask about validity, reliability or accuracy, and then ask you to improve the method. In four of the last twelve Chemistry and Biology marking feedback reports, NESA asked for a clearer understanding of these three words and the difference between them. And in one recent Chemistry guideline, full marks needed each change to be justified by what it does for accuracy. So let's get the three words straight, and write fixes that actually fix the problem.",
+      "hash": "caf91cccf372",
+      "textSha256": "caf91cccf372c4cf222b7f70ce68503d97c142c780979c466acff086737b03ee",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/hook.caf91cccf372.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/hook.caf91cccf372.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/hook.caf91cccf372.generation.json",
+      "plannedRequestSha256": "58618f6461b4945fb56cf521ad16bd554d82d32d4f3c1e2ca30a4e3c15b96488"
+    },
+    {
+      "id": "three-words",
+      "parentSceneId": "three-words",
+      "text": "Three words, three different questions. Validity: does the method measure what it was meant to? Reliability: if you repeat it the same way, do the results agree? Accuracy: how close is the result to the true value? Picture a target. Results clustered tightly but off centre are reliable, not accurate. Results scattered around the centre aren't reliable. And a tight cluster on the wrong target isn't valid, however neat it looks. Right target, repeats agree, close to true.",
+      "hash": "7ddf90fafd02",
+      "textSha256": "7ddf90fafd02ca913868b241e989b8fb91aff2d6daf56373196dfa7c1b5c7b2d",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/three-words.7ddf90fafd02.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/three-words.7ddf90fafd02.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/three-words.7ddf90fafd02.generation.json",
+      "plannedRequestSha256": "b0a89df7461313b83dde03771a77ad30b1176fbfc72313f1f71c11ed87496524"
+    },
+    {
+      "id": "word-feature-fix",
+      "parentSceneId": "word-feature-fix",
+      "text": "So every answer needs three things. The word: which quality is the question about? The feature: which part of this method affects it, and what does it do to the result? Then the fix: a change that removes that cause. Word, feature, fix. If your fix would work for any experiment, it probably isn't fixing this one.",
+      "hash": "493bb9be6882",
+      "textSha256": "493bb9be6882de9789ae6d69ef43d1cd783eaefb24daacd471e94d0a71c1e2d4",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/word-feature-fix.493bb9be6882.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/word-feature-fix.493bb9be6882.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/word-feature-fix.493bb9be6882.generation.json",
+      "plannedRequestSha256": "620a09db2783fd3d4bd1c24e9701eb52c3d9861d013fd4b051037a48647c86c6"
+    },
+    {
+      "id": "question-card",
+      "parentSceneId": "question-card",
+      "text": "Here's an HSC-style Chemistry question. A student compares ethanol and propan-one-ol in a spirit burner under an uncovered copper can, with no draught shield. Because the propan-one-ol flame was taller, she raised the can for those trials. Her three trials and the means are in the table. There are three parts: reliability, a claim about more trials, and validity. If you take Biology, you don't need the chemistry here: watch how each answer names the word, the feature and the fix. Your question is coming. Pause here to answer.",
+      "hash": "6c673bf97626",
+      "textSha256": "6c673bf97626e6b0f5949a7acf7da2f274676c525f787553be6e773bc3475b19",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/question-card.6c673bf97626.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/question-card.6c673bf97626.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/question-card.6c673bf97626.generation.json",
+      "plannedRequestSha256": "13257bf73b5feffff81cbc7672a1492e91ff53c7c3240dbde99fa908f55f819e"
+    },
+    {
+      "id": "part-a",
+      "parentSceneId": "part-a",
+      "text": "Part a: reliability. That's about repeats. Ethanol's three trials sit within about one percent of their mean, and propan-one-ol's within about one and a half. So her results are reliable. Better still, use the table: the gap between the two alcohols, about a hundred kilojoules per mole, is far bigger than the spread within either set, so the difference isn't just scatter. A judgement, and evidence from the stimulus.",
+      "hash": "48324c6ff3da",
+      "textSha256": "48324c6ff3da480fab710bec0e49f2812caa308c75112671a9b4e8baef37c5ed",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-a.48324c6ff3da.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-a.48324c6ff3da.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-a.48324c6ff3da.generation.json",
+      "plannedRequestSha256": "f3a46649d4b2c8a001bdaa43c7cfa579171d7c41415691f88106bb58e997ebac"
+    },
+    {
+      "id": "part-b",
+      "parentSceneId": "part-b",
+      "text": "Part b: she says ten trials would bring her values closer to the data values. That's a claim about accuracy. Her values are well under half the data values, because heat escapes from an uncovered, unshielded can in every trial. More trials just give a better mean of the same low values. So the claim is wrong: repeats improve reliability, not accuracy. What would help? A draught shield and a lid, because they cut the heat that escapes.",
+      "hash": "0f95ecfd41f5",
+      "textSha256": "0f95ecfd41f5857f7a45ddccfa57c5a81437bb2aaecb5f5743d7a0dd6a14226e",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-b.0f95ecfd41f5.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-b.0f95ecfd41f5.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-b.0f95ecfd41f5.generation.json",
+      "plannedRequestSha256": "904883887b037dc3ef678aca15c11e4ea37e9dacda592c57a8bff6f743c94342"
+    },
+    {
+      "id": "part-c",
+      "parentSceneId": "part-c",
+      "text": "Part c: validity. To compare the alcohols fairly, only the alcohol should change. But she raised the can from two to six centimetres for propan-one-ol, so more of its heat spread into the air before it reached the can. Look at the numbers: ethanol caught about forty three percent of its data value, propan-one-ol only about thirty four. So part of the difference comes from the distance, not the alcohol. The fix: keep the can two centimetres above the wick for both, and trim the taller wick so the flame doesn't touch the can.",
+      "hash": "b67b58e12ca2",
+      "textSha256": "b67b58e12ca2428b85761208f62ccc893e0783ba6be2bee6afd473bd7b5c1528",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-c.b67b58e12ca2.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-c.b67b58e12ca2.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/part-c.b67b58e12ca2.generation.json",
+      "plannedRequestSha256": "8d44dfa5ba9eb944e359b609cfa077a61025c14f66a25dd565c4e70ffc4bdd5d"
+    },
+    {
+      "id": "fixes-that-fix",
+      "parentSceneId": "fixes-that-fix",
+      "text": "Now compare two improvements for part c. Answer A says: repeat the experiment and be more careful. That could go on any practical, and neither part changes the distance. Answer B names the change and says what it fixes. In one recent Chemistry guideline, two changes each justified by their effect on accuracy got three marks, while two changes named without reasons got two. So when does repeat it earn marks? When the question is about reliability: in one Biology guideline, explaining how repeats show whether results agree earned the marks.",
+      "hash": "1aa8f16f8a4c",
+      "textSha256": "1aa8f16f8a4cc0955ac823143acfef5ea48c1b6d621562855ec9f4eb227ead27",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/fixes-that-fix.1aa8f16f8a4c.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/fixes-that-fix.1aa8f16f8a4c.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/fixes-that-fix.1aa8f16f8a4c.generation.json",
+      "plannedRequestSha256": "0d0c446d8a2daaaa912e8de072ce6410177f96dce3c521b349e609eb5c201d77"
+    },
+    {
+      "id": "risk-answers",
+      "parentSceneId": "risk-answers",
+      "text": "Risk questions work the same way: the hazard, the harm it causes, and a control that stops it, for this substance. These alcohols are flammable, so refill a burner only when it's cold and away from any flame. Writing just wear a lab coat doesn't say what it protects against. In one Biology guideline, the marks needed the precaution and how it prevents infection.",
+      "hash": "fee2a5ea695b",
+      "textSha256": "fee2a5ea695b1e658a76bfe78ae918db14d35955b83f17e88093ea654fce8a2f",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/risk-answers.fee2a5ea695b.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/risk-answers.fee2a5ea695b.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/risk-answers.fee2a5ea695b.generation.json",
+      "plannedRequestSha256": "12d94363845d5cc9b26a9095671cd3958515c8a3fe7ac61ec55e5259688add47"
+    },
+    {
+      "id": "drill-1",
+      "parentSceneId": "drill-1",
+      "text": "Your turn. Do the one in your subject, or both. Chemistry first. Two students each measure the molar enthalpy of neutralisation three times. The accepted value is about minus fifty seven. Their results are on screen. Compare the reliability and accuracy of their results. Three marks. Pause here to answer.",
+      "hash": "d64b0ef19735",
+      "textSha256": "d64b0ef197357ee05cbf7a41ae71cbd7004531419d50591a849f9449a27a1e4b",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/drill-1.d64b0ef19735.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/drill-1.d64b0ef19735.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/drill-1.d64b0ef19735.generation.json",
+      "plannedRequestSha256": "856881a7500db3a6417cb0bdcb8963023ba31d2b5e6035204c651cc9527d9170"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "X's results agree within one kilojoule per mole, and Y's spread over seven, so X is more reliable. But Y's values are closer to minus fifty seven, and its mean is minus fifty seven, so Y is more accurate. X is consistently less negative, a sign of a systematic error like heat loss. The mix-up to drop: X is more accurate because its results agree. Agreeing is reliability.",
+      "hash": "625ec7e2fb4d",
+      "textSha256": "625ec7e2fb4d064bedfec52c6d481a2736d30a6b21068f52bbdaf7ec2a169cdb",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/feedback-1.625ec7e2fb4d.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/feedback-1.625ec7e2fb4d.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/feedback-1.625ec7e2fb4d.generation.json",
+      "plannedRequestSha256": "3475274728934f5299d3b2c28b5dd0dec6d32d33e5bfd71a32496442e7d97309"
+    },
+    {
+      "id": "drill-2",
+      "parentSceneId": "drill-2",
+      "text": "Now Biology. A student compares the microbes that grow from tap water and from tank water. She counts the tap water plate after twenty four hours, and the tank water plate after seventy two. Everything else is on screen. Explain why her conclusion is not valid, and propose a change that fixes the problem. Three marks. Pause here to answer.",
+      "hash": "bc721dff816c",
+      "textSha256": "bc721dff816c007842c457dacf5ff2f4875909e50b4e6e5fdadb5a546ff8b53c",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/drill-2.bc721dff816c.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/drill-2.bc721dff816c.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/drill-2.bc721dff816c.generation.json",
+      "plannedRequestSha256": "377cca7e283e4fc47a53cf1a38d0a49406bd796ffd63e485c687a71ec618aeb4"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The incubation time changed as well as the water. Given longer, more colonies grow big enough to count, so the difference could come from the time, not the water. The fix: incubate both plates for the same time, say forty eight hours, and count them together. The habit to drop: repeat with more plates. That improves reliability, but every repeat still has unequal times.",
+      "hash": "63158ebb1023",
+      "textSha256": "63158ebb1023985d14c4ff0b837d954abda1aeb1df44e7e8dda0390305174746",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/feedback-2.63158ebb1023.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/feedback-2.63158ebb1023.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/feedback-2.63158ebb1023.generation.json",
+      "plannedRequestSha256": "0af296cd718bbc81a9236d57c1e1d4120584aa1d77004c0d82470f13668b37be"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, in every practical question. Name the word: right target, repeats agree, close to true. Point to the feature of this method, and say what it does to the result. Then give a fix that removes that cause. Repeats help reliability, but they can't fix an error that pushes every trial the same way. Next: extended responses.",
+      "hash": "d34daa5635ba",
+      "textSha256": "d34daa5635bae3578a397fc5bb64d8630c1ee184aec942a8a96fc2b5f3784f18",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/decision-rule.d34daa5635ba.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/decision-rule.d34daa5635ba.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/decision-rule.d34daa5635ba.generation.json",
+      "plannedRequestSha256": "1353d98163a1030e8616cf14487a8ede5debf6f6dc7eaff46da939bff28fee82"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Skills-S07-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Skills-S07-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

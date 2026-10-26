@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7p03c/lesson.json",
+    "lessonSha256": "e9160e17d1dfd44f471d5115ea351ececb164f0b1b7a89f5c749fcb014f07fe6"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c07 (complete and incomplete combustion equations; the data values −726, −1367, −2021, −2676 kJ/mol; soot means too little oxygen; a simple can catches about half; the spirit-burner set-up plate). chem-m6-c03 (q = mcΔT, c = 4.18 J g⁻¹ °C⁻¹, ΔH = −q ÷ n, kJ, \"keep the digits; round at the end\"; recommended prerequisite, change 10). chem-m6-p02 (the error chain source to ΔT to q to ΔH; not every error pushes the same way; extrapolating a cooling line; validity, reliability and accuracy for a calorimetry practical; recommended prerequisite). chem-m5-p01 (validity, reliability, accuracy, variables and risk assessment in plain words). chem-m7-c05 (alcohol names). Year 11: molar mass, n = m ÷ M; significant figures. Not assumed: spirit burner, draught shield (given a plain meaning), GHS hazard codes.",
+    "startsWith": "Measure water warming and fuel mass with a spirit burner. The video opens: In the last video, burning methanol under a can of water caught only about half the energy. That's normal for this practical. So how do you measure the enthalpy of combustion of several alcohols, compare them reliably anyway, and explain where the rest of the energy goes?",
+    "stopsAfter": "setting up the spirit burner and can, with a draught shield and lid, and explaining each part; weighing with the cap on and recording the highest temperature; naming the variables of the comparison and why the same rise is used; calculating molar enthalpy of combustion from water mass, temperature rise and mass of fuel lost; judging that the comparison is reliable and valid for ranking though each value is inaccurate; tracing heat loss, incomplete combustion and evaporation to q or n and to ΔH; explaining why extrapolation helps little here; matching each improvement to its cause; writing the risk rows for the four alcohols. No anomalous results (chem-m7-g02), no answer technique drill (s07).",
+    "nextLesson": "answering practical and investigation questions in the exam (exam skills s07, placed after p03 by change 11), then calculation practice (chem-m7-g02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-p03.md"
+  ],
+  "teaching": {
+    "task": "Your spirit burner will catch only about half the energy of each alcohol. So how do you measure the enthalpy of combustion of several alcohols, compare them reliably anyway, and explain where the rest of the energy goes?",
+    "causalExplanation": "(1) a simple can catches about half the energy; the practical must compare alcohols reliably anyway (1); (2) heat must get into the water through the base, so a metal can sits close above the flame; a shield and a lid cut heat carried away by air (2); (3) the cap stops evaporation being counted as fuel burnt; the highest reading is the rise (3); (4) hotter water loses heat faster, so the same rise keeps the heat lost from the water similar for every alcohol (4); (5) the water's mass sets q; the fuel's mass lost sets n; ΔH = −q ÷ n per mole of fuel (5); (6) the values grow more negative with chain length, but each is about half (6); (7) trials agree, and the gaps between alcohols dwarf the spread, so the order is reliable (7); (8) heat to the can, clamp and air, incomplete combustion and soot make q too small; evaporation makes n too big; most errors make ΔH less negative, but not every one (8); (9) the flame loses heat for minutes, so extrapolation helps little; stop the loss at its source (9); (10) each improvement fixes a named cause; repeats fix reliability only (10); (11) one variable changed with losses similar makes the comparison valid; measuring only the water's heat makes each value less valid as an absolute measure (11); (12) the hazards and their controls (12); memory aid (13); attempts and brief feedback (14 to 17); decision rule and handoff (18); key notes (19).",
+    "conversationalApproach": "the last video's methanol caught only about half the energy, which is normal for a spirit burner, so the practical asks how to measure the enthalpy of combustion of several alcohols, compare them reliably anyway and explain where the rest goes. Each part of the set-up is given its reason (a metal can close above the flame, a draught shield and lid, a capped burner), the method weighs the burner and records the highest temperature, and the same 20 degree rise keeps the heat lost similar for every alcohol. The calculation is staged one line at a time: the water's mass goes into q, the fuel's mass lost gives n, and delta H is minus q over n. Three trials per alcohol agree within about two per cent and the gaps between alcohols dwarf the spread, so the ranking is reliable but not accurate; the error chain traces heat to the can, clamp and air, incomplete combustion and evaporation through q or n to delta H, extrapolation helps only a little because the flame loses heat for minutes, and each improvement fixes a named cause while repeats fix reliability only. Validity and the risk assessment follow. The memory aids are water in q, fuel in n, and shield, lid, close, cap. Two exam questions follow with brief feedback.",
+    "openingDecision": "In the last video, burning methanol under a can of water caught only about half the energy. That's normal for this practical. So how do you measure the enthalpy of combustion of several alcohols, compare them reliably anyway, and explain where the rest of the energy goes?",
+    "understandingCheck": "(A1) \"A spirit burner containing ethanol (M = 46.07 g mol⁻¹) is used to heat 200.0 g of water from 20.3 °C to 38.9 °C. The mass of the spirit burner decreases from 158.42 g to 157.36 g. The specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹. Calculate the molar enthalpy of combustion of ethanol.\" New numbers (the scenes work methanol); every given is on the card. Answer −676 kJ/mol (3 s.f.), 49.4% of −1367. Crossed mistake: the fuel's mass in q (1.06 × 4.18 × 18.6 = 82.4 J, giving about −3.58 kJ/mol), the 2019 Q23 marker-reported mistake (`../research/question-types-chem-m7.md`). (A2) \"A student burns methanol and then butan-1-ol in a spirit burner beneath an uncovered copper can, with no draught shield, heating the water by 20 °C each time. Her mean molar enthalpies of combustion are −310 kJ mol⁻¹ for methanol and −1050 kJ mol⁻¹ for butan-1-ol. The data values are −726 kJ mol⁻¹ and −2676 kJ mol⁻¹. Each was repeated three times. Explain why her values are less negative than the data values, and suggest one improvement that would reduce this difference.\" Tests the error chain and an improvement matched to its cause. Answer: heat lost to the air and can (no shield, no lid), so q too small, ΔH less negative; a draught shield and lid. Crossed mistake: \"repeat more times\" (repeats improve reliability, not accuracy).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct a practical investigation to measure and reliably compare the enthalpy of combustion for a range of alcohols\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" (carried by the risk table, change 5 of the route review) this video prepares students to carry out and analyse the spirit-burner investigation; it does not claim that watching it is conducting it. It teaches: the set-up (spirit burner, metal can of water clamped close above the flame, draught shield, lid, heatproof mat) and why each part is there; the method (measured water, burner weighed with its cap on before and after, starting and highest temperatures, the same temperature rise for each alcohol, capping just before that rise to put the flame out, reweighing straight away); the variables of a comparison (independent: the alcohol; dependent: the molar enthalpy from ΔT and mass lost; controlled: water mass, can, flame distance, shield, lid, temperature rise), and why the same rise keeps losses comparable; the molar calculation in three stages with \"water in q, fuel in n\"; a results table for methanol to butan-1-ol, means of three trials; why the comparison is reliable (trials agree, and the gaps between alcohols are far bigger than the spread); why the values are inaccurate (about half the data values), traced through the error chain (heat to the can, clamp and air; incomplete combustion and soot; evaporation from the wick); why extrapolation helps little here, unlike chem-m6-p02; improvements matched to their causes; validity for comparing against validity as an absolute measure; the risk assessment and disposal of the alcohols. Recalled, not re-taught: q = mcΔT and c (chem-m6-c03); the error chain, \"not every error pushes the same way\", extrapolation and the meanings of validity, reliability and accuracy (chem-m6-p02, chem-m5-p01); combustion equations, incomplete combustion, the data values and \"about half\" (chem-m7-c07). Not here: anomalous results and further calculation practice (chem-m7-g02); answer technique for practical questions (s07); the bomb calorimeter and its figures (site correction 11); percentage uncertainty arithmetic; the calorimeter's heat capacity as a calculation."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m6-p02 and chem-m7-c07: heat warm-orange arrows; the temperature and balance readouts amber digits; the four alcohols in fixed colours across table rows, graph points and chips (methanol teal, ethanol amber, propan-1-ol violet, butan-1-ol blue); data values grey; q boxes orange, n boxes blue in the error chain; soot charcoal; hazards terracotta, controls green. Board layout (three zones, constant, as chem-m6-p02): top-left the short task line; the centre holds the apparatus or the graph; the right third holds the current card (method step, working, table, error chain, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Reuse: `m6-measuring-cylinder-v1.png` (2000 × 2000: an empty clear glass measuring cylinder with a hexagonal base, faint unlabelled graduations; scene 3, coded fill to 200 mL and coded label); `m7-ethanol-fuel-bottle-v1.png` (2000 × 2000: an amber glass bottle with a glass stopper, pale liquid, no label; scene 12 as an alcohol stock bottle, with a coded label); `m5x-safety-glasses-v1.png` (2000 × 2000: clear safety glasses; risk table head, \"always\"); `m5x-waste-bottle-v1.png` (2000 × 2000: an amber jar with a black cap and a blank cream label; scene 12, coded label \"Organic waste\"); `m7-fume-cupboard-v1.png` (2000 × 2000: a white fume cupboard with its sash part open; scene 12, small, beside \"refill away from flames\", tagged \"or a refilling station, per school\"). Considered, not used: `c8-thermometer-hot-v1.png` (inspected: a free-standing glass thermometer; the set-up plates include their own thermometer, and a separate one could not be placed in the can reliably); `m6-analytical-balance-v1.png` (inspected: an analytical balance with a glass draft enclosure holding a small beaker; a spirit burner is weighed on a top-pan balance, and the enclosure would hide or misplace it); `m6-foam-cup-calorimeter-v1.png` and `p02-foam-cup-in-beaker-v1.png` (neutralisation; shown only as a small grey thumbnail in scene 9's p02 recall, tagged \"neutralisation practical\"); `m5x-bunsen-burner-v1.png` (a gas burner, not a spirit burner). New plates: four (see Assets). No human figures.",
+    "transitionPlan": "The spirit burner calorimeter plate opens the hook lit with its readout chip as c07's two-bar strip writes about half and four alcohol chips line up; labels point to the burner, can and flame gap and the heat path arrows run as the shield and lid plate takes over; the method card writes one step per cue with the measuring cylinder, balance and readout acting it out; the variables card writes with the four coloured chips; the plate shrinks left as the task line, equation strip, grouped givens and one working line per stage write; the results table fills row by row and the coded graph plots each mean with error bars; the gap-against-spread bracket lights for reliability; the error-chain rows write one per cue, each arrow running to q or n and then delta H; a grey thumbnail of the neutralisation graph sits beside the burner's long cooling line for the extrapolation contrast; the fix matcher docks one chip per error row; the validity card and the risk table write in turn; the memory lines write with their arrows; each attempt clears the board and its feedback underlines the givens as the working or error rows write and a crossed chip lands; the plan card and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-spirit-burner-calorimeter-v1.png` centre, lit, with the readout chip on the thermometer.",
+      "teachingReason": "Hook (about half, and that's fine): In the last video, burning methanol under a can of water caught only about half the energy.",
+      "narrationCue": "half / reliably / goes",
+      "motionPurpose": "On the spoken cues: The c07 two-bar strip writes small at the right (\"measured 11 kJ g⁻¹ | careful 22.7 kJ g⁻¹\", bracket \"about 50%\"). On \"reliably\" four small coloured chips write under the plate: \"methanol\", \"ethanol\", \"propan-1-ol\", \"butan-1-ol\". On \"goes\" orange heat arrows curl off the can's sides into the air, and a \"?\" tag sits beside them. Heading writes: \"Half the energy, and a fair comparison anyway.\" Bright at the end: the",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-spirit-burner-calorimeter-v1.png` centre, lit, with the readout chip on the thermometer. The c07 two-bar strip writes small at the right (\"measured 11 kJ g⁻¹ | careful 22.7 kJ g⁻¹\", bracket \"about 50%\"). On \"reliably\" four small coloured chips write under the plate: \"methanol\", \"ethanol\", \"propan-1-ol\", \"butan-1-ol\". On \"goes\" orange heat arrows curl off the can's sides into the air, and a \"?\" tag sits beside them. Heading writes: \"Half the energy, and a fair comparison anyway.\" Bright at the end: the heading, the four chips and the \"?\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "setup",
+      "visualDecision": "adjust",
+      "visualReference": "the base plate stays centre.",
+      "teachingReason": "The set-up, and why each part is there: Here's the set-up.",
+      "narrationCue": "close / draught shield / lid",
+      "motionPurpose": "On the spoken cues: On \"spirit burner\" a label points to the burner (\"spirit burner: lamp with a wick\"). On \"close\" a small bracket between flame tip and can base, tag \"flame close to the can\". The heat path runs: most orange arrows rise into the base and the water glows faintly; on \"metal\" a tag \"metal: lets heat in\" (a grey thumbnail of chem-m6-p02's foam cup appears and dims, tag \"foam: kept heat in\"). On \"draught shield\" the plate",
+      "motionRole": "explain",
+      "onScreenChange": "the base plate stays centre. On \"spirit burner\" a label points to the burner (\"spirit burner: lamp with a wick\"). On \"close\" a small bracket between flame tip and can base, tag \"flame close to the can\". The heat path runs: most orange arrows rise into the base and the water glows faintly; on \"metal\" a tag \"metal: lets heat in\" (a grey thumbnail of chem-m6-p02's foam cup appears and dims, tag \"foam: kept heat in\"). On \"draught shield\" the plate cross-fades in place to `m7-spirit-burner-calorimeter-shield-v1.png`; the side arrows meet the shield and turn back (tag \"shield: blocks air currents\"). On \"lid\" the lid on the shielded plate gets a ring, and arrows above the water stop at it (tag \"lid: less heat lost from the surface\"). A small grey tag \"heatproof mat\" sits on the mat (shown, not spoken). Earlier tags dim as each new one writes. Bright at the end: the shielded plate with its two tags \"shield\" and \"lid\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "method",
+      "visualDecision": "adjust",
+      "visualReference": "the shielded plate shrinks to the centre-left.",
+      "teachingReason": "The method: Measure two hundred millilitres of water into the can: two hundred grams.",
+      "narrationCue": "cap / twenty degrees / highest / evaporates",
+      "motionPurpose": "On the spoken cues: The method card writes in the right zone, one step per cue, earlier steps dimming: on \"two hundred millilitres\" `m6-measuring-cylinder-v1.png` appears with a coded fill to 200 mL and tilts along a coded arc into the can (no hands); step \"1 200 mL water, or weigh it: 200.0 g\". On \"cap\" `m7-spirit-burner-on-balance-v1.png` appears small at the right with the balance readout \"151.64 g\"; step \"2 weigh burner + cap\". The",
+      "motionRole": "explain",
+      "onScreenChange": "the shielded plate shrinks to the centre-left. The method card writes in the right zone, one step per cue, earlier steps dimming: on \"two hundred millilitres\" `m6-measuring-cylinder-v1.png` appears with a coded fill to 200 mL and tilts along a coded arc into the can (no hands); step \"1 200 mL water, or weigh it: 200.0 g\". On \"cap\" `m7-spirit-burner-on-balance-v1.png` appears small at the right with the balance readout \"151.64 g\"; step \"2 weigh burner + cap\". The readout chip on the thermometer shows \"22.4 °C\"; step \"3 starting temperature\". On \"twenty degrees\" the coded flame lights on the burner and the readout counts up to \"41.9 °C\"; step \"4 heat until almost a 20 °C rise; stir\". On \"highest\" the cap drops at 41.9 °C, the flame shrinks out, the readout climbs a little more and stops at \"42.4 °C\" with an amber ring (a small grey tag \"rise = 42.4 − 22.4 = 20.0 °C\"); step \"5 cap, stir, highest temperature\". On \"reweigh\" the balance readout changes to \"150.24 g\"; step \"6 reweigh at once, cap on\". On \"evaporates\" an uncapped burner thumbnail shows evaporation wisps with no flame, tag \"mass lost, no heat\", then dims. Bright at the end: steps 5 and 6 and the balance readout. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "variables",
+      "visualDecision": "new",
+      "visualReference": "the variables card writes in the right zone: on \"alcohol\" \"Independent: the alcohol\" with the four coloured chips; on \"You measure\" \"Dependent: ΔHc (from ΔT and mass lost)\"; on \"same\" \"Controlled:\" and its list writes one item per phrase, each pen-linked to the matching part of the shielded plate: \"water 200.0 g\", \"same can\", \"flame distance\", \"shield and lid\", \"rise 20.0 °C\".",
+      "teachingReason": "The variables in a comparison: To compare fairly, change only the alcohol.",
+      "narrationCue": "alcohol / same / lost",
+      "motionPurpose": "On the spoken cues: On \"lost\" a small coded sketch writes under the card: three water-temperature levels above a dashed \"room\" line, with loss arrows getting longer as the level rises; tag \"hotter water loses heat faster: same rise, similar loss from the water\". Bright at the end: the controlled list's \"rise 20.0 °C\" item and the loss sketch.",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone: on \"alcohol\" \"Independent: the alcohol\" with the four coloured chips; on \"You measure\" \"Dependent: ΔHc (from ΔT and mass lost)\"; on \"same\" \"Controlled:\" and its list writes one item per phrase, each pen-linked to the matching part of the shielded plate: \"water 200.0 g\", \"same can\", \"flame distance\", \"shield and lid\", \"rise 20.0 °C\". On \"lost\" a small coded sketch writes under the card: three water-temperature levels above a dashed \"room\" line, with loss arrows getting longer as the level rises; tag \"hotter water loses heat faster: same rise, similar loss from the water\". Bright at the end: the controlled list's \"rise 20.0 °C\" item and the loss sketch. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "calculate",
+      "visualDecision": "new",
+      "visualReference": "the plate shrinks to the left.",
+      "teachingReason": "The calculation: water in q, fuel in n: Here's the first methanol trial.",
+      "narrationCue": "twenty point zero / water / zero point zero four three seven / minus three hundred and eighty three / fuel",
+      "motionPurpose": "On the spoken cues: Task line: \"Find ΔHc of methanol (trial 1)\". Equation strip: \"CH₃OH(l) + 3/2 O₂(g) → CO₂(g) + 2H₂O(l)\". Givens, grouped with units, small at the top of the right zone: \"water: 200.0 g | 22.4 °C → 42.4 °C | c = 4.18 J g⁻¹ °C⁻¹\" and \"burner: 151.64 g → 150.24 g | M(CH₃OH) = 32.04 g mol⁻¹\". Task line, equation strip and givens stay grey while the working writes; one line per cue, earlier lines dimming: on \"twenty point",
+      "motionRole": "explain",
+      "onScreenChange": "the plate shrinks to the left. Task line: \"Find ΔHc of methanol (trial 1)\". Equation strip: \"CH₃OH(l) + 3/2 O₂(g) → CO₂(g) + 2H₂O(l)\". Givens, grouped with units, small at the top of the right zone: \"water: 200.0 g | 22.4 °C → 42.4 °C | c = 4.18 J g⁻¹ °C⁻¹\" and \"burner: 151.64 g → 150.24 g | M(CH₃OH) = 32.04 g mol⁻¹\". Task line, equation strip and givens stay grey while the working writes; one line per cue, earlier lines dimming: on \"twenty point zero\" \"ΔT = 42.4 − 22.4 = 20.0 °C\"; on \"water\" \"q = m(water) c ΔT = 200.0 × 4.18 × 20.0 = 16 720 J = 16.72 kJ\" with the C03 grey tag \"keep the digits; round at the end\" and a navy tag \"m = water, not fuel\"; on \"zero point zero four three seven\" \"Δm = 151.64 − 150.24 = 1.40 g\" then \"n = 1.40 ÷ 32.04 = 0.043695 mol\" (grey tag \"initial − final: a positive mass\"); on \"minus three hundred and eighty three\" \"ΔHc = −q ÷ n = −16.72 kJ ÷ 0.043695 mol = −382.65 → −383 kJ mol⁻¹ (3 s.f.)\" and the answer chip pins. On \"fuel\" a small chip \"neutralisation: n of water | here: n of fuel\" writes and dims. Bright at the end: the answer chip, the \"m = water\" tag and the n line. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "compare-range",
+      "visualDecision": "new",
+      "visualReference": "the results table writes in the right zone, one row per cue, in the alcohol colours: \"methanol | −383, −377, −388 | mean −383 kJ mol⁻¹\"; \"ethanol | −688, −676, −700 | mean −688\"; \"propan-1-ol | −985, −975, −995 | mean −985\"; \"butan-1-ol | −1.20, −1.19, −1.21 (× 10³) | mean −1.20 × 10³\".",
+      "teachingReason": "Comparing the range: Do three trials for each alcohol and take the mean.",
+      "narrationCue": "negative / half",
+      "motionPurpose": "On the spoken cues: On \"negative\" the series graph draws in the centre (x \"number of carbons\" 1 to 4, y \"|ΔHc| (kJ mol⁻¹)\" 0 to 2800): the four amber means plot with small error bars, rising. On \"half\" the grey data points (726, 1367, 2021, 2676) plot above them, and one small grey column of percentages writes at the right of the graph, in the alcohol colours (\"53% / 50% / 49% / 45% of the data value\"; one item). The table's trial",
+      "motionRole": "explain",
+      "onScreenChange": "the results table writes in the right zone, one row per cue, in the alcohol colours: \"methanol | −383, −377, −388 | mean −383 kJ mol⁻¹\"; \"ethanol | −688, −676, −700 | mean −688\"; \"propan-1-ol | −985, −975, −995 | mean −985\"; \"butan-1-ol | −1.20, −1.19, −1.21 (× 10³) | mean −1.20 × 10³\". On \"negative\" the series graph draws in the centre (x \"number of carbons\" 1 to 4, y \"|ΔHc| (kJ mol⁻¹)\" 0 to 2800): the four amber means plot with small error bars, rising. On \"half\" the grey data points (726, 1367, 2021, 2676) plot above them, and one small grey column of percentages writes at the right of the graph, in the alcohol colours (\"53% / 50% / 49% / 45% of the data value\"; one item). The table's trial columns dim, leaving the means. Bright at the end: the graph's two point sets and the percentage column. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "reliable-comparison",
+      "visualDecision": "new",
+      "visualReference": "the graph stays; the table shrinks out.",
+      "teachingReason": "A reliable comparison: Are they reliable?",
+      "narrationCue": "two percent / bigger",
+      "motionPurpose": "On the spoken cues: On \"two percent\" the error bars brighten and a tag writes \"trials within about 2% of each mean\" with the reliability card header small: \"Reliability: repeats agree\". On \"bigger\" the gap-against-spread brace runs: a tall brace between the ethanol and propan-1-ol points \"gap about 300 kJ mol⁻¹\", and a tiny brace on the ethanol error bar \"spread about 25 kJ mol⁻¹\"; tag \"gap much bigger than spread: the order is",
+      "motionRole": "explain",
+      "onScreenChange": "the graph stays; the table shrinks out. On \"two percent\" the error bars brighten and a tag writes \"trials within about 2% of each mean\" with the reliability card header small: \"Reliability: repeats agree\". On \"bigger\" the gap-against-spread brace runs: a tall brace between the ethanol and propan-1-ol points \"gap about 300 kJ mol⁻¹\", and a tiny brace on the ethanol error bar \"spread about 25 kJ mol⁻¹\"; tag \"gap much bigger than spread: the order is reliable\". Bright at the end: the two braces and the tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "error-chain",
+      "visualDecision": "adjust",
+      "visualReference": "the accuracy card header writes small: \"Accuracy: close to the data value?",
+      "teachingReason": "Where the rest goes: the error chain: But they aren't accurate.",
+      "narrationCue": "can / incomplete / evaporates / less negative",
+      "motionPurpose": "On the spoken cues: About half.\" The error-chain rows write in the right zone, each lighting on its cue while the previous dims: on \"can\" \"heat to can, clamp, air → q ↓ → ΔH less negative\" (orange q box), with the base plate small at the left and orange arrows into the can wall, clamp and air; on \"incomplete\" \"incomplete combustion, soot → q ↓ → ΔH less negative\" (orange q box), the plate cross-fading to",
+      "motionRole": "explain",
+      "onScreenChange": "the accuracy card header writes small: \"Accuracy: close to the data value? About half.\" The error-chain rows write in the right zone, each lighting on its cue while the previous dims: on \"can\" \"heat to can, clamp, air → q ↓ → ΔH less negative\" (orange q box), with the base plate small at the left and orange arrows into the can wall, clamp and air; on \"incomplete\" \"incomplete combustion, soot → q ↓ → ΔH less negative\" (orange q box), the plate cross-fading to `m7-spirit-burner-calorimeter-sooty-v1.png`; on \"evaporates\" \"evaporation from the wick → n ↑ → ΔH less negative\" (blue n box), with the evaporation wisp on a capless thumbnail. On \"less negative\" all three ΔH boxes pulse together, tag \"systematic: pushes every trial the same way\". On \"Not every error\" the accuracy header and the \"systematic\" tag dim, and a fourth row writes in amber: \"water recorded as more than it was → q ↑ → ΔH more negative\", with up arrows. Bright at the end: the three ΔH boxes and the amber row. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "extrapolation-contrast",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Why extrapolation helps only a little here: In the neutralisation practical, you extended the cooling line back to recover lost heat.",
+      "narrationCue": "instant / several minutes",
+      "motionPurpose": "On the spoken cues: Left, a small grey thumbnail of chem-m6-p02's temperature-time graph with its dashed line back to the moment of mixing, tag \"neutralisation: almost instant\". On \"instant\" the thumbnail's dashed line pulses. On \"several minutes\" the burn timeline draws in the centre: a temperature-time sketch rising over a heating section labelled \"flame on: several minutes\", then a short cooling section; orange loss ticks appear",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Left, a small grey thumbnail of chem-m6-p02's temperature-time graph with its dashed line back to the moment of mixing, tag \"neutralisation: almost instant\". On \"instant\" the thumbnail's dashed line pulses. On \"several minutes\" the burn timeline draws in the centre: a temperature-time sketch rising over a heating section labelled \"flame on: several minutes\", then a short cooling section; orange loss ticks appear along the whole heating section. On \"corrects only the last little bit\" a short dashed extrapolation draws back from the cooling section to the flame-out time, and a bracket covers only the final tick, tag \"corrects only this\". Bright at the end: the timeline with its loss ticks and the \"corrects only this\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "improvements",
+      "visualDecision": "new",
+      "visualReference": "the error rows from scene 8 return small in the right zone.",
+      "teachingReason": "Improvements that fix their cause: So match each fix to its cause.",
+      "narrationCue": "draught shield / close / cap / accurate",
+      "motionPurpose": "On the spoken cues: The fix matcher runs, one chip per cue, each docking beside its row with a pen link: on \"draught shield\" \"shield + lid\" docks to the heat row (the shielded plate appears small at the left); on \"close\" \"flame close\" docks to the same row; on \"trim the wick\" \"short wick, clean base\" docks to the soot row; on \"cap\" \"cap on, reweigh at once\" docks to the evaporation row. On \"accurate\" a chip \"more repeats → more",
+      "motionRole": "explain",
+      "onScreenChange": "the error rows from scene 8 return small in the right zone. The fix matcher runs, one chip per cue, each docking beside its row with a pen link: on \"draught shield\" \"shield + lid\" docks to the heat row (the shielded plate appears small at the left); on \"close\" \"flame close\" docks to the same row; on \"trim the wick\" \"short wick, clean base\" docks to the soot row; on \"cap\" \"cap on, reweigh at once\" docks to the evaporation row. On \"accurate\" a chip \"more repeats → more accurate\" fades in and is crossed (caption \"repeats improve reliability; the losses lower every trial\"). Bright at the end: the docked fix chips and the crossed chip. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "validity",
+      "visualDecision": "new",
+      "visualReference": "the validity card writes in the right zone: header \"Validity: measures what was intended?\"; two rows lighting in turn: \"Ranking the alcohols: valid (one variable changed; similar losses)\" with a small green tick and the four graph points thumbnail; on \"drift\" the scene 6 percentage column (53, 50, 49, 45%) returns small in grey beside the validity row, then dims as the next row writes (author note l); on \"reaches\" \"Each enthalpy value: less valid (only the water's heat is measured)\" with an amber tilde and the heat-path thumbnail showing arrows escaping.",
+      "teachingReason": "Is it valid?: Is it valid, meaning, does it measure what you intended?",
+      "narrationCue": "drift / reaches",
+      "motionPurpose": "On the spoken cues: A small grey footer: \"Reliability: repeats agree. Accuracy: close to the data value.\" Bright at the end: the two validity rows.",
+      "motionRole": "explain",
+      "onScreenChange": "the validity card writes in the right zone: header \"Validity: measures what was intended?\"; two rows lighting in turn: \"Ranking the alcohols: valid (one variable changed; similar losses)\" with a small green tick and the four graph points thumbnail; on \"drift\" the scene 6 percentage column (53, 50, 49, 45%) returns small in grey beside the validity row, then dims as the next row writes (author note l); on \"reaches\" \"Each enthalpy value: less valid (only the water's heat is measured)\" with an amber tilde and the heat-path thumbnail showing arrows escaping. A small grey footer: \"Reliability: repeats agree. Accuracy: close to the data value.\" Bright at the end: the two validity rows. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, the current row and header bright, earlier rows dimming: \"methanol, ethanol, propan-1-ol: highly flammable (H225); butan-1-ol: flammable (H226)\" / \"fire; vapour can reach a flame\" / \"refill only when cold, away from flames (station or fume cupboard); cap to extinguish; stock bottles away\"; \"methanol: toxic if swallowed, inhaled or on skin (H301, H331, H311); damages organs (H370)\" / \"poisoning; damage to eyesight and nerves\" / \"small volumes; no skin contact; ventilate; teacher fills burners\"; \"propan-1-ol, butan-1-ol: serious eye damage (H318)\" / \"eye injury from a splash\" / \"safety glasses\"; \"hot can and clamp\" / \"burns\" / \"let it cool before handling\" (row shown, not spoken); \"waste\" / \"flammable, harms drains\" / \"labelled organic waste container; never the sink\".",
+      "teachingReason": "The risk assessment: Now the risks.",
+      "narrationCue": "toxic / eyes / organic waste",
+      "motionPurpose": "On the spoken cues: On \"flammable\" `m7-ethanol-fuel-bottle-v1.png` appears small with a coded label \"alcohol stock\", and `m7-fume-cupboard-v1.png` small beside the refilling control. On \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\".",
+      "motionRole": "explain",
+      "onScreenChange": "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, the current row and header bright, earlier rows dimming: \"methanol, ethanol, propan-1-ol: highly flammable (H225); butan-1-ol: flammable (H226)\" / \"fire; vapour can reach a flame\" / \"refill only when cold, away from flames (station or fume cupboard); cap to extinguish; stock bottles away\"; \"methanol: toxic if swallowed, inhaled or on skin (H301, H331, H311); damages organs (H370)\" / \"poisoning; damage to eyesight and nerves\" / \"small volumes; no skin contact; ventilate; teacher fills burners\"; \"propan-1-ol, butan-1-ol: serious eye damage (H318)\" / \"eye injury from a splash\" / \"safety glasses\"; \"hot can and clamp\" / \"burns\" / \"let it cool before handling\" (row shown, not spoken); \"waste\" / \"flammable, harms drains\" / \"labelled organic waste container; never the sink\". On \"flammable\" `m7-ethanol-fuel-bottle-v1.png` appears small with a coded label \"alcohol stock\", and `m7-fume-cupboard-v1.png` small beside the refilling control. On \"organic waste\" `m5x-waste-bottle-v1.png` appears small with coded label \"Organic waste\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 2 seconds (reading hold; the table returns in the key notes). Hold about 2 seconds (reading hold; the table returns in the key notes).",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds (reading hold; the table returns in the key notes)"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: Two phrases to keep.",
+      "narrationCue": "Water in q, fuel in n / shield, lid, close, cap",
+      "motionPurpose": "On the spoken cues: Handwritten lines: \"Water in q, fuel in n.\" and \"Shield, lid, close, cap.\" Under the first, two small arrows from the plate thumbnail: one from the water to \"q = m c ΔT\", one from the burner on the balance to \"n = Δm ÷ M\". Under the second, four small icons light in turn (shield, lid, flame bracket, cap), each with its cause in grey (\"air currents\", \"surface loss\", \"heat to the air\", \"evaporation\").",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten lines: \"Water in q, fuel in n.\" and \"Shield, lid, close, cap.\" Under the first, two small arrows from the plate thumbnail: one from the water to \"q = m c ΔT\", one from the burner on the balance to \"n = Δm ÷ M\". Under the second, four small icons light in turn (shield, lid, flame bracket, cap), each with its cause in grey (\"air currents\", \"surface loss\", \"heat to the air\", \"evaporation\"). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. An ethanol spirit burner heats two",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A spirit burner containing ethanol (M = 46.07 g mol⁻¹) is used to heat 200.0 g of water from 20.3 °C to 38.9 °C. The mass of the spirit burner decreases from 158.42 g to 157.36 g. The specific heat capacity of water is 4.18 J g⁻¹ °C⁻¹. Calculate the molar enthalpy of combustion of ethanol.\" No apparatus drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no strip, no memory aid.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "eighteen point six / zero point zero two three zero / minus six hundred and seventy six / fuel in n",
+      "motionPurpose": "On the spoken cues: One line per cue, earlier lines dimming: on \"eighteen point six\" \"20.3 °C to 38.9 °C\" is underlined and \"ΔT = 38.9 − 20.3 = 18.6 °C\" writes; \"200.0 g of water\" and \"4.18 J g⁻¹ °C⁻¹\" are underlined as \"q = 200.0 × 4.18 × 18.6 = 15 549.6 J = 15.5496 kJ\" writes; on \"zero point zero two three zero\" \"158.42 g to 157.36 g\" and \"46.07 g mol⁻¹\" are underlined as \"Δm = 1.06 g; n = 1.06 ÷ 46.07 = 0.023008 mol\" writes; on",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. One line per cue, earlier lines dimming: on \"eighteen point six\" \"20.3 °C to 38.9 °C\" is underlined and \"ΔT = 38.9 − 20.3 = 18.6 °C\" writes; \"200.0 g of water\" and \"4.18 J g⁻¹ °C⁻¹\" are underlined as \"q = 200.0 × 4.18 × 18.6 = 15 549.6 J = 15.5496 kJ\" writes; on \"zero point zero two three zero\" \"158.42 g to 157.36 g\" and \"46.07 g mol⁻¹\" are underlined as \"Δm = 1.06 g; n = 1.06 ÷ 46.07 = 0.023008 mol\" writes; on \"minus six hundred and seventy six\" \"ΔHc = −15.5496 ÷ 0.023008 = −675.8 → −676 kJ mol⁻¹ (3 s.f.)\" and the answer chip pins. On \"classic slip\" a chip \"q = 1.06 × 4.18 × 18.6 = 82.4 J → −3.58 kJ mol⁻¹\" fades in and, on \"fuel in n\", is crossed (caption \"m in q is the water: 200.0 g\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "adjust",
+      "visualReference": "question card, worded as printed: \"A student burns methanol and then butan-1-ol in a spirit burner beneath an uncovered copper can, with no draught shield, heating the water by 20 °C each time.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A student burns methanol and butan-one-ol",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student burns methanol and then butan-1-ol in a spirit burner beneath an uncovered copper can, with no draught shield, heating the water by 20 °C each time. Her mean molar enthalpies of combustion are −310 kJ mol⁻¹ for methanol and −1050 kJ mol⁻¹ for butan-1-ol. The data values are −726 kJ mol⁻¹ and −2676 kJ mol⁻¹. Each was repeated three times. Explain why her values are less negative than the data values, and suggest one improvement that would reduce this difference.\" Beside it `m7-spirit-burner-calorimeter-v1.png` small (no heat arrows). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no arrows, no shield, no error chain.",
+      "motionTools": [
+        "DrawPath",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "water / less negative / draught shield",
+      "motionPurpose": "On the spoken cues: On \"water\" \"uncovered copper can, with no draught shield\" is underlined and orange arrows leave the plate's can sides and open top. On \"less negative\" the error-chain row writes small: \"heat lost → q ↓ → ΔH less negative\", with \"−310\" and \"−1050\" underlined. On \"draught shield\" the plate cross-fades to `m7-spirit-burner-calorimeter-shield-v1.png`, the arrows turning back at the shield; answer chip \"heat loss; shield",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"water\" \"uncovered copper can, with no draught shield\" is underlined and orange arrows leave the plate's can sides and open top. On \"less negative\" the error-chain row writes small: \"heat lost → q ↓ → ΔH less negative\", with \"−310\" and \"−1050\" underlined. On \"draught shield\" the plate cross-fades to `m7-spirit-burner-calorimeter-shield-v1.png`, the arrows turning back at the shield; answer chip \"heat loss; shield + lid keeps more heat in the water\". On \"Repeating\" \"Each was repeated three times\" is underlined and a chip \"repeat more times\" fades in and is crossed (caption \"repeats: reliability, not accuracy\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Same water, can, flame distance, shield, lid, 20.0 °C rise.\"",
+      "teachingReason": "Decision rule and handoff: So: change only the alcohol, put the water's mass in q and the fuel's in n, trace each error to q or n, and stop heat loss at its source.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Water in q, fuel in n.\" \"3 Error → q or n → ΔH.\" \"4 Fix the cause: shield, lid, close, cap.\" On \"Next\" a chip \"Next: practical and investigation questions (exam skills)\" appears, with a smaller grey chip \"then: combustion enthalpy practice\".",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Same water, can, flame distance, shield, lid, 20.0 °C rise.\" \"2 Water in q, fuel in n.\" \"3 Error → q or n → ΔH.\" \"4 Fix the cause: shield, lid, close, cap.\" On \"Next\" a chip \"Next: practical and investigation questions (exam skills)\" appears, with a smaller grey chip \"then: combustion enthalpy practice\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p03c-learning-review.md",
+      "sha256": "d94c221de42c3219ed1d6f2223173b8da038fb2118af78fb76c82bd52b466124"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p03c-claude-science-check.md",
+      "sha256": "aa127abc6b0df518dd0ff7d63eb60f69c91e8c18859e4653205fde2cb6d25202"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

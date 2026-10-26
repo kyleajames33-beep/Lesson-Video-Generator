@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c08a/lesson.json",
+    "lessonSha256": "5eafd86a5b7eada8a1dd322948468b0746adb321d107fe53bc5c2792fad983a7"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c05 (primary, secondary and tertiary by counting carbons on the C–OH carbon; naming alcohols; hydrogen bonding between alcohol molecules; boiling points); chem-m7-c04a (hydration of ethene: steam, H₃PO₄, about 300 °C, high pressure, ⇌; HBr addition to ethene, one product; two possible products from an unsymmetrical case); chem-m7-c06 (bromoethane and aqueous hydroxide to ethanol under reflux; why reflux; distillation separates by boiling point); chem-m7-c07 (complete combustion); Module 5 (Le Chatelier: adding or removing a substance shifts an equilibrium). Year 11: balancing; oxidation as loss of electrons or hydrogen at an introductory level; electronegativity. Not assumed: dehydration, carbonyl, aldehyde, ketone, carboxylic acid (named as products here), oxidising agent as [O].",
+    "startsWith": "Compare dehydration, substitution and oxidation. The video opens: Burning an alcohol completely breaks it right down, to carbon dioxide and water. Today, three reactions that turn an alcohol into a new compound instead. Here's a clue.",
+    "stopsAfter": "writing equations with conditions for dehydration (including two possible alkenes), substitution with HX and oxidation of alcohols; telling alcohol substitution from alkene addition; predicting aldehyde, carboxylic acid, ketone or no reaction from the class and the conditions (distil or reflux); stating the dichromate colour change and what it does and does not show. No product tests, no aldehyde and ketone naming rules or properties, no practical method.",
+    "nextLesson": "aldehydes and ketones, how to name them and how a test tells them apart (route chem-m7-c08, delivery part c08b)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c08a.md"
+  ],
+  "teaching": {
+    "task": "Warm an orange oxidising agent with ethanol and it turns green; warm it with 2-methylpropan-2-ol and it stays orange. Where can an alcohol reaction lead, and what decides the product: the reagent, the conditions or the alcohol's class?",
+    "causalExplanation": "(1) burning destroys the skeleton; three other reactions keep it, and one oxidant tells two alcohols apart (1); (2) dehydration: OH plus a neighbouring H leave as water, the carbons each one bond short form C=C (2); (3) it is hydration reversed; adding water favours the alcohol, removing water favours the alkene, so the conditions are opposite, and the alkene escaping makes dehydration run one way (3); (4) different neighbours, two possible alkenes (4); (5) substitution: the halogen takes the OH's place, and the OH plus the H of HX make water; reflux keeps volatile materials in (5); (6) water as a product separates alcohol substitution from alkene addition (6); (7) oxidation removes two H atoms, giving C=O; dichromate orange to green; hazard (7); (8) the class decides: secondary has one H (ketone), tertiary none (no reaction, orange) (8); (9) primary has two: aldehyde first, and the aldehyde's carbonyl carbon still has an H, so it oxidises again to the acid; a ketone has none left, so it stops (9); (10) the aldehyde boils low (no hydrogen bonding between its molecules), so distilling removes it before further oxidation; reflux with excess oxidant returns it until it is an acid (10); (11) green shows oxidation happened, not which product or class (11); (12) the alcohol is a hub (12); memory aid (13); two attempts and brief feedback (14 to 17); handoff (18); key notes (19).",
+    "conversationalApproach": "burning destroys an alcohol's skeleton, while one orange oxidant turns green with ethanol and stays orange with 2-methylpropan-2-ol, so the video asks where an alcohol reaction can lead and what decides the product. Dehydration takes the OH and a neighbouring hydrogen out as water so the two carbons form a C=C; it is hydration run backwards, so concentrated acid and heat replace steam and pressure, and an alcohol with two different neighbours can give two alkenes. Substitution with a hydrogen halide swaps the OH for the halogen under reflux, and the water made separates it from alkene addition of the same HBr. Oxidation removes the H of the OH and one H on its carbon to make a C=O, with acidified dichromate turning from orange to green; counting the hydrogens on the OH carbon decides the product: a secondary alcohol gives a ketone, a tertiary alcohol has none and stays orange, and a primary alcohol gives an aldehyde that still has an H and oxidises on to an acid. The aldehyde boils low because its molecules cannot hydrogen bond, so distilling catches it and reflux with excess oxidant takes it all the way; green shows oxidation, not which product. The alcohol is a hub, and the memory aid is primary goes all the way, secondary stops at ketone, tertiary won't budge. Two exam questions follow with brief feedback.",
+    "openingDecision": "Burning an alcohol completely breaks it right down, to carbon dioxide and water. Today, three reactions that turn an alcohol into a new compound instead. Here's a clue. This orange solution is an oxidising agent. Warm it with ethanol, and it turns green. Warm it with two-methylpropan-two-ol, another alcohol, and it stays orange. So where can an alcohol reaction lead, and what decides it?",
+    "understandingCheck": "(A1) \"Propan-1-ol is used in two separate experiments. In experiment 1, it is heated with concentrated sulfuric acid. In experiment 2, it is heated under reflux with hydrogen bromide. For each experiment, name the organic product and identify the type of reaction.\" New molecule (the scenes use ethanol and butan-2-ol); tests both new reactions and their conditions. Crossed mistake: \"Experiment 2: addition reaction\" (the marker-reported confusion, 2025 Q24(b)). (A2) \"Butan-2-ol and 2-methylbutan-2-ol are each heated under reflux with excess acidified potassium dichromate solution. For each alcohol, predict the colour change and the organic product, if any. Explain the difference.\" New pair (scenes use propan-2-ol and 2-methylpropan-2-ol); tests the class rule and the reflux trap for a secondary alcohol. Crossed mistake: \"Butan-2-ol under reflux → butanoic acid\".",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):; combustion; dehydration; substitution with HX; oxidation\" Combustion was chem-m7-c07; this video covers dehydration, substitution with HX and oxidation. \"investigate the products of the oxidation of primary and secondary alcohols\" This video predicts the products and the conditions that select them; the tests that identify the products are chem-m7-c08b, and the investigation itself is chem-m7-p04. this video starts by comparing dehydration, substitution and oxidation of an alcohol, and stops at predicting an aldehyde, ketone, carboxylic acid or no reaction from the alcohol's class and the conditions. It teaches: dehydration removes the OH and an H from the neighbouring carbon as water, forming a C=C bond (ethanol to ethene; conditions concentrated H₂SO₄ or concentrated H₃PO₄, about 170 °C for ethanol); dehydration is hydration (c04a) run in reverse, with opposite conditions, explained by the equilibrium (excess water favours the alcohol, removing water favours the alkene; Module 5 recall); a secondary alcohol with different neighbours can give two alkenes (butan-2-ol to but-1-ene and but-2-ene, but-2-ene usually the main product); substitution with HX swaps the OH for a halogen and the OH leaves in water (ethanol and HBr to bromoethane and water; heat under reflux, recalled from c06); telling alcohol substitution from alkene addition with the same HX (water as a product marks the alcohol reaction); oxidation removes the H of the O–H and an H from the C–OH carbon, so that carbon forms C=O (the carbonyl group, named here, taught fully in c08b); the oxidant written as [O]; acidified potassium dichromate as the oxidant, orange to green; the hazard of chromium(VI), stated once; the class decides the product because oxidation needs an H on the C–OH carbon (secondary has one: ketone; tertiary has none: no reaction, stays orange; primary has two: aldehyde, then carboxylic acid, because the aldehyde's carbonyl carbon still has an H); distil to collect the aldehyde (low boiling point, no hydrogen bonding between its molecules), reflux with excess oxidant for the acid; the green colour shows that oxidation happened, not which product; the alcohol as a hub with three exits. Not here: combustion (chem-m7-c07); naming aldehydes and ketones beyond reading the \"-al\" and \"-one\" endings, their properties and the tests that tell them apart (chem-m7-c08b); the practical procedure, apparatus details and risk table (chem-m7-p04, with `C7-IQ2-05`); mechanism names (elimination is a screen word only; \"nucleophilic\" is not used); Zaitsev's rule by name; cis and trans but-2-ene; the full dichromate half-equations and balanced redox equations (author note d); ether formation at lower temperature (author note b); carboxylic acid properties (chem-m7-c09); esterification (chem-m7-c10); multi-step synthesis (chem-m7-c13, g03)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c04a to c07: carbon skeleton ink; hydrogens soft grey; oxygen brick red, the OH ringed red as the functional group; halogens orange-brown; the new C=C or C=O second bond drawn in red as it forms; atoms about to leave ringed red; condition chips navy on and under the arrow. Board layout (constant): top-left the short task chip (\"Reaction 1: dehydration\", \"Reaction 2: substitution\", \"Reaction 3: oxidation\", \"Which product?\"); centre the equation stage strip, one equation at a time, built stage by stage (reactant, reagent, arrow, conditions, products); plates small at the left or right only in scenes 1, 5, 7, 8, 10, 11 and 17. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous equation shrinks to a grey thumbnail or leaves before the next one builds. Reuse: painted plates (inspected 23 Oct): `m8-dichromate-orange-v1.png` and `m8-dichromate-green-v1.png` (one clear test tube in an identical single-hole wooden rack, about one third full; orange solution and green solution; the tube and rack sit in the same position in both, so they cross-fade as an aligned pair; 2000 × 2000; hook, scenes 7, 8, 11, attempt feedback 2). Before use, check the green plate's alpha: its non-transparent bounds run almost to the canvas edges (20 to 1980 px) while the orange plate's stop at 353 to 1646 px, which suggests stray semi-transparent pixels; both show a faint red-yellow matting fringe along the rack edges on a dark background (Codex asset brief). The green is a bright emerald; chromium(III) in sulfate solution is a duller blue-green, acceptable at small size (Open decisions). `m7-school-distillation-setup-v1.png` (heating mantle, round-bottom flask with a thermometer, sloping water-jacketed condenser, conical receiving flask on a third stand; 2000 × 2000; scene 10) and `m7-reflux-apparatus-v1.png` (heating mantle, round-bottom flask with an amber liquid, upright condenser with water hoses; 2000 × 2000; scenes 5 and 10), both used in c06. `m7-fume-cupboard-v1.png` not used (a chip says \"fume cupboard\"). Considered, not used: `m8-permanganate-purple-v1.png` and `m8-permanganate-clear-v1.png` (inspected only for size; permanganate stays a chip to keep one oxidant on screen); `m7-ethanol-fuel-bottle-v1.png` (the hook needs the reaction, not the fuel). All plates small or medium, scale uniformly only, never stretched. No human figures.",
+    "transitionPlan": "The combustion thumbnail sits top-left as the hook's ethanol writes and two dichromate tube plates turn green and stay orange; the board clears to ethanol in full structural form as the water lift takes the OH and a neighbouring H out and a teal C=C draws; c04a's hydration strip returns above the dehydration strip with opposite condition chips; butan-2-ol's two neighbours glow and the strip branches into two alkenes; the swap docker lifts the OH off and docks a bromine with a grey water box; two strips set addition beside substitution with their reactants and products ringed; the hydrogen strip-off lifts two hydrogens into an [O] bubble and a red C=O draws as the dichromate plates swap colour; the H counter runs on propan-2-ol and 2-methylpropan-2-ol; the product ladder builds from ethanol to ethanal to ethanoic acid; boiling point chips write beside the school distillation and reflux plates; the green tube plate strikes a tertiary chip; the hub map lights its arrows in and out; the memory lines write over three small cards; each attempt clears the board and its feedback underlines the card as the strips and H counter run and a crossed chip lands; the hub map and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Alcohol reactions: where can they lead?\".",
+      "teachingReason": "Hook (one oxidant, two alcohols): Burning an alcohol completely breaks it right down, to carbon dioxide and water.",
+      "narrationCue": "new / ethanol / green / orange",
+      "motionPurpose": "On the spoken cues: A small grey thumbnail of c07's combustion equation (C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O) sits top-left with the tag \"skeleton gone\". On \"new\" ethanol (condensed, OH ringed red) draws in the centre and three blank arrows grow from it towards three empty dashed boxes (top, right, bottom), each tagged \"?\". The arrows and boxes shrink to the upper right. `m8-dichromate-orange-v1.png` appears medium at the left with the coded",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Alcohol reactions: where can they lead?\". A small grey thumbnail of c07's combustion equation (C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O) sits top-left with the tag \"skeleton gone\". On \"new\" ethanol (condensed, OH ringed red) draws in the centre and three blank arrows grow from it towards three empty dashed boxes (top, right, bottom), each tagged \"?\". The arrows and boxes shrink to the upper right. `m8-dichromate-orange-v1.png` appears medium at the left with the coded label \"acidified dichromate (oxidising agent)\". On \"ethanol\" a small ethanol chip slides onto the tube and a grey \"warm\" chip writes; on \"green\" the plate cross-fades to `m8-dichromate-green-v1.png` (aligned pair, same position). On \"orange\" a second `m8-dichromate-orange-v1.png` appears at the right, same size, with the chip \"2-methylpropan-2-ol\" and the skeletal structure small above it, and stays orange (tag \"no change\"). As the question is asked the label and the \"warm\" chip dim. Bright at the end: the two tubes (green, orange) and the heading. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "dehydration",
+      "visualDecision": "new",
+      "visualReference": "the plates leave.",
+      "teachingReason": "Dehydration: take out water, make a double bond: First, dehydration, which means removing water.",
+      "narrationCue": "dehydration / double bond / seventy",
+      "motionPurpose": "On the spoken cues: Task chip \"Reaction 1: dehydration\". Ethanol in full structural form. On \"dehydration\" a chip writes \"dehydration: remove H₂O\" with a small grey screen word \"(elimination)\". The water lift runs: on \"O H leaves\" the OH on C1 is ringed red; on \"next door\" one H on C2 is ringed red; on \"water molecule\" the two ringed pieces slide together into \"H₂O\" and drift right. On \"double bond\" each carbon shows a grey \"one bond",
+      "motionRole": "explain",
+      "onScreenChange": "the plates leave. Task chip \"Reaction 1: dehydration\". Ethanol in full structural form. On \"dehydration\" a chip writes \"dehydration: remove H₂O\" with a small grey screen word \"(elimination)\". The water lift runs: on \"O H leaves\" the OH on C1 is ringed red; on \"next door\" one H on C2 is ringed red; on \"water molecule\" the two ringed pieces slide together into \"H₂O\" and drift right. On \"double bond\" each carbon shows a grey \"one bond short\" notch, then a red second line draws between them, giving CH₂=CH₂. The equation stage strip builds under it: \"CH₃CH₂OH → CH₂=CH₂ + H₂O\". On \"arrow\" the condition chips write on and under the arrow one at a time: \"conc. H₂SO₄ (or conc. H₃PO₄)\", on \"seventy\" \"about 170 °C\". A small grey chip \"conc. H₂SO₄: corrosive\" writes and dims. Bright at the end: the equation, its two condition chips and the \"remove H₂O\" chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "hydration-reversed",
+      "visualDecision": "new",
+      "visualReference": "the dehydration strip shrinks to the lower half.",
+      "teachingReason": "Hydration, run backwards: If that looks familiar, it should.",
+      "narrationCue": "hydration / removing / dilute",
+      "motionPurpose": "On the spoken cues: Above it, c04a's hydration strip returns (grey \"addition video\" chip): \"C₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)\" with its chips \"steam\", \"H₃PO₄ catalyst\", \"about 300 °C\", \"high pressure\". On \"hydration\" the direction swap runs: a vertical double arrow joins the two strips (tag \"same reaction, opposite directions\"). On \"steam\" the \"steam\" and \"high pressure\" chips pulse together; on \"soaks up water\" a small grey tag \"conc. acid",
+      "motionRole": "explain",
+      "onScreenChange": "the dehydration strip shrinks to the lower half. Above it, c04a's hydration strip returns (grey \"addition video\" chip): \"C₂H₄(g) + H₂O(g) ⇌ C₂H₅OH(g)\" with its chips \"steam\", \"H₃PO₄ catalyst\", \"about 300 °C\", \"high pressure\". On \"hydration\" the direction swap runs: a vertical double arrow joins the two strips (tag \"same reaction, opposite directions\"). On \"steam\" the \"steam\" and \"high pressure\" chips pulse together; on \"soaks up water\" a small grey tag \"conc. acid takes up H₂O\" writes beside the dehydration chips; on \"escapes\" a small grey tag writes under the dehydration arrow: \"→: water and ethene removed, so it runs one way\" (the hydration strip keeps its ⇌), then dims. On \"removing\" a small equilibrium see-saw (Module 5 style) tips: \"+ water → alcohol\" on the left, \"− water → alkene\" on the right, each half lighting on its phrase. On \"dilute\" a chip \"dehydration: dilute H₂SO₄ + H₂O\" fades in and is crossed (caption \"remove water: concentrated acid\"). The hydration strip's chips dim. Bright at the end: the see-saw's \"− water → alkene\" half, the crossed chip and the dehydration strip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "two-alkenes",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Two neighbours, two possible alkenes: With a longer alcohol, there can be a choice.",
+      "narrationCue": "each / but-two-ene / both",
+      "motionPurpose": "On the spoken cues: Task chip \"Dehydration: which alkene?\". Butan-2-ol in full structural form (OH ringed red on C2; C1 to C4 locants small). On \"each\" C1 and C3 glow pale blue with one H on each ringed red. Two branches of the strip build: upper, the H from C1 leaves with the OH (water lift) giving CH₂=CHCH₂CH₃, named \"but-1-ene\"; lower, on \"but-two-ene\", the H from C3 leaves giving CH₃CH=CHCH₃, named \"but-2-ene\". Both arrows carry",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Dehydration: which alkene?\". Butan-2-ol in full structural form (OH ringed red on C2; C1 to C4 locants small). On \"each\" C1 and C3 glow pale blue with one H on each ringed red. Two branches of the strip build: upper, the H from C1 leaves with the OH (water lift) giving CH₂=CHCH₂CH₃, named \"but-1-ene\"; lower, on \"but-two-ene\", the H from C3 leaves giving CH₃CH=CHCH₃, named \"but-2-ene\". Both arrows carry the same chips \"conc. H₂SO₄, heat\". On \"usually the main product\" a small tag \"usually major\" sits beside but-2-ene and \"minor\" beside but-1-ene. A grey chip \"addition video: two possible products\" writes and dims. On \"both\" the two names pulse together. Bright at the end: the two product names and the \"usually major\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "substitution-hx",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Substitution with HX: swap the OH, make water: Second, substitution with a hydrogen halide, H X.",
+      "narrationCue": "substitution / bromoethane / water / other",
+      "motionPurpose": "On the spoken cues: Task chip \"Reaction 2: substitution\". The strip builds: CH₃CH₂OH (full structural, OH ringed red); \"+ H–Br\"; the arrow. On \"substitution\" the swap docker (c06) runs: the OH lifts off the carbon and Br docks in its place, giving CH₃CH₂Br (named \"bromoethane\"). On \"water\" the lifted OH and the H from H–Br join into \"H₂O\" in the product box (tag \"OH + H → H₂O\"). On \"reflux\" the arrow chip \"heat under reflux\" writes,",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Reaction 2: substitution\". The strip builds: CH₃CH₂OH (full structural, OH ringed red); \"+ H–Br\"; the arrow. On \"substitution\" the swap docker (c06) runs: the OH lifts off the carbon and Br docks in its place, giving CH₃CH₂Br (named \"bromoethane\"). On \"water\" the lifted OH and the H from H–Br join into \"H₂O\" in the product box (tag \"OH + H → H₂O\"). On \"reflux\" the arrow chip \"heat under reflux\" writes, and `m7-reflux-apparatus-v1.png` appears small at the left with the label \"reflux: vapours drip back\" (c06 callback). A small grey chip writes and dims: \"fume cupboard: HBr fumes are corrosive\". The reflux plate and its label dim before the c06 thumbnail writes. On \"other\" the c06 thumbnail \"CH₃CH₂Br + NaOH(aq) → CH₃CH₂OH + NaBr\" appears small above, and a grey double arrow links the two strips (tags \"c06: OH⁻ pushes out Br\", \"now: Br pushes out OH\"). Bright at the end: the equation, its reflux chip and the \"OH + H → H₂O\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "addition-or-substitution",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Same HBr: addition or substitution?: Careful, because hydrogen bromide also adds to alkenes.",
+      "narrationCue": "starting / and water",
+      "motionPurpose": "On the spoken cues: Two strips, one above the other. Upper (grey chip \"addition video\"): \"CH₂=CH₂ + HBr → CH₃CH₂Br\", tag \"addition\". Lower: \"CH₃CH₂OH + HBr → CH₃CH₂Br + H₂O\", tag \"substitution\". On \"starting\" the two reactants are ringed (C=C in the upper, OH in the lower). On \"nothing left over\" the upper product box glows with the tag \"joined into one molecule: nothing else formed\". On \"and water\" the lower \"+ H₂O\" glows red-ringed",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two strips, one above the other. Upper (grey chip \"addition video\"): \"CH₂=CH₂ + HBr → CH₃CH₂Br\", tag \"addition\". Lower: \"CH₃CH₂OH + HBr → CH₃CH₂Br + H₂O\", tag \"substitution\". On \"starting\" the two reactants are ringed (C=C in the upper, OH in the lower). On \"nothing left over\" the upper product box glows with the tag \"joined into one molecule: nothing else formed\". On \"and water\" the lower \"+ H₂O\" glows red-ringed with the tag \"water formed → alcohol substitution\". Bright at the end: the two reaction tags and the water tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "oxidation",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Oxidation: two hydrogens off, a C=O on: Third, oxidation.",
+      "narrationCue": "oxidation / carbonyl / start / green / cancer",
+      "motionPurpose": "On the spoken cues: Task chip \"Reaction 3: oxidation\". Ethanol in full structural form, the C–OH carbon (C1) ringed red. On \"oxidation\" the hydrogen strip-off runs: the H of the O–H and one H on C1 are ringed red, lift off together and slide into a small \"[O]\" bubble that turns into \"H₂O\"; on \"double bond\" a red second line draws between C1 and O, giving CH₃CHO. On \"carbonyl\" a tag writes under the C=O: \"carbonyl group: C=O\". The strip",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Reaction 3: oxidation\". Ethanol in full structural form, the C–OH carbon (C1) ringed red. On \"oxidation\" the hydrogen strip-off runs: the H of the O–H and one H on C1 are ringed red, lift off together and slide into a small \"[O]\" bubble that turns into \"H₂O\"; on \"double bond\" a red second line draws between C1 and O, giving CH₃CHO. On \"carbonyl\" a tag writes under the C=O: \"carbonyl group: C=O\". The strip builds: \"CH₃CH₂OH + [O] → CH₃CHO + H₂O\" (grey chip \"[O] = oxygen from the oxidant\"). On \"acidified potassium dichromate\" a condition chip writes on the arrow: \"K₂Cr₂O₇ / dilute H₂SO₄\" (later scenes shorten it to \"K₂Cr₂O₇ / H⁺\"). On \"start\" the hook's small two-tube thumbnail (green, orange) flashes top-left and dims. `m8-dichromate-orange-v1.png` appears small at the right; on \"green\" it cross-fades to the green plate (label \"orange Cr₂O₇²⁻ → green Cr³⁺\"). A small silent grey chip writes and dims: \"also used: acidified KMnO₄, purple → colourless\". On \"cancer\" a navy hazard chip writes beside the plate: \"chromium(VI): toxic, carcinogen. Small amounts, gloves, goggles, collect waste\". Bright at the end: the equation, the hazard chip and the green plate's label. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "class-decides",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "The class decides: count the hydrogens: Now the clue makes sense, because oxidation needs a hydrogen on the O H carbon.",
+      "narrationCue": "secondary / ketone / tertiary / none / orange",
+      "motionPurpose": "On the spoken cues: Task chip \"Which product?\". A small grey c05 chip \"classify: count the carbons on the C–OH carbon\" writes and dims. Two structures side by side: propan-2-ol (left) and 2-methylpropan-2-ol (right), each C–OH carbon ringed red. On \"secondary\" the H counter runs on propan-2-ol: one H ticks \"1\" (chip \"2°: 1 H\"). The strip builds under it: \"CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O\", the C=O second line drawing in red, with",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Which product?\". A small grey c05 chip \"classify: count the carbons on the C–OH carbon\" writes and dims. Two structures side by side: propan-2-ol (left) and 2-methylpropan-2-ol (right), each C–OH carbon ringed red. On \"secondary\" the H counter runs on propan-2-ol: one H ticks \"1\" (chip \"2°: 1 H\"). The strip builds under it: \"CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O\", the C=O second line drawing in red, with the arrow chip \"K₂Cr₂O₇ / H⁺, heat\". On \"ketone\" a chip writes \"propanone: ketone (C=O inside the chain, '-one')\", with a small grey chip \"propan-2-ol → propanone: '-ol' becomes '-one'\" and a small grey \"naming: next video\" chip, both dimming. On \"tertiary\" the H counter runs on 2-methylpropan-2-ol: the three carbons flash grey (\"bonded to 3 C + O\"), and the H count shows \"0\" (chip \"3°: 0 H\"). On \"orange\" a small `m8-dichromate-orange-v1.png` appears under it with the tag \"no reaction: stays orange\", and the arrow from 2-methylpropan-2-ol is drawn and crossed. Bright at the end: the ketone chip, the \"0 H\" chip and the \"stays orange\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "primary-to-acid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Primary: aldehyde first, then acid: A primary alcohol, like ethanol, has two hydrogens on that carbon.",
+      "narrationCue": "primary / aldehyde / again / stops",
+      "motionPurpose": "On the spoken cues: The product ladder builds downwards. Top: ethanol, the C–OH carbon ringed red, H counter \"2\" (chip \"1°: 2 H\"). On \"aldehyde\" the first step draws: arrow with \"[O]\" and the product CH₃CHO (C=O red, carbonyl H ringed grey), chip \"ethanal: aldehyde (C=O at the end, '-al')\". On \"still holds a hydrogen\" that carbonyl H pulses. On \"again\" the second step draws: arrow with \"[O]\" and CH₃COOH, chip \"ethanoic acid: carboxylic",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The product ladder builds downwards. Top: ethanol, the C–OH carbon ringed red, H counter \"2\" (chip \"1°: 2 H\"). On \"aldehyde\" the first step draws: arrow with \"[O]\" and the product CH₃CHO (C=O red, carbonyl H ringed grey), chip \"ethanal: aldehyde (C=O at the end, '-al')\". On \"still holds a hydrogen\" that carbonyl H pulses. On \"again\" the second step draws: arrow with \"[O]\" and CH₃COOH, chip \"ethanoic acid: carboxylic acid ('-oic acid')\". The combined line writes beside the ladder: \"CH₃CH₂OH + 2[O] → CH₃COOH + H₂O\". On \"stops\" a small propanone thumbnail sits to the right with its carbonyl carbon ringed and \"0 H\" (tag \"ketone: no H left, stops\"). Bright at the end: the ladder's last two chips and the \"stops\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "distil-or-reflux",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears; the ladder shrinks to a thin strip at the top (ethanol → ethanal → ethanoic acid).",
+      "teachingReason": "Distil to catch the aldehyde, reflux for the acid: So how do you stop at the aldehyde?",
+      "narrationCue": "twenty / distil / reflux",
+      "motionPurpose": "On the spoken cues: On \"twenty\" two chips write: \"ethanal 20 °C\", \"ethanol 78 °C\" (grey tag \"no O–H: no hydrogen bonds between ethanal molecules\"). On \"distil\" `m7-school-distillation-setup-v1.png` appears at the left, medium; coded vapour wisps rise from the flask and droplets fall into the receiving flask, tagged \"ethanal collected\"; a small grey chip \"excess alcohol\" sits under the plate and dims with it; on the ladder strip, the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the ladder shrinks to a thin strip at the top (ethanol → ethanal → ethanoic acid). On \"twenty\" two chips write: \"ethanal 20 °C\", \"ethanol 78 °C\" (grey tag \"no O–H: no hydrogen bonds between ethanal molecules\"). On \"distil\" `m7-school-distillation-setup-v1.png` appears at the left, medium; coded vapour wisps rise from the flask and droplets fall into the receiving flask, tagged \"ethanal collected\"; a small grey chip \"excess alcohol\" sits under the plate and dims with it; on the ladder strip, the first arrow lights and the second dims (tag \"removed before the second step\"). On \"reflux\" `m7-reflux-apparatus-v1.png` appears at the right, medium, same scale; the vapour return runs (wisps rise into the upright condenser and drip back, twice), tagged \"ethanal returns\"; the second ladder arrow lights, with the chip \"excess oxidant\". Arrow chips under each plate: \"distil → aldehyde\", \"reflux, excess [O] → carboxylic acid\". Bright at the end: the two arrow chips and the lit ladder. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "green-not-product",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Green means oxidised, not which product: One warning about the colour.",
+      "narrationCue": "oxidised / which",
+      "motionPurpose": "On the spoken cues: `m8-dichromate-green-v1.png` small at the centre-left. On \"oxidised\" a chip writes \"green: primary or secondary alcohol oxidised\" and a small \"3°\" chip beside it is struck grey. On \"which\" three grey candidate chips fan out to the right: \"aldehyde?\", \"ketone?\", \"carboxylic acid?\", each with a question mark; a chip \"green → it's an aldehyde\" fades in and is crossed (caption \"colour shows oxidation, not the product\").",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m8-dichromate-green-v1.png` small at the centre-left. On \"oxidised\" a chip writes \"green: primary or secondary alcohol oxidised\" and a small \"3°\" chip beside it is struck grey. On \"which\" three grey candidate chips fan out to the right: \"aldehyde?\", \"ketone?\", \"carboxylic acid?\", each with a question mark; a chip \"green → it's an aldehyde\" fades in and is crossed (caption \"colour shows oxidation, not the product\"). A small forward chip \"test the product: next video\" writes and dims. Bright at the end: the \"primary or secondary\" chip, the crossed chip and the three candidates. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "alcohol-hub",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "The alcohol is a hub: Put it together, and an alcohol is a hub.",
+      "narrationCue": "alkene / haloalkane / acid",
+      "motionPurpose": "On the spoken cues: Hub map: \"alcohol\" in a red ring at the centre. Dashed grey arrows in (left): \"alkene + steam (addition video)\", \"haloalkane + OH⁻(aq) (ethanol video)\". Solid arrows out, each lighting on its cue with its condition chip (c04a conditions-card style): on \"alkene\" \"conc. H₂SO₄, about 170 °C → alkene\"; on \"haloalkane\" \"HX, reflux → haloalkane\"; on \"acid\" a branching arrow \"K₂Cr₂O₇ / H⁺ → 1° aldehyde (distil) or acid",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Hub map: \"alcohol\" in a red ring at the centre. Dashed grey arrows in (left): \"alkene + steam (addition video)\", \"haloalkane + OH⁻(aq) (ethanol video)\". Solid arrows out, each lighting on its cue with its condition chip (c04a conditions-card style): on \"alkene\" \"conc. H₂SO₄, about 170 °C → alkene\"; on \"haloalkane\" \"HX, reflux → haloalkane\"; on \"acid\" a branching arrow \"K₂Cr₂O₇ / H⁺ → 1° aldehyde (distil) or acid (reflux); 2° ketone; 3° no reaction\". The three empty boxes from the hook fill in. Bright at the end: the three outward arrows (incoming arrows dimmed). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So, dehydration takes out water, and makes an alkene.",
+      "narrationCue": "budge / reflux",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"Primary goes all the way, secondary stops at ketone, tertiary won't budge.\" Second handwritten line on \"reflux\": \"Distil to catch the aldehyde, reflux to go all the way.\" Under them, three small coded cards light one at a time as named, each dimming as the next lights: \"dehydration: −H₂O → alkene (conc. acid, heat)\"; \"substitution: + HX → haloalkane + H₂O (reflux)\"; \"oxidation: count H on the C–OH",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Primary goes all the way, secondary stops at ketone, tertiary won't budge.\" Second handwritten line on \"reflux\": \"Distil to catch the aldehyde, reflux to go all the way.\" Under them, three small coded cards light one at a time as named, each dimming as the next lights: \"dehydration: −H₂O → alkene (conc. acid, heat)\"; \"substitution: + HX → haloalkane + H₂O (reflux)\"; \"oxidation: count H on the C–OH carbon: 2, 1, 0\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Propan-one-ol is used in two separate",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Propan-1-ol is used in two separate experiments. In experiment 1, it is heated with concentrated sulfuric acid. In experiment 2, it is heated under reflux with hydrogen bromide. For each experiment, name the organic product and identify the type of reaction.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no hub, no memory aid, no strips.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "acid / propene / one-bromopropane / double bond",
+      "motionPurpose": "On the spoken cues: On \"acid\" \"concentrated sulfuric acid\" is underlined; the strip writes \"CH₃CH₂CH₂OH → CH₃CH=CH₂ + H₂O\" with the chip \"conc. H₂SO₄, heat\" on the arrow; on \"propene\" the answer chip \"1: propene, dehydration\" lights. On \"one-bromopropane\" \"heated under reflux with hydrogen bromide\" is underlined; the second strip writes \"CH₃CH₂CH₂OH + HBr → CH₃CH₂CH₂Br + H₂O\" with \"reflux\"; answer chip \"2: 1-bromopropane,",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"acid\" \"concentrated sulfuric acid\" is underlined; the strip writes \"CH₃CH₂CH₂OH → CH₃CH=CH₂ + H₂O\" with the chip \"conc. H₂SO₄, heat\" on the arrow; on \"propene\" the answer chip \"1: propene, dehydration\" lights. On \"one-bromopropane\" \"heated under reflux with hydrogen bromide\" is underlined; the second strip writes \"CH₃CH₂CH₂OH + HBr → CH₃CH₂CH₂Br + H₂O\" with \"reflux\"; answer chip \"2: 1-bromopropane, substitution\". The first strip dims as the second writes. On \"double bond\" a chip \"Experiment 2: addition reaction\" fades in and is crossed (caption \"no C=C in an alcohol: the OH is replaced, and water forms\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"Butan-2-ol and 2-methylbutan-2-ol are each heated under reflux with excess acidified potassium dichromate solution.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Butan-two-ol and two-methylbutan-two-ol are each heated",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"Butan-2-ol and 2-methylbutan-2-ol are each heated under reflux with excess acidified potassium dichromate solution. For each alcohol, predict the colour change and the organic product, if any. Explain the difference.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "secondary / green / tertiary / orange / trap",
+      "motionPurpose": "On the spoken cues: On \"secondary\" \"Butan-2-ol\" is underlined; its structure draws with the C–OH carbon ringed and the H counter \"1\"; the strip writes \"CH₃CH(OH)CH₂CH₃ + [O] → CH₃COCH₂CH₃ + H₂O\" (chip \"butan-2-one (butanone): ketone\"; \"butanone\", \"butan-2-one\" or a correct structure all accepted); on \"green\" a small `m8-dichromate-green-v1.png` appears beside it. On \"tertiary\" \"2-methylbutan-2-ol\" is underlined; its structure draws",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"secondary\" \"Butan-2-ol\" is underlined; its structure draws with the C–OH carbon ringed and the H counter \"1\"; the strip writes \"CH₃CH(OH)CH₂CH₃ + [O] → CH₃COCH₂CH₃ + H₂O\" (chip \"butan-2-one (butanone): ketone\"; \"butanone\", \"butan-2-one\" or a correct structure all accepted); on \"green\" a small `m8-dichromate-green-v1.png` appears beside it. On \"tertiary\" \"2-methylbutan-2-ol\" is underlined; its structure draws with the H counter \"0\" (\"bonded to 3 C + O\"); on \"orange\" a small `m8-dichromate-orange-v1.png` appears beside it, tag \"no reaction\". \"predict the colour change\" and \"Explain the difference\" are underlined as each result lights. Answer chip (bright): \"2°: 1 H → butan-2-one (butanone), orange → green. 3°: 0 H → no reaction, stays orange\". On \"trap\" \"under reflux\" and \"excess\" are underlined, and a chip \"Butan-2-ol under reflux → butanoic acid\" fades in and is crossed (caption \"a ketone has no H on its C=O carbon: it stops\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: So the alcohol's class, and the conditions, decide where it leads.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The hub map returns small at the centre with its three outward arrows. On \"Next\" the \"aldehyde\" and \"ketone\" boxes enlarge slightly, and a chip \"Next: aldehyde or ketone, how can you tell?\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The hub map returns small at the centre with its three outward arrows. On \"Next\" the \"aldehyde\" and \"ketone\" boxes enlarge slightly, and a chip \"Next: aldehyde or ketone, how can you tell?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c08a-learning-review.md",
+      "sha256": "41c6b0d525184195dc9442c4afc1b822ab4d7685dc1be7d91b0de6e68a8ce603"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c08a-claude-science-check.md",
+      "sha256": "7ae6a11766f75f0272c4fff68740b5597900d27ae1af56e873d3e4c513c799ae"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

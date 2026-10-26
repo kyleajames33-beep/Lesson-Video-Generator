@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B10-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b10/lesson.json",
+  "lessonSha256": "7acb31a31603cdfc7542b6f27266097dc6b8d3da7f079b56827d45c42dcdc6e3",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b10/lesson.production-brief.json",
+    "sha256": "8de153f58381fbf17f8a2034cabdab17ee4dafa9d5d5d1bc4f20c20ad5d6a79e"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 1847, a Vienna hospital had two maternity clinics. In the doctors' clinic, about one mother in ten died of a fever after giving birth. In the midwives' clinic, far fewer died. Ignaz Semmelweis noticed that the doctors came straight from autopsies. He made them wash their hands in a chlorine solution, and deaths fell to about the midwives' level. So how can washing, or keeping people apart, stop a disease nobody could see?",
+      "hash": "50ad511a78b0",
+      "textSha256": "50ad511a78b09abdb0ea062d9eb4062c8d1e1ffe2afa39d31b08c3a7d95021b4",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/hook.50ad511a78b0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/hook.50ad511a78b0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/hook.50ad511a78b0.generation.json",
+      "plannedRequestSha256": "72dccde26d1434713f7359730c63277d57e51ffb5a62da7c01dca6a670a505f5"
+    },
+    {
+      "id": "which-link",
+      "parentSceneId": "which-link",
+      "text": "A pathogen has to leave one host, travel, and enter a next host it can infect. Every control measure breaks a link. Here's the link each one breaks. Hygiene cuts the travel link. Isolation and quarantine stop pathogens leaving infected people. And vaccination removes hosts the pathogen can infect.",
+      "hash": "35b1c2ff50d3",
+      "textSha256": "35b1c2ff50d369e5bc4b3e3ccfc93fc6fe20ebecf067f5ae8a6c2322a667dcbc",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/which-link.35b1c2ff50d3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/which-link.35b1c2ff50d3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/which-link.35b1c2ff50d3.generation.json",
+      "plannedRequestSha256": "0977de200f89ddce2844923e858fa5983a1461cb73f3071ef931aab11fa11f80"
+    },
+    {
+      "id": "hands",
+      "parentSceneId": "hands",
+      "text": "In Vienna, the travel link was the doctors' hands. Material from the autopsies carried bacteria, and hands carried them to the mothers. The chlorine solution killed them. Today, soap and water do the job. Soap lifts oil, and the microbes stuck in it, off the skin, and the water rinses them away. Alcohol hand rub kills many microbes, but it doesn't reliably kill norovirus or bacterial spores, so soap and water work better against those.",
+      "hash": "3a2aab0722d5",
+      "textSha256": "3a2aab0722d5e48ee9e9eabd69cc4fa0b99447de00903be35d68464b82a5dc57",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/hands.3a2aab0722d5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/hands.3a2aab0722d5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/hands.3a2aab0722d5.generation.json",
+      "plannedRequestSha256": "5b0786c3ed16eb7312439a2e4e3bf9acf07b74222c50fdc8c4b6b070f66c8454"
+    },
+    {
+      "id": "environmental",
+      "parentSceneId": "environmental",
+      "text": "Hygiene also works on places, not just hands. Cleaning surfaces, cooking food properly, treating drinking water and carrying sewage away all cut the travel link for touch, food and water. Changing places like this is called environmental management. Treated water and sewers keep working without anyone having to remember.",
+      "hash": "4b28900680ee",
+      "textSha256": "4b28900680ee38efceedbe698252e0ac6ecd891c1defc4d39e9a29044c9278bf",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/environmental.4b28900680ee.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/environmental.4b28900680ee.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/environmental.4b28900680ee.generation.json",
+      "plannedRequestSha256": "97392f9927832d076f1afd1ebf31390c13e7849729df9beaec3ca9c624173651"
+    },
+    {
+      "id": "air-route",
+      "parentSceneId": "air-route",
+      "text": "But hygiene can't break every link. Measles spreads through the air. An infected person breathes out tiny droplets carrying the virus, and the virus can stay in the air of a room for up to two hours. Washing your hands does little against that. To stop measles, you have to keep people apart, or make them immune.",
+      "hash": "aaf32f5ba0f2",
+      "textSha256": "aaf32f5ba0f2fcf5dd7380cf9bcc23214aaede69b377cc34b20ad13e6f565a03",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/air-route.aaf32f5ba0f2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/air-route.aaf32f5ba0f2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/air-route.aaf32f5ba0f2.generation.json",
+      "plannedRequestSha256": "3889e85c974e9c3fabb52841f2c0a51d19fc925d5ec4842a8ebce9bbd7c0245d"
+    },
+    {
+      "id": "isolation",
+      "parentSceneId": "isolation",
+      "text": "Keeping infected people away from others is called isolation. A person with measles is isolated until four days after the rash appears. But there's a catch. They're infectious from about four days before the rash, so by the time anyone knows, they may already have spread it.",
+      "hash": "e439d3722c62",
+      "textSha256": "e439d3722c6293638553388a30a478dc1d241591402d1ed91d41a35c28752aa6",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/isolation.e439d3722c62.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/isolation.e439d3722c62.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/isolation.e439d3722c62.generation.json",
+      "plannedRequestSha256": "ba90ef87ab3edb0cd1028d63acd819ceb27a17555894ddd3b165ad0b36546ecf"
+    },
+    {
+      "id": "quarantine",
+      "parentSceneId": "quarantine",
+      "text": "So the case's contacts, the people who shared the air, are traced. This is contact tracing. Some contacts who aren't immune need quarantine, depending on their exposure and setting. They're kept away from others, even though they aren't sick, because they might be infected. Quarantine lasts about as long as the incubation period, the time from infection to symptoms. For measles, that's up to about eighteen days. If they get sick, they move into isolation.",
+      "hash": "4ddfab23a53a",
+      "textSha256": "4ddfab23a53ac789b205dcb85c354befb6d6ab2ff984540f1b7d35b8ec320230",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/quarantine.4ddfab23a53a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/quarantine.4ddfab23a53a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/quarantine.4ddfab23a53a.generation.json",
+      "plannedRequestSha256": "cf8336e8d91e653f23439f46647418eb055ac69e6812f69fd5d5b38c6f09a598"
+    },
+    {
+      "id": "border",
+      "parentSceneId": "border",
+      "text": "Quarantine works at borders too. Australia's biosecurity system checks travellers, cargo and imported animals, to keep out pests and diseases. And in 2020, during the COVID-19 pandemic, Australia made returning travellers quarantine for fourteen days.",
+      "hash": "e3c45793f863",
+      "textSha256": "e3c45793f863f7aa2828f74f969f02dbd2ec1206ce81fb4ee5b65de865b2540a",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/border.e3c45793f863.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/border.e3c45793f863.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/border.e3c45793f863.generation.json",
+      "plannedRequestSha256": "bfe454367b9094722b55156b2c95d1506a396eb5fde73dbaa7486ea0f5a42999"
+    },
+    {
+      "id": "herd-immunity",
+      "parentSceneId": "herd-immunity",
+      "text": "A vaccinated person usually has memory cells, so the pathogen can't use them. And when enough people are immune, an infected person meets too few people who can catch it. Each case infects fewer than one new person on average, so the outbreak fizzles out. This is herd immunity. It also protects people who can't be vaccinated, like babies too young for the measles vaccine.",
+      "hash": "5a67524505c5",
+      "textSha256": "5a67524505c5cf6916d1151531b2f8de92f3cf46b3c95df2ba259f347e63d341",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/herd-immunity.5a67524505c5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/herd-immunity.5a67524505c5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/herd-immunity.5a67524505c5.generation.json",
+      "plannedRequestSha256": "c04fe8cf1c39dbcda5a9588fd667ab37b580644cb032eb2d68df9121665fcee4"
+    },
+    {
+      "id": "how-many",
+      "parentSceneId": "how-many",
+      "text": "The more contagious a disease is, the more people need to be immune. Where nobody is immune, one measles case can infect about fifteen people. To get that below one, more than fourteen in every fifteen people need to be immune. That's about ninety-three per cent. Health services aim for ninety-five, because no vaccine protects every person who gets it. And local coverage matters. If vaccination drops in one school or town, measles brought in by a traveller can spread there.",
+      "hash": "da71ca05c853",
+      "textSha256": "da71ca05c85333fcd81a6d2104175f020d8cfa5bd6f7b916ebc05326c55784b2",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/how-many.da71ca05c853.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/how-many.da71ca05c853.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/how-many.da71ca05c853.generation.json",
+      "plannedRequestSha256": "86e1e8eb98c64e0e3c81d418d7cef7e4bf2d72d4dedeb4a59c011e271ad28235"
+    },
+    {
+      "id": "judge",
+      "parentSceneId": "judge",
+      "text": "So how do you judge a measure? Ask which link it breaks, how fast it works, how long it lasts, and what it costs people. Hygiene is cheap and lasting, but it mostly stops routes through hands, surfaces, food and water. Isolation and quarantine work fast for diseases spread between people, but they're hard to keep up, and they only work if cases and contacts are found. Vaccination lasts, but it needs a vaccine and high coverage. So outbreaks are controlled with several measures at once.",
+      "hash": "450a43d7144e",
+      "textSha256": "450a43d7144ebd262659cefa10a95ced78ca44b4b7335e3f02c9b54a2331190b",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/judge.450a43d7144e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/judge.450a43d7144e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/judge.450a43d7144e.generation.json",
+      "plannedRequestSha256": "93caec97b08b4192331a9cba486e92c5ac85c8eba8862427f3fd030bce3076fd"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two ideas to keep. Isolate the infected, quarantine the exposed. And for herd immunity, break enough links and the chain dies out.",
+      "hash": "ce3d094b98f3",
+      "textSha256": "ce3d094b98f3cd8a32a85930802864bf964def1c8921281c7befce9ba8311e2f",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/memory.ce3d094b98f3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/memory.ce3d094b98f3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/memory.ce3d094b98f3.generation.json",
+      "plannedRequestSha256": "07a5d948519926a3d7d274f2ddf1b590a084c2d4dff4c665a09ec11758414f94"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. A new virus has an incubation period of five to fourteen days, and people can spread it for two days before their symptoms start. A town's plan says contacts will be quarantined for seven days, and anyone with symptoms will be isolated. Evaluate the plan. Pause here to answer.",
+      "hash": "d6d99f03abeb",
+      "textSha256": "d6d99f03abebd26174f4fb023e530dbb168c0375513e46018ff771b0b4aca39e",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/attempt.d6d99f03abeb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/attempt.d6d99f03abeb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/attempt.d6d99f03abeb.generation.json",
+      "plannedRequestSha256": "3162502c73ed33de7d3458e74d98cfc4f757542bea12f3452441402f04d0aa76"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The plan is only partly effective. Isolating people with symptoms is right, because it removes known sources. But seven days is too short. A contact could fall sick as late as day fourteen, and spread the virus from day twelve, long after being released on day seven. Quarantine should last fourteen days. Saying quarantine is for people with symptoms is the classic mistake.",
+      "hash": "14dd9c83bc93",
+      "textSha256": "14dd9c83bc93ff8048b503c6e154704882a61cabaaf8f681be4e09b60106999f",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/feedback-one.14dd9c83bc93.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/feedback-one.14dd9c83bc93.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/feedback-one.14dd9c83bc93.generation.json",
+      "plannedRequestSha256": "63132efc42cf419c3c9db980a0615d6a0bc08055854feacc640513b27aad79f8"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. For disease Y, herd immunity needs about eighty per cent of people to be immune. In town A, ninety-two per cent are immune. In town B, seventy per cent are. A visitor with disease Y spends a day in each town. Explain why an outbreak is more likely in town B, and why a baby too young to be vaccinated, with no antibodies against disease Y, is protected in town A. Pause here to answer.",
+      "hash": "4028dc2ea91f",
+      "textSha256": "4028dc2ea91ff32824d6086298636899b0eb457c986157f6a3d6b8a326ca5363",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/attempt-two.4028dc2ea91f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/attempt-two.4028dc2ea91f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/attempt-two.4028dc2ea91f.generation.json",
+      "plannedRequestSha256": "ed6cb2af3d86a78648b3480a5de95ce022bd47b3b087834db4ac7bc09e3dc3a3"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "In town B, immunity is below the eighty per cent needed, so each case meets enough people who can catch it to infect more than one on average, and the outbreak grows. In town A, it's above eighty, so chains usually die out before they reach the baby. Saying the baby is immune is the classic mistake. It has no memory cells or antibodies against Y. The people around it are immune.",
+      "hash": "1c1a88fc60ee",
+      "textSha256": "1c1a88fc60ee2ec852d0ed652c867a59eee6e551969844c8dcb9f66eb1b7ca54",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/feedback-two.1c1a88fc60ee.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/feedback-two.1c1a88fc60ee.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/feedback-two.1c1a88fc60ee.generation.json",
+      "plannedRequestSha256": "cd948c24cc063ab4a15fb170352450a07e1fef6b5f369f14a957b8c9d75902f9"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any control question, name the route, find the link, and judge the measure on speed, how long it lasts, and cost. Next, why antibiotics and antivirals work differently.",
+      "hash": "9b160a78097e",
+      "textSha256": "9b160a78097eaf2979570266d05783ad9fd88654ce1056622465d7a901b3426a",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/decision-rule.9b160a78097e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/decision-rule.9b160a78097e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/decision-rule.9b160a78097e.generation.json",
+      "plannedRequestSha256": "d28197c07f453bd005b9de38ee33d9dc1087e0a621ac002c5a2efba357730a55"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B10-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

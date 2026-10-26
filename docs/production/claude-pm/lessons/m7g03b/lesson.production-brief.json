@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7g03b/lesson.json",
+    "lessonSha256": "f1174ab8891cbc0e3eeddff1aac34ddd69ded4535f60ab1dfb7a5d4f52135716"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b06: barriers; histamine from damaged cells and mast cells widens small vessels and makes them leaky (redness, warmth, swelling); neutrophils follow a chemical trail and engulf bacteria; dendritic cells carry pieces of the pathogen to a lymph node; \"Block, alarm, eat, alert\"; the response strip's four rungs. From b07: antigen; each B cell has one receptor shape, made before infection; clonal selection; a helper T cell's go-ahead; clonal expansion; plasma cells release antibodies; memory B cells; antibodies block, clump and coat; the strip's five B cell chips (\"fit\", \"go-ahead\", \"clone\", \"plasma cells\", \"antibodies bind\"). From b08: helper T cells are switched on by pieces shown on dendritic cells and give B cells the go-ahead. From b09: primary and secondary responses; the antibody graph and log scale; memory stored mainly in cells; vaccination and boosters; active and passive, natural and artificial, and the two questions (\"Who made the antibodies?\"; \"naturally, or by medical treatment?\"). Not assumed: lyssavirus (glossed in the Q3 stem as \"a close relative of rabies\"), immunoglobulin (screen only; spoken as \"rabies antibodies\").",
+    "startsWith": "An unfamiliar immunity question: a list of events, an antibody graph, or a case. The video opens: Immunity questions often ask you to do one of three things.",
+    "stopsAfter": "ordering eight events from a pathogen's entry through the innate response (barrier, histamine and leaky vessels, neutrophils, dendritic cell to lymph node) to the adaptive response (B cells that fit bind the antigen, helper T cell go-ahead, clone of plasma and memory cells, antibodies bind) and explaining why antibody takes about a week (few fitting B cells must meet the antigen, get the go-ahead and divide many times; innate defences hold the bacteria meanwhile); reading a log-scale antibody graph (lag, peak values, a protective level) and comparing two doses with data (about fifty times higher, sooner, above the protective line), then explaining the difference by memory cells from the first dose; classifying a rabies antibody injection as artificial passive and a rabies vaccine as artificial active immunity, and explaining why both are given (immediate cover while the slower active response builds lasting protection, possible because symptoms take weeks or months).",
+    "nextLesson": "how hygiene and quarantine interrupt spread (route entry bio-m7-b10)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-g03.md"
+  ],
+  "teaching": {
+    "task": "When an immunity question asks you to put the response in order, read an antibody graph, or name someone's immunity, how do you work it out step by step?",
+    "causalExplanation": "Why histamine causes redness and swelling (2b, one clause, recalled); why the dendritic cell links the two halves (2b, 2c); why antibody takes about a week (few fitting cells, selection, go-ahead and many divisions; 2d); why the second dose gives a faster, much higher response (memory cells from the first dose, fewer divisions, quick change to plasma cells; 3c); why the injected antibodies act at once but fade (ready-made, no B cells selected; 4c); why the vaccine needs time (a primary response; 4c, 4d); why giving both works (immediate cover while memory builds, and a long incubation; 4c).",
+    "conversationalApproach": "Immunity questions ask you to put the response in order, read an antibody graph or name someone's immunity, and each walkthrough works from the question one step at a time. Q1 orders eight events after soil bacteria enter a gardener's cut: the barrier first, then the innate alarm, phagocytes and dendritic cell, then selection of the few fitting B cells, the helper T cell's go-ahead, division into a clone and plasma cells releasing antibodies, and part b explains why that takes about a week; Q2 reads a two-dose vaccine graph on a log scale, checking that each gridline is ten times the one below before comparing the lag and the peaks, then explains the primary and secondary responses from memory cells; Q3 classifies the antibody injection and the vaccine given after a flying fox scratch as passive and active by asking who made the antibodies, and explains why both are given (the injection covers the gap while the vaccine builds memory). Each question ends with its spoken, crossed classic mistake (the body designs an antibody, counting gridlines as a linear scale, the vaccine works straight away), and the decision board gives the first move for each kind of question.",
+    "openingDecision": "Immunity questions often ask you to do one of three things. Put the response in order, from the moment a pathogen gets in to the moment antibodies appear. Read a graph of antibody levels. Or name the immunity someone has, active or passive, natural or artificial. Each one hides a trap that costs marks. Here are three HSC-style questions, one of each. Pause and try each one, then we'll work through it together.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds.",
+    "curriculumScope": "Syllabus (2017, `docs/production/programme/syllabus/bio-2017-y12.json`; practice and transfer only, first coverage stays with b06 to b09): B7-IQ2-02 (p 54): \"analyse responses to the presence of pathogens by assessing the physical and chemical changes that occur in the host animals cells and tissues (ACSBL119, ACSBL120, ACSBL121, ACSBL122)\". Q1 event E and scene 2b (histamine, a chemical change, causing vessel widening and leaking, physical changes). B7-IQ3-01 (p 54): \"investigate and model the innate and adaptive immune systems in the human body (ACSBL119)\". Q1 (sequence the whole model, b06 to b08's response strip). B7-IQ3-02 (p 54): \"explain how the immune system responds after primary exposure to a pathogen, including innate and acquired immunity\". Q1 part (b) and Q2. B7-IQ4-02 (p 55): \"investigate procedures that can be employed to prevent the spread of disease, including but not limited to: (ACSBL124)\", with the listed item \"vaccination, including passive and active immunity (ACSBL100, ACSBL123)\". Q2 (a two-dose vaccine) and Q3 (post-exposure antibodies and vaccine)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in m6-g01's layout: top-left the question card (stem, data and demands as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), kept readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Sequence\", \"Antibody graph\", \"Type of immunity\"), hidden during each attempt. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). Earlier questions are cleared before the next card writes on. Q1's working is b06 to b08's response strip, rebuilt rung by rung as each event card slides onto its rung, with small cell thumbnails (existing plates). Q2's working is the coded `lineGraph` (log axis, protective line, two exposure arrows) with reading guides. Q3's working is b09's coded two-by-two immunity table plus a small coded two-curve sketch (injected antibodies, own antibodies). No people, hands or faces: the gardener and the wildlife carer are words only; the cut appears only as the secateurs plate and a bacterium plate; the flying fox is an animal plate alone. Coded elements are abstract only. Clutter rule (owner, 19 Oct): besides the question strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The heading writes on and three small stimulus thumbnails fan out, one per cue (the ResponseStrip, an antibody graph and the ImmunityTable); each question opens on a fresh board with the type badge hidden while the worded card writes with the secateurs and wound, vaccine vial or flying fox plate small at its corner; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used; event letters slide into the ResponseStrip's innate rungs and then b07's five adaptive chip slots, and a short day axis draws for part b; the graph enlarges as the log axis gridlines light, the lag brackets and the peak readings write, and b09's cell field fills for memory cells; b09's ImmunityTable fills its passive and active cells and a two-curve sketch shows the gap being covered; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Order it, read it, name it\" writes on.",
+      "teachingReason": "Hook: Immunity questions often ask you to do one of three things.",
+      "narrationCue": "in order / Read a graph / name the immunity",
+      "motionPurpose": "On the spoken cues: Three small stimulus thumbnails fan out on the right, one per cue: on \"in order\" the complete `ResponseStrip` thumbnail (grey, as b09 left it); on \"Read a graph\" a small two-hump antibody graph (no values); on \"name the immunity\" b09's two-by-two table thumbnail with empty quadrants. On \"three",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Order it, read it, name it\" writes on. Three small stimulus thumbnails fan out on the right, one per cue: on \"in order\" the complete `ResponseStrip` thumbnail (grey, as b09 left it); on \"Read a graph\" a small two-hump antibody graph (no values); on \"name the immunity\" b09's two-by-two table thumbnail with empty quadrants. On \"three HSC-style questions\" the thumbnails become three numbered question cards with one shared tag line beneath them, \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: eight events out of order) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. Pruning secateurs nick a gardener's thumb,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: eight events out of order)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. `m7-pruning-secateurs-v1.png` sits small at the card's upper left beside `m7-wound-bacterium-v1.png` (grey tag \"soil bacteria, drawn far larger than real\"). The card writes on as an exam question: \"A gardener's thumb is cut by pruning secateurs, and soil bacteria enter the cut. The events below occur in the gardener's body. They are listed in random order.\" Eight lettered `EventCard`s in two columns: Demands: \"(a) Write the letters in the order the events occur, from entry to antibody production. (3 marks)\" \"(b) Explain why antibodies against these bacteria are not detected in the blood until about a week after the cut. (2 marks)\". An answer line of eight boxes and one lined box. No strip, no cell thumbnails (answer-bearing). **Countdown ring 10 seconds** after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-innate",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip (the eight event lines stay readable); type badge \"Sequence\".",
+      "teachingReason": "Barrier, then the innate response: Start where the pathogen starts.",
+      "narrationCue": "C / E / G / F",
+      "motionPurpose": "On the spoken cues: The `ResponseStrip` draws at the right two-thirds, empty rungs with b06's grey labels (\"always there: barriers\", \"minutes: inflammation\", \"hours: phagocytes\", \"days: adaptive\"). On \"C\" event C lifts out of the strip, underlines amber, and slides onto the barrier rung with a small",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip (the eight event lines stay readable); type badge \"Sequence\". The `ResponseStrip` draws at the right two-thirds, empty rungs with b06's grey labels (\"always there: barriers\", \"minutes: inflammation\", \"hours: phagocytes\", \"days: adaptive\"). On \"C\" event C lifts out of the strip, underlines amber, and slides onto the barrier rung with a small `m7-skin-splinter-v1.png` thumbnail cropped to the skin surface only (no splinter visible; if the crop cannot hide the splinter, use a grey rung tag \"skin breached\" instead); answer box 1 fills \"C\". On \"E\" event E slides onto the inflammation rung with `m7-mast-cell-v1.png` small; on \"chemical change causing physical ones\" two small grey glosses write beside it, \"chemical: histamine\" and \"physical: vessels widen and leak\" (B7-IQ2-02); box 2 fills \"E\". On \"G\" event G slides onto the phagocyte rung with `m7-neutrophil-v1.png`; box 3 fills \"G\". On \"F\" event F slides onto the bottom of the phagocyte rung with an arrow down to the adaptive rung, `m7-dendritic-cell-v1.png` and `m7-lymph-node-v1.png` small (grey tag \"starts the adaptive response\"); box 4 fills \"F\". Earlier glosses dim as each lands. On \"block, alarm, eat, alert\" the four verbs write small and grey beside the four placed events, one per word (one item; grey tag \"b06\"); \"chemical: histamine\" and \"physical: vessels widen and leak\" dim to grey as the verbs start; only after the four verbs have landed, a small grey note writes under boxes 2 to 4: \"E, G and F overlap in time\". At most three bright text items in the working area. Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q1-adaptive",
+      "visualDecision": "adjust",
+      "visualReference": "the adaptive rung expands into b07's five teal chip slots (grey, empty).",
+      "teachingReason": "The adaptive response in the lymph node: Now the adaptive response, in the lymph node.",
+      "narrationCue": "A / D / H / B",
+      "motionPurpose": "On the spoken cues: On \"A\" event A slides into the \"fit\" chip with `m7-b-cell-v1.png` small; \"fit an antigen\" underlines amber in the strip; box 5 fills \"A\". On \"D\" event D slides into the \"go-ahead\" chip with `m7-t-cell-v1.png` small; a thin arrow from the placed F event to the T cell thumbnail draws on \"already",
+      "motionRole": "explain",
+      "onScreenChange": "the adaptive rung expands into b07's five teal chip slots (grey, empty). On \"A\" event A slides into the \"fit\" chip with `m7-b-cell-v1.png` small; \"fit an antigen\" underlines amber in the strip; box 5 fills \"A\". On \"D\" event D slides into the \"go-ahead\" chip with `m7-t-cell-v1.png` small; a thin arrow from the placed F event to the T cell thumbnail draws on \"already switched on by the dendritic cell\" (grey tag \"b08\"); box 6 fills \"D\". On \"H\" event H slides into the \"clone\" chip with b07's `CloneTree` thumbnail; on \"most become plasma cells\" the \"plasma cells\" chip lights with `m7-plasma-cell-v1.png`; on \"some become memory cells\" a small grey \"M\" ring marks the foot of the column (b09's memory mark); box 7 fills \"H\". On \"B\" event B slides into the \"antibodies bind\" chip with coded Ys on the bacterium thumbnail; box 8 fills \"B\". On \"So the order is\" the eight boxes brighten left to right, one per letter, and the strip glows once along its whole length. On \"the bridge between the two halves\" the F to T cell arrow pulses once (tag \"dendritic cell: innate to adaptive\"). Earlier tags dim. Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q1-days",
+      "visualDecision": "new",
+      "visualReference": "on \"about a week\" \"about a week after the cut\" underlines amber in the strip.",
+      "teachingReason": "Part b: about a week: Part b asks why it takes about a week.",
+      "narrationCue": "about a week / Only a few B cells fit / divide many times / antibodies you can measure / innate defences hold the bacteria back",
+      "motionPurpose": "On the spoken cues: A short day axis (0 to 10 days, grey) draws under the adaptive rung. On \"Only a few B cells fit\" the \"fit\" chip pulses and three tiny lit B cells sit in a field of grey ones (tag \"few fit at first\"). On \"divide many times\" the `CloneTree` thumbnail grows several levels while a marker moves along",
+      "motionRole": "explain",
+      "onScreenChange": "on \"about a week\" \"about a week after the cut\" underlines amber in the strip. A short day axis (0 to 10 days, grey) draws under the adaptive rung. On \"Only a few B cells fit\" the \"fit\" chip pulses and three tiny lit B cells sit in a field of grey ones (tag \"few fit at first\"). On \"divide many times\" the `CloneTree` thumbnail grows several levels while a marker moves along the day axis (tag \"days of division\"; \"few fit at first\" dims). On \"antibodies you can measure\" a low curve leaves the day axis near day 7 (tag \"detectable after about a week\"). On \"innate defences hold the bacteria back\" the innate rungs pulse once (grey tag \"meanwhile: innate\"). Answer box (b) fills \"few B cells fit at first; they must bind the antigen, get a helper T cell's go-ahead and divide many times before enough plasma cells release measurable antibody; innate defences hold the bacteria meanwhile\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"the body makes an antibody to fit the bacteria\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is writing that the body makes a new antibody to fit the bacteria.",
+      "narrationCue": "the classic mistake / selects B cells that already fit / copies them",
+      "motionPurpose": "On the spoken cues: On \"selects B cells that already fit\" the \"fit\" chip brightens and a small grey tag writes \"clonal selection: the name is the process\" (b07). On \"copies them\" the clone chip pulses. A second crossed chip, unspoken, lands after the spoken cross has settled: \"B before A (antibodies before any B cell",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"the body makes an antibody to fit the bacteria\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"selects B cells that already fit\" the \"fit\" chip brightens and a small grey tag writes \"clonal selection: the name is the process\" (b07). On \"copies them\" the clone chip pulses. A second crossed chip, unspoken, lands after the spoken cross has settled: \"B before A (antibodies before any B cell is selected)\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: two doses on a log scale) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. A volunteer in a vaccine trial",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: two doses on a log scale)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. `m7-vaccine-vial-syringe-v1.png` sits small at the card's upper left. The card writes on: \"A volunteer in a vaccine trial was given two doses of the same vaccine, on day 0 and on day 28. The graph shows the concentration of antibodies against the vaccine antigen in the volunteer's blood. The dashed line shows the antibody level that protects against the disease.\" Grey chip: \"illustrative values\". Coded graph (house `lineGraph`): x axis \"time (days)\", 0 to 56, ticks every 7; y axis \"antibody concentration (arbitrary units, log scale)\", gridlines at 1, 10, 100, 1000, 10 000. Dashed horizontal line at 100, labelled \"protective level\". Curve: flat at about 1 from day 0 to day 6, rising to a peak of about 40 at day 14, falling to about 10 by day 28; after day 28, flat to day 30, rising to a peak of about 2000 at day 35, falling slowly to about 1000 by day 56. Arrows on the x axis at day 0 (\"dose 1\") and day 28 (\"dose 2\"). Demands: \"(a) Compare the antibody responses to dose 1 and dose 2. Use data from the graph. (3 marks)\" \"(b) Explain the difference between the two responses. (3 marks)\". Two lined answer boxes. No labels \"primary\" or \"secondary\", no cells. **Countdown 10 seconds**; the whole card, graph included, stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "tick",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-read",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Antibody graph\".",
+      "teachingReason": "Read the scale, then the numbers: First, check the scale.",
+      "narrationCue": "forty / two days / two thousand / fifty times higher",
+      "motionPurpose": "On the spoken cues: The graph enlarges in the working area. On \"check the scale\" the y axis labels 1, 10, 100, 1000, 10 000 pulse one by one, and \"log scale\" underlines amber in the y axis label \"antibody concentration (arbitrary units, log scale)\", the given an exam prints (gloss \"each step: ten times more\"). On \"the",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Antibody graph\". The graph enlarges in the working area. On \"check the scale\" the y axis labels 1, 10, 100, 1000, 10 000 pulse one by one, and \"log scale\" underlines amber in the y axis label \"antibody concentration (arbitrary units, log scale)\", the given an exam prints (gloss \"each step: ten times more\"). On \"the flat start\" the first flat stretch of the curve outlines grey (gloss \"lag: flat start before the rise\"; the scale gloss dims). On \"stays flat for about six days\" a bracket spans day 0 to 6 on the flat start (tag \"lag about 6 days\"). On \"forty\" a dotted reading guide drops from the first peak to the y axis and the value \"about 40 (day 14)\" writes; on \"below the protective line\" the peak and the dashed line flash together (\"dashed line\" underlines). On \"two days\" a short bracket spans day 28 to 30 (tag \"lag about 2 days\"; the first bracket dims). On \"two thousand\" a second reading guide gives \"about 2000 (day 35)\". On \"fifty times higher\" a small working line writes \"2000 ÷ 40 = 50\" and a bracket joins the two peaks (tag \"about 50 times higher\"); on \"stays above the protective line\" the curve segment from day 31 to day 56 outlines amber above the dashed line. Answer box (a) fills \"dose 1: lag about 6 days, peak about 40 units (day 14), below protective level; dose 2: lag about 2 days, peak about 2000 units (day 35), about 50 times higher, above protective level to day 56\". At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q2-explain",
+      "visualDecision": "adjust",
+      "visualReference": "on \"primary response\" the first hump outlines teal (tag \"primary\"); a small grey cell field (b09's `CellCountField`, `m7-b-cell-bare-v1.png` copies, scaled uniformly) shows two lit cells.",
+      "teachingReason": "Primary, then secondary: Now explain it.",
+      "narrationCue": "primary response / memory cells / secondary response",
+      "motionPurpose": "On the spoken cues: On \"memory cells\" about a dozen cells in the field light with small grey \"M\" marks (tag \"memory cells from dose 1\"). On \"same antigen\" \"two doses of the same vaccine\" underlines amber in the strip. On \"secondary response\" the second peak outlines amber (tag \"secondary\"; \"primary\" dims). On \"fewer",
+      "motionRole": "explain",
+      "onScreenChange": "on \"primary response\" the first hump outlines teal (tag \"primary\"); a small grey cell field (b09's `CellCountField`, `m7-b-cell-bare-v1.png` copies, scaled uniformly) shows two lit cells. On \"memory cells\" about a dozen cells in the field light with small grey \"M\" marks (tag \"memory cells from dose 1\"). On \"same antigen\" \"two doses of the same vaccine\" underlines amber in the strip. On \"secondary response\" the second peak outlines amber (tag \"secondary\"; \"primary\" dims). On \"fewer divisions\" a short two-level `CloneTree` grows from one lit cell. On \"sooner and much higher\" the two lag brackets and the peak bracket from 3b pulse once. The bank line \"Second exposure: faster, bigger, longer.\" writes small under the graph (grey tag \"b09\"). On \"never reached the protective line\" the first peak and the dashed line flash together and \"dashed line\" underlines in the strip (tag \"dose 1 alone: below protective level\"). On \"more than one dose\" the dose 2 arrow brightens. Answer box (b) fills \"dose 1: primary response; few fitting B cells selected and cloned, slow, low; memory cells formed. Dose 2: same antigen meets many memory cells, which quickly become plasma cells with fewer divisions, so antibody rises sooner and higher (secondary response)\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a ghost linear ruler beside the y axis counts the two gridline gaps between the peaks; a chip \"the second peak is about twice as high\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is counting gridlines.",
+      "narrationCue": "the classic mistake / Read the values off the axis",
+      "motionPurpose": "On the spoken cues: On \"Read the values off the axis\" the two reading guides pulse and \"2000 ÷ 40 = 50\" rings amber. A second crossed chip, unspoken: \"the person was protected after dose 1 (peak below the dashed line)\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a ghost linear ruler beside the y axis counts the two gridline gaps between the peaks; a chip \"the second peak is about twice as high\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Read the values off the axis\" the two reading guides pulse and \"2000 ÷ 40 = 50\" rings amber. A second crossed chip, unspoken: \"the person was protected after dose 1 (peak below the dashed line)\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: a flying fox scratch) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. A wildlife carer is scratched by",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: a flying fox scratch)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The new `m7-flying-fox-v1.png` sits at the card's upper left (no person). The card writes on: \"A wildlife carer is scratched by a flying fox. Some Australian flying foxes carry Australian bat lyssavirus, a close relative of the rabies virus. Rabies vaccine and human rabies immunoglobulin (rabies antibodies) are used to prevent Australian bat lyssavirus infection and are highly effective in almost all cases. Infection is almost always fatal once symptoms start. Symptoms usually take weeks or months to appear. The scratch is washed thoroughly with soap and water. On the same day, she is given: an injection of rabies antibodies (immunoglobulin collected from human blood donors), into and around the wound; and the first dose of rabies vaccine. Further vaccine doses follow over the next two weeks.\" Demands: \"(a) Identify the type of immunity provided by each injection. (2 marks)\" \"(b) Explain why both injections are given. (3 marks)\". A two-row answer table (\"rabies antibodies\", \"rabies vaccine\") and one lined box. No table thumbnails, no curves. **Countdown 10 seconds**; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-types",
+      "visualDecision": "adjust",
+      "visualReference": "the card shrinks to a strip; type badge \"Type of immunity\".",
+      "teachingReason": "Who made the antibodies?: Use the two questions from the last video.",
+      "narrationCue": "artificial passive / artificial active",
+      "motionPurpose": "On the spoken cues: b09's `ImmunityTable` draws in the working area, empty, rows \"active\" and \"passive\", columns \"natural\" and \"artificial\" (grey tag \"b09\"). On \"Who made the antibodies?\" an arrow runs down the row headers (tag \"who made them?\"). On \"made by other people's immune systems\" \"collected from human blood",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Type of immunity\". b09's `ImmunityTable` draws in the working area, empty, rows \"active\" and \"passive\", columns \"natural\" and \"artificial\" (grey tag \"b09\"). On \"Who made the antibodies?\" an arrow runs down the row headers (tag \"who made them?\"). On \"made by other people's immune systems\" \"collected from human blood donors\" underlines amber; the passive-artificial quadrant fills \"rabies antibodies\" with a small coded vial outline from the card (text only, no person); answer row 1 fills \"artificial passive\". On \"her own B cells make antibodies and memory cells\" \"first dose of rabies vaccine\" underlines amber; the active-artificial quadrant fills \"rabies vaccine\" with `m7-vaccine-vial-syringe-v1.png` small; answer row 2 fills \"artificial active\". On \"medical treatment\" an arrow runs across the \"artificial\" column (tag \"how? medical: artificial\"); the two natural quadrants stay grey. On \"Natural would mean\" the two natural quadrants show grey text only, \"catching the infection\" and \"antibodies from the mother\" (b09's thumbnails not shown), then dim. The bank line \"Active: you do the work. Passive: you're handed the antibodies.\" writes small under the table. At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q3-why-both",
+      "visualDecision": "new",
+      "visualReference": "a small coded two-curve sketch draws beside the table: x axis \"weeks after the scratch\" (0 to 8, no values on y).",
+      "teachingReason": "Cover the gap, then build memory: Now why both.",
+      "narrationCue": "takes a week or more / entering nerves near the wound / work straight away / fade over weeks / cover the gap / weeks or months to appear",
+      "motionPurpose": "On the spoken cues: On \"takes a week or more\" a teal curve (\"her own antibodies (vaccine)\") stays near the axis for the first week then rises and stays high (tag \"slow to start, lasting\"). On \"entering nerves near the wound\" a small grey gloss: \"virus spreads along nerves towards the brain\" (no anatomy drawn). On",
+      "motionRole": "explain",
+      "onScreenChange": "a small coded two-curve sketch draws beside the table: x axis \"weeks after the scratch\" (0 to 8, no values on y). On \"takes a week or more\" a teal curve (\"her own antibodies (vaccine)\") stays near the axis for the first week then rises and stays high (tag \"slow to start, lasting\"). On \"entering nerves near the wound\" a small grey gloss: \"virus spreads along nerves towards the brain\" (no anatomy drawn). On \"work straight away\" an amber curve (\"injected antibodies\") starts high at day 0 (tag \"immediate\"); on \"fade over weeks\" it falls towards the axis (tag \"fades; no memory\"; \"slow to start, lasting\" dims); \"into and around the wound\" underlines amber. On \"cover the gap\" the region where the amber curve is high and the teal curve is still low shades softly (tag \"the gap\"). On \"weeks or months to appear\" that phrase underlines amber in the strip. Answer box (b) fills \"own response to the vaccine takes a week or more; injected antibodies act immediately at the wound but fade with no memory; together they protect during the gap while the vaccine builds memory, possible because symptoms take weeks or months\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"the vaccine works straight away\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is saying the vaccine works straight away, so the antibody injection isn't needed.",
+      "narrationCue": "the classic mistake / a primary response, and that takes time",
+      "motionPurpose": "On the spoken cues: On \"a primary response, and that takes time\" the teal curve's flat first week pulses (tag \"primary: a week or more\"). A second crossed chip, unspoken: \"the antibody injection protects her next year too\". Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"the vaccine works straight away\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"a primary response, and that takes time\" the teal curve's flat first week pulses (tag \"primary: a week or more\"). A second crossed chip, unspoken: \"the antibody injection protects her next year too\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a list of events → barrier, then block, alarm, eat, alert, then fit, go-ahead, clone, plasma cells, antibodies (Q1)\" with the complete strip thumbnail; \"an antibody graph → read the scale (log?), then: same antigen or new? (Q2)\" with the graph thumbnail; \"a case → who made the antibodies? natural or medical? (Q3)\" with the table thumbnail.",
+      "teachingReason": "Decision board: So here's how to start each type.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: On \"Next\" a chip \"Next: how hygiene and quarantine interrupt spread\" slides in at the lower right with `m7-handwashing-sink-v1.png` small. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a list of events → barrier, then block, alarm, eat, alert, then fit, go-ahead, clone, plasma cells, antibodies (Q1)\" with the complete strip thumbnail; \"an antibody graph → read the scale (log?), then: same antigen or new? (Q2)\" with the graph thumbnail; \"a case → who made the antibodies? natural or medical? (Q3)\" with the table thumbnail. On \"Next\" a chip \"Next: how hygiene and quarantine interrupt spread\" slides in at the lower right with `m7-handwashing-sink-v1.png` small. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g03b-learning-review.md",
+      "sha256": "5698492dfb5ecae284c1e6a672443eb742073763c7456b3e2a105ecb284d8bad"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g03b-claude-science-check.md",
+      "sha256": "ddab85433ee6c1bcd823d83890e10202e8667dd4c50849bd7b54ee7cb783089b"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

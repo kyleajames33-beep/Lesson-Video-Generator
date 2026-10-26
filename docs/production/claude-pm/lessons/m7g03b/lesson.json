@@ -1,0 +1,156 @@
+{
+  "title": "Immune Response Practice: Sequence, Antibody Graphs, Active vs Passive",
+  "subtitle": "When an immunity question asks you to put the response in order, read an antibody graph, or name someone's immunity, how do you work it out step by step?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 14,
+  "lessonIntent": "ordering eight events from a pathogen's entry through the innate response (barrier, histamine and leaky vessels, neutrophils, dendritic cell to lymph node) to the adaptive response (B cells that fit bind the antigen, helper T cell go-ahead, clone of plasma and memory cells, antibodies bind) and explaining why antibody takes about a week (few fitting B cells must meet the antigen, get the go-ahead and divide many times; innate defences hold the bacteria meanwhile); reading a log-scale antibody graph (lag, peak values, a protective level) and comparing two doses with data (about fifty times higher, sooner, above the protective line), then explaining the difference by memory cells from the first dose; classifying a rabies antibody injection as artificial passive and a rabies vaccine as artificial active immunity, and explaining why both are given (immediate cover while the slower active response builds lasting protection, possible because symptoms take weeks or months).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Immunity questions often ask you to do one of three things. Put the response in order, from the moment a pathogen gets in to the moment antibodies appear. Read a graph of antibody levels. Or name the immunity someone has, active or passive, natural or artificial. Each one hides a trap that costs marks. Here are three HSC-style questions, one of each. Pause and try each one, then we'll work through it together."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Pruning secateurs nick a gardener's thumb, and soil bacteria get into the cut. Eight events are listed out of order. Put them in order, from entry to antibody production. Then explain why antibodies against these bacteria aren't found in the blood until about a week after the cut. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-innate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start where the pathogen starts. C, the bacteria get past the skin, the first barrier. Then come the innate defences, which are always ready. E, damaged cells and mast cells release chemicals such as histamine, so small vessels widen and leak. That's a chemical change causing physical ones, redness and swelling. G, neutrophils leave the blood and engulf bacteria. And F, a dendritic cell carries pieces of the bacteria to a lymph node. That's block, alarm, eat, alert."
+      }
+    },
+    {
+      "id": "q1-adaptive",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the adaptive response, in the lymph node. A, the few B cells whose receptors already fit an antigen on the bacteria bind it. D, a helper T cell, already switched on by the dendritic cell, gives them the go-ahead. H, they divide into a clone, and most become plasma cells, while some become memory cells. B, plasma cells release antibodies, which bind the bacteria. So the order is C, E, G, F, A, D, H, B. Notice that the dendritic cell is the bridge between the two halves."
+      }
+    },
+    {
+      "id": "q1-days",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b asks why it takes about a week. Only a few B cells fit this antigen to begin with. They have to meet it, get the go-ahead, and then divide many times before there are enough plasma cells to make antibodies you can measure. Meanwhile, the innate defences hold the bacteria back."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is writing that the body makes a new antibody to fit the bacteria. It doesn't design anything. It selects B cells that already fit, and copies them."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. A volunteer in a vaccine trial is given two doses, on day zero and day twenty-eight. The graph shows the antibody level in their blood, with a dashed line at the level that protects against the disease. Compare the responses to the two doses, using data from the graph. Then explain the difference. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-read",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, check the scale. Each gridline is ten times the one below it. Then find the lag, the flat start before the curve rises. After dose one, the level stays flat for about six days, then antibodies peak at about forty units on day fourteen, below the protective line. After dose two, they rise within about two days and peak at about two thousand units on day thirty-five. That's about fifty times higher, and it stays above the protective line."
+      }
+    },
+    {
+      "id": "q2-explain",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now explain it. Dose one gave a primary response. Only a few B cells fit the vaccine antigen, so they had to be selected and multiply, which took days, and some became memory cells. Dose two is the same antigen, so it met a secondary response. Many memory cells were already waiting. They became plasma cells quickly, with fewer divisions, so antibody rose sooner and much higher. After dose one, the level never reached the protective line, so one dose alone wouldn't have protected this volunteer. That's why many vaccines are given as more than one dose."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is counting gridlines. On a log scale, two thousand sits less than two gridlines above forty, so students write that the second peak is about twice as high. Read the values off the axis, then divide."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. A wildlife carer is scratched by a flying fox. Some Australian flying foxes carry a lyssavirus, a close relative of rabies. Rabies vaccine and rabies antibodies are used to prevent this infection, and they're highly effective in almost all cases. Once symptoms start, it's almost always fatal. The wound is washed with soap and water. She's then given an injection of rabies antibodies, and the first dose of rabies vaccine. Identify the type of immunity each injection gives. Then explain why both are given. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-types",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Use the two questions from the last video. Who made the antibodies? The injected antibodies were made by other people's immune systems, so they give artificial passive immunity. The vaccine gives her the antigen, so her own B cells make antibodies and memory cells. That's artificial active immunity. Both are artificial, because they come from medical treatment. Natural would mean she'd caught the infection, or received antibodies from her mother."
+      }
+    },
+    {
+      "id": "q3-why-both",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now why both. Her own response to the vaccine takes a week or more to make useful antibodies, and the virus could already be entering nerves near the wound. The injected antibodies work straight away, binding virus at the wound, but they fade over weeks and leave no memory. So the injected antibodies cover the gap, and the vaccine builds lasting protection. This works because symptoms usually take weeks or months to appear."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is saying the vaccine works straight away, so the antibody injection isn't needed. A vaccine starts a primary response, and that takes time."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start each type. To put a response in order, start at the barrier, run the innate steps, block, alarm, eat, alert, then the adaptive ones, fit, go-ahead, clone, plasma cells, antibodies. For a graph, read the scale, then ask, same antigen, or a new one? For immunity, ask who made the antibodies, and was it natural or medical? Next, how hygiene and quarantine interrupt spread."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

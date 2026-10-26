@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C07-claude-2026-10-27-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c07/lesson.json",
+  "lessonSha256": "2e481568d91fc43d263a2fd90d1dc5b1d49a7b28f6af5bab437d4b93073e2e3c",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c07/lesson.production-brief.json",
+    "sha256": "704fe6755a8abcbbbf8bb2e5e35c651e9dae259908b0b76528e0504049944e60"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In Australia, E10 petrol is up to ten percent ethanol. Litre for litre, ethanol carries less energy than petrol. So why blend it in at all? Burning an alcohol tells you two things that matter for choosing a fuel: how much energy you get, and where the carbon came from. So what does burning an alcohol tell us about fuel choice?",
+      "hash": "3f4746eb8766",
+      "textSha256": "3f4746eb87665cc513e417b60c009d06277f506987d7caa990ff57f7ef51069e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/hook.3f4746eb8766.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/hook.3f4746eb8766.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/hook.3f4746eb8766.generation.json",
+      "plannedRequestSha256": "033814f11ad67c1469d3fbd60af049d27fe6aff47c84616c90ac03e7495c10cb"
+    },
+    {
+      "id": "complete-combustion",
+      "parentSceneId": "complete-combustion",
+      "text": "Start with the equation. With plenty of oxygen, ethanol burns completely to carbon dioxide and water. Balance carbon first: two carbons, so two C O two. Then hydrogen: six hydrogens, so three waters. Now oxygen: four on the right, plus three, is seven. But ethanol brings one oxygen of its own, so it needs six more: three O two.",
+      "hash": "07e32fc857ee",
+      "textSha256": "07e32fc857eeb96b53a02ce6090147ae41f0754a7c385eb583706b9bb594d87b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/complete-combustion.07e32fc857ee.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/complete-combustion.07e32fc857ee.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/complete-combustion.07e32fc857ee.generation.json",
+      "plannedRequestSha256": "0747e800403490b8da501fda6034f7515ae9f02dff33c00a45e4670cea473fec"
+    },
+    {
+      "id": "per-mole-sign",
+      "parentSceneId": "per-mole-sign",
+      "text": "Methanol works the same way, but it needs one and a half O two. That's fine: a combustion equation is usually written for one mole of fuel, so the enthalpy change belongs to that mole. For methanol, delta H is about minus seven hundred and twenty six kilojoules per mole. It's negative because burning releases heat, as you saw in Module 5.",
+      "hash": "926dbe842e19",
+      "textSha256": "926dbe842e198d3c85fbfca3ac53b30336c93c2c0ecdc68997d3c2e0c30e9d2f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/per-mole-sign.926dbe842e19.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/per-mole-sign.926dbe842e19.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/per-mole-sign.926dbe842e19.generation.json",
+      "plannedRequestSha256": "d447cf48ae90a61e1469bf77027fdc212141d74b5502bdbd19d2e962503aa66e"
+    },
+    {
+      "id": "incomplete-combustion",
+      "parentSceneId": "incomplete-combustion",
+      "text": "If oxygen runs short, combustion is incomplete. Some carbon ends up as carbon monoxide, a toxic gas, or as soot, which is solid carbon. You can see it: the flame turns yellow and smoky, and black soot coats whatever is above it. Less carbon reaches carbon dioxide, so less energy is released. So soot tells you about the oxygen supply, not just about which fuel burned.",
+      "hash": "b2c0ef7f5166",
+      "textSha256": "b2c0ef7f51663477ee764d86c45b73caa56104e5e61c69b669cb08ecd860fb04",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/incomplete-combustion.b2c0ef7f5166.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/incomplete-combustion.b2c0ef7f5166.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/incomplete-combustion.b2c0ef7f5166.generation.json",
+      "plannedRequestSha256": "b0fb3d3d81b820de06f9f2bb40bc79e52e30b8a5f9e65ddbfbd6d9b129ae5b13"
+    },
+    {
+      "id": "where-numbers-come-from",
+      "parentSceneId": "where-numbers-come-from",
+      "text": "How do we know how much energy a fuel gives? Burn a weighed amount under a can of water. Here, zero point seven four grams of methanol warmed a hundred grams of water by twenty degrees. From the neutralisation video, q equals m c delta T, with m the mass of the water: eight point three six kilojoules. That's about eleven kilojoules per gram. Careful measurements give about twenty three, so this can caught only about half the energy. The practical video shows where the rest goes.",
+      "hash": "42008467a1bb",
+      "textSha256": "42008467a1bbb28528fb0cea026f1db5059bf9ded1ca45e7d9698fbe8a040985",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/where-numbers-come-from.42008467a1bb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/where-numbers-come-from.42008467a1bb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/where-numbers-come-from.42008467a1bb.generation.json",
+      "plannedRequestSha256": "3a8b1e514d50e0b3990711e06bbc54a6ef6acf2ef3d6f7c8a86f2f7dc06b78a1"
+    },
+    {
+      "id": "series-trend",
+      "parentSceneId": "series-trend",
+      "text": "Now the data values. Methanol, minus seven hundred and twenty six. Then ethanol, propan-one-ol and butan-one-ol, each about six hundred and fifty kilojoules per mole more. Why so steady? Each step adds one C H two group. Burning it means breaking two C H bonds, a C C bond and some oxygen bonds, but it forms one more carbon dioxide and one more water. Forming those bonds releases more energy than the breaking takes. Same extra group, about the same extra energy.",
+      "hash": "2a121041ba63",
+      "textSha256": "2a121041ba63f3e4fc3aed960155b32748a53d7d577597a6e63ca04a0dbcebdc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/series-trend.2a121041ba63.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/series-trend.2a121041ba63.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/series-trend.2a121041ba63.generation.json",
+      "plannedRequestSha256": "61060c4575d143287713ee9e4b7c8a943a639b7894e598a030d9e8f633631bfb"
+    },
+    {
+      "id": "per-gram",
+      "parentSceneId": "per-gram",
+      "text": "But a bigger molecule also weighs more. For a fuel you carry around, energy per gram matters more than per mole. Divide by molar mass: ethanol gives about thirty kilojoules per gram. Octane, a petrol molecule, gives about forty eight. Why less for ethanol? Its oxygen adds mass but no energy, and one carbon is already bonded to oxygen, so it's partly oxidised before it starts. Per litre, ethanol carries about thirty percent less energy than petrol.",
+      "hash": "40ae9fe73345",
+      "textSha256": "40ae9fe733451b5910b6068555a1fe4ef90e0323b0cfea8ce4b48d6f3c977f1c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/per-gram.40ae9fe73345.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/per-gram.40ae9fe73345.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/per-gram.40ae9fe73345.generation.json",
+      "plannedRequestSha256": "ece72f25b12e99a6efb46e0c5f529e298ce3a5f58c7a2e78d26c07652b4338b5"
+    },
+    {
+      "id": "same-products-carbon",
+      "parentSceneId": "same-products-carbon",
+      "text": "So why use ethanol at all? Burn ethanol or petrol completely, and you get the same products: carbon dioxide and water. The difference is where the carbon came from. Ethanol can be fermented from sugar in crops like sugarcane, and the cane took carbon dioxide from the air as it grew. So burning that ethanol returns carbon that was recently in the air. Petrol's carbon was locked underground for millions of years, so burning it adds extra carbon dioxide to the air.",
+      "hash": "2eb99d7f1ef4",
+      "textSha256": "2eb99d7f1ef43feaee52581a37808a362285195829ad2349493eacc87572fb8b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/same-products-carbon.2eb99d7f1ef4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/same-products-carbon.2eb99d7f1ef4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/same-products-carbon.2eb99d7f1ef4.generation.json",
+      "plannedRequestSha256": "c6650123c86378292c29cd8b9311ba7ced1745fc4a20b640512614a2507953d4"
+    },
+    {
+      "id": "not-carbon-neutral",
+      "parentSceneId": "not-carbon-neutral",
+      "text": "That doesn't make bioethanol carbon neutral, though. As you saw last video, distilling takes energy, and so do growing, harvesting and fermenting, often from fossil fuels. The crop also needs land and water that could grow food. So ethanol's case is a renewable source that can add less net carbon dioxide, against less energy per litre and the resources to grow it.",
+      "hash": "2078765c72c7",
+      "textSha256": "2078765c72c789e1e8535b262241aaec14477362654e06d95f38a576b00d96cf",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/not-carbon-neutral.2078765c72c7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/not-carbon-neutral.2078765c72c7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/not-carbon-neutral.2078765c72c7.generation.json",
+      "plannedRequestSha256": "dcdc466a00985789cc6abb88242026923929c7aec6103955430bcea06fcfb1b7"
+    },
+    {
+      "id": "obtaining-hydrocarbons",
+      "parentSceneId": "obtaining-hydrocarbons",
+      "text": "Petrol has costs before it's ever burned, because the hydrocarbons are taken from the Earth. Drilling, mining and fracking bring economic benefits: jobs, export income and a secure energy supply. But they carry environmental risks, like oil spills, habitat loss and possible water contamination. And there are sociocultural costs, affecting communities and culture. They often fall on communities near the site, including Aboriginal and Torres Strait Islander peoples and their Country, rather than on those burning the fuel.",
+      "hash": "b2120b2e462b",
+      "textSha256": "b2120b2e462b659c30c3f9a4be46031c5ea706ec3b5afd0219c33d82384800c0",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/obtaining-hydrocarbons.b2120b2e462b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/obtaining-hydrocarbons.b2120b2e462b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/obtaining-hydrocarbons.b2120b2e462b.generation.json",
+      "plannedRequestSha256": "9fdbe3c0360b168569233d5f6a52d035dbb9749e0f2d6654022b7d5f29cf8393"
+    },
+    {
+      "id": "judge-fuel",
+      "parentSceneId": "judge-fuel",
+      "text": "So which fuel? Judge each on its energy per gram and per litre, where its carbon comes from, what producing it costs, and what obtaining it does to land and people. Petrol wins on energy. Ethanol wins on a renewable source. That's one reason blends like E10 are a compromise, rather than a clear winner.",
+      "hash": "e4d2a4601c38",
+      "textSha256": "e4d2a4601c38781b9404d5a9127f812f573324027e54ca63372f363b17b1cd88",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/judge-fuel.e4d2a4601c38.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/judge-fuel.e4d2a4601c38.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/judge-fuel.e4d2a4601c38.generation.json",
+      "plannedRequestSha256": "6da2a005de807302f22e5a487c932010bd1b5c70f5289701ae5509438a52936d"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Two lines to keep. Per mole, each C H two adds about six fifty. Per gram, oxygen costs energy. And whichever alcohol you burn, you get carbon dioxide and water, unless the oxygen runs short.",
+      "hash": "c33191851d78",
+      "textSha256": "c33191851d78abb4c0c94d2749fb127a0479802c6f3e6c81f743b2504e7c3bab",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/memory-aid.c33191851d78.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/memory-aid.c33191851d78.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/memory-aid.c33191851d78.generation.json",
+      "plannedRequestSha256": "c9132907b274cf95b5f4f46979652d51021f2f7aab92f6bea1ee418602b5a44a"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Butan-one-ol is burned in a spirit burner beneath a metal can of water. Write a balanced equation for its complete combustion. After a few minutes, a black deposit forms on the base of the can. Explain how this deposit forms. Pause here to answer.",
+      "hash": "eb2f39ec7fe1",
+      "textSha256": "eb2f39ec7fe19899a1074496f470d11d9b376cfc38271acf9917150a4cbcf6f1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/attempt-1.eb2f39ec7fe1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/attempt-1.eb2f39ec7fe1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/attempt-1.eb2f39ec7fe1.generation.json",
+      "plannedRequestSha256": "fa0cea4261379c558257e244a4c225952d20d2d7a6afdf22a182a6bdc5a59357"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "C four H nine O H, plus six O two, gives four C O two plus five H two O. Thirteen oxygens on the right, and butan-one-ol brings one, so twelve from O two. Six and a half O two forgets the oxygen in the O H. The black deposit is soot: carbon from incomplete combustion, because the flame got too little oxygen for the amount of fuel burning.",
+      "hash": "634322eb111f",
+      "textSha256": "634322eb111f8e7589a1abf04765b5b1bfae925665314eb2eef9bf6db2f7ce3c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/feedback-1.634322eb111f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/feedback-1.634322eb111f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/feedback-1.634322eb111f.generation.json",
+      "plannedRequestSha256": "f5cd5832a6a204e0c7868fe9edfc3881ac3128892b914dcafe72918c07b43849"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Ethanol's molar enthalpy of combustion is minus thirteen sixty seven kilojoules per mole, and octane's is minus fifty four seventy one. Their molar masses are on screen. Calculate the energy released per gram of each fuel. Then compare them as fuels, including one advantage of ethanol that isn't about energy. Pause here to answer.",
+      "hash": "b0e37923e011",
+      "textSha256": "b0e37923e011567b43eff25349b83796d55443536cf7c78845551027f4f7dba0",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/attempt-2.b0e37923e011.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/attempt-2.b0e37923e011.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/attempt-2.b0e37923e011.generation.json",
+      "plannedRequestSha256": "af7aa019277a73e9eba924f051b9d1f54e8b3706eb05659e6edb7062016bdc30"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Divide each by its molar mass. Ethanol: twenty nine point six seven kilojoules per gram. Octane: forty seven point nine one. So octane releases more energy per gram. Per mole, octane looks four times better, but its molecules are heavier, so compare per gram. Ethanol's advantage: it can be made from crops, a renewable source that took carbon dioxide from the air as it grew.",
+      "hash": "2afcf299a6fc",
+      "textSha256": "2afcf299a6fca8821f2fada1999421fcbd6a820fe70fc58f5ed7e36688c06c00",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/feedback-2.2afcf299a6fc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/feedback-2.2afcf299a6fc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/feedback-2.2afcf299a6fc.generation.json",
+      "plannedRequestSha256": "753b7747469c045f67b7d36812cb3ce1f2966262de81c253813f8a853cdadc10"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So an alcohol's energy grows with its chain, its oxygen lowers the energy per gram, and choosing a fuel weighs energy against carbon and cost. Next: measuring these enthalpies yourself, and explaining why your answer comes out low.",
+      "hash": "32f0b171ad04",
+      "textSha256": "32f0b171ad047685c0ea94c8008f2403ce1836291f64e3874fe0be214b706e72",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/handoff.32f0b171ad04.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/handoff.32f0b171ad04.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/handoff.32f0b171ad04.generation.json",
+      "plannedRequestSha256": "51fe15eac8926ae76f09e43441c2227fbb118ca6ee2cac1896954c3d8b6bcb92"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C07-claude-2026-10-27-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

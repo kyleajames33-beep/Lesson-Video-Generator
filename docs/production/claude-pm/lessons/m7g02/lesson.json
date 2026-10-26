@@ -1,0 +1,164 @@
+{
+  "title": "Combustion Enthalpy Calculations: HSC-Style Practice",
+  "subtitle": "A combustion question gives you a water mass, a temperature rise and a fuel mass that all look alike. How do you give each its job, get the molar enthalpy and the share of heat that reached the water, run the calculation backwards, and decide whether an odd result belongs?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 12,
+  "lessonIntent": "calculating ΔHc from raw spirit-burner data; the percentage of released heat that reached the water; the mass of fuel needed when only a stated fraction reaches the water; calculating a trial's ΔHc, identifying it as anomalous by its cause and excluding it from the mean; checking each answer's size, unit and sign.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A combustion question hands you three numbers that look alike: the water's mass, its temperature rise, and the mass of fuel burnt. Each one has a single job. The water's mass and its rise go into q. The fuel's mass gives n. Swap them, and the answer can be out by a factor of a hundred or more. Here are three HSC-style questions, and the last one hides a result that doesn't belong. Pause and try each one, then we'll work through it, one step at a time."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. A methanol spirit burner heats a hundred and fifty grams of water from twenty two point four to forty two point four degrees. The burner's masses before and after are on the card. Calculate the molar enthalpy of combustion of methanol, then the percentage of the methanol's heat that reached the water. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-q-and-n",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the water. Delta T is twenty point zero degrees, so q is a hundred and fifty, times four point one eight, times twenty: twelve thousand five hundred and forty joules, or twelve point five four zero kilojoules. Keep every digit for now. Now the fuel. The burner lost one point one zero grams. Divide by thirty two point zero four, and that's zero point zero three four three three moles of methanol."
+      }
+    },
+    {
+      "id": "q1-dh",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Delta H is minus q over n: minus twelve point five four zero kilojoules, over zero point zero three four three three moles. That's minus three sixty five point two six, so minus three hundred and sixty five kilojoules per mole. Three significant figures, from the mass lost and the temperature rise. And it's negative, because burning releases heat."
+      }
+    },
+    {
+      "id": "q1-percent",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b asks how much of the heat reached the water. If those zero point zero three four three three moles burned completely, they'd release that times seven hundred and twenty six: twenty four point nine three kilojoules. The water took in twelve point five four. That's fifty point three percent: about half, which is typical for a spirit burner and can. The rest warmed the can and the air."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is dividing by the grams instead of the moles. Twelve point five four over one point one zero gives eleven point four, but that's kilojoules per gram, not per mole."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two runs the other way. A student wants to warm two hundred and fifty grams of water by fifteen degrees with an ethanol burner. Earlier trials showed the water takes in forty five percent of the heat released. Using the data value for ethanol, calculate the mass of ethanol she should expect to burn. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-heat",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, the heat the water needs: two hundred and fifty, times four point one eight, times fifteen point zero. That's fifteen point six seven five kilojoules. But only forty five percent of the burner's heat reaches the water, so it must release more than that: fifteen point six seven five divided by zero point four five zero is thirty four point eight three kilojoules."
+      }
+    },
+    {
+      "id": "q2-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the fuel. Each mole of ethanol releases thirteen hundred and sixty seven kilojoules, so thirty four point eight three over thirteen sixty seven is zero point zero two five four eight moles. Times forty six point zero seven: one point one seven grams. Three significant figures, from the fifteen point zero degrees and the forty five point zero percent."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is multiplying by zero point four five zero instead of dividing. That gives zero point two three eight grams. But if heat is lost, you need more fuel, not less, so the answer has to be bigger than the no-loss mass, zero point five two eight grams."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. A student burns propan-one-ol in four trials, heating two hundred and fifty grams of water each time. The table gives each temperature rise, the mass the burner lost, and three of the molar enthalpies. Calculate the molar enthalpy for trial three. Then explain whether trial three should be included in the mean, and calculate the mean. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-trial3",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Trial three, same steps. q is two hundred and fifty, times four point one eight, times eighteen point two: nineteen thousand and nineteen joules. n is one point six two over sixty point zero nine: zero point zero two six nine six moles. So delta H is minus seven hundred and five kilojoules per mole. The other three trials all sit close to minus nine seventy five, so this one is far less negative."
+      }
+    },
+    {
+      "id": "q3-judge",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So does it belong? Look for the cause. Trial three's temperature rise matches the others, but the burner lost nearly half a gram more. Extra mass with no extra heat means that fuel never heated the water. Most likely it left without burning: the burner was left uncapped and evaporated, or some spilled. That makes n too big, and delta H less negative. It's an anomaly with a likely cause, so leave it out of the mean, and repeat that trial if you can."
+      }
+    },
+    {
+      "id": "q3-mean",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Average the other three. Minus nine seventy four, minus nine seventy seven and minus nine seventy one give a mean of minus nine hundred and seventy four kilojoules per mole. That's about forty eight percent of the data value, in line with question one's fifty, so the three that fit look like normal trials. Only drop a result when you can explain it."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is averaging all four. Trial three drags the mean to minus nine hundred and seven, a value that no good trial gave."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any combustion calculation: the water's mass and rise go into q, the fuel's mass lost gives n, and delta H is minus q over n, in kilojoules per mole. If only part of the heat reaches the water, divide by that fraction to find the heat released. And when one trial doesn't fit, find its cause before you leave it out. Next, where an alcohol goes when it reacts."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

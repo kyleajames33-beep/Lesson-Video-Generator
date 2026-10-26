@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b08/lesson.json",
+    "lessonSha256": "0e3ce4a160b41caa5caa14df2b04a2158e4ca576d552f4b2d35fe6f18db05d2d"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b06: barriers (airway mucus and cilia), phagocytes and phagocytosis; dendritic cells carry pieces of a pathogen to a lymph node and show them to T cells; innate is fast and broad, adaptive is specific and takes days. From b07: antigens; each lymphocyte has receptors of one shape, made at random; clonal selection and expansion; plasma cells and antibodies; antibodies block, clump and coat pathogens outside cells; a B cell usually needs a helper T cell's go-ahead (named only). From b01 and b03: viruses are not cells and must enter a host cell to copy themselves; viruses use surface proteins to bind host cells. From Year 11: proteins are made by cells from instructions in their DNA. Not assumed: antigen presentation, display molecules, T cell receptors, helper and cytotoxic T cells, cytokines, apoptosis, NK cells, the terms humoral and cell-mediated.",
+    "startsWith": "Follow antigen presentation and T cell activation. The video opens: Antibodies are good at grabbing viruses outside cells.",
+    "stopsAfter": "explaining why antibodies can't reach a virus inside a cell; explaining antigen presentation (every cell displays pieces of the proteins it makes, so an infected cell displays virus pieces; dendritic cells display pieces of what they took up); explaining that a T cell receptor fits only a piece displayed on a cell, checked together with the display molecule, not free virus; explaining T cell selection and cloning in the lymph node and that two main kinds form; describing helper T cells as coordinators that release cytokines (the go-ahead for B cells, signals that make cytotoxic T cells multiply, signals that make macrophages better at destroying what they engulf) and kill nothing; describing cytotoxic T cells travelling to the infection, binding infected cells that display the matching piece, and triggering apoptosis so the virus loses its factory, while healthy cells are left alone; contrasting innate NK cells (no receptor made for one pathogen; respond to stress signals and too few display molecules) with cytotoxic T cells; describing the two arms of adaptive immunity and helper T cells linking them; interpreting a killing experiment and evaluating a claim about helper T cell loss.",
+    "nextLesson": "why a second infection is often stopped faster (route entry bio-m7-b09)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b08.md"
+  ],
+  "teaching": {
+    "task": "Antibodies can't reach a virus once it is inside your cells. How do T cells find the infected cells, and what do they do?",
+    "causalExplanation": "Causes: why a second, cell-based defence is needed (antibodies can't enter cells; hook, scene 2); how an infected cell can be told apart from outside (it displays virus pieces because it is making virus proteins; scene 3); why T cells don't bind free virus (receptors fit displayed pieces only; scene 4); why only some T cells respond and why it takes days (selection and cloning, as b07; scene 5); how helper T cells matter without killing (cytokines switch on B cells, killers and macrophages; scene 6); how the killer finds the right cell and spares healthy ones (scene 7); why killing your own cell helps (the factory stops; scene 8); how innate and adaptive killers differ (scene 9). Visible case: one airway cell changing in place from healthy to infected to self-destructing. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 6 (three targets of the helper) and 10 (the full strip) are the densest, so each tag dims as the next lands.",
+    "conversationalApproach": "Antibodies grab viruses outside cells, but a virus gets into your own cells and copies itself there, so the question is how T cells find the infected cells and what they do. A virus binds an airway cell and gets in; almost every cell cuts up some of the proteins it is making and displays small pieces on its surface, so an infected cell displays virus pieces. T cells are lymphocytes with receptors of one shape made at random, and unlike B cells they recognise a piece displayed on a cell, not a free antigen. In the lymph node, dendritic cells display the pathogen's pieces and the few fitting T cells are selected and multiply. Helper T cells mainly coordinate, giving B cells the go-ahead and signalling other cells; cytotoxic T cells leave the node, travel in the blood, check the pieces on airway cells and bind an infected one, then release proteins that make holes and switch on the cell's own self-destruct program, apoptosis. NK cells are innate killers that recognise stressed cells without receptors for one antigen. The adaptive response has two arms, antibodies outside cells and T cells for cells already infected, and the memory aid is B cells make antiBodies, T cells Terminate or Tell. Two exam questions follow with brief feedback.",
+    "openingDecision": "Antibodies are good at grabbing viruses outside cells. But a virus doesn't stay outside. It gets into your own cells and copies itself there, where antibodies can't reach it. So how does your body find the infected cells among billions of healthy ones? In 1973, in Canberra, Peter Doherty and Rolf Zinkernagel helped answer that, and later shared a Nobel Prize for it. The answer involves T cells.",
+    "understandingCheck": "13a explains a killing experiment with three groups of cells (recognition of displayed pieces and specificity, the route's stop for cytotoxic T cells). 13c evaluates the claim that losing helper T cells weakens only the T cell arm (helper roles across both arms, the route's stop for helper T cells). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ3-01: \"investigate and model the innate and adaptive immune systems in the human body (ACSBL119)\". This video models the T cell (cell-mediated) part of the adaptive system and joins it to b07's B cell part; scene 9 places NK cells in the innate system beside it. Verb \"investigate and model\": the response strip, the coded display-and-receptor shape model and the aligned airway cell plates (healthy, infected, self-destructing) are the model; attempt 1 investigates a killing experiment."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One infected airway board. Left two-thirds: painted cells, changing in place. The airway lining plate sets the scene; a coded zoom box opens onto one airway cell, shown as an aligned triplet (`m7-airway-cell-v1.png`, `-infected-v1.png`, `-apoptotic-v1.png`, all new) that crossfades at the cue where each change is narrated. Lymphocytes: the existing `m7-t-cell-v1.png` is the helper T cell; a new aligned partner `m7-t-cell-killer-v1.png` (the same lymphocyte with a cluster of dark granules at one side) is the cytotoxic T cell, so the two read as the same kind of cell with different jobs. Helper cells carry a small teal ring and cytotoxic cells an amber ring whenever both appear. In scene 9 only, the NK cell is the same `m7-t-cell-killer-v1.png` plate at the same size with a teal ring and no receptor forks, always with its grey tag \"NK cell\", so it is never mistaken for a helper T cell (no helper appears in scene 9). Coded display model: on every cell surface, small coded cup shapes (display molecules) each hold one small notched piece: grey pieces for the cell's own proteins, red pieces for virus proteins (matching the red spikes of `m7-virus-particle-v1.png`). T cell receptors are small coded two-pronged forks whose inner notch fits one cup-and-piece pair. A grey tag \"model: display molecules, pieces and receptors drawn far larger than real\" appears whenever the model is first used in a scene. Right third: the `ResponseStrip` from b06 and b07, first three rungs as grey thumbnails, the fourth rung showing b07's five B cell chips (grey) and, beside them, the new T cell branch of five chips lit one at a time. No people, hands or faces: the body appears only as airway lining, a lymph node, cells and molecules; attempt 1's mice and attempt 2's patient are words only. Coded elements are abstract only: the display model, the response strip, a clone tree (as b07), a vessel channel (two ink lines, as b06) for travel in the blood, arrows, chips and glosses. Scale: airway column cell about 25 µm tall and 8 µm wide, T cell about 7 µm, dendritic cell body about 12 µm with processes several times longer, B cell about 8 µm, macrophage about 20 µm; painted cells keep these proportions when shown together, so a T cell beside the airway cell is about a quarter of the cell's height. Virus particles (about 0.1 µm) are shown enlarged inside the airway cell plate and as a separate large plate, each time with a grey tag \"virus drawn far larger than real\". Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The virus particle plate opens the hook coated with b07's coded antibodies while a second copy slips into an airway cell and the antibodies stop at the membrane, then the cell zooms out into a row of identical cells; the board clears to the airway layout with the ResponseStrip at the right as the virus binds and enters; the healthy and infected airway cell plates sit side by side as coded protein pieces are cut and displayed on each surface; the T cell plate shows its coded receptor forks and a piece fits one displayed on a cell; the lymph node plate opens a zoom box where a dendritic cell displays pieces and only fitting T cells lock on and divide; a helper T cell signals a B cell and other cells with coded arrows while a crossed chip lands; a cytotoxic T cell travels along a coded vessel into the airway and checks cells until it binds one; coded specks pass through small pores into the bound infected cell, which crossfades to its aligned apoptotic partner as a macrophage reaches for the pieces; two columns compare the NK cell with the cytotoxic T cell; the full ResponseStrip enlarges with its adaptive rung split into two arms; two handwritten lines write with their capitals lit; each attempt clears the board and its feedback underlines the card as an answer table or verdict block fills and a crossed chip lands; the strip, step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people, no portraits. `m7-virus-particle-v1.png` appears at the left, coated with a few coded Ys from b07 (grey tag \"antibodies bind viruses outside cells, b07\").",
+      "teachingReason": "Hook (a virus hides inside): Antibodies are good at grabbing viruses outside cells.",
+      "narrationCue": "T cells",
+      "motionPurpose": "On the spoken cues: On \"It gets into your own cells\" a second copy of the virus slips through the edge of `m7-airway-cell-v1.png` (new, small, at the right) and disappears inside; coded Ys drift against the membrane and stop there (tag \"antibodies can't get in\"). On \"among billions of healthy ones\" the airway cell",
+      "motionRole": "explain",
+      "onScreenChange": "no people, no portraits. `m7-virus-particle-v1.png` appears at the left, coated with a few coded Ys from b07 (grey tag \"antibodies bind viruses outside cells, b07\"). On \"It gets into your own cells\" a second copy of the virus slips through the edge of `m7-airway-cell-v1.png` (new, small, at the right) and disappears inside; coded Ys drift against the membrane and stop there (tag \"antibodies can't get in\"). On \"among billions of healthy ones\" the airway cell zooms out into a row of identical small airway cells, one of them faintly ringed (grey tag \"which one is infected?\"). On \"In 1973, in Canberra\" a small grey tag writes: \"Doherty and Zinkernagel, John Curtin School of Medical Research, ANU, 1973; Nobel Prize 1996\". On \"T cells\" the heading writes on: \"How do T cells respond to infected cells?\" Hold about two seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Cam lens zoom",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about two seconds"
+    },
+    {
+      "sceneId": "virus-enters",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the airway layout.",
+      "teachingReason": "A virus gets in: Here's our case.",
+      "narrationCue": "A virus lands / an airway cell / A protein on its surface fits a molecule / gets in / takes over the cell / infect the cells next door",
+      "motionPurpose": "On the spoken cues: At the right third, the `ResponseStrip` draws: three grey innate thumbnails, then the fourth rung (\"days: adaptive\", amber) with b07's five B cell chips in grey and an empty second column beside them (grey header \"T cells\"). `m7-airway-cilia-mucus-v1.png` (from b06) fills the left two-thirds; on \"A",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the airway layout. At the right third, the `ResponseStrip` draws: three grey innate thumbnails, then the fourth rung (\"days: adaptive\", amber) with b07's five B cell chips in grey and an empty second column beside them (grey header \"T cells\"). `m7-airway-cilia-mucus-v1.png` (from b06) fills the left two-thirds; on \"A virus lands\" a few small coded red specks settle in the mucus (grey tag \"virus drawn far larger than real\"; grey tag \"b06: mucus and cilia\"). On \"an airway cell\" a coded zoom box opens from one column cell and `m7-airway-cell-v1.png` (new) fills the left area. On \"A protein on its surface fits a molecule\" a small `m7-virus-particle-v1.png` sits on the cell's top edge, its red spike against the membrane (tag \"spike fits a molecule on the cell\"; grey tag \"b03\"). On \"gets in\" it slips inside. On \"takes over the cell\" the plate crossfades to its aligned partner `m7-airway-cell-infected-v1.png` (new): virus particles now fill the cytoplasm and bud from the surface (tag \"the cell makes new viruses\"). On \"infect the cells next door\" a few coded red specks leave the top edge and drift towards a grey outline of the neighbouring cell. On \"antibodies can't touch it\" coded Ys bind the specks outside the cell and stop at the membrane (tag \"antibodies: outside only\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "display-pieces",
+      "visualDecision": "adjust",
+      "visualReference": "the healthy `m7-airway-cell-v1.png` returns at the left and the infected partner at the right, scaled together.",
+      "teachingReason": "Cells display pieces: So the body checks cells from the outside.",
+      "narrationCue": "antigen presentation",
+      "motionPurpose": "On the spoken cues: On \"cuts up some of the proteins it's making\" a short coded path inside the healthy cell: a thin ink chain breaks into short pieces that travel to the membrane (grey tag \"model\"). On \"held in display molecules\" small coded `DisplayCup`s appear along the healthy cell's rim, each holding a grey",
+      "motionRole": "explain",
+      "onScreenChange": "the healthy `m7-airway-cell-v1.png` returns at the left and the infected partner at the right, scaled together. On \"cuts up some of the proteins it's making\" a short coded path inside the healthy cell: a thin ink chain breaks into short pieces that travel to the membrane (grey tag \"model\"). On \"held in display molecules\" small coded `DisplayCup`s appear along the healthy cell's rim, each holding a grey notched piece (gloss \"display molecule\"; grey sub-gloss \"MHC\"; grey tag \"model: drawn far larger than real\"). On \"pieces of its own proteins\" the grey pieces pulse (tag \"own pieces: healthy\"). On \"displays virus pieces as well\" the infected cell's rim fills with cups, most holding grey pieces and several holding red pieces (tag \"virus pieces: infected\"). On \"antigen presentation\" a gloss writes: \"antigen presentation: displaying pieces on the cell surface\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "t-cell-receptor",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-t-cell-v1.png` appears at the left with small coded `TReceptor` forks on its rim (gloss \"T cells: lymphocytes, mature in the thymus\"; grey tag \"model: receptors drawn far larger than real\").",
+      "teachingReason": "The T cell's receptor: T cells are lymphocytes, like B cells.",
+      "narrationCue": "T cells",
+      "motionPurpose": "On the spoken cues: On \"receptors of one shape, made at random\" three more small T cell copies line up beside it, each fork with a different inner notch (grey tag \"as B cells, b07\"). On \"doesn't bind a free virus\" a free `m7-virus-particle-v1.png` drifts past a fork with no attachment; a grey chip \"T cells bind free",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-t-cell-v1.png` appears at the left with small coded `TReceptor` forks on its rim (gloss \"T cells: lymphocytes, mature in the thymus\"; grey tag \"model: receptors drawn far larger than real\"). On \"receptors of one shape, made at random\" three more small T cell copies line up beside it, each fork with a different inner notch (grey tag \"as B cells, b07\"). On \"doesn't bind a free virus\" a free `m7-virus-particle-v1.png` drifts past a fork with no attachment; a grey chip \"T cells bind free virus\" fades in and takes a grey scribble cross. On \"only fits a piece that's displayed\" the infected cell's rim slides in from the right; one fork seats over a cup holding a red piece (tag \"fits a displayed piece\"). On \"found the clue\" the 1973 grey tag from the hook returns small (grey sub-tag \"virus + the cell's own display molecule\"). On \"checks the display molecule and the piece together\" both the cup and the piece inside the fork's notch outline teal (tag \"cup + piece, together\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "find-t-cells",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-lymph-node-v1.png` fills the left area briefly, then a coded zoom box opens onto one follicle edge and the lymph node plate dims to grey.",
+      "teachingReason": "Finding the right T cells: First, though, the right T cells have to be found.",
+      "narrationCue": "helper T cells / cytotoxic T cells",
+      "motionPurpose": "On the spoken cues: On \"dendritic cells carried pieces\" `m7-dendritic-cell-v1.png` appears enlarged with coded cups holding red pieces along its long arms (grey tag \"b06\"). On \"displayed them\" the T branch's first chip writes and lights: \"shown\". On \"Only the few T cells whose receptors fit\" a row of six small T cell",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-lymph-node-v1.png` fills the left area briefly, then a coded zoom box opens onto one follicle edge and the lymph node plate dims to grey. On \"dendritic cells carried pieces\" `m7-dendritic-cell-v1.png` appears enlarged with coded cups holding red pieces along its long arms (grey tag \"b06\"). On \"displayed them\" the T branch's first chip writes and lights: \"shown\". On \"Only the few T cells whose receptors fit\" a row of six small T cell copies with different forks passes the dendritic cell; two forks seat over red pieces and light, the rest stay grey (tag \"only fitting T cells\"). On \"are selected\" the second chip lights: \"fit\". On \"divide into clones\" a coded `CloneTree` grows from each lit cell (grey tag \"clonal selection, as in b07\"; grey tag \"several days\"); the third chip lights: \"clone\", and the tag \"only fitting T cells\" dims. On \"helper T cells\" one clone's copies keep the plain `m7-t-cell-v1.png` look with a teal ring (label \"helper T cells\"); on \"cytotoxic T cells\" the other clone's copies crossfade to the aligned partner `m7-t-cell-killer-v1.png` (new) with an amber ring (label \"cytotoxic T cells\"). Only after that label writes do the small grey sub-labels \"CD4\" and \"CD8\" write under the two labels. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Cam lens zoom",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "helper-t-cells",
+      "visualDecision": "adjust",
+      "visualReference": "one teal-ringed helper T cell sits at the centre.",
+      "teachingReason": "Helper T cells coordinate: Helper T cells mainly coordinate.",
+      "narrationCue": "cytokines",
+      "motionPurpose": "On the spoken cues: On \"mainly coordinate\" a grey chip \"helper T cells are the main killers of infected cells\" fades in and takes a grey scribble cross. On \"on a B cell that has taken in the antigen\" `m7-b-cell-bare-v1.png` appears at the left with coded cups holding red pieces on its rim (grey tag \"b07: the B cell",
+      "motionRole": "explain",
+      "onScreenChange": "one teal-ringed helper T cell sits at the centre. On \"mainly coordinate\" a grey chip \"helper T cells are the main killers of infected cells\" fades in and takes a grey scribble cross. On \"on a B cell that has taken in the antigen\" `m7-b-cell-bare-v1.png` appears at the left with coded cups holding red pieces on its rim (grey tag \"b07: the B cell takes the antigen in\"); the helper's fork seats over one cup (tag \"same pieces, matching helper\"). On \"cytokines\" small coded dots stream from the helper to the B cell (gloss \"cytokines: signal chemicals\"); in the strip, b07's grey \"go-ahead\" chip brightens and a teal arrow draws to it from the T branch, where the fourth chip lights: \"helpers: signal\". On \"make cytotoxic T cells multiply\" the dot stream swings to an amber-ringed cytotoxic T cell at the right, which doubles into a small clone tree (tag \"killers multiply\"). On \"make macrophages better\" a small `m7-macrophage-v1.png` at the lower right takes a dot stream and its edge brightens (tag \"macrophages: better at destroying\"). Each tag dims when the next lands. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "cytotoxic-find",
+      "visualDecision": "adjust",
+      "visualReference": "on \"leave the lymph node, travel in the blood\" a small amber-ringed cytotoxic T cell travels from a lymph node thumbnail along a coded `VesselChannel` to a small thumbnail of the airway lining (grey tag \"b06: cells leave leaky vessels\").",
+      "teachingReason": "Cytotoxic T cells find the target: Cytotoxic T cells are the killers.",
+      "narrationCue": "leave the lymph node, travel in the blood / the infected airway / check the pieces displayed on each cell / fits a virus piece on an infected cell",
+      "motionPurpose": "On the spoken cues: On \"the infected airway\" the board returns to the airway cells: the healthy `m7-airway-cell-v1.png` at the left and `m7-airway-cell-infected-v1.png` at the right, with the cytotoxic T cell (at true relative size, about a quarter of the cell's height) beside the healthy cell. On \"check the pieces",
+      "motionRole": "explain",
+      "onScreenChange": "on \"leave the lymph node, travel in the blood\" a small amber-ringed cytotoxic T cell travels from a lymph node thumbnail along a coded `VesselChannel` to a small thumbnail of the airway lining (grey tag \"b06: cells leave leaky vessels\"). On \"the infected airway\" the board returns to the airway cells: the healthy `m7-airway-cell-v1.png` at the left and `m7-airway-cell-infected-v1.png` at the right, with the cytotoxic T cell (at true relative size, about a quarter of the cell's height) beside the healthy cell. On \"check the pieces displayed on each cell\" the T cell's forks touch the healthy cell's grey pieces and nothing seats (tag \"own pieces: left alone\"). On \"fits a virus piece on an infected cell\" the T cell moves to the infected cell; a fork seats over a red piece and the contact outlines amber (tag \"binds the infected cell\"). A grey chip \"killer T cells attack free virus\" fades in and takes a grey scribble cross. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "apoptosis",
+      "visualDecision": "adjust",
+      "visualReference": "the bound pair fills the left area.",
+      "teachingReason": "The infected cell self-destructs: Then it releases proteins.",
+      "narrationCue": "apoptosis",
+      "motionPurpose": "On the spoken cues: On \"releases proteins\" small coded specks pass from the T cell's contact edge to the infected cell's membrane. On \"make holes\" three small coded rings (pores) appear in the membrane at the contact (grey gloss \"perforin\"). On \"pass through\" specks enter through the rings (grey gloss \"granzymes\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "the bound pair fills the left area. On \"releases proteins\" small coded specks pass from the T cell's contact edge to the infected cell's membrane. On \"make holes\" three small coded rings (pores) appear in the membrane at the contact (grey gloss \"perforin\"). On \"pass through\" specks enter through the rings (grey gloss \"granzymes\"). On \"apoptosis\" the infected plate crossfades to its aligned partner `m7-airway-cell-apoptotic-v1.png` (new): the cell shrunk, its membrane bubbling into small round blebs, its nucleus condensed and broken into dark fragments (gloss \"apoptosis: the cell's own self-destruct program\"). On \"phagocytes clear the pieces\" a small `m7-macrophage-v1.png` at the lower edge reaches towards the blebs (grey tag \"b06: phagocytes\"; grey chip \"the T cell eats the cell\" fades in and takes a grey scribble cross). On \"the virus loses its factory\" the T branch's fifth chip lights: \"killers: destroy infected cells\" (tag \"no factory, fewer new viruses\"). On \"moves on\" the T cell detaches and drifts towards a second infected cell outline. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "nk-cells",
+      "visualDecision": "adjust",
+      "visualReference": "the NK cell is shown as a cell, not a word (Revision 2; no new plate).",
+      "teachingReason": "NK cells: the innate killers: Cytotoxic T cells aren't the only cells that kill infected cells.",
+      "narrationCue": "Natural killer cells",
+      "motionPurpose": "On the spoken cues: Two columns build across the left area, one per cue. Left column, teal header \"NK cells: innate\". On \"Natural killer cells\" the new `m7-t-cell-killer-v1.png` appears at the same size as the cytotoxic T cell, with a **teal** ring and **no receptor forks** (grey tag \"NK cell: a lymphocyte with",
+      "motionRole": "explain",
+      "onScreenChange": "the NK cell is shown as a cell, not a word (Revision 2; no new plate). Two columns build across the left area, one per cue. Left column, teal header \"NK cells: innate\". On \"Natural killer cells\" the new `m7-t-cell-killer-v1.png` appears at the same size as the cytotoxic T cell, with a **teal** ring and **no receptor forks** (grey tag \"NK cell: a lymphocyte with granules, no receptor for one pathogen\"). On \"They don't have receptors made for one pathogen\" a second grey tag writes beside it: \"looks like a killer T cell, recognises differently\". On \"They respond to stress signals on a cell\" an infected airway cell outline beside it shows a small coded stress mark (a jagged grey flag) on its rim (tag \"stress signals\"). On \"too few display molecules\" a second infected cell outline has only two cups left on its rim, its other cups fading out (grey tag \"a way some viruses hide from T cells\"); the amber-ringed cytotoxic T cell moves up to it, its fork touches the rim and nothing seats (tag \"nothing for the T cell to check\"); then the NK cell moves in and binds, and that cell outline crossfades to a small `m7-airway-cell-apoptotic-v1.png` thumbnail (tag \"NK cell: kills anyway\"). Each earlier tag dims as the next lands. Right column, amber header \"cytotoxic T cells: adaptive\", with the amber-ringed T cell thumbnail and its fork seated on a red piece of a normal infected cell (tag \"receptor for one pathogen\"). On \"act early\" a short coded day axis draws under both columns: a teal bar at the early end, an amber bar starting later (\"days\"; no values). In the strip, a small grey \"NK cells\" tag sits beside the \"hours: phagocytes\" rung. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "two-arms",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the full `ResponseStrip`, enlarged to the centre: three grey innate rungs above, then the fourth rung split into two columns.",
+      "teachingReason": "Two arms, one system: So the adaptive response has two arms.",
+      "narrationCue": "the antibody arm / cell-mediated arm / You need both / Helper T cells sit in the middle / memory T cells",
+      "motionPurpose": "On the spoken cues: On \"the antibody arm\" the B cell column brightens with a plasma cell thumbnail and a coated virus thumbnail (tag \"antibody arm: outside cells\"; grey gloss \"humoral\"). On \"cell-mediated arm\" the T cell column brightens with the apoptotic cell thumbnail (tag \"cell-mediated arm: infected cells\"; gloss",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the full `ResponseStrip`, enlarged to the centre: three grey innate rungs above, then the fourth rung split into two columns. On \"the antibody arm\" the B cell column brightens with a plasma cell thumbnail and a coated virus thumbnail (tag \"antibody arm: outside cells\"; grey gloss \"humoral\"). On \"cell-mediated arm\" the T cell column brightens with the apoptotic cell thumbnail (tag \"cell-mediated arm: infected cells\"; gloss \"cell-mediated: T cells act on infected cells\"). On \"You need both\" the earlier tags dim and a small coded loop draws under the strip: a red virus speck travels between two small airway cell outlines (teal label \"between cells: antibodies\") and then sits inside one (amber label \"inside cells: cytotoxic T cells\"). On \"Helper T cells sit in the middle\" the helper thumbnail moves to sit between the columns with teal arrows to the B cell \"go-ahead\" chip and the T cell \"killers\" chip (tag \"helpers switch on both\"). On \"memory T cells\" three small T cell copies at the foot of the T column are ringed (grey tag \"b09\"). Only the current column or tag is bright. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "lineage split"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory: Here's a way to keep them apart.",
+      "narrationCue": "B cells make antiBodies. T cells Terminate or Tell.",
+      "motionPurpose": "On the spoken cues: Two handwritten lines write on large across the centre, one per beat: \"B cells make antiBodies.\" and \"T cells Terminate or Tell.\" The capital B in \"antiBodies\" and the T, T in \"Terminate or Tell\" are amber. On \"terminate infected cells\" a small amber-ringed cytotoxic T cell thumbnail sits under",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two handwritten lines write on large across the centre, one per beat: \"B cells make antiBodies.\" and \"T cells Terminate or Tell.\" The capital B in \"antiBodies\" and the T, T in \"Terminate or Tell\" are amber. On \"terminate infected cells\" a small amber-ringed cytotoxic T cell thumbnail sits under \"Terminate\"; on \"tell other cells to act\" a small teal-ringed helper thumbnail sits under \"Tell\". Hold half a second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (three groups of cells)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions now. First. Cytotoxic T cells",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (three groups of cells))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Cytotoxic T cells were collected from a mouse infected with virus X. The T cells were mixed with three groups of body cells, all taken from mice of the same strain. Group 1: uninfected cells. Group 2: cells infected with virus X. Group 3: cells infected with virus Y. Only the cells in group 2 were killed.\" Demand: \"Explain these results. (4 marks)\". One lined answer box. No plates, no mice drawn and nothing answer-bearing (no strip, no display model). **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip at the top.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "Virus X selected cytotoxic T cells / Group two cells displayed virus X pieces / only their own pieces / virus Y pieces / the classic mistake / they kill infected cells",
+      "motionPurpose": "On the spoken cues: A three-row answer table writes beneath it (\"group 1\", \"group 2\", \"group 3\"). On \"Virus X selected cytotoxic T cells\" \"a mouse infected with virus X\" underlines teal and a small row writes above the table \"virus X → fitting cytotoxic T cells selected and cloned\". On \"Group two cells displayed virus",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip at the top. A three-row answer table writes beneath it (\"group 1\", \"group 2\", \"group 3\"). On \"Virus X selected cytotoxic T cells\" \"a mouse infected with virus X\" underlines teal and a small row writes above the table \"virus X → fitting cytotoxic T cells selected and cloned\". On \"Group two cells displayed virus X pieces\" \"infected with virus X\" (group 2) and \"Only the cells in group 2 were killed\" underline teal and the group 2 row fills \"displays X pieces → receptors fit → apoptosis\". On \"only their own pieces\" \"uninfected cells\" underlines and the group 1 row fills \"own pieces only: no fit\". On \"virus Y pieces\" \"infected with virus Y\" underlines and the group 3 row fills \"Y pieces: don't fit X receptors\". On \"the classic mistake\" the chip \"T cells killed the virus\" writes on and takes a grey scribble cross, with the small grey reason \"they kill infected cells\". A small grey author-side line under the table: \"same strain: same display molecules\" (not spoken). Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (a claim about HIV)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. HIV infects and destroys helper T cells.",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a claim about HIV))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"HIV (human immunodeficiency virus) infects and destroys helper T cells. Over several years without treatment, the number of helper T cells in the blood falls.\" Student's claim, in a small box: \"Losing helper T cells weakens only the T cell arm of the immune system, because antibodies are made by B cells.\" Demand: \"Evaluate the student's claim. (4 marks)\". One lined answer box. No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "B cells do make antibodies / the claim isn't supported / Most B cells need a helper T cell's go-ahead / Cytotoxic T cells rely on helper cytokines / Both arms weaken together / the classic mistake",
+      "motionPurpose": "On the spoken cues: A short answer block writes beneath it. On \"B cells do make antibodies\" \"antibodies are made by B cells\" underlines amber; on \"the claim isn't supported\" a verdict chip writes: \"B cells make antibodies: true. Only the T cell arm: not supported\". On \"Most B cells need a helper T cell's go-ahead\" a",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. A short answer block writes beneath it. On \"B cells do make antibodies\" \"antibodies are made by B cells\" underlines amber; on \"the claim isn't supported\" a verdict chip writes: \"B cells make antibodies: true. Only the T cell arm: not supported\". On \"Most B cells need a helper T cell's go-ahead\" a row writes \"B cells: usually need the helper's go-ahead → fewer plasma cells, less antibody\". On \"Cytotoxic T cells rely on helper cytokines\" \"destroys helper T cells\" underlines teal and a row writes \"cytotoxic T cells: rely on helper cytokines to multiply → fewer killers\"; on \"Both arms weaken together\" a small grey strip thumbnail sits beside the rows with both columns dimming (tag \"both arms weaken\"). On \"the classic mistake\" the chip \"B cells work without helper T cells\" writes on and takes a grey scribble cross. Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the `ResponseStrip` returns small at the left with both adaptive columns; four step chips write on beside it, one per cue: \"who displays the pieces\", \"fitting T cells: selected, cloned\", \"helpers: cytokines to B cells and killers\", \"killers: bind, apoptosis\".",
+      "teachingReason": "Decision rule and handoff: So for any T cell question, say which cell displays the antigen, which T cells fit it and multiply, what helper T cells signal, and how cytotoxic T cells destroy infected cells.",
+      "narrationCue": "So for any T cell question, say which",
+      "motionPurpose": "On the spoken cues: A \"Next\" chip slides in at the lower right: \"Next: why a second infection is often stopped faster\" (small grey tag; a memory cell thumbnail beside it). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "the `ResponseStrip` returns small at the left with both adaptive columns; four step chips write on beside it, one per cue: \"who displays the pieces\", \"fitting T cells: selected, cloned\", \"helpers: cytokines to B cells and killers\", \"killers: bind, apoptosis\". A \"Next\" chip slides in at the lower right: \"Next: why a second infection is often stopped faster\" (small grey tag; a memory cell thumbnail beside it). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b08-learning-review.md",
+      "sha256": "f7c099c441fa9fc195be498b485c6bee72b82fa73b9e79f838c62c15155efcca"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b08-claude-science-check.md",
+      "sha256": "8c891f9a817237d7992d755f6dd99ad26573782f4311722076795aa8155510c1"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

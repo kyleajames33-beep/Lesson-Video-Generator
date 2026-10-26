@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c07/measured/lesson.json",
+    "lessonSha256": "b65f1baaf4130ec68ea9fb07beb6aaf32327b179da9d0561436eb36267b6ca3f"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c05 (alcohol names methanol to butan-1-ol; the OH group; condensed formulas), chem-m7-c06 (fermentation of glucose by yeast from crops; ethanol from ethene and crude oil; the ethanol bottle and crude oil barrel plates), chem-m7-c03 (hydrocarbons from crude oil; octane named), chem-m5-g01 (combustion releases heat; ΔH negative; runs to completion), chem-m6-c03 (q = mcΔT, c = 4.18 J g⁻¹ °C⁻¹, \"keep the digits; round at the end\"; recommended prerequisite, change 10). Year 11: balancing equations; molar mass; carbon monoxide is toxic; photosynthesis takes in carbon dioxide (Biology or Year 10). Not assumed: incomplete combustion as a term, energy per gram (energy density), oxidation state, carbon neutral, sociocultural (given a plain meaning).",
+    "startsWith": "Write alcohol combustion equations and compare fuel sources. The video opens: In Australia, E10 petrol is up to ten percent ethanol. Litre for litre, ethanol carries less energy than petrol. So why blend it in at all?",
+    "stopsAfter": "writing balanced complete and incomplete combustion equations for alcohols, per mole of fuel, with state symbols; explaining soot as limited oxygen; saying where data values come from and why a simple can gives a low value (reasons left to p03); explaining the steady increase in molar enthalpy of combustion with chain length; comparing fuels per gram and explaining why alcohols give less; comparing ethanol and petrol by products, carbon source, production energy, land and water; describing the economic, environmental and sociocultural implications of obtaining hydrocarbons; judging a fuel on several criteria. No molar calculation from spirit-burner data, no method, errors or risk table (chem-m7-p03).",
+    "nextLesson": "measuring the enthalpy of combustion of alcohols with a spirit burner (route chem-m7-p03, \"Measure and compare alcohol combustion enthalpy\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c07.md"
+  ],
+  "teaching": {
+    "task": "E10 petrol is up to ten percent ethanol, yet litre for litre ethanol carries less energy than petrol. What does burning an alcohol tell us about choosing a fuel: its products, its energy per mole and per gram, and where its carbon comes from?",
+    "causalExplanation": "(1) a fuel choice depends on energy and on where the carbon came from (1); (2) complete combustion gives CO₂ and water; balance C, H, then O, counting the alcohol's own O (2); (3) the equation is written per mole of fuel, so a half O₂ is fine; ΔH is negative because heat is released (3); (4) too little oxygen leaves carbon as CO or soot, so less energy is released; soot reports the oxygen supply (4); (5) data values come from burning a weighed fuel and measuring the heat taken in by water; a simple can catches only about half (5); (6) each CH₂ adds the same bonds to break and the same extra CO₂ and H₂O to form, so the energy per mole rises by about the same amount each time (6); (7) a bigger molecule weighs more, so fuels are compared per gram; alcohols give less per gram because the oxygen adds mass and its carbon is partly oxidised (7); (8) ethanol and petrol make the same products; the difference is whether the carbon came recently from the air or from underground (8); (9) production uses energy, land and water, so ethanol is not automatically carbon neutral (9); (10) obtaining hydrocarbons brings economic benefits with environmental and sociocultural costs, often borne by people near the site (10); (11) each fuel wins on something, so judge on several criteria (11); memory aid (12); two attempts and brief feedback (13 to 16); handoff (17); key notes (18).",
+    "conversationalApproach": "E10 petrol is up to ten per cent ethanol, yet litre for litre ethanol carries less energy than petrol, so the video asks what burning an alcohol tells us about choosing a fuel. Complete combustion is balanced carbon, then hydrogen, then oxygen, counting the oxygen the alcohol already carries; the equation is written per mole of fuel, so methanol's one and a half O2 is fine, and delta H is negative because heat is released. Too little oxygen leaves carbon as carbon monoxide or soot and releases less energy, so soot reports the oxygen supply. One recalled q = mc delta T shows where data values come from and that a simple can catches only about half. Along the series each CH2 adds the same bonds to break and the same extra products to form, so the molar enthalpy rises by about 650 kilojoules each time; per gram is the fuel comparison, and alcohols give less because the oxygen adds mass and one carbon is already partly oxidised. Ethanol and petrol give the same products, but ethanol's carbon came recently from the air; production energy, land and water mean it is not automatically carbon neutral, and obtaining hydrocarbons brings economic benefits with environmental and sociocultural costs near the site. Fuels are judged on several criteria. The memory aid is per mole, each CH2 adds about 650; per gram, oxygen costs energy. Two exam questions follow with brief feedback.",
+    "openingDecision": "In Australia, E10 petrol is up to ten percent ethanol. Litre for litre, ethanol carries less energy than petrol. So why blend it in at all? Burning an alcohol tells you two things that matter for choosing a fuel: how much energy you get, and where the carbon came from. So what does burning an alcohol tell us about fuel choice?",
+    "understandingCheck": "(A1) \"Butan-1-ol is burned in a spirit burner beneath a metal can of water. (a) Write a balanced equation for the complete combustion of butan-1-ol. (b) After a few minutes, a black deposit forms on the base of the can. Explain how this deposit forms.\" New alcohol (the scenes balance ethanol and methanol); (b) targets the 2020 Q24 marker-reported mistake (soot blamed on the fuel without the oxygen supply, `../research/question-types-chem-m7.md`), answered positively in the feedback. Crossed mistake: \"C₄H₉OH + 13/2 O₂ → 4CO₂ + 5H₂O\" (the alcohol's own oxygen forgotten). (A2) \"The molar enthalpy of combustion of ethanol is −1367 kJ mol⁻¹ (M = 46.07 g mol⁻¹) and of octane is −5471 kJ mol⁻¹ (M = 114.2 g mol⁻¹). (a) Calculate the energy released per gram of each fuel. (b) Compare ethanol and octane as fuels, including one advantage of ethanol that is not related to energy.\" Tests scene 7's unit choice and scene 8's carbon source with given data. Crossed mistake: \"octane releases four times the energy per mole, so it is four times better\" (the site Must Do, kJ/mol against kJ/g).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):; combustion; dehydration; substitution with HX; oxidation\" \"compare and contrast fuels from organic sources to biofuels, including ethanol\" \"examine the environmental, economic and sociocultural implications of obtaining and using hydrocarbons from the Earth\" Only the combustion example of `C7-IQ4-04` is taught here; dehydration, substitution with HX and oxidation are chem-m7-c08a. this video starts by writing alcohol combustion equations and stops at assessing energy, production and environmental trade-offs between ethanol and petrol. It teaches: complete combustion of an alcohol to carbon dioxide and water, balanced by carbon, then hydrogen, then oxygen, counting the oxygen the alcohol already carries (ethanol); the equation written per mole of fuel, with a fractional O₂ coefficient (methanol), and ΔH negative because heat is released (chem-m5-g01 recall); state symbols with liquid water for the data values; incomplete combustion when oxygen is limited, giving carbon monoxide (toxic) and soot (carbon), a yellow smoky flame and less energy released; soot as evidence about the oxygen supply; where the data values come from, through one compact recall of q = mcΔT with Codex's methanol hook dataset (0.74 g warms 100.0 g of water by 20.0 °C: 8.36 kJ, about 11 kJ per gram against about 22.7 kJ per gram in careful measurements, so the can caught about half; the reasons are chem-m7-p03); the molar enthalpies of combustion of methanol to butan-1-ol and the steady increase of about 650 kJ/mol per CH₂, explained by bonds broken and formed; energy per gram as the fuel comparison (ethanol 29.7, octane 47.9 kJ/g) and why alcohols give less (the oxygen adds mass and the carbon bonded to oxygen is already partly oxidised); about 30% less energy per litre for ethanol; same combustion products for ethanol and petrol, but recently captured carbon (fermented sugarcane, chem-m7-c06) against fossil carbon; why bioethanol is not automatically carbon neutral (production energy), and its land and water cost; the economic, environmental and sociocultural implications of obtaining hydrocarbons from the Earth; judging fuels on several criteria, with E10 as a compromise. Not here: the full molar enthalpy calculation from spirit-burner data, the set-up, the method, the error chain, improvements, validity, reliability and accuracy, and the risk table (chem-m7-p03); calculation practice and anomalous results (chem-m7-g02); bond enthalpy arithmetic (author note c; HSC Chemistry does not require it); dehydration, substitution with HX and oxidation (chem-m7-c08a); fermentation conditions (chem-m7-c06, recalled in one clause); Gibbs free energy (chem-m5-g01, recalled only for the sign); country case studies (correction 13); the bomb calorimeter (correction 11)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c05 and c06: carbon skeleton ink; hydrogens soft grey; oxygen brick red, the OH ringed red; O₂ molecules red pairs; CO₂ and H₂O products in a grey product box; each CH₂ in the series teal; heat as warm-orange arrows (chem-m6-c03 convention); soot specks charcoal; fossil carbon dark brown; recently captured carbon green. Board layout (constant): top-left the short task chip (\"Complete combustion\", \"Energy per gram\", \"Ethanol or petrol?\"); centre the equation stage strip, ladder or loop, one at a time; plates small at the left or right (larger only in scenes 4, 5 and 8, where the object carries the explanation). Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous strip or plate leaves before the next draws. Reuse: `m7-ethanol-fuel-bottle-v1.png` (2000 × 2000: an amber glass bottle with a glass stopper, pale liquid, no label; hook, scene 8, handoff; coded label \"ethanol\"); `m7-crude-oil-barrel-v1.png` (2000 × 2000: a plain dark steel drum, no label; hook, scene 8, coded label \"crude oil → petrol\"); `m7-oil-gas-rig-v1.png` (2000 × 2000: an offshore platform with a derrick and crane standing in painted sea; no people visible; scene 10). Considered, not used: `m7-camping-gas-burner-v1.png` (inspected: a blue gas canister stove with a blue flame; its fuel is butane or propane, not an alcohol, so it would mislead in scenes 2 to 5); `g1-flame-v1.png` and `c7-flame-energy-v1.png` (inspected: a free-floating orange flame and a flame on a nozzle; neither shows an alcohol burning under a can); `m6-foam-cup-calorimeter-v1.png` (neutralisation, not combustion; the plate audit says so); `c8-thermometer-hot-v1.png` (a free-standing thermometer; the new set-up plate includes its own). New plates: `m7-spirit-burner-calorimeter-v1.png` and `m7-spirit-burner-calorimeter-sooty-v1.png` (shared with chem-m7-p03, which commissions the full set) and `m7-sugarcane-stalks-v1.png`; see Assets. No human figures.",
+    "transitionPlan": "The ethanol bottle and crude oil barrel plates open the hook with an E10 chip; the board clears to the equation stage strip as the balance tally lights C, H and O in turn and a red chip slides in from the OH; the methanol strip writes its 3/2 coefficient and a per-mole chip; the spirit burner calorimeter plate cross-fades to its sooty partner as grey carbon specks and coded CO molecules rise and a less-energy bar shrinks; the plate returns small with its amber readout as the task line, equation strip, grouped givens and one working line write; the series ladder extends one bar per alcohol with a teal CH2 glow and a bracket, and the bond ledger cracks and forms bonds with energy arrows; the per-gram switch re-scales the bars and an octane bar extends past them; two carbon loops draw for sugarcane and the fossil drum, then the production ledger adds energy arrows; the implications board lights three columns under the oil rig plate; the criteria card lights row by row; the memory lines write with small thumbnails; each attempt clears the board and its feedback underlines the card as the strip or per-gram lines write and a crossed chip lands; the thumbnails and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"What does burning an alcohol tell us about fuel choice?\".",
+      "teachingReason": "Hook (less energy, still in the tank): In Australia, E10 petrol is up to ten percent ethanol.",
+      "narrationCue": "ethanol / energy / carbon",
+      "motionPurpose": "On the spoken cues: `m7-ethanol-fuel-bottle-v1.png` small at the left (coded label \"ethanol\"), `m7-crude-oil-barrel-v1.png` small at the right (coded label \"crude oil → petrol\"). Between them a coded fuel bar fills grey-blue to 90% with a green 10% cap; on \"ethanol\" a chip writes \"E10: up to 10% ethanol\". On \"Litre for litre\" two coded energy bars (one litre each) grow side by side, the ethanol bar shorter (no numbers yet). On \"energy\"",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"What does burning an alcohol tell us about fuel choice?\". `m7-ethanol-fuel-bottle-v1.png` small at the left (coded label \"ethanol\"), `m7-crude-oil-barrel-v1.png` small at the right (coded label \"crude oil → petrol\"). Between them a coded fuel bar fills grey-blue to 90% with a green 10% cap; on \"ethanol\" a chip writes \"E10: up to 10% ethanol\". On \"Litre for litre\" two coded energy bars (one litre each) grow side by side, the ethanol bar shorter (no numbers yet). On \"energy\" a small orange arrow icon lights above the bars; on \"carbon\" a small CO₂ icon lights above the two plates. The bar labels dim. Bright at the end: the heading and the two icon chips \"energy\" and \"carbon\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "complete-combustion",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Complete combustion: balance with the alcohol's own oxygen: Start with the equation.",
+      "narrationCue": "completely / one / three",
+      "motionPurpose": "On the spoken cues: Task chip \"Complete combustion\". The equation stage strip builds: coded ethanol (full structural, OH ringed red) + \"? O₂\" → \"? CO₂ + ? H₂O\" in the grey product box; a grey chip \"complete combustion: plenty of O₂ → CO₂ + H₂O\". The balance tally writes under the strip; on \"two C O two\" the C row lights \"2 | 2\" and \"2\" writes before CO₂; on \"three waters\" the H row lights \"6 | 6\" and \"3\" writes before H₂O; the C and H",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Complete combustion\". The equation stage strip builds: coded ethanol (full structural, OH ringed red) + \"? O₂\" → \"? CO₂ + ? H₂O\" in the grey product box; a grey chip \"complete combustion: plenty of O₂ → CO₂ + H₂O\". The balance tally writes under the strip; on \"two C O two\" the C row lights \"2 | 2\" and \"2\" writes before CO₂; on \"three waters\" the H row lights \"6 | 6\" and \"3\" writes before H₂O; the C and H rows dim. On \"seven\" the O row writes \"? | 4 + 3 = 7\". On \"one\" the red \"+1 from the OH\" chip slides from the ringed OH onto the left side of the O row. On \"three\" the O row completes \"1 + 6 = 7 | 7\" and \"3\" writes before O₂. The strip now reads C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. Bright at the end: the balanced strip, the O row and the \"+1 from the OH\" chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "per-mole-sign",
+      "visualDecision": "new",
+      "visualReference": "the ethanol strip shrinks to the top and dims.",
+      "teachingReason": "Per mole of fuel, and the sign: Methanol works the same way, but it needs one and a half O two.",
+      "narrationCue": "one mole / minus seven hundred and twenty six / releases",
+      "motionPurpose": "On the spoken cues: A new strip builds: CH₃OH + 3/2 O₂ → CO₂ + 2H₂O, the \"3/2\" written in the same weight as other coefficients; a small tally \"O: 1 + 3 = 4 | 2 + 2 = 4\" writes and dims. On \"one mole\" a navy bracket under CH₃OH reads \"1 mol of fuel\" (tag \"ΔHc: per mole of fuel\"). State symbols write in grey: \"(l) + (g) → (g) + (l)\", with a small grey chip \"data values: liquid water\". On \"minus seven hundred and twenty six\" \"ΔH = −726",
+      "motionRole": "explain",
+      "onScreenChange": "the ethanol strip shrinks to the top and dims. A new strip builds: CH₃OH + 3/2 O₂ → CO₂ + 2H₂O, the \"3/2\" written in the same weight as other coefficients; a small tally \"O: 1 + 3 = 4 | 2 + 2 = 4\" writes and dims. On \"one mole\" a navy bracket under CH₃OH reads \"1 mol of fuel\" (tag \"ΔHc: per mole of fuel\"). State symbols write in grey: \"(l) + (g) → (g) + (l)\", with a small grey chip \"data values: liquid water\". On \"minus seven hundred and twenty six\" \"ΔH = −726 kJ mol⁻¹\" writes after the strip, and the \"1 mol of fuel\" bracket and the \"data values: liquid water\" chip dim to grey. On \"releases\" orange heat arrows leave the strip outward and a small chip \"heat out → ΔH negative (Module 5)\". Bright at the end: the methanol strip, the ΔH value and the heat chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "incomplete-combustion",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Incomplete combustion: soot reports the oxygen: If oxygen runs short, combustion is incomplete.",
+      "narrationCue": "incomplete / soot / less energy",
+      "motionPurpose": "On the spoken cues: `m7-spirit-burner-calorimeter-v1.png` appears centre-left, medium (blue flame, clean can). On \"incomplete\" a grey chip writes \"incomplete: too little O₂\". Two strips write small at the right, one per cue: on \"carbon monoxide\" \"C₂H₅OH + 2O₂ → 2CO + 3H₂O\" (CO ringed, tag \"toxic\"); on \"soot\" \"C₂H₅OH + O₂ → 2C + 3H₂O\" (C ringed charcoal, tag \"soot: solid carbon\"). On \"You can see it\" the flame switch runs: the plate",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m7-spirit-burner-calorimeter-v1.png` appears centre-left, medium (blue flame, clean can). On \"incomplete\" a grey chip writes \"incomplete: too little O₂\". Two strips write small at the right, one per cue: on \"carbon monoxide\" \"C₂H₅OH + 2O₂ → 2CO + 3H₂O\" (CO ringed, tag \"toxic\"); on \"soot\" \"C₂H₅OH + O₂ → 2C + 3H₂O\" (C ringed charcoal, tag \"soot: solid carbon\"). On \"You can see it\" the flame switch runs: the plate cross-fades in place to `m7-spirit-burner-calorimeter-sooty-v1.png` (yellow smoky flame, black patch on the can base), with coded charcoal specks drifting up to the patch. On \"less energy\" the \"less energy\" bar beside the flame shrinks against a dashed full-length outline. On \"oxygen supply\" a ring circles the gap around the flame, tag \"soot: O₂ couldn't keep up\". The two strips dim to grey. Bright at the end: the sooty plate, the shrunken energy bar and the oxygen tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "where-numbers-come-from",
+      "visualDecision": "adjust",
+      "visualReference": "the sooty plate cross-fades back to `m7-spirit-burner-calorimeter-v1.png`, shrunk to the left, with the coded amber readout chip on its thermometer counting \"21.5 °C\" to \"41.5 °C\".",
+      "teachingReason": "Where the numbers come from (q = mcΔT, recalled): How do we know how much energy a fuel gives?",
+      "narrationCue": "zero point seven four / water / eleven / half",
+      "motionPurpose": "On the spoken cues: Task line: \"Energy per gram of methanol (school can)\". Equation strip: \"q = mcΔT\". Givens, grouped with units, small at the top right: \"water: 100.0 g | 21.5 °C → 41.5 °C | c = 4.18 J g⁻¹ °C⁻¹\" and \"burner: 143.82 g → 143.08 g\". Task line, strip and givens stay grey while the working writes; one line per cue, earlier lines dimming: on \"zero point seven four\" \"methanol burnt = 143.82 − 143.08 = 0.74 g\"; on \"water\"",
+      "motionRole": "explain",
+      "onScreenChange": "the sooty plate cross-fades back to `m7-spirit-burner-calorimeter-v1.png`, shrunk to the left, with the coded amber readout chip on its thermometer counting \"21.5 °C\" to \"41.5 °C\". Task line: \"Energy per gram of methanol (school can)\". Equation strip: \"q = mcΔT\". Givens, grouped with units, small at the top right: \"water: 100.0 g | 21.5 °C → 41.5 °C | c = 4.18 J g⁻¹ °C⁻¹\" and \"burner: 143.82 g → 143.08 g\". Task line, strip and givens stay grey while the working writes; one line per cue, earlier lines dimming: on \"zero point seven four\" \"methanol burnt = 143.82 − 143.08 = 0.74 g\"; on \"water\" \"ΔT = 41.5 − 21.5 = 20.0 °C\", then \"q = 100.0 × 4.18 × 20.0 = 8360 J = 8.36 kJ\" with the C03 grey tag \"m = water, not fuel\" and \"keep the digits; round at the end\"; on \"eleven\" \"8.36 kJ ÷ 0.74 g = 11.3 → 11 kJ g⁻¹ (2 s.f.)\"; on \"half\" a comparison chip \"careful value: about 22.7 kJ g⁻¹\" (no division shown here; dividing by molar mass is spoken and shown in scene 7) and a two-bar strip (11 against 22.7) with a bracket \"about 50% reached the water\". On \"where the rest goes\" a small \"?\" tag sits on the gap (tag \"next video: the practical\"). Bright at the end: the 11 kJ g⁻¹ line, the two-bar strip and the \"?\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "series-trend",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "The trend per mole, and why it's steady: Now the data values.",
+      "narrationCue": "six hundred and fifty / forms / same",
+      "motionPurpose": "On the spoken cues: Task chip \"Enthalpy of combustion along the series\". The series ladder writes: CH₃OH −726, CH₃CH₂OH −1367, CH₃CH₂CH₂OH −2021, CH₃CH₂CH₂CH₂OH −2676 kJ mol⁻¹, names small under each; each bar extends on its row, the new CH₂ glowing teal. On \"six hundred and fifty\" brackets between bars write \"641\", \"654\", \"655\" in grey and one navy bracket \"about 650 kJ mol⁻¹ per CH₂\". On \"breaking\" the bond ledger runs on one lifted",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Enthalpy of combustion along the series\". The series ladder writes: CH₃OH −726, CH₃CH₂OH −1367, CH₃CH₂CH₂OH −2021, CH₃CH₂CH₂CH₂OH −2676 kJ mol⁻¹, names small under each; each bar extends on its row, the new CH₂ glowing teal. On \"six hundred and fifty\" brackets between bars write \"641\", \"654\", \"655\" in grey and one navy bracket \"about 650 kJ mol⁻¹ per CH₂\". On \"breaking\" the bond ledger runs on one lifted teal CH₂: two C–H and one C–C bond lines and a \"1.5 O=O\" chip crack in grey with a small \"energy in\" arrow. On \"forms\" one coded CO₂ and one H₂O assemble with a larger \"energy out\" arrow. On \"same\" the net arrow \"about 650 kJ mol⁻¹ out\" writes and the lifted CH₂ drops back into the ladder. The grey increment numbers dim. Bright at the end: the ladder, the 650 bracket and the net arrow. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "per-gram",
+      "visualDecision": "new",
+      "visualReference": "the ladder stays.",
+      "teachingReason": "Per gram is what matters for a fuel: But a bigger molecule also weighs more.",
+      "narrationCue": "weighs / gram / forty eight / partly oxidised",
+      "motionPurpose": "On the spoken cues: On \"weighs\" molar masses write small beside each formula (32.04, 46.07, 60.09, 74.12 g mol⁻¹). On \"gram\" the molar masses dim and the per-gram switch runs: the bars re-scale to kJ g⁻¹ and close up (22.7, 29.7, 33.6, 36.1), tag \"energy density: kJ per gram\". Task chip changes to \"Energy per gram\". On \"thirty\" the ethanol bar lights (29.7). On \"forty eight\" a grey-blue octane bar extends beyond them, labelled \"octane",
+      "motionRole": "explain",
+      "onScreenChange": "the ladder stays. On \"weighs\" molar masses write small beside each formula (32.04, 46.07, 60.09, 74.12 g mol⁻¹). On \"gram\" the molar masses dim and the per-gram switch runs: the bars re-scale to kJ g⁻¹ and close up (22.7, 29.7, 33.6, 36.1), tag \"energy density: kJ per gram\". Task chip changes to \"Energy per gram\". On \"thirty\" the ethanol bar lights (29.7). On \"forty eight\" a grey-blue octane bar extends beyond them, labelled \"octane C₈H₁₈: 47.9 kJ g⁻¹\", with a coded skeletal octane. The other alcohol bars dim. On \"Its oxygen\" the ethanol OH oxygen pulses with a tag \"O adds 16 g mol⁻¹, no energy\". On \"partly oxidised\" the \"O adds 16 g mol⁻¹\" tag dims and the C–O carbon rings red, tag \"partly oxidised: already bonded to oxygen\". On \"Per litre\" the alcohol and octane bar labels dim (the bars stay, grey) and two small litre bars write: \"ethanol about 23 MJ L⁻¹\", \"petrol about 34 MJ L⁻¹\" (the hook's bars, now numbered). Bright at the end: the partly-oxidised tag and the two litre bars. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "same-products-carbon",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Same products, different carbon: So why use ethanol at all?",
+      "narrationCue": "same / sugarcane / underground",
+      "motionPurpose": "On the spoken cues: Task chip \"Ethanol or petrol?\". Two strips write side by side, small: \"C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O\" and \"2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O\"; on \"same\" both product boxes pulse together (tag \"same products\"); the strips dim. The carbon loop draws: on \"sugarcane\" `m7-sugarcane-stalks-v1.png` appears centre-left, medium, with green CO₂ arrows from the air into the leaves (tag \"photosynthesis: CO₂ in\"), then a small coded",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Ethanol or petrol?\". Two strips write side by side, small: \"C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O\" and \"2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O\"; on \"same\" both product boxes pulse together (tag \"same products\"); the strips dim. The carbon loop draws: on \"sugarcane\" `m7-sugarcane-stalks-v1.png` appears centre-left, medium, with green CO₂ arrows from the air into the leaves (tag \"photosynthesis: CO₂ in\"), then a small coded fermentation flask chip (\"fermented to ethanol, video c06\") and the ethanol bottle plate small, and a coded flame returning green CO₂ arrows to the air, closing the circle (tag \"recent carbon: back to the air\"). On \"underground\" the \"photosynthesis: CO₂ in\" tag and the fermentation chip dim, and `m7-crude-oil-barrel-v1.png` appears centre-right above a coded brown rock layer; a one-way dark brown arrow rises from the rock to the air through a coded flame, and the \"+ CO₂\" counter ticks up (tag \"fossil carbon: extra CO₂\"). Bright at the end: the two loop tags (\"recent carbon: back to the air\", \"fossil carbon: extra CO₂\"), with the loops drawn beneath them. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "not-carbon-neutral",
+      "visualDecision": "new",
+      "visualReference": "the sugarcane loop stays; the fossil loop dims.",
+      "teachingReason": "But not automatically carbon neutral: That doesn't make bioethanol carbon neutral, though.",
+      "narrationCue": "energy / land",
+      "motionPurpose": "On the spoken cues: The production ledger draws: on \"energy\" small dark-brown energy-in arrows enter the green loop at three points labelled \"grow and harvest\", \"ferment\", \"distil\"; the green circle gains a small brown \"+ CO₂\" tick of its own (tag \"production energy: some net CO₂\"). A grey ghost chip \"carbon neutral?\" fades in and out (said positively), with the meaning \"carbon neutral: adds no net CO₂\" small beneath. On \"land\" a coded",
+      "motionRole": "explain",
+      "onScreenChange": "the sugarcane loop stays; the fossil loop dims. The production ledger draws: on \"energy\" small dark-brown energy-in arrows enter the green loop at three points labelled \"grow and harvest\", \"ferment\", \"distil\"; the green circle gains a small brown \"+ CO₂\" tick of its own (tag \"production energy: some net CO₂\"). A grey ghost chip \"carbon neutral?\" fades in and out (said positively), with the meaning \"carbon neutral: adds no net CO₂\" small beneath. On \"land\" a coded field outline with a small wheat-head icon chip \"land and water: food crops compete\" (coded line icon, no people). Bright at the end: the loop with its production arrows and the land chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "obtaining-hydrocarbons",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Obtaining hydrocarbons from the Earth: Petrol has costs before it's ever burned, because the hydrocarbons are taken from the Earth.",
+      "narrationCue": "economic / environmental / sociocultural",
+      "motionPurpose": "On the spoken cues: `m7-oil-gas-rig-v1.png` small at the top centre. The implications board draws three columns; each heading lights on its word and its lines write while spoken, earlier columns dimming: \"Economic: jobs, export income / energy security\"; \"Environmental: oil spills, habitat loss / possible water contamination (fracking, contested)\"; \"Sociocultural: community health and opposition / Aboriginal and Torres Strait Islander",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m7-oil-gas-rig-v1.png` small at the top centre. The implications board draws three columns; each heading lights on its word and its lines write while spoken, earlier columns dimming: \"Economic: jobs, export income / energy security\"; \"Environmental: oil spills, habitat loss / possible water contamination (fracking, contested)\"; \"Sociocultural: community health and opposition / Aboriginal and Torres Strait Islander land and sea Country\". When the Sociocultural column lights, the Economic and Environmental lines dim (their headings stay). A grey chip \"sociocultural: affecting communities and culture\" sits under the third heading and leaves when the pen arrow runs. On \"rather than on those burning the fuel\" a pen arrow runs from the rig to the Sociocultural column, tag \"costs fall near the site\". Bright at the end: the Sociocultural column and the tag (the other two headings stay, dimmed to grey). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "judge-fuel",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Judging the fuel: So which fuel?",
+      "narrationCue": "energy / renewable / compromise",
+      "motionPurpose": "On the spoken cues: The criteria card writes, ethanol and petrol columns, one row per phrase (the current row bright, earlier rows dim): \"energy per gram: 29.7 | 47.9 kJ g⁻¹\"; \"energy per litre: about 23 | about 34 MJ L⁻¹\"; \"carbon: recent (crops) | fossil\"; \"production: farming, fermenting, distilling | drilling, refining\"; \"land and people: crop land, water | extraction sites\". On \"energy\" the petrol energy cells tick. On \"renewable\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The criteria card writes, ethanol and petrol columns, one row per phrase (the current row bright, earlier rows dim): \"energy per gram: 29.7 | 47.9 kJ g⁻¹\"; \"energy per litre: about 23 | about 34 MJ L⁻¹\"; \"carbon: recent (crops) | fossil\"; \"production: farming, fermenting, distilling | drilling, refining\"; \"land and people: crop land, water | extraction sites\". On \"energy\" the petrol energy cells tick. On \"renewable\" the ethanol carbon cell ticks. A grey ghost chip \"renewable means better?\" fades in and out (said positively). On \"compromise\" the hook's E10 bar returns small, tag \"E10: some of each\". Bright at the end: the two tick rows and the E10 tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: Two lines to keep.",
+      "narrationCue": "C H two adds about six fifty / oxygen costs energy",
+      "motionPurpose": "On the spoken cues: Handwritten lines: \"Per mole: each CH₂ adds about 650 kJ.\" \"Per gram: oxygen costs energy.\" Under the first, the ladder thumbnail with its teal CH₂ glow; under the second, the ethanol and octane bars thumbnail. A small third chip writes on \"unless\": \"short of O₂ → CO and soot\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten lines: \"Per mole: each CH₂ adds about 650 kJ.\" \"Per gram: oxygen costs energy.\" Under the first, the ladder thumbnail with its teal CH₂ glow; under the second, the ethanol and octane bars thumbnail. A small third chip writes on \"unless\": \"short of O₂ → CO and soot\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Butan-one-ol is burned in a spirit",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Butan-1-ol is burned in a spirit burner beneath a metal can of water. (a) Write a balanced equation for the complete combustion of butan-1-ol. (b) After a few minutes, a black deposit forms on the base of the can. Explain how this deposit forms.\" No apparatus or structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no tally, no sooty plate, no memory aid.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "six / oxygen in the O H / incomplete",
+      "motionPurpose": "On the spoken cues: On \"six\" \"complete combustion of butan-1-ol\" is underlined and the strip builds: C₄H₉OH + 6O₂ → 4CO₂ + 5H₂O; the balance tally writes \"C 4 | 4, H 10 | 10, O 1 + 12 | 8 + 5\"; the strip stays bright as the answer. On \"oxygen in the O H\" a chip \"C₄H₉OH + 13/2 O₂ → 4CO₂ + 5H₂O\" fades in and is crossed (caption \"the OH already supplies one O\"). On \"incomplete\" \"black deposit\" is underlined,",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"six\" \"complete combustion of butan-1-ol\" is underlined and the strip builds: C₄H₉OH + 6O₂ → 4CO₂ + 5H₂O; the balance tally writes \"C 4 | 4, H 10 | 10, O 1 + 12 | 8 + 5\"; the strip stays bright as the answer. On \"oxygen in the O H\" a chip \"C₄H₉OH + 13/2 O₂ → 4CO₂ + 5H₂O\" fades in and is crossed (caption \"the OH already supplies one O\"). On \"incomplete\" \"black deposit\" is underlined, `m7-spirit-burner-calorimeter-sooty-v1.png` flashes small with its patch ringed, and an answer chip writes \"soot = C; too little O₂ for the fuel → incomplete combustion\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"The molar enthalpy of combustion of ethanol is −1367 kJ mol⁻¹ (M = 46.07 g mol⁻¹) and of octane is −5471 kJ mol⁻¹ (M = 114.2 g mol⁻¹).",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Ethanol's molar enthalpy of combustion is",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"The molar enthalpy of combustion of ethanol is −1367 kJ mol⁻¹ (M = 46.07 g mol⁻¹) and of octane is −5471 kJ mol⁻¹ (M = 114.2 g mol⁻¹). (a) Calculate the energy released per gram of each fuel. (b) Compare ethanol and octane as fuels, including one advantage of ethanol that is not related to energy.\" No bars or plates. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "bar fill",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "twenty nine point six seven / forty seven point nine one / per gram / renewable",
+      "motionPurpose": "On the spoken cues: On \"twenty nine point six seven\" \"−1367 kJ mol⁻¹\" and \"46.07 g mol⁻¹\" are underlined and \"1367 ÷ 46.07 = 29.67 kJ g⁻¹ (4 s.f.)\" writes; on \"forty seven point nine one\" \"−5471 kJ mol⁻¹\" and \"114.2 g mol⁻¹\" are underlined and \"5471 ÷ 114.2 = 47.91 kJ g⁻¹ (4 s.f.)\" writes; earlier line dims; answer chip \"octane: more energy per gram\". On \"per gram\" a chip \"octane: 4 × the energy per mole, so 4 × better\" fades in and is",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"twenty nine point six seven\" \"−1367 kJ mol⁻¹\" and \"46.07 g mol⁻¹\" are underlined and \"1367 ÷ 46.07 = 29.67 kJ g⁻¹ (4 s.f.)\" writes; on \"forty seven point nine one\" \"−5471 kJ mol⁻¹\" and \"114.2 g mol⁻¹\" are underlined and \"5471 ÷ 114.2 = 47.91 kJ g⁻¹ (4 s.f.)\" writes; earlier line dims; answer chip \"octane: more energy per gram\". On \"per gram\" a chip \"octane: 4 × the energy per mole, so 4 × better\" fades in and is crossed (caption \"compare per gram: octane molecules are heavier\"). On \"renewable\" \"one advantage of ethanol\" is underlined and the sugarcane loop thumbnail flashes small; answer chip \"ethanol: renewable crops; carbon recently from the air\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: So an alcohol's energy grows with its chain, its oxygen lowers the energy per gram, and choosing a fuel weighs energy against carbon and cost.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The ladder thumbnail, the per-gram bars and the two carbon loops sit small in a row, each lighting on its phrase. On \"Next\" `m7-spirit-burner-calorimeter-v1.png` appears small with the two-bar \"about 50%\" strip from scene 5, and a chip \"Next: measure and compare alcohol combustion enthalpy\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The ladder thumbnail, the per-gram bars and the two carbon loops sit small in a row, each lighting on its phrase. On \"Next\" `m7-spirit-burner-calorimeter-v1.png` appears small with the two-bar \"about 50%\" strip from scene 5, and a chip \"Next: measure and compare alcohol combustion enthalpy\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c07-learning-review.md",
+      "sha256": "182d63949296180b4ad223e89d33891c817c0ea746f6270718a6c954500d4c41"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c07-claude-science-check.md",
+      "sha256": "7301a82d33ebd7060cdd91f7ae5ab5bbc02ee0388a0bb343a5c22961e72caf57"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}
