@@ -35,6 +35,12 @@ export type StripRung = {
 	steps?: StripStep[];
 	/** Thin connectors and short arrows between chips (b07 scene 11). */
 	stepArrows?: boolean;
+	/**
+	 * A second column of chips beside `steps` (b08: the T cell branch). When present, the two columns share the rung
+	 * width, each under a small grey header (`stepsLabel`, default "B cells", and `branch.label`).
+	 */
+	branch?: {label: string; steps: StripStep[]; color?: 'teal' | 'amber'; headAt?: number};
+	stepsLabel?: string;
 };
 export type StripBracket = {from: number; to: number; at: number; label: string; lit?: number; labelAt?: number; pulse?: number};
 export type StripProps = {
@@ -48,7 +54,8 @@ export type StripProps = {
 export const STRIP = {x: 1430, y: 210, w: 380, rh: 108, gap: 36, stepH: 62, size: 30};
 
 export type Rect = {x: number; y: number; w: number; h: number};
-const rungHeight = (r: StripRung, rh: number, stepH: number) => (r.steps ? 58 + r.steps.length * stepH + 10 : rh);
+const BR_HEAD = 34;
+const rungHeight = (r: StripRung, rh: number, stepH: number) => (r.steps ? 58 + (r.branch ? BR_HEAD : 0) + Math.max(r.steps.length, r.branch?.steps.length ?? 0) * stepH + 10 : rh);
 /** Screen boxes of each rung (before the optional scale `s`, which callers apply with `stripPt`). */
 export const stripRects = (p: StripProps): Rect[] => {
 	const {x = STRIP.x, y = STRIP.y, w = STRIP.w, rh = STRIP.rh, gap = STRIP.gap, stepH = STRIP.stepH} = p;
@@ -65,11 +72,13 @@ export const stripPt = (p: StripProps, pt: [number, number]): [number, number] =
 	const s = p.s ?? 1, x = p.x ?? STRIP.x, y = p.y ?? STRIP.y;
 	return [x + (pt[0] - x) * s, y + (pt[1] - y) * s];
 };
-/** Box of step chip `k` inside rung `i`. */
-export const stepRect = (p: StripProps, i: number, k: number): Rect => {
+/** Box of step chip `k` inside rung `i` (`col` 1 is the branch column, when the rung has one). */
+export const stepRect = (p: StripProps, i: number, k: number, col: 0 | 1 = 0): Rect => {
 	const R = stripRects(p)[i];
 	const stepH = p.stepH ?? STRIP.stepH;
-	return {x: R.x + 16, y: R.y + 54 + k * stepH, w: R.w - 32, h: stepH - 12};
+	if (!p.rungs[i].branch) return {x: R.x + 16, y: R.y + 54 + k * stepH, w: R.w - 32, h: stepH - 12};
+	const cw = (R.w - 48) / 2;
+	return {x: R.x + 16 + col * (cw + 16), y: R.y + 54 + BR_HEAD + k * stepH, w: cw, h: stepH - 12};
 };
 
 const colOf = (c?: 'teal' | 'amber') => (c === 'amber' ? {ink: AMBER_INK, line: AMBER, soft: AMBER_SOFT} : {ink: TEAL, line: TEAL, soft: TEAL_SOFT});
@@ -140,21 +149,26 @@ export const ResponseStrip: React.FC<StripProps> = (props) => {
 								? <Label x={lx0} y={labelY} text={r.label} maxW={labelW} size={size} color={on ? c.ink : GREY_INK} at={r.labelAt ?? r.at ?? -100} anchor="start" />
 								: <Label x={B.x + B.w / 2} y={labelY} text={r.label} maxW={B.w - 36} size={size} color={on ? c.ink : GREY_INK} at={r.labelAt ?? r.at ?? -100} />
 						) : null}
-						{(r.steps ?? []).map((st, k) => {
-							const sp = prog(f, st.at, 12);
-							const sr = stepRect(props, i, k);
-							if (sp <= 0.01) return <rect key={'s' + k} x={sr.x} y={sr.y} width={sr.w} height={sr.h} rx={sr.h / 2} fill="none" stroke={GREYT} strokeWidth={2} strokeDasharray="8 8" opacity={0.6} />;
+						{r.branch ? [r.stepsLabel ?? 'B cells', r.branch.label].map((h, col) => {
+								const sr = stepRect(props, i, 0, col as 0 | 1);
+								return <Sx key={'h' + col} x={sr.x + sr.w / 2} y={sr.y - 12} text={h} size={size * 0.78} color={GREY_INK} hand weight={700} anchor="middle" at={col ? r.branch!.headAt ?? -100 : -100} />;
+							}) : null}
+							{[...(r.steps ?? []).map((st, k) => ({st, k, col: 0 as 0 | 1, c})), ...(r.branch?.steps ?? []).map((st, k) => ({st, k, col: 1 as 0 | 1, c: r.branch!.color ? colOf(r.branch!.color) : c}))].map(({st, k, col, c}) => {
+								const sp = prog(f, st.at, 12);
+								const sr = stepRect(props, i, k, col);
+							if (sp <= 0.01) return <rect key={'s' + col + k} x={sr.x} y={sr.y} width={sr.w} height={sr.h} rx={sr.h / 2} fill="none" stroke={GREYT} strokeWidth={2} strokeDasharray="8 8" opacity={0.6} />;
 							const sl = clamp01(st.lit ?? 0);
 							const son = sl > 0.5;
 							const tpp = st.thumb ? (st.thumbAt === undefined ? 1 : prog(f, st.thumbAt, 12)) : 0;
 							const tw0 = st.thumb ? fitW(st.thumb, sr.h * 1.4, sr.h - 8) : 0;
-							return (
-								<g key={'s' + k} opacity={sp}>
+							const fs = r.branch ? size * 0.8 : size * 0.9;
+								return (
+									<g key={'s' + col + k} opacity={sp}>
 									{k > 0 && r.stepArrows ? <path d={`M${sr.x + sr.w / 2},${sr.y - 12} L${sr.x + sr.w / 2},${sr.y - 2} M${sr.x + sr.w / 2 - 7},${sr.y - 8} L${sr.x + sr.w / 2},${sr.y - 1} L${sr.x + sr.w / 2 + 7},${sr.y - 8}`} fill="none" stroke={son ? c.line : GREYT} strokeWidth={3} strokeLinecap="round" /> : null}
 									<rect x={sr.x} y={sr.y} width={sr.w} height={sr.h} rx={sr.h / 2} fill={son ? '#fffaf0' : '#f7f6f2'} stroke={son ? c.line : GREYT} strokeWidth={son ? 3.5 : 2} />
 									{son ? <rect x={sr.x} y={sr.y} width={sr.w} height={sr.h} rx={sr.h / 2} fill={c.line} opacity={0.1 * sl} /> : null}
-									<Sx x={sr.x + 22} y={sr.y + sr.h / 2 + size * 0.32} text={`${k + 1}  ${st.label}`} size={size * 0.9} color={son ? c.ink : GREY_INK} hand weight={700} at={-100} />
-									{st.thumb && tpp > 0.01 ? <PlateB p={st.thumb} cx={sr.x + sr.w - 16 - tw0 / 2} cy={sr.y + sr.h / 2} w={tw0} o={tpp} id={`strip-st-${i}-${k}`} filter={son ? undefined : 'grayscale(0.7)'} /> : null}
+									<Sx x={sr.x + 22} y={sr.y + sr.h / 2 + size * 0.32} text={`${k + 1}  ${st.label}`} size={fs} color={son ? c.ink : GREY_INK} hand weight={700} at={-100} />
+									{st.thumb && tpp > 0.01 ? <PlateB p={st.thumb} cx={sr.x + sr.w - 16 - tw0 / 2} cy={sr.y + sr.h / 2} w={tw0} o={tpp} id={`strip-st-${i}-${col}-${k}`} filter={son ? undefined : 'grayscale(0.7)'} /> : null}
 								</g>
 							);
 						})}
