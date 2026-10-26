@@ -345,3 +345,9 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
   - Biology: B13 to B15, P01, P05, G01, G02, plus S06 and S08.
 - **Owner question still open:** should an Aboriginal cultural reviewer read bio-m7-b15 before publication?
 - **Disk:** about 15 GB free. Back up masters to Drive (`scripts/backup-masters.mjs`) and clear old preview folders after the next upload.
+
+## 27 October 2026
+
+- Owner passed all 20 waiting previews in chat ("all previews are cleared"): M6 chem P01, P07, G03, G04; skills S05; M7 chem C01, C02, C03, C04a, C04b, P01, G01; M7 bio B01 (v2), B02, B03, P02, B04, B05 (v2), B06, B07. Render queue started (one at a time, shared lock, 3 tries); log `out/explainer/render-queue-27oct.log`.
+- Brief 28x sent to Codex. Owner to answer yes to Part 2 (public caption track replacement), on Claude's advice.
+- Running: resolver bringing C07, P03, C08a, C08b, S07, chem G02, B08 to B12 and bio G03 to Revision 3; builder on chem M7 P02 and C05.
