@@ -369,22 +369,31 @@
     }
   },
   "voicedPreview": {
-    "status": "pending",
-    "reviewer": "",
-    "mode": "",
-    "inputSnapshotPath": "",
-    "evidence": null,
+    "status": "pass",
+    "reviewer": "Kyle (owner exact voiced preview), independent source reviewers, Codex root technical/UI checks",
+    "mode": "ui-playback",
+    "inputSnapshotPath": "out/checks/owner-release-2026-10-25/bio-m6-p01/preview-inputs.snapshot.json",
+    "evidence": {
+      "path": "out/checks/owner-release-2026-10-25/bio-m6-p01/preview-review.json",
+      "sha256": "bf931893b0d50a3983e41e94e8db1fc6bb442ab59c7cd5fca3ce7980e25e2db5"
+    },
     "studentLearningReview": {
-      "status": "pending",
-      "reviewer": "",
-      "evidence": null
+      "status": "pass",
+      "reviewer": "Kyle (exact voiced preview) with independent student-learning source recheck",
+      "evidence": {
+        "path": "out/checks/owner-release-2026-10-25/bio-m6-p01/preview-review.json",
+        "sha256": "bf931893b0d50a3983e41e94e8db1fc6bb442ab59c7cd5fca3ce7980e25e2db5"
+      }
     },
     "humanListening": {
-      "status": "pending",
-      "reviewer": "",
+      "status": "pass",
+      "reviewer": "Kyle, direct confirmation for all four exact previews on 25 October 2026",
       "mode": "human-listening",
-      "evidence": null
+      "evidence": {
+        "path": "docs/production/claude-pm/checks/owner-approval-2026-10-25.json",
+        "sha256": "66bfa75059b1311687c446e8b77eba2c6a77e105e2cc75f8c05d518c08cda426"
+      }
     }
   },
-  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+  "limitation": "Owner confirmed watching and listening to the exact preview-v1. Independent source, timing and media checks pass. Full export and exact-package review remain pending."
 }

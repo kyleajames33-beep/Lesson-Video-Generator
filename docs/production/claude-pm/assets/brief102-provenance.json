@@ -1,0 +1,280 @@
+{
+  "brief": 102,
+  "date": "2026-10-23",
+  "tool": "OpenAI built-in imagegen for shared base; deterministic Pillow, NumPy and OpenCV for retake and matte",
+  "generatedBase": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-711f1704-cc8b-4841-b06f-ac7923135da2.png",
+  "generatedBaseSize": [
+    1254,
+    1254
+  ],
+  "prompt": "Paint one healthy mature Australian Banksia shrub as a transparent botanical plate: a fixed woody trunk and branches, full green serrated foliage and upright orange flower spikes; centered with clear margins; scientific ink and watercolor; no ground, shadow, labels or people.",
+  "method": "One healthy source drawing. Dieback recolours green foliage and removes a small amount of upper foliage from the same pixels; trunk, branch layout and ground contact are fixed.",
+  "alphaIoU32": 0.980459728561568,
+  "qa": "Cream, checker and dark composites saved at native 100% and 300% edge zoom. Inspected pair overlay and representative edge crops for coloured fringe.",
+  "rematted": [
+    "public/assets/biology/m7-phytophthora-zoospores-v1.png",
+    "public/assets/biology/m7-root-tip-zoospores-v1.png",
+    "public/assets/biology/m7-root-cells-entry-v1.png",
+    "public/assets/biology/m7-root-cells-defended-v1.png",
+    "public/assets/biology/m7-banksia-seedling-healthy-v1.png",
+    "public/assets/biology/m7-banksia-seedling-contained-v1.png",
+    "public/assets/biology/m7-banksia-seedling-collapsed-v1.png",
+    "public/assets/biology/m7-banksia-coccinea-v1.png",
+    "public/assets/biology/m7-banksia-serrata-v1.png",
+    "public/assets/biology/m7-boot-cleaning-station-v1.png"
+  ],
+  "records": [
+    {
+      "path": "public/assets/biology/m7-banksia-healthy-v2.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        220,
+        256,
+        1780,
+        1744
+      ],
+      "clearMargins": [
+        0.11,
+        0.128,
+        0.11,
+        0.128
+      ],
+      "sha256": "7c35d347ce92c696986f15535893d9ca10083c6c763a41110ff7185291043e77"
+    },
+    {
+      "path": "public/assets/biology/m7-banksia-phytophthora-v3.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        220,
+        257,
+        1780,
+        1744
+      ],
+      "clearMargins": [
+        0.11,
+        0.1285,
+        0.11,
+        0.128
+      ],
+      "sha256": "a3023a5041f460c64f15966d84c7f09c44694a67b9200f2834a457e8b2f0f8a8"
+    },
+    {
+      "path": "public/assets/biology/m7-phytophthora-zoospores-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        203,
+        390,
+        1799,
+        1608
+      ],
+      "clearMargins": [
+        0.1015,
+        0.195,
+        0.1005,
+        0.196
+      ],
+      "sha256": "2f7a7e1b7a02bcea1744516ad090fae715be119fdf469a70535e3f4a912357fd"
+    },
+    {
+      "path": "public/assets/biology/m7-root-tip-zoospores-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        323,
+        201,
+        1676,
+        1798
+      ],
+      "clearMargins": [
+        0.1615,
+        0.1005,
+        0.162,
+        0.101
+      ],
+      "sha256": "3bc5005453ffe5eda5a185f0e5276fb7f0dd88adc17e13c518ace723b63d1c6c"
+    },
+    {
+      "path": "public/assets/biology/m7-root-cells-entry-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        201,
+        475,
+        1792,
+        1522
+      ],
+      "clearMargins": [
+        0.1005,
+        0.2375,
+        0.104,
+        0.239
+      ],
+      "sha256": "ae1c17726a7806c06b16e4d8f34694bfc38dbb8649927759802051fcfafbfde0"
+    },
+    {
+      "path": "public/assets/biology/m7-root-cells-defended-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        202,
+        476,
+        1798,
+        1524
+      ],
+      "clearMargins": [
+        0.101,
+        0.238,
+        0.101,
+        0.238
+      ],
+      "sha256": "686b6c46b47366e4fd0f68edd3553b779ba3235608d2ffdb4ca1cc5d9f0505ea"
+    },
+    {
+      "path": "public/assets/biology/m7-banksia-seedling-healthy-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        558,
+        204,
+        1441,
+        1797
+      ],
+      "clearMargins": [
+        0.279,
+        0.102,
+        0.2795,
+        0.1015
+      ],
+      "sha256": "22c0909dbd17c16f377d386547aac355658a9457851487eee83a86d7248be4cb"
+    },
+    {
+      "path": "public/assets/biology/m7-banksia-seedling-contained-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        557,
+        201,
+        1442,
+        1794
+      ],
+      "clearMargins": [
+        0.2785,
+        0.1005,
+        0.279,
+        0.103
+      ],
+      "sha256": "d33ec62167e90f5e06efaa39318e2f2f160a825b6cc1db341ced6b7c0f3f00c7"
+    },
+    {
+      "path": "public/assets/biology/m7-banksia-seedling-collapsed-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        565,
+        203,
+        1435,
+        1799
+      ],
+      "clearMargins": [
+        0.2825,
+        0.1015,
+        0.2825,
+        0.1005
+      ],
+      "sha256": "2167cf407ae58cfb9cf03b8c817461bf92e4fcfd0a57a89896ffc5a59cadc606"
+    },
+    {
+      "path": "public/assets/biology/m7-banksia-coccinea-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        202,
+        228,
+        1798,
+        1772
+      ],
+      "clearMargins": [
+        0.101,
+        0.114,
+        0.101,
+        0.114
+      ],
+      "sha256": "ccb35e04b6d43b9dd91ced84611b4c4587a2dcc1edbd52321f46355541ee105a"
+    },
+    {
+      "path": "public/assets/biology/m7-banksia-serrata-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        201,
+        216,
+        1799,
+        1784
+      ],
+      "clearMargins": [
+        0.1005,
+        0.108,
+        0.1005,
+        0.108
+      ],
+      "sha256": "4d1166b868b4ac767b1c8a872163eef601544b976dec04d3228899430ac92e20"
+    },
+    {
+      "path": "public/assets/biology/m7-boot-cleaning-station-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        201,
+        212,
+        1798,
+        1787
+      ],
+      "clearMargins": [
+        0.1005,
+        0.106,
+        0.101,
+        0.1065
+      ],
+      "sha256": "f91185efad6efb384be7dc381f9fbb9caa2c45f0dd501920923b5d4a88bed30e"
+    }
+  ]
+}

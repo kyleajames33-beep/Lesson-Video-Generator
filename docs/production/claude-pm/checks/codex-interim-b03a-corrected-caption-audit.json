@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "scope": "Local metadata, caption files and measured timing only. Live YouTube state and listening were not checked.",
+  "repairPath": "out/caption-repairs/earlier-b03a-2026-10-25-v2/manifest.json",
+  "input": "out/caption-repairs/earlier-b03a-2026-10-25-v2/repair-inputs.json",
+  "inputSha256": "e80caba8f5b809b706317107ff2f3725725837d7f7e14fcd4cab815b66414cbf",
+  "videoCount": 1,
+  "videosWithFindings": 0,
+  "findingCounts": {},
+  "videos": [
+    {
+      "lessonId": "bio-m5-b03a",
+      "videoId": "bUPs256KyVY",
+      "captionPath": "out/caption-repairs/earlier-b03a-2026-10-25-v2/bio-m5-b03a.srt",
+      "captionHash": "bc1f30ff9315db06aceb6aab5924a2eaaa390d79723adb116d92c50dbff7ac58",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b3a\\measured\\lesson.json",
+      "lessonHash": "68130604814d25b8b3fc14e38fcf6965c33866b82b0a29daff2a867b44a543f7",
+      "durationSeconds": 510.4,
+      "cueCount": 191,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The pregnancy test puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:17 From zygote to blastocyst",
+          "scene": "cleavage",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "2:24 Preparing the uterus",
+          "scene": "progesterone",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "3:27 Keeping progesterone flowing",
+          "scene": "hcg",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "4:38 The placenta",
+          "scene": "exchange",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "5:12 Practice questions",
+          "scene": "attempt",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "6:16 Working through the answers",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "8:05 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.2
+        }
+      ],
+      "findings": []
+    }
+  ]
+}

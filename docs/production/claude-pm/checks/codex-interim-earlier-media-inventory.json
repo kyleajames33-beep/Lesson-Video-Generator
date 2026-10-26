@@ -1,0 +1,3882 @@
+{
+  "auditDate": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "scope": "Checked local presence and byte counts for each named MP4, measured SRT, and measured lesson JSON. Captured SHA-256 for each upload JSON, SRT, and lesson JSON. MP4s were not rehashed; their recorded upload SHA-256 values are retained. For source alignment, compared measured lesson audio filenames with staged public-slim audio filenames when present.",
+  "selectionRule": "Include visibility Public when status is published or undefined. Exclude Deleted, superseded-deleted, private and non-public records.",
+  "waves": [
+    {
+      "wave": 1,
+      "uploadJson": {
+        "path": "docs/production/claude-pm/youtube/wave1-uploads.json",
+        "exists": true,
+        "bytes": 15465,
+        "sha256": "ce6dbc06f6656d8f01230ec5fc05840b25e11aea4cac0d7ef37d954017b4e2e5"
+      },
+      "uploadJsonSha256": "ce6dbc06f6656d8f01230ec5fc05840b25e11aea4cac0d7ef37d954017b4e2e5",
+      "recordCount": 3
+    },
+    {
+      "wave": 2,
+      "uploadJson": {
+        "path": "docs/production/claude-pm/youtube/wave2-uploads.json",
+        "exists": true,
+        "bytes": 11196,
+        "sha256": "6f92fc057ba076e83d0f613f6d1aa1320f562516fcb08f3e57a576ded97de679"
+      },
+      "uploadJsonSha256": "6f92fc057ba076e83d0f613f6d1aa1320f562516fcb08f3e57a576ded97de679",
+      "recordCount": 2
+    },
+    {
+      "wave": 3,
+      "uploadJson": {
+        "path": "docs/production/claude-pm/youtube/wave3-uploads.json",
+        "exists": true,
+        "bytes": 13075,
+        "sha256": "bbe18ab19accc90d8ec5116a04b68f1ba28b12f2c8ce3d939703363496962ac8"
+      },
+      "uploadJsonSha256": "bbe18ab19accc90d8ec5116a04b68f1ba28b12f2c8ce3d939703363496962ac8",
+      "recordCount": 2
+    },
+    {
+      "wave": 4,
+      "uploadJson": {
+        "path": "docs/production/claude-pm/youtube/wave4-uploads.json",
+        "exists": true,
+        "bytes": 210204,
+        "sha256": "fb2fadb562ad7988b121c126e740c02a52984e2c22a04d0de7ea1f57313f764a"
+      },
+      "uploadJsonSha256": "fb2fadb562ad7988b121c126e740c02a52984e2c22a04d0de7ea1f57313f764a",
+      "recordCount": 44
+    }
+  ],
+  "summary": {
+    "uploadRecordCount": 51,
+    "includedCurrentPublicRecords": 50,
+    "byWave": {
+      "1": 3,
+      "2": 2,
+      "3": 2,
+      "4": 43
+    },
+    "excludedRecords": 1,
+    "excludedDetails": [
+      {
+        "wave": 4,
+        "videoId": "zIYzqE5XbaU",
+        "status": "superseded-deleted",
+        "visibility": "Deleted",
+        "reason": "deleted_or_superseded"
+      }
+    ],
+    "missingMp4": [
+      {
+        "wave": 1,
+        "videoId": "zaC5iXuovKg",
+        "path": "out/explainer/Explainer-chem-m5-c01/Explainer-chem-m5-c01-v1.mp4",
+        "recordedSha256": "0afcbdedcc22b1fd221bc19ff2421592dd8ee9745828cd693df48ace34bf130a"
+      },
+      {
+        "wave": 1,
+        "videoId": "44FFfv7RGck",
+        "path": "out/explainer/Explainer-bio-m5-b01/Explainer-bio-m5-b01-v1.mp4",
+        "recordedSha256": "56bbbf143fb2781c6d5b9fdcb85fea54cd841ad2d1a95368f55a078cc78ea90d"
+      },
+      {
+        "wave": 1,
+        "videoId": "w7edKqGAUwA",
+        "path": "out/explainer/Explainer-bio-m5-mould/Explainer-bio-m5-mould-v1.mp4",
+        "recordedSha256": "ad81eeb1661a170cecff40e795453d3129ba26adba7aaaa627906db574f9cf4a"
+      },
+      {
+        "wave": 2,
+        "videoId": "vd9Ory9-flE",
+        "path": "out/explainer/Explainer-chem-m5-c02/Explainer-chem-m5-c02-v1.mp4",
+        "recordedSha256": "ebd806ee6419b8ee7eb9e3530b99f8aade9bf6a7db02c4675bdac5ca25dfacc7"
+      }
+    ],
+    "missingSrt": [],
+    "missingMeasuredLessonJson": [],
+    "srtRecordedHashAbsent": [
+      {
+        "wave": 1,
+        "videoId": "zaC5iXuovKg",
+        "path": "docs/production/claude-pm/lessons/c1/measured/captions.srt",
+        "observedSha256": "97a7eb56a5dbcf5a614d474d2a256c01a88ea411a82c9ef56304244e90b09309"
+      },
+      {
+        "wave": 1,
+        "videoId": "44FFfv7RGck",
+        "path": "docs/production/claude-pm/lessons/b1/measured/captions.srt",
+        "observedSha256": "44a2a50ae2425685b49c9d0a88acce1af32617222513137aa949e1419a788327"
+      },
+      {
+        "wave": 1,
+        "videoId": "w7edKqGAUwA",
+        "path": "docs/production/fungi-design-reset-2026-10-11/teaching-reset-take02/measured/captions.srt",
+        "observedSha256": "be6a02cbeb5e8516568e719b35da01217e71a2a3092e97805c8e22110df1b3dd"
+      },
+      {
+        "wave": 2,
+        "videoId": "vd9Ory9-flE",
+        "path": "docs/production/claude-pm/lessons/c2/measured/captions.srt",
+        "observedSha256": "b11aa3bffdda6b4e52cb28310a7d5fa145f1cf500dea607855bf1efad6951bbd"
+      },
+      {
+        "wave": 2,
+        "videoId": "0P33z4D2q0E",
+        "path": "docs/production/claude-pm/lessons/b2a/measured/captions.srt",
+        "observedSha256": "4bb818f95637a72a3d47ab37968ffde752b220ae8b1815014fab3d67e1f2c439"
+      }
+    ],
+    "srtHashMismatches": [],
+    "fixedCaptionFiles": [
+      {
+        "wave": 4,
+        "videoId": "cjoai9O2koA",
+        "path": "docs/production/claude-pm/lessons/p01/measured/captions-fixed.srt"
+      }
+    ],
+    "configSourceMismatch": [],
+    "missingConfig": [
+      {
+        "wave": 1,
+        "videoId": "w7edKqGAUwA",
+        "explainerConfig": "src/explainer/lessons/bio-m5-mould/config.ts"
+      }
+    ],
+    "sourceBundlesPresent": [
+      {
+        "wave": 4,
+        "videoId": "jDkHt4rf6bI",
+        "mp4": "out/explainer/Explainer-chem-m5-c04b/Explainer-chem-m5-c04b-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "IWS7_MDw-yc",
+        "mp4": "out/explainer/Explainer-chem-m5-c08/Explainer-chem-m5-c08-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 15,
+        "bundleAudioCount": 15,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "_NLAkMBNyRY",
+        "mp4": "out/explainer/Explainer-chem-m5-c06a/Explainer-chem-m5-c06a-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "9TxH_y3ZOdU",
+        "mp4": "out/explainer/Explainer-chem-m5-c09/Explainer-chem-m5-c09-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 15,
+        "bundleAudioCount": 15,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "Zs1oO5eCIqc",
+        "mp4": "out/explainer/Explainer-chem-m5-c06b/Explainer-chem-m5-c06b-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 19,
+        "bundleAudioCount": 19,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "2vsAqgI-1NI",
+        "mp4": "out/explainer/Explainer-bio-m5-b06a/Explainer-bio-m5-b06a-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 20,
+        "bundleAudioCount": 20,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "UPoHGWWm9MA",
+        "mp4": "out/explainer/Explainer-chem-m5-g03c/Explainer-chem-m5-g03c-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 11,
+        "bundleAudioCount": 11,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "wSSh97iXkio",
+        "mp4": "out/explainer/Explainer-chem-m5-g03d/Explainer-chem-m5-g03d-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 12,
+        "bundleAudioCount": 12,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "A0Z2-OLzRCI",
+        "mp4": "out/explainer/Explainer-chem-m5-g03b/Explainer-chem-m5-g03b-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 11,
+        "bundleAudioCount": 11,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "btrFMU7Yhxc",
+        "mp4": "out/explainer/Explainer-bio-m5-b03b/Explainer-bio-m5-b03b-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 18,
+        "bundleAudioCount": 18,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "8hZ3MVi7kHU",
+        "mp4": "out/explainer/Explainer-chem-m5-c07/Explainer-chem-m5-c07-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 14,
+        "bundleAudioCount": 14,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "6BhGJlXbKCA",
+        "mp4": "out/explainer/Explainer-bio-m5-b09/Explainer-bio-m5-b09-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 16,
+        "bundleAudioCount": 16,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "PQ9nuqM4b-Y",
+        "mp4": "out/explainer/Explainer-chem-m5-c11/Explainer-chem-m5-c11-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 19,
+        "bundleAudioCount": 19,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "QcSZ2Wn0CE0",
+        "mp4": "out/explainer/Explainer-bio-m5-g01/Explainer-bio-m5-g01-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 19,
+        "bundleAudioCount": 19,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "4IYt7nemcRI",
+        "mp4": "out/explainer/Explainer-chem-m5-c13/Explainer-chem-m5-c13-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 20,
+        "bundleAudioCount": 20,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "cY7hnSTN1uY",
+        "mp4": "out/explainer/Explainer-chem-m5-p03/Explainer-chem-m5-p03-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "UMgrHQaLSH8",
+        "mp4": "out/explainer/Explainer-chem-m5-c14/Explainer-chem-m5-c14-v2.mp4",
+        "version": "2",
+        "measuredAudioCount": 20,
+        "bundleAudioCount": 20,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "cjoai9O2koA",
+        "mp4": "out/explainer/Explainer-chem-m5-p01/Explainer-chem-m5-p01-v2.mp4",
+        "version": "2",
+        "measuredAudioCount": 18,
+        "bundleAudioCount": 18,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "0RH_T6hOwxY",
+        "mp4": "out/explainer/Explainer-bio-m5-b10/Explainer-bio-m5-b10-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "RHHPbj94tKQ",
+        "mp4": "out/explainer/Explainer-bio-m5-g02/Explainer-bio-m5-g02-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 19,
+        "bundleAudioCount": 19,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "ehOdeivCarY",
+        "mp4": "out/explainer/Explainer-bio-m5-b11/Explainer-bio-m5-b11-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "jpuYH0YccBc",
+        "mp4": "out/explainer/Explainer-bio-m5-p03/Explainer-bio-m5-p03-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 16,
+        "bundleAudioCount": 16,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "9qTbxRSOKY4",
+        "mp4": "out/explainer/Explainer-bio-m5-b12/Explainer-bio-m5-b12-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "n_2i_qz3tMs",
+        "mp4": "out/explainer/Explainer-bio-m5-b13/Explainer-bio-m5-b13-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 16,
+        "bundleAudioCount": 16,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "OtPe_zLuGGk",
+        "mp4": "out/explainer/Explainer-bio-m5-g03/Explainer-bio-m5-g03-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 15,
+        "bundleAudioCount": 15,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "kU1-fsCE7MA",
+        "mp4": "out/explainer/Explainer-bio-m5-p01/Explainer-bio-m5-p01-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "kRShwjUyPwI",
+        "mp4": "out/explainer/Explainer-bio-m5-p02/Explainer-bio-m5-p02-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "o0hwEiJjqrg",
+        "mp4": "out/explainer/Explainer-bio-m5-b06b/Explainer-bio-m5-b06b-v3.mp4",
+        "version": "3",
+        "measuredAudioCount": 19,
+        "bundleAudioCount": 19,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "VKZvh8-y7gI",
+        "mp4": "out/explainer/Explainer-bio-m5-b06c/Explainer-bio-m5-b06c-v3.mp4",
+        "version": "3",
+        "measuredAudioCount": 18,
+        "bundleAudioCount": 18,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "piCi2sSRDQU",
+        "mp4": "out/explainer/Explainer-bio-m5-b07/Explainer-bio-m5-b07-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 17,
+        "bundleAudioCount": 17,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "PL415_P6F6w",
+        "mp4": "out/explainer/Explainer-chem-m5-c10/Explainer-chem-m5-c10-v3.mp4",
+        "version": "3",
+        "measuredAudioCount": 15,
+        "bundleAudioCount": 15,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "KvzXxb7bAyo",
+        "mp4": "out/explainer/Explainer-chem-m5-c15/Explainer-chem-m5-c15-v2.mp4",
+        "version": "2",
+        "measuredAudioCount": 18,
+        "bundleAudioCount": 18,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "c1zYHVXYc74",
+        "mp4": "out/explainer/Explainer-chem-m5-p02/Explainer-chem-m5-p02-v6.mp4",
+        "version": "6",
+        "measuredAudioCount": 15,
+        "bundleAudioCount": 15,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "ikfUhS8eK3I",
+        "mp4": "out/explainer/Explainer-bio-m5-b05b/Explainer-bio-m5-b05b-v8.mp4",
+        "version": "8",
+        "measuredAudioCount": 20,
+        "bundleAudioCount": 20,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "QorDvCohIYY",
+        "mp4": "out/explainer/Explainer-bio-m5-b05a/Explainer-bio-m5-b05a-v8.mp4",
+        "version": "8",
+        "measuredAudioCount": 18,
+        "bundleAudioCount": 18,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "wave": 4,
+        "videoId": "QXGUtIoxkgc",
+        "mp4": "out/explainer/Explainer-bio-m5-b08/Explainer-bio-m5-b08-v1.mp4",
+        "version": "1",
+        "measuredAudioCount": 16,
+        "bundleAudioCount": 16,
+        "missing": [],
+        "extra": []
+      }
+    ],
+    "stagedAudioFilenameComparison": {
+      "bundlePresent": 36,
+      "filenameSetMatchesMeasuredLesson": 36,
+      "filenameSetDiffers": 0,
+      "bundleUnavailable": 14,
+      "details": "Comparison uses audio filenames only. A matching staged filename set is evidence of source alignment, not proof that a particular MP4 was rendered from that bundle."
+    },
+    "currentSourceAlignment": {
+      "measuredLessonExists": 50,
+      "configLessonMatchesCaptionLesson": 49,
+      "matchingConfigUnavailable": 1,
+      "captionHashMismatches": 0,
+      "captionHashAbsent": 5
+    }
+  },
+  "records": [
+    {
+      "wave": 1,
+      "videoId": "zaC5iXuovKg",
+      "lessonLabel": null,
+      "videoTitle": "Static and Dynamic Equilibrium: Equal Rates, Not Equal Amounts | Year 12 Chemistry",
+      "uploadStatus": null,
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c01/Explainer-chem-m5-c01-v1.mp4",
+        "version": "1",
+        "exists": false,
+        "bytes": null,
+        "recordedSha256": "0afcbdedcc22b1fd221bc19ff2421592dd8ee9745828cd693df48ace34bf130a",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c1/measured/captions.srt",
+        "exists": true,
+        "bytes": 10735,
+        "sha256": "97a7eb56a5dbcf5a614d474d2a256c01a88ea411a82c9ef56304244e90b09309",
+        "recordedSha256": null,
+        "recordedHashStatus": "absent",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c1\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 164913,
+        "sha256": "fb9618b492abb21c647273f92e0515bb6fd555a5649f5c3dbfe9acb3d9be68a7"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c01/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c1\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c1\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 164913,
+          "sha256": "fb9618b492abb21c647273f92e0515bb6fd555a5649f5c3dbfe9acb3d9be68a7"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 11,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 1,
+      "videoId": "44FFfv7RGck",
+      "lessonLabel": null,
+      "videoTitle": "Sexual and Asexual Reproduction: Continuity and Variation | Year 12 Biology",
+      "uploadStatus": null,
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b01/Explainer-bio-m5-b01-v1.mp4",
+        "version": "1",
+        "exists": false,
+        "bytes": null,
+        "recordedSha256": "56bbbf143fb2781c6d5b9fdcb85fea54cd841ad2d1a95368f55a078cc78ea90d",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b1/measured/captions.srt",
+        "exists": true,
+        "bytes": 11747,
+        "sha256": "44a2a50ae2425685b49c9d0a88acce1af32617222513137aa949e1419a788327",
+        "recordedSha256": null,
+        "recordedHashStatus": "absent",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b1\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 178469,
+        "sha256": "8dd6106d82a5b2fd5cfc7f0ea442c285b5b303595ce076532a652cc072f0a94f"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b01/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b1\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b1\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 178469,
+          "sha256": "8dd6106d82a5b2fd5cfc7f0ea442c285b5b303595ce076532a652cc072f0a94f"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 11,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 1,
+      "videoId": "w7edKqGAUwA",
+      "lessonLabel": null,
+      "videoTitle": "How Bread Mould Spreads: Spores and New Growth | Year 12 Biology",
+      "uploadStatus": null,
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-mould/Explainer-bio-m5-mould-v1.mp4",
+        "version": "1",
+        "exists": false,
+        "bytes": null,
+        "recordedSha256": "ad81eeb1661a170cecff40e795453d3129ba26adba7aaaa627906db574f9cf4a",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/fungi-design-reset-2026-10-11/teaching-reset-take02/measured/captions.srt",
+        "exists": true,
+        "bytes": 5319,
+        "sha256": "be6a02cbeb5e8516568e719b35da01217e71a2a3092e97805c8e22110df1b3dd",
+        "recordedSha256": null,
+        "recordedHashStatus": "absent",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\fungi-design-reset-2026-10-11\\teaching-reset-take02\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 93296,
+        "sha256": "92bcf4c4bcca756b386b753bbf676fd46b04bf46c7b7aea664a13e42410d00a9"
+      },
+      "explainerConfig": {
+        "path": null,
+        "exists": false,
+        "importPath": null,
+        "importedLessonJson": null,
+        "captionLessonMatchesConfigLesson": false
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 9,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 2,
+      "videoId": "vd9Ory9-flE",
+      "lessonLabel": null,
+      "videoTitle": "How Reversible Reactions Approach Equilibrium | Year 12 Chemistry",
+      "uploadStatus": null,
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c02/Explainer-chem-m5-c02-v1.mp4",
+        "version": "1",
+        "exists": false,
+        "bytes": null,
+        "recordedSha256": "ebd806ee6419b8ee7eb9e3530b99f8aade9bf6a7db02c4675bdac5ca25dfacc7",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c2/measured/captions.srt",
+        "exists": true,
+        "bytes": 13090,
+        "sha256": "b11aa3bffdda6b4e52cb28310a7d5fa145f1cf500dea607855bf1efad6951bbd",
+        "recordedSha256": null,
+        "recordedHashStatus": "absent",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c2\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 212881,
+        "sha256": "f04fbd85fce939bb2ad8169bced612c53d546448981fdd1b854b32718f4381f5"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c02/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c2\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c2\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 212881,
+          "sha256": "f04fbd85fce939bb2ad8169bced612c53d546448981fdd1b854b32718f4381f5"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 11,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 2,
+      "videoId": "0P33z4D2q0E",
+      "lessonLabel": null,
+      "videoTitle": "External and Internal Fertilisation: Why Egg Numbers Differ | Year 12 Biology",
+      "uploadStatus": null,
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b02a/Explainer-bio-m5-b02a-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 74173888,
+        "recordedSha256": "63b010ca2c1396d68cd457c83f477bb7decab45dc019dd75405aefc9424b12f9",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b2a/measured/captions.srt",
+        "exists": true,
+        "bytes": 15964,
+        "sha256": "4bb818f95637a72a3d47ab37968ffde752b220ae8b1815014fab3d67e1f2c439",
+        "recordedSha256": null,
+        "recordedHashStatus": "absent",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b2a\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 253139,
+        "sha256": "82b6778b5b2ad1388dd0fa50de827f852306a00b591f24f493971afeca7a6d43"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b02a/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b2a\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b2a\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 253139,
+          "sha256": "82b6778b5b2ad1388dd0fa50de827f852306a00b591f24f493971afeca7a6d43"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 14,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 3,
+      "videoId": "w0GzgApQhQY",
+      "lessonLabel": null,
+      "videoTitle": "Le Chatelier’s Principle: Concentration and Temperature | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c03/Explainer-chem-m5-c03-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 89757164,
+        "recordedSha256": "1e1fe4141271d42b0d9d738e89501fc023d2f6c0e1de28ab3d681f6beeecc344",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c3/measured/captions.srt",
+        "exists": true,
+        "bytes": 15431,
+        "sha256": "a9b6be733ef10b60094bd7fad7a4964a2104b3be1d86d8bf1ec6fc30a14c60c1",
+        "recordedSha256": "a9b6be733ef10b60094bd7fad7a4964a2104b3be1d86d8bf1ec6fc30a14c60c1",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c3\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 244987,
+        "sha256": "469abdc9ba9cd7cf4edf979dc38a6f03a7d20e1e5db71074f92410ec4958bcf6"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c03/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c3\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c3\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 244987,
+          "sha256": "469abdc9ba9cd7cf4edf979dc38a6f03a7d20e1e5db71074f92410ec4958bcf6"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 16,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 3,
+      "videoId": "kG-KexGgCzc",
+      "lessonLabel": null,
+      "videoTitle": "How Single-Celled Organisms Reproduce: Fission and Budding | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b02c/Explainer-bio-m5-b02c-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 69125523,
+        "recordedSha256": "331ce5481628be7a344301b66ce19cc218cec1c26b3f65d8f6a68951900e60b5",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b2c/measured/captions.srt",
+        "exists": true,
+        "bytes": 13646,
+        "sha256": "26357c993d9922c5d290716bd4fba99684b4640fa4e1e3a3c4d0b23ec0637063",
+        "recordedSha256": "26357c993d9922c5d290716bd4fba99684b4640fa4e1e3a3c4d0b23ec0637063",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b2c\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 212924,
+        "sha256": "35e4cc818978a2d3bb09535f04901811a295fc5659fbc0c2bb60f4ca526df9aa"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b02c/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b2c\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b2c\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 212924,
+          "sha256": "35e4cc818978a2d3bb09535f04901811a295fc5659fbc0c2bb60f4ca526df9aa"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 13,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "BdF_sRrt5Yw",
+      "lessonLabel": "chem-m5-g01",
+      "videoTitle": "Enthalpy, Entropy and Non-Equilibrium Reactions | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-g01/Explainer-chem-m5-g01-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 62711255,
+        "recordedSha256": "d310d648e92b43d0a0b5b37fc7bbbde66a4d5b8c242dd959949f356ae74a43ab",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/g01/measured/captions.srt",
+        "exists": true,
+        "bytes": 14477,
+        "sha256": "4a65363ac9cf81b952e00a4da26e4b85804a364e901b528931174c66a8cc5df0",
+        "recordedSha256": "4a65363ac9cf81b952e00a4da26e4b85804a364e901b528931174c66a8cc5df0",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\g01\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 234222,
+        "sha256": "8fbf5771d5450bec39e67cf9fc943726c0e0925d368e70d8a300752916f76b3d"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-g01/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\g01\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\g01\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 234222,
+          "sha256": "8fbf5771d5450bec39e67cf9fc943726c0e0925d368e70d8a300752916f76b3d"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 14,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "yk5KVdipGRE",
+      "lessonLabel": "chem-m5-c04a",
+      "videoTitle": "Squeezing a Gas Equilibrium: Predicting the Shift | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c04a/Explainer-chem-m5-c04a-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 64790557,
+        "recordedSha256": "e6a083d57116847be38419c3dead95aab71cbbf2bf88b0eb3c6626ab49d5d37b",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c4a/measured/captions.srt",
+        "exists": true,
+        "bytes": 14056,
+        "sha256": "fe31386056c49a011d0c0fc5a4172ed9477ac4af22178d229ba3fbd5d4dd4363",
+        "recordedSha256": "fe31386056c49a011d0c0fc5a4172ed9477ac4af22178d229ba3fbd5d4dd4363",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c4a\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 226629,
+        "sha256": "d1ab4eacdd458527f34a87e3aba93bff7e54ae0321f7ba823ed7a36749d9b87a"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c04a/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c4a\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c4a\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 226629,
+          "sha256": "d1ab4eacdd458527f34a87e3aba93bff7e54ae0321f7ba823ed7a36749d9b87a"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "j2fxl5xvDwE",
+      "lessonLabel": "bio-m5-b02b",
+      "videoTitle": "Flowering Plant Reproduction: Pollination to Seed | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b02b/Explainer-bio-m5-b02b-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 64628846,
+        "recordedSha256": "5a65e1a488764865873633203820cb46fac910edcadfbf57f3237a605a49cd77",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b2b/measured/captions.srt",
+        "exists": true,
+        "bytes": 14602,
+        "sha256": "d0cf3434937b513ded9f305c8998c00da5d8ce515060b5506956a9ab8f5d5e29",
+        "recordedSha256": "d0cf3434937b513ded9f305c8998c00da5d8ce515060b5506956a9ab8f5d5e29",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b2b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 232181,
+        "sha256": "6e22ed84d9597ed61c1cf57cce008b579c4b8e1d4009f20b0d1c0248f5a8d48f"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b02b/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b2b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b2b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 232181,
+          "sha256": "6e22ed84d9597ed61c1cf57cce008b579c4b8e1d4009f20b0d1c0248f5a8d48f"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 15,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "P9jyiLiGhZI",
+      "lessonLabel": "bio-m5-b04",
+      "videoTitle": "How DNA Is Copied: Base Pairing and Replication | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b04/Explainer-bio-m5-b04-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 69633477,
+        "recordedSha256": "0349049f16894a57d4c464d641fdbf6fad7e084da2625c539ee37f9029aa2e8a",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b4/measured/captions.srt",
+        "exists": true,
+        "bytes": 13942,
+        "sha256": "b2029e634e5b9f04235dba47fa9ed582c631844217d1b9d543aa884073f35725",
+        "recordedSha256": "b2029e634e5b9f04235dba47fa9ed582c631844217d1b9d543aa884073f35725",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b4\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 225654,
+        "sha256": "1c15e55ef1037ea1ab62a7028a8d700eed748e6b685b55cbddf72d6052f01292"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b04/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b4\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b4\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 225654,
+          "sha256": "1c15e55ef1037ea1ab62a7028a8d700eed748e6b685b55cbddf72d6052f01292"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 18,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "bUPs256KyVY",
+      "lessonLabel": "bio-m5-b03a",
+      "videoTitle": "Human Pregnancy: Fertilisation to Implantation | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b03a/Explainer-bio-m5-b03a-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 82971250,
+        "recordedSha256": "69f7f57120e758ba87d08c8adfcccf935f91ea77ffe250601f6ab86ea481bcd1",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b3a/measured/captions.srt",
+        "exists": true,
+        "bytes": 13122,
+        "sha256": "bf5ceea5bff480b0f56854b99ee57bce19aebab0639e349d1772c0b5bdbe5e99",
+        "recordedSha256": "bf5ceea5bff480b0f56854b99ee57bce19aebab0639e349d1772c0b5bdbe5e99",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b3a\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 204005,
+        "sha256": "68130604814d25b8b3fc14e38fcf6965c33866b82b0a29daff2a867b44a543f7"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b03a/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b3a\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b3a\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 204005,
+          "sha256": "68130604814d25b8b3fc14e38fcf6965c33866b82b0a29daff2a867b44a543f7"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 18,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "Mlz5XT5XR7o",
+      "lessonLabel": "bio-m5-b03a2",
+      "videoTitle": "Pregnancy Feedback and Labour: Hormone Loops | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b03a2/Explainer-bio-m5-b03a2-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 64353334,
+        "recordedSha256": "c07a01f3c143fcd084db3991be92c5119d201d65d948c277c92307e6547709a3",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b3a2/measured/captions.srt",
+        "exists": true,
+        "bytes": 13137,
+        "sha256": "5d22331b6baf33ffc73f4304a0a815ad39c9e15c9bd65b7affcfa9cdae81585f",
+        "recordedSha256": "5d22331b6baf33ffc73f4304a0a815ad39c9e15c9bd65b7affcfa9cdae81585f",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b3a2\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 206059,
+        "sha256": "167064dddb4462f6665c9b68d6929529e75eb2f4eaab43c2d4e3770eb9348d30"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b03a2/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b3a2\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b3a2\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 206059,
+          "sha256": "167064dddb4462f6665c9b68d6929529e75eb2f4eaab43c2d4e3770eb9348d30"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 18,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "NJjEgjilgAE",
+      "lessonLabel": "chem-m5-c05",
+      "videoTitle": "The Equilibrium Constant, K: Writing Expressions | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c05/Explainer-chem-m5-c05-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 43399916,
+        "recordedSha256": "33cd8900282ee65d584c94f03f89156053133858442aeb1d6c45d6dd2bef25f7",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c5/measured/captions.srt",
+        "exists": true,
+        "bytes": 10543,
+        "sha256": "af39acd0921d9047b14cae6b61d02fbe92c0d4691abdc871b1e6e403e28f605c",
+        "recordedSha256": "af39acd0921d9047b14cae6b61d02fbe92c0d4691abdc871b1e6e403e28f605c",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c5\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 168862,
+        "sha256": "02b025d21489247b12d79edd88f20ec530ff8cc91c8ef54b5f89edf4bb16ec92"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c05/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c5\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c5\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 168862,
+          "sha256": "02b025d21489247b12d79edd88f20ec530ff8cc91c8ef54b5f89edf4bb16ec92"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": false,
+        "measuredLessonAudioFileCount": 12,
+        "publicSlimAudioFileCount": 0,
+        "measuredAudioMissingFromPublicSlim": null,
+        "publicSlimAudioNotInMeasuredLesson": null,
+        "interpretation": "No staged source bundle is available locally to tie the named MP4 to this current lesson snapshot."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "jDkHt4rf6bI",
+      "lessonLabel": "chem-m5-c04b",
+      "videoTitle": "Catalysts and Equilibrium: Same Mixture, Sooner | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c04b/Explainer-chem-m5-c04b-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 61175211,
+        "recordedSha256": "c80e15b9768afb39455b76b04b644285af9a6e4902b984d816353188184cb600",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c4b/measured/captions.srt",
+        "exists": true,
+        "bytes": 13447,
+        "sha256": "5d8ad171af3f1102d0a1c18a2c2325ccbbbe949a05d19f5a71782b5aadb970d4",
+        "recordedSha256": "5d8ad171af3f1102d0a1c18a2c2325ccbbbe949a05d19f5a71782b5aadb970d4",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c4b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 213735,
+        "sha256": "c7849f41ebe2495641e532f83ef74b5bdd3165119ef4d4006dc9fd8d25da6f21"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c04b/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c4b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c4b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 213735,
+          "sha256": "c7849f41ebe2495641e532f83ef74b5bdd3165119ef4d4006dc9fd8d25da6f21"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "IWS7_MDw-yc",
+      "lessonLabel": "chem-m5-c08",
+      "videoTitle": "Reaction Quotient Q: Predicting the Direction | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c08/Explainer-chem-m5-c08-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 68400418,
+        "recordedSha256": "c490926d0324bfab6630d8ee58ec868c6316513c2caf18c12ede27b9bc770a7c",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c8/measured/captions.srt",
+        "exists": true,
+        "bytes": 11212,
+        "sha256": "e05a1bb74261f2fd6c75270237b2a19808ed20d795a880afdd0d650a5310ba5d",
+        "recordedSha256": "e05a1bb74261f2fd6c75270237b2a19808ed20d795a880afdd0d650a5310ba5d",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c8\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 177138,
+        "sha256": "00982cb98125122e213bdea7fcc2e7ba3541a2fe6c129d925fcb1008fd371756"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c08/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c8\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c8\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 177138,
+          "sha256": "00982cb98125122e213bdea7fcc2e7ba3541a2fe6c129d925fcb1008fd371756"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 15,
+        "publicSlimAudioFileCount": 15,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "_NLAkMBNyRY",
+      "lessonLabel": "chem-m5-c06a",
+      "videoTitle": "Calculating K: the Three Question Types and ICE Tables | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c06a/Explainer-chem-m5-c06a-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 66957810,
+        "recordedSha256": "286a6b1fbf72e85b671ceea612b03a4f1e848fbe11ce167dfe73a079531ff1ab",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c6a/measured/captions.srt",
+        "exists": true,
+        "bytes": 12206,
+        "sha256": "4ead6b2ef7c57c1818186933ceb66a903cdfb9e9e6840aa16c78f4fdad0c5c47",
+        "recordedSha256": "4ead6b2ef7c57c1818186933ceb66a903cdfb9e9e6840aa16c78f4fdad0c5c47",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c6a\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 200099,
+        "sha256": "71ddb57be43bbd13b442dc7e1fe80950f03c6719432b43913e6c3308dc81ec04"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c06a/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c6a\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c6a\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 200099,
+          "sha256": "71ddb57be43bbd13b442dc7e1fe80950f03c6719432b43913e6c3308dc81ec04"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "9TxH_y3ZOdU",
+      "lessonLabel": "chem-m5-c09",
+      "videoTitle": "Temperature and the Equilibrium Constant: How Does Heat Change K? | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c09/Explainer-chem-m5-c09-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 57340820,
+        "recordedSha256": "08ae49b72958f1d1a512938fc10ce3df969ee6ca1ad058af1bf6201d842e23a6",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c9/measured/captions.srt",
+        "exists": true,
+        "bytes": 12788,
+        "sha256": "523ef063fff9fcc368e25c48e964fb9723b38866d7748e918cf8a22abb15ef97",
+        "recordedSha256": "523ef063fff9fcc368e25c48e964fb9723b38866d7748e918cf8a22abb15ef97",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c9\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 206722,
+        "sha256": "5d4610967b29473cbd953c94b8c341efb993571bc42dba2ef0a45e1e206e263d"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c09/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c9\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c9\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 206722,
+          "sha256": "5d4610967b29473cbd953c94b8c341efb993571bc42dba2ef0a45e1e206e263d"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 15,
+        "publicSlimAudioFileCount": 15,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "Zs1oO5eCIqc",
+      "lessonLabel": "chem-m5-c06b",
+      "videoTitle": "Finding Equilibrium Concentrations from K (No Quadratic Needed) | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c06b/Explainer-chem-m5-c06b-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 66357535,
+        "recordedSha256": "a46f0addba619c1d5d0b59cee91d79c287c5a8045c40320a7a53b4e43f685f3a",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c6b/measured/captions.srt",
+        "exists": true,
+        "bytes": 13941,
+        "sha256": "d8ab58af9622e590430c5fb582b0e3876fda2d9f1892428ad9e835d3ff8b1061",
+        "recordedSha256": "d8ab58af9622e590430c5fb582b0e3876fda2d9f1892428ad9e835d3ff8b1061",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c6b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 234090,
+        "sha256": "c1abb85695c5b6e55238de6ca06dcaeb52a8b2dddc7fb2178c090f3603a7a576"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c06b/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c6b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c6b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 234090,
+          "sha256": "c1abb85695c5b6e55238de6ca06dcaeb52a8b2dddc7fb2178c090f3603a7a576"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 19,
+        "publicSlimAudioFileCount": 19,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "2vsAqgI-1NI",
+      "lessonLabel": "bio-m5-b06a",
+      "videoTitle": "How DNA Is Stored in Prokaryotes and Eukaryotes | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b06a/Explainer-bio-m5-b06a-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 73705302,
+        "recordedSha256": "37fabb2c2187401eddc9a4de4c63e47c0abdfac8d88821c97cabe93182329650",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b6a/measured/captions.srt",
+        "exists": true,
+        "bytes": 13824,
+        "sha256": "5ea44cf34c69f849c4f403747fdcdb5fcc3e767f6ca6497c384ce6390459aab0",
+        "recordedSha256": "5ea44cf34c69f849c4f403747fdcdb5fcc3e767f6ca6497c384ce6390459aab0",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b6a\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 220117,
+        "sha256": "1351d8f4e86c7b5f819cc6be74027b3d020644e8aaa6b51eaa25e4913eadf716"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b06a/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b6a\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b6a\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 220117,
+          "sha256": "1351d8f4e86c7b5f819cc6be74027b3d020644e8aaa6b51eaa25e4913eadf716"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 20,
+        "publicSlimAudioFileCount": 20,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "UPoHGWWm9MA",
+      "lessonLabel": "chem-m5-g03c",
+      "videoTitle": "Hard HSC Equilibrium Calculation Practice, Part 1 | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-g03c/Explainer-chem-m5-g03c-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 45975652,
+        "recordedSha256": "ccf85a4d945d59a199397c0e12a871b22526920e854bd7c03e1df27e9448e8ef",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/g03c/measured/captions.srt",
+        "exists": true,
+        "bytes": 7974,
+        "sha256": "d7108eca4340381bfbfd2c71cdc307b2821d51d5b0b2957bf25cf6cf6f381dff",
+        "recordedSha256": "d7108eca4340381bfbfd2c71cdc307b2821d51d5b0b2957bf25cf6cf6f381dff",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\g03c\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 125174,
+        "sha256": "03d0c157cae864a0e04131772ecbb66a8ab409adfada60616586a677b18a21ce"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-g03c/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\g03c\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\g03c\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 125174,
+          "sha256": "03d0c157cae864a0e04131772ecbb66a8ab409adfada60616586a677b18a21ce"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 11,
+        "publicSlimAudioFileCount": 11,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "wSSh97iXkio",
+      "lessonLabel": "chem-m5-g03d",
+      "videoTitle": "Hard HSC Equilibrium Calculation Practice, Part 2 | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-g03d/Explainer-chem-m5-g03d-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 52320444,
+        "recordedSha256": "54c976604e33a64941a34f779dd12de85b09b5683e86cef3a4f6299eecaaffbe",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/g03d/measured/captions.srt",
+        "exists": true,
+        "bytes": 9755,
+        "sha256": "3166c5b81dd1e0b881fcacf29b063d86cc0b5a8f4d115f8d793993fba9cee8f9",
+        "recordedSha256": "3166c5b81dd1e0b881fcacf29b063d86cc0b5a8f4d115f8d793993fba9cee8f9",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\g03d\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 161441,
+        "sha256": "dc6230a21258810edf04170d8e5d63fb9053e76323cbb10599af4affcb3d717d"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-g03d/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\g03d\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\g03d\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 161441,
+          "sha256": "dc6230a21258810edf04170d8e5d63fb9053e76323cbb10599af4affcb3d717d"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 12,
+        "publicSlimAudioFileCount": 12,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "A0Z2-OLzRCI",
+      "lessonLabel": "chem-m5-g03b",
+      "videoTitle": "All 5 Types of HSC Equilibrium Calculation | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-g03b/Explainer-chem-m5-g03b-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 37518313,
+        "recordedSha256": "0c78fd14cebfff85e8d782538da37f2f00b05626499b8b4620723418a8000493",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/g03b/measured/captions.srt",
+        "exists": true,
+        "bytes": 7733,
+        "sha256": "8958874ae8fc0307353f4f5a6073045f0ea17d663ebd54fb30dfcd9e74afba4b",
+        "recordedSha256": "8958874ae8fc0307353f4f5a6073045f0ea17d663ebd54fb30dfcd9e74afba4b",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\g03b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 126264,
+        "sha256": "44a93f183425ba6c0db33da3be850e1113007fa8beda621d66422f1297fbcb4a"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-g03b/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\g03b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\g03b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 126264,
+          "sha256": "44a93f183425ba6c0db33da3be850e1113007fa8beda621d66422f1297fbcb4a"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 11,
+        "publicSlimAudioFileCount": 11,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "btrFMU7Yhxc",
+      "lessonLabel": "bio-m5-b03b",
+      "videoTitle": "Breeding Animals and Crops: Methods and Costs | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b03b/Explainer-bio-m5-b03b-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 61904986,
+        "recordedSha256": "9a5cff47868eea23313bc717e5f994aef24fe4565af18e59acf18a2c7450f86e",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b3b/measured/captions.srt",
+        "exists": true,
+        "bytes": 13798,
+        "sha256": "8d43e81cf79eaec4fa108e0ce4bb42157577a553b444a2e599171576f6be2529",
+        "recordedSha256": "8d43e81cf79eaec4fa108e0ce4bb42157577a553b444a2e599171576f6be2529",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b3b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 224608,
+        "sha256": "bfac559244b3cbe20dd173644674054a693a9594c930433418f998f084a34ca5"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b03b/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b3b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b3b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 224608,
+          "sha256": "bfac559244b3cbe20dd173644674054a693a9594c930433418f998f084a34ca5"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 18,
+        "publicSlimAudioFileCount": 18,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "8hZ3MVi7kHU",
+      "lessonLabel": "chem-m5-c07",
+      "videoTitle": "Industrial Equilibrium: Why Factories Compromise | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c07/Explainer-chem-m5-c07-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 47781605,
+        "recordedSha256": "62fd1798a0ac39424a1a04da29a3415bbac639381d003b759dc1e0d5ab68125d",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c7/measured/captions.srt",
+        "exists": true,
+        "bytes": 11904,
+        "sha256": "7299b3a32e0ed63994a72c93228f603605b8b9d8595f3dab8b7348609a06c63b",
+        "recordedSha256": "7299b3a32e0ed63994a72c93228f603605b8b9d8595f3dab8b7348609a06c63b",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c7\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 187997,
+        "sha256": "d2f12d46eb181f76b63adb288703f483348c43cc931ab8c9070237b30b7a92a4"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c07/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c7\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c7\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 187997,
+          "sha256": "d2f12d46eb181f76b63adb288703f483348c43cc931ab8c9070237b30b7a92a4"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 14,
+        "publicSlimAudioFileCount": 14,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "6BhGJlXbKCA",
+      "lessonLabel": "bio-m5-b09",
+      "videoTitle": "Punnett Squares and Pedigrees | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b09/Explainer-bio-m5-b09-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 44700469,
+        "recordedSha256": "0643970bf00b16b7df8bfcf6f025815bf14a39ad46c9dc335bdbeea862d554ec",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b9/measured/captions.srt",
+        "exists": true,
+        "bytes": 12232,
+        "sha256": "8c6308c0844399aaa4dcccff6b2f449cf3a4a162ca9033b5cb533431500bb3a0",
+        "recordedSha256": "8c6308c0844399aaa4dcccff6b2f449cf3a4a162ca9033b5cb533431500bb3a0",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b9\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 189717,
+        "sha256": "79ea6fc27478b05d21bb00addac4818501f0ff241dda2f467b3dec8bd5a4e638"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b09/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b9\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b9\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 189717,
+          "sha256": "79ea6fc27478b05d21bb00addac4818501f0ff241dda2f467b3dec8bd5a4e638"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 16,
+        "publicSlimAudioFileCount": 16,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "PQ9nuqM4b-Y",
+      "lessonLabel": "chem-m5-c11",
+      "videoTitle": "How Ionic Compounds Dissolve in Water | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c11/Explainer-chem-m5-c11-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 61807188,
+        "recordedSha256": "143323f444e91122b0bc079bab3caac050c68f254b1588583c2c8053c4eaf967",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c11/measured/captions.srt",
+        "exists": true,
+        "bytes": 13324,
+        "sha256": "0ad804befa33e26e5cbf286b7f71c99a7bcc5745db9849a4252c9d771ade47bb",
+        "recordedSha256": "0ad804befa33e26e5cbf286b7f71c99a7bcc5745db9849a4252c9d771ade47bb",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c11\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 204871,
+        "sha256": "57e2996c8a215ca7dba26403789cdc7ecc85c614d829a397d9df13b58f9cf706"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c11/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c11\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c11\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 204871,
+          "sha256": "57e2996c8a215ca7dba26403789cdc7ecc85c614d829a397d9df13b58f9cf706"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 19,
+        "publicSlimAudioFileCount": 19,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "QcSZ2Wn0CE0",
+      "lessonLabel": "bio-m5-g01",
+      "videoTitle": "Trace a DNA Sequence or a Meiosis Cell: HSC-Style Practice | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-g01/Explainer-bio-m5-g01-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 69131979,
+        "recordedSha256": "7ba136cc2e969d5280047dceb8488164df9438e4db3f808ec003ec54eba14224",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/g01b/measured/captions.srt",
+        "exists": true,
+        "bytes": 11854,
+        "sha256": "1000d2b6d97e4ce73d4a4e546180e66a070c54938fa88315be8b8fff8c700ebe",
+        "recordedSha256": "1000d2b6d97e4ce73d4a4e546180e66a070c54938fa88315be8b8fff8c700ebe",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\g01b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 186950,
+        "sha256": "6b227e658ac370c73b70fd6e251d05d60022dea06562d9a8c2042f814434f84e"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-g01/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\g01b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\g01b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 186950,
+          "sha256": "6b227e658ac370c73b70fd6e251d05d60022dea06562d9a8c2042f814434f84e"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 19,
+        "publicSlimAudioFileCount": 19,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "4IYt7nemcRI",
+      "lessonLabel": "chem-m5-c13",
+      "videoTitle": "Solubility Rules and Net Ionic Equations | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c13/Explainer-chem-m5-c13-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 64325711,
+        "recordedSha256": "cc716f75b476b948fb39da4ce9a605943d91b7e40d817a35e9d184a5ab9cdaef",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c13/measured/captions.srt",
+        "exists": true,
+        "bytes": 13125,
+        "sha256": "3f249fb4589d5113e488f0cafc57b89ee4d79ed0a7849cd146f45edab037c6f8",
+        "recordedSha256": "3f249fb4589d5113e488f0cafc57b89ee4d79ed0a7849cd146f45edab037c6f8",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c13\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 200695,
+        "sha256": "0dbc3a09f93ee403a617bd012726e65a33580ea7299c66110a8f228ad5bae2ea"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c13/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c13\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c13\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 200695,
+          "sha256": "0dbc3a09f93ee403a617bd012726e65a33580ea7299c66110a8f228ad5bae2ea"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 20,
+        "publicSlimAudioFileCount": 20,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "cY7hnSTN1uY",
+      "lessonLabel": "chem-m5-p03",
+      "videoTitle": "Investigating Solubility Rules with a Well Plate | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-p03/Explainer-chem-m5-p03-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 53393873,
+        "recordedSha256": "31f66463d841d0fd54bfa19c57cd09be63ade72c1229ffac385dc972ed66df84",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/p03/measured/captions.srt",
+        "exists": true,
+        "bytes": 12703,
+        "sha256": "a171123487720baa3e543bbfa9d9ed7bd3fef566732cc1246ec2be1cfb6ce218",
+        "recordedSha256": "a171123487720baa3e543bbfa9d9ed7bd3fef566732cc1246ec2be1cfb6ce218",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\p03\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 199907,
+        "sha256": "6b663727d8d966412171d554f8722905d2a36be14e774085df2d78b953a9dc87"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-p03/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\p03\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\p03\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 199907,
+          "sha256": "6b663727d8d966412171d554f8722905d2a36be14e774085df2d78b953a9dc87"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "UMgrHQaLSH8",
+      "lessonLabel": "chem-m5-c14",
+      "videoTitle": "Ksp and Molar Solubility | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c14/Explainer-chem-m5-c14-v2.mp4",
+        "version": "2",
+        "exists": true,
+        "bytes": 56383674,
+        "recordedSha256": "d4fcbb368571a2e579ed9ee9c8762c0e7faea193bd018dc496d6fccc9d5129a0",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c14/measured/captions.srt",
+        "exists": true,
+        "bytes": 12145,
+        "sha256": "c0b34af13ae54a41014ae632e32701d819224beff98009c9b44dd27656522c24",
+        "recordedSha256": "c0b34af13ae54a41014ae632e32701d819224beff98009c9b44dd27656522c24",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c14\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 197378,
+        "sha256": "249eb57428a0e675dc482169326902e17d6c650b906e654c182af734d39948d0"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c14/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c14\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c14\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 197378,
+          "sha256": "249eb57428a0e675dc482169326902e17d6c650b906e654c182af734d39948d0"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 20,
+        "publicSlimAudioFileCount": 20,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "cjoai9O2koA",
+      "lessonLabel": "chem-m5-p01",
+      "videoTitle": "Reversibility and Equilibrium Practicals: Evidence You Can Trust | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-p01/Explainer-chem-m5-p01-v2.mp4",
+        "version": "2",
+        "exists": true,
+        "bytes": 50017833,
+        "recordedSha256": "f52d475a9bd4f26a1022014e70c7cbf7e2de71d859b77db44195f6b48d5c6f70",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/p01/measured/captions-fixed.srt",
+        "exists": true,
+        "bytes": 13692,
+        "sha256": "294a13ed0ceaff6cc08baf40e6ef70c0ebfba62cb170b9f392fbffe1860480da",
+        "recordedSha256": "294a13ed0ceaff6cc08baf40e6ef70c0ebfba62cb170b9f392fbffe1860480da",
+        "recordedHashStatus": "matches",
+        "specialFilename": true
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\p01\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 201073,
+        "sha256": "5b71bd32457660a473d631806e932a937fca98b2d3d09aba6bd85222f6686599"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-p01/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\p01\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\p01\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 201073,
+          "sha256": "5b71bd32457660a473d631806e932a937fca98b2d3d09aba6bd85222f6686599"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 18,
+        "publicSlimAudioFileCount": 18,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "0RH_T6hOwxY",
+      "lessonLabel": "bio-m5-b10",
+      "videoTitle": "Sex Linkage, Co-dominance and Multiple Alleles | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b10/Explainer-bio-m5-b10-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 44672893,
+        "recordedSha256": "8b42d662a95edf3efdf3ae0c2cbd3febac736e6a2e94f3aaf209ccdf8c22ab46",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b10/measured/captions.srt",
+        "exists": true,
+        "bytes": 12387,
+        "sha256": "f345dbeef1347d4f05c19847c895573198d40d3edfad2aed20a57abe2f25c127",
+        "recordedSha256": "f345dbeef1347d4f05c19847c895573198d40d3edfad2aed20a57abe2f25c127",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b10\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 198340,
+        "sha256": "2f01fc3f0eacbf81f2f50665fe5af55714e4a088316cf56358b5afc8e2ad7b5a"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b10/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b10\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b10\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 198340,
+          "sha256": "2f01fc3f0eacbf81f2f50665fe5af55714e4a088316cf56358b5afc8e2ad7b5a"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "RHHPbj94tKQ",
+      "lessonLabel": "bio-m5-g02",
+      "videoTitle": "Inheritance Probability: Unfamiliar Crosses and Pedigrees | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-g02/Explainer-bio-m5-g02-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 55552217,
+        "recordedSha256": "ecccff79bf073df03db0db0c27aaccc64884383546e554c6e4dc27022eeda1b5",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/g02b/measured/captions.srt",
+        "exists": true,
+        "bytes": 11599,
+        "sha256": "a790a218f2217a8ef09fa80c87fbd65ec516720816fcf233c61daf3686283791",
+        "recordedSha256": "a790a218f2217a8ef09fa80c87fbd65ec516720816fcf233c61daf3686283791",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\g02b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 181051,
+        "sha256": "b0541106b1c553e166764b430e8e4837fc21521bbe5039519b4f0bae93950e50"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-g02/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\g02b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\g02b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 181051,
+          "sha256": "b0541106b1c553e166764b430e8e4837fc21521bbe5039519b4f0bae93950e50"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 19,
+        "publicSlimAudioFileCount": 19,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "ehOdeivCarY",
+      "lessonLabel": "bio-m5-b11",
+      "videoTitle": "Population Frequencies and SNP Evidence | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b11/Explainer-bio-m5-b11-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 51943124,
+        "recordedSha256": "2017a167e7f38373521d9d18a4ad4f5e72f32f99ec62678db65c48bb12194b40",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b11/measured/captions.srt",
+        "exists": true,
+        "bytes": 12439,
+        "sha256": "3b7583a23ff737a713e929f8319d39e8fe20bde07d3f09897d8add9f7f1c66e8",
+        "recordedSha256": "3b7583a23ff737a713e929f8319d39e8fe20bde07d3f09897d8add9f7f1c66e8",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b11\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 193362,
+        "sha256": "96caf62d0d9686c604404c8be83e2ec5017dcfc67ee81ba6a5c36e771ec6eee9"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b11/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b11\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b11\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 193362,
+          "sha256": "96caf62d0d9686c604404c8be83e2ec5017dcfc67ee81ba6a5c36e771ec6eee9"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "jpuYH0YccBc",
+      "lessonLabel": "bio-m5-p03",
+      "videoTitle": "Collect and Present Population Frequency Data | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-p03/Explainer-bio-m5-p03-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 39336749,
+        "recordedSha256": "37f1db7596d9069ea2675716f4ffd8a3e40306c6db66f54f6bc6f364beb74660",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/bp03/measured/captions.srt",
+        "exists": true,
+        "bytes": 11223,
+        "sha256": "9dd2c4d272facc632e9f151405ec1b96509de82b1e34dfdb78a1d8fa29fd41e2",
+        "recordedSha256": "9dd2c4d272facc632e9f151405ec1b96509de82b1e34dfdb78a1d8fa29fd41e2",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\bp03\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 172466,
+        "sha256": "c5d78548208c63e018b74d3d613bb070d871e70bc9004dd585f6ef8f14a10f9b"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-p03/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\bp03\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\bp03\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 172466,
+          "sha256": "c5d78548208c63e018b74d3d613bb070d871e70bc9004dd585f6ef8f14a10f9b"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 16,
+        "publicSlimAudioFileCount": 16,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "9qTbxRSOKY4",
+      "lessonLabel": "bio-m5-b12",
+      "videoTitle": "DNA Sequencing and Profiling for Inheritance Studies | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b12/Explainer-bio-m5-b12-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 43988303,
+        "recordedSha256": "4016f74a5e4546abb40975c19c1ebfd165c190eb95b9bedf086e1d78ef0c9b60",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b12/measured/captions.srt",
+        "exists": true,
+        "bytes": 11703,
+        "sha256": "962c2f21a128b0d5fe3ce0998df486285815bab7563a9450bd067cfc545f4c25",
+        "recordedSha256": "962c2f21a128b0d5fe3ce0998df486285815bab7563a9450bd067cfc545f4c25",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b12\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 183632,
+        "sha256": "4aa9f93a67526f720e2ba668d9832ee3f0c62adb32e63e2b7a836bc3fd0d5236"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b12/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b12\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b12\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 183632,
+          "sha256": "4aa9f93a67526f720e2ba668d9832ee3f0c62adb32e63e2b7a836bc3fd0d5236"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "n_2i_qz3tMs",
+      "lessonLabel": "bio-m5-b13",
+      "videoTitle": "What Big Population Genetics Data Can Show | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b13/Explainer-bio-m5-b13-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 46739279,
+        "recordedSha256": "8ea901610745daf3c072878371d2acfad833b384beae2bad61efded667fb4d04",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b13/measured/captions.srt",
+        "exists": true,
+        "bytes": 11536,
+        "sha256": "b8f54b49c7b2d49e186ce001754116c5a05eff0b5d563303342545ca06df4ea2",
+        "recordedSha256": "b8f54b49c7b2d49e186ce001754116c5a05eff0b5d563303342545ca06df4ea2",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b13\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 178371,
+        "sha256": "8b315f48d197936d4b34c9bed62482942c29fd9cc59dc9338d808e1004f524d1"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b13/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b13\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b13\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 178371,
+          "sha256": "8b315f48d197936d4b34c9bed62482942c29fd9cc59dc9338d808e1004f524d1"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 16,
+        "publicSlimAudioFileCount": 16,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "OtPe_zLuGGk",
+      "lessonLabel": "bio-m5-g03",
+      "videoTitle": "Genetic Risk: Population Patterns and Individual Limits | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-g03/Explainer-bio-m5-g03-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 45281222,
+        "recordedSha256": "e63c18f4869e71ff43fbf5907e3f58720fb6b72533b415d53ed00458ec47725b",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/bg03/measured/captions.srt",
+        "exists": true,
+        "bytes": 10947,
+        "sha256": "5eca5dfbb7cb417ad6557e99b41caa49566935f7688d80877a747018a6a7db5d",
+        "recordedSha256": "5eca5dfbb7cb417ad6557e99b41caa49566935f7688d80877a747018a6a7db5d",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\bg03\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 171380,
+        "sha256": "44383b3624086478a6eb9756966c12cc7fbed10b6968fb351a5f19e225aa7a45"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-g03/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\bg03\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\bg03\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 171380,
+          "sha256": "44383b3624086478a6eb9756966c12cc7fbed10b6968fb351a5f19e225aa7a45"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 15,
+        "publicSlimAudioFileCount": 15,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "kU1-fsCE7MA",
+      "lessonLabel": "bio-m5-p01",
+      "videoTitle": "Build and Assess DNA Replication and Protein Synthesis Models | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-p01/Explainer-bio-m5-p01-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 53025299,
+        "recordedSha256": "5491ea23b99ab90273bbebe8d50afb6eca69d7ba6e86a06a2625cd824f033620",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/bp01/measured/captions.srt",
+        "exists": true,
+        "bytes": 13007,
+        "sha256": "bbe87d20c83aa73e739a32bc57b2ba54b2b0c547d33c19e213f8cc52788e33ad",
+        "recordedSha256": "bbe87d20c83aa73e739a32bc57b2ba54b2b0c547d33c19e213f8cc52788e33ad",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\bp01\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 209303,
+        "sha256": "acfa22de089ce2427ac21505f3e79dbf4360ba8fedf22b76d40b89915e514e81"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-p01/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\bp01\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\bp01\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 209303,
+          "sha256": "acfa22de089ce2427ac21505f3e79dbf4360ba8fedf22b76d40b89915e514e81"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "kRShwjUyPwI",
+      "lessonLabel": "bio-m5-p02",
+      "videoTitle": "Model Meiosis, Fertilisation and Mutation with Pop-Beads | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-p02/Explainer-bio-m5-p02-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 44862085,
+        "recordedSha256": "4e7993f4d9dff2b1b19f73449e168aadefc74773622670e7163d9522a13db58b",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/bp02/measured/captions.srt",
+        "exists": true,
+        "bytes": 12217,
+        "sha256": "967d16e8e5c9520e18ffb75aeba6b5a640e87b908b6a6950211715f11d65d4a9",
+        "recordedSha256": "967d16e8e5c9520e18ffb75aeba6b5a640e87b908b6a6950211715f11d65d4a9",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\bp02\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 189287,
+        "sha256": "6f60562fd8dcc32013d830f120f1ae56f2703121d65294ea6bc508d434c076b0"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-p02/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\bp02\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\bp02\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 189287,
+          "sha256": "6f60562fd8dcc32013d830f120f1ae56f2703121d65294ea6bc508d434c076b0"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "o0hwEiJjqrg",
+      "lessonLabel": "bio-m5-b06b",
+      "videoTitle": "Transcription: How DNA Becomes mRNA | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b06b/Explainer-bio-m5-b06b-v3.mp4",
+        "version": "3",
+        "exists": true,
+        "bytes": 67748614,
+        "recordedSha256": "172c353f472d5665005c213d81b9a9d10aa45e6ec02b3d918b974484807c5149",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b6b/measured/captions.srt",
+        "exists": true,
+        "bytes": 12906,
+        "sha256": "b98947bb26d15949551d1d1d8d849442c775c093989842e953e5d9a6d6d84f62",
+        "recordedSha256": "b98947bb26d15949551d1d1d8d849442c775c093989842e953e5d9a6d6d84f62",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b6b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 210805,
+        "sha256": "cdf96e615d6b165908b3987fe388408643193ff62122df6dd3e2623f11d777f8"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b06b/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b6b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b6b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 210805,
+          "sha256": "cdf96e615d6b165908b3987fe388408643193ff62122df6dd3e2623f11d777f8"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 19,
+        "publicSlimAudioFileCount": 19,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "VKZvh8-y7gI",
+      "lessonLabel": "bio-m5-b06c",
+      "videoTitle": "Translation: How a Ribosome Builds a Protein | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b06c/Explainer-bio-m5-b06c-v3.mp4",
+        "version": "3",
+        "exists": true,
+        "bytes": 67729194,
+        "recordedSha256": "c16ff73d35baf9e4da23fc4c3db6a2bd4bf64e83b4b7da3524c7553af0fed2f6",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b6c/measured/captions.srt",
+        "exists": true,
+        "bytes": 12799,
+        "sha256": "ada68ab4d126d2c3f050c73575ca9aad0468118bcae036362e0a48031899c7c3",
+        "recordedSha256": "ada68ab4d126d2c3f050c73575ca9aad0468118bcae036362e0a48031899c7c3",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b6c\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 207570,
+        "sha256": "f41fb049a9f89be92f99484cd3cf1dc18bbb014a47f125b438079e9cdfc4dcd2"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b06c/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b6c\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b6c\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 207570,
+          "sha256": "f41fb049a9f89be92f99484cd3cf1dc18bbb014a47f125b438079e9cdfc4dcd2"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 18,
+        "publicSlimAudioFileCount": 18,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "piCi2sSRDQU",
+      "lessonLabel": "bio-m5-b07",
+      "videoTitle": "From Amino Acid Chain to Trait: Genes and Environment | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b07/Explainer-bio-m5-b07-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 52682493,
+        "recordedSha256": "a0eb68b0cd21bea546174d69d115928767af97175a94245bf4d43507957d23e7",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b7/measured/captions.srt",
+        "exists": true,
+        "bytes": 13197,
+        "sha256": "21179de01ca4252c763bc6c2ce481fddd882cdfd142a45613954f5fe24c6e5f2",
+        "recordedSha256": "21179de01ca4252c763bc6c2ce481fddd882cdfd142a45613954f5fe24c6e5f2",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b7\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 211695,
+        "sha256": "99afd4a13cfe0d7211e26a6bad9ef7a58c65e0c11f7a2dff5c4fad2089301277"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b07/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b7\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b7\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 211695,
+          "sha256": "99afd4a13cfe0d7211e26a6bad9ef7a58c65e0c11f7a2dff5c4fad2089301277"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 17,
+        "publicSlimAudioFileCount": 17,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "PL415_P6F6w",
+      "lessonLabel": "chem-m5-c10",
+      "videoTitle": "Ka, Kb and Ksp: Equilibrium Constants for Acids, Bases and Salts | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c10/Explainer-chem-m5-c10-v3.mp4",
+        "version": "3",
+        "exists": true,
+        "bytes": 49524037,
+        "recordedSha256": "62aa5e0c5b7cd78b93625b556087793d3361b986581a5e8912b104331b3e6afa",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c10/measured/captions.srt",
+        "exists": true,
+        "bytes": 10774,
+        "sha256": "302c4f66cde54e96ee3667865f771c5a6a8a0b030781255e4f946e842c6488bb",
+        "recordedSha256": "302c4f66cde54e96ee3667865f771c5a6a8a0b030781255e4f946e842c6488bb",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c10\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 177938,
+        "sha256": "9596bb2bcaf55e4a24352b481f86fd04483d2c88d1372c362c3cdff4331c2b54"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c10/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c10\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c10\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 177938,
+          "sha256": "9596bb2bcaf55e4a24352b481f86fd04483d2c88d1372c362c3cdff4331c2b54"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 15,
+        "publicSlimAudioFileCount": 15,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "KvzXxb7bAyo",
+      "lessonLabel": "chem-m5-c15",
+      "videoTitle": "Will Mixing These Solutions Form a Precipitate? Qsp vs Ksp | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-c15/Explainer-chem-m5-c15-v2.mp4",
+        "version": "2",
+        "exists": true,
+        "bytes": 61260035,
+        "recordedSha256": "00483dbc000a20d36bf7e22053058ff75e04d17e12f7f22516da8d9202c2a96f",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/c15/measured/captions.srt",
+        "exists": true,
+        "bytes": 11490,
+        "sha256": "3206fd13a7fe19ab8ba0e40d74784b884843040f667835af0fb7dd361d27e44f",
+        "recordedSha256": "3206fd13a7fe19ab8ba0e40d74784b884843040f667835af0fb7dd361d27e44f",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\c15\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 181359,
+        "sha256": "1f141c50674de29db330b87300966534ddb87849612c257fe8fdecc618dc1504"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-c15/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\c15\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\c15\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 181359,
+          "sha256": "1f141c50674de29db330b87300966534ddb87849612c257fe8fdecc618dc1504"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 18,
+        "publicSlimAudioFileCount": 18,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "c1zYHVXYc74",
+      "lessonLabel": "chem-m5-p02",
+      "videoTitle": "Colourimetry: Measure an Equilibrium Constant from Colour | Year 12 Chemistry",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-chem-m5-p02/Explainer-chem-m5-p02-v6.mp4",
+        "version": "6",
+        "exists": true,
+        "bytes": 55362205,
+        "recordedSha256": "a63df09a23458036fb6883960da95b001d20e39ee1bb8af0dfa67365591ed53c",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/p02/measured/captions.srt",
+        "exists": true,
+        "bytes": 13311,
+        "sha256": "ceddb0917e82eb5dd0e57944f170d8801bcc83ec22d5b3f360f3da3b9e72bf6d",
+        "recordedSha256": "ceddb0917e82eb5dd0e57944f170d8801bcc83ec22d5b3f360f3da3b9e72bf6d",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\p02\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 214762,
+        "sha256": "0aa2efa1da490b22e9832b03b2e6827f51ab84d79913be159863b18ca515b2d0"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/chem-m5-p02/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\p02\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\p02\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 214762,
+          "sha256": "0aa2efa1da490b22e9832b03b2e6827f51ab84d79913be159863b18ca515b2d0"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 15,
+        "publicSlimAudioFileCount": 15,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "ikfUhS8eK3I",
+      "lessonLabel": "bio-m5-b05b",
+      "videoTitle": "Meiosis: Halving Chromosome Sets for Gametes | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b05b/Explainer-bio-m5-b05b-v8.mp4",
+        "version": "8",
+        "exists": true,
+        "bytes": 58277778,
+        "recordedSha256": "35883bc07c9e17444e31f5fccb40f09e71afe075bab1a62b80fbb10428552ddd",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b5b/measured/captions.srt",
+        "exists": true,
+        "bytes": 11041,
+        "sha256": "2ca97517ca2ae4abdb844974c31820577db0932d7e44128f8a94735e0a9a126f",
+        "recordedSha256": "2ca97517ca2ae4abdb844974c31820577db0932d7e44128f8a94735e0a9a126f",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b5b\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 174021,
+        "sha256": "4195d82309f0d336ea3e73795e54d9a4ac5831cb3dda9be7b300c44145ec616e"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b05b/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b5b\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b5b\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 174021,
+          "sha256": "4195d82309f0d336ea3e73795e54d9a4ac5831cb3dda9be7b300c44145ec616e"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 20,
+        "publicSlimAudioFileCount": 20,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "QorDvCohIYY",
+      "lessonLabel": "bio-m5-b05a",
+      "videoTitle": "Mitosis: How Each New Cell Keeps Every Chromosome | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b05a/Explainer-bio-m5-b05a-v8.mp4",
+        "version": "8",
+        "exists": true,
+        "bytes": 75606917,
+        "recordedSha256": "ca1ffc08cd48e051c26c19c9100d1f002f8fa6d98d655f164ee89c4c3244ff66",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b5a/measured/captions.srt",
+        "exists": true,
+        "bytes": 12242,
+        "sha256": "ec040f2b5c6f2501c478c8fb9a9bc31dd46b83d8fa8141409cd131dd25c54776",
+        "recordedSha256": "ec040f2b5c6f2501c478c8fb9a9bc31dd46b83d8fa8141409cd131dd25c54776",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b5a\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 193760,
+        "sha256": "db50d0b16d9aeded12a0237b4098ccd1b846087aacb8e1f660225f73b249a30b"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b05a/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b5a\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b5a\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 193760,
+          "sha256": "db50d0b16d9aeded12a0237b4098ccd1b846087aacb8e1f660225f73b249a30b"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 18,
+        "publicSlimAudioFileCount": 18,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    },
+    {
+      "wave": 4,
+      "videoId": "QXGUtIoxkgc",
+      "lessonLabel": "bio-m5-b08",
+      "videoTitle": "Where Genetic Variation Comes From | Year 12 Biology",
+      "uploadStatus": "published",
+      "visibility": "Public",
+      "selectedMp4": {
+        "path": "out/explainer/Explainer-bio-m5-b08/Explainer-bio-m5-b08-v1.mp4",
+        "version": "1",
+        "exists": true,
+        "bytes": 46233554,
+        "recordedSha256": "12d04924f52d7fbeb62ec7c188af23b2602ed72cf3e4775417e8d3ceafe84977",
+        "localSha256Calculated": false
+      },
+      "captions": {
+        "path": "docs/production/claude-pm/lessons/b8/measured/captions.srt",
+        "exists": true,
+        "bytes": 12360,
+        "sha256": "e5a3ef2da3118ca5cb6379793f3a3381435dd0b2bb40254279db3e5cbd410b36",
+        "recordedSha256": "e5a3ef2da3118ca5cb6379793f3a3381435dd0b2bb40254279db3e5cbd410b36",
+        "recordedHashStatus": "matches",
+        "specialFilename": false
+      },
+      "measuredLessonJson": {
+        "path": "docs\\production\\claude-pm\\lessons\\b8\\measured\\lesson.json",
+        "exists": true,
+        "bytes": 195735,
+        "sha256": "4cc2c713fdb6c58fbfbbde5962e63758c2b00892fa630aee476462efc0d7ab15"
+      },
+      "explainerConfig": {
+        "path": "src/explainer/lessons/bio-m5-b08/config.ts",
+        "exists": true,
+        "importPath": "docs\\production\\claude-pm\\lessons\\b8\\measured\\lesson.json",
+        "importedLessonJson": {
+          "path": "docs\\production\\claude-pm\\lessons\\b8\\measured\\lesson.json",
+          "exists": true,
+          "bytes": 195735,
+          "sha256": "4cc2c713fdb6c58fbfbbde5962e63758c2b00892fa630aee476462efc0d7ab15"
+        },
+        "captionLessonMatchesConfigLesson": true
+      },
+      "selectedRenderSourceEvidence": {
+        "publicSlimAudioDirExists": true,
+        "measuredLessonAudioFileCount": 16,
+        "publicSlimAudioFileCount": 16,
+        "measuredAudioMissingFromPublicSlim": [],
+        "publicSlimAudioNotInMeasuredLesson": [],
+        "interpretation": "A staged source bundle is present for comparison; this alone does not establish that the named MP4 was rendered from it."
+      }
+    }
+  ],
+  "containerDurationAudit": {
+    "method": "For each currently Public wave1-wave4 record, invoked the bundled FFmpeg with -i and no output to read container metadata only. Compared container duration with sum(scene.durationInFrames) / measured lesson fps. No full decode and no MP4 hashes.",
+    "toleranceSeconds": 0.1,
+    "summary": {
+      "includedRecords": 50,
+      "localMp4Present": 46,
+      "missingMp4": 4,
+      "measuredLessonDurationAvailable": 50,
+      "metadataReadFailures": 0,
+      "overTolerance": 1,
+      "withinTolerance": 45
+    },
+    "results": [
+      {
+        "wave": 1,
+        "videoId": "zaC5iXuovKg",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c01/Explainer-chem-m5-c01-v1.mp4",
+        "mp4Exists": false,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c1\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 12801,
+        "measuredLessonDurationSeconds": 426.7,
+        "containerDurationSeconds": null,
+        "durationDifferenceSeconds": null,
+        "flagOver100ms": null,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "availabilityNote": "Named local MP4 file is absent, so container duration could not be read."
+      },
+      {
+        "wave": 1,
+        "videoId": "44FFfv7RGck",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b01/Explainer-bio-m5-b01-v1.mp4",
+        "mp4Exists": false,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b1\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14470,
+        "measuredLessonDurationSeconds": 482.3333333333333,
+        "containerDurationSeconds": null,
+        "durationDifferenceSeconds": null,
+        "flagOver100ms": null,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "availabilityNote": "Named local MP4 file is absent, so container duration could not be read."
+      },
+      {
+        "wave": 1,
+        "videoId": "w7edKqGAUwA",
+        "mp4Path": "out/explainer/Explainer-bio-m5-mould/Explainer-bio-m5-mould-v1.mp4",
+        "mp4Exists": false,
+        "measuredLessonPath": "docs\\production\\fungi-design-reset-2026-10-11\\teaching-reset-take02\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 7086,
+        "measuredLessonDurationSeconds": 236.2,
+        "containerDurationSeconds": null,
+        "durationDifferenceSeconds": null,
+        "flagOver100ms": null,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "availabilityNote": "Named local MP4 file is absent, so container duration could not be read."
+      },
+      {
+        "wave": 2,
+        "videoId": "vd9Ory9-flE",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c02/Explainer-chem-m5-c02-v1.mp4",
+        "mp4Exists": false,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c2\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15898,
+        "measuredLessonDurationSeconds": 529.9333333333333,
+        "containerDurationSeconds": null,
+        "durationDifferenceSeconds": null,
+        "flagOver100ms": null,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "availabilityNote": "Named local MP4 file is absent, so container duration could not be read."
+      },
+      {
+        "wave": 2,
+        "videoId": "0P33z4D2q0E",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b02a/Explainer-bio-m5-b02a-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b2a\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 18569,
+        "measuredLessonDurationSeconds": 618.9666666666667,
+        "containerDurationSeconds": 618.97,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 3,
+        "videoId": "w0GzgApQhQY",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c03/Explainer-chem-m5-c03-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c3\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 17482,
+        "measuredLessonDurationSeconds": 582.7333333333333,
+        "containerDurationSeconds": 582.73,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 3,
+        "videoId": "kG-KexGgCzc",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b02c/Explainer-bio-m5-b02c-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b2c\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 17537,
+        "measuredLessonDurationSeconds": 584.5666666666667,
+        "containerDurationSeconds": 584.57,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "BdF_sRrt5Yw",
+        "mp4Path": "out/explainer/Explainer-chem-m5-g01/Explainer-chem-m5-g01-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\g01\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 17028,
+        "measuredLessonDurationSeconds": 567.6,
+        "containerDurationSeconds": 567.6,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "yk5KVdipGRE",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c04a/Explainer-chem-m5-c04a-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c4a\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16321,
+        "measuredLessonDurationSeconds": 544.0333333333333,
+        "containerDurationSeconds": 544.03,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "j2fxl5xvDwE",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b02b/Explainer-bio-m5-b02b-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b2b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16704,
+        "measuredLessonDurationSeconds": 556.8,
+        "containerDurationSeconds": 556.8,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "P9jyiLiGhZI",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b04/Explainer-bio-m5-b04-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b4\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 17307,
+        "measuredLessonDurationSeconds": 576.9,
+        "containerDurationSeconds": 576.9,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "bUPs256KyVY",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b03a/Explainer-bio-m5-b03a-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b3a\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15312,
+        "measuredLessonDurationSeconds": 510.4,
+        "containerDurationSeconds": 510.1,
+        "durationDifferenceSeconds": -0.3,
+        "flagOver100ms": true,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "Mlz5XT5XR7o",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b03a2/Explainer-bio-m5-b03a2-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b3a2\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16366,
+        "measuredLessonDurationSeconds": 545.5333333333333,
+        "containerDurationSeconds": 545.53,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "NJjEgjilgAE",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c05/Explainer-chem-m5-c05-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c5\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 12931,
+        "measuredLessonDurationSeconds": 431.03333333333336,
+        "containerDurationSeconds": 431.03,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "jDkHt4rf6bI",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c04b/Explainer-chem-m5-c04b-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c4b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15500,
+        "measuredLessonDurationSeconds": 516.6666666666666,
+        "containerDurationSeconds": 516.67,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "IWS7_MDw-yc",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c08/Explainer-chem-m5-c08-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c8\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15927,
+        "measuredLessonDurationSeconds": 530.9,
+        "containerDurationSeconds": 530.9,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "_NLAkMBNyRY",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c06a/Explainer-chem-m5-c06a-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c6a\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 18503,
+        "measuredLessonDurationSeconds": 616.7666666666667,
+        "containerDurationSeconds": 616.77,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "9TxH_y3ZOdU",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c09/Explainer-chem-m5-c09-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c9\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15849,
+        "measuredLessonDurationSeconds": 528.3,
+        "containerDurationSeconds": 528.3,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "Zs1oO5eCIqc",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c06b/Explainer-chem-m5-c06b-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c6b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 20242,
+        "measuredLessonDurationSeconds": 674.7333333333333,
+        "containerDurationSeconds": 674.73,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "2vsAqgI-1NI",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b06a/Explainer-bio-m5-b06a-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b6a\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 17278,
+        "measuredLessonDurationSeconds": 575.9333333333333,
+        "containerDurationSeconds": 575.93,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "UPoHGWWm9MA",
+        "mp4Path": "out/explainer/Explainer-chem-m5-g03c/Explainer-chem-m5-g03c-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\g03c\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 12683,
+        "measuredLessonDurationSeconds": 422.76666666666665,
+        "containerDurationSeconds": 422.77,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "wSSh97iXkio",
+        "mp4Path": "out/explainer/Explainer-chem-m5-g03d/Explainer-chem-m5-g03d-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\g03d\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14975,
+        "measuredLessonDurationSeconds": 499.1666666666667,
+        "containerDurationSeconds": 499.17,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "A0Z2-OLzRCI",
+        "mp4Path": "out/explainer/Explainer-chem-m5-g03b/Explainer-chem-m5-g03b-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\g03b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 12103,
+        "measuredLessonDurationSeconds": 403.43333333333334,
+        "containerDurationSeconds": 403.43,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "btrFMU7Yhxc",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b03b/Explainer-bio-m5-b03b-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b3b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16247,
+        "measuredLessonDurationSeconds": 541.5666666666667,
+        "containerDurationSeconds": 541.57,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "8hZ3MVi7kHU",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c07/Explainer-chem-m5-c07-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c7\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14127,
+        "measuredLessonDurationSeconds": 470.9,
+        "containerDurationSeconds": 470.9,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "6BhGJlXbKCA",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b09/Explainer-bio-m5-b09-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b9\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14974,
+        "measuredLessonDurationSeconds": 499.1333333333333,
+        "containerDurationSeconds": 499.13,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "PQ9nuqM4b-Y",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c11/Explainer-chem-m5-c11-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c11\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16186,
+        "measuredLessonDurationSeconds": 539.5333333333333,
+        "containerDurationSeconds": 539.53,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "QcSZ2Wn0CE0",
+        "mp4Path": "out/explainer/Explainer-bio-m5-g01/Explainer-bio-m5-g01-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\g01b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15825,
+        "measuredLessonDurationSeconds": 527.5,
+        "containerDurationSeconds": 527.5,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "4IYt7nemcRI",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c13/Explainer-chem-m5-c13-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c13\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16712,
+        "measuredLessonDurationSeconds": 557.0666666666667,
+        "containerDurationSeconds": 557.07,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "cY7hnSTN1uY",
+        "mp4Path": "out/explainer/Explainer-chem-m5-p03/Explainer-chem-m5-p03-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\p03\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15627,
+        "measuredLessonDurationSeconds": 520.9,
+        "containerDurationSeconds": 520.9,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "UMgrHQaLSH8",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c14/Explainer-chem-m5-c14-v2.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c14\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 17014,
+        "measuredLessonDurationSeconds": 567.1333333333333,
+        "containerDurationSeconds": 567.13,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "cjoai9O2koA",
+        "mp4Path": "out/explainer/Explainer-chem-m5-p01/Explainer-chem-m5-p01-v2.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\p01\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15502,
+        "measuredLessonDurationSeconds": 516.7333333333333,
+        "containerDurationSeconds": 516.73,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "0RH_T6hOwxY",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b10/Explainer-bio-m5-b10-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b10\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15084,
+        "measuredLessonDurationSeconds": 502.8,
+        "containerDurationSeconds": 502.8,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "RHHPbj94tKQ",
+        "mp4Path": "out/explainer/Explainer-bio-m5-g02/Explainer-bio-m5-g02-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\g02b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14833,
+        "measuredLessonDurationSeconds": 494.43333333333334,
+        "containerDurationSeconds": 494.43,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "ehOdeivCarY",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b11/Explainer-bio-m5-b11-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b11\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15066,
+        "measuredLessonDurationSeconds": 502.2,
+        "containerDurationSeconds": 502.2,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "jpuYH0YccBc",
+        "mp4Path": "out/explainer/Explainer-bio-m5-p03/Explainer-bio-m5-p03-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\bp03\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 13519,
+        "measuredLessonDurationSeconds": 450.6333333333333,
+        "containerDurationSeconds": 450.63,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "9qTbxRSOKY4",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b12/Explainer-bio-m5-b12-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b12\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14184,
+        "measuredLessonDurationSeconds": 472.8,
+        "containerDurationSeconds": 472.8,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "n_2i_qz3tMs",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b13/Explainer-bio-m5-b13-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b13\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14259,
+        "measuredLessonDurationSeconds": 475.3,
+        "containerDurationSeconds": 475.3,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "OtPe_zLuGGk",
+        "mp4Path": "out/explainer/Explainer-bio-m5-g03/Explainer-bio-m5-g03-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\bg03\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14349,
+        "measuredLessonDurationSeconds": 478.3,
+        "containerDurationSeconds": 478.3,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "kU1-fsCE7MA",
+        "mp4Path": "out/explainer/Explainer-bio-m5-p01/Explainer-bio-m5-p01-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\bp01\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15669,
+        "measuredLessonDurationSeconds": 522.3,
+        "containerDurationSeconds": 522.3,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "kRShwjUyPwI",
+        "mp4Path": "out/explainer/Explainer-bio-m5-p02/Explainer-bio-m5-p02-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\bp02\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14765,
+        "measuredLessonDurationSeconds": 492.1666666666667,
+        "containerDurationSeconds": 492.17,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "o0hwEiJjqrg",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b06b/Explainer-bio-m5-b06b-v3.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b6b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16617,
+        "measuredLessonDurationSeconds": 553.9,
+        "containerDurationSeconds": 553.9,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "VKZvh8-y7gI",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b06c/Explainer-bio-m5-b06c-v3.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b6c\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16935,
+        "measuredLessonDurationSeconds": 564.5,
+        "containerDurationSeconds": 564.5,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "piCi2sSRDQU",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b07/Explainer-bio-m5-b07-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b7\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15922,
+        "measuredLessonDurationSeconds": 530.7333333333333,
+        "containerDurationSeconds": 530.73,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "PL415_P6F6w",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c10/Explainer-chem-m5-c10-v3.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c10\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 13652,
+        "measuredLessonDurationSeconds": 455.06666666666666,
+        "containerDurationSeconds": 455.07,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "KvzXxb7bAyo",
+        "mp4Path": "out/explainer/Explainer-chem-m5-c15/Explainer-chem-m5-c15-v2.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\c15\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 16381,
+        "measuredLessonDurationSeconds": 546.0333333333333,
+        "containerDurationSeconds": 546.03,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "c1zYHVXYc74",
+        "mp4Path": "out/explainer/Explainer-chem-m5-p02/Explainer-chem-m5-p02-v6.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\p02\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 17339,
+        "measuredLessonDurationSeconds": 577.9666666666667,
+        "containerDurationSeconds": 577.97,
+        "durationDifferenceSeconds": 0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "ikfUhS8eK3I",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b05b/Explainer-bio-m5-b05b-v8.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b5b\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 13788,
+        "measuredLessonDurationSeconds": 459.6,
+        "containerDurationSeconds": 459.6,
+        "durationDifferenceSeconds": 0,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "QorDvCohIYY",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b05a/Explainer-bio-m5-b05a-v8.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b5a\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 15172,
+        "measuredLessonDurationSeconds": 505.73333333333335,
+        "containerDurationSeconds": 505.73,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      },
+      {
+        "wave": 4,
+        "videoId": "QXGUtIoxkgc",
+        "mp4Path": "out/explainer/Explainer-bio-m5-b08/Explainer-bio-m5-b08-v1.mp4",
+        "mp4Exists": true,
+        "measuredLessonPath": "docs\\production\\claude-pm\\lessons\\b8\\measured\\lesson.json",
+        "measuredLessonFps": 30,
+        "measuredLessonTotalFrames": 14950,
+        "measuredLessonDurationSeconds": 498.3333333333333,
+        "containerDurationSeconds": 498.33,
+        "durationDifferenceSeconds": -0.003333,
+        "flagOver100ms": false,
+        "method": "Bundled FFmpeg input metadata only. No output or full decode.",
+        "ffmpegExitCode": 1,
+        "ffmpegMetadataParsed": true
+      }
+    ]
+  }
+}

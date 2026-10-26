@@ -23,12 +23,8 @@ export const HEAD = 'How does a banksia defend itself?';
 const K1 = cues(S('hook'), {stations: 'boot-cleaning stations', soil: 'in the soil', forty: 'about 40 per cent', cope: 'cope with it far better', how: 'So how does a plant', dies: 'another dies'});
 const SOIL_Y = 880;
 const BK = {lx: 1180, rx: 1600, w: 380};
-/** Banksia centre so its root crown sits at the soil line. */
-const bkCy = (w: number, soilTop: number) => {
-	const p = PLATES.banksiaOk;
-	const h = plH(p, w);
-	return soilTop - ((1380 - p.box[1]) / (p.box[3] - p.box[1])) * h + h / 2;
-};
+/** Hook banksia centre so its trunk base (the box bottom of the rootless retake) sits just into the soil band. */
+const bkCy = (w: number, soilTop: number) => soilTop + 16 - plH(PLATES.hookOk, w) / 2;
 export const SceneHook: React.FC = () => {
 	const f = useCurrentFrame();
 	const sh = smooth(prog(f, K1.how, 28));

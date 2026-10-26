@@ -1,0 +1,729 @@
+{
+  "auditDate": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "source": "docs/production/claude-pm/youtube/wave5-uploads.json",
+  "recordsRead": 41,
+  "uniqueLessonLinks": 34,
+  "method": "Extracted the first hscscience.com.au URL from each video description, deduplicated exact URLs, sent read-only HTTP GET requests with redirects followed, parsed HTML title and first H1, checked for soft-404 phrases, and retried initial network failures once. Topic review compared each page title/H1 with its associated upload titles; the shared subject landing link for the four skills videos was checked as a broad Chemistry Year 12 destination.",
+  "summary": {
+    "tested": 34,
+    "working": 34,
+    "confirmedBroken": 0,
+    "networkFailures": 0,
+    "redirected": 14,
+    "confirmedWorkingAlternatives": []
+  },
+  "confirmedBrokenLinks": [],
+  "networkFailures": [],
+  "confirmedWorkingAlternatives": [],
+  "results": [
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson01.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c01",
+          "videoTitle": "Acid and Base Models: Arrhenius to Brønsted-Lowry | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson01.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Acid-Base Models, Arrhenius to Brønsted-Lowry | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Acid-Base Models, Arrhenius to Brønsted-Lowry",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson01",
+      "records": [
+        {
+          "lessonId": "bio-m6-b01",
+          "videoTitle": "How Mutation Adds a New Allele to a Population | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson01.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Mutation, Alleles and Genetic Change, HSC Biology Genetic Change | HSCScience",
+      "h1": "Mutation, Alleles and Genetic Change",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson02",
+      "records": [
+        {
+          "lessonId": "bio-m6-b02",
+          "videoTitle": "How Mutagens Damage DNA: UV, X-rays, Chemicals and Natural Mutagens | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson02.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Mutagens - How Genetic Damage Is Increased, HSC Biology Genetic Change | HSCScience",
+      "h1": "Mutagens, How Genetic Damage Is Increased",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson03",
+      "records": [
+        {
+          "lessonId": "bio-m6-b03",
+          "videoTitle": "Point Mutations: Silent, Missense, Nonsense and Frameshift | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson03.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Point Mutation - Base-Level Genetic Change, HSC Biology Genetic Change | HSCScience",
+      "h1": "Point Mutation, Base-Level Genetic Change",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson03.sa.html",
+      "records": [
+        {
+          "lessonId": "chem-m6-c03",
+          "videoTitle": "Enthalpy of Neutralisation Calculations: q = mcΔT to kJ/mol | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson03.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Enthalpy of Neutralisation, Practical & Theory | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Enthalpy of Neutralisation, Practical & Theory",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson04",
+      "records": [
+        {
+          "lessonId": "bio-m6-b04",
+          "videoTitle": "Chromosomal Mutations: Four Structural Types and Nondisjunction | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson04.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Chromosomal Mutation - Large-Scale Genetic Change, HSC Biology Genetic Change | HSCScience",
+      "h1": "Chromosomal Mutation, Large-Scale Genetic Change",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson04.sa.html",
+      "records": [
+        {
+          "lessonId": "chem-m6-c04",
+          "videoTitle": "Neutralisation in Real Life: Antacids, Lime, Scrubbers and Mine Water | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson04.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Neutralisation in Everyday Life & Industry | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Neutralisation in Everyday Life & Industry",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson05",
+      "records": [
+        {
+          "lessonId": "bio-m6-b05",
+          "videoTitle": "Somatic vs Germ-Line Mutations, and Coding vs Non-Coding DNA | Year 12 Biology Module 6"
+        },
+        {
+          "lessonId": "bio-m6-g01",
+          "videoTitle": "Mutation Effects: HSC-Style Practice Questions | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson05.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Somatic vs Germ-Line Mutation; Coding vs Non-Coding DNA, HSC Biology Genetic Change | HSCScience",
+      "h1": "Somatic vs Germ-Line Mutation; Coding vs Non-Coding DNA",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson05.sa.html",
+      "records": [
+        {
+          "lessonId": "chem-m6-c05",
+          "videoTitle": "Strong vs Weak, Concentrated vs Dilute Acids and Bases | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson05.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Strong vs Weak Acids & Bases, The Critical Distinction | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Strong vs Weak Acids & Bases, The Critical Distinction",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson07.sa.html",
+      "records": [
+        {
+          "lessonId": "chem-m6-c06",
+          "videoTitle": "Conjugate Acid-Base Pairs and Amphiprotic Species | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson07.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Conjugate Pairs, Amphiprotic Substances & Water's Role | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Conjugate Pairs, Amphiprotic Substances & Water's Role",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson08.sa.html",
+      "records": [
+        {
+          "lessonId": "chem-m6-c07",
+          "videoTitle": "pH and pOH Calculations for Strong Acids and Bases, Dilution and Mixing | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson08.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "pH and pOH, Calculations for Strong Acids & Bases | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "pH and pOH, Calculations for Strong Acids & Bases",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson06",
+      "records": [
+        {
+          "lessonId": "bio-m6-b07",
+          "videoTitle": "Where Genetic Variation Comes From: Meiosis, Fertilisation and Mutation | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson06.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Fertilisation, Meiosis and Mutation as Causes of Genetic Variation, HSC Biology Genetic Change | HSCScience",
+      "h1": "Fertilisation, Meiosis and Mutation as Causes of Genetic Variation",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson07",
+      "records": [
+        {
+          "lessonId": "bio-m6-b08",
+          "videoTitle": "Gene Pools: Mutation, Gene Flow and Genetic Drift | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson07.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "Gene Pools - Mutation, Gene Flow and Genetic Drift, HSC Biology Genetic Change | HSCScience",
+      "h1": "Gene Pools, Mutation, Gene Flow and Genetic Drift",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson09.sa.html",
+      "records": [
+        {
+          "lessonId": "chem-m6-c08",
+          "videoTitle": "Weak Acid and Weak Base pH with ICE Tables, Ka and Kb | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson09.sa",
+      "redirectFollowed": true,
+      "htmlTitle": "pH of Weak Acids & Bases, Ka, Kb & ICE Tables | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Ka, Kb and ICE Table Calculations",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12",
+      "records": [
+        {
+          "lessonId": "skills-s01",
+          "videoTitle": "Read the Question Before You Answer It | HSC Exam Skills (Chemistry and Biology)"
+        },
+        {
+          "lessonId": "skills-s02",
+          "videoTitle": "Identify, Describe, Explain: What Each Verb Really Asks For | HSC Exam Skills"
+        },
+        {
+          "lessonId": "skills-s04",
+          "videoTitle": "Analyse, Assess, Evaluate, Justify: Make a Call and Back It Up | HSC Exam Skills"
+        },
+        {
+          "lessonId": "skills-s03",
+          "videoTitle": "Compare, Contrast, Distinguish: Write It in Pairs | HSC Exam Skills"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/",
+      "redirectFollowed": true,
+      "htmlTitle": "Chemistry Year 12 - HSCScience | HSC Chemistry Year 12 | HSCScience",
+      "h1": "Chemistry Year 12",
+      "soft404Detected": false,
+      "topicReview": "Broad Chemistry Year 12 landing page used by four HSC exam-skills videos; subject context matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "subject_landing"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson10.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c09",
+          "videoTitle": "Why Weak Acids Release Different Heat in Neutralisation | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson10.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Enthalpy of Neutralisation, Comparing Strong & Weak | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Neutralisation Enthalpy, Strong vs Weak Compared",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson08.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b09",
+          "videoTitle": "What Counts as Biotechnology? From Bread to Insulin, and What Each Kind Changes | Year 12 Biology"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson08.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Biotechnology - Definitions, Scope and Historical Trajectory, HSC Biology Genetic Change | HSCScience",
+      "h1": "Biotechnology, Definitions, Scope and Historical Trajectory",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson12.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c10",
+          "videoTitle": "Ka and pKa: Comparing Acid Strength, Ka from pH and Conjugate Bases | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson12.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Ka, pKa & Comparing Acid Strengths | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Ka, pKa and Acid Strength Rankings",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson09.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b10",
+          "videoTitle": "How Should We Judge Biotechnology? Bt Cotton, Hornless Cattle and Stakeholders | Year 12 Biology"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson09.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Ethics and Social Implications of Biotechnology, HSC Biology Genetic Change | HSCScience",
+      "h1": "Ethics and Social Implications of Biotechnology",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson13.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c11",
+          "videoTitle": "How Buffers Resist pH Change: Mechanism, Buffer pH, Capacity and Blood | Year 12 Chemistry"
+        },
+        {
+          "lessonId": "chem-m6-p05",
+          "videoTitle": "Preparing and Testing a Buffer: Controls, Dilution and Capacity | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson13.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Buffers, Mechanism, Calculations & Natural Systems | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Buffer Solutions, Henderson-Hasselbalch and Buffer Capacity",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson10.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b11",
+          "videoTitle": "Which Future Biotechnologies Are Plausible? CRISPR, Sickle Cell and Gene Drives | Year 12 Biology"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson10.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Future Directions and Potential Benefits of Biotechnology, HSC Biology Genetic Change | HSCScience",
+      "h1": "Future Directions and Potential Benefits for Society",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson14.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c12",
+          "videoTitle": "Titration Calculations: Standard Solutions, Concordant Titres and Mole Ratios | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson14.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Titration, Standard Solutions, Technique & Calculations | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Titration Calculations, Standard Solutions, Concordant Titres & Errors",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson11.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b12",
+          "videoTitle": "How Can Biotechnology Change Biodiversity? Bananas, Rhinos and the Three Levels | Year 12 Biology"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson11.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Biodiversity Change Caused by Genetic Techniques, HSC Biology Genetic Change | HSCScience",
+      "h1": "Biodiversity Change Caused by Genetic Techniques",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson15.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c13",
+          "videoTitle": "Choosing a Titration Indicator: Indicators, Equivalence Point pH and the pH Jump | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson15.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Indicators, Mechanism & Selecting the Right One | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Indicators, Equivalence Point pH & Titration Curve Shapes",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson16.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c14",
+          "videoTitle": "Titration Curves and Conductivity Graphs: Strong vs Weak, Equivalence and pKa | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson16.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Titration Curves, Interpreting & Analysing All Four Types | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Titration Curves, Interpreting & Analysing All Four Types",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson18.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c15",
+          "videoTitle": "Back Titrations and Conductometric Titrations: Antacids, Hidden Endpoints | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson18.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Back Titration & Conductometric Titration | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Back Titration & Conductometric Titration",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson12.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b13",
+          "videoTitle": "Biotechnology Benefits vs Biodiversity Risks: Bt Cotton vs Gene Drives | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson12.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Biotechnology Synthesis, Evaluating Benefit, Risk and Biodiversity, HSC Biology Genetic Change | HSCScience",
+      "h1": "Biotechnology Synthesis, Evaluating Benefit, Risk and Biodiversity",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson19.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-c16",
+          "videoTitle": "Choosing an Acid-Base Analysis Method: pH Probes, Calibration and Titrations | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson19.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Acid/Base Analysis Techniques, Industrial & Digital | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Acid/Base Analysis Techniques, Industrial & Digital",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson14.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b15",
+          "videoTitle": "Artificial Insemination vs Artificial Pollination: Processes and Outcomes | Year 12 Biology"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson14.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Artificial Insemination vs Pollination | HSCScience",
+      "h1": "Reproductive Technologies, Artificial Insemination and Artificial Pollination",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson03.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-p02",
+          "videoTitle": "Enthalpy of Neutralisation Practical: Calorimetry, Extrapolation and Errors | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson03.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Enthalpy of Neutralisation, Practical & Theory | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Enthalpy of Neutralisation, Practical & Theory",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson15.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b16",
+          "videoTitle": "Whole-Organism vs Gene Cloning: Dolly and How Well Cloning Works | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson15.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Cloning, Whole-Organism and Gene Cloning | SCNT and Dolly | HSCScience",
+      "h1": "Cloning, Whole-Organism and Gene Cloning",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson05.sa",
+      "records": [
+        {
+          "lessonId": "chem-m6-p03",
+          "videoTitle": "Measuring pH of Acids and Bases: pH Meter Calibration and Method | Year 12 Chemistry"
+        },
+        {
+          "lessonId": "chem-m6-p04",
+          "videoTitle": "Using pH to Show Strong vs Weak Acids and Bases: Fair Tests and Dilution | Year 12 Chemistry"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/chemistry/year12/module6/lesson05.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Strong vs Weak Acids & Bases, The Critical Distinction | HSC Chemistry Year 12 Module 6 | HSCScience",
+      "h1": "Strong vs Weak Acids & Bases, The Critical Distinction",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson16.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b18",
+          "videoTitle": "Recombinant DNA: Restriction Enzymes, Ligase, Plasmids and Transgenics | Year 12 Biology"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson16.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Recombinant DNA Technology | Restriction Enzymes, Vectors and Transgenics | HSCScience",
+      "h1": "Recombinant DNA Technology and Transgenic Organisms",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    },
+    {
+      "url": "https://hscscience.com.au/subjects/biology/year12/module6/lesson17.sa",
+      "records": [
+        {
+          "lessonId": "bio-m6-b19",
+          "videoTitle": "Benefits of Genetic Technologies: Agriculture, Medicine and Industry | Year 12 Biology Module 6"
+        },
+        {
+          "lessonId": "bio-m6-g02",
+          "videoTitle": "Evaluating Biotechnology: HSC-Style Practice Questions | Year 12 Biology Module 6"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://hscscience.com.au/subjects/biology/year12/module6/lesson17.sa",
+      "redirectFollowed": false,
+      "htmlTitle": "Benefits of Genetic Technologies, Agricultural, Medical and Industrial, HSC Biology Genetic Change | HSCScience",
+      "h1": "Benefits of Genetic Technologies, Agricultural, Medical and Industrial Uses",
+      "soft404Detected": false,
+      "topicReview": "HTML title and H1 reviewed against associated video title; topic matches.",
+      "wrongTopic": false,
+      "networkFailure": null,
+      "attempts": 1,
+      "topicMatchBasis": "title_and_h1"
+    }
+  ]
+}

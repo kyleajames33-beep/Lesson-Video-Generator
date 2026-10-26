@@ -1,0 +1,176 @@
+{
+  "auditDate": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "scope": "Read-only search for the four exact wave1-wave2 MP4s in local output paths, tracked backup records, and local ZIP central directories. No archive contents extracted and no remote packages downloaded.",
+  "targets": [
+    {
+      "wave": 1,
+      "videoId": "zaC5iXuovKg",
+      "title": "Static and Dynamic Equilibrium: Equal Rates, Not Equal Amounts | Year 12 Chemistry",
+      "visibility": "Public",
+      "status": null,
+      "expectedFile": "out/explainer/Explainer-chem-m5-c01/Explainer-chem-m5-c01-v1.mp4",
+      "recordedMp4Sha256": "0afcbdedcc22b1fd221bc19ff2421592dd8ee9745828cd693df48ace34bf130a",
+      "localFileExists": false,
+      "localBytes": null,
+      "exactLocalHashCalculated": false,
+      "localArchiveMemberCandidates": []
+    },
+    {
+      "wave": 1,
+      "videoId": "44FFfv7RGck",
+      "title": "Sexual and Asexual Reproduction: Continuity and Variation | Year 12 Biology",
+      "visibility": "Public",
+      "status": null,
+      "expectedFile": "out/explainer/Explainer-bio-m5-b01/Explainer-bio-m5-b01-v1.mp4",
+      "recordedMp4Sha256": "56bbbf143fb2781c6d5b9fdcb85fea54cd841ad2d1a95368f55a078cc78ea90d",
+      "localFileExists": false,
+      "localBytes": null,
+      "exactLocalHashCalculated": false,
+      "localArchiveMemberCandidates": []
+    },
+    {
+      "wave": 1,
+      "videoId": "w7edKqGAUwA",
+      "title": "How Bread Mould Spreads: Spores and New Growth | Year 12 Biology",
+      "visibility": "Public",
+      "status": null,
+      "expectedFile": "out/explainer/Explainer-bio-m5-mould/Explainer-bio-m5-mould-v1.mp4",
+      "recordedMp4Sha256": "ad81eeb1661a170cecff40e795453d3129ba26adba7aaaa627906db574f9cf4a",
+      "localFileExists": false,
+      "localBytes": null,
+      "exactLocalHashCalculated": false,
+      "localArchiveMemberCandidates": []
+    },
+    {
+      "wave": 2,
+      "videoId": "vd9Ory9-flE",
+      "title": "How Reversible Reactions Approach Equilibrium | Year 12 Chemistry",
+      "visibility": "Public",
+      "status": null,
+      "expectedFile": "out/explainer/Explainer-chem-m5-c02/Explainer-chem-m5-c02-v1.mp4",
+      "recordedMp4Sha256": "ebd806ee6419b8ee7eb9e3530b99f8aade9bf6a7db02c4675bdac5ca25dfacc7",
+      "localFileExists": false,
+      "localBytes": null,
+      "exactLocalHashCalculated": false,
+      "localArchiveMemberCandidates": []
+    }
+  ],
+  "search": {
+    "expectedLocalOutputDirectoriesInspected": [
+      "out/explainer/Explainer-chem-m5-c01",
+      "out/explainer/Explainer-bio-m5-b01",
+      "out/explainer/Explainer-bio-m5-mould",
+      "out/explainer/Explainer-chem-m5-c02"
+    ],
+    "exactLocalFilesFound": 0,
+    "otherExactVersionMp4sFound": 0,
+    "similarLocalMp4sNotCandidates": [
+      {
+        "path": "out/explainer/Explainer-chem-m6-c01/Explainer-chem-m6-c01-v3.mp4",
+        "bytes": 55205077,
+        "reason": "Module 6 Chemistry C01, not the Module 5 C01 target."
+      },
+      {
+        "path": "out/explainer/Explainer-bio-m6-b01/Explainer-bio-m6-b01-v2.mp4",
+        "bytes": 44978493,
+        "reason": "Module 6 Biology B01, not the Module 5 B01 target."
+      }
+    ],
+    "zipCentralDirectoryScan": {
+      "roots": [
+        "out/archives",
+        "docs/production"
+      ],
+      "zipCountScanned": 34,
+      "centralDirectoryEntriesScanned": 5367,
+      "exactTargetNameHits": 0,
+      "archiveMemberNameSearchTerms": [
+        "Explainer-chem-m5-c01",
+        "Explainer-bio-m5-b01",
+        "Explainer-bio-m5-mould",
+        "Explainer-chem-m5-c02"
+      ],
+      "archiveContentsExtracted": false
+    },
+    "relevantLocalArchives": [
+      {
+        "path": "out/archives/module5-starter-learning-reset-media-2026-10-11.zip",
+        "bytes": 58333477,
+        "centralDirectoryExactTargetHits": 0
+      },
+      {
+        "path": "out/archives/module5-starter-learning-reset-media-2026-10-11-v6.zip",
+        "bytes": 58396597,
+        "centralDirectoryExactTargetHits": 0
+      },
+      {
+        "path": "out/archives/module5-teaching-batch-media-2026-10-11-v1.zip",
+        "bytes": 296144549,
+        "centralDirectoryExactTargetHits": 0
+      },
+      {
+        "path": "out/archives/module5-teaching-batch-media-2026-10-11-v2.zip",
+        "bytes": 87196377,
+        "centralDirectoryExactTargetHits": 0
+      }
+    ],
+    "similarVideosNotCandidates": [
+      {
+        "path": "out/explainer/Explainer-chem-m6-c01/Explainer-chem-m6-c01-v3.mp4",
+        "bytes": 55205077,
+        "reason": "Module 6 Chemistry C01, not the Module 5 C01 target."
+      },
+      {
+        "path": "out/explainer/Explainer-bio-m6-b01/Explainer-bio-m6-b01-v2.mp4",
+        "bytes": 44978493,
+        "reason": "Module 6 Biology B01, not the Module 5 B01 target."
+      }
+    ]
+  },
+  "trackedBackupRecords": {
+    "wave1AndWave2Uploads": "The upload JSONs are the only local records found with the exact original paths and expected MP4 SHA-256 values. Wave4 priorWavesAudit records public metadata, not file hashes.",
+    "baseComputerTransfer": {
+      "record": "docs/production/computer-transfer-2026-10-09.json",
+      "archive": "out/archives/computer-transfer-2026-10-09.zip",
+      "archiveBytes": 3062795215,
+      "archiveSha256": "93ddf4e2b22aa867daa8f6879bf29184842a6d1ad42012588d3058a91b7d86a7",
+      "mediaFileCount": 4245,
+      "githubReleaseStatus": "published-verified",
+      "githubReleaseTag": "workspace-media-2026-10-09",
+      "localCompleteZipExists": false,
+      "localPart01Exists": false,
+      "localPart02Exists": false,
+      "localChecksumSidecarExists": true,
+      "memberManifestHasPerFilePaths": false,
+      "classification": "Remote archive candidate only. Local ZIP and parts are absent, and the tracked transfer record gives aggregate size and hash, not individual member names. Exact target membership is not verified."
+    },
+    "starterVoicedContinuation": {
+      "checkpoint": "docs/production/module5-starters-media-checkpoint-2026-10-10.json",
+      "archive": "out/archives/module5-starters-voiced-media-2026-10-10.zip",
+      "localZipExists": false,
+      "localChecksumSidecarExists": true,
+      "checkpointMemberCount": 196,
+      "memberPathsAvailableLocally": false,
+      "classification": "No local ZIP central directory or per-file member list available to establish membership."
+    },
+    "starterVoicedV2": {
+      "checkpoint": "docs/production/module5-starters-voiced-v2-media-checkpoint-2026-10-10.json",
+      "localZipExists": false,
+      "checkpointScope": "Separate corrected C1 counter and voiced page metadata. No full starter export.",
+      "classification": "Not an exact MP4 recovery record."
+    }
+  },
+  "result": {
+    "locallyVerifiedExactMatches": 0,
+    "locallyVerifiedExactArchiveCandidates": 0,
+    "remoteUnverifiedArchiveCandidate": "computer-transfer-2026-10-09.zip, published in workspace-media-2026-10-09 release; no local member listing and no download performed.",
+    "similarlyNamedLegacyVideosAreNotRecoveryCandidates": true,
+    "globalBackupGapClaimed": false
+  },
+  "limitations": [
+    "ZIP search inspected local central-directory names only; it did not extract or hash archive member bytes.",
+    "Remote GitHub archive membership remains unverified.",
+    "The similar Module 6 files are explicitly excluded by module identity, not treated as candidate recoveries."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "auditDate": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "lessonId": "chem-m6-c15",
+  "scope": "Digital PCM timing evidence for published feedback-1 narration against the uploaded SRT. No subjective listening or content-quality claim.",
+  "assets": {
+    "mp4": "out/explainer/Explainer-chem-m6-c15/Explainer-chem-m6-c15-v1.mp4",
+    "mp4ExpectedSha256": "1845d3a5d572d27ab74c2363eb96b2d447b2278e22ebb9805350b8c5ff0f72af",
+    "mp4ObservedSha256": "1845d3a5d572d27ab74c2363eb96b2d447b2278e22ebb9805350b8c5ff0f72af",
+    "mp4HashMatchesUploadRecord": true,
+    "mp4DurationSeconds": 499.733,
+    "srt": "docs/production/claude-pm/lessons/m6c15/measured/captions.srt",
+    "srtExpectedSha256": "ebef12201c571d5f404a133c9c17bc9d382a9fbea2ee6889469a39384852138c",
+    "srtObservedSha256": "ebef12201c571d5f404a133c9c17bc9d382a9fbea2ee6889469a39384852138c",
+    "srtHashMatchesUploadRecord": true,
+    "sourceMp3": "public/audio/Chemistry-Y12-M6-C15-claude-2026-10-21-take01/feedback-1.74f032ceebb9.mp3",
+    "sourceMp3Sha256": "d33458b4e486df4be2944f06bbb7dda178155a07fb182577d2d8a0501b815b87"
+  },
+  "sceneSchedule": {
+    "fps": 30,
+    "totalFrames": 14992,
+    "totalDurationSeconds": 499.73333333333335,
+    "feedback1SceneStartFrame": 10473,
+    "feedback1SceneStartSeconds": 349.1,
+    "feedback1DurationInFrames": 845
+  },
+  "caption": {
+    "firstFeedbackCueStart": "00:05:39,500",
+    "firstFeedbackCueEnd": "00:05:41,980",
+    "firstFeedbackCueStartSeconds": 339.5,
+    "firstFeedbackCueText": "The tablet used the acid added minus the",
+    "feedback1FirstWordCaptionOffsetMs": 0,
+    "feedback1FirstWordCaptionText": "The"
+  },
+  "pcmCorrelation": {
+    "method": "Decoded published MP4 audio and source MP3 to mono 8 kHz PCM with bundled FFmpeg. Extracted MP4 interval 335-355 seconds. Searched normalized Pearson correlation on 1 second windows at 10 ms steps across output offsets and source offsets. Compared the source initial samples with the MP4 and the highest-scoring offset windows.",
+    "mp4PcmPath": "out/checks/caption-timing-2026-10-25/mp4-335-355.wav",
+    "sourcePcmPath": "out/checks/caption-timing-2026-10-25/feedback-1.wav",
+    "sampleRateHz": 8000,
+    "sourceDurationSeconds": 26.16,
+    "mp4IntervalStartSeconds": 335,
+    "mp4IntervalDurationSeconds": 20,
+    "bestWindowNormalizedCorrelation": 0.9606198784047585,
+    "bestWindowSourceOffsetSeconds": 0.52,
+    "bestWindowMp4AbsoluteOffsetSeconds": 349.62,
+    "estimatedSourceStartSeconds": 349.1,
+    "alignmentResolutionSeconds": 0.01,
+    "estimatedUncertaintySeconds": 0.03,
+    "initialOneSecondCorrelationAtEstimatedSourceStart": 0.9480388765304743,
+    "firstVoiceActivityApproxSecondsInSource": 0.08,
+    "firstVoiceActivityApproxSecondsInMp4": 349.18
+  },
+  "finding": {
+    "estimatedMp3SourceStartSeconds": 349.1,
+    "estimatedFirstSpeechSeconds": 349.18,
+    "captionCueFirstWordSeconds": 339.5,
+    "captionLeadsFirstSpeechSeconds": 9.680000000000007,
+    "sceneScheduleMatchesObservedAudioStart": true,
+    "captionAudioDriftConfirmed": true,
+    "conclusion": "The feedback-1 source audio begins at the scheduled scene start near 349.1 seconds in the published MP4. Its first speech is near 349.18 seconds, while the corresponding first SRT cue begins at 339.5 seconds. The caption therefore leads the audio by about 9.68 seconds, consistent with the approximately 9.6 second discrepancy."
+  },
+  "limitations": [
+    "Digital PCM correlation only. No human listening performed.",
+    "Timing estimate is based on decoded AAC/MP3 PCM and cross-correlation, not a claim about perceived audio quality."
+  ]
+}

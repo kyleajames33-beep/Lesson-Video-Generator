@@ -1,0 +1,3345 @@
+{
+  "qaCueBodiesPreserved": 5589,
+  "liveCaptureEvidence": "docs/production/claude-pm/checks/codex-interim-live-caption-provenance.json",
+  "testsPassed": 25,
+  "selectedCatalogSha256": "1a1d99f136f4fa833c5ab8792e0c236ea714bde32094444d0d0c780243a11499",
+  "savedStudioReferences": 5,
+  "limits": [
+    "Historical draft members are included for provenance. Use the current v4 catalog after restoring both archives.",
+    "Archive contains caption and source snapshots, not the original MP4s.",
+    "Saved Studio tracks are not a full public playback or human listening pass.",
+    "B03a external captions overlap its baked-in captions; presentation remains pending.",
+    "No publication or remote archive upload was performed."
+  ],
+  "date": "2026-10-25",
+  "notationEditsRetained": 213,
+  "restoreDestination": "out/caption-repairs",
+  "archiveSha256": "4f3af52c99ddf13a6a43c50204a2491c0ed9a58f00c1da08744d0f8f749a9317",
+  "allMembersMatchLocal": true,
+  "sourceAndNarrationChanged": false,
+  "archive": "out/archives/caption-timing-review-qa-preserved-2026-10-25.zip",
+  "memberCount": 809,
+  "reviewUrl": "http://127.0.0.1:8784/",
+  "independentReview": "docs/production/claude-pm/checks/codex-interim-caption-provenance-review.md",
+  "uncapturedQASavedTrackIdentities": 26,
+  "totalSelectedTracks": 91,
+  "publicTracksChanged": false,
+  "status": "local-QA-preserving-candidates-reviewed-playback-and-replacement-pending",
+  "members": [
+    {
+      "member": "wave5-2026-10-25/bio-m6-b01.srt",
+      "sha256": "2849cb85cd8ac21df714059364f5abd28d31724946f56763554d72b2ec5b0bdb"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b01.vtt",
+      "sha256": "4c4d917d322db886053a13940ab017550c3dbc20164daf5c9328821a71a70bff"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b02.srt",
+      "sha256": "1a4d8cacdce0568196f33f0682e8f81635a5e2691be4ac3c634e0a1cf28eb837"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b02.vtt",
+      "sha256": "90fc7a4c31fc6572fa1abce20f2f4cec7d16faf79ac6c056941019b570f5d7d3"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b03.srt",
+      "sha256": "4c5ffcd722356dc579acae54e91cff74f3d31a9eacb838c39a135d793f3ac6a2"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b03.vtt",
+      "sha256": "c45773bc526346201bb121bdcb40ea8cc3ced2a0871d741f841b0f6f361ac398"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b04.srt",
+      "sha256": "a2ac06d26323f0a13803228bff925a77a44d855e315f2c77cbae36bd14e63b92"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b04.vtt",
+      "sha256": "267723832bd31fd0601acbdefc2277f3cf7508024793d736546c26f155c3f303"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b05.srt",
+      "sha256": "3356691a799e4b47eaa250ef87bc9ea173b778ab4e9dd5ef762b5f54c53c4221"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b05.vtt",
+      "sha256": "e444b43b9e343171693a957065a409ab70f115b3942a0a0bd327a774de4b545d"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b07.srt",
+      "sha256": "9149707d3178237998907a03e8f69e555adc55cb2c4ac9bdf769b1e02c841bc3"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b07.vtt",
+      "sha256": "9b24fd2f45922c32abcdec6db01286fe7cdae897eab4a20aa2db18f75d048e55"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b08.srt",
+      "sha256": "d58e1f868bd76154373c355761a20e52ec7f1feaa6ffb3af927258fcdea94367"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b08.vtt",
+      "sha256": "19c48c3d6c4ca1346aa5ef97c74493d73198074e987710a01e0685df9b54c03f"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b09.srt",
+      "sha256": "805fdca405ee7a5e9eefb5235ee5b64ef0bd7a0ecee2830da953279445dc6b75"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b09.vtt",
+      "sha256": "9033d0572d28343185bd22e2b948bbcddc88c2f15985ce5e396e2734533f0d40"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b10.srt",
+      "sha256": "7c76082df7d65193cbefa8a38adaaa809076fe3b1b1decc10724167c7d77f1c6"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b10.vtt",
+      "sha256": "6dda57216579035caaeee81b9d76bf6e7af72f4b6bb5551c80952084bb301bcd"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b11.srt",
+      "sha256": "979b06d22a79e84a59bf718b19bc75dd45a6ac0df8e72cef06157f579525d0d6"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b11.vtt",
+      "sha256": "a5fc4508eb18bcfac313c0e82b9f84f027e384345c1ad16b931fc4164683e596"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b12.srt",
+      "sha256": "ddc034830ee13d25c5f8086f44fb6079562121269e32f7ba21d00d5d7c6106c6"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b12.vtt",
+      "sha256": "0e792e7f6bb78628d8504f0372feebb44e28b2f1cbff47a18c72a9ff1de68592"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b13.srt",
+      "sha256": "7a2c9a92363a805b7f3bb06654a5aad7c0d157acb95158ce232f6a6671ad0ed0"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b13.vtt",
+      "sha256": "23b473e3424fbca0f13a5548800d4e0891fb59dc9682633119db862edd10335a"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b15.srt",
+      "sha256": "91bc3abbc8f1c7ad68866334489751fff178d6bca9cee54bdcd583cc22e9d501"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b15.vtt",
+      "sha256": "bc1503949c20d26aa42b9e87a94ef8cc99bbe37c6faabf5d9e802d92b862f379"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b16.srt",
+      "sha256": "3514f995f9cece9169f1c6c471d5106725ce7223ba4148c26f6f71a7f74ea610"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b16.vtt",
+      "sha256": "198f33a0e90d6e00538988518a54e1c5cb0f02d6ee688598840168489f6e647d"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b18.srt",
+      "sha256": "4c74917a92e6e487d6849cae8aaabff47f36094af3e0f3192c6283b2cffbc034"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b18.vtt",
+      "sha256": "26183083136a54b5216d3342bb31bf1689c7086e0ce1497e9b5b58a592a435d0"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b19.srt",
+      "sha256": "7176d29fba8e6cb9b552ffc5e1784bffe2b3f62dd201bdcf1719da0442674ffe"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-b19.vtt",
+      "sha256": "aca6d3bbc2b6a7e0f7b6a67bb26372a39602470e992d851fdd1de786ba8216ad"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-g01.srt",
+      "sha256": "6aedc751541adbaa9a722d973a76495400122d3b01ca87d84ee622b88a943f37"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-g01.vtt",
+      "sha256": "a4292f59192a28bc9d756a398204650c0a26ffabf31767c015f02a64f010c89d"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-g02.srt",
+      "sha256": "95150b2f65da01175b07d595e66ca5ff640a7492a0384908519a32f568e162bf"
+    },
+    {
+      "member": "wave5-2026-10-25/bio-m6-g02.vtt",
+      "sha256": "0f2c890d1d8fbcfd88077b2e61932a7e74fc4263b738b92f474eff70231efb38"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c01.srt",
+      "sha256": "e601731e900880701f3eff071e29f3ed2ac0050ffbf0418688e72121a2ec4ebe"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c01.vtt",
+      "sha256": "0da6c2a61a968136a1759313005f28ac8da5e125c8b33287d53a5732efbcbcb3"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c03.srt",
+      "sha256": "03d42b5771f2f5d40d4c11f8e3df0e7e7e8a1c6a5faf50dfbc203c471d693082"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c03.vtt",
+      "sha256": "6701e6cf547bb7732f09917d25f13dd776dcef3b46d11a67987c5cb39bac97ca"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c04.srt",
+      "sha256": "bc6583a4aa839d9c0bab0fae792059f12269a28833f463f0709ede6d99b71b7f"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c04.vtt",
+      "sha256": "4ed34e2b266cba2a3b744cf124ab913d4b1eb6d51e3686754dde4e7023b60a94"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c05.srt",
+      "sha256": "96082aebe5e517ebfe75ebf686911d4e1c49ae3f40fc14bf3c6eba0e2e9bcea9"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c05.vtt",
+      "sha256": "31d3aafa078343aaef3af0aba68d4543186c5d2e844cc2fd6b135010fc8d4ec2"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c06.srt",
+      "sha256": "977131851cdf85bc5d574467f32faa79185068468198b778b24b732525697575"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c06.vtt",
+      "sha256": "c4b86cd6a1e5bbc7799c50702036028b8a29c6167e2df015e0f9e0038326d31e"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c07.srt",
+      "sha256": "c8c044b6d1053c960500252a23df6e96068bd11ff33d71087203640798d735f9"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c07.vtt",
+      "sha256": "43ec732b291f4ab793ee1222c9be6e5772a9a1d3978230cba435911bd9abd3ef"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c08.srt",
+      "sha256": "f9f02043cedc46cea1d18294d81ff42eb0ef7705c44f13c72e01fdf83304bae5"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c08.vtt",
+      "sha256": "8c7590bab9ec83a3969530cd7b0afdbac339c4b2593b630ed9fbb39044a3448f"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c09.srt",
+      "sha256": "203b4a176666fda298ed462821d7d32217cfd3704a19e7a9cdba7997008efaa7"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c09.vtt",
+      "sha256": "974b8f11a70f8565e44fd713880d49e075bd6ae31f9eb3da000b81e146723546"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c10.srt",
+      "sha256": "a6080767f10f53684d945f4103edf7984b31cd9df7d5e977626024238fe1aac3"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c10.vtt",
+      "sha256": "362f9e86670c4ff410fa9b4ec986e92174307c4588d05e1467ca1db908dbc2ee"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c11.srt",
+      "sha256": "37b51d7ae04120a9f351c3ef3534ea76909cfc150c819e9f21de0a1af60e9073"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c11.vtt",
+      "sha256": "782b512d294f7655a4c1b372602870501791725171145fbb5b2dd87d923c3001"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c12.srt",
+      "sha256": "a5e23842bda3bf84179721af441f43e01beaf1921e4d25dda9f7ad1e91276138"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c12.vtt",
+      "sha256": "0e803046daebbf667a2e33ab5d264de8f626437e8455321f0dcb626bd10aec10"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c13.srt",
+      "sha256": "500cc3a42f55edecb025f9ea4689157234381eada1b378b788698026dae0ae2e"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c13.vtt",
+      "sha256": "6361c4d5348a5147ea6a532e7e4d5906a3eab0d3f36ea65df907da54c6e96be5"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c14.srt",
+      "sha256": "406b189e1060fd9e48cde959a9f9534de0ff43a30cecb675f8ad1a35de4ec9c6"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c14.vtt",
+      "sha256": "22d3c2d72b90ee207b574d908945cd5a630b352811ab88c8a1644beef26097d5"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c15.srt",
+      "sha256": "f1bbae7704ee7626a1f773d386551a57ebe5cc882a2eff0f489be5afc2137b26"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c15.vtt",
+      "sha256": "cdc0c9bc40cfc986a2b55b524d1bd250bd8e4489b65dccf1f96744ce5204c3dd"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c16.srt",
+      "sha256": "e6a5824b91d131b13e14d92843c5976ae615ec5c934eb9c88e43a04e363d4dc8"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-c16.vtt",
+      "sha256": "03112987e6fdcb401530f3eae89b72a843b8d79c770513dcab473b1c03232a17"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-p02.srt",
+      "sha256": "9193fbcfc40c4dc52b632c8c1394ab00bdbb4ede0240c5aca78a5c74ece01d9a"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-p02.vtt",
+      "sha256": "bae22b69c740137d63c01bd352c8910e94121ef9d381699e38ae5dd3a3f15587"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-p03.srt",
+      "sha256": "e5edc784efcbd4a12d8764310d3b1518cd9afc16c9f09f84c7341b5571832a0c"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-p03.vtt",
+      "sha256": "881749a06b2e2b9f340b576b062522bfa9a07860072714707a3ca1098172f2e7"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-p04.srt",
+      "sha256": "045db436df47e1cfdaaba83544494d9359aa0a09d0e36678c85ccceb8d1d04c4"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-p04.vtt",
+      "sha256": "e157c8d7fff778416bfd656fd3ec3126c6bba05c78eea13f0d2d06ff78fb3f05"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-p05.srt",
+      "sha256": "e8b71ddbb9c26f99bab6463a5c3a2dece17be3cfc448757ab1c41de1848e5b5b"
+    },
+    {
+      "member": "wave5-2026-10-25/chem-m6-p05.vtt",
+      "sha256": "546861a714a8350db86236af609cf5a476b76ad4c1cac6dbd19072557626c9fd"
+    },
+    {
+      "member": "wave5-2026-10-25/manifest.json",
+      "sha256": "829a8f916d54fe830128d3fd1c18852948d717c3d125962bf35dd7cecaff0440"
+    },
+    {
+      "member": "wave5-2026-10-25/skills-s01.srt",
+      "sha256": "14ecfd9fd07d93005e6e18adeb5c0a06dff321d6ce537549c4a012b71a9ec23b"
+    },
+    {
+      "member": "wave5-2026-10-25/skills-s01.vtt",
+      "sha256": "2ffa2342efdd6736407e86e7c1748cb3a6d8d95e17b1be725020b7eba84fc825"
+    },
+    {
+      "member": "wave5-2026-10-25/skills-s02.srt",
+      "sha256": "b6ab93320cb2e3e9c8ecf443a84ce7b66224c0ff01bba2db6cf3a8a7cdc402eb"
+    },
+    {
+      "member": "wave5-2026-10-25/skills-s02.vtt",
+      "sha256": "9e5777750d63ffae2fb8b10d9f3ac56b646d2cb99fda13fb8427ca0d48951a87"
+    },
+    {
+      "member": "wave5-2026-10-25/skills-s03.srt",
+      "sha256": "b7d472cd9c021a940410d127ec7fbef185a588a5245dda609be502b8300f7192"
+    },
+    {
+      "member": "wave5-2026-10-25/skills-s03.vtt",
+      "sha256": "fc44bfc255e702af712e273f79b7a5ab7caa8723ad3b3290d756a118316e9b5b"
+    },
+    {
+      "member": "wave5-2026-10-25/skills-s04.srt",
+      "sha256": "7c5ee9ea87fdb48e25171bc8e60301265a5910c57a9e02a7327e034f0ee8eb7d"
+    },
+    {
+      "member": "wave5-2026-10-25/skills-s04.vtt",
+      "sha256": "61e87587aa238d50fea9f11fafeed3f21fd56bcbdb9de1ee4f8ec3746cc6158d"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b01.srt",
+      "sha256": "54f8571a023cd6de2c4bd552c63b1b72740b110722659c9eb8f7953d1f3e6249"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b01.vtt",
+      "sha256": "8ed684e5316296b1ce1018eae68819cf81367519a9bf946cb1ae7bedd63ce447"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b02a.srt",
+      "sha256": "b9ce204a3088b0bdc929cb3af309a138d2acf4b3fbaee9194f80224e96bd2197"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b02a.vtt",
+      "sha256": "ec3cec2650250721333380c07cd8da5a8897a67b197d8ef20fe405a97b6f6e46"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b02b.srt",
+      "sha256": "900a0252e1f7e2ed090d843e7c06ed4b617c694cce4476052727e50c8f4b4f4d"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b02b.vtt",
+      "sha256": "9829a7ee783df02c430ba8fcb7207e322192e0d1312061183faae875bc34e582"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b02c.srt",
+      "sha256": "0a38d6cba69706f0ffe4782318d10018ac50e7800abd8d06ffd0731c69616ccd"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b02c.vtt",
+      "sha256": "c977641bc567626d3e505322d5819b95adbfb8f0a73e2eede3a4a91a295805ad"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b03a2.srt",
+      "sha256": "5159b9aa45c7e9b09d5c8c914d3023c7638fe6d7ef6c67decee3517de1c89450"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b03a2.vtt",
+      "sha256": "b72d4b8f3d38dd6640b6e5a621a630a3df2697ff14070e12973766722cba71d5"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b03b.srt",
+      "sha256": "0b3c8142bf6ba3290e1fe24ae6b3455f864b5c1ee47dc16ba2c7163db20ebeb4"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b03b.vtt",
+      "sha256": "3f982210bad3fbb33da30b1bf23d30b0da6bc4f4bf760c58584c529881d82935"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b04.srt",
+      "sha256": "2d40b631724e92b5f69bf94d920d35266f85cf12c9fc4ae9add54cafa0cba9ba"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b04.vtt",
+      "sha256": "91c0a003a4947a9bac65c0db3702d2bb16b14e27eb9cdbd1c9a33f9dbdedb3ae"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b05a.srt",
+      "sha256": "b6660f7fbbf2f0a95cc64d44504afa32371f2088028262ade0872a78e9de9c62"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b05a.vtt",
+      "sha256": "9b1f18f7d4a512060ab26a9df94d8f4aca2dcba9d1e90ad7409446dd06a89031"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b05b.srt",
+      "sha256": "637f4c8c267b445efa48e233896b374277788a27c630cde97f1b8f0d1b79e351"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b05b.vtt",
+      "sha256": "215faf81925c9796df521d71057898ed539bf69ec9a9836c327066576a5e9a3f"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b06a.srt",
+      "sha256": "df8ba727b9fb10c81137fd5df23df3f6608ddc81d9c7654d358d1ba488a10bce"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b06a.vtt",
+      "sha256": "fa3e8d545ad6fc24fe3600c4ea644e1d7486ee44a9f43bb86c8399290ce66353"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b06b.srt",
+      "sha256": "c7a2949124ed1861a7c6ba4c18bd2295d60ccff189183bba71e87288996ac6ba"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b06b.vtt",
+      "sha256": "0f5ca54f75de0872ed068382036bf8a69bceba1bfe8cd18daaf4cbcaf6587d65"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b06c.srt",
+      "sha256": "7904bbe5d92d8f858500261ac48cac0bbe33ff600df40ed79b2e9a48e7d4f7cb"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b06c.vtt",
+      "sha256": "d5fa611e8e6e25f5f547dabf804392bab3609cca91638834109e7b4882e2194f"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b07.srt",
+      "sha256": "6a9a398b8d646efeecebd66db9f1d092b835efa46ce8e7b25b64787f2f636831"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b07.vtt",
+      "sha256": "170eca5ad2759926c25ab42b81c2a30d8d8c90d039dc356f549e8a3bf13ad634"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b08.srt",
+      "sha256": "475faaf9fcb6ff18354f875b31c1701b124e812beca03b23fb76e690c175c56e"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b08.vtt",
+      "sha256": "8f5258b2c91038e28ad74c411b5853885aa6151949111803ff441d3368845221"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b09.srt",
+      "sha256": "0c4777cc725fafa33b278d11f5846ac32801eda732323c314dae4c70050635b9"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b09.vtt",
+      "sha256": "cc8afcddf787f7084385e0564393b5a56575547cc8a82cf1f4f53588f0e9ca72"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b10.srt",
+      "sha256": "0bfbc5dbdbaac2b4f7db25ef6f4b4782a1b95e38ff17da026cbcc2c24fd3610b"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b10.vtt",
+      "sha256": "5767514e6d9e0febb41f79173f40629f34d04d6eecc219a52040f2d0c6477def"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b11.srt",
+      "sha256": "9c5a0d58bcfde7a7bdc646a932cf85dc29d7b9c0844503fda486d9fe2d4f3e4d"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b11.vtt",
+      "sha256": "3af064aed13182b919c4eb01e12ca83576043b00e5ae4b2da9ecfa66ced60f8c"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b12.srt",
+      "sha256": "299c1399e7f89f98a51e31a2ecb927590ff4b2716943579ca89f22d9231298aa"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b12.vtt",
+      "sha256": "2b8ac0dfef551f8e046a4030d74a0794b77dc1641ecde1f7ed45f65c727bd8d7"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b13.srt",
+      "sha256": "31d5e0f3aeaa4c9be79d730b80bff4050e478c1c2adbd89d8bb01dc765179f29"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-b13.vtt",
+      "sha256": "ca7bda35a29918a35afd3785e83c0de0ce266ffd95c1fafa665a9c8c87706994"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-g01.srt",
+      "sha256": "d669ddb6d65e5e813517ca7a4c1ac20bb31dc75107b57ef8b3230d0b5b791163"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-g01.vtt",
+      "sha256": "393ff64e99ca12deb51080653b6e49c7d3df335eaba84df8de88584bac874b58"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-g02.srt",
+      "sha256": "1c2745bc3ac80af262cbad96b4741890517ae32fd60c5a1cca804828d470d1fa"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-g02.vtt",
+      "sha256": "e630f49f03188233f20e86ebcc49f12dd5cbc88bf110869aad9af925c32d49a8"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-g03.srt",
+      "sha256": "94c6c80444b98f32b4a9285e15f950f4b7c2568c34878d0a95dd91c094cc35a9"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-g03.vtt",
+      "sha256": "b5104af3e701b3a305153f50b423c219e7ae4ab6b72d3a888da9839e9bb5336e"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-mould.srt",
+      "sha256": "35547a7aaa9de1c9b406df5591ebdf827b2e6d9c3c1bb1685dbd2d206f66cfaa"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-mould.vtt",
+      "sha256": "c95f4b56c9ca9cbadd6efdd8c85223057e5090a60000f2fb6eb39b515bdc7eb6"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-p01.srt",
+      "sha256": "0bf7efef6c9d166d8841b6af63b03e651182659b0b60145dfd6e15b95a06c927"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-p01.vtt",
+      "sha256": "8f3617161c2db030c347a6b11cacc0c2830de2016ed566c0058600f804dbdcbe"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-p02.srt",
+      "sha256": "a08754a77699ea0a8b58cf0a485ae067e00f40d5ae476dc550caab5996681851"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-p02.vtt",
+      "sha256": "e7aafe3a4593a2d24b0ceaa309188bac4c37f69d3903163f6994e6e969302c9f"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-p03.srt",
+      "sha256": "10bb95958145c8af83d415d26087b029fe0dbbaa73c9304d1ce8117194c843c1"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/bio-m5-p03.vtt",
+      "sha256": "570bc5dcf9dfe40038876822a9b3fe557b5c24f49c7c605cb685505cdac9e719"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c01.srt",
+      "sha256": "a749c6224d702d707f24d23a5f5ca8802e747b3d5f45c38f0e31b6c89cf0c17f"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c01.vtt",
+      "sha256": "f503f9773665a3d04beb4904d6f717bbc035801ce1598f8f6718ec7f21aec1e7"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c02.srt",
+      "sha256": "7e8cc3f80c5f19470fe7cda000084e11873b96dbc55dbbec67c203b2a86ad0a9"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c02.vtt",
+      "sha256": "8849bac5a2a90d9a99e3ad1781ae722565ef8547ca594b4f66a417933896a5b1"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c03.srt",
+      "sha256": "7107e1f3db5f6739e8543d9dacb21c59955deddfa1d639f3ba699a09fb903e72"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c03.vtt",
+      "sha256": "91d30b92cbe0da6210f15e993103e2af9f77264093daa9d7e709097e2cfee6a6"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c04a.srt",
+      "sha256": "685393eba7f039baa69b1fb7e4e921caa03cff9bdb0bdbc5b17c272fe4ec5e94"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c04a.vtt",
+      "sha256": "d6f45dc8b0aa10fd73b85bb310cf1fcbc0d3aa22f717e92591d0b9129667c4e1"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c04b.srt",
+      "sha256": "8467513f225784d802de313d007b6a7fa11336326c90b768499f4b17ade707d9"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c04b.vtt",
+      "sha256": "e7b2d723c98cc2a217a3125058bd8ea427cb7c4a01c9a11266e8b120935e515c"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c05.srt",
+      "sha256": "7589393cf132810194ff54ca40aa9b9365b61835bdfce2baf344218cb716a922"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c05.vtt",
+      "sha256": "8667392e4a2f18c3f7b946fdb5b3e1dd6db0c36f6e721afbc29cae67b78062ec"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c06a.srt",
+      "sha256": "d29e597eb35fe304df0e4b61b446f674a1faf33a597edf4d2a5e0463e6b4ec06"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c06a.vtt",
+      "sha256": "60613244fa1a7a38fa56e2270ef4d5ffe0738a3e4660e176e8664941c0e548da"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c06b.srt",
+      "sha256": "12b271c806f13eaadf99354326b44814c2c57c2f8fe7fd675df0be1d77bbc4f2"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c06b.vtt",
+      "sha256": "1132107b428edabb2ffb40f4b2dc0dcea31fd64551f68f12745662684b10c425"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c07.srt",
+      "sha256": "b91e5ae05ca51ebc2e66f83aab2d2ad01f84bd5d908683fd988cb4ca82b0fc79"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c07.vtt",
+      "sha256": "7e706481653bdf048212172623aca285b35c0eb48520a44db2bd7290acab825f"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c08.srt",
+      "sha256": "08c4c1e5c4d4af2b7c6f3b6a3395785c623a26a206ff0a696b298cf2c7dc721e"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c08.vtt",
+      "sha256": "778309984f8ece559e6d16b91f70aa6850d04c68ee87c04ea14f666b9b343d23"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c09.srt",
+      "sha256": "94727ab7d2cbc1e6776100e42e08aee19d846d224cd0e9946b2dbcbee94d90d0"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c09.vtt",
+      "sha256": "b5501c6eef516c54a79b5da2ba05c714936ec941dfd0a7f13d55c0c151c5f42e"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c10.srt",
+      "sha256": "93a2fe121b739a157b5304b6ca28049246ddfa5ea8229661b84274f67b4f16fd"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c10.vtt",
+      "sha256": "5536a4ad83f4e32dc258442891a144be8d8eb880eb9e10d60b3bd3fe8ad1815a"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c11.srt",
+      "sha256": "848079a3f1396ee7f11f3b443a85a799a6dc7af0183ffe34d37b78887def71ef"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c11.vtt",
+      "sha256": "c2e61a0bea57f3ebc786d70435e335ec9742f40491d3900a71d8321b4c6ffdb8"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c13.srt",
+      "sha256": "6ed0eb90b84ada47d3bb37e91939c1258794362aeea538214b3ae6b6a6359da0"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c13.vtt",
+      "sha256": "266def9a7e944a7814f779133f7ce73214b37d7ea135a58f95ecb623a03e092a"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c14.srt",
+      "sha256": "29a3814499057447f697e20a605a6b7f483c940d03434215b478334b33054857"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c14.vtt",
+      "sha256": "50ab0f049c7286136f498b27ac751e45ebe8ba5dc3336076f181840af911179e"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c15.srt",
+      "sha256": "73a64f4f18f230582ce4ee9a7cd186fb91d7f0f3fe3464503ce1652ee0cf27dc"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-c15.vtt",
+      "sha256": "66d76cc8aaf467c0b699144abba14c91d0c94f640487bd1ba90f24fd97e1812f"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-g01.srt",
+      "sha256": "7ee40154c061ae0b9f0999c5944058c175b7589d2a8528942ac6e3c9ff9f1a34"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-g01.vtt",
+      "sha256": "7dd3141f59f7c41a379aef2a2e1981bc3939dc075a3380211ae252d89d4a5576"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-g03b.srt",
+      "sha256": "7db5ea71a33f806a0b608d4fe92cf7acfe161f7f03b54aaaf191da05188ebe5a"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-g03b.vtt",
+      "sha256": "b3e0fe1f84f538bbfa3d263758755d8405092d6b8240d5c05156613958fae186"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-g03c.srt",
+      "sha256": "57201166c186dbf5cd3c4a69d6bd60c4d7103423a5af2b76e5076e15a8a1e5d2"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-g03c.vtt",
+      "sha256": "1134c7c2d5e2d4b270f2862828f7b1d5e120d909edf24eb374a8fb0fdfa78252"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-g03d.srt",
+      "sha256": "17f960ee0504ccad5a7547b0ec1fb22ebf69e85e6242fb435c62b30cd36102eb"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-g03d.vtt",
+      "sha256": "9424e2c8e125f16549687434e9defa8d7fc4b39853455fc18371fae1984e11a4"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-p01.srt",
+      "sha256": "282dea5922ea9a13bf218ee0a06e2ad03ca3add1984af338e2edef0f73bff6cf"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-p01.vtt",
+      "sha256": "ea9c6178c63dd9598be7ae9534ce5366ac45a8ef9430d8c7547515b52eacee15"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-p02.srt",
+      "sha256": "9abf965689b4e25611ab52aac7f53f52ae084af763f5fef95d50da0c6d42a0dc"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-p02.vtt",
+      "sha256": "c9d4faf7fa0c270531fd2f16ed34a374c1b494f2e9df6b5d7aae076d7475857e"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-p03.srt",
+      "sha256": "bd1fa6410bf64ac7f21df5a69ffb826636741d58f2540ed0f0328e232fbfff1c"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/chem-m5-p03.vtt",
+      "sha256": "441ba0df5a97c9ebf6125dac960b894d55f6f3d583de560955d1739384e922bc"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/manifest.json",
+      "sha256": "82f925c927ca676b53b2e796462021e426f92fbf32bfba9f8c039778478c7643"
+    },
+    {
+      "member": "earlier-waves-2026-10-25-v2/repair-inputs.json",
+      "sha256": "895cad0f85c726b170470d1d3644b354b9f744ce93aa9301f3e74700216ae640"
+    },
+    {
+      "member": "earlier-b03a-2026-10-25-v2/bio-m5-b03a.srt",
+      "sha256": "bc1f30ff9315db06aceb6aab5924a2eaaa390d79723adb116d92c50dbff7ac58"
+    },
+    {
+      "member": "earlier-b03a-2026-10-25-v2/bio-m5-b03a.vtt",
+      "sha256": "e46fcaca88c937d56bf44a80c0f29850ca0ad6232cd3bcea8a00c2e783c06f86"
+    },
+    {
+      "member": "earlier-b03a-2026-10-25-v2/manifest.json",
+      "sha256": "b3446ac75ffc13c07353fdf9547f784c9559e10a796ef5f82cc0e77eb3feab4f"
+    },
+    {
+      "member": "earlier-b03a-2026-10-25-v2/repair-inputs.json",
+      "sha256": "e80caba8f5b809b706317107ff2f3725725837d7f7e14fcd4cab815b66414cbf"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/catalog.json",
+      "sha256": "21fcd0d7375cdbe0872e56945a3505ea1754a08083730f30d3e26e2c322dde76"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/review-1.json",
+      "sha256": "bba1c83b6be83dfc2df8ca9a77bf0a5d6283d1f9df15cfabfd7e4f3ae513371b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/review-2.json",
+      "sha256": "6c39405598f8beb0fb3a36929e9b5c9bd12070e32bfe3e5a10f403906b65fcce"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/review-3.json",
+      "sha256": "a9bbbd59d6a48a1946499a687dbe101a4f608623aab79ba224e4564b025eca13"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/inputs/record-0.json",
+      "sha256": "2e92ec812a4c574ea27f53adee32546a33e30afea90dbb673fe2ce6b25e8c705"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/inputs/record-1.json",
+      "sha256": "895cad0f85c726b170470d1d3644b354b9f744ce93aa9301f3e74700216ae640"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/inputs/record-2.json",
+      "sha256": "ce6dbc06f6656d8f01230ec5fc05840b25e11aea4cac0d7ef37d954017b4e2e5"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/inputs/record-3.json",
+      "sha256": "6f92fc057ba076e83d0f613f6d1aa1320f562516fcb08f3e57a576ded97de679"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/inputs/record-4.json",
+      "sha256": "bbe18ab19accc90d8ec5116a04b68f1ba28b12f2c8ce3d939703363496962ac8"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/inputs/record-5.json",
+      "sha256": "fb2fadb562ad7988b121c126e740c02a52984e2c22a04d0de7ea1f57313f764a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v2/inputs/record-6.json",
+      "sha256": "e80caba8f5b809b706317107ff2f3725725837d7f7e14fcd4cab815b66414cbf"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b01.srt",
+      "sha256": "202d5d2270891d2919029cb820a472e8119f49d9510517e822ea6ae98f7d8e4f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b01.vtt",
+      "sha256": "5cfcb0d2dc18b01a7113963d5f9fb1b02801cabb65e021bd356fd01e80b7fb42"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b02a.srt",
+      "sha256": "aee2fd3e7f66fa0f3e85c50a59e9a2230197a686607f70ed1da93b854b37a69d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b02a.vtt",
+      "sha256": "ddd2876ef6ba48ee21a8e17fd761dcb4ac96e64c76eac73488f2c7590f74aa86"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b02b.srt",
+      "sha256": "f8078fa594321bc27d0c0e4241bf7b77bb4c51834ec6f22bc3c23e083ed402e8"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b02b.vtt",
+      "sha256": "1606b50e29a9ddce33a882ebfc50cccf75a9c1a3dde7eb7b3b47c4de907ed752"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b02c.srt",
+      "sha256": "a7f8fdc979e6c3b2ccc3e244eef58b9f8ccf4fbd725bb5b9daa7ba3c851652e8"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b02c.vtt",
+      "sha256": "3b57fb28787496b750c40aa62a70c3fa220bd3becbaa37b693a08be030e5b7b5"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b03a.srt",
+      "sha256": "a4389a8a2f476b1d20ca6d5c5f039353e97a157ff9f0c3d25d5e097f96f60ee9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b03a.vtt",
+      "sha256": "403784e63a38379b0c1101089c1a5c4c7535cbe4682961d323ed6a723903ad22"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b03a2.srt",
+      "sha256": "75fb5777ea5498bec041377f3c8eb237829be852b3534386e4f182d851fac09d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b03a2.vtt",
+      "sha256": "979aa9e878bd9c538bd1492c7cbb5edd94f7821dde12e94f7473083138a8a954"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b03b.srt",
+      "sha256": "e70fc170e5eb36b789d1deadafadf2431dabcc5c8dcff17bfe198283721d3ca6"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b03b.vtt",
+      "sha256": "1e0082201d15ecc2652cf7f849db9082eda0e01ef264601102d207c3142e0cce"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b04.srt",
+      "sha256": "a3de8024518c0974be32f5a8d84a36c52b5d910588f769e44086b1f366e215cf"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b04.vtt",
+      "sha256": "8742bb4d16cc6230ee52e7a72db1873a87550e53c1164b44cc9790f65418f81f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b06a.srt",
+      "sha256": "485ce95a7bf305096f347f280c72c4beab745a01ab42473f45d18f22ca4bef3d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b06a.vtt",
+      "sha256": "23238253074cb1f1e7678a1f74b0ea75e2f277e210ae112823b982b20facd7ad"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b09.srt",
+      "sha256": "bf2a1439fcaa253772c8a524f7ccbba669f04806b221ddd8c1a0de5df7b2887e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-b09.vtt",
+      "sha256": "43ab7e163260c08e99b0448f30b26ca9af9462cf584f4c62a75791f22534149e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-g01.srt",
+      "sha256": "55958814ae82d32c98b7b98d90658af732155b9ba71f95586714328451be79ff"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-g01.vtt",
+      "sha256": "684f022e6d721f4eae9578d3f44fcb6112fb5e7702876c4f5b70945bee3d5339"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-mould.srt",
+      "sha256": "65b029ef5d7ad3ab41b0612a890818da33a17f22dbb867af5486059bb058ecff"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/bio-m5-mould.vtt",
+      "sha256": "dd27f152bbb44ccafbf62d3bf115a2530444ab0eef3cfaa3e280957540668593"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c01.srt",
+      "sha256": "ec35aa82b01714ebf0d84fd9861de01b832fff4b883ee5238916c2a9ece46118"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c01.vtt",
+      "sha256": "986260dff5e31eeea71ff72487a633f35c517a561d8fc70b67f5712c28fbd036"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c02.srt",
+      "sha256": "7055f61f87afc2168c677cd3148ad0216385dc0a0ce845e0741df56a6e597190"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c02.vtt",
+      "sha256": "1fdc6c1dbbb8f03c1e4b408d01d5045c66b1d38bb9fb9f8d0f74073a509c38fe"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c03.srt",
+      "sha256": "671695ad9d84098ba0317cfda7341fcf63294640c64fd636d7a7ce96cb14fcb6"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c03.vtt",
+      "sha256": "f04ac0840a3cc9122b5a26a55d3bc62130bd9439049888358d9de2b531ea5b06"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c04a.srt",
+      "sha256": "0734015042dc21aaf2266f08befc1d54b4f390cd1987aa4d01162e510ed2c95c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c04a.vtt",
+      "sha256": "3e98456c49ebd2e3f03c85ba9068af2b83acde59ce6b82fb7122fc6c8b7f31c0"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c04b.srt",
+      "sha256": "1fda00bab8ff19c8caae40e99baf450fded158e1e10f179b0a0b077b59559386"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c04b.vtt",
+      "sha256": "98370e84c34db62964b38a6fbc65c180dff52c2c1fc1f27911e3474c77a8789a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c05.srt",
+      "sha256": "0bb9c7be1ccfdf904f918c08e4579008aca92b61d9dca79df1789e0c7d83036e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c05.vtt",
+      "sha256": "90cfffd5764a200bd23251c7d0c45d795889599272fccba6a4a7f80b3e0d8923"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c06a.srt",
+      "sha256": "6408150ec7f0a2bb76028e093442747866976827f6533755817fcfd376926058"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c06a.vtt",
+      "sha256": "a4d03e93b53f4acfa75d4984415eb504cb18b53b14155533213f72ec1df10773"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c06b.srt",
+      "sha256": "9b79035ff50f3bce823d76a2b22341631a61b911326fa8251b6ef76755d4beaa"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c06b.vtt",
+      "sha256": "0088280a7e25187f78a208085286594f02e5c2791aa78c7afc35dc92524b4a24"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c07.srt",
+      "sha256": "c7785ac492641cd1682784cb7fb9cd0fd2d5bf747542187c3bf865aaffdd1301"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c07.vtt",
+      "sha256": "ae965d86627de1528b599de8e6febd3188f36814a9a293b8a590c34df3f65f4c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c08.srt",
+      "sha256": "b0a1f0b268c8fa0597a72ab131d99b403f2d8cd4793b5f784d6a871fb33ca1ea"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c08.vtt",
+      "sha256": "02a9c1cea3c5f52888334b88eb6b3399271af87d039d93883affa1b4588f09a6"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c09.srt",
+      "sha256": "41e37aa553d828417d9cecdf58a8c30d18f95e95482a16effcabaf31d24c9b67"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c09.vtt",
+      "sha256": "8b574c67efc9359bec0363fd1cae2bd352066529584e16ed894e27554d72ddaa"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c11.srt",
+      "sha256": "562152c8c8966068c8739584c03c8d6a3d82eb4120f77c8409aca58dde4cf545"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c11.vtt",
+      "sha256": "51cd5980cec842edd0717ad1dbbc66d9ed06b58cb51fb0854e9f8698e9843109"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c13.srt",
+      "sha256": "a787d7922a08f7667dfc6f75a389e33b75d9f2fff128dae7c43df18eaa2f01d1"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c13.vtt",
+      "sha256": "47eb69d1b49e11ed88e990189a214dc3865dc5e74f5b8e2b74ebc92ae44b4891"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c14.srt",
+      "sha256": "ee376f8e968627d28ed83b91204eaa5b8b254b536f0f0c85b4240832153fe27a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-c14.vtt",
+      "sha256": "9bb1678964674b08090f482a85dd172554165fabbcf3e1c4adad84ba8abcbc11"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-g01.srt",
+      "sha256": "2c8da3987679b815c76621b02cb9b3bbcf41437e6b7f05f5a48533056ee45c26"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-g01.vtt",
+      "sha256": "b5c93e3899958818590c985b151a80733a099ce55d6fe4d9d9722d2a20880c99"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-g03b.srt",
+      "sha256": "48c3f6b70af4121bbc633e9554fc2235c06dd5ad451f1452933b023e0af3a4a1"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-g03b.vtt",
+      "sha256": "192b731f3d6fd18ae45e19b33dd48f78f0decf7b06aceccaae06b806614099db"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-g03c.srt",
+      "sha256": "b732d407e684f930e57912c69c33b387050e923d604715f6c217dce6a8df425c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-g03c.vtt",
+      "sha256": "02c4b59e976c21a2b3b491f0bea505ea3d41c2860bbb7b36a652b2d0b06a93fa"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-g03d.srt",
+      "sha256": "3b8171be5f12a039b8bfa44ca0982d41c257e876abbe606a9340bbd096ade7e2"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-g03d.vtt",
+      "sha256": "f314db9fb517b9fb10084488db3454d64c48dac6543ce81390c41b106616beb2"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-p03.srt",
+      "sha256": "07edf0a82b94639f8e665a41714f40026534e2031b0e577e9f34890e7de77470"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/chem-m5-p03.vtt",
+      "sha256": "1a2fe4c2fa84c523ec709cb8285d987ea009e26ca87819e2a7b90eb1ea8fb629"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/manifest.json",
+      "sha256": "4d791fd72bbc008e6ddc764fae64c86e7783e3f47d1e069e3d3cc5ee15c1089d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/repair-inputs.json",
+      "sha256": "82c690f65635205baf18ea01ae125aa927b60d9332a499d8534cbdf8f2ca1c1c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/000-catalog.json",
+      "sha256": "21fcd0d7375cdbe0872e56945a3505ea1754a08083730f30d3e26e2c322dde76"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/001-review-1.json",
+      "sha256": "bba1c83b6be83dfc2df8ca9a77bf0a5d6283d1f9df15cfabfd7e4f3ae513371b"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/002-manifest.json",
+      "sha256": "829a8f916d54fe830128d3fd1c18852948d717c3d125962bf35dd7cecaff0440"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/003-record-0.json",
+      "sha256": "2e92ec812a4c574ea27f53adee32546a33e30afea90dbb673fe2ce6b25e8c705"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/004-review-2.json",
+      "sha256": "6c39405598f8beb0fb3a36929e9b5c9bd12070e32bfe3e5a10f403906b65fcce"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/005-manifest.json",
+      "sha256": "82f925c927ca676b53b2e796462021e426f92fbf32bfba9f8c039778478c7643"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/006-record-1.json",
+      "sha256": "895cad0f85c726b170470d1d3644b354b9f744ce93aa9301f3e74700216ae640"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/007-record-2.json",
+      "sha256": "ce6dbc06f6656d8f01230ec5fc05840b25e11aea4cac0d7ef37d954017b4e2e5"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/008-record-3.json",
+      "sha256": "6f92fc057ba076e83d0f613f6d1aa1320f562516fcb08f3e57a576ded97de679"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/009-record-4.json",
+      "sha256": "bbe18ab19accc90d8ec5116a04b68f1ba28b12f2c8ce3d939703363496962ac8"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/010-record-5.json",
+      "sha256": "fb2fadb562ad7988b121c126e740c02a52984e2c22a04d0de7ea1f57313f764a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/011-review-3.json",
+      "sha256": "a9bbbd59d6a48a1946499a687dbe101a4f608623aab79ba224e4564b025eca13"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/012-manifest.json",
+      "sha256": "b3446ac75ffc13c07353fdf9547f784c9559e10a796ef5f82cc0e77eb3feab4f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/013-record-6.json",
+      "sha256": "e80caba8f5b809b706317107ff2f3725725837d7f7e14fcd4cab815b66414cbf"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/014-captions-qa-2026-10.md",
+      "sha256": "c91cb6b3860f580477e3f5ad11213020d5fe58e81d479d0074287ddbf240d69a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/015-codex-interim-live-caption-provenance.json",
+      "sha256": "111e32cafd97c302065437a677fb4b749ee9f596aef9e4182044d041c570a05a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/016-captions-fixed.srt",
+      "sha256": "18b8557c9a4abfc25663a434ea73b01995bb8ae27bcbf72657b5e90b606da913"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/017-captions.srt",
+      "sha256": "44a2a50ae2425685b49c9d0a88acce1af32617222513137aa949e1419a788327"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/018-lesson.json",
+      "sha256": "8dd6106d82a5b2fd5cfc7f0ea442c285b5b303595ce076532a652cc072f0a94f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/019-bio-m5-b01.srt",
+      "sha256": "54f8571a023cd6de2c4bd552c63b1b72740b110722659c9eb8f7953d1f3e6249"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/020-bio-m5-b01.vtt",
+      "sha256": "8ed684e5316296b1ce1018eae68819cf81367519a9bf946cb1ae7bedd63ce447"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/021-bio-m5-b01.sbv",
+      "sha256": "4e29d6d6629b959a775855652654abdc86b68124af1f21ab8d0b2e5f7337d7b6"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/022-captions-fixed.srt",
+      "sha256": "0b6c2c0a79974dc5e471417fb9932cdef42db86667f760c6c3fd5bae0af7713b"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/023-captions.srt",
+      "sha256": "4bb818f95637a72a3d47ab37968ffde752b220ae8b1815014fab3d67e1f2c439"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/024-lesson.json",
+      "sha256": "82b6778b5b2ad1388dd0fa50de827f852306a00b591f24f493971afeca7a6d43"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/025-bio-m5-b02a.srt",
+      "sha256": "b9ce204a3088b0bdc929cb3af309a138d2acf4b3fbaee9194f80224e96bd2197"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/026-bio-m5-b02a.vtt",
+      "sha256": "ec3cec2650250721333380c07cd8da5a8897a67b197d8ef20fe405a97b6f6e46"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/027-bio-m5-b02a.sbv",
+      "sha256": "89af60598ea3374bc2d7fdfcbec35523ba7151aa27ee9361a2a97db85e745cdd"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/028-captions-fixed.srt",
+      "sha256": "a7ffeb2916aae86c8f06c03e3166b42af2f640cb622ca93706c1512b4d60cc10"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/029-captions.srt",
+      "sha256": "d0cf3434937b513ded9f305c8998c00da5d8ce515060b5506956a9ab8f5d5e29"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/030-lesson.json",
+      "sha256": "6e22ed84d9597ed61c1cf57cce008b579c4b8e1d4009f20b0d1c0248f5a8d48f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/031-bio-m5-b02b.srt",
+      "sha256": "900a0252e1f7e2ed090d843e7c06ed4b617c694cce4476052727e50c8f4b4f4d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/032-bio-m5-b02b.vtt",
+      "sha256": "9829a7ee783df02c430ba8fcb7207e322192e0d1312061183faae875bc34e582"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/033-captions-fixed.srt",
+      "sha256": "43c304ac9154c2886dfc87d357c6fcb8ae308520a0f94d7dc24987b86fb44bed"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/034-captions.srt",
+      "sha256": "26357c993d9922c5d290716bd4fba99684b4640fa4e1e3a3c4d0b23ec0637063"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/035-lesson.json",
+      "sha256": "35e4cc818978a2d3bb09535f04901811a295fc5659fbc0c2bb60f4ca526df9aa"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/036-bio-m5-b02c.srt",
+      "sha256": "0a38d6cba69706f0ffe4782318d10018ac50e7800abd8d06ffd0731c69616ccd"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/037-bio-m5-b02c.vtt",
+      "sha256": "c977641bc567626d3e505322d5819b95adbfb8f0a73e2eede3a4a91a295805ad"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/038-captions-fixed.srt",
+      "sha256": "b91572ab23e811fc9ff5e72b13108263c45d02f813bd4557281755d369858cdb"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/039-captions.srt",
+      "sha256": "bf5ceea5bff480b0f56854b99ee57bce19aebab0639e349d1772c0b5bdbe5e99"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/040-lesson.json",
+      "sha256": "68130604814d25b8b3fc14e38fcf6965c33866b82b0a29daff2a867b44a543f7"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/041-bio-m5-b03a.srt",
+      "sha256": "bc1f30ff9315db06aceb6aab5924a2eaaa390d79723adb116d92c50dbff7ac58"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/042-bio-m5-b03a.vtt",
+      "sha256": "e46fcaca88c937d56bf44a80c0f29850ca0ad6232cd3bcea8a00c2e783c06f86"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/043-codex-interim-b03a-audio-evidence.json",
+      "sha256": "7c56e21ab04468a4a98b3722db0b769b721068ec8819c79acb7139621d9dc3cd"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/044-captions-fixed.srt",
+      "sha256": "09e7f523c8562e2306075e63443b7cdfe806051fda8acdde4172d6ce57fb4f56"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/045-captions.srt",
+      "sha256": "5d22331b6baf33ffc73f4304a0a815ad39c9e15c9bd65b7affcfa9cdae81585f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/046-lesson.json",
+      "sha256": "167064dddb4462f6665c9b68d6929529e75eb2f4eaab43c2d4e3770eb9348d30"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/047-bio-m5-b03a2.srt",
+      "sha256": "5159b9aa45c7e9b09d5c8c914d3023c7638fe6d7ef6c67decee3517de1c89450"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/048-bio-m5-b03a2.vtt",
+      "sha256": "b72d4b8f3d38dd6640b6e5a621a630a3df2697ff14070e12973766722cba71d5"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/049-captions-fixed.srt",
+      "sha256": "084b989f643a5e8a5df1e8d6447377ac6a0d7da587ec7827ed1c8ced63057b24"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/050-captions.srt",
+      "sha256": "8d43e81cf79eaec4fa108e0ce4bb42157577a553b444a2e599171576f6be2529"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/051-lesson.json",
+      "sha256": "bfac559244b3cbe20dd173644674054a693a9594c930433418f998f084a34ca5"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/052-bio-m5-b03b.srt",
+      "sha256": "0b3c8142bf6ba3290e1fe24ae6b3455f864b5c1ee47dc16ba2c7163db20ebeb4"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/053-bio-m5-b03b.vtt",
+      "sha256": "3f982210bad3fbb33da30b1bf23d30b0da6bc4f4bf760c58584c529881d82935"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/054-captions-fixed.srt",
+      "sha256": "847ca8b1ee59e4170301db450fdd5fc9bd927145839d93a411d6ce6d73883e61"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/055-captions.srt",
+      "sha256": "b2029e634e5b9f04235dba47fa9ed582c631844217d1b9d543aa884073f35725"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/056-lesson.json",
+      "sha256": "1c15e55ef1037ea1ab62a7028a8d700eed748e6b685b55cbddf72d6052f01292"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/057-bio-m5-b04.srt",
+      "sha256": "2d40b631724e92b5f69bf94d920d35266f85cf12c9fc4ae9add54cafa0cba9ba"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/058-bio-m5-b04.vtt",
+      "sha256": "91c0a003a4947a9bac65c0db3702d2bb16b14e27eb9cdbd1c9a33f9dbdedb3ae"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/059-captions-fixed.srt",
+      "sha256": "ce6325bf3ff7c99a2187fc4489d6eb7c12bc1dd06ece88974376573e748a94db"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/060-captions.srt",
+      "sha256": "5ea44cf34c69f849c4f403747fdcdb5fcc3e767f6ca6497c384ce6390459aab0"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/061-lesson.json",
+      "sha256": "1351d8f4e86c7b5f819cc6be74027b3d020644e8aaa6b51eaa25e4913eadf716"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/062-bio-m5-b06a.srt",
+      "sha256": "df8ba727b9fb10c81137fd5df23df3f6608ddc81d9c7654d358d1ba488a10bce"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/063-bio-m5-b06a.vtt",
+      "sha256": "fa3e8d545ad6fc24fe3600c4ea644e1d7486ee44a9f43bb86c8399290ce66353"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/064-captions-fixed.srt",
+      "sha256": "5af6bd139ac5058e8368047895a6b2523fe1b205e7fee5c93b551e2b73373a53"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/065-captions.srt",
+      "sha256": "8c6308c0844399aaa4dcccff6b2f449cf3a4a162ca9033b5cb533431500bb3a0"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/066-lesson.json",
+      "sha256": "79ea6fc27478b05d21bb00addac4818501f0ff241dda2f467b3dec8bd5a4e638"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/067-bio-m5-b09.srt",
+      "sha256": "0c4777cc725fafa33b278d11f5846ac32801eda732323c314dae4c70050635b9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/068-bio-m5-b09.vtt",
+      "sha256": "cc8afcddf787f7084385e0564393b5a56575547cc8a82cf1f4f53588f0e9ca72"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/069-captions-fixed.srt",
+      "sha256": "3d23273b12ffce728b4703adc7547ab1a46c59174f4cc10b050a8cfbcbf4d27b"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/070-captions.srt",
+      "sha256": "97a7eb56a5dbcf5a614d474d2a256c01a88ea411a82c9ef56304244e90b09309"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/071-lesson.json",
+      "sha256": "fb9618b492abb21c647273f92e0515bb6fd555a5649f5c3dbfe9acb3d9be68a7"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/072-chem-m5-c01.srt",
+      "sha256": "a749c6224d702d707f24d23a5f5ca8802e747b3d5f45c38f0e31b6c89cf0c17f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/073-chem-m5-c01.vtt",
+      "sha256": "f503f9773665a3d04beb4904d6f717bbc035801ce1598f8f6718ec7f21aec1e7"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/074-chem-m5-c01.sbv",
+      "sha256": "4c5aa9468c6d26532a4fb248711a18c41881c68c7953b1caa2a712340c3a86d9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/075-captions-fixed.srt",
+      "sha256": "ad0c2d3ad05620eee337221602be1bd699020d9b7ba99471c5386a39383e7257"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/076-captions.srt",
+      "sha256": "0ad804befa33e26e5cbf286b7f71c99a7bcc5745db9849a4252c9d771ade47bb"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/077-lesson.json",
+      "sha256": "57e2996c8a215ca7dba26403789cdc7ecc85c614d829a397d9df13b58f9cf706"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/078-chem-m5-c11.srt",
+      "sha256": "848079a3f1396ee7f11f3b443a85a799a6dc7af0183ffe34d37b78887def71ef"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/079-chem-m5-c11.vtt",
+      "sha256": "c2e61a0bea57f3ebc786d70435e335ec9742f40491d3900a71d8321b4c6ffdb8"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/080-captions-fixed.srt",
+      "sha256": "ce01bed6bd952efa59afd162f0501cd3fbfb8418c52ced60e57ca820e0f33e0d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/081-captions.srt",
+      "sha256": "3f249fb4589d5113e488f0cafc57b89ee4d79ed0a7849cd146f45edab037c6f8"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/082-lesson.json",
+      "sha256": "0dbc3a09f93ee403a617bd012726e65a33580ea7299c66110a8f228ad5bae2ea"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/083-chem-m5-c13.srt",
+      "sha256": "6ed0eb90b84ada47d3bb37e91939c1258794362aeea538214b3ae6b6a6359da0"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/084-chem-m5-c13.vtt",
+      "sha256": "266def9a7e944a7814f779133f7ce73214b37d7ea135a58f95ecb623a03e092a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/085-captions-fixed.srt",
+      "sha256": "53f86b2749b15dd7d7b904ebea5a3420ba9ecd72cb6c82002139b423d08c10e4"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/086-captions.srt",
+      "sha256": "c0b34af13ae54a41014ae632e32701d819224beff98009c9b44dd27656522c24"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/087-lesson.json",
+      "sha256": "249eb57428a0e675dc482169326902e17d6c650b906e654c182af734d39948d0"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/088-chem-m5-c14.srt",
+      "sha256": "29a3814499057447f697e20a605a6b7f483c940d03434215b478334b33054857"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/089-chem-m5-c14.vtt",
+      "sha256": "50ab0f049c7286136f498b27ac751e45ebe8ba5dc3336076f181840af911179e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/090-captions-fixed.srt",
+      "sha256": "85efef638c232f1b7418bc382277458c22728e3815e1c5bacf48ee09b8c25d4f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/091-captions.srt",
+      "sha256": "b11aa3bffdda6b4e52cb28310a7d5fa145f1cf500dea607855bf1efad6951bbd"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/092-lesson.json",
+      "sha256": "f04fbd85fce939bb2ad8169bced612c53d546448981fdd1b854b32718f4381f5"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/093-chem-m5-c02.srt",
+      "sha256": "7e8cc3f80c5f19470fe7cda000084e11873b96dbc55dbbec67c203b2a86ad0a9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/094-chem-m5-c02.vtt",
+      "sha256": "8849bac5a2a90d9a99e3ad1781ae722565ef8547ca594b4f66a417933896a5b1"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/095-chem-m5-c02.sbv",
+      "sha256": "1bc9e0c71f4e423dd3e93a8a2d2e40474ab3407dac151511da287b460343b277"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/096-captions-fixed.srt",
+      "sha256": "34edf008d9900f3b4c04238f97acef7dc83745f8a1bfe9bf845d57efa7778c8c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/097-captions.srt",
+      "sha256": "a9b6be733ef10b60094bd7fad7a4964a2104b3be1d86d8bf1ec6fc30a14c60c1"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/098-lesson.json",
+      "sha256": "469abdc9ba9cd7cf4edf979dc38a6f03a7d20e1e5db71074f92410ec4958bcf6"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/099-chem-m5-c03.srt",
+      "sha256": "7107e1f3db5f6739e8543d9dacb21c59955deddfa1d639f3ba699a09fb903e72"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/100-chem-m5-c03.vtt",
+      "sha256": "91d30b92cbe0da6210f15e993103e2af9f77264093daa9d7e709097e2cfee6a6"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/101-captions-fixed.srt",
+      "sha256": "012867cf4e665e51655206a9ca7242bc40c6bebc0d123aebc66b69395ca6348e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/102-captions.srt",
+      "sha256": "fe31386056c49a011d0c0fc5a4172ed9477ac4af22178d229ba3fbd5d4dd4363"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/103-lesson.json",
+      "sha256": "d1ab4eacdd458527f34a87e3aba93bff7e54ae0321f7ba823ed7a36749d9b87a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/104-chem-m5-c04a.srt",
+      "sha256": "685393eba7f039baa69b1fb7e4e921caa03cff9bdb0bdbc5b17c272fe4ec5e94"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/105-chem-m5-c04a.vtt",
+      "sha256": "d6f45dc8b0aa10fd73b85bb310cf1fcbc0d3aa22f717e92591d0b9129667c4e1"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/106-captions-fixed.srt",
+      "sha256": "98f53589f4b80e73cd139e93b4ce1d6dd058c623c1f27375156cbfc687db8a8e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/107-captions.srt",
+      "sha256": "5d8ad171af3f1102d0a1c18a2c2325ccbbbe949a05d19f5a71782b5aadb970d4"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/108-lesson.json",
+      "sha256": "c7849f41ebe2495641e532f83ef74b5bdd3165119ef4d4006dc9fd8d25da6f21"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/109-chem-m5-c04b.srt",
+      "sha256": "8467513f225784d802de313d007b6a7fa11336326c90b768499f4b17ade707d9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/110-chem-m5-c04b.vtt",
+      "sha256": "e7b2d723c98cc2a217a3125058bd8ea427cb7c4a01c9a11266e8b120935e515c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/111-captions-fixed.srt",
+      "sha256": "7e253db9d8542ac05b809433203ed6d150bfa92d53c539f9065b7a5414f94072"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/112-captions.srt",
+      "sha256": "af39acd0921d9047b14cae6b61d02fbe92c0d4691abdc871b1e6e403e28f605c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/113-lesson.json",
+      "sha256": "02b025d21489247b12d79edd88f20ec530ff8cc91c8ef54b5f89edf4bb16ec92"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/114-chem-m5-c05.srt",
+      "sha256": "7589393cf132810194ff54ca40aa9b9365b61835bdfce2baf344218cb716a922"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/115-chem-m5-c05.vtt",
+      "sha256": "8667392e4a2f18c3f7b946fdb5b3e1dd6db0c36f6e721afbc29cae67b78062ec"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/116-captions-fixed.srt",
+      "sha256": "dcf4c37d95d5213572e4d251e737ffc69390c1d9dada9357bc2516b3be2892c9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/117-captions.srt",
+      "sha256": "4ead6b2ef7c57c1818186933ceb66a903cdfb9e9e6840aa16c78f4fdad0c5c47"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/118-lesson.json",
+      "sha256": "71ddb57be43bbd13b442dc7e1fe80950f03c6719432b43913e6c3308dc81ec04"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/119-chem-m5-c06a.srt",
+      "sha256": "d29e597eb35fe304df0e4b61b446f674a1faf33a597edf4d2a5e0463e6b4ec06"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/120-chem-m5-c06a.vtt",
+      "sha256": "60613244fa1a7a38fa56e2270ef4d5ffe0738a3e4660e176e8664941c0e548da"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/121-captions-fixed.srt",
+      "sha256": "7bdb14eb8d06b9f712acdd1b5df30b3a7c66d9517347cb317557b1021cca3893"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/122-captions.srt",
+      "sha256": "d8ab58af9622e590430c5fb582b0e3876fda2d9f1892428ad9e835d3ff8b1061"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/123-lesson.json",
+      "sha256": "c1abb85695c5b6e55238de6ca06dcaeb52a8b2dddc7fb2178c090f3603a7a576"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/124-chem-m5-c06b.srt",
+      "sha256": "12b271c806f13eaadf99354326b44814c2c57c2f8fe7fd675df0be1d77bbc4f2"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/125-chem-m5-c06b.vtt",
+      "sha256": "1132107b428edabb2ffb40f4b2dc0dcea31fd64551f68f12745662684b10c425"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/126-captions-fixed.srt",
+      "sha256": "fa3bb37577d94b80a42087b3e84a408635431c4d63e19701a03a62b4a2c4efb2"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/127-captions.srt",
+      "sha256": "7299b3a32e0ed63994a72c93228f603605b8b9d8595f3dab8b7348609a06c63b"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/128-lesson.json",
+      "sha256": "d2f12d46eb181f76b63adb288703f483348c43cc931ab8c9070237b30b7a92a4"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/129-chem-m5-c07.srt",
+      "sha256": "b91e5ae05ca51ebc2e66f83aab2d2ad01f84bd5d908683fd988cb4ca82b0fc79"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/130-chem-m5-c07.vtt",
+      "sha256": "7e706481653bdf048212172623aca285b35c0eb48520a44db2bd7290acab825f"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/131-captions-fixed.srt",
+      "sha256": "2c9fdeb38b790a444e6ec8e2821f66213aac856d12c384c9ba1c95c5cd76f67a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/132-captions.srt",
+      "sha256": "e05a1bb74261f2fd6c75270237b2a19808ed20d795a880afdd0d650a5310ba5d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/133-lesson.json",
+      "sha256": "00982cb98125122e213bdea7fcc2e7ba3541a2fe6c129d925fcb1008fd371756"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/134-chem-m5-c08.srt",
+      "sha256": "08c4c1e5c4d4af2b7c6f3b6a3395785c623a26a206ff0a696b298cf2c7dc721e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/135-chem-m5-c08.vtt",
+      "sha256": "778309984f8ece559e6d16b91f70aa6850d04c68ee87c04ea14f666b9b343d23"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/136-captions-fixed.srt",
+      "sha256": "0b8788517538ae03adecd1cbd61b7e5c2c4cb0e97735c35dd33b95eab6caf1e2"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/137-captions.srt",
+      "sha256": "523ef063fff9fcc368e25c48e964fb9723b38866d7748e918cf8a22abb15ef97"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/138-lesson.json",
+      "sha256": "5d4610967b29473cbd953c94b8c341efb993571bc42dba2ef0a45e1e206e263d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/139-chem-m5-c09.srt",
+      "sha256": "94727ab7d2cbc1e6776100e42e08aee19d846d224cd0e9946b2dbcbee94d90d0"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/140-chem-m5-c09.vtt",
+      "sha256": "b5501c6eef516c54a79b5da2ba05c714936ec941dfd0a7f13d55c0c151c5f42e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/141-captions-fixed.srt",
+      "sha256": "a768cc189cfac3a59353785110cdd7f0af8763ce7b2885f74581611d92d70f84"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/142-captions.srt",
+      "sha256": "4a65363ac9cf81b952e00a4da26e4b85804a364e901b528931174c66a8cc5df0"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/143-lesson.json",
+      "sha256": "8fbf5771d5450bec39e67cf9fc943726c0e0925d368e70d8a300752916f76b3d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/144-chem-m5-g01.srt",
+      "sha256": "7ee40154c061ae0b9f0999c5944058c175b7589d2a8528942ac6e3c9ff9f1a34"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/145-chem-m5-g01.vtt",
+      "sha256": "7dd3141f59f7c41a379aef2a2e1981bc3939dc075a3380211ae252d89d4a5576"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/146-captions-fixed.srt",
+      "sha256": "1fec3d957a449084793f338e5e2856f87aca8969d1171c386a849f5824e8c1d4"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/147-captions.srt",
+      "sha256": "1000d2b6d97e4ce73d4a4e546180e66a070c54938fa88315be8b8fff8c700ebe"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/148-lesson.json",
+      "sha256": "6b227e658ac370c73b70fd6e251d05d60022dea06562d9a8c2042f814434f84e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/149-bio-m5-g01.srt",
+      "sha256": "d669ddb6d65e5e813517ca7a4c1ac20bb31dc75107b57ef8b3230d0b5b791163"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/150-bio-m5-g01.vtt",
+      "sha256": "393ff64e99ca12deb51080653b6e49c7d3df335eaba84df8de88584bac874b58"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/151-captions-fixed.srt",
+      "sha256": "ba277860582959f62425d6510b526b765a423820655bf6332db80639145e0ddf"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/152-captions.srt",
+      "sha256": "8958874ae8fc0307353f4f5a6073045f0ea17d663ebd54fb30dfcd9e74afba4b"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/153-lesson.json",
+      "sha256": "44a93f183425ba6c0db33da3be850e1113007fa8beda621d66422f1297fbcb4a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/154-chem-m5-g03b.srt",
+      "sha256": "7db5ea71a33f806a0b608d4fe92cf7acfe161f7f03b54aaaf191da05188ebe5a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/155-chem-m5-g03b.vtt",
+      "sha256": "b3e0fe1f84f538bbfa3d263758755d8405092d6b8240d5c05156613958fae186"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/156-captions-fixed.srt",
+      "sha256": "e47266ba731401f741485c8695fa8377739e96d4ce76211aae92709c94079b0c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/157-captions.srt",
+      "sha256": "d7108eca4340381bfbfd2c71cdc307b2821d51d5b0b2957bf25cf6cf6f381dff"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/158-lesson.json",
+      "sha256": "03d0c157cae864a0e04131772ecbb66a8ab409adfada60616586a677b18a21ce"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/159-chem-m5-g03c.srt",
+      "sha256": "57201166c186dbf5cd3c4a69d6bd60c4d7103423a5af2b76e5076e15a8a1e5d2"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/160-chem-m5-g03c.vtt",
+      "sha256": "1134c7c2d5e2d4b270f2862828f7b1d5e120d909edf24eb374a8fb0fdfa78252"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/161-captions-fixed.srt",
+      "sha256": "d4facd4fd2b86f3d19bdcd6f7291f8095d9c703145762ddc90176d0ed297569e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/162-captions.srt",
+      "sha256": "3166c5b81dd1e0b881fcacf29b063d86cc0b5a8f4d115f8d793993fba9cee8f9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/163-lesson.json",
+      "sha256": "dc6230a21258810edf04170d8e5d63fb9053e76323cbb10599af4affcb3d717d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/164-chem-m5-g03d.srt",
+      "sha256": "17f960ee0504ccad5a7547b0ec1fb22ebf69e85e6242fb435c62b30cd36102eb"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/165-chem-m5-g03d.vtt",
+      "sha256": "9424e2c8e125f16549687434e9defa8d7fc4b39853455fc18371fae1984e11a4"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/166-captions-fixed.srt",
+      "sha256": "cbea578c4498b92d2224197e2110655e78a2ca141ba5a7c7ee20d023c9928554"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/167-captions.srt",
+      "sha256": "a171123487720baa3e543bbfa9d9ed7bd3fef566732cc1246ec2be1cfb6ce218"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/168-lesson.json",
+      "sha256": "6b663727d8d966412171d554f8722905d2a36be14e774085df2d78b953a9dc87"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/169-chem-m5-p03.srt",
+      "sha256": "bd1fa6410bf64ac7f21df5a69ffb826636741d58f2540ed0f0328e232fbfff1c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/170-chem-m5-p03.vtt",
+      "sha256": "441ba0df5a97c9ebf6125dac960b894d55f6f3d583de560955d1739384e922bc"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/171-captions-fixed.srt",
+      "sha256": "991027389eed288872831d21bbfbe5f0b91e53df101b25ac21f95c2b2f3c2b31"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/172-captions.srt",
+      "sha256": "be6a02cbeb5e8516568e719b35da01217e71a2a3092e97805c8e22110df1b3dd"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/173-lesson.json",
+      "sha256": "92bcf4c4bcca756b386b753bbf676fd46b04bf46c7b7aea664a13e42410d00a9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/174-bio-m5-mould.srt",
+      "sha256": "35547a7aaa9de1c9b406df5591ebdf827b2e6d9c3c1bb1685dbd2d206f66cfaa"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/175-bio-m5-mould.vtt",
+      "sha256": "c95f4b56c9ca9cbadd6efdd8c85223057e5090a60000f2fb6eb39b515bdc7eb6"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/inputs/176-bio-m5-mould.sbv",
+      "sha256": "87f550848868b51b9f869af699a0d07d06cc8f5f3fa9b2bcfe12f9c6d68e3302"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b01.srt",
+      "sha256": "18b8557c9a4abfc25663a434ea73b01995bb8ae27bcbf72657b5e90b606da913"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b02a.srt",
+      "sha256": "a40d650779871982530978139a52c1795657af6567fb933a4b78dbcbae7ab9ab"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b02b.srt",
+      "sha256": "a7ffeb2916aae86c8f06c03e3166b42af2f640cb622ca93706c1512b4d60cc10"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b02c.srt",
+      "sha256": "43c304ac9154c2886dfc87d357c6fcb8ae308520a0f94d7dc24987b86fb44bed"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b03a.srt",
+      "sha256": "b91572ab23e811fc9ff5e72b13108263c45d02f813bd4557281755d369858cdb"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b03a2.srt",
+      "sha256": "09e7f523c8562e2306075e63443b7cdfe806051fda8acdde4172d6ce57fb4f56"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b03b.srt",
+      "sha256": "084b989f643a5e8a5df1e8d6447377ac6a0d7da587ec7827ed1c8ced63057b24"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b04.srt",
+      "sha256": "847ca8b1ee59e4170301db450fdd5fc9bd927145839d93a411d6ce6d73883e61"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b06a.srt",
+      "sha256": "ce6325bf3ff7c99a2187fc4489d6eb7c12bc1dd06ece88974376573e748a94db"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-b09.srt",
+      "sha256": "5af6bd139ac5058e8368047895a6b2523fe1b205e7fee5c93b551e2b73373a53"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-g01.srt",
+      "sha256": "1fec3d957a449084793f338e5e2856f87aca8969d1171c386a849f5824e8c1d4"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/bio-m5-mould.srt",
+      "sha256": "a1df7d9fe0f795a5eb18d3034f7e57fcc18d2f694d91c01f9ed13a4357924d50"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c01.srt",
+      "sha256": "58a1b2a9ebb41159edae87570697075b7ae860417e7b9c5b98e1386b9a20fc59"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c02.srt",
+      "sha256": "72c0eaa335c472d62c94cb80f0ba526c7982bccbfa54e9745d11c78c07bf10f7"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c03.srt",
+      "sha256": "34edf008d9900f3b4c04238f97acef7dc83745f8a1bfe9bf845d57efa7778c8c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c04a.srt",
+      "sha256": "012867cf4e665e51655206a9ca7242bc40c6bebc0d123aebc66b69395ca6348e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c04b.srt",
+      "sha256": "98f53589f4b80e73cd139e93b4ce1d6dd058c623c1f27375156cbfc687db8a8e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c05.srt",
+      "sha256": "7e253db9d8542ac05b809433203ed6d150bfa92d53c539f9065b7a5414f94072"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c06a.srt",
+      "sha256": "dcf4c37d95d5213572e4d251e737ffc69390c1d9dada9357bc2516b3be2892c9"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c06b.srt",
+      "sha256": "7bdb14eb8d06b9f712acdd1b5df30b3a7c66d9517347cb317557b1021cca3893"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c07.srt",
+      "sha256": "fa3bb37577d94b80a42087b3e84a408635431c4d63e19701a03a62b4a2c4efb2"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c08.srt",
+      "sha256": "2c9fdeb38b790a444e6ec8e2821f66213aac856d12c384c9ba1c95c5cd76f67a"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c09.srt",
+      "sha256": "0b8788517538ae03adecd1cbd61b7e5c2c4cb0e97735c35dd33b95eab6caf1e2"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c11.srt",
+      "sha256": "ad0c2d3ad05620eee337221602be1bd699020d9b7ba99471c5386a39383e7257"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c13.srt",
+      "sha256": "ce01bed6bd952efa59afd162f0501cd3fbfb8418c52ced60e57ca820e0f33e0d"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-c14.srt",
+      "sha256": "53f86b2749b15dd7d7b904ebea5a3420ba9ecd72cb6c82002139b423d08c10e4"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-g01.srt",
+      "sha256": "a768cc189cfac3a59353785110cdd7f0af8763ce7b2885f74581611d92d70f84"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-g03b.srt",
+      "sha256": "ba277860582959f62425d6510b526b765a423820655bf6332db80639145e0ddf"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-g03c.srt",
+      "sha256": "e47266ba731401f741485c8695fa8377739e96d4ce76211aae92709c94079b0c"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-g03d.srt",
+      "sha256": "d4facd4fd2b86f3d19bdcd6f7291f8095d9c703145762ddc90176d0ed297569e"
+    },
+    {
+      "member": "qa-preserving-2026-10-25-v1/references/chem-m5-p03.srt",
+      "sha256": "cbea578c4498b92d2224197e2110655e78a2ca141ba5a7c7ee20d023c9928554"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/catalog.json",
+      "sha256": "5c8494a08a35946e923857fd894b499f889b114a65af2023c69e7221bac4fbbc"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/review-1.json",
+      "sha256": "e83c985928cd16e5b77c56884ecd282106d7368481ced99db39e13ae43645661"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/review-2.json",
+      "sha256": "63c890477f3f16d320ab9f82ef53f22893f721c1366a4f7a6c9bb7d190743ee3"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/review-3.json",
+      "sha256": "cff5d8eb8b743263697752d761c53b2aff738a4e4b72594e12c625a7dd5deb03"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/0-record-0.json",
+      "sha256": "2e92ec812a4c574ea27f53adee32546a33e30afea90dbb673fe2ce6b25e8c705"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/1-lesson.json",
+      "sha256": "eab426fe8219d49d7a4db5d2c7d5933c9f7cc9549ee1004704be0b7ea9385093"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/10-captions.srt",
+      "sha256": "91c290e199f5f48f66c2f7d9c80d567a467d487c3ee11c05793810a7d38b069d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/100-lesson.json",
+      "sha256": "8b315f48d197936d4b34c9bed62482942c29fd9cc59dc9338d808e1004f524d1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/101-captions.srt",
+      "sha256": "b8f54b49c7b2d49e186ce001754116c5a05eff0b5d563303342545ca06df4ea2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/102-lesson.json",
+      "sha256": "44383b3624086478a6eb9756966c12cc7fbed10b6968fb351a5f19e225aa7a45"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/103-captions.srt",
+      "sha256": "5eca5dfbb7cb417ad6557e99b41caa49566935f7688d80877a747018a6a7db5d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/104-lesson.json",
+      "sha256": "acfa22de089ce2427ac21505f3e79dbf4360ba8fedf22b76d40b89915e514e81"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/105-captions.srt",
+      "sha256": "bbe87d20c83aa73e739a32bc57b2ba54b2b0c547d33c19e213f8cc52788e33ad"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/106-lesson.json",
+      "sha256": "6f60562fd8dcc32013d830f120f1ae56f2703121d65294ea6bc508d434c076b0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/107-captions.srt",
+      "sha256": "967d16e8e5c9520e18ffb75aeba6b5a640e87b908b6a6950211715f11d65d4a9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/108-lesson.json",
+      "sha256": "cdf96e615d6b165908b3987fe388408643193ff62122df6dd3e2623f11d777f8"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/109-captions.srt",
+      "sha256": "b98947bb26d15949551d1d1d8d849442c775c093989842e953e5d9a6d6d84f62"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/11-lesson.json",
+      "sha256": "74fa8af59e76095948049bddaec69f13365c8b4a9ce57b377b209c7d986733a1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/110-lesson.json",
+      "sha256": "f41fb049a9f89be92f99484cd3cf1dc18bbb014a47f125b438079e9cdfc4dcd2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/111-captions.srt",
+      "sha256": "ada68ab4d126d2c3f050c73575ca9aad0468118bcae036362e0a48031899c7c3"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/112-lesson.json",
+      "sha256": "99afd4a13cfe0d7211e26a6bad9ef7a58c65e0c11f7a2dff5c4fad2089301277"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/113-captions.srt",
+      "sha256": "21179de01ca4252c763bc6c2ce481fddd882cdfd142a45613954f5fe24c6e5f2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/114-lesson.json",
+      "sha256": "9596bb2bcaf55e4a24352b481f86fd04483d2c88d1372c362c3cdff4331c2b54"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/115-captions.srt",
+      "sha256": "302c4f66cde54e96ee3667865f771c5a6a8a0b030781255e4f946e842c6488bb"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/116-lesson.json",
+      "sha256": "1f141c50674de29db330b87300966534ddb87849612c257fe8fdecc618dc1504"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/117-captions.srt",
+      "sha256": "3206fd13a7fe19ab8ba0e40d74784b884843040f667835af0fb7dd361d27e44f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/118-lesson.json",
+      "sha256": "0aa2efa1da490b22e9832b03b2e6827f51ab84d79913be159863b18ca515b2d0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/119-captions.srt",
+      "sha256": "ceddb0917e82eb5dd0e57944f170d8801bcc83ec22d5b3f360f3da3b9e72bf6d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/12-captions.srt",
+      "sha256": "21ef6543b0efb8f7114d7d5b5f4ff3b544af75cc628036a398107db67714738b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/120-lesson.json",
+      "sha256": "4195d82309f0d336ea3e73795e54d9a4ac5831cb3dda9be7b300c44145ec616e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/121-captions.srt",
+      "sha256": "2ca97517ca2ae4abdb844974c31820577db0932d7e44128f8a94735e0a9a126f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/122-lesson.json",
+      "sha256": "db50d0b16d9aeded12a0237b4098ccd1b846087aacb8e1f660225f73b249a30b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/123-captions.srt",
+      "sha256": "ec040f2b5c6f2501c478c8fb9a9bc31dd46b83d8fa8141409cd131dd25c54776"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/124-lesson.json",
+      "sha256": "4cc2c713fdb6c58fbfbbde5962e63758c2b00892fa630aee476462efc0d7ab15"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/125-captions.srt",
+      "sha256": "e5a3ef2da3118ca5cb6379793f3a3381435dd0b2bb40254279db3e5cbd410b36"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/126-repair-inputs.json",
+      "sha256": "82c690f65635205baf18ea01ae125aa927b60d9332a499d8534cbdf8f2ca1c1c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/127-000-catalog.json",
+      "sha256": "21fcd0d7375cdbe0872e56945a3505ea1754a08083730f30d3e26e2c322dde76"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/128-001-review-1.json",
+      "sha256": "bba1c83b6be83dfc2df8ca9a77bf0a5d6283d1f9df15cfabfd7e4f3ae513371b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/129-002-manifest.json",
+      "sha256": "829a8f916d54fe830128d3fd1c18852948d717c3d125962bf35dd7cecaff0440"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/13-lesson.json",
+      "sha256": "6918599b63b3cfcad41c516784a84d090162453cdf69aceab59c5f92b4da8b17"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/130-003-record-0.json",
+      "sha256": "2e92ec812a4c574ea27f53adee32546a33e30afea90dbb673fe2ce6b25e8c705"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/131-004-review-2.json",
+      "sha256": "6c39405598f8beb0fb3a36929e9b5c9bd12070e32bfe3e5a10f403906b65fcce"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/132-005-manifest.json",
+      "sha256": "82f925c927ca676b53b2e796462021e426f92fbf32bfba9f8c039778478c7643"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/133-006-record-1.json",
+      "sha256": "895cad0f85c726b170470d1d3644b354b9f744ce93aa9301f3e74700216ae640"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/134-007-record-2.json",
+      "sha256": "ce6dbc06f6656d8f01230ec5fc05840b25e11aea4cac0d7ef37d954017b4e2e5"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/135-008-record-3.json",
+      "sha256": "6f92fc057ba076e83d0f613f6d1aa1320f562516fcb08f3e57a576ded97de679"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/136-009-record-4.json",
+      "sha256": "bbe18ab19accc90d8ec5116a04b68f1ba28b12f2c8ce3d939703363496962ac8"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/137-010-record-5.json",
+      "sha256": "fb2fadb562ad7988b121c126e740c02a52984e2c22a04d0de7ea1f57313f764a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/138-011-review-3.json",
+      "sha256": "a9bbbd59d6a48a1946499a687dbe101a4f608623aab79ba224e4564b025eca13"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/139-012-manifest.json",
+      "sha256": "b3446ac75ffc13c07353fdf9547f784c9559e10a796ef5f82cc0e77eb3feab4f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/14-captions.srt",
+      "sha256": "c96e0cfda0d06052fc6664400373cf40536acc69721c92001b81a4ed155e7ad4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/140-013-record-6.json",
+      "sha256": "e80caba8f5b809b706317107ff2f3725725837d7f7e14fcd4cab815b66414cbf"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/141-014-captions-qa-2026-10.md",
+      "sha256": "c91cb6b3860f580477e3f5ad11213020d5fe58e81d479d0074287ddbf240d69a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/142-015-codex-interim-live-caption-provenance.json",
+      "sha256": "111e32cafd97c302065437a677fb4b749ee9f596aef9e4182044d041c570a05a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/143-016-captions-fixed.srt",
+      "sha256": "18b8557c9a4abfc25663a434ea73b01995bb8ae27bcbf72657b5e90b606da913"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/144-017-captions.srt",
+      "sha256": "44a2a50ae2425685b49c9d0a88acce1af32617222513137aa949e1419a788327"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/145-018-lesson.json",
+      "sha256": "8dd6106d82a5b2fd5cfc7f0ea442c285b5b303595ce076532a652cc072f0a94f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/146-019-bio-m5-b01.srt",
+      "sha256": "54f8571a023cd6de2c4bd552c63b1b72740b110722659c9eb8f7953d1f3e6249"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/147-020-bio-m5-b01.vtt",
+      "sha256": "8ed684e5316296b1ce1018eae68819cf81367519a9bf946cb1ae7bedd63ce447"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/148-021-bio-m5-b01.sbv",
+      "sha256": "4e29d6d6629b959a775855652654abdc86b68124af1f21ab8d0b2e5f7337d7b6"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/149-022-captions-fixed.srt",
+      "sha256": "0b6c2c0a79974dc5e471417fb9932cdef42db86667f760c6c3fd5bae0af7713b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/15-lesson.json",
+      "sha256": "22ef092d7838a82bb7816b2e65646138d5d721ac80a8dadadc1680259a21a046"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/150-023-captions.srt",
+      "sha256": "4bb818f95637a72a3d47ab37968ffde752b220ae8b1815014fab3d67e1f2c439"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/151-024-lesson.json",
+      "sha256": "82b6778b5b2ad1388dd0fa50de827f852306a00b591f24f493971afeca7a6d43"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/152-025-bio-m5-b02a.srt",
+      "sha256": "b9ce204a3088b0bdc929cb3af309a138d2acf4b3fbaee9194f80224e96bd2197"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/153-026-bio-m5-b02a.vtt",
+      "sha256": "ec3cec2650250721333380c07cd8da5a8897a67b197d8ef20fe405a97b6f6e46"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/154-027-bio-m5-b02a.sbv",
+      "sha256": "89af60598ea3374bc2d7fdfcbec35523ba7151aa27ee9361a2a97db85e745cdd"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/155-028-captions-fixed.srt",
+      "sha256": "a7ffeb2916aae86c8f06c03e3166b42af2f640cb622ca93706c1512b4d60cc10"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/156-029-captions.srt",
+      "sha256": "d0cf3434937b513ded9f305c8998c00da5d8ce515060b5506956a9ab8f5d5e29"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/157-030-lesson.json",
+      "sha256": "6e22ed84d9597ed61c1cf57cce008b579c4b8e1d4009f20b0d1c0248f5a8d48f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/158-031-bio-m5-b02b.srt",
+      "sha256": "900a0252e1f7e2ed090d843e7c06ed4b617c694cce4476052727e50c8f4b4f4d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/159-032-bio-m5-b02b.vtt",
+      "sha256": "9829a7ee783df02c430ba8fcb7207e322192e0d1312061183faae875bc34e582"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/16-captions.srt",
+      "sha256": "01137d89dd3d6bc7eff2b94e2e643d1aaa10cbee6857662a94a9334d1caf3fd0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/160-033-captions-fixed.srt",
+      "sha256": "43c304ac9154c2886dfc87d357c6fcb8ae308520a0f94d7dc24987b86fb44bed"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/161-034-captions.srt",
+      "sha256": "26357c993d9922c5d290716bd4fba99684b4640fa4e1e3a3c4d0b23ec0637063"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/162-035-lesson.json",
+      "sha256": "35e4cc818978a2d3bb09535f04901811a295fc5659fbc0c2bb60f4ca526df9aa"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/163-036-bio-m5-b02c.srt",
+      "sha256": "0a38d6cba69706f0ffe4782318d10018ac50e7800abd8d06ffd0731c69616ccd"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/164-037-bio-m5-b02c.vtt",
+      "sha256": "c977641bc567626d3e505322d5819b95adbfb8f0a73e2eede3a4a91a295805ad"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/165-038-captions-fixed.srt",
+      "sha256": "b91572ab23e811fc9ff5e72b13108263c45d02f813bd4557281755d369858cdb"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/166-039-captions.srt",
+      "sha256": "bf5ceea5bff480b0f56854b99ee57bce19aebab0639e349d1772c0b5bdbe5e99"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/167-040-lesson.json",
+      "sha256": "68130604814d25b8b3fc14e38fcf6965c33866b82b0a29daff2a867b44a543f7"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/168-041-bio-m5-b03a.srt",
+      "sha256": "bc1f30ff9315db06aceb6aab5924a2eaaa390d79723adb116d92c50dbff7ac58"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/169-042-bio-m5-b03a.vtt",
+      "sha256": "e46fcaca88c937d56bf44a80c0f29850ca0ad6232cd3bcea8a00c2e783c06f86"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/17-lesson.json",
+      "sha256": "693bb71e8ec5724a30a34762c91a41cf9596c9870525fc10b805f48ff0afadce"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/170-043-codex-interim-b03a-audio-evidence.json",
+      "sha256": "7c56e21ab04468a4a98b3722db0b769b721068ec8819c79acb7139621d9dc3cd"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/171-044-captions-fixed.srt",
+      "sha256": "09e7f523c8562e2306075e63443b7cdfe806051fda8acdde4172d6ce57fb4f56"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/172-045-captions.srt",
+      "sha256": "5d22331b6baf33ffc73f4304a0a815ad39c9e15c9bd65b7affcfa9cdae81585f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/173-046-lesson.json",
+      "sha256": "167064dddb4462f6665c9b68d6929529e75eb2f4eaab43c2d4e3770eb9348d30"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/174-047-bio-m5-b03a2.srt",
+      "sha256": "5159b9aa45c7e9b09d5c8c914d3023c7638fe6d7ef6c67decee3517de1c89450"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/175-048-bio-m5-b03a2.vtt",
+      "sha256": "b72d4b8f3d38dd6640b6e5a621a630a3df2697ff14070e12973766722cba71d5"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/176-049-captions-fixed.srt",
+      "sha256": "084b989f643a5e8a5df1e8d6447377ac6a0d7da587ec7827ed1c8ced63057b24"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/177-050-captions.srt",
+      "sha256": "8d43e81cf79eaec4fa108e0ce4bb42157577a553b444a2e599171576f6be2529"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/178-051-lesson.json",
+      "sha256": "bfac559244b3cbe20dd173644674054a693a9594c930433418f998f084a34ca5"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/179-052-bio-m5-b03b.srt",
+      "sha256": "0b3c8142bf6ba3290e1fe24ae6b3455f864b5c1ee47dc16ba2c7163db20ebeb4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/18-captions.srt",
+      "sha256": "ecb5eaa6d76e33b9a775a27789224c62fbbfae404743565e6a95b3e24086c7e0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/180-053-bio-m5-b03b.vtt",
+      "sha256": "3f982210bad3fbb33da30b1bf23d30b0da6bc4f4bf760c58584c529881d82935"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/181-054-captions-fixed.srt",
+      "sha256": "847ca8b1ee59e4170301db450fdd5fc9bd927145839d93a411d6ce6d73883e61"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/182-055-captions.srt",
+      "sha256": "b2029e634e5b9f04235dba47fa9ed582c631844217d1b9d543aa884073f35725"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/183-056-lesson.json",
+      "sha256": "1c15e55ef1037ea1ab62a7028a8d700eed748e6b685b55cbddf72d6052f01292"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/184-057-bio-m5-b04.srt",
+      "sha256": "2d40b631724e92b5f69bf94d920d35266f85cf12c9fc4ae9add54cafa0cba9ba"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/185-058-bio-m5-b04.vtt",
+      "sha256": "91c0a003a4947a9bac65c0db3702d2bb16b14e27eb9cdbd1c9a33f9dbdedb3ae"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/186-059-captions-fixed.srt",
+      "sha256": "ce6325bf3ff7c99a2187fc4489d6eb7c12bc1dd06ece88974376573e748a94db"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/187-060-captions.srt",
+      "sha256": "5ea44cf34c69f849c4f403747fdcdb5fcc3e767f6ca6497c384ce6390459aab0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/188-061-lesson.json",
+      "sha256": "1351d8f4e86c7b5f819cc6be74027b3d020644e8aaa6b51eaa25e4913eadf716"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/189-062-bio-m5-b06a.srt",
+      "sha256": "df8ba727b9fb10c81137fd5df23df3f6608ddc81d9c7654d358d1ba488a10bce"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/19-lesson.json",
+      "sha256": "d3bc9e6347e94fbabb67fd6759ecde3a8856cd57f537476b21afb5ef69f99ef1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/190-063-bio-m5-b06a.vtt",
+      "sha256": "fa3e8d545ad6fc24fe3600c4ea644e1d7486ee44a9f43bb86c8399290ce66353"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/191-064-captions-fixed.srt",
+      "sha256": "5af6bd139ac5058e8368047895a6b2523fe1b205e7fee5c93b551e2b73373a53"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/192-065-captions.srt",
+      "sha256": "8c6308c0844399aaa4dcccff6b2f449cf3a4a162ca9033b5cb533431500bb3a0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/193-066-lesson.json",
+      "sha256": "79ea6fc27478b05d21bb00addac4818501f0ff241dda2f467b3dec8bd5a4e638"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/194-067-bio-m5-b09.srt",
+      "sha256": "0c4777cc725fafa33b278d11f5846ac32801eda732323c314dae4c70050635b9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/195-068-bio-m5-b09.vtt",
+      "sha256": "cc8afcddf787f7084385e0564393b5a56575547cc8a82cf1f4f53588f0e9ca72"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/196-069-captions-fixed.srt",
+      "sha256": "3d23273b12ffce728b4703adc7547ab1a46c59174f4cc10b050a8cfbcbf4d27b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/197-070-captions.srt",
+      "sha256": "97a7eb56a5dbcf5a614d474d2a256c01a88ea411a82c9ef56304244e90b09309"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/198-071-lesson.json",
+      "sha256": "fb9618b492abb21c647273f92e0515bb6fd555a5649f5c3dbfe9acb3d9be68a7"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/199-072-chem-m5-c01.srt",
+      "sha256": "a749c6224d702d707f24d23a5f5ca8802e747b3d5f45c38f0e31b6c89cf0c17f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/2-captions.srt",
+      "sha256": "d677f538632361be94c99601ac02e0b638fc911365e8a4b44519360b35ffe423"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/20-captions.srt",
+      "sha256": "7b60e90e61e1eab343d8b5aa808c8f116a6bd2d6c74d551db779c9b9312d93f1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/200-073-chem-m5-c01.vtt",
+      "sha256": "f503f9773665a3d04beb4904d6f717bbc035801ce1598f8f6718ec7f21aec1e7"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/201-074-chem-m5-c01.sbv",
+      "sha256": "4c5aa9468c6d26532a4fb248711a18c41881c68c7953b1caa2a712340c3a86d9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/202-075-captions-fixed.srt",
+      "sha256": "ad0c2d3ad05620eee337221602be1bd699020d9b7ba99471c5386a39383e7257"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/203-076-captions.srt",
+      "sha256": "0ad804befa33e26e5cbf286b7f71c99a7bcc5745db9849a4252c9d771ade47bb"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/204-077-lesson.json",
+      "sha256": "57e2996c8a215ca7dba26403789cdc7ecc85c614d829a397d9df13b58f9cf706"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/205-078-chem-m5-c11.srt",
+      "sha256": "848079a3f1396ee7f11f3b443a85a799a6dc7af0183ffe34d37b78887def71ef"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/206-079-chem-m5-c11.vtt",
+      "sha256": "c2e61a0bea57f3ebc786d70435e335ec9742f40491d3900a71d8321b4c6ffdb8"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/207-080-captions-fixed.srt",
+      "sha256": "ce01bed6bd952efa59afd162f0501cd3fbfb8418c52ced60e57ca820e0f33e0d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/208-081-captions.srt",
+      "sha256": "3f249fb4589d5113e488f0cafc57b89ee4d79ed0a7849cd146f45edab037c6f8"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/209-082-lesson.json",
+      "sha256": "0dbc3a09f93ee403a617bd012726e65a33580ea7299c66110a8f228ad5bae2ea"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/21-lesson.json",
+      "sha256": "f413ad0e8f0e9b6768cd93684585727af1b03086c4648cb25752fbd3dd942d82"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/210-083-chem-m5-c13.srt",
+      "sha256": "6ed0eb90b84ada47d3bb37e91939c1258794362aeea538214b3ae6b6a6359da0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/211-084-chem-m5-c13.vtt",
+      "sha256": "266def9a7e944a7814f779133f7ce73214b37d7ea135a58f95ecb623a03e092a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/212-085-captions-fixed.srt",
+      "sha256": "53f86b2749b15dd7d7b904ebea5a3420ba9ecd72cb6c82002139b423d08c10e4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/213-086-captions.srt",
+      "sha256": "c0b34af13ae54a41014ae632e32701d819224beff98009c9b44dd27656522c24"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/214-087-lesson.json",
+      "sha256": "249eb57428a0e675dc482169326902e17d6c650b906e654c182af734d39948d0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/215-088-chem-m5-c14.srt",
+      "sha256": "29a3814499057447f697e20a605a6b7f483c940d03434215b478334b33054857"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/216-089-chem-m5-c14.vtt",
+      "sha256": "50ab0f049c7286136f498b27ac751e45ebe8ba5dc3336076f181840af911179e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/217-090-captions-fixed.srt",
+      "sha256": "85efef638c232f1b7418bc382277458c22728e3815e1c5bacf48ee09b8c25d4f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/218-091-captions.srt",
+      "sha256": "b11aa3bffdda6b4e52cb28310a7d5fa145f1cf500dea607855bf1efad6951bbd"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/219-092-lesson.json",
+      "sha256": "f04fbd85fce939bb2ad8169bced612c53d546448981fdd1b854b32718f4381f5"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/22-captions.srt",
+      "sha256": "ae4e0c518f50a5bead4c0a2f4470df5916ccccbf4edc99c5cc04cf922d426527"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/220-093-chem-m5-c02.srt",
+      "sha256": "7e8cc3f80c5f19470fe7cda000084e11873b96dbc55dbbec67c203b2a86ad0a9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/221-094-chem-m5-c02.vtt",
+      "sha256": "8849bac5a2a90d9a99e3ad1781ae722565ef8547ca594b4f66a417933896a5b1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/222-095-chem-m5-c02.sbv",
+      "sha256": "1bc9e0c71f4e423dd3e93a8a2d2e40474ab3407dac151511da287b460343b277"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/223-096-captions-fixed.srt",
+      "sha256": "34edf008d9900f3b4c04238f97acef7dc83745f8a1bfe9bf845d57efa7778c8c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/224-097-captions.srt",
+      "sha256": "a9b6be733ef10b60094bd7fad7a4964a2104b3be1d86d8bf1ec6fc30a14c60c1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/225-098-lesson.json",
+      "sha256": "469abdc9ba9cd7cf4edf979dc38a6f03a7d20e1e5db71074f92410ec4958bcf6"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/226-099-chem-m5-c03.srt",
+      "sha256": "7107e1f3db5f6739e8543d9dacb21c59955deddfa1d639f3ba699a09fb903e72"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/227-100-chem-m5-c03.vtt",
+      "sha256": "91d30b92cbe0da6210f15e993103e2af9f77264093daa9d7e709097e2cfee6a6"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/228-101-captions-fixed.srt",
+      "sha256": "012867cf4e665e51655206a9ca7242bc40c6bebc0d123aebc66b69395ca6348e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/229-102-captions.srt",
+      "sha256": "fe31386056c49a011d0c0fc5a4172ed9477ac4af22178d229ba3fbd5d4dd4363"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/23-lesson.json",
+      "sha256": "e252c175be239e8c3a7acd3e81925887deeea91c07fb95372672ea0d4eb2b8c0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/230-103-lesson.json",
+      "sha256": "d1ab4eacdd458527f34a87e3aba93bff7e54ae0321f7ba823ed7a36749d9b87a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/231-104-chem-m5-c04a.srt",
+      "sha256": "685393eba7f039baa69b1fb7e4e921caa03cff9bdb0bdbc5b17c272fe4ec5e94"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/232-105-chem-m5-c04a.vtt",
+      "sha256": "d6f45dc8b0aa10fd73b85bb310cf1fcbc0d3aa22f717e92591d0b9129667c4e1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/233-106-captions-fixed.srt",
+      "sha256": "98f53589f4b80e73cd139e93b4ce1d6dd058c623c1f27375156cbfc687db8a8e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/234-107-captions.srt",
+      "sha256": "5d8ad171af3f1102d0a1c18a2c2325ccbbbe949a05d19f5a71782b5aadb970d4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/235-108-lesson.json",
+      "sha256": "c7849f41ebe2495641e532f83ef74b5bdd3165119ef4d4006dc9fd8d25da6f21"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/236-109-chem-m5-c04b.srt",
+      "sha256": "8467513f225784d802de313d007b6a7fa11336326c90b768499f4b17ade707d9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/237-110-chem-m5-c04b.vtt",
+      "sha256": "e7b2d723c98cc2a217a3125058bd8ea427cb7c4a01c9a11266e8b120935e515c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/238-111-captions-fixed.srt",
+      "sha256": "7e253db9d8542ac05b809433203ed6d150bfa92d53c539f9065b7a5414f94072"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/239-112-captions.srt",
+      "sha256": "af39acd0921d9047b14cae6b61d02fbe92c0d4691abdc871b1e6e403e28f605c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/24-captions.srt",
+      "sha256": "1b956b4af7c7f47bf27c59b386f383c72c5d7a819ed237c824408b8a8dda335d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/240-113-lesson.json",
+      "sha256": "02b025d21489247b12d79edd88f20ec530ff8cc91c8ef54b5f89edf4bb16ec92"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/241-114-chem-m5-c05.srt",
+      "sha256": "7589393cf132810194ff54ca40aa9b9365b61835bdfce2baf344218cb716a922"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/242-115-chem-m5-c05.vtt",
+      "sha256": "8667392e4a2f18c3f7b946fdb5b3e1dd6db0c36f6e721afbc29cae67b78062ec"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/243-116-captions-fixed.srt",
+      "sha256": "dcf4c37d95d5213572e4d251e737ffc69390c1d9dada9357bc2516b3be2892c9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/244-117-captions.srt",
+      "sha256": "4ead6b2ef7c57c1818186933ceb66a903cdfb9e9e6840aa16c78f4fdad0c5c47"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/245-118-lesson.json",
+      "sha256": "71ddb57be43bbd13b442dc7e1fe80950f03c6719432b43913e6c3308dc81ec04"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/246-119-chem-m5-c06a.srt",
+      "sha256": "d29e597eb35fe304df0e4b61b446f674a1faf33a597edf4d2a5e0463e6b4ec06"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/247-120-chem-m5-c06a.vtt",
+      "sha256": "60613244fa1a7a38fa56e2270ef4d5ffe0738a3e4660e176e8664941c0e548da"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/248-121-captions-fixed.srt",
+      "sha256": "7bdb14eb8d06b9f712acdd1b5df30b3a7c66d9517347cb317557b1021cca3893"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/249-122-captions.srt",
+      "sha256": "d8ab58af9622e590430c5fb582b0e3876fda2d9f1892428ad9e835d3ff8b1061"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/25-lesson.json",
+      "sha256": "9ff7adbda082b82395f7a098162fffc2c50162cd47c291f8fa567d141d143258"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/250-123-lesson.json",
+      "sha256": "c1abb85695c5b6e55238de6ca06dcaeb52a8b2dddc7fb2178c090f3603a7a576"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/251-124-chem-m5-c06b.srt",
+      "sha256": "12b271c806f13eaadf99354326b44814c2c57c2f8fe7fd675df0be1d77bbc4f2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/252-125-chem-m5-c06b.vtt",
+      "sha256": "1132107b428edabb2ffb40f4b2dc0dcea31fd64551f68f12745662684b10c425"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/253-126-captions-fixed.srt",
+      "sha256": "fa3bb37577d94b80a42087b3e84a408635431c4d63e19701a03a62b4a2c4efb2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/254-127-captions.srt",
+      "sha256": "7299b3a32e0ed63994a72c93228f603605b8b9d8595f3dab8b7348609a06c63b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/255-128-lesson.json",
+      "sha256": "d2f12d46eb181f76b63adb288703f483348c43cc931ab8c9070237b30b7a92a4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/256-129-chem-m5-c07.srt",
+      "sha256": "b91e5ae05ca51ebc2e66f83aab2d2ad01f84bd5d908683fd988cb4ca82b0fc79"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/257-130-chem-m5-c07.vtt",
+      "sha256": "7e706481653bdf048212172623aca285b35c0eb48520a44db2bd7290acab825f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/258-131-captions-fixed.srt",
+      "sha256": "2c9fdeb38b790a444e6ec8e2821f66213aac856d12c384c9ba1c95c5cd76f67a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/259-132-captions.srt",
+      "sha256": "e05a1bb74261f2fd6c75270237b2a19808ed20d795a880afdd0d650a5310ba5d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/26-captions.srt",
+      "sha256": "f635227bfb1d31791c2373ee95eb3bf1fb10ca499a44371cfce8a1c4e82bb7e3"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/260-133-lesson.json",
+      "sha256": "00982cb98125122e213bdea7fcc2e7ba3541a2fe6c129d925fcb1008fd371756"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/261-134-chem-m5-c08.srt",
+      "sha256": "08c4c1e5c4d4af2b7c6f3b6a3395785c623a26a206ff0a696b298cf2c7dc721e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/262-135-chem-m5-c08.vtt",
+      "sha256": "778309984f8ece559e6d16b91f70aa6850d04c68ee87c04ea14f666b9b343d23"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/263-136-captions-fixed.srt",
+      "sha256": "0b8788517538ae03adecd1cbd61b7e5c2c4cb0e97735c35dd33b95eab6caf1e2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/264-137-captions.srt",
+      "sha256": "523ef063fff9fcc368e25c48e964fb9723b38866d7748e918cf8a22abb15ef97"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/265-138-lesson.json",
+      "sha256": "5d4610967b29473cbd953c94b8c341efb993571bc42dba2ef0a45e1e206e263d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/266-139-chem-m5-c09.srt",
+      "sha256": "94727ab7d2cbc1e6776100e42e08aee19d846d224cd0e9946b2dbcbee94d90d0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/267-140-chem-m5-c09.vtt",
+      "sha256": "b5501c6eef516c54a79b5da2ba05c714936ec941dfd0a7f13d55c0c151c5f42e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/268-141-captions-fixed.srt",
+      "sha256": "a768cc189cfac3a59353785110cdd7f0af8763ce7b2885f74581611d92d70f84"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/269-142-captions.srt",
+      "sha256": "4a65363ac9cf81b952e00a4da26e4b85804a364e901b528931174c66a8cc5df0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/27-lesson.json",
+      "sha256": "e050629df32e2fa8e47b2614e36b77c032cf398ebf252add886f972c2c91c5b6"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/270-143-lesson.json",
+      "sha256": "8fbf5771d5450bec39e67cf9fc943726c0e0925d368e70d8a300752916f76b3d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/271-144-chem-m5-g01.srt",
+      "sha256": "7ee40154c061ae0b9f0999c5944058c175b7589d2a8528942ac6e3c9ff9f1a34"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/272-145-chem-m5-g01.vtt",
+      "sha256": "7dd3141f59f7c41a379aef2a2e1981bc3939dc075a3380211ae252d89d4a5576"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/273-146-captions-fixed.srt",
+      "sha256": "1fec3d957a449084793f338e5e2856f87aca8969d1171c386a849f5824e8c1d4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/274-147-captions.srt",
+      "sha256": "1000d2b6d97e4ce73d4a4e546180e66a070c54938fa88315be8b8fff8c700ebe"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/275-148-lesson.json",
+      "sha256": "6b227e658ac370c73b70fd6e251d05d60022dea06562d9a8c2042f814434f84e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/276-149-bio-m5-g01.srt",
+      "sha256": "d669ddb6d65e5e813517ca7a4c1ac20bb31dc75107b57ef8b3230d0b5b791163"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/277-150-bio-m5-g01.vtt",
+      "sha256": "393ff64e99ca12deb51080653b6e49c7d3df335eaba84df8de88584bac874b58"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/278-151-captions-fixed.srt",
+      "sha256": "ba277860582959f62425d6510b526b765a423820655bf6332db80639145e0ddf"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/279-152-captions.srt",
+      "sha256": "8958874ae8fc0307353f4f5a6073045f0ea17d663ebd54fb30dfcd9e74afba4b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/28-captions.srt",
+      "sha256": "042323480771920e7d85dc7161fdadf3a10a20607b252aa9c9d8ef1ec3cbf40e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/280-153-lesson.json",
+      "sha256": "44a93f183425ba6c0db33da3be850e1113007fa8beda621d66422f1297fbcb4a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/281-154-chem-m5-g03b.srt",
+      "sha256": "7db5ea71a33f806a0b608d4fe92cf7acfe161f7f03b54aaaf191da05188ebe5a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/282-155-chem-m5-g03b.vtt",
+      "sha256": "b3e0fe1f84f538bbfa3d263758755d8405092d6b8240d5c05156613958fae186"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/283-156-captions-fixed.srt",
+      "sha256": "e47266ba731401f741485c8695fa8377739e96d4ce76211aae92709c94079b0c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/284-157-captions.srt",
+      "sha256": "d7108eca4340381bfbfd2c71cdc307b2821d51d5b0b2957bf25cf6cf6f381dff"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/285-158-lesson.json",
+      "sha256": "03d0c157cae864a0e04131772ecbb66a8ab409adfada60616586a677b18a21ce"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/286-159-chem-m5-g03c.srt",
+      "sha256": "57201166c186dbf5cd3c4a69d6bd60c4d7103423a5af2b76e5076e15a8a1e5d2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/287-160-chem-m5-g03c.vtt",
+      "sha256": "1134c7c2d5e2d4b270f2862828f7b1d5e120d909edf24eb374a8fb0fdfa78252"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/288-161-captions-fixed.srt",
+      "sha256": "d4facd4fd2b86f3d19bdcd6f7291f8095d9c703145762ddc90176d0ed297569e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/289-162-captions.srt",
+      "sha256": "3166c5b81dd1e0b881fcacf29b063d86cc0b5a8f4d115f8d793993fba9cee8f9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/29-lesson.json",
+      "sha256": "8a1315328133a46e9fe8584a4fb8a478157bb21137cf465bc81a5c7ee5eaa623"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/290-163-lesson.json",
+      "sha256": "dc6230a21258810edf04170d8e5d63fb9053e76323cbb10599af4affcb3d717d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/291-164-chem-m5-g03d.srt",
+      "sha256": "17f960ee0504ccad5a7547b0ec1fb22ebf69e85e6242fb435c62b30cd36102eb"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/292-165-chem-m5-g03d.vtt",
+      "sha256": "9424e2c8e125f16549687434e9defa8d7fc4b39853455fc18371fae1984e11a4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/293-166-captions-fixed.srt",
+      "sha256": "cbea578c4498b92d2224197e2110655e78a2ca141ba5a7c7ee20d023c9928554"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/294-167-captions.srt",
+      "sha256": "a171123487720baa3e543bbfa9d9ed7bd3fef566732cc1246ec2be1cfb6ce218"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/295-168-lesson.json",
+      "sha256": "6b663727d8d966412171d554f8722905d2a36be14e774085df2d78b953a9dc87"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/296-169-chem-m5-p03.srt",
+      "sha256": "bd1fa6410bf64ac7f21df5a69ffb826636741d58f2540ed0f0328e232fbfff1c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/297-170-chem-m5-p03.vtt",
+      "sha256": "441ba0df5a97c9ebf6125dac960b894d55f6f3d583de560955d1739384e922bc"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/298-171-captions-fixed.srt",
+      "sha256": "991027389eed288872831d21bbfbe5f0b91e53df101b25ac21f95c2b2f3c2b31"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/299-172-captions.srt",
+      "sha256": "be6a02cbeb5e8516568e719b35da01217e71a2a3092e97805c8e22110df1b3dd"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/3-lesson.json",
+      "sha256": "29b6698da1ab2dcf91ea8b54e27a310b71d3f6a2a53ae81cc46596a16b655076"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/30-captions.srt",
+      "sha256": "8b43a4ff6ce341b4e561606a42496d4b3000878668d9e2358d5db99507a17c73"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/300-173-lesson.json",
+      "sha256": "92bcf4c4bcca756b386b753bbf676fd46b04bf46c7b7aea664a13e42410d00a9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/301-174-bio-m5-mould.srt",
+      "sha256": "35547a7aaa9de1c9b406df5591ebdf827b2e6d9c3c1bb1685dbd2d206f66cfaa"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/302-175-bio-m5-mould.vtt",
+      "sha256": "c95f4b56c9ca9cbadd6efdd8c85223057e5090a60000f2fb6eb39b515bdc7eb6"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/303-176-bio-m5-mould.sbv",
+      "sha256": "87f550848868b51b9f869af699a0d07d06cc8f5f3fa9b2bcfe12f9c6d68e3302"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/304-bio-m5-b01.srt",
+      "sha256": "18b8557c9a4abfc25663a434ea73b01995bb8ae27bcbf72657b5e90b606da913"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/305-bio-m5-b02a.srt",
+      "sha256": "a40d650779871982530978139a52c1795657af6567fb933a4b78dbcbae7ab9ab"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/306-bio-m5-b02b.srt",
+      "sha256": "a7ffeb2916aae86c8f06c03e3166b42af2f640cb622ca93706c1512b4d60cc10"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/307-bio-m5-b02c.srt",
+      "sha256": "43c304ac9154c2886dfc87d357c6fcb8ae308520a0f94d7dc24987b86fb44bed"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/308-bio-m5-b03a.srt",
+      "sha256": "b91572ab23e811fc9ff5e72b13108263c45d02f813bd4557281755d369858cdb"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/309-bio-m5-b03a2.srt",
+      "sha256": "09e7f523c8562e2306075e63443b7cdfe806051fda8acdde4172d6ce57fb4f56"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/31-lesson.json",
+      "sha256": "2ef3906fa330a7ba64d7287a1ab1f97f07079687f65eecbe9be66410de02418c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/310-bio-m5-b03b.srt",
+      "sha256": "084b989f643a5e8a5df1e8d6447377ac6a0d7da587ec7827ed1c8ced63057b24"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/311-bio-m5-b04.srt",
+      "sha256": "847ca8b1ee59e4170301db450fdd5fc9bd927145839d93a411d6ce6d73883e61"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/312-bio-m5-b06a.srt",
+      "sha256": "ce6325bf3ff7c99a2187fc4489d6eb7c12bc1dd06ece88974376573e748a94db"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/313-bio-m5-b09.srt",
+      "sha256": "5af6bd139ac5058e8368047895a6b2523fe1b205e7fee5c93b551e2b73373a53"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/314-chem-m5-c01.srt",
+      "sha256": "58a1b2a9ebb41159edae87570697075b7ae860417e7b9c5b98e1386b9a20fc59"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/315-chem-m5-c11.srt",
+      "sha256": "ad0c2d3ad05620eee337221602be1bd699020d9b7ba99471c5386a39383e7257"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/316-chem-m5-c13.srt",
+      "sha256": "ce01bed6bd952efa59afd162f0501cd3fbfb8418c52ced60e57ca820e0f33e0d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/317-chem-m5-c14.srt",
+      "sha256": "53f86b2749b15dd7d7b904ebea5a3420ba9ecd72cb6c82002139b423d08c10e4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/318-chem-m5-c02.srt",
+      "sha256": "72c0eaa335c472d62c94cb80f0ba526c7982bccbfa54e9745d11c78c07bf10f7"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/319-chem-m5-c03.srt",
+      "sha256": "34edf008d9900f3b4c04238f97acef7dc83745f8a1bfe9bf845d57efa7778c8c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/32-captions.srt",
+      "sha256": "c42c9b023333bd9ac70214f51a6ede53879e30177b8637fbef9850691b793329"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/320-chem-m5-c04a.srt",
+      "sha256": "012867cf4e665e51655206a9ca7242bc40c6bebc0d123aebc66b69395ca6348e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/321-chem-m5-c04b.srt",
+      "sha256": "98f53589f4b80e73cd139e93b4ce1d6dd058c623c1f27375156cbfc687db8a8e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/322-chem-m5-c05.srt",
+      "sha256": "7e253db9d8542ac05b809433203ed6d150bfa92d53c539f9065b7a5414f94072"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/323-chem-m5-c06a.srt",
+      "sha256": "dcf4c37d95d5213572e4d251e737ffc69390c1d9dada9357bc2516b3be2892c9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/324-chem-m5-c06b.srt",
+      "sha256": "7bdb14eb8d06b9f712acdd1b5df30b3a7c66d9517347cb317557b1021cca3893"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/325-chem-m5-c07.srt",
+      "sha256": "fa3bb37577d94b80a42087b3e84a408635431c4d63e19701a03a62b4a2c4efb2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/326-chem-m5-c08.srt",
+      "sha256": "2c9fdeb38b790a444e6ec8e2821f66213aac856d12c384c9ba1c95c5cd76f67a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/327-chem-m5-c09.srt",
+      "sha256": "0b8788517538ae03adecd1cbd61b7e5c2c4cb0e97735c35dd33b95eab6caf1e2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/328-chem-m5-g01.srt",
+      "sha256": "a768cc189cfac3a59353785110cdd7f0af8763ce7b2885f74581611d92d70f84"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/329-bio-m5-g01.srt",
+      "sha256": "1fec3d957a449084793f338e5e2856f87aca8969d1171c386a849f5824e8c1d4"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/33-lesson.json",
+      "sha256": "ddc53ac1e812cde6b278e053ddc223ca1fb60884d7d3d784e1d145c28cd38982"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/330-chem-m5-g03b.srt",
+      "sha256": "ba277860582959f62425d6510b526b765a423820655bf6332db80639145e0ddf"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/331-chem-m5-g03c.srt",
+      "sha256": "e47266ba731401f741485c8695fa8377739e96d4ce76211aae92709c94079b0c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/332-chem-m5-g03d.srt",
+      "sha256": "d4facd4fd2b86f3d19bdcd6f7291f8095d9c703145762ddc90176d0ed297569e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/333-chem-m5-p03.srt",
+      "sha256": "cbea578c4498b92d2224197e2110655e78a2ca141ba5a7c7ee20d023c9928554"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/334-bio-m5-mould.srt",
+      "sha256": "a1df7d9fe0f795a5eb18d3034f7e57fcc18d2f694d91c01f9ed13a4357924d50"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/34-captions.srt",
+      "sha256": "d9accb76604f52b98332b780390ca8bc1fdba3f127535c49adbe80dd743cd17c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/35-lesson.json",
+      "sha256": "f31524e0fbe1dc1f537d5d9609016e3365b1e2406a6c56f034601b664b55ab21"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/36-captions.srt",
+      "sha256": "5b965913a1343eda11d505335ec72d7848c4cc450ad0b143af0e40dbd641ce10"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/37-lesson.json",
+      "sha256": "8221405e0e4f7155b083913bdfc44afc863b3d2202636bf99babc89218598906"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/38-captions.srt",
+      "sha256": "53f90710617624947236705c7f2dffaf101ca7c317f8d5e64781bd9b2e81f701"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/39-lesson.json",
+      "sha256": "859a62a26d9809989ec3e34bfb2cb6546dd7bd19be187daa90d2cef23b011697"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/4-captions.srt",
+      "sha256": "9c6bb1e76b99c992b8d547771106bd994b53f1c27a9f224850a6a1bf3a28fbdd"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/40-captions.srt",
+      "sha256": "aea06e333a94efd3ef3f3e6994e51b225aead6973c449bf699d782f1a3808241"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/41-lesson.json",
+      "sha256": "72eecb00b7a44d9fc180dbbed740819b6cea1d29838b26dde08858f5cb9f68fc"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/42-captions.srt",
+      "sha256": "30c90c9658cebc674e9045d171065325e51277d3d5bbb1511adf694dec1ed9d1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/43-lesson.json",
+      "sha256": "ba3e863b4b65036f579a28c0603b0b72df1fae2b5607aca3372870d33bee004a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/44-captions.srt",
+      "sha256": "ad5a51dc18ff081fef117c29b65e8a69cd3ffa7d7a2b8151fe17eee486d91d74"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/45-lesson.json",
+      "sha256": "d14135c28513023e6f1e058486de40a825d0c717bbeb2598b5a0b6d73d5a49ef"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/46-captions.srt",
+      "sha256": "e44e87ea498334d336b3e60205e9ef25db71b3efc72f666fd772d2292af8556f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/47-lesson.json",
+      "sha256": "29b0ac9fe772a90a31a5e27d906f7f864fb86efa2b60ac0193c14ead167c665c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/48-captions.srt",
+      "sha256": "16b6f3e36aa93d7fc0485e096f18a4dba39347f2e21c15837d92eafaddb1466a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/49-lesson.json",
+      "sha256": "76a15d9cefc666ee2210faec1c9d30ab54979b892adf6820babf3f0df206eaca"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/5-lesson.json",
+      "sha256": "a1f90ec2708965f3b8966fb26ba7c647d67200afde6c7b0f7476b59f64493d88"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/50-captions.srt",
+      "sha256": "3bf0b9d574ef951a49bd11cf3ea3225ac7da8f48da13ebf943066d2c76643a1f"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/51-lesson.json",
+      "sha256": "ec4e4c2533b6539b32fda5f494511dcb1e146d00e3b1f230baf327ae672b503e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/52-captions.srt",
+      "sha256": "fe9568b8a923613c703c73abe99e77106b70c9728114ea1ca94d516ccfbf0885"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/53-lesson.json",
+      "sha256": "7d743a7dcba7fbdacd30c6c5c323e78dfc0b92aa9623de91fdf53cd47d55146c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/54-captions.srt",
+      "sha256": "0960c966bb0f5a4a2da4bef11ab8e33baee303e1d5ea7577475edf17bd8fd915"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/55-lesson.json",
+      "sha256": "b08257c41b3c984475ad9539efc9027b4cf61ff8f284c03d5864e9667fb84068"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/56-captions.srt",
+      "sha256": "d6d187742039e8765e3f4ce7c51e31df51d9eab85a7acbece113689d90e76f70"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/57-lesson.json",
+      "sha256": "bc860f4becae2de465b71fda842e585252888621e95eb982ac41bb8ff6e56659"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/58-captions.srt",
+      "sha256": "b0d605a95b1a0f2baea672eaad56b66980f3eaa81b039daca257d7d0c301323d"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/59-lesson.json",
+      "sha256": "e3d6e32dc666f0aab912960db75dd2f589d28b9a4c29516148ee5017f5a773f0"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/6-captions.srt",
+      "sha256": "0dd3355ccc6a73ebed5f769ee0b42773bfa1429ac5348120f66a2a05f10f8c24"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/60-captions.srt",
+      "sha256": "ebef12201c571d5f404a133c9c17bc9d382a9fbea2ee6889469a39384852138c"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/61-lesson.json",
+      "sha256": "1d6d81d47e555416563284fd49866822aeb3723c01151bf6bb1f2c75575b79a9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/62-captions.srt",
+      "sha256": "8a35ddca0619b75b25adbc5e3f9bc5df294d12f081e1aa5d0a5585a76314080b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/63-lesson.json",
+      "sha256": "8d4b68c2508c17ce5acbc40da7dd8cbebb52ad4db6151ce598a3e3d595d43330"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/64-captions.srt",
+      "sha256": "9be99924b6d5915493014a5f311e5b48de2dc8ca2b4ac22616181ce5502745c2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/65-lesson.json",
+      "sha256": "6a1100e003a4243f6e5e8c4c6a9ba0166dc48b4c1b67e86c631e14a01a8e556e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/66-captions.srt",
+      "sha256": "0e79606a99b22e1c9a4cf9a1c08d712b86503a6521bf191dd11cf6c8932b03ae"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/67-lesson.json",
+      "sha256": "4293a76ce10514f60fdd56afb8f1c5679c0285d10f655545209d7b7b4e23b9c8"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/68-captions.srt",
+      "sha256": "bf5a2adcd32035ed712325fda073860ce6fc5f33e4586b2a7c80481e843b82ac"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/69-lesson.json",
+      "sha256": "b3593144fe1347a87ad1a6c1c6cfa0ea2c98f6d7e051cff3bda7c2268474d3c6"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/7-lesson.json",
+      "sha256": "1644c48fea118776ced8d362aaefe39097774a9ee09a47882c54204b7f65f052"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/70-captions.srt",
+      "sha256": "56003d306e5479927981363d082d3331457cacd5503d1ec5bfbe111ad971a4b1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/71-lesson.json",
+      "sha256": "60e531aa381fb013a9f2f6ef7cd2efae97f1f4aef7f9a2440244763b4becb1fd"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/72-captions.srt",
+      "sha256": "eebe51c49bf9d758ae691a9485936578e72f925f362ffd6196794ff99762580e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/73-lesson.json",
+      "sha256": "793b15357a58f20c47821d00a28b14fd28811697d4c7881d4997ec0e30d142b6"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/74-captions.srt",
+      "sha256": "84d45e6a38fec9abe148173641be5827bcbd40a95c984568e8cd35eb6bc7e5e1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/75-lesson.json",
+      "sha256": "3dc2acb3466c2d1866ec1e4346cbd33def8a92ac89492956c7a6415000733861"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/76-captions.srt",
+      "sha256": "5b50530aa3416fe07b1240c1eee982037d81f930cb012817a582f5d3f19dd50e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/77-lesson.json",
+      "sha256": "245c8316de828fca75a12a30bd8d71772c734a8c89934dfebc1694d8da4ac185"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/78-captions.srt",
+      "sha256": "1dd04d22d68c6f9cfc083c223b4b7ef96bb216ff3ffae242c9a49759910c9074"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/79-lesson.json",
+      "sha256": "94d9dad05d0e56ff3c63f0be7f08b04e7a714e885c10ea98f668ace5550fd068"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/8-captions.srt",
+      "sha256": "551878547fbafca63b963de34d126603055bf21bfaaada37f4f126ebda437372"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/80-captions.srt",
+      "sha256": "ad1d9d8cfd7e642927690d20692cb3a59a4b33ccc6c4863f2a6a7192db78ceb1"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/81-lesson.json",
+      "sha256": "2581a98b9792ef206ce42d021d18e72d8624502364b3c116bb5e7ab217308576"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/82-captions.srt",
+      "sha256": "81042b1e2e890b6982f0e5244ce50700142c8b949dabbd7e4520eefb3de4033e"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/83-record-1.json",
+      "sha256": "895cad0f85c726b170470d1d3644b354b9f744ce93aa9301f3e74700216ae640"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/84-record-2.json",
+      "sha256": "ce6dbc06f6656d8f01230ec5fc05840b25e11aea4cac0d7ef37d954017b4e2e5"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/85-record-3.json",
+      "sha256": "6f92fc057ba076e83d0f613f6d1aa1320f562516fcb08f3e57a576ded97de679"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/86-record-4.json",
+      "sha256": "bbe18ab19accc90d8ec5116a04b68f1ba28b12f2c8ce3d939703363496962ac8"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/87-record-5.json",
+      "sha256": "fb2fadb562ad7988b121c126e740c02a52984e2c22a04d0de7ea1f57313f764a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/88-lesson.json",
+      "sha256": "5b71bd32457660a473d631806e932a937fca98b2d3d09aba6bd85222f6686599"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/89-captions-fixed.srt",
+      "sha256": "294a13ed0ceaff6cc08baf40e6ef70c0ebfba62cb170b9f392fbffe1860480da"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/9-lesson.json",
+      "sha256": "33e31eea76feceb9cfc794a3a180b81faa1c7270843d2af5786d9f11ccf28d72"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/90-lesson.json",
+      "sha256": "2f01fc3f0eacbf81f2f50665fe5af55714e4a088316cf56358b5afc8e2ad7b5a"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/91-captions.srt",
+      "sha256": "f345dbeef1347d4f05c19847c895573198d40d3edfad2aed20a57abe2f25c127"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/92-lesson.json",
+      "sha256": "b0541106b1c553e166764b430e8e4837fc21521bbe5039519b4f0bae93950e50"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/93-captions.srt",
+      "sha256": "a790a218f2217a8ef09fa80c87fbd65ec516720816fcf233c61daf3686283791"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/94-lesson.json",
+      "sha256": "96caf62d0d9686c604404c8be83e2ec5017dcfc67ee81ba6a5c36e771ec6eee9"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/95-captions.srt",
+      "sha256": "3b7583a23ff737a713e929f8319d39e8fe20bde07d3f09897d8add9f7f1c66e8"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/96-lesson.json",
+      "sha256": "c5d78548208c63e018b74d3d613bb070d871e70bc9004dd585f6ef8f14a10f9b"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/97-captions.srt",
+      "sha256": "9dd2c4d272facc632e9f151405ec1b96509de82b1e34dfdb78a1d8fa29fd41e2"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/98-lesson.json",
+      "sha256": "4aa9f93a67526f720e2ba668d9832ee3f0c62adb32e63e2b7a836bc3fd0d5236"
+    },
+    {
+      "member": "review-catalog-2026-10-25-v3/inputs/99-captions.srt",
+      "sha256": "962c2f21a128b0d5fe3ce0998df486285815bab7563a9450bd067cfc545f4c25"
+    }
+  ],
+  "selectedCatalog": "out/caption-repairs/review-catalog-2026-10-25-v4/catalog.json",
+  "qaPreservedTracks": 31,
+  "missingLocalMp4s": 4,
+  "archiveBytes": 6156402,
+  "totalSelectedCues": 15934,
+  "responseHoldsClearOfExternalCaptions": 163,
+  "toolInputs": [
+    {
+      "path": "scripts/prepare-caption-qa-retiming.mjs",
+      "sha256": "d20d6d42f2fbec2a77350e8b2d2892f6d37fbf56c3cd7c564caca4921f0b337c"
+    },
+    {
+      "path": "scripts/prepare-caption-qa-retiming.test.mjs",
+      "sha256": "805fefaa6be9aa6773d18e5d974fbc41a24adc44386d0a41b217fba164179153"
+    },
+    {
+      "path": "scripts/serve-caption-review.mjs",
+      "sha256": "c9bf4af3ebaed06854540c8425e694b445319748fb068c579b8250ebac52cfc1"
+    },
+    {
+      "path": "scripts/serve-caption-review.test.mjs",
+      "sha256": "11b91c68ca1ec152ec265f2e8759a4384451c3c9af59a0055d0a4698836a5adc"
+    },
+    {
+      "path": "scripts/lib/caption-provenance.mjs",
+      "sha256": "f7cc7d8edb38e458669f30940bfd3a733c3d143fbfb9bd9588dea912c2a6764e"
+    },
+    {
+      "path": "scripts/record-live-caption-provenance.mjs",
+      "sha256": "63822757b6d7ba29dd751dfcab35fd89a1ca30e31355191b9a77d15b981ffd0e"
+    },
+    {
+      "path": "scripts/caption-provenance.test.mjs",
+      "sha256": "1df24d68eadce57e9d760582c009b1e837cff3e9c899b78e1ce3c2a79b83f35a"
+    },
+    {
+      "path": "scripts/lib/explainer-captions.mjs",
+      "sha256": "d58e8b687e54699023c9c64646ee20acdf6cf0a60a50c0fa8e5c2dbd9da3e1a9"
+    }
+  ],
+  "selectedManifests": [
+    {
+      "path": "out/caption-repairs/review-catalog-2026-10-25-v4/review-1.json",
+      "sha256": "368fcc11d4d12d46124603540e8662e4f1efc480eff8930dd871eccd88bf6eea",
+      "parent": "out/caption-repairs/review-catalog-2026-10-25-v3/review-1.json",
+      "parentSha256": "e83c985928cd16e5b77c56884ecd282106d7368481ced99db39e13ae43645661",
+      "videoCount": 41
+    },
+    {
+      "path": "out/caption-repairs/review-catalog-2026-10-25-v4/review-2.json",
+      "sha256": "08622f3ee965c29175acb9eef585f5331178e87bfba5cfaf847513a2ed01736c",
+      "parent": "out/caption-repairs/review-catalog-2026-10-25-v3/review-2.json",
+      "parentSha256": "63c890477f3f16d320ab9f82ef53f22893f721c1366a4f7a6c9bb7d190743ee3",
+      "videoCount": 19
+    },
+    {
+      "path": "out/caption-repairs/review-catalog-2026-10-25-v4/review-3.json",
+      "sha256": "632671a37d47c0fcc30ffbb8935866b2409edefaf46e6ad45e55a4028d60b7c3",
+      "parent": "out/caption-repairs/review-catalog-2026-10-25-v3/review-3.json",
+      "parentSha256": "cff5d8eb8b743263697752d761c53b2aff738a4e4b72594e12c625a7dd5deb03",
+      "videoCount": 31
+    }
+  ],
+  "previousSelectedCatalog": "out/caption-repairs/review-catalog-2026-10-25-v3/catalog.json",
+  "presentationAddendum": {
+    "sha256": "38a81b895db525a887d9eb3033dfa4bb95c974985a519f0d464a9f6d34e5a1e7",
+    "restoreDestination": "repository root",
+    "members": 14,
+    "bytes": 16598180,
+    "requiresBaseArchive": "out/archives/caption-timing-review-qa-preserved-2026-10-25.zip",
+    "allMembersMatchLocal": true,
+    "path": "out/archives/caption-layer-review-addendum-2026-10-25.zip",
+    "evidencePath": "docs/production/claude-pm/checks/codex-interim-caption-layer-audit.json",
+    "evidenceSha256": "8c26d81e7755be6dcefe280bfd6409c9f8488da2d7fb1bbdbe0f205fde4dc9e9",
+    "decodedFrames": 9,
+    "bakedCaptionVideosObserved": 6,
+    "captionBytesChanged": false,
+    "scope": "Sampled decoded frames only, no whole-video absence or motion claim."
+  }
+}

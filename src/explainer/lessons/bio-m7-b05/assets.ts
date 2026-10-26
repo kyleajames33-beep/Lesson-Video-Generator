@@ -4,12 +4,11 @@
  * - New (brief 100): the Phytophthora sporangium and zoospores, the root tip with settled spores, the aligned root
  *   cell pair (entry, defended; one shared box so masked reveals stay in place), the aligned seedling triplet
  *   (healthy, contained, collapsed; one shared box), scarlet and old man banksia branches, the boot-cleaning station.
- * - The banksia pair: `m7-banksia-healthy-v1` and `m7-banksia-phytophthora-v2` do NOT align (alpha IoU 0.811, edge
- *   fringes; Codex brief 102 is retaking them). Until the retake passes QA the hook shows them SIDE BY SIDE, never as
- *   an in-place crossfade. SWITCH POINT: when `m7-banksia-healthy-v2` and `m7-banksia-phytophthora-v3` arrive, change
- *   the two src names below, give both plates the shared `BANKSIA_PAIR_BOX`, measure it, and set
- *   `BANKSIA_ALIGNED = true`. The hook (s1.tsx `BanksiaPair`) then crossfades a second healthy copy into the
- *   diseased plate in place, as the design's target describes. Nothing else needs to change.
+ * - The banksia pairs. Hook only: the brief 102 retake `m7-banksia-healthy-v2` and `m7-banksia-phytophthora-v3` (one
+ *   shared box [220,256,1780,1744] at alpha > 20, alpha IoU 0.98) so the hook crossfades a healthy copy into the dying
+ *   plant in place. The retake is a shrub cut at the trunk base with NO roots, so the mechanism scenes (water-mould root
+ *   ring and water path, barriers bark thumbnail, firebreak root-to-leaf signal) keep the root-bearing v1/v2 pair and
+ *   their measured features. Claude decision, 27 Oct, after Codex's consumer audit (codex-interim-art-review.md).
  * - Reused: the myrtle rust leaf (b04 callback thumbnail).
  * - Coded: the soil band and specks, swimming paths, the defence ladder, the signal pulse, the race strip day line and
  *   brackets, the water arrow, the track line, chips, attempt cards, countdown. No people, hands, walkers or rangers.
@@ -23,14 +22,18 @@ const mk = (src: string, box: Box): PB => ({src, nat: N2, box});
 const CELLS: Box = [200, 474, 1800, 1525];
 const SEED: Box = [556, 200, 1443, 1800];
 
-/** Set true (with the retaken, aligned pair) to restore the in-place crossfade in the hook. */
-export const BANKSIA_ALIGNED = false;
-/** Shared box for the aligned retake (measure the retaken pair and set it here). */
-export const BANKSIA_PAIR_BOX: Box = [362, 200, 1624, 1800];
+/** The hook uses the aligned retake, so it crossfades in place. */
+export const BANKSIA_ALIGNED = true;
+/** Shared box of the aligned retake (alpha > 20, measured by Codex 25 Oct); its bottom edge is the trunk base. */
+export const BANKSIA_PAIR_BOX: Box = [220, 256, 1780, 1744];
 
 export const PLATES = {
-	banksiaOk: mk(B + 'm7-banksia-healthy-v1.png', BANKSIA_ALIGNED ? BANKSIA_PAIR_BOX : [377, 201, 1624, 1800]),
-	banksiaSick: mk(B + 'm7-banksia-phytophthora-v2.png', BANKSIA_ALIGNED ? BANKSIA_PAIR_BOX : [362, 200, 1606, 1800]),
+	/** Root-bearing pair for the mechanism scenes (not aligned to each other). */
+	banksiaOk: mk(B + 'm7-banksia-healthy-v1.png', [377, 201, 1624, 1800]),
+	banksiaSick: mk(B + 'm7-banksia-phytophthora-v2.png', [362, 200, 1606, 1800]),
+	/** Aligned hook pair (no roots). */
+	hookOk: mk(B + 'm7-banksia-healthy-v2.png', BANKSIA_PAIR_BOX),
+	hookSick: mk(B + 'm7-banksia-phytophthora-v3.png', BANKSIA_PAIR_BOX),
 	zoospores: mk(B + 'm7-phytophthora-zoospores-v1.png', [200, 389, 1800, 1610]),
 	rootTip: mk(B + 'm7-root-tip-zoospores-v1.png', [322, 200, 1677, 1799]),
 	cellsEntry: mk(B + 'm7-root-cells-entry-v1.png', CELLS),

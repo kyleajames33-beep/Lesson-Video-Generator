@@ -48,6 +48,16 @@ Follows `docs/production/module5-release-priority-2026-10-10.json`, Chemistry an
 
 Later waves are prepared while earlier lessons are in owner review.
 
+## Caption timing correction (25 October 2026)
+
+Baseline correction: the 18 October QA published 31 caption replacements with better wrapping and chemical notation. The earlier v2 repair catalog used their older originals and must not be published for those 31 tracks. The reviewed additive repair now preserves all 5,589 QA cue bodies and 213 notation edits. Select `out/caption-repairs/review-catalog-2026-10-25-v4/catalog.json`; see `checks/codex-interim-qa-caption-repair.json`. Five earliest saved Studio tracks have now been downloaded read-only; see `checks/codex-interim-live-caption-provenance.json`. Their exact saved timings remain separate from the documented QA timings and proposed cumulative repair.
+
+Explainer scenes and narration start after the full duration of every preceding scene. Use `npm run export:explainer-captions -- <measured-lesson.json> <new-output-directory>` for new explainer caption exports. This exporter checks thinking pauses and refuses an existing output directory. The older `export:srt` command uses the legacy engine's overlapping transitions and makes explainer captions 0.8 seconds earlier after each scene.
+
+The interim check confirmed this error in the 41 recorded wave 5 caption tracks. Corrected copies are prepared in `out/caption-repairs/wave5-2026-10-25/`, with a manifest and a verified archive. The original tracks and public uploads remain unchanged. See `checks/codex-interim-caption-drift-review.md`, `checks/codex-interim-caption-audio-evidence.json` and `checks/codex-interim-caption-repair.json`. Check the corrected tracks in playback before replacing public captions; this is a caption repair and does not require re-recording narration or rendering the video again.
+
+The continuation adds the 50 earlier records. Use `checks/codex-interim-earlier-caption-repair.json` and its selected 91-entry review catalog for the current handoff. Targeted playback found that B03a already has captions baked into its MP4, so the external track overlaps them. Resolve that presentation separately before replacing its public track. Timestamp correctness alone is not caption-fit approval.
+
 ## Render and disk hygiene (learned 11 October)
 
 - A normal bundle copies all of `public/` (about 1.6 GB) into a temp folder. Repeated renders filled the C: drive to 0 bytes, which made renders hang. Bundle with a slim public folder holding only the lesson's files, and delete the bundle after rendering.
@@ -60,3 +70,5 @@ Later waves are prepared while earlier lessons are in owner review.
 - `codex-prompts/` holds the briefs Codex reads. The owner pastes a one-line instruction pointing at a brief.
 - `lessons/` holds Claude's lesson designs.
 - `status.md` is the live task board for this workflow.
+
+The v4 selection adds warnings for baked caption bands observed in B2a, B2b, B2c, B03a, C3 and C4a. No caption bytes changed. See `checks/codex-interim-caption-layer-audit.json` and the current two-archive checkpoint `checks/codex-interim-qa-caption-repair.json`. Nine decoded frames are sampled evidence; negative frames do not prove whole-video absence. Resolve presentation separately before replacement.

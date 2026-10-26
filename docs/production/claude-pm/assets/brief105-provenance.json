@@ -1,0 +1,496 @@
+{
+  "brief": 105,
+  "date": "2026-10-23",
+  "tool": "OpenAI built-in imagegen; Pillow and OpenCV registration and alpha cleanup",
+  "generatedSources": {
+    "m7-tollens-tube-clear-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-5ab0c222-a605-4b58-b971-1c9e6b29cdbf.png",
+    "m7-tollens-tube-mirror-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-49c9063a-3b87-46b0-8afe-13393bbb9b22.png",
+    "m7-fehlings-tube-blue-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-4c1069b1-3b91-4f7a-9f51-6860abb80654.png",
+    "m7-fehlings-tube-brickred-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-7c3d0961-47dd-4b78-beac-ed0a60fe6a50.png",
+    "m7-aedes-container-dry-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-99f2652c-e052-4da8-8560-caafff52eee2.png",
+    "m7-aedes-container-flooded-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-ea327ef5-88cc-489b-a464-4c01c4f05c29.png",
+    "m7-aedes-larva-pupa-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-d91be9e7-3e7d-4689-9115-ba8a8d8f601b.png",
+    "m7-insecticide-sprayer-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-61e59688-d18a-417f-bcd7-213b2613d3dc.png",
+    "m7-falcon-egg-normal-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-012bcc35-b7df-4067-8294-6c85069a3eeb.png",
+    "m7-falcon-egg-thin-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-ca19095f-f672-4c18-81c2-be40870d0e45.png",
+    "m7-wolbachia-cell-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-0e783a03-4fbf-494e-b19a-c63ef12146da.png",
+    "m7-bacteria-conjugation-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-b77df843-8641-4618-8517-2160118bb90f.png",
+    "m7-capsule-blister-blank-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-b6ddf402-51fa-49e9-a0c5-873e26081757.png",
+    "m7-bacterium-wall-burst-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-a39f840a-6e28-4d98-8e16-5bea55acb7fd.png",
+    "m7-airway-cell-release-blocked-v1": "C:\\Users\\kygs\\.codex\\generated_images\\01a16534-ea52-78d2-92ab-27b232261bee\\exec-25ce8720-359b-44af-99d7-2200f1514e2b.png"
+  },
+  "method": "Imagegen sources were normalised to 2000 pixels. Aligned states share a base canvas and alpha; reagent colour changes are transferred into one tube and rack. The airway body is pixel-identical to the brief 103 infected cell below the upper cilia.",
+  "pairChecks": [
+    {
+      "pair": "dichromate",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        389,
+        220,
+        1610,
+        1780
+      ],
+      "bboxB": [
+        389,
+        220,
+        1610,
+        1780
+      ]
+    },
+    {
+      "pair": "tollens",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        389,
+        220,
+        1611,
+        1780
+      ],
+      "bboxB": [
+        389,
+        220,
+        1611,
+        1780
+      ]
+    },
+    {
+      "pair": "fehlings",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        389,
+        220,
+        1611,
+        1780
+      ],
+      "bboxB": [
+        389,
+        220,
+        1611,
+        1780
+      ]
+    },
+    {
+      "pair": "bucket",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        221,
+        239,
+        1780,
+        1759
+      ],
+      "bboxB": [
+        221,
+        239,
+        1780,
+        1759
+      ]
+    },
+    {
+      "pair": "falcon-egg",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        221,
+        425,
+        1780,
+        1574
+      ],
+      "bboxB": [
+        221,
+        425,
+        1780,
+        1574
+      ]
+    },
+    {
+      "pair": "bacterium",
+      "alphaIoU32": 0.9866674575703439,
+      "bboxA": [
+        200,
+        551,
+        1800,
+        1447
+      ],
+      "bboxB": [
+        200,
+        551,
+        1800,
+        1447
+      ]
+    },
+    {
+      "pair": "airway",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        658,
+        207,
+        1344,
+        1742
+      ],
+      "bboxB": [
+        658,
+        207,
+        1344,
+        1742
+      ]
+    }
+  ],
+  "records": [
+    {
+      "path": "public/assets/chemistry/m8-dichromate-orange-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        389,
+        220,
+        1610,
+        1780
+      ],
+      "clearMargins": [
+        0.1945,
+        0.11,
+        0.195,
+        0.11
+      ],
+      "sha256": "f0c72e03b18169e4d596e40a10537749772be1507093754fe009deb89659fcb6"
+    },
+    {
+      "path": "public/assets/chemistry/m8-dichromate-green-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        389,
+        220,
+        1610,
+        1780
+      ],
+      "clearMargins": [
+        0.1945,
+        0.11,
+        0.195,
+        0.11
+      ],
+      "sha256": "14ead984ea43bd44671cf734e60579c6a89dd1e7c6d122b235537382f079f766"
+    },
+    {
+      "path": "public/assets/chemistry/m7-tollens-tube-clear-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        389,
+        220,
+        1611,
+        1780
+      ],
+      "clearMargins": [
+        0.1945,
+        0.11,
+        0.1945,
+        0.11
+      ],
+      "sha256": "9aac9924f014f2c29fe72b9a88697a43b4a4139070c6eaee70b762579c082d28"
+    },
+    {
+      "path": "public/assets/chemistry/m7-tollens-tube-mirror-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        389,
+        220,
+        1611,
+        1780
+      ],
+      "clearMargins": [
+        0.1945,
+        0.11,
+        0.1945,
+        0.11
+      ],
+      "sha256": "fefcf28106e23483faafc86a0ae55c08bff7336a62de3835f5c0984006047149"
+    },
+    {
+      "path": "public/assets/chemistry/m7-fehlings-tube-blue-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        389,
+        220,
+        1611,
+        1780
+      ],
+      "clearMargins": [
+        0.1945,
+        0.11,
+        0.1945,
+        0.11
+      ],
+      "sha256": "10e84a6aec7eeb798336993dd0a433cb216af46cff4fe73a1be621065447ca27"
+    },
+    {
+      "path": "public/assets/chemistry/m7-fehlings-tube-brickred-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        389,
+        220,
+        1611,
+        1780
+      ],
+      "clearMargins": [
+        0.1945,
+        0.11,
+        0.1945,
+        0.11
+      ],
+      "sha256": "033c79669e818435db45b88d6359754ac5dcb9428eb128e22ed85a2b03b74e9b"
+    },
+    {
+      "path": "public/assets/biology/m7-aedes-container-dry-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        221,
+        239,
+        1780,
+        1759
+      ],
+      "clearMargins": [
+        0.1105,
+        0.1195,
+        0.11,
+        0.1205
+      ],
+      "sha256": "f328552dbdbbfe5111d33382043c1fa35b2a87984d8a0e0feed78f0ca6508740"
+    },
+    {
+      "path": "public/assets/biology/m7-aedes-container-flooded-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        221,
+        239,
+        1780,
+        1759
+      ],
+      "clearMargins": [
+        0.1105,
+        0.1195,
+        0.11,
+        0.1205
+      ],
+      "sha256": "d33580231f64dd7dabfe121d8bb467682d56de9d3f66e0dba2f97637cf644235"
+    },
+    {
+      "path": "public/assets/biology/m7-aedes-larva-pupa-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        220,
+        630,
+        1780,
+        1370
+      ],
+      "clearMargins": [
+        0.11,
+        0.315,
+        0.11,
+        0.315
+      ],
+      "sha256": "11e77210addea69516bf29b3c3b557decfb5f4ec42866be232f0c3cde9fbe35e"
+    },
+    {
+      "path": "public/assets/biology/m7-insecticide-sprayer-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        373,
+        220,
+        1627,
+        1779
+      ],
+      "clearMargins": [
+        0.1865,
+        0.11,
+        0.1865,
+        0.1105
+      ],
+      "sha256": "f22c5233ada01176989cb94d49ffc1f1625b65b68fca892c844f59aa379930ed"
+    },
+    {
+      "path": "public/assets/biology/m7-wolbachia-cell-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        226,
+        220,
+        1774,
+        1780
+      ],
+      "clearMargins": [
+        0.113,
+        0.11,
+        0.113,
+        0.11
+      ],
+      "sha256": "d39a3819064fdb9433d2f88804a1c2469a63a8af87413f01d42fd43914c44e0a"
+    },
+    {
+      "path": "public/assets/biology/m7-bacteria-conjugation-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        220,
+        758,
+        1780,
+        1242
+      ],
+      "clearMargins": [
+        0.11,
+        0.379,
+        0.11,
+        0.379
+      ],
+      "sha256": "d456d6889bfd861e01ee3cc54a2daa8303e6f5a75d6efd0e96bcd11d1704c00f"
+    },
+    {
+      "path": "public/assets/biology/m7-capsule-blister-blank-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        220,
+        500,
+        1780,
+        1499
+      ],
+      "clearMargins": [
+        0.11,
+        0.25,
+        0.11,
+        0.2505
+      ],
+      "sha256": "4ea8057233006cb6018b51b4dc524be0565d229b9c30f8d7731ca34bf0027f94"
+    },
+    {
+      "path": "public/assets/biology/m7-falcon-egg-normal-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        221,
+        425,
+        1780,
+        1574
+      ],
+      "clearMargins": [
+        0.1105,
+        0.2125,
+        0.11,
+        0.213
+      ],
+      "sha256": "32907043ab73164615ee49694ef7f4937bd9a0c435304ca02d28407e3dc74274"
+    },
+    {
+      "path": "public/assets/biology/m7-falcon-egg-thin-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        221,
+        425,
+        1780,
+        1574
+      ],
+      "clearMargins": [
+        0.1105,
+        0.2125,
+        0.11,
+        0.213
+      ],
+      "sha256": "3d8631692e096ef8c6849181152cea70b64b30211946a73cb42371144df8ad3e"
+    },
+    {
+      "path": "public/assets/biology/m7-bacterium-wall-burst-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        200,
+        551,
+        1800,
+        1447
+      ],
+      "clearMargins": [
+        0.1,
+        0.2755,
+        0.1,
+        0.2765
+      ],
+      "sha256": "a31c4ef458a226601999d2d006d4895275d2631096d9c54ca09133500fb01f1e"
+    },
+    {
+      "path": "public/assets/biology/m7-airway-cell-release-blocked-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        658,
+        207,
+        1344,
+        1742
+      ],
+      "clearMargins": [
+        0.329,
+        0.1035,
+        0.328,
+        0.129
+      ],
+      "sha256": "080a6ece1957c5da81b279d38103f68ac6b173a1f230b785b22fd8eef6d8ef21"
+    }
+  ]
+}

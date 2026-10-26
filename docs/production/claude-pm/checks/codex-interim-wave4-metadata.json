@@ -1,0 +1,5051 @@
+{
+  "date": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "scope": "Local metadata, caption files and measured timing only. Live YouTube state and listening were not checked.",
+  "repairPath": null,
+  "input": "docs/production/claude-pm/youtube/wave4-uploads.json",
+  "inputSha256": "fb2fadb562ad7988b121c126e740c02a52984e2c22a04d0de7ea1f57313f764a",
+  "videoCount": 43,
+  "videosWithFindings": 43,
+  "findingCounts": {
+    "caption-during-response-hold": 69,
+    "caption-after-lesson": 27,
+    "chapter-away-from-scene-start": 2,
+    "short-chapter": 1
+  },
+  "videos": [
+    {
+      "lessonId": "chem-m5-g01",
+      "videoId": "BdF_sRrt5Yw",
+      "captionPath": "docs/production/claude-pm/lessons/g01/measured/captions.srt",
+      "captionHash": "4a65363ac9cf81b952e00a4da26e4b85804a364e901b528931174c66a8cc5df0",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\g01\\measured\\lesson.json",
+      "lessonHash": "8fbf5771d5450bec39e67cf9fc943726c0e0925d368e70d8a300752916f76b3d",
+      "durationSeconds": 567.6,
+      "cueCount": 204,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:05 Heat and entropy",
+          "scene": "recall-heat-spread",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "2:28 Burning glucose",
+          "scene": "glucose",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "4:38 Photosynthesis in reverse",
+          "scene": "photo-reverse",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "6:17 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "7:18 Working through the answer",
+          "scene": "feedback",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "9:02 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.3
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 427866.6666666667,
+          "endMs": 437866.6666666667,
+          "cues": [
+            {
+              "index": 164,
+              "startMs": 429867,
+              "endMs": 432826,
+              "text": "Delta G is delta H minus T delta"
+            },
+            {
+              "index": 165,
+              "startMs": 432987,
+              "endMs": 436426,
+              "text": "S, which is minus five hundred and seventy-two,"
+            },
+            {
+              "index": 166,
+              "startMs": 436507,
+              "endMs": 440026,
+              "text": "minus the negative ninety-eight, so minus four hundred"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c04a",
+      "videoId": "yk5KVdipGRE",
+      "captionPath": "docs/production/claude-pm/lessons/c4a/measured/captions.srt",
+      "captionHash": "fe31386056c49a011d0c0fc5a4172ed9477ac4af22178d229ba3fbd5d4dd4363",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c4a\\measured\\lesson.json",
+      "lessonHash": "d1ab4eacdd458527f34a87e3aba93bff7e54ae0321f7ba823ed7a36749d9b87a",
+      "durationSeconds": 544.0333333333333,
+      "cueCount": 205,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The syringe puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:59 What a squeeze changes",
+          "scene": "squeeze-doubles",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "2:53 Reading the graphs",
+          "scene": "graphs",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "3:56 Equal gas counts",
+          "scene": "equal-counts",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "4:48 Squeeze or add argon",
+          "scene": "squeeze-or-argon",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "5:58 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "6:58 Working through the answer",
+          "scene": "feedback-one",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "8:38 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.833
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 407200,
+          "endMs": 417200,
+          "cues": [
+            {
+              "index": 164,
+              "startMs": 407600,
+              "endMs": 408200,
+              "text": "One."
+            },
+            {
+              "index": 165,
+              "startMs": 408400,
+              "endMs": 411440,
+              "text": "Count the gases: three particles on the left,"
+            },
+            {
+              "index": 166,
+              "startMs": 411520,
+              "endMs": 412720,
+              "text": "two on the right."
+            },
+            {
+              "index": 167,
+              "startMs": 412960,
+              "endMs": 415640,
+              "text": "A squeeze doubles every concentration."
+            },
+            {
+              "index": 168,
+              "startMs": 415920,
+              "endMs": 418880,
+              "text": "The forward reaction depends on more gas particles,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b02b",
+      "videoId": "j2fxl5xvDwE",
+      "captionPath": "docs/production/claude-pm/lessons/b2b/measured/captions.srt",
+      "captionHash": "d0cf3434937b513ded9f305c8998c00da5d8ce515060b5506956a9ab8f5d5e29",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b2b\\measured\\lesson.json",
+      "lessonHash": "6e22ed84d9597ed61c1cf57cce008b579c4b8e1d4009f20b0d1c0248f5a8d48f",
+      "durationSeconds": 556.8,
+      "cueCount": 212,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two ways to make plants",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:25 Pollination",
+          "scene": "pollination",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "2:45 Fertilisation and seeds",
+          "scene": "fertilisation",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "4:10 Making plants without seeds",
+          "scene": "vegetative",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "5:36 Building an answer",
+          "scene": "worked-outline",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:23 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "7:24 Working through the answer",
+          "scene": "feedback",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "8:51 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.433
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 433500,
+          "endMs": 443500,
+          "cues": [
+            {
+              "index": 178,
+              "startMs": 434700,
+              "endMs": 437100,
+              "text": "One, pollination failed."
+            },
+            {
+              "index": 179,
+              "startMs": 437340,
+              "endMs": 439900,
+              "text": "The mesh kept out pollen from other flowers,"
+            },
+            {
+              "index": 180,
+              "startMs": 439980,
+              "endMs": 442380,
+              "text": "and with their anthers removed these flowers had"
+            },
+            {
+              "index": 181,
+              "startMs": 442460,
+              "endMs": 445020,
+              "text": "no pollen of their own, so no pollen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b04",
+      "videoId": "P9jyiLiGhZI",
+      "captionPath": "docs/production/claude-pm/lessons/b4/measured/captions.srt",
+      "captionHash": "b2029e634e5b9f04235dba47fa9ed582c631844217d1b9d543aa884073f35725",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b4\\measured\\lesson.json",
+      "lessonHash": "1c15e55ef1037ea1ab62a7028a8d700eed748e6b685b55cbddf72d6052f01292",
+      "durationSeconds": 576.9,
+      "cueCount": 208,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 How cells copy DNA",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:52 Base pairing",
+          "scene": "pairing",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "2:38 Replication steps",
+          "scene": "copy-steps",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "3:43 Copy a DNA molecule",
+          "scene": "worked-molecule",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "5:34 Copying errors and repair",
+          "scene": "errors-repair",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "6:34 Practice questions",
+          "scene": "attempt",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "7:24 Working through the answers",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "9:11 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.7
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 433733.3333333334,
+          "endMs": 443733.3333333334,
+          "cues": [
+            {
+              "index": 165,
+              "startMs": 433734,
+              "endMs": 436453,
+              "text": "Pair each base with its partner."
+            },
+            {
+              "index": 166,
+              "startMs": 436694,
+              "endMs": 439413,
+              "text": "The template's 5' end is on the left,"
+            },
+            {
+              "index": 167,
+              "startMs": 439494,
+              "endMs": 441653,
+              "text": "so the new strand's 3' end is on"
+            },
+            {
+              "index": 168,
+              "startMs": 441734,
+              "endMs": 445813,
+              "text": "the left: A, C, G, G, T, A,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b03a",
+      "videoId": "bUPs256KyVY",
+      "captionPath": "docs/production/claude-pm/lessons/b3a/measured/captions.srt",
+      "captionHash": "bf5ceea5bff480b0f56854b99ee57bce19aebab0639e349d1772c0b5bdbe5e99",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b3a\\measured\\lesson.json",
+      "lessonHash": "68130604814d25b8b3fc14e38fcf6965c33866b82b0a29daff2a867b44a543f7",
+      "durationSeconds": 510.4,
+      "cueCount": 191,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The pregnancy test puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:17 From zygote to blastocyst",
+          "scene": "cleavage",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "2:24 Preparing the uterus",
+          "scene": "progesterone",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "3:27 Keeping progesterone flowing",
+          "scene": "hcg",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "4:38 The placenta",
+          "scene": "exchange",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "5:12 Practice questions",
+          "scene": "attempt",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "6:16 Working through the answers",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "8:05 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.2
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-after-lesson",
+          "cue": 178
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 179
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 180
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 181
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 182
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 183
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 184
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 185
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 186
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 187
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 188
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 189
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 190
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 191
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b03a2",
+      "videoId": "Mlz5XT5XR7o",
+      "captionPath": "docs/production/claude-pm/lessons/b3a2/measured/captions.srt",
+      "captionHash": "5d22331b6baf33ffc73f4304a0a815ad39c9e15c9bd65b7affcfa9cdae81585f",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b3a2\\measured\\lesson.json",
+      "lessonHash": "167064dddb4462f6665c9b68d6929529e75eb2f4eaab43c2d4e3770eb9348d30",
+      "durationSeconds": 545.5333333333333,
+      "cueCount": 183,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two feedback systems",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:55 Progesterone applies a brake",
+          "scene": "brake",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "2:21 Getting ready for birth",
+          "scene": "oestrogen",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:12 Oxytocin and positive feedback",
+          "scene": "loop-closes",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "4:01 Building an explanation",
+          "scene": "explain-answer",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:23 Practice questions",
+          "scene": "attempt",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:29 Working through the answers",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "8:40 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.233
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 379033.3333333334,
+          "endMs": 389033.3333333334,
+          "cues": [
+            {
+              "index": 139,
+              "startMs": 379434,
+              "endMs": 382613,
+              "text": "One, LH stays low, so no egg is"
+            },
+            {
+              "index": 140,
+              "startMs": 382634,
+              "endMs": 385832.99999999994,
+              "text": "released, and FSH is turned down too."
+            },
+            {
+              "index": 141,
+              "startMs": 386154,
+              "endMs": 389832.99999999994,
+              "text": "The pituitary senses progesterone, whatever its source, and"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c05",
+      "videoId": "NJjEgjilgAE",
+      "captionPath": "docs/production/claude-pm/lessons/c5/measured/captions.srt",
+      "captionHash": "af39acd0921d9047b14cae6b61d02fbe92c0d4691abdc871b1e6e403e28f605c",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c5\\measured\\lesson.json",
+      "lessonHash": "02b025d21489247b12d79edd88f20ec530ff8cc91c8ef54b5f89edf4bb16ec92",
+      "durationSeconds": 431.03333333333336,
+      "cueCount": 149,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The equilibrium puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:08 Writing the expression",
+          "scene": "any-equation",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "1:57 A worked example",
+          "scene": "from-scratch",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "3:15 What K tells us",
+          "scene": "size-of-k",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "4:31 Practice questions",
+          "scene": "attempt",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "5:19 Working through the answers",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "6:45 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.833
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 308266.6666666666,
+          "endMs": 318266.6666666666,
+          "cues": [
+            {
+              "index": 117,
+              "startMs": 312667,
+              "endMs": 313066,
+              "text": "One."
+            },
+            {
+              "index": 118,
+              "startMs": 313227,
+              "endMs": 316426,
+              "text": "Products on top, reactants underneath."
+            },
+            {
+              "index": 119,
+              "startMs": 316667.00000000006,
+              "endMs": 318266,
+              "text": "The new ion goes on top."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c04b",
+      "videoId": "jDkHt4rf6bI",
+      "captionPath": "docs/production/claude-pm/lessons/c4b/measured/captions.srt",
+      "captionHash": "5d8ad171af3f1102d0a1c18a2c2325ccbbbe949a05d19f5a71782b5aadb970d4",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c4b\\measured\\lesson.json",
+      "lessonHash": "c7849f41ebe2495641e532f83ef74b5bdd3165119ef4d4006dc9fd8d25da6f21",
+      "durationSeconds": 516.6666666666666,
+      "cueCount": 194,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two sealed tubes",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:07 How a catalyst works",
+          "scene": "route",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "2:26 Comparing the tubes",
+          "scene": "tube-a",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "3:25 Why the mixture stays the same",
+          "scene": "same-mixture",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "4:11 Adding a catalyst at equilibrium",
+          "scene": "catalyst-at-equilibrium",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "5:26 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:29 Working through the answer",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "8:11 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.367
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-after-lesson",
+          "cue": 182
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 183
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 184
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 185
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 186
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 187
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 188
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 189
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 190
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 191
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 192
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 193
+        },
+        {
+          "code": "caption-after-lesson",
+          "cue": 194
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c08",
+      "videoId": "IWS7_MDw-yc",
+      "captionPath": "docs/production/claude-pm/lessons/c8/measured/captions.srt",
+      "captionHash": "e05a1bb74261f2fd6c75270237b2a19808ed20d795a880afdd0d650a5310ba5d",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c8\\measured\\lesson.json",
+      "lessonHash": "00982cb98125122e213bdea7fcc2e7ba3541a2fe6c129d925fcb1008fd371756",
+      "durationSeconds": 530.9,
+      "cueCount": 167,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Which way will it run?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:04 Calculate Q",
+          "scene": "calculate-q",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "2:01 Why Q predicts direction",
+          "scene": "rate-link",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "3:00 Starting from the other side",
+          "scene": "other-side",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "5:01 Changing a settled mixture",
+          "scene": "disturbance",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "6:04 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "6:52 Working through the answer",
+          "scene": "feedback",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "8:25 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.6
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "other-side",
+          "startMs": 217366.6666666667,
+          "endMs": 227366.6666666667,
+          "cues": [
+            {
+              "index": 78,
+              "startMs": 222567,
+              "endMs": 225446,
+              "text": "Q is above K, so this tube has"
+            },
+            {
+              "index": 79,
+              "startMs": 225527,
+              "endMs": 228006,
+              "text": "too much hydrogen iodide for this temperature."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 401900,
+          "endMs": 411900,
+          "cues": [
+            {
+              "index": 135,
+              "startMs": 403100,
+              "endMs": 406860,
+              "text": "Write Q as ammonia squared over nitrogen times"
+            },
+            {
+              "index": 136,
+              "startMs": 406940,
+              "endMs": 408060,
+              "text": "hydrogen cubed."
+            },
+            {
+              "index": 137,
+              "startMs": 408620,
+              "endMs": 412300,
+              "text": "Ammonia squared is 0.040."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c06a",
+      "videoId": "_NLAkMBNyRY",
+      "captionPath": "docs/production/claude-pm/lessons/c6a/measured/captions.srt",
+      "captionHash": "4ead6b2ef7c57c1818186933ceb66a903cdfb9e9e6840aa16c78f4fdad0c5c47",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c6a\\measured\\lesson.json",
+      "lessonHash": "71ddb57be43bbd13b442dc7e1fe80950f03c6719432b43913e6c3308dc81ec04",
+      "durationSeconds": 616.7666666666667,
+      "cueCount": 179,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two types of K question",
+          "scene": "hook-types",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:33 Reversing the equation",
+          "scene": "reverse-equation",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "2:20 Using one measured value",
+          "scene": "type-two",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "3:00 Starting an ICE table",
+          "scene": "ice-initial",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "4:11 Finding the changes",
+          "scene": "change-row",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "5:13 Calculate K",
+          "scene": "find-k",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "6:30 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "7:21 Working through the answer",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "9:51 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.467
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 431100,
+          "endMs": 441100,
+          "cues": [
+            {
+              "index": 134,
+              "startMs": 432300,
+              "endMs": 432940,
+              "text": "One."
+            },
+            {
+              "index": 135,
+              "startMs": 433180,
+              "endMs": 437900,
+              "text": "Start with concentrations: 0.100 moles over"
+            },
+            {
+              "index": 136,
+              "startMs": 437980,
+              "endMs": 442780,
+              "text": "2.00 litres is 0.0500 moles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c09",
+      "videoId": "9TxH_y3ZOdU",
+      "captionPath": "docs/production/claude-pm/lessons/c9/measured/captions.srt",
+      "captionHash": "523ef063fff9fcc368e25c48e964fb9723b38866d7748e918cf8a22abb15ef97",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c9\\measured\\lesson.json",
+      "lessonHash": "5d4610967b29473cbd953c94b8c341efb993571bc42dba2ef0a45e1e206e263d",
+      "durationSeconds": 528.3,
+      "cueCount": 190,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 What changes K?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:17 Why temperature matters",
+          "scene": "temperature-cause",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "2:04 Reading the evidence",
+          "scene": "evidence",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "3:49 Comparing four changes",
+          "scene": "four-changes",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "5:19 Remember the rule",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:54 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:37 Working through the answer",
+          "scene": "feedback-heating",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "8:23 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 386966.6666666666,
+          "endMs": 396966.6666666666,
+          "cues": [
+            {
+              "index": 148,
+              "startMs": 388967,
+              "endMs": 391966,
+              "text": "The forward reaction gives out heat, so the"
+            },
+            {
+              "index": 149,
+              "startMs": 392007,
+              "endMs": 394406,
+              "text": "reverse reaction is the one that takes in"
+            },
+            {
+              "index": 150,
+              "startMs": 394567,
+              "endMs": 395046,
+              "text": "heat."
+            },
+            {
+              "index": 151,
+              "startMs": 395367,
+              "endMs": 398006,
+              "text": "Heating speeds up the reverse reaction more than"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c06b",
+      "videoId": "Zs1oO5eCIqc",
+      "captionPath": "docs/production/claude-pm/lessons/c6b/measured/captions.srt",
+      "captionHash": "d8ab58af9622e590430c5fb582b0e3876fda2d9f1892428ad9e835d3ff8b1061",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c6b\\measured\\lesson.json",
+      "lessonHash": "c1abb85695c5b6e55238de6ca06dcaeb52a8b2dddc7fb2178c090f3603a7a576",
+      "durationSeconds": 674.7333333333333,
+      "cueCount": 210,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The unknown at equilibrium",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:30 Set up the ICE table",
+          "scene": "k-given",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "1:22 Solve a perfect square",
+          "scene": "substitute",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "4:45 When K is tiny",
+          "scene": "tiny-k-setup",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "7:21 Choose the shortcut",
+          "scene": "no-quadratic",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "7:46 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "8:26 Work through the answer",
+          "scene": "feedback-square",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "10:18 Recap and checks",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "10:49 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.433
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "solve",
+          "startMs": 165500,
+          "endMs": 175500,
+          "cues": [
+            {
+              "index": 57,
+              "startMs": 172300,
+              "endMs": 174940,
+              "text": "x is 0.35."
+            },
+            {
+              "index": 58,
+              "startMs": 175020,
+              "endMs": 179340,
+              "text": "So hydrogen and iodine are each 0.45 minus"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 495933.3333333333,
+          "endMs": 505933.3333333333,
+          "cues": [
+            {
+              "index": 166,
+              "startMs": 495534,
+              "endMs": 498813,
+              "text": "Nitrogen and oxygen each fall by x, and"
+            },
+            {
+              "index": 167,
+              "startMs": 499054,
+              "endMs": 502493,
+              "text": "N O rises by two x, so K"
+            },
+            {
+              "index": 168,
+              "startMs": 502654,
+              "endMs": 506653,
+              "text": "is two x all squared, over 0.50 minus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b06a",
+      "videoId": "2vsAqgI-1NI",
+      "captionPath": "docs/production/claude-pm/lessons/b6a/measured/captions.srt",
+      "captionHash": "5ea44cf34c69f849c4f403747fdcdb5fcc3e767f6ca6497c384ce6390459aab0",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b6a\\measured\\lesson.json",
+      "lessonHash": "1351d8f4e86c7b5f819cc6be74027b3d020644e8aaa6b51eaa25e4913eadf716",
+      "durationSeconds": 575.9333333333333,
+      "cueCount": 201,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 How cells store long DNA",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:01 The bacterial chromosome",
+          "scene": "bacterium-ring",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "2:26 Linear chromosomes in a nucleus",
+          "scene": "eukaryote-linear",
+          "deltaSeconds": 0.733
+        },
+        {
+          "chapter": "4:17 DNA in organelles",
+          "scene": "organelle-dna",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "4:51 Compare the two cell types",
+          "scene": "side-by-side",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "6:23 Try the questions",
+          "scene": "attempt",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "9:11 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.367
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 402500,
+          "endMs": 412500,
+          "cues": [
+            {
+              "index": 151,
+              "startMs": 402740,
+              "endMs": 405460,
+              "text": "Its main DNA is linear and wound on"
+            },
+            {
+              "index": 152,
+              "startMs": 405620,
+              "endMs": 408500,
+              "text": "histones, inside a compartment with a membrane."
+            },
+            {
+              "index": 153,
+              "startMs": 408980,
+              "endMs": 411540,
+              "text": "That is a nucleus, so X is a"
+            },
+            {
+              "index": 154,
+              "startMs": 411700,
+              "endMs": 412500,
+              "text": "eukaryote."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 482600,
+          "endMs": 492600,
+          "cues": [
+            {
+              "index": 180,
+              "startMs": 481800,
+              "endMs": 484920,
+              "text": "main chromosome, so it usually reaches new cells"
+            },
+            {
+              "index": 181,
+              "startMs": 485000,
+              "endMs": 486680,
+              "text": "only when its cell divides."
+            },
+            {
+              "index": 182,
+              "startMs": 487160,
+              "endMs": 489520,
+              "text": "Only that cell's offspring get it."
+            },
+            {
+              "index": 183,
+              "startMs": 489800,
+              "endMs": 492920,
+              "text": "In type A, the plasmid is copied separately,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-g03c",
+      "videoId": "UPoHGWWm9MA",
+      "captionPath": "docs/production/claude-pm/lessons/g03c/measured/captions.srt",
+      "captionHash": "d7108eca4340381bfbfd2c71cdc307b2821d51d5b0b2957bf25cf6cf6f381dff",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\g03c\\measured\\lesson.json",
+      "lessonHash": "03d0c157cae864a0e04131772ecbb66a8ab409adfada60616586a677b18a21ce",
+      "durationSeconds": 422.76666666666665,
+      "cueCount": 120,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The traps in this practice set",
+          "scene": "hook-traps",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:33 Question 1: solids and grams",
+          "scene": "q1-question",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "1:15 Solve question 1",
+          "scene": "q1-expression",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:25 Question 2: moles and reverse change",
+          "scene": "q2-question",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "4:09 Solve question 2",
+          "scene": "q2-initial",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "6:05 Choose the first move",
+          "scene": "decision-board",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:37 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.467
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q1-question",
+          "startMs": 64566.666666666664,
+          "endMs": 74566.66666666666,
+          "cues": [
+            {
+              "index": 24,
+              "startMs": 73767,
+              "endMs": 75246,
+              "text": "Start with the expression."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q2-question",
+          "startMs": 238200,
+          "endMs": 248200,
+          "cues": [
+            {
+              "index": 73,
+              "startMs": 244200,
+              "endMs": 247480,
+              "text": "Everything here is in moles, so first divide"
+            },
+            {
+              "index": 74,
+              "startMs": 247560,
+              "endMs": 249640,
+              "text": "by 2.00."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-g03d",
+      "videoId": "wSSh97iXkio",
+      "captionPath": "docs/production/claude-pm/lessons/g03d/measured/captions.srt",
+      "captionHash": "3166c5b81dd1e0b881fcacf29b063d86cc0b5a8f4d115f8d793993fba9cee8f9",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\g03d\\measured\\lesson.json",
+      "lessonHash": "dc6230a21258810edf04170d8e5d63fb9053e76323cbb10599af4affcb3d717d",
+      "durationSeconds": 499.1666666666667,
+      "cueCount": 151,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The two practice questions",
+          "scene": "hook-traps",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:39 Question 3: flipped and tiny K",
+          "scene": "q3-question",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "1:17 Solve question 3",
+          "scene": "q3-flip-and-table",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "3:44 Question 4a: find K",
+          "scene": "q4a-question",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "5:13 Question 4b: reuse K",
+          "scene": "q4b-question",
+          "deltaSeconds": -1.067
+        },
+        {
+          "chapter": "7:20 Choose the first move",
+          "scene": "decision-board",
+          "deltaSeconds": -1.2
+        },
+        {
+          "chapter": "7:53 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.867
+        }
+      ],
+      "findings": [
+        {
+          "code": "chapter-away-from-scene-start",
+          "chapter": "5:13 Question 4b: reuse K",
+          "nearestScene": "q4b-question",
+          "deltaSeconds": -1.0666666666666629
+        },
+        {
+          "code": "chapter-away-from-scene-start",
+          "chapter": "7:20 Choose the first move",
+          "nearestScene": "decision-board",
+          "deltaSeconds": -1.1999999999999886
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q3-question",
+          "startMs": 66366.66666666666,
+          "endMs": 76366.66666666666,
+          "cues": [
+            {
+              "index": 27,
+              "startMs": 75567,
+              "endMs": 77886,
+              "text": "Look at which way the equation runs."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q4a-question",
+          "startMs": 258766.66666666666,
+          "endMs": 268766.6666666666,
+          "cues": [
+            {
+              "index": 86,
+              "startMs": 264767,
+              "endMs": 271006,
+              "text": "Divide each amount by 5.00: 0.0200,"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q4b-question",
+          "startMs": 333266.6666666666,
+          "endMs": 343266.6666666666,
+          "cues": [
+            {
+              "index": 105,
+              "startMs": 337667.00000000006,
+              "endMs": 341746,
+              "text": "Same temperature, so the same K: 81.0 from"
+            },
+            {
+              "index": 106,
+              "startMs": 341827,
+              "endMs": 342746,
+              "text": "part a."
+            },
+            {
+              "index": 107,
+              "startMs": 343027,
+              "endMs": 346706,
+              "text": "The start is 0.250 of each reactant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-g03b",
+      "videoId": "A0Z2-OLzRCI",
+      "captionPath": "docs/production/claude-pm/lessons/g03b/measured/captions.srt",
+      "captionHash": "8958874ae8fc0307353f4f5a6073045f0ea17d663ebd54fb30dfcd9e74afba4b",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\g03b\\measured\\lesson.json",
+      "lessonHash": "44a93f183425ba6c0db33da3be850e1113007fa8beda621d66422f1297fbcb4a",
+      "durationSeconds": 403.43333333333334,
+      "cueCount": 118,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The five calculation types",
+          "scene": "hook-board",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:48 Type 3: what you know",
+          "scene": "type-three-recall",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "1:04 A huge K",
+          "scene": "huge-k-setup",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "2:21 The amount-added question",
+          "scene": "addition-setup",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "3:12 Build the ICE table",
+          "scene": "addition-ice-table",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "4:00 Solve and check",
+          "scene": "addition-k-equation",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:37 Choose the method",
+          "scene": "decision-board",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "6:18 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.133
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "addition-k-equation",
+          "startMs": 276433.3333333333,
+          "endMs": 286433.3333333333,
+          "cues": [
+            {
+              "index": 89,
+              "startMs": 280834,
+              "endMs": 286693,
+              "text": "The top is 0.250, so 0.100 plus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b03b",
+      "videoId": "btrFMU7Yhxc",
+      "captionPath": "docs/production/claude-pm/lessons/b3b/measured/captions.srt",
+      "captionHash": "8d43e81cf79eaec4fa108e0ce4bb42157577a553b444a2e599171576f6be2529",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b3b\\measured\\lesson.json",
+      "lessonHash": "bfac559244b3cbe20dd173644674054a693a9594c930433418f998f084a34ca5",
+      "durationSeconds": 541.5666666666667,
+      "cueCount": 195,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Choosing parents and traits",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:22 Artificial insemination",
+          "scene": "insemination",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "1:15 The gain and the risk",
+          "scene": "gain-and-risk",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "2:30 Artificial pollination",
+          "scene": "pollination",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "3:27 Shared weaknesses and clones",
+          "scene": "shared-weakness",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "4:07 Weigh the methods",
+          "scene": "evaluate",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:10 Try the questions",
+          "scene": "attempt",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "8:12 Remember the trade-off",
+          "scene": "memory",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "8:36 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.433
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 420633.3333333333,
+          "endMs": 430633.3333333333,
+          "cues": [
+            {
+              "index": 162,
+              "startMs": 420234,
+              "endMs": 423673,
+              "text": "One, the benefit is the champion's traits spreading"
+            },
+            {
+              "index": 163,
+              "startMs": 423754,
+              "endMs": 426473,
+              "text": "quickly across the flock, usually at a lower"
+            },
+            {
+              "index": 164,
+              "startMs": 426634,
+              "endMs": 429353,
+              "text": "cost than keeping a ram on every farm."
+            },
+            {
+              "index": 165,
+              "startMs": 429394,
+              "endMs": 432393,
+              "text": "The strongest risk is a narrow gene pool:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c07",
+      "videoId": "8hZ3MVi7kHU",
+      "captionPath": "docs/production/claude-pm/lessons/c7/measured/captions.srt",
+      "captionHash": "7299b3a32e0ed63994a72c93228f603605b8b9d8595f3dab8b7348609a06c63b",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c7\\measured\\lesson.json",
+      "lessonHash": "d2f12d46eb181f76b63adb288703f483348c43cc931ab8c9070237b30b7a92a4",
+      "durationSeconds": 470.9,
+      "cueCount": 168,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The factory puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:15 Yield versus time",
+          "scene": "time-in-reactor",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "2:03 Catalyst and rate",
+          "scene": "catalyst-speed",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "3:03 Remove and recycle",
+          "scene": "recycle",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "3:42 Build an answer",
+          "scene": "model-answer",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "4:45 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "5:37 Work through the answer",
+          "scene": "feedback-temperature",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "6:52 The decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "7:25 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.6
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 326433.3333333333,
+          "endMs": 336433.3333333333,
+          "cues": [
+            {
+              "index": 125,
+              "startMs": 329234,
+              "endMs": 330273,
+              "text": "Temperature."
+            },
+            {
+              "index": 126,
+              "startMs": 330314,
+              "endMs": 333233,
+              "text": "The reaction gives out heat, so cooling shifts"
+            },
+            {
+              "index": 127,
+              "startMs": 333314,
+              "endMs": 336113,
+              "text": "it toward methanol and raises the yield."
+            },
+            {
+              "index": 128,
+              "startMs": 336274,
+              "endMs": 339313,
+              "text": "But at 25 degrees almost no collisions have"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b09",
+      "videoId": "6BhGJlXbKCA",
+      "captionPath": "docs/production/claude-pm/lessons/b9/measured/captions.srt",
+      "captionHash": "8c6308c0844399aaa4dcccff6b2f449cf3a4a162ca9033b5cb533431500bb3a0",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b9\\measured\\lesson.json",
+      "lessonHash": "79ea6fc27478b05d21bb00addac4818501f0ff241dda2f467b3dec8bd5a4e638",
+      "durationSeconds": 499.1333333333333,
+      "cueCount": 176,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The inheritance puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:56 How gametes carry alleles",
+          "scene": "gametes",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "1:34 Reading a Punnett square",
+          "scene": "punnett",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "2:36 The test cross",
+          "scene": "test-cross",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:06 Reading a pedigree",
+          "scene": "read-pedigree",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "4:54 The decisive clues",
+          "scene": "giveaways",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "5:21 Practice questions",
+          "scene": "attempt",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "7:29 The decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "7:53 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.833
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 346666.6666666667,
+          "endMs": 356666.6666666667,
+          "cues": [
+            {
+              "index": 131,
+              "startMs": 348667.00000000006,
+              "endMs": 349786,
+              "text": "It's dominant."
+            },
+            {
+              "index": 132,
+              "startMs": 350027,
+              "endMs": 353066.00000000006,
+              "text": "Individuals 1 and 2 in generation one are"
+            },
+            {
+              "index": 133,
+              "startMs": 353187,
+              "endMs": 356426,
+              "text": "both affected, but their daughter, individual 1 in"
+            },
+            {
+              "index": 134,
+              "startMs": 356507,
+              "endMs": 359226,
+              "text": "generation two, is unaffected."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 412300,
+          "endMs": 422300,
+          "cues": [
+            {
+              "index": 155,
+              "startMs": 412700,
+              "endMs": 415287,
+              "text": "The wrinkled parent can only give the wrinkled"
+            },
+            {
+              "index": 156,
+              "startMs": 415340.00000000006,
+              "endMs": 415900,
+              "text": "allele."
+            },
+            {
+              "index": 157,
+              "startMs": 416460,
+              "endMs": 419020,
+              "text": "Some offspring are wrinkled, so the round parent"
+            },
+            {
+              "index": 158,
+              "startMs": 419100,
+              "endMs": 420620,
+              "text": "gave a wrinkled allele too."
+            },
+            {
+              "index": 159,
+              "startMs": 421020,
+              "endMs": 422500,
+              "text": "It's heterozygous."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c11",
+      "videoId": "PQ9nuqM4b-Y",
+      "captionPath": "docs/production/claude-pm/lessons/c11/measured/captions.srt",
+      "captionHash": "0ad804befa33e26e5cbf286b7f71c99a7bcc5745db9849a4252c9d771ade47bb",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c11\\measured\\lesson.json",
+      "lessonHash": "57e2996c8a215ca7dba26403789cdc7ecc85c614d829a397d9df13b58f9cf706",
+      "durationSeconds": 539.5333333333333,
+      "cueCount": 192,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The dissolving puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:52 Water surrounds ions",
+          "scene": "hydration",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "1:56 The energy balance",
+          "scene": "energy-steps",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "3:33 Why some salts still dissolve",
+          "scene": "entropy",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "4:04 Saturated solutions",
+          "scene": "saturating",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "5:31 What changes the mixture",
+          "scene": "added-solid",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "6:22 Practice questions",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "8:07 The decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "8:34 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.233
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-1",
+          "startMs": 395966.6666666666,
+          "endMs": 405966.6666666666,
+          "cues": [
+            {
+              "index": 154,
+              "startMs": 395567,
+              "endMs": 399086,
+              "text": "The water cooled, so dissolving ammonium chloride is"
+            },
+            {
+              "index": 155,
+              "startMs": 399167.00000000006,
+              "endMs": 400286,
+              "text": "endothermic."
+            },
+            {
+              "index": 156,
+              "startMs": 400607,
+              "endMs": 403086,
+              "text": "Separating its ions from the lattice takes in"
+            },
+            {
+              "index": 157,
+              "startMs": 403207,
+              "endMs": 406206,
+              "text": "more energy than hydrating them releases, so the"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-2",
+          "startMs": 450300,
+          "endMs": 460300,
+          "cues": [
+            {
+              "index": 172,
+              "startMs": 448300,
+              "endMs": 450460,
+              "text": "The mass of solid goes down."
+            },
+            {
+              "index": 173,
+              "startMs": 450700,
+              "endMs": 454380,
+              "text": "Adding water lowers the ion concentrations, so Q"
+            },
+            {
+              "index": 174,
+              "startMs": 454460,
+              "endMs": 457420,
+              "text": "falls below K, and more solid dissolves."
+            },
+            {
+              "index": 175,
+              "startMs": 457900,
+              "endMs": 460620,
+              "text": "It keeps dissolving until the solution is saturated"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-g01",
+      "videoId": "QcSZ2Wn0CE0",
+      "captionPath": "docs/production/claude-pm/lessons/g01b/measured/captions.srt",
+      "captionHash": "1000d2b6d97e4ce73d4a4e546180e66a070c54938fa88315be8b8fff8c700ebe",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\g01b\\measured\\lesson.json",
+      "lessonHash": "6b227e658ac370c73b70fd6e251d05d60022dea06562d9a8c2042f814434f84e",
+      "durationSeconds": 527.5,
+      "cueCount": 179,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 How to trace an unfamiliar question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:31 Question 1: A DNA copying error",
+          "scene": "q1-question",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "2:21 Question 2: From DNA to amino acids",
+          "scene": "q2-question",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "4:07 Question 3: Chromosomes through meiosis",
+          "scene": "q3-question",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "5:59 Question 4: One crossover, four cells",
+          "scene": "q4-question",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "7:54 Choose your tracing method",
+          "scene": "decision-board",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "8:22 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.2
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q1-question",
+          "startMs": 63300,
+          "endMs": 73300,
+          "cues": [
+            {
+              "index": 26,
+              "startMs": 72500,
+              "endMs": 74220,
+              "text": "Start with the first copy."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q2-question",
+          "startMs": 165533.33333333334,
+          "endMs": 175533.33333333334,
+          "cues": [
+            {
+              "index": 66,
+              "startMs": 171534,
+              "endMs": 172573,
+              "text": "Two checks first."
+            },
+            {
+              "index": 67,
+              "startMs": 172974,
+              "endMs": 173773,
+              "text": "Which strand?"
+            },
+            {
+              "index": 68,
+              "startMs": 174174,
+              "endMs": 177533.00000000003,
+              "text": "It's the coding strand, so the mRNA is"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q3-question",
+          "startMs": 277433.3333333333,
+          "endMs": 287433.3333333333,
+          "cues": [
+            {
+              "index": 105,
+              "startMs": 280234,
+              "endMs": 281673,
+              "text": "Use two rules."
+            },
+            {
+              "index": 106,
+              "startMs": 281914,
+              "endMs": 284793,
+              "text": "Count the chromosomes by their centromeres, and count"
+            },
+            {
+              "index": 107,
+              "startMs": 284874,
+              "endMs": 286713,
+              "text": "the DNA by the chromatids."
+            },
+            {
+              "index": 108,
+              "startMs": 287354,
+              "endMs": 290873,
+              "text": "Before prophase one, every chromosome is copied into"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q4-question",
+          "startMs": 393333.3333333333,
+          "endMs": 403333.3333333333,
+          "cues": [
+            {
+              "index": 141,
+              "startMs": 392933.99999999994,
+              "endMs": 394533,
+              "text": "Start with the chromatids."
+            },
+            {
+              "index": 142,
+              "startMs": 394774,
+              "endMs": 398053,
+              "text": "After copying, the pair has four: two purple"
+            },
+            {
+              "index": 143,
+              "startMs": 398134,
+              "endMs": 400133,
+              "text": "long, and two red round."
+            },
+            {
+              "index": 144,
+              "startMs": 400614,
+              "endMs": 403332.99999999994,
+              "text": "A crossover swaps matching pieces between two of"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c13",
+      "videoId": "4IYt7nemcRI",
+      "captionPath": "docs/production/claude-pm/lessons/c13/measured/captions.srt",
+      "captionHash": "3f249fb4589d5113e488f0cafc57b89ee4d79ed0a7849cd146f45edab037c6f8",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c13\\measured\\lesson.json",
+      "lessonHash": "0dbc3a09f93ee403a617bd012726e65a33580ea7299c66110a8f228ad5bae2ea",
+      "durationSeconds": 557.0666666666667,
+      "cueCount": 186,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two clear solutions, one solid",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:25 Where the rules come from",
+          "scene": "rules-origin",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "1:45 The solubility rules",
+          "scene": "nagsag",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "2:31 Swap partners and check both",
+          "scene": "swap-method",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "2:53 Silver chloride and ionic equations",
+          "scene": "agcl-molecular",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "4:21 Lead iodide from the ion charges",
+          "scene": "pbi2-formula",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "5:43 When no solid forms",
+          "scene": "no-precipitate",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "6:08 What stays dissolved",
+          "scene": "filtrate",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "6:44 Practice questions",
+          "scene": "attempt-1",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "8:52 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.233
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-1",
+          "startMs": 415000,
+          "endMs": 425000,
+          "cues": [
+            {
+              "index": 149,
+              "startMs": 413800,
+              "endMs": 418040,
+              "text": "Swap partners: copper hydroxide and sodium sulfate."
+            },
+            {
+              "index": 150,
+              "startMs": 418360,
+              "endMs": 420120,
+              "text": "Sodium sulfate is soluble."
+            },
+            {
+              "index": 151,
+              "startMs": 420520,
+              "endMs": 424280,
+              "text": "Hydroxides are mostly insoluble, and copper isn't one"
+            },
+            {
+              "index": 152,
+              "startMs": 424320,
+              "endMs": 428680,
+              "text": "of the exceptions, so copper(II) hydroxide precipitates, a"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-2",
+          "startMs": 472700,
+          "endMs": 482700,
+          "cues": [
+            {
+              "index": 166,
+              "startMs": 469900,
+              "endMs": 473340.00000000006,
+              "text": "The filtrate holds sodium ions and nitrate ions,"
+            },
+            {
+              "index": 167,
+              "startMs": 473380,
+              "endMs": 477100,
+              "text": "the spectators, plus the leftover chloride ions, because"
+            },
+            {
+              "index": 168,
+              "startMs": 477140,
+              "endMs": 479340.00000000006,
+              "text": "the sodium chloride was in excess."
+            },
+            {
+              "index": 169,
+              "startMs": 479659.99999999994,
+              "endMs": 481820,
+              "text": "The silver ions are essentially all in the"
+            },
+            {
+              "index": 170,
+              "startMs": 481900,
+              "endMs": 482580,
+              "text": "solid."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-p03",
+      "videoId": "cY7hnSTN1uY",
+      "captionPath": "docs/production/claude-pm/lessons/p03/measured/captions.srt",
+      "captionHash": "a171123487720baa3e543bbfa9d9ed7bd3fef566732cc1246ec2be1cfb6ce218",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\p03\\measured\\lesson.json",
+      "lessonHash": "6b663727d8d966412171d554f8722905d2a36be14e774085df2d78b953a9dc87",
+      "durationSeconds": 520.9,
+      "cueCount": 178,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 A grid of evidence",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:28 Choose partners that stay dissolved",
+          "scene": "always-soluble-partners",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:02 Predict, then mix",
+          "scene": "predict-method",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "1:37 Control the variables",
+          "scene": "variables",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "2:12 Expected results",
+          "scene": "expected-results",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "2:53 Turn results into rules",
+          "scene": "results-to-rules",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "3:28 Test your predictions",
+          "scene": "test-predictions",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "4:01 Test the liquid above the solid",
+          "scene": "test-the-liquid",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "4:38 Validity, reliability and accuracy",
+          "scene": "validity-reliability",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:06 Risk assessment",
+          "scene": "risk-assessment",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "6:00 Practice questions",
+          "scene": "attempt-1",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "8:16 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.4
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-1",
+          "startMs": 378366.6666666667,
+          "endMs": 388366.6666666667,
+          "cues": [
+            {
+              "index": 144,
+              "startMs": 379567,
+              "endMs": 383206,
+              "text": "Potassium, nitrate, and leftover silver ions."
+            },
+            {
+              "index": 145,
+              "startMs": 383487,
+              "endMs": 386926,
+              "text": "Adding chloride made more silver chloride, so silver"
+            },
+            {
+              "index": 146,
+              "startMs": 387007,
+              "endMs": 389726,
+              "text": "ions must still have been dissolved: the silver"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-2",
+          "startMs": 430533.3333333334,
+          "endMs": 440533.3333333334,
+          "cues": [
+            {
+              "index": 159,
+              "startMs": 430134,
+              "endMs": 433653,
+              "text": "Calcium sulfate is slightly soluble, so whether a"
+            },
+            {
+              "index": 160,
+              "startMs": 433814,
+              "endMs": 436133,
+              "text": "solid shows depends on how much is there."
+            },
+            {
+              "index": 161,
+              "startMs": 436694,
+              "endMs": 439253,
+              "text": "A weaker stock, or not waiting long enough"
+            },
+            {
+              "index": 162,
+              "startMs": 439294,
+              "endMs": 442373,
+              "text": "for this slow solid, can give no precipitate,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c14",
+      "videoId": "UMgrHQaLSH8",
+      "captionPath": "docs/production/claude-pm/lessons/c14/measured/captions.srt",
+      "captionHash": "c0b34af13ae54a41014ae632e32701d819224beff98009c9b44dd27656522c24",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c14\\measured\\lesson.json",
+      "lessonHash": "249eb57428a0e675dc482169326902e17d6c650b906e654c182af734d39948d0",
+      "durationSeconds": 567.1333333333333,
+      "cueCount": 178,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The solubility puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:56 Write the Ksp expression",
+          "scene": "ksp-expression",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "1:53 Molar solubility",
+          "scene": "molar-solubility",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "2:21 Solve a 1:1 salt",
+          "scene": "baso4-ice",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "3:21 Solve a 1:2 salt",
+          "scene": "caf2-setup",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "4:49 Compare Ksp values",
+          "scene": "compare-ksp",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "5:24 Work backwards from solubility",
+          "scene": "reverse-erow",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "6:31 Practice questions",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "9:02 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.167
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-1",
+          "startMs": 404900,
+          "endMs": 414900,
+          "cues": [
+            {
+              "index": 139,
+              "startMs": 403700,
+              "endMs": 406659.99999999994,
+              "text": "Each lead iodide gives one lead ion and"
+            },
+            {
+              "index": 140,
+              "startMs": 406820,
+              "endMs": 411220,
+              "text": "two iodide ions, so Ksp is s times"
+            },
+            {
+              "index": 141,
+              "startMs": 411380,
+              "endMs": 414340.00000000006,
+              "text": "two s squared: four s cubed."
+            },
+            {
+              "index": 142,
+              "startMs": 414420,
+              "endMs": 416659.99999999994,
+              "text": "Divide both sides by four, take the cube"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-2",
+          "startMs": 462700,
+          "endMs": 472700,
+          "cues": [
+            {
+              "index": 155,
+              "startMs": 459900,
+              "endMs": 465020,
+              "text": "First, convert to moles: 0.0354 divided"
+            },
+            {
+              "index": 156,
+              "startMs": 465100,
+              "endMs": 469740,
+              "text": "by 275.8 is 1.28 times ten to"
+            },
+            {
+              "index": 157,
+              "startMs": 469820,
+              "endMs": 471900,
+              "text": "the minus four moles per litre."
+            },
+            {
+              "index": 158,
+              "startMs": 472540,
+              "endMs": 475580,
+              "text": "That measured value goes in the equilibrium row:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-p01",
+      "videoId": "cjoai9O2koA",
+      "captionPath": "docs/production/claude-pm/lessons/p01/measured/captions-fixed.srt",
+      "captionHash": "294a13ed0ceaff6cc08baf40e6ef70c0ebfba62cb170b9f392fbffe1860480da",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\p01\\measured\\lesson.json",
+      "lessonHash": "5b71bd32457660a473d631806e932a937fca98b2d3d09aba6bd85222f6686599",
+      "durationSeconds": 516.7333333333333,
+      "cueCount": 186,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The practical question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:26 Evidence for reversal",
+          "scene": "reversibility-test",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "1:31 Keep the system contained",
+          "scene": "closed-system",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "1:56 Set up a reference",
+          "scene": "setup-reference",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "3:23 Check for dilution",
+          "scene": "dilution-control",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "3:54 Heat and cool cobalt",
+          "scene": "temperature",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "4:57 Risk assessment",
+          "scene": "risk-assessment",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "5:58 Practice questions",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "8:11 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.433
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-1",
+          "startMs": 377466.6666666666,
+          "endMs": 387466.6666666666,
+          "cues": [
+            {
+              "index": 151,
+              "startMs": 377867,
+              "endMs": 379706,
+              "text": "Add the same ten drops of water to"
+            },
+            {
+              "index": 152,
+              "startMs": 379787,
+              "endMs": 382826,
+              "text": "an identical tube: a dilution control."
+            },
+            {
+              "index": 153,
+              "startMs": 383147,
+              "endMs": 386426,
+              "text": "The silver nitrate solution added volume, so some"
+            },
+            {
+              "index": 154,
+              "startMs": 386467,
+              "endMs": 388706,
+              "text": "of the paling could just be dilution."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-2",
+          "startMs": 427566.6666666667,
+          "endMs": 437566.6666666667,
+          "cues": [
+            {
+              "index": 166,
+              "startMs": 426367,
+              "endMs": 428046,
+              "text": "It isn't supported yet."
+            },
+            {
+              "index": 167,
+              "startMs": 428287,
+              "endMs": 430366,
+              "text": "Heating shows only one direction."
+            },
+            {
+              "index": 168,
+              "startMs": 430767,
+              "endMs": 433326,
+              "text": "To show reversibility, he has to reverse the"
+            },
+            {
+              "index": 169,
+              "startMs": 433407,
+              "endMs": 436286,
+              "text": "change: add water to the cooled blue solid"
+            },
+            {
+              "index": 170,
+              "startMs": 436527,
+              "endMs": 437966,
+              "text": "and see it turn pink again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b10",
+      "videoId": "0RH_T6hOwxY",
+      "captionPath": "docs/production/claude-pm/lessons/b10/measured/captions.srt",
+      "captionHash": "f345dbeef1347d4f05c19847c895573198d40d3edfad2aed20a57abe2f25c127",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b10\\measured\\lesson.json",
+      "lessonHash": "2f01fc3f0eacbf81f2f50665fe5af55714e4a088316cf56358b5afc8e2ad7b5a",
+      "durationSeconds": 502.8,
+      "cueCount": 182,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Why the crosses differ",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:28 Sex chromosomes",
+          "scene": "sex-chromosomes",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "1:00 Morgan's fruit flies",
+          "scene": "morgan-cross",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "1:34 Haemophilia",
+          "scene": "haemophilia",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "2:11 X-linked pedigrees",
+          "scene": "x-linked-pedigree",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "2:46 Read the heterozygote first",
+          "scene": "heterozygote-first",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "3:08 Incomplete dominance",
+          "scene": "incomplete-dominance",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "3:41 Co-dominance",
+          "scene": "co-dominance",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "4:13 ABO blood groups",
+          "scene": "abo",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "5:25 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "6:05 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "6:33 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "7:01 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "7:57 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.5
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 354533.3333333334,
+          "endMs": 364533.3333333334,
+          "cues": [
+            {
+              "index": 139,
+              "startMs": 355734,
+              "endMs": 358293,
+              "text": "Her father gave her his only X, with"
+            },
+            {
+              "index": 140,
+              "startMs": 358334,
+              "endMs": 360773,
+              "text": "the colour-blind allele, so she's a carrier."
+            },
+            {
+              "index": 141,
+              "startMs": 361414,
+              "endMs": 363973,
+              "text": "Each son gets his X from her, so"
+            },
+            {
+              "index": 142,
+              "startMs": 364054,
+              "endMs": 366133,
+              "text": "a son has a one in two chance."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 410666.6666666667,
+          "endMs": 420666.6666666667,
+          "cues": [
+            {
+              "index": 158,
+              "startMs": 410267,
+              "endMs": 413866,
+              "text": "Type O means two small i alleles, so"
+            },
+            {
+              "index": 159,
+              "startMs": 413907,
+              "endMs": 416146,
+              "text": "the child got one from each parent."
+            },
+            {
+              "index": 160,
+              "startMs": 416427,
+              "endMs": 418186,
+              "text": "So the mother is type A with a"
+            },
+            {
+              "index": 161,
+              "startMs": 418267,
+              "endMs": 420746,
+              "text": "hidden small i, and the father is type"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-g02",
+      "videoId": "RHHPbj94tKQ",
+      "captionPath": "docs/production/claude-pm/lessons/g02b/measured/captions.srt",
+      "captionHash": "a790a218f2217a8ef09fa80c87fbd65ec516720816fcf233c61daf3686283791",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\g02b\\measured\\lesson.json",
+      "lessonHash": "b0541106b1c553e166764b430e8e4837fc21521bbe5039519b4f0bae93950e50",
+      "durationSeconds": 494.43333333333334,
+      "cueCount": 171,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Four inheritance problems",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:32 Question 1: Andalusian chickens",
+          "scene": "q1-question",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "2:05 Question 2: tortoiseshell cats",
+          "scene": "q2-question",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "3:46 Question 3: a PKU family",
+          "scene": "q3-question",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:31 Question 4: pedigree pattern",
+          "scene": "q4-question",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "7:18 Decision board",
+          "scene": "decision-board",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "7:49 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.133
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q1-question",
+          "startMs": 59566.66666666667,
+          "endMs": 69566.66666666666,
+          "cues": [
+            {
+              "index": 24,
+              "startMs": 68767,
+              "endMs": 70446,
+              "text": "First, choose the model."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q2-question",
+          "startMs": 158200,
+          "endMs": 168200,
+          "cues": [
+            {
+              "index": 59,
+              "startMs": 164200,
+              "endMs": 166120,
+              "text": "The gene is on the X, and a"
+            },
+            {
+              "index": 60,
+              "startMs": 166200,
+              "endMs": 169160,
+              "text": "tortoiseshell cat needs both alleles, so it needs"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q3-question",
+          "startMs": 255533.33333333334,
+          "endMs": 265533.3333333334,
+          "cues": [
+            {
+              "index": 93,
+              "startMs": 258334,
+              "endMs": 260093.00000000003,
+              "text": "Start with the people you can be sure"
+            },
+            {
+              "index": 94,
+              "startMs": 260173.99999999997,
+              "endMs": 260653.00000000003,
+              "text": "of."
+            },
+            {
+              "index": 95,
+              "startMs": 260894,
+              "endMs": 263693,
+              "text": "The man's mother has two recessive alleles, so"
+            },
+            {
+              "index": 96,
+              "startMs": 263854,
+              "endMs": 264973,
+              "text": "she gave him one."
+            },
+            {
+              "index": 97,
+              "startMs": 265214,
+              "endMs": 268173,
+              "text": "He's unaffected, so he must be a carrier."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "q4-question",
+          "startMs": 354133.3333333333,
+          "endMs": 364133.3333333333,
+          "cues": [
+            {
+              "index": 130,
+              "startMs": 353734,
+              "endMs": 356133,
+              "text": "Test X-linked recessive first."
+            },
+            {
+              "index": 131,
+              "startMs": 356454,
+              "endMs": 359493,
+              "text": "Individual 2 in generation one is an affected"
+            },
+            {
+              "index": 132,
+              "startMs": 359574,
+              "endMs": 359973,
+              "text": "mother."
+            },
+            {
+              "index": 133,
+              "startMs": 360534,
+              "endMs": 363493,
+              "text": "Under that pattern, both her X chromosomes carry"
+            },
+            {
+              "index": 134,
+              "startMs": 363534,
+              "endMs": 365813,
+              "text": "the allele, so every son gets it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b11",
+      "videoId": "ehOdeivCarY",
+      "captionPath": "docs/production/claude-pm/lessons/b11/measured/captions.srt",
+      "captionHash": "3b7583a23ff737a713e929f8319d39e8fe20bde07d3f09897d8add9f7f1c66e8",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b11\\measured\\lesson.json",
+      "lessonHash": "96caf62d0d9686c604404c8be83e2ec5017dcfc67ee81ba6a5c36e771ec6eee9",
+      "durationSeconds": 502.2,
+      "cueCount": 185,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The roan cattle question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:56 Counting allele copies",
+          "scene": "allele-frequency",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "1:59 A hidden allele",
+          "scene": "what-is-a-snp",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "2:37 Reading SNPs",
+          "scene": "snp-markers",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "3:03 Count SNP alleles",
+          "scene": "counting-snps",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "3:31 Association is not cause",
+          "scene": "association",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "4:24 Sample limits",
+          "scene": "sample-limits",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "5:17 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "5:58 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "6:27 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "7:05 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "7:57 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.1
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 347166.6666666667,
+          "endMs": 357166.6666666667,
+          "cues": [
+            {
+              "index": 139,
+              "startMs": 348367,
+              "endMs": 350286,
+              "text": "Each site has sixty plants."
+            },
+            {
+              "index": 140,
+              "startMs": 350367,
+              "endMs": 353646,
+              "text": "Site A is eighteen out of sixty, or"
+            },
+            {
+              "index": 141,
+              "startMs": 353887,
+              "endMs": 355166,
+              "text": "thirty per cent."
+            },
+            {
+              "index": 142,
+              "startMs": 355247,
+              "endMs": 357886,
+              "text": "Site B is thirty out of sixty, or"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 414633.3333333333,
+          "endMs": 424633.3333333333,
+          "cues": [
+            {
+              "index": 164,
+              "startMs": 414234,
+              "endMs": 416713,
+              "text": "Forty people carry eighty copies."
+            },
+            {
+              "index": 165,
+              "startMs": 416954,
+              "endMs": 419273,
+              "text": "The A alleles are sixteen from the mixed"
+            },
+            {
+              "index": 166,
+              "startMs": 419354,
+              "endMs": 422313,
+              "text": "genotypes, plus eight from the four people with"
+            },
+            {
+              "index": 167,
+              "startMs": 422434,
+              "endMs": 423673,
+              "text": "A on both copies."
+            },
+            {
+              "index": 168,
+              "startMs": 424154,
+              "endMs": 426953,
+              "text": "That's twenty-four out of eighty, or thirty per"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-p03",
+      "videoId": "jpuYH0YccBc",
+      "captionPath": "docs/production/claude-pm/lessons/bp03/measured/captions.srt",
+      "captionHash": "9dd2c4d272facc632e9f151405ec1b96509de82b1e34dfdb78a1d8fa29fd41e2",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\bp03\\measured\\lesson.json",
+      "lessonHash": "c5d78548208c63e018b74d3d613bb070d871e70bc9004dd585f6ef8f14a10f9b",
+      "durationSeconds": 450.6333333333333,
+      "cueCount": 159,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 One class, one number",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:28 Choose a characteristic",
+          "scene": "aim-characteristic",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "0:55 Agreement and privacy",
+          "scene": "agreement-privacy",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:18 Define categories",
+          "scene": "define-categories",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "1:51 Collect the data",
+          "scene": "method",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "2:17 Record and calculate frequency",
+          "scene": "record-frequency",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "2:50 Pool the year group",
+          "scene": "pool",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "3:16 Draw a column graph",
+          "scene": "column-graph",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "3:42 Why sample size matters",
+          "scene": "bead-model",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "4:16 Trends and patterns",
+          "scene": "analyse-trend-pattern",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "4:33 Relationships",
+          "scene": "analyse-relationship",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "5:04 Limits and quality",
+          "scene": "limitations",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "5:40 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "6:12 Answer",
+          "scene": "feedback",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "7:05 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.333
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 362100,
+          "endMs": 372100,
+          "cues": [
+            {
+              "index": 138,
+              "startMs": 362500,
+              "endMs": 364340,
+              "text": "Each group has sixty people."
+            },
+            {
+              "index": 139,
+              "startMs": 364820,
+              "endMs": 367780,
+              "text": "Group A: eighteen out of sixty is thirty"
+            },
+            {
+              "index": 140,
+              "startMs": 367940,
+              "endMs": 368820,
+              "text": "per cent."
+            },
+            {
+              "index": 141,
+              "startMs": 368900,
+              "endMs": 371780,
+              "text": "Group B: thirty out of sixty is fifty"
+            },
+            {
+              "index": 142,
+              "startMs": 371860,
+              "endMs": 372820,
+              "text": "per cent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b12",
+      "videoId": "9qTbxRSOKY4",
+      "captionPath": "docs/production/claude-pm/lessons/b12/measured/captions.srt",
+      "captionHash": "962c2f21a128b0d5fe3ce0998df486285815bab7563a9450bd067cfc545f4c25",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b12\\measured\\lesson.json",
+      "lessonHash": "4aa9f93a67526f720e2ba668d9832ee3f0c62adb32e63e2b7a836bc3fd0d5236",
+      "durationSeconds": 472.8,
+      "cueCount": 171,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 DNA band evidence",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:29 Two DNA tools",
+          "scene": "two-tools",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "0:59 How sequencing works",
+          "scene": "how-sequencing-works",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "1:29 Sequencing a family",
+          "scene": "sequencing-a-family",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "2:06 Short tandem repeats",
+          "scene": "short-tandem-repeats",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "2:37 Gel separation",
+          "scene": "gel",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "3:09 Read inheritance from bands",
+          "scene": "child-bands",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "3:37 Why a match needs markers",
+          "scene": "many-markers",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "4:09 Choose the tool",
+          "scene": "choose-the-tool",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "4:39 Tool limits",
+          "scene": "tool-limits",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "5:12 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "5:39 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "6:05 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "6:38 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "7:27 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.5
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 328333.3333333333,
+          "endMs": 338333.3333333333,
+          "cues": [
+            {
+              "index": 129,
+              "startMs": 329534,
+              "endMs": 332332.99999999994,
+              "text": "First, find the child's bands that didn't come"
+            },
+            {
+              "index": 130,
+              "startMs": 332414,
+              "endMs": 333613,
+              "text": "from the mother."
+            },
+            {
+              "index": 131,
+              "startMs": 333654,
+              "endMs": 336173,
+              "text": "They're the twelve at marker one, the thirteen"
+            },
+            {
+              "index": 132,
+              "startMs": 336214,
+              "endMs": 338573,
+              "text": "at marker two, and the ten at marker"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 387333.3333333333,
+          "endMs": 397333.3333333333,
+          "cues": [
+            {
+              "index": 150,
+              "startMs": 386934,
+              "endMs": 389413,
+              "text": "The variant is one base, so you need"
+            },
+            {
+              "index": 151,
+              "startMs": 389454,
+              "endMs": 391093,
+              "text": "the base order at that spot."
+            },
+            {
+              "index": 152,
+              "startMs": 391654,
+              "endMs": 394373,
+              "text": "Sequencing reads it in everyone tested, so you"
+            },
+            {
+              "index": 153,
+              "startMs": 394454,
+              "endMs": 397413,
+              "text": "can compare the allele's frequency in each population."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b13",
+      "videoId": "n_2i_qz3tMs",
+      "captionPath": "docs/production/claude-pm/lessons/b13/measured/captions.srt",
+      "captionHash": "b8f54b49c7b2d49e186ce001754116c5a05eff0b5d563303342545ca06df4ea2",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b13\\measured\\lesson.json",
+      "lessonHash": "8b315f48d197936d4b34c9bed62482942c29fd9cc59dc9338d808e1004f524d1",
+      "durationSeconds": 475.3,
+      "cueCount": 160,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The big data question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:33 Why scale matters",
+          "scene": "why-scale",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "1:07 The sickle cell puzzle",
+          "scene": "sickle-puzzle",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "1:42 Three kinds of evidence",
+          "scene": "three-streams",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "2:10 The malaria pattern",
+          "scene": "malaria-overlay",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "2:46 A match is not proof",
+          "scene": "match-not-proof",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "3:14 Protecting a species",
+          "scene": "conservation",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "3:52 Shared variants and ancestry",
+          "scene": "human-evolution",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "4:36 What big data improve",
+          "scene": "improves-not-removes",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "5:17 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "5:49 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "6:15 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "6:47 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "7:30 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 338366.6666666667,
+          "endMs": 348366.6666666667,
+          "cues": [
+            {
+              "index": 126,
+              "startMs": 340367,
+              "endMs": 343566.00000000006,
+              "text": "The variant gets more common as malaria increases,"
+            },
+            {
+              "index": 127,
+              "startMs": 343687,
+              "endMs": 346206,
+              "text": "which suggests carriers have an advantage where there's"
+            },
+            {
+              "index": 128,
+              "startMs": 346287,
+              "endMs": 346846,
+              "text": "malaria."
+            },
+            {
+              "index": 129,
+              "startMs": 347327,
+              "endMs": 349486,
+              "text": "That's a trend, not proof."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 397166.6666666667,
+          "endMs": 407166.6666666667,
+          "cues": [
+            {
+              "index": 145,
+              "startMs": 397567,
+              "endMs": 400886,
+              "text": "The island animals have much less genetic diversity."
+            },
+            {
+              "index": 146,
+              "startMs": 401167.00000000006,
+              "endMs": 404126,
+              "text": "That suggests a past population crash, or a"
+            },
+            {
+              "index": 147,
+              "startMs": 404207,
+              "endMs": 407406,
+              "text": "small founding group, with little mixing since."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-g03",
+      "videoId": "OtPe_zLuGGk",
+      "captionPath": "docs/production/claude-pm/lessons/bg03/measured/captions.srt",
+      "captionHash": "5eca5dfbb7cb417ad6557e99b41caa49566935f7688d80877a747018a6a7db5d",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\bg03\\measured\\lesson.json",
+      "lessonHash": "44383b3624086478a6eb9756966c12cc7fbed10b6968fb351a5f19e225aa7a45",
+      "durationSeconds": 478.3,
+      "cueCount": 153,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The genetic risk question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:33 A group is not a person",
+          "scene": "group-not-person",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:09 Why genes do not decide alone",
+          "scene": "why-not-decided",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:40 Probability is not certainty",
+          "scene": "not-certain",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "2:05 Estimate carrier frequency",
+          "scene": "carrier-estimate",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "3:01 When predictions hold",
+          "scene": "when-predictions-hold",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "3:42 Risk and relatives",
+          "scene": "shared-with-relatives",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "4:18 Choose precise wording",
+          "scene": "strong-wording",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "5:06 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "5:41 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:07 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "6:34 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "7:33 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 330300,
+          "endMs": 340300,
+          "cues": [
+            {
+              "index": 119,
+              "startMs": 333100,
+              "endMs": 336460,
+              "text": "The study supports a group trend: carriers, as"
+            },
+            {
+              "index": 120,
+              "startMs": 336500,
+              "endMs": 338780,
+              "text": "a group, have about twice the risk."
+            },
+            {
+              "index": 121,
+              "startMs": 339260,
+              "endMs": 341500,
+              "text": "It can't say what happens to one person,"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 383933.3333333333,
+          "endMs": 393933.3333333333,
+          "cues": [
+            {
+              "index": 134,
+              "startMs": 385134,
+              "endMs": 389613,
+              "text": "The allele's frequency, squared, is one in 10,000,"
+            },
+            {
+              "index": 135,
+              "startMs": 389694,
+              "endMs": 393453,
+              "text": "so the allele's frequency is 0.01, and the"
+            },
+            {
+              "index": 136,
+              "startMs": 393534,
+              "endMs": 396653,
+              "text": "normal allele's is 0.99."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-p01",
+      "videoId": "kU1-fsCE7MA",
+      "captionPath": "docs/production/claude-pm/lessons/bp01/measured/captions.srt",
+      "captionHash": "bbe87d20c83aa73e739a32bc57b2ba54b2b0c547d33c19e213f8cc52788e33ad",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\bp01\\measured\\lesson.json",
+      "lessonHash": "acfa22de089ce2427ac21505f3e79dbf4360ba8fedf22b76d40b89915e514e81",
+      "durationSeconds": 522.3,
+      "cueCount": 191,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 A model on the bench",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:26 Aim and kit",
+          "scene": "aim-kit",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:05 Cut the nucleotide cards",
+          "scene": "cut-nucleotides",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "1:37 Make synthesis pieces",
+          "scene": "make-synthesis-pieces",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "2:26 Build the starting DNA",
+          "scene": "build-molecule",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "2:57 Model replication",
+          "scene": "replicate",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "3:24 Record and check",
+          "scene": "record-check",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "3:57 Model transcription",
+          "scene": "transcribe",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "4:26 Model translation",
+          "scene": "translate",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "4:58 Record the results",
+          "scene": "results-table",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "5:29 Model strengths",
+          "scene": "assess-strengths",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "5:54 Model limitations",
+          "scene": "assess-limits",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "6:34 Improve the model",
+          "scene": "improvements",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "6:57 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "7:28 Answer",
+          "scene": "feedback",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "8:17 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 437300,
+          "endMs": 447300,
+          "cues": [
+            {
+              "index": 171,
+              "startMs": 436900,
+              "endMs": 439460,
+              "text": "With one colour, old and new strands look"
+            },
+            {
+              "index": 172,
+              "startMs": 439540,
+              "endMs": 441700,
+              "text": "the same, so you can't see that each"
+            },
+            {
+              "index": 173,
+              "startMs": 441860,
+              "endMs": 444340,
+              "text": "new molecule keeps one original strand."
+            },
+            {
+              "index": 174,
+              "startMs": 444900,
+              "endMs": 447780,
+              "text": "Use two colours, one for original and one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-p02",
+      "videoId": "kRShwjUyPwI",
+      "captionPath": "docs/production/claude-pm/lessons/bp02/measured/captions.srt",
+      "captionHash": "967d16e8e5c9520e18ffb75aeba6b5a640e87b908b6a6950211715f11d65d4a9",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\bp02\\measured\\lesson.json",
+      "lessonHash": "6f60562fd8dcc32013d830f120f1ae56f2703121d65294ea6bc508d434c076b0",
+      "durationSeconds": 492.1666666666667,
+      "cueCount": 172,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Many offspring from one pair",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:26 Aim and kit",
+          "scene": "aim-kit",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:55 Build the parent cell",
+          "scene": "build-parent",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:27 Copy chromosomes",
+          "scene": "copy",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "1:51 Crossing over",
+          "scene": "cross-over",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "2:26 Line up and divide twice",
+          "scene": "line-up-divide",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "2:57 Record the gametes",
+          "scene": "record-gametes",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "3:30 Random fertilisation",
+          "scene": "fertilise",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "3:59 Add a mutation",
+          "scene": "mutate",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "4:25 Compare the results",
+          "scene": "results",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "4:58 Model strengths",
+          "scene": "assess-strengths",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "5:25 Model limitations",
+          "scene": "assess-limits",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "5:57 Validity and reliability",
+          "scene": "valid-reliable",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "6:22 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "6:54 Answer",
+          "scene": "feedback",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "7:46 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.867
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 403700,
+          "endMs": 413700,
+          "cues": [
+            {
+              "index": 151,
+              "startMs": 403300,
+              "endMs": 405500,
+              "text": "The conclusion isn't supported."
+            },
+            {
+              "index": 152,
+              "startMs": 405780,
+              "endMs": 408340.00000000006,
+              "text": "Each parent can give a wrinkled allele, so"
+            },
+            {
+              "index": 153,
+              "startMs": 408580,
+              "endMs": 411060,
+              "text": "two wrinkled alleles are expected about one time"
+            },
+            {
+              "index": 154,
+              "startMs": 411140,
+              "endMs": 412020,
+              "text": "in four."
+            },
+            {
+              "index": 155,
+              "startMs": 412340.00000000006,
+              "endMs": 414420,
+              "text": "Each offspring has a three in four chance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b06b",
+      "videoId": "o0hwEiJjqrg",
+      "captionPath": "docs/production/claude-pm/lessons/b6b/measured/captions.srt",
+      "captionHash": "b98947bb26d15949551d1d1d8d849442c775c093989842e953e5d9a6d6d84f62",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b6b\\measured\\lesson.json",
+      "lessonHash": "cdf96e615d6b165908b3987fe388408643193ff62122df6dd3e2623f11d777f8",
+      "durationSeconds": 553.9,
+      "cueCount": 194,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Why copy a gene?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:27 Genes and mRNA",
+          "scene": "gene-and-mrna",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "1:02 How RNA differs from DNA",
+          "scene": "rna-differences",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "1:33 RNA polymerase finds a promoter",
+          "scene": "polymerase-promoter",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "2:00 The template strand and direction",
+          "scene": "template-strand",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "2:45 Copying a DNA sequence",
+          "scene": "worked-copy",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "3:34 Check the coding strand",
+          "scene": "coding-check",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "4:06 Releasing and exporting mRNA",
+          "scene": "release-export",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "4:46 Transcription and replication",
+          "scene": "not-replication",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "5:21 Codons and a changed base",
+          "scene": "codons-cftr",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "6:21 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "6:56 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "7:22 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": 0.1
+        },
+        {
+          "chapter": "7:52 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "8:49 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.4
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 405233.3333333334,
+          "endMs": 415233.3333333334,
+          "cues": [
+            {
+              "index": 154,
+              "startMs": 404834,
+              "endMs": 407153,
+              "text": "The polymerase reads its template from the 3'"
+            },
+            {
+              "index": 155,
+              "startMs": 407314,
+              "endMs": 409313,
+              "text": "end to the 5' end."
+            },
+            {
+              "index": 156,
+              "startMs": 409794,
+              "endMs": 412033,
+              "text": "It moves right, so the template has its"
+            },
+            {
+              "index": 157,
+              "startMs": 412114,
+              "endMs": 414753,
+              "text": "3' end on the left, the top strand."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 461200,
+          "endMs": 471200,
+          "cues": [
+            {
+              "index": 172,
+              "startMs": 459200,
+              "endMs": 462640,
+              "text": "With the polymerase stuck, no new mRNA is"
+            },
+            {
+              "index": 173,
+              "startMs": 462720,
+              "endMs": 463360,
+              "text": "made."
+            },
+            {
+              "index": 174,
+              "startMs": 463600,
+              "endMs": 466560,
+              "text": "The ribosomes can't read the DNA, which stays"
+            },
+            {
+              "index": 175,
+              "startMs": 466600,
+              "endMs": 469920,
+              "text": "in the nucleus, so they depend on mRNA."
+            },
+            {
+              "index": 176,
+              "startMs": 470560,
+              "endMs": 473440,
+              "text": "The mRNA already made is broken down over"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b06c",
+      "videoId": "VKZvh8-y7gI",
+      "captionPath": "docs/production/claude-pm/lessons/b6c/measured/captions.srt",
+      "captionHash": "ada68ab4d126d2c3f050c73575ca9aad0468118bcae036362e0a48031899c7c3",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b6c\\measured\\lesson.json",
+      "lessonHash": "f41fb049a9f89be92f99484cd3cf1dc18bbb014a47f125b438079e9cdfc4dcd2",
+      "durationSeconds": 564.5,
+      "cueCount": 190,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The four-letter puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:27 Why codons have three bases",
+          "scene": "why-three",
+          "deltaSeconds": 0.333
+        },
+        {
+          "chapter": "1:01 The ribosome and tRNA",
+          "scene": "ribosome",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "2:10 Matching codons and anticodons",
+          "scene": "codon-anticodon",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "2:38 Reading a codon chart",
+          "scene": "codon-chart",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "3:17 Start, build and stop",
+          "scene": "start",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "4:55 A chain becomes a protein",
+          "scene": "polypeptide-to-protein",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "5:18 Why both RNAs matter",
+          "scene": "both-rnas",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "6:12 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": 0.5
+        },
+        {
+          "chapter": "6:48 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "7:20 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "8:03 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "8:59 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.2
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 397366.6666666667,
+          "endMs": 407366.6666666667,
+          "cues": [
+            {
+              "index": 145,
+              "startMs": 397767,
+              "endMs": 402886,
+              "text": "The chart reads mRNA, so transcribe first:"
+            },
+            {
+              "index": 146,
+              "startMs": 402967,
+              "endMs": 403926,
+              "text": "A U G,"
+            },
+            {
+              "index": 147,
+              "startMs": 404487,
+              "endMs": 407766,
+              "text": "A A G, C C U, U G"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 472533.3333333334,
+          "endMs": 482533.3333333334,
+          "cues": [
+            {
+              "index": 170,
+              "startMs": 471334,
+              "endMs": 474693,
+              "text": "In a bacterium, misread codons put wrong amino"
+            },
+            {
+              "index": 171,
+              "startMs": 474774,
+              "endMs": 477813,
+              "text": "acids into its chains, so many proteins fold"
+            },
+            {
+              "index": 172,
+              "startMs": 477894,
+              "endMs": 480693,
+              "text": "wrongly and fail, and it dies."
+            },
+            {
+              "index": 173,
+              "startMs": 480774,
+              "endMs": 484213,
+              "text": "The drug doesn't bind human cytoplasmic ribosomes, which"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b07",
+      "videoId": "piCi2sSRDQU",
+      "captionPath": "docs/production/claude-pm/lessons/b7/measured/captions.srt",
+      "captionHash": "21179de01ca4252c763bc6c2ce481fddd882cdfd142a45613954f5fe24c6e5f2",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b7\\measured\\lesson.json",
+      "lessonHash": "99afd4a13cfe0d7211e26a6bad9ef7a58c65e0c11f7a2dff5c4fad2089301277",
+      "durationSeconds": 530.7333333333333,
+      "cueCount": 192,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The protein puzzle",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:55 Why a chain folds",
+          "scene": "why-fold",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "1:57 A DNA change and sickle cells",
+          "scene": "sickle-base",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:26 Genes meet the environment",
+          "scene": "environment",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "5:30 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "6:15 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "6:43 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "7:30 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "8:25 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.433
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 364666.6666666667,
+          "endMs": 374666.6666666667,
+          "cues": [
+            {
+              "index": 144,
+              "startMs": 365867,
+              "endMs": 367946,
+              "text": "The dark parts are the coolest parts of"
+            },
+            {
+              "index": 145,
+              "startMs": 367987,
+              "endMs": 370426,
+              "text": "the body, so the enzyme must work only"
+            },
+            {
+              "index": 146,
+              "startMs": 370507,
+              "endMs": 372186,
+              "text": "where the skin is cool."
+            },
+            {
+              "index": 147,
+              "startMs": 372267,
+              "endMs": 374426,
+              "text": "On the warm back it doesn't work, so"
+            },
+            {
+              "index": 148,
+              "startMs": 374507,
+              "endMs": 376106,
+              "text": "no pigment forms."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 439633.3333333333,
+          "endMs": 449633.3333333333,
+          "cues": [
+            {
+              "index": 171,
+              "startMs": 439234,
+              "endMs": 442353,
+              "text": "In plant P, C A U is histidine"
+            },
+            {
+              "index": 172,
+              "startMs": 442594,
+              "endMs": 445153,
+              "text": "and C C U is proline, so a"
+            },
+            {
+              "index": 173,
+              "startMs": 445314,
+              "endMs": 447873,
+              "text": "different amino acid sits in the active site."
+            },
+            {
+              "index": 174,
+              "startMs": 448114,
+              "endMs": 450913,
+              "text": "The pocket's shape changes, the enzyme can't hold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c10",
+      "videoId": "PL415_P6F6w",
+      "captionPath": "docs/production/claude-pm/lessons/c10/measured/captions.srt",
+      "captionHash": "302c4f66cde54e96ee3667865f771c5a6a8a0b030781255e4f946e842c6488bb",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c10\\measured\\lesson.json",
+      "lessonHash": "9596bb2bcaf55e4a24352b481f86fd04483d2c88d1372c362c3cdff4331c2b54",
+      "durationSeconds": 455.06666666666666,
+      "cueCount": 159,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Strong and weak acids",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:14 Ka is an equilibrium constant",
+          "scene": "ka-is-k",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "1:53 Writing Ka with water",
+          "scene": "with-water",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "2:25 What Ka's size means",
+          "scene": "ka-size",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "3:14 Strong acids and bases",
+          "scene": "strong-acids",
+          "deltaSeconds": 0.1
+        },
+        {
+          "chapter": "3:37 Kb for ammonia",
+          "scene": "kb",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "4:22 Ksp as the next example",
+          "scene": "ksp-preview",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "4:49 The name-tag rule",
+          "scene": "memory-aid",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "5:12 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "5:51 Build the expression",
+          "scene": "feedback-expression",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "6:08 Compare acid strengths",
+          "scene": "feedback-stronger",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "7:10 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.233
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 340033.3333333334,
+          "endMs": 350033.3333333334,
+          "cues": [
+            {
+              "index": 128,
+              "startMs": 342034,
+              "endMs": 342433,
+              "text": "One."
+            },
+            {
+              "index": 129,
+              "startMs": 342674,
+              "endMs": 347073,
+              "text": "Products over reactants, with water left out: Ka"
+            },
+            {
+              "index": 130,
+              "startMs": 347234,
+              "endMs": 349873,
+              "text": "is H three O plus times C N"
+            },
+            {
+              "index": 131,
+              "startMs": 349954,
+              "endMs": 352353,
+              "text": "minus, over H C N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-c15",
+      "videoId": "KvzXxb7bAyo",
+      "captionPath": "docs/production/claude-pm/lessons/c15/measured/captions.srt",
+      "captionHash": "3206fd13a7fe19ab8ba0e40d74784b884843040f667835af0fb7dd361d27e44f",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\c15\\measured\\lesson.json",
+      "lessonHash": "1f141c50674de29db330b87300966534ddb87849612c257fe8fdecc618dc1504",
+      "durationSeconds": 546.0333333333333,
+      "cueCount": 170,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The precipitation question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:26 Qsp and Ksp",
+          "scene": "qsp-idea",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "1:19 Mixing dilutes every ion",
+          "scene": "mixing-dilutes",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "1:42 Calcium sulfate example",
+          "scene": "caso4-setup",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "2:48 A second mixing calculation",
+          "scene": "pbso4-moles",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "4:02 Dilute, calculate, compare",
+          "scene": "memory-aid",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "4:11 The common ion effect",
+          "scene": "common-ion",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "4:51 ICE table with a common ion",
+          "scene": "common-ion-ice",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "5:33 Solve and check",
+          "scene": "common-ion-solve",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "6:01 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "6:38 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "7:13 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "7:43 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "8:41 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.267
+        }
+      ],
+      "findings": [
+        {
+          "code": "short-chapter",
+          "chapter": "4:11 The common ion effect"
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-1",
+          "startMs": 387566.6666666667,
+          "endMs": 397566.6666666667,
+          "cues": [
+            {
+              "index": 129,
+              "startMs": 387967,
+              "endMs": 390926,
+              "text": "Lead is 2.0 times ten to the minus"
+            },
+            {
+              "index": 130,
+              "startMs": 391007,
+              "endMs": 396526,
+              "text": "five moles, over the total 0.0500 litres:"
+            },
+            {
+              "index": 131,
+              "startMs": 396607,
+              "endMs": 399406,
+              "text": "4.0 times ten to the minus four."
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-2",
+          "startMs": 452400,
+          "endMs": 462400,
+          "cues": [
+            {
+              "index": 148,
+              "startMs": 451200,
+              "endMs": 453040,
+              "text": "Sulfate is a common ion."
+            },
+            {
+              "index": 149,
+              "startMs": 453360,
+              "endMs": 457440,
+              "text": "It pushes Qsp above Ksp, so calcium sulfate"
+            },
+            {
+              "index": 150,
+              "startMs": 457520,
+              "endMs": 460080,
+              "text": "precipitates, and less stays dissolved."
+            },
+            {
+              "index": 151,
+              "startMs": 460560,
+              "endMs": 463200,
+              "text": "Ksp stays the same, because the temperature hasn't"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "chem-m5-p02",
+      "videoId": "c1zYHVXYc74",
+      "captionPath": "docs/production/claude-pm/lessons/p02/measured/captions.srt",
+      "captionHash": "ceddb0917e82eb5dd0e57944f170d8801bcc83ec22d5b3f360f3da3b9e72bf6d",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\p02\\measured\\lesson.json",
+      "lessonHash": "0aa2efa1da490b22e9832b03b2e6827f51ab84d79913be159863b18ca515b2d0",
+      "durationSeconds": 577.9666666666667,
+      "cueCount": 187,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 How can colour give us K?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:38 Inside a colourimeter",
+          "scene": "colourimeter",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "1:19 Absorbance and concentration",
+          "scene": "absorbance",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "1:54 Making standards",
+          "scene": "standards",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "2:33 Build a calibration graph",
+          "scene": "calibration",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:14 Read the equilibrium mixture",
+          "scene": "read-mixture",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "4:08 Dilute before the ICE table",
+          "scene": "dilution",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "4:45 Complete the ICE table",
+          "scene": "ice-table",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "5:32 Calculate K",
+          "scene": "find-k",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "6:11 Repeat and evaluate",
+          "scene": "repeats",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "6:48 The five-step chain",
+          "scene": "memory-aid",
+          "deltaSeconds": 0.1
+        },
+        {
+          "chapter": "7:11 Practice question",
+          "scene": "attempt",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "7:51 Answer and short working",
+          "scene": "feedback",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "8:43 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "9:13 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.333
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 460566.6666666667,
+          "endMs": 470566.6666666667,
+          "cues": [
+            {
+              "index": 159,
+              "startMs": 461767,
+              "endMs": 464006,
+              "text": "The answer is about 208."
+            },
+            {
+              "index": 160,
+              "startMs": 464647,
+              "endMs": 469366,
+              "text": "First, dilute: in 10.00 millilitres,"
+            },
+            {
+              "index": 161,
+              "startMs": 469447,
+              "endMs": 472806,
+              "text": "iron starts at 9.00 times ten to the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b05b",
+      "videoId": "ikfUhS8eK3I",
+      "captionPath": "docs/production/claude-pm/lessons/b5b/measured/captions.srt",
+      "captionHash": "2ca97517ca2ae4abdb844974c31820577db0932d7e44128f8a94735e0a9a126f",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b5b\\measured\\lesson.json",
+      "lessonHash": "4195d82309f0d336ea3e73795e54d9a4ac5831cb3dda9be7b300c44145ec616e",
+      "durationSeconds": 459.6,
+      "cueCount": 158,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Why halve chromosome sets?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:19 Why gametes need one set",
+          "scene": "why-halve",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "0:46 Follow the model alleles",
+          "scene": "model-alleles",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "1:11 Prophase I: homologous pairs",
+          "scene": "prophase-one",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "1:36 What crossing over changes",
+          "scene": "crossing-what",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:55 New allele combinations",
+          "scene": "crossing-makes",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "2:08 Metaphase I: pairs line up",
+          "scene": "metaphase-one-line-up",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "2:20 Independent assortment",
+          "scene": "independent-assortment",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "2:38 Meiosis I separates pairs",
+          "scene": "first-division",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "3:05 Meiosis II separates chromatids",
+          "scene": "second-division",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "3:37 Four haploid cells",
+          "scene": "four-cells",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "3:52 Track chromosome numbers",
+          "scene": "tracking",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "4:27 Count possible combinations",
+          "scene": "combinations",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "4:59 Fertilisation restores two sets",
+          "scene": "fertilisation",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "5:15 Mitosis versus meiosis",
+          "scene": "compare",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "5:45 Practice questions",
+          "scene": "attempt",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "6:07 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "6:31 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "6:52 Memory aid",
+          "scene": "memory",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "7:14 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.3
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 355800,
+          "endMs": 365800,
+          "cues": [
+            {
+              "index": 131,
+              "startMs": 354440,
+              "endMs": 357960,
+              "text": "Each gamete holds 7 chromosomes, one from each"
+            },
+            {
+              "index": 132,
+              "startMs": 358040,
+              "endMs": 358440,
+              "text": "pair."
+            },
+            {
+              "index": 133,
+              "startMs": 359000,
+              "endMs": 361400,
+              "text": "Each pair can send either partner, so the"
+            },
+            {
+              "index": 134,
+              "startMs": 361480,
+              "endMs": 364600,
+              "text": "choices multiply: 2 to the power 7, which"
+            },
+            {
+              "index": 135,
+              "startMs": 364680,
+              "endMs": 366400,
+              "text": "is 128."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b05a",
+      "videoId": "QorDvCohIYY",
+      "captionPath": "docs/production/claude-pm/lessons/b5a/measured/captions.srt",
+      "captionHash": "ec040f2b5c6f2501c478c8fb9a9bc31dd46b83d8fa8141409cd131dd25c54776",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b5a\\measured\\lesson.json",
+      "lessonHash": "db50d0b16d9aeded12a0237b4098ccd1b846087aacb8e1f660225f73b249a30b",
+      "durationSeconds": 505.73333333333335,
+      "cueCount": 177,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Why do cells copy chromosomes?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:26 Chromosome sets",
+          "scene": "chromosome-sets",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "0:58 Diploid and haploid",
+          "scene": "diploid-haploid",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "1:15 Why copy DNA first?",
+          "scene": "why-copy-first",
+          "deltaSeconds": 0.367
+        },
+        {
+          "chapter": "1:37 What a copied chromosome looks like",
+          "scene": "the-copy",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "1:58 Interphase: copy the DNA",
+          "scene": "interphase",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "2:28 Prophase and metaphase",
+          "scene": "prophase",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "3:06 Anaphase separates chromatids",
+          "scene": "anaphase",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "3:34 Telophase and cytokinesis",
+          "scene": "telophase-cytokinesis",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "3:58 Track chromosome numbers",
+          "scene": "tracking",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "4:47 Why daughter cells match",
+          "scene": "identical",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "5:11 Copying is not perfect",
+          "scene": "not-perfect",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "5:39 Where mitosis is used",
+          "scene": "uses",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "6:02 Practice questions",
+          "scene": "attempt",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "6:44 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "7:07 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "7:27 Memory aid",
+          "scene": "memory",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "8:00 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.433
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 393600,
+          "endMs": 403600,
+          "cues": [
+            {
+              "index": 148,
+              "startMs": 393840.00000000006,
+              "endMs": 397680,
+              "text": "After copying, the cell still has 8 chromosomes,"
+            },
+            {
+              "index": 149,
+              "startMs": 397800,
+              "endMs": 400640,
+              "text": "because the copies stay joined at their centromeres,"
+            },
+            {
+              "index": 150,
+              "startMs": 400680,
+              "endMs": 403520,
+              "text": "but it now has 16 chromatids."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "bio-m5-b08",
+      "videoId": "QXGUtIoxkgc",
+      "captionPath": "docs/production/claude-pm/lessons/b8/measured/captions.srt",
+      "captionHash": "e5a3ef2da3118ca5cb6379793f3a3381435dd0b2bb40254279db3e5cbd410b36",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\b8\\measured\\lesson.json",
+      "lessonHash": "4cc2c713fdb6c58fbfbbde5962e63758c2b00892fa630aee476462efc0d7ab15",
+      "durationSeconds": 498.3333333333333,
+      "cueCount": 176,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 One pod, different seeds",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:55 Trace a parent’s alleles",
+          "scene": "trace-parent",
+          "deltaSeconds": 0.333
+        },
+        {
+          "chapter": "1:35 Genes on one chromosome",
+          "scene": "same-chromosome",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "2:09 Random fertilisation",
+          "scene": "fertilisation",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "3:07 Where a new allele starts",
+          "scene": "mutation",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:38 Genetic or environmental?",
+          "scene": "genetic-or-environmental",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "4:53 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "5:38 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "6:09 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "6:55 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "7:53 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.033
+        }
+      ],
+      "findings": [
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt",
+          "startMs": 326733.3333333334,
+          "endMs": 336733.3333333334,
+          "cues": [
+            {
+              "index": 126,
+              "startMs": 328734,
+              "endMs": 331613,
+              "text": "With no crossing over, capital D stays with"
+            },
+            {
+              "index": 127,
+              "startMs": 331694,
+              "endMs": 334973,
+              "text": "capital E, and small d with small e,"
+            },
+            {
+              "index": 128,
+              "startMs": 335054,
+              "endMs": 337693,
+              "text": "and each can go with either F allele:"
+            }
+          ]
+        },
+        {
+          "code": "caption-during-response-hold",
+          "scene": "attempt-two",
+          "startMs": 403900,
+          "endMs": 413900,
+          "cues": [
+            {
+              "index": 153,
+              "startMs": 404300,
+              "endMs": 407659.99999999994,
+              "text": "Group A are clones, with the same genotype,"
+            },
+            {
+              "index": 154,
+              "startMs": 407740,
+              "endMs": 410260,
+              "text": "so their differences come from the environment."
+            },
+            {
+              "index": 155,
+              "startMs": 410620,
+              "endMs": 413020,
+              "text": "Group B grew in the same bed, so"
+            },
+            {
+              "index": 156,
+              "startMs": 413100,
+              "endMs": 416460,
+              "text": "their differences are mostly genetic: each seed came"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

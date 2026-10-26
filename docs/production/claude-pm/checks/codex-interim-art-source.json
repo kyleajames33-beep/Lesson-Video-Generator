@@ -1,0 +1,439 @@
+{
+  "date": "2026-10-25",
+  "scope": "Source and still-image checks only. Continuous playback unavailable.",
+  "lessons": {
+    "b05": {
+      "sourceHashes": {
+        "src/explainer/lessons/bio-m7-b05/assets.ts": "05f6e773059f5a62f196aca1b60ba4d5ae6d083d785b825bce0d10e1f3723b9c",
+        "src/explainer/lessons/bio-m7-b05/common.ts": "a4d907ca2c325acded79362cb4716585889e6aca0ff02337312c5f58e7fb22d4",
+        "src/explainer/lessons/bio-m7-b05/config.ts": "013bc824ce38d2eb0c560b1d2940530b6bbd34ac7933ad130e2047d7a270eb28",
+        "src/explainer/lessons/bio-m7-b05/parts.tsx": "35d153125f993fdd011850d2ac4702e7b47980a9d4ef537a96a9761aa15c9adc",
+        "src/explainer/lessons/bio-m7-b05/s1.tsx": "8c1cfab2a586879ccdd8252c75788379d666131b62aef458d80108741dc044e9",
+        "src/explainer/lessons/bio-m7-b05/s2.tsx": "ca08fae8c7183eb561f83d3a95a2eaff6c549390e0fcf41d0b28b3fae910bf6e",
+        "src/explainer/lessons/bio-m7-b05/s3.tsx": "485d41a67b78d2ef587f202954d19d8aa5ccb061d2fee92cc1171b7ec8ac44de",
+        "src/explainer/lessons/bio-m7-b05/scenes.tsx": "37f90adf06408cc7e2ea82e380937d271526e425fba476fcb6c44fc3829683c1"
+      },
+      "measuredLessonSha256": "221910162ecf6ab012091f7d009d3ca07e3d88fcb19bdc1df28a96a17461fe06",
+      "previewBundleSha256": "0a0d8c69ffb1f8b329b5053fefd95722872fbbb5fb322b32dbaaad09f58a45c7",
+      "previewAssetCount": 14,
+      "previewAssetMismatches": [
+        {
+          "asset": "public/assets/biology/m7-banksia-coccinea-v1.png",
+          "previewSha256": "4089b93c57cae71d34063819017fc4e08cc02b9093e71bf835a7ebaab7e1b13f",
+          "currentSha256": "ccb35e04b6d43b9dd91ced84611b4c4587a2dcc1edbd52321f46355541ee105a",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-banksia-seedling-collapsed-v1.png",
+          "previewSha256": "64e8d57a74dbc4d7eb09353ed00f499687f04fc0b6e14a59da4c5470c0ff84f5",
+          "currentSha256": "2167cf407ae58cfb9cf03b8c817461bf92e4fcfd0a57a89896ffc5a59cadc606",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-banksia-seedling-contained-v1.png",
+          "previewSha256": "da8cc2464bc320fe74031fbeae2dcad857854d103c46d3760a8b59ebcec8be98",
+          "currentSha256": "d33ec62167e90f5e06efaa39318e2f2f160a825b6cc1db341ced6b7c0f3f00c7",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-banksia-seedling-healthy-v1.png",
+          "previewSha256": "9fe04df07aa4288ce91fa71e9e1121014028d20c471c49837d6cfafe1fb5afed",
+          "currentSha256": "22c0909dbd17c16f377d386547aac355658a9457851487eee83a86d7248be4cb",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-banksia-serrata-v1.png",
+          "previewSha256": "5cfaf2121a1df9eb35ddc7d728166943110154e9c682cdf6daa214dc7308fc78",
+          "currentSha256": "4d1166b868b4ac767b1c8a872163eef601544b976dec04d3228899430ac92e20",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-boot-cleaning-station-v1.png",
+          "previewSha256": "5a79bd1f933781b52005369af4cee8d811f595904c29ee7f4506ca7564315485",
+          "currentSha256": "f91185efad6efb384be7dc381f9fbb9caa2c45f0dd501920923b5d4a88bed30e",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-phytophthora-zoospores-v1.png",
+          "previewSha256": "0fc981054284b9a8a70b3648d64b5fed66047c06b9b05f1be1096b8976102bcc",
+          "currentSha256": "2f7a7e1b7a02bcea1744516ad090fae715be119fdf469a70535e3f4a912357fd",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-root-cells-defended-v1.png",
+          "previewSha256": "67a7a0ea056b5d5d3eacac0ca4107afbab1ee8d68e7daa54b94f6ac8a6b52cc1",
+          "currentSha256": "686b6c46b47366e4fd0f68edd3553b779ba3235608d2ffdb4ca1cc5d9f0505ea",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-root-cells-entry-v1.png",
+          "previewSha256": "1cd581dbe44d46e8dd8ae4f33e4aec11960a6803d641c577df76c91f1bba1784",
+          "currentSha256": "ae1c17726a7806c06b16e4d8f34694bfc38dbb8649927759802051fcfafbfde0",
+          "matches": false
+        },
+        {
+          "asset": "public/assets/biology/m7-root-tip-zoospores-v1.png",
+          "previewSha256": "36ab1d1cb9a66f88157a5606b09020898923038b5936d3d085e26aae14c276b5",
+          "currentSha256": "3bc5005453ffe5eda5a185f0e5276fb7f0dd88adc17e13c518ace723b63d1c6c",
+          "matches": false
+        }
+      ],
+      "cues": [
+        {
+          "scene": "hook",
+          "phrase": "another dies",
+          "localFrame": 731,
+          "globalFrame": 731,
+          "globalSeconds": 24.366666666666667
+        }
+      ]
+    },
+    "b06": {
+      "sourceHashes": {
+        "src/explainer/lessons/bio-m7-b06/assets.ts": "c57522ae0ec1c118a8fe3feb49893e1e7c4a72d6be8424be88af2bd4e154b062",
+        "src/explainer/lessons/bio-m7-b06/board.tsx": "36cfc3704973fff91478b7589efa6bbcfc7e74938868747156938f40692974f4",
+        "src/explainer/lessons/bio-m7-b06/common.ts": "717eb1d5fde2af9ab23cd94f499850f3922bd0d4617034301df0ad319e7af4db",
+        "src/explainer/lessons/bio-m7-b06/config.ts": "57c6a581476de5338d7f5b8cb0b5ad7167407289df99ea3be5ee16ddee40cf29",
+        "src/explainer/lessons/bio-m7-b06/parts.tsx": "2bbe850c4885a9a1a8a455f9614a42e2376e1e14a5b5170ed8b2d5808a2065b7",
+        "src/explainer/lessons/bio-m7-b06/s1.tsx": "04abeee35eb789c7bb6f40de089081b8e83d3b85ba30df1f414824517192c981",
+        "src/explainer/lessons/bio-m7-b06/s2.tsx": "e0b3b3430c66df8849a76f22901230fd0bc6a950f91f4383cf5c6f70acabbd5d",
+        "src/explainer/lessons/bio-m7-b06/s3.tsx": "55919c58ec22177eebcf23e1c135040d93f42a74e720150eb6c33e21a1d1447c",
+        "src/explainer/lessons/bio-m7-b06/scenes.tsx": "e9c05cc3edc70a45eeb938a0cab492e3a9d089ff98848c1b3064aeca123d12ea",
+        "src/explainer/lessons/bio-m7-b06/strip.tsx": "13124c478ffb8ce36bb42d86a08099a2e1311b104ca8dc80ade82239177fcf81"
+      },
+      "measuredLessonSha256": "d37dd1c2cf48f06ece86daefb593cba2a38db210a4127347dfa69f353cc4c9d7",
+      "previewBundleSha256": "c4ae378c509367299a9d8b838828cc605ff132908987ea1a4cd8a0f678dbbc0b",
+      "previewAssetCount": 21,
+      "previewAssetMismatches": [
+        {
+          "asset": "public/assets/biology/m7-root-cells-defended-v1.png",
+          "previewSha256": "67a7a0ea056b5d5d3eacac0ca4107afbab1ee8d68e7daa54b94f6ac8a6b52cc1",
+          "currentSha256": "686b6c46b47366e4fd0f68edd3553b779ba3235608d2ffdb4ca1cc5d9f0505ea",
+          "matches": false
+        }
+      ],
+      "cues": [
+        {
+          "scene": "phagocytosis",
+          "phrase": "wraps its membrane",
+          "localFrame": 488,
+          "globalFrame": 5765,
+          "globalSeconds": 192.16666666666666
+        },
+        {
+          "scene": "phagocytosis",
+          "phrase": "pulls it inside",
+          "localFrame": 569,
+          "globalFrame": 5846,
+          "globalSeconds": 194.86666666666667
+        },
+        {
+          "scene": "phagocytosis",
+          "phrase": "Then lysosomes",
+          "localFrame": 662,
+          "globalFrame": 5939,
+          "globalSeconds": 197.96666666666667
+        }
+      ]
+    },
+    "b07": {
+      "sourceHashes": {
+        "src/explainer/lessons/bio-m7-b07/assets.ts": "9c032e0fa788e1f7b6a1bc09fe88665c721fbe42823ed5d923fdbe1d9d30f0f0",
+        "src/explainer/lessons/bio-m7-b07/board.tsx": "e47ed9c1faa66ed83e26c419b5c297898f9dc4fe339a0261ab67d6ca8a61a124",
+        "src/explainer/lessons/bio-m7-b07/common.ts": "43e1930dcf432ae0d662a20a0481d1a0364244edaad436a81364e6ab1259b358",
+        "src/explainer/lessons/bio-m7-b07/config.ts": "48e24ae89a08b5a8579837436d0be6d47f06da600c5b299c03231596bff5d8b3",
+        "src/explainer/lessons/bio-m7-b07/parts.tsx": "6b220e91485d36b13ec324cfa9043641d4a0a9105d959f807c62453468420157",
+        "src/explainer/lessons/bio-m7-b07/s1.tsx": "f0350db64f26a167f85a89e1cc121471cad565f7e3cf131f2908a7b920735e31",
+        "src/explainer/lessons/bio-m7-b07/s2.tsx": "61441672ae9b0e553744e970b9b7e7498efe93a6819368c17127f445183a92a3",
+        "src/explainer/lessons/bio-m7-b07/s3.tsx": "216b83dc6cbc97c60b5609e3d546664d298ccc83d0a5d89201ed85eb41574662",
+        "src/explainer/lessons/bio-m7-b07/scenes.tsx": "bc2afd5d1f5dac0cc671728340982b6142133da376000213a1b73c2b3ca02f32"
+      },
+      "measuredLessonSha256": "19e8ac30bfa48daf1825839bc5eef7fd7bae03552d18964789209911d247250e",
+      "previewBundleSha256": "c4ae378c509367299a9d8b838828cc605ff132908987ea1a4cd8a0f678dbbc0b",
+      "previewAssetCount": 15,
+      "previewAssetMismatches": [
+        {
+          "asset": "public/assets/biology/m7-b-cell-bare-v1.png",
+          "previewSha256": "d3a1bba1454d9f53260dccbdc61f9e1e3a56a812aabc7359d7fdf9457d6f7808",
+          "currentSha256": "1f6760e68675477fb48d81968c87087fdf8ad3120b06a58d2969978f3aa25645",
+          "matches": false
+        }
+      ],
+      "cues": [
+        {
+          "scene": "plasma-memory",
+          "phrase": "become plasma cells",
+          "localFrame": 41,
+          "globalFrame": 5459,
+          "globalSeconds": 181.96666666666667
+        },
+        {
+          "scene": "plasma-memory",
+          "phrase": "The blood carries",
+          "localFrame": 454,
+          "globalFrame": 5872,
+          "globalSeconds": 195.73333333333332
+        }
+      ]
+    }
+  },
+  "banksiaRetakeFit": {
+    "scope": "Read-only PNG measurements and source geometry. No scene, image, narration or saved preview changes. No playback approval.",
+    "records": [
+      {
+        "path": "public/assets/biology/m7-banksia-healthy-v1.png",
+        "sha256": "afa886594cb24d1f84354a068957b50e133c3a1b2db625257ebd793bdf3e70f3",
+        "size": [
+          2000,
+          2000
+        ],
+        "alphaBounds": {
+          "0": {
+            "bounds": [
+              376,
+              200,
+              1624,
+              1800
+            ],
+            "opaquePixels": 1101432
+          },
+          "20": {
+            "bounds": [
+              377,
+              201,
+              1624,
+              1800
+            ],
+            "opaquePixels": 937859
+          },
+          "32": {
+            "bounds": [
+              377,
+              201,
+              1623,
+              1800
+            ],
+            "opaquePixels": 930476
+          },
+          "128": {
+            "bounds": [
+              378,
+              202,
+              1622,
+              1798
+            ],
+            "opaquePixels": 891401
+          }
+        }
+      },
+      {
+        "path": "public/assets/biology/m7-banksia-phytophthora-v2.png",
+        "sha256": "1113a0928f993dedcd103ac561f7ef634b8b12561412608b9a13aa630b987d15",
+        "size": [
+          2000,
+          2000
+        ],
+        "alphaBounds": {
+          "0": {
+            "bounds": [
+              362,
+              200,
+              1617,
+              1800
+            ],
+            "opaquePixels": 1030398
+          },
+          "20": {
+            "bounds": [
+              362,
+              200,
+              1606,
+              1800
+            ],
+            "opaquePixels": 864195
+          },
+          "32": {
+            "bounds": [
+              362,
+              200,
+              1606,
+              1800
+            ],
+            "opaquePixels": 855798
+          },
+          "128": {
+            "bounds": [
+              363,
+              201,
+              1605,
+              1799
+            ],
+            "opaquePixels": 809293
+          }
+        }
+      },
+      {
+        "path": "public/assets/biology/m7-banksia-healthy-v2.png",
+        "sha256": "7c35d347ce92c696986f15535893d9ca10083c6c763a41110ff7185291043e77",
+        "size": [
+          2000,
+          2000
+        ],
+        "alphaBounds": {
+          "0": {
+            "bounds": [
+              220,
+              256,
+              1780,
+              1744
+            ],
+            "opaquePixels": 1235935
+          },
+          "20": {
+            "bounds": [
+              220,
+              256,
+              1780,
+              1744
+            ],
+            "opaquePixels": 1197911
+          },
+          "32": {
+            "bounds": [
+              220,
+              257,
+              1780,
+              1744
+            ],
+            "opaquePixels": 1188734
+          },
+          "128": {
+            "bounds": [
+              222,
+              258,
+              1778,
+              1743
+            ],
+            "opaquePixels": 1143667
+          }
+        }
+      },
+      {
+        "path": "public/assets/biology/m7-banksia-phytophthora-v3.png",
+        "sha256": "a3023a5041f460c64f15966d84c7f09c44694a67b9200f2834a457e8b2f0f8a8",
+        "size": [
+          2000,
+          2000
+        ],
+        "alphaBounds": {
+          "0": {
+            "bounds": [
+              220,
+              257,
+              1780,
+              1744
+            ],
+            "opaquePixels": 1166199
+          },
+          "20": {
+            "bounds": [
+              220,
+              257,
+              1780,
+              1744
+            ],
+            "opaquePixels": 1166199
+          },
+          "32": {
+            "bounds": [
+              220,
+              257,
+              1780,
+              1744
+            ],
+            "opaquePixels": 1166199
+          },
+          "128": {
+            "bounds": [
+              222,
+              258,
+              1778,
+              1743
+            ],
+            "opaquePixels": 1122822
+          }
+        }
+      }
+    ],
+    "alphaBoundsPredicate": "alpha strictly greater than the named threshold",
+    "sharedAlpha20Box": [
+      220,
+      256,
+      1780,
+      1744
+    ],
+    "alphaIoU32": 0.980459728561568,
+    "alphaIoUPredicate": "alpha greater than or equal to 32, matching brief 102",
+    "lowerTrunkRoi": {
+      "bounds": [
+        940,
+        1550,
+        1100,
+        1744
+      ],
+      "supportPixels": 25726,
+      "exactlyMatchingRgbaPixels": 25716,
+      "matchFraction": 0.9996112881909353
+    },
+    "hookGeometry": {
+      "staleSharedCropAndAnchor": {
+        "crop": [
+          362,
+          200,
+          1624,
+          1800
+        ],
+        "anchorY": 1380,
+        "width": 380,
+        "scale": 0.3011093502377179,
+        "cy": 765.5784469096672,
+        "paintedBottomY": 989.6038034865293,
+        "soilY": 880
+      },
+      "correctedCropOldAnchor": {
+        "crop": [
+          220,
+          256,
+          1780,
+          1744
+        ],
+        "anchorY": 1380,
+        "width": 380,
+        "scale": 0.24358974358974358,
+        "cy": 787.4358974358975,
+        "paintedBottomY": 968.6666666666667,
+        "soilY": 880
+      },
+      "proposedHookOnly": {
+        "crop": [
+          220,
+          256,
+          1780,
+          1744
+        ],
+        "anchorY": 1744,
+        "width": 380,
+        "scale": 0.24358974358974358,
+        "cy": 698.7692307692307,
+        "paintedBottomY": 880,
+        "soilY": 880
+      }
+    },
+    "limits": [
+      "The proposed anchor is the bottom edge of the painted trunk, not a root crown. Select it visually before integration.",
+      "The retake shows no roots. Do not replace the global root-bearing plates or reuse their natural-pixel feature coordinates.",
+      "Plate box controls scale and centre. The shared Pl renderer does not automatically clip artwork to that box.",
+      "A separate hook pair can preserve the old root-bearing mechanism plates. Teaching and continuous motion review remain pending."
+    ]
+  }
+}

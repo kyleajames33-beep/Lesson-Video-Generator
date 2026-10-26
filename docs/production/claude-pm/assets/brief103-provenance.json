@@ -1,0 +1,303 @@
+{
+  "brief": 103,
+  "date": "2026-10-23",
+  "tool": "built-in image_gen",
+  "plateCount": 13,
+  "technicalProcessing": "Alpha fringe cleanup, fit to 2000 square, affine alignment of sooty apparatus, compositing generated granules onto the exact existing T-cell plate, and B-cell bare re-matte. See brief103-process.py.",
+  "retakes": {
+    "sugarcane": [
+      "exec-176eb811-5d29-4202-b44b-763377f3b769.png",
+      "exec-0a1d9c7e-3692-4072-9538-2c06b4a2bdf4.png"
+    ],
+    "brownSnake": [
+      "exec-cdc0753d-1b45-4fd8-9bbd-762136c61acc.png",
+      "exec-19aa40dc-42f0-4a61-acac-86aee498504f.png"
+    ]
+  },
+  "records": [
+    {
+      "path": "public/assets/chemistry/m7-spirit-burner-calorimeter-v1.png",
+      "sourceGenerated": "exec-e5d8fa6d-95b4-482c-9596-6ff65c0aa05d.png",
+      "promptSummary": "Ink and watercolour school spirit burner calorimeter, clear glass lamp on heatproof mat, small blue flame under a clean copper can held by a retort clamp, water cutaway and glass thermometer, no lid or shield, isolated transparent plate.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        465,
+        215,
+        1492,
+        1754
+      ],
+      "minClearMarginFraction": 0.1075,
+      "sha256": "74d15b24bb831e375a6413d90441ccdeefa3b1f52606dd0629b3b48de86ae695"
+    },
+    {
+      "path": "public/assets/chemistry/m7-spirit-burner-calorimeter-sooty-v1.png",
+      "sourceGenerated": "exec-4712edf3-6e6c-4c0e-b5ef-3dd898180f99.png",
+      "promptSummary": "Edit the base calorimeter in place: larger yellow-orange smoky flame and a black soot patch under the copper can, while preserving the apparatus and transparent plate.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        466,
+        220,
+        1493,
+        1756
+      ],
+      "minClearMarginFraction": 0.11,
+      "sha256": "cd16c89d0748fa20dee29b276e966b770b41bbb38870bc4c5133c2a5549a9830"
+    },
+    {
+      "path": "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png",
+      "sourceGenerated": "exec-347af793-e837-4797-ab76-d581b1290dc5.png",
+      "promptSummary": "Edit the base calorimeter in place: add a folded three-panel grey draught shield, buff lid, upright thermometer and wire stirrer; keep the blue flame and clean can.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        463,
+        212,
+        1544,
+        1753
+      ],
+      "minClearMarginFraction": 0.106,
+      "sha256": "f7528b6ad51f4f81b565316e7cd02a5bad769f03a262743f151107a1dec18c2e"
+    },
+    {
+      "path": "public/assets/chemistry/m7-spirit-burner-on-balance-v1.png",
+      "sourceGenerated": "exec-369b3e8b-6f7a-4002-8463-8d2d2ac63ab5.png",
+      "promptSummary": "Isolated ink and watercolour unlit capped glass spirit burner on a white electronic top-pan balance with blank display, transparent background, no text.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        200,
+        312,
+        1800,
+        1688
+      ],
+      "minClearMarginFraction": 0.1,
+      "sha256": "82c4d0d19374853d67d18babcefe6caa2dcc3d6cf90d8a980fc953feda2b3f65"
+    },
+    {
+      "path": "public/assets/chemistry/m7-sugarcane-stalks-v1.png",
+      "sourceGenerated": "exec-0a1d9c7e-3692-4072-9538-2c06b4a2bdf4.png",
+      "promptSummary": "Three mature segmented sugarcane stalks with green arching leaves and some dry lower leaves, cut off at ground level, isolated ink and watercolour on transparent background.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        278,
+        200,
+        1721,
+        1800
+      ],
+      "minClearMarginFraction": 0.1,
+      "sha256": "f2c2cbebc9ba24126bdaabbe4b0f1360100f89f79da7b88f56c63e565a27ae82"
+    },
+    {
+      "path": "public/assets/biology/m7-airway-cell-v1.png",
+      "sourceGenerated": "exec-13dddbf1-560e-4bb2-87bc-e7af2421d6ac.png",
+      "promptSummary": "One healthy ciliated columnar airway epithelial cell in side-view cutaway, rose cytoplasm and purple nucleus, isolated transparent watercolour plate.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        666,
+        230,
+        1332,
+        1741
+      ],
+      "minClearMarginFraction": 0.115,
+      "sha256": "586490825b9c2964a7a7c883cd85c92d09f81c6f125c5e0cc64f037a96ac1575"
+    },
+    {
+      "path": "public/assets/biology/m7-airway-cell-infected-v1.png",
+      "sourceGenerated": "exec-f6b47465-591a-45be-b5b3-aeb6c8e5f8a5.png",
+      "promptSummary": "Edit healthy airway cell in place with many small internal virus particles and some at the top between disordered cilia; preserve cell outline and transparent background.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        657,
+        207,
+        1344,
+        1743
+      ],
+      "minClearMarginFraction": 0.1035,
+      "sha256": "8e010b7cdca5c7a67b3326b842e1dd92f66e3bebe31f2d5c01ef08739b8fe6a4"
+    },
+    {
+      "path": "public/assets/biology/m7-airway-cell-apoptotic-v1.png",
+      "sourceGenerated": "exec-215db30c-4383-409b-aa7a-cfaf7d6b6bab.png",
+      "promptSummary": "Edit aligned airway cell as a shrunken apoptotic cell with membrane blebs, nuclear fragments, fewer cilia and enclosed particles, no rupture or spilled contents.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        647,
+        441,
+        1535,
+        1610
+      ],
+      "minClearMarginFraction": 0.195,
+      "sha256": "daf0e33412685ccd3c7d4e1662cbb6eef49978ddb8948246133e2ed675340903"
+    },
+    {
+      "path": "public/assets/biology/m7-t-cell-killer-v1.png",
+      "sourceGenerated": "exec-e33a6e13-7455-47a7-be3b-c4ad5bd1f879.png",
+      "promptSummary": "Edit existing T cell plate while preserving its outline and nucleus; add eleven larger dark purple-red round granules to the cytoplasm rim on the right.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        204,
+        202,
+        1795,
+        1799
+      ],
+      "minClearMarginFraction": 0.1005,
+      "sha256": "afa6b2ad61edd7a0cd5706c681a033024ae8901ecba2432ceed2edb30db45c4e"
+    },
+    {
+      "path": "public/assets/biology/m7-varicella-virus-v1.png",
+      "sourceGenerated": "exec-26ed3beb-0539-434e-a19f-a5b699d0ab53.png",
+      "promptSummary": "Single cutaway varicella-zoster herpesvirus with pale envelope, fine teal spikes, lilac tegument, faceted blue icosahedral capsid and coiled double-stranded DNA, transparent watercolour plate.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        200,
+        205,
+        1800,
+        1795
+      ],
+      "minClearMarginFraction": 0.1,
+      "sha256": "34f6a43ca92724ec608aae86e1286a1dc5a1004bf69277ecddc5c44050760d16"
+    },
+    {
+      "path": "public/assets/biology/m7-placenta-villus-v1.png",
+      "sourceGenerated": "exec-003b0d22-ae1f-4ae7-8ee2-9b78643ca096.png",
+      "promptSummary": "Single branching chorionic villus lengthwise cutaway with continuous lining, fetal capillaries and red blood cells in single file, maternal red cells outside, transparent ink and watercolour plate.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        305,
+        200,
+        1693,
+        1800
+      ],
+      "minClearMarginFraction": 0.1,
+      "sha256": "bb49abbff03ccf948238ee644348782110461e3e5f888ab26253d8d8111c622f"
+    },
+    {
+      "path": "public/assets/biology/m7-brown-snake-v1.png",
+      "sourceGenerated": "exec-19aa40dc-42f0-4a61-acac-86aee498504f.png",
+      "promptSummary": "Whole eastern brown snake in a loose S curve, slender brown body and pale cream belly, small raised head, natural-history watercolour on transparent background.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        200,
+        785,
+        1800,
+        1215
+      ],
+      "minClearMarginFraction": 0.1,
+      "sha256": "7dccd3202170e205d47dbfbd7099aa099cc874acf08010d5e94b723ff3424206"
+    },
+    {
+      "path": "public/assets/biology/m7-b-cell-bare-v1.png",
+      "sourceGenerated": "existing plate, technical re-matte",
+      "promptSummary": "Existing ImageGen plate. No new generation. Alpha fringe and off-subject pixels removed in place without changing geometry.",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox12": [
+        351,
+        410,
+        1634,
+        1679
+      ],
+      "minClearMarginFraction": 0.1605,
+      "sha256": "1f6760e68675477fb48d81968c87087fdf8ad3120b06a58d2969978f3aa25645"
+    }
+  ],
+  "alignedPairQA": [
+    {
+      "pair": [
+        "chemistry/m7-spirit-burner-calorimeter-v1.png",
+        "chemistry/m7-spirit-burner-calorimeter-sooty-v1.png"
+      ],
+      "alphaIoU128": 0.9547,
+      "view": "brief103-qa/calorimeter-base-sooty-overlay.jpg"
+    },
+    {
+      "pair": [
+        "chemistry/m7-spirit-burner-calorimeter-v1.png",
+        "chemistry/m7-spirit-burner-calorimeter-shield-v1.png"
+      ],
+      "alphaIoU128": 0.6202,
+      "view": "brief103-qa/calorimeter-base-shield-overlay.jpg"
+    },
+    {
+      "pair": [
+        "biology/m7-airway-cell-v1.png",
+        "biology/m7-airway-cell-infected-v1.png"
+      ],
+      "alphaIoU128": 0.941,
+      "view": "brief103-qa/airway-healthy-infected-overlay.jpg"
+    },
+    {
+      "pair": [
+        "biology/m7-airway-cell-infected-v1.png",
+        "biology/m7-airway-cell-apoptotic-v1.png"
+      ],
+      "alphaIoU128": 0.5552,
+      "view": "brief103-qa/airway-infected-apoptotic-overlay.jpg"
+    },
+    {
+      "pair": [
+        "biology/m7-t-cell-v1.png",
+        "biology/m7-t-cell-killer-v1.png"
+      ],
+      "alphaIoU128": 1.0,
+      "view": "brief103-qa/t-cell-normal-killer-overlay.jpg"
+    },
+    {
+      "pair": [
+        "biology/m7-b-cell-v1.png",
+        "biology/m7-b-cell-bare-v1.png"
+      ],
+      "alphaIoU128": 0.8667,
+      "view": "brief103-qa/b-cell-plain-bare-overlay.jpg"
+    }
+  ]
+}

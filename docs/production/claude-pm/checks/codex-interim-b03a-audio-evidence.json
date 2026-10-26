@@ -1,0 +1,167 @@
+{
+  "auditDate": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "lessonId": "bio-m5-b03a",
+  "scope": "Digital PCM comparison of the first feedback source and key-notes source against the published MP4, to determine whether the 0.3 second short container reflects scene audio starting early. No listening or quality claim.",
+  "assets": {
+    "videoId": "bUPs256KyVY",
+    "mp4": "out/explainer/Explainer-bio-m5-b03a/Explainer-bio-m5-b03a-v1.mp4",
+    "mp4Bytes": 82971250,
+    "recordedMp4Sha256": "69f7f57120e758ba87d08c8adfcccf935f91ea77ffe250601f6ab86ea481bcd1",
+    "observedMp4Sha256": "69f7f57120e758ba87d08c8adfcccf935f91ea77ffe250601f6ab86ea481bcd1",
+    "mp4HashMatchesUploadRecord": true,
+    "containerDurationSeconds": 510.1,
+    "measuredLessonPath": "docs/production/claude-pm/lessons/b3a/measured/lesson.json",
+    "measuredLessonSha256": "68130604814d25b8b3fc14e38fcf6965c33866b82b0a29daff2a867b44a543f7",
+    "measuredLessonFps": 30,
+    "measuredLessonTotalFrames": 15312,
+    "measuredLessonDurationSeconds": 510.4,
+    "captionPath": "docs/production/claude-pm/lessons/b3a/measured/captions.srt",
+    "captionBytes": 13122,
+    "recordedCaptionSha256": "bf5ceea5bff480b0f56854b99ee57bce19aebab0639e349d1772c0b5bdbe5e99",
+    "observedCaptionSha256": "bf5ceea5bff480b0f56854b99ee57bce19aebab0639e349d1772c0b5bdbe5e99",
+    "captionHashMatchesUploadRecord": true,
+    "sourceMp3s": {
+      "feedbackOne": {
+        "path": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-one.b077a92fdd12.mp3",
+        "bytes": 415913,
+        "sha256": "f70640847da0171b8940f61911ef005bc448ba5c73cdcbe14e10a15dd2b816b0"
+      },
+      "keyNotes": {
+        "path": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/key-notes.231477bff795.mp3",
+        "bytes": 71515,
+        "sha256": "6ee531fe49c21925cd53c57fda4cb0460944e43c3bb0433a2c816c597ea77085"
+      }
+    }
+  },
+  "sceneSchedule": {
+    "feedback-one": {
+      "frame": 11281,
+      "seconds": 376.03333333333336,
+      "durationFrames": 838,
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/feedback-one.b077a92fdd12.mp3"
+    },
+    "key-notes": {
+      "frame": 14556,
+      "seconds": 485.2,
+      "durationFrames": 756,
+      "audioFile": "public/audio/Biology-Y12-M5-B3a-claude-2026-10-12-take01/key-notes.231477bff795.mp3"
+    }
+  },
+  "pcmMethod": {
+    "decoder": "Bundled FFmpeg from node_modules/@remotion/compositor-win32-x64-msvc/ffmpeg.exe",
+    "format": "mono signed 16-bit PCM, 8000 Hz",
+    "windows": [
+      "MP4 feedback region 374-384 seconds",
+      "MP4 key-notes region 483-493 seconds"
+    ],
+    "comparison": "Normalized Pearson correlation between each original scene MP3 and the corresponding decoded MP4 audio window. Tested 10 ms timing steps. Compared current scheduled start and a candidate 0.3 seconds earlier. No full render or full video decode.",
+    "pcmFiles": [
+      "out/checks/caption-timing-2026-10-25/b03a-audio-evidence/feedback-one-mp4.wav",
+      "out/checks/caption-timing-2026-10-25/b03a-audio-evidence/feedback-one-source.wav",
+      "out/checks/caption-timing-2026-10-25/b03a-audio-evidence/key-notes-mp4.wav",
+      "out/checks/caption-timing-2026-10-25/b03a-audio-evidence/key-notes-source.wav"
+    ],
+    "highResolutionFeedbackRefinement": "Reused the existing 8 kHz PCM files. Searched lags in plus or minus 20 ms at one-sample steps, using 0.5 second windows beginning 0.2, 0.5 and 1.0 seconds into the source MP3."
+  },
+  "audioAlignment": {
+    "feedbackOne": {
+      "scheduledStartSeconds": 376.03333333333336,
+      "searchWindowSeconds": [
+        375.53333333333336,
+        376.53333333333336
+      ],
+      "bestStartEstimateSeconds": 376.033375,
+      "bestStartOffsetFromScheduleSeconds": 0.000042,
+      "correlationWindow250msAtSchedule": 0.3140318439,
+      "correlationWindow500msAtSchedule": 0.31592755,
+      "correlationWindow1sAtSchedule": 0.3457461949,
+      "correlationWindow500msAt300msEarlier": -0.0005069704,
+      "correlationWindow1sAt300msEarlier": -0.0009901702,
+      "assessment": "High-resolution correlation across three non-silent windows strongly aligns feedback-one to the current measured scene start. The MP3 is not supported as starting 0.3 seconds early. The initial low-energy file head has lower correlation, so the refined result uses the non-silent windows.",
+      "highResolutionCrossCorrelation": {
+        "sampleRateHz": 8000,
+        "searchRangeMilliseconds": [
+          -20,
+          20
+        ],
+        "searchStepSamples": 1,
+        "searchStepMilliseconds": 0.125,
+        "windowDurationSeconds": 0.5,
+        "sourceWindowOffsetsSeconds": [
+          0.2,
+          0.5,
+          1
+        ],
+        "windows": [
+          {
+            "sourceWindowOffsetSeconds": 0.2,
+            "sourceRms": 547.1945657168025,
+            "normalizedCorrelation": 0.9606605901057437,
+            "bestLagSamples": -3,
+            "bestLagSeconds": -0.000375,
+            "estimatedSourceStartSeconds": 376.033
+          },
+          {
+            "sourceWindowOffsetSeconds": 0.5,
+            "sourceRms": 591.7474047260367,
+            "normalizedCorrelation": 0.996506260029571,
+            "bestLagSamples": -3,
+            "bestLagSeconds": -0.000375,
+            "estimatedSourceStartSeconds": 376.033
+          },
+          {
+            "sourceWindowOffsetSeconds": 1,
+            "sourceRms": 1786.825029206833,
+            "normalizedCorrelation": 0.8946565131538529,
+            "bestLagSamples": -3,
+            "bestLagSeconds": -0.000375,
+            "estimatedSourceStartSeconds": 376.033
+          }
+        ],
+        "lagRelativeToExactSceneStartSeconds": -0.0003333333,
+        "sceneStartDifferenceMilliseconds": -0.3333333,
+        "interpretation": "All three non-silent source windows peak at the same alignment, about 0.33 ms before the exact scheduled start, within one 8 kHz sample. This is far closer than the 300 ms early candidate."
+      }
+    },
+    "keyNotes": {
+      "scheduledStartSeconds": 485.2,
+      "bestStartEstimateSeconds": 485.2,
+      "bestStartOffsetFromScheduleSeconds": 0,
+      "correlationWindow250msAtSchedule": 0.9895322533,
+      "correlationWindow500msAtSchedule": 0.9920005557,
+      "correlationWindow1sAtSchedule": 0.9685241583,
+      "correlationWindow500msAt300msEarlier": -0.0123773408,
+      "correlationWindow1sAt300msEarlier": -0.008037613,
+      "assessment": "Strong PCM match at the current scene sum, with no match at the 300 ms earlier candidate. This confirms the key-notes source begins at the scheduled scene start in the published MP4."
+    }
+  },
+  "captionCrosscheck": {
+    "firstFeedbackCue": {
+      "start": "00:07:10,634",
+      "end": "00:07:14,713",
+      "startSeconds": 430.634,
+      "text": "One, the blastocyst can't implant, so no pregnancy"
+    },
+    "feedbackCueOffsetFromSceneStartSeconds": 54.600666666666655,
+    "keyNotesFirstCue": {
+      "start": "00:08:56,600",
+      "end": "00:08:58,040",
+      "startSeconds": 536.6,
+      "text": "Here are the key notes."
+    },
+    "keyNotesCueOffsetFromSceneStartSeconds": 51.400000000000034,
+    "keyNotesCueSecondsAfterContainerEnd": 26.5,
+    "interpretation": "The hash-matching uploaded SRT places the first feedback text about 54.6 seconds after the measured feedback-one start and its key-notes cue at 536.6 seconds, 26.5 seconds after the MP4 ends. The current SRT is not aligned to these measured scene audio starts."
+  },
+  "finding": {
+    "sceneAudioStartAnswer": "Feedback-one and key-notes both align to the current measured duration sums, not 0.3 seconds earlier. Feedback-one non-silent windows align within about 0.33 ms of the scheduled start, and key-notes has a strong match at its scheduled start.",
+    "shortTailInterpretation": "The 510.1 second container ends 0.3 seconds before the measured 510.4 second composition total. Both tested scene MP3s begin at their current scheduled times, so the shorter final container does not indicate these scene sources started early.",
+    "captionTiming": "The source SRT is substantially misaligned at these cues despite matching the recorded SRT hash. The key-notes cue lies beyond the MP4 end."
+  },
+  "limitations": [
+    "Digital PCM evidence only. No human listening performed.",
+    "The initial low-energy feedback-one file-head window had modest correlation. The refined three non-silent-window result strongly supports the tested scene timing.",
+    "The duration comparison does not establish which frame or final hold accounts for the 0.3 second container difference."
+  ]
+}

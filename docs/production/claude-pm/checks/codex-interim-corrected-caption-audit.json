@@ -1,0 +1,3931 @@
+{
+  "date": "2026-10-25",
+  "timezone": "Australia/Sydney",
+  "scope": "Local metadata, caption files and measured timing only. Live YouTube state and listening were not checked.",
+  "repairPath": "out/caption-repairs/wave5-2026-10-25/manifest.json",
+  "input": "docs/production/claude-pm/youtube/wave5-uploads.json",
+  "inputSha256": "2e92ec812a4c574ea27f53adee32546a33e30afea90dbb673fe2ce6b25e8c705",
+  "videoCount": 41,
+  "videosWithFindings": 0,
+  "findingCounts": {},
+  "videos": [
+    {
+      "lessonId": "chem-m6-c01",
+      "videoId": "HOcAqIXXbGk",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c01.srt",
+      "captionHash": "e601731e900880701f3eff071e29f3ed2ac0050ffbf0418688e72121a2ec4ebe",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c01\\measured\\lesson.json",
+      "lessonHash": "eab426fe8219d49d7a4db5d2c7d5933c9f7cc9549ee1004704be0b7ea9385093",
+      "durationSeconds": 562.5,
+      "cueCount": 196,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Why do acid models change?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:28 A model must explain evidence",
+          "scene": "models-change",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "0:52 Lavoisier and oxygen",
+          "scene": "lavoisier",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "1:23 Davy and hydrogen",
+          "scene": "davy",
+          "deltaSeconds": 0.067
+        },
+        {
+          "chapter": "1:40 Arrhenius in water",
+          "scene": "arrhenius",
+          "deltaSeconds": 0.1
+        },
+        {
+          "chapter": "2:15 The ammonia problem",
+          "scene": "arrhenius-ammonia",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "2:50 More limits of Arrhenius",
+          "scene": "more-failures",
+          "deltaSeconds": 0.067
+        },
+        {
+          "chapter": "3:20 Brønsted-Lowry and protons",
+          "scene": "bronsted-lowry",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "3:52 Hydrogen chloride in water",
+          "scene": "hcl-water",
+          "deltaSeconds": 0.367
+        },
+        {
+          "chapter": "4:21 Ammonia in water",
+          "scene": "ammonia-water",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "4:52 Acids and bases as gases",
+          "scene": "gas-carbonate",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "5:20 Follow the proton",
+          "scene": "follow-proton",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "5:48 A limit of Brønsted-Lowry",
+          "scene": "bl-limit",
+          "deltaSeconds": 0.333
+        },
+        {
+          "chapter": "6:18 Model memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "6:46 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "7:14 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "7:42 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "8:07 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "8:35 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "8:57 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.2
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b01",
+      "videoId": "BLD9Zu9sPQ0",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b01.srt",
+      "captionHash": "2849cb85cd8ac21df714059364f5abd28d31724946f56763554d72b2ec5b0bdb",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b01\\measured\\lesson.json",
+      "lessonHash": "29b6698da1ab2dcf91ea8b54e27a310b71d3f6a2a53ae81cc46596a16b655076",
+      "durationSeconds": 491.56666666666666,
+      "cueCount": 177,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Did the antibiotic cause resistance?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:32 Gene, allele and gene pool",
+          "scene": "three-levels",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "0:59 How a mutation makes a new allele",
+          "scene": "new-allele",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "1:26 One new copy starts rare",
+          "scene": "one-copy",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "1:53 Passing an allele on",
+          "scene": "passing-on",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "2:20 Mutation is not directed by need",
+          "scene": "random-not-needed",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "2:48 Replica plating evidence",
+          "scene": "replica-plates",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:22 Antibiotics select",
+          "scene": "selection",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "3:53 Other sources of variation",
+          "scene": "sources",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "4:24 What comes next?",
+          "scene": "what-next",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "4:41 Memory aid",
+          "scene": "memory",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "4:57 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": 0.333
+        },
+        {
+          "chapter": "5:38 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "6:07 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:51 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "7:20 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "7:46 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.267
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b02",
+      "videoId": "eNT4PMSNYV4",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b02.srt",
+      "captionHash": "1a4d8cacdce0568196f33f0682e8f81635a5e2691be4ac3c634e0a1cf28eb837",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b02\\measured\\lesson.json",
+      "lessonHash": "a1f90ec2708965f3b8966fb26ba7c647d67200afde6c7b0f7476b59f64493d88",
+      "durationSeconds": 484,
+      "cueCount": 164,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Damage is not always mutation",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:27 Mutagen and mutation",
+          "scene": "mutagen-mutation",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "0:55 Repair or copy",
+          "scene": "repair-or-copy",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "1:27 Exposure and risk",
+          "scene": "risk",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "1:54 UV and thymine dimers",
+          "scene": "uv",
+          "deltaSeconds": 0.367
+        },
+        {
+          "chapter": "2:28 Ionising radiation",
+          "scene": "ionising",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "3:02 Chemical mutagens",
+          "scene": "chemicals",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "3:33 Natural mutagens",
+          "scene": "natural",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "4:12 What mutagens have in common",
+          "scene": "any-mutagen",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "4:45 Memory aid",
+          "scene": "memory",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "5:05 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "5:34 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "6:07 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "6:47 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "7:17 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "7:39 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.3
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b03",
+      "videoId": "S30l6JbFoAs",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b03.srt",
+      "captionHash": "4c5ffcd722356dc579acae54e91cff74f3d31a9eacb838c39a135d793f3ac6a2",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b03\\measured\\lesson.json",
+      "lessonHash": "1644c48fea118776ced8d362aaefe39097774a9ee09a47882c54204b7f65f052",
+      "durationSeconds": 479.96666666666664,
+      "cueCount": 170,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:27 What is a point mutation?",
+          "scene": "point-mutation",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "1:06 Silent substitutions",
+          "scene": "silent",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "1:38 Missense substitutions",
+          "scene": "missense",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "2:13 Nonsense substitutions",
+          "scene": "nonsense",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "2:47 Frameshift mutations",
+          "scene": "frameshift",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "3:20 Reading frame and three-base changes",
+          "scene": "reading-frame",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "3:56 Why position matters",
+          "scene": "what-decides",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "4:32 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "4:54 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "5:22 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "5:56 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:33 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "7:03 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "7:34 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.667
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c03",
+      "videoId": "fJynVZC82Is",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c03.srt",
+      "captionHash": "03d42b5771f2f5d40d4c11f8e3df0e7e7e8a1c6a5faf50dfbc203c471d693082",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c03\\measured\\lesson.json",
+      "lessonHash": "33e31eea76feceb9cfc794a3a180b81faa1c7270843d2af5786d9f11ccf28d72",
+      "durationSeconds": 543.2666666666667,
+      "cueCount": 186,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:26 Why neutralisation warms",
+          "scene": "why-warm",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "1:00 Heat per mole of water",
+          "scene": "per-mole",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "1:26 Net ionic reaction",
+          "scene": "same-reaction",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "1:56 Measuring heat with a calorimeter",
+          "scene": "calorimeter",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "2:31 Worked example 1: givens",
+          "scene": "we1-givens",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "2:51 Worked example 1: heat",
+          "scene": "we1-heat",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "3:19 Worked example 1: moles",
+          "scene": "we1-moles",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "3:56 Worked example 1: enthalpy",
+          "scene": "we1-enthalpy",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "4:29 Worked example 2: count water",
+          "scene": "we2-count",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "5:08 Worked example 2: enthalpy",
+          "scene": "we2-enthalpy",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "5:41 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "6:04 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:44 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "7:16 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "7:48 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "8:13 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "8:37 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.967
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b04",
+      "videoId": "ldAXVZXHFuM",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b04.srt",
+      "captionHash": "a2ac06d26323f0a13803228bff925a77a44d855e315f2c77cbae36bd14e63b92",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b04\\measured\\lesson.json",
+      "lessonHash": "74fa8af59e76095948049bddaec69f13365c8b4a9ce57b377b209c7d986733a1",
+      "durationSeconds": 497.26666666666665,
+      "cueCount": 169,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:32 What is a chromosomal mutation?",
+          "scene": "chromosomal-mutation",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "1:00 How chromosomes break and rejoin",
+          "scene": "how-they-break",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "1:28 Deletion and duplication",
+          "scene": "deletion-duplication",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "2:01 Inversion and translocation",
+          "scene": "inversion-translocation",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "2:43 Balanced carrier and gametes",
+          "scene": "carrier-gametes",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "3:02 Nondisjunction in meiosis",
+          "scene": "nondisjunction",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "3:36 Trisomy 21",
+          "scene": "trisomy-21",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "4:09 Compare",
+          "scene": "compare",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "4:44 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "5:15 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "5:48 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "6:20 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "6:55 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "7:25 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "7:51 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.967
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c04",
+      "videoId": "dkMhu-koahI",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c04.srt",
+      "captionHash": "bc6583a4aa839d9c0bab0fae792059f12269a28833f463f0709ede6d99b71b7f",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c04\\measured\\lesson.json",
+      "lessonHash": "6918599b63b3cfcad41c516784a84d090162453cdf69aceab59c5f92b4da8b17",
+      "durationSeconds": 502.23333333333335,
+      "cueCount": 170,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:29 Choose a suitable base",
+          "scene": "choosing",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "0:55 Antacids",
+          "scene": "stomach",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "1:32 Acidic soil",
+          "scene": "soil-problem",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "1:59 Agricultural lime",
+          "scene": "liming",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "2:33 Sulfur dioxide and acid rain",
+          "scene": "acid-rain",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:01 Industrial scrubbers",
+          "scene": "scrubber",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "3:43 Acidic mine drainage",
+          "scene": "mine-drainage",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "4:08 Mine water treatment",
+          "scene": "lime-treatment",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "4:59 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "5:31 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "6:01 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "6:33 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "7:06 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "7:34 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "7:56 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.933
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b05",
+      "videoId": "fyvYjlBBRmk",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b05.srt",
+      "captionHash": "3356691a799e4b47eaa250ef87bc9ea173b778ab4e9dd5ef762b5f54c53c4221",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b05\\measured\\lesson.json",
+      "lessonHash": "22ef092d7838a82bb7816b2e65646138d5d721ac80a8dadadc1680259a21a046",
+      "durationSeconds": 491.8333333333333,
+      "cueCount": 174,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:29 Two places a mutation can happen",
+          "scene": "two-kinds",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "0:47 Somatic mutations",
+          "scene": "somatic",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:18 Germ-line mutations",
+          "scene": "germ-line",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "1:45 Which changes can be inherited?",
+          "scene": "distinction",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "2:15 Coding DNA",
+          "scene": "coding",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "2:42 Regulatory DNA",
+          "scene": "regulatory",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "3:12 Lactase persistence",
+          "scene": "lactase",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "3:41 Introns",
+          "scene": "introns",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "4:09 Which changes matter?",
+          "scene": "which-matters",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "4:27 Put both distinctions together",
+          "scene": "both-together",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "4:53 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "5:11 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "5:50 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "6:19 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "6:55 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "7:20 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "7:46 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.533
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c05",
+      "videoId": "s2Soxz8i5K4",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c05.srt",
+      "captionHash": "96082aebe5e517ebfe75ebf686911d4e1c49ae3f40fc14bf3c6eba0e2e9bcea9",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c05\\measured\\lesson.json",
+      "lessonHash": "693bb71e8ec5724a30a34762c91a41cf9596c9870525fc10b805f48ff0afadce",
+      "durationSeconds": 520.8666666666667,
+      "cueCount": 183,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:31 Inside two beakers",
+          "scene": "inside-beakers",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "0:59 Strong and weak acids",
+          "scene": "strong-weak",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "1:35 Why weak acids partly ionise",
+          "scene": "why-weak-stops",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "2:06 Single and double arrows",
+          "scene": "arrows",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "2:28 Which acids are strong?",
+          "scene": "strong-list",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "3:00 Concentration is separate",
+          "scene": "concentration",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "3:37 A concentrated weak acid",
+          "scene": "weak-can-win",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "4:14 Strong and weak bases",
+          "scene": "bases",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "4:55 Strength and solubility",
+          "scene": "solubility",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "5:27 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "5:44 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "6:18 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "6:47 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "7:24 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "7:53 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "8:15 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.567
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-g01",
+      "videoId": "_7FscIH2HHI",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-g01.srt",
+      "captionHash": "6aedc751541adbaa9a722d973a76495400122d3b01ca87d84ee622b88a943f37",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6g01b\\measured\\lesson.json",
+      "lessonHash": "d3bc9e6347e94fbabb67fd6759ecde3a8856cd57f537476b21afb5ef69f99ef1",
+      "durationSeconds": 517.3333333333334,
+      "cueCount": 169,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:32 Practice question 1",
+          "scene": "q1-question",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:02 Question 1: mRNA",
+          "scene": "q1-mrna",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "1:38 Question 1: mutants",
+          "scene": "q1-mutants",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "2:08 Question 1: mistake",
+          "scene": "q1-mistake",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "2:24 Practice question 2",
+          "scene": "q2-question",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "3:01 Question 2: align",
+          "scene": "q2-align",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "3:29 Question 2: frame",
+          "scene": "q2-frame",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "3:57 Question 2: mistake",
+          "scene": "q2-mistake",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "4:12 Practice question 3",
+          "scene": "q3-question",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "4:48 Question 3: diagram",
+          "scene": "q3-diagram",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "5:14 Question 3: karyotype",
+          "scene": "q3-karyotype",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "5:41 Question 3: mistake",
+          "scene": "q3-mistake",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "5:56 Practice question 4",
+          "scene": "q4-question",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "6:39 Question 4: frameshift",
+          "scene": "q4-frameshift",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "7:05 Question 4: somatic",
+          "scene": "q4-somatic",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "7:25 Question 4: mistake",
+          "scene": "q4-mistake",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "7:39 Choose the mutation rule",
+          "scene": "decision-board",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "8:12 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.033
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c06",
+      "videoId": "boYH3_uNQyc",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c06.srt",
+      "captionHash": "977131851cdf85bc5d574467f32faa79185068468198b778b24b732525697575",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c06\\measured\\lesson.json",
+      "lessonHash": "f413ad0e8f0e9b6768cd93684585727af1b03086c4648cb25752fbd3dd942d82",
+      "durationSeconds": 495.1666666666667,
+      "cueCount": 170,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:25 Can the reaction reverse?",
+          "scene": "run-backwards",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "0:57 Conjugate acid-base pairs",
+          "scene": "conjugate-pairs",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "1:27 Follow the proton",
+          "scene": "worked-example",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "2:03 Conjugate strength",
+          "scene": "conjugate-strength",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "2:34 Amphiprotic species",
+          "scene": "amphiprotic",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "3:11 The proton chain",
+          "scene": "proton-chain",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "3:49 Amphiprotic salt equations",
+          "scene": "salt-equations",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "4:31 Water as acid and base",
+          "scene": "water-role",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "5:14 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "5:35 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "6:05 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "6:32 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "6:58 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "7:23 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "7:49 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.867
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c07",
+      "videoId": "BN5RYjZaVzc",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c07.srt",
+      "captionHash": "c8c044b6d1053c960500252a23df6e96068bd11ff33d71087203640798d735f9",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c07\\measured\\lesson.json",
+      "lessonHash": "e252c175be239e8c3a7acd3e81925887deeea91c07fb95372672ea0d4eb2b8c0",
+      "durationSeconds": 540.2333333333333,
+      "cueCount": 173,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:23 What pH measures",
+          "scene": "ph-meaning",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "0:53 Strong acid pH",
+          "scene": "we1-strong-acid",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:22 Find concentration from pH",
+          "scene": "ph-backwards",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "1:45 Water ionisation and Kw",
+          "scene": "kw",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "2:22 Kw and temperature",
+          "scene": "kw-temperature",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "2:50 pOH and strong bases",
+          "scene": "base-poh",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "3:24 Strong base pH",
+          "scene": "we2-strong-base",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "4:07 pH after dilution",
+          "scene": "dilution",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "4:46 Mixing acid and base",
+          "scene": "mixing-method",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "5:09 Find the excess moles",
+          "scene": "we3-excess",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "5:40 pH after mixing",
+          "scene": "we3-ph",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "6:02 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "6:20 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "6:52 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "7:19 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "7:44 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "8:09 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "8:34 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.933
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b07",
+      "videoId": "Z1jPRaPLHYk",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b07.srt",
+      "captionHash": "9149707d3178237998907a03e8f69e555adc55cb2c4ac9bdf769b1e02c841bc3",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b07\\measured\\lesson.json",
+      "lessonHash": "9ff7adbda082b82395f7a098162fffc2c50162cd47c291f8fa567d141d143258",
+      "durationSeconds": 470.76666666666665,
+      "cueCount": 161,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:34 Three sources of variation",
+          "scene": "three-jobs",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:02 How alleles enter gametes",
+          "scene": "half-the-gametes",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "1:32 New combinations in meiosis",
+          "scene": "new-combinations",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "2:01 Fertilisation",
+          "scene": "fertilisation",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "2:34 Variation in one generation",
+          "scene": "one-generation",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "3:17 Where new alleles originate",
+          "scene": "ultimate-source",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "3:53 Variation in bacteria",
+          "scene": "asexual",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "4:28 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "4:51 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "5:33 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "6:04 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "6:29 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:56 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "7:25 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.467
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b08",
+      "videoId": "PdcZY74Gywo",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b08.srt",
+      "captionHash": "d58e1f868bd76154373c355761a20e52ec7f1feaa6ffb3af927258fcdea94367",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b08\\measured\\lesson.json",
+      "lessonHash": "e050629df32e2fa8e47b2614e36b77c032cf398ebf252add886f972c2c91c5b6",
+      "durationSeconds": 463.6333333333333,
+      "cueCount": 167,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:35 What is a gene pool?",
+          "scene": "gene-pools",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:13 Genetic drift",
+          "scene": "drift",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "1:58 Bottlenecks and founder effect",
+          "scene": "bottleneck-founder",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "2:34 Mutation and allele frequency",
+          "scene": "mutation",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "3:08 Gene flow",
+          "scene": "gene-flow",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "3:43 Which changes matter?",
+          "scene": "which-matters",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "4:19 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "4:36 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "5:16 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "5:42 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "6:16 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:45 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "7:18 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.333
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c08",
+      "videoId": "rgepYezizZA",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c08.srt",
+      "captionHash": "f9f02043cedc46cea1d18294d81ff42eb0ef7705c44f13c72e01fdf83304bae5",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c08\\measured\\lesson.json",
+      "lessonHash": "8a1315328133a46e9fe8584a4fb8a478157bb21137cf465bc81a5c7ee5eaa623",
+      "durationSeconds": 480.8333333333333,
+      "cueCount": 171,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:28 Why weak acid pH differs",
+          "scene": "why-weak",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:58 Weak acid ICE table",
+          "scene": "we1-ice-table",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "1:40 The small-x approximation",
+          "scene": "we1-drop-x",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "2:12 Check and calculate pH",
+          "scene": "we1-check-ph",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "2:50 When the approximation fails",
+          "scene": "check-fails",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "3:21 Weak base ICE table",
+          "scene": "weak-base",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "3:59 Weak base pH",
+          "scene": "weak-base-ph",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "4:23 Choose the method",
+          "scene": "strong-or-weak",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "4:44 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "5:04 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "5:37 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:08 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "6:39 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "7:09 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "7:35 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.533
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "skills-s01",
+      "videoId": "-ouJt6UBaBw",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/skills-s01.srt",
+      "captionHash": "14ecfd9fd07d93005e6e18adeb5c0a06dff321d6ce537549c4a012b71a9ec23b",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\skills01\\measured\\lesson.json",
+      "lessonHash": "2ef3906fa330a7ba64d7287a1ab1f97f07079687f65eecbe9be66410de02418c",
+      "durationSeconds": 494.8333333333333,
+      "cueCount": 179,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:27 Read the question card",
+          "scene": "question-card",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "0:54 The command verb",
+          "scene": "verb",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "1:22 Use the marks",
+          "scene": "marks",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "1:40 Content words and givens",
+          "scene": "content-words",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "2:11 The constraint",
+          "scene": "constraint",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "2:42 Build an answer, step 1",
+          "scene": "build-1",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "3:07 Build an answer, step 2",
+          "scene": "build-2",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "3:44 Compare two answers",
+          "scene": "weak-vs-strong",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "4:15 One mark, one idea?",
+          "scene": "one-mark-one-idea",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "4:43 Four-step reading routine",
+          "scene": "routine",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "5:07 Practice question 1",
+          "scene": "drill-1",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:48 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "6:21 Practice question 2",
+          "scene": "drill-2",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "6:53 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "7:28 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "7:49 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.533
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "skills-s02",
+      "videoId": "ENUgFBDb0pY",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/skills-s02.srt",
+      "captionHash": "b6ab93320cb2e3e9c8ecf443a84ce7b66224c0ff01bba2db6cf3a8a7cdc402eb",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\skills02\\measured\\lesson.json",
+      "lessonHash": "ddc53ac1e812cde6b278e053ddc223ca1fb60884d7d3d784e1d145c28cd38982",
+      "durationSeconds": 486.3,
+      "cueCount": 170,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:30 Identify, describe, explain",
+          "scene": "three-verbs",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "1:02 Read the question card",
+          "scene": "question-card",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "1:36 Identify",
+          "scene": "identify",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "1:58 Describe",
+          "scene": "describe",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "2:27 Set up an explanation",
+          "scene": "explain-setup",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "2:55 Build a causal chain",
+          "scene": "explain-build",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "3:29 Compare two answers",
+          "scene": "weak-vs-strong",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "4:06 Chemistry example",
+          "scene": "chem-ladder",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "4:39 The because test",
+          "scene": "because-test",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "5:14 Practice question 1",
+          "scene": "drill-1",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "5:45 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "6:14 Practice question 2",
+          "scene": "drill-2",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "6:39 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "7:11 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "7:41 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c09",
+      "videoId": "I4cEf51KJ5I",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c09.srt",
+      "captionHash": "203b4a176666fda298ed462821d7d32217cfd3704a19e7a9cdba7997008efaa7",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c09\\measured\\lesson.json",
+      "lessonHash": "f31524e0fbe1dc1f537d5d9609016e3365b1e2406a6c56f034601b664b55ab21",
+      "durationSeconds": 468.93333333333334,
+      "cueCount": 156,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Weak acid, less heat?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:31 What is the same, what is different",
+          "scene": "same-different",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "0:58 The weak acid still reacts completely",
+          "scene": "reacts-completely",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "1:30 Two steps, one total",
+          "scene": "two-steps",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "2:03 Why the ionising step can go either way",
+          "scene": "ionising-either-way",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "2:30 Ethanoic acid: close to zero",
+          "scene": "ethanoic-zero",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "2:54 Hydrofluoric acid: more heat",
+          "scene": "hf-more-heat",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "3:22 A weak base: less heat",
+          "scene": "weak-base-less",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "3:49 Heat does not measure strength",
+          "scene": "heat-not-strength",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "4:22 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "4:45 Attempt 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "5:23 Feedback 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "5:54 Attempt 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "6:30 Feedback 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "6:56 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "7:23 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.633
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b09",
+      "videoId": "Vyr0KetDMwo",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b09.srt",
+      "captionHash": "805fdca405ee7a5e9eefb5235ee5b64ef0bd7a0ecee2830da953279445dc6b75",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b09\\measured\\lesson.json",
+      "lessonHash": "8221405e0e4f7155b083913bdfc44afc863b3d2202636bf99babc89218598906",
+      "durationSeconds": 471.9,
+      "cueCount": 162,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Three products, one question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:25 Using a process: yeast and bread",
+          "scene": "yeast-process",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "0:56 What biotechnology means",
+          "scene": "definition",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "1:22 Choosing the parents: selective breeding",
+          "scene": "selective-breeding",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "1:52 Changing the DNA: insulin from bacteria",
+          "scene": "insulin",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "2:29 The real question: what exactly is changed?",
+          "scene": "what-changes",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "3:06 What each kind is good for",
+          "scene": "advantages",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "3:45 Past, present and future",
+          "scene": "timeline",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "4:29 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "4:54 Attempt one (what does each change?)",
+          "scene": "attempt",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "5:43 Feedback, item one",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "6:06 Attempt two (two routes to resistant cotton)",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "6:29 Feedback, item two",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "6:55 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "7:26 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.6
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c10",
+      "videoId": "xl-LqpA8IUo",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c10.srt",
+      "captionHash": "a6080767f10f53684d945f4103edf7984b31cd9df7d5e977626024238fe1aac3",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c10\\measured\\lesson.json",
+      "lessonHash": "859a62a26d9809989ec3e34bfb2cb6546dd7bd19be187daa90d2cef23b011697",
+      "durationSeconds": 517,
+      "cueCount": 185,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The more acidic solution, the weaker acid?",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:33 Ka is that number",
+          "scene": "ka-is-the-number",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "1:05 Worked example: the hydronium, and strong or weak",
+          "scene": "we-hydronium",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "1:35 Worked example: the ICE table backwards",
+          "scene": "we-ice-backwards",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "2:19 Back to the hook",
+          "scene": "hook-answer",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "2:38 PKa",
+          "scene": "pka",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "3:06 Reading pKa",
+          "scene": "reading-pka",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "3:34 Strong and weak, with Ka and pKa",
+          "scene": "strong-weak",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "4:12 Conjugate bases: Ka × Kb = Kw",
+          "scene": "ka-kb-kw",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "4:46 Ranking conjugate bases",
+          "scene": "conjugate-ranking",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "5:13 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "5:33 Attempt 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:04 Feedback 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "6:32 Attempt 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.6
+        },
+        {
+          "chapter": "7:09 Feedback 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "7:41 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "8:11 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.7
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b10",
+      "videoId": "71MkKTjXPOU",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b10.srt",
+      "captionHash": "7c76082df7d65193cbefa8a38adaaa809076fe3b1b1decc10724167c7d77f1c6",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b10\\measured\\lesson.json",
+      "lessonHash": "72eecb00b7a44d9fc180dbbed740819b6cea1d29838b26dde08858f5cb9f68fc",
+      "durationSeconds": 480.73333333333335,
+      "cueCount": 165,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two biotechnologies that work",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:25 What a judgement needs",
+          "scene": "judgement-needs",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "0:53 Bt cotton: the benefit, and who gets it",
+          "scene": "cotton-benefit",
+          "deltaSeconds": -0.533
+        },
+        {
+          "chapter": "1:30 Bt cotton: the risks, and who carries them",
+          "scene": "cotton-risks",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "2:08 A verdict with a condition",
+          "scene": "cotton-verdict",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "2:38 The animal case: hornless dairy cattle",
+          "scene": "hornless-cattle",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "3:18 Checking what actually happened",
+          "scene": "checking-evidence",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "3:53 What an animal case adds",
+          "scene": "animal-adds",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "4:13 Three kinds of question",
+          "scene": "three-questions",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "4:38 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "4:59 Attempt one (Golden Rice)",
+          "scene": "attempt",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "5:39 Feedback, item one",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "6:07 Attempt two (AquAdvantage salmon)",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "6:43 Feedback, item two",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "7:11 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "7:35 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.433
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c11",
+      "videoId": "5RRF1xvW3lk",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c11.srt",
+      "captionHash": "37b51d7ae04120a9f351c3ef3534ea76909cfc150c819e9f21de0a1af60e9073",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c11\\measured\\lesson.json",
+      "lessonHash": "ba3e863b4b65036f579a28c0603b0b72df1fae2b5607aca3372870d33bee004a",
+      "durationSeconds": 524.9666666666667,
+      "cueCount": 184,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two beakers, one splash",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:34 What the mixture holds",
+          "scene": "what-it-holds",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "1:03 Added acid meets the conjugate base",
+          "scene": "acid-attack",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "1:35 Added base meets the weak acid",
+          "scene": "base-attack",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "2:06 The pH of a buffer: Ka and the ratio",
+          "scene": "buffer-ph",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "2:42 Worked example: after the acid",
+          "scene": "we-after-acid",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "3:16 The ratio sets the pH",
+          "scene": "ratio-sets-ph",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "3:41 Capacity: running out",
+          "scene": "capacity",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "4:17 The blood buffer",
+          "scene": "blood-buffer",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "4:46 Why blood's buffer works",
+          "scene": "blood-works",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "5:22 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "5:40 Attempt 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "6:18 Feedback 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "6:45 Attempt 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "7:28 Feedback 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "7:58 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "8:19 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.667
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "skills-s04",
+      "videoId": "dZQvSUxFY8A",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/skills-s04.srt",
+      "captionHash": "7c5ee9ea87fdb48e25171bc8e60301265a5910c57a9e02a7327e034f0ee8eb7d",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\skills04\\measured\\lesson.json",
+      "lessonHash": "d14135c28513023e6f1e058486de40a825d0c717bbeb2598b5a0b6d73d5a49ef",
+      "durationSeconds": 502.56666666666666,
+      "cueCount": 170,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:29 Analyse, assess, evaluate, justify",
+          "scene": "four-verbs",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:03 Question card",
+          "scene": "question-card",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:33 Read the question",
+          "scene": "read-it",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "1:56 Three parts",
+          "scene": "three-parts",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "2:24 Verdict and two criteria",
+          "scene": "build-1",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "2:58 Weigh evidence and close the loop",
+          "scene": "build-2",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "3:30 Weak vs strong",
+          "scene": "weak-vs-strong",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "4:00 A judgement needs reasons",
+          "scene": "no-reasons",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "4:31 Assess and evaluate",
+          "scene": "assess-vs-evaluate",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "5:12 Drill 1 (Chemistry; countdown, 10 seconds)",
+          "scene": "drill-1",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "5:48 Feedback 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "6:20 Drill 2 (Biology; countdown, 10 seconds)",
+          "scene": "drill-2",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "6:59 Feedback 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "7:30 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "7:57 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.267
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b11",
+      "videoId": "oAVZdpuLnHw",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b11.srt",
+      "captionHash": "979b06d22a79e84a59bf718b19bc75dd45a6ac0df8e72cef06157f579525d0d6",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b11\\measured\\lesson.json",
+      "lessonHash": "29b0ac9fe772a90a31a5e27d906f7f864fb86efa2b60ac0193c14ead167c665c",
+      "durationSeconds": 483.9,
+      "cueCount": 171,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 An approved treatment and bigger claims",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:26 How CRISPR finds and cuts",
+          "scene": "crispr-cut",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "0:56 The approved use: sickle cell",
+          "scene": "sickle-cell-use",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "1:35 The evidence, and the catch",
+          "scene": "evidence-and-catch",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "2:09 How far has the evidence got?",
+          "scene": "evidence-ladder",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "2:49 A proposed use: a gene drive",
+          "scene": "gene-drive",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "3:23 Crashing a population",
+          "scene": "population-crash",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "3:54 What could go wrong",
+          "scene": "unknowns",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "4:31 Need, feasibility, fairness",
+          "scene": "three-questions",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "4:59 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:16 Attempt one (editing inside the body)",
+          "scene": "attempt",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "6:00 Feedback, item one",
+          "scene": "feedback-one",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "6:27 Attempt two (a headline)",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "6:48 Feedback, item two",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "7:17 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "7:38 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.6
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c12",
+      "videoId": "WImke8N1jqg",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c12.srt",
+      "captionHash": "a5e23842bda3bf84179721af441f43e01beaf1921e4d25dda9f7ad1e91276138",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c12\\measured\\lesson.json",
+      "lessonHash": "76a15d9cefc666ee2210faec1c9d30ab54979b892adf6820babf3f0df206eaca",
+      "durationSeconds": 511.56666666666666,
+      "cueCount": 168,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 The meter can't count it",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:38 The idea and the apparatus",
+          "scene": "idea-apparatus",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:06 Equivalence, endpoint, and why it counts every molecule",
+          "scene": "equivalence-endpoint",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "1:40 Standard solutions and primary standards",
+          "scene": "primary-standard",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "2:17 Titres you can trust",
+          "scene": "concordant-titres",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "2:55 Worked example 1: equation and moles of the known",
+          "scene": "we1-moles",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "3:23 Worked example 1: ratio and concentration",
+          "scene": "we1-concentration",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "3:58 Worked example 2: a two to one ratio",
+          "scene": "we2-ratio",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "4:32 Worked example 2: the unknown in the burette",
+          "scene": "we2-burette-unknown",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "5:10 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "5:30 Attempt 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "6:08 Feedback 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "6:38 Attempt 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "7:20 Feedback 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "7:48 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.667
+        },
+        {
+          "chapter": "8:06 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.267
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "skills-s03",
+      "videoId": "wYqgEi0J71g",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/skills-s03.srt",
+      "captionHash": "b7d472cd9c021a940410d127ec7fbef185a588a5245dda609be502b8300f7192",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\skills03\\measured\\lesson.json",
+      "lessonHash": "ec4e4c2533b6539b32fda5f494511dcb1e146d00e3b1f230baf327ae672b503e",
+      "durationSeconds": 486.6,
+      "cueCount": 156,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:28 Compare, contrast, distinguish",
+          "scene": "three-verbs",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "1:07 Question card",
+          "scene": "question-card",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "1:39 Read the question",
+          "scene": "read-it",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "2:12 Pair the same feature",
+          "scene": "pair-table",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "2:48 Turn a table into sentences",
+          "scene": "table-to-sentence",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "3:26 Comparison words",
+          "scene": "comparison-words",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "3:58 Weak vs strong",
+          "scene": "weak-vs-strong",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "4:29 What marking guidelines show",
+          "scene": "what-guidelines-show",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "5:03 Drill 1 (Chemistry; countdown, 10 seconds)",
+          "scene": "drill-1",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "5:43 Feedback 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "6:17 Drill 2 (Biology; countdown, 10 seconds)",
+          "scene": "drill-2",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "6:42 Feedback 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "7:14 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "7:41 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.3
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b12",
+      "videoId": "y6vgEQaZel4",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b12.srt",
+      "captionHash": "ddc034830ee13d25c5f8086f44fb6079562121269e32f7ba21d00d5d7c6106c6",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b12\\measured\\lesson.json",
+      "lessonHash": "7d743a7dcba7fbdacd30c6c5c323e78dfc0b92aa9623de91fdf53cd47d55146c",
+      "durationSeconds": 472.6,
+      "cueCount": 161,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two rescues",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:31 Three levels",
+          "scene": "three-levels",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "1:00 Compared with what?",
+          "scene": "baseline",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "1:23 The banana: the genetic level",
+          "scene": "banana-genetic",
+          "deltaSeconds": -0.733
+        },
+        {
+          "chapter": "2:01 The field: species and ecosystems",
+          "scene": "field-species-ecosystem",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "2:36 The rhino rescue",
+          "scene": "rhino-rescue",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "3:06 Tracing the rhino",
+          "scene": "rhino-levels",
+          "deltaSeconds": -0.567
+        },
+        {
+          "chapter": "3:48 Yield isn't a level",
+          "scene": "yield-not-a-level",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "4:37 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "5:00 Attempt one (a crop and its wild relative)",
+          "scene": "attempt",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "5:34 Feedback, item one",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.833
+        },
+        {
+          "chapter": "6:02 Attempt two (restoring a tree)",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "6:34 Feedback, item two",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "7:04 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "7:27 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.3
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c13",
+      "videoId": "nyq1jhlmhgs",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c13.srt",
+      "captionHash": "500cc3a42f55edecb025f9ea4689157234381eada1b378b788698026dae0ae2e",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c13\\measured\\lesson.json",
+      "lessonHash": "b08257c41b3c984475ad9539efc9027b4cf61ff8f284c03d5864e9667fb84068",
+      "durationSeconds": 507.6666666666667,
+      "cueCount": 172,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 One titration, two indicators",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:35 An indicator is a weak acid",
+          "scene": "indicator-weak-acid",
+          "deltaSeconds": -0.7
+        },
+        {
+          "chapter": "1:00 A reversible switch",
+          "scene": "reversible-switch",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "1:25 A colour change over a range",
+          "scene": "transition-range",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "1:57 Endpoint and equivalence",
+          "scene": "endpoint-equivalence",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "2:18 What's in the flask at equivalence",
+          "scene": "flask-at-equivalence",
+          "deltaSeconds": -0.767
+        },
+        {
+          "chapter": "2:45 Three kinds of salt",
+          "scene": "three-salts",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "3:14 Worked example: the ethanoate concentration",
+          "scene": "we-concentration",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "3:40 Worked example: Kb and the pH",
+          "scene": "we-ph",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "4:11 The jump, and why methyl orange misleads",
+          "scene": "the-jump",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "4:42 The rule, and strong acid with strong base",
+          "scene": "the-rule",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "5:07 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "5:26 Attempt 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "6:08 Feedback 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.8
+        },
+        {
+          "chapter": "6:35 Attempt 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "7:16 Feedback 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "7:43 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "8:02 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.367
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c14",
+      "videoId": "9-supcAoc8g",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c14.srt",
+      "captionHash": "406b189e1060fd9e48cde959a9f9534de0ff43a30cecb675f8ad1a35de4ec9c6",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c14\\measured\\lesson.json",
+      "lessonHash": "bc860f4becae2de465b71fda842e585252888621e95eb982ac41bb8ff6e56659",
+      "durationSeconds": 479.7,
+      "cueCount": 166,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Two acids, two curves",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:32 Axes and the starting pH",
+          "scene": "axes-start-ph",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "1:03 The early part: the buffer region",
+          "scene": "buffer-region",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "1:31 Half-equivalence gives pKa",
+          "scene": "half-equivalence",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "2:07 The equivalence point",
+          "scene": "equivalence-point",
+          "deltaSeconds": -0.967
+        },
+        {
+          "chapter": "2:38 Equivalence pH and the jump",
+          "scene": "equivalence-ph-jump",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "3:10 Strong acid with a weak base",
+          "scene": "strong-acid-weak-base",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "3:41 Conductivity: hydrochloric acid",
+          "scene": "conductivity-strong",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "4:11 Conductivity: ethanoic acid",
+          "scene": "conductivity-weak",
+          "deltaSeconds": -0.867
+        },
+        {
+          "chapter": "4:43 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "5:04 Attempt 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.933
+        },
+        {
+          "chapter": "5:40 Feedback 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "6:08 Attempt 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.9
+        },
+        {
+          "chapter": "6:43 Feedback 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.633
+        },
+        {
+          "chapter": "7:10 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "7:34 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.4
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c15",
+      "videoId": "KvQ-9Ki6NvI",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c15.srt",
+      "captionHash": "f1bbae7704ee7626a1f773d386551a57ebe5cc882a2eff0f489be5afc2137b26",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c15\\measured\\lesson.json",
+      "lessonHash": "e3d6e32dc666f0aab912960db75dd2f589d28b9a4c29516148ee5017f5a773f0",
+      "durationSeconds": 499.73333333333335,
+      "cueCount": 173,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:29 Why the direct titration fails",
+          "scene": "direct-fails",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "0:57 The back titration idea",
+          "scene": "back-titration-idea",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "1:22 Drive off the carbon dioxide",
+          "scene": "boil-off-co2",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "1:46 Worked example: acid added and acid left over",
+          "scene": "we-added-left",
+          "deltaSeconds": 0.1
+        },
+        {
+          "chapter": "2:17 Worked example: acid used, the ratio, mass and percentage",
+          "scene": "we-used-mass",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "2:46 A hidden endpoint: use a conductivity meter",
+          "scene": "hidden-endpoint",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "3:11 Two straight lines, and where they cross",
+          "scene": "lines-cross",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "3:46 Why dilution matters",
+          "scene": "dilution",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "4:15 Reading the vinegar's concentration",
+          "scene": "vinegar-reading",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "4:48 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "5:05 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "5:49 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:17 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "6:51 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "7:20 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "7:54 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.433
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b13",
+      "videoId": "KtmFOGNNztg",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b13.srt",
+      "captionHash": "7a2c9a92363a805b7f3bb06654a5aad7c0d157acb95158ce232f6a6671ad0ed0",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b13\\measured\\lesson.json",
+      "lessonHash": "1d6d81d47e555416563284fd49866822aeb3723c01151bf6bb1f2c75575b79a9",
+      "durationSeconds": 465.2,
+      "cueCount": 162,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:29 Four questions for every case",
+          "scene": "four-questions",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "1:03 Bt cotton through the questions",
+          "scene": "bt-cotton",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "1:49 The gene drive through the same questions",
+          "scene": "gene-drive",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "2:34 Can it be undone?",
+          "scene": "undone",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "3:07 Two verdicts",
+          "scene": "verdicts",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "3:44 What would change the verdict?",
+          "scene": "verdict-checks",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "4:17 Memory",
+          "scene": "memory",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "4:37 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "5:16 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "5:45 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "6:22 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "6:52 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "7:20 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.1
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-c16",
+      "videoId": "KZu-uvXVGFw",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-c16.srt",
+      "captionHash": "e6a5824b91d131b13e14d92843c5976ae615ec5c934eb9c88e43a04e363d4dc8",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6c16\\measured\\lesson.json",
+      "lessonHash": "8d4b68c2508c17ce5acbc40da7dd8cbebb52ad4db6151ce598a3e3d595d43330",
+      "durationSeconds": 477.26666666666665,
+      "cueCount": 166,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:26 pH or amount?",
+          "scene": "ph-or-amount",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "1:01 What a pH probe measures",
+          "scene": "probe-measures",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "1:31 Calibrating with two buffers",
+          "scene": "calibration",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "2:07 Digital instruments in industry",
+          "scene": "industry-digital",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "2:37 Which titration? let the sample decide",
+          "scene": "which-titration",
+          "deltaSeconds": 0.367
+        },
+        {
+          "chapter": "3:13 Worked justification: red wine",
+          "scene": "red-wine",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "3:52 Aboriginal and Torres Strait Islander knowledge",
+          "scene": "aboriginal-knowledge",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "4:34 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "5:00 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "5:32 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "6:01 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:41 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "7:05 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": 0.1
+        },
+        {
+          "chapter": "7:32 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.033
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b15",
+      "videoId": "wX3MUWuRfvY",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b15.srt",
+      "captionHash": "91bc3abbc8f1c7ad68866334489751fff178d6bca9cee54bdcd583cc22e9d501",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b15\\measured\\lesson.json",
+      "lessonHash": "6a1100e003a4243f6e5e8c4c6a9ba0166dc48b4c1b67e86c631e14a01a8e556e",
+      "durationSeconds": 477.8,
+      "cueCount": 162,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:29 What both do",
+          "scene": "what-both-do",
+          "deltaSeconds": 0.333
+        },
+        {
+          "chapter": "1:06 Step one: collect and store",
+          "scene": "collect-store",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "1:40 Step two: deliver, and keep other gametes out",
+          "scene": "deliver-exclude",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "2:21 Outcomes: reach",
+          "scene": "reach",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "2:59 Outcomes: the gene pool",
+          "scene": "gene-pool",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "3:35 The choice, not the method",
+          "scene": "choice-not-method",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "4:16 Writing a compare",
+          "scene": "writing-compare",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "4:46 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "5:03 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "5:39 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "6:08 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "6:41 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "7:11 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "7:32 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.5
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-p02",
+      "videoId": "8zI6dh7bui4",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-p02.srt",
+      "captionHash": "9193fbcfc40c4dc52b632c8c1394ab00bdbb4ede0240c5aca78a5c74ece01d9a",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6p02\\measured\\lesson.json",
+      "lessonHash": "4293a76ce10514f60fdd56afb8f1c5679c0285d10f655545209d7b7b4e23b9c8",
+      "durationSeconds": 494.03333333333336,
+      "cueCount": 176,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:28 The set-up, and why each part is there",
+          "scene": "setup",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "0:56 The starting temperature",
+          "scene": "start-temperature",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "1:19 Mix and keep logging",
+          "scene": "mix-log",
+          "deltaSeconds": 0.367
+        },
+        {
+          "chapter": "1:37 The temperature-time graph",
+          "scene": "graph",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "1:58 Extrapolate the cooling line back",
+          "scene": "extrapolate",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "2:30 Calculate, as in the last video",
+          "scene": "calculate",
+          "deltaSeconds": -0.5
+        },
+        {
+          "chapter": "3:00 The variables in a repeated measurement",
+          "scene": "variables",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "3:20 Errors: follow the chain",
+          "scene": "errors",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "3:59 Validity, reliability and accuracy",
+          "scene": "validity-reliability",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "4:40 The risk assessment",
+          "scene": "risk-assessment",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "5:10 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "5:26 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": 0.067
+        },
+        {
+          "chapter": "5:59 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "6:26 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "6:59 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "7:27 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "7:49 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.267
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b16",
+      "videoId": "njVBwGcvD7A",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b16.srt",
+      "captionHash": "3514f995f9cece9169f1c6c471d5106725ce7223ba4148c26f6f71a7f74ea610",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b16\\measured\\lesson.json",
+      "lessonHash": "b3593144fe1347a87ad1a6c1c6cfa0ea2c98f6d7e051cff3bda7c2268474d3c6",
+      "durationSeconds": 492.6,
+      "cueCount": 172,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:29 One word, two jobs",
+          "scene": "one-word-two-jobs",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "1:01 Somatic cell nuclear transfer",
+          "scene": "nuclear-transfer",
+          "deltaSeconds": -0.367
+        },
+        {
+          "chapter": "1:37 Who is she a copy of?",
+          "scene": "who-she-matches",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "2:08 Does it work? reliability",
+          "scene": "reliability",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "2:51 Health, and effective for what?",
+          "scene": "health-and-purpose",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "3:35 Gene cloning",
+          "scene": "gene-cloning",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "4:26 Judging gene cloning",
+          "scene": "judging-gene-cloning",
+          "deltaSeconds": 0.5
+        },
+        {
+          "chapter": "4:56 The test, and memory",
+          "scene": "memory",
+          "deltaSeconds": 0.4
+        },
+        {
+          "chapter": "5:19 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "5:54 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": 0.367
+        },
+        {
+          "chapter": "6:19 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "6:52 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "7:21 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "7:47 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.3
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-p03",
+      "videoId": "XrYeYMeSmDw",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-p03.srt",
+      "captionHash": "e5edc784efcbd4a12d8764310d3b1518cd9afc16c9f09f84c7341b5571832a0c",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6p03\\measured\\lesson.json",
+      "lessonHash": "60e531aa381fb013a9f2f6ef7cd2efae97f1f4aef7f9a2440244763b4becb1fd",
+      "durationSeconds": 504.2,
+      "cueCount": 179,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:22 The range of solutions",
+          "scene": "range",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:47 How the meter works",
+          "scene": "meter",
+          "deltaSeconds": 0.1
+        },
+        {
+          "chapter": "1:12 Calibration with buffers",
+          "scene": "calibration",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "1:45 The measuring routine",
+          "scene": "routine",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "2:13 The results",
+          "scene": "results",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "2:41 What the readings say about the ions",
+          "scene": "ions",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "3:18 So, the water",
+          "scene": "water",
+          "deltaSeconds": 0.067
+        },
+        {
+          "chapter": "3:44 Meter or indicator paper?",
+          "scene": "meter-vs-indicator",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "4:05 The variables",
+          "scene": "variables",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "4:24 Validity, reliability and accuracy",
+          "scene": "validity-reliability",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "4:59 The risk assessment",
+          "scene": "risk-assessment",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "5:27 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "5:40 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "6:10 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "6:35 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "7:09 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "7:36 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": 0.3
+        },
+        {
+          "chapter": "7:59 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.1
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b18",
+      "videoId": "o3PpNr9qFhY",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b18.srt",
+      "captionHash": "4c74917a92e6e487d6849cae8aaabff47f36094af3e0f3192c6283b2cffbc034",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b18\\measured\\lesson.json",
+      "lessonHash": "793b15357a58f20c47821d00a28b14fd28811697d4c7881d4997ec0e30d142b6",
+      "durationSeconds": 462.2,
+      "cueCount": 157,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:30 Get the right DNA first",
+          "scene": "right-dna",
+          "deltaSeconds": 0.067
+        },
+        {
+          "chapter": "1:06 Restriction enzymes cut DNA",
+          "scene": "cut",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "1:40 Ligase joins DNA",
+          "scene": "paste",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "2:11 Put in",
+          "scene": "put-in",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "2:37 Pick",
+          "scene": "pick",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "3:09 Use it",
+          "scene": "use-it",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "3:43 Plants need a different carrier",
+          "scene": "plants",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "4:27 Memory",
+          "scene": "memory",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "4:48 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "5:24 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": 0.5
+        },
+        {
+          "chapter": "5:50 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "6:23 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "6:50 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "7:17 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.1
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-p04",
+      "videoId": "VFu_7xIIBH0",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-p04.srt",
+      "captionHash": "045db436df47e1cfdaaba83544494d9359aa0a09d0e36678c85ccceb8d1d04c4",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6p04\\measured\\lesson.json",
+      "lessonHash": "3dc2acb3466c2d1866ec1e4346cbd33def8a92ac89492956c7a6415000733861",
+      "durationSeconds": 515.9666666666667,
+      "cueCount": 178,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:25 Test 1: match the concentration",
+          "scene": "matched-concentration",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "0:54 The routine, from the last practical",
+          "scene": "routine-recall",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "1:16 Results at the same concentration",
+          "scene": "results",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "1:37 What the gap means",
+          "scene": "the-gap",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "2:09 Test 2: dilute tenfold",
+          "scene": "dilution-method",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "2:36 The dilution results",
+          "scene": "dilution-results",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "2:59 Why the strong acid moves about one unit",
+          "scene": "strong-moves-one",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "3:18 Why the weak acid moves only half",
+          "scene": "weak-moves-half",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "3:46 The bases, and a check",
+          "scene": "bases-and-check",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "4:18 The variables",
+          "scene": "variables",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "4:40 Validity, reliability and accuracy",
+          "scene": "validity-reliability",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:08 The risk assessment",
+          "scene": "risk-assessment",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "5:34 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": -0.2
+        },
+        {
+          "chapter": "5:46 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "6:22 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "6:47 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "7:18 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "7:45 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": 0.267
+        },
+        {
+          "chapter": "8:11 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.333
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-b19",
+      "videoId": "FfOK7a6blSw",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-b19.srt",
+      "captionHash": "7176d29fba8e6cb9b552ffc5e1784bffe2b3f62dd201bdcf1719da0442674ffe",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6b19\\measured\\lesson.json",
+      "lessonHash": "245c8316de828fca75a12a30bd8d71772c734a8c89934dfebc1694d8da4ac185",
+      "durationSeconds": 479.93333333333334,
+      "cueCount": 181,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:32 Three tests",
+          "scene": "three-tests",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "1:09 Farm",
+          "scene": "farm",
+          "deltaSeconds": -0.4
+        },
+        {
+          "chapter": "1:51 Medicine",
+          "scene": "medicine",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "2:34 Growth hormone",
+          "scene": "growth-hormone",
+          "deltaSeconds": -0.233
+        },
+        {
+          "chapter": "3:03 Factory",
+          "scene": "factory",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "3:36 Tank or field",
+          "scene": "tank-or-field",
+          "deltaSeconds": 0.033
+        },
+        {
+          "chapter": "4:11 Ranking",
+          "scene": "ranking",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "4:47 Memory",
+          "scene": "memory",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "5:02 Practice question 1",
+          "scene": "attempt",
+          "deltaSeconds": 0.167
+        },
+        {
+          "chapter": "5:38 Answer 1",
+          "scene": "feedback-one",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "6:04 Practice question 2",
+          "scene": "attempt-two",
+          "deltaSeconds": -0.1
+        },
+        {
+          "chapter": "6:41 Answer 2",
+          "scene": "feedback-two",
+          "deltaSeconds": 0.333
+        },
+        {
+          "chapter": "7:11 Decision rule",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.333
+        },
+        {
+          "chapter": "7:35 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.367
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "chem-m6-p05",
+      "videoId": "WRD5syuSTEo",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/chem-m6-p05.srt",
+      "captionHash": "e8b71ddbb9c26f99bab6463a5c3a2dece17be3cfc448757ab1c41de1848e5b5b",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6p05\\measured\\lesson.json",
+      "lessonHash": "94d9dad05d0e56ff3c63f0be7f08b04e7a714e885c10ea98f668ace5550fd068",
+      "durationSeconds": 506.3666666666667,
+      "cueCount": 179,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:24 Choose the pair and the amounts",
+          "scene": "choose-pair",
+          "deltaSeconds": 0.133
+        },
+        {
+          "chapter": "0:46 Make it accurately, and make enough",
+          "scene": "prepare",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "1:14 Measure its pH",
+          "scene": "measure-start",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "1:36 Design the test: split, control, dose",
+          "scene": "test-design",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "2:08 The results: acid and base",
+          "scene": "results",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "2:39 Why the buffer barely moved",
+          "scene": "why-small",
+          "deltaSeconds": 0.333
+        },
+        {
+          "chapter": "3:06 Property 3: dilution",
+          "scene": "dilution",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "3:34 Property 4: capacity",
+          "scene": "capacity",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "3:57 The variables",
+          "scene": "variables",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "4:19 Validity, reliability and accuracy",
+          "scene": "validity-reliability",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "4:56 The risk assessment",
+          "scene": "risk-assessment",
+          "deltaSeconds": 0.467
+        },
+        {
+          "chapter": "5:25 Memory aid",
+          "scene": "memory-aid",
+          "deltaSeconds": 0.333
+        },
+        {
+          "chapter": "5:37 Practice question 1",
+          "scene": "attempt-1",
+          "deltaSeconds": -0.067
+        },
+        {
+          "chapter": "6:11 Answer 1",
+          "scene": "feedback-1",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "6:35 Practice question 2",
+          "scene": "attempt-2",
+          "deltaSeconds": -0.033
+        },
+        {
+          "chapter": "7:09 Answer 2",
+          "scene": "feedback-2",
+          "deltaSeconds": -0.3
+        },
+        {
+          "chapter": "7:36 Decision rule and handoff",
+          "scene": "decision-rule",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "8:01 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": -0.067
+        }
+      ],
+      "findings": []
+    },
+    {
+      "lessonId": "bio-m6-g02",
+      "videoId": "dJSdk30cboo",
+      "captionPath": "out/caption-repairs/wave5-2026-10-25/bio-m6-g02.srt",
+      "captionHash": "95150b2f65da01175b07d595e66ca5ff640a7492a0384908519a32f568e162bf",
+      "lessonPath": "docs\\production\\claude-pm\\lessons\\m6g02b\\measured\\lesson.json",
+      "lessonHash": "2581a98b9792ef206ce42d021d18e72d8624502364b3c116bb5e7ab217308576",
+      "durationSeconds": 479,
+      "cueCount": 162,
+      "chapterMapping": [
+        {
+          "chapter": "0:00 Opening question",
+          "scene": "hook",
+          "deltaSeconds": 0
+        },
+        {
+          "chapter": "0:31 Q1 question",
+          "scene": "q1-question",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "1:02 Q1 plan",
+          "scene": "q1-plan",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "1:32 Q1 build",
+          "scene": "q1-build",
+          "deltaSeconds": -0.133
+        },
+        {
+          "chapter": "2:07 Q1 weigh",
+          "scene": "q1-weigh",
+          "deltaSeconds": 0.2
+        },
+        {
+          "chapter": "2:39 Q1 weak",
+          "scene": "q1-weak",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "2:58 Q2 question",
+          "scene": "q2-question",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "3:41 Q2 genetic",
+          "scene": "q2-genetic",
+          "deltaSeconds": -0.467
+        },
+        {
+          "chapter": "4:13 Q2 welfare",
+          "scene": "q2-welfare",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "4:49 Q2 mistake",
+          "scene": "q2-mistake",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "5:05 Q3 question",
+          "scene": "q3-question",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "5:49 Q3 benefit",
+          "scene": "q3-benefit",
+          "deltaSeconds": 0.233
+        },
+        {
+          "chapter": "6:14 Q3 ethics",
+          "scene": "q3-ethics",
+          "deltaSeconds": 0.433
+        },
+        {
+          "chapter": "6:39 Q3 verdict",
+          "scene": "q3-verdict",
+          "deltaSeconds": -0.267
+        },
+        {
+          "chapter": "6:57 Q3 mistake",
+          "scene": "q3-mistake",
+          "deltaSeconds": -0.433
+        },
+        {
+          "chapter": "7:10 Decision board",
+          "scene": "decision-board",
+          "deltaSeconds": -0.167
+        },
+        {
+          "chapter": "7:34 Key notes",
+          "scene": "key-notes",
+          "deltaSeconds": 0.3
+        }
+      ],
+      "findings": []
+    }
+  ]
+}

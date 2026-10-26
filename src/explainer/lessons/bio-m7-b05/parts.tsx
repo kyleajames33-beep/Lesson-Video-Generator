@@ -199,21 +199,18 @@ export const RootBar: React.FC<{x: number; y: number; w: number; h?: number; at:
 
 // ---------- the banksia pair ----------
 /**
- * The hook's healthy and dying banksias. Fallback (BANKSIA_ALIGNED false): the dying plate fades in as its own plate
- * beside the healthy one, never overlapping it. Target (true, after the aligned retake): a second healthy copy stands
- * at `rx` from `copyAt` and crossfades in place into the dying plate.
+ * The hook's healthy and dying banksias, using the aligned retake. A second healthy copy stands at `rx` and the dying
+ * plate crossfades in over it in place; the copy drops out once the dying plate is fully in.
  */
 export const BanksiaPair: React.FC<{lx: number; rx: number; cy: number; w: number; okAt: number; sickT: number; o?: number}> = ({lx, rx, cy, w, okAt, sickT, o = 1}) => {
 	const f = useCurrentFrame();
 	const okO = prog(f, okAt, 16) * o;
 	const t = clamp01(sickT);
-	const k = w / (PLATES.banksiaOk.box[2] - PLATES.banksiaOk.box[0]);
-	const ws = (PLATES.banksiaSick.box[2] - PLATES.banksiaSick.box[0]) * k;
 	return (
 		<g>
-			<Pl p={PLATES.banksiaOk} cx={lx} cy={cy} w={w} o={okO} />
-			{BANKSIA_ALIGNED ? <Pl p={PLATES.banksiaOk} cx={rx} cy={cy} w={w} o={okO * (t < 1 ? 1 : 0)} /> : null}
-			<Pl p={PLATES.banksiaSick} cx={rx} cy={cy} w={ws} o={t * o} />
+			<Pl p={PLATES.hookOk} cx={lx} cy={cy} w={w} o={okO} />
+			<Pl p={PLATES.hookOk} cx={rx} cy={cy} w={w} o={okO * (t < 1 ? 1 : 0)} />
+			<Pl p={PLATES.hookSick} cx={rx} cy={cy} w={w} o={t * o} />
 		</g>
 	);
 };

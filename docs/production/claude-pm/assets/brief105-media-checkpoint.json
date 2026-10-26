@@ -1,0 +1,435 @@
+{
+  "brief": 105,
+  "date": "2026-10-23",
+  "archive": "out/archives/brief105-plates-2026-10-23.zip",
+  "archiveBytes": 40642481,
+  "archiveSha256": "2923a5249eaef997d83b90228939c2192f967498d5c4daf6288a4cace875cfc9",
+  "zipCrcPass": true,
+  "allMembersMatchLocal": true,
+  "plateCount": 17,
+  "memberCount": 77,
+  "pairChecks": [
+    {
+      "pair": "dichromate",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        389,
+        220,
+        1610,
+        1780
+      ],
+      "bboxB": [
+        389,
+        220,
+        1610,
+        1780
+      ]
+    },
+    {
+      "pair": "tollens",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        389,
+        220,
+        1611,
+        1780
+      ],
+      "bboxB": [
+        389,
+        220,
+        1611,
+        1780
+      ]
+    },
+    {
+      "pair": "fehlings",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        389,
+        220,
+        1611,
+        1780
+      ],
+      "bboxB": [
+        389,
+        220,
+        1611,
+        1780
+      ]
+    },
+    {
+      "pair": "bucket",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        221,
+        239,
+        1780,
+        1759
+      ],
+      "bboxB": [
+        221,
+        239,
+        1780,
+        1759
+      ]
+    },
+    {
+      "pair": "falcon-egg",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        221,
+        425,
+        1780,
+        1574
+      ],
+      "bboxB": [
+        221,
+        425,
+        1780,
+        1574
+      ]
+    },
+    {
+      "pair": "bacterium",
+      "alphaIoU32": 0.9866674575703439,
+      "bboxA": [
+        200,
+        551,
+        1800,
+        1447
+      ],
+      "bboxB": [
+        200,
+        551,
+        1800,
+        1447
+      ]
+    },
+    {
+      "pair": "airway",
+      "alphaIoU32": 1.0,
+      "bboxA": [
+        658,
+        207,
+        1344,
+        1742
+      ],
+      "bboxB": [
+        658,
+        207,
+        1344,
+        1742
+      ]
+    }
+  ],
+  "members": [
+    {
+      "path": "public/assets/chemistry/m8-dichromate-orange-v1.png",
+      "sha256": "f0c72e03b18169e4d596e40a10537749772be1507093754fe009deb89659fcb6"
+    },
+    {
+      "path": "public/assets/chemistry/m8-dichromate-green-v1.png",
+      "sha256": "14ead984ea43bd44671cf734e60579c6a89dd1e7c6d122b235537382f079f766"
+    },
+    {
+      "path": "public/assets/chemistry/m7-tollens-tube-clear-v1.png",
+      "sha256": "9aac9924f014f2c29fe72b9a88697a43b4a4139070c6eaee70b762579c082d28"
+    },
+    {
+      "path": "public/assets/chemistry/m7-tollens-tube-mirror-v1.png",
+      "sha256": "fefcf28106e23483faafc86a0ae55c08bff7336a62de3835f5c0984006047149"
+    },
+    {
+      "path": "public/assets/chemistry/m7-fehlings-tube-blue-v1.png",
+      "sha256": "10e84a6aec7eeb798336993dd0a433cb216af46cff4fe73a1be621065447ca27"
+    },
+    {
+      "path": "public/assets/chemistry/m7-fehlings-tube-brickred-v1.png",
+      "sha256": "033c79669e818435db45b88d6359754ac5dcb9428eb128e22ed85a2b03b74e9b"
+    },
+    {
+      "path": "public/assets/biology/m7-aedes-container-dry-v1.png",
+      "sha256": "f328552dbdbbfe5111d33382043c1fa35b2a87984d8a0e0feed78f0ca6508740"
+    },
+    {
+      "path": "public/assets/biology/m7-aedes-container-flooded-v1.png",
+      "sha256": "d33580231f64dd7dabfe121d8bb467682d56de9d3f66e0dba2f97637cf644235"
+    },
+    {
+      "path": "public/assets/biology/m7-aedes-larva-pupa-v1.png",
+      "sha256": "11e77210addea69516bf29b3c3b557decfb5f4ec42866be232f0c3cde9fbe35e"
+    },
+    {
+      "path": "public/assets/biology/m7-insecticide-sprayer-v1.png",
+      "sha256": "f22c5233ada01176989cb94d49ffc1f1625b65b68fca892c844f59aa379930ed"
+    },
+    {
+      "path": "public/assets/biology/m7-wolbachia-cell-v1.png",
+      "sha256": "d39a3819064fdb9433d2f88804a1c2469a63a8af87413f01d42fd43914c44e0a"
+    },
+    {
+      "path": "public/assets/biology/m7-bacteria-conjugation-v1.png",
+      "sha256": "d456d6889bfd861e01ee3cc54a2daa8303e6f5a75d6efd0e96bcd11d1704c00f"
+    },
+    {
+      "path": "public/assets/biology/m7-capsule-blister-blank-v1.png",
+      "sha256": "4ea8057233006cb6018b51b4dc524be0565d229b9c30f8d7731ca34bf0027f94"
+    },
+    {
+      "path": "public/assets/biology/m7-falcon-egg-normal-v1.png",
+      "sha256": "32907043ab73164615ee49694ef7f4937bd9a0c435304ca02d28407e3dc74274"
+    },
+    {
+      "path": "public/assets/biology/m7-falcon-egg-thin-v1.png",
+      "sha256": "3d8631692e096ef8c6849181152cea70b64b30211946a73cb42371144df8ad3e"
+    },
+    {
+      "path": "public/assets/biology/m7-bacterium-wall-burst-v1.png",
+      "sha256": "a31c4ef458a226601999d2d006d4895275d2631096d9c54ca09133500fb01f1e"
+    },
+    {
+      "path": "public/assets/biology/m7-airway-cell-release-blocked-v1.png",
+      "sha256": "080a6ece1957c5da81b279d38103f68ac6b173a1f230b785b22fd8eef6d8ef21"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/airway-overlay-50.jpg",
+      "sha256": "b62aee576b6bfe17b553dbc0bced37c7c66d0e7789f45e43fb0ddbe47d826f1c"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/bacterium-overlay-50.jpg",
+      "sha256": "a613a2c06f003303e43cf4333a867bf1fc1065894232567f92fdf23111de7f48"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/bucket-overlay-50.jpg",
+      "sha256": "c45673e6eb5e65eeed0a3c7fb1c6f338584fe3b6006dfdc65421768c77197a62"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/dichromate-overlay-50.jpg",
+      "sha256": "c112c548269447ae5e43c39f668e4c8e8a64f9b3e26bd8d4adb07fc42147f220"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/falcon-egg-overlay-50.jpg",
+      "sha256": "368ace7f826b299fc539d5b438505f64984f0f53aa33cc0cb2128862c613e759"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/fehlings-overlay-50.jpg",
+      "sha256": "469daa5dd5f388b7c55030fa95bbc846dc111c23bd0593e86c22faac8d3dbf9e"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-container-dry-v1-checker.jpg",
+      "sha256": "d4d49ebaae0d48874fdf3e75e17bf89997781fe4b66a915a6f2d638af7ad4f65"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-container-dry-v1-cream.jpg",
+      "sha256": "e0e3ef4574d162758616673b49fdd2effd6e2405bbcadfd6d27a777524344fba"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-container-dry-v1-dark.jpg",
+      "sha256": "3a8f1c74f502faf7a755951fa6369a24154f5ad2b76ee05fa5e1d8543a49f771"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-container-flooded-v1-checker.jpg",
+      "sha256": "0da44bc8110c826046eae751f61bbc261829f81bd62a1210e7b6ace67d851cec"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-container-flooded-v1-cream.jpg",
+      "sha256": "44279af23cdac5bfb2cc4e9f578a339188a7c18c5fd9a717a6e76e19713f7ad4"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-container-flooded-v1-dark.jpg",
+      "sha256": "6f9e50bf364d5c7a467662e508c149364fc2bac40232c083bbe07da750ca0521"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-larva-pupa-v1-checker.jpg",
+      "sha256": "b5cb8f15078fec9090b93ec9b1617b6eaf374a490bb5fc8ab41676b0a7a2c9fb"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-larva-pupa-v1-cream.jpg",
+      "sha256": "84c5ae5118108056a09e0f179ad3960b1f9649c0b560998d2be9bbd2f1f85b74"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-aedes-larva-pupa-v1-dark.jpg",
+      "sha256": "f30f63fc2a1ba14069a08cec8c3ba58ac7fc7641c8104990c45f023bce1c86c2"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-airway-cell-release-blocked-v1-checker.jpg",
+      "sha256": "82d0613d73536d192ed0365cdba29d25443fbe8b06e47f5fec211eb9b67ad28f"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-airway-cell-release-blocked-v1-cream.jpg",
+      "sha256": "25c3b6a7bc9139081379ece199a0433dd78350986390028a7d62ced0ff8b1de1"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-airway-cell-release-blocked-v1-dark.jpg",
+      "sha256": "ab383a8b1f4f5a15836494f9ecdeaa009d87e0246703ef54f700d7dfeeeb8cd8"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-bacteria-conjugation-v1-checker.jpg",
+      "sha256": "b5eb1c7b5114f010f77406e736e920d666640f2dbcdf4e36decd3a77b469d8ef"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-bacteria-conjugation-v1-cream.jpg",
+      "sha256": "97642d92fffbcd2507ae22b77ea3dbca31fa913995c8fc3a32954be2e603bda8"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-bacteria-conjugation-v1-dark.jpg",
+      "sha256": "c29e7b60e97cff17559aa48339936070a9cace64648162733fcee0cf27de9e2f"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-bacterium-wall-burst-v1-checker.jpg",
+      "sha256": "72b164d9418367babbd01893d041908024e3408b21967e4bea0c6ea61a3e3e53"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-bacterium-wall-burst-v1-cream.jpg",
+      "sha256": "673b0b06e52bd7d5d464044a0f5d1b6d86bfe0597db9fa1ee50c43e4274717f4"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-bacterium-wall-burst-v1-dark.jpg",
+      "sha256": "1f0d5f231992f36fe99545769dd081a374d855e9ae7f459a1138e42cd65344fc"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-capsule-blister-blank-v1-checker.jpg",
+      "sha256": "9da17adb78c157c5ba04c172920e3db2058408b8081a391c5d060aa271aaa5f8"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-capsule-blister-blank-v1-cream.jpg",
+      "sha256": "85afc7372dcd4749e8544221c9e59bcf95a6a00321d79c0c50449c32400eece7"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-capsule-blister-blank-v1-dark.jpg",
+      "sha256": "ddc3da30c9d1dc25543ee94891fe2d6cf4229bcb1eff9ad649d59e47a8418012"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-falcon-egg-normal-v1-checker.jpg",
+      "sha256": "af249471438a4cc59105ef3ff3c41aa17846aeebc3bd68efdc23411c6a147310"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-falcon-egg-normal-v1-cream.jpg",
+      "sha256": "657c304dc5cd15b4c1019096ef2b5c50a7934586b2f311e7e4f074b95be4d575"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-falcon-egg-normal-v1-dark.jpg",
+      "sha256": "962febb056ee6fd51ece5138539da84640ab70355316fcf598d2254dc03917c7"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-falcon-egg-thin-v1-checker.jpg",
+      "sha256": "52268ebb961c725340fcf6b481a155e575ed7c52b020dd01d393b73d43892ff2"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-falcon-egg-thin-v1-cream.jpg",
+      "sha256": "dee077619f2cd6566cefc75f4dd3daf94b9582b56df7889e669dab06644b7936"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-falcon-egg-thin-v1-dark.jpg",
+      "sha256": "7860afd4d2639e51d8cf73ec56e60d73b347a8a08ca47178743a53fef1192fa6"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-fehlings-tube-blue-v1-checker.jpg",
+      "sha256": "75371088b74db79efbdab62705c50ba4c6cee70f4abf5543bfd6cae8fb271301"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-fehlings-tube-blue-v1-cream.jpg",
+      "sha256": "533f4e123aec205d3e4995afcd8583c75d682a92852d2f2cb52babb1b97a5b47"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-fehlings-tube-blue-v1-dark.jpg",
+      "sha256": "83cfca6e0417a6abfa1552383091710835fb99ddf54c78034f6995316e379537"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-fehlings-tube-brickred-v1-checker.jpg",
+      "sha256": "77601cdd115db56a1ddc6ab5773b384ef522909663ec5dd153252b90780c947b"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-fehlings-tube-brickred-v1-cream.jpg",
+      "sha256": "1606261f7eb63f1349d96d7e75a7eb15bd9bc1b2a74479524d5f0a548f263952"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-fehlings-tube-brickred-v1-dark.jpg",
+      "sha256": "0fbb177e49814d445904fd712b6598957762e5199be25e67924d9dddec08a0f5"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-insecticide-sprayer-v1-checker.jpg",
+      "sha256": "304bb313bf1caee948c2531f744286961784ce87415bbc6d788e3a5c94e04f9c"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-insecticide-sprayer-v1-cream.jpg",
+      "sha256": "52a040b539e1cc4f6c63f68e519e5d7dff82c0f51fb7f0fa25dd31f52fe73523"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-insecticide-sprayer-v1-dark.jpg",
+      "sha256": "dabce69667fa201fd31ab92b2e2ac033c738aa4a7f7a1bfca8c818457d68323f"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-tollens-tube-clear-v1-checker.jpg",
+      "sha256": "035a627c637c188b756fc443b7cf15190da02fc6b6f47d2cc405c9963fc38586"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-tollens-tube-clear-v1-cream.jpg",
+      "sha256": "8ce58a1c42aa94eaeee3483723c647a69e0a72e0fd7f270eda0c7971344a75d2"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-tollens-tube-clear-v1-dark.jpg",
+      "sha256": "8085176f4e7b3c264d61c852d71003552614c42fcf806d4ec6ed91c376ae13a3"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-tollens-tube-mirror-v1-checker.jpg",
+      "sha256": "d460ad9f2afd5c310e5ff80142dfe3b4fa29471abf0f2ea063798bb2b04b91e5"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-tollens-tube-mirror-v1-cream.jpg",
+      "sha256": "31e65aa0fa62ccce290780d9ee6b121ce56a233f05fa4721ecb703654e2846af"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-tollens-tube-mirror-v1-dark.jpg",
+      "sha256": "c3eaf1ceff1690f8b611638ff8461ae3fd46cd7c9964c164a1540b7106aa2459"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-wolbachia-cell-v1-checker.jpg",
+      "sha256": "3c8fcc568a8e60af416f16ccbe317c30d5d62c9efb00521ef76829570f74d0d2"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-wolbachia-cell-v1-cream.jpg",
+      "sha256": "b73d045b8cdc9eff88caae0a07f004705e315814b2a308df9cb5a9e617016328"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m7-wolbachia-cell-v1-dark.jpg",
+      "sha256": "04444a8d4bcd64b2965f0af8be3e3be1aa8147d1c1ba882671de57ea77fb72f7"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m8-dichromate-green-v1-checker.jpg",
+      "sha256": "088ab9875905d1ebba8666fa65fc0362a60a32b8e960f5362944dcbe207f3728"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m8-dichromate-green-v1-cream.jpg",
+      "sha256": "8083b5883cb65a217cb194feace8bf24a0ab7d9348cac0c419cd8fdc123fc40c"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m8-dichromate-green-v1-dark.jpg",
+      "sha256": "3e53661b2a1d51901511df17637ebce5085b2952abb0c7c8b7a82aa61007a624"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m8-dichromate-orange-v1-checker.jpg",
+      "sha256": "95430f4180d5712404229f5a92dedce8f48fc197319ce334c932b9bc303486f6"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m8-dichromate-orange-v1-cream.jpg",
+      "sha256": "ffff894634608a006bcd6e5727924dc56fc7dfc83a98857ba2c2cd04a13d489c"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/m8-dichromate-orange-v1-dark.jpg",
+      "sha256": "3922e82f6b3a3404646b749f9e68189510c28f8eb70e802901a118e9c65253ff"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/tollens-overlay-50.jpg",
+      "sha256": "f08e0a65b67a83be493111f57df3851f67af12c646280f78f61f9dc0a2190c5c"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-provenance.json",
+      "sha256": "614187a05b7a0a9ad49aa6b077a5a825c038fcaedc5b7c5ce6e0977636e109d5"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief105-qa/process-brief105.py",
+      "sha256": "9c64f74e20837a89a24a97283a34df77e80f49e22246c77c58949c1357f7420f"
+    }
+  ]
+}
