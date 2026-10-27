@@ -89,3 +89,4 @@ Each design goes through the full pipeline.
 - **Route JSON updated (23 Oct):** chem-m7-c08 is split into c08a (L12) and c08b (L13), both delivery parts of c08. The preceding entry hands on to c08a. Later prerequisites now point to c08b.
 
 - 27 Oct: chem-m7-c11 gains site lesson L18 (base half and acid against base comparison, change 3), C7-IQ1-01 (amine and amide naming) and entry knowledge c09, c10, c05, m6-c01, per the c11 Revision 1 design.
+- 27 Oct: route JSON applies change 4: chem-m7-c16 entry converted to chem-m7-g04 (practice), and c15 next points to g04.

@@ -1198,7 +1198,7 @@
           ],
           "entryKnowledge": "Recall chem-m7-c10, chem-m7-c11, chem-m7-c14.",
           "next": [
-            "chem-m7-c16"
+            "chem-m7-g04"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
@@ -1210,10 +1210,12 @@
           ]
         },
         {
-          "id": "chem-m7-c16",
-          "title": "How do polymer structures shape their uses and impacts?",
-          "type": "core",
+          "id": "chem-m7-g04",
+          "title": "Polymer practice: repeating units, monomers and properties",
+          "type": "practice",
           "siteLessons": [
+            "L21",
+            "L22",
             "L23"
           ],
           "syllabusActions": [
@@ -1225,10 +1227,10 @@
             "chem-m7-c15"
           ],
           "estimatedMinutes": 8.5,
-          "start": "Compare branching, links and intermolecular forces.",
-          "stop": "Judge application and disposal trade-offs with examples.",
+          "start": "Draw the repeating unit from a monomer.",
+          "stop": "Classify addition or condensation and explain one property from structure.",
           "playlistOrder": 25,
-          "planAnchor": "C16",
+          "planAnchor": "G04",
           "sourceCandidates": [
             {
               "id": "Chemistry-Y12-M7-L23",
@@ -1240,12 +1242,13 @@
           "next": [],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no design, practical or release approval",
-          "placement": "Core learner route",
-          "mainLearnerQuestion": "How do polymer structures shape their uses and impacts?",
+          "placement": "Practice after the polymer core videos",
+          "mainLearnerQuestion": "Can you draw, recover, classify and explain polymers?",
           "preDesignPack": "docs/production/claude-pm/pre-design/chem-m7-polymer-properties-lifecycle.md",
           "siteExtracts": [
             "docs/production/claude-pm/site-extracts/chem-m7-l23.md"
-          ]
+          ],
+          "rootNote": "27 Oct: converted from chem-m7-c16 (route review change 4). Property links (branching, packing, thermoplastic behaviour) folded into c14 and c15; L23 lifecycle material not in the 2017 dotpoints is left out."
         }
       ]
     },
