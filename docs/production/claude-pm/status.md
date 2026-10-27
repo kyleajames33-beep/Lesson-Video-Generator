@@ -1302,3 +1302,11 @@ Selected raw candidates are `04-intact-white-base.png` and `07-slotted-white-cor
 The image tool's edit rule requires an explicit user choice before using another editing method. Root asked whether deterministic alpha-mask cleanup may remove the persistent halo while preserving the painted tubes. No response has been received at this checkpoint, and no code-based image edit has been performed. Cleanup and the final transparent asset pair remain pending. No output was added to approved public assets or integrated into a video.
 
 The local candidate archive is `out/archives/physics-eddy-tube-candidates-2026-10-25.zip`: 9,186,418 bytes, SHA-256 `7836eea17229d4797cf2d5512db41de45d753388e0f81daf84e9be1f31173a71`. All nine members hash-match local files. Restore into repository root. `assets/physics-maths-image-bank/eddy-tube-first-batch-checkpoint.json` records the pending candidate status. The reviewed planning queue remains a historical zero-call baseline; the separate execution record and board now record seven actual calls.
+
+### Brief 28x: verified files, live browser unavailable (27 October 2026)
+
+All four MP4 and caption hashes match. Titles are within 100 characters, site links come first in .sa form, and every quoted syllabus point matches the ledger verbatim. Evidence: `youtube/brief28x-preflight.json`. The v4 caption catalog validates all 91 local entries with zero input issues in `youtube/brief28x-caption-local-validation.json`.
+
+The owner said yes in chat to timing-only public caption replacement, preserving text and videos and excluding B2a, B2b, B2c, B03a, C3 and C4a. `youtube/caption-replacement-2026-10.json` records authorisation, the 91-entry queue, six skips and zero replacements. Reference hashes are not claimed as fresh live saved-track captures.
+
+No connected apps or browsers were returned; Chrome and the in-app browser both report unavailable. No uploads, public caption changes or playlist changes occurred. Four new links and both live playlist readbacks remain pending. `youtube/wave5-uploads.json` retains its 41 actual upload records and adds a separate pending-upload pointer. Reconnect the signed-in Studio browser to resume; no new owner approval is needed for the authorised work.
