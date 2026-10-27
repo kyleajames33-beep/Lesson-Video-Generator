@@ -143,7 +143,7 @@ export const SceneWFF: React.FC = () => {
 const K4 = cues(sc('question-card'), {hsc: 'HSC-style Chemistry', student: 'A student compares', taller: 'taller', table: 'Her three trials', parts: 'There are three', rel: 'reliability,', claim: 'a claim', validity: 'validity.', bio: 'If you take', pause: 'Pause here'});
 export const SceneCard: React.FC = () => {
 	const f = useCurrentFrame();
-	// The measured lesson has no responseHold for this scene (only the drills do), so there is no 10 s window to count.
+	// responseHold added to the measured lesson on 27 Oct (the voicing parser had missed it); the HandLine branch is a fallback.
 	const h = hold('question-card') as {startFrame: number; endFrame: number} | undefined;
 	const spec = workSpec([K4.student, K4.table, K4.rel, K4.claim, K4.validity], [K4.rel + 10, K4.claim + 10, K4.validity + 10]);
 	const g = cardGeom(spec);
@@ -155,7 +155,7 @@ export const SceneCard: React.FC = () => {
 				<SetSlot spec={spec} at={K4.student} dist={smooth(prog(f, K4.taller + 6, 20))} distAt={K4.taller} />
 			</QuestionCard>
 			<AnswerBox spec={box} at={K4.parts} counter={{total: 7, label: true}} slots={{at: K4.parts + 10, n: 3, per: 1}} />
-			<GreyTag x={ZONE.side.x + 40} y={box.y + 10} text="Biology: watch how each answer names the word, the feature and the fix" at={K4.bio} size={22} maxW={440} />
+			<GreyTag x={ZONE.side.x + 40} y={box.y + 10} text="Biology: watch how each answer names the word, the feature and the fix" at={K4.bio} out={K4.pause - 6} size={22} maxW={440} />
 			{h ? <DrillCountdown hold={h} at={K4.pause} x={ZONE.side.x + 40} y={box.y + 60} cx={ZONE.side.x + 300} cy={box.y + 170} r={46} /> : <HandLine x={ZONE.side.x + 40} y={box.y + 120} text="Pause here to answer." at={K4.pause} size={44} color={AMBER_INK} />}
 			{void WORK}{void GREY_INK}{void AMBER_INK}{void TEAL}
 		</Overlay>
