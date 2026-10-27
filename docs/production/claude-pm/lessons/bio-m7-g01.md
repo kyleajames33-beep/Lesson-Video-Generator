@@ -1,8 +1,19 @@
 # G01 (Module 7 Biology): Outbreak data and control practice (design)
 
-Status: Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (28 Oct): Codex error check resolved; ready to voice.
+
+Earlier status, Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 Earlier status, Revision 1 (27 Oct): needs learning review and Claude science check.
-Narration 5,758 characters (Revision 2; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 9.4 minutes (561 s) including holds, three countdowns and the notes hold. Nothing recorded; human listening pending.
+Narration 5,758 characters (Revision 3, unchanged from Revision 2; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 9.4 minutes (561 s) including holds, three countdowns and the notes hold. Nothing recorded; human listening pending.
+
+## Revision 3 changes (28 Oct)
+
+Resolves `../checks/codex-check-108.md` (G01) and the brief 108 hand-in in `../status.md`.
+
+- **Error check.** Codex reported no confirmed errors for G01. No narration, screen or notes changes.
+- **Plates.** Brief 108 delivered all four requested plates: `public/assets/biology/m7-chicken-pasta-tray-v1.png`, `m7-chicken-sandwiches-v1.png` (painted interior, including the lettuce, protected in cleanup), `m7-vibrio-cholerae-v1.png` and `m7-village-water-tank-v1.png` (2000 px RGBA, 12.5% clear margins; G01's actual 220 px dark views inspected; `../assets/brief108-provenance.json`, keys 108-pasta, 108-sandwiches, 108-vibrio, 108-tank). `m7-raw-chicken-v1.png` stays unused (Assets). Owner artwork acceptance remains a separate gate.
+- **Time-sensitive facts.** None flagged for G01 in the hand-in.
+- Count unchanged: 5,758 characters. Ready to voice.
 
 ## Revision 2 changes (27 Oct)
 

@@ -1,10 +1,18 @@
 # M7 C12: How do soaps and detergents lift oil into water? The two-ended molecule, saponification, micelles and hard water (design)
 
-Status: Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (28 Oct): Codex error check resolved; ready to voice.
+
+Earlier status, Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (27 Oct): needs learning review and Claude science check.
 
 Narration 6,293 characters, 16 scenes, about 9.4 minutes (565 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (28 Oct; resolving `../checks/codex-check-107.md`, C12):
+- Error check: Codex reported no confirmed errors for C12. No narration, screen or notes changes.
+- Plates: brief 107 delivered all four tube plates from one master tube: `public/assets/chemistry/m7-oil-water-tube-layers-v1.png`, `m7-oil-water-tube-emulsion-v1.png`, `m7-soap-tube-soft-v1.png` and `m7-soap-tube-hard-v1.png` (shared apparatus pixels; both pairs have identical alpha and checked 50% overlays; `../assets/brief107-provenance.json`, keys 107-layers, 107-emulsion, 107-soft, 107-hard). Owner artwork acceptance remains a separate gate.
+- Time-sensitive facts: none in this design.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (27 Oct; resolving `../checks/m7c12-learning-review.md` (learning L1 to L12) and `../checks/m7c12-claude-science-check.md` (science S1 to S10)):
 - Scene 2 (learning L1, science S2, root decision): cut to a short recall of c03, keeping the squeeze-out animation: "It's like the hexane layer from the hydrocarbons video. Oil molecules are mostly long hydrocarbon chains, so they're largely non-polar, with mainly dispersion forces to offer. Letting them in would break water's hydrogen bonds, so the water keeps its hydrogen bonds, and squeezes the oil out." Grey chip "c03: hexane forms a layer on water"; tag "mostly non-polar: mainly dispersion". The squeeze out runs once at normal pace.

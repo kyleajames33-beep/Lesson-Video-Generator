@@ -1,10 +1,18 @@
 # M7 C13: How can a reaction map plan organic synthesis? Work backwards from the target, write the route forwards, and check every arrow (design)
 
-Status: Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (28 Oct): Codex error check resolved; ready to voice.
+
+Earlier status, Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (27 Oct): needs learning review and Claude science check.
 
 Narration 6,069 characters, 14 scenes, about 9.1 minutes (546 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (28 Oct; resolving `../checks/codex-check-108.md`, C13):
+- Error check: Codex reported no confirmed errors for C13. No narration, screen or notes changes.
+- Plates: none commissioned (Codex asset brief: no new plates); existing plates only.
+- Time-sensitive facts: none in this design.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (27 Oct; resolving `../checks/m7c13-learning-review.md` (learning L1 to L10) and `../checks/m7c13-claude-science-check.md` (science S1 to S9)):
 - Position rule (learning L1 blocker, science S1, root decision): scene 5 now opens on the allowed starting material: "Where does propan-1-ol come from? Here, from 1-bromopropane. Hydroxide takes the bromine's place on the same carbon ...". Propene comes second, as a hypothetical ("Suppose you had propene", with a grey tag "not one of our starting materials"): "most of it ends up on the middle one. You'd get mainly the wrong alcohol. Adding H Br to propene first doesn't help, because the bromine mostly lands on the middle carbon too. So when the position matters, start from a haloalkane that already has its halogen on the right carbon." Markovnikov is not named. A second two-way dock with HBr and the crossed chip "propene + HBr: same problem" are added; the tag reads "mainly propan-2-ol". Scene 8's last sentence, the screen branch ("haloalkane, halogen already on the right carbon"), key notes 2 and 3 and the notes-screen memory line carry the same condition.

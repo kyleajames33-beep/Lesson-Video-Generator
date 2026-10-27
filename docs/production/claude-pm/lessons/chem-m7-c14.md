@@ -1,10 +1,18 @@
 # M7 C14: How does an alkene become an addition polymer? Opening the double bond, drawing repeat units, and how chain packing and side groups set the properties of PE, PVC, PS and PTFE (design)
 
-Status: Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (28 Oct): Codex error check resolved; ready to voice.
+
+Earlier status, Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (27 Oct): needs learning review and Claude science check.
 
 Narration 6,342 characters, 16 scenes, about 9.5 minutes (569 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (28 Oct; resolving `../checks/codex-check-108.md`, C14):
+- Error check: Codex reported no confirmed errors for C14. No narration, screen or notes changes.
+- Plates: brief 108 delivered the matched set of five: `public/assets/chemistry/m7-ldpe-squeeze-bottle-v1.png`, `m7-hdpe-crate-v1.png`, `m7-pvc-pipe-v1.png`, `m7-ps-foam-cup-v1.png` and `m7-ptfe-pan-v1.png` (2000 px RGBA, 20% minimum clear margins; `../assets/brief108-provenance.json`, keys 108-bottle, 108-crate, 108-pipe, 108-cup, 108-pan). `m7-polymer-objects-v1.png` is the existing style reference. Owner artwork acceptance remains a separate gate.
+- Time-sensitive facts: none in this design.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (27 Oct; resolving `../checks/m7c14-learning-review.md` (learning L1 to L14) and `../checks/m7c14-claude-science-check.md` (science S1 to S9)):
 - Polystyrene (learning L1, science S3, root decision): scene 8 now gives the real cause, the bulky rings stopping the chains from sliding: "You might expect that to make it soft, like LDPE's branches. But these rings are big and stiff, and they catch on the rings of neighbouring chains, so at room temperature the chains can hardly move or slide. That makes solid polystyrene rigid, and it snaps rather than bends." The first cue moves to "slide"; a grey LDPE thumbnail appears on "like LDPE's branches"; the tag reads "rings catch: chains hardly slide"; "clear" is a quiet grey tag only. The board's unhedged "can't pack or slide" cell is gone (board rebuilt, below).

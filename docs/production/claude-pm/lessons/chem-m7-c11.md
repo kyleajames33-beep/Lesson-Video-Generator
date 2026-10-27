@@ -1,10 +1,18 @@
 # M7 C11: How do amines and amides differ? The nitrogen lone pair, naming, boiling points, and the organic base against the organic acid (design)
 
-Status: Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (28 Oct): Codex error check resolved; ready to voice.
+
+Earlier status, Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (27 Oct): needs learning review and Claude science check.
 
 Narration 6,333 characters, 18 scenes, about 9.5 minutes (570 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (28 Oct; resolving `../checks/codex-check-107.md`, C11):
+- Error check: Codex reported no confirmed errors for C11. No narration, screen or notes changes.
+- Plates: brief 107 delivered `public/assets/chemistry/m7-fish-plate-v1.png` (retake; original generation preserved; `../assets/brief107-provenance.json`, key 107-fish). The litmus pair uses brief 106's `m7-litmus-blue-strip-v1.png` (key 106-litmus). `m7-polymer-objects-v1.png` is an existing plate. Owner artwork acceptance remains a separate gate.
+- Rechecked fact: N-methylethanamine's boiling point (Numbers to verify item 8). Codex reported no error against it; handbook values are about 36 to 37 °C, inside the 36 to 38 °C band, so "about thirty seven" and the 48 > 37 > 3 °C order stand. No wording change.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (27 Oct; resolving `../checks/m7c11-learning-review.md` (learning L1 to L12) and `../checks/m7c11-claude-science-check.md` (science S1 to S11)):
 - Scenes 5 and 6 (learning L1, root decision): the old scene 5 is split. Scene 5 keeps the amine against alcohol comparison. New scene 6 teaches the three C₃H₉N isomers, so the student sees two N–H against one against none before attempt 1: "Propan-one-amine has two N H hydrogens. N-methylethanamine has only one, so it forms fewer hydrogen bonds, and boils at about thirty seven degrees. Trimethylamine has none ...". Chips "2 N–H", "1 N–H", "0 N–H" (the chips feedback 1 uses) and strip marks 48, 37 and 3 °C. Codex to confirm N-methylethanamine's boiling point (Numbers to verify). The video now has 18 scenes; old scenes 6 to 17 are now 7 to 18.

@@ -1,10 +1,18 @@
 # M7 C09: Why are carboxylic acids acidic? The carboxyl group, its naming, its dimers and the proton it gives away (design)
 
-Status: Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (28 Oct): Codex error check resolved; ready to voice.
+
+Earlier status, Revision 2 (27 Oct): learning review and Claude science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (27 Oct): needs learning review and Claude science check.
 
 Narration 6,318 characters, 17 scenes, about 9.5 minutes (568 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (28 Oct; resolving `../checks/codex-check-106.md`, C09):
+- Error check: Codex reported no confirmed errors for C09. No narration, screen or notes changes.
+- Plates: brief 106 delivered `public/assets/chemistry/m7-litmus-blue-strip-v1.png` (2000 px RGBA, traced on the existing red tile's exact alpha and outline, so the red and blue plates cross-fade with no shift; `../assets/brief106-provenance.json`, key 106-litmus). Owner artwork acceptance remains a separate gate.
+- Time-sensitive facts: none in this design.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (27 Oct; resolving `../checks/m7c09-learning-review.md` (learning L1 to L12) and `../checks/m7c09-claude-science-check.md` (science S1 to S12)):
 - Scene 4 (learning L1, blocker): the stated difference is now a real one. New narration: "An alcohol's O H can give and take hydrogen bonds, and so can the acid's, so that alone isn't the difference. The difference is the C double bond O right beside the O H. The O H gives a hydrogen bond, and the oxygen of the C double bond O takes one. So two acid molecules can face each other and lock together with two hydrogen bonds." On "beside" the C=O oxygen's lone pairs pulse (tag "second O: a second taker"). The crossed "more O atoms" chip now enters with the strip, and the gives and takes tags dim on "dimer" (learning L10).
