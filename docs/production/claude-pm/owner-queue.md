@@ -354,3 +354,11 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - Owner on bio-m7-b15 cultural review (27 Oct): wants one in principle but it isn't practical now; parked, owner will deal with it later. Design B15 normally; do not publish B15 until the owner revisits this.
 - bio-m7-b14 (history of disease control) also carries Aboriginal and Torres Strait Islander content: a sourced, community-led case (APY Lands closure 2020; Crooks, Casey and Ward, MJA 2020). Same hold as B15: design, voice and build normally, but do not publish until the owner arranges the cultural review. Reviewer to check the spoken group wording and APY pronunciation.
 - bio-m7-g02 (practice) Q3 uses a constructed Aboriginal community partnership testing the protocols: same cultural-review hold as B14 and B15 (the reviewer can read all three together).
+
+### 27 Oct evening snapshot
+- **Codex, in order:** 106 (C09, C10, B13, B14), 107 (C11, C12, B15, P01), 108 (C13, C14, G01, G02). 28x was sent this morning.
+- **Previews for owner (14):** chem P02, C05 (v2), C06, C07, P03, G02, C08a (v2), C08b (v2); bio B08, B09, G03, B10, B11, B12; skills S07 when its build lands.
+- **Renders:** 20 passed videos in queue (`out/explainer/render-queue-27oct.log`); upload brief 28y follows when it finishes.
+- **Cultural review hold:** B14, B15 and G02 (do not publish until the owner's reviewer has read them).
+- **Design paused** until Codex returns 106 to 108. Next designs: chem C15, G03, G04, P04 to P06; bio P05, S06, S08.
+- b10's R handoff is closed in g01 (R is not in the 2017 syllabus).
