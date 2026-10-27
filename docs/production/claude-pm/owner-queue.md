@@ -362,3 +362,8 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - **Cultural review hold:** B14, B15 and G02 (do not publish until the owner's reviewer has read them).
 - **Design paused** until Codex returns 106 to 108. Next designs: chem C15, G03, G04, P04 to P06; bio P05, S06, S08.
 - b10's R handoff is closed in g01 (R is not in the 2017 syllabus).
+
+## 28 October 2026
+
+- Owner passed the 15 previews in chat ("yeh they are passed"): chem M7 P02, C05 (v2), C06, C07, P03, G02, C08a (v2), C08b (v2); bio M7 B08, B09, G03, B10, B11, B12; skills S07 (v2). Render queue `out/explainer/render-queue-28oct.log`.
+- Owner: to save Claude tokens, use Codex where possible. From now on Codex writes the learning review and science check for new designs; Claude designs and resolves.

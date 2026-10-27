@@ -1310,3 +1310,69 @@ All four MP4 and caption hashes match. Titles are within 100 characters, site li
 The owner said yes in chat to timing-only public caption replacement, preserving text and videos and excluding B2a, B2b, B2c, B03a, C3 and C4a. `youtube/caption-replacement-2026-10.json` records authorisation, the 91-entry queue, six skips and zero replacements. Reference hashes are not claimed as fresh live saved-track captures.
 
 No connected apps or browsers were returned; Chrome and the in-app browser both report unavailable. No uploads, public caption changes or playlist changes occurred. Four new links and both live playlist readbacks remain pending. `youtube/wave5-uploads.json` retains its 41 actual upload records and adds a separate pending-upload pointer. Reconnect the signed-in Studio browser to resume; no new owner approval is needed for the authorised work.
+
+### Brief 106: plates, error check and site log (27 October 2026)
+
+Completed eight 2000 px RGBA plates in `public/assets/chemistry/` and `public/assets/biology/`. The blue strip uses the existing red tile's exact alpha and outline. The long-tail rat retake replaces the short-tail candidate. Sources, native outputs, transformations, hashes and QA are in `assets/brief106-generation.json`, `assets/brief106-provenance.json` and `assets/brief106-qa/`. Native imagegen canvases were 1254 px; final sizing and alpha cleanup were explicitly authorised by the owner. Final cleanup protects opaque painted interiors. All cream, checker and dark views and the litmus overlay were inspected by the processing author and root.
+
+`checks/codex-check-106.md` reports five errors. C09 has no confirmed finding. C10 incorrectly groups heat with the catalyst as changing rate only; B13 confuses diseases with their pathogens, mixes point and period prevalence, and misdates the proposed Qdenga efficacy figures; B14 puts the beginning of water treatment after germ theory. The log now includes 49 new rows and extends the existing Yogyakarta finding to L18, with the correct Utarini publication link. B13's rejected item 11 and the already logged litmus item were omitted.
+
+An APY-specific outcome is published in [Nganampa Health Council's 2020-21 annual report, printed p 8](https://www.nganampahealth.com.au/phocadownload/AnnualReports/2021/NHC%20Annual%20Report%202020-2021-web.pdf): no COVID cases across the Lands during that reporting year. That period includes July to December 2020; no separate January to June 2020 outcome was verified. It does not isolate the closure's effect. The requested national figure and legal dates were checked separately. The exact city count behind B13's “dozens of cities” remains unverified: [Fiotec reported more than 20 cities in 2021](https://www.fiotec.fiocruz.br/en/news/wolbachia-method-reaches-new-municipalities-in-brazil); a current exact total was not established.
+
+Local archive: `out/archives/brief106-plates-2026-10-27.zip`. Current checkpoint: `assets/brief106-media-checkpoint.json`, SHA-256 `6a53c2546260b5a97b4cffd067d6ede61e103cb9964626ed64f2a1eea17b953f`, 51 members. Earlier cleanup digests are superseded. CRC and all local/archive member hashes pass. Not uploaded.
+
+### Brief 107: plates, error check and site log (27 October 2026)
+
+Completed 13 cleaned 2000 px RGBA plates. The four tube states share master apparatus pixels; the cup pair preserves its level and meniscus; the 8 by 4 well plate has the exact 15-well pink pattern; UV retains the existing handle's exact alpha. All five aligned pairs have 50% overlays and identical alpha. Colour changes stay within recorded masks. All 39 background views and five overlays were inspected again after restricting alpha cleanup to protect painted interiors. The audit verifies 5,285,153 opaque native interior pixels unchanged. Fish and spinifex retakes and original generations are preserved. Botanical references, teacher-added indicator result and transformation details are in `assets/brief107-provenance.json`; prompts are in `assets/brief107-generation.json`; QA and audit are in `assets/brief107-qa/`.
+
+`checks/codex-check-107.md` reports four errors: B15's completed NCI licence claim, patent chronology and partnership chronology; P01's unqualified finished-mixture hazard codes. C11 and C12 have no confirmed finding. Twenty actual correction rows were added to the site log. B15's correct Nagoya status and extract count remain owner check notes rather than site errors. The withdrawn and already logged items were omitted.
+
+P01 pink plates were commissioned after the safety check. The design already makes the teacher add the indicator. Public NSW CSIS material supports controlled school demonstrations, but its current chemical-specific entry needs staff authentication. Student handling permission and the school's risk assessment remain unverified. Current PL101 section 2 classifications are recorded in the error report, separately from ingredient hazards. John Watson's living status on 27 October 2026 remains unverified. No approved smoke bush or mudjala product was found; this was not an exhaustive worldwide regulatory audit. Cultural decisions remain with the owner's reviewer.
+
+Local archive: `out/archives/brief107-plates-2026-10-27.zip`. Current checkpoint: `assets/brief107-media-checkpoint.json`, SHA-256 `027ac3d49ee6637e9cad24f0c92ca059c6cd90b9fc6629a148354ed4d71a6363`, 93 members. The earlier global-mask archive is preserved separately and is not the current selection. CRC and all local/archive member hashes pass. Not uploaded.
+
+### Brief 108: plates, error check and site log (27 October 2026)
+
+Completed the five matched Chemistry objects and four Biology plates, all 2000 px RGBA. Chemistry objects use 20% minimum clear margins; Biology uses 12.5%. All cream, checker and dark views and G01's actual 220 px dark views were inspected by the processing author and root. Cleanup protects painted interiors, including the sandwich lettuce. Sources, prompts, native originals, hashes and QA are in `assets/brief108-generation.json`, `assets/brief108-provenance.json` and `assets/brief108-qa/`. G02's neutral leaf was not painted and remains held for the cultural reviewer.
+
+`checks/codex-check-108.md` reports one error: G02's “without repeat cost” claim omits monitoring and staff costs. C13, C14 and G01 have no confirmed finding. Eighteen new rows were added to the site log; the additional L21 monomer-recovery occurrences extend its existing row. Sweden is logged once with all three occurrences, and gene-drive resistance is an addition. Target Malaria's March 2026 statement confirms no wild gene-drive release; searches through 27 October found no later release announcement. This date-sensitive statement needs its recording-date check. Cultural review remains pending.
+
+Local archive: `out/archives/brief108-plates-2026-10-27.zip`. Checkpoint: `assets/brief108-media-checkpoint.json`, SHA-256 `2b09b1126274c57f5f50bace31b1dccc094ea8508b72ab54675663ff52d4f7a9`, 65 members. CRC and all local/archive member hashes pass. Not uploaded.
+
+### Briefs 106 to 108: final integration
+
+Root inspected all 90 final background views, six aligned overlays and G01 at 220 px after the cleanup repairs. `checks/brief106-108-final-validation.json` independently verifies all 30 current plates, three archive digests, all 209 archive members, 2000 px RGBA, at least 10% clear margins and pair alpha equality. `checks/brief106-108-site-log-verification.json` and the independent `checks/brief106-108-integration-review.md` verify 87 new rows, two existing-row extensions, 113 original-text quotations and the 15 read-only site-file hashes.
+
+All quoted syllabus points were checked directly against official NESA 2017 DOCX files. The original practice demands and calculations were checked; targeted comparison found no copied question, but this was not an exhaustive comparison with every NESA paper. All twelve lesson designs contain no em dashes. Lesson designs, narration, scene code, audio, site HTML and releases were not edited. No speech, video render, upload, commit or push was performed. Owner artwork/scene acceptance, factual repairs in the lesson designs, cultural review and later production gates remain separate. Question for Claude: resolve the ten reported findings and the documented verification limits before voicing.
+
+### Briefs 28x and 28y: browser timeout on resume (27 October 2026)
+
+Chrome initially connected to the signed-in HSCScience Studio tab. Reverified all four 28x MP4 and caption SHA-256 hashes. Chose the verified P06 MP4 through the upload picker. Studio showed the Details dialog, correct filename and Uploading 1%; no video ID had appeared. Approved title and description fill calls returned, then the audience radio operation timed out waiting for browser input. Saved metadata, completed upload and publication are unverified. No public link is claimed.
+
+Stopped both upload briefs as instructed. No captions were replaced, playlists changed or 28y uploads started. Existing caption approval remains valid. Resume by inspecting the existing P06 draft before uploading the file again, then finish 28x and its caption replacements before 28y. Machine-readable progress: `youtube/brief28x-preflight.json`. The 41 confirmed upload records remain unchanged. Continuing to verify the existing 106 to 108 hand-ins in order.
+
+### Brief 106: resume verification (27 October 2026)
+
+The completed hand-in is present. Rechecked all eight plate files and all 51 archive members against checkpoint hashes, ZIP CRC, RGBA size and clear margins. The three-background contact sheet was inspected again. The existing error report and integrated site-log section are present. No regeneration or design edits were needed. Five reported corrections and the documented source-access/cultural limits remain for Claude before voicing. Continuing to 107.
+
+### Brief 107: resume verification (27 October 2026)
+
+The completed hand-in is present. Rechecked 13 plate files and all 93 archive members against checkpoint hashes and ZIP CRC, plus RGBA size, margins and five aligned alpha pairs. Inspected the three-background contact sheet. The existing four-error report and integrated site-log section are present. The teacher-added indicator, staff-only CSIS verification limit and cultural review holds remain documented. No regeneration or lesson edits were needed. Continuing to 108.
+
+### Brief 108: resume verification and handoff (27 October 2026)
+
+The completed hand-in is present. Rechecked nine plates and all 65 archive members against checkpoint hashes and ZIP CRC, RGBA size and margins. Inspected all three three-background QA pages. The held neutral leaf remains absent. The existing one-error report and integrated site-log section are present. The combined site log and all 15 read-only site-file hashes match the earlier reviewed checkpoint.
+
+Briefs 106, 107 and 108 were verified in that order after the browser timeout. Their 30 plates, 209 archive members, reports, provenance and site-log additions remain intact. This resume check did not repeat the earlier full science/syllabus research. Ten reported corrections remain for Claude, along with artwork acceptance, cultural review and the documented external verification limits. No new images, narration, lesson edits, site edits, renders, commits or pushes were needed. Upload briefs remain paused at the P06 draft; no new public video or caption replacement was confirmed.
+
+### Brief 28x: resumed publication (28 October 2026)
+
+Chemistry P06 is public: https://youtu.be/sFHG5r3csDY. Studio confirmed the saved title and description, Education, AI disclosure Yes, not made for kids, English (Australia) captions published from the hash-verified SRT, and no copyright or Community Guidelines issues. Added it to the Chemistry Module 6 playlist; route positioning and playlist readback remain pending. Continue with G01, G02 and Biology P01, then caption replacements.
+
+### Brief 28x: two public, two drafts, browser timeout (28 October 2026)
+
+P06 https://youtu.be/sFHG5r3csDY and G01 https://youtu.be/mrmgK98F3-U are public. Their verified English (Australia) SRT tracks were published; Studio showed Education, AI disclosure Yes, not made for kids, completed checks without issues. Both are in the Chemistry Module 6 playlist, but route ordering and final readback remain pending. G01 used the visually inspected auto-generated frame 2. P06 has the existing generated frame 2; a separate thumbnail visual review was not performed.
+
+G02 https://youtu.be/Jif3hku49lY and Biology P01 https://youtu.be/0U64-GcUlwM are uploaded saved drafts with approved titles and descriptions, not made for kids, Education, AI disclosure Yes, English (Australia) timed captions published in Studio, and their respective Module 6 playlist assignments. G02 and P01 were still being checked when last observed. Their thumbnail visual selection, checks and publication are pending. The attempt to reopen G02 timed out on browser input; its outcome is unverified. Inspect the existing drafts before uploading anything again.
+
+Stopped upload briefs after the browser timeout as instructed. No existing public caption tracks were replaced; 28y has not started. Resume 28x with G02 and Biology P01, read back both playlist orders, then perform authorised caption replacements before 28y. See `youtube/brief28x-preflight.json` and `youtube/wave5-uploads.json`.

@@ -1,0 +1,958 @@
+{
+  "brief": 107,
+  "date": "2026-10-27",
+  "tool": "OpenAI built-in imagegen",
+  "processingAuthorisation": "User approved deterministic cleanup, 2000px sizing and alignment. Raw outputs preserved.",
+  "records": [
+    {
+      "key": "107-fish",
+      "prompt": "Edit this plate: reduce the fish to exactly TWO THIRDS of the oval serving plate's long dimension, centred on the plate. Leave broad clearly visible clean white ceramic around it, especially at head and tail. Preserve whole ordinary fresh silver-grey fish anatomy and ink-watercolour style, gentle overhead three-quarter angle and plain oval white plate. Fish must fit fully on plate with substantial white ceramic at both ends. No lemon, garnish, blood, text, cutlery, people, hands or background. True transparent PNG, generous clear canvas margin.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-bdfbc793-ce85-4956-bbf2-840d5b28bcd8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-790fac78-d329-497d-be73-918b4f69fe46.png",
+      "previousOutput": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-790fac78-d329-497d-be73-918b4f69fe46.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "previousPrompt": "Scientific educational ink and watercolour plate, fine grey ink with soft realistic muted painted texture. True transparent square PNG 2000 x 2000, entire subject within central 65%, at least 15% clear margin. No text, labels, numbers, people, hands, faces, background, ground or shadows. One whole fresh raw silver-grey sea fish (snapper or bream shape), faint scales, clear eye and forked tail, lying side-on on a plain white oval ceramic serving plate. Gentle three-quarter overhead view. Fish fills two-thirds of plate length. No blood, cut flesh, flies, stink lines, lemon, garnish, ice, cutlery or table. Plate bounds wide and low, roughly x200..1800 y600..1400 on 2000 canvas.",
+      "path": "public/assets/chemistry/m7-fish-plate-v1.png",
+      "sha256": "5c4bdbc695617fb5f9bb1107f8e0d3f7e6c0206f47ac26cfc03ba2d81f04362a",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-bdfbc793-ce85-4956-bbf2-840d5b28bcd8.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-fish-plate-v1-native.png",
+      "rawSha256": "108c31d2788f5a972d1434f3cd22af9344383239083d4682dd93315ca9b97efb",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        585,
+        1750,
+        1415
+      ],
+      "clearMargins": [
+        0.125,
+        0.2925,
+        0.125,
+        0.2925
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 12614,
+        "protectedOpaqueInteriorPixels": 596958,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "canvasTransform": {
+          "crop": [
+            35,
+            329,
+            1217,
+            983
+          ],
+          "size": [
+            1500,
+            830
+          ],
+          "position": [
+            250,
+            585
+          ],
+          "uniformScale": 1.2690355329949239
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending"
+    },
+    {
+      "key": "107-layers",
+      "prompt": "Scientific educational ink and watercolour plate, fine grey ink with soft realistic muted painted texture. True transparent square PNG 2000 x 2000, entire subject within central 65%, at least 15% clear margin. No text, labels, numbers, people, hands, faces, background, ground or shadows. One clear glass test tube upright centred, closed with grey rubber stopper, in a single-hole plain wooden test tube block. Tube about 60% canvas height. Two thirds full, clear colourless water in lower two-thirds of liquid and golden yellow cooking oil floating in upper one-third, sharp flat boundary, gentle meniscus. No bubbles, droplets, cloudiness, froth, marks or labels. This will be master for aligned emulsion and soap states.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-b540a9b7-db00-43dc-8d0e-2f4f39284b99.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/chemistry/m7-oil-water-tube-layers-v1.png",
+      "sha256": "c057317994ea6d417cca01f43c6224eb088eabb39b60de1e4d3693a9d764dfae",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-b540a9b7-db00-43dc-8d0e-2f4f39284b99.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-oil-water-tube-layers-v1-native.png",
+      "rawSha256": "677df350a31e221d68da78e618ec0b998cb3a0b07c8d22b518e18d2b2269337a",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        701,
+        250,
+        1299,
+        1750
+      ],
+      "clearMargins": [
+        0.3505,
+        0.125,
+        0.3505,
+        0.125
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 10226,
+        "protectedOpaqueInteriorPixels": 180840,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "canvasTransform": {
+          "crop": [
+            434,
+            159,
+            820,
+            1128
+          ],
+          "size": [
+            598,
+            1500
+          ],
+          "position": [
+            701,
+            250,
+            1299,
+            1750
+          ],
+          "uniformScale": 1.5479876160990713
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending"
+    },
+    {
+      "key": "107-emulsion",
+      "prompt": "Edit only liquid contents in this exact master apparatus. Keep tube, stopper, wood block, canvas, outlines, lighting and total liquid level unchanged. All liquid now uniform pale milky-yellow emulsion, no layer boundary, no separate oil layer, no froth column. A few very fine bubbles near top allowed. Scientific ink and watercolour. True transparent PNG, square2000 x2000, no text, numbers, labels, people, hands, background or extra objects.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-846b222c-89fd-4130-ade3-d64ace052822.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-b540a9b7-db00-43dc-8d0e-2f4f39284b99.png",
+      "path": "public/assets/chemistry/m7-oil-water-tube-emulsion-v1.png",
+      "sha256": "76975f09a336f4eb5cc4069f35b379669036d58601b6c67858dde2d10509a4a1",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-846b222c-89fd-4130-ade3-d64ace052822.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-oil-water-tube-emulsion-v1-native.png",
+      "rawSha256": "aa7f13fbb3db5554590635211429c90db23be5e8a763cce0dc745cd5b4acd831",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        701,
+        250,
+        1299,
+        1750
+      ],
+      "clearMargins": [
+        0.3505,
+        0.125,
+        0.3505,
+        0.125
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 9731,
+        "protectedOpaqueInteriorPixels": 185354,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "alignment": "Only liquid/froth RGB inside recorded native polygon transferred to layers master; apparatus and alpha exact.",
+        "canvasTransform": {
+          "crop": [
+            434,
+            159,
+            820,
+            1128
+          ],
+          "size": [
+            598,
+            1500
+          ],
+          "position": [
+            701,
+            250,
+            1299,
+            1750
+          ],
+          "uniformScale": 1.5479876160990713
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending",
+      "pixelComparison": {
+        "master": "107-layers",
+        "alphaIdentical": true,
+        "outsideRecordedChangeRegionRgbaIdentical": true,
+        "changeRegionPath": "docs/production/claude-pm/assets/brief107-qa/m7-oil-water-tube-emulsion-v1-final-change-region.png",
+        "changedPixels": 223521
+      }
+    },
+    {
+      "key": "107-soft",
+      "prompt": "Edit only inside glass tube of exact master apparatus. Keep grey stopper, glass outline, block, canvas position and lighting unchanged. Clear colourless liquid reaches halfway up tube. A tall dense column of fine white froth stands above clear liquid, extending about three quarters of way from liquid toward stopper. No yellow, no cloudiness or flecks in liquid. Scientific ink and watercolour. True transparent PNG, square2000 x2000, no text, numbers, labels, people, hands, background or extra objects.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-4800bafc-518d-4ef4-875a-ccf84a25b8dc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-b540a9b7-db00-43dc-8d0e-2f4f39284b99.png",
+      "path": "public/assets/chemistry/m7-soap-tube-soft-v1.png",
+      "sha256": "57c1fd63856b28fb01c020229d49e55a9d8aab54854d806606cd7ed2d184a8f8",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-4800bafc-518d-4ef4-875a-ccf84a25b8dc.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-soap-tube-soft-v1-native.png",
+      "rawSha256": "56cf008cfdf1f6648fc9bf99a059ddb641dfd31a4ec6c1c25e609147d97ed103",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        701,
+        250,
+        1299,
+        1750
+      ],
+      "clearMargins": [
+        0.3505,
+        0.125,
+        0.3505,
+        0.125
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 10238,
+        "protectedOpaqueInteriorPixels": 186227,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "alignment": "Only liquid/froth RGB inside recorded native polygon transferred to layers master; apparatus and alpha exact.",
+        "canvasTransform": {
+          "crop": [
+            434,
+            159,
+            820,
+            1128
+          ],
+          "size": [
+            598,
+            1500
+          ],
+          "position": [
+            701,
+            250,
+            1299,
+            1750
+          ],
+          "uniformScale": 1.5479876160990713
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending",
+      "pixelComparison": {
+        "master": "107-layers",
+        "alphaIdentical": true,
+        "outsideRecordedChangeRegionRgbaIdentical": true,
+        "changeRegionPath": "docs/production/claude-pm/assets/brief107-qa/m7-soap-tube-soft-v1-final-change-region.png",
+        "changedPixels": 223758
+      }
+    },
+    {
+      "key": "107-hard",
+      "prompt": "Edit only inside glass tube of exact master apparatus. Keep grey stopper, tube outline, wood block, canvas position and lighting unchanged. Tube half-full cloudy white-grey liquid, small white curd-like flecks of soap scum suspended in it, thin greyish scum ring at liquid surface. Only a very short uneven layer of froth, one tenth of soft-water froth height. No yellow or other colours. Scientific ink and watercolour. True transparent PNG, square2000 x2000, no text, numbers, labels, people, hands, background or extra objects.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-1c7b91be-be2f-42bd-a79b-5aeb82148544.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-b540a9b7-db00-43dc-8d0e-2f4f39284b99.png",
+      "path": "public/assets/chemistry/m7-soap-tube-hard-v1.png",
+      "sha256": "814ef0c89e367b776cd0923845e0eb9f528ef6e61aa5660937b97d912abdb5b7",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-1c7b91be-be2f-42bd-a79b-5aeb82148544.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-soap-tube-hard-v1-native.png",
+      "rawSha256": "fedd5e097510106e29e0f9f001f7959efd8dafddb340ff469304f1745fcc3b27",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        701,
+        250,
+        1299,
+        1750
+      ],
+      "clearMargins": [
+        0.3505,
+        0.125,
+        0.3505,
+        0.125
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 6798,
+        "protectedOpaqueInteriorPixels": 185084,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "liquidLevelRegistration": {
+          "referenceCanvas": 1254,
+          "sourceMeniscusY": 545,
+          "targetMeniscusY": 600,
+          "fixedEndpointsY": [
+            313,
+            974
+          ],
+          "method": "Piecewise vertical resampling of generated contents only; shared apparatus pixels remain master."
+        },
+        "alignment": "Only liquid/froth RGB inside recorded native polygon transferred to layers master; apparatus and alpha exact.",
+        "canvasTransform": {
+          "crop": [
+            434,
+            159,
+            820,
+            1128
+          ],
+          "size": [
+            598,
+            1500
+          ],
+          "position": [
+            701,
+            250,
+            1299,
+            1750
+          ],
+          "uniformScale": 1.5479876160990713
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending",
+      "pixelComparison": {
+        "master": "107-layers",
+        "alphaIdentical": true,
+        "outsideRecordedChangeRegionRgbaIdentical": true,
+        "changeRegionPath": "docs/production/claude-pm/assets/brief107-qa/m7-soap-tube-hard-v1-final-change-region.png",
+        "changedPixels": 224754
+      }
+    },
+    {
+      "key": "107-smokebush",
+      "prompt": "Botanically accurate natural-history ink and watercolour educational plate, fine grey ink, soft muted paint, true transparent background, square 2000 x 2000. Whole plant within central 65%, at least 15% clear margin. No text, numbers, labels, arrows, people, hands, faces, cultural motifs, dot patterns, tools, vessels, cut marks, preparation, uses, landscape or shadow. A single plume smokebush Conospermum incurvum shrub of Western Australia. Knee to waist high, many slender upright stems ending in branched dense clusters of small woolly grey-white flowers like smoke; narrow linear grey-green leaves crowded near base. Natural whole growing shrub on only a small patch of pale sand at stems. Match WA Herbarium botanical habit, not eucalyptus or cotton.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-469be261-ece3-45f7-9f3d-3e282d2c5eef.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-smokebush-conospermum-v1.png",
+      "sha256": "bb447d73a69acaef5c9dc0be215c1bd54dea2ee4e3d1441029f48226fbf04e77",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-469be261-ece3-45f7-9f3d-3e282d2c5eef.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-smokebush-conospermum-v1-native.png",
+      "rawSha256": "d79d107b0afd809a6df289657d05998530a326bc06831b14a98e9be861101083",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        397,
+        250,
+        1602,
+        1750
+      ],
+      "clearMargins": [
+        0.1985,
+        0.125,
+        0.199,
+        0.125
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 147611,
+        "protectedOpaqueInteriorPixels": 314145,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "canvasTransform": {
+          "crop": [
+            148,
+            26,
+            1105,
+            1217
+          ],
+          "size": [
+            1205,
+            1500
+          ],
+          "position": [
+            397,
+            250
+          ],
+          "uniformScale": 1.2594458438287153
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending"
+    },
+    {
+      "key": "107-mudjala",
+      "prompt": "Botanically accurate natural-history ink and watercolour educational plate, fine grey ink, soft muted paint, true transparent background, square 2000 x 2000. Whole plant within central 65%, at least 15% clear margin. No text, numbers, labels, arrows, people, hands, faces, cultural motifs, dot patterns, tools, vessels, cut marks, preparation, uses, landscape or shadow. One leafy flowering branch as it grows, of Barringtonia acutangula freshwater mangrove. Glossy green obovate leaves clustered at branch tip, finely toothed leaf margins; two long pendulous racemes hanging below branch, each bearing small flowers with dense tufts of red-pink stamens. Botanical habit matching CSIRO Australian tropical rainforest key and WA Herbarium. Branch only, no trunk, bark, stripping, roots, water or containers.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-8f0b491a-c8af-4bd0-861c-0031a78eb399.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-mudjala-barringtonia-v1.png",
+      "sha256": "2c47b6713c2f4329417bad0b6734c139b9cdd58b30b5d1778fbed9a5aef37f75",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-8f0b491a-c8af-4bd0-861c-0031a78eb399.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-mudjala-barringtonia-v1-native.png",
+      "rawSha256": "94eb0fc416758b941016339d965e3a72e0a5915727851603588486df1bcfce36",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        369,
+        250,
+        1631,
+        1750
+      ],
+      "clearMargins": [
+        0.1845,
+        0.125,
+        0.1845,
+        0.125
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 86500,
+        "protectedOpaqueInteriorPixels": 406378,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "canvasTransform": {
+          "crop": [
+            137,
+            29,
+            1149,
+            1232
+          ],
+          "size": [
+            1262,
+            1500
+          ],
+          "position": [
+            369,
+            250
+          ],
+          "uniformScale": 1.2468827930174564
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending"
+    },
+    {
+      "key": "107-spinifex",
+      "prompt": "Edit ONLY the seed-bearing stalks above this inland Triodia spinifex hummock. Replace the seven heavy wheat-like heads with just THREE tall thin slender stems each carrying a very narrow airy OPEN BRANCHED panicle of tiny scattered grass spikelets. No dense wheat ears, foxtails or plume-like heads. Keep the dense rounded needle-leaf hummock, colours, fine ink-watercolour texture, tiny red sand base and all other details unchanged. True transparent background, no text, numbers, people, tools or cultural motifs.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-75a800ad-d323-471b-9eb3-dd62c15b76ed.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-6a1547c4-639c-4493-8c53-8de1d44ea4b5.png",
+      "previousOutput": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-6a1547c4-639c-4493-8c53-8de1d44ea4b5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "previousPrompt": "Botanically accurate natural-history ink and watercolour educational plate, fine grey ink, soft muted paint, true transparent background, square 2000 x 2000. Whole plant within central 65%, at least 15% clear margin. No text, numbers, labels, arrows, people, hands, faces, cultural motifs, dot patterns, tools, vessels, cut marks, preparation, uses, landscape or shadow. One Triodia spinifex hummock of inland Australia: rounded dense dome of tightly packed stiff sharp needle-like grey-green to straw leaves, some slender seed stalks above, small patch of red sand only at base. Natural growing hummock, not coastal Spinifex longifolius. No resin, fire or tools.",
+      "path": "public/assets/biology/m7-spinifex-hummock-v1.png",
+      "sha256": "f299f87cbc20fe436722db79f5b7f887cabfb33ba227f412367556d3fe661d23",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-75a800ad-d323-471b-9eb3-dd62c15b76ed.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-spinifex-hummock-v1-native.png",
+      "rawSha256": "2036accbcfe26bf04a8662a9b53adfe104f049c4dd47ed03a6cea4d11a4ce469",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        257,
+        1750,
+        1743
+      ],
+      "clearMargins": [
+        0.125,
+        0.1285,
+        0.125,
+        0.1285
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 134653,
+        "protectedOpaqueInteriorPixels": 511243,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "canvasTransform": {
+          "crop": [
+            52,
+            30,
+            1226,
+            1193
+          ],
+          "size": [
+            1500,
+            1486
+          ],
+          "position": [
+            250,
+            257
+          ],
+          "uniformScale": 1.2776831345826236
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending"
+    },
+    {
+      "key": "107-cup-clear",
+      "prompt": "Scientific educational ink and watercolour plate, fine grey ink with soft realistic muted painted texture. True transparent square PNG 2000 x 2000, entire subject within central 65%, at least 15% clear margin. No text, labels, numbers, people, hands, faces, background, ground or shadows. One small clear translucent polypropylene laboratory cup, beaker-like 7cm tall in real life, gently tapered straight sides and faint moulded rim, no handle or graduation marks. Three-quarter view from slightly above. One-third full clear colourless water with soft meniscus highlight. No bubbles or extra objects. To become master for exactly aligned pink state.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-3c6b03cc-737c-47dd-b7a2-aa9ebb80a0f2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-sim-cup-clear-v1.png",
+      "sha256": "3173b3b3f99aa27d30b0244a1270a1331c7b43808fa356f3314e4ad38cf4e986",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-3c6b03cc-737c-47dd-b7a2-aa9ebb80a0f2.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-sim-cup-clear-v1-native.png",
+      "rawSha256": "2d7d3cc382590871780d65f1a889e12f1ee057e49ecfeaf179f96d9d4c46e959",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        329,
+        250,
+        1670,
+        1750
+      ],
+      "clearMargins": [
+        0.1645,
+        0.125,
+        0.165,
+        0.125
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 6523,
+        "protectedOpaqueInteriorPixels": 434331,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "canvasTransform": {
+          "crop": [
+            275,
+            233,
+            1001,
+            1045
+          ],
+          "size": [
+            1341,
+            1500
+          ],
+          "position": [
+            329,
+            250,
+            1670,
+            1750
+          ],
+          "uniformScale": 1.8472906403940887
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending"
+    },
+    {
+      "key": "107-cup-pink",
+      "prompt": "Edit only liquid of this exact master cup. Preserve same cup geometry, canvas position, outline, liquid level, meniscus, highlights and translucency. Liquid is now clear medium magenta pink (phenolphthalein in basic solution), not neon, no cloudiness. Everything else pixel-identical if possible. Scientific ink and watercolour. True transparent PNG, square2000 x2000, no text, numbers, labels, people, hands, background or extra objects.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-7851888a-40f4-43eb-b81f-d7530a9210ea.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-3c6b03cc-737c-47dd-b7a2-aa9ebb80a0f2.png",
+      "path": "public/assets/biology/m7-sim-cup-pink-v1.png",
+      "sha256": "982872952158e5ebf153d22ba59b9f9f7b184a273bc08a96258469c7b551880d",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-7851888a-40f4-43eb-b81f-d7530a9210ea.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-sim-cup-pink-v1-native.png",
+      "rawSha256": "5658910319375e3aa6000ea29d7617654b9878088c37ad5502b87374f3256156",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        329,
+        250,
+        1670,
+        1750
+      ],
+      "clearMargins": [
+        0.1645,
+        0.125,
+        0.165,
+        0.125
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 6943,
+        "protectedOpaqueInteriorPixels": 437413,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "alignment": "Colour-only magenta tint within master clear-cup liquid; level, highlights, outline, alpha exact. Generated pink preserved raw.",
+        "canvasTransform": {
+          "crop": [
+            275,
+            233,
+            1001,
+            1045
+          ],
+          "size": [
+            1341,
+            1500
+          ],
+          "position": [
+            329,
+            250,
+            1670,
+            1750
+          ],
+          "uniformScale": 1.8472906403940887
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending",
+      "pixelComparison": {
+        "master": "107-cup-clear",
+        "alphaIdentical": true,
+        "outsideRecordedChangeRegionRgbaIdentical": true,
+        "changeRegionPath": "docs/production/claude-pm/assets/brief107-qa/m7-sim-cup-pink-v1-final-change-region.png",
+        "changedPixels": 636970
+      }
+    },
+    {
+      "key": "107-wells-clear",
+      "prompt": "Botanically accurate natural-history ink and watercolour educational plate, fine grey ink, soft muted paint, true transparent background, square 2000 x 2000. Whole plant within central 65%, at least 15% clear margin. No text, numbers, labels, arrows, people, hands, faces, cultural motifs, dot patterns, tools, vessels, cut marks, preparation, uses, landscape or shadow. One laboratory clear plastic multiwell plate on plain white ceramic tile, seen DIRECTLY TOP DOWN, exactly FOUR rows and EIGHT columns of evenly spaced round wells (32 wells total). Every well equal small amount clear colourless liquid. Plate rectangular, precise regular 8 across by 4 down, no extra wells. Scientific painted watercolour and fine ink apparatus style. No numbers, graduation, row letters, text or labels; no plants. All wells and white tile visible, generous clear margin.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-e94d5397-0ffb-4f93-8fdf-de828c37a887.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-trace-wellplate-clear-v1.png",
+      "sha256": "3f279e74f2905427f1af1cfbbd4e38a3cbca561dbd8710c10d80d40798eed633",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-e94d5397-0ffb-4f93-8fdf-de828c37a887.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-trace-wellplate-clear-v1-native.png",
+      "rawSha256": "018c08dec0eb2334920d034f0bd832f105b75d8078d389935920ec4ddec7dceb",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        560,
+        1750,
+        1440
+      ],
+      "clearMargins": [
+        0.125,
+        0.28,
+        0.125,
+        0.28
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 6757,
+        "protectedOpaqueInteriorPixels": 731972,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "canvasTransform": {
+          "crop": [
+            63,
+            305,
+            1191,
+            967
+          ],
+          "size": [
+            1500,
+            880
+          ],
+          "position": [
+            250,
+            560,
+            1750,
+            1440
+          ],
+          "uniformScale": 1.3297872340425532
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending"
+    },
+    {
+      "key": "107-wells-pink",
+      "prompt": "Edit only liquid colours in exact same8-column4-row master wellplate. Columns left to right1..8, rows top to bottom1..4. Pink wells EXACTLY: row1 column4 only. Row2 columns3 and4 only. Row3 columns1,3,4,7 only. Row4 ALL8 columns. All other wells clear colourless. Liquid pink is transparent medium phenolphthalein magenta, not neon. Preserve all plate, tile, well rims, positions, highlights, canvas and geometry unchanged. No text or row/column marks. Ink and watercolour, transparent square PNG2000x2000, generous clear margins.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-7862320c-27cf-4709-91a6-5363d571147a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-e94d5397-0ffb-4f93-8fdf-de828c37a887.png",
+      "path": "public/assets/biology/m7-trace-wellplate-pink-v1.png",
+      "sha256": "d917b695e1671f97d637e225fc97689c8272c184c3bdf0c81688416510bc6e8d",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-7862320c-27cf-4709-91a6-5363d571147a.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-trace-wellplate-pink-v1-native.png",
+      "rawSha256": "edf041bda1c3dcf746871e634bda0737a580468530ba7bcd877657568d026cc5",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        560,
+        1750,
+        1440
+      ],
+      "clearMargins": [
+        0.125,
+        0.28,
+        0.125,
+        0.28
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 12641,
+        "protectedOpaqueInteriorPixels": 737440,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "alignment": "Only 15 well-liquid interiors tinted on clear master. All other native pixels exact; same 32 wells and geometry.",
+        "pinkColumnsByRow": [
+          [
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            3,
+            4,
+            7
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "canvasTransform": {
+          "crop": [
+            63,
+            305,
+            1191,
+            967
+          ],
+          "size": [
+            1500,
+            880
+          ],
+          "position": [
+            250,
+            560,
+            1750,
+            1440
+          ],
+          "uniformScale": 1.3297872340425532
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending",
+      "pixelComparison": {
+        "master": "107-wells-clear",
+        "alphaIdentical": true,
+        "outsideRecordedChangeRegionRgbaIdentical": true,
+        "changeRegionPath": "docs/production/claude-pm/assets/brief107-qa/m7-trace-wellplate-pink-v1-final-change-region.png",
+        "changedPixels": 162526
+      }
+    },
+    {
+      "key": "107-handle",
+      "prompt": "Edit this exact door handle plate to view under dim violet-blue UV lighting. Preserve exact handle, door-slice, backplate, screws, canvas and geometry/alpha. Metal and door slice darkened and tinted violet; scatter tiny bright blue-white fluorescent specks concentrated on lever grip and a few on metal backplate. Glow only local specks. No torch, beam, hand, text, numbers, new objects or background. Ink and watercolour, transparent square PNG2000x2000, generous clear margins.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-87356f9f-5c91-4149-a464-eb67ae7d2087.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "reference": "C:/lesson-video-generator/public/assets/biology/m7-door-handle-v1.png",
+      "path": "public/assets/biology/m7-door-handle-uv-v1.png",
+      "sha256": "491c554bfd26a995fbf06f0bcba663c72f13f299479c7944971d287863503342",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-87356f9f-5c91-4149-a464-eb67ae7d2087.png",
+      "rawPath": "docs/production/claude-pm/assets/brief107-qa/raw/m7-door-handle-uv-v1-native.png",
+      "rawSha256": "680eb259f173522cd89b7fdd2bacad31c6b0c31bc3d32560263e00a65ecf5d4f",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        252,
+        299,
+        1762,
+        1770
+      ],
+      "clearMargins": [
+        0.126,
+        0.1495,
+        0.119,
+        0.115
+      ],
+      "processing": {
+        "removedNativeAlphaPixels": 13723,
+        "protectedOpaqueInteriorPixels": 377768,
+        "protectedOpaqueInteriorRgbaUnchanged": true,
+        "opaqueInteriorChangedPixels": 0,
+        "cleanup": "Only bright near-exact RGB-primary artifacts or low-alpha saturated fringe within4 native pixels of transparency are removed. Alpha below8 cleared. Opaque interiors at distance>=4 retain exact native RGBA before sizing. No dark-shadow hue deletion.",
+        "alignment": "Original handle RGB darkened/tinted violet, deterministic seed107 fluorescent specks on grip and plate; original canvas and alpha exact. Original reference unchanged.",
+        "speckCount": 96,
+        "referencePath": "public/assets/biology/m7-door-handle-v1.png",
+        "referenceSha256": "2dd257b701455fdbabf1b37a5c5f7a2d00ab64461c34b1c25308c34279f1a8c0",
+        "canvasTransform": {
+          "method": "Original reference native2000 canvas retained"
+        }
+      },
+      "status": "Processed candidate; root visual acceptance pending"
+    }
+  ],
+  "pairChecks": [
+    {
+      "pair": "oil-water",
+      "alphaIdentical": true,
+      "alphaIoU": 1.0,
+      "changedPixels": 223521,
+      "overlay": "docs/production/claude-pm/assets/brief107-qa/oil-water-overlay-50.jpg"
+    },
+    {
+      "pair": "soap",
+      "alphaIdentical": true,
+      "alphaIoU": 1.0,
+      "changedPixels": 222898,
+      "overlay": "docs/production/claude-pm/assets/brief107-qa/soap-overlay-50.jpg"
+    },
+    {
+      "pair": "cups",
+      "alphaIdentical": true,
+      "alphaIoU": 1.0,
+      "changedPixels": 636970,
+      "overlay": "docs/production/claude-pm/assets/brief107-qa/cups-overlay-50.jpg"
+    },
+    {
+      "pair": "wells",
+      "alphaIdentical": true,
+      "alphaIoU": 1.0,
+      "changedPixels": 162526,
+      "overlay": "docs/production/claude-pm/assets/brief107-qa/wells-overlay-50.jpg"
+    },
+    {
+      "pair": "handle",
+      "alphaIdentical": true,
+      "alphaIoU": 1.0,
+      "overlay": "docs/production/claude-pm/assets/brief107-qa/handle-overlay-50.jpg",
+      "referenceUnchanged": true
+    }
+  ],
+  "complete": true,
+  "botanicalReferences": {
+    "smokebush": [
+      "https://florabase.dbca.wa.gov.au/browse/profile/1876",
+      "https://library.dbca.wa.gov.au/FullTextFiles/630649.pdf",
+      "https://pubmed.ncbi.nlm.nih.gov/7853001/"
+    ],
+    "mudjala": [
+      "https://florabase.dbca.wa.gov.au/browse/profile/5289",
+      "https://www.nparks.gov.sg/florafaunaweb/flora/2/7/2743",
+      "https://apps.lucidcentral.org/rainforest/text/entities/barringtonia_acutangula_subsp._acutangula.htm"
+    ],
+    "spinifex": [
+      "https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?lvl=gn&name=Triodia&page=nswfl",
+      "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A424888-1/general-information"
+    ]
+  },
+  "safetyCheck": {
+    "teacherAddsIndicator": true,
+    "currentSds": "https://shop.chemsupply.com.au/documents/WFC0JFEX.pdf",
+    "finding": "PL101 mixture section2 lists H225,H319,H350; H341/H361f are ingredient entries.",
+    "accessLimit": "Current NSW CSIS chemical entry needs staff login; local school risk assessment remains pending."
+  },
+  "generationManifestSha256": "5bc82a0532a93e64e08ea33ccafce25ff620538a64dad8f1a411752e9254325a",
+  "alphaCleanupAudit": "docs/production/claude-pm/assets/brief107-qa/alpha-cleanup-audit.json",
+  "authorVisualReview": {
+    "date": "2026-10-27",
+    "scope": "All 13 plates inspected on cream, checker and dark; all 5 aligned 50% overlays inspected. Asset-only inspection, not lesson or cultural approval.",
+    "result": "No remaining alpha or apparatus-registration blocker found.",
+    "observations": [
+      "Fish retake gives broad white ceramic at head and tail; fish is roughly 70-74% of plate length.",
+      "All 4 tubes retain master apparatus/alpha; emulsion is uniform pale yellow, soft liquid is clear with tall froth, hard liquid is cloudy with scum and little froth at registered equal liquid height.",
+      "Cup liquid tint preserves level, highlights, outline and alpha.",
+      "Well plate is 8 columns by 4 rows; 15 pink wells match D, C/D, A/C/D/G, all 8.",
+      "UV handle preserves original 2000 px canvas and alpha with 96 fluorescent specks concentrated on grip.",
+      "Botanicals show plants only. Spinifex has 3 terminal panicles and is a generic Triodia depiction, not an exact T. pungens identification."
+    ],
+    "remaining": "Root independent asset review and owner/cultural acceptance.",
+    "afterRestrictedCleanupReinspection": true
+  }
+}

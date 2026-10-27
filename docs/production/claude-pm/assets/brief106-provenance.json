@@ -1,0 +1,517 @@
+{
+  "brief": 106,
+  "date": "2026-10-27",
+  "generationTool": "OpenAI built-in imagegen",
+  "processingAuthorisation": "User explicitly approved deterministic alpha cleanup, resizing and pair alignment in this conversation on 27 October 2026.",
+  "records": [
+    {
+      "key": "106-litmus",
+      "prompt": "Edit m6-litmus-red-v1.png: only entire red strip to uniform blue, preserve tile and alpha.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-5047ee6d-bf0c-49db-a1e9-b8a03b1581de.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/chemistry/m7-litmus-blue-strip-v1.png",
+      "sha256": "31ece99f348e2ef9c2ba75a951bbcd9f9a8d6c34e0d4ae075dd31dd350f57c75",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-5047ee6d-bf0c-49db-a1e9-b8a03b1581de.png",
+      "sourceSha256": "cae2c2fe2dca5513a1e5997e6316b6bb39f858e5e6b3fc789847379f7cf857cb",
+      "rawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-litmus-blue-strip-v1-native.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        200,
+        403,
+        1800,
+        1597
+      ],
+      "alphaBbox32": [
+        200,
+        404,
+        1800,
+        1597
+      ],
+      "clearMargins": [
+        0.1,
+        0.2015,
+        0.1,
+        0.2015
+      ],
+      "processing": {
+        "method": "Existing red plate, exact canvas and alpha. Polygon-limited red-strip HSV hue replaced by 151/255; saturation/value and all pixels outside mask unchanged.",
+        "changedPixels": 178663,
+        "alphaIdenticalToReference": true,
+        "outsideMaskRgbaIdentical": true,
+        "maskPolygon": [
+          [
+            470,
+            1060
+          ],
+          [
+            1397,
+            580
+          ],
+          [
+            1525,
+            745
+          ],
+          [
+            575,
+            1220
+          ]
+        ]
+      },
+      "status": "Processed candidate; asset QA only, owner design acceptance pending"
+    },
+    {
+      "key": "106-dengue",
+      "prompt": "Scientific educational ink and watercolour natural history plate, square 2000 by 2000 pixels, true transparent background. One mature dengue virus particle, near spherical with SMOOTH surface, no projecting spikes, shell tiled by flat envelope protein pairs in herringbone raft pattern, muted blue grey and sand colours. Front quarter cut away showing thin lipid membrane, capsid material and coiled single RNA strand. Not a spiky coronavirus. Isolated centred object occupies 60% of canvas, at least 15% perfectly clear margin all sides. Fine dark grey ink, delicate painted texture, soft neutral lighting. No text, numbers, arrows, labels, people, hands, glow or shadow.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-516a584b-2266-4ec4-8efd-6ab4d9c745f9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-dengue-virus-v1.png",
+      "sha256": "ffa303879b24e5580809fc1826333f98ac1aa9da206c06b7365df4dbcd930b99",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-516a584b-2266-4ec4-8efd-6ab4d9c745f9.png",
+      "sourceSha256": "8ad69ae30020f745839ae03d70d1f4d95d16a5147955cfdb1847dd48ab4cffcd",
+      "rawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-dengue-virus-v1-native.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        255,
+        1750,
+        1745
+      ],
+      "alphaBbox32": [
+        254,
+        261,
+        1747,
+        1740
+      ],
+      "clearMargins": [
+        0.125,
+        0.1275,
+        0.125,
+        0.1275
+      ],
+      "processing": {
+        "removedNativePixels": 5649,
+        "nativeAlphaCrop": [
+          114,
+          115,
+          1144,
+          1138
+        ],
+        "protectedOpaqueInteriorPixels": 788024,
+        "protectedOpaqueInteriorUnchanged": true,
+        "uniformScale": 1.4563106796116505,
+        "placedSize": [
+          1500,
+          1490
+        ],
+        "method": "Protect opaque paint interiors using a 9px neighbourhood after excluding exact synthetic RGB swatches. Restrict hue cleanup to remaining edge/low-alpha pixels. Remove alpha=1 specks, then uniform Lanczos fit to central 1500px. All protected native RGBA pixels remain unchanged before resampling."
+      },
+      "status": "Processed candidate; asset QA only, owner design acceptance pending"
+    },
+    {
+      "key": "106-jar",
+      "prompt": "Ink and watercolour natural history educational plate. Large dark-brown glazed earthenware Southeast Asian water storage jar, rounded body, wide open mouth, slightly above front view showing water surface. Five slender mosquito larvae hang head down with breathing siphons at water surface, two comma-shaped pupae just below it, enlarged for visibility. A faint band of tiny eggs on inner rim just above water. No lid or ladle. Square 2000 x 2000 transparent PNG, object entirely within middle 65% of canvas with at least 15% clear margin. No text, numbers, labels, arrows, logos, people, hands, faces, ground, glow, shadows or backdrop. Fine grey ink and muted watercolour, accurate rather than cartoon.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-b88a55f2-9770-4458-bec2-1a09247c65de.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-water-storage-jar-v1.png",
+      "sha256": "62b3039481b9593a7bce8d7d3290ca5b04c1f2f027e95f69f5952a7ec35162d4",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-b88a55f2-9770-4458-bec2-1a09247c65de.png",
+      "sourceSha256": "abdd9ae43305a674bfc2865cd4398336f8b9106409aec8fba61363bbb25749f8",
+      "rawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-water-storage-jar-v1-native.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        262,
+        250,
+        1737,
+        1750
+      ],
+      "alphaBbox32": [
+        266,
+        257,
+        1734,
+        1747
+      ],
+      "clearMargins": [
+        0.131,
+        0.125,
+        0.1315,
+        0.125
+      ],
+      "processing": {
+        "removedNativePixels": 10320,
+        "nativeAlphaCrop": [
+          75,
+          70,
+          1179,
+          1193
+        ],
+        "protectedOpaqueInteriorPixels": 932685,
+        "protectedOpaqueInteriorUnchanged": true,
+        "uniformScale": 1.335707925200356,
+        "placedSize": [
+          1475,
+          1500
+        ],
+        "method": "Protect opaque paint interiors using a 9px neighbourhood after excluding exact synthetic RGB swatches. Restrict hue cleanup to remaining edge/low-alpha pixels. Remove alpha=1 specks, then uniform Lanczos fit to central 1500px. All protected native RGBA pixels remain unchanged before resampling."
+      },
+      "status": "Processed candidate; asset QA only, owner design acceptance pending"
+    },
+    {
+      "key": "106-ship",
+      "prompt": "Historical ink and watercolour educational plate, finely drawn accurate museum illustration. A late 14th or 15th century Adriatic Mediterranean merchant carrack: high rounded dark wooden hull, stern castle, two masts, furled square sails tied to yards and fine rigging. Anchored with anchor cable from bow into a short band of calm water ONLY directly along hull. Three-quarter side view. Empty deck, no figures or flags. Muted palette, soft lighting. Transparent PNG 2000 x 2000; entire ship within middle 65% of canvas leaving at least 15% clear on all sides. No text, numbers, symbols, people, hands, faces, full sea, sky, background or shadow.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-8db4b999-13b8-4a2d-91b2-630061c06746.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-sailing-ship-anchored-v1.png",
+      "sha256": "557c9e84235c92e616849a898f051f9b657e0d3be1c28657778b4f7ec14cd74c",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-8db4b999-13b8-4a2d-91b2-630061c06746.png",
+      "sourceSha256": "534d1aed6d0ffe65678aca6fdf4de77018365a1a05ad8707b58a52c003262560",
+      "rawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-sailing-ship-anchored-v1-native.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        302,
+        1750,
+        1697
+      ],
+      "alphaBbox32": [
+        253,
+        306,
+        1747,
+        1693
+      ],
+      "clearMargins": [
+        0.125,
+        0.151,
+        0.125,
+        0.1515
+      ],
+      "processing": {
+        "removedNativePixels": 97119,
+        "nativeAlphaCrop": [
+          134,
+          115,
+          1188,
+          1095
+        ],
+        "protectedOpaqueInteriorPixels": 277033,
+        "protectedOpaqueInteriorUnchanged": true,
+        "uniformScale": 1.4231499051233396,
+        "placedSize": [
+          1500,
+          1395
+        ],
+        "method": "Protect opaque paint interiors using a 9px neighbourhood after excluding exact synthetic RGB swatches. Restrict hue cleanup to remaining edge/low-alpha pixels. Remove alpha=1 specks, then uniform Lanczos fit to central 1500px. All protected native RGBA pixels remain unchanged before resampling."
+      },
+      "status": "Processed candidate; asset QA only, owner design acceptance pending"
+    },
+    {
+      "key": "106-station",
+      "prompt": "Fine ink and watercolour historical educational plate of North Head Quarantine Station Sydney in late nineteenth century. Four single-storey cream weatherboard buildings with dark trim, corrugated iron roofs and verandas on honey-coloured sandstone rise with low coastal scrub; seen from the water at a three-quarter angle. Short timber wharf at foot of rock. Local rock and scrub base only. No sky or sea backdrop, modern vehicles, hotel additions, signs, flags, text, numbers, people, hands or faces. True transparent background, 2000 x 2000 square PNG. Composition occupies middle 65% of canvas with generous 15% clear margin on every edge. Naturalistic muted watercolour with fine grey ink, same scientific plate aesthetic as a painted Victorian Broad Street pump.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-1ee7688b-7406-449c-98e3-5f9539a209d0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-quarantine-station-v1.png",
+      "sha256": "9cd76129c681bb44c4ba72ec8849d36dedf2493d859d4690d6293e0e4484e19e",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-1ee7688b-7406-449c-98e3-5f9539a209d0.png",
+      "sourceSha256": "4d9a124d21ba49fb7cdd6784c1767244b8b349394d7c8ab714b6c8a089873856",
+      "rawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-quarantine-station-v1-native.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        614,
+        1750,
+        1385
+      ],
+      "alphaBbox32": [
+        252,
+        617,
+        1747,
+        1382
+      ],
+      "clearMargins": [
+        0.125,
+        0.307,
+        0.125,
+        0.3075
+      ],
+      "processing": {
+        "removedNativePixels": 14902,
+        "nativeAlphaCrop": [
+          25,
+          341,
+          1245,
+          968
+        ],
+        "protectedOpaqueInteriorPixels": 507843,
+        "protectedOpaqueInteriorUnchanged": true,
+        "uniformScale": 1.2295081967213115,
+        "placedSize": [
+          1500,
+          771
+        ],
+        "method": "Protect opaque paint interiors using a 9px neighbourhood after excluding exact synthetic RGB swatches. Restrict hue cleanup to remaining edge/low-alpha pixels. Remove alpha=1 specks, then uniform Lanczos fit to central 1500px. All protected native RGBA pixels remain unchanged before resampling."
+      },
+      "status": "Processed candidate; asset QA only, owner design acceptance pending"
+    },
+    {
+      "key": "106-tools",
+      "prompt": "Historical museum educational ink and watercolour illustration of variolation tools, NOT their use. Two distinct groups separated by clear space. Left: slim slightly curved silver tube about finger length lying beside small shallow porcelain dish with pinch of pale brown dried powder. Right: eighteenth century folding lancet, short steel blade partly open between two tortoiseshell guards pinned at one end, lying on its side. Naturalistic antique materials, fine grey ink, muted paint, softly lit. Square 2000 x 2000 transparent PNG, all objects within central 65%, minimum 15% fully transparent margin. No text, numbers, labels, instructions, people, hands, faces, skin, background, table, shadow or gore.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-0debec3c-425d-4f16-a70d-91b8cdb04a42.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-variolation-tools-v1.png",
+      "sha256": "fec8e10c5412eb48042dfb38a097360dbd5ef8bec5f96582205c9b21311acf81",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-0debec3c-425d-4f16-a70d-91b8cdb04a42.png",
+      "sourceSha256": "585872beb01843938a0dcff5876d9deffdb6a9e5e691e3f3eee17733bd1d4bf7",
+      "rawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-variolation-tools-v1-native.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        712,
+        1750,
+        1288
+      ],
+      "alphaBbox32": [
+        254,
+        713,
+        1747,
+        1287
+      ],
+      "clearMargins": [
+        0.125,
+        0.356,
+        0.125,
+        0.356
+      ],
+      "processing": {
+        "removedNativePixels": 9715,
+        "nativeAlphaCrop": [
+          71,
+          421,
+          1209,
+          858
+        ],
+        "protectedOpaqueInteriorPixels": 190616,
+        "protectedOpaqueInteriorUnchanged": true,
+        "uniformScale": 1.3181019332161688,
+        "placedSize": [
+          1500,
+          576
+        ],
+        "method": "Protect opaque paint interiors using a 9px neighbourhood after excluding exact synthetic RGB swatches. Restrict hue cleanup to remaining edge/low-alpha pixels. Remove alpha=1 specks, then uniform Lanczos fit to central 1500px. All protected native RGBA pixels remain unchanged before resampling."
+      },
+      "status": "Processed candidate; asset QA only, owner design acceptance pending"
+    },
+    {
+      "key": "106-needle",
+      "prompt": "Historical public health museum ink and watercolour plate, one stainless steel bifurcated vaccination needle used in smallpox eradication. Thin straight solid metal rod, flattened at far end into a small TWO PRONG fork, clear separation between two short parallel tines holding a tiny clear droplet. Drawn large diagonally so fork reads clearly. Not a syringe, no eye or loop, no vial, no skin or use. Delicate silver grey with fine ink texture and soft lighting. Transparent PNG square 2000 x 2000, entirety within central 65% and at least 15% clear margin. No text, numbers, labels, hands, people, faces, background or ground shadow.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-4c08dfc0-274b-4f90-98b7-f8a1a04890e7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "path": "public/assets/biology/m7-bifurcated-needle-v1.png",
+      "sha256": "88bcb2852585ce1aaa6beb70fdddf0acf866a9871f1822352628ba0a7d6caa1f",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-4c08dfc0-274b-4f90-98b7-f8a1a04890e7.png",
+      "sourceSha256": "010190c9ef69c69c6fa305b1ede71ba5e7fb3165b167933161e2a4bf103691a1",
+      "rawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-bifurcated-needle-v1-native.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        280,
+        1750,
+        1720
+      ],
+      "alphaBbox32": [
+        253,
+        284,
+        1746,
+        1717
+      ],
+      "clearMargins": [
+        0.125,
+        0.14,
+        0.125,
+        0.14
+      ],
+      "processing": {
+        "removedNativePixels": 2889,
+        "nativeAlphaCrop": [
+          153,
+          155,
+          1171,
+          1132
+        ],
+        "protectedOpaqueInteriorPixels": 48887,
+        "protectedOpaqueInteriorUnchanged": true,
+        "uniformScale": 1.4734774066797642,
+        "placedSize": [
+          1500,
+          1440
+        ],
+        "method": "Protect opaque paint interiors using a 9px neighbourhood after excluding exact synthetic RGB swatches. Restrict hue cleanup to remaining edge/low-alpha pixels. Remove alpha=1 specks, then uniform Lanczos fit to central 1500px. All protected native RGBA pixels remain unchanged before resampling."
+      },
+      "status": "Processed candidate; asset QA only, owner design acceptance pending"
+    },
+    {
+      "key": "106-rat",
+      "prompt": "Edit only the rat's tail in this scientific ink and watercolour plate. This is Rattus rattus, its tail MUST be visibly longer than head and body combined. Extend the tail from the same base, curving in a long graceful S below and left of the rat, with its full length clearly visible, natural tapered thin rat tail. Keep rat body, ears, face, feet, fur, and separated magnified flea unchanged. Keep transparent background and ample clear margins. No ground, text, blood, labels, people or hands. The tail must be at least 1.2 times the nose-to-rump body length. Square transparent PNG.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-641af5d2-549d-465d-9319-78e461704937.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "previousOutput": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2 as C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-7d699e22-aafe-4981-ac31-706ac57b78c3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "previousPrompt": "Ink and watercolour natural history plate, two separated specimens. Left a realistic ship rat (Rattus rattus) in side view walking: slender dark grey brown furred body, pointed muzzle, large thin ears and long tail longer than its head and body. Right with clear gap one greatly enlarged rat flea Xenopsylla cheopis side view: wingless amber brown, laterally flattened oval segmented body, small head, six legs including strong long hind jumping legs. Accurate anatomy, not cartoon or threatening. All specimens floating isolated without ground. True transparent PNG 2000 x 2000 square, all objects inside central 65% of canvas with 15% clear margin. No text, numbers, labels, arrows, blood, rope, ship, people, hands, faces, background, glow or cast shadow. Fine ink, soft muted watercolour.",
+      "path": "public/assets/biology/m7-rat-flea-v1.png",
+      "sha256": "5953514eb918d2d613a6b3efe56bb75f3433a51bfb063b3baadc08d45954aba5",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a17c80-5b53-7641-9962-d57d17e359a2\\exec-641af5d2-549d-465d-9319-78e461704937.png",
+      "sourceSha256": "27f4d18ea4333b25c63002be3ae5d12094cc98ed99aa0c4537ead386380060cc",
+      "rawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-rat-flea-v1-native.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        250,
+        580,
+        1750,
+        1420
+      ],
+      "alphaBbox32": [
+        257,
+        583,
+        1746,
+        1415
+      ],
+      "clearMargins": [
+        0.125,
+        0.29,
+        0.125,
+        0.29
+      ],
+      "processing": {
+        "removedNativePixels": 31670,
+        "nativeAlphaCrop": [
+          24,
+          440,
+          1204,
+          1101
+        ],
+        "protectedOpaqueInteriorPixels": 146235,
+        "protectedOpaqueInteriorUnchanged": true,
+        "uniformScale": 1.271186440677966,
+        "placedSize": [
+          1500,
+          840
+        ],
+        "method": "Protect opaque paint interiors using a 9px neighbourhood after excluding exact synthetic RGB swatches. Restrict hue cleanup to remaining edge/low-alpha pixels. Remove alpha=1 specks, then uniform Lanczos fit to central 1500px. All protected native RGBA pixels remain unchanged before resampling."
+      },
+      "status": "Processed candidate; asset QA only, owner design acceptance pending",
+      "previousRawPath": "docs/production/claude-pm/assets/brief106-qa/raw/m7-rat-flea-v1-rejected-short-tail-native.png",
+      "previousRawSha256": "d53ba49b6c58a516c83dd4c3cb5a8c8d3a30ded075a589b5fdef0645a12e62cd"
+    }
+  ],
+  "pairChecks": [
+    {
+      "pair": "existing red reference and final blue strip",
+      "overlay": "docs/production/claude-pm/assets/brief106-qa/litmus-overlay-50.jpg",
+      "referencePath": "public/assets/chemistry/m6-litmus-red-v1.png",
+      "referenceSha256": "9cb03db9c5c3a845a6973307f98578e36f4558d51edd217d863289bb6875dc13",
+      "alphaIdentical": true,
+      "bboxIdentical": true,
+      "alphaIoU32": 1.0,
+      "canvasIdentical": true
+    }
+  ],
+  "qa": {
+    "views": "Cream, checker and dark composites plus 50% litmus overlay. Raw generations and rejected rat retained.",
+    "visualObservations": {
+      "litmus": "Full strip blue including its bevel. Red reference tile and all alpha pixels retained; no replacement tile used.",
+      "dengue": "Smooth tiled exterior without projecting spikes; cutaway membrane and RNA remain visible.",
+      "jar": "Open earthenware jar, enlarged hanging larvae and comma-shaped pupae visible; interior eggs retained.",
+      "ship": "Two masts, bundled sails, empty deck and anchor cable remain; water confined to hull band. Fine rigging retained after fringe cleanup.",
+      "station": "Weatherboard buildings, verandas, corrugated roofs, sandstone, scrub and small wharf; no people or modern signage.",
+      "tools": "Separate dish and silver tube at left, partly open folding lancet at right; no use shown.",
+      "needle": "Two separated prongs and clear droplet visible; solid rod, no syringe or vial.",
+      "rat": "Retake has a long curved tail exceeding nose-to-rump length; enlarged separate wingless flea and long hind legs visible. Short-tail original rejected and retained."
+    },
+    "limits": "Asset inspection does not approve lesson teaching, scene placement, motion, listening, cultural content or publication. Native 1254px painting is upscaled, not new 2000px detail. Final litmus does not use the generated replacement tile."
+  }
+}

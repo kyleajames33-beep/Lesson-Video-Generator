@@ -2,7 +2,7 @@
   "brief": "28x",
   "date": "2026-10-27",
   "timezone": "Australia/Sydney",
-  "status": "local-preflight-passed-live-actions-blocked",
+  "status": "paused-after-browser-input-timeout",
   "videos": [
     {
       "lessonId": "chem-m6-p06",
@@ -34,9 +34,9 @@
         ],
         "positionStatus": "Root to read current playlist and place by route. Existing unavailable entries can offset absolute position."
       },
-      "status": "pending-browser-connection",
-      "videoId": null,
-      "url": null
+      "status": "published-playlist-position-pending",
+      "videoId": "sFHG5r3csDY",
+      "url": "https://youtu.be/sFHG5r3csDY"
     },
     {
       "lessonId": "chem-m6-g01",
@@ -68,9 +68,10 @@
         ],
         "positionStatus": "Root to read current playlist and place by route. Existing unavailable entries can offset absolute position."
       },
-      "status": "pending-browser-connection",
-      "videoId": null,
-      "url": null
+      "status": "published-playlist-position-pending",
+      "videoId": "mrmgK98F3-U",
+      "url": "https://youtu.be/mrmgK98F3-U",
+      "captionStatus": "English Australia published in Studio"
     },
     {
       "lessonId": "chem-m6-g02",
@@ -103,9 +104,10 @@
         ],
         "positionStatus": "Root to read current playlist and place by route. Existing unavailable entries can offset absolute position."
       },
-      "status": "pending-browser-connection",
-      "videoId": null,
-      "url": null
+      "status": "uploaded-private-processing",
+      "videoId": "Jif3hku49lY",
+      "url": "https://youtu.be/Jif3hku49lY",
+      "captionStatus": "English Australia published in Studio"
     },
     {
       "lessonId": "bio-m6-p01",
@@ -138,12 +140,13 @@
         ],
         "positionStatus": "Root to read current playlist and place by route. Existing unavailable entries can offset absolute position."
       },
-      "status": "pending-browser-connection",
-      "videoId": null,
-      "url": null
+      "status": "uploaded-private-processing",
+      "videoId": "0U64-GcUlwM",
+      "url": "https://youtu.be/0U64-GcUlwM",
+      "captionStatus": "English Australia published in Studio"
     }
   ],
-  "uploadsCompleted": 0,
+  "uploadsCompleted": 2,
   "captionReplacementsCompleted": 0,
   "browserEvidence": [
     "cua.getState returned apps=[] and browsers=[]",
@@ -154,5 +157,30 @@
     "chemistry": "not performed, browser unavailable",
     "biology": "not performed, browser unavailable"
   },
-  "nextStep": "Reconnect the signed-in YouTube Studio browser. Existing upload and caption authorisations remain valid. Capture saved-track identities before replacing captions."
+  "nextStep": "Reconnect the signed-in YouTube Studio browser. Existing upload and caption authorisations remain valid. Capture saved-track identities before replacing captions.",
+  "resumeAttempt": {
+    "date": "2026-10-27",
+    "hashesReverified": true,
+    "browserConnectedInitially": true,
+    "fileChosen": "chem-m6-p06",
+    "lastConfirmedUi": "Upload Details dialog, filename Explainer-chem-m6-p06-v1.mp4, uploading 1%, no video link yet",
+    "titleAndDescriptionFillCallsReturned": true,
+    "failure": "Audience radio operation timed out waiting for CDP Input.dispatchMouseEvent",
+    "publicationConfirmed": false,
+    "nextStep": "Inspect Studio for the existing P06 draft before any fresh upload. Verify saved metadata, audience and upload completion. Finish 28x before 28y."
+  },
+  "resumeAttempt20261028": {
+    "published": [
+      "chem-m6-p06",
+      "chem-m6-g01"
+    ],
+    "savedDrafts": [
+      "chem-m6-g02",
+      "bio-m6-p01"
+    ],
+    "lastAction": "Opening G02 draft timed out during browser input. Outcome unverified; reobserve Studio before taking action.",
+    "captionReplacements": 0,
+    "playlistReadbacks": "pending",
+    "next": "Inspect existing G02 and Biology P01 drafts, finish processing checks and thumbnails, publish once ready; order and read back both playlists; then replace authorised captions."
+  }
 }
