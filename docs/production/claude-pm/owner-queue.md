@@ -352,3 +352,4 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - Brief 28x sent to Codex. Owner to answer yes to Part 2 (public caption track replacement), on Claude's advice.
 - Running: resolver bringing C07, P03, C08a, C08b, S07, chem G02, B08 to B12 and bio G03 to Revision 3; builder on chem M7 P02 and C05.
 - Owner on bio-m7-b15 cultural review (27 Oct): wants one in principle but it isn't practical now; parked, owner will deal with it later. Design B15 normally; do not publish B15 until the owner revisits this.
+- bio-m7-b14 (history of disease control) also carries Aboriginal and Torres Strait Islander content: a sourced, community-led case (APY Lands closure 2020; Crooks, Casey and Ward, MJA 2020). Same hold as B15: design, voice and build normally, but do not publish until the owner arranges the cultural review. Reviewer to check the spoken group wording and APY pronunciation.
