@@ -1555,7 +1555,7 @@
     {
       "id": "question-card",
       "type": "concept",
-      "durationInFrames": 1121,
+      "durationInFrames": 1397,
       "voiceover": {
         "text": "Here's an HSC-style Chemistry question. A student compares ethanol and propan-one-ol in a spirit burner under an uncovered copper can, with no draught shield. Because the propan-one-ol flame was taller, she raised the can for those trials. Her three trials and the means are in the table. There are three parts: reliability, a claim about more trials, and validity. If you take Biology, you don't need the chemistry here: watch how each answer names the word, the feature and the fix. Your question is coming. Pause here to answer.",
         "audioFile": "public/audio/Skills-S07-claude-2026-10-27-take01/question-card.6c673bf97626.mp3",
@@ -2187,7 +2187,16 @@
           "timestampMs": 35140,
           "confidence": null
         }
-      ]
+      ],
+      "responseHold": {
+        "startFrame": 1073,
+        "endFrame": 1373
+      },
+      "revealDelays": {
+        "answerVisibleStart": 1373,
+        "responseHoldStart": 1073,
+        "pausePrompt": 1073
+      }
     },
     {
       "id": "part-a",
