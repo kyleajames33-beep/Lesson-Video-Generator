@@ -1,0 +1,302 @@
+# M7 P06: Comparing soap and detergent action: which one keeps working in hard water, and how do you show it fairly? (design)
+
+Status: Revision 1 (28 Oct): needs learning review and science check (Codex).
+
+Narration 5,824 characters, 18 scenes, about 9.45 minutes (567 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Scope: follows the Module 7 practical format and voice of `chem-m7-p03.md` (Revision 3) and `chem-m7-p04.md` (Revision 1): painted apparatus plates with code motion, the variables card, validity, reliability and accuracy cards, the risk table with real GHS classifications, brief feedback with one crossed mistake. Its answer language is `skills-s07.md`'s (validity, reliability, accuracy; word, feature, fix). It recalls, and does not re-teach, chem-m7-c12 (the two-ended soap particle; tails into oil by dispersion forces, ionic heads into water; micelles and emulsification; negative droplet surfaces repel; hard water's Ca²⁺ and Mg²⁺ make insoluble calcium and magnesium carboxylates, the scum; detergent heads whose calcium salts are much more soluble, so far less scum; "Soap makes scum in hard water; detergents mostly don't."). As c12 decided, P06 reuses c12's two aligned tube pairs (`m7-soap-tube-soft-v1.png` and `-hard-v1.png`; `m7-oil-water-tube-layers-v1.png` and `-emulsion-v1.png`), so the lab results look exactly like the observations c12 explained. The new teaching here is the investigation: making hard water so the cause is known, a matched set of tubes with controls, a froth test and an oil emulsion test as two measures of the same action, a drop count to lasting froth (attempt 1), reading results for reliability, the validity traps of hand shaking, unequal amounts and commercial products, accurate froth readings, and the risk table. Pre-design pack: `../pre-design/chem-m7-soaps-detergents.md` (route preDesignPack). Site extract: `../site-extracts/chem-m7-l17.md`; site lesson 17 (`C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson17.sa.html`) read 28 Oct for card 4 (hard water, scum, detergent types, the comparison table, the Must Do and Common Error), card 3 (emulsification and the Common Error "Soap dissolves the grease"), Worked Examples 06 and 07 and Short Answer Q8. Route entry: **chem-m7-p06** ("Compare soap and detergent action", playlist order 20, practical support, prerequisite chem-m7-c12, next chem-m7-c13), from `../../module7-video-route-draft.json`, as reviewed in `../../module7-route-review-claude.md` (change 9: P06 supports the "investigate" dotpoint C7-IQ5-05; change 5: every Chemistry P risk table carries C7-IQ2-05). Route start: "Prepare matched water and oily samples." Route stop: "Use observations to explain emulsification and hard-water effects."
+
+Owner rules applied: no people or hands (drops are added by coded dropper outlines, shaking is c12's coded rock of the tube plate, rotation only, and the froth is measured with a coded ruler overlay); real objects as painted plates, listed by filename, never stretched; particles and equations coded in the c12 style; at most about three bright text items; "Pause here to answer." then a 10 s countdown with the full worded question kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (about 15 to 30 s) with one crossed-out mistake; original HSC-style questions only; real GHS classifications; school rules checked against NSW Chemical Safety in Schools (sources in "Safety facts check"); Australian spelling; no em dashes; conversational narration; no absolute claims; optional key notes hold.
+
+Syllabus dotpoints (NSW Chemistry Stage 6, 2017; `C7-IQ5-05` (p56) and `C7-IQ2-05` (p55) are this project's local catalogue IDs, not codes printed in the syllabus), quoted from `../../programme/syllabus/chem-2017-y12.json`:
+
+"investigate the structure and action of soaps and detergents"
+
+"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)" (carried by the risk table, route review change 5)
+
+**Boundary:** this video prepares students to carry out and analyse the investigation; it does not claim that watching it is conducting it. It teaches: the aim; hard water made from calcium chloride in distilled water (so the only difference is the calcium ions) and distilled water as soft water; six tubes (soap or detergent or nothing, in soft or hard water); part A, the froth test (same volume, same drops, ten shakes, read the froth height after 30 s); the variables; the results and their cause, recalled in one pass; part B, the oil emulsion test (add oil, shake, time until a clear oil layer reappears); why the two tests agree; reliability; validity and accuracy (hand shaking, unequal drops, commercial products with extra ingredients, reading the froth); the risk assessment and disposal. **Recalled, not re-taught:** the soap and detergent structures, micelles, emulsification, droplet repulsion, the scum equation, why detergent calcium salts stay dissolved (all chem-m7-c12); validity, reliability, accuracy, word, feature, fix (skills-s07, chem-m7-p03). **Not here:** saponification in the lab (c12 covers the reaction; making soap is not this route's practical); water softening by sodium carbonate or ion exchange; biodegradability tests; surface tension and the pepper demonstration (c12 Decisions); cationic and non-ionic detergents in the lab (named only on the c12 recall chip).
+
+## Decisions
+
+- **Main question:** *In soft water, soap and a detergent both froth. In hard water, soap turns cloudy and barely froths, while the detergent keeps going. How do you set up a fair comparison, measure what you see, and use the results to explain how soaps and detergents work?* Heading on screen: "Soap or detergent: which survives hard water?"
+- **Site sources used (site lesson 17):** card 4 (hard water's Ca²⁺ and Mg²⁺; scum as calcium or magnesium carboxylate; "soap consumed in scum formation is no longer available for cleaning, more soap required"; anionic detergent heads; the Must Do to name Ca²⁺ and Mg²⁺, the precipitate and the head difference; the Common Error "Detergents are stronger than soaps"; scenes 6, 8 and A2); card 3 (emulsification, "an emulsion, not a solution"; the Common Error "Soap dissolves the grease"; scene 8); Worked Example 07 (a household in a hard water area with bar soap and sodium lauryl sulfate; the evaluation that soap is comparable in soft water; scene 6 and the detergent choice), with its solubility wording softened as c12's site correction 3 requires. The site has no hands-on procedure; the procedure here is built from the route start and stop and from common school practice (author note a).
+- **Why calcium chloride in distilled water:** tap water hardness varies from place to place and contains several ions. Dissolving calcium chloride in distilled water gives a "hard water" sample whose only difference from the soft sample is the calcium ions, so a difference in froth can be traced to them: a validity choice, said in the narration. Concentration about 0.01 mol L⁻¹ (made very hard on purpose so the effect is clear in a few drops; author note b). Magnesium sulfate works too and is named in the key notes.
+- **Why sodium dodecyl sulfate as the detergent:** a single, known anionic detergent (the site's sodium lauryl sulfate) lets the comparison be about the head group. Many dishwashing and laundry products also contain other ingredients, and some laundry detergents contain water softeners (builders), which would hide the head's effect; scene 10 and A2 use this as a validity point. The narration says "a pure detergent, like sodium dodecyl sulfate". The soap solution is a pure soap (soap flakes or a plain potassium soap, made up by the teacher).
+- **Two measures of one action:** froth height is quick and easy to read but only indirectly about cleaning; the oil test (time until a clear oil layer reappears) measures emulsification, which is the cleaning action c12 taught. When both point the same way, the conclusion is stronger. Scene 8 says so.
+- **Example results (screen, labelled "example data"; author note c):** froth height after 30 s, mean of three: soap, soft 6.0 cm (5.8, 6.2, 6.0); soap, hard 0.6 cm (0.5, 0.8, 0.5) with cloudiness and white flecks; detergent, soft 6.4 cm (6.3, 6.6, 6.3); detergent, hard 6.1 cm (6.0, 6.3, 6.0), clear; water only, soft and hard, under 0.2 cm. Oil test, time until a clear oil layer reappears: water only about 40 s; soap in hard water about 2 minutes; soap in soft water and detergent in both more than 10 minutes (the timing stops at 10 minutes). Narration rounds: "about six centimetres", "under one centimetre", "about six and a half ... about six".
+- **Main teaching move:** one cause, two signs. Hard water's calcium ions lock soap into scum, so less soap is left to make froth or wrap oil; the detergent's calcium salt stays dissolved, so it keeps working. The investigation's job is to make sure that the calcium ions, and nothing else, explain the difference: same volumes, same drops, same shaking, same timing, controls, and a pure detergent.
+- **Cause chain taught, in order:** (1) the observation to explain (1); (2) the aim; hard water made so its only difference is Ca²⁺; six tubes including controls (2); (3) part A method: same volume, drops, shakes, time; the controls show water alone barely froths (3); (4) the variables (4); (5) results: soap fails in hard water, detergent barely changes (5); (6) cause: scum locks up soap; detergent's calcium salt stays dissolved (recall, 6); (7) part B: oil emulsion timing (7); (8) the emulsion is micelles; less free soap in hard water, so the oil separates sooner; two tests agree (8); (9) reliability (9); (10) validity and accuracy (10); (11) hazards and controls (11); memory aid (12); attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).
+- **Entry knowledge:** chem-m7-c12 (all the recalls above, including the scum net ionic equation with sodium stearate and spectator Na⁺, and c12's tube pairs as observations). chem-m7-c03 (polar and non-polar; dispersion forces). skills-s07 and chem-m7-p03 (validity, reliability, accuracy; word, feature, fix; hazard, harm, control). Year 11 (net ionic equations; precipitation).
+- **Learner-visible vocabulary (each with a plain meaning at first use):** soft water and hard water (hard water contains dissolved calcium or magnesium ions; screen tag, c12 recall); distilled water (water with the dissolved ions removed; screen tag); control (a tube treated the same way but with no soap or detergent); froth height (the height of the bubble layer above the liquid); emulsion (tiny oil droplets spread through water; c12 recall); lasting froth (froth that stays for 30 s; attempt 1's card).
+- **Attempt systems (unseen, every condition visible, HSC wording, original):** (A1) "A student added soap solution, one drop at a time, to 10 mL samples of water, stoppering and shaking after each drop, until a froth formed that lasted for 30 seconds. The table shows the results. | Sample | Drops of soap solution needed | Appearance | Distilled water | 2 | clear | Sample X | 3 | clear | Sample Y | 17 | cloudy, white solid | Explain the result for sample Y. Include a net ionic equation, using sodium stearate, C₁₇H₃₅COONa, as the soap." (3 marks.) Answer: sample Y is hard water: it contains Ca²⁺ (or Mg²⁺) ions; the stearate ions react with them to form insoluble calcium stearate, the white solid (scum): 2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s); the first drops (about 15 more than distilled water) are used up making scum, so lasting froth forms only after the calcium ions have been removed. Crossed mistake: "Sample Y contains more salt (sodium chloride)" (hardness is calcium and magnesium ions; sodium salts don't form scum with soap). (A2) "A student compared a soap with a dishwashing detergent in tap water from a hard-water area. She added 5 drops of soap solution to one test tube of the tap water and 10 drops of the dishwashing detergent to another, shook each tube, and found that the detergent produced more froth. She concluded that detergents work better than soaps in hard water. Explain why her conclusion is not valid, and describe TWO changes to her method that would make it valid." (4 marks.) Answer: two things changed besides the type of agent (drops: 5 against 10; and a commercial detergent may contain softeners or other ingredients), so the froth difference can't be put down to soap against detergent alone; also no soft-water comparison and no control; changes: same number of drops of solutions of the same concentration; a pure detergent (for example sodium dodecyl sulfate); add the same tests in distilled water, plus water-only controls; same shaking and timing. Crossed mistake: "Repeat the test three times and average" (repeats check reliability; the unequal drops are still there; s07).
+- **Mistake scene:** none separate. "Detergents are stronger soaps" (6, said positively; c12 crossed it; site Common Error); "soap dissolves the oil" (8, said positively; site Common Error); "the controls are pointless" (3, said positively); "repeats make it valid" (A2 crossed); "hardness is salt" (A1 crossed); "read the tallest bubble" (10, said positively).
+- **Legacy logic ported:** none needed.
+- **New explainer motion (coded):** a **tube line-up** (six single-tube plates in a row, scaled uniformly to the same height, each with a two-line coded chip above it, "soap | soft" and so on, in fixed colours: soap amber, detergent violet, water-only grey; soft-water tags pale blue, hard-water tags teal); a **froth ruler** (a thin coded ruler that slides beside a tube plate, zero at the liquid surface, with a reading line at the froth's average top and a value chip); a **froth bars** chart (six short vertical bars in the line-up's colours, filling to the mean heights; scene 5); an **oil timer** (a small coded stopwatch ring above each tube in part B that stops when the plate cross-fades from emulsion to layers, labelled with the time; tubes still cloudy at 10 minutes keep a "> 10 min" chip); **free soap counter** (scene 8: a row of ten soap symbols from c12; in hard water six lock onto Ca²⁺ balls and turn grey as scum, leaving four to form one small micelle, against ten forming two micelles in soft water). Kept from c12: the shake (plate rock, rotation only), the scum lock, the micelle and droplet repel. Kept from p03 and p04: the variables card, validity, reliability and accuracy cards, the risk table; from s07: the FixRail.
+- **Author notes (not learner copy):** (a) Procedure and quantities (screen only, small grey, for teachers; not spoken except as said): 10 mL of water in each of six stoppered test tubes; 5 drops of 1% soap solution or 1% sodium dodecyl sulfate solution (teacher-made); stopper and shake 10 times with the same full-length movement; stand the tubes upright; read the froth height after 30 s with a ruler; part B: add 1 mL of cooking oil, stopper, shake 10 times, start the timer, record when a clear oil layer about 1 mm thick first reappears at the top (stop at 10 minutes). Science check to confirm that these are typical school values and that the example results are realistic. (b) Hard water: 0.01 mol L⁻¹ CaCl₂ (about 1.1 g of anhydrous CaCl₂ per litre) is about 400 mg L⁻¹ of Ca²⁺, about 1,000 mg L⁻¹ as CaCO₃, far harder than natural "very hard" water (above about 180 mg L⁻¹ as CaCO₃). It is chosen so the effect shows with a few drops; the narration says "hard water" and the screen says "made very hard on purpose". At this level, five drops of 1% soap are mostly used up as scum (5 drops is about 0.25 mL, about 2.5 mg of soap, about 8 µmol of stearate, against about 100 µmol of Ca²⁺ in 10 mL), so almost no froth forms, matching the example data. (c) Example data are illustrative, consistent with the plates (`m7-soap-tube-soft-v1.png` shows froth reaching about three quarters of the way to the stopper; `m7-soap-tube-hard-v1.png` a thin uneven froth about one tenth of that). Calcium dodecyl sulfate is much more soluble than calcium stearate but can precipitate in very hard water at higher concentrations (c12 author note e); at 0.01 mol L⁻¹ Ca²⁺ and 1% SDS, slight haze is possible; the example says "stays clear" and the narration says "barely touches" and "far less scum" (Codex to confirm or soften). (d) Oil test: soap-stabilised and SDS-stabilised emulsions cream and separate slowly (minutes to hours); without a surfactant, shaken oil and water separate within about a minute. The example times are illustrative; the narration says "within about a minute" and "many minutes". (e) Hard tap water in Australia: mainly Ca²⁺ and Mg²⁺ hydrogen carbonates and sulfates from limestone, dolomite and some groundwater; Adelaide and parts of regional South Australia and Western Australia are often cited as harder than Sydney's water. Not used in narration (no place names), so no time-sensitive claim. (f) Pronunciation: "sodium dodecyl sulfate" as "doh-DEK-il"; "C seventeen H thirty five C O O" on screen only.
+
+Main question: *In soft water, soap and a detergent both froth. In hard water, soap turns cloudy and barely froths, while the detergent keeps going. How do you set up a fair comparison, measure what you see, and use the results to explain how soaps and detergents work?*
+Entry knowledge (chem-m7-c12, chem-m7-c03, skills-s07, chem-m7-p03, Year 11 precipitation): see above.
+Stops after: stating the aim; making hard and soft water so that only calcium ions differ; setting up six tubes with controls; running the froth test and the oil emulsion test with the same volumes, drops, shaking and timing; naming the independent, dependent and controlled variables; explaining the results with scum formation and the detergent's soluble calcium salt; explaining why the oil separates sooner with soap in hard water; judging reliability; identifying validity and accuracy problems and fixes; writing the risk rows with disposal.
+Handoff: planning organic synthesis with a reaction map (route chem-m7-c13, "How can a reaction map plan organic synthesis?").
+
+## Script and shots
+
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Pronunciations as in author note (f). Colour key as chem-m7-c12: oil yellow; the soap tail pale blue and head red with "−"; Na⁺ grey-amber; Ca²⁺ and Mg²⁺ teal; scum grey-white; plus the tube line-up colours (soap amber, detergent violet, water only grey; soft pale blue, hard teal); hazards terracotta, controls green. Board layout (three zones, constant, as chem-m7-p03 and p04): top-left the short task line; the centre holds the tube plates; the right third holds the current card (method step, variables, results, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends.
+
+### 1. hook (soft water, hard water)
+> Shake a little soap solution in pure water, and you get a tall **froth**. Shake the same soap in hard water, and it turns cloudy, and the froth barely forms. A detergent froths in **both**. Let's show that fairly, measure it, and explain it.
+
+Visual: `m7-soap-tube-soft-v1.png` medium at the centre-left (chip "soap | soft"). On "froth" the c12 shake runs (rotation only) and settles. On "hard water" `m7-soap-tube-hard-v1.png` fades in at the centre-right (a fade-in, never a cross-fade from the soft plate; chip "soap | hard"; tag "cloudy, little froth"). On "both" two smaller copies of the soft plate appear at the far right, chips "detergent | soft" and "detergent | hard" (tag "froths in both"). Heading writes: "Soap or detergent: which survives hard water?" Bright at the end: the heading, the soap pair, the detergent pair (one item). Hold about 1 second.
+
+### 2. the aim, and the tubes
+> The aim: to compare how a soap and a detergent behave in soft and hard water. Make hard water by dissolving calcium chloride in **distilled** water, so the only difference from the soft sample is the calcium ions. Use a pure detergent, like sodium dodecyl sulfate. That gives four tubes: soap or detergent, in soft or hard water. Two more get water only. They're the **controls**.
+
+Visual: task line "Aim: compare soap and detergent in soft and hard water". `m6-wash-bottle-v1.png` small at the left (coded label "distilled water"; tag "distilled: dissolved ions removed"). On "calcium chloride" a `p03-dropper-bottle-v1.png` copy appears beside it with a coded label "CaCl₂(aq)" (tag "hard water: made very hard on purpose"), and a teal Ca²⁺ ball chip appears with the tag "only difference: Ca²⁺". On "pure detergent" two more dropper bottle copies appear, labels "soap solution" and "detergent: sodium dodecyl sulfate" (grey chip "c12: sulfate head"). On "four tubes" the tube line-up builds: four plates in a row (soft plate for soap-soft, detergent-soft and detergent-hard; the hard plate is not shown yet, so the fourth slot holds an empty tube outline for soap-hard), each with its chip. On "controls" two empty tube outlines join at the end, chips "water only | soft" and "water only | hard" (tag "control: same treatment, no cleaning agent"). Bright at the end: the six chips and the control tag. Hold about 1 second.
+
+### 3. part A: the froth test
+> Part one is a froth test. Put ten millilitres of each water into a test tube, and add five drops of soap or detergent solution. Stopper it, shake it ten times the same way, and stand it in the rack. After thirty seconds, measure the froth **height** with a ruler, from the liquid's surface to the top of the froth. The controls show how much froth water alone makes: almost **none**.
+
+Visual: method card in the right zone, one step per cue, earlier steps dimming: "1 10 mL water in each tube"; "2 5 drops of solution (soap or detergent)" (coded dropper outlines, no hands); "3 stopper; shake 10 times, same way" (the c12 shake runs on all six tubes together); "4 stand 30 s; measure froth height". On "height" the froth ruler slides beside the soap-soft plate, zero at the liquid surface (tag "froth height: liquid surface to top of froth"). On "none" the two control slots show a thin coded line of bubbles only, chips "under 0.2 cm". Bright at the end: the ruler, step 4 and the control chips. Hold about 1 second.
+
+### 4. the variables
+> What changes, and what stays the same? Two independent variables: the cleaning agent, soap or detergent, and the water, soft or hard. The dependent variable is the froth height, plus whether a solid **forms**. Keep the water volume, the drops, the solution strengths, the shaking and the waiting time the **same**. Then any difference belongs to the agent or the water.
+
+Visual: the variables card writes in the right zone: on "Two independent" "Independent: agent (soap, detergent, none); water (soft, hard)" with the colour chips; on "forms" "Dependent: froth height (cm); cloudiness or solid"; on "same" "Controlled:" with its list writing one item per phrase, each pen-linked to the method card: "10 mL water", "5 drops", "1% solutions", "10 shakes", "30 s". A grey footer: "Controls: water only, soft and hard". Bright at the end: the controlled list. Hold about 1 second.
+
+### 5. part A: the results
+> Here's a typical result. Soap in soft water: about six centimetres of froth. Soap in hard water: under one centimetre, and the liquid turns **cloudy**, with white specks. The detergent gives about six and a half centimetres in soft water, and about six in hard water, and stays clear. So hard water ruins the soap's froth, but barely touches the **detergent's**.
+
+Visual: the empty soap-hard slot fills: `m7-soap-tube-hard-v1.png` fades in (on "cloudy"; chip "0.6 cm; cloudy, white flecks"). The froth ruler reads each tube in turn, value chips "6.0 cm", "0.6 cm", "6.4 cm", "6.1 cm" (grey tag "example data, mean of 3"). The froth bars chart draws small under the line-up. On "detergent's" the two detergent bars pulse, tag "hardness: little effect"; the soap pair's bars are joined by a terracotta bracket "hardness: big effect". Bright at the end: the soap-hard plate, the bars and the two tags. Hold about 1 second.
+
+### 6. why? recall the scum
+> Why? From the soaps video: in hard water, two soap ions bind each calcium ion and form calcium stearate, an insoluble solid. That's the **scum** you can see. Every soap particle locked in scum is lost for frothing or cleaning. The detergent's sulfate head forms a calcium salt that's much more **soluble**, so far less scum forms, and the detergent keeps working. It isn't a stronger soap. Its head is different.
+
+Visual: the board clears; task line "Why?". The c12 scum lock runs at the centre: two soap symbols swing their heads onto one teal Ca²⁺ ball, the trio turns grey-white and drops as a flake (grey chip "c12"); on "scum" the equation writes small: "2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)" (tag "stearate as the model soap"). On "soluble" a detergent symbol with a sulfate head (violet "−") meets a Ca²⁺ ball and both stay surrounded by water molecules (tag "calcium dodecyl sulfate: much more soluble"). On "stronger soap" a chip "detergent = stronger soap" fades in and is crossed (caption "same action; the head differs"). Bright at the end: the equation, the soluble-head tag, the crossed chip. Hold about 1 second.
+
+### 7. part B: the oil test
+> Froth isn't cleaning, so part two tests cleaning itself. Add one millilitre of cooking oil to each tube, stopper it, and shake it ten times. Then time how long it takes for a clear oil layer to **reappear** at the top. With water only, the oil separates within about a minute. With soap in soft water, or detergent in either water, it stays cloudy for many minutes. With soap in hard water, it separates much **sooner**.
+
+Visual: task line "Part B: oil test". `m7-oil-water-tube-layers-v1.png` medium at the centre (chip "water only + oil"), the c12 shake runs and the plate cross-fades to `m7-oil-water-tube-emulsion-v1.png`, then back to layers as the oil timer stops at "about 40 s". On "reappear" a method step writes in the right zone: "add 1 mL oil; stopper; shake 10 times; time until a clear oil layer reappears (stop at 10 min)". The line-up returns small: on "many minutes" the soap-soft, detergent-soft and detergent-hard slots show the emulsion plate with timers reading "> 10 min"; on "sooner" the soap-hard slot shows the emulsion plate cross-fading to the layers plate with its timer at "about 2 min" (grey tag "example data"). Bright at the end: the four timers and the method step. Hold about 1 second.
+
+### 8. why the oil test agrees
+> That cloudiness is an emulsion: micelles holding tiny oil droplets apart in the water. The soap doesn't dissolve the oil. It wraps it. In hard water, much of the soap is locked up in scum, so less is left to wrap the oil, and the droplets join up **faster**. So the froth test and the oil test point the same way, and that makes the conclusion **stronger**.
+
+Visual: the board clears. The free soap counter runs: left "soft water": ten soap symbols drift in and form two small micelles around yellow droplets (c12 micelle, grey chip "c12: tails into oil, heads into water"); right "hard water": ten soap symbols, six lock onto teal Ca²⁺ balls and turn grey (scum), four form one small micelle; the unwrapped yellow droplets drift together and merge (on "faster"). A chip "soap dissolves the oil" fades in and is crossed on "wraps it" (caption "emulsified, not dissolved"). On "stronger" the froth bars and the four timers return small side by side with one bracket "same ranking: two tests agree". Bright at the end: the two panels and the bracket. Hold about 1 second.
+
+### 9. reliable?
+> Is it reliable? Repeat each tube three times, or pool results with other groups. If the froth heights agree within a few millimetres, and the order is the same every time, the results are **reliable**. If one tube is way off, check what went differently before you include it.
+
+Visual: task line "Reliability". A small results table writes in the right zone (grey tag "example data"): rows "soap | soft", "soap | hard", "detergent | soft", "detergent | hard"; columns "trial 1, 2, 3, mean" (values as Decisions). On "agree" brackets span each row's three values ("within 0.4 cm") and the reliability card header writes: "Reliability: repeats agree?" with a tick. On "way off" a ghost fourth value "3.1 cm" appears in the soap-soft row with a terracotta ring and a tag "check: fewer shakes? wrong drops?" Bright at the end: the brackets, the tick and the ringed value. Hold about 1 second.
+
+### 10. valid? accurate?
+> Validity is the tricky part. Hand shaking varies, and the froth depends on it, so count the shakes, keep them the same length, and have one person shake every tube. Read every froth at the same time, because froth collapses. Some detergents contain water softeners, which would hide the effect, so use a pure one. For accuracy, read the ruler at eye level, to the **average** top of the froth, not the tallest bubble.
+
+Visual: the validity card header writes: "Validity: is the difference caused only by the agent and the water?" with rows writing on cue, each with a s07 FixRail mini (feature, fix): "shaking varies → same count, same length, one person"; "froth collapses → read all at 30 s"; "commercial detergent may contain softeners → use pure SDS". On "accuracy" the accuracy card header writes: "Accuracy: close to the true froth height?" with the froth ruler on the soap-soft plate: a coded uneven froth top, a dashed line at its average (tag "read here, at eye level") and a crossed dashed line at the tallest bubble. Footer, small grey: "Validity: fair test. Reliability: repeats agree. Accuracy: true reading." Bright at the end: the three validity rows and the average line. Hold about 1 second.
+
+### 11. the risk assessment
+> Now the risks. These chemicals are low hazard, not no hazard. The soap, the detergent and the calcium chloride solutions can irritate your eyes, so wear safety glasses. Hold the stopper in firmly while shaking, and use tubes without chips or cracks. Wipe up spilled oil straight away, because it makes the floor **slippery**. And collect the oily mixtures as your school directs, not down the sink, where oil can block the **drains**.
+
+Visual: the risk table writes in the right zone, three columns "Hazard / Harm / Control", one row per cue, the current row and header bright, earlier rows dimming. Rows (full text as "Risk table" below): soap, detergent and calcium chloride solutions; solid sodium dodecyl sulfate (shown, not spoken: teacher only); stoppered tubes being shaken; spilled oil; waste. Glasses (`m5x-safety-glasses-v1.png`) at the table head under "always"; `m5x-stopper-v1.png` small beside the shaking row (tag "stopper in firmly; point the tube away from people"). On "drains" `m5x-waste-bottle-v1.png` appears small with a coded label "Oily waste". Footer chip: "follow your school's risk assessment and each bottle's safety data sheet". Hold about 2 seconds (reading hold; the table returns in the key notes).
+
+### 12. memory aid
+> One line to keep, from the soaps video. **Soap makes scum in hard water; detergents mostly don't.**
+
+Visual: the board clears. Handwritten line: "Soap makes scum in hard water; detergents mostly don't." Under it the soap-hard and detergent-hard plates small, side by side. A small grey second line: "Froth and oil tests agree: fewer free soap particles." Hold about 2 seconds.
+
+### 13. attempt 1 (countdown, 10 seconds)
+> Your turn. A student adds soap solution drop by drop to water samples, shaking each time, until a froth lasts thirty seconds. Distilled water needs two drops, sample X needs three, and sample Y needs seventeen, and turns cloudy with a white solid. Explain the result for sample Y, with a net ionic equation, using sodium stearate as the soap. Pause here to answer.
+
+Visual: the board clears. Question card, worded as printed (A1 under Decisions), with its table, and the tag "HSC-style question, written for HSCScience". `p03-dropper-bottle-v1.png` small at the right (no label). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 14. feedback 1 (brief)
+> Sample Y is **hard** water: it contains calcium or magnesium ions. The stearate ions react with them to form insoluble calcium stearate, the white solid. So the first drops are used up making **scum**, and only once the calcium is gone can froth last. The trap is calling hard water salty: it's the calcium and magnesium ions, not sodium **chloride**.
+
+Visual: the card stays, shrunk to the top. On "hard" "17" and "cloudy, white solid" are underlined (tag "about 15 extra drops"); a teal Ca²⁺ chip writes. On "scum" "net ionic equation" and "sodium stearate, C₁₇H₃₅COONa" are underlined and the equation writes bright: "2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)" (grey tag "Na⁺: spectator"); the soap-hard plate thumbnail sits beside it. On "chloride" a chip "Y contains more salt (NaCl)" fades in and is crossed (caption "hardness: Ca²⁺ and Mg²⁺"). Hold about 1 second.
+
+### 15. attempt 2 (countdown, 10 seconds)
+> Last one. A student adds five drops of soap solution to hard tap water in one tube, and ten drops of a dishwashing detergent to another. The detergent makes more froth, and she concludes detergents work better in hard water. Explain why her conclusion isn't valid, and describe two changes that would make it valid. Pause here to answer.
+
+Visual: question card, worded as printed (A2 under Decisions). The soap-hard and soap-soft plates are not shown (they would hint). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+### 16. feedback 2 (brief)
+> She changed more than the cleaning agent: five drops against **ten**, and a dishwashing liquid that may contain softeners. So the difference can't be put down to soap against detergent alone. Use equal drops of equal-strength solutions and a pure detergent, and add soft-water tubes and water-only **controls**. Repeating it is the **trap**: the unfair test stays.
+
+Visual: the card stays, shrunk to the top. On "ten" "5 drops" and "10 drops" are underlined, and "a dishwashing detergent" (FixRail small: "Word: validity"; "Feature: drops differ; product may contain softeners"). On "controls" "describe TWO changes" is underlined and the FixRail's "Fix" lights with two rows: "same drops, same concentration, pure detergent (SDS)"; "add distilled-water tubes and water-only controls". On "trap" a chip "repeat 3 times and average" fades in and is crossed (caption "reliability, not validity"). Hold about 1 second.
+
+### 17. decision rule and handoff
+> So: make hard water whose only difference is calcium ions, match the volumes, drops, shaking and timing, and include controls. Measure froth, and how long the oil stays **emulsified**. Calcium locks soap up as scum, while the detergent's calcium salt stays dissolved. **Next**: planning a synthesis.
+
+Visual: the board clears. A four-row decision card lights on cue: "Hard water: CaCl₂ in distilled water (only Ca²⁺ differs)"; "Match: volume, drops, shakes, timing; controls"; on "emulsified" "Measure: froth height; time until oil separates"; "Explain: soap + Ca²⁺ → scum; detergent's Ca salt stays dissolved". On "Next" a chip "Next: how can a reaction map plan organic synthesis?" slides in at the lower right. Hold about 2 seconds.
+
+### 18. key notes (quiet, hold about 60 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Aim: compare soap and detergent action in soft and hard water. Hard water: CaCl₂ (or MgSO₄) dissolved in distilled water, so only Ca²⁺ (or Mg²⁺) differs. Controls: water only.
+2. Froth test: 10 mL water, 5 drops of 1% solution, stopper, shake 10 times, froth height after 30 s. Oil test: add 1 mL oil, shake 10 times, time until a clear oil layer reappears.
+3. Variables: independent, agent and water hardness; dependent, froth height, cloudiness, time to separate; controlled, volume, drops, concentration, shakes, timing.
+4. Results: soap froths in soft water but forms scum and little froth in hard water; detergent froths in both; oil separates soonest with soap in hard water. 2RCOO⁻(aq) + Ca²⁺(aq) → (RCOO)₂Ca(s): soap locked in scum can't froth or form micelles. Detergent's calcium salt is much more soluble.
+5. Validity: same shaking (count, length, one person), same timing, equal drops, pure detergent. Reliability: repeats agree. Accuracy: read the average froth top at eye level.
+6. Safety: safety glasses (eye irritants); stopper in firmly, sound tubes; wipe oil spills; oily waste as the school directs, not the sink.
+
+Memory aid (large, on the notes screen): *Soap makes scum in hard water; detergents mostly don't.* Second line: *Two tests, one cause: fewer free soap particles.*
+
+## Risk table (full text for scene 11 and key notes)
+
+| Hazard | Harm | Control |
+| --- | --- | --- |
+| Soap, detergent (1% sodium dodecyl sulfate) and calcium chloride solutions (calcium chloride: H319) | eye irritation; mild skin irritation with long contact | safety glasses; rinse splashes with water; wash hands after the practical |
+| Solid sodium dodecyl sulfate (H228, H302, H315, H318, H332, H335, H412) | flammable solid; serious eye damage; irritating dust | teacher makes the solution; students use only the 1% solution from dropper bottles |
+| Stoppered test tubes being shaken | stopper pops, spraying the mixture; a chipped tube breaks | check tubes for chips and cracks; stopper in firmly; point the tube away from people; don't overfill |
+| Spilled cooking oil and soap solutions | slipping | wipe spills at once; dry the floor |
+| Waste | oil blocks drains and harms waterways; detergents harm aquatic life (SDS H412) | oily mixtures collected in a labelled waste container as the school directs; oil-free soap, detergent and calcium chloride solutions down the sink with plenty of water, if the school allows |
+
+Footer: "Follow your school's risk assessment and each bottle's safety data sheet."
+
+## Teaching checks
+
+- **Does it explain causes?** Why calcium chloride in distilled water: only Ca²⁺ differs (2). Why controls: show water alone barely froths or holds oil (3, 7). Why soap fails in hard water: calcium locks it up as scum (6, A1). Why the detergent doesn't: its calcium salt is much more soluble (6). Why the oil separates sooner: less free soap to form micelles (8). Why a second test: froth is not cleaning (7). Why same shaking and timing: froth depends on shaking and collapses with time (10). Why a pure detergent: softeners would hide the effect (10, A2). Why read the average top: an uneven froth (10). Each control matched to its harm (11).
+- **One reasoning stage at a time.** The line-up builds tube by tube; results arrive one tube at a time; the cause scene holds one model (scum lock, then the soluble head).
+- **Response opportunities.** Two, each 10 s with the countdown and every condition visible (13, 15): A1's table, "lasted for 30 seconds" and "sodium stearate"; A2's drops, "dishwashing detergent", "hard-water area" and her conclusion. Nothing answer-bearing during the holds.
+- **Reading load.** The risk table is the densest card; it is read, not narrated row by row (four rows spoken in part, one shown), it holds 2 s, and it returns in key note 6. Six tubes on screen at once only in scenes 2, 3, 5 and 7, each at small size with one two-word chip; values appear on one tube at a time.
+- **Term load.** No new science terms; distilled water, control, froth height and lasting froth get short plain meanings.
+- **Necessary conditions kept in learner copy.** "Made from calcium chloride in distilled water"; "pure detergent"; "same way" for shaking; "after thirty seconds"; "much more soluble" (not "soluble"), per c12 site correction 3.
+- **Feedback length.** Feedback 1 about 25 s; feedback 2 about 29 s (owner rule: 15 to 30 s).
+- **Out of scope by design.** Making soap; softening water; biodegradability; surface tension; cationic and non-ionic detergents in the lab.
+
+## Site corrections (new; quoted from site lesson 17, read 28 Oct)
+
+c12 (Revision 3) already records site lesson 17 corrections 1 to 3 (the 20th-century detergent driver, petrochemical sources, and "soluble → no scum"), plus its notes on saponification and potassium stearate. P06 acts on correction 3 and does not repeat them. New:
+
+1. Interactive check question, correct option: "Soap has a non-polar hydrophobic tail that dissolves grease and a polar/ionic hydrophilic head that dissolves in water, emulsifying grease into micelles". The page's own Common Error says "Grease is NOT dissolved, it is EMULSIFIED". Correct: "Soap has a non-polar hydrophobic tail that attracts grease by dispersion forces and an ionic hydrophilic head that is attracted to water, so it emulsifies grease into micelles." Severity: should fix (contradicts the page).
+2. Short Answer Q8: "they live in a hard water area (350 mg/L Ca²⁺)". 350 mg L⁻¹ of Ca²⁺ is about 870 mg L⁻¹ as CaCO₃, several times the usual "very hard" threshold (about 180 mg L⁻¹ as CaCO₃); hardness is normally reported as CaCO₃. Correct: "(hardness 350 mg/L as CaCO₃)". Severity: note.
+3. Predict, Then Reveal answer: "polar water cannot surround and dissolve non-polar grease molecules (no significant intermolecular interactions)". Water and grease do attract weakly by dispersion (and induced dipole) forces; grease stays out because water would give up its hydrogen bonds (c12 author note a). Correct: "... water molecules attract each other by hydrogen bonds far more strongly than they attract grease, so the grease is pushed out into a separate layer." Severity: note.
+4. Worked Example 07, step 3: soap is "gentler on skin". Soap solutions are alkaline (pH about 9 to 10) and can irritate skin; mildness depends on the product. Correct: remove "gentler on skin" or write "can be gentle on skin, depending on the formulation". Severity: note.
+
+## Numbers used (author note: every place a value appears)
+
+Volumes and counts (scenes 3, 7, key note 2, A1, A2): 10 mL water; 5 drops (A2: 5 and 10); 1% solutions; 10 shakes; 30 s wait; 1 mL oil; 10-minute cut-off. Hard water: about 0.01 mol L⁻¹ CaCl₂ (screen only). Results (scene 5, 9): soap soft 5.8, 6.2, 6.0 (mean 6.0 cm); soap hard 0.5, 0.8, 0.5 (mean 0.6 cm); detergent soft 6.3, 6.6, 6.3 (mean 6.4 cm); detergent hard 6.0, 6.3, 6.0 (mean 6.1 cm); controls under 0.2 cm; outlier 3.1 cm. Oil times (scene 7): water only about 40 s; soap hard about 2 min; others more than 10 min. A1: 2, 3 and 17 drops; "about 15 extra". Free soap counter (scene 8): 10 soap symbols; 6 locked, 4 free (illustrative, not data).
+
+## Numbers to verify (repeated for Codex)
+
+Self-check (28 Oct), by hand; Codex to re-check and record sources.
+
+- **Means.** (5.8 + 6.2 + 6.0) ÷ 3 = 6.0; (0.5 + 0.8 + 0.5) ÷ 3 = 0.6; (6.3 + 6.6 + 6.3) ÷ 3 = 6.4; (6.0 + 6.3 + 6.0) ÷ 3 = 6.1. Spreads 0.4, 0.3, 0.3, 0.3 cm ("within 0.4 cm"). A1: 17 − 2 = 15.
+- **Hard water arithmetic (author note b).** CaCl₂ 110.98 g mol⁻¹: 0.01 mol L⁻¹ = 1.11 g L⁻¹; Ca²⁺ 0.01 × 40.08 = 0.40 g L⁻¹ = 400 mg L⁻¹; as CaCO₃ 0.01 × 100.09 = 1.0 g L⁻¹. 10 mL holds 0.1 mmol = 100 µmol Ca²⁺. Five drops (about 0.05 mL each, 0.25 mL) of 1% soap = 2.5 mg; as sodium stearate (306.5 g mol⁻¹) about 8 µmol, needing about 4 µmol Ca²⁺. Site Q8: 350 mg L⁻¹ Ca²⁺ ÷ 40.08 × 100.09 = 874 mg L⁻¹ as CaCO₃.
+- **Equation.** 2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s): charge 2(−1) + 2 = 0; atoms balanced.
+- **Example results realism (author notes c, d).** Typical froth heights for 1% soap and 1% SDS in about 10 mL after 10 shakes; whether SDS stays clear at 0.01 mol L⁻¹ Ca²⁺; emulsion separation times with and without surfactant.
+- **GHS hazard statements (risk table).** Calcium chloride (anhydrous) H319; sodium dodecyl sulfate (solid) H228, H302, H315, H318, H332, H335, H412 (suppliers vary; some list H311 or omit H228: Codex to record the supplier used); dilute 1% solutions are below most classification thresholds for H318 (Codex to confirm the cut-off and whether H319 applies to 1% SDS); soap (sodium or potassium salts of fatty acids) commonly not classified or H319; magnesium sulfate not classified; cooking oil not classified.
+- **Reference facts.** Hardness thresholds (soft below about 60, very hard above about 180 mg L⁻¹ as CaCO₃; WHO and USGS bands); calcium dodecyl sulfate's solubility relative to calcium stearate; builders (softeners) in some laundry detergents; whether common Australian dishwashing liquids contain builders (the narration says "some detergents", A2 says "may contain").
+- **No em dashes** in this file (to be confirmed by script).
+
+## Safety facts check (self-check, 28 Oct; science check to confirm)
+
+Sources: NSW Department of Education, *Chemical Safety in Schools, 2021 Technical Update* (Volume 2 Appendices, https://education.nsw.gov.au/content/dam/main-education/asset-management/chemical-safety/5._Volume_2_Appendices.pdf), text extracted 28 Oct; the live Appendix D chemical entries need staff login and were not read.
+- **Inorganic salts (CSIS group 15, "Inorganic salts (other than heavy metal salts)", p 50):** "some salts are toxic by skin absorption or may cause dermatitis"; wear "rubber (latex) gloves, safety glasses, laboratory coat"; solution spills: "Absorb using a mop, cloth or paper towel. Rinse down the sink." Supports the calcium chloride row and the sink disposal of oil-free salt solutions. The narration names only glasses; the table head shows glasses, and the footer defers to the school's assessment for gloves (Open decisions).
+- **General handling (CSIS p 6):** "Spills of hazardous substances must be cleaned up immediately"; "Excess chemicals should not be returned to the original containers where there is any chance of contamination." Supports the spill row; dropper bottles are not refilled from the tubes.
+- **Solid SDS:** flammable solid and eye-damaging dust on supplier SDSs; the teacher makes the solution, so students meet only the dilute solution.
+- **Oil:** not a CSIS chemical; the drain-blocking reason is general plumbing practice, and the narration defers to the school ("as your school directs").
+- **No claim that any chemical here is harmless.** Scene 11 says "low hazard, not no hazard".
+
+## Memory aid check
+
+- **"Soap makes scum in hard water; detergents mostly don't."** From chem-m7-c12 (Revision 3, its memory aid check: the M7 bank's Trap entry with "mostly" added for c12 site correction 3). Assumptions: anionic detergents at ordinary hardness; very hard water can precipitate some calcium alkyl sulfate. Holds for every tube here (the example data show no visible scum for SDS at the stated hardness; author note c asks Codex to confirm).
+- **"Two tests, one cause: fewer free soap particles."** Author-written, on the notes screen only. Assumption: the froth and the emulsion both depend on dissolved, unbound soap; true for soap in hard water, the only condition where the tests change here.
+
+## Narration length estimate
+
+Counted by script (18 scenes; `### N.` headings, "> " lines joined, bold markers removed), at 13.3 characters per second, 28 Oct.
+
+| Scene | Characters |
+| --- | --- |
+| 1. hook (soft water, hard water) | 233 |
+| 2. the aim, and the tubes | 372 |
+| 3. part A: the froth test | 375 |
+| 4. the variables | 361 |
+| 5. part A: the results | 354 |
+| 6. why? recall the scum | 404 |
+| 7. part B: the oil test | 412 |
+| 8. why the oil test agrees | 349 |
+| 9. reliable? | 272 |
+| 10. valid? accurate? | 413 |
+| 11. the risk assessment | 426 |
+| 12. memory aid | 95 |
+| 13. attempt 1 (countdown, 10 seconds) | 364 |
+| 14. feedback 1 (brief) | 339 |
+| 15. attempt 2 (countdown, 10 seconds) | 337 |
+| 16. feedback 2 (brief) | 352 |
+| 17. decision rule and handoff | 291 |
+| 18. key notes (quiet, hold about 60 seconds) | 75 |
+| **Total** | **5,824** |
+
+**5,824 characters, 18 scenes** (inside 5,500 to 6,800). The first draft counted 6,119 (about 9.8 minutes with holds); cuts brought it under the cap: a shorter handoff (scene 17), hook close (scene 1), oil-test opening (scene 7), the softener sentence (scene 10), attempt 1's wording (the card keeps "10 mL") and feedback 2's fix and trap lines.
+
+Timing: speech about 438 s; padding about 36 s (18 scenes at 2 s); stated holds about 18 s (scenes 1 to 10, 14 and 16 at 1 s; 11, 12 and 17 at 2 s); countdowns 20 s (two); the quiet notes hold beyond its speech about 55 s: **about 567 s, 9.45 minutes**.
+
+Reserve trims if the voiced take runs over 9.5 minutes: (1) scene 9's last sentence (the ringed value stays on screen; about 5 s); (2) scene 6's "It isn't a stronger soap. Its head is different." (the crossed chip carries it; about 3 s); (3) scene 8's "The soap doesn't dissolve the oil. It wraps it." (the crossed chip carries it; about 3 s). Do not cut below 5,500 without replacing the content.
+
+## Assets
+
+Have (reuse; inspected 28 Oct by contact sheet; all scale uniformly only, never stretched):
+- `m7-soap-tube-soft-v1.png` and `m7-soap-tube-hard-v1.png` (c12's aligned pair from one master tube, delivered in brief 107: stoppered tube in a wooden block; clear liquid with tall white froth; cloudy liquid with white flecks and thin froth; scenes 1, 2, 3, 5, 12, 14). As c12 decided, "detergent in hard water" reuses the soft plate because that is what it looks like; the chip carries the difference. The hard plate always fades in, never cross-fades from the soft plate.
+- `m7-oil-water-tube-layers-v1.png` and `m7-oil-water-tube-emulsion-v1.png` (c12's aligned pair: water with a golden oil layer; uniform pale milky emulsion; scene 7, cross-fades both ways, and scene 8 thumbnails).
+- `m6-wash-bottle-v1.png` (empty-looking wash bottle; scene 2, coded label "distilled water").
+- `p03-dropper-bottle-v1.png` (clear dropper bottle, blank label; scene 2 in three copies with coded labels, scene 13).
+- `m5x-safety-glasses-v1.png`, `m5x-stopper-v1.png`, `m5x-waste-bottle-v1.png` (scene 11).
+Considered, not used: `m6-household-cleaner-bottle-v1.png` (a blue spray bottle: reads as a surface spray, not a pure detergent, and looks like a branded product); `m6-soap-bar-v1.png` (the soap is used as a solution; a bar would invite "rub the bar" methods); `m7-soap-making-v1.png` (saponification is not this practical); `m7-alcohol-water-tubes-v1.png` (two-tube rack, unstoppered; the single-tube plates are the matched set).
+
+Need: **no new plates.** The six-tube line-up is built from the single-tube plates at equal scale (the four c12 plates share one canvas and tube outline, so they line up exactly); the empty slots before results are coded tube outlines matching the plates' tube.
+
+Coded: tube line-up chips, ruler overlay and value chips, froth bars, oil timers, free soap counter, scum lock and micelles (c12), equation, method card, variables card, results table, validity, reliability and accuracy cards, FixRail, risk table, decision card, countdown ring, crossed chips, coded dropper outlines and the shake (no hands). No people or hands.
+
+## Codex asset brief
+
+No new plates are requested for P06. Two checks only, before build:
+1. Confirm the four c12 tube plates scale to the same displayed tube height without stretching when placed in a row of six at about 280 px tall (1920 × 1080 frame), and record the shared alpha bounding box from `../assets/brief107-provenance.json` for the line-up layout.
+2. Confirm the soft plate's froth (about three quarters of the way to the stopper) and the hard plate's thin froth are consistent with the example data's 6.0 cm and 0.6 cm when the coded ruler is drawn against the painted tube (a standard 150 mm tube with 10 mL of water leaves about 7 to 8 cm above the liquid). If not, adjust the example data in this design, not the plates.
+
+## Codex error-check brief
+
+Error-only check, together with the learning review and science check (Codex now writes both; brief 109 practice). Report errors; do not restyle or rewrite:
+1. Re-check every value under "Numbers to verify" and "Numbers used", the hard-water arithmetic, and the scum equation in scenes 6 and 14 and key note 4.
+2. Confirm every GHS hazard statement in the risk table against a named supplier safety data sheet or PubChem (and the concentration cut-offs for 1% SDS), and the CSIS quotations and page numbers in "Safety facts check"; if accessible, the current CSIS Appendix D entries for calcium chloride and sodium dodecyl sulfate.
+3. Confirm the realism of the example results (froth heights, SDS clear at the stated hardness, emulsion separation times) and the typical school procedure (author notes a to d); propose replacement values if any is unrealistic.
+4. Confirm the two attempts are original (not copied from or closely paraphrasing a NESA paper or site L17 Worked Example 07 or Q8; the author's check found Q8's household switching to a sulfonate detergent nearest: it asks for the scum equation and an environmental evaluation, not a drop-count table or a method critique) and that every condition each model answer needs is on its card.
+5. Learning review (`../../student-learning-review.md`) from the stated entry knowledge, especially whether six tubes on screen (scenes 2, 3, 5, 7) are readable and whether scene 8's free soap counter explains the oil result without re-teaching c12.
+6. Confirm no em dash (U+2014) anywhere in this file, Australian spelling ("colour", "sulfate", "litre"), and the narration character count by script with the build parser rules.
+7. Add site corrections 1 to 4 (above) to `../site-corrections-m7.md` (owner record only; the site is read-only here).
+
+## YouTube metadata (draft)
+
+- **Title:** Soap vs Detergent in Hard Water: Practical Investigation | Year 12 Chemistry Module 7 (85 characters)
+- **Description:**
+
+  "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module7/lesson17
+
+  In soft water, soap and detergent both froth. In hard water, soap turns cloudy and barely froths, while the detergent keeps working. Set up a fair comparison with hard water made from calcium chloride, matched tubes and controls; measure froth height and how long oil stays emulsified; and use the results to explain scum formation, micelles and why a detergent's head group survives hard water. Judge the results for validity, reliability and accuracy, and handle and dispose of the chemicals safely. Soap makes scum in hard water; detergents mostly don't. Two practice questions are written for HSCScience in the HSC style; they are not official NESA questions.
+
+  Chemistry 2017: Year 12 Module 7, Organic Chemistry.
+  Syllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 7):
+  "investigate the structure and action of soaps and detergents"
+  "describe the procedures required to safely handle and dispose of organic substances (ACSCH075)"
+  Official 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017
+
+  Prerequisite: How do soaps and detergents lift oil into water? Next: How can a reaction map plan organic synthesis?
+
+  #Year12Chemistry #SoapsAndDetergents #HSCScience"
+- **syllabusDotpoints:** the two quoted dotpoints above. `verifyWording`: true (checked against `programme/syllabus/chem-2017-y12.json`, C7-IQ5-05, p56, and C7-IQ2-05, p55).
+- **Lesson link:** site lesson 17; root to confirm.
+- **Playlist:** Year 12 Chemistry: Module 7, Organic Chemistry (2017 syllabus), after chem-m7-c12 (playlist order 20).
+
+## Open decisions
+
+- **Gloves (recommended: glasses spoken; gloves left to the school).** CSIS group 15 lists rubber gloves for inorganic salts; with 1% solutions many schools require glasses only. Root may add "and gloves" to scene 11 (about 1 s) if the owner prefers the CSIS default.
+- **Hard water strength (recommended: 0.01 mol L⁻¹ CaCl₂, labelled "made very hard on purpose").** A weaker solution would be closer to real tap water but could make the soap result less clear-cut; Codex check 3 decides.
+- **Pure detergent (recommended: SDS).** Alternative: a named plain dishwashing liquid, which students have at home but which varies by brand; A2 uses the dishwashing liquid as the validity problem, so SDS keeps the lesson consistent.
+- **Lesson key** (`m7p06c`) and the **lesson link**: root to confirm.
+
+## Build ids
+
+In order (kebab-case, for the build script LESSONS entry; 18 scene headings, all `### N.`): hook, aim-tubes, froth-test, variables, froth-results, why-scum, oil-test, oil-agrees, reliability, valid-accurate, risk, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, decision-handoff, key-notes.
+
+Holds (10 s countdown after the speech, "Pause here to answer." on screen, card on screen during and after): attempt-1, attempt-2. key-notes is the quiet notes hold (about 60 seconds). Lesson key `m7p06c` (route chem-m7-p06). Suggested explainer folder `src/explainer/lessons/chem-m7-p06`; build folder `docs/production/claude-pm/lessons/m7p06c` (root to confirm). Review evidence paths `checks/m7p06c-learning-review.md` and `checks/m7p06c-science-check.md` (to be written by Codex). Import, not copy: c12's shake, scum lock, micelles and tube pairs; p03's variables card, validity, reliability and accuracy cards; p04's risk table; s07's FixRail.
