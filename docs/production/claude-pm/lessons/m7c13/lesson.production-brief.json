@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c13/lesson.json",
+    "lessonSha256": "5ef2ef48f563f40bb301d8308c0e2b6627b686835b640d16f42285f87f82102e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c04a and c04b (addition and its conditions; two products from an unsymmetrical alkene; UV substitution gives a mixture); chem-m7-c06 (hydration conditions; haloalkane plus aqueous NaOH under reflux; same carbon); chem-m7-c08a and c08b (dehydration, HX substitution, oxidation and the class rule; distil against reflux; aldehyde and ketone names); chem-m7-c09 (carboxylic acid names); chem-m7-c10 (esterification, conditions, equilibrium arrow, ester names, cutting an ester, the two-step flow chart, the main road); chem-m7-c11 (amide formation); chem-m7-c12 (saponification, map arrow only); chem-m7-c01 (naming and locants). Not assumed: reaction map, intermediate, dead end, working backwards, overall yield.",
+    "startsWith": "Choose a target functional group and starting material. The video opens: Propyl ethanoate is an ester that smells a lot like pears. Suppose the only carbon compounds you're allowed to start from are ethene, a gas, and 1-bromopropane, a haloalkane. Neither one looks anything like the ester.",
+    "stopsAfter": "building a reaction map; counting carbons; working backwards from a target; choosing a route by position and by conditions; drawing a multi-step flow chart (including two arms that join) with reagents, conditions and named intermediates; spotting arrows that don't exist. No mechanisms, no reductions, no yield calculations.",
+    "nextLesson": "practice with harder targets and starting materials (route chem-m7-g03, \"Organic synthesis pathway practice\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c13.md"
+  ],
+  "teaching": {
+    "task": "You want a pear-scented ester, but all you have is a gas and a haloalkane. How do you plan a route from the compounds you have to the one you want, and show it as a flow chart?",
+    "causalExplanation": "(1) the target and the starting materials look nothing alike, so the route needs planning (1); (2) every reaction met so far sits on one map; the alcohol is the hub (2); (3) the reactions change groups and keep chains, so count carbons first; only ester and amide formation join chains (3); (4) work backwards: ask which reaction makes the target's group, then repeat (4); (5) choose: a haloalkane that already has its halogen on the right carbon fixes the position of the OH, because hydroxide takes the halogen's place on the same carbon, while water or HBr on propene goes mainly to the middle carbon (5); (6) write forwards, in the order you'd carry it out, with every reagent and condition; reflux with excess oxidant reaches the acid because the aldehyde can't escape (c08a recall); hydration and esterification are equilibria (6); (7) check: no direct alkane to alcohol arrow; a ketone has no H on its carbonyl carbon, so no further oxidation, and the acid needs the primary alcohol; each step loses product, so shorter routes usually yield more (7); memory aid (8); two attempts and brief feedback (9 to 12); handoff (13); key notes (14).",
+    "conversationalApproach": "a pear-scented ester, propyl ethanoate, has to be made when the only carbon compounds allowed are ethene, a gas, and 1-bromopropane, so the video asks how to plan a route from the compounds you have to the one you want and show it as a flow chart. Every reaction met so far sits on one reaction map of nine families, with the alcohol as the hub. Move one names the functional group in the target and in each starting material and counts carbons, because the reactions change groups and keep chains, and only ester or amide formation joins two chains. Move two works backwards from the target: an ester comes from a carboxylic acid and an alcohol, so the ester is cut into propan-1-ol and ethanoic acid. Move three chooses the route where position matters: hydroxide puts the OH where the bromine was in 1-bromopropane, while hydrating propene would put it on the wrong carbon. Move four writes the route forwards with reagents and conditions on every arrow (ethene and steam with a phosphoric acid catalyst, ethanol oxidised to ethanoic acid, the esterification), and every arrow is checked, because one wrong arrow breaks the route, shown with a plan for propanoic acid that fails twice. The memory aid is work backwards to plan, write forwards to answer. Two exam questions follow with brief feedback.",
+    "openingDecision": "Propyl ethanoate is an ester that smells a lot like pears. Suppose the only carbon compounds you're allowed to start from are ethene, a gas, and 1-bromopropane, a haloalkane. Neither one looks anything like the ester. Making a target compound from simpler ones is called a synthesis. So how do you plan a route from what you have to what you want, and show it as a flow chart?",
+    "understandingCheck": "(A1) \"A chemist wants to make pentanoic acid, CH₃CH₂CH₂CH₂COOH. The only available starting materials are pent-1-ene and 1-chloropentane. Construct a flow chart for a two-step synthesis from the better starting material. Include the reagents and conditions for each step, name the intermediate, and justify your choice of starting material.\" New compounds (no pent-1-ene against 1-chloropentane task on site L19 or L20, checked by phrase 27 Oct); a planning task that practises move 3 (choose by position), c06's same carbon, the class rule (primary to acid) and reflux with excess oxidant (learning L5). Crossed mistake: \"pent-1-ene → (steam) → pentan-2-ol → pentanoic acid\" (a secondary alcohol gives a ketone). (A2) \"A chemist has only ethene and butan-1-ol as carbon-containing starting materials. Draw a flow chart to make ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃. Show the reagents and conditions on every arrow.\" New target and start pair (Revision 1's ethyl propanoate from ethene and propan-1-ol matched the site's L19 MC Q1 option C; site L19 and L20 have no ethyl butanoate synthesis, checked by phrase 27 Oct); tests the ester cut and naming order (c10), which starting material is oxidised, reflux with excess oxidant, and equilibrium arrows. Crossed mistake: oxidising the ethanol and esterifying with butan-1-ol, which makes butyl ethanoate, an isomer with the same formula C₆H₁₂O₂.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\" This video covers planning a multi-step synthesis from a target and its allowed starting materials, and drawing it as a flow chart with every reagent and condition. Chem-m7-c10 introduced the flow chart with one two-step route; chem-m7-g03 practises harder targets. this video starts by choosing a target functional group and the starting materials, and stops at a justified multi-step pathway with conditions. It teaches: the reactions from c04a to c12 sit on one reaction map, each box a functional group family and each arrow a known reaction with its own reagents and conditions; the alcohol is the hub, so many routes pass through it; a four-move method: (1) name the functional groups in the target and the starting materials and count carbons (these reactions change functional groups and keep the chain length; only ester and amide formation join two molecules, so their carbons add); (2) work backwards from the target, asking which reaction makes its group (an ester comes from an acid and an alcohol, cut at the single-bonded oxygen; an acid from a primary alcohol by oxidation; an alcohol from an alkene and steam, or from a haloalkane), until you reach a starting material; (3) choose between possible routes: when the position of a group matters, start from a haloalkane that already has its halogen on the right carbon, because hydroxide takes the halogen's place on the same carbon, while water or HBr on propene can go on either carbon and goes mainly to the middle one, so it gives mainly the wrong product (Revision 2); (4) write the route forwards as a flow chart, in the order you'd carry it out, a compound in each box with its name, reagents and conditions on each arrow, distillation for an aldehyde and reflux with excess oxidant for an acid, an equilibrium arrow for hydration and esterification; then check every arrow: no single step turns an alkane into an alcohol (halogen and UV light first, giving a mixture); a ketone has no hydrogen on its carbonyl carbon, so acidified dichromate doesn't oxidise it further (a dead end), and a tertiary alcohol doesn't oxidise at all; each step loses some product, so a shorter route usually gives a higher overall yield; worked example: propyl ethanoate from ethene and 1-bromopropane, two arms (ethene → ethanol → ethanoic acid; 1-bromopropane → propan-1-ol) joining at esterification. Not here: reaction mechanisms and the words nucleophile and elimination as mechanisms (author note b); alcoholic NaOH elimination (not shown in this video from Revision 2; author note b); Markovnikov's rule by name (c04a author note b; author note c; the narration says only that propene's product is mainly the middle-carbon one); reduction reactions and reagents such as LiAlH₄ (not Module 7; author note d); the five-component \"top-band\" answer template and conditions-table timing drills (site L20; author note e); isolation and purification after each step (c10 and p05; one grey chip only); yield calculations (author note f); industrial synthesis such as aspirin (site hook; site correction 2); the practice set (chem-m7-g03)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c08a and c10: carbon skeleton ink; hydrogens soft grey; oxygen brick red, the OH ringed red; the C=C teal; bromine deep orange-brown; the carbonyl C=O with its second bond line red; condition chips navy on and under each arrow; the equilibrium arrow navy with two half heads; source-video chips grey; the chosen path amber; a crossed arrow dashed grey with a red cross. Board layout (constant): top-left the short task chip (\"Target\", \"Map\", \"1 Count\", \"2 Backwards\", \"3 Choose\", \"4 Forwards\", \"Check\"); centre the structure or flow chart board, one model at a time; the reaction map small at the right as a grey card once built; plates small at the left or right only in scenes 1, 12 and 13 (Revision 2). Clutter rule: at most three text items bright at once (the map counts as one dimmed reference diagram, with only the current path bright); every label fades when its sentence ends; the previous model leaves before the next one draws. Reuse: painted plates (inspected 27 Oct): `m7-ester-fruit-v1.png` (a banana, a pineapple and a pear in watercolour and ink; scenes 1, 12 and 13, small; a coded ring marks the pear in scenes 1 and 13 and the pineapple in scene 12). Scaled uniformly only, never stretched. Not used from Revision 2: `m7-reflux-apparatus-v1.png` and `m7-school-distillation-setup-v1.png` (inspected 27 Oct; learning L3). No human figures.",
+    "transitionPlan": "The ester fruit plate opens the hook with the target ester and the two starting materials as boxes and a gap between them; the board clears as the reaction map places its nine family boxes one at a time, then draws its arrows with the alcohol hub ringed; the target and starting boxes return with their groups ringed and carbon counters ticking; working backwards, the ester splits at its single-bonded oxygen into an acid box and an alcohol box with arrows drawn right to left; 1-bromopropane's bromine lifts off and an OH docks on the same carbon, then propene's two-way docker ghosts the OH on carbon one and bolds it on the middle carbon; the flow chart builder runs left to right with condition chips on each arrow and a name in each box; a failing flow chart for propanoic acid draws and its two wrong arrows are ringed and crossed; the memory lines write; each attempt clears the board and its feedback underlines the card as the flow chart builds box by box and a crossed chip lands; the memory lines and the full reaction map card return with the next chip; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Organic synthesis: planning a route\".",
+      "teachingReason": "Hook (a pear ester from a gas and a haloalkane): Propyl ethanoate is an ester that smells a lot like pears.",
+      "narrationCue": "pears / ester",
+      "motionPurpose": "On the spoken cues: `m7-ester-fruit-v1.png` appears small at the left; on \"pears\" a coded ring marks the pear (tag \"propyl ethanoate: smells of pears\") and the plate dims. On \"ester\" the target writes at the right as a structural formula, CH₃COOCH₂CH₂CH₃, in a box with a red outline (tag \"target\"); at the left two smaller boxes write, \"ethene, CH₂=CH₂\" (teal C=C) and \"1-bromopropane, CH₃CH₂CH₂Br\" (orange-brown Br) (tag \"allowed",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Organic synthesis: planning a route\". `m7-ester-fruit-v1.png` appears small at the left; on \"pears\" a coded ring marks the pear (tag \"propyl ethanoate: smells of pears\") and the plate dims. On \"ester\" the target writes at the right as a structural formula, CH₃COOCH₂CH₂CH₃, in a box with a red outline (tag \"target\"); at the left two smaller boxes write, \"ethene, CH₂=CH₂\" (teal C=C) and \"1-bromopropane, CH₃CH₂CH₂Br\" (orange-brown Br) (tag \"allowed starting materials\"). A large dashed grey arrow with a \"?\" spans the gap; on \"synthesis\" a grey tag writes under it: \"synthesis: making a target from simpler compounds\". Dimming order (Revision 2): the pear tag dims on \"ester\"; the \"target\" and \"allowed starting materials\" tags dim on \"synthesis\". Bright at the end: the heading, the target box and the \"?\" arrow. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reaction-map",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "The reaction map: Good news: you've already met every reaction you need.",
+      "narrationCue": "map / hub / esters",
+      "motionPurpose": "On the spoken cues: Task chip \"Map\". On \"map\" the nine family boxes place one at a time (no arrows yet). On \"hub\" c08a's hub draws in one beat: the alcohol box pulses and its six arrows draw together (alkene to alcohol, haloalkane to alcohol, alcohol to alkene, alcohol to haloalkane, alcohol to aldehyde and ketone, alcohol and aldehyde to acid), each glowing amber for a beat (grey chip \"c08a: the alcohol is a hub\"). Arrows carry short",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Map\". On \"map\" the nine family boxes place one at a time (no arrows yet). On \"hub\" c08a's hub draws in one beat: the alcohol box pulses and its six arrows draw together (alkene to alcohol, haloalkane to alcohol, alcohol to alkene, alcohol to haloalkane, alcohol to aldehyde and ketone, alcohol and aldehyde to acid), each glowing amber for a beat (grey chip \"c08a: the alcohol is a hub\"). Arrows carry short reaction names only, no condition chips: \"hydration\", \"substitution\", \"dehydration\", \"oxidation\", \"esterification\", \"amide formation\". On \"esters\" the acid plus alcohol to ester arrow draws (\"esterification\", grey chip \"c10\"), then the acid to amide arrow with a small reagent chip \"+ amine\" (\"amide formation\", grey chip \"c11\"), so the amine has a visible source although it is not one of the nine boxes. On \"U V light\" the alkane box's arrow to haloalkane draws and brightens briefly (\"substitution\", tag \"alkanes: X₂ and UV light first\", grey chip \"c04b\"). Quieter grey arrows draw without narration, labelled small by name only: alkene to alkane (\"addition of H₂\"), alkene to haloalkane (\"addition of HX\"), ester to carboxylate and alcohol (\"hydrolysis\", c12). Only the arrows of the current sentence are bright; the rest sit at 40%. The map then shrinks to a grey reference card at the right. The map's full condition set lives in the parts file data for chem-m7-g03's import, not on this video's map; its dehydration chip there reads \"conc. H₂SO₄, heat (about 170 °C for ethanol)\". Bright at the end: the map card (dimmed except the alcohol box) and the c08a hub chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "count-carbons",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Move 1: name the groups and count carbons: Move one: name the functional group in the target and in each starting material, and count the carbons.",
+      "narrationCue": "chain / two / three",
+      "motionPurpose": "On the spoken cues: Task chip \"1 Count\". The target and the two starting boxes return. On \"chain\" a short grey strip shows ethanol becoming ethanoic acid with its two carbons ticked \"1, 2\" on both (tag \"groups change, chains stay\"); it leaves. On \"join two molecules\" a grey \"+\" pulses between two halves of a small ester (tag \"only ester and amide formation add chains\"). On \"two\" the carbon tally ticks along the target's ethanoate half,",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"1 Count\". The target and the two starting boxes return. On \"chain\" a short grey strip shows ethanol becoming ethanoic acid with its two carbons ticked \"1, 2\" on both (tag \"groups change, chains stay\"); it leaves. On \"join two molecules\" a grey \"+\" pulses between two halves of a small ester (tag \"only ester and amide formation add chains\"). On \"two\" the carbon tally ticks along the target's ethanoate half, \"1, 2\" (amber), and then the propyl half, \"1, 2, 3\" (pale blue). On \"three\" ethene ticks \"2\" and 1-bromopropane ticks \"3\", and dotted guide lines connect each starting box to the matching half of the target (tag \"2 + 3: counts match\"). Bright at the end: the three boxes with their tallies and the \"counts match\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "work-backwards",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the target sits at the right.",
+      "teachingReason": "Move 2: work backwards from the target: Move two: work backwards from the target.",
+      "narrationCue": "oxygen / ethanol",
+      "motionPurpose": "On the spoken cues: Task chip \"2 Backwards\". A quiet grey tag, not narrated: \"working backwards: retrosynthesis\". On \"oxygen\" the ester cut runs: a scissor line at the single-bonded O; the halves slide apart and relabel \"ethanoic acid, CH₃COOH\" (upper) and \"propan-1-ol, CH₃CH₂CH₂OH\" (lower), each in a box with a dashed amber backward arrow from the target (grey chip \"c10: cut at the single-bonded O\"). On \"ethanol\" the backward hook",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the target sits at the right. Task chip \"2 Backwards\". A quiet grey tag, not narrated: \"working backwards: retrosynthesis\". On \"oxygen\" the ester cut runs: a scissor line at the single-bonded O; the halves slide apart and relabel \"ethanoic acid, CH₃COOH\" (upper) and \"propan-1-ol, CH₃CH₂CH₂OH\" (lower), each in a box with a dashed amber backward arrow from the target (grey chip \"c10: cut at the single-bonded O\"). On \"ethanol\" the backward hook runs from the ethanoic acid box to a \"?\" box that resolves into \"ethanol, CH₃CH₂OH\" (tag \"acid ← primary alcohol\"), then again from ethanol to \"ethene\" (the starting box glows; tag \"← alkene + steam\"). The propan-1-ol box stays with a \"?\" behind it. On the map card, the matching arrows glow amber in reverse order. Bright at the end: the backward chain on the upper arm and the open \"?\" on the lower arm. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "choose-route",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Move 3: choose the route where the position matters: Where does propan-1-ol come from?",
+      "narrationCue": "same / propene / H Br / right carbon",
+      "motionPurpose": "On the spoken cues: Task chip \"3 Choose\". The lower arm of scene 4 sits small at the top with its \"?\" box. On \"same\" 1-bromopropane draws with C1 numbered; the Br lifts off and an OH docks on the same carbon (c06 swap; grey chip \"c06: same carbon\"), giving propan-1-ol (tag \"OH on C1, as needed\"); the lower arm's \"?\" box resolves into \"1-bromopropane\". On \"propene\" the swap result shrinks to the left; propene draws at the centre (teal",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"3 Choose\". The lower arm of scene 4 sits small at the top with its \"?\" box. On \"same\" 1-bromopropane draws with C1 numbered; the Br lifts off and an OH docks on the same carbon (c06 swap; grey chip \"c06: same carbon\"), giving propan-1-ol (tag \"OH on C1, as needed\"); the lower arm's \"?\" box resolves into \"1-bromopropane\". On \"propene\" the swap result shrinks to the left; propene draws at the centre (teal C=C) with a small grey tag \"not one of our starting materials\", and the two-way docker runs (c04a): a water's OH docks ghosted on C1 (faint) and on C2 (bold), giving a small faint \"propan-1-ol\" and a larger \"propan-2-ol\" (tag \"mainly propan-2-ol\"; grey chip \"c04a\"); the \"same carbon\" chip dims. On \"H Br\" a second quick two-way dock runs with HBr, giving a small faint \"1-bromopropane\" and a larger \"2-bromopropane\"; a grey crossed chip \"propene + HBr: same problem\" writes. On \"right carbon\" the propene models and their tags dim, and the propan-1-ol result returns to the centre (tag \"halogen already on the right carbon\"). Bright at the end: the propan-1-ol product, its tag and the completed lower arm. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "write-forwards",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Move 4: write it forwards, with conditions on every arrow: Move four: write the route forwards, in the order you'd carry it out, and put the conditions on every arrow.",
+      "narrationCue": "arrow / reflux / distillation / water / both arrows",
+      "motionPurpose": "On the spoken cues: Task chip \"4 Forwards\". The flow chart builder runs left to right. No plates in this scene (Revision 2). As each new arrow writes, the completed arrows' chips dim to mid-grey, so only the current arrow's chips are bright. Upper arm: box \"ethene, CH₂=CH₂\"; on \"arrow\" the first arrow draws as ⇌ and its chips write in spoken order, \"H₂O (steam)\", \"H₃PO₄ catalyst\", \"about 300 °C, high pressure\"; box \"ethanol, CH₃CH₂OH\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"4 Forwards\". The flow chart builder runs left to right. No plates in this scene (Revision 2). As each new arrow writes, the completed arrows' chips dim to mid-grey, so only the current arrow's chips are bright. Upper arm: box \"ethene, CH₂=CH₂\"; on \"arrow\" the first arrow draws as ⇌ and its chips write in spoken order, \"H₂O (steam)\", \"H₃PO₄ catalyst\", \"about 300 °C, high pressure\"; box \"ethanol, CH₃CH₂OH\" (tag \"intermediate: made, then used\"). On \"reflux\" the second arrow writes \"excess K₂Cr₂O₇ / H⁺\", \"heat under reflux\"; box \"ethanoic acid, CH₃COOH\". On \"distillation\" a grey chip \"c08a: distil → ethanal\" writes beside the arrow and dims. Lower arm: box \"1-bromopropane, CH₃CH₂CH₂Br\"; arrow \"NaOH(aq)\", \"heat under reflux\"; box \"propan-1-ol, CH₃CH₂CH₂OH\". The two arms meet at a join arrow, drawn as ⇌: \"conc. H₂SO₄ (a few drops)\", \"heat under reflux\"; on \"water\" the final box writes \"propyl ethanoate, CH₃COOCH₂CH₂CH₃ + H₂O\". On \"both arrows\" the join arrow's ⇌ and the hydration arrow's ⇌ pulse together (tag \"equilibrium: ⇌\"); neither arrow is redrawn, because both were written as ⇌ when they first drew. On the map card, the four arrows glow amber. The full chart then returns to full ink. Bright at the end: the completed two-arm flow chart (boxes and chips all at full ink, as one diagram), the \"⇌\" tag and the target box's red outline. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "check-arrows",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Check every arrow: Then finish move four: check every arrow, because one wrong arrow breaks the whole route.",
+      "narrationCue": "propan-2-ol / acid / dead end / primary alcohol / overall",
+      "motionPurpose": "On the spoken cues: Task chip \"Check\". A flow chart card titled \"A plan for propanoic acid\" draws: \"propane → propan-2-ol → propanone → propanoic acid\", each arrow with a plausible chip. On \"propan-2-ol\" the cross-out arrow runs on the first arrow (tag \"no direct alkane → alcohol\"); a small grey detour draws under it, \"propane → (Cl₂, UV light) → chloropropanes (mixture) → (NaOH(aq), reflux) → propanols\" (grey chip \"c04b\"). On \"Then it",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Check\". A flow chart card titled \"A plan for propanoic acid\" draws: \"propane → propan-2-ol → propanone → propanoic acid\", each arrow with a plausible chip. On \"propan-2-ol\" the cross-out arrow runs on the first arrow (tag \"no direct alkane → alcohol\"); a small grey detour draws under it, \"propane → (Cl₂, UV light) → chloropropanes (mixture) → (NaOH(aq), reflux) → propanols\" (grey chip \"c04b\"). On \"Then it oxidises\" the detour and the c04b chip dim. On \"acid\" the third arrow is crossed (tag \"ketone: dead end\"); propanone's carbonyl carbon is ringed with \"no H\" (grey chip \"c08a: oxidation needs an H on that carbon\"). On \"dead end\" the ketone box on the map card rings briefly with no arrow leaving it (the card stays small; no enlargement). A small grey chip, not narrated, writes and dims: \"tertiary alcohol: no H on the C–OH carbon: no oxidation by dichromate\". On \"primary alcohol\" the \"no H\" ring and the c08a chip dim; a small amber box \"propan-1-ol, CH₃CH₂CH₂OH\" writes under the crossed chain with a short amber arrow \"excess K₂Cr₂O₇ / H⁺, reflux\" to \"propanoic acid\" (grey chip \"c10: only a primary alcohol oxidises to an acid\"). On \"overall\" three short arrows in a row each shed a small grey \"lost product\" dot (tag \"more steps: lower overall yield\"). Bright at the end: the two crossed arrows, the amber propan-1-ol route and the \"overall yield\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So, name and count, work backwards, choose, then write forwards and check.",
+      "narrationCue": "ethene / haloalkane",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"Work backwards to plan; write forwards to answer.\" Second handwritten line (c10's line, now labelled and with the side road): \"Main road (from ethene): alkene → primary alcohol → acid → ester\", with a small grey tag on \"ethene\" \"hydration gives a primary alcohol only from ethene\"; on \"haloalkane\" a branch draws into \"primary alcohol\" from \"haloalkane, halogen already on the right carbon\". Under",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Work backwards to plan; write forwards to answer.\" Second handwritten line (c10's line, now labelled and with the side road): \"Main road (from ethene): alkene → primary alcohol → acid → ester\", with a small grey tag on \"ethene\" \"hydration gives a primary alcohol only from ethene\"; on \"haloalkane\" a branch draws into \"primary alcohol\" from \"haloalkane, halogen already on the right carbon\". Under them, four small coded cards light one at a time on their cues, each dimming as the next lights: \"1 name groups, count carbons\"; \"2 work backwards: what makes it?\"; \"3 choose: position, conditions\"; \"4 write forwards; check every arrow\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A chemist wants to make pentanoic",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A chemist wants to make pentanoic acid, CH₃CH₂CH₂CH₂COOH. The only available starting materials are pent-1-ene and 1-chloropentane. Construct a flow chart for a two-step synthesis from the better starting material. Include the reagents and conditions for each step, name the intermediate, and justify your choice of starting material.\" No structures, no map. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "pentan-1-ol / reflux / trap",
+      "motionPurpose": "On the spoken cues: On \"pentan-1-ol\" \"1-chloropentane\", \"name the intermediate\" and \"justify your choice\" are underlined; the flow chart writes: box \"1-chloropentane, CH₃CH₂CH₂CH₂CH₂Cl\" → arrow \"NaOH(aq), heat under reflux\" → box \"pentan-1-ol, CH₃CH₂CH₂CH₂CH₂OH\" (the intermediate, bright; C1 numbered; tag \"Cl on C1: OH on C1\"). On \"reflux\" \"pentanoic acid\" and \"reagents and conditions\" are underlined; arrow \"excess K₂Cr₂O₇ / H⁺, heat",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"pentan-1-ol\" \"1-chloropentane\", \"name the intermediate\" and \"justify your choice\" are underlined; the flow chart writes: box \"1-chloropentane, CH₃CH₂CH₂CH₂CH₂Cl\" → arrow \"NaOH(aq), heat under reflux\" → box \"pentan-1-ol, CH₃CH₂CH₂CH₂CH₂OH\" (the intermediate, bright; C1 numbered; tag \"Cl on C1: OH on C1\"). On \"reflux\" \"pentanoic acid\" and \"reagents and conditions\" are underlined; arrow \"excess K₂Cr₂O₇ / H⁺, heat under reflux\" → box \"pentanoic acid, CH₃CH₂CH₂CH₂COOH\" (the answer, bright; tag \"primary → acid\"). On \"trap\" \"pent-1-ene\" is underlined and a chip \"pent-1-ene → (steam) → pentan-2-ol → pentanoic acid\" fades in and is crossed (caption \"a secondary alcohol gives a ketone: dead end\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A chemist has only ethene and butan-1-ol as carbon-containing starting materials.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A chemist has only ethene and",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A chemist has only ethene and butan-1-ol as carbon-containing starting materials. Draw a flow chart to make ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃. Show the reagents and conditions on every arrow.\" No structures, no map. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "ethanol / reflux / trap",
+      "motionPurpose": "On the spoken cues: On \"ethanol\" \"ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃\" is underlined and the ester cut runs on it (halves labelled \"ethyl ← ethanol\", \"butanoate ← butanoic acid\"); then \"ethene\" is underlined and the upper arm writes: \"ethene → (H₂O (steam), H₃PO₄, about 300 °C, high pressure, ⇌) → ethanol\". On \"reflux\" \"butan-1-ol\" and \"on every arrow\" are underlined and the lower arm writes: \"butan-1-ol → (excess K₂Cr₂O₇ / H⁺, heat",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"ethanol\" \"ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃\" is underlined and the ester cut runs on it (halves labelled \"ethyl ← ethanol\", \"butanoate ← butanoic acid\"); then \"ethene\" is underlined and the upper arm writes: \"ethene → (H₂O (steam), H₃PO₄, about 300 °C, high pressure, ⇌) → ethanol\". On \"reflux\" \"butan-1-ol\" and \"on every arrow\" are underlined and the lower arm writes: \"butan-1-ol → (excess K₂Cr₂O₇ / H⁺, heat under reflux) → butanoic acid\"; the join arrow writes \"conc. H₂SO₄, heat under reflux, ⇌\" → \"ethyl butanoate + H₂O\" (the answer, bright). On \"trap\" a chip \"oxidise ethanol; esterify with butan-1-ol\" fades in and is crossed (caption \"gives butyl ethanoate, C₆H₁₂O₂ too\"); `m7-ester-fruit-v1.png` appears small at the right with the pineapple ringed (grey tag \"ethyl butanoate: smells of pineapple\"), then dims. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: So every synthesis question uses the same four moves, on one map.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The memory aid lines return small at the top, and the reaction map card sits at the centre at full size, grey with the main road amber. On \"Next\" `m7-ester-fruit-v1.png` appears small at the right and a chip \"Next: organic synthesis pathway practice\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The memory aid lines return small at the top, and the reaction map card sits at the centre at full size, grey with the main road amber. On \"Next\" `m7-ester-fruit-v1.png` appears small at the right and a chip \"Next: organic synthesis pathway practice\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c13-learning-review.md",
+      "sha256": "f08c83bd8d7f956102eb147d3c37a6691778430c5e3abf9aa034821f2b465a76"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c13-claude-science-check.md",
+      "sha256": "f91d09c08e9934fd5ca13996198f7eba4d7cf78116c50d6c4f899b5513ab5aad"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C14-claude-2026-10-28-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c14/lesson.json",
+  "lessonSha256": "8796276faa072c1d1241cf13fc6538493aa228e782c8394d3892e6dd5d47f127",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c14/lesson.production-brief.json",
+    "sha256": "b561d93e336c1d3048528331e1c705a3acc687f36aa297d716df36e3ed5b1336"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Ethene is a gas. Join thousands of ethene molecules end to end, and you get polyethylene, a solid tough enough for bags and milk bottles. Swap one hydrogen on each ethene for a chlorine, and you get the plastic in grey PVC water pipes. So how does an alkene turn into a solid like this, and why do plastics made from such similar molecules behave so differently?",
+      "hash": "b06f42bea306",
+      "textSha256": "b06f42bea306e3c6c835270d75cb02946df795e15eddd78c4b2f91c857b23b37",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/hook.b06f42bea306.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/hook.b06f42bea306.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/hook.b06f42bea306.generation.json",
+      "plannedRequestSha256": "076113d7bcfcd5dcf0d8badd7ed0ccc1997475b293b86210dbb00a4c01db7174"
+    },
+    {
+      "id": "open-double-bond",
+      "parentSceneId": "open-double-bond",
+      "text": "A small molecule that joins up into a long chain is a monomer, and the chain is a polymer, meaning many parts. Remember, an alkene's double bond has a weaker second bond. In addition polymerisation, that second bond breaks, leaving each carbon with one spare bond. One spare bond links to the chain behind, and the other reaches out to the next monomer. A starter molecule called an initiator opens the first double bond, and each new chain end opens the next one, thousands of times. Nothing else is made. Every atom of every monomer ends up in the chain.",
+      "hash": "7f9ea0a97918",
+      "textSha256": "7f9ea0a97918d4166b130e940b4fba6986c4ac6ec38ba47ef72d0515d214ada8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/open-double-bond.7f9ea0a97918.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/open-double-bond.7f9ea0a97918.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/open-double-bond.7f9ea0a97918.generation.json",
+      "plannedRequestSha256": "d1f7768bf40bcd5e719a84be0f5062e05271ded15cf3994fd058b896743059b9"
+    },
+    {
+      "id": "draw-repeat-unit",
+      "parentSceneId": "draw-repeat-unit",
+      "text": "You can't draw thousands of units, so you draw the part that repeats, once. Take chloroethene. Rewrite it with the double bond as a single bond, and draw a bond sticking out from each of the two carbons, called a continuation bond, to show the chain carries on. Put square brackets around it, with those bonds poking through, and a small n outside, meaning a large number. That's PVC. The two carbons from the double bond form the backbone, and everything else, here the chlorine, hangs off the side.",
+      "hash": "2fc320d585b2",
+      "textSha256": "2fc320d585b212ac5fbe54a0d1a61e5ed2ff18a9806c0666b5ace8941451d4ef",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/draw-repeat-unit.2fc320d585b2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/draw-repeat-unit.2fc320d585b2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/draw-repeat-unit.2fc320d585b2.generation.json",
+      "plannedRequestSha256": "5e56ed06a03e78fe8b3b8fe7d56e2e3c316d7a20cbd1b902adc0af0b47a21724"
+    },
+    {
+      "id": "monomer-from-unit",
+      "parentSceneId": "monomer-from-unit",
+      "text": "To find the monomer from a repeat unit, go backwards. Take the two backbone carbons inside the brackets, remove the two bonds that poke out, and put the double bond back between them. Don't add hydrogens where those bonds were. Once the double bond is back, each carbon already has its four bonds. So polystyrene's repeat unit gives styrene, an ethene with a benzene ring, a ring of six carbons, on one carbon.",
+      "hash": "47735c5be4d2",
+      "textSha256": "47735c5be4d2c29ff49089daa857c17594aa486d61a26c6bcc81168044fb9e00",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/monomer-from-unit.47735c5be4d2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/monomer-from-unit.47735c5be4d2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/monomer-from-unit.47735c5be4d2.generation.json",
+      "plannedRequestSha256": "827a0740e49b8e0ef7dc50166fd92e669aa1fa80a5aa407278c0ea7bb353cf1a"
+    },
+    {
+      "id": "solid-thermoplastic",
+      "parentSceneId": "solid-thermoplastic",
+      "text": "So why is polyethylene a solid, when ethene is a gas? Each chain is huge, and it lies alongside its neighbours for thousands of carbons. Dispersion forces act all along that contact, so together they hold the chains firmly. No bonds join one chain to another, only these forces. Warm the plastic, and the chains move faster, until they can slide past each other, so it softens and can be moulded. Cool it, and the forces hold the chains again. The covalent bonds inside each chain don't break. A plastic that softens like this, again and again, is a thermoplastic, and that's what lets it be melted down and recycled.",
+      "hash": "ec9e0b4a590f",
+      "textSha256": "ec9e0b4a590f82af4bb21ea7133e47b0a4ac9802ae0c370a08293852bf06dd1c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/solid-thermoplastic.ec9e0b4a590f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/solid-thermoplastic.ec9e0b4a590f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/solid-thermoplastic.ec9e0b4a590f.generation.json",
+      "plannedRequestSha256": "722a6c4ca15e9221717a8c4ac57ab829c10f70279da409e2c42debb9102fb6e6"
+    },
+    {
+      "id": "ldpe-hdpe",
+      "parentSceneId": "ldpe-hdpe",
+      "text": "Polyethylene comes in two main forms, made under different conditions. Low density polyethylene, LDPE, has short branches sticking out of its chains. The branches stop the chains lying close together, so there's less contact, and weaker dispersion forces between them. It's softer and less dense, and it melts at a lower temperature, about a hundred and ten degrees. That suits squeeze bottles and thin films. High density polyethylene, HDPE, has long straight chains that pack closely, with regions lined up neatly. More contact means stronger forces, so it's denser and stiffer, and it melts nearer a hundred and thirty degrees. That suits crates and milk bottles.",
+      "hash": "a29e3480b1db",
+      "textSha256": "a29e3480b1db4a5d0376bf29ace674918314dde4e97eef2cef883325b64d08fb",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/ldpe-hdpe.a29e3480b1db.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/ldpe-hdpe.a29e3480b1db.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/ldpe-hdpe.a29e3480b1db.generation.json",
+      "plannedRequestSha256": "a46acc082163d0cc4329a011c990315debe249b545211d33a5235a10e0b0b498"
+    },
+    {
+      "id": "pvc",
+      "parentSceneId": "pvc",
+      "text": "Now change the monomer. In PVC, every second carbon carries a chlorine, and the carbon chlorine bond is polar. So neighbouring chains also attract each other by dipole-dipole forces, on top of dispersion. The chains grip each other harder, which makes plain PVC rigid, good for water pipes. Mix in small molecules called plasticisers, and they push the chains apart, so the PVC turns flexible, like the coating on electrical cables.",
+      "hash": "9b73b70ff4b0",
+      "textSha256": "9b73b70ff4b0345d8a55a02a7446a99dcf061766664bc2492d219f2ec8449cc5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/pvc.9b73b70ff4b0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/pvc.9b73b70ff4b0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/pvc.9b73b70ff4b0.generation.json",
+      "plannedRequestSha256": "64717dd673b80c3c7dd529debe119dee16ff241d706a411c63d3e984d37f2191"
+    },
+    {
+      "id": "polystyrene",
+      "parentSceneId": "polystyrene",
+      "text": "Polystyrene has a bulky benzene ring on every second carbon. You might expect that to make it soft, like LDPE's branches. But these rings are big and stiff, and they catch on the rings of neighbouring chains, so at room temperature the chains can hardly move or slide. That makes solid polystyrene rigid, and it snaps rather than bends. Blow gas into it as it sets, and you get a foam, light and full of trapped air, so it's a good insulator for hot drink cups.",
+      "hash": "387e1a7d93f4",
+      "textSha256": "387e1a7d93f475031efcc080612f5980f6a39c9038d35f77abdcac7311f3e105",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/polystyrene.387e1a7d93f4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/polystyrene.387e1a7d93f4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/polystyrene.387e1a7d93f4.generation.json",
+      "plannedRequestSha256": "606c9747c4599d492c2ffa5590b9d81dafa229060522b85106930a15d64e6f07"
+    },
+    {
+      "id": "ptfe",
+      "parentSceneId": "ptfe",
+      "text": "Finally, swap every hydrogen in ethene for fluorine, and polymerise tetrafluoroethene. You get PTFE. Carbon fluorine bonds are among the strongest single bonds carbon makes, and the fluorine atoms wrap closely around the backbone, so very few chemicals can attack it. The C F bonds are polar, but the fluorines surround the chain evenly, so their pulls largely cancel. And fluorine holds its electrons so tightly that they hardly shift, so other substances form only very weak dispersion forces with the surface. So almost nothing sticks to it. That's why it coats non-stick pans, and makes plumber's tape.",
+      "hash": "9ea3931b56e0",
+      "textSha256": "9ea3931b56e0c8ae38eca502d853a2a7cb751fcd0b2368da6e35d822ea543998",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/ptfe.9ea3931b56e0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/ptfe.9ea3931b56e0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/ptfe.9ea3931b56e0.generation.json",
+      "plannedRequestSha256": "022599997b1cef84b601735506ef0d893c6692d7a5d0658dfddc3df58bcce48b"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, to draw an addition polymer, open the double bond and add brackets, and remember, nothing is lost. To explain a property, trace it back. The branching or the side group sets how closely the chains pack, and how hard they pull on each other, and that decides the use. PTFE's resistance to chemicals is the exception: that comes from its strong C F bonds.",
+      "hash": "a261f7458db3",
+      "textSha256": "a261f7458db3a8cf1f445a3e6a078c1e7b2391aa78d6096db7329570383c1a20",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/memory-aid.a261f7458db3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/memory-aid.a261f7458db3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/memory-aid.a261f7458db3.generation.json",
+      "plannedRequestSha256": "eee7dc811c1301c43f1149475d4f685f6f0a5306096c04315f32c864337581ec"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. 1,1-dichloroethene forms an addition polymer. Draw its repeat unit. Then, another addition polymer has the repeat unit shown. Name and draw its monomer. Pause here to answer.",
+      "hash": "18c7deadfa84",
+      "textSha256": "18c7deadfa8442747d3942d295a58f382f5fc12bbc4e900d99e72b4249e163cf",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/attempt-1.18c7deadfa84.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/attempt-1.18c7deadfa84.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/attempt-1.18c7deadfa84.generation.json",
+      "plannedRequestSha256": "81082674824f4f96c54ed520705f8370d01492fd064ac9762ea0c52ca16140e1"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Open the double bond, keep both chlorines on the same carbon, and add the continuation bonds, the brackets and the n. For the second one, put the double bond back between the backbone carbons. That's propene, with the methyl group hanging off the side. Adding hydrogens where the continuation bonds were is the trap. That gives propane, which can't polymerise.",
+      "hash": "63de388eb9ba",
+      "textSha256": "63de388eb9ba0eebc2c18c197601ab11f652141b8c83b3f5ed24ffde06f9ebdd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/feedback-1.63de388eb9ba.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/feedback-1.63de388eb9ba.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/feedback-1.63de388eb9ba.generation.json",
+      "plannedRequestSha256": "7917ca1861b9986f52e2f6a4f61260c71c13e17257cd26b32e9036f177284ab7"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. HDPE is used for rigid chopping boards, and LDPE for soft squeeze bottles, and both are made from ethene. Explain how differences in their chain structure cause these properties, and why both can be melted and remoulded for recycling. Pause here to answer.",
+      "hash": "5873de735d39",
+      "textSha256": "5873de735d39223fdebdc4a169ede7ed59c60d8439beac558c95bc22b01a9365",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/attempt-2.5873de735d39.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/attempt-2.5873de735d39.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/attempt-2.5873de735d39.generation.json",
+      "plannedRequestSha256": "66cc7e95d5864a3bb1bf726ee9831f5640cd5ec08a015940a8581eea57f95622"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "HDPE's straight chains pack closely, giving more contact and stronger dispersion forces, so it's stiff. LDPE's branches keep its chains apart, so the forces are weaker, and it's softer. No bonds join one chain to another, so heating lets the chains slide, and they can be remoulded. Saying melting breaks the bonds in the chains is the trap. Only the forces between the chains are overcome.",
+      "hash": "3d82e860230c",
+      "textSha256": "3d82e860230c4941c82a388ffe52d492e05a1da1ff9a908714d9ebdb02f56779",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/feedback-2.3d82e860230c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/feedback-2.3d82e860230c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/feedback-2.3d82e860230c.generation.json",
+      "plannedRequestSha256": "8dd8f405e5a6e31e4ec2b251eb526c6b5eabd97a31c252757e81c6cdad2de08c"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "Next: polymers that give something off, usually water, every time two monomers join.",
+      "hash": "900ef8b772ae",
+      "textSha256": "900ef8b772ae164b0a6911b949ba90e1b218f2f33d1c28990cbd68eb03d72621",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/handoff.900ef8b772ae.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/handoff.900ef8b772ae.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/handoff.900ef8b772ae.generation.json",
+      "plannedRequestSha256": "d63429c35a4dff62840164490f9bf69795d94827b35da9b4af1acbc3e8f6f975"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C14-claude-2026-10-28-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

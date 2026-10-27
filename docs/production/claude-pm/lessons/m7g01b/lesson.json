@@ -1,0 +1,148 @@
+{
+  "title": "Outbreak Data Practice: Denominators, Incidence, Prevalence, Control",
+  "subtitle": "When an outbreak question gives you a table or a graph, how do you find the right denominator, calculate incidence and prevalence, and use the data to justify a control?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 20,
+  "lessonIntent": "calculating the percentage ill in each lunch group at Camp Wollemi with each group's own denominator (16 of 28, about 57 per cent; 0 of 14) and evaluating the person-to-person claim from the epidemic curve (two sharp clusters, each 8 to 18 hours after a meal containing the same leftover chicken, nothing between, and none ill among salad-roll eaters who shared cabins), so one food source eaten twice, not person-to-person spread; calculating malaria incidence per 1,000 per year with the whole population as denominator (12, then 2) and prevalence of infection with the people tested as denominator (2.5 per cent, then 0.3 per cent), and explaining that bed nets cut bites and so new infections (the tap), which lowers prevalence too, while same-day testing and treatment shortens infections (the tank), so prevalence falls further, and leaves fewer parasites for mosquitoes to pick up; reading a cholera epidemic curve against two interventions (cases kept rising after household quarantine and fell within a week of chlorination and toilet repair; they did not stop at once, because people infected just before chlorination could still fall ill up to 5 days later) and justifying environmental management over quarantine (cholera travels in contaminated water; chlorine and toilets break that link for everyone; quarantine misses the many infected people with mild or no symptoms who still pass the bacteria).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Outbreak questions hand you a table or a graph and ask what's going on. Most of them turn on one habit. Before you compare anything, find the denominator, the number you divide by. Then link the numbers to a cause, and the cause to a control. Here are three HSC-style questions. Pause and try each one, then we'll work through it together."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. Sixty students arrive at Camp Wollemi on Monday. Everyone eats chicken pasta for dinner, and overnight, eighteen fall ill. On Tuesday, the well students have lunch. Some eat sandwiches made from Monday's leftover chicken, and the rest eat salad rolls. That night, sixteen more fall ill. Calculate the percentage who fell ill in each lunch group. Then evaluate the director's claim that the illness spread from person to person. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-denominator",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the denominator. The question asks about each lunch group, so divide by the number who ate each lunch, not by the whole camp. Sixteen of the twenty-eight who ate the sandwiches fell ill. That's about fifty-seven per cent. None of the fourteen who ate salad rolls fell ill. That's zero. Now the two groups compare fairly, because each number is out of the people who had that food."
+      }
+    },
+    {
+      "id": "q1-claim",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the claim. Read the epidemic curve. There are two sharp clusters, each the night after a meal with the chicken, about eight to eighteen hours later, and nothing in between. That fits the six to twenty-four hours this bacterium takes. If it spread from person to person, cases would usually keep appearing in rising waves for days. And the salad roll group shared cabins with sick students, yet none fell ill. So the claim isn't supported. It was one food source, eaten twice. So the control that fits is cooling cooked meat quickly and throwing out leftovers, because this bacterium multiplies in meat that cools slowly."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is dividing by sixty. Sixteen out of sixty is about twenty-seven per cent, but that mixes in students who never ate the sandwiches, so it can't show which food was the problem. Always divide by the people who could have caught it."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. A province in South East Asia had malaria. From twenty nineteen, every household got treated bed nets, and village health workers began testing and treating fevers on the same day. The table gives the population, the new cases, and a blood survey, for twenty eighteen and twenty twenty-three. Calculate the incidence per thousand people per year, and the prevalence of infection, for each year. Then explain how each measure could cause these changes. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-calc",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Incidence first. That's new cases in a year, divided by the people at risk, here the whole population. For twenty eighteen, four thousand eight hundred, divided by four hundred thousand, times a thousand, is twelve per thousand. For twenty twenty-three, eight hundred and forty, divided by four hundred and twenty thousand, times a thousand, is two. Prevalence is the share infected at one time, so its denominator is the people tested. Fifty of two thousand is two and a half per cent. Six of two thousand is zero point three per cent."
+      }
+    },
+    {
+      "id": "q2-explain",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now link each measure to the tap or the tank. Bed nets mean fewer bites by Anopheles, which bite mostly at night, so fewer people get new infections. That turns down the tap, so incidence falls, and with less flowing in, the tank falls too. Same-day testing and treatment clears each infection sooner, so people stay infected for less time. That drains the tank faster, so prevalence falls further. And with fewer infected people, mosquitoes pick up fewer parasites, so new cases fall even more."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is dividing the fifty positives by the whole province. Only two thousand people were tested, so fifty out of four hundred thousand makes infection look two hundred times rarer than it is."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. After a flood in Town V, the water supply and toilets were damaged, and cholera broke out. The graph shows new cases each week. In week three, health workers quarantined the household of every case for five days. In week six, they chlorinated all drinking water and repaired the toilets. Using the graph, identify which measure was followed by a fall in cases. Then justify using environmental management, rather than quarantine, to control this outbreak. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-graph",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Read the graph against the two arrows. After the quarantine in week three, cases kept rising, from fifteen to thirty-eight. After chlorination in week six, cases fell within a week, from thirty-eight to twenty-two, then to one by week ten. Cases didn't stop at once, because people who swallowed the bacteria just before chlorination could still fall ill up to five days later."
+      }
+    },
+    {
+      "id": "q3-justify",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now justify. Cholera spreads mainly through water or food contaminated with faeces. Chlorine kills the bacteria in the water, and repaired toilets keep faeces out of it. So environmental management breaks the travel link for everyone at once, and nobody has to be sick first. Quarantine only holds the households of known cases. But most infected people have mild or no symptoms, and still pass the bacteria, so many are never found, and the water keeps infecting new people anyway."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is writing that quarantine works because it keeps infected people away from others. That helps when people pass a disease to each other. Here, it was mainly the water passing it on."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start each type. For a table, find the denominator: who could have caught it, or who was tested. For a change in incidence or prevalence, ask whether the tap or the tank changed. For a control, find the route, then the link the measure breaks, and check the timing. Next, how disease control ideas have changed over time."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

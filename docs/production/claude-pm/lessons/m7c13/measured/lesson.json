@@ -1,0 +1,7491 @@
+{
+  "title": "How can a reaction map plan organic synthesis? Work backwards from the target, write the route forwards, and check every arrow",
+  "subtitle": "You want a pear-scented ester, but all you have is a gas and a haloalkane. How do you plan a route from the compounds you have to the one you want, and show it as a flow chart?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 21,
+  "lessonIntent": "building a reaction map; counting carbons; working backwards from a target; choosing a route by position and by conditions; drawing a multi-step flow chart (including two arms that join) with reagents, conditions and named intermediates; spotting arrows that don't exist. No mechanisms, no reductions, no yield calculations.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 826,
+      "voiceover": {
+        "text": "Propyl ethanoate is an ester that smells a lot like pears. Suppose the only carbon compounds you're allowed to start from are ethene, a gas, and 1-bromopropane, a haloalkane. Neither one looks anything like the ester. Making a target compound from simpler ones is called a synthesis. So how do you plan a route from what you have to what you want, and show it as a flow chart?",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/hook.7d33c7b0aa2d.mp3",
+        "startFrame": 0,
+        "endFrame": 766
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Propyl",
+          "startMs": 0,
+          "endMs": 280,
+          "timestampMs": 140,
+          "confidence": null
+        },
+        {
+          "text": " ethanoate",
+          "startMs": 320,
+          "endMs": 960,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 1040,
+          "endMs": 1160,
+          "timestampMs": 1100,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 1200,
+          "endMs": 1360,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " ester",
+          "startMs": 1440,
+          "endMs": 1872,
+          "timestampMs": 1656,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 1920,
+          "endMs": 2060,
+          "timestampMs": 1990,
+          "confidence": null
+        },
+        {
+          "text": " smells",
+          "startMs": 2080,
+          "endMs": 2420,
+          "timestampMs": 2250,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2480,
+          "endMs": 2520,
+          "timestampMs": 2500,
+          "confidence": null
+        },
+        {
+          "text": " lot",
+          "startMs": 2560,
+          "endMs": 2880,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 2960,
+          "endMs": 3170,
+          "timestampMs": 3065,
+          "confidence": null
+        },
+        {
+          "text": " pears.",
+          "startMs": 3200,
+          "endMs": 4160,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " Suppose",
+          "startMs": 4480,
+          "endMs": 4800,
+          "timestampMs": 4640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 5120,
+          "endMs": 5360,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 5440,
+          "endMs": 5760,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " compounds",
+          "startMs": 5840,
+          "endMs": 6320,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " you're",
+          "startMs": 6400,
+          "endMs": 6480,
+          "timestampMs": 6440,
+          "confidence": null
+        },
+        {
+          "text": " allowed",
+          "startMs": 6600,
+          "endMs": 6720,
+          "timestampMs": 6660,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 7040,
+          "endMs": 7200,
+          "timestampMs": 7120,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 7280,
+          "endMs": 7520,
+          "timestampMs": 7400,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 7680,
+          "endMs": 7920,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " ethene,",
+          "startMs": 8080,
+          "endMs": 8800,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8840,
+          "endMs": 8880,
+          "timestampMs": 8860,
+          "confidence": null
+        },
+        {
+          "text": " gas,",
+          "startMs": 8960,
+          "endMs": 9680,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9760,
+          "endMs": 9920,
+          "timestampMs": 9840,
+          "confidence": null
+        },
+        {
+          "text": " 1-bromopropane,",
+          "startMs": 10080,
+          "endMs": 11520,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11560,
+          "endMs": 11600,
+          "timestampMs": 11580,
+          "confidence": null
+        },
+        {
+          "text": " haloalkane.",
+          "startMs": 11680,
+          "endMs": 12560,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " Neither",
+          "startMs": 13120,
+          "endMs": 13440,
+          "timestampMs": 13280,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " looks",
+          "startMs": 13760,
+          "endMs": 13920,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " anything",
+          "startMs": 14000,
+          "endMs": 14400,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 14480,
+          "endMs": 14640,
+          "timestampMs": 14560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14680,
+          "endMs": 14720,
+          "timestampMs": 14700,
+          "confidence": null
+        },
+        {
+          "text": " ester.",
+          "startMs": 14800,
+          "endMs": 15280,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " Making",
+          "startMs": 16000,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16320,
+          "endMs": 16400,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " target",
+          "startMs": 16480,
+          "endMs": 16800,
+          "timestampMs": 16640,
+          "confidence": null
+        },
+        {
+          "text": " compound",
+          "startMs": 16880,
+          "endMs": 17360,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 17440,
+          "endMs": 17520,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " simpler",
+          "startMs": 17600,
+          "endMs": 17920,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " ones",
+          "startMs": 18000,
+          "endMs": 18320,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 18400,
+          "endMs": 18560,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 18640,
+          "endMs": 18880,
+          "timestampMs": 18760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18960,
+          "endMs": 19040,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " synthesis.",
+          "startMs": 19120,
+          "endMs": 19840,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 20560,
+          "endMs": 20640,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 20720,
+          "endMs": 20760,
+          "timestampMs": 20740,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 20800,
+          "endMs": 20880,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " plan",
+          "startMs": 20960,
+          "endMs": 21120,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 21200,
+          "endMs": 21240,
+          "timestampMs": 21220,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 21280,
+          "endMs": 21520,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 21600,
+          "endMs": 21680,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 21760,
+          "endMs": 21840,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 21920,
+          "endMs": 22080,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 22160,
+          "endMs": 22560,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 22720,
+          "endMs": 22800,
+          "timestampMs": 22760,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 22880,
+          "endMs": 22960,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " want,",
+          "startMs": 23200,
+          "endMs": 23840,
+          "timestampMs": 23520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23960,
+          "endMs": 24080,
+          "timestampMs": 24020,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 24160,
+          "endMs": 24320,
+          "timestampMs": 24240,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 24400,
+          "endMs": 24480,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 24560,
+          "endMs": 24640,
+          "timestampMs": 24600,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 24680,
+          "endMs": 24720,
+          "timestampMs": 24700,
+          "confidence": null
+        },
+        {
+          "text": " flow",
+          "startMs": 24800,
+          "endMs": 24960,
+          "timestampMs": 24880,
+          "confidence": null
+        },
+        {
+          "text": " chart?",
+          "startMs": 25040,
+          "endMs": 25520,
+          "timestampMs": 25280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "reaction-map",
+      "type": "concept",
+      "durationInFrames": 1150,
+      "voiceover": {
+        "text": "Good news: you've already met every reaction you need. Put them all on one map. Each box is a family of compounds, and each arrow is a reaction from an earlier video. You've seen the middle already: the alcohol is the hub. Alkenes and haloalkanes make alcohols, and alcohols lead on to alkenes, haloalkanes, aldehydes, ketones and acids. Now add the joining arrows. Acids join alcohols to make esters, or amines to make amides. And alkanes need a halogen and U V light before they can join in at all.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/reaction-map.8d50590ec5b7.mp3",
+        "startFrame": 0,
+        "endFrame": 1090
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Good",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " news:",
+          "startMs": 240,
+          "endMs": 1040,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " you've",
+          "startMs": 1120,
+          "endMs": 1360,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 1440,
+          "endMs": 1840,
+          "timestampMs": 1640,
+          "confidence": null
+        },
+        {
+          "text": " met",
+          "startMs": 1920,
+          "endMs": 2160,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 2320,
+          "endMs": 2560,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 2640,
+          "endMs": 3120,
+          "timestampMs": 2880,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 3200,
+          "endMs": 3280,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " need.",
+          "startMs": 3360,
+          "endMs": 3920,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " Put",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 4320,
+          "endMs": 4480,
+          "timestampMs": 4400,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 4720,
+          "endMs": 4800,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " map.",
+          "startMs": 5120,
+          "endMs": 5720,
+          "timestampMs": 5420,
+          "confidence": null
+        },
+        {
+          "text": " Each",
+          "startMs": 6000,
+          "endMs": 6240,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " box",
+          "startMs": 6320,
+          "endMs": 6640,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " family",
+          "startMs": 7040,
+          "endMs": 7360,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " compounds,",
+          "startMs": 7680,
+          "endMs": 8400,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 8640,
+          "endMs": 8800,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " arrow",
+          "startMs": 8880,
+          "endMs": 9360,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 9440,
+          "endMs": 9520,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9560,
+          "endMs": 9600,
+          "timestampMs": 9580,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 9880,
+          "endMs": 10160,
+          "timestampMs": 10020,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 10400,
+          "endMs": 10480,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " earlier",
+          "startMs": 10560,
+          "endMs": 10800,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " video.",
+          "startMs": 10880,
+          "endMs": 11840,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " You've",
+          "startMs": 11880,
+          "endMs": 12080,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " seen",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12320,
+          "endMs": 12400,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " middle",
+          "startMs": 12520,
+          "endMs": 12640,
+          "timestampMs": 12580,
+          "confidence": null
+        },
+        {
+          "text": " already:",
+          "startMs": 12720,
+          "endMs": 13520,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13600,
+          "endMs": 13680,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " alcohol",
+          "startMs": 13800,
+          "endMs": 14320,
+          "timestampMs": 14060,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14400,
+          "endMs": 14480,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " hub.",
+          "startMs": 14800,
+          "endMs": 15520,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " Alkenes",
+          "startMs": 15640,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " haloalkanes",
+          "startMs": 16320,
+          "endMs": 17200,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 17280,
+          "endMs": 17520,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " alcohols,",
+          "startMs": 17600,
+          "endMs": 18533,
+          "timestampMs": 18066.5,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18587,
+          "endMs": 18640,
+          "timestampMs": 18613.5,
+          "confidence": null
+        },
+        {
+          "text": " alcohols",
+          "startMs": 18720,
+          "endMs": 19360,
+          "timestampMs": 19040,
+          "confidence": null
+        },
+        {
+          "text": " lead",
+          "startMs": 19480,
+          "endMs": 19600,
+          "timestampMs": 19540,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 19680,
+          "endMs": 19760,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 19840,
+          "endMs": 19920,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " alkenes,",
+          "startMs": 20040,
+          "endMs": 20720,
+          "timestampMs": 20380,
+          "confidence": null
+        },
+        {
+          "text": " haloalkanes,",
+          "startMs": 20840,
+          "endMs": 21840,
+          "timestampMs": 21340,
+          "confidence": null
+        },
+        {
+          "text": " aldehydes,",
+          "startMs": 21920,
+          "endMs": 22720,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " ketones",
+          "startMs": 22880,
+          "endMs": 23280,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23440,
+          "endMs": 23600,
+          "timestampMs": 23520,
+          "confidence": null
+        },
+        {
+          "text": " acids.",
+          "startMs": 23720,
+          "endMs": 24800,
+          "timestampMs": 24260,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 24960,
+          "endMs": 25120,
+          "timestampMs": 25040,
+          "confidence": null
+        },
+        {
+          "text": " add",
+          "startMs": 25200,
+          "endMs": 25280,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25360,
+          "endMs": 25440,
+          "timestampMs": 25400,
+          "confidence": null
+        },
+        {
+          "text": " joining",
+          "startMs": 25520,
+          "endMs": 25840,
+          "timestampMs": 25680,
+          "confidence": null
+        },
+        {
+          "text": " arrows.",
+          "startMs": 25920,
+          "endMs": 26880,
+          "timestampMs": 26400,
+          "confidence": null
+        },
+        {
+          "text": " Acids",
+          "startMs": 26960,
+          "endMs": 27440,
+          "timestampMs": 27200,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 27520,
+          "endMs": 27760,
+          "timestampMs": 27640,
+          "confidence": null
+        },
+        {
+          "text": " alcohols",
+          "startMs": 27840,
+          "endMs": 28400,
+          "timestampMs": 28120,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 28440,
+          "endMs": 28480,
+          "timestampMs": 28460,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 28560,
+          "endMs": 28720,
+          "timestampMs": 28640,
+          "confidence": null
+        },
+        {
+          "text": " esters,",
+          "startMs": 28800,
+          "endMs": 29520,
+          "timestampMs": 29160,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 29600,
+          "endMs": 29840,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " amines",
+          "startMs": 29920,
+          "endMs": 30480,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 30520,
+          "endMs": 30560,
+          "timestampMs": 30540,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 30640,
+          "endMs": 30800,
+          "timestampMs": 30720,
+          "confidence": null
+        },
+        {
+          "text": " amides.",
+          "startMs": 30880,
+          "endMs": 31920,
+          "timestampMs": 31400,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 32000,
+          "endMs": 32080,
+          "timestampMs": 32040,
+          "confidence": null
+        },
+        {
+          "text": " alkanes",
+          "startMs": 32240.000000000004,
+          "endMs": 32720,
+          "timestampMs": 32480,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 32800,
+          "endMs": 32960,
+          "timestampMs": 32880,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 33000,
+          "endMs": 33040,
+          "timestampMs": 33020,
+          "confidence": null
+        },
+        {
+          "text": " halogen",
+          "startMs": 33160,
+          "endMs": 33600,
+          "timestampMs": 33380,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 33680,
+          "endMs": 33840,
+          "timestampMs": 33760,
+          "confidence": null
+        },
+        {
+          "text": " U",
+          "startMs": 33920,
+          "endMs": 34000,
+          "timestampMs": 33960,
+          "confidence": null
+        },
+        {
+          "text": " V",
+          "startMs": 34080,
+          "endMs": 34240,
+          "timestampMs": 34160,
+          "confidence": null
+        },
+        {
+          "text": " light",
+          "startMs": 34320,
+          "endMs": 34640,
+          "timestampMs": 34480,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 34720,
+          "endMs": 34960,
+          "timestampMs": 34840,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 35040,
+          "endMs": 35120,
+          "timestampMs": 35080,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 35200,
+          "endMs": 35280,
+          "timestampMs": 35240,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 35360,
+          "endMs": 35520,
+          "timestampMs": 35440,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 35600,
+          "endMs": 35680,
+          "timestampMs": 35640,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 35760,
+          "endMs": 35840,
+          "timestampMs": 35800,
+          "confidence": null
+        },
+        {
+          "text": " all.",
+          "startMs": 35960,
+          "endMs": 36320,
+          "timestampMs": 36140,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "count-carbons",
+      "type": "concept",
+      "durationInFrames": 1181,
+      "voiceover": {
+        "text": "Move one: name the functional group in the target and in each starting material, and count the carbons. The reactions on this map change the functional group, but they don't break the carbon chain, so the chain keeps its length. The only arrows that join two molecules are the ones that make esters and amides, so their carbons add up. Propyl ethanoate has an ethanoate part, with two carbons, and a propyl part, with three. Ethene has two carbons, and 1-bromopropane has three. The counts already match. If they didn't, you'd need a joining step, or a different start.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/count-carbons.175234461df5.mp3",
+        "startFrame": 0,
+        "endFrame": 1121
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Move",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " one:",
+          "startMs": 320,
+          "endMs": 1120,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " name",
+          "startMs": 1200,
+          "endMs": 1440,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1480,
+          "endMs": 1520,
+          "timestampMs": 1500,
+          "confidence": null
+        },
+        {
+          "text": " functional",
+          "startMs": 1600,
+          "endMs": 2000,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 2080,
+          "endMs": 2240,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2320,
+          "endMs": 2360,
+          "timestampMs": 2340,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " target",
+          "startMs": 2560,
+          "endMs": 2960,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3120,
+          "endMs": 3360,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 3440,
+          "endMs": 3520,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 3600,
+          "endMs": 3680,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 3760,
+          "endMs": 4080,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " material,",
+          "startMs": 4160,
+          "endMs": 4880,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 4960,
+          "endMs": 5040,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " count",
+          "startMs": 5120,
+          "endMs": 5360,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5400,
+          "endMs": 5440,
+          "timestampMs": 5420,
+          "confidence": null
+        },
+        {
+          "text": " carbons.",
+          "startMs": 5520,
+          "endMs": 6480,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 6800,
+          "endMs": 6840,
+          "timestampMs": 6820,
+          "confidence": null
+        },
+        {
+          "text": " reactions",
+          "startMs": 6880,
+          "endMs": 7360,
+          "timestampMs": 7120,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 7600,
+          "endMs": 7680,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " map",
+          "startMs": 7760,
+          "endMs": 8000,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 8160,
+          "endMs": 8480,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8560,
+          "endMs": 8600,
+          "timestampMs": 8580,
+          "confidence": null
+        },
+        {
+          "text": " functional",
+          "startMs": 8640,
+          "endMs": 9040,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " group,",
+          "startMs": 9120,
+          "endMs": 9600,
+          "timestampMs": 9360,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 9640,
+          "endMs": 9680,
+          "timestampMs": 9660,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 9760,
+          "endMs": 9840,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 9920,
+          "endMs": 10160,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " break",
+          "startMs": 10320,
+          "endMs": 10560,
+          "timestampMs": 10440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10640,
+          "endMs": 10680,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 10720,
+          "endMs": 11040,
+          "timestampMs": 10880,
+          "confidence": null
+        },
+        {
+          "text": " chain,",
+          "startMs": 11200,
+          "endMs": 11840,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 11920,
+          "endMs": 12000,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12040,
+          "endMs": 12080,
+          "timestampMs": 12060,
+          "confidence": null
+        },
+        {
+          "text": " chain",
+          "startMs": 12240,
+          "endMs": 12560,
+          "timestampMs": 12400,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 12640,
+          "endMs": 12880,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " length.",
+          "startMs": 13120,
+          "endMs": 13600,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 14240,
+          "endMs": 14320,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 14400,
+          "endMs": 14640,
+          "timestampMs": 14520,
+          "confidence": null
+        },
+        {
+          "text": " arrows",
+          "startMs": 14720,
+          "endMs": 15120,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 15160,
+          "endMs": 15200,
+          "timestampMs": 15180,
+          "confidence": null
+        },
+        {
+          "text": " join",
+          "startMs": 15360,
+          "endMs": 15600,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 15680,
+          "endMs": 15760,
+          "timestampMs": 15720,
+          "confidence": null
+        },
+        {
+          "text": " molecules",
+          "startMs": 15840,
+          "endMs": 16400,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16720,
+          "endMs": 16800,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " ones",
+          "startMs": 16880,
+          "endMs": 17040,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 17120,
+          "endMs": 17200,
+          "timestampMs": 17160,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 17280,
+          "endMs": 17440,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " esters",
+          "startMs": 17520,
+          "endMs": 18000,
+          "timestampMs": 17760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18080,
+          "endMs": 18160,
+          "timestampMs": 18120,
+          "confidence": null
+        },
+        {
+          "text": " amides,",
+          "startMs": 18240,
+          "endMs": 19120,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 19360,
+          "endMs": 19520,
+          "timestampMs": 19440,
+          "confidence": null
+        },
+        {
+          "text": " carbons",
+          "startMs": 19600,
+          "endMs": 20080,
+          "timestampMs": 19840,
+          "confidence": null
+        },
+        {
+          "text": " add",
+          "startMs": 20160,
+          "endMs": 20240,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " up.",
+          "startMs": 20320,
+          "endMs": 20640,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " Propyl",
+          "startMs": 21120,
+          "endMs": 21440,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " ethanoate",
+          "startMs": 21520,
+          "endMs": 22160,
+          "timestampMs": 21840,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 22240,
+          "endMs": 22400,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 22440,
+          "endMs": 22480,
+          "timestampMs": 22460,
+          "confidence": null
+        },
+        {
+          "text": " ethanoate",
+          "startMs": 22600,
+          "endMs": 23120,
+          "timestampMs": 22860,
+          "confidence": null
+        },
+        {
+          "text": " part,",
+          "startMs": 23280,
+          "endMs": 23600,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 23680,
+          "endMs": 23760,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 23840,
+          "endMs": 23920,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " carbons,",
+          "startMs": 24000,
+          "endMs": 24800,
+          "timestampMs": 24400,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24840,
+          "endMs": 24880,
+          "timestampMs": 24860,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 24960,
+          "endMs": 25000,
+          "timestampMs": 24980,
+          "confidence": null
+        },
+        {
+          "text": " propyl",
+          "startMs": 25040,
+          "endMs": 25440,
+          "timestampMs": 25240,
+          "confidence": null
+        },
+        {
+          "text": " part,",
+          "startMs": 25600,
+          "endMs": 25920,
+          "timestampMs": 25760,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 26000,
+          "endMs": 26080,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 26160,
+          "endMs": 26640,
+          "timestampMs": 26400,
+          "confidence": null
+        },
+        {
+          "text": " Ethene",
+          "startMs": 27280,
+          "endMs": 27760,
+          "timestampMs": 27520,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 27840,
+          "endMs": 28000,
+          "timestampMs": 27920,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 28080,
+          "endMs": 28240,
+          "timestampMs": 28160,
+          "confidence": null
+        },
+        {
+          "text": " carbons,",
+          "startMs": 28320,
+          "endMs": 29120,
+          "timestampMs": 28720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 29200,
+          "endMs": 29280,
+          "timestampMs": 29240,
+          "confidence": null
+        },
+        {
+          "text": " 1-bromopropane",
+          "startMs": 29360,
+          "endMs": 30480,
+          "timestampMs": 29920,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 30640,
+          "endMs": 30800,
+          "timestampMs": 30720,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 30880,
+          "endMs": 31280,
+          "timestampMs": 31080,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 31840,
+          "endMs": 31920,
+          "timestampMs": 31880,
+          "confidence": null
+        },
+        {
+          "text": " counts",
+          "startMs": 32159.999999999996,
+          "endMs": 32400,
+          "timestampMs": 32280,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 32600,
+          "endMs": 32800,
+          "timestampMs": 32700,
+          "confidence": null
+        },
+        {
+          "text": " match.",
+          "startMs": 32880,
+          "endMs": 33360,
+          "timestampMs": 33120,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 33760,
+          "endMs": 33840,
+          "timestampMs": 33800,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 33920,
+          "endMs": 34000,
+          "timestampMs": 33960,
+          "confidence": null
+        },
+        {
+          "text": " didn't,",
+          "startMs": 34080,
+          "endMs": 34640,
+          "timestampMs": 34360,
+          "confidence": null
+        },
+        {
+          "text": " you'd",
+          "startMs": 34720,
+          "endMs": 34800,
+          "timestampMs": 34760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 34880,
+          "endMs": 34960,
+          "timestampMs": 34920,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 35040,
+          "endMs": 35120,
+          "timestampMs": 35080,
+          "confidence": null
+        },
+        {
+          "text": " joining",
+          "startMs": 35200,
+          "endMs": 35520,
+          "timestampMs": 35360,
+          "confidence": null
+        },
+        {
+          "text": " step,",
+          "startMs": 35600,
+          "endMs": 36080,
+          "timestampMs": 35840,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 36160,
+          "endMs": 36240,
+          "timestampMs": 36200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 36280,
+          "endMs": 36320,
+          "timestampMs": 36300,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 36400,
+          "endMs": 36640,
+          "timestampMs": 36520,
+          "confidence": null
+        },
+        {
+          "text": " start.",
+          "startMs": 36720,
+          "endMs": 37360,
+          "timestampMs": 37040,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "work-backwards",
+      "type": "concept",
+      "durationInFrames": 1131,
+      "voiceover": {
+        "text": "Move two: work backwards from the target. Ask which reaction makes its functional group. An ester comes from a carboxylic acid and an alcohol, so cut it at the single-bonded oxygen, like in the esters video. The ethanoate part needs ethanoic acid, and the propyl part needs propan-1-ol. Now ask the same question about each of those. Ethanoic acid comes from oxidising a primary alcohol, ethanol. And ethanol comes from ethene and steam, one of our starting materials. Keep asking until you reach something you're allowed to start from.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/work-backwards.11e14ca336ae.mp3",
+        "startFrame": 0,
+        "endFrame": 1071
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Move",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " two:",
+          "startMs": 320,
+          "endMs": 1120,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 1280,
+          "endMs": 1440,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " backwards",
+          "startMs": 1520,
+          "endMs": 2000,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 2080,
+          "endMs": 2160,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2200,
+          "endMs": 2240,
+          "timestampMs": 2220,
+          "confidence": null
+        },
+        {
+          "text": " target.",
+          "startMs": 2320,
+          "endMs": 2800,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " Ask",
+          "startMs": 3280,
+          "endMs": 3600,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 3680,
+          "endMs": 3920,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 4200,
+          "endMs": 4480,
+          "timestampMs": 4340,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 4560,
+          "endMs": 4800,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " functional",
+          "startMs": 5040,
+          "endMs": 5440,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " group.",
+          "startMs": 5520,
+          "endMs": 5840,
+          "timestampMs": 5680,
+          "confidence": null
+        },
+        {
+          "text": " An",
+          "startMs": 6480,
+          "endMs": 6560,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " ester",
+          "startMs": 6720,
+          "endMs": 7120,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 7200,
+          "endMs": 7440,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 7520,
+          "endMs": 7600,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7640,
+          "endMs": 7680,
+          "timestampMs": 7660,
+          "confidence": null
+        },
+        {
+          "text": " carboxylic",
+          "startMs": 7760,
+          "endMs": 8400,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 8480,
+          "endMs": 8800,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8880,
+          "endMs": 8960,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 9000,
+          "endMs": 9040,
+          "timestampMs": 9020,
+          "confidence": null
+        },
+        {
+          "text": " alcohol,",
+          "startMs": 9200,
+          "endMs": 10080,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 10200,
+          "endMs": 10320,
+          "timestampMs": 10260,
+          "confidence": null
+        },
+        {
+          "text": " cut",
+          "startMs": 10440,
+          "endMs": 10560,
+          "timestampMs": 10500,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10640,
+          "endMs": 10720,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 10760,
+          "endMs": 10800,
+          "timestampMs": 10780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " single-bonded",
+          "startMs": 11040,
+          "endMs": 11680,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " oxygen,",
+          "startMs": 11840,
+          "endMs": 12480,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12720,
+          "endMs": 12760,
+          "timestampMs": 12740,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12800,
+          "endMs": 12880,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " esters",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " video.",
+          "startMs": 13280,
+          "endMs": 13680,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 14320,
+          "endMs": 14360,
+          "timestampMs": 14340,
+          "confidence": null
+        },
+        {
+          "text": " ethanoate",
+          "startMs": 14400,
+          "endMs": 15040,
+          "timestampMs": 14720,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 15120,
+          "endMs": 15360,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 15440,
+          "endMs": 15680,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 15760,
+          "endMs": 16320,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 16400,
+          "endMs": 16960,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17040,
+          "endMs": 17120,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17160,
+          "endMs": 17200,
+          "timestampMs": 17180,
+          "confidence": null
+        },
+        {
+          "text": " propyl",
+          "startMs": 17280,
+          "endMs": 17680,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 17840,
+          "endMs": 18000,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 18080,
+          "endMs": 18320,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " propan-1-ol.",
+          "startMs": 18400,
+          "endMs": 20000,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 20080,
+          "endMs": 20240,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 20320,
+          "endMs": 20560,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 20840,
+          "endMs": 20960,
+          "timestampMs": 20900,
+          "confidence": null
+        },
+        {
+          "text": " question",
+          "startMs": 21120,
+          "endMs": 21440,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 21600,
+          "endMs": 21760,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 21840,
+          "endMs": 21920,
+          "timestampMs": 21880,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " those.",
+          "startMs": 22160,
+          "endMs": 23120,
+          "timestampMs": 22640,
+          "confidence": null
+        },
+        {
+          "text": " Ethanoic",
+          "startMs": 23200,
+          "endMs": 23680,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 23760,
+          "endMs": 24080,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 24160,
+          "endMs": 24400,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 24520,
+          "endMs": 24640,
+          "timestampMs": 24580,
+          "confidence": null
+        },
+        {
+          "text": " oxidising",
+          "startMs": 24800,
+          "endMs": 25280,
+          "timestampMs": 25040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 25360,
+          "endMs": 25440,
+          "timestampMs": 25400,
+          "confidence": null
+        },
+        {
+          "text": " primary",
+          "startMs": 25680,
+          "endMs": 25920,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " alcohol,",
+          "startMs": 26000,
+          "endMs": 26640,
+          "timestampMs": 26320,
+          "confidence": null
+        },
+        {
+          "text": " ethanol.",
+          "startMs": 26720,
+          "endMs": 27600,
+          "timestampMs": 27160,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 27680,
+          "endMs": 27760,
+          "timestampMs": 27720,
+          "confidence": null
+        },
+        {
+          "text": " ethanol",
+          "startMs": 27920,
+          "endMs": 28400,
+          "timestampMs": 28160,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 28480,
+          "endMs": 28720,
+          "timestampMs": 28600,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 28840,
+          "endMs": 28960,
+          "timestampMs": 28900,
+          "confidence": null
+        },
+        {
+          "text": " ethene",
+          "startMs": 29040,
+          "endMs": 29520,
+          "timestampMs": 29280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 29600,
+          "endMs": 29680,
+          "timestampMs": 29640,
+          "confidence": null
+        },
+        {
+          "text": " steam,",
+          "startMs": 29760,
+          "endMs": 30400,
+          "timestampMs": 30080,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 30440,
+          "endMs": 30480,
+          "timestampMs": 30460,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 30560,
+          "endMs": 30640,
+          "timestampMs": 30600,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 30720,
+          "endMs": 30800,
+          "timestampMs": 30760,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 30960,
+          "endMs": 31120,
+          "timestampMs": 31040,
+          "confidence": null
+        },
+        {
+          "text": " materials.",
+          "startMs": 31400,
+          "endMs": 32240.000000000004,
+          "timestampMs": 31820,
+          "confidence": null
+        },
+        {
+          "text": " Keep",
+          "startMs": 32320,
+          "endMs": 32479.999999999996,
+          "timestampMs": 32400,
+          "confidence": null
+        },
+        {
+          "text": " asking",
+          "startMs": 32560.000000000004,
+          "endMs": 33040,
+          "timestampMs": 32800,
+          "confidence": null
+        },
+        {
+          "text": " until",
+          "startMs": 33200,
+          "endMs": 33360,
+          "timestampMs": 33280,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 33440,
+          "endMs": 33520,
+          "timestampMs": 33480,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 33640,
+          "endMs": 33760,
+          "timestampMs": 33700,
+          "confidence": null
+        },
+        {
+          "text": " something",
+          "startMs": 33920,
+          "endMs": 34080,
+          "timestampMs": 34000,
+          "confidence": null
+        },
+        {
+          "text": " you're",
+          "startMs": 34160,
+          "endMs": 34240,
+          "timestampMs": 34200,
+          "confidence": null
+        },
+        {
+          "text": " allowed",
+          "startMs": 34320,
+          "endMs": 34720,
+          "timestampMs": 34520,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 34800,
+          "endMs": 34880,
+          "timestampMs": 34840,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 35040,
+          "endMs": 35200,
+          "timestampMs": 35120,
+          "confidence": null
+        },
+        {
+          "text": " from.",
+          "startMs": 35360,
+          "endMs": 35680,
+          "timestampMs": 35520,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "choose-route",
+      "type": "concept",
+      "durationInFrames": 1227,
+      "voiceover": {
+        "text": "Where does propan-1-ol come from? Here, from 1-bromopropane. Hydroxide takes the bromine's place on the same carbon, so the O H lands exactly where you need it, on carbon one. Why not use an alkene instead? Suppose you had propene. Its double bond isn't symmetrical, so the O H can go on either carbon, and most of it ends up on the middle one. You'd get mainly the wrong alcohol. Adding H Br to propene first doesn't help, because the bromine mostly lands on the middle carbon too. So when the position matters, start from a haloalkane that already has its halogen on the right carbon.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/choose-route.754ed7588fec.mp3",
+        "startFrame": 0,
+        "endFrame": 1167
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Where",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " propan-1-ol",
+          "startMs": 480,
+          "endMs": 1280,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " come",
+          "startMs": 1360,
+          "endMs": 1520,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " from?",
+          "startMs": 1600,
+          "endMs": 2160,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " Here,",
+          "startMs": 2400,
+          "endMs": 2960,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 3040,
+          "endMs": 3280,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " 1-bromopropane.",
+          "startMs": 3440,
+          "endMs": 4720,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " Hydroxide",
+          "startMs": 5200,
+          "endMs": 5920,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " takes",
+          "startMs": 6000,
+          "endMs": 6240,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6280,
+          "endMs": 6320,
+          "timestampMs": 6300,
+          "confidence": null
+        },
+        {
+          "text": " bromine's",
+          "startMs": 6360,
+          "endMs": 6880,
+          "timestampMs": 6620,
+          "confidence": null
+        },
+        {
+          "text": " place",
+          "startMs": 6960,
+          "endMs": 7200,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7440,
+          "endMs": 7600,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 7680,
+          "endMs": 7920,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " carbon,",
+          "startMs": 8080,
+          "endMs": 8800,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 8880,
+          "endMs": 8960,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9040,
+          "endMs": 9120,
+          "timestampMs": 9080,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 9440,
+          "endMs": 9680,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " lands",
+          "startMs": 9840,
+          "endMs": 10000,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " exactly",
+          "startMs": 10080,
+          "endMs": 10640,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " it,",
+          "startMs": 11200,
+          "endMs": 11600,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 11840,
+          "endMs": 12160,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 12320,
+          "endMs": 12640,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " Why",
+          "startMs": 13280,
+          "endMs": 13440,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " alkene",
+          "startMs": 14080,
+          "endMs": 14480,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " instead?",
+          "startMs": 14560,
+          "endMs": 15520,
+          "timestampMs": 15040,
+          "confidence": null
+        },
+        {
+          "text": " Suppose",
+          "startMs": 15600,
+          "endMs": 15920,
+          "timestampMs": 15760,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 15960,
+          "endMs": 16000,
+          "timestampMs": 15980,
+          "confidence": null
+        },
+        {
+          "text": " had",
+          "startMs": 16079.999999999998,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16159.999999999998,
+          "confidence": null
+        },
+        {
+          "text": " propene.",
+          "startMs": 16320,
+          "endMs": 17360,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " Its",
+          "startMs": 17480,
+          "endMs": 17600,
+          "timestampMs": 17540,
+          "confidence": null
+        },
+        {
+          "text": " double",
+          "startMs": 17720,
+          "endMs": 17840,
+          "timestampMs": 17780,
+          "confidence": null
+        },
+        {
+          "text": " bond",
+          "startMs": 17920,
+          "endMs": 18160,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " isn't",
+          "startMs": 18240,
+          "endMs": 18480,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " symmetrical,",
+          "startMs": 18560,
+          "endMs": 19360,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 19440,
+          "endMs": 19520,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19560,
+          "endMs": 19600,
+          "timestampMs": 19580,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 19760,
+          "endMs": 19840,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 20000,
+          "endMs": 20160,
+          "timestampMs": 20080,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 20240,
+          "endMs": 20320,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " go",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 20600,
+          "endMs": 20720,
+          "timestampMs": 20660,
+          "confidence": null
+        },
+        {
+          "text": " either",
+          "startMs": 20800,
+          "endMs": 21040,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " carbon,",
+          "startMs": 21240,
+          "endMs": 21680,
+          "timestampMs": 21460,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21760,
+          "endMs": 21840,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 21920,
+          "endMs": 22080,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 22160,
+          "endMs": 22200,
+          "timestampMs": 22180,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 22240,
+          "endMs": 22320,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " ends",
+          "startMs": 22400,
+          "endMs": 22560,
+          "timestampMs": 22480,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 22640,
+          "endMs": 22720,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 22760,
+          "endMs": 22800,
+          "timestampMs": 22780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22880,
+          "endMs": 22960,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " middle",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 23200,
+          "endMs": 23840,
+          "timestampMs": 23520,
+          "confidence": null
+        },
+        {
+          "text": " You'd",
+          "startMs": 23880,
+          "endMs": 24000,
+          "timestampMs": 23940,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 24080,
+          "endMs": 24240,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " mainly",
+          "startMs": 24320,
+          "endMs": 24640,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24760,
+          "endMs": 24880,
+          "timestampMs": 24820,
+          "confidence": null
+        },
+        {
+          "text": " wrong",
+          "startMs": 25000,
+          "endMs": 25120,
+          "timestampMs": 25060,
+          "confidence": null
+        },
+        {
+          "text": " alcohol.",
+          "startMs": 25200,
+          "endMs": 26320,
+          "timestampMs": 25760,
+          "confidence": null
+        },
+        {
+          "text": " Adding",
+          "startMs": 26480,
+          "endMs": 26640,
+          "timestampMs": 26560,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 26720,
+          "endMs": 26960,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " Br",
+          "startMs": 27040,
+          "endMs": 27360,
+          "timestampMs": 27200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 27440,
+          "endMs": 27520,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " propene",
+          "startMs": 27640,
+          "endMs": 28000,
+          "timestampMs": 27820,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 28080,
+          "endMs": 28480,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 28560,
+          "endMs": 28880,
+          "timestampMs": 28720,
+          "confidence": null
+        },
+        {
+          "text": " help,",
+          "startMs": 29040,
+          "endMs": 29360,
+          "timestampMs": 29200,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 29480,
+          "endMs": 29600,
+          "timestampMs": 29540,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29640,
+          "endMs": 29680,
+          "timestampMs": 29660,
+          "confidence": null
+        },
+        {
+          "text": " bromine",
+          "startMs": 29760,
+          "endMs": 30240,
+          "timestampMs": 30000,
+          "confidence": null
+        },
+        {
+          "text": " mostly",
+          "startMs": 30320,
+          "endMs": 30640,
+          "timestampMs": 30480,
+          "confidence": null
+        },
+        {
+          "text": " lands",
+          "startMs": 30720,
+          "endMs": 30960,
+          "timestampMs": 30840,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 31000,
+          "endMs": 31040,
+          "timestampMs": 31020,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 31080,
+          "endMs": 31120,
+          "timestampMs": 31100,
+          "confidence": null
+        },
+        {
+          "text": " middle",
+          "startMs": 31200,
+          "endMs": 31360,
+          "timestampMs": 31280,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 31440,
+          "endMs": 31760,
+          "timestampMs": 31600,
+          "confidence": null
+        },
+        {
+          "text": " too.",
+          "startMs": 31840,
+          "endMs": 32720,
+          "timestampMs": 32280,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 32840,
+          "endMs": 32960,
+          "timestampMs": 32900,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 33200,
+          "endMs": 33280,
+          "timestampMs": 33240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33320,
+          "endMs": 33360,
+          "timestampMs": 33340,
+          "confidence": null
+        },
+        {
+          "text": " position",
+          "startMs": 33440,
+          "endMs": 33840,
+          "timestampMs": 33640,
+          "confidence": null
+        },
+        {
+          "text": " matters,",
+          "startMs": 33920,
+          "endMs": 34560,
+          "timestampMs": 34240,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 34640,
+          "endMs": 34960,
+          "timestampMs": 34800,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 35040,
+          "endMs": 35120,
+          "timestampMs": 35080,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 35160,
+          "endMs": 35200,
+          "timestampMs": 35180,
+          "confidence": null
+        },
+        {
+          "text": " haloalkane",
+          "startMs": 35280,
+          "endMs": 36000,
+          "timestampMs": 35640,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 36120,
+          "endMs": 36240,
+          "timestampMs": 36180,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 36320,
+          "endMs": 36720,
+          "timestampMs": 36520,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 36800,
+          "endMs": 36960,
+          "timestampMs": 36880,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 37040,
+          "endMs": 37120,
+          "timestampMs": 37080,
+          "confidence": null
+        },
+        {
+          "text": " halogen",
+          "startMs": 37200,
+          "endMs": 37600,
+          "timestampMs": 37400,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 37680,
+          "endMs": 37760,
+          "timestampMs": 37720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 37800,
+          "endMs": 37840,
+          "timestampMs": 37820,
+          "confidence": null
+        },
+        {
+          "text": " right",
+          "startMs": 37920,
+          "endMs": 38160,
+          "timestampMs": 38040,
+          "confidence": null
+        },
+        {
+          "text": " carbon.",
+          "startMs": 38240,
+          "endMs": 38880,
+          "timestampMs": 38560,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "write-forwards",
+      "type": "concept",
+      "durationInFrames": 1690,
+      "voiceover": {
+        "text": "Move four: write the route forwards, in the order you'd carry it out, and put the conditions on every arrow. Ethene and steam, with a phosphoric acid catalyst, about three hundred degrees and high pressure, give ethanol. Ethanol here is an intermediate, a compound made on the way and used up in the next step. Then acidified dichromate in excess, heated under reflux, takes the ethanol all the way to ethanoic acid. Reflux, not distillation, so the aldehyde can't escape before it's oxidised again. On the other arm, 1-bromopropane heated under reflux with aqueous sodium hydroxide gives propan-1-ol. Finally, the acid and the alcohol, with a few drops of concentrated sulfuric acid, heated under reflux, make the ester and water. That's an equilibrium, like the hydration at the start, so both arrows get the double arrow.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/write-forwards.6a31b920985a.mp3",
+        "startFrame": 0,
+        "endFrame": 1630
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Move",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " four:",
+          "startMs": 400,
+          "endMs": 1200,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " write",
+          "startMs": 1320,
+          "endMs": 1440,
+          "timestampMs": 1380,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1520,
+          "endMs": 1560,
+          "timestampMs": 1540,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " forwards,",
+          "startMs": 1920,
+          "endMs": 2720,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2960,
+          "endMs": 3000,
+          "timestampMs": 2980,
+          "confidence": null
+        },
+        {
+          "text": " order",
+          "startMs": 3040,
+          "endMs": 3280,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " you'd",
+          "startMs": 3320,
+          "endMs": 3520,
+          "timestampMs": 3420,
+          "confidence": null
+        },
+        {
+          "text": " carry",
+          "startMs": 3640,
+          "endMs": 3760,
+          "timestampMs": 3700,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 3800,
+          "endMs": 3840,
+          "timestampMs": 3820,
+          "confidence": null
+        },
+        {
+          "text": " out,",
+          "startMs": 3920,
+          "endMs": 4400,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 4480,
+          "endMs": 4560,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " put",
+          "startMs": 4640,
+          "endMs": 4720,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4760,
+          "endMs": 4800,
+          "timestampMs": 4780,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 4880,
+          "endMs": 5440,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 5520,
+          "endMs": 5760,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 5840,
+          "endMs": 6080,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " arrow.",
+          "startMs": 6160,
+          "endMs": 7120,
+          "timestampMs": 6640,
+          "confidence": null
+        },
+        {
+          "text": " Ethene",
+          "startMs": 7240,
+          "endMs": 7680,
+          "timestampMs": 7460,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7720,
+          "endMs": 7760,
+          "timestampMs": 7740,
+          "confidence": null
+        },
+        {
+          "text": " steam,",
+          "startMs": 7920,
+          "endMs": 8560,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8600,
+          "endMs": 8640,
+          "timestampMs": 8620,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8720,
+          "endMs": 8800,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " phosphoric",
+          "startMs": 8840,
+          "endMs": 9280,
+          "timestampMs": 9060,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 9360,
+          "endMs": 9600,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " catalyst,",
+          "startMs": 9680,
+          "endMs": 10400,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 10560,
+          "endMs": 10720,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 10800,
+          "endMs": 10880,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 10960,
+          "endMs": 11120,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " degrees",
+          "startMs": 11200,
+          "endMs": 11680,
+          "timestampMs": 11440,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11760,
+          "endMs": 11840,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " high",
+          "startMs": 11920,
+          "endMs": 12080,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " pressure,",
+          "startMs": 12160,
+          "endMs": 12800,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 12880,
+          "endMs": 13120,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " ethanol.",
+          "startMs": 13200,
+          "endMs": 14320,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " Ethanol",
+          "startMs": 14440,
+          "endMs": 14800,
+          "timestampMs": 14620,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 14880,
+          "endMs": 15120,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 15200,
+          "endMs": 15280,
+          "timestampMs": 15240,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 15360,
+          "endMs": 15440,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " intermediate,",
+          "startMs": 15600,
+          "endMs": 16400,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16480,
+          "endMs": 16560,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " compound",
+          "startMs": 16800,
+          "endMs": 17040,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 17160,
+          "endMs": 17280,
+          "timestampMs": 17220,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 17360,
+          "endMs": 17520,
+          "timestampMs": 17440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17560,
+          "endMs": 17600,
+          "timestampMs": 17580,
+          "confidence": null
+        },
+        {
+          "text": " way",
+          "startMs": 17680,
+          "endMs": 18080,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18160,
+          "endMs": 18240,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " used",
+          "startMs": 18320,
+          "endMs": 18480,
+          "timestampMs": 18400,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 18560,
+          "endMs": 18720,
+          "timestampMs": 18640,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 18760,
+          "endMs": 18800,
+          "timestampMs": 18780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 18880,
+          "endMs": 18920,
+          "timestampMs": 18900,
+          "confidence": null
+        },
+        {
+          "text": " next",
+          "startMs": 18960,
+          "endMs": 19120,
+          "timestampMs": 19040,
+          "confidence": null
+        },
+        {
+          "text": " step.",
+          "startMs": 19200,
+          "endMs": 20160,
+          "timestampMs": 19680,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 20320,
+          "endMs": 20480,
+          "timestampMs": 20400,
+          "confidence": null
+        },
+        {
+          "text": " acidified",
+          "startMs": 20560,
+          "endMs": 21120,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " dichromate",
+          "startMs": 21200,
+          "endMs": 21920,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 21960,
+          "endMs": 22000,
+          "timestampMs": 21980,
+          "confidence": null
+        },
+        {
+          "text": " excess,",
+          "startMs": 22120,
+          "endMs": 22880,
+          "timestampMs": 22500,
+          "confidence": null
+        },
+        {
+          "text": " heated",
+          "startMs": 22920,
+          "endMs": 23200,
+          "timestampMs": 23060,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 23320,
+          "endMs": 23440,
+          "timestampMs": 23380,
+          "confidence": null
+        },
+        {
+          "text": " reflux,",
+          "startMs": 23560,
+          "endMs": 24240,
+          "timestampMs": 23900,
+          "confidence": null
+        },
+        {
+          "text": " takes",
+          "startMs": 24400,
+          "endMs": 24560,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24640,
+          "endMs": 24680,
+          "timestampMs": 24660,
+          "confidence": null
+        },
+        {
+          "text": " ethanol",
+          "startMs": 24720,
+          "endMs": 25280,
+          "timestampMs": 25000,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 25360,
+          "endMs": 25520,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25600,
+          "endMs": 25680,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " way",
+          "startMs": 25800,
+          "endMs": 25920,
+          "timestampMs": 25860,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26000,
+          "endMs": 26080,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 26160,
+          "endMs": 26560,
+          "timestampMs": 26360,
+          "confidence": null
+        },
+        {
+          "text": " acid.",
+          "startMs": 26640,
+          "endMs": 27440,
+          "timestampMs": 27040,
+          "confidence": null
+        },
+        {
+          "text": " Reflux,",
+          "startMs": 27520,
+          "endMs": 28240,
+          "timestampMs": 27880,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 28320,
+          "endMs": 28480,
+          "timestampMs": 28400,
+          "confidence": null
+        },
+        {
+          "text": " distillation,",
+          "startMs": 28600,
+          "endMs": 29440,
+          "timestampMs": 29020,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 29480,
+          "endMs": 29520,
+          "timestampMs": 29500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29600,
+          "endMs": 29680,
+          "timestampMs": 29640,
+          "confidence": null
+        },
+        {
+          "text": " aldehyde",
+          "startMs": 29760,
+          "endMs": 30240,
+          "timestampMs": 30000,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 30320,
+          "endMs": 30480,
+          "timestampMs": 30400,
+          "confidence": null
+        },
+        {
+          "text": " escape",
+          "startMs": 30560,
+          "endMs": 30960,
+          "timestampMs": 30760,
+          "confidence": null
+        },
+        {
+          "text": " before",
+          "startMs": 31040,
+          "endMs": 31200,
+          "timestampMs": 31120,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 31280,
+          "endMs": 31440,
+          "timestampMs": 31360,
+          "confidence": null
+        },
+        {
+          "text": " oxidised",
+          "startMs": 31600,
+          "endMs": 31920,
+          "timestampMs": 31760,
+          "confidence": null
+        },
+        {
+          "text": " again.",
+          "startMs": 32000,
+          "endMs": 32960,
+          "timestampMs": 32480,
+          "confidence": null
+        },
+        {
+          "text": " On",
+          "startMs": 33040,
+          "endMs": 33120,
+          "timestampMs": 33080,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33160,
+          "endMs": 33200,
+          "timestampMs": 33180,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 33280,
+          "endMs": 33440,
+          "timestampMs": 33360,
+          "confidence": null
+        },
+        {
+          "text": " arm,",
+          "startMs": 33520,
+          "endMs": 34000,
+          "timestampMs": 33760,
+          "confidence": null
+        },
+        {
+          "text": " 1-bromopropane",
+          "startMs": 34080,
+          "endMs": 35360,
+          "timestampMs": 34720,
+          "confidence": null
+        },
+        {
+          "text": " heated",
+          "startMs": 35440,
+          "endMs": 35760,
+          "timestampMs": 35600,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 35880,
+          "endMs": 36000,
+          "timestampMs": 35940,
+          "confidence": null
+        },
+        {
+          "text": " reflux",
+          "startMs": 36120,
+          "endMs": 36480,
+          "timestampMs": 36300,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 36600,
+          "endMs": 36720,
+          "timestampMs": 36660,
+          "confidence": null
+        },
+        {
+          "text": " aqueous",
+          "startMs": 36880,
+          "endMs": 37200,
+          "timestampMs": 37040,
+          "confidence": null
+        },
+        {
+          "text": " sodium",
+          "startMs": 37240,
+          "endMs": 37520,
+          "timestampMs": 37380,
+          "confidence": null
+        },
+        {
+          "text": " hydroxide",
+          "startMs": 37600,
+          "endMs": 38320,
+          "timestampMs": 37960,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 38560,
+          "endMs": 38720,
+          "timestampMs": 38640,
+          "confidence": null
+        },
+        {
+          "text": " propan-1-ol.",
+          "startMs": 38880,
+          "endMs": 40240,
+          "timestampMs": 39560,
+          "confidence": null
+        },
+        {
+          "text": " Finally,",
+          "startMs": 40560,
+          "endMs": 41200,
+          "timestampMs": 40880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 41240,
+          "endMs": 41280,
+          "timestampMs": 41260,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 41360,
+          "endMs": 41760,
+          "timestampMs": 41560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 41840,
+          "endMs": 41920,
+          "timestampMs": 41880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 41960,
+          "endMs": 42000,
+          "timestampMs": 41980,
+          "confidence": null
+        },
+        {
+          "text": " alcohol,",
+          "startMs": 42120,
+          "endMs": 42720,
+          "timestampMs": 42420,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 42800,
+          "endMs": 42880,
+          "timestampMs": 42840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 42920,
+          "endMs": 42960,
+          "timestampMs": 42940,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 43040,
+          "endMs": 43120,
+          "timestampMs": 43080,
+          "confidence": null
+        },
+        {
+          "text": " drops",
+          "startMs": 43200,
+          "endMs": 43440,
+          "timestampMs": 43320,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 43520,
+          "endMs": 43600,
+          "timestampMs": 43560,
+          "confidence": null
+        },
+        {
+          "text": " concentrated",
+          "startMs": 43680,
+          "endMs": 44240,
+          "timestampMs": 43960,
+          "confidence": null
+        },
+        {
+          "text": " sulfuric",
+          "startMs": 44320,
+          "endMs": 44800,
+          "timestampMs": 44560,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 44880,
+          "endMs": 45440,
+          "timestampMs": 45160,
+          "confidence": null
+        },
+        {
+          "text": " heated",
+          "startMs": 45480,
+          "endMs": 45760,
+          "timestampMs": 45620,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 45880,
+          "endMs": 46000,
+          "timestampMs": 45940,
+          "confidence": null
+        },
+        {
+          "text": " reflux,",
+          "startMs": 46120,
+          "endMs": 46800,
+          "timestampMs": 46460,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 46920,
+          "endMs": 47040,
+          "timestampMs": 46980,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 47080,
+          "endMs": 47120,
+          "timestampMs": 47100,
+          "confidence": null
+        },
+        {
+          "text": " ester",
+          "startMs": 47280,
+          "endMs": 47680,
+          "timestampMs": 47480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 47840,
+          "endMs": 47920,
+          "timestampMs": 47880,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 48080,
+          "endMs": 48640,
+          "timestampMs": 48360,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 48880,
+          "endMs": 49120,
+          "timestampMs": 49000,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 49160,
+          "endMs": 49200,
+          "timestampMs": 49180,
+          "confidence": null
+        },
+        {
+          "text": " equilibrium,",
+          "startMs": 49280,
+          "endMs": 50160,
+          "timestampMs": 49720,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 50240,
+          "endMs": 50320,
+          "timestampMs": 50280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 50400,
+          "endMs": 50440,
+          "timestampMs": 50420,
+          "confidence": null
+        },
+        {
+          "text": " hydration",
+          "startMs": 50480,
+          "endMs": 50960,
+          "timestampMs": 50720,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 51000,
+          "endMs": 51040,
+          "timestampMs": 51020,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 51120,
+          "endMs": 51200,
+          "timestampMs": 51160,
+          "confidence": null
+        },
+        {
+          "text": " start,",
+          "startMs": 51280,
+          "endMs": 51920,
+          "timestampMs": 51600,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 52000,
+          "endMs": 52160,
+          "timestampMs": 52080,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 52240,
+          "endMs": 52480,
+          "timestampMs": 52360,
+          "confidence": null
+        },
+        {
+          "text": " arrows",
+          "startMs": 52560,
+          "endMs": 52960,
+          "timestampMs": 52760,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 53120,
+          "endMs": 53280,
+          "timestampMs": 53200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 53320,
+          "endMs": 53360,
+          "timestampMs": 53340,
+          "confidence": null
+        },
+        {
+          "text": " double",
+          "startMs": 53520,
+          "endMs": 53760,
+          "timestampMs": 53640,
+          "confidence": null
+        },
+        {
+          "text": " arrow.",
+          "startMs": 53840,
+          "endMs": 54320,
+          "timestampMs": 54080,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "check-arrows",
+      "type": "concept",
+      "durationInFrames": 1666,
+      "voiceover": {
+        "text": "Then finish move four: check every arrow, because one wrong arrow breaks the whole route. Here's a plan for propanoic acid that fails twice. It turns propane straight into propan-2-ol. No reaction we've met does that. An alkane first needs a halogen and U V light, and that gives a mixture. Then it oxidises propan-2-ol to propanone, and propanone to propanoic acid. That arrow doesn't exist. A ketone has no hydrogen on its carbonyl carbon, so acidified dichromate can't oxidise it any further. It's a dead end: no arrow on the map leaves it. To reach the acid, you need the primary alcohol, propan-1-ol. And keep routes short where you can. Every step loses some product, so extra steps usually mean a lower overall yield, the amount of product left at the end.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/check-arrows.4286dd26afc2.mp3",
+        "startFrame": 0,
+        "endFrame": 1606
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Then",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " finish",
+          "startMs": 400,
+          "endMs": 640,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " move",
+          "startMs": 720,
+          "endMs": 960,
+          "timestampMs": 840,
+          "confidence": null
+        },
+        {
+          "text": " four:",
+          "startMs": 1040,
+          "endMs": 1840,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " check",
+          "startMs": 1920,
+          "endMs": 2240,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 2320,
+          "endMs": 2640,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " arrow,",
+          "startMs": 2720,
+          "endMs": 3360,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 3440,
+          "endMs": 3680,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 3840,
+          "endMs": 4000,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " wrong",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " arrow",
+          "startMs": 4320,
+          "endMs": 4640,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " breaks",
+          "startMs": 4800,
+          "endMs": 5040,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5120,
+          "endMs": 5200,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 5360,
+          "endMs": 5600,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " route.",
+          "startMs": 5680,
+          "endMs": 6360,
+          "timestampMs": 6020,
+          "confidence": null
+        },
+        {
+          "text": " Here's",
+          "startMs": 6720,
+          "endMs": 6920,
+          "timestampMs": 6820,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6960,
+          "endMs": 7040,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " plan",
+          "startMs": 7160,
+          "endMs": 7280,
+          "timestampMs": 7220,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 7360,
+          "endMs": 7400,
+          "timestampMs": 7380,
+          "confidence": null
+        },
+        {
+          "text": " propanoic",
+          "startMs": 7440,
+          "endMs": 8000,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 8080,
+          "endMs": 8400,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " fails",
+          "startMs": 8640,
+          "endMs": 8960,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " twice.",
+          "startMs": 9040,
+          "endMs": 9840,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " turns",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " propane",
+          "startMs": 10560,
+          "endMs": 11120,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " straight",
+          "startMs": 11280,
+          "endMs": 11680,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 11800,
+          "endMs": 11920,
+          "timestampMs": 11860,
+          "confidence": null
+        },
+        {
+          "text": " propan-2-ol.",
+          "startMs": 12000,
+          "endMs": 13120,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " No",
+          "startMs": 13600,
+          "endMs": 13760,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 13840,
+          "endMs": 14240,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " we've",
+          "startMs": 14320,
+          "endMs": 14480,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " met",
+          "startMs": 14600,
+          "endMs": 14720,
+          "timestampMs": 14660,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 14840,
+          "endMs": 14960,
+          "timestampMs": 14900,
+          "confidence": null
+        },
+        {
+          "text": " that.",
+          "startMs": 15120,
+          "endMs": 15560,
+          "timestampMs": 15340,
+          "confidence": null
+        },
+        {
+          "text": " An",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " alkane",
+          "startMs": 16000,
+          "endMs": 16560,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 16720,
+          "endMs": 16960,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 17040,
+          "endMs": 17200,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 17280,
+          "endMs": 17320,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " halogen",
+          "startMs": 17360,
+          "endMs": 17840,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17920,
+          "endMs": 18000,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " U",
+          "startMs": 18080,
+          "endMs": 18240,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " V",
+          "startMs": 18320,
+          "endMs": 18400,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " light,",
+          "startMs": 18480,
+          "endMs": 18960,
+          "timestampMs": 18720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 19040,
+          "endMs": 19120,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 19200,
+          "endMs": 19360,
+          "timestampMs": 19280,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 19440,
+          "endMs": 19600,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19680,
+          "endMs": 19720,
+          "timestampMs": 19700,
+          "confidence": null
+        },
+        {
+          "text": " mixture.",
+          "startMs": 19760,
+          "endMs": 20240,
+          "timestampMs": 20000,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 20800,
+          "endMs": 21040,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 21120,
+          "endMs": 21280,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " oxidises",
+          "startMs": 21360,
+          "endMs": 22000,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " propan-2-ol",
+          "startMs": 22080,
+          "endMs": 22960,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " propanone,",
+          "startMs": 23200,
+          "endMs": 24080,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24120,
+          "endMs": 24160,
+          "timestampMs": 24140,
+          "confidence": null
+        },
+        {
+          "text": " propanone",
+          "startMs": 24240,
+          "endMs": 24880,
+          "timestampMs": 24560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 25040,
+          "endMs": 25120,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " propanoic",
+          "startMs": 25200,
+          "endMs": 25760,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " acid.",
+          "startMs": 25840,
+          "endMs": 26240,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 26640,
+          "endMs": 26800,
+          "timestampMs": 26720,
+          "confidence": null
+        },
+        {
+          "text": " arrow",
+          "startMs": 26880,
+          "endMs": 27120,
+          "timestampMs": 27000,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 27200,
+          "endMs": 27400,
+          "timestampMs": 27300,
+          "confidence": null
+        },
+        {
+          "text": " exist.",
+          "startMs": 27440,
+          "endMs": 28280,
+          "timestampMs": 27860,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 28560,
+          "endMs": 28640,
+          "timestampMs": 28600,
+          "confidence": null
+        },
+        {
+          "text": " ketone",
+          "startMs": 28720,
+          "endMs": 29200,
+          "timestampMs": 28960,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 29280,
+          "endMs": 29440,
+          "timestampMs": 29360,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 29600,
+          "endMs": 29760,
+          "timestampMs": 29680,
+          "confidence": null
+        },
+        {
+          "text": " hydrogen",
+          "startMs": 29920,
+          "endMs": 30400,
+          "timestampMs": 30160,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 30440,
+          "endMs": 30480,
+          "timestampMs": 30460,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 30560,
+          "endMs": 30640,
+          "timestampMs": 30600,
+          "confidence": null
+        },
+        {
+          "text": " carbonyl",
+          "startMs": 30720,
+          "endMs": 31200,
+          "timestampMs": 30960,
+          "confidence": null
+        },
+        {
+          "text": " carbon,",
+          "startMs": 31280,
+          "endMs": 32000,
+          "timestampMs": 31640,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 32080,
+          "endMs": 32159.999999999996,
+          "timestampMs": 32120,
+          "confidence": null
+        },
+        {
+          "text": " acidified",
+          "startMs": 32280,
+          "endMs": 32720,
+          "timestampMs": 32500,
+          "confidence": null
+        },
+        {
+          "text": " dichromate",
+          "startMs": 32800,
+          "endMs": 33520,
+          "timestampMs": 33160,
+          "confidence": null
+        },
+        {
+          "text": " can't",
+          "startMs": 33600,
+          "endMs": 33920,
+          "timestampMs": 33760,
+          "confidence": null
+        },
+        {
+          "text": " oxidise",
+          "startMs": 34080,
+          "endMs": 34400,
+          "timestampMs": 34240,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 34480,
+          "endMs": 34560,
+          "timestampMs": 34520,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 34640,
+          "endMs": 34720,
+          "timestampMs": 34680,
+          "confidence": null
+        },
+        {
+          "text": " further.",
+          "startMs": 34800,
+          "endMs": 35280,
+          "timestampMs": 35040,
+          "confidence": null
+        },
+        {
+          "text": " It's",
+          "startMs": 35600,
+          "endMs": 35720,
+          "timestampMs": 35660,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 35760,
+          "endMs": 35840,
+          "timestampMs": 35800,
+          "confidence": null
+        },
+        {
+          "text": " dead",
+          "startMs": 35920,
+          "endMs": 36080,
+          "timestampMs": 36000,
+          "confidence": null
+        },
+        {
+          "text": " end:",
+          "startMs": 36160,
+          "endMs": 36800,
+          "timestampMs": 36480,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 36880,
+          "endMs": 37040,
+          "timestampMs": 36960,
+          "confidence": null
+        },
+        {
+          "text": " arrow",
+          "startMs": 37120,
+          "endMs": 37360,
+          "timestampMs": 37240,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 37440,
+          "endMs": 37520,
+          "timestampMs": 37480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 37560,
+          "endMs": 37600,
+          "timestampMs": 37580,
+          "confidence": null
+        },
+        {
+          "text": " map",
+          "startMs": 37680,
+          "endMs": 37840,
+          "timestampMs": 37760,
+          "confidence": null
+        },
+        {
+          "text": " leaves",
+          "startMs": 37920,
+          "endMs": 38160,
+          "timestampMs": 38040,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 38240,
+          "endMs": 38480,
+          "timestampMs": 38360,
+          "confidence": null
+        },
+        {
+          "text": " To",
+          "startMs": 39040,
+          "endMs": 39120,
+          "timestampMs": 39080,
+          "confidence": null
+        },
+        {
+          "text": " reach",
+          "startMs": 39240,
+          "endMs": 39360,
+          "timestampMs": 39300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 39400,
+          "endMs": 39440,
+          "timestampMs": 39420,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 39520,
+          "endMs": 40080,
+          "timestampMs": 39800,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 40120,
+          "endMs": 40160,
+          "timestampMs": 40140,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 40240,
+          "endMs": 40320,
+          "timestampMs": 40280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 40400,
+          "endMs": 40480,
+          "timestampMs": 40440,
+          "confidence": null
+        },
+        {
+          "text": " primary",
+          "startMs": 40720,
+          "endMs": 40960,
+          "timestampMs": 40840,
+          "confidence": null
+        },
+        {
+          "text": " alcohol,",
+          "startMs": 41040,
+          "endMs": 41760,
+          "timestampMs": 41400,
+          "confidence": null
+        },
+        {
+          "text": " propan-1-ol.",
+          "startMs": 41880,
+          "endMs": 42960,
+          "timestampMs": 42420,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 43440,
+          "endMs": 43600,
+          "timestampMs": 43520,
+          "confidence": null
+        },
+        {
+          "text": " keep",
+          "startMs": 43680,
+          "endMs": 43840,
+          "timestampMs": 43760,
+          "confidence": null
+        },
+        {
+          "text": " routes",
+          "startMs": 43920,
+          "endMs": 44240,
+          "timestampMs": 44080,
+          "confidence": null
+        },
+        {
+          "text": " short",
+          "startMs": 44320,
+          "endMs": 44560,
+          "timestampMs": 44440,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 44640,
+          "endMs": 44720,
+          "timestampMs": 44680,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 44800,
+          "endMs": 44880,
+          "timestampMs": 44840,
+          "confidence": null
+        },
+        {
+          "text": " can.",
+          "startMs": 44960,
+          "endMs": 45360,
+          "timestampMs": 45160,
+          "confidence": null
+        },
+        {
+          "text": " Every",
+          "startMs": 45760,
+          "endMs": 46080,
+          "timestampMs": 45920,
+          "confidence": null
+        },
+        {
+          "text": " step",
+          "startMs": 46160,
+          "endMs": 46480,
+          "timestampMs": 46320,
+          "confidence": null
+        },
+        {
+          "text": " loses",
+          "startMs": 46560,
+          "endMs": 46880,
+          "timestampMs": 46720,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 46960,
+          "endMs": 47120,
+          "timestampMs": 47040,
+          "confidence": null
+        },
+        {
+          "text": " product,",
+          "startMs": 47200,
+          "endMs": 47920,
+          "timestampMs": 47560,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 48000,
+          "endMs": 48160,
+          "timestampMs": 48080,
+          "confidence": null
+        },
+        {
+          "text": " extra",
+          "startMs": 48240,
+          "endMs": 48480,
+          "timestampMs": 48360,
+          "confidence": null
+        },
+        {
+          "text": " steps",
+          "startMs": 48560,
+          "endMs": 48960,
+          "timestampMs": 48760,
+          "confidence": null
+        },
+        {
+          "text": " usually",
+          "startMs": 49040,
+          "endMs": 49360,
+          "timestampMs": 49200,
+          "confidence": null
+        },
+        {
+          "text": " mean",
+          "startMs": 49440,
+          "endMs": 49680,
+          "timestampMs": 49560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 49760,
+          "endMs": 49840,
+          "timestampMs": 49800,
+          "confidence": null
+        },
+        {
+          "text": " lower",
+          "startMs": 49920,
+          "endMs": 50240,
+          "timestampMs": 50080,
+          "confidence": null
+        },
+        {
+          "text": " overall",
+          "startMs": 50320,
+          "endMs": 50800,
+          "timestampMs": 50560,
+          "confidence": null
+        },
+        {
+          "text": " yield,",
+          "startMs": 50960,
+          "endMs": 51600,
+          "timestampMs": 51280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 51640,
+          "endMs": 51680,
+          "timestampMs": 51660,
+          "confidence": null
+        },
+        {
+          "text": " amount",
+          "startMs": 51760,
+          "endMs": 52000,
+          "timestampMs": 51880,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 52040,
+          "endMs": 52080,
+          "timestampMs": 52060,
+          "confidence": null
+        },
+        {
+          "text": " product",
+          "startMs": 52160,
+          "endMs": 52480,
+          "timestampMs": 52320,
+          "confidence": null
+        },
+        {
+          "text": " left",
+          "startMs": 52560,
+          "endMs": 52720,
+          "timestampMs": 52640,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 52800,
+          "endMs": 52880,
+          "timestampMs": 52840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 52920,
+          "endMs": 52960,
+          "timestampMs": 52940,
+          "confidence": null
+        },
+        {
+          "text": " end.",
+          "startMs": 53040,
+          "endMs": 53520,
+          "timestampMs": 53280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 845,
+      "voiceover": {
+        "text": "So, name and count, work backwards, choose, then write forwards and check. In short, work backwards to plan, because the target's group tells you the last step, and write forwards to answer. Many routes run along the main road from ethene: alkene, primary alcohol, acid, ester. When the O H's position matters, start from a haloalkane with its halogen on the right carbon.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/memory-aid.01b28fa0ab13.mp3",
+        "startFrame": 0,
+        "endFrame": 785
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So,",
+          "startMs": 0,
+          "endMs": 560,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " name",
+          "startMs": 640,
+          "endMs": 880,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 920,
+          "endMs": 960,
+          "timestampMs": 940,
+          "confidence": null
+        },
+        {
+          "text": " count,",
+          "startMs": 1040,
+          "endMs": 1760,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 1840,
+          "endMs": 2080,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " backwards,",
+          "startMs": 2200,
+          "endMs": 2960,
+          "timestampMs": 2580,
+          "confidence": null
+        },
+        {
+          "text": " choose,",
+          "startMs": 3040,
+          "endMs": 3760,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 3840,
+          "endMs": 4000,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " write",
+          "startMs": 4080,
+          "endMs": 4320,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " forwards",
+          "startMs": 4400,
+          "endMs": 4800,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " check.",
+          "startMs": 5120,
+          "endMs": 5520,
+          "timestampMs": 5320,
+          "confidence": null
+        },
+        {
+          "text": " In",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " short,",
+          "startMs": 6240,
+          "endMs": 7040,
+          "timestampMs": 6640,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 7120,
+          "endMs": 7360,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " backwards",
+          "startMs": 7480,
+          "endMs": 7760,
+          "timestampMs": 7620,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7840,
+          "endMs": 7920,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " plan,",
+          "startMs": 8000,
+          "endMs": 8560,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 8680,
+          "endMs": 8800,
+          "timestampMs": 8740,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8880,
+          "endMs": 8960,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " target's",
+          "startMs": 9160,
+          "endMs": 9440,
+          "timestampMs": 9300,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 9560,
+          "endMs": 9680,
+          "timestampMs": 9620,
+          "confidence": null
+        },
+        {
+          "text": " tells",
+          "startMs": 9720,
+          "endMs": 9920,
+          "timestampMs": 9820,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 10000,
+          "endMs": 10080,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10120,
+          "endMs": 10160,
+          "timestampMs": 10140,
+          "confidence": null
+        },
+        {
+          "text": " last",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " step,",
+          "startMs": 10680,
+          "endMs": 11280,
+          "timestampMs": 10980,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11360,
+          "endMs": 11440,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " write",
+          "startMs": 11600,
+          "endMs": 11760,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " forwards",
+          "startMs": 11840,
+          "endMs": 12320,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12400,
+          "endMs": 12480,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 12560,
+          "endMs": 13400,
+          "timestampMs": 12980,
+          "confidence": null
+        },
+        {
+          "text": " Many",
+          "startMs": 13840,
+          "endMs": 13920,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " routes",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " run",
+          "startMs": 14400,
+          "endMs": 14520,
+          "timestampMs": 14460,
+          "confidence": null
+        },
+        {
+          "text": " along",
+          "startMs": 14640,
+          "endMs": 14680,
+          "timestampMs": 14660,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14720,
+          "endMs": 14800,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " main",
+          "startMs": 15040,
+          "endMs": 15120,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " road",
+          "startMs": 15360,
+          "endMs": 15440,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 15520,
+          "endMs": 15600,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " ethene:",
+          "startMs": 15840,
+          "endMs": 16720,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " alkene,",
+          "startMs": 16880,
+          "endMs": 17560,
+          "timestampMs": 17220,
+          "confidence": null
+        },
+        {
+          "text": " primary",
+          "startMs": 17760,
+          "endMs": 17840,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " alcohol,",
+          "startMs": 17920,
+          "endMs": 18760,
+          "timestampMs": 18340,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 18960,
+          "endMs": 19520,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " ester.",
+          "startMs": 19760,
+          "endMs": 20320,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " When",
+          "startMs": 20480,
+          "endMs": 20520,
+          "timestampMs": 20500,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20560,
+          "endMs": 20640,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 20800,
+          "endMs": 20880,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " H's",
+          "startMs": 21040,
+          "endMs": 21400,
+          "timestampMs": 21220,
+          "confidence": null
+        },
+        {
+          "text": " position",
+          "startMs": 21600,
+          "endMs": 21680,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " matters,",
+          "startMs": 21760,
+          "endMs": 22560,
+          "timestampMs": 22160,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 22800,
+          "endMs": 22880,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 22960,
+          "endMs": 23040,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23120,
+          "endMs": 23240,
+          "timestampMs": 23180,
+          "confidence": null
+        },
+        {
+          "text": " haloalkane",
+          "startMs": 23360,
+          "endMs": 24080,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 24240,
+          "endMs": 24320,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 24400,
+          "endMs": 24480,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " halogen",
+          "startMs": 24640,
+          "endMs": 24960,
+          "timestampMs": 24800,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 25040,
+          "endMs": 25080,
+          "timestampMs": 25060,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25120,
+          "endMs": 25200,
+          "timestampMs": 25160,
+          "confidence": null
+        },
+        {
+          "text": " right",
+          "startMs": 25440,
+          "endMs": 25520,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " carbon.",
+          "startMs": 25920,
+          "endMs": 26160,
+          "timestampMs": 26040,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 908,
+      "voiceover": {
+        "text": "Your turn. A chemist wants to make pentanoic acid, and can start from either pent-1-ene or 1-chloropentane. Construct a flow chart for a two-step synthesis from the better starting material, with the reagents and conditions for each step, and justify your choice. Pause here to answer.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/attempt-1.2fa76674ed57.mp3",
+        "startFrame": 0,
+        "endFrame": 572
+      },
+      "responseHold": {
+        "startFrame": 584,
+        "endFrame": 884
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Your",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " turn.",
+          "startMs": 240,
+          "endMs": 640,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1120,
+          "endMs": 1200,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " chemist",
+          "startMs": 1280,
+          "endMs": 1600,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " wants",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 2080,
+          "endMs": 2240,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " pentanoic",
+          "startMs": 2320,
+          "endMs": 2960,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 3120,
+          "endMs": 3680,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3760,
+          "endMs": 3840,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 3920,
+          "endMs": 4000,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 4080,
+          "endMs": 4320,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 4400,
+          "endMs": 4560,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " either",
+          "startMs": 4680,
+          "endMs": 4800,
+          "timestampMs": 4740,
+          "confidence": null
+        },
+        {
+          "text": " pent-1-ene",
+          "startMs": 4960,
+          "endMs": 5920,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 6240,
+          "endMs": 6480,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " 1-chloropentane.",
+          "startMs": 6560,
+          "endMs": 8160,
+          "timestampMs": 7360,
+          "confidence": null
+        },
+        {
+          "text": " Construct",
+          "startMs": 8480,
+          "endMs": 8880,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " flow",
+          "startMs": 9160,
+          "endMs": 9280,
+          "timestampMs": 9220,
+          "confidence": null
+        },
+        {
+          "text": " chart",
+          "startMs": 9360,
+          "endMs": 9600,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 9680,
+          "endMs": 9760,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9840,
+          "endMs": 9920,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " two-step",
+          "startMs": 10000,
+          "endMs": 10480,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " synthesis",
+          "startMs": 10560,
+          "endMs": 11120,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 11200,
+          "endMs": 11280,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11320,
+          "endMs": 11360,
+          "timestampMs": 11340,
+          "confidence": null
+        },
+        {
+          "text": " better",
+          "startMs": 11520,
+          "endMs": 11760,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 11840,
+          "endMs": 12160,
+          "timestampMs": 12000,
+          "confidence": null
+        },
+        {
+          "text": " material,",
+          "startMs": 12240,
+          "endMs": 13120,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 13160,
+          "endMs": 13200,
+          "timestampMs": 13180,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13240,
+          "endMs": 13280,
+          "timestampMs": 13260,
+          "confidence": null
+        },
+        {
+          "text": " reagents",
+          "startMs": 13360,
+          "endMs": 13920,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14000,
+          "endMs": 14080,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 14360,
+          "endMs": 14640,
+          "timestampMs": 14500,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 14720,
+          "endMs": 14800,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 14880,
+          "endMs": 15040,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " step,",
+          "startMs": 15120,
+          "endMs": 15760,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15840,
+          "endMs": 16000,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " justify",
+          "startMs": 16239.999999999998,
+          "endMs": 16480,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 16560,
+          "endMs": 16640,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " choice.",
+          "startMs": 16720,
+          "endMs": 17680,
+          "timestampMs": 17200,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 17840,
+          "endMs": 18000,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 18120,
+          "endMs": 18240,
+          "timestampMs": 18180,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 18320,
+          "endMs": 18400,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 18480,
+          "endMs": 19040,
+          "timestampMs": 18760,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 884,
+        "responseHoldStart": 584,
+        "pausePrompt": 584
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 948,
+      "voiceover": {
+        "text": "Start from 1-chloropentane. Aqueous sodium hydroxide, heated under reflux, puts the O H on the same carbon, carbon one, giving pentan-1-ol. Then excess acidified dichromate under reflux oxidises that primary alcohol to pentanoic acid. Starting from pent-1-ene is the trap. Most of the water adds its O H to carbon two, giving mainly pentan-2-ol, and that only oxidises to a ketone.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/feedback-1.4c4871d0cfde.mp3",
+        "startFrame": 0,
+        "endFrame": 888
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Start",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 400,
+          "endMs": 560,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " 1-chloropentane.",
+          "startMs": 720,
+          "endMs": 1920,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " Aqueous",
+          "startMs": 2400,
+          "endMs": 2880,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " sodium",
+          "startMs": 2960,
+          "endMs": 3280,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " hydroxide,",
+          "startMs": 3360,
+          "endMs": 4320,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " heated",
+          "startMs": 4360,
+          "endMs": 4640,
+          "timestampMs": 4500,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 4720,
+          "endMs": 4880,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " reflux,",
+          "startMs": 4960,
+          "endMs": 5840,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " puts",
+          "startMs": 5960,
+          "endMs": 6080,
+          "timestampMs": 6020,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 6320,
+          "endMs": 6480,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 6560,
+          "endMs": 6720,
+          "timestampMs": 6640,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6960,
+          "endMs": 7040,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 7120,
+          "endMs": 7360,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " carbon,",
+          "startMs": 7440,
+          "endMs": 8080,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 8240,
+          "endMs": 8400,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 8480,
+          "endMs": 9120,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " giving",
+          "startMs": 9200,
+          "endMs": 9360,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " pentan-1-ol.",
+          "startMs": 9520,
+          "endMs": 11040,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 11360,
+          "endMs": 11680,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " excess",
+          "startMs": 12000,
+          "endMs": 12480,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " acidified",
+          "startMs": 12560,
+          "endMs": 13200,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " dichromate",
+          "startMs": 13280,
+          "endMs": 14000,
+          "timestampMs": 13640,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 14120,
+          "endMs": 14240,
+          "timestampMs": 14180,
+          "confidence": null
+        },
+        {
+          "text": " reflux",
+          "startMs": 14360,
+          "endMs": 14800,
+          "timestampMs": 14580,
+          "confidence": null
+        },
+        {
+          "text": " oxidises",
+          "startMs": 15120,
+          "endMs": 15760,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " primary",
+          "startMs": 16000,
+          "endMs": 16400,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " alcohol",
+          "startMs": 16480,
+          "endMs": 16880,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 16960,
+          "endMs": 17120,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " pentanoic",
+          "startMs": 17200,
+          "endMs": 17760,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " acid.",
+          "startMs": 17840,
+          "endMs": 18240,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " Starting",
+          "startMs": 18960,
+          "endMs": 19280,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 19360,
+          "endMs": 19520,
+          "timestampMs": 19440,
+          "confidence": null
+        },
+        {
+          "text": " pent-1-ene",
+          "startMs": 19600,
+          "endMs": 20560,
+          "timestampMs": 20080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20800,
+          "endMs": 20880,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " trap.",
+          "startMs": 20960,
+          "endMs": 21440,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " Most",
+          "startMs": 21920,
+          "endMs": 22160,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 22200,
+          "endMs": 22240,
+          "timestampMs": 22220,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22320,
+          "endMs": 22360,
+          "timestampMs": 22340,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 22400,
+          "endMs": 22720,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " adds",
+          "startMs": 22800,
+          "endMs": 22960,
+          "timestampMs": 22880,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 23200,
+          "endMs": 23280,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 23360,
+          "endMs": 23520,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 23600,
+          "endMs": 23680,
+          "timestampMs": 23640,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 23760,
+          "endMs": 24080,
+          "timestampMs": 23920,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 24240,
+          "endMs": 24800,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " giving",
+          "startMs": 24840,
+          "endMs": 25040,
+          "timestampMs": 24940,
+          "confidence": null
+        },
+        {
+          "text": " mainly",
+          "startMs": 25120,
+          "endMs": 25520,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " pentan-2-ol,",
+          "startMs": 25680,
+          "endMs": 27120,
+          "timestampMs": 26400,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 27200,
+          "endMs": 27280,
+          "timestampMs": 27240,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 27360,
+          "endMs": 27600,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 27680,
+          "endMs": 27920,
+          "timestampMs": 27800,
+          "confidence": null
+        },
+        {
+          "text": " oxidises",
+          "startMs": 28080,
+          "endMs": 28560,
+          "timestampMs": 28320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 28600,
+          "endMs": 28640,
+          "timestampMs": 28620,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 28720,
+          "endMs": 28760,
+          "timestampMs": 28740,
+          "confidence": null
+        },
+        {
+          "text": " ketone.",
+          "startMs": 28800,
+          "endMs": 29600,
+          "timestampMs": 29200,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 728,
+      "voiceover": {
+        "text": "Last one. A chemist has only ethene and butan-1-ol to start from. Draw a flow chart to make ethyl butanoate, with the reagents and conditions on every arrow. Pause here to answer.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/attempt-2.c204e07871fc.mp3",
+        "startFrame": 0,
+        "endFrame": 392
+      },
+      "responseHold": {
+        "startFrame": 404,
+        "endFrame": 704
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Last",
+          "startMs": 0,
+          "endMs": 280,
+          "timestampMs": 140,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " chemist",
+          "startMs": 1360,
+          "endMs": 1680,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 1760,
+          "endMs": 1920,
+          "timestampMs": 1840,
+          "confidence": null
+        },
+        {
+          "text": " only",
+          "startMs": 2000,
+          "endMs": 2320,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " ethene",
+          "startMs": 2400,
+          "endMs": 2880,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 2960,
+          "endMs": 3120,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " butan-1-ol",
+          "startMs": 3200,
+          "endMs": 4080,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 4320,
+          "endMs": 4560,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " from.",
+          "startMs": 4640,
+          "endMs": 4960,
+          "timestampMs": 4800,
+          "confidence": null
+        },
+        {
+          "text": " Draw",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " flow",
+          "startMs": 5920,
+          "endMs": 6160,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " chart",
+          "startMs": 6240,
+          "endMs": 6480,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 6560,
+          "endMs": 6640,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 6720,
+          "endMs": 6880,
+          "timestampMs": 6800,
+          "confidence": null
+        },
+        {
+          "text": " ethyl",
+          "startMs": 6960,
+          "endMs": 7280,
+          "timestampMs": 7120,
+          "confidence": null
+        },
+        {
+          "text": " butanoate,",
+          "startMs": 7360,
+          "endMs": 8320,
+          "timestampMs": 7840,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8400,
+          "endMs": 8480,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8520,
+          "endMs": 8560,
+          "timestampMs": 8540,
+          "confidence": null
+        },
+        {
+          "text": " reagents",
+          "startMs": 8640,
+          "endMs": 9200,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9280,
+          "endMs": 9360,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 9440,
+          "endMs": 10000,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 10400,
+          "endMs": 10640,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " arrow.",
+          "startMs": 10720,
+          "endMs": 11200,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 11680,
+          "endMs": 11920,
+          "timestampMs": 11800,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 12000,
+          "endMs": 12240,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12320,
+          "endMs": 12400,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 12480,
+          "endMs": 13040,
+          "timestampMs": 12760,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 704,
+        "responseHoldStart": 404,
+        "pausePrompt": 404
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 905,
+      "voiceover": {
+        "text": "The ethyl part comes from ethanol, and the butanoate part from butanoic acid. So hydrate ethene with steam and a phosphoric acid catalyst, hot and under pressure. Oxidise the butan-1-ol with excess acidified dichromate, under reflux. Then esterify with concentrated sulfuric acid under reflux, using a double arrow. Oxidising the ethanol instead is the trap. That makes butyl ethanoate, an isomer.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/feedback-2.8da3f93ee062.mp3",
+        "startFrame": 0,
+        "endFrame": 845
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " ethyl",
+          "startMs": 240,
+          "endMs": 560,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 640,
+          "endMs": 960,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 1040,
+          "endMs": 1280,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 1360,
+          "endMs": 1440,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " ethanol,",
+          "startMs": 1600,
+          "endMs": 2320,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2520,
+          "endMs": 2560,
+          "timestampMs": 2540,
+          "confidence": null
+        },
+        {
+          "text": " butanoate",
+          "startMs": 2640,
+          "endMs": 3280,
+          "timestampMs": 2960,
+          "confidence": null
+        },
+        {
+          "text": " part",
+          "startMs": 3440,
+          "endMs": 3600,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 3680,
+          "endMs": 3840,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " butanoic",
+          "startMs": 3920,
+          "endMs": 4480,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " acid.",
+          "startMs": 4560,
+          "endMs": 4960,
+          "timestampMs": 4760,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 5440,
+          "endMs": 5600,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " hydrate",
+          "startMs": 5840,
+          "endMs": 6320,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " ethene",
+          "startMs": 6400,
+          "endMs": 6800,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " steam",
+          "startMs": 7040,
+          "endMs": 7520,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7560,
+          "endMs": 7600,
+          "timestampMs": 7580,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7680,
+          "endMs": 7720,
+          "timestampMs": 7700,
+          "confidence": null
+        },
+        {
+          "text": " phosphoric",
+          "startMs": 7760,
+          "endMs": 8320,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 8400,
+          "endMs": 8560,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " catalyst,",
+          "startMs": 8720,
+          "endMs": 9520,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " hot",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10000,
+          "endMs": 10160,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 10240,
+          "endMs": 10400,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " pressure.",
+          "startMs": 10480,
+          "endMs": 10880,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " Oxidise",
+          "startMs": 11360,
+          "endMs": 11920,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11960,
+          "endMs": 12000,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " butan-1-ol",
+          "startMs": 12080,
+          "endMs": 13040,
+          "timestampMs": 12560,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 13160,
+          "endMs": 13280,
+          "timestampMs": 13220,
+          "confidence": null
+        },
+        {
+          "text": " excess",
+          "startMs": 13360,
+          "endMs": 13760,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " acidified",
+          "startMs": 13920,
+          "endMs": 14400,
+          "timestampMs": 14160,
+          "confidence": null
+        },
+        {
+          "text": " dichromate,",
+          "startMs": 14480,
+          "endMs": 15360,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 15480,
+          "endMs": 15600,
+          "timestampMs": 15540,
+          "confidence": null
+        },
+        {
+          "text": " reflux.",
+          "startMs": 15680,
+          "endMs": 16640,
+          "timestampMs": 16160,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 16720,
+          "endMs": 16960,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " esterify",
+          "startMs": 17120,
+          "endMs": 17920,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 18000,
+          "endMs": 18080,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " concentrated",
+          "startMs": 18160,
+          "endMs": 18800,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " sulfuric",
+          "startMs": 18880,
+          "endMs": 19440,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 19520,
+          "endMs": 19760,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 19880,
+          "endMs": 20000,
+          "timestampMs": 19940,
+          "confidence": null
+        },
+        {
+          "text": " reflux,",
+          "startMs": 20120,
+          "endMs": 20720,
+          "timestampMs": 20420,
+          "confidence": null
+        },
+        {
+          "text": " using",
+          "startMs": 20840,
+          "endMs": 20960,
+          "timestampMs": 20900,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 21040,
+          "endMs": 21120,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " double",
+          "startMs": 21240,
+          "endMs": 21360,
+          "timestampMs": 21300,
+          "confidence": null
+        },
+        {
+          "text": " arrow.",
+          "startMs": 21440,
+          "endMs": 22240,
+          "timestampMs": 21840,
+          "confidence": null
+        },
+        {
+          "text": " Oxidising",
+          "startMs": 22320,
+          "endMs": 22880,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22960,
+          "endMs": 23040,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " ethanol",
+          "startMs": 23120,
+          "endMs": 23520,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " instead",
+          "startMs": 23600,
+          "endMs": 24160,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 24240,
+          "endMs": 24400,
+          "timestampMs": 24320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24480,
+          "endMs": 24560,
+          "timestampMs": 24520,
+          "confidence": null
+        },
+        {
+          "text": " trap.",
+          "startMs": 24760,
+          "endMs": 25360,
+          "timestampMs": 25060,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 25480,
+          "endMs": 25600,
+          "timestampMs": 25540,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 25680,
+          "endMs": 25920,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " butyl",
+          "startMs": 26000,
+          "endMs": 26400,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " ethanoate,",
+          "startMs": 26480,
+          "endMs": 27360,
+          "timestampMs": 26920,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 27440,
+          "endMs": 27520,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " isomer.",
+          "startMs": 27600,
+          "endMs": 28160,
+          "timestampMs": 27880,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "durationInFrames": 521,
+      "voiceover": {
+        "text": "So every synthesis question uses the same four moves, on one map. Every arrow needs its reagents and conditions, and every box needs a name. Next: practice, with harder targets and starting materials to plan from.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/handoff.9852d8a457b4.mp3",
+        "startFrame": 0,
+        "endFrame": 461
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 180,
+          "timestampMs": 90,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 240,
+          "endMs": 592,
+          "timestampMs": 416,
+          "confidence": null
+        },
+        {
+          "text": " synthesis",
+          "startMs": 640,
+          "endMs": 1200,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " question",
+          "startMs": 1280,
+          "endMs": 1680,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " uses",
+          "startMs": 1760,
+          "endMs": 2080,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2160,
+          "endMs": 2240,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 2320,
+          "endMs": 2560,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 2720,
+          "endMs": 2880,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " moves,",
+          "startMs": 3040,
+          "endMs": 3680,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 3760,
+          "endMs": 3840,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4000,
+          "endMs": 4160,
+          "timestampMs": 4080,
+          "confidence": null
+        },
+        {
+          "text": " map.",
+          "startMs": 4240,
+          "endMs": 4840,
+          "timestampMs": 4540,
+          "confidence": null
+        },
+        {
+          "text": " Every",
+          "startMs": 5120,
+          "endMs": 5440,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " arrow",
+          "startMs": 5640,
+          "endMs": 5840,
+          "timestampMs": 5740,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 5920,
+          "endMs": 6080,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 6160,
+          "endMs": 6240,
+          "timestampMs": 6200,
+          "confidence": null
+        },
+        {
+          "text": " reagents",
+          "startMs": 6320,
+          "endMs": 6880,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6920,
+          "endMs": 6960,
+          "timestampMs": 6940,
+          "confidence": null
+        },
+        {
+          "text": " conditions,",
+          "startMs": 7040,
+          "endMs": 7920,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8000,
+          "endMs": 8080,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 8240,
+          "endMs": 8480,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " box",
+          "startMs": 8560,
+          "endMs": 8880,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 8960,
+          "endMs": 9120,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9200,
+          "endMs": 9240,
+          "timestampMs": 9220,
+          "confidence": null
+        },
+        {
+          "text": " name.",
+          "startMs": 9280,
+          "endMs": 9680,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " Next:",
+          "startMs": 10400,
+          "endMs": 11040,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " practice,",
+          "startMs": 11280,
+          "endMs": 11920,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 12160,
+          "endMs": 12320,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " harder",
+          "startMs": 12440,
+          "endMs": 12720,
+          "timestampMs": 12580,
+          "confidence": null
+        },
+        {
+          "text": " targets",
+          "startMs": 12960,
+          "endMs": 13200,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 13440,
+          "endMs": 13760,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " materials",
+          "startMs": 13840,
+          "endMs": 14320,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 14400,
+          "endMs": 14480,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " plan",
+          "startMs": 14560,
+          "endMs": 14800,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " from.",
+          "startMs": 14880,
+          "endMs": 15360,
+          "timestampMs": 15120,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 759,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Chemistry-Y12-M7-C13-claude-2026-10-28-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 440,
+          "endMs": 480,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 800,
+          "endMs": 1440,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2920,
+          "endMs": 3040,
+          "timestampMs": 2980,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4200,
+          "endMs": 4480,
+          "timestampMs": 4340,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

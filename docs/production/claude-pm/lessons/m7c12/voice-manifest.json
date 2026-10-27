@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C12-claude-2026-10-28-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c12/lesson.json",
+  "lessonSha256": "3af4765ec3a36f7de89d951876402e859033673042a23501cf28a2c332944501",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c12/lesson.production-brief.json",
+    "sha256": "cd55b8984c704a0a14f71d9b2efd4782c72bbfe5dd55663acb94176981dc2693"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Pour cooking oil into water, shake it hard, and within a minute the oil floats back up into its own layer. Add a few drops of soap, shake it again, and the mixture turns cloudy, and stays cloudy for much longer. The oil has spread through the water, ready to rinse away. So how can one substance hold on to oil and water at the same time?",
+      "hash": "c564505a25f7",
+      "textSha256": "c564505a25f79a90400e60dc0a0c3f8820dbfe66c4826507bbd1e739a037c246",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/hook.c564505a25f7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/hook.c564505a25f7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/hook.c564505a25f7.generation.json",
+      "plannedRequestSha256": "2ea77ea15b0a8b247cd9ecde82ef5d1a35cbc962b934bc6398dc779b809d4d9f"
+    },
+    {
+      "id": "why-separate",
+      "parentSceneId": "why-separate",
+      "text": "First, why won't they mix? It's like the hexane layer from the hydrocarbons video. Oil molecules are mostly long hydrocarbon chains, so they're largely non-polar, with mainly dispersion forces to offer. Letting them in would break water's hydrogen bonds, so the water keeps its hydrogen bonds, and squeezes the oil out.",
+      "hash": "8db32abe7dba",
+      "textSha256": "8db32abe7dba3408d1a0166733160901bc40f3fae8734aef44aa81b9f480a9c4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/why-separate.8db32abe7dba.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/why-separate.8db32abe7dba.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/why-separate.8db32abe7dba.generation.json",
+      "plannedRequestSha256": "ada8447b26cdb81999aced521bdb5563091ed1d7b4ace42edaf4ba3aca9163d3"
+    },
+    {
+      "id": "soap-structure",
+      "parentSceneId": "soap-structure",
+      "text": "Soap fixes this with a particle that has two very different ends. Take sodium stearate. It's the sodium salt of a long carboxylic acid, so its systematic name, sodium octadecanoate, ends in oate. Stearic acid itself barely mixes with water, like the long acids in the carboxylic acids video. But in the salt, one end has become a charged ion. The other end of the stearate ion is a chain of seventeen carbons, the tail. It's non-polar, so oil attracts it by dispersion forces, and it's called hydrophobic, meaning water-avoiding. The charged end is the carboxylate group, C O O minus, the head. Its charge attracts polar water molecules, an ion-dipole attraction, so it's hydrophilic, meaning water loving.",
+      "hash": "9c3d3d425bea",
+      "textSha256": "9c3d3d425bea0f18c2da0b10b1ad32d404cb613bcf3b608b7c5926ceb87f361e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/soap-structure.9c3d3d425bea.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/soap-structure.9c3d3d425bea.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/soap-structure.9c3d3d425bea.generation.json",
+      "plannedRequestSha256": "f2f2e9bb155c1a0bb3ff6b0ab4c60e50345a5e9a2471e02ac6f02489acfde851"
+    },
+    {
+      "id": "saponification",
+      "parentSceneId": "saponification",
+      "text": "Where does soap come from? Fats and oils are triglycerides. Each one is glycerol, a small molecule with three O H groups, joined to three long acid chains by three ester links. Heat a fat with concentrated sodium hydroxide, and the hydroxide ions break all three ester links. You get glycerol, and three soap particles. That's saponification, or soap making. The sodium hydroxide is used up, three for every fat molecule, so it's a reactant, not a catalyst. The strongly basic mixture also takes each acid's proton, leaving a carboxylate ion. A carboxylate ion can't re-form the ester with glycerol, so unlike esterification, it goes essentially to completion.",
+      "hash": "3145d99ebaa0",
+      "textSha256": "3145d99ebaa0dadddc8d2321fcee37757528fd630232cae63795db2f92e2ba00",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/saponification.3145d99ebaa0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/saponification.3145d99ebaa0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/saponification.3145d99ebaa0.generation.json",
+      "plannedRequestSha256": "febb9302a9423c337a9b56e58c32df9691a60dd0524fa3ced342744f6128f857"
+    },
+    {
+      "id": "surface-micelles",
+      "parentSceneId": "surface-micelles",
+      "text": "Now put soap in water. The heads stay in the water, but the tails get squeezed out, just like the oil. So soap gathers at the surface, with its tails sticking up out of the water. Add enough soap, and the particles also cluster into tiny balls called micelles. The tails tuck into the middle, away from the water, and the heads face out into it.",
+      "hash": "71ead7fdac45",
+      "textSha256": "71ead7fdac458f727f5b468e35cbd57790e9a95f50d5c83a0d2c4925004dc6bb",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/surface-micelles.71ead7fdac45.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/surface-micelles.71ead7fdac45.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/surface-micelles.71ead7fdac45.generation.json",
+      "plannedRequestSha256": "2c7ca9fde17805cf0c1d832d7ad38da376db3e8d13bb3b89dbaf0194fef9adef"
+    },
+    {
+      "id": "cleaning-action",
+      "parentSceneId": "cleaning-action",
+      "text": "Now add grease. The tails dissolve into the grease, held there by dispersion forces, while the heads stay in the water. Rubbing or shaking breaks the grease into small droplets, each one wrapped in soap, tails in and heads out. Every droplet's surface is covered in negative heads, so the droplets repel each other, and don't easily join back together. They stay spread through the water as an emulsion, tiny droplets of one liquid in another, and the rinse carries them away. The grease doesn't dissolve in the water. It's still oil, just in tiny coated droplets.",
+      "hash": "7e9f7a882e7e",
+      "textSha256": "7e9f7a882e7e294aeafe61a6155c882734d0e201b10cd61e1d62a88e93c6f3dd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/cleaning-action.7e9f7a882e7e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/cleaning-action.7e9f7a882e7e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/cleaning-action.7e9f7a882e7e.generation.json",
+      "plannedRequestSha256": "cfc30d0415289d7e13edf433da2a53b4bbd4d8c679f0f9199b0f9067facdba16"
+    },
+    {
+      "id": "hard-water",
+      "parentSceneId": "hard-water",
+      "text": "Soap has one big weakness: hard water. Hard water has calcium and magnesium ions dissolved in it, often from rocks like limestone. Two soap anions join one calcium ion, and form calcium stearate, which doesn't dissolve. It comes out as a sticky white solid called scum. Two soap ions for each calcium ion keeps the charges balanced. The soap in the scum can't clean, so you get less froth, and need more soap.",
+      "hash": "3c721daf5a11",
+      "textSha256": "3c721daf5a112c62ec3aad6dae0c92ee6397b5fd8ad8537e31cbfb418f284894",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/hard-water.3c721daf5a11.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/hard-water.3c721daf5a11.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/hard-water.3c721daf5a11.generation.json",
+      "plannedRequestSha256": "e9acbd4d29f8ff6ce38bacb86e76841b99a962aad33f587f25ee00d1ff69c83c"
+    },
+    {
+      "id": "detergents",
+      "parentSceneId": "detergents",
+      "text": "Synthetic detergents keep the same plan, a long non-polar tail and a water loving head, but they change the head. The most common ones have a sulfonate or sulfate head, still negative, so calcium ions are still attracted to them. But the calcium and magnesium salts they make are much more soluble, so they stay dissolved, instead of coming out as scum. The detergent stays in the water, free to clean. Cationic detergents have a positive head, built on nitrogen, like the ammonium ions from the amines video. They're used in fabric softeners. And non-ionic detergents have no charge at all. Their head is a polar chain that hydrogen bonds with water, so calcium ions have nothing to grab.",
+      "hash": "20a9f73a2ea8",
+      "textSha256": "20a9f73a2ea894aa51714a5634b50b2384a44269018de6bef8ac9c58c07186d7",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/detergents.20a9f73a2ea8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/detergents.20a9f73a2ea8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/detergents.20a9f73a2ea8.generation.json",
+      "plannedRequestSha256": "ee551870686fb166428c7e1faf9ed9b1a81a86805a94a0184e3dd9508d04da1c"
+    },
+    {
+      "id": "soap-vs-detergent",
+      "parentSceneId": "soap-vs-detergent",
+      "text": "So which is better? Both clean the same way, with micelles. A detergent isn't a stronger soap. It just has a head that makes far less scum. Soap is made from fats and oils, a renewable source, and it breaks down readily, but it forms scum in hard water. Detergents work in hard and soft water, but many are made from petrochemicals, and how fast they break down varies. The best choice depends on the water, and on the job.",
+      "hash": "4080008c39c1",
+      "textSha256": "4080008c39c14c88bc34906560c56ce71cc21288d1c057d97579dbb83a841a04",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/soap-vs-detergent.4080008c39c1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/soap-vs-detergent.4080008c39c1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/soap-vs-detergent.4080008c39c1.generation.json",
+      "plannedRequestSha256": "ef6cc546e12b30cd6d97596b46c0e762cd58ee8e7d3fe395ef2a7ae492b1e956"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, head in the water, tail in the grease. The tails grab the grease, the heads face the water, and the charged surfaces keep the droplets apart. And soap makes scum in hard water, while detergents mostly don't.",
+      "hash": "5b6a77539447",
+      "textSha256": "5b6a77539447dc00f97bd4cedc640f988d1e6950ab2de9e0d5bb5470df1030f2",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/memory-aid.5b6a77539447.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/memory-aid.5b6a77539447.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/memory-aid.5b6a77539447.generation.json",
+      "plannedRequestSha256": "39450029918b0b9712d7f9bd31603a91782e9005202945d8a56bd1e859718a26"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Sodium palmitate is a soap, and its formula is shown. Identify the hydrophobic and hydrophilic parts of the palmitate ion. Then explain how this soap removes an oily stain from fabric during washing, referring to the intermolecular forces involved. Pause here to answer.",
+      "hash": "787e49eec6e8",
+      "textSha256": "787e49eec6e815fc552530bb39de74b805f6da45863e079c7609f3c95809db52",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/attempt-1.787e49eec6e8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/attempt-1.787e49eec6e8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/attempt-1.787e49eec6e8.generation.json",
+      "plannedRequestSha256": "03046187959df6c2ffdf3c411120669bcc32e4c7e49ca9a5e5945a56909f2e86"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The hydrocarbon tail is hydrophobic, and the carboxylate head, C O O minus, is hydrophilic. The tails dissolve into the oil by dispersion forces, and the heads stay in the water by ion-dipole attraction. Washing lifts the oil off as droplets wrapped in soap, with negative surfaces that repel, so they stay spread out and rinse away. Saying the soap dissolves the oil is the trap. It's emulsified.",
+      "hash": "1d178c21f2a2",
+      "textSha256": "1d178c21f2a2731b29181b712e0772bf5e602385e245cbd31f499adc520adf5f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/feedback-1.1d178c21f2a2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/feedback-1.1d178c21f2a2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/feedback-1.1d178c21f2a2.generation.json",
+      "plannedRequestSha256": "c7292aed7d1a29880bb34de87642499d8a768e019b0731890b6e5f2a7d5790a7"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Soap solution is added to rainwater, and to tap water containing dissolved calcium ions. The tap water turns cloudy, with a white solid and little froth. Write a net ionic equation for forming the solid, using sodium stearate as the soap. Then explain why a sulfonate detergent froths well in the same tap water. Pause here to answer.",
+      "hash": "e9f3766a160f",
+      "textSha256": "e9f3766a160fb1a0b85b55c4d0c067183d76b09494d775540529c4f64a714b98",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/attempt-2.e9f3766a160f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/attempt-2.e9f3766a160f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/attempt-2.e9f3766a160f.generation.json",
+      "plannedRequestSha256": "f284cf7c9eed38df455e47f75b0f14e72e2aa3a5e487a9f9cd7928297616b97b"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Two stearate ions react with one calcium ion, to form solid calcium stearate. The sodium ions are spectators, so they're left out. The detergent's sulfonate head forms a calcium salt that's much more soluble, so the detergent stays dissolved, and keeps frothing and cleaning. Writing one stearate with one calcium is the trap. The charges don't balance.",
+      "hash": "d1e375fd40f6",
+      "textSha256": "d1e375fd40f69493d1d0f466cc32edf04779c8a86881a57fca9bdf0a4f193d33",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/feedback-2.d1e375fd40f6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/feedback-2.d1e375fd40f6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/feedback-2.d1e375fd40f6.generation.json",
+      "plannedRequestSha256": "669d0983d690f600f5ad3c1bfae87f446f67d25c94394c6077bcff01f311d56a"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So one particle with a water loving head and a grease loving tail can lift oil into water. Next: into the lab, to compare soap and detergent in soft and hard water.",
+      "hash": "b5b0bcde5260",
+      "textSha256": "b5b0bcde5260df745771629cfb886d57bf09e9f32ceca653a395dbb42fdd7c71",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/handoff.b5b0bcde5260.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/handoff.b5b0bcde5260.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/handoff.b5b0bcde5260.generation.json",
+      "plannedRequestSha256": "88758f5fe1799703c43f289147805a6d8bf5e670a1a9b2eaa92c2a39dc67cc49"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C12-claude-2026-10-28-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

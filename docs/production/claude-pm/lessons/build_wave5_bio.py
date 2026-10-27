@@ -9495,6 +9495,771 @@ M7B12_ROWS = {
     ]
 }
 # --- M7 b08, b09, g03, b10, b11 and b12 rows (end) ---
+# --- M7 p01, b13 and g01 rows (start) ---
+M7P01B_ROWS = {
+    "hook": [
+        "adjust",
+        "the cup row writes in across the bench, eight copies of the new `m7-sim-cup-clear-v1.png` under coded letter chips \"A\" to \"H\" (grey); one cup has a faint teal outline that fades as soon as it appears (grey tag \"secret starter\").",
+        "Hook (every cup pink): Eight students each hold a cup of clear liquid.",
+        "pink / can't",
+        "On the spoken cues: On \"three times\" three coded pour arcs flash between random pairs, with a grey round counter \"round 1, 2, 3\". On \"a drop of indicator\" the existing `p03-dropper-bottle-v1.png` (from `public/assets/chemistry/`) appears small above the row (coded label chip \"indicator\") and a coded drop falls into each cup in turn. On \"pink\" each cup crossfades in place to the aligned `m7-sim-cup-pink-v1.png`, left to right. On \"who",
+        "explain",
+        "the cup row writes in across the bench, eight copies of the new `m7-sim-cup-clear-v1.png` under coded letter chips \"A\" to \"H\" (grey); one cup has a faint teal outline that fades as soon as it appears (grey tag \"secret starter\"). On \"three times\" three coded pour arcs flash between random pairs, with a grey round counter \"round 1, 2, 3\". On \"a drop of indicator\" the existing `p03-dropper-bottle-v1.png` (from `public/assets/chemistry/`) appears small above the row (coded label chip \"indicator\") and a coded drop falls into each cup in turn. On \"pink\" each cup crossfades in place to the aligned `m7-sim-cup-pink-v1.png`, left to right. On \"who started it?\" a bright chip writes over the row: \"starter: ?\". On \"can't\" a grey chip \"the first pink cup you see is the starter\" takes a grey scribble cross. The question writes at the top left: \"Who started it?\" Bright at the end: the eight pink cups (as one item), \"starter: ?\" and the question. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Plate crossfade",
+            "chip pop",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "the-model": [
+        "new",
+        "step rail lights \"1 the model\".",
+        "The model: An epidemic is a rise in cases above what's expected in a population.",
+        "epidemic / model / direct",
+        "On the spoken cues: Right zone: the model card, two columns, \"in the model\" and \"stands for\", one row per cue. On \"epidemic\" a gloss writes at the top: \"epidemic: many more cases than expected in a population, often rising quickly\". On \"model\" the card heading writes: \"model: a simplified version of something real\". On \"Each cup is a person\" row 1: \"cup | a person\". On \"a contact\" row 2: \"mixing with a partner | a contact\"; b03's route",
+        "explain",
+        "step rail lights \"1 the model\". Right zone: the model card, two columns, \"in the model\" and \"stands for\", one row per cue. On \"epidemic\" a gloss writes at the top: \"epidemic: many more cases than expected in a population, often rising quickly\". On \"model\" the card heading writes: \"model: a simplified version of something real\". On \"Each cup is a person\" row 1: \"cup | a person\". On \"a contact\" row 2: \"mixing with a partner | a contact\"; b03's route board draws small at the upper left with \"leave\", \"travel\", \"enter\" and \"direct contact\" lit (grey tag \"b03\"). On \"sodium carbonate solution\" row 3: \"dilute base (sodium carbonate) | a pathogen\"; the teal-outlined cup brightens for a moment. On \"the test\" row 4: \"indicator | the test\". The gloss dims as the rows write. Bright at the end: the card heading and rows 3 and 4. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "the-marker": [
+        "adjust",
+        "step rail lights \"2 the marker\".",
+        "The marker: The marker has to stay invisible until you test, so nobody knows who's infected while they mix.",
+        "indicator / clear",
+        "On the spoken cues: Centre: two cups side by side, both `m7-sim-cup-clear-v1.png` (grey labels \"water\", \"dilute base\"; tag \"both look the same\"). On \"invisible until you test\" a grey tag \"like an infection with no signs yet\". On \"indicator\" the dropper bottle appears (gloss \"indicator: a chemical that changes colour\"; grey tag \"phenolphthalein\"). On \"colourless in water\" a coded drop falls into the water cup, which stays clear (tag",
+        "explain",
+        "step rail lights \"2 the marker\". Centre: two cups side by side, both `m7-sim-cup-clear-v1.png` (grey labels \"water\", \"dilute base\"; tag \"both look the same\"). On \"invisible until you test\" a grey tag \"like an infection with no signs yet\". On \"indicator\" the dropper bottle appears (gloss \"indicator: a chemical that changes colour\"; grey tag \"phenolphthalein\"). On \"colourless in water\" a coded drop falls into the water cup, which stays clear (tag \"water: stays colourless\"). On \"turns pink in a solution that's basic enough\" a drop falls into the base cup, which crossfades to `m7-sim-cup-pink-v1.png` (tag \"base: pink\"; grey tag \"pink above about pH 8 to 10\"). On \"received enough base\" a coded small arc pours a little from the base cup into a third clear cup, then a drop of indicator turns it pink too (tag \"even a share of the base shows up\"). On \"clear\" the water cup's tag brightens. Bright at the end: the gloss and the two outcome tags. Hold about 1 second. Hold about 1 second.",
+        [
+            "Plate crossfade",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "method": [
+        "adjust",
+        "step rail lights \"3 method and controls\".",
+        "Method: Everyone starts with ten millilitres in a numbered cup, and your teacher secretly makes one cup the starter.",
+        "well plate / contact sheet",
+        "On the spoken cues: First, the right zone shows a variables card for about the first sentence, each line bright as it writes and then dimming to grey before the pour demonstration (LR 3): \"aim: trace how an infection spreads through contacts, and find the source\"; \"changes: who meets whom, each round\"; \"measured: which cups and samples test pink, at each time\"; \"kept the same: volume, base strength, the pour, drops per well,",
+        "explain",
+        "step rail lights \"3 method and controls\". First, the right zone shows a variables card for about the first sentence, each line bright as it writes and then dimming to grey before the pour demonstration (LR 3): \"aim: trace how an infection spreads through contacts, and find the source\"; \"changes: who meets whom, each round\"; \"measured: which cups and samples test pink, at each time\"; \"kept the same: volume, base strength, the pour, drops per well, indicator\". The card then shrinks to a thumbnail at the top of the right zone. The cup row returns clear under its letters (grey tag \"10 mL each\"). On \"secretly makes one cup the starter\" a coded drop of base from an off-screen grey label \"teacher\" lands in one cup, with no outline shown (grey tag \"nobody knows which\"). On \"find a new partner\" two cups, A and B, slide together; on \"pours all your liquid\" a coded pour arc runs from A into B, and on \"pours half back\" a smaller arc runs back (tag \"all in, swirl, half back: both now share the mixture\"). The other pairs repeat silently and quickly. On \"well plate\" the new `m7-trace-wellplate-clear-v1.png` appears below the row: eight columns under coded letters A to H, and four rows labelled in grey \"start\", \"after round 1\", \"after round 2\", \"after round 3\"; coded drops fall from cup A into its \"start\" well, then from each cup in turn (tag \"a saved sample for each time\"). On \"contact sheet\" the existing `m5x-clipboard-sheet-v1.png` appears in the right zone with a coded grid drawn on it (rows A to H, columns \"round 1\", \"round 2\", \"round 3\"); the round 1 column fills: \"B, A, D, C, F, E, H, G\" (tag \"who met whom, each round\"). On \"Keep volumes, pours and drops the same\" the variables thumbnail's \"kept the same\" line brightens, and on \"only the contacts decide\" its \"changes\" line brightens. Bright at the end: the well plate tag, the contact sheet tag and the \"kept the same\" line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "controls-repeats": [
+        "new",
+        "right zone: a controls card with two rows, outlined green.",
+        "Controls and repeats: You need two controls.",
+        "negative control / positive control",
+        "On the spoken cues: On \"negative control\" a ninth clear cup stands apart at the bench's right edge (coded chip \"−\"); on \"should stay clear\" a drop falls and it stays clear (gloss \"negative control: unmixed water → stays clear → no contamination\"). On \"positive control\" a tenth cup (chip \"+\") takes a drop and crossfades to pink (gloss \"positive control: base → pink → the indicator works\"). After the controls rows, the VRA card (as",
+        "explain",
+        "right zone: a controls card with two rows, outlined green. On \"negative control\" a ninth clear cup stands apart at the bench's right edge (coded chip \"−\"); on \"should stay clear\" a drop falls and it stays clear (gloss \"negative control: unmixed water → stays clear → no contamination\"). On \"positive control\" a tenth cup (chip \"+\") takes a drop and crossfades to pink (gloss \"positive control: base → pink → the indicator works\"). After the controls rows, the VRA card (as bio-m6-p01) writes one line per cue, the controls glosses dimming as it starts: on \"The teacher's secret record\" a small coded sealed card \"teacher's record: starter\" appears beside the cup row (grey) and the line \"accurate: traced starter matches the teacher's record\" writes; on \"repeat with a new starter\" a coded second cup row appears small behind the first with a different cup faintly outlined teal for a moment (tag \"repeat: new starter, same method\"), and on \"it's reliable\" the line \"reliable: repeat runs, new starter, same method, tracing still works\" writes; the line \"valid: only the contacts decide who turns pink; both controls pass\" writes silently as the speech ends. A chip \"one run is enough\" fades in and takes a grey cross. Grey tag beside the repeat row (LR 13): \"to test a variable, change one thing between runs: for example, two 'immune' cups that only ever hold water\". Bright at the end: the three VRA lines (as one card). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Plate crossfade",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "test-cups": [
+        "new",
+        "step rail lights \"4 test and trace\".",
+        "Test the cups: After round three, your teacher adds a drop of indicator to every cup.",
+        "first",
+        "On the spoken cues: The cup row, clear; the contact sheet thumbnail now shows all three columns filled (round 2: \"C, E, A, G, B, H, D, F\"; round 3: \"H, D, F, B, G, C, E, A\"). On \"a drop of indicator to every cup\" drops fall along the row and every cup crossfades to pink, left to right (tag \"8 of 8 pink\"). On \"first\" a bright chip writes over the row: \"now: yes; first: no; when: no\". Bright at the end: the chip and \"8 of 8 pink\".",
+        "explain",
+        "step rail lights \"4 test and trace\". The cup row, clear; the contact sheet thumbnail now shows all three columns filled (round 2: \"C, E, A, G, B, H, D, F\"; round 3: \"H, D, F, B, G, C, E, A\"). On \"a drop of indicator to every cup\" drops fall along the row and every cup crossfades to pink, left to right (tag \"8 of 8 pink\"). On \"first\" a bright chip writes over the row: \"now: yes; first: no; when: no\". Bright at the end: the chip and \"8 of 8 pink\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Plate crossfade",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "trace-source": [
+        "adjust",
+        "the well plate fills the centre; the contact sheet sits small in the right zone.",
+        "Read the samples and trace: Now the teacher adds indicator to the well plate.",
+        "contact tracing",
+        "On the spoken cues: On \"adds indicator\" the aligned `m7-trace-wellplate-pink-v1.png` is revealed by a coded wipe one row at a time, cued: on \"At the start\" the start row shows only D's well pink (bright chip \"start: D only → D was the starter\"; grey screen tag \"index case: the first case in an outbreak\"); on \"After round one\" the second row shows C and D pink, and a coded arrow runs from D's well to C's while the contact sheet's round",
+        "explain",
+        "the well plate fills the centre; the contact sheet sits small in the right zone. On \"adds indicator\" the aligned `m7-trace-wellplate-pink-v1.png` is revealed by a coded wipe one row at a time, cued: on \"At the start\" the start row shows only D's well pink (bright chip \"start: D only → D was the starter\"; grey screen tag \"index case: the first case in an outbreak\"); on \"After round one\" the second row shows C and D pink, and a coded arrow runs from D's well to C's while the contact sheet's round 1 cell \"C: D\" lights amber (tag \"C met D\"); on \"you couldn't tell C from D\" the start row dims and a grey chip \"after round 1 alone: C or D?\" writes, then the start row re-brightens; on \"After round two\" the third row shows A, C, D and G pink, with arrows C to A and D to G and the round 2 cells \"A: C\" and \"G: D\" lighting (tag \"each new case met a pink partner\"). The fourth row (all pink) reveals silently as the speech ends. On \"Real outbreaks have no start sample\" the start row dims and takes a small grey cross (tag \"no one is tested before an outbreak\"); on \"when symptoms began\" a grey tag writes beside it: \"the real version of the saved samples\". On \"contact tracing\" a gloss writes: \"contact tracing: finding who each case met\" (grey tag \"b10: how health teams use it to stop spread\"). Earlier chips dim. Bright at the end: the start chip, the arrows (as one item) and the gloss. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "epidemic-curve": [
+        "new",
+        "step rail lights \"5 the curve\".",
+        "The epidemic curve: Now count the new cases each round: one at the start, one after round one, two after round two, four after round three.",
+        "epidemic curve / doubled / peak",
+        "On the spoken cues: Right zone: a coded bar graph builds, x-axis \"time (round)\" with ticks \"start\", \"1\", \"2\", \"3\", y-axis \"new cases\" from 0 to 4; on each spoken number a bar rises: 1, 1, 2, 4 (amber), with the well plate thumbnail beside it, its new pink wells per row pulsing as each bar rises. On \"epidemic curve\" a gloss writes: \"epidemic curve: new cases against time\". On \"doubled\" a small grey running total writes under the axis,",
+        "explain",
+        "step rail lights \"5 the curve\". Right zone: a coded bar graph builds, x-axis \"time (round)\" with ticks \"start\", \"1\", \"2\", \"3\", y-axis \"new cases\" from 0 to 4; on each spoken number a bar rises: 1, 1, 2, 4 (amber), with the well plate thumbnail beside it, its new pink wells per row pulsing as each bar rises. On \"epidemic curve\" a gloss writes: \"epidemic curve: new cases against time\". On \"doubled\" a small grey running total writes under the axis, one number per spoken word, \"infected: 1, 2, 4, 8\", and coded \"×2\" arrows hop along that running total; on the bars, \"×2\" arrows appear only from the round 1 bar onward (1 to 2 to 4), never from \"start\" to \"1\" (SC 1). Tag \"each pink cup met a clear one\" (grey tag \"real curves grow like this only while plenty of people can still catch it\"). On \"one contaminated jug\" a second, small coded graph writes beside it in grey: a single bar of 8 at \"start\" and zeros after (tag \"one shared source: one sharp peak\"; grey tag \"real single-source cases bunch into one peak, about one incubation period wide\"); a grey chip \"lots ill at once means person-to-person spread\" takes a grey scribble cross. Grey screen tags under the two graphs: \"propagated (person to person)\" and \"point source (one shared exposure)\". Bright at the end: the gloss, the doubling tag and the peak tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "indirect-contact": [
+        "adjust",
+        "the board clears to the bench.",
+        "Indirect contact: You can model indirect contact too.",
+        "fomite",
+        "On the spoken cues: The existing `m7-door-handle-v1.png` appears (gloss \"fomite: a contaminated object that carries a pathogen\"; grey tag \"b03\"). On \"fluorescent powder\" a coded tiny white dab marks the lever (grey tag \"fluorescent powder stands for the pathogen\"). On \"ultraviolet torch\" the plate crossfades in place to the aligned new `m7-door-handle-uv-v1.png` (the same handle in dim violet light with glowing specks), and a coded",
+        "explain",
+        "the board clears to the bench. The existing `m7-door-handle-v1.png` appears (gloss \"fomite: a contaminated object that carries a pathogen\"; grey tag \"b03\"). On \"fluorescent powder\" a coded tiny white dab marks the lever (grey tag \"fluorescent powder stands for the pathogen\"). On \"ultraviolet torch\" the plate crossfades in place to the aligned new `m7-door-handle-uv-v1.png` (the same handle in dim violet light with glowing specks), and a coded violet beam cone sweeps across it (grey tag \"UV torch: never shine it at eyes\"). On \"other handles, desks and pens\" three small coded outlines (a desk edge, a pen, a second handle) light with glowing specks one per word (tag \"indirect contact: through shared objects\"; grey tag \"record: which objects glow, and how far from the handle\"). On \"Vectors are harder\" b03's route board shows \"vector\" in grey (tag \"vectors: use secondary data, for example mosquito surveys\"). Bright at the end: the gloss and the indirect tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "Plate crossfade",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "model-limits": [
+        "new",
+        "step rail lights \"6 limits\".",
+        "The model's limits: Now the limits.",
+        "miss / valid",
+        "On the spoken cues: Right zone: the limits card, two columns, \"model\" and \"real disease\", one row per cue, each \"real\" cell terracotta. Each row is also acted out on the cup row in the bench zone as it writes, and each demo dims as the next starts (LR 5). On \"every contact passes it on\" row 1 \"every contact transmits | many contacts don't\"; on \"real contacts don't always transmit\" a pour arc runs between a pink and a clear cup, and the",
+        "explain",
+        "step rail lights \"6 limits\". Right zone: the limits card, two columns, \"model\" and \"real disease\", one row per cue, each \"real\" cell terracotta. Each row is also acted out on the cup row in the bench zone as it writes, and each demo dims as the next starts (LR 5). On \"every contact passes it on\" row 1 \"every contact transmits | many contacts don't\"; on \"real contacts don't always transmit\" a pour arc runs between a pink and a clear cup, and the clear cup stays clear (terracotta tag \"real: a contact may not transmit\"). On \"multiply inside a host\" row 2 \"marker dilutes each pour | pathogens multiply in the host\", with a small coded dilution strip of four cups paling from pink to faint pink to clear (tag \"too dilute: a false negative\" on \"miss\"). On \"no delay\" row 3 \"infectious at once; never recovers; nobody immune | a delay before spreading; recovery; immunity\"; on \"no recovery\" a pink cup fades back to clear (tag \"recovers\"), and on \"no immunity\" one cup gains a grey ring and turns an incoming arc aside (tag \"immune\"). On \"exactly one person per round\" row 4 \"one equal contact per round | uneven mixing: some people meet many\", and one cup sends arcs to three cups in one round (tag \"some people meet many\"). On \"valid\" a green line writes under the card: \"valid for: how contacts link cases, and how fast linked cases can multiply\" and a terracotta line: \"not valid for: predicting a real disease's speed\". Rows 1 and 2 dim as row 4 writes. Bright at the end: the two verdict lines and the newest row. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk-assessment": [
+        "new",
+        "step rail lights \"7 stay safe\".",
+        "Risk assessment: The risk assessment.",
+        "The risk assessment. Sodium carbonate solution can irritate",
+        "On the spoken cues: The risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, earlier rows dimming: on \"irritate eyes\" row 1 \"dilute sodium carbonate solution (about 0.1 mol/L) / eye irritation / safety glasses; rinse eyes with water if splashed\"; on \"may cause cancer\" row 2 \"phenolphthalein indicator (0.5% in ethanol): highly flammable; causes serious eye irritation; may cause cancer (H225, H319, H350) /",
+        "explain",
+        "step rail lights \"7 stay safe\". The risk table writes in the right zone, \"Hazard / Harm / Control\", one row per cue, earlier rows dimming: on \"irritate eyes\" row 1 \"dilute sodium carbonate solution (about 0.1 mol/L) / eye irritation / safety glasses; rinse eyes with water if splashed\"; on \"may cause cancer\" row 2 \"phenolphthalein indicator (0.5% in ethanol): highly flammable; causes serious eye irritation; may cause cancer (H225, H319, H350) / fire; eye irritation; long-term health hazard / teacher adds the drops; gloves; no flames nearby; small dropper bottle; check the bottle's SDS\" with the dropper bottle thumbnail; on \"Never taste or drink\" row 3 \"all liquids / swallowing / never taste; label cups 'not for drinking'; no food or drink in the lab\"; on \"ultraviolet torch\" row 4 \"UV torch / eye damage / never point it at anyone's eyes\"; silently, row 5 \"fluorescent powder / eye irritation; breathing the dust / small amount; avoid breathing the dust: don't shake or blow it; wash hands (or use a fluorescent gel)\"; on \"dispose of liquids\" a grey footer line \"small volumes of dilute solutions: to the sink with plenty of water, or the waste container, as your school's procedure says\". Footer chip: \"follow your school's risk assessment and each safety data sheet\". Hold about 2 seconds (reading hold; the risks return in the key notes). Hold about 2 seconds (reading hold; the risks return in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build"
+        ],
+        "Hold about 2 seconds (reading hold; the risks return in the key notes)"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Six students ran the model for",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Six students, P, Q, R, S, T and U, ran a disease transmission simulation. One student's cup secretly contained the 'infection'. Round 1 pairs: P with Q, R with S, T with U. Round 2 pairs: P with R, Q with T, S with U. After round 2, indicator was added to every cup. Pink (infected): P, Q, R, T. Clear: S, U. (a) Identify the student or students who could have started the infection. Justify your answer. (3 marks) (b) Propose ONE change to the method that would identify the starter. (1 mark)\". The pairs are shown as a small two-column table. Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "P / Q / R",
+        "On the spoken cues: A three-row table writes: \"starter? | infected after round 2 | matches?\". On \"P\" \"P with Q\" and \"P with R, Q with T\" underline amber and row 1 fills \"P | P, Q, R, T | yes\"; on \"Q\" row 2 fills \"Q | Q, P, T, R | yes\"; on \"R\" \"R with S\" and \"S with U\" underline amber and row 3 fills \"R or T | S or U pink too | no\"; a grey line under the table, silent: \"S, U: clear, so not the starter\". On \"test a sample saved before",
+        "explain",
+        "the card shrinks to the top. A three-row table writes: \"starter? | infected after round 2 | matches?\". On \"P\" \"P with Q\" and \"P with R, Q with T\" underline amber and row 1 fills \"P | P, Q, R, T | yes\"; on \"Q\" row 2 fills \"Q | Q, P, T, R | yes\"; on \"R\" \"R with S\" and \"S with U\" underline amber and row 3 fills \"R or T | S or U pink too | no\"; a grey line under the table, silent: \"S, U: clear, so not the starter\". On \"test a sample saved before round one\" \"(b)\" underlines and the answer line writes \"(b) save and test a sample from each cup before round 1\". A chip \"P: listed first\" fades in and takes a grey scribble cross (caption \"order on the list isn't evidence\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A class of eight students ran the disease transmission simulation for three rounds.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "A class of eight ran the model for",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A class of eight students ran the disease transmission simulation for three rounds. Each student mixed with a different partner in each round. After round 3, all eight cups were pink. A student concluded: 'The model shows that a real disease would infect everyone in a class within three rounds of contact.' Assess this conclusion. (3 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "overreaches",
+        "On the spoken cues: On \"overreaches\" \"a real disease would infect everyone\" underlines amber and the verdict line writes \"overreaches\". On \"every contact transmits\" \"Each student mixed with a different partner in each round\" underlines amber and row 1 writes \"model: every contact transmits; each pink cup met a clear one; doubling\". On \"Real contacts don't always\" row 2 writes \"real: not every contact transmits; some immune; delay",
+        "explain",
+        "the card shrinks to the top. On \"overreaches\" \"a real disease would infect everyone\" underlines amber and the verdict line writes \"overreaches\". On \"every contact transmits\" \"Each student mixed with a different partner in each round\" underlines amber and row 1 writes \"model: every contact transmits; each pink cup met a clear one; doubling\". On \"Real contacts don't always\" row 2 writes \"real: not every contact transmits; some immune; delay before spreading; uneven mixing\". On \"does show\" row 3 writes \"valid for: how linked contacts multiply cases\" (green). Rows 1 and 2 dim as row 3 writes. On \"classic mistake\" a chip \"useless: chemicals aren't germs\" fades in and is crossed (caption \"judge how it works, not what it's made of\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 A hidden marker (indicator); negative and positive controls.\"",
+        "Decision rule and handoff: So: a hidden marker, both controls, recorded contacts, a sample saved every round, and repeat runs.",
+        "Next",
+        "On the spoken cues: \"2 Record every contact; save a sample before round 1 and after each round.\" \"3 Repeat with a new starter.\" \"4 The last test shows who; the saved samples show when; the contacts show how.\" \"5 Valid for how contacts link cases, not for predicting real speed.\" On \"Next\" a chip \"Next: microbial testing of water or food\" appears.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 A hidden marker (indicator); negative and positive controls.\" \"2 Record every contact; save a sample before round 1 and after each round.\" \"3 Repeat with a new starter.\" \"4 The last test shows who; the saved samples show when; the contacts show how.\" \"5 Valid for how contacts link cases, not for predicting real speed.\" On \"Next\" a chip \"Next: microbial testing of water or food\" appears. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7B13_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. Left: the coded `SeaMap` draws (outline of mainland South East Asia, Indonesia and northern Australia); on \"Yogyakarta, Indonesia\" a dot pulses on Java with the label \"Yogyakarta\".",
+        "Hook (a method that works, a record year): In 2021, a trial in Yogyakarta, Indonesia, reported seventy-seven per cent fewer dengue cases where Wolbachia mosquitoes had been released.",
+        "Yogyakarta, Indonesia / Wolbachia mosquitoes / seventy-seven per cent fewer / had been released / Yet in 2024 / over fourteen million",
+        "On the spoken cues: On \"Wolbachia mosquitoes\" `m6-aedes-mosquito-v1.png` appears small beside the dot with a teal dot on its body (grey tag \"b12: Wolbachia greatly reduces dengue spread by *Aedes*\"; a small `m7-wolbachia-cell-v1.png` thumbnail). On \"seventy-seven per cent fewer\" a bright chip writes: \"77% fewer dengue",
+        "explain",
+        "no people. Left: the coded `SeaMap` draws (outline of mainland South East Asia, Indonesia and northern Australia); on \"Yogyakarta, Indonesia\" a dot pulses on Java with the label \"Yogyakarta\". On \"Wolbachia mosquitoes\" `m6-aedes-mosquito-v1.png` appears small beside the dot with a teal dot on its body (grey tag \"b12: Wolbachia greatly reduces dengue spread by *Aedes*\"; a small `m7-wolbachia-cell-v1.png` thumbnail). On \"seventy-seven per cent fewer\" a bright chip writes: \"77% fewer dengue cases\" (grey source tag \"Utarini et al., NEJM 2021\"). On \"had been released\" b12's teal `PopulationRow` thumbnail slides in under the mosquito and fades (the one-line b12 recall is now this tag and thumbnail only). On \"Yet in 2024\" the map zooms out to a coded world outline and the chip dims; a coded bar for 2024 rises to about twice the 2023 bar, with faint bars for 2019 to 2022 (bars to scale from WHO reports, Codex to supply the 2019 to 2023 totals; grey axis \"dengue cases reported to WHO\"; grey tag \"previous record: 2023\"); on \"over fourteen million\" the bar's label writes: \"2024: over 14 million reported cases, the highest on record\" (grey source tag \"WHO, 2024 update\"; grey tag \"most 2024 cases were in the Americas\"). On the question the heading writes on: \"What limits malaria or dengue control?\" At most three bright text items. Hold one second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "Cam lens zoom",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "named-disease": [
+        "adjust",
+        "the map shrinks to the left third.",
+        "The named disease: Our named disease is dengue in South East Asia.",
+        "serotypes",
+        "On the spoken cues: On \"dengue\" the new `m7-dengue-virus-v1.png` appears (grey tag \"dengue virus, drawn far larger than real (about 50 nanometres)\"); on \"Aedes aegypti\" `m6-aedes-mosquito-v1.png` beside it; on \"water containers\" `m7-aedes-container-flooded-v1.png` small (grey tag \"b12: breeds in containers\"). On",
+        "explain",
+        "the map shrinks to the left third. On \"dengue\" the new `m7-dengue-virus-v1.png` appears (grey tag \"dengue virus, drawn far larger than real (about 50 nanometres)\"); on \"Aedes aegypti\" `m6-aedes-mosquito-v1.png` beside it; on \"water containers\" `m7-aedes-container-flooded-v1.png` small (grey tag \"b12: breeds in containers\"). On \"Malaria is the other choice\" a small grey side panel writes: `m7-plasmodium-red-cell-v1.png` and `m5x-anopheles-mosquito-v1.png` thumbnails with the tag \"malaria: *Plasmodium* (a protozoan), *Anopheles*\"; a grey chip \"malaria and dengue are the same disease\" takes a grey scribble cross (small reason \"different pathogen, different mosquito\"). The panel dims. On \"four serotypes\" four coded colour rings (amber, teal, violet, rose) draw round four small copies of the virus plate, labelled \"DENV-1\" to \"DENV-4\" in grey; gloss \"serotype: a type of the virus the immune system treats as different\". On \"treats as different\" the **four-conditions bar** draws across the top with only its first slot filled: \"virus\" (the virus thumbnail with four rings); the other three slots are empty outlines. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "incidence-prevalence": [
+        "new",
+        "the data panel opens at the right.",
+        "Incidence and prevalence: Incidence is the number of new cases in a set time, for a set number of people, like cases per hundred thousand people per year.",
+        "Incidence / Prevalence",
+        "On the spoken cues: On \"Incidence\" a gloss writes: \"incidence: new cases in a set time, per set number of people\"; under it a grey example \"e.g. 600 new cases per 100,000 people per year\". On \"Prevalence\" a second gloss: \"prevalence: share of a population with the disease at one time\"; grey example \"e.g. 2 in 1,000",
+        "explain",
+        "the data panel opens at the right. On \"Incidence\" a gloss writes: \"incidence: new cases in a set time, per set number of people\"; under it a grey example \"e.g. 600 new cases per 100,000 people per year\". On \"Prevalence\" a second gloss: \"prevalence: share of a population with the disease at one time\"; grey example \"e.g. 2 in 1,000 people ill today (teaching figure)\". On \"Picture a tank\" the coded `TankModel` draws below: a plain container outline (not a bath or a painted object). On \"flow in from a tap\" an amber inflow arrow labelled \"incidence (new cases)\" pulses and the level rises; on \"Recovery or death drains it\" a grey outflow arrow labelled \"recovery or death\" opens and the level steadies; on \"how full the tank is\" the level line pulses, labelled \"prevalence\". The two glosses dim as the tank writes. At most three bright text items. Hold one second.",
+        [
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "past-infection-rates": [
+        "new",
+        "on \"lasts about a week\" the tank's outflow widens and the level stays low even as the inflow pulses fast (tag \"short illness: low prevalence of current infection\").",
+        "Past infection, and rates per 100,000: Dengue illness lasts about a week, so few people have it at any moment, even in a big outbreak.",
+        "lasts about a week / Past infection is a separate measure / seven in ten children / use rates, not counts / divide the cases by the population / two hundred per hundred thousand",
+        "On the spoken cues: On \"Past infection is a separate measure\" a second coded tank beside it, labelled \"prevalence of past infection (from antibodies)\", has no drain and fills high; on \"seven in ten children\" a 10 by 10 dot grid writes beside it with 69 dots filled (tag \"about 7 in 10 urban children, ages 1 to 18, had",
+        "explain",
+        "on \"lasts about a week\" the tank's outflow widens and the level stays low even as the inflow pulses fast (tag \"short illness: low prevalence of current infection\"). On \"Past infection is a separate measure\" a second coded tank beside it, labelled \"prevalence of past infection (from antibodies)\", has no drain and fills high; on \"seven in ten children\" a 10 by 10 dot grid writes beside it with 69 dots filled (tag \"about 7 in 10 urban children, ages 1 to 18, had antibodies\"; grey source tag \"Prayitno et al., 2017; Indonesia, 2014\"; grey screen tag \"seroprevalence: share with antibodies from past infection\"; grey tag \"antibody levels fall, but stay detectable for years\"). Both tanks and the dot grid dim fully before the rate bars draw. On \"use rates, not counts\" the coded `RateBars` draw: two bars by count, \"city: 2,000 cases\" tall and \"town: 300 cases\" short, each with a grey \"in one year\". On \"divide the cases by the population\" a grey operation line writes under the bars: \"cases ÷ population × 100,000\". On \"two hundred per hundred thousand\" the city bar relabels \"2,000 ÷ 1,000,000 × 100,000 = 200 per 100,000 per year\" and shrinks; on \"six hundred\" the town bar relabels \"300 ÷ 50,000 × 100,000 = 600 per 100,000 per year\" and grows past it (tag \"the town has the higher risk\"; grey tag \"denominator: the population\"). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "lineage split",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "dengue-year": [
+        "new",
+        "the coded `lineGraph` draws in the data panel: x axis \"month\" (July to June), y axis \"new cases per 100,000 per week\"; faint grey rainfall bars sit behind (grey axis \"rainfall\").",
+        "Reading a dengue year: Now read one city's weekly dengue incidence across a year.",
+        "across a year / stay low through the dry months / climb a month or two after / Rain fills containers / eggs hatch, adults emerge / over a week multiplying inside each mosquito",
+        "On the spoken cues: The incidence line draws on \"across a year\" (teaching data, grey tag \"teaching data, shaped like a Javanese city\"). On \"stay low through the dry months\" a bracket marks July to October (tag \"dry season: low\"); on \"climb a month or two after\" the rainfall bars brighten from November and the line",
+        "explain",
+        "the coded `lineGraph` draws in the data panel: x axis \"month\" (July to June), y axis \"new cases per 100,000 per week\"; faint grey rainfall bars sit behind (grey axis \"rainfall\"). The incidence line draws on \"across a year\" (teaching data, grey tag \"teaching data, shaped like a Javanese city\"). On \"stay low through the dry months\" a bracket marks July to October (tag \"dry season: low\"); on \"climb a month or two after\" the rainfall bars brighten from November and the line rises from December to a peak in February; a grey bracket shows the gap between the first heavy rain and the peak (tag \"lag: about 1 to 2 months\"). On \"Rain fills containers\" b12's `LifeCycleWheel` thumbnail appears small under the graph and its stations light in turn on \"eggs hatch, adults emerge\"; on \"over a week multiplying inside each mosquito\" a small coded day bar under the mosquito thumbnail fills (grey label \"about 8 to 12 days\", grey tag \"b12\"). On \"the peak trails the rain\" the \"*Aedes*\" and \"warmth and water\" slots of the four-conditions bar fill with the mosquito thumbnail and a coded raincloud outline beside a small jar glyph (rain or stored water). At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "serotypes": [
+        "adjust",
+        "on \"herd immunity\" a coded 10 by 10 dot grid writes in the data panel with most dots filled grey (grey tag \"b10: herd immunity\").",
+        "Immunity covers one serotype: Here's where serotypes matter.",
+        "herd immunity / covers only the serotype that infected you / a different serotype arrives / more likely to be severe / all four types at once / a type it misses could later cause severe dengue",
+        "On the spoken cues: On \"covers only the serotype that infected you\" the filled dots take a DENV-1 amber ring (tag \"immune to DENV-1 only\"); the fourth slot of the four-conditions bar fills: \"people not immune\" with a small dot-grid glyph. On \"a different serotype arrives\" a teal DENV-3 virus thumbnail enters the grid",
+        "explain",
+        "on \"herd immunity\" a coded 10 by 10 dot grid writes in the data panel with most dots filled grey (grey tag \"b10: herd immunity\"). On \"covers only the serotype that infected you\" the filled dots take a DENV-1 amber ring (tag \"immune to DENV-1 only\"); the fourth slot of the four-conditions bar fills: \"people not immune\" with a small dot-grid glyph. On \"a different serotype arrives\" a teal DENV-3 virus thumbnail enters the grid from the left and spreads dot to dot through the amber-ringed dots as if they were empty (tag \"DENV-1 immunity doesn't stop DENV-3\"). On \"more likely to be severe\" a few dots that had amber rings take a small rose outline (tag \"second infection, new serotype: higher risk of severe dengue\"; grey screen tag \"antibody-dependent enhancement\"; grey tag \"brief cross-protection at first\"). On \"all four types at once\" `m7-vaccine-vial-syringe-v1.png` appears small with four colour rings beside it (tag \"a vaccine must cover all four\"; grey tag \"Qdenga: uneven across serotypes; WHO (2024) advises it for ages 6 to 16 where dengue transmission is high\"). On \"a type it misses could later cause severe dengue\" one ring on the vial thumbnail stays empty and a rose outline pulses on a dot (grey tag \"Dengvaxia, 2017: more severe dengue in vaccinated people never infected before\"). The herd immunity tag dims when the rings write. At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "mobility": [
+        "new",
+        "the `SeaMap` returns large at the left (the data panel shrinks to the right edge).",
+        "Mobility links the scales: Mobility links the scales.",
+        "fly to another within a day / If local Aedes bite them / north Queensland usually begin / bringing the virus in",
+        "On the spoken cues: On \"fly to another within a day\" a coded dashed arc draws from a dot labelled \"Bali\" to a dot labelled \"Cairns\", with the DENV-2 ring thumbnail riding it (tag \"virus still in the blood: about 5 days\"; no person, no plane: the arc and the virus only). On \"If local Aedes bite them\" the *Aedes*",
+        "explain",
+        "the `SeaMap` returns large at the left (the data panel shrinks to the right edge). On \"fly to another within a day\" a coded dashed arc draws from a dot labelled \"Bali\" to a dot labelled \"Cairns\", with the DENV-2 ring thumbnail riding it (tag \"virus still in the blood: about 5 days\"; no person, no plane: the arc and the virus only). On \"If local Aedes bite them\" the *Aedes* thumbnail appears at Cairns and three small amber dots spread around the Cairns dot (tag \"a local chain starts\"). On \"north Queensland usually begin\" a grey tag \"Queensland Health: north Queensland outbreaks start when travellers bring the virus in\" and a grey tag \"dengue doesn't usually spread there on its own\". On \"bringing the virus in\", and through the hold, four coded arcs light between dots in Jakarta, Yogyakarta, Surabaya and Kuala Lumpur, each arc carrying a different colour ring (tag \"serotypes move with people\"). Earlier tags dim. At most three bright text items. Hold one second.",
+        [
+            "DrawPath"
+        ],
+        "Hold one second"
+    ],
+    "four-conditions": [
+        "adjust",
+        "the four-conditions bar enlarges to the centre, its four slots full and linked by coded rings (tag \"all four at once\").",
+        "Four conditions, shaped by people: So dengue spreads when four things meet: the virus, Aedes mosquitoes, warmth and water to breed in, and people who aren't immune, in contact.",
+        "Cut one far enough / how people live shapes these conditions / piped water is unreliable / even in dry months / Crowded, fast-growing cities / money and support, year after year",
+        "On the spoken cues: On \"Cut one far enough\" the \"*Aedes*\" slot shrinks to a faint outline and the links between slots break (tag \"cut one far enough: spread stops\"); the slot returns. On \"how people live shapes these conditions\" a grey line writes under the bar: \"social causes\". On \"piped water is unreliable\" the new",
+        "explain",
+        "the four-conditions bar enlarges to the centre, its four slots full and linked by coded rings (tag \"all four at once\"). On \"Cut one far enough\" the \"*Aedes*\" slot shrinks to a faint outline and the links between slots break (tag \"cut one far enough: spread stops\"); the slot returns. On \"how people live shapes these conditions\" a grey line writes under the bar: \"social causes\". On \"piped water is unreliable\" the new `m7-water-storage-jar-v1.png` appears under the \"warmth and water\" slot, with a thin line to the \"*Aedes*\" slot (an open household water jar with larvae at the surface; tag \"stored water: breeding site\"; grey tag \"where piped water is unreliable\"); on \"even in dry months\" the slot's raincloud dims while the jar glyph stays lit (tag \"no rain needed\"). On \"Crowded, fast-growing cities\" a coded dot grid under the \"people not immune\" slot densifies (tag \"crowded cities: more contact\"). On \"money and support, year after year\" a coded calendar strip draws under the whole bar and shows twelve months with only the first few ticked (tag \"programs must be kept up\"; grey tag \"one missed container keeps breeding (b12)\"). Earlier tags dim as each new one writes. At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "wolbachia-evidence": [
+        "new",
+        "the coded `ClusterGrid` draws in the data panel: 24 squares in a city outline (grey tag \"Yogyakarta: releases 2017; cases tracked 2018 to 2020\"); on \"randomly chose\" twelve squares turn teal in a scattered pattern, as if drawn from a hat (a coded shuffle animation; tag \"randomly assigned\").",
+        "How strong is the Wolbachia evidence?: Now the Wolbachia evidence.",
+        "randomly chose / came to clinics with a fever / about two in a hundred / nine in a hundred / weather and serotypes affected both groups alike / In Cairns",
+        "On the spoken cues: On \"came to clinics with a fever\" a coded clinic outline appears beside the grid (grey label \"clinic\"; no people). On \"about two in a hundred\" a `HundredDots` array under the teal squares lights 2 dots (tag \"2.3%, Wolbachia areas\"); on \"nine in a hundred\" an array under the grey squares lights 9",
+        "explain",
+        "the coded `ClusterGrid` draws in the data panel: 24 squares in a city outline (grey tag \"Yogyakarta: releases 2017; cases tracked 2018 to 2020\"); on \"randomly chose\" twelve squares turn teal in a scattered pattern, as if drawn from a hat (a coded shuffle animation; tag \"randomly assigned\"). On \"came to clinics with a fever\" a coded clinic outline appears beside the grid (grey label \"clinic\"; no people). On \"about two in a hundred\" a `HundredDots` array under the teal squares lights 2 dots (tag \"2.3%, Wolbachia areas\"); on \"nine in a hundred\" an array under the grey squares lights 9 dots (tag \"9.4%, untreated areas\"); grey source tag \"67 of 2,905 against 318 of 3,401 people with fever; Utarini et al., 2021\"; grey tag under the dot arrays \"share of fever patients with dengue: falls when infections fall\". On \"weather and serotypes affected both groups alike\" one coded raincloud and the four colour rings drift across both halves of the grid equally (tag \"random assignment: a fair comparison\"; grey screen tag \"randomised controlled trial\"). On \"In Cairns\" the cluster grid and dot arrays dim to a small thumbnail; a coded before-and-after bar pair draws beside the Cairns dot on the map thumbnail: \"before releases\" tall, \"after releases\" short (tag \"about 96% lower incidence\"; grey source tag \"Ryan et al., 2019 to 2020\"; grey tag \"compared over time, not with a control group at the same time\"). On \"no untreated areas to compare at the same time\" an empty dashed bar outline labelled \"untreated areas, same years\" draws beside the pair and stays empty; on \"weaker evidence\" the Cairns tag dims and a grey tag writes \"Townsville: 16 local cases in 2024 to 2025 (b12)\". At most three bright text items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "still-limited": [
+        "adjust",
+        "the four-conditions bar returns at the top.",
+        "Why control is still limited: So why hasn't Wolbachia stopped dengue?",
+        "years and money / residents must agree / haven't started yet / four serotypes make vaccines hard / resist common insecticides / a warmer climate may",
+        "On the spoken cues: Two columns write beneath it, one per cue: left \"social causes\", right \"biological causes\". On \"years and money\" `m6-mosquito-cage-v1.png` appears small under \"social causes\" with a coded progress bar across a city outline filling slowly (tag \"releases: years and funding\"); on \"residents must",
+        "explain",
+        "the four-conditions bar returns at the top. Two columns write beneath it, one per cue: left \"social causes\", right \"biological causes\". On \"years and money\" `m6-mosquito-cage-v1.png` appears small under \"social causes\" with a coded progress bar across a city outline filling slowly (tag \"releases: years and funding\"); on \"residents must agree\" the city outline from \"years and money\" gains a few ticked houses (coded outlines only; tag \"community support needed\"); on \"haven't started yet\" the `SeaMap` thumbnail shows a few teal dots among many grey city dots (tag \"Wolbachia: a small share of cities with dengue so far\"; grey tag \"checked October 2026\"; Revision 3: no count, because the current total could not be verified). On \"four serotypes make vaccines hard\" the four-ring vaccine thumbnail lands under \"biological causes\"; on \"resist common insecticides\" the sprayer thumbnail `m7-insecticide-sprayer-v1.png` with grey tag \"resistance varies by place and product (b12)\"; on \"a warmer climate may\" a coded thermometer outline with an arrow up (tag \"range may widen\"); on \"travel keeps bringing the virus back\" the travel arc thumbnail. Each item dims as the next writes. On \"breaks a needed link, and people can keep it going\" one slot of the four-conditions bar breaks and a coded loop arrow \"kept up\" circles it (tag \"break a link, and sustain it\"). A grey chip \"a vaccine will solve it on its own\" takes a grey scribble cross. At most three bright text items at once besides the column headers. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "two handwritten lines write on large: \"Incidence is the tap, prevalence is the tank.\" with the small tank thumbnail under it; \"Dengue needs virus, vector, warmth and water, and people, all at once.\" with the four-conditions bar thumbnail under it.",
+        "Memory: Two lines to keep.",
+        "Incidence is the tap, prevalence is the tank. / virus, vector, warmth and water, and people, all at once.",
+        "On the spoken cues: Hold half a second.",
+        "explain",
+        "two handwritten lines write on large: \"Incidence is the tap, prevalence is the tank.\" with the small tank thumbnail under it; \"Dengue needs virus, vector, warmth and water, and people, all at once.\" with the four-conditions bar thumbnail under it. Hold half a second.",
+        [
+            "HandText write-on",
+            "counter and bar fill"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (two districts)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. In 2023, District P,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (two districts))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Two districts in a South East Asian country recorded the following dengue cases in 2023.\" A small table: \"District: P, Q\"; \"Population: 200,000, 40,000\"; \"Dengue cases in 2023: 1,000, 400\". Demand: \"(a) Calculate the incidence of dengue in each district in 2023, as cases per 100,000 people. (2 marks) (b) Identify which district had the greater risk of dengue, and justify your answer. (1 mark)\". One lined answer box. No plates, no map. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "District P's incidence / District Q's / Q had double the risk / the classic mistake / compare rates, not counts",
+        "On the spoken cues: On \"District P's incidence\" \"200,000\" and \"1,000\" underline amber and row 1 writes \"P: 1,000 ÷ 200,000 × 100,000 = 500 per 100,000\". On \"District Q's\" \"40,000\" and \"400\" underline amber and row 2 writes \"Q: 400 ÷ 40,000 × 100,000 = 1,000 per 100,000\". On \"Q had double the risk\" \"greater risk\"",
+        "explain",
+        "the card shrinks to a strip. On \"District P's incidence\" \"200,000\" and \"1,000\" underline amber and row 1 writes \"P: 1,000 ÷ 200,000 × 100,000 = 500 per 100,000\". On \"District Q's\" \"40,000\" and \"400\" underline amber and row 2 writes \"Q: 400 ÷ 40,000 × 100,000 = 1,000 per 100,000\". On \"Q had double the risk\" \"greater risk\" underlines teal and row 3 writes \"Q: greater risk (double P's incidence), though fewer cases\". Rows 1 and 2 dim as row 3 writes. On \"the classic mistake\" the chip \"P is worse: it had more cases\" writes on and takes a grey scribble cross, with the small grey reason \"compare rates, not counts\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+        "Unseen transfer task (attempt two (a new serotype)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. In City R, a survey found that",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a new serotype))",
+        "explain",
+        "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"In 2022, a survey in City R, where *Aedes aegypti* is common, found that 80% of adults had antibodies from a past dengue infection. Almost all of these infections had been caused by dengue serotype 1 (DENV-1). Piped water in City R is often cut off, so most households store water in open jars. In 2025, dengue serotype 3 (DENV-3) was detected in travellers arriving in City R, and the city then had its largest dengue outbreak in ten years, with a higher proportion of severe cases than in earlier outbreaks.\" Demand: \"Explain the 2025 outbreak, with reference to biological and social factors in the data. (4 marks)\". One lined answer box. No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card shrinks to a strip.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "doesn't protect against serotype three / Travellers brought the new serotype in / breeding in the stored water / more likely to be severe / the classic mistake / immune to DENV-1 only",
+        "On the spoken cues: On \"doesn't protect against serotype three\" \"80% ... antibodies\" and \"DENV-1\" underline amber and row 1 writes \"biological: immunity is serotype-specific; DENV-1 antibodies don't protect against DENV-3, so nearly everyone was susceptible to DENV-3\". On \"Travellers brought the new serotype in\"",
+        "explain",
+        "the card shrinks to a strip. On \"doesn't protect against serotype three\" \"80% ... antibodies\" and \"DENV-1\" underline amber and row 1 writes \"biological: immunity is serotype-specific; DENV-1 antibodies don't protect against DENV-3, so nearly everyone was susceptible to DENV-3\". On \"Travellers brought the new serotype in\" \"detected in travellers\" underlines amber; on \"breeding in the stored water\" \"open jars\" and \"*Aedes aegypti* is common\" underline amber and row 2 writes \"social: stored water in open jars bred *Aedes* near homes; travellers introduced DENV-3\". On \"more likely to be severe\" \"higher proportion of severe cases\" underlines teal and row 3 writes \"second infection, different serotype: higher risk of severe dengue\". Rows 1 and 2 dim as row 3 writes. On \"the classic mistake\" the chip \"80% were immune, so no outbreak\" writes on and takes a grey scribble cross, with the small grey reason \"immune to DENV-1 only\". Settle for about a second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Mark underline",
+            "chip pop",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "three step chips write on, one per cue: \"incidence or prevalence?\", \"per how many people?\", \"biological or social cause?\".",
+        "Decision rule and handoff: So for any disease data, check the measure and its population, then link each change to a biological or a social cause.",
+        "So for any disease data, check the measure",
+        "On the spoken cues: The four-conditions bar returns small above them. A \"Next\" chip slides in at the lower right: \"Next: outbreak data and control practice\" (small grey tag; a small coded graph thumbnail beside it). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on, one per cue: \"incidence or prevalence?\", \"per how many people?\", \"biological or social cause?\". The four-conditions bar returns small above them. A \"Next\" chip slides in at the lower right: \"Next: outbreak data and control practice\" (small grey tag; a small coded graph thumbnail beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7G01B_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Find the denominator, then the cause\" writes on.",
+        "Hook: Outbreak questions hand you a table or a graph and ask what's going on.",
+        "denominator / cause / control",
+        "On the spoken cues: On \"denominator\" a large coded fraction writes in the working area, \"cases ÷ ?\", and the \"?\" box pulses amber (gloss \"denominator: the number you divide by\"). On \"cause\" and \"control\" two chips chain from the fraction: \"cause\" then \"control\" (arrows between them). On \"three HSC-style questions\"",
+        "explain",
+        "heading \"Find the denominator, then the cause\" writes on. On \"denominator\" a large coded fraction writes in the working area, \"cases ÷ ?\", and the \"?\" box pulses amber (gloss \"denominator: the number you divide by\"). On \"cause\" and \"control\" two chips chain from the fraction: \"cause\" then \"control\" (arrows between them). On \"three HSC-style questions\" three small numbered card thumbnails fan out (a lunch table, a fraction pair, a weekly graph, all without values) with one shared tag line \"HSC-style questions, written for HSCScience\". The new memory line \"Before you compare, find the denominator.\" writes small under the chain. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "q1-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 1: Camp Wollemi, corrected) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. Sixty students arrive at Camp Wollemi",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: Camp Wollemi, corrected)",
+        "explain",
+        "fresh board. Type badge hidden. New `m7-chicken-pasta-tray-v1.png` and new `m7-chicken-sandwiches-v1.png` sit small at the card's upper left, above the card text and never between the table and the curve. The card writes on: \"Sixty students arrived at Camp Wollemi on Monday morning. All 60 ate chicken pasta at about 6 pm on Monday. Between 2 am and 6 am on Tuesday, 18 students developed diarrhoea and stomach cramps. At about 12.30 pm on Tuesday, the 42 students who were well ate lunch. Some ate chicken sandwiches made with chicken left over from Monday's pasta; the others ate salad rolls. Students who ate salad rolls shared cabins and activities with students who became ill. Laboratory tests found large numbers of *Clostridium perfringens* in stool samples from ill students and in the leftover chicken. This bacterium usually causes diarrhoea and stomach cramps 6 to 24 hours after contaminated food is eaten.\" Table \"Tuesday lunch\": \"Food eaten | Number of students | Number who became ill (Wednesday 2 am to 6 am)\"; \"Chicken sandwiches | 28 | 16\"; \"Salad rolls | 14 | 0\". Coded epidemic curve below the table: x axis \"time of symptom onset (4-hour blocks)\", Monday 6 pm to Thursday 6 am; y axis \"new cases\", 0 to 20; one bar of 18 at Tuesday 2 am to 6 am, one bar of 16 at Wednesday 2 am to 6 am, all other blocks zero. A `MealTimeline` above the axis marks \"Mon dinner: chicken pasta\" and \"Tue lunch: chicken sandwiches or salad rolls\". Grey chip: \"based on the HSCScience Camp Wollemi activity, with corrected data\". Demands: \"(a) Calculate the percentage of students in each lunch group who became ill. (2 marks)\" \"(b) The camp director claims that the illness spread from person to person because 'it went through two groups'. Evaluate this claim using the data. (4 marks)\". Two answer boxes. Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "counter and bar fill",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-denominator": [
+        "new",
+        "the card shrinks to a strip; type badge \"Outbreak table\".",
+        "Each group out of itself: Start with the denominator.",
+        "twenty-eight / fifty-seven per cent / fourteen / zero",
+        "On the spoken cues: The lunch table enlarges in the working area. On \"each lunch group\" \"in each lunch group\" underlines amber in the strip. On \"twenty-eight\" the \"28\" cell rings amber and a `FractionBar` draws: \"16 / 28\" with \"28\" boxed under the bar (label \"ate sandwiches\"); on \"fifty-seven per cent\" the bar fills",
+        "explain",
+        "the card shrinks to a strip; type badge \"Outbreak table\". The lunch table enlarges in the working area. On \"each lunch group\" \"in each lunch group\" underlines amber in the strip. On \"twenty-eight\" the \"28\" cell rings amber and a `FractionBar` draws: \"16 / 28\" with \"28\" boxed under the bar (label \"ate sandwiches\"); on \"fifty-seven per cent\" the bar fills to 57 per cent teal and \"16 ÷ 28 × 100 ≈ 57%\" writes beside it. On \"fourteen\" a second `FractionBar` draws \"0 / 14\" (\"ate salad rolls\"); on \"zero\" it stays empty and \"0 ÷ 14 × 100 = 0%\" writes. On \"compare fairly\" both boxed denominators pulse once (tag \"each group out of itself\"). Answer box (a) builds line by line: \"chicken sandwiches: 16 ÷ 28 × 100 ≈ 57%\" on \"fifty-seven per cent\", then \"salad rolls: 0 ÷ 14 × 100 = 0%\" on \"zero\"; each working tag dims as its answer line lands. At most three bright text items. Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold 1 second"
+    ],
+    "q1-claim": [
+        "new",
+        "the table dims; the epidemic curve enlarges.",
+        "Read the curve, then the comparison: Now the claim.",
+        "eight to eighteen hours / six to twenty-four hours / shared cabins / one food source / cooling cooked meat quickly",
+        "On the spoken cues: On \"two sharp clusters\" both bars outline amber and the empty blocks between them shade grey (tag \"nothing between\"). On \"eight to eighteen hours\" two brackets draw on the `MealTimeline`, Monday 6 pm to the first bar (\"8 to 12 h\") and Tuesday 12.30 pm to the second (\"about 14 to 18 h\"). On \"six to",
+        "explain",
+        "the table dims; the epidemic curve enlarges. On \"two sharp clusters\" both bars outline amber and the empty blocks between them shade grey (tag \"nothing between\"). On \"eight to eighteen hours\" two brackets draw on the `MealTimeline`, Monday 6 pm to the first bar (\"8 to 12 h\") and Tuesday 12.30 pm to the second (\"about 14 to 18 h\"). On \"six to twenty-four hours\" \"6 to 24 hours after contaminated food is eaten\" underlines amber in the strip and a pale band \"6 to 24 h\" lies under each bracket, covering it. On \"rising waves for days\" a ghost dashed curve sketches what person-to-person spread would look like (small, growing humps across several days; grey label \"person-to-person: rising waves (p01)\"), then fades before \"shared cabins\". On \"shared cabins\" that phrase underlines amber, the brackets and bands dim, and the empty salad-roll `FractionBar` returns small beside the curve (tag \"same cabins, 0 ill\"). On \"one food source\" a dashed arrow joins the pasta plate to the sandwich plate (tag \"same leftover chicken\"). On \"cooling cooked meat quickly\", after the bracket tags have dimmed, a small grey tag writes under the plates, \"control: cool cooked meat quickly; reheat thoroughly or discard leftovers\", with a second grey line \"leftovers cooled slowly overnight: more bacteria\" (B7-IQ4-04 link; not demanded by the card, so not in the answer box). Answer box (b) builds line by line on its cues, and each working tag dims as its answer line lands: \"Not supported.\" on \"isn't supported\"; \"Two sharp clusters, each 8 to 18 h after a meal containing the same chicken, within this bacterium's 6 to 24 h.\" on \"six to twenty-four hours\"; \"No cases between or after, unlike the rising waves of person-to-person spread.\" on \"rising waves for days\"; \"57% of sandwich eaters ill but 0% of salad-roll eaters, who shared cabins with ill students.\" on \"shared cabins\"; \"One food source eaten at two meals.\" on \"one food source\". Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold 1 second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"16 ÷ 60 ≈ 27%\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is dividing by sixty.",
+        "the classic mistake / mixes in students who never ate / which food",
+        "On the spoken cues: On \"mixes in students who never ate\" the salad-roll bar and the 18 Monday cases flash grey inside a dashed \"60\" outline (tag \"wrong group\"). On \"which food\" the two correct bars pulse. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"16 ÷ 60 ≈ 27%\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"mixes in students who never ate\" the salad-roll bar and the 18 Monday cases flash grey inside a dashed \"60\" outline (tag \"wrong group\"). On \"which food\" the two correct bars pulse. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 2: malaria in a province) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. A province in South East Asia",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: malaria in a province)",
+        "explain",
+        "board clears. Type badge hidden. `m5x-anopheles-mosquito-v1.png` and `m7-bed-net-v1.png` sit small at the card's upper left. The card writes on: \"Malaria in Province K, South East Asia. From 2019, every household received insecticide-treated bed nets, and village health workers began testing people with fever and treating confirmed malaria on the same day.\" Table: \"Year | Population | New confirmed malaria cases that year | Blood survey: people tested | Blood survey: people carrying the malaria parasite\"; \"2018 | 400 000 | 4800 | 2000 | 50\"; \"2023 | 420 000 | 840 | 2000 | 6\". Grey chip: \"illustrative data\". Demands: \"(a) Calculate the incidence of malaria per 1000 people per year in 2018 and in 2023. (2 marks)\" \"(b) Calculate the prevalence of infection in each survey, as a percentage. (2 marks)\" \"(c) Explain how each of the two measures could have caused these changes. (3 marks)\". A small answer table and one lined box. **Countdown 10 seconds**; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-calc": [
+        "new",
+        "the card shrinks; type badge \"Incidence and prevalence\".",
+        "Two measures, two denominators: Incidence first.",
+        "whole population / twelve / two / people tested / two and a half per cent / zero point three per cent",
+        "On the spoken cues: A `DenominatorPair` builds in the working area. On \"whole population\" \"Population\" in the table header underlines amber; the top fraction writes \"new cases ÷ population × 1000\" with \"population\" boxed (label \"everyone at risk\"). On \"twelve\" \"4800\" and \"400 000\" underline and \"4800 ÷ 400 000 × 1000",
+        "explain",
+        "the card shrinks; type badge \"Incidence and prevalence\". A `DenominatorPair` builds in the working area. On \"whole population\" \"Population\" in the table header underlines amber; the top fraction writes \"new cases ÷ population × 1000\" with \"population\" boxed (label \"everyone at risk\"). On \"twelve\" \"4800\" and \"400 000\" underline and \"4800 ÷ 400 000 × 1000 = 12 per 1000\" writes; on \"two\" \"840\" and \"420 000\" underline and \"840 ÷ 420 000 × 1000 = 2 per 1000\" writes below it (teal; the 2018 line dims). On \"people tested\" \"people tested\" in the header underlines amber; the lower fraction writes \"carrying parasite ÷ people tested × 100\" with \"people tested\" boxed (label \"the sample\"). On \"two and a half per cent\" \"50 ÷ 2000 × 100 = 2.5%\"; on \"zero point three per cent\" \"6 ÷ 2000 × 100 = 0.3%\". The answer table builds cell by cell on the same cues: \"2018 incidence: 12 per 1000\" on \"twelve\", \"2023 incidence: 2 per 1000\" on \"two\", \"2018 prevalence: 2.5%\" on \"two and a half per cent\", \"2023 prevalence: 0.3%\" on \"zero point three per cent\". At most three bright text items. Hold 1 second.",
+        [
+            "Mark underline",
+            "table build"
+        ],
+        "Hold 1 second"
+    ],
+    "q2-explain": [
+        "adjust",
+        "b13's `TankModel` draws in the working area (grey tag \"b13: incidence is the tap, prevalence is the tank\").",
+        "The tap and the tank: Now link each measure to the tap or the tank.",
+        "tap / tank falls too / tank / new cases",
+        "On the spoken cues: On \"Bed nets\" \"insecticide-treated bed nets\" underlines amber; the bed net plate moves beside the tap; on \"tap\" the inflow arrow thins (tag \"nets: fewer bites, fewer new infections\"; the incidence lines \"12 → 2\" pulse). On \"tank falls too\" the level drops slightly while the outflow stays the same",
+        "explain",
+        "b13's `TankModel` draws in the working area (grey tag \"b13: incidence is the tap, prevalence is the tank\"). On \"Bed nets\" \"insecticide-treated bed nets\" underlines amber; the bed net plate moves beside the tap; on \"tap\" the inflow arrow thins (tag \"nets: fewer bites, fewer new infections\"; the incidence lines \"12 → 2\" pulse). On \"tank falls too\" the level drops slightly while the outflow stays the same (tag \"less in, so less in the tank\"). On \"Same-day testing and treatment\" \"testing ... on the same day\" underlines amber and `m7-capsule-blister-blank-v1.png` sits small beside the outflow; on \"tank\" the outflow arrow widens and the level drops further (tag \"faster treatment: shorter infections\"; \"2.5% → 0.3%\" pulses; the nets tags dim). On \"new cases fall even more\" a curved arrow runs from the tank back to the tap with `m5x-anopheles-mosquito-v1.png` small on it (tag \"fewer parasites for mosquitoes\"). Answer box (c) builds line by line, each working tag dimming as its line lands: \"Bed nets reduce bites by night-biting *Anopheles*, so fewer new infections: incidence falls.\" on \"tap\"; \"Fewer new infections also means fewer people infected at any one time: prevalence falls.\" on \"tank falls too\"; \"Same-day test and treat shortens each infection, so prevalence falls further.\" on \"tank\"; \"Fewer infected people means fewer parasites passed to mosquitoes, which lowers incidence further.\" on \"new cases fall even more\". Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold 1 second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"50 ÷ 400 000 × 100 = 0.0125%\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is dividing the fifty positives by the whole province.",
+        "the classic mistake / Only two thousand people were tested / two hundred times",
+        "On the spoken cues: On \"Only two thousand people were tested\" the boxed \"people tested\" denominator pulses and a small grey dot block shows 2,000 dots inside a much larger grey outline labelled \"400 000\" (tag \"the survey is the sample\"). On \"two hundred times\" a grey line writes \"2.5% ÷ 0.0125% = 200\". Hold about 1.5",
+        "explain",
+        "a chip \"50 ÷ 400 000 × 100 = 0.0125%\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Only two thousand people were tested\" the boxed \"people tested\" denominator pulses and a small grey dot block shows 2,000 dots inside a much larger grey outline labelled \"400 000\" (tag \"the survey is the sample\"). On \"two hundred times\" a grey line writes \"2.5% ÷ 0.0125% = 200\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 3: cholera after a flood) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. After a flood in Town V,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: cholera after a flood)",
+        "explain",
+        "board clears. Type badge hidden. New `m7-vibrio-cholerae-v1.png` (grey tag \"drawn far larger than real\") and new `m7-village-water-tank-v1.png` sit small at the card's upper left. The card writes on: \"After a flood, Town V's piped water supply and toilets were damaged, and an outbreak of cholera began. Cholera is caused by the bacterium *Vibrio cholerae*. Symptoms begin 12 hours to 5 days after the bacteria are swallowed. Most infected people have mild or no symptoms, but they still pass the bacteria in their faeces for up to 10 days. In week 3, health workers quarantined the household of every person with cholera for 5 days (measure A). In week 6, all drinking water was chlorinated and the toilets were repaired (measure B).\" Coded `lineGraph`: x axis \"week\", 1 to 10; y axis \"new cholera cases\", 0 to 40; points 4, 9, 15, 24, 33, 38, 22, 9, 3, 1; `InterventionArrow`s at week 3 (\"A\") and week 6 (\"B\"). Grey chip: \"illustrative data\". Demands: \"(a) Using the graph, identify which measure was followed by a decrease in new cases. (1 mark)\" \"(b) Justify the use of environmental management rather than quarantine to control this outbreak. (3 marks)\". Two answer boxes. **Countdown 10 seconds**; the whole card, graph included, stays on screen.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-graph": [
+        "new",
+        "the card shrinks; type badge \"Epidemic curve\".",
+        "Read it against the arrows: Read the graph against the two arrows.",
+        "rising / fell / five days",
+        "On the spoken cues: The graph enlarges. On \"rising\" the arrow A pulses and the segment from week 3 to week 6 outlines amber with reading guides at 15 and 38 (tag \"after A: still rising\"). On \"fell\" arrow B pulses and the segment from week 6 to week 10 outlines teal with reading guides at 22 and 1 (tag \"after B:",
+        "explain",
+        "the card shrinks; type badge \"Epidemic curve\". The graph enlarges. On \"rising\" the arrow A pulses and the segment from week 3 to week 6 outlines amber with reading guides at 15 and 38 (tag \"after A: still rising\"). On \"fell\" arrow B pulses and the segment from week 6 to week 10 outlines teal with reading guides at 22 and 1 (tag \"after B: falling within a week\"; the A tag dims). On \"five days\" \"12 hours to 5 days\" underlines amber in the strip and a short bracket spans week 6 to week 7 (tag \"infected before B, ill after B\"). Answer box (a) builds in two lines: on \"rising\", \"After measure A, cases rose from 15 to 38.\"; on \"fell\", \"Measure B (chlorination and toilet repair) was followed by a fall: 38 in week 6, 22 in week 7, 1 by week 10.\" Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold 1 second"
+    ],
+    "q3-justify": [
+        "new",
+        "b10's link chain draws in the working area, \"leave → travel → enter\" (grey tag \"b10\").",
+        "Find the route, then the link: Now justify.",
+        "travel link / mild or no symptoms / water",
+        "On the spoken cues: On \"water or food contaminated with faeces\" a coded loop draws faeces → water → mouth on the chain's travel link, with the water tank plate on it. On \"Chlorine kills\" and \"repaired toilets\" \"chlorinated\" and \"toilets were repaired\" underline amber; on \"travel link\" the travel link breaks with a",
+        "explain",
+        "b10's link chain draws in the working area, \"leave → travel → enter\" (grey tag \"b10\"). On \"water or food contaminated with faeces\" a coded loop draws faeces → water → mouth on the chain's travel link, with the water tank plate on it. On \"Chlorine kills\" and \"repaired toilets\" \"chlorinated\" and \"toilets were repaired\" underline amber; on \"travel link\" the travel link breaks with a teal cut mark (tag \"B: breaks the travel link for everyone\"). On \"known cases\" \"quarantined the household of every person with cholera\" underlines; a coded house outline with a dashed fence sits on the \"leave\" link (grey tag \"A: holds known cases only\"; \"Isolate the infected, quarantine the exposed\" small, b10). On \"mild or no symptoms\" that phrase underlines amber; a field of plain grey dots outside the fence lights faintly (tag \"many carriers never found\"). On \"the water\" the loop around the unfenced dots pulses (tag \"the route stays open\"). Answer box (b) builds line by line, each working tag dimming as its line lands: \"Cholera travels mainly in water contaminated with faeces.\" on \"water or food contaminated with faeces\"; \"Chlorination kills the bacteria and repaired toilets keep faeces out of the water, so environmental management breaks the travel link for the whole town without needing cases to be found.\" on \"travel link\"; \"Quarantine holds only known cases' households,\" on \"known cases\"; \"but most infected people have mild or no symptoms and still pass the bacteria, so many are missed,\" on \"mild or no symptoms\"; \"and contaminated water keeps infecting others.\" on \"water\". Hold 1 second.",
+        [
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold 1 second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"quarantine works because it keeps infected people away from others\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+        "The classic mistake: The classic mistake is writing that quarantine works because it keeps infected people away from others.",
+        "the classic mistake / mainly the water passing it on",
+        "On the spoken cues: On \"mainly the water passing it on\" the faeces-water-mouth loop pulses once and the cut mark on the travel link brightens. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"quarantine works because it keeps infected people away from others\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"mainly the water passing it on\" the faeces-water-mouth loop pulses once and the cut mark on the travel link brightens. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "adjust",
+        "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a table of groups → divide by who could have caught it (Q1: 16 ÷ 28)\" with the lunch table thumbnail; \"incidence and prevalence → whole population, or people tested? tap or tank? (Q2)\" with the tank thumbnail; \"an epidemic curve and a control → route first, then the link it breaks; check the timing (Q3)\" with the graph thumbnail.",
+        "Decision board: So here's how to start each type.",
+        "Next",
+        "On the spoken cues: The memory line \"Before you compare, find the denominator.\" writes small under the board. On \"Next\" a chip \"Next: how disease control ideas have changed\" slides in at the lower right with `m7-quarantine-sign-v1.png` small. Hold about 2 seconds.",
+        "explain",
+        "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a table of groups → divide by who could have caught it (Q1: 16 ÷ 28)\" with the lunch table thumbnail; \"incidence and prevalence → whole population, or people tested? tap or tank? (Q2)\" with the tank thumbnail; \"an epidemic curve and a control → route first, then the link it breaks; check the timing (Q3)\" with the graph thumbnail. The memory line \"Before you compare, find the denominator.\" writes small under the board. On \"Next\" a chip \"Next: how disease control ideas have changed\" slides in at the lower right with `m7-quarantine-sign-v1.png` small. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop",
+            "lineage split",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# --- M7 p01, b13 and g01 rows (end) ---
 
 
 LESSONS = {
@@ -10259,6 +11024,47 @@ LESSONS = {
         'rows': M7B12_ROWS,
     },
     # --- M7 b08, b09, g03, b10, b11 and b12 entries (end) ---
+    # --- M7 p01, b13 and g01 entries (start) ---
+    'm7p01b': {
+        'design': D + 'lessons/bio-m7-p01.md',
+        'learning_review': D + 'checks/m7p01b-learning-review.md',
+        'science_check': D + 'checks/m7p01b-claude-science-check.md',
+        'meta': {"title": "Model an epidemic in class: who started it, how fast did it spread, and what can a simulation really show?", "subtitle": "Eight students share liquid from cup to cup, three times. One cup was secretly \"infected\". At the end, every cup turns pink. Who started it? How do you design a safe classroom model of an epidemic that can trace the source, and what can it really tell you about how a disease spreads?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 4, "lessonIntent": "explaining what a model is and what each part of the fluid-exchange simulation stands for; defining an epidemic (cases above what's expected); explaining why the marker must be hidden until tested and how phenolphthalein shows the base; describing the method (equal volumes, a secret starter, new partners each round, pour all then half back, a sample saved before round one and after every round, a recorded contact sheet) and its aim and variables (contacts change; pink cups and samples are measured; volumes, pours and drops are kept the same); explaining the negative and positive controls, accuracy (the traced starter against the teacher's record) and reliability (repeat runs with a new starter); explaining why the final test cannot identify the starter; tracing the starter from saved samples and contacts, and explaining that real teams, with no start sample, use when symptoms began and contact tracing; defining an epidemic curve, plotting new cases by round, and explaining that the number infected doubled because each pink cup met a clear one (person-to-person spread), against the single peak of one shared source; describing a fluorescent powder model of indirect contact through a fomite; stating the model's limits (every contact transmits, the marker dilutes rather than multiplies, no delay before someone can pass it on, no recovery or immunity, scheduled equal contacts) and what it is valid for; writing the risk assessment; identifying possible starters from new data and assessing a claim about real spread."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "the-model", "the-marker", "method", "controls-repeats", "test-cups", "trace-source", "epidemic-curve", "indirect-contact", "model-limits", "risk-assessment", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "b03: the chain (leave, travel, enter); direct contact, indirect contact (fomites, water, food, air) and vectors, with a vector distinguished from a fomite; \"break the link\". b01: pathogens multiply inside hosts. Year 11 Working Scientifically: models, variables, controls, validity, reliability, risk assessments. Not assumed: indicators, the simulation method, epidemic curves, contact tracing, the incubation period (b10 later; given here only as \"a delay before someone can pass it on\").", "startsWith": "Model a safe transmission route with observable markers. The video opens: Eight students each hold a cup of clear liquid. One cup is secretly different. They share liquid with a partner, three times.", "stopsAfter": "explaining what a model is and what each part of the fluid-exchange simulation stands for; defining an epidemic (cases above what's expected); explaining why the marker must be hidden until tested and how phenolphthalein shows the base; describing the method (equal volumes, a secret starter, new partners each round, pour all then half back, a sample saved before round one and after every round, a recorded contact sheet) and its aim and variables (contacts change; pink cups and samples are measured; volumes, pours and drops are kept the same); explaining the negative and positive controls, accuracy (the traced starter against the teacher's record) and reliability (repeat runs with a new starter); explaining why the final test cannot identify the starter; tracing the starter from saved samples and contacts, and explaining that real teams, with no start sample, use when symptoms began and contact tracing; defining an epidemic curve, plotting new cases by round, and explaining that the number infected doubled because each pink cup met a clear one (person-to-person spread), against the single peak of one shared source; describing a fluorescent powder model of indirect contact through a fomite; stating the model's limits (every contact transmits, the marker dilutes rather than multiplies, no delay before someone can pass it on, no recovery or immunity, scheduled equal contacts) and what it is valid for; writing the risk assessment; identifying possible starters from new data and assessing a claim about real spread.", "nextLesson": "testing a water or food sample for microbes (route entry bio-m7-p02)."},
+        'teaching': {"task": "Eight students share liquid from cup to cup, three times. One cup was secretly \"infected\". At the end, every cup turns pink. Who started it? How do you design a safe classroom model of an epidemic that can trace the source, and what can it really tell you about how a disease spreads?", "causalExplanation": "(1) the puzzle (1); (2) what a model is, what each part stands for, and an epidemic (2); (3) why the marker must be hidden until tested, and how the indicator shows it (3); (4) the method, with the saved samples and the contact sheet (4); (5) controls and repeats (5); (6) the final test, and why it can't find the starter (6); (7) reading the well plate with the contact sheet, and contact tracing named (7); (8) the epidemic curve, doubling from person-to-person spread, against one shared source (8); (9) modelling indirect contact with fluorescent powder (9); (10) the model's limits, and what it is valid for (10); (11) risk (11); attempts (12a to 12d); decision rule and handoff (13); key notes (14).", "conversationalApproach": "eight students share liquid from cup to cup three times, one cup was secretly infected and at the end every cup turns pink, so the practical asks who started it, how fast it spread and what a simulation can really show. An epidemic is a rise in cases above what is expected, and the model is a simplified version of one in which each cup is a person, each mixing is a contact and the hidden marker is the pathogen. The marker must stay invisible until testing, so sodium carbonate in one cup is revealed only when phenolphthalein indicator turns it pink. The method gives each step its reason: equal volumes in numbered cups, a new partner each round, a contact sheet and a sample saved in a well plate after every round. A negative control of unmixed water and a positive control of the marker check the indicator, and repeat runs check the pattern. The final test shows who is infected now but not who was first, so the saved samples are read round by round to trace the starter, and new cases each round are plotted as an epidemic curve. Fluorescent powder on a door handle models indirect contact through a fomite. The model's limits are set against real disease (every contact transmits, nothing multiplies, no immunity or recovery), and the risk assessment follows. Two exam questions follow with brief feedback.", "openingDecision": "Eight students each hold a cup of clear liquid. One cup is secretly different. They share liquid with a partner, three times. Then a drop of indicator goes into every cup, and all eight turn pink. So who started it? From the final colours alone, you can't tell. Let's design the model so that you can, and see what it really shows about an epidemic.", "understandingCheck": "(A1, identify and justify, plus a method change; 4 marks) six students P to U, two rounds, final pink P, Q, R, T: the starter is P or Q (R or T would have infected S or U; S and U are clear, so they cannot be the starter); P and Q cannot be told apart because they mixed in round one; testing a sample from each cup saved before round one would identify it (a sample after round one would not: P and Q mixed in round one, so both are pink; Revision 2, LR 4). Crossed mistake: \"P, because P is listed first\". (A2, assess a claim; 3 marks) \"The model shows that a real disease would infect everyone in a class within three rounds of contact.\" Answer: overreaches; in the model every contact transmits and everyone meets a new person each round, so cases double; real contacts do not always transmit, some people are immune, there is a delay before people can pass it on and people mix unevenly, so real spread depends on the disease and the group; the model does show how quickly linked contacts can multiply cases. Crossed mistake: \"the model is useless because it uses chemicals, not germs\" (the surface difference is not the reason; the mechanism differences are). Each improvement or judgement addresses the stated problem (owner rule).", "curriculumScope": "Syllabus (NSW Biology Stage 6, 2017), as printed: \"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117); investigating the transmission of a disease during an epidemic; investigate modes of transmission of infectious diseases, including direct contact, indirect contact and vector transmission\" this video prepares students to run the simulation, record it, analyse it and judge it; watching it is not conducting it. It teaches: what a model is and what each part of this model stands for; why the marker must be hidden until tested (an indicator); the method (equal volumes, a secret starter, rounds of mixing, a recorded contact sheet, a sample saved in a well plate before round one and after every round); the two controls and repeat runs; testing the cups, then the well plate; tracing the source from timing and contacts; the epidemic curve (new cases against time) and the doubling, person-to-person shape, against a single shared source; a variant for indirect contact (fluorescent powder on a door handle, an ultraviolet torch); the model's limits; the risk assessment. Placement (playlist order 4): after b03 (order 3), before p02 (order 5). Not re-taught: the three links and the three modes, and fomites (b03, one recall clause each). Not here: contact tracing and quarantine as control measures (b10: one recall line here, as a name for what health teams do); incidence, prevalence and outbreak tables (g01); Camp Wollemi (L04 Activity 2; its agent and timing are flagged as site errors 6 and 7 in b03, so g01 decides whether to use it); Snow (b14)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: infected or pink amber; uninfected grey; controls green; the starter teal outline; limits terracotta; grey for tags and callbacks. Clutter rule: at most three bright text items; every tag dims when its sentence ends. Reuse: the explainer kit (`Plate`, `Callout`, `Mark`, `Countdown`, `HandText`, `DrawPath`, `scribbleEllipse`, `Enter`); B6a's `WrongChip`, `GreyTag`, `Cross`, `Cam`; bio-m5-p01's method step rail; bio-m6-p01's VRA card and risk table layout (as reused in `bio-m7-p02.md`); b03's route board (leave, travel, enter), drawn small in scene 2. New coded items (lesson-local): the cup row (eight copies of the cup plate under coded letter chips A to H, each able to crossfade to its aligned pink copy in place), the pour arc (a coded liquid arc from one cup to another and half back, with a grey round counter), the contact sheet (a coded grid drawn over the clipboard plate: rows A to H, columns \"round 1\", \"round 2\", \"round 3\", filling with partner letters), the trace overlay (a coded column wipe that reveals one row of the painted well plate at a time, with coded arrows between partners), the epidemic curve (a coded bar graph that builds bar by bar), the attempt cards and answer tables. No human figures.", "transitionPlan": "The cup row writes in across the bench with eight clear cup plates under coded letters, coded arrows mix them in pairs over three rounds and every cup cross-fades to pink; the step rail lights its stages in turn as the model card writes one row per part; two clear cups take a drop of indicator and only the marker cup turns pink; the variables card and the method card write with the contact sheet and the well plate filling one column per round; the controls card stands a negative and a positive cup beside the row; the indicator drop turns all eight cups pink; the well plate fills the centre and is read row by row as the contact sheet traces back to the starter; a coded bar graph builds new cases per round into an epidemic curve; the door handle plate takes fluorescent powder and glows under the UV torch; the limits card writes model against real disease row by row; the risk table writes in the right zone; each attempt clears the board and its feedback underlines the card as a tracing table fills or a claim is underlined and a crossed chip lands; the plan card and next chip close; scene crossfade with settle."},
+        'rows': M7P01B_ROWS,
+    },
+    'm7b13': {
+        'design': D + 'lessons/bio-m7-b13.md',
+        'learning_review': D + 'checks/m7b13-learning-review.md',
+        'science_check': D + 'checks/m7b13-claude-science-check.md',
+        'meta': {"title": "What Limits Dengue Control? Incidence, Prevalence and Wolbachia", "subtitle": "A randomised trial in Yogyakarta found about 77 per cent fewer dengue cases where Wolbachia mosquitoes were released, yet 2024 set a record for dengue cases reported to WHO. What limits dengue control, and how do incidence and prevalence data show it?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 19, "lessonIntent": "naming dengue (caused by a virus with four serotypes, spread mainly by *Aedes aegypti*, which breeds in containers) as the named disease, with malaria (caused by *Plasmodium*, a protozoan parasite, spread by *Anopheles*) as the alternative; defining incidence (new cases in a set time per number of people) and prevalence (the share of a population that has a disease at one time), and explaining why dengue's prevalence stays low while past infection, a separate measure from antibodies (seroprevalence), is high (about seven in ten urban Indonesian children in 2014); comparing places by rate per 100,000 (cases divided by population, times 100,000), not by counts; reading a seasonal incidence graph and explaining the lag after the rains (breeding, then the virus's time in the mosquito); explaining why serotype-specific immunity lets outbreaks happen in mostly immune cities and why second infections can be more severe and why a vaccine must cover all four serotypes; explaining how mobility carries serotypes between cities and starts north Queensland outbreaks; analysing transmission as four conditions that must all be met (virus, *Aedes*, warmth and water for breeding, non-immune people in contact; cut one far enough and spread stops) and the social causes that shape them (water storage, crowded growing cities, funding and community support); interpreting the Yogyakarta randomised trial (about 2 in 100 against about 9 in 100 febrile clinic patients with dengue; 77 per cent lower) and the Cairns comparison over time (about 96 per cent lower), and judging which is stronger evidence (Cairns had no untreated areas compared at the same time); combining biological and social causes to explain why dengue control is still limited."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "named-disease", "incidence-prevalence", "past-infection-rates", "dengue-year", "serotypes", "mobility", "four-conditions", "wolbachia-evidence", "still-limited", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b03: a vector is a living carrier; dengue and malaria are vector-borne. From b09: immunity depends on memory cells specific to one antigen. From b10: herd immunity (\"when enough people are immune, an infected person meets too few people who can catch it\"). From b12: the Aedes aegypti container life cycle; eggs hatch after rain; adults in about a week; the virus multiplies in the mosquito for about 8 to 12 days; Wolbachia greatly reduces dengue transmission by Aedes, spreads by itself and keeps working after releases; Townsville's local cases in 2024 to 2025. From Year 11: reading a line graph and a percentage. Not assumed: incidence, prevalence, rate per 100,000, seroprevalence, serotypes, serotype-specific immunity, randomised trial design.", "startsWith": "Read incidence and prevalence data for a named disease. The video opens: In 2021, a trial in Yogyakarta, Indonesia, reported seventy-seven per cent fewer dengue cases where Wolbachia mosquitoes had been released.", "stopsAfter": "naming dengue (caused by a virus with four serotypes, spread mainly by *Aedes aegypti*, which breeds in containers) as the named disease, with malaria (caused by *Plasmodium*, a protozoan parasite, spread by *Anopheles*) as the alternative; defining incidence (new cases in a set time per number of people) and prevalence (the share of a population that has a disease at one time), and explaining why dengue's prevalence stays low while past infection, a separate measure from antibodies (seroprevalence), is high (about seven in ten urban Indonesian children in 2014); comparing places by rate per 100,000 (cases divided by population, times 100,000), not by counts; reading a seasonal incidence graph and explaining the lag after the rains (breeding, then the virus's time in the mosquito); explaining why serotype-specific immunity lets outbreaks happen in mostly immune cities and why second infections can be more severe and why a vaccine must cover all four serotypes; explaining how mobility carries serotypes between cities and starts north Queensland outbreaks; analysing transmission as four conditions that must all be met (virus, *Aedes*, warmth and water for breeding, non-immune people in contact; cut one far enough and spread stops) and the social causes that shape them (water storage, crowded growing cities, funding and community support); interpreting the Yogyakarta randomised trial (about 2 in 100 against about 9 in 100 febrile clinic patients with dengue; 77 per cent lower) and the Cairns comparison over time (about 96 per cent lower), and judging which is stronger evidence (Cairns had no untreated areas compared at the same time); combining biological and social causes to explain why dengue control is still limited.", "nextLesson": "practise reading outbreak data and choosing controls (route entry bio-m7-g01)."},
+        'teaching': {"task": "A randomised trial in Yogyakarta found about 77 per cent fewer dengue cases where Wolbachia mosquitoes were released, yet 2024 set a record for dengue cases reported to WHO. What limits dengue control, and how do incidence and prevalence data show it?", "causalExplanation": "Causes: why prevalence of current dengue is low but past infection high (short illness, no drain for past infection; 3, 4); why rates beat counts (population size; 4); why the peak trails the rain (breeding time plus the virus's time in the mosquito; 5); why a mostly immune city still has outbreaks (serotype-specific immunity; 6); why second infections can be worse and vaccines hard (6); how outbreaks start in Australia (travellers; 7); why removing one condition stops spread, and how social causes feed each condition (8); why a randomised trial is stronger than before-and-after (9); why control is still limited (10). Visible case: the same four-conditions bar gains causes and breaks; the same map carries the trial, travel and Cairns. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 9 (two studies) and 10 (two columns) are the densest, so items dim as the next writes.", "conversationalApproach": "In 2021 a randomised trial in Yogyakarta reported about 77 per cent fewer dengue cases where Wolbachia mosquitoes had been released, yet 2024 set a record for dengue cases reported worldwide, so the question is what limits malaria or dengue control, using dengue in South East Asia as the named disease. Dengue is a virus spread mainly by Aedes aegypti mosquitoes breeding in water containers, with four serotypes. Incidence is new cases in a set time for a set number of people, and prevalence is the share of a population that has the disease at a time; because dengue illness lasts about a week, prevalence stays low even in a big outbreak, while past infection is measured separately by antibody surveys, and comparisons use rates per 100,000 people. One city's weekly incidence stays low in the dry months and climbs after the wet season starts. Immunity covers only the serotype that caused it, so herd immunity against one serotype does not stop a new one, and mobility carries the virus between cities within a day. Dengue spreads when the virus, Aedes mosquitoes, warmth and water, and non-immune people meet, and people shape each condition. The Yogyakarta cluster trial is strong evidence, but releases take years, money and residents' consent, so control stays limited. The memory aid is incidence is the tap, prevalence is the tank. Two exam questions follow with brief feedback.", "openingDecision": "In 2021, a trial in Yogyakarta, Indonesia, reported seventy-seven per cent fewer dengue cases where Wolbachia mosquitoes had been released. Yet in 2024, countries reported more dengue than ever recorded, over fourteen million cases. So if one method works that well, what limits dengue control?", "understandingCheck": "12a is an interpret item with counts and populations (incidence per 100,000; the route start). 12c is an explain item with serosurvey and mobility data (the portion immune and mobility, the syllabus's own example). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B7-IQ4-01 (p 55): \"investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease\" (named disease: dengue; local scale: breeding containers and household water storage, scene 8; regional: serotypes moving between South East Asian cities and into north Queensland, scenes 6 and 7; global: the 2024 record and climate, scenes 1 and 10; interrelated: the four conditions and the social causes shaping each, scene 8). B7-IQ4-05 (p 55): \"interpret data relating to the incidence and prevalence of infectious disease in populations, for example:\" with the listed examples \"mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)\" (scenes 6 and 7, attempt 2) and \"Malaria or Dengue Fever in South East Asia\" (dengue in Indonesia carries the whole video). Verb \"investigate and analyse\": scene 8 relates factors to each other, scene 10 combines them. Verb \"interpret\": scenes 4, 5 and 9 read real and teaching data; both attempts are data items."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One four-conditions bar across the top from scene 2: four linked slots, \"virus\", \"Aedes\", \"warmth and water\", \"people not immune\", each with a small plate or coded glyph; slots light or break as scenes refer to them, and scene 8 adds a social cause under each. Below it, the data panel at the right half shows one dataset at a time (the tank, the rate bars, the weekly graph, the serotype grid, the trial grid). A coded map of South East Asia and northern Australia (outline only, no labels except the named places) sits at the left in scenes 1, 2, 7 and 9, with dots for Yogyakarta, Cairns and Townsville. People are never drawn: populations are coded dot grids (plain circles), coloured by serotype immunity in scene 6. The dengue virus is the new painted `m7-dengue-virus-v1.png`, its four serotypes shown as four colour rings on the same plate (one plate, four tints applied in code as outline rings, never recolouring the painting). No people, hands or faces: no patients, clinicians, families, travellers or crowds; travel is a coded arc between map dots; the clinic is a coded building outline. Scale: the virus, the mosquito, the jar and the Wolbachia cell are never shown at one scale; each has a grey label, and the virus carries \"drawn far larger than real (about 50 nanometres)\". Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.", "transitionPlan": "A coded SeaMap of South East Asia draws as a Yogyakarta marker and a record-year chip write on either side; the map shrinks as the dengue virus plate and the Aedes plate appear with a container and four serotype chips; the data panel opens with the incidence and prevalence glosses and a coded tank fills from its tap and drains from its outflow; the outflow widens and the level stays low as a survey bar and a per 100,000 fraction write; the coded lineGraph plots one city's weekly incidence with the wet season band; a 10 by 10 dot grid fills for one serotype's immunity while a new serotype passes through; the SeaMap returns large as travel arrows link the cities; the four-conditions bar fills its slots with linked rings and people chips under each; the ClusterGrid draws 24 areas with release squares shaded and the case bars compared; two columns write the social and biological limits under the conditions bar; the memory lines write with the tank thumbnail; each attempt clears the board and its feedback underlines the card as rate rows or the serotype grid fill and a crossed chip lands; the step chips and next chip close; scene crossfade with settle."},
+        'rows': M7B13_ROWS,
+    },
+    'm7g01b': {
+        'design': D + 'lessons/bio-m7-g01.md',
+        'learning_review': D + 'checks/m7g01b-learning-review.md',
+        'science_check': D + 'checks/m7g01b-claude-science-check.md',
+        'meta': {"title": "Outbreak Data Practice: Denominators, Incidence, Prevalence, Control", "subtitle": "When an outbreak question gives you a table or a graph, how do you find the right denominator, calculate incidence and prevalence, and use the data to justify a control?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 20, "lessonIntent": "calculating the percentage ill in each lunch group at Camp Wollemi with each group's own denominator (16 of 28, about 57 per cent; 0 of 14) and evaluating the person-to-person claim from the epidemic curve (two sharp clusters, each 8 to 18 hours after a meal containing the same leftover chicken, nothing between, and none ill among salad-roll eaters who shared cabins), so one food source eaten twice, not person-to-person spread; calculating malaria incidence per 1,000 per year with the whole population as denominator (12, then 2) and prevalence of infection with the people tested as denominator (2.5 per cent, then 0.3 per cent), and explaining that bed nets cut bites and so new infections (the tap), which lowers prevalence too, while same-day testing and treatment shortens infections (the tank), so prevalence falls further, and leaves fewer parasites for mosquitoes to pick up; reading a cholera epidemic curve against two interventions (cases kept rising after household quarantine and fell within a week of chlorination and toilet repair; they did not stop at once, because people infected just before chlorination could still fall ill up to 5 days later) and justifying environmental management over quarantine (cholera travels in contaminated water; chlorine and toilets break that link for everyone; quarantine misses the many infected people with mild or no symptoms who still pass the bacteria)."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question"],
+        'ids': ["hook", "q1-question", "q1-denominator", "q1-claim", "q1-mistake", "q2-question", "q2-calc", "q2-explain", "q2-mistake", "q3-question", "q3-graph", "q3-justify", "q3-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b03: transmission routes; food and water as vehicles; the faecal-oral route. From p01: the epidemic curve (new cases by time of onset); one shared source gives a sharp cluster, person-to-person spread gives rising waves. From b10: environmental management (treating water, carrying sewage away) cuts the travel link for everyone and needs nobody to remember; isolation and quarantine; the incubation period; \"Isolate the infected, quarantine the exposed.\" From b12: Anopheles bites mostly at night; bed nets cut bites. From b13: incidence (new cases in a set time per number of people), prevalence (share of a population with the disease at one time), \"Incidence is the tap, prevalence is the tank\", rates (divide by the population, then multiply). From Year 11: percentages. Not assumed: the word \"denominator\" (spoken with its meaning, \"the number you divide by\"), Clostridium perfringens and Vibrio cholerae (screen only; spoken as \"this bacterium\" and \"cholera\"), \"people at risk\" (spoken with its meaning).", "startsWith": "An unfamiliar outbreak table, survey or epidemic curve. The video opens: Outbreak questions hand you a table or a graph and ask what's going on.", "stopsAfter": "calculating the percentage ill in each lunch group at Camp Wollemi with each group's own denominator (16 of 28, about 57 per cent; 0 of 14) and evaluating the person-to-person claim from the epidemic curve (two sharp clusters, each 8 to 18 hours after a meal containing the same leftover chicken, nothing between, and none ill among salad-roll eaters who shared cabins), so one food source eaten twice, not person-to-person spread; calculating malaria incidence per 1,000 per year with the whole population as denominator (12, then 2) and prevalence of infection with the people tested as denominator (2.5 per cent, then 0.3 per cent), and explaining that bed nets cut bites and so new infections (the tap), which lowers prevalence too, while same-day testing and treatment shortens infections (the tank), so prevalence falls further, and leaves fewer parasites for mosquitoes to pick up; reading a cholera epidemic curve against two interventions (cases kept rising after household quarantine and fell within a week of chlorination and toilet repair; they did not stop at once, because people infected just before chlorination could still fall ill up to 5 days later) and justifying environmental management over quarantine (cholera travels in contaminated water; chlorine and toilets break that link for everyone; quarantine misses the many infected people with mild or no symptoms who still pass the bacteria).", "nextLesson": "how disease control ideas have changed (route entry bio-m7-b14)."},
+        'teaching': {"task": "When an outbreak question gives you a table or a graph, how do you find the right denominator, calculate incidence and prevalence, and use the data to justify a control?", "causalExplanation": "Why each group's own denominator gives a fair comparison (2b); why two sharp clusters at a fixed delay after meals point to a food, not people (2c); why the salad-roll group's zero matters (shared cabins, so contact without the food gave no illness; 2c); why bed nets lower incidence (fewer bites, fewer new infections) and so prevalence too (less flowing into the tank; 3c); why faster treatment lowers prevalence further (shorter infections) and incidence too (fewer parasites for mosquitoes; 3c); why cases did not stop at once after chlorination (people infected just before it fell ill up to 5 days later; 4b); why the camp control is fast cooling (this bacterium multiplies in meat that cools slowly; 2c); why environmental management beats quarantine for cholera (the water route, and carriers with no symptoms; 4c).", "conversationalApproach": "Outbreak questions hand you a table or a graph and ask what is going on, and most of them turn on one habit: find the denominator, the people who could have caught it or who were tested, before comparing anything, and then link the change to a cause. Q1 (a school camp food poisoning outbreak) divides each lunch group's cases by the number who ate that lunch, reads two sharp clusters on the epidemic curve the night after each chicken meal, and so judges the claim against the sandwiches; Q2 (malaria in a province after bed nets and village health workers) calculates incidence with the whole population at risk and prevalence with only the people tested, then links each measure to the tap or the tank: fewer bites mean fewer new infections, and faster treatment shortens infections; Q3 (cholera after a flood) reads the weekly cases against the quarantine and chlorination arrows, finds the water and faeces route, and justifies chlorination and repaired toilets as breaking the travel link that quarantine does not. Each question ends with its spoken, crossed classic mistake (dividing by the whole camp, dividing positives by the whole province, quarantine works because it keeps infected people away), and the decision board gives the first move for each kind of question.", "openingDecision": "Outbreak questions hand you a table or a graph and ask what's going on. Most of them turn on one habit. Before you compare anything, find the denominator, the number you divide by. Then link the numbers to a cause, and the cause to a control. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.", "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds.", "curriculumScope": "Syllabus (2017, `docs/production/programme/syllabus/bio-2017-y12.json`, p 55; practice and transfer only, first coverage stays with b10, b12 and b13): B7-IQ4-01: \"investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease\". Q2 (malaria in a South East Asian province: vector bites, treatment and duration interact) and Q3 (cholera: water, sanitation and people with no symptoms). B7-IQ4-05: \"interpret data relating to the incidence and prevalence of infectious disease in populations, for example:\" with the listed examples \"mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)\" and \"Malaria or Dengue Fever in South East Asia\". Q1 (outbreak percentages with the right denominator), Q2 (incidence and prevalence calculated, malaria in South East Asia), Q3 (an epidemic curve read against two interventions). B7-IQ4-04: \"investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic\". Q3 (justify chlorination and toilet repair over household quarantine)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in g03's layout: top-left the question card (stem, data and demands as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Outbreak table\", \"Incidence and prevalence\", \"Epidemic curve\"), hidden during each attempt. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). Earlier questions are cleared before the next card writes on. Q1's working is a coded lunch table with a `FractionBar` per group (filled share of a bar, the denominator written under the bar) and the coded epidemic curve (house bar chart, 4-hour onset blocks) with a meal timeline strip above it. Q2's working is a `DenominatorPair` (two stacked fraction lines, each with its denominator boxed and labelled \"everyone at risk\" or \"people tested\") and b13's `TankModel` (tap and tank). Q3's working is the coded `lineGraph` (weekly cases) with two dated intervention arrows and b10's link chain (leave, travel, enter). No people, hands or faces: students, health workers and villagers are words or plain coded dots only; the camp is the two food plates; the town is the water tank plate and a coded house outline. Coded elements are abstract only (tables, bars, axes, arrows, dots). Clutter rule (owner, 19 Oct): besides the question strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands. Plates are scaled proportionally, never stretched.", "transitionPlan": "The heading writes on and a large coded fraction writes with its denominator ringed; each question opens on a fresh board with the type badge hidden while the worded card writes with its table, epidemic curve or graph, and the chicken pasta tray, Anopheles and bed net, or Vibrio cholerae plates small at its corner; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used; the lunch table enlarges as each group's fraction writes, then the epidemic curve's two clusters ring against the meal times; the DenominatorPair builds the incidence and prevalence fractions and b13's TankModel shows the tap and the tank changing; the cholera graph's arrows light against the weekly bars and b10's link chain draws with the travel link broken; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."},
+        'rows': M7G01B_ROWS,
+    },
+    # --- M7 p01, b13 and g01 entries (end) ---
 }
 
 

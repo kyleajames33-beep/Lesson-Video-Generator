@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c10/lesson.json",
+    "lessonSha256": "44dc5a9bc0a58afdbe0948658846fce857d9528a8a78f66c87fd0ff0c1fe0ffa"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c09 (carboxyl group, \"-oic acid\" names, salts \"-oate\", the hydrogen carbonate fizz test, acid hydrogen bonding and boiling points); chem-m7-c05 (alcohol names, the O–H and hydrogen bonding, boiling points, solubility); chem-m7-c08a (oxidation of a primary alcohol to a carboxylic acid with acidified dichromate under reflux); chem-m7-c08b (dipole–dipole forces from a C=O); chem-m7-c06 (why reflux: the condenser returns vapours; ethene hydration to ethanol); chem-m7-c03 (dispersion forces, \"like dissolves like\"); chem-m7-c02 (isomers; functional group isomers named in c08b); chem-m5-c03 (Le Chatelier: adding a substance shifts the position to use up some of it, removing one shifts it to replace some of it; the shift only partly cancels the change); chem-m5-c04b (a catalyst speeds forward and reverse reactions equally and does not change the equilibrium mixture); chem-m5-c05 (K; author note only). Not assumed: ester, ester group, esterification, condensation reaction, alkyl alkanoate naming, separating funnel, the carbonate wash.",
+    "startsWith": "Name the acid and alcohol parts. The video opens: Banana and pineapple flavourings often get their smell from esters. Pentyl ethanoate is usually described as smelling like banana, and ethyl butanoate like pineapple. Each one can be made from two smaller molecules: a carboxylic acid, like the ones in the last video, and an alcohol.",
+    "stopsAfter": "writing the equation for esterification with conditions and the equilibrium arrow; naming an ester from its acid and alcohol and working back from an ester to both; explaining an ester's low boiling point and volatility; explaining why the reaction stops short and how excess reactant or removing water raises the yield, while the catalyst does not; outlining how the ester is separated, purified and checked; drawing a two-step flow chart with conditions. No hands-on procedure or risk table, no saponification.",
+    "nextLesson": "preparing a simple ester in the lab (route chem-m7-p05, \"Prepare a simple ester in a school laboratory\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c10.md"
+  ],
+  "teaching": {
+    "task": "Banana and pineapple flavourings often get their smell from esters, and each ester can be made from a carboxylic acid and an alcohol. How do the two halves join and how is the ester named, why does the reaction never quite finish, how do you push the yield up and get the ester out, and how could you make it from ethanol alone?",
+    "causalExplanation": "(1) fruit smells come from esters, which can be made from an acid and an alcohol; three questions (1); (2) the acid loses OH, the alcohol loses H, they form water, and the parts link through the alcohol's oxygen: the ester group; condensation (2); (3) names: alcohol part first (\"-yl\"), acid part second (\"-oate\"); formulas are written acid side first, names alcohol part first; order matters (3); (4) working backwards: cut at the single-bonded oxygen next to the C=O; the C=O side is the acid (4); (5) no O–H, so no hydrogen bonds between ester molecules: low boiling point, volatile; isomers of acids, told apart by the c09 test (5); (6) slow, so a catalyst and heat; reflux keeps volatile liquids in; hazards (6); (7) reversible: all four remain; about two thirds (7); (8) excess reactant (some of it used up) or removing water shifts it right; the catalyst doesn't change the yield (8); (9) get it out: water dissolves most of the ethanol and sulfuric acid, the ester forms a layer, carbonate turns leftover acid into a salt in the water layer, dry, distil; the boiling point is only a rough check (9); (10) a two-step flow chart from ethanol; the main road, for a primary alcohol (10); memory aid (11); two attempts and brief feedback (12 to 15); handoff (16); key notes (17).",
+    "conversationalApproach": "banana and pineapple flavourings often get their smell from esters, each made from a carboxylic acid and an alcohol, so the video asks how the two halves join and are named, why the reaction never quite finishes, how to push the yield up and how to get the ester out. The acid loses the OH from its carboxyl group and the alcohol loses the H from its OH, together making water, and the two parts link through the alcohol's oxygen: a condensation reaction. Ester names put the alcohol part first, ending in yl, and the acid part second, ending in oate, and working backwards cuts at the single-bonded oxygen next to the C=O. An ester has no O-H, so its molecules cannot hydrogen bond to each other; it boils lower than an acid or alcohol of similar size and evaporates easily, which is why it smells. The reaction is slow, so concentrated sulfuric acid is added as a catalyst and the mixture is heated under reflux; it is reversible and reaches equilibrium, so an excess of one reactant or removing water pushes the yield up (Le Chatelier's principle), while the catalyst only brings equilibrium sooner. The ester is separated with water in a separating funnel, washed with sodium carbonate solution to remove leftover acid, dried and distilled near 77 degrees as a rough check, and a two-step flow chart makes ethyl ethanoate from ethanol alone. The memory aid is acid plus alcohol in equilibrium with ester plus water, alcohol part first. Two exam questions follow with brief feedback.",
+    "openingDecision": "Banana and pineapple flavourings often get their smell from esters. Pentyl ethanoate is usually described as smelling like banana, and ethyl butanoate like pineapple. Each one can be made from two smaller molecules: a carboxylic acid, like the ones in the last video, and an alcohol. So how do the two halves join? Why does the reaction never quite finish? And how do you get the ester out?",
+    "understandingCheck": "(A1) \"An ester has the condensed structural formula CH₃CH₂COOCH₂CH₂CH₂CH₃. Give the IUPAC name of the ester, and name the carboxylic acid and the alcohol used to make it.\" A skeletal formula is shown beside it in plain ink (no colours, no cut line). New ester (scenes use ethyl ethanoate, methyl propanoate, ethyl butanoate and butyl ethanoate); tests the cut, the order of the name and naming both reactants (the 2021 Q26 marker-reported trap: working backward from an ester). Crossed mistake: \"propyl butanoate\" (the halves swapped; the bank's \"students most often swap the two halves\"). (A2) \"A student heats 0.50 mol of propanoic acid with 0.50 mol of methanol and a few drops of concentrated sulfuric acid under reflux. At equilibrium, 0.32 mol of methyl propanoate has formed. (a) Write a balanced equation for the reaction. (b) Suggest one change to the reactants that would give more than 0.32 mol of ester, and explain your answer using Le Chatelier's principle.\" New ester and data (scenes use ethyl ethanoate); 0.32 mol of 0.50 is a 64% yield, inside the site's range. Crossed mistake (Revision 2, science S1): \"Heat it for longer, so more ester forms.\" (at equilibrium, more time adds no ester; the pack's rate against yield trap). \"Add more concentrated sulfuric acid\" is no longer crossed, because many texts and markers credit it (the acid takes up some water).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the production, in a school laboratory, of simple esters\" This video explains the reaction, its conditions and yield, and how the ester is separated and identified; chem-m7-p05 carries out the preparation with its risk table (`C7-IQ2-05`). \"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\" This video introduces the flow chart with one two-step pathway (ethanol to ethyl ethanoate); chem-m7-c13 and g03 build and practise multi-step pathways. this video starts by naming the acid and alcohol parts of an ester, and stops at explaining esterification, its equilibrium and how the product is identified. It teaches: a carboxylic acid and an alcohol react to form an ester and water (esterification); the acid loses the OH of its carboxyl group and the alcohol loses the H of its O–H, these form water, and the two parts link through the alcohol's oxygen; the ester group –COO– (C=O then O then carbon); a reaction in which two molecules join and release a small molecule such as water is a condensation reaction; naming: the alcohol part first as an alkyl group (\"-yl\"), the acid part second ending \"-oate\" (as in c09's salts), ethyl ethanoate; condensed formulas are usually written acid side first while the name puts the alcohol part first; order matters (ethyl butanoate and butyl ethanoate are different compounds with the same formula); working backwards from a condensed formula: find the C=O and cut at the single-bonded oxygen next to it; the side with the C=O came from the acid (methyl propanoate from propanoic acid and methanol); properties: no O–H, so no hydrogen bonding between ester molecules, only dipole–dipole and dispersion forces, so for similar molar mass an ester boils well below an alcohol and a carboxylic acid (ethyl ethanoate 77 °C, pentan-1-ol 138 °C, butanoic acid 164 °C, all about 88 g/mol); small esters are volatile, which is why they smell; esters are functional group isomers of carboxylic acids, and only the acid fizzes with sodium hydrogen carbonate (c09); conditions: a few drops of concentrated sulfuric acid as catalyst, heat under reflux (c06 recall: the condenser returns volatile ethanol and ester); hazards: concentrated sulfuric acid is corrosive, the organic liquids are flammable, so heat electrically or with a water bath, not a flame; equilibrium: the reaction is reversible (water can split the ester back), so all four substances remain; from equal amounts of ethanoic acid and ethanol about two thirds becomes ester; Le Chatelier (Module 5): an excess of one reactant shifts the position right, using up some of it (with three times as much ethanol about nine tenths of the acid becomes ester); removing water also shifts it right, and concentrated sulfuric acid takes up a little water; the catalyst speeds both directions and does not change the yield; reflux keeps material in the flask and does not change the yield; isolating and checking the product: separating funnel with water (most of the ethanol and sulfuric acid dissolve in the water; the ester forms its own layer), wash with sodium carbonate solution (leftover acid becomes a salt that dissolves in the water layer, and CO₂ forms, so vent the funnel), separate, dry, distil, collecting near the ester's boiling point, which is only a rough check because ethanol boils at 78 °C; no fizz with carbonate shows the acid has gone; a two-step flow chart: ethanol oxidised to ethanoic acid (acidified dichromate, reflux), then ethanoic acid with more ethanol (concentrated sulfuric acid, reflux) to ethyl ethanoate, each arrow carrying reagents and conditions; the \"main road\" alkene, primary alcohol, acid, ester (only a primary alcohol oxidises to an acid). Not here: the practical procedure in full, quantities, the risk table and waste disposal (chem-m7-p05, with `C7-IQ2-05`); saponification, fats, oils and triglycerides (chem-m7-c12 territory; author note g); amides (chem-m7-c11); polyesters (chem-m7-c15); equilibrium constant calculations (author note d keeps the arithmetic); the site's avocado fat hook (site correction 3); reaction mechanism beyond which atoms form the water (author note b)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c09: carbon skeleton ink; hydrogens soft grey; main chain pale blue; branches amber; oxygen brick red; the functional group ringed red (the carboxyl group on acids, the O–H on alcohols, the ester group –COO– on esters); hydrogen bonds dotted violet; dipole–dipole attractions dotted teal; dispersion forces dotted pale blue; the acid side soft amber and the alcohol side pale blue only while the cut line shows; released water in the Module 5 water colour; conditions on arrows in navy. Board layout (constant): top-left the short task chip (\"Join them\", \"Name it\", \"Forces\", \"Conditions\", \"Yield\", \"Get it out\", \"Flow chart\"); centre the structure board or reaction strip, one reaction or one ester at a time; the boiling point strip at the right only in scene 5; the yield bar under the strip only in scenes 7 and 8; plates small or medium at the left or right only in scenes 1, 6, 9 and 16. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 27 Oct by contact sheet): `m7-ester-fruit-v1.png` (a banana, a pineapple and a pear, side by side; scene 1); `m7-reflux-apparatus-v1.png` (a round-bottom flask on an electric heating mantle with an upright water-cooled condenser in a clamp stand; scene 6; the flask's liquid is painted amber, so it is labelled with the mixture's name and the colour is not mentioned; c06 and c08a reuse it the same way); `m7-separating-funnel-cloudy-v1.png` and `m7-separating-funnel-clear-v1.png` (aligned pair, identical alpha bounds: a stoppered separating funnel in a clamp stand, first with a cloudy mixed liquid, then two clear layers, a pale yellow upper layer over a pale blue lower layer; scene 9; the upper layer is labelled \"ester layer\"); `m7-school-distillation-setup-v1.png` (scene 9, small, for \"distil\"). Not used: `m7-perfume-bottle-v1.png` (the fruit plate carries the hook better); `m7-margarine-tub-v1.png` and `m7-vegetable-oil-bottle-v1.png` (fats are not taught here). No new plates. All plates small or medium, scaled uniformly only, never stretched. No human figures.",
+    "transitionPlan": "The ester fruit plate opens the hook with two ester names and their smell chips; the board clears to ethanoic acid and ethanol in full structural form as the OH and H lift off into a water box and the two halves join through the alcohol's oxygen with the ester group ringed red; the name builder writes ethyl ethanoate with its two parts coloured; a condensed ester formula redraws in full and a cut line drops at the single-bonded oxygen; the force view shows ester molecules with dipole lines and no hydrogen bonds as the boiling point strip drops three similar-mass molecules; condition chips write on the equation's arrow beside the reflux apparatus plate; the arrow splits into equilibrium half heads as a four-icon flask settles and a yield bar stops short; the ethanol icon's bar grows for the excess and a water icon leaves as the yield bar rises; a coded list and the separating funnel plate show the layers and the wash; the flow chart draws two arrows from ethanol with their conditions; the memory lines write; each attempt clears the board and its feedback underlines the card as the cut line or equation writes and a crossed chip lands; the memory lines, reflux and separating funnel plates and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Esters: how do an acid and an alcohol join?\".",
+      "teachingReason": "Hook (fruit smells from an acid and an alcohol): Banana and pineapple flavourings often get their smell from esters.",
+      "narrationCue": "banana / pineapple / alcohol / out",
+      "motionPurpose": "On the spoken cues: `m7-ester-fruit-v1.png` appears medium at the centre. On \"banana\" the banana brightens and a tag \"pentyl ethanoate\" writes beside it; on \"pineapple\" the pineapple brightens and a tag \"ethyl butanoate\" writes (both tags with a small grey \"often described as\" chip). The pear stays dim. On \"alcohol\" the plate shrinks to the left and two small coded structures draw at the right: \"ethanoic acid\" (carboxyl ringed red,",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Esters: how do an acid and an alcohol join?\". `m7-ester-fruit-v1.png` appears medium at the centre. On \"banana\" the banana brightens and a tag \"pentyl ethanoate\" writes beside it; on \"pineapple\" the pineapple brightens and a tag \"ethyl butanoate\" writes (both tags with a small grey \"often described as\" chip). The pear stays dim. On \"alcohol\" the plate shrinks to the left and two small coded structures draw at the right: \"ethanoic acid\" (carboxyl ringed red, grey \"c09\" chip) and \"+ ethanol\" (O–H ringed red), with an arrow to a box \"?\". On \"out\" three short question chips write one at a time under the box and stay dim: \"join?\", \"finish?\", \"out?\"; a fourth dim chip \"from ethanol?\" writes with them (no narration; answered on \"ethanol alone\" in scene 10). Bright at the end: the heading, the reactant pair and the \"?\" box. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "joining-halves",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the plate leaves.",
+      "teachingReason": "Joining the halves: Take ethanoic acid and ethanol.",
+      "narrationCue": "water / ester / condensation",
+      "motionPurpose": "On the spoken cues: Task chip \"Join them\". Ethanoic acid (left) and ethanol (right) in full structural form, facing each other. On \"loses the O H\" the acid's OH glows (small grey tag, no narration: \"shown by isotope-labelling experiments\"); on \"loses the H\" the alcohol's O–H hydrogen glows. On \"water\" the condensation join runs: the two glowing pieces lift out and slide together into H₂O (water colour), which drops below with \"+ H₂O\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the plate leaves. Task chip \"Join them\". Ethanoic acid (left) and ethanol (right) in full structural form, facing each other. On \"loses the O H\" the acid's OH glows (small grey tag, no narration: \"shown by isotope-labelling experiments\"); on \"loses the H\" the alcohol's O–H hydrogen glows. On \"water\" the condensation join runs: the two glowing pieces lift out and slide together into H₂O (water colour), which drops below with \"+ H₂O\". The two parts slide together and a new C–O bond draws, giving CH₃COOCH₂CH₃. On \"ester\" the –COO– ringed red with the chip \"ester group: –COO–\". The equation writes under it: \"CH₃COOH + CH₃CH₂OH ⇌ CH₃COOCH₂CH₃ + H₂O\" (the ⇌ dim grey for now, tag \"more on this arrow soon\"). On \"condensation\" a chip writes \"condensation: join + lose water\". Bright at the end: the ester structure, its \"ester group\" chip and the \"condensation\" chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "naming-esters",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Naming: alcohol first, acid second: Ester names have two words, one for each half.",
+      "narrationCue": "first / oate / different",
+      "motionPurpose": "On the spoken cues: Task chip \"Name it\". Ethyl ethanoate (full structural, ester group ringed red) with the name builder below it, two slots labelled \"alcohol part (-yl)\" and \"acid part (-oate)\". On \"first\" the ethyl chain glows pale blue and the first slot writes \"ethyl\" (grey tag \"ethanol → ethyl\"). On \"oate\" the acid side glows amber and the second slot writes \"ethan\" + \"oate\" in red, with a small grey chip \"c09: sodium ethanoate\".",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Name it\". Ethyl ethanoate (full structural, ester group ringed red) with the name builder below it, two slots labelled \"alcohol part (-yl)\" and \"acid part (-oate)\". On \"first\" the ethyl chain glows pale blue and the first slot writes \"ethyl\" (grey tag \"ethanol → ethyl\"). On \"oate\" the acid side glows amber and the second slot writes \"ethan\" + \"oate\" in red, with a small grey chip \"c09: sodium ethanoate\". On \"ethyl ethanoate\" the full name lights. On \"acid side first\" CH₃COOCH₂CH₃ writes small under the structure, acid side amber and alcohol side pale blue, with a curved arrow from the pale-blue end to the name's first word (tag \"formula: acid side first; name: alcohol part first\"). On \"different\" the board shows two condensed structures one above the other: \"CH₃CH₂CH₂COOCH₂CH₃ ethyl butanoate\" (tag \"pineapple\") and \"CH₃COOCH₂CH₂CH₂CH₃ butyl ethanoate\", each with its cut line shown faintly (acid side amber, alcohol side pale blue) so the swapped halves are visible; a grey chip \"both C₆H₁₂O₂\" writes between them, then the chip \"same formula, different esters\". Bright at the end: the two structures, their names and the \"different esters\" chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "working-backwards",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Working backwards from an ester: Exam questions often go the other way: here's an ester, what made it?",
+      "narrationCue": "next / three / methyl propanoate",
+      "motionPurpose": "On the spoken cues: The condensed formula \"CH₃CH₂COOCH₃\" writes large, then redraws below in full structural form (ester group ringed red). On \"next\" the cut line drops through the bond between the C=O carbon and the single-bonded oxygen; the left side tints amber (\"acid side: has the C=O\"), the right side pale blue (\"alcohol side: O + chain\"). A chip \"cut at the C=O oxygen\" fades in and is crossed (caption \"cut at the single-bonded",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The condensed formula \"CH₃CH₂COOCH₃\" writes large, then redraws below in full structural form (ester group ringed red). On \"next\" the cut line drops through the bond between the C=O carbon and the single-bonded oxygen; the left side tints amber (\"acid side: has the C=O\"), the right side pale blue (\"alcohol side: O + chain\"). A chip \"cut at the C=O oxygen\" fades in and is crossed (caption \"cut at the single-bonded O\"). On \"three\" the three acid-side carbons pop \"1, 2, 3\" and a tag writes \"propanoic acid\"; on \"methanol\" the single alcohol-side carbon glows with \"methanol\". On \"methyl propanoate\" the builder fills \"methyl\" + \"propanoate\" (bright). Bright at the end: the structure with its cut, the name and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ester-properties",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "No O–H, so it boils low and smells: An ester has no O H.",
+      "narrationCue": "seventy seven / sixty four / fizzes",
+      "motionPurpose": "On the spoken cues: Task chip \"Forces\". The force view: four ethyl ethanoate molecules (skeletal, ester group ringed red); dotted teal lines link a δ+ C=O carbon to a δ− oxygen on a neighbour (tag \"dipole–dipole\"), pale-blue dispersion dots along the chains. A chip \"two O atoms, so hydrogen bonding\" fades in and is crossed (caption \"no O–H: no hydrogen bonds between esters\"). On \"seventy seven\" the force view shrinks left and the",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Forces\". The force view: four ethyl ethanoate molecules (skeletal, ester group ringed red); dotted teal lines link a δ+ C=O carbon to a δ− oxygen on a neighbour (tag \"dipole–dipole\"), pale-blue dispersion dots along the chains. A chip \"two O atoms, so hydrogen bonding\" fades in and is crossed (caption \"no O–H: no hydrogen bonds between esters\"). On \"seventy seven\" the force view shrinks left and the boiling point strip draws at the right with its 25 °C line; ethyl ethanoate drops to \"77 °C\" (tag \"dipole–dipole\"), pentan-1-ol to \"138 °C\" (tag \"hydrogen bonding\"), and on \"sixty four\" butanoic acid to \"164 °C\" (tag \"dimers\"); a grey chip \"all about 88 g/mol\" sits beside the strip. On \"evaporate\" a few coded wisps rise from the ethyl ethanoate mark (tag \"volatile\"). On \"C four H eight O two\" the strip shrinks and the two structures draw side by side with a bracket \"C₄H₈O₂: functional group isomers\"; on \"fizzes\" a small tick chip \"NaHCO₃: fizz\" writes under butanoic acid and a crossed chip \"no fizz\" under ethyl ethanoate (grey \"c09\" chip). Bright at the end: the two structures, the bracket and the two test chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "conditions-reflux",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "The conditions: catalyst, heat and reflux: At room temperature, this reaction is very slow.",
+      "narrationCue": "catalyst / back / flammable",
+      "motionPurpose": "On the spoken cues: Task chip \"Conditions\". The equation from scene 2 returns small at the top; on \"catalyst\" a navy chip \"conc. H₂SO₄ (catalyst)\" writes above the arrow (grey tag \"above the arrow, not a reactant\"), and a second navy chip \"heat under reflux\" writes below it. `m7-reflux-apparatus-v1.png` appears medium at the left, its flask labelled \"ethanoic acid + ethanol + conc. H₂SO₄\". On \"back\" the vapour return (c06) runs: coded",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Conditions\". The equation from scene 2 returns small at the top; on \"catalyst\" a navy chip \"conc. H₂SO₄ (catalyst)\" writes above the arrow (grey tag \"above the arrow, not a reactant\"), and a second navy chip \"heat under reflux\" writes below it. `m7-reflux-apparatus-v1.png` appears medium at the left, its flask labelled \"ethanoic acid + ethanol + conc. H₂SO₄\". On \"back\" the vapour return (c06) runs: coded wisps rise into the condenser and droplets fall back, twice (grey chip \"c06: reflux returns vapours\"). On \"flammable\" a navy hazard chip writes beside the plate: \"conc. H₂SO₄: corrosive. Organic liquids: flammable. Electric heater or water bath, no flame.\" Bright at the end: the plate, the two condition chips and the hazard chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "equilibrium-yield",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the plate leaves.",
+      "teachingReason": "It never quite finishes: But esterification is reversible.",
+      "narrationCue": "equilibrium / two thirds",
+      "motionPurpose": "On the spoken cues: Task chip \"Yield\". The equation returns at the centre; on \"reversible\" the dim ⇌ brightens and a small reverse arrow under it is labelled \"water splits the ester back\". On \"equilibrium\" four small structure icons sit in a coded flask outline: acid, alcohol, ester, water, each with a small amount bar (grey chip \"M5: equilibrium, both directions continue\"). On \"two thirds\" the yield bar draws under the flask, labelled",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the plate leaves. Task chip \"Yield\". The equation returns at the centre; on \"reversible\" the dim ⇌ brightens and a small reverse arrow under it is labelled \"water splits the ester back\". On \"equilibrium\" four small structure icons sit in a coded flask outline: acid, alcohol, ester, water, each with a small amount bar (grey chip \"M5: equilibrium, both directions continue\"). On \"two thirds\" the yield bar draws under the flask, labelled \"equal amounts: ester formed from the acid\", and fills to about 67% with the tag \"about 2/3\". On \"single arrow\" a chip \"→\" fades in and is crossed (caption \"use ⇌: it doesn't go to completion\"). Bright at the end: the equation, the yield bar and the crossed arrow chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "pushing-yield",
+      "visualDecision": "new",
+      "visualReference": "the yield bar and the four-icon flask stay.",
+      "teachingReason": "Pushing the yield up: To get more, use Le Chatelier's principle from Module five.",
+      "narrationCue": "excess / nine tenths / sooner",
+      "motionPurpose": "On the spoken cues: On \"excess\" the ethanol icon's amount bar grows to three times its height (tag \"excess ethanol\") and a navy arrow \"shifts right →\" writes over the equation (grey chip \"M5: added substance partly used up\"). On \"nine tenths\" the yield bar fills from its grey ghost at 67% to about 90% (tag \"3 × ethanol: about 9/10 of the acid\"). On \"Removing water\" the water icon's bar shrinks (tag \"remove water → shifts right\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "the yield bar and the four-icon flask stay. On \"excess\" the ethanol icon's amount bar grows to three times its height (tag \"excess ethanol\") and a navy arrow \"shifts right →\" writes over the equation (grey chip \"M5: added substance partly used up\"). On \"nine tenths\" the yield bar fills from its grey ghost at 67% to about 90% (tag \"3 × ethanol: about 9/10 of the acid\"). On \"Removing water\" the water icon's bar shrinks (tag \"remove water → shifts right\"). On \"catalyst\" a chip \"more catalyst → more ester\" fades in and is crossed (caption \"catalyst: faster, not more\"); on \"sooner\" a small grey chip \"M5: a catalyst speeds both directions\" writes. Bright at the end: the 90% bar, the \"shifts right\" arrow and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "separating-identifying",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Getting the ester out, and checking it: After reflux, the flask holds the ester, leftover acid and alcohol, water, and sulfuric acid.",
+      "narrationCue": "dissolve / layer / salt / vented / distil / rough",
+      "motionPurpose": "On the spoken cues: Task chip \"Get it out\". A small coded list writes at the left: \"ester, acid, alcohol, water, H₂SO₄\" (the last four grey). `m7-separating-funnel-cloudy-v1.png` appears medium at the centre-left, labelled \"separating funnel: mixture + water\". On \"dissolve\" the grey \"alcohol\" and \"H₂SO₄\" list items slide down towards the funnel's lower part (tag \"most ethanol and H₂SO₄ → water\"). On \"layer\" it cross-fades to",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Get it out\". A small coded list writes at the left: \"ester, acid, alcohol, water, H₂SO₄\" (the last four grey). `m7-separating-funnel-cloudy-v1.png` appears medium at the centre-left, labelled \"separating funnel: mixture + water\". On \"dissolve\" the grey \"alcohol\" and \"H₂SO₄\" list items slide down towards the funnel's lower part (tag \"most ethanol and H₂SO₄ → water\"). On \"layer\" it cross-fades to `m7-separating-funnel-clear-v1.png` (aligned pair); the upper layer is labelled \"ester layer (less dense here)\" and the lower \"water layer\", with a grey tag \"check densities: don't assume\". On \"sodium carbonate\" the mixture list and the density tag dim, and a navy chip writes \"wash: Na₂CO₃(aq)\" (small grey chip \"c09: carbonates fizz with acids too\"). On \"salt\" a small \"RCOO⁻Na⁺\" chip drops into the lower layer (grey \"c09: salts end -oate\") and the funnel bubbles run in the lower layer; on \"vented\" a small coded arrow at the stopper reads \"vent CO₂ often\". On \"distil\" the wash chip and vent arrow dim, the funnel shrinks and `m7-school-distillation-setup-v1.png` appears small beside it, with a short step strip: \"separate → dry → distil\". On \"seventy seven\" a check chip writes: \"collected near 77 °C\"; on \"rough\" it gains \"(ethanol 78 °C: rough check)\", and a second chip writes \"no fizz with carbonate: acid removed\". Bright at the end: the distillation plate, the step strip and the two check chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "flow-chart",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "A two-step flow chart: You can even make ethyl ethanoate from ethanol alone.",
+      "narrationCue": "arrow / ester",
+      "motionPurpose": "On the spoken cues: Task chip \"Flow chart\". On \"ethanol alone\" the hook's dim \"from ethanol?\" chip flashes top-left and dims. The flow chart builds left to right: box \"ethanol, CH₃CH₂OH\"; arrow labelled in navy \"K₂Cr₂O₇ / H⁺, heat under reflux\" (grey \"c08a\" chip); box \"ethanoic acid, CH₃COOH\". A second arrow drops from the first box (\"more ethanol\") to join the second arrow, labelled \"conc. H₂SO₄, heat under reflux\"; box \"ethyl",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Flow chart\". On \"ethanol alone\" the hook's dim \"from ethanol?\" chip flashes top-left and dims. The flow chart builds left to right: box \"ethanol, CH₃CH₂OH\"; arrow labelled in navy \"K₂Cr₂O₇ / H⁺, heat under reflux\" (grey \"c08a\" chip); box \"ethanoic acid, CH₃COOH\". A second arrow drops from the first box (\"more ethanol\") to join the second arrow, labelled \"conc. H₂SO₄, heat under reflux\"; box \"ethyl ethanoate, CH₃COOCH₂CH₃ + H₂O\". On \"arrow\" each arrow's label pulses in turn (tag \"box = compound; arrow = reagents + conditions\"). On \"ethene\" a grey box \"ethene + steam (H₃PO₄, about 300 °C, high pressure)\" slides in at the far left with a grey arrow (grey \"c06\" chip). On \"ester\" a handwritten line writes above the chart: \"alkene → primary alcohol → acid → ester\"; on \"Only a primary alcohol\" a small grey tag writes under \"primary alcohol\": \"c08a: secondary → ketone, not acid\". Bright at the end: the three boxes, the handwritten line and the \"box = compound\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So, acid plus alcohol, in equilibrium with ester plus water.",
+      "narrationCue": "oate / escapes",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"acid + alcohol ⇌ ester + water\". Second handwritten line on \"oate\": \"Alcohol gets '-yl' (first), acid gets '-oate' (second).\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"cut at the single-bonded O: the C=O side is the acid\"; \"yield up: excess reactant, remove water\"; on \"escapes\" \"Catalyst: faster, not more. Heat: faster. Reflux: nothing",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"acid + alcohol ⇌ ester + water\". Second handwritten line on \"oate\": \"Alcohol gets '-yl' (first), acid gets '-oate' (second).\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"cut at the single-bonded O: the C=O side is the acid\"; \"yield up: excess reactant, remove water\"; on \"escapes\" \"Catalyst: faster, not more. Heat: faster. Reflux: nothing escapes.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. An ester has the condensed formula",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"An ester has the condensed structural formula CH₃CH₂COOCH₂CH₂CH₂CH₃. Give the IUPAC name of the ester, and name the carboxylic acid and the alcohol used to make it.\" Beside it the skeletal formula in plain ink (no colours, no cut line, no ring). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no memory aid.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "three / butan-one-ol / butyl propanoate / different",
+      "motionPurpose": "On the spoken cues: On \"cut\" the cut line drops through the skeletal formula at the single-bonded oxygen; the acid side tints amber and the alcohol side pale blue. On \"three\" the acid-side carbons pop \"1, 2, 3\", \"carboxylic acid\" is underlined and the chip \"acid: propanoic acid\" lights. On \"butan-one-ol\" the four alcohol-side carbons pop \"1 to 4\", \"alcohol\" is underlined and the chip \"alcohol: butan-1-ol\" lights. On \"butyl propanoate\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"cut\" the cut line drops through the skeletal formula at the single-bonded oxygen; the acid side tints amber and the alcohol side pale blue. On \"three\" the acid-side carbons pop \"1, 2, 3\", \"carboxylic acid\" is underlined and the chip \"acid: propanoic acid\" lights. On \"butan-one-ol\" the four alcohol-side carbons pop \"1 to 4\", \"alcohol\" is underlined and the chip \"alcohol: butan-1-ol\" lights. On \"butyl propanoate\" \"IUPAC name of the ester\" is underlined and the builder writes \"butyl\" + \"propanoate\" (the answer, bright). On \"different\" a chip \"propyl butanoate\" fades in and is crossed (caption \"alcohol part first: butyl\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A student heats 0.50 mol of propanoic acid with 0.50 mol of methanol and a few drops of concentrated sulfuric acid under reflux.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A student heats point five zero",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student heats 0.50 mol of propanoic acid with 0.50 mol of methanol and a few drops of concentrated sulfuric acid under reflux. At equilibrium, 0.32 mol of methyl propanoate has formed. (a) Write a balanced equation for the reaction. (b) Suggest one change to the reactants that would give more than 0.32 mol of ester, and explain your answer using Le Chatelier's principle.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "equilibrium / excess / longer",
+      "motionPurpose": "On the spoken cues: On \"equilibrium\" \"balanced equation\" is underlined and the equation writes: \"CH₃CH₂COOH + CH₃OH ⇌ CH₃CH₂COOCH₃ + H₂O\", with \"conc. H₂SO₄\" in navy above the arrow (the answer, bright); \"a few drops of concentrated sulfuric acid\" is underlined. On \"excess\" \"one change to the reactants\" and \"0.50 mol of methanol\" are underlined; a chip \"use excess methanol\" lights; a navy \"shifts right →\" writes over the equation and a",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"equilibrium\" \"balanced equation\" is underlined and the equation writes: \"CH₃CH₂COOH + CH₃OH ⇌ CH₃CH₂COOCH₃ + H₂O\", with \"conc. H₂SO₄\" in navy above the arrow (the answer, bright); \"a few drops of concentrated sulfuric acid\" is underlined. On \"excess\" \"one change to the reactants\" and \"0.50 mol of methanol\" are underlined; a chip \"use excess methanol\" lights; a navy \"shifts right →\" writes over the equation and a small yield bar fills from 64% (grey ghost, \"0.32 of 0.50\") to a higher, unlabelled level (tag \"more than 0.32 mol\"), and \"0.32 mol of methyl propanoate\" is underlined; \"Le Chatelier's principle\" is underlined. On \"longer\" a chip \"Heat it for longer, so more ester forms.\" fades in and is crossed (caption \"at equilibrium, more time adds no ester\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: So an acid and an alcohol join and lose water, and the alcohol part is named first.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The two memory aid lines return small at the top. On \"Next\" `m7-reflux-apparatus-v1.png` and `m7-separating-funnel-clear-v1.png` appear small at the right, same height, and a chip \"Next: prepare a simple ester in a school laboratory\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The two memory aid lines return small at the top. On \"Next\" `m7-reflux-apparatus-v1.png` and `m7-separating-funnel-clear-v1.png` appear small at the right, same height, and a chip \"Next: prepare a simple ester in a school laboratory\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c10-learning-review.md",
+      "sha256": "21f7b425b46b3e382971ff7d121303d3da54a1cb7e7959d17b41c83a8e69c1d8"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c10-claude-science-check.md",
+      "sha256": "51a22f8368368ca9e3f9414180e7066699ff3434f321a4c7193943427f0e8ca0"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

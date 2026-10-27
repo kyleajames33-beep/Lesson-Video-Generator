@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c14/lesson.json",
+    "lessonSha256": "8796276faa072c1d1241cf13fc6538493aa228e782c8394d3892e6dd5d47f127"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c04a (the double bond's weaker second bond breaks and each carbon gains one new bond; addition: one product, nothing lost; chlorine green in the colour key); chem-m7-c03 (dispersion forces grow with contact; straight chains have more contact than branched ones, the spaghetti aid; double bonds and shapes); chem-m7-c08b and c03 (a polar bond gives dipole–dipole attraction); chem-m7-c01 and c04a (naming alkenes and haloalkanes; locants such as 1,1-); chem-m7-c13 (the reaction map, one mention). Not assumed: monomer, polymer, addition polymerisation, initiator, repeat unit, backbone, side group, thermoplastic, plasticiser, LDPE, HDPE, PVC, PS, PTFE.",
+    "startsWith": "Open the alkene double bond. The video opens: Ethene is a gas. Join thousands of ethene molecules end to end, and you get polyethylene, a solid tough enough for bags and milk bottles. Swap one hydrogen on each ethene for a chlorine, and you get the plastic in grey PVC water pipes.",
+    "stopsAfter": "explaining addition polymerisation; drawing a repeat unit with brackets, n and continuation bonds; recovering the monomer from a repeat unit; explaining why polyethylene is a solid and a thermoplastic; comparing LDPE and HDPE by branching; explaining the properties and uses of PVC, PS and PTFE from their side groups. No condensation polymers, no mechanisms, no environmental lifecycle.",
+    "nextLesson": "polymers that release a small molecule each time two monomers join (route chem-m7-c15, \"How does condensation build a polymer?\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c14.md"
+  ],
+  "teaching": {
+    "task": "Ethene is a gas, yet thousands of ethene molecules joined together make a solid plastic. How does an alkene become an addition polymer, and why do plastics from such similar monomers, like PE, PVC, PS and PTFE, behave so differently?",
+    "causalExplanation": "(1) a gas of two-carbon molecules becomes a solid plastic, and similar monomers give very different plastics (1); (2) the C=C's weaker second bond breaks, each carbon's spare bond joins the next monomer, again and again, and nothing else forms (2); (3) one repeat unit: single bond, continuation bonds, brackets, n; the double-bond carbons form the backbone and the rest hangs off (3); (4) backwards: restore the C=C, add no hydrogens (4); (5) very long chains lie alongside each other, so dispersion forces along the whole contact make a solid; no bonds join one chain to another; heat lets chains slide, so it softens and remoulds without breaking chain bonds (thermoplastic) (5); (6) branches stop packing, so less contact, weaker forces: LDPE soft and lower melting; straight chains pack: HDPE stiff and denser (6); (7) polar C–Cl adds dipole–dipole: rigid PVC; plasticisers push chains apart (7); (8) bulky, stiff rings catch on neighbouring chains and stop them sliding: rigid, brittle PS; gas-filled foam insulates (8); (9) strong C–F bonds and a fluorine sheath resist attack; the even sheath cancels the C–F pulls and tightly held electrons hardly shift, so only weak dispersion forces form at the surface and almost nothing sticks: PTFE (9); memory aid and comparison (10); two attempts and brief feedback (11 to 14); handoff (15); key notes (16).",
+    "conversationalApproach": "ethene is a gas, yet thousands of ethene molecules joined end to end make polyethylene, a solid tough enough for bags and bottles, and similar monomers give very different plastics, so the video asks how an alkene becomes an addition polymer and why PE, PVC, PS and PTFE behave so differently. A monomer joins up into a polymer: the C=C's weaker second bond breaks, each carbon's spare bond joins the next monomer, again and again, and nothing else is formed. The repeat unit is drawn once with the double bond as a single bond, continuation bonds through brackets and an n, and the monomer is found by going backwards. Polyethylene is solid because each huge chain lies alongside its neighbours for thousands of carbons, so the dispersion forces add up, and it softens on heating because no covalent bonds join the chains. LDPE's short branches keep chains apart, so it is soft and flexible, while HDPE's straight chains pack closely and make it stiff. In PVC the polar carbon-chlorine bond adds dipole attractions between chains, polystyrene's bulky rings stop chains sliding past each other so it is rigid, and in PTFE strong carbon-fluorine bonds and a fluorine sheath make it unreactive and non-stick. The memory aid is open the double bond, add brackets, nothing lost, and each property is traced back to the chains. Two exam questions follow with brief feedback.",
+    "openingDecision": "Ethene is a gas. Join thousands of ethene molecules end to end, and you get polyethylene, a solid tough enough for bags and milk bottles. Swap one hydrogen on each ethene for a chlorine, and you get the plastic in grey PVC water pipes. So how does an alkene turn into a solid like this, and why do plastics made from such similar molecules behave so differently?",
+    "understandingCheck": "(A1) \"(a) 1,1-Dichloroethene, CH₂=CCl₂, forms an addition polymer. Draw the repeat unit of this polymer. (b) Another addition polymer has the repeat unit shown. Name and draw its monomer.\" with the repeat unit [–CH₂–CH(CH₃)–]ₙ drawn in plain ink on the card. New monomer in (a) (scenes use chloroethene; both chlorines on one carbon tests \"everything else hangs off\"); (b) tests monomer recovery. Crossed mistake: \"monomer: CH₃–CH₂–CH₃\" (hydrogens added at the continuation bonds; site correction 1). (A2) \"High-density polyethylene (HDPE) is used for rigid chopping boards, and low-density polyethylene (LDPE) is used for soft squeeze bottles. Both are made from ethene. Explain how differences in chain structure lead to these different properties, and explain why both can be melted and remoulded for recycling.\" New context (site uses milk crates and cling film); tests branching, packing, contact, dispersion forces and thermoplastic behaviour. Crossed mistake: \"Melting breaks the covalent bonds in the chains.\" (pack trap: chain movement, not chain breaking).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"model and compare the structure, properties and uses of addition polymers of ethylene and related monomers, for example:; polyethylene (PE); polyvinyl chloride (PVC); polystyrene (PS); polytetrafluoroethylene (PTFE) (ACSCH136)\" This video covers how addition polymerisation opens the C=C bond, drawing a repeat unit from a monomer and a monomer from a repeat unit, why the chains form a solid that softens on heating (thermoplastic behaviour), and how branching (LDPE against HDPE) and side groups (PVC, PS, PTFE) set properties and uses. Condensation polymers are chem-m7-c15; the polymer practice video is chem-m7-g04 (route review change 4). this video starts by opening the alkene double bond, and stops at linking repeat-unit structure to properties and uses. It teaches: a monomer is a small molecule that joins into a long chain, the polymer (many parts); in addition polymerisation the weaker second bond of each C=C breaks (c04a), leaving each carbon one spare bond, which joins it to the next monomer; an initiator opens the first double bond and each new chain end opens the next (one sentence, no mechanism); nothing else forms, so every monomer atom ends up in the chain; the repeat unit: the monomer redrawn with a single bond, a continuation bond out of each backbone carbon, square brackets crossed by those bonds, and n outside; the two carbons from the double bond form the backbone and everything else hangs off as a side group; the equation n CH₂=CHCl → [–CH₂–CHCl–]ₙ; going backwards: take the two backbone carbons, remove the continuation bonds and restore the C=C, adding no hydrogens; the chains are very long and lie alongside each other, so dispersion forces acting along the whole contact hold them together and the polymer is a solid; heating lets the chains move and slide past each other, so the plastic softens and can be remoulded, and cooling restores the forces; the covalent bonds in the chains do not break; this is a thermoplastic, which is what makes melt recycling possible; no bonds join one chain to another, only these forces (Revision 2); LDPE and HDPE share the monomer and repeat unit but differ in branching (made under different conditions): branches stop chains packing closely, so less contact, weaker dispersion forces, lower density, softer, lower melting (about 110 °C; squeeze bottles, films); straight chains pack closely with neatly lined-up regions, so more contact, stronger forces, higher density, stiffer, higher melting (about 130 °C; crates, milk bottles); PVC: the polar C–Cl bond adds dipole–dipole attraction between chains, so plain PVC is rigid (pipes); plasticisers between the chains push them apart and make it flexible (cable coating); polystyrene: the bulky, stiff benzene ring on every second carbon catches on the rings of neighbouring chains, so at room temperature the chains can hardly slide, and it is rigid and brittle (Revision 2: the cause is restricted sliding, not poor packing, which scene 6 links to softness); blown with gas it becomes a light insulating foam (cups); PTFE: every H replaced by F; C–F bonds are among the strongest single bonds carbon forms and the F atoms wrap the backbone, so very few chemicals attack it (chemical resistance comes from these bonds, not from forces between chains); C–F bonds are polar, but the even fluorine coating makes their pulls largely cancel, and fluorine holds its electrons so tightly that they hardly shift, so other substances make only very weak dispersion forces with the surface (c03), so almost nothing sticks (non-stick pans, plumber's tape). Not here: condensation polymers, PET and nylon (chem-m7-c15; the PET bottle in the hook plate gets a grey forward tag); polymerisation conditions and the radical mechanism (initiation, propagation, termination by name; author note a); tacticity and crystallinity numbers (author note b); thermosets beyond one grey chip (site L23 extension; author note c); environmental persistence, microplastics, recycling codes and bioplastics (site L21 card 4 and L23, beyond the 2017 dotpoints; route review change 4; author note d); natural polymers and hydrolysis of biomolecules (site L23 card 8, not a 2017 Module 7 dotpoint; site correction 6); bond energy calculations; polypropylene and polyacrylonitrile as taught examples (propene appears only as attempt 1's monomer; author note e)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c04a and c03: carbon skeleton ink; hydrogens soft grey; the C=C teal, its second bond shown as a teal cloud when it opens; chlorine green; fluorine pale green-yellow; the benzene ring ink with a grey ring; brackets and n in navy; chains in the chain view pale blue; dispersion contact dotted pale blue; dipole–dipole dotted teal with δ+ and δ− small in navy; heat glow amber. Board layout (constant): top-left the short task chip (\"Monomer to polymer\", \"Draw it\", \"Backwards\", \"Why solid?\", \"LDPE or HDPE\", \"Side groups\"); centre the structure board or the chain view box, one model at a time; plates small or medium at the left or right only in scenes 1, 6 to 9, 14 and 15. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous model leaves before the next one draws. Reuse: painted plates (inspected 27 Oct): `m7-polymer-objects-v1.png` (2000 × 2000; a white plastic carry bag, a grey pipe with a coupling, a white foam cup, a clear blue-tinted drink bottle and a coil of cream rope; scenes 1 and 15, medium). Not used: `m6-foam-cup-calorimeter-v1.png` (a foam cup with a lid, thermometer and cutaway water; it reads as calorimetry apparatus, not a polystyrene object); `m6-household-cleaner-bottle-v1.png` (a spray bottle of unknown polymer). Five new plates (Assets). All plates scaled uniformly only, never stretched. No human figures.",
+    "transitionPlan": "Ethene draws small above the polymer objects plate as a chain grows end to end and a chloroethene chip swaps one hydrogen; the board clears to five ethene molecules in a row as each double bond opens and the spare bonds join into a chain with nothing given off; two chloroethene units draw joined and the bracket stamp marks one repeat unit with its continuation bonds and n; polystyrene's repeat unit runs backwards to its monomer as the brackets lift and the double bond returns; the chain view box fills with straight chains and dispersion lines, then warms as the chains slide; LDPE's branched chains and HDPE's packed chains sit side by side under one repeat unit chip with the bottle and crate plates; a PVC strip draws chlorine on every second carbon with dipole links and the pipe plate; a polystyrene strip draws rings that lock the chains beside the foam cup plate; tetrafluoroethene opens through the bracket stamp into a fluorine-sheathed chain beside the pan plate; the memory line writes over a comparison table; each attempt clears the board and its feedback underlines the card as the repeat unit or chain view draws and a crossed chip lands; the memory line, polymer objects plate and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Addition polymers: from alkene to plastic\".",
+      "teachingReason": "Hook (a gas becomes a solid): Ethene is a gas.",
+      "narrationCue": "polyethylene / pipes",
+      "motionPurpose": "On the spoken cues: Ethene, CH₂=CH₂, draws small at the left (teal C=C) with a grey tag \"a gas\". `m7-polymer-objects-v1.png` appears medium at the right. On \"polyethylene\" the bag is ringed (tag \"polyethylene\"). On \"pipes\" chloroethene, CH₂=CHCl, draws under ethene (green Cl) and the pipe is ringed (tag \"PVC\"). On \"behave so differently\" the foam cup is ringed (tag \"polystyrene foam\"). The grey tag on the bottle writes grey from the",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Addition polymers: from alkene to plastic\". Ethene, CH₂=CH₂, draws small at the left (teal C=C) with a grey tag \"a gas\". `m7-polymer-objects-v1.png` appears medium at the right. On \"polyethylene\" the bag is ringed (tag \"polyethylene\"). On \"pipes\" chloroethene, CH₂=CHCl, draws under ethene (green Cl) and the pipe is ringed (tag \"PVC\"). On \"behave so differently\" the foam cup is ringed (tag \"polystyrene foam\"). The grey tag on the bottle writes grey from the start and stays grey: \"PET bottle: a condensation polymer, next video\". Dimming order (Revision 2): \"a gas\" dims on \"polyethylene\"; the \"polyethylene\" tag dims on \"pipes\"; the \"PVC\" tag dims on \"behave so differently\". Bright at the end: the heading, the plate and the two monomers. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "open-double-bond",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Opening the double bond, again and again: A small molecule that joins up into a long chain is a monomer, and the chain is a polymer, meaning many parts.",
+      "narrationCue": "monomer / breaks / chain",
+      "motionPurpose": "On the spoken cues: Task chip \"Monomer to polymer\". Five ethene molecules sit in a row. On \"monomer\" one is ringed (tag \"monomer: a small molecule that joins up\"); a grey chip \"polymer: many parts\" writes. On \"breaks\" c04a's bond opener runs on the first molecule (grey chip \"c04a: the weaker second bond\"); its two stubs glow (tag \"one spare bond on each carbon\"); on \"chain behind\" the tag splits into \"← to the chain\" and \"to the next",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Monomer to polymer\". Five ethene molecules sit in a row. On \"monomer\" one is ringed (tag \"monomer: a small molecule that joins up\"); a grey chip \"polymer: many parts\" writes. On \"breaks\" c04a's bond opener runs on the first molecule (grey chip \"c04a: the weaker second bond\"); its two stubs glow (tag \"one spare bond on each carbon\"); on \"chain behind\" the tag splits into \"← to the chain\" and \"to the next monomer →\" on the two stubs (Revision 2). On \"initiator\" a small amber initiator dot touches the first molecule and the chain zipper runs: each spare bond reaches the next monomer, whose second bond opens in turn, accelerating left to right; the counter ticks \"monomers joined: 5 ... 1000s\" as the camera pulls back on a long zigzag. On \"chain\" a grey \"+ nothing else\" box appears beside the arrow (tag \"every atom ends up in the chain\"). Bright at the end: the long chain, the counter and the \"nothing else\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "draw-repeat-unit",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Drawing the repeat unit: You can't draw thousands of units, so you draw the part that repeats, once.",
+      "narrationCue": "repeats / PVC / side",
+      "motionPurpose": "On the spoken cues: Task chip \"Draw it\". On \"repeats\" two chloroethene units draw already joined, –CH₂–CHCl–CH₂–CHCl–, with continuation bonds at both ends (grey tag \"draw two first\"). On \"single bond\" the C=C of a separate chloroethene redraws as C–C, and two navy continuation bonds grow out of the carbons. On \"brackets\" the bracket stamp runs on one unit of the two-unit sketch: square brackets drop in, the continuation bonds poke",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Draw it\". On \"repeats\" two chloroethene units draw already joined, –CH₂–CHCl–CH₂–CHCl–, with continuation bonds at both ends (grey tag \"draw two first\"). On \"single bond\" the C=C of a separate chloroethene redraws as C–C, and two navy continuation bonds grow out of the carbons. On \"brackets\" the bracket stamp runs on one unit of the two-unit sketch: square brackets drop in, the continuation bonds poke through, and n writes outside; the second unit fades (tag \"repeat unit: brackets, n, bonds through\"). The equation writes under it: \"n CH₂=CHCl → [–CH₂–CHCl–]ₙ\". On \"PVC\" a tag \"poly(chloroethene): PVC\" writes, with a grey line under it \"PVC: polyvinyl chloride (vinyl chloride = chloroethene)\" (Revision 2). On \"side\" the two backbone carbons glow ink and the Cl glows green (tags \"backbone: the two C=C carbons\" and \"side group\"). A grey crossed chip \"C=C inside the brackets\" writes and dims. Bright at the end: the repeat unit, the equation and the \"side group\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "monomer-from-unit",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Going backwards: from repeat unit to monomer: To find the monomer from a repeat unit, go backwards.",
+      "narrationCue": "backwards / bonds / styrene",
+      "motionPurpose": "On the spoken cues: Task chip \"Backwards\". Polystyrene's repeat unit draws: [–CH₂–CH(C₆H₅)–]ₙ with the ring as a hexagon with a grey inner ring. On \"backwards\" the bracket unstamp runs: brackets and n lift off, the continuation bonds shrink into the carbons, and a teal second bond redraws between the backbone carbons. On \"Don't add hydrogens\" a ghost H drifts towards each backbone carbon and is crossed (tag \"no extra H\"). On \"bonds\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Backwards\". Polystyrene's repeat unit draws: [–CH₂–CH(C₆H₅)–]ₙ with the ring as a hexagon with a grey inner ring. On \"backwards\" the bracket unstamp runs: brackets and n lift off, the continuation bonds shrink into the carbons, and a teal second bond redraws between the backbone carbons. On \"Don't add hydrogens\" a ghost H drifts towards each backbone carbon and is crossed (tag \"no extra H\"). On \"bonds\" each backbone carbon's bonds tick \"1, 2, 3, 4\" in turn (tag \"four bonds each\"). On \"styrene\" the name writes, \"styrene (phenylethene), CH₂=CHC₆H₅\" (tag \"monomer\"). Bright at the end: styrene, the \"no extra H\" tag and the \"four bonds each\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "solid-thermoplastic",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Why a solid, and why it softens: So why is polyethylene a solid, when ethene is a gas?",
+      "narrationCue": "contact / slide / thermoplastic",
+      "motionPurpose": "On the spoken cues: Task chip \"Why solid?\". The chain view box fills with about 30 straight pale-blue strands. On \"contact\" faint dotted pale-blue ticks light where strands touch, thousands along each pair; the contact counter climbs (grey chip \"c03: more contact, stronger dispersion\"; tag \"many small forces add up\"). On \"No bonds join\" a grey dashed link between two strands draws and is crossed (tag \"no bonds between chains\"); the c03",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Why solid?\". The chain view box fills with about 30 straight pale-blue strands. On \"contact\" faint dotted pale-blue ticks light where strands touch, thousands along each pair; the contact counter climbs (grey chip \"c03: more contact, stronger dispersion\"; tag \"many small forces add up\"). On \"No bonds join\" a grey dashed link between two strands draws and is crossed (tag \"no bonds between chains\"); the c03 chip dims. On \"slide\" the warm slide runs: an amber glow under the box, strands jiggle and slide past each other, each strand's own line staying unbroken (tag \"chain bonds intact\"); on \"Cool it\" the glow fades and the ticks return. On \"thermoplastic\" a tag \"thermoplastic: softens on heating, again and again\" writes, and a small grey chip, not narrated, writes and dims: \"chains joined by covalent cross-links don't soften like this (thermosets)\"; its referent is the crossed link drawn earlier in the scene. Bright at the end: the chain box, the \"chain bonds intact\" tag and the \"thermoplastic\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ldpe-hdpe",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "LDPE and HDPE: branches decide: Polyethylene comes in two main forms, made under different conditions.",
+      "narrationCue": "branches / straight / bottles",
+      "motionPurpose": "On the spoken cues: Task chip \"LDPE or HDPE\". A grey chip: \"same monomer, same repeat unit [–CH₂–CH₂–]ₙ\". The chain view box sits at the centre. On \"branches\" the branch toggle runs: strands sprout short side branches, the box spreads, the contact ticks thin out (tag \"branches: less contact, weaker forces\"); the new `m7-ldpe-squeeze-bottle-v1.png` appears small at the left (tag \"LDPE: soft, about 110 °C\"); a grey tag \"about 0.91 to",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"LDPE or HDPE\". A grey chip: \"same monomer, same repeat unit [–CH₂–CH₂–]ₙ\". The chain view box sits at the centre. On \"branches\" the branch toggle runs: strands sprout short side branches, the box spreads, the contact ticks thin out (tag \"branches: less contact, weaker forces\"); the new `m7-ldpe-squeeze-bottle-v1.png` appears small at the left (tag \"LDPE: soft, about 110 °C\"); a grey tag \"about 0.91 to 0.94 g/cm³; varies by grade\" writes and dims. On \"straight\" the toggle runs back: straight strands line up in neat parallel regions, the ticks thicken (tag \"straight chains pack: more contact\"); the LDPE plate and tag dim, and the new `m7-hdpe-crate-v1.png` appears small at the right (tag \"HDPE: stiff, about 130 °C\"); a grey tag \"about 0.94 to 0.97 g/cm³\" writes and dims. On \"bottles\" a small grey handwritten chip \"c03: straight chains lie close; branches get in the way\" writes (Revision 2: no \"balls\", because an LDPE chain is a long strand with short branches, not a ball). Dimming order (Revision 2): the \"same monomer\" chip dims on \"branches\"; the LDPE plate and its tags dim on \"straight\". Bright at the end: the straight-chain box, the HDPE plate and its tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "pvc",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "PVC: a polar side group: Now change the monomer.",
+      "narrationCue": "polar / pipes / apart",
+      "motionPurpose": "On the spoken cues: Task chip \"Side groups\". A short strip of PVC chain draws with green Cl on every second carbon. On \"polar\" each C–Cl gains δ+ and δ− (grey chip \"c08b: polar bond, dipole–dipole\"). The view zooms out to the chain box and the side-group swap runs: green Cl dots appear along the strands with dotted teal dipole–dipole lines to the next strand (tag \"dispersion + dipole–dipole: grips harder\"). On \"pipes\" the new",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Side groups\". A short strip of PVC chain draws with green Cl on every second carbon. On \"polar\" each C–Cl gains δ+ and δ− (grey chip \"c08b: polar bond, dipole–dipole\"). The view zooms out to the chain box and the side-group swap runs: green Cl dots appear along the strands with dotted teal dipole–dipole lines to the next strand (tag \"dispersion + dipole–dipole: grips harder\"). On \"pipes\" the new `m7-pvc-pipe-v1.png` appears small at the right (tag \"rigid PVC: pipes\"). On \"apart\" grey plasticiser beads slide in between strands and the strands drift apart; the teal lines stretch and thin (tag \"plasticiser: chains pushed apart, flexible\"); a grey chip \"flexible PVC: cable coating\" writes. Bright at the end: the plasticised box, the pipe plate and the \"plasticiser\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "polystyrene",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Polystyrene: a bulky side group: Polystyrene has a bulky benzene ring on every second carbon.",
+      "narrationCue": "slide / foam",
+      "motionPurpose": "On the spoken cues: A short strip of polystyrene chain draws with a hexagon ring on every second carbon. On \"like LDPE's branches\" a small grey thumbnail of scene 6's branched box appears (tag \"LDPE: short, floppy branches\") and dims. On \"slide\" the side-group swap runs in the chain box: large hexagons sit between strands, which lie at awkward angles; a strand tries to slide and its rings catch on the next strand's rings (tag \"rings",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A short strip of polystyrene chain draws with a hexagon ring on every second carbon. On \"like LDPE's branches\" a small grey thumbnail of scene 6's branched box appears (tag \"LDPE: short, floppy branches\") and dims. On \"slide\" the side-group swap runs in the chain box: large hexagons sit between strands, which lie at awkward angles; a strand tries to slide and its rings catch on the next strand's rings (tag \"rings catch: chains hardly slide\"). A quiet grey tag \"rigid, clear, brittle\" writes and dims. On \"foam\" the new `m7-ps-foam-cup-v1.png` appears small at the right (tag \"expanded polystyrene: trapped air insulates\"). Bright at the end: the ring-jammed box, the foam cup plate and its tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "ptfe",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "PTFE: a fluorine sheath: Finally, swap every hydrogen in ethene for fluorine, and polymerise tetrafluoroethene.",
+      "narrationCue": "PTFE / attack / polar / cancel / hardly shift / sticks",
+      "motionPurpose": "On the spoken cues: Tetrafluoroethene, CF₂=CF₂, draws (pale green-yellow F) and the bracket stamp runs on its polymer: \"n CF₂=CF₂ → [–CF₂–CF₂–]ₙ\". On \"PTFE\" the tag \"poly(tetrafluoroethene): PTFE\" writes. On \"attack\" the side-group swap gives one strand a full fluorine sheath of overlapping F balls; small grey reagent dots bounce off (tag \"strong C–F bonds, F sheath: resists attack\"); a grey chip \"C–F ≈ 485 kJ/mol; C–H ≈ 413 kJ/mol\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Tetrafluoroethene, CF₂=CF₂, draws (pale green-yellow F) and the bracket stamp runs on its polymer: \"n CF₂=CF₂ → [–CF₂–CF₂–]ₙ\". On \"PTFE\" the tag \"poly(tetrafluoroethene): PTFE\" writes. On \"attack\" the side-group swap gives one strand a full fluorine sheath of overlapping F balls; small grey reagent dots bounce off (tag \"strong C–F bonds, F sheath: resists attack\"); a grey chip \"C–F ≈ 485 kJ/mol; C–H ≈ 413 kJ/mol\" writes and dims. On \"polar\" each C–F shows δ+ and δ− briefly; the PTFE tag and the bond chip dim. On \"cancel\" the dipole arrows on opposite C–F bonds point outwards in pairs and fade together (tag \"even sheath: pulls cancel\"). On \"hardly shift\" the δ labels dim and a grey chip \"c03: dispersion needs electrons that shift\" writes and dims (tag \"electrons held tightly\"). On \"sticks\" the \"pulls cancel\" and \"electrons held tightly\" tags dim, and a coded water drop sits on the sheath with only one or two faint dispersion ticks and slides off (tag \"only very weak forces: non-stick\"). The new `m7-ptfe-pan-v1.png` appears small at the right; after the non-stick tag dims, a grey tag \"used up to about 260 °C; melts at about 327 °C\" writes and dims (Revision 2 dimming order). No visual shows PTFE being remelted or moulded (science S8). Bright at the end: the sheathed strand, the pan plate and the \"non-stick\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid and the comparison: So, to draw an addition polymer, open the double bond and add brackets, and remember, nothing is lost.",
+      "narrationCue": "brackets / use / bonds",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"Open the double bond, add brackets. Nothing lost.\" A comparison board (rebuilt in Revision 2) writes one row at a time on \"trace it back\", each row lighting and the previous dimming. Each row is a small chain-view thumbnail from its scene, then one short cell: branched strands with thin contact ticks, \"LDPE: soft → squeeze bottles\"; straight packed strands with thick ticks, \"HDPE: stiff → crates,",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Open the double bond, add brackets. Nothing lost.\" A comparison board (rebuilt in Revision 2) writes one row at a time on \"trace it back\", each row lighting and the previous dimming. Each row is a small chain-view thumbnail from its scene, then one short cell: branched strands with thin contact ticks, \"LDPE: soft → squeeze bottles\"; straight packed strands with thick ticks, \"HDPE: stiff → crates, milk bottles\"; strands with green Cl and teal dipole–dipole lines, \"PVC: rigid → pipes\"; ring-jammed strands, \"PS: rigid; foam → cups\"; the fluorine-sheathed strand, \"PTFE: inert, non-stick → pans\". At most one row's cell is bright at a time. On \"use\" a header arrow writes across the board: \"structure → forces → property → use\". On \"bonds\" the PTFE row relights and a small tag writes beside its cell: \"inert: strong C–F bonds, not forces between chains\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. 1,1-dichloroethene forms an addition polymer. Draw",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"(a) 1,1-Dichloroethene, CH₂=CCl₂, forms an addition polymer. Draw the repeat unit of this polymer. (b) Another addition polymer has the repeat unit shown. Name and draw its monomer.\" Beside (b) the repeat unit [–CH₂–CH(CH₃)–]ₙ in plain ink. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no comparison board, no memory aid.",
+      "motionTools": [
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "brackets / propene / trap",
+      "motionPurpose": "On the spoken cues: On \"brackets\" \"CH₂=CCl₂\" and \"repeat unit\" are underlined and the answer draws: [–CH₂–CCl₂–]ₙ with both green Cl on one carbon, bonds through the brackets and n (the answer, bright). On \"propene\" \"the repeat unit shown\" and \"Name and draw its monomer\" are underlined; the bracket unstamp runs on [–CH₂–CH(CH₃)–]ₙ, giving \"propene, CH₂=CH–CH₃\" (the answer, bright). On \"trap\" a chip \"monomer: CH₃–CH₂–CH₃\" fades in and",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"brackets\" \"CH₂=CCl₂\" and \"repeat unit\" are underlined and the answer draws: [–CH₂–CCl₂–]ₙ with both green Cl on one carbon, bonds through the brackets and n (the answer, bright). On \"propene\" \"the repeat unit shown\" and \"Name and draw its monomer\" are underlined; the bracket unstamp runs on [–CH₂–CH(CH₃)–]ₙ, giving \"propene, CH₂=CH–CH₃\" (the answer, bright). On \"trap\" a chip \"monomer: CH₃–CH₂–CH₃\" fades in and is crossed (caption \"no extra H: restore the C=C\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"High-density polyethylene (HDPE) is used for rigid chopping boards, and low-density polyethylene (LDPE) is used for soft squeeze bottles.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. HDPE is used for rigid chopping",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"High-density polyethylene (HDPE) is used for rigid chopping boards, and low-density polyethylene (LDPE) is used for soft squeeze bottles. Both are made from ethene. Explain how differences in chain structure lead to these different properties, and explain why both can be melted and remoulded for recycling.\" No plates, no chain views. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "straight / slide / trap",
+      "motionPurpose": "On the spoken cues: On \"straight\" \"rigid chopping boards\", \"soft squeeze bottles\" and \"chain structure\" are underlined; the chain box shows straight packed strands with thick contact ticks (tag \"straight: packed, stronger dispersion\"), then the branch toggle shows LDPE's spread strands (tag \"branched: weaker\"); small copies of `m7-hdpe-crate-v1.png` and `m7-ldpe-squeeze-bottle-v1.png` sit under their tags. On \"slide\" \"melted and",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"straight\" \"rigid chopping boards\", \"soft squeeze bottles\" and \"chain structure\" are underlined; the chain box shows straight packed strands with thick contact ticks (tag \"straight: packed, stronger dispersion\"), then the branch toggle shows LDPE's spread strands (tag \"branched: weaker\"); small copies of `m7-hdpe-crate-v1.png` and `m7-ldpe-squeeze-bottle-v1.png` sit under their tags. On \"slide\" \"melted and remoulded\" is underlined and the warm slide runs once (tag \"chains slide; chain bonds intact\"). On \"trap\" a chip \"Melting breaks the covalent bonds in the chains.\" fades in and is crossed (caption \"only the forces between chains are overcome\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: Next: polymers that give something off, usually water, every time two monomers join.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The memory aid line returns small at the top. `m7-polymer-objects-v1.png` returns small at the centre with only the bottle ringed. On \"Next\" a chip \"Next: how does condensation build a polymer?\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The memory aid line returns small at the top. `m7-polymer-objects-v1.png` returns small at the centre with only the bottle ringed. On \"Next\" a chip \"Next: how does condensation build a polymer?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c14-learning-review.md",
+      "sha256": "c3fef4f4b9275e6422990e3e8af39c953d52b96d2f05feb1a46a6a4498b6ceb3"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c14-claude-science-check.md",
+      "sha256": "b5f0310eea43016b5158a9be4eaf8a01e1e92e2f060c06b1771a2dc423d8be08"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

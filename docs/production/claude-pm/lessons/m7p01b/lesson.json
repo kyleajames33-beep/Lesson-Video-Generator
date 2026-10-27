@@ -1,0 +1,160 @@
+{
+  "title": "Model an epidemic in class: who started it, how fast did it spread, and what can a simulation really show?",
+  "subtitle": "Eight students share liquid from cup to cup, three times. One cup was secretly \"infected\". At the end, every cup turns pink. Who started it? How do you design a safe classroom model of an epidemic that can trace the source, and what can it really tell you about how a disease spreads?",
+  "subject": "Biology",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 4,
+  "lessonIntent": "explaining what a model is and what each part of the fluid-exchange simulation stands for; defining an epidemic (cases above what's expected); explaining why the marker must be hidden until tested and how phenolphthalein shows the base; describing the method (equal volumes, a secret starter, new partners each round, pour all then half back, a sample saved before round one and after every round, a recorded contact sheet) and its aim and variables (contacts change; pink cups and samples are measured; volumes, pours and drops are kept the same); explaining the negative and positive controls, accuracy (the traced starter against the teacher's record) and reliability (repeat runs with a new starter); explaining why the final test cannot identify the starter; tracing the starter from saved samples and contacts, and explaining that real teams, with no start sample, use when symptoms began and contact tracing; defining an epidemic curve, plotting new cases by round, and explaining that the number infected doubled because each pink cup met a clear one (person-to-person spread), against the single peak of one shared source; describing a fluorescent powder model of indirect contact through a fomite; stating the model's limits (every contact transmits, the marker dilutes rather than multiplies, no delay before someone can pass it on, no recovery or immunity, scheduled equal contacts) and what it is valid for; writing the risk assessment; identifying possible starters from new data and assessing a claim about real spread.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Eight students each hold a cup of clear liquid. One cup is secretly different. They share liquid with a partner, three times. Then a drop of indicator goes into every cup, and all eight turn pink. So who started it? From the final colours alone, you can't tell. Let's design the model so that you can, and see what it really shows about an epidemic."
+      }
+    },
+    {
+      "id": "the-model",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "An epidemic is a rise in cases above what's expected in a population. This is a model of one: a simplified version of something real. Each cup is a person. Mixing liquid with a partner is a contact, like direct contact. The secret cup holds a dilute base, sodium carbonate solution, which stands for a pathogen. And the indicator is the test."
+      }
+    },
+    {
+      "id": "the-marker",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The marker has to stay invisible until you test, so nobody knows who's infected while they mix. Phenolphthalein is an indicator, a chemical that changes colour. It stays colourless in water, but turns pink in a solution that's basic enough. So a cup that's received enough base turns pink, and a cup that hasn't stays clear."
+      }
+    },
+    {
+      "id": "method",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Everyone starts with ten millilitres in a numbered cup, and your teacher secretly makes one cup the starter. Each round, find a new partner. One of you pours all your liquid into the other's cup, then pours half back. Before round one, and after every round, put three drops from your cup into your own column of a well plate. And record each partner on the class contact sheet. Keep volumes, pours and drops the same, so only the contacts decide who turns pink."
+      }
+    },
+    {
+      "id": "controls-repeats",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "You need two controls. The negative control is a cup of the same water that nobody mixes. With indicator it should stay clear, which shows the water and cups weren't already basic. The positive control is a cup of the base, which should turn pink, showing the indicator works. The teacher's secret record checks your tracing is accurate. Then repeat with a new starter: if it finds the source every time, it's reliable."
+      }
+    },
+    {
+      "id": "test-cups",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "After round three, your teacher adds a drop of indicator to every cup. All eight turn pink. The final test shows who's infected now, but not who was first, or when anyone caught it. That's why the saved samples matter."
+      }
+    },
+    {
+      "id": "trace-source",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the teacher adds indicator to the well plate. Read it row by row. At the start, only D is pink, so D was the starter. After round one, C is pink too, and the contact sheet shows C mixed with D. Without the start row, you couldn't tell C from D. After round two, A and G join them, partners of C and D. Real outbreaks have no start sample, so health teams use when symptoms began, and who each case met, called contact tracing."
+      }
+    },
+    {
+      "id": "epidemic-curve",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now count the new cases each round: one at the start, one after round one, two after round two, four after round three. Plotted against time as a bar graph, that's an epidemic curve: new cases against time. Here every infected cup met a clear one, so the number infected doubled each round: one, two, four, eight. That growing shape is typical of person-to-person spread. If all eight cups had been filled from one contaminated jug, they'd all turn pink at once: one sharp peak."
+      }
+    },
+    {
+      "id": "indirect-contact",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "You can model indirect contact too. Dab a little fluorescent powder on a door handle, a shared object or fomite. After a lesson, shine an ultraviolet torch around the room. Glowing specks show where the powder travelled: other handles, desks and pens. Vectors are harder to model safely, so use secondary data for them."
+      }
+    },
+    {
+      "id": "model-limits",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the limits. In the model, every contact passes it on, but real contacts don't always transmit. Real pathogens multiply inside a host, but here the base gets more dilute with each pour, so after many rounds the pink could fade and miss a case. There's no delay before someone can pass it on, no recovery and no immunity, and everyone meets exactly one person per round. So the model is valid for showing how contacts link cases, not for predicting how fast a real disease spreads."
+      }
+    },
+    {
+      "id": "risk-assessment",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The risk assessment. Sodium carbonate solution can irritate eyes, and phenolphthalein indicator is flammable and may cause cancer. So wear safety glasses, let your teacher add the indicator, and keep flames away. Never taste or drink anything: these are lab cups. Don't shine the ultraviolet torch at anyone's eyes. Wipe up spills, wash your hands, and dispose of liquids as your teacher directs."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Six students ran the model for two rounds. In round one, P mixed with Q, R with S, and T with U. In round two, P mixed with R, Q with T, and S with U. At the end, P, Q, R and T were pink. Identify which student or students could have been the starter, and justify your answer. Then propose one change to the method that would identify the starter. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Only P or Q fits. If P started, Q catches it in round one, then P passes it to R, and Q to T, while S and U stay clear. Starting with Q gives the same result. R or T would have infected S or U. You can't tell P from Q, because they mixed first, so test a sample saved before round one. Saying P, because P is listed first, is the classic mistake."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A class of eight ran the model for three rounds, and all eight cups turned pink. A student wrote, \"The model shows that a real disease would infect everyone in a class within three rounds of contact.\" Assess this claim. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The claim overreaches. In the model, every contact transmits, so cases climb fast. Real contacts don't always pass on a pathogen, some people are immune, and there's a delay before people can spread it, so real spread depends on the disease and the group. The model does show how fast linked contacts can multiply. Calling it useless because it uses chemicals, not germs, is the classic mistake."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So: a hidden marker, both controls, recorded contacts, a sample saved every round, and repeat runs. The last test shows who, the saved samples show when, and the contacts show how. Claim only what the model can show. Next: testing a water or food sample for microbes."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

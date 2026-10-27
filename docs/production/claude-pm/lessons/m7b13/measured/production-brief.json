@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7b13/measured/lesson.json",
+    "lessonSha256": "08ae33ea54ada3c9ab6b2dbae5ff3f6f93050123b999d646efd39040928ecbd6"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b03: a vector is a living carrier; dengue and malaria are vector-borne. From b09: immunity depends on memory cells specific to one antigen. From b10: herd immunity (\"when enough people are immune, an infected person meets too few people who can catch it\"). From b12: the Aedes aegypti container life cycle; eggs hatch after rain; adults in about a week; the virus multiplies in the mosquito for about 8 to 12 days; Wolbachia greatly reduces dengue transmission by Aedes, spreads by itself and keeps working after releases; Townsville's local cases in 2024 to 2025. From Year 11: reading a line graph and a percentage. Not assumed: incidence, prevalence, rate per 100,000, seroprevalence, serotypes, serotype-specific immunity, randomised trial design.",
+    "startsWith": "Read incidence and prevalence data for a named disease. The video opens: In 2021, a trial in Yogyakarta, Indonesia, reported seventy-seven per cent fewer dengue cases where Wolbachia mosquitoes had been released.",
+    "stopsAfter": "naming dengue (caused by a virus with four serotypes, spread mainly by *Aedes aegypti*, which breeds in containers) as the named disease, with malaria (caused by *Plasmodium*, a protozoan parasite, spread by *Anopheles*) as the alternative; defining incidence (new cases in a set time per number of people) and prevalence (the share of a population that has a disease at one time), and explaining why dengue's prevalence stays low while past infection, a separate measure from antibodies (seroprevalence), is high (about seven in ten urban Indonesian children in 2014); comparing places by rate per 100,000 (cases divided by population, times 100,000), not by counts; reading a seasonal incidence graph and explaining the lag after the rains (breeding, then the virus's time in the mosquito); explaining why serotype-specific immunity lets outbreaks happen in mostly immune cities and why second infections can be more severe and why a vaccine must cover all four serotypes; explaining how mobility carries serotypes between cities and starts north Queensland outbreaks; analysing transmission as four conditions that must all be met (virus, *Aedes*, warmth and water for breeding, non-immune people in contact; cut one far enough and spread stops) and the social causes that shape them (water storage, crowded growing cities, funding and community support); interpreting the Yogyakarta randomised trial (about 2 in 100 against about 9 in 100 febrile clinic patients with dengue; 77 per cent lower) and the Cairns comparison over time (about 96 per cent lower), and judging which is stronger evidence (Cairns had no untreated areas compared at the same time); combining biological and social causes to explain why dengue control is still limited.",
+    "nextLesson": "practise reading outbreak data and choosing controls (route entry bio-m7-g01)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-b13.md"
+  ],
+  "teaching": {
+    "task": "A randomised trial in Yogyakarta found about 77 per cent fewer dengue cases where Wolbachia mosquitoes were released, yet 2024 set a record for dengue cases reported to WHO. What limits dengue control, and how do incidence and prevalence data show it?",
+    "causalExplanation": "Causes: why prevalence of current dengue is low but past infection high (short illness, no drain for past infection; 3, 4); why rates beat counts (population size; 4); why the peak trails the rain (breeding time plus the virus's time in the mosquito; 5); why a mostly immune city still has outbreaks (serotype-specific immunity; 6); why second infections can be worse and vaccines hard (6); how outbreaks start in Australia (travellers; 7); why removing one condition stops spread, and how social causes feed each condition (8); why a randomised trial is stronger than before-and-after (9); why control is still limited (10). Visible case: the same four-conditions bar gains causes and breaks; the same map carries the trial, travel and Cairns. Thinking opportunities: two unseen items. Reading load: at most about three bright text items; scenes 9 (two studies) and 10 (two columns) are the densest, so items dim as the next writes.",
+    "conversationalApproach": "In 2021 a randomised trial in Yogyakarta reported about 77 per cent fewer dengue cases where Wolbachia mosquitoes had been released, yet 2024 set a record for dengue cases reported worldwide, so the question is what limits malaria or dengue control, using dengue in South East Asia as the named disease. Dengue is a virus spread mainly by Aedes aegypti mosquitoes breeding in water containers, with four serotypes. Incidence is new cases in a set time for a set number of people, and prevalence is the share of a population that has the disease at a time; because dengue illness lasts about a week, prevalence stays low even in a big outbreak, while past infection is measured separately by antibody surveys, and comparisons use rates per 100,000 people. One city's weekly incidence stays low in the dry months and climbs after the wet season starts. Immunity covers only the serotype that caused it, so herd immunity against one serotype does not stop a new one, and mobility carries the virus between cities within a day. Dengue spreads when the virus, Aedes mosquitoes, warmth and water, and non-immune people meet, and people shape each condition. The Yogyakarta cluster trial is strong evidence, but releases take years, money and residents' consent, so control stays limited. The memory aid is incidence is the tap, prevalence is the tank. Two exam questions follow with brief feedback.",
+    "openingDecision": "In 2021, a trial in Yogyakarta, Indonesia, reported seventy-seven per cent fewer dengue cases where Wolbachia mosquitoes had been released. Yet in 2024, countries reported more dengue than ever recorded, over fourteen million cases. So if one method works that well, what limits dengue control?",
+    "understandingCheck": "12a is an interpret item with counts and populations (incidence per 100,000; the route start). 12c is an explain item with serosurvey and mobility data (the portion immune and mobility, the syllabus's own example). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the question strip as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B7-IQ4-01 (p 55): \"investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease\" (named disease: dengue; local scale: breeding containers and household water storage, scene 8; regional: serotypes moving between South East Asian cities and into north Queensland, scenes 6 and 7; global: the 2024 record and climate, scenes 1 and 10; interrelated: the four conditions and the social causes shaping each, scene 8). B7-IQ4-05 (p 55): \"interpret data relating to the incidence and prevalence of infectious disease in populations, for example:\" with the listed examples \"mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)\" (scenes 6 and 7, attempt 2) and \"Malaria or Dengue Fever in South East Asia\" (dengue in Indonesia carries the whole video). Verb \"investigate and analyse\": scene 8 relates factors to each other, scene 10 combines them. Verb \"interpret\": scenes 4, 5 and 9 read real and teaching data; both attempts are data items."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One four-conditions bar across the top from scene 2: four linked slots, \"virus\", \"Aedes\", \"warmth and water\", \"people not immune\", each with a small plate or coded glyph; slots light or break as scenes refer to them, and scene 8 adds a social cause under each. Below it, the data panel at the right half shows one dataset at a time (the tank, the rate bars, the weekly graph, the serotype grid, the trial grid). A coded map of South East Asia and northern Australia (outline only, no labels except the named places) sits at the left in scenes 1, 2, 7 and 9, with dots for Yogyakarta, Cairns and Townsville. People are never drawn: populations are coded dot grids (plain circles), coloured by serotype immunity in scene 6. The dengue virus is the new painted `m7-dengue-virus-v1.png`, its four serotypes shown as four colour rings on the same plate (one plate, four tints applied in code as outline rings, never recolouring the painting). No people, hands or faces: no patients, clinicians, families, travellers or crowds; travel is a coded arc between map dots; the clinic is a coded building outline. Scale: the virus, the mosquito, the jar and the Wolbachia cell are never shown at one scale; each has a grey label, and the virus carries \"drawn far larger than real (about 50 nanometres)\". Clutter rule (owner, 19 Oct): at most about three bright text items at once besides small grey labels; earlier chips dim to grey. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "A coded SeaMap of South East Asia draws as a Yogyakarta marker and a record-year chip write on either side; the map shrinks as the dengue virus plate and the Aedes plate appear with a container and four serotype chips; the data panel opens with the incidence and prevalence glosses and a coded tank fills from its tap and drains from its outflow; the outflow widens and the level stays low as a survey bar and a per 100,000 fraction write; the coded lineGraph plots one city's weekly incidence with the wet season band; a 10 by 10 dot grid fills for one serotype's immunity while a new serotype passes through; the SeaMap returns large as travel arrows link the cities; the four-conditions bar fills its slots with linked rings and people chips under each; the ClusterGrid draws 24 areas with release squares shaded and the case bars compared; two columns write the social and biological limits under the conditions bar; the memory lines write with the tank thumbnail; each attempt clears the board and its feedback underlines the card as rate rows or the serotype grid fill and a crossed chip lands; the step chips and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. Left: the coded `SeaMap` draws (outline of mainland South East Asia, Indonesia and northern Australia); on \"Yogyakarta, Indonesia\" a dot pulses on Java with the label \"Yogyakarta\".",
+      "teachingReason": "Hook (a method that works, a record year): In 2021, a trial in Yogyakarta, Indonesia, reported seventy-seven per cent fewer dengue cases where Wolbachia mosquitoes had been released.",
+      "narrationCue": "Yogyakarta, Indonesia / Wolbachia mosquitoes / seventy-seven per cent fewer / had been released / Yet in 2024 / over fourteen million",
+      "motionPurpose": "On the spoken cues: On \"Wolbachia mosquitoes\" `m6-aedes-mosquito-v1.png` appears small beside the dot with a teal dot on its body (grey tag \"b12: Wolbachia greatly reduces dengue spread by *Aedes*\"; a small `m7-wolbachia-cell-v1.png` thumbnail). On \"seventy-seven per cent fewer\" a bright chip writes: \"77% fewer dengue",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Left: the coded `SeaMap` draws (outline of mainland South East Asia, Indonesia and northern Australia); on \"Yogyakarta, Indonesia\" a dot pulses on Java with the label \"Yogyakarta\". On \"Wolbachia mosquitoes\" `m6-aedes-mosquito-v1.png` appears small beside the dot with a teal dot on its body (grey tag \"b12: Wolbachia greatly reduces dengue spread by *Aedes*\"; a small `m7-wolbachia-cell-v1.png` thumbnail). On \"seventy-seven per cent fewer\" a bright chip writes: \"77% fewer dengue cases\" (grey source tag \"Utarini et al., NEJM 2021\"). On \"had been released\" b12's teal `PopulationRow` thumbnail slides in under the mosquito and fades (the one-line b12 recall is now this tag and thumbnail only). On \"Yet in 2024\" the map zooms out to a coded world outline and the chip dims; a coded bar for 2024 rises to about twice the 2023 bar, with faint bars for 2019 to 2022 (bars to scale from WHO reports, Codex to supply the 2019 to 2023 totals; grey axis \"dengue cases reported to WHO\"; grey tag \"previous record: 2023\"); on \"over fourteen million\" the bar's label writes: \"2024: over 14 million reported cases, the highest on record\" (grey source tag \"WHO, 2024 update\"; grey tag \"most 2024 cases were in the Americas\"). On the question the heading writes on: \"What limits malaria or dengue control?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "Cam lens zoom",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "named-disease",
+      "visualDecision": "adjust",
+      "visualReference": "the map shrinks to the left third.",
+      "teachingReason": "The named disease: Our named disease is dengue in South East Asia.",
+      "narrationCue": "serotypes",
+      "motionPurpose": "On the spoken cues: On \"dengue\" the new `m7-dengue-virus-v1.png` appears (grey tag \"dengue virus, drawn far larger than real (about 50 nanometres)\"); on \"Aedes aegypti\" `m6-aedes-mosquito-v1.png` beside it; on \"water containers\" `m7-aedes-container-flooded-v1.png` small (grey tag \"b12: breeds in containers\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "the map shrinks to the left third. On \"dengue\" the new `m7-dengue-virus-v1.png` appears (grey tag \"dengue virus, drawn far larger than real (about 50 nanometres)\"); on \"Aedes aegypti\" `m6-aedes-mosquito-v1.png` beside it; on \"water containers\" `m7-aedes-container-flooded-v1.png` small (grey tag \"b12: breeds in containers\"). On \"Malaria is the other choice\" a small grey side panel writes: `m7-plasmodium-red-cell-v1.png` and `m5x-anopheles-mosquito-v1.png` thumbnails with the tag \"malaria: *Plasmodium* (a protozoan), *Anopheles*\"; a grey chip \"malaria and dengue are the same disease\" takes a grey scribble cross (small reason \"different pathogen, different mosquito\"). The panel dims. On \"four serotypes\" four coded colour rings (amber, teal, violet, rose) draw round four small copies of the virus plate, labelled \"DENV-1\" to \"DENV-4\" in grey; gloss \"serotype: a type of the virus the immune system treats as different\". On \"treats as different\" the **four-conditions bar** draws across the top with only its first slot filled: \"virus\" (the virus thumbnail with four rings); the other three slots are empty outlines. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "incidence-prevalence",
+      "visualDecision": "new",
+      "visualReference": "the data panel opens at the right.",
+      "teachingReason": "Incidence and prevalence: Incidence is the number of new cases in a set time, for a set number of people, like cases per hundred thousand people per year.",
+      "narrationCue": "Incidence / Prevalence",
+      "motionPurpose": "On the spoken cues: On \"Incidence\" a gloss writes: \"incidence: new cases in a set time, per set number of people\"; under it a grey example \"e.g. 600 new cases per 100,000 people per year\". On \"Prevalence\" a second gloss: \"prevalence: share of a population with the disease at one time\"; grey example \"e.g. 2 in 1,000",
+      "motionRole": "explain",
+      "onScreenChange": "the data panel opens at the right. On \"Incidence\" a gloss writes: \"incidence: new cases in a set time, per set number of people\"; under it a grey example \"e.g. 600 new cases per 100,000 people per year\". On \"Prevalence\" a second gloss: \"prevalence: share of a population with the disease at one time\"; grey example \"e.g. 2 in 1,000 people ill today (teaching figure)\". On \"Picture a tank\" the coded `TankModel` draws below: a plain container outline (not a bath or a painted object). On \"flow in from a tap\" an amber inflow arrow labelled \"incidence (new cases)\" pulses and the level rises; on \"Recovery or death drains it\" a grey outflow arrow labelled \"recovery or death\" opens and the level steadies; on \"how full the tank is\" the level line pulses, labelled \"prevalence\". The two glosses dim as the tank writes. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "past-infection-rates",
+      "visualDecision": "new",
+      "visualReference": "on \"lasts about a week\" the tank's outflow widens and the level stays low even as the inflow pulses fast (tag \"short illness: low prevalence of current infection\").",
+      "teachingReason": "Past infection, and rates per 100,000: Dengue illness lasts about a week, so few people have it at any moment, even in a big outbreak.",
+      "narrationCue": "lasts about a week / Past infection is a separate measure / seven in ten children / use rates, not counts / divide the cases by the population / two hundred per hundred thousand",
+      "motionPurpose": "On the spoken cues: On \"Past infection is a separate measure\" a second coded tank beside it, labelled \"prevalence of past infection (from antibodies)\", has no drain and fills high; on \"seven in ten children\" a 10 by 10 dot grid writes beside it with 69 dots filled (tag \"about 7 in 10 urban children, ages 1 to 18, had",
+      "motionRole": "explain",
+      "onScreenChange": "on \"lasts about a week\" the tank's outflow widens and the level stays low even as the inflow pulses fast (tag \"short illness: low prevalence of current infection\"). On \"Past infection is a separate measure\" a second coded tank beside it, labelled \"prevalence of past infection (from antibodies)\", has no drain and fills high; on \"seven in ten children\" a 10 by 10 dot grid writes beside it with 69 dots filled (tag \"about 7 in 10 urban children, ages 1 to 18, had antibodies\"; grey source tag \"Prayitno et al., 2017; Indonesia, 2014\"; grey screen tag \"seroprevalence: share with antibodies from past infection\"; grey tag \"antibody levels fall, but stay detectable for years\"). Both tanks and the dot grid dim fully before the rate bars draw. On \"use rates, not counts\" the coded `RateBars` draw: two bars by count, \"city: 2,000 cases\" tall and \"town: 300 cases\" short, each with a grey \"in one year\". On \"divide the cases by the population\" a grey operation line writes under the bars: \"cases ÷ population × 100,000\". On \"two hundred per hundred thousand\" the city bar relabels \"2,000 ÷ 1,000,000 × 100,000 = 200 per 100,000 per year\" and shrinks; on \"six hundred\" the town bar relabels \"300 ÷ 50,000 × 100,000 = 600 per 100,000 per year\" and grows past it (tag \"the town has the higher risk\"; grey tag \"denominator: the population\"). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "lineage split",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "dengue-year",
+      "visualDecision": "new",
+      "visualReference": "the coded `lineGraph` draws in the data panel: x axis \"month\" (July to June), y axis \"new cases per 100,000 per week\"; faint grey rainfall bars sit behind (grey axis \"rainfall\").",
+      "teachingReason": "Reading a dengue year: Now read one city's weekly dengue incidence across a year.",
+      "narrationCue": "across a year / stay low through the dry months / climb a month or two after / Rain fills containers / eggs hatch, adults emerge / over a week multiplying inside each mosquito",
+      "motionPurpose": "On the spoken cues: The incidence line draws on \"across a year\" (teaching data, grey tag \"teaching data, shaped like a Javanese city\"). On \"stay low through the dry months\" a bracket marks July to October (tag \"dry season: low\"); on \"climb a month or two after\" the rainfall bars brighten from November and the line",
+      "motionRole": "explain",
+      "onScreenChange": "the coded `lineGraph` draws in the data panel: x axis \"month\" (July to June), y axis \"new cases per 100,000 per week\"; faint grey rainfall bars sit behind (grey axis \"rainfall\"). The incidence line draws on \"across a year\" (teaching data, grey tag \"teaching data, shaped like a Javanese city\"). On \"stay low through the dry months\" a bracket marks July to October (tag \"dry season: low\"); on \"climb a month or two after\" the rainfall bars brighten from November and the line rises from December to a peak in February; a grey bracket shows the gap between the first heavy rain and the peak (tag \"lag: about 1 to 2 months\"). On \"Rain fills containers\" b12's `LifeCycleWheel` thumbnail appears small under the graph and its stations light in turn on \"eggs hatch, adults emerge\"; on \"over a week multiplying inside each mosquito\" a small coded day bar under the mosquito thumbnail fills (grey label \"about 8 to 12 days\", grey tag \"b12\"). On \"the peak trails the rain\" the \"*Aedes*\" and \"warmth and water\" slots of the four-conditions bar fill with the mosquito thumbnail and a coded raincloud outline beside a small jar glyph (rain or stored water). At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "serotypes",
+      "visualDecision": "adjust",
+      "visualReference": "on \"herd immunity\" a coded 10 by 10 dot grid writes in the data panel with most dots filled grey (grey tag \"b10: herd immunity\").",
+      "teachingReason": "Immunity covers one serotype: Here's where serotypes matter.",
+      "narrationCue": "herd immunity / covers only the serotype that infected you / a different serotype arrives / more likely to be severe / all four types at once / a type it misses could later cause severe dengue",
+      "motionPurpose": "On the spoken cues: On \"covers only the serotype that infected you\" the filled dots take a DENV-1 amber ring (tag \"immune to DENV-1 only\"); the fourth slot of the four-conditions bar fills: \"people not immune\" with a small dot-grid glyph. On \"a different serotype arrives\" a teal DENV-3 virus thumbnail enters the grid",
+      "motionRole": "explain",
+      "onScreenChange": "on \"herd immunity\" a coded 10 by 10 dot grid writes in the data panel with most dots filled grey (grey tag \"b10: herd immunity\"). On \"covers only the serotype that infected you\" the filled dots take a DENV-1 amber ring (tag \"immune to DENV-1 only\"); the fourth slot of the four-conditions bar fills: \"people not immune\" with a small dot-grid glyph. On \"a different serotype arrives\" a teal DENV-3 virus thumbnail enters the grid from the left and spreads dot to dot through the amber-ringed dots as if they were empty (tag \"DENV-1 immunity doesn't stop DENV-3\"). On \"more likely to be severe\" a few dots that had amber rings take a small rose outline (tag \"second infection, new serotype: higher risk of severe dengue\"; grey screen tag \"antibody-dependent enhancement\"; grey tag \"brief cross-protection at first\"). On \"all four types at once\" `m7-vaccine-vial-syringe-v1.png` appears small with four colour rings beside it (tag \"a vaccine must cover all four\"; grey tag \"Qdenga: uneven across serotypes; WHO (2024) advises it for ages 6 to 16 where dengue transmission is high\"). On \"a type it misses could later cause severe dengue\" one ring on the vial thumbnail stays empty and a rose outline pulses on a dot (grey tag \"Dengvaxia, 2017: more severe dengue in vaccinated people never infected before\"). The herd immunity tag dims when the rings write. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "mobility",
+      "visualDecision": "new",
+      "visualReference": "the `SeaMap` returns large at the left (the data panel shrinks to the right edge).",
+      "teachingReason": "Mobility links the scales: Mobility links the scales.",
+      "narrationCue": "fly to another within a day / If local Aedes bite them / north Queensland usually begin / bringing the virus in",
+      "motionPurpose": "On the spoken cues: On \"fly to another within a day\" a coded dashed arc draws from a dot labelled \"Bali\" to a dot labelled \"Cairns\", with the DENV-2 ring thumbnail riding it (tag \"virus still in the blood: about 5 days\"; no person, no plane: the arc and the virus only). On \"If local Aedes bite them\" the *Aedes*",
+      "motionRole": "explain",
+      "onScreenChange": "the `SeaMap` returns large at the left (the data panel shrinks to the right edge). On \"fly to another within a day\" a coded dashed arc draws from a dot labelled \"Bali\" to a dot labelled \"Cairns\", with the DENV-2 ring thumbnail riding it (tag \"virus still in the blood: about 5 days\"; no person, no plane: the arc and the virus only). On \"If local Aedes bite them\" the *Aedes* thumbnail appears at Cairns and three small amber dots spread around the Cairns dot (tag \"a local chain starts\"). On \"north Queensland usually begin\" a grey tag \"Queensland Health: north Queensland outbreaks start when travellers bring the virus in\" and a grey tag \"dengue doesn't usually spread there on its own\". On \"bringing the virus in\", and through the hold, four coded arcs light between dots in Jakarta, Yogyakarta, Surabaya and Kuala Lumpur, each arc carrying a different colour ring (tag \"serotypes move with people\"). Earlier tags dim. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "four-conditions",
+      "visualDecision": "adjust",
+      "visualReference": "the four-conditions bar enlarges to the centre, its four slots full and linked by coded rings (tag \"all four at once\").",
+      "teachingReason": "Four conditions, shaped by people: So dengue spreads when four things meet: the virus, Aedes mosquitoes, warmth and water to breed in, and people who aren't immune, in contact.",
+      "narrationCue": "Cut one far enough / how people live shapes these conditions / piped water is unreliable / even in dry months / Crowded, fast-growing cities / money and support, year after year",
+      "motionPurpose": "On the spoken cues: On \"Cut one far enough\" the \"*Aedes*\" slot shrinks to a faint outline and the links between slots break (tag \"cut one far enough: spread stops\"); the slot returns. On \"how people live shapes these conditions\" a grey line writes under the bar: \"social causes\". On \"piped water is unreliable\" the new",
+      "motionRole": "explain",
+      "onScreenChange": "the four-conditions bar enlarges to the centre, its four slots full and linked by coded rings (tag \"all four at once\"). On \"Cut one far enough\" the \"*Aedes*\" slot shrinks to a faint outline and the links between slots break (tag \"cut one far enough: spread stops\"); the slot returns. On \"how people live shapes these conditions\" a grey line writes under the bar: \"social causes\". On \"piped water is unreliable\" the new `m7-water-storage-jar-v1.png` appears under the \"warmth and water\" slot, with a thin line to the \"*Aedes*\" slot (an open household water jar with larvae at the surface; tag \"stored water: breeding site\"; grey tag \"where piped water is unreliable\"); on \"even in dry months\" the slot's raincloud dims while the jar glyph stays lit (tag \"no rain needed\"). On \"Crowded, fast-growing cities\" a coded dot grid under the \"people not immune\" slot densifies (tag \"crowded cities: more contact\"). On \"money and support, year after year\" a coded calendar strip draws under the whole bar and shows twelve months with only the first few ticked (tag \"programs must be kept up\"; grey tag \"one missed container keeps breeding (b12)\"). Earlier tags dim as each new one writes. At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "wolbachia-evidence",
+      "visualDecision": "new",
+      "visualReference": "the coded `ClusterGrid` draws in the data panel: 24 squares in a city outline (grey tag \"Yogyakarta: releases 2017; cases tracked 2018 to 2020\"); on \"randomly chose\" twelve squares turn teal in a scattered pattern, as if drawn from a hat (a coded shuffle animation; tag \"randomly assigned\").",
+      "teachingReason": "How strong is the Wolbachia evidence?: Now the Wolbachia evidence.",
+      "narrationCue": "randomly chose / came to clinics with a fever / about two in a hundred / nine in a hundred / weather and serotypes affected both groups alike / In Cairns",
+      "motionPurpose": "On the spoken cues: On \"came to clinics with a fever\" a coded clinic outline appears beside the grid (grey label \"clinic\"; no people). On \"about two in a hundred\" a `HundredDots` array under the teal squares lights 2 dots (tag \"2.3%, Wolbachia areas\"); on \"nine in a hundred\" an array under the grey squares lights 9",
+      "motionRole": "explain",
+      "onScreenChange": "the coded `ClusterGrid` draws in the data panel: 24 squares in a city outline (grey tag \"Yogyakarta: releases 2017; cases tracked 2018 to 2020\"); on \"randomly chose\" twelve squares turn teal in a scattered pattern, as if drawn from a hat (a coded shuffle animation; tag \"randomly assigned\"). On \"came to clinics with a fever\" a coded clinic outline appears beside the grid (grey label \"clinic\"; no people). On \"about two in a hundred\" a `HundredDots` array under the teal squares lights 2 dots (tag \"2.3%, Wolbachia areas\"); on \"nine in a hundred\" an array under the grey squares lights 9 dots (tag \"9.4%, untreated areas\"); grey source tag \"67 of 2,905 against 318 of 3,401 people with fever; Utarini et al., 2021\"; grey tag under the dot arrays \"share of fever patients with dengue: falls when infections fall\". On \"weather and serotypes affected both groups alike\" one coded raincloud and the four colour rings drift across both halves of the grid equally (tag \"random assignment: a fair comparison\"; grey screen tag \"randomised controlled trial\"). On \"In Cairns\" the cluster grid and dot arrays dim to a small thumbnail; a coded before-and-after bar pair draws beside the Cairns dot on the map thumbnail: \"before releases\" tall, \"after releases\" short (tag \"about 96% lower incidence\"; grey source tag \"Ryan et al., 2019 to 2020\"; grey tag \"compared over time, not with a control group at the same time\"). On \"no untreated areas to compare at the same time\" an empty dashed bar outline labelled \"untreated areas, same years\" draws beside the pair and stays empty; on \"weaker evidence\" the Cairns tag dims and a grey tag writes \"Townsville: 16 local cases in 2024 to 2025 (b12)\". At most three bright text items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "still-limited",
+      "visualDecision": "adjust",
+      "visualReference": "the four-conditions bar returns at the top.",
+      "teachingReason": "Why control is still limited: So why hasn't Wolbachia stopped dengue?",
+      "narrationCue": "years and money / residents must agree / haven't started yet / four serotypes make vaccines hard / resist common insecticides / a warmer climate may",
+      "motionPurpose": "On the spoken cues: Two columns write beneath it, one per cue: left \"social causes\", right \"biological causes\". On \"years and money\" `m6-mosquito-cage-v1.png` appears small under \"social causes\" with a coded progress bar across a city outline filling slowly (tag \"releases: years and funding\"); on \"residents must",
+      "motionRole": "explain",
+      "onScreenChange": "the four-conditions bar returns at the top. Two columns write beneath it, one per cue: left \"social causes\", right \"biological causes\". On \"years and money\" `m6-mosquito-cage-v1.png` appears small under \"social causes\" with a coded progress bar across a city outline filling slowly (tag \"releases: years and funding\"); on \"residents must agree\" the city outline from \"years and money\" gains a few ticked houses (coded outlines only; tag \"community support needed\"); on \"haven't started yet\" the `SeaMap` thumbnail shows a few teal dots among many grey city dots (tag \"Wolbachia: a small share of cities with dengue so far\"; grey tag \"checked October 2026\"; Revision 3: no count, because the current total could not be verified). On \"four serotypes make vaccines hard\" the four-ring vaccine thumbnail lands under \"biological causes\"; on \"resist common insecticides\" the sprayer thumbnail `m7-insecticide-sprayer-v1.png` with grey tag \"resistance varies by place and product (b12)\"; on \"a warmer climate may\" a coded thermometer outline with an arrow up (tag \"range may widen\"); on \"travel keeps bringing the virus back\" the travel arc thumbnail. Each item dims as the next writes. On \"breaks a needed link, and people can keep it going\" one slot of the four-conditions bar breaks and a coded loop arrow \"kept up\" circles it (tag \"break a link, and sustain it\"). A grey chip \"a vaccine will solve it on its own\" takes a grey scribble cross. At most three bright text items at once besides the column headers. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "two handwritten lines write on large: \"Incidence is the tap, prevalence is the tank.\" with the small tank thumbnail under it; \"Dengue needs virus, vector, warmth and water, and people, all at once.\" with the four-conditions bar thumbnail under it.",
+      "teachingReason": "Memory: Two lines to keep.",
+      "narrationCue": "Incidence is the tap, prevalence is the tank. / virus, vector, warmth and water, and people, all at once.",
+      "motionPurpose": "On the spoken cues: Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "two handwritten lines write on large: \"Incidence is the tap, prevalence is the tank.\" with the small tank thumbnail under it; \"Dengue needs virus, vector, warmth and water, and people, all at once.\" with the four-conditions bar thumbnail under it. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (two districts)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. In 2023, District P,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (two districts))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"Two districts in a South East Asian country recorded the following dengue cases in 2023.\" A small table: \"District: P, Q\"; \"Population: 200,000, 40,000\"; \"Dengue cases in 2023: 1,000, 400\". Demand: \"(a) Calculate the incidence of dengue in each district in 2023, as cases per 100,000 people. (2 marks) (b) Identify which district had the greater risk of dengue, and justify your answer. (1 mark)\". One lined answer box. No plates, no map. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "District P's incidence / District Q's / Q had double the risk / the classic mistake / compare rates, not counts",
+      "motionPurpose": "On the spoken cues: On \"District P's incidence\" \"200,000\" and \"1,000\" underline amber and row 1 writes \"P: 1,000 ÷ 200,000 × 100,000 = 500 per 100,000\". On \"District Q's\" \"40,000\" and \"400\" underline amber and row 2 writes \"Q: 400 ÷ 40,000 × 100,000 = 1,000 per 100,000\". On \"Q had double the risk\" \"greater risk\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. On \"District P's incidence\" \"200,000\" and \"1,000\" underline amber and row 1 writes \"P: 1,000 ÷ 200,000 × 100,000 = 500 per 100,000\". On \"District Q's\" \"40,000\" and \"400\" underline amber and row 2 writes \"Q: 400 ÷ 40,000 × 100,000 = 1,000 per 100,000\". On \"Q had double the risk\" \"greater risk\" underlines teal and row 3 writes \"Q: greater risk (double P's incidence), though fewer cases\". Rows 1 and 2 dim as row 3 writes. On \"the classic mistake\" the chip \"P is worse: it had more cases\" writes on and takes a grey scribble cross, with the small grey reason \"compare rates, not counts\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\".",
+      "teachingReason": "Unseen transfer task (attempt two (a new serotype)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. In City R, a survey found that",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (a new serotype))",
+      "motionRole": "explain",
+      "onScreenChange": "the card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"In 2022, a survey in City R, where *Aedes aegypti* is common, found that 80% of adults had antibodies from a past dengue infection. Almost all of these infections had been caused by dengue serotype 1 (DENV-1). Piped water in City R is often cut off, so most households store water in open jars. In 2025, dengue serotype 3 (DENV-3) was detected in travellers arriving in City R, and the city then had its largest dengue outbreak in ten years, with a higher proportion of severe cases than in earlier outbreaks.\" Demand: \"Explain the 2025 outbreak, with reference to biological and social factors in the data. (4 marks)\". One lined answer box. No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "doesn't protect against serotype three / Travellers brought the new serotype in / breeding in the stored water / more likely to be severe / the classic mistake / immune to DENV-1 only",
+      "motionPurpose": "On the spoken cues: On \"doesn't protect against serotype three\" \"80% ... antibodies\" and \"DENV-1\" underline amber and row 1 writes \"biological: immunity is serotype-specific; DENV-1 antibodies don't protect against DENV-3, so nearly everyone was susceptible to DENV-3\". On \"Travellers brought the new serotype in\"",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. On \"doesn't protect against serotype three\" \"80% ... antibodies\" and \"DENV-1\" underline amber and row 1 writes \"biological: immunity is serotype-specific; DENV-1 antibodies don't protect against DENV-3, so nearly everyone was susceptible to DENV-3\". On \"Travellers brought the new serotype in\" \"detected in travellers\" underlines amber; on \"breeding in the stored water\" \"open jars\" and \"*Aedes aegypti* is common\" underline amber and row 2 writes \"social: stored water in open jars bred *Aedes* near homes; travellers introduced DENV-3\". On \"more likely to be severe\" \"higher proportion of severe cases\" underlines teal and row 3 writes \"second infection, different serotype: higher risk of severe dengue\". Rows 1 and 2 dim as row 3 writes. On \"the classic mistake\" the chip \"80% were immune, so no outbreak\" writes on and takes a grey scribble cross, with the small grey reason \"immune to DENV-1 only\". Settle for about a second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Mark underline",
+        "chip pop",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "three step chips write on, one per cue: \"incidence or prevalence?\", \"per how many people?\", \"biological or social cause?\".",
+      "teachingReason": "Decision rule and handoff: So for any disease data, check the measure and its population, then link each change to a biological or a social cause.",
+      "narrationCue": "So for any disease data, check the measure",
+      "motionPurpose": "On the spoken cues: The four-conditions bar returns small above them. A \"Next\" chip slides in at the lower right: \"Next: outbreak data and control practice\" (small grey tag; a small coded graph thumbnail beside it). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on, one per cue: \"incidence or prevalence?\", \"per how many people?\", \"biological or social cause?\". The four-conditions bar returns small above them. A \"Next\" chip slides in at the lower right: \"Next: outbreak data and control practice\" (small grey tag; a small coded graph thumbnail beside it). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b13-learning-review.md",
+      "sha256": "cad110c0bada929e206908fb841ab8a6a551b61a144bdc15fd4cdda89a225f25"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7b13-claude-science-check.md",
+      "sha256": "ca28548a5a5920dfc84f77b878e8042d2d3150d209f584765fa982ffb009d200"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

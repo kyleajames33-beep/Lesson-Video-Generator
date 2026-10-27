@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C10-claude-2026-10-28-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c10/lesson.json",
+  "lessonSha256": "44dc5a9bc0a58afdbe0948658846fce857d9528a8a78f66c87fd0ff0c1fe0ffa",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c10/lesson.production-brief.json",
+    "sha256": "d00a31583078ba7245141760f1aac95d04600a6791fd7d7a07f279d7ad3b2b22"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Banana and pineapple flavourings often get their smell from esters. Pentyl ethanoate is usually described as smelling like banana, and ethyl butanoate like pineapple. Each one can be made from two smaller molecules: a carboxylic acid, like the ones in the last video, and an alcohol. So how do the two halves join? Why does the reaction never quite finish? And how do you get the ester out?",
+      "hash": "3655c794ad20",
+      "textSha256": "3655c794ad20296a08dd4ecaec201f7cb82954889df367e058288f5c645ad56e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/hook.3655c794ad20.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/hook.3655c794ad20.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/hook.3655c794ad20.generation.json",
+      "plannedRequestSha256": "944ad48369503a0bd5228dfdd4b7bce45696b206879499edc31593884f6c1b38"
+    },
+    {
+      "id": "joining-halves",
+      "parentSceneId": "joining-halves",
+      "text": "Take ethanoic acid and ethanol. The acid loses the O H from its carboxyl group, and the alcohol loses the H from its O H. Together, those make water. The two parts link through the alcohol's oxygen, giving ethyl ethanoate. This new link, a C double bond O, then an oxygen, then a carbon chain, is the ester group. When two molecules join and release a small molecule like water, it's called a condensation reaction.",
+      "hash": "df60dfd93fc2",
+      "textSha256": "df60dfd93fc21478ee77550df927079982040c47354ac7879f2f3ad2cae08e3d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/joining-halves.df60dfd93fc2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/joining-halves.df60dfd93fc2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/joining-halves.df60dfd93fc2.generation.json",
+      "plannedRequestSha256": "6cbff57d8516f70d49b42b972b2041a98f1b84dab5e3329bbfc0be8d8705f804"
+    },
+    {
+      "id": "naming-esters",
+      "parentSceneId": "naming-esters",
+      "text": "Ester names have two words, one for each half. The alcohol part comes first, named like a branch: ethanol gives ethyl. The acid part comes second, ending in oate, just like the salt in the last video. Ethanoic acid gives ethanoate. So this is ethyl ethanoate. Careful: formulas are usually written acid side first, but the name puts the alcohol part first. The order matters. Ethyl butanoate and butyl ethanoate have the same formula, but they're different molecules.",
+      "hash": "0d7971362f3d",
+      "textSha256": "0d7971362f3d67f6350f8f8ec269d0cb3436f79d67e2834243b522140a5fc46b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/naming-esters.0d7971362f3d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/naming-esters.0d7971362f3d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/naming-esters.0d7971362f3d.generation.json",
+      "plannedRequestSha256": "af9e8be0513f282cdfd0a061e690b5cc8e9ac45400055153e8e4da436c5d1a41"
+    },
+    {
+      "id": "working-backwards",
+      "parentSceneId": "working-backwards",
+      "text": "Exam questions often go the other way: here's an ester, what made it? Find the C double bond O, and cut at the single-bonded oxygen next to it. The side with the C double bond O came from the acid. The oxygen, and the chain beyond it, came from the alcohol. In C H three C H two C O O C H three, the acid side has three carbons, so it's propanoic acid. The alcohol side has one carbon, so it's methanol. That makes it methyl propanoate.",
+      "hash": "4128a385b1a9",
+      "textSha256": "4128a385b1a9124a9e1bdecddd56e3ff46804fb44e475709115ac2fe5c4d51d2",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/working-backwards.4128a385b1a9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/working-backwards.4128a385b1a9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/working-backwards.4128a385b1a9.generation.json",
+      "plannedRequestSha256": "af95157df34b564f1792b3aaa6918f316668a05969a8be645d556a1ecf5169b0"
+    },
+    {
+      "id": "ester-properties",
+      "parentSceneId": "ester-properties",
+      "text": "An ester has no O H. So its molecules can't hydrogen bond to each other, just dipole-dipole and dispersion forces. Compare three molecules of almost the same mass, eighty eight. Ethyl ethanoate boils at about seventy seven degrees, pentan-one-ol at one hundred and thirty eight, and butanoic acid at one hundred and sixty four. So small esters evaporate easily, and their smell reaches your nose. And notice: ethyl ethanoate and butanoic acid are both C four H eight O two. Only the acid fizzes with sodium hydrogen carbonate.",
+      "hash": "765c566260f3",
+      "textSha256": "765c566260f39f5c0dd270bba3b3f03be19b16ba15e5e217f9a2b50bbf802194",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/ester-properties.765c566260f3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/ester-properties.765c566260f3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/ester-properties.765c566260f3.generation.json",
+      "plannedRequestSha256": "0a4afdbfac22d4c7337c1bbbfa08592618ca57790bfb312881be44a410768f81"
+    },
+    {
+      "id": "conditions-reflux",
+      "parentSceneId": "conditions-reflux",
+      "text": "At room temperature, this reaction is very slow. So we add a few drops of concentrated sulfuric acid as a catalyst, and heat the mixture under reflux. As in the ethanol video, the condenser cools the vapours, so volatile ethanol and ethyl ethanoate drip back instead of escaping. Concentrated sulfuric acid is corrosive, and these liquids are flammable, so heat with an electric heater or a water bath, never a flame.",
+      "hash": "af00606b5a5f",
+      "textSha256": "af00606b5a5fa7521f828c2ef6fc185f9656fc3827b8c5cc6499a21428d4912f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/conditions-reflux.af00606b5a5f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/conditions-reflux.af00606b5a5f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/conditions-reflux.af00606b5a5f.generation.json",
+      "plannedRequestSha256": "8003851ac917dcf473d57185f6880cf3af25f836ab97015aafa9fc61b31e9553"
+    },
+    {
+      "id": "equilibrium-yield",
+      "parentSceneId": "equilibrium-yield",
+      "text": "But esterification is reversible. Water can split the ester back into the acid and alcohol. So the mixture reaches equilibrium, with all four substances still there. Start with equal amounts of ethanoic acid and ethanol, and only about two thirds turns into ester. That's why the equation needs the equilibrium arrow, not a single arrow.",
+      "hash": "6ff92d287ac8",
+      "textSha256": "6ff92d287ac82cdaddc3e0a91df3d74b415da2719da9b93c4eb8bc92989ed63b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/equilibrium-yield.6ff92d287ac8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/equilibrium-yield.6ff92d287ac8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/equilibrium-yield.6ff92d287ac8.generation.json",
+      "plannedRequestSha256": "2f6824fc614ebe334a58e6a0e697ca7f2bcfd5be08e463c1bbb19eca063e9759"
+    },
+    {
+      "id": "pushing-yield",
+      "parentSceneId": "pushing-yield",
+      "text": "To get more, use Le Chatelier's principle from Module five. Add an excess of one reactant, often the cheaper one. The system shifts to use up some of it, and makes more ester. With three times as much ethanol, about nine tenths of the acid becomes ester. Removing water helps too, and the concentrated sulfuric acid takes up a little. But the catalyst doesn't change the yield. It speeds up both directions, so equilibrium just arrives sooner.",
+      "hash": "9d0be92e7fab",
+      "textSha256": "9d0be92e7fab05cb34078955c1f20cac792725b073634598b9044142d36b3aeb",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/pushing-yield.9d0be92e7fab.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/pushing-yield.9d0be92e7fab.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/pushing-yield.9d0be92e7fab.generation.json",
+      "plannedRequestSha256": "d5e24c3a53b75b71d8b339565a426290b5adab99f2b74c2cb26481af6ec197a5"
+    },
+    {
+      "id": "separating-identifying",
+      "parentSceneId": "separating-identifying",
+      "text": "After reflux, the flask holds the ester, leftover acid and alcohol, water, and sulfuric acid. Pour it into a separating funnel with water. Most of the ethanol and the sulfuric acid dissolve in the water, but the ester doesn't mix well, so it forms its own layer. Wash it with sodium carbonate solution. The leftover acid becomes a salt that dissolves in the water layer, and carbon dioxide forms, so the funnel is vented often. Then separate the layers, dry the ester, and distil it, collecting what boils near seventy seven degrees. Ethanol boils at seventy eight, so that's only a rough check.",
+      "hash": "808ca306bf23",
+      "textSha256": "808ca306bf23840a9b41766d9451178c4e1054f615b8efc3beb74e88a16d117f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/separating-identifying.808ca306bf23.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/separating-identifying.808ca306bf23.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/separating-identifying.808ca306bf23.generation.json",
+      "plannedRequestSha256": "ce3b22712568ebf85236cc7cd26f71254c2d70ce71308eadc7243622230c2ca6"
+    },
+    {
+      "id": "flow-chart",
+      "parentSceneId": "flow-chart",
+      "text": "You can even make ethyl ethanoate from ethanol alone. First, oxidise some ethanol with acidified dichromate under reflux, to make ethanoic acid. Then react that acid with more ethanol, with concentrated sulfuric acid, under reflux. In a flow chart, each box holds a compound, and each arrow carries its reagents and conditions. Start one step earlier, at ethene with steam, and you've got the main road: alkene, primary alcohol, acid, ester. Only a primary alcohol oxidises to an acid.",
+      "hash": "a331c5e17971",
+      "textSha256": "a331c5e1797117c37307e349983cf7dddb0bd9048aec1514536a3a3e072cfd98",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/flow-chart.a331c5e17971.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/flow-chart.a331c5e17971.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/flow-chart.a331c5e17971.generation.json",
+      "plannedRequestSha256": "3efc486d4bf663604d16c02a6202e042ce5663d91f513698154e8bef68a03d50"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, acid plus alcohol, in equilibrium with ester plus water. In the name, the alcohol part comes first and ends in yl, and the acid part comes second and ends in oate. Excess reactant, or removing water, raises the yield. The catalyst makes it faster, not more. Heat speeds it too, and with reflux, nothing escapes.",
+      "hash": "334cd2d8d7dd",
+      "textSha256": "334cd2d8d7ddf4d58d5c8586fc27d4bb5e5c5ffa8f59d7c29bfd924fdcbdb12b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/memory-aid.334cd2d8d7dd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/memory-aid.334cd2d8d7dd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/memory-aid.334cd2d8d7dd.generation.json",
+      "plannedRequestSha256": "e03f1eb99260d8760fb2d1e112d0dbdced290c337bf98f02282a18f873f0be51"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. An ester has the condensed formula shown. Give the IUPAC name of the ester, and name the carboxylic acid and the alcohol used to make it. Pause here to answer.",
+      "hash": "47721d76adec",
+      "textSha256": "47721d76adec7656890d05dc1aee6eb54b07f345248b396027f8b8db4e8e9c46",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/attempt-1.47721d76adec.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/attempt-1.47721d76adec.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/attempt-1.47721d76adec.generation.json",
+      "plannedRequestSha256": "313ff097b5404fad088cf51181931a8d7362fd10e7804810d7fad145f51e31b8"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Find the C double bond O, and cut at the single-bonded oxygen. The acid side, C H three C H two C O, has three carbons: propanoic acid. The alcohol side has four, in a straight chain: butan-one-ol. The alcohol part goes first, so it's butyl propanoate. Propyl butanoate swaps the halves, and that's a different ester.",
+      "hash": "1b597308acf0",
+      "textSha256": "1b597308acf05949e206676e586323d14e3f5ba414db94c796f9dcbdd60da3f9",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/feedback-1.1b597308acf0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/feedback-1.1b597308acf0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/feedback-1.1b597308acf0.generation.json",
+      "plannedRequestSha256": "71bdbdd248f1d2335434eafd8a750c63d943de3de92cae386049526ddb1f6eeb"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student heats point five zero moles of propanoic acid with point five zero moles of methanol, and a few drops of concentrated sulfuric acid, under reflux. At equilibrium, point three two moles of methyl propanoate has formed. Write a balanced equation for the reaction. Then suggest one change to the reactants that would give more than point three two moles of ester, and explain it using Le Chatelier's principle. Pause here to answer.",
+      "hash": "cd06e28804de",
+      "textSha256": "cd06e28804deccf5e615070a9ddc84e9ea51d63d04ade94ee9b4271873b88790",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/attempt-2.cd06e28804de.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/attempt-2.cd06e28804de.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/attempt-2.cd06e28804de.generation.json",
+      "plannedRequestSha256": "a7675cceba33f2ebaac9cfc7bc3c6287d094cc17de74bf2c3b0530560be28538"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Propanoic acid plus methanol, in equilibrium with methyl propanoate plus water, with sulfuric acid over the arrow. Then use an excess of methanol. The system shifts right to use up some of the added methanol, so more ester forms. Heating it for longer doesn't help. Once it reaches equilibrium, the amount of ester stops changing.",
+      "hash": "4390baa347d4",
+      "textSha256": "4390baa347d41842cbf980a3d3c956dcc2b0bc7251a6c8d2003e17f84d0ca4c5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/feedback-2.4390baa347d4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/feedback-2.4390baa347d4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/feedback-2.4390baa347d4.generation.json",
+      "plannedRequestSha256": "95b2139e314402e3936befa33cbd2bc4ab88bafa843ec63e6f353b16a7b70a0a"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So an acid and an alcohol join and lose water, and the alcohol part is named first. Next: into the lab, to make an ester, and get it out safely.",
+      "hash": "ddc294ee115c",
+      "textSha256": "ddc294ee115cc25d83dba8592eee6fe416d14e6fbed3e9e5e7c6fb7862ace0e5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/handoff.ddc294ee115c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/handoff.ddc294ee115c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/handoff.ddc294ee115c.generation.json",
+      "plannedRequestSha256": "0f5c35d5471dda5d234427905d9080dfeca3cef7b910e77a96fc91b35392b426"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C10-claude-2026-10-28-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

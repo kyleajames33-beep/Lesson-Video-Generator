@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-G01-claude-2026-10-28-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7g01b/lesson.json",
+  "lessonSha256": "1102b0a79969de9ef2dee4d1ea54e7f3b20e595007b7e0de8c40e4fbafd3f259",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7g01b/lesson.production-brief.json",
+    "sha256": "40c18b70c368acf6277baa98d7fe6e6f48b335fb2e3287ea256abe7c2e34d6da"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Outbreak questions hand you a table or a graph and ask what's going on. Most of them turn on one habit. Before you compare anything, find the denominator, the number you divide by. Then link the numbers to a cause, and the cause to a control. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+      "hash": "d0f7c14cfa89",
+      "textSha256": "d0f7c14cfa899bb7eda40a82079f748f8e24fcf2ce50a476400f68155c4dcbe8",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/hook.d0f7c14cfa89.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/hook.d0f7c14cfa89.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/hook.d0f7c14cfa89.generation.json",
+      "plannedRequestSha256": "ac8086eb7e402ebb1091c7c311729f3c078e598e84b005c179be46028c866612"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. Sixty students arrive at Camp Wollemi on Monday. Everyone eats chicken pasta for dinner, and overnight, eighteen fall ill. On Tuesday, the well students have lunch. Some eat sandwiches made from Monday's leftover chicken, and the rest eat salad rolls. That night, sixteen more fall ill. Calculate the percentage who fell ill in each lunch group. Then evaluate the director's claim that the illness spread from person to person. Pause here to answer.",
+      "hash": "14f604e9b8e3",
+      "textSha256": "14f604e9b8e309646a5d759f86cd31067797cdab352664ce0a97e335c4be5a73",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-question.14f604e9b8e3.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-question.14f604e9b8e3.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-question.14f604e9b8e3.generation.json",
+      "plannedRequestSha256": "147abc7e616c7feb36679608fc4926d06a01cdcd83dce78e73618b8d67c801c4"
+    },
+    {
+      "id": "q1-denominator",
+      "parentSceneId": "q1-denominator",
+      "text": "Start with the denominator. The question asks about each lunch group, so divide by the number who ate each lunch, not by the whole camp. Sixteen of the twenty-eight who ate the sandwiches fell ill. That's about fifty-seven per cent. None of the fourteen who ate salad rolls fell ill. That's zero. Now the two groups compare fairly, because each number is out of the people who had that food.",
+      "hash": "e610ac144985",
+      "textSha256": "e610ac144985d717ef0032deaa8575232684b9b7ee744b39661d7192fab1ea4c",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-denominator.e610ac144985.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-denominator.e610ac144985.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-denominator.e610ac144985.generation.json",
+      "plannedRequestSha256": "8d9411d341b9204677b790f54f2a602dbefe92bcda789b70043ade13c6154044"
+    },
+    {
+      "id": "q1-claim",
+      "parentSceneId": "q1-claim",
+      "text": "Now the claim. Read the epidemic curve. There are two sharp clusters, each the night after a meal with the chicken, about eight to eighteen hours later, and nothing in between. That fits the six to twenty-four hours this bacterium takes. If it spread from person to person, cases would usually keep appearing in rising waves for days. And the salad roll group shared cabins with sick students, yet none fell ill. So the claim isn't supported. It was one food source, eaten twice. So the control that fits is cooling cooked meat quickly and throwing out leftovers, because this bacterium multiplies in meat that cools slowly.",
+      "hash": "a8a9e448abf4",
+      "textSha256": "a8a9e448abf41a2697d192f8b522b5b9f874f032422e0b9d27e88d3a0e7fe26a",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-claim.a8a9e448abf4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-claim.a8a9e448abf4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-claim.a8a9e448abf4.generation.json",
+      "plannedRequestSha256": "78bf5021fcb61b9ad90686b2955737d113cb806adc443c322256bb536ccf1a44"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is dividing by sixty. Sixteen out of sixty is about twenty-seven per cent, but that mixes in students who never ate the sandwiches, so it can't show which food was the problem. Always divide by the people who could have caught it.",
+      "hash": "1e99458743ae",
+      "textSha256": "1e99458743ae2017374cb68a9a127f3ebd63bd5b3bdeca4bd8c8c9682e827818",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-mistake.1e99458743ae.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-mistake.1e99458743ae.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q1-mistake.1e99458743ae.generation.json",
+      "plannedRequestSha256": "1ff7ce11778074fd87a193d489165d1139e015ec9d2575e601ac1db54ca4176a"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. A province in South East Asia had malaria. From twenty nineteen, every household got treated bed nets, and village health workers began testing and treating fevers on the same day. The table gives the population, the new cases, and a blood survey, for twenty eighteen and twenty twenty-three. Calculate the incidence per thousand people per year, and the prevalence of infection, for each year. Then explain how each measure could cause these changes. Pause here to answer.",
+      "hash": "40e81384bf98",
+      "textSha256": "40e81384bf9844a41bae4c93f2c48df9fcfdf232f210918d409a9be08ba87f91",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-question.40e81384bf98.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-question.40e81384bf98.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-question.40e81384bf98.generation.json",
+      "plannedRequestSha256": "5989cc3d1f4356c5ab2a579227678b1b9ff7d65ccb1725ac74bda1dc99311a8f"
+    },
+    {
+      "id": "q2-calc",
+      "parentSceneId": "q2-calc",
+      "text": "Incidence first. That's new cases in a year, divided by the people at risk, here the whole population. For twenty eighteen, four thousand eight hundred, divided by four hundred thousand, times a thousand, is twelve per thousand. For twenty twenty-three, eight hundred and forty, divided by four hundred and twenty thousand, times a thousand, is two. Prevalence is the share infected at one time, so its denominator is the people tested. Fifty of two thousand is two and a half per cent. Six of two thousand is zero point three per cent.",
+      "hash": "fe818f5dff9d",
+      "textSha256": "fe818f5dff9d3cad5bad8300ec51fc5b287fb7cdf66393ae2e88b0d104564a7f",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-calc.fe818f5dff9d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-calc.fe818f5dff9d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-calc.fe818f5dff9d.generation.json",
+      "plannedRequestSha256": "c5d192263e08d0b21bd3a9ac51f391f5cc53f6d2c8ee8c68da8d428f2cb2a5d6"
+    },
+    {
+      "id": "q2-explain",
+      "parentSceneId": "q2-explain",
+      "text": "Now link each measure to the tap or the tank. Bed nets mean fewer bites by Anopheles, which bite mostly at night, so fewer people get new infections. That turns down the tap, so incidence falls, and with less flowing in, the tank falls too. Same-day testing and treatment clears each infection sooner, so people stay infected for less time. That drains the tank faster, so prevalence falls further. And with fewer infected people, mosquitoes pick up fewer parasites, so new cases fall even more.",
+      "hash": "4d69169c9dfd",
+      "textSha256": "4d69169c9dfd8c2349202f73fc415c62485bd0ad3f9e8675d75d16d90be66757",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-explain.4d69169c9dfd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-explain.4d69169c9dfd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-explain.4d69169c9dfd.generation.json",
+      "plannedRequestSha256": "c049ca81ae2f9be0310d6998835038907ae30cc21b42749260e9f4ba96363202"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is dividing the fifty positives by the whole province. Only two thousand people were tested, so fifty out of four hundred thousand makes infection look two hundred times rarer than it is.",
+      "hash": "798f66b7e7e8",
+      "textSha256": "798f66b7e7e85f20fe7a0aba82a9cdb054cbc9cdc4d18e80b3cc3232bdcb6c6d",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-mistake.798f66b7e7e8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-mistake.798f66b7e7e8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q2-mistake.798f66b7e7e8.generation.json",
+      "plannedRequestSha256": "59159857c29f72948f7c61b83d8d4a0d15bf7f9e157557f69bc12f957a87f641"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. After a flood in Town V, the water supply and toilets were damaged, and cholera broke out. The graph shows new cases each week. In week three, health workers quarantined the household of every case for five days. In week six, they chlorinated all drinking water and repaired the toilets. Using the graph, identify which measure was followed by a fall in cases. Then justify using environmental management, rather than quarantine, to control this outbreak. Pause here to answer.",
+      "hash": "e7165d0442bc",
+      "textSha256": "e7165d0442bc5900a5750af99896a1006789a4036e1a8f31dbb80f688944da72",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-question.e7165d0442bc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-question.e7165d0442bc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-question.e7165d0442bc.generation.json",
+      "plannedRequestSha256": "c05b3a757f8cd76c7c2287de6957678c7b36e8b800beb915ab2c6145c12c1e13"
+    },
+    {
+      "id": "q3-graph",
+      "parentSceneId": "q3-graph",
+      "text": "Read the graph against the two arrows. After the quarantine in week three, cases kept rising, from fifteen to thirty-eight. After chlorination in week six, cases fell within a week, from thirty-eight to twenty-two, then to one by week ten. Cases didn't stop at once, because people who swallowed the bacteria just before chlorination could still fall ill up to five days later.",
+      "hash": "ce228ba46664",
+      "textSha256": "ce228ba46664373cd70d4d05a00b1a1134605810cbc49a5ceec19bb153269ff1",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-graph.ce228ba46664.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-graph.ce228ba46664.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-graph.ce228ba46664.generation.json",
+      "plannedRequestSha256": "2ade43b27675ca50269ebf09b220d9285b3ddc799280c364fb67ebcdbe551028"
+    },
+    {
+      "id": "q3-justify",
+      "parentSceneId": "q3-justify",
+      "text": "Now justify. Cholera spreads mainly through water or food contaminated with faeces. Chlorine kills the bacteria in the water, and repaired toilets keep faeces out of it. So environmental management breaks the travel link for everyone at once, and nobody has to be sick first. Quarantine only holds the households of known cases. But most infected people have mild or no symptoms, and still pass the bacteria, so many are never found, and the water keeps infecting new people anyway.",
+      "hash": "819787b784cf",
+      "textSha256": "819787b784cf53de987ec73f00aea7509ed5d86d30371bc2ac71ca2c8714933f",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-justify.819787b784cf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-justify.819787b784cf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-justify.819787b784cf.generation.json",
+      "plannedRequestSha256": "96984e49da0f7057aa95f528c3f4e6fb9f8509ef122e92a1b16d293de158e187"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is writing that quarantine works because it keeps infected people away from others. That helps when people pass a disease to each other. Here, it was mainly the water passing it on.",
+      "hash": "335f04199811",
+      "textSha256": "335f04199811f70416d11bb4967f566f92558b5c3b3a8795a1ca61b9837da4e7",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-mistake.335f04199811.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-mistake.335f04199811.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/q3-mistake.335f04199811.generation.json",
+      "plannedRequestSha256": "1df7bf7036d93d58adb4985d77b334bfc7de7017ab6a3b989ef2118f3e1eb87d"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start each type. For a table, find the denominator: who could have caught it, or who was tested. For a change in incidence or prevalence, ask whether the tap or the tank changed. For a control, find the route, then the link the measure breaks, and check the timing. Next, how disease control ideas have changed over time.",
+      "hash": "63b07f569d71",
+      "textSha256": "63b07f569d71b3961b7d50fbbe2d09202db135c57487adfacad74361386f3ca2",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/decision-board.63b07f569d71.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/decision-board.63b07f569d71.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/decision-board.63b07f569d71.generation.json",
+      "plannedRequestSha256": "451d0870cd64e02b41ab82010201b2ab1984f2875cf40ba9786d43f9c0823540"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-G01-claude-2026-10-28-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

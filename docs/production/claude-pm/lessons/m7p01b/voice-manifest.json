@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-P01-claude-2026-10-28-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p01b/lesson.json",
+  "lessonSha256": "7cff8d4acfc9be7055f481ff29af0d45944e93020ec09c5d57d474ae8ae36bd3",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p01b/lesson.production-brief.json",
+    "sha256": "e84a5d509081c426094eab1536d6c9aba89e42fdd80d257048aa52f45f1b1e19"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Eight students each hold a cup of clear liquid. One cup is secretly different. They share liquid with a partner, three times. Then a drop of indicator goes into every cup, and all eight turn pink. So who started it? From the final colours alone, you can't tell. Let's design the model so that you can, and see what it really shows about an epidemic.",
+      "hash": "274eb5f0566c",
+      "textSha256": "274eb5f0566c0161c8423ecdf82a689674116f55e4e037134e78afa9a1bbd6e1",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/hook.274eb5f0566c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/hook.274eb5f0566c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/hook.274eb5f0566c.generation.json",
+      "plannedRequestSha256": "6b5dd5e333d25e32b4f3b4bf3d90ace1a43f4a5cbc0def17d6a49c778234820e"
+    },
+    {
+      "id": "the-model",
+      "parentSceneId": "the-model",
+      "text": "An epidemic is a rise in cases above what's expected in a population. This is a model of one: a simplified version of something real. Each cup is a person. Mixing liquid with a partner is a contact, like direct contact. The secret cup holds a dilute base, sodium carbonate solution, which stands for a pathogen. And the indicator is the test.",
+      "hash": "2a7d27edc3ad",
+      "textSha256": "2a7d27edc3ad66207ea91bd22527f57e73567476fa8bd55fff762fc9f6e4e406",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/the-model.2a7d27edc3ad.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/the-model.2a7d27edc3ad.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/the-model.2a7d27edc3ad.generation.json",
+      "plannedRequestSha256": "669feefb7bfef3bf39f535bcf574afa5db1fc11ac544752e850e4f28a2a5245a"
+    },
+    {
+      "id": "the-marker",
+      "parentSceneId": "the-marker",
+      "text": "The marker has to stay invisible until you test, so nobody knows who's infected while they mix. Phenolphthalein is an indicator, a chemical that changes colour. It stays colourless in water, but turns pink in a solution that's basic enough. So a cup that's received enough base turns pink, and a cup that hasn't stays clear.",
+      "hash": "927ea5a76fa0",
+      "textSha256": "927ea5a76fa0ee99553002ef4f290d16d09c1f07117f3bbe8b7802f310845a4e",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/the-marker.927ea5a76fa0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/the-marker.927ea5a76fa0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/the-marker.927ea5a76fa0.generation.json",
+      "plannedRequestSha256": "e4dadb7f635fb9c2d29c510368e0bb9ca22ec39035b9ed068aa35d56cd785525"
+    },
+    {
+      "id": "method",
+      "parentSceneId": "method",
+      "text": "Everyone starts with ten millilitres in a numbered cup, and your teacher secretly makes one cup the starter. Each round, find a new partner. One of you pours all your liquid into the other's cup, then pours half back. Before round one, and after every round, put three drops from your cup into your own column of a well plate. And record each partner on the class contact sheet. Keep volumes, pours and drops the same, so only the contacts decide who turns pink.",
+      "hash": "213b8dfccc14",
+      "textSha256": "213b8dfccc1449f3f06add331e5649ef11c682f81d50ddbed81385e0930aa390",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/method.213b8dfccc14.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/method.213b8dfccc14.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/method.213b8dfccc14.generation.json",
+      "plannedRequestSha256": "95cd26ac19463f9ee1d05636d2334f52587e24c20d2565125771e555b4fd3d99"
+    },
+    {
+      "id": "controls-repeats",
+      "parentSceneId": "controls-repeats",
+      "text": "You need two controls. The negative control is a cup of the same water that nobody mixes. With indicator it should stay clear, which shows the water and cups weren't already basic. The positive control is a cup of the base, which should turn pink, showing the indicator works. The teacher's secret record checks your tracing is accurate. Then repeat with a new starter: if it finds the source every time, it's reliable.",
+      "hash": "af2f0316db80",
+      "textSha256": "af2f0316db80d8748fee68424054ada76e37eed961d625cdda3ffda255380515",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/controls-repeats.af2f0316db80.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/controls-repeats.af2f0316db80.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/controls-repeats.af2f0316db80.generation.json",
+      "plannedRequestSha256": "0c89a8492158198e0399bf8d830ca67bd11e2907a4c2fa2c8c0572ab9be0094c"
+    },
+    {
+      "id": "test-cups",
+      "parentSceneId": "test-cups",
+      "text": "After round three, your teacher adds a drop of indicator to every cup. All eight turn pink. The final test shows who's infected now, but not who was first, or when anyone caught it. That's why the saved samples matter.",
+      "hash": "4889b631cea0",
+      "textSha256": "4889b631cea040839177b24413d46ccd40935c40bebb7315867e1ec5ede336a7",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/test-cups.4889b631cea0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/test-cups.4889b631cea0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/test-cups.4889b631cea0.generation.json",
+      "plannedRequestSha256": "f2ed155587298b7a56ef1ffd743dd1dc8cc19f4ae079d9ea7a4a065265b9eb12"
+    },
+    {
+      "id": "trace-source",
+      "parentSceneId": "trace-source",
+      "text": "Now the teacher adds indicator to the well plate. Read it row by row. At the start, only D is pink, so D was the starter. After round one, C is pink too, and the contact sheet shows C mixed with D. Without the start row, you couldn't tell C from D. After round two, A and G join them, partners of C and D. Real outbreaks have no start sample, so health teams use when symptoms began, and who each case met, called contact tracing.",
+      "hash": "0d27e4e6a547",
+      "textSha256": "0d27e4e6a547319b5b5fc23b1954640a862c862ab9b77acb0831fccb0e0f1433",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/trace-source.0d27e4e6a547.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/trace-source.0d27e4e6a547.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/trace-source.0d27e4e6a547.generation.json",
+      "plannedRequestSha256": "76e7123a51bc6d0a34f56c137619802a5d253675d61e46392ac3e8582f92a356"
+    },
+    {
+      "id": "epidemic-curve",
+      "parentSceneId": "epidemic-curve",
+      "text": "Now count the new cases each round: one at the start, one after round one, two after round two, four after round three. Plotted against time as a bar graph, that's an epidemic curve: new cases against time. Here every infected cup met a clear one, so the number infected doubled each round: one, two, four, eight. That growing shape is typical of person-to-person spread. If all eight cups had been filled from one contaminated jug, they'd all turn pink at once: one sharp peak.",
+      "hash": "0002896b2448",
+      "textSha256": "0002896b2448bd178159aba25011793c74e30a35b3eda83c50d3f1a78708561d",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/epidemic-curve.0002896b2448.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/epidemic-curve.0002896b2448.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/epidemic-curve.0002896b2448.generation.json",
+      "plannedRequestSha256": "869d24d3a74d7247b231e70e3f471032345050a2d529e97e212b223a5754e327"
+    },
+    {
+      "id": "indirect-contact",
+      "parentSceneId": "indirect-contact",
+      "text": "You can model indirect contact too. Dab a little fluorescent powder on a door handle, a shared object or fomite. After a lesson, shine an ultraviolet torch around the room. Glowing specks show where the powder travelled: other handles, desks and pens. Vectors are harder to model safely, so use secondary data for them.",
+      "hash": "870dc0010b24",
+      "textSha256": "870dc0010b24804c9ec2fd611eb91f0df88975820c393a6a92346b877b250034",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/indirect-contact.870dc0010b24.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/indirect-contact.870dc0010b24.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/indirect-contact.870dc0010b24.generation.json",
+      "plannedRequestSha256": "f9ac9761b3a00953ce2a6ac83a9ba1829cce2f7dc97f2d4958829b177af2ad2a"
+    },
+    {
+      "id": "model-limits",
+      "parentSceneId": "model-limits",
+      "text": "Now the limits. In the model, every contact passes it on, but real contacts don't always transmit. Real pathogens multiply inside a host, but here the base gets more dilute with each pour, so after many rounds the pink could fade and miss a case. There's no delay before someone can pass it on, no recovery and no immunity, and everyone meets exactly one person per round. So the model is valid for showing how contacts link cases, not for predicting how fast a real disease spreads.",
+      "hash": "bb970459c66d",
+      "textSha256": "bb970459c66d59f7104acbdf5113db6beaec8efb0bd11bab05f183a41faa0fb0",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/model-limits.bb970459c66d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/model-limits.bb970459c66d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/model-limits.bb970459c66d.generation.json",
+      "plannedRequestSha256": "db75ab11585b5d2fc241aee24f2368e9b9aabf0eb26cd1bc1bebce15dc8f5b10"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. Sodium carbonate solution can irritate eyes, and phenolphthalein indicator is flammable and may cause cancer. So wear safety glasses, let your teacher add the indicator, and keep flames away. Never taste or drink anything: these are lab cups. Don't shine the ultraviolet torch at anyone's eyes. Wipe up spills, wash your hands, and dispose of liquids as your teacher directs.",
+      "hash": "4104dc2e6846",
+      "textSha256": "4104dc2e68461a65b3b14000afceb9c26e09341ed08d8ee36e9b3a7f2c1d7ef0",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/risk-assessment.4104dc2e6846.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/risk-assessment.4104dc2e6846.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/risk-assessment.4104dc2e6846.generation.json",
+      "plannedRequestSha256": "fa294e3a7fb3fb4d94ba8f6b7d2973ae552e2644e9e8a26e75103bce4547c5ff"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Six students ran the model for two rounds. In round one, P mixed with Q, R with S, and T with U. In round two, P mixed with R, Q with T, and S with U. At the end, P, Q, R and T were pink. Identify which student or students could have been the starter, and justify your answer. Then propose one change to the method that would identify the starter. Pause here to answer.",
+      "hash": "7eb132668a1e",
+      "textSha256": "7eb132668a1eafb074fdc22446575ab1f9be3ca397855e7633aa3ff13e1b0962",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/attempt-1.7eb132668a1e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/attempt-1.7eb132668a1e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/attempt-1.7eb132668a1e.generation.json",
+      "plannedRequestSha256": "80cbe97d84d0f4d4679175d033db8264fe12becd3431f76955b7320c4fec57ef"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Only P or Q fits. If P started, Q catches it in round one, then P passes it to R, and Q to T, while S and U stay clear. Starting with Q gives the same result. R or T would have infected S or U. You can't tell P from Q, because they mixed first, so test a sample saved before round one. Saying P, because P is listed first, is the classic mistake.",
+      "hash": "cdc5cc144897",
+      "textSha256": "cdc5cc144897c680bd3899c5b3f0b0c2f2dfc54ce338cf3662be80ffbb4168fc",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/feedback-1.cdc5cc144897.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/feedback-1.cdc5cc144897.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/feedback-1.cdc5cc144897.generation.json",
+      "plannedRequestSha256": "7f11d429daad6e460faba05a95ddf89e0386b2005ace9332bb086346611a1c54"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "A class of eight ran the model for three rounds, and all eight cups turned pink. A student wrote, \"The model shows that a real disease would infect everyone in a class within three rounds of contact.\" Assess this claim. Pause here to answer.",
+      "hash": "5959443fafb2",
+      "textSha256": "5959443fafb2b26689ba945c4264ef86e40a56b11abd60b71ba4228ba5237b21",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/attempt-2.5959443fafb2.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/attempt-2.5959443fafb2.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/attempt-2.5959443fafb2.generation.json",
+      "plannedRequestSha256": "68b773e86a872d3be67f3a4c58581c310afadec780b187b8d3ec36a65f8cdb2d"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The claim overreaches. In the model, every contact transmits, so cases climb fast. Real contacts don't always pass on a pathogen, some people are immune, and there's a delay before people can spread it, so real spread depends on the disease and the group. The model does show how fast linked contacts can multiply. Calling it useless because it uses chemicals, not germs, is the classic mistake.",
+      "hash": "ca6e2d24df8d",
+      "textSha256": "ca6e2d24df8d139979a47ab92e36e904d1a401b552dac31cb2eb994bd113341b",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/feedback-2.ca6e2d24df8d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/feedback-2.ca6e2d24df8d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/feedback-2.ca6e2d24df8d.generation.json",
+      "plannedRequestSha256": "d0a67bbfd0d02151c31e8f182a66afbe9a1a01c6718e93475e8264f93fc0b8bd"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: a hidden marker, both controls, recorded contacts, a sample saved every round, and repeat runs. The last test shows who, the saved samples show when, and the contacts show how. Claim only what the model can show. Next: testing a water or food sample for microbes.",
+      "hash": "2bc8ee5440bd",
+      "textSha256": "2bc8ee5440bdfde1a30677da0d14bcf674c6d7dd6a433c7c901c7a6841c37dfb",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/decision-rule.2bc8ee5440bd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/decision-rule.2bc8ee5440bd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/decision-rule.2bc8ee5440bd.generation.json",
+      "plannedRequestSha256": "51ce4a7416bd0a23099e7dacafd4e6315d5d06964d62e8694e80d73f76c3098b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P01-claude-2026-10-28-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

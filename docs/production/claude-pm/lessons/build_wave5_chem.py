@@ -16001,6 +16001,1571 @@ SKILLS07_ROWS = {
     ]
 }
 # END generated rows: m7c07, m7p03c, m7g02, m7c08a, m7c08b, skills07
+# BEGIN generated rows: m7c09, m7c10, m7c11, m7c12, m7c13, m7c14
+M7C09_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Carboxylic acids: why are they acidic?\".",
+        "Hook (same mass, both O–H, only one an acid): In the alcohol reactions video, ethanol was oxidised under reflux, all the way to ethanoic acid.",
+        "vinegar / red / fizzes",
+        "On the spoken cues: A small grey thumbnail sits top-left: \"ethanol + [O] (reflux) → ethanoic acid\" (grey \"c08a\" chip). On \"vinegar\" `m6-vinegar-bottle-v1.png` appears small at the left with the tag \"vinegar: dilute ethanoic acid\", then shrinks and dims; the tag dims as the structures draw. Ethanoic acid (CH₃COOH) and propan-1-ol (CH₃CH₂CH₂OH) draw side by side as condensed formulas, each with a chip \"60 g/mol\" that pulses together, and",
+        "explain",
+        "heading writes on: \"Carboxylic acids: why are they acidic?\". A small grey thumbnail sits top-left: \"ethanol + [O] (reflux) → ethanoic acid\" (grey \"c08a\" chip). On \"vinegar\" `m6-vinegar-bottle-v1.png` appears small at the left with the tag \"vinegar: dilute ethanoic acid\", then shrinks and dims; the tag dims as the structures draw. Ethanoic acid (CH₃COOH) and propan-1-ol (CH₃CH₂CH₂OH) draw side by side as condensed formulas, each with a chip \"60 g/mol\" that pulses together, and each O–H ringed grey (tag \"both have O–H\"). As the boiling points are said, the \"both have O–H\" tag dims and two small chips write under them: \"118 °C\" and \"97 °C\". On \"red\" the \"60 g/mol\" chips dim to grey and a small coded tick chip \"litmus: red\" writes under the acid; on \"fizzes\" a second \"NaHCO₃: fizz\" writes under it. On \"neither\" two grey crossed chips write under the alcohol: \"litmus: no change\", \"NaHCO₃: no fizz\". As the question is asked the c08a thumbnail dims. Bright at the end: the heading and the two structures with their chip columns (the chips are one group). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "carboxyl-group": [
+        "new",
+        "the board clears.",
+        "The carboxyl group: The acid's group is the carboxyl group, C O O H.",
+        "carboxyl / same / one / polar",
+        "On the spoken cues: Task chip \"Acid or alcohol?\". Ethanoic acid redraws in full structural form, both C=O and O–H drawn explicitly (the site's Must Do); an ink ball-and-stick version sits small beneath it (engine3d port), showing the flat C–C(=O)–O region. On \"carboxyl\" the group is ringed red with the chip \"carboxyl group: –COOH\" and a grey sub-chip \"carbonyl + hydroxyl\". On \"same\" a small bracket joins the C=O and the O–H to the one",
+        "explain",
+        "the board clears. Task chip \"Acid or alcohol?\". Ethanoic acid redraws in full structural form, both C=O and O–H drawn explicitly (the site's Must Do); an ink ball-and-stick version sits small beneath it (engine3d port), showing the flat C–C(=O)–O region. On \"carboxyl\" the group is ringed red with the chip \"carboxyl group: –COOH\" and a grey sub-chip \"carbonyl + hydroxyl\". On \"same\" a small bracket joins the C=O and the O–H to the one carbon (tag \"both on one carbon\"). On \"one\" the O–H hydrogen glows grey-white and a chip \"two O–H groups\" fades in and is crossed (caption \"one O–H; the C=O oxygen has no H\"). On \"polar\" the polar pull runs on both the C=O and the O–H: δ− on each O, δ+ on the C and on the H; a grey tag \"intramolecular: covalent bonds inside\" writes and dims. Bright at the end: the structure, the \"carboxyl group\" chip and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "naming-acids": [
+        "new",
+        "the board clears.",
+        "Naming carboxylic acids: To name one, find the longest chain that includes the carboxyl carbon.",
+        "one / butanoic / two / two-methylpropanoic",
+        "On the spoken cues: Task chip \"Name it\". The name builder (c01) with slots \"branches\", \"stem\", \"ending\". Butanoic acid draws in full structural form (carboxyl ringed red). On \"longest chain\" the four carbons glow pale blue, including the carboxyl carbon. On \"oic acid\" the builder writes \"butane\", the final \"e\" is struck grey and \"oic acid\" writes in red in the ending slot. On \"one\" the locant counter pops \"1\" on the carboxyl carbon",
+        "explain",
+        "the board clears. Task chip \"Name it\". The name builder (c01) with slots \"branches\", \"stem\", \"ending\". Butanoic acid draws in full structural form (carboxyl ringed red). On \"longest chain\" the four carbons glow pale blue, including the carboxyl carbon. On \"oic acid\" the builder writes \"butane\", the final \"e\" is struck grey and \"oic acid\" writes in red in the ending slot. On \"one\" the locant counter pops \"1\" on the carboxyl carbon (grey tag \"always C1: no number\"). On \"butanoic\" a small column writes beside it: \"HCOOH methanoic acid\", \"CH₃COOH ethanoic acid\", \"CH₃CH₂COOH propanoic acid\", \"CH₃CH₂CH₂COOH butanoic acid\", each lighting and dimming in turn. On \"two\" the ethanoic acid line brightens and its two carbons glow pale blue with a tag \"2 carbons, counting the COOH carbon\". On \"two-methylpropanoic\" butanoic acid leaves and (CH₃)₂CHCOOH draws (branch amber); locants pop \"1\" (carboxyl carbon), \"2\" (branch carbon), \"3\"; the builder writes \"2-methyl\" + \"propan\" + \"oic acid\". Bright at the end: the 2-methylpropanoic acid structure, its name and the \"always C1\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "dimers-boiling": [
+        "new",
+        "the board clears.",
+        "Two hydrogen bonds per pair: Now the boiling points.",
+        "beside / gives / takes / two / dimer / higher",
+        "On the spoken cues: Task chip \"Forces\". A small grey chip \"c05: O–H gives and takes hydrogen bonds\" writes on \"give and take\" and dims on \"isn't the difference\". One ethanoic acid molecule (skeletal with the carboxyl in full, ringed red). On \"beside\" the C=O oxygen's lone pairs pulse next to the ringed O–H (tag \"second O: a second taker\"). On \"gives\" a short violet arrow leaves its O–H hydrogen (tag \"O–H gives\"). On \"takes\" a short",
+        "explain",
+        "the board clears. Task chip \"Forces\". A small grey chip \"c05: O–H gives and takes hydrogen bonds\" writes on \"give and take\" and dims on \"isn't the difference\". One ethanoic acid molecule (skeletal with the carboxyl in full, ringed red). On \"beside\" the C=O oxygen's lone pairs pulse next to the ringed O–H (tag \"second O: a second taker\"). On \"gives\" a short violet arrow leaves its O–H hydrogen (tag \"O–H gives\"). On \"takes\" a short violet arrow points into the C=O oxygen's lone pairs (tag \"C=O takes\"). On \"two\" a second ethanoic acid molecule slides in, rotated to face it, and the dimer lock runs: two dotted violet hydrogen bonds draw at once, closing the ring. On \"dimer\" a bracket tag \"dimer: a pair held by 2 hydrogen bonds\" writes, and the \"second taker\", \"gives\" and \"takes\" tags dim. On \"dipole-dipole\" dotted teal lines flicker between the C=O of the pair and a neighbouring pair (tag \"+ dipole–dipole\"). On \"higher\" the force view shrinks left and the boiling point strip draws at the right with the dashed \"room temperature, 25 °C\" line; propan-1-ol drops to \"97 °C\" (tag \"hydrogen bonding\"), and ethanoic acid to \"118 °C\" (tag \"dimers + dipole–dipole\"); a grey chip \"both 60 g/mol\" sits between them. With the strip, a chip \"more O atoms, so a higher boiling point\" fades in and is crossed (caption \"it's the forces, not the count of O atoms\"). Bright at the end: the dimer, the two strip marks and the \"both 60 g/mol\" chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "series-solubility": [
+        "new",
+        "the board clears; the strip stays at the right and its two earlier marks leave.",
+        "Within the family: chain length and water: Within the family, the pattern is like the alcohols.",
+        "sixty four / water / falls",
+        "On the spoken cues: Four skeletal acids (C1 to C4, carboxyl ringed red) drop to their marks as named: \"methanoic 101 °C\", \"ethanoic 118 °C\", \"propanoic 141 °C\", on \"sixty four\" \"butanoic 164 °C\"; pale-blue dispersion dots lengthen along each chain (tag \"longer chain: more dispersion\"). A small grey chip \"c05: Same family? Size wins.\" writes and dims. On \"water\" the strip leaves and the water lattice (c03) draws around a propanoic acid",
+        "explain",
+        "the board clears; the strip stays at the right and its two earlier marks leave. Four skeletal acids (C1 to C4, carboxyl ringed red) drop to their marks as named: \"methanoic 101 °C\", \"ethanoic 118 °C\", \"propanoic 141 °C\", on \"sixty four\" \"butanoic 164 °C\"; pale-blue dispersion dots lengthen along each chain (tag \"longer chain: more dispersion\"). A small grey chip \"c05: Same family? Size wins.\" writes and dims. On \"water\" the strip leaves and the water lattice (c03) draws around a propanoic acid molecule: water molecules form dotted violet hydrogen bonds to both the O–H and the C=O oxygen (tag \"hydrogen bonds with water\"). On \"falls\" a short strip writes left to right, each label lighting and the previous dimming: \"butanoic: mixes\", \"pentanoic: partly\", \"hexanoic: barely\" (grey tag \"longer chain, less soluble\"). Bright at the end: the propanoic acid in the lattice, its tag and the last strip label. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "weak-acid": [
+        "new",
+        "the board clears.",
+        "Acidic in water, but weak: So why is it an acid?",
+        "proton / ethanoate / reversible / eighty / weak",
+        "On the spoken cues: Task chip \"Why acidic?\". Ethanoic acid (full structural) beside one water molecule. On \"proton\" `ProtonHop` (chem-m6-c01) carries the O–H hydrogen as a proton to the water's lone pair; the water becomes H₃O⁺ (tag \"hydronium, H₃O⁺\"). On \"ethanoate\" the acid redraws as CH₃COO⁻ with a grey-violet glow on its O–C–O (tag \"ethanoate ion: the acid after losing H⁺\"). The equation writes beneath in one line: \"CH₃COOH + H₂O ⇌",
+        "explain",
+        "the board clears. Task chip \"Why acidic?\". Ethanoic acid (full structural) beside one water molecule. On \"proton\" `ProtonHop` (chem-m6-c01) carries the O–H hydrogen as a proton to the water's lone pair; the water becomes H₃O⁺ (tag \"hydronium, H₃O⁺\"). On \"ethanoate\" the acid redraws as CH₃COO⁻ with a grey-violet glow on its O–C–O (tag \"ethanoate ion: the acid after losing H⁺\"). The equation writes beneath in one line: \"CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺\", the ⇌ glowing on \"reversible\", with a small grey tag under it on \"lies well to the left\": \"lies to the left\". On \"taking protons back\" a faint reverse arrow under the ⇌ pulses once. On \"two point nine\" a small grey chip \"M6: 0.10 mol/L, pH 2.9\" writes. On \"eighty\" a small particle lens (M6 C05 style) shows 80 small icons in an 8 × 10 grid: 79 whole molecules and one ionised pair, counter \"about 1 in 80\" (icon count and counter match). On \"weak\" a chip \"carboxylic acids are strong acids\" fades in and is crossed (caption \"weak: only partly ionised\"); a grey tag \"weak ≠ dilute\" writes and dims. Bright at the end: the equation, the lens counter and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Cam lens zoom",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "shared-charge": [
+        "new",
+        "the board clears.",
+        "Why the acid lets go, and the alcohol doesn't: But why does the acid's O H let go, when an alcohol's barely does?",
+        "spread / one / sixteen",
+        "On the spoken cues: Left: CH₃COO⁻ (full structural, the carboxyl region enlarged). A grey chip \"conjugate base: what's left after H⁺ goes\" writes (grey \"M6\" chip); both dim before \"spread\". On \"the C double bond O right beside\" the C=O beside the bare oxygen pulses. On \"spread\" the charge share runs: the grey-violet glow spreads from one oxygen across to both; the C=O and C–O redraw as two equal bonds (tag \"charge shared across both",
+        "explain",
+        "the board clears. Left: CH₃COO⁻ (full structural, the carboxyl region enlarged). A grey chip \"conjugate base: what's left after H⁺ goes\" writes (grey \"M6\" chip); both dim before \"spread\". On \"the C double bond O right beside\" the C=O beside the bare oxygen pulses. On \"spread\" the charge share runs: the grey-violet glow spreads from one oxygen across to both; the C=O and C–O redraw as two equal bonds (tag \"charge shared across both O\", with a small grey tag under it, no narration: \"(also called delocalised, or resonance)\"). On \"about half on each\" each oxygen gains a small \"½−\". On \"takes protons back less readily\" a faint dashed proton approaches and drifts away again (tag \"less pull on H⁺\"). Right, on \"one\": the alkoxide from propan-1-ol, CH₃CH₂CH₂O⁻, draws with the glow concentrated on its single oxygen and a full \"−\" (tag \"no C=O: charge on one O\"); on \"snatch\" a dashed proton snaps back onto it (tag \"takes H⁺ straight back\"). On \"four point seven\" a pKa ladder draws at the far right, low numbers at the top (grey \"M6: lower pKa, stronger acid\"): \"ethanoic acid 4.74 (M6)\" near the top, on \"sixteen\" \"alcohol ≈ 16\" near the bottom, with a bracket \"about 11 units\" and a grey tag \"each unit ×10\". Bright at the end: the two ions with their tags and the pKa ladder. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "litmus": [
+        "adjust",
+        "the board clears.",
+        "Evidence: litmus: You can see the difference.",
+        "red / blue",
+        "On the spoken cues: Task chip \"Test it\". Two copies of the new `m7-litmus-blue-strip-v1.png` sit side by side, same size, labelled \"ethanoic acid (aq)\" and \"propan-1-ol (aq)\". On \"red\" the left plate cross-fades to `m6-litmus-red-v1.png` (aligned pair) while a small coded drop lands on the strip; a tag \"more H₃O⁺: blue → red\". On \"blue\" a drop lands on the right strip and it stays blue (tag \"no change\"). Bright at the end: the two",
+        "explain",
+        "the board clears. Task chip \"Test it\". Two copies of the new `m7-litmus-blue-strip-v1.png` sit side by side, same size, labelled \"ethanoic acid (aq)\" and \"propan-1-ol (aq)\". On \"red\" the left plate cross-fades to `m6-litmus-red-v1.png` (aligned pair) while a small coded drop lands on the strip; a tag \"more H₃O⁺: blue → red\". On \"blue\" a drop lands on the right strip and it stays blue (tag \"no change\"). Bright at the end: the two strips and their two tags. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "acid-reactions": [
+        "new",
+        "the board clears; the strips leave.",
+        "It reacts like an acid: It also reacts like the acids from Module six.",
+        "sodium ethanoate / oate / bubbles",
+        "On the spoken cues: A grey chip \"M6: acid + base, acid + metal\" writes and dims. The reaction strip writes one line at a time: \"CH₃COOH + NaOH → CH₃COONa + H₂O\", the salt boxed on \"sodium ethanoate\" (tag \"salt + water\"). On \"oate\" the name builder writes \"ethan\" + \"oic acid\", strikes \"oic acid\" grey and writes \"oate\" in red (tag \"acid → salt: -oic acid becomes -oate\"). On \"more slowly\" a small grey tag writes: \"fewer H₃O⁺ ions, so",
+        "explain",
+        "the board clears; the strips leave. A grey chip \"M6: acid + base, acid + metal\" writes and dims. The reaction strip writes one line at a time: \"CH₃COOH + NaOH → CH₃COONa + H₂O\", the salt boxed on \"sodium ethanoate\" (tag \"salt + water\"). On \"oate\" the name builder writes \"ethan\" + \"oic acid\", strikes \"oic acid\" grey and writes \"oate\" in red (tag \"acid → salt: -oic acid becomes -oate\"). On \"more slowly\" a small grey tag writes: \"fewer H₃O⁺ ions, so slower\". On \"bubbles\" the first line dims and the second writes: \"2CH₃COOH + Mg → (CH₃COO)₂Mg + H₂\", with small coded bubbles rising from \"H₂\" (tag \"magnesium ethanoate + hydrogen gas\"). Bright at the end: the magnesium line, its tag and the \"-oate\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "hydrogen-carbonate-test": [
+        "adjust",
+        "the board clears.",
+        "The test: sodium hydrogen carbonate: The most useful test is sodium hydrogen carbonate, baking soda.",
+        "fizzes / nothing",
+        "On the spoken cues: `m6-clip-baking-soda-vinegar-before-v1.png` appears medium at the centre-left, labelled \"ethanoic acid + NaHCO₃(s)\"; a second copy at the right, same size, labelled \"propan-1-ol + NaHCO₃(s)\". On \"passes a proton\" a small `ProtonHop` runs between a CH₃COOH and an HCO₃⁻ drawn small above the left beaker; a grey chip \"pKa: ethanoic 4.7 < carbonic 6.4\" writes and dims. On \"fizzes\" the left plate cross-fades to",
+        "explain",
+        "the board clears. `m6-clip-baking-soda-vinegar-before-v1.png` appears medium at the centre-left, labelled \"ethanoic acid + NaHCO₃(s)\"; a second copy at the right, same size, labelled \"propan-1-ol + NaHCO₃(s)\". On \"passes a proton\" a small `ProtonHop` runs between a CH₃COOH and an HCO₃⁻ drawn small above the left beaker; a grey chip \"pKa: ethanoic 4.7 < carbonic 6.4\" writes and dims. On \"fizzes\" the left plate cross-fades to `m6-clip-baking-soda-vinegar-fizz-v1.png` while the fizz runs (tag \"CO₂ bubbles\"). On \"nothing\" the right beaker stays still (tag \"no fizz\"). On \"C O two\" the equation writes under the left beaker: \"CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂\", and \"+ CO₂\" is ringed (tag \"don't drop the CO₂\"). Bright at the end: the fizzing beaker, the equation and the \"no fizz\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, a carboxyl group is a C double bond O and an O H on one carbon, and the names end in oic acid.",
+        "twice / grip",
+        "On the spoken cues: Handwritten line: \"Similar size: carboxylic acid > alcohol > aldehyde, ketone > alkane.\" On \"twice\" a small dimer icon (two violet lines) sits beside it. Second handwritten line on \"grip\": \"Share the charge, loosen the grip.\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"–COOH: C=O + O–H on one carbon; '-oic acid', COOH carbon = C1\"; \"dimers: 2 hydrogen",
+        "explain",
+        "the board clears. Handwritten line: \"Similar size: carboxylic acid > alcohol > aldehyde, ketone > alkane.\" On \"twice\" a small dimer icon (two violet lines) sits beside it. Second handwritten line on \"grip\": \"Share the charge, loosen the grip.\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"–COOH: C=O + O–H on one carbon; '-oic acid', COOH carbon = C1\"; \"dimers: 2 hydrogen bonds per pair + dipole–dipole\"; \"weak acid: RCOO⁻ charge shared by 2 O, so a weaker grip on H⁺; fizzes with NaHCO₃\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Compound X has the condensed formula",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Compound X has the condensed structural formula CH₃CH(CH₃)CH₂COOH and boils at 177 °C. Hexan-1-ol, which has a similar molar mass, boils at 157 °C. (a) Give the IUPAC name of X. (b) Explain why X has the higher boiling point, with reference to the intermolecular forces present.\" Beside it the skeletal formula of X in plain ink (no colours, no locants, no ring on the carboxyl). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no strip, no memory aid.",
+        [
+            "ScribbleCircle",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "four / three-methylbutanoic / dimers",
+        "On the spoken cues: On \"carboxyl carbon\" the COOH on the skeletal formula is ringed red and \"IUPAC name\" is underlined; locants pop \"1\" (carboxyl carbon), \"2\", \"3\" (branch carbon), \"4\"; on \"four\" the four-carbon chain glows pale blue (methyl amber). On \"three-methylbutanoic\" the builder writes \"3-methyl\" + \"butan\" + \"oic acid\" (the answer, bright). On \"leaves out\" a chip \"2-methylpropanoic acid\" fades in and is crossed (caption \"a",
+        "explain",
+        "the card stays, shrunk to the top. On \"carboxyl carbon\" the COOH on the skeletal formula is ringed red and \"IUPAC name\" is underlined; locants pop \"1\" (carboxyl carbon), \"2\", \"3\" (branch carbon), \"4\"; on \"four\" the four-carbon chain glows pale blue (methyl amber). On \"three-methylbutanoic\" the builder writes \"3-methyl\" + \"butan\" + \"oic acid\" (the answer, bright). On \"leaves out\" a chip \"2-methylpropanoic acid\" fades in and is crossed (caption \"a different, smaller acid: count the COOH carbon, 4 in the chain\"). On \"similar molar masses\" \"similar molar mass\" is underlined and a small grey tag writes \"similar size: similar dispersion\"; on \"both hydrogen bond\" \"177 °C\" and \"157 °C\" are underlined; on \"dimers\" two small skeletal X molecules lock with two violet hydrogen bonds (tag \"dimer: 2 hydrogen bonds + dipole–dipole\"); \"intermolecular forces\" is underlined. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"Butanoic acid and butan-1-ol are both colourless liquids.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Butanoic acid and butan-one-ol are both",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"Butanoic acid and butan-1-ol are both colourless liquids. Describe a chemical test that would distinguish them, including a balanced equation for any reaction. Explain why only one of them reacts.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "fizzes / shared / trap",
+        "On the spoken cues: On \"Add\" \"chemical test\" is underlined and small copies of the beaker pair appear at the left. On \"fizzes\" \"butanoic acid\" is underlined, the left beaker cross-fades to `m6-clip-baking-soda-vinegar-fizz-v1.png`, and \"balanced equation\" is underlined as the line writes: \"CH₃CH₂CH₂COOH(l) + NaHCO₃(s) → CH₃CH₂CH₂COONa(aq) + H₂O(l) + CO₂(g)\" (the answer, bright), with a small observation chip \"bubbles of colourless gas",
+        "explain",
+        "the card stays, shrunk to the top. On \"Add\" \"chemical test\" is underlined and small copies of the beaker pair appear at the left. On \"fizzes\" \"butanoic acid\" is underlined, the left beaker cross-fades to `m6-clip-baking-soda-vinegar-fizz-v1.png`, and \"balanced equation\" is underlined as the line writes: \"CH₃CH₂CH₂COOH(l) + NaHCO₃(s) → CH₃CH₂CH₂COONa(aq) + H₂O(l) + CO₂(g)\" (the answer, bright), with a small observation chip \"bubbles of colourless gas (CO₂)\". On \"no change\" \"butan-1-ol\" is underlined; the right beaker stays still. On \"shared\" \"explain why only one of them reacts\" is underlined; CH₃CH₂CH₂COO⁻ draws small with the charge share glow and \"½−\" on each O (tag \"charge shared: weaker grip on H⁺\"), beside CH₃CH₂CH₂CH₂O⁻ with the glow on one O (tag \"charge on one O: tight grip\"). On \"stronger acid than carbonic acid\" a small grey chip writes beside the butanoate tag: \"pKa: butanoic ≈ 4.8 < carbonic 6.4\". On \"trap\" a chip \"Both contain an O–H group, so both react.\" fades in and is crossed (caption \"only the carboxylate can share its charge\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So the carboxyl group explains the high boiling points, and why these acids give up a proton.",
+        "Next",
+        "On the spoken cues: The two memory aid lines return small at the top. On \"Next\" ethanoic acid and ethanol draw small side by side with a grey \"+\" and an arrow to a \"?\" box, and `m7-ester-fruit-v1.png` appears small at the right; a chip \"Next: how do an acid and an alcohol make an ester?\" appears.",
+        "explain",
+        "the board clears. The two memory aid lines return small at the top. On \"Next\" ethanoic acid and ethanol draw small side by side with a grey \"+\" and an arrow to a \"?\" box, and `m7-ester-fruit-v1.png` appears small at the right; a chip \"Next: how do an acid and an alcohol make an ester?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C10_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Esters: how do an acid and an alcohol join?\".",
+        "Hook (fruit smells from an acid and an alcohol): Banana and pineapple flavourings often get their smell from esters.",
+        "banana / pineapple / alcohol / out",
+        "On the spoken cues: `m7-ester-fruit-v1.png` appears medium at the centre. On \"banana\" the banana brightens and a tag \"pentyl ethanoate\" writes beside it; on \"pineapple\" the pineapple brightens and a tag \"ethyl butanoate\" writes (both tags with a small grey \"often described as\" chip). The pear stays dim. On \"alcohol\" the plate shrinks to the left and two small coded structures draw at the right: \"ethanoic acid\" (carboxyl ringed red,",
+        "explain",
+        "heading writes on: \"Esters: how do an acid and an alcohol join?\". `m7-ester-fruit-v1.png` appears medium at the centre. On \"banana\" the banana brightens and a tag \"pentyl ethanoate\" writes beside it; on \"pineapple\" the pineapple brightens and a tag \"ethyl butanoate\" writes (both tags with a small grey \"often described as\" chip). The pear stays dim. On \"alcohol\" the plate shrinks to the left and two small coded structures draw at the right: \"ethanoic acid\" (carboxyl ringed red, grey \"c09\" chip) and \"+ ethanol\" (O–H ringed red), with an arrow to a box \"?\". On \"out\" three short question chips write one at a time under the box and stay dim: \"join?\", \"finish?\", \"out?\"; a fourth dim chip \"from ethanol?\" writes with them (no narration; answered on \"ethanol alone\" in scene 10). Bright at the end: the heading, the reactant pair and the \"?\" box. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "joining-halves": [
+        "new",
+        "the board clears; the plate leaves.",
+        "Joining the halves: Take ethanoic acid and ethanol.",
+        "water / ester / condensation",
+        "On the spoken cues: Task chip \"Join them\". Ethanoic acid (left) and ethanol (right) in full structural form, facing each other. On \"loses the O H\" the acid's OH glows (small grey tag, no narration: \"shown by isotope-labelling experiments\"); on \"loses the H\" the alcohol's O–H hydrogen glows. On \"water\" the condensation join runs: the two glowing pieces lift out and slide together into H₂O (water colour), which drops below with \"+ H₂O\".",
+        "explain",
+        "the board clears; the plate leaves. Task chip \"Join them\". Ethanoic acid (left) and ethanol (right) in full structural form, facing each other. On \"loses the O H\" the acid's OH glows (small grey tag, no narration: \"shown by isotope-labelling experiments\"); on \"loses the H\" the alcohol's O–H hydrogen glows. On \"water\" the condensation join runs: the two glowing pieces lift out and slide together into H₂O (water colour), which drops below with \"+ H₂O\". The two parts slide together and a new C–O bond draws, giving CH₃COOCH₂CH₃. On \"ester\" the –COO– ringed red with the chip \"ester group: –COO–\". The equation writes under it: \"CH₃COOH + CH₃CH₂OH ⇌ CH₃COOCH₂CH₃ + H₂O\" (the ⇌ dim grey for now, tag \"more on this arrow soon\"). On \"condensation\" a chip writes \"condensation: join + lose water\". Bright at the end: the ester structure, its \"ester group\" chip and the \"condensation\" chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "naming-esters": [
+        "new",
+        "the board clears.",
+        "Naming: alcohol first, acid second: Ester names have two words, one for each half.",
+        "first / oate / different",
+        "On the spoken cues: Task chip \"Name it\". Ethyl ethanoate (full structural, ester group ringed red) with the name builder below it, two slots labelled \"alcohol part (-yl)\" and \"acid part (-oate)\". On \"first\" the ethyl chain glows pale blue and the first slot writes \"ethyl\" (grey tag \"ethanol → ethyl\"). On \"oate\" the acid side glows amber and the second slot writes \"ethan\" + \"oate\" in red, with a small grey chip \"c09: sodium ethanoate\".",
+        "explain",
+        "the board clears. Task chip \"Name it\". Ethyl ethanoate (full structural, ester group ringed red) with the name builder below it, two slots labelled \"alcohol part (-yl)\" and \"acid part (-oate)\". On \"first\" the ethyl chain glows pale blue and the first slot writes \"ethyl\" (grey tag \"ethanol → ethyl\"). On \"oate\" the acid side glows amber and the second slot writes \"ethan\" + \"oate\" in red, with a small grey chip \"c09: sodium ethanoate\". On \"ethyl ethanoate\" the full name lights. On \"acid side first\" CH₃COOCH₂CH₃ writes small under the structure, acid side amber and alcohol side pale blue, with a curved arrow from the pale-blue end to the name's first word (tag \"formula: acid side first; name: alcohol part first\"). On \"different\" the board shows two condensed structures one above the other: \"CH₃CH₂CH₂COOCH₂CH₃ ethyl butanoate\" (tag \"pineapple\") and \"CH₃COOCH₂CH₂CH₂CH₃ butyl ethanoate\", each with its cut line shown faintly (acid side amber, alcohol side pale blue) so the swapped halves are visible; a grey chip \"both C₆H₁₂O₂\" writes between them, then the chip \"same formula, different esters\". Bright at the end: the two structures, their names and the \"different esters\" chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "working-backwards": [
+        "new",
+        "the board clears.",
+        "Working backwards from an ester: Exam questions often go the other way: here's an ester, what made it?",
+        "next / three / methyl propanoate",
+        "On the spoken cues: The condensed formula \"CH₃CH₂COOCH₃\" writes large, then redraws below in full structural form (ester group ringed red). On \"next\" the cut line drops through the bond between the C=O carbon and the single-bonded oxygen; the left side tints amber (\"acid side: has the C=O\"), the right side pale blue (\"alcohol side: O + chain\"). A chip \"cut at the C=O oxygen\" fades in and is crossed (caption \"cut at the single-bonded",
+        "explain",
+        "the board clears. The condensed formula \"CH₃CH₂COOCH₃\" writes large, then redraws below in full structural form (ester group ringed red). On \"next\" the cut line drops through the bond between the C=O carbon and the single-bonded oxygen; the left side tints amber (\"acid side: has the C=O\"), the right side pale blue (\"alcohol side: O + chain\"). A chip \"cut at the C=O oxygen\" fades in and is crossed (caption \"cut at the single-bonded O\"). On \"three\" the three acid-side carbons pop \"1, 2, 3\" and a tag writes \"propanoic acid\"; on \"methanol\" the single alcohol-side carbon glows with \"methanol\". On \"methyl propanoate\" the builder fills \"methyl\" + \"propanoate\" (bright). Bright at the end: the structure with its cut, the name and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "ester-properties": [
+        "new",
+        "the board clears.",
+        "No O–H, so it boils low and smells: An ester has no O H.",
+        "seventy seven / sixty four / fizzes",
+        "On the spoken cues: Task chip \"Forces\". The force view: four ethyl ethanoate molecules (skeletal, ester group ringed red); dotted teal lines link a δ+ C=O carbon to a δ− oxygen on a neighbour (tag \"dipole–dipole\"), pale-blue dispersion dots along the chains. A chip \"two O atoms, so hydrogen bonding\" fades in and is crossed (caption \"no O–H: no hydrogen bonds between esters\"). On \"seventy seven\" the force view shrinks left and the",
+        "explain",
+        "the board clears. Task chip \"Forces\". The force view: four ethyl ethanoate molecules (skeletal, ester group ringed red); dotted teal lines link a δ+ C=O carbon to a δ− oxygen on a neighbour (tag \"dipole–dipole\"), pale-blue dispersion dots along the chains. A chip \"two O atoms, so hydrogen bonding\" fades in and is crossed (caption \"no O–H: no hydrogen bonds between esters\"). On \"seventy seven\" the force view shrinks left and the boiling point strip draws at the right with its 25 °C line; ethyl ethanoate drops to \"77 °C\" (tag \"dipole–dipole\"), pentan-1-ol to \"138 °C\" (tag \"hydrogen bonding\"), and on \"sixty four\" butanoic acid to \"164 °C\" (tag \"dimers\"); a grey chip \"all about 88 g/mol\" sits beside the strip. On \"evaporate\" a few coded wisps rise from the ethyl ethanoate mark (tag \"volatile\"). On \"C four H eight O two\" the strip shrinks and the two structures draw side by side with a bracket \"C₄H₈O₂: functional group isomers\"; on \"fizzes\" a small tick chip \"NaHCO₃: fizz\" writes under butanoic acid and a crossed chip \"no fizz\" under ethyl ethanoate (grey \"c09\" chip). Bright at the end: the two structures, the bracket and the two test chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "conditions-reflux": [
+        "adjust",
+        "the board clears.",
+        "The conditions: catalyst, heat and reflux: At room temperature, this reaction is very slow.",
+        "catalyst / back / flammable",
+        "On the spoken cues: Task chip \"Conditions\". The equation from scene 2 returns small at the top; on \"catalyst\" a navy chip \"conc. H₂SO₄ (catalyst)\" writes above the arrow (grey tag \"above the arrow, not a reactant\"), and a second navy chip \"heat under reflux\" writes below it. `m7-reflux-apparatus-v1.png` appears medium at the left, its flask labelled \"ethanoic acid + ethanol + conc. H₂SO₄\". On \"back\" the vapour return (c06) runs: coded",
+        "explain",
+        "the board clears. Task chip \"Conditions\". The equation from scene 2 returns small at the top; on \"catalyst\" a navy chip \"conc. H₂SO₄ (catalyst)\" writes above the arrow (grey tag \"above the arrow, not a reactant\"), and a second navy chip \"heat under reflux\" writes below it. `m7-reflux-apparatus-v1.png` appears medium at the left, its flask labelled \"ethanoic acid + ethanol + conc. H₂SO₄\". On \"back\" the vapour return (c06) runs: coded wisps rise into the condenser and droplets fall back, twice (grey chip \"c06: reflux returns vapours\"). On \"flammable\" a navy hazard chip writes beside the plate: \"conc. H₂SO₄: corrosive. Organic liquids: flammable. Electric heater or water bath, no flame.\" Bright at the end: the plate, the two condition chips and the hazard chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "equilibrium-yield": [
+        "new",
+        "the board clears; the plate leaves.",
+        "It never quite finishes: But esterification is reversible.",
+        "equilibrium / two thirds",
+        "On the spoken cues: Task chip \"Yield\". The equation returns at the centre; on \"reversible\" the dim ⇌ brightens and a small reverse arrow under it is labelled \"water splits the ester back\". On \"equilibrium\" four small structure icons sit in a coded flask outline: acid, alcohol, ester, water, each with a small amount bar (grey chip \"M5: equilibrium, both directions continue\"). On \"two thirds\" the yield bar draws under the flask, labelled",
+        "explain",
+        "the board clears; the plate leaves. Task chip \"Yield\". The equation returns at the centre; on \"reversible\" the dim ⇌ brightens and a small reverse arrow under it is labelled \"water splits the ester back\". On \"equilibrium\" four small structure icons sit in a coded flask outline: acid, alcohol, ester, water, each with a small amount bar (grey chip \"M5: equilibrium, both directions continue\"). On \"two thirds\" the yield bar draws under the flask, labelled \"equal amounts: ester formed from the acid\", and fills to about 67% with the tag \"about 2/3\". On \"single arrow\" a chip \"→\" fades in and is crossed (caption \"use ⇌: it doesn't go to completion\"). Bright at the end: the equation, the yield bar and the crossed arrow chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "pushing-yield": [
+        "new",
+        "the yield bar and the four-icon flask stay.",
+        "Pushing the yield up: To get more, use Le Chatelier's principle from Module five.",
+        "excess / nine tenths / sooner",
+        "On the spoken cues: On \"excess\" the ethanol icon's amount bar grows to three times its height (tag \"excess ethanol\") and a navy arrow \"shifts right →\" writes over the equation (grey chip \"M5: added substance partly used up\"). On \"nine tenths\" the yield bar fills from its grey ghost at 67% to about 90% (tag \"3 × ethanol: about 9/10 of the acid\"). On \"Removing water\" the water icon's bar shrinks (tag \"remove water → shifts right\"). On",
+        "explain",
+        "the yield bar and the four-icon flask stay. On \"excess\" the ethanol icon's amount bar grows to three times its height (tag \"excess ethanol\") and a navy arrow \"shifts right →\" writes over the equation (grey chip \"M5: added substance partly used up\"). On \"nine tenths\" the yield bar fills from its grey ghost at 67% to about 90% (tag \"3 × ethanol: about 9/10 of the acid\"). On \"Removing water\" the water icon's bar shrinks (tag \"remove water → shifts right\"). On \"catalyst\" a chip \"more catalyst → more ester\" fades in and is crossed (caption \"catalyst: faster, not more\"); on \"sooner\" a small grey chip \"M5: a catalyst speeds both directions\" writes. Bright at the end: the 90% bar, the \"shifts right\" arrow and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "separating-identifying": [
+        "adjust",
+        "the board clears.",
+        "Getting the ester out, and checking it: After reflux, the flask holds the ester, leftover acid and alcohol, water, and sulfuric acid.",
+        "dissolve / layer / salt / vented / distil / rough",
+        "On the spoken cues: Task chip \"Get it out\". A small coded list writes at the left: \"ester, acid, alcohol, water, H₂SO₄\" (the last four grey). `m7-separating-funnel-cloudy-v1.png` appears medium at the centre-left, labelled \"separating funnel: mixture + water\". On \"dissolve\" the grey \"alcohol\" and \"H₂SO₄\" list items slide down towards the funnel's lower part (tag \"most ethanol and H₂SO₄ → water\"). On \"layer\" it cross-fades to",
+        "explain",
+        "the board clears. Task chip \"Get it out\". A small coded list writes at the left: \"ester, acid, alcohol, water, H₂SO₄\" (the last four grey). `m7-separating-funnel-cloudy-v1.png` appears medium at the centre-left, labelled \"separating funnel: mixture + water\". On \"dissolve\" the grey \"alcohol\" and \"H₂SO₄\" list items slide down towards the funnel's lower part (tag \"most ethanol and H₂SO₄ → water\"). On \"layer\" it cross-fades to `m7-separating-funnel-clear-v1.png` (aligned pair); the upper layer is labelled \"ester layer (less dense here)\" and the lower \"water layer\", with a grey tag \"check densities: don't assume\". On \"sodium carbonate\" the mixture list and the density tag dim, and a navy chip writes \"wash: Na₂CO₃(aq)\" (small grey chip \"c09: carbonates fizz with acids too\"). On \"salt\" a small \"RCOO⁻Na⁺\" chip drops into the lower layer (grey \"c09: salts end -oate\") and the funnel bubbles run in the lower layer; on \"vented\" a small coded arrow at the stopper reads \"vent CO₂ often\". On \"distil\" the wash chip and vent arrow dim, the funnel shrinks and `m7-school-distillation-setup-v1.png` appears small beside it, with a short step strip: \"separate → dry → distil\". On \"seventy seven\" a check chip writes: \"collected near 77 °C\"; on \"rough\" it gains \"(ethanol 78 °C: rough check)\", and a second chip writes \"no fizz with carbonate: acid removed\". Bright at the end: the distillation plate, the step strip and the two check chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "flow-chart": [
+        "new",
+        "the board clears.",
+        "A two-step flow chart: You can even make ethyl ethanoate from ethanol alone.",
+        "arrow / ester",
+        "On the spoken cues: Task chip \"Flow chart\". On \"ethanol alone\" the hook's dim \"from ethanol?\" chip flashes top-left and dims. The flow chart builds left to right: box \"ethanol, CH₃CH₂OH\"; arrow labelled in navy \"K₂Cr₂O₇ / H⁺, heat under reflux\" (grey \"c08a\" chip); box \"ethanoic acid, CH₃COOH\". A second arrow drops from the first box (\"more ethanol\") to join the second arrow, labelled \"conc. H₂SO₄, heat under reflux\"; box \"ethyl",
+        "explain",
+        "the board clears. Task chip \"Flow chart\". On \"ethanol alone\" the hook's dim \"from ethanol?\" chip flashes top-left and dims. The flow chart builds left to right: box \"ethanol, CH₃CH₂OH\"; arrow labelled in navy \"K₂Cr₂O₇ / H⁺, heat under reflux\" (grey \"c08a\" chip); box \"ethanoic acid, CH₃COOH\". A second arrow drops from the first box (\"more ethanol\") to join the second arrow, labelled \"conc. H₂SO₄, heat under reflux\"; box \"ethyl ethanoate, CH₃COOCH₂CH₃ + H₂O\". On \"arrow\" each arrow's label pulses in turn (tag \"box = compound; arrow = reagents + conditions\"). On \"ethene\" a grey box \"ethene + steam (H₃PO₄, about 300 °C, high pressure)\" slides in at the far left with a grey arrow (grey \"c06\" chip). On \"ester\" a handwritten line writes above the chart: \"alkene → primary alcohol → acid → ester\"; on \"Only a primary alcohol\" a small grey tag writes under \"primary alcohol\": \"c08a: secondary → ketone, not acid\". Bright at the end: the three boxes, the handwritten line and the \"box = compound\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, acid plus alcohol, in equilibrium with ester plus water.",
+        "oate / escapes",
+        "On the spoken cues: Handwritten line: \"acid + alcohol ⇌ ester + water\". Second handwritten line on \"oate\": \"Alcohol gets '-yl' (first), acid gets '-oate' (second).\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"cut at the single-bonded O: the C=O side is the acid\"; \"yield up: excess reactant, remove water\"; on \"escapes\" \"Catalyst: faster, not more. Heat: faster. Reflux: nothing",
+        "explain",
+        "the board clears. Handwritten line: \"acid + alcohol ⇌ ester + water\". Second handwritten line on \"oate\": \"Alcohol gets '-yl' (first), acid gets '-oate' (second).\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"cut at the single-bonded O: the C=O side is the acid\"; \"yield up: excess reactant, remove water\"; on \"escapes\" \"Catalyst: faster, not more. Heat: faster. Reflux: nothing escapes.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. An ester has the condensed formula",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"An ester has the condensed structural formula CH₃CH₂COOCH₂CH₂CH₂CH₃. Give the IUPAC name of the ester, and name the carboxylic acid and the alcohol used to make it.\" Beside it the skeletal formula in plain ink (no colours, no cut line, no ring). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no memory aid.",
+        [
+            "ScribbleCircle",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "three / butan-one-ol / butyl propanoate / different",
+        "On the spoken cues: On \"cut\" the cut line drops through the skeletal formula at the single-bonded oxygen; the acid side tints amber and the alcohol side pale blue. On \"three\" the acid-side carbons pop \"1, 2, 3\", \"carboxylic acid\" is underlined and the chip \"acid: propanoic acid\" lights. On \"butan-one-ol\" the four alcohol-side carbons pop \"1 to 4\", \"alcohol\" is underlined and the chip \"alcohol: butan-1-ol\" lights. On \"butyl propanoate\"",
+        "explain",
+        "the card stays, shrunk to the top. On \"cut\" the cut line drops through the skeletal formula at the single-bonded oxygen; the acid side tints amber and the alcohol side pale blue. On \"three\" the acid-side carbons pop \"1, 2, 3\", \"carboxylic acid\" is underlined and the chip \"acid: propanoic acid\" lights. On \"butan-one-ol\" the four alcohol-side carbons pop \"1 to 4\", \"alcohol\" is underlined and the chip \"alcohol: butan-1-ol\" lights. On \"butyl propanoate\" \"IUPAC name of the ester\" is underlined and the builder writes \"butyl\" + \"propanoate\" (the answer, bright). On \"different\" a chip \"propyl butanoate\" fades in and is crossed (caption \"alcohol part first: butyl\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student heats 0.50 mol of propanoic acid with 0.50 mol of methanol and a few drops of concentrated sulfuric acid under reflux.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A student heats point five zero",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student heats 0.50 mol of propanoic acid with 0.50 mol of methanol and a few drops of concentrated sulfuric acid under reflux. At equilibrium, 0.32 mol of methyl propanoate has formed. (a) Write a balanced equation for the reaction. (b) Suggest one change to the reactants that would give more than 0.32 mol of ester, and explain your answer using Le Chatelier's principle.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "equilibrium / excess / longer",
+        "On the spoken cues: On \"equilibrium\" \"balanced equation\" is underlined and the equation writes: \"CH₃CH₂COOH + CH₃OH ⇌ CH₃CH₂COOCH₃ + H₂O\", with \"conc. H₂SO₄\" in navy above the arrow (the answer, bright); \"a few drops of concentrated sulfuric acid\" is underlined. On \"excess\" \"one change to the reactants\" and \"0.50 mol of methanol\" are underlined; a chip \"use excess methanol\" lights; a navy \"shifts right →\" writes over the equation and a",
+        "explain",
+        "the card stays, shrunk to the top. On \"equilibrium\" \"balanced equation\" is underlined and the equation writes: \"CH₃CH₂COOH + CH₃OH ⇌ CH₃CH₂COOCH₃ + H₂O\", with \"conc. H₂SO₄\" in navy above the arrow (the answer, bright); \"a few drops of concentrated sulfuric acid\" is underlined. On \"excess\" \"one change to the reactants\" and \"0.50 mol of methanol\" are underlined; a chip \"use excess methanol\" lights; a navy \"shifts right →\" writes over the equation and a small yield bar fills from 64% (grey ghost, \"0.32 of 0.50\") to a higher, unlabelled level (tag \"more than 0.32 mol\"), and \"0.32 mol of methyl propanoate\" is underlined; \"Le Chatelier's principle\" is underlined. On \"longer\" a chip \"Heat it for longer, so more ester forms.\" fades in and is crossed (caption \"at equilibrium, more time adds no ester\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So an acid and an alcohol join and lose water, and the alcohol part is named first.",
+        "Next",
+        "On the spoken cues: The two memory aid lines return small at the top. On \"Next\" `m7-reflux-apparatus-v1.png` and `m7-separating-funnel-clear-v1.png` appear small at the right, same height, and a chip \"Next: prepare a simple ester in a school laboratory\" appears.",
+        "explain",
+        "the board clears. The two memory aid lines return small at the top. On \"Next\" `m7-reflux-apparatus-v1.png` and `m7-separating-funnel-clear-v1.png` appear small at the right, same height, and a chip \"Next: prepare a simple ester in a school laboratory\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C11_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Amines and amides: why is one a base?\".",
+        "Hook (two nitrogen compounds, only one a base): Leave seafood out too long, and it smells fishy.",
+        "lemon / blue / unchanged",
+        "On the spoken cues: The new `m7-fish-plate-v1.png` appears medium at the left; small grey vapour dots rise from it (tag \"trimethylamine vapour\"). Trimethylamine, (CH₃)₃N, draws small above it with the N indigo and its lone pair dots. On \"lemon\" `m6-lemon-v1.png` appears small beside the fish and the \"trimethylamine vapour\" tag dims; three coded juice drops fall from the cut half onto the fish and the vapour dots thin out and stop (tag",
+        "explain",
+        "heading writes on: \"Amines and amides: why is one a base?\". The new `m7-fish-plate-v1.png` appears medium at the left; small grey vapour dots rise from it (tag \"trimethylamine vapour\"). Trimethylamine, (CH₃)₃N, draws small above it with the N indigo and its lone pair dots. On \"lemon\" `m6-lemon-v1.png` appears small beside the fish and the \"trimethylamine vapour\" tag dims; three coded juice drops fall from the cut half onto the fish and the vapour dots thin out and stop (tag \"smell fades\"). On \"blue\" the \"smell fades\" tag dims, both plates shrink and dim, and `m6-litmus-red-v1.png` appears at the centre-right labelled \"amine (aq)\"; a coded drop lands and the plate cross-fades to `m6-litmus-blue-v1.png` (tag \"red → blue: a base\"). On \"ethanamide\" CH₃CONH₂ draws at the right with its N ringed indigo (tag \"also has N\"). On \"unchanged\" a second `m6-litmus-red-v1.png` sits under it, a drop lands and nothing changes (tag \"no change\"). As the question is asked the fish and lemon leave. Bright at the end: the heading and the two litmus plates with their tags (one group each). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "amine-group": [
+        "adjust",
+        "the board clears.",
+        "The amine group and classifying it: An amine is like ammonia, N H three, with one or more hydrogens swapped for carbon chains.",
+        "lone pair / primary / secondary / tertiary",
+        "On the spoken cues: Task chip \"Classify\". `m5x-ammonia-bottle-v1.png` appears small at the left labelled \"ammonia solution, NH₃(aq)\" (grey \"M6\" chip); NH₃ draws beside it in full structural form, N indigo with its lone pair dots. One H slides off and an ethyl group (amber) slides on: ethanamine CH₃CH₂NH₂ draws (amine group ringed indigo). The bottle dims. On \"lone pair\" the two dots pulse (tag \"lone pair: electrons not used in",
+        "explain",
+        "the board clears. Task chip \"Classify\". `m5x-ammonia-bottle-v1.png` appears small at the left labelled \"ammonia solution, NH₃(aq)\" (grey \"M6\" chip); NH₃ draws beside it in full structural form, N indigo with its lone pair dots. One H slides off and an ethyl group (amber) slides on: ethanamine CH₃CH₂NH₂ draws (amine group ringed indigo). The bottle dims. On \"lone pair\" the two dots pulse (tag \"lone pair: electrons not used in bonding\"). On \"count\" the carbon counter runs on three structures in a row, each lighting in turn and dimming as the next lights: on \"primary\" ethanamine, one amber dot \"1\" on the N, chip \"primary (1°)\"; on \"secondary\" CH₃NHCH₂CH₃, dots \"1\", \"2\", chip \"secondary (2°)\"; on \"tertiary\" (CH₃)₃N, dots \"1\", \"2\", \"3\", chip \"tertiary (3°)\". The row shrinks to the top. On \"propan-two-amine\" CH₃CH(NH₂)CH₃ draws large; the alcohol-style count (two carbons on the C holding the N) flashes grey with a chip \"secondary, like propan-2-ol\" that fades in and is crossed (caption \"count carbons on the N, not on the C\"); on the final \"primary\" one amber dot \"1\" pops on the N and the chip \"primary amine\" writes. Bright at the end: propan-2-amine, its \"primary amine\" chip and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "naming-amines": [
+        "new",
+        "the board clears.",
+        "Naming amines: To name a primary amine, drop the alkane's final e, and add amine, with a number for the nitrogen's carbon when it's needed: ethanamine, propan-one-amine and propan-two-amine.",
+        "ethanamine / N-methylethanamine / N,N-dimethylethanamine",
+        "On the spoken cues: Task chip \"Name it\". The name builder (c01) with slots \"N groups\", \"stem\", \"ending\". Ethanamine draws; on \"drop\" the builder writes \"ethane\", the final \"e\" is struck grey and \"amine\" writes in indigo; on \"ethanamine\" the full name writes, with a grey tag \"(also called ethylamine)\". Propan-1-amine and propan-2-amine draw small side by side, the locant counter popping \"1\" and \"2\" on the N-bearing carbons as each name",
+        "explain",
+        "the board clears. Task chip \"Name it\". The name builder (c01) with slots \"N groups\", \"stem\", \"ending\". Ethanamine draws; on \"drop\" the builder writes \"ethane\", the final \"e\" is struck grey and \"amine\" writes in indigo; on \"ethanamine\" the full name writes, with a grey tag \"(also called ethylamine)\". Propan-1-amine and propan-2-amine draw small side by side, the locant counter popping \"1\" and \"2\" on the N-bearing carbons as each name writes. On \"longest chain\" CH₃NHCH₂CH₃ draws; the two-carbon chain glows pale blue (tag \"longest chain on N: ethan-\"), the methyl amber. On \"N-methylethanamine\" the builder writes \"N-methyl\" + \"ethan\" + \"amine\", the \"N\" pulsing on the nitrogen (tag \"N- : on the nitrogen\"). On \"N,N-dimethylethanamine\" a second methyl slides onto the N and the builder writes \"N,N-dimethyl\" + \"ethan\" + \"amine\". Bright at the end: the tertiary structure, its name and the \"N- : on the nitrogen\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "amide-group": [
+        "new",
+        "the board clears.",
+        "The amide group: An amide has a C double bond O bonded straight to the nitrogen, C O N H two.",
+        "water / ethanamide",
+        "On the spoken cues: Task chip \"Name it\". Ethanamide CH₃CONH₂ draws in full structural form; the amide group is ringed red at the C=O and indigo at the N (chip \"amide group: –CONH₂\"). On \"ester\" a small grey ethyl ethanoate (c10) draws beside it with its single-bonded O ringed grey; the O cross-fades to an N–H in the amide (tag \"O swapped for N\"); the ester dims (grey \"c10\" chip). On \"heated strongly\" a strip writes below: \"CH₃COOH +",
+        "explain",
+        "the board clears. Task chip \"Name it\". Ethanamide CH₃CONH₂ draws in full structural form; the amide group is ringed red at the C=O and indigo at the N (chip \"amide group: –CONH₂\"). On \"ester\" a small grey ethyl ethanoate (c10) draws beside it with its single-bonded O ringed grey; the O cross-fades to an N–H in the amide (tag \"O swapped for N\"); the ester dims (grey \"c10\" chip). On \"heated strongly\" a strip writes below: \"CH₃COOH + H₂NCH₃ → CH₃CONHCH₃ + H₂O\" with \"heat\" printed small over the arrow; on \"water\" the acid's OH and one H on the amine's N glow and leave together as a small H₂O (tag \"condensation: lose water\"); the strip dims. On \"drop the e\" the builder writes \"ethane\", strikes \"e\" grey and writes \"amide\" in indigo; the locant counter pops \"1\" on the C=O carbon (tag \"C=O carbon is C1: no number\"). On \"ethanamide\" the name writes; propanamide draws small beside it with its name. As that sentence ends (no narration) the strip's product CH₃CONHCH₃ brightens and the builder writes \"N-methyl\" + \"ethan\" + \"amide\" (grey tag \"N- : on the nitrogen, as in scene 3\"). Bright at the end: N-methylethanamide, its name and the \"C1\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "amine-forces": [
+        "new",
+        "the board clears.",
+        "Amine forces: weaker hydrogen bonds: Now the forces.",
+        "polar / ninety seven",
+        "On the spoken cues: Task chip \"Forces\". Propan-1-amine and propan-1-ol draw side by side (skeletal, groups in full). The polar pull runs on the N–H and the O–H; on \"polar\" a small grey chip writes \"electronegativity: O 3.4, N 3.0\" (grey \"Year 11\"), and the δ+ on the amine's H is drawn visibly smaller than on the alcohol's H (tag \"smaller δ+: weaker hydrogen bonds\"). Dotted violet hydrogen bonds draw between pairs of each, the amine's",
+        "explain",
+        "the board clears. Task chip \"Forces\". Propan-1-amine and propan-1-ol draw side by side (skeletal, groups in full). The polar pull runs on the N–H and the O–H; on \"polar\" a small grey chip writes \"electronegativity: O 3.4, N 3.0\" (grey \"Year 11\"), and the δ+ on the amine's H is drawn visibly smaller than on the alcohol's H (tag \"smaller δ+: weaker hydrogen bonds\"). Dotted violet hydrogen bonds draw between pairs of each, the amine's thinner. On \"same number of electrons\" the electronegativity chip and the δ+ tag dim, and a grey chip \"both 34 electrons\" pulses between them. On \"ninety seven\" the force view shrinks left and the boiling point strip draws at the right with the dashed \"room temperature, 25 °C\" line: propan-1-amine drops to \"48 °C\" (tag \"N–H hydrogen bonds\"), propan-1-ol to \"97 °C\" (tag \"O–H hydrogen bonds\"). Bright at the end: the two strip marks with their tags and the shrunken force view (one group). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "amine-isomers": [
+        "new",
+        "the board clears; the strip stays at the right with propan-1-ol as a dim mark and propan-1-amine's \"48 °C\" bright.",
+        "Counting N–H hydrogens: three amine isomers: The number of N H hydrogens matters too.",
+        "two / thirty seven / three / lone pair",
+        "On the spoken cues: Task chip \"Forces\". On \"isomers\" three structures draw in a row, each with its carbon counter dots and class chip from scene 2: propan-1-amine CH₃CH₂CH₂NH₂ (\"primary (1°)\"), N-methylethanamine CH₃NHCH₂CH₃ (\"secondary (2°)\") and trimethylamine (CH₃)₃N (\"tertiary (3°)\"); a grey chip \"all C₃H₉N: similar dispersion\" writes. On \"two\" propan-1-amine's two N–H hydrogens glow (chip \"2 N–H\"). On \"only one\"",
+        "explain",
+        "the board clears; the strip stays at the right with propan-1-ol as a dim mark and propan-1-amine's \"48 °C\" bright. Task chip \"Forces\". On \"isomers\" three structures draw in a row, each with its carbon counter dots and class chip from scene 2: propan-1-amine CH₃CH₂CH₂NH₂ (\"primary (1°)\"), N-methylethanamine CH₃NHCH₂CH₃ (\"secondary (2°)\") and trimethylamine (CH₃)₃N (\"tertiary (3°)\"); a grey chip \"all C₃H₉N: similar dispersion\" writes. On \"two\" propan-1-amine's two N–H hydrogens glow (chip \"2 N–H\"). On \"only one\" N-methylethanamine's single N–H glows (chip \"1 N–H\"), and on \"thirty seven\" it drops to \"37 °C\" on the strip (tag \"fewer hydrogen bonds\"). On \"Trimethylamine\" its N glows with no H (chip \"0 N–H\"; tag \"no hydrogen bonds to each other\"); a small grey tag \"IUPAC: N,N-dimethylmethanamine\" writes; on \"three\" it drops to \"3 °C\" on the strip. The three chips \"2 N–H\", \"1 N–H\", \"0 N–H\" are the same chips feedback 1 uses. On \"lone pair\" the IUPAC tag and the row dim, the strip dims, and the water lattice (c03) draws around trimethylamine: one water's H forms a dotted violet hydrogen bond to the N's lone pair (tag \"water gives, N takes\"). Bright at the end: trimethylamine in the lattice, its tag and the three amine strip marks 48, 37 and 3 °C (one group). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "amide-network": [
+        "new",
+        "the board clears; the strip returns at the right with propan-1-amine, N-methylethanamine, trimethylamine and propan-1-ol as dim marks.",
+        "Amides: a hydrogen-bond network: Amides go the other way, even though N H is less polar than O H.",
+        "thirteen / give / network / dimers",
+        "On the spoken cues: On \"less polar\" a small grey chip \"N–H < O–H (scene 5)\" writes and dims. Propanoic acid drops to \"141 °C\" (tag \"dimers\"; grey \"c09\" chip) and, on \"thirteen\", propanamide to \"213 °C\"; a bracket \"+72 °C\" spans the two; grey chip \"both 40 electrons\". The strip shrinks right. On \"how many hydrogen bonds\" a chip \"count the hydrogen bonds\" writes. On \"give\" one propanamide draws with both N–H hydrogens glowing (tag",
+        "explain",
+        "the board clears; the strip returns at the right with propan-1-amine, N-methylethanamine, trimethylamine and propan-1-ol as dim marks. On \"less polar\" a small grey chip \"N–H < O–H (scene 5)\" writes and dims. Propanoic acid drops to \"141 °C\" (tag \"dimers\"; grey \"c09\" chip) and, on \"thirteen\", propanamide to \"213 °C\"; a bracket \"+72 °C\" spans the two; grey chip \"both 40 electrons\". The strip shrinks right. On \"how many hydrogen bonds\" a chip \"count the hydrogen bonds\" writes. On \"give\" one propanamide draws with both N–H hydrogens glowing (tag \"primary amide: 2 N–H\") and the C=O oxygen's lone pairs pulsing (tag \"C=O: takes\"). On \"network\" four more propanamide molecules slide in and dotted violet hydrogen bonds draw outward in several directions, forming a small sheet; the \"count\" chip and the \"C=O: takes\" tag dim. On \"dimers\" beside it, small and grey, two acid molecules lock as one c09 dimer (tag \"acid: pairs off\"). As the network completes, a grey tag \"ethanamide and propanamide: solids, melting at about 80 °C\" writes and dims. As the \"dimers\" sentence ends (no narration), the network dims and a small grey row writes: \"ethanamine 17 °C → propan-1-amine 48 °C → butan-1-amine 78 °C\" with pale-blue dispersion dots lengthening (tag \"longer chain: more dispersion\"); a grey chip \"c05: Same family? Size wins.\" writes and dims. Bright at the end: the network, the \"+72 °C\" bracket and the row's tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "weak-base": [
+        "adjust",
+        "the board clears.",
+        "An amine is a weak base: Back to the litmus.",
+        "takes / ion / left",
+        "On the spoken cues: Task chip \"Proton test\". Ethanamine (full structural, lone pair dots) beside one water molecule. On \"takes\" the lone pair grab runs: the dots stretch toward one water H, `ProtonHop` carries the proton across, and the dots become a new N–H bond; the nitrogen gains a \"+\" (tag \"lone pair takes H⁺\"); grey chip \"M6: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻\". On \"ion\" the water becomes OH⁻ (Module 6 anion colour; tag \"hydroxide left",
+        "explain",
+        "the board clears. Task chip \"Proton test\". Ethanamine (full structural, lone pair dots) beside one water molecule. On \"takes\" the lone pair grab runs: the dots stretch toward one water H, `ProtonHop` carries the proton across, and the dots become a new N–H bond; the nitrogen gains a \"+\" (tag \"lone pair takes H⁺\"); grey chip \"M6: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻\". On \"ion\" the water becomes OH⁻ (Module 6 anion colour; tag \"hydroxide left behind\"), and the equation writes beneath: \"CH₃CH₂NH₂ + H₂O ⇌ CH₃CH₂NH₃⁺ + OH⁻\" (tag \"ethylammonium ion\"). On \"red litmus blue\" `m6-litmus-red-v1.png` appears small at the right and cross-fades to `m6-litmus-blue-v1.png` (tag \"more OH⁻: red → blue\"). On \"left\" the ⇌ glows and a grey tag \"lies to the left\" writes under it; a small particle lens shows 15 icons, 14 whole amine molecules and 1 ion pair, with no numeric counter (the icons carry \"most stay unchanged\"; the ratio matches 0.10 mol/L, author note d). On \"weak bases\" a grey tag \"weak base: only partly takes protons\" writes. Bright at the end: the equation, the litmus plate and the \"lies to the left\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Cam lens zoom",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "amine-salts": [
+        "adjust",
+        "the board clears; the litmus plate leaves.",
+        "Amine and acid make a salt: With a stronger proton donor, like hydrochloric acid, the reaction goes to completion.",
+        "ethylammonium chloride / salt",
+        "On the spoken cues: Ethanamine beside HCl. On \"completion\" `ProtonHop` carries the H from HCl to the lone pair (single arrow, tag \"goes to completion\"). On \"ethylammonium chloride\" the line writes: \"CH₃CH₂NH₂ + HCl → CH₃CH₂NH₃⁺Cl⁻\", the product boxed (tag \"ionic salt\"); the two ions sit in a small lattice of + and − tiles (tag \"strong attraction between ions\"). On \"barely evaporates\" the vapour check runs on two small panels: over the",
+        "explain",
+        "the board clears; the litmus plate leaves. Ethanamine beside HCl. On \"completion\" `ProtonHop` carries the H from HCl to the lone pair (single arrow, tag \"goes to completion\"). On \"ethylammonium chloride\" the line writes: \"CH₃CH₂NH₂ + HCl → CH₃CH₂NH₃⁺Cl⁻\", the product boxed (tag \"ionic salt\"); the two ions sit in a small lattice of + and − tiles (tag \"strong attraction between ions\"). On \"barely evaporates\" the vapour check runs on two small panels: over the amine, grey vapour dots rise (tag \"molecules escape\"); over the salt, no dots (tag \"ions: stays put\"). On \"lemon trick\" `m7-fish-plate-v1.png` and `m6-lemon-v1.png` return small at the left; on \"salt\" juice drops fall, (CH₃)₃N draws small above the fish and gains an H⁺ to become (CH₃)₃NH⁺ (tag \"trimethylammonium: a salt\"), and the vapour dots stop. Bright at the end: the salt equation, the fish panel and its tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "amide-not-basic": [
+        "adjust",
+        "the board clears.",
+        "Why an amide is barely a base: So why isn't ethanamide a base?",
+        "shares / grip / proton / change",
+        "On the spoken cues: Task chip \"Base or not?\". Left: ethanamine with its lone pair dots bright (tag \"free pair\"). Right: ethanamide, enlarged, its lone pair dots on the N. On \"shares\" the pair share runs: the grey-violet glow spreads from the N's lone pair across the C–N bond to the O; the C–N bond thickens slightly and the dots fade to half strength (tag \"lone pair shared\", with a quiet grey tag under it, no narration: \"(lone pair",
+        "explain",
+        "the board clears. Task chip \"Base or not?\". Left: ethanamine with its lone pair dots bright (tag \"free pair\"). Right: ethanamide, enlarged, its lone pair dots on the N. On \"shares\" the pair share runs: the grey-violet glow spreads from the N's lone pair across the C–N bond to the O; the C–N bond thickens slightly and the dots fade to half strength (tag \"lone pair shared\", with a quiet grey tag under it, no narration: \"(lone pair delocalised: resonance)\"). On \"carboxylate\" a small grey thumbnail of c09's ethanoate with \"½−\" on each O appears top-right (grey chip \"c09: sharing loosens the grip\"). On \"grip\" the \"free pair\" tag and the thumbnail dim, and a small grey chip writes under the thumbnail: \"acid: gives H⁺ more easily | amide: barely takes H⁺\" (one item). On \"proton\" a dashed proton approaches the amide N and drifts away (tag \"barely grabs H⁺\"), while on the left a proton snaps onto ethanamine's N (tag \"grabs H⁺\"). On \"acid either\" the \"barely grabs\" and \"grabs\" tags dim, and a chip \"has a C=O, so it's an acid like a carboxylic acid\" fades in and is crossed (caption \"no O–H to give; its N–H barely lets go\"). No later visual shows a proton sitting on an amide N (in strong acid an amide protonates mainly on O; author note e). On \"change\" two small plates under the amide, `m6-litmus-red-v1.png` and `m7-litmus-blue-strip-v1.png`, each take a drop and stay as they are (tag \"no change: close to neutral\"). Bright at the end: the two molecules with their tags and the litmus pair. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "acid-vs-base": [
+        "adjust",
+        "the board clears.",
+        "The organic acid against the organic base: Now, organic acid against organic base.",
+        "gives / takes / blue / salt",
+        "On the spoken cues: Task chip \"Acid or base?\". A two-column board writes, headed \"carboxylic acid\" (ethanoic acid, O–H ringed red) and \"amine\" (ethanamine, N indigo). On \"gives\" an arrow leaves the acid's O–H hydrogen (tag \"gives H⁺: O–H\"); on \"takes\" an arrow points into the amine's lone pair (tag \"takes H⁺: lone pair\"); grey chip \"both weak\". On \"turns red\" `m7-litmus-blue-strip-v1.png` under the acid cross-fades to",
+        "explain",
+        "the board clears. Task chip \"Acid or base?\". A two-column board writes, headed \"carboxylic acid\" (ethanoic acid, O–H ringed red) and \"amine\" (ethanamine, N indigo). On \"gives\" an arrow leaves the acid's O–H hydrogen (tag \"gives H⁺: O–H\"); on \"takes\" an arrow points into the amine's lone pair (tag \"takes H⁺: lone pair\"); grey chip \"both weak\". On \"turns red\" `m7-litmus-blue-strip-v1.png` under the acid cross-fades to `m6-litmus-red-v1.png` (tag \"more H₃O⁺\"), and a small grey chip \"NaHCO₃: fizz (c09)\" writes under it (no narration; c09 taught the test). On \"blue\" `m6-litmus-red-v1.png` under the amine cross-fades to `m6-litmus-blue-v1.png` (tag \"more OH⁻\"), with a grey chip \"NaHCO₃: no fizz\". The columns shrink to the top. On \"salt\" CH₃NH₂ and CH₃COOH draw side by side; `ProtonHop` carries the acid's H to the N; the line writes: \"CH₃COOH + CH₃NH₂ → CH₃NH₃⁺CH₃COO⁻\" (tag \"methylammonium ethanoate: a salt\"). On \"No water forms\" a chip \"acid + amine → amide + water (room temperature)\" fades in and is crossed (caption \"room temperature: a salt; amide needs strong heat\"). Bright at the end: the salt line, its tag and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, amines are organic ammonia.",
+        "base",
+        "On the spoken cues: Handwritten line: \"Amines are organic ammonia.\" Second handwritten line on \"base\": \"Amine: free pair, a base. Amide: shared pair, barely a base.\" Third line, smaller, writes silently after the second (no narration): \"Similar size: primary amide > acid > alcohol > amine > alkane.\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"classify: count carbon groups on",
+        "explain",
+        "the board clears. Handwritten line: \"Amines are organic ammonia.\" Second handwritten line on \"base\": \"Amine: free pair, a base. Amide: shared pair, barely a base.\" Third line, smaller, writes silently after the second (no narration): \"Similar size: primary amide > acid > alcohol > amine > alkane.\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"classify: count carbon groups on N (1°, 2°, 3°)\"; \"N–H < O–H hydrogen bonds: N less electronegative\"; \"amine + acid → salt (proton transfer)\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Three amines share the formula C",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"The three amines below all have the molecular formula C₄H₁₁N. A: CH₃CH₂CH₂CH₂NH₂, boiling point 78 °C. B: CH₃CH₂NHCH₂CH₃, boiling point 55 °C. C: CH₃CH₂N(CH₃)₂, boiling point 37 °C. (a) Give the IUPAC name of amine A, and classify amines B and C as primary, secondary or tertiary. (b) Explain the order of the boiling points, with reference to the intermolecular forces present.\" Beside each formula a skeletal formula in plain ink (no colours, no lone pairs drawn, no counters). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no strip, no memory aid.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "butan-one-amine / secondary / tertiary / none / trap",
+        "On the spoken cues: On \"butan-one-amine\" \"IUPAC name of amine A\" is underlined; the builder writes \"butan\" + \"1\" + \"amine\" beside A (the answer, bright). On \"secondary\" \"classify\" is underlined; the carbon counter pops \"1\", \"2\" on B's N; on \"tertiary\" \"1\", \"2\", \"3\" on C's N. On \"same formula\" \"C₄H₁₁N\" is underlined and a grey tag \"same formula: similar dispersion\" writes. On \"none\" A's two N–H hydrogens, B's one and C's zero glow in",
+        "explain",
+        "the card stays, shrunk to the top. On \"butan-one-amine\" \"IUPAC name of amine A\" is underlined; the builder writes \"butan\" + \"1\" + \"amine\" beside A (the answer, bright). On \"secondary\" \"classify\" is underlined; the carbon counter pops \"1\", \"2\" on B's N; on \"tertiary\" \"1\", \"2\", \"3\" on C's N. On \"same formula\" \"C₄H₁₁N\" is underlined and a grey tag \"same formula: similar dispersion\" writes. On \"none\" A's two N–H hydrogens, B's one and C's zero glow in turn, with chips \"2 N–H\", \"1 N–H\", \"0 N–H\"; \"78 °C\", \"55 °C\" and \"37 °C\" are underlined in turn as the boiling point falls; \"intermolecular forces\" is underlined. On \"trap\" a chip \"All three amines hydrogen bond to each other.\" fades in and is crossed (caption \"C has no N–H to give\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"Separate aqueous solutions of propanoic acid, propan-1-amine and propanamide are prepared.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Propanoic acid, propan-one-amine and propanamide are",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"Separate aqueous solutions of propanoic acid, propan-1-amine and propanamide are prepared. (a) Predict the effect of each solution on red litmus paper and on blue litmus paper. (b) Explain the results for propan-1-amine and for propanamide.\" No structures drawn, no plates. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "red / blue / neither / trap",
+        "On the spoken cues: A small three-column grid appears under it, headed \"propanoic acid\", \"propan-1-amine\", \"propanamide\", each with a red and a blue litmus plate (`m6-litmus-red-v1.png`, `m7-litmus-blue-strip-v1.png`), all small and the same size. On \"red\" \"propanoic acid\" is underlined and its blue plate cross-fades to `m6-litmus-red-v1.png` (the answer, bright). On \"blue\" \"propan-1-amine\" is underlined and its red plate cross-fades",
+        "explain",
+        "the card stays, shrunk to the top. A small three-column grid appears under it, headed \"propanoic acid\", \"propan-1-amine\", \"propanamide\", each with a red and a blue litmus plate (`m6-litmus-red-v1.png`, `m7-litmus-blue-strip-v1.png`), all small and the same size. On \"red\" \"propanoic acid\" is underlined and its blue plate cross-fades to `m6-litmus-red-v1.png` (the answer, bright). On \"blue\" \"propan-1-amine\" is underlined and its red plate cross-fades to `m6-litmus-blue-v1.png`; the line writes: \"CH₃CH₂CH₂NH₂ + H₂O ⇌ CH₃CH₂CH₂NH₃⁺ + OH⁻\" (tag \"lone pair takes H⁺: more OH⁻\"). On \"neither\" \"propanamide\" is underlined and both its plates stay; propanamide draws small with the pair share glow (tag \"lone pair shared (delocalised)\"); \"Explain the results\" is underlined. On \"trap\" a chip \"Propanamide turns blue litmus red, because it has a C=O group like a carboxylic acid.\" fades in and is crossed (caption \"no O–H: not an acid\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So the nitrogen's lone pair decides whether a compound is a base.",
+        "Next",
+        "On the spoken cues: The memory aid lines return small at the top. On \"Next\" `m6-soap-bar-v1.png` appears small at the right beside a coded sodium stearate skeletal formula with its COO⁻ head ringed red, and a chip \"Next: how do soaps and detergents lift oil into water?\" appears.",
+        "explain",
+        "the board clears. The memory aid lines return small at the top. On \"Next\" `m6-soap-bar-v1.png` appears small at the right beside a coded sodium stearate skeletal formula with its COO⁻ head ringed red, and a chip \"Next: how do soaps and detergents lift oil into water?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C12_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Soaps and detergents: lifting oil into water\".",
+        "Hook (oil, water, and a little soap): Pour cooking oil into water, shake it hard, and within a minute the oil floats back up into its own layer.",
+        "layer / cloudy",
+        "On the spoken cues: `m7-vegetable-oil-bottle-v1.png` appears small at the left (tag \"cooking oil\") and dims. The new `m7-oil-water-tube-layers-v1.png` appears medium at the centre (tags \"oil\", \"water\" at the two layers). The shake runs: the plate rocks, yellow droplets scatter, then rise and merge back; on \"layer\" the tube rests as it began (tag \"separates again\"). On \"soap\" three coded drops fall into the tube (tag \"+ soap\"); the",
+        "explain",
+        "heading writes on: \"Soaps and detergents: lifting oil into water\". `m7-vegetable-oil-bottle-v1.png` appears small at the left (tag \"cooking oil\") and dims. The new `m7-oil-water-tube-layers-v1.png` appears medium at the centre (tags \"oil\", \"water\" at the two layers). The shake runs: the plate rocks, yellow droplets scatter, then rise and merge back; on \"layer\" the tube rests as it began (tag \"separates again\"). On \"soap\" three coded drops fall into the tube (tag \"+ soap\"); the shake runs again and on \"cloudy\" the plate cross-fades to `m7-oil-water-tube-emulsion-v1.png` (aligned pair; tag \"stays cloudy much longer\"). As the question is asked the oil bottle leaves. Bright at the end: the heading, the tube and its \"stays cloudy much longer\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "why-separate": [
+        "new",
+        "the board clears.",
+        "Why oil and water don't mix: First, why won't they mix?",
+        "forces / out",
+        "On the spoken cues: Task chip \"Why separate?\". The water lattice (c03) fills the centre, dotted violet hydrogen bonds between molecules. On \"hexane\" a grey chip \"c03: hexane forms a layer on water\" writes and dims. A yellow oil molecule (a long skeletal chain, pale-blue dispersion dots along it, tag \"mostly non-polar: mainly dispersion\") sits at the edge. On \"forces\" a second oil chain lines up beside it with dispersion dots between",
+        "explain",
+        "the board clears. Task chip \"Why separate?\". The water lattice (c03) fills the centre, dotted violet hydrogen bonds between molecules. On \"hexane\" a grey chip \"c03: hexane forms a layer on water\" writes and dims. A yellow oil molecule (a long skeletal chain, pale-blue dispersion dots along it, tag \"mostly non-polar: mainly dispersion\") sits at the edge. On \"forces\" a second oil chain lines up beside it with dispersion dots between them, and a small grey crossed chip \"oil–water hydrogen bonds\" writes. On \"break\" the squeeze out runs once at normal pace (scene 5 reuses it): one chain pushes in, two water–water hydrogen bonds stretch and snap (tag \"lost hydrogen bonds\"), then the chain slides back to the edge and the bonds re-form (tag \"water keeps its hydrogen bonds\"). On \"out\" the oil chains gather into a yellow layer at the top. Bright at the end: the lattice, the oil layer and the \"keeps its hydrogen bonds\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "soap-structure": [
+        "adjust",
+        "the board clears.",
+        "Soap: a particle with two ends: Soap fixes this with a particle that has two very different ends.",
+        "ion / tail / head",
+        "On the spoken cues: Task chip \"Two ends\". `m6-soap-bar-v1.png` appears small at the left (tag \"soap\") and dims. Sodium stearate, C₁₇H₃₅COO⁻ Na⁺, draws in skeletal form across the board: a 17-carbon zigzag (pale blue) ending in a carboxylate drawn in full (red O atoms, grey-violet \"−\" glow from c09), with Na⁺ as a small grey-amber chip beside it; on \"octadecanoate\" a grey chip \"c09: '-oate' salts; stearate = octadecanoate (C18)\" writes",
+        "explain",
+        "the board clears. Task chip \"Two ends\". `m6-soap-bar-v1.png` appears small at the left (tag \"soap\") and dims. Sodium stearate, C₁₇H₃₅COO⁻ Na⁺, draws in skeletal form across the board: a 17-carbon zigzag (pale blue) ending in a carboxylate drawn in full (red O atoms, grey-violet \"−\" glow from c09), with Na⁺ as a small grey-amber chip beside it; on \"octadecanoate\" a grey chip \"c09: '-oate' salts; stearate = octadecanoate (C18)\" writes and dims. On \"barely mixes\" a small grey chip \"c09: long acids barely mix with water\" writes and dims. On \"ion\" the Na⁺ chip drifts aside (tag \"Na⁺ dissolves separately\") and the COO⁻ \"−\" glows. On \"tail\" the zigzag glows pale blue and a bracket \"tail: C₁₇H₃₅, non-polar\" writes; yellow oil chains approach with dispersion dots (tag \"hydrophobic: water-avoiding\"). On \"head\" the tail bracket and its tag dim; the COO⁻ is ringed red (bracket \"head: COO⁻, ionic\"); three water molecules turn their δ+ hydrogens toward it with short dotted navy lines (tag \"ion–dipole: hydrophilic\"). A quiet grey tag under the molecule, grey from the start and not narrated: \"both ends in one particle: amphiphilic (amphipathic)\". As the head tag writes, the pin morph runs: the skeletal formula shrinks into the head-and-tail symbol (red circle \"−\" head, short pale-blue zigzag tail). Bright at the end: the symbol, the \"hydrophobic\" and \"hydrophilic\" tags. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "saponification": [
+        "adjust",
+        "the board clears; the symbol shrinks to the top-left.",
+        "Where soap comes from: saponification: Where does soap come from?",
+        "ester / saponification / proton / completion",
+        "On the spoken cues: Task chip \"Make it\". `m7-vegetable-oil-bottle-v1.png` appears small at the left (tag \"fats and oils: triglycerides\") and dims. A triglyceride draws in the centre: the glycerol backbone (three carbons, CH₂–CH–CH₂, ink) with three –O–C(=O)– links (red, c10 ester colour) to three long pale-blue tails drawn as short zigzags with \"C₁₇H₃₅\" labels (grey \"c10: ester link\" chip). On \"ester\" the three links pulse. On \"break\"",
+        "explain",
+        "the board clears; the symbol shrinks to the top-left. Task chip \"Make it\". `m7-vegetable-oil-bottle-v1.png` appears small at the left (tag \"fats and oils: triglycerides\") and dims. A triglyceride draws in the centre: the glycerol backbone (three carbons, CH₂–CH–CH₂, ink) with three –O–C(=O)– links (red, c10 ester colour) to three long pale-blue tails drawn as short zigzags with \"C₁₇H₃₅\" labels (grey \"c10: ester link\" chip). On \"ester\" the three links pulse. On \"break\" three OH⁻ ions (Module 6 anion colour) approach and each ester link splits between the C=O carbon and the single-bonded O; that O stays on glycerol (science note 8): the backbone becomes glycerol, CH₂OH–CHOH–CH₂OH (tag \"glycerol: propane-1,2,3-triol\"), and three C₁₇H₃₅COO⁻ heads drift off, each gaining a Na⁺ chip; each becomes a soap symbol. On \"saponification\" the glycerol tag dims and the equation writes under it: \"C₃H₅(OOCC₁₇H₃₅)₃ + 3NaOH → C₃H₅(OH)₃ + 3C₁₇H₃₅COONa\" (tag \"fat + sodium hydroxide → glycerol + soap\"), and `m7-soap-making-v1.png` appears medium at the right (tag \"oil on NaOH(aq) → soap\"); after the plate tag dims, a small grey hazard chip \"conc. NaOH: corrosive, eye protection\" writes, and it goes before \"used up\". On \"used up\" the \"3\" in \"3NaOH\" pulses and a chip \"NaOH is a catalyst\" fades in and is crossed (caption \"used up: a reactant, 3 per fat\"). On \"proton\" a short `ProtonHop` (chem-m6-c01) runs on one released chain: in the basic mixture the H⁺ leaves a COOH and the group stays as COO⁻ (tag \"base takes the acid's H⁺: carboxylate\"); the other two chains are already COO⁻. On \"completion\" the crossed chip dims; a small grey \"c10: esterification ⇌\" chip sits beside the single arrow, which glows (tag \"carboxylate can't re-form the ester: goes to completion\"). Bright at the end: the equation, the soap-making plate and the completion tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "surface-micelles": [
+        "new",
+        "the board clears.",
+        "Soap in water: the surface and micelles: Now put soap in water.",
+        "surface / micelles",
+        "On the spoken cues: Task chip \"Clean it\". A side view of a water surface (soft blue band, the lattice faint). Soap symbols drift in; on \"surface\" they line the surface, heads in the water, tails pointing up into the air (tag \"tails out of the water\"). On \"micelles\" more symbols arrive below the surface and the micelle build runs: twenty symbols turn so their tails meet at a centre, forming a cross-section ring (tag \"micelle: tails in,",
+        "explain",
+        "the board clears. Task chip \"Clean it\". A side view of a water surface (soft blue band, the lattice faint). Soap symbols drift in; on \"surface\" they line the surface, heads in the water, tails pointing up into the air (tag \"tails out of the water\"). On \"micelles\" more symbols arrive below the surface and the micelle build runs: twenty symbols turn so their tails meet at a centre, forming a cross-section ring (tag \"micelle: tails in, heads out\"); faint water molecules cluster around the heads. A grey chip \"heads in water, tails hidden\" writes as the ring closes. Bright at the end: the micelle, its tag and the surface row (dimmed to grey after the micelle forms, so two bright items remain). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "cleaning-action": [
+        "new",
+        "the board clears.",
+        "How soap lifts grease: Now add grease.",
+        "water / repel / emulsion",
+        "On the spoken cues: A strip of fabric at the bottom (a coded flat band, cross-hatched, labelled \"fabric\") with a yellow grease blob on it. Soap symbols arrive; on \"water\" their tails sink into the blob, pale-blue dispersion dots between tails and grease (tag \"tails into grease: dispersion\"), heads in the water (tag \"heads in water: ion–dipole\"). On \"breaks\" a short coded wobble (agitation arrows) lifts the blob off the fabric and",
+        "explain",
+        "the board clears. A strip of fabric at the bottom (a coded flat band, cross-hatched, labelled \"fabric\") with a yellow grease blob on it. Soap symbols arrive; on \"water\" their tails sink into the blob, pale-blue dispersion dots between tails and grease (tag \"tails into grease: dispersion\"), heads in the water (tag \"heads in water: ion–dipole\"). On \"breaks\" a short coded wobble (agitation arrows) lifts the blob off the fabric and splits it into three droplets, each ringed by soap symbols, tails into the yellow core (tag \"droplet wrapped in soap: a micelle\"). On \"repel\" the repel runs: two droplets approach, their \"−\" surfaces glow, and they bounce apart (tag \"negative surfaces repel\"). On \"emulsion\" the droplets spread evenly through the water and the hook's emulsion plate appears small at the right (tag \"emulsion: tiny droplets spread out\"); a rinse arrow carries the droplets off the board edge. On \"doesn't dissolve\" a chip \"soap dissolves the grease in water\" fades in and is crossed (caption \"emulsified: still oil, in coated droplets\"). Bright at the end: the repelling pair, the emulsion plate and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "hard-water": [
+        "adjust",
+        "the board clears.",
+        "Hard water: scum: Soap has one big weakness: hard water.",
+        "hard / scum",
+        "On the spoken cues: Task chip \"Hard water\". `m7-soap-tube-soft-v1.png` appears medium at the left, labelled \"soft water + soap\". The right slot holds only the label \"hard water\", with no tube plate yet. On \"hard\" teal Ca²⁺ and Mg²⁺ balls drift through the right slot (tag \"hard water: Ca²⁺, Mg²⁺\"). On \"calcium ion\" the scum lock runs at the centre: two soap symbols swing their heads onto one teal Ca²⁺ ball; the trio turns grey-white and",
+        "explain",
+        "the board clears. Task chip \"Hard water\". `m7-soap-tube-soft-v1.png` appears medium at the left, labelled \"soft water + soap\". The right slot holds only the label \"hard water\", with no tube plate yet. On \"hard\" teal Ca²⁺ and Mg²⁺ balls drift through the right slot (tag \"hard water: Ca²⁺, Mg²⁺\"). On \"calcium ion\" the scum lock runs at the centre: two soap symbols swing their heads onto one teal Ca²⁺ ball; the trio turns grey-white and drops as a flake; the two Na⁺ chips stay floating (tag \"Na⁺: spectators\"). On \"scum\" `m7-soap-tube-hard-v1.png` fades in at the right (a fade-in, not a cross-fade from the soft plate, so no froth is ever shown in hard water first; same canvas and alignment as the soft plate), the label becomes \"hard water + soap\" (tag \"scum, little froth\"), and the equation writes beneath: \"2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)\" (tag \"calcium stearate: insoluble\"). On \"charges balanced\" \"2 × (1−)\" and \"2+\" chips pop under the two reactants and a grey \"Mg²⁺ the same\" chip writes. On \"less froth\" the froth line on the right plate is ringed (tag \"soap used up\"). Bright at the end: the two tubes, the equation and the \"soap used up\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "detergents": [
+        "new",
+        "the board clears.",
+        "Detergents: change the head: Synthetic detergents keep the same plan, a long non-polar tail and a water loving head, but they change the head.",
+        "negative / positive / charge",
+        "On the spoken cues: Task chip \"Detergents\". The soap symbol sits at the left, grey. The head swap runs on a copy at the centre, one head at a time, each lighting and the previous dimming: on \"negative\" the head becomes a red circle \"–OSO₃⁻ (sulfate)\" with a small skeletal sodium dodecyl sulfate above it, CH₃(CH₂)₁₁OSO₃⁻ Na⁺ (tag \"anionic: sulfonate or sulfate head\"), and a small grey tag \"sulfonate: –SO₃⁻, e.g. alkylbenzene sulfonate\"",
+        "explain",
+        "the board clears. Task chip \"Detergents\". The soap symbol sits at the left, grey. The head swap runs on a copy at the centre, one head at a time, each lighting and the previous dimming: on \"negative\" the head becomes a red circle \"–OSO₃⁻ (sulfate)\" with a small skeletal sodium dodecyl sulfate above it, CH₃(CH₂)₁₁OSO₃⁻ Na⁺ (tag \"anionic: sulfonate or sulfate head\"), and a small grey tag \"sulfonate: –SO₃⁻, e.g. alkylbenzene sulfonate\" (science note 5); on \"attracted\" a teal Ca²⁺ ball moves to the head (tag \"still attracted\"); on \"much more soluble\" the Ca²⁺ and the head both stay surrounded by water molecules and neither drops out as a flake (tag \"calcium salt stays dissolved: little scum\"); the \"still attracted\" tag dims. On \"positive\" the head becomes an indigo circle \"+\" with R–N(CH₃)₃⁺ above it (tag \"cationic: positive N head\"; grey chip \"c11: ammonium ions\") and a small grey tag \"fabric softeners\". On \"charge\" the head becomes a wavy uncharged chain ending in O–H, \"R–(OCH₂CH₂)ₙ–OH\" above it, with violet hydrogen bonds to two water molecules (tag \"non-ionic: no charge, hydrogen bonds\"); a Ca²⁺ ball passes by (tag \"nothing to grab\"). Bright at the end: the three head types in a row (one group, with the current one bright) and the \"nothing to grab\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "soap-vs-detergent": [
+        "adjust",
+        "the board clears.",
+        "Soap or detergent?: So which is better?",
+        "water / varies",
+        "On the spoken cues: A two-column comparison board writes one row at a time, each row lighting and the previous dimming: \"cleaning: micelles | micelles\"; \"made from: fats and oils (renewable) | often petrochemicals, some plant oils\"; \"breaks down: readily | varies\"; on \"water\" \"hard water: scum | little or no scum\" with the two tube plates small under the columns (soap: `m7-soap-tube-hard-v1.png`; detergent: `m7-soap-tube-soft-v1.png`",
+        "explain",
+        "the board clears. A two-column comparison board writes one row at a time, each row lighting and the previous dimming: \"cleaning: micelles | micelles\"; \"made from: fats and oils (renewable) | often petrochemicals, some plant oils\"; \"breaks down: readily | varies\"; on \"water\" \"hard water: scum | little or no scum\" with the two tube plates small under the columns (soap: `m7-soap-tube-hard-v1.png`; detergent: `m7-soap-tube-soft-v1.png` labelled \"hard water + detergent\"). On \"isn't a stronger soap\" a chip \"detergents are stronger soaps\" fades in and is crossed (caption \"same action; the head differs\"). Bright at the end: the hard water row, the two plates and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, head in the water, tail in the grease.",
+        "So, head in the water, tail in the",
+        "On the spoken cues: Handwritten line: \"Head in the water, tail in the grease.\" A small grease-filled micelle icon sits beside it. Second handwritten line: \"Soap makes scum in hard water; detergents mostly don't.\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"tail: non-polar, dispersion (hydrophobic) | head: ionic, ion–dipole (hydrophilic)\"; \"micelle: tails in grease, heads out;",
+        "explain",
+        "the board clears. Handwritten line: \"Head in the water, tail in the grease.\" A small grease-filled micelle icon sits beside it. Second handwritten line: \"Soap makes scum in hard water; detergents mostly don't.\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"tail: non-polar, dispersion (hydrophobic) | head: ionic, ion–dipole (hydrophilic)\"; \"micelle: tails in grease, heads out; negative surfaces repel; emulsion\"; \"2RCOO⁻ + Ca²⁺ → (RCOO)₂Ca(s): scum\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Sodium palmitate is a soap, and",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"Sodium palmitate, CH₃(CH₂)₁₄COO⁻Na⁺, is a soap. (a) Identify the hydrophobic part and the hydrophilic part of the palmitate ion. (b) Explain how this soap removes an oily stain from fabric during washing. Refer to the intermolecular forces involved.\" Beside it the skeletal formula in plain ink (no colours, no brackets, no head-and-tail symbol). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no micelle, no memory aid.",
+        [
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "tail / dispersion / repel / trap",
+        "On the spoken cues: On \"tail\" \"hydrophobic part\" is underlined and the skeletal formula's chain is bracketed \"C₁₅H₃₁: hydrophobic\" (the answer, bright); then \"hydrophilic part\" is underlined and the COO⁻ is ringed \"COO⁻: hydrophilic\". On \"dispersion\" \"intermolecular forces involved\" is underlined; a small droplet model shows tails in yellow oil with dispersion dots (tag \"dispersion\") and heads with dotted navy lines to water (tag",
+        "explain",
+        "the card stays, shrunk to the top. On \"tail\" \"hydrophobic part\" is underlined and the skeletal formula's chain is bracketed \"C₁₅H₃₁: hydrophobic\" (the answer, bright); then \"hydrophilic part\" is underlined and the COO⁻ is ringed \"COO⁻: hydrophilic\". On \"dispersion\" \"intermolecular forces involved\" is underlined; a small droplet model shows tails in yellow oil with dispersion dots (tag \"dispersion\") and heads with dotted navy lines to water (tag \"ion–dipole\"). On \"repel\" \"oily stain from fabric\" is underlined; two coated droplets bounce apart (tag \"negative surfaces repel\"). On \"trap\" a chip \"The soap dissolves the oil in the water.\" fades in and is crossed (caption \"emulsified: droplets, not a solution\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"The same volume of soap solution is added to a sample of rainwater and to a sample of tap water that contains dissolved calcium ions.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Soap solution is added to rainwater,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"The same volume of soap solution is added to a sample of rainwater and to a sample of tap water that contains dissolved calcium ions. The tap water turns cloudy, a white solid forms, and little froth appears. (a) Write a net ionic equation for the formation of the white solid. Use sodium stearate, C₁₇H₃₅COONa, as the soap. (b) Explain why a sulfonate detergent forms plenty of froth in the same tap water.\" No plates, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "stearate / soluble / trap",
+        "On the spoken cues: On \"stearate\" \"net ionic equation\" and \"dissolved calcium ions\" are underlined and the line writes: \"2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)\" (the answer, bright); small copies of the aligned tube pair appear at the right (rainwater: `m7-soap-tube-soft-v1.png`; tap water: `m7-soap-tube-hard-v1.png`). On \"spectators\" \"sodium stearate, C₁₇H₃₅COONa\" is underlined and a grey Na⁺ chip floats beside the equation,",
+        "explain",
+        "the card stays, shrunk to the top. On \"stearate\" \"net ionic equation\" and \"dissolved calcium ions\" are underlined and the line writes: \"2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)\" (the answer, bright); small copies of the aligned tube pair appear at the right (rainwater: `m7-soap-tube-soft-v1.png`; tap water: `m7-soap-tube-hard-v1.png`). On \"spectators\" \"sodium stearate, C₁₇H₃₅COONa\" is underlined and a grey Na⁺ chip floats beside the equation, crossed out of it (tag \"spectator: left out\"); as that sentence ends, \"2 × (1−)\" and \"2+\" chips pop under the reactants (no narration). On \"soluble\" \"sulfonate detergent\" and \"plenty of froth\" are underlined; a small sulfonate head with a Ca²⁺ ball attracted to it, both staying surrounded by water (tag \"calcium salt much more soluble: stays dissolved\"). On \"trap\" a chip \"C₁₇H₃₅COO⁻ + Ca²⁺ → C₁₇H₃₅COOCa\" fades in and is crossed (caption \"1− and 2+ don't balance\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So one particle with a water loving head and a grease loving tail can lift oil into water.",
+        "Next",
+        "On the spoken cues: The memory aid lines return small at the top. On \"Next\" `m7-soap-tube-soft-v1.png` and `m7-soap-tube-hard-v1.png` appear small at the right, same height, and a chip \"Next: compare soap and detergent action\" appears.",
+        "explain",
+        "the board clears. The memory aid lines return small at the top. On \"Next\" `m7-soap-tube-soft-v1.png` and `m7-soap-tube-hard-v1.png` appear small at the right, same height, and a chip \"Next: compare soap and detergent action\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C13_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Organic synthesis: planning a route\".",
+        "Hook (a pear ester from a gas and a haloalkane): Propyl ethanoate is an ester that smells a lot like pears.",
+        "pears / ester",
+        "On the spoken cues: `m7-ester-fruit-v1.png` appears small at the left; on \"pears\" a coded ring marks the pear (tag \"propyl ethanoate: smells of pears\") and the plate dims. On \"ester\" the target writes at the right as a structural formula, CH₃COOCH₂CH₂CH₃, in a box with a red outline (tag \"target\"); at the left two smaller boxes write, \"ethene, CH₂=CH₂\" (teal C=C) and \"1-bromopropane, CH₃CH₂CH₂Br\" (orange-brown Br) (tag \"allowed",
+        "explain",
+        "heading writes on: \"Organic synthesis: planning a route\". `m7-ester-fruit-v1.png` appears small at the left; on \"pears\" a coded ring marks the pear (tag \"propyl ethanoate: smells of pears\") and the plate dims. On \"ester\" the target writes at the right as a structural formula, CH₃COOCH₂CH₂CH₃, in a box with a red outline (tag \"target\"); at the left two smaller boxes write, \"ethene, CH₂=CH₂\" (teal C=C) and \"1-bromopropane, CH₃CH₂CH₂Br\" (orange-brown Br) (tag \"allowed starting materials\"). A large dashed grey arrow with a \"?\" spans the gap; on \"synthesis\" a grey tag writes under it: \"synthesis: making a target from simpler compounds\". Dimming order (Revision 2): the pear tag dims on \"ester\"; the \"target\" and \"allowed starting materials\" tags dim on \"synthesis\". Bright at the end: the heading, the target box and the \"?\" arrow. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "reaction-map": [
+        "new",
+        "the board clears.",
+        "The reaction map: Good news: you've already met every reaction you need.",
+        "map / hub / esters",
+        "On the spoken cues: Task chip \"Map\". On \"map\" the nine family boxes place one at a time (no arrows yet). On \"hub\" c08a's hub draws in one beat: the alcohol box pulses and its six arrows draw together (alkene to alcohol, haloalkane to alcohol, alcohol to alkene, alcohol to haloalkane, alcohol to aldehyde and ketone, alcohol and aldehyde to acid), each glowing amber for a beat (grey chip \"c08a: the alcohol is a hub\"). Arrows carry short",
+        "explain",
+        "the board clears. Task chip \"Map\". On \"map\" the nine family boxes place one at a time (no arrows yet). On \"hub\" c08a's hub draws in one beat: the alcohol box pulses and its six arrows draw together (alkene to alcohol, haloalkane to alcohol, alcohol to alkene, alcohol to haloalkane, alcohol to aldehyde and ketone, alcohol and aldehyde to acid), each glowing amber for a beat (grey chip \"c08a: the alcohol is a hub\"). Arrows carry short reaction names only, no condition chips: \"hydration\", \"substitution\", \"dehydration\", \"oxidation\", \"esterification\", \"amide formation\". On \"esters\" the acid plus alcohol to ester arrow draws (\"esterification\", grey chip \"c10\"), then the acid to amide arrow with a small reagent chip \"+ amine\" (\"amide formation\", grey chip \"c11\"), so the amine has a visible source although it is not one of the nine boxes. On \"U V light\" the alkane box's arrow to haloalkane draws and brightens briefly (\"substitution\", tag \"alkanes: X₂ and UV light first\", grey chip \"c04b\"). Quieter grey arrows draw without narration, labelled small by name only: alkene to alkane (\"addition of H₂\"), alkene to haloalkane (\"addition of HX\"), ester to carboxylate and alcohol (\"hydrolysis\", c12). Only the arrows of the current sentence are bright; the rest sit at 40%. The map then shrinks to a grey reference card at the right. The map's full condition set lives in the parts file data for chem-m7-g03's import, not on this video's map; its dehydration chip there reads \"conc. H₂SO₄, heat (about 170 °C for ethanol)\". Bright at the end: the map card (dimmed except the alcohol box) and the c08a hub chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "count-carbons": [
+        "new",
+        "the board clears.",
+        "Move 1: name the groups and count carbons: Move one: name the functional group in the target and in each starting material, and count the carbons.",
+        "chain / two / three",
+        "On the spoken cues: Task chip \"1 Count\". The target and the two starting boxes return. On \"chain\" a short grey strip shows ethanol becoming ethanoic acid with its two carbons ticked \"1, 2\" on both (tag \"groups change, chains stay\"); it leaves. On \"join two molecules\" a grey \"+\" pulses between two halves of a small ester (tag \"only ester and amide formation add chains\"). On \"two\" the carbon tally ticks along the target's ethanoate half,",
+        "explain",
+        "the board clears. Task chip \"1 Count\". The target and the two starting boxes return. On \"chain\" a short grey strip shows ethanol becoming ethanoic acid with its two carbons ticked \"1, 2\" on both (tag \"groups change, chains stay\"); it leaves. On \"join two molecules\" a grey \"+\" pulses between two halves of a small ester (tag \"only ester and amide formation add chains\"). On \"two\" the carbon tally ticks along the target's ethanoate half, \"1, 2\" (amber), and then the propyl half, \"1, 2, 3\" (pale blue). On \"three\" ethene ticks \"2\" and 1-bromopropane ticks \"3\", and dotted guide lines connect each starting box to the matching half of the target (tag \"2 + 3: counts match\"). Bright at the end: the three boxes with their tallies and the \"counts match\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "tick"
+        ],
+        "Hold about 1 second"
+    ],
+    "work-backwards": [
+        "new",
+        "the board clears; the target sits at the right.",
+        "Move 2: work backwards from the target: Move two: work backwards from the target.",
+        "oxygen / ethanol",
+        "On the spoken cues: Task chip \"2 Backwards\". A quiet grey tag, not narrated: \"working backwards: retrosynthesis\". On \"oxygen\" the ester cut runs: a scissor line at the single-bonded O; the halves slide apart and relabel \"ethanoic acid, CH₃COOH\" (upper) and \"propan-1-ol, CH₃CH₂CH₂OH\" (lower), each in a box with a dashed amber backward arrow from the target (grey chip \"c10: cut at the single-bonded O\"). On \"ethanol\" the backward hook",
+        "explain",
+        "the board clears; the target sits at the right. Task chip \"2 Backwards\". A quiet grey tag, not narrated: \"working backwards: retrosynthesis\". On \"oxygen\" the ester cut runs: a scissor line at the single-bonded O; the halves slide apart and relabel \"ethanoic acid, CH₃COOH\" (upper) and \"propan-1-ol, CH₃CH₂CH₂OH\" (lower), each in a box with a dashed amber backward arrow from the target (grey chip \"c10: cut at the single-bonded O\"). On \"ethanol\" the backward hook runs from the ethanoic acid box to a \"?\" box that resolves into \"ethanol, CH₃CH₂OH\" (tag \"acid ← primary alcohol\"), then again from ethanol to \"ethene\" (the starting box glows; tag \"← alkene + steam\"). The propan-1-ol box stays with a \"?\" behind it. On the map card, the matching arrows glow amber in reverse order. Bright at the end: the backward chain on the upper arm and the open \"?\" on the lower arm. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "choose-route": [
+        "new",
+        "the board clears.",
+        "Move 3: choose the route where the position matters: Where does propan-1-ol come from?",
+        "same / propene / H Br / right carbon",
+        "On the spoken cues: Task chip \"3 Choose\". The lower arm of scene 4 sits small at the top with its \"?\" box. On \"same\" 1-bromopropane draws with C1 numbered; the Br lifts off and an OH docks on the same carbon (c06 swap; grey chip \"c06: same carbon\"), giving propan-1-ol (tag \"OH on C1, as needed\"); the lower arm's \"?\" box resolves into \"1-bromopropane\". On \"propene\" the swap result shrinks to the left; propene draws at the centre (teal",
+        "explain",
+        "the board clears. Task chip \"3 Choose\". The lower arm of scene 4 sits small at the top with its \"?\" box. On \"same\" 1-bromopropane draws with C1 numbered; the Br lifts off and an OH docks on the same carbon (c06 swap; grey chip \"c06: same carbon\"), giving propan-1-ol (tag \"OH on C1, as needed\"); the lower arm's \"?\" box resolves into \"1-bromopropane\". On \"propene\" the swap result shrinks to the left; propene draws at the centre (teal C=C) with a small grey tag \"not one of our starting materials\", and the two-way docker runs (c04a): a water's OH docks ghosted on C1 (faint) and on C2 (bold), giving a small faint \"propan-1-ol\" and a larger \"propan-2-ol\" (tag \"mainly propan-2-ol\"; grey chip \"c04a\"); the \"same carbon\" chip dims. On \"H Br\" a second quick two-way dock runs with HBr, giving a small faint \"1-bromopropane\" and a larger \"2-bromopropane\"; a grey crossed chip \"propene + HBr: same problem\" writes. On \"right carbon\" the propene models and their tags dim, and the propan-1-ol result returns to the centre (tag \"halogen already on the right carbon\"). Bright at the end: the propan-1-ol product, its tag and the completed lower arm. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "write-forwards": [
+        "new",
+        "the board clears.",
+        "Move 4: write it forwards, with conditions on every arrow: Move four: write the route forwards, in the order you'd carry it out, and put the conditions on every arrow.",
+        "arrow / reflux / distillation / water / both arrows",
+        "On the spoken cues: Task chip \"4 Forwards\". The flow chart builder runs left to right. No plates in this scene (Revision 2). As each new arrow writes, the completed arrows' chips dim to mid-grey, so only the current arrow's chips are bright. Upper arm: box \"ethene, CH₂=CH₂\"; on \"arrow\" the first arrow draws as ⇌ and its chips write in spoken order, \"H₂O (steam)\", \"H₃PO₄ catalyst\", \"about 300 °C, high pressure\"; box \"ethanol, CH₃CH₂OH\"",
+        "explain",
+        "the board clears. Task chip \"4 Forwards\". The flow chart builder runs left to right. No plates in this scene (Revision 2). As each new arrow writes, the completed arrows' chips dim to mid-grey, so only the current arrow's chips are bright. Upper arm: box \"ethene, CH₂=CH₂\"; on \"arrow\" the first arrow draws as ⇌ and its chips write in spoken order, \"H₂O (steam)\", \"H₃PO₄ catalyst\", \"about 300 °C, high pressure\"; box \"ethanol, CH₃CH₂OH\" (tag \"intermediate: made, then used\"). On \"reflux\" the second arrow writes \"excess K₂Cr₂O₇ / H⁺\", \"heat under reflux\"; box \"ethanoic acid, CH₃COOH\". On \"distillation\" a grey chip \"c08a: distil → ethanal\" writes beside the arrow and dims. Lower arm: box \"1-bromopropane, CH₃CH₂CH₂Br\"; arrow \"NaOH(aq)\", \"heat under reflux\"; box \"propan-1-ol, CH₃CH₂CH₂OH\". The two arms meet at a join arrow, drawn as ⇌: \"conc. H₂SO₄ (a few drops)\", \"heat under reflux\"; on \"water\" the final box writes \"propyl ethanoate, CH₃COOCH₂CH₂CH₃ + H₂O\". On \"both arrows\" the join arrow's ⇌ and the hydration arrow's ⇌ pulse together (tag \"equilibrium: ⇌\"); neither arrow is redrawn, because both were written as ⇌ when they first drew. On the map card, the four arrows glow amber. The full chart then returns to full ink. Bright at the end: the completed two-arm flow chart (boxes and chips all at full ink, as one diagram), the \"⇌\" tag and the target box's red outline. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "check-arrows": [
+        "new",
+        "the board clears.",
+        "Check every arrow: Then finish move four: check every arrow, because one wrong arrow breaks the whole route.",
+        "propan-2-ol / acid / dead end / primary alcohol / overall",
+        "On the spoken cues: Task chip \"Check\". A flow chart card titled \"A plan for propanoic acid\" draws: \"propane → propan-2-ol → propanone → propanoic acid\", each arrow with a plausible chip. On \"propan-2-ol\" the cross-out arrow runs on the first arrow (tag \"no direct alkane → alcohol\"); a small grey detour draws under it, \"propane → (Cl₂, UV light) → chloropropanes (mixture) → (NaOH(aq), reflux) → propanols\" (grey chip \"c04b\"). On \"Then it",
+        "explain",
+        "the board clears. Task chip \"Check\". A flow chart card titled \"A plan for propanoic acid\" draws: \"propane → propan-2-ol → propanone → propanoic acid\", each arrow with a plausible chip. On \"propan-2-ol\" the cross-out arrow runs on the first arrow (tag \"no direct alkane → alcohol\"); a small grey detour draws under it, \"propane → (Cl₂, UV light) → chloropropanes (mixture) → (NaOH(aq), reflux) → propanols\" (grey chip \"c04b\"). On \"Then it oxidises\" the detour and the c04b chip dim. On \"acid\" the third arrow is crossed (tag \"ketone: dead end\"); propanone's carbonyl carbon is ringed with \"no H\" (grey chip \"c08a: oxidation needs an H on that carbon\"). On \"dead end\" the ketone box on the map card rings briefly with no arrow leaving it (the card stays small; no enlargement). A small grey chip, not narrated, writes and dims: \"tertiary alcohol: no H on the C–OH carbon: no oxidation by dichromate\". On \"primary alcohol\" the \"no H\" ring and the c08a chip dim; a small amber box \"propan-1-ol, CH₃CH₂CH₂OH\" writes under the crossed chain with a short amber arrow \"excess K₂Cr₂O₇ / H⁺, reflux\" to \"propanoic acid\" (grey chip \"c10: only a primary alcohol oxidises to an acid\"). On \"overall\" three short arrows in a row each shed a small grey \"lost product\" dot (tag \"more steps: lower overall yield\"). Bright at the end: the two crossed arrows, the amber propan-1-ol route and the \"overall yield\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, name and count, work backwards, choose, then write forwards and check.",
+        "ethene / haloalkane",
+        "On the spoken cues: Handwritten line: \"Work backwards to plan; write forwards to answer.\" Second handwritten line (c10's line, now labelled and with the side road): \"Main road (from ethene): alkene → primary alcohol → acid → ester\", with a small grey tag on \"ethene\" \"hydration gives a primary alcohol only from ethene\"; on \"haloalkane\" a branch draws into \"primary alcohol\" from \"haloalkane, halogen already on the right carbon\". Under",
+        "explain",
+        "the board clears. Handwritten line: \"Work backwards to plan; write forwards to answer.\" Second handwritten line (c10's line, now labelled and with the side road): \"Main road (from ethene): alkene → primary alcohol → acid → ester\", with a small grey tag on \"ethene\" \"hydration gives a primary alcohol only from ethene\"; on \"haloalkane\" a branch draws into \"primary alcohol\" from \"haloalkane, halogen already on the right carbon\". Under them, four small coded cards light one at a time on their cues, each dimming as the next lights: \"1 name groups, count carbons\"; \"2 work backwards: what makes it?\"; \"3 choose: position, conditions\"; \"4 write forwards; check every arrow\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A chemist wants to make pentanoic",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A chemist wants to make pentanoic acid, CH₃CH₂CH₂CH₂COOH. The only available starting materials are pent-1-ene and 1-chloropentane. Construct a flow chart for a two-step synthesis from the better starting material. Include the reagents and conditions for each step, name the intermediate, and justify your choice of starting material.\" No structures, no map. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "pentan-1-ol / reflux / trap",
+        "On the spoken cues: On \"pentan-1-ol\" \"1-chloropentane\", \"name the intermediate\" and \"justify your choice\" are underlined; the flow chart writes: box \"1-chloropentane, CH₃CH₂CH₂CH₂CH₂Cl\" → arrow \"NaOH(aq), heat under reflux\" → box \"pentan-1-ol, CH₃CH₂CH₂CH₂CH₂OH\" (the intermediate, bright; C1 numbered; tag \"Cl on C1: OH on C1\"). On \"reflux\" \"pentanoic acid\" and \"reagents and conditions\" are underlined; arrow \"excess K₂Cr₂O₇ / H⁺, heat",
+        "explain",
+        "the card stays, shrunk to the top. On \"pentan-1-ol\" \"1-chloropentane\", \"name the intermediate\" and \"justify your choice\" are underlined; the flow chart writes: box \"1-chloropentane, CH₃CH₂CH₂CH₂CH₂Cl\" → arrow \"NaOH(aq), heat under reflux\" → box \"pentan-1-ol, CH₃CH₂CH₂CH₂CH₂OH\" (the intermediate, bright; C1 numbered; tag \"Cl on C1: OH on C1\"). On \"reflux\" \"pentanoic acid\" and \"reagents and conditions\" are underlined; arrow \"excess K₂Cr₂O₇ / H⁺, heat under reflux\" → box \"pentanoic acid, CH₃CH₂CH₂CH₂COOH\" (the answer, bright; tag \"primary → acid\"). On \"trap\" \"pent-1-ene\" is underlined and a chip \"pent-1-ene → (steam) → pentan-2-ol → pentanoic acid\" fades in and is crossed (caption \"a secondary alcohol gives a ketone: dead end\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A chemist has only ethene and butan-1-ol as carbon-containing starting materials.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A chemist has only ethene and",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A chemist has only ethene and butan-1-ol as carbon-containing starting materials. Draw a flow chart to make ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃. Show the reagents and conditions on every arrow.\" No structures, no map. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "ethanol / reflux / trap",
+        "On the spoken cues: On \"ethanol\" \"ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃\" is underlined and the ester cut runs on it (halves labelled \"ethyl ← ethanol\", \"butanoate ← butanoic acid\"); then \"ethene\" is underlined and the upper arm writes: \"ethene → (H₂O (steam), H₃PO₄, about 300 °C, high pressure, ⇌) → ethanol\". On \"reflux\" \"butan-1-ol\" and \"on every arrow\" are underlined and the lower arm writes: \"butan-1-ol → (excess K₂Cr₂O₇ / H⁺, heat",
+        "explain",
+        "the card stays, shrunk to the top. On \"ethanol\" \"ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃\" is underlined and the ester cut runs on it (halves labelled \"ethyl ← ethanol\", \"butanoate ← butanoic acid\"); then \"ethene\" is underlined and the upper arm writes: \"ethene → (H₂O (steam), H₃PO₄, about 300 °C, high pressure, ⇌) → ethanol\". On \"reflux\" \"butan-1-ol\" and \"on every arrow\" are underlined and the lower arm writes: \"butan-1-ol → (excess K₂Cr₂O₇ / H⁺, heat under reflux) → butanoic acid\"; the join arrow writes \"conc. H₂SO₄, heat under reflux, ⇌\" → \"ethyl butanoate + H₂O\" (the answer, bright). On \"trap\" a chip \"oxidise ethanol; esterify with butan-1-ol\" fades in and is crossed (caption \"gives butyl ethanoate, C₆H₁₂O₂ too\"); `m7-ester-fruit-v1.png` appears small at the right with the pineapple ringed (grey tag \"ethyl butanoate: smells of pineapple\"), then dims. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: So every synthesis question uses the same four moves, on one map.",
+        "Next",
+        "On the spoken cues: The memory aid lines return small at the top, and the reaction map card sits at the centre at full size, grey with the main road amber. On \"Next\" `m7-ester-fruit-v1.png` appears small at the right and a chip \"Next: organic synthesis pathway practice\" appears.",
+        "explain",
+        "the board clears. The memory aid lines return small at the top, and the reaction map card sits at the centre at full size, grey with the main road amber. On \"Next\" `m7-ester-fruit-v1.png` appears small at the right and a chip \"Next: organic synthesis pathway practice\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7C14_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Addition polymers: from alkene to plastic\".",
+        "Hook (a gas becomes a solid): Ethene is a gas.",
+        "polyethylene / pipes",
+        "On the spoken cues: Ethene, CH₂=CH₂, draws small at the left (teal C=C) with a grey tag \"a gas\". `m7-polymer-objects-v1.png` appears medium at the right. On \"polyethylene\" the bag is ringed (tag \"polyethylene\"). On \"pipes\" chloroethene, CH₂=CHCl, draws under ethene (green Cl) and the pipe is ringed (tag \"PVC\"). On \"behave so differently\" the foam cup is ringed (tag \"polystyrene foam\"). The grey tag on the bottle writes grey from the",
+        "explain",
+        "heading writes on: \"Addition polymers: from alkene to plastic\". Ethene, CH₂=CH₂, draws small at the left (teal C=C) with a grey tag \"a gas\". `m7-polymer-objects-v1.png` appears medium at the right. On \"polyethylene\" the bag is ringed (tag \"polyethylene\"). On \"pipes\" chloroethene, CH₂=CHCl, draws under ethene (green Cl) and the pipe is ringed (tag \"PVC\"). On \"behave so differently\" the foam cup is ringed (tag \"polystyrene foam\"). The grey tag on the bottle writes grey from the start and stays grey: \"PET bottle: a condensation polymer, next video\". Dimming order (Revision 2): \"a gas\" dims on \"polyethylene\"; the \"polyethylene\" tag dims on \"pipes\"; the \"PVC\" tag dims on \"behave so differently\". Bright at the end: the heading, the plate and the two monomers. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "open-double-bond": [
+        "new",
+        "the board clears.",
+        "Opening the double bond, again and again: A small molecule that joins up into a long chain is a monomer, and the chain is a polymer, meaning many parts.",
+        "monomer / breaks / chain",
+        "On the spoken cues: Task chip \"Monomer to polymer\". Five ethene molecules sit in a row. On \"monomer\" one is ringed (tag \"monomer: a small molecule that joins up\"); a grey chip \"polymer: many parts\" writes. On \"breaks\" c04a's bond opener runs on the first molecule (grey chip \"c04a: the weaker second bond\"); its two stubs glow (tag \"one spare bond on each carbon\"); on \"chain behind\" the tag splits into \"← to the chain\" and \"to the next",
+        "explain",
+        "the board clears. Task chip \"Monomer to polymer\". Five ethene molecules sit in a row. On \"monomer\" one is ringed (tag \"monomer: a small molecule that joins up\"); a grey chip \"polymer: many parts\" writes. On \"breaks\" c04a's bond opener runs on the first molecule (grey chip \"c04a: the weaker second bond\"); its two stubs glow (tag \"one spare bond on each carbon\"); on \"chain behind\" the tag splits into \"← to the chain\" and \"to the next monomer →\" on the two stubs (Revision 2). On \"initiator\" a small amber initiator dot touches the first molecule and the chain zipper runs: each spare bond reaches the next monomer, whose second bond opens in turn, accelerating left to right; the counter ticks \"monomers joined: 5 ... 1000s\" as the camera pulls back on a long zigzag. On \"chain\" a grey \"+ nothing else\" box appears beside the arrow (tag \"every atom ends up in the chain\"). Bright at the end: the long chain, the counter and the \"nothing else\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "draw-repeat-unit": [
+        "new",
+        "the board clears.",
+        "Drawing the repeat unit: You can't draw thousands of units, so you draw the part that repeats, once.",
+        "repeats / PVC / side",
+        "On the spoken cues: Task chip \"Draw it\". On \"repeats\" two chloroethene units draw already joined, –CH₂–CHCl–CH₂–CHCl–, with continuation bonds at both ends (grey tag \"draw two first\"). On \"single bond\" the C=C of a separate chloroethene redraws as C–C, and two navy continuation bonds grow out of the carbons. On \"brackets\" the bracket stamp runs on one unit of the two-unit sketch: square brackets drop in, the continuation bonds poke",
+        "explain",
+        "the board clears. Task chip \"Draw it\". On \"repeats\" two chloroethene units draw already joined, –CH₂–CHCl–CH₂–CHCl–, with continuation bonds at both ends (grey tag \"draw two first\"). On \"single bond\" the C=C of a separate chloroethene redraws as C–C, and two navy continuation bonds grow out of the carbons. On \"brackets\" the bracket stamp runs on one unit of the two-unit sketch: square brackets drop in, the continuation bonds poke through, and n writes outside; the second unit fades (tag \"repeat unit: brackets, n, bonds through\"). The equation writes under it: \"n CH₂=CHCl → [–CH₂–CHCl–]ₙ\". On \"PVC\" a tag \"poly(chloroethene): PVC\" writes, with a grey line under it \"PVC: polyvinyl chloride (vinyl chloride = chloroethene)\" (Revision 2). On \"side\" the two backbone carbons glow ink and the Cl glows green (tags \"backbone: the two C=C carbons\" and \"side group\"). A grey crossed chip \"C=C inside the brackets\" writes and dims. Bright at the end: the repeat unit, the equation and the \"side group\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "monomer-from-unit": [
+        "new",
+        "the board clears.",
+        "Going backwards: from repeat unit to monomer: To find the monomer from a repeat unit, go backwards.",
+        "backwards / bonds / styrene",
+        "On the spoken cues: Task chip \"Backwards\". Polystyrene's repeat unit draws: [–CH₂–CH(C₆H₅)–]ₙ with the ring as a hexagon with a grey inner ring. On \"backwards\" the bracket unstamp runs: brackets and n lift off, the continuation bonds shrink into the carbons, and a teal second bond redraws between the backbone carbons. On \"Don't add hydrogens\" a ghost H drifts towards each backbone carbon and is crossed (tag \"no extra H\"). On \"bonds\"",
+        "explain",
+        "the board clears. Task chip \"Backwards\". Polystyrene's repeat unit draws: [–CH₂–CH(C₆H₅)–]ₙ with the ring as a hexagon with a grey inner ring. On \"backwards\" the bracket unstamp runs: brackets and n lift off, the continuation bonds shrink into the carbons, and a teal second bond redraws between the backbone carbons. On \"Don't add hydrogens\" a ghost H drifts towards each backbone carbon and is crossed (tag \"no extra H\"). On \"bonds\" each backbone carbon's bonds tick \"1, 2, 3, 4\" in turn (tag \"four bonds each\"). On \"styrene\" the name writes, \"styrene (phenylethene), CH₂=CHC₆H₅\" (tag \"monomer\"). Bright at the end: styrene, the \"no extra H\" tag and the \"four bonds each\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "solid-thermoplastic": [
+        "new",
+        "the board clears.",
+        "Why a solid, and why it softens: So why is polyethylene a solid, when ethene is a gas?",
+        "contact / slide / thermoplastic",
+        "On the spoken cues: Task chip \"Why solid?\". The chain view box fills with about 30 straight pale-blue strands. On \"contact\" faint dotted pale-blue ticks light where strands touch, thousands along each pair; the contact counter climbs (grey chip \"c03: more contact, stronger dispersion\"; tag \"many small forces add up\"). On \"No bonds join\" a grey dashed link between two strands draws and is crossed (tag \"no bonds between chains\"); the c03",
+        "explain",
+        "the board clears. Task chip \"Why solid?\". The chain view box fills with about 30 straight pale-blue strands. On \"contact\" faint dotted pale-blue ticks light where strands touch, thousands along each pair; the contact counter climbs (grey chip \"c03: more contact, stronger dispersion\"; tag \"many small forces add up\"). On \"No bonds join\" a grey dashed link between two strands draws and is crossed (tag \"no bonds between chains\"); the c03 chip dims. On \"slide\" the warm slide runs: an amber glow under the box, strands jiggle and slide past each other, each strand's own line staying unbroken (tag \"chain bonds intact\"); on \"Cool it\" the glow fades and the ticks return. On \"thermoplastic\" a tag \"thermoplastic: softens on heating, again and again\" writes, and a small grey chip, not narrated, writes and dims: \"chains joined by covalent cross-links don't soften like this (thermosets)\"; its referent is the crossed link drawn earlier in the scene. Bright at the end: the chain box, the \"chain bonds intact\" tag and the \"thermoplastic\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "ldpe-hdpe": [
+        "adjust",
+        "the board clears.",
+        "LDPE and HDPE: branches decide: Polyethylene comes in two main forms, made under different conditions.",
+        "branches / straight / bottles",
+        "On the spoken cues: Task chip \"LDPE or HDPE\". A grey chip: \"same monomer, same repeat unit [–CH₂–CH₂–]ₙ\". The chain view box sits at the centre. On \"branches\" the branch toggle runs: strands sprout short side branches, the box spreads, the contact ticks thin out (tag \"branches: less contact, weaker forces\"); the new `m7-ldpe-squeeze-bottle-v1.png` appears small at the left (tag \"LDPE: soft, about 110 °C\"); a grey tag \"about 0.91 to",
+        "explain",
+        "the board clears. Task chip \"LDPE or HDPE\". A grey chip: \"same monomer, same repeat unit [–CH₂–CH₂–]ₙ\". The chain view box sits at the centre. On \"branches\" the branch toggle runs: strands sprout short side branches, the box spreads, the contact ticks thin out (tag \"branches: less contact, weaker forces\"); the new `m7-ldpe-squeeze-bottle-v1.png` appears small at the left (tag \"LDPE: soft, about 110 °C\"); a grey tag \"about 0.91 to 0.94 g/cm³; varies by grade\" writes and dims. On \"straight\" the toggle runs back: straight strands line up in neat parallel regions, the ticks thicken (tag \"straight chains pack: more contact\"); the LDPE plate and tag dim, and the new `m7-hdpe-crate-v1.png` appears small at the right (tag \"HDPE: stiff, about 130 °C\"); a grey tag \"about 0.94 to 0.97 g/cm³\" writes and dims. On \"bottles\" a small grey handwritten chip \"c03: straight chains lie close; branches get in the way\" writes (Revision 2: no \"balls\", because an LDPE chain is a long strand with short branches, not a ball). Dimming order (Revision 2): the \"same monomer\" chip dims on \"branches\"; the LDPE plate and its tags dim on \"straight\". Bright at the end: the straight-chain box, the HDPE plate and its tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "pvc": [
+        "adjust",
+        "the board clears.",
+        "PVC: a polar side group: Now change the monomer.",
+        "polar / pipes / apart",
+        "On the spoken cues: Task chip \"Side groups\". A short strip of PVC chain draws with green Cl on every second carbon. On \"polar\" each C–Cl gains δ+ and δ− (grey chip \"c08b: polar bond, dipole–dipole\"). The view zooms out to the chain box and the side-group swap runs: green Cl dots appear along the strands with dotted teal dipole–dipole lines to the next strand (tag \"dispersion + dipole–dipole: grips harder\"). On \"pipes\" the new",
+        "explain",
+        "the board clears. Task chip \"Side groups\". A short strip of PVC chain draws with green Cl on every second carbon. On \"polar\" each C–Cl gains δ+ and δ− (grey chip \"c08b: polar bond, dipole–dipole\"). The view zooms out to the chain box and the side-group swap runs: green Cl dots appear along the strands with dotted teal dipole–dipole lines to the next strand (tag \"dispersion + dipole–dipole: grips harder\"). On \"pipes\" the new `m7-pvc-pipe-v1.png` appears small at the right (tag \"rigid PVC: pipes\"). On \"apart\" grey plasticiser beads slide in between strands and the strands drift apart; the teal lines stretch and thin (tag \"plasticiser: chains pushed apart, flexible\"); a grey chip \"flexible PVC: cable coating\" writes. Bright at the end: the plasticised box, the pipe plate and the \"plasticiser\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "polystyrene": [
+        "adjust",
+        "the board clears.",
+        "Polystyrene: a bulky side group: Polystyrene has a bulky benzene ring on every second carbon.",
+        "slide / foam",
+        "On the spoken cues: A short strip of polystyrene chain draws with a hexagon ring on every second carbon. On \"like LDPE's branches\" a small grey thumbnail of scene 6's branched box appears (tag \"LDPE: short, floppy branches\") and dims. On \"slide\" the side-group swap runs in the chain box: large hexagons sit between strands, which lie at awkward angles; a strand tries to slide and its rings catch on the next strand's rings (tag \"rings",
+        "explain",
+        "the board clears. A short strip of polystyrene chain draws with a hexagon ring on every second carbon. On \"like LDPE's branches\" a small grey thumbnail of scene 6's branched box appears (tag \"LDPE: short, floppy branches\") and dims. On \"slide\" the side-group swap runs in the chain box: large hexagons sit between strands, which lie at awkward angles; a strand tries to slide and its rings catch on the next strand's rings (tag \"rings catch: chains hardly slide\"). A quiet grey tag \"rigid, clear, brittle\" writes and dims. On \"foam\" the new `m7-ps-foam-cup-v1.png` appears small at the right (tag \"expanded polystyrene: trapped air insulates\"). Bright at the end: the ring-jammed box, the foam cup plate and its tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "ptfe": [
+        "adjust",
+        "the board clears.",
+        "PTFE: a fluorine sheath: Finally, swap every hydrogen in ethene for fluorine, and polymerise tetrafluoroethene.",
+        "PTFE / attack / polar / cancel / hardly shift / sticks",
+        "On the spoken cues: Tetrafluoroethene, CF₂=CF₂, draws (pale green-yellow F) and the bracket stamp runs on its polymer: \"n CF₂=CF₂ → [–CF₂–CF₂–]ₙ\". On \"PTFE\" the tag \"poly(tetrafluoroethene): PTFE\" writes. On \"attack\" the side-group swap gives one strand a full fluorine sheath of overlapping F balls; small grey reagent dots bounce off (tag \"strong C–F bonds, F sheath: resists attack\"); a grey chip \"C–F ≈ 485 kJ/mol; C–H ≈ 413 kJ/mol\"",
+        "explain",
+        "the board clears. Tetrafluoroethene, CF₂=CF₂, draws (pale green-yellow F) and the bracket stamp runs on its polymer: \"n CF₂=CF₂ → [–CF₂–CF₂–]ₙ\". On \"PTFE\" the tag \"poly(tetrafluoroethene): PTFE\" writes. On \"attack\" the side-group swap gives one strand a full fluorine sheath of overlapping F balls; small grey reagent dots bounce off (tag \"strong C–F bonds, F sheath: resists attack\"); a grey chip \"C–F ≈ 485 kJ/mol; C–H ≈ 413 kJ/mol\" writes and dims. On \"polar\" each C–F shows δ+ and δ− briefly; the PTFE tag and the bond chip dim. On \"cancel\" the dipole arrows on opposite C–F bonds point outwards in pairs and fade together (tag \"even sheath: pulls cancel\"). On \"hardly shift\" the δ labels dim and a grey chip \"c03: dispersion needs electrons that shift\" writes and dims (tag \"electrons held tightly\"). On \"sticks\" the \"pulls cancel\" and \"electrons held tightly\" tags dim, and a coded water drop sits on the sheath with only one or two faint dispersion ticks and slides off (tag \"only very weak forces: non-stick\"). The new `m7-ptfe-pan-v1.png` appears small at the right; after the non-stick tag dims, a grey tag \"used up to about 260 °C; melts at about 327 °C\" writes and dims (Revision 2 dimming order). No visual shows PTFE being remelted or moulded (science S8). Bright at the end: the sheathed strand, the pan plate and the \"non-stick\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid and the comparison: So, to draw an addition polymer, open the double bond and add brackets, and remember, nothing is lost.",
+        "brackets / use / bonds",
+        "On the spoken cues: Handwritten line: \"Open the double bond, add brackets. Nothing lost.\" A comparison board (rebuilt in Revision 2) writes one row at a time on \"trace it back\", each row lighting and the previous dimming. Each row is a small chain-view thumbnail from its scene, then one short cell: branched strands with thin contact ticks, \"LDPE: soft → squeeze bottles\"; straight packed strands with thick ticks, \"HDPE: stiff → crates,",
+        "explain",
+        "the board clears. Handwritten line: \"Open the double bond, add brackets. Nothing lost.\" A comparison board (rebuilt in Revision 2) writes one row at a time on \"trace it back\", each row lighting and the previous dimming. Each row is a small chain-view thumbnail from its scene, then one short cell: branched strands with thin contact ticks, \"LDPE: soft → squeeze bottles\"; straight packed strands with thick ticks, \"HDPE: stiff → crates, milk bottles\"; strands with green Cl and teal dipole–dipole lines, \"PVC: rigid → pipes\"; ring-jammed strands, \"PS: rigid; foam → cups\"; the fluorine-sheathed strand, \"PTFE: inert, non-stick → pans\". At most one row's cell is bright at a time. On \"use\" a header arrow writes across the board: \"structure → forces → property → use\". On \"bonds\" the PTFE row relights and a small tag writes beside its cell: \"inert: strong C–F bonds, not forces between chains\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. 1,1-dichloroethene forms an addition polymer. Draw",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"(a) 1,1-Dichloroethene, CH₂=CCl₂, forms an addition polymer. Draw the repeat unit of this polymer. (b) Another addition polymer has the repeat unit shown. Name and draw its monomer.\" Beside (b) the repeat unit [–CH₂–CH(CH₃)–]ₙ in plain ink. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no comparison board, no memory aid.",
+        [
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "brackets / propene / trap",
+        "On the spoken cues: On \"brackets\" \"CH₂=CCl₂\" and \"repeat unit\" are underlined and the answer draws: [–CH₂–CCl₂–]ₙ with both green Cl on one carbon, bonds through the brackets and n (the answer, bright). On \"propene\" \"the repeat unit shown\" and \"Name and draw its monomer\" are underlined; the bracket unstamp runs on [–CH₂–CH(CH₃)–]ₙ, giving \"propene, CH₂=CH–CH₃\" (the answer, bright). On \"trap\" a chip \"monomer: CH₃–CH₂–CH₃\" fades in and",
+        "explain",
+        "the card stays, shrunk to the top. On \"brackets\" \"CH₂=CCl₂\" and \"repeat unit\" are underlined and the answer draws: [–CH₂–CCl₂–]ₙ with both green Cl on one carbon, bonds through the brackets and n (the answer, bright). On \"propene\" \"the repeat unit shown\" and \"Name and draw its monomer\" are underlined; the bracket unstamp runs on [–CH₂–CH(CH₃)–]ₙ, giving \"propene, CH₂=CH–CH₃\" (the answer, bright). On \"trap\" a chip \"monomer: CH₃–CH₂–CH₃\" fades in and is crossed (caption \"no extra H: restore the C=C\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"High-density polyethylene (HDPE) is used for rigid chopping boards, and low-density polyethylene (LDPE) is used for soft squeeze bottles.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. HDPE is used for rigid chopping",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"High-density polyethylene (HDPE) is used for rigid chopping boards, and low-density polyethylene (LDPE) is used for soft squeeze bottles. Both are made from ethene. Explain how differences in chain structure lead to these different properties, and explain why both can be melted and remoulded for recycling.\" No plates, no chain views. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "straight / slide / trap",
+        "On the spoken cues: On \"straight\" \"rigid chopping boards\", \"soft squeeze bottles\" and \"chain structure\" are underlined; the chain box shows straight packed strands with thick contact ticks (tag \"straight: packed, stronger dispersion\"), then the branch toggle shows LDPE's spread strands (tag \"branched: weaker\"); small copies of `m7-hdpe-crate-v1.png` and `m7-ldpe-squeeze-bottle-v1.png` sit under their tags. On \"slide\" \"melted and",
+        "explain",
+        "the card stays, shrunk to the top. On \"straight\" \"rigid chopping boards\", \"soft squeeze bottles\" and \"chain structure\" are underlined; the chain box shows straight packed strands with thick contact ticks (tag \"straight: packed, stronger dispersion\"), then the branch toggle shows LDPE's spread strands (tag \"branched: weaker\"); small copies of `m7-hdpe-crate-v1.png` and `m7-ldpe-squeeze-bottle-v1.png` sit under their tags. On \"slide\" \"melted and remoulded\" is underlined and the warm slide runs once (tag \"chains slide; chain bonds intact\"). On \"trap\" a chip \"Melting breaks the covalent bonds in the chains.\" fades in and is crossed (caption \"only the forces between chains are overcome\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: Next: polymers that give something off, usually water, every time two monomers join.",
+        "Next",
+        "On the spoken cues: The memory aid line returns small at the top. `m7-polymer-objects-v1.png` returns small at the centre with only the bottle ringed. On \"Next\" a chip \"Next: how does condensation build a polymer?\" appears.",
+        "explain",
+        "the board clears. The memory aid line returns small at the top. `m7-polymer-objects-v1.png` returns small at the centre with only the bottle ringed. On \"Next\" a chip \"Next: how does condensation build a polymer?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# END generated rows: m7c09, m7c10, m7c11, m7c12, m7c13, m7c14
 
 
 LESSONS = {
@@ -17087,6 +18652,86 @@ LESSONS = {
         'rows': SKILLS07_ROWS,
     },
     # END generated entries: m7c07, m7p03c, m7g02, m7c08a, m7c08b, skills07
+    # BEGIN generated entries: m7c09, m7c10, m7c11, m7c12, m7c13, m7c14
+    'm7c09': {
+        'design': D + 'lessons/chem-m7-c09.md',
+        'learning_review': D + 'checks/m7c09-learning-review.md',
+        'science_check': D + 'checks/m7c09-claude-science-check.md',
+        'meta': {"title": "Why are carboxylic acids acidic? The carboxyl group, its naming, its dimers and the proton it gives away", "subtitle": "Ethanoic acid and propan-1-ol have the same molar mass, and both contain an O–H group. Yet the acid boils 21 degrees higher, turns blue litmus red and fizzes with baking soda, while the alcohol does none of these. What does the carboxyl group change, and why does it make the molecule an acid?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 15, "lessonIntent": "identifying and drawing the carboxyl group; naming carboxylic acids up to C8 with methyl or ethyl branches; explaining their boiling points and solubility against other families and within the series; explaining why a carboxylic acid is a weak acid and an alcohol is not, using the conjugate base's shared charge and pKa; describing the litmus and hydrogen carbonate observations and writing the reactions with sodium hydroxide, magnesium and sodium hydrogen carbonate. No organic bases, no esters."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "carboxyl-group", "naming-acids", "dimers-boiling", "series-solubility", "weak-acid", "shared-charge", "litmus", "acid-reactions", "hydrogen-carbonate-test", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c08a (primary alcohol oxidised under reflux to a carboxylic acid; ethanoic acid named); chem-m7-c08b (the carbonyl group, polar C=O, dipole–dipole forces, the boiling point strip); chem-m7-c05 (alcohol naming, hydrogen bonding from an O–H, donor and acceptor, propan-1-ol 97 °C, \"Same size? Hydrogen bonding wins. Same family? Size wins.\", solubility falling with chain length); chem-m7-c03 (dispersion forces, the water lattice); chem-m7-c01 (naming rules, locants, branches); chem-m6-c01 (proton transfer, H₃O⁺); chem-m6-c02 (acid with hydroxide, metal and carbonate; carbonic acid breaks into water and CO₂); chem-m6-c05 (weak means partial ionisation; weak is not dilute; ethanoic acid at 0.10 mol/L pH 2.9, about 1 in 80); chem-m6-c10 (Ka, pKa, lower pKa is stronger, each unit a factor of 10, conjugate base). Not assumed: carboxyl group, \"-oic acid\" naming, dimer, carboxylate and ethanoate, the hydrogen carbonate test, why the conjugate base's charge matters.", "startsWith": "Identify the carboxyl group and its intermolecular forces. The video opens: In the alcohol reactions video, ethanol was oxidised under reflux, all the way to ethanoic acid. That's the acid in vinegar. Now compare it with propan-one-ol.", "stopsAfter": "identifying and drawing the carboxyl group; naming carboxylic acids up to C8 with methyl or ethyl branches; explaining their boiling points and solubility against other families and within the series; explaining why a carboxylic acid is a weak acid and an alcohol is not, using the conjugate base's shared charge and pKa; describing the litmus and hydrogen carbonate observations and writing the reactions with sodium hydroxide, magnesium and sodium hydrogen carbonate. No organic bases, no esters.", "nextLesson": "what happens when a carboxylic acid meets an alcohol (route chem-m7-c10, \"How do an acid and alcohol make an ester?\")."},
+        'teaching': {"task": "Ethanoic acid and propan-1-ol have the same molar mass, and both contain an O–H group. Yet the acid boils 21 degrees higher, turns blue litmus red and fizzes with baking soda, while the alcohol does none of these. What does the carboxyl group change, and why does it make the molecule an acid?", "causalExplanation": "(1) ethanoic acid and propan-1-ol have the same mass and both have an O–H, yet the acid boils 21 °C higher, turns litmus red and fizzes (1); (2) the carboxyl group is C=O and O–H on one carbon, only one O–H, both bonds polar (2); (3) names end \"-oic acid\"; the carboxyl carbon is C1 and counts in the chain (3); (4) alcohols also give and take hydrogen bonds, so that alone is not the difference; the C=O beside the O–H is a second taker, so the O–H gives and the C=O takes a hydrogen bond, and pairs lock with two (dimers), plus dipole–dipole forces, so the acid boils higher (4); (5) longer chains add dispersion, so boiling points climb; small acids mix with water and solubility falls after C4 (5); (6) in water the O–H hydrogen can transfer to water as H⁺, but the equilibrium lies well to the left, because ethanoate ions keep taking protons back: a weak acid (6); (7) the C=O beside the oxygen lets the charge left behind spread across two oxygens, about half on each, and half a charge pulls on a proton less strongly, so ethanoate takes protons back less readily; an alcohol has no C=O there, so its charge would sit on one oxygen; pKa 4.7 against 16 (7); (8) evidence: litmus, because the acid raises the hydronium ion concentration (8); (9) reactions as an acid, salts \"-oate\" (9); (10) the hydrogen carbonate test and why it works (10); memory aid (11); two attempts and brief feedback (12 to 15); handoff (16); key notes (17).", "conversationalApproach": "ethanoic acid and propan-1-ol have the same molar mass and both contain an O-H, yet the acid boils 21 degrees higher, turns blue litmus red and fizzes with baking soda, so the video asks what the carboxyl group changes and why it makes the molecule an acid. The carboxyl group is a C=O and an O-H on one carbon; names end in oic acid with the carboxyl carbon as carbon one. The O-H gives a hydrogen bond and the C=O oxygen takes one, so two acid molecules lock together as a dimer with two hydrogen bonds and boil higher than alcohols of similar size, and along the family each extra CH2 adds dispersion forces while small acids still mix with water. In water the O-H hydrogen can leave as a proton to make hydronium and an ethanoate ion, but the equilibrium lies well to the left and only about one molecule in eighty gives its proton away, so it is a weak acid (partly ionised, not dilute); it lets go because the ion left behind spreads its negative charge over two oxygens, while an alcohol's ion cannot. Litmus shows the raised hydronium, the acid is neutralised by sodium hydroxide like a Module 6 acid, and sodium hydrogen carbonate gives carbon dioxide as the most useful test. The memory aid ranks similar-sized molecules: carboxylic acid above alcohol above aldehyde and ketone above alkane. Two exam questions follow with brief feedback.", "openingDecision": "In the alcohol reactions video, ethanol was oxidised under reflux, all the way to ethanoic acid. That's the acid in vinegar. Now compare it with propan-one-ol. Both have a molar mass of sixty, and both contain an O H group. Yet the acid boils at one hundred and eighteen degrees, and the alcohol at ninety seven. The acid turns blue litmus red, and it fizzes with baking soda. The alcohol does neither. So what does the acid's group change?", "understandingCheck": "(A1) \"Compound X has the condensed structural formula CH₃CH(CH₃)CH₂COOH and boils at 177 °C. Hexan-1-ol, which has a similar molar mass, boils at 157 °C. (a) Give the IUPAC name of X. (b) Explain why X has the higher boiling point, with reference to the intermolecular forces present.\" A skeletal formula of X is shown beside it in plain ink (no colours, no locants). New molecules (scenes use C1 to C4 straight chains and 2-methylpropanoic acid); tests counting the carboxyl carbon and the dimer reason. Crossed mistake: \"2-methylpropanoic acid\" (the carboxyl carbon left out of the chain, which names a different, smaller acid; the site's chain-length rule). (A2) \"Butanoic acid and butan-1-ol are both colourless liquids. Describe a chemical test that would distinguish them, including a balanced equation for any reaction. Explain why only one of them reacts.\" New pair (scenes use ethanoic acid and propan-1-ol); tests the hydrogen carbonate test, the equation with CO₂, and the reason (a stronger acid than carbonic acid, because the conjugate base's charge is shared). Crossed mistake: \"Both contain an O–H group, so both react.\" (the lesson's central misconception, L18 Q2 distractor pattern).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127); alkanes; alkenes; alkynes; alcohols (primary, secondary and tertiary); aldehydes and ketones; carboxylic acids; amines and amides; halogenated organic compounds\" This video covers carboxylic acids only (hydrocarbons chem-m7-c01 and g01; haloalkanes chem-m7-c04a; alcohols chem-m7-c05; aldehydes and ketones chem-m7-c08b; amines and amides chem-m7-c11). \"investigate the structural formulae, properties and functional group including:; primary, secondary and tertiary alcohols; aldehydes and ketones (ACSCH127); amines and amides; carboxylic acids\" This video covers carboxylic acids (alcohols chem-m7-c05; aldehydes and ketones chem-m7-c08b; amines and amides chem-m7-c11). \"explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present\" This video covers carboxylic acids, within their series and against alcohols, aldehydes, ketones and alkanes; amines and amides are chem-m7-c11. \"investigate the differences between an organic acid and organic base\" This video covers the organic acid: what makes a carboxylic acid acidic and how its acid behaviour is observed. The organic base and the comparison are chem-m7-c11 (route review change 3). this video starts by identifying the carboxyl group and its intermolecular forces, and stops at explaining why a carboxylic acid is a weak acid while an alcohol is not, with the observations that show it. It teaches: the carboxyl group (–COOH) is a carbonyl (C=O) and a hydroxyl (O–H) on the same carbon; the two oxygens differ, and there is only one O–H; inside the molecule the bonds are covalent, and both the C=O and the O–H are polar (the intramolecular part of `C7-IQ5-02`); naming (longest chain including the carboxyl carbon, drop the final \"e\", add \"oic acid\"; the carboxyl carbon is C1, so no locant; it is counted in the chain; branches numbered from it: 2-methylpropanoic acid); hydrogen bonding: the O–H donates and the C=O oxygen accepts, so two molecules can pair with two hydrogen bonds (a dimer), plus dipole–dipole forces from the C=O, so for similar sizes a carboxylic acid boils higher than an alcohol (ethanoic acid 118 °C against propan-1-ol 97 °C, both about 60 g/mol); within the series, boiling point rises with chain length (more dispersion), and solubility in water falls after butanoic acid; in water the O–H hydrogen can transfer to water as H⁺, forming H₃O⁺ and the carboxylate ion (ethanoate), but the reaction is reversible and the equilibrium lies well to the left, so only a small fraction ionises (weak, not dilute; Module 6 recall: pH about 2.9 at 0.10 mol/L, about 1 molecule in 80); why: the C=O beside the oxygen lets the charge left on the carboxylate spread across both oxygens, about half on each, so it does not take the proton back as strongly; an alkoxide has no C=O there, so its charge would sit on one oxygen; so pKa about 4.7 against about 16 (Module 6 recall: lower pKa, stronger acid; each unit a factor of 10); evidence: blue litmus turns red with the acid and stays blue with the alcohol; reactions as an acid (Module 6 recall): with sodium hydroxide (salt and water), with magnesium (salt and hydrogen), salts named \"-oate\"; the sodium hydrogen carbonate test: the acid is stronger than carbonic acid, so it gives a proton to hydrogen carbonate, and the carbonic acid breaks up into water and CO₂, so it fizzes; an alcohol does not; the equation includes CO₂. Not here: the organic base and the acid against base comparison (chem-m7-c11, route review change 3); amines and amides; esters and esterification (chem-m7-c10, next); phenol (beyond the 2017 syllabus; the site marks it as extension; author note f); chloroethanoic acid and inductive effects (author note f); pH or Ka calculations (Module 6); salt hydrolysis and the pH of sodium ethanoate (Module 6); reaction with sodium metal (author note f); soaps (chem-m7-c12); the site's pharmaceutical recall hook (site correction 1)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c08b: carbon skeleton ink; hydrogens soft grey; main chain pale blue; branches amber; oxygen brick red; the carboxyl group ringed red as one functional group, its O–H hydrogen grey-white and slightly larger; δ− and δ+ small in navy; lone pairs as two small red dot pairs on O; dipole–dipole attractions dotted teal; hydrogen bonds dotted violet; dispersion forces dotted pale blue; the transferring proton in the chem-m6-c01 proton colour; the carboxylate's charge as a grey-violet glow. Board layout (constant): top-left the short task chip (\"Acid or alcohol?\", \"Name it\", \"Forces\", \"Why acidic?\", \"Test it\"); centre the structure board, one molecule or one pair at a time; the boiling point strip at the right only in scenes 4 and 5; plates small or medium at the left or right only in scenes 1, 8, 10 and 15. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 27 Oct by contact sheet): `m6-vinegar-bottle-v1.png` (amber vinegar bottle, cork cap; scene 1, small); `m6-litmus-red-v1.png` (a red strip on a white tile; the end state in scene 8); `m6-clip-baking-soda-vinegar-before-v1.png` and `m6-clip-baking-soda-vinegar-fizz-v1.png` (aligned pair, same alpha bounds: a glass beaker of clear liquid with a heap of white powder at the base, then the same with bubbles; scene 10 and feedback 2). Not used: `m6-litmus-blue-v1.png` (shows a red-to-blue result with a red tip, wrong for this video); `m6-baking-soda-box-v1.png` (the beaker pair already shows the solid); `p01-mg-ribbon-v1.png` (the magnesium line is a short equation; a plate would add a fourth bright object). One new plate (Assets). All plates small or medium, scaled uniformly only, never stretched. No human figures.", "transitionPlan": "A grey c08a thumbnail sits top-left as ethanoic acid and propan-1-ol draw with their boiling point chips and the litmus and baking soda chips; the board clears to ethanoic acid in full structural form with its C=O and O-H ringed; the name builder writes butanoic acid from the traced chain; two acid molecules link by two dotted hydrogen bonds into a dimer beside a single-bonded alcohol pair, and the boiling point strip drops each to its mark; four skeletal acids climb the strip and a water lattice takes the small ones; the ProtonHop carries the O-H hydrogen to a water molecule and the equation writes with its equilibrium arrow and a lies-to-the-left tag; the ethanoate ion spreads its charge across both oxygens beside an alcohol's ion with its charge on one; the blue litmus strip plates cross-fade to red for the acid only; the reaction strip writes the neutralisation with its salt name; the baking soda and vinegar plates cross-fade from before to fizzing; the memory line writes with a small ranking strip; each attempt clears the board and its feedback underlines the card as the name builder or reaction strip runs and a crossed chip lands; the memory lines and next chip close; scene crossfade with settle."},
+        'rows': M7C09_ROWS,
+    },
+    'm7c10': {
+        'design': D + 'lessons/chem-m7-c10.md',
+        'learning_review': D + 'checks/m7c10-learning-review.md',
+        'science_check': D + 'checks/m7c10-claude-science-check.md',
+        'meta': {"title": "How do an acid and alcohol make an ester? Esterification, ester names, the equilibrium yield and getting the ester out", "subtitle": "Banana and pineapple flavourings often get their smell from esters, and each ester can be made from a carboxylic acid and an alcohol. How do the two halves join and how is the ester named, why does the reaction never quite finish, how do you push the yield up and get the ester out, and how could you make it from ethanol alone?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 16, "lessonIntent": "writing the equation for esterification with conditions and the equilibrium arrow; naming an ester from its acid and alcohol and working back from an ester to both; explaining an ester's low boiling point and volatility; explaining why the reaction stops short and how excess reactant or removing water raises the yield, while the catalyst does not; outlining how the ester is separated, purified and checked; drawing a two-step flow chart with conditions. No hands-on procedure or risk table, no saponification."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "joining-halves", "naming-esters", "working-backwards", "ester-properties", "conditions-reflux", "equilibrium-yield", "pushing-yield", "separating-identifying", "flow-chart", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c09 (carboxyl group, \"-oic acid\" names, salts \"-oate\", the hydrogen carbonate fizz test, acid hydrogen bonding and boiling points); chem-m7-c05 (alcohol names, the O–H and hydrogen bonding, boiling points, solubility); chem-m7-c08a (oxidation of a primary alcohol to a carboxylic acid with acidified dichromate under reflux); chem-m7-c08b (dipole–dipole forces from a C=O); chem-m7-c06 (why reflux: the condenser returns vapours; ethene hydration to ethanol); chem-m7-c03 (dispersion forces, \"like dissolves like\"); chem-m7-c02 (isomers; functional group isomers named in c08b); chem-m5-c03 (Le Chatelier: adding a substance shifts the position to use up some of it, removing one shifts it to replace some of it; the shift only partly cancels the change); chem-m5-c04b (a catalyst speeds forward and reverse reactions equally and does not change the equilibrium mixture); chem-m5-c05 (K; author note only). Not assumed: ester, ester group, esterification, condensation reaction, alkyl alkanoate naming, separating funnel, the carbonate wash.", "startsWith": "Name the acid and alcohol parts. The video opens: Banana and pineapple flavourings often get their smell from esters. Pentyl ethanoate is usually described as smelling like banana, and ethyl butanoate like pineapple. Each one can be made from two smaller molecules: a carboxylic acid, like the ones in the last video, and an alcohol.", "stopsAfter": "writing the equation for esterification with conditions and the equilibrium arrow; naming an ester from its acid and alcohol and working back from an ester to both; explaining an ester's low boiling point and volatility; explaining why the reaction stops short and how excess reactant or removing water raises the yield, while the catalyst does not; outlining how the ester is separated, purified and checked; drawing a two-step flow chart with conditions. No hands-on procedure or risk table, no saponification.", "nextLesson": "preparing a simple ester in the lab (route chem-m7-p05, \"Prepare a simple ester in a school laboratory\")."},
+        'teaching': {"task": "Banana and pineapple flavourings often get their smell from esters, and each ester can be made from a carboxylic acid and an alcohol. How do the two halves join and how is the ester named, why does the reaction never quite finish, how do you push the yield up and get the ester out, and how could you make it from ethanol alone?", "causalExplanation": "(1) fruit smells come from esters, which can be made from an acid and an alcohol; three questions (1); (2) the acid loses OH, the alcohol loses H, they form water, and the parts link through the alcohol's oxygen: the ester group; condensation (2); (3) names: alcohol part first (\"-yl\"), acid part second (\"-oate\"); formulas are written acid side first, names alcohol part first; order matters (3); (4) working backwards: cut at the single-bonded oxygen next to the C=O; the C=O side is the acid (4); (5) no O–H, so no hydrogen bonds between ester molecules: low boiling point, volatile; isomers of acids, told apart by the c09 test (5); (6) slow, so a catalyst and heat; reflux keeps volatile liquids in; hazards (6); (7) reversible: all four remain; about two thirds (7); (8) excess reactant (some of it used up) or removing water shifts it right; the catalyst doesn't change the yield (8); (9) get it out: water dissolves most of the ethanol and sulfuric acid, the ester forms a layer, carbonate turns leftover acid into a salt in the water layer, dry, distil; the boiling point is only a rough check (9); (10) a two-step flow chart from ethanol; the main road, for a primary alcohol (10); memory aid (11); two attempts and brief feedback (12 to 15); handoff (16); key notes (17).", "conversationalApproach": "banana and pineapple flavourings often get their smell from esters, each made from a carboxylic acid and an alcohol, so the video asks how the two halves join and are named, why the reaction never quite finishes, how to push the yield up and how to get the ester out. The acid loses the OH from its carboxyl group and the alcohol loses the H from its OH, together making water, and the two parts link through the alcohol's oxygen: a condensation reaction. Ester names put the alcohol part first, ending in yl, and the acid part second, ending in oate, and working backwards cuts at the single-bonded oxygen next to the C=O. An ester has no O-H, so its molecules cannot hydrogen bond to each other; it boils lower than an acid or alcohol of similar size and evaporates easily, which is why it smells. The reaction is slow, so concentrated sulfuric acid is added as a catalyst and the mixture is heated under reflux; it is reversible and reaches equilibrium, so an excess of one reactant or removing water pushes the yield up (Le Chatelier's principle), while the catalyst only brings equilibrium sooner. The ester is separated with water in a separating funnel, washed with sodium carbonate solution to remove leftover acid, dried and distilled near 77 degrees as a rough check, and a two-step flow chart makes ethyl ethanoate from ethanol alone. The memory aid is acid plus alcohol in equilibrium with ester plus water, alcohol part first. Two exam questions follow with brief feedback.", "openingDecision": "Banana and pineapple flavourings often get their smell from esters. Pentyl ethanoate is usually described as smelling like banana, and ethyl butanoate like pineapple. Each one can be made from two smaller molecules: a carboxylic acid, like the ones in the last video, and an alcohol. So how do the two halves join? Why does the reaction never quite finish? And how do you get the ester out?", "understandingCheck": "(A1) \"An ester has the condensed structural formula CH₃CH₂COOCH₂CH₂CH₂CH₃. Give the IUPAC name of the ester, and name the carboxylic acid and the alcohol used to make it.\" A skeletal formula is shown beside it in plain ink (no colours, no cut line). New ester (scenes use ethyl ethanoate, methyl propanoate, ethyl butanoate and butyl ethanoate); tests the cut, the order of the name and naming both reactants (the 2021 Q26 marker-reported trap: working backward from an ester). Crossed mistake: \"propyl butanoate\" (the halves swapped; the bank's \"students most often swap the two halves\"). (A2) \"A student heats 0.50 mol of propanoic acid with 0.50 mol of methanol and a few drops of concentrated sulfuric acid under reflux. At equilibrium, 0.32 mol of methyl propanoate has formed. (a) Write a balanced equation for the reaction. (b) Suggest one change to the reactants that would give more than 0.32 mol of ester, and explain your answer using Le Chatelier's principle.\" New ester and data (scenes use ethyl ethanoate); 0.32 mol of 0.50 is a 64% yield, inside the site's range. Crossed mistake (Revision 2, science S1): \"Heat it for longer, so more ester forms.\" (at equilibrium, more time adds no ester; the pack's rate against yield trap). \"Add more concentrated sulfuric acid\" is no longer crossed, because many texts and markers credit it (the acid takes up some water).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the production, in a school laboratory, of simple esters\" This video explains the reaction, its conditions and yield, and how the ester is separated and identified; chem-m7-p05 carries out the preparation with its risk table (`C7-IQ2-05`). \"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\" This video introduces the flow chart with one two-step pathway (ethanol to ethyl ethanoate); chem-m7-c13 and g03 build and practise multi-step pathways. this video starts by naming the acid and alcohol parts of an ester, and stops at explaining esterification, its equilibrium and how the product is identified. It teaches: a carboxylic acid and an alcohol react to form an ester and water (esterification); the acid loses the OH of its carboxyl group and the alcohol loses the H of its O–H, these form water, and the two parts link through the alcohol's oxygen; the ester group –COO– (C=O then O then carbon); a reaction in which two molecules join and release a small molecule such as water is a condensation reaction; naming: the alcohol part first as an alkyl group (\"-yl\"), the acid part second ending \"-oate\" (as in c09's salts), ethyl ethanoate; condensed formulas are usually written acid side first while the name puts the alcohol part first; order matters (ethyl butanoate and butyl ethanoate are different compounds with the same formula); working backwards from a condensed formula: find the C=O and cut at the single-bonded oxygen next to it; the side with the C=O came from the acid (methyl propanoate from propanoic acid and methanol); properties: no O–H, so no hydrogen bonding between ester molecules, only dipole–dipole and dispersion forces, so for similar molar mass an ester boils well below an alcohol and a carboxylic acid (ethyl ethanoate 77 °C, pentan-1-ol 138 °C, butanoic acid 164 °C, all about 88 g/mol); small esters are volatile, which is why they smell; esters are functional group isomers of carboxylic acids, and only the acid fizzes with sodium hydrogen carbonate (c09); conditions: a few drops of concentrated sulfuric acid as catalyst, heat under reflux (c06 recall: the condenser returns volatile ethanol and ester); hazards: concentrated sulfuric acid is corrosive, the organic liquids are flammable, so heat electrically or with a water bath, not a flame; equilibrium: the reaction is reversible (water can split the ester back), so all four substances remain; from equal amounts of ethanoic acid and ethanol about two thirds becomes ester; Le Chatelier (Module 5): an excess of one reactant shifts the position right, using up some of it (with three times as much ethanol about nine tenths of the acid becomes ester); removing water also shifts it right, and concentrated sulfuric acid takes up a little water; the catalyst speeds both directions and does not change the yield; reflux keeps material in the flask and does not change the yield; isolating and checking the product: separating funnel with water (most of the ethanol and sulfuric acid dissolve in the water; the ester forms its own layer), wash with sodium carbonate solution (leftover acid becomes a salt that dissolves in the water layer, and CO₂ forms, so vent the funnel), separate, dry, distil, collecting near the ester's boiling point, which is only a rough check because ethanol boils at 78 °C; no fizz with carbonate shows the acid has gone; a two-step flow chart: ethanol oxidised to ethanoic acid (acidified dichromate, reflux), then ethanoic acid with more ethanol (concentrated sulfuric acid, reflux) to ethyl ethanoate, each arrow carrying reagents and conditions; the \"main road\" alkene, primary alcohol, acid, ester (only a primary alcohol oxidises to an acid). Not here: the practical procedure in full, quantities, the risk table and waste disposal (chem-m7-p05, with `C7-IQ2-05`); saponification, fats, oils and triglycerides (chem-m7-c12 territory; author note g); amides (chem-m7-c11); polyesters (chem-m7-c15); equilibrium constant calculations (author note d keeps the arithmetic); the site's avocado fat hook (site correction 3); reaction mechanism beyond which atoms form the water (author note b)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c09: carbon skeleton ink; hydrogens soft grey; main chain pale blue; branches amber; oxygen brick red; the functional group ringed red (the carboxyl group on acids, the O–H on alcohols, the ester group –COO– on esters); hydrogen bonds dotted violet; dipole–dipole attractions dotted teal; dispersion forces dotted pale blue; the acid side soft amber and the alcohol side pale blue only while the cut line shows; released water in the Module 5 water colour; conditions on arrows in navy. Board layout (constant): top-left the short task chip (\"Join them\", \"Name it\", \"Forces\", \"Conditions\", \"Yield\", \"Get it out\", \"Flow chart\"); centre the structure board or reaction strip, one reaction or one ester at a time; the boiling point strip at the right only in scene 5; the yield bar under the strip only in scenes 7 and 8; plates small or medium at the left or right only in scenes 1, 6, 9 and 16. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 27 Oct by contact sheet): `m7-ester-fruit-v1.png` (a banana, a pineapple and a pear, side by side; scene 1); `m7-reflux-apparatus-v1.png` (a round-bottom flask on an electric heating mantle with an upright water-cooled condenser in a clamp stand; scene 6; the flask's liquid is painted amber, so it is labelled with the mixture's name and the colour is not mentioned; c06 and c08a reuse it the same way); `m7-separating-funnel-cloudy-v1.png` and `m7-separating-funnel-clear-v1.png` (aligned pair, identical alpha bounds: a stoppered separating funnel in a clamp stand, first with a cloudy mixed liquid, then two clear layers, a pale yellow upper layer over a pale blue lower layer; scene 9; the upper layer is labelled \"ester layer\"); `m7-school-distillation-setup-v1.png` (scene 9, small, for \"distil\"). Not used: `m7-perfume-bottle-v1.png` (the fruit plate carries the hook better); `m7-margarine-tub-v1.png` and `m7-vegetable-oil-bottle-v1.png` (fats are not taught here). No new plates. All plates small or medium, scaled uniformly only, never stretched. No human figures.", "transitionPlan": "The ester fruit plate opens the hook with two ester names and their smell chips; the board clears to ethanoic acid and ethanol in full structural form as the OH and H lift off into a water box and the two halves join through the alcohol's oxygen with the ester group ringed red; the name builder writes ethyl ethanoate with its two parts coloured; a condensed ester formula redraws in full and a cut line drops at the single-bonded oxygen; the force view shows ester molecules with dipole lines and no hydrogen bonds as the boiling point strip drops three similar-mass molecules; condition chips write on the equation's arrow beside the reflux apparatus plate; the arrow splits into equilibrium half heads as a four-icon flask settles and a yield bar stops short; the ethanol icon's bar grows for the excess and a water icon leaves as the yield bar rises; a coded list and the separating funnel plate show the layers and the wash; the flow chart draws two arrows from ethanol with their conditions; the memory lines write; each attempt clears the board and its feedback underlines the card as the cut line or equation writes and a crossed chip lands; the memory lines, reflux and separating funnel plates and next chip close; scene crossfade with settle."},
+        'rows': M7C10_ROWS,
+    },
+    'm7c11': {
+        'design': D + 'lessons/chem-m7-c11.md',
+        'learning_review': D + 'checks/m7c11-learning-review.md',
+        'science_check': D + 'checks/m7c11-claude-science-check.md',
+        'meta': {"title": "How do amines and amides differ? The nitrogen lone pair, naming, boiling points, and the organic base against the organic acid", "subtitle": "Amines and amides both contain nitrogen. An amine's solution turns red litmus blue and its smell vanishes with lemon juice, but an amide leaves litmus unchanged. What does the C=O beside an amide's nitrogen change, and how does an organic base differ from an organic acid?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 18, "lessonIntent": "identifying, classifying and naming amines and amides up to C8 with methyl or ethyl groups; explaining their boiling points and solubility against alcohols, carboxylic acids and alkanes, and within each series; writing the equation for an amine in water and with hydrochloric acid; explaining why an amine is a weak base and an amide is close to neutral; comparing a carboxylic acid with an amine by proton behaviour, litmus, the hydrogen carbonate test and the salt they form. No Kb, no aromatic amines, no polyamides."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "amine-group", "naming-amines", "amide-group", "amine-forces", "amine-isomers", "amide-network", "weak-base", "amine-salts", "amide-not-basic", "acid-vs-base", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c09 (carboxyl group; a C=O beside an atom shares charge across both atoms, \"Share the charge, loosen the grip\"; carboxylic acids are weak acids; blue litmus turns red; fizz with sodium hydrogen carbonate; acid dimers; \"-oic acid\" names, the C=O carbon as C1); chem-m7-c10 (the ester group; condensation reaction, losing water); chem-m7-c05 (alcohol classification by the carbon holding the OH; hydrogen bonding, donor and acceptor; propan-1-ol 97 °C; \"Same size? Hydrogen bonding wins. Same family? Size wins.\"); chem-m7-c08b (polar C=O, dipole–dipole forces); chem-m7-c03 (dispersion forces depend on the number of electrons; the water lattice); chem-m7-c01 (naming rules, locants); chem-m6-c01 (a Brønsted-Lowry base takes a proton; NH₃ + H₂O ⇌ NH₄⁺ + OH⁻; H₃O⁺); chem-m6-c02 (acid + base → salt); chem-m6-c05 (weak means partly ionised; weak is not dilute). Year 11: electronegativity, lone pairs, polar bonds. Not assumed: amine, amide, primary, secondary and tertiary amines, \"-amine\" and \"-amide\" naming, N- prefixes, alkylammonium salts, why an amide is not basic.", "startsWith": "Identify the nitrogen functional groups. The video opens: Leave seafood out too long, and it smells fishy. Much of that smell comes from trimethylamine, an amine. Squeeze some lemon juice over it, and the smell fades.", "stopsAfter": "identifying, classifying and naming amines and amides up to C8 with methyl or ethyl groups; explaining their boiling points and solubility against alcohols, carboxylic acids and alkanes, and within each series; writing the equation for an amine in water and with hydrochloric acid; explaining why an amine is a weak base and an amide is close to neutral; comparing a carboxylic acid with an amine by proton behaviour, litmus, the hydrogen carbonate test and the salt they form. No Kb, no aromatic amines, no polyamides.", "nextLesson": "soaps are salts of long carboxylic acids; how they lift grease into water (route chem-m7-c12, \"How do soaps and detergents lift oil into water?\")."},
+        'teaching': {"task": "Amines and amides both contain nitrogen. An amine's solution turns red litmus blue and its smell vanishes with lemon juice, but an amide leaves litmus unchanged. What does the C=O beside an amide's nitrogen change, and how does an organic base differ from an organic acid?", "causalExplanation": "(1) the fishy smell is an amine; lemon juice removes it; amines turn red litmus blue, but ethanamide, also a nitrogen compound, does not (1); (2) an amine is ammonia with carbon groups replacing hydrogens; the nitrogen keeps a lone pair; classify by counting carbon groups on N, not the alcohol rule (2); (3) naming amines: \"-amine\", N- for groups on the nitrogen (3); (4) an amide is a C=O bonded straight to N, like an ester with N in place of the single-bonded O, made by condensation when an acid and an amine are heated strongly; naming \"-amide\", C1 at the C=O (4); (5) N is less electronegative than O, so N–H is less polar and amine hydrogen bonds are weaker: amines boil below alcohols (5); (6) among isomers, fewer N–H hydrogens means fewer hydrogen bonds (two, one, none), so boiling points fall; tertiary amines cannot hydrogen bond to each other; small amines mix with water (6); (7) primary amides have two N–H hydrogens and a C=O that takes hydrogen bonds, so each molecule makes more hydrogen bonds and they build networks, boiling far above acids, which pair off as dimers; longer chains raise boiling points in every series (screen row) (7); (8) in water, the amine's lone pair takes a proton, leaving OH⁻; the raised OH⁻ concentration turns red litmus blue; reversible, lies left: a weak base (8); (9) with a stronger acid the proton transfer goes to completion: an ionic salt that barely evaporates, so the smell goes (9); (10) in an amide the C=O beside the N draws in and shares the lone pair; sharing loosens the grip on a proton (as in c09's carboxylate), so it barely takes a proton; no O–H, so not an acid either: litmus unchanged (10); (11) organic acid against organic base: gives a proton from O–H, takes a proton with a lone pair; litmus by the raised H₃O⁺ or OH⁻ concentration, and the hydrogen carbonate test (screen chip); together they make a salt at room temperature, and only strong heating makes an amide (11); memory aid (12); two attempts and brief feedback (13 to 16); handoff (17); key notes (18).", "conversationalApproach": "seafood left out smells fishy because of an amine, lemon juice removes the smell, and an amine's solution turns red litmus blue while an amide leaves litmus unchanged, so the video asks what the C=O beside an amide's nitrogen changes and how an organic base differs from an organic acid. An amine is ammonia with carbon chains replacing hydrogens, and the nitrogen keeps its lone pair; amines are classified by counting the carbon groups on the nitrogen and named with amine. An amide has a C=O bonded straight to the nitrogen, like an ester with nitrogen in place of the single-bonded oxygen, and is named with amide. A primary amine hydrogen bonds like an alcohol but more weakly, because nitrogen is less electronegative than oxygen, and among isomers fewer N-H hydrogens means a lower boiling point; amides form a network of hydrogen bonds and boil higher than acids of similar size. In water the amine's lone pair takes a proton, raising the hydroxide concentration, so it is a weak base, and with hydrochloric acid it forms an ionic salt; an amide is barely a base because the C=O pulls the lone pair in and shares it. A carboxylic acid gives a proton and an amine takes one. The memory aid is amines are organic ammonia, a free pair makes a base. Two exam questions follow with brief feedback.", "openingDecision": "Leave seafood out too long, and it smells fishy. Much of that smell comes from trimethylamine, an amine. Squeeze some lemon juice over it, and the smell fades. The amine's solution turns red litmus blue, so it's a base. Ethanamide has a nitrogen too, but its solution leaves litmus unchanged. So why is one nitrogen compound a base, while the other barely is?", "understandingCheck": "(A1) \"The three amines below all have the molecular formula C₄H₁₁N. A: CH₃CH₂CH₂CH₂NH₂, boiling point 78 °C. B: CH₃CH₂NHCH₂CH₃, boiling point 55 °C. C: CH₃CH₂N(CH₃)₂, boiling point 37 °C. (a) Give the IUPAC name of amine A, and classify amines B and C as primary, secondary or tertiary. (b) Explain the order of the boiling points, with reference to the intermolecular forces present.\" New molecules (scenes use C2 and C3 amines; the site uses the C2 pair); same formula, so dispersion is similar and the number of N–H hydrogens (2, 1, 0) decides, the rule scene 6 teaches on the C3 isomers (Revision 2, learning L1), here transferred to new C4 molecules and values; tests naming, classification by carbon groups on N, and the cause. Crossed mistake: \"All three amines hydrogen bond to each other.\" (the tertiary amine has no N–H to give; L16 card 2 and Q6 pattern). (A2) \"Separate aqueous solutions of propanoic acid, propan-1-amine and propanamide are prepared. (a) Predict the effect of each solution on red litmus paper and on blue litmus paper. (b) Explain the results for propan-1-amine and for propanamide.\" New set (scenes use ethanoic acid, ethanamine and ethanamide); tests the acid against base comparison and the shared lone pair. Crossed mistake: \"Propanamide turns blue litmus red, because it has a C=O group like a carboxylic acid.\" (L16 card 4 Common Error).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127); alkanes; alkenes; alkynes; alcohols (primary, secondary and tertiary); aldehydes and ketones; carboxylic acids; amines and amides; halogenated organic compounds\" This video covers amines and amides only (hydrocarbons chem-m7-c01 and g01; haloalkanes chem-m7-c04a; alcohols chem-m7-c05; aldehydes and ketones chem-m7-c08b; carboxylic acids chem-m7-c09; esters chem-m7-c10). \"investigate the structural formulae, properties and functional group including:; primary, secondary and tertiary alcohols; aldehydes and ketones (ACSCH127); amines and amides; carboxylic acids\" This video covers amines and amides (alcohols chem-m7-c05; aldehydes and ketones chem-m7-c08b; carboxylic acids chem-m7-c09). \"explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present\" This video covers amines and amides, within their series and against alcohols, carboxylic acids and alkanes; carboxylic acids were chem-m7-c09. \"investigate the differences between an organic acid and organic base\" This video covers the organic base (amines), the amide as a nitrogen compound that is barely basic, and the comparison of a carboxylic acid with an amine (route review change 3). The acid half was chem-m7-c09. this video starts by identifying the amine and amide functional groups, and stops at comparing amines, amides and carboxylic acids for basicity, intermolecular forces and reactions. It teaches: an amine is ammonia with one or more hydrogens replaced by carbon groups, and its nitrogen keeps a lone pair (a pair of electrons not used in bonding); classification by the number of carbon groups bonded to the nitrogen (primary 1, secondary 2, tertiary 3), not the alcohol rule (propan-2-amine is a primary amine); naming primary amines (\"alkan-x-amine\": ethanamine, propan-1-amine, propan-2-amine) and secondary and tertiary amines with N- prefixes (N-methylethanamine, N,N-dimethylethanamine); an amide is a C=O bonded straight to a nitrogen (–CONH₂), like an ester with the single-bonded oxygen replaced by nitrogen, formed by condensation of a carboxylic acid with an amine (or ammonia) when heated strongly, losing water; naming amides (\"alkanamide\", the C=O carbon is C1 and counted in the chain: ethanamide, propanamide, N-methylethanamide); intramolecular bonds are polar covalent (N–H, C–N, C=O); hydrogen bonding in primary and secondary amines is weaker than in alcohols because N is less electronegative than O, so the N–H bond is less polar (propan-1-amine 48 °C against propan-1-ol 97 °C, same electron count); among isomers, fewer N–H hydrogens means fewer hydrogen bonds and a lower boiling point (propan-1-amine, two N–H, 48 °C; N-methylethanamine, one, about 37 °C); tertiary amines have no N–H, so they cannot hydrogen bond to each other (trimethylamine 3 °C); small amines mix with water because water hydrogen bonds to the lone pair; primary amides have two N–H hydrogens and a C=O that takes hydrogen bonds, so each molecule makes more hydrogen bonds, building networks, and they boil much higher than acids of the same electron count, which mostly pair off as dimers (propanamide 213 °C against propanoic acid 141 °C); within each series, longer chains add dispersion, so boiling points rise; an amine's lone pair takes a proton from water (RNH₂ + H₂O ⇌ RNH₃⁺ + OH⁻), so its solution turns red litmus blue, but the equilibrium lies to the left (a weak base; Module 6 recall: ammonia); with hydrochloric acid it forms an ionic alkylammonium salt (ethylammonium chloride), which barely evaporates, so the fishy smell fades (the lemon trick); in an amide the C=O beside the nitrogen draws the lone pair in and shares it across N, C and O (the same C=O effect as the carboxylate in c09: sharing loosens the grip on a proton, which made the acid stronger and makes the amide barely a base), so it takes almost no protons from water and its solution is close to neutral; it is not acidic either (no O–H; its N–H hydrogens barely let go); the comparison: a carboxylic acid gives a proton from its O–H, an amine takes one with its lone pair; both are weak; the acid raises the hydronium ion concentration and turns blue litmus red (and fizzes with sodium hydrogen carbonate, a c09 recall on screen), the amine raises the hydroxide ion concentration and turns red litmus blue; mixed at room temperature they form a salt by proton transfer (methylammonium ethanoate), with no water formed; strong heating is needed to drive off water and make an amide. Not here: Kb and pKb values or calculations (not in the 2017 dotpoints; author note d); aniline and aryl amines (aromatic, beyond the course; the site marks phenol as extension, and aniline is the same case); amide resonance structures with formal charges (author note e); restricted rotation and peptide planarity (Biology and chem-m7-c15 territory); amide hydrolysis (author note f; root decision in Revision 2: no dotpoint needs it); polyamides and nylon (chem-m7-c15); quaternary ammonium detergents (chem-m7-c12 mentions cationic detergents); diamines putrescine and cadaverine (site hook; author note g); reaction of amines with sodium metal."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c09, plus nitrogen: carbon skeleton ink; hydrogens soft grey; main chain pale blue; branches and carbon groups on N amber; oxygen brick red; nitrogen indigo with the letter N printed; the lone pair as two small indigo dots; the amine group ringed indigo; the amide group ringed as one shape, red at the C=O and indigo at the N; δ− and δ+ small in navy; hydrogen bonds dotted violet; dipole–dipole dotted teal; dispersion dotted pale blue; the transferring proton in the chem-m6-c01 proton colour; OH⁻ in the Module 6 anion colour; the shared lone pair as c09's grey-violet glow. Board layout (constant): top-left the short task chip (\"Base or not?\", \"Classify\", \"Name it\", \"Forces\", \"Proton test\", \"Acid or base?\"); centre the structure board, one molecule or one pair at a time; the boiling point strip at the right only in scenes 5 to 7; plates small or medium at the left or right only in scenes 1, 2, 8, 9, 10, 11, 16 and 17. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 27 Oct by contact sheet): `m6-lemon-v1.png` (a whole lemon and a cut half with two leaves; scenes 1 and 9, small); `m6-litmus-red-v1.png` and `m6-litmus-blue-v1.png` (aligned pair; scenes 1, 8, 10, 11 and 16); `m5x-ammonia-bottle-v1.png` (amber reagent bottle with a blank label; scene 2, small, labelled \"ammonia solution, NH₃(aq)\", as chem-m6-c01 did); chem-m7-c09's `m7-litmus-blue-strip-v1.png` (commissioned there; scenes 10, 11 and 16); `m6-soap-bar-v1.png` (handoff, small). Not used: `m6-hcl-ammonia-gas-reaction-v1.png` (the gas-phase ring is Module 6's evidence; not needed here); `m7-polymer-objects-v1.png` (nylon belongs to c15). One new plate (Assets). All plates small or medium, scaled uniformly only, never stretched. No human figures.", "transitionPlan": "The fish plate opens the hook with rising vapour dots as the lemon plate's drops thin them out, then the red litmus plate shows the amine and amide results; the board clears to the ammonia bottle plate as its hydrogens are swapped for carbon chains, the lone pair dots glow and a carbon counter classifies three amines; the name builder writes ethanamine and the other amines; ethanamide draws in full structural form with its amide group ringed beside an ester for comparison; propan-1-amine and propan-1-ol sit side by side with dotted hydrogen bonds of different strength and the boiling point strip drops each; three amine isomers drop to falling marks as their N-H hydrogens are counted; amide molecules link into a hydrogen-bond network as the strip returns; the proton hops from water to the lone pair and the litmus plate turns blue; the ProtonHop carries the hydrogen from HCl to make an ionic salt; the amide's lone pair is pulled toward the C=O as a crossed base chip lands; a two-column board sets the organic acid against the organic base; the memory lines write; each attempt clears the board and its feedback underlines the card as the name builder or a three-column litmus grid fills and a crossed chip lands; the memory lines, soap bar plate and next chip close; scene crossfade with settle."},
+        'rows': M7C11_ROWS,
+    },
+    'm7c12': {
+        'design': D + 'lessons/chem-m7-c12.md',
+        'learning_review': D + 'checks/m7c12-learning-review.md',
+        'science_check': D + 'checks/m7c12-claude-science-check.md',
+        'meta': {"title": "How do soaps and detergents lift oil into water? The two-ended molecule, saponification, micelles and hard water", "subtitle": "Oil and water separate however hard you shake them, but with a little soap the oil spreads through the water and rinses away. How can one particle hold on to both oil and water, and why does soap make scum in hard water when a detergent mostly doesn't?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 19, "lessonIntent": "identifying the hydrophobic tail and hydrophilic head of a soap or detergent and the forces each makes; writing the saponification equation for a triglyceride with sodium hydroxide; explaining how soap removes grease (tails into grease, heads in water, droplets that repel, an emulsion, rinsing); writing the net ionic equation for scum in hard water; explaining why detergents work in hard water and describing anionic, cationic and non-ionic heads; comparing soaps and detergents. No surface tension, no CMC, no builders."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "why-separate", "soap-structure", "saponification", "surface-micelles", "cleaning-action", "hard-water", "detergents", "soap-vs-detergent", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c09 (carboxyl and carboxylate groups; salts named \"-oate\", sodium ethanoate; a long chain lowers water solubility); chem-m7-c10 (the ester group; condensation and esterification, reversible); chem-m7-c11 (alkylammonium ions, one mention for cationic heads); chem-m7-c03 (polar and non-polar molecules; dispersion forces grow with chain length; hydrogen bonding in water, the water lattice; \"like dissolves like\"); Year 11 (ionic bonding; ion–dipole attraction when ionic compounds dissolve; precipitation reactions and net ionic equations; spectator ions); Module 5 solubility (chem-m5-g03b to g03d as the pack names: a precipitate forms when ions combine into an insoluble compound). Not assumed: soap, hydrophobic, hydrophilic, triglyceride, glycerol, saponification, micelle, emulsion, hard water, scum, detergent, anionic, cationic, non-ionic.", "startsWith": "Locate the hydrophilic head and hydrophobic tail. The video opens: Pour cooking oil into water, shake it hard, and within a minute the oil floats back up into its own layer. Add a few drops of soap, shake it again, and the mixture turns cloudy, and stays cloudy for much longer. The oil has spread through the water, ready to rinse away.", "stopsAfter": "identifying the hydrophobic tail and hydrophilic head of a soap or detergent and the forces each makes; writing the saponification equation for a triglyceride with sodium hydroxide; explaining how soap removes grease (tails into grease, heads in water, droplets that repel, an emulsion, rinsing); writing the net ionic equation for scum in hard water; explaining why detergents work in hard water and describing anionic, cationic and non-ionic heads; comparing soaps and detergents. No surface tension, no CMC, no builders.", "nextLesson": "comparing soap and detergent in soft and hard water in the lab (route chem-m7-p06, \"Compare soap and detergent action\")."},
+        'teaching': {"task": "Oil and water separate however hard you shake them, but with a little soap the oil spreads through the water and rinses away. How can one particle hold on to both oil and water, and why does soap make scum in hard water when a detergent mostly doesn't?", "causalExplanation": "(1) oil and water separate after shaking, but with soap the mixture stays cloudy (1); (2) as with c03's hexane, oil is largely non-polar and can't join water's hydrogen bonds, so water squeezes the oil out (2); (3) soap is the salt of a long carboxylic acid (sodium octadecanoate); the acid barely mixes with water, but the salt has a charged end; the long non-polar tail (dispersion, hydrophobic) and the ionic carboxylate head (ion–dipole, hydrophilic) (3); (4) soap is made by hydrolysing a fat's three ester links with NaOH: glycerol and three soap molecules; NaOH is a reactant; the base takes the acid's proton, and the carboxylate can't re-form the ester, so it goes to completion (4); (5) in water, tails are squeezed out like oil: soap lines the surface and clusters into micelles, tails in, heads out (5); (6) tails dissolve into grease, heads stay in water, agitation makes soap-wrapped droplets whose negative surfaces repel, so they don't easily join and stay spread out as an emulsion that rinses away; emulsified, not dissolved in the water (6); (7) hard water's Ca²⁺ and Mg²⁺ join two soap anions each into an insoluble scum, using up soap (7); (8) detergents keep the tail and change the head: sulfonate and sulfate heads still attract Ca²⁺, but the calcium salts are much more soluble and stay dissolved; cationic heads are positive; non-ionic heads have no charge (8); (9) both clean the same way; soap is renewable and biodegradable but scums; detergents work in hard water, but many are petrochemical (9); memory aid (10); two attempts and brief feedback (11 to 14); handoff (15); key notes (16).", "conversationalApproach": "oil and water separate however hard you shake them, but with a little soap the oil spreads through the water and rinses away, so the video asks how one particle can hold on to both oil and water and why soap makes scum in hard water when a detergent mostly does not. Oil is mostly long hydrocarbon chains, largely non-polar, so like hexane it cannot join water's hydrogen bonds and is squeezed out. Soap is the salt of a long carboxylic acid with two very different ends: a charged carboxylate head that attracts water and a long non-polar tail that does not. It is made by saponification, heating a fat or oil (a triglyceride of glycerol joined to three acid chains) with sodium hydroxide. In water the tails are squeezed out, so soap gathers at the surface and forms micelles; with grease the tails dissolve into it by dispersion forces while the heads stay in the water, rubbing breaks the grease into droplets coated with heads, and the charged surfaces keep the droplets apart so they rinse away. Hard water's calcium and magnesium ions join two soap anions into an insoluble scum, while a detergent keeps the same plan with a sulfonate head that makes far less scum. Soap and detergent are compared feature by feature, and the memory aid is head in the water, tail in the grease. Two exam questions follow with brief feedback.", "openingDecision": "Pour cooking oil into water, shake it hard, and within a minute the oil floats back up into its own layer. Add a few drops of soap, shake it again, and the mixture turns cloudy, and stays cloudy for much longer. The oil has spread through the water, ready to rinse away. So how can one substance hold on to oil and water at the same time?", "understandingCheck": "(A1) \"Sodium palmitate, CH₃(CH₂)₁₄COO⁻Na⁺, is a soap. (a) Identify the hydrophobic part and the hydrophilic part of the palmitate ion. (b) Explain how this soap removes an oily stain from fabric during washing. Refer to the intermolecular forces involved.\" The skeletal formula is shown beside it in plain ink (no colours, no head-and-tail symbol). New soap (scenes use sodium stearate); tests the Must Do steps (both ends and their forces, insertion, droplets, repulsion, rinse). Crossed mistake: \"The soap dissolves the oil in the water.\" (site card 3 Common Error). (A2) \"The same volume of soap solution is added to a sample of rainwater and to a sample of tap water that contains dissolved calcium ions. The tap water turns cloudy, a white solid forms, and little froth appears. (a) Write a net ionic equation for the formation of the white solid. Use sodium stearate, C₁₇H₃₅COONa, as the soap. (b) Explain why a sulfonate detergent forms plenty of froth in the same tap water.\" New conditions (scene 7 uses a generic hard water sample; the site uses 350 mg/L Ca²⁺ in a household); tests the charge-balanced scum equation, spectator ions and the head-group reason. Crossed mistake: \"C₁₇H₃₅COO⁻ + Ca²⁺ → C₁₇H₃₅COOCa\" (charges not balanced; the pack's \"balance scum charges\" trap).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the structure and action of soaps and detergents\" This video covers the structure of soaps and of anionic, cationic and non-ionic detergents, how soap is made from fats (saponification, as the source of the structure), the cleaning action (micelles and emulsification), and behaviour in hard water. The hands-on comparison is chem-m7-p06. this video starts by locating the hydrophilic head and hydrophobic tail, and stops at explaining micelles and comparing soaps and detergents in hard water. It teaches: oil and water don't mix because water molecules hydrogen bond to each other and oil molecules (mostly long hydrocarbon chains, so largely non-polar) can't join in, so the water keeps its hydrogen bonds and squeezes the oil out into a layer (a short recall of c03's hexane layer); a soap is the sodium (or potassium) salt of a long-chain carboxylic acid (sodium stearate, C₁₇H₃₅COO⁻Na⁺), named \"-oate\" in its systematic name, sodium octadecanoate (c09); the long acid barely mixes with water, but in the salt one end is a charged ion; its long hydrocarbon tail is non-polar, attracts oil by dispersion forces and is hydrophobic (avoids water); its carboxylate head is ionic, attracts polar water molecules by ion–dipole attraction (and accepts hydrogen bonds) and is hydrophilic (water loving); soap is made by saponification: fats and oils are triglycerides, triple esters of glycerol (propane-1,2,3-triol) with three long carboxylic acids; heating with concentrated sodium hydroxide hydrolyses all three ester links, giving glycerol and three soap molecules; NaOH is a reactant (three per fat molecule), not a catalyst; the basic mixture takes the acid's proton, leaving a carboxylate ion, which can't re-form the ester with glycerol, so the reaction goes essentially to completion (contrast with c10's reversible esterification); in water, soap's tails are squeezed out like oil, so soap gathers at the surface with tails out of the water, and above a certain concentration it also clusters into micelles (tails inward, heads outward); cleaning: tails dissolve into the grease by dispersion forces, heads stay in the water, agitation breaks the grease into small droplets each wrapped in soap (grease in the core, heads outward), the droplets' negative surfaces repel each other, so they don't easily join back together, and they stay dispersed as an emulsion that the rinse carries away; the grease is emulsified, not dissolved in the water; hard water contains dissolved Ca²⁺ and Mg²⁺ ions (often from rocks such as limestone); two soap anions and one Ca²⁺ form insoluble calcium stearate, the scum (2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)), using up soap, so there's less froth and more soap is needed; synthetic detergents keep the tail-and-head plan with different heads: anionic (sulfonate –SO₃⁻ or sulfate –OSO₃⁻; e.g. sodium dodecyl sulfate) which still attract Ca²⁺, but whose calcium and magnesium salts are much more soluble and stay dissolved, so far less scum forms; cationic (a positive nitrogen head, R–N(CH₃)₃⁺, like c11's ammonium ions; fabric softeners, some antiseptics); non-ionic (an uncharged polar chain that hydrogen bonds with water, so Ca²⁺ has no charge to bind); the comparison: both clean by micelles; soap from renewable fats and oils, readily biodegradable, forms scum in hard water; detergents work in hard and soft water, many made from petrochemicals (some from plant oils). Not here: surface tension and the pepper demonstration (site hook; author note b); the critical micelle concentration as a number (author note c); acid-catalysed ester hydrolysis (c10 recall only); why potassium soaps are softer (author note d); builders, enzymes and other laundry additives (author note e); phospholipid membranes (Biology); detailed environmental lifecycle and the history of branched detergents (author note f); calculations; the hands-on soap and detergent comparison and its risk table (chem-m7-p06)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c09, plus: oil and grease yellow; the soap tail pale blue; the soap head red with \"−\"; Na⁺ grey-amber; Ca²⁺ and Mg²⁺ teal; scum grey-white; water molecules soft blue with hydrogen bonds dotted violet; dispersion dotted pale blue; ion–dipole attractions as short dotted navy lines. Board layout (constant): top-left the short task chip (\"Why separate?\", \"Two ends\", \"Make it\", \"Clean it\", \"Hard water\", \"Detergents\"); centre the structure or particle board, one model at a time; plates small or medium at the left or right only in scenes 1, 3, 4, 7, 9, 14 and 15. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous model leaves before the next one draws. Reuse: painted plates (inspected 27 Oct by contact sheet): `m6-soap-bar-v1.png` (a cream soap bar; scene 3, small); `m7-soap-making-v1.png` (two cream soap bars beside a glass beaker holding a yellow oil layer over a clear aqueous layer; scene 4, medium); `m7-vegetable-oil-bottle-v1.png` (a clear bottle of yellow cooking oil, green cap; scenes 1 and 4, small). Not used: `m7-margarine-tub-v1.png` (the oil bottle already shows a fat source); `m7-hexane-water-heptane-tubes-v1.png` (two tubes of colourless layers; the oil layer here must read as yellow cooking oil, and the tubes have no stoppers for shaking); `m6-household-cleaner-bottle-v1.png` (a blue spray bottle; the detergent types are shown as structures, and a branded-looking product would add a fourth bright object). Four new plates (Assets). All plates small or medium, scaled uniformly only, never stretched. No human figures.", "transitionPlan": "The vegetable oil bottle and the oil and water tube plates open the hook as the layers plate cross-fades to the emulsion; the board clears to c03's water lattice as an oil chain is squeezed out of its hydrogen bonds; the soap bar plate sits small as sodium stearate draws and its head and tail are labelled, then shrink to a head-and-tail symbol; a triglyceride draws with glycerol and three chains as hydroxide splits it into glycerol and three soap ions; a water surface fills with heads down and tails up, then the symbols cluster into a micelle; a coded fabric band takes a grease blob as tails dig in, rubbing breaks it into coated droplets and the charged surfaces push them apart; the soft and hard water soap tube plates set clear against scum as calcium ions join two soap anions; the head swap runs from carboxylate to sulfonate; a two-column board compares soap and detergent row by row; the memory line writes with a micelle icon; each attempt clears the board and its feedback underlines the card as the formula's parts or the net ionic equation write and a crossed chip lands; the memory lines, soap tube plates and next chip close; scene crossfade with settle."},
+        'rows': M7C12_ROWS,
+    },
+    'm7c13': {
+        'design': D + 'lessons/chem-m7-c13.md',
+        'learning_review': D + 'checks/m7c13-learning-review.md',
+        'science_check': D + 'checks/m7c13-claude-science-check.md',
+        'meta': {"title": "How can a reaction map plan organic synthesis? Work backwards from the target, write the route forwards, and check every arrow", "subtitle": "You want a pear-scented ester, but all you have is a gas and a haloalkane. How do you plan a route from the compounds you have to the one you want, and show it as a flow chart?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 21, "lessonIntent": "building a reaction map; counting carbons; working backwards from a target; choosing a route by position and by conditions; drawing a multi-step flow chart (including two arms that join) with reagents, conditions and named intermediates; spotting arrows that don't exist. No mechanisms, no reductions, no yield calculations."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "reaction-map", "count-carbons", "work-backwards", "choose-route", "write-forwards", "check-arrows", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c04a and c04b (addition and its conditions; two products from an unsymmetrical alkene; UV substitution gives a mixture); chem-m7-c06 (hydration conditions; haloalkane plus aqueous NaOH under reflux; same carbon); chem-m7-c08a and c08b (dehydration, HX substitution, oxidation and the class rule; distil against reflux; aldehyde and ketone names); chem-m7-c09 (carboxylic acid names); chem-m7-c10 (esterification, conditions, equilibrium arrow, ester names, cutting an ester, the two-step flow chart, the main road); chem-m7-c11 (amide formation); chem-m7-c12 (saponification, map arrow only); chem-m7-c01 (naming and locants). Not assumed: reaction map, intermediate, dead end, working backwards, overall yield.", "startsWith": "Choose a target functional group and starting material. The video opens: Propyl ethanoate is an ester that smells a lot like pears. Suppose the only carbon compounds you're allowed to start from are ethene, a gas, and 1-bromopropane, a haloalkane. Neither one looks anything like the ester.", "stopsAfter": "building a reaction map; counting carbons; working backwards from a target; choosing a route by position and by conditions; drawing a multi-step flow chart (including two arms that join) with reagents, conditions and named intermediates; spotting arrows that don't exist. No mechanisms, no reductions, no yield calculations.", "nextLesson": "practice with harder targets and starting materials (route chem-m7-g03, \"Organic synthesis pathway practice\")."},
+        'teaching': {"task": "You want a pear-scented ester, but all you have is a gas and a haloalkane. How do you plan a route from the compounds you have to the one you want, and show it as a flow chart?", "causalExplanation": "(1) the target and the starting materials look nothing alike, so the route needs planning (1); (2) every reaction met so far sits on one map; the alcohol is the hub (2); (3) the reactions change groups and keep chains, so count carbons first; only ester and amide formation join chains (3); (4) work backwards: ask which reaction makes the target's group, then repeat (4); (5) choose: a haloalkane that already has its halogen on the right carbon fixes the position of the OH, because hydroxide takes the halogen's place on the same carbon, while water or HBr on propene goes mainly to the middle carbon (5); (6) write forwards, in the order you'd carry it out, with every reagent and condition; reflux with excess oxidant reaches the acid because the aldehyde can't escape (c08a recall); hydration and esterification are equilibria (6); (7) check: no direct alkane to alcohol arrow; a ketone has no H on its carbonyl carbon, so no further oxidation, and the acid needs the primary alcohol; each step loses product, so shorter routes usually yield more (7); memory aid (8); two attempts and brief feedback (9 to 12); handoff (13); key notes (14).", "conversationalApproach": "a pear-scented ester, propyl ethanoate, has to be made when the only carbon compounds allowed are ethene, a gas, and 1-bromopropane, so the video asks how to plan a route from the compounds you have to the one you want and show it as a flow chart. Every reaction met so far sits on one reaction map of nine families, with the alcohol as the hub. Move one names the functional group in the target and in each starting material and counts carbons, because the reactions change groups and keep chains, and only ester or amide formation joins two chains. Move two works backwards from the target: an ester comes from a carboxylic acid and an alcohol, so the ester is cut into propan-1-ol and ethanoic acid. Move three chooses the route where position matters: hydroxide puts the OH where the bromine was in 1-bromopropane, while hydrating propene would put it on the wrong carbon. Move four writes the route forwards with reagents and conditions on every arrow (ethene and steam with a phosphoric acid catalyst, ethanol oxidised to ethanoic acid, the esterification), and every arrow is checked, because one wrong arrow breaks the route, shown with a plan for propanoic acid that fails twice. The memory aid is work backwards to plan, write forwards to answer. Two exam questions follow with brief feedback.", "openingDecision": "Propyl ethanoate is an ester that smells a lot like pears. Suppose the only carbon compounds you're allowed to start from are ethene, a gas, and 1-bromopropane, a haloalkane. Neither one looks anything like the ester. Making a target compound from simpler ones is called a synthesis. So how do you plan a route from what you have to what you want, and show it as a flow chart?", "understandingCheck": "(A1) \"A chemist wants to make pentanoic acid, CH₃CH₂CH₂CH₂COOH. The only available starting materials are pent-1-ene and 1-chloropentane. Construct a flow chart for a two-step synthesis from the better starting material. Include the reagents and conditions for each step, name the intermediate, and justify your choice of starting material.\" New compounds (no pent-1-ene against 1-chloropentane task on site L19 or L20, checked by phrase 27 Oct); a planning task that practises move 3 (choose by position), c06's same carbon, the class rule (primary to acid) and reflux with excess oxidant (learning L5). Crossed mistake: \"pent-1-ene → (steam) → pentan-2-ol → pentanoic acid\" (a secondary alcohol gives a ketone). (A2) \"A chemist has only ethene and butan-1-ol as carbon-containing starting materials. Draw a flow chart to make ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃. Show the reagents and conditions on every arrow.\" New target and start pair (Revision 1's ethyl propanoate from ethene and propan-1-ol matched the site's L19 MC Q1 option C; site L19 and L20 have no ethyl butanoate synthesis, checked by phrase 27 Oct); tests the ester cut and naming order (c10), which starting material is oxidised, reflux with excess oxidant, and equilibrium arrows. Crossed mistake: oxidising the ethanol and esterifying with butan-1-ol, which makes butyl ethanoate, an isomer with the same formula C₆H₁₂O₂.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\" This video covers planning a multi-step synthesis from a target and its allowed starting materials, and drawing it as a flow chart with every reagent and condition. Chem-m7-c10 introduced the flow chart with one two-step route; chem-m7-g03 practises harder targets. this video starts by choosing a target functional group and the starting materials, and stops at a justified multi-step pathway with conditions. It teaches: the reactions from c04a to c12 sit on one reaction map, each box a functional group family and each arrow a known reaction with its own reagents and conditions; the alcohol is the hub, so many routes pass through it; a four-move method: (1) name the functional groups in the target and the starting materials and count carbons (these reactions change functional groups and keep the chain length; only ester and amide formation join two molecules, so their carbons add); (2) work backwards from the target, asking which reaction makes its group (an ester comes from an acid and an alcohol, cut at the single-bonded oxygen; an acid from a primary alcohol by oxidation; an alcohol from an alkene and steam, or from a haloalkane), until you reach a starting material; (3) choose between possible routes: when the position of a group matters, start from a haloalkane that already has its halogen on the right carbon, because hydroxide takes the halogen's place on the same carbon, while water or HBr on propene can go on either carbon and goes mainly to the middle one, so it gives mainly the wrong product (Revision 2); (4) write the route forwards as a flow chart, in the order you'd carry it out, a compound in each box with its name, reagents and conditions on each arrow, distillation for an aldehyde and reflux with excess oxidant for an acid, an equilibrium arrow for hydration and esterification; then check every arrow: no single step turns an alkane into an alcohol (halogen and UV light first, giving a mixture); a ketone has no hydrogen on its carbonyl carbon, so acidified dichromate doesn't oxidise it further (a dead end), and a tertiary alcohol doesn't oxidise at all; each step loses some product, so a shorter route usually gives a higher overall yield; worked example: propyl ethanoate from ethene and 1-bromopropane, two arms (ethene → ethanol → ethanoic acid; 1-bromopropane → propan-1-ol) joining at esterification. Not here: reaction mechanisms and the words nucleophile and elimination as mechanisms (author note b); alcoholic NaOH elimination (not shown in this video from Revision 2; author note b); Markovnikov's rule by name (c04a author note b; author note c; the narration says only that propene's product is mainly the middle-carbon one); reduction reactions and reagents such as LiAlH₄ (not Module 7; author note d); the five-component \"top-band\" answer template and conditions-table timing drills (site L20; author note e); isolation and purification after each step (c10 and p05; one grey chip only); yield calculations (author note f); industrial synthesis such as aspirin (site hook; site correction 2); the practice set (chem-m7-g03)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c08a and c10: carbon skeleton ink; hydrogens soft grey; oxygen brick red, the OH ringed red; the C=C teal; bromine deep orange-brown; the carbonyl C=O with its second bond line red; condition chips navy on and under each arrow; the equilibrium arrow navy with two half heads; source-video chips grey; the chosen path amber; a crossed arrow dashed grey with a red cross. Board layout (constant): top-left the short task chip (\"Target\", \"Map\", \"1 Count\", \"2 Backwards\", \"3 Choose\", \"4 Forwards\", \"Check\"); centre the structure or flow chart board, one model at a time; the reaction map small at the right as a grey card once built; plates small at the left or right only in scenes 1, 12 and 13 (Revision 2). Clutter rule: at most three text items bright at once (the map counts as one dimmed reference diagram, with only the current path bright); every label fades when its sentence ends; the previous model leaves before the next one draws. Reuse: painted plates (inspected 27 Oct): `m7-ester-fruit-v1.png` (a banana, a pineapple and a pear in watercolour and ink; scenes 1, 12 and 13, small; a coded ring marks the pear in scenes 1 and 13 and the pineapple in scene 12). Scaled uniformly only, never stretched. Not used from Revision 2: `m7-reflux-apparatus-v1.png` and `m7-school-distillation-setup-v1.png` (inspected 27 Oct; learning L3). No human figures.", "transitionPlan": "The ester fruit plate opens the hook with the target ester and the two starting materials as boxes and a gap between them; the board clears as the reaction map places its nine family boxes one at a time, then draws its arrows with the alcohol hub ringed; the target and starting boxes return with their groups ringed and carbon counters ticking; working backwards, the ester splits at its single-bonded oxygen into an acid box and an alcohol box with arrows drawn right to left; 1-bromopropane's bromine lifts off and an OH docks on the same carbon, then propene's two-way docker ghosts the OH on carbon one and bolds it on the middle carbon; the flow chart builder runs left to right with condition chips on each arrow and a name in each box; a failing flow chart for propanoic acid draws and its two wrong arrows are ringed and crossed; the memory lines write; each attempt clears the board and its feedback underlines the card as the flow chart builds box by box and a crossed chip lands; the memory lines and the full reaction map card return with the next chip; scene crossfade with settle."},
+        'rows': M7C13_ROWS,
+    },
+    'm7c14': {
+        'design': D + 'lessons/chem-m7-c14.md',
+        'learning_review': D + 'checks/m7c14-learning-review.md',
+        'science_check': D + 'checks/m7c14-claude-science-check.md',
+        'meta': {"title": "How does an alkene become an addition polymer? Opening the double bond, drawing repeat units, and how chain packing and side groups set the properties of PE, PVC, PS and PTFE", "subtitle": "Ethene is a gas, yet thousands of ethene molecules joined together make a solid plastic. How does an alkene become an addition polymer, and why do plastics from such similar monomers, like PE, PVC, PS and PTFE, behave so differently?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 23, "lessonIntent": "explaining addition polymerisation; drawing a repeat unit with brackets, n and continuation bonds; recovering the monomer from a repeat unit; explaining why polyethylene is a solid and a thermoplastic; comparing LDPE and HDPE by branching; explaining the properties and uses of PVC, PS and PTFE from their side groups. No condensation polymers, no mechanisms, no environmental lifecycle."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "open-double-bond", "draw-repeat-unit", "monomer-from-unit", "solid-thermoplastic", "ldpe-hdpe", "pvc", "polystyrene", "ptfe", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c04a (the double bond's weaker second bond breaks and each carbon gains one new bond; addition: one product, nothing lost; chlorine green in the colour key); chem-m7-c03 (dispersion forces grow with contact; straight chains have more contact than branched ones, the spaghetti aid; double bonds and shapes); chem-m7-c08b and c03 (a polar bond gives dipole–dipole attraction); chem-m7-c01 and c04a (naming alkenes and haloalkanes; locants such as 1,1-); chem-m7-c13 (the reaction map, one mention). Not assumed: monomer, polymer, addition polymerisation, initiator, repeat unit, backbone, side group, thermoplastic, plasticiser, LDPE, HDPE, PVC, PS, PTFE.", "startsWith": "Open the alkene double bond. The video opens: Ethene is a gas. Join thousands of ethene molecules end to end, and you get polyethylene, a solid tough enough for bags and milk bottles. Swap one hydrogen on each ethene for a chlorine, and you get the plastic in grey PVC water pipes.", "stopsAfter": "explaining addition polymerisation; drawing a repeat unit with brackets, n and continuation bonds; recovering the monomer from a repeat unit; explaining why polyethylene is a solid and a thermoplastic; comparing LDPE and HDPE by branching; explaining the properties and uses of PVC, PS and PTFE from their side groups. No condensation polymers, no mechanisms, no environmental lifecycle.", "nextLesson": "polymers that release a small molecule each time two monomers join (route chem-m7-c15, \"How does condensation build a polymer?\")."},
+        'teaching': {"task": "Ethene is a gas, yet thousands of ethene molecules joined together make a solid plastic. How does an alkene become an addition polymer, and why do plastics from such similar monomers, like PE, PVC, PS and PTFE, behave so differently?", "causalExplanation": "(1) a gas of two-carbon molecules becomes a solid plastic, and similar monomers give very different plastics (1); (2) the C=C's weaker second bond breaks, each carbon's spare bond joins the next monomer, again and again, and nothing else forms (2); (3) one repeat unit: single bond, continuation bonds, brackets, n; the double-bond carbons form the backbone and the rest hangs off (3); (4) backwards: restore the C=C, add no hydrogens (4); (5) very long chains lie alongside each other, so dispersion forces along the whole contact make a solid; no bonds join one chain to another; heat lets chains slide, so it softens and remoulds without breaking chain bonds (thermoplastic) (5); (6) branches stop packing, so less contact, weaker forces: LDPE soft and lower melting; straight chains pack: HDPE stiff and denser (6); (7) polar C–Cl adds dipole–dipole: rigid PVC; plasticisers push chains apart (7); (8) bulky, stiff rings catch on neighbouring chains and stop them sliding: rigid, brittle PS; gas-filled foam insulates (8); (9) strong C–F bonds and a fluorine sheath resist attack; the even sheath cancels the C–F pulls and tightly held electrons hardly shift, so only weak dispersion forces form at the surface and almost nothing sticks: PTFE (9); memory aid and comparison (10); two attempts and brief feedback (11 to 14); handoff (15); key notes (16).", "conversationalApproach": "ethene is a gas, yet thousands of ethene molecules joined end to end make polyethylene, a solid tough enough for bags and bottles, and similar monomers give very different plastics, so the video asks how an alkene becomes an addition polymer and why PE, PVC, PS and PTFE behave so differently. A monomer joins up into a polymer: the C=C's weaker second bond breaks, each carbon's spare bond joins the next monomer, again and again, and nothing else is formed. The repeat unit is drawn once with the double bond as a single bond, continuation bonds through brackets and an n, and the monomer is found by going backwards. Polyethylene is solid because each huge chain lies alongside its neighbours for thousands of carbons, so the dispersion forces add up, and it softens on heating because no covalent bonds join the chains. LDPE's short branches keep chains apart, so it is soft and flexible, while HDPE's straight chains pack closely and make it stiff. In PVC the polar carbon-chlorine bond adds dipole attractions between chains, polystyrene's bulky rings stop chains sliding past each other so it is rigid, and in PTFE strong carbon-fluorine bonds and a fluorine sheath make it unreactive and non-stick. The memory aid is open the double bond, add brackets, nothing lost, and each property is traced back to the chains. Two exam questions follow with brief feedback.", "openingDecision": "Ethene is a gas. Join thousands of ethene molecules end to end, and you get polyethylene, a solid tough enough for bags and milk bottles. Swap one hydrogen on each ethene for a chlorine, and you get the plastic in grey PVC water pipes. So how does an alkene turn into a solid like this, and why do plastics made from such similar molecules behave so differently?", "understandingCheck": "(A1) \"(a) 1,1-Dichloroethene, CH₂=CCl₂, forms an addition polymer. Draw the repeat unit of this polymer. (b) Another addition polymer has the repeat unit shown. Name and draw its monomer.\" with the repeat unit [–CH₂–CH(CH₃)–]ₙ drawn in plain ink on the card. New monomer in (a) (scenes use chloroethene; both chlorines on one carbon tests \"everything else hangs off\"); (b) tests monomer recovery. Crossed mistake: \"monomer: CH₃–CH₂–CH₃\" (hydrogens added at the continuation bonds; site correction 1). (A2) \"High-density polyethylene (HDPE) is used for rigid chopping boards, and low-density polyethylene (LDPE) is used for soft squeeze bottles. Both are made from ethene. Explain how differences in chain structure lead to these different properties, and explain why both can be melted and remoulded for recycling.\" New context (site uses milk crates and cling film); tests branching, packing, contact, dispersion forces and thermoplastic behaviour. Crossed mistake: \"Melting breaks the covalent bonds in the chains.\" (pack trap: chain movement, not chain breaking).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"model and compare the structure, properties and uses of addition polymers of ethylene and related monomers, for example:; polyethylene (PE); polyvinyl chloride (PVC); polystyrene (PS); polytetrafluoroethylene (PTFE) (ACSCH136)\" This video covers how addition polymerisation opens the C=C bond, drawing a repeat unit from a monomer and a monomer from a repeat unit, why the chains form a solid that softens on heating (thermoplastic behaviour), and how branching (LDPE against HDPE) and side groups (PVC, PS, PTFE) set properties and uses. Condensation polymers are chem-m7-c15; the polymer practice video is chem-m7-g04 (route review change 4). this video starts by opening the alkene double bond, and stops at linking repeat-unit structure to properties and uses. It teaches: a monomer is a small molecule that joins into a long chain, the polymer (many parts); in addition polymerisation the weaker second bond of each C=C breaks (c04a), leaving each carbon one spare bond, which joins it to the next monomer; an initiator opens the first double bond and each new chain end opens the next (one sentence, no mechanism); nothing else forms, so every monomer atom ends up in the chain; the repeat unit: the monomer redrawn with a single bond, a continuation bond out of each backbone carbon, square brackets crossed by those bonds, and n outside; the two carbons from the double bond form the backbone and everything else hangs off as a side group; the equation n CH₂=CHCl → [–CH₂–CHCl–]ₙ; going backwards: take the two backbone carbons, remove the continuation bonds and restore the C=C, adding no hydrogens; the chains are very long and lie alongside each other, so dispersion forces acting along the whole contact hold them together and the polymer is a solid; heating lets the chains move and slide past each other, so the plastic softens and can be remoulded, and cooling restores the forces; the covalent bonds in the chains do not break; this is a thermoplastic, which is what makes melt recycling possible; no bonds join one chain to another, only these forces (Revision 2); LDPE and HDPE share the monomer and repeat unit but differ in branching (made under different conditions): branches stop chains packing closely, so less contact, weaker dispersion forces, lower density, softer, lower melting (about 110 °C; squeeze bottles, films); straight chains pack closely with neatly lined-up regions, so more contact, stronger forces, higher density, stiffer, higher melting (about 130 °C; crates, milk bottles); PVC: the polar C–Cl bond adds dipole–dipole attraction between chains, so plain PVC is rigid (pipes); plasticisers between the chains push them apart and make it flexible (cable coating); polystyrene: the bulky, stiff benzene ring on every second carbon catches on the rings of neighbouring chains, so at room temperature the chains can hardly slide, and it is rigid and brittle (Revision 2: the cause is restricted sliding, not poor packing, which scene 6 links to softness); blown with gas it becomes a light insulating foam (cups); PTFE: every H replaced by F; C–F bonds are among the strongest single bonds carbon forms and the F atoms wrap the backbone, so very few chemicals attack it (chemical resistance comes from these bonds, not from forces between chains); C–F bonds are polar, but the even fluorine coating makes their pulls largely cancel, and fluorine holds its electrons so tightly that they hardly shift, so other substances make only very weak dispersion forces with the surface (c03), so almost nothing sticks (non-stick pans, plumber's tape). Not here: condensation polymers, PET and nylon (chem-m7-c15; the PET bottle in the hook plate gets a grey forward tag); polymerisation conditions and the radical mechanism (initiation, propagation, termination by name; author note a); tacticity and crystallinity numbers (author note b); thermosets beyond one grey chip (site L23 extension; author note c); environmental persistence, microplastics, recycling codes and bioplastics (site L21 card 4 and L23, beyond the 2017 dotpoints; route review change 4; author note d); natural polymers and hydrolysis of biomolecules (site L23 card 8, not a 2017 Module 7 dotpoint; site correction 6); bond energy calculations; polypropylene and polyacrylonitrile as taught examples (propene appears only as attempt 1's monomer; author note e)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c04a and c03: carbon skeleton ink; hydrogens soft grey; the C=C teal, its second bond shown as a teal cloud when it opens; chlorine green; fluorine pale green-yellow; the benzene ring ink with a grey ring; brackets and n in navy; chains in the chain view pale blue; dispersion contact dotted pale blue; dipole–dipole dotted teal with δ+ and δ− small in navy; heat glow amber. Board layout (constant): top-left the short task chip (\"Monomer to polymer\", \"Draw it\", \"Backwards\", \"Why solid?\", \"LDPE or HDPE\", \"Side groups\"); centre the structure board or the chain view box, one model at a time; plates small or medium at the left or right only in scenes 1, 6 to 9, 14 and 15. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous model leaves before the next one draws. Reuse: painted plates (inspected 27 Oct): `m7-polymer-objects-v1.png` (2000 × 2000; a white plastic carry bag, a grey pipe with a coupling, a white foam cup, a clear blue-tinted drink bottle and a coil of cream rope; scenes 1 and 15, medium). Not used: `m6-foam-cup-calorimeter-v1.png` (a foam cup with a lid, thermometer and cutaway water; it reads as calorimetry apparatus, not a polystyrene object); `m6-household-cleaner-bottle-v1.png` (a spray bottle of unknown polymer). Five new plates (Assets). All plates scaled uniformly only, never stretched. No human figures.", "transitionPlan": "Ethene draws small above the polymer objects plate as a chain grows end to end and a chloroethene chip swaps one hydrogen; the board clears to five ethene molecules in a row as each double bond opens and the spare bonds join into a chain with nothing given off; two chloroethene units draw joined and the bracket stamp marks one repeat unit with its continuation bonds and n; polystyrene's repeat unit runs backwards to its monomer as the brackets lift and the double bond returns; the chain view box fills with straight chains and dispersion lines, then warms as the chains slide; LDPE's branched chains and HDPE's packed chains sit side by side under one repeat unit chip with the bottle and crate plates; a PVC strip draws chlorine on every second carbon with dipole links and the pipe plate; a polystyrene strip draws rings that lock the chains beside the foam cup plate; tetrafluoroethene opens through the bracket stamp into a fluorine-sheathed chain beside the pan plate; the memory line writes over a comparison table; each attempt clears the board and its feedback underlines the card as the repeat unit or chain view draws and a crossed chip lands; the memory line, polymer objects plate and next chip close; scene crossfade with settle."},
+        'rows': M7C14_ROWS,
+    },
+    # END generated entries: m7c09, m7c10, m7c11, m7c12, m7c13, m7c14
 }
 
 

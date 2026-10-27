@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-B13-claude-2026-10-28-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7b13/lesson.json",
+  "lessonSha256": "8efd95d49c3ee7ab6e869bc48cf34540cce273aaa0bf9548b3be81f16def0655",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7b13/lesson.production-brief.json",
+    "sha256": "b9831388c84d7f1b6e8248befeb7d7b27bd050c2ee86cc4d9bc638172d47c4e6"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In 2021, a trial in Yogyakarta, Indonesia, reported seventy-seven per cent fewer dengue cases where Wolbachia mosquitoes had been released. Yet in 2024, countries reported more dengue than ever recorded, over fourteen million cases. So if one method works that well, what limits dengue control?",
+      "hash": "2b02251b5c92",
+      "textSha256": "2b02251b5c9232503da2d1350a9237d5e65cea934dfacfc9a71857b8860d3f9d",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/hook.2b02251b5c92.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/hook.2b02251b5c92.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/hook.2b02251b5c92.generation.json",
+      "plannedRequestSha256": "d00d920d1a3068ed6b786569d8e332b2e6db8b5bad5a192b2a822fcd9213ed31"
+    },
+    {
+      "id": "named-disease",
+      "parentSceneId": "named-disease",
+      "text": "Our named disease is dengue in South East Asia. Dengue is caused by a virus, spread mainly by Aedes aegypti mosquitoes, which breed in water containers around homes. Malaria is the other choice: it's caused by Plasmodium, a protozoan, spread by Anopheles. And the virus comes in four serotypes, four types that the immune system treats as different.",
+      "hash": "f6d9d9ae5d21",
+      "textSha256": "f6d9d9ae5d2196517296a37f80ea5828936b01887af29521b773e6eb3f24da0e",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/named-disease.f6d9d9ae5d21.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/named-disease.f6d9d9ae5d21.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/named-disease.f6d9d9ae5d21.generation.json",
+      "plannedRequestSha256": "1234f26a2802f49016fbe542c8dad8b17621796c49dabf2ef9d9f7c7c04dd156"
+    },
+    {
+      "id": "incidence-prevalence",
+      "parentSceneId": "incidence-prevalence",
+      "text": "Incidence is the number of new cases in a set time, for a set number of people, like cases per hundred thousand people per year. Prevalence is the share of a population that has the disease at one moment. Picture a tank. New cases flow in from a tap. Recovery or death drains it. Prevalence is how full the tank is.",
+      "hash": "e970b7ba0be0",
+      "textSha256": "e970b7ba0be05104c120760df7f6642543ec09705e5a8577646e6338fbe5d9ec",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/incidence-prevalence.e970b7ba0be0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/incidence-prevalence.e970b7ba0be0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/incidence-prevalence.e970b7ba0be0.generation.json",
+      "plannedRequestSha256": "6668e8fb0740778dcb6fabac2a18d5d0c2f6e2e84fb82032880cf64dbc435290"
+    },
+    {
+      "id": "past-infection-rates",
+      "parentSceneId": "past-infection-rates",
+      "text": "Dengue illness lasts about a week, so few people have it at any moment, even in a big outbreak. Past infection is a separate measure. In a 2014 survey of Indonesian cities, about seven in ten children had dengue antibodies, a sign of past infection. And to compare places, use rates, not counts: divide the cases by the population, then multiply by a hundred thousand. A city of a million with two thousand cases in a year has two hundred per hundred thousand. A town of fifty thousand with three hundred cases has six hundred.",
+      "hash": "a638036ab918",
+      "textSha256": "a638036ab9181fabd65d6088844db26133c1ffe4e7b76e1969ce8d7cb69e7b5b",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/past-infection-rates.a638036ab918.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/past-infection-rates.a638036ab918.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/past-infection-rates.a638036ab918.generation.json",
+      "plannedRequestSha256": "6a8be4be4fe2cb39e0ed6df35c2dcd6141a06a73675e547a266a1ad46347743a"
+    },
+    {
+      "id": "dengue-year",
+      "parentSceneId": "dengue-year",
+      "text": "Now read one city's weekly dengue incidence across a year. Cases stay low through the dry months, then climb a month or two after the wet season starts. Why the delay? Rain fills containers, eggs hatch, adults emerge, and the virus spends over a week multiplying inside each mosquito before it can be passed on. So the peak trails the rain.",
+      "hash": "138b00d4442c",
+      "textSha256": "138b00d4442c3b51630baa9cf40a93cebee85b71d3521d93a720086d285c3f07",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/dengue-year.138b00d4442c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/dengue-year.138b00d4442c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/dengue-year.138b00d4442c.generation.json",
+      "plannedRequestSha256": "43f5cca65d49ca8b5530128f170bb34273c363e987acddc166d10312c5fc2c92"
+    },
+    {
+      "id": "serotypes",
+      "parentSceneId": "serotypes",
+      "text": "Here's where serotypes matter. You met herd immunity earlier: when enough people are immune, outbreaks fizzle. But dengue immunity covers only the serotype that infected you. So a city where most people have had dengue can still have a big outbreak when a different serotype arrives. A second infection with a new serotype is also more likely to be severe. So a dengue vaccine has to protect against all four types at once, or a type it misses could later cause severe dengue.",
+      "hash": "f3efe5e0b7a0",
+      "textSha256": "f3efe5e0b7a06b5f9d0aea3b7a3fabbc8249b5587706976df560633bc03fc25a",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/serotypes.f3efe5e0b7a0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/serotypes.f3efe5e0b7a0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/serotypes.f3efe5e0b7a0.generation.json",
+      "plannedRequestSha256": "a87e6764d24a483aaa04690b99da3292962ea74e6a9a775bc5ae180be6cb0cb3"
+    },
+    {
+      "id": "mobility",
+      "parentSceneId": "mobility",
+      "text": "Mobility links the scales. A person infected in one city can fly to another within a day, while the virus is still in their blood. If local Aedes bite them, a new chain starts. That's how outbreaks in north Queensland usually begin, with a traveller bringing the virus in.",
+      "hash": "a786dae0c56e",
+      "textSha256": "a786dae0c56e1fcc4bb7c4aac8273123d83b87f6a5a21511ddf403e2fe949830",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/mobility.a786dae0c56e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/mobility.a786dae0c56e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/mobility.a786dae0c56e.generation.json",
+      "plannedRequestSha256": "ac057ec4510b7944fc26ebeb4ce69b4613cf6f433eaeed0fd27f36c92583bf4a"
+    },
+    {
+      "id": "four-conditions",
+      "parentSceneId": "four-conditions",
+      "text": "So dengue spreads when four things meet: the virus, Aedes mosquitoes, warmth and water to breed in, and people who aren't immune, in contact. Cut one far enough and the chain breaks. And how people live shapes these conditions. Where piped water is unreliable, families store water in jars and tanks, and Aedes breeds in them, even in dry months. Crowded, fast-growing cities put more people near more mosquitoes. And control programs need money and support, year after year.",
+      "hash": "bc928692d16f",
+      "textSha256": "bc928692d16f90aa6a37f0284609686b099be0571636cba5d7daf651d6d3b237",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/four-conditions.bc928692d16f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/four-conditions.bc928692d16f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/four-conditions.bc928692d16f.generation.json",
+      "plannedRequestSha256": "8beacfe4123f16d1302d676568b0d199fdeea8ce8ec206319081dfa45bf60e0b"
+    },
+    {
+      "id": "wolbachia-evidence",
+      "parentSceneId": "wolbachia-evidence",
+      "text": "Now the Wolbachia evidence. In Yogyakarta, researchers randomly chose which of twenty-four areas got Wolbachia mosquitoes. Among people who came to clinics with a fever, about two in a hundred had dengue in Wolbachia areas, against about nine in a hundred elsewhere. Because the areas were chosen at random, weather and serotypes affected both groups alike. In Cairns, dengue incidence fell about ninety-six per cent after releases. But with no untreated areas to compare at the same time, other changes could explain part of that fall, so it's weaker evidence.",
+      "hash": "bf78a3644269",
+      "textSha256": "bf78a3644269c041e13cebd1a549086632345d066f5da39c135a21ed04110214",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/wolbachia-evidence.bf78a3644269.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/wolbachia-evidence.bf78a3644269.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/wolbachia-evidence.bf78a3644269.generation.json",
+      "plannedRequestSha256": "a4f77c7aa23caccf3015a27fa4d5b1ddef10dc5e9841d3f2a0e577c7c03928e4"
+    },
+    {
+      "id": "still-limited",
+      "parentSceneId": "still-limited",
+      "text": "So why hasn't Wolbachia stopped dengue? Releases take years and money to cover a city, and residents must agree to them. Many cities with dengue haven't started yet. Meanwhile, four serotypes make vaccines hard, many Aedes populations now resist common insecticides, a warmer climate may let Aedes spread to new places, and travel keeps bringing the virus back. Control succeeds where a method breaks a needed link, and people can keep it going.",
+      "hash": "00a7f2dba4f4",
+      "textSha256": "00a7f2dba4f4d1fad4558075055da0042e909bd52936db3e2d476576531eb4fe",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/still-limited.00a7f2dba4f4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/still-limited.00a7f2dba4f4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/still-limited.00a7f2dba4f4.generation.json",
+      "plannedRequestSha256": "0d2bf7e4f17e05c5902a230f67ec89d594442d00a50359f36d0a3f62f1cfcaf7"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "Two lines to keep. Incidence is the tap, prevalence is the tank. And dengue needs virus, vector, warmth and water, and people, all at once.",
+      "hash": "8ce147755845",
+      "textSha256": "8ce1477558458ad9d416975b55928f64b3326bb065915f599cb98bdc4529adc7",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/memory.8ce147755845.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/memory.8ce147755845.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/memory.8ce147755845.generation.json",
+      "plannedRequestSha256": "dab0924c3ab0afbeb96426ee6132d11731e89da984da990cdf9384999e8cd5c5"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. In 2023, District P, with two hundred thousand people, recorded one thousand dengue cases. District Q, with forty thousand people, recorded four hundred. Calculate the incidence in each district per hundred thousand people, and identify which district had the greater risk of dengue. Pause here to answer.",
+      "hash": "9e89955ad70c",
+      "textSha256": "9e89955ad70c89a939c9d5f06ac0d2718dea5dc514bdba01362c151531a6b14f",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/attempt.9e89955ad70c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/attempt.9e89955ad70c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/attempt.9e89955ad70c.generation.json",
+      "plannedRequestSha256": "f758a8dbf55e8560dfc9782e7134d2143b97855eb1c49d4b0d91daf92960ed10"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "District P's incidence is one thousand, divided by two hundred thousand, times a hundred thousand: five hundred per hundred thousand. District Q's is one thousand per hundred thousand. So Q had double the risk, even with fewer cases, because its cases come from a smaller population. Saying P is worse because it had more cases is the classic mistake.",
+      "hash": "dc5224677ec7",
+      "textSha256": "dc5224677ec71cd57f0933001b4d65cf0a4336c0deafae77fa11adfb43c3edc3",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/feedback-one.dc5224677ec7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/feedback-one.dc5224677ec7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/feedback-one.dc5224677ec7.generation.json",
+      "plannedRequestSha256": "4da8a336f1001133b864a7d3d68de17ec8a86e4457892b771e669c799e6f474f"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. In City R, a survey found that eighty per cent of adults had antibodies from a past dengue infection, almost all from serotype one. Piped water is often cut off, so most homes store water in open jars. In 2025, travellers brought in serotype three, and the city had its largest dengue outbreak in ten years, with more severe cases than usual. Explain this outbreak, using biological and social factors. Pause here to answer.",
+      "hash": "55fb7ff2a87d",
+      "textSha256": "55fb7ff2a87d4fbc3c8d65f2fb2dcb2271dc76c77c67a9f94667c6ce373c805a",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/attempt-two.55fb7ff2a87d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/attempt-two.55fb7ff2a87d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/attempt-two.55fb7ff2a87d.generation.json",
+      "plannedRequestSha256": "a4c9a847cd93b83e7c0ce71b1918cb5523aaffb87d028cca7a17f64b9f604a7f"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Immunity to serotype one doesn't protect against serotype three, so most people were still susceptible. Travellers brought the new serotype in, and Aedes breeding in the stored water passed it on. A second infection with a different serotype is more likely to be severe, so more cases were severe. Saying eighty per cent were immune, so there couldn't be an outbreak, is the classic mistake.",
+      "hash": "eae021d4378e",
+      "textSha256": "eae021d4378e620455635be5aff7437c29f5fed6976ba0b106155f209b9f21d4",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/feedback-two.eae021d4378e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/feedback-two.eae021d4378e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/feedback-two.eae021d4378e.generation.json",
+      "plannedRequestSha256": "530c80c5cb4baa24c589304beed7b07c0900ba7c8eee6919e17c5c6dfba49c10"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any disease data, check the measure and its population, then link each change to a biological or a social cause. Next, practise reading outbreak data and choosing controls.",
+      "hash": "4620167f1964",
+      "textSha256": "4620167f1964521d02e1970a3470c5e5b1a0e2000ba7acb46ce0262959748f01",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/decision-rule.4620167f1964.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/decision-rule.4620167f1964.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/decision-rule.4620167f1964.generation.json",
+      "plannedRequestSha256": "5c4237edad44256ac4e71fddc5506dd2cee1329250b749a530206ee7fa5a96a2"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-B13-claude-2026-10-28-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

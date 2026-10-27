@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C11-claude-2026-10-28-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c11/lesson.json",
+  "lessonSha256": "96aff704f2ed09a112a777e033933143775a432184d669f7bec39b0c9b6f7c0c",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c11/lesson.production-brief.json",
+    "sha256": "b934c7b9d92fadb89898a233e4481136e4993f9efc7837a4607465950948fdcc"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Leave seafood out too long, and it smells fishy. Much of that smell comes from trimethylamine, an amine. Squeeze some lemon juice over it, and the smell fades. The amine's solution turns red litmus blue, so it's a base. Ethanamide has a nitrogen too, but its solution leaves litmus unchanged. So why is one nitrogen compound a base, while the other barely is?",
+      "hash": "1ba8fbd6217b",
+      "textSha256": "1ba8fbd6217b83bfd3a9e502f7bcde1d66fbd8c9e50cbfd59cc1303589ecbec4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/hook.1ba8fbd6217b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/hook.1ba8fbd6217b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/hook.1ba8fbd6217b.generation.json",
+      "plannedRequestSha256": "4627c2c837916f51341be48fd641dce2ba5fc37ee63cf00d346827154770f687"
+    },
+    {
+      "id": "amine-group",
+      "parentSceneId": "amine-group",
+      "text": "An amine is like ammonia, N H three, with one or more hydrogens swapped for carbon chains. The nitrogen keeps its lone pair, a pair of electrons that isn't used in bonding. To classify an amine, count the carbon groups on the nitrogen. One is primary, two is secondary, and three is tertiary. That's not the alcohol rule. In propan-two-amine, the N H two sits on a middle carbon, but the nitrogen has only one carbon group, so it's a primary amine.",
+      "hash": "862036b9e8ce",
+      "textSha256": "862036b9e8ce24c320154743fb29f1dfb9a5cc56df1d2a1918a1ed687c166ab6",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-group.862036b9e8ce.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-group.862036b9e8ce.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-group.862036b9e8ce.generation.json",
+      "plannedRequestSha256": "34ec8f08ea94c12625ff3bf4c1c008ba2b22c10be42947b514bef4f11ad11c0d"
+    },
+    {
+      "id": "naming-amines",
+      "parentSceneId": "naming-amines",
+      "text": "To name a primary amine, drop the alkane's final e, and add amine, with a number for the nitrogen's carbon when it's needed: ethanamine, propan-one-amine and propan-two-amine. If the nitrogen carries more than one carbon group, the longest chain is the parent, and the other groups go in front, with an N to show they're on the nitrogen. That gives N-methylethanamine, and with two methyls, N,N-dimethylethanamine.",
+      "hash": "893e7e0041a5",
+      "textSha256": "893e7e0041a5fe1e9398ed78416de7a32a4a4ca8f3ab04718d9a0389e00e9129",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/naming-amines.893e7e0041a5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/naming-amines.893e7e0041a5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/naming-amines.893e7e0041a5.generation.json",
+      "plannedRequestSha256": "1d9f4da1d38ef01fab94ba5268fa0be79a6effa4b7c1c21f545899fc9eb3cec5"
+    },
+    {
+      "id": "amide-group",
+      "parentSceneId": "amide-group",
+      "text": "An amide has a C double bond O bonded straight to the nitrogen, C O N H two. It's like an ester, with nitrogen in place of the single bonded oxygen. It forms when a carboxylic acid and an amine are heated strongly together. They join and lose water, a condensation reaction, like esterification. To name an amide, drop the e and add amide. The C double bond O carbon is carbon one, so there's no number: ethanamide, propanamide.",
+      "hash": "1114a89be5c2",
+      "textSha256": "1114a89be5c2d5d5e7fddac793b7fb81fe6c0262e17428287ea4957746d280ce",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-group.1114a89be5c2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-group.1114a89be5c2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-group.1114a89be5c2.generation.json",
+      "plannedRequestSha256": "0d33936c042c03ea83b4caa0d9a1c04db95f8a59ee527e088684c5f3add3d284"
+    },
+    {
+      "id": "amine-forces",
+      "parentSceneId": "amine-forces",
+      "text": "Now the forces. A primary amine has two N H bonds, so it can hydrogen bond, like an alcohol. But nitrogen is less electronegative than oxygen, so an N H bond is less polar, and its hydrogen bonds are weaker. Propan-one-amine and propan-one-ol have the same number of electrons, yet the amine boils at forty eight degrees, and the alcohol at ninety seven.",
+      "hash": "e89cb6008bc0",
+      "textSha256": "e89cb6008bc03232145051a50b86e37c8b82500bdbb13cf393a390cb3892e91d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-forces.e89cb6008bc0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-forces.e89cb6008bc0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-forces.e89cb6008bc0.generation.json",
+      "plannedRequestSha256": "163c9ab7d5686a2b8719f6c75b91803dfb26cd183f10103707ceb4d5a10fc9cb"
+    },
+    {
+      "id": "amine-isomers",
+      "parentSceneId": "amine-isomers",
+      "text": "The number of N H hydrogens matters too. These three amines are isomers, so their dispersion forces are roughly similar. Propan-one-amine has two N H hydrogens. N-methylethanamine has only one, so it forms fewer hydrogen bonds, and boils at about thirty seven degrees. Trimethylamine has none, so its molecules can't hydrogen bond to each other, and it boils at about three degrees. Small amines still mix with water, because water hydrogen bonds to the nitrogen's lone pair.",
+      "hash": "5ec0556fd5c1",
+      "textSha256": "5ec0556fd5c183b3ec911551d74922d2e57f02ed4aab3ea74d02ce705c14e7ad",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-isomers.5ec0556fd5c1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-isomers.5ec0556fd5c1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-isomers.5ec0556fd5c1.generation.json",
+      "plannedRequestSha256": "fae036df45c9e7f94c1a007a51e4e62a1384131abd51a928da77c32be22f4700"
+    },
+    {
+      "id": "amide-network",
+      "parentSceneId": "amide-network",
+      "text": "Amides go the other way, even though N H is less polar than O H. Propanamide and propanoic acid have the same number of electrons, but the amide boils at about two hundred and thirteen degrees. The difference is how many hydrogen bonds each molecule makes. Each primary amide molecule has two N H hydrogens to give, and its C double bond O oxygen takes hydrogen bonds. So each molecule links to several neighbours, building a network, while acid molecules mostly pair off as dimers.",
+      "hash": "18bd0d27639d",
+      "textSha256": "18bd0d27639d38f8b33ddc61e0a9490a68335dfa4fa663a209a011573ca93eec",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-network.18bd0d27639d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-network.18bd0d27639d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-network.18bd0d27639d.generation.json",
+      "plannedRequestSha256": "f7e22c51a48733f017faf44c9b44d63f15d3dd077b837c931ed9e657131cf764"
+    },
+    {
+      "id": "weak-base",
+      "parentSceneId": "weak-base",
+      "text": "Back to the litmus. In water, the amine's lone pair takes a proton from a water molecule, like ammonia in Module six. That forms an ethylammonium ion, and leaves a hydroxide ion behind. The raised hydroxide ion concentration turns red litmus blue. But the reaction's reversible, and the equilibrium lies well to the left, so most amine molecules stay unchanged. Amines are weak bases.",
+      "hash": "4e5ea527a246",
+      "textSha256": "4e5ea527a2461bee0bf9bb8fc76fc4b3515d1ca7dabe86d57a65460fe4ea4bc1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/weak-base.4e5ea527a246.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/weak-base.4e5ea527a246.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/weak-base.4e5ea527a246.generation.json",
+      "plannedRequestSha256": "1e3dcfd6aa03b96a78fccb8d96cf2cc545a348d7a50b30d716ce0a5b75d1fa2c"
+    },
+    {
+      "id": "amine-salts",
+      "parentSceneId": "amine-salts",
+      "text": "With a stronger proton donor, like hydrochloric acid, the reaction goes to completion. Ethanamine and H C l form ethylammonium chloride, an ionic salt. Its ions attract each other strongly, so the salt barely evaporates. That's the lemon trick. Citric acid in the juice gives trimethylamine a proton, turning much of it into a salt that stays on the fish.",
+      "hash": "92d851075ba2",
+      "textSha256": "92d851075ba26813eada1f75be8d07a96c28fdb16124a7f2e5c326a3bd75f1be",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-salts.92d851075ba2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-salts.92d851075ba2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amine-salts.92d851075ba2.generation.json",
+      "plannedRequestSha256": "b3dad3c699e50ea85d7cda7b210226ab3d266c9517551aa6befdafb1cfa43a0b"
+    },
+    {
+      "id": "amide-not-basic",
+      "parentSceneId": "amide-not-basic",
+      "text": "So why isn't ethanamide a base? Its nitrogen has a lone pair too. But the C double bond O beside it pulls that lone pair in, and shares it across the nitrogen, carbon and oxygen. It's the same effect you saw in the carboxylate ion: sharing loosens the grip on a proton. That helped ethanoic acid let its proton go. Here, ethanamide barely takes a proton from water, so its solution is close to neutral. It isn't an acid either. It has no O H to give away, so litmus doesn't change.",
+      "hash": "f8fab7d4cf93",
+      "textSha256": "f8fab7d4cf93d833137d9e10579096a8def587ff80787ee763a8e73160c51eb3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-not-basic.f8fab7d4cf93.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-not-basic.f8fab7d4cf93.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/amide-not-basic.f8fab7d4cf93.generation.json",
+      "plannedRequestSha256": "07da64d86a040ac21874ae5adbb6a68053541fff91c708087b4638bc0ee75f3b"
+    },
+    {
+      "id": "acid-vs-base",
+      "parentSceneId": "acid-vs-base",
+      "text": "Now, organic acid against organic base. A carboxylic acid gives a proton, from its O H. An amine takes a proton, with its lone pair. Both are weak. The acid raises the hydronium ion concentration, so blue litmus turns red. The amine raises the hydroxide ion concentration, so red litmus turns blue. Mix the two at room temperature, and the proton jumps across, making a salt, such as methylammonium ethanoate. No water forms. Making an amide takes strong heating.",
+      "hash": "33e000bc0e4f",
+      "textSha256": "33e000bc0e4f0864083c574a59a09a9721371f2f64a11ecb0b138631a62ac47c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/acid-vs-base.33e000bc0e4f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/acid-vs-base.33e000bc0e4f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/acid-vs-base.33e000bc0e4f.generation.json",
+      "plannedRequestSha256": "d78697e9638da732ed3f09fe7d9632fbd672ec8626204b49a66863662eb223c4"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, amines are organic ammonia. Their free lone pair takes protons, so they're weak bases. In an amide, the C double bond O shares that pair. Amine, free pair, a base. Amide, shared pair, barely a base.",
+      "hash": "f0b881fc1323",
+      "textSha256": "f0b881fc132351cf5812f81cbdfc8dee29ebd78c1e25f9c6da7eb73d421a6369",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/memory-aid.f0b881fc1323.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/memory-aid.f0b881fc1323.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/memory-aid.f0b881fc1323.generation.json",
+      "plannedRequestSha256": "0b4af90de1811fe86cd27a11ba66095c79abafbfc97f784150b4fd4a14139aef"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Three amines share the formula C four H eleven N, and their boiling points are shown. Give the IUPAC name of amine A, and classify amines B and C. Then explain the order of the boiling points. Pause here to answer.",
+      "hash": "9a2ef2b269f0",
+      "textSha256": "9a2ef2b269f0f62aa87bd5f7f35666d92d7a42ed91fc6b003231e256408da658",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/attempt-1.9a2ef2b269f0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/attempt-1.9a2ef2b269f0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/attempt-1.9a2ef2b269f0.generation.json",
+      "plannedRequestSha256": "1d08deff5dac50bd24a62a3fc156b4b26d95fe127cf84784c29d5b1d618d5f96"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Amine A is butan-one-amine. B has two carbon groups on its nitrogen, so it's secondary, and C has three, so it's tertiary. With the same formula, their dispersion forces are similar. But A has two N H hydrogens, B has one, and C has none. Fewer N H hydrogens means less hydrogen bonding, so the boiling point falls. Saying all three hydrogen bond to each other is the trap. C has no N H to give.",
+      "hash": "a198c1820f90",
+      "textSha256": "a198c1820f9049f8cd6089f2e1146914a59884cf9dbc0690277217a8ac7e8b7e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/feedback-1.a198c1820f90.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/feedback-1.a198c1820f90.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/feedback-1.a198c1820f90.generation.json",
+      "plannedRequestSha256": "0fab3875a99312ef1ef5c4e19c94bcf6595f5ca9e7e47c4d85d2dfda6e20bbcb"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Propanoic acid, propan-one-amine and propanamide are each dissolved in water. Predict the effect of each solution on red and blue litmus paper. Then explain the results for propan-one-amine and propanamide. Pause here to answer.",
+      "hash": "58964fab4a90",
+      "textSha256": "58964fab4a90047b466b3f2e0a93111586a3480c5b82322bd263355ee89641a7",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/attempt-2.58964fab4a90.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/attempt-2.58964fab4a90.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/attempt-2.58964fab4a90.generation.json",
+      "plannedRequestSha256": "9177f24324d11b604721d295a97d7d0300e697aa7969e0c8acc5a03d247a75d1"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Propanoic acid turns blue litmus red. Propan-one-amine turns red litmus blue, because its lone pair takes a proton from water, raising the hydroxide ion concentration. Propanamide changes neither. The C double bond O beside its nitrogen shares the lone pair, so it barely takes a proton, and it has no O H to give one. Saying propanamide is acidic because it has a C double bond O is the trap.",
+      "hash": "fb6b61a33c13",
+      "textSha256": "fb6b61a33c13222c7e317e70dbf3dec626fcbc33af09e557417629c9424cd599",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/feedback-2.fb6b61a33c13.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/feedback-2.fb6b61a33c13.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/feedback-2.fb6b61a33c13.generation.json",
+      "plannedRequestSha256": "05f23ecb4bed3d9bff55022c85af22c8e1ccecc19f601ee4bc7f364dc268e52e"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So the nitrogen's lone pair decides whether a compound is a base. Next: the salts of long carboxylic acids, and how soap lifts grease into water.",
+      "hash": "5be6f708b43b",
+      "textSha256": "5be6f708b43b30ee3c783e580f772d07a8af3eebf75e7a4b778454315fd7fc2d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/handoff.5be6f708b43b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/handoff.5be6f708b43b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/handoff.5be6f708b43b.generation.json",
+      "plannedRequestSha256": "43b99520071b43859cb0847d95301c2bf1b30998e25a8de450bef986cb979890"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C11-claude-2026-10-28-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

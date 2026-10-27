@@ -1,0 +1,136 @@
+{
+  "title": "How can a reaction map plan organic synthesis? Work backwards from the target, write the route forwards, and check every arrow",
+  "subtitle": "You want a pear-scented ester, but all you have is a gas and a haloalkane. How do you plan a route from the compounds you have to the one you want, and show it as a flow chart?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 21,
+  "lessonIntent": "building a reaction map; counting carbons; working backwards from a target; choosing a route by position and by conditions; drawing a multi-step flow chart (including two arms that join) with reagents, conditions and named intermediates; spotting arrows that don't exist. No mechanisms, no reductions, no yield calculations.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Propyl ethanoate is an ester that smells a lot like pears. Suppose the only carbon compounds you're allowed to start from are ethene, a gas, and 1-bromopropane, a haloalkane. Neither one looks anything like the ester. Making a target compound from simpler ones is called a synthesis. So how do you plan a route from what you have to what you want, and show it as a flow chart?"
+      }
+    },
+    {
+      "id": "reaction-map",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Good news: you've already met every reaction you need. Put them all on one map. Each box is a family of compounds, and each arrow is a reaction from an earlier video. You've seen the middle already: the alcohol is the hub. Alkenes and haloalkanes make alcohols, and alcohols lead on to alkenes, haloalkanes, aldehydes, ketones and acids. Now add the joining arrows. Acids join alcohols to make esters, or amines to make amides. And alkanes need a halogen and U V light before they can join in at all."
+      }
+    },
+    {
+      "id": "count-carbons",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Move one: name the functional group in the target and in each starting material, and count the carbons. The reactions on this map change the functional group, but they don't break the carbon chain, so the chain keeps its length. The only arrows that join two molecules are the ones that make esters and amides, so their carbons add up. Propyl ethanoate has an ethanoate part, with two carbons, and a propyl part, with three. Ethene has two carbons, and 1-bromopropane has three. The counts already match. If they didn't, you'd need a joining step, or a different start."
+      }
+    },
+    {
+      "id": "work-backwards",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Move two: work backwards from the target. Ask which reaction makes its functional group. An ester comes from a carboxylic acid and an alcohol, so cut it at the single-bonded oxygen, like in the esters video. The ethanoate part needs ethanoic acid, and the propyl part needs propan-1-ol. Now ask the same question about each of those. Ethanoic acid comes from oxidising a primary alcohol, ethanol. And ethanol comes from ethene and steam, one of our starting materials. Keep asking until you reach something you're allowed to start from."
+      }
+    },
+    {
+      "id": "choose-route",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Where does propan-1-ol come from? Here, from 1-bromopropane. Hydroxide takes the bromine's place on the same carbon, so the O H lands exactly where you need it, on carbon one. Why not use an alkene instead? Suppose you had propene. Its double bond isn't symmetrical, so the O H can go on either carbon, and most of it ends up on the middle one. You'd get mainly the wrong alcohol. Adding H Br to propene first doesn't help, because the bromine mostly lands on the middle carbon too. So when the position matters, start from a haloalkane that already has its halogen on the right carbon."
+      }
+    },
+    {
+      "id": "write-forwards",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Move four: write the route forwards, in the order you'd carry it out, and put the conditions on every arrow. Ethene and steam, with a phosphoric acid catalyst, about three hundred degrees and high pressure, give ethanol. Ethanol here is an intermediate, a compound made on the way and used up in the next step. Then acidified dichromate in excess, heated under reflux, takes the ethanol all the way to ethanoic acid. Reflux, not distillation, so the aldehyde can't escape before it's oxidised again. On the other arm, 1-bromopropane heated under reflux with aqueous sodium hydroxide gives propan-1-ol. Finally, the acid and the alcohol, with a few drops of concentrated sulfuric acid, heated under reflux, make the ester and water. That's an equilibrium, like the hydration at the start, so both arrows get the double arrow."
+      }
+    },
+    {
+      "id": "check-arrows",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Then finish move four: check every arrow, because one wrong arrow breaks the whole route. Here's a plan for propanoic acid that fails twice. It turns propane straight into propan-2-ol. No reaction we've met does that. An alkane first needs a halogen and U V light, and that gives a mixture. Then it oxidises propan-2-ol to propanone, and propanone to propanoic acid. That arrow doesn't exist. A ketone has no hydrogen on its carbonyl carbon, so acidified dichromate can't oxidise it any further. It's a dead end: no arrow on the map leaves it. To reach the acid, you need the primary alcohol, propan-1-ol. And keep routes short where you can. Every step loses some product, so extra steps usually mean a lower overall yield, the amount of product left at the end."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, name and count, work backwards, choose, then write forwards and check. In short, work backwards to plan, because the target's group tells you the last step, and write forwards to answer. Many routes run along the main road from ethene: alkene, primary alcohol, acid, ester. When the O H's position matters, start from a haloalkane with its halogen on the right carbon."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. A chemist wants to make pentanoic acid, and can start from either pent-1-ene or 1-chloropentane. Construct a flow chart for a two-step synthesis from the better starting material, with the reagents and conditions for each step, and justify your choice. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start from 1-chloropentane. Aqueous sodium hydroxide, heated under reflux, puts the O H on the same carbon, carbon one, giving pentan-1-ol. Then excess acidified dichromate under reflux oxidises that primary alcohol to pentanoic acid. Starting from pent-1-ene is the trap. Most of the water adds its O H to carbon two, giving mainly pentan-2-ol, and that only oxidises to a ketone."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A chemist has only ethene and butan-1-ol to start from. Draw a flow chart to make ethyl butanoate, with the reagents and conditions on every arrow. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The ethyl part comes from ethanol, and the butanoate part from butanoic acid. So hydrate ethene with steam and a phosphoric acid catalyst, hot and under pressure. Oxidise the butan-1-ol with excess acidified dichromate, under reflux. Then esterify with concentrated sulfuric acid under reflux, using a double arrow. Oxidising the ethanol instead is the trap. That makes butyl ethanoate, an isomer."
+      }
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So every synthesis question uses the same four moves, on one map. Every arrow needs its reagents and conditions, and every box needs a name. Next: practice, with harder targets and starting materials to plan from."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

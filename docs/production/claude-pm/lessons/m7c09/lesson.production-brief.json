@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7c09/lesson.json",
+    "lessonSha256": "b44385363049dda55bb0cdbc72873a7218010d8eddb3fc06f3d659c3ab973ef5"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c08a (primary alcohol oxidised under reflux to a carboxylic acid; ethanoic acid named); chem-m7-c08b (the carbonyl group, polar C=O, dipole–dipole forces, the boiling point strip); chem-m7-c05 (alcohol naming, hydrogen bonding from an O–H, donor and acceptor, propan-1-ol 97 °C, \"Same size? Hydrogen bonding wins. Same family? Size wins.\", solubility falling with chain length); chem-m7-c03 (dispersion forces, the water lattice); chem-m7-c01 (naming rules, locants, branches); chem-m6-c01 (proton transfer, H₃O⁺); chem-m6-c02 (acid with hydroxide, metal and carbonate; carbonic acid breaks into water and CO₂); chem-m6-c05 (weak means partial ionisation; weak is not dilute; ethanoic acid at 0.10 mol/L pH 2.9, about 1 in 80); chem-m6-c10 (Ka, pKa, lower pKa is stronger, each unit a factor of 10, conjugate base). Not assumed: carboxyl group, \"-oic acid\" naming, dimer, carboxylate and ethanoate, the hydrogen carbonate test, why the conjugate base's charge matters.",
+    "startsWith": "Identify the carboxyl group and its intermolecular forces. The video opens: In the alcohol reactions video, ethanol was oxidised under reflux, all the way to ethanoic acid. That's the acid in vinegar. Now compare it with propan-one-ol.",
+    "stopsAfter": "identifying and drawing the carboxyl group; naming carboxylic acids up to C8 with methyl or ethyl branches; explaining their boiling points and solubility against other families and within the series; explaining why a carboxylic acid is a weak acid and an alcohol is not, using the conjugate base's shared charge and pKa; describing the litmus and hydrogen carbonate observations and writing the reactions with sodium hydroxide, magnesium and sodium hydrogen carbonate. No organic bases, no esters.",
+    "nextLesson": "what happens when a carboxylic acid meets an alcohol (route chem-m7-c10, \"How do an acid and alcohol make an ester?\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-c09.md"
+  ],
+  "teaching": {
+    "task": "Ethanoic acid and propan-1-ol have the same molar mass, and both contain an O–H group. Yet the acid boils 21 degrees higher, turns blue litmus red and fizzes with baking soda, while the alcohol does none of these. What does the carboxyl group change, and why does it make the molecule an acid?",
+    "causalExplanation": "(1) ethanoic acid and propan-1-ol have the same mass and both have an O–H, yet the acid boils 21 °C higher, turns litmus red and fizzes (1); (2) the carboxyl group is C=O and O–H on one carbon, only one O–H, both bonds polar (2); (3) names end \"-oic acid\"; the carboxyl carbon is C1 and counts in the chain (3); (4) alcohols also give and take hydrogen bonds, so that alone is not the difference; the C=O beside the O–H is a second taker, so the O–H gives and the C=O takes a hydrogen bond, and pairs lock with two (dimers), plus dipole–dipole forces, so the acid boils higher (4); (5) longer chains add dispersion, so boiling points climb; small acids mix with water and solubility falls after C4 (5); (6) in water the O–H hydrogen can transfer to water as H⁺, but the equilibrium lies well to the left, because ethanoate ions keep taking protons back: a weak acid (6); (7) the C=O beside the oxygen lets the charge left behind spread across two oxygens, about half on each, and half a charge pulls on a proton less strongly, so ethanoate takes protons back less readily; an alcohol has no C=O there, so its charge would sit on one oxygen; pKa 4.7 against 16 (7); (8) evidence: litmus, because the acid raises the hydronium ion concentration (8); (9) reactions as an acid, salts \"-oate\" (9); (10) the hydrogen carbonate test and why it works (10); memory aid (11); two attempts and brief feedback (12 to 15); handoff (16); key notes (17).",
+    "conversationalApproach": "ethanoic acid and propan-1-ol have the same molar mass and both contain an O-H, yet the acid boils 21 degrees higher, turns blue litmus red and fizzes with baking soda, so the video asks what the carboxyl group changes and why it makes the molecule an acid. The carboxyl group is a C=O and an O-H on one carbon; names end in oic acid with the carboxyl carbon as carbon one. The O-H gives a hydrogen bond and the C=O oxygen takes one, so two acid molecules lock together as a dimer with two hydrogen bonds and boil higher than alcohols of similar size, and along the family each extra CH2 adds dispersion forces while small acids still mix with water. In water the O-H hydrogen can leave as a proton to make hydronium and an ethanoate ion, but the equilibrium lies well to the left and only about one molecule in eighty gives its proton away, so it is a weak acid (partly ionised, not dilute); it lets go because the ion left behind spreads its negative charge over two oxygens, while an alcohol's ion cannot. Litmus shows the raised hydronium, the acid is neutralised by sodium hydroxide like a Module 6 acid, and sodium hydrogen carbonate gives carbon dioxide as the most useful test. The memory aid ranks similar-sized molecules: carboxylic acid above alcohol above aldehyde and ketone above alkane. Two exam questions follow with brief feedback.",
+    "openingDecision": "In the alcohol reactions video, ethanol was oxidised under reflux, all the way to ethanoic acid. That's the acid in vinegar. Now compare it with propan-one-ol. Both have a molar mass of sixty, and both contain an O H group. Yet the acid boils at one hundred and eighteen degrees, and the alcohol at ninety seven. The acid turns blue litmus red, and it fizzes with baking soda. The alcohol does neither. So what does the acid's group change?",
+    "understandingCheck": "(A1) \"Compound X has the condensed structural formula CH₃CH(CH₃)CH₂COOH and boils at 177 °C. Hexan-1-ol, which has a similar molar mass, boils at 157 °C. (a) Give the IUPAC name of X. (b) Explain why X has the higher boiling point, with reference to the intermolecular forces present.\" A skeletal formula of X is shown beside it in plain ink (no colours, no locants). New molecules (scenes use C1 to C4 straight chains and 2-methylpropanoic acid); tests counting the carboxyl carbon and the dimer reason. Crossed mistake: \"2-methylpropanoic acid\" (the carboxyl carbon left out of the chain, which names a different, smaller acid; the site's chain-length rule). (A2) \"Butanoic acid and butan-1-ol are both colourless liquids. Describe a chemical test that would distinguish them, including a balanced equation for any reaction. Explain why only one of them reacts.\" New pair (scenes use ethanoic acid and propan-1-ol); tests the hydrogen carbonate test, the equation with CO₂, and the reason (a stronger acid than carbonic acid, because the conjugate base's charge is shared). Crossed mistake: \"Both contain an O–H group, so both react.\" (the lesson's central misconception, L18 Q2 distractor pattern).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127); alkanes; alkenes; alkynes; alcohols (primary, secondary and tertiary); aldehydes and ketones; carboxylic acids; amines and amides; halogenated organic compounds\" This video covers carboxylic acids only (hydrocarbons chem-m7-c01 and g01; haloalkanes chem-m7-c04a; alcohols chem-m7-c05; aldehydes and ketones chem-m7-c08b; amines and amides chem-m7-c11). \"investigate the structural formulae, properties and functional group including:; primary, secondary and tertiary alcohols; aldehydes and ketones (ACSCH127); amines and amides; carboxylic acids\" This video covers carboxylic acids (alcohols chem-m7-c05; aldehydes and ketones chem-m7-c08b; amines and amides chem-m7-c11). \"explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present\" This video covers carboxylic acids, within their series and against alcohols, aldehydes, ketones and alkanes; amines and amides are chem-m7-c11. \"investigate the differences between an organic acid and organic base\" This video covers the organic acid: what makes a carboxylic acid acidic and how its acid behaviour is observed. The organic base and the comparison are chem-m7-c11 (route review change 3). this video starts by identifying the carboxyl group and its intermolecular forces, and stops at explaining why a carboxylic acid is a weak acid while an alcohol is not, with the observations that show it. It teaches: the carboxyl group (–COOH) is a carbonyl (C=O) and a hydroxyl (O–H) on the same carbon; the two oxygens differ, and there is only one O–H; inside the molecule the bonds are covalent, and both the C=O and the O–H are polar (the intramolecular part of `C7-IQ5-02`); naming (longest chain including the carboxyl carbon, drop the final \"e\", add \"oic acid\"; the carboxyl carbon is C1, so no locant; it is counted in the chain; branches numbered from it: 2-methylpropanoic acid); hydrogen bonding: the O–H donates and the C=O oxygen accepts, so two molecules can pair with two hydrogen bonds (a dimer), plus dipole–dipole forces from the C=O, so for similar sizes a carboxylic acid boils higher than an alcohol (ethanoic acid 118 °C against propan-1-ol 97 °C, both about 60 g/mol); within the series, boiling point rises with chain length (more dispersion), and solubility in water falls after butanoic acid; in water the O–H hydrogen can transfer to water as H⁺, forming H₃O⁺ and the carboxylate ion (ethanoate), but the reaction is reversible and the equilibrium lies well to the left, so only a small fraction ionises (weak, not dilute; Module 6 recall: pH about 2.9 at 0.10 mol/L, about 1 molecule in 80); why: the C=O beside the oxygen lets the charge left on the carboxylate spread across both oxygens, about half on each, so it does not take the proton back as strongly; an alkoxide has no C=O there, so its charge would sit on one oxygen; so pKa about 4.7 against about 16 (Module 6 recall: lower pKa, stronger acid; each unit a factor of 10); evidence: blue litmus turns red with the acid and stays blue with the alcohol; reactions as an acid (Module 6 recall): with sodium hydroxide (salt and water), with magnesium (salt and hydrogen), salts named \"-oate\"; the sodium hydrogen carbonate test: the acid is stronger than carbonic acid, so it gives a proton to hydrogen carbonate, and the carbonic acid breaks up into water and CO₂, so it fizzes; an alcohol does not; the equation includes CO₂. Not here: the organic base and the acid against base comparison (chem-m7-c11, route review change 3); amines and amides; esters and esterification (chem-m7-c10, next); phenol (beyond the 2017 syllabus; the site marks it as extension; author note f); chloroethanoic acid and inductive effects (author note f); pH or Ka calculations (Module 6); salt hydrolysis and the pH of sodium ethanoate (Module 6); reaction with sodium metal (author note f); soaps (chem-m7-c12); the site's pharmaceutical recall hook (site correction 1)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c08b: carbon skeleton ink; hydrogens soft grey; main chain pale blue; branches amber; oxygen brick red; the carboxyl group ringed red as one functional group, its O–H hydrogen grey-white and slightly larger; δ− and δ+ small in navy; lone pairs as two small red dot pairs on O; dipole–dipole attractions dotted teal; hydrogen bonds dotted violet; dispersion forces dotted pale blue; the transferring proton in the chem-m6-c01 proton colour; the carboxylate's charge as a grey-violet glow. Board layout (constant): top-left the short task chip (\"Acid or alcohol?\", \"Name it\", \"Forces\", \"Why acidic?\", \"Test it\"); centre the structure board, one molecule or one pair at a time; the boiling point strip at the right only in scenes 4 and 5; plates small or medium at the left or right only in scenes 1, 8, 10 and 15. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous case leaves before the next one draws. Reuse: painted plates (inspected 27 Oct by contact sheet): `m6-vinegar-bottle-v1.png` (amber vinegar bottle, cork cap; scene 1, small); `m6-litmus-red-v1.png` (a red strip on a white tile; the end state in scene 8); `m6-clip-baking-soda-vinegar-before-v1.png` and `m6-clip-baking-soda-vinegar-fizz-v1.png` (aligned pair, same alpha bounds: a glass beaker of clear liquid with a heap of white powder at the base, then the same with bubbles; scene 10 and feedback 2). Not used: `m6-litmus-blue-v1.png` (shows a red-to-blue result with a red tip, wrong for this video); `m6-baking-soda-box-v1.png` (the beaker pair already shows the solid); `p01-mg-ribbon-v1.png` (the magnesium line is a short equation; a plate would add a fourth bright object). One new plate (Assets). All plates small or medium, scaled uniformly only, never stretched. No human figures.",
+    "transitionPlan": "A grey c08a thumbnail sits top-left as ethanoic acid and propan-1-ol draw with their boiling point chips and the litmus and baking soda chips; the board clears to ethanoic acid in full structural form with its C=O and O-H ringed; the name builder writes butanoic acid from the traced chain; two acid molecules link by two dotted hydrogen bonds into a dimer beside a single-bonded alcohol pair, and the boiling point strip drops each to its mark; four skeletal acids climb the strip and a water lattice takes the small ones; the ProtonHop carries the O-H hydrogen to a water molecule and the equation writes with its equilibrium arrow and a lies-to-the-left tag; the ethanoate ion spreads its charge across both oxygens beside an alcohol's ion with its charge on one; the blue litmus strip plates cross-fade to red for the acid only; the reaction strip writes the neutralisation with its salt name; the baking soda and vinegar plates cross-fade from before to fizzing; the memory line writes with a small ranking strip; each attempt clears the board and its feedback underlines the card as the name builder or reaction strip runs and a crossed chip lands; the memory lines and next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Carboxylic acids: why are they acidic?\".",
+      "teachingReason": "Hook (same mass, both O–H, only one an acid): In the alcohol reactions video, ethanol was oxidised under reflux, all the way to ethanoic acid.",
+      "narrationCue": "vinegar / red / fizzes",
+      "motionPurpose": "On the spoken cues: A small grey thumbnail sits top-left: \"ethanol + [O] (reflux) → ethanoic acid\" (grey \"c08a\" chip). On \"vinegar\" `m6-vinegar-bottle-v1.png` appears small at the left with the tag \"vinegar: dilute ethanoic acid\", then shrinks and dims; the tag dims as the structures draw. Ethanoic acid (CH₃COOH) and propan-1-ol (CH₃CH₂CH₂OH) draw side by side as condensed formulas, each with a chip \"60 g/mol\" that pulses together, and",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Carboxylic acids: why are they acidic?\". A small grey thumbnail sits top-left: \"ethanol + [O] (reflux) → ethanoic acid\" (grey \"c08a\" chip). On \"vinegar\" `m6-vinegar-bottle-v1.png` appears small at the left with the tag \"vinegar: dilute ethanoic acid\", then shrinks and dims; the tag dims as the structures draw. Ethanoic acid (CH₃COOH) and propan-1-ol (CH₃CH₂CH₂OH) draw side by side as condensed formulas, each with a chip \"60 g/mol\" that pulses together, and each O–H ringed grey (tag \"both have O–H\"). As the boiling points are said, the \"both have O–H\" tag dims and two small chips write under them: \"118 °C\" and \"97 °C\". On \"red\" the \"60 g/mol\" chips dim to grey and a small coded tick chip \"litmus: red\" writes under the acid; on \"fizzes\" a second \"NaHCO₃: fizz\" writes under it. On \"neither\" two grey crossed chips write under the alcohol: \"litmus: no change\", \"NaHCO₃: no fizz\". As the question is asked the c08a thumbnail dims. Bright at the end: the heading and the two structures with their chip columns (the chips are one group). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "carboxyl-group",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "The carboxyl group: The acid's group is the carboxyl group, C O O H.",
+      "narrationCue": "carboxyl / same / one / polar",
+      "motionPurpose": "On the spoken cues: Task chip \"Acid or alcohol?\". Ethanoic acid redraws in full structural form, both C=O and O–H drawn explicitly (the site's Must Do); an ink ball-and-stick version sits small beneath it (engine3d port), showing the flat C–C(=O)–O region. On \"carboxyl\" the group is ringed red with the chip \"carboxyl group: –COOH\" and a grey sub-chip \"carbonyl + hydroxyl\". On \"same\" a small bracket joins the C=O and the O–H to the one",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Acid or alcohol?\". Ethanoic acid redraws in full structural form, both C=O and O–H drawn explicitly (the site's Must Do); an ink ball-and-stick version sits small beneath it (engine3d port), showing the flat C–C(=O)–O region. On \"carboxyl\" the group is ringed red with the chip \"carboxyl group: –COOH\" and a grey sub-chip \"carbonyl + hydroxyl\". On \"same\" a small bracket joins the C=O and the O–H to the one carbon (tag \"both on one carbon\"). On \"one\" the O–H hydrogen glows grey-white and a chip \"two O–H groups\" fades in and is crossed (caption \"one O–H; the C=O oxygen has no H\"). On \"polar\" the polar pull runs on both the C=O and the O–H: δ− on each O, δ+ on the C and on the H; a grey tag \"intramolecular: covalent bonds inside\" writes and dims. Bright at the end: the structure, the \"carboxyl group\" chip and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "naming-acids",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Naming carboxylic acids: To name one, find the longest chain that includes the carboxyl carbon.",
+      "narrationCue": "one / butanoic / two / two-methylpropanoic",
+      "motionPurpose": "On the spoken cues: Task chip \"Name it\". The name builder (c01) with slots \"branches\", \"stem\", \"ending\". Butanoic acid draws in full structural form (carboxyl ringed red). On \"longest chain\" the four carbons glow pale blue, including the carboxyl carbon. On \"oic acid\" the builder writes \"butane\", the final \"e\" is struck grey and \"oic acid\" writes in red in the ending slot. On \"one\" the locant counter pops \"1\" on the carboxyl carbon",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Name it\". The name builder (c01) with slots \"branches\", \"stem\", \"ending\". Butanoic acid draws in full structural form (carboxyl ringed red). On \"longest chain\" the four carbons glow pale blue, including the carboxyl carbon. On \"oic acid\" the builder writes \"butane\", the final \"e\" is struck grey and \"oic acid\" writes in red in the ending slot. On \"one\" the locant counter pops \"1\" on the carboxyl carbon (grey tag \"always C1: no number\"). On \"butanoic\" a small column writes beside it: \"HCOOH methanoic acid\", \"CH₃COOH ethanoic acid\", \"CH₃CH₂COOH propanoic acid\", \"CH₃CH₂CH₂COOH butanoic acid\", each lighting and dimming in turn. On \"two\" the ethanoic acid line brightens and its two carbons glow pale blue with a tag \"2 carbons, counting the COOH carbon\". On \"two-methylpropanoic\" butanoic acid leaves and (CH₃)₂CHCOOH draws (branch amber); locants pop \"1\" (carboxyl carbon), \"2\" (branch carbon), \"3\"; the builder writes \"2-methyl\" + \"propan\" + \"oic acid\". Bright at the end: the 2-methylpropanoic acid structure, its name and the \"always C1\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "dimers-boiling",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Two hydrogen bonds per pair: Now the boiling points.",
+      "narrationCue": "beside / gives / takes / two / dimer / higher",
+      "motionPurpose": "On the spoken cues: Task chip \"Forces\". A small grey chip \"c05: O–H gives and takes hydrogen bonds\" writes on \"give and take\" and dims on \"isn't the difference\". One ethanoic acid molecule (skeletal with the carboxyl in full, ringed red). On \"beside\" the C=O oxygen's lone pairs pulse next to the ringed O–H (tag \"second O: a second taker\"). On \"gives\" a short violet arrow leaves its O–H hydrogen (tag \"O–H gives\"). On \"takes\" a short",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Forces\". A small grey chip \"c05: O–H gives and takes hydrogen bonds\" writes on \"give and take\" and dims on \"isn't the difference\". One ethanoic acid molecule (skeletal with the carboxyl in full, ringed red). On \"beside\" the C=O oxygen's lone pairs pulse next to the ringed O–H (tag \"second O: a second taker\"). On \"gives\" a short violet arrow leaves its O–H hydrogen (tag \"O–H gives\"). On \"takes\" a short violet arrow points into the C=O oxygen's lone pairs (tag \"C=O takes\"). On \"two\" a second ethanoic acid molecule slides in, rotated to face it, and the dimer lock runs: two dotted violet hydrogen bonds draw at once, closing the ring. On \"dimer\" a bracket tag \"dimer: a pair held by 2 hydrogen bonds\" writes, and the \"second taker\", \"gives\" and \"takes\" tags dim. On \"dipole-dipole\" dotted teal lines flicker between the C=O of the pair and a neighbouring pair (tag \"+ dipole–dipole\"). On \"higher\" the force view shrinks left and the boiling point strip draws at the right with the dashed \"room temperature, 25 °C\" line; propan-1-ol drops to \"97 °C\" (tag \"hydrogen bonding\"), and ethanoic acid to \"118 °C\" (tag \"dimers + dipole–dipole\"); a grey chip \"both 60 g/mol\" sits between them. With the strip, a chip \"more O atoms, so a higher boiling point\" fades in and is crossed (caption \"it's the forces, not the count of O atoms\"). Bright at the end: the dimer, the two strip marks and the \"both 60 g/mol\" chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "series-solubility",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the strip stays at the right and its two earlier marks leave.",
+      "teachingReason": "Within the family: chain length and water: Within the family, the pattern is like the alcohols.",
+      "narrationCue": "sixty four / water / falls",
+      "motionPurpose": "On the spoken cues: Four skeletal acids (C1 to C4, carboxyl ringed red) drop to their marks as named: \"methanoic 101 °C\", \"ethanoic 118 °C\", \"propanoic 141 °C\", on \"sixty four\" \"butanoic 164 °C\"; pale-blue dispersion dots lengthen along each chain (tag \"longer chain: more dispersion\"). A small grey chip \"c05: Same family? Size wins.\" writes and dims. On \"water\" the strip leaves and the water lattice (c03) draws around a propanoic acid",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the strip stays at the right and its two earlier marks leave. Four skeletal acids (C1 to C4, carboxyl ringed red) drop to their marks as named: \"methanoic 101 °C\", \"ethanoic 118 °C\", \"propanoic 141 °C\", on \"sixty four\" \"butanoic 164 °C\"; pale-blue dispersion dots lengthen along each chain (tag \"longer chain: more dispersion\"). A small grey chip \"c05: Same family? Size wins.\" writes and dims. On \"water\" the strip leaves and the water lattice (c03) draws around a propanoic acid molecule: water molecules form dotted violet hydrogen bonds to both the O–H and the C=O oxygen (tag \"hydrogen bonds with water\"). On \"falls\" a short strip writes left to right, each label lighting and the previous dimming: \"butanoic: mixes\", \"pentanoic: partly\", \"hexanoic: barely\" (grey tag \"longer chain, less soluble\"). Bright at the end: the propanoic acid in the lattice, its tag and the last strip label. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "weak-acid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Acidic in water, but weak: So why is it an acid?",
+      "narrationCue": "proton / ethanoate / reversible / eighty / weak",
+      "motionPurpose": "On the spoken cues: Task chip \"Why acidic?\". Ethanoic acid (full structural) beside one water molecule. On \"proton\" `ProtonHop` (chem-m6-c01) carries the O–H hydrogen as a proton to the water's lone pair; the water becomes H₃O⁺ (tag \"hydronium, H₃O⁺\"). On \"ethanoate\" the acid redraws as CH₃COO⁻ with a grey-violet glow on its O–C–O (tag \"ethanoate ion: the acid after losing H⁺\"). The equation writes beneath in one line: \"CH₃COOH + H₂O ⇌",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Why acidic?\". Ethanoic acid (full structural) beside one water molecule. On \"proton\" `ProtonHop` (chem-m6-c01) carries the O–H hydrogen as a proton to the water's lone pair; the water becomes H₃O⁺ (tag \"hydronium, H₃O⁺\"). On \"ethanoate\" the acid redraws as CH₃COO⁻ with a grey-violet glow on its O–C–O (tag \"ethanoate ion: the acid after losing H⁺\"). The equation writes beneath in one line: \"CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺\", the ⇌ glowing on \"reversible\", with a small grey tag under it on \"lies well to the left\": \"lies to the left\". On \"taking protons back\" a faint reverse arrow under the ⇌ pulses once. On \"two point nine\" a small grey chip \"M6: 0.10 mol/L, pH 2.9\" writes. On \"eighty\" a small particle lens (M6 C05 style) shows 80 small icons in an 8 × 10 grid: 79 whole molecules and one ionised pair, counter \"about 1 in 80\" (icon count and counter match). On \"weak\" a chip \"carboxylic acids are strong acids\" fades in and is crossed (caption \"weak: only partly ionised\"); a grey tag \"weak ≠ dilute\" writes and dims. Bright at the end: the equation, the lens counter and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Cam lens zoom",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "shared-charge",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Why the acid lets go, and the alcohol doesn't: But why does the acid's O H let go, when an alcohol's barely does?",
+      "narrationCue": "spread / one / sixteen",
+      "motionPurpose": "On the spoken cues: Left: CH₃COO⁻ (full structural, the carboxyl region enlarged). A grey chip \"conjugate base: what's left after H⁺ goes\" writes (grey \"M6\" chip); both dim before \"spread\". On \"the C double bond O right beside\" the C=O beside the bare oxygen pulses. On \"spread\" the charge share runs: the grey-violet glow spreads from one oxygen across to both; the C=O and C–O redraw as two equal bonds (tag \"charge shared across both",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Left: CH₃COO⁻ (full structural, the carboxyl region enlarged). A grey chip \"conjugate base: what's left after H⁺ goes\" writes (grey \"M6\" chip); both dim before \"spread\". On \"the C double bond O right beside\" the C=O beside the bare oxygen pulses. On \"spread\" the charge share runs: the grey-violet glow spreads from one oxygen across to both; the C=O and C–O redraw as two equal bonds (tag \"charge shared across both O\", with a small grey tag under it, no narration: \"(also called delocalised, or resonance)\"). On \"about half on each\" each oxygen gains a small \"½−\". On \"takes protons back less readily\" a faint dashed proton approaches and drifts away again (tag \"less pull on H⁺\"). Right, on \"one\": the alkoxide from propan-1-ol, CH₃CH₂CH₂O⁻, draws with the glow concentrated on its single oxygen and a full \"−\" (tag \"no C=O: charge on one O\"); on \"snatch\" a dashed proton snaps back onto it (tag \"takes H⁺ straight back\"). On \"four point seven\" a pKa ladder draws at the far right, low numbers at the top (grey \"M6: lower pKa, stronger acid\"): \"ethanoic acid 4.74 (M6)\" near the top, on \"sixteen\" \"alcohol ≈ 16\" near the bottom, with a bracket \"about 11 units\" and a grey tag \"each unit ×10\". Bright at the end: the two ions with their tags and the pKa ladder. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "litmus",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Evidence: litmus: You can see the difference.",
+      "narrationCue": "red / blue",
+      "motionPurpose": "On the spoken cues: Task chip \"Test it\". Two copies of the new `m7-litmus-blue-strip-v1.png` sit side by side, same size, labelled \"ethanoic acid (aq)\" and \"propan-1-ol (aq)\". On \"red\" the left plate cross-fades to `m6-litmus-red-v1.png` (aligned pair) while a small coded drop lands on the strip; a tag \"more H₃O⁺: blue → red\". On \"blue\" a drop lands on the right strip and it stays blue (tag \"no change\"). Bright at the end: the two",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Task chip \"Test it\". Two copies of the new `m7-litmus-blue-strip-v1.png` sit side by side, same size, labelled \"ethanoic acid (aq)\" and \"propan-1-ol (aq)\". On \"red\" the left plate cross-fades to `m6-litmus-red-v1.png` (aligned pair) while a small coded drop lands on the strip; a tag \"more H₃O⁺: blue → red\". On \"blue\" a drop lands on the right strip and it stays blue (tag \"no change\"). Bright at the end: the two strips and their two tags. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "acid-reactions",
+      "visualDecision": "new",
+      "visualReference": "the board clears; the strips leave.",
+      "teachingReason": "It reacts like an acid: It also reacts like the acids from Module six.",
+      "narrationCue": "sodium ethanoate / oate / bubbles",
+      "motionPurpose": "On the spoken cues: A grey chip \"M6: acid + base, acid + metal\" writes and dims. The reaction strip writes one line at a time: \"CH₃COOH + NaOH → CH₃COONa + H₂O\", the salt boxed on \"sodium ethanoate\" (tag \"salt + water\"). On \"oate\" the name builder writes \"ethan\" + \"oic acid\", strikes \"oic acid\" grey and writes \"oate\" in red (tag \"acid → salt: -oic acid becomes -oate\"). On \"more slowly\" a small grey tag writes: \"fewer H₃O⁺ ions, so",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears; the strips leave. A grey chip \"M6: acid + base, acid + metal\" writes and dims. The reaction strip writes one line at a time: \"CH₃COOH + NaOH → CH₃COONa + H₂O\", the salt boxed on \"sodium ethanoate\" (tag \"salt + water\"). On \"oate\" the name builder writes \"ethan\" + \"oic acid\", strikes \"oic acid\" grey and writes \"oate\" in red (tag \"acid → salt: -oic acid becomes -oate\"). On \"more slowly\" a small grey tag writes: \"fewer H₃O⁺ ions, so slower\". On \"bubbles\" the first line dims and the second writes: \"2CH₃COOH + Mg → (CH₃COO)₂Mg + H₂\", with small coded bubbles rising from \"H₂\" (tag \"magnesium ethanoate + hydrogen gas\"). Bright at the end: the magnesium line, its tag and the \"-oate\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "hydrogen-carbonate-test",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "The test: sodium hydrogen carbonate: The most useful test is sodium hydrogen carbonate, baking soda.",
+      "narrationCue": "fizzes / nothing",
+      "motionPurpose": "On the spoken cues: `m6-clip-baking-soda-vinegar-before-v1.png` appears medium at the centre-left, labelled \"ethanoic acid + NaHCO₃(s)\"; a second copy at the right, same size, labelled \"propan-1-ol + NaHCO₃(s)\". On \"passes a proton\" a small `ProtonHop` runs between a CH₃COOH and an HCO₃⁻ drawn small above the left beaker; a grey chip \"pKa: ethanoic 4.7 < carbonic 6.4\" writes and dims. On \"fizzes\" the left plate cross-fades to",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. `m6-clip-baking-soda-vinegar-before-v1.png` appears medium at the centre-left, labelled \"ethanoic acid + NaHCO₃(s)\"; a second copy at the right, same size, labelled \"propan-1-ol + NaHCO₃(s)\". On \"passes a proton\" a small `ProtonHop` runs between a CH₃COOH and an HCO₃⁻ drawn small above the left beaker; a grey chip \"pKa: ethanoic 4.7 < carbonic 6.4\" writes and dims. On \"fizzes\" the left plate cross-fades to `m6-clip-baking-soda-vinegar-fizz-v1.png` while the fizz runs (tag \"CO₂ bubbles\"). On \"nothing\" the right beaker stays still (tag \"no fizz\"). On \"C O two\" the equation writes under the left beaker: \"CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂\", and \"+ CO₂\" is ringed (tag \"don't drop the CO₂\"). Bright at the end: the fizzing beaker, the equation and the \"no fizz\" tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: So, a carboxyl group is a C double bond O and an O H on one carbon, and the names end in oic acid.",
+      "narrationCue": "twice / grip",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"Similar size: carboxylic acid > alcohol > aldehyde, ketone > alkane.\" On \"twice\" a small dimer icon (two violet lines) sits beside it. Second handwritten line on \"grip\": \"Share the charge, loosen the grip.\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"–COOH: C=O + O–H on one carbon; '-oic acid', COOH carbon = C1\"; \"dimers: 2 hydrogen",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Similar size: carboxylic acid > alcohol > aldehyde, ketone > alkane.\" On \"twice\" a small dimer icon (two violet lines) sits beside it. Second handwritten line on \"grip\": \"Share the charge, loosen the grip.\" Under them, three small coded cards light one at a time on their cues, each dimming as the next lights: \"–COOH: C=O + O–H on one carbon; '-oic acid', COOH carbon = C1\"; \"dimers: 2 hydrogen bonds per pair + dipole–dipole\"; \"weak acid: RCOO⁻ charge shared by 2 O, so a weaker grip on H⁺; fizzes with NaHCO₃\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Compound X has the condensed formula",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"Compound X has the condensed structural formula CH₃CH(CH₃)CH₂COOH and boils at 177 °C. Hexan-1-ol, which has a similar molar mass, boils at 157 °C. (a) Give the IUPAC name of X. (b) Explain why X has the higher boiling point, with reference to the intermolecular forces present.\" Beside it the skeletal formula of X in plain ink (no colours, no locants, no ring on the carboxyl). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no name builder, no strip, no memory aid.",
+      "motionTools": [
+        "ScribbleCircle",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "four / three-methylbutanoic / dimers",
+      "motionPurpose": "On the spoken cues: On \"carboxyl carbon\" the COOH on the skeletal formula is ringed red and \"IUPAC name\" is underlined; locants pop \"1\" (carboxyl carbon), \"2\", \"3\" (branch carbon), \"4\"; on \"four\" the four-carbon chain glows pale blue (methyl amber). On \"three-methylbutanoic\" the builder writes \"3-methyl\" + \"butan\" + \"oic acid\" (the answer, bright). On \"leaves out\" a chip \"2-methylpropanoic acid\" fades in and is crossed (caption \"a",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"carboxyl carbon\" the COOH on the skeletal formula is ringed red and \"IUPAC name\" is underlined; locants pop \"1\" (carboxyl carbon), \"2\", \"3\" (branch carbon), \"4\"; on \"four\" the four-carbon chain glows pale blue (methyl amber). On \"three-methylbutanoic\" the builder writes \"3-methyl\" + \"butan\" + \"oic acid\" (the answer, bright). On \"leaves out\" a chip \"2-methylpropanoic acid\" fades in and is crossed (caption \"a different, smaller acid: count the COOH carbon, 4 in the chain\"). On \"similar molar masses\" \"similar molar mass\" is underlined and a small grey tag writes \"similar size: similar dispersion\"; on \"both hydrogen bond\" \"177 °C\" and \"157 °C\" are underlined; on \"dimers\" two small skeletal X molecules lock with two violet hydrogen bonds (tag \"dimer: 2 hydrogen bonds + dipole–dipole\"); \"intermolecular forces\" is underlined. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"Butanoic acid and butan-1-ol are both colourless liquids.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Butanoic acid and butan-one-ol are both",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"Butanoic acid and butan-1-ol are both colourless liquids. Describe a chemical test that would distinguish them, including a balanced equation for any reaction. Explain why only one of them reacts.\" No structures drawn. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "fizzes / shared / trap",
+      "motionPurpose": "On the spoken cues: On \"Add\" \"chemical test\" is underlined and small copies of the beaker pair appear at the left. On \"fizzes\" \"butanoic acid\" is underlined, the left beaker cross-fades to `m6-clip-baking-soda-vinegar-fizz-v1.png`, and \"balanced equation\" is underlined as the line writes: \"CH₃CH₂CH₂COOH(l) + NaHCO₃(s) → CH₃CH₂CH₂COONa(aq) + H₂O(l) + CO₂(g)\" (the answer, bright), with a small observation chip \"bubbles of colourless gas",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"Add\" \"chemical test\" is underlined and small copies of the beaker pair appear at the left. On \"fizzes\" \"butanoic acid\" is underlined, the left beaker cross-fades to `m6-clip-baking-soda-vinegar-fizz-v1.png`, and \"balanced equation\" is underlined as the line writes: \"CH₃CH₂CH₂COOH(l) + NaHCO₃(s) → CH₃CH₂CH₂COONa(aq) + H₂O(l) + CO₂(g)\" (the answer, bright), with a small observation chip \"bubbles of colourless gas (CO₂)\". On \"no change\" \"butan-1-ol\" is underlined; the right beaker stays still. On \"shared\" \"explain why only one of them reacts\" is underlined; CH₃CH₂CH₂COO⁻ draws small with the charge share glow and \"½−\" on each O (tag \"charge shared: weaker grip on H⁺\"), beside CH₃CH₂CH₂CH₂O⁻ with the glow on one O (tag \"charge on one O: tight grip\"). On \"stronger acid than carbonic acid\" a small grey chip writes beside the butanoate tag: \"pKa: butanoic ≈ 4.8 < carbonic 6.4\". On \"trap\" a chip \"Both contain an O–H group, so both react.\" fades in and is crossed (caption \"only the carboxylate can share its charge\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Handoff: So the carboxyl group explains the high boiling points, and why these acids give up a proton.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The two memory aid lines return small at the top. On \"Next\" ethanoic acid and ethanol draw small side by side with a grey \"+\" and an arrow to a \"?\" box, and `m7-ester-fruit-v1.png` appears small at the right; a chip \"Next: how do an acid and an alcohol make an ester?\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The two memory aid lines return small at the top. On \"Next\" ethanoic acid and ethanol draw small side by side with a grey \"+\" and an arrow to a \"?\" box, and `m7-ester-fruit-v1.png` appears small at the right; a chip \"Next: how do an acid and an alcohol make an ester?\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c09-learning-review.md",
+      "sha256": "3582c4754a5dad1d59357a5a003168f8fe5f67a4b7de2c648cc3289d70bec21d"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7c09-claude-science-check.md",
+      "sha256": "b4e25be3dc12baefb23827b6ce9ef28d1ad688268f3ef3d404d533bacac680f6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

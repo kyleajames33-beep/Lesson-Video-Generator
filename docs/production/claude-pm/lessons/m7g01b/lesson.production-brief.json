@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7g01b/lesson.json",
+    "lessonSha256": "1102b0a79969de9ef2dee4d1ea54e7f3b20e595007b7e0de8c40e4fbafd3f259"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b03: transmission routes; food and water as vehicles; the faecal-oral route. From p01: the epidemic curve (new cases by time of onset); one shared source gives a sharp cluster, person-to-person spread gives rising waves. From b10: environmental management (treating water, carrying sewage away) cuts the travel link for everyone and needs nobody to remember; isolation and quarantine; the incubation period; \"Isolate the infected, quarantine the exposed.\" From b12: Anopheles bites mostly at night; bed nets cut bites. From b13: incidence (new cases in a set time per number of people), prevalence (share of a population with the disease at one time), \"Incidence is the tap, prevalence is the tank\", rates (divide by the population, then multiply). From Year 11: percentages. Not assumed: the word \"denominator\" (spoken with its meaning, \"the number you divide by\"), Clostridium perfringens and Vibrio cholerae (screen only; spoken as \"this bacterium\" and \"cholera\"), \"people at risk\" (spoken with its meaning).",
+    "startsWith": "An unfamiliar outbreak table, survey or epidemic curve. The video opens: Outbreak questions hand you a table or a graph and ask what's going on.",
+    "stopsAfter": "calculating the percentage ill in each lunch group at Camp Wollemi with each group's own denominator (16 of 28, about 57 per cent; 0 of 14) and evaluating the person-to-person claim from the epidemic curve (two sharp clusters, each 8 to 18 hours after a meal containing the same leftover chicken, nothing between, and none ill among salad-roll eaters who shared cabins), so one food source eaten twice, not person-to-person spread; calculating malaria incidence per 1,000 per year with the whole population as denominator (12, then 2) and prevalence of infection with the people tested as denominator (2.5 per cent, then 0.3 per cent), and explaining that bed nets cut bites and so new infections (the tap), which lowers prevalence too, while same-day testing and treatment shortens infections (the tank), so prevalence falls further, and leaves fewer parasites for mosquitoes to pick up; reading a cholera epidemic curve against two interventions (cases kept rising after household quarantine and fell within a week of chlorination and toilet repair; they did not stop at once, because people infected just before chlorination could still fall ill up to 5 days later) and justifying environmental management over quarantine (cholera travels in contaminated water; chlorine and toilets break that link for everyone; quarantine misses the many infected people with mild or no symptoms who still pass the bacteria).",
+    "nextLesson": "how disease control ideas have changed (route entry bio-m7-b14)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-g01.md"
+  ],
+  "teaching": {
+    "task": "When an outbreak question gives you a table or a graph, how do you find the right denominator, calculate incidence and prevalence, and use the data to justify a control?",
+    "causalExplanation": "Why each group's own denominator gives a fair comparison (2b); why two sharp clusters at a fixed delay after meals point to a food, not people (2c); why the salad-roll group's zero matters (shared cabins, so contact without the food gave no illness; 2c); why bed nets lower incidence (fewer bites, fewer new infections) and so prevalence too (less flowing into the tank; 3c); why faster treatment lowers prevalence further (shorter infections) and incidence too (fewer parasites for mosquitoes; 3c); why cases did not stop at once after chlorination (people infected just before it fell ill up to 5 days later; 4b); why the camp control is fast cooling (this bacterium multiplies in meat that cools slowly; 2c); why environmental management beats quarantine for cholera (the water route, and carriers with no symptoms; 4c).",
+    "conversationalApproach": "Outbreak questions hand you a table or a graph and ask what is going on, and most of them turn on one habit: find the denominator, the people who could have caught it or who were tested, before comparing anything, and then link the change to a cause. Q1 (a school camp food poisoning outbreak) divides each lunch group's cases by the number who ate that lunch, reads two sharp clusters on the epidemic curve the night after each chicken meal, and so judges the claim against the sandwiches; Q2 (malaria in a province after bed nets and village health workers) calculates incidence with the whole population at risk and prevalence with only the people tested, then links each measure to the tap or the tank: fewer bites mean fewer new infections, and faster treatment shortens infections; Q3 (cholera after a flood) reads the weekly cases against the quarantine and chlorination arrows, finds the water and faeces route, and justifies chlorination and repaired toilets as breaking the travel link that quarantine does not. Each question ends with its spoken, crossed classic mistake (dividing by the whole camp, dividing positives by the whole province, quarantine works because it keeps infected people away), and the decision board gives the first move for each kind of question.",
+    "openingDecision": "Outbreak questions hand you a table or a graph and ask what's going on. Most of them turn on one habit. Before you compare anything, find the denominator, the number you divide by. Then link the numbers to a cause, and the cause to a control. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a). Nothing answer-bearing during the holds.",
+    "curriculumScope": "Syllabus (2017, `docs/production/programme/syllabus/bio-2017-y12.json`, p 55; practice and transfer only, first coverage stays with b10, b12 and b13): B7-IQ4-01: \"investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease\". Q2 (malaria in a South East Asian province: vector bites, treatment and duration interact) and Q3 (cholera: water, sanitation and people with no symptoms). B7-IQ4-05: \"interpret data relating to the incidence and prevalence of infectious disease in populations, for example:\" with the listed examples \"mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)\" and \"Malaria or Dengue Fever in South East Asia\". Q1 (outbreak percentages with the right denominator), Q2 (incidence and prevalence calculated, malaria in South East Asia), Q3 (an epidemic curve read against two interventions). B7-IQ4-04: \"investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic\". Q3 (justify chlorination and toilet repair over household quarantine)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in g03's layout: top-left the question card (stem, data and demands as an exam prints them, with the \"HSC-style question, written for HSCScience\" tag), readable through the whole question; the working fills the right two thirds; a type badge top-right (\"Outbreak table\", \"Incidence and prevalence\", \"Epidemic curve\"), hidden during each attempt. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used (no givens card). Earlier questions are cleared before the next card writes on. Q1's working is a coded lunch table with a `FractionBar` per group (filled share of a bar, the denominator written under the bar) and the coded epidemic curve (house bar chart, 4-hour onset blocks) with a meal timeline strip above it. Q2's working is a `DenominatorPair` (two stacked fraction lines, each with its denominator boxed and labelled \"everyone at risk\" or \"people tested\") and b13's `TankModel` (tap and tank). Q3's working is the coded `lineGraph` (weekly cases) with two dated intervention arrows and b10's link chain (leave, travel, enter). No people, hands or faces: students, health workers and villagers are words or plain coded dots only; the camp is the two food plates; the town is the water tank plate and a coded house outline. Coded elements are abstract only (tables, bars, axes, arrows, dots). Clutter rule (owner, 19 Oct): besides the question strip, at most about three bright text items in the working area at once; each working tag fades when the next cue lands. Plates are scaled proportionally, never stretched.",
+    "transitionPlan": "The heading writes on and a large coded fraction writes with its denominator ringed; each question opens on a fresh board with the type badge hidden while the worded card writes with its table, epidemic curve or graph, and the chicken pasta tray, Anopheles and bed net, or Vibrio cholerae plates small at its corner; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given in amber as it is used; the lunch table enlarges as each group's fraction writes, then the epidemic curve's two clusters ring against the meal times; the DenominatorPair builds the incidence and prevalence fractions and b13's TankModel shows the tap and the tank changing; the cholera graph's arrows light against the weekly bars and b10's link chain draws with the travel link broken; each classic mistake writes as a chip and takes a grey scribble cross; the check strip returns full size as the two-column decision board, row by row; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Find the denominator, then the cause\" writes on.",
+      "teachingReason": "Hook: Outbreak questions hand you a table or a graph and ask what's going on.",
+      "narrationCue": "denominator / cause / control",
+      "motionPurpose": "On the spoken cues: On \"denominator\" a large coded fraction writes in the working area, \"cases ÷ ?\", and the \"?\" box pulses amber (gloss \"denominator: the number you divide by\"). On \"cause\" and \"control\" two chips chain from the fraction: \"cause\" then \"control\" (arrows between them). On \"three HSC-style questions\"",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Find the denominator, then the cause\" writes on. On \"denominator\" a large coded fraction writes in the working area, \"cases ÷ ?\", and the \"?\" box pulses amber (gloss \"denominator: the number you divide by\"). On \"cause\" and \"control\" two chips chain from the fraction: \"cause\" then \"control\" (arrows between them). On \"three HSC-style questions\" three small numbered card thumbnails fan out (a lunch table, a fraction pair, a weekly graph, all without values) with one shared tag line \"HSC-style questions, written for HSCScience\". The new memory line \"Before you compare, find the denominator.\" writes small under the chain. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: Camp Wollemi, corrected) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. Sixty students arrive at Camp Wollemi",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: Camp Wollemi, corrected)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. New `m7-chicken-pasta-tray-v1.png` and new `m7-chicken-sandwiches-v1.png` sit small at the card's upper left, above the card text and never between the table and the curve. The card writes on: \"Sixty students arrived at Camp Wollemi on Monday morning. All 60 ate chicken pasta at about 6 pm on Monday. Between 2 am and 6 am on Tuesday, 18 students developed diarrhoea and stomach cramps. At about 12.30 pm on Tuesday, the 42 students who were well ate lunch. Some ate chicken sandwiches made with chicken left over from Monday's pasta; the others ate salad rolls. Students who ate salad rolls shared cabins and activities with students who became ill. Laboratory tests found large numbers of *Clostridium perfringens* in stool samples from ill students and in the leftover chicken. This bacterium usually causes diarrhoea and stomach cramps 6 to 24 hours after contaminated food is eaten.\" Table \"Tuesday lunch\": \"Food eaten | Number of students | Number who became ill (Wednesday 2 am to 6 am)\"; \"Chicken sandwiches | 28 | 16\"; \"Salad rolls | 14 | 0\". Coded epidemic curve below the table: x axis \"time of symptom onset (4-hour blocks)\", Monday 6 pm to Thursday 6 am; y axis \"new cases\", 0 to 20; one bar of 18 at Tuesday 2 am to 6 am, one bar of 16 at Wednesday 2 am to 6 am, all other blocks zero. A `MealTimeline` above the axis marks \"Mon dinner: chicken pasta\" and \"Tue lunch: chicken sandwiches or salad rolls\". Grey chip: \"based on the HSCScience Camp Wollemi activity, with corrected data\". Demands: \"(a) Calculate the percentage of students in each lunch group who became ill. (2 marks)\" \"(b) The camp director claims that the illness spread from person to person because 'it went through two groups'. Evaluate this claim using the data. (4 marks)\". Two answer boxes. Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "counter and bar fill",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-denominator",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip; type badge \"Outbreak table\".",
+      "teachingReason": "Each group out of itself: Start with the denominator.",
+      "narrationCue": "twenty-eight / fifty-seven per cent / fourteen / zero",
+      "motionPurpose": "On the spoken cues: The lunch table enlarges in the working area. On \"each lunch group\" \"in each lunch group\" underlines amber in the strip. On \"twenty-eight\" the \"28\" cell rings amber and a `FractionBar` draws: \"16 / 28\" with \"28\" boxed under the bar (label \"ate sandwiches\"); on \"fifty-seven per cent\" the bar fills",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip; type badge \"Outbreak table\". The lunch table enlarges in the working area. On \"each lunch group\" \"in each lunch group\" underlines amber in the strip. On \"twenty-eight\" the \"28\" cell rings amber and a `FractionBar` draws: \"16 / 28\" with \"28\" boxed under the bar (label \"ate sandwiches\"); on \"fifty-seven per cent\" the bar fills to 57 per cent teal and \"16 ÷ 28 × 100 ≈ 57%\" writes beside it. On \"fourteen\" a second `FractionBar` draws \"0 / 14\" (\"ate salad rolls\"); on \"zero\" it stays empty and \"0 ÷ 14 × 100 = 0%\" writes. On \"compare fairly\" both boxed denominators pulse once (tag \"each group out of itself\"). Answer box (a) builds line by line: \"chicken sandwiches: 16 ÷ 28 × 100 ≈ 57%\" on \"fifty-seven per cent\", then \"salad rolls: 0 ÷ 14 × 100 = 0%\" on \"zero\"; each working tag dims as its answer line lands. At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q1-claim",
+      "visualDecision": "new",
+      "visualReference": "the table dims; the epidemic curve enlarges.",
+      "teachingReason": "Read the curve, then the comparison: Now the claim.",
+      "narrationCue": "eight to eighteen hours / six to twenty-four hours / shared cabins / one food source / cooling cooked meat quickly",
+      "motionPurpose": "On the spoken cues: On \"two sharp clusters\" both bars outline amber and the empty blocks between them shade grey (tag \"nothing between\"). On \"eight to eighteen hours\" two brackets draw on the `MealTimeline`, Monday 6 pm to the first bar (\"8 to 12 h\") and Tuesday 12.30 pm to the second (\"about 14 to 18 h\"). On \"six to",
+      "motionRole": "explain",
+      "onScreenChange": "the table dims; the epidemic curve enlarges. On \"two sharp clusters\" both bars outline amber and the empty blocks between them shade grey (tag \"nothing between\"). On \"eight to eighteen hours\" two brackets draw on the `MealTimeline`, Monday 6 pm to the first bar (\"8 to 12 h\") and Tuesday 12.30 pm to the second (\"about 14 to 18 h\"). On \"six to twenty-four hours\" \"6 to 24 hours after contaminated food is eaten\" underlines amber in the strip and a pale band \"6 to 24 h\" lies under each bracket, covering it. On \"rising waves for days\" a ghost dashed curve sketches what person-to-person spread would look like (small, growing humps across several days; grey label \"person-to-person: rising waves (p01)\"), then fades before \"shared cabins\". On \"shared cabins\" that phrase underlines amber, the brackets and bands dim, and the empty salad-roll `FractionBar` returns small beside the curve (tag \"same cabins, 0 ill\"). On \"one food source\" a dashed arrow joins the pasta plate to the sandwich plate (tag \"same leftover chicken\"). On \"cooling cooked meat quickly\", after the bracket tags have dimmed, a small grey tag writes under the plates, \"control: cool cooked meat quickly; reheat thoroughly or discard leftovers\", with a second grey line \"leftovers cooled slowly overnight: more bacteria\" (B7-IQ4-04 link; not demanded by the card, so not in the answer box). Answer box (b) builds line by line on its cues, and each working tag dims as its answer line lands: \"Not supported.\" on \"isn't supported\"; \"Two sharp clusters, each 8 to 18 h after a meal containing the same chicken, within this bacterium's 6 to 24 h.\" on \"six to twenty-four hours\"; \"No cases between or after, unlike the rising waves of person-to-person spread.\" on \"rising waves for days\"; \"57% of sandwich eaters ill but 0% of salad-roll eaters, who shared cabins with ill students.\" on \"shared cabins\"; \"One food source eaten at two meals.\" on \"one food source\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"16 ÷ 60 ≈ 27%\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is dividing by sixty.",
+      "narrationCue": "the classic mistake / mixes in students who never ate / which food",
+      "motionPurpose": "On the spoken cues: On \"mixes in students who never ate\" the salad-roll bar and the 18 Monday cases flash grey inside a dashed \"60\" outline (tag \"wrong group\"). On \"which food\" the two correct bars pulse. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"16 ÷ 60 ≈ 27%\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"mixes in students who never ate\" the salad-roll bar and the 18 Monday cases flash grey inside a dashed \"60\" outline (tag \"wrong group\"). On \"which food\" the two correct bars pulse. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: malaria in a province) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. A province in South East Asia",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: malaria in a province)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. `m5x-anopheles-mosquito-v1.png` and `m7-bed-net-v1.png` sit small at the card's upper left. The card writes on: \"Malaria in Province K, South East Asia. From 2019, every household received insecticide-treated bed nets, and village health workers began testing people with fever and treating confirmed malaria on the same day.\" Table: \"Year | Population | New confirmed malaria cases that year | Blood survey: people tested | Blood survey: people carrying the malaria parasite\"; \"2018 | 400 000 | 4800 | 2000 | 50\"; \"2023 | 420 000 | 840 | 2000 | 6\". Grey chip: \"illustrative data\". Demands: \"(a) Calculate the incidence of malaria per 1000 people per year in 2018 and in 2023. (2 marks)\" \"(b) Calculate the prevalence of infection in each survey, as a percentage. (2 marks)\" \"(c) Explain how each of the two measures could have caused these changes. (3 marks)\". A small answer table and one lined box. **Countdown 10 seconds**; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-calc",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks; type badge \"Incidence and prevalence\".",
+      "teachingReason": "Two measures, two denominators: Incidence first.",
+      "narrationCue": "whole population / twelve / two / people tested / two and a half per cent / zero point three per cent",
+      "motionPurpose": "On the spoken cues: A `DenominatorPair` builds in the working area. On \"whole population\" \"Population\" in the table header underlines amber; the top fraction writes \"new cases ÷ population × 1000\" with \"population\" boxed (label \"everyone at risk\"). On \"twelve\" \"4800\" and \"400 000\" underline and \"4800 ÷ 400 000 × 1000",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks; type badge \"Incidence and prevalence\". A `DenominatorPair` builds in the working area. On \"whole population\" \"Population\" in the table header underlines amber; the top fraction writes \"new cases ÷ population × 1000\" with \"population\" boxed (label \"everyone at risk\"). On \"twelve\" \"4800\" and \"400 000\" underline and \"4800 ÷ 400 000 × 1000 = 12 per 1000\" writes; on \"two\" \"840\" and \"420 000\" underline and \"840 ÷ 420 000 × 1000 = 2 per 1000\" writes below it (teal; the 2018 line dims). On \"people tested\" \"people tested\" in the header underlines amber; the lower fraction writes \"carrying parasite ÷ people tested × 100\" with \"people tested\" boxed (label \"the sample\"). On \"two and a half per cent\" \"50 ÷ 2000 × 100 = 2.5%\"; on \"zero point three per cent\" \"6 ÷ 2000 × 100 = 0.3%\". The answer table builds cell by cell on the same cues: \"2018 incidence: 12 per 1000\" on \"twelve\", \"2023 incidence: 2 per 1000\" on \"two\", \"2018 prevalence: 2.5%\" on \"two and a half per cent\", \"2023 prevalence: 0.3%\" on \"zero point three per cent\". At most three bright text items. Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "table build"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q2-explain",
+      "visualDecision": "adjust",
+      "visualReference": "b13's `TankModel` draws in the working area (grey tag \"b13: incidence is the tap, prevalence is the tank\").",
+      "teachingReason": "The tap and the tank: Now link each measure to the tap or the tank.",
+      "narrationCue": "tap / tank falls too / tank / new cases",
+      "motionPurpose": "On the spoken cues: On \"Bed nets\" \"insecticide-treated bed nets\" underlines amber; the bed net plate moves beside the tap; on \"tap\" the inflow arrow thins (tag \"nets: fewer bites, fewer new infections\"; the incidence lines \"12 → 2\" pulse). On \"tank falls too\" the level drops slightly while the outflow stays the same",
+      "motionRole": "explain",
+      "onScreenChange": "b13's `TankModel` draws in the working area (grey tag \"b13: incidence is the tap, prevalence is the tank\"). On \"Bed nets\" \"insecticide-treated bed nets\" underlines amber; the bed net plate moves beside the tap; on \"tap\" the inflow arrow thins (tag \"nets: fewer bites, fewer new infections\"; the incidence lines \"12 → 2\" pulse). On \"tank falls too\" the level drops slightly while the outflow stays the same (tag \"less in, so less in the tank\"). On \"Same-day testing and treatment\" \"testing ... on the same day\" underlines amber and `m7-capsule-blister-blank-v1.png` sits small beside the outflow; on \"tank\" the outflow arrow widens and the level drops further (tag \"faster treatment: shorter infections\"; \"2.5% → 0.3%\" pulses; the nets tags dim). On \"new cases fall even more\" a curved arrow runs from the tank back to the tap with `m5x-anopheles-mosquito-v1.png` small on it (tag \"fewer parasites for mosquitoes\"). Answer box (c) builds line by line, each working tag dimming as its line lands: \"Bed nets reduce bites by night-biting *Anopheles*, so fewer new infections: incidence falls.\" on \"tap\"; \"Fewer new infections also means fewer people infected at any one time: prevalence falls.\" on \"tank falls too\"; \"Same-day test and treat shortens each infection, so prevalence falls further.\" on \"tank\"; \"Fewer infected people means fewer parasites passed to mosquitoes, which lowers incidence further.\" on \"new cases fall even more\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"50 ÷ 400 000 × 100 = 0.0125%\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is dividing the fifty positives by the whole province.",
+      "narrationCue": "the classic mistake / Only two thousand people were tested / two hundred times",
+      "motionPurpose": "On the spoken cues: On \"Only two thousand people were tested\" the boxed \"people tested\" denominator pulses and a small grey dot block shows 2,000 dots inside a much larger grey outline labelled \"400 000\" (tag \"the survey is the sample\"). On \"two hundred times\" a grey line writes \"2.5% ÷ 0.0125% = 200\". Hold about 1.5",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"50 ÷ 400 000 × 100 = 0.0125%\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"Only two thousand people were tested\" the boxed \"people tested\" denominator pulses and a small grey dot block shows 2,000 dots inside a much larger grey outline labelled \"400 000\" (tag \"the survey is the sample\"). On \"two hundred times\" a grey line writes \"2.5% ÷ 0.0125% = 200\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: cholera after a flood) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. After a flood in Town V,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: cholera after a flood)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. New `m7-vibrio-cholerae-v1.png` (grey tag \"drawn far larger than real\") and new `m7-village-water-tank-v1.png` sit small at the card's upper left. The card writes on: \"After a flood, Town V's piped water supply and toilets were damaged, and an outbreak of cholera began. Cholera is caused by the bacterium *Vibrio cholerae*. Symptoms begin 12 hours to 5 days after the bacteria are swallowed. Most infected people have mild or no symptoms, but they still pass the bacteria in their faeces for up to 10 days. In week 3, health workers quarantined the household of every person with cholera for 5 days (measure A). In week 6, all drinking water was chlorinated and the toilets were repaired (measure B).\" Coded `lineGraph`: x axis \"week\", 1 to 10; y axis \"new cholera cases\", 0 to 40; points 4, 9, 15, 24, 33, 38, 22, 9, 3, 1; `InterventionArrow`s at week 3 (\"A\") and week 6 (\"B\"). Grey chip: \"illustrative data\". Demands: \"(a) Using the graph, identify which measure was followed by a decrease in new cases. (1 mark)\" \"(b) Justify the use of environmental management rather than quarantine to control this outbreak. (3 marks)\". Two answer boxes. **Countdown 10 seconds**; the whole card, graph included, stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-graph",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks; type badge \"Epidemic curve\".",
+      "teachingReason": "Read it against the arrows: Read the graph against the two arrows.",
+      "narrationCue": "rising / fell / five days",
+      "motionPurpose": "On the spoken cues: The graph enlarges. On \"rising\" the arrow A pulses and the segment from week 3 to week 6 outlines amber with reading guides at 15 and 38 (tag \"after A: still rising\"). On \"fell\" arrow B pulses and the segment from week 6 to week 10 outlines teal with reading guides at 22 and 1 (tag \"after B:",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks; type badge \"Epidemic curve\". The graph enlarges. On \"rising\" the arrow A pulses and the segment from week 3 to week 6 outlines amber with reading guides at 15 and 38 (tag \"after A: still rising\"). On \"fell\" arrow B pulses and the segment from week 6 to week 10 outlines teal with reading guides at 22 and 1 (tag \"after B: falling within a week\"; the A tag dims). On \"five days\" \"12 hours to 5 days\" underlines amber in the strip and a short bracket spans week 6 to week 7 (tag \"infected before B, ill after B\"). Answer box (a) builds in two lines: on \"rising\", \"After measure A, cases rose from 15 to 38.\"; on \"fell\", \"Measure B (chlorination and toilet repair) was followed by a fall: 38 in week 6, 22 in week 7, 1 by week 10.\" Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q3-justify",
+      "visualDecision": "new",
+      "visualReference": "b10's link chain draws in the working area, \"leave → travel → enter\" (grey tag \"b10\").",
+      "teachingReason": "Find the route, then the link: Now justify.",
+      "narrationCue": "travel link / mild or no symptoms / water",
+      "motionPurpose": "On the spoken cues: On \"water or food contaminated with faeces\" a coded loop draws faeces → water → mouth on the chain's travel link, with the water tank plate on it. On \"Chlorine kills\" and \"repaired toilets\" \"chlorinated\" and \"toilets were repaired\" underline amber; on \"travel link\" the travel link breaks with a",
+      "motionRole": "explain",
+      "onScreenChange": "b10's link chain draws in the working area, \"leave → travel → enter\" (grey tag \"b10\"). On \"water or food contaminated with faeces\" a coded loop draws faeces → water → mouth on the chain's travel link, with the water tank plate on it. On \"Chlorine kills\" and \"repaired toilets\" \"chlorinated\" and \"toilets were repaired\" underline amber; on \"travel link\" the travel link breaks with a teal cut mark (tag \"B: breaks the travel link for everyone\"). On \"known cases\" \"quarantined the household of every person with cholera\" underlines; a coded house outline with a dashed fence sits on the \"leave\" link (grey tag \"A: holds known cases only\"; \"Isolate the infected, quarantine the exposed\" small, b10). On \"mild or no symptoms\" that phrase underlines amber; a field of plain grey dots outside the fence lights faintly (tag \"many carriers never found\"). On \"the water\" the loop around the unfenced dots pulses (tag \"the route stays open\"). Answer box (b) builds line by line, each working tag dimming as its line lands: \"Cholera travels mainly in water contaminated with faeces.\" on \"water or food contaminated with faeces\"; \"Chlorination kills the bacteria and repaired toilets keep faeces out of the water, so environmental management breaks the travel link for the whole town without needing cases to be found.\" on \"travel link\"; \"Quarantine holds only known cases' households,\" on \"known cases\"; \"but most infected people have mild or no symptoms and still pass the bacteria, so many are missed,\" on \"mild or no symptoms\"; \"and contaminated water keeps infecting others.\" on \"water\". Hold 1 second.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold 1 second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"quarantine works because it keeps infected people away from others\" writes on and, on \"the classic mistake\", takes a grey scribble cross.",
+      "teachingReason": "The classic mistake: The classic mistake is writing that quarantine works because it keeps infected people away from others.",
+      "narrationCue": "the classic mistake / mainly the water passing it on",
+      "motionPurpose": "On the spoken cues: On \"mainly the water passing it on\" the faeces-water-mouth loop pulses once and the cut mark on the travel link brightens. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"quarantine works because it keeps infected people away from others\" writes on and, on \"the classic mistake\", takes a grey scribble cross. On \"mainly the water passing it on\" the faeces-water-mouth loop pulses once and the cut mark on the travel link brightens. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a table of groups → divide by who could have caught it (Q1: 16 ÷ 28)\" with the lunch table thumbnail; \"incidence and prevalence → whole population, or people tested? tap or tank? (Q2)\" with the tank thumbnail; \"an epidemic curve and a control → route first, then the link it breaks; check the timing (Q3)\" with the graph thumbnail.",
+      "teachingReason": "Decision board: So here's how to start each type.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: The memory line \"Before you compare, find the denominator.\" writes small under the board. On \"Next\" a chip \"Next: how disease control ideas have changed\" slides in at the lower right with `m7-quarantine-sign-v1.png` small. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board becomes two columns, \"What you see\" and \"What you do first\", each row lighting on its cue with its question number badge: \"a table of groups → divide by who could have caught it (Q1: 16 ÷ 28)\" with the lunch table thumbnail; \"incidence and prevalence → whole population, or people tested? tap or tank? (Q2)\" with the tank thumbnail; \"an epidemic curve and a control → route first, then the link it breaks; check the timing (Q3)\" with the graph thumbnail. The memory line \"Before you compare, find the denominator.\" writes small under the board. On \"Next\" a chip \"Next: how disease control ideas have changed\" slides in at the lower right with `m7-quarantine-sign-v1.png` small. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop",
+        "lineage split",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g01b-learning-review.md",
+      "sha256": "d289bdb9cd3202c9e74db674ed97b8161d02b409b97510668580ebdea0d004ac"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g01b-claude-science-check.md",
+      "sha256": "20ac5ad59587b12a1378d595eb98f8dca65161c4b122b804b6e0d7ec13badeb2"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}
