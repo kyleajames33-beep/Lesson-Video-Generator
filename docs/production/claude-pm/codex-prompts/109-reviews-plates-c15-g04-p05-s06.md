@@ -77,3 +77,7 @@ Write provenance to `assets/brief109-provenance.json` and QA views to `assets/br
 Add every site error you confirm to `docs/production/claude-pm/site-corrections-m7.md`, in that file's format. Give the exact old text (verified in the read-only site file), the correct statement and a source. Skip any already logged.
 
 Hand in to `status.md` with a one-line summary per design: the blocker and should-fix counts.
+
+## 5. Extra: LDPE plate contrast
+
+Retake or adjust `public/assets/chemistry/m7-ldpe-squeeze-bottle-v1.png` (brief 108). It reads very pale on the cream lesson background, even at a larger size. Give it a slightly deeper translucent tint and firmer ink edges while keeping it recognisably LDPE (soft, translucent). Keep the same canvas, alpha box and filename, so the C14 scenes need no change. Show a before/after on cream in `assets/brief109-qa/`.
