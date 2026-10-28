@@ -73,3 +73,4 @@ Module 8 follows the first Module 7 waves. Every video goes through the full pip
 
 - **Chemistry first:** c01, c02, p02 and g01, then c03a, c03b and p03. These depend only on Module 5 solubility and Module 6 titration, so they can be designed while Module 7 is in production. The spectroscopy block (c09 to c12 and g03) follows once chem-m7-c01 and c02 are designed, because structure work needs naming and isomers.
 - **Biology in parallel:** the homeostasis block, b01 to b05, then g03 and p02. Its prerequisites are Year 11 only, so it can start at any time.
+- 28 Oct: c01 prerequisites add chem-m6-c12 and chem-m5-c15, next is c02 (p01 cut); c02 prerequisites add chem-m5-c15 and chem-m8-c01.
