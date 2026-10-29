@@ -1,10 +1,16 @@
 # M7 P05: Preparing an ester in the school laboratory: the class got about 60%, so is that a failed practical? (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
 Narration 5,844 characters, 18 scenes, about 9.5 minutes (570 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- codex-check-112 found no errors; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m7p05c-learning-review.md` (learning L1 to L4) and `../checks/m7p05c-claude-science-check.md` (science S1 to S7)):
 - Accuracy (learning L1 blocker, science S1 blocker, merged): "Losses push every yield low, so no single yield is accurate" is removed. Scene 9 now says: "Is sixty per cent accurate? If the ester was dry and pure, yes: that's the yield they really got. It's low because ester was lost, not mismeasured, and repeats can't bring it back. Water or leftover acid would do the opposite, making the mass too high." The accuracy card reads "dry, pure ester weighed correctly → correct isolated yield" with the chip "repeats show variation; they can't recover lost ester". Key note 5 is rewritten to match.

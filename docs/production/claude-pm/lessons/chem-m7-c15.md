@@ -1,10 +1,16 @@
 # M7 C15: How does condensation build a polymer? Two-ended monomers, ester and amide links, drawing repeat units and getting the monomers back, and how the links set the properties of nylon and PET (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
 Narration 5,998 characters, 16 scenes, about 9.1 minutes (543 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- codex-check-112 found no errors; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m7c15-learning-review.md` (learning L1 to L4) and `../checks/m7c15-claude-science-check.md` (science S1 to S4)):
 - Repeat-unit rule scoped (learning L1, science S1, merged): scene 7 now says "Condensation loses a small molecule at every link, here water. For PET and nylon, made from these pairs, the repeat unit is one of each monomer minus two waters." The comparison row reads "by-product: none | a small molecule at every link (water here)" and "one of each monomer − 2 H₂O (PET, nylon)". Scene 10 and the notes memory line read "Addition: nothing lost. Condensation: a small molecule lost." "Add the water back" stays for the acid-route recovery examples. Key notes 3 and 4 carry the same scope. The memory aid check and the Boundary note are updated.

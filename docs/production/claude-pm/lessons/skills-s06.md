@@ -1,10 +1,16 @@
 # S06: Graphs and data questions: read it, draw it, describe it, and know when to extend it (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
 Narration 5,782 characters (Revision 2; Revision 1 was 5,675; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 9.3 minutes (558 s) including holds, three countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- codex-check-112 found no errors; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/skills06-learning-review.md` (learning L1 to L4) and `../checks/skills06-claude-science-check.md` (science S1 to S5)):
 - Graph choice (learning L1, science S1, merged): scene 9 now says "Use a line graph for a continuous relationship or a change over time, like these years and percentages. If the independent variable is a set of categories, like different antibiotics, use a column graph ...". The tag reads "continuous or over time → line", and key note 6 carries both halves. The metadata description needs no change (it names no graph-choice rule).

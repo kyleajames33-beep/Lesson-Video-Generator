@@ -1,10 +1,16 @@
 # S08: Extended responses: plan it in a minute, one idea per paragraph, use the stimulus, finish with the judgement (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
 Narration 5,914 characters (Revision 2; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 9.5 minutes (568 s) including holds, three countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- codex-check-112 found no errors; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/skills08-learning-review.md` (learning L1 to L5) and `../checks/skills08-claude-science-check.md` (science S1 to S5)):
 - Coverage, not immunity (learning L1 blocker, science S1 blocker, merged): the card's threshold sentence now reads "Health authorities aim for at least 95% two-dose coverage to stop measles spreading through a population." and the effectiveness sentence reads "Two doses are about 97% effective at preventing measles." The model answer, plan, scenes 5, 7, 8 and 9 and the decision board speak of the 95% coverage target, never of a measured 95% immune. P2 now reads "When coverage is at or near the 95% target, most people are immune, so an infected person rarely meets someone susceptible ...". Scene 7: "when coverage is near the ninety five per cent target, most people are immune, so the virus rarely finds a new host". Scene 8: "below the ninety five per cent target".

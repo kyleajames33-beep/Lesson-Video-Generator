@@ -1,10 +1,17 @@
 # B8-01: How does negative feedback keep conditions in range? Homeostasis, the five-part loop, negative against positive feedback (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
-Narration 5,510 characters (Revision 2; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 8.8 minutes (530 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+Narration 5,506 characters (Revision 3 correction; Revision 2 stated 5,510; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 8.8 minutes (530 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- Error 1 (stated total): corrected to 5,506 characters (per-scene sum of the fifteen "> " lines, bold markers removed; joining with spaces gives 5,520, a different convention). Narration unchanged; timing about 530 s unchanged.
+- Error 2 (scene 10d cue): the dip marker now writes On "small fall", the phrase spoken.
+- No narration changes. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8b01-learning-review.md` (learning L1, L2) and `../checks/m8b01-claude-science-check.md` (science S1, S2)):
 - Scene 5 (learning L1, root decision): the causal "switches itself off ... so it wobbles" is replaced. New wording: "their signals weaken and the extra shivering fades. The response settles to what's needed, not to zero: in a cold room, some extra heat production carries on, because the cold hasn't gone away. And small delays can let temperature drift a little either side of the set point." The visual keeps a persistent low "heat made" bar and a faint steady tremor (it no longer stops), and the graph keeps its small overshoot with the tag "small drift either side is normal". Stops-after line, key note 3 ("opposes the deviation ... small fluctuations can occur around the set point") and the YouTube blurb ("why the extra response eases as conditions recover") follow.
@@ -114,7 +121,7 @@ Visual: the board clears. The card writes on, tagged "HSC-style question, writte
 ### 10d. feedback, item two
 > The regulated variable is core body temperature, not air temperature. Its small fall after the move is the stimulus. The hypothalamus responded with shivering and narrower skin arterioles, which made more heat and lost less, so core temperature recovered. Naming air temperature as the regulated variable is the classic mistake: the air stayed at five degrees.
 
-Visual: the card stays. On "core body temperature" the right axis label and the teal line take an amber underline and highlight. On "fell a little" a small marker writes at the dip "36.6 °C, stimulus". On "hypothalamus ... recovered" a mini loop ring (thumbnail) appears beside the graph and lights slot by slot; the rising part of the teal line brightens. The section from minute 32 to 70 stays at normal brightness, with its thin band, but is not narrated (the second oscillation account is cut, learning review 2). On "classic mistake" a chip "regulated variable: air temperature" writes and takes a scribble cross; the grey air line pulses at 5. Settle one second.
+Visual: the card stays. On "core body temperature" the right axis label and the teal line take an amber underline and highlight. On "small fall" a small marker writes at the dip "36.6 °C, stimulus". On "hypothalamus ... recovered" a mini loop ring (thumbnail) appears beside the graph and lights slot by slot; the rising part of the teal line brightens. The section from minute 32 to 70 stays at normal brightness, with its thin band, but is not narrated (the second oscillation account is cut, learning review 2). On "classic mistake" a chip "regulated variable: air temperature" writes and takes a scribble cross; the grey air line pulses at 5. Settle one second.
 
 ### 11. decision rule and handoff
 > So for any loop, name the variable inside the body, trace the five parts in order, and check that the response opposes the change. Next, we'll zoom in on temperature: how endotherms detect heat, and the main ways they lose or keep it.
@@ -188,7 +195,7 @@ Revision 2 count (30 Oct) with the build parser rules ("> " lines joined with sp
 | 11. decision rule and handoff | 234 |
 | 12. key notes (quiet, about 60 seconds) | 75 |
 
-Revision 2 total: **5,510 characters**, 15 scene files (inside 5,500 to 6,800, near the floor; Revision 1 was 5,571). Speech about 414 s; with 30 s of padding (15 scenes), about 11 s of stated holds and settles, 20 s of countdowns and 55 s more of the quiet notes hold: **about 530 s (8.8 minutes)**, inside the 9.5 minute cap with about 40 s spare. Scene 4 (644) and scene 5 (581) are the longest; check both at playback speed. Do not cut below 5,500 without replacing the content.
+Revision 3 corrected total: **5,506 characters** (per-scene sum of the fifteen "> " lines, bold markers removed; Revision 2 stated 5,510; joining the lines with spaces gives 5,520, a different convention), 15 scene files (inside 5,500 to 6,800, near the floor; Revision 1 was 5,571). Speech about 414 s; with 30 s of padding (15 scenes), about 11 s of stated holds and settles, 20 s of countdowns and 55 s more of the quiet notes hold: **about 530 s (8.8 minutes)**, inside the 9.5 minute cap with about 40 s spare. Scene 4 (644) and scene 5 (581) are the longest; check both at playback speed. Do not cut below 5,500 without replacing the content.
 
 ## Assets
 

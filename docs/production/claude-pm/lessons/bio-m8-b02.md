@@ -1,10 +1,16 @@
 # B8-02: How do endotherms regulate body temperature? Neural and hormonal signals, heat-loss effectors, three types of adaptation and the limits of feedback (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
 Narration 5,763 characters (Revision 2; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 9.25 minutes (555 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- codex-check-112 found no errors; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8b02-learning-review.md` (learning L1 to L4) and `../checks/m8b02-claude-science-check.md` (science S1 to S5)). Every repair is shorter or paid for inside its own scene; the total falls by 108 characters:
 - Scene 10 and key note 5 (learning L1 blocker, science S2 blocker, merged): the two sentences beginning "Once the air" are replaced by "Hotter air added heat instead of carrying it away. With little cooling from their surroundings, the flying foxes relied heavily on evaporation, which uses water they were already losing." The inward arrows are labelled "convection"; the unsourced "skin about 37 °C" and "air 42 °C" labels become one grey label "air hotter than skin". Key note 5: "Feedback has limits: hot air can add heat. Evaporation becomes crucial when dry heat loss is limited; it needs water." The "Stops after" line, Site alignment, Added beyond the site (b), Numbers to verify and teaching checks match. The site's "only route" rule is noted as a root-pending site-correction candidate (the site-corrections file is not edited here).

@@ -1,10 +1,16 @@
 # M8 C01: How can a precipitation titration measure chloride? Silver nitrate, a chromate endpoint and the Mohr calculation (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
 Narration 5,541 characters (Revision 2), 17 scenes, about 8.5 minutes (510 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- codex-check-112 found no errors; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8c01-learning-review.md` (learning L1, L2) and `../checks/m8c01-claude-science-check.md` (no findings; one metadata note)):
 - Scene 4 ladder (learning L1, root decision): the two thresholds now show where they come from. Small grouped givens sit beside their bars ("[Cl⁻] at the start ≈ 0.074 mol/L", "[CrO₄²⁻] ≈ 0.005 mol/L", tagged as one illustrative sample, not a fixed threshold). On "silver" the working "[Ag⁺] = Ksp ÷ [Cl⁻] = 1.77 × 10⁻¹⁰ ÷ 0.074" writes alone; it dims before "[Ag⁺] = √(Ksp ÷ [CrO₄²⁻]) = √(1.12 × 10⁻¹² ÷ 0.005)" writes. The narration gains the two concentrations (about 69 characters). The Ksp values are the ones in author note (a) (AgCl on the NESA data sheet; Ag₂CrO₄ from the CRC, shown on screen as a given).

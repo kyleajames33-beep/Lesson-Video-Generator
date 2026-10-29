@@ -1,10 +1,16 @@
 # G03 (Chemistry, Module 7): Organic synthesis pathways: HSC-style practice (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
 Narration 5,748 characters, 17 scenes, about 9.2 minutes (554 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- codex-check-112 found no errors; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m7g03-learning-review.md` (learning L1 to L3) and `../checks/m7g03-claude-science-check.md` (science S1 to S4)):
 - Hydration conditions (science S1, root decision): the liquid-alkene hydration arrows (Q1 step one, Q3's student chart, crossed chips, key note 3, model answers) now read "H₂O, dilute acid catalyst, heat, ⇌". Scene 2c says "water with a dilute acid catalyst, heated" instead of "steam with a phosphoric acid catalyst, heated under pressure". Ethene's steam, H₃PO₄, high-pressure recipe stays with ethene in c04a and c13. Author note (a) is ruled.

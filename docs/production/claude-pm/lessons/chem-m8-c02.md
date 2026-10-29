@@ -1,10 +1,16 @@
 # M8 C02: How does a precipitate reveal ion concentration? Choosing the solid, drying to constant mass and the gravimetric calculation (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (30 Oct): Codex error check 112 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
 
 Narration 5,918 characters (Revision 2), 17 scenes, about 9.0 minutes (538 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- Error 1 (YouTube dotpoint): the description's quoted dotpoint is now verbatim, a colon followed by two bullets ("gravimetric analysis", "precipitation titrations"); the explanation of this video's focus stays outside the quote.
+- No narration changes. Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8c02-learning-review.md` (learning L1 to L4) and `../checks/m8c02-claude-science-check.md` (science S1 to S4)):
 - One tare basis (learning L1 and science S1 blockers, merged, root decision): the review's first option, which keeps every number. Scene 6 now says "The balance is zeroed with the empty watch glass on it, so each reading is just the paper and the solid." On that cue a coded readout "0.000 g" writes at the balance position with the tag "tare: balance zeroed with the empty, dry watch glass" before the balance plate lights (the delivered `m8-balance-watch-glass-v1.png` shows the loaded watch glass, so the empty state is labelled, not painted). Every reading carries the caption "watch glass tared: paper + solid". Scene 5 says "a filter paper you've already dried and weighed" (tag "dried and weighed first, on the tared watch glass"), and scene 7's givens read "watch glass tared: filter paper 0.905 g; paper + dry BaSO₄ 1.255 g (constant mass)". Key note 3 says "weigh on the tared watch glass". All values unchanged.
@@ -250,7 +256,9 @@ A clear wastewater sample turns cloudy white when barium ions are added, and the
 
 Chemistry 2017: Year 12 Module 8, Applying Chemical Ideas.
 Syllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 8):
-"conduct investigations and/or process data involving: gravimetric analysis; precipitation titrations"
+"conduct investigations and/or process data involving:
+- gravimetric analysis
+- precipitation titrations"
 This video covers gravimetric analysis; precipitation titrations are in the previous video.
 Official 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017
 
