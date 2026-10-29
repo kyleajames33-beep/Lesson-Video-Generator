@@ -233,7 +233,7 @@
           ],
           "entryKnowledge": "Recall chem-m8-p01, chem-m8-p02 only as needed for this question.",
           "next": [
-            "chem-m8-c03"
+            "chem-m8-c03a"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
@@ -241,8 +241,8 @@
           "mainLearnerQuestion": "Precipitation titration and gravimetry practice"
         },
         {
-          "id": "chem-m8-c03",
-          "title": "How can tests identify ions in water?",
+          "id": "chem-m8-c03a",
+          "title": "How do flame, precipitate and complex tests identify a cation?",
           "type": "core",
           "siteLessons": [
             "L03"
@@ -254,11 +254,11 @@
             "chem-m5-c13",
             "chem-m5-c15"
           ],
-          "estimatedMinutes": 8.5,
-          "start": "Use flame colour and precipitate evidence.",
-          "stop": "Plan confirmatory tests for a given unknown.",
+          "estimatedMinutes": 9.5,
+          "start": "Use flame colour and precipitate evidence for a cation.",
+          "stop": "A cation test flowchart.",
           "playlistOrder": 6,
-          "planAnchor": "C03",
+          "planAnchor": "C03a",
           "sourceCandidates": [
             {
               "id": "Chemistry-Y12-M8-L03",
@@ -268,12 +268,50 @@
           ],
           "entryKnowledge": "Recall chem-m5-c13, chem-m5-c15 only as needed for this question.",
           "next": [
+            "chem-m8-c03b"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How do flame, precipitate and complex tests identify a cation?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c03a.md"
+        },
+        {
+          "id": "chem-m8-c03b",
+          "title": "How do we identify the anion?",
+          "type": "core",
+          "siteLessons": [
+            "L03"
+          ],
+          "syllabusActions": [
+            "C8-IQ1-02"
+          ],
+          "prerequisites": [
+            "chem-m5-c13",
+            "chem-m5-c15",
+            "chem-m8-c03a"
+          ],
+          "estimatedMinutes": 8.6,
+          "start": "Use precipitate and gas evidence for an anion.",
+          "stop": "Plan confirmatory tests for a given unknown.",
+          "playlistOrder": 6.5,
+          "planAnchor": "C03b",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L03",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson03.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m5-c13, chem-m5-c15 and chem-m8-c03a only as needed for this question.",
+          "next": [
             "chem-m8-p03"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How can tests identify ions in water?"
+          "mainLearnerQuestion": "How do we identify the anion?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c03b.md"
         },
         {
           "id": "chem-m8-p03",
@@ -286,7 +324,7 @@
             "C8-IQ1-02"
           ],
           "prerequisites": [
-            "chem-m8-c03"
+            "chem-m8-c03b"
           ],
           "estimatedMinutes": 7.5,
           "start": "Set up controls and safe small-scale tests.",
@@ -300,7 +338,7 @@
               "scope": "Use only the part named by this route start and stop."
             }
           ],
-          "entryKnowledge": "Recall chem-m8-c03 only as needed for this question.",
+          "entryKnowledge": "Recall chem-m8-c03b only as needed for this question.",
           "next": [
             "chem-m8-c04"
           ],
@@ -322,7 +360,7 @@
           ],
           "prerequisites": [
             "chem-m5-p02",
-            "chem-m8-c03"
+            "chem-m8-c03b"
           ],
           "estimatedMinutes": 8.5,
           "start": "Compare colourimetry, UV-Vis and AAS signals.",
@@ -341,7 +379,7 @@
               "scope": "Use only the part named by this route start and stop."
             }
           ],
-          "entryKnowledge": "Recall chem-m5-p02, chem-m8-c03 only as needed for this question.",
+          "entryKnowledge": "Recall chem-m5-p02, chem-m8-c03b only as needed for this question.",
           "next": [
             "chem-m8-p04"
           ],
@@ -1053,12 +1091,45 @@
           ],
           "entryKnowledge": "Recall bio-m5-b02b, bio-m8-b01 only as needed for this question.",
           "next": [
-            "bio-m8-p02"
+            "bio-m8-g03"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
           "mainLearnerQuestion": "How do plants keep enough water?"
+        },
+        {
+          "id": "bio-m8-g03",
+          "title": "Feedback loop practice",
+          "type": "companion",
+          "siteLessons": [
+            "L01",
+            "L03"
+          ],
+          "syllabusActions": [
+            "B8-IQ1-02"
+          ],
+          "prerequisites": [
+            "bio-m8-b01",
+            "bio-m8-b02",
+            "bio-m8-b03",
+            "bio-m8-b04",
+            "bio-m8-b05"
+          ],
+          "estimatedMinutes": 9.1,
+          "start": "Build a negative feedback loop from a stimulus.",
+          "stop": "Interpret a glucose graph and reject a positive feedback distractor.",
+          "playlistOrder": 6.5,
+          "planAnchor": "G03",
+          "entryKnowledge": "Recall bio-m8-b01 to bio-m8-b05 only as needed for this question.",
+          "next": [
+            "bio-m8-p02"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Question companion (added by route review change 7)",
+          "mainLearnerQuestion": "Can you build and interpret a feedback loop?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-g03.md"
         },
         {
           "id": "bio-m8-p02",
