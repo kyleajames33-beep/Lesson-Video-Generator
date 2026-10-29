@@ -237,7 +237,10 @@
               "order": 1,
               "label": "C4A",
               "title": "Gas pressure and volume: does higher pressure always shift equilibrium?",
-              "syllabusActions": ["C-disturbances", "C-collision-observations"],
+              "syllabusActions": [
+                "C-disturbances",
+                "C-collision-observations"
+              ],
               "status": "candidate-preparation-independent-review-pending",
               "preparationPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
               "start": "Compress an established gas equilibrium at fixed temperature; explain the immediate pressure change before the reaction response.",
@@ -248,7 +251,9 @@
               "order": 2,
               "label": "C4B",
               "title": "Catalysts: faster reaction, same equilibrium composition",
-              "syllabusActions": ["C-activation"],
+              "syllabusActions": [
+                "C-activation"
+              ],
               "status": "candidate-preparation-independent-review-pending",
               "preparationPath": "docs/production/drafts/module5-next-preparation-2026-10-10/chemistry-c4.md",
               "start": "Refresh activation energy, then compare catalyst effects at fixed temperature and the same reacting amounts.",
@@ -1169,12 +1174,13 @@
               "syllabusActions": [
                 "B-plants"
               ],
-              "status": "silent-design-pilot-owner-review-pending",
+              "status": "merged-into-bio-m5-b02b",
               "preparationPath": "docs/production/plant-design-reset-2026-10-11/teaching-proposal.json",
               "entryKnowledge": "Explain briefly how roots and leaves support growth.",
               "start": "A stem from the parent strawberry plant extends along the ground.",
               "stop": "The new plant forms roots and leaves and can grow separately once established. Explain this asexual route after its mechanism. No genetics or mitosis stages.",
-              "next": "Bread mould spore reproduction."
+              "next": "Bread mould spore reproduction.",
+              "mergeNote": "30 Oct 2026 (Claude, owner-agreed route cleanup): public bio-m5-b02b already teaches vegetative propagation with the strawberry runner (scenes 1 and 8). A separate runner video would double-teach, so no separate delivery part is produced."
             },
             {
               "order": 3,
