@@ -367,3 +367,9 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 
 - Owner passed the 15 previews in chat ("yeh they are passed"): chem M7 P02, C05 (v2), C06, C07, P03, G02, C08a (v2), C08b (v2); bio M7 B08, B09, G03, B10, B11, B12; skills S07 (v2). Render queue `out/explainer/render-queue-28oct.log`.
 - Owner: to save Claude tokens, use Codex where possible. From now on Codex writes the learning review and science check for new designs; Claude designs and resolves.
+
+## 28 October 2026 (night): render policy change and pass of 9
+
+- The owner passed the C09 to C14, B13, P01 and G01 previews. They are queued to render (log: `out/explainer/render-queue-29oct.log`).
+- New standing policy from the owner: Claude renders built lessons without waiting for an owner preview pass. The owner reviews on YouTube and flags any redos. Every other check still runs: the reviews, the Codex error check, the recording gate, Claude's preview inspection, render verification, cumulative captions and the upload-brief checks.
+- Unchanged: B14, B15 and bio G02 stay held for the cultural review.
