@@ -1,8 +1,20 @@
 # S06: Graphs and data questions: read it, draw it, describe it, and know when to extend it (design)
 
-Status: Revision 1 (28 Oct): needs learning review and science check (Codex).
+Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
-Narration 5,675 characters (Revision 1; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 9.2 minutes (549 s) including holds, three countdowns and the notes hold. Nothing recorded; human listening pending.
+Earlier status, Revision 1 (28 Oct): needs learning review and science check (Codex).
+
+Narration 5,782 characters (Revision 2; Revision 1 was 5,675; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 9.3 minutes (558 s) including holds, three countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 2 changes (30 Oct; resolving `../checks/skills06-learning-review.md` (learning L1 to L4) and `../checks/skills06-claude-science-check.md` (science S1 to S5)):
+- Graph choice (learning L1, science S1, merged): scene 9 now says "Use a line graph for a continuous relationship or a change over time, like these years and percentages. If the independent variable is a set of categories, like different antibiotics, use a column graph ...". The tag reads "continuous or over time → line", and key note 6 carries both halves. The metadata description needs no change (it names no graph-choice rule).
+- Cause of the trend (learning L2 and science S3, merged): scene 6 now says "give a plausible scientific reason: antibiotic use can select resistant bacteria, so they could make up more of the samples. The graph alone doesn't show that cause." The grey line and key note 3 match. Drill 1's Decisions text now says "as the marble chips are used up" (learning L2, science S2).
+- Question card (learning L3): scene 3 now says "Pause here to answer all four parts." The card and grid take the full frame at full size during the response opportunity, the card is not shrunk until scene 4, and from scene 4 on each scene keeps only its own demand with the table or the graph it needs. The exact size is still to be judged in the voiced preview.
+- Glossary quote (science S4): scene 8's grey tag and the research table now read "Infer from what is known." and the Codex brief item 5 records the correction.
+- Best fit (science S5, optional, fixed): scene 5 says "scattered about evenly on both sides, as they are here", tied to this example.
+- Notes (learning L4, optional, fixed in part): note 2 is shortened and note 3 carries the explain wording; TAILS stays on the notes screen with the memory aid and students are told they may pause. The hold stays one quiet screen (about 50 s) rather than two, to keep the series format.
+- Also: decision-rule opening is now "So, for a graph question." (no "every").
+- Narration recounted by script: 5,782 characters (Revision 1: 5,675), about 558 s (speech about 435 s, padding 32 s, holds 16 s, three countdowns 30 s, notes hold 45 s more). Feedback 1 about 28 s and feedback 2 about 24 s, unchanged.
 
 Working title: "Graphs and data questions: read it, draw it, describe it | HSC exam skills". Series: HSC exam skills (`docs/production/programme/exam-skills-series-plan.md`, entry 6: "Describe a trend with numbers. Read values with units. Draw a graph well (axes, scale, line of best fit). Interpolate against extrapolate."), shared by Chemistry and Biology. **Id:** `skills-s06`. Lesson key `skills06`. Placement: in the "HSC exam skills" playlist (order 6); in Biology after bio-m7-b13 and before bio-m7-g01, as `../../module7-route-review-claude.md` item 11 sets ("s06 (graphs and data) goes in Biology before g01 (outbreak data)"), and as bio-m7-g01's design already assumes; in Chemistry the placement is left to the Module 8 review (item 11: "Module 8 takes the remaining placements"). Every question is written for HSCScience in the HSC style and is never presented, said or implied to be an official NESA question. Every question card carries the tag "HSC-style question, written for HSCScience".
 
@@ -44,7 +56,7 @@ Owner rules applied: no people, hands or faces (graphs, grid paper and cards are
   - **Line of best fit (least squares, author check):** x = years since 2010 (0, 2, 4, 7, 10), y = 4, 7, 10, 15, 19; slope 1.52 per year, intercept 4.0; at 2016 about 13.1%; at 2040 about 49.6%. The video draws a straight line close to this fit and says "about thirteen" (accepted 12 to 14 in the illustrative guide) and "about fifty" (the news report's figure; the line reaches it). Numbers to verify.
   - **Illustrative marks (HSCScience guide, labelled on screen):** (a) 3: even scale with years at their real spacing and suitable range; axes labelled with quantity and unit (and a title); points plotted correctly with a straight line of best fit. (b) 2: direction (increasing steadily) and data with units (4% in 2010 to 19% in 2020; about 1.5 percentage points per year). (c) 1: about 13% (12 to 14%), read from the line with read-off lines shown. (d) 2: judgement (unreliable or weak) and reason (extrapolation twenty years beyond the data assumes the same rate continues; changes in prescribing, new drugs or infection control could change the trend).
 - **Drills (two; feedback about 25 to 30 s each):** the narration says "Do the one in your subject, or both".
-  - **Drill 1, Chemistry, identify and explain, 3 marks:** card: "A student measured the volume of carbon dioxide produced when marble chips reacted with excess hydrochloric acid. Her results and her graph are shown." Table: "Time (s) | 0 | 30 | 60 | 120 | 240"; "Volume of CO₂ (mL) | 0 | 22 | 38 | 55 | 62". The student's graph (coded): the five time values at equal spacing along the x-axis (0, 30, 60, 120, 240 equally spaced), the y-axis labelled "volume" with no unit, the points joined dot to dot with straight segments; a title is present. Demand: "Identify THREE problems with the student's graph and explain how to correct each. (3 marks)". Content: none beyond the card (rate slowing as the acid is used up is a grey tag only). Answer: uneven time scale (equal steps, for example every 30 s, with each time at its real position); y-axis without a unit (label "volume of CO₂ (mL)"); dot to dot (a smooth curve of best fit, through the origin, levelling off). Crossed habit: "a line of best fit must be a straight line" (best fit can be a smooth curve when the data curve).
+  - **Drill 1, Chemistry, identify and explain, 3 marks:** card: "A student measured the volume of carbon dioxide produced when marble chips reacted with excess hydrochloric acid. Her results and her graph are shown." Table: "Time (s) | 0 | 30 | 60 | 120 | 240"; "Volume of CO₂ (mL) | 0 | 22 | 38 | 55 | 62". The student's graph (coded): the five time values at equal spacing along the x-axis (0, 30, 60, 120, 240 equally spaced), the y-axis labelled "volume" with no unit, the points joined dot to dot with straight segments; a title is present. Demand: "Identify THREE problems with the student's graph and explain how to correct each. (3 marks)". Content: none beyond the card (rate slowing as the marble chips are used up is a grey tag only). Answer: uneven time scale (equal steps, for example every 30 s, with each time at its real position); y-axis without a unit (label "volume of CO₂ (mL)"); dot to dot (a smooth curve of best fit, through the origin, levelling off). Crossed habit: "a line of best fit must be a straight line" (best fit can be a smooth curve when the data curve).
   - **Drill 2, Biology, describe, 2 marks:** card: "A student soaked paper discs (6 mm in diameter) in five concentrations of an antiseptic and placed them on agar spread with a harmless bacterium. After incubation she measured the diameter of the clear zone around each disc (the zone of inhibition), including the disc. The table shows her mean results." Table: "Antiseptic concentration (%) | 0 | 1 | 2 | 3 | 6"; "Mean zone diameter (mm) | 6 | 9 | 12 | 15 | 16". Demand: "Describe the relationship between antiseptic concentration and zone diameter. (2 marks)". Answer: from 0% to 3% the zone diameter increased steadily as concentration increased, by about 3 mm per 1% (6 mm to 15 mm); from 3% to 6% it increased only slightly (15 mm to 16 mm), so it levelled off. Crossed habit: "As concentration increases, the zone increases." (no values; misses the change in pattern).
   - **Why these two:** drill 1 tests drawing mechanics (three of the pack's listed faults: uneven scale, missing unit, dot to dot) on a curved data set, which also crosses the "best fit must be straight" habit; drill 2 tests description, the 9/12 fault, on a pattern that changes, so "direction, data, change" earns both marks. Each uses a context that viewers of its subject have met (Year 11 rates for Chemistry, p05 for Biology) but the card carries everything.
 - **Memory aids (author-written or common; none in the Module 5 to 8 banks, which hold content aids):**
@@ -94,19 +106,19 @@ Visual:
 - Bright at the end: "28 mL", the read-off line and the crossed chip. Hold about 1 second.
 
 ### 3. question-card (countdown, 10 seconds)
-> Here's an HSC-style Biology question. A hospital laboratory tested E. coli samples for resistance to antibiotic K, and the table shows the percentage resistant in five years from twenty ten to twenty twenty. There are four parts: plot it, describe the trend, estimate one value, and assess a prediction. If you take Chemistry, the skills are identical. Pause here to answer.
+> Here's an HSC-style Biology question. A hospital laboratory tested E. coli samples for resistance to antibiotic K, and the table shows the percentage resistant in five years from twenty ten to twenty twenty. There are four parts: plot it, describe the trend, estimate one value, and assess a prediction. If you take Chemistry, the skills are identical. Pause here to answer all four parts.
 
 Visual:
 - `QuestionCard` writes on. Badge "Biology". Tag "HSC-style question, written for HSCScience". Grey tag "example data".
 - Card text, table and the four demands exactly as Decisions (the worked question), with mark values. `m7-bacterium-rod-coccus-v1.png` small at the card's right, positioned so only the rod shows (tag "*E. coli*, a gut bacterium").
-- Below: the blank `GridPaper` (20 by 15) and an `AnswerBox` with slots "(b)", "(c)", "(d)"; counter "0 / 8".
+- Below: the blank `GridPaper` (20 by 15) and an `AnswerBox` with slots "(b)", "(c)", "(d)"; counter "0 / 8". During the response opportunity the card (stem, table, four demands) and the grid take the full frame at full size, so the data and the grid are both readable; the card is not shrunk until scene 4. The ten seconds are only the prompt: the spoken "Pause here to answer all four parts." tells students to pause the video for as long as eight marks need.
 - `RoutineStrip` mini at the far left dims. `DrillCountdown` 10 seconds with "Pause here to answer." The full card stays on screen. Nothing answer-bearing (no axes, no scale).
 
 ### 4. part a: the scale
 > Part a. Put the independent variable, the year, along the **bottom**, and the percentage up the side. Each axis needs **even** steps, every gridline worth the same. Here's the trap: the years jump by two, then by three. Space the five years evenly, and you squash the later gaps and **bend** the trend. Place each year at its real value, and choose a scale that fills most of the grid, because a bigger plot lets you read values more precisely.
 
 Visual:
-- The card shrinks to about 0.7 with its table readable; demands (b) to (d) dim to grey and stay legible. Highlighter on "Plot" and "line graph"; ring on "(3 marks)".
+- The card shrinks to a strip that keeps the table and only the current demand, (a), readable; demands (b) to (d) leave the strip until their scenes (each later scene keeps just its own demand and the table or the graph it needs). Highlighter on "Plot" and "line graph"; ring on "(3 marks)".
 - On "bottom" the grid gains axes: x "Year" (violet), y "Samples resistant (%)" (amber), each with a pen link to the table row it comes from.
 - On "even" tick marks write along the x-axis every year (2010 to 2020, one year per 2 squares) and up the y-axis every 2% (0 to 30%, one square each), with a grey tag "every gridline worth the same".
 - On "the years jump" the table's year cells underline in turn with small grey gap chips between them: "+2", "+2", "+3", "+3".
@@ -115,7 +127,7 @@ Visual:
 - Bright at the end: the two axis labels and the green real-positions axis. Hold about 1 second.
 
 ### 5. part a: plot and best fit
-> Label each axis with what's measured and its **unit**, and add a title. Plot each point as a small, clear cross. Then draw a line of **best fit**: one smooth line that follows the trend, with the points scattered evenly on both sides. Don't join the dots. Real data has **scatter**, and dot to dot treats every wobble as real. Title, axes, intervals, labels, scale: **TAILS**.
+> Label each axis with what's measured and its **unit**, and add a title. Plot each point as a small, clear cross. Then draw a line of **best fit**: one smooth line that follows the trend, with the points scattered about evenly on both sides, as they are here. Don't join the dots. Real data has **scatter**, and dot to dot treats every wobble as real. Title, axes, intervals, labels, scale: **TAILS**.
 
 Visual:
 - `TailsRail` builds in the side column, rows lighting on cue. On "unit" the axis labels gain units in amber underline ("Year", "Samples resistant (%)"), rail row L lights; a title writes above the grid, "Percentage of *E. coli* samples resistant to antibiotic K, 2010 to 2020", rail row T lights.
@@ -127,7 +139,7 @@ Visual:
 - Bright at the end: the line of best fit, the rail's initials and the ladder. Hold about 1 second.
 
 ### 6. part b: describe the trend
-> Part b: describe the trend. Say the **direction**, then prove it with data. Resistance rose steadily, from four per cent in twenty ten to nineteen per cent in twenty twenty, about one and a half percentage points a **year**. If the pattern **changes** somewhere, say where. Here it doesn't, so steadily is the right word. Direction, data, change. And if the question says **explain**, add the cause: each time the antibiotic is used, it can select resistant bacteria, so they make up more of the samples.
+> Part b: describe the trend. Say the **direction**, then prove it with data. Resistance rose steadily, from four per cent in twenty ten to nineteen per cent in twenty twenty, about one and a half percentage points a **year**. If the pattern **changes** somewhere, say where. Here it doesn't, so steadily is the right word. Direction, data, change. And if the question says **explain**, give a plausible scientific reason: antibiotic use can select resistant bacteria, so they could make up more of the samples. The graph alone doesn't show that cause.
 
 Visual:
 - Demands (a), (c) and (d) dim to grey; highlighter on "Describe" (grey chip "describe: say what it looks like, with detail (s01)") and "trend".
@@ -136,7 +148,7 @@ Visual:
 - On "four percent" and "nineteen percent" the two end points ring teal and the table cells underline; row (b) adds "from 4% in 2010 to 19% in 2020"; on "year" a small rise-over-run triangle draws on the line (10 years across, 15 up) with "about 1.5 percentage points per year" and a grey gloss "percentage points: the difference between two percentages" (tick "5 / 8").
 - On "changes" rail row "Change" lights; a grey tag "no change in pattern here: the points stay near one straight line".
 - A chip "it went up" fades in and takes a grey cross (caption "no data, no marks for detail").
-- On "explain" a grey side chip writes: "describe = what the data show; explain = add why (s02)", and a single grey line under row (b): "explain: antibiotic use selects resistant bacteria (the antibiotics video)". It dims as the scene ends.
+- On "explain" a grey side chip writes: "describe = what the data show; explain = add why (s02)", and a single grey line under row (b): "explain: a plausible reason, e.g. antibiotic use can select resistant bacteria; the graph alone doesn't show the cause (the antibiotics video)". It dims as the scene ends.
 - Bright at the end: row (b), the triangle and the crossed chip. Hold about 1 second.
 
 ### 6b. points or percent
@@ -165,7 +177,7 @@ Visual:
 
 Visual:
 - Demands (a) to (c) dim; underline on "2040", "about 50%" and "Assess" (grey chip "assess: a judgement with evidence (s04)").
-- The main graph slides left and dims; a small inset graph draws beside it at its own even scale (x 2010 to 2040, 1 square = 2 years; y 0 to 60%, 1 square = 4%), with the five data crosses and the line of best fit (tag "same data, wider even scale"), so no axis is drawn unevenly. On "extrapolation" `ExtendZone` draws on the inset: the line continues dashed grey from 2020 into a pale shaded region "no data here"; gloss "extrapolation: extending the line beyond the data"; grey tag "NESA glossary, extrapolate: 'Infer beyond what is known.'".
+- The main graph slides left and dims; a small inset graph draws beside it at its own even scale (x 2010 to 2040, 1 square = 2 years; y 0 to 60%, 1 square = 4%), with the five data crosses and the line of best fit (tag "same data, wider even scale"), so no axis is drawn unevenly. On "extrapolation" `ExtendZone` draws on the inset: the line continues dashed grey from 2020 into a pale shaded region "no data here"; gloss "extrapolation: extending the line beyond the data"; grey tag "NESA glossary, extrapolate: 'Infer from what is known.'".
 - On "about fifty percent" a grey read-off from 2040 to the dashed line and across: "about 50%".
 - On "change" the three dashed possible paths fan out from 2020 (keeps rising, levels off, falls), each with a small grey label ("new drugs", "less prescribing", "better infection control" placed by the paths that bend), tag "the line assumes the top one".
 - Answer row (d) writes: "Weak: 2040 is 20 years beyond the data; it assumes the same rate continues, but new drugs, prescribing or infection control could change the trend" (ticks "7 / 8", "8 / 8"). Grey label "HSCScience marking guide (illustrative)".
@@ -173,10 +185,10 @@ Visual:
 - Bright at the end: the aid, the fan and row (d). Hold about 1 second.
 
 ### 9. line or column?
-> One more drawing choice. Use a line graph when both variables are **numbers**, like years and percentages. If the independent variable is a set of **categories**, like different antibiotics, use a column graph, with gaps between the columns, because there's nothing in between two antibiotics. In one recent Chemistry guideline, a column graph earned full marks only with an accurate scale, axis labels and correct column heights.
+> One more drawing choice. Use a line graph for a continuous relationship or a change over time, like these years and **percentages**. If the independent variable is a set of **categories**, like different antibiotics, use a column graph, with gaps between the columns, because there's nothing in between two antibiotics. In one recent Chemistry guideline, a column graph earned full marks only with an accurate scale, axis labels and correct column heights.
 
 Visual:
-- The board clears to `ColumnMini`: on "numbers" the small line graph from part (a) (tag "numbers on both axes → line"); on "categories" a small column graph with three columns "antibiotic A", "B", "C" and gaps between them, y "mean zone diameter (mm)" (tag "categories → columns, with gaps"). Grey tag "example values".
+- The board clears to `ColumnMini`: on "percentages" the small line graph from part (a) (tag "continuous or over time → line"); on "categories" a small column graph with three columns "antibiotic A", "B", "C" and gaps between them, y "mean zone diameter (mm)" (tag "categories → columns, with gaps"). Grey tag "example values".
 - On "accurate scale" the column graph's y ticks, axis labels and the tops of the columns each take a small amber tick in turn. `GreyTag`: "a NESA Chemistry marking guideline, 2025 (3 marks)".
 - Bright at the end: the two type tags and the three ticks. Hold about 1 second.
 
@@ -219,7 +231,7 @@ Visual:
 - Hold about 1 second.
 
 ### 14. decision-rule
-> So, for every graph question. Read the axes and units first. Draw with TAILS, even steps, and a line or curve of best fit, not dot to dot. Describe with direction, data and any **change**, and say whether you mean percentage points or per cent. Inside the data, read it. Outside, doubt it, and state your assumption. **Next**: practical questions, and fixes that actually fix.
+> So, for a graph question. Read the axes and units first. Draw with TAILS, even steps, and a line or curve of best fit, not dot to dot. Describe with direction, data and any **change**, and say whether you mean percentage points or per cent. Inside the data, read it. Outside, doubt it, and state your assumption. **Next**: practical questions, and fixes that actually fix.
 
 Visual:
 - A decision board writes in four rows, each lighting on its words with a one-line example from this video: "Read: axes, units, one small square (28 mL, not 28)"; "Draw: TAILS + best fit (years at real positions)"; "Describe: direction, data, change (4% to 19%, about 1.5 points a year)"; "Extend: inside, read it; outside, doubt it (2040: assumes the same rate)".
@@ -230,11 +242,11 @@ Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Read the axes first: quantity, unit, value of one small square. Write every value with its unit.
-2. Drawing (TAILS): Title; Axes (independent variable on the horizontal axis); Intervals even (uneven data go at their real positions); Labels with units; Scale fills most of the grid. Plot small crosses. Draw a line or smooth curve of best fit, not dot to dot.
-3. Describe a trend: direction, data (values with units, a rate if useful), and any change in the pattern. Explain adds the cause. Say "percentage points" for a difference between percentages (4% to 19% = 15 points, a 375% increase).
+2. Drawing (TAILS): Title, Axes (independent variable along the bottom), Intervals even (uneven years at their real positions), Labels with units, Scale. Small crosses; a line or curve of best fit, not dot to dot.
+3. Describe a trend: direction, data (values with units, a rate if useful), and any change. Explain adds a plausible reason (the graph alone doesn't prove the cause). Say "percentage points" for a difference between percentages (4% to 19% = 15 points, a 375% increase).
 4. Interpolate: read between data points from the line of best fit, with read-off lines shown.
 5. Extrapolate: beyond the data, the value assumes the trend continues. If asked, extend it and state that assumption; judge how far beyond the data it goes.
-6. Line graph: numbers on both axes. Column graph: categories, with gaps between columns.
+6. Line graph: a continuous relationship or change over time (like years and percentages). Column graph: separate categories (like different antibiotics), with gaps between columns.
 
 Memory aid (large, on the notes screen): *TAILS, then best fit.* Second line: *Inside the data, read it. Outside, doubt it.*
 
@@ -270,7 +282,7 @@ All questions are written for HSCScience. None is copied from or adapted from a 
 | Chemistry 2025 Q26(a): column graph scale, labels, heights (3 marks) (`what-markers-reward.md`) | 9 |
 | Biology 2024 Q29(b): extrapolating the best-fit line is examined (`what-markers-reward.md`) | 8 (the "if asked, extend it" condition) |
 | Units where the criteria state them (Chemistry 2022 Q29(a)) (`what-markers-reward.md`) | 2 ("can cost the mark") |
-| NESA glossary: "Extrapolate: Infer beyond what is known." "Interpret: Work out meaning." (`glossary.md`) | 7, 8 (glosses written in plain words; the glossary wording is in a grey tag in scene 8: "NESA glossary, extrapolate: 'Infer beyond what is known.'") |
+| NESA glossary: "Extrapolate: Infer from what is known." "Interpret: Work out meaning." (`glossary.md`) | 7, 8 (glosses written in plain words; the glossary wording is in a grey tag in scene 8: "NESA glossary, extrapolate: 'Infer from what is known.'") |
 
 ## Teaching checks
 
@@ -307,36 +319,36 @@ Computed by script (28 Oct); science check and Codex to re-check.
 
 Count method: build parser rules (scene headings `### N.`, narration lines starting `> `, bold markers stripped), at 13.3 characters per second, counted by script on 28 Oct.
 
-**5,675 characters, 16 scene files** (key-notes line included; inside 5,500 to 6,800).
+**5,782 characters, 16 scene files** (Revision 2; Revision 1 was 5,675) (key-notes line included; inside 5,500 to 6,800).
 
 | Scene | Characters |
 | --- | --- |
 | 1 hook | 369 |
 | 2 read-axes | 326 |
-| 3 question-card | 374 |
+| 3 question-card | 389 |
 | 4 part-a-scale | 432 |
-| 5 part-a-plot | 360 |
-| 6 part-b-trend | 488 |
+| 5 part-a-plot | 384 |
+| 6 part-b-trend | 534 |
 | 6b part-b-points | 322 |
 | 7 part-c-interpolate | 412 |
 | 8 part-d-extrapolate | 529 |
-| 9 line-or-column | 422 |
+| 9 line-or-column | 448 |
 | 10 drill-1 | 252 |
 | 11 feedback-1 | 374 |
 | 12 drill-2 | 250 |
-| 13 feedback-2 | 320 |
-| 14 decision-rule | 367 |
+| 13 feedback-2 | 322 |
+| 14 decision-rule | 364 |
 | 15 key-notes | 75 |
 
 Feedback speech: scene 11 about 28 s, scene 13 about 24 s, inside the owner's 15 to 30 s band. The worked walkthrough (scenes 4 to 8, about 190 s) is the lesson's teaching, not end-of-video feedback.
 
 Runtime:
-- Speech: about 426 s.
+- Speech: about 435 s.
 - Padding: about 32 s (16 scenes at 2 s).
 - Stated holds: about 16 s.
 - Countdowns: 30 s (three).
 - The quiet notes hold beyond its speech: about 45 s.
-- Total: **about 549 s (9.2 minutes)**, under the 9.5-minute ceiling, with about 20 s of room if the voiced preview needs a slower pace in part (a).
+- Total: **about 558 s (9.3 minutes)**, under the 9.5-minute ceiling, with about 12 s of room if the voiced preview needs a slower pace in part (a).
 
 Reserve cuts if the voiced preview runs long: scene 3 "If you take Chemistry, the skills are identical." (about 3 s; the YouTube chapters carry it); scene 9's guideline sentence (about 8 s; keep the tag silent); scene 1's "which is why they're easy to lose marks on" (about 2 s). Do not cut below 5,500 characters without root's call.
 
@@ -370,7 +382,7 @@ Error-only. Start after the learning review and science check pass. Report to `d
 2. Re-check the research figures against the pack: 11/12 (Biology 6/6, Chemistry 5/6); 9/12 (Biology 6/6, Chemistry 3/6); the Biology 2024 Q29(a) and (b) and Chemistry 2025 Q26(a) criteria as paraphrased in Decisions, against the guideline PDFs.
 3. Confirm the four Working Scientifically content lines and the two outcome statements word for word against the 2017 Biology and Chemistry syllabuses (and the ACSCH codes for Chemistry).
 4. Re-check "Numbers to verify", including the least-squares fit and the drill 1 levelling tag wording ("excess hydrochloric acid").
-5. Confirm the NESA glossary entry for "extrapolate" ("Infer beyond what is known.") from `../research/exam-skills/glossary.md` against the NESA source.
+5. Confirm the NESA glossary entry for "extrapolate" ("Infer from what is known.", corrected in Revision 2 from the pack's "beyond" after the science check; the lesson's own explanation of extrapolation is separate) against the NESA source.
 6. Confirm no em dash in this file and that the YouTube title is 100 characters or fewer.
 
 ## YouTube metadata (draft)

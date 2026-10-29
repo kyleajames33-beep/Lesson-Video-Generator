@@ -1,0 +1,53 @@
+# m7p05c science check: ester yield practical
+
+Checked independently by Codex on 28 October 2026. I did not author the design. Scope: all narration quotations, Visual paragraphs, attempts and answers, notes, author verification lists, memory aids and draft metadata in Revision 1. Formulae, atom balances and arithmetic were recalculated; official 2017 DOCX syllabuses were downloaded and extracted to ../assets/brief110-qa/. No narration, render or publication. Findings are unresolved; an empty Resolution section is reserved for Claude. 
+
+## Dotpoint check
+
+The school-ester investigation and organic handling/disposal quotations match the official Chemistry 2017 DOCX. [Official syllabus](https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx). Narration 5,844 characters, 18 scenes, zero em dashes, matches all per-scene figures.
+
+## Findings
+
+1. **Blocker. Scene 9 and note 5, accuracy.** A real loss during isolation lowers the isolated yield; it does not necessarily make the measured isolated yield inaccurate. Correctly weighing dry pure ester and calculating 59.9% is a correct isolated-yield result. Replace "no single yield is accurate" with a distinction between equilibrium conversion, isolated yield and contaminated mass. Repeats cannot reverse a physical loss, but can measure the repeatability of isolated yield. [OpenStax quantitative chemical analysis](https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis).
+2. **Blocker. Scenes 7 and 9, numerical equilibrium ceilings and equal-loss conclusion.** K = 4 borrowed from ethanol is not a verified concentration quotient for the reacting pentan-1-ol system at reflux. The actual quaternary system has non-ideal activities and can have phase equilibria; the temperature and composition matter. An illustrative ideal calculation is not a measured 85% ceiling. Nor do fixed time and identical work-up prove equilibrium was reached or equal losses occurred. Remove the 67/85 ladders as claims about the real experiment, or obtain an appropriate measured/modelled equilibrium basis and verify reaction progress and recovery. Keep the qualitative prediction of higher conversion with excess acid. [Original experimental phase/reaction equilibrium study](https://www.sciencedirect.com/science/article/pii/S0378381298002702), [PC-SAFT study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9965742/). The latter full text was blocked by a browser challenge; the experimental study's accessible abstract establishes that actual phase and reaction equilibria were measured, not that K equals 4.
+3. **Should fix. Scene 2.** At exact 1:1 neither reactant uniquely "runs out first"; equilibrium also leaves both present. Both set the same stoichiometric maximum. At 2:1 alcohol is limiting for the theoretical yield. Use that language consistently in the notes and mole-block motion.
+4. **Should fix. Quantities and ratio labels.** With density 1.049 g/mL and M = 60.05, 3.0 mL acid is 0.0524 mol and 6.0 mL is 0.1048 mol, against 0.05003 mol alcohol. These are about 1.05:1 and 2.10:1, not exact 1:1 and 2:1. For a quantitative comparison specify measured moles or about 2.86 and 5.73 mL, with suitable measuring precision. If the rounded volumes are kept, label the ratios approximate and do not calculate exact-ratio ceilings from them.
+5. **Should fix. Pentan-1-ol hazard row.** The row omits serious eye damage H318. Carl Roth 1YHL and Scharlab pentanol list it alongside H226/H315/H332/H335. Add eye damage to harm and retain eye protection; name the SDS used. Pentyl acetate H226 is supported, with some suppliers also H412. [Carl Roth SDS](https://www.carlroth.com/medias/SDB-1YHL-IE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyOTI1MTB8YXBwbGljYXRpb24vcGRmfGFHRTBMMmcxTmk4NU1qQXhPREk1T0RBMk1URXdMMU5FUWw4eFdVaE1YMGxGWDBWT0xuQmtaZ3xkNDQyMmUzOWRkYTY5MTA3NDk2YjAzOWRhZDA2ZTA2OTM5NjM5YTE3MDMyMDE1YTM2YmQ2MmVmODRhZjkzZjI5), [pentyl acetate SDS](https://labchem-wako.fujifilm.com/sds/W01W0101-0362AGHWEN.pdf).
+6. **Should fix. Scene 10, identification.** "Doesn't fizz ... so the acid is gone" is a detection result, not proof of zero acid. Use "no visible fizz suggests little residual acid". A separate layer and odour cannot identify pentyl ethanoate alone; the stated 149 °C collection is supporting evidence, not purity proof, especially with unreacted alcohol at 138 °C. Preserve the teacher-authorised wafting limit; do not turn this into smelling unknown mixtures.
+7. **Optional. Safety facts page reference.** The quoted wafting instruction is printed on CSIS p 7, not p 6. Heating is p 6; the cited groups at pp 58, 65 and 66 and concentrated sulfuric acid at pp 123 to 124 are correctly located. Correct the author-note page number. [CSIS](https://education.nsw.gov.au/content/dam/main-education/asset-management/chemical-safety/5._Volume_2_Appendices.pdf).
+
+## Recalculations
+
+Using the stated molar masses: 4.41/88.15 = 0.0500284 mol; maximum ester = 6.51269 g; 3.90/6.51269 × 100 = 59.8831%. Vial subtraction 16.26 - 12.36 = 3.90 g. Alcohol volume 4.41/0.815 = 5.411 mL. A1: 3.70/74.12 = 0.049919 mol; ester maximum 5.79860 g; yield 55.013%, rounding 55.0%. Direct mass division gives 86.216%, correctly crossed out. Class means 41 and 60; ranges both 6 points; means differ by 19 points.
+
+The ideal K = 4 algebra is correct under its assumptions: x = 2/3 for 1:1; x = 2 - 2√3/3 = 0.845299 for 2:1. These are assumed-model conversions, not established practical yields. The 67 - 41 = 26 and 85 - 60 = 25 point gaps are arithmetic, not evidence of equal recovery. Relative recoveries would be 41/67 = 61.2% and 60/85 = 70.6%, not the same share.
+
+Formulae and balances are correct: C₅H₁₂O, C₇H₁₄O₂, C₄H₁₀O, C₆H₁₂O₂ and CH₃COOH + C₅H₁₁OH ⇌ CH₃COOC₅H₁₁ + H₂O. The stated rounded molar masses are appropriate. Pentyl acetate's boiling point about 149 °C and specific gravity about 0.88 are independently supported by [OSHA](https://www.osha.gov/chemicaldata/460). The stated very low water solubility is consistent with phase separation, but the exact 0.17 to 0.2 g/100 mL figure was not independently established from an accessible primary measurement in this session. Do not label it a checked precision value.
+
+## Safety, heating and method
+
+The mantle choice is retained. The initial alcohol/acid mixture requires heat above a boiling-water bath for reflux; actual boiling mixtures need not share the pure-component boiling points, so do not infer the entire reflux-temperature trajectory solely from 118/138/149 °C. The open condenser, sound clamps and control of flammable vapours remain necessary. The existing reflux plate visibly has a cup-shaped mantle, not a flat hotplate.
+
+CSIS p 6 supports mantle/water-bath heating as applicable; p 7 supports gentle wafting when needed; p 58 covers organics and waste; pp 65 to 66 cover acid spills; pp 123 to 124 cover concentrated sulfuric acid. Sulfuric acid H290/H314 ([Sigma](https://www.sigmaaldrich.com/US/en/product/sigald/320501)) and glacial acid H226/H314 are consistent with the risk table. Sodium bicarbonate and magnesium sulfate are normally not classified; stock labels and local Appendix D permissions were not accessible. The 40 min and wash volumes are proposals, not a validated local recipe. Wash to a tested acid-removal endpoint, not a guaranteed single fixed rinse; dry until excess drying agent remains loose and separate it before weighing. No school-specific chemical dispensing permission is inferred.
+
+## Site and originality check
+
+L15 local HTML confirms the exact "permanently shifts equilibrium right" and mantle-or-water-bath passages. Proposed changes distinguish removal while it continues and choosing heating able to achieve the needed temperature. Pentyl propanoate's pear descriptor is not a confirmed factual error: odour descriptions vary, and no primary flavour source establishing the author's proposed replacement was obtained. Leave it out of the confirmed-error log. Q8's ester losses are not an incorrect answer, as the author already notes. L15 Q8 shares practical context with the new attempts, but not their mass dataset or wet-yield diagnosis. The 2022 Chemistry Q33 is a general synthesis-planning essay, not this pair of questions. No copied complete task was found in those comparisons; no all-paper originality guarantee.
+
+Counts: **2 blockers, 4 should fix, 1 optional**.
+
+## Resolution
+
+Resolved in `../lessons/chem-m7-p05.md` Revision 2 (30 Oct; root resolver, Claude PM). Overlapping fixes with `m7p05c-learning-review.md` were merged into one edit each. Recount by script: 5,844 characters, about 570 s; zero U+2014.
+
+| # | Outcome | Note |
+| --- | --- | --- |
+| 1 | Fixed (merged with learning 1) | Scene 9 separates a correct isolated yield (dry, pure ester weighed correctly), loss (lowers the yield; repeats can't bring it back) and contaminated mass (too high). Key note 5 rewritten. |
+| 2 | Fixed (merged with learning 2) | The 67% and 85% ceilings and the K about 4 basis are removed from narration, screen and notes. The ladder shows an unnumbered limit band ("below 100%, not measured here"). The two-ladder equal-loss comparison is dropped. The qualitative prediction (excess acid shifts it right) is kept. The conclusion is limited to "a higher yield with excess acid, under these conditions"; reaction progress, purity and recovery appear as evaluation questions. |
+| 3 | Fixed (merged with learning 3) | "Runs out first" is removed. The alcohol sets the theoretical maximum: limiting at 2:1, the same maximum as the acid at 1:1. Notes and mole-block motion match. |
+| 4 | Fixed | Acid volumes are now 2.9 mL (0.0507 mol, 1.01 : 1) and 5.7 mL (0.0996 mol, 1.99 : 1), measured to 0.1 mL. No exact-ratio ceiling is calculated. |
+| 5 | Fixed | Pentan-1-ol row: H226, H315, H318, H332, H335 (Carl Roth SDS 1YHL), harm "serious eye damage" added, "safety glasses" in the control. Pentyl ethanoate H226, with H412 on some sheets. |
+| 6 | Fixed | Scene 10: "no visible fizz with hydrogen carbonate suggests little acid is left. Checks like these support it, but none proves it alone." The 149 °C chip is tagged "supporting evidence, not proof of purity". Wafting stays "if your teacher allows it". |
+| 7 | Fixed (optional) | The wafting quotation is cited at CSIS p 7 in author note (g) and the Safety facts check. |
+
+Also changed (from the Safety, heating and method notes): scene 3's strip no longer infers a reflux temperature from pure boiling points; scene 5 adds the tag "pour off the liquid, leave the solid behind"; the solubility figure is marked approximate and unverified. The mantle choice is kept.
