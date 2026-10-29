@@ -324,6 +324,7 @@
             "C8-IQ1-02"
           ],
           "prerequisites": [
+            "chem-m8-c03a",
             "chem-m8-c03b"
           ],
           "estimatedMinutes": 7.5,
@@ -338,14 +339,15 @@
               "scope": "Use only the part named by this route start and stop."
             }
           ],
-          "entryKnowledge": "Recall chem-m8-c03b only as needed for this question.",
+          "entryKnowledge": "Recall chem-m8-c03a and chem-m8-c03b only as needed for this question.",
           "next": [
             "chem-m8-c04"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practical support",
-          "mainLearnerQuestion": "Identify unknown ions by qualitative tests"
+          "mainLearnerQuestion": "Identify unknown ions by qualitative tests",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-p03.md"
         },
         {
           "id": "chem-m8-c04",
@@ -386,7 +388,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How do colour and absorption measure concentration?"
+          "mainLearnerQuestion": "How do colour and absorption measure concentration?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c04.md"
         },
         {
           "id": "chem-m8-p04",
@@ -426,7 +429,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practical support",
-          "mainLearnerQuestion": "Construct and use a spectroscopic calibration"
+          "mainLearnerQuestion": "Construct and use a spectroscopic calibration",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-p04.md"
         },
         {
           "id": "chem-m8-g02",
@@ -473,7 +477,9 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practice companion",
-          "mainLearnerQuestion": "Calibration and water-analysis data practice"
+          "mainLearnerQuestion": "Calibration and water-analysis data practice",
+          "scopeNote": "30 Oct: dissolved-oxygen and BOD data are left out, because chem-m8-c06 teaches them two videos later. Calibration and nutrient data only. Shared skills-s06 sits before g02 in the Chemistry playlist.",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-g02.md"
         },
         {
           "id": "chem-m8-c05",
@@ -1163,7 +1169,9 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practical support",
-          "mainLearnerQuestion": "Investigate plant water loss"
+          "mainLearnerQuestion": "Investigate plant water loss",
+          "playlistNote": "Shared skills-s07 follows p02 in the Biology playlist (route review change 10). The learner route next stays b06.",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-p02.md"
         },
         {
           "id": "bio-m8-b06",
@@ -1204,7 +1212,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "What causes a non-infectious disease?"
+          "mainLearnerQuestion": "What causes a non-infectious disease?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b06.md"
         },
         {
           "id": "bio-m8-b07",
@@ -1239,7 +1248,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How does environmental exposure cause disease?"
+          "mainLearnerQuestion": "How does environmental exposure cause disease?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b07.md"
         },
         {
           "id": "bio-m8-b08",
@@ -1274,7 +1284,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How does nutrition change disease risk?"
+          "mainLearnerQuestion": "How does nutrition change disease risk?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b08.md"
         },
         {
           "id": "bio-m8-b09",
