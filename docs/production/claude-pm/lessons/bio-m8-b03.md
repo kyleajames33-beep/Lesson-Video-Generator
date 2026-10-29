@@ -1,8 +1,18 @@
 # B8-03: How do insulin and glucagon regulate glucose? The pancreatic islets, insulin's two effects, glucagon and the liver, two opposing loops (design)
 
-Status: Revision 1 (30 Oct): needs learning review and science check (Codex).
+Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
-Narration 5,567 characters (Revision 1; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 8.9 minutes (535 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
+
+Narration 5,571 characters (Revision 2; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 8.9 minutes (535 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 2 changes (30 Oct; resolving `../checks/m8b03-learning-review.md` (learning L1) and `../checks/m8b03-claude-science-check.md` (science S1 to S3)):
+- Feedback 10b (learning L1, merged with science S3): the last sentence now gives the action to the liver, as the review proposes: "The liver breaks down glycogen and releases glucose." The crossed chip's small text reads "glucagon signals; liver cells break down glycogen". Feedback stays about 29 s.
+- Islet plate (science S1): the asset brief, scene 3's callouts and the facts note now use the human pattern, beta and alpha cells intermixed through the islet with beta cells more numerous, not a beta core with an alpha ring. The callouts point at a few teal cells and a few amber cells rather than at a centre and an edge. The plate delivered in brief 114 already matches (inspected 30 Oct). No narration change.
+- Metadata (science S2): the site link is now the live `.sa.html` form, kept first.
+- Plates: all six new files are delivered in brief 114 (`../assets/brief114-provenance.json`), exact filenames unchanged; owner art acceptance and cross-fade playback pending.
+- Root decision: diabetes stays out (b08 and b12 teach it); the open question in the review notes is closed.
+- Narration recounted by script: 5,571 characters (Revision 1: 5,567), about 535 s.
 
 ## Decisions
 
@@ -56,7 +66,7 @@ Visual: the board clears. Three cards write on one per cue, the shared letters "
 ### 3. the pancreas, sensor and switch
 > Earlier in this module, you saw that the pancreas is both the receptor and the control centre for glucose. Here's how. Most of the pancreas makes digestive enzymes. But scattered through it are tiny clusters of hormone-making cells, called **islets**. Each islet holds two cell types that matter here. **Beta cells** detect a rise in blood glucose and release **insulin** straight into the blood. **Alpha cells** detect a fall and release glucagon. So the same small cluster senses the change and sends the signal.
 
-Visual: the strip stays at the top, dimmed. b01's `LoopRing` thumbnail appears at the upper left (grey tag "b01"), its receptor and control centre slots joined by the bracket. `m8-pancreas-v1.png` enters at the centre. On "Most of the pancreas makes digestive enzymes" a grey tag "most tissue: digestive enzymes into the gut". On "tiny clusters" a `scribbleEllipse` circles a small patch of the plate and a `Cam` zoom carries the view into new `m8-pancreatic-islet-v1.png` (an islet in surrounding tissue, with a capillary); grey tag "islet of Langerhans, drawn far larger than real"; label "islet: hormone-making cells". On "Beta cells" a callout to the central cells, label "beta cells: detect a rise → insulin"; coded teal `SignalPulse` dots leave them into the capillary on "straight into the blood". On "Alpha cells" a callout to the edge cells, label "alpha cells: detect a fall → glucagon"; amber dots leave into the capillary. On "senses the change and sends the signal" the loop ring thumbnail's bracketed slots pulse. At most three bright items. Hold one second.
+Visual: the strip stays at the top, dimmed. b01's `LoopRing` thumbnail appears at the upper left (grey tag "b01"), its receptor and control centre slots joined by the bracket. `m8-pancreas-v1.png` enters at the centre. On "Most of the pancreas makes digestive enzymes" a grey tag "most tissue: digestive enzymes into the gut". On "tiny clusters" a `scribbleEllipse` circles a small patch of the plate and a `Cam` zoom carries the view into new `m8-pancreatic-islet-v1.png` (an islet in surrounding tissue, with a capillary); grey tag "islet of Langerhans, drawn far larger than real"; label "islet: hormone-making cells". On "Beta cells" a callout to two or three of the teal cells (beta cells are scattered through the human islet, so the callout picks cells, not a region; Revision 2), label "beta cells: detect a rise → insulin"; coded teal `SignalPulse` dots leave them into the capillary on "straight into the blood". On "Alpha cells" a callout to two or three of the amber cells, mixed among the teal ones, label "alpha cells: detect a fall → glucagon"; amber dots leave into the capillary. On "senses the change and sends the signal" the loop ring thumbnail's bracketed slots pulse. At most three bright items. Hold one second.
 
 ### 4. insulin: let glucose in, and store it
 > Back to the pasta. As glucose rises, beta cells release more insulin, and it travels in the blood to cells all over the body. In muscle and fat cells, insulin binds to receptors on the cell surface. That signal moves extra glucose transporters, proteins that let glucose through, from inside the cell into its membrane. More doors open, so glucose moves in faster. In the liver, insulin switches on **glycogenesis**, which means building glycogen: glucose is joined into chains and stored.
@@ -94,9 +104,9 @@ Visual: the board clears to two handwritten lines, large: "Insulin lets glucose 
 Visual: the board clears. The card writes on as an exam question, tagged "HSC-style question, written for HSCScience". Stem: "A student eats breakfast at 7 am, skips lunch and runs a 3 km cross-country race at 2 pm. During the race, the student's blood glucose concentration begins to fall below its usual range." Demand: "(a) Construct a negative feedback loop for the response that returns blood glucose to its usual range. Name the hormone involved. (3 marks) (b) Explain the role of the liver in this response. (2 marks)". An empty five-slot ring outline sits beside the answer lines as a drawing space (no labels). No plates, no people. **The countdown ring starts after "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10b. feedback, item one
-> Stimulus: blood glucose falls. Receptor and control centre: alpha cells in the pancreas, which release glucagon. Effector: the liver, which breaks glycogen down to glucose and releases it into the blood. Response: blood glucose rises back towards normal, opposing the fall. Writing that glucagon breaks down glucose is the classic mistake. It breaks down glycogen, so glucose is released.
+> Stimulus: blood glucose falls. Receptor and control centre: alpha cells in the pancreas, which release glucagon. Effector: the liver, which breaks glycogen down to glucose and releases it into the blood. Response: blood glucose rises back towards normal, opposing the fall. Writing that glucagon breaks down glucose is the classic mistake. The liver breaks down glycogen and releases glucose.
 
-Visual: the card stays. As each component is spoken, its given phrase takes an amber underline ("blood glucose concentration begins to fall", "skips lunch", "runs") and the matching slot of the drawn ring fills with a short label: "blood glucose falls", "alpha cells (pancreas) → glucagon", "liver: glycogen → glucose, released", "blood glucose rises back". On "opposing the fall" the return arrow draws with a minus sign. For (b) one answer line writes: "liver: glycogenolysis, glucose released into blood". On "classic mistake" a chip "glucagon breaks down glucose" writes and takes a scribble cross, with small text "it breaks down glycogen". Settle one second.
+Visual: the card stays. As each component is spoken, its given phrase takes an amber underline ("blood glucose concentration begins to fall", "skips lunch", "runs") and the matching slot of the drawn ring fills with a short label: "blood glucose falls", "alpha cells (pancreas) → glucagon", "liver: glycogen → glucose, released", "blood glucose rises back". On "opposing the fall" the return arrow draws with a minus sign. For (b) one answer line writes: "liver: glycogenolysis, glucose released into blood". On "classic mistake" a chip "glucagon breaks down glucose" writes and takes a scribble cross, with small text "glucagon signals; liver cells break down glycogen" (Revision 2). Settle one second.
 
 ### 10c. attempt two (glucose and insulin after a drink)
 > Second. After an overnight fast, a healthy adult drank a glucose solution. The graph shows their blood glucose and blood insulin over three hours. Explain the change in insulin over the first hour, and explain why blood glucose returned to about its starting level, with reference to negative feedback. Pause here to answer.
@@ -140,7 +150,7 @@ Feedback spoken lengths are about 27 s and 29 s. Each names the answer and one o
 Self-check (30 Oct) against standard references. The Codex science check must confirm each before voicing.
 - **Overnight fast (hook).** "eight hours or more"; the clock chip "10 pm to 7 am". Typical; no source needed.
 - **Fasting range and post-meal rise (scene 2, key note 1).** Spoken: "usually sits around four to six" and "often to about seven or eight in a healthy person". Standard references give normal fasting plasma glucose about 3.9 to 5.5 (or up to 6.0) mmol/L and a healthy post-meal peak commonly below about 7.8 mmol/L. Codex to confirm "seven or eight" is fair, or propose "up to about seven or eight".
-- **Islets (scene 3).** Islets of Langerhans are scattered through the pancreas (about 1 to 2 per cent of its mass, on the order of a million in an adult human; the site says "roughly one million"). The million figure is not spoken or shown. Beta cells are the majority, typically central in rodent islets and more mixed in human islets; alpha cells secrete glucagon. Codex to confirm the plate brief's "beta cells mostly central, alpha cells around them" is acceptable, or ask for a mixed arrangement (human islets).
+- **Islets (scene 3).** Islets of Langerhans are scattered through the pancreas (about 1 to 2 per cent of its mass, on the order of a million in an adult human; the site says "roughly one million"). The million figure is not spoken or shown. Beta cells are the majority, typically central in rodent islets and more mixed in human islets; alpha cells secrete glucagon. Revision 2 (science check 1): the plate shows the human pattern, beta and alpha cells intermixed through the islet and beside its internal capillary, with beta cells more numerous, not a rodent-style beta core and alpha mantle. The delivered brief 114 plate matches (inspected 30 Oct). Human islets vary; nothing about the layout is spoken.
 - **Insulin effects (scene 4).** Insulin binds its receptor on muscle and fat cells and causes GLUT4 transporters stored in intracellular vesicles to move into the plasma membrane, increasing glucose uptake; in the liver insulin promotes glycogen synthesis (and glucose uptake indirectly, through glucokinase). Spoken: "In the liver, insulin switches on glycogenesis". Correct at this level.
 - **Insulin falls to a basal level (scene 5).** Correct (basal insulin secretion continues between meals). "insulin doesn't destroy glucose" matches the site.
 - **Glucagon and the liver (scene 6).** Glucagon acts mainly on the liver to stimulate glycogenolysis (and gluconeogenesis). Muscle lacks glucose-6-phosphatase, so muscle glycogen is used within the muscle and is not released as blood glucose. Spoken: "muscle keeps its glucose for itself". Correct. Gluconeogenesis is a grey screen tag only (see site error 2).
@@ -161,7 +171,7 @@ Self-check (30 Oct) against standard references. The Codex science check must co
 
 ## Narration length estimate
 
-Revision 1 count (30 Oct) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, 10 s per countdown and 55 s more of the quiet notes hold.
+Revision 2 count (30 Oct) with the build parser rules ("> " lines joined with spaces, bold markers removed), at 13.3 characters per second with 2 s of padding per scene, stated holds, 10 s per countdown and 55 s more of the quiet notes hold.
 
 | Scene | Characters |
 | --- | --- |
@@ -175,13 +185,13 @@ Revision 1 count (30 Oct) with the build parser rules ("> " lines joined with sp
 | 8. two exam checks | 434 |
 | 9. memory | 142 |
 | 10a. attempt one (a missed lunch and a race) | 295 |
-| 10b. feedback, item one | 388 |
+| 10b. feedback, item one | 392 |
 | 10c. attempt two (glucose and insulin after a drink) | 324 |
 | 10d. feedback, item two | 380 |
 | 11. decision rule and handoff | 260 |
 | 12. key notes (quiet, about 60 seconds) | 75 |
 
-Revision 1 total: **5,567 characters**, 15 scene files (inside 5,500 to 6,800, near the floor). Speech about 419 s; with 30 s of padding (15 scenes), about 11 s of stated holds and settles, 20 s of countdowns and 55 s more of the quiet notes hold: **about 535 s (8.9 minutes)**, inside the 570 s cap with about 35 s spare. Feedback 10b about 29 s and 10d about 29 s by script; time the exact audio. Scenes 2 (531) and 6 (513) are the longest; check both at playback speed. Do not cut below 5,500 without replacing the content; if the open diabetes question is resolved in favour of one sentence, it fits.
+Revision 2 total: **5,571 characters** (Revision 1: 5,567), 15 scene files (inside 5,500 to 6,800, near the floor). Speech about 419 s; with 30 s of padding (15 scenes), about 11 s of stated holds and settles, 20 s of countdowns and 55 s more of the quiet notes hold: **about 535 s (8.9 minutes)**, inside the 570 s cap with about 35 s spare. Feedback 10b about 29 s and 10d about 29 s by script; time the exact audio. Scenes 2 (531) and 6 (513) are the longest; check both at playback speed. Do not cut below 5,500 without replacing the content. Diabetes stays out (root decision, Revision 2).
 
 ## Assets
 
@@ -195,11 +205,11 @@ Have (reuse; inspected 30 Oct on a dark background):
 - Coded reuse: the `lineGraph` diagram; b01's `LoopRing` and `SignalPulse`.
 - **Not used:** `m8-cgm-reader-high-v1.png` and `-low-v1.png` (their screens carry a progress bar, not a reading; the blank plate plus coded text reads more clearly; they suit b12); `m8-insulin-pen-v1.png` (treatment, b12); `m5x-enzyme-substrate-v1.png` (not needed).
 
-Need (painted, Codex brief below):
-- **New** `m8-pancreatic-islet-v1.png`: scene 3 (and thumbnails in 6, 7).
-- **New** `m8-liver-v1.png`: scenes 4, 6.
-- **New** matched pair `m8-liver-cell-glycogen-low-v1.png` and `m8-liver-cell-glycogen-full-v1.png`: scenes 4 (low to full) and 6 (full to low).
-- **New** matched pair `m8-muscle-cell-transporters-inside-v1.png` and `m8-muscle-cell-transporters-membrane-v1.png`: scene 4.
+Delivered (brief 114, 30 Oct; `../assets/brief114-provenance.json`; technical candidates, owner art acceptance and cross-fade playback pending), all in `public/assets/biology/`:
+- `m8-pancreatic-islet-v1.png`: scene 3 (and thumbnails in 6, 7). Human intermixed arrangement (Revision 2).
+- `m8-liver-v1.png`: scenes 4, 6.
+- Matched pair `m8-liver-cell-glycogen-low-v1.png` and `m8-liver-cell-glycogen-full-v1.png`: scenes 4 (low to full) and 6 (full to low).
+- Matched pair `m8-muscle-cell-transporters-inside-v1.png` and `m8-muscle-cell-transporters-membrane-v1.png`: scene 4.
 
 Plate list summary (Revision 1). **Existing:** six. **New:** two single plates and two matched pairs (six files). If the brief must be cut: drop the muscle transporter pair first (scene 4 then uses `m8-skeletal-muscle-v1.png` with a callout and coded `GlucoseDots` entering the cut end, tag "more glucose transporters in the membrane", which is weaker); then the whole liver (the liver cell pair carries the mechanism, with a grey tag "liver cell"). Keep the islet (it carries beta and alpha cells, which an organ-level plate cannot show) and the liver cell pair (it shows both directions of the store).
 
@@ -211,7 +221,7 @@ Process clip: none.
 
 Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/bio-m8-b03.md`, route entry bio-m8-b03. All plates: transparent PNG with a true alpha channel and **clean edges with no coloured fringe or halo** (check every plate on a black and a white background), fine dark ink outlines with layered watercolour washes in the house plate style (match `m8-pancreas-v1.png`, `m8-skeletal-muscle-v1.png` and `m8-kidney-nephron-v1.png`), 2000 x 2000 canvas with about 8 per cent clear margin, no text, no labels, no arrows, no people, no hands, no faces. Never stretch to fit; keep the native aspect ratio.
 
-1. `m8-pancreatic-islet-v1.png`: a microscopic close-up of one pancreatic islet of Langerhans, drawn as a natural history cut-away: a rounded pale cluster of endocrine cells set among surrounding exocrine tissue (berry-like acini of darker pink, granular cells around tiny ducts). Inside the islet, two clearly different cell types: many beta cells (soft teal-tinted cytoplasm with fine granules) making up most of the islet, and fewer alpha cells (warm amber-tinted cytoplasm) mostly around its edge, each with a visible nucleus, so a callout can point to each type. One small capillary with red blood cells runs through the islet. Drawn far larger than real.
+1. `m8-pancreatic-islet-v1.png`: a microscopic close-up of one pancreatic islet of Langerhans, drawn as a natural history cut-away: a rounded pale cluster of endocrine cells set among surrounding exocrine tissue (berry-like acini of darker pink, granular cells around tiny ducts). Inside the islet, two clearly different cell types: many beta cells (soft teal-tinted cytoplasm with fine granules) and fewer alpha cells (warm amber-tinted cytoplasm), intermixed throughout the islet, central and peripheral, beside its internal capillary, not a beta core with an alpha ring (the human pattern; Revision 2, science check 1), each with a visible nucleus, so a callout can point to each type. One small capillary with red blood cells runs through the islet. Drawn far larger than real. Delivered in brief 114 to this specification.
 2. `m8-liver-v1.png`: the human liver as an isolated organ, anterior view: large right lobe, smaller left lobe, the gallbladder just visible beneath, smooth glossy red-brown surface, in the anatomical register of `m8-pancreas-v1.png`. No other organs, no body outline.
 3. Matched pair, same cell, viewpoint, scale, framing and lighting so the two cross-fade cleanly (generate the second from the first; identical cell outline and nucleus position):
    - `m8-liver-cell-glycogen-low-v1.png`: one liver cell (hepatocyte), polygonal, with a round central nucleus, granular pink cytoplasm, a few mitochondria and only a scattering of small glycogen granules (tiny pale violet rosettes). A short length of capillary (sinusoid) with two or three red blood cells runs along one side.
@@ -225,8 +235,9 @@ Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/m8b03
 ## Codex error-check brief (B8-03)
 
 Error-only report to `../checks/` (root names the check number). Check against primary or standard sources (a current university physiology text, or a peer-reviewed review):
+- Revision 2 text: feedback 10b's last sentence and chip; scene 3's callouts against the delivered intermixed islet plate; the `.sa.html` metadata link.
 - The spoken fasting range ("around four to six") and post-meal rise ("often to about seven or eight in a healthy person") in scene 2 and key note 1.
-- Beta and alpha cells as receptor and control centre; the islet arrangement in the plate brief (scene 3).
+- Beta and alpha cells as receptor and control centre; the intermixed human islet arrangement in the delivered plate (scene 3).
 - Insulin's effects in scene 4: GLUT4 translocation in muscle and fat cells; "In the liver, insulin switches on glycogenesis".
 - "Insulin drops back to a low background level, not to zero" (scene 5).
 - Glucagon acting mainly on the liver; "muscle keeps its glucose for itself" (scene 6).
@@ -241,7 +252,7 @@ Error-only report to `../checks/` (root names the check number). Check against p
 - Title: "How Do Insulin and Glucagon Regulate Blood Glucose? Two Feedback Loops | Year 12 Biology Module 8" (97 characters, by script)
 - Description:
 
-"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module8/lesson03.sa
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module8/lesson03.sa.html
 
 After a pasta meal, glucose pours into your blood; overnight, you eat nothing, yet your brain keeps using glucose. Learn the difference between glucose, glycogen and glucagon, how beta and alpha cells in the pancreatic islets detect a change in blood glucose, how insulin lets muscle and fat cells take up glucose and makes the liver store it as glycogen, and how glucagon makes the liver release glucose when it falls. See why two opposing hormones give control in both directions, and why the liver, not the pancreas, is the main effector. Then practise constructing a loop and interpreting a glucose and insulin graph.
 
@@ -270,7 +281,7 @@ Holds (10 s countdown after the speech, "Pause here to answer." on screen, the c
 - **Teaching checks.** Causes: why glucose enters cells faster (more transporters in the membrane; 4); why glucose falls and why insulin then falls (5); where overnight glucose comes from (liver glycogen split and released; 6) and why the liver, not muscle, does that (6); why two hormones beat one (7). Attention: a meal and a night's sleep the learner has lived (1), a three-word trap (2), the car analogy (7). Visual medium: one glucose strip with a moving marker across a day, two coloured loop rings, and matched cell pairs that show the store filling and emptying. Apply: construct the falling loop (10a), interpret a two-line graph (10c). Remember: "in" and "gone", and the B for beta line.
 - **Term load.** New spoken terms: glucose (recalled), glycogen, glucagon, millimoles per litre, islets, beta cells, alpha cells, insulin (recalled), glucose transporters, glycogenesis, glycogenolysis. Recalled from b01: receptor, control centre, effector, negative feedback. Screen only: islets of Langerhans, GLUT4, gluconeogenesis, exocrine. Scene 2 carries three similar words at once by design (the trap is the content); the learning review should test whether it reads at playback speed.
 - **Overlap with b01, b04, b08, b12 and g03.** b01 owns the loop and the rising-side outline (recalled in scenes 3 and 5). b08 and b12 own diabetes and its management; the grey chip in scene 11 points there. g03 owns repeated glucose graph practice. b04 owns water balance.
-- **Open question for root.** b12 and b08 list b03 as a prerequisite. If b12's design assumes the type 1 against type 2 mechanism ("no key, jammed lock") was taught here, either b12 teaches it or b03 gains one sentence and a chip in scene 11 (about 150 characters; there is room under the cap). This design keeps diabetes out, following the route stop.
+- **Open question for root (closed, Revision 2: diabetes stays out; b08 and b12 teach it).** b12 and b08 list b03 as a prerequisite. If b12's design assumes the type 1 against type 2 mechanism ("no key, jammed lock") was taught here, either b12 teaches it or b03 gains one sentence and a chip in scene 11 (about 150 characters; there is room under the cap). This design keeps diabetes out, following the route stop.
 - **Cultural content.** None: no Aboriginal or Torres Strait Islander knowledge is drawn on, so no cultural review is needed.
 - **Pronunciation.** "glucagon" as "GLOO-ka-gon"; "glycogen" as "GLY-koh-jen"; "glycogenesis" as "gly-koh-JEN-e-sis"; "glycogenolysis" as "gly-koh-jen-OL-i-sis"; "islets" as "EYE-lets"; "millimoles" as "MILL-ee-mohls"; numbers as words.
 - **Doubts for the reviewers.** (a) Is scene 7's car analogy worth about 35 seconds, or should it be cut to the two-sentence argument and the balance bars? (b) The hook says "a blood test at breakfast" while showing a glucose reader; a finger-prick meter or a lab test would both fit, and no person is shown. (c) Attempt 1 names "exercise" in the stem; the review should check that the classic mistake chosen (glucagon breaks down glucose) is more useful than "exercise is the stimulus", which b01 already crossed.

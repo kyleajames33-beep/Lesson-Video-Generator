@@ -9,6 +9,7 @@ Earlier status, Revision 1 (28 Oct): needs learning review and science check (Co
 Narration 5,918 characters (Revision 2), 17 scenes, about 9.0 minutes (538 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
 
 Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- Site link (metadata link only; brief 114 science checks, root decision): the YouTube description's first link is now the live page, `https://hscscience.com.au/subjects/chemistry/year12/module8/lesson02.sa.html`, the same form as p02, g01, c03a and c03b. No narration, screen or count change.
 - Error 1 (YouTube dotpoint): the description's quoted dotpoint is now verbatim, a colon followed by two bullets ("gravimetric analysis", "precipitation titrations"); the explanation of this video's focus stays outside the quote.
 - No narration changes. Count unchanged from Revision 2. Ready to voice.
 
@@ -250,7 +251,7 @@ Title: Gravimetric Analysis: From Precipitate Mass to Ion Concentration | Year 1
 
 (Title length: 84 characters.)
 
-Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module8/lesson02
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module8/lesson02.sa.html
 
 A clear wastewater sample turns cloudy white when barium ions are added, and the mass of that dried solid tells you how much sulfate was there. See why barium sulfate is chosen over calcium sulfate using Ksp, why the precipitate is digested, washed and dried to constant mass, and how to turn a mass found by difference into a percentage and a concentration. Then learn which errors make the answer too high or too low, and why repeating an analysis doesn't fix them. Two exam-style questions at the end.
 

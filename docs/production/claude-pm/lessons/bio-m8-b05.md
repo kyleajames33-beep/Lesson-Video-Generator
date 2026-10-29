@@ -1,8 +1,17 @@
 # B8-05: How do plants keep enough water? Transpiration, guard cells, ABA and xerophyte adaptations (design)
 
-Status: Revision 1 (30 Oct): needs learning review and science check (Codex).
+Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
-Narration 5,855 characters (Revision 1; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 9.3 minutes (559 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
+
+Narration 5,864 characters (Revision 2; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 9.3 minutes (560 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 2 changes (30 Oct; resolving `../checks/m8b05-learning-review.md` (learning L1, L2) and `../checks/m8b05-claude-science-check.md` (science S1 to S3)):
+- Comparison board (learning L1, merged with science S1): scene 10's left column is now "ABA response to water stress" and its row "when? this response: water stress", so the board no longer says all stomatal closure is drought-only (stomata also close in darkness and to other signals). The spoken referent is made explicit: "ABA closing the stomata is a response." The model answer for item 2 drops "only". No second closure mechanism is taught.
+- Spinifex (learning L2, merged with science S2): scene 9 now says "Spinifex has narrow, rolled leaves with stomata sheltered in grooves, trapping humid air around them." The callout reads "rolled leaf, stomata in grooves", with a small coded inset of a grooved narrow leaf instead of an all-inside tube. The existing `m7-spinifex-hummock-v1.png` plate stays. The facts note and the error-check brief match.
+- Metadata (science S3): the site link is now the live `.sa.html` form, kept first.
+- Plates: all six new files are delivered in brief 114 (`../assets/brief114-provenance.json`), exact filenames unchanged; owner art acceptance and cross-fade playback pending.
+- Narration recounted by script: 5,864 characters (Revision 1: 5,855), about 560 s, 10 s under the cap.
 
 ## Decisions
 
@@ -87,14 +96,14 @@ Visual: the ring shrinks to the upper left. The stoma plate (closed) returns at 
 Visual: the board clears; the leaf window returns with `m8-leaf-cross-section-v1.png` at the centre (grey tag "ordinary leaf"). On "Xerophytes" it cross-fades to its matched plate `m8-xerophyte-leaf-section-v1.png` (same framing and scale; grey tag "xerophyte leaf"), and a gloss writes "xerophyte: a plant adapted to dry habitats". On "waxy cuticle" a callout to the thick upper cuticle, label "thick waxy cuticle"; a few coded wisps that leave the ordinary leaf's surface in a quick replay stop at the thick cuticle (label "waterproof barrier"). On "sunken in pits, lined with hairs" `Cam` moves to the lower surface; a `scribbleEllipse` round the pit and its hairs (label "sunken stoma, hairs"). On "pocket of still, humid air" b02's `EvapDots` switch to their humid mode inside the pit (dots stay and pool); the `VapourGradient` shows dense dots inside the leaf and inside the pit, with only a short sparse row beyond (label "humid pocket: smaller difference"). On "diffusion slows" the outward dots move more slowly. At most three bright items. Hold one second.
 
 ### 9. Australian examples, and a way to sort them
-> Australian plants show more of these. Spinifex rolls its leaves into thin tubes, with the stomata inside, trapping humid air around them. Small or needle-like leaves have less surface to lose water from. And many eucalypts hang their leaves vertically, so the midday sun strikes them edge-on. The leaf stays cooler, so less water evaporates. To sort any feature, ask: does it waterproof the surface, shrink it, keep it cool, or trap humid air?
+> Australian plants show more of these. Spinifex has narrow, rolled leaves with stomata sheltered in grooves, trapping humid air around them. Small or needle-like leaves have less surface to lose water from. And many eucalypts hang their leaves vertically, so the midday sun strikes them edge-on. The leaf stays cooler, so less water evaporates. To sort any feature, ask: does it waterproof the surface, shrink it, keep it cool, or trap humid air?
 
-Visual: the leaf window slides away. `m7-spinifex-hummock-v1.png` enters at the left; on "rolls its leaves into thin tubes" a callout to a leaf blade, label "rolled leaf, stomata inside" (grey tag "spinifex, inland Australia"). On "Small or needle-like leaves" a grey tag "less surface area" sits under the spinifex's fine leaves. On "eucalypts" new `m8-eucalypt-hanging-leaves-v1.png` enters at the right; on "edge-on" a coded sun arrow from straight above meets a leaf edge-on (thin arrow, short label "midday sun"), with a second ghost leaf held flat beside it catching the full arrow (grey, then fades); label "hanging leaves stay cooler". On "To sort any feature" four step chips write under the two plates, one per cue: "waterproof", "shrink", "keep cool", "trap humid air". The cuticle (scene 8) thumbnail drops under "waterproof", the spinifex under "trap humid air", the eucalypt under "keep cool". Hold half a second.
+Visual: the leaf window slides away. `m7-spinifex-hummock-v1.png` enters at the left; on "narrow, rolled leaves" a callout to a leaf blade, label "rolled leaf, stomata in grooves" (grey tag "spinifex, inland Australia"); on "sheltered in grooves" a small coded cross-section inset beside the callout shows a narrow leaf with shallow grooves along both surfaces and a few stomata dots in the grooves, with faint humid-air shading held in each groove (abstract; not an all-inside tube; Revision 2). On "Small or needle-like leaves" a grey tag "less surface area" sits under the spinifex's fine leaves. On "eucalypts" new `m8-eucalypt-hanging-leaves-v1.png` enters at the right; on "edge-on" a coded sun arrow from straight above meets a leaf edge-on (thin arrow, short label "midday sun"), with a second ghost leaf held flat beside it catching the full arrow (grey, then fades); label "hanging leaves stay cooler". On "To sort any feature" four step chips write under the two plates, one per cue: "waterproof", "shrink", "keep cool", "trap humid air". The cuticle (scene 8) thumbnail drops under "waterproof", the spinifex under "trap humid air", the eucalypt under "keep cool". Hold half a second.
 
 ### 10. a response, or a built-in feature?
-> So how do these compare with ABA? Stomatal closure is a response. It switches on when water runs short, works within minutes and can reverse, but while the stomata are shut, much less carbon dioxide gets in. Xerophyte features are structural. They're always there and need no signal, so they save water all day. But they can't be switched off when water is plentiful, which is one reason many of these plants grow slowly. Both keep the plant's water content within tolerance limits.
+> So how do these compare with ABA? ABA closing the stomata is a response. It switches on when water runs short, works within minutes and can reverse, but while the stomata are shut, much less carbon dioxide gets in. Xerophyte features are structural. They're always there and need no signal, so they save water all day. But they can't be switched off when water is plentiful, which is one reason many of these plants grow slowly. Both keep the plant's water content within tolerance limits.
 
-Visual: a two-column board: left "response: ABA closes stomata" with the small stoma pair (open cross-fading to closed on "switches on", back to open on "can reverse"); right "built in: xerophyte features" with a small xerophyte section thumbnail. Rows light on their cues: "when? only under water stress" against "when? all the time"; "how fast? minutes" against "how fast? already there"; "cost? much less CO₂ while shut" against "cost? can't be switched off". On "within tolerance limits" a bracket joins both columns, label "both: water content held in range". At most three bright items in the rows at once (the earlier row dims). Hold one second.
+Visual: a two-column board: left "ABA response to water stress" (Revision 2) with the small stoma pair (open cross-fading to closed on "switches on", back to open on "can reverse"); right "built in: xerophyte features" with a small xerophyte section thumbnail. Rows light on their cues: "when? this response: water stress" against "when? all the time" (Revision 2; stomata also close in darkness and to other signals, so the row names this response, not all closure); "how fast? minutes" against "how fast? already there"; "cost? much less CO₂ while shut" against "cost? can't be switched off". On "within tolerance limits" a bracket joins both columns, label "both: water content held in range". At most three bright items in the rows at once (the earlier row dims). Hold one second.
 
 ### 11a. attempt one (read the graph)
 > Two exam questions. First. A potted wheat plant was not watered for six days. The graph shows the ABA concentration in its leaves and its transpiration rate. Describe the relationship between the two, and explain how ABA caused the change in transpiration rate. Pause here to answer.
@@ -139,7 +148,7 @@ Two unseen items, each followed by its own brief feedback (11a, 11b, 11c, 11d). 
 1. (11a, describe and explain, 4 marks.) Potted wheat plant, six days without water; leaf ABA and transpiration rate. (a) Describe the relationship. (b) Explain how ABA caused the change.
    Model: (a) As leaf ABA concentration increased (from day 2), transpiration rate decreased (1 mark). (b) As the soil dried, the plant's root and leaf cells increased ABA production; ABA acts on the guard cells, causing potassium ions to leave them (1 mark); water follows by osmosis, so the guard cells lose turgor, become flaccid and straighten, closing the stomata (1 mark); with the stomata closed, less water vapour diffuses out of the leaf, so transpiration rate falls, which reduces further water loss (negative feedback) (1 mark). Classic mistake crossed out: "transpiration fell because the soil was dry". Other wrong chains named in the review: "ABA blocks the stomata"; "guard cells pump water out"; "ABA reduces photosynthesis, so less water is needed".
 2. (11c, explain and compare, 4 marks.) Plant X: thick waxy cuticle; stomata sunken in pits lined with hairs. (a) Explain how each feature reduces water loss. (b) Compare these features with ABA-triggered closure.
-   Model: (a) The thick waxy cuticle is a waterproof barrier, reducing evaporation of water directly through the leaf surface (1 mark). Sunken stomata in hair-lined pits trap a layer of still, humid air outside each pore, reducing the water vapour concentration difference between the inside of the leaf and the air, so water vapour diffuses out more slowly (1 mark). (b) Both reduce water loss and help keep the plant's water content within tolerance limits. The features are structural: always present, needing no signal, and they work even when the stomata are open (1 mark). ABA-triggered closure is a physiological response that switches on only under water stress, within minutes, and is reversible, but while the stomata are closed carbon dioxide entry and photosynthesis are greatly reduced (1 mark). Classic mistake crossed out: "sunken stomata help it survive dry conditions" (no mechanism). Other wrong chains named in the review: "hairs stop water leaving"; "the cuticle closes the stomata".
+   Model: (a) The thick waxy cuticle is a waterproof barrier, reducing evaporation of water directly through the leaf surface (1 mark). Sunken stomata in hair-lined pits trap a layer of still, humid air outside each pore, reducing the water vapour concentration difference between the inside of the leaf and the air, so water vapour diffuses out more slowly (1 mark). (b) Both reduce water loss and help keep the plant's water content within tolerance limits. The features are structural: always present, needing no signal, and they work even when the stomata are open (1 mark). ABA-triggered closure is a physiological response to water stress that switches on within minutes, and is reversible, but while the stomata are closed carbon dioxide entry and photosynthesis are greatly reduced (1 mark). Classic mistake crossed out: "sunken stomata help it survive dry conditions" (no mechanism). Other wrong chains named in the review: "hairs stop water leaving"; "the cuticle closes the stomata".
 
 Feedback spoken lengths are about 25 to 30 s each. Each names the answer and one or two key reasons, underlines the givens as they are used and crosses one classic mistake. Neither re-teaches the lesson.
 
@@ -154,7 +163,7 @@ Self-check (30 Oct) against standard references. The Codex science check must co
 - **ABA (scene 5).** ABA rises in roots and leaves under water deficit (leaf vascular tissue is a major site in many species); ABA activates anion and K⁺ efflux channels in guard cells; water leaves by osmosis; closure within minutes. Correct at this level. Spoken "make potassium ions leave them" (not "pump"), so it is accurate for closure.
 - **Reopening (scene 6).** ABA is broken down or conjugated after rewatering and stomata reopen, sometimes after a lag. Spoken "ABA levels drop and the stomata can reopen". Correct as hedged.
 - **Cost of closing (scene 7).** Closure greatly reduces CO₂ uptake and photosynthesis; cuticular water loss continues at a low rate. Spoken "much less carbon dioxide gets in" and "Water still escapes slowly". Correct.
-- **Xerophyte features (scenes 8, 9).** Thick cuticle reduces cuticular transpiration; sunken stomata and trichomes increase boundary layer resistance; *Triodia* (spinifex) leaves are rolled with stomata on the inner surface in grooves; vertical leaf orientation in many eucalypts reduces midday radiation load and leaf temperature. Codex to confirm the spinifex statement for the common inland species, and the eucalypt statement wording ("many eucalypts hang their leaves vertically"; adult leaves are typically pendulous).
+- **Xerophyte features (scenes 8, 9).** Thick cuticle reduces cuticular transpiration; sunken stomata and trichomes increase boundary layer resistance; *Triodia* (spinifex) leaves are narrow and rolled, with stomata sheltered in protected longitudinal grooves, which the specialist Triodia key places on both upper and lower surfaces (Revision 2, science S2; the narration no longer says "inside"); vertical leaf orientation in many eucalypts reduces midday radiation load and leaf temperature. Spinifex wording settled in Revision 2; Codex to recheck the eucalypt statement wording ("many eucalypts hang their leaves vertically"; adult leaves are typically pendulous).
 - **"Many of these plants grow slowly" (scene 10).** A general trend (stress-tolerant plants often have low growth rates); hedged with "one reason" and "many". Codex to flag if misleading.
 - **Attempt 1 data.** Invented teaching data: leaf ABA rising about 14-fold over six days without water, transpiration falling from 12 to 2 g per hour. ABA rises of 10-fold or more under drought are widely reported; 12 g per hour is plausible for a pot of wheat plants rather than one plant at midday. Codex to judge whether "a pot of wheat plants" reads more honestly on the card, and whether g per hour is the best unit.
 - **Time-sensitive facts spoken.** None.
@@ -181,8 +190,8 @@ Counted by script (lines starting "> ", joined with spaces, bold markers removed
 | 6. the same loop, in a plant | 490 |
 | 7. the cost of closing | 353 |
 | 8. xerophytes: built-in savings | 464 |
-| 9. Australian examples, and a way to sort them | 443 |
-| 10. a response, or a built-in feature? | 482 |
+| 9. Australian examples, and a way to sort them | 445 |
+| 10. a response, or a built-in feature? | 489 |
 | 11a. attempt one (read the graph) | 283 |
 | 11b. feedback, item one | 353 |
 | 11c. attempt two (an unseen xerophyte) | 290 |
@@ -190,7 +199,7 @@ Counted by script (lines starting "> ", joined with spaces, bold markers removed
 | 12. decision rule and handoff | 291 |
 | 13. key notes (quiet, about 60 seconds) | 75 |
 
-Revision 1 total: **5,855 characters**, 16 scene files (inside 5,500 to 6,800). Speech about 440 s; with 32 s of padding (16 scenes), about 12 s of stated holds and settles, 20 s of countdowns (two) and 55 s more of the quiet notes hold: **about 559 s (9.3 minutes)**, about 11 s under the 570 s cap. Feedback 11b about 27 s, 11d about 28 s (both inside 15 to 30 s by script; the exact audio is still to be timed). Scene 2 (503) and scene 6 (490) are the longest; check both at playback speed.
+Revision 2 total: **5,864 characters** (Revision 1: 5,855), 16 scene files (inside 5,500 to 6,800). Speech about 441 s; with 32 s of padding (16 scenes), about 12 s of stated holds and settles, 20 s of countdowns (two) and 55 s more of the quiet notes hold: **about 560 s (9.3 minutes)**, about 10 s under the 570 s cap. Feedback 11b about 27 s, 11d about 28 s (both inside 15 to 30 s by script; the exact audio is still to be timed). Scene 2 (503) and scene 6 (490) are the longest; check both at playback speed.
 
 Reserve trims at preview, in order, if the voiced take runs over 9.5 minutes: (1) scene 9's "Small or needle-like leaves have less surface to lose water from." (about 5 s; the grey tag stays and key note 4 keeps it); (2) scene 4's simile ", like two long balloons with tape along their inner edges," (about 4 s; the coded side panel is then dropped); (3) scene 10's "which is one reason many of these plants grow slowly" clause (about 4 s). Do not cut scene 3 (the trade-off is the reason regulation is needed).
 
@@ -202,12 +211,12 @@ Have (reuse; inspected 30 Oct on a dark contact sheet):
 - Coded reuse: the `lineGraph` diagram and house bar chart; b01's `LoopRing` and `SignalPulse`; b02's `EvapDots`.
 - **Not used:** `m7-healthy-leaf-v1.png`, `m7-myrtle-leaf-healthy-v1.png` and `public/assets/leaf.png` (whole leaves seen from above; they cannot show stomata or the inside of a leaf); `y11-leaf-tree-cell-v1.png` (a three-part icon strip, too small and schematic for the leaf window); `b3b-potato-plant-v1.png` (no pot or roots, so the root signal cannot be shown); `m7-banksia-seedling-collapsed-v1.png` (a seedling killed by root rot, so it would teach the wrong cause of drooping); `b1-dry-soil-trays-v1.png` (seedling trays on cracked ground; a field picture, not one plant); `m5x-koala-v1.png` (its eucalypt sprig is small and the koala would pull attention from the leaves).
 
-Need (painted, Codex brief below):
-- **New** `m8-leaf-cross-section-v1.png`: scenes 2, 3, 8.
-- **New** `m8-xerophyte-leaf-section-v1.png`, matched to the leaf section: scenes 8, 10, 11d.
-- **New** matched pair `m8-stoma-open-v1.png` and `m8-stoma-closed-v1.png`: scenes 4 to 7, 10, 11b, 12 (also reusable in g03 and p02).
-- **New** `m8-potted-plant-wilted-v1.png`, matched to the existing `b2b-prop-new-plant-v1.png`: scene 7.
-- **New** `m8-eucalypt-hanging-leaves-v1.png`: scene 9.
+Delivered (brief 114, 30 Oct; `../assets/brief114-provenance.json`; technical candidates, owner art acceptance and cross-fade playback pending), all in `public/assets/biology/`:
+- `m8-leaf-cross-section-v1.png`: scenes 2, 3, 8.
+- `m8-xerophyte-leaf-section-v1.png`, matched to the leaf section: scenes 8, 10, 11d.
+- Matched pair `m8-stoma-open-v1.png` and `m8-stoma-closed-v1.png`: scenes 4 to 7, 10, 11b, 12 (also reusable in g03 and p02).
+- `m8-potted-plant-wilted-v1.png`, matched to the existing `b2b-prop-new-plant-v1.png`: scene 7.
+- `m8-eucalypt-hanging-leaves-v1.png`: scene 9.
 
 Plate list summary (Revision 1). **Existing:** two. **New:** six files (two matched pairs, one plate matched to an existing plate, and one single plate). If the brief must be cut: drop the eucalypt sprig first (scene 9 keeps the spinifex and says "many eucalypts hang their leaves vertically" over a grey tag, which is weaker); then the wilted plant (scene 7 shows wilting by a `Cam` tilt and droop on the existing plate, which reads as a cheap effect, so avoid if possible). Keep the leaf and xerophyte sections and the stoma pair: they carry the mechanism.
 
@@ -233,11 +242,12 @@ Report inspection on the dark board background at about 220 px and 600 px wide. 
 ## Codex error-check brief (B8-05)
 
 Error-only report to `../checks/` (root names the check number). Check against primary or standard sources (Taiz and Zeiger or a current university plant physiology text, or a peer-reviewed review):
+- Revision 2 text: scene 9's spinifex sentence and grooved-leaf inset; scene 10's "ABA closing the stomata" and the board's column and row labels; the item 2 model answer; the `.sa.html` metadata link.
 - The water pathway, evaporation from mesophyll cell walls and diffusion through stomata (scene 2), and "mostly on the underside of the leaf".
 - Guard cell opening (scene 4): K⁺ uptake, osmosis, and whether "walls are thicker on the side facing the pore ... stretch less" is acceptable at Year 12; the balloon model's limits.
 - ABA (scene 5): made in roots and leaves under water stress; causes K⁺ to leave guard cells; closure within minutes; "can reopen" after rewatering (scene 6).
 - The scene 6 loop mapping (receptors and control both in root and leaf cells; ABA as the signal) against how NESA marking guidelines have credited plant water balance loops, if any exist; otherwise against standard texts.
-- Scene 9: spinifex (*Triodia*) leaves rolled with stomata inside; vertical (pendulous) adult eucalypt leaves lowering leaf temperature.
+- Scene 9: spinifex (*Triodia*) leaves narrow and rolled, with stomata sheltered in grooves (Revision 2); vertical (pendulous) adult eucalypt leaves lowering leaf temperature.
 - Scene 10: "many of these plants grow slowly"; flag if it misleads.
 - Attempt 1 teaching data plausibility (fold change in ABA; transpiration units); model answer mark split.
 - Add site errors 1 to 9 from this design's Decisions to `../site-corrections-m8.md` (owner record only). Error 1 only after searching for the cited paper; error 6 is a judgement, add it only if Codex agrees it misleads.
@@ -248,7 +258,7 @@ Error-only report to `../checks/` (root names the check number). Check against p
 - Title: "How Do Plants Keep Enough Water? Stomata, ABA and Xerophytes | Year 12 Biology Module 8" (87 characters, by script)
 - Description:
 
-"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module8/lesson05.sa
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module8/lesson05.sa.html
 
 On a hot, dry, windy afternoon a plant can lose water faster than its roots take it up, and it has no brain, nerves or blood. Learn how water leaves a leaf by transpiration, why the same stomata must let carbon dioxide in, how guard cells use potassium ions and osmosis to open and close each pore, and how the hormone ABA closes stomata when water runs short. See the plant's response as a negative feedback loop, the cost of closing, and how xerophytes such as spinifex save water with built-in features. Then practise two HSC-style questions.
 

@@ -1,8 +1,16 @@
 # G01 (Chemistry, Module 8): Precipitation titration and gravimetry: HSC-style practice (design)
 
-Status: Revision 1 (30 Oct): needs learning review and science check (Codex).
+Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
-Narration 5,708 characters, 15 scenes, about 9.1 minutes (547 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
+
+Narration 5,720 characters (Revision 2), 15 scenes, about 9.1 minutes (548 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 2 changes (30 Oct; resolving `../checks/m8g01-learning-review.md` (learning L1) and `../checks/m8g01-claude-science-check.md` (science S1, the same finding)):
+- Q3's closing rule (learning L1 and science S1, merged, as proposed): 4d's last sentence "Averaging can't cancel errors you know are there." becomes "A close average doesn't show that either method was accurate.", because in Q3 the two opposite errors do nearly cancel. The crossed chip's caption becomes "a close mean doesn't validate either method". The decision board's Q3 row ("never trust a mean of biased results") and the Start and stop decision carry the same wording, so no screen line contradicts the example.
+- Metadata: the lesson links stay `.sa.html` (root decision for all Module 8 designs; c01 and c02 updated to match, metadata link only).
+- Recount by script (sum of "> " lines per scene, bold markers removed): 5,720 characters (Revision 1: 5,708), about 548 s. The replacement is 12 characters longer than the review expected, which still fits.
+- Declined: none. Open owner questions: none.
 
 Working title: "Precipitation titration and gravimetry: HSC-style practice". Video type 3 in the teaching playbook (practice walkthrough), authored questions only. Every question is written for HSCScience and is never presented, said or implied to be an official NESA question; every question card carries the tag "HSC-style question, written for HSCScience". This is a hard-practice video: the worked walkthroughs are the content, so each walkthrough may run longer than the brief end-of-video feedback rule (AGENTS.md exception, owner 16 Oct). Each question is shown as an exam would word it (stem, data, demands); it ends "Pause here to answer." with a 10 s countdown and keeps the full question on screen during the attempt; the walkthrough underlines each given in the question text at the cue where it is used (owner rule, 18 Oct: no givens card); it reasons one stage per scene and ends with one crossed-out classic mistake. Learner copy never mentions marks. **Route id:** `chem-m8-g01` (playlist order 5, after chem-m8-p02, before chem-m8-c03a). Production label G01 (Chemistry, Module 8). Lesson key `m8g01`.
 
@@ -34,7 +42,7 @@ Practice and transfer only: first coverage stays with chem-m8-c01 (precipitation
 - **Site alignment.** Site L01's Mohr worked example (25.00 mL, 18.50 mL of 0.1000 mol/L, 0.0740 mol/L) and its MC (20.00 mL, 16.00 mL of 0.0500 mol/L) are not reused; their distractors (dividing by the titre, the 2 : 1 ratio) are recalled in Q1's ratio stage. Site L02 Activity A1 (0.348, 0.351, 0.392 g with a damp third trial) is the idea behind Q2's outlier, written with new numbers, a new compound and a non-1 : 1 ratio; its answer pattern ("exclude Trial 3 because the note states the precipitate was still slightly damp") is the model for Q2 (a). Site L02's error table ("always state the direction") is Q3's answer pattern. c02's Open decision ("damp-trial data: recommended g01") is met this way.
 - **Entry knowledge (do not re-teach; recall in one clause each).** From c01: Ag⁺ + Cl⁻ → AgCl, 1 : 1; the chromate's 2 : 1 is the indicator's reaction; drop the rough titre; concordant titres within 0.10 mL; n = cV; divide by the aliquot; × 35.45 for g/L; seawater roughly 19 g/L chloride. From chem-m6-c12: rinse the burette with the solution it will hold; a volumetric flask makes a known dilution. From c02: mass → moles → ratio → target; extra mass reads high, lost solid reads low; constant mass; repeats keep a bias. From p02: a known value lets you judge accuracy; recovery. From skills-s07: accuracy is closeness to the true value; a systematic error pushes every trial the same way.
 - **Learner-visible vocabulary (callbacks only).** Aliquot (c01, chem-m6-c12; a measured portion of the solution); dilution factor (screen tag only: how many times the solution was diluted); systematic error (s07, c02). No new terms.
-- **Start and stop.** Starts at an unseen titration data set with a dilution; stops after three walkthroughs and a decision board: leave out rough and faulty results and say why; take the ratio from the precipitate's equation or formula, not the indicator; track every dilution back to the original sample; for each error, ask whether it adds or loses volume or mass, then state which way the answer moves; never trust an average of results you know are biased.
+- **Start and stop.** Starts at an unseen titration data set with a dilution; stops after three walkthroughs and a decision board: leave out rough and faulty results and say why; take the ratio from the precipitate's equation or formula, not the indicator; track every dilution back to the original sample; for each error, ask whether it adds or loses volume or mass, then state which way the answer moves; a close mean of two biased results doesn't show that either method was accurate.
 - **Placement and handoff.** After chem-m8-p02 (the previous video in the playlist). Scene 5 hands off: "Next, identifying ions: which tests tell you which cation is there?" (route chem-m8-c03a).
 - **Visual system.** One practice board throughout, in the G03 layout: top-left the **question card** (stem, data and demands as an exam prints them, with the tag "HSC-style question, written for HSCScience"), kept readable through each question; the working fills the right two thirds; a **type badge** top-right ("Titration with a dilution", "Gravimetric ratio", "Evaluate the errors"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is **underlined in amber in the question text** at the cue where it is used. A **check strip** on the far left carries four rows, "which results to use?", "ratio from the precipitate?", "every dilution tracked?", "error: extra or lost, which way?", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Colour key from c01 and c02: silver pale grey, chloride green, sulfate yellow-green, precipitate white; givens and units navy; the current answer bright; earlier lines dim; amber only for underlined givens. **Clutter rule (owner):** besides the question strip and the check strip, at most about three bright text items in the working area at once; completed lines dim while the current line writes.
 - **New coded items (lesson-local, suggested folder `src/explainer/lessons/chem-m8-g01`):** a **dilution ladder** (three stacked vessel outlines, coded, not plates: "seawater 10.00 mL" → "flask 250.0 mL" → "aliquot 25.00 mL", with the moles written beside each rung and "×10" and "÷0.01000 L" arrows climbing back up; Q1); a **formula unit counter** (one coded Al₂(SO₄)₃ unit with its three sulfate groups lighting one at a time, each pairing with a Ba²⁺ dot and becoming a white tile; Q2); a **two-arrow error board** (two columns, "Method 1: titration" and "Method 2: gravimetric", each with a cause chain and a vertical arrow against a dashed "known 0.0620" line; Q3). Imported, not copied: G03's question card, check strip, `PauseHold`, `AnsBox` and `Checks` (with a `labels` prop); c01's titre table and calculation board; c02's two-way error board; p02's recovery gauge (Q3 b, small); B6a's `WrongChip` and `Cross`.
@@ -113,14 +121,14 @@ Visual: the card shrinks to a strip. Type badge "Evaluate the errors". The two-a
 Visual: Method 1's chain dims; its arrow stays. "some precipitate passed through a small tear" underlines; the funnel thumbnail cross-fades to `m8-filter-funnel-cloudy-filtrate-v1.png` with a coded tear mark on the paper (tag "AgCl lost in the filtrate"; grey chip "p02: look at the filtrate"). Method 2's chain writes: "AgCl lost → mass ↓ → n(Cl⁻) ↓" (grey chip "c02: lost reads low"). On "low" Method 2's arrow drops below the dashed line to "0.0607". Answer box (a) line 2: "Method 2: AgCl passed through the tear, so the mass was too low, and the chloride too low." On "systematic" a small chip under both arrows: "same direction every repeat: systematic" (grey chip "s07"). Bright at the end: the two arrows either side of the dashed line and answer line 2.
 
 ### 4d. q3-claim (the mean is luck, not accuracy)
-> Part b. The mean lands near the known value only because one error pushed up and the other pushed down by a similar amount. That's luck, not accuracy. Neither method was accurate, and with a slightly bigger tear, the mean would **miss**. The fixes remove each cause: rinse the burette with the silver nitrate solution, and filter through an undamaged paper. So the claim isn't supported. To check accuracy properly, run each fixed method on a known solution like this one. The trap is trusting the **average**. Averaging can't cancel errors you know are there.
+> Part b. The mean lands near the known value only because one error pushed up and the other pushed down by a similar amount. That's luck, not accuracy. Neither method was accurate, and with a slightly bigger tear, the mean would **miss**. The fixes remove each cause: rinse the burette with the silver nitrate solution, and filter through an undamaged paper. So the claim isn't supported. To check accuracy properly, run each fixed method on a known solution like this one. The trap is trusting the **average**. A close average doesn't show that either method was accurate.
 
-Visual: answer (a) dims. "the mean of the two results, 0.0621" underlines; a small mean marker writes at 0.0621, just above the dashed line, joined to both arrows by thin grey brackets (tag "up 0.0015, down 0.0013"). On "miss" Method 2's arrow lengthens downwards by a coded nudge ("bigger tear") and the mean marker slides below the line (tag "the mean moves with the errors"). Answer box (b) writes in three short lines: "The mean's agreement is a coincidence: the errors are in opposite directions and similar in size." / "Neither result is accurate; each method has a systematic error." / "Not supported: fix each cause (rinse the burette with AgNO₃; use an undamaged filter paper), then check each method on a known solution." On "known solution" p02's recovery gauge appears small beside the dashed line (grey chip "p02: test the method on a known sample"). On "average" a chip "mean ≈ 0.0620, so the analysis was accurate" fades in and takes a red scribble cross (caption "two biased results don't make an accurate one"). Bright at the end: answer (b) and the cross.
+Visual: answer (a) dims. "the mean of the two results, 0.0621" underlines; a small mean marker writes at 0.0621, just above the dashed line, joined to both arrows by thin grey brackets (tag "up 0.0015, down 0.0013"). On "miss" Method 2's arrow lengthens downwards by a coded nudge ("bigger tear") and the mean marker slides below the line (tag "the mean moves with the errors"). Answer box (b) writes in three short lines: "The mean's agreement is a coincidence: the errors are in opposite directions and similar in size." / "Neither result is accurate; each method has a systematic error." / "Not supported: fix each cause (rinse the burette with AgNO₃; use an undamaged filter paper), then check each method on a known solution." On "known solution" p02's recovery gauge appears small beside the dashed line (grey chip "p02: test the method on a known sample"). On "average" a chip "mean ≈ 0.0620, so the analysis was accurate" fades in and takes a red scribble cross (caption "a close mean doesn't validate either method"). Bright at the end: answer (b) and the cross.
 
 ### 5. decision-board
 > So for any precipitation titration or gravimetric question. Leave out rough and faulty **results**, and say why. Take the ratio from the precipitate's equation or formula, not from the indicator. Track every **dilution** back to the original sample. And for each error, ask whether it adds or loses volume or mass, then say which way the answer **moves**. Next, identifying ions: which tests tell you which cation is there?
 
-Visual: the check strip returns full size as a two-column board, "Check" and "What you do", each row lighting on its cue with its question number badge: on "results" "Which results to use → drop the rough titre; exclude a result for its stated cause, not its size (Q1, Q2)"; "Ratio from the precipitate → Ag⁺ : Cl⁻ 1 : 1; 1 Al₂(SO₄)₃ : 3 BaSO₄; over 100% means check the ratio (Q1, Q2)"; on "dilution" "Every dilution tracked → aliquot → flask → original sample (Q1)"; on "moves" "Extra or lost, which way → diluted titrant: high; lost solid: low; never trust a mean of biased results (Q3)". Under the board, small, the c02 line: "mass → moles → ratio → target." On "Next" a chip "Next: how do flame, precipitate and complex tests identify a cation?" slides in at the lower right. Hold about 2 seconds.
+Visual: the check strip returns full size as a two-column board, "Check" and "What you do", each row lighting on its cue with its question number badge: on "results" "Which results to use → drop the rough titre; exclude a result for its stated cause, not its size (Q1, Q2)"; "Ratio from the precipitate → Ag⁺ : Cl⁻ 1 : 1; 1 Al₂(SO₄)₃ : 3 BaSO₄; over 100% means check the ratio (Q1, Q2)"; on "dilution" "Every dilution tracked → aliquot → flask → original sample (Q1)"; on "moves" "Extra or lost, which way → diluted titrant: high; lost solid: low; a close mean doesn't validate either method (Q3)". Under the board, small, the c02 line: "mass → moles → ratio → target." On "Next" a chip "Next: how do flame, precipitate and complex tests identify a cation?" slides in at the lower right. Hold about 2 seconds.
 
 ### 6. key-notes (reuse take: key-notes; quiet, about 60 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -179,7 +187,7 @@ Self-check (30 Oct), by script (Python); atomic masses as c01 and c02 (Al 26.98,
 
 ## Narration length estimate
 
-Counted by script (15 scenes; `### N.` headings with letter suffixes, "> " lines joined, bold markers removed, key-notes line as the standard notes line), at 13.3 characters per second, Revision 1, 30 Oct.
+Counted by script (15 scenes; `### N.` headings with letter suffixes, "> " lines joined, bold markers removed, key-notes line as the standard notes line), at 13.3 characters per second, Revision 2, 30 Oct (Revision 1: 5,708).
 
 | Scene | Characters |
 | --- | --- |
@@ -195,14 +203,14 @@ Counted by script (15 scenes; `### N.` headings with letter suffixes, "> " lines
 | 4a. q3-question (question 3: evaluate the errors) | 537 |
 | 4b. q3-titration (a diluted titrant reads high) | 440 |
 | 4c. q3-gravimetric (lost precipitate reads low) | 270 |
-| 4d. q3-claim (the mean is luck, not accuracy) | 552 |
+| 4d. q3-claim (the mean is luck, not accuracy) | 564 |
 | 5. decision-board | 411 |
 | 6. key-notes (reuse take: key-notes; quiet, about 60 seconds) | 75 |
-| **Total** | **5,708** |
+| **Total** | **5,720** |
 
-**5,708 characters, 15 scenes** (inside 5,500 to 6,800).
+**5,720 characters, 15 scenes** (inside 5,500 to 6,800).
 
-Timing: speech about 429 s; padding about 30 s (15 scenes at 2 s); stated holds about 3 s (hook 1 s, decision board 2 s); countdowns 30 s (three); the quiet notes hold beyond its speech about 55 s: **about 547 s, 9.1 minutes**.
+Timing: speech about 430 s; padding about 30 s (15 scenes at 2 s); stated holds about 3 s (hook 1 s, decision board 2 s); countdowns 30 s (three); the quiet notes hold beyond its speech about 55 s: **about 548 s, 9.1 minutes**.
 
 Reserve trims if the voiced take runs over 9.5 minutes: (1) 2c's last sentence (about 3 s; the c01 chip carries it); (2) 4d's "So the claim isn't supported." (about 2 s; answer (b) carries it). Do not cut below 5,500 without replacing the content.
 
@@ -220,7 +228,7 @@ Holds (10 s countdown after the speech, "Pause here to answer." on screen, card 
 
 Have (inspected 30 Oct by contact sheet; brief 111 m8 plates are "technical candidate, owner art acceptance pending"; scale uniformly only, never stretched): `m8-mohr-flask-endpoint-v1.png` (hook, Q1 card), `m8-balance-watch-glass-v1.png` (hook, Q2 card), `m6-burette-clamp-stand-v1.png` (Q3 card and 4b; no readable graduations, so values are coded text), `m8-filter-funnel-white-ppt-v1.png` (Q3 card).
 
-Need: **no new plates.** Q3's walkthrough (4c) reuses `m8-filter-funnel-cloudy-filtrate-v1.png`, requested in chem-m8-p02's Codex asset brief; if it is not delivered, 4c shows a coded tear mark on `m8-filter-funnel-white-ppt-v1.png` instead.
+Need: **no new plates.** Q3's walkthrough (4c) reuses `m8-filter-funnel-cloudy-filtrate-v1.png`, requested in chem-m8-p02's Codex asset brief (held in brief 114, released for commissioning by p02 Revision 2); if it is not delivered, 4c shows a coded tear mark on `m8-filter-funnel-white-ppt-v1.png` instead.
 
 Coded: question cards, answer boxes, titre and results tables, check strip and decision board, equation strips, the dilution ladder, the formula unit counter, the two-arrow error board, crossed chips, countdown ring. No people or hands.
 
@@ -259,7 +267,7 @@ Error-only check, together with the learning review and science check (Codex now
 
   #Year12Chemistry #AnalyticalChemistry #HSCScience"
 - **syllabusDotpoints:** the quoted dotpoint above, bullets kept as printed. `verifyWording`: true (checked against `programme/syllabus/chem-2017-y12.json`, C8-IQ1-03, p58).
-- **Lesson link:** site lesson 1 first (`.sa.html` form as briefed; root to choose one link form for c01, c02, p02 and g01), with lesson 2 as a second line.
+- **Lesson link:** site lesson 1 first, `.sa.html` form (root decision, Revision 2; c01, c02 and p02 use the same form), with lesson 2 as a second line.
 - **Playlist:** Year 12 Chemistry: Module 8, Applying Chemical Ideas (2017 syllabus), after chem-m8-p02 (playlist order 5).
 
 ## Open decisions
@@ -267,7 +275,7 @@ Error-only check, together with the learning review and science check (Codex now
 - **Route JSON (recommended: root applies).** For chem-m8-g01, replace the cut chem-m8-p01 with chem-m8-c01 and chem-m8-c02 in `prerequisites` (keep chem-m8-p02), update `entryKnowledge` to "Recall chem-m8-c01, chem-m8-c02 and chem-m8-p02", and set `next` to chem-m8-c03a (review change 1).
 - **Three questions, not four (recommended keep).** A fourth (for example a back titration) would repeat Module 6 and push past 9.5 minutes.
 - **Q2's compound (recommended keep).** Aluminium sulfate gives the non-1 : 1 ratio the route stop asks for and links to water treatment. Alternative: magnesium chloride by AgCl (1 MgCl₂ : 2 AgCl), which keeps the chloride theme at the cost of using AgCl twice.
-- **Lesson link form** (`.sa.html` or not) and **lesson key** (`m8g01`): root to confirm.
+- **Lesson link form:** closed, `.sa.html`. **Lesson key** (`m8g01`): root to confirm when adding the LESSONS entry.
 
 ## Review notes for Claude (author, not learner copy)
 

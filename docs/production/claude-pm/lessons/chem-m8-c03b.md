@@ -1,8 +1,18 @@
 # M8 C03b: How do we identify the anion? Acid first, then barium and silver, with confirming tests for all eight anions (design)
 
-Status: Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
+Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
-Narration 5,631 characters (Revision 1), 17 scenes (including the key notes hold), about 8.6 minutes (515 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
+
+Narration 5,664 characters (Revision 2, summed per scene), 17 scenes (including the key notes hold), about 8.6 minutes (518 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 2 changes (30 Oct; resolving `../checks/m8c03b-learning-review.md` (learning L1) and `../checks/m8c03b-claude-science-check.md` (no new findings; requested decisions)):
+- Memory line keeps the phosphate exception (learning L1, as proposed): scene 11 now says "To keep it straight: for barium and halide tests, acid first, using an acid that adds none of the ions you're testing for. Phosphate needs a separate neutral portion." "Nitric acid is the safe one." is cut; the screen line keeps "(HNO₃ before silver)". The halide ladder stays. Handwritten line 1 becomes "Barium and halides: acid first, adding none of the ions you're testing for (HNO₃ before silver)", with "Phosphate: a separate neutral portion." under it. Key note 2 starts "Barium and halides: acid first"; key note 4 starts "PO₄³⁻: a separate neutral portion"; the notes-screen memory aid and the memory aid check carry the same two parts.
+- Requested decisions (science check): neutral silver nitrate for phosphate is kept; "needs concentrated ammonia" for AgBr is kept, and scene 7's AgBr cross-fade gains a small grey tag "with enough excess", so the picture doesn't promise that every quantity clears. Both Open decisions are closed.
+- Plates: `m8-ppt-agbr-cream-v2.png`, `m8-ppt-agi-pale-yellow-v2.png`, `m8-ppt-ag3po4-yellow-v1.png` and `m8-acetate-fecl3-red-brown-v1.png` are delivered (brief 114); owner art acceptance and cross-fade playback pending.
+- Length (review constraint: stay above 5,500): the repair adds 49 characters. Recount by script (sum of "> " lines per scene, bold markers removed): 5,664 characters (Revision 1: 5,615 summed, 5,631 joined), 164 above the floor, about 518 s.
+- Metadata: the `.sa.html` link is kept (root decision for all Module 8 designs). Review evidence path corrected to `checks/m8c03b-claude-science-check.md`.
+- Declined: none. Open owner questions: none.
 
 Scope: second of the two delivery parts that replace route entry chem-m8-c03 (`../../module8-route-review-claude.md` change 1: c03a cations, c03b anions; p03 follows c03b). Follows `chem-m8-c03a.md` (Revision 1) directly and reuses its board: suspect strip, reagent drop, ion lock and complex wrap insets, flowchart builder (from chem-m7-c13), crossed chips, countdown ring, key notes board. Format, voice and staging follow `chem-m8-c01.md` and `chem-m8-c02.md` (Revision 2) and `chem-m7-c13.md` (Revision 3). Recalled, not re-taught: `chem-m8-c03a.md` (fresh portions, sorting then confirming, complex ions, [Ag(NH₃)₂]⁺), `chem-m5-c13.md` (solubility rules: nitrates all soluble, halides insoluble with Ag⁺, sulfates insoluble with Ba²⁺, carbonates and phosphates mostly insoluble; net ionic equations), Module 6 (acids donate H⁺; carbonate plus acid gives CO₂; limewater; litmus; ethanoic acid is a weak acid), Module 7 (ethanoic acid, the acid in vinegar). Pre-design pack: `../pre-design/chem-m8-qualitative-ion-tests.md`. Site extract: `../site-extracts/chem-m8-l03.md` (thin; the HTML was read instead), and site lesson 3 (`C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson03.sa.html`) read in full (30 Oct, read-only). Site corrections: `../site-corrections-m8.md` records none for L03; new corrections below (c03a logs the cation-table ones). Route entry: `chem-m8-c03` in `../../module8-video-route-draft.json`, split by the review. Route stop (c03 as drafted): "Plan confirmatory tests for a given unknown." This part starts at: "The cation is known; find the anion." Next: chem-m8-p03 ("Identify unknown ions by qualitative tests").
 
@@ -99,7 +109,7 @@ Visual: a grey-silver arrow writes: "dilute HNO₃, then AgNO₃ (Ag⁺)". A gre
 ### 7. ammonia confirms
 > Cream and pale yellow can look alike in a test tube, so confirm with ammonia. Ammonia molecules bond to silver ions and form a complex, which pulls the solid back into solution. The less soluble the silver halide, the harder that is. Silver chloride dissolves in dilute ammonia. Silver bromide needs **concentrated** ammonia. And silver iodide stays put, even in concentrated **ammonia**.
 
-Visual: the ammonia ladder: the three tubes stay; a violet arrow "dilute NH₃" drops into all three; AgCl cross-fades to `m5x-no-ppt-clear-v1.png`, the others stay; the complex wrap inset shows NH₃ around Ag⁺ (c03a). On "concentrated" a violet arrow "conc. NH₃"; the AgBr tube cross-fades to `m5x-no-ppt-clear-v1.png`. On "ammonia" the AgI tube stays; tag "AgI: doesn't dissolve". The ladder labels write beside the tubes: "dilute: Cl⁻", "concentrated: Br⁻", "neither: I⁻" (the current one bright). Chip "less soluble → harder to dissolve" (grey). The silver family then dims.
+Visual: the ammonia ladder: the three tubes stay; a violet arrow "dilute NH₃" drops into all three; AgCl cross-fades to `m5x-no-ppt-clear-v1.png`, the others stay; the complex wrap inset shows NH₃ around Ag⁺ (c03a). On "concentrated" a violet arrow "conc. NH₃"; the AgBr tube cross-fades to `m5x-no-ppt-clear-v1.png`, with a small grey tag "with enough excess". On "ammonia" the AgI tube stays; tag "AgI: doesn't dissolve". The ladder labels write beside the tubes: "dilute: Cl⁻", "concentrated: Br⁻", "neither: I⁻" (the current one bright). Chip "less soluble → harder to dissolve" (grey). The silver family then dims.
 
 ### 8. phosphate: a yellow that isn't iodide
 > Phosphate gives a yellow silver solid too, silver phosphate. So how do you keep it apart from iodide? Test phosphate in a neutral solution, not an acidified one. In acid, phosphate ions pick up hydrogen ions and stop precipitating with silver, which is also why acidifying keeps phosphate out of the halide test. So add silver nitrate to a neutral portion, and a yellow precipitate suggests **phosphate**. Then add dilute nitric acid. Silver phosphate **dissolves**, but silver iodide doesn't.
@@ -117,9 +127,9 @@ Visual: a blue arrow writes: "warm with NH₄⁺ salt". `m6-litmus-red-v1.png` s
 Visual: the full flowchart lights family by family (orange, amber, grey-silver, yellow, blue, with violet confirmation arrows), scaled to the right two thirds at reading size; caveat tags hidden. A coded highlight runs down each branch as it is named. On "next" chip "fresh portion each test" (bright). Hold about 3 seconds (reading hold).
 
 ### 11. memory aid
-> To keep it straight: acid first, and pick the acid that adds nothing you're testing for. Nitric acid is the safe one. Then the silver halides go white, cream, pale yellow, and ammonia dissolves them in dilute, then concentrated, then **neither**.
+> To keep it straight: for barium and halide tests, acid first, using an acid that adds none of the ions you're testing for. Phosphate needs a separate neutral portion. Then the silver halides go white, cream, pale yellow, and ammonia dissolves them in dilute, then concentrated, then **neither**.
 
-Visual: board clears. Handwritten line 1: "Acid first, and the acid must add nothing you're testing for (use HNO₃)." Handwritten line 2: "AgCl white, AgBr cream, AgI pale yellow: NH₃ dilute, concentrated, neither." Hold about 2 seconds.
+Visual: board clears. Handwritten line 1: "Barium and halides: acid first, adding none of the ions you're testing for (HNO₃ before silver)." On "neutral portion" a smaller line writes under it: "Phosphate: a separate neutral portion." Handwritten line 2: "AgCl white, AgBr cream, AgI pale yellow: NH₃ dilute, concentrated, neither." Hold about 2 seconds.
 
 ### 12. attempt 1 (countdown, 10 seconds)
 > Your turn. A student tests for chloride by acidifying with hydrochloric acid, then adding silver nitrate. Explain why the conclusion isn't valid, and describe a better test. Pause here to answer.
@@ -151,11 +161,11 @@ Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Dilute acid first. CO₃²⁻: fizzes, CO₂ turns limewater milky (CO₃²⁻ + 2H⁺ → CO₂ + H₂O). CH₃COO⁻: no fizz, vinegar smell on warming; neutral FeCl₃ gives a red-brown complex.
-2. Acidify before Ba²⁺ and Ag⁺ tests to remove carbonate. Use dilute HNO₃ for the halide test (HCl adds Cl⁻). SO₄²⁻: acidified Ba²⁺ gives white BaSO₄(s) that stays in acid.
+2. Barium and halides: acid first, to remove carbonate. Use dilute HNO₃ for the halide test (HCl adds Cl⁻). SO₄²⁻: acidified Ba²⁺ gives white BaSO₄(s) that stays in acid.
 3. Halides: acidified AgNO₃. AgCl white (dissolves in dilute NH₃), AgBr cream (concentrated NH₃), AgI pale yellow (neither). Ag⁺ + X⁻ → AgX(s).
-4. PO₄³⁻: AgNO₃ in neutral solution gives yellow Ag₃PO₄(s), which dissolves in dilute HNO₃. OH⁻: test last (CO₃²⁻ and PO₄³⁻ are basic too); warm with NH₄⁺, NH₃ turns damp red litmus blue.
+4. PO₄³⁻: a separate neutral portion; AgNO₃ gives yellow Ag₃PO₄(s), which dissolves in dilute HNO₃. OH⁻: test last (CO₃²⁻ and PO₄³⁻ are basic too); warm with NH₄⁺, NH₃ turns damp red litmus blue.
 
-Memory aid (large, on the notes screen): *Acid first, and the acid must add nothing you're testing for.* Second line: *White, cream, pale yellow: dilute, concentrated, neither.*
+Memory aid (large, on the notes screen): *Barium and halides: acid first, adding none of the ions you're testing for. Phosphate: neutral portion.* Second line: *White, cream, pale yellow: dilute, concentrated, neither.*
 
 ## Teaching checks
 
@@ -195,13 +205,13 @@ Checked by hand (30 Oct); Codex to re-check against the NESA data sheet, the CRC
 
 ## Memory aid check
 
-- **"Acid first, and the acid must add nothing you're testing for."** From the Module 8 bank entry "Acidify before testing anions" (*Trap*). Assumptions checked: the bank says "Acidify with dilute nitric acid first ... Don't use HCl (it adds chloride) or H₂SO₄ (it adds sulfate)". The video narrows this: HCl is acceptable for the sulfate test (site's method), so the rule is phrased as "nothing you're testing for", which holds for both cases. Phosphate is the exception (tested in neutral solution), said in scene 8 before the aid.
+- **"Barium and halides: acid first, adding none of the ions you're testing for. Phosphate: neutral portion."** (Revision 2 wording, learning L1.) From the Module 8 bank entry "Acidify before testing anions" (*Trap*). Assumptions checked: the bank says "Acidify with dilute nitric acid first ... Don't use HCl (it adds chloride) or H₂SO₄ (it adds sulfate)". The video narrows this: HCl is acceptable for the sulfate test (site's method), so the rule is phrased as "none of the ions you're testing for", which holds for both cases. Phosphate is the exception (tested in a separate neutral portion): said in scene 8 before the aid, and now carried in the aid itself, so a student applying the final rule to every test doesn't suppress the phosphate precipitate.
 - **"White, cream, pale yellow: dilute, concentrated, neither."** From the bank's "AgCl white, AgBr cream, AgI pale yellow" and the site's ammonia rows. Assumptions checked: AgBr dissolves in concentrated ammonia, sometimes only partly (author note b); the aid is a confirmation of the colour, not a replacement for it.
 - **Considered, not used:** the cation flowchart aid (c03a); flame colour anchors (c03a, p03).
 
 ## Narration length estimate
 
-Revision 1 count (30 Oct; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **5,631 characters**, 17 scenes. Characters per scene (1 to 17): 411, 400, 399, 517, 332, 365, 380, 485, 376, 361, 242, 195, 360, 160, 324, 233, 75. At 13.3 characters per second the speech is about 423 s; add about 17 s of holds (including scene 10's 3 s reading hold), 20 s for two countdowns and about 55 s more of the quiet notes hold: **about 8.6 minutes (515 s)**, inside the 5,500 to 6,800 character band and under the 570 s ceiling. Scene 4 is the longest (517 characters, about 39 s); watch its pace in the voiced preview. The first count (5,379) was under the band, so scene 5 gained the gravimetric link (c02) and scene 6 the solubility-rules reason. Feedback: scene 13 about 27 s, scene 15 about 24 s. Reserve trims if the voiced take runs long: scene 1's "and all give the same copper results" (keep the chips), scene 10's last sentence (keep the chip). The margin above 5,500 is small (131 characters), so any cut must be replaced. Do not cut below 5,500 without replacing the content.
+Revision 2 count (30 Oct; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted, bold markers removed, summed per scene): **5,664 characters**, 17 scenes. Revision 1 was 5,615 summed (5,631 joined between scenes). Characters per scene (1 to 17): 411, 400, 399, 517, 332, 365, 380, 485, 376, 361, 291, 195, 360, 160, 324, 233, 75. At 13.3 characters per second the speech is about 426 s; add about 17 s of holds (including scene 10's 3 s reading hold), 20 s for two countdowns and about 55 s more of the quiet notes hold: **about 8.6 minutes (518 s)**, inside the 5,500 to 6,800 character band and under the 570 s ceiling. Scene 4 is the longest (517 characters, about 39 s); watch its pace in the voiced preview. The first count (5,379) was under the band, so scene 5 gained the gravimetric link (c02) and scene 6 the solubility-rules reason. Revision 2's memory line adds 49 characters. Feedback: scene 13 about 27 s, scene 15 about 24 s. Reserve trims if the voiced take runs long: scene 1's "and all give the same copper results" (keep the chips), scene 10's last sentence (keep the chip). The margin above 5,500 is small (164 characters), so any cut must be replaced. Do not cut below 5,500 without replacing the content.
 
 ## Assets
 
@@ -211,7 +221,7 @@ Not used: `m8-ppt-agbr-cream-v1.png`, `m8-ppt-agi-pale-yellow-v1.png` (brief 60;
 
 Coded: suspect strip, reagent drop, ion lock inset, complex wrap inset, fizz and delivery line, warm and waft, litmus turn placement, ammonia ladder, anion flowchart, crossed chips, countdown ring, key notes board.
 
-Need: **four new plates** (Codex asset brief): `m8-ppt-agbr-cream-v2.png`, `m8-ppt-agi-pale-yellow-v2.png`, `m8-ppt-ag3po4-yellow-v1.png`, `m8-acetate-fecl3-red-brown-v1.png`.
+Delivered (brief 114, `../assets/brief114-provenance.json`; m5x rack, alpha bounds 568, 200, 1432, 1800; technical candidates, owner art acceptance and cross-fade playback pending): `m8-ppt-agbr-cream-v2.png`, `m8-ppt-agi-pale-yellow-v2.png`, `m8-ppt-ag3po4-yellow-v1.png`, `m8-acetate-fecl3-red-brown-v1.png`. No further plates needed.
 
 ## Codex asset brief
 
@@ -234,7 +244,7 @@ Error-only check (report errors; do not restyle or rewrite):
 4. Confirm no em dash (U+2014) anywhere in this file (the en dashes in the quoted dotpoint are as printed), and Australian spelling in narration and screen text ("sulfate", "colour", "litmus").
 5. Confirm the narration character count and per-scene counts by script with the build parser rules.
 6. Add site corrections 1 to 3 under Decisions to `../site-corrections-m8.md` (owner record only; the site is read-only here), and log the clarity note separately.
-7. Inspect the four delivered plates against the Codex asset brief, including the overlay with the m5x set.
+7. Plates were delivered and technically checked in brief 114; confirm the design names those exact filenames, and do not re-run the art QA.
 
 ## YouTube metadata (draft)
 
@@ -261,9 +271,9 @@ Prerequisites: Testing for cations. Solubility rules and net ionic equations. Ne
 ## Open decisions
 
 - **Route JSON (recommended: root applies).** See `chem-m8-c03a.md` Open decisions: add chem-m8-c03b (`syllabusActions` C8-IQ1-02, anions; prerequisites chem-m8-c03a, chem-m5-c13; next chem-m8-p03), and set p03's prerequisites to c03a and c03b.
-- **Site link form.** As c03a: `.sa.html` used as instructed; earlier M8 designs use the extensionless form.
-- **Phosphate test choice.** The site's neutral silver nitrate test is used. If the learning review or the subject teacher prefers ammonium molybdate (common in school texts), it replaces scene 8's reagent; the "neutral" cause then becomes "in nitric acid with molybdate", and the AgI contrast is lost. Recommended: keep silver (it ties phosphate to the halide tests and to the acidify rule).
-- **AgBr in concentrated ammonia.** Said as "needs concentrated ammonia" (author note b). If the science check prefers "dissolves partly", the change is on screen only.
+- **Site link form: closed (Revision 2).** `.sa.html` for every Module 8 design; c01 and c02 updated to match (metadata link only).
+- **Phosphate test choice: closed (Revision 2).** The science check supports neutral silver nitrate (yellow Ag₃PO₄, dissolves in dilute HNO₃); ammonium molybdate is not named.
+- **AgBr in concentrated ammonia: closed (Revision 2).** The science check keeps "needs concentrated ammonia"; whether every trace clears depends on amount and ammonia strength, so scene 7's AgBr cross-fade carries a small grey tag "with enough excess". No narration change.
 - **Title length:** 88 characters.
 
 ## Build ids
@@ -272,4 +282,4 @@ Lesson key `m8c03b` (route chem-m8-c03b, pending the route edit). Suggested expl
 
 In order (kebab-case; 17 scene headings, all `### N.`): hook, step-1-acid, acetate, why-acidify, step-2-sulfate, step-3-halides, ammonia-confirms, phosphate, hydroxide, flowchart, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
 
-Holds: attempt-1, attempt-2 (10 s countdown after the speech, "Pause here to answer." on screen). flowchart has a 3 s reading hold. key-notes is the quiet notes hold (about 60 s). Review evidence paths for the LESSONS entry: `learning_review` = `checks/m8c03b-learning-review.md`, `science_check` = `checks/m8c03b-science-check.md`.
+Holds: attempt-1, attempt-2 (10 s countdown after the speech, "Pause here to answer." on screen). flowchart has a 3 s reading hold. key-notes is the quiet notes hold (about 60 s). Review evidence paths for the LESSONS entry: `learning_review` = `checks/m8c03b-learning-review.md`, `science_check` = `checks/m8c03b-claude-science-check.md`.

@@ -9,6 +9,7 @@ Earlier status, Revision 1 (28 Oct): needs learning review and science check (Co
 Narration 5,763 characters (Revision 2; 17 scene files, counted by script from lines starting "> " with bold markers removed), about 9.25 minutes (555 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
 
 Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- Site link (metadata link only; brief 114 science checks, root decision): the YouTube description's first link is now the live page, `https://hscscience.com.au/subjects/biology/year12/module8/lesson02.sa.html`, the same form as b03, b04, b05 and g03. No narration, screen or count change.
 - codex-check-112 found no errors; no changes.
 - Count unchanged from Revision 2. Ready to voice.
 
@@ -272,7 +273,7 @@ Error-only report to `../checks/` (root names the check number). Check against p
 - Title: "How Do Endotherms Regulate Body Temperature? Feedback and Adaptations | Year 12 Biology Module 8" (96 characters, by script)
 - Description:
 
-"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module8/lesson02
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module8/lesson02.sa.html
 
 In November 2018, a heatwave in far north Queensland killed about 23,000 spectacled flying foxes in two days. Learn how endotherms detect a rise in body temperature, how the hypothalamus uses fast nerve signals and slower hormones such as thyroxine, and how vasodilation and sweating move heat out of the body. Sort temperature adaptations into physiological, behavioural and structural types with the red kangaroo, see trends such as countercurrent heat exchange, and find out why negative feedback has limits. Then practise two HSC-style questions.
 

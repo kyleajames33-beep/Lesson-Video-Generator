@@ -9,6 +9,7 @@ Earlier status, Revision 1 (28 Oct): needs learning review and science check (Co
 Narration 5,541 characters (Revision 2), 17 scenes, about 8.5 minutes (510 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
 
 Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- Site link (metadata link only; brief 114 science checks, root decision): the YouTube description's first link is now the live page, `https://hscscience.com.au/subjects/chemistry/year12/module8/lesson01.sa.html`, the same form as p02, g01, c03a and c03b. No narration, screen or count change.
 - codex-check-112 found no errors; no changes.
 - Count unchanged from Revision 2. Ready to voice.
 
@@ -252,7 +253,7 @@ Title: Mohr Titration: Measuring Chloride with Silver Nitrate and a Chromate End
 
 (Title length: 98 characters.)
 
-Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module8/lesson01
+Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module8/lesson01.sa.html
 
 Chloride can't be seen, and it isn't an acid or a base, so how does a titration find it? See how silver nitrate turns chloride into white silver chloride, why a little potassium chromate gives a red-brown endpoint only once the chloride is nearly gone, and why that order comes from the silver each solid needs, not from which salt is less soluble. Learn the pH window and what acid does to the titre, then turn concordant titres into a chloride concentration in mol/L and g/L. Two exam-style questions at the end.
 

@@ -9,6 +9,7 @@ Earlier status, Revision 1 (28 Oct): needs learning review and science check (Co
 Narration 5,506 characters (Revision 3 correction; Revision 2 stated 5,510; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 8.8 minutes (530 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
 
 Revision 3 changes (30 Oct; resolving `../checks/codex-check-112.md`):
+- Site link (metadata link only; brief 114 science checks, root decision): the YouTube description's first link is now the live page, `https://hscscience.com.au/subjects/biology/year12/module8/lesson01.sa.html`, the same form as b03, b04, b05 and g03. No narration, screen or count change.
 - Error 1 (stated total): corrected to 5,506 characters (per-scene sum of the fifteen "> " lines, bold markers removed; joining with spaces gives 5,520, a different convention). Narration unchanged; timing about 530 s unchanged.
 - Error 2 (scene 10d cue): the dip marker now writes On "small fall", the phrase spoken.
 - No narration changes. Ready to voice.
@@ -248,7 +249,7 @@ Error-only report to `../checks/` (root names the check number). Check against p
 - Title: "How Does Negative Feedback Keep Conditions in Range? Homeostasis | Year 12 Biology Module 8" (91 characters, by script)
 - Description:
 
-"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module8/lesson01
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module8/lesson01.sa.html
 
 You lose heat to the room around you every second, yet your core temperature stays close to 37 °C. Learn what homeostasis means, why body conditions are held within a tolerance range around a set point, and how the five parts of a feedback loop (stimulus, receptor, control centre, effector and response) correct a change. See why the loop is called negative feedback, why the extra response eases as conditions recover, and how positive feedback differs. Then practise constructing a loop from a description and interpreting a temperature graph.
 
