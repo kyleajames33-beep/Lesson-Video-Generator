@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-P04-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p04c/lesson.json",
+  "lessonSha256": "94f78f124d707c0578538a3ed94980ae69271ab051e1d638ee92c9c61e0a08c1",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p04c/lesson.production-brief.json",
+    "sha256": "c7f0d3839ae2b93dab2b6abe19d616f34007b32eb01da2732b6337e2d7a2fcd1"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Warm three alcohols with acidified dichromate, and two of them turn it green. That tells you something was oxidised. It doesn't tell you what formed: an aldehyde, a ketone and an acid can all come from the same orange solution. Here you'll make each product, collect it and test it, so the evidence points to one answer.",
+      "hash": "f6fa7ea13ad1",
+      "textSha256": "f6fa7ea13ad12349208863bf5f6feb0ce36d255646c0855a35a5c4f8710d07a5",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/hook.f6fa7ea13ad1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/hook.f6fa7ea13ad1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/hook.f6fa7ea13ad1.generation.json",
+      "plannedRequestSha256": "039ac9f0095b0e4906f3e166a84869eaa0f18a6a4ef3eaa01a6fb92416d552d7"
+    },
+    {
+      "id": "aim-and-alcohols",
+      "parentSceneId": "aim-and-alcohols",
+      "text": "The aim: to investigate the products formed when primary and secondary alcohols are oxidised. Use propan-1-ol and propan-2-ol. They have the same formula, so the only difference is where the O H sits. No tertiary alcohol has three carbons, so add 2-methylpropan-2-ol for comparison. And one tube gets water instead of alcohol. That's the control: it shows whether warming alone changes the dichromate.",
+      "hash": "6511d510c476",
+      "textSha256": "6511d510c4766e101817d699c63c53bd35e260ea279d8c5b9f70eaf8040efa8e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/aim-and-alcohols.6511d510c476.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/aim-and-alcohols.6511d510c476.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/aim-and-alcohols.6511d510c476.generation.json",
+      "plannedRequestSha256": "5012697c7602f7141b81e26ca3921d7529b08c21636464d4bbec156a2e65d2c7"
+    },
+    {
+      "id": "part-a-colour",
+      "parentSceneId": "part-a-colour",
+      "text": "Part one. Your teacher runs the dichromate steps as a demonstration, and you record what you see. The same volume of acidified potassium dichromate goes into four test tubes, with five drops of each liquid, and the tubes stand in a water bath at about sixty degrees. After a few minutes, propan-1-ol and propan-2-ol have turned green. The tertiary alcohol and the water stay orange, so warming alone didn't do it.",
+      "hash": "67f2a1583fc3",
+      "textSha256": "67f2a1583fc32d94d2257abd9ecdd2a1076fa064f2af34fe9265a72a9b0d4963",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/part-a-colour.67f2a1583fc3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/part-a-colour.67f2a1583fc3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/part-a-colour.67f2a1583fc3.generation.json",
+      "plannedRequestSha256": "da3ec9dfcd770e16d62b8e3303cabfc71d4ff980f05aa4240ff8e3796b85fa17"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "What changes, and what stays the same? The independent variable is the alcohol's class: primary, secondary or tertiary. The dependent variable is what you observe: the dichromate's colour, and later the product's test results. Keep the dichromate's volume and concentration, the number of drops, the bath temperature and the heating time the same.",
+      "hash": "9f3605888962",
+      "textSha256": "9f36058889627c79c0eac97f862a03cf5e11769005a849f1946c0d4e9f92ddf7",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/variables.9f3605888962.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/variables.9f3605888962.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/variables.9f3605888962.generation.json",
+      "plannedRequestSha256": "86b862cfed41ab3faa5ad4285e7640af569d9b5d403788e21d78c21fceb330b2"
+    },
+    {
+      "id": "distil-aldehyde",
+      "parentSceneId": "distil-aldehyde",
+      "text": "Part two: make the products and collect them. For propan-1-ol's first product, set up for distillation. Add the alcohol slowly to warm acidified dichromate, and collect what boils off straight away. Propanal boils at about forty eight degrees, about fifty degrees below the alcohol, so it escapes before it can be oxidised again. A still-head reading near fifty supports that it's propanal.",
+      "hash": "ab520892fd7f",
+      "textSha256": "ab520892fd7f17b506503733824f04798dea15a1ce590fb32ed61a51e80dd562",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/distil-aldehyde.ab520892fd7f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/distil-aldehyde.ab520892fd7f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/distil-aldehyde.ab520892fd7f.generation.json",
+      "plannedRequestSha256": "497d4007765a1df2f234d67b25f21af604474c20ff625e484316838238ea46e1"
+    },
+    {
+      "id": "reflux-acid",
+      "parentSceneId": "reflux-acid",
+      "text": "For the acid, use excess dichromate and heat under reflux for about twenty minutes. The condenser sends the vapour back down, so any aldehyde keeps meeting the oxidant until it becomes propanoic acid. Then rearrange the glassware, distil off a sample, and test that.",
+      "hash": "8246643184be",
+      "textSha256": "8246643184be16a734cc49f990d32c068c50489c71da47fba63768bd6b0c61ae",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/reflux-acid.8246643184be.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/reflux-acid.8246643184be.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/reflux-acid.8246643184be.generation.json",
+      "plannedRequestSha256": "caf84c774900f2ed72a0558f51d7a6cd15dbe25e19193f2b76cfab004f891ef2"
+    },
+    {
+      "id": "secondary-ketone",
+      "parentSceneId": "secondary-ketone",
+      "text": "Propan-2-ol is simpler. Heat it with acidified dichromate and distil off the product. You get propanone, a ketone. Dichromate doesn't oxidise a ketone any further, so the timing matters much less here.",
+      "hash": "3eccf30d3b24",
+      "textSha256": "3eccf30d3b243a8f0b3eb1c118273b51b02517f8eaa3b7bc2871816446fbdb1e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/secondary-ketone.3eccf30d3b24.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/secondary-ketone.3eccf30d3b24.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/secondary-ketone.3eccf30d3b24.generation.json",
+      "plannedRequestSha256": "edc046e4ee14a4a55cf0d5cd2107a4b07eb2cd41a5a7739a39a6c2300c7387e9"
+    },
+    {
+      "id": "testing-products",
+      "parentSceneId": "testing-products",
+      "text": "Now test each distillate. Warmed Tollens' reagent gives a silver mirror only with the aldehyde. Benedict's solution turns brick red, again only with the aldehyde. Blue litmus turns red only with the acid. The ketone gives none of these. So each product leaves its own pattern, and that pattern names it.",
+      "hash": "f600b6fe521e",
+      "textSha256": "f600b6fe521e518e0b8c7ea5226664c63c00229d307a64cb4246831a143b750d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/testing-products.f600b6fe521e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/testing-products.f600b6fe521e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/testing-products.f600b6fe521e.generation.json",
+      "plannedRequestSha256": "309575a0820f2280a0274bf22f09dbd3f9c9be5dc9987cbe65c8886b1c4883f6"
+    },
+    {
+      "id": "validity",
+      "parentSceneId": "validity",
+      "text": "Why test the distillate, and not the flask? The flask still holds sulfuric acid, which turns litmus red whatever the product, and coloured chromium ions that would hide a Benedict's result. Distilling carries the product and some water away from the acid and chromium salts, so the test measures what you intended: that's validity. Run known samples too. Glucose has an aldehyde group, so a positive glucose result shows the Tollens' and Benedict's reagents work. Dilute acid checks the litmus, and water shows no change.",
+      "hash": "0da72af7dda3",
+      "textSha256": "0da72af7dda33c5bce38079e005dc2f0aad71cb4bf6a93b17b0e75ce14191edd",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/validity.0da72af7dda3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/validity.0da72af7dda3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/validity.0da72af7dda3.generation.json",
+      "plannedRequestSha256": "293db686bd186ebeef5d948f8c7a5faa30797614fde0555864f660d904a111fc"
+    },
+    {
+      "id": "reliability-accuracy",
+      "parentSceneId": "reliability-accuracy",
+      "text": "Reliability: repeat each test, or compare with other groups. If the patterns agree, the results are reliable. Accuracy here means naming the product correctly. Matching each result to a known sample, and the still-head reading to the product's boiling point, supports that identification and makes it more accurate.",
+      "hash": "cecfb0267429",
+      "textSha256": "cecfb0267429874c72a6d1bf0ba2aa751db9fbbb3c60176f0cd32de204e2dbd1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/reliability-accuracy.cecfb0267429.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/reliability-accuracy.cecfb0267429.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/reliability-accuracy.cecfb0267429.generation.json",
+      "plannedRequestSha256": "f5b96f651d4eecc89fe079755e97112f22c1ee1392c1c5c6f494fbac228c0a47"
+    },
+    {
+      "id": "risk",
+      "parentSceneId": "risk",
+      "text": "Now the risks. Potassium dichromate contains chromium six: it's toxic, can cause cancer, and can trigger allergies. That's why the teacher handles it, in a fume cupboard, with gloves and safety glasses, and every chromium residue goes in the labelled heavy-metal waste. The alcohols and products are flammable, so heat with a water bath or hotplate, never a flame. The teacher makes Tollens' reagent fresh and gets rid of it straight away, because on standing it can form an explosive solid. Organic residues go in the labelled organic waste, not the sink. Pause if you want to copy the full table.",
+      "hash": "4b0efb58a7fd",
+      "textSha256": "4b0efb58a7fd3aafc4c1cbbce4251e58c5acce681b13490ebe48dcf0190e69c8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/risk.4b0efb58a7fd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/risk.4b0efb58a7fd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/risk.4b0efb58a7fd.generation.json",
+      "plannedRequestSha256": "554dce785f66e93aae3f4ebf273266bb3743cd6115323cc672f6d06e53d3db3a"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "One line to keep. Green says oxidised; the test says what.",
+      "hash": "60f312310fb4",
+      "textSha256": "60f312310fb440f4a0648bf7674b3cf1a3964b96d5d4fdb3261192d0567d9734",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/memory-aid.60f312310fb4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/memory-aid.60f312310fb4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/memory-aid.60f312310fb4.generation.json",
+      "plannedRequestSha256": "1d07cf2637b56a8277b0c1495b2a746984c24be713ed6a80a3b290f4053bb4b6"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. In a demonstration, propan-1-ol is refluxed with excess acidified potassium dichromate, and blue litmus paper is dipped into the cooled flask. It turns red, and a student concludes that propanoic acid formed. Explain why this conclusion isn't valid, and how the method should be changed. Pause here to answer.",
+      "hash": "2d4757a6c970",
+      "textSha256": "2d4757a6c97006ecc524a43f201543719db96ae577cd8a8a03a1c85439749471",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/attempt-1.2d4757a6c970.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/attempt-1.2d4757a6c970.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/attempt-1.2d4757a6c970.generation.json",
+      "plannedRequestSha256": "40cb88b0dddfc20a931bbd196ac65793328785fa0fdec46240ec6cd91a035ded"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The flask contains sulfuric acid from the acidified dichromate, so litmus turns red whether or not any propanoic acid formed. Distil off the product and test the distillate, with a blank of acidified dichromate as a check. Repeating the same litmus test is the trap: that checks reliability, not validity.",
+      "hash": "0602c68cafd2",
+      "textSha256": "0602c68cafd22a09ad5f70bf4ab28c3171dc3b50d503a0912aea05f08717b52f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/feedback-1.0602c68cafd2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/feedback-1.0602c68cafd2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/feedback-1.0602c68cafd2.generation.json",
+      "plannedRequestSha256": "c8f192c028d4a2dba0c991aeae402f7c229f6a2b2debf98f61caebc68acbff4a"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Pentan-2-ol and 2-methylbutan-2-ol are each warmed with acidified potassium dichromate. Each mixture is distilled, and the distillate is warmed with Tollens' reagent. Predict the observations for each alcohol, name any organic product, and explain. Pause here to answer.",
+      "hash": "294084543bfd",
+      "textSha256": "294084543bfd14014893a2313d37857ae04ded837d1005b4de1e9540febe68fc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/attempt-2.294084543bfd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/attempt-2.294084543bfd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/attempt-2.294084543bfd.generation.json",
+      "plannedRequestSha256": "dc1cde7d2261f17c76e3e3f435414b11ec6d5f0fa47f4b03584a3c3345ae22cc"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Pentan-2-ol is secondary. Its O H carbon has one hydrogen, so the dichromate turns green and the product is pentan-2-one. That ketone has no hydrogen on its carbonyl carbon, so there's no mirror. 2-methylbutan-2-ol is tertiary, with no hydrogen on that carbon, so the dichromate stays orange and nothing new forms. The trap is expecting a mirror from pentan-2-ol: green doesn't mean aldehyde.",
+      "hash": "608f265c30e6",
+      "textSha256": "608f265c30e65e0f63495acf8c3ab2550f07b388be6de23630fe172122de2d52",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/feedback-2.608f265c30e6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/feedback-2.608f265c30e6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/feedback-2.608f265c30e6.generation.json",
+      "plannedRequestSha256": "42f3a5f7bbc3c561b848ea72782ece14682f8951110b01d363e394b98c4c4ebd"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So, the colour tells you whether the alcohol was oxidised. The conditions decide the product: distil for the aldehyde, reflux with excess oxidant for the acid, and a secondary alcohol gives a ketone. And the test on the distillate tells you what you made. Next: carboxylic acids themselves, and what makes them acidic.",
+      "hash": "799338312450",
+      "textSha256": "799338312450ddd6e5d86cb90b709fdf228ed37f0453471e436e28992b5f850b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/decision-handoff.799338312450.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/decision-handoff.799338312450.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/decision-handoff.799338312450.generation.json",
+      "plannedRequestSha256": "0f49bceb252ba627aa6afc3de9156725993eb80c4c3d08da2e26c74994d210f8"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P04-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

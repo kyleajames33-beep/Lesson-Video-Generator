@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Skills-S06-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/skills06/lesson.json",
+  "lessonSha256": "5964c999bdb7d37feebdeeb1e9cb6bf19613665d0c81ab14abc6a46086f0eec7",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/skills06/lesson.production-brief.json",
+    "sha256": "93d9bbcdd9d53d840f835c9c5c04be57d46057c204a2382d3ff9a4a49367daa8"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Graph questions look easy, which is why they're easy to lose marks on. Across the last twelve Chemistry and Biology marking feedback reports, eleven commented on graphs drawn or read poorly, and nine on trends described without the numbers. So here's how to read a graph, draw one that earns its marks, describe a trend with data, and know when you can extend the line.",
+      "hash": "1b1796edd5dd",
+      "textSha256": "1b1796edd5ddb6883e88ba2bbf8b0590351843af33784c37d75e1d04ecc34fac",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/hook.1b1796edd5dd.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/hook.1b1796edd5dd.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/hook.1b1796edd5dd.generation.json",
+      "plannedRequestSha256": "deaa0d5da2759ee1d2961380c04ffcc121e0f01139839fecbdb74f222e4771e0"
+    },
+    {
+      "id": "read-axes",
+      "parentSceneId": "read-axes",
+      "text": "Before you read any value, read the axes: what's measured, in what units, and what one small square is worth. Then go from the axis to the line, across to the other axis, and write the value with its unit. If the line falls between gridlines, estimate to about half a small square. A number without its unit can cost the mark.",
+      "hash": "27e50e8ad4d2",
+      "textSha256": "27e50e8ad4d2121ee2c1ed920603851080acec7e223f89a236c4b873bf29265e",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/read-axes.27e50e8ad4d2.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/read-axes.27e50e8ad4d2.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/read-axes.27e50e8ad4d2.generation.json",
+      "plannedRequestSha256": "160745d5d22c3d0cdbd62b575912039544970484642c98277472e415595364e6"
+    },
+    {
+      "id": "question-card",
+      "parentSceneId": "question-card",
+      "text": "Here's an HSC-style Biology question. A hospital laboratory tested E. coli samples for resistance to antibiotic K, and the table shows the percentage resistant in five years from twenty ten to twenty twenty. There are four parts: plot it, describe the trend, estimate one value, and assess a prediction. If you take Chemistry, the skills are identical. Pause here to answer all four parts.",
+      "hash": "e1d2e6b6e701",
+      "textSha256": "e1d2e6b6e701ee0d9018c4a5eaee43717e7d7c36f98fb0eedd565db8770001fb",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/question-card.e1d2e6b6e701.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/question-card.e1d2e6b6e701.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/question-card.e1d2e6b6e701.generation.json",
+      "plannedRequestSha256": "da8b7ca63c54a0e123036348bf64aa633a1c99833db71c902089c972857156c3"
+    },
+    {
+      "id": "part-a-scale",
+      "parentSceneId": "part-a-scale",
+      "text": "Part a. Put the independent variable, the year, along the bottom, and the percentage up the side. Each axis needs even steps, every gridline worth the same. Here's the trap: the years jump by two, then by three. Space the five years evenly, and you squash the later gaps and bend the trend. Place each year at its real value, and choose a scale that fills most of the grid, because a bigger plot lets you read values more precisely.",
+      "hash": "08c83337a751",
+      "textSha256": "08c83337a75184f7933ebaeb54888d4e8b46c91ca65a4dfc6a190dc2f8412b16",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-a-scale.08c83337a751.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-a-scale.08c83337a751.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-a-scale.08c83337a751.generation.json",
+      "plannedRequestSha256": "96f3b5be79e39fc036b48c515d306ffd45184b7fc1809f6d7d25b0b44b204453"
+    },
+    {
+      "id": "part-a-plot",
+      "parentSceneId": "part-a-plot",
+      "text": "Label each axis with what's measured and its unit, and add a title. Plot each point as a small, clear cross. Then draw a line of best fit: one smooth line that follows the trend, with the points scattered about evenly on both sides, as they are here. Don't join the dots. Real data has scatter, and dot to dot treats every wobble as real. Title, axes, intervals, labels, scale: TAILS.",
+      "hash": "bee81c0d643e",
+      "textSha256": "bee81c0d643e00cdf361e02533bb96216fa91aeccb88633eeb7d1954b0e33838",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-a-plot.bee81c0d643e.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-a-plot.bee81c0d643e.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-a-plot.bee81c0d643e.generation.json",
+      "plannedRequestSha256": "88ae8bc4c63fc8c21871d146637df99ab911b5a17ffd52328a4d78a639f93170"
+    },
+    {
+      "id": "part-b-trend",
+      "parentSceneId": "part-b-trend",
+      "text": "Part b: describe the trend. Say the direction, then prove it with data. Resistance rose steadily, from four per cent in twenty ten to nineteen per cent in twenty twenty, about one and a half percentage points a year. If the pattern changes somewhere, say where. Here it doesn't, so steadily is the right word. Direction, data, change. And if the question says explain, give a plausible scientific reason: antibiotic use can select resistant bacteria, so they could make up more of the samples. The graph alone doesn't show that cause.",
+      "hash": "7401882d4a9d",
+      "textSha256": "7401882d4a9d73aa9118eade8238be16b14e4de9cc94e966d1ac59b01153965a",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-b-trend.7401882d4a9d.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-b-trend.7401882d4a9d.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-b-trend.7401882d4a9d.generation.json",
+      "plannedRequestSha256": "a109ea51cbfcafb294f9a767b1c102c65f1b9fba1966c8a71690f277bc5881db"
+    },
+    {
+      "id": "part-b-points",
+      "parentSceneId": "part-b-points",
+      "text": "One trap with percentages. Resistance rose from four to nineteen per cent. That's a rise of fifteen percentage points, the gap between the two numbers. But compared with where it started, nineteen is almost five times four, a rise of about three hundred and seventy five per cent. Both are true, so say which one you mean.",
+      "hash": "dc450baa9b22",
+      "textSha256": "dc450baa9b22931d641836e9b161291691a8ee7e4c250db9afbb5b512eaabcc4",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-b-points.dc450baa9b22.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-b-points.dc450baa9b22.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-b-points.dc450baa9b22.generation.json",
+      "plannedRequestSha256": "178676c4f1b78c19fddf0a568bc96b27b8eec48420e2c010ea16f93c572fe881"
+    },
+    {
+      "id": "part-c-interpolate",
+      "parentSceneId": "part-c-interpolate",
+      "text": "Part c asks for twenty sixteen, which sits inside the data. That's interpolation: reading between measured points. Go up from twenty sixteen to your line of best fit, not to the nearest point, then across to the axis: about thirteen per cent. Draw your read-off lines on the graph, so a marker can follow them. Reading inside the data is fairly safe, because measured points on both sides hold the line in place.",
+      "hash": "12e535157da9",
+      "textSha256": "12e535157da94db6d434c09c39f28e73b261dd6d0bad713c2afde476aee1d32c",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-c-interpolate.12e535157da9.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-c-interpolate.12e535157da9.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-c-interpolate.12e535157da9.generation.json",
+      "plannedRequestSha256": "7b118eff981fa8cb260cc10c3672e104da09b545340ba82b9cbae165a7bdb395"
+    },
+    {
+      "id": "part-d-extrapolate",
+      "parentSceneId": "part-d-extrapolate",
+      "text": "Part d is different. Twenty forty is twenty years past the last point. That's extrapolation, extending the line beyond the data. The line does reach about fifty per cent. But that assumes resistance keeps rising at the same rate for twenty years, and new drugs, prescribing or infection control could change it. So the further the line goes past the data, the weaker the value, and this prediction is weak. Inside the data, read it. Outside, doubt it. And if a question asks you to extend a line, do it, and state the assumption.",
+      "hash": "d6bf6bded8bb",
+      "textSha256": "d6bf6bded8bbf8958286df99a4fa3429047fca086554508560557a89f0a662a0",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-d-extrapolate.d6bf6bded8bb.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-d-extrapolate.d6bf6bded8bb.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/part-d-extrapolate.d6bf6bded8bb.generation.json",
+      "plannedRequestSha256": "34b323ebec6e807edcbc60cd58f0a97c50266b90091f19f5a2eef1d4ba423aa3"
+    },
+    {
+      "id": "line-or-column",
+      "parentSceneId": "line-or-column",
+      "text": "One more drawing choice. Use a line graph for a continuous relationship or a change over time, like these years and percentages. If the independent variable is a set of categories, like different antibiotics, use a column graph, with gaps between the columns, because there's nothing in between two antibiotics. In one recent Chemistry guideline, a column graph earned full marks only with an accurate scale, axis labels and correct column heights.",
+      "hash": "0c11e06eb62a",
+      "textSha256": "0c11e06eb62ad9838918a40aaf333226fc060b007715d0bcde263f7ae8e07077",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/line-or-column.0c11e06eb62a.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/line-or-column.0c11e06eb62a.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/line-or-column.0c11e06eb62a.generation.json",
+      "plannedRequestSha256": "1d2d8f1affb527bb1b90329514b16073c6f17a8a77f2c5be4e7f404cb01c25b9"
+    },
+    {
+      "id": "drill-1",
+      "parentSceneId": "drill-1",
+      "text": "Your turn. Do the one in your subject, or both. Chemistry first. A student collected carbon dioxide from marble chips and acid, and drew the graph on screen. Identify three problems with her graph, and explain how to correct each. Pause here to answer.",
+      "hash": "00a5ed437d72",
+      "textSha256": "00a5ed437d7233db1d1d0ca8e7d8cca956c531caea8a1d21972789a87a5c8550",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/drill-1.00a5ed437d72.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/drill-1.00a5ed437d72.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/drill-1.00a5ed437d72.generation.json",
+      "plannedRequestSha256": "9c95716af90f48d6a010fd3072d5e0053d03f4f3e0b5abb1453ad04d16062a96"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Her time axis gives thirty, sixty, a hundred and twenty and two hundred and forty seconds equal gaps, so the scale isn't even: use equal steps. Her volume axis has no unit: label it volume of carbon dioxide, in millilitres. And she joined the dots: draw one smooth curve of best fit. The habit to drop: a line of best fit must be straight. When the data curve, it's a curve.",
+      "hash": "37c1051e1e2c",
+      "textSha256": "37c1051e1e2c35af27737c6b5626b53d93f9b051326fdb8e4841646b123ff87a",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/feedback-1.37c1051e1e2c.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/feedback-1.37c1051e1e2c.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/feedback-1.37c1051e1e2c.generation.json",
+      "plannedRequestSha256": "01807bc8cb27d90278d40b37f7dd1e11b7dba6f11f90633d8851fa8073de76cb"
+    },
+    {
+      "id": "drill-2",
+      "parentSceneId": "drill-2",
+      "text": "Now Biology. A student measured the zone of inhibition around discs soaked in an antiseptic at five concentrations. Her mean results are in the table. Describe the relationship between antiseptic concentration and zone diameter. Pause here to answer.",
+      "hash": "339e09ad9c82",
+      "textSha256": "339e09ad9c82d9fac9f3b6e15606b5ab97f2c0415f965283356da05a66b9d185",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/drill-2.339e09ad9c82.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/drill-2.339e09ad9c82.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/drill-2.339e09ad9c82.generation.json",
+      "plannedRequestSha256": "4bf046114c952856ba2656ddf50cb238778ba041515d65aab045966f513057eb"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "From zero to three per cent, the zone grew steadily, from six to fifteen millimetres. From three to six per cent, it grew only one more millimetre, so it levelled off. That's direction, data and change. The answer to drop: as concentration increases, the zone increases. It has no numbers, and it misses the levelling off.",
+      "hash": "5e9b6560a619",
+      "textSha256": "5e9b6560a619432efb35c3db445e2696f2a012f72e00de0b4f5725d06a38f017",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/feedback-2.5e9b6560a619.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/feedback-2.5e9b6560a619.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/feedback-2.5e9b6560a619.generation.json",
+      "plannedRequestSha256": "60a6b714a65197a54e2c1a630ecffce1a254b1181c7bb8dcff4b95beb9015b2d"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, for a graph question. Read the axes and units first. Draw with TAILS, even steps, and a line or curve of best fit, not dot to dot. Describe with direction, data and any change, and say whether you mean percentage points or per cent. Inside the data, read it. Outside, doubt it, and state your assumption. Next: practical questions, and fixes that actually fix.",
+      "hash": "602dbca40713",
+      "textSha256": "602dbca4071384938cf76f8f6025f6c5391ff07225bb15b66815dcd699ce333a",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/decision-rule.602dbca40713.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/decision-rule.602dbca40713.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/decision-rule.602dbca40713.generation.json",
+      "plannedRequestSha256": "824b1de964514820cf0da2d6f98feecd21f308387ddeb169f3ffb363d9fde784"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Skills-S06-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Skills-S06-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Skills-S06-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

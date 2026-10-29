@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C01-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c01/lesson.json",
+  "lessonSha256": "0e170a9404cfbc9df900fc0d783efc2140e064173497d1d7f902b3bf3ed0654e",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c01/lesson.production-brief.json",
+    "sha256": "dca2083a7d3ee6312575571f335b7e7679d243cf3ca42025135e67f6cf255b7f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "This bottle of estuary water looks just like tap water, but it's carrying dissolved salt. How much chloride is in it? You already know how a titration counts acid, with a burette, a pipette and n equals c V. Chloride isn't an acid or a base, though, so a p H indicator has nothing to respond to. So how do we see the moment the chloride runs out?",
+      "hash": "8a8d34ced726",
+      "textSha256": "8a8d34ced72693e23bd59a46393a7b310870ed820e320d2f8a91d9e265d3d5de",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/hook.8a8d34ced726.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/hook.8a8d34ced726.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/hook.8a8d34ced726.generation.json",
+      "plannedRequestSha256": "ff0904a03e3346ba9f14255b5aa7135a1f76905e087813f649d7a8486e38d8b3"
+    },
+    {
+      "id": "silver-meets-chloride",
+      "parentSceneId": "silver-meets-chloride",
+      "text": "The trick is to titrate with silver nitrate. Silver ions grab chloride ions and form silver chloride, a white solid. One silver for one chloride, so the ratio is one to one. As the silver nitrate runs in, the flask turns cloudy white. But here's the problem. The white keeps forming right up to the end, and then it simply stops forming. Nothing new appears to tell you to stop.",
+      "hash": "b191e30a89b7",
+      "textSha256": "b191e30a89b728fa3be1ae1f3f32356630e1d8ddfd027bfe9a09670878bcb28e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/silver-meets-chloride.b191e30a89b7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/silver-meets-chloride.b191e30a89b7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/silver-meets-chloride.b191e30a89b7.generation.json",
+      "plannedRequestSha256": "b22d33d83df2cdf74916ef18302734dcae30d5038d7e34be1b78eebe737ccf84"
+    },
+    {
+      "id": "second-precipitate",
+      "parentSceneId": "second-precipitate",
+      "text": "So we add a few drops of potassium chromate before we start. It's yellow, and it's our indicator. While chloride is still around, the silver keeps forming white silver chloride. Once nearly all the chloride is gone, the next silver ions meet chromate instead, and form silver chromate, a red-brown solid. Two silvers for each chromate. The first faint red-brown tinge that stays after swirling is the endpoint. In this titration, the signal is a second precipitate.",
+      "hash": "ac735d0561d3",
+      "textSha256": "ac735d0561d301d4b6dccbe8e63a178f3be8cdc0f92fc429082f85c05d7ff10a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/second-precipitate.ac735d0561d3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/second-precipitate.ac735d0561d3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/second-precipitate.ac735d0561d3.generation.json",
+      "plannedRequestSha256": "0a6f9db3171ed1f073b85cef60a6438a709925b9162189c88c8b572ec659c419"
+    },
+    {
+      "id": "why-chloride-first",
+      "parentSceneId": "why-chloride-first",
+      "text": "Why does the chloride react first? You'll sometimes read that silver chloride is less soluble, so it goes first. Careful, that isn't the real reason. Think back to Q s p. A solid only forms once its ion product passes K s p. At the start there's lots of chloride, about point zero seven four molar, so silver chloride needs only a tiny trace of silver. There's only a little chromate, about point zero zero five molar, and silver is squared in its K s p, so silver chromate needs thousands of times more silver. As the chloride gets used up, the silver needed for silver chloride climbs. The red only appears when more than ninety nine point nine percent of the chloride is gone. That's why only a small, set amount of chromate goes in.",
+      "hash": "95c102d6419c",
+      "textSha256": "95c102d6419c48eedbf58f4a805ffdea60faa94ae445f965ea6c1ecfef6e9081",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/why-chloride-first.95c102d6419c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/why-chloride-first.95c102d6419c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/why-chloride-first.95c102d6419c.generation.json",
+      "plannedRequestSha256": "9e364b22dffc5fabbb49fedd07ceb8755d2720a49674204aae1fa8aa0a555944"
+    },
+    {
+      "id": "valid-endpoint",
+      "parentSceneId": "valid-endpoint",
+      "text": "This endpoint works only in the right conditions. Keep the solution near neutral, roughly p H six and a half to ten. In acid, chromate ions pick up hydrogen ions and turn into dichromate, so there's less chromate to make the red. The endpoint comes late, and the titre reads high. In strong base, silver forms brown silver oxide instead. Other ions that precipitate with silver, like bromide or iodide, get counted as if they were chloride. And the red needs a tiny excess of silver before you can see it, so chemists often run a blank and subtract it.",
+      "hash": "ce48df709d38",
+      "textSha256": "ce48df709d38de8dec97a5e2e222a19ae305e8cccece86d3259168a77ba4fc17",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/valid-endpoint.ce48df709d38.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/valid-endpoint.ce48df709d38.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/valid-endpoint.ce48df709d38.generation.json",
+      "plannedRequestSha256": "5e75d05d3b5438335c3eae7bb12325c71b90818c00233b0febaa8edc86dffce8"
+    },
+    {
+      "id": "hazard-data",
+      "parentSceneId": "hazard-data",
+      "text": "One more thing. Potassium chromate contains chromium six, which is toxic and treated as a cancer-causing chemical, so many schools skip this practical. You're more likely to meet the Mohr method as data in a question. So let's process some.",
+      "hash": "be5fe8ebe1b7",
+      "textSha256": "be5fe8ebe1b7bb5430f8a4061d6d6edce32524bd2f90988f359b6fe352065755",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/hazard-data.be5fe8ebe1b7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/hazard-data.be5fe8ebe1b7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/hazard-data.be5fe8ebe1b7.generation.json",
+      "plannedRequestSha256": "c1df0cf4edeba8135f48a59c1f064162ae753c9acfe9dfdd5acc7bb3b88ba93e"
+    },
+    {
+      "id": "titres",
+      "parentSceneId": "titres",
+      "text": "A twenty five millilitre aliquot of the estuary water is titrated with point one zero zero zero molar silver nitrate. Here are the titres. The rough run comes first and gets left out. The other three agree within point one zero millilitres, so they're concordant. Their average is eighteen point five zero millilitres.",
+      "hash": "15ee08d35b67",
+      "textSha256": "15ee08d35b671fd08dcb65d260ae953582e41ae2f1e2da73e56f2f341861c0c1",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/titres.15ee08d35b67.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/titres.15ee08d35b67.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/titres.15ee08d35b67.generation.json",
+      "plannedRequestSha256": "904437cc17cc1cf2e2b5fd798a3f0c60b0262470467d6291c38a03dfb16c8e73"
+    },
+    {
+      "id": "stage-1-silver",
+      "parentSceneId": "stage-1-silver",
+      "text": "First, the task: find the chloride concentration, in moles per litre and grams per litre. The equation: silver plus chloride gives silver chloride. Start with the solution you know both numbers for, the silver nitrate. Moles equals c times V. Point one zero zero zero, times point zero one eight five zero litres, gives one point eight five zero times ten to the minus three moles of silver.",
+      "hash": "f1a3104c55f4",
+      "textSha256": "f1a3104c55f4c01b85099c1d009141272ce060cada5da7362bb365dd9c923f60",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-1-silver.f1a3104c55f4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-1-silver.f1a3104c55f4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-1-silver.f1a3104c55f4.generation.json",
+      "plannedRequestSha256": "5356944eef7a5711f6547fb4aeda45b52a83ba805f9b6c53e3841d58208dd0e9"
+    },
+    {
+      "id": "stage-2-aliquot",
+      "parentSceneId": "stage-2-aliquot",
+      "text": "The ratio is one to one, so that's also the moles of chloride, and all of it came from the aliquot. So divide by the aliquot's volume, point zero two five zero zero litres, not by the titre. That gives point zero seven four zero moles per litre.",
+      "hash": "5cddd16973af",
+      "textSha256": "5cddd16973afcc899752ed454c9f3e02798f35223c983e230a57b58e06adb6c5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-2-aliquot.5cddd16973af.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-2-aliquot.5cddd16973af.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-2-aliquot.5cddd16973af.generation.json",
+      "plannedRequestSha256": "d02776e844a7cd14a0f69ab9395fd14281cbcbd248bc6dea0d52f00bc87b5741"
+    },
+    {
+      "id": "stage-3-grams",
+      "parentSceneId": "stage-3-grams",
+      "text": "For grams per litre, multiply by the molar mass of chlorine, thirty five point four five. That's about two point six two grams of chloride per litre. Seawater has roughly nineteen, so this water is only lightly salty, what you'd expect where a river meets the sea.",
+      "hash": "37256ad43e4d",
+      "textSha256": "37256ad43e4d1bdcdf2554815d41584bcc91f9515ec4936b98d2e2f53e97dc60",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-3-grams.37256ad43e4d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-3-grams.37256ad43e4d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/stage-3-grams.37256ad43e4d.generation.json",
+      "plannedRequestSha256": "2e895a7292aa28ce5c698522aefb4b35c2b7509046294a6a36b2643cd21520a0"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So here's the short version. White while chloride lasts, and stop at the first red-brown that stays. Keep it near neutral. Then titre, moles, ratio, and divide by the aliquot. And the one to one ratio is silver to chloride. The two to one belongs to chromate, the indicator, so leave it out of the answer.",
+      "hash": "ec01df19f2a0",
+      "textSha256": "ec01df19f2a0881b7455b64e9646ed9a6d2f340f655428c90529e18557d4e776",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/memory-aid.ec01df19f2a0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/memory-aid.ec01df19f2a0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/memory-aid.ec01df19f2a0.generation.json",
+      "plannedRequestSha256": "eb7e7ef80d4bbc18336c28b9bb6ee7085d95ddf4e71688d39b0906e7f35a775d"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Bore water is tested by the Mohr method. Find the chloride concentration in moles per litre and in grams per litre. Pause here to answer.",
+      "hash": "09696c58a53c",
+      "textSha256": "09696c58a53c18f9f4ef2b6d29ac9c0350aa4119955c241175d58c92b143c8b2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/attempt-1.09696c58a53c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/attempt-1.09696c58a53c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/attempt-1.09696c58a53c.generation.json",
+      "plannedRequestSha256": "0dbab15ad18a97ca7c4b4f5428b20c2d0fcd8fd043d07dbd4b1f8ee50641b1f0"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Leave out the rough titre and average the rest: fourteen point six six millilitres. That gives the moles of silver, and the same moles of chloride. Divide by the twenty millilitre sample: point zero one eight three molar. Times thirty five point four five, that's point six five zero grams per litre. Doubling the moles with chromate's two to one ratio is the classic slip.",
+      "hash": "73a865362949",
+      "textSha256": "73a8653629496584ed25add1d63b36839b79904bf4d4361b64dd46595d3369b2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/feedback-1.73a865362949.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/feedback-1.73a865362949.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/feedback-1.73a865362949.generation.json",
+      "plannedRequestSha256": "135c7b6bdf1abf8963568add3b178cf94a7b998a6801bef22e3bde3412a0862b"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Wastewater from a pickling factory has a p H of three, and a student titrates it by the Mohr method without adjusting the p H. Explain the effect on the calculated chloride concentration, and suggest a fix. Pause here to answer.",
+      "hash": "8af379837ea6",
+      "textSha256": "8af379837ea63214c4ab4149b88e544cbddd557039b242123f2887500bb39189",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/attempt-2.8af379837ea6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/attempt-2.8af379837ea6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/attempt-2.8af379837ea6.generation.json",
+      "plannedRequestSha256": "edc3b5263f66d078610646619edcd77bca1a62d901dc9c44293a7a674c8ef511"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "At p H three, hydrogen ions turn much of the chromate into dichromate. With less chromate, extra silver is needed before red-brown silver chromate shows, so the titre's too high, and so is the calculated chloride. Fix it by neutralising the sample first, for example with sodium hydrogen carbonate, to about p H seven or eight.",
+      "hash": "c21f633d096a",
+      "textSha256": "c21f633d096ae81b1f1af8547e9922c3d45140f6e3d2214e3d0382231a60f218",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/feedback-2.c21f633d096a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/feedback-2.c21f633d096a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/feedback-2.c21f633d096a.generation.json",
+      "plannedRequestSha256": "6ae672dd1867c6626a5f47f7148fe778ecbaee175f2e6d46a47926c861f9e955"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So silver counts the chloride, and chromate tells you when to stop. Next: instead of measuring a volume, we'll weigh the precipitate itself.",
+      "hash": "a30fbe9ce8d8",
+      "textSha256": "a30fbe9ce8d86ae6134ba0bf43300c4785e7e769f621cffeb7a4efb8519bb3f1",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/handoff.a30fbe9ce8d8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/handoff.a30fbe9ce8d8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/handoff.a30fbe9ce8d8.generation.json",
+      "plannedRequestSha256": "282b930dac2fd3f455e41a75659212882f6a80dae78b847ecb651685bb11ac5e"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C01-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

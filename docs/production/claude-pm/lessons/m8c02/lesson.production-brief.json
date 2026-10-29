@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c02/lesson.json",
+    "lessonSha256": "d7b20a834516e5d4a4c664ae31211d41275d99091e3450835e9c9f1928ea54fe"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m5-c13 (precipitation; which products are insoluble; BaSO₄ and AgCl white); chem-m5-c14 (Ksp; comparing Ksp only for the same formula type); chem-m5-c15 (the common ion effect); Year 11 (n = m/M, molar mass, percentage by mass); chem-m8-c01 (moles to concentration, c = n/V).",
+    "startsWith": "Choose a low-solubility product. The video opens: Last time, we counted chloride by measuring a volume of silver nitrate. This time, we'll weigh it. A wastewater sample looks perfectly clear.",
+    "stopsAfter": "stating what gravimetric analysis is and its three requirements; explaining the choice of Ba²⁺ for sulfate (and Ag⁺ for chloride) with Ksp; describing and justifying each method step, including constant mass; calculating the precipitate mass by difference, the analyte's moles, mass, percentage and concentration; predicting the direction of an error and explaining why repeats do not fix it. No hands-on procedure or risk table.",
+    "nextLesson": "carrying out a gravimetric analysis (route chem-m8-p02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c02.md"
+  ],
+  "teaching": {
+    "task": "A clear wastewater sample turns cloudy white when barium ions are added. How does the mass of that dried solid tell you how much sulfate was in the water, and what has to go right for the number to be true?",
+    "causalExplanation": "(1) a clear sample gives a white solid whose mass gives the sulfate; (2) the method works if almost all the ion is in the solid, its formula is known, and only it is weighed, clean and dry; (3) barium, not calcium, because barium sulfate's Ksp is far smaller (same formula type), so almost none stays dissolved, and excess barium lowers it more; sodium sulfate is soluble; silver for chloride; (4) excess reagent until no more forms; digestion grows bigger crystals that filter and trap less; (5) pre-weighed paper, rinse, wash away soluble ions that would add mass; (6) oven, desiccator so no water is taken up, tared watch glass, repeat to constant mass (drying has stopped removing water; dry impurities would also be constant, so washing still matters); (7, 8) mass by difference, n = m/M, 1 : 1, mass of sulfate, percentage; (9) concentration from a volume; (10) extra mass high, lost solid low; repeating the same faulty method keeps the error in the average.",
+    "conversationalApproach": "last time chloride was counted by measuring a volume, and this time it is weighed: a clear wastewater sample gives a fine white solid with barium ions, and a chemist uses only its dried mass to find the sulfate, so the video asks how a precipitate reveals ion concentration. Gravimetric analysis means measuring by mass: turn the ion into a solid of known formula, collect all of it, dry it and weigh it, which works only if almost all the ion ends up in the solid, the solid is pure and its formula is known. Barium is chosen over calcium because both sulfates are one to one, so their Ksp values compare directly, and calcium sulfate's is about half a million times bigger. The method dissolves and acidifies the sample, adds excess barium chloride with a check drop, and digests the solid; it is filtered through a pre-weighed paper, rinsed and washed so no soluble ions dry onto it, then dried, cooled in a desiccator and reweighed to constant mass. The worked example finds the precipitate mass by difference, then moles, the one to one ratio, sulfate mass and the percentage, and then a concentration from a volume. Anything that adds mass makes the answer too high and anything that loses solid makes it too low. The memory aid is mass, moles, ratio, target, and too wet reads high, lost reads low. Two exam questions follow with brief feedback.",
+    "openingDecision": "Last time, we counted chloride by measuring a volume of silver nitrate. This time, we'll weigh it. A wastewater sample looks perfectly clear. Add barium ions, and a fine white solid appears. After it's filtered and dried, a chemist uses only its mass to work out how much sulfate was in the water. So how does a pinch of white powder tell you that?",
+    "understandingCheck": "(A1) Creek water, 50.0 mL, excess AgNO₃, filter paper 0.812 g, paper and dry precipitate 0.955 g, M(AgCl) and M(Cl) given; chloride in g/L. Tests mass by difference, n = m/M, the 1 : 1 formula ratio, mass, and division by volume. Crossed mistake: not subtracting the paper (4.72 g/L). (A2) An unwashed BaSO₄ precipitate, repeated three times the same way and averaged: explain the effect on the sulfate percentage and assess whether repeating helps. Tests scene 5's cause and scene 10's last line. Crossed mistake: \"averaging three trials cancels the error\" (pack trap).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct investigations and/or process data involving:; gravimetric analysis; precipitation titrations\" This video explains gravimetric analysis and processes its data. Precipitation titrations were chem-m8-c01; the hands-on gravimetric practical is chem-m8-p02; practice with both is chem-m8-g01. starts by choosing a low-solubility product, and stops at converting a dry precipitate's mass to the original ion's concentration (and percentage by mass). It teaches: gravimetric analysis (measuring by mass) and its three requirements (almost all the ion precipitates; known formula; only that solid is weighed, clean and dry); why Ba²⁺ for sulfate (BaSO₄ Ksp far smaller than CaSO₄'s, both 1 : 1 so Ksp compares directly; much less left dissolved (about 0.5 mg in 200 mL of pure water at 25 °C); excess Ba²⁺ lowers it further, the common ion effect) and why not Na⁺; Ag⁺ for chloride; the method: dissolve, acidify with dilute HCl so carbonate leaves as CO₂, add excess precipitating reagent and check for completeness, digest (small crystals dissolve and larger ones grow, which filter better and trap fewer ions), filter through pre-weighed filter paper, rinse and wash, dry in an oven, cool in a desiccator, weigh on a tared watch glass, repeat to constant mass (a dryness check; washing is the purity control); mass by difference; n = m/M; the formula ratio; analyte mass and percentage; concentration from a sample volume; error directions (extra mass reads high, lost solid reads low); repeating and averaging do not remove an error that is the same every time. Not taught: ignition in a crucible, co-precipitation mechanisms (author notes), the risk table (p02), the Mohr method (c01)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: sulfate ions yellow-green; barium ions pale violet; calcium ions pale orange; chloride green; silver pale grey; precipitate white; spectator or impurity ions small grey dots; givens and units navy; the current answer bright; earlier lines dim. Board layout (constant): heading top-left; apparatus left third; inset or board right two thirds. Reuse: painted plates inspected 28 Oct by contact sheet (Assets). `m6-analytical-balance-v1.png` shows a small beaker of white powder on the pan, which contradicts the filter paper method, so a matching balance plate with a watch glass is commissioned; the existing one is used only in c01's handoff. No human figures.",
+    "transitionPlan": "The heading writes on with a grey c01 chip as the wastewater plate appears and a clear beaker gains a fine white precipitate; the coded flow writes ion in water to solid to dry to weigh with three condition chips; the board clears to a two-column Ksp comparison with ion dots left in each beaker; a method strip of nine dim labels writes along the bottom and each step lights as its plate or inset appears; the filter funnel plate shows the pre-weighed paper tag and wash drops carry grey ion dots away; the oven, desiccator and balance plates form the weighing loop with a mass readout settling to constant mass; the calculation board sets up its task strip, equation strip and grouped givens and writes one stage line per cue, earlier lines dimming with their results kept; the givens swap to a volume and the concentration line rewrites; the two-way error board lights its items in each column; the memory lines write by hand with a small constant-mass card; each attempt clears the board with its question card, and its feedback underlines the givens as the stage lines or a reversed wash inset write and a crossed trap lands; the filter and desiccator plates and a next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"Weighing an ion\".",
+      "teachingReason": "Hook (a clear sample, a white solid): Last time, we counted chloride by measuring a volume of silver nitrate.",
+      "narrationCue": "solid / that",
+      "motionPurpose": "On the spoken cues: A small grey chip \"c01: volume (titration)\" writes top-left and dims. `m6-wastewater-outlet-probe-v1.png` appears as a framed card at centre with tag \"wastewater\". It shrinks left; `m6-beaker-v1.png` appears with a coded clear fill, tag \"sample\". On \"solid\" coded drops fall in and the beaker cross-fades to `m8-baso4-beaker-settled-v1.png`; tag \"BaSO₄(s), white\". On \"that\" a question chip writes and stays dim: \"mass",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Weighing an ion\". A small grey chip \"c01: volume (titration)\" writes top-left and dims. `m6-wastewater-outlet-probe-v1.png` appears as a framed card at centre with tag \"wastewater\". It shrinks left; `m6-beaker-v1.png` appears with a coded clear fill, tag \"sample\". On \"solid\" coded drops fall in and the beaker cross-fades to `m8-baso4-beaker-settled-v1.png`; tag \"BaSO₄(s), white\". On \"that\" a question chip writes and stays dim: \"mass → sulfate?\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "measuring-by-mass",
+      "visualDecision": "adjust",
+      "visualReference": "heading: \"Gravimetric analysis = measuring by mass\".",
+      "teachingReason": "Measuring by mass: This is gravimetric analysis, which just means measuring by mass.",
+      "narrationCue": "weigh / dry",
+      "motionPurpose": "On the spoken cues: The beaker stays left. A short coded flow writes on the right: \"ion in water → solid (known formula) → dry → weigh\". On \"weigh\" `m8-balance-watch-glass-v1.png` appears small at the end of the flow. Then three requirement cards light one at a time, each dimming as the next lights: \"1. almost all the ion in the solid\", \"2. known formula\", \"3. only that solid: clean and dry\". On \"dry\" all three show, the first two dim.",
+      "motionRole": "explain",
+      "onScreenChange": "heading: \"Gravimetric analysis = measuring by mass\". The beaker stays left. A short coded flow writes on the right: \"ion in water → solid (known formula) → dry → weigh\". On \"weigh\" `m8-balance-watch-glass-v1.png` appears small at the end of the flow. Then three requirement cards light one at a time, each dimming as the next lights: \"1. almost all the ion in the solid\", \"2. known formula\", \"3. only that solid: clean and dry\". On \"dry\" all three show, the first two dim.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "choosing-solid",
+      "visualDecision": "new",
+      "visualReference": "board clears to a two-column comparison.",
+      "teachingReason": "Choosing the solid: So which solid?",
+      "narrationCue": "dissolved / soluble / chloride",
+      "motionPurpose": "On the spoken cues: Left \"Ca²⁺ → CaSO₄, Ksp 4.93 × 10⁻⁵\"; right \"Ba²⁺ → BaSO₄, Ksp 1.08 × 10⁻¹⁰\"; a grey chip \"c14: same 1 : 1 type, compare Ksp\" between them. On \"dissolved\" the dissolved-ion counter under Ca²⁺ fills tall (\"lots left dissolved, never weighed\"); under Ba²⁺ a sliver (small grey tag \"about 0.5 mg in 200 mL of pure water at 25 °C\"). Requirement card 1 from scene 2 glows briefly. A grey chip \"c15: common ion effect\" writes",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to a two-column comparison. Left \"Ca²⁺ → CaSO₄, Ksp 4.93 × 10⁻⁵\"; right \"Ba²⁺ → BaSO₄, Ksp 1.08 × 10⁻¹⁰\"; a grey chip \"c14: same 1 : 1 type, compare Ksp\" between them. On \"dissolved\" the dissolved-ion counter under Ca²⁺ fills tall (\"lots left dissolved, never weighed\"); under Ba²⁺ a sliver (small grey tag \"about 0.5 mg in 200 mL of pure water at 25 °C\"). Requirement card 1 from scene 2 glows briefly. A grey chip \"c15: common ion effect\" writes as the Ba²⁺ sliver shrinks further with tag \"excess Ba²⁺\". On \"soluble\" a third mini column \"Na⁺ → Na₂SO₄: soluble\" writes and is crossed. On \"chloride\" a small reagent row writes underneath: \"Cl⁻ + Ag⁺ → AgCl(s)\"; the Ca²⁺ column dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "table build",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "precipitate-digest",
+      "visualDecision": "adjust",
+      "visualReference": "heading: \"Method\".",
+      "teachingReason": "Precipitate and digest: Here's the method.",
+      "narrationCue": "carbonate / out / digest / ions",
+      "motionPurpose": "On the spoken cues: A method strip of nine small labels writes along the bottom, all dim: \"dissolve, acidify, precipitate, digest, filter, wash, dry, cool, weigh\"; \"dissolve\" lights. `m6-beaker-v1.png` at left with its coded clear fill. On \"carbonate\" \"acidify\" lights, coded drops of dilute HCl fall, a few small coded bubbles rise and leave the surface, and a chip writes: \"dilute HCl: carbonate leaves as CO₂, so no BaCO₃ forms\". Then",
+      "motionRole": "explain",
+      "onScreenChange": "heading: \"Method\". A method strip of nine small labels writes along the bottom, all dim: \"dissolve, acidify, precipitate, digest, filter, wash, dry, cool, weigh\"; \"dissolve\" lights. `m6-beaker-v1.png` at left with its coded clear fill. On \"carbonate\" \"acidify\" lights, coded drops of dilute HCl fall, a few small coded bubbles rise and leave the surface, and a chip writes: \"dilute HCl: carbonate leaves as CO₂, so no BaCO₃ forms\". Then \"precipitate\" lights and the beaker cross-fades to `m8-baso4-beaker-settled-v1.png`. Coded drops fall; on \"out\" one test drop falls into the clear upper layer and a chip \"no new cloudiness: complete\" writes. A small hazard chip writes and stays grey: \"BaCl₂ toxic; AgNO₃ stains; heavy-metal waste\". On \"digest\" \"digest\" lights on the strip; a coded warm glow sits under the beaker (label \"warm, stand\"); the crystal growth zoom opens at right. On \"ions\" the zoom shows the dotted mesh: small crystals pass through it, large ones sit on it; grey ion dots stick to the small crystals more than the large ones.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "filter-wash",
+      "visualDecision": "adjust",
+      "visualReference": "\"filter\" and \"wash\" light on the strip.",
+      "teachingReason": "Filter and wash: Next, filter it through a filter paper you've already dried and weighed.",
+      "narrationCue": "sulfate",
+      "motionPurpose": "On the spoken cues: `m8-filter-funnel-white-ppt-v1.png` appears at left with a navy tag \"filter paper: dried and weighed first, on the tared watch glass\". `m6-wash-bottle-v1.png` appears small beside it; a coded jet arc runs from its nozzle to the funnel. The wash drops inset: drops carry grey \"Cl⁻\" and \"Ba²⁺\" dots off white crystals and down through the paper. On \"sulfate\" a chip \"unwashed: extra mass\" writes (bright) with a small up",
+      "motionRole": "explain",
+      "onScreenChange": "\"filter\" and \"wash\" light on the strip. `m8-filter-funnel-white-ppt-v1.png` appears at left with a navy tag \"filter paper: dried and weighed first, on the tared watch glass\". `m6-wash-bottle-v1.png` appears small beside it; a coded jet arc runs from its nozzle to the funnel. The wash drops inset: drops carry grey \"Cl⁻\" and \"Ba²⁺\" dots off white crystals and down through the paper. On \"sulfate\" a chip \"unwashed: extra mass\" writes (bright) with a small up arrow; requirement card 3 glows briefly.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "constant-mass",
+      "visualDecision": "adjust",
+      "visualReference": "\"dry\", \"cool\" and \"weigh\" light on the strip.",
+      "teachingReason": "Dry to constant mass: Now dry the paper and solid in an oven, and cool it in a desiccator, a sealed container with a drying agent, so it doesn't pick up water from the air while it cools.",
+      "narrationCue": "cools / agree / balance",
+      "motionPurpose": "On the spoken cues: The weighing loop draws: `m8-drying-oven-v1.png`, `m8-desiccator-v1.png` and `m8-balance-watch-glass-v1.png` in a ring with coded arrows, the same height. On \"cools\" the desiccator glows. On \"zeroed\" the balance plate is not yet lit: a coded readout chip \"0.000 g\" writes at the balance position with the tag \"tare: balance zeroed with the empty, dry watch glass\" (the delivered plate shows the loaded watch glass, so",
+      "motionRole": "explain",
+      "onScreenChange": "\"dry\", \"cool\" and \"weigh\" light on the strip. The weighing loop draws: `m8-drying-oven-v1.png`, `m8-desiccator-v1.png` and `m8-balance-watch-glass-v1.png` in a ring with coded arrows, the same height. On \"cools\" the desiccator glows. On \"zeroed\" the balance plate is not yet lit: a coded readout chip \"0.000 g\" writes at the balance position with the tag \"tare: balance zeroed with the empty, dry watch glass\" (the delivered plate shows the loaded watch glass, so the empty state is a label, not a picture); then the plate lights on \"weigh\". A small fixed caption under the balance reads \"watch glass tared: paper + solid\" for every reading. Each loop writes a reading under the balance in turn: \"1.268 g\", \"1.257 g\", \"1.255 g\", \"1.255 g\"; earlier readings dim. On \"agree\" the last two readings bracket together with the tag \"constant mass: drying no longer removing water\" (bright; small grey \"agree: within the balance's precision\"). On \"balance\" the loop arrows stop and a small chip \"dry impurities: constant mass too, so wash\" writes beside requirement card 3.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "worked-mass-moles",
+      "visualDecision": "new",
+      "visualReference": "board clears to the calculation board.",
+      "teachingReason": "Worked example: mass and moles: Let's use it.",
+      "narrationCue": "sulfate / moles",
+      "motionPurpose": "On the spoken cues: Task strip: \"Find the % of sulfate in the sample\". Equation strip: \"Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\". Givens group (navy), two short blocks: \"sample: 0.500 g\" and \"watch glass tared: filter paper 0.905 g; paper + dry BaSO₄ 1.255 g (constant mass)\"; molar masses as a third small block: \"M(BaSO₄) = 233.39, M(SO₄²⁻) = 96.06 g/mol\". Stage line 1: \"m(BaSO₄) = 1.255 − 0.905\"; on \"sulfate\" \"= 0.350 g\" (bright). Line 1",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to the calculation board. Task strip: \"Find the % of sulfate in the sample\". Equation strip: \"Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\". Givens group (navy), two short blocks: \"sample: 0.500 g\" and \"watch glass tared: filter paper 0.905 g; paper + dry BaSO₄ 1.255 g (constant mass)\"; molar masses as a third small block: \"M(BaSO₄) = 233.39, M(SO₄²⁻) = 96.06 g/mol\". Stage line 1: \"m(BaSO₄) = 1.255 − 0.905\"; on \"sulfate\" \"= 0.350 g\" (bright). Line 1 dims. Line 2: \"n(BaSO₄) = m ÷ M = 0.350 ÷ 233.39\"; on \"moles\" \"= 1.50 × 10⁻³ mol\" (bright).",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "worked-percentage",
+      "visualDecision": "new",
+      "visualReference": "lines 1 and 2 dim, their results kept.",
+      "teachingReason": "Worked example: sulfate and percentage: The equation shows one sulfate in every barium sulfate, so that's also the moles of sulfate.",
+      "narrationCue": "sulfate / percent",
+      "motionPurpose": "On the spoken cues: On \"sulfate\" line 3: \"1 : 1, so n(SO₄²⁻) = 1.50 × 10⁻³ mol\" with the \"1 : 1\" glowing on the equation strip. Line 4: \"m(SO₄²⁻) = 1.50 × 10⁻³ × 96.06 = 0.144 g\". Line 5: \"% = 0.144 ÷ 0.500 × 100\"; on \"percent\" \"= 28.8%\" (bright). A chip \"0.350 ÷ 0.500 × 100\" fades in and is crossed (caption \"precipitate, not sulfate\").",
+      "motionRole": "explain",
+      "onScreenChange": "lines 1 and 2 dim, their results kept. On \"sulfate\" line 3: \"1 : 1, so n(SO₄²⁻) = 1.50 × 10⁻³ mol\" with the \"1 : 1\" glowing on the equation strip. Line 4: \"m(SO₄²⁻) = 1.50 × 10⁻³ × 96.06 = 0.144 g\". Line 5: \"% = 0.144 ÷ 0.500 × 100\"; on \"percent\" \"= 28.8%\" (bright). A chip \"0.350 ÷ 0.500 × 100\" fades in and is crossed (caption \"precipitate, not sulfate\").",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "mass-to-concentration",
+      "visualDecision": "new",
+      "visualReference": "lines 4 and 5 fade; line 3's result stays.",
+      "teachingReason": "From mass to concentration: What if the sample was a volume of water instead?",
+      "narrationCue": "litre",
+      "motionPurpose": "On the spoken cues: The givens block \"sample: 0.500 g\" swaps to \"sample: 250.0 mL = 0.2500 L\". Line 4 rewrites: \"c(SO₄²⁻) = 1.50 × 10⁻³ ÷ 0.2500\"; on \"litre\" \"= 6.00 × 10⁻³ mol/L\" (bright). Line 5: \"× 96.06 = 0.576 g/L\"; on the second \"litre\" \"= 576 mg/L\" (bright). A grey chip \"c01: c = n ÷ V\" sits beside line 4.",
+      "motionRole": "explain",
+      "onScreenChange": "lines 4 and 5 fade; line 3's result stays. The givens block \"sample: 0.500 g\" swaps to \"sample: 250.0 mL = 0.2500 L\". Line 4 rewrites: \"c(SO₄²⁻) = 1.50 × 10⁻³ ÷ 0.2500\"; on \"litre\" \"= 6.00 × 10⁻³ mol/L\" (bright). Line 5: \"× 96.06 = 0.576 g/L\"; on the second \"litre\" \"= 576 mg/L\" (bright). A grey chip \"c01: c = n ÷ V\" sits beside line 4.",
+      "motionTools": [
+        "chip pop"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "errors",
+      "visualDecision": "new",
+      "visualReference": "board clears to the two-way error board.",
+      "teachingReason": "What pushes the answer wrong: The balance gives a precise number, but the method can still push it the wrong way.",
+      "narrationCue": "high / low / average",
+      "motionPurpose": "On the spoken cues: Left column heading \"mass ↑ → answer ↑\"; right \"mass ↓ → answer ↓\". On \"high\" two items light in the left column: \"damp solid\" and \"not washed: impurities\"; the filter-funnel and oven plates appear small beside them. On \"low\" the left items dim and two light on the right: \"torn filter paper\" and \"sulfate left dissolved\". On \"average\" a third row writes across both columns: \"repeat the same faulty method → same error",
+      "motionRole": "explain",
+      "onScreenChange": "board clears to the two-way error board. Left column heading \"mass ↑ → answer ↑\"; right \"mass ↓ → answer ↓\". On \"high\" two items light in the left column: \"damp solid\" and \"not washed: impurities\"; the filter-funnel and oven plates appear small beside them. On \"low\" the left items dim and two light on the right: \"torn filter paper\" and \"sulfate left dissolved\". On \"average\" a third row writes across both columns: \"repeat the same faulty method → same error in the average\" with a small tag \"repeats don't remove a bias\".",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Memory aid: So, two lines to keep.",
+      "narrationCue": "low",
+      "motionPurpose": "On the spoken cues: Handwritten line 1: \"mass → moles → ratio → target\". Handwritten line 2 on \"low\": \"Too wet reads high; lost reads low.\" A small card: \"weigh at constant mass (and wash first)\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Handwritten line 1: \"mass → moles → ratio → target\". Handwritten line 2 on \"low\": \"Too wet reads high; lost reads low.\" A small card: \"weigh at constant mass (and wash first)\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A 50.0 mL sample of creek water was treated with excess silver nitrate solution.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Creek water is tested for chloride",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A 50.0 mL sample of creek water was treated with excess silver nitrate solution. The silver chloride precipitate was collected on a filter paper of mass 0.812 g, washed, and dried to constant mass. The filter paper and precipitate then had a combined mass of 0.955 g. Calculate the concentration of chloride ions in the creek water, in g L⁻¹. M(AgCl) = 143.32 g mol⁻¹; M(Cl) = 35.45 g mol⁻¹.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "three / chloride / litre / big",
+      "motionPurpose": "On the spoken cues: On \"three\" \"filter paper of mass 0.812 g\" and \"combined mass of 0.955 g\" are underlined; line \"m(AgCl) = 0.955 − 0.812 = 0.143 g\". Line \"n(AgCl) = 0.143 ÷ 143.32 = 9.98 × 10⁻⁴ mol\" (\"M(AgCl)\" underlined); on \"chloride\" it continues \"= n(Cl⁻) (1 : 1)\". On \"litre\" line \"m(Cl⁻) = 9.98 × 10⁻⁴ × 35.45 = 0.03537 g\" (\"M(Cl)\" underlined) and then line \"c = 0.03537 ÷ 0.0500 = 0.707 g/L\" (answer bright; \"50.0 mL\" underlined).",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. On \"three\" \"filter paper of mass 0.812 g\" and \"combined mass of 0.955 g\" are underlined; line \"m(AgCl) = 0.955 − 0.812 = 0.143 g\". Line \"n(AgCl) = 0.143 ÷ 143.32 = 9.98 × 10⁻⁴ mol\" (\"M(AgCl)\" underlined); on \"chloride\" it continues \"= n(Cl⁻) (1 : 1)\". On \"litre\" line \"m(Cl⁻) = 9.98 × 10⁻⁴ × 35.45 = 0.03537 g\" (\"M(Cl)\" underlined) and then line \"c = 0.03537 ÷ 0.0500 = 0.707 g/L\" (answer bright; \"50.0 mL\" underlined). On \"big\" a chip \"0.955 g used as AgCl → 4.72 g/L\" fades in and is crossed (caption \"subtract the paper\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"In a gravimetric analysis of sulfate, a student did not wash the barium sulfate precipitate before drying and weighing it.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. A student didn't wash a barium",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"In a gravimetric analysis of sulfate, a student did not wash the barium sulfate precipitate before drying and weighing it. The student repeated the whole analysis three times in the same way and averaged the results. (a) Explain the effect of not washing the precipitate on the calculated percentage of sulfate. (b) Assess whether repeating the analysis improves the result.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "solid / high / cancel",
+      "motionPurpose": "On the spoken cues: On \"solid\" \"did not wash\" is underlined; the wash drops inset runs in reverse (grey ion dots stay on the crystals). On \"high\" \"calculated percentage of sulfate\" is underlined; chip \"mass ↑ → % sulfate too high\" (bright). \"repeated the whole analysis three times in the same way\" and \"averaged\" are underlined; chips \"same extra mass each time\" and \"repeats do not remove this bias\". On \"cancel\" a chip \"Averaging three",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. On \"solid\" \"did not wash\" is underlined; the wash drops inset runs in reverse (grey ion dots stay on the crystals). On \"high\" \"calculated percentage of sulfate\" is underlined; chip \"mass ↑ → % sulfate too high\" (bright). \"repeated the whole analysis three times in the same way\" and \"averaged\" are underlined; chips \"same extra mass each time\" and \"repeats do not remove this bias\". On \"cancel\" a chip \"Averaging three trials cancels the error.\" fades in and is crossed (caption \"systematic: same every time\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "Handoff: So pick a solid that barely dissolves, keep it clean, dry it to constant mass, and the mass tells you the ion.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: Memory line 1 returns small at the top. On \"Next\" `m8-filter-funnel-white-ppt-v1.png` and `m8-desiccator-v1.png` appear small at the right, same height, with a chip \"Next: carry out a gravimetric analysis\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Memory line 1 returns small at the top. On \"Next\" `m8-filter-funnel-white-ppt-v1.png` and `m8-desiccator-v1.png` appear small at the right, same height, with a chip \"Next: carry out a gravimetric analysis\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c02-learning-review.md",
+      "sha256": "b80316ae32e4b281cf1e289c5b05b2fc52ec014442a0c2abc3da43ec4dc742f5"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c02-claude-science-check.md",
+      "sha256": "f6df44287ac54d768c066a1c161af1517c5f932695d91798af205cf5420cbdd7"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,156 @@
+{
+  "title": "Graphs and data questions: read it, draw it, describe it, and know when to extend it",
+  "subtitle": "When a question gives you data or asks for a graph, how do you read values with their units, draw a graph that earns its marks, describe the trend with numbers, and decide whether you can trust a value read beyond the data?",
+  "subject": "Chemistry and Biology",
+  "yearLevel": 12,
+  "module": 0,
+  "lesson": 6,
+  "lessonIntent": "as above.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Graph questions look easy, which is why they're easy to lose marks on. Across the last twelve Chemistry and Biology marking feedback reports, eleven commented on graphs drawn or read poorly, and nine on trends described without the numbers. So here's how to read a graph, draw one that earns its marks, describe a trend with data, and know when you can extend the line."
+      }
+    },
+    {
+      "id": "read-axes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Before you read any value, read the axes: what's measured, in what units, and what one small square is worth. Then go from the axis to the line, across to the other axis, and write the value with its unit. If the line falls between gridlines, estimate to about half a small square. A number without its unit can cost the mark."
+      }
+    },
+    {
+      "id": "question-card",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's an HSC-style Biology question. A hospital laboratory tested E. coli samples for resistance to antibiotic K, and the table shows the percentage resistant in five years from twenty ten to twenty twenty. There are four parts: plot it, describe the trend, estimate one value, and assess a prediction. If you take Chemistry, the skills are identical. Pause here to answer all four parts."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "part-a-scale",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part a. Put the independent variable, the year, along the bottom, and the percentage up the side. Each axis needs even steps, every gridline worth the same. Here's the trap: the years jump by two, then by three. Space the five years evenly, and you squash the later gaps and bend the trend. Place each year at its real value, and choose a scale that fills most of the grid, because a bigger plot lets you read values more precisely."
+      }
+    },
+    {
+      "id": "part-a-plot",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Label each axis with what's measured and its unit, and add a title. Plot each point as a small, clear cross. Then draw a line of best fit: one smooth line that follows the trend, with the points scattered about evenly on both sides, as they are here. Don't join the dots. Real data has scatter, and dot to dot treats every wobble as real. Title, axes, intervals, labels, scale: TAILS."
+      }
+    },
+    {
+      "id": "part-b-trend",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b: describe the trend. Say the direction, then prove it with data. Resistance rose steadily, from four per cent in twenty ten to nineteen per cent in twenty twenty, about one and a half percentage points a year. If the pattern changes somewhere, say where. Here it doesn't, so steadily is the right word. Direction, data, change. And if the question says explain, give a plausible scientific reason: antibiotic use can select resistant bacteria, so they could make up more of the samples. The graph alone doesn't show that cause."
+      }
+    },
+    {
+      "id": "part-b-points",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One trap with percentages. Resistance rose from four to nineteen per cent. That's a rise of fifteen percentage points, the gap between the two numbers. But compared with where it started, nineteen is almost five times four, a rise of about three hundred and seventy five per cent. Both are true, so say which one you mean."
+      }
+    },
+    {
+      "id": "part-c-interpolate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part c asks for twenty sixteen, which sits inside the data. That's interpolation: reading between measured points. Go up from twenty sixteen to your line of best fit, not to the nearest point, then across to the axis: about thirteen per cent. Draw your read-off lines on the graph, so a marker can follow them. Reading inside the data is fairly safe, because measured points on both sides hold the line in place."
+      }
+    },
+    {
+      "id": "part-d-extrapolate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part d is different. Twenty forty is twenty years past the last point. That's extrapolation, extending the line beyond the data. The line does reach about fifty per cent. But that assumes resistance keeps rising at the same rate for twenty years, and new drugs, prescribing or infection control could change it. So the further the line goes past the data, the weaker the value, and this prediction is weak. Inside the data, read it. Outside, doubt it. And if a question asks you to extend a line, do it, and state the assumption."
+      }
+    },
+    {
+      "id": "line-or-column",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more drawing choice. Use a line graph for a continuous relationship or a change over time, like these years and percentages. If the independent variable is a set of categories, like different antibiotics, use a column graph, with gaps between the columns, because there's nothing in between two antibiotics. In one recent Chemistry guideline, a column graph earned full marks only with an accurate scale, axis labels and correct column heights."
+      }
+    },
+    {
+      "id": "drill-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Do the one in your subject, or both. Chemistry first. A student collected carbon dioxide from marble chips and acid, and drew the graph on screen. Identify three problems with her graph, and explain how to correct each. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Her time axis gives thirty, sixty, a hundred and twenty and two hundred and forty seconds equal gaps, so the scale isn't even: use equal steps. Her volume axis has no unit: label it volume of carbon dioxide, in millilitres. And she joined the dots: draw one smooth curve of best fit. The habit to drop: a line of best fit must be straight. When the data curve, it's a curve."
+      }
+    },
+    {
+      "id": "drill-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now Biology. A student measured the zone of inhibition around discs soaked in an antiseptic at five concentrations. Her mean results are in the table. Describe the relationship between antiseptic concentration and zone diameter. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "From zero to three per cent, the zone grew steadily, from six to fifteen millimetres. From three to six per cent, it grew only one more millimetre, so it levelled off. That's direction, data and change. The answer to drop: as concentration increases, the zone increases. It has no numbers, and it misses the levelling off."
+      }
+    },
+    {
+      "id": "decision-rule",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, for a graph question. Read the axes and units first. Draw with TAILS, even steps, and a line or curve of best fit, not dot to dot. Describe with direction, data and any change, and say whether you mean percentage points or per cent. Inside the data, read it. Outside, doubt it, and state your assumption. Next: practical questions, and fixes that actually fix."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "title": "Polymer Practice: Repeat Units, Monomers, Addition or Condensation",
+  "subtitle": "Can you draw a polymer from its monomer, find the monomers from a polymer, decide whether it formed by addition or condensation, and explain one of its properties from its structure?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 25,
+  "lessonIntent": "four worked HSC-style questions and a decision board: find the backbone first.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Polymer questions usually come in four shapes. Draw a chain from a monomer. Find the monomers from a chain. Decide whether it formed by addition or condensation. And explain a property. Each one starts with the same move: find the backbone, the line of atoms that runs through the brackets. Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. But one ene forms an addition polymer that's used to make hot water pipes. Draw a section of this polymer showing three repeat units, and circle one repeat unit. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-backbone",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with the double bond. In addition, only its two carbons join the backbone, and everything else hangs off the side. In but one ene, the double bond is between carbons one and two. So carbon one becomes a C H two in the chain. Carbon two becomes a C H, with the rest of the molecule, an ethyl group, C H two C H three, hanging off it."
+      }
+    },
+    {
+      "id": "q1-section",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now join three of them, head to tail. C H two, then C H with its ethyl, three times over, with a continuation bond at each end. Circle any two neighbouring backbone carbons that carry one ethyl group. That's one repeat unit. Then check it. Three units means three ethyl groups and six backbone carbons, and every carbon has four bonds."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is putting all four carbons into the chain: C H two, C H two, C H two, C H two. That's just polyethylene. Only the double bond opens, so the ethyl group can't join the backbone."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. A section of a polymer used in carpet fibres is shown. Identify the type of polymer. Then draw and name its monomers. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-links",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, find the backbone. It runs through oxygens and C double bond O groups, so this is not all carbon. Each oxygen next to a C double bond O is an ester link. So it's a polyester, a condensation polymer. The pattern repeats after one ring and one three carbon chain, so that's the repeat unit. A section can start partway through a unit, so don't just bracket whatever is drawn at the ends."
+      }
+    },
+    {
+      "id": "q2-water",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now add the water back, at every ester link. Cut between the C double bond O carbon and the oxygen. Put O H on the C double bond O side, and H on the oxygen side. That gives H O, three C H twos, O H: propane one three diol. And the ring with a carboxyl group on each side: benzene one four dicarboxylic acid, the same acid that's in PET. Check: each monomer has a reactive group at both ends, so each can link twice."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is cutting just one link, and calling what's left a monomer. That molecule still has an ester link inside it. Every link was made by losing water, so every link gets its water back."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. The repeat units of two polymers, X and Y, are shown. Y was made directly from a hydroxy acid, with water released. Classify each one as an addition polymer or a condensation polymer, and justify each classification. Then draw the monomer of each polymer. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-x",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Start with X. It has an ester group, but don't stop there. Look along the backbone, through the brackets. It's just two carbons, joined by a C C single bond. The ester group hangs off the side. So X is an addition polymer. To get its monomer, put the double bond back between those two carbons, and add no hydrogens. That's the monomer of Perspex."
+      }
+    },
+    {
+      "id": "q3-y",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now Y. Its backbone runs through an oxygen and a C double bond O. That's an ester link in the chain, so Y is a polyester. The question says water was released as its molecules joined, so that route is condensation. Add the water back: H on the oxygen, and O H on the C double bond O. That gives one molecule with an O H at one end and a carboxyl group at the other. It's lactic acid. One monomer is enough here, because it carries a reactive group at each end."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is calling X a polyester because it contains an ester group. Where the group sits is what counts. Look for ester links in the backbone, then use the stated reaction."
+      }
+    },
+    {
+      "id": "q4-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question four. Nylon six six melts at about two hundred and sixty five degrees. Polyester P melts at about sixty degrees. Their repeat units are shown. Explain the difference in their melting points, with reference to the structures of the two polymers. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q4-compare",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Compare like with like. Line up the two repeat units. Each has six C H twos, then four C H twos, and two C double bond O groups, so they have the same carbon skeleton, a fair comparison of their links. There's one difference. Where nylon has N H, polyester P has just an oxygen."
+      }
+    },
+    {
+      "id": "q4-forces",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "That N H is the key. It can form a hydrogen bond with a C double bond O on the next chain, all along the chains. Polyester P has C double bond O groups too, but no H on an oxygen or nitrogen, so its chains can't hydrogen bond to each other. They're held by weaker dipole dipole and dispersion forces. To melt, the chains have to separate enough to slide past each other. Nylon's hydrogen bonds take more energy to overcome, which is an important reason it melts higher."
+      }
+    },
+    {
+      "id": "q4-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic mistake is saying the amide bonds are stronger than ester bonds, so they take more energy to break. Melting doesn't break either link. It only overcomes the forces between the chains."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's how to start the alkene and acid polymer questions we've practised. First, find the backbone, through the brackets. If it's all carbon, as with an alkene, it's addition: open the double bond to draw it, or put it back to find the monomer, with no extra hydrogens. If it has ester or amide links, it's condensation: take the water out to draw it, or add the water back at every link. Then for a property, compare what holds the chains together, and trace that to the use."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

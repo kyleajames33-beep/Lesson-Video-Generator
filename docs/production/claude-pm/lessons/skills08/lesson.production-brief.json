@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/skills08/lesson.json",
+    "lessonSha256": "8968d130c63d5b0d610251d19cb3a1ceeeca9d1d5faa2b27ea7aad94a734b479"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "skills-s01 (reading routine, constraints), s02 (explain = cause and effect), s04 (verdict, criteria, evidence), s06 (trends with numbers); bio-m7-b09 (vaccination, memory cells, secondary response); bio-m7-b10 (herd immunity; hygiene breaks the contact link); chem-m7-c12 for drill 2 (facts given on the card). Students start Year 12.",
+    "startsWith": "A long question is marked as a whole, in bands. The video opens: The longest questions, worth six to nine marks, can decide a band. In six years of NESA's marking feedback for Chemistry and Biology, every report flagged answers that ignored the stimulus or copied it without explaining it, and more than half flagged judgements without reasons. So here's how to plan a long answer in a minute, build it one idea per paragraph, use the stimulus, and finish with a judgement when the verb asks.",
+    "stopsAfter": "explaining how bands work; unpacking a two-verb question with a constraint and a stimulus; writing a one-minute plan with the judgement first; building a PEEL paragraph that selects and interprets stimulus values; stating a judgement with its condition first and last; recognising why a weak answer sits in a lower band; planning an evaluate answer; rewriting a non-judgement as a judgement.",
+    "nextLesson": "Biology: evaluating disease control strategies (route bio-m7-g02, \"Evaluate an infectious disease strategy\"). In the \"HSC exam skills\" playlist: the subject-specific follow-ups (plan entry 9), root to name."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/skills-s08.md"
+  ],
+  "teaching": {
+    "task": "When a question is worth six to nine marks, how do you plan in about a minute, cover every demand with one idea per paragraph, use the stimulus as evidence, and end with a judgement that earns the top band?",
+    "causalExplanation": "(1) the longest questions can decide a band, and recent marking feedback flags answers that ignore or copy the stimulus and judgements without reasons (1); (2) long answers are placed in a band by reading the whole answer, so the target is every demand covered with evidence and a supported judgement, not more words (2); (3) one HSC-style Biology measles question is set up for planning (3); (4) take it apart: two verbs, a constraint and the stimulus make four demands to tick (4); (5) plan in a minute: decide the judgement first, then one line per paragraph with the numbers it will use (5); (6) build each paragraph as point, evidence, explain and link (6); (7) the constraint needs one paragraph on immunity in the individual and one on the population (7); (8) using the stimulus means selecting and comparing values and saying what they mean, not copying the trend (8); (9) the judgement goes in the first line and comes back at the end with its reason and condition (9); (10) a weak and a strong answer side by side show the difference (10); two drills, one per subject, with feedback (11 to 14); decision rule (15); key notes (16).",
+    "conversationalApproach": "the longest questions, worth six to nine marks, can decide a band, and NESA's marking feedback keeps flagging answers that ignore or copy the stimulus and judgements with no reasons. A marker places the whole answer in a band, so the target is every demand covered, with the stimulus used and a supported judgement, not more words. One HSC-style Biology question on measles vaccination and a school catch-up program is read and planned. Step one takes it apart into two verbs, a constraint and the stimulus, four demands to tick. Step two decides the judgement first, then jots one line per paragraph with the numbers it will use, in about a minute. Each paragraph is built as point, evidence, explain and link, with two paragraphs covering immunity in the individual and in the population. Using the stimulus means picking values, comparing them and saying what they mean, and the judgement opens the answer and returns at the end with its reason, here that cases were already falling before the program. A weak and a strong answer side by side show one verb against both, no numbers against selected values, and a bare verdict against a supported one. Two drills follow, a Biology plan and a Chemistry rewritten judgement, each with brief feedback, and a decision rule gathers unpack, decide, plan, PEEL and judge.",
+    "openingDecision": "The longest questions, worth six to nine marks, can decide a band. In six years of NESA's marking feedback for Chemistry and Biology, every report flagged answers that ignored the stimulus or copied it without explaining it, and more than half flagged judgements without reasons. So here's how to plan a long answer in a minute, build it one idea per paragraph, use the stimulus, and finish with a judgement when the verb asks.",
+    "understandingCheck": "\"A hospital ward measured staff hand hygiene compliance and the rate of infections that patients caught on the ward. A hand hygiene training program began in July. In the same month, the ward also started a new daily cleaning routine. | | Jan to Jun (before) | Jul to Dec (after) | Hand hygiene compliance (%) | 45 | 82 | Infections caught on the ward (per 1,000 patient-days) | 6.0 | 2.5 | Evaluate the training program. (6 marks) Task: write a PLAN only: the demands, your judgement, and one line per paragraph.\" Model plan: demands: evaluate (judgement plus criteria), use the data, refer to how infections spread; judgement: \"probably effective, but not proven by these data\"; P1: hands carry pathogens between patients; hand hygiene breaks the contact link (b10); P2: compliance 45% → 82% while infections 6.0 → 2.5 (fewer than half); P3: the cleaning routine began in the same month, so the fall can't be credited to training alone; P4 (close): verdict with its condition (probably effective; a ward that trained without changing cleaning would show its effect). Crossed habit: \"Start writing straight away\" (no plan: the cleaning routine gets missed). card: \"Evaluate the use of soap for washing clothes in a town with hard water. (5 marks)\" with a student answer summarised in three body sentences (on the card): \"Hard water contains Ca²⁺ ions, which react with soap to form insoluble calcium stearate (scum). This wastes soap and leaves grey deposits on fabric. Soap is made from renewable fats and breaks down readily in the environment.\" Her last line: \"Overall, soap has advantages and disadvantages.\" Task: \"Rewrite her last line so that it makes a judgement.\" Model line: \"In this hard-water town, soap is a poor choice for washing clothes, because calcium ions turn much of it into scum, which wastes soap and leaves deposits on fabric, even though soap is renewable and breaks down readily.\" Crossed habit: \"Overall, soap has advantages and disadvantages.\" (a summary, not a judgement). The card supplies every fact the line needs, so the drill tests only the judgement.",
+    "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer.  No people, hands or faces.",
+    "transitionPlan": "A coded exam page writes on with a long answer box and its marks badge above twelve report tiles that take flags on cue; the band meter draws and a ghost answer block settles into a band; the QuestionCard writes on with its badge and tags and the countdown runs; annotations land on the card as each verb highlights, the constraint rings and demand ticks write in the margin; the plan card writes its verdict line in bold ink and one row per paragraph with its numbers; the PEEL rail draws beside the answer box, lighting on each word as paragraph three writes; paragraphs one and two write above it with their own small rails; the stimulus pick crosses a copied-trend chip and underlines the chosen values; the verdict bookends pin at the top and close at the bottom as the case cells underline; the board splits into a weak and a strong answer with their demand ticks; each drill clears the board and its feedback lands annotations fast with a crossed chip; the decision board writes in five rows, each lighting on its words; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "A coded exam page outline writes on; one long answer box near the bottom carries a marks badge \"(7 marks)\".",
+      "teachingReason": "Hook: The longest questions, worth six to nine marks, can decide a band.",
+      "narrationCue": "stimulus / judgement",
+      "motionPurpose": "On the spoken cues: Twelve small report tiles write beneath; on \"ignored the stimulus or copied it\" all twelve take a teal flag in turn; on \"without reasons\" seven take a second small amber flag. `GreyTag`: \"HSCScience summary of NESA marking feedback, Chemistry and Biology 2020 to 2025: stimulus unused or copied without interpretation, 12 of 12 reports; judgement without adequate reasons, 7 of 12 (counts of reports, not of students)\".",
+      "motionRole": "explain",
+      "onScreenChange": "A coded exam page outline writes on; one long answer box near the bottom carries a marks badge \"(7 marks)\". Twelve small report tiles write beneath; on \"ignored the stimulus or copied it\" all twelve take a teal flag in turn; on \"without reasons\" seven take a second small amber flag. `GreyTag`: \"HSCScience summary of NESA marking feedback, Chemistry and Biology 2020 to 2025: stimulus unused or copied without interpretation, 12 of 12 reports; judgement without adequate reasons, 7 of 12 (counts of reports, not of students)\". On \"stimulus\" the tiles dim and a small graph icon lights in the answer box; on \"judgement\" a short bold line pins at the box's foot with a green bracket. The heading writes on: \"Long answers: plan it, build it, judge it\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "how-marked",
+      "visualDecision": "new",
+      "visualReference": "The band meter draws at the right: a 0 to 7 scale shaded in four bands \"6 to 7\", \"4 to 5\", \"2 to 3\", \"1\".",
+      "teachingReason": "How long answers are marked: Long answers usually aren't marked by ticking separate points.",
+      "narrationCue": "band / evidence",
+      "motionPurpose": "On the spoken cues: On \"band\" a ghost answer block slides onto the meter and settles as a whole (not point by point); a ghost tick-list beside it (\"point 1 ✓, point 2 ✓ ...\") fades and takes a grey cross (caption \"read as a whole\"). On \"top band\" the top band's label writes: \"detailed use of the stimulus; well-supported judgement\" (`GreyTag`: \"pattern in recent NESA marking guidelines, for example Biology 2022 Q27 and 2023 Q30;",
+      "motionRole": "explain",
+      "onScreenChange": "The band meter draws at the right: a 0 to 7 scale shaded in four bands \"6 to 7\", \"4 to 5\", \"2 to 3\", \"1\". On \"band\" a ghost answer block slides onto the meter and settles as a whole (not point by point); a ghost tick-list beside it (\"point 1 ✓, point 2 ✓ ...\") fades and takes a grey cross (caption \"read as a whole\"). On \"top band\" the top band's label writes: \"detailed use of the stimulus; well-supported judgement\" (`GreyTag`: \"pattern in recent NESA marking guidelines, for example Biology 2022 Q27 and 2023 Q30; paraphrased\"). On \"evidence\" three chips write under the meter: \"every demand\", \"evidence\", \"clear order\". Bright at the end: the meter's top band label and the three chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "question-card",
+      "visualDecision": "new",
+      "visualReference": "`QuestionCard` writes on.",
+      "teachingReason": "Question-card (countdown, 10 seconds): Here's an HSC-style Biology question.",
+      "narrationCue": "Here's an HSC-style Biology question. Region R's measles",
+      "motionPurpose": "On the spoken cues: Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey tag \"example data\". Card text and table exactly as Decisions (the worked question, Revision 2: four context sentences, no droplet sentence), with \"(7 marks)\". No graph: the table is the only stimulus, drawn large enough to read at phone width. Below: an empty `AnswerBox` with the four-box demand ticks column in its margin, all empty and",
+      "motionRole": "explain",
+      "onScreenChange": "`QuestionCard` writes on. Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey tag \"example data\". Card text and table exactly as Decisions (the worked question, Revision 2: four context sentences, no droplet sentence), with \"(7 marks)\". No graph: the table is the only stimulus, drawn large enough to read at phone width. Below: an empty `AnswerBox` with the four-box demand ticks column in its margin, all empty and unlabelled. `RoutineStrip` mini at the far left dims. `DrillCountdown` 10 seconds with \"Pause here to answer.\" The full card stays on screen. Nothing answer-bearing (no highlights, no ticks labelled).",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "take-apart",
+      "visualDecision": "new",
+      "visualReference": "Annotations land on the card on cue: on \"Analyse\" the verb highlights amber and \"explain the changes in measles cases\" underlines; on \"assess\" it highlights amber and \"the catch-up program\" underlines; on \"population\" \"refer to immunity in individuals and in the population\" is ringed violet; on \"stimulus\" the table's border rings teal; the marks badge \"(7 marks)\" rings navy.",
+      "teachingReason": "Take it apart: Step one: take the question apart.",
+      "narrationCue": "Analyse / assess / population",
+      "motionPurpose": "On the spoken cues: The demand ticks column labels its four boxes in turn: \"explain change (analyse data)\", \"individual + population immunity\", \"assess the program\", \"use the data\". Grey chip \"s01: verb, marks, constraints\". Bright at the end: the two highlighted verbs and the four labelled boxes.",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land on the card on cue: on \"Analyse\" the verb highlights amber and \"explain the changes in measles cases\" underlines; on \"assess\" it highlights amber and \"the catch-up program\" underlines; on \"population\" \"refer to immunity in individuals and in the population\" is ringed violet; on \"stimulus\" the table's border rings teal; the marks badge \"(7 marks)\" rings navy. The demand ticks column labels its four boxes in turn: \"explain change (analyse data)\", \"individual + population immunity\", \"assess the program\", \"use the data\". Grey chip \"s01: verb, marks, constraints\". Bright at the end: the two highlighted verbs and the four labelled boxes. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "plan-minute",
+      "visualDecision": "new",
+      "visualReference": "The plan card writes beside the answer box.",
+      "teachingReason": "Plan in a minute: Step two: assess asks for a judgement, so decide it first.",
+      "narrationCue": "number / minute",
+      "motionPurpose": "On the spoken cues: On \"judgement\" its top line writes in bold ink: \"Verdict: probably contributed (+ condition)\". On each phrase one row writes: \"1 vaccine → memory B and T cells\", \"2 95% coverage target → herd immunity\", \"3 coverage fell → cases rose\", \"4 catch-up → cases fell; limit: already falling\". On \"number\" a teal chip attaches to each row as the matching cells underline teal in the table: \"97% (card)\", \"95 to 96% | 12, 8\",",
+      "motionRole": "explain",
+      "onScreenChange": "The plan card writes beside the answer box. On \"judgement\" its top line writes in bold ink: \"Verdict: probably contributed (+ condition)\". On each phrase one row writes: \"1 vaccine → memory B and T cells\", \"2 95% coverage target → herd immunity\", \"3 coverage fell → cases rose\", \"4 catch-up → cases fell; limit: already falling\". On \"number\" a teal chip attaches to each row as the matching cells underline teal in the table: \"97% (card)\", \"95 to 96% | 12, 8\", \"95 → 87% | 8 → 310\", \"310 → 180 | 89 → 95% | 180 → 6\". On \"minute\" a small coded clock ring sweeps once around the plan card (tag \"about 60 s\"). Bright at the end: the verdict line and the four number chips. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "peel-paragraph",
+      "visualDecision": "new",
+      "visualReference": "The PEEL rail draws at the left of the answer box: \"Point\", \"Evidence\", \"Explain\", \"Link\", each lighting on its word.",
+      "teachingReason": "Build a paragraph: PEEL: Now build each paragraph the same way.",
+      "narrationCue": "point / outbreak",
+      "motionPurpose": "On the spoken cues: Paragraph 3 writes in the answer box, one sentence per rail label, each underlined in that label's colour: Point \"After the clinics closed in 2013, coverage fell.\" Evidence \"It fell from 95% to 87% by 2016, and cases rose from 8 to 310.\" Explain \"With fewer people immune, an infected person met more susceptible people, so transmission chains continued.\" Link \"So falling coverage explains the 2016 outbreak.\" The",
+      "motionRole": "explain",
+      "onScreenChange": "The PEEL rail draws at the left of the answer box: \"Point\", \"Evidence\", \"Explain\", \"Link\", each lighting on its word. Paragraph 3 writes in the answer box, one sentence per rail label, each underlined in that label's colour: Point \"After the clinics closed in 2013, coverage fell.\" Evidence \"It fell from 95% to 87% by 2016, and cases rose from 8 to 310.\" Explain \"With fewer people immune, an infected person met more susceptible people, so transmission chains continued.\" Link \"So falling coverage explains the 2016 outbreak.\" The matching table cells pulse teal as the evidence sentence writes. On \"outbreak\" the demand box \"explain change (analyse data)\" takes a half tick. Grey chip \"s02: explain = cause → effect\". Bright at the end: the rail and paragraph 3. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "individual-population",
+      "visualDecision": "new",
+      "visualReference": "Paragraph 3 shrinks to a grey block; paragraphs 1 and 2 write above it in the answer box (text as Decisions, P1 and P2), each with a small PEEL rail beside it lighting through its four parts quickly (no spoken labels).",
+      "teachingReason": "The individual and the population: The first two paragraphs cover the constraint.",
+      "narrationCue": "link",
+      "motionPurpose": "On the spoken cues: Grey chips \"b09: memory cells, secondary response\" and \"b10: herd immunity\". In P2 the values \"95 to 96%\", \"12\" and \"8\" underline teal and their table cells pulse. On \"link\" the demand box \"individual + population immunity\" ticks fully, and \"explain change\" completes its tick. Bright at the end: the two new paragraphs and the ticks.",
+      "motionRole": "explain",
+      "onScreenChange": "Paragraph 3 shrinks to a grey block; paragraphs 1 and 2 write above it in the answer box (text as Decisions, P1 and P2), each with a small PEEL rail beside it lighting through its four parts quickly (no spoken labels). Grey chips \"b09: memory cells, secondary response\" and \"b10: herd immunity\". In P2 the values \"95 to 96%\", \"12\" and \"8\" underline teal and their table cells pulse. On \"link\" the demand box \"individual + population immunity\" ticks fully, and \"explain change\" completes its tick. Bright at the end: the two new paragraphs and the ticks. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "use-stimulus",
+      "visualDecision": "new",
+      "visualReference": "The answer box dims.",
+      "teachingReason": "Use the stimulus, don't copy it: Using the stimulus means more than copying it.",
+      "narrationCue": "mean",
+      "motionPurpose": "On the spoken cues: The stimulus pick runs on the table: a chip \"cases went up, then down\" fades in and takes a red scribble cross (caption \"copied trend, no values, no meaning\"). On \"picks the values\" three cells lift out as chips (\"95%\", \"87%\", \"8 → 310\") and drop into a single line; on \"mean\" an interpreting phrase attaches to them: \"coverage fell below the 95% target → more people susceptible → transmission continued → cases rose\",",
+      "motionRole": "explain",
+      "onScreenChange": "The answer box dims. The stimulus pick runs on the table: a chip \"cases went up, then down\" fades in and takes a red scribble cross (caption \"copied trend, no values, no meaning\"). On \"picks the values\" three cells lift out as chips (\"95%\", \"87%\", \"8 → 310\") and drop into a single line; on \"mean\" an interpreting phrase attaches to them: \"coverage fell below the 95% target → more people susceptible → transmission continued → cases rose\", with the card's \"aim for at least 95% two-dose coverage\" sentence underlined teal. The demand box \"use the data\" ticks. Grey chip \"s06: describe with numbers\". Bright at the end: the interpreted line and the tick. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "judgement-bookends",
+      "visualDecision": "new",
+      "visualReference": "The answer box returns.",
+      "teachingReason": "The judgement, first and last: Assess asks for a judgement, so state it in your first line, and come back to it at the end.",
+      "narrationCue": "contributed / condition",
+      "motionPurpose": "On the spoken cues: The verdict bookends run: the opening judgement (Decisions) pins at the top in bold ink. On \"Before the program\" the 2016 and 2018 case cells (310, 180) pulse amber first and P4's first sentence writes with \"310 to 180\" underlined amber (tag \"already falling before the program\"). On \"After it began\" the rest of P4 writes, with \"89% → 95%\" and \"180 → 6\" underlined teal and their cells pulsing; on \"can't separate\" the",
+      "motionRole": "explain",
+      "onScreenChange": "The answer box returns. The verdict bookends run: the opening judgement (Decisions) pins at the top in bold ink. On \"Before the program\" the 2016 and 2018 case cells (310, 180) pulse amber first and P4's first sentence writes with \"310 to 180\" underlined amber (tag \"already falling before the program\"). On \"After it began\" the rest of P4 writes, with \"89% → 95%\" and \"180 → 6\" underlined teal and their cells pulsing; on \"can't separate\" the word \"However\" underlines amber (tag \"limit: association; earlier decline\"). On \"contributed\" the closing line pins at the bottom and a green bracket joins it to the opening line (tag \"verdict first and last\"). Grey chip \"s04: verdict, criteria, evidence\". On \"condition\" the demand box \"assess the program\" ticks; all four boxes now ticked. Bright at the end: the two bookend lines and the four ticks. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "weak-strong",
+      "visualDecision": "new",
+      "visualReference": "Board splits.",
+      "teachingReason": "Weak beside strong: Put two answers side by side.",
+      "narrationCue": "condition / band",
+      "motionPurpose": "On the spoken cues: Left: the weak answer (Decisions) in a pencil style, with its demand ticks: only \"explain change\" half-ticked; its last sentence ringed terracotta (tag \"judgement, no evidence\"). Right: the strong answer condensed to its five parts (opening, P1 to P4 as one-line headings, closing), all four demand ticks filled, teal value underlines visible. On \"condition\" the strong answer's closing line glows. On \"band\" the band",
+      "motionRole": "explain",
+      "onScreenChange": "Board splits. Left: the weak answer (Decisions) in a pencil style, with its demand ticks: only \"explain change\" half-ticked; its last sentence ringed terracotta (tag \"judgement, no evidence\"). Right: the strong answer condensed to its five parts (opening, P1 to P4 as one-line headings, closing), all four demand ticks filled, teal value underlines visible. On \"condition\" the strong answer's closing line glows. On \"band\" the band meter returns between them: the weak answer settles in \"2 to 3\", the strong in \"6 to 7\". `GreyTag`: \"HSCScience marking guide (illustrative)\". Bright at the end: the two band placements. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "tick",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-1",
+      "visualDecision": "new",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-1 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Do the one in your subject,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Biology; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\", grey tag \"example data\". Card text and table exactly as Decisions (drill 1), ending \"Evaluate the training program. (6 marks)\" and the task line \"Write a PLAN only: the demands, your judgement, and one line per paragraph.\" A small grey tag under the table: \"patient-day: one patient on the ward for one day\" (Revision 2; screen only). An empty plan card beside it. `DrillCountdown` 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no highlights, no ticks.",
+      "motionTools": [
+        "HandText write-on",
+        "tick",
+        "table build",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"Evaluate\" (chip \"evaluate: judgement against criteria, using the data\", on screen only); ring on \"(6 marks)\"; teal underline on the table.",
+      "teachingReason": "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "effective / month / plan",
+      "motionPurpose": "On the spoken cues: The plan card fills on cue: verdict \"probably effective, but not proven (cleaning changed too)\"; row 1 \"hands carry pathogens → hygiene breaks the contact link (b10)\"; on \"eighty two\" row 2 \"45 → 82% | 6.0 → 2.5 per 1,000 patient-days\" with the cells underlined teal; on \"month\" row 3 \"cleaning routine began in July too → confounding\" with \"In the same month, the ward also started a new daily cleaning routine\"",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"Evaluate\" (chip \"evaluate: judgement against criteria, using the data\", on screen only); ring on \"(6 marks)\"; teal underline on the table. The plan card fills on cue: verdict \"probably effective, but not proven (cleaning changed too)\"; row 1 \"hands carry pathogens → hygiene breaks the contact link (b10)\"; on \"eighty two\" row 2 \"45 → 82% | 6.0 → 2.5 per 1,000 patient-days\" with the cells underlined teal; on \"month\" row 3 \"cleaning routine began in July too → confounding\" with \"In the same month, the ward also started a new daily cleaning routine\" underlined amber; row 4 \"close: verdict + condition\". On \"plan\" a `CrossedHabit` chip \"start writing straight away\" takes a red scribble cross. Caption \"no plan, and the cleaning routine gets missed\". Grey label \"HSCScience model plan (illustrative)\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "Mark highlight",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-2",
+      "visualDecision": "adjust",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-2 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Now Chemistry. The question: evaluate the use of",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Chemistry; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text exactly as Decisions (drill 2): the question with \"(5 marks)\", her three body sentences in a pencil-style box, and her last line in the same style; the task line \"Rewrite her last line so that it makes a judgement.\" `m7-soap-tube-hard-v1.png` small at the card's right (tag \"soap in hard water\"). `DrillCountdown` 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"Evaluate\"; \"town with hard water\" underlined; \"Ca²⁺ ions\", \"insoluble calcium stearate (scum)\", \"wastes soap\", \"grey deposits\" and \"renewable fats\" underlined teal in her body sentences as the new line uses them.",
+      "teachingReason": "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "trap",
+      "motionPurpose": "On the spoken cues: The model line writes in bold ink under her answer, its parts lit in turn: \"poor choice\" (the side), \"because calcium ions turn much of it into scum ...\" (the reason), \"even though soap is renewable\" (the weighed criterion). Grey chip \"s04: verdict, criteria, evidence\". On \"trap\" her original last line becomes a `CrossedHabit` chip and takes a red scribble cross. Caption \"summary, not a judgement\". Grey label",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"Evaluate\"; \"town with hard water\" underlined; \"Ca²⁺ ions\", \"insoluble calcium stearate (scum)\", \"wastes soap\", \"grey deposits\" and \"renewable fats\" underlined teal in her body sentences as the new line uses them. The model line writes in bold ink under her answer, its parts lit in turn: \"poor choice\" (the side), \"because calcium ions turn much of it into scum ...\" (the reason), \"even though soap is renewable\" (the weighed criterion). Grey chip \"s04: verdict, criteria, evidence\". On \"trap\" her original last line becomes a `CrossedHabit` chip and takes a red scribble cross. Caption \"summary, not a judgement\". Grey label \"HSCScience model answer (illustrative)\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "Mark highlight"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "A decision board writes in five rows, each lighting on its words with a one-line example from this video: \"Unpack: verbs, constraint, stimulus → ticks (analyse + assess; individual + population)\"; \"Judgement asked for?",
+      "teachingReason": "Decision-rule: So, for a long answer: take the question apart, and tick each demand.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: Decide it first (probably contributed)\"; \"Plan: one line per paragraph + its evidence (95 → 87%)\"; \"PEEL each paragraph\"; \"Judgement verb? End with the judgement + condition (cases already falling before 2018)\". On \"Next\" a chip slides in: \"Next in Biology: evaluate an infectious disease strategy\".",
+      "motionRole": "explain",
+      "onScreenChange": "A decision board writes in five rows, each lighting on its words with a one-line example from this video: \"Unpack: verbs, constraint, stimulus → ticks (analyse + assess; individual + population)\"; \"Judgement asked for? Decide it first (probably contributed)\"; \"Plan: one line per paragraph + its evidence (95 → 87%)\"; \"PEEL each paragraph\"; \"Judgement verb? End with the judgement + condition (cases already falling before 2018)\". On \"Next\" a chip slides in: \"Next in Biology: evaluate an infectious disease strategy\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills08-learning-review.md",
+      "sha256": "d318983cb4ab0669fb3e4ff3ff660ba0a96b9984f6505963c261fc1f9be5db60"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills08-claude-science-check.md",
+      "sha256": "1af9a564a61530b369a1e92e7748c63f826e795ed2bc27c2dc21993a548e1ad0"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

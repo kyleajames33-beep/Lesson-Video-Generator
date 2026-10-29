@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/skills06/lesson.json",
+    "lessonSha256": "5964c999bdb7d37feebdeeb1e9cb6bf19613665d0c81ab14abc6a46086f0eec7"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "series s01 (reading routine: verb, marks, content words and givens, constraint, tick each part), s02 (explain shows the link), s04 (assess needs a judgement with evidence; used in part d), s05 (values with units; consequential working). s07 is not assumed (in Biology it came earlier, after p02; in Chemistry its order relative to s06 is the Module 8 review's call), so s06 never relies on it. Biology: b11 (resistance by selection), p05 (zones of inhibition). Chemistry: Year 11 rates (gas volume against time levels off as a reactant runs out). Year 7 to 10 graphing (axes, plotting points) is assumed; the video names the HSC expectations on top of it. Students start Year 12.",
+    "startsWith": "Graph questions ask you to read, draw, describe or extend. The video opens: Graph questions look easy, which is why they're easy to lose marks on. Across the last twelve Chemistry and Biology marking feedback reports, eleven commented on graphs drawn or read poorly, and nine on trends described without the numbers. So here's how to read a graph, draw one that earns its marks, describe a trend with data, and know when you can extend the line.",
+    "stopsAfter": "as above.",
+    "nextLesson": "s07, practical questions (series); bio-m7-g01 (Biology playlist)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/skills-s06.md"
+  ],
+  "teaching": {
+    "task": "When a question gives you data or asks for a graph, how do you read values with their units, draw a graph that earns its marks, describe the trend with numbers, and decide whether you can trust a value read beyond the data?",
+    "causalExplanation": "(1) graph questions look easy, yet most recent Chemistry and Biology marking feedback reports comment on graphs drawn or read poorly and on trends described without numbers (1); (2) read the axes first: what is measured, the units and what one small square is worth, then read across to the value with its unit (2); (3) one HSC-style Biology resistance question with four parts is set up (3); (4) part a, an even scale: years that jump by two then three must not be spaced evenly, or the trend bends (4); (5) label with units, a title, small crosses and one smooth line of best fit, not joined dots (5); (6) part b, describe the trend with direction and data, and say where any change happens (6); (7) percentage points and per cent give different numbers, so say which (7); (8) part c, interpolation reads inside the data from the line, with read-off lines drawn (8); (9) part d, extrapolation extends the line beyond the data and rests on an assumption that may not hold (9); (10) a line graph for continuous data or change over time, a column graph for categories (10); two drills, one per subject, with feedback (11 to 14); decision rule (15); key notes (16).",
+    "conversationalApproach": "graph questions look easy, which is why they are easy to lose marks on, and recent marking feedback keeps flagging graphs drawn or read poorly and trends described without numbers. The habit starts with the axes: what is measured, in what units and what one small square is worth, then axis to line to axis, writing the value with its unit. One HSC-style Biology question on E. coli resistance to an antibiotic is worked part by part. Part a builds an even scale even though the years jump by two then three, then labels, plots small crosses and draws one smooth line of best fit with the points scattered on both sides. Part b describes the trend with its direction and data, about one and a half percentage points a year, and then separates percentage points from per cent so the answer says which it means. Part c reads 2016 from the line, not the nearest point, which is interpolation; part d extends the line to 2040, which is extrapolation, and assesses the prediction by naming the assumption that the rate stays the same. A short contrast says when a column graph fits instead. Two drills follow, one per subject, with brief feedback that names the habit to drop, and a decision rule gathers read, draw, describe and extend.",
+    "openingDecision": "Graph questions look easy, which is why they're easy to lose marks on. Across the last twelve Chemistry and Biology marking feedback reports, eleven commented on graphs drawn or read poorly, and nine on trends described without the numbers. So here's how to read a graph, draw one that earns its marks, describe a trend with data, and know when you can extend the line.",
+    "understandingCheck": "the narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, identify and explain, 3 marks: card: \"A student measured the volume of carbon dioxide produced when marble chips reacted with excess hydrochloric acid. Her results and her graph are shown.\" Table: \"Time (s) | 0 | 30 | 60 | 120 | 240\"; \"Volume of CO₂ (mL) | 0 | 22 | 38 | 55 | 62\". The student's graph (coded): the five time values at equal spacing along the x-axis (0, 30, 60, 120, 240 equally spaced), the y-axis labelled \"volume\" with no unit, the points joined dot to dot with straight segments; a title is present. Demand: \"Identify THREE problems with the student's graph and explain how to correct each. (3 marks)\". Content: none beyond the card (rate slowing as the marble chips are used up is a grey tag only). Answer: uneven time scale (equal steps, for example every 30 s, with each time at its real position); y-axis without a unit (label \"volume of CO₂ (mL)\"); dot to dot (a smooth curve of best fit, through the origin, levelling off). Crossed habit: \"a line of best fit must be a straight line\" (best fit can be a smooth curve when the data curve). Drill 2, Biology, describe, 2 marks: card: \"A student soaked paper discs (6 mm in diameter) in five concentrations of an antiseptic and placed them on agar spread with a harmless bacterium. After incubation she measured the diameter of the clear zone around each disc (the zone of inhibition), including the disc. The table shows her mean results.\" Table: \"Antiseptic concentration (%) | 0 | 1 | 2 | 3 | 6\"; \"Mean zone diameter (mm) | 6 | 9 | 12 | 15 | 16\". Demand: \"Describe the relationship between antiseptic concentration and zone diameter. (2 marks)\". Answer: from 0% to 3% the zone diameter increased steadily as concentration increased, by about 3 mm per 1% (6 mm to 15 mm); from 3% to 6% it increased only slightly (15 mm to 16 mm), so it levelled off. Crossed habit: \"As concentration increases, the zone increases.\" (no values; misses the change in pattern). Why these two: drill 1 tests drawing mechanics (three of the pack's listed faults: uneven scale, missing unit, dot to dot) on a curved data set, which also crosses the \"best fit must be straight\" habit; drill 2 tests description, the 9/12 fault, on a pattern that changes, so \"direction, data, change\" earns both marks. Each uses a context that viewers of its subject have met (Year 11 rates for Chemistry, p05 for Biology) but the card carries everything.",
+    "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"graph questions ask you to read, draw, describe or extend\". Stops after reading a value with its unit; scale, labels, plotting and best fit (TAILS); describing with direction, data, change; interpolating with read-off lines; judging an extrapolation; line against column graphs; two drills."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. the shared skills kit (`src/explainer/lessons/skills-shared/`: `QuestionCard` with its annotation layer, `MarksBadge`, `AnswerBox`, `MarkCounter`, `WeakStrongPanel`, `RoutineStrip`, `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`), `BandLadder` from s04 and s05, and the graph parts from `src/explainer/lessons/chem-m6-c13/parts.tsx` (`Axes`, `Curve`, `GDot`, `Drop` for read-off lines, `Band`), imported, not copied (root may lift them to the shared kit). New lesson-local components (suggested folder `src/explainer/lessons/skills-s06`): `GridPaper`: a coded graph-paper rectangle (fine and bold lines, 20 by 15 squares) that the card's grid and the answer plots draw on. `ScaleTrap`: two small x-axes stacked: top, the five years at equal spacing (terracotta, \"equal spacing: wrong\"); bottom, the same years at real positions on an even 1-year scale (green). The five points plot on both: the top line visibly bends at 2014, the bottom stays straight. `TailsRail`: a five-row check card (T, A, I, L, S), rows lighting on cue, built like s07's `FixRail`, with a sixth row \"line of best fit, not dot to dot\". `TrendMove`: a three-row description card (\"Direction\", \"Data\", \"Change\"), mini and full states. `ExtendZone`: beyond the last data point, the line of best fit continues as a dashed grey line through a pale shaded region labelled \"no data here\"; on cue a small fan of three dashed possible paths (keeps rising, levels off, falls) opens from 2020, tag \"the line assumes the top one\". `ColumnMini`: a small column graph (three antibiotic categories, gaps between columns) beside a small line graph, for scene 9. Plates: listed under Assets (no new plates). No people, hands or faces.",
+    "transitionPlan": "A coded line graph writes on above twelve report tiles that take red flags on cue; the graph enlarges as each axis label lights and a bracket spans one small square, then a read-off line runs from the axis to the line and across; the QuestionCard writes on with its badge and tags; the card shrinks to a strip that keeps the table and only the current demand while the grid builds with even steps and a squashed-gap ghost is crossed; the TailsRail builds in the side column, rows lighting on cue, as crosses plot and a best-fit line draws; the TrendMove arrow writes with its data chips; two bars write from the table cells and the points and per cent brackets compare them; a read-off line rises from 2016 to the line and across; the line extends past the data as a dashed run with an assumption chip; the board clears to a small line graph beside a column graph with gaps; each drill clears the board and its feedback lands annotations fast with a crossed habit chip; the decision board writes in four rows, each lighting on its words; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "A coded line graph writes on in the centre (axes, five points, a line).",
+      "teachingReason": "Hook: Graph questions look easy, which is why they're easy to lose marks on.",
+      "narrationCue": "numbers / extend",
+      "motionPurpose": "On the spoken cues: Twelve small report tiles write beneath; on \"drawn or read poorly\" eleven take a red `Flag` in turn; on \"numbers\" nine take a second small amber flag. `GreyTag`: \"research summary of NESA marking feedback, Chemistry and Biology 2020 to 2025: graph faults 11 of 12 reports; trends without values 9 of 12\". On \"extend\" the tiles dim and the graph's line continues as a short dashed grey stub past the last point, with a",
+      "motionRole": "explain",
+      "onScreenChange": "A coded line graph writes on in the centre (axes, five points, a line). Twelve small report tiles write beneath; on \"drawn or read poorly\" eleven take a red `Flag` in turn; on \"numbers\" nine take a second small amber flag. `GreyTag`: \"research summary of NESA marking feedback, Chemistry and Biology 2020 to 2025: graph faults 11 of 12 reports; trends without values 9 of 12\". On \"extend\" the tiles dim and the graph's line continues as a short dashed grey stub past the last point, with a small \"?\" chip. The heading writes on: \"Graphs: read it, draw it, describe it\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "read-axes",
+      "visualDecision": "new",
+      "visualReference": "The hook graph enlarges.",
+      "teachingReason": "Read the axes: Before you read any value, read the axes: what's measured, in what units, and what one small square is worth.",
+      "narrationCue": "axes / with its unit",
+      "motionPurpose": "On the spoken cues: On \"axes\" the y-axis label lights amber (\"Volume (mL)\") and the x-axis label violet (\"Time (s)\"); on \"one small square\" a coded bracket spans one small square on each axis with chips \"1 square = 2 mL\" and \"1 square = 10 s\". On \"from the axis to the line\" a teal `Drop` read-off line runs up from x = 50 s to the line and across to the y-axis: \"28\". On \"half a small square\" the read-off point enlarges in a small inset",
+      "motionRole": "explain",
+      "onScreenChange": "The hook graph enlarges. On \"axes\" the y-axis label lights amber (\"Volume (mL)\") and the x-axis label violet (\"Time (s)\"); on \"one small square\" a coded bracket spans one small square on each axis with chips \"1 square = 2 mL\" and \"1 square = 10 s\". On \"from the axis to the line\" a teal `Drop` read-off line runs up from x = 50 s to the line and across to the y-axis: \"28\". On \"half a small square\" the read-off point enlarges in a small inset showing the line crossing midway between two gridlines (tag \"estimate: about half a square\"). On \"with its unit\" the chip \"28\" grows to \"28 mL\"; a ghost chip \"28\" alone fades in beside it and takes a grey cross (caption \"28 what?\"). Bright at the end: \"28 mL\", the read-off line and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "question-card",
+      "visualDecision": "adjust",
+      "visualReference": "`QuestionCard` writes on.",
+      "teachingReason": "Question-card (countdown, 10 seconds): Here's an HSC-style Biology question.",
+      "narrationCue": "Here's an HSC-style Biology question. A hospital laboratory",
+      "motionPurpose": "On the spoken cues: Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey tag \"example data\". Card text, table and the four demands exactly as Decisions (the worked question), with mark values. `m7-bacterium-rod-coccus-v1.png` small at the card's right, positioned so only the rod shows (tag \"*E. coli*, a gut bacterium\"). Below: the blank `GridPaper` (20 by 15) and an `AnswerBox` with slots \"(b)\", \"(c)\", \"(d)\"; counter",
+      "motionRole": "explain",
+      "onScreenChange": "`QuestionCard` writes on. Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey tag \"example data\". Card text, table and the four demands exactly as Decisions (the worked question), with mark values. `m7-bacterium-rod-coccus-v1.png` small at the card's right, positioned so only the rod shows (tag \"*E. coli*, a gut bacterium\"). Below: the blank `GridPaper` (20 by 15) and an `AnswerBox` with slots \"(b)\", \"(c)\", \"(d)\"; counter \"0 / 8\". During the response opportunity the card (stem, table, four demands) and the grid take the full frame at full size, so the data and the grid are both readable; the card is not shrunk until scene 4. The ten seconds are only the prompt: the spoken \"Pause here to answer all four parts.\" tells students to pause the video for as long as eight marks need. `RoutineStrip` mini at the far left dims. `DrillCountdown` 10 seconds with \"Pause here to answer.\" The full card stays on screen. Nothing answer-bearing (no axes, no scale).",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "part-a-scale",
+      "visualDecision": "new",
+      "visualReference": "The card shrinks to a strip that keeps the table and only the current demand, (a), readable; demands (b) to (d) leave the strip until their scenes (each later scene keeps just its own demand and the table or the graph it needs).",
+      "teachingReason": "Part a: the scale: Part a.",
+      "narrationCue": "bottom / even / bend",
+      "motionPurpose": "On the spoken cues: Highlighter on \"Plot\" and \"line graph\"; ring on \"(3 marks)\". On \"bottom\" the grid gains axes: x \"Year\" (violet), y \"Samples resistant (%)\" (amber), each with a pen link to the table row it comes from. On \"even\" tick marks write along the x-axis every year (2010 to 2020, one year per 2 squares) and up the y-axis every 2% (0 to 30%, one square each), with a grey tag \"every gridline worth the same\". On \"the years jump\"",
+      "motionRole": "explain",
+      "onScreenChange": "The card shrinks to a strip that keeps the table and only the current demand, (a), readable; demands (b) to (d) leave the strip until their scenes (each later scene keeps just its own demand and the table or the graph it needs). Highlighter on \"Plot\" and \"line graph\"; ring on \"(3 marks)\". On \"bottom\" the grid gains axes: x \"Year\" (violet), y \"Samples resistant (%)\" (amber), each with a pen link to the table row it comes from. On \"even\" tick marks write along the x-axis every year (2010 to 2020, one year per 2 squares) and up the y-axis every 2% (0 to 30%, one square each), with a grey tag \"every gridline worth the same\". On \"the years jump\" the table's year cells underline in turn with small grey gap chips between them: \"+2\", \"+2\", \"+3\", \"+3\". On \"bend\" `ScaleTrap` appears in the side column: the top axis with the years equally spaced and the five points joined, visibly bending at 2014 (terracotta, \"equal spacing: wrong\"); the bottom axis at real positions, the points in a near straight line (green, \"real positions\"). On \"fills most of the grid\" a pale bracket shows the plotted range using the full grid width and most of its height. Tag \"x: 1 year = 2 squares; y: 1 square = 2%\". Bright at the end: the two axis labels and the green real-positions axis. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "part-a-plot",
+      "visualDecision": "new",
+      "visualReference": "`TailsRail` builds in the side column, rows lighting on cue.",
+      "teachingReason": "Part a: plot and best fit: Label each axis with what's measured and its unit, and add a title.",
+      "narrationCue": "unit / best fit / scatter / TAILS",
+      "motionPurpose": "On the spoken cues: On \"unit\" the axis labels gain units in amber underline (\"Year\", \"Samples resistant (%)\"), rail row L lights; a title writes above the grid, \"Percentage of *E. coli* samples resistant to antibiotic K, 2010 to 2020\", rail row T lights. On \"cross\" five small ink crosses land at (2010, 4), (2012, 7), (2014, 10), (2017, 15), (2020, 19), each table cell underlining as its point lands. On \"best fit\" a straight ink line",
+      "motionRole": "explain",
+      "onScreenChange": "`TailsRail` builds in the side column, rows lighting on cue. On \"unit\" the axis labels gain units in amber underline (\"Year\", \"Samples resistant (%)\"), rail row L lights; a title writes above the grid, \"Percentage of *E. coli* samples resistant to antibiotic K, 2010 to 2020\", rail row T lights. On \"cross\" five small ink crosses land at (2010, 4), (2012, 7), (2014, 10), (2017, 15), (2020, 19), each table cell underlining as its point lands. On \"best fit\" a straight ink line draws from about (2010, 4.0) to (2020, 19.2); the points sit close to it, 2017 a little above and 2020 a little below, with tiny grey ticks showing those two gaps. Rail sixth row lights: \"line or curve of best fit, not dot to dot\". On \"Don't join the dots\" a faint ghost dot-to-dot zigzag flashes over the points in terracotta and takes a grey cross (caption \"every wobble treated as real\"). On \"scatter\" a small grey tag: \"measured values vary a little; the best fit shows the trend\". On \"TAILS\" the rail's initials light amber down its edge; counter ticks \"1 / 8\", \"2 / 8\", \"3 / 8\" (scale; labels and title; points and line). Grey label \"HSCScience marking guide (illustrative)\". A two-rung `BandLadder` writes small under the rail: \"2: all points correct, appropriate best-fit line\"; \"1: some points correct, or an attempted line\". `GreyTag`: \"a NESA Biology marking guideline, 2024 (2 marks), paraphrased\". Bright at the end: the line of best fit, the rail's initials and the ladder. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "tick",
+        "Mark underline",
+        "DrawPath",
+        "table build",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "part-b-trend",
+      "visualDecision": "new",
+      "visualReference": "Demands (a), (c) and (d) dim to grey; highlighter on \"Describe\" (grey chip \"describe: say what it looks like, with detail (s01)\") and \"trend\".",
+      "teachingReason": "Part b: describe the trend: Part b: describe the trend.",
+      "narrationCue": "direction / year / changes / explain",
+      "motionPurpose": "On the spoken cues: `TrendMove` builds in the side column; the TAILS rail shrinks to a tab. On \"direction\" an amber arrow runs along the line of best fit, rail row \"Direction\" lights; answer row (b) writes: \"Resistance increased steadily\" (tick \"4 / 8\"). On \"four percent\" and \"nineteen percent\" the two end points ring teal and the table cells underline; row (b) adds \"from 4% in 2010 to 19% in 2020\"; on \"year\" a small rise-over-run",
+      "motionRole": "explain",
+      "onScreenChange": "Demands (a), (c) and (d) dim to grey; highlighter on \"Describe\" (grey chip \"describe: say what it looks like, with detail (s01)\") and \"trend\". `TrendMove` builds in the side column; the TAILS rail shrinks to a tab. On \"direction\" an amber arrow runs along the line of best fit, rail row \"Direction\" lights; answer row (b) writes: \"Resistance increased steadily\" (tick \"4 / 8\"). On \"four percent\" and \"nineteen percent\" the two end points ring teal and the table cells underline; row (b) adds \"from 4% in 2010 to 19% in 2020\"; on \"year\" a small rise-over-run triangle draws on the line (10 years across, 15 up) with \"about 1.5 percentage points per year\" and a grey gloss \"percentage points: the difference between two percentages\" (tick \"5 / 8\"). On \"changes\" rail row \"Change\" lights; a grey tag \"no change in pattern here: the points stay near one straight line\". A chip \"it went up\" fades in and takes a grey cross (caption \"no data, no marks for detail\"). On \"explain\" a grey side chip writes: \"describe = what the data show; explain = add why (s02)\", and a single grey line under row (b): \"explain: a plausible reason, e.g. antibiotic use can select resistant bacteria; the graph alone doesn't show the cause (the antibiotics video)\". It dims as the scene ends. Bright at the end: row (b), the triangle and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "part-b-points",
+      "visualDecision": "new",
+      "visualReference": "`TrendMove` dims.",
+      "teachingReason": "Points or percent: One trap with percentages.",
+      "narrationCue": "points / per cent",
+      "motionPurpose": "On the spoken cues: Two short bars write in the side column from the table's 2010 and 2020 cells: \"2010: 4%\" and \"2020: 19%\". On \"points\" a bracket between the bar tops: \"19 − 4 = 15 percentage points\" (amber), gloss \"percentage points: the difference between two percentages\". On \"percent\" a second line writes beneath: \"(19 − 4) ÷ 4 × 100 = 375% increase\" (teal), with a small grey tag \"relative change: compared with the start\". A chip",
+      "motionRole": "explain",
+      "onScreenChange": "`TrendMove` dims. Two short bars write in the side column from the table's 2010 and 2020 cells: \"2010: 4%\" and \"2020: 19%\". On \"points\" a bracket between the bar tops: \"19 − 4 = 15 percentage points\" (amber), gloss \"percentage points: the difference between two percentages\". On \"percent\" a second line writes beneath: \"(19 − 4) ÷ 4 × 100 = 375% increase\" (teal), with a small grey tag \"relative change: compared with the start\". A chip \"resistance rose 15%\" fades in with a grey \"?\" tag \"15 what?\", and rewrites as \"rose 15 percentage points (a 375% increase)\". Bright at the end: the two result lines and the rewritten chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build",
+        "bar fill"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "part-c-interpolate",
+      "visualDecision": "new",
+      "visualReference": "Demands (a), (b) and (d) dim; underline on \"2016\" and \"Use your graph\".",
+      "teachingReason": "Part c: interpolate: Part c asks for twenty sixteen, which sits inside the data.",
+      "narrationCue": "inside / thirteen",
+      "motionPurpose": "On the spoken cues: `TrendMove` dims. On \"inside\" a pale teal band shades the data range 2010 to 2020 on the x-axis, label \"inside the data\"; gloss \"interpolation: reading a value between measured points\". On \"line of best fit\" a teal `Drop` rises from 2016 to the line (not to the 2017 cross, which pulses grey with a tag \"not the nearest point\") and runs across to the y-axis. On \"thirteen\" the y-axis chip writes \"about 13%\"; answer row",
+      "motionRole": "explain",
+      "onScreenChange": "Demands (a), (b) and (d) dim; underline on \"2016\" and \"Use your graph\". `TrendMove` dims. On \"inside\" a pale teal band shades the data range 2010 to 2020 on the x-axis, label \"inside the data\"; gloss \"interpolation: reading a value between measured points\". On \"line of best fit\" a teal `Drop` rises from 2016 to the line (not to the 2017 cross, which pulses grey with a tag \"not the nearest point\") and runs across to the y-axis. On \"thirteen\" the y-axis chip writes \"about 13%\"; answer row (c) writes \"about 13% (read from the line of best fit)\" (tick \"6 / 8\"). On \"both sides\" the 2014 and 2017 crosses pulse teal either side of 2016 (tag \"data on both sides\"). Bright at the end: the read-off lines, \"about 13%\" and the gloss. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "tick",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "part-d-extrapolate",
+      "visualDecision": "new",
+      "visualReference": "Demands (a) to (c) dim; underline on \"2040\", \"about 50%\" and \"Assess\" (grey chip \"assess: a judgement with evidence (s04)\").",
+      "teachingReason": "Part d: extrapolate: Part d is different.",
+      "narrationCue": "extrapolation / change / assumption",
+      "motionPurpose": "On the spoken cues: The main graph slides left and dims; a small inset graph draws beside it at its own even scale (x 2010 to 2040, 1 square = 2 years; y 0 to 60%, 1 square = 4%), with the five data crosses and the line of best fit (tag \"same data, wider even scale\"), so no axis is drawn unevenly. On \"extrapolation\" `ExtendZone` draws on the inset: the line continues dashed grey from 2020 into a pale shaded region \"no data here\"; gloss",
+      "motionRole": "explain",
+      "onScreenChange": "Demands (a) to (c) dim; underline on \"2040\", \"about 50%\" and \"Assess\" (grey chip \"assess: a judgement with evidence (s04)\"). The main graph slides left and dims; a small inset graph draws beside it at its own even scale (x 2010 to 2040, 1 square = 2 years; y 0 to 60%, 1 square = 4%), with the five data crosses and the line of best fit (tag \"same data, wider even scale\"), so no axis is drawn unevenly. On \"extrapolation\" `ExtendZone` draws on the inset: the line continues dashed grey from 2020 into a pale shaded region \"no data here\"; gloss \"extrapolation: extending the line beyond the data\"; grey tag \"NESA glossary, extrapolate: 'Infer from what is known.'\". On \"about fifty percent\" a grey read-off from 2040 to the dashed line and across: \"about 50%\". On \"change\" the three dashed possible paths fan out from 2020 (keeps rising, levels off, falls), each with a small grey label (\"new drugs\", \"less prescribing\", \"better infection control\" placed by the paths that bend), tag \"the line assumes the top one\". Answer row (d) writes: \"Weak: 2040 is 20 years beyond the data; it assumes the same rate continues, but new drugs, prescribing or infection control could change the trend\" (ticks \"7 / 8\", \"8 / 8\"). Grey label \"HSCScience marking guide (illustrative)\". On \"Inside the data\" the aid writes large and handwritten: \"Inside the data, read it. Outside, doubt it.\" On \"assumption\" a small grey line under it: \"asked to extend? do it, and state the assumption\". Bright at the end: the aid, the fan and row (d). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "line-or-column",
+      "visualDecision": "new",
+      "visualReference": "The board clears to `ColumnMini`: on \"percentages\" the small line graph from part (a) (tag \"continuous or over time → line\"); on \"categories\" a small column graph with three columns \"antibiotic A\", \"B\", \"C\" and gaps between them, y \"mean zone diameter (mm)\" (tag \"categories → columns, with gaps\").",
+      "teachingReason": "Line or column?: One more drawing choice.",
+      "narrationCue": "percentages / categories",
+      "motionPurpose": "On the spoken cues: Grey tag \"example values\". On \"accurate scale\" the column graph's y ticks, axis labels and the tops of the columns each take a small amber tick in turn. `GreyTag`: \"a NESA Chemistry marking guideline, 2025 (3 marks)\". Bright at the end: the two type tags and the three ticks.",
+      "motionRole": "explain",
+      "onScreenChange": "The board clears to `ColumnMini`: on \"percentages\" the small line graph from part (a) (tag \"continuous or over time → line\"); on \"categories\" a small column graph with three columns \"antibiotic A\", \"B\", \"C\" and gaps between them, y \"mean zone diameter (mm)\" (tag \"categories → columns, with gaps\"). Grey tag \"example values\". On \"accurate scale\" the column graph's y ticks, axis labels and the tops of the columns each take a small amber tick in turn. `GreyTag`: \"a NESA Chemistry marking guideline, 2025 (3 marks)\". Bright at the end: the two type tags and the three ticks. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-1",
+      "visualDecision": "adjust",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Do the one in your subject,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\", grey tag \"example data\". Card text and table exactly as Decisions (drill 1), ending \"Identify THREE problems with the student's graph and explain how to correct each. (3 marks)\". `m6-marble-chips-acid-v1.png` small at the card's right (tag \"marble chips in acid\"). The student's graph (coded, on `GridPaper`, in a pencil style): title \"Gas produced over time\"; x-axis \"Time (s)\" with ticks 0, 30, 60, 120, 240 equally spaced; y-axis \"volume\" (no unit) from 0 to 70 in 10s; five points joined by straight segments. Empty answer box, counter \"0 / 3\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing: no rail, no rings.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "table build",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"Identify THREE problems\" and \"explain how to correct\"; ring on \"(3 marks)\".",
+      "teachingReason": "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "even / unit / curve",
+      "motionPurpose": "On the spoken cues: On \"even\" the x-axis ticks ring terracotta; the time row of the table underlines; row 1 writes \"Uneven time scale (30, 60, 120, 240 s equally spaced) → use equal steps, for example every 30 s, each time at its real position\" (tick \"1 / 3\"); the axis redraws with even ticks every 30 s to 240 s and the points shift to their real positions. On \"unit\" the y-axis label rings terracotta; row 2 \"No unit on the volume axis",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"Identify THREE problems\" and \"explain how to correct\"; ring on \"(3 marks)\". On \"even\" the x-axis ticks ring terracotta; the time row of the table underlines; row 1 writes \"Uneven time scale (30, 60, 120, 240 s equally spaced) → use equal steps, for example every 30 s, each time at its real position\" (tick \"1 / 3\"); the axis redraws with even ticks every 30 s to 240 s and the points shift to their real positions. On \"unit\" the y-axis label rings terracotta; row 2 \"No unit on the volume axis → 'Volume of CO₂ (mL)'\" (tick \"2 / 3\"); the label rewrites. On \"joined the dots\" the straight segments ring terracotta; row 3 \"Dot to dot → one smooth curve of best fit, levelling off\" (tick \"3 / 3\"); a smooth ink curve draws from the origin through the points, flattening towards about 62 to 65 mL. Grey tag \"levels off as the marble chips are used up (Year 11 rates)\". Grey label \"HSCScience marking guide (illustrative)\". On \"curve\" a `CrossedHabit` chip \"a line of best fit must be straight\" takes a red scribble cross. Caption \"best fit can be a curve\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "drill-2",
+      "visualDecision": "adjust",
+      "visualReference": "Board clears.",
+      "teachingReason": "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Now Biology. A student measured the zone of",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\", grey tag \"example data\". Card text and table exactly as Decisions (drill 2), ending \"Describe the relationship between antiseptic concentration and zone diameter. (2 marks)\". `m7-agar-antibiotic-after-v1.png` small at the card's right (tag \"a disc test: clear zones around discs\"; inspected 28 Oct: four discs with equal zones on a lawn; used only as a picture of the method, its equal zones are not data). Empty answer box, counter \"0 / 2\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing: no graph.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "NumberTicker",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "Annotations land fast: highlighter on \"Describe\" and \"relationship\"; ring on \"(2 marks)\".",
+      "teachingReason": "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+      "narrationCue": "levelled / misses",
+      "motionPurpose": "On the spoken cues: A small coded line graph of the table draws beside the card (even x scale 0 to 6%, the 3 and 6 placed at real positions; y 0 to 18 mm; a line rising steadily to 3%, then flattening). `TrendMove` mini lights row by row. Rows write with ticks: on \"six to fifteen\" \"0\", \"3\", \"6\" and \"15\" underline in the table; row 1 \"From 0% to 3%, zone diameter increased steadily with concentration, from 6 mm to 15 mm (about 3 mm per",
+      "motionRole": "explain",
+      "onScreenChange": "Annotations land fast: highlighter on \"Describe\" and \"relationship\"; ring on \"(2 marks)\". A small coded line graph of the table draws beside the card (even x scale 0 to 6%, the 3 and 6 placed at real positions; y 0 to 18 mm; a line rising steadily to 3%, then flattening). `TrendMove` mini lights row by row. Rows write with ticks: on \"six to fifteen\" \"0\", \"3\", \"6\" and \"15\" underline in the table; row 1 \"From 0% to 3%, zone diameter increased steadily with concentration, from 6 mm to 15 mm (about 3 mm per 1%)\" (tick \"1 / 2\"). On \"levelled\" \"6\" (%) and \"16\" underline; row 2 \"From 3% to 6%, it increased only 1 mm (15 to 16 mm): it levelled off\" (tick \"2 / 2\"). Grey label \"HSCScience marking guide (illustrative)\". On \"misses\" a `CrossedHabit` chip \"as concentration increases, the zone increases\" takes a red scribble cross. Caption \"no data; misses the change\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "tick",
+        "Mark underline",
+        "Mark highlight",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "A decision board writes in four rows, each lighting on its words with a one-line example from this video: \"Read: axes, units, one small square (28 mL, not 28)\"; \"Draw: TAILS + best fit (years at real positions)\"; \"Describe: direction, data, change (4% to 19%, about 1.5 points a year)\"; \"Extend: inside, read it; outside, doubt it (2040: assumes the same rate)\".",
+      "teachingReason": "Decision-rule: So, for a graph question.",
+      "narrationCue": "change / Next",
+      "motionPurpose": "On the spoken cues: On \"Next\" a chip slides in: \"Next: practical questions (fixes that fix)\".",
+      "motionRole": "explain",
+      "onScreenChange": "A decision board writes in four rows, each lighting on its words with a one-line example from this video: \"Read: axes, units, one small square (28 mL, not 28)\"; \"Draw: TAILS + best fit (years at real positions)\"; \"Describe: direction, data, change (4% to 19%, about 1.5 points a year)\"; \"Extend: inside, read it; outside, doubt it (2040: assumes the same rate)\". On \"Next\" a chip slides in: \"Next: practical questions (fixes that fix)\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 50 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills06-learning-review.md",
+      "sha256": "882fc8cc7017c0df2b361b080cf3510ad30703da89786161f4833fe6ddbd1f95"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/skills06-claude-science-check.md",
+      "sha256": "b934550baccd5eb979a0b2574948c6d935735b69e899ce9f0231a71d1ff7d7ba"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

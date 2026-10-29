@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-G03-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7g03/lesson.json",
+  "lessonSha256": "1b98f1f19acfca394e2520d0df0bb73c06be47bf73481d46f481dd00dd749217",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7g03/lesson.production-brief.json",
+    "sha256": "605e21a462e7536bcd89c8aff62672e8a38fe314d3b771fb58d1a6199bdb529c"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A synthesis question gives you a target and a short list of things you're allowed to start from. The four moves from the last video still work: name and count, work backwards, choose, then write forwards and check. But exam questions hide their traps in the choice: two starting materials that look almost the same, or a route that puts a group on the wrong carbon and makes an isomer of the target instead. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+      "hash": "891bbdb3b2c6",
+      "textSha256": "891bbdb3b2c6838c4762e1d3e9a1190e7549d31bcc067a0ed0675022fc343627",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/hook.891bbdb3b2c6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/hook.891bbdb3b2c6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/hook.891bbdb3b2c6.generation.json",
+      "plannedRequestSha256": "285b70981275fd28a58de362cdd5b177afb5a5a969d4d825083c7f35e7740876"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. A chemist needs hexan-3-one, and can start from either hex-1-ene or hex-3-ene. Explain which starting material should be used. Then construct a flow chart for a two-step synthesis, with the reagents and conditions, and an equation for each step. Pause here to answer.",
+      "hash": "dc252d707804",
+      "textSha256": "dc252d7078046137156df4d38adae5e6a7ed21b4e1fbdb2b82fa34203797e4ac",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-question.dc252d707804.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-question.dc252d707804.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-question.dc252d707804.generation.json",
+      "plannedRequestSha256": "97672fec1f4a455d05858b50a9bcafc2e543030956cae425ce3da77a483c6864"
+    },
+    {
+      "id": "q1-choose",
+      "parentSceneId": "q1-choose",
+      "text": "Count first. Both alkenes have six carbons, and so does the target, so the chain keeps its length. The target's C double bond O is on carbon three. Oxidation turns an O H into a C double bond O on the same carbon, so you need hexan-3-ol. Now look at the double bonds. Hex-3-ene is symmetrical: whichever carbon the O H joins, it's carbon three. Hex-1-ene isn't. Water adds to it mainly on carbon two, so it gives you mainly the wrong alcohol.",
+      "hash": "9c62d0874555",
+      "textSha256": "9c62d08745558e1ad089f93fb882ea4f1a85e3eacfb0db9a9fafafa84bbf00b8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-choose.9c62d0874555.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-choose.9c62d0874555.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-choose.9c62d0874555.generation.json",
+      "plannedRequestSha256": "348be57bed59f12b9c64246dd13c7a7785ba2b578e0b3e165cebd27006fd684a"
+    },
+    {
+      "id": "q1-route",
+      "parentSceneId": "q1-route",
+      "text": "So use hex-3-ene. Step one: water with a dilute acid catalyst, heated, gives hexan-3-ol. That's an equilibrium, so it gets a double arrow. Step two: acidified potassium dichromate, heated under reflux, oxidises that secondary alcohol to hexan-3-one, and the orange turns green. A ketone isn't oxidised any further by dichromate, so the product stays put. For each equation, write the oxidant as O in square brackets, and check that the atoms balance.",
+      "hash": "1e08527c200a",
+      "textSha256": "1e08527c200a220ab0baf8903b86836e84ec6b05f073ec3cb2b083b2a5ac7b38",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-route.1e08527c200a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-route.1e08527c200a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-route.1e08527c200a.generation.json",
+      "plannedRequestSha256": "69031d1c3fbe99fa851606d01b49c40e739b3efd6325c34ce18422db6551fccd"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic slip is picking hex-1-ene anyway. Its alcohol is mainly hexan-2-ol, and oxidation leaves the C double bond O where the O H was. So you'd make hexan-2-one: the same formula, but a different compound. It's an isomer of the target.",
+      "hash": "3767baa507ac",
+      "textSha256": "3767baa507ac1d8481424316196fbe07b41aee4d2e1fd6c816ff5ceddea2384f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-mistake.3767baa507ac.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-mistake.3767baa507ac.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q1-mistake.3767baa507ac.generation.json",
+      "plannedRequestSha256": "30a5fc2a07f2c1f353ffa0d79b80415d59ddf352ec98ed7903d7e9e227832018"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. A chemist has only ethane as a carbon-containing starting material. Construct a flow chart to make ethyl ethanoate, naming each intermediate, with the reagents and conditions on every arrow. Then explain why the overall yield is expected to be low. Pause here to answer.",
+      "hash": "c62503b9ebd1",
+      "textSha256": "c62503b9ebd1e4b2ceb309d414395e8717b7aab0d762f644bfd06a5b8cc8f17e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-question.c62503b9ebd1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-question.c62503b9ebd1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-question.c62503b9ebd1.generation.json",
+      "plannedRequestSha256": "a62bc74dc4ccb0c8adb07f70f6e5701b647424ad089dfc38e08f8528b0d45bdf"
+    },
+    {
+      "id": "q2-backwards",
+      "parentSceneId": "q2-backwards",
+      "text": "Work backwards. Cut the ester at the single-bonded oxygen. The ethanoate part needs ethanoic acid, and the ethyl part needs ethanol. Ethanoic acid comes from oxidising ethanol too, so both halves come from one alcohol. And where does that ethanol come from? No reaction we've met turns ethane straight into an alcohol, so go through a haloalkane: chloroethane first.",
+      "hash": "81aeb1216ceb",
+      "textSha256": "81aeb1216ceb1c809a85acc7f7f0cbaa92e8aa10499cc072f2cb00e432674574",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-backwards.81aeb1216ceb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-backwards.81aeb1216ceb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-backwards.81aeb1216ceb.generation.json",
+      "plannedRequestSha256": "eaf7a2f00a38906ca5d9af3d4f9e7ff87fb9f197385aa06708030b1f165bebbf"
+    },
+    {
+      "id": "q2-forwards",
+      "parentSceneId": "q2-forwards",
+      "text": "Now write it forwards. Ethane and chlorine in U V light give chloroethane, as part of a mixture, so separate it out. Heat the chloroethane under reflux with aqueous sodium hydroxide to get ethanol. Then split the ethanol into two portions. Reflux one with excess acidified dichromate to make ethanoic acid. Finally, heat that acid with the rest of the ethanol and a few drops of concentrated sulfuric acid, under reflux. That's an equilibrium, so it gets a double arrow.",
+      "hash": "ddcf797844be",
+      "textSha256": "ddcf797844be5f6224f4b18107a07785f349a3407b1272f11bd34bc637e56c14",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-forwards.ddcf797844be.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-forwards.ddcf797844be.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-forwards.ddcf797844be.generation.json",
+      "plannedRequestSha256": "33052d0934ea4d205d7c3a7f4e7f782c623d00f69cf7489ac5b945996091aa6b"
+    },
+    {
+      "id": "q2-yield",
+      "parentSceneId": "q2-yield",
+      "text": "Part b. Why is the yield low? U V substitution doesn't stop neatly at one chlorine, so only part of the ethane becomes chloroethane. Esterification is an equilibrium, so it doesn't go to completion. And some product is lost at several stages, so mixtures, an incomplete last step and losses all add up. A long route from a cheap starting material can still give you very little ester.",
+      "hash": "023e5ffe1087",
+      "textSha256": "023e5ffe10879c5dbc88c0718bd02150e633c739d91fa45ef176cec6ed70e029",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-yield.023e5ffe1087.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-yield.023e5ffe1087.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-yield.023e5ffe1087.generation.json",
+      "plannedRequestSha256": "24d877ceea645cd60c35c7efeececd42f544c85da605f5189b355c54d853aec5"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic slip is oxidising all of the ethanol. Then there's no alcohol left to join to the acid. The ester needs both halves, so keep a portion back before you oxidise.",
+      "hash": "fc92a28db17d",
+      "textSha256": "fc92a28db17d6aa6c420b2b07a52f4fe0db68e010d81b4d6b99840c7a57df6ba",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-mistake.fc92a28db17d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-mistake.fc92a28db17d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q2-mistake.fc92a28db17d.generation.json",
+      "plannedRequestSha256": "eec1a55d54d538ead634c330174370fca2b5054541098a64716c0bc546375a39"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. A student planned this flow chart to make propyl butanoate from but-1-ene and 1-chloropropane. 1-chlorobutane was also available. Identify two errors in the plan, and explain the effect of each. Then construct a corrected flow chart. Pause here to answer.",
+      "hash": "279e2fdfdae8",
+      "textSha256": "279e2fdfdae8f3278a926894dde98496c167f687917b09e596d0ad61612ca577",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-question.279e2fdfdae8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-question.279e2fdfdae8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-question.279e2fdfdae8.generation.json",
+      "plannedRequestSha256": "548db645c494d335d15355dbc91d885b2adf80a90560f0eec4e10a6f8d062e5e"
+    },
+    {
+      "id": "q3-error1",
+      "parentSceneId": "q3-error1",
+      "text": "Check every box, not just the arrows. The plan says water on but-1-ene gives butan-1-ol. It gives mainly butan-2-ol instead, because the double bond isn't symmetrical and the O H goes mainly onto carbon two. That's an isomer, and a secondary alcohol, so oxidising it gives butanone, a ketone. No arrow leaves a ketone, so the main route dead-ends before the acid.",
+      "hash": "9298fd24fd82",
+      "textSha256": "9298fd24fd822b7aad346bee23ec0f8d0542ef9b4b0755bb769b2b1bd3e08483",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-error1.9298fd24fd82.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-error1.9298fd24fd82.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-error1.9298fd24fd82.generation.json",
+      "plannedRequestSha256": "1471b0ea18da40cfb91d452661a5b5fbb9902435fd64ea881a7ba16b72962227"
+    },
+    {
+      "id": "q3-error2",
+      "parentSceneId": "q3-error2",
+      "text": "Second error, and it's separate from the first: the oxidation arrow says distil. Suppose that box really did hold butan-1-ol. Distilling would remove the aldehyde, butanal, as soon as it formed, so it would never be oxidised on to the acid. To make butanoic acid, use excess oxidant and heat under reflux. The condenser sends the butanal back into the flask, so it keeps meeting the oxidant until it becomes the acid.",
+      "hash": "5c1bcbaca330",
+      "textSha256": "5c1bcbaca33033412f02314382d64addc8cb3ab210f4bb801372ba9ae5b48f5e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-error2.5c1bcbaca330.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-error2.5c1bcbaca330.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-error2.5c1bcbaca330.generation.json",
+      "plannedRequestSha256": "3f901a5044f5857d9da538227e035c3d299642ae5e3144fced0d69af8fe1e53d"
+    },
+    {
+      "id": "q3-fix",
+      "parentSceneId": "q3-fix",
+      "text": "So start from 1-chlorobutane instead. Aqueous sodium hydroxide under reflux puts the O H on carbon one, the same carbon as the chlorine, giving butan-1-ol. Excess acidified dichromate under reflux takes it all the way to butanoic acid. The other arm is fine: 1-chloropropane gives propan-1-ol. Then esterify, with a double arrow, to make propyl butanoate.",
+      "hash": "24533e6a18bc",
+      "textSha256": "24533e6a18bc890f8c1c5a579002c6e5e36ff32831986fe8b38ce71c81a4b3c8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-fix.24533e6a18bc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-fix.24533e6a18bc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-fix.24533e6a18bc.generation.json",
+      "plannedRequestSha256": "194ddfa0aeaffb99607339466e68fb4c1a9e0375242b9893af21f4fa7c137a6d"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic slip is fixing only the arrow. Keep but-1-ene, switch to reflux, and you still make butanone, not the acid. A wrong box can hide behind a right arrow.",
+      "hash": "f4955b9241b8",
+      "textSha256": "f4955b9241b8854ae0f1255af97a4eb6f1d9e7ebd8246685f7d870aab44c1030",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-mistake.f4955b9241b8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-mistake.f4955b9241b8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/q3-mistake.f4955b9241b8.generation.json",
+      "plannedRequestSha256": "f5a4dac87eebc7a0a19a06f6661561b1f7cff97a91bb01f1e20fcf3d150454a1"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So for any synthesis question: count the carbons, and find which carbon each group has to sit on. Choose the start that puts it there, such as a symmetrical alkene, or a haloalkane with its halogen already in place. If one starting material plays two roles, split it. Write every arrow with its conditions, and a double arrow for each equilibrium. Then check every box and every arrow, because a group on the wrong carbon makes an isomer, not the target. Next, polymers: how small molecules join into long chains.",
+      "hash": "1313dc917e1e",
+      "textSha256": "1313dc917e1e77bd3840e29593e83673f4975bfeef461bff7b97b255f18d4a38",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/decision-board.1313dc917e1e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/decision-board.1313dc917e1e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/decision-board.1313dc917e1e.generation.json",
+      "plannedRequestSha256": "81eae646662ac8ef348fdf55db5c2846b1605444413ea87cc0d0e8cd0bc2251c"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G03-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

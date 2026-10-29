@@ -1,0 +1,164 @@
+{
+  "title": "Organic Synthesis Pathways: HSC-Style Practice",
+  "subtitle": "A synthesis question gives you a target and a short list of starting materials. How do you choose the start that puts each group on the right carbon, write every step with its conditions, and check a route for the box or arrow that quietly makes an isomer instead of the target?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 7,
+  "lesson": 22,
+  "lessonIntent": "choosing between isomeric starting materials by the carbon the group must sit on; writing a two-step route with an equation per step; building a four-reaction route from one starting material used in two roles; explaining a low overall yield; finding and correcting a wrong box and a wrong arrow in a given flow chart.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A synthesis question gives you a target and a short list of things you're allowed to start from. The four moves from the last video still work: name and count, work backwards, choose, then write forwards and check. But exam questions hide their traps in the choice: two starting materials that look almost the same, or a route that puts a group on the wrong carbon and makes an isomer of the target instead. Here are three HSC-style questions. Pause and try each one, then we'll work through it together."
+      }
+    },
+    {
+      "id": "q1-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question one. A chemist needs hexan-3-one, and can start from either hex-1-ene or hex-3-ene. Explain which starting material should be used. Then construct a flow chart for a two-step synthesis, with the reagents and conditions, and an equation for each step. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q1-choose",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Count first. Both alkenes have six carbons, and so does the target, so the chain keeps its length. The target's C double bond O is on carbon three. Oxidation turns an O H into a C double bond O on the same carbon, so you need hexan-3-ol. Now look at the double bonds. Hex-3-ene is symmetrical: whichever carbon the O H joins, it's carbon three. Hex-1-ene isn't. Water adds to it mainly on carbon two, so it gives you mainly the wrong alcohol."
+      }
+    },
+    {
+      "id": "q1-route",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So use hex-3-ene. Step one: water with a dilute acid catalyst, heated, gives hexan-3-ol. That's an equilibrium, so it gets a double arrow. Step two: acidified potassium dichromate, heated under reflux, oxidises that secondary alcohol to hexan-3-one, and the orange turns green. A ketone isn't oxidised any further by dichromate, so the product stays put. For each equation, write the oxidant as O in square brackets, and check that the atoms balance."
+      }
+    },
+    {
+      "id": "q1-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is picking hex-1-ene anyway. Its alcohol is mainly hexan-2-ol, and oxidation leaves the C double bond O where the O H was. So you'd make hexan-2-one: the same formula, but a different compound. It's an isomer of the target."
+      }
+    },
+    {
+      "id": "q2-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question two. A chemist has only ethane as a carbon-containing starting material. Construct a flow chart to make ethyl ethanoate, naming each intermediate, with the reagents and conditions on every arrow. Then explain why the overall yield is expected to be low. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q2-backwards",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Work backwards. Cut the ester at the single-bonded oxygen. The ethanoate part needs ethanoic acid, and the ethyl part needs ethanol. Ethanoic acid comes from oxidising ethanol too, so both halves come from one alcohol. And where does that ethanol come from? No reaction we've met turns ethane straight into an alcohol, so go through a haloalkane: chloroethane first."
+      }
+    },
+    {
+      "id": "q2-forwards",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now write it forwards. Ethane and chlorine in U V light give chloroethane, as part of a mixture, so separate it out. Heat the chloroethane under reflux with aqueous sodium hydroxide to get ethanol. Then split the ethanol into two portions. Reflux one with excess acidified dichromate to make ethanoic acid. Finally, heat that acid with the rest of the ethanol and a few drops of concentrated sulfuric acid, under reflux. That's an equilibrium, so it gets a double arrow."
+      }
+    },
+    {
+      "id": "q2-yield",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Part b. Why is the yield low? U V substitution doesn't stop neatly at one chlorine, so only part of the ethane becomes chloroethane. Esterification is an equilibrium, so it doesn't go to completion. And some product is lost at several stages, so mixtures, an incomplete last step and losses all add up. A long route from a cheap starting material can still give you very little ester."
+      }
+    },
+    {
+      "id": "q2-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is oxidising all of the ethanol. Then there's no alcohol left to join to the acid. The ester needs both halves, so keep a portion back before you oxidise."
+      }
+    },
+    {
+      "id": "q3-question",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Question three. A student planned this flow chart to make propyl butanoate from but-1-ene and 1-chloropropane. 1-chlorobutane was also available. Identify two errors in the plan, and explain the effect of each. Then construct a corrected flow chart. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "q3-error1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Check every box, not just the arrows. The plan says water on but-1-ene gives butan-1-ol. It gives mainly butan-2-ol instead, because the double bond isn't symmetrical and the O H goes mainly onto carbon two. That's an isomer, and a secondary alcohol, so oxidising it gives butanone, a ketone. No arrow leaves a ketone, so the main route dead-ends before the acid."
+      }
+    },
+    {
+      "id": "q3-error2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second error, and it's separate from the first: the oxidation arrow says distil. Suppose that box really did hold butan-1-ol. Distilling would remove the aldehyde, butanal, as soon as it formed, so it would never be oxidised on to the acid. To make butanoic acid, use excess oxidant and heat under reflux. The condenser sends the butanal back into the flask, so it keeps meeting the oxidant until it becomes the acid."
+      }
+    },
+    {
+      "id": "q3-fix",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So start from 1-chlorobutane instead. Aqueous sodium hydroxide under reflux puts the O H on carbon one, the same carbon as the chlorine, giving butan-1-ol. Excess acidified dichromate under reflux takes it all the way to butanoic acid. The other arm is fine: 1-chloropropane gives propan-1-ol. Then esterify, with a double arrow, to make propyl butanoate."
+      }
+    },
+    {
+      "id": "q3-mistake",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The classic slip is fixing only the arrow. Keep but-1-ene, switch to reflux, and you still make butanone, not the acid. A wrong box can hide behind a right arrow."
+      }
+    },
+    {
+      "id": "decision-board",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So for any synthesis question: count the carbons, and find which carbon each group has to sit on. Choose the start that puts it there, such as a symmetrical alkene, or a haloalkane with its halogen already in place. If one starting material plays two roles, split it. Write every arrow with its conditions, and a double arrow for each equilibrium. Then check every box and every arrow, because a group on the wrong carbon makes an isomer, not the target. Next, polymers: how small molecules join into long chains."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

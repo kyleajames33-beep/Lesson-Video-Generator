@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b02/lesson.json",
+    "lessonSha256": "f234788e8fc4b2ba51a5aad9071807a1c6d632e133bcbc1b23d13540a347efeb"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From b01: homeostasis, tolerance range and set point; the five parts; thermoreceptors in skin and hypothalamus; the hypothalamus as control centre; shivering and narrowing skin arterioles in the cold; negative feedback opposes a change and fades as it succeeds. From Year 11: neurons carry nerve impulses; hormones travel in the blood to target cells; heat moves from hotter to cooler. Not assumed: endotherm, ectotherm, vasodilation, vasoconstriction, evaporative cooling, thyroxine, countercurrent exchange, the three adaptation types.",
+    "startsWith": "Connect neural and hormonal signals to effectors. The video opens: In late November twenty eighteen, a heatwave hit far north Queensland, and Cairns reached over forty-two degrees.",
+    "stopsAfter": "defining an endotherm (most body heat from its own metabolism, used with controlled heat loss to keep core temperature fairly steady) against an ectotherm (most heat from the surroundings, still regulates by behaviour); tracing how thermoreceptors and the hypothalamus send fast nerve impulses to skin arterioles and sweat glands (the neural pathway) and slower hormones in the blood, such as thyroxine raising metabolic rate in a long cold spell (the hormonal pathway); explaining vasodilation (widened arterioles carry more warm blood near the surface, so more heat is lost to cooler air; vessels don't move) and sweating (cooling by evaporation, less effective in humid air); classifying adaptations as physiological (body processes that switch on and off), behavioural (actions) or structural (body features), with the red kangaroo using all three and features that cross categories; naming trends (large heat-shedding extremities in hot climates, compact insulated bodies in cold, countercurrent exchange); explaining why feedback can fail when hot air adds heat, dry heat loss is limited and evaporation needs water that runs short.",
+    "nextLesson": "test heat loss with a model experiment (route entry bio-m8-p01)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b02.md"
+  ],
+  "teaching": {
+    "task": "In November 2018, a heatwave in far north Queensland killed about 23,000 spectacled flying foxes in two days, even though flying foxes pant, lick themselves and fan their wings to cool down. How do endotherms usually keep body temperature in range, and why can that fail?",
+    "causalExplanation": "Causes: why vasodilation loses heat (more warm blood near a surface, cooler air; 4); why sweat cools (evaporation takes energy; 5) and why humidity defeats it (5); why hormones are slower (they travel in blood; 6); why the kangaroo's licking works (evaporation over a dense vessel network; 8); why countercurrent exchange keeps heat (heat crosses from artery to vein; 9); why feedback failed in 2018 (hotter air adds heat, so the animals relied heavily on evaporation, which needs water; 10). Attention: a real Australian event that poses the question (1) and is answered with the physics just taught (10). Visual medium: a heat-balance beam that tips with each effector, and a matched warm and cold skin pair. Apply: explain and predict (12a), classify and explain on an unseen animal (12c). Remember: \"widen and wet, narrow and shiver\" and the three questions.",
+    "conversationalApproach": "In late November 2018 a heatwave pushed Cairns past 42 degrees and roughly 23,000 spectacled flying foxes died in about two days, even though they pant, lick themselves and fan their wings, so the question is how endotherms regulate body temperature and where that control runs out. Endotherms make most of their body heat from their own metabolism and control heat loss to keep core temperature fairly steady, unlike an ectotherm such as a lizard. When core temperature rises, thermoreceptors in the hypothalamus and the skin detect it and the hypothalamus sends fast nerve impulses to the skin. Arterioles relax and widen (vasodilation), carrying more warm blood near the surface so more heat passes to cooler air, and sweat cools by evaporation, which takes energy from the skin and works far less in humid air. In the cold the loop runs the other way, and thyroxine, a slower hormonal signal, raises the metabolic rate. Adaptations are physiological, behavioural or structural, and the red kangaroo shows all three, while trends across endotherms link ears, limbs, fur, blubber and countercurrent exchange to climate. The flying foxes died because hotter air added heat instead of carrying it away, leaving evaporation using water they were already losing. The memory aid is hot means widen and wet, cold means narrow and shiver. Two exam questions follow with brief feedback.",
+    "openingDecision": "In late November twenty eighteen, a heatwave hit far north Queensland, and Cairns reached over forty-two degrees. In about two days, roughly twenty-three thousand spectacled flying foxes died. These animals pant, lick themselves and fan their wings to cool down. So how do animals like them usually keep their temperature in range, and why did it fail here?",
+    "understandingCheck": "12a is an explain and predict item (hypothalamus, two effectors, humidity), matching the marker comment on 2021 Q29 and 2025 Q24 (\"the causal path from response to temperature change\"). 12c is a classify and explain item on an unseen endotherm, the koala (the stop: compare behavioural, structural and physiological responses). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B8-IQ1-02 (p 56): \"investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:\" with the listed examples \"trends and patterns in behavioural, structural and physiological adaptations in endotherms that assist in maintaining homeostasis (ACSBL099, ACSBL114)\" (scenes 7 to 9, attempt 2) and \"internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways (ACSBL112, ACSBL113, ACSBL114)\" (scenes 3 and 6). The third example, \"mechanisms in plants that allow water balance to be maintained (ACSBL115)\", belongs to b05. \"Within tolerance limits\" is carried by scene 10."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "A heat-balance bar owns the top of the frame from scene 3: a horizontal beam with \"heat gained\" on the left pan and \"heat lost\" on the right pan (coded outline, abstract), which tips as effectors switch on and levels when temperature is back in range. Below it, the working area holds one painted plate at a time with its callouts. b01's loop ring appears as a thumbnail at the upper left in scenes 2, 3 and 6, its effector slot lighting to show where the current plate sits in the loop. People are never drawn: skin appears as the matched warm and cold skin cross-section plates; the \"body\" is never outlined. At most three bright text items at once; earlier labels dim to grey.",
+    "transitionPlan": "The spectacled flying fox plate hangs at the left as a coded Queensland coast marks Cairns, the thermometer slides in with its 42.6 degree chip and a death-count chip writes; the plate shrinks as the endotherm gloss writes and a coded lineGraph draws a steady endotherm line beside a lizard line that follows the air; the board clears below the heading to the coded HeatBalance with the brain plate, hypothalamus ringed, and the warm skin plate as a SignalPulse runs to the hypothalamus and a nerve path draws back to the skin; the warm skin plate grows to the centre with callouts on the widened arterioles and heat arrows leaving the surface; the sweat gland callout appears and EvapDots lift as vapour wisps, then pool under a humid haze as the balance tips back; the warm skin plate cross-fades to its matched cold state with callouts and a shivering muscle plate, and a slow thyroxine pulse travels along a coded vessel beside the fast nerve pulse; three adaptation columns draw and fill; the red kangaroo plate enters as a shade patch falls and each behaviour drops into its column; coded abstract silhouettes and a countercurrent sketch draw side by side; the flying fox plate returns as HeatArrows reverse into a coded skin strip, the HeatBalance tips toward heat gained and the EvapDots thin; the memory lines write beside the two skin thumbnails; each attempt clears the board with its question card, and its feedback underlines the givens as the answer table fills and a crossed chip lands; three step chips write on and a next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. New `m8-spectacled-flying-fox-v1.png` hangs at the left (grey tag \"spectacled flying fox\").",
+      "teachingReason": "Hook (a heatwave in far north Queensland): In late November twenty eighteen, a heatwave hit far north Queensland, and Cairns reached over forty-two degrees.",
+      "narrationCue": "far north Queensland / over forty-two degrees / roughly twenty-three thousand / pant, lick themselves and fan their wings",
+      "motionPurpose": "On the spoken cues: On \"far north Queensland\" a small coded outline of the Queensland coast draws at the upper right with one dot, \"Cairns\". On \"over forty-two degrees\" `m8-thermometer-v1.png` slides in beside the dot, its column high, with a bright chip \"Cairns Airport 42.6 °C, 26 Nov 2018\" (grey source tag \"Bureau",
+      "motionRole": "explain",
+      "onScreenChange": "no people. New `m8-spectacled-flying-fox-v1.png` hangs at the left (grey tag \"spectacled flying fox\"). On \"far north Queensland\" a small coded outline of the Queensland coast draws at the upper right with one dot, \"Cairns\". On \"over forty-two degrees\" `m8-thermometer-v1.png` slides in beside the dot, its column high, with a bright chip \"Cairns Airport 42.6 °C, 26 Nov 2018\" (grey source tag \"Bureau of Meteorology\"). On \"roughly twenty-three thousand\" a bright chip writes \"about 23,000 died in two days\" (grey tag \"published estimate\"). On \"pant, lick themselves and fan their wings\" three small grey labels write beside the flying fox: \"pant\", \"lick\", \"fan wings\". On the question the heading writes: \"How do endotherms regulate body temperature?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "endotherms",
+      "visualDecision": "new",
+      "visualReference": "the flying fox shrinks to the upper left.",
+      "teachingReason": "Endotherms, and the loop you know: Flying foxes, like kangaroos and humans, are endotherms: animals that make most of their body heat from their own metabolism.",
+      "narrationCue": "endotherms / ectotherm",
+      "motionPurpose": "On the spoken cues: On \"endotherms\" a gloss writes: \"endotherm: most body heat from its own metabolism\". On \"fairly steady\" the coded `lineGraph` draws at the right: x axis \"time of day\", y axis \"temperature (°C)\" 10 to 45; a grey air line swings from 15 to 40 and back; a teal line labelled \"endotherm core\" stays flat",
+      "motionRole": "explain",
+      "onScreenChange": "the flying fox shrinks to the upper left. On \"endotherms\" a gloss writes: \"endotherm: most body heat from its own metabolism\". On \"fairly steady\" the coded `lineGraph` draws at the right: x axis \"time of day\", y axis \"temperature (°C)\" 10 to 45; a grey air line swings from 15 to 40 and back; a teal line labelled \"endotherm core\" stays flat near 37. On \"ectotherm\" a second gloss: \"ectotherm: most heat from its surroundings\"; an amber line labelled \"ectotherm body\" follows the air line partway, held within a narrower band (teaching curve); a grey chip \"ectotherms can't regulate\" takes a scribble cross on \"still regulates\". On \"the feedback loop from the last video\" b01's `LoopRing` thumbnail appears at the upper left (grey tag \"b01\"), its five slots briefly lighting in order. Glosses dim as the graph completes. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "neural-pathway",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears below the heading.",
+      "teachingReason": "Detecting heat, and the neural pathway: When core temperature rises, thermoreceptors in the hypothalamus detect warmer blood, and skin receptors detect changes in skin temperature.",
+      "narrationCue": "neural pathway",
+      "motionPurpose": "On the spoken cues: The coded `HeatBalance` draws across the top, level, pans labelled \"heat gained\" and \"heat lost\". Below: `b3a2-brain-v1.png` at the left with a `scribbleEllipse` round the hypothalamus region (label \"hypothalamus\"), and new `m8-skin-warm-v1.png` at the right. On \"detect warmer blood\" a small coded",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears below the heading. The coded `HeatBalance` draws across the top, level, pans labelled \"heat gained\" and \"heat lost\". Below: `b3a2-brain-v1.png` at the left with a `scribbleEllipse` round the hypothalamus region (label \"hypothalamus\"), and new `m8-skin-warm-v1.png` at the right. On \"detect warmer blood\" a small coded vessel line under the brain plate glows warm; on \"receptors in the skin\" a callout points to a nerve ending in the skin plate, label \"skin thermoreceptors: detect skin temperature\". A `SignalPulse` runs from the skin to the hypothalamus. On \"compares this with the set point\" a small grey tag \"set point about 37 °C\". On \"sends nerve impulses\" a bright `DrawPath` nerve line draws from the hypothalamus to the skin plate and a fast `SignalPulse` runs along it; label \"neural pathway: nerve impulses\". On \"fast and targeted\" the pulse repeats quickly along the one nerve line only. The loop ring thumbnail lights its receptor and control centre slots. At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "vasodilation",
+      "visualDecision": "adjust",
+      "visualReference": "the brain plate dims and moves aside; `m8-skin-warm-v1.png` grows to the centre.",
+      "teachingReason": "Vasodilation: First effector: the skin's arterioles, the small arteries feeding it.",
+      "narrationCue": "vasodilation",
+      "motionPurpose": "On the spoken cues: On \"the skin's arterioles\" a callout points to the widened arterioles beneath the surface (label \"skin arterioles\"). On \"smooth muscle in their walls relaxes\" `b3a2-smooth-muscle-cell-relaxed-v1.png` appears small beside the callout (grey tag \"smooth muscle in the vessel wall, relaxed\"). On",
+      "motionRole": "explain",
+      "onScreenChange": "the brain plate dims and moves aside; `m8-skin-warm-v1.png` grows to the centre. On \"the skin's arterioles\" a callout points to the widened arterioles beneath the surface (label \"skin arterioles\"). On \"smooth muscle in their walls relaxes\" `b3a2-smooth-muscle-cell-relaxed-v1.png` appears small beside the callout (grey tag \"smooth muscle in the vessel wall, relaxed\"). On \"vasodilation\" a gloss writes: \"vasodilation: arterioles widen\". On \"More warm blood flows\" a coded red flow (short dashes) runs through the widened vessels; on \"loses more heat to cooler air\" `HeatArrows` rise from the surface and the `HeatBalance` tips towards \"heat lost\". On \"don't move closer to the skin\" a grey chip \"vessels move closer to the skin\" takes a scribble cross. The loop ring thumbnail lights its effector slot. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "sweating",
+      "visualDecision": "new",
+      "visualReference": "the warm skin plate stays.",
+      "teachingReason": "Sweating, and why humidity matters: Second effector: sweat glands release sweat onto the skin.",
+      "narrationCue": "sweat glands / evaporation / takes energy ... from the skin and the blood / in humid air / even though it's still pouring out",
+      "motionPurpose": "On the spoken cues: On \"sweat glands\" a callout points to the coiled gland and its duct (label \"sweat gland\"); the coded `EvapDots` appear on the surface at the duct openings. On \"evaporation\" the droplets shrink and lift as vapour wisps; a gloss writes: \"cooling comes from evaporation\". On \"takes energy ... from the",
+      "motionRole": "explain",
+      "onScreenChange": "the warm skin plate stays. On \"sweat glands\" a callout points to the coiled gland and its duct (label \"sweat gland\"); the coded `EvapDots` appear on the surface at the duct openings. On \"evaporation\" the droplets shrink and lift as vapour wisps; a gloss writes: \"cooling comes from evaporation\". On \"takes energy ... from the skin and the blood\" short coded arrows run from the blood vessels up into the rising wisps (grey tag \"about 2.4 kJ per gram of water evaporated\"); the `HeatBalance` tips further towards \"heat lost\". On \"in humid air\" a pale haze fills the air above the skin, the `EvapDots` switch to \"humid\" mode (droplets stay and pool), the wisps stop, and the balance tips back part of the way; a grey chip \"sweat cools because it is wet\" takes a scribble cross on \"even though it's still pouring out\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "cold-and-hormones",
+      "visualDecision": "adjust",
+      "visualReference": "`m8-skin-warm-v1.png` cross-fades to its matched state `m8-skin-cold-v1.png` (narrowed arterioles, pale surface, raised hair, no sweat).",
+      "teachingReason": "The cold side, and the hormonal pathway: In the cold, the loop runs the other way, as you saw last video.",
+      "narrationCue": "thyroxine / hormonal pathway",
+      "motionPurpose": "On the spoken cues: On \"Arterioles narrow\" a callout to the narrowed vessels (label \"vasoconstriction: arterioles narrow\"; `b3a2-smooth-muscle-cell-contracted-v1.png` small, grey tag \"contracted\"); on \"muscles shiver\" `m8-skeletal-muscle-v1.png` (from b01) appears small at the right with a brief coded tremor; on",
+      "motionRole": "explain",
+      "onScreenChange": "`m8-skin-warm-v1.png` cross-fades to its matched state `m8-skin-cold-v1.png` (narrowed arterioles, pale surface, raised hair, no sweat). On \"Arterioles narrow\" a callout to the narrowed vessels (label \"vasoconstriction: arterioles narrow\"; `b3a2-smooth-muscle-cell-contracted-v1.png` small, grey tag \"contracted\"); on \"muscles shiver\" `m8-skeletal-muscle-v1.png` (from b01) appears small at the right with a brief coded tremor; on \"hairs stand up\" a callout to the raised hair and its small muscle (grey tags \"piloerection\" and \"helps furry animals far more than humans\"). The `HeatBalance` tips towards \"heat gained\". The loop ring thumbnail at the upper left shows the b01 cold loop (grey tag \"b01\"). On \"Hormones help too\" the brain plate returns small at the left. On \"thyroxine\" a gloss writes: \"thyroxine: thyroid hormone, raises cells' metabolic rate\" (grey tag \"in many mammals, over days to weeks\"). A slow `SignalPulse` in a second colour travels along a coded blood vessel line (wavy, red) from a small label \"thyroid gland\" to the muscle plate, which takes a faint warm glow (grey tag \"more heat from respiration\"). On \"slower than nerves\" the fast nerve pulse from scene 3 runs once beside it for contrast; two labels write: \"neural: fast, targeted\", \"hormonal: slower, longer-lasting\". A grey tag \"adrenaline also raises heat production quickly\" sits small. Earlier labels dim. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "three-types",
+      "visualDecision": "adjust",
+      "visualReference": "the skin and brain plates leave; the `HeatBalance` stays level at the top.",
+      "teachingReason": "Three types of adaptation: These responses are one of three types of adaptation.",
+      "narrationCue": "Physiological / Behavioural / Structural",
+      "motionPurpose": "On the spoken cues: Three columns draw: on \"Physiological\" the first column header writes \"physiological: body processes that switch on and off\" with the warm skin plate thumbnail; on \"Behavioural\" the second, \"behavioural: actions the animal takes\", with a small coded shade-tree outline (abstract shape, grey); on",
+      "motionRole": "explain",
+      "onScreenChange": "the skin and brain plates leave; the `HeatBalance` stays level at the top. Three columns draw: on \"Physiological\" the first column header writes \"physiological: body processes that switch on and off\" with the warm skin plate thumbnail; on \"Behavioural\" the second, \"behavioural: actions the animal takes\", with a small coded shade-tree outline (abstract shape, grey); on \"Structural\" the third, \"structural: body features, there all the time\", with `b2-seal-and-pup-v1.png` small (grey tag \"blubber under the skin\"). Each header dims to grey as the next writes. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "red-kangaroo",
+      "visualDecision": "adjust",
+      "visualReference": "new `m8-red-kangaroo-v1.png` (resting, licking a forearm) enters at the centre; the three column headers sit small above it.",
+      "teachingReason": "The red kangaroo uses all three: The red kangaroo shows all three.",
+      "narrationCue": "rests in shade / pants, sweats while hopping, and widens its skin vessels / licks its forearms / a dense network of blood vessels / The saliva evaporates / Licking is a behaviour, the vessel network is a structure, and the cooling is physiological",
+      "motionPurpose": "On the spoken cues: On \"rests in shade\" a coded shade patch falls across the plate and a chip drops into the behavioural column: \"rests in shade\". On \"pants, sweats while hopping, and widens its skin vessels\" a chip drops into the physiological column: \"pants, sweats, vasodilation\". On \"licks its forearms\" a",
+      "motionRole": "explain",
+      "onScreenChange": "new `m8-red-kangaroo-v1.png` (resting, licking a forearm) enters at the centre; the three column headers sit small above it. On \"rests in shade\" a coded shade patch falls across the plate and a chip drops into the behavioural column: \"rests in shade\". On \"pants, sweats while hopping, and widens its skin vessels\" a chip drops into the physiological column: \"pants, sweats, vasodilation\". On \"licks its forearms\" a `scribbleEllipse` circles the forearm; on \"a dense network of blood vessels\" new `m8-kangaroo-forearm-vessels-v1.png` appears as an inset callout from the forearm (grey tag \"close-up, drawn larger\"). On \"The saliva evaporates\" `EvapDots` lift from the inset. On \"Licking is a behaviour, the vessel network is a structure, and the cooling is physiological\" three thin lines draw from the forearm to all three columns, one per phrase. On \"cross the categories\" the three lines pulse together. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "trends",
+      "visualDecision": "adjust",
+      "visualReference": "the kangaroo dims to a thumbnail.",
+      "teachingReason": "Trends across endotherms: Across endotherms, there are trends.",
+      "narrationCue": "countercurrent exchange",
+      "motionPurpose": "On the spoken cues: On \"large, thin ears or long limbs\" two coded silhouettes draw side by side (abstract outlines of a generic mammal head, one with large thin ears, one compact with small ears, no species, no faces), labelled \"hot climate: large extremities\" and \"cold climate: compact\"; `HeatArrows` are larger from",
+      "motionRole": "explain",
+      "onScreenChange": "the kangaroo dims to a thumbnail. On \"large, thin ears or long limbs\" two coded silhouettes draw side by side (abstract outlines of a generic mammal head, one with large thin ears, one compact with small ears, no species, no faces), labelled \"hot climate: large extremities\" and \"cold climate: compact\"; `HeatArrows` are larger from the large-eared outline. On \"thick fur or blubber\" `b2-seal-and-pup-v1.png` returns small under the compact outline (grey tag \"blubber\"). A grey tag \"p01 tests this with a model\" sits at the lower edge. The silhouettes dim on \"In a penguin's legs\". The coded `Countercurrent` diagram draws at the centre: a red artery running down (label \"warm blood out\") beside a blue vein running up (label \"cool blood back\"), the artery fading from red to purple down its length, the vein warming upward; on \"Heat passes across\" short amber cross arrows pulse from artery to vein along the length. Grey tags \"penguin legs, dolphin flippers\". On \"countercurrent exchange\" the label writes. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "limits",
+      "visualDecision": "adjust",
+      "visualReference": "the board returns to the flying fox plate at the left, with the `HeatBalance` above.",
+      "teachingReason": "Why the flying foxes died: So why did the flying foxes die?",
+      "narrationCue": "Heat flows from hotter to cooler / Hotter air added heat / relied heavily on evaporation / water they were already losing / each effector has a limit",
+      "motionPurpose": "On the spoken cues: On \"Heat flows from hotter to cooler\" a coded skin strip (thin, abstract, from the warm skin plate's palette) draws at the right with a grey label \"air hotter than skin\" above it (no skin temperature is stated). On \"Hotter air added heat\" the `HeatArrows` above the strip reverse and point down into",
+      "motionRole": "explain",
+      "onScreenChange": "the board returns to the flying fox plate at the left, with the `HeatBalance` above. On \"Heat flows from hotter to cooler\" a coded skin strip (thin, abstract, from the warm skin plate's palette) draws at the right with a grey label \"air hotter than skin\" above it (no skin temperature is stated). On \"Hotter air added heat\" the `HeatArrows` above the strip reverse and point down into the skin, labelled \"convection\"; the balance tips hard towards \"heat gained\". On \"relied heavily on evaporation\" `EvapDots` lift from the strip and the balance comes back part of the way; on \"water they were already losing\" the dots thin and slow (grey tag \"water runs short\"). On \"each effector has a limit\" b01's loop ring thumbnail shows all slots lit and the minus arrow still bright, while the flying fox's small `m8-thermometer-v1.png` column keeps climbing; a chip writes \"feedback has limits\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "two handwritten lines write on large, with the warm skin plate thumbnail beside \"Hot: widen and wet.\" and the cold skin plate thumbnail beside \"Cold: narrow and shiver.\"; under them three small chips \"process? behaviour? feature?\".",
+      "teachingReason": "Memory: To keep it: hot means widen and wet.",
+      "narrationCue": "To keep it: hot means widen and wet.",
+      "motionPurpose": "On the spoken cues: Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "two handwritten lines write on large, with the warm skin plate thumbnail beside \"Hot: widen and wet.\" and the cold skin plate thumbnail beside \"Cold: narrow and shiver.\"; under them three small chips \"process? behaviour? feature?\". Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (a cyclist on a dry day)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. A cyclist rides on",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a cyclist on a dry day))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A cyclist rides for 40 minutes on a dry day when the air temperature is 30 °C. Her core body temperature rises from 37.0 °C to 37.8 °C in the first 15 minutes, then stays near 37.8 °C while she continues riding at the same pace.\" Demand: \"(a) Explain how the hypothalamus and TWO named effectors prevent her core body temperature from rising further. (4 marks) (b) Predict how her core body temperature would change on a humid day with the same air temperature. Justify your prediction. (2 marks)\". Lined answer space. No plates, no people. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "detect the rise / more heat passes to the cooler air / Evaporating sweat / levels off / Humid air / Wet skin alone",
+      "motionPurpose": "On the spoken cues: On \"detect the rise\" the given \"rises from 37.0 °C to 37.8 °C\" takes an amber underline; on \"more heat passes to the cooler air\" the given \"30 °C\" takes an underline and a small grey tag \"air cooler than skin\"; on \"Evaporating sweat\" the given \"dry day\" takes an underline; on \"levels off\" the given",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"detect the rise\" the given \"rises from 37.0 °C to 37.8 °C\" takes an amber underline; on \"more heat passes to the cooler air\" the given \"30 °C\" takes an underline and a small grey tag \"air cooler than skin\"; on \"Evaporating sweat\" the given \"dry day\" takes an underline; on \"levels off\" the given \"then stays near 37.8 °C\" takes an amber underline; on \"Humid air\" the demand's \"humid day\" takes an underline. Four short answer lines write into the answer space, one per cue: \"hypothalamus → nerve impulses to arterioles and sweat glands\", \"arterioles dilate: more warm blood near surface, more heat lost\", \"sweat evaporates: takes heat from skin\", \"heat loss = heat production → temperature levels off\"; and for (b): \"humid: less evaporation, core temperature rises higher\". On \"Wet skin alone\" a chip \"sweat cools because the skin is wet\" writes and takes a scribble cross. Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (the koala)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. In hot weather, koalas move down to",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (the koala))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\", with `m5x-koala-v1.png` small at its upper left. Stem: \"Koalas are endotherms. In hot weather, koalas have been observed to show these adaptations: 1. They move down to lower branches and press their bodies against the tree trunk, which is cooler than their body surface. 2. They pant, increasing evaporation from the moist lining of the mouth and airways. 3. They have dense fur on their back that reflects part of the sunlight that strikes it.\" Demand: \"(a) Classify each adaptation as behavioural, structural or physiological. (3 marks) (b) Explain how adaptation 1 reduces the koala's body temperature. (2 marks)\". A three-row answer table (adaptation 1, 2, 3; type) and lined space. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "The trunk is cooler / without using water / classic mistake",
+      "motionPurpose": "On the spoken cues: The answer table fills one row per cue: \"1: behavioural\", \"2: physiological\", \"3: structural\". On \"The trunk is cooler\" the given \"cooler than their body surface\" takes an amber underline and the koala plate takes a small coded arrow from body to trunk, labelled \"heat: koala → trunk (conduction)\".",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. The answer table fills one row per cue: \"1: behavioural\", \"2: physiological\", \"3: structural\". On \"The trunk is cooler\" the given \"cooler than their body surface\" takes an amber underline and the koala plate takes a small coded arrow from body to trunk, labelled \"heat: koala → trunk (conduction)\". On \"without using water\" the given \"pant, increasing evaporation\" takes a thin grey underline with a small tag \"panting uses water\". On \"classic mistake\" a chip \"hugging the tree keeps it cool\" writes and takes a scribble cross, with small text \"name the direction of heat flow\". Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "three step chips write on, one per cue: \"effector or feature?\", \"heat gained or lost?\", \"limits?\".",
+      "teachingReason": "Decision rule and handoff: So for any temperature question, name the effector or feature, say how it changes heat gained or heat lost, and check its limits.",
+      "narrationCue": "So for any temperature question, name the effector",
+      "motionPurpose": "On the spoken cues: The heat-balance bar returns small above them. A \"Next\" chip slides in at the lower right: \"Next: investigating temperature regulation with a model\" (small grey tag; a small coded flask outline beside it). Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on, one per cue: \"effector or feature?\", \"heat gained or lost?\", \"limits?\". The heat-balance bar returns small above them. A \"Next\" chip slides in at the lower right: \"Next: investigating temperature regulation with a model\" (small grey tag; a small coded flask outline beside it). Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b02-learning-review.md",
+      "sha256": "6c06191cab67485e08a68350be02da98c3924cb9e9574ed0f1cb0e1afda77f32"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b02-claude-science-check.md",
+      "sha256": "4f6ac6d560d21225913d41e54e3a606122caa5917988ce51c8b827a4f9759398"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

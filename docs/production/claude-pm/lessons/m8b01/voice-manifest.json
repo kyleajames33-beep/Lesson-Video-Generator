@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B01-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b01/lesson.json",
+  "lessonSha256": "dda09413a833b623596a25a1f3a7a1ad3ed22ee038b11ab841f7ddb515836a47",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b01/lesson.production-brief.json",
+    "sha256": "6c90edaf7c42f9970e270853cd4fbc787cc059b22cb7280b783d572a014f6ce6"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Right now you're probably in a room at about twenty-two degrees, and your body is losing heat to it every second. Yet your core temperature stays close to thirty-seven. Something keeps detecting that drift and correcting it. So what detects it, what decides, and what does the fixing?",
+      "hash": "dcc1fdef6565",
+      "textSha256": "dcc1fdef6565f3bbcecac21b8d0b9476654fa7f0645a2b3794b68bc903031fa6",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/hook.dcc1fdef6565.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/hook.dcc1fdef6565.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/hook.dcc1fdef6565.generation.json",
+      "plannedRequestSha256": "5b005d079906eb128db71a8e392ab79f36d6f635ea9207fe139000f70588ca59"
+    },
+    {
+      "id": "range-not-number",
+      "parentSceneId": "range-not-number",
+      "text": "That steadiness has a name: homeostasis, keeping the internal environment relatively stable while the outside changes. Relatively is the key word. Core temperature wobbles within a narrow band, roughly thirty-six and a half to thirty-seven and a half degrees. We call that band the tolerance range, and the value it wobbles around is the set point. Why does it matter? Your enzymes work well only in a narrow band of conditions. Too hot, and they can start losing their shape. Too cold, and reactions slow down.",
+      "hash": "e188b3d1e3fd",
+      "textSha256": "e188b3d1e3fd12e452b449253ce119a17d0eb3d5c312a0e49652d819154ad56a",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/range-not-number.e188b3d1e3fd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/range-not-number.e188b3d1e3fd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/range-not-number.e188b3d1e3fd.generation.json",
+      "plannedRequestSha256": "88e23516580e71a4006279c059c675cd087ab395f4dd8c52f837222a88b89447"
+    },
+    {
+      "id": "thermostat",
+      "parentSceneId": "thermostat",
+      "text": "A heater with a thermostat works the same way. You set the dial to twenty degrees: that's the set point. A sensor inside measures the room. A switch compares the reading with the dial. When the room drops below twenty, the switch turns the heater on. As the room warms back up, the switch turns it off again. Detect, decide, act.",
+      "hash": "b30f97245927",
+      "textSha256": "b30f972459275d67e8a76c5d2a727faa56b1f4b40f1b8fc80322e5f65a1d2476",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/thermostat.b30f97245927.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/thermostat.b30f97245927.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/thermostat.b30f97245927.generation.json",
+      "plannedRequestSha256": "32baecebae5941915790f67d4434f4ac830ae0ddb489649890fa3a615d3841e3"
+    },
+    {
+      "id": "five-parts",
+      "parentSceneId": "five-parts",
+      "text": "Your body runs the same kind of loop, with five parts. Say you step into a cold wind. First, the stimulus: a change in the variable, here body temperature starting to fall. Second, a receptor detects it: thermoreceptors, temperature sensors in your skin and in the hypothalamus, a small region at the base of the brain. Third, the control centre, the hypothalamus, compares that signal with the set point. Fourth, it signals effectors, the muscles and glands that act. Skeletal muscles start shivering, and small arteries in the skin, called arterioles, narrow. Fifth, the response: more heat is made, less is lost, and temperature climbs back.",
+      "hash": "9683b36ada60",
+      "textSha256": "9683b36ada601e1b7e5999b2a3bc393a4925ca51431478f575a89e5175ec0d50",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/five-parts.9683b36ada60.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/five-parts.9683b36ada60.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/five-parts.9683b36ada60.generation.json",
+      "plannedRequestSha256": "d1d337f18dbaaf0dcd2fc1e1167285f09fcb1aa745f4e4279db86a62a3e915b8"
+    },
+    {
+      "id": "why-negative",
+      "parentSceneId": "why-negative",
+      "text": "Here's the key idea. The response pushes the variable the opposite way to the original change. Temperature fell, so the response raises it. That's why it's called negative feedback: negative means opposing, not bad. And watch what happens next. As temperature returns, the receptors detect less change, so their signals weaken and the extra shivering fades. The response settles to what's needed, not to zero: in a cold room, some extra heat production carries on, because the cold hasn't gone away. And small delays can let temperature drift a little either side of the set point.",
+      "hash": "bbf6c16783e9",
+      "textSha256": "bbf6c16783e92a182cd319d30214f0cb02b89ac95a637e71730120b6d348825a",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/why-negative.bbf6c16783e9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/why-negative.bbf6c16783e9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/why-negative.bbf6c16783e9.generation.json",
+      "plannedRequestSha256": "0acdba40e799c08c5c05e4028160d55dcfc0846be18f557c8123392164742cfa"
+    },
+    {
+      "id": "positive-feedback",
+      "parentSceneId": "positive-feedback",
+      "text": "Compare that with positive feedback, where the response strengthens the original change. When a blood vessel tears, a few platelets stick to the damaged wall. They release chemicals that call in more platelets, which release more chemicals. The change grows until the hole is plugged, and then it stops. Positive feedback drives a process to an end point. It can't hold a variable steady, so homeostasis relies on negative feedback.",
+      "hash": "e0f7d6127798",
+      "textSha256": "e0f7d612779845eb3e6691bf1844381d24355501561ecb996714a323f925417c",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/positive-feedback.e0f7d6127798.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/positive-feedback.e0f7d6127798.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/positive-feedback.e0f7d6127798.generation.json",
+      "plannedRequestSha256": "b4478b4fdfeddfef76bfcbe37d0796090184bc0aa5aa7135d027bfe9b83c278b"
+    },
+    {
+      "id": "glucose-template",
+      "parentSceneId": "glucose-template",
+      "text": "The same five-part template fits other variables. Blood glucose rises after a meal. Cells in the pancreas detect the rise and release a hormone, insulin. Body cells, especially liver and muscle cells, take up more glucose, so blood glucose falls back. Here, the pancreas is both the receptor and the control centre. You'll see how insulin and its partner hormone work in a later video.",
+      "hash": "9bfd8a536504",
+      "textSha256": "9bfd8a53650478463ff9fa82eb464979f270f3bdd323a11846a8f83e0b0f3b2b",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/glucose-template.9bfd8a536504.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/glucose-template.9bfd8a536504.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/glucose-template.9bfd8a536504.generation.json",
+      "plannedRequestSha256": "6d5b602d2948e7d0e353a332921c50d0b15c4f20bf7f813b0869e892c16681a6"
+    },
+    {
+      "id": "exam-checks",
+      "parentSceneId": "exam-checks",
+      "text": "When you read a loop in an exam, check two things. First, which variable is being regulated? In homeostasis, it's a condition inside the body. Air temperature might cause the change, but your body isn't trying to control the air. Second, which way does the response push? If it opposes the change, it's negative feedback. And remember, receptors detect the change in the variable, not the response.",
+      "hash": "4ad29a876118",
+      "textSha256": "4ad29a87611802aa8db2b7db08961b4125b3acde5b669be1f4550fd5b8eecb09",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/exam-checks.4ad29a876118.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/exam-checks.4ad29a876118.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/exam-checks.4ad29a876118.generation.json",
+      "plannedRequestSha256": "a9bab9768d9cd3dfc3cde1cc6edf3bd1109ec5c773d8d0f429db5ef581bb37d7"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "To remember the order: Some Really Cool Elephants Run. Stimulus, receptor, control centre, effector, response. And if the response opposes the change, the loop is negative.",
+      "hash": "3365123c846c",
+      "textSha256": "3365123c846c1a0e481e9c4d1a99eb0b2aa756838249dd65077bd8ea41e785e7",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/memory.3365123c846c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/memory.3365123c846c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/memory.3365123c846c.generation.json",
+      "plannedRequestSha256": "dc33d5ce9a74f1234260e087673a4d81618e0c050de4fd34af40ec01271728ee"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. During exercise, blood carbon dioxide rises. Chemoreceptors in the brainstem and major arteries detect the rise. The medulla oblongata sends nerve impulses to the diaphragm and the muscles between the ribs, and breathing becomes faster and deeper. Construct a negative feedback loop for this response, and explain why it's negative feedback. Pause here to answer.",
+      "hash": "0316bfbe9e78",
+      "textSha256": "0316bfbe9e7807c1e2028b40949791321eda7fb59f48d4da9af70d6e9db29c32",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/attempt.0316bfbe9e78.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/attempt.0316bfbe9e78.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/attempt.0316bfbe9e78.generation.json",
+      "plannedRequestSha256": "2c90631db7fb942034728e57248910b38a37aa18b96aa75f0e0876c0d5a849d2"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Stimulus: blood carbon dioxide rises. Receptor: the chemoreceptors. Control centre: the medulla oblongata. Effectors: the diaphragm and rib muscles. Response: faster, deeper breathing removes more carbon dioxide, so its level falls. It's negative because the response opposes the rise. Calling exercise the stimulus is the classic mistake: the stimulus is the change in carbon dioxide.",
+      "hash": "2035f06cd22d",
+      "textSha256": "2035f06cd22dea90f33248653fd0280c323452576d411f10063af27283c85bc7",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/feedback-one.2035f06cd22d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/feedback-one.2035f06cd22d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/feedback-one.2035f06cd22d.generation.json",
+      "plannedRequestSha256": "3ff0e3e7d41479507dfaa03737002280a11e805d04e316b828385fb9d08d99d4"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A healthy adult moved from a room at twenty-two degrees into a room at five degrees. The graph shows air temperature and the adult's core body temperature. Identify the variable being regulated, and explain the pattern in core body temperature after the move, with reference to negative feedback. Pause here to answer.",
+      "hash": "219271a73a20",
+      "textSha256": "219271a73a209430d79874783331e9f83fa94b2de28fc0347c8f7aaf9896047f",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/attempt-two.219271a73a20.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/attempt-two.219271a73a20.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/attempt-two.219271a73a20.generation.json",
+      "plannedRequestSha256": "ca20a738901775d266334e99effb5e90cfb5d78d7e4b51383c5a9f031bb376e0"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "The regulated variable is core body temperature, not air temperature. Its small fall after the move is the stimulus. The hypothalamus responded with shivering and narrower skin arterioles, which made more heat and lost less, so core temperature recovered. Naming air temperature as the regulated variable is the classic mistake: the air stayed at five degrees.",
+      "hash": "8cd5c24d47c0",
+      "textSha256": "8cd5c24d47c0bcdeddaf97120cbcd003bb292630423768a0b76dee723ed1e261",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/feedback-two.8cd5c24d47c0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/feedback-two.8cd5c24d47c0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/feedback-two.8cd5c24d47c0.generation.json",
+      "plannedRequestSha256": "202df45deee01e87db16a147aef12fab6d55952f049fd18411591e7a11431cfa"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any loop, name the variable inside the body, trace the five parts in order, and check that the response opposes the change. Next, we'll zoom in on temperature: how endotherms detect heat, and the main ways they lose or keep it.",
+      "hash": "57d1f9e13bb6",
+      "textSha256": "57d1f9e13bb679749f97c52b9f1f580f870371326f65f57bf15dbb3dd2ae1f8b",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/decision-rule.57d1f9e13bb6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/decision-rule.57d1f9e13bb6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/decision-rule.57d1f9e13bb6.generation.json",
+      "plannedRequestSha256": "a194d2f7d0a2814a14a8282e34cbc631f558303eafe3be69837ebadab8d9d099"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B01-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c01/lesson.json",
+    "lessonSha256": "0e170a9404cfbc9df900fc0d783efc2140e064173497d1d7f902b3bf3ed0654e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m6-c12 (burette, pipette, aliquot, titre, concordant titres within 0.10 mL, n = cV, divide by the aliquot); chem-m6-c13 (an indicator signals the endpoint; endpoint and equivalence point are close but not identical); chem-m5-c13 (precipitation, net ionic equations, AgCl white); chem-m5-c14 (Ksp expressions, including a squared term for a 2 : 1 salt); chem-m5-c15 (a solid forms when Qsp exceeds Ksp). Dichromate is named, not taught (its orange colour is not needed).",
+    "startsWith": "Show why Ag+ first removes chloride. The video opens: This bottle of estuary water looks just like tap water, but it's carrying dissolved salt. How much chloride is in it? You already know how a titration counts acid, with a burette, a pipette and n equals c V.",
+    "stopsAfter": "writing the titration and indicator equations with colours; explaining why chloride precipitates first and why the chromate amount is controlled; stating the pH condition with both causes and the effect of acid on the titre; naming halide interference and the blank; calculating chloride in mol/L and g/L from concordant titres. No direct or back titration, no hands-on procedure or risk table.",
+    "nextLesson": "weighing a precipitate instead of measuring a volume (route chem-m8-c02, gravimetric analysis)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c01.md"
+  ],
+  "teaching": {
+    "task": "Estuary water looks like tap water, but it carries dissolved chloride. With no acid or base for an indicator to respond to, how can a titration with silver nitrate show when the chloride runs out, and how do you turn the titre into a chloride concentration?",
+    "causalExplanation": "(1) chloride is invisible, and with no acid or base a pH indicator has nothing to respond to; (2) silver forms white silver chloride, 1 : 1, but the white solid gives no stopping signal; (3) a little chromate forms red-brown silver chromate once nearly all chloride is gone, so the first lasting red-brown is the endpoint; (4) chloride goes first because, with lots of chloride and little chromate, silver chloride needs far less silver; as chloride falls, the silver needed rises until red appears; so the chromate amount is set; (5) acid turns chromate to dichromate, so the endpoint is late and the titre high; base gives silver oxide; other silver-precipitating ions count as chloride; the blank corrects the small built-in lateness; (6) chromium(VI) hazard, so the method is often met as data; (7) concordant titres; (8 to 10) titre to moles of silver, 1 : 1 to chloride, divide by the aliquot, then g/L and its meaning.",
+    "conversationalApproach": "a bottle of estuary water looks like tap water but carries dissolved salt, and a pH indicator has nothing to respond to because chloride is not an acid or a base, so the video asks how a precipitation titration can measure chloride. Silver nitrate in the burette meets chloride and forms white silver chloride one to one, but the white solid keeps forming right up to the end and gives no signal. A few drops of yellow potassium chromate fix that: while chloride remains the silver makes silver chloride, and once nearly all of it is gone the next silver ions form red-brown silver chromate, the endpoint. Chloride goes first not simply because silver chloride is less soluble but because, with lots of chloride present, its ion product passes Ksp at a much lower silver concentration. The endpoint stays valid only near neutral, since acid turns chromate into dichromate and makes the titre read high. Chromium(VI) is toxic, so the method is mostly met as data. The titres are made concordant and averaged, then the calculation runs one stage at a time: moles of silver from c times V, the one to one ratio, dividing by the aliquot and converting to grams per litre. The memory aid is white while chloride lasts, stop at the first lasting red-brown, then titre, moles, ratio, divide by the aliquot. Two exam questions follow with brief feedback.",
+    "openingDecision": "This bottle of estuary water looks just like tap water, but it's carrying dissolved salt. How much chloride is in it? You already know how a titration counts acid, with a burette, a pipette and n equals c V. Chloride isn't an acid or a base, though, so a p H indicator has nothing to respond to. So how do we see the moment the chloride runs out?",
+    "understandingCheck": "(A1) Bore water, 20.00 mL, 0.0250 mol/L AgNO₃, titres 15.10 (rough), 14.62, 14.70, 14.66 mL; find chloride in mol/L and g/L. Tests the concordant mean, n = cV, 1 : 1, the aliquot and g/L. Crossed mistake: doubling the moles with chromate's 2 : 1 ratio (pack trap; site MC distractor). (A2) Pickling-factory wastewater at pH 3, titrated without adjusting pH: explain the effect, suggest a fix. Tests scene 5's cause. Crossed mistake: \"No effect: H⁺ isn't in the silver chloride equation\" (site MC distractor idea, original wording).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct investigations and/or process data involving:; gravimetric analysis; precipitation titrations\" This video processes precipitation titration data (the Mohr method). Gravimetric analysis is chem-m8-c02; practice with both is chem-m8-g01. starts by showing why silver ions remove chloride first, and stops at calculating chloride from a valid Mohr endpoint. It teaches: silver nitrate titrant; Ag⁺ + Cl⁻ → AgCl (white), 1 : 1; the white solid gives no stopping signal by itself; a little potassium chromate as indicator; after nearly all chloride is used, 2Ag⁺ + CrO₄²⁻ → Ag₂CrO₄ (red-brown); the first persistent red-brown tinge is the endpoint; why chloride precipitates first (each solid forms once its ion product exceeds its Ksp, so the silver concentration each needs depends on the actual chloride and chromate concentrations, not on pure-water solubility); why the chromate amount is controlled; valid conditions (roughly pH 6.5 to 10; acid converts chromate to dichromate and gives a late endpoint and a high titre; strong base gives silver oxide); other silver-precipitating ions counted as chloride; the slightly late endpoint and the blank; the chromate hazard; processing concordant titres (recall); n(Ag⁺) = cV, 1 : 1, divide by the aliquot, mol/L to g/L. Not taught: direct or back titration (M6 recall only), Volhard or Fajans methods, the hands-on procedure and risk table, blank arithmetic, titration curves."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: silver ions pale grey; chloride green; chromate yellow; silver chloride white tiles; silver chromate red-brown tiles; hydrogen ions soft orange; reasoning lines ink; givens and units navy; the current answer bright; earlier lines dim. Board layout (constant): heading top-left; apparatus left third; inset or board right two thirds. Reuse: painted plates inspected 28 Oct by contact sheet (Assets). The burette plate has no readable graduations, so titre values are always coded text, never read off the plate. No human figures.",
+    "transitionPlan": "The heading writes on over the river sampling bottle with an estuary tag and a grey c12 titration chip; the bottle shrinks to a corner as the burette plate and flask appear and the flask cross-fades to cloudy white with a one to one chip; the chromate dropper bottle appears, the flask turns yellow and then cross-fades to the first red-brown on the endpoint; a crossed chip and a small Qsp strip show the chloride and chromate thresholds side by side; the board clears to a pH strip with its green window and small insets at the acid and base ends; the dropper bottle returns with a coded hazard band and slides into a data card; the titre table writes row by row with the rough run struck and a concordance bracket; the calculation board sets up its task strip, equation strip and grouped givens, then writes one stage line per cue, earlier lines dimming with their results kept; the memory lines write by hand; each attempt clears the board with its question card, and its feedback underlines the givens as the stage lines write and a crossed trap chip lands; the balance plate and a next chip close; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading writes on: \"How much chloride is in this water?\".",
+      "teachingReason": "Hook (clear water, hidden chloride): This bottle of estuary water looks just like tap water, but it's carrying dissolved salt.",
+      "narrationCue": "indicator / out",
+      "motionPurpose": "On the spoken cues: `m8-river-sampling-bottle-v1.png` appears medium at centre with a tag \"estuary water\". A grey chip \"c12: titration, n = cV\" writes under it. On \"indicator\" `m6-clip-phenolphthalein-pink-v1.png` appears small at the right with a grey chip \"c13: pH indicator\", then a soft cross fades over the chip \"no acid or base here\". On \"out\" the pink flask fades, and a question chip writes and stays dim: \"when is the chloride",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"How much chloride is in this water?\". `m8-river-sampling-bottle-v1.png` appears medium at centre with a tag \"estuary water\". A grey chip \"c12: titration, n = cV\" writes under it. On \"indicator\" `m6-clip-phenolphthalein-pink-v1.png` appears small at the right with a grey chip \"c13: pH indicator\", then a soft cross fades over the chip \"no acid or base here\". On \"out\" the pink flask fades, and a question chip writes and stays dim: \"when is the chloride used up?\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "silver-meets-chloride",
+      "visualDecision": "adjust",
+      "visualReference": "the bottle shrinks to the top-left corner.",
+      "teachingReason": "Silver meets chloride: The trick is to titrate with silver nitrate.",
+      "narrationCue": "white / new",
+      "motionPurpose": "On the spoken cues: `m6-burette-clamp-stand-v1.png` appears at the left with a navy coded label \"AgNO₃(aq)\" on the burette; `m8-mohr-flask-yellow-v1.png` is not used yet: the plain `m6-conical-flask-v1.png` sits under the tip with a coded clear fill and tag \"Cl⁻(aq) sample\". The equation writes on the right: \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" with \"white\" under AgCl and a chip \"1 : 1\". The ion swap inset opens: grey Ag⁺ and green Cl⁻ dots",
+      "motionRole": "explain",
+      "onScreenChange": "the bottle shrinks to the top-left corner. `m6-burette-clamp-stand-v1.png` appears at the left with a navy coded label \"AgNO₃(aq)\" on the burette; `m8-mohr-flask-yellow-v1.png` is not used yet: the plain `m6-conical-flask-v1.png` sits under the tip with a coded clear fill and tag \"Cl⁻(aq) sample\". The equation writes on the right: \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" with \"white\" under AgCl and a chip \"1 : 1\". The ion swap inset opens: grey Ag⁺ and green Cl⁻ dots pair and drop as white tiles. On \"white\" drops fall (burette drip) and the coded fill turns milky white. On \"new\" the drops continue; the inset shows no green dots left and the grey dots float unpaired; a small question mark appears over the flask.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "second-precipitate",
+      "visualDecision": "adjust",
+      "visualReference": "the board resets.",
+      "teachingReason": "A second precipitate as the signal: So we add a few drops of potassium chromate before we start.",
+      "narrationCue": "solid / endpoint",
+      "motionPurpose": "On the spoken cues: `m8-chromate-dropper-bottle-v1.png` appears small beside the flask with tag \"K₂CrO₄ indicator\"; the flask cross-fades to `m8-mohr-flask-yellow-v1.png`. Drops fall; the flask cross-fades to `m8-mohr-flask-white-v1.png`; the inset shows white tiles forming while yellow chromate dots wait. On \"solid\" the inset's last green dot goes, and grey Ag⁺ pairs with yellow CrO₄²⁻ as a red-brown tile; the second equation writes",
+      "motionRole": "explain",
+      "onScreenChange": "the board resets. `m8-chromate-dropper-bottle-v1.png` appears small beside the flask with tag \"K₂CrO₄ indicator\"; the flask cross-fades to `m8-mohr-flask-yellow-v1.png`. Drops fall; the flask cross-fades to `m8-mohr-flask-white-v1.png`; the inset shows white tiles forming while yellow chromate dots wait. On \"solid\" the inset's last green dot goes, and grey Ag⁺ pairs with yellow CrO₄²⁻ as a red-brown tile; the second equation writes under the first: \"2Ag⁺(aq) + CrO₄²⁻(aq) → Ag₂CrO₄(s)\" with \"red-brown\" under it, and the first equation dims. On \"endpoint\" the flask cross-fades to `m8-mohr-flask-endpoint-v1.png`, a coded swirl arc circles it once, and the tag \"endpoint: first lasting red-brown\" writes (bright). The heading updates: \"The Mohr method\".",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "why-chloride-first",
+      "visualDecision": "new",
+      "visualReference": "the flask shrinks to the left.",
+      "teachingReason": "Why chloride goes first: Why does the chloride react first?",
+      "narrationCue": "silver / climbs / gone",
+      "motionPurpose": "On the spoken cues: A chip writes \"AgCl is less soluble, so it goes first\" and is crossed (caption \"not the reason in a mixture\"). A grey chip \"c15: solid forms when Qsp > Ksp\" writes. The silver-needed ladder draws on the right (log scale, label \"[Ag⁺] needed to start forming\"), with a small grey tag \"one illustrative sample, not a fixed threshold\". Two small grouped givens write at the ladder's foot, each beside its bar (learning",
+      "motionRole": "explain",
+      "onScreenChange": "the flask shrinks to the left. A chip writes \"AgCl is less soluble, so it goes first\" and is crossed (caption \"not the reason in a mixture\"). A grey chip \"c15: solid forms when Qsp > Ksp\" writes. The silver-needed ladder draws on the right (log scale, label \"[Ag⁺] needed to start forming\"), with a small grey tag \"one illustrative sample, not a fixed threshold\". Two small grouped givens write at the ladder's foot, each beside its bar (learning review 1): beside a tall green bar \"lots of Cl⁻\", \"[Cl⁻] at the start ≈ 0.074 mol/L\"; beside a short yellow bar \"a little CrO₄²⁻\", \"[CrO₄²⁻] ≈ 0.005 mol/L\" (grey tag \"sample value, worked out in the calculation later\"). On \"silver\" the AgCl working writes alone beside the ladder: \"[Ag⁺] = Ksp ÷ [Cl⁻] = 1.77 × 10⁻¹⁰ ÷ 0.074\" and a white marker lands low: \"AgCl: about 2 × 10⁻⁹ mol/L\". Then that working dims (marker kept), and the chromate working writes: \"[Ag⁺] = √(Ksp ÷ [CrO₄²⁻]) = √(1.12 × 10⁻¹² ÷ 0.005)\", a small \"[Ag⁺]²\" tag, and a red-brown marker lands high: \"Ag₂CrO₄: about 1.5 × 10⁻⁵ mol/L\". The narration says the two concentrations aloud once, so voice and givens match. On \"climbs\" both workings dim, the green bar shrinks and the white marker slides up the ladder. On \"gone\" the white marker meets the red-brown marker; a red-brown flash; tag \"> 99.9% of Cl⁻ gone\" (bright). Last line: a dim tag under the yellow bar, \"small, set amount of chromate\". At most three bright items at any cue: the current working, its marker, and one given.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "valid-endpoint",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Keeping the endpoint valid: This endpoint works only in the right conditions.",
+      "narrationCue": "high / instead / blank",
+      "motionPurpose": "On the spoken cues: A horizontal pH strip draws with a green window \"about 6.5 to 10\". At the left end (acid): orange H⁺ dots join yellow chromate dots in a small inset and they become \"Cr₂O₇²⁻\"; the yellow bar from scene 4 shrinks; on \"high\" a chip \"late endpoint, titre too high\" lights. At the right end (base), on \"instead\", a chip \"Ag₂O forms (brown)\" lights and the acid chip dims. A third chip writes on \"bromide\": \"Br⁻, I⁻ counted",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. A horizontal pH strip draws with a green window \"about 6.5 to 10\". At the left end (acid): orange H⁺ dots join yellow chromate dots in a small inset and they become \"Cr₂O₇²⁻\"; the yellow bar from scene 4 shrinks; on \"high\" a chip \"late endpoint, titre too high\" lights. At the right end (base), on \"instead\", a chip \"Ag₂O forms (brown)\" lights and the acid chip dims. A third chip writes on \"bromide\": \"Br⁻, I⁻ counted as Cl⁻\" and the base chip dims. On \"blank\" a small chip \"blank: no chloride, subtract its titre\" writes (grey); at most three bright items at any time.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "bar fill"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "hazard-data",
+      "visualDecision": "adjust",
+      "visualReference": "`m8-chromate-dropper-bottle-v1.png` returns at centre with a coded hazard band \"Cr(VI): toxic, carcinogen\" (GHS pictograms as coded symbols, no people).",
+      "teachingReason": "The hazard, and why it's data: One more thing.",
+      "narrationCue": "data",
+      "motionPurpose": "On the spoken cues: On \"data\" the bottle slides away and a blank titre table frame draws on the right.",
+      "motionRole": "explain",
+      "onScreenChange": "`m8-chromate-dropper-bottle-v1.png` returns at centre with a coded hazard band \"Cr(VI): toxic, carcinogen\" (GHS pictograms as coded symbols, no people). On \"data\" the bottle slides away and a blank titre table frame draws on the right.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "titres",
+      "visualDecision": "new",
+      "visualReference": "the titre table writes row by row: \"Rough 19.10 mL\", \"1: 18.45 mL\", \"2: 18.55 mL\", \"3: 18.50 mL\".",
+      "teachingReason": "The titres: A twenty five millilitre aliquot of the estuary water is titrated with point one zero zero zero molar silver nitrate.",
+      "narrationCue": "left out / average",
+      "motionPurpose": "On the spoken cues: On \"left out\" the rough row greys and strikes through. A grey chip \"c12: concordant = within 0.10 mL\" writes. On \"average\" a bracket gathers rows 1 to 3 and writes \"mean = 18.50 mL\" (bright).",
+      "motionRole": "explain",
+      "onScreenChange": "the titre table writes row by row: \"Rough 19.10 mL\", \"1: 18.45 mL\", \"2: 18.55 mL\", \"3: 18.50 mL\". On \"left out\" the rough row greys and strikes through. A grey chip \"c12: concordant = within 0.10 mL\" writes. On \"average\" a bracket gathers rows 1 to 3 and writes \"mean = 18.50 mL\" (bright).",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "stage-1-silver",
+      "visualDecision": "new",
+      "visualReference": "the calculation board sets up at the top: task strip \"Find c(Cl⁻) in mol/L and g/L\"; equation strip \"Ag⁺ + Cl⁻ → AgCl\"; givens group (navy) in two short blocks: \"AgNO₃: c = 0.1000 mol/L, V = 18.50 mL = 0.01850 L\" and \"sample: aliquot 25.00 mL = 0.02500 L\".",
+      "teachingReason": "Stage 1: moles of silver: First, the task: find the chloride concentration, in moles per litre and grams per litre.",
+      "narrationCue": "silver",
+      "motionPurpose": "On the spoken cues: The table from scene 7 shrinks away. Stage line 1 writes: \"n(Ag⁺) = cV = 0.1000 × 0.01850\". On \"silver\" the result writes \"= 1.850 × 10⁻³ mol\" (bright), and the AgNO₃ givens block glows.",
+      "motionRole": "explain",
+      "onScreenChange": "the calculation board sets up at the top: task strip \"Find c(Cl⁻) in mol/L and g/L\"; equation strip \"Ag⁺ + Cl⁻ → AgCl\"; givens group (navy) in two short blocks: \"AgNO₃: c = 0.1000 mol/L, V = 18.50 mL = 0.01850 L\" and \"sample: aliquot 25.00 mL = 0.02500 L\". The table from scene 7 shrinks away. Stage line 1 writes: \"n(Ag⁺) = cV = 0.1000 × 0.01850\". On \"silver\" the result writes \"= 1.850 × 10⁻³ mol\" (bright), and the AgNO₃ givens block glows.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "stage-2-aliquot",
+      "visualDecision": "new",
+      "visualReference": "stage line 1 dims (result kept).",
+      "teachingReason": "Stage 2: the ratio and the aliquot: The ratio is one to one, so that's also the moles of chloride, and all of it came from the aliquot.",
+      "narrationCue": "chloride / litre",
+      "motionPurpose": "On the spoken cues: On \"chloride\" line 2 writes \"1 : 1, so n(Cl⁻) = 1.850 × 10⁻³ mol\" and the \"1 : 1\" on the equation strip glows. Line 3 writes \"c(Cl⁻) = n ÷ V(aliquot) = 1.850 × 10⁻³ ÷ 0.02500\"; the sample givens block glows; a small chip \"÷ titre\" fades in and is crossed. On \"litre\" the result writes \"= 0.0740 mol/L\" (bright).",
+      "motionRole": "explain",
+      "onScreenChange": "stage line 1 dims (result kept). On \"chloride\" line 2 writes \"1 : 1, so n(Cl⁻) = 1.850 × 10⁻³ mol\" and the \"1 : 1\" on the equation strip glows. Line 3 writes \"c(Cl⁻) = n ÷ V(aliquot) = 1.850 × 10⁻³ ÷ 0.02500\"; the sample givens block glows; a small chip \"÷ titre\" fades in and is crossed. On \"litre\" the result writes \"= 0.0740 mol/L\" (bright).",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "stage-3-grams",
+      "visualDecision": "new",
+      "visualReference": "lines 1 to 3 dim, the 0.0740 result kept.",
+      "teachingReason": "Stage 3: grams per litre: For grams per litre, multiply by the molar mass of chlorine, thirty five point four five.",
+      "narrationCue": "litre / sea",
+      "motionPurpose": "On the spoken cues: Line 4 writes \"0.0740 × 35.45\" with \"M(Cl) = 35.45 g/mol\" added to the givens. On \"litre\" \"= 2.62 g/L\" (bright). On \"sea\" a small coded bar compares \"this sample 2.62 g/L\" with \"seawater about 19 g/L\"; the estuary bottle returns small beside it.",
+      "motionRole": "explain",
+      "onScreenChange": "lines 1 to 3 dim, the 0.0740 result kept. Line 4 writes \"0.0740 × 35.45\" with \"M(Cl) = 35.45 g/mol\" added to the givens. On \"litre\" \"= 2.62 g/L\" (bright). On \"sea\" a small coded bar compares \"this sample 2.62 g/L\" with \"seawater about 19 g/L\"; the estuary bottle returns small beside it.",
+      "motionTools": [
+        "HandText write-on",
+        "bar fill"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "Memory aid: So here's the short version.",
+      "narrationCue": "answer",
+      "motionPurpose": "On the spoken cues: Handwritten line 1: \"White while Cl⁻ lasts; stop at the first lasting red-brown.\" Handwritten line 2: \"titre → moles → ratio → ÷ aliquot\". On \"answer\" a small card: \"Ag⁺ : Cl⁻ = 1 : 1 (the 2 : 1 is the indicator's)\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Handwritten line 1: \"White while Cl⁻ lasts; stop at the first lasting red-brown.\" Handwritten line 2: \"titre → moles → ratio → ÷ aliquot\". On \"answer\" a small card: \"Ag⁺ : Cl⁻ = 1 : 1 (the 2 : 1 is the indicator's)\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A 20.00 mL sample of bore water was titrated with 0.0250 mol L⁻¹ silver nitrate solution, using potassium chromate as the indicator.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. Bore water is tested by the",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A 20.00 mL sample of bore water was titrated with 0.0250 mol L⁻¹ silver nitrate solution, using potassium chromate as the indicator. The titres were 15.10 mL (rough), 14.62 mL, 14.70 mL and 14.66 mL. Calculate the concentration of chloride ions in the bore water, in mol L⁻¹ and in g L⁻¹. M(Cl) = 35.45 g mol⁻¹.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "average / chloride / litre / slip",
+      "motionPurpose": "On the spoken cues: On \"average\" \"15.10 mL (rough)\" is underlined and struck; \"14.62 mL, 14.70 mL and 14.66 mL\" are underlined; line \"mean = 14.66 mL\". Line \"n(Ag⁺) = 0.0250 × 0.01466 = 3.665 × 10⁻⁴ mol\" (\"0.0250 mol L⁻¹\" underlined) writes on \"silver\", so the screen carries the number the voice no longer reads; on \"chloride\" it continues \"= n(Cl⁻) (1 : 1)\". Line \"c = 3.665 × 10⁻⁴ ÷ 0.02000 = 0.0183 mol/L\" (\"20.00 mL\" underlined). On",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. On \"average\" \"15.10 mL (rough)\" is underlined and struck; \"14.62 mL, 14.70 mL and 14.66 mL\" are underlined; line \"mean = 14.66 mL\". Line \"n(Ag⁺) = 0.0250 × 0.01466 = 3.665 × 10⁻⁴ mol\" (\"0.0250 mol L⁻¹\" underlined) writes on \"silver\", so the screen carries the number the voice no longer reads; on \"chloride\" it continues \"= n(Cl⁻) (1 : 1)\". Line \"c = 3.665 × 10⁻⁴ ÷ 0.02000 = 0.0183 mol/L\" (\"20.00 mL\" underlined). On \"litre\" line \"0.018325 × 35.45 = 0.650 g/L\" (answers bright; \"M(Cl)\" underlined). On \"slip\" a chip \"n(Cl⁻) = 2 × n(Ag⁺) → 0.0367 mol/L\" fades in and is crossed (caption \"Ag⁺ : Cl⁻ is 1 : 1\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"Wastewater from a pickling factory has a pH of 3.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Wastewater from a pickling factory has",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"Wastewater from a pickling factory has a pH of 3. A student determines its chloride concentration by Mohr titration with standard silver nitrate solution and potassium chromate indicator, without adjusting the pH. (a) Explain the effect on the calculated chloride concentration. (b) Suggest one change to the method that would correct this.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "chromate / high / seven or eight",
+      "motionPurpose": "On the spoken cues: On \"chromate\" \"pH of 3\" is underlined; a mini inset: orange H⁺ dots turn yellow chromate dots into \"Cr₂O₇²⁻\". On \"high\" \"potassium chromate indicator\" and \"calculated chloride concentration\" are underlined; chips \"late endpoint → titre high → Cl⁻ too high\" (bright). The fix chip writes \"neutralise first (e.g. NaHCO₃) to about pH 7 to 8\"; \"without adjusting the pH\" underlined. On \"seven or eight\" (the last cue) a",
+      "motionRole": "explain",
+      "onScreenChange": "card shrinks to the top. On \"chromate\" \"pH of 3\" is underlined; a mini inset: orange H⁺ dots turn yellow chromate dots into \"Cr₂O₇²⁻\". On \"high\" \"potassium chromate indicator\" and \"calculated chloride concentration\" are underlined; chips \"late endpoint → titre high → Cl⁻ too high\" (bright). The fix chip writes \"neutralise first (e.g. NaHCO₃) to about pH 7 to 8\"; \"without adjusting the pH\" underlined. On \"seven or eight\" (the last cue) a chip \"No effect: H⁺ isn't in Ag⁺ + Cl⁻ → AgCl\" fades in and is crossed (caption \"acid changes the indicator\"). The sentence that used to carry this idea is cut (learning review 2); the crossed chip and caption keep it. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "handoff",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "Handoff: So silver counts the chloride, and chromate tells you when to stop.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: Memory line 1 returns small at the top. On \"Next\" `m6-analytical-balance-v1.png` appears small at the right with a chip \"Next: gravimetric analysis\".",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Memory line 1 returns small at the top. On \"Next\" `m6-analytical-balance-v1.png` appears small at the right with a chip \"Next: gravimetric analysis\". Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c01-learning-review.md",
+      "sha256": "3cc10cc17e3b83b03a5e5ac290c5df19864d1f258c4628fdfb018d2e282ba467"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c01-claude-science-check.md",
+      "sha256": "424592d81556542f15c3d2abfe263da6f317c71f24c2ba59ca56253129fc4703"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

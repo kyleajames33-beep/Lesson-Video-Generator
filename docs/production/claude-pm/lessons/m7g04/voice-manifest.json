@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-G04-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7g04/lesson.json",
+  "lessonSha256": "2717160ce8f31b1b75ea63f20bf9330bd55ef70ab523cabef0b0f55a0b9eb646",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7g04/lesson.production-brief.json",
+    "sha256": "743e6ba7d93f1c0e2fcdf287b7375ba8b9701db31102b0aa2df0a234c5b35f8f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Polymer questions usually come in four shapes. Draw a chain from a monomer. Find the monomers from a chain. Decide whether it formed by addition or condensation. And explain a property. Each one starts with the same move: find the backbone, the line of atoms that runs through the brackets. Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.",
+      "hash": "8d6c76e8773a",
+      "textSha256": "8d6c76e8773ab023829163baa88e62eada577ab6be17320c9e2171a7948979aa",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/hook.8d6c76e8773a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/hook.8d6c76e8773a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/hook.8d6c76e8773a.generation.json",
+      "plannedRequestSha256": "42ea31efa496ee29be0dd2f020c4c68c7aa1cb23e4fa956cf1b89ac0fc58b320"
+    },
+    {
+      "id": "q1-question",
+      "parentSceneId": "q1-question",
+      "text": "Question one. But one ene forms an addition polymer that's used to make hot water pipes. Draw a section of this polymer showing three repeat units, and circle one repeat unit. Pause here to answer.",
+      "hash": "0401a7e15a55",
+      "textSha256": "0401a7e15a555a1140cf84162203989975f9cb9850dcc06156b381257dd4738c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-question.0401a7e15a55.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-question.0401a7e15a55.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-question.0401a7e15a55.generation.json",
+      "plannedRequestSha256": "ff48e1be34237aa65c011f3c7c82e05e65397c92e1534aa1e54bee5454cfca3e"
+    },
+    {
+      "id": "q1-backbone",
+      "parentSceneId": "q1-backbone",
+      "text": "Start with the double bond. In addition, only its two carbons join the backbone, and everything else hangs off the side. In but one ene, the double bond is between carbons one and two. So carbon one becomes a C H two in the chain. Carbon two becomes a C H, with the rest of the molecule, an ethyl group, C H two C H three, hanging off it.",
+      "hash": "f62e042d55f1",
+      "textSha256": "f62e042d55f161503a30e286e436f6a87137f56d3cb376dfd3283f5a93be20fc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-backbone.f62e042d55f1.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-backbone.f62e042d55f1.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-backbone.f62e042d55f1.generation.json",
+      "plannedRequestSha256": "85f36eccc777bd0a3bce91d8550cfb617194d533e1b28802028c512576f1bf49"
+    },
+    {
+      "id": "q1-section",
+      "parentSceneId": "q1-section",
+      "text": "Now join three of them, head to tail. C H two, then C H with its ethyl, three times over, with a continuation bond at each end. Circle any two neighbouring backbone carbons that carry one ethyl group. That's one repeat unit. Then check it. Three units means three ethyl groups and six backbone carbons, and every carbon has four bonds.",
+      "hash": "a87c6f19cd7b",
+      "textSha256": "a87c6f19cd7b1fa750fde6555244d86d05dbd6493a7eadf8dfc87243c7a7d5af",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-section.a87c6f19cd7b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-section.a87c6f19cd7b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-section.a87c6f19cd7b.generation.json",
+      "plannedRequestSha256": "7feb3028aa5dd8ac9338037ce9f99fc8b58b829bfa720a96f33b06cb703cfebf"
+    },
+    {
+      "id": "q1-mistake",
+      "parentSceneId": "q1-mistake",
+      "text": "The classic mistake is putting all four carbons into the chain: C H two, C H two, C H two, C H two. That's just polyethylene. Only the double bond opens, so the ethyl group can't join the backbone.",
+      "hash": "606b8f2798f4",
+      "textSha256": "606b8f2798f4a46569027e2fd5fbc710e6081c752fde6825f6b35f97be3c2ad3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-mistake.606b8f2798f4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-mistake.606b8f2798f4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q1-mistake.606b8f2798f4.generation.json",
+      "plannedRequestSha256": "2e282797b699465a8ca99c7ca3d6dd50b55a6ce9dcced770ce696a2efe2f44b1"
+    },
+    {
+      "id": "q2-question",
+      "parentSceneId": "q2-question",
+      "text": "Question two. A section of a polymer used in carpet fibres is shown. Identify the type of polymer. Then draw and name its monomers. Pause here to answer.",
+      "hash": "699a6024b138",
+      "textSha256": "699a6024b1380dd42da62f90e7092715acd1660ed86cd2d9694194fb45bcdb72",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-question.699a6024b138.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-question.699a6024b138.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-question.699a6024b138.generation.json",
+      "plannedRequestSha256": "80666723411124fc95ac6fcac6cd58ba2c347fefff9e4459fb5bccee9d3d47e3"
+    },
+    {
+      "id": "q2-links",
+      "parentSceneId": "q2-links",
+      "text": "First, find the backbone. It runs through oxygens and C double bond O groups, so this is not all carbon. Each oxygen next to a C double bond O is an ester link. So it's a polyester, a condensation polymer. The pattern repeats after one ring and one three carbon chain, so that's the repeat unit. A section can start partway through a unit, so don't just bracket whatever is drawn at the ends.",
+      "hash": "48c560166298",
+      "textSha256": "48c56016629810a4af07bb8b9f60c36118060ea52a211297c3e7cb71cd856715",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-links.48c560166298.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-links.48c560166298.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-links.48c560166298.generation.json",
+      "plannedRequestSha256": "643363e2eb56f9c0711b47617751350e73e43fe0e4f3a9e568d0a05e8637199a"
+    },
+    {
+      "id": "q2-water",
+      "parentSceneId": "q2-water",
+      "text": "Now add the water back, at every ester link. Cut between the C double bond O carbon and the oxygen. Put O H on the C double bond O side, and H on the oxygen side. That gives H O, three C H twos, O H: propane one three diol. And the ring with a carboxyl group on each side: benzene one four dicarboxylic acid, the same acid that's in PET. Check: each monomer has a reactive group at both ends, so each can link twice.",
+      "hash": "ae8d0ba73794",
+      "textSha256": "ae8d0ba73794767fd50a9f86e73576db228f85b8a9f9358c6fba53e345ddfda1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-water.ae8d0ba73794.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-water.ae8d0ba73794.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-water.ae8d0ba73794.generation.json",
+      "plannedRequestSha256": "797d669c02b57f700600055e4d88dd4b1f62e7b28df7468be9d5a5d13ad7c906"
+    },
+    {
+      "id": "q2-mistake",
+      "parentSceneId": "q2-mistake",
+      "text": "The classic mistake is cutting just one link, and calling what's left a monomer. That molecule still has an ester link inside it. Every link was made by losing water, so every link gets its water back.",
+      "hash": "266fc09579eb",
+      "textSha256": "266fc09579eb6db65fbfbebc96dbb839ed1ba246cdf03d1b2bec4865bf28f970",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-mistake.266fc09579eb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-mistake.266fc09579eb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q2-mistake.266fc09579eb.generation.json",
+      "plannedRequestSha256": "4ddab3dc7a99bbb739e11c4ce473fefa405b0ac9e6d91d8f40d95b9e73dcc277"
+    },
+    {
+      "id": "q3-question",
+      "parentSceneId": "q3-question",
+      "text": "Question three. The repeat units of two polymers, X and Y, are shown. Y was made directly from a hydroxy acid, with water released. Classify each one as an addition polymer or a condensation polymer, and justify each classification. Then draw the monomer of each polymer. Pause here to answer.",
+      "hash": "8d56c7549465",
+      "textSha256": "8d56c75494657fbbbbc4eac7cf175d6adc99ace92c141f97430fdb8b57018365",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-question.8d56c7549465.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-question.8d56c7549465.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-question.8d56c7549465.generation.json",
+      "plannedRequestSha256": "684d04f5c9a886fc61ac9bb723097cf9a35e855d448936697e9729d8951f8b95"
+    },
+    {
+      "id": "q3-x",
+      "parentSceneId": "q3-x",
+      "text": "Start with X. It has an ester group, but don't stop there. Look along the backbone, through the brackets. It's just two carbons, joined by a C C single bond. The ester group hangs off the side. So X is an addition polymer. To get its monomer, put the double bond back between those two carbons, and add no hydrogens. That's the monomer of Perspex.",
+      "hash": "39552bf676f5",
+      "textSha256": "39552bf676f55697b425f7430513d9b7e8eba0c673d93ce0cd2a0e612c218b1f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-x.39552bf676f5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-x.39552bf676f5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-x.39552bf676f5.generation.json",
+      "plannedRequestSha256": "3f2323d970824cb9cea70f6c66fb8bf64e6eb46baa2f57706e57b890a41a2d9f"
+    },
+    {
+      "id": "q3-y",
+      "parentSceneId": "q3-y",
+      "text": "Now Y. Its backbone runs through an oxygen and a C double bond O. That's an ester link in the chain, so Y is a polyester. The question says water was released as its molecules joined, so that route is condensation. Add the water back: H on the oxygen, and O H on the C double bond O. That gives one molecule with an O H at one end and a carboxyl group at the other. It's lactic acid. One monomer is enough here, because it carries a reactive group at each end.",
+      "hash": "4556c1f4bf26",
+      "textSha256": "4556c1f4bf26925f62d6906d205410fe08839a6cf58899b6b5fccb08471d2f47",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-y.4556c1f4bf26.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-y.4556c1f4bf26.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-y.4556c1f4bf26.generation.json",
+      "plannedRequestSha256": "ddf2f9735716ce804a2ff4a1f6c4ab0b736a13820eeb6ea34fd147980bc5c6a8"
+    },
+    {
+      "id": "q3-mistake",
+      "parentSceneId": "q3-mistake",
+      "text": "The classic mistake is calling X a polyester because it contains an ester group. Where the group sits is what counts. Look for ester links in the backbone, then use the stated reaction.",
+      "hash": "7f08f53139cb",
+      "textSha256": "7f08f53139cb971d71dc49faa84837b11180250d3b072da22d374202608cb312",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-mistake.7f08f53139cb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-mistake.7f08f53139cb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q3-mistake.7f08f53139cb.generation.json",
+      "plannedRequestSha256": "9df619941885c181818e942576db6968358309aef6c53a7614d207ca1f2acc3e"
+    },
+    {
+      "id": "q4-question",
+      "parentSceneId": "q4-question",
+      "text": "Question four. Nylon six six melts at about two hundred and sixty five degrees. Polyester P melts at about sixty degrees. Their repeat units are shown. Explain the difference in their melting points, with reference to the structures of the two polymers. Pause here to answer.",
+      "hash": "2eb17b9bcfc6",
+      "textSha256": "2eb17b9bcfc6d20ad45f9026f751777646f4a1d4b8f84a988ace1c8a425981db",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-question.2eb17b9bcfc6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-question.2eb17b9bcfc6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-question.2eb17b9bcfc6.generation.json",
+      "plannedRequestSha256": "dae60a5878c40436665ea63b45cf644c868c44111688fc0f3df7471860d11bb6"
+    },
+    {
+      "id": "q4-compare",
+      "parentSceneId": "q4-compare",
+      "text": "Compare like with like. Line up the two repeat units. Each has six C H twos, then four C H twos, and two C double bond O groups, so they have the same carbon skeleton, a fair comparison of their links. There's one difference. Where nylon has N H, polyester P has just an oxygen.",
+      "hash": "3273e3d43e19",
+      "textSha256": "3273e3d43e1956e71f988035faf49385d27c3ef94c631561878ce5f1a0ebd4ed",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-compare.3273e3d43e19.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-compare.3273e3d43e19.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-compare.3273e3d43e19.generation.json",
+      "plannedRequestSha256": "ff981bae5efa7315255beffd345a37b291e222cdea6801610f651750a1ff5481"
+    },
+    {
+      "id": "q4-forces",
+      "parentSceneId": "q4-forces",
+      "text": "That N H is the key. It can form a hydrogen bond with a C double bond O on the next chain, all along the chains. Polyester P has C double bond O groups too, but no H on an oxygen or nitrogen, so its chains can't hydrogen bond to each other. They're held by weaker dipole dipole and dispersion forces. To melt, the chains have to separate enough to slide past each other. Nylon's hydrogen bonds take more energy to overcome, which is an important reason it melts higher.",
+      "hash": "4fe752582967",
+      "textSha256": "4fe752582967966c93f6fe318f5441f15b93736ca04694f84f2cf03ad78fa75c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-forces.4fe752582967.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-forces.4fe752582967.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-forces.4fe752582967.generation.json",
+      "plannedRequestSha256": "fb4d9dabae25110e6908f8b2c519bb6358a90ca7946b44db8d18c934408d7235"
+    },
+    {
+      "id": "q4-mistake",
+      "parentSceneId": "q4-mistake",
+      "text": "The classic mistake is saying the amide bonds are stronger than ester bonds, so they take more energy to break. Melting doesn't break either link. It only overcomes the forces between the chains.",
+      "hash": "0fffeab9a0e0",
+      "textSha256": "0fffeab9a0e0dc07511fce3b82eef1304f5e1cfda2870f82576dfe4228e03c3e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-mistake.0fffeab9a0e0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-mistake.0fffeab9a0e0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/q4-mistake.0fffeab9a0e0.generation.json",
+      "plannedRequestSha256": "cc3144bc70960ac9eafa027af2459a147f5763bafdc7b34c59b8feb63aa91849"
+    },
+    {
+      "id": "decision-board",
+      "parentSceneId": "decision-board",
+      "text": "So here's how to start the alkene and acid polymer questions we've practised. First, find the backbone, through the brackets. If it's all carbon, as with an alkene, it's addition: open the double bond to draw it, or put it back to find the monomer, with no extra hydrogens. If it has ester or amide links, it's condensation: take the water out to draw it, or add the water back at every link. Then for a property, compare what holds the chains together, and trace that to the use.",
+      "hash": "b4339018c0ba",
+      "textSha256": "b4339018c0ba9064a0fde621cb37d3f7a06286ea87747a6b87f32c38ff155ffe",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/decision-board.b4339018c0ba.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/decision-board.b4339018c0ba.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/decision-board.b4339018c0ba.generation.json",
+      "plannedRequestSha256": "c7d30adcd44aff00b475b91b686074dbe762b53544ae282c8f32c9d8dcd9e00a"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-G04-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

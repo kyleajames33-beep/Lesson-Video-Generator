@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7p05b/measured/lesson.json",
+    "lessonSha256": "56f0bacc62d7cb99d05ef10e250121064f465c73099693aa105ad7b56a71146b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "b11 (selective toxicity: a useful drug harms the pathogen much more than the host, often by hitting a part the pathogen has and we lack; the cell wall and ribosome targets; kill against stop-growth; resistance is selected; effectiveness is judged from clinical evidence); p02 (agar plates, aseptic technique, spreading 0.1 mL with a sterile spreader, label the base, tape with two strips, incubate upside down at 25 to 30 °C, never 37 °C, never opened, autoclave; risk group 1; VRA cards); s07 (in Biology after p02: validity, reliability, accuracy as three questions; word, feature, fix; repeats help reliability). Year 11 Module 2 (diffusion: net movement from high to low concentration). Not assumed: zone of inhibition, disc diffusion, breakpoints.",
+    "startsWith": "Set up safe controlled agar comparisons. The video opens: A student put four paper discs on a plate spread with bacteria. Two days later, around disc A, a clear zone twenty five millimetres across. Around disc B, fifteen.",
+    "stopsAfter": "explaining how a zone of inhibition forms; stating the aim, variables, negative control and replicates; preparing a lawn and placing discs; recalling safe incubation; measuring zones through the base; reading the results and judging reliability; explaining what zone size depends on; explaining why a zone does not show clinical effectiveness; judging validity, reliability and accuracy; writing the risk assessment; assessing a treatment claim from zone data and fixing a flawed method.",
+    "nextLesson": "how controlling mosquitoes can stop disease spreading (route entry bio-m7-b12)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m7-p05.md"
+  ],
+  "teaching": {
+    "task": "Three antibiotic discs on one plate: one clears a big zone, one a small zone, one nothing. Is the biggest zone the best medicine, and is the third drug useless? How do you run a safe, fair disc test, and what can its zones really tell you?",
+    "causalExplanation": "(1) the puzzle; (2) a disc's drug diffuses out, so it is strongest near the disc; where it is strong enough the bacteria can't grow, giving a clear zone; beyond the edge it is too dilute (the zone's edge is where the drug just stops growth); (3) aim and variables; (4) the blank control shows the disc and water alone don't stop growth; three plates with rotated positions so one plate or spot can't decide it; (5) a lawn needs an even spread; discs spaced so zones don't overlap, pressed to touch the agar so the drug can diffuse; (6) tape, invert, 25 to 30 °C, never opened (recall); (7) measure through the base, twice at right angles; no zone recorded as 6 mm; (8) results, means, reliability, the blank's meaning; (9) zone size also depends on dose and diffusion, and on whether the bacterium has the target; (10) a plate is not a patient; the narrow conclusion; (11) VRA; (12) risk; attempts; decision rule and handoff; key notes.",
+    "conversationalApproach": "a student puts discs on a plate of bacteria and two days later disc A has a 25 millimetre clear zone, B 15 and C nothing, so the practical asks whether A is the best medicine and C useless, and what a zone of inhibition can and can't show. Each disc holds a measured dose that diffuses outwards, strongest near the disc, and where it is strong enough to stop growth the agar stays clear: the zone of inhibition. The aim compares three antibiotic discs on one harmless bacterium, with the antibiotic as the independent variable, zone diameter as the dependent variable and everything else kept the same, plus a sterile-water blank disc as the negative control and three plates with the discs in different positions. The teacher supplies an approved culture spread as a lawn, discs go on with sterile forceps well apart, and the plate is closed, labelled, inverted and incubated at 25 to 30 degrees, never 37, with the lid kept shut and zones measured through the base. The results show A larger than B with close repeats and no zone for the blank, but zone size also depends on dose and on how far the drug diffuses, and a plate isn't a patient, so the claim stays narrow. Validity, reliability and accuracy each get their plain question, and the risk assessment keeps cultured plates closed. Two exam questions follow with brief feedback.",
+    "openingDecision": "A student put four paper discs on a plate spread with bacteria. Two days later, around disc A, a clear zone twenty five millimetres across. Around disc B, fifteen. Around disc C, nothing. So is A the best medicine, and is C useless? The plate can't tell you either.",
+    "understandingCheck": "(A1, assess, 3 marks) Discs P and Q (6 mm), a harmless bacterium, 48 h at 28 °C; mean zones P 22 mm, Q 13 mm, sterile water disc 6 mm; her conclusion \"P would be the more effective treatment for an infection in people\". Answer: judgement (only partly supported, or not supported as a treatment claim); evidence (P's 22 mm against Q's 13 mm and the 6 mm control: P produced a larger clear zone than Q under these conditions, and the paper and water alone produced none); reason the claim overreaches (zone size also depends on dose and diffusion; treatment depends on reaching the infection safely and on the actual pathogen, shown by clinical trials). Crossed mistake: \"biggest zone = best medicine\". (A2, identify and propose, 4 marks) Antiseptic X disc soaked 1 min, antiseptic Y disc soaked 10 min, one plate, 37 °C, lid removed to measure. Answer: any two problems with a fix that removes each: unequal soaking (equal time, or the same measured volume on each disc); lid removed (keep taped, measure through the base); 37 °C (25 to 30 °C); one plate and no control (three plates, a blank disc dipped in sterile water). Feedback voices soaking and the lid, names the other two in one sentence. Crossed mistake: \"be more careful when opening the lid\" (the plate should not be opened at all; the fix does not remove the exposure). Antiseptics are used in A2 (not antibiotics) so the item is unseen in substance as well as numbers; the method skills are the same. The card says \"antiseptic solutions\", so no pharmaceutical claim is made.",
+    "curriculumScope": "Syllabus (NSW Biology Stage 6, 2017), as printed: \"investigate and assess the effectiveness of pharmaceuticals as treatment strategies for the control of infectious disease, for example:; antivirals; antibiotics\" this video prepares students to plan, run and interpret a disc-diffusion test; watching it is not doing it. It teaches: what a zone of inhibition is and why it forms (the drug diffuses out and thins with distance); the aim and variables; the negative control and three plates; preparing a lawn of a supplied harmless culture; placing and spacing discs; closing the lid as the school procedure directs, inverting and incubating at 25 to 30 °C (recalled from p02 in one sentence); measuring the zone through the base, twice at right angles; reading the results table and means; what zone size depends on besides how active the drug is (dose, diffusion, whether the bacterium has the drug's target); why a plate is not a patient (reaching the infection, safety, the actual pathogen, clinical trials); validity, reliability and accuracy; the risk assessment (contamination, closed plates, antibiotic allergy, autoclaving). Not re-taught: selective toxicity and drug targets (b11; one clause in scene 9, \"the part C targets\"); clinical trials as evidence (b11 scene 10; one clause in scene 10); serial dilution, aseptic technique, labelling, taping and inverting, and 25 to 30 °C (p02; one sentence in scene 6, one gloss in scene 5); resistance by selection (b11; a silent tag in scene 8). Not here: standardised clinical susceptibility testing (Mueller-Hinton agar, McFarland standard, breakpoint tables: author note only, one grey tag in scene 9); antivirals (they cannot be tested on bacterial agar; one grey tag in scene 2, as b11 taught); minimum inhibitory concentration; resistance mechanisms (b11)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: the antibiotic violet (the independent variable); zone diameters amber (the dependent variable); the control green; \"on this plate\" teal and \"as a medicine\" terracotta, kept apart wherever both appear; hazards terracotta; grey for tags and callbacks. Clutter rule: at most three bright text items; every tag dims when its sentence ends. All incubated plates on screen are lidded and taped; no lid lifts after incubation, ever. Reuse: the explainer kit (`Plate`, `Callout`, `Mark`, `Countdown`, `HandText`, `DrawPath`, `scribbleEllipse`, `Enter`); B6a's `WrongChip`, `GreyTag`, `Cross`, `Cam`; bio-m7-p02's step rail, variables card, VRA cards, risk table and claim card (lesson-local there; root to decide copy or lift, as p02's open decision). New coded items (lesson-local): the diffusion halo (a coded radial gradient of small amber dots, dense at the disc and thinning outward, with a dashed ring at the \"just enough to stop growth\" level, laid over the painted zones plate), the ruler readout (coded mm numerals and two perpendicular measurement lines over the painted ruler; numerals only, no coded ruler body), the zone table (four rows, three plates and a mean), and the depends-on fan (four short spokes from a zone thumbnail: \"how active the drug is\", \"dose in disc\", \"how far it diffuses\", \"target present?\"). No human figures.",
+    "transitionPlan": "The lidded zones plate fills the centre with violet disc chips as a ruler reads each zone; the step rail lights its stages in turn as the disc cartridge plate appears and the camera eases in on disc A while a diffusion halo builds to a dashed zone edge; the variables card writes one row per cue and a green negative control row lights the blank chip; three plates rotate their disc positions; the spreader and clear plate set up the lawn and the discs drop into place with spacing tags; the plate gains a base label and tape strips, flips and goes into the incubator plate beside a 28 degree dial as a 37 degree chip is crossed; the base view of plate 3 shows the ruler plate reading across disc A and again after a quarter turn; the zone table writes row by row with its means; the claim card writes its teal column for what the plate shows and its terracotta column for what a medicine needs, with the tissue plate small; the three quality cards write in turn; the risk header and rows write; each attempt clears the board with its question card, and its feedback underlines the givens as the answer box or problem table fills and a crossed trap lands; the plan card writes each line on its words; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-disc-plate-zones-v1.png` (new) fills the centre, lidded and taped; small violet chips \"A\", \"B\", \"C\", \"blank\" sit beside the discs (the blank chip grey and unexplained until scene 4).",
+      "teachingReason": "Hook (three discs): A student put four paper discs on a plate spread with bacteria.",
+      "narrationCue": "nothing / either",
+      "motionPurpose": "On the spoken cues: On \"twenty five millimetres\" a thin amber diameter line draws across A's zone with the chip \"25 mm\"; on \"fifteen\" the same on B, \"15 mm\"; on \"nothing\" a grey ring around C, \"no zone\". Grey corner tag: \"example data\". On \"best medicine\" a terracotta chip writes over A: \"biggest zone = best medicine?\"; on \"useless\" another over C: \"no zone = useless?\". On \"either\" both take a grey scribble cross. The question writes",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-disc-plate-zones-v1.png` (new) fills the centre, lidded and taped; small violet chips \"A\", \"B\", \"C\", \"blank\" sit beside the discs (the blank chip grey and unexplained until scene 4). On \"twenty five millimetres\" a thin amber diameter line draws across A's zone with the chip \"25 mm\"; on \"fifteen\" the same on B, \"15 mm\"; on \"nothing\" a grey ring around C, \"no zone\". Grey corner tag: \"example data\". On \"best medicine\" a terracotta chip writes over A: \"biggest zone = best medicine?\"; on \"useless\" another over C: \"no zone = useless?\". On \"either\" both take a grey scribble cross. The question writes at the top left: \"What can a zone tell you?\" Bright at the end: the two crossed chips and the question. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "what-a-zone-is",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"1 what a zone is\".",
+      "teachingReason": "What a zone is: Each disc holds a measured dose of an antibiotic.",
+      "narrationCue": "diffuses / zone of inhibition",
+      "motionPurpose": "On the spoken cues: On \"measured dose\" `m7-antibiotic-disc-cartridge-v1.png` (new) appears small at the left (tag \"commercial discs: fixed dose, printed by the supplier\"). On \"diffuses\" the camera eases in on disc A of the zones plate and the diffusion halo builds: amber dots stream out from the disc, dense near it and thinning outward (gloss \"diffuses: spreads from high to low concentration (Year 11)\"). On \"strong enough\" a dashed",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"1 what a zone is\". On \"measured dose\" `m7-antibiotic-disc-cartridge-v1.png` (new) appears small at the left (tag \"commercial discs: fixed dose, printed by the supplier\"). On \"diffuses\" the camera eases in on disc A of the zones plate and the diffusion halo builds: amber dots stream out from the disc, dense near it and thinning outward (gloss \"diffuses: spreads from high to low concentration (Year 11)\"). On \"strong enough\" a dashed ring draws at the zone's edge (tag \"just enough drug to stop growth\"). On \"zone of inhibition\" the gloss writes: \"zone of inhibition: the clear ring where the drug stopped growth\". On \"too dilute\" the dots fade to a few beyond the ring and a grey tag points at the cloudy lawn: \"too little drug: bacteria grow\". A small grey tag writes silently in the corner: \"antivirals can't be tested this way: viruses need living cells (antibiotics video)\". Bright at the end: the gloss, the dashed ring and its tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "aim-variables",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"2 plan\".",
+      "teachingReason": "Aim and variables: The aim is to compare the zones of inhibition that three antibiotic discs produce on one harmless bacterium.",
+      "narrationCue": "antibiotic / diameter / same",
+      "motionPurpose": "On the spoken cues: Right zone: the variables card. On \"aim\" the aim line writes: \"Aim: compare the zones of inhibition that discs A, B and C produce on one harmless bacterium\". On \"antibiotic\" row 1 writes violet, \"independent: the antibiotic in the disc (A, B, C)\", with a pen link to the cartridge. On \"diameter\" row 2 writes amber, \"dependent: zone diameter (mm)\", with a small amber diameter line on a zone thumbnail. On \"same\" row 3",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"2 plan\". Right zone: the variables card. On \"aim\" the aim line writes: \"Aim: compare the zones of inhibition that discs A, B and C produce on one harmless bacterium\". On \"antibiotic\" row 1 writes violet, \"independent: the antibiotic in the disc (A, B, C)\", with a pen link to the cartridge. On \"diameter\" row 2 writes amber, \"dependent: zone diameter (mm)\", with a small amber diameter line on a zone thumbnail. On \"same\" row 3 opens green and lists one item per spoken phrase: \"same culture, 0.1 mL spread\", \"same agar batch and depth\", \"6 mm discs, same supplier\", \"28 °C for 48 h\"; one silent row: \"discs 2 cm apart, same measuring method\". On \"depth\" a grey tag beside that row: \"thinner agar lets the drug spread further\". Bright at the end: the three row headings. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "control-repeats",
+      "visualDecision": "new",
+      "visualReference": "right zone: the card's fourth row writes green, \"negative control: blank disc + sterile water → expect no zone\".",
+      "teachingReason": "The control and repeats: You also need a negative control: a blank disc dipped in sterile water.",
+      "narrationCue": "negative control / three",
+      "motionPurpose": "On the spoken cues: On \"negative control\" the \"blank\" chip on the zones plate lights green and a grey ring circles its disc (gloss \"negative control: same handling, no antibiotic\"). On \"three\" the zones plate shrinks and copies into a row of three, rotated 0°, 90° and 180° (uniform rotation, never stretched), the chips A, B, C and blank following their discs so each sits in a different corner on each plate (tag \"3 plates, positions",
+      "motionRole": "explain",
+      "onScreenChange": "right zone: the card's fourth row writes green, \"negative control: blank disc + sterile water → expect no zone\". On \"negative control\" the \"blank\" chip on the zones plate lights green and a grey ring circles its disc (gloss \"negative control: same handling, no antibiotic\"). On \"three\" the zones plate shrinks and copies into a row of three, rotated 0°, 90° and 180° (uniform rotation, never stretched), the chips A, B, C and blank following their discs so each sits in a different corner on each plate (tag \"3 plates, positions rotated\"). A chip \"the blank disc is a waste\" fades in and takes a grey cross. Bright at the end: the control row, the gloss and the rotation tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "lawn-discs",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"3 set up\".",
+      "teachingReason": "Lawn and discs: Your teacher supplies an approved harmless culture.",
+      "narrationCue": "lawn / overlap",
+      "motionPurpose": "On the spoken cues: Centre: `m6-micropipette-spreader-v1.png` (the capped tube tagged \"approved teaching culture\") and `m7-plate-clear-v1.png`. On \"point one of a millilitre\" a coded drop leaves the micropipette tip onto the plate and the spreader slides across it in a coded arc (tag \"0.1 mL, spread evenly\"); a grey tag \"aseptic technique, as in the water testing practical\" writes and dims. On \"lawn\" the gloss writes: \"lawn: an even",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"3 set up\". Centre: `m6-micropipette-spreader-v1.png` (the capped tube tagged \"approved teaching culture\") and `m7-plate-clear-v1.png`. On \"point one of a millilitre\" a coded drop leaves the micropipette tip onto the plate and the spreader slides across it in a coded arc (tag \"0.1 mL, spread evenly\"); a grey tag \"aseptic technique, as in the water testing practical\" writes and dims. On \"lawn\" the gloss writes: \"lawn: an even layer of bacteria covering the agar\" with a small `m7-plate-lawn-v1.png` thumbnail labelled \"after incubation\". On \"sterile forceps\" `b3b-forceps-v1.png` appears beside the plate (rotated to lie at an angle, uniform scale) and four coded white discs slide one by one from the cartridge to the plate's quadrants; the plate crossfades to `m7-disc-plate-fresh-v1.png` (new; the same dish with four discs on clear agar). On \"two centimetres apart\" two coded spacing brackets draw between neighbouring discs and from one disc to the rim (\"≥ 2 cm\"). On \"overlap\" two faint coded dashed circles grow from two discs placed too close in a small grey inset and merge (tag \"zones too close merge: can't measure\"); the inset fades. As the last disc lands (silent) a small coded down-arrow taps each disc in turn (tag \"contact lets the drug diffuse in\"). Bright at the end: the lawn gloss, the spacing brackets and the contact tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "Enter slide",
+        "Plate crossfade",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "incubate",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"4 incubate safely\".",
+      "teachingReason": "Close, invert, incubate: Then follow your school's procedure, as in the water testing practical: label the base, close the lid securely, and incubate upside down at twenty five to thirty degrees for two days, never thirty seven.",
+      "narrationCue": "shut",
+      "motionPurpose": "On the spoken cues: The fresh disc plate gains a coded marker line on its base rim and two coded tape strips across the rim at opposite sides (tag \"secure the lid as your school procedure directs\"; the strips only show the lid held closed, and nothing on screen or in narration names them as the NSW or required method); it flips in a coded rotation (discs stay stuck; tag \"discs stay on: pressed into the agar\") and `m7-incubator-v1.png`",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"4 incubate safely\". The fresh disc plate gains a coded marker line on its base rim and two coded tape strips across the rim at opposite sides (tag \"secure the lid as your school procedure directs\"; the strips only show the lid held closed, and nothing on screen or in narration names them as the NSW or required method); it flips in a coded rotation (discs stay stuck; tag \"discs stay on: pressed into the agar\") and `m7-incubator-v1.png` appears with the stack inside; a coded dial reads \"28 °C\" with the band \"25 to 30 °C\" green; a terracotta chip \"37 °C\" takes a grey cross (caption \"body temperature favours microbes adapted to us\"). A grey tag \"the water testing practical\" sits under the chips. On \"shut\" a coded padlock glyph closes over the plate stack and a terracotta line writes: \"never opened after incubation\". Bright at the end: the 25 to 30 °C band, the crossed 37 °C and the \"never opened\" line. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "measure",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"5 measure\".",
+      "teachingReason": "Measure through the base: To measure, turn the plate over and lay a ruler across the base, through the centre of the disc.",
+      "narrationCue": "base / average",
+      "motionPurpose": "On the spoken cues: Centre: plate 3 of the rotated set (grey tag \"plate 3\"), base up (the painted plate mirrored horizontally to show the base view: a mirror is a uniform transform, never a stretch; the chips follow), still taped. On \"base\" `m7-ruler-clear-v1.png` (new) slides across disc A's zone through its centre; the ruler readout writes coded mm numerals and two amber end ticks at the zone edges, \"24 mm\". On \"average\" the ruler",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"5 measure\". Centre: plate 3 of the rotated set (grey tag \"plate 3\"), base up (the painted plate mirrored horizontally to show the base view: a mirror is a uniform transform, never a stretch; the chips follow), still taped. On \"base\" `m7-ruler-clear-v1.png` (new) slides across disc A's zone through its centre; the ruler readout writes coded mm numerals and two amber end ticks at the zone edges, \"24 mm\". On \"average\" the ruler rotates 90° about the disc centre and reads \"26 mm\"; a small line writes \"(24 + 26) ÷ 2 = 25 mm\" (amber). On \"six millimetres\" the ruler moves to disc C; its end ticks sit at the disc's own edges, \"6 mm = disc only\" (grey). A chip \"open the lid to see better\" fades in and takes a grey cross (caption \"measure through the base, lid on\"). Bright at the end: the 25 mm line, the 6 mm tag and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "tick",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "results",
+      "visualDecision": "new",
+      "visualReference": "right zone: the zone table writes, columns \"disc | plate 1 | plate 2 | plate 3 | mean (mm)\": on \"twenty four, twenty six and twenty five\" row \"A | 24 | 26 | 25 |\" and on \"twenty five\" \"(24 + 26 + 25) ÷ 3 = 25\" in the mean cell (amber); then silently, one per beat: \"B | 15 | 14 | 16 | 15\"; \"C | 6 | 6 | 6 | 6\"; \"blank | 6 | 6 | 6 | 6\" (green outline on the blank row).",
+      "teachingReason": "The results: Here are the results.",
+      "narrationCue": "twenty five / agree / zones",
+      "motionPurpose": "On the spoken cues: Corner tag \"example data\". The three rotated plates stand small in the centre. On \"agree\" a small bracket over A's row \"spread 2 mm\" and over B's \"spread 2 mm\"; a grey tag \"the gap between A and B (10 mm) is far bigger than the spread\". On \"zones\" the blank row pulses green (tag \"no zone beyond the disc: paper and water didn't cause it\"). A silent grey tag writes low on the bench: \"colonies inside a zone? possibly",
+      "motionRole": "explain",
+      "onScreenChange": "right zone: the zone table writes, columns \"disc | plate 1 | plate 2 | plate 3 | mean (mm)\": on \"twenty four, twenty six and twenty five\" row \"A | 24 | 26 | 25 |\" and on \"twenty five\" \"(24 + 26 + 25) ÷ 3 = 25\" in the mean cell (amber); then silently, one per beat: \"B | 15 | 14 | 16 | 15\"; \"C | 6 | 6 | 6 | 6\"; \"blank | 6 | 6 | 6 | 6\" (green outline on the blank row). Corner tag \"example data\". The three rotated plates stand small in the centre. On \"agree\" a small bracket over A's row \"spread 2 mm\" and over B's \"spread 2 mm\"; a grey tag \"the gap between A and B (10 mm) is far bigger than the spread\". On \"zones\" the blank row pulses green (tag \"no zone beyond the disc: paper and water didn't cause it\"). A silent grey tag writes low on the bench: \"colonies inside a zone? possibly resistant cells: never open or subculture\". Bright at the end: the table's mean column, the spread brackets and the blank row. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "depends-on",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"6 what it shows\".",
+      "teachingReason": "What zone size depends on: So, on this agar, A produced a larger clear zone than B.",
+      "narrationCue": "diffuse / stronger / targets",
+      "motionPurpose": "On the spoken cues: Right zone: the claim card, two columns. On \"on this agar\" the teal column \"on this plate\" writes: \"A: larger clear zone than B (25 mm against 15 mm), these conditions\". Centre: one A-zone thumbnail with the depends-on fan, spokes writing on cue: \"how active the drug is\" (first, on \"how active\"), \"dose in the disc\" (on \"how much drug\"), \"how far it diffuses\" (on \"diffuse\"; a coded pair of halos beside it, labelled",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"6 what it shows\". Right zone: the claim card, two columns. On \"on this agar\" the teal column \"on this plate\" writes: \"A: larger clear zone than B (25 mm against 15 mm), these conditions\". Centre: one A-zone thumbnail with the depends-on fan, spokes writing on cue: \"how active the drug is\" (first, on \"how active\"), \"dose in the disc\" (on \"how much drug\"), \"how far it diffuses\" (on \"diffuse\"; a coded pair of halos beside it, labelled only \"drug 1\" and \"drug 2\", one dot cloud spreading further than the other, tag \"diffusion differs between drugs\"); on \"stronger\" a terracotta chip \"bigger zone = stronger drug\" fades in and takes a grey cross; and on \"targets\" \"target present?\" with b11's `m7-bacterium-wall-burst-v1.png` thumbnail small and a grey tag \"the antibiotics video: each drug hits a target\". The hook's \"no zone = useless?\" chip returns over C and takes a second grey cross. A small grey tag writes silently: \"clinical labs compare each drug with its own cut-off, on standard agar\". Bright at the end: the teal line, the \"how far it diffuses\" spoke and the \"target present?\" spoke. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "plate-not-patient",
+      "visualDecision": "adjust",
+      "visualReference": "the claim card's terracotta column \"as a medicine\" writes: on \"infected tissue\" \"reaches the infection?\" with `m7-healthy-tissue-field-v1.png` small (tag \"tissue, not agar\"); on \"without harming the patient\" \"safe at that dose?\" with `m7-capsule-blister-blank-v1.png` small; on \"pathogen\" \"works on the real pathogen?\" with `m7-bacterium-rod-coccus-v1.png` small (grey tag \"teaching strain ≠ pathogen\"); on \"clinical trials\" a grey chip \"shown by clinical trials (antibiotics video)\".",
+      "teachingReason": "A plate isn't a patient: A plate also isn't a patient.",
+      "narrationCue": "pathogen / narrow",
+      "motionPurpose": "On the spoken cues: On \"narrow\" the teal column's line rewrites as the conclusion: \"A produced a larger clear zone than B, on this agar, under these conditions\", and the hook's \"biggest zone = best medicine?\" chip returns over the zones thumbnail and takes a second grey cross. The memory line writes small under the card: \"Zone shows the plate, not the patient.\" Bright at the end: the conclusion line, the memory line and the crossed",
+      "motionRole": "explain",
+      "onScreenChange": "the claim card's terracotta column \"as a medicine\" writes: on \"infected tissue\" \"reaches the infection?\" with `m7-healthy-tissue-field-v1.png` small (tag \"tissue, not agar\"); on \"without harming the patient\" \"safe at that dose?\" with `m7-capsule-blister-blank-v1.png` small; on \"pathogen\" \"works on the real pathogen?\" with `m7-bacterium-rod-coccus-v1.png` small (grey tag \"teaching strain ≠ pathogen\"); on \"clinical trials\" a grey chip \"shown by clinical trials (antibiotics video)\". On \"narrow\" the teal column's line rewrites as the conclusion: \"A produced a larger clear zone than B, on this agar, under these conditions\", and the hook's \"biggest zone = best medicine?\" chip returns over the zones thumbnail and takes a second grey cross. The memory line writes small under the card: \"Zone shows the plate, not the patient.\" Bright at the end: the conclusion line, the memory line and the crossed chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "validity-reliability",
+      "visualDecision": "new",
+      "visualReference": "step rail lights \"6 what it shows\" still.",
+      "teachingReason": "Validity, reliability and accuracy: Validity: one variable changed, a blank control, and the same lawn, agar and incubation, so it's a fair comparison of the zones these discs make on this bacterium.",
+      "narrationCue": "Validity / Reliability / Accuracy",
+      "motionPurpose": "On the spoken cues: Three cards write in turn in the right zone, each with its plain question (skills-s07's wording) and this practical's answer, the previous card dimming, with apparatus in the centre so the scene is not text alone: \"Validity: measures what was intended? Yes for 'which disc gives the larger clear zone on this agar' (one variable, blank control, same conditions). No for 'which drug is stronger' or 'which is the better",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"6 what it shows\" still. Three cards write in turn in the right zone, each with its plain question (skills-s07's wording) and this practical's answer, the previous card dimming, with apparatus in the centre so the scene is not text alone: \"Validity: measures what was intended? Yes for 'which disc gives the larger clear zone on this agar' (one variable, blank control, same conditions). No for 'which drug is stronger' or 'which is the better medicine'.\" \"Reliability: repeats agree? Three plates: A 24 to 26 mm, B 14 to 16 mm; use the mean.\" (the three rotated plates small in the centre). \"Accuracy: close to the true value? A fuzzy edge and the viewing angle limit where you place the boundary. More readings show agreement, not the true edge.\" (scene 7's ruler readout returns over disc B, with a coded soft-edge bracket \"edge: where exactly?\" on \"fuzzy edge\", and a small grey eye-line glyph tagged \"view from directly above\" on \"viewing angle\"). Footer, small grey, as p02: \"NESA glossary (2017 syllabus), reliability: 'An extent to which repeated observations and/or measurements taken under identical circumstances will yield similar results.'\" Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "NumberTicker"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "risk-assessment",
+      "visualDecision": "adjust",
+      "visualReference": "step rail lights \"7 stay safe\".",
+      "teachingReason": "Risk assessment: The risk assessment.",
+      "narrationCue": "contaminating / allergic / autoclave",
+      "motionPurpose": "On the spoken cues: A grey header line writes on \"approved school procedure\": \"Use only the teaching culture approved in the school's risk assessment. Treat grown plates as potentially contaminated.\" The risk table then shows **only the row being spoken**, \"Hazard / Harm / Control\", in short wording; when the next row writes, the previous row collapses to a one-word grey chip (\"contamination\", \"allergy\") above it. On \"contaminating\"",
+      "motionRole": "explain",
+      "onScreenChange": "step rail lights \"7 stay safe\". A grey header line writes on \"approved school procedure\": \"Use only the teaching culture approved in the school's risk assessment. Treat grown plates as potentially contaminated.\" The risk table then shows **only the row being spoken**, \"Hazard / Harm / Control\", in short wording; when the next row writes, the previous row collapses to a one-word grey chip (\"contamination\", \"allergy\") above it. On \"contaminating\" row 1: \"contaminating microbes, multiplied by incubation\" / \"infection if a plate is opened\" / \"plates closed and inverted, never opened, measured through the base; wash hands\" with the closed zones plate thumbnail. On \"allergic\" row 2: \"antibiotic discs\" / \"allergic reaction\" / \"forceps, not fingers; tell your teacher about any allergy\" with the forceps thumbnail. On \"autoclave\" row 3: \"used plates\" / \"spreading live microbes\" / \"teacher autoclaves before disposal\" with `m6-autoclave-bag-plates-v1.png` (gloss \"autoclave: steam under pressure kills microbes\"). Footer chip: \"follow your school's risk assessment and microbiology procedure\". Ethanol and Bunsen rows are not shown (teacher notes only: neither happens in the method shown). Hold about 2 seconds; the safety points return in key note 5. Hold about 2 seconds; the safety points return in key note 5.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds; the safety points return in key note 5"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. A student tested antibiotic discs P",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed: \"A student tested two antibiotic discs, P and Q, each 6 mm in diameter, on nutrient agar plates spread with a harmless bacterium. She also used a disc dipped in sterile water. After 48 hours at 28 °C, the mean zone of inhibition diameters were: P 22 mm, Q 13 mm, sterile water 6 mm. She concluded: 'Antibiotic P would be a more effective treatment than Q for a bacterial infection in people.' Assess her conclusion. (3 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing: no claim card, no fan.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the question card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "thirteen / diffusion",
+      "motionPurpose": "On the spoken cues: A three-row answer box: on \"thirteen\" \"P 22 mm\", \"Q 13 mm\" and \"sterile water 6 mm\" are underlined and row 1 writes \"Judgement: only partly supported\" with row 2 \"Evidence: P 22 mm against Q 13 mm; control 6 mm, so paper and water alone made no zone: P produced a larger clear zone, under these conditions\" (teal). On \"diffusion\" \"a bacterial infection in people\" is underlined and row 3 writes (terracotta): \"Limit: a",
+      "motionRole": "explain",
+      "onScreenChange": "the question card shrinks to the top. A three-row answer box: on \"thirteen\" \"P 22 mm\", \"Q 13 mm\" and \"sterile water 6 mm\" are underlined and row 1 writes \"Judgement: only partly supported\" with row 2 \"Evidence: P 22 mm against Q 13 mm; control 6 mm, so paper and water alone made no zone: P produced a larger clear zone, under these conditions\" (teal). On \"diffusion\" \"a bacterial infection in people\" is underlined and row 3 writes (terracotta): \"Limit: a larger zone doesn't show a better treatment. Zone size also depends on dose and diffusion; treatment needs the drug to reach the infection safely and work on the real pathogen (clinical trials)\". A chip \"biggest zone = best medicine\" fades in and is crossed (caption \"a plate isn't a patient\"). Grey label \"HSCScience marking guide (illustrative)\". Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed: \"A student compared two antiseptic solutions, X and Y.",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "One more. A student soaked one paper disc",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed: \"A student compared two antiseptic solutions, X and Y. She soaked one paper disc in X for 1 minute and another paper disc in Y for 10 minutes, then placed both discs on a single nutrient agar plate spread with a harmless bacterium. She incubated the plate at 37 °C for 48 hours, then removed the lid to measure each zone of inhibition with a ruler. Identify TWO problems with this method and propose an improvement that fixes each problem. (4 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "One: the soaking times differed, so the discs",
+      "motionPurpose": "On the spoken cues: A two-column table writes: \"problem | improvement that fixes it\". On \"soaking times\" \"for 1 minute\" and \"for 10 minutes\" are underlined and row 1 fills \"unequal soaking → different amounts of antiseptic | same soaking time, or the same measured volume (for example 10 µL) on each disc\". On \"removing the lid\" \"removed the lid\" is underlined and row 2 fills \"lid removed → exposure to unknown growth | keep it closed;",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to the top. A two-column table writes: \"problem | improvement that fixes it\". On \"soaking times\" \"for 1 minute\" and \"for 10 minutes\" are underlined and row 1 fills \"unequal soaking → different amounts of antiseptic | same soaking time, or the same measured volume (for example 10 µL) on each disc\". On \"removing the lid\" \"removed the lid\" is underlined and row 2 fills \"lid removed → exposure to unknown growth | keep it closed; measure through the base\". Then, silently, \"37 °C\" and \"a single ... plate\" are underlined and a grey row writes: \"also: 37 °C → 25 to 30 °C; one plate, no control → three plates and a blank disc\". On \"classic mistake\" a chip \"be more careful opening the lid\" fades in and is crossed (caption \"the fix must remove the exposure\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "new",
+      "visualReference": "the plan card writes, each line lighting on its words: \"1 Lawn of an approved harmless culture (0.1 mL, spread evenly).\"",
+      "teachingReason": "Decision rule and handoff: So: a lawn of an approved harmless culture, discs spaced apart, a blank control and three plates, closed and upside down at twenty five to thirty degrees.",
+      "narrationCue": "Next",
+      "motionPurpose": "On the spoken cues: \"2 Discs ≥ 2 cm apart; blank disc control; three plates, positions rotated.\" \"3 Label the base, close the lid (school procedure), invert, 25 to 30 °C, never opened.\" \"4 Measure through the base, two diameters, mean of three plates.\" \"5 Claim: the larger clear zone, under these conditions; not 'the stronger drug' or 'the better medicine'.\" On \"Next\" a chip \"Next: vector control\" appears.",
+      "motionRole": "explain",
+      "onScreenChange": "the plan card writes, each line lighting on its words: \"1 Lawn of an approved harmless culture (0.1 mL, spread evenly).\" \"2 Discs ≥ 2 cm apart; blank disc control; three plates, positions rotated.\" \"3 Label the base, close the lid (school procedure), invert, 25 to 30 °C, never opened.\" \"4 Measure through the base, two diameters, mean of three plates.\" \"5 Claim: the larger clear zone, under these conditions; not 'the stronger drug' or 'the better medicine'.\" On \"Next\" a chip \"Next: vector control\" appears. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p05b-learning-review.md",
+      "sha256": "cb8f5fa7df0aa6d15c844609f605fb1239de825084e1de7b8b3ccc5ada452582"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p05b-claude-science-check.md",
+      "sha256": "4a3d2b02b658547cfab15eb75d02a37f61d5040469a26a6bc009715f914e48f5"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

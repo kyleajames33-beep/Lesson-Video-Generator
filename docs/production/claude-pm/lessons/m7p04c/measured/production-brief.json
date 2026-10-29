@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7p04c/measured/lesson.json",
+    "lessonSha256": "6ec4959768d21a5c11e524cde72c89e7273da4ab7ac4a26d75d25d9c60c5784b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c08a (class rule, [O], acidified potassium dichromate orange to green, distil for the aldehyde, reflux with excess for the acid, secondary to ketone, tertiary stays orange, the green colour shows oxidation not the product, chromium(VI) hazard stated once). chem-m7-c08b (aldehyde and ketone structures and names; Tollens' silver mirror, Fehling's or Benedict's brick-red, both only with the aldehyde; dichromate test; the flow \"oxidise, distil, test the product\"; Tollens' made fresh). skills-s07 and chem-m7-p03 (validity, reliability, accuracy; word, feature, fix; hazard, harm, control). chem-m7-p01 (the organic waste container; GHS codes on a risk table). chem-m6 (litmus: blue turns red in acid). Year 11: distillation and reflux apparatus from c06 and c08a plates.",
+    "startsWith": "Choose an oxidation and collection method. The video opens: Warm three alcohols with acidified dichromate, and two of them turn it green. That tells you something was oxidised. It doesn't tell you what formed: an aldehyde, a ketone and an acid can all come from the same orange solution.",
+    "stopsAfter": "stating the aim; choosing a fair set of alcohols and a control; sorting alcohols by the dichromate colour; naming the independent, dependent and controlled variables; choosing distillation or reflux for each product and explaining why; predicting each distillate's test results; explaining why the distillate, not the flask, is tested, and how known samples, repeats and the distilling temperature support the conclusion; writing the risk rows for chromium(VI), the acids, the alcohols and products, Tollens' reagent and hot glassware, with disposal.",
+    "nextLesson": "carboxylic acids (route chem-m7-c09, \"Why are carboxylic acids acidic?\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-p04.md"
+  ],
+  "teaching": {
+    "task": "Warm an alcohol with acidified dichromate and it turns green. That shows something was oxidised, but what did you actually make? How do you make, collect and test the products of primary and secondary alcohols so the evidence points to one answer, and do it safely?",
+    "causalExplanation": "(1) green shows oxidation, not the product (1); (2) the aim and a fair set of alcohols, plus a control (2); (3) part A sorts the alcohols: primary and secondary green, tertiary and water orange (3); (4) one variable changed, the rest kept the same (4); (5) distil as it forms to catch the aldehyde, because it boils far below the alcohol and leaves before further oxidation; the distilling temperature supports the identification (5); (6) reflux with excess oxidant reaches the acid because the condenser returns the aldehyde to the oxidant (6); (7) the secondary alcohol gives a ketone that dichromate doesn't oxidise further (7); (8) each product has its own test pattern (8); (9) test the distillate, not the flask, and run known samples: validity (9); (10) repeats agree: reliability; matching known samples and boiling temperatures supports the identification: accuracy; a faint acid result in the aldehyde sample is an investigation prompt on screen, not a spoken diagnosis (10); (11) the hazards and their controls (11); memory aid (12); attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).",
+    "conversationalApproach": "warm three alcohols with acidified dichromate and two turn it green, which shows something was oxidised but not what formed, so the practical asks how to make, collect and test each product so the evidence points to one answer, and do it safely. The aim uses propan-1-ol and propan-2-ol, which share a formula so only the position of the OH differs, with 2-methylpropan-2-ol as the tertiary comparison and a water-only tube as the control. In part A the teacher demonstrates a warm water bath test that sorts the alcohols by whether the dichromate turns green, and the variables card names the alcohol's class, the observations and what stays the same. In part B the aldehyde is caught by distilling straight away, because propanal boils about fifty degrees below the alcohol and escapes before it is oxidised again; reflux with excess oxidant takes the primary alcohol on to propanoic acid; propan-2-ol gives propanone. Tollens' and Benedict's respond only to the aldehyde and blue litmus only to the acid. Testing the distillate, not the flask, is the validity point, because the flask holds sulfuric acid and chromium ions; repeats and known samples support reliability and accuracy, and the risk table centres on chromium(VI). The memory aid is green says oxidised, the test says what. Two exam questions follow with brief feedback.",
+    "openingDecision": "Warm three alcohols with acidified dichromate, and two of them turn it green. That tells you something was oxidised. It doesn't tell you what formed: an aldehyde, a ketone and an acid can all come from the same orange solution. Here you'll make each product, collect it and test it, so the evidence points to one answer.",
+    "understandingCheck": "(A1) \"In a teacher demonstration, propan-1-ol was heated with excess acidified potassium dichromate under reflux for 20 minutes. The flask was cooled and a strip of blue litmus paper was dipped into the reaction mixture. The litmus turned red, and a student concluded that propanoic acid had formed. Explain why this conclusion is not valid, and describe how the method should be changed to give a valid conclusion.\" Tests the validity move (the flask contains sulfuric acid). Answer: the acidified dichromate contains sulfuric acid, which turns litmus red whether or not propanoic acid formed, so the test does not measure the product; distil off the product and test the distillate (and/or test a blank of acidified dichromate treated the same way). Crossed mistake: \"repeat the litmus test several times\" (repeats check reliability, not validity; s07's word, feature, fix). (A2) \"Pentan-2-ol and 2-methylbutan-2-ol were each warmed with acidified potassium dichromate solution. Each mixture was then distilled, and the distillate was warmed with freshly prepared Tollens' reagent. Predict the observations for each alcohol, name any organic product, and explain the observations.\" Tests the class rule and the test's reason with new alcohols (C₅). Answer: pentan-2-ol is secondary: orange to green; product pentan-2-one; no silver mirror (a ketone has no H on its carbonyl carbon). 2-methylbutan-2-ol is tertiary: stays orange (no H on the C–OH carbon), no oxidation product; its distillate is unreacted alcohol, so no mirror. Crossed mistake: \"pentan-2-ol: green, so a silver mirror\" (green does not mean aldehyde).",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the products of the oxidation of primary and secondary alcohols\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" (carried by the risk table, route review change 5) this video prepares students to carry out and analyse the investigation; it does not claim that watching it is conducting it. It teaches: the aim; the choice of propan-1-ol and propan-2-ol (isomers, so only the position of the OH differs) with 2-methylpropan-2-ol as the tertiary comparison and a water-only tube as the control; part A, a water-bath test that sorts the alcohols by whether they turn acidified dichromate green; the variables and the control; part B, making each product: distil the primary alcohol's product as it forms (aldehyde), reflux the primary alcohol with excess oxidant then distil a sample (acid), and distil the secondary alcohol's product (ketone); testing each distillate with Tollens' reagent, Benedict's (or Fehling's) solution and blue litmus, against known samples (glucose for the aldehyde tests, dilute acid for litmus, water for no change); why the distillate is tested, not the flask (validity); repeats and agreement (reliability); matching results to known samples and the distilling temperature (accuracy of the identification); the risk assessment and disposal. Recalled, not re-taught: why oxidation needs an H on the C–OH carbon, why the aldehyde distils off, why reflux reaches the acid (c08a); why only the aldehyde gives a mirror or a brick-red solid (c08b); validity, reliability, accuracy and word, feature, fix (skills-s07, chem-m7-p03). Not here: the dichromate half-equations and balanced redox equations (c08a author note d); acidified permanganate as the oxidant (a grey tag only in the risk scene); carboxylic acid properties and the sodium carbonate test (chem-m7-c09); yields and purification; infrared or mass spectra (Module 8); multi-step synthesis (c13, g03)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c08a and c08b: dichromate orange and chromium(III) green as painted in the plates; aldehyde –CHO and ketone C=O navy; OH ringed red; the three alcohols in fixed colours across tags, table rows and chips (propan-1-ol teal, propan-2-ol violet, 2-methylpropan-2-ol grey-blue, water control plain grey); hazards terracotta, controls green. Board layout (three zones, constant, as chem-m7-p03): top-left the short task line; the centre holds the apparatus plate; the right third holds the current card (method step, variables, evidence table, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Plates and owner rules: no people or hands (liquids are added by coded dropper outlines and coded pours; flames are absent by design); apparatus (reflux and distillation set-ups, test tubes in racks, water bath, litmus, bottles) as painted plates, listed by filename, never stretched; molecules coded in the c08a style; at most about three bright text items; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (about 15 to 30 s) with one crossed-out mistake; original HSC-style questions only; real GHS classifications; Australian spelling; no em dashes; conversational narration; no absolute claims; optional key notes hold. No human figures.",
+    "transitionPlan": "The orange dichromate plate cross-fades to green as three product chips write in a row beneath it; the aim line writes and the two propanol structures draw side by side with their OH ringed, then shrink to name chips; the water-bath plate pair cross-fades from before to after and each tube's tag gains a result chip; the variables card writes one row per cue; the distillation plate takes the centre with a distillate tag and a boiling point strip, then the reflux plate runs its vapour return loop, then the distillation plate returns with the propan-2-ol chip and its equation; the evidence table writes one column per test with small result thumbnails; the flask against distillate split shows litmus turning red in the flask; the reliability and accuracy cards write small; the risk table shows one spoken row at a time; the memory line writes over a green tube and a mini evidence table; each attempt clears the board with its question card, and its feedback underlines the card as a chip writes and a crossed trap lands; the three-row decision card lights on cue; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "`m8-dichromate-orange-v1.png` centre.",
+      "teachingReason": "Hook (green, but what?): Warm three alcohols with acidified dichromate, and two of them turn it green.",
+      "narrationCue": "green / what / one",
+      "motionPurpose": "On the spoken cues: On \"green\" it cross-fades in place to `m8-dichromate-green-v1.png` (matched pair). On \"what\" three small coded structure chips write in a row under it, each with a \"?\" tag: \"–CHO\", \"C=O (inside the chain)\", \"–COOH\". On \"one\" the three chips dim except a coded magnifier outline that settles on the tube. Heading writes: \"Orange to green: so what did you make?\" Bright at the end: the heading, the green tube, the three",
+      "motionRole": "explain",
+      "onScreenChange": "`m8-dichromate-orange-v1.png` centre. On \"green\" it cross-fades in place to `m8-dichromate-green-v1.png` (matched pair). On \"what\" three small coded structure chips write in a row under it, each with a \"?\" tag: \"–CHO\", \"C=O (inside the chain)\", \"–COOH\". On \"one\" the three chips dim except a coded magnifier outline that settles on the tube. Heading writes: \"Orange to green: so what did you make?\" Bright at the end: the heading, the green tube, the three \"?\" chips (one item). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "aim-and-alcohols",
+      "visualDecision": "new",
+      "visualReference": "task line \"Aim: investigate the products of oxidising 1° and 2° alcohols\".",
+      "teachingReason": "The aim, and a fair set of alcohols: The aim: to investigate the products formed when primary and secondary alcohols are oxidised.",
+      "narrationCue": "propan-1-ol / control",
+      "motionPurpose": "On the spoken cues: On \"propan-1-ol\" two coded structures draw side by side, \"propan-1-ol\" (teal, OH on C1 ringed red) and \"propan-2-ol\" (violet, OH on C2 ringed red), with one shared grey tag \"both C₃H₈O: only the OH's position differs\". On \"No tertiary\" a third structure, \"2-methylpropan-2-ol\" (grey-blue), draws smaller with a grey tag \"tertiary: no C₃ option, so C₄\". On \"control\" a fourth chip \"water\" (plain grey) writes with a tag",
+      "motionRole": "explain",
+      "onScreenChange": "task line \"Aim: investigate the products of oxidising 1° and 2° alcohols\". On \"propan-1-ol\" two coded structures draw side by side, \"propan-1-ol\" (teal, OH on C1 ringed red) and \"propan-2-ol\" (violet, OH on C2 ringed red), with one shared grey tag \"both C₃H₈O: only the OH's position differs\". On \"No tertiary\" a third structure, \"2-methylpropan-2-ol\" (grey-blue), draws smaller with a grey tag \"tertiary: no C₃ option, so C₄\". On \"control\" a fourth chip \"water\" (plain grey) writes with a tag \"control: same treatment, no alcohol\". Earlier tags dim as each new one writes. Bright at the end: the four chips and the control tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "chip pop",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "part-a-colour",
+      "visualDecision": "adjust",
+      "visualReference": "the structures shrink to a row of coloured name chips at the top.",
+      "teachingReason": "Part A: which ones are oxidised?: Part one.",
+      "narrationCue": "green / orange",
+      "motionPurpose": "On the spoken cues: `m7-oxidation-water-bath-before-v1.png` (new, matched pair) appears centre: four tubes of orange solution in a beaker water bath on a hotplate, with a thermometer. A small grey chip \"teacher demonstration\" sits on the task line for scenes 3 to 7. Method card writes in the right zone, one step per cue, earlier steps dimming: \"1 2 mL acidified K₂Cr₂O₇ in each tube\" (a coded dropper outline adds the drops; no hands);",
+      "motionRole": "explain",
+      "onScreenChange": "the structures shrink to a row of coloured name chips at the top. `m7-oxidation-water-bath-before-v1.png` (new, matched pair) appears centre: four tubes of orange solution in a beaker water bath on a hotplate, with a thermometer. A small grey chip \"teacher demonstration\" sits on the task line for scenes 3 to 7. Method card writes in the right zone, one step per cue, earlier steps dimming: \"1 2 mL acidified K₂Cr₂O₇ in each tube\" (a coded dropper outline adds the drops; no hands); \"2 5 drops: propan-1-ol | propan-2-ol | 2-methylpropan-2-ol | water\"; the four name chips dock above the four tubes; \"3 water bath, about 60 °C, about 5 min\" (small grey tag \"no flame: the alcohols are flammable\"). On \"green\" the plate cross-fades to `m7-oxidation-water-bath-after-v1.png` (tubes 1 and 2 green, tubes 3 and 4 orange) and the colour sort adds result chips: \"green: oxidised\" under tubes 1 and 2. On \"orange\" chips \"orange: no reaction\" under tubes 3 and 4 (tube 4's chip adds \"control\"). Bright at the end: the after plate and its four result chips (one item). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "variables",
+      "visualDecision": "new",
+      "visualReference": "the variables card writes in the right zone: on \"class\" \"Independent: the alcohol's class (1°, 2°, 3°)\" with the three coloured chips; on \"observe\" \"Dependent: dichromate colour; product test results\"; on \"same\" \"Controlled:\" and its list writes one item per phrase, each pen-linked to the matching part of the after plate: \"2 mL acidified K₂Cr₂O₇ (same concentration)\", \"5 drops\", \"60 °C bath\", \"5 min\".",
+      "teachingReason": "The variables: What changes, and what stays the same?",
+      "narrationCue": "class / same",
+      "motionPurpose": "On the spoken cues: As the list completes, the propan-1-ol and propan-2-ol chips pulse, tag \"isomers: same C count, C₃H₈O\" (shown, not spoken; scene 2 said it). A small grey footer: \"Control: water instead of alcohol\". Bright at the end: the controlled list and the isomer tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the variables card writes in the right zone: on \"class\" \"Independent: the alcohol's class (1°, 2°, 3°)\" with the three coloured chips; on \"observe\" \"Dependent: dichromate colour; product test results\"; on \"same\" \"Controlled:\" and its list writes one item per phrase, each pen-linked to the matching part of the after plate: \"2 mL acidified K₂Cr₂O₇ (same concentration)\", \"5 drops\", \"60 °C bath\", \"5 min\". As the list completes, the propan-1-ol and propan-2-ol chips pulse, tag \"isomers: same C count, C₃H₈O\" (shown, not spoken; scene 2 said it). A small grey footer: \"Control: water instead of alcohol\". Bright at the end: the controlled list and the isomer tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "distil-aldehyde",
+      "visualDecision": "adjust",
+      "visualReference": "the water-bath plate shrinks out.",
+      "teachingReason": "Part B: catching the aldehyde: Part two: make the products and collect them.",
+      "narrationCue": "distillation / again",
+      "motionPurpose": "On the spoken cues: `m7-school-distillation-setup-v1.png` centre. Task line \"Part B: make, collect, test\". On \"distillation\" a grey tag points to the receiver: \"distillate: the liquid collected\". The coded dropper outline adds drops into the flask (step chip \"add the alcohol slowly; distil at once\"). The boiling-point ladder writes beside the plate: \"propanal 48 °C\" and \"propan-1-ol 97 °C\" ticks, with a bracket \"about 50 °C apart\". On",
+      "motionRole": "explain",
+      "onScreenChange": "the water-bath plate shrinks out. `m7-school-distillation-setup-v1.png` centre. Task line \"Part B: make, collect, test\". On \"distillation\" a grey tag points to the receiver: \"distillate: the liquid collected\". The coded dropper outline adds drops into the flask (step chip \"add the alcohol slowly; distil at once\"). The boiling-point ladder writes beside the plate: \"propanal 48 °C\" and \"propan-1-ol 97 °C\" ticks, with a bracket \"about 50 °C apart\". On \"again\" grey vapour arrows run from the flask through the condenser into the receiver (tag \"aldehyde leaves before it meets more oxidant\"; grey chip \"c08a: distil to catch the aldehyde\"). On \"still-head\" a coded amber readout chip on the plate's thermometer reads \"about 49 °C\" with a grey tag \"a guide, not proof\". Bright at the end: the plate with the vapour path, the ladder's bracket, the readout chip. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick",
+        "DrawPath",
+        "NumberTicker",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reflux-acid",
+      "visualDecision": "adjust",
+      "visualReference": "`m7-reflux-apparatus-v1.png` centre.",
+      "teachingReason": "Part B: going all the way to the acid: For the acid, use excess dichromate and heat under reflux for about twenty minutes.",
+      "narrationCue": "reflux / acid",
+      "motionPurpose": "On the spoken cues: Step chip \"excess acidified K₂Cr₂O₇; reflux about 20 min\". On \"reflux\" the vapour return loop runs: grey vapour rises into the condenser and drips back (tag \"aldehyde returns to the oxidant\"; grey chip \"c08a: reflux to go all the way\"). On \"acid\" a small coded equation strip writes under the plate: \"CH₃CH₂CH₂OH + 2[O] → CH₃CH₂COOH + H₂O\" (the scene 5 equation \"CH₃CH₂CH₂OH + [O] → CH₃CH₂CHO + H₂O\" sits above it in",
+      "motionRole": "explain",
+      "onScreenChange": "`m7-reflux-apparatus-v1.png` centre. Step chip \"excess acidified K₂Cr₂O₇; reflux about 20 min\". On \"reflux\" the vapour return loop runs: grey vapour rises into the condenser and drips back (tag \"aldehyde returns to the oxidant\"; grey chip \"c08a: reflux to go all the way\"). On \"acid\" a small coded equation strip writes under the plate: \"CH₃CH₂CH₂OH + 2[O] → CH₃CH₂COOH + H₂O\" (the scene 5 equation \"CH₃CH₂CH₂OH + [O] → CH₃CH₂CHO + H₂O\" sits above it in grey). On \"distil off a sample\" the reflux plate slides left and a small distillation plate thumbnail appears with an arrow \"then distil a sample\". Bright at the end: the vapour loop, the acid equation, the \"then distil\" arrow. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Enter slide",
+        "chip pop",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "secondary-ketone",
+      "visualDecision": "new",
+      "visualReference": "the distillation plate returns centre with the propan-2-ol chip (violet) docked on the flask.",
+      "teachingReason": "Part B: the secondary alcohol: Propan-2-ol is simpler.",
+      "narrationCue": "propanone",
+      "motionPurpose": "On the spoken cues: On \"propanone\" the equation \"CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O\" writes (C=O navy), and the boiling-point ladder adds \"propanone 56 °C\" and \"propan-2-ol 82 °C\" ticks. Tag \"ketone: no H on the carbonyl carbon, no further oxidation\" (grey chip \"c08b\"). Bright at the end: the equation and the tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the distillation plate returns centre with the propan-2-ol chip (violet) docked on the flask. On \"propanone\" the equation \"CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O\" writes (C=O navy), and the boiling-point ladder adds \"propanone 56 °C\" and \"propan-2-ol 82 °C\" ticks. Tag \"ketone: no H on the carbonyl carbon, no further oxidation\" (grey chip \"c08b\"). Bright at the end: the equation and the tag.",
+      "motionTools": [
+        "HandText write-on",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "testing-products",
+      "visualDecision": "adjust",
+      "visualReference": "the evidence table writes in the right zone: rows \"propanal (1°, distil)\", \"propanoic acid (1°, reflux)\", \"propanone (2°)\"; columns \"Tollens'\", \"Benedict's\", \"blue litmus\".",
+      "teachingReason": "Testing the products: Now test each distillate.",
+      "narrationCue": "mirror / acid / pattern",
+      "motionPurpose": "On the spoken cues: On \"mirror\" the Tollens' column fills: `m7-tollens-tube-mirror-v1.png` thumbnail in the propanal cell, `m7-tollens-tube-clear-v1.png` thumbnails in the other two. On \"Benedict's\" the column fills: `m7-fehlings-tube-brickred-v1.png` for propanal, `m7-fehlings-tube-blue-v1.png` for the others (coded column label \"Benedict's (or Fehling's)\"). On \"acid\" the litmus column fills: `m6-litmus-blue-v1.png` (red end) for the",
+      "motionRole": "explain",
+      "onScreenChange": "the evidence table writes in the right zone: rows \"propanal (1°, distil)\", \"propanoic acid (1°, reflux)\", \"propanone (2°)\"; columns \"Tollens'\", \"Benedict's\", \"blue litmus\". On \"mirror\" the Tollens' column fills: `m7-tollens-tube-mirror-v1.png` thumbnail in the propanal cell, `m7-tollens-tube-clear-v1.png` thumbnails in the other two. On \"Benedict's\" the column fills: `m7-fehlings-tube-brickred-v1.png` for propanal, `m7-fehlings-tube-blue-v1.png` for the others (coded column label \"Benedict's (or Fehling's)\"). On \"acid\" the litmus column fills: `m6-litmus-blue-v1.png` (red end) for the acid, `m7-litmus-blue-strip-v1.png` for the other two. On \"pattern\" each row's result icons pulse once in turn and a row label writes at its end: \"mirror + brick red → aldehyde\", \"red litmus → acid\", \"no change → ketone\". Small grey footer: \"the starting alcohols turned the dichromate green; these tests tell the products apart\". Bright at the end: the three row labels (one item, the table). Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "validity",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Is it valid? test the distillate: Why test the distillate, and not the flask?",
+      "narrationCue": "flask / intended / work",
+      "motionPurpose": "On the spoken cues: The flask against distillate split draws: left, a reflux flask thumbnail with its contents labelled small \"H₂SO₄ | chromium ions | organic product\"; a blue litmus icon dips in and turns red (tag \"red from the sulfuric acid, whatever formed\"); right, the receiver thumbnail labelled \"distillate: product and water, separated from the sulfuric acid and chromium salts\". On \"intended\" the validity card header writes:",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The flask against distillate split draws: left, a reflux flask thumbnail with its contents labelled small \"H₂SO₄ | chromium ions | organic product\"; a blue litmus icon dips in and turns red (tag \"red from the sulfuric acid, whatever formed\"); right, the receiver thumbnail labelled \"distillate: product and water, separated from the sulfuric acid and chromium salts\". On \"intended\" the validity card header writes: \"Validity: does the test measure what it was meant to?\" with the row \"test the distillate, not the flask\". On \"work\" a small controls panel writes, each control beside only the test it checks: \"glucose (known aldehyde): Tollens' → mirror; Benedict's → brick red\" with the mirror and brick-red thumbnails (grey tag \"glucose: a sugar with an aldehyde group, not a product here\"); on \"Dilute acid\" \"dilute acid: blue litmus → red\" with the red-end litmus thumbnail; on \"water\" \"water: no change in any test\". Bright at the end: the validity row and the controls panel. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "reliability-accuracy",
+      "visualDecision": "new",
+      "visualReference": "the reliability card writes small: \"Reliability: repeats agree?\" with three small result rows from three groups agreeing (ticks).",
+      "teachingReason": "Reliable, and accurate?: Reliability: repeat each test, or compare with other groups.",
+      "narrationCue": "agree / accurate",
+      "motionPurpose": "On the spoken cues: On \"accurate\" the accuracy card writes: \"Accuracy: is the product named correctly?\" with two rows: \"results match the known samples\" and \"still-head reading near the boiling point (supports, not proof)\" (the ladder thumbnail returns small with the 48 °C tick bright). As the accuracy rows settle, a small grey investigation prompt writes beside the propanal row (shown, not spoken): a litmus icon with a pale pink tip",
+      "motionRole": "explain",
+      "onScreenChange": "the reliability card writes small: \"Reliability: repeats agree?\" with three small result rows from three groups agreeing (ticks). On \"accurate\" the accuracy card writes: \"Accuracy: is the product named correctly?\" with two rows: \"results match the known samples\" and \"still-head reading near the boiling point (supports, not proof)\" (the ladder thumbnail returns small with the 48 °C tick bright). As the accuracy rows settle, a small grey investigation prompt writes beside the propanal row (shown, not spoken): a litmus icon with a pale pink tip and the tag \"faint red? acid got in: check prompt distillation, clean glassware, sample handling\". Footer, small grey: \"Validity: right test. Reliability: repeats agree. Accuracy: right name.\" Bright at the end: the accuracy rows and the faint-red tag. Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "tick"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "risk",
+      "visualDecision": "adjust",
+      "visualReference": "during the speech only one spoken row is on screen at a time, large, as a single hazard, harm and control line under the header \"Hazard / Harm / Control\": chromium(VI) (on \"waste\"), flammable alcohols and products (on \"flame\"), Tollens' reagent (on \"explosive\"), waste (on \"Organic residues\").",
+      "teachingReason": "The risk assessment: Now the risks.",
+      "narrationCue": "waste / flame / explosive / table",
+      "motionPurpose": "On the spoken cues: Each spoken row shrinks into the table as the next one comes up. On \"table\" the complete table (full text as \"Risk table\" below) settles at a calm reading size with every row equally bright, and a small chip \"Pause to read or copy the full table\" appears. On \"waste\" `m5x-waste-bottle-v1.png` appears small with a coded label \"Heavy metal waste: chromium\", and a second copy with \"Organic waste\" appears on \"Organic",
+      "motionRole": "explain",
+      "onScreenChange": "during the speech only one spoken row is on screen at a time, large, as a single hazard, harm and control line under the header \"Hazard / Harm / Control\": chromium(VI) (on \"waste\"), flammable alcohols and products (on \"flame\"), Tollens' reagent (on \"explosive\"), waste (on \"Organic residues\"). Each spoken row shrinks into the table as the next one comes up. On \"table\" the complete table (full text as \"Risk table\" below) settles at a calm reading size with every row equally bright, and a small chip \"Pause to read or copy the full table\" appears. On \"waste\" `m5x-waste-bottle-v1.png` appears small with a coded label \"Heavy metal waste: chromium\", and a second copy with \"Organic waste\" appears on \"Organic residues\". On \"flame\" `m7-fume-cupboard-v1.png` appears small beside the flammability row, tag \"distil propanal here\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\". On \"explosive\" the Tollens' row brightens with a terracotta tag \"make fresh, use at once, never store\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Quiet reading hold about 5 seconds on the full table (no countdown: this is a reading pause, not a question; the summary returns in key note 5).",
+      "motionTools": [
+        "chip pop",
+        "table build",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "Settle about 1 second"
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Memory aid: One line to keep.",
+      "narrationCue": "Green says oxidised; the test says what.",
+      "motionPurpose": "On the spoken cues: Handwritten line: \"Green says oxidised; the test says what.\" Under \"Green says oxidised\" the green tube thumbnail; under \"the test says what\" a mini evidence table (mirror, brick red, red litmus). A small grey second line from c08a: \"Distil to catch the aldehyde, reflux to go all the way.\"",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Green says oxidised; the test says what.\" Under \"Green says oxidised\" the green tube thumbnail; under \"the test says what\" a mini evidence table (mirror, brick red, red litmus). A small grey second line from c08a: \"Distil to catch the aldehyde, reflux to go all the way.\" Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Your turn. In a demonstration, propan-1-ol is refluxed",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". `m7-reflux-apparatus-v1.png` small at the right (no tags, no arrows). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Countdown ring",
+        "Plate"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "sulfuric acid / distillate / trap",
+      "motionPurpose": "On the spoken cues: On \"sulfuric acid\" \"acidified potassium dichromate\" and \"dipped into the reaction mixture\" are underlined; a small chip \"flask: H₂SO₄ → litmus red anyway\" writes (s07 FixRail small: \"Word: validity\"; \"Feature: tested the flask, which contains acid\"). On \"distillate\" \"Explain why this conclusion is not valid\" and \"how the method should be changed\" are underlined; the FixRail's \"Fix: distil; test the distillate; run a",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"sulfuric acid\" \"acidified potassium dichromate\" and \"dipped into the reaction mixture\" are underlined; a small chip \"flask: H₂SO₄ → litmus red anyway\" writes (s07 FixRail small: \"Word: validity\"; \"Feature: tested the flask, which contains acid\"). On \"distillate\" \"Explain why this conclusion is not valid\" and \"how the method should be changed\" are underlined; the FixRail's \"Fix: distil; test the distillate; run a blank\" lights, with a small distillation plate thumbnail. On \"trap\" a chip \"repeat the litmus test 3 times\" fades in and is crossed (caption \"repeats check reliability; the acid is still there\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop",
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions).",
+      "teachingReason": "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Last one. Pentan-2-ol and 2-methylbutan-2-ol are each warmed",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+      "motionRole": "explain",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions). No structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top.",
+      "teachingReason": "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "secondary / mirror / orange",
+      "motionPurpose": "On the spoken cues: On \"secondary\" \"Pentan-2-ol\" underlines; its structure draws with the H on the C–OH carbon ringed, then oxidises to \"pentan-2-one, CH₃COCH₂CH₂CH₃\" (C=O navy); `m8-dichromate-green-v1.png` small. On \"mirror\" \"warmed with Tollens' reagent\" underlines; `m7-tollens-tube-clear-v1.png` small (tag \"ketone: no H on the carbonyl carbon\"). On \"orange\" \"2-methylbutan-2-ol\" underlines; its structure draws with the C–OH carbon",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"secondary\" \"Pentan-2-ol\" underlines; its structure draws with the H on the C–OH carbon ringed, then oxidises to \"pentan-2-one, CH₃COCH₂CH₂CH₃\" (C=O navy); `m8-dichromate-green-v1.png` small. On \"mirror\" \"warmed with Tollens' reagent\" underlines; `m7-tollens-tube-clear-v1.png` small (tag \"ketone: no H on the carbonyl carbon\"). On \"orange\" \"2-methylbutan-2-ol\" underlines; its structure draws with the C–OH carbon ringed, \"no H\" (tag \"tertiary: no reaction\"), and `m8-dichromate-orange-v1.png` small. On \"the trap\" a chip \"pentan-2-ol: green, so silver mirror\" fades in and is crossed (caption \"green shows oxidation, not an aldehyde\"). Hold about 1 second. Hold about 1 second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "chip pop",
+        "Mark underline",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Decision rule and handoff: So, the colour tells you whether the alcohol was oxidised.",
+      "narrationCue": "aldehyde / acid / Next",
+      "motionPurpose": "On the spoken cues: A three-row decision card lights on cue: \"Colour → oxidised? (green: 1° or 2°; orange: 3°)\"; on \"aldehyde\" \"Distil at once → aldehyde (mirror, brick red)\"; on \"acid\" \"Reflux, excess oxidant → acid (red litmus)\" and \"2° → ketone (no change)\"; a last row \"Test the distillate, with known samples\". On \"Next\" a chip \"Next: why are carboxylic acids acidic?\" slides in at the lower right.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A three-row decision card lights on cue: \"Colour → oxidised? (green: 1° or 2°; orange: 3°)\"; on \"aldehyde\" \"Distil at once → aldehyde (mirror, brick red)\"; on \"acid\" \"Reflux, excess oxidant → acid (red litmus)\" and \"2° → ketone (no change)\"; a last row \"Test the distillate, with known samples\". On \"Next\" a chip \"Next: why are carboxylic acids acidic?\" slides in at the lower right. Hold about 2 seconds. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p04-learning-review.md",
+      "sha256": "cbdc34af96101af146a838e6913311400e5da407037e963cd5ff837b219e8cd1"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7p04-claude-science-check.md",
+      "sha256": "aa4d4451385d4717194465ab2c05035fb8ff39dddedf93d17dedf0d5270204d6"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

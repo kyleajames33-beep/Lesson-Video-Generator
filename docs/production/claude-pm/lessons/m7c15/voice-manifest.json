@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-C15-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7c15/lesson.json",
+  "lessonSha256": "278f1c09793f918dc756ba59f9e82dc75629c31210f3e752bdb71875143c9b5a",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7c15/lesson.production-brief.json",
+    "sha256": "12f207c1b7469f7b587ceee2433afdbc718c93492e21f413e68a63bbf3e1af01"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Last time, every atom of every monomer ended up in the chain. A PET drink bottle is different. Every time two of its monomers join, a small molecule of water comes off. Nylon rope is made the same way. So how can you build a long chain while losing something at every link, and what do those links do to the plastic?",
+      "hash": "cf726bff9381",
+      "textSha256": "cf726bff93812684711e148a8a811c9f6c1f6d2db32316fb9238213fac72e7f1",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/hook.cf726bff9381.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/hook.cf726bff9381.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/hook.cf726bff9381.generation.json",
+      "plannedRequestSha256": "3e439ca3dbe4dfea0c3b671bd1833d6c76b6af1fb9c54367b2bff757a8f462aa"
+    },
+    {
+      "id": "two-ends",
+      "parentSceneId": "two-ends",
+      "text": "Remember esterification. An acid and an alcohol join, and lose water. But ethyl ethanoate stops there, because it has no spare alcohol or carboxyl group to keep building this chain. Now give each molecule a reactive group at both ends: a diol, with two O H groups, and a dicarboxylic acid, with two carboxyl groups. After one link forms, the new molecule still has a reactive group at each end, so it can keep joining, in both directions, thousands of times.",
+      "hash": "1d00ad9b126e",
+      "textSha256": "1d00ad9b126e1e06e376605578f4aec915d014eb8fdc9f430d1abebaf0ce9ff8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/two-ends.1d00ad9b126e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/two-ends.1d00ad9b126e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/two-ends.1d00ad9b126e.generation.json",
+      "plannedRequestSha256": "8630f6137ea9de12999cc8768bb6c627b715fe5966f531c2ee515a4463566db7"
+    },
+    {
+      "id": "build-pet",
+      "parentSceneId": "build-pet",
+      "text": "That's how PET is made. Its monomers are ethane one two diol, and benzene one four dicarboxylic acid, a benzene ring with a carboxyl group on opposite sides. At each link, the acid loses O H and the alcohol loses H. They leave as water, and an ester link forms. Building a polymer this way, losing a small molecule at every link, is called condensation polymerisation. With ester links all along its chain, PET is a polyester.",
+      "hash": "38ba36560349",
+      "textSha256": "38ba365603499238f9346fb142f2070123c4457387ed957b1206085ccd31be20",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/build-pet.38ba36560349.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/build-pet.38ba36560349.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/build-pet.38ba36560349.generation.json",
+      "plannedRequestSha256": "a66fd5909f944e2e91cb834db61bced45b34c55370c7c0ffb887b71d56637502"
+    },
+    {
+      "id": "draw-repeat-unit",
+      "parentSceneId": "draw-repeat-unit",
+      "text": "To draw the repeat unit, take one diol and one acid, joined, with the water gone from each end. Start at the diol's oxygen: O, C H two, C H two, O, then the acid's C double bond O, the ring, and the other C double bond O. Put brackets around it, with a continuation bond out of the oxygen on the left and the carbon on the right, and an n outside. Check the ends: the carbon on the right can bond to an oxygen just like the one on the left, so the units join. And notice each repeat unit holds two ester links.",
+      "hash": "dc20e6c422ae",
+      "textSha256": "dc20e6c422ae492b6e28e7b6c9289c60b2765262ce2dc96bd75268d3d275b33d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/draw-repeat-unit.dc20e6c422ae.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/draw-repeat-unit.dc20e6c422ae.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/draw-repeat-unit.dc20e6c422ae.generation.json",
+      "plannedRequestSha256": "e5393357ee45ea72aae207f5d58739f0c67daf0d496c005e69e56306b9f6feec"
+    },
+    {
+      "id": "nylon",
+      "parentSceneId": "nylon",
+      "text": "Now swap the diol for a diamine, a molecule with an N H two group at each end. Hexane one six diamine reacts with hexanedioic acid. This time the amine group loses an H, the acid loses O H, and water leaves again. The new link is an amide link, a C double bond O bonded to N H, as you saw with amides. So this polymer is a polyamide, nylon six six, named for the six carbons in each monomer. Its repeat unit runs N H, six C H two groups, N H, then C double bond O, four C H two groups, and C double bond O.",
+      "hash": "551df692568e",
+      "textSha256": "551df692568e7f767b7fa2d8dedbac8e180cd57b100b893f5823b58c1ab3d60b",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/nylon.551df692568e.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/nylon.551df692568e.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/nylon.551df692568e.generation.json",
+      "plannedRequestSha256": "90c2409f74a0881b3ded99dc95df191fabb08557e41e4625fbfe07bc368a4220"
+    },
+    {
+      "id": "monomers-back",
+      "parentSceneId": "monomers-back",
+      "text": "Going backwards, you add the water back. Find each ester or amide link, and cut it between the C double bond O carbon and the O or N. Add O H to the C double bond O side, and H to the O or N side. Take this polyester. Cutting gives ethane one two diol, and an acid. Now count the acid's carbons, including both C double bond O carbons, not just the C H twos. That's six, so it's hexanedioic acid.",
+      "hash": "2f9d2bfeaa59",
+      "textSha256": "2f9d2bfeaa59eff8cc164497fe7342095dd4b9a0132c53c556490e0d0f6f0c2f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/monomers-back.2f9d2bfeaa59.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/monomers-back.2f9d2bfeaa59.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/monomers-back.2f9d2bfeaa59.generation.json",
+      "plannedRequestSha256": "b642857dce11d2ac2042b4893c5c8fdee394d57f65f62f72920a18f6b85f34c8"
+    },
+    {
+      "id": "compare",
+      "parentSceneId": "compare",
+      "text": "So how do the two families compare? An addition monomer needs a C double bond C, and a condensation monomer needs a reactive group at each end. Addition releases nothing, so the repeat unit has the same formula as its monomer. Condensation loses a small molecule at every link, here water. For PET and nylon, made from these pairs, the repeat unit is one of each monomer minus two waters. And look at the chain itself. Addition gives an all carbon backbone, while condensation puts ester or amide links in it. Water can split those links again, the reverse reaction, called hydrolysis. It's usually slow without acid, base or an enzyme, but a carbon backbone has no such weak point.",
+      "hash": "7ffb0629d964",
+      "textSha256": "7ffb0629d9649a5dd0d5254240c41e3cf3cc22a7e8476627092113a2da6b8b34",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/compare.7ffb0629d964.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/compare.7ffb0629d964.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/compare.7ffb0629d964.generation.json",
+      "plannedRequestSha256": "c680dce245171b3ec0c52d7cae90a5273065181916155bf59390762d1ff54b77"
+    },
+    {
+      "id": "nylon-properties",
+      "parentSceneId": "nylon-properties",
+      "text": "Now the properties. Polyethylene's chains are held only by dispersion forces. But nylon has an N H and a C double bond O in every amide link. The N H on one chain forms a hydrogen bond with the C double bond O on the next chain, all along their length. Those hydrogen bonds hold the chains together much more strongly, so nylon is tough, and it melts at about two hundred and sixty five degrees, far above HDPE's hundred and thirty. That suits strong ropes and fishing line. Heat it enough, and the chains slide, so it can still be remoulded. The amide links inside each chain don't break.",
+      "hash": "46c7af9d9d64",
+      "textSha256": "46c7af9d9d649a74969724598a219580f9b87c077a3bbfd69a542d39678aa93c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/nylon-properties.46c7af9d9d64.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/nylon-properties.46c7af9d9d64.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/nylon-properties.46c7af9d9d64.generation.json",
+      "plannedRequestSha256": "0ee58f8aa54af55663b4674c8664a0d0f5f23d8f8799523f918ce3d036512774"
+    },
+    {
+      "id": "pet-properties",
+      "parentSceneId": "pet-properties",
+      "text": "PET's repeat unit has no O H or N H to donate hydrogen bonds, so these chains don't hydrogen bond to each other. But its benzene rings are flat and stiff, so the chains can't twist and bend easily, and its polar ester links add dipole dipole attraction between chains. So PET is strong and stiff, and it melts at about two hundred and sixty degrees. Blown into a bottle, it's tough and clear. Spun into thin fibres, the same polymer becomes polyester clothing.",
+      "hash": "2900b778b7fd",
+      "textSha256": "2900b778b7fd0384d312ea7123ba1fe7d4023ca6950a569924ad29ee5ecaf842",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/pet-properties.2900b778b7fd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/pet-properties.2900b778b7fd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/pet-properties.2900b778b7fd.generation.json",
+      "plannedRequestSha256": "b253c91a2d8a97222ff63caf49c5b2468836d8308c7fa37983ae4da0b1ebffcd"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, addition: nothing lost. Condensation: a small molecule lost. To draw a condensation polymer, take one of each monomer, remove the water at each link, and bracket the rest. To find the monomers, add the water back. And to explain a property, look at what the chains share: N H and C double bond O pairs give hydrogen bonds, and rings make stiff chains.",
+      "hash": "d5b283614df9",
+      "textSha256": "d5b283614df9b13dfc1c116fd5f03c49e84a0d4e06835c7a53abf42703887757",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/memory-aid.d5b283614df9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/memory-aid.d5b283614df9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/memory-aid.d5b283614df9.generation.json",
+      "plannedRequestSha256": "a62ac197e973772c696322b6df2609969c66abe724d578c7595d32a0846f6660"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Butane one four diol and butanedioic acid react to form a condensation polymer. Draw the repeat unit. Then name the type of link formed, and the other product. Pause here to answer.",
+      "hash": "f1510856d60d",
+      "textSha256": "f1510856d60d914fe59bdd7a4253b3b5b6514dc3e8804ea7e0585c64d4d2a87f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/attempt-1.f1510856d60d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/attempt-1.f1510856d60d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/attempt-1.f1510856d60d.generation.json",
+      "plannedRequestSha256": "6e3619a72ed175dcd440f01c71a1243864bb69fd13b5274877c776756ffd2ba5"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Join the diol's oxygen to the acid's C double bond O carbon, and water leaves. So the repeat unit is O, four C H twos, O, C double bond O, two C H twos, C double bond O, in brackets with n. The links are ester links, and the other product is water. Leaving an O H at the end of the bracket is the trap. That water has already gone.",
+      "hash": "bf8536826e9a",
+      "textSha256": "bf8536826e9ae7c94b32d4a74e76637c90e8af93465ee9ed332f022bb72f2574",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/feedback-1.bf8536826e9a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/feedback-1.bf8536826e9a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/feedback-1.bf8536826e9a.generation.json",
+      "plannedRequestSha256": "296de858cce95b0e17f05b7fc123c62f5d89a016e0fb373bbba7926c64862841"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A polyamide has the repeat unit shown. Identify the two monomers used to make it. Then explain why it melts at a much higher temperature than HDPE, in terms of the forces between the chains. Pause here to answer.",
+      "hash": "37cd5ca33fbc",
+      "textSha256": "37cd5ca33fbca337cf3a274be636c30d0281184770aa951a9c79781169e0a1f8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/attempt-2.37cd5ca33fbc.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/attempt-2.37cd5ca33fbc.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/attempt-2.37cd5ca33fbc.generation.json",
+      "plannedRequestSha256": "1c6d0ef4ca626ecac111989a3627c2af0471969f18cd3b984acbd224474188d3"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Add the water back at each amide link: H on the N, O H on the C double bond O. That gives hexane one six diamine, and decanedioic acid, with ten carbons, counting both C double bond O carbons. Its chains hydrogen bond, N H to C double bond O, on top of dispersion, while HDPE has only dispersion forces. Octanedioic acid is the trap. It leaves out those two carbons.",
+      "hash": "08e2f01a97cf",
+      "textSha256": "08e2f01a97cf789d3931f88b18d993413dcf0becc5638166c9f7f1797daad50c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/feedback-2.08e2f01a97cf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/feedback-2.08e2f01a97cf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/feedback-2.08e2f01a97cf.generation.json",
+      "plannedRequestSha256": "1ead2bc037d87d942ee954cac35e9379038834d0afc34f48ea595d8202e13b76"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "Next: practice with both families, drawing repeat units, finding monomers, and telling addition from condensation.",
+      "hash": "8a532b6f9c23",
+      "textSha256": "8a532b6f9c234d26fae2911b2bf1b50749a7b760eade15340b77e968cdbed03f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/handoff.8a532b6f9c23.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/handoff.8a532b6f9c23.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/handoff.8a532b6f9c23.generation.json",
+      "plannedRequestSha256": "dab0136ade00dbe4952cee7bc440fe6942f887ae2e2da378a5edf36e2b76a6e1"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-C15-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

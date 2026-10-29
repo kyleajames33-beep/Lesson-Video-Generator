@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8b01/lesson.json",
+    "lessonSha256": "dda09413a833b623596a25a1f3a7a1ad3ed22ee038b11ab841f7ddb515836a47"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From Year 11: neurons carry nerve impulses; hormones are chemical messengers carried in the blood; the brain coordinates responses; enzymes have an active site and an optimum temperature and pH. Not assumed: homeostasis, set point, tolerance range, the five components, thermoreceptor, hypothalamus, effector, negative and positive feedback.",
+    "startsWith": "Trace stimulus, receptor, control and effector. The video opens: Right now you're probably in a room at about twenty-two degrees, and your body is losing heat to it every second.",
+    "stopsAfter": "defining homeostasis as keeping the internal environment relatively stable within a tolerance range around a set point, and saying why (enzyme activity); naming and ordering the five components with their jobs for a fall in body temperature (thermoreceptors in skin and hypothalamus, hypothalamus as control centre, shivering muscles and narrowing skin arterioles as effectors, heat made and kept as the response); explaining why the loop is negative (the response opposes the change) and easing as the variable returns (signals weaken and the extra response fades to what is needed, not to zero; small fluctuations can occur around the set point); contrasting positive feedback (amplifies a change until an end point, blood clotting); mapping the same template onto rising blood glucose (pancreas as receptor and control centre, insulin, liver and muscle cells as effectors); constructing a loop from a written description and interpreting a two-line graph, keeping the regulated internal variable separate from the external change.",
+    "nextLesson": "how endotherms detect heat and the main ways they lose or keep it (route entry bio-m8-b02)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/bio-m8-b01.md"
+  ],
+  "teaching": {
+    "task": "You lose heat to a 22 °C room every second, yet your core temperature stays close to 37 °C. What detects the drift, what decides, and what corrects it?",
+    "causalExplanation": "Causes: why the range matters (enzymes; 2); how each part leads to the next (4); why the loop is negative (direction; 5) and why it stops itself (weakening signals; 5); why positive feedback cannot hold a variable (it amplifies until an end point; 6). Attention: a question about the learner's own body (1), a familiar machine (3), a contrast (6). Visual medium: one loop ring that fills slot by slot with real structures and is reused for glucose and both attempts. Apply: construct (10a), interpret (10c). Remember: the mnemonic and the minus-sign arrow.",
+    "conversationalApproach": "You are probably sitting in a room at about 22 degrees, losing heat every second, yet your core temperature stays close to 37, so the question is how negative feedback keeps conditions in range: what detects the drift, what decides and what fixes it. Homeostasis is keeping the internal environment relatively stable, with core temperature wobbling within a narrow band, the tolerance range, around a set point. A heater with a thermostat shows the same loop with its set point, sensor and switch. The body's loop has five parts, built in a cold wind: the stimulus (body temperature starting to fall), thermoreceptors in the skin and hypothalamus as receptors, the hypothalamus as control centre, the skin arterioles and muscles as effectors, and the response that makes more heat and loses less. It is negative because the response opposes the change, and as temperature returns the receptors detect less change and the response eases. Positive feedback is the contrast: platelets at a torn vessel call in more platelets until the hole is plugged. The same template fits blood glucose, where the pancreas is both receptor and control centre and insulin brings glucose back down. Two exam checks follow (which variable inside the body, which way the response pushes), then the memory aid Some Really Cool Elephants Run and two exam questions with brief feedback.",
+    "openingDecision": "Right now you're probably in a room at about twenty-two degrees, and your body is losing heat to it every second. Yet your core temperature stays close to thirty-seven. Something keeps detecting that drift and correcting it. So what detects it, what decides, and what does the fixing?",
+    "understandingCheck": "10a is a construct item from a written description (the dotpoint's first verb). 10c is an interpret item from a two-line graph (the second verb, and the 2019 Q29 trap). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 s each): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.",
+    "curriculumScope": "B8-IQ1-01 (p 56): \"construct and interpret negative feedback loops that show homeostasis by using a range of sources, including but not limited to: (ACSBL101, ACSBL110, ACSBL111)\" with the listed examples \"temperature (ACSBL098)\" and \"glucose\". Temperature carries the build (scenes 4 and 5, attempt 2); glucose is the transfer (scene 7). \"Construct\" is attempt 1; \"interpret\" is attempt 2. \"Range of sources\": a thermostat model (3), a loop diagram (4), a trace graph (5, attempt 2) and a written description (attempt 1)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One loop ring owns the frame from scene 4: five slots on a circle (stimulus at the top, then clockwise receptor, control centre, effector, response), joined by curved arrows, with a return arrow from response back to stimulus marked with a minus sign in scene 5. Each slot holds one small painted plate or a short label, never a text box standing in for a structure. The ring persists, dimmed, through scenes 6 to 8 and reappears small in 11. A trace panel (the coded `lineGraph`: variable against time, a shaded tolerance band and a dashed set point line) sits to the right in scenes 2, 5 and attempt 2. People are never drawn: there is no body outline; the internal variable is shown by the skin cross-section plate, the brain plate and the thermometer plate. At most three bright text items at once; earlier labels dim to grey when a new one writes.",
+    "transitionPlan": "The skin cross-section plate appears under a coded air panel as HeatArrows rise into it, the thermometer slides in at 37 and a faint dashed circle draws round both; the plate shrinks as the homeostasis gloss writes and a coded lineGraph draws the core temperature wobbling inside a shaded tolerance band with its set point line; the graph dims as the heater and thermostat plate enters and scribble rings circle the dial, sensor and switch in turn; the board clears to the coded LoopRing with five empty slots that fill one per cue with the thermometer, a zoomed skin view, the brain plate and the effector plates as SignalPulse dots travel between them; the return arrow draws bright amber with a large minus sign, a crossed chip corrects negative as harmful and the pulses thin as the variable returns; the ring dims as the torn vessel plate cross-fades from early to plugged platelets with an amplifying arrow; the ring returns with emptied slots and refills for blood glucose; the full temperature ring returns beside two numbered check chips; the five initials write around the ring; each attempt clears the board with its question card or graph, and its feedback underlines each given as it is used while a crossed answer chip lands; three step chips write on and a next chip slides in; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "no people. Left: `m8-skin-cross-section-v1.png` at medium size (grey tag \"skin, cut through\").",
+      "teachingReason": "Hook (a room at 22 degrees): Right now you're probably in a room at about twenty-two degrees, and your body is losing heat to it every second.",
+      "narrationCue": "about twenty-two degrees / losing heat to it every second / core temperature / detecting that drift",
+      "motionPurpose": "On the spoken cues: On \"about twenty-two degrees\" a small coded air panel above the skin writes \"air 22 °C\" in grey. On \"losing heat to it every second\" the coded `HeatArrows` rise from the skin surface into the air panel, in a slow continuous loop. On \"core temperature\" `m8-thermometer-v1.png` slides in at the right,",
+      "motionRole": "explain",
+      "onScreenChange": "no people. Left: `m8-skin-cross-section-v1.png` at medium size (grey tag \"skin, cut through\"). On \"about twenty-two degrees\" a small coded air panel above the skin writes \"air 22 °C\" in grey. On \"losing heat to it every second\" the coded `HeatArrows` rise from the skin surface into the air panel, in a slow continuous loop. On \"core temperature\" `m8-thermometer-v1.png` slides in at the right, its column at 37 and a bright chip \"core 37 °C\". On \"detecting that drift\" a faint dashed circle draws round the thermometer and the skin (the shape the loop ring will later take). On the question the heading writes: \"How does negative feedback keep conditions in range?\" At most three bright text items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "range-not-number",
+      "visualDecision": "new",
+      "visualReference": "the skin plate shrinks to the upper left.",
+      "teachingReason": "A range, not a fixed number: That steadiness has a name: homeostasis, keeping the internal environment relatively stable while the outside changes.",
+      "narrationCue": "homeostasis / tolerance range / set point",
+      "motionPurpose": "On the spoken cues: On \"homeostasis\" a gloss writes: \"homeostasis: keeping the internal environment relatively stable\". On \"wobbles within a narrow band\" the coded `lineGraph` draws at the right: y axis \"core temperature (°C)\" from 36 to 38, x axis \"time\" with no units; a teal trace wobbles gently around 37. On",
+      "motionRole": "explain",
+      "onScreenChange": "the skin plate shrinks to the upper left. On \"homeostasis\" a gloss writes: \"homeostasis: keeping the internal environment relatively stable\". On \"wobbles within a narrow band\" the coded `lineGraph` draws at the right: y axis \"core temperature (°C)\" from 36 to 38, x axis \"time\" with no units; a teal trace wobbles gently around 37. On \"roughly thirty-six and a half to thirty-seven and a half\" a pale teal band fills from 36.5 to 37.5. On \"tolerance range\" the band's label writes \"tolerance range\"; on \"set point\" a dashed line at 37 writes \"set point\". The gloss dims. On \"enzymes\" a small coded enzyme outline (a rounded shape with a notch, abstract) appears below the graph with grey tag \"Year 11: enzyme shape and active site\"; on \"losing their shape\" the notch distorts (a grey tag \"large rises can denature enzymes\"); on \"reactions slow down\" a small grey arrow \"slower collisions\" appears. At most three bright items. Hold one second.",
+      "motionTools": [
+        "DrawPath",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "thermostat",
+      "visualDecision": "adjust",
+      "visualReference": "the graph slides right and dims.",
+      "teachingReason": "A heater with a thermostat: A heater with a thermostat works the same way.",
+      "narrationCue": "set the dial / A sensor inside / A switch compares / turns the heater on / turns it off again / Detect, decide, act.",
+      "motionPurpose": "On the spoken cues: New `m8-heater-thermostat-v1.png` enters at the centre left. On \"set the dial\" a `scribbleEllipse` circles the dial on the plate, label \"dial = set point (20 °C)\". On \"A sensor inside\" a callout points to the sensor grille, label \"sensor: measures\". On \"A switch compares\" a callout to the control",
+      "motionRole": "explain",
+      "onScreenChange": "the graph slides right and dims. New `m8-heater-thermostat-v1.png` enters at the centre left. On \"set the dial\" a `scribbleEllipse` circles the dial on the plate, label \"dial = set point (20 °C)\". On \"A sensor inside\" a callout points to the sensor grille, label \"sensor: measures\". On \"A switch compares\" a callout to the control box, label \"switch: compares\". On \"turns the heater on\" a warm glow pulses on the heater fins (coded overlay, low opacity) and `HeatArrows` flow out into a coded room outline with a small grey readout climbing 18, 19, 20. On \"turns it off again\" the glow fades and the readout settles at 20. On \"Detect, decide, act.\" three short words write under the plate one per word: \"detect\", \"decide\", \"act\"; earlier labels dim to grey. Hold one second.",
+      "motionTools": [
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "five-parts",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to the coded `LoopRing`, five empty slots on a circle.",
+      "teachingReason": "Five parts, built in the cold: Your body runs the same kind of loop, with five parts.",
+      "narrationCue": "stimulus / receptor / control centre / effectors / response",
+      "motionPurpose": "On the spoken cues: On \"cold wind\" a small grey tag at the upper left: \"outside change: cold wind\" (kept grey, outside the ring, so the external change is never a slot). On \"stimulus\" the top slot lights: `m8-thermometer-v1.png` small with its column dropping a little, label \"stimulus: body temperature falls\". On",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the coded `LoopRing`, five empty slots on a circle. On \"cold wind\" a small grey tag at the upper left: \"outside change: cold wind\" (kept grey, outside the ring, so the external change is never a slot). On \"stimulus\" the top slot lights: `m8-thermometer-v1.png` small with its column dropping a little, label \"stimulus: body temperature falls\". On \"receptor\" the next slot lights with a cropped-in view of `m8-skin-cross-section-v1.png` (`Cam` zoom, no stretching) and a callout to a skin temperature sensor, label \"receptor: thermoreceptors (skin, hypothalamus)\". On \"hypothalamus, a small region at the base of the brain\" `b3a2-brain-v1.png` fills the control centre slot, with a `scribbleEllipse` round the hypothalamus region above the pituitary stalk, label \"control centre: hypothalamus\". A `SignalPulse` travels from receptor to control centre on \"compares that signal\"; a small grey tag \"compares with set point (about 37 °C)\". On \"effectors\" the effector slot lights; on \"Skeletal muscles start shivering\" new `m8-skeletal-muscle-v1.png` appears in the slot with a small coded tremor (2 px, 8 Hz, only while the word sounds); on \"arterioles, narrow\" a small coded arteriole outline beside it narrows (two lines drawing closer), label \"skin arterioles narrow\". A `SignalPulse` runs from control centre to effector. On \"response\" the last slot lights: label \"response: more heat made, less lost\"; the thermometer column in the stimulus slot rises back. Each label dims to grey as the next writes, so at most three are bright. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "ScribbleCircle",
+        "Cam lens zoom",
+        "DrawPath",
+        "counter and bar fill",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "why-negative",
+      "visualDecision": "new",
+      "visualReference": "the ring stays at the left; the return arrow from response to stimulus draws in bright amber with a large minus sign on \"opposite way\".",
+      "teachingReason": "Why it's called negative: Here's the key idea.",
+      "narrationCue": "negative feedback",
+      "motionPurpose": "On the spoken cues: Two small arrows appear in the stimulus slot: a down arrow \"fell\" and an up arrow \"raised\" on cue. On \"negative feedback\" a gloss writes: \"negative feedback: the response opposes the change\". On \"not bad\" a grey chip \"negative = harmful\" takes a scribble cross. On \"As temperature returns\" the",
+      "motionRole": "explain",
+      "onScreenChange": "the ring stays at the left; the return arrow from response to stimulus draws in bright amber with a large minus sign on \"opposite way\". Two small arrows appear in the stimulus slot: a down arrow \"fell\" and an up arrow \"raised\" on cue. On \"negative feedback\" a gloss writes: \"negative feedback: the response opposes the change\". On \"not bad\" a grey chip \"negative = harmful\" takes a scribble cross. On \"As temperature returns\" the `SignalPulse` dots between receptor and control centre become fewer and fainter, and the muscle tremor eases to a faint, steady flicker (it does not stop). On \"settles to what's needed, not to zero\" the gloss dims and a small coded \"heat made\" bar beside the effector slot drops from tall to a low bar that stays above the zero line, tag \"still some extra heat while it is cold\" (learning review 1: a persistent low baseline). On \"small delays\" the trace panel returns at the right: the teal trace dips below 37 after a marker \"cold wind\", rises back, overshoots slightly, settles, inside the band; a grey tag \"small drift either side is normal\". Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "positive-feedback",
+      "visualDecision": "adjust",
+      "visualReference": "the ring dims and moves to the upper left.",
+      "teachingReason": "Positive feedback, the contrast: Compare that with positive feedback, where the response strengthens the original change.",
+      "narrationCue": "positive feedback",
+      "motionPurpose": "On the spoken cues: New `m8-vessel-tear-platelets-early-v1.png` enters at the centre. On \"platelets\" a grey gloss: \"platelets: cell fragments in blood that help it clot\". On \"call in more platelets\" a small coded ring of two slots appears beside the plate (\"more platelets stick\" → \"more chemicals released\") with a",
+      "motionRole": "explain",
+      "onScreenChange": "the ring dims and moves to the upper left. New `m8-vessel-tear-platelets-early-v1.png` enters at the centre. On \"platelets\" a grey gloss: \"platelets: cell fragments in blood that help it clot\". On \"call in more platelets\" a small coded ring of two slots appears beside the plate (\"more platelets stick\" → \"more chemicals released\") with a bright amber return arrow carrying a plus sign; it cycles twice on \"which release more chemicals\". On \"until the hole is plugged\" the plate cross-fades to its matched state `m8-vessel-tear-plug-v1.png` and the plus loop stops, with a small label \"end point: tear sealed\". On \"drives a process to an end point\" a two-column chip writes at the right: \"negative: opposes, holds steady\" and \"positive: amplifies, to an end point\". At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "glucose-template",
+      "visualDecision": "adjust",
+      "visualReference": "the loop ring returns to the centre with its slots emptied.",
+      "teachingReason": "Same template, different parts: The same five-part template fits other variables.",
+      "narrationCue": "Blood glucose rises / Cells in the pancreas / insulin / liver and muscle cells / falls back / a later video",
+      "motionPurpose": "On the spoken cues: On \"Blood glucose rises\" the stimulus slot writes \"stimulus: blood glucose rises\" with a small coded up arrow. On \"Cells in the pancreas\" `m8-pancreas-v1.png` drops into the receptor slot and slides across into the control centre slot as well, the two slots joined by a bracket, label \"receptor and",
+      "motionRole": "explain",
+      "onScreenChange": "the loop ring returns to the centre with its slots emptied. On \"Blood glucose rises\" the stimulus slot writes \"stimulus: blood glucose rises\" with a small coded up arrow. On \"Cells in the pancreas\" `m8-pancreas-v1.png` drops into the receptor slot and slides across into the control centre slot as well, the two slots joined by a bracket, label \"receptor and control centre: pancreas\". On \"insulin\" a `SignalPulse` in a different colour (a dot in a short coded vessel line, signalling a hormone in the blood) runs to the effector slot; label \"insulin (a hormone)\". On \"liver and muscle cells\" the effector slot writes \"effectors: liver and muscle cells\" (no plate needed; the label names cells not organs; `m8-skeletal-muscle-v1.png` small, grey). On \"falls back\" the response slot writes \"glucose taken up, level falls\"; the return arrow draws with its minus sign. On \"a later video\" a small grey \"Coming up: insulin and glucagon\" chip. Hold one second.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "exam-checks",
+      "visualDecision": "new",
+      "visualReference": "the temperature loop ring from scene 4 returns, full.",
+      "teachingReason": "Two exam checks: When you read a loop in an exam, check two things.",
+      "narrationCue": "Air temperature might cause the change / receptors detect the change in the variable",
+      "motionPurpose": "On the spoken cues: Two numbered chips write at the right: \"1. Which variable? Inside the body.\" and \"2. Which way? Opposes = negative.\" On \"Air temperature might cause the change\" the grey \"outside change: cold wind\" tag pulses and a grey chip \"air temperature is the regulated variable\" takes a scribble cross. On",
+      "motionRole": "explain",
+      "onScreenChange": "the temperature loop ring from scene 4 returns, full. Two numbered chips write at the right: \"1. Which variable? Inside the body.\" and \"2. Which way? Opposes = negative.\" On \"Air temperature might cause the change\" the grey \"outside change: cold wind\" tag pulses and a grey chip \"air temperature is the regulated variable\" takes a scribble cross. On \"receptors detect the change in the variable\" a callout traces from the stimulus slot to the receptor slot; a grey chip \"receptor detects the response\" takes a scribble cross. At most three bright items. Hold one second.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "memory",
+      "visualDecision": "new",
+      "visualReference": "the ring shrinks; around it the five initials write in large handwriting, one on each slot as spoken: \"S\", \"R\", \"C\", \"E\", \"R\", with the line \"Some Really Cool Elephants Run\" written under the ring.",
+      "teachingReason": "Memory: To remember the order: Some Really Cool Elephants Run.",
+      "narrationCue": "opposes the change",
+      "motionPurpose": "On the spoken cues: On \"opposes the change\" the minus sign on the return arrow pulses. Hold half a second.",
+      "motionRole": "explain",
+      "onScreenChange": "the ring shrinks; around it the five initials write in large handwriting, one on each slot as spoken: \"S\", \"R\", \"C\", \"E\", \"R\", with the line \"Some Really Cool Elephants Run\" written under the ring. On \"opposes the change\" the minus sign on the return arrow pulses. Hold half a second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold half a second"
+    },
+    {
+      "sceneId": "attempt",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt one (construct a loop)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Two exam questions. First. During exercise, blood carbon",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (construct a loop))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"During exercise, respiring muscle cells release more carbon dioxide into the blood. Chemoreceptors in the brainstem and in the walls of major arteries detect the rise in blood carbon dioxide concentration. The medulla oblongata, part of the brainstem, sends nerve impulses to the diaphragm and the muscles between the ribs. The rate and depth of breathing increase.\" Demand: \"(a) Construct a negative feedback loop for this response, naming each of the five components. (3 marks) (b) Explain why this is an example of negative feedback. (2 marks)\". An empty five-slot ring outline sits beside the answer lines as a drawing space (no labels). No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-one",
+      "visualDecision": "new",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "opposes the rise / classic mistake",
+      "motionPurpose": "On the spoken cues: As each component is spoken, its given phrase in the stem takes an amber underline (\"blood carbon dioxide concentration\", \"Chemoreceptors\", \"medulla oblongata\", \"diaphragm and the muscles between the ribs\", \"rate and depth of breathing increase\") and the matching slot of the drawn ring fills with",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. As each component is spoken, its given phrase in the stem takes an amber underline (\"blood carbon dioxide concentration\", \"Chemoreceptors\", \"medulla oblongata\", \"diaphragm and the muscles between the ribs\", \"rate and depth of breathing increase\") and the matching slot of the drawn ring fills with that short label. On \"opposes the rise\" the return arrow draws with a minus sign; (the spoken self-limiting recap is cut: scene 5 taught it). On \"classic mistake\" a chip \"Stimulus: exercise\" writes and takes a scribble cross, with small text \"exercise is the cause; the stimulus is the change in CO₂\". Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "attempt-two",
+      "visualDecision": "new",
+      "visualReference": "the board clears.",
+      "teachingReason": "Unseen transfer task (attempt two (interpret a graph)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Second. A healthy adult moved from a room",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (interpret a graph))",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A healthy adult sat in a room at 22 °C, then moved into a room at 5 °C for 60 minutes. The graph shows air temperature and the adult's core body temperature.\" The coded `lineGraph` with two y axes: left \"air temperature (°C)\" 0 to 25, right \"core body temperature (°C)\" 36.0 to 37.5; x axis \"time (min)\" 0 to 70. Grey air line at 22 to minute 10, dropping to 5 and flat. Teal core line at 37.0 to minute 10, falling to 36.6 at minute 20, rising to 36.9 at minute 32, then wobbling between 36.8 and 37.0 to minute 70. A small grey tag \"teaching data\". Demand: \"(a) Identify the variable being regulated. (1 mark) (b) Explain the pattern in core body temperature after the move, with reference to negative feedback. (3 marks)\". **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "feedback-two",
+      "visualDecision": "new",
+      "visualReference": "the card stays.",
+      "teachingReason": "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+      "narrationCue": "core body temperature / small fall / hypothalamus ... recovered / classic mistake",
+      "motionPurpose": "On the spoken cues: On \"core body temperature\" the right axis label and the teal line take an amber underline and highlight. On \"small fall\" a small marker writes at the dip \"36.6 °C, stimulus\". On \"hypothalamus ... recovered\" a mini loop ring (thumbnail) appears beside the graph and lights slot by slot; the rising",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays. On \"core body temperature\" the right axis label and the teal line take an amber underline and highlight. On \"small fall\" a small marker writes at the dip \"36.6 °C, stimulus\". On \"hypothalamus ... recovered\" a mini loop ring (thumbnail) appears beside the graph and lights slot by slot; the rising part of the teal line brightens. The section from minute 32 to 70 stays at normal brightness, with its thin band, but is not narrated (the second oscillation account is cut, learning review 2). On \"classic mistake\" a chip \"regulated variable: air temperature\" writes and takes a scribble cross; the grey air line pulses at 5. Settle one second.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "chip pop"
+      ],
+      "holdPurpose": "Settle on the model answer for about a second"
+    },
+    {
+      "sceneId": "decision-rule",
+      "visualDecision": "adjust",
+      "visualReference": "three step chips write on, one per cue: \"variable inside the body?\", \"five parts in order\", \"response opposes?\".",
+      "teachingReason": "Decision rule and handoff: So for any loop, name the variable inside the body, trace the five parts in order, and check that the response opposes the change.",
+      "narrationCue": "So for any loop, name the variable inside",
+      "motionPurpose": "On the spoken cues: The loop ring returns small above them. A \"Next\" chip slides in at the lower right: \"Next: How do endotherms regulate body temperature?\" with a small `m8-skin-cross-section-v1.png` thumbnail. Hold half a second before the notes.",
+      "motionRole": "explain",
+      "onScreenChange": "three step chips write on, one per cue: \"variable inside the body?\", \"five parts in order\", \"response opposes?\". The loop ring returns small above them. A \"Next\" chip slides in at the lower right: \"Next: How do endotherms regulate body temperature?\" with a small `m8-skin-cross-section-v1.png` thumbnail. Hold half a second before the notes.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "Enter slide",
+        "chip pop",
+        "Plate"
+      ],
+      "holdPurpose": "Hold half a second before the notes"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b01-learning-review.md",
+      "sha256": "0df6c3b75b97e430954b1bcfe74e4da9347c5a64fe2a72990ab5f96ab0d0f6ca"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8b01-claude-science-check.md",
+      "sha256": "1e3a816489a836bc0f46171d44fbcecf849dd57eed5907962b2b684cffbc97a5"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7g03/measured/lesson.json",
+    "lessonSha256": "3eeb320db94e54b000a1d2bbde0a8c10ee913fe41596f2f0e8bd18ef113c3f70"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "From c13: the reaction map; the four moves (name and count, work backwards, choose, write forwards and check); \"work backwards to plan, write forwards to answer\"; the main road from ethene; the haloalkane side road; dead end; intermediate; overall yield. From c04a: an unsymmetrical alkene can give two products, a symmetrical one gives one; water or HX on propene goes mainly to the middle carbon. From c04b: UV substitution gives a mixture. From c06: hydroxide takes the halogen's place on the same carbon. From c08a: the class rule (primary to aldehyde or acid, secondary to ketone, tertiary no reaction); distil against reflux; [O]; orange to green. From c08b: ketone names with locants (hexan-2-one, hexan-3-one). From c10: the ester cut at the single-bonded O; naming order (alkyl first, then \"-oate\"); ⇌; keeping a portion of an alcohol back. From c01: numbering carbons; isomers (same formula, different structure).",
+    "startsWith": "An unseen target with two possible starting materials. The video opens: A synthesis question gives you a target and a short list of things you're allowed to start from.",
+    "stopsAfter": "choosing between isomeric starting materials by the carbon the group must sit on; writing a two-step route with an equation per step; building a four-reaction route from one starting material used in two roles; explaining a low overall yield; finding and correcting a wrong box and a wrong arrow in a given flow chart.",
+    "nextLesson": "addition polymers (route chem-m7-c14, \"How does an alkene become an addition polymer?\")."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-g03.md"
+  ],
+  "teaching": {
+    "task": "A synthesis question gives you a target and a short list of starting materials. How do you choose the start that puts each group on the right carbon, write every step with its conditions, and check a route for the box or arrow that quietly makes an isomer instead of the target?",
+    "causalExplanation": "Why hex-3-ene: it is symmetrical, so the OH can only land on C3 (2b). Why hex-1-ene fails: water adds mainly to C2 (2b), and oxidation keeps the C=O where the OH was, so it makes an isomer (2d). Why the hydration arrow and the ester arrow get ⇌: both are equilibria (2c, 3c). Why the ketone stays: dichromate doesn't oxidise it further (2c). Why ethane needs chloroethane: no reaction met turns an alkane straight into an alcohol (3b). Why split the ethanol: the ester needs both the acid and the alcohol (3c, 3e). Why the yield is low: a mixture, an equilibrium, losses at several stages (3d). Why but-1-ene fails in Q3: mainly butan-2-ol, a secondary alcohol, gives a ketone dead end (4b). Why distillation fails: the aldehyde leaves before it is oxidised further (4c). Why 1-chlorobutane works: hydroxide takes the chlorine's place on the same carbon (4d). Why fixing only the arrow fails: reflux can't change which alcohol formed (4e).",
+    "conversationalApproach": "A synthesis question gives a target and a short list of allowed starting materials, and the four moves from c13 (name and count, work backwards, choose, write forwards and check) still work, but exam questions hide their traps in the choice. Q1 (hexan-3-one from hex-1-ene or hex-3-ene) counts six carbons, needs hexan-3-ol, and chooses the symmetrical hex-3-ene so the OH can only land on carbon three, then writes hydration with a double arrow and dichromate oxidation under reflux; the classic slip makes hexan-2-one, an isomer. Q2 (ethyl ethanoate from ethane alone) works backwards from the ester cut, finds that both halves come from ethanol and that ethanol comes through chloroethane, then writes four reactions forwards with a split of the ethanol, and explains the low yield from the mixed chlorination, the esterification equilibrium and losses; the slip oxidises all the ethanol. Q3 (checking a plan for propyl butanoate) finds a wrong box, since but-1-ene gives mainly butan-2-ol and then butanone, and a wrong arrow, since distilling stops at the aldehyde, then rebuilds the route from 1-chlorobutane; the slip fixes only the arrow. A decision board closes: count carbons, choose the start that puts the group on the right carbon, split a shared start, and write every arrow with its conditions.",
+    "openingDecision": "A synthesis question gives you a target and a short list of things you're allowed to start from. The four moves from the last video still work: name and count, work backwards, choose, then write forwards and check. But exam questions hide their traps in the choice: two starting materials that look almost the same, or a route that puts a group on the wrong carbon and makes an isomer of the target instead. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.",
+    "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): Q1's both alkenes and \"two-step\"; Q2's \"only carbon-containing starting material\" and \"inorganic reagents may be used\"; Q3's full student chart, the three available starting materials and \"TWO errors\". Nothing answer-bearing during the holds; the check strip dims.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p56), as printed: \"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\" \"write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):\" (listed examples: combustion, dehydration, substitution with HX, oxidation; G03 practises oxidation, with each step's equation in Q1) Practice and transfer only: first coverage stays with chem-m7-c13 (C7-IQ5-06) and chem-m7-c08a (C7-IQ4-04); G03 adds practice rows. starts at the route's \"Read a target and allowed starting materials\" and stops at its \"Solve and check multi-step transformations and isomers\". Three questions, each a chain with one trap: (1) hexan-3-one from hex-1-ene or hex-3-ene: choose the starting material by where the OH must sit, write a two-step flow chart with an equation per step (trap: hex-1-ene makes hexan-2-one, an isomer of the target); (2) ethyl ethanoate from ethane only: work backwards through the ester cut, go through a haloalkane, split the ethanol, then explain the low overall yield (trap: oxidising all the ethanol); (3) a student's flow chart for propyl butanoate with two errors, one in a box (but-1-ene gives mainly butan-2-ol, an isomer, which only reaches a ketone) and one on an arrow (distil instead of reflux): identify, explain, correct (trap: fixing only the arrow). Not here: the reaction map and the four moves themselves (c13, recalled in one clause each); mechanisms and Markovnikov's rule by name (c13 author note c; the narration says \"mainly onto carbon two\"); alcoholic NaOH elimination; reductions; yield calculations; purification detail (one grey chip \"separate it\" only); polymers (c14)."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "One practice board throughout, in the G02 layout: top-left the question card (stem, starting materials and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through each question; the working fills the right two thirds; a type badge top-right (\"Choose the start\", \"From one starting material\", \"Check a plan\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used. A check strip on the far left carries four rows, \"count carbons?\", \"group on the right carbon?\", \"conditions on every arrow?\", \"every box and arrow possible?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Colour key from c13 and c08a: C=C teal, C–X orange-brown, OH ringed red, C=O and –COO– in navy; condition chips grey with the current arrow's chips bright; amber only for underlined givens and the path trace. Molecules are coded structural formulas in the c08a style. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once (a whole flow chart counts as one item once complete); completed arrows' chips dim while the current arrow writes; each tag fades when the next cue lands.",
+    "transitionPlan": "The heading writes on and the c13 reaction map draws small and grey as four move cards light one at a time; each question opens on a fresh board with the type badge hidden while the worded card writes with its demands and answer boxes; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given as it is used; the carbon ruler numbers the target and its C=O rings, the alkene models compare where the OH can land and the wrong one dims; the c13 flow chart builder runs left to right, each arrow's chips writing in spoken order; the ester cut slides the two halves apart and the backward chain writes; the yield funnel fans the chlorination into its mixture chips; the student's chart stays readable as a wrong box and then a wrong arrow ring and the corrected chart builds beside it; each question ends with its classic slip chip taking a red scribble cross; the check strip returns full size as a two-column board, each row lighting on its cue with its question badge; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading \"Synthesis practice: right group, right carbon, every arrow\" writes on.",
+      "teachingReason": "Hook: A synthesis question gives you a target and a short list of things you're allowed to start from.",
+      "narrationCue": "check / choice / isomer",
+      "motionPurpose": "On the spoken cues: The c13 reaction map card draws small and grey at the right; on \"check\" four small coded cards light one at a time beside it (\"1 name, count\", \"2 backwards\", \"3 choose\", \"4 forwards, check\") and dim. On \"choice\" two near-identical grey alkene sketches write side by side (no names, no numbers;",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Synthesis practice: right group, right carbon, every arrow\" writes on. The c13 reaction map card draws small and grey at the right; on \"check\" four small coded cards light one at a time beside it (\"1 name, count\", \"2 backwards\", \"3 choose\", \"4 forwards, check\") and dim. On \"choice\" two near-identical grey alkene sketches write side by side (no names, no numbers; nothing answer-bearing), each with a \"?\" tag. On \"isomer\" two ketone sketches appear under them with one shared grey tag \"same formula\", their C=O groups on different carbons, and a red \"≠\" between them. The check strip builds on the left: \"count carbons?\", \"group on the right carbon?\", \"conditions on every arrow?\", \"every box and arrow possible?\". The sketches become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath"
+      ],
+      "holdPurpose": "Hold about 1 second; the check strip shrinks to the far left"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: choose the start) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. A chemist needs hexan-3-one, and can",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: choose the start)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A chemist needs to make hexan-3-one, CH₃CH₂COCH₂CH₂CH₃. The only carbon-containing starting materials available are hex-1-ene and hex-3-ene.\" Demands: \"(a) Explain which starting material should be used.\" \"(b) Construct a flow chart for a two-step synthesis of hexan-3-one. Include the reagents and conditions for each step, and write a balanced equation for each step.\" Two answer boxes. No structures, no map. Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-choose",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Which carbon, which alkene: Count first.",
+      "narrationCue": "three / symmetrical / two",
+      "motionPurpose": "On the spoken cues: Type badge \"Choose the start\". \"hexan-3-one, CH₃CH₂COCH₂CH₂CH₃\" underlines; its structure draws at the right with the carbon ruler (1 to 6) and, on \"three\", C3's C=O ringed amber (tag \"C=O on C3\"). The c13 carbon tally ticks \"6\" under the target, then \"6\" under each alkene name (grey tag \"same",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Choose the start\". \"hexan-3-one, CH₃CH₂COCH₂CH₂CH₃\" underlines; its structure draws at the right with the carbon ruler (1 to 6) and, on \"three\", C3's C=O ringed amber (tag \"C=O on C3\"). The c13 carbon tally ticks \"6\" under the target, then \"6\" under each alkene name (grey tag \"same chain length\"). A backward hook runs from the target to a \"?\" box that resolves into \"hexan-3-ol\" with its OH on C3 (grey chip \"c08a: oxidation keeps the group on the same carbon\"). Strip: \"count carbons?\" ticks. On \"symmetrical\" \"hex-3-ene\" underlines; its structure draws (C=C teal between C3 and C4) and the c04a two-way docker runs: an OH docks on C3, then ghosted on C4, and the second product flips to show it is the same molecule, \"hexan-3-ol\" (tag \"symmetrical: one product\"). On \"two\" \"hex-1-ene\" underlines; its structure draws and the two-way docker runs: OH bold on C2, faint on C1, giving a large \"hexan-2-ol\" and a small faint \"hexan-1-ol\" (tag \"mainly hexan-2-ol\"; grey chip \"c04a\"). Answer box (a) writes: \"Hex-3-ene. It is symmetrical, so water adds to give only hexan-3-ol, which oxidises to hexan-3-one. Hex-1-ene gives mainly hexan-2-ol.\" Strip: \"group on the right carbon?\" ticks. Bright at the end: the hex-3-ene product, its tag, answer (a).",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-route",
+      "visualDecision": "new",
+      "visualReference": "the hex-1-ene models dim out.",
+      "teachingReason": "Two steps, two equations: So use hex-3-ene.",
+      "narrationCue": "hexan-3-ol / reflux / balance",
+      "motionPurpose": "On the spoken cues: The c13 flow chart builder runs left to right in answer box (b): box \"hex-3-ene, CH₃CH₂CH=CHCH₂CH₃\"; on \"hexan-3-ol\" the arrow draws as ⇌ with chips in spoken order, \"H₂O\", \"dilute acid catalyst\", \"heat\"; box \"hexan-3-ol, CH₃CH₂CH(OH)CH₂CH₂CH₃\" (tag \"intermediate\"). On \"reflux\" the second arrow",
+      "motionRole": "explain",
+      "onScreenChange": "the hex-1-ene models dim out. The c13 flow chart builder runs left to right in answer box (b): box \"hex-3-ene, CH₃CH₂CH=CHCH₂CH₃\"; on \"hexan-3-ol\" the arrow draws as ⇌ with chips in spoken order, \"H₂O\", \"dilute acid catalyst\", \"heat\"; box \"hexan-3-ol, CH₃CH₂CH(OH)CH₂CH₂CH₃\" (tag \"intermediate\"). On \"reflux\" the second arrow writes \"K₂Cr₂O₇ / H⁺\", \"heat under reflux\" (the first arrow's chips dim); box \"hexan-3-one, CH₃CH₂COCH₂CH₂CH₃\"; a small grey chip \"orange → green\" and a grey chip \"c08a: secondary → ketone; no further oxidation\". On \"balance\" two equation lines write under the chart: \"C₆H₁₂ + H₂O ⇌ C₆H₁₄O\" and \"C₆H₁₄O + [O] → C₆H₁₂O + H₂O\", with a small grey atom tally beside the second (\"H: 14 = 12 + 2; O: 1 + 1 = 1 + 1\") that fades. Strip: \"conditions on every arrow?\" and \"every box and arrow possible?\" tick. Bright at the end: the complete chart (one item) and the two equations.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"hex-1-ene → (H₂O, dilute acid, heat) → hexan-2-ol → hexan-3-one\" fades in.",
+      "teachingReason": "The classic mistake: The classic slip is picking hex-1-ene anyway.",
+      "narrationCue": "hexan-2-one",
+      "motionPurpose": "On the spoken cues: On \"hexan-2-one\" the isomer pair card writes beside it: \"hexan-3-one\" (C=O on C3 ringed amber) and \"hexan-2-one\" (C=O on C2 ringed red), with one shared grey tag \"both C₆H₁₂O: isomers\" and a one-line gloss \"isomers: same formula, different structure\"; the chip's last box takes a red scribble cross",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"hex-1-ene → (H₂O, dilute acid, heat) → hexan-2-ol → hexan-3-one\" fades in. On \"hexan-2-one\" the isomer pair card writes beside it: \"hexan-3-one\" (C=O on C3 ringed amber) and \"hexan-2-one\" (C=O on C2 ringed red), with one shared grey tag \"both C₆H₁₂O: isomers\" and a one-line gloss \"isomers: same formula, different structure\"; the chip's last box takes a red scribble cross and relabels \"hexan-2-one\" (caption \"the C=O forms where the OH was: wrong carbon, wrong compound\").",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 2: one starting material) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. A chemist has only ethane as",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: one starting material)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"Ethane, CH₃CH₃, is the only carbon-containing starting material available. Inorganic reagents may be used.\" Demands: \"(a) Construct a flow chart for the synthesis of ethyl ethanoate, CH₃COOCH₂CH₃, from ethane. Name each intermediate and include the reagents and conditions for every step.\" \"(b) Explain why the overall yield of ethyl ethanoate from ethane is expected to be low.\" Two answer boxes. No structures, no map. Nothing answer-bearing. **Countdown ring 10 seconds**; check strip dims; card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-backwards",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Cut the ester, find the alcohol: Work backwards.",
+      "narrationCue": "ethanol / haloalkane",
+      "motionPurpose": "On the spoken cues: Type badge \"From one starting material\". \"ethyl ethanoate, CH₃COOCH₂CH₃\" underlines; its structure draws and the c13 ester cut runs at the single-bonded O; the halves slide apart and relabel \"ethanoic acid\" (upper) and, on \"ethanol\", \"ethanol\" (lower), each with a dashed amber backward arrow. The",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"From one starting material\". \"ethyl ethanoate, CH₃COOCH₂CH₃\" underlines; its structure draws and the c13 ester cut runs at the single-bonded O; the halves slide apart and relabel \"ethanoic acid\" (upper) and, on \"ethanol\", \"ethanol\" (lower), each with a dashed amber backward arrow. The carbon tally ticks \"2 + 2 = 4\" (strip: \"count carbons?\" ticks). A backward hook runs from \"ethanoic acid\" to a box that resolves into \"ethanol\" (tag \"acid ← primary alcohol\"); the two ethanol boxes merge into one with a grey tag \"used twice\". On \"haloalkane\" a backward hook runs from ethanol to \"ethane\", is stamped by the c13 cross-out arrow (tag \"no direct alkane → alcohol\"), and reroutes through a \"chloroethane\" box (grey chip \"c04b, c06\"). On the map card, the matching arrows glow amber in reverse order. Bright at the end: the backward chain ethane → chloroethane → ethanol → acid and the \"used twice\" tag.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-forwards",
+      "visualDecision": "new",
+      "visualReference": "the backward chain dims to grey.",
+      "teachingReason": "Four reactions, one split: Now write it forwards.",
+      "narrationCue": "mixture / split / arrow",
+      "motionPurpose": "On the spoken cues: The flow chart builder runs in answer box (a), each arrow's chips in spoken order and completed chips dimming: box \"ethane, CH₃CH₃\"; on \"mixture\" arrow \"Cl₂\", \"UV light\" with a small grey chip \"mixture: separate the chloroethane\" (and \"+ HCl\"); box \"chloroethane, CH₃CH₂Cl\" (tag \"intermediate\");",
+      "motionRole": "explain",
+      "onScreenChange": "the backward chain dims to grey. The flow chart builder runs in answer box (a), each arrow's chips in spoken order and completed chips dimming: box \"ethane, CH₃CH₃\"; on \"mixture\" arrow \"Cl₂\", \"UV light\" with a small grey chip \"mixture: separate the chloroethane\" (and \"+ HCl\"); box \"chloroethane, CH₃CH₂Cl\" (tag \"intermediate\"); arrow \"NaOH(aq)\", \"heat under reflux\"; box \"ethanol, CH₃CH₂OH\" (tag \"intermediate\"). On \"split\" the ethanol box divides into two portions with a fork (tag \"split: keep a portion back\"). Upper arm: arrow \"excess K₂Cr₂O₇ / H⁺\", \"heat under reflux\"; box \"ethanoic acid, CH₃COOH\" (tag \"intermediate\"). The arms meet at a join arrow, drawn as ⇌: \"conc. H₂SO₄ (a few drops)\", \"heat under reflux\"; box \"ethyl ethanoate, CH₃COOCH₂CH₃ + H₂O\". On \"arrow\" the ⇌ pulses (tag \"equilibrium: ⇌\"). Strip: \"conditions on every arrow?\" ticks. Bright at the end: the complete branched chart (one item) and the \"split\" tag.",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-yield",
+      "visualDecision": "new",
+      "visualReference": "the chart shrinks to the top of the working area.",
+      "teachingReason": "Why so little ester: Part b.",
+      "narrationCue": "chloroethane / completion / losses",
+      "motionPurpose": "On the spoken cues: The yield funnel draws beneath it: on \"chloroethane\" step 1 fans into three small chips, \"CH₃CH₂Cl\" (bright), \"CH₂ClCH₂Cl\" and \"CH₃CHCl₂\" (grey), tag \"more chlorines: a mixture\"; on \"completion\" step 4 draws as ⇌ with a half-filled product bar, tag \"equilibrium: not complete\"; on \"losses\" a grey",
+      "motionRole": "explain",
+      "onScreenChange": "the chart shrinks to the top of the working area. The yield funnel draws beneath it: on \"chloroethane\" step 1 fans into three small chips, \"CH₃CH₂Cl\" (bright), \"CH₂ClCH₂Cl\" and \"CH₃CHCl₂\" (grey), tag \"more chlorines: a mixture\"; on \"completion\" step 4 draws as ⇌ with a half-filled product bar, tag \"equilibrium: not complete\"; on \"losses\" a grey \"lost product\" dot drops from several steps (no count shown) and a grey tag writes \"losses at several stages\". Answer box (b) writes three short lines: \"UV substitution gives a mixture: only part is chloroethane.\" / \"Esterification is an equilibrium: incomplete.\" / \"Product is lost at several stages.\" Strip: \"every box and arrow possible?\" ticks. Bright at the end: the funnel's mixture fan, the ⇌ bar and answer (b).",
+      "motionTools": [
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"all ethanol → ethanoic acid → + ? → ester\" fades in; on \"all\" the \"+ ?\" rings and the chip takes a red scribble cross (caption \"the ester needs the acid and the alcohol: keep some ethanol back\").",
+      "teachingReason": "The classic mistake: The classic slip is oxidising all of the ethanol.",
+      "narrationCue": "all",
+      "motionPurpose": "On the spoken cues: a chip \"all ethanol → ethanoic acid → + ? → ester\" fades in; on \"all\" the \"+ ?\" rings and the chip takes a red scribble cross (caption \"the ester needs the acid and the alcohol: keep some ethanol back\").",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"all ethanol → ethanoic acid → + ? → ester\" fades in; on \"all\" the \"+ ?\" rings and the chip takes a red scribble cross (caption \"the ester needs the acid and the alcohol: keep some ethanol back\").",
+      "motionTools": [
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 3: check a plan) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. A student planned this flow chart",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: check a plan)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"A student planned the synthesis of propyl butanoate, CH₃CH₂CH₂COOCH₂CH₂CH₃. The starting materials available were but-1-ene, 1-chlorobutane and 1-chloropropane. The student's flow chart is shown.\" The chart, drawn as printed, in grey ink: \"but-1-ene → (H₂O, dilute acid catalyst, heat, ⇌) → butan-1-ol → (K₂Cr₂O₇ / H⁺, heat, distil) → butanoic acid\"; \"1-chloropropane → (NaOH(aq), heat under reflux) → propan-1-ol\"; the two arms join \"→ (conc. H₂SO₄, heat under reflux, ⇌) → propyl butanoate + H₂O\". Demands: \"(a) Identify TWO errors in the student's flow chart and explain the effect of each error.\" \"(b) Construct a corrected flow chart for the synthesis, using the available starting materials.\" Two answer boxes. Nothing answer-bearing (no rings or marks on the chart). **Countdown ring 10 seconds**; check strip dims; card and chart stay on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-error1",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip, the student's chart kept readable at the top of the working area (G03 build rule: if the chart cannot be read when shrunk, the stem shrinks and the chart stays full size).",
+      "teachingReason": "A wrong box: Check every box, not just the arrows.",
+      "narrationCue": "butan-1-ol / butanone",
+      "motionPurpose": "On the spoken cues: Type badge \"Check a plan\". Staged so that only one stage is bright at a time (learning review 2). Stage 1, on \"butan-1-ol\": the chart's first arrow and its two boxes are the only bright part of the chart (the rest dims to grey); but-1-ene draws with the carbon ruler and the two-way docker runs (OH",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip, the student's chart kept readable at the top of the working area (G03 build rule: if the chart cannot be read when shrunk, the stem shrinks and the chart stays full size). Type badge \"Check a plan\". Staged so that only one stage is bright at a time (learning review 2). Stage 1, on \"butan-1-ol\": the chart's first arrow and its two boxes are the only bright part of the chart (the rest dims to grey); but-1-ene draws with the carbon ruler and the two-way docker runs (OH bold on C2, faint on C1), giving a large \"butan-2-ol\" and a small faint \"butan-1-ol\" (tag \"mainly butan-2-ol\"); the chart's \"butan-1-ol\" box takes a red ring (error 1 marker \"1\"). Stage 2, on \"isomer\": the isomer pair card writes small (\"butan-1-ol\" against \"butan-2-ol\", shared grey tag \"both C₄H₁₀O: isomers\") and the docker models dim. Stage 3, on \"butanone\": the isomer pair card clears; a short arrow \"K₂Cr₂O₇ / H⁺\" draws from butan-2-ol to \"butanone\" (C=O on C2), and the c13 cross-out arrow stamps an arrow from butanone towards \"butanoic acid\" (tag \"ketone: dead end\"; grey chip \"c08a: secondary → ketone\"). Stage 4, after the structures dim: answer box (a) writes line 1: \"1. But-1-ene + water gives mainly butan-2-ol, not butan-1-ol. Butan-2-ol is secondary: it oxidises to butanone, a dead end, so the main route does not reach butanoic acid.\" Strip: \"group on the right carbon?\" ticks. Bright at the end: the dead-end cross and answer line 1 only.",
+      "motionTools": [
+        "Mark cross",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-error2",
+      "visualDecision": "new",
+      "visualReference": "the actual secondary route (butan-2-ol, butanone, the dead-end cross) dims to grey.",
+      "teachingReason": "A wrong arrow: Second error, and it's separate from the first: the oxidation arrow says distil.",
+      "narrationCue": "distil / reflux",
+      "motionPurpose": "On the spoken cues: The student's chart returns bright at its own \"butan-1-ol\" box, drawn as a dashed ghost with a grey tag \"if this box were right\" (learning review 1: no impossible arrow is invented; the ghost is a hypothesis, not a route). The chart's oxidation arrow chips \"heat, distil\" underline and take a red",
+      "motionRole": "explain",
+      "onScreenChange": "the actual secondary route (butan-2-ol, butanone, the dead-end cross) dims to grey. The student's chart returns bright at its own \"butan-1-ol\" box, drawn as a dashed ghost with a grey tag \"if this box were right\" (learning review 1: no impossible arrow is invented; the ghost is a hypothesis, not a route). The chart's oxidation arrow chips \"heat, distil\" underline and take a red ring (error 2 marker \"2\"); a small grey chip writes beside it, \"distil → butanal (escapes as it forms)\" (grey chip \"c08a: distil → aldehyde\"). On \"reflux\" a green replacement chip writes beneath the ring: \"excess K₂Cr₂O₇ / H⁺, heat under reflux\", with a small grey loop arrow beside it, tag \"condenser returns butanal: oxidised on to the acid\" (the distil chip dims). Answer box (a) adds line 2: \"2. Even from butan-1-ol, distillation removes butanal as it forms, so the acid isn't made. Use excess oxidant, heat under reflux.\" Strip: \"conditions on every arrow?\" ticks. Bright at the end: the two red rings and answer line 2.",
+      "motionTools": [
+        "Mark cross",
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-fix",
+      "visualDecision": "new",
+      "visualReference": "the student's chart dims to grey.",
+      "teachingReason": "The corrected chart: So start from 1-chlorobutane instead.",
+      "narrationCue": "butan-1-ol / butanoate",
+      "motionPurpose": "On the spoken cues: The flow chart builder runs in answer box (b): on \"butan-1-ol\" \"1-chlorobutane\" underlines in the card; box \"1-chlorobutane, CH₃CH₂CH₂CH₂Cl\" with C1 numbered → arrow \"NaOH(aq)\", \"heat under reflux\" (the c06 swap runs small: Cl lifts off, OH docks on C1; grey chip \"c06: same carbon\") → box",
+      "motionRole": "explain",
+      "onScreenChange": "the student's chart dims to grey. The flow chart builder runs in answer box (b): on \"butan-1-ol\" \"1-chlorobutane\" underlines in the card; box \"1-chlorobutane, CH₃CH₂CH₂CH₂Cl\" with C1 numbered → arrow \"NaOH(aq)\", \"heat under reflux\" (the c06 swap runs small: Cl lifts off, OH docks on C1; grey chip \"c06: same carbon\") → box \"butan-1-ol, CH₃CH₂CH₂CH₂OH\" → arrow \"excess K₂Cr₂O₇ / H⁺\", \"heat under reflux\" → box \"butanoic acid, CH₃CH₂CH₂COOH\". The lower arm copies across from the student's chart unchanged, with a small green tick: \"1-chloropropane → (NaOH(aq), heat under reflux) → propan-1-ol\". On \"butanoate\" the join arrow writes as ⇌, \"conc. H₂SO₄, heat under reflux\" → \"propyl butanoate, CH₃CH₂CH₂COOCH₂CH₂CH₃ + H₂O\" (the answer, bright); the c13 ester cut runs once on it as a check (halves \"propyl ← propan-1-ol\", \"butanoate ← butanoic acid\"). Strip: \"every box and arrow possible?\" ticks. Bright at the end: the corrected chart (one item).",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"but-1-ene → (H₂O, dilute acid, heat) → butan-2-ol → (excess K₂Cr₂O₇ / H⁺, reflux) → butanoic acid\" fades in; on \"butanone\" its last box relabels \"butanone\" and takes a red scribble cross (caption \"reflux can't fix the wrong alcohol: secondary → ketone\").",
+      "teachingReason": "The classic mistake: The classic slip is fixing only the arrow.",
+      "narrationCue": "butanone",
+      "motionPurpose": "On the spoken cues: On \"A wrong box\" a handwritten line writes under the board: \"A wrong box can hide behind a right arrow.\"",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"but-1-ene → (H₂O, dilute acid, heat) → butan-2-ol → (excess K₂Cr₂O₇ / H⁺, reflux) → butanoic acid\" fades in; on \"butanone\" its last box relabels \"butanone\" and takes a red scribble cross (caption \"reflux can't fix the wrong alcohol: secondary → ketone\"). On \"A wrong box\" a handwritten line writes under the board: \"A wrong box can hide behind a right arrow.\"",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "DrawPath",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "new",
+      "visualReference": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"carbon\" \"Count carbons; find the group's carbon → the target fixes where the OH must be (Q1, Q3)\"; \"Group on the right carbon → symmetrical alkene, or haloalkane with the halogen in place (Q1, Q3)\"; on \"split\" \"One starting material, two roles → split it; keep a portion back (Q2)\"; \"Conditions on every arrow → reflux with excess oxidant for an acid; ⇌ for hydration and esterification (Q1, Q2, Q3)\"; on \"isomer\" \"Every box and arrow possible → a wrong box makes an isomer or a dead end (Q1, Q3)\".",
+      "teachingReason": "Decision board: So for any synthesis question: count the carbons, and find which carbon each group has to sit on.",
+      "narrationCue": "carbon / split / isomer",
+      "motionPurpose": "On the spoken cues: Under the board, small, the c13 line: \"Work backwards to plan; write forwards to answer.\" On \"Next\" a chip \"Next: how does an alkene become an addition polymer?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"carbon\" \"Count carbons; find the group's carbon → the target fixes where the OH must be (Q1, Q3)\"; \"Group on the right carbon → symmetrical alkene, or haloalkane with the halogen in place (Q1, Q3)\"; on \"split\" \"One starting material, two roles → split it; keep a portion back (Q2)\"; \"Conditions on every arrow → reflux with excess oxidant for an acid; ⇌ for hydration and esterification (Q1, Q2, Q3)\"; on \"isomer\" \"Every box and arrow possible → a wrong box makes an isomer or a dead end (Q1, Q3)\". Under the board, small, the c13 line: \"Work backwards to plan; write forwards to answer.\" On \"Next\" a chip \"Next: how does an alkene become an addition polymer?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "Enter slide",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "table build"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g03-learning-review.md",
+      "sha256": "e4786fa86984794a79ef1d177963cd38c37d6b90769099db81f4bdf03d5780a6"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g03-claude-science-check.md",
+      "sha256": "c5ca3051808283dffd7768c8016831594cd8c9c75f027e3eb6bb80cf598d2791"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

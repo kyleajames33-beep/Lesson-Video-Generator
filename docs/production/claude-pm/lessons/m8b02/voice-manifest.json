@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B02-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b02/lesson.json",
+  "lessonSha256": "f234788e8fc4b2ba51a5aad9071807a1c6d632e133bcbc1b23d13540a347efeb",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b02/lesson.production-brief.json",
+    "sha256": "5c2b7e1b0b9216879dc66337570a3799bcadc15294180452bcecfe080a923299"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "In late November twenty eighteen, a heatwave hit far north Queensland, and Cairns reached over forty-two degrees. In about two days, roughly twenty-three thousand spectacled flying foxes died. These animals pant, lick themselves and fan their wings to cool down. So how do animals like them usually keep their temperature in range, and why did it fail here?",
+      "hash": "016afd2ed129",
+      "textSha256": "016afd2ed129222dad116cd71c63a80fc79a615c780e56e954bc9f306c8def8b",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/hook.016afd2ed129.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/hook.016afd2ed129.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/hook.016afd2ed129.generation.json",
+      "plannedRequestSha256": "49ef681e6f5d106faaeb8c9a1f323af7f4bc8b1d2d7e1e4cf4ab8e8b7203045a"
+    },
+    {
+      "id": "endotherms",
+      "parentSceneId": "endotherms",
+      "text": "Flying foxes, like kangaroos and humans, are endotherms: animals that make most of their body heat from their own metabolism. They use that heat and control heat loss to keep core temperature fairly steady. A lizard is an ectotherm: it gets most of its heat from its surroundings, and it still regulates, mainly by moving between sun and shade. Endotherms run the feedback loop from the last video.",
+      "hash": "b46966be4cfe",
+      "textSha256": "b46966be4cfefc06da1baa862a09bd082911ca65be6eebb23d990e0963f67865",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/endotherms.b46966be4cfe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/endotherms.b46966be4cfe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/endotherms.b46966be4cfe.generation.json",
+      "plannedRequestSha256": "116866864d5dcbc919596db66208d5dc7da4297c54db2caaf6a7d54211556a94"
+    },
+    {
+      "id": "neural-pathway",
+      "parentSceneId": "neural-pathway",
+      "text": "When core temperature rises, thermoreceptors in the hypothalamus detect warmer blood, and skin receptors detect changes in skin temperature. The hypothalamus compares this with the set point and sends nerve impulses to the effectors in the skin. Nerve signals are fast and targeted. That's the neural pathway.",
+      "hash": "f548bdb5a223",
+      "textSha256": "f548bdb5a223b341cf79dc8c8de165e548ad793d9e485ba91a0d04150a95b4e6",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/neural-pathway.f548bdb5a223.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/neural-pathway.f548bdb5a223.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/neural-pathway.f548bdb5a223.generation.json",
+      "plannedRequestSha256": "63f352b4385b35166cdeb173ea524b4e9fd4c8b836a0c465b93b9b627bbc0716"
+    },
+    {
+      "id": "vasodilation",
+      "parentSceneId": "vasodilation",
+      "text": "First effector: the skin's arterioles, the small arteries feeding it. The smooth muscle in their walls relaxes, so they widen. That's vasodilation. More warm blood flows close to the surface, the skin warms up, and it loses more heat to cooler air. Notice that the blood vessels don't move closer to the skin. They widen, so more blood flows through them.",
+      "hash": "f28c061bc7ee",
+      "textSha256": "f28c061bc7eed2f131f06f4dace6af92418e504c127b92a8e98d1d2c49460977",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/vasodilation.f28c061bc7ee.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/vasodilation.f28c061bc7ee.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/vasodilation.f28c061bc7ee.generation.json",
+      "plannedRequestSha256": "a5248b45b2334db6dd30d54249e4aab7249da1f8e05029b19a370e8b1c4ef6c8"
+    },
+    {
+      "id": "sweating",
+      "parentSceneId": "sweating",
+      "text": "Second effector: sweat glands release sweat onto the skin. The cooling comes from evaporation. Turning water into vapour takes energy, and that energy comes from the skin and the blood beneath it. So in humid air, where sweat evaporates slowly, sweating cools you far less, even though it's still pouring out.",
+      "hash": "5ff048e77085",
+      "textSha256": "5ff048e77085b2c6237075d170c0d679105e436c53190c571ad36aec92d11a0a",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/sweating.5ff048e77085.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/sweating.5ff048e77085.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/sweating.5ff048e77085.generation.json",
+      "plannedRequestSha256": "83810ac079d4810135903b3d0208763ddf8c455de92c6c41e795670b082ed7f2"
+    },
+    {
+      "id": "cold-and-hormones",
+      "parentSceneId": "cold-and-hormones",
+      "text": "In the cold, the loop runs the other way, as you saw last video. Arterioles narrow, muscles shiver, and hairs stand up to trap air. Hormones help too. In many mammals, a long cold spell raises the release of thyroxine, a hormone from the thyroid gland that raises the metabolic rate of cells, so they make more heat. Hormones travel in the blood, so they're slower than nerves, but their effects last longer. That's the hormonal pathway, and the two often work together.",
+      "hash": "d8bd12d433b6",
+      "textSha256": "d8bd12d433b6561323ebb2c3a920136d12adb43124661909a3c5886f12358213",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/cold-and-hormones.d8bd12d433b6.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/cold-and-hormones.d8bd12d433b6.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/cold-and-hormones.d8bd12d433b6.generation.json",
+      "plannedRequestSha256": "ad60fb8deffc8b13ed92104a3a6158059aa9e94158e9cff13c11338eecf9fa9a"
+    },
+    {
+      "id": "three-types",
+      "parentSceneId": "three-types",
+      "text": "These responses are one of three types of adaptation. Physiological adaptations are body processes that switch on and off, like sweating and vasodilation. Behavioural adaptations are things the animal does, like moving into shade. Structural adaptations are body features, like fur or a seal's blubber, which are there all the time, needed or not.",
+      "hash": "366ee1592376",
+      "textSha256": "366ee1592376d41e755c1a745edc9b76b585a9dec7f850b7a96761fddd830e7b",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/three-types.366ee1592376.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/three-types.366ee1592376.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/three-types.366ee1592376.generation.json",
+      "plannedRequestSha256": "73ca4f054e591d4f78309e4a1c23b709ccff10662818bdff1c61efeab144b613"
+    },
+    {
+      "id": "red-kangaroo",
+      "parentSceneId": "red-kangaroo",
+      "text": "The red kangaroo shows all three. On a hot day, it rests in shade through the middle of the day. That's behavioural. It pants, sweats while hopping, and widens its skin vessels. That's physiological. And it licks its forearms, where a dense network of blood vessels lies just under thin skin. The saliva evaporates and cools the blood there. Licking is a behaviour, the vessel network is a structure, and the cooling is physiological. Real adaptations often cross the categories.",
+      "hash": "00aa23a980eb",
+      "textSha256": "00aa23a980eb417de4facaf214f6364de80fa535c59a14e50596ed52a0abe10b",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/red-kangaroo.00aa23a980eb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/red-kangaroo.00aa23a980eb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/red-kangaroo.00aa23a980eb.generation.json",
+      "plannedRequestSha256": "f585c0d319c7f6a7940cbeaf88fdf99c4a7cdb6625836b8760965b96c9b6b69a"
+    },
+    {
+      "id": "trends",
+      "parentSceneId": "trends",
+      "text": "Across endotherms, there are trends. Mammals in hot climates often have large, thin ears or long limbs that shed heat. Mammals in cold climates tend to be more compact, with thick fur or blubber, which slows heat loss. In a penguin's legs, or a dolphin's flippers, arteries carrying warm blood out run right beside veins bringing cool blood back. Heat passes across to the veins and returns to the body. That's countercurrent exchange.",
+      "hash": "a90d8d56f47e",
+      "textSha256": "a90d8d56f47e00c15640421c097f9c673c5376c4df39da967f64c3cface91ab0",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/trends.a90d8d56f47e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/trends.a90d8d56f47e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/trends.a90d8d56f47e.generation.json",
+      "plannedRequestSha256": "b2819aad46ea32a425275e8776f1ac80c23c935f8eb4517680cb66a2fb1c500a"
+    },
+    {
+      "id": "limits",
+      "parentSceneId": "limits",
+      "text": "So why did the flying foxes die? Heat flows from hotter to cooler. Hotter air added heat instead of carrying it away. With little cooling from their surroundings, the flying foxes relied heavily on evaporation, which uses water they were already losing. Negative feedback opposes a change, but each effector has a limit. Push past that limit, and the loop keeps working while body temperature keeps rising.",
+      "hash": "de0a73999576",
+      "textSha256": "de0a73999576f3cfe8b89f41134609bad40f061c70132b93e8e0e5ef6058f1fd",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/limits.de0a73999576.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/limits.de0a73999576.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/limits.de0a73999576.generation.json",
+      "plannedRequestSha256": "96aec0bc01ad4be74a34bd73a924011a940212e90c9b317c2777ff99be5908ff"
+    },
+    {
+      "id": "memory",
+      "parentSceneId": "memory",
+      "text": "To keep it: hot means widen and wet. Cold means narrow and shiver. And for any adaptation, ask: is it a body process, a behaviour or a body feature?",
+      "hash": "7c2e4a3ba4bc",
+      "textSha256": "7c2e4a3ba4bc71b0db86b096260f2a8b0a73fdc9edd29a75bef471b49390ff06",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/memory.7c2e4a3ba4bc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/memory.7c2e4a3ba4bc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/memory.7c2e4a3ba4bc.generation.json",
+      "plannedRequestSha256": "ba1f6c15c9d02d36c9f5e2ba8c77989627fc1f075769b37d98070563eae926b7"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. A cyclist rides on a dry day when the air is thirty degrees. Her core temperature rises to thirty-seven point eight degrees, then holds there while she keeps riding. Explain how the hypothalamus and two named effectors stop it rising further, and predict, with a reason, what would happen on a humid day. Pause here to answer.",
+      "hash": "3a82c82c2c01",
+      "textSha256": "3a82c82c2c01100365ec8c008ba984e94a0c1550cd8388e0ae1e7435a3bb56da",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/attempt.3a82c82c2c01.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/attempt.3a82c82c2c01.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/attempt.3a82c82c2c01.generation.json",
+      "plannedRequestSha256": "ef5df45ebcf412215d99ca7303e2940d32af340dd7b546f6328f4fa667185103"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "The hypothalamus detects the rise and sends nerve impulses to skin arterioles and sweat glands. Wider arterioles bring more warm blood near the skin, so more heat passes to the cooler air. Evaporating sweat takes energy from the skin. Heat loss now matches the heat her muscles make, so temperature levels off. Humid air slows evaporation, so it would rise higher. Wet skin alone doesn't cool her.",
+      "hash": "cc520914194e",
+      "textSha256": "cc520914194e871f4c6cecb02c4622c8ad7dd4ecbe3747f090950ce9b9322151",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/feedback-one.cc520914194e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/feedback-one.cc520914194e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/feedback-one.cc520914194e.generation.json",
+      "plannedRequestSha256": "55079d3251b8f5eb31c86d7cd896de5cf5139e58ac2d4d8eab8cf005538ac05f"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. In hot weather, koalas move down to lower branches and press their bodies against the trunk, which is cooler than their body surface. They pant. And their back is covered in dense fur that reflects part of the sunlight. Classify each adaptation as behavioural, structural or physiological, and explain how the first one lowers the koala's body temperature. Pause here to answer.",
+      "hash": "204fe2d7f258",
+      "textSha256": "204fe2d7f258701fce19e75b1f4474361aefa9a1ebe0b8f854bf011196918956",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/attempt-two.204fe2d7f258.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/attempt-two.204fe2d7f258.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/attempt-two.204fe2d7f258.generation.json",
+      "plannedRequestSha256": "c90b29327174cc010e347147c671a6cf1ce3bbb331bc352699c56b0a503ef806"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Moving to the trunk is behavioural, panting is physiological, and the fur is structural. The trunk is cooler than the koala's body surface, so heat moves by conduction from its body into the wood. That loses heat without using water. Writing \"hugging the tree keeps it cool\", with no heat transfer, is the classic mistake. Say which way heat moves, and why.",
+      "hash": "75253c82c463",
+      "textSha256": "75253c82c463173f80040f26cca36b03e4d48bd41144e2712e374770b47f17da",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/feedback-two.75253c82c463.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/feedback-two.75253c82c463.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/feedback-two.75253c82c463.generation.json",
+      "plannedRequestSha256": "15cdf9590b420ede6d5e6a79ff644ec25b2970071a5c7490d29e15ded500373a"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any temperature question, name the effector or feature, say how it changes heat gained or heat lost, and check its limits. Next, you'll test heat loss with a model experiment.",
+      "hash": "fb876d9c57dc",
+      "textSha256": "fb876d9c57dcba5a0204aa7a771e65f7742c980b31271aa2c0c41da0bd926355",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/decision-rule.fb876d9c57dc.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/decision-rule.fb876d9c57dc.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/decision-rule.fb876d9c57dc.generation.json",
+      "plannedRequestSha256": "7222c5b5f62e52f4b188ea0199a35ceafff4634699ce809dbe1c0e540c0f5096"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B02-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

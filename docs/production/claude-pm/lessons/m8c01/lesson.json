@@ -1,0 +1,160 @@
+{
+  "title": "How can a precipitation titration measure chloride? Silver nitrate, a chromate endpoint and the Mohr calculation",
+  "subtitle": "Estuary water looks like tap water, but it carries dissolved chloride. With no acid or base for an indicator to respond to, how can a titration with silver nitrate show when the chloride runs out, and how do you turn the titre into a chloride concentration?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 1,
+  "lessonIntent": "writing the titration and indicator equations with colours; explaining why chloride precipitates first and why the chromate amount is controlled; stating the pH condition with both causes and the effect of acid on the titre; naming halide interference and the blank; calculating chloride in mol/L and g/L from concordant titres. No direct or back titration, no hands-on procedure or risk table.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This bottle of estuary water looks just like tap water, but it's carrying dissolved salt. How much chloride is in it? You already know how a titration counts acid, with a burette, a pipette and n equals c V. Chloride isn't an acid or a base, though, so a p H indicator has nothing to respond to. So how do we see the moment the chloride runs out?"
+      }
+    },
+    {
+      "id": "silver-meets-chloride",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The trick is to titrate with silver nitrate. Silver ions grab chloride ions and form silver chloride, a white solid. One silver for one chloride, so the ratio is one to one. As the silver nitrate runs in, the flask turns cloudy white. But here's the problem. The white keeps forming right up to the end, and then it simply stops forming. Nothing new appears to tell you to stop."
+      }
+    },
+    {
+      "id": "second-precipitate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So we add a few drops of potassium chromate before we start. It's yellow, and it's our indicator. While chloride is still around, the silver keeps forming white silver chloride. Once nearly all the chloride is gone, the next silver ions meet chromate instead, and form silver chromate, a red-brown solid. Two silvers for each chromate. The first faint red-brown tinge that stays after swirling is the endpoint. In this titration, the signal is a second precipitate."
+      }
+    },
+    {
+      "id": "why-chloride-first",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Why does the chloride react first? You'll sometimes read that silver chloride is less soluble, so it goes first. Careful, that isn't the real reason. Think back to Q s p. A solid only forms once its ion product passes K s p. At the start there's lots of chloride, about point zero seven four molar, so silver chloride needs only a tiny trace of silver. There's only a little chromate, about point zero zero five molar, and silver is squared in its K s p, so silver chromate needs thousands of times more silver. As the chloride gets used up, the silver needed for silver chloride climbs. The red only appears when more than ninety nine point nine percent of the chloride is gone. That's why only a small, set amount of chromate goes in."
+      }
+    },
+    {
+      "id": "valid-endpoint",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This endpoint works only in the right conditions. Keep the solution near neutral, roughly p H six and a half to ten. In acid, chromate ions pick up hydrogen ions and turn into dichromate, so there's less chromate to make the red. The endpoint comes late, and the titre reads high. In strong base, silver forms brown silver oxide instead. Other ions that precipitate with silver, like bromide or iodide, get counted as if they were chloride. And the red needs a tiny excess of silver before you can see it, so chemists often run a blank and subtract it."
+      }
+    },
+    {
+      "id": "hazard-data",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One more thing. Potassium chromate contains chromium six, which is toxic and treated as a cancer-causing chemical, so many schools skip this practical. You're more likely to meet the Mohr method as data in a question. So let's process some."
+      }
+    },
+    {
+      "id": "titres",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "A twenty five millilitre aliquot of the estuary water is titrated with point one zero zero zero molar silver nitrate. Here are the titres. The rough run comes first and gets left out. The other three agree within point one zero millilitres, so they're concordant. Their average is eighteen point five zero millilitres."
+      }
+    },
+    {
+      "id": "stage-1-silver",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First, the task: find the chloride concentration, in moles per litre and grams per litre. The equation: silver plus chloride gives silver chloride. Start with the solution you know both numbers for, the silver nitrate. Moles equals c times V. Point one zero zero zero, times point zero one eight five zero litres, gives one point eight five zero times ten to the minus three moles of silver."
+      }
+    },
+    {
+      "id": "stage-2-aliquot",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The ratio is one to one, so that's also the moles of chloride, and all of it came from the aliquot. So divide by the aliquot's volume, point zero two five zero zero litres, not by the titre. That gives point zero seven four zero moles per litre."
+      }
+    },
+    {
+      "id": "stage-3-grams",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "For grams per litre, multiply by the molar mass of chlorine, thirty five point four five. That's about two point six two grams of chloride per litre. Seawater has roughly nineteen, so this water is only lightly salty, what you'd expect where a river meets the sea."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So here's the short version. White while chloride lasts, and stop at the first red-brown that stays. Keep it near neutral. Then titre, moles, ratio, and divide by the aliquot. And the one to one ratio is silver to chloride. The two to one belongs to chromate, the indicator, so leave it out of the answer."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Bore water is tested by the Mohr method. Find the chloride concentration in moles per litre and in grams per litre. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Leave out the rough titre and average the rest: fourteen point six six millilitres. That gives the moles of silver, and the same moles of chloride. Divide by the twenty millilitre sample: point zero one eight three molar. Times thirty five point four five, that's point six five zero grams per litre. Doubling the moles with chromate's two to one ratio is the classic slip."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. Wastewater from a pickling factory has a p H of three, and a student titrates it by the Mohr method without adjusting the p H. Explain the effect on the calculated chloride concentration, and suggest a fix. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "At p H three, hydrogen ions turn much of the chromate into dichromate. With less chromate, extra silver is needed before red-brown silver chromate shows, so the titre's too high, and so is the calculated chloride. Fix it by neutralising the sample first, for example with sodium hydrogen carbonate, to about p H seven or eight."
+      }
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So silver counts the chloride, and chromate tells you when to stop. Next: instead of measuring a volume, we'll weigh the precipitate itself."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

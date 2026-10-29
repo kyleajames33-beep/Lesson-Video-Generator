@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C02-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c02/lesson.json",
+  "lessonSha256": "d7b20a834516e5d4a4c664ae31211d41275d99091e3450835e9c9f1928ea54fe",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c02/lesson.production-brief.json",
+    "sha256": "d883ea7bbb0c74f19aeb1e86c5eb9820880181650a3783550dd2f2e64224e285"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Last time, we counted chloride by measuring a volume of silver nitrate. This time, we'll weigh it. A wastewater sample looks perfectly clear. Add barium ions, and a fine white solid appears. After it's filtered and dried, a chemist uses only its mass to work out how much sulfate was in the water. So how does a pinch of white powder tell you that?",
+      "hash": "ef5b3289e1d7",
+      "textSha256": "ef5b3289e1d7dcad4461c37cb60b4544c879b6bd33f2fd36c8a5aa2408555e5e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/hook.ef5b3289e1d7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/hook.ef5b3289e1d7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/hook.ef5b3289e1d7.generation.json",
+      "plannedRequestSha256": "45feaf0d1b1d40358511d48d56f22be419ec0215426a84f4875071eaa94424a0"
+    },
+    {
+      "id": "measuring-by-mass",
+      "parentSceneId": "measuring-by-mass",
+      "text": "This is gravimetric analysis, which just means measuring by mass. You turn the ion you want into a solid with a known formula, collect all of it, dry it, and weigh it. For that mass to mean something, three things need to be true. Almost all of the ion has to end up in the solid. The solid's formula has to be known. And what you weigh has to be only that solid, clean and dry.",
+      "hash": "a4a04337f91b",
+      "textSha256": "a4a04337f91bec2b0e9fb809ce84e83f021fa18724793068a9dddf15669718c7",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/measuring-by-mass.a4a04337f91b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/measuring-by-mass.a4a04337f91b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/measuring-by-mass.a4a04337f91b.generation.json",
+      "plannedRequestSha256": "8ba2e71b68ed9abcbffcf365a8d3cfa617429ef20fca524695e449250b53942e"
+    },
+    {
+      "id": "choosing-solid",
+      "parentSceneId": "choosing-solid",
+      "text": "So which solid? For sulfate, why barium and not calcium? Both sulfates have a one to one formula, so their K s p values compare directly. Calcium sulfate's is around half a million times bigger, so a lot of the sulfate would stay dissolved and never get weighed. Barium sulfate leaves much less dissolved, and adding barium in excess pushes that even lower. That's the common ion effect. Sodium won't work at all, because sodium sulfate is soluble. For chloride, the usual choice is silver, making silver chloride.",
+      "hash": "6cb4ba0c7c86",
+      "textSha256": "6cb4ba0c7c86de3dc3a3421f6d091e5a9aa349e4aa3485f8a311f8a829952844",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/choosing-solid.6cb4ba0c7c86.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/choosing-solid.6cb4ba0c7c86.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/choosing-solid.6cb4ba0c7c86.generation.json",
+      "plannedRequestSha256": "16f99d9ef3b1bdaddcb273d0f17ed69b50f0441ce9e84ea03f2ff378650f44a9"
+    },
+    {
+      "id": "precipitate-digest",
+      "parentSceneId": "precipitate-digest",
+      "text": "Here's the method. Dissolve the sample, add dilute hydrochloric acid to remove carbonate, then add excess barium chloride solution. A drop more into the clear liquid on top shows whether all the sulfate is out. Barium chloride is toxic and silver nitrate stains skin, so wear gloves and glasses, and the residues go in heavy-metal waste. Then digest it: keep it warm and let it stand. Small crystals dissolve and bigger ones grow. Bigger crystals don't slip through the filter paper, and they trap fewer other ions.",
+      "hash": "ee8b281ae25d",
+      "textSha256": "ee8b281ae25d8baecbe2430c697aee3daab2728305937ae5aa69f5d7f4fcc0c0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/precipitate-digest.ee8b281ae25d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/precipitate-digest.ee8b281ae25d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/precipitate-digest.ee8b281ae25d.generation.json",
+      "plannedRequestSha256": "530bd9b6ae3911951008915ace19c881759af9eb4340641743ff8bee295c3031"
+    },
+    {
+      "id": "filter-wash",
+      "parentSceneId": "filter-wash",
+      "text": "Next, filter it through a filter paper you've already dried and weighed. Rinse every bit of solid out of the beaker with distilled water from a wash bottle. Then wash the solid on the paper. Ions like chloride, and the extra barium, are still in the liquid clinging to the crystals. If they stay, they dry onto the solid and add mass that isn't barium sulfate.",
+      "hash": "5d2048cf3131",
+      "textSha256": "5d2048cf313146fbb2eef09ea11d9391a4c497e08f6ea82205e9769c0d0d96c1",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/filter-wash.5d2048cf3131.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/filter-wash.5d2048cf3131.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/filter-wash.5d2048cf3131.generation.json",
+      "plannedRequestSha256": "790e4f15c094da36ca356518ea25d809761c09de42535676a9adce5683fd3dbf"
+    },
+    {
+      "id": "constant-mass",
+      "parentSceneId": "constant-mass",
+      "text": "Now dry the paper and solid in an oven, and cool it in a desiccator, a sealed container with a drying agent, so it doesn't pick up water from the air while it cools. The balance is zeroed with the empty watch glass on it, so each reading is just the paper and the solid. Then weigh it, and repeat. Heat, cool, weigh, again and again, until two weighings in a row agree. Then further drying is no longer removing measurable water: that's constant mass. Washing still matters, though, because dry impurities would stay on the balance too.",
+      "hash": "cc27a3af0f5a",
+      "textSha256": "cc27a3af0f5a75b12fa793a6f54197eebdf8b39269810604978604cccba59a92",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/constant-mass.cc27a3af0f5a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/constant-mass.cc27a3af0f5a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/constant-mass.cc27a3af0f5a.generation.json",
+      "plannedRequestSha256": "26231aa5f7cf2c7c2fdb97e5eca17acd3213c397d16a3202a016187743344995"
+    },
+    {
+      "id": "worked-mass-moles",
+      "parentSceneId": "worked-mass-moles",
+      "text": "Let's use it. A point five zero zero gram sample gives this data. Find the percentage of sulfate. First, the mass of solid, by difference. The paper and solid, minus the paper alone, gives point three five zero grams of barium sulfate. Now turn that into moles. Divide by barium sulfate's molar mass, two hundred and thirty three point three nine. That's one point five zero times ten to the minus three moles.",
+      "hash": "7292168ef597",
+      "textSha256": "7292168ef59729134233623164fca40f1b82a3d5b7802417566c2f361d32d21f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/worked-mass-moles.7292168ef597.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/worked-mass-moles.7292168ef597.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/worked-mass-moles.7292168ef597.generation.json",
+      "plannedRequestSha256": "dc78763907bea2789c991393a8b9364016a32faab442d1af5e209a564d9a5355"
+    },
+    {
+      "id": "worked-percentage",
+      "parentSceneId": "worked-percentage",
+      "text": "The equation shows one sulfate in every barium sulfate, so that's also the moles of sulfate. Multiply by sulfate's molar mass, ninety six point zero six, and you get point one four four grams of sulfate. Finally, divide by the sample's mass and times by a hundred. Twenty eight point eight percent. Careful: it's the sulfate's mass on top, not the precipitate's.",
+      "hash": "b03c4b660ed8",
+      "textSha256": "b03c4b660ed86429d90c7ca512ed6fb2c33ef627e9c66e7345637e609ae6339b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/worked-percentage.b03c4b660ed8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/worked-percentage.b03c4b660ed8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/worked-percentage.b03c4b660ed8.generation.json",
+      "plannedRequestSha256": "287f0fe0225075b86fc2070fca4f099c1246da976a63db5614cbf40da464dd92"
+    },
+    {
+      "id": "mass-to-concentration",
+      "parentSceneId": "mass-to-concentration",
+      "text": "What if the sample was a volume of water instead? Say that same point three five zero grams came from two hundred and fifty millilitres of wastewater. The moles of sulfate don't change. Divide them by point two five zero zero litres, and you get six point zero zero times ten to the minus three moles per litre. Times ninety six point zero six, that's about five hundred and seventy six milligrams per litre.",
+      "hash": "37861bc27f1a",
+      "textSha256": "37861bc27f1a7c9454f6f51573d5852353e5674cb7161423e428697519ed9aef",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/mass-to-concentration.37861bc27f1a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/mass-to-concentration.37861bc27f1a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/mass-to-concentration.37861bc27f1a.generation.json",
+      "plannedRequestSha256": "c69595fcb35b123133ec3a1bb03fd96091ddaff16101ae3c820707fd3322a1bb"
+    },
+    {
+      "id": "errors",
+      "parentSceneId": "errors",
+      "text": "The balance gives a precise number, but the method can still push it the wrong way. Anything that adds mass makes the calculated sulfate too high, like a damp solid, or impurities dried on because it wasn't washed. Anything that loses solid makes it too low, like crystals through a torn filter paper, or sulfate left in solution. And repeating the same faulty method won't fix it. Averaging can smooth out random scatter, but an error that's the same every time stays in the average.",
+      "hash": "fa696d62220d",
+      "textSha256": "fa696d62220d314da792737540ebdb56168e6e90658378552c7be9c28fa8b4b9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/errors.fa696d62220d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/errors.fa696d62220d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/errors.fa696d62220d.generation.json",
+      "plannedRequestSha256": "c42cf03559407615fd00bcc2a9997ed798d1de90c2c3e55d52f77388e11dac1f"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "So, two lines to keep. First, the chain: precipitate mass, to moles, through the formula ratio, to the ion you want. Second, the error rule: too wet reads high, lost reads low. And always weigh at constant mass.",
+      "hash": "b447da5e1cf2",
+      "textSha256": "b447da5e1cf2fd22a0b68f8eeb3b8c46fedab4d3bff03c327ea73aacc422fcd5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/memory-aid.b447da5e1cf2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/memory-aid.b447da5e1cf2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/memory-aid.b447da5e1cf2.generation.json",
+      "plannedRequestSha256": "29d8b69b10399ef3def6aac4458278b10e4a1f2a07144f3f995ae392213d13f0"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Creek water is tested for chloride by gravimetric analysis. Find the chloride concentration in grams per litre. Pause here to answer.",
+      "hash": "7339a3aa12c7",
+      "textSha256": "7339a3aa12c7862d367a8178852039e4ccaa5414007b7c98654fadf49eec765a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/attempt-1.7339a3aa12c7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/attempt-1.7339a3aa12c7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/attempt-1.7339a3aa12c7.generation.json",
+      "plannedRequestSha256": "6908ef12c338328798d5fd70852542d3cdc0186ca4ad49e265598e9f6e79dbd6"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Take off the paper first, leaving point one four three grams of silver chloride. Divide by one hundred and forty three point three two for the moles, the same as the moles of chloride. Times thirty five point four five, then divide by point zero five zero zero litres: point seven zero seven grams per litre. Forgetting the filter paper makes it nearly seven times too big.",
+      "hash": "a5f2b2c41fc4",
+      "textSha256": "a5f2b2c41fc4267a09d1170a826b54d11331519ff31eb1f0e39dabc2341bf7f8",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/feedback-1.a5f2b2c41fc4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/feedback-1.a5f2b2c41fc4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/feedback-1.a5f2b2c41fc4.generation.json",
+      "plannedRequestSha256": "9bfcb8e6fcb83e61066205addf601c3443ab60dac3840ca20730f05165fb9227"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student didn't wash a barium sulfate precipitate before drying it, then repeated the whole analysis three times the same way and averaged the results. Explain the effect on the calculated percentage of sulfate, and assess whether repeating the analysis improves the result. Pause here to answer.",
+      "hash": "133a62c5f54f",
+      "textSha256": "133a62c5f54f0fc5f42d893bd5c1421dbdea47f64b8e9b875eded862e14f69fd",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/attempt-2.133a62c5f54f.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/attempt-2.133a62c5f54f.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/attempt-2.133a62c5f54f.generation.json",
+      "plannedRequestSha256": "a5247d127b8dd8173f6ac139faab23d8c156af4462e757f73050c61ce5c2c639"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Without washing, soluble ions in the leftover liquid dry onto the solid. The mass is too high, so the moles of barium sulfate, and the sulfate percentage, come out too high. Repeating it the same way adds the same extra mass each time. Averaging may reduce random scatter, but it can't cancel an error that's the same every time.",
+      "hash": "a377de2cb387",
+      "textSha256": "a377de2cb387500e498ada8a9e2ae2da19e70e1407ce03af6c8c81034fb9c601",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/feedback-2.a377de2cb387.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/feedback-2.a377de2cb387.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/feedback-2.a377de2cb387.generation.json",
+      "plannedRequestSha256": "8faf7402f4736d77e313d124ef6165659c819c6c5b5a3c28d848440d2cb02846"
+    },
+    {
+      "id": "handoff",
+      "parentSceneId": "handoff",
+      "text": "So pick a solid that barely dissolves, keep it clean, dry it to constant mass, and the mass tells you the ion. Next: carrying out a gravimetric analysis in the lab.",
+      "hash": "442b3f64ed7c",
+      "textSha256": "442b3f64ed7c30f6cd0ac25943a31ee2d52f02d01a3eb2b1fdecc8899bcc1383",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/handoff.442b3f64ed7c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/handoff.442b3f64ed7c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/handoff.442b3f64ed7c.generation.json",
+      "plannedRequestSha256": "4b897f1af7e19d52e74ae623b251a27e0373eb0aaf4d3989900ea9c6507e3be6"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C02-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

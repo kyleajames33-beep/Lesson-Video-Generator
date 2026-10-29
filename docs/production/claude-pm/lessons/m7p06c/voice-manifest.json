@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-P06-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p06c/lesson.json",
+  "lessonSha256": "4ad00f28232a6778fde4de310d758cc00937b154fe965f1fc39f0ebd66abd2d6",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p06c/lesson.production-brief.json",
+    "sha256": "cc27a48f1ffd947542d28d2e311ce2ad4a07fcd3064dfb17ef59067aa9552a61"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Shake a little soap solution in pure water, and you get a tall froth. Shake the same soap in hard water, and it turns cloudy, and the froth barely forms. A detergent froths in both. Let's show that fairly, measure it, and explain it.",
+      "hash": "e569a9db6f18",
+      "textSha256": "e569a9db6f18bbed6001e656230bb20dd89a5f09cbd9672eee0e939beb93af08",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/hook.e569a9db6f18.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/hook.e569a9db6f18.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/hook.e569a9db6f18.generation.json",
+      "plannedRequestSha256": "1efccb1c7e9b733fcedabea48df3b5df18aaf6124746885fe5598b8f22114d7f"
+    },
+    {
+      "id": "aim-tubes",
+      "parentSceneId": "aim-tubes",
+      "text": "The aim: to compare how a soap and a detergent behave in soft and hard water. Make hard water by dissolving a known amount of calcium chloride in distilled water, with plain distilled water as the soft sample. That adds chloride too, so a soap tube in sodium chloride solution is a useful extra check. Use a pure detergent, like sodium dodecyl sulfate. That gives four tubes: soap or detergent, in soft or hard water. Two more get water only. They're the controls.",
+      "hash": "83771c563ec2",
+      "textSha256": "83771c563ec2be4d77a5f8ddbb615f518c566b54177a990cec288e2e22ba8a93",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/aim-tubes.83771c563ec2.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/aim-tubes.83771c563ec2.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/aim-tubes.83771c563ec2.generation.json",
+      "plannedRequestSha256": "7fb929b82a05fd6624b449624b22abba1dd01849ebb36b6d1af061431faea4af"
+    },
+    {
+      "id": "froth-test",
+      "parentSceneId": "froth-test",
+      "text": "Part one is a froth test. Put ten millilitres of each water into matching test tubes, and add five drops of soap or detergent solution. Stopper it, shake it ten times the same way, and stand it in the rack. After thirty seconds, measure the froth height with a ruler, from the liquid's surface to the top of the froth. The controls show how much froth water alone makes: almost none.",
+      "hash": "2741eb5fe4c9",
+      "textSha256": "2741eb5fe4c97e2a23d61f99fca8081fda225d4a9ce6e998c9bff47dd2132fa9",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/froth-test.2741eb5fe4c9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/froth-test.2741eb5fe4c9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/froth-test.2741eb5fe4c9.generation.json",
+      "plannedRequestSha256": "21d149993eb14e8f2e12356d3d0129f713672a88358a2afae2104ddab3901873"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "What changes, and what stays the same? Two independent variables: the cleaning agent, soap or detergent, and the water, soft or hard. The dependent variable is the froth height, plus whether a solid forms. Keep the water volume, the drops, the shaking and the waiting time the same. The two solutions aren't the same strength, so judge each agent by how much hard water changes it.",
+      "hash": "22e6a078fa6a",
+      "textSha256": "22e6a078fa6a36d7656fd50a97446a47dcfb2d4ea3fc94397338b2af6dca66bc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/variables.22e6a078fa6a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/variables.22e6a078fa6a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/variables.22e6a078fa6a.generation.json",
+      "plannedRequestSha256": "1efb8ad95bc6da7d016f902831776a4f87fb143685b0367f963f71739d7d72de"
+    },
+    {
+      "id": "froth-results",
+      "parentSceneId": "froth-results",
+      "text": "Here are some example results. Soap in hard water gives far less froth than in soft water, and the liquid turns cloudy, with white specks. The detergent froths nearly as well in hard water as in soft, with little or no scum you can see. So hard water ruins the soap's froth, but barely touches the detergent's.",
+      "hash": "04d3a795e1a4",
+      "textSha256": "04d3a795e1a4be1424bb3c1f22ef98c2305969a56a4b5b9db7550f77527fedd2",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/froth-results.04d3a795e1a4.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/froth-results.04d3a795e1a4.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/froth-results.04d3a795e1a4.generation.json",
+      "plannedRequestSha256": "a7b73832671efcd33f3bb2d111f24ec220bec02689a85bc9cbaff26f29e8de31"
+    },
+    {
+      "id": "why-scum",
+      "parentSceneId": "why-scum",
+      "text": "Why? From the soaps video: in hard water, two soap ions bind each calcium ion and form an insoluble solid, like calcium stearate. That's the scum you can see. Every soap particle locked in scum is lost for frothing or cleaning. The detergent's sulfate head forms a calcium salt that's much more soluble, so far less scum forms, and the detergent keeps working.",
+      "hash": "307bedfcfc1a",
+      "textSha256": "307bedfcfc1aad5080f9c97fc89a4dfbfb486df61fd28a04e2695108fd425bdf",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/why-scum.307bedfcfc1a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/why-scum.307bedfcfc1a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/why-scum.307bedfcfc1a.generation.json",
+      "plannedRequestSha256": "e8ccc09abe84127a5403fa465eefdc69a2bbef46e7fa4450ccee0fca05ec745c"
+    },
+    {
+      "id": "oil-test",
+      "parentSceneId": "oil-test",
+      "text": "Froth isn't cleaning, so part two tests how well each mixture keeps oil spread through the water. Set up fresh tubes the same way, add one millilitre of cooking oil, stopper, and shake ten times. Then time how long it takes for a clear oil layer to reappear at the top. In the example results, the oil separates quickly with water only. With soap in soft water, or detergent in either water, it stays cloudy much longer. With soap in hard water, it separates much sooner.",
+      "hash": "ab9adec9a9fe",
+      "textSha256": "ab9adec9a9fea6ab759d308f80ae8dbb57e2761bb4588ae99f982cf658ba14ce",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/oil-test.ab9adec9a9fe.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/oil-test.ab9adec9a9fe.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/oil-test.ab9adec9a9fe.generation.json",
+      "plannedRequestSha256": "41003a2015081e14102c1541bdccfa4eb5f6764a7247b07a3f8b895ac315ff8e"
+    },
+    {
+      "id": "oil-agrees",
+      "parentSceneId": "oil-agrees",
+      "text": "That cloudiness is an emulsion: tiny oil droplets spread through the water. Soap particles coat each droplet, tails in the oil and heads in the water, and the coating helps keep the droplets apart. In hard water, much of the soap is locked up in scum, so less is left to coat the oil, and the droplets join up faster. When the froth test and the oil test point the same way, that makes the conclusion stronger.",
+      "hash": "601916d7be9d",
+      "textSha256": "601916d7be9d21a5a0e577edcd2f4a228e8f9740954221a90aa147e37ed25dda",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/oil-agrees.601916d7be9d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/oil-agrees.601916d7be9d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/oil-agrees.601916d7be9d.generation.json",
+      "plannedRequestSha256": "d48fe95069efd118fd0fd6ecdab8bd9c5b710f5161aa47877949a5de15eee76a"
+    },
+    {
+      "id": "reliability",
+      "parentSceneId": "reliability",
+      "text": "Is it reliable? Repeat each tube three times, or pool results with other groups. If the froth heights agree within a few millimetres, and the order is the same every time, the results are reliable. If one tube is way off, find out what went differently, and report it with your reason.",
+      "hash": "d9c655ff29e3",
+      "textSha256": "d9c655ff29e3c9efaaa035d759202cb1cacca6efe52a02cad67e7abdc9410782",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/reliability.d9c655ff29e3.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/reliability.d9c655ff29e3.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/reliability.d9c655ff29e3.generation.json",
+      "plannedRequestSha256": "70b13fa80a2a16a30b7c068f3819d7e0dfd62ebf57554923744fbbf3b41c5f50"
+    },
+    {
+      "id": "valid-accurate",
+      "parentSceneId": "valid-accurate",
+      "text": "Hand shaking varies, and the froth depends on it, so count the shakes, keep them the same length, and have one person shake every tube. Read every froth at the same time, because froth collapses. Some detergents contain water softeners, which would hide the effect, so use a pure one. For accuracy, read the ruler at eye level, to the average top of the froth, not the tallest bubble.",
+      "hash": "101c5972ba56",
+      "textSha256": "101c5972ba569de5fe5ddcc4cdcb935a5c2cd4807356748e965679889a31d2db",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/valid-accurate.101c5972ba56.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/valid-accurate.101c5972ba56.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/valid-accurate.101c5972ba56.generation.json",
+      "plannedRequestSha256": "102a0660eba27e69554128a9fe2575cca8940d0e80d5f6937d8ddf810cc2099e"
+    },
+    {
+      "id": "risk",
+      "parentSceneId": "risk",
+      "text": "Now the risks. These chemicals are low hazard, not no hazard. The soap, the detergent and the calcium chloride solutions can irritate your eyes, so wear safety glasses. Hold the stopper in firmly while shaking, and use tubes without chips or cracks. Wipe up spilled oil straight away, because it makes the floor slippery. And collect the oily mixtures as your school directs, not down the sink, where oil can block the drains.",
+      "hash": "fb8c2807998a",
+      "textSha256": "fb8c2807998aa601cd07c73061c540ecaa65b1979d4276f872838c8a85e1cfb7",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/risk.fb8c2807998a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/risk.fb8c2807998a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/risk.fb8c2807998a.generation.json",
+      "plannedRequestSha256": "88580bd576be41b7b32b57e125447bc9337be1a6789b18c5e52633270a893cd4"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "One line to keep, from the soaps video. Soap makes scum in hard water; detergents mostly don't.",
+      "hash": "0069e80e599a",
+      "textSha256": "0069e80e599a06fa8974b9fd382ef508ba0eb7d2b3b02c4982c92350c2c5d601",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/memory-aid.0069e80e599a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/memory-aid.0069e80e599a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/memory-aid.0069e80e599a.generation.json",
+      "plannedRequestSha256": "97ecec9b2e712bd947e9e3429e4ab5b844ff95038e49267c22f607d97748b767"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. The table shows how many drops of soap solution each water sample needed before a froth lasted thirty seconds. Explain the result for sample Y, with a net ionic equation for one hardness ion, using sodium stearate as the soap. Pause here to answer.",
+      "hash": "cb2997a72b39",
+      "textSha256": "cb2997a72b3945d44df2324bbd3eb80a309885b2b00a02660796cabc599a69d3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/attempt-1.cb2997a72b39.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/attempt-1.cb2997a72b39.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/attempt-1.cb2997a72b39.generation.json",
+      "plannedRequestSha256": "114b93380281eca9b55bbcffe47cd6b6d490e701e4999af87b6b899a2c1a9d73"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Sample Y is hard water: it contains calcium or magnesium ions. Stearate ions react with them to form an insoluble solid, the white scum: calcium stearate, or magnesium stearate. So the first drops are used up making scum, and froth lasts only once enough hardness ions are removed. The trap is calling hard water salty: it's the calcium and magnesium ions, not sodium chloride.",
+      "hash": "710c9eb5a32c",
+      "textSha256": "710c9eb5a32cbc3500f97c2ce579e484668de992c73135b9db67f089b75e012e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/feedback-1.710c9eb5a32c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/feedback-1.710c9eb5a32c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/feedback-1.710c9eb5a32c.generation.json",
+      "plannedRequestSha256": "f8f1dc18d31dbd5161644ff6b63a5b981c1ad6eb15b9bc09ba38abed4f6b3317"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student adds five drops of soap solution to hard tap water in one tube, and ten drops of a dishwashing detergent to another. The detergent makes more froth, and she concludes detergents work better in hard water. Explain why her conclusion isn't valid, and describe two changes that would make it valid. Pause here to answer.",
+      "hash": "826c24843852",
+      "textSha256": "826c24843852c83c2167e9194e7b5c2193bee901bac393dcbd550736fdf0c0f4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/attempt-2.826c24843852.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/attempt-2.826c24843852.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/attempt-2.826c24843852.generation.json",
+      "plannedRequestSha256": "d7c81f2c1b0540e5ad1fa687e9130a4d1bdec48e818491d90629796a55ecc394"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "She changed more than the cleaning agent: five drops against ten, and a dishwashing liquid that may contain softeners. Use a pure detergent, test each agent in soft and hard water with the same drops, and add water-only controls. Repeating it is the trap: the unfair test stays.",
+      "hash": "ded05ae9e7ad",
+      "textSha256": "ded05ae9e7ad7606e771d0e66953160b0ec21cd76e40723e5ea22d1ead2f98d8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/feedback-2.ded05ae9e7ad.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/feedback-2.ded05ae9e7ad.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/feedback-2.ded05ae9e7ad.generation.json",
+      "plannedRequestSha256": "7d846d0bc96403d9af2b8dbdb8102c4a2cf0f596b8a77701721c029818a2c01f"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So: make hard water with a known amount of calcium chloride, match the tubes, volumes, drops, shaking and timing, include controls, and compare each agent with its own soft-water tube. Measure froth, and how long the oil stays emulsified. Calcium locks soap up as scum, while the detergent's calcium salt is much more soluble. Next: planning a synthesis.",
+      "hash": "f1f0634a4214",
+      "textSha256": "f1f0634a42141e6d39727d1fa89d18ecc6ed3a706a4327fb2d4dd950aaab0fa8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/decision-handoff.f1f0634a4214.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/decision-handoff.f1f0634a4214.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/decision-handoff.f1f0634a4214.generation.json",
+      "plannedRequestSha256": "4c49a7095e0e26c8caae7babb42164a41366a5db58a43ec911573250a5712cdd"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P06-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

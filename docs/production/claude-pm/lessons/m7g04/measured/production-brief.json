@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m7g04/measured/lesson.json",
+    "lessonSha256": "2c12e295e7083319279ff0ed8ad9e19cec84ecfd672c6c7d4c8c6047924b8daa"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "chem-m7-c14 (addition polymerisation; the two C=C carbons form the backbone and everything else hangs off; drawing a repeat unit with brackets, n and continuation bonds; recovering the monomer by restoring the C=C, adding no H; dispersion contact; thermoplastics); chem-m7-c15 (two reactive ends; ester and amide links; the repeat unit as one of each monomer minus the water; \"add the water back\"; count the C=O carbons; addition against condensation; nylon's hydrogen bonds; melting does not break chain links); chem-m7-c10 (ester naming, for \"methyl 2-methylpropenoate\", screen only); chem-m7-c05 (hydrogen bonding needs H on N or O); chem-m7-c08b (dipole–dipole from C=O); chem-m7-c01 (locants).",
+    "startsWith": "Draw the repeating unit from a monomer. The video opens: Polymer questions usually come in four shapes.",
+    "stopsAfter": "four worked HSC-style questions and a decision board: find the backbone first.",
+    "nextLesson": "none in the Module 7 Chemistry route (the last entry); the decision board's last line points to the Module 8 playlist only if root confirms the playlist order (Open decisions). As designed it ends on the key notes."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m7-g04.md"
+  ],
+  "teaching": {
+    "task": "Can you draw a polymer from its monomer, find the monomers from a polymer, decide whether it formed by addition or condensation, and explain one of its properties from its structure?",
+    "causalExplanation": "Why only two carbons join the backbone: only the C=C opens (2b, 2d). Why three units give three ethyl groups and six backbone carbons: one side group and two backbone carbons per unit (2c). Why Q2's polymer is condensation: its backbone contains ester links (3b). Why every link gets water: each was made by losing one (3c, 3d). Why each monomer must have two reactive ends: each must link twice (3c, 4c). Why X is addition despite its ester group: the backbone is C–C; the ester is a side group (4b, 4d). Why no H is added to X's monomer: restoring the C=C completes each carbon's four bonds (4b; c14). Why one monomer can make Y: it carries both reactive groups (4c). Why nylon melts far higher than P: same skeleton, but N–H allows hydrogen bonds between chains (5b, 5c). Why melting does not depend on link strength: melting separates chains (5d).",
+    "conversationalApproach": "Polymer questions come in four shapes (draw a chain from a monomer, find the monomers from a chain, decide addition or condensation, and explain a property), and each starts with the same move: find the backbone, the line of atoms that runs through the brackets. Q1 (but-1-ene for hot-water pipes) opens only the double bond, so carbon one becomes CH2 and carbon two a CH carrying the ethyl group, then joins three units head to tail and circles one; the classic mistake puts all four carbons in the chain. Q2 (a carpet-fibre section) traces a backbone through oxygens and C=O groups, names the ester links and the repeat unit, and adds the water back at every link to recover propane-1,3-diol and benzene-1,4-dicarboxylic acid; the mistake cuts only one link. Q3 (polymers X and Y) looks along each backbone: X has an ester group only as a side group on a carbon chain, so it is an addition polymer whose monomer puts the double bond back, while Y has ester links in the chain and the stated water release, so it is a condensation polymer of lactic acid; the mistake calls X a polyester. Q4 lines up nylon 6,6 and polyester P on the same skeleton, finds the one difference, the N-H, and explains that hydrogen bonds between nylon chains take more energy to overcome; the mistake says the links break on melting. A decision board gathers the moves.",
+    "openingDecision": "Polymer questions usually come in four shapes. Draw a chain from a monomer. Find the monomers from a chain. Decide whether it formed by addition or condensation. And explain a property. Each one starts with the same move: find the backbone, the line of atoms that runs through the brackets. Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.",
+    "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a): the monomer's name and formula and the \"three repeat units\" and \"circle\" demands (Q1); the full two-unit section and both demands (Q2); both repeat units and both demands (Q3); both repeat units, both melting points and the \"with reference to their structures\" demand (Q4). Nothing answer-bearing during the holds; the backbone strip dims.",
+    "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p56), as printed: \"model and compare the structure, properties and uses of addition polymers of ethylene and related monomers, for example: - polyethylene (PE) - polyvinyl chloride (PVC) - polystyrene (PS) - polytetrafluoroethylene (PTFE) (ACSCH136)\" \"model and compare the structure, properties and uses of condensation polymers, for example: - nylon - polyesters\" Practice and transfer only. The coverage rows stay with chem-m7-c14 (C7-IQ6-01) and chem-m7-c15 (C7-IQ6-02); G04 adds a practice row, not first coverage. starts at the route's \"Draw the repeating unit from a monomer\" and stops at its \"Classify addition or condensation and explain one property from structure\". Four questions, one per route skill, each with a trap: draw a three-unit section of an addition polymer from but-1-ene (putting all four carbons in the backbone); recover the monomers from a section of a polyester (cutting only one of the links); classify two polymers as addition or condensation and draw each monomer (calling a polymer with an ester side group a polyester); explain why a polyamide melts far above a polyester with the same carbon skeleton (saying melting breaks the stronger amide bonds). One move links all four: find the backbone, the line of atoms that runs through the brackets. Not here: new teaching of addition or condensation polymerisation (c14 and c15; recalled in one clause each); PE, PVC, PS and PTFE property questions (c14's attempts; the decision board recalls them in one line); hydrolysis questions (c15 scene 7; not examined here); copolymers of two alkenes (beyond the site lessons; author note a); the acid chloride route; natural polymers, Kevlar, thermosets, recycling and lifecycle (route review change 4 and site L23's own \"extension\" label); mechanisms and conditions."
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "As g01: the question card at the top (shrinking to a strip during the walkthrough), a type badge at its left (\"Draw from a monomer\", \"Find the monomers\", \"Addition or condensation?\", \"Property from structure\"), the structure board or chain view at the centre, answer boxes at the right, and a three-row backbone strip at the far left (this video's check strip): \"Find the backbone (through the brackets)\", \"All C–C: addition. Open or close the C=C.\", \"Ester or amide links: condensation. Remove or add the water.\" Rows tick as each question uses them.",
+    "transitionPlan": "The heading writes on and four stimulus thumbnails fan out on the right, one per question shape; each question opens on a fresh board with the type badge hidden while the worded card writes with its structure and any context plate small at its corner; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given as it is used; a locant counter numbers the monomer's carbons as its C=C pulses; the section builder slides three opened monomers together and a ring circles one repeat unit; the backbone tracer runs along each section or repeat unit and colours the links it passes; c10's cut line drops through each ester link as the water insert docks OH and H; the X and Y structures enlarge in turn and the kept one dims to a chip; the two repeat units align and their matching segments light in pairs; c14's chain view splits into nylon and polyester boxes with dotted hydrogen bonds drawn only on the nylon side; each question ends with its classic mistake chip taking a grey scribble cross; the backbone strip returns as a two-column board, each row lighting on its cue with its question badge; scene crossfade with settle."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "heading \"Polymer questions: draw, recover, classify, explain\" writes on.",
+      "teachingReason": "Hook: Polymer questions usually come in four shapes.",
+      "narrationCue": "property / backbone",
+      "motionPurpose": "On the spoken cues: Four small stimulus thumbnails fan out on the right, one per shape, without a spoken list: a coded monomer with a teal C=C, a short coded condensation section with red ester rings, two small bracketed repeat units side by side, and two chain-view thumbnails. On \"property\"",
+      "motionRole": "explain",
+      "onScreenChange": "heading \"Polymer questions: draw, recover, classify, explain\" writes on. Four small stimulus thumbnails fan out on the right, one per shape, without a spoken list: a coded monomer with a teal C=C, a short coded condensation section with red ester rings, two small bracketed repeat units side by side, and two chain-view thumbnails. On \"property\" `m7-polymer-objects-v1.png` appears small below them. On \"backbone\" a generic bracketed repeat unit draws at the centre and the backbone tracer runs through the brackets, lighting only the atoms on its line (tag \"backbone: through the brackets\"); the backbone strip builds at the left, one row per beat, then all three rows dim. On \"four HSC-style questions\" the thumbnails become four numbered question cards with one shared tag, \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 1 second"
+    },
+    {
+      "sceneId": "q1-question",
+      "visualDecision": "adjust",
+      "visualReference": "fresh board.",
+      "teachingReason": "HSC-style question (question 1: draw from a monomer) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question one. But one ene forms an addition",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: draw from a monomer)",
+      "motionRole": "explain",
+      "onScreenChange": "fresh board. Type badge hidden. The card writes on: \"But-1-ene, CH₂=CH–CH₂–CH₃, forms an addition polymer that is used to make hot-water pipes.\" Beside it but-1-ene draws in full structural form, plain ink with a teal C=C. `m7-pvc-pipe-v1.png` sits small at the card's upper right with a grey tag \"a polymer pipe\". Demand: \"Draw a section of this polymer showing three repeat units. Circle one repeat unit.\" One answer box. Nothing answer-bearing (no numbering, no tracer). **Countdown ring 10 seconds** after \"Pause here to answer.\"; the backbone strip dims; the whole card stays on screen.",
+      "motionTools": [
+        "HandText write-on",
+        "ScribbleCircle",
+        "DrawPath",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q1-backbone",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Which carbons make the chain: Start with the double bond.",
+      "narrationCue": "double bond / ethyl",
+      "motionPurpose": "On the spoken cues: Type badge \"Draw from a monomer\". On \"double bond\" \"But-1-ene, CH₂=CH–CH₂–CH₃\" and \"addition polymer\" underline amber; but-1-ene enlarges at the centre and its C=C pulses teal; a locant counter pops \"1, 2, 3, 4\" along the carbons. The two C=C carbons glow ink (tag \"these two join the backbone\");",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Draw from a monomer\". On \"double bond\" \"But-1-ene, CH₂=CH–CH₂–CH₃\" and \"addition polymer\" underline amber; but-1-ene enlarges at the centre and its C=C pulses teal; a locant counter pops \"1, 2, 3, 4\" along the carbons. The two C=C carbons glow ink (tag \"these two join the backbone\"); carbons 3 and 4 turn grey. The backbone strip's second row lights: \"All C–C: addition. Open or close the C=C.\" On \"carbon one\" the C=C opens with c14's bond opener and a continuation bond grows from each glowing carbon. On \"ethyl\" the grey –CH₂–CH₃ is ringed (tag \"ethyl: hangs off\"; a second tag \"per repeat unit: 2 backbone carbons + 1 ethyl branch\" writes, from the cut sentence). Bright at the end: the opened monomer and the \"ethyl: hangs off\" tag. No stated hold; the 2 s scene padding covers the read.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-section",
+      "visualDecision": "new",
+      "visualReference": "on \"three times\" the section builder runs: three opened monomers slide together and join, giving –CH₂–CH(C₂H₅)–CH₂–CH(C₂H₅)–CH₂–CH(C₂H₅)– in full structural form with a continuation bond at each end; \"a section of this polymer showing three repeat units\" underlines.",
+      "teachingReason": "Three units, then circle one: Now join three of them, head to tail.",
+      "narrationCue": "times / bonds",
+      "motionPurpose": "On the spoken cues: On \"Circle\" \"Circle one repeat unit\" underlines and a navy circle draws around one –CH₂–CH(C₂H₅)– (answer box: the section with its circle, bright). A grey tag \"repeat unit: [–CH₂–CH(C₂H₅)–]ₙ\" writes and dims. On \"check it\" a tally writes: \"ethyl groups: 3 ✓ | backbone carbons: 6 ✓\"; on \"bonds\"",
+      "motionRole": "explain",
+      "onScreenChange": "on \"three times\" the section builder runs: three opened monomers slide together and join, giving –CH₂–CH(C₂H₅)–CH₂–CH(C₂H₅)–CH₂–CH(C₂H₅)– in full structural form with a continuation bond at each end; \"a section of this polymer showing three repeat units\" underlines. On \"Circle\" \"Circle one repeat unit\" underlines and a navy circle draws around one –CH₂–CH(C₂H₅)– (answer box: the section with its circle, bright). A grey tag \"repeat unit: [–CH₂–CH(C₂H₅)–]ₙ\" writes and dims. On \"check it\" a tally writes: \"ethyl groups: 3 ✓ | backbone carbons: 6 ✓\"; on \"bonds\" each carbon of one unit ticks \"4\" in turn (tag \"four bonds each\"). The backbone strip's second row ticks. Bright at the end: the circled section and the \"four bonds each\" tag. No stated hold; the 2 s scene padding covers the read.",
+      "motionTools": [
+        "Mark underline",
+        "ScribbleCircle",
+        "DrawPath",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q1-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"–CH₂–CH₂–CH₂–CH₂–\" writes on and, on \"polyethylene\", takes a grey scribble cross with the caption \"only the C=C carbons join the chain\".",
+      "teachingReason": "The classic mistake: The classic mistake is putting all four carbons into the chain: C H two, C H two, C H two, C H two.",
+      "narrationCue": "polyethylene",
+      "motionPurpose": "On the spoken cues: Beside it the correct unit returns small with its ethyl ringed. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"–CH₂–CH₂–CH₂–CH₂–\" writes on and, on \"polyethylene\", takes a grey scribble cross with the caption \"only the C=C carbons join the chain\". Beside it the correct unit returns small with its ethyl ringed. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q2-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 2: find the monomers) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question two. A section of a polymer used",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: find the monomers)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The card writes on: \"A section of a polymer used in carpet fibres is shown.\" Below it, in full structural form, plain ink: –O–CH₂–CH₂–CH₂–O–CO–C₆H₄–CO–O–CH₂–CH₂–CH₂–O–CO–C₆H₄–CO– (the rings as hexagons with a grey inner ring, joined at opposite corners; continuation bonds at both ends; no colour on the O atoms or links). Demands: \"(a) Identify the type of polymer. (b) Draw and name the monomers used to make this polymer.\" Two answer boxes. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q2-links",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Find the links and the repeat unit: First, find the backbone.",
+      "narrationCue": "oxygens / ester / repeat unit",
+      "motionPurpose": "On the spoken cues: Type badge \"Find the monomers\". On \"oxygens\" \"A section of a polymer\" underlines amber; the backbone tracer runs along the section and pauses on each O and C=O, which colour brick red as it passes (tag \"not all carbon\"). On \"ester\" the link scanner slides along, stopping and ringing each –CO–O–",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Find the monomers\". On \"oxygens\" \"A section of a polymer\" underlines amber; the backbone tracer runs along the section and pauses on each O and C=O, which colour brick red as it passes (tag \"not all carbon\"). On \"ester\" the link scanner slides along, stopping and ringing each –CO–O– link red, numbered \"1, 2, 3\" (chip \"ester link: –COO–\"); \"Identify the type of polymer\" underlines; answer box (a) fills \"polyester (condensation)\"; the backbone strip's third row lights. On \"repeat unit\" a dashed navy bracket pair drops around –O–CH₂CH₂CH₂–O–CO–C₆H₄–CO– and the second unit dims (tag \"repeat: one ring, one three-carbon chain\"). Bright at the end: the bracketed unit, answer box (a) and the link numbers. No stated hold; the 2 s scene padding covers the read.",
+      "motionTools": [
+        "Mark underline",
+        "Enter slide",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-water",
+      "visualDecision": "new",
+      "visualReference": "on \"every ester link\" the water insert runs at links 1, 2 and 3 in turn: c10's cut line drops through each C(=O)–O bond, a water-coloured H₂O splits, OH docks on the C=O side and H on the O side.",
+      "teachingReason": "Add the water back at every link: Now add the water back, at every ester link.",
+      "narrationCue": "oxygen / acid / both ends",
+      "motionPurpose": "On the spoken cues: On \"oxygen\" \"Draw and name the monomers\" underlines; the fragments drift apart into two kinds. HO–CH₂CH₂CH₂–OH lights with its name \"propane-1,3-diol\" (answer box (b), bright); a carbon counter pops \"1, 2, 3\". On \"acid\" HOOC–C₆H₄–COOH lights with \"benzene-1,4-dicarboxylic acid (terephthalic acid)\"",
+      "motionRole": "explain",
+      "onScreenChange": "on \"every ester link\" the water insert runs at links 1, 2 and 3 in turn: c10's cut line drops through each C(=O)–O bond, a water-coloured H₂O splits, OH docks on the C=O side and H on the O side. On \"oxygen\" \"Draw and name the monomers\" underlines; the fragments drift apart into two kinds. HO–CH₂CH₂CH₂–OH lights with its name \"propane-1,3-diol\" (answer box (b), bright); a carbon counter pops \"1, 2, 3\". On \"acid\" HOOC–C₆H₄–COOH lights with \"benzene-1,4-dicarboxylic acid (terephthalic acid)\" (answer box (b) adds it); a grey chip \"c15: PET's acid\" writes and dims. On \"both ends\" c15's end tags ring all four end groups amber (tag \"two reactive ends each ✓\"). The backbone strip's third row ticks. Bright at the end: both monomers with names and the \"two reactive ends\" tag. No stated hold; the 2 s scene padding covers the read.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "tick",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q2-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"HO–CH₂CH₂CH₂–O–CO–C₆H₄–COOH\" writes on, with its internal –CO–O– ringed red, and, on \"inside\", takes a grey scribble cross with the caption \"cut every ester link\".",
+      "teachingReason": "The classic mistake: The classic mistake is cutting just one link, and calling what's left a monomer.",
+      "narrationCue": "inside",
+      "motionPurpose": "On the spoken cues: Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"HO–CH₂CH₂CH₂–O–CO–C₆H₄–COOH\" writes on, with its internal –CO–O– ringed red, and, on \"inside\", takes a grey scribble cross with the caption \"cut every ester link\". Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q3-question",
+      "visualDecision": "new",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 3: addition or condensation) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question three. The repeat units of two polymers,",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: addition or condensation)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The card writes on: \"The repeat units of two polymers, X and Y, are shown. Y was made directly from a hydroxy acid, with water released.\" X: [–CH₂–C(CH₃)(COOCH₃)–]ₙ in full structural form (the –COOCH₃ drawn below the second backbone carbon as –C(=O)–O–CH₃); Y: [–O–CH(CH₃)–C(=O)–]ₙ in full structural form. Both plain ink, with brackets, n and continuation bonds. Demands: \"(a) Classify each polymer as an addition polymer or a condensation polymer. Justify each classification. (b) Draw the monomer of each polymer.\" Answer boxes for X and Y. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "DrawPath",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q3-x",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "X: look along the backbone: Start with X.",
+      "narrationCue": "X / carbons / no",
+      "motionPurpose": "On the spoken cues: Type badge \"Addition or condensation?\". On \"X\" structure X enlarges; its ester group is ringed grey, not red (tag \"ester group: where is it?\"). On \"carbons\" the backbone tracer runs through the brackets along –C–C– only and the two backbone carbons glow ink; the –COOCH₃ and –CH₃ turn grey (tag",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Addition or condensation?\". On \"X\" structure X enlarges; its ester group is ringed grey, not red (tag \"ester group: where is it?\"). On \"carbons\" the backbone tracer runs through the brackets along –C–C– only and the two backbone carbons glow ink; the –COOCH₃ and –CH₃ turn grey (tag \"backbone: C–C only; the ester is a side group\"). \"Classify\" and \"Justify\" underline; answer box X fills \"addition: all-carbon backbone; ester only in a side group\". The backbone strip's second row lights. On \"no\" c14's bracket unstamp runs: brackets and n lift off, the continuation bonds shrink, a teal C=C redraws; a ghost H drifts towards each backbone carbon and is crossed (tag \"no extra H\"). The monomer settles: CH₂=C(CH₃)COOCH₃, with a grey screen-only name \"methyl 2-methylpropenoate\" and tag \"Perspex (PMMA) monomer\"; \"Draw the monomer\" underlines; answer box X adds it. Bright at the end: the monomer, answer box X and the \"no extra H\" tag. No stated hold; the 2 s scene padding covers the read.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-y",
+      "visualDecision": "new",
+      "visualReference": "X dims to a kept chip.",
+      "teachingReason": "Y: an ester link in the chain: Now Y.",
+      "narrationCue": "Y / other / end",
+      "motionPurpose": "On the spoken cues: On \"Y\" structure Y enlarges; the backbone tracer runs through the brackets along –O–C–C(=O)– and rings the –O–C(=O)– link red as it closes the loop across the bracket ends (tag \"ester link in the backbone\"); on \"released\" the stem phrase \"with water released\" underlines; answer box Y fills",
+      "motionRole": "explain",
+      "onScreenChange": "X dims to a kept chip. On \"Y\" structure Y enlarges; the backbone tracer runs through the brackets along –O–C–C(=O)– and rings the –O–C(=O)– link red as it closes the loop across the bracket ends (tag \"ester link in the backbone\"); on \"released\" the stem phrase \"with water released\" underlines; answer box Y fills \"condensation (polyester): ester link in the backbone; the stated route releases water\". The backbone strip's third row lights. On \"Add the water back\" c15's water insert runs at the bracket-end link: H docks on the O and OH on the C=O. On \"other\" the monomer settles: CH₃–CH(OH)–COOH, with a grey screen-only name \"2-hydroxypropanoic acid\" and tag \"lactic acid\"; \"Draw the monomer\" underlines; answer box Y adds it. On \"end\" c15's end tags ring the OH and the COOH amber (tag \"one molecule, two reactive ends\"). Bright at the end: the monomer, answer box Y and the end-tags tag. No stated hold; the 2 s scene padding covers the read.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "counter and bar fill",
+        "table build"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q3-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"X has an ester group, so X is a polyester.\" writes on and, on \"contains\", takes a grey scribble cross with the caption \"side group ≠ backbone link\".",
+      "teachingReason": "The classic mistake: The classic mistake is calling X a polyester because it contains an ester group.",
+      "narrationCue": "contains",
+      "motionPurpose": "On the spoken cues: X returns small with the backbone tracer on its C–C and the ester side group grey. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"X has an ester group, so X is a polyester.\" writes on and, on \"contains\", takes a grey scribble cross with the caption \"side group ≠ backbone link\". X returns small with the backbone tracer on its C–C and the ester side group grey. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "q4-question",
+      "visualDecision": "adjust",
+      "visualReference": "board clears.",
+      "teachingReason": "HSC-style question (question 4: property from structure) with every given and demand on screen, a 10 second countdown and no answer cues.",
+      "narrationCue": "Question four. Nylon six six melts at about",
+      "motionPurpose": "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 4: property from structure)",
+      "motionRole": "explain",
+      "onScreenChange": "board clears. Type badge hidden. The card writes on: \"Nylon 6,6 and polyester P have the repeat units shown.\" Two plain-ink repeat units, stacked so their skeletons line up: nylon 6,6 [–NH–(CH₂)₆–NH–CO–(CH₂)₄–CO–]ₙ, \"melting point about 265 °C\"; polyester P [–O–(CH₂)₆–O–CO–(CH₂)₄–CO–]ₙ, \"melting point about 60 °C\" (a given value for this question). Demand: \"Explain the difference in the melting points of these two polymers, with reference to their structures.\" One answer box. `m7-nylon-rope-v1.png` small at the card's upper right. **Countdown 10 seconds**; strip dims.",
+      "motionTools": [
+        "HandText write-on",
+        "Plate",
+        "Countdown ring"
+      ],
+      "holdPurpose": "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    },
+    {
+      "sceneId": "q4-compare",
+      "visualDecision": "new",
+      "visualReference": "the card shrinks to a strip.",
+      "teachingReason": "Line them up: one difference: Compare like with like.",
+      "narrationCue": "skeleton / oxygen",
+      "motionPurpose": "On the spoken cues: Type badge \"Property from structure\". On \"Line up\" the two repeat units enlarge, one above the other, with their skeletons aligned; a pale-blue tracer runs along both at once. On \"skeleton\" matching segments light in pairs, \"(CH₂)₆ = (CH₂)₆\", \"(CH₂)₄ = (CH₂)₄\", \"C=O × 2 = C=O × 2\" (tag \"same carbon",
+      "motionRole": "explain",
+      "onScreenChange": "the card shrinks to a strip. Type badge \"Property from structure\". On \"Line up\" the two repeat units enlarge, one above the other, with their skeletons aligned; a pale-blue tracer runs along both at once. On \"skeleton\" matching segments light in pairs, \"(CH₂)₆ = (CH₂)₆\", \"(CH₂)₄ = (CH₂)₄\", \"C=O × 2 = C=O × 2\" (tag \"same carbon skeleton: a fair comparison of the links\"); \"with reference to their structures\" underlines. On \"oxygen\" the N–H groups in nylon ring indigo and the matching O atoms in P ring red, with a small \"≠\" between them (tag \"one difference: N–H against O\"). Bright at the end: the aligned units, the \"≠\" marks and the \"one difference\" tag. No stated hold; the 2 s scene padding covers the read.",
+      "motionTools": [
+        "Mark underline"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q4-forces",
+      "visualDecision": "new",
+      "visualReference": "the repeat units dim to a kept strip.",
+      "teachingReason": "What that difference does between chains: That N H is the key.",
+      "narrationCue": "hydrogen bond / dispersion / overcome",
+      "motionPurpose": "On the spoken cues: c14's chain view splits into two boxes. Left, nylon strands with indigo N–H and red C=O ticks: on \"hydrogen bond\" violet dotted N–H···O=C bonds draw between neighbouring strands (grey chip \"c15: N–H···O=C between chains\"). Right, polyester P strands with red C=O ticks only: on \"dispersion\" teal",
+      "motionRole": "explain",
+      "onScreenChange": "the repeat units dim to a kept strip. c14's chain view splits into two boxes. Left, nylon strands with indigo N–H and red C=O ticks: on \"hydrogen bond\" violet dotted N–H···O=C bonds draw between neighbouring strands (grey chip \"c15: N–H···O=C between chains\"). Right, polyester P strands with red C=O ticks only: on \"dispersion\" teal dipole–dipole dashes and pale-blue dispersion ticks draw, and a ghost violet bond tries to form and is crossed grey (tag \"no H on O or N: no hydrogen bonds\"). On \"slide past\" c14's warm slide runs on both boxes at once: P's strands slide apart at a low glow, nylon's strands hold until a much stronger glow, then slide, each strand's line unbroken. \"melts\" and \"Explain the difference\" underline. On \"overcome\" the answer box fills: \"Nylon: N–H···O=C hydrogen bonds between chains, plus dispersion. P: no N–H or O–H, so only dipole–dipole and dispersion. Same carbon skeleton, so hydrogen bonding is an important structural reason for the much higher melting point.\" (only the first sentence bright). Bright at the end: the two boxes and the answer box's first sentence. No stated hold; the 2 s scene padding covers the read.",
+      "motionTools": [
+        "Mark underline",
+        "DrawPath",
+        "chip pop",
+        "lineage split",
+        "counter and bar fill",
+        "tick"
+      ],
+      "holdPurpose": "Hold one second"
+    },
+    {
+      "sceneId": "q4-mistake",
+      "visualDecision": "new",
+      "visualReference": "a chip \"Amide bonds are stronger than ester bonds, so they take more energy to break when it melts.\" writes on and, on \"either\", takes a grey scribble cross with the caption \"melting separates chains; the links stay\".",
+      "teachingReason": "The classic mistake: The classic mistake is saying the amide bonds are stronger than ester bonds, so they take more energy to break.",
+      "narrationCue": "either",
+      "motionPurpose": "On the spoken cues: A small nylon strand returns with its amide links pulsing and intact. Hold about 1.5 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "a chip \"Amide bonds are stronger than ester bonds, so they take more energy to break when it melts.\" writes on and, on \"either\", takes a grey scribble cross with the caption \"melting separates chains; the links stay\". A small nylon strand returns with its amide links pulsing and intact. Hold about 1.5 seconds.",
+      "motionTools": [
+        "HandText write-on",
+        "Mark cross",
+        "chip pop"
+      ],
+      "holdPurpose": "Hold about 1"
+    },
+    {
+      "sceneId": "decision-board",
+      "visualDecision": "adjust",
+      "visualReference": "the backbone strip returns full size as a two-column board, \"What you see\" and \"What you do\", each row lighting on its cue with its question number badge: \"a repeat unit or section like these → find the backbone, through the brackets (all)\"; \"all C–C backbone, from an alkene → addition: open the C=C to draw; restore it to recover, add no H (Q1, Q3 X)\"; \"ester or amide links in the backbone, from an acid route → condensation: remove the water to draw; add it back at every link to recover (Q2, Q3 Y)\"; \"a property → compare the forces between chains (dispersion, dipole–dipole, hydrogen bonds), then the use (Q4; c14's PE, PVC, PS, PTFE)\".",
+      "teachingReason": "Decision board: So here's how to start the alkene and acid polymer questions we've practised.",
+      "narrationCue": "backbone / links / chains",
+      "motionPurpose": "On the spoken cues: The memory aid \"Addition: nothing lost. Condensation: a small molecule lost (water, for these acid routes).\" writes small under rows 2 and 3. `m7-polymer-objects-v1.png` sits small at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the backbone strip returns full size as a two-column board, \"What you see\" and \"What you do\", each row lighting on its cue with its question number badge: \"a repeat unit or section like these → find the backbone, through the brackets (all)\"; \"all C–C backbone, from an alkene → addition: open the C=C to draw; restore it to recover, add no H (Q1, Q3 X)\"; \"ester or amide links in the backbone, from an acid route → condensation: remove the water to draw; add it back at every link to recover (Q2, Q3 Y)\"; \"a property → compare the forces between chains (dispersion, dipole–dipole, hydrogen bonds), then the use (Q4; c14's PE, PVC, PS, PTFE)\". The memory aid \"Addition: nothing lost. Condensation: a small molecule lost (water, for these acid routes).\" writes small under rows 2 and 3. `m7-polymer-objects-v1.png` sits small at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "table build",
+        "Plate"
+      ],
+      "holdPurpose": "Hold about 2 seconds"
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+      "teachingReason": "Essentials to copy into books",
+      "narrationCue": "key notes",
+      "motionPurpose": "Notes appear then stay still for copying",
+      "motionRole": "hold",
+      "onScreenChange": "The notes and the memory aid appear and lock",
+      "motionTools": [
+        "Enter reveals"
+      ],
+      "holdPurpose": "Quiet copy hold of about 60 seconds with pause invitation"
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g04-learning-review.md",
+      "sha256": "ffc05457dd7c25909aff291e2739e22a026b2c2351f11caa17fb86e92b22232b"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m7g04-claude-science-check.md",
+      "sha256": "a2b8594dbf91313552ccca2833f94d79d0b78f08866bd2e35545349cbc2ab4f2"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}

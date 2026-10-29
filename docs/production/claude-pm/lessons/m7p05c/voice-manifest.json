@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M7-P05-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p05c/lesson.json",
+  "lessonSha256": "b70c20ba0ab03640d5cb206ee9c5d831e26f3f3525303b345388f4875f280666",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p05c/lesson.production-brief.json",
+    "sha256": "432a3807afe86f00e6c5409ed73b0cc8e661313f98263d6b20ad5dee757235ba"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Warm pentan-1-ol with ethanoic acid and a little concentrated sulfuric acid, and you make pentyl ethanoate, an ester that smells like bananas. A class makes it and gets about sixty per cent of the most it could make. Is that a failed practical? Not necessarily. Let's see what limits the yield, and how to test fairly whether you can raise it.",
+      "hash": "2c86d9d11294",
+      "textSha256": "2c86d9d112945ceeb3c662ae704c93066e7f89387eafea35ddc5c2980f61b99f",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/hook.2c86d9d11294.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/hook.2c86d9d11294.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/hook.2c86d9d11294.generation.json",
+      "plannedRequestSha256": "8b402d7ded807b7a707411296918c3fe88867411529949b40ae7cd29ecf41ca2"
+    },
+    {
+      "id": "aim-limiting",
+      "parentSceneId": "aim-limiting",
+      "text": "The aim: to find out whether excess ethanoic acid increases the yield of pentyl ethanoate. Some groups mix the acid and alcohol one to one. Others use twice as much acid. They react one to one, so the alcohol sets the most ester any group could make, and every yield is measured against it. From the esters video, you'd predict the excess pushes the equilibrium right.",
+      "hash": "32e76d84648b",
+      "textSha256": "32e76d84648b69c2656274f4455eb689b0ac44ddd91b38349085c631e167632c",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/aim-limiting.32e76d84648b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/aim-limiting.32e76d84648b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/aim-limiting.32e76d84648b.generation.json",
+      "plannedRequestSha256": "c38212886987309460b409a6ddc6b95869f055bc41c333d714d2e9b6163f71f9"
+    },
+    {
+      "id": "reflux-setup",
+      "parentSceneId": "reflux-setup",
+      "text": "Measure the pentan-1-ol and the ethanoic acid into a round-bottom flask, and add a few anti-bumping granules. Your teacher then adds about ten drops of concentrated sulfuric acid, the catalyst. Fit the condenser upright, and leave its top open. This mixture boils well above a hundred degrees, so a water bath isn't hot enough. Heat it with an electric heating mantle for about forty minutes. The condenser sends the vapours back, so they don't escape.",
+      "hash": "dec5cd4235c8",
+      "textSha256": "dec5cd4235c802b6b54d1bd7d44e804628fd8ef50f2b175e10a591c93d2bc0b3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/reflux-setup.dec5cd4235c8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/reflux-setup.dec5cd4235c8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/reflux-setup.dec5cd4235c8.generation.json",
+      "plannedRequestSha256": "e64faa3b0efc0e8097b038221845d53e30414fbc0fd0244dae337b93bb014a6d"
+    },
+    {
+      "id": "variables",
+      "parentSceneId": "variables",
+      "text": "What changes, and what stays the same? The independent variable is the mole ratio of acid to alcohol: one to one, or two to one. The dependent variable is the percentage yield. Keep the amount of pentan-1-ol, the catalyst, the heating time, and every work-up step the same.",
+      "hash": "eedd48550066",
+      "textSha256": "eedd48550066b37ef942c09f4a2d6e9047be29531a55227cbee825c03ea64a7d",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/variables.eedd48550066.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/variables.eedd48550066.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/variables.eedd48550066.generation.json",
+      "plannedRequestSha256": "872053620260b9a0cdcca8eeb57aad41e80294382e3a351f16531ba31a64858a"
+    },
+    {
+      "id": "work-up",
+      "parentSceneId": "work-up",
+      "text": "After cooling, pour the mixture into a separating funnel with cold water. The ester barely dissolves, so it forms its own layer: on top here, because it's less dense than water. Wash it with sodium hydrogen carbonate solution to remove the leftover acid, and vent the funnel often, away from people, to release the carbon dioxide. Then dry the ester with anhydrous magnesium sulfate, pour it into a weighed vial, and weigh it.",
+      "hash": "04fb06eb4575",
+      "textSha256": "04fb06eb457537e0034ecdf5f2b42c07d934fa93cf01155f4bd879d80b13c2de",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/work-up.04fb06eb4575.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/work-up.04fb06eb4575.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/work-up.04fb06eb4575.generation.json",
+      "plannedRequestSha256": "7b66f2df58ea4608424fa896645d56eb5f39c2f50bbc7554de0668efe432689e"
+    },
+    {
+      "id": "yield-calc",
+      "parentSceneId": "yield-calc",
+      "text": "Now the yield, for one two to one group. Four point four one grams of pentan-1-ol, divided by its molar mass, is zero point zero five zero zero moles. One mole of alcohol makes one mole of ester, so that's also the most ester they could make. Times the ester's molar mass, that's six point five one grams. They collected three point nine zero grams. Divide, times a hundred: about sixty per cent.",
+      "hash": "40f3c1650440",
+      "textSha256": "40f3c1650440b7ee70879ed61d80c4360209878e91d162b3cfa3b676a8c95dca",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/yield-calc.40f3c1650440.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/yield-calc.40f3c1650440.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/yield-calc.40f3c1650440.generation.json",
+      "plannedRequestSha256": "028a523c2beba2daa1224555986c785d3019053ee87d087afbd17b3f83af4a5a"
+    },
+    {
+      "id": "ceiling-losses",
+      "parentSceneId": "ceiling-losses",
+      "text": "So where did the rest go? First, equilibrium. The reaction stops short, so even with excess acid, some alcohol never becomes ester. That's the ceiling. Second, losses. Some ester stays on the glassware, some goes in the washes, and some is left on the drying agent. Those losses take the result lower still.",
+      "hash": "5137d2aa85e5",
+      "textSha256": "5137d2aa85e565c64200175d353267d7e194ba0736b9029f5a66bfc131da9c87",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/ceiling-losses.5137d2aa85e5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/ceiling-losses.5137d2aa85e5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/ceiling-losses.5137d2aa85e5.generation.json",
+      "plannedRequestSha256": "2aa303d80b26c3b2db470637d27097a53509bdea5469a675ddc1d7675cb1ad6d"
+    },
+    {
+      "id": "reliability",
+      "parentSceneId": "reliability",
+      "text": "Three groups ran each ratio. One to one gave about forty per cent each time, and two to one about sixty. Within each ratio, the results agree within a few per cent, so they're reliable. And the gap between the ratios, about twenty points, is much bigger than that spread. So, in these runs, excess acid gave a higher yield.",
+      "hash": "df9aa170c06a",
+      "textSha256": "df9aa170c06a61f4a2616bf247148f55698166e43fed402c14655a11d4b34073",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/reliability.df9aa170c06a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/reliability.df9aa170c06a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/reliability.df9aa170c06a.generation.json",
+      "plannedRequestSha256": "8d39af322d11478ef71f609dff72f8b54e28c426142f6e543cccac5862f3327f"
+    },
+    {
+      "id": "valid-accurate",
+      "parentSceneId": "valid-accurate",
+      "text": "Is sixty per cent accurate? If the ester was dry and pure, yes: that's the yield they really got. It's low because ester was lost, not mismeasured, and repeats can't bring it back. Water or leftover acid would do the opposite, making the mass too high. And is the comparison valid? Matching the work-up helps, but more acid can change the washes, and forty minutes may not reach equilibrium. So the data support a higher yield with excess acid, under these conditions.",
+      "hash": "e579637b3101",
+      "textSha256": "e579637b31016fd6daecc275546cd384ae19100d17f43871e35fa3ef638488e8",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/valid-accurate.e579637b3101.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/valid-accurate.e579637b3101.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/valid-accurate.e579637b3101.generation.json",
+      "plannedRequestSha256": "7387dade660fc3859dedeea90cc25606734fb8c4c38ef987e215fe8b8c77d39e"
+    },
+    {
+      "id": "identify",
+      "parentSceneId": "identify",
+      "text": "Is it really the ester? It forms its own layer, and after washing, no visible fizz with hydrogen carbonate suggests little acid is left. Checks like these support it, but none proves it alone. If your teacher allows it, waft a little of the smell towards you, but never sniff it directly.",
+      "hash": "ad0d32bedbb5",
+      "textSha256": "ad0d32bedbb54e13a4be4776976e90451e463ead04eb6e8c08d71e8b0641298a",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/identify.ad0d32bedbb5.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/identify.ad0d32bedbb5.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/identify.ad0d32bedbb5.generation.json",
+      "plannedRequestSha256": "e46bb52f7ff9211ab2606be8df6aa38809f58ea6fe4a3549bfa2a52d5f5dae34"
+    },
+    {
+      "id": "risk",
+      "parentSceneId": "risk",
+      "text": "Now the risks. Concentrated sulfuric acid causes severe burns, so your teacher adds it, and you wear safety glasses, gloves and a lab coat. Glacial ethanoic acid is corrosive and flammable. Pentan-1-ol and the ester are flammable too, so no flames: use the heating mantle, and keep the condenser top open. And collect the organic residues in the labelled organic waste, not the sink.",
+      "hash": "9eb6f7c0f7c6",
+      "textSha256": "9eb6f7c0f7c6609b2dbfde20d4591dbb2652302b0d6bc959ce198874b87a60dc",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/risk.9eb6f7c0f7c6.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/risk.9eb6f7c0f7c6.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/risk.9eb6f7c0f7c6.generation.json",
+      "plannedRequestSha256": "32cdb9fb408f4e40e804320999558eda1b78adcf4acadb5650212543a012dd03"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "One line to keep. Equilibrium sets the ceiling; the work-up decides how close you get.",
+      "hash": "7a5dc1410659",
+      "textSha256": "7a5dc1410659f9a24f6cca1a9a458122bc978bf84484179f03fb86f49ec9f2a6",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/memory-aid.7a5dc1410659.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/memory-aid.7a5dc1410659.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/memory-aid.7a5dc1410659.generation.json",
+      "plannedRequestSha256": "77712c28a679ddc829557bdac126807f0f5b55f669ad9005d02258fc7dfc3f58"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student refluxes three point seven zero grams of butan-1-ol with excess ethanoic acid and a sulfuric acid catalyst. After washing and drying, she collects three point one nine grams of butyl ethanoate. Calculate the percentage yield, and explain two reasons it's less than a hundred per cent. Pause here to answer.",
+      "hash": "73d398372c91",
+      "textSha256": "73d398372c91584974f2b0fb87e397f80157e556878e4d0b9723f48e43378ad2",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/attempt-1.73d398372c91.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/attempt-1.73d398372c91.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/attempt-1.73d398372c91.generation.json",
+      "plannedRequestSha256": "f0aff40b5887860a3d2f8c7a35663a0f06c86270976b3e9f6aafc470ffcd6a23"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Three point seven zero over seventy four point one two is zero point zero four nine nine moles of alcohol, so at most that much ester: five point eight zero grams. Three point one nine over five point eight zero is about fifty five per cent. It's lower because the reaction stops at equilibrium, and ester is lost in the washes. The trap is dividing the masses directly.",
+      "hash": "741d7b8ed736",
+      "textSha256": "741d7b8ed736975489778cdbbfcea711bac5a691ccf16f65fcf0e82a73ddfb66",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/feedback-1.741d7b8ed736.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/feedback-1.741d7b8ed736.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/feedback-1.741d7b8ed736.generation.json",
+      "plannedRequestSha256": "8fef0dba159fb79d028fb726578a0edb700f7dc2210d6ae814d48cc27159fdbe"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A student makes propyl ethanoate. She runs off the water layer and weighs the ester layer straight away, without washing or drying it. Her percentage yield comes out at a hundred and four per cent. Explain why her result is inaccurate, and describe two changes to her method. Pause here to answer.",
+      "hash": "4e563571157a",
+      "textSha256": "4e563571157ab75c0083367efcc978afc7948aba17bc15bb55b13f2aadf3276e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/attempt-2.4e563571157a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/attempt-2.4e563571157a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/attempt-2.4e563571157a.generation.json",
+      "plannedRequestSha256": "142b45d16b8af5eb13a1df7ce2c33e4da600903c4cd51f5f95c503dd2da73979"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Over a hundred per cent means she weighed things that aren't ester: water, and probably leftover acid and alcohol, so the yield is too high. She should wash the layer with sodium hydrogen carbonate solution, and dry it with anhydrous magnesium sulfate before weighing. The trap is saying it went to completion. Even then, the most is a hundred per cent.",
+      "hash": "8e679e025aaf",
+      "textSha256": "8e679e025aafa324dcb4f50fcf47253bc0e45040d10164c44a2967f6fecf0c2e",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/feedback-2.8e679e025aaf.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/feedback-2.8e679e025aaf.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/feedback-2.8e679e025aaf.generation.json",
+      "plannedRequestSha256": "8bdb3c1a8d26f82817dddbd3edff884c500aacc6f8b9836002ab0f6c71ff9828"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So: reflux to approach equilibrium, wash and dry to get the ester out, and calculate the yield from moles of the limiting reactant. Equilibrium caps the yield, and losses take it lower. To compare conditions fairly, match the work-up, and check each product is dry and pure. Next: amines and amides.",
+      "hash": "ea4686488215",
+      "textSha256": "ea4686488215a8aa20ebcbf8f2a2279551e494cdca3cea5afdbeab05236e95d3",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/decision-handoff.ea4686488215.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/decision-handoff.ea4686488215.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/decision-handoff.ea4686488215.generation.json",
+      "plannedRequestSha256": "b4930a2cf9ed62b58574bb849e1cc11affba7723a9a64de43729a2b326b362df"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M7-P05-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "title": "How does a precipitate reveal ion concentration? Choosing the solid, drying to constant mass and the gravimetric calculation",
+  "subtitle": "A clear wastewater sample turns cloudy white when barium ions are added. How does the mass of that dried solid tell you how much sulfate was in the water, and what has to go right for the number to be true?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 3,
+  "lessonIntent": "stating what gravimetric analysis is and its three requirements; explaining the choice of Ba²⁺ for sulfate (and Ag⁺ for chloride) with Ksp; describing and justifying each method step, including constant mass; calculating the precipitate mass by difference, the analyte's moles, mass, percentage and concentration; predicting the direction of an error and explaining why repeats do not fix it. No hands-on procedure or risk table.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last time, we counted chloride by measuring a volume of silver nitrate. This time, we'll weigh it. A wastewater sample looks perfectly clear. Add barium ions, and a fine white solid appears. After it's filtered and dried, a chemist uses only its mass to work out how much sulfate was in the water. So how does a pinch of white powder tell you that?"
+      }
+    },
+    {
+      "id": "measuring-by-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "This is gravimetric analysis, which just means measuring by mass. You turn the ion you want into a solid with a known formula, collect all of it, dry it, and weigh it. For that mass to mean something, three things need to be true. Almost all of the ion has to end up in the solid. The solid's formula has to be known. And what you weigh has to be only that solid, clean and dry."
+      }
+    },
+    {
+      "id": "choosing-solid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So which solid? For sulfate, why barium and not calcium? Both sulfates have a one to one formula, so their K s p values compare directly. Calcium sulfate's is around half a million times bigger, so a lot of the sulfate would stay dissolved and never get weighed. Barium sulfate leaves much less dissolved, and adding barium in excess pushes that even lower. That's the common ion effect. Sodium won't work at all, because sodium sulfate is soluble. For chloride, the usual choice is silver, making silver chloride."
+      }
+    },
+    {
+      "id": "precipitate-digest",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the method. Dissolve the sample, add dilute hydrochloric acid to remove carbonate, then add excess barium chloride solution. A drop more into the clear liquid on top shows whether all the sulfate is out. Barium chloride is toxic and silver nitrate stains skin, so wear gloves and glasses, and the residues go in heavy-metal waste. Then digest it: keep it warm and let it stand. Small crystals dissolve and bigger ones grow. Bigger crystals don't slip through the filter paper, and they trap fewer other ions."
+      }
+    },
+    {
+      "id": "filter-wash",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Next, filter it through a filter paper you've already dried and weighed. Rinse every bit of solid out of the beaker with distilled water from a wash bottle. Then wash the solid on the paper. Ions like chloride, and the extra barium, are still in the liquid clinging to the crystals. If they stay, they dry onto the solid and add mass that isn't barium sulfate."
+      }
+    },
+    {
+      "id": "constant-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now dry the paper and solid in an oven, and cool it in a desiccator, a sealed container with a drying agent, so it doesn't pick up water from the air while it cools. The balance is zeroed with the empty watch glass on it, so each reading is just the paper and the solid. Then weigh it, and repeat. Heat, cool, weigh, again and again, until two weighings in a row agree. Then further drying is no longer removing measurable water: that's constant mass. Washing still matters, though, because dry impurities would stay on the balance too."
+      }
+    },
+    {
+      "id": "worked-mass-moles",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's use it. A point five zero zero gram sample gives this data. Find the percentage of sulfate. First, the mass of solid, by difference. The paper and solid, minus the paper alone, gives point three five zero grams of barium sulfate. Now turn that into moles. Divide by barium sulfate's molar mass, two hundred and thirty three point three nine. That's one point five zero times ten to the minus three moles."
+      }
+    },
+    {
+      "id": "worked-percentage",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The equation shows one sulfate in every barium sulfate, so that's also the moles of sulfate. Multiply by sulfate's molar mass, ninety six point zero six, and you get point one four four grams of sulfate. Finally, divide by the sample's mass and times by a hundred. Twenty eight point eight percent. Careful: it's the sulfate's mass on top, not the precipitate's."
+      }
+    },
+    {
+      "id": "mass-to-concentration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "What if the sample was a volume of water instead? Say that same point three five zero grams came from two hundred and fifty millilitres of wastewater. The moles of sulfate don't change. Divide them by point two five zero zero litres, and you get six point zero zero times ten to the minus three moles per litre. Times ninety six point zero six, that's about five hundred and seventy six milligrams per litre."
+      }
+    },
+    {
+      "id": "errors",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The balance gives a precise number, but the method can still push it the wrong way. Anything that adds mass makes the calculated sulfate too high, like a damp solid, or impurities dried on because it wasn't washed. Anything that loses solid makes it too low, like crystals through a torn filter paper, or sulfate left in solution. And repeating the same faulty method won't fix it. Averaging can smooth out random scatter, but an error that's the same every time stays in the average."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, two lines to keep. First, the chain: precipitate mass, to moles, through the formula ratio, to the ion you want. Second, the error rule: too wet reads high, lost reads low. And always weigh at constant mass."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Creek water is tested for chloride by gravimetric analysis. Find the chloride concentration in grams per litre. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Take off the paper first, leaving point one four three grams of silver chloride. Divide by one hundred and forty three point three two for the moles, the same as the moles of chloride. Times thirty five point four five, then divide by point zero five zero zero litres: point seven zero seven grams per litre. Forgetting the filter paper makes it nearly seven times too big."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A student didn't wash a barium sulfate precipitate before drying it, then repeated the whole analysis three times the same way and averaged the results. Explain the effect on the calculated percentage of sulfate, and assess whether repeating the analysis improves the result. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Without washing, soluble ions in the leftover liquid dry onto the solid. The mass is too high, so the moles of barium sulfate, and the sulfate percentage, come out too high. Repeating it the same way adds the same extra mass each time. Averaging may reduce random scatter, but it can't cancel an error that's the same every time."
+      }
+    },
+    {
+      "id": "handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So pick a solid that barely dissolves, keep it clean, dry it to constant mass, and the mass tells you the ion. Next: carrying out a gravimetric analysis in the lab."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

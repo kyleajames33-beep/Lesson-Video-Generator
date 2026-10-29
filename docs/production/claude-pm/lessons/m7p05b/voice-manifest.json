@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M7-P05-claude-2026-10-30-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m7p05b/lesson.json",
+  "lessonSha256": "5ee96bbdad4ef81c3f42a7f995d0013d457b658005658f8e610739d3fcd474ad",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m7p05b/lesson.production-brief.json",
+    "sha256": "355a43ed0669a04b1dbf440b1141720b9702ad3af634fdf302e4479d3cd8eaa3"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A student put four paper discs on a plate spread with bacteria. Two days later, around disc A, a clear zone twenty five millimetres across. Around disc B, fifteen. Around disc C, nothing. So is A the best medicine, and is C useless? The plate can't tell you either.",
+      "hash": "3f18563faa23",
+      "textSha256": "3f18563faa2346c35618e76aff5762e354febd5ffd6ab72929d53dc0630aa761",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/hook.3f18563faa23.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/hook.3f18563faa23.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/hook.3f18563faa23.generation.json",
+      "plannedRequestSha256": "a710a410465a9012196e6593a378dcb903d1d0c2e36c7af854f3e559a3b03297"
+    },
+    {
+      "id": "what-a-zone-is",
+      "parentSceneId": "what-a-zone-is",
+      "text": "Each disc holds a measured dose of an antibiotic. On the agar, the drug diffuses outwards, so it's strongest near the disc and weaker further out. Where it's strong enough to stop the bacteria growing, the agar stays clear. That clear ring is the zone of inhibition. At its edge, the drug has become too dilute, and beyond it the bacteria grow into a cloudy layer.",
+      "hash": "386651104bd5",
+      "textSha256": "386651104bd560f5ec9b8d0f1cca38470fcd32f333693f22630c7c08f67ae627",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/what-a-zone-is.386651104bd5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/what-a-zone-is.386651104bd5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/what-a-zone-is.386651104bd5.generation.json",
+      "plannedRequestSha256": "91d13369f112aa6df3f9a31f97d32dd6953f46efd63c82d5888dd37a4edb379b"
+    },
+    {
+      "id": "aim-variables",
+      "parentSceneId": "aim-variables",
+      "text": "The aim is to compare the zones of inhibition that three antibiotic discs produce on one harmless bacterium. The independent variable is the antibiotic. The dependent variable is the zone's diameter, in millimetres. Keep everything else the same: the bacterium and how much you spread, the agar and its depth, the disc size, and the incubation time and temperature.",
+      "hash": "7c60aba26b4d",
+      "textSha256": "7c60aba26b4ddb0ab12820bbe631f5d01bbdf888ae1e0b3755f20d8d3d003841",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/aim-variables.7c60aba26b4d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/aim-variables.7c60aba26b4d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/aim-variables.7c60aba26b4d.generation.json",
+      "plannedRequestSha256": "d5f17ccac7dc997c3033b6153c28ffe7bd180501a4ee5f7392b816f800bd56d5"
+    },
+    {
+      "id": "control-repeats",
+      "parentSceneId": "control-repeats",
+      "text": "You also need a negative control: a blank disc dipped in sterile water. It should have no zone, which shows the paper and water don't stop growth on their own. And use three plates, each with all four discs in different positions, so one odd plate, or one patch of agar, can't decide the result.",
+      "hash": "e48d725130c5",
+      "textSha256": "e48d725130c53e2ad24d3a27feef53cae432c909de95ca2e960ee334194ebe36",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/control-repeats.e48d725130c5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/control-repeats.e48d725130c5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/control-repeats.e48d725130c5.generation.json",
+      "plannedRequestSha256": "46b949926a26e5e29905acecbe078d7f336ec1ef2a6388d2dd09f4b197f9bc94"
+    },
+    {
+      "id": "lawn-discs",
+      "parentSceneId": "lawn-discs",
+      "text": "Your teacher supplies an approved harmless culture. Spread point one of a millilitre evenly over the agar with a sterile spreader, so the bacteria grow as a smooth lawn. Then place the discs with sterile forceps, at least two centimetres apart and away from the edge, so the zones can't overlap.",
+      "hash": "ab54c13135e4",
+      "textSha256": "ab54c13135e486ca07ac356e98999d832d00a58c179993cb137a66b1c6677f63",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/lawn-discs.ab54c13135e4.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/lawn-discs.ab54c13135e4.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/lawn-discs.ab54c13135e4.generation.json",
+      "plannedRequestSha256": "2096cb62497ca5526d236f5a23840fb4baa4691c33f466c9f5f340dcf2704e95"
+    },
+    {
+      "id": "incubate",
+      "parentSceneId": "incubate",
+      "text": "Then follow your school's procedure, as in the water testing practical: label the base, close the lid securely, and incubate upside down at twenty five to thirty degrees for two days, never thirty seven. From here on, the lids stay shut.",
+      "hash": "83c3b7efc969",
+      "textSha256": "83c3b7efc969800f0d21e8bdd40f1da1ee01ef4e61f08c7905da8c3f7370f034",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/incubate.83c3b7efc969.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/incubate.83c3b7efc969.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/incubate.83c3b7efc969.generation.json",
+      "plannedRequestSha256": "379c0fc507205a732c4c0c6505a4eb1851160a9b1dc8158c0f03f89bfbd91e1c"
+    },
+    {
+      "id": "measure",
+      "parentSceneId": "measure",
+      "text": "To measure, turn the plate over and lay a ruler across the base, through the centre of the disc. Measure the clear zone edge to edge in millimetres. Then turn the ruler a quarter turn, measure again, and average the two. No zone at all? Record six millimetres, the width of the disc itself.",
+      "hash": "0413b71ae94f",
+      "textSha256": "0413b71ae94f9862998ae9b68ba399508fd652b65b30e0cf5c19f5dfc5f82c14",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/measure.0413b71ae94f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/measure.0413b71ae94f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/measure.0413b71ae94f.generation.json",
+      "plannedRequestSha256": "aab762e47504f6a2d744054a6d5079abf1f8341d56f7b0eb8759e9973bf7a6aa"
+    },
+    {
+      "id": "results",
+      "parentSceneId": "results",
+      "text": "Here are the results. Antibiotic A gave twenty four, twenty six and twenty five millimetres, a mean of twenty five. B averaged fifteen. C and the blank disc stayed at six on every plate. The repeats agree closely, so the results look reliable. And the blank made no clear zone beyond the disc, so the paper and water didn't cause the zones.",
+      "hash": "d2644c54b18a",
+      "textSha256": "d2644c54b18add98da863088bd7e71244d0b2c47b40587759258b2af2a694992",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/results.d2644c54b18a.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/results.d2644c54b18a.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/results.d2644c54b18a.generation.json",
+      "plannedRequestSha256": "16bb921193185d0f0b62eaa63664497a9bd15c47e2800481b75386b59bb93073"
+    },
+    {
+      "id": "depends-on",
+      "parentSceneId": "depends-on",
+      "text": "So, on this agar, A produced a larger clear zone than B. But zone size doesn't depend only on how active the drug is. It also depends on how much drug is in the disc, and how far it can diffuse: a drug that spreads slowly through agar can make a small zone even when it works well. So a bigger zone doesn't show that A is the stronger drug. And C's missing zone might mean this bacterium simply lacks the part C targets.",
+      "hash": "eac4af911642",
+      "textSha256": "eac4af9116421df2f81f9994055dfd978f5b2f20e88b31b4613b81293361246c",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/depends-on.eac4af911642.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/depends-on.eac4af911642.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/depends-on.eac4af911642.generation.json",
+      "plannedRequestSha256": "5209269d258cbac13b3b236bacf6a751b5939bfc3e0a5ce5a387de714d4a9a79"
+    },
+    {
+      "id": "plate-not-patient",
+      "parentSceneId": "plate-not-patient",
+      "text": "A plate also isn't a patient. To treat an infection, a drug has to reach the infected tissue at a high enough dose, without harming the patient, and work on the actual pathogen, not a harmless teaching strain. That's what clinical trials test. So keep the conclusion narrow: A produced a larger clear zone than B, on this agar, under these conditions.",
+      "hash": "2694a924aa77",
+      "textSha256": "2694a924aa77c6a56ab164d78ea53feabdcfb7dbfc6b07c8f2ea07dbdce5b929",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/plate-not-patient.2694a924aa77.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/plate-not-patient.2694a924aa77.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/plate-not-patient.2694a924aa77.generation.json",
+      "plannedRequestSha256": "f4420a0a4100b8f799191b4d842ebe4ed9fb8cab0df2e946663adae373dc6763"
+    },
+    {
+      "id": "validity-reliability",
+      "parentSceneId": "validity-reliability",
+      "text": "Validity: one variable changed, a blank control, and the same lawn, agar and incubation, so it's a fair comparison of the zones these discs make on this bacterium. Reliability: three plates show whether the zones agree. Accuracy: a ruler gives a measured diameter, but a fuzzy edge and the viewing angle limit how confidently you can place the boundary. More readings can't sharpen that edge.",
+      "hash": "8e0a137671ae",
+      "textSha256": "8e0a137671ae2b0fd6d5d0739386db7c895fc3ce9fe5ea873ed7cf508271eba0",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/validity-reliability.8e0a137671ae.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/validity-reliability.8e0a137671ae.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/validity-reliability.8e0a137671ae.generation.json",
+      "plannedRequestSha256": "a11aaef8b12681af8af562ad771e981c0545f0f52dc3834919987ef8f0b037b2"
+    },
+    {
+      "id": "risk-assessment",
+      "parentSceneId": "risk-assessment",
+      "text": "The risk assessment. Follow your teacher's approved school procedure. Even with a harmless culture, a plate can pick up a contaminating microbe, and incubation multiplies it. So keep cultured plates closed, never open them to measure the zones, and wash your hands. Handle discs with forceps, because some people are allergic to antibiotics like penicillin. Your teacher sterilises used plates in an autoclave before disposal.",
+      "hash": "fadfa25fb7a0",
+      "textSha256": "fadfa25fb7a06c764a0e4434fa2fd9969a8ac74b404e38c86f7ca15f51a1245b",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/risk-assessment.fadfa25fb7a0.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/risk-assessment.fadfa25fb7a0.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/risk-assessment.fadfa25fb7a0.generation.json",
+      "plannedRequestSha256": "532be1d5d6e86cdc930d928278075ce18be6fcd9ad3ba4435d07b45448025066"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. A student tested antibiotic discs P and Q on plates of a harmless bacterium. The mean zone diameters were twenty two millimetres for P, thirteen for Q, and six for a sterile water disc. She concluded that P would be the more effective treatment for an infection in people. Assess her conclusion. Pause here to answer.",
+      "hash": "91c2972aa794",
+      "textSha256": "91c2972aa794177bf730de5af3b8398830975eb43a767b1646c44b26a18a973b",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/attempt-1.91c2972aa794.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/attempt-1.91c2972aa794.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/attempt-1.91c2972aa794.generation.json",
+      "plannedRequestSha256": "149c52be390272f15f843fbc65de7bd6e78bc154246403da9e89f957f468221a"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "The data support only part of it. P's twenty two millimetre zone was larger than Q's thirteen, and the six millimetre control made no zone. So P produced a larger clear zone, under these conditions. That doesn't show which drug treats an infection better: zone size also depends on dose and diffusion, and treatment needs clinical trials. Biggest zone means best medicine is the classic overclaim.",
+      "hash": "dc4c9bbf1a29",
+      "textSha256": "dc4c9bbf1a29688342f81631b1395a6a5345714e4c0ca92aa5d3f189b5220331",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/feedback-1.dc4c9bbf1a29.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/feedback-1.dc4c9bbf1a29.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/feedback-1.dc4c9bbf1a29.generation.json",
+      "plannedRequestSha256": "b950b653f4ed605ac6659aa8580285a4b221e4c4e4f5bb5b54de018673793b22"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "One more. A student soaked one paper disc in antiseptic X for one minute, and another in antiseptic Y for ten minutes. She put both on a single plate, incubated it at thirty seven degrees, then removed the lid to measure the zones. Identify two problems, and propose an improvement that fixes each. Pause here to answer.",
+      "hash": "e4ca2f38c6cf",
+      "textSha256": "e4ca2f38c6cf6f9f5a9e4e7178470a15acbb71a8d5f353cd6149f0f7c265db84",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/attempt-2.e4ca2f38c6cf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/attempt-2.e4ca2f38c6cf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/attempt-2.e4ca2f38c6cf.generation.json",
+      "plannedRequestSha256": "1601a708e9b94c3f760c480aeff5b97c8ea3dedef5f53a13852c748977f5c3a3"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "One: the soaking times differed, so the discs may hold different amounts. Soak every disc for the same time, or add the same measured volume. Two: removing the lid exposed her to whatever grew, so keep it closed and measure through the base. Being more careful opening the lid is the classic mistake: it shouldn't be opened at all.",
+      "hash": "405fa0ca66e7",
+      "textSha256": "405fa0ca66e760dc77b11bd4d0fe84a26da2e927ef740d099835ac852184a214",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/feedback-2.405fa0ca66e7.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/feedback-2.405fa0ca66e7.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/feedback-2.405fa0ca66e7.generation.json",
+      "plannedRequestSha256": "2b947154ee11d593288200c42421fd5ed48425e8e44dd4b78612baf414293d4c"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So: a lawn of an approved harmless culture, discs spaced apart, a blank control and three plates, closed and upside down at twenty five to thirty degrees. Measure through the base, and claim only what the plate shows: which disc gave the larger clear zone, under these conditions. Next: how controlling mosquitoes can stop disease spreading.",
+      "hash": "7968059a5d9c",
+      "textSha256": "7968059a5d9cd983ce0b0bb62711ba8f90105c5912ef7e6fb894912aaaf33932",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/decision-rule.7968059a5d9c.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/decision-rule.7968059a5d9c.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/decision-rule.7968059a5d9c.generation.json",
+      "plannedRequestSha256": "68af8ed646132f2cae6283a5fe321f1853f80d459a5b1b972081ed0d27fc36fa"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M7-P05-claude-2026-10-30-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}
