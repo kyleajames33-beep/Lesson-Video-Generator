@@ -519,7 +519,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "Why monitor water and nutrient pollution?"
+          "mainLearnerQuestion": "Why monitor water and nutrient pollution?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c05.md"
         },
         {
           "id": "chem-m8-c06",
@@ -548,12 +549,13 @@
           ],
           "entryKnowledge": "Recall chem-m8-c05 only as needed for this question.",
           "next": [
-            "chem-m8-c07"
+            "chem-m8-c08"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "What do dissolved oxygen and BOD tell us?"
+          "mainLearnerQuestion": "What do dissolved oxygen and BOD tell us?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c06.md"
         },
         {
           "id": "chem-m8-c07",
@@ -585,7 +587,7 @@
           "next": [
             "chem-m8-c08"
           ],
-          "status": "draft-for-Claude-review",
+          "status": "cut-route-review-change-3",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
           "mainLearnerQuestion": "How does water treatment remove different pollutants?"
@@ -603,7 +605,10 @@
           "prerequisites": [
             "chem-m7-c04b",
             "chem-m7-c05",
-            "chem-m7-c09"
+            "chem-m7-c09",
+            "chem-m7-p02",
+            "chem-m7-p04",
+            "chem-m8-c06"
           ],
           "estimatedMinutes": 8.5,
           "start": "Predict tests for C=C, hydroxyl and carboxyl groups.",
@@ -624,7 +629,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How do simple tests distinguish organic groups?"
+          "mainLearnerQuestion": "How do simple tests distinguish organic groups?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c08.md"
         },
         {
           "id": "chem-m8-p05",
@@ -658,7 +664,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practical support",
-          "mainLearnerQuestion": "Test functional groups in unknown organics"
+          "mainLearnerQuestion": "Test functional groups in unknown organics",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-p05.md"
         },
         {
           "id": "chem-m8-c09",
@@ -1299,7 +1306,9 @@
           ],
           "prerequisites": [
             "bio-m6-b05",
-            "bio-m8-b07"
+            "bio-m8-b07",
+            "bio-m5-b05a",
+            "bio-m8-b06"
           ],
           "estimatedMinutes": 8.5,
           "start": "Connect cell-cycle control failure to uncontrolled division.",
@@ -1315,12 +1324,13 @@
           ],
           "entryKnowledge": "Recall bio-m6-b05, bio-m8-b07 only as needed for this question.",
           "next": [
-            "bio-m8-p03"
+            "bio-m8-b10"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How does cancer begin and spread?"
+          "mainLearnerQuestion": "How does cancer begin and spread?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b09.md"
         },
         {
           "id": "bio-m8-p03",
@@ -1375,7 +1385,7 @@
           "next": [
             "bio-m8-b10"
           ],
-          "status": "draft-for-Claude-review",
+          "status": "cut-or-folded-route-review-change-6",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practical support",
           "mainLearnerQuestion": "Investigate causes of a non-infectious disease"
@@ -1409,12 +1419,13 @@
           ],
           "entryKnowledge": "Recall bio-m8-b06, bio-m7-b13 only as needed for this question.",
           "next": [
-            "bio-m8-p04"
+            "bio-m8-b11"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "What do incidence, prevalence and mortality measure?"
+          "mainLearnerQuestion": "What do incidence, prevalence and mortality measure?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b10.md"
         },
         {
           "id": "bio-m8-p04",
@@ -1445,7 +1456,7 @@
           "next": [
             "bio-m8-g01"
           ],
-          "status": "draft-for-Claude-review",
+          "status": "cut-or-folded-route-review-change-6",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practical support",
           "mainLearnerQuestion": "Collect and represent disease-rate data"
@@ -1465,12 +1476,13 @@
             "B8-IQ3-03"
           ],
           "prerequisites": [
-            "bio-m8-b10"
+            "bio-m8-b10",
+            "bio-m8-b11"
           ],
           "estimatedMinutes": 8,
           "start": "Calculate rates from new data.",
           "stop": "Evaluate one study method and claim.",
-          "playlistOrder": 15,
+          "playlistOrder": 16.5,
           "planAnchor": "G01",
           "sourceCandidates": [
             {
@@ -1491,12 +1503,14 @@
           ],
           "entryKnowledge": "Recall bio-m8-b10 only as needed for this question.",
           "next": [
-            "bio-m8-b11"
+            "bio-m8-b12"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practice companion",
-          "mainLearnerQuestion": "Epidemiology calculation and interpretation practice"
+          "mainLearnerQuestion": "Epidemiology calculation and interpretation practice",
+          "playlistNote": "Shared skills-s05 sits before g01 in the Biology playlist (route review change 10).",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-g01.md"
         },
         {
           "id": "bio-m8-b11",
@@ -1532,12 +1546,13 @@
           ],
           "entryKnowledge": "Recall bio-m8-b10 only as needed for this question.",
           "next": [
-            "bio-m8-b12"
+            "bio-m8-g01"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How do we judge an epidemiological study?"
+          "mainLearnerQuestion": "How do we judge an epidemiological study?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b11.md"
         },
         {
           "id": "bio-m8-b12",
@@ -1604,7 +1619,7 @@
           "next": [
             "bio-m8-b13"
           ],
-          "status": "draft-for-Claude-review",
+          "status": "cut-or-folded-route-review-change-6",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practical support",
           "mainLearnerQuestion": "Investigate disease management evidence"
@@ -1834,7 +1849,7 @@
           "next": [
             "bio-m8-g02"
           ],
-          "status": "draft-for-Claude-review",
+          "status": "cut-or-folded-route-review-change-6",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practical support",
           "mainLearnerQuestion": "Investigate assistive technology effectiveness"
