@@ -700,7 +700,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How does mass spectrometry constrain a structure?"
+          "mainLearnerQuestion": "How does mass spectrometry constrain a structure?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c09.md"
         },
         {
           "id": "chem-m8-c10",
@@ -730,16 +731,17 @@
           ],
           "entryKnowledge": "Recall chem-m8-c08, chem-m8-c09 only as needed for this question.",
           "next": [
-            "chem-m8-c11"
+            "chem-m8-c11a"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "What bonds can an IR spectrum reveal?"
+          "mainLearnerQuestion": "What bonds can an IR spectrum reveal?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c10.md"
         },
         {
-          "id": "chem-m8-c11",
-          "title": "How does NMR reveal carbon and hydrogen environments?",
+          "id": "chem-m8-c11a",
+          "title": "How does carbon-13 NMR count carbon environments?",
           "type": "core",
           "siteLessons": [
             "L14"
@@ -755,7 +757,44 @@
           "start": "Count chemically distinct environments.",
           "stop": "Use chemical shifts, integration and splitting to test structures.",
           "playlistOrder": 18,
-          "planAnchor": "C11",
+          "planAnchor": "C11a",
+          "sourceCandidates": [
+            {
+              "id": "Chemistry-Y12-M8-L14",
+              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module8/lesson14.sa.html",
+              "scope": "Use only the part named by this route start and stop."
+            }
+          ],
+          "entryKnowledge": "Recall chem-m7-c02, chem-m8-c09 only as needed for this question.",
+          "next": [
+            "chem-m8-c11b"
+          ],
+          "status": "draft-for-Claude-review",
+          "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
+          "placement": "Core learner route",
+          "mainLearnerQuestion": "How does carbon-13 NMR count carbon environments?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c11a.md"
+        },
+        {
+          "id": "chem-m8-c11b",
+          "title": "How does proton NMR reveal hydrogen environments?",
+          "type": "core",
+          "siteLessons": [
+            "L14"
+          ],
+          "syllabusActions": [
+            "C8-IQ2-02"
+          ],
+          "prerequisites": [
+            "chem-m7-c02",
+            "chem-m8-c09",
+            "chem-m8-c11a"
+          ],
+          "estimatedMinutes": 8.5,
+          "start": "Count chemically distinct environments.",
+          "stop": "Use chemical shifts, integration and splitting to test structures.",
+          "playlistOrder": 18.5,
+          "planAnchor": "C11b",
           "sourceCandidates": [
             {
               "id": "Chemistry-Y12-M8-L14",
@@ -770,7 +809,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How does NMR reveal carbon and hydrogen environments?"
+          "mainLearnerQuestion": "How does proton NMR reveal hydrogen environments?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c11b.md"
         },
         {
           "id": "chem-m8-c12",
@@ -785,7 +825,7 @@
           "prerequisites": [
             "chem-m8-c09",
             "chem-m8-c10",
-            "chem-m8-c11"
+            "chem-m8-c11b"
           ],
           "estimatedMinutes": 8.5,
           "start": "Combine molecular mass, IR and NMR constraints.",
@@ -1583,12 +1623,13 @@
           ],
           "entryKnowledge": "Recall bio-m8-b03, bio-m8-b08, bio-m8-b10 only as needed for this question.",
           "next": [
-            "bio-m8-p05"
+            "bio-m8-b13"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How can type 2 diabetes be managed?"
+          "mainLearnerQuestion": "How can type 2 diabetes be managed?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b12.md"
         },
         {
           "id": "bio-m8-p05",
@@ -1658,7 +1699,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How can prevention campaigns reduce disease?"
+          "mainLearnerQuestion": "How can prevention campaigns reduce disease?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b13.md"
         },
         {
           "id": "bio-m8-b14",
@@ -1694,7 +1736,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "When can genetics help prevent disease?"
+          "mainLearnerQuestion": "When can genetics help prevent disease?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b14.md"
         },
         {
           "id": "bio-m8-b15",
@@ -1713,7 +1756,7 @@
           ],
           "estimatedMinutes": 8.5,
           "start": "Trace the sound pathway and locate a fault.",
-          "stop": "Compare hearing aids and cochlear implants for that fault.",
+          "stop": "Compare a hearing aid, a cochlear implant and a bone-conduction implant, and the conditions each suits.",
           "playlistOrder": 21,
           "planAnchor": "B15",
           "sourceCandidates": [
@@ -1730,7 +1773,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How can technology assist hearing loss?"
+          "mainLearnerQuestion": "How can technology assist hearing loss?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b15.md"
         },
         {
           "id": "bio-m8-b16",
