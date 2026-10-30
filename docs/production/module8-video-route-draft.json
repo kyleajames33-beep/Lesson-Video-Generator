@@ -846,7 +846,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How can several spectra identify one molecule?"
+          "mainLearnerQuestion": "How can several spectra identify one molecule?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c12.md"
         },
         {
           "id": "chem-m8-g03",
@@ -905,7 +906,9 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practice companion",
-          "mainLearnerQuestion": "Integrated organic structure practice"
+          "mainLearnerQuestion": "Integrated organic structure practice",
+          "playlistNote": "Shared skills-s08 follows g03 and precedes c13 in the Chemistry playlist (route review change 10).",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-g03.md"
         },
         {
           "id": "chem-m8-c13",
@@ -920,7 +923,8 @@
           "prerequisites": [
             "chem-m5-c04",
             "chem-m5-c07",
-            "chem-m7-c13"
+            "chem-m7-c13",
+            "skills-s08"
           ],
           "estimatedMinutes": 8.5,
           "start": "Compare reagent supply, conditions, yield and purity.",
@@ -939,7 +943,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How should a synthesis be designed and judged?"
+          "mainLearnerQuestion": "How should a synthesis be designed and judged?",
+          "designPath": "docs/production/claude-pm/lessons/chem-m8-c13.md"
         }
       ]
     },
@@ -1810,7 +1815,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "How can technology assist visual disorders?"
+          "mainLearnerQuestion": "How can technology assist visual disorders?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b16.md"
         },
         {
           "id": "bio-m8-b17",
@@ -1842,12 +1848,13 @@
           ],
           "entryKnowledge": "Recall bio-m8-b04, bio-m8-b15 only as needed for this question.",
           "next": [
-            "bio-m8-p06"
+            "bio-m8-g02"
           ],
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Core learner route",
-          "mainLearnerQuestion": "What can replace lost kidney function?"
+          "mainLearnerQuestion": "What can replace lost kidney function?",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-b17.md"
         },
         {
           "id": "bio-m8-p06",
@@ -1917,7 +1924,9 @@
           "prerequisites": [
             "bio-m8-b13",
             "bio-m8-b14",
-            "bio-m8-p06"
+            "bio-m8-b15",
+            "bio-m8-b16",
+            "bio-m8-b17"
           ],
           "estimatedMinutes": 8,
           "start": "Answer unseen evaluation prompts with case evidence.",
@@ -1961,7 +1970,8 @@
           "status": "draft-for-Claude-review",
           "coverageStatus": "candidate syllabus mapping; no teaching, practical or release approval",
           "placement": "Practice companion",
-          "mainLearnerQuestion": "Disease prevention and technology evaluation practice"
+          "mainLearnerQuestion": "Disease prevention and technology evaluation practice",
+          "designPath": "docs/production/claude-pm/lessons/bio-m8-g02.md"
         }
       ]
     }
