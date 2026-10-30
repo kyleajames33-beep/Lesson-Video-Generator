@@ -1376,3 +1376,341 @@ P06 https://youtu.be/sFHG5r3csDY and G01 https://youtu.be/mrmgK98F3-U are public
 G02 https://youtu.be/Jif3hku49lY and Biology P01 https://youtu.be/0U64-GcUlwM are uploaded saved drafts with approved titles and descriptions, not made for kids, Education, AI disclosure Yes, English (Australia) timed captions published in Studio, and their respective Module 6 playlist assignments. G02 and P01 were still being checked when last observed. Their thumbnail visual selection, checks and publication are pending. The attempt to reopen G02 timed out on browser input; its outcome is unverified. Inspect the existing drafts before uploading anything again.
 
 Stopped upload briefs after the browser timeout as instructed. No existing public caption tracks were replaced; 28y has not started. Resume 28x with G02 and Biology P01, read back both playlist orders, then perform authorised caption replacements before 28y. See `youtube/brief28x-preflight.json` and `youtube/wave5-uploads.json`.
+
+### Brief 28x: four videos public (28 October 2026)
+
+G02 https://youtu.be/Jif3hku49lY and Biology P01 https://youtu.be/0U64-GcUlwM are now public. Both had processing complete, no copyright or Community Guidelines issues, English (Australia) captions saved and their respective Module 6 playlist assignments. Visually inspected the existing automatic thumbnail 2 for each. Together with P06 https://youtu.be/sFHG5r3csDY and G01 https://youtu.be/mrmgK98F3-U, all four are public. Route ordering and playlist readbacks and authorised caption replacement remain pending.
+
+Both Module 6 playlists are manually ordered and read back after reload. Chemistry: G01 follows strong-acid calculations, G02 follows Ka, P06 follows titration calculations. Biology: P01 follows mutagens and precedes point mutations. Full available-video ID readbacks are in `youtube/brief28x-preflight.json`. Biology retains its existing unavailable item. Caption replacements remain pending.
+
+Caption repair: replaced chem-m6-c01 (HOcAqIXXbGk) after downloading the prior live track. Downloaded the saved result and verified all 196 cue texts and starts against the corrected SRT. Six cue ends differ by 21 to 301 ms after Studio import. First feedback cue starts at 7:14.200, matching the corrected file whose exporter validates the response hold. Old and new live hashes and evidence are in `youtube/caption-replacement-2026-10.json`.
+
+### Brief 28x: caption repair interrupted (28 October 2026)
+
+Four videos public and both Module 6 playlists ordered and read back. One existing public caption track, Chemistry C01 HOcAqIXXbGk, was replaced and its saved track downloaded and checked. The second, Biology B01 BLD9Zu9sPQ0, has its old track captured at `out/checks/caption-live-provenance-2026-10-25/bio-m6-b01-2026-10-28.sbv`. Its 177 cue texts and start times match the reference; eight ends differ by 21 to 221 ms. Opening the file chooser for the corrected SRT timed out; whether an import dialog remains open is unverified, and no B01 publication is confirmed. Inspect the editor before continuing.
+
+Stopped the upload briefs at the browser timeout as requested. The remainder of the caption queue and brief 28y remain pending. Evidence and hashes are in `youtube/caption-replacement-2026-10.json` and `youtube/brief28x-live-captions-2026-10-28.json`.
+
+### Brief 28x: caption repair resumed (28 October 2026)
+
+Twenty-two public tracks have been replaced and their saved tracks downloaded and checked. The queue and per-track hashes and feedback timing are in `youtube/caption-replacement-2026-10.json`. Text and cue starts matched the corrected files; Studio adjusted some cue ends. Continue with skills-s04 (dZQvSUxFY8A). Brief 28x remains in progress; 28y has not started. Earlier interruption entries above are superseded by this update.
+
+### Brief 28x: Studio connection stopped (28 October 2026)
+
+Thirty-seven public caption tracks have been replaced and checked against downloaded saved tracks. The next item is chem-m6-p04, VFu_7xIIBH0. Its prior live track was downloaded to `out/checks/caption-live-provenance-2026-10-25/chem-m6-p04-2026-10-28.sbv` and compared with its reference: 178 texts and starts match, one end differs by 101 ms. No replacement was uploaded for this item. Studio stopped responding after the download, so inspect the editor before resuming. Brief 28x remains incomplete and 28y has not started. The caption ledger and comparison reports in `youtube/` contain per-track evidence. Briefs 106 to 108 were previously completed and verified, as recorded below and in their hand-ins.
+
+### Brief 28x: resume attempt (28 October 2026)
+
+Chrome could not attach to a fresh Studio tab. Stopped upload work as instructed. No additional caption replacement or video upload was made. The next item remains chem-m6-p04 (VFu_7xIIBH0), whose prior live caption track is captured and compared. Thirty-seven replacements remain completed; brief 28y has not started. Briefs 106 to 108 were previously completed and verified.
+
+### Brief 28x: Chrome unavailable on resume (28 October 2026)
+
+The browser inventory returned no connected browsers on this resume attempt. Stopped the upload briefs as instructed; no further public changes were made. Thirty-seven caption replacements are completed and checked. The next item remains chem-m6-p04 (VFu_7xIIBH0); its prior track has been captured and compared. Brief 28y remains unstarted. Briefs 106 to 108 were already completed and verified.
+
+### Brief 28x completed and 28y started (28 October 2026)
+
+All 85 eligible public caption tracks were replaced and their saved tracks downloaded and checked. Six tracks with baked-in captions were skipped: bio-m5-b02a, bio-m5-b02b, bio-m5-b02c, bio-m5-b03a, chem-m5-c03 and chem-m5-c04a. The per-track hashes and readbacks are in `youtube/caption-replacement-2026-10.json` and comparison reports. The four 28x videos and both Module 6 playlist readbacks were completed earlier.
+
+Brief 28y: all 20 specified MP4 hashes match and cumulative caption files exist. Chemistry M7 C01 is public at https://youtu.be/y-galt8f4ow, with English (Australia) captions and the new public manually sorted Chemistry Module 7 playlist. Biology M7 B01 is uploaded as a private draft at https://youtu.be/SfHlZFpl5c4, with captions published and the new public manually sorted Biology Module 7 playlist. Its checks and thumbnail were still processing at this point. Nineteen videos remain to publish and both new playlist orders require final readback.
+
+## 28 October 2026: 28y paused after browser connection dropped
+
+Brief 28x is complete, including the four public Module 6 videos and replacement of 85 eligible public caption tracks. The six baked-in exceptions remain unchanged. See `youtube/caption-replacement-2026-10.json` and the 28x readback evidence.
+
+Brief 28y has five confirmed public videos: chem-m7-c01 `y-galt8f4ow`, bio-m7-b01 `SfHlZFpl5c4`, chem-m7-c02 `ZWPnKycf4bg`, bio-m7-b02 `lh7xCoEFpkI`, and chem-m7-c03 `G3nQPPbvO7I`. Both new Module 7 playlists have been created public with manual sorting. Their final IDs, ordering and readbacks remain pending.
+
+Three more videos are private drafts with timed English (Australia) captions published: bio-m7-b03 `UbgSznvRHtk`, chem-m7-p01 `hJ3m9qswFqI`, and bio-m7-p02 `sGl2I3C9TyY`. Checks were still running. B03 thumbnail 1 and chem practical thumbnail 2 were visually inspected; bio practical thumbnail remains to inspect. Publish in the brief's priority order after checks clear and prerequisites are available.
+
+Chem-m7-c04a `3sb8EukMr5g` was uploading as a private draft with title, description, audience, AI disclosure, language and Chemistry playlist selected. The caption editor was open when the Chrome connection timed out twice. Its upload completion, captions, thumbnail and checks are unconfirmed. Resume that existing draft and avoid duplicate uploads. Eleven subsequent videos remain to upload. Full per-video state and hashes are in `youtube/wave5-uploads.json`; prepared descriptions are in `youtube/wave5-metadata-draft.json`.
+
+Per the owner's instruction, uploads stopped on the browser drop. Briefs 106, 107 and 108 were already carried out and their findings and outstanding review gates are recorded in the earlier status entries. No daily upload limit was observed.
+
+### Browser retry
+
+A subsequent retry could not obtain the Chrome state: two connection attempts timed out. No upload or publication changes were made during this retry. Resume 28y from the existing drafts and remaining queue recorded above when Chrome control is available.
+
+Chrome connection was retried again and timed out before a browser state could be obtained. No upload changes were made; the existing 28y resume point above remains current.
+
+### Brief 28y: uploads complete, browser stopped (28 October 2026)
+
+All 20 specified files have been uploaded. Eighteen are confirmed public, including Chemistry M6 P07 https://youtu.be/6l_m2vN2X5g and G03 https://youtu.be/Rl7RUILbyHY. Studio showed no initial check issues for G03 and confirmed publication. Timed English (Australia) captions were published on all 20.
+
+Chemistry M6 G04 https://youtu.be/oj-Cp4KMZUY and skills S05 https://youtu.be/4uehJ1QBp2o remain private drafts. Inspect their generated thumbnails and checks, then publish in that order. Do not upload duplicates. The two public Module 7 playlists were created, but their IDs and final ordering still need readback. Sort and read back the affected Chemistry M6 and skills playlists as well. Per-video details and prepared metadata are in `youtube/wave5-uploads.json` and `youtube/wave5-metadata-draft.json`.
+
+Chrome stopped responding when opening the next saved draft. Upload work stopped as instructed. Brief 28x is complete and briefs 106 to 108 were previously carried out, with findings and remaining review gates recorded in their hand-ins. No daily upload limit was observed. Earlier 28y interruption counts above are superseded by this entry.
+
+### Brief 28y complete: drafts published and playlists read back (28 October 2026)
+
+Published the existing G04 draft https://youtu.be/oj-Cp4KMZUY and S05 draft https://youtu.be/4uehJ1QBp2o, in that order. Studio confirmed publication, processing complete and no copyright or Community Guidelines issues. Visually inspected and kept automatic thumbnail 2 for both. All 20 brief videos are now public. No files were uploaded in this resume and no duplicates were created.
+
+Public Manual playlist readbacks: Chemistry M7 https://www.youtube.com/playlist?list=PLZn7qgJ_Eg2E has C01, C02, C03, P01, C04a, C04b, G01. Biology M7 https://www.youtube.com/playlist?list=PLF46LOS0IuCo has B01, B02, B03, P02, B04, B05, B06, B07. Skills https://www.youtube.com/playlist?list=PLD-Lwfjq3gW0 has S01, S02, S03, S04, S05. These already matched the required order. Reordered Chemistry M6 https://www.youtube.com/playlist?list=PLWBoqjMWeZi0: G03 follows P06, P01 follows C13, G04 follows C15, and P07 follows C16. Added existing S05 before G01 as required by the route review. All 31 Chemistry M6 positions were read back after reload. A reorder call timed out, but control recovered and final order was verified. Full lesson IDs, video IDs and positions are in `youtube/brief28y-final-readback.json` and `youtube/wave5-uploads.json`. Board updated. Question for Claude: none.
+
+### Brief 28z: prepared, first draft uploaded, browser timeout (28 October 2026)
+
+Prerequisites 28x and 28y are complete. All fifteen MP4 SHA-256 values match the brief and every cumulative caption file is present. Prepared titles, site links, syllabus quotations and chapters using cumulative scene starts in `youtube/brief28z-preflight.json` and `youtube/wave5-metadata-draft.json`. No title needed shortening.
+
+Chemistry C05 is an existing private draft at https://youtu.be/1qF_486TVQE. Studio confirmed its title, description, not made for kids setting and Chemistry Module 7 playlist. Copyright showed no issues; Community Guidelines checks were at 18%. The advanced settings click timed out. Upload work stopped under the inherited 28x timeout rule. Resume this draft without uploading a duplicate. Advanced settings, captions, thumbnail inspection, completed checks and publication remain pending. The other fourteen files remain unuploaded. The playlist membership changed but final playlist readback remains pending. Per-video state is in `youtube/wave5-uploads.json`.
+
+### Brief 110: reviews, plates and site log complete (28 October 2026)
+
+Ten independent review files in checks/ use the requested filenames and leave Resolution empty. Counts are separate by review and overlap; they are not unique defect totals.
+
+- G03: learning 0 blockers, 2 should fix; science 0 blockers, 3 should fix.
+- P04: learning 0 blockers, 3 should fix; science 1 blocker, 3 should fix.
+- P05c: learning 2 blockers, 2 should fix; science 2 blockers, 4 should fix.
+- P06c: learning 1 blocker, 3 should fix; science 1 blocker, 3 should fix.
+- S08: learning 2 blockers, 3 should fix; science 2 blockers, 2 should fix.
+
+Three transparent plate candidates and the aligned water-bath overlay were inspected on cream, checker and dark backgrounds. Exact prompts, native history and hashes: assets/brief110-provenance.json. Local archive out/archives/brief110-plates-2026-10-28.zip has 100 members and passes CRC and member hashes; see assets/brief110-media-checkpoint.json. Eight exact-text site corrections were verified and added to site-corrections-m7.md, with checks/brief109-110-site-log-verification.json. Design findings, current staff-only school chemical permissions and owner artwork acceptance remain pending. Heating mantle retained. No design edits, speech, renders, commits or uploads for this review brief. Question for Claude: resolve the findings before recording.
+
+### Brief 109: reviews, plates and site log complete (28 October 2026)
+
+Eight requested checks in checks/, with empty Resolution sections. Counts are learning then science and overlap across reviews.
+
+- C15: learning 0 blockers, 3 should fix; science 0 blockers, 4 should fix.
+- G04: learning 0 blockers, 3 should fix; science 0 blockers, 3 should fix.
+- P05 Biology: learning 2 blockers, 2 should fix; science 2 blockers, 3 should fix.
+- S06: learning 0 blockers, 3 should fix; science 0 blockers, 4 should fix.
+
+Seven new transparent plates plus the LDPE contrast replacement delivered. Root inspected the contact sheet, before/after and final aligned overlays. LDPE canvas and alpha are byte-identical to its original. Full hand-in: assets/brief109-hand-in.md. Prompts: assets/brief109-provenance.json. Verified local archive: out/archives/brief109-plates-reviews-2026-10-28.zip, see assets/brief109-media-checkpoint.json. Five new confirmed site rows added to site-corrections-m7.md, with the existing L05 safety correction reconciled. L23 needs its stale static key removed because the practice bank randomises questions. Site remains unchanged. Owner art acceptance, school-policy reconciliation and source limits remain pending. No design edits, speech, render or commit. Question for Claude: resolve findings before recording.
+
+### Brief 111: reviews, plates and site log complete (28 October 2026)
+
+Eight independent review files in `checks/`, with empty Resolution sections. Counts are separate by review type and overlap.
+
+- C01: learning 0 blockers, 2 should fix; science 0 blockers, 0 should fix.
+- C02: learning 1 blocker, 3 should fix; science 1 blocker, 3 should fix.
+- B01: learning 0 blockers, 2 should fix; science 0 blockers, 2 should fix.
+- B02: learning 2 blockers, 2 should fix; science 2 blockers, 3 should fix.
+
+Delivered 18 transparent plate candidates. Independent artwork review inspected all 18 plates and nine overlays. Its three findings were repaired: stable balance geometry, stable Mohr flask geometry and visibly milky precipitate. Root reinspected the repairs. Prompts and provenance: `assets/brief111-provenance.json`; geometry proof: `assets/brief111-geometry-repair.json`; archive: `out/archives/brief111-plates-2026-10-28.zip`, with `assets/brief111-media-checkpoint.json`. The archive has 159 ZIP entries, including its manifest, and passes CRC, content hashes and manifest comparison.
+
+The three Mohr flasks and settled-precipitate beaker retain the exact requested legacy framing, with about 8% minimum margin. This specific cross-fade requirement takes priority over the brief's generic 10% clear-margin rule. All other plates meet 10%. No stretching was used. Owner artwork acceptance remains pending.
+
+Fifteen confirmed site rows are in `site-corrections-m8.md`. Root checked every old quotation against the read-only HTML, in `checks/brief111-site-log-verification.json`. Fresh official 2017 DOCX text from brief 110 confirmed all three syllabus groups and examples. B02 proposed repairs are shorter or name explicit cuts. No site, lesson source, narration or scene code was changed. No speech, renders, publication, commit or push for this review brief. Claude resolves the learning/science findings; exact voiced preview and human listening remain later gates.
+
+Combined verification: `checks/brief109-111-final-validation.json` confirms all 26 reviews, 29 plate assets, three local archives, source hashes and the recorded framing exceptions. The logs add 28 confirmed site corrections (13 Module 7 and 15 Module 8). Brief 28z remains stopped at the existing C05 private draft after its browser timeout; all 15 local video/caption input checks passed in `youtube/brief28z-input-check.json`. Question for Claude: resolve the review findings before recording.
+
+
+### Brief 28z complete: fifteen public uploads and final readbacks (29 October 2026)
+
+All fifteen approved MP4s are public. Resumed the existing C05 draft and uploaded the other fourteen once each. Every saved title and description matches the prepared record after blank-line normalization. All fifteen saved pages show Public, HD complete, not made for kids, AI disclosure, no paid promotion, English (Australia) and Education. Cumulative timed SRT captions were imported and saved; copyright and Community Guidelines checks found no issues. End screens were skipped for the final key notes.
+
+- chem-m7-c05: https://youtu.be/1qF_486TVQE
+- bio-m7-b08: https://youtu.be/fGIkZ3nwXZw
+- chem-m7-c06: https://youtu.be/-XVSCs8nHnI
+- bio-m7-b09: https://youtu.be/IcOyh0y7EjI
+- chem-m7-c07: https://youtu.be/7dqWjzokvJU
+- bio-m7-g03: https://youtu.be/2Xrb7pKgo6w
+- chem-m7-p02: https://youtu.be/8qKRorP_RRk
+- bio-m7-b10: https://youtu.be/nwBfq4XGI0w
+- chem-m7-p03: https://youtu.be/Od9P6Tuv800
+- bio-m7-b11: https://youtu.be/Qg_caOin2x0
+- chem-m7-g02: https://youtu.be/PPIwkdv8dC8
+- bio-m7-b12: https://youtu.be/9FkW6EQuzrA
+- chem-m7-c08a: https://youtu.be/GJVFRMiNDOk
+- chem-m7-c08b: https://youtu.be/j2GPr4yGQHc
+- skills-s07: https://youtu.be/NT6MvX6VT6g
+
+Public Manual playlists were read back: Chemistry M7 (16 entries) https://www.youtube.com/playlist?list=PLZn7qgJ_Eg2E, Biology M7 (14 entries) https://www.youtube.com/playlist?list=PLF46LOS0IuCo, and skills (6 entries) https://www.youtube.com/playlist?list=PLD-Lwfjq3gW0. Chemistry P02 follows C04b and precedes G01; S07 follows P03 and precedes G02. Skills S07 follows S05, leaving S06 for later. Chemistry persisted after reload.
+
+S07 uses automatic frame 1 (the three-target comparison), because frame 2 showed an empty table. Other uploads retain inspected frame 2. Removed internal practical-link author notes from P02/P03 and corrected G03 lesson11 to the live .sa URL before publication. Evidence: `youtube/brief28z-final-readback.json`, `youtube/brief28z-preflight.json`, `youtube/brief28z-input-check.json` and `youtube/wave5-uploads.json`. Earlier interruption entries above are historical. No daily upload limit, duplicates, paid narration, renders, source changes, commit or push. Briefs 109 to 111 remain delivered as recorded above, with Claude to resolve their review findings. Question for Claude: none for the upload hand-in.
+
+
+### Brief 28aa complete: nine public Module 7 uploads (29 October 2026)
+
+All nine approved MP4s were uploaded once each in the brief table order and are public. Every MP4 SHA-256 matched. Only the listed cumulative timed SRT files were imported. HD processing and copyright/Community Guidelines checks completed with no issues. Saved titles and descriptions match the prepared metadata after whitespace normalization, including exact syllabus quotations, live .sa links and cumulative chapters. Saved audience, AI disclosure, no paid promotion and English (Australia) settings were checked; Education was checked during upload. Automatic thumbnail frame 2 was visually inspected for every video. End screens were skipped for the final key notes.
+
+- chem-m7-c09: https://youtu.be/hk9wDdhbTLA
+- bio-m7-b13: https://youtu.be/HEm9ud4b7iI
+- chem-m7-c10: https://youtu.be/_y2Ow9e-0sI
+- bio-m7-p01: https://youtu.be/PzrqjRdWUjY
+- chem-m7-c11: https://youtu.be/vxG4x229SeE
+- bio-m7-g01: https://youtu.be/SYgIWk0__bk
+- chem-m7-c12: https://youtu.be/Cms4sZ-Sly0
+- chem-m7-c13: https://youtu.be/aGWfHHCxzrU
+- chem-m7-c14: https://youtu.be/Mv1CG4fzbaM
+
+Both Public Manual playlists were read back after reload: Chemistry M7 (22 entries) https://www.youtube.com/playlist?list=PLZn7qgJ_Eg2E and Biology M7 (17 entries) https://www.youtube.com/playlist?list=PLF46LOS0IuCo. Chemistry C09 to C14 follow C08b. Biology P01 is fourth, after B03 and before P02; B13 and G01 follow B12. Future lesson gaps remain.
+
+Evidence: `youtube/brief28aa-preflight.json`, `youtube/brief28aa-final-readback.json`, `youtube/wave5-uploads.json` and the production board. No daily upload limit or duplicates. No paid narration, rendering, lesson source edits, commit or push. Question for Claude: none for this upload hand-in.
+
+
+### Brief 113: Year 12 coverage audit (30 October 2026)
+
+Created `checks/coverage-audit-2026-10-30.md` and `checks/coverage-audit-2026-10-30.json`. The JSON includes all route rows, retired IDs, 127 syllabus points, Year 11 inventories and live channel/playlist readbacks.
+
+| Module | Subject | Active | Public | Built, not uploaded | Designed | Held | Not started | Dropped/merged |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 5 | Chemistry | 26 | 24 | 0 | 2 | 0 | 0 | 4 |
+| 5 | Biology | 28 | 27 | 0 | 0 | 0 | 1 | 0 |
+| 6 | Chemistry | 27 | 26 | 1 | 0 | 0 | 0 | 0 |
+| 6 | Biology | 20 | 19 | 0 | 0 | 0 | 1 | 4 |
+| 7 | Chemistry | 27 | 21 | 0 | 6 | 0 | 0 | 3 |
+| 7 | Biology | 21 | 17 | 0 | 1 | 3 | 0 | 2 |
+| 8 | Chemistry | 21 | 0 | 0 | 2 | 0 | 19 | 4 |
+| 8 | Biology | 22 | 0 | 0 | 2 | 0 | 20 | 4 |
+
+Read back all 145 public channel videos and nine playlists. All 139 current wave uploads are public and in a playlist; no duplicate upload found. G04 counts as public through the old Year 11 limiting-reactants prerequisite, with the separate M5 production parked. Flagged six burned-in caption videos, the three Biology M7 cultural holds, Chemistry M5 C12 cultural review and 18 missing or partial syllabus groups. The named content checklist has no Year 12 rows, so the audit used the Year 12 syllabus ledger and designs. Year 11 inventory distinguishes Chemistry 2017 M1 to M4 from Biology 2025 three focus areas. No uploads, published edits, design edits, renders or commits. Nothing remains unfinished. Question for Claude: none.
+
+
+### Brief 112: Revision 2 error-only check (30 October 2026)
+
+Created `checks/codex-check-112.md`, with calculation/review detail in `checks/brief112-chemistry.md` and `checks/brief112-biology-skills.md`. Source hashes/counts: `checks/brief112-input-audit.json`. Site quotation proof: `checks/brief112-site-verification.json`. All 13 designs are Revision 2; none skipped.
+
+- chem-m7-c15: 0 errors.
+- chem-m7-g04: 1 error.
+- bio-m7-p05: 1 error.
+- skills-s06: 0 errors.
+- chem-m7-g03: 0 errors.
+- chem-m7-p04: 0 errors; current Appendix D permission check unfinished.
+- chem-m7-p05: 0 errors.
+- chem-m7-p06: 3 errors.
+- skills-s08: 0 errors; owner keeps "probably contributed".
+- chem-m8-c01: 0 errors.
+- chem-m8-c02: 1 error.
+- bio-m8-b01: 2 errors.
+- bio-m8-b02: 0 errors.
+
+Eight design errors, plus a separate published bio-m7-p02 "tape, don't seal" finding. Added one verified L21 thermoset row to `site-corrections-m7.md`; M8 heat-loss finding was already logged, so no duplicate. All narrations meet the character range and have zero em dashes. Current staff-only school culture permissions and potassium dichromate Appendix D remain unread, so no permission pass is claimed. P06 needs the reported concentration/formulation repair; its original clear-detergent outcome is not established by the literature. No physical pilot requested. No design edits, speech, renders, published edits or commits. Question for Claude: resolve the reported errors and remaining school-permission checks before recording.
+
+
+### Brief 113: independent verification addendum (30 October 2026)
+
+Preserved the dated audit and existing hand-in that another session wrote while this work was running. Independent review is in `checks/coverage-audit-2026-10-30-review.md` and `.json`, with a repeatable verifier. Fresh requests matched every entry and order in all nine public playlists. Rechecked all 192 active rows, eight summary rows, 139 current upload IDs, 127 syllabus points, design Revisions and Year 11 inventories. Applied one correction to the requested master Markdown/JSON: C8-IQ1-02 already has partial precipitation support from public M5 P03, though the full Module 8 identification suite is missing. Counts are unchanged. Resolved four renderer identities from their final export audits. The five channel-feed pages in the original audit were not independently repeated; their saved IDs match the freshly fetched 145-video playlist union. No uploads, designs, video edits or commits. Question for Claude: none.
+
+
+### Briefs 112 and 113: repeat-request verification (30 October 2026)
+
+Preserved the existing reports and hand-ins. All 13 design SHA-256 hashes still match `checks/brief112-input-audit.json`. Reran the coverage verifier without overwriting its saved review: fresh reads of all nine public playlists and local checks of 192 route rows, 139 current uploads, 127 syllabus points, design Revisions and Year 11 paths returned no findings. Playlist union remains 145 videos. Brief 112 still reports eight design errors and the separate published P02 memory-line finding; current staff-only culture permissions and potassium dichromate Appendix D remain unfinished. Reports: `checks/codex-check-112.md`, `checks/coverage-audit-2026-10-30.md` and `.json`. No design edits, speech, renders, uploads or commits. Question for Claude: resolve the existing findings and staff-only safety checks before recording.
+
+### Briefs 112, 113 and 114: current hand-in (30 October 2026)
+
+Brief 112: preserved and reverified `checks/codex-check-112.md`. All 13 design hashes and narration counts still match; no em dashes. Existing errors remain: C15 0, G04 1, Biology P05 1, S06 0, G03 0, Chemistry P04 0, P05 0, P06 3, S08 0, M8 C01 0, C02 1, B01 2, B02 0. Eight design errors plus the separate published P02 memory-line finding. Fresh NSW and solubility sources support the existing findings. Staff-only culture permissions and dichromate Appendix D remain unread. No duplicate site row was added.
+
+Brief 113: updated `checks/coverage-audit-2026-10-30.md` and `.json` for the eight new designs. Fresh reads covered all nine playlists and all five channel pages: 145 unique public videos, no public video outside the playlists. Route totals are 134 public, one built, 21 designed, three held and 33 not started. Sixteen syllabus groups remain missing or partial; detailed practical gaps and Year 11 inventory are in the audit.
+
+| Module | Subject | Public | Built | Designed | Held | Not started |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 5 | Chemistry | 24 | 0 | 2 | 0 | 0 |
+| 5 | Biology | 27 | 0 | 0 | 0 | 1 |
+| 6 | Chemistry | 26 | 1 | 0 | 0 | 0 |
+| 6 | Biology | 19 | 0 | 0 | 0 | 1 |
+| 7 | Chemistry | 21 | 0 | 6 | 0 | 0 |
+| 7 | Biology | 17 | 0 | 1 | 3 | 0 |
+| 8 | Chemistry | 0 | 0 | 6 | 0 | 15 |
+| 8 | Biology | 0 | 0 | 6 | 0 | 16 |
+
+Brief 114: wrote all eight `checks/<key>-learning-review.md` and eight `checks/<key>-claude-science-check.md` files for m8p02, m8g01, m8c03a, m8c03b, m8b03, m8b04, m8b05 and m8g03. Each ends with an empty Resolution section. Counts below deduplicate findings repeated across the two reviews.
+
+| Design | Blockers | Should fix |
+| --- | ---: | ---: |
+| chem-m8-p02 | 2 | 1 |
+| chem-m8-g01 | 0 | 1 |
+| chem-m8-c03a | 0 | 7 |
+| chem-m8-c03b | 0 | 1 |
+| bio-m8-b03 | 0 | 3 |
+| bio-m8-b04 | 1 | 4 |
+| bio-m8-b05 | 0 | 3 |
+| bio-m8-g03 | 0 | 1 |
+
+The three blockers include one unresolved staff-only CSIS check, not a finding that barium chloride is prohibited. The other blockers are P02's uncontrolled filtration temperature and B04's claim that conserving water alone restores concentration after added salt without drinking. Four earlier Revision 2 designs also need `.sa.html` metadata links. Added 12 confirmed rows to `site-corrections-m8.md`, after rechecking every exact quotation against the read-only HTML. Notes and unsupported attributions stay separate in `checks/brief114-site-additions.md`; no duplicate B03/G03 rows.
+
+Delivered 29 new plates, five translated flame v2 copies and one alpha-only nephron repair. Built-in imagegen prompts, native originals, hashes, background checks and 50% overlays are in `assets/brief114-provenance.json` and `assets/brief114-qa/`. Owner art acceptance and cross-fade playback remain pending. The three P02 plates are held because its asset brief requires both reviews to pass before generation. No design was edited to remove that condition.
+
+Local archive: `out/archives/brief114-plates-2026-10-30.zip`. Checkpoint: `assets/brief114-media-checkpoint.json`. All 323 members passed ZIP CRC, hashes and isolated restore checks. The archive is not uploaded. No design edits, speech, renders, published-video edits, uploads or commits. For Claude: resolve the findings and school-permission checks before recording; then commission the three held P02 plates.
+
+### Brief 115: Biology M6 B20 reviews, plates and site log (30 October 2026)
+
+Created `checks/m6b20-learning-review.md` and `checks/m6b20-claude-science-check.md`, both with empty Resolution sections. Combined unique findings: **2 blockers and 12 should-fix items**. Learning review: 2 blockers, 5 should-fix. Science review: 1 shared blocker, 7 additional should-fix. The blockers are the wrong field/carrier/allele-frequency model and the anonymous source-reading scene. Repairs are exact proposals for Claude; the design is unchanged.
+
+The science check verifies dates, gene constructs, total carotenoids versus beta-carotene, food versus growing permissions, historical licensing, cotton adoption and resistance, both attempts and the exact 2017 syllabus point. No learner claim about a specific Aboriginal or Torres Strait Islander community was found. The current PhilRice FAQ reports the programme on hold and no later official reversal was found, but a complete court docket through 30 October 2026 was not obtained. Current executed licence terms, worldwide live patents and an exact 2026-season Bt share were not certified. Historical evidence and these limits are recorded in the science report.
+
+The learning-only repair set is 5,800 characters, about 556.59 seconds, against the original 5,988 and 570.73 seconds. Recount the combined science and learning repairs after resolution, retaining the 5,500-character minimum and brief feedback. The existing rice and cotton reuse plates have visible fringe and need a separate edge-cleanup task; they were not changed here.
+
+Delivered `public/assets/biology/m6-rice-plant-panicle-v1.png`, `m6-rice-bowls-white-golden-v1.png` and `m6-eggplant-fruit-v1.png`. The bowls are one side-by-side plate as the design requests. All are 2000-square RGBA, with at least 10% clear margins. Root and an independent reviewer inspected actual content, black/white/dark-board views, 250-pixel subject-height views and the bowl overlay. No material content or edge failures were found. Owner art acceptance remains pending.
+
+Provenance and full prompts: `assets/brief115-provenance.json`. Native generations and QA: `assets/brief115-qa/`. Added six correction passages to `site-corrections-m6.md`, after rechecking seven exact quotations against the read-only HTML. Existing findings were cross-referenced; unsupported claims and the rejected feral-canola correction remain separate in `checks/brief115-site-additions.md`. Quote hashes: `assets/brief115-qa/site-verification.json`.
+
+Local archive: `out/archives/brief115-plates-2026-10-30.zip`; checkpoint: `assets/brief115-media-checkpoint.json`. All 48 members passed ZIP CRC, hashes and an isolated restore. The archive is not uploaded. No design edits, speech, renders, published edits or commits. For Claude: resolve the findings, choose the combined repairs and recount before voicing; arrange the separate reuse-edge cleanup. Nothing else from this brief remains unwritten or unarchived. No question for the owner.
+
+### Briefs 28ab and 116 to 121: hand-in (30 October 2026)
+
+Brief 28ab: local C02 upload preflight and cumulative captions are checked, and the P02 description correction is prepared in `youtube/brief28ab-preflight.json` and `youtube/wave5-metadata-draft.json`. A final connection retry still returned no browser or native-app host. C02 was not uploaded and the published P02 description was not changed. No live URL or readback was invented.
+
+Brief 116: `checks/codex-check-116.md` reports one remaining error: B04 equates no sweating with no water loss. P02, G01, C03a, C03b, B03, B05 and G03 each have zero reported errors. Delivered the three commissioned P02 plates, matched-apparatus QA, `assets/brief116-provenance.json` and its verified local media checkpoint.
+
+Brief 119: `checks/codex-check-119.md` reports two errors: the absolute no-spread claim and Visual cue quotations that no longer match the revised narration. Rice and cotton alpha edges were cleaned without changing RGB, canvas or artwork placement. Original files, small-size background comparisons, provenance and a verified local archive are retained.
+
+Brief 117: both requested reviews are written for every design. Exact reports are `checks/<key>-learning-review.md` and `checks/<key>-claude-science-check.md`; each has an empty Resolution section. Counts below are per review and overlap.
+
+| Design | Learning: blockers / should fix | Science: blockers / should fix |
+| --- | --- | --- |
+| m8p03 | 1 / 2 | 1 / 3 |
+| m8c04 | 1 / 2 | 1 / 2 |
+| m8p04 | 0 / 3 | 0 / 2 |
+| m8g02 | 1 / 2 | 1 / 2 |
+| m8p02b | 1 / 3 | 1 / 3 |
+| m8b06 | 1 / 2 | 1 / 2 |
+| m8b07 | 0 / 3 | 0 / 4 |
+| m8b08 | 1 / 3 | 1 / 3 |
+
+Artwork, QA exceptions, source-check limits and checkpoint details: `assets/brief117-hand-in.md`, `assets/brief117-provenance.json`, `assets/brief117-qa/` and `assets/brief117-media-checkpoint.json`.
+
+Brief 118: both requested reviews are written for every design. Exact reports are `checks/<key>-learning-review.md` and `checks/<key>-claude-science-check.md`; each has an empty Resolution section. Counts below are per review and overlap.
+
+| Design | Learning: blockers / should fix | Science: blockers / should fix |
+| --- | --- | --- |
+| m8c05 | 0 / 3 | 0 / 3 |
+| m8c06 | 0 / 3 | 0 / 5 |
+| m8c08 | 1 / 1 | 1 / 2 |
+| m8p05c | 1 / 3 | 1 / 4 |
+| m8b09 | 3 / 2 | 3 / 3 |
+| m8b10 | 1 / 4 | 1 / 4 |
+| m8b11 | 0 / 5 | 0 / 6 |
+| m8g01b | 0 / 4 | 0 / 4 |
+
+Artwork, QA exceptions, source-check limits and checkpoint details: `assets/brief118-hand-in.md`, `assets/brief118-provenance.json`, `assets/brief118-qa/` and `assets/brief118-media-checkpoint.json`.
+
+Brief 120: both requested reviews are written for every design. Exact reports are `checks/<key>-learning-review.md` and `checks/<key>-claude-science-check.md`; each has an empty Resolution section. Counts below are per review and overlap.
+
+| Design | Learning: blockers / should fix | Science: blockers / should fix |
+| --- | --- | --- |
+| m8c09 | 1 / 2 | 1 / 3 |
+| m8c10 | 0 / 3 | 1 / 5 |
+| m8c11a | 0 / 2 | 1 / 2 |
+| m8c11b | 0 / 2 | 1 / 2 |
+| m8b12 | 2 / 2 | 2 / 3 |
+| m8b13 | 0 / 3 | 0 / 3 |
+| m8b14 | 1 / 3 | 1 / 4 |
+| m8b15 | 0 / 3 | 0 / 3 |
+
+Artwork, QA exceptions, source-check limits and checkpoint details: `assets/brief120-hand-in.md`, `assets/brief120-provenance.json`, `assets/brief120-qa/` and `assets/brief120-media-checkpoint.json`.
+
+Brief 121: both requested reviews are written for every design. Exact reports are `checks/<key>-learning-review.md` and `checks/<key>-claude-science-check.md`; each has an empty Resolution section. Counts below are per review and overlap.
+
+| Design | Learning: blockers / should fix | Science: blockers / should fix |
+| --- | --- | --- |
+| m8c12 | 0 / 2 | 1 / 1 |
+| m8g03c | 0 / 2 | 1 / 1 |
+| m8c13 | 0 / 2 | 0 / 3 |
+| m8b16 | 0 / 2 | 0 / 2 |
+| m8b17 | 0 / 2 | 0 / 2 |
+| m8g02b | 1 / 2 | 1 / 2 |
+
+Artwork, QA exceptions, source-check limits and checkpoint details: `assets/brief121-hand-in.md`, `assets/brief121-provenance.json`, `assets/brief121-qa/` and `assets/brief121-media-checkpoint.json`.
+
+Added 59 confirmed site rows in this run: Brief 117 has 24, Brief 118 has 18, Brief 120 has seven and Brief 121 has ten. Exact excerpts were rechecked against the read-only HTML; no site file was edited. Cultural-review flags remain separate.
+
+A final single-pass retry for the seven missing C10 IR compounds returned HTTP 403 for every catalog. No additional measured records were verified. Requests and access limits are saved in `assets/brief120-ir-followup.json`; the three-of-ten measured package remains unchanged.
+
+Task utilities are kept under `assets/brief116-121-tools/`; older scripts/ references describe their original creation location. The review and utility snapshot has its own `assets/brief116-121-hand-in-checkpoint.json`.
+
+Final integrity report: `checks/brief116-121-final-validation.json`. Local ZIPs are checked against their checkpoints, with CRC and member hashes. They have not been uploaded. Source reviews do not supply human listening, motion review or owner artwork acceptance. The exact measured IR/NMR records still missing from the spectroscopy checks remain recording blockers. No lesson design, narration, scene code, speech or video export was changed or produced. No commits or pushes.
+
+For Claude: resolve the reports before recording. Restore the browser connection to finish Brief 28ab. No further owner question.
+
+
+### Briefs 28ab and 116 to 121: continuation (31 October 2026)
+
+Browser access still fails after the Chrome reset, a fresh control session and a direct Chrome tab attempt. No YouTube change was applied. All four prepared C02 input hashes still match. Seven NIST catalogs are now readable: no additional appropriate neat-liquid transmittance record was certified. The measured package remains three of ten; the two apparent liquid entries record real refractive index. Exact IR/NMR checks remain open. Nineteen author design revisions differ from the 30 October inputs; old reviews and validation remain historical. No design, narration or existing review was changed. Details: `assets/brief116-121-continuation-2026-10-31.md`. Additive ZIP/checkpoint verified; earlier archives preserved.

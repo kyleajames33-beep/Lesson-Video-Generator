@@ -1,0 +1,376 @@
+{
+  "brief": 110,
+  "date": "2026-10-28",
+  "generationTool": "OpenAI built-in image_gen.imagegen",
+  "transparentBackgroundRequested": true,
+  "generationCount": 5,
+  "selectedPlateCount": 3,
+  "artStatus": "Processed candidates, owner art acceptance pending",
+  "processingAuthorisation": "Continuing owner permission for deterministic alpha cleanup, resizing and alignment documented 27 October 2026; root reconfirmed this scope during brief110 on 28 October 2026. Content changes made with imagegen.",
+  "sourceDesignRevision": "Revision 1, 28 October 2026",
+  "reviewStatus": "Ten independent source reviews complete with unresolved findings. Candidate art commissioned by explicit brief110 instruction; art is not teaching or safety approval.",
+  "referenceAppearanceInspected": "references.jpg inspected before generating; existing orange/green rack tubes, Tollens tube, separating funnel, conical flask, reflux mantle and soap pairs viewed.",
+  "generations": [
+    {
+      "key": "before-initial",
+      "references": [
+        "docs/production/claude-pm/assets/brief110-qa/references.jpg"
+      ],
+      "prompt": "Use case: scientific-educational. Create one transparent PNG educational apparatus plate, target canvas 2400 x 1600 landscape, ink and watercolour matching the glassware in the supplied reference sheet (style reference only). Fine dark ink outlines, restrained soft watercolour, transparent glass with crisp edges, light soft cast shadow. Three-quarter front view slightly from above. A 600 mL clear glass beaker two thirds full of clear faint blue water stands on a compact white laboratory hotplate with one plain front dial. Four identical narrow glass test tubes stand perfectly upright in ONE evenly spaced horizontal row across the beaker, held apart by a simple fine wire rack inside the beaker. Tube rims are clearly visible above the beaker rim. Each of the four tubes has the SAME shallow 2 cm depth of clear bright orange liquid near its rounded bottom. Orange matches reference orange dichromate tube. No green liquid in this BEFORE version. Glass thermometer leans at back with bulb immersed, no markings. A few tiny water bubbles near beaker base. Object cluster confined to central 72% width and 72% height, large transparent margins every side and a generous transparent empty band above all tube rims for future coded labels. No steam. No text, labels, numbers, logos, graduation or scale marks, people, hands, gloves, droppers, flames, bench or backdrop. Real transparent background and alpha, not painted checkerboard.",
+      "selected": false,
+      "reason": "Thermometer projected above tube rims; retained as native history.",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-283de926-b6f4-4f19-b1fc-9191a84abe75.png",
+      "rawPath": "docs/production/claude-pm/assets/brief110-qa/raw/before-initial-native.png",
+      "sha256": "f8166fa1c690baa8edb78f6d31c306f418b24cac7cdb9328d7b0f07034419e33",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "nativeMode": "RGBA",
+      "nativeAlphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "key": "after-initial",
+      "references": [
+        "docs/production/claude-pm/assets/brief110-qa/raw/before-initial-native.png"
+      ],
+      "prompt": "Precise object edit. This is the AFTER version of an aligned educational scientific apparatus pair. Change ONLY the orange liquid contents of the TWO LEFTMOST test tubes to clear emerald green (acidified dichromate after oxidation). Preserve their liquid menisci, glass highlights, liquid depth and all geometry. The TWO RIGHTMOST tubes must remain the exact same orange as the input. Preserve pixel-identical beaker, water, wire rack, hotplate, thermometer, glass outlines, positions, sizes, framing, lighting and every other pixel outside those two liquid fills. Preserve transparent background alpha. No labels, text, numbers or other additions.",
+      "selected": false,
+      "reason": "Correct colour edit but long thermometer retained; superseded with shortened-thermometer pair.",
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-6418d0ae-fe82-4c0e-9cae-5bffb4c70188.png",
+      "rawPath": "docs/production/claude-pm/assets/brief110-qa/raw/after-initial-native.png",
+      "sha256": "0cc54be39992aeacc0dba9f0428eaaf2e6beab15783f91f7f97faff09e1e9e10",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "nativeMode": "RGBA",
+      "nativeAlphaRange": [
+        1,
+        253
+      ]
+    },
+    {
+      "key": "drying-flask",
+      "references": [
+        "docs/production/claude-pm/assets/brief110-qa/references.jpg"
+      ],
+      "prompt": "Use case scientific-educational. New isolated ink and watercolour glass apparatus plate matching the fine dark outlines, translucent softly painted clear glass and restrained scientific illustration in the supplied style reference sheet. Target 2000x2000 square PNG with true transparent alpha background. One small 50mL conical Erlenmeyer flask closed by a plain grey rubber stopper. Three-quarter front view slightly from above. Flask occupies only 55% of canvas height, centered with at least 15% empty transparent margin each side. No surface, just faint soft cast shadow. Holds about 2cm shallow depth of clear colourless liquid with very faint pale yellow tint like the reference separating funnel's upper layer. At flask bottom below the liquid a small heap of white crystalline magnesium sulfate drying powder: left half forms a few larger glassy slightly translucent hydrated clumps, right half still loose fine separate white grains. Both clumped and free-flowing powder visibly distinct. Clear liquid above the solid, no cloudiness, no second liquid, no bubbles. NO text, labels, numbers, graduation marks, brands, spatulas, droppers, people, hands, gloves, backdrop or checkerboard. Actual transparent background.",
+      "selected": true,
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-a5ebf3a2-71d4-4b84-8ef0-2560209d0781.png",
+      "rawPath": "docs/production/claude-pm/assets/brief110-qa/raw/drying-flask-native.png",
+      "sha256": "a9e74d8bdd815ad325cf44750782e3c992b4206a0414975447b17bfc904f581e",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "nativeMode": "RGBA",
+      "nativeAlphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "key": "before-short-thermometer",
+      "references": [
+        "docs/production/claude-pm/assets/brief110-qa/raw/before-initial-native.png"
+      ],
+      "prompt": "Precise-object edit of this educational water-bath apparatus. Shorten ONLY the glass thermometer at the right: its bulb must remain at the same place immersed near the beaker bottom, but its top must stop BELOW the upper rims of all four test tubes. No part of the thermometer may project into the horizontal empty strip above the test tube rims. Preserve all four upright tubes, their SAME ORANGE liquids, the beaker, water, rack, hotplate and every other object and geometry unchanged. Four orange tubes, none green. Preserve framing and real transparent alpha, and clean fully transparent background outside apparatus. No labels, text, numbers, markings, steam or additions.",
+      "selected": true,
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-9c60f096-e375-4092-ac1a-52114503c995.png",
+      "rawPath": "docs/production/claude-pm/assets/brief110-qa/raw/before-short-thermometer-native.png",
+      "sha256": "b36e20c3c122466339e2a70c0590688bb3bca4a82832bde3851bc341efafb3fb",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "nativeMode": "RGBA",
+      "nativeAlphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "key": "after-short-thermometer",
+      "references": [
+        "docs/production/claude-pm/assets/brief110-qa/raw/before-short-thermometer-native.png"
+      ],
+      "prompt": "Precise-object edit of an aligned scientific apparatus pair. Change ONLY orange liquid in the TWO LEFTMOST test tubes to clear emerald green, keeping exactly the same fill levels and glass highlights. Keep BOTH RIGHTMOST tube liquids ORANGE. Everything else must stay pixel-identical to the input: canvas, tube positions, wire rack, beaker and water, short thermometer below tube rims, hotplate, dial, illumination and transparent background alpha. No geometry or framing change, no additional objects, labels, text, numbers, marks or steam. True transparent PNG.",
+      "selected": true,
+      "sourcePath": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-4394eab4-92f0-429c-89e3-d939f107208c.png",
+      "rawPath": "docs/production/claude-pm/assets/brief110-qa/raw/after-short-thermometer-native.png",
+      "sha256": "594b46121e55a15af204ceaac8020fac91a1673e2ff1535f92e6133d2f7be6be",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "nativeMode": "RGBA",
+      "nativeAlphaRange": [
+        0,
+        254
+      ]
+    }
+  ],
+  "records": [
+    {
+      "key": "m7-oxidation-water-bath-before-v1",
+      "path": "public/assets/chemistry/m7-oxidation-water-bath-before-v1.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        620,
+        160,
+        1779,
+        1440
+      ],
+      "clearMarginsPx": [
+        620,
+        160,
+        621,
+        160
+      ],
+      "clearMarginFractions": [
+        0.25833333333333336,
+        0.1,
+        0.25875,
+        0.1
+      ],
+      "sha256": "1e37f18adf899bbeed43ebb155f945b245378ad368c93e686492e70dccdcd3d7"
+    },
+    {
+      "key": "m7-oxidation-water-bath-after-v1",
+      "path": "public/assets/chemistry/m7-oxidation-water-bath-after-v1.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        620,
+        160,
+        1779,
+        1440
+      ],
+      "clearMarginsPx": [
+        620,
+        160,
+        621,
+        160
+      ],
+      "clearMarginFractions": [
+        0.25833333333333336,
+        0.1,
+        0.25875,
+        0.1
+      ],
+      "sha256": "d8b7b0e82b0712d149c5eea172af09fac3decc9ffebf59661a2edcfea800d498"
+    },
+    {
+      "key": "m7-ester-drying-flask-v1",
+      "path": "public/assets/chemistry/m7-ester-drying-flask-v1.png",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        630,
+        450,
+        1370,
+        1550
+      ],
+      "clearMarginsPx": [
+        630,
+        450,
+        630,
+        450
+      ],
+      "clearMarginFractions": [
+        0.315,
+        0.225,
+        0.315,
+        0.225
+      ],
+      "sha256": "7616d9c2de9a4fa7d434ad285e9324b7ec4899d727201a56359604fd6c352a62"
+    }
+  ],
+  "processing": {
+    "records": [
+      {
+        "key": "m7-oxidation-water-bath-before-v1",
+        "path": "public/assets/chemistry/m7-oxidation-water-bath-before-v1.png",
+        "size": [
+          2400,
+          1600
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaBbox": [
+          620,
+          160,
+          1779,
+          1440
+        ],
+        "clearMarginsPx": [
+          620,
+          160,
+          621,
+          160
+        ],
+        "clearMarginFractions": [
+          0.25833333333333336,
+          0.1,
+          0.25875,
+          0.1
+        ],
+        "sha256": "1e37f18adf899bbeed43ebb155f945b245378ad368c93e686492e70dccdcd3d7"
+      },
+      {
+        "key": "m7-oxidation-water-bath-after-v1",
+        "path": "public/assets/chemistry/m7-oxidation-water-bath-after-v1.png",
+        "size": [
+          2400,
+          1600
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaBbox": [
+          620,
+          160,
+          1779,
+          1440
+        ],
+        "clearMarginsPx": [
+          620,
+          160,
+          621,
+          160
+        ],
+        "clearMarginFractions": [
+          0.25833333333333336,
+          0.1,
+          0.25875,
+          0.1
+        ],
+        "sha256": "d8b7b0e82b0712d149c5eea172af09fac3decc9ffebf59661a2edcfea800d498"
+      },
+      {
+        "key": "m7-ester-drying-flask-v1",
+        "path": "public/assets/chemistry/m7-ester-drying-flask-v1.png",
+        "size": [
+          2000,
+          2000
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaBbox": [
+          630,
+          450,
+          1370,
+          1550
+        ],
+        "clearMarginsPx": [
+          630,
+          450,
+          630,
+          450
+        ],
+        "clearMarginFractions": [
+          0.315,
+          0.225,
+          0.315,
+          0.225
+        ],
+        "sha256": "7616d9c2de9a4fa7d434ad285e9324b7ec4899d727201a56359604fd6c352a62"
+      }
+    ],
+    "nativeSources": {
+      "before-initial": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-283de926-b6f4-4f19-b1fc-9191a84abe75.png",
+      "after-initial": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-6418d0ae-fe82-4c0e-9cae-5bffb4c70188.png",
+      "drying-flask": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-a5ebf3a2-71d4-4b84-8ef0-2560209d0781.png",
+      "before-short-thermometer": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-9c60f096-e375-4092-ac1a-52114503c995.png",
+      "after-short-thermometer": "C:\\Users\\kygs\\.codex\\generated_images\\01a181f2-8b55-7590-8ec4-22d1f9428343\\exec-4394eab4-92f0-429c-89e3-d939f107208c.png"
+    },
+    "nativeCleanAlphaThreshold": 8,
+    "baseNativeCrop": [
+      383,
+      146,
+      1128,
+      969
+    ],
+    "baseUniformScale": 1.5552855407047388,
+    "basePastePosition": [
+      620,
+      160
+    ],
+    "dryNativeCrop": [
+      349,
+      208,
+      938,
+      1083
+    ],
+    "dryUniformScale": 1.2571428571428571,
+    "dryPastePosition": [
+      630,
+      450
+    ],
+    "pairAlphaIdentical": true,
+    "pairDiffBbox": [
+      878,
+      763,
+      1205,
+      909
+    ],
+    "changedPixels": 31291,
+    "pixelIdentityOutsideLiquidMask": true,
+    "liquidMaskPixelsNative": 11759,
+    "notes": [
+      "Imagegen shortened thermometer before the final liquid edit, leaving all space above tube rims empty.",
+      "Final after uses only imagegen-created green-liquid RGB within the saved liquid mask, with all other RGB and all alpha retained from the before.",
+      "All plate scaling is uniform; no apparatus or flask stretched.",
+      "Public plate candidates await owner acceptance."
+    ]
+  },
+  "visualQA": {
+    "inspected": [
+      "three-plates-three-backgrounds.jpg",
+      "water-bath-50-percent-overlay.jpg"
+    ],
+    "appearance": "Four equal orange fills before; two green left and two unchanged orange right after. Beaker, wire rack, water and white hotplate match. Short thermometer remains below tube rims. Drying flask has a grey stopper, clear pale-yellow liquid and visible left clumps/right loose granules. No text, hands or markings.",
+    "pair": "50% overlay shows no doubled apparatus edge. Alpha arrays identical; every RGB pixel outside liquid-edit support retained.",
+    "backgrounds": "Cream, checker and dark composites inspected; no painted backdrop or checker in public alpha.",
+    "margins": "Water-bath 10% vertical and >25% horizontal; drying flask 22.5% vertical and31.5% horizontal.",
+    "limitations": [
+      "Native generator dimensions were1536x1024 and1254x1254; output dimensions reached by uniform scaling and transparent padding.",
+      "Owner visual acceptance is pending.",
+      "No exact voiced preview, playback motion or human listening completed."
+    ]
+  }
+}

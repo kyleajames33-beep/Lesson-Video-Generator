@@ -1,0 +1,115 @@
+{
+  "brief": 114,
+  "date": "2026-10-30",
+  "records": [
+    {
+      "name": "m8-potted-plant-wilted-v1",
+      "path": "public/assets/biology/m8-potted-plant-wilted-v1.png",
+      "referencePath": "public/assets/biology/b2b-prop-new-plant-v1.png",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18949-3507-7ec3-b6a0-69b8bd03f53e/exec-a0ef843f-2264-403b-92f3-a67edd264f54.png",
+      "initialSourcePath": "C:/Users/kygs/.codex/generated_images/01a18949-3507-7ec3-b6a0-69b8bd03f53e/exec-fd1c7d0b-8f0f-4036-9e0d-d13b42751af3.png",
+      "prompt": "Edit target is this exact1600x1600 transparent botanical plate. Create a wilted version of the SAME plant in the SAME pot. Preserve exact canvas and exact position, shape, scale, colours and painted pixels of terracotta pot, elliptical rim, cutaway window boundary, all roots, and lower stem base. Do not enlarge, move or redesign pot or roots. Change ONLY: the soil inside cutaway becomes paler/drier and slightly shrunk from inside pot wall; stem bends over in its upper third; EVERY leaf hangs limp/downward with slightly curled edges, still the SAME healthy green (no brown or yellow disease). The bottom third of stem is unchanged and straight. Keep same number of leaf pairs and same serrated leaf shapes, but limp. Fine dark ink and watercolour exactly match reference. Fully transparent alpha background, no labels, text, arrows, people, hands, faces, shadow or coloured fringe. Square1600canvas with the plant still in same frame; no zoom or reframing. Pot and root systems must align precisely for a clean crossfade from reference.",
+      "retakePrompt": "Precise edit of attached wilted potted plant. Preserve canvas, transparency, pot, soil, roots, stem base, upper stem and all upper leaves in exactly same positions. Only adjust the LOWEST TWO LEAVES by making them slightly shorter so their drooping pointed tips finish clearly ABOVE the terracotta pot rim, with a small visible air gap. Both still point downward and look limp and green, same serrated shapes and ink watercolor style. Do not move pot or change root geometry. Keep rest of plant completely unchanged. No text, no labels, no background.",
+      "operation": "Built-in image_gen edit plus authorised invariant-pixel restoration",
+      "authorisation": "Root explicitly authorised original pot/root/stem-base restoration and generated soil/upper plant masks.",
+      "referenceSha256": "6b9e4aeb44f78a2689c64ca2d90e47885fe5f861b38cda724422146442915926",
+      "sourceSha256": "6f69b509a95e2e919c5a640f10ac01a90070e025ffc8bd75a8568791f446deba",
+      "rawPath": "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/wilted-retake-native.png",
+      "initialRawPath": "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/wilted-initial-native.png",
+      "sha256": "10de810167e1f70765758125d4f8cfa3aa15b5148b858cb31edfc233b483d784",
+      "size": [
+        1600,
+        1600
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        522,
+        328,
+        1119,
+        1360
+      ],
+      "protectedPixelsIdentical": true,
+      "protectedPixelCount": 1123265,
+      "soilEditPixelCount": 54765,
+      "processing": "Built-in edit1254square proportionally resized to original1600square. Original pixels restored at every y>=865 and stem-base rectangle x789:818,y795:980. Generated soil only transplanted through saved cutaway soil mask, excluding roots detected in either image with1pixel buffer. Outside soil mask, original pot and roots are byte-identical. Original healthy reference unchanged.",
+      "masks": [
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-protected-original-mask.png",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-soil-edit-mask.png",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-roots-protected-mask.png"
+      ],
+      "qaViews": [
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-reference-black-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-reference-white-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-reference-board-220.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-reference-board-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-wilted-black-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-wilted-white-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-wilted-board-220.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-wilted-board-600.jpg"
+      ],
+      "overlay50": "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/plant-overlay50-board.jpg"
+    },
+    {
+      "name": "m8-kidney-nephron-v1",
+      "path": "public/assets/biology/m8-kidney-nephron-v1.png",
+      "operation": "Deterministic alpha edge cleanup only, no RGB edit, redraw, resizing or geometry transform",
+      "authorisation": "Brief114 explicitly requests edge-only alpha cleanup, preserve canvas and alpha bbox. Root authorises unchanged original extrema anchors if needed.",
+      "beforePath": "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/m8-kidney-nephron-v1-before.png",
+      "beforeSha256": "31444be81fdd5a031befd49e6d3bd049fe50fb59e555a26dfcc19a540f59b539",
+      "sha256": "03dd58594bf11a1dfaa079af36bb7442c12e1ea2ba846313cf8174155b62ccfd",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "beforeAlphaBbox": [
+        160,
+        235,
+        1840,
+        1765
+      ],
+      "alphaBbox": [
+        160,
+        235,
+        1840,
+        1765
+      ],
+      "rgbBytesUnchanged": true,
+      "changedAlphaPixels": 129505,
+      "unchangedExtremaAnchors": [
+        {
+          "x": 770,
+          "y": 235,
+          "alpha": 72
+        },
+        {
+          "x": 746,
+          "y": 1764,
+          "alpha": 111
+        },
+        {
+          "x": 160,
+          "y": 964,
+          "alpha": 200
+        },
+        {
+          "x": 1839,
+          "y": 1060,
+          "alpha": 192
+        }
+      ],
+      "processing": "Only alpha<240 remapped with threshold96; neon red/yellow/magenta pixels within2pixels of near-transparent edge cleared. Four original extrema pixels retained unchanged to preserve exact bbox. No RGB, canvas, resize or geometry edits.",
+      "qaViews": [
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/nephron-before-black-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/nephron-before-white-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/nephron-before-board-220.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/nephron-before-board-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/nephron-after-black-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/nephron-after-white-600.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/nephron-after-board-220.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/plant-kidney-repairs/nephron-after-board-600.jpg"
+      ]
+    }
+  ],
+  "qaStatus": "Final black/white and dark board views at220/600pixels inspected. Plant50percentoverlay inspected: pot and protected roots do not move. Nephron before/after inspected: fringe removed while same canvas, exact alpha bbox and every RGB byte preserved. Owner acceptance and playback pending."
+}

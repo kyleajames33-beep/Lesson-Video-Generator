@@ -15,7 +15,7 @@ import {BandMeter, Demands, ExamPage, MiniFlag, PlanCard, VIOLET, pageBox, planL
 import type {PlanRow} from './pieces';
 
 const ALL4 = [-100, -100, -100, -100];
-export const CARD_BOTTOM = WORK.y + cardGeom(WORK).h;
+export const cardBottom = () => WORK.y + cardGeom(WORK).h;
 
 // ---------- 1. Hook ----------
 const K1 = cues(sc('hook'), {worth: 'worth six', band: 'decide a band', six: 'In six years', every: 'every report', ignored: 'ignored the stimulus', more: 'more than half', reasons: 'without reasons', so: "So here's", plan: 'plan a long', build: 'build it one', stim: 'use the stimulus', judge: 'with a judgement', asks: 'verb asks'});
@@ -137,7 +137,7 @@ export const SceneCard: React.FC = () => {
 			<AnswerBox spec={ABOX} at={K3.read} />
 			<Demands at={K3.read + 6} />
 			<QuestionCard spec={spec} at={K3.here} />
-			<DrillCountdown hold={h} at={K3.pause} x={RX} y={CARD_BOTTOM + 90} cx={RX + 200} cy={CARD_BOTTOM + 210} r={50} />
+			<DrillCountdown hold={h} at={K3.pause} x={RX} y={cardBottom() + 90} cx={RX + 200} cy={cardBottom() + 210} r={50} />
 			{void K3.take}
 		</Overlay>
 	);
@@ -170,8 +170,8 @@ export const SceneTakeApart: React.FC = () => (
 		<QuestionCard spec={WORK} at={-100} ann={ANN4()}>
 			<TableRing at={K4.stimulus} />
 		</QuestionCard>
-		<GreyTag x={RX} y={CARD_BOTTOM + 40} text="s01: verb, marks, constraints" at={K4.step + 20} size={22} maxW={RW} />
-		<Chip x={RX} y={CARD_BOTTOM + 110} text="2 verbs + 1 constraint + the stimulus = 4 demands" at={K4.four} size={30} color={INK} maxW={RW} />
+		<GreyTag x={RX} y={cardBottom() + 40} text="s01: verb, marks, constraints" at={K4.step + 20} size={22} maxW={RW} />
+		<Chip x={RX} y={cardBottom() + 110} text="2 verbs + 1 constraint + the stimulus = 4 demands" at={K4.four} size={30} color={INK} maxW={RW} />
 		{void K4.verbs}{void K4.tick}
 	</Overlay>
 );

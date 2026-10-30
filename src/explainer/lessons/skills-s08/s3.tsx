@@ -24,7 +24,7 @@ const d1Spec = (t: number[] = [-100, -100, -100, -100], marksAt?: number): CardS
 	],
 });
 const D1 = d1Spec();
-const D1B = D1.y + cardGeom(D1).h;
+const d1b = () => D1.y + cardGeom(D1).h;
 const PX = 330, PW = 1000, SIDE = 1400;
 const K11 = cues(sc('drill-1'), {turn: 'Your turn', subject: 'in your subject', bio: 'Biology first', ward: 'A ward started', same: 'in the same month', compliance: 'Compliance and', question: 'The question says', six: 'six marks', dont: "Don't write", write: 'Write the plan', pause: 'Pause here'});
 export const SceneDrill1: React.FC = () => {
@@ -34,10 +34,10 @@ export const SceneDrill1: React.FC = () => {
 	return (
 		<Overlay>
 			<QuestionCard spec={spec} at={K11.bio - 6} />
-			<GreyTag x={SIDE} y={D1B + 14} text="patient-day: one patient on the ward for one day" at={K11.compliance + 20} size={20} maxW={430} />
-			<PlanCard x={PX} y={D1B + 30} w={PW} at={K11.write} rows={[]} size={26} title="Your plan" minH={330} />
-			<DrillCountdown hold={h} at={K11.pause} x={SIDE} y={D1B + 160} cx={SIDE + 220} cy={D1B + 290} r={52} />
-			<T x={SIDE} y={D1B + 112} text="Do the one in your subject, or both." size={26} hand weight={700} color={INK_SOFT} o={vis(f, K11.subject, K11.question, 10)} />
+			<GreyTag x={SIDE} y={d1b() + 14} text="patient-day: one patient on the ward for one day" at={K11.compliance + 20} size={20} maxW={430} />
+			<PlanCard x={PX} y={d1b() + 30} w={PW} at={K11.write} rows={[]} size={26} title="Your plan" minH={330} />
+			<DrillCountdown hold={h} at={K11.pause} x={SIDE} y={d1b() + 160} cx={SIDE + 220} cy={d1b() + 290} r={52} />
+			<T x={SIDE} y={d1b() + 112} text="Do the one in your subject, or both." size={26} hand weight={700} color={INK_SOFT} o={vis(f, K11.subject, K11.question, 10)} />
 			{void K11.turn}{void K11.same}{void K11.dont}
 		</Overlay>
 	);
@@ -58,9 +58,9 @@ export const SceneFeedback1: React.FC = () => {
 				{kind: 'given', phrase: '6.0', item: 1, at: K12.eighty + 30, color: TEAL}, {kind: 'given', phrase: '2.5', item: 1, at: K12.eighty + 40, color: TEAL},
 				{kind: 'given', phrase: 'In the same month, the ward also started a new daily cleaning routine.', at: K12.month, color: AMBER},
 			]} />
-			<Chip x={SIDE} y={D1B + 20} text="evaluate: judgement against criteria, using the data" at={8} out={K12.one} size={26} color={AMBER_INK} maxW={450} />
-			<PlanCard x={PX} y={D1B + 30} w={PW} at={-100} rows={rows} size={26} title="Plan" verdict={{t: 'Verdict: probably effective, but not proven (cleaning changed too)', at: K12.effective}} label="HSCScience model plan (illustrative)" />
-			<CrossedHabit x={SIDE} y={D1B + 150} text="start writing straight away" at={K12.habit} cross={K12.plan} caption="no plan, and the cleaning routine gets missed" size={28} maxW={460} />
+			<Chip x={SIDE} y={d1b() + 20} text="evaluate: judgement against criteria, using the data" at={8} out={K12.one} size={26} color={AMBER_INK} maxW={450} />
+			<PlanCard x={PX} y={d1b() + 30} w={PW} at={-100} rows={rows} size={26} title="Plan" verdict={{t: 'Verdict: probably effective, but not proven (cleaning changed too)', at: K12.effective}} label="HSCScience model plan (illustrative)" />
+			<CrossedHabit x={SIDE} y={d1b() + 150} text="start writing straight away" at={K12.habit} cross={K12.plan} caption="no plan, and the cleaning routine gets missed" size={28} maxW={460} />
 			{void K12.judgement}{void K12.three}
 		</Overlay>
 	);
@@ -75,15 +75,15 @@ const d2Spec = (t: number[] = [-100, -100], marksAt?: number): CardSpec => ({
 	],
 });
 const D2 = d2Spec();
-const D2B = D2.y + cardGeom(D2).h;
-const HER: AnsSpec = {x: 330, y: D2B + 24, w: 1250, lines: 5, lh: 46, size: 30, margin: 72, label: 'Her answer'};
+const d2b = () => D2.y + cardGeom(D2).h;
+const her = (): AnsSpec => ({x: 330, y: d2b() + 24, w: 1250, lines: 5, lh: 46, size: 30, margin: 72, label: 'Her answer'});
 const BODY = ['Hard water contains Ca^{2+} ions, which react with soap to form insoluble calcium stearate (scum).', 'This wastes soap and leaves grey deposits on fabric.', 'Soap is made from renewable fats and breaks down readily in the environment.'];
 const LAST = 'Overall, soap has advantages and disadvantages.';
 /** The hard-water soap tube, beside her answer (outside the card, so it can be read). */
 const SoapSlot: React.FC<{at: number}> = ({at}) => {
 	const f = useCurrentFrame();
 	const h = 270, w = plateW(SOAP, h);
-	const x = 1700 - w / 2, y = D2B + 30;
+	const x = 1700 - w / 2, y = d2b() + 30;
 	return (
 		<g opacity={prog(f, at, 14)}>
 			<Plate p={SOAP} x={x} y={y} h={h} />
@@ -93,12 +93,12 @@ const SoapSlot: React.FC<{at: number}> = ({at}) => {
 };
 const HerAnswer: React.FC<{at: number[]; marks?: {phrase: string; at: number; color?: string}[]; strike?: number}> = ({at, marks = [], strike}) => {
 	const f = useCurrentFrame();
-	const g = answerGeom(HER, []);
+	const g = answerGeom(her(), []);
 	const lw = linesOf(LAST, g.tw, g.size)[0];
 	void lw;
 	return (
 		<g>
-			<AnswerBox spec={HER} at={at[0] - 6} />
+			<AnswerBox spec={her()} at={at[0] - 6} />
 			<Para g={g} line={0} color={PENCIL} parts={BODY.map((text, i) => ({text, at: at[0] + i * 26, dur: 24}))} marks={marks} />
 			<Para g={g} line={4} color={PENCIL} parts={[{text: LAST, at: at[1], dur: 20}]} o={strike === undefined ? 1 : 1 - 0.6 * prog(f, strike, 12)} />
 		</g>
@@ -108,7 +108,7 @@ const K13 = cues(sc('drill-2'), {now: 'Now Chemistry', question: 'The question',
 export const SceneDrill2: React.FC = () => {
 	const h = hold('drill-2');
 	const spec = d2Spec([K13.question, K13.rewrite], K13.question + 40);
-	const gB = HER.y + answerGeom(HER, []).h;
+	const gB = her().y + answerGeom(her(), []).h;
 	return (
 		<Overlay>
 			<QuestionCard spec={spec} at={K13.now} /><SoapSlot at={K13.question + 20} />
@@ -121,7 +121,7 @@ const K14 = cues(sc('feedback-2'), {takes: 'takes a side', reason: 'gives the re
 const NEW: AnsSpec = {x: 330, y: 0, w: 1250, lines: 3, lh: 48, size: 32, margin: 72, label: 'New last line'};
 export const SceneFeedback2: React.FC = () => {
 	const f = useCurrentFrame();
-	const gB = HER.y + answerGeom(HER, []).h;
+	const gB = her().y + answerGeom(her(), []).h;
 	const ns = {...NEW, y: gB + 20};
 	const gn = answerGeom(ns, []);
 	const parts = [

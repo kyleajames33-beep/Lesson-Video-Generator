@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-30",
+  "policy": "One fresh catalog request per compound; stop on HTTP429. No SDBS requests. No gas, solution or dispersion-index substitution.",
+  "compounds": {
+    "ethanol": {
+      "catalog_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=80",
+      "status": "HTTP access limit",
+      "http_status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "acetic-acid": {
+      "catalog_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C64197&Mask=80",
+      "status": "HTTP access limit",
+      "http_status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "acetone": {
+      "catalog_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C67641&Mask=80",
+      "status": "HTTP access limit",
+      "http_status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "propan-1-amine": {
+      "catalog_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C107108&Mask=80",
+      "status": "HTTP access limit",
+      "http_status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "propan-1-ol": {
+      "catalog_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C71238&Mask=80",
+      "status": "HTTP access limit",
+      "http_status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "propan-2-ol": {
+      "catalog_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C67630&Mask=80",
+      "status": "HTTP access limit",
+      "http_status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "ethyl-acetate": {
+      "catalog_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C141786&Mask=80",
+      "status": "HTTP access limit",
+      "http_status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    }
+  },
+  "additional_usable_neat_liquid_transmittance_datasets": 0,
+  "peak_extractions": [],
+  "elapsed_seconds": 5.73,
+  "stop_reason": "Access blocked before fresh catalog retrieval: all seven requests returned HTTP403 Forbidden. No further requests, retries, JCAMP retrieval or peak extraction were performed. This does not establish that eligible spectra do not exist.",
+  "catalog_parser_correction": "Inspection of the previously saved HTML only: numeric link labels are resolution values and inherit their enclosing list-item phase. In particular propan-1-ol indices1and2 explicitly inherit GAS (SATURATED), not an unidentified liquid phase. The known ethanol/propan-2-ol Index29 files say dispersion index and cannot substitute for transmittance.",
+  "remaining_required_source_gap": "Seven compounds remain without certified actual neat-liquid transmittance datasets. Existing accepted count remains3of10. No existing design, review, spectrum file or archive was modified."
+}

@@ -1,0 +1,304 @@
+{
+  "brief": 114,
+  "lesson": "bio-m8-b03",
+  "date": "2026-10-30",
+  "mode": "built-in image_gen",
+  "author": "Codex",
+  "scientificDepartures": [
+    {
+      "asset": "m8-pancreatic-islet-v1",
+      "reason": "Root review requires the human islet's alpha and beta cells to intermingle, rather than a rodent-like beta-cell core and alpha-cell mantle."
+    },
+    {
+      "asset": "m8-muscle-cell-transporters-membrane-v1",
+      "reason": "GLUT4 is a facilitated transporter, not a nonspecific open pore. Compact paired carrier proteins are shown without an open hole or a depicted glucose stream."
+    }
+  ],
+  "ownerAcceptance": "Pending",
+  "rootGeneratedLiver": "public/assets/biology/m8-liver-v1.png (not modified by this hand-in)",
+  "pairs": [
+    {
+      "pair": [
+        "public/assets/biology/m8-liver-cell-glycogen-low-v1.png",
+        "public/assets/biology/m8-liver-cell-glycogen-full-v1.png"
+      ],
+      "overlay50": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/liver-glycogen-overlay50.jpg",
+      "comparison": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/liver-glycogen-pair-overlay.jpg",
+      "sameCanvas": true,
+      "sameTransform": true,
+      "alphaDifferenceFraction": 0.21890175,
+      "opaqueSilhouetteIoU": 0.9935518466979251,
+      "visualReview": "50percent overlay and600pixel side-by-side inspected. Nucleus and capillary remain aligned in liver pair; muscle fibre, capillary and three fixed receptors remain aligned in muscle pair. No obvious doubled external contour at600pixel size. Generated edges are not byte-identical; use scene playback to check final crossfade."
+    },
+    {
+      "pair": [
+        "public/assets/biology/m8-muscle-cell-transporters-inside-v1.png",
+        "public/assets/biology/m8-muscle-cell-transporters-membrane-v1.png"
+      ],
+      "overlay50": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/muscle-glut4-overlay50.jpg",
+      "comparison": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/muscle-glut4-pair-overlay.jpg",
+      "sameCanvas": true,
+      "sameTransform": true,
+      "alphaDifferenceFraction": 0.09111775,
+      "opaqueSilhouetteIoU": 0.9902395647132711,
+      "visualReview": "50percent overlay and600pixel side-by-side inspected. Nucleus and capillary remain aligned in liver pair; muscle fibre, capillary and three fixed receptors remain aligned in muscle pair. No obvious doubled external contour at600pixel size. Generated edges are not byte-identical; use scene playback to check final crossfade."
+    }
+  ],
+  "qaStatus": "Passed native and final black/white/cream600pixel inspection and both50percentpair overlays. Owner acceptance pending.",
+  "records": [
+    {
+      "name": "m8-pancreatic-islet-v1",
+      "path": "public/assets/biology/m8-pancreatic-islet-v1.png",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18949-3507-7ec3-b6a0-69b8bd03f53e/exec-d1dc0461-6089-4959-8b75-79594a49f13f.png",
+      "prompt": "Scientific educational plate for Year 12 glucose regulation. Create ONE microscopic human pancreatic islet of Langerhans in natural history cutaway, isolated on genuine transparent alpha. Fine dark ink outlines with layered watercolour washes, matching anatomical teaching plates, no photorealism. Rounded pale cluster of endocrine cells surrounded by several darker pink berry-like exocrine acini and tiny ducts. In the HUMAN islet show many soft teal beta cells and fewer warm amber alpha cells INTERMIXED throughout, both central and peripheral, not a beta core with alpha mantle. Each cell has a visible nucleus and fine granules. A single small branching red capillary containing a few red blood cells runs through the cluster. No decorative extra circles. Keep whole tissue slice as a compact oval island surrounded by at least 12 percent clear margin on square canvas. No text, labels, arrows, symbols, people, hands, faces, paper background, coloured halo or cast shadow. Clear legible cell colours, not overly dense. Background fully transparent.",
+      "operation": "generate",
+      "references": [],
+      "rawPath": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/raw/m8-pancreatic-islet-v1-native.png",
+      "sourceSha256": "d8df0d9c1db969f96ca3d769bddefd73e34be5ffd8df0e02a81abf6b2e0cc744",
+      "rawSha256": "d8df0d9c1db969f96ca3d769bddefd73e34be5ffd8df0e02a81abf6b2e0cc744",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "d518c2a2f9c78cacaea50d38bd295ee7df6b0495c3747f3a48d92813c1904289",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        221,
+        380,
+        1779,
+        1619
+      ],
+      "sharedCropBox": [
+        28,
+        140,
+        1226,
+        1093
+      ],
+      "proportionalResize": [
+        1560,
+        1241
+      ],
+      "qaViews": [
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-pancreatic-islet-v1-black.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-pancreatic-islet-v1-white.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-pancreatic-islet-v1-cream.jpg"
+      ],
+      "processing": "Keep alpha>200 connected components of at least60pixels; erode1nativepixel, soften0.35pixel; alpha ramp32to255; remove alpha<8. Pair uses same union crop and proportional fit1560pixels on2000square. Raw originals preserved.",
+      "processingAuthorisation": "Prior owner permission for deterministic alpha cleanup, proportional resizing and alignment, brief108/111.",
+      "contentQA": "Native inspected, then final black/white/cream600pixel views inspected. Cell or tissue subject legible, no text, no people, clean edges without coloured fringe. At least10percent clear canvas margin. Owner approval pending."
+    },
+    {
+      "name": "m8-liver-cell-glycogen-low-v1",
+      "path": "public/assets/biology/m8-liver-cell-glycogen-low-v1.png",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18949-3507-7ec3-b6a0-69b8bd03f53e/exec-1255c180-1356-4b49-983f-946211368819.png",
+      "prompt": "Scientific educational plate, one hepatocyte (human liver cell) seen in a slightly angled microscopic cutaway, isolated on true transparent alpha. Fine dark ink outlines and layered watercolour washes in natural history teaching house style. A single large polygonal cell, granular light pink cytoplasm, one large round central purple nucleus, a few small muted red mitochondria, ONLY a sparse scattering of tiny pale violet glycogen rosettes in cytoplasm. The pale violet glycogen granules must be clearly different from mitochondria and nucleus. A short sinusoid capillary runs along the cell's left side with exactly three red blood cells, distinctly outside the cell. No other liver cells or tissues. Subject centered on square with at least 12 percent empty margin all sides; complete outline and every vessel end visible. No text, labels, arrows, numbers, people, hands, faces, background, shadow or edge halo. This is the LOW GLYCOGEN state, reserve plenty of open pink cytoplasm around nucleus for a future high-glycogen version. Keep cell and capillary compact, educational anatomical ink and watercolour plate, not cartoon.",
+      "operation": "generate",
+      "references": [],
+      "rawPath": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/raw/m8-liver-cell-glycogen-low-v1-native.png",
+      "sourceSha256": "487bdc239af05aec3b36446a33544cbf8d4b57a6e67b59588af4883c5f9fb543",
+      "rawSha256": "487bdc239af05aec3b36446a33544cbf8d4b57a6e67b59588af4883c5f9fb543",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "dccde2f9e9c69b90c291b35d12fbb9d6998856875fe78d8d2915e07b00950515",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        222,
+        297,
+        1776,
+        1705
+      ],
+      "sharedCropBox": [
+        102,
+        144,
+        1152,
+        1096
+      ],
+      "proportionalResize": [
+        1560,
+        1414
+      ],
+      "qaViews": [
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-liver-cell-glycogen-low-v1-black.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-liver-cell-glycogen-low-v1-white.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-liver-cell-glycogen-low-v1-cream.jpg"
+      ],
+      "processing": "Keep alpha>200 connected components of at least60pixels; erode1nativepixel, soften0.35pixel; alpha ramp32to255; remove alpha<8. Pair uses same union crop and proportional fit1560pixels on2000square. Raw originals preserved.",
+      "processingAuthorisation": "Prior owner permission for deterministic alpha cleanup, proportional resizing and alignment, brief108/111.",
+      "contentQA": "Native inspected, then final black/white/cream600pixel views inspected. Cell or tissue subject legible, no text, no people, clean edges without coloured fringe. At least10percent clear canvas margin. Owner approval pending."
+    },
+    {
+      "name": "m8-liver-cell-glycogen-full-v1",
+      "path": "public/assets/biology/m8-liver-cell-glycogen-full-v1.png",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18949-3507-7ec3-b6a0-69b8bd03f53e/exec-92233906-2a3a-4857-a598-35a58c1497b6.png",
+      "prompt": "Edit target is the attached low-glycogen hepatocyte image. Produce its HIGH GLYCOGEN matched state. Preserve the exact square canvas, transparency, cell silhouette, every edge pixel, capillary outline and its three red blood cells, nucleus size position and appearance, the four mitochondria, ink lines, pink wash, lighting, perspective and scale. Change ONLY the cytoplasm by adding many clearly visible small pale violet glycogen rosettes of the same kind as the four sparse clusters already present. Distribute many clustered granules throughout cytoplasm around the nucleus, much more than the low state; leave nucleus and mitochondria uncovered. Do not change organelles or vessel, do not move or enlarge the cell. No text, labels, arrows, glow, cast shadow or new background. True transparent alpha. Fine anatomical ink and watercolour same as reference.",
+      "operation": "edit previous pair base",
+      "references": [
+        "exec-1255c180-1356-4b49-983f-946211368819.png"
+      ],
+      "rawPath": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/raw/m8-liver-cell-glycogen-full-v1-native.png",
+      "sourceSha256": "2bc98059759cb16c934b8258ed44064c8a8c5eb1fad793f8bc3db659c1bc34ad",
+      "rawSha256": "2bc98059759cb16c934b8258ed44064c8a8c5eb1fad793f8bc3db659c1bc34ad",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "03d4ad8a52d93c0311d99b35d4d72c7db7745cacabd5dbcd2b7e9f04a7dabca1",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        221,
+        294,
+        1779,
+        1706
+      ],
+      "sharedCropBox": [
+        102,
+        144,
+        1152,
+        1096
+      ],
+      "proportionalResize": [
+        1560,
+        1414
+      ],
+      "qaViews": [
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-liver-cell-glycogen-full-v1-black.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-liver-cell-glycogen-full-v1-white.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-liver-cell-glycogen-full-v1-cream.jpg"
+      ],
+      "processing": "Keep alpha>200 connected components of at least60pixels; erode1nativepixel, soften0.35pixel; alpha ramp32to255; remove alpha<8. Pair uses same union crop and proportional fit1560pixels on2000square. Raw originals preserved.",
+      "processingAuthorisation": "Prior owner permission for deterministic alpha cleanup, proportional resizing and alignment, brief108/111.",
+      "contentQA": "Native inspected, then final black/white/cream600pixel views inspected. Cell or tissue subject legible, no text, no people, clean edges without coloured fringe. At least10percent clear canvas margin. Owner approval pending."
+    },
+    {
+      "name": "m8-muscle-cell-transporters-inside-v1",
+      "path": "public/assets/biology/m8-muscle-cell-transporters-inside-v1.png",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18949-3507-7ec3-b6a0-69b8bd03f53e/exec-ce2d5fbd-dfd9-40fb-bc07-a6bbb1549cd7.png",
+      "prompt": "Scientific educational microscopy cutaway plate for insulin action. ONE short segment of ONE skeletal muscle fibre, not a whole muscle or bundle, shown horizontally with cylindrical red-pink striated surface, near left end cut transversely to show densely packed myofibrils. Along upper front side a broad cutaway window shows the pink cytoplasm just beneath the thin sarcolemma (cell membrane), so location of transporters is immediately clear. In this intracellular window show four round pale green membrane-bound storage vesicles; each vesicle membrane contains several small dark teal paired-pegs proteins, GLUT4 carriers, with closed surfaces NOT open holes. On the outer cell membrane show exactly three small separate Y-shaped dark blue insulin receptors and almost no teal GLUT4 carriers. A slender capillary containing exactly three red blood cells lies alongside and ABOVE the fibre, outside it, distinct from the fibre. Natural history plate style, fine dark ink outlines, layered watercolor washes, same anatomical teaching style as existing skeletal muscle plate. Clean transparent alpha background, compact centered composition on square canvas with at least 12 percent clear margin each side. No labels, text, arrows, numbers, people, hands, faces, glucose dots, shadow, glow, nonspecific open pores or labels. The vesicles belong clearly INSIDE cell beneath membrane, receptors outside. This is pre-insulin transporter INSIDE state for a future perfectly aligned paired edit.",
+      "operation": "generate",
+      "references": [],
+      "rawPath": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/raw/m8-muscle-cell-transporters-inside-v1-native.png",
+      "sourceSha256": "f2813ede57a6bd1a6f3c154ada27cd8ddfb9991baf9191a74d9c3647ca69706a",
+      "rawSha256": "f2813ede57a6bd1a6f3c154ada27cd8ddfb9991baf9191a74d9c3647ca69706a",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "3d4f709dafbfdce40a11142fec62353ae3914cc172f1439acdc99a4c30c6dd46",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        221,
+        484,
+        1778,
+        1515
+      ],
+      "sharedCropBox": [
+        48,
+        238,
+        1210,
+        1009
+      ],
+      "proportionalResize": [
+        1560,
+        1035
+      ],
+      "qaViews": [
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-muscle-cell-transporters-inside-v1-black.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-muscle-cell-transporters-inside-v1-white.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-muscle-cell-transporters-inside-v1-cream.jpg"
+      ],
+      "processing": "Keep alpha>200 connected components of at least60pixels; erode1nativepixel, soften0.35pixel; alpha ramp32to255; remove alpha<8. Pair uses same union crop and proportional fit1560pixels on2000square. Raw originals preserved.",
+      "processingAuthorisation": "Prior owner permission for deterministic alpha cleanup, proportional resizing and alignment, brief108/111.",
+      "contentQA": "Native inspected, then final black/white/cream600pixel views inspected. Cell or tissue subject legible, no text, no people, clean edges without coloured fringe. At least10percent clear canvas margin. Owner approval pending."
+    },
+    {
+      "name": "m8-muscle-cell-transporters-membrane-v1",
+      "path": "public/assets/biology/m8-muscle-cell-transporters-membrane-v1.png",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18949-3507-7ec3-b6a0-69b8bd03f53e/exec-4e5f36dc-952f-487b-b788-2ffadfaf6ac0.png",
+      "prompt": "Edit target is the attached skeletal muscle fibre with transporter vesicles INSIDE. Create its exact matching AFTER INSULIN / GLUT4 IN MEMBRANE state. Preserve exact square canvas and alpha silhouette, fibre outline, red striations, near-end myofibril cut, capillary and its three red cells, exactly three Y-shaped dark-blue insulin receptors in same positions, all organelles inside the cutaway, perspective, scale, lighting, watercolour washes and ink strokes. Change ONLY the pale green vesicles and teal GLUT4 carrier proteins: remove the four round green vesicle circles from inside the cytoplasm, leaving ordinary pink cytoplasm in those locations, and redistribute their small teal paired-pegs GLUT4 proteins along the upper sarcolemma at the lip of the cutaway facing capillary, inserted across membrane between existing blue Y receptors. Show at least twelve teal paired-pegs proteins in membrane. These are facilitated glucose CARRIERS, not open holes or generic pores: draw compact closed paired lobes, no dark circular aperture and no glucose dots passing. Remaining cytoplasm inside cell stays unchanged with visible mitochondria. No added words, arrows, labels, people, hands, face, glow, shadow, background or extra membranes. True transparent alpha; scientifically accurate distinction between green GLUT4 carriers now in the cell membrane and blue Y insulin receptors which remain fixed.",
+      "operation": "edit previous pair base",
+      "references": [
+        "exec-ce2d5fbd-dfd9-40fb-bc07-a6bbb1549cd7.png"
+      ],
+      "rawPath": "docs/production/claude-pm/assets/brief114-qa/bio-glucose/raw/m8-muscle-cell-transporters-membrane-v1-native.png",
+      "sourceSha256": "45df8ebd19d9d29bee8d5452a23511342997b426c8a87e8145e0cdc42d089ddf",
+      "rawSha256": "45df8ebd19d9d29bee8d5452a23511342997b426c8a87e8145e0cdc42d089ddf",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "33bbe8fdbb54fce6e6e7d8e59f67792a893f4d7f315e24101bd116532aaa13ec",
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBbox": [
+        221,
+        483,
+        1779,
+        1516
+      ],
+      "sharedCropBox": [
+        48,
+        238,
+        1210,
+        1009
+      ],
+      "proportionalResize": [
+        1560,
+        1035
+      ],
+      "qaViews": [
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-muscle-cell-transporters-membrane-v1-black.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-muscle-cell-transporters-membrane-v1-white.jpg",
+        "docs/production/claude-pm/assets/brief114-qa/bio-glucose/m8-muscle-cell-transporters-membrane-v1-cream.jpg"
+      ],
+      "processing": "Keep alpha>200 connected components of at least60pixels; erode1nativepixel, soften0.35pixel; alpha ramp32to255; remove alpha<8. Pair uses same union crop and proportional fit1560pixels on2000square. Raw originals preserved.",
+      "processingAuthorisation": "Prior owner permission for deterministic alpha cleanup, proportional resizing and alignment, brief108/111.",
+      "contentQA": "Native inspected, then final black/white/cream600pixel views inspected. Cell or tissue subject legible, no text, no people, clean edges without coloured fringe. At least10percent clear canvas margin. Owner approval pending."
+    }
+  ],
+  "qaContacts": [
+    "docs/production/claude-pm/assets/brief114-qa/bio-glucose/contact-black.jpg",
+    "docs/production/claude-pm/assets/brief114-qa/bio-glucose/contact-white.jpg",
+    "docs/production/claude-pm/assets/brief114-qa/bio-glucose/contact-cream.jpg"
+  ]
+}

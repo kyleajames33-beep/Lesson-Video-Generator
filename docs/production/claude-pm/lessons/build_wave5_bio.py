@@ -10260,6 +10260,792 @@ M7G01B_ROWS = {
     ]
 }
 # --- M7 p01, b13 and g01 rows (end) ---
+# --- M7 p05 and M8 b01, b02 rows (start) ---
+M7P05B_ROWS = {
+    "hook": [
+        "adjust",
+        "`m7-disc-plate-zones-v1.png` (new) fills the centre, lidded and taped; small violet chips \"A\", \"B\", \"C\", \"blank\" sit beside the discs (the blank chip grey and unexplained until scene 4).",
+        "Hook (three discs): A student put four paper discs on a plate spread with bacteria.",
+        "nothing / either",
+        "On the spoken cues: On \"twenty five millimetres\" a thin amber diameter line draws across A's zone with the chip \"25 mm\"; on \"fifteen\" the same on B, \"15 mm\"; on \"nothing\" a grey ring around C, \"no zone\". Grey corner tag: \"example data\". On \"best medicine\" a terracotta chip writes over A: \"biggest zone = best medicine?\"; on \"useless\" another over C: \"no zone = useless?\". On \"either\" both take a grey scribble cross. The question writes",
+        "explain",
+        "`m7-disc-plate-zones-v1.png` (new) fills the centre, lidded and taped; small violet chips \"A\", \"B\", \"C\", \"blank\" sit beside the discs (the blank chip grey and unexplained until scene 4). On \"twenty five millimetres\" a thin amber diameter line draws across A's zone with the chip \"25 mm\"; on \"fifteen\" the same on B, \"15 mm\"; on \"nothing\" a grey ring around C, \"no zone\". Grey corner tag: \"example data\". On \"best medicine\" a terracotta chip writes over A: \"biggest zone = best medicine?\"; on \"useless\" another over C: \"no zone = useless?\". On \"either\" both take a grey scribble cross. The question writes at the top left: \"What can a zone tell you?\" Bright at the end: the two crossed chips and the question. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "what-a-zone-is": [
+        "adjust",
+        "step rail lights \"1 what a zone is\".",
+        "What a zone is: Each disc holds a measured dose of an antibiotic.",
+        "diffuses / zone of inhibition",
+        "On the spoken cues: On \"measured dose\" `m7-antibiotic-disc-cartridge-v1.png` (new) appears small at the left (tag \"commercial discs: fixed dose, printed by the supplier\"). On \"diffuses\" the camera eases in on disc A of the zones plate and the diffusion halo builds: amber dots stream out from the disc, dense near it and thinning outward (gloss \"diffuses: spreads from high to low concentration (Year 11)\"). On \"strong enough\" a dashed",
+        "explain",
+        "step rail lights \"1 what a zone is\". On \"measured dose\" `m7-antibiotic-disc-cartridge-v1.png` (new) appears small at the left (tag \"commercial discs: fixed dose, printed by the supplier\"). On \"diffuses\" the camera eases in on disc A of the zones plate and the diffusion halo builds: amber dots stream out from the disc, dense near it and thinning outward (gloss \"diffuses: spreads from high to low concentration (Year 11)\"). On \"strong enough\" a dashed ring draws at the zone's edge (tag \"just enough drug to stop growth\"). On \"zone of inhibition\" the gloss writes: \"zone of inhibition: the clear ring where the drug stopped growth\". On \"too dilute\" the dots fade to a few beyond the ring and a grey tag points at the cloudy lawn: \"too little drug: bacteria grow\". A small grey tag writes silently in the corner: \"antivirals can't be tested this way: viruses need living cells (antibiotics video)\". Bright at the end: the gloss, the dashed ring and its tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "aim-variables": [
+        "new",
+        "step rail lights \"2 plan\".",
+        "Aim and variables: The aim is to compare the zones of inhibition that three antibiotic discs produce on one harmless bacterium.",
+        "antibiotic / diameter / same",
+        "On the spoken cues: Right zone: the variables card. On \"aim\" the aim line writes: \"Aim: compare the zones of inhibition that discs A, B and C produce on one harmless bacterium\". On \"antibiotic\" row 1 writes violet, \"independent: the antibiotic in the disc (A, B, C)\", with a pen link to the cartridge. On \"diameter\" row 2 writes amber, \"dependent: zone diameter (mm)\", with a small amber diameter line on a zone thumbnail. On \"same\" row 3",
+        "explain",
+        "step rail lights \"2 plan\". Right zone: the variables card. On \"aim\" the aim line writes: \"Aim: compare the zones of inhibition that discs A, B and C produce on one harmless bacterium\". On \"antibiotic\" row 1 writes violet, \"independent: the antibiotic in the disc (A, B, C)\", with a pen link to the cartridge. On \"diameter\" row 2 writes amber, \"dependent: zone diameter (mm)\", with a small amber diameter line on a zone thumbnail. On \"same\" row 3 opens green and lists one item per spoken phrase: \"same culture, 0.1 mL spread\", \"same agar batch and depth\", \"6 mm discs, same supplier\", \"28 °C for 48 h\"; one silent row: \"discs 2 cm apart, same measuring method\". On \"depth\" a grey tag beside that row: \"thinner agar lets the drug spread further\". Bright at the end: the three row headings. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 1 second"
+    ],
+    "control-repeats": [
+        "new",
+        "right zone: the card's fourth row writes green, \"negative control: blank disc + sterile water → expect no zone\".",
+        "The control and repeats: You also need a negative control: a blank disc dipped in sterile water.",
+        "negative control / three",
+        "On the spoken cues: On \"negative control\" the \"blank\" chip on the zones plate lights green and a grey ring circles its disc (gloss \"negative control: same handling, no antibiotic\"). On \"three\" the zones plate shrinks and copies into a row of three, rotated 0°, 90° and 180° (uniform rotation, never stretched), the chips A, B, C and blank following their discs so each sits in a different corner on each plate (tag \"3 plates, positions",
+        "explain",
+        "right zone: the card's fourth row writes green, \"negative control: blank disc + sterile water → expect no zone\". On \"negative control\" the \"blank\" chip on the zones plate lights green and a grey ring circles its disc (gloss \"negative control: same handling, no antibiotic\"). On \"three\" the zones plate shrinks and copies into a row of three, rotated 0°, 90° and 180° (uniform rotation, never stretched), the chips A, B, C and blank following their discs so each sits in a different corner on each plate (tag \"3 plates, positions rotated\"). A chip \"the blank disc is a waste\" fades in and takes a grey cross. Bright at the end: the control row, the gloss and the rotation tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "lawn-discs": [
+        "adjust",
+        "step rail lights \"3 set up\".",
+        "Lawn and discs: Your teacher supplies an approved harmless culture.",
+        "lawn / overlap",
+        "On the spoken cues: Centre: `m6-micropipette-spreader-v1.png` (the capped tube tagged \"approved teaching culture\") and `m7-plate-clear-v1.png`. On \"point one of a millilitre\" a coded drop leaves the micropipette tip onto the plate and the spreader slides across it in a coded arc (tag \"0.1 mL, spread evenly\"); a grey tag \"aseptic technique, as in the water testing practical\" writes and dims. On \"lawn\" the gloss writes: \"lawn: an even",
+        "explain",
+        "step rail lights \"3 set up\". Centre: `m6-micropipette-spreader-v1.png` (the capped tube tagged \"approved teaching culture\") and `m7-plate-clear-v1.png`. On \"point one of a millilitre\" a coded drop leaves the micropipette tip onto the plate and the spreader slides across it in a coded arc (tag \"0.1 mL, spread evenly\"); a grey tag \"aseptic technique, as in the water testing practical\" writes and dims. On \"lawn\" the gloss writes: \"lawn: an even layer of bacteria covering the agar\" with a small `m7-plate-lawn-v1.png` thumbnail labelled \"after incubation\". On \"sterile forceps\" `b3b-forceps-v1.png` appears beside the plate (rotated to lie at an angle, uniform scale) and four coded white discs slide one by one from the cartridge to the plate's quadrants; the plate crossfades to `m7-disc-plate-fresh-v1.png` (new; the same dish with four discs on clear agar). On \"two centimetres apart\" two coded spacing brackets draw between neighbouring discs and from one disc to the rim (\"≥ 2 cm\"). On \"overlap\" two faint coded dashed circles grow from two discs placed too close in a small grey inset and merge (tag \"zones too close merge: can't measure\"); the inset fades. As the last disc lands (silent) a small coded down-arrow taps each disc in turn (tag \"contact lets the drug diffuse in\"). Bright at the end: the lawn gloss, the spacing brackets and the contact tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "Enter slide",
+            "Plate crossfade",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "incubate": [
+        "adjust",
+        "step rail lights \"4 incubate safely\".",
+        "Close, invert, incubate: Then follow your school's procedure, as in the water testing practical: label the base, close the lid securely, and incubate upside down at twenty five to thirty degrees for two days, never thirty seven.",
+        "shut",
+        "On the spoken cues: The fresh disc plate gains a coded marker line on its base rim and two coded tape strips across the rim at opposite sides (tag \"secure the lid as your school procedure directs\"; the strips only show the lid held closed, and nothing on screen or in narration names them as the NSW or required method); it flips in a coded rotation (discs stay stuck; tag \"discs stay on: pressed into the agar\") and `m7-incubator-v1.png`",
+        "explain",
+        "step rail lights \"4 incubate safely\". The fresh disc plate gains a coded marker line on its base rim and two coded tape strips across the rim at opposite sides (tag \"secure the lid as your school procedure directs\"; the strips only show the lid held closed, and nothing on screen or in narration names them as the NSW or required method); it flips in a coded rotation (discs stay stuck; tag \"discs stay on: pressed into the agar\") and `m7-incubator-v1.png` appears with the stack inside; a coded dial reads \"28 °C\" with the band \"25 to 30 °C\" green; a terracotta chip \"37 °C\" takes a grey cross (caption \"body temperature favours microbes adapted to us\"). A grey tag \"the water testing practical\" sits under the chips. On \"shut\" a coded padlock glyph closes over the plate stack and a terracotta line writes: \"never opened after incubation\". Bright at the end: the 25 to 30 °C band, the crossed 37 °C and the \"never opened\" line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "measure": [
+        "adjust",
+        "step rail lights \"5 measure\".",
+        "Measure through the base: To measure, turn the plate over and lay a ruler across the base, through the centre of the disc.",
+        "base / average",
+        "On the spoken cues: Centre: plate 3 of the rotated set (grey tag \"plate 3\"), base up (the painted plate mirrored horizontally to show the base view: a mirror is a uniform transform, never a stretch; the chips follow), still taped. On \"base\" `m7-ruler-clear-v1.png` (new) slides across disc A's zone through its centre; the ruler readout writes coded mm numerals and two amber end ticks at the zone edges, \"24 mm\". On \"average\" the ruler",
+        "explain",
+        "step rail lights \"5 measure\". Centre: plate 3 of the rotated set (grey tag \"plate 3\"), base up (the painted plate mirrored horizontally to show the base view: a mirror is a uniform transform, never a stretch; the chips follow), still taped. On \"base\" `m7-ruler-clear-v1.png` (new) slides across disc A's zone through its centre; the ruler readout writes coded mm numerals and two amber end ticks at the zone edges, \"24 mm\". On \"average\" the ruler rotates 90° about the disc centre and reads \"26 mm\"; a small line writes \"(24 + 26) ÷ 2 = 25 mm\" (amber). On \"six millimetres\" the ruler moves to disc C; its end ticks sit at the disc's own edges, \"6 mm = disc only\" (grey). A chip \"open the lid to see better\" fades in and takes a grey cross (caption \"measure through the base, lid on\"). Bright at the end: the 25 mm line, the 6 mm tag and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "results": [
+        "new",
+        "right zone: the zone table writes, columns \"disc | plate 1 | plate 2 | plate 3 | mean (mm)\": on \"twenty four, twenty six and twenty five\" row \"A | 24 | 26 | 25 |\" and on \"twenty five\" \"(24 + 26 + 25) ÷ 3 = 25\" in the mean cell (amber); then silently, one per beat: \"B | 15 | 14 | 16 | 15\"; \"C | 6 | 6 | 6 | 6\"; \"blank | 6 | 6 | 6 | 6\" (green outline on the blank row).",
+        "The results: Here are the results.",
+        "twenty five / agree / zones",
+        "On the spoken cues: Corner tag \"example data\". The three rotated plates stand small in the centre. On \"agree\" a small bracket over A's row \"spread 2 mm\" and over B's \"spread 2 mm\"; a grey tag \"the gap between A and B (10 mm) is far bigger than the spread\". On \"zones\" the blank row pulses green (tag \"no zone beyond the disc: paper and water didn't cause it\"). A silent grey tag writes low on the bench: \"colonies inside a zone? possibly",
+        "explain",
+        "right zone: the zone table writes, columns \"disc | plate 1 | plate 2 | plate 3 | mean (mm)\": on \"twenty four, twenty six and twenty five\" row \"A | 24 | 26 | 25 |\" and on \"twenty five\" \"(24 + 26 + 25) ÷ 3 = 25\" in the mean cell (amber); then silently, one per beat: \"B | 15 | 14 | 16 | 15\"; \"C | 6 | 6 | 6 | 6\"; \"blank | 6 | 6 | 6 | 6\" (green outline on the blank row). Corner tag \"example data\". The three rotated plates stand small in the centre. On \"agree\" a small bracket over A's row \"spread 2 mm\" and over B's \"spread 2 mm\"; a grey tag \"the gap between A and B (10 mm) is far bigger than the spread\". On \"zones\" the blank row pulses green (tag \"no zone beyond the disc: paper and water didn't cause it\"). A silent grey tag writes low on the bench: \"colonies inside a zone? possibly resistant cells: never open or subculture\". Bright at the end: the table's mean column, the spread brackets and the blank row. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "depends-on": [
+        "adjust",
+        "step rail lights \"6 what it shows\".",
+        "What zone size depends on: So, on this agar, A produced a larger clear zone than B.",
+        "diffuse / stronger / targets",
+        "On the spoken cues: Right zone: the claim card, two columns. On \"on this agar\" the teal column \"on this plate\" writes: \"A: larger clear zone than B (25 mm against 15 mm), these conditions\". Centre: one A-zone thumbnail with the depends-on fan, spokes writing on cue: \"how active the drug is\" (first, on \"how active\"), \"dose in the disc\" (on \"how much drug\"), \"how far it diffuses\" (on \"diffuse\"; a coded pair of halos beside it, labelled",
+        "explain",
+        "step rail lights \"6 what it shows\". Right zone: the claim card, two columns. On \"on this agar\" the teal column \"on this plate\" writes: \"A: larger clear zone than B (25 mm against 15 mm), these conditions\". Centre: one A-zone thumbnail with the depends-on fan, spokes writing on cue: \"how active the drug is\" (first, on \"how active\"), \"dose in the disc\" (on \"how much drug\"), \"how far it diffuses\" (on \"diffuse\"; a coded pair of halos beside it, labelled only \"drug 1\" and \"drug 2\", one dot cloud spreading further than the other, tag \"diffusion differs between drugs\"); on \"stronger\" a terracotta chip \"bigger zone = stronger drug\" fades in and takes a grey cross; and on \"targets\" \"target present?\" with b11's `m7-bacterium-wall-burst-v1.png` thumbnail small and a grey tag \"the antibiotics video: each drug hits a target\". The hook's \"no zone = useless?\" chip returns over C and takes a second grey cross. A small grey tag writes silently: \"clinical labs compare each drug with its own cut-off, on standard agar\". Bright at the end: the teal line, the \"how far it diffuses\" spoke and the \"target present?\" spoke. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "plate-not-patient": [
+        "adjust",
+        "the claim card's terracotta column \"as a medicine\" writes: on \"infected tissue\" \"reaches the infection?\" with `m7-healthy-tissue-field-v1.png` small (tag \"tissue, not agar\"); on \"without harming the patient\" \"safe at that dose?\" with `m7-capsule-blister-blank-v1.png` small; on \"pathogen\" \"works on the real pathogen?\" with `m7-bacterium-rod-coccus-v1.png` small (grey tag \"teaching strain ≠ pathogen\"); on \"clinical trials\" a grey chip \"shown by clinical trials (antibiotics video)\".",
+        "A plate isn't a patient: A plate also isn't a patient.",
+        "pathogen / narrow",
+        "On the spoken cues: On \"narrow\" the teal column's line rewrites as the conclusion: \"A produced a larger clear zone than B, on this agar, under these conditions\", and the hook's \"biggest zone = best medicine?\" chip returns over the zones thumbnail and takes a second grey cross. The memory line writes small under the card: \"Zone shows the plate, not the patient.\" Bright at the end: the conclusion line, the memory line and the crossed",
+        "explain",
+        "the claim card's terracotta column \"as a medicine\" writes: on \"infected tissue\" \"reaches the infection?\" with `m7-healthy-tissue-field-v1.png` small (tag \"tissue, not agar\"); on \"without harming the patient\" \"safe at that dose?\" with `m7-capsule-blister-blank-v1.png` small; on \"pathogen\" \"works on the real pathogen?\" with `m7-bacterium-rod-coccus-v1.png` small (grey tag \"teaching strain ≠ pathogen\"); on \"clinical trials\" a grey chip \"shown by clinical trials (antibiotics video)\". On \"narrow\" the teal column's line rewrites as the conclusion: \"A produced a larger clear zone than B, on this agar, under these conditions\", and the hook's \"biggest zone = best medicine?\" chip returns over the zones thumbnail and takes a second grey cross. The memory line writes small under the card: \"Zone shows the plate, not the patient.\" Bright at the end: the conclusion line, the memory line and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "validity-reliability": [
+        "new",
+        "step rail lights \"6 what it shows\" still.",
+        "Validity, reliability and accuracy: Validity: one variable changed, a blank control, and the same lawn, agar and incubation, so it's a fair comparison of the zones these discs make on this bacterium.",
+        "Validity / Reliability / Accuracy",
+        "On the spoken cues: Three cards write in turn in the right zone, each with its plain question (skills-s07's wording) and this practical's answer, the previous card dimming, with apparatus in the centre so the scene is not text alone: \"Validity: measures what was intended? Yes for 'which disc gives the larger clear zone on this agar' (one variable, blank control, same conditions). No for 'which drug is stronger' or 'which is the better",
+        "explain",
+        "step rail lights \"6 what it shows\" still. Three cards write in turn in the right zone, each with its plain question (skills-s07's wording) and this practical's answer, the previous card dimming, with apparatus in the centre so the scene is not text alone: \"Validity: measures what was intended? Yes for 'which disc gives the larger clear zone on this agar' (one variable, blank control, same conditions). No for 'which drug is stronger' or 'which is the better medicine'.\" \"Reliability: repeats agree? Three plates: A 24 to 26 mm, B 14 to 16 mm; use the mean.\" (the three rotated plates small in the centre). \"Accuracy: close to the true value? A fuzzy edge and the viewing angle limit where you place the boundary. More readings show agreement, not the true edge.\" (scene 7's ruler readout returns over disc B, with a coded soft-edge bracket \"edge: where exactly?\" on \"fuzzy edge\", and a small grey eye-line glyph tagged \"view from directly above\" on \"viewing angle\"). Footer, small grey, as p02: \"NESA glossary (2017 syllabus), reliability: 'An extent to which repeated observations and/or measurements taken under identical circumstances will yield similar results.'\" Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk-assessment": [
+        "adjust",
+        "step rail lights \"7 stay safe\".",
+        "Risk assessment: The risk assessment.",
+        "contaminating / allergic / autoclave",
+        "On the spoken cues: A grey header line writes on \"approved school procedure\": \"Use only the teaching culture approved in the school's risk assessment. Treat grown plates as potentially contaminated.\" The risk table then shows **only the row being spoken**, \"Hazard / Harm / Control\", in short wording; when the next row writes, the previous row collapses to a one-word grey chip (\"contamination\", \"allergy\") above it. On \"contaminating\"",
+        "explain",
+        "step rail lights \"7 stay safe\". A grey header line writes on \"approved school procedure\": \"Use only the teaching culture approved in the school's risk assessment. Treat grown plates as potentially contaminated.\" The risk table then shows **only the row being spoken**, \"Hazard / Harm / Control\", in short wording; when the next row writes, the previous row collapses to a one-word grey chip (\"contamination\", \"allergy\") above it. On \"contaminating\" row 1: \"contaminating microbes, multiplied by incubation\" / \"infection if a plate is opened\" / \"plates closed and inverted, never opened, measured through the base; wash hands\" with the closed zones plate thumbnail. On \"allergic\" row 2: \"antibiotic discs\" / \"allergic reaction\" / \"forceps, not fingers; tell your teacher about any allergy\" with the forceps thumbnail. On \"autoclave\" row 3: \"used plates\" / \"spreading live microbes\" / \"teacher autoclaves before disposal\" with `m6-autoclave-bag-plates-v1.png` (gloss \"autoclave: steam under pressure kills microbes\"). Footer chip: \"follow your school's risk assessment and microbiology procedure\". Ethanol and Bunsen rows are not shown (teacher notes only: neither happens in the method shown). Hold about 2 seconds; the safety points return in key note 5. Hold about 2 seconds; the safety points return in key note 5.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds; the safety points return in key note 5"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student tested antibiotic discs P",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed: \"A student tested two antibiotic discs, P and Q, each 6 mm in diameter, on nutrient agar plates spread with a harmless bacterium. She also used a disc dipped in sterile water. After 48 hours at 28 °C, the mean zone of inhibition diameters were: P 22 mm, Q 13 mm, sterile water 6 mm. She concluded: 'Antibiotic P would be a more effective treatment than Q for a bacterial infection in people.' Assess her conclusion. (3 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing: no claim card, no fan.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the question card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "thirteen / diffusion",
+        "On the spoken cues: A three-row answer box: on \"thirteen\" \"P 22 mm\", \"Q 13 mm\" and \"sterile water 6 mm\" are underlined and row 1 writes \"Judgement: only partly supported\" with row 2 \"Evidence: P 22 mm against Q 13 mm; control 6 mm, so paper and water alone made no zone: P produced a larger clear zone, under these conditions\" (teal). On \"diffusion\" \"a bacterial infection in people\" is underlined and row 3 writes (terracotta): \"Limit: a",
+        "explain",
+        "the question card shrinks to the top. A three-row answer box: on \"thirteen\" \"P 22 mm\", \"Q 13 mm\" and \"sterile water 6 mm\" are underlined and row 1 writes \"Judgement: only partly supported\" with row 2 \"Evidence: P 22 mm against Q 13 mm; control 6 mm, so paper and water alone made no zone: P produced a larger clear zone, under these conditions\" (teal). On \"diffusion\" \"a bacterial infection in people\" is underlined and row 3 writes (terracotta): \"Limit: a larger zone doesn't show a better treatment. Zone size also depends on dose and diffusion; treatment needs the drug to reach the infection safely and work on the real pathogen (clinical trials)\". A chip \"biggest zone = best medicine\" fades in and is crossed (caption \"a plate isn't a patient\"). Grey label \"HSCScience marking guide (illustrative)\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"A student compared two antiseptic solutions, X and Y.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "One more. A student soaked one paper disc",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A student compared two antiseptic solutions, X and Y. She soaked one paper disc in X for 1 minute and another paper disc in Y for 10 minutes, then placed both discs on a single nutrient agar plate spread with a harmless bacterium. She incubated the plate at 37 °C for 48 hours, then removed the lid to measure each zone of inhibition with a ruler. Identify TWO problems with this method and propose an improvement that fixes each problem. (4 marks)\". Tag: \"HSC-style question, written for HSCScience\". The full question stays on screen. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "One: the soaking times differed, so the discs",
+        "On the spoken cues: A two-column table writes: \"problem | improvement that fixes it\". On \"soaking times\" \"for 1 minute\" and \"for 10 minutes\" are underlined and row 1 fills \"unequal soaking → different amounts of antiseptic | same soaking time, or the same measured volume (for example 10 µL) on each disc\". On \"removing the lid\" \"removed the lid\" is underlined and row 2 fills \"lid removed → exposure to unknown growth | keep it closed;",
+        "explain",
+        "the card shrinks to the top. A two-column table writes: \"problem | improvement that fixes it\". On \"soaking times\" \"for 1 minute\" and \"for 10 minutes\" are underlined and row 1 fills \"unequal soaking → different amounts of antiseptic | same soaking time, or the same measured volume (for example 10 µL) on each disc\". On \"removing the lid\" \"removed the lid\" is underlined and row 2 fills \"lid removed → exposure to unknown growth | keep it closed; measure through the base\". Then, silently, \"37 °C\" and \"a single ... plate\" are underlined and a grey row writes: \"also: 37 °C → 25 to 30 °C; one plate, no control → three plates and a blank disc\". On \"classic mistake\" a chip \"be more careful opening the lid\" fades in and is crossed (caption \"the fix must remove the exposure\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "the plan card writes, each line lighting on its words: \"1 Lawn of an approved harmless culture (0.1 mL, spread evenly).\"",
+        "Decision rule and handoff: So: a lawn of an approved harmless culture, discs spaced apart, a blank control and three plates, closed and upside down at twenty five to thirty degrees.",
+        "Next",
+        "On the spoken cues: \"2 Discs ≥ 2 cm apart; blank disc control; three plates, positions rotated.\" \"3 Label the base, close the lid (school procedure), invert, 25 to 30 °C, never opened.\" \"4 Measure through the base, two diameters, mean of three plates.\" \"5 Claim: the larger clear zone, under these conditions; not 'the stronger drug' or 'the better medicine'.\" On \"Next\" a chip \"Next: vector control\" appears.",
+        "explain",
+        "the plan card writes, each line lighting on its words: \"1 Lawn of an approved harmless culture (0.1 mL, spread evenly).\" \"2 Discs ≥ 2 cm apart; blank disc control; three plates, positions rotated.\" \"3 Label the base, close the lid (school procedure), invert, 25 to 30 °C, never opened.\" \"4 Measure through the base, two diameters, mean of three plates.\" \"5 Claim: the larger clear zone, under these conditions; not 'the stronger drug' or 'the better medicine'.\" On \"Next\" a chip \"Next: vector control\" appears. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8B01_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. Left: `m8-skin-cross-section-v1.png` at medium size (grey tag \"skin, cut through\").",
+        "Hook (a room at 22 degrees): Right now you're probably in a room at about twenty-two degrees, and your body is losing heat to it every second.",
+        "about twenty-two degrees / losing heat to it every second / core temperature / detecting that drift",
+        "On the spoken cues: On \"about twenty-two degrees\" a small coded air panel above the skin writes \"air 22 °C\" in grey. On \"losing heat to it every second\" the coded `HeatArrows` rise from the skin surface into the air panel, in a slow continuous loop. On \"core temperature\" `m8-thermometer-v1.png` slides in at the right,",
+        "explain",
+        "no people. Left: `m8-skin-cross-section-v1.png` at medium size (grey tag \"skin, cut through\"). On \"about twenty-two degrees\" a small coded air panel above the skin writes \"air 22 °C\" in grey. On \"losing heat to it every second\" the coded `HeatArrows` rise from the skin surface into the air panel, in a slow continuous loop. On \"core temperature\" `m8-thermometer-v1.png` slides in at the right, its column at 37 and a bright chip \"core 37 °C\". On \"detecting that drift\" a faint dashed circle draws round the thermometer and the skin (the shape the loop ring will later take). On the question the heading writes: \"How does negative feedback keep conditions in range?\" At most three bright text items. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "range-not-number": [
+        "new",
+        "the skin plate shrinks to the upper left.",
+        "A range, not a fixed number: That steadiness has a name: homeostasis, keeping the internal environment relatively stable while the outside changes.",
+        "homeostasis / tolerance range / set point",
+        "On the spoken cues: On \"homeostasis\" a gloss writes: \"homeostasis: keeping the internal environment relatively stable\". On \"wobbles within a narrow band\" the coded `lineGraph` draws at the right: y axis \"core temperature (°C)\" from 36 to 38, x axis \"time\" with no units; a teal trace wobbles gently around 37. On",
+        "explain",
+        "the skin plate shrinks to the upper left. On \"homeostasis\" a gloss writes: \"homeostasis: keeping the internal environment relatively stable\". On \"wobbles within a narrow band\" the coded `lineGraph` draws at the right: y axis \"core temperature (°C)\" from 36 to 38, x axis \"time\" with no units; a teal trace wobbles gently around 37. On \"roughly thirty-six and a half to thirty-seven and a half\" a pale teal band fills from 36.5 to 37.5. On \"tolerance range\" the band's label writes \"tolerance range\"; on \"set point\" a dashed line at 37 writes \"set point\". The gloss dims. On \"enzymes\" a small coded enzyme outline (a rounded shape with a notch, abstract) appears below the graph with grey tag \"Year 11: enzyme shape and active site\"; on \"losing their shape\" the notch distorts (a grey tag \"large rises can denature enzymes\"); on \"reactions slow down\" a small grey arrow \"slower collisions\" appears. At most three bright items. Hold one second.",
+        [
+            "DrawPath",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "thermostat": [
+        "adjust",
+        "the graph slides right and dims.",
+        "A heater with a thermostat: A heater with a thermostat works the same way.",
+        "set the dial / A sensor inside / A switch compares / turns the heater on / turns it off again / Detect, decide, act.",
+        "On the spoken cues: New `m8-heater-thermostat-v1.png` enters at the centre left. On \"set the dial\" a `scribbleEllipse` circles the dial on the plate, label \"dial = set point (20 °C)\". On \"A sensor inside\" a callout points to the sensor grille, label \"sensor: measures\". On \"A switch compares\" a callout to the control",
+        "explain",
+        "the graph slides right and dims. New `m8-heater-thermostat-v1.png` enters at the centre left. On \"set the dial\" a `scribbleEllipse` circles the dial on the plate, label \"dial = set point (20 °C)\". On \"A sensor inside\" a callout points to the sensor grille, label \"sensor: measures\". On \"A switch compares\" a callout to the control box, label \"switch: compares\". On \"turns the heater on\" a warm glow pulses on the heater fins (coded overlay, low opacity) and `HeatArrows` flow out into a coded room outline with a small grey readout climbing 18, 19, 20. On \"turns it off again\" the glow fades and the readout settles at 20. On \"Detect, decide, act.\" three short words write under the plate one per word: \"detect\", \"decide\", \"act\"; earlier labels dim to grey. Hold one second.",
+        [
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "five-parts": [
+        "adjust",
+        "the board clears to the coded `LoopRing`, five empty slots on a circle.",
+        "Five parts, built in the cold: Your body runs the same kind of loop, with five parts.",
+        "stimulus / receptor / control centre / effectors / response",
+        "On the spoken cues: On \"cold wind\" a small grey tag at the upper left: \"outside change: cold wind\" (kept grey, outside the ring, so the external change is never a slot). On \"stimulus\" the top slot lights: `m8-thermometer-v1.png` small with its column dropping a little, label \"stimulus: body temperature falls\". On",
+        "explain",
+        "the board clears to the coded `LoopRing`, five empty slots on a circle. On \"cold wind\" a small grey tag at the upper left: \"outside change: cold wind\" (kept grey, outside the ring, so the external change is never a slot). On \"stimulus\" the top slot lights: `m8-thermometer-v1.png` small with its column dropping a little, label \"stimulus: body temperature falls\". On \"receptor\" the next slot lights with a cropped-in view of `m8-skin-cross-section-v1.png` (`Cam` zoom, no stretching) and a callout to a skin temperature sensor, label \"receptor: thermoreceptors (skin, hypothalamus)\". On \"hypothalamus, a small region at the base of the brain\" `b3a2-brain-v1.png` fills the control centre slot, with a `scribbleEllipse` round the hypothalamus region above the pituitary stalk, label \"control centre: hypothalamus\". A `SignalPulse` travels from receptor to control centre on \"compares that signal\"; a small grey tag \"compares with set point (about 37 °C)\". On \"effectors\" the effector slot lights; on \"Skeletal muscles start shivering\" new `m8-skeletal-muscle-v1.png` appears in the slot with a small coded tremor (2 px, 8 Hz, only while the word sounds); on \"arterioles, narrow\" a small coded arteriole outline beside it narrows (two lines drawing closer), label \"skin arterioles narrow\". A `SignalPulse` runs from control centre to effector. On \"response\" the last slot lights: label \"response: more heat made, less lost\"; the thermometer column in the stimulus slot rises back. Each label dims to grey as the next writes, so at most three are bright. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "Cam lens zoom",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "why-negative": [
+        "new",
+        "the ring stays at the left; the return arrow from response to stimulus draws in bright amber with a large minus sign on \"opposite way\".",
+        "Why it's called negative: Here's the key idea.",
+        "negative feedback",
+        "On the spoken cues: Two small arrows appear in the stimulus slot: a down arrow \"fell\" and an up arrow \"raised\" on cue. On \"negative feedback\" a gloss writes: \"negative feedback: the response opposes the change\". On \"not bad\" a grey chip \"negative = harmful\" takes a scribble cross. On \"As temperature returns\" the",
+        "explain",
+        "the ring stays at the left; the return arrow from response to stimulus draws in bright amber with a large minus sign on \"opposite way\". Two small arrows appear in the stimulus slot: a down arrow \"fell\" and an up arrow \"raised\" on cue. On \"negative feedback\" a gloss writes: \"negative feedback: the response opposes the change\". On \"not bad\" a grey chip \"negative = harmful\" takes a scribble cross. On \"As temperature returns\" the `SignalPulse` dots between receptor and control centre become fewer and fainter, and the muscle tremor eases to a faint, steady flicker (it does not stop). On \"settles to what's needed, not to zero\" the gloss dims and a small coded \"heat made\" bar beside the effector slot drops from tall to a low bar that stays above the zero line, tag \"still some extra heat while it is cold\" (learning review 1: a persistent low baseline). On \"small delays\" the trace panel returns at the right: the teal trace dips below 37 after a marker \"cold wind\", rises back, overshoots slightly, settles, inside the band; a grey tag \"small drift either side is normal\". Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "positive-feedback": [
+        "adjust",
+        "the ring dims and moves to the upper left.",
+        "Positive feedback, the contrast: Compare that with positive feedback, where the response strengthens the original change.",
+        "positive feedback",
+        "On the spoken cues: New `m8-vessel-tear-platelets-early-v1.png` enters at the centre. On \"platelets\" a grey gloss: \"platelets: cell fragments in blood that help it clot\". On \"call in more platelets\" a small coded ring of two slots appears beside the plate (\"more platelets stick\" → \"more chemicals released\") with a",
+        "explain",
+        "the ring dims and moves to the upper left. New `m8-vessel-tear-platelets-early-v1.png` enters at the centre. On \"platelets\" a grey gloss: \"platelets: cell fragments in blood that help it clot\". On \"call in more platelets\" a small coded ring of two slots appears beside the plate (\"more platelets stick\" → \"more chemicals released\") with a bright amber return arrow carrying a plus sign; it cycles twice on \"which release more chemicals\". On \"until the hole is plugged\" the plate cross-fades to its matched state `m8-vessel-tear-plug-v1.png` and the plus loop stops, with a small label \"end point: tear sealed\". On \"drives a process to an end point\" a two-column chip writes at the right: \"negative: opposes, holds steady\" and \"positive: amplifies, to an end point\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "glucose-template": [
+        "adjust",
+        "the loop ring returns to the centre with its slots emptied.",
+        "Same template, different parts: The same five-part template fits other variables.",
+        "Blood glucose rises / Cells in the pancreas / insulin / liver and muscle cells / falls back / a later video",
+        "On the spoken cues: On \"Blood glucose rises\" the stimulus slot writes \"stimulus: blood glucose rises\" with a small coded up arrow. On \"Cells in the pancreas\" `m8-pancreas-v1.png` drops into the receptor slot and slides across into the control centre slot as well, the two slots joined by a bracket, label \"receptor and",
+        "explain",
+        "the loop ring returns to the centre with its slots emptied. On \"Blood glucose rises\" the stimulus slot writes \"stimulus: blood glucose rises\" with a small coded up arrow. On \"Cells in the pancreas\" `m8-pancreas-v1.png` drops into the receptor slot and slides across into the control centre slot as well, the two slots joined by a bracket, label \"receptor and control centre: pancreas\". On \"insulin\" a `SignalPulse` in a different colour (a dot in a short coded vessel line, signalling a hormone in the blood) runs to the effector slot; label \"insulin (a hormone)\". On \"liver and muscle cells\" the effector slot writes \"effectors: liver and muscle cells\" (no plate needed; the label names cells not organs; `m8-skeletal-muscle-v1.png` small, grey). On \"falls back\" the response slot writes \"glucose taken up, level falls\"; the return arrow draws with its minus sign. On \"a later video\" a small grey \"Coming up: insulin and glucagon\" chip. Hold one second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "exam-checks": [
+        "new",
+        "the temperature loop ring from scene 4 returns, full.",
+        "Two exam checks: When you read a loop in an exam, check two things.",
+        "Air temperature might cause the change / receptors detect the change in the variable",
+        "On the spoken cues: Two numbered chips write at the right: \"1. Which variable? Inside the body.\" and \"2. Which way? Opposes = negative.\" On \"Air temperature might cause the change\" the grey \"outside change: cold wind\" tag pulses and a grey chip \"air temperature is the regulated variable\" takes a scribble cross. On",
+        "explain",
+        "the temperature loop ring from scene 4 returns, full. Two numbered chips write at the right: \"1. Which variable? Inside the body.\" and \"2. Which way? Opposes = negative.\" On \"Air temperature might cause the change\" the grey \"outside change: cold wind\" tag pulses and a grey chip \"air temperature is the regulated variable\" takes a scribble cross. On \"receptors detect the change in the variable\" a callout traces from the stimulus slot to the receptor slot; a grey chip \"receptor detects the response\" takes a scribble cross. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "the ring shrinks; around it the five initials write in large handwriting, one on each slot as spoken: \"S\", \"R\", \"C\", \"E\", \"R\", with the line \"Some Really Cool Elephants Run\" written under the ring.",
+        "Memory: To remember the order: Some Really Cool Elephants Run.",
+        "opposes the change",
+        "On the spoken cues: On \"opposes the change\" the minus sign on the return arrow pulses. Hold half a second.",
+        "explain",
+        "the ring shrinks; around it the five initials write in large handwriting, one on each slot as spoken: \"S\", \"R\", \"C\", \"E\", \"R\", with the line \"Some Really Cool Elephants Run\" written under the ring. On \"opposes the change\" the minus sign on the return arrow pulses. Hold half a second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (construct a loop)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. During exercise, blood carbon",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (construct a loop))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"During exercise, respiring muscle cells release more carbon dioxide into the blood. Chemoreceptors in the brainstem and in the walls of major arteries detect the rise in blood carbon dioxide concentration. The medulla oblongata, part of the brainstem, sends nerve impulses to the diaphragm and the muscles between the ribs. The rate and depth of breathing increase.\" Demand: \"(a) Construct a negative feedback loop for this response, naming each of the five components. (3 marks) (b) Explain why this is an example of negative feedback. (2 marks)\". An empty five-slot ring outline sits beside the answer lines as a drawing space (no labels). No plates. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card stays.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "opposes the rise / classic mistake",
+        "On the spoken cues: As each component is spoken, its given phrase in the stem takes an amber underline (\"blood carbon dioxide concentration\", \"Chemoreceptors\", \"medulla oblongata\", \"diaphragm and the muscles between the ribs\", \"rate and depth of breathing increase\") and the matching slot of the drawn ring fills with",
+        "explain",
+        "the card stays. As each component is spoken, its given phrase in the stem takes an amber underline (\"blood carbon dioxide concentration\", \"Chemoreceptors\", \"medulla oblongata\", \"diaphragm and the muscles between the ribs\", \"rate and depth of breathing increase\") and the matching slot of the drawn ring fills with that short label. On \"opposes the rise\" the return arrow draws with a minus sign; (the spoken self-limiting recap is cut: scene 5 taught it). On \"classic mistake\" a chip \"Stimulus: exercise\" writes and takes a scribble cross, with small text \"exercise is the cause; the stimulus is the change in CO₂\". Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt two (interpret a graph)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. A healthy adult moved from a room",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (interpret a graph))",
+        "explain",
+        "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\". Stem: \"A healthy adult sat in a room at 22 °C, then moved into a room at 5 °C for 60 minutes. The graph shows air temperature and the adult's core body temperature.\" The coded `lineGraph` with two y axes: left \"air temperature (°C)\" 0 to 25, right \"core body temperature (°C)\" 36.0 to 37.5; x axis \"time (min)\" 0 to 70. Grey air line at 22 to minute 10, dropping to 5 and flat. Teal core line at 37.0 to minute 10, falling to 36.6 at minute 20, rising to 36.9 at minute 32, then wobbling between 36.8 and 37.0 to minute 70. A small grey tag \"teaching data\". Demand: \"(a) Identify the variable being regulated. (1 mark) (b) Explain the pattern in core body temperature after the move, with reference to negative feedback. (3 marks)\". **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card, graph included, stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card stays.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "core body temperature / small fall / hypothalamus ... recovered / classic mistake",
+        "On the spoken cues: On \"core body temperature\" the right axis label and the teal line take an amber underline and highlight. On \"small fall\" a small marker writes at the dip \"36.6 °C, stimulus\". On \"hypothalamus ... recovered\" a mini loop ring (thumbnail) appears beside the graph and lights slot by slot; the rising",
+        "explain",
+        "the card stays. On \"core body temperature\" the right axis label and the teal line take an amber underline and highlight. On \"small fall\" a small marker writes at the dip \"36.6 °C, stimulus\". On \"hypothalamus ... recovered\" a mini loop ring (thumbnail) appears beside the graph and lights slot by slot; the rising part of the teal line brightens. The section from minute 32 to 70 stays at normal brightness, with its thin band, but is not narrated (the second oscillation account is cut, learning review 2). On \"classic mistake\" a chip \"regulated variable: air temperature\" writes and takes a scribble cross; the grey air line pulses at 5. Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "adjust",
+        "three step chips write on, one per cue: \"variable inside the body?\", \"five parts in order\", \"response opposes?\".",
+        "Decision rule and handoff: So for any loop, name the variable inside the body, trace the five parts in order, and check that the response opposes the change.",
+        "So for any loop, name the variable inside",
+        "On the spoken cues: The loop ring returns small above them. A \"Next\" chip slides in at the lower right: \"Next: How do endotherms regulate body temperature?\" with a small `m8-skin-cross-section-v1.png` thumbnail. Hold half a second before the notes.",
+        "explain",
+        "three step chips write on, one per cue: \"variable inside the body?\", \"five parts in order\", \"response opposes?\". The loop ring returns small above them. A \"Next\" chip slides in at the lower right: \"Next: How do endotherms regulate body temperature?\" with a small `m8-skin-cross-section-v1.png` thumbnail. Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8B02_ROWS = {
+    "hook": [
+        "adjust",
+        "no people. New `m8-spectacled-flying-fox-v1.png` hangs at the left (grey tag \"spectacled flying fox\").",
+        "Hook (a heatwave in far north Queensland): In late November twenty eighteen, a heatwave hit far north Queensland, and Cairns reached over forty-two degrees.",
+        "far north Queensland / over forty-two degrees / roughly twenty-three thousand / pant, lick themselves and fan their wings",
+        "On the spoken cues: On \"far north Queensland\" a small coded outline of the Queensland coast draws at the upper right with one dot, \"Cairns\". On \"over forty-two degrees\" `m8-thermometer-v1.png` slides in beside the dot, its column high, with a bright chip \"Cairns Airport 42.6 °C, 26 Nov 2018\" (grey source tag \"Bureau",
+        "explain",
+        "no people. New `m8-spectacled-flying-fox-v1.png` hangs at the left (grey tag \"spectacled flying fox\"). On \"far north Queensland\" a small coded outline of the Queensland coast draws at the upper right with one dot, \"Cairns\". On \"over forty-two degrees\" `m8-thermometer-v1.png` slides in beside the dot, its column high, with a bright chip \"Cairns Airport 42.6 °C, 26 Nov 2018\" (grey source tag \"Bureau of Meteorology\"). On \"roughly twenty-three thousand\" a bright chip writes \"about 23,000 died in two days\" (grey tag \"published estimate\"). On \"pant, lick themselves and fan their wings\" three small grey labels write beside the flying fox: \"pant\", \"lick\", \"fan wings\". On the question the heading writes: \"How do endotherms regulate body temperature?\" At most three bright text items. Hold one second.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "endotherms": [
+        "new",
+        "the flying fox shrinks to the upper left.",
+        "Endotherms, and the loop you know: Flying foxes, like kangaroos and humans, are endotherms: animals that make most of their body heat from their own metabolism.",
+        "endotherms / ectotherm",
+        "On the spoken cues: On \"endotherms\" a gloss writes: \"endotherm: most body heat from its own metabolism\". On \"fairly steady\" the coded `lineGraph` draws at the right: x axis \"time of day\", y axis \"temperature (°C)\" 10 to 45; a grey air line swings from 15 to 40 and back; a teal line labelled \"endotherm core\" stays flat",
+        "explain",
+        "the flying fox shrinks to the upper left. On \"endotherms\" a gloss writes: \"endotherm: most body heat from its own metabolism\". On \"fairly steady\" the coded `lineGraph` draws at the right: x axis \"time of day\", y axis \"temperature (°C)\" 10 to 45; a grey air line swings from 15 to 40 and back; a teal line labelled \"endotherm core\" stays flat near 37. On \"ectotherm\" a second gloss: \"ectotherm: most heat from its surroundings\"; an amber line labelled \"ectotherm body\" follows the air line partway, held within a narrower band (teaching curve); a grey chip \"ectotherms can't regulate\" takes a scribble cross on \"still regulates\". On \"the feedback loop from the last video\" b01's `LoopRing` thumbnail appears at the upper left (grey tag \"b01\"), its five slots briefly lighting in order. Glosses dim as the graph completes. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "neural-pathway": [
+        "adjust",
+        "the board clears below the heading.",
+        "Detecting heat, and the neural pathway: When core temperature rises, thermoreceptors in the hypothalamus detect warmer blood, and skin receptors detect changes in skin temperature.",
+        "neural pathway",
+        "On the spoken cues: The coded `HeatBalance` draws across the top, level, pans labelled \"heat gained\" and \"heat lost\". Below: `b3a2-brain-v1.png` at the left with a `scribbleEllipse` round the hypothalamus region (label \"hypothalamus\"), and new `m8-skin-warm-v1.png` at the right. On \"detect warmer blood\" a small coded",
+        "explain",
+        "the board clears below the heading. The coded `HeatBalance` draws across the top, level, pans labelled \"heat gained\" and \"heat lost\". Below: `b3a2-brain-v1.png` at the left with a `scribbleEllipse` round the hypothalamus region (label \"hypothalamus\"), and new `m8-skin-warm-v1.png` at the right. On \"detect warmer blood\" a small coded vessel line under the brain plate glows warm; on \"receptors in the skin\" a callout points to a nerve ending in the skin plate, label \"skin thermoreceptors: detect skin temperature\". A `SignalPulse` runs from the skin to the hypothalamus. On \"compares this with the set point\" a small grey tag \"set point about 37 °C\". On \"sends nerve impulses\" a bright `DrawPath` nerve line draws from the hypothalamus to the skin plate and a fast `SignalPulse` runs along it; label \"neural pathway: nerve impulses\". On \"fast and targeted\" the pulse repeats quickly along the one nerve line only. The loop ring thumbnail lights its receptor and control centre slots. At most three bright items. Hold one second.",
+        [
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "vasodilation": [
+        "adjust",
+        "the brain plate dims and moves aside; `m8-skin-warm-v1.png` grows to the centre.",
+        "Vasodilation: First effector: the skin's arterioles, the small arteries feeding it.",
+        "vasodilation",
+        "On the spoken cues: On \"the skin's arterioles\" a callout points to the widened arterioles beneath the surface (label \"skin arterioles\"). On \"smooth muscle in their walls relaxes\" `b3a2-smooth-muscle-cell-relaxed-v1.png` appears small beside the callout (grey tag \"smooth muscle in the vessel wall, relaxed\"). On",
+        "explain",
+        "the brain plate dims and moves aside; `m8-skin-warm-v1.png` grows to the centre. On \"the skin's arterioles\" a callout points to the widened arterioles beneath the surface (label \"skin arterioles\"). On \"smooth muscle in their walls relaxes\" `b3a2-smooth-muscle-cell-relaxed-v1.png` appears small beside the callout (grey tag \"smooth muscle in the vessel wall, relaxed\"). On \"vasodilation\" a gloss writes: \"vasodilation: arterioles widen\". On \"More warm blood flows\" a coded red flow (short dashes) runs through the widened vessels; on \"loses more heat to cooler air\" `HeatArrows` rise from the surface and the `HeatBalance` tips towards \"heat lost\". On \"don't move closer to the skin\" a grey chip \"vessels move closer to the skin\" takes a scribble cross. The loop ring thumbnail lights its effector slot. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "sweating": [
+        "new",
+        "the warm skin plate stays.",
+        "Sweating, and why humidity matters: Second effector: sweat glands release sweat onto the skin.",
+        "sweat glands / evaporation / takes energy ... from the skin and the blood / in humid air / even though it's still pouring out",
+        "On the spoken cues: On \"sweat glands\" a callout points to the coiled gland and its duct (label \"sweat gland\"); the coded `EvapDots` appear on the surface at the duct openings. On \"evaporation\" the droplets shrink and lift as vapour wisps; a gloss writes: \"cooling comes from evaporation\". On \"takes energy ... from the",
+        "explain",
+        "the warm skin plate stays. On \"sweat glands\" a callout points to the coiled gland and its duct (label \"sweat gland\"); the coded `EvapDots` appear on the surface at the duct openings. On \"evaporation\" the droplets shrink and lift as vapour wisps; a gloss writes: \"cooling comes from evaporation\". On \"takes energy ... from the skin and the blood\" short coded arrows run from the blood vessels up into the rising wisps (grey tag \"about 2.4 kJ per gram of water evaporated\"); the `HeatBalance` tips further towards \"heat lost\". On \"in humid air\" a pale haze fills the air above the skin, the `EvapDots` switch to \"humid\" mode (droplets stay and pool), the wisps stop, and the balance tips back part of the way; a grey chip \"sweat cools because it is wet\" takes a scribble cross on \"even though it's still pouring out\". At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold one second"
+    ],
+    "cold-and-hormones": [
+        "adjust",
+        "`m8-skin-warm-v1.png` cross-fades to its matched state `m8-skin-cold-v1.png` (narrowed arterioles, pale surface, raised hair, no sweat).",
+        "The cold side, and the hormonal pathway: In the cold, the loop runs the other way, as you saw last video.",
+        "thyroxine / hormonal pathway",
+        "On the spoken cues: On \"Arterioles narrow\" a callout to the narrowed vessels (label \"vasoconstriction: arterioles narrow\"; `b3a2-smooth-muscle-cell-contracted-v1.png` small, grey tag \"contracted\"); on \"muscles shiver\" `m8-skeletal-muscle-v1.png` (from b01) appears small at the right with a brief coded tremor; on",
+        "explain",
+        "`m8-skin-warm-v1.png` cross-fades to its matched state `m8-skin-cold-v1.png` (narrowed arterioles, pale surface, raised hair, no sweat). On \"Arterioles narrow\" a callout to the narrowed vessels (label \"vasoconstriction: arterioles narrow\"; `b3a2-smooth-muscle-cell-contracted-v1.png` small, grey tag \"contracted\"); on \"muscles shiver\" `m8-skeletal-muscle-v1.png` (from b01) appears small at the right with a brief coded tremor; on \"hairs stand up\" a callout to the raised hair and its small muscle (grey tags \"piloerection\" and \"helps furry animals far more than humans\"). The `HeatBalance` tips towards \"heat gained\". The loop ring thumbnail at the upper left shows the b01 cold loop (grey tag \"b01\"). On \"Hormones help too\" the brain plate returns small at the left. On \"thyroxine\" a gloss writes: \"thyroxine: thyroid hormone, raises cells' metabolic rate\" (grey tag \"in many mammals, over days to weeks\"). A slow `SignalPulse` in a second colour travels along a coded blood vessel line (wavy, red) from a small label \"thyroid gland\" to the muscle plate, which takes a faint warm glow (grey tag \"more heat from respiration\"). On \"slower than nerves\" the fast nerve pulse from scene 3 runs once beside it for contrast; two labels write: \"neural: fast, targeted\", \"hormonal: slower, longer-lasting\". A grey tag \"adrenaline also raises heat production quickly\" sits small. Earlier labels dim. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "three-types": [
+        "adjust",
+        "the skin and brain plates leave; the `HeatBalance` stays level at the top.",
+        "Three types of adaptation: These responses are one of three types of adaptation.",
+        "Physiological / Behavioural / Structural",
+        "On the spoken cues: Three columns draw: on \"Physiological\" the first column header writes \"physiological: body processes that switch on and off\" with the warm skin plate thumbnail; on \"Behavioural\" the second, \"behavioural: actions the animal takes\", with a small coded shade-tree outline (abstract shape, grey); on",
+        "explain",
+        "the skin and brain plates leave; the `HeatBalance` stays level at the top. Three columns draw: on \"Physiological\" the first column header writes \"physiological: body processes that switch on and off\" with the warm skin plate thumbnail; on \"Behavioural\" the second, \"behavioural: actions the animal takes\", with a small coded shade-tree outline (abstract shape, grey); on \"Structural\" the third, \"structural: body features, there all the time\", with `b2-seal-and-pup-v1.png` small (grey tag \"blubber under the skin\"). Each header dims to grey as the next writes. Hold one second.",
+        [
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "red-kangaroo": [
+        "adjust",
+        "new `m8-red-kangaroo-v1.png` (resting, licking a forearm) enters at the centre; the three column headers sit small above it.",
+        "The red kangaroo uses all three: The red kangaroo shows all three.",
+        "rests in shade / pants, sweats while hopping, and widens its skin vessels / licks its forearms / a dense network of blood vessels / The saliva evaporates / Licking is a behaviour, the vessel network is a structure, and the cooling is physiological",
+        "On the spoken cues: On \"rests in shade\" a coded shade patch falls across the plate and a chip drops into the behavioural column: \"rests in shade\". On \"pants, sweats while hopping, and widens its skin vessels\" a chip drops into the physiological column: \"pants, sweats, vasodilation\". On \"licks its forearms\" a",
+        "explain",
+        "new `m8-red-kangaroo-v1.png` (resting, licking a forearm) enters at the centre; the three column headers sit small above it. On \"rests in shade\" a coded shade patch falls across the plate and a chip drops into the behavioural column: \"rests in shade\". On \"pants, sweats while hopping, and widens its skin vessels\" a chip drops into the physiological column: \"pants, sweats, vasodilation\". On \"licks its forearms\" a `scribbleEllipse` circles the forearm; on \"a dense network of blood vessels\" new `m8-kangaroo-forearm-vessels-v1.png` appears as an inset callout from the forearm (grey tag \"close-up, drawn larger\"). On \"The saliva evaporates\" `EvapDots` lift from the inset. On \"Licking is a behaviour, the vessel network is a structure, and the cooling is physiological\" three thin lines draw from the forearm to all three columns, one per phrase. On \"cross the categories\" the three lines pulse together. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "trends": [
+        "adjust",
+        "the kangaroo dims to a thumbnail.",
+        "Trends across endotherms: Across endotherms, there are trends.",
+        "countercurrent exchange",
+        "On the spoken cues: On \"large, thin ears or long limbs\" two coded silhouettes draw side by side (abstract outlines of a generic mammal head, one with large thin ears, one compact with small ears, no species, no faces), labelled \"hot climate: large extremities\" and \"cold climate: compact\"; `HeatArrows` are larger from",
+        "explain",
+        "the kangaroo dims to a thumbnail. On \"large, thin ears or long limbs\" two coded silhouettes draw side by side (abstract outlines of a generic mammal head, one with large thin ears, one compact with small ears, no species, no faces), labelled \"hot climate: large extremities\" and \"cold climate: compact\"; `HeatArrows` are larger from the large-eared outline. On \"thick fur or blubber\" `b2-seal-and-pup-v1.png` returns small under the compact outline (grey tag \"blubber\"). A grey tag \"p01 tests this with a model\" sits at the lower edge. The silhouettes dim on \"In a penguin's legs\". The coded `Countercurrent` diagram draws at the centre: a red artery running down (label \"warm blood out\") beside a blue vein running up (label \"cool blood back\"), the artery fading from red to purple down its length, the vein warming upward; on \"Heat passes across\" short amber cross arrows pulse from artery to vein along the length. Grey tags \"penguin legs, dolphin flippers\". On \"countercurrent exchange\" the label writes. At most three bright items. Hold one second.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "counter and bar fill",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "limits": [
+        "adjust",
+        "the board returns to the flying fox plate at the left, with the `HeatBalance` above.",
+        "Why the flying foxes died: So why did the flying foxes die?",
+        "Heat flows from hotter to cooler / Hotter air added heat / relied heavily on evaporation / water they were already losing / each effector has a limit",
+        "On the spoken cues: On \"Heat flows from hotter to cooler\" a coded skin strip (thin, abstract, from the warm skin plate's palette) draws at the right with a grey label \"air hotter than skin\" above it (no skin temperature is stated). On \"Hotter air added heat\" the `HeatArrows` above the strip reverse and point down into",
+        "explain",
+        "the board returns to the flying fox plate at the left, with the `HeatBalance` above. On \"Heat flows from hotter to cooler\" a coded skin strip (thin, abstract, from the warm skin plate's palette) draws at the right with a grey label \"air hotter than skin\" above it (no skin temperature is stated). On \"Hotter air added heat\" the `HeatArrows` above the strip reverse and point down into the skin, labelled \"convection\"; the balance tips hard towards \"heat gained\". On \"relied heavily on evaporation\" `EvapDots` lift from the strip and the balance comes back part of the way; on \"water they were already losing\" the dots thin and slow (grey tag \"water runs short\"). On \"each effector has a limit\" b01's loop ring thumbnail shows all slots lit and the minus arrow still bright, while the flying fox's small `m8-thermometer-v1.png` column keeps climbing; a chip writes \"feedback has limits\". At most three bright items. Hold one second.",
+        [
+            "DrawPath",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold one second"
+    ],
+    "memory": [
+        "new",
+        "two handwritten lines write on large, with the warm skin plate thumbnail beside \"Hot: widen and wet.\" and the cold skin plate thumbnail beside \"Cold: narrow and shiver.\"; under them three small chips \"process? behaviour? feature?\".",
+        "Memory: To keep it: hot means widen and wet.",
+        "To keep it: hot means widen and wet.",
+        "On the spoken cues: Hold half a second.",
+        "explain",
+        "two handwritten lines write on large, with the warm skin plate thumbnail beside \"Hot: widen and wet.\" and the cold skin plate thumbnail beside \"Cold: narrow and shiver.\"; under them three small chips \"process? behaviour? feature?\". Hold half a second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold half a second"
+    ],
+    "attempt": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt one (a cyclist on a dry day)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Two exam questions. First. A cyclist rides on",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt one (a cyclist on a dry day))",
+        "explain",
+        "the board clears. The card writes on as an exam question, tagged \"HSC-style question, written for HSCScience\". Stem: \"A cyclist rides for 40 minutes on a dry day when the air temperature is 30 °C. Her core body temperature rises from 37.0 °C to 37.8 °C in the first 15 minutes, then stays near 37.8 °C while she continues riding at the same pace.\" Demand: \"(a) Explain how the hypothalamus and TWO named effectors prevent her core body temperature from rising further. (4 marks) (b) Predict how her core body temperature would change on a humid day with the same air temperature. Justify your prediction. (2 marks)\". Lined answer space. No plates, no people. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-one": [
+        "new",
+        "the card stays.",
+        "Brief feedback (feedback, item one): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "detect the rise / more heat passes to the cooler air / Evaporating sweat / levels off / Humid air / Wet skin alone",
+        "On the spoken cues: On \"detect the rise\" the given \"rises from 37.0 °C to 37.8 °C\" takes an amber underline; on \"more heat passes to the cooler air\" the given \"30 °C\" takes an underline and a small grey tag \"air cooler than skin\"; on \"Evaporating sweat\" the given \"dry day\" takes an underline; on \"levels off\" the given",
+        "explain",
+        "the card stays. On \"detect the rise\" the given \"rises from 37.0 °C to 37.8 °C\" takes an amber underline; on \"more heat passes to the cooler air\" the given \"30 °C\" takes an underline and a small grey tag \"air cooler than skin\"; on \"Evaporating sweat\" the given \"dry day\" takes an underline; on \"levels off\" the given \"then stays near 37.8 °C\" takes an amber underline; on \"Humid air\" the demand's \"humid day\" takes an underline. Four short answer lines write into the answer space, one per cue: \"hypothalamus → nerve impulses to arterioles and sweat glands\", \"arterioles dilate: more warm blood near surface, more heat lost\", \"sweat evaporates: takes heat from skin\", \"heat loss = heat production → temperature levels off\"; and for (b): \"humid: less evaporation, core temperature rises higher\". On \"Wet skin alone\" a chip \"sweat cools because the skin is wet\" writes and takes a scribble cross. Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "chip pop"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "attempt-two": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt two (the koala)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Second. In hot weather, koalas move down to",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt two (the koala))",
+        "explain",
+        "the board clears. The card writes on, tagged \"HSC-style question, written for HSCScience\", with `m5x-koala-v1.png` small at its upper left. Stem: \"Koalas are endotherms. In hot weather, koalas have been observed to show these adaptations: 1. They move down to lower branches and press their bodies against the tree trunk, which is cooler than their body surface. 2. They pant, increasing evaporation from the moist lining of the mouth and airways. 3. They have dense fur on their back that reflects part of the sunlight that strikes it.\" Demand: \"(a) Classify each adaptation as behavioural, structural or physiological. (3 marks) (b) Explain how adaptation 1 reduces the koala's body temperature. (2 marks)\". A three-row answer table (adaptation 1, 2, 3; type) and lined space. **The countdown ring starts after \"Pause here to answer.\" and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-two": [
+        "new",
+        "the card stays.",
+        "Brief feedback (feedback, item two): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "The trunk is cooler / without using water / classic mistake",
+        "On the spoken cues: The answer table fills one row per cue: \"1: behavioural\", \"2: physiological\", \"3: structural\". On \"The trunk is cooler\" the given \"cooler than their body surface\" takes an amber underline and the koala plate takes a small coded arrow from body to trunk, labelled \"heat: koala → trunk (conduction)\".",
+        "explain",
+        "the card stays. The answer table fills one row per cue: \"1: behavioural\", \"2: physiological\", \"3: structural\". On \"The trunk is cooler\" the given \"cooler than their body surface\" takes an amber underline and the koala plate takes a small coded arrow from body to trunk, labelled \"heat: koala → trunk (conduction)\". On \"without using water\" the given \"pant, increasing evaporation\" takes a thin grey underline with a small tag \"panting uses water\". On \"classic mistake\" a chip \"hugging the tree keeps it cool\" writes and takes a scribble cross, with small text \"name the direction of heat flow\". Settle one second.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Settle on the model answer for about a second"
+    ],
+    "decision-rule": [
+        "new",
+        "three step chips write on, one per cue: \"effector or feature?\", \"heat gained or lost?\", \"limits?\".",
+        "Decision rule and handoff: So for any temperature question, name the effector or feature, say how it changes heat gained or heat lost, and check its limits.",
+        "So for any temperature question, name the effector",
+        "On the spoken cues: The heat-balance bar returns small above them. A \"Next\" chip slides in at the lower right: \"Next: investigating temperature regulation with a model\" (small grey tag; a small coded flask outline beside it). Hold half a second before the notes.",
+        "explain",
+        "three step chips write on, one per cue: \"effector or feature?\", \"heat gained or lost?\", \"limits?\". The heat-balance bar returns small above them. A \"Next\" chip slides in at the lower right: \"Next: investigating temperature regulation with a model\" (small grey tag; a small coded flask outline beside it). Hold half a second before the notes.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "counter and bar fill"
+        ],
+        "Hold half a second before the notes"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# --- M7 p05 and M8 b01, b02 rows (end) ---
 
 
 LESSONS = {
@@ -11065,6 +11851,47 @@ LESSONS = {
         'rows': M7G01B_ROWS,
     },
     # --- M7 p01, b13 and g01 entries (end) ---
+    # --- M7 p05 and M8 b01, b02 entries (start) ---
+    'm7p05b': {
+        'design': D + 'lessons/bio-m7-p05.md',
+        'learning_review': D + 'checks/m7p05b-learning-review.md',
+        'science_check': D + 'checks/m7p05b-claude-science-check.md',
+        'meta': {"title": "Test antimicrobial effectiveness: what can a zone of inhibition tell you, and what can't it?", "subtitle": "Three antibiotic discs on one plate: one clears a big zone, one a small zone, one nothing. Is the biggest zone the best medicine, and is the third drug useless? How do you run a safe, fair disc test, and what can its zones really tell you?", "subject": "Biology", "yearLevel": 12, "module": 7, "lesson": 17, "lessonIntent": "explaining how a zone of inhibition forms; stating the aim, variables, negative control and replicates; preparing a lawn and placing discs; recalling safe incubation; measuring zones through the base; reading the results and judging reliability; explaining what zone size depends on; explaining why a zone does not show clinical effectiveness; judging validity, reliability and accuracy; writing the risk assessment; assessing a treatment claim from zone data and fixing a flawed method."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "what-a-zone-is", "aim-variables", "control-repeats", "lawn-discs", "incubate", "measure", "results", "depends-on", "plate-not-patient", "validity-reliability", "risk-assessment", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "b11 (selective toxicity: a useful drug harms the pathogen much more than the host, often by hitting a part the pathogen has and we lack; the cell wall and ribosome targets; kill against stop-growth; resistance is selected; effectiveness is judged from clinical evidence); p02 (agar plates, aseptic technique, spreading 0.1 mL with a sterile spreader, label the base, tape with two strips, incubate upside down at 25 to 30 °C, never 37 °C, never opened, autoclave; risk group 1; VRA cards); s07 (in Biology after p02: validity, reliability, accuracy as three questions; word, feature, fix; repeats help reliability). Year 11 Module 2 (diffusion: net movement from high to low concentration). Not assumed: zone of inhibition, disc diffusion, breakpoints.", "startsWith": "Set up safe controlled agar comparisons. The video opens: A student put four paper discs on a plate spread with bacteria. Two days later, around disc A, a clear zone twenty five millimetres across. Around disc B, fifteen.", "stopsAfter": "explaining how a zone of inhibition forms; stating the aim, variables, negative control and replicates; preparing a lawn and placing discs; recalling safe incubation; measuring zones through the base; reading the results and judging reliability; explaining what zone size depends on; explaining why a zone does not show clinical effectiveness; judging validity, reliability and accuracy; writing the risk assessment; assessing a treatment claim from zone data and fixing a flawed method.", "nextLesson": "how controlling mosquitoes can stop disease spreading (route entry bio-m7-b12)."},
+        'teaching': {"task": "Three antibiotic discs on one plate: one clears a big zone, one a small zone, one nothing. Is the biggest zone the best medicine, and is the third drug useless? How do you run a safe, fair disc test, and what can its zones really tell you?", "causalExplanation": "(1) the puzzle; (2) a disc's drug diffuses out, so it is strongest near the disc; where it is strong enough the bacteria can't grow, giving a clear zone; beyond the edge it is too dilute (the zone's edge is where the drug just stops growth); (3) aim and variables; (4) the blank control shows the disc and water alone don't stop growth; three plates with rotated positions so one plate or spot can't decide it; (5) a lawn needs an even spread; discs spaced so zones don't overlap, pressed to touch the agar so the drug can diffuse; (6) tape, invert, 25 to 30 °C, never opened (recall); (7) measure through the base, twice at right angles; no zone recorded as 6 mm; (8) results, means, reliability, the blank's meaning; (9) zone size also depends on dose and diffusion, and on whether the bacterium has the target; (10) a plate is not a patient; the narrow conclusion; (11) VRA; (12) risk; attempts; decision rule and handoff; key notes.", "conversationalApproach": "a student puts discs on a plate of bacteria and two days later disc A has a 25 millimetre clear zone, B 15 and C nothing, so the practical asks whether A is the best medicine and C useless, and what a zone of inhibition can and can't show. Each disc holds a measured dose that diffuses outwards, strongest near the disc, and where it is strong enough to stop growth the agar stays clear: the zone of inhibition. The aim compares three antibiotic discs on one harmless bacterium, with the antibiotic as the independent variable, zone diameter as the dependent variable and everything else kept the same, plus a sterile-water blank disc as the negative control and three plates with the discs in different positions. The teacher supplies an approved culture spread as a lawn, discs go on with sterile forceps well apart, and the plate is closed, labelled, inverted and incubated at 25 to 30 degrees, never 37, with the lid kept shut and zones measured through the base. The results show A larger than B with close repeats and no zone for the blank, but zone size also depends on dose and on how far the drug diffuses, and a plate isn't a patient, so the claim stays narrow. Validity, reliability and accuracy each get their plain question, and the risk assessment keeps cultured plates closed. Two exam questions follow with brief feedback.", "openingDecision": "A student put four paper discs on a plate spread with bacteria. Two days later, around disc A, a clear zone twenty five millimetres across. Around disc B, fifteen. Around disc C, nothing. So is A the best medicine, and is C useless? The plate can't tell you either.", "understandingCheck": "(A1, assess, 3 marks) Discs P and Q (6 mm), a harmless bacterium, 48 h at 28 °C; mean zones P 22 mm, Q 13 mm, sterile water disc 6 mm; her conclusion \"P would be the more effective treatment for an infection in people\". Answer: judgement (only partly supported, or not supported as a treatment claim); evidence (P's 22 mm against Q's 13 mm and the 6 mm control: P produced a larger clear zone than Q under these conditions, and the paper and water alone produced none); reason the claim overreaches (zone size also depends on dose and diffusion; treatment depends on reaching the infection safely and on the actual pathogen, shown by clinical trials). Crossed mistake: \"biggest zone = best medicine\". (A2, identify and propose, 4 marks) Antiseptic X disc soaked 1 min, antiseptic Y disc soaked 10 min, one plate, 37 °C, lid removed to measure. Answer: any two problems with a fix that removes each: unequal soaking (equal time, or the same measured volume on each disc); lid removed (keep taped, measure through the base); 37 °C (25 to 30 °C); one plate and no control (three plates, a blank disc dipped in sterile water). Feedback voices soaking and the lid, names the other two in one sentence. Crossed mistake: \"be more careful when opening the lid\" (the plate should not be opened at all; the fix does not remove the exposure). Antiseptics are used in A2 (not antibiotics) so the item is unseen in substance as well as numbers; the method skills are the same. The card says \"antiseptic solutions\", so no pharmaceutical claim is made.", "curriculumScope": "Syllabus (NSW Biology Stage 6, 2017), as printed: \"investigate and assess the effectiveness of pharmaceuticals as treatment strategies for the control of infectious disease, for example:; antivirals; antibiotics\" this video prepares students to plan, run and interpret a disc-diffusion test; watching it is not doing it. It teaches: what a zone of inhibition is and why it forms (the drug diffuses out and thins with distance); the aim and variables; the negative control and three plates; preparing a lawn of a supplied harmless culture; placing and spacing discs; closing the lid as the school procedure directs, inverting and incubating at 25 to 30 °C (recalled from p02 in one sentence); measuring the zone through the base, twice at right angles; reading the results table and means; what zone size depends on besides how active the drug is (dose, diffusion, whether the bacterium has the drug's target); why a plate is not a patient (reaching the infection, safety, the actual pathogen, clinical trials); validity, reliability and accuracy; the risk assessment (contamination, closed plates, antibiotic allergy, autoclaving). Not re-taught: selective toxicity and drug targets (b11; one clause in scene 9, \"the part C targets\"); clinical trials as evidence (b11 scene 10; one clause in scene 10); serial dilution, aseptic technique, labelling, taping and inverting, and 25 to 30 °C (p02; one sentence in scene 6, one gloss in scene 5); resistance by selection (b11; a silent tag in scene 8). Not here: standardised clinical susceptibility testing (Mueller-Hinton agar, McFarland standard, breakpoint tables: author note only, one grey tag in scene 9); antivirals (they cannot be tested on bacterial agar; one grey tag in scene 2, as b11 taught); minimum inhibitory concentration; resistance mechanisms (b11)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: the antibiotic violet (the independent variable); zone diameters amber (the dependent variable); the control green; \"on this plate\" teal and \"as a medicine\" terracotta, kept apart wherever both appear; hazards terracotta; grey for tags and callbacks. Clutter rule: at most three bright text items; every tag dims when its sentence ends. All incubated plates on screen are lidded and taped; no lid lifts after incubation, ever. Reuse: the explainer kit (`Plate`, `Callout`, `Mark`, `Countdown`, `HandText`, `DrawPath`, `scribbleEllipse`, `Enter`); B6a's `WrongChip`, `GreyTag`, `Cross`, `Cam`; bio-m7-p02's step rail, variables card, VRA cards, risk table and claim card (lesson-local there; root to decide copy or lift, as p02's open decision). New coded items (lesson-local): the diffusion halo (a coded radial gradient of small amber dots, dense at the disc and thinning outward, with a dashed ring at the \"just enough to stop growth\" level, laid over the painted zones plate), the ruler readout (coded mm numerals and two perpendicular measurement lines over the painted ruler; numerals only, no coded ruler body), the zone table (four rows, three plates and a mean), and the depends-on fan (four short spokes from a zone thumbnail: \"how active the drug is\", \"dose in disc\", \"how far it diffuses\", \"target present?\"). No human figures.", "transitionPlan": "The lidded zones plate fills the centre with violet disc chips as a ruler reads each zone; the step rail lights its stages in turn as the disc cartridge plate appears and the camera eases in on disc A while a diffusion halo builds to a dashed zone edge; the variables card writes one row per cue and a green negative control row lights the blank chip; three plates rotate their disc positions; the spreader and clear plate set up the lawn and the discs drop into place with spacing tags; the plate gains a base label and tape strips, flips and goes into the incubator plate beside a 28 degree dial as a 37 degree chip is crossed; the base view of plate 3 shows the ruler plate reading across disc A and again after a quarter turn; the zone table writes row by row with its means; the claim card writes its teal column for what the plate shows and its terracotta column for what a medicine needs, with the tissue plate small; the three quality cards write in turn; the risk header and rows write; each attempt clears the board with its question card, and its feedback underlines the givens as the answer box or problem table fills and a crossed trap lands; the plan card writes each line on its words; scene crossfade with settle."},
+        'rows': M7P05B_ROWS,
+    },
+    'm8b01': {
+        'design': D + 'lessons/bio-m8-b01.md',
+        'learning_review': D + 'checks/m8b01-learning-review.md',
+        'science_check': D + 'checks/m8b01-claude-science-check.md',
+        'meta': {"title": "How Does Negative Feedback Keep Conditions in Range? Homeostasis", "subtitle": "You lose heat to a 22 °C room every second, yet your core temperature stays close to 37 °C. What detects the drift, what decides, and what corrects it?", "subject": "Biology", "yearLevel": 12, "module": 8, "lesson": 1, "lessonIntent": "defining homeostasis as keeping the internal environment relatively stable within a tolerance range around a set point, and saying why (enzyme activity); naming and ordering the five components with their jobs for a fall in body temperature (thermoreceptors in skin and hypothalamus, hypothalamus as control centre, shivering muscles and narrowing skin arterioles as effectors, heat made and kept as the response); explaining why the loop is negative (the response opposes the change) and easing as the variable returns (signals weaken and the extra response fades to what is needed, not to zero; small fluctuations can occur around the set point); contrasting positive feedback (amplifies a change until an end point, blood clotting); mapping the same template onto rising blood glucose (pancreas as receptor and control centre, insulin, liver and muscle cells as effectors); constructing a loop from a written description and interpreting a two-line graph, keeping the regulated internal variable separate from the external change."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "range-not-number", "thermostat", "five-parts", "why-negative", "positive-feedback", "glucose-template", "exam-checks", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From Year 11: neurons carry nerve impulses; hormones are chemical messengers carried in the blood; the brain coordinates responses; enzymes have an active site and an optimum temperature and pH. Not assumed: homeostasis, set point, tolerance range, the five components, thermoreceptor, hypothalamus, effector, negative and positive feedback.", "startsWith": "Trace stimulus, receptor, control and effector. The video opens: Right now you're probably in a room at about twenty-two degrees, and your body is losing heat to it every second.", "stopsAfter": "defining homeostasis as keeping the internal environment relatively stable within a tolerance range around a set point, and saying why (enzyme activity); naming and ordering the five components with their jobs for a fall in body temperature (thermoreceptors in skin and hypothalamus, hypothalamus as control centre, shivering muscles and narrowing skin arterioles as effectors, heat made and kept as the response); explaining why the loop is negative (the response opposes the change) and easing as the variable returns (signals weaken and the extra response fades to what is needed, not to zero; small fluctuations can occur around the set point); contrasting positive feedback (amplifies a change until an end point, blood clotting); mapping the same template onto rising blood glucose (pancreas as receptor and control centre, insulin, liver and muscle cells as effectors); constructing a loop from a written description and interpreting a two-line graph, keeping the regulated internal variable separate from the external change.", "nextLesson": "how endotherms detect heat and the main ways they lose or keep it (route entry bio-m8-b02)."},
+        'teaching': {"task": "You lose heat to a 22 °C room every second, yet your core temperature stays close to 37 °C. What detects the drift, what decides, and what corrects it?", "causalExplanation": "Causes: why the range matters (enzymes; 2); how each part leads to the next (4); why the loop is negative (direction; 5) and why it stops itself (weakening signals; 5); why positive feedback cannot hold a variable (it amplifies until an end point; 6). Attention: a question about the learner's own body (1), a familiar machine (3), a contrast (6). Visual medium: one loop ring that fills slot by slot with real structures and is reused for glucose and both attempts. Apply: construct (10a), interpret (10c). Remember: the mnemonic and the minus-sign arrow.", "conversationalApproach": "You are probably sitting in a room at about 22 degrees, losing heat every second, yet your core temperature stays close to 37, so the question is how negative feedback keeps conditions in range: what detects the drift, what decides and what fixes it. Homeostasis is keeping the internal environment relatively stable, with core temperature wobbling within a narrow band, the tolerance range, around a set point. A heater with a thermostat shows the same loop with its set point, sensor and switch. The body's loop has five parts, built in a cold wind: the stimulus (body temperature starting to fall), thermoreceptors in the skin and hypothalamus as receptors, the hypothalamus as control centre, the skin arterioles and muscles as effectors, and the response that makes more heat and loses less. It is negative because the response opposes the change, and as temperature returns the receptors detect less change and the response eases. Positive feedback is the contrast: platelets at a torn vessel call in more platelets until the hole is plugged. The same template fits blood glucose, where the pancreas is both receptor and control centre and insulin brings glucose back down. Two exam checks follow (which variable inside the body, which way the response pushes), then the memory aid Some Really Cool Elephants Run and two exam questions with brief feedback.", "openingDecision": "Right now you're probably in a room at about twenty-two degrees, and your body is losing heat to it every second. Yet your core temperature stays close to thirty-seven. Something keeps detecting that drift and correcting it. So what detects it, what decides, and what does the fixing?", "understandingCheck": "10a is a construct item from a written description (the dotpoint's first verb). 10c is an interpret item from a two-line graph (the second verb, and the 2019 Q29 trap). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 s each): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B8-IQ1-01 (p 56): \"construct and interpret negative feedback loops that show homeostasis by using a range of sources, including but not limited to: (ACSBL101, ACSBL110, ACSBL111)\" with the listed examples \"temperature (ACSBL098)\" and \"glucose\". Temperature carries the build (scenes 4 and 5, attempt 2); glucose is the transfer (scene 7). \"Construct\" is attempt 1; \"interpret\" is attempt 2. \"Range of sources\": a thermostat model (3), a loop diagram (4), a trace graph (5, attempt 2) and a written description (attempt 1)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One loop ring owns the frame from scene 4: five slots on a circle (stimulus at the top, then clockwise receptor, control centre, effector, response), joined by curved arrows, with a return arrow from response back to stimulus marked with a minus sign in scene 5. Each slot holds one small painted plate or a short label, never a text box standing in for a structure. The ring persists, dimmed, through scenes 6 to 8 and reappears small in 11. A trace panel (the coded `lineGraph`: variable against time, a shaded tolerance band and a dashed set point line) sits to the right in scenes 2, 5 and attempt 2. People are never drawn: there is no body outline; the internal variable is shown by the skin cross-section plate, the brain plate and the thermometer plate. At most three bright text items at once; earlier labels dim to grey when a new one writes.", "transitionPlan": "The skin cross-section plate appears under a coded air panel as HeatArrows rise into it, the thermometer slides in at 37 and a faint dashed circle draws round both; the plate shrinks as the homeostasis gloss writes and a coded lineGraph draws the core temperature wobbling inside a shaded tolerance band with its set point line; the graph dims as the heater and thermostat plate enters and scribble rings circle the dial, sensor and switch in turn; the board clears to the coded LoopRing with five empty slots that fill one per cue with the thermometer, a zoomed skin view, the brain plate and the effector plates as SignalPulse dots travel between them; the return arrow draws bright amber with a large minus sign, a crossed chip corrects negative as harmful and the pulses thin as the variable returns; the ring dims as the torn vessel plate cross-fades from early to plugged platelets with an amplifying arrow; the ring returns with emptied slots and refills for blood glucose; the full temperature ring returns beside two numbered check chips; the five initials write around the ring; each attempt clears the board with its question card or graph, and its feedback underlines each given as it is used while a crossed answer chip lands; three step chips write on and a next chip slides in; scene crossfade with settle."},
+        'rows': M8B01_ROWS,
+    },
+    'm8b02': {
+        'design': D + 'lessons/bio-m8-b02.md',
+        'learning_review': D + 'checks/m8b02-learning-review.md',
+        'science_check': D + 'checks/m8b02-claude-science-check.md',
+        'meta': {"title": "How Do Endotherms Regulate Body Temperature? Feedback and Adaptations", "subtitle": "In November 2018, a heatwave in far north Queensland killed about 23,000 spectacled flying foxes in two days, even though flying foxes pant, lick themselves and fan their wings to cool down. How do endotherms usually keep body temperature in range, and why can that fail?", "subject": "Biology", "yearLevel": 12, "module": 8, "lesson": 2, "lessonIntent": "defining an endotherm (most body heat from its own metabolism, used with controlled heat loss to keep core temperature fairly steady) against an ectotherm (most heat from the surroundings, still regulates by behaviour); tracing how thermoreceptors and the hypothalamus send fast nerve impulses to skin arterioles and sweat glands (the neural pathway) and slower hormones in the blood, such as thyroxine raising metabolic rate in a long cold spell (the hormonal pathway); explaining vasodilation (widened arterioles carry more warm blood near the surface, so more heat is lost to cooler air; vessels don't move) and sweating (cooling by evaporation, less effective in humid air); classifying adaptations as physiological (body processes that switch on and off), behavioural (actions) or structural (body features), with the red kangaroo using all three and features that cross categories; naming trends (large heat-shedding extremities in hot climates, compact insulated bodies in cold, countercurrent exchange); explaining why feedback can fail when hot air adds heat, dry heat loss is limited and evaporation needs water that runs short."},
+        'hold_seconds': 10,
+        'holds': ["attempt", "attempt-two"],
+        'ids': ["hook", "endotherms", "neural-pathway", "vasodilation", "sweating", "cold-and-hormones", "three-types", "red-kangaroo", "trends", "limits", "memory", "attempt", "feedback-one", "attempt-two", "feedback-two", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From b01: homeostasis, tolerance range and set point; the five parts; thermoreceptors in skin and hypothalamus; the hypothalamus as control centre; shivering and narrowing skin arterioles in the cold; negative feedback opposes a change and fades as it succeeds. From Year 11: neurons carry nerve impulses; hormones travel in the blood to target cells; heat moves from hotter to cooler. Not assumed: endotherm, ectotherm, vasodilation, vasoconstriction, evaporative cooling, thyroxine, countercurrent exchange, the three adaptation types.", "startsWith": "Connect neural and hormonal signals to effectors. The video opens: In late November twenty eighteen, a heatwave hit far north Queensland, and Cairns reached over forty-two degrees.", "stopsAfter": "defining an endotherm (most body heat from its own metabolism, used with controlled heat loss to keep core temperature fairly steady) against an ectotherm (most heat from the surroundings, still regulates by behaviour); tracing how thermoreceptors and the hypothalamus send fast nerve impulses to skin arterioles and sweat glands (the neural pathway) and slower hormones in the blood, such as thyroxine raising metabolic rate in a long cold spell (the hormonal pathway); explaining vasodilation (widened arterioles carry more warm blood near the surface, so more heat is lost to cooler air; vessels don't move) and sweating (cooling by evaporation, less effective in humid air); classifying adaptations as physiological (body processes that switch on and off), behavioural (actions) or structural (body features), with the red kangaroo using all three and features that cross categories; naming trends (large heat-shedding extremities in hot climates, compact insulated bodies in cold, countercurrent exchange); explaining why feedback can fail when hot air adds heat, dry heat loss is limited and evaporation needs water that runs short.", "nextLesson": "test heat loss with a model experiment (route entry bio-m8-p01)."},
+        'teaching': {"task": "In November 2018, a heatwave in far north Queensland killed about 23,000 spectacled flying foxes in two days, even though flying foxes pant, lick themselves and fan their wings to cool down. How do endotherms usually keep body temperature in range, and why can that fail?", "causalExplanation": "Causes: why vasodilation loses heat (more warm blood near a surface, cooler air; 4); why sweat cools (evaporation takes energy; 5) and why humidity defeats it (5); why hormones are slower (they travel in blood; 6); why the kangaroo's licking works (evaporation over a dense vessel network; 8); why countercurrent exchange keeps heat (heat crosses from artery to vein; 9); why feedback failed in 2018 (hotter air adds heat, so the animals relied heavily on evaporation, which needs water; 10). Attention: a real Australian event that poses the question (1) and is answered with the physics just taught (10). Visual medium: a heat-balance beam that tips with each effector, and a matched warm and cold skin pair. Apply: explain and predict (12a), classify and explain on an unseen animal (12c). Remember: \"widen and wet, narrow and shiver\" and the three questions.", "conversationalApproach": "In late November 2018 a heatwave pushed Cairns past 42 degrees and roughly 23,000 spectacled flying foxes died in about two days, even though they pant, lick themselves and fan their wings, so the question is how endotherms regulate body temperature and where that control runs out. Endotherms make most of their body heat from their own metabolism and control heat loss to keep core temperature fairly steady, unlike an ectotherm such as a lizard. When core temperature rises, thermoreceptors in the hypothalamus and the skin detect it and the hypothalamus sends fast nerve impulses to the skin. Arterioles relax and widen (vasodilation), carrying more warm blood near the surface so more heat passes to cooler air, and sweat cools by evaporation, which takes energy from the skin and works far less in humid air. In the cold the loop runs the other way, and thyroxine, a slower hormonal signal, raises the metabolic rate. Adaptations are physiological, behavioural or structural, and the red kangaroo shows all three, while trends across endotherms link ears, limbs, fur, blubber and countercurrent exchange to climate. The flying foxes died because hotter air added heat instead of carrying it away, leaving evaporation using water they were already losing. The memory aid is hot means widen and wet, cold means narrow and shiver. Two exam questions follow with brief feedback.", "openingDecision": "In late November twenty eighteen, a heatwave hit far north Queensland, and Cairns reached over forty-two degrees. In about two days, roughly twenty-three thousand spectacled flying foxes died. These animals pant, lick themselves and fan their wings to cool down. So how do animals like them usually keep their temperature in range, and why did it fail here?", "understandingCheck": "12a is an explain and predict item (hypothalamus, two effectors, humidity), matching the marker comment on 2021 Q29 and 2025 Q24 (\"the causal path from response to temperature change\"). 12c is a classify and explain item on an unseen endotherm, the koala (the stop: compare behavioural, structural and physiological responses). Each ends \"Pause here to answer.\" with a 10 s countdown; the whole card stays on screen during the countdown and after it. Feedback is brief (about 25 to 30 s): the answer, the key reasons, givens underlined in the card as they are used, one crossed-out classic mistake. No givens card.", "curriculumScope": "B8-IQ1-02 (p 56): \"investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:\" with the listed examples \"trends and patterns in behavioural, structural and physiological adaptations in endotherms that assist in maintaining homeostasis (ACSBL099, ACSBL114)\" (scenes 7 to 9, attempt 2) and \"internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways (ACSBL112, ACSBL113, ACSBL114)\" (scenes 3 and 6). The third example, \"mechanisms in plants that allow water balance to be maintained (ACSBL115)\", belongs to b05. \"Within tolerance limits\" is carried by scene 10."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "A heat-balance bar owns the top of the frame from scene 3: a horizontal beam with \"heat gained\" on the left pan and \"heat lost\" on the right pan (coded outline, abstract), which tips as effectors switch on and levels when temperature is back in range. Below it, the working area holds one painted plate at a time with its callouts. b01's loop ring appears as a thumbnail at the upper left in scenes 2, 3 and 6, its effector slot lighting to show where the current plate sits in the loop. People are never drawn: skin appears as the matched warm and cold skin cross-section plates; the \"body\" is never outlined. At most three bright text items at once; earlier labels dim to grey.", "transitionPlan": "The spectacled flying fox plate hangs at the left as a coded Queensland coast marks Cairns, the thermometer slides in with its 42.6 degree chip and a death-count chip writes; the plate shrinks as the endotherm gloss writes and a coded lineGraph draws a steady endotherm line beside a lizard line that follows the air; the board clears below the heading to the coded HeatBalance with the brain plate, hypothalamus ringed, and the warm skin plate as a SignalPulse runs to the hypothalamus and a nerve path draws back to the skin; the warm skin plate grows to the centre with callouts on the widened arterioles and heat arrows leaving the surface; the sweat gland callout appears and EvapDots lift as vapour wisps, then pool under a humid haze as the balance tips back; the warm skin plate cross-fades to its matched cold state with callouts and a shivering muscle plate, and a slow thyroxine pulse travels along a coded vessel beside the fast nerve pulse; three adaptation columns draw and fill; the red kangaroo plate enters as a shade patch falls and each behaviour drops into its column; coded abstract silhouettes and a countercurrent sketch draw side by side; the flying fox plate returns as HeatArrows reverse into a coded skin strip, the HeatBalance tips toward heat gained and the EvapDots thin; the memory lines write beside the two skin thumbnails; each attempt clears the board with its question card, and its feedback underlines the givens as the answer table fills and a crossed chip lands; three step chips write on and a next chip slides in; scene crossfade with settle."},
+        'rows': M8B02_ROWS,
+    },
+    # --- M7 p05 and M8 b01, b02 entries (end) ---
 }
 
 

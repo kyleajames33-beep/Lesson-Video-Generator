@@ -1,0 +1,998 @@
+{
+  "brief": "28aa",
+  "date": "2026-10-29",
+  "prerequisites": {
+    "28x": "complete",
+    "28y": "complete",
+    "28z": "complete"
+  },
+  "status": "complete",
+  "notes": [
+    "All nine MP4 hashes match the brief.",
+    "Only the named cumulative caption files are prepared.",
+    "Full syllabus blocks include every ledger bullet; the design teaching summary remains unchanged.",
+    "Existing official 2017 document extracts were checked word for word after whitespace normalization.",
+    "Technical input checks do not replace Studio saved metadata, caption, thumbnail or playlist readbacks."
+  ],
+  "videos": [
+    {
+      "lessonId": "chem-m7-c09",
+      "file": "out/explainer/Explainer-chem-m7-c09/Explainer-chem-m7-c09-v1.mp4",
+      "sha256": "fdd635a1d724dcd314fae99b95b1899c4531cb266811740180d7e94c1d6a7165",
+      "captionFile": "docs/production/claude-pm/lessons/m7c09/measured/captions-cumulative.srt",
+      "captionSha256": "10c67bfda26893a63152f63cdd154f4c76d03ee5c0e22cc3869fc5f90813e78b",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7c09/measured/lesson.json",
+      "measuredLessonSha256": "ce7f523290ba22d1d0e76339fe7b74632aa5b5e015f703d1e0812a7210550286",
+      "design": "docs/production/claude-pm/lessons/chem-m7-c09.md",
+      "title": "Carboxylic Acids: Naming, Boiling Points and Why They Are Weak Acids | Year 12 Chemistry",
+      "originalTitle": "Carboxylic Acids: Naming, Boiling Points and Why They Are Weak Acids | Year 12 Chemistry",
+      "description": "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module7/lesson14.sa\n\nEthanoic acid and propan-1-ol have the same molar mass, and both contain an O–H group. Yet the acid boils 21 °C higher, turns blue litmus red and fizzes with baking soda. See what the carboxyl group is, how to name carboxylic acids by IUPAC rules, why their molecules pair up as hydrogen-bonded dimers, and why the charge left behind after the acid loses its proton makes it a weak acid while an alcohol is no more acidic than water. Then use sodium hydrogen carbonate to identify a carboxylic acid. Two exam-style questions at the end.\n\n0:00 Hook\n0:32 Carboxyl group\n0:59 Naming acids\n1:28 Dimers boiling\n2:10 Series solubility\n2:45 Weak acid\n3:29 Shared charge\n4:11 Litmus\n4:29 Acid reactions\n4:53 Hydrogen carbonate test\n5:26 Memory aid\n5:55 Attempt 1\n6:26 Feedback 1\n6:58 Attempt 2\n7:26 Feedback 2\n7:58 Handoff\n8:12 Key notes\n\nChemistry 2017: Year 12 Module 7, Organic Chemistry.\nSyllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 7):\n\"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)\n- alkanes\n- alkenes\n- alkynes\n- alcohols (primary, secondary and tertiary)\n- aldehydes and ketones\n- carboxylic acids\n- amines and amides\n- halogenated organic compounds\"\n\"investigate the structural formulae, properties and functional group including:\n- primary, secondary and tertiary alcohols\n- aldehydes and ketones (ACSCH127)\n- amines and amides\n- carboxylic acids\"\n\"explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present\"\n\"investigate the differences between an organic acid and organic base\"\nThis video covers carboxylic acids, the organic acid. Amines, amides and organic bases are in their own video.\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Investigate alcohol oxidation products. Next: How do an acid and alcohol make an ester?\n\n#Year12Chemistry #OrganicChemistry #HSCScience",
+      "syllabusDotpoints": [
+        "\"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)\n- alkanes\n- alkenes\n- alkynes\n- alcohols (primary, secondary and tertiary)\n- aldehydes and ketones\n- carboxylic acids\n- amines and amides\n- halogenated organic compounds\"",
+        "\"investigate the structural formulae, properties and functional group including:\n- primary, secondary and tertiary alcohols\n- aldehydes and ketones (ACSCH127)\n- amines and amides\n- carboxylic acids\"",
+        "\"explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present\"",
+        "\"investigate the differences between an organic acid and organic base\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "C7-IQ1-01",
+          "text": "investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)",
+          "examples": [
+            "alkanes",
+            "alkenes",
+            "alkynes",
+            "alcohols (primary, secondary and tertiary)",
+            "aldehydes and ketones",
+            "carboxylic acids",
+            "amines and amides",
+            "halogenated organic compounds"
+          ],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        },
+        {
+          "id": "C7-IQ5-01",
+          "text": "investigate the structural formulae, properties and functional group including:",
+          "examples": [
+            "primary, secondary and tertiary alcohols",
+            "aldehydes and ketones (ACSCH127)",
+            "amines and amides",
+            "carboxylic acids"
+          ],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        },
+        {
+          "id": "C7-IQ5-02",
+          "text": "explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        },
+        {
+          "id": "C7-IQ5-04",
+          "text": "investigate the differences between an organic acid and organic base",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/chemistry/year12/module7/lesson14.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson14.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLZn7qgJ_Eg2E",
+        "title": "Year 12 Chemistry: Module 7, Organic Chemistry (2017 syllabus)"
+      },
+      "playlistOrder": 15,
+      "chapters": [
+        "0:00 Hook",
+        "0:32 Carboxyl group",
+        "0:59 Naming acids",
+        "1:28 Dimers boiling",
+        "2:10 Series solubility",
+        "2:45 Weak acid",
+        "3:29 Shared charge",
+        "4:11 Litmus",
+        "4:29 Acid reactions",
+        "4:53 Hydrogen carbonate test",
+        "5:26 Memory aid",
+        "5:55 Attempt 1",
+        "6:26 Feedback 1",
+        "6:58 Attempt 2",
+        "7:26 Feedback 2",
+        "7:58 Handoff",
+        "8:12 Key notes"
+      ],
+      "durationInFrames": 15535,
+      "status": "published",
+      "priority": 1,
+      "inputChecks": {
+        "lessonId": "chem-m7-c09",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 180,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 15531,
+        "expectedFrames": 15535,
+        "endHoldShortfall": 4,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "hk9wDdhbTLA",
+      "url": "https://youtu.be/hk9wDdhbTLA",
+      "visibility": "Public",
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "paidPromotion": false
+    },
+    {
+      "lessonId": "bio-m7-b13",
+      "file": "out/explainer/Explainer-bio-m7-b13/Explainer-bio-m7-b13-v1.mp4",
+      "sha256": "66b04a97ebdfd35517eda73de8ed7770343223028451c5ea4d661a60b304f308",
+      "captionFile": "docs/production/claude-pm/lessons/m7b13/measured/captions-cumulative.srt",
+      "captionSha256": "22e0d5cafe2cf87e490478221c0067b7cd938ee37b8a5875e7e7f748792c6800",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7b13/measured/lesson.json",
+      "measuredLessonSha256": "08ae33ea54ada3c9ab6b2dbae5ff3f6f93050123b999d646efd39040928ecbd6",
+      "design": "docs/production/claude-pm/lessons/bio-m7-b13.md",
+      "title": "What Limits Dengue Control? Incidence, Prevalence and Wolbachia | Year 12 Biology Module 7",
+      "originalTitle": "What Limits Dengue Control? Incidence, Prevalence and Wolbachia | Year 12 Biology Module 7",
+      "description": "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module7/lesson18.sa\n\nIn 2021, a randomised trial in Yogyakarta, Indonesia, found about 77% fewer dengue cases where Wolbachia mosquitoes were released. Yet 2024 set a record for dengue cases reported to WHO. Using dengue in South East Asia as the named disease, learn what incidence and prevalence mean, why we compare places with rates per 100,000, and how to read a seasonal dengue graph. Then see why immunity to one dengue serotype doesn't protect against the others, how travellers carry the virus between cities and into north Queensland, and how four conditions (virus, mosquito, warmth and water, and people) are shaped by social causes. Finally, judge the Wolbachia evidence from Yogyakarta and Cairns, and combine biological and social causes to explain why dengue control is still limited. Two exam-style questions with brief feedback.\n\n0:00 Hook\n0:23 Named disease\n0:49 Incidence prevalence\n1:14 Past infection rates\n1:52 Dengue year\n2:17 Serotypes\n2:51 Mobility\n3:11 Four conditions\n3:47 Wolbachia evidence\n4:27 Still limited\n4:58 Memory\n5:12 Attempt\n5:48 Feedback one\n6:15 Attempt two\n6:58 Feedback two\n7:25 Decision rule\n7:40 Key notes\n\nBiology 2017: Year 12 Module 7, Infectious Disease. Inquiry question: \"How can the spread of infectious diseases be controlled?\"\nSyllabus dotpoints (NSW Biology Stage 6, 2017, Module 7):\n\"investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease\"\n\"interpret data relating to the incidence and prevalence of infectious disease in populations, for example:\n- mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)\n- Malaria or Dengue Fever in South East Asia\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: How can vector control reduce infection? Next: Outbreak data and control practice.\n\n#Year12Biology #InfectiousDisease #HSCScience",
+      "syllabusDotpoints": [
+        "\"investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease\"",
+        "\"interpret data relating to the incidence and prevalence of infectious disease in populations, for example:\n- mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)\n- Malaria or Dengue Fever in South East Asia\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "B7-IQ4-01",
+          "text": "investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+          "officialDocumentSha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7"
+        },
+        {
+          "id": "B7-IQ4-05",
+          "text": "interpret data relating to the incidence and prevalence of infectious disease in populations, for example:",
+          "examples": [
+            "mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)",
+            "Malaria or Dengue Fever in South East Asia"
+          ],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+          "officialDocumentSha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/biology/year12/module7/lesson18.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson18.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLF46LOS0IuCo",
+        "title": "Year 12 Biology: Module 7, Infectious Disease (2017 syllabus)"
+      },
+      "playlistOrder": 19,
+      "chapters": [
+        "0:00 Hook",
+        "0:23 Named disease",
+        "0:49 Incidence prevalence",
+        "1:14 Past infection rates",
+        "1:52 Dengue year",
+        "2:17 Serotypes",
+        "2:51 Mobility",
+        "3:11 Four conditions",
+        "3:47 Wolbachia evidence",
+        "4:27 Still limited",
+        "4:58 Memory",
+        "5:12 Attempt",
+        "5:48 Feedback one",
+        "6:15 Attempt two",
+        "6:58 Feedback two",
+        "7:25 Decision rule",
+        "7:40 Key notes"
+      ],
+      "durationInFrames": 14583,
+      "status": "published",
+      "priority": 2,
+      "inputChecks": {
+        "lessonId": "bio-m7-b13",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 158,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 14580,
+        "expectedFrames": 14583,
+        "endHoldShortfall": 3,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "HEm9ud4b7iI",
+      "url": "https://youtu.be/HEm9ud4b7iI",
+      "visibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "paidPromotion": false
+    },
+    {
+      "lessonId": "chem-m7-c10",
+      "file": "out/explainer/Explainer-chem-m7-c10/Explainer-chem-m7-c10-v1.mp4",
+      "sha256": "9ad4f1e948e7d7385ef4774f8339104964f17f74b45691e0198c8c689a7cb8f3",
+      "captionFile": "docs/production/claude-pm/lessons/m7c10/measured/captions-cumulative.srt",
+      "captionSha256": "6d95330e0e1f67c5fb756343edc282dd3d08bac1ddd6c319bb489ba9c778a56b",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7c10/measured/lesson.json",
+      "measuredLessonSha256": "358151337b6bd637579a9315e14bbddad982bad32f042ba72c76be291fe6e418",
+      "design": "docs/production/claude-pm/lessons/chem-m7-c10.md",
+      "title": "Esters: Naming, Esterification, Equilibrium Yield and Purification | Year 12 Chemistry",
+      "originalTitle": "Esters: Naming, Esterification, Equilibrium Yield and Purification | Year 12 Chemistry",
+      "description": "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module7/lesson15.sa\n\nBanana and pineapple flavourings often get their smell from esters, which can be made by joining a carboxylic acid and an alcohol. See how the two halves join and release water, how to name an ester and work back to the acid and alcohol that made it, why esters boil low and smell, why esterification stops at equilibrium, and how excess reactant raises the yield while a catalyst only makes it faster. Then follow how the ester is separated, washed, dried and distilled (and why the boiling point is only a rough check), and draw a two-step flow chart from ethanol to ethyl ethanoate. Two exam-style questions at the end.\n\n0:00 Hook\n0:27 Joining halves\n0:59 Naming esters\n1:35 Working backwards\n2:09 Ester properties\n2:48 Conditions reflux\n3:18 Equilibrium yield\n3:42 Pushing yield\n4:13 Separating identifying\n4:54 Flow chart\n5:31 Memory aid\n5:57 Attempt 1\n6:21 Feedback 1\n6:47 Attempt 2\n7:28 Feedback 2\n7:53 Handoff\n8:06 Key notes\n\nChemistry 2017: Year 12 Module 7, Organic Chemistry.\nSyllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 7):\n\"investigate the production, in a school laboratory, of simple esters\"\n\"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\"\nThis video explains the reaction and its conditions; the laboratory preparation is in its own video.\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Why are carboxylic acids acidic? Next: Prepare a simple ester in a school laboratory.\n\n#Year12Chemistry #OrganicChemistry #HSCScience",
+      "syllabusDotpoints": [
+        "\"investigate the production, in a school laboratory, of simple esters\"",
+        "\"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "C7-IQ5-03",
+          "text": "investigate the production, in a school laboratory, of simple esters",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        },
+        {
+          "id": "C7-IQ5-06",
+          "text": "draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/chemistry/year12/module7/lesson15.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson15.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLZn7qgJ_Eg2E",
+        "title": "Year 12 Chemistry: Module 7, Organic Chemistry (2017 syllabus)"
+      },
+      "playlistOrder": 16,
+      "chapters": [
+        "0:00 Hook",
+        "0:27 Joining halves",
+        "0:59 Naming esters",
+        "1:35 Working backwards",
+        "2:09 Ester properties",
+        "2:48 Conditions reflux",
+        "3:18 Equilibrium yield",
+        "3:42 Pushing yield",
+        "4:13 Separating identifying",
+        "4:54 Flow chart",
+        "5:31 Memory aid",
+        "5:57 Attempt 1",
+        "6:21 Feedback 1",
+        "6:47 Attempt 2",
+        "7:28 Feedback 2",
+        "7:53 Handoff",
+        "8:06 Key notes"
+      ],
+      "durationInFrames": 15339,
+      "status": "published",
+      "priority": 3,
+      "inputChecks": {
+        "lessonId": "chem-m7-c10",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 178,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 15338,
+        "expectedFrames": 15339,
+        "endHoldShortfall": 1,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "_y2Ow9e-0sI",
+      "url": "https://youtu.be/_y2Ow9e-0sI",
+      "visibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "paidPromotion": false
+    },
+    {
+      "lessonId": "bio-m7-p01",
+      "file": "out/explainer/Explainer-bio-m7-p01/Explainer-bio-m7-p01-v1.mp4",
+      "sha256": "7d26aa62d033f163101853202dfa34a98330ac033756054f3b9808b609c7a63b",
+      "captionFile": "docs/production/claude-pm/lessons/m7p01b/measured/captions-cumulative.srt",
+      "captionSha256": "eb5fb5b34ac6049e5f0b589c1ba31b9e192b06e46fb76b9a4f43f39de2af3910",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7p01b/measured/lesson.json",
+      "measuredLessonSha256": "0ea97ba82c37dd942b6ab347602c0a72917e2b26dc798ac0e9e2eee8bbce0287",
+      "design": "docs/production/claude-pm/lessons/bio-m7-p01.md",
+      "title": "Disease Transmission Simulation: Trace an Epidemic Back to Its Source | Year 12 Biology Module 7",
+      "originalTitle": "Disease Transmission Simulation: Trace an Epidemic Back to Its Source | Year 12 Biology Module 7",
+      "description": "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module7/lesson04.sa\n\nEight cups, one secretly \"infected\", three rounds of sharing, and every cup turns pink. Who started it? Design a safe classroom model of an epidemic: a hidden marker (phenolphthalein indicator and a dilute base), recorded contacts, a sample saved every round, negative and positive controls and repeat runs. Trace the source with contact tracing, plot an epidemic curve, and compare person-to-person spread with a single shared source. Model indirect contact with fluorescent powder on a door handle. Then judge what the simulation can and can't show about real disease spread. Includes a risk assessment and two exam-style questions with brief feedback.\n\n0:00 Hook\n0:25 The model\n0:52 The marker\n1:15 Method\n1:48 Controls repeats\n2:16 Test cups\n2:34 Trace source\n3:10 Epidemic curve\n3:47 Indirect contact\n4:11 Model limits\n4:47 Risk assessment\n5:16 Attempt 1\n5:59 Feedback 1\n6:29 Attempt 2\n6:56 Feedback 2\n7:25 Decision rule\n7:49 Key notes\n\nBiology 2017: Year 12 Module 7, Infectious Disease. Inquiry question: \"How are diseases transmitted?\"\nSyllabus dotpoint (NSW Biology Stage 6, 2017, Module 7):\n\"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117)\n- classifying different pathogens that cause disease in plants and animals (ACSBL117)\n- investigating the transmission of a disease during an epidemic\n- design and conduct a practical investigation relating to the microbial testing of water or food samples\n- investigate modes of transmission of infectious diseases, including direct contact, indirect contact and vector transmission\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisite: How does a pathogen move between hosts? Next: Test a water or food sample for microbes.\n\n#Year12Biology #InfectiousDisease #HSCScience",
+      "syllabusDotpoints": [
+        "\"describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117)\n- classifying different pathogens that cause disease in plants and animals (ACSBL117)\n- investigating the transmission of a disease during an epidemic\n- design and conduct a practical investigation relating to the microbial testing of water or food samples\n- investigate modes of transmission of infectious diseases, including direct contact, indirect contact and vector transmission\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "B7-IQ1-01",
+          "text": "describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117)",
+          "examples": [
+            "classifying different pathogens that cause disease in plants and animals (ACSBL117)",
+            "investigating the transmission of a disease during an epidemic",
+            "design and conduct a practical investigation relating to the microbial testing of water or food samples",
+            "investigate modes of transmission of infectious diseases, including direct contact, indirect contact and vector transmission"
+          ],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+          "officialDocumentSha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/biology/year12/module7/lesson04.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson04.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLF46LOS0IuCo",
+        "title": "Year 12 Biology: Module 7, Infectious Disease (2017 syllabus)"
+      },
+      "playlistOrder": 4,
+      "chapters": [
+        "0:00 Hook",
+        "0:25 The model",
+        "0:52 The marker",
+        "1:15 Method",
+        "1:48 Controls repeats",
+        "2:16 Test cups",
+        "2:34 Trace source",
+        "3:10 Epidemic curve",
+        "3:47 Indirect contact",
+        "4:11 Model limits",
+        "4:47 Risk assessment",
+        "5:16 Attempt 1",
+        "5:59 Feedback 1",
+        "6:29 Attempt 2",
+        "6:56 Feedback 2",
+        "7:25 Decision rule",
+        "7:49 Key notes"
+      ],
+      "durationInFrames": 14831,
+      "status": "published",
+      "priority": 4,
+      "inputChecks": {
+        "lessonId": "bio-m7-p01",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 173,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 14831,
+        "expectedFrames": 14831,
+        "endHoldShortfall": 0,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "PzrqjRdWUjY",
+      "url": "https://youtu.be/PzrqjRdWUjY",
+      "visibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "paidPromotion": false
+    },
+    {
+      "lessonId": "chem-m7-c11",
+      "file": "out/explainer/Explainer-chem-m7-c11/Explainer-chem-m7-c11-v1.mp4",
+      "sha256": "02fdc41dbe7104b4020b59b8481c6807d1d21ca16f1502f11234ce535b51c807",
+      "captionFile": "docs/production/claude-pm/lessons/m7c11/measured/captions-cumulative.srt",
+      "captionSha256": "3a315fde4de7ae13d036ae890d80860f792ace3be5bd8be1601e40a1a48c7dc0",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7c11/measured/lesson.json",
+      "measuredLessonSha256": "6640183370bd79c4038d2d76892f5c486bc889dbbcca7ff0b544b260a9b4ca8c",
+      "design": "docs/production/claude-pm/lessons/chem-m7-c11.md",
+      "title": "Amines and Amides: Naming, Boiling Points and Why Amines Are Bases | Year 12 Chemistry",
+      "originalTitle": "Amines and Amides: Naming, Boiling Points and Why Amines Are Bases | Year 12 Chemistry",
+      "description": "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module7/lesson16.sa\n\nAmines and amides both contain nitrogen, but only an amine turns red litmus blue. See how to classify amines as primary, secondary or tertiary, how to name amines and amides by IUPAC rules, why amines boil lower than alcohols while amides boil higher than carboxylic acids, why an amine's lone pair makes it a weak base, and why the C=O beside an amide's nitrogen leaves it close to neutral. Then compare an organic acid with an organic base, including the salt they form together. Two exam-style questions at the end.\n\n0:00 Hook\n0:26 Amine group\n1:00 Naming amines\n1:31 Amide group\n2:05 Amine forces\n2:33 Amine isomers\n3:08 Amide network\n3:44 Weak base\n4:13 Amine salts\n4:40 Amide not basic\n5:15 Acid vs base\n5:53 Memory aid\n6:12 Attempt 1\n6:41 Feedback 1\n7:13 Attempt 2\n7:43 Feedback 2\n8:12 Handoff\n8:25 Key notes\n\nChemistry 2017: Year 12 Module 7, Organic Chemistry.\nSyllabus dotpoints (NSW Chemistry Stage 6, 2017, Module 7):\n\"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)\n- alkanes\n- alkenes\n- alkynes\n- alcohols (primary, secondary and tertiary)\n- aldehydes and ketones\n- carboxylic acids\n- amines and amides\n- halogenated organic compounds\"\n\"investigate the structural formulae, properties and functional group including:\n- primary, secondary and tertiary alcohols\n- aldehydes and ketones (ACSCH127)\n- amines and amides\n- carboxylic acids\"\n\"explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present\"\n\"investigate the differences between an organic acid and organic base\"\nThis video covers amines and amides, and compares the organic base with the organic acid. Carboxylic acids have their own video.\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Why are carboxylic acids acidic? Next: How do soaps and detergents lift oil into water?\n\n#Year12Chemistry #OrganicChemistry #HSCScience",
+      "syllabusDotpoints": [
+        "\"investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)\n- alkanes\n- alkenes\n- alkynes\n- alcohols (primary, secondary and tertiary)\n- aldehydes and ketones\n- carboxylic acids\n- amines and amides\n- halogenated organic compounds\"",
+        "\"investigate the structural formulae, properties and functional group including:\n- primary, secondary and tertiary alcohols\n- aldehydes and ketones (ACSCH127)\n- amines and amides\n- carboxylic acids\"",
+        "\"explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present\"",
+        "\"investigate the differences between an organic acid and organic base\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "C7-IQ1-01",
+          "text": "investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)",
+          "examples": [
+            "alkanes",
+            "alkenes",
+            "alkynes",
+            "alcohols (primary, secondary and tertiary)",
+            "aldehydes and ketones",
+            "carboxylic acids",
+            "amines and amides",
+            "halogenated organic compounds"
+          ],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        },
+        {
+          "id": "C7-IQ5-01",
+          "text": "investigate the structural formulae, properties and functional group including:",
+          "examples": [
+            "primary, secondary and tertiary alcohols",
+            "aldehydes and ketones (ACSCH127)",
+            "amines and amides",
+            "carboxylic acids"
+          ],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        },
+        {
+          "id": "C7-IQ5-02",
+          "text": "explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        },
+        {
+          "id": "C7-IQ5-04",
+          "text": "investigate the differences between an organic acid and organic base",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/chemistry/year12/module7/lesson16.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson16.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLZn7qgJ_Eg2E",
+        "title": "Year 12 Chemistry: Module 7, Organic Chemistry (2017 syllabus)"
+      },
+      "playlistOrder": 18,
+      "chapters": [
+        "0:00 Hook",
+        "0:26 Amine group",
+        "1:00 Naming amines",
+        "1:31 Amide group",
+        "2:05 Amine forces",
+        "2:33 Amine isomers",
+        "3:08 Amide network",
+        "3:44 Weak base",
+        "4:13 Amine salts",
+        "4:40 Amide not basic",
+        "5:15 Acid vs base",
+        "5:53 Memory aid",
+        "6:12 Attempt 1",
+        "6:41 Feedback 1",
+        "7:13 Attempt 2",
+        "7:43 Feedback 2",
+        "8:12 Handoff",
+        "8:25 Key notes"
+      ],
+      "durationInFrames": 15934,
+      "status": "published",
+      "priority": 5,
+      "inputChecks": {
+        "lessonId": "chem-m7-c11",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 184,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 15933,
+        "expectedFrames": 15934,
+        "endHoldShortfall": 1,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "vxG4x229SeE",
+      "url": "https://youtu.be/vxG4x229SeE",
+      "visibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "paidPromotion": false
+    },
+    {
+      "lessonId": "bio-m7-g01",
+      "file": "out/explainer/Explainer-bio-m7-g01/Explainer-bio-m7-g01-v1.mp4",
+      "sha256": "cb8a2e9147935db8b677231d3354e10c074ed6f123b5dc3cdc1b2f5f7e17936d",
+      "captionFile": "docs/production/claude-pm/lessons/m7g01b/measured/captions-cumulative.srt",
+      "captionSha256": "00169395796a225fac1906c436431a1b99343aabc7c72b88ea1542a2a48ffb5e",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7g01b/measured/lesson.json",
+      "measuredLessonSha256": "52acf23de25a20c998606f3a9d69e5629c1292f052163fb0ee765c687a9194a0",
+      "design": "docs/production/claude-pm/lessons/bio-m7-g01.md",
+      "title": "Outbreak Data Practice: Denominators, Incidence, Prevalence, Control | Year 12 Biology Module 7",
+      "originalTitle": "Outbreak Data Practice: Denominators, Incidence, Prevalence, Control | Year 12 Biology Module 7",
+      "description": "Full lessons, notes and practice questions: https://hscscience.com.au/subjects/biology/year12/module7/lesson04.sa, https://hscscience.com.au/subjects/biology/year12/module7/lesson18.sa and https://hscscience.com.au/subjects/biology/year12/module7/lesson21.sa\n\nPractise three HSC-style outbreak data questions. Find the right denominator in a camp food-poisoning outbreak and use the epidemic curve to test a claim. Calculate malaria incidence and prevalence in a South East Asian province and explain how bed nets and same-day treatment change each one. Then read a cholera epidemic curve against two control measures and justify environmental management over quarantine. Pause and try each question, then work through it step by step. Questions are written for HSCScience in the HSC style; they are not official NESA questions. Data are illustrative.\n\n0:00 Hook\n0:25 Q1 question\n1:08 Q1 denominator\n1:35 Q1 claim\n2:17 Q1 mistake\n2:35 Q2 question\n3:17 Q2 calc\n3:56 Q2 explain\n4:31 Q2 mistake\n4:47 Q3 question\n5:33 Q3 graph\n6:01 Q3 justify\n6:35 Q3 mistake\n6:49 Decision board\n7:14 Key notes\n\nBiology 2017: Year 12 Module 7, Infectious Disease. Inquiry question: \"How can the spread of infectious diseases be controlled?\"\nSyllabus dotpoints (NSW Biology Stage 6, 2017, Module 7):\n\"investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease\"\n\"investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic\"\n\"interpret data relating to the incidence and prevalence of infectious disease in populations, for example:\n- mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)\n- Malaria or Dengue Fever in South East Asia\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017\n\nPrerequisites: Graphs and data questions (exam skills); What limits malaria or dengue control? Next: How have disease control ideas changed?\n\n#Year12Biology #InfectiousDisease #HSCScience",
+      "syllabusDotpoints": [
+        "\"investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease\"",
+        "\"investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic\"",
+        "\"interpret data relating to the incidence and prevalence of infectious disease in populations, for example:\n- mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)\n- Malaria or Dengue Fever in South East Asia\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "B7-IQ4-01",
+          "text": "investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+          "officialDocumentSha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7"
+        },
+        {
+          "id": "B7-IQ4-04",
+          "text": "investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+          "officialDocumentSha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7"
+        },
+        {
+          "id": "B7-IQ4-05",
+          "text": "interpret data relating to the incidence and prevalence of infectious disease in populations, for example:",
+          "examples": [
+            "mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)",
+            "Malaria or Dengue Fever in South East Asia"
+          ],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/biology-stage-6-syllabus-2017.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+          "officialDocumentSha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/biology/year12/module7/lesson04.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson04.sa.html",
+          "exists": true
+        },
+        {
+          "url": "https://hscscience.com.au/subjects/biology/year12/module7/lesson18.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson18.sa.html",
+          "exists": true
+        },
+        {
+          "url": "https://hscscience.com.au/subjects/biology/year12/module7/lesson21.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/biology/year12/module7/lesson21.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLF46LOS0IuCo",
+        "title": "Year 12 Biology: Module 7, Infectious Disease (2017 syllabus)"
+      },
+      "playlistOrder": 20,
+      "chapters": [
+        "0:00 Hook",
+        "0:25 Q1 question",
+        "1:08 Q1 denominator",
+        "1:35 Q1 claim",
+        "2:17 Q1 mistake",
+        "2:35 Q2 question",
+        "3:17 Q2 calc",
+        "3:56 Q2 explain",
+        "4:31 Q2 mistake",
+        "4:47 Q3 question",
+        "5:33 Q3 graph",
+        "6:01 Q3 justify",
+        "6:35 Q3 mistake",
+        "6:49 Decision board",
+        "7:14 Key notes"
+      ],
+      "durationInFrames": 13808,
+      "status": "published",
+      "priority": 6,
+      "inputChecks": {
+        "lessonId": "bio-m7-g01",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 161,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 13808,
+        "expectedFrames": 13808,
+        "endHoldShortfall": 0,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "SYgIWk0__bk",
+      "url": "https://youtu.be/SYgIWk0__bk",
+      "visibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "paidPromotion": false
+    },
+    {
+      "lessonId": "chem-m7-c12",
+      "file": "out/explainer/Explainer-chem-m7-c12/Explainer-chem-m7-c12-v1.mp4",
+      "sha256": "3c27507181bf49176194c3cacb67bb7552d8f8f125ba5291cf004a65ceafeb59",
+      "captionFile": "docs/production/claude-pm/lessons/m7c12/measured/captions-cumulative.srt",
+      "captionSha256": "ab2919ad4d6a9a809b1336e31053a8d7b6c3e7799ee237f9774e4999c113087a",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7c12/measured/lesson.json",
+      "measuredLessonSha256": "3f988cec98e7b3c424eb95b69dbea411aac20d883f9d890d19a3e84a364ce89c",
+      "design": "docs/production/claude-pm/lessons/chem-m7-c12.md",
+      "title": "Soaps and Detergents: How Micelles Lift Grease and Why Soap Fails in Hard Water | Year 12 Chemistry",
+      "originalTitle": "Soaps and Detergents: How Micelles Lift Grease and Why Soap Fails in Hard Water | Year 12 Chemistry",
+      "description": "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module7/lesson17.sa\n\nOil and water separate however hard you shake them, but a few drops of soap keep the oil spread through the water. See why oil and water don't mix, how a soap particle's hydrophobic tail and hydrophilic head work, how soap is made from fats by saponification, how micelles lift grease into water as an emulsion, why soap forms scum in hard water, and how anionic, cationic and non-ionic detergents differ. Two exam-style questions at the end.\n\n0:00 Hook\n0:23 Why separate\n0:46 Soap structure\n1:40 Saponification\n2:29 Surface micelles\n2:54 Cleaning action\n3:34 Hard water\n4:06 Detergents\n4:51 Soap vs detergent\n5:22 Memory aid\n5:38 Attempt 1\n6:10 Feedback 1\n6:40 Attempt 2\n7:16 Feedback 2\n7:42 Handoff\n7:56 Key notes\n\nChemistry 2017: Year 12 Module 7, Organic Chemistry.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 7):\n\"investigate the structure and action of soaps and detergents\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: How do amines and amides differ? Next: Compare soap and detergent action.\n\n#Year12Chemistry #OrganicChemistry #HSCScience",
+      "syllabusDotpoints": [
+        "\"investigate the structure and action of soaps and detergents\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "C7-IQ5-05",
+          "text": "investigate the structure and action of soaps and detergents",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/chemistry/year12/module7/lesson17.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson17.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLZn7qgJ_Eg2E",
+        "title": "Year 12 Chemistry: Module 7, Organic Chemistry (2017 syllabus)"
+      },
+      "playlistOrder": 19,
+      "chapters": [
+        "0:00 Hook",
+        "0:23 Why separate",
+        "0:46 Soap structure",
+        "1:40 Saponification",
+        "2:29 Surface micelles",
+        "2:54 Cleaning action",
+        "3:34 Hard water",
+        "4:06 Detergents",
+        "4:51 Soap vs detergent",
+        "5:22 Memory aid",
+        "5:38 Attempt 1",
+        "6:10 Feedback 1",
+        "6:40 Attempt 2",
+        "7:16 Feedback 2",
+        "7:42 Handoff",
+        "7:56 Key notes"
+      ],
+      "durationInFrames": 15056,
+      "status": "published",
+      "priority": 7,
+      "inputChecks": {
+        "lessonId": "chem-m7-c12",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 177,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 15056,
+        "expectedFrames": 15056,
+        "endHoldShortfall": 0,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "Cms4sZ-Sly0",
+      "url": "https://youtu.be/Cms4sZ-Sly0",
+      "visibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "paidPromotion": false
+    },
+    {
+      "lessonId": "chem-m7-c13",
+      "file": "out/explainer/Explainer-chem-m7-c13/Explainer-chem-m7-c13-v1.mp4",
+      "sha256": "b667379cc24eea45d1f8c3a0c136dc5be88563569027304725d2da7156a2b996",
+      "captionFile": "docs/production/claude-pm/lessons/m7c13/measured/captions-cumulative.srt",
+      "captionSha256": "4b6c7f103e1c4ed81659716ab3442009ba10aeb983efb6e517652b54c472655d",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7c13/measured/lesson.json",
+      "measuredLessonSha256": "b0534e4a8009cc9b2f7662b2e722ef5318a13d9d18061bf5be339cb9b245b1dc",
+      "design": "docs/production/claude-pm/lessons/chem-m7-c13.md",
+      "title": "Organic Synthesis Pathways: Plan Multi-Step Reactions with a Reaction Map | Year 12 Chemistry",
+      "originalTitle": "Organic Synthesis Pathways: Plan Multi-Step Reactions with a Reaction Map | Year 12 Chemistry",
+      "description": "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module7/lesson19.sa\n\nHow do you make a pear-scented ester when all you have is a gas and a haloalkane? Put every Module 7 reaction on one map, count carbons, work backwards from the target, choose the route that puts each group in the right place, and write the flow chart forwards with reagents and conditions on every arrow. See why reflux, not distillation, gives the acid, why a ketone is a dead end, and why no single step turns an alkane into an alcohol. Two exam-style questions at the end.\n\n0:00 Hook\n0:27 Reaction map\n1:05 Count carbons\n1:45 Work backwards\n2:22 Choose route\n3:03 Write forwards\n4:00 Check arrows\n4:55 Memory aid\n5:23 Attempt 1\n5:54 Feedback 1\n6:25 Attempt 2\n6:50 Feedback 2\n7:20 Handoff\n7:37 Key notes\n\nChemistry 2017: Year 12 Module 7, Organic Chemistry.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 7):\n\"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Compare soap and detergent action. Next: Organic synthesis pathway practice.\n\n#Year12Chemistry #OrganicChemistry #HSCScience",
+      "syllabusDotpoints": [
+        "\"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "C7-IQ5-06",
+          "text": "draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step",
+          "examples": [],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/chemistry/year12/module7/lesson19.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson19.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLZn7qgJ_Eg2E",
+        "title": "Year 12 Chemistry: Module 7, Organic Chemistry (2017 syllabus)"
+      },
+      "playlistOrder": 21,
+      "chapters": [
+        "0:00 Hook",
+        "0:27 Reaction map",
+        "1:05 Count carbons",
+        "1:45 Work backwards",
+        "2:22 Choose route",
+        "3:03 Write forwards",
+        "4:00 Check arrows",
+        "4:55 Memory aid",
+        "5:23 Attempt 1",
+        "5:54 Feedback 1",
+        "6:25 Attempt 2",
+        "6:50 Feedback 2",
+        "7:20 Handoff",
+        "7:37 Key notes"
+      ],
+      "durationInFrames": 14485,
+      "status": "published",
+      "priority": 8,
+      "inputChecks": {
+        "lessonId": "chem-m7-c13",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 169,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 14481,
+        "expectedFrames": 14485,
+        "endHoldShortfall": 4,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "aGWfHHCxzrU",
+      "url": "https://youtu.be/aGWfHHCxzrU",
+      "visibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "paidPromotion": false
+    },
+    {
+      "lessonId": "chem-m7-c14",
+      "file": "out/explainer/Explainer-chem-m7-c14/Explainer-chem-m7-c14-v1.mp4",
+      "sha256": "a3bf3334d1e462eac759a3d2808677e3cda0ce08390fc173cf34cb112fb707d0",
+      "captionFile": "docs/production/claude-pm/lessons/m7c14/measured/captions-cumulative.srt",
+      "captionSha256": "3c11ea91747a37855a8d5d504f3cb24657a8ab4dc9b70b3579c7342db0679141",
+      "measuredLesson": "docs/production/claude-pm/lessons/m7c14/measured/lesson.json",
+      "measuredLessonSha256": "a5dee41955010e388251526c835b3f7e273281e3341dcf892272adfe4c996aae",
+      "design": "docs/production/claude-pm/lessons/chem-m7-c14.md",
+      "title": "Addition Polymers: How Alkenes Become PE, PVC, Polystyrene and PTFE | Year 12 Chemistry",
+      "originalTitle": "Addition Polymers: How Alkenes Become PE, PVC, Polystyrene and PTFE | Year 12 Chemistry",
+      "description": "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/chemistry/year12/module7/lesson21.sa\n\nEthene is a gas, yet thousands of ethene molecules joined together make a solid plastic. See how addition polymerisation opens the double bond, how to draw a repeat unit and get back to the monomer, why polyethylene softens and can be remoulded, why branched LDPE is softer than straight-chain HDPE, and how the side groups in PVC, polystyrene and PTFE give rigid pipes, insulating foam and non-stick pans. Two exam-style questions at the end.\n\n0:00 Hook\n0:26 Open double bond\n1:07 Draw repeat unit\n1:43 Monomer from unit\n2:12 Solid thermoplastic\n2:55 Ldpe hdpe\n3:44 Pvc\n4:16 Polystyrene\n4:49 Ptfe\n5:33 Memory aid\n6:00 Attempt 1\n6:26 Feedback 1\n6:51 Attempt 2\n7:22 Feedback 2\n7:50 Handoff\n7:58 Key notes\n\nChemistry 2017: Year 12 Module 7, Organic Chemistry.\nSyllabus dotpoint (NSW Chemistry Stage 6, 2017, Module 7):\n\"model and compare the structure, properties and uses of addition polymers of ethylene and related monomers, for example:\n- polyethylene (PE)\n- polyvinyl chloride (PVC)\n- polystyrene (PS)\n- polytetrafluoroethylene (PTFE) (ACSCH136)\"\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\n\nPrerequisite: Organic synthesis pathway practice. Next: How does condensation build a polymer?\n\n#Year12Chemistry #OrganicChemistry #HSCScience",
+      "syllabusDotpoints": [
+        "\"model and compare the structure, properties and uses of addition polymers of ethylene and related monomers, for example:\n- polyethylene (PE)\n- polyvinyl chloride (PVC)\n- polystyrene (PS)\n- polytetrafluoroethylene (PTFE) (ACSCH136)\""
+      ],
+      "syllabusChecks": [
+        {
+          "id": "C7-IQ6-01",
+          "text": "model and compare the structure, properties and uses of addition polymers of ethylene and related monomers, for example:",
+          "examples": [
+            "polyethylene (PE)",
+            "polyvinyl chloride (PVC)",
+            "polystyrene (PS)",
+            "polytetrafluoroethylene (PTFE) (ACSCH136)"
+          ],
+          "textPresent": true,
+          "examplesPresent": true,
+          "officialSourceMatch": true,
+          "officialSourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+          "officialParagraphExtract": "out/research/continuity-2026-10-08/chemistry-2017-paragraphs.json",
+          "officialDocumentSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42"
+        }
+      ],
+      "siteLinks": [
+        {
+          "url": "https://hscscience.com.au/subjects/chemistry/year12/module7/lesson21.sa",
+          "localSiteFile": "C:/Users/kygs/hscscience/subjects/chemistry/year12/module7/lesson21.sa.html",
+          "exists": true
+        }
+      ],
+      "playlist": {
+        "id": "PLZn7qgJ_Eg2E",
+        "title": "Year 12 Chemistry: Module 7, Organic Chemistry (2017 syllabus)"
+      },
+      "playlistOrder": 23,
+      "chapters": [
+        "0:00 Hook",
+        "0:26 Open double bond",
+        "1:07 Draw repeat unit",
+        "1:43 Monomer from unit",
+        "2:12 Solid thermoplastic",
+        "2:55 Ldpe hdpe",
+        "3:44 Pvc",
+        "4:16 Polystyrene",
+        "4:49 Ptfe",
+        "5:33 Memory aid",
+        "6:00 Attempt 1",
+        "6:26 Feedback 1",
+        "6:51 Attempt 2",
+        "7:22 Feedback 2",
+        "7:50 Handoff",
+        "7:58 Key notes"
+      ],
+      "durationInFrames": 15127,
+      "status": "published",
+      "priority": 9,
+      "inputChecks": {
+        "lessonId": "chem-m7-c14",
+        "captionsMatchCumulativeExporter": true,
+        "cueCount": 175,
+        "responseHoldCheck": "passed by explainerCaptionCues",
+        "width": 1920,
+        "height": 1080,
+        "hasAudio": true,
+        "frames": 15125,
+        "expectedFrames": 15127,
+        "endHoldShortfall": 2,
+        "narrationEmDashCount": 0,
+        "captionEmDashCount": 0
+      },
+      "videoId": "Mv1CG4fzbaM",
+      "url": "https://youtu.be/Mv1CG4fzbaM",
+      "visibility": "Public",
+      "madeForKids": false,
+      "category": "Education",
+      "language": "English (Australia)",
+      "alteredContentDisclosure": true,
+      "captionStatus": "Timed cumulative English (Australia) SRT imported and Done confirmed",
+      "thumbnail": "Auto-generated frame 2 visually inspected",
+      "checks": "Copyright and Community Guidelines no issues; HD complete",
+      "endScreen": "Skipped for final key notes",
+      "readback": "Published dialog confirmed; saved title, description, Public, audience, AI disclosure, no paid promotion and language checked. Education checked during upload. Module 7 playlist persisted after reload.",
+      "paidPromotion": false
+    }
+  ],
+  "finalReadback": "docs/production/claude-pm/youtube/brief28aa-final-readback.json"
+}

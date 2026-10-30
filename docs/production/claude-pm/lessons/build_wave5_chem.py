@@ -17566,6 +17566,2723 @@ M7C14_ROWS = {
     ]
 }
 # END generated rows: m7c09, m7c10, m7c11, m7c12, m7c13, m7c14
+# BEGIN generated rows: m7c15, m7g04, m7g03, m7p04c, m7p05c, m7p06c, skills06, skills08, m8c01, m8c02
+M7C15_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Condensation polymers: a link and a water, again and again\".",
+        "Hook (water at every link): Last time, every atom of every monomer ended up in the chain.",
+        "water / rope",
+        "On the spoken cues: A small grey chip recalls c14: \"addition: nothing lost\" with a two-unit [–CH₂–CHCl–] sketch. `m7-polymer-objects-v1.png` appears medium at the right; an overlay ring dims the bag, pipe and cup. On \"drink bottle\" the bottle is ringed (tag \"PET\"). On \"water\" two small coded monomer blocks meet beside the plate, and a water-coloured H₂O drops out from the join (tag \"H₂O at every link\"); the c14 chip dims. On \"rope\" the",
+        "explain",
+        "heading writes on: \"Condensation polymers: a link and a water, again and again\". A small grey chip recalls c14: \"addition: nothing lost\" with a two-unit [–CH₂–CHCl–] sketch. `m7-polymer-objects-v1.png` appears medium at the right; an overlay ring dims the bag, pipe and cup. On \"drink bottle\" the bottle is ringed (tag \"PET\"). On \"water\" two small coded monomer blocks meet beside the plate, and a water-coloured H₂O drops out from the join (tag \"H₂O at every link\"); the c14 chip dims. On \"rope\" the rope is ringed (tag \"rope: often nylon\"). Dimming order: the \"PET\" tag dims on \"rope\"; the H₂O tag dims on \"what do those links do\". Bright at the end: the heading, the plate with its two rings, the \"rope\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "two-ends": [
+        "new",
+        "the board clears; the plate leaves.",
+        "Why a monomer needs two reactive ends: Remember esterification.",
+        "water / both ends / both directions",
+        "On the spoken cues: Task chip \"Two ends\". Ethanoic acid and ethanol, in c10's style, sit side by side (grey chip \"c10: acid + alcohol → ester + water\"). On \"water\" c10's condensation join runs once: OH and H leave as H₂O and ethyl ethanoate forms, its ester group ringed red. On \"stops there\" grey \"stop\" end tags appear on both ends of ethyl ethanoate (tag \"no spare OH or COOH for chain growth\"); it dims. On \"both ends\" a generic diol,",
+        "explain",
+        "the board clears; the plate leaves. Task chip \"Two ends\". Ethanoic acid and ethanol, in c10's style, sit side by side (grey chip \"c10: acid + alcohol → ester + water\"). On \"water\" c10's condensation join runs once: OH and H leave as H₂O and ethyl ethanoate forms, its ester group ringed red. On \"stops there\" grey \"stop\" end tags appear on both ends of ethyl ethanoate (tag \"no spare OH or COOH for chain growth\"); it dims. On \"both ends\" a generic diol, HO–□–OH, and a generic diacid, HOOC–□–COOH, draw with amber end tags on all four groups (tags \"diol: two O–H\" and \"dicarboxylic acid: two –COOH\"; a small grey tag \"bifunctional: two reactive groups\" writes and dims). On \"one link forms\" the two-end join runs once in the middle: the H₂O drops into the water tally and the ester link rings red; the two free ends keep their amber tags (tag \"still reactive at both ends\"). On \"both directions\" the two-end join runs outwards, a fresh monomer sliding in at each end, accelerating; the counters tick \"links: 1 ... 1000s\" and \"H₂O released: 1 ... 1000s\". Dimming order: the c10 chip dims on \"both ends\"; the diol and diacid tags dim on \"both directions\". Bright at the end: the growing chain and the two counters. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "build-pet": [
+        "adjust",
+        "the board clears.",
+        "Building PET, a polyester: That's how PET is made.",
+        "opposite / water / polyester",
+        "On the spoken cues: Task chip \"Build PET\". Ethane-1,2-diol, HO–CH₂–CH₂–OH, draws at the left, and benzene-1,4-dicarboxylic acid at the right as a hexagon with a –COOH on each side; amber end tags on all four groups. Name tags write under each: \"ethane-1,2-diol\" and \"benzene-1,4-dicarboxylic acid (terephthalic acid)\". On \"opposite\" the two –COOH groups pulse (tag \"1,4: opposite sides\"). On \"loses O H\" the acid's facing OH glows; on",
+        "explain",
+        "the board clears. Task chip \"Build PET\". Ethane-1,2-diol, HO–CH₂–CH₂–OH, draws at the left, and benzene-1,4-dicarboxylic acid at the right as a hexagon with a –COOH on each side; amber end tags on all four groups. Name tags write under each: \"ethane-1,2-diol\" and \"benzene-1,4-dicarboxylic acid (terephthalic acid)\". On \"opposite\" the two –COOH groups pulse (tag \"1,4: opposite sides\"). On \"loses O H\" the acid's facing OH glows; on \"loses H\" the diol's facing O–H hydrogen glows. On \"water\" the two-end join runs: the glowing pieces leave as H₂O (water colour) into the tally, a new C–O bond draws, and the ester link rings red (chip \"ester link: –COO–\"). On \"condensation polymerisation\" a grey definition chip writes: \"condensation polymerisation: a small molecule (usually water) lost at every link\"; the name tags dim. On \"polyester\" the join runs twice more outwards and the camera pulls back on a chain with ester rings red all along it (tag \"polyester: ester links along the chain\"); the new `m7-pet-bottle-v1.png` appears small at the right. Bright at the end: the chain, the definition chip and the \"polyester\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "draw-repeat-unit": [
+        "new",
+        "the board clears; the plate leaves.",
+        "Drawing the repeat unit: To draw the repeat unit, take one diol and one acid, joined, with the water gone from each end.",
+        "gone / brackets / ends / two",
+        "On the spoken cues: Task chip \"Draw it\". A two-unit section of the PET chain draws in full structural form, –O–CH₂–CH₂–O–CO–C₆H₄–CO–O–CH₂–CH₂–O–CO–C₆H₄–CO–, with continuation bonds at both ends (grey tag \"draw two units first\", as c14). On \"gone\" one diol plus one acid unit lights and the two water-coloured ghosts at its ends fade out (tag \"one of each, minus the water\"). On \"Start at\" a pale-blue tracer runs along the unit, left to",
+        "explain",
+        "the board clears; the plate leaves. Task chip \"Draw it\". A two-unit section of the PET chain draws in full structural form, –O–CH₂–CH₂–O–CO–C₆H₄–CO–O–CH₂–CH₂–O–CO–C₆H₄–CO–, with continuation bonds at both ends (grey tag \"draw two units first\", as c14). On \"gone\" one diol plus one acid unit lights and the two water-coloured ghosts at its ends fade out (tag \"one of each, minus the water\"). On \"Start at\" a pale-blue tracer runs along the unit, left to right, each atom group lighting on its spoken word. On \"brackets\" the bracket stamp (condensation version) runs: brackets drop in, the continuation bonds poke through from the O on the left and the C=O carbon on the right, and n writes outside; the second unit fades. The condensed form writes under it: \"[–O–CH₂CH₂–O–CO–C₆H₄–CO–]ₙ\". On \"ends\" the end check runs: a ghost \"–O–\" from the next unit slides up to the right-hand bond and clicks (tag \"ends fit: C=O carbon to O\"); that neighbouring O stays visible, dim, until \"two\". On \"two\" the ester link inside the unit rings red with \"1\", and the second link, which crosses the right-hand bracket into the dim neighbouring O, rings red with \"2\" (tag \"two ester links per repeat unit\"); the neighbour then dims again. A small grey tag \"about two H₂O per repeat unit (end groups ignored)\" writes and dims. Bright at the end: the repeat unit, its condensed form and the \"two ester links\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "nylon": [
+        "adjust",
+        "the board clears.",
+        "Nylon 6,6, a polyamide: Now swap the diol for a diamine, a molecule with an N H two group at each end.",
+        "amide / nylon / O",
+        "On the spoken cues: Task chip \"Nylon\". Hexane-1,6-diamine, H₂N–(CH₂)₆–NH₂, draws with indigo N and amber end tags (tag \"diamine: NH₂ at each end\"); hexanedioic acid, HOOC–(CH₂)₄–COOH, draws beside it (name tags under each). On \"loses an H\" one H on the facing N glows; on \"loses O H\" the acid's facing OH glows; the two-end join runs and the H₂O drops into the tally. On \"amide\" the new link rings red at the C=O and indigo at the N (grey",
+        "explain",
+        "the board clears. Task chip \"Nylon\". Hexane-1,6-diamine, H₂N–(CH₂)₆–NH₂, draws with indigo N and amber end tags (tag \"diamine: NH₂ at each end\"); hexanedioic acid, HOOC–(CH₂)₄–COOH, draws beside it (name tags under each). On \"loses an H\" one H on the facing N glows; on \"loses O H\" the acid's facing OH glows; the two-end join runs and the H₂O drops into the tally. On \"amide\" the new link rings red at the C=O and indigo at the N (grey chip \"c11: amide link –CO–NH–\"). On \"nylon\" the join runs outwards a few times and the new `m7-nylon-rope-v1.png` appears small at the right; a carbon counter pops \"1 ... 6\" along the diamine and \"1 ... 6\" along the acid, starting at a C=O carbon (tag \"6,6: six carbons in each monomer\"). On \"Its repeat unit\" the bracket stamp runs on one diamine plus one acid unit, and the tracer lights each group on its spoken word; on \"O\" the condensed form completes: \"[–NH–(CH₂)₆–NH–CO–(CH₂)₄–CO–]ₙ\" (tag \"polyamide: amide links\"). Dimming order: the diamine tag dims on \"amide\"; the c11 chip dims on \"nylon\"; the \"6,6\" tag dims on \"Its repeat unit\". Bright at the end: the repeat unit, its condensed form and the \"polyamide\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "monomers-back": [
+        "new",
+        "the board clears; the plate leaves.",
+        "Going backwards: add the water back: Going backwards, you add the water back.",
+        "add the water back / polyester / six",
+        "On the spoken cues: Task chip \"Backwards\". On \"add the water back\" a water-coloured H₂O hovers over a generic ester link (tag \"each link lost one water: put it back\"). On \"cut it\" c10's cut line drops through the C(=O)–O bond; on \"Add O H\" the water insert runs: the H₂O splits, OH docks on the C=O side and H on the O side (tags \"OH → C=O side\" and \"H → O or N side\"). On \"polyester\" the generic link clears and a new repeat unit draws:",
+        "explain",
+        "the board clears; the plate leaves. Task chip \"Backwards\". On \"add the water back\" a water-coloured H₂O hovers over a generic ester link (tag \"each link lost one water: put it back\"). On \"cut it\" c10's cut line drops through the C(=O)–O bond; on \"Add O H\" the water insert runs: the H₂O splits, OH docks on the C=O side and H on the O side (tags \"OH → C=O side\" and \"H → O or N side\"). On \"polyester\" the generic link clears and a new repeat unit draws: [–O–CH₂CH₂–O–CO–(CH₂)₄–CO–]ₙ. The water insert runs at both links: the fragments drift apart as HO–CH₂CH₂–OH (\"ethane-1,2-diol\", tag) and HOOC–(CH₂)₄–COOH. On \"count the acid's carbons\" the carbon counter pops along the acid, the two C=O carbons in red rings: \"1 (C=O), 2, 3, 4, 5, 6 (C=O)\"; a ghost count of only the CH₂ groups, \"4: butanedioic?\", appears grey and is crossed. On \"six\" the name writes \"hexanedioic acid\" (tag \"count the C=O carbons\"). Dimming order: the \"OH → C=O side\" and \"H → O or N side\" tags dim on \"polyester\"; the diol tag dims on \"count\". Bright at the end: the two monomers and the \"count the C=O carbons\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "compare": [
+        "new",
+        "the board clears.",
+        "Addition against condensation: So how do the two families compare?",
+        "nothing / links / weak point",
+        "On the spoken cues: Task chip \"Compare\". A two-column comparison board (\"addition\" left, with a small grey PVC repeat unit from c14; \"condensation\" right, with the PET repeat unit) builds one row at a time, each row lighting and the previous dimming: \"monomer: C=C | a reactive group at each end\"; on \"nothing\" \"by-product: none | a small molecule at every link (water here)\" (a grey crossed chip \"addition gives water\" writes and dims);",
+        "explain",
+        "the board clears. Task chip \"Compare\". A two-column comparison board (\"addition\" left, with a small grey PVC repeat unit from c14; \"condensation\" right, with the PET repeat unit) builds one row at a time, each row lighting and the previous dimming: \"monomer: C=C | a reactive group at each end\"; on \"nothing\" \"by-product: none | a small molecule at every link (water here)\" (a grey crossed chip \"addition gives water\" writes and dims); \"repeat unit formula: = monomer | one of each monomer − 2 H₂O (PET, nylon)\" (small grey tally \"C₂H₃Cl = C₂H₃Cl | C₂H₆O₂ + C₈H₆O₄ − 2 H₂O = C₁₀H₈O₄\" writes and dims); on \"links\" \"backbone: all C–C | ester or amide links\" (the PET ester links ring red). On \"hydrolysis\" the water insert runs once on one PET link, slowly (tag \"hydrolysis: water splits the link; usually slow without acid, base or an enzyme\"). On \"weak point\" the PVC backbone pulses grey (tag \"C–C backbone: no link to split\"). Bright at the end: the backbone row, the hydrolysis tag and the \"no link to split\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "nylon-properties": [
+        "adjust",
+        "the board clears.",
+        "Nylon: hydrogen bonds between chains: Now the properties.",
+        "hydrogen bond / hundred and thirty / break",
+        "On the spoken cues: Task chip \"Why strong?\". The chain view box from c14 shows straight pale-blue strands with dotted pale-blue contact ticks (grey chip \"c14: dispersion only\"). On \"N H and a C double bond O\" the strands turn into nylon strands: indigo N–H ticks and red C=O ticks appear at the amide sites along each strand. On \"hydrogen bond\" violet dotted hydrogen bonds draw between facing N–H and C=O sites on neighbouring strands, a",
+        "explain",
+        "the board clears. Task chip \"Why strong?\". The chain view box from c14 shows straight pale-blue strands with dotted pale-blue contact ticks (grey chip \"c14: dispersion only\"). On \"N H and a C double bond O\" the strands turn into nylon strands: indigo N–H ticks and red C=O ticks appear at the amide sites along each strand. On \"hydrogen bond\" violet dotted hydrogen bonds draw between facing N–H and C=O sites on neighbouring strands, a ladder of them along each pair (grey chip \"c05: H on N bonds to a lone pair on O\"; tag \"N–H···O=C between chains\"). On \"hundred and thirty\" a small melting strip writes: \"nylon 6,6: about 265 °C | HDPE: about 130 °C\", and `m7-hdpe-crate-v1.png` appears small at the left beside \"HDPE\" while `m7-nylon-rope-v1.png` sits small at the right; the c14 and c05 chips dim. On \"remoulded\" c14's warm slide runs: an amber glow, the violet dashes stretch and break, the strands slide, each strand's own line unbroken (tag \"chains slide; hydrogen bonds re-form on cooling\"). On \"break\" the amide sites on one strand pulse and stay joined (tag \"amide links in the chain stay intact\"). Dimming order: the melting strip and the crate dim on \"remoulded\". Bright at the end: the chain box, the rope plate and the \"amide links ... intact\" tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "pet-properties": [
+        "adjust",
+        "the board clears.",
+        "PET: stiff rings and polar links: PET's repeat unit has no O H or N H to donate hydrogen bonds, so these chains don't hydrogen bond to each other.",
+        "bend / bottle / polyester",
+        "On the spoken cues: The chain box returns with PET strands: flat hexagon segments along each strand (grey tag \"no N–H: no hydrogen bonds between chains\"). On \"bend\" the stiff-ring chains run: the CH₂ segments flex a little while the ring segments stay straight; a strand that tries to coil stays extended (tag \"stiff rings: chains hardly bend\"). On \"polar ester links\" teal dotted dipole–dipole dashes draw between ester sites on",
+        "explain",
+        "the board clears. The chain box returns with PET strands: flat hexagon segments along each strand (grey tag \"no N–H: no hydrogen bonds between chains\"). On \"bend\" the stiff-ring chains run: the CH₂ segments flex a little while the ring segments stay straight; a strand that tries to coil stays extended (tag \"stiff rings: chains hardly bend\"). On \"polar ester links\" teal dotted dipole–dipole dashes draw between ester sites on neighbouring strands (grey chip \"c08b: polar C=O, dipole–dipole\"); a grey tag \"melts about 260 °C\" writes and dims. On \"bottle\" the new `m7-pet-bottle-v1.png` appears small at the right (tag \"bottles: tough, clear\"). On \"polyester\" the new `m7-polyester-fabric-v1.png` appears small beside it (tag \"fibres: polyester fabric\"). Dimming order: the \"no N–H\" tag dims on \"bend\"; the c08b chip dims on \"bottle\". Bright at the end: the PET chain box and the two plates with the fibres tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: So, addition: nothing lost.",
+        "small molecule lost / add the water back / chains",
+        "On the spoken cues: Handwritten line: \"Addition: nothing lost. Condensation: a small molecule lost.\" On \"small molecule lost\" the PET repeat unit returns small with two water-coloured H₂O ghosts leaving its ends. On \"add the water back\" the water insert runs once in reverse on the same unit (tag \"monomers: add the water back\"). On \"chains\" the memory line above dims and two small chain-view thumbnails sit side by side: nylon strands",
+        "explain",
+        "the board clears. Handwritten line: \"Addition: nothing lost. Condensation: a small molecule lost.\" On \"small molecule lost\" the PET repeat unit returns small with two water-coloured H₂O ghosts leaving its ends. On \"add the water back\" the water insert runs once in reverse on the same unit (tag \"monomers: add the water back\"). On \"chains\" the memory line above dims and two small chain-view thumbnails sit side by side: nylon strands with violet hydrogen bonds (\"nylon: hydrogen bonds\"), PET strands with stiff rings (\"PET: stiff rings\"). Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "ScribbleCircle"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Butane one four diol and butanedioic",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed, tag \"HSC-style question, written for HSCScience\": \"Butane-1,4-diol, HO(CH₂)₄OH, reacts with butanedioic acid, HOOC(CH₂)₂COOH, to form a condensation polymer. (a) Draw the repeat unit of this polymer. (b) Name the type of link formed and the other product of the reaction.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no comparison board, no memory aid, no tally.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "oxygen / ester / trap",
+        "On the spoken cues: On \"oxygen\" \"Butane-1,4-diol, HO(CH₂)₄OH\" and \"butanedioic acid, HOOC(CH₂)₂COOH\" are underlined; the two-end join runs once and the answer draws: [–O–(CH₂)₄–O–CO–(CH₂)₂–CO–]ₙ with bonds through the brackets and n (the answer, bright). On \"ester\" \"type of link\" and \"other product\" are underlined; the two ester links ring red (answer chip \"ester links; water\"). On \"trap\" a chip \"[–O–(CH₂)₄–O–CO–(CH₂)₂–CO–OH]ₙ\" fades",
+        "explain",
+        "the card stays, shrunk to the top. On \"oxygen\" \"Butane-1,4-diol, HO(CH₂)₄OH\" and \"butanedioic acid, HOOC(CH₂)₂COOH\" are underlined; the two-end join runs once and the answer draws: [–O–(CH₂)₄–O–CO–(CH₂)₂–CO–]ₙ with bonds through the brackets and n (the answer, bright). On \"ester\" \"type of link\" and \"other product\" are underlined; the two ester links ring red (answer chip \"ester links; water\"). On \"trap\" a chip \"[–O–(CH₂)₄–O–CO–(CH₂)₂–CO–OH]ₙ\" fades in and is crossed (caption \"no OH inside the brackets: that water has gone\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed, tag \"HSC-style question, written for HSCScience\": \"A polyamide has the repeat unit [–NH–(CH₂)₆–NH–CO–(CH₂)₈–CO–]ₙ.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A polyamide has the repeat unit",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed, tag \"HSC-style question, written for HSCScience\": \"A polyamide has the repeat unit [–NH–(CH₂)₆–NH–CO–(CH₂)₈–CO–]ₙ. (a) Identify the two monomers used to make this polymer. (b) This polyamide melts at a much higher temperature than high-density polyethylene (HDPE). Explain this difference in terms of the forces between the polymer chains.\" No plates, no chain views. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "amide / ten / dispersion / trap",
+        "On the spoken cues: On \"amide\" \"repeat unit\" and \"Identify the two monomers\" are underlined; the water insert runs at both amide links, giving \"H₂N(CH₂)₆NH₂, hexane-1,6-diamine\" and \"HOOC(CH₂)₈COOH\" (answers, bright). On \"ten\" the carbon counter pops \"1 (C=O) ... 10 (C=O)\" and \"decanedioic acid\" writes. On \"dispersion\" \"much higher temperature\" and \"forces between the polymer chains\" are underlined; two small chain thumbnails show",
+        "explain",
+        "the card stays, shrunk to the top. On \"amide\" \"repeat unit\" and \"Identify the two monomers\" are underlined; the water insert runs at both amide links, giving \"H₂N(CH₂)₆NH₂, hexane-1,6-diamine\" and \"HOOC(CH₂)₈COOH\" (answers, bright). On \"ten\" the carbon counter pops \"1 (C=O) ... 10 (C=O)\" and \"decanedioic acid\" writes. On \"dispersion\" \"much higher temperature\" and \"forces between the polymer chains\" are underlined; two small chain thumbnails show violet N–H···O=C bonds on the polyamide strands against pale-blue dispersion ticks only on HDPE strands, with `m7-hdpe-crate-v1.png` small under the HDPE thumbnail (answer chip \"hydrogen bonds + dispersion | dispersion only\"). On \"trap\" a chip \"octanedioic acid\" fades in and is crossed (caption \"count both C=O carbons: 8 + 2 = 10\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "the board clears.",
+        "Handoff: Next: practice with both families, drawing repeat units, finding monomers, and telling addition from condensation.",
+        "Next",
+        "On the spoken cues: The memory aid line returns small at the top. `m7-polymer-objects-v1.png` returns small at the centre with all five objects unringed. On \"Next\" a chip \"Next: polymer practice\" appears.",
+        "explain",
+        "the board clears. The memory aid line returns small at the top. `m7-polymer-objects-v1.png` returns small at the centre with all five objects unringed. On \"Next\" a chip \"Next: polymer practice\" appears. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7G04_ROWS = {
+    "hook": [
+        "adjust",
+        "heading \"Polymer questions: draw, recover, classify, explain\" writes on.",
+        "Hook: Polymer questions usually come in four shapes.",
+        "property / backbone",
+        "On the spoken cues: Four small stimulus thumbnails fan out on the right, one per shape, without a spoken list: a coded monomer with a teal C=C, a short coded condensation section with red ester rings, two small bracketed repeat units side by side, and two chain-view thumbnails. On \"property\"",
+        "explain",
+        "heading \"Polymer questions: draw, recover, classify, explain\" writes on. Four small stimulus thumbnails fan out on the right, one per shape, without a spoken list: a coded monomer with a teal C=C, a short coded condensation section with red ester rings, two small bracketed repeat units side by side, and two chain-view thumbnails. On \"property\" `m7-polymer-objects-v1.png` appears small below them. On \"backbone\" a generic bracketed repeat unit draws at the centre and the backbone tracer runs through the brackets, lighting only the atoms on its line (tag \"backbone: through the brackets\"); the backbone strip builds at the left, one row per beat, then all three rows dim. On \"four HSC-style questions\" the thumbnails become four numbered question cards with one shared tag, \"HSC-style questions, written for HSCScience\". Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "q1-question": [
+        "adjust",
+        "fresh board.",
+        "HSC-style question (question 1: draw from a monomer) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. But one ene forms an addition",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: draw from a monomer)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"But-1-ene, CH₂=CH–CH₂–CH₃, forms an addition polymer that is used to make hot-water pipes.\" Beside it but-1-ene draws in full structural form, plain ink with a teal C=C. `m7-pvc-pipe-v1.png` sits small at the card's upper right with a grey tag \"a polymer pipe\". Demand: \"Draw a section of this polymer showing three repeat units. Circle one repeat unit.\" One answer box. Nothing answer-bearing (no numbering, no tracer). **Countdown ring 10 seconds** after \"Pause here to answer.\"; the backbone strip dims; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "DrawPath",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-backbone": [
+        "new",
+        "the card shrinks to a strip.",
+        "Which carbons make the chain: Start with the double bond.",
+        "double bond / ethyl",
+        "On the spoken cues: Type badge \"Draw from a monomer\". On \"double bond\" \"But-1-ene, CH₂=CH–CH₂–CH₃\" and \"addition polymer\" underline amber; but-1-ene enlarges at the centre and its C=C pulses teal; a locant counter pops \"1, 2, 3, 4\" along the carbons. The two C=C carbons glow ink (tag \"these two join the backbone\");",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Draw from a monomer\". On \"double bond\" \"But-1-ene, CH₂=CH–CH₂–CH₃\" and \"addition polymer\" underline amber; but-1-ene enlarges at the centre and its C=C pulses teal; a locant counter pops \"1, 2, 3, 4\" along the carbons. The two C=C carbons glow ink (tag \"these two join the backbone\"); carbons 3 and 4 turn grey. The backbone strip's second row lights: \"All C–C: addition. Open or close the C=C.\" On \"carbon one\" the C=C opens with c14's bond opener and a continuation bond grows from each glowing carbon. On \"ethyl\" the grey –CH₂–CH₃ is ringed (tag \"ethyl: hangs off\"; a second tag \"per repeat unit: 2 backbone carbons + 1 ethyl branch\" writes, from the cut sentence). Bright at the end: the opened monomer and the \"ethyl: hangs off\" tag. No stated hold; the 2 s scene padding covers the read.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-section": [
+        "new",
+        "on \"three times\" the section builder runs: three opened monomers slide together and join, giving –CH₂–CH(C₂H₅)–CH₂–CH(C₂H₅)–CH₂–CH(C₂H₅)– in full structural form with a continuation bond at each end; \"a section of this polymer showing three repeat units\" underlines.",
+        "Three units, then circle one: Now join three of them, head to tail.",
+        "times / bonds",
+        "On the spoken cues: On \"Circle\" \"Circle one repeat unit\" underlines and a navy circle draws around one –CH₂–CH(C₂H₅)– (answer box: the section with its circle, bright). A grey tag \"repeat unit: [–CH₂–CH(C₂H₅)–]ₙ\" writes and dims. On \"check it\" a tally writes: \"ethyl groups: 3 ✓ | backbone carbons: 6 ✓\"; on \"bonds\"",
+        "explain",
+        "on \"three times\" the section builder runs: three opened monomers slide together and join, giving –CH₂–CH(C₂H₅)–CH₂–CH(C₂H₅)–CH₂–CH(C₂H₅)– in full structural form with a continuation bond at each end; \"a section of this polymer showing three repeat units\" underlines. On \"Circle\" \"Circle one repeat unit\" underlines and a navy circle draws around one –CH₂–CH(C₂H₅)– (answer box: the section with its circle, bright). A grey tag \"repeat unit: [–CH₂–CH(C₂H₅)–]ₙ\" writes and dims. On \"check it\" a tally writes: \"ethyl groups: 3 ✓ | backbone carbons: 6 ✓\"; on \"bonds\" each carbon of one unit ticks \"4\" in turn (tag \"four bonds each\"). The backbone strip's second row ticks. Bright at the end: the circled section and the \"four bonds each\" tag. No stated hold; the 2 s scene padding covers the read.",
+        [
+            "Mark underline",
+            "ScribbleCircle",
+            "DrawPath",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"–CH₂–CH₂–CH₂–CH₂–\" writes on and, on \"polyethylene\", takes a grey scribble cross with the caption \"only the C=C carbons join the chain\".",
+        "The classic mistake: The classic mistake is putting all four carbons into the chain: C H two, C H two, C H two, C H two.",
+        "polyethylene",
+        "On the spoken cues: Beside it the correct unit returns small with its ethyl ringed. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"–CH₂–CH₂–CH₂–CH₂–\" writes on and, on \"polyethylene\", takes a grey scribble cross with the caption \"only the C=C carbons join the chain\". Beside it the correct unit returns small with its ethyl ringed. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q2-question": [
+        "new",
+        "board clears.",
+        "HSC-style question (question 2: find the monomers) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. A section of a polymer used",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: find the monomers)",
+        "explain",
+        "board clears. Type badge hidden. The card writes on: \"A section of a polymer used in carpet fibres is shown.\" Below it, in full structural form, plain ink: –O–CH₂–CH₂–CH₂–O–CO–C₆H₄–CO–O–CH₂–CH₂–CH₂–O–CO–C₆H₄–CO– (the rings as hexagons with a grey inner ring, joined at opposite corners; continuation bonds at both ends; no colour on the O atoms or links). Demands: \"(a) Identify the type of polymer. (b) Draw and name the monomers used to make this polymer.\" Two answer boxes. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-links": [
+        "new",
+        "the card shrinks to a strip.",
+        "Find the links and the repeat unit: First, find the backbone.",
+        "oxygens / ester / repeat unit",
+        "On the spoken cues: Type badge \"Find the monomers\". On \"oxygens\" \"A section of a polymer\" underlines amber; the backbone tracer runs along the section and pauses on each O and C=O, which colour brick red as it passes (tag \"not all carbon\"). On \"ester\" the link scanner slides along, stopping and ringing each –CO–O–",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Find the monomers\". On \"oxygens\" \"A section of a polymer\" underlines amber; the backbone tracer runs along the section and pauses on each O and C=O, which colour brick red as it passes (tag \"not all carbon\"). On \"ester\" the link scanner slides along, stopping and ringing each –CO–O– link red, numbered \"1, 2, 3\" (chip \"ester link: –COO–\"); \"Identify the type of polymer\" underlines; answer box (a) fills \"polyester (condensation)\"; the backbone strip's third row lights. On \"repeat unit\" a dashed navy bracket pair drops around –O–CH₂CH₂CH₂–O–CO–C₆H₄–CO– and the second unit dims (tag \"repeat: one ring, one three-carbon chain\"). Bright at the end: the bracketed unit, answer box (a) and the link numbers. No stated hold; the 2 s scene padding covers the read.",
+        [
+            "Mark underline",
+            "Enter slide",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q2-water": [
+        "new",
+        "on \"every ester link\" the water insert runs at links 1, 2 and 3 in turn: c10's cut line drops through each C(=O)–O bond, a water-coloured H₂O splits, OH docks on the C=O side and H on the O side.",
+        "Add the water back at every link: Now add the water back, at every ester link.",
+        "oxygen / acid / both ends",
+        "On the spoken cues: On \"oxygen\" \"Draw and name the monomers\" underlines; the fragments drift apart into two kinds. HO–CH₂CH₂CH₂–OH lights with its name \"propane-1,3-diol\" (answer box (b), bright); a carbon counter pops \"1, 2, 3\". On \"acid\" HOOC–C₆H₄–COOH lights with \"benzene-1,4-dicarboxylic acid (terephthalic acid)\"",
+        "explain",
+        "on \"every ester link\" the water insert runs at links 1, 2 and 3 in turn: c10's cut line drops through each C(=O)–O bond, a water-coloured H₂O splits, OH docks on the C=O side and H on the O side. On \"oxygen\" \"Draw and name the monomers\" underlines; the fragments drift apart into two kinds. HO–CH₂CH₂CH₂–OH lights with its name \"propane-1,3-diol\" (answer box (b), bright); a carbon counter pops \"1, 2, 3\". On \"acid\" HOOC–C₆H₄–COOH lights with \"benzene-1,4-dicarboxylic acid (terephthalic acid)\" (answer box (b) adds it); a grey chip \"c15: PET's acid\" writes and dims. On \"both ends\" c15's end tags ring all four end groups amber (tag \"two reactive ends each ✓\"). The backbone strip's third row ticks. Bright at the end: both monomers with names and the \"two reactive ends\" tag. No stated hold; the 2 s scene padding covers the read.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "tick",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"HO–CH₂CH₂CH₂–O–CO–C₆H₄–COOH\" writes on, with its internal –CO–O– ringed red, and, on \"inside\", takes a grey scribble cross with the caption \"cut every ester link\".",
+        "The classic mistake: The classic mistake is cutting just one link, and calling what's left a monomer.",
+        "inside",
+        "On the spoken cues: Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"HO–CH₂CH₂CH₂–O–CO–C₆H₄–COOH\" writes on, with its internal –CO–O– ringed red, and, on \"inside\", takes a grey scribble cross with the caption \"cut every ester link\". Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q3-question": [
+        "new",
+        "board clears.",
+        "HSC-style question (question 3: addition or condensation) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. The repeat units of two polymers,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: addition or condensation)",
+        "explain",
+        "board clears. Type badge hidden. The card writes on: \"The repeat units of two polymers, X and Y, are shown. Y was made directly from a hydroxy acid, with water released.\" X: [–CH₂–C(CH₃)(COOCH₃)–]ₙ in full structural form (the –COOCH₃ drawn below the second backbone carbon as –C(=O)–O–CH₃); Y: [–O–CH(CH₃)–C(=O)–]ₙ in full structural form. Both plain ink, with brackets, n and continuation bonds. Demands: \"(a) Classify each polymer as an addition polymer or a condensation polymer. Justify each classification. (b) Draw the monomer of each polymer.\" Answer boxes for X and Y. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-x": [
+        "new",
+        "the card shrinks to a strip.",
+        "X: look along the backbone: Start with X.",
+        "X / carbons / no",
+        "On the spoken cues: Type badge \"Addition or condensation?\". On \"X\" structure X enlarges; its ester group is ringed grey, not red (tag \"ester group: where is it?\"). On \"carbons\" the backbone tracer runs through the brackets along –C–C– only and the two backbone carbons glow ink; the –COOCH₃ and –CH₃ turn grey (tag",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Addition or condensation?\". On \"X\" structure X enlarges; its ester group is ringed grey, not red (tag \"ester group: where is it?\"). On \"carbons\" the backbone tracer runs through the brackets along –C–C– only and the two backbone carbons glow ink; the –COOCH₃ and –CH₃ turn grey (tag \"backbone: C–C only; the ester is a side group\"). \"Classify\" and \"Justify\" underline; answer box X fills \"addition: all-carbon backbone; ester only in a side group\". The backbone strip's second row lights. On \"no\" c14's bracket unstamp runs: brackets and n lift off, the continuation bonds shrink, a teal C=C redraws; a ghost H drifts towards each backbone carbon and is crossed (tag \"no extra H\"). The monomer settles: CH₂=C(CH₃)COOCH₃, with a grey screen-only name \"methyl 2-methylpropenoate\" and tag \"Perspex (PMMA) monomer\"; \"Draw the monomer\" underlines; answer box X adds it. Bright at the end: the monomer, answer box X and the \"no extra H\" tag. No stated hold; the 2 s scene padding covers the read.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-y": [
+        "new",
+        "X dims to a kept chip.",
+        "Y: an ester link in the chain: Now Y.",
+        "Y / other / end",
+        "On the spoken cues: On \"Y\" structure Y enlarges; the backbone tracer runs through the brackets along –O–C–C(=O)– and rings the –O–C(=O)– link red as it closes the loop across the bracket ends (tag \"ester link in the backbone\"); on \"released\" the stem phrase \"with water released\" underlines; answer box Y fills",
+        "explain",
+        "X dims to a kept chip. On \"Y\" structure Y enlarges; the backbone tracer runs through the brackets along –O–C–C(=O)– and rings the –O–C(=O)– link red as it closes the loop across the bracket ends (tag \"ester link in the backbone\"); on \"released\" the stem phrase \"with water released\" underlines; answer box Y fills \"condensation (polyester): ester link in the backbone; the stated route releases water\". The backbone strip's third row lights. On \"Add the water back\" c15's water insert runs at the bracket-end link: H docks on the O and OH on the C=O. On \"other\" the monomer settles: CH₃–CH(OH)–COOH, with a grey screen-only name \"2-hydroxypropanoic acid\" and tag \"lactic acid\"; \"Draw the monomer\" underlines; answer box Y adds it. On \"end\" c15's end tags ring the OH and the COOH amber (tag \"one molecule, two reactive ends\"). Bright at the end: the monomer, answer box Y and the end-tags tag. No stated hold; the 2 s scene padding covers the read.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "table build"
+        ],
+        "Hold one second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"X has an ester group, so X is a polyester.\" writes on and, on \"contains\", takes a grey scribble cross with the caption \"side group ≠ backbone link\".",
+        "The classic mistake: The classic mistake is calling X a polyester because it contains an ester group.",
+        "contains",
+        "On the spoken cues: X returns small with the backbone tracer on its C–C and the ester side group grey. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"X has an ester group, so X is a polyester.\" writes on and, on \"contains\", takes a grey scribble cross with the caption \"side group ≠ backbone link\". X returns small with the backbone tracer on its C–C and the ester side group grey. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "q4-question": [
+        "adjust",
+        "board clears.",
+        "HSC-style question (question 4: property from structure) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question four. Nylon six six melts at about",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 4: property from structure)",
+        "explain",
+        "board clears. Type badge hidden. The card writes on: \"Nylon 6,6 and polyester P have the repeat units shown.\" Two plain-ink repeat units, stacked so their skeletons line up: nylon 6,6 [–NH–(CH₂)₆–NH–CO–(CH₂)₄–CO–]ₙ, \"melting point about 265 °C\"; polyester P [–O–(CH₂)₆–O–CO–(CH₂)₄–CO–]ₙ, \"melting point about 60 °C\" (a given value for this question). Demand: \"Explain the difference in the melting points of these two polymers, with reference to their structures.\" One answer box. `m7-nylon-rope-v1.png` small at the card's upper right. **Countdown 10 seconds**; strip dims.",
+        [
+            "HandText write-on",
+            "Plate",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q4-compare": [
+        "new",
+        "the card shrinks to a strip.",
+        "Line them up: one difference: Compare like with like.",
+        "skeleton / oxygen",
+        "On the spoken cues: Type badge \"Property from structure\". On \"Line up\" the two repeat units enlarge, one above the other, with their skeletons aligned; a pale-blue tracer runs along both at once. On \"skeleton\" matching segments light in pairs, \"(CH₂)₆ = (CH₂)₆\", \"(CH₂)₄ = (CH₂)₄\", \"C=O × 2 = C=O × 2\" (tag \"same carbon",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Property from structure\". On \"Line up\" the two repeat units enlarge, one above the other, with their skeletons aligned; a pale-blue tracer runs along both at once. On \"skeleton\" matching segments light in pairs, \"(CH₂)₆ = (CH₂)₆\", \"(CH₂)₄ = (CH₂)₄\", \"C=O × 2 = C=O × 2\" (tag \"same carbon skeleton: a fair comparison of the links\"); \"with reference to their structures\" underlines. On \"oxygen\" the N–H groups in nylon ring indigo and the matching O atoms in P ring red, with a small \"≠\" between them (tag \"one difference: N–H against O\"). Bright at the end: the aligned units, the \"≠\" marks and the \"one difference\" tag. No stated hold; the 2 s scene padding covers the read.",
+        [
+            "Mark underline"
+        ],
+        "Hold one second"
+    ],
+    "q4-forces": [
+        "new",
+        "the repeat units dim to a kept strip.",
+        "What that difference does between chains: That N H is the key.",
+        "hydrogen bond / dispersion / overcome",
+        "On the spoken cues: c14's chain view splits into two boxes. Left, nylon strands with indigo N–H and red C=O ticks: on \"hydrogen bond\" violet dotted N–H···O=C bonds draw between neighbouring strands (grey chip \"c15: N–H···O=C between chains\"). Right, polyester P strands with red C=O ticks only: on \"dispersion\" teal",
+        "explain",
+        "the repeat units dim to a kept strip. c14's chain view splits into two boxes. Left, nylon strands with indigo N–H and red C=O ticks: on \"hydrogen bond\" violet dotted N–H···O=C bonds draw between neighbouring strands (grey chip \"c15: N–H···O=C between chains\"). Right, polyester P strands with red C=O ticks only: on \"dispersion\" teal dipole–dipole dashes and pale-blue dispersion ticks draw, and a ghost violet bond tries to form and is crossed grey (tag \"no H on O or N: no hydrogen bonds\"). On \"slide past\" c14's warm slide runs on both boxes at once: P's strands slide apart at a low glow, nylon's strands hold until a much stronger glow, then slide, each strand's line unbroken. \"melts\" and \"Explain the difference\" underline. On \"overcome\" the answer box fills: \"Nylon: N–H···O=C hydrogen bonds between chains, plus dispersion. P: no N–H or O–H, so only dipole–dipole and dispersion. Same carbon skeleton, so hydrogen bonding is an important structural reason for the much higher melting point.\" (only the first sentence bright). Bright at the end: the two boxes and the answer box's first sentence. No stated hold; the 2 s scene padding covers the read.",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q4-mistake": [
+        "new",
+        "a chip \"Amide bonds are stronger than ester bonds, so they take more energy to break when it melts.\" writes on and, on \"either\", takes a grey scribble cross with the caption \"melting separates chains; the links stay\".",
+        "The classic mistake: The classic mistake is saying the amide bonds are stronger than ester bonds, so they take more energy to break.",
+        "either",
+        "On the spoken cues: A small nylon strand returns with its amide links pulsing and intact. Hold about 1.5 seconds.",
+        "explain",
+        "a chip \"Amide bonds are stronger than ester bonds, so they take more energy to break when it melts.\" writes on and, on \"either\", takes a grey scribble cross with the caption \"melting separates chains; the links stay\". A small nylon strand returns with its amide links pulsing and intact. Hold about 1.5 seconds.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1"
+    ],
+    "decision-board": [
+        "adjust",
+        "the backbone strip returns full size as a two-column board, \"What you see\" and \"What you do\", each row lighting on its cue with its question number badge: \"a repeat unit or section like these → find the backbone, through the brackets (all)\"; \"all C–C backbone, from an alkene → addition: open the C=C to draw; restore it to recover, add no H (Q1, Q3 X)\"; \"ester or amide links in the backbone, from an acid route → condensation: remove the water to draw; add it back at every link to recover (Q2, Q3 Y)\"; \"a property → compare the forces between chains (dispersion, dipole–dipole, hydrogen bonds), then the use (Q4; c14's PE, PVC, PS, PTFE)\".",
+        "Decision board: So here's how to start the alkene and acid polymer questions we've practised.",
+        "backbone / links / chains",
+        "On the spoken cues: The memory aid \"Addition: nothing lost. Condensation: a small molecule lost (water, for these acid routes).\" writes small under rows 2 and 3. `m7-polymer-objects-v1.png` sits small at the lower right. Hold about 2 seconds.",
+        "explain",
+        "the backbone strip returns full size as a two-column board, \"What you see\" and \"What you do\", each row lighting on its cue with its question number badge: \"a repeat unit or section like these → find the backbone, through the brackets (all)\"; \"all C–C backbone, from an alkene → addition: open the C=C to draw; restore it to recover, add no H (Q1, Q3 X)\"; \"ester or amide links in the backbone, from an acid route → condensation: remove the water to draw; add it back at every link to recover (Q2, Q3 Y)\"; \"a property → compare the forces between chains (dispersion, dipole–dipole, hydrogen bonds), then the use (Q4; c14's PE, PVC, PS, PTFE)\". The memory aid \"Addition: nothing lost. Condensation: a small molecule lost (water, for these acid routes).\" writes small under rows 2 and 3. `m7-polymer-objects-v1.png` sits small at the lower right. Hold about 2 seconds.",
+        [
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7G03_ROWS = {
+    "hook": [
+        "new",
+        "heading \"Synthesis practice: right group, right carbon, every arrow\" writes on.",
+        "Hook: A synthesis question gives you a target and a short list of things you're allowed to start from.",
+        "check / choice / isomer",
+        "On the spoken cues: The c13 reaction map card draws small and grey at the right; on \"check\" four small coded cards light one at a time beside it (\"1 name, count\", \"2 backwards\", \"3 choose\", \"4 forwards, check\") and dim. On \"choice\" two near-identical grey alkene sketches write side by side (no names, no numbers;",
+        "explain",
+        "heading \"Synthesis practice: right group, right carbon, every arrow\" writes on. The c13 reaction map card draws small and grey at the right; on \"check\" four small coded cards light one at a time beside it (\"1 name, count\", \"2 backwards\", \"3 choose\", \"4 forwards, check\") and dim. On \"choice\" two near-identical grey alkene sketches write side by side (no names, no numbers; nothing answer-bearing), each with a \"?\" tag. On \"isomer\" two ketone sketches appear under them with one shared grey tag \"same formula\", their C=O groups on different carbons, and a red \"≠\" between them. The check strip builds on the left: \"count carbons?\", \"group on the right carbon?\", \"conditions on every arrow?\", \"every box and arrow possible?\". The sketches become three numbered question cards with one shared tag line, \"HSC-style questions, written for HSCScience\". Hold about 1 second; the check strip shrinks to the far left.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second; the check strip shrinks to the far left"
+    ],
+    "q1-question": [
+        "new",
+        "fresh board.",
+        "HSC-style question (question 1: choose the start) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question one. A chemist needs hexan-3-one, and can",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 1: choose the start)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A chemist needs to make hexan-3-one, CH₃CH₂COCH₂CH₂CH₃. The only carbon-containing starting materials available are hex-1-ene and hex-3-ene.\" Demands: \"(a) Explain which starting material should be used.\" \"(b) Construct a flow chart for a two-step synthesis of hexan-3-one. Include the reagents and conditions for each step, and write a balanced equation for each step.\" Two answer boxes. No structures, no map. Nothing answer-bearing. **Countdown ring 10 seconds** after \"Pause here to answer.\"; the check strip dims; the whole card stays on screen.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q1-choose": [
+        "new",
+        "the card shrinks to a strip.",
+        "Which carbon, which alkene: Count first.",
+        "three / symmetrical / two",
+        "On the spoken cues: Type badge \"Choose the start\". \"hexan-3-one, CH₃CH₂COCH₂CH₂CH₃\" underlines; its structure draws at the right with the carbon ruler (1 to 6) and, on \"three\", C3's C=O ringed amber (tag \"C=O on C3\"). The c13 carbon tally ticks \"6\" under the target, then \"6\" under each alkene name (grey tag \"same",
+        "explain",
+        "the card shrinks to a strip. Type badge \"Choose the start\". \"hexan-3-one, CH₃CH₂COCH₂CH₂CH₃\" underlines; its structure draws at the right with the carbon ruler (1 to 6) and, on \"three\", C3's C=O ringed amber (tag \"C=O on C3\"). The c13 carbon tally ticks \"6\" under the target, then \"6\" under each alkene name (grey tag \"same chain length\"). A backward hook runs from the target to a \"?\" box that resolves into \"hexan-3-ol\" with its OH on C3 (grey chip \"c08a: oxidation keeps the group on the same carbon\"). Strip: \"count carbons?\" ticks. On \"symmetrical\" \"hex-3-ene\" underlines; its structure draws (C=C teal between C3 and C4) and the c04a two-way docker runs: an OH docks on C3, then ghosted on C4, and the second product flips to show it is the same molecule, \"hexan-3-ol\" (tag \"symmetrical: one product\"). On \"two\" \"hex-1-ene\" underlines; its structure draws and the two-way docker runs: OH bold on C2, faint on C1, giving a large \"hexan-2-ol\" and a small faint \"hexan-1-ol\" (tag \"mainly hexan-2-ol\"; grey chip \"c04a\"). Answer box (a) writes: \"Hex-3-ene. It is symmetrical, so water adds to give only hexan-3-ol, which oxidises to hexan-3-one. Hex-1-ene gives mainly hexan-2-ol.\" Strip: \"group on the right carbon?\" ticks. Bright at the end: the hex-3-ene product, its tag, answer (a).",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-route": [
+        "new",
+        "the hex-1-ene models dim out.",
+        "Two steps, two equations: So use hex-3-ene.",
+        "hexan-3-ol / reflux / balance",
+        "On the spoken cues: The c13 flow chart builder runs left to right in answer box (b): box \"hex-3-ene, CH₃CH₂CH=CHCH₂CH₃\"; on \"hexan-3-ol\" the arrow draws as ⇌ with chips in spoken order, \"H₂O\", \"dilute acid catalyst\", \"heat\"; box \"hexan-3-ol, CH₃CH₂CH(OH)CH₂CH₂CH₃\" (tag \"intermediate\"). On \"reflux\" the second arrow",
+        "explain",
+        "the hex-1-ene models dim out. The c13 flow chart builder runs left to right in answer box (b): box \"hex-3-ene, CH₃CH₂CH=CHCH₂CH₃\"; on \"hexan-3-ol\" the arrow draws as ⇌ with chips in spoken order, \"H₂O\", \"dilute acid catalyst\", \"heat\"; box \"hexan-3-ol, CH₃CH₂CH(OH)CH₂CH₂CH₃\" (tag \"intermediate\"). On \"reflux\" the second arrow writes \"K₂Cr₂O₇ / H⁺\", \"heat under reflux\" (the first arrow's chips dim); box \"hexan-3-one, CH₃CH₂COCH₂CH₂CH₃\"; a small grey chip \"orange → green\" and a grey chip \"c08a: secondary → ketone; no further oxidation\". On \"balance\" two equation lines write under the chart: \"C₆H₁₂ + H₂O ⇌ C₆H₁₄O\" and \"C₆H₁₄O + [O] → C₆H₁₂O + H₂O\", with a small grey atom tally beside the second (\"H: 14 = 12 + 2; O: 1 + 1 = 1 + 1\") that fades. Strip: \"conditions on every arrow?\" and \"every box and arrow possible?\" tick. Bright at the end: the complete chart (one item) and the two equations.",
+        [
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q1-mistake": [
+        "new",
+        "a chip \"hex-1-ene → (H₂O, dilute acid, heat) → hexan-2-ol → hexan-3-one\" fades in.",
+        "The classic mistake: The classic slip is picking hex-1-ene anyway.",
+        "hexan-2-one",
+        "On the spoken cues: On \"hexan-2-one\" the isomer pair card writes beside it: \"hexan-3-one\" (C=O on C3 ringed amber) and \"hexan-2-one\" (C=O on C2 ringed red), with one shared grey tag \"both C₆H₁₂O: isomers\" and a one-line gloss \"isomers: same formula, different structure\"; the chip's last box takes a red scribble cross",
+        "explain",
+        "a chip \"hex-1-ene → (H₂O, dilute acid, heat) → hexan-2-ol → hexan-3-one\" fades in. On \"hexan-2-one\" the isomer pair card writes beside it: \"hexan-3-one\" (C=O on C3 ringed amber) and \"hexan-2-one\" (C=O on C2 ringed red), with one shared grey tag \"both C₆H₁₂O: isomers\" and a one-line gloss \"isomers: same formula, different structure\"; the chip's last box takes a red scribble cross and relabels \"hexan-2-one\" (caption \"the C=O forms where the OH was: wrong carbon, wrong compound\").",
+        [
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "q2-question": [
+        "new",
+        "fresh board.",
+        "HSC-style question (question 2: one starting material) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question two. A chemist has only ethane as",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 2: one starting material)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"Ethane, CH₃CH₃, is the only carbon-containing starting material available. Inorganic reagents may be used.\" Demands: \"(a) Construct a flow chart for the synthesis of ethyl ethanoate, CH₃COOCH₂CH₃, from ethane. Name each intermediate and include the reagents and conditions for every step.\" \"(b) Explain why the overall yield of ethyl ethanoate from ethane is expected to be low.\" Two answer boxes. No structures, no map. Nothing answer-bearing. **Countdown ring 10 seconds**; check strip dims; card stays on screen.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q2-backwards": [
+        "new",
+        "the card shrinks to a strip.",
+        "Cut the ester, find the alcohol: Work backwards.",
+        "ethanol / haloalkane",
+        "On the spoken cues: Type badge \"From one starting material\". \"ethyl ethanoate, CH₃COOCH₂CH₃\" underlines; its structure draws and the c13 ester cut runs at the single-bonded O; the halves slide apart and relabel \"ethanoic acid\" (upper) and, on \"ethanol\", \"ethanol\" (lower), each with a dashed amber backward arrow. The",
+        "explain",
+        "the card shrinks to a strip. Type badge \"From one starting material\". \"ethyl ethanoate, CH₃COOCH₂CH₃\" underlines; its structure draws and the c13 ester cut runs at the single-bonded O; the halves slide apart and relabel \"ethanoic acid\" (upper) and, on \"ethanol\", \"ethanol\" (lower), each with a dashed amber backward arrow. The carbon tally ticks \"2 + 2 = 4\" (strip: \"count carbons?\" ticks). A backward hook runs from \"ethanoic acid\" to a box that resolves into \"ethanol\" (tag \"acid ← primary alcohol\"); the two ethanol boxes merge into one with a grey tag \"used twice\". On \"haloalkane\" a backward hook runs from ethanol to \"ethane\", is stamped by the c13 cross-out arrow (tag \"no direct alkane → alcohol\"), and reroutes through a \"chloroethane\" box (grey chip \"c04b, c06\"). On the map card, the matching arrows glow amber in reverse order. Bright at the end: the backward chain ethane → chloroethane → ethanol → acid and the \"used twice\" tag.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-forwards": [
+        "new",
+        "the backward chain dims to grey.",
+        "Four reactions, one split: Now write it forwards.",
+        "mixture / split / arrow",
+        "On the spoken cues: The flow chart builder runs in answer box (a), each arrow's chips in spoken order and completed chips dimming: box \"ethane, CH₃CH₃\"; on \"mixture\" arrow \"Cl₂\", \"UV light\" with a small grey chip \"mixture: separate the chloroethane\" (and \"+ HCl\"); box \"chloroethane, CH₃CH₂Cl\" (tag \"intermediate\");",
+        "explain",
+        "the backward chain dims to grey. The flow chart builder runs in answer box (a), each arrow's chips in spoken order and completed chips dimming: box \"ethane, CH₃CH₃\"; on \"mixture\" arrow \"Cl₂\", \"UV light\" with a small grey chip \"mixture: separate the chloroethane\" (and \"+ HCl\"); box \"chloroethane, CH₃CH₂Cl\" (tag \"intermediate\"); arrow \"NaOH(aq)\", \"heat under reflux\"; box \"ethanol, CH₃CH₂OH\" (tag \"intermediate\"). On \"split\" the ethanol box divides into two portions with a fork (tag \"split: keep a portion back\"). Upper arm: arrow \"excess K₂Cr₂O₇ / H⁺\", \"heat under reflux\"; box \"ethanoic acid, CH₃COOH\" (tag \"intermediate\"). The arms meet at a join arrow, drawn as ⇌: \"conc. H₂SO₄ (a few drops)\", \"heat under reflux\"; box \"ethyl ethanoate, CH₃COOCH₂CH₃ + H₂O\". On \"arrow\" the ⇌ pulses (tag \"equilibrium: ⇌\"). Strip: \"conditions on every arrow?\" ticks. Bright at the end: the complete branched chart (one item) and the \"split\" tag.",
+        [
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-yield": [
+        "new",
+        "the chart shrinks to the top of the working area.",
+        "Why so little ester: Part b.",
+        "chloroethane / completion / losses",
+        "On the spoken cues: The yield funnel draws beneath it: on \"chloroethane\" step 1 fans into three small chips, \"CH₃CH₂Cl\" (bright), \"CH₂ClCH₂Cl\" and \"CH₃CHCl₂\" (grey), tag \"more chlorines: a mixture\"; on \"completion\" step 4 draws as ⇌ with a half-filled product bar, tag \"equilibrium: not complete\"; on \"losses\" a grey",
+        "explain",
+        "the chart shrinks to the top of the working area. The yield funnel draws beneath it: on \"chloroethane\" step 1 fans into three small chips, \"CH₃CH₂Cl\" (bright), \"CH₂ClCH₂Cl\" and \"CH₃CHCl₂\" (grey), tag \"more chlorines: a mixture\"; on \"completion\" step 4 draws as ⇌ with a half-filled product bar, tag \"equilibrium: not complete\"; on \"losses\" a grey \"lost product\" dot drops from several steps (no count shown) and a grey tag writes \"losses at several stages\". Answer box (b) writes three short lines: \"UV substitution gives a mixture: only part is chloroethane.\" / \"Esterification is an equilibrium: incomplete.\" / \"Product is lost at several stages.\" Strip: \"every box and arrow possible?\" ticks. Bright at the end: the funnel's mixture fan, the ⇌ bar and answer (b).",
+        [
+            "DrawPath",
+            "chip pop",
+            "counter and bar fill",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q2-mistake": [
+        "new",
+        "a chip \"all ethanol → ethanoic acid → + ? → ester\" fades in; on \"all\" the \"+ ?\" rings and the chip takes a red scribble cross (caption \"the ester needs the acid and the alcohol: keep some ethanol back\").",
+        "The classic mistake: The classic slip is oxidising all of the ethanol.",
+        "all",
+        "On the spoken cues: a chip \"all ethanol → ethanoic acid → + ? → ester\" fades in; on \"all\" the \"+ ?\" rings and the chip takes a red scribble cross (caption \"the ester needs the acid and the alcohol: keep some ethanol back\").",
+        "explain",
+        "a chip \"all ethanol → ethanoic acid → + ? → ester\" fades in; on \"all\" the \"+ ?\" rings and the chip takes a red scribble cross (caption \"the ester needs the acid and the alcohol: keep some ethanol back\").",
+        [
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "q3-question": [
+        "new",
+        "fresh board.",
+        "HSC-style question (question 3: check a plan) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Question three. A student planned this flow chart",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (question 3: check a plan)",
+        "explain",
+        "fresh board. Type badge hidden. The card writes on: \"A student planned the synthesis of propyl butanoate, CH₃CH₂CH₂COOCH₂CH₂CH₃. The starting materials available were but-1-ene, 1-chlorobutane and 1-chloropropane. The student's flow chart is shown.\" The chart, drawn as printed, in grey ink: \"but-1-ene → (H₂O, dilute acid catalyst, heat, ⇌) → butan-1-ol → (K₂Cr₂O₇ / H⁺, heat, distil) → butanoic acid\"; \"1-chloropropane → (NaOH(aq), heat under reflux) → propan-1-ol\"; the two arms join \"→ (conc. H₂SO₄, heat under reflux, ⇌) → propyl butanoate + H₂O\". Demands: \"(a) Identify TWO errors in the student's flow chart and explain the effect of each error.\" \"(b) Construct a corrected flow chart for the synthesis, using the available starting materials.\" Two answer boxes. Nothing answer-bearing (no rings or marks on the chart). **Countdown ring 10 seconds**; check strip dims; card and chart stay on screen.",
+        [
+            "HandText write-on",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "q3-error1": [
+        "new",
+        "the card shrinks to a strip, the student's chart kept readable at the top of the working area (G03 build rule: if the chart cannot be read when shrunk, the stem shrinks and the chart stays full size).",
+        "A wrong box: Check every box, not just the arrows.",
+        "butan-1-ol / butanone",
+        "On the spoken cues: Type badge \"Check a plan\". Staged so that only one stage is bright at a time (learning review 2). Stage 1, on \"butan-1-ol\": the chart's first arrow and its two boxes are the only bright part of the chart (the rest dims to grey); but-1-ene draws with the carbon ruler and the two-way docker runs (OH",
+        "explain",
+        "the card shrinks to a strip, the student's chart kept readable at the top of the working area (G03 build rule: if the chart cannot be read when shrunk, the stem shrinks and the chart stays full size). Type badge \"Check a plan\". Staged so that only one stage is bright at a time (learning review 2). Stage 1, on \"butan-1-ol\": the chart's first arrow and its two boxes are the only bright part of the chart (the rest dims to grey); but-1-ene draws with the carbon ruler and the two-way docker runs (OH bold on C2, faint on C1), giving a large \"butan-2-ol\" and a small faint \"butan-1-ol\" (tag \"mainly butan-2-ol\"); the chart's \"butan-1-ol\" box takes a red ring (error 1 marker \"1\"). Stage 2, on \"isomer\": the isomer pair card writes small (\"butan-1-ol\" against \"butan-2-ol\", shared grey tag \"both C₄H₁₀O: isomers\") and the docker models dim. Stage 3, on \"butanone\": the isomer pair card clears; a short arrow \"K₂Cr₂O₇ / H⁺\" draws from butan-2-ol to \"butanone\" (C=O on C2), and the c13 cross-out arrow stamps an arrow from butanone towards \"butanoic acid\" (tag \"ketone: dead end\"; grey chip \"c08a: secondary → ketone\"). Stage 4, after the structures dim: answer box (a) writes line 1: \"1. But-1-ene + water gives mainly butan-2-ol, not butan-1-ol. Butan-2-ol is secondary: it oxidises to butanone, a dead end, so the main route does not reach butanoic acid.\" Strip: \"group on the right carbon?\" ticks. Bright at the end: the dead-end cross and answer line 1 only.",
+        [
+            "Mark cross",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-error2": [
+        "new",
+        "the actual secondary route (butan-2-ol, butanone, the dead-end cross) dims to grey.",
+        "A wrong arrow: Second error, and it's separate from the first: the oxidation arrow says distil.",
+        "distil / reflux",
+        "On the spoken cues: The student's chart returns bright at its own \"butan-1-ol\" box, drawn as a dashed ghost with a grey tag \"if this box were right\" (learning review 1: no impossible arrow is invented; the ghost is a hypothesis, not a route). The chart's oxidation arrow chips \"heat, distil\" underline and take a red",
+        "explain",
+        "the actual secondary route (butan-2-ol, butanone, the dead-end cross) dims to grey. The student's chart returns bright at its own \"butan-1-ol\" box, drawn as a dashed ghost with a grey tag \"if this box were right\" (learning review 1: no impossible arrow is invented; the ghost is a hypothesis, not a route). The chart's oxidation arrow chips \"heat, distil\" underline and take a red ring (error 2 marker \"2\"); a small grey chip writes beside it, \"distil → butanal (escapes as it forms)\" (grey chip \"c08a: distil → aldehyde\"). On \"reflux\" a green replacement chip writes beneath the ring: \"excess K₂Cr₂O₇ / H⁺, heat under reflux\", with a small grey loop arrow beside it, tag \"condenser returns butanal: oxidised on to the acid\" (the distil chip dims). Answer box (a) adds line 2: \"2. Even from butan-1-ol, distillation removes butanal as it forms, so the acid isn't made. Use excess oxidant, heat under reflux.\" Strip: \"conditions on every arrow?\" ticks. Bright at the end: the two red rings and answer line 2.",
+        [
+            "Mark cross",
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-fix": [
+        "new",
+        "the student's chart dims to grey.",
+        "The corrected chart: So start from 1-chlorobutane instead.",
+        "butan-1-ol / butanoate",
+        "On the spoken cues: The flow chart builder runs in answer box (b): on \"butan-1-ol\" \"1-chlorobutane\" underlines in the card; box \"1-chlorobutane, CH₃CH₂CH₂CH₂Cl\" with C1 numbered → arrow \"NaOH(aq)\", \"heat under reflux\" (the c06 swap runs small: Cl lifts off, OH docks on C1; grey chip \"c06: same carbon\") → box",
+        "explain",
+        "the student's chart dims to grey. The flow chart builder runs in answer box (b): on \"butan-1-ol\" \"1-chlorobutane\" underlines in the card; box \"1-chlorobutane, CH₃CH₂CH₂CH₂Cl\" with C1 numbered → arrow \"NaOH(aq)\", \"heat under reflux\" (the c06 swap runs small: Cl lifts off, OH docks on C1; grey chip \"c06: same carbon\") → box \"butan-1-ol, CH₃CH₂CH₂CH₂OH\" → arrow \"excess K₂Cr₂O₇ / H⁺\", \"heat under reflux\" → box \"butanoic acid, CH₃CH₂CH₂COOH\". The lower arm copies across from the student's chart unchanged, with a small green tick: \"1-chloropropane → (NaOH(aq), heat under reflux) → propan-1-ol\". On \"butanoate\" the join arrow writes as ⇌, \"conc. H₂SO₄, heat under reflux\" → \"propyl butanoate, CH₃CH₂CH₂COOCH₂CH₂CH₃ + H₂O\" (the answer, bright); the c13 ester cut runs once on it as a check (halves \"propyl ← propan-1-ol\", \"butanoate ← butanoic acid\"). Strip: \"every box and arrow possible?\" ticks. Bright at the end: the corrected chart (one item).",
+        [
+            "Mark underline",
+            "DrawPath",
+            "chip pop",
+            "tick"
+        ],
+        "Hold one second"
+    ],
+    "q3-mistake": [
+        "new",
+        "a chip \"but-1-ene → (H₂O, dilute acid, heat) → butan-2-ol → (excess K₂Cr₂O₇ / H⁺, reflux) → butanoic acid\" fades in; on \"butanone\" its last box relabels \"butanone\" and takes a red scribble cross (caption \"reflux can't fix the wrong alcohol: secondary → ketone\").",
+        "The classic mistake: The classic slip is fixing only the arrow.",
+        "butanone",
+        "On the spoken cues: On \"A wrong box\" a handwritten line writes under the board: \"A wrong box can hide behind a right arrow.\"",
+        "explain",
+        "a chip \"but-1-ene → (H₂O, dilute acid, heat) → butan-2-ol → (excess K₂Cr₂O₇ / H⁺, reflux) → butanoic acid\" fades in; on \"butanone\" its last box relabels \"butanone\" and takes a red scribble cross (caption \"reflux can't fix the wrong alcohol: secondary → ketone\"). On \"A wrong box\" a handwritten line writes under the board: \"A wrong box can hide behind a right arrow.\"",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "DrawPath",
+            "chip pop"
+        ],
+        "Hold one second"
+    ],
+    "decision-board": [
+        "new",
+        "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"carbon\" \"Count carbons; find the group's carbon → the target fixes where the OH must be (Q1, Q3)\"; \"Group on the right carbon → symmetrical alkene, or haloalkane with the halogen in place (Q1, Q3)\"; on \"split\" \"One starting material, two roles → split it; keep a portion back (Q2)\"; \"Conditions on every arrow → reflux with excess oxidant for an acid; ⇌ for hydration and esterification (Q1, Q2, Q3)\"; on \"isomer\" \"Every box and arrow possible → a wrong box makes an isomer or a dead end (Q1, Q3)\".",
+        "Decision board: So for any synthesis question: count the carbons, and find which carbon each group has to sit on.",
+        "carbon / split / isomer",
+        "On the spoken cues: Under the board, small, the c13 line: \"Work backwards to plan; write forwards to answer.\" On \"Next\" a chip \"Next: how does an alkene become an addition polymer?\" slides in at the lower right. Hold about 2 seconds.",
+        "explain",
+        "the check strip returns full size as a two-column board, \"Check\" and \"What you do\", each row lighting on its cue with its question number badge: on \"carbon\" \"Count carbons; find the group's carbon → the target fixes where the OH must be (Q1, Q3)\"; \"Group on the right carbon → symmetrical alkene, or haloalkane with the halogen in place (Q1, Q3)\"; on \"split\" \"One starting material, two roles → split it; keep a portion back (Q2)\"; \"Conditions on every arrow → reflux with excess oxidant for an acid; ⇌ for hydration and esterification (Q1, Q2, Q3)\"; on \"isomer\" \"Every box and arrow possible → a wrong box makes an isomer or a dead end (Q1, Q3)\". Under the board, small, the c13 line: \"Work backwards to plan; write forwards to answer.\" On \"Next\" a chip \"Next: how does an alkene become an addition polymer?\" slides in at the lower right. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "chip pop",
+            "lineage split",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7P04C_ROWS = {
+    "hook": [
+        "adjust",
+        "`m8-dichromate-orange-v1.png` centre.",
+        "Hook (green, but what?): Warm three alcohols with acidified dichromate, and two of them turn it green.",
+        "green / what / one",
+        "On the spoken cues: On \"green\" it cross-fades in place to `m8-dichromate-green-v1.png` (matched pair). On \"what\" three small coded structure chips write in a row under it, each with a \"?\" tag: \"–CHO\", \"C=O (inside the chain)\", \"–COOH\". On \"one\" the three chips dim except a coded magnifier outline that settles on the tube. Heading writes: \"Orange to green: so what did you make?\" Bright at the end: the heading, the green tube, the three",
+        "explain",
+        "`m8-dichromate-orange-v1.png` centre. On \"green\" it cross-fades in place to `m8-dichromate-green-v1.png` (matched pair). On \"what\" three small coded structure chips write in a row under it, each with a \"?\" tag: \"–CHO\", \"C=O (inside the chain)\", \"–COOH\". On \"one\" the three chips dim except a coded magnifier outline that settles on the tube. Heading writes: \"Orange to green: so what did you make?\" Bright at the end: the heading, the green tube, the three \"?\" chips (one item). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "aim-and-alcohols": [
+        "new",
+        "task line \"Aim: investigate the products of oxidising 1° and 2° alcohols\".",
+        "The aim, and a fair set of alcohols: The aim: to investigate the products formed when primary and secondary alcohols are oxidised.",
+        "propan-1-ol / control",
+        "On the spoken cues: On \"propan-1-ol\" two coded structures draw side by side, \"propan-1-ol\" (teal, OH on C1 ringed red) and \"propan-2-ol\" (violet, OH on C2 ringed red), with one shared grey tag \"both C₃H₈O: only the OH's position differs\". On \"No tertiary\" a third structure, \"2-methylpropan-2-ol\" (grey-blue), draws smaller with a grey tag \"tertiary: no C₃ option, so C₄\". On \"control\" a fourth chip \"water\" (plain grey) writes with a tag",
+        "explain",
+        "task line \"Aim: investigate the products of oxidising 1° and 2° alcohols\". On \"propan-1-ol\" two coded structures draw side by side, \"propan-1-ol\" (teal, OH on C1 ringed red) and \"propan-2-ol\" (violet, OH on C2 ringed red), with one shared grey tag \"both C₃H₈O: only the OH's position differs\". On \"No tertiary\" a third structure, \"2-methylpropan-2-ol\" (grey-blue), draws smaller with a grey tag \"tertiary: no C₃ option, so C₄\". On \"control\" a fourth chip \"water\" (plain grey) writes with a tag \"control: same treatment, no alcohol\". Earlier tags dim as each new one writes. Bright at the end: the four chips and the control tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "part-a-colour": [
+        "adjust",
+        "the structures shrink to a row of coloured name chips at the top.",
+        "Part A: which ones are oxidised?: Part one.",
+        "green / orange",
+        "On the spoken cues: `m7-oxidation-water-bath-before-v1.png` (new, matched pair) appears centre: four tubes of orange solution in a beaker water bath on a hotplate, with a thermometer. A small grey chip \"teacher demonstration\" sits on the task line for scenes 3 to 7. Method card writes in the right zone, one step per cue, earlier steps dimming: \"1 2 mL acidified K₂Cr₂O₇ in each tube\" (a coded dropper outline adds the drops; no hands);",
+        "explain",
+        "the structures shrink to a row of coloured name chips at the top. `m7-oxidation-water-bath-before-v1.png` (new, matched pair) appears centre: four tubes of orange solution in a beaker water bath on a hotplate, with a thermometer. A small grey chip \"teacher demonstration\" sits on the task line for scenes 3 to 7. Method card writes in the right zone, one step per cue, earlier steps dimming: \"1 2 mL acidified K₂Cr₂O₇ in each tube\" (a coded dropper outline adds the drops; no hands); \"2 5 drops: propan-1-ol | propan-2-ol | 2-methylpropan-2-ol | water\"; the four name chips dock above the four tubes; \"3 water bath, about 60 °C, about 5 min\" (small grey tag \"no flame: the alcohols are flammable\"). On \"green\" the plate cross-fades to `m7-oxidation-water-bath-after-v1.png` (tubes 1 and 2 green, tubes 3 and 4 orange) and the colour sort adds result chips: \"green: oxidised\" under tubes 1 and 2. On \"orange\" chips \"orange: no reaction\" under tubes 3 and 4 (tube 4's chip adds \"control\"). Bright at the end: the after plate and its four result chips (one item). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone: on \"class\" \"Independent: the alcohol's class (1°, 2°, 3°)\" with the three coloured chips; on \"observe\" \"Dependent: dichromate colour; product test results\"; on \"same\" \"Controlled:\" and its list writes one item per phrase, each pen-linked to the matching part of the after plate: \"2 mL acidified K₂Cr₂O₇ (same concentration)\", \"5 drops\", \"60 °C bath\", \"5 min\".",
+        "The variables: What changes, and what stays the same?",
+        "class / same",
+        "On the spoken cues: As the list completes, the propan-1-ol and propan-2-ol chips pulse, tag \"isomers: same C count, C₃H₈O\" (shown, not spoken; scene 2 said it). A small grey footer: \"Control: water instead of alcohol\". Bright at the end: the controlled list and the isomer tag.",
+        "explain",
+        "the variables card writes in the right zone: on \"class\" \"Independent: the alcohol's class (1°, 2°, 3°)\" with the three coloured chips; on \"observe\" \"Dependent: dichromate colour; product test results\"; on \"same\" \"Controlled:\" and its list writes one item per phrase, each pen-linked to the matching part of the after plate: \"2 mL acidified K₂Cr₂O₇ (same concentration)\", \"5 drops\", \"60 °C bath\", \"5 min\". As the list completes, the propan-1-ol and propan-2-ol chips pulse, tag \"isomers: same C count, C₃H₈O\" (shown, not spoken; scene 2 said it). A small grey footer: \"Control: water instead of alcohol\". Bright at the end: the controlled list and the isomer tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "distil-aldehyde": [
+        "adjust",
+        "the water-bath plate shrinks out.",
+        "Part B: catching the aldehyde: Part two: make the products and collect them.",
+        "distillation / again",
+        "On the spoken cues: `m7-school-distillation-setup-v1.png` centre. Task line \"Part B: make, collect, test\". On \"distillation\" a grey tag points to the receiver: \"distillate: the liquid collected\". The coded dropper outline adds drops into the flask (step chip \"add the alcohol slowly; distil at once\"). The boiling-point ladder writes beside the plate: \"propanal 48 °C\" and \"propan-1-ol 97 °C\" ticks, with a bracket \"about 50 °C apart\". On",
+        "explain",
+        "the water-bath plate shrinks out. `m7-school-distillation-setup-v1.png` centre. Task line \"Part B: make, collect, test\". On \"distillation\" a grey tag points to the receiver: \"distillate: the liquid collected\". The coded dropper outline adds drops into the flask (step chip \"add the alcohol slowly; distil at once\"). The boiling-point ladder writes beside the plate: \"propanal 48 °C\" and \"propan-1-ol 97 °C\" ticks, with a bracket \"about 50 °C apart\". On \"again\" grey vapour arrows run from the flask through the condenser into the receiver (tag \"aldehyde leaves before it meets more oxidant\"; grey chip \"c08a: distil to catch the aldehyde\"). On \"still-head\" a coded amber readout chip on the plate's thermometer reads \"about 49 °C\" with a grey tag \"a guide, not proof\". Bright at the end: the plate with the vapour path, the ladder's bracket, the readout chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "reflux-acid": [
+        "adjust",
+        "`m7-reflux-apparatus-v1.png` centre.",
+        "Part B: going all the way to the acid: For the acid, use excess dichromate and heat under reflux for about twenty minutes.",
+        "reflux / acid",
+        "On the spoken cues: Step chip \"excess acidified K₂Cr₂O₇; reflux about 20 min\". On \"reflux\" the vapour return loop runs: grey vapour rises into the condenser and drips back (tag \"aldehyde returns to the oxidant\"; grey chip \"c08a: reflux to go all the way\"). On \"acid\" a small coded equation strip writes under the plate: \"CH₃CH₂CH₂OH + 2[O] → CH₃CH₂COOH + H₂O\" (the scene 5 equation \"CH₃CH₂CH₂OH + [O] → CH₃CH₂CHO + H₂O\" sits above it in",
+        "explain",
+        "`m7-reflux-apparatus-v1.png` centre. Step chip \"excess acidified K₂Cr₂O₇; reflux about 20 min\". On \"reflux\" the vapour return loop runs: grey vapour rises into the condenser and drips back (tag \"aldehyde returns to the oxidant\"; grey chip \"c08a: reflux to go all the way\"). On \"acid\" a small coded equation strip writes under the plate: \"CH₃CH₂CH₂OH + 2[O] → CH₃CH₂COOH + H₂O\" (the scene 5 equation \"CH₃CH₂CH₂OH + [O] → CH₃CH₂CHO + H₂O\" sits above it in grey). On \"distil off a sample\" the reflux plate slides left and a small distillation plate thumbnail appears with an arrow \"then distil a sample\". Bright at the end: the vapour loop, the acid equation, the \"then distil\" arrow. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "secondary-ketone": [
+        "new",
+        "the distillation plate returns centre with the propan-2-ol chip (violet) docked on the flask.",
+        "Part B: the secondary alcohol: Propan-2-ol is simpler.",
+        "propanone",
+        "On the spoken cues: On \"propanone\" the equation \"CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O\" writes (C=O navy), and the boiling-point ladder adds \"propanone 56 °C\" and \"propan-2-ol 82 °C\" ticks. Tag \"ketone: no H on the carbonyl carbon, no further oxidation\" (grey chip \"c08b\"). Bright at the end: the equation and the tag.",
+        "explain",
+        "the distillation plate returns centre with the propan-2-ol chip (violet) docked on the flask. On \"propanone\" the equation \"CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O\" writes (C=O navy), and the boiling-point ladder adds \"propanone 56 °C\" and \"propan-2-ol 82 °C\" ticks. Tag \"ketone: no H on the carbonyl carbon, no further oxidation\" (grey chip \"c08b\"). Bright at the end: the equation and the tag.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick"
+        ],
+        "Settle about 1 second"
+    ],
+    "testing-products": [
+        "adjust",
+        "the evidence table writes in the right zone: rows \"propanal (1°, distil)\", \"propanoic acid (1°, reflux)\", \"propanone (2°)\"; columns \"Tollens'\", \"Benedict's\", \"blue litmus\".",
+        "Testing the products: Now test each distillate.",
+        "mirror / acid / pattern",
+        "On the spoken cues: On \"mirror\" the Tollens' column fills: `m7-tollens-tube-mirror-v1.png` thumbnail in the propanal cell, `m7-tollens-tube-clear-v1.png` thumbnails in the other two. On \"Benedict's\" the column fills: `m7-fehlings-tube-brickred-v1.png` for propanal, `m7-fehlings-tube-blue-v1.png` for the others (coded column label \"Benedict's (or Fehling's)\"). On \"acid\" the litmus column fills: `m6-litmus-blue-v1.png` (red end) for the",
+        "explain",
+        "the evidence table writes in the right zone: rows \"propanal (1°, distil)\", \"propanoic acid (1°, reflux)\", \"propanone (2°)\"; columns \"Tollens'\", \"Benedict's\", \"blue litmus\". On \"mirror\" the Tollens' column fills: `m7-tollens-tube-mirror-v1.png` thumbnail in the propanal cell, `m7-tollens-tube-clear-v1.png` thumbnails in the other two. On \"Benedict's\" the column fills: `m7-fehlings-tube-brickred-v1.png` for propanal, `m7-fehlings-tube-blue-v1.png` for the others (coded column label \"Benedict's (or Fehling's)\"). On \"acid\" the litmus column fills: `m6-litmus-blue-v1.png` (red end) for the acid, `m7-litmus-blue-strip-v1.png` for the other two. On \"pattern\" each row's result icons pulse once in turn and a row label writes at its end: \"mirror + brick red → aldehyde\", \"red litmus → acid\", \"no change → ketone\". Small grey footer: \"the starting alcohols turned the dichromate green; these tests tell the products apart\". Bright at the end: the three row labels (one item, the table). Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "validity": [
+        "new",
+        "the board clears.",
+        "Is it valid? test the distillate: Why test the distillate, and not the flask?",
+        "flask / intended / work",
+        "On the spoken cues: The flask against distillate split draws: left, a reflux flask thumbnail with its contents labelled small \"H₂SO₄ | chromium ions | organic product\"; a blue litmus icon dips in and turns red (tag \"red from the sulfuric acid, whatever formed\"); right, the receiver thumbnail labelled \"distillate: product and water, separated from the sulfuric acid and chromium salts\". On \"intended\" the validity card header writes:",
+        "explain",
+        "the board clears. The flask against distillate split draws: left, a reflux flask thumbnail with its contents labelled small \"H₂SO₄ | chromium ions | organic product\"; a blue litmus icon dips in and turns red (tag \"red from the sulfuric acid, whatever formed\"); right, the receiver thumbnail labelled \"distillate: product and water, separated from the sulfuric acid and chromium salts\". On \"intended\" the validity card header writes: \"Validity: does the test measure what it was meant to?\" with the row \"test the distillate, not the flask\". On \"work\" a small controls panel writes, each control beside only the test it checks: \"glucose (known aldehyde): Tollens' → mirror; Benedict's → brick red\" with the mirror and brick-red thumbnails (grey tag \"glucose: a sugar with an aldehyde group, not a product here\"); on \"Dilute acid\" \"dilute acid: blue litmus → red\" with the red-end litmus thumbnail; on \"water\" \"water: no change in any test\". Bright at the end: the validity row and the controls panel. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "reliability-accuracy": [
+        "new",
+        "the reliability card writes small: \"Reliability: repeats agree?\" with three small result rows from three groups agreeing (ticks).",
+        "Reliable, and accurate?: Reliability: repeat each test, or compare with other groups.",
+        "agree / accurate",
+        "On the spoken cues: On \"accurate\" the accuracy card writes: \"Accuracy: is the product named correctly?\" with two rows: \"results match the known samples\" and \"still-head reading near the boiling point (supports, not proof)\" (the ladder thumbnail returns small with the 48 °C tick bright). As the accuracy rows settle, a small grey investigation prompt writes beside the propanal row (shown, not spoken): a litmus icon with a pale pink tip",
+        "explain",
+        "the reliability card writes small: \"Reliability: repeats agree?\" with three small result rows from three groups agreeing (ticks). On \"accurate\" the accuracy card writes: \"Accuracy: is the product named correctly?\" with two rows: \"results match the known samples\" and \"still-head reading near the boiling point (supports, not proof)\" (the ladder thumbnail returns small with the 48 °C tick bright). As the accuracy rows settle, a small grey investigation prompt writes beside the propanal row (shown, not spoken): a litmus icon with a pale pink tip and the tag \"faint red? acid got in: check prompt distillation, clean glassware, sample handling\". Footer, small grey: \"Validity: right test. Reliability: repeats agree. Accuracy: right name.\" Bright at the end: the accuracy rows and the faint-red tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "tick"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk": [
+        "adjust",
+        "during the speech only one spoken row is on screen at a time, large, as a single hazard, harm and control line under the header \"Hazard / Harm / Control\": chromium(VI) (on \"waste\"), flammable alcohols and products (on \"flame\"), Tollens' reagent (on \"explosive\"), waste (on \"Organic residues\").",
+        "The risk assessment: Now the risks.",
+        "waste / flame / explosive / table",
+        "On the spoken cues: Each spoken row shrinks into the table as the next one comes up. On \"table\" the complete table (full text as \"Risk table\" below) settles at a calm reading size with every row equally bright, and a small chip \"Pause to read or copy the full table\" appears. On \"waste\" `m5x-waste-bottle-v1.png` appears small with a coded label \"Heavy metal waste: chromium\", and a second copy with \"Organic waste\" appears on \"Organic",
+        "explain",
+        "during the speech only one spoken row is on screen at a time, large, as a single hazard, harm and control line under the header \"Hazard / Harm / Control\": chromium(VI) (on \"waste\"), flammable alcohols and products (on \"flame\"), Tollens' reagent (on \"explosive\"), waste (on \"Organic residues\"). Each spoken row shrinks into the table as the next one comes up. On \"table\" the complete table (full text as \"Risk table\" below) settles at a calm reading size with every row equally bright, and a small chip \"Pause to read or copy the full table\" appears. On \"waste\" `m5x-waste-bottle-v1.png` appears small with a coded label \"Heavy metal waste: chromium\", and a second copy with \"Organic waste\" appears on \"Organic residues\". On \"flame\" `m7-fume-cupboard-v1.png` appears small beside the flammability row, tag \"distil propanal here\". Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\". On \"explosive\" the Tollens' row brightens with a terracotta tag \"make fresh, use at once, never store\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Quiet reading hold about 5 seconds on the full table (no countdown: this is a reading pause, not a question; the summary returns in key note 5).",
+        [
+            "chip pop",
+            "table build",
+            "Countdown ring",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: One line to keep.",
+        "Green says oxidised; the test says what.",
+        "On the spoken cues: Handwritten line: \"Green says oxidised; the test says what.\" Under \"Green says oxidised\" the green tube thumbnail; under \"the test says what\" a mini evidence table (mirror, brick red, red litmus). A small grey second line from c08a: \"Distil to catch the aldehyde, reflux to go all the way.\"",
+        "explain",
+        "the board clears. Handwritten line: \"Green says oxidised; the test says what.\" Under \"Green says oxidised\" the green tube thumbnail; under \"the test says what\" a mini evidence table (mirror, brick red, red litmus). A small grey second line from c08a: \"Distil to catch the aldehyde, reflux to go all the way.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "table build"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. In a demonstration, propan-1-ol is refluxed",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". `m7-reflux-apparatus-v1.png` small at the right (no tags, no arrows). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "sulfuric acid / distillate / trap",
+        "On the spoken cues: On \"sulfuric acid\" \"acidified potassium dichromate\" and \"dipped into the reaction mixture\" are underlined; a small chip \"flask: H₂SO₄ → litmus red anyway\" writes (s07 FixRail small: \"Word: validity\"; \"Feature: tested the flask, which contains acid\"). On \"distillate\" \"Explain why this conclusion is not valid\" and \"how the method should be changed\" are underlined; the FixRail's \"Fix: distil; test the distillate; run a",
+        "explain",
+        "the card stays, shrunk to the top. On \"sulfuric acid\" \"acidified potassium dichromate\" and \"dipped into the reaction mixture\" are underlined; a small chip \"flask: H₂SO₄ → litmus red anyway\" writes (s07 FixRail small: \"Word: validity\"; \"Feature: tested the flask, which contains acid\"). On \"distillate\" \"Explain why this conclusion is not valid\" and \"how the method should be changed\" are underlined; the FixRail's \"Fix: distil; test the distillate; run a blank\" lights, with a small distillation plate thumbnail. On \"trap\" a chip \"repeat the litmus test 3 times\" fades in and is crossed (caption \"repeats check reliability; the acid is still there\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed (A2 under Decisions).",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Pentan-2-ol and 2-methylbutan-2-ol are each warmed",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed (A2 under Decisions). No structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "adjust",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "secondary / mirror / orange",
+        "On the spoken cues: On \"secondary\" \"Pentan-2-ol\" underlines; its structure draws with the H on the C–OH carbon ringed, then oxidises to \"pentan-2-one, CH₃COCH₂CH₂CH₃\" (C=O navy); `m8-dichromate-green-v1.png` small. On \"mirror\" \"warmed with Tollens' reagent\" underlines; `m7-tollens-tube-clear-v1.png` small (tag \"ketone: no H on the carbonyl carbon\"). On \"orange\" \"2-methylbutan-2-ol\" underlines; its structure draws with the C–OH carbon",
+        "explain",
+        "the card stays, shrunk to the top. On \"secondary\" \"Pentan-2-ol\" underlines; its structure draws with the H on the C–OH carbon ringed, then oxidises to \"pentan-2-one, CH₃COCH₂CH₂CH₃\" (C=O navy); `m8-dichromate-green-v1.png` small. On \"mirror\" \"warmed with Tollens' reagent\" underlines; `m7-tollens-tube-clear-v1.png` small (tag \"ketone: no H on the carbonyl carbon\"). On \"orange\" \"2-methylbutan-2-ol\" underlines; its structure draws with the C–OH carbon ringed, \"no H\" (tag \"tertiary: no reaction\"), and `m8-dichromate-orange-v1.png` small. On \"the trap\" a chip \"pentan-2-ol: green, so silver mirror\" fades in and is crossed (caption \"green shows oxidation, not an aldehyde\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-handoff": [
+        "new",
+        "the board clears.",
+        "Decision rule and handoff: So, the colour tells you whether the alcohol was oxidised.",
+        "aldehyde / acid / Next",
+        "On the spoken cues: A three-row decision card lights on cue: \"Colour → oxidised? (green: 1° or 2°; orange: 3°)\"; on \"aldehyde\" \"Distil at once → aldehyde (mirror, brick red)\"; on \"acid\" \"Reflux, excess oxidant → acid (red litmus)\" and \"2° → ketone (no change)\"; a last row \"Test the distillate, with known samples\". On \"Next\" a chip \"Next: why are carboxylic acids acidic?\" slides in at the lower right.",
+        "explain",
+        "the board clears. A three-row decision card lights on cue: \"Colour → oxidised? (green: 1° or 2°; orange: 3°)\"; on \"aldehyde\" \"Distil at once → aldehyde (mirror, brick red)\"; on \"acid\" \"Reflux, excess oxidant → acid (red litmus)\" and \"2° → ketone (no change)\"; a last row \"Test the distillate, with known samples\". On \"Next\" a chip \"Next: why are carboxylic acids acidic?\" slides in at the lower right. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7P05C_ROWS = {
+    "hook": [
+        "adjust",
+        "`m7-ester-fruit-v1.png` small at the left; the banana brightens, the pineapple and pear dim (tag \"pentyl ethanoate: often described as banana\").",
+        "Hook (is 60% a fail?): Warm pentan-1-ol with ethanoic acid and a little concentrated sulfuric acid, and you make pentyl ethanoate, an ester that smells like bananas.",
+        "bananas / yield",
+        "On the spoken cues: `m7-reflux-apparatus-v1.png` medium at the centre, its flask labelled \"pentan-1-ol + ethanoic acid + conc. H₂SO₄\" (the amber liquid is not described as a colour). On \"bananas\" the ester's coded condensed formula writes under the plate: \"CH₃COOCH₂CH₂CH₂CH₂CH₃\" with the ester group ringed red (grey chip \"c10: alkyl first, alkanoate second\"). On \"sixty per cent\" a single yield ladder draws at the right and fills to 60%",
+        "explain",
+        "`m7-ester-fruit-v1.png` small at the left; the banana brightens, the pineapple and pear dim (tag \"pentyl ethanoate: often described as banana\"). `m7-reflux-apparatus-v1.png` medium at the centre, its flask labelled \"pentan-1-ol + ethanoic acid + conc. H₂SO₄\" (the amber liquid is not described as a colour). On \"bananas\" the ester's coded condensed formula writes under the plate: \"CH₃COOCH₂CH₂CH₂CH₂CH₃\" with the ester group ringed red (grey chip \"c10: alkyl first, alkanoate second\"). On \"sixty per cent\" a single yield ladder draws at the right and fills to 60% (tag \"class result\"), with a \"?\" chip beside it. On \"yield\" the fruit plate leaves. Heading writes: \"Making an ester: is 60% a fail?\" Bright at the end: the heading, the plate, the 60% bar. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "aim-limiting": [
+        "new",
+        "task line \"Aim: does excess ethanoic acid raise the ester yield?\".",
+        "The aim, and the limiting reactant: The aim: to find out whether excess ethanoic acid increases the yield of pentyl ethanoate.",
+        "twice / right",
+        "On the spoken cues: The c10 equation writes small at the top: \"CH₃COOH + C₅H₁₁OH ⇌ CH₃COOC₅H₁₁ + H₂O\" (C₅H₁₁ as a drawn straight chain, grey tag \"straight chain: pentan-1-ol\"). On \"one to one\" two ratio chips write: \"1 : 1\" (grey-blue) and, on \"twice\", \"2 : 1 acid : alcohol\" (teal), each with a pair of mole blocks (one acid block and one alcohol block; two acid blocks and one alcohol block). On \"sets the most ester\" the alcohol block",
+        "explain",
+        "task line \"Aim: does excess ethanoic acid raise the ester yield?\". The c10 equation writes small at the top: \"CH₃COOH + C₅H₁₁OH ⇌ CH₃COOC₅H₁₁ + H₂O\" (C₅H₁₁ as a drawn straight chain, grey tag \"straight chain: pentan-1-ol\"). On \"one to one\" two ratio chips write: \"1 : 1\" (grey-blue) and, on \"twice\", \"2 : 1 acid : alcohol\" (teal), each with a pair of mole blocks (one acid block and one alcohol block; two acid blocks and one alcohol block). On \"sets the most ester\" the alcohol block in each pair rings navy (no block disappears), tag \"limiting reactant: sets the most ester you could make\", with two small grey tags under the chips: \"2 : 1: alcohol is limiting\" and \"1 : 1: both set the same maximum\". On \"right\" a navy arrow \"shifts right →\" writes over the equation's ⇌ (grey chip \"c10: excess reactant, more ester\"). Bright at the end: the two ratio chips and the limiting tag (the grey tags dim). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "reflux-setup": [
+        "adjust",
+        "`m7-reflux-apparatus-v1.png` centre.",
+        "The reflux set-up: Measure the pentan-1-ol and the ethanoic acid into a round-bottom flask, and add a few anti-bumping granules.",
+        "catalyst / open / escape",
+        "On the spoken cues: Method card in the right zone, one step per cue, earlier steps dimming: \"1 pentan-1-ol 4.41 g (about 5.4 mL) + glacial ethanoic acid (2.9 or 5.7 mL)\" (coded pours into the flask outline; no hands); \"2 anti-bumping granules\" (tag \"smooth boiling\"); on \"catalyst\" \"3 teacher adds about 10 drops conc. H₂SO₄ to the cooled mixture\" (a coded dropper outline; grey chip \"c10: catalyst, not a reactant\"). On \"open\" a green",
+        "explain",
+        "`m7-reflux-apparatus-v1.png` centre. Method card in the right zone, one step per cue, earlier steps dimming: \"1 pentan-1-ol 4.41 g (about 5.4 mL) + glacial ethanoic acid (2.9 or 5.7 mL)\" (coded pours into the flask outline; no hands); \"2 anti-bumping granules\" (tag \"smooth boiling\"); on \"catalyst\" \"3 teacher adds about 10 drops conc. H₂SO₄ to the cooled mixture\" (a coded dropper outline; grey chip \"c10: catalyst, not a reactant\"). On \"open\" a green ring circles the condenser's top (tag \"never seal a heated system\"). On \"a hundred degrees\" a small temperature strip writes beside the plate: \"water bath: 100 °C max\" with a grey cross, against \"this mixture needs more than 100 °C to reflux\"; step \"4 electric heating mantle, about 40 min\" writes (grey tag \"no flame: flammable liquids\"). On \"escapes\" the vapour return (c06, c10) runs twice. Bright at the end: the plate with the vapour loop, the open-top ring, step 4. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone: on \"mole ratio\" \"Independent: acid : alcohol (1 : 1 or 2 : 1)\" with the two ratio chips; on \"yield\" \"Dependent: percentage yield\"; on \"same\" \"Controlled:\" with its list writing one item per phrase, each pen-linked to the plate or method card: \"4.41 g pentan-1-ol\", \"10 drops conc.",
+        "The variables: What changes, and what stays the same?",
+        "yield / work-up",
+        "On the spoken cues: H₂SO₄\", \"40 min reflux, same mantle setting\"; on \"work-up\" \"matched work-up: same washes, same drying, same transfers\" writes and stays bright (tag \"work-up: getting the ester out and cleaning it\"). Bright at the end: the controlled list with the work-up line.",
+        "explain",
+        "the variables card writes in the right zone: on \"mole ratio\" \"Independent: acid : alcohol (1 : 1 or 2 : 1)\" with the two ratio chips; on \"yield\" \"Dependent: percentage yield\"; on \"same\" \"Controlled:\" with its list writing one item per phrase, each pen-linked to the plate or method card: \"4.41 g pentan-1-ol\", \"10 drops conc. H₂SO₄\", \"40 min reflux, same mantle setting\"; on \"work-up\" \"matched work-up: same washes, same drying, same transfers\" writes and stays bright (tag \"work-up: getting the ester out and cleaning it\"). Bright at the end: the controlled list with the work-up line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "work-up": [
+        "adjust",
+        "the board clears.",
+        "Getting it out and weighing it: After cooling, pour the mixture into a separating funnel with cold water.",
+        "layer / dioxide / weigh",
+        "On the spoken cues: Task line \"Get it out\". `m7-separating-funnel-cloudy-v1.png` medium at the centre-left (label \"mixture + cold water\"). On \"layer\" it cross-fades to `m7-separating-funnel-clear-v1.png` (aligned pair); the upper layer is labelled \"ester layer (0.88 g/mL)\" and the lower \"water layer\", grey tag \"check densities: don't assume\" (site wording). On \"sodium hydrogen carbonate\" a navy chip writes \"wash: NaHCO₃(aq)\" (grey chip",
+        "explain",
+        "the board clears. Task line \"Get it out\". `m7-separating-funnel-cloudy-v1.png` medium at the centre-left (label \"mixture + cold water\"). On \"layer\" it cross-fades to `m7-separating-funnel-clear-v1.png` (aligned pair); the upper layer is labelled \"ester layer (0.88 g/mL)\" and the lower \"water layer\", grey tag \"check densities: don't assume\" (site wording). On \"sodium hydrogen carbonate\" a navy chip writes \"wash: NaHCO₃(aq)\" (grey chip \"c09: the fizz test\"); the funnel bubbles (c10) run in the lower layer; on \"dioxide\" the vent arrow at the stopper reads \"vent often, away from people\". On \"anhydrous\" the funnel shrinks left and the new `m7-ester-drying-flask-v1.png` appears medium (tag \"anhydrous MgSO₄: no water in it; clumps as it takes up water\"; on \"pour it\" a small grey tag \"pour off the liquid, leave the solid behind\"). On \"weigh\" `m6-analytical-balance-v1.png` appears small at the right with a coded readout strip: \"vial 12.36 g\", then \"vial + ester 16.26 g\", then \"ester 3.90 g\". Small step strip under the plates: \"water → NaHCO₃ wash → dry → weigh\" (grey chip \"c10: why each wash works\"). Bright at the end: the drying plate, the balance and \"ester 3.90 g\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "yield-calc": [
+        "new",
+        "the board clears.",
+        "The yield, step by step: Now the yield, for one two to one group.",
+        "moles / sixty per cent",
+        "On the spoken cues: Task line \"Percentage yield\". The mole bridge writes in four stages, one per cue, each earlier stage dimming but staying legible: \"n(pentan-1-ol) = 4.41 g ÷ 88.15 g mol⁻¹ = 0.0500 mol\"; on \"One mole\" \"1 : 1 → n(ester) max = 0.0500 mol\" (the equation's coefficients pulse once); on \"Times the ester's\" \"m(ester) max = 0.0500 × 130.18 = 6.51 g\" (tag \"theoretical maximum\"); on \"sixty per cent\" \"% yield = 3.90 ÷ 6.51 ×",
+        "explain",
+        "the board clears. Task line \"Percentage yield\". The mole bridge writes in four stages, one per cue, each earlier stage dimming but staying legible: \"n(pentan-1-ol) = 4.41 g ÷ 88.15 g mol⁻¹ = 0.0500 mol\"; on \"One mole\" \"1 : 1 → n(ester) max = 0.0500 mol\" (the equation's coefficients pulse once); on \"Times the ester's\" \"m(ester) max = 0.0500 × 130.18 = 6.51 g\" (tag \"theoretical maximum\"); on \"sixty per cent\" \"% yield = 3.90 ÷ 6.51 × 100 = 59.9% ≈ 60%\". A small grey formula chip sits at the top throughout: \"% yield = mass collected ÷ maximum mass × 100\". Bright at the end: the 60% line and the formula chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "ceiling-losses": [
+        "adjust",
+        "the board clears; the yield ladder returns large at the centre (teal, 2:1).",
+        "Two limits: the ceiling and the losses: So where did the rest go?",
+        "ceiling / losses",
+        "On the spoken cues: On \"stops short\" a soft dashed navy band draws somewhere below 100%, with no number on it (tag \"equilibrium limit: below 100%, not measured here\"). On \"ceiling\" the region above the band greys out (tag \"can't get past this at equilibrium\"). On \"losses\" the gap from the band down to 60% fills with terracotta hatching, labelled \"losses\", and three small chips stack beside it, each with a thumbnail: \"glassware\"",
+        "explain",
+        "the board clears; the yield ladder returns large at the centre (teal, 2:1). On \"stops short\" a soft dashed navy band draws somewhere below 100%, with no number on it (tag \"equilibrium limit: below 100%, not measured here\"). On \"ceiling\" the region above the band greys out (tag \"can't get past this at equilibrium\"). On \"losses\" the gap from the band down to 60% fills with terracotta hatching, labelled \"losses\", and three small chips stack beside it, each with a thumbnail: \"glassware\" (`m7-separating-funnel-clear-v1.png`), \"washes\" (the funnel's lower layer), \"drying agent\" (`m7-ester-drying-flask-v1.png`). The solid fill stays at 60% (\"measured\"). Bright at the end: the ceiling line, the hatched losses, the 60% fill. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "reliability": [
+        "new",
+        "task line \"Reliability\".",
+        "Reliable results, and the answer to the aim: Three groups ran each ratio.",
+        "agree / yield",
+        "On the spoken cues: A small results table writes in the right zone (grey tag \"example data\"): rows \"1 : 1\" and \"2 : 1\"; columns \"group A, B, C, mean\"; values 41, 38, 44, mean 41 and 60, 57, 63, mean 60. The class dot strip draws at the centre: a 30 to 70% scale, three grey-blue dots near 41 and three teal dots near 60, each mean a short bar. On \"agree\" a bracket spans each cluster (\"spread about 6 points\"; reliability card header:",
+        "explain",
+        "task line \"Reliability\". A small results table writes in the right zone (grey tag \"example data\"): rows \"1 : 1\" and \"2 : 1\"; columns \"group A, B, C, mean\"; values 41, 38, 44, mean 41 and 60, 57, 63, mean 60. The class dot strip draws at the centre: a 30 to 70% scale, three grey-blue dots near 41 and three teal dots near 60, each mean a short bar. On \"agree\" a bracket spans each cluster (\"spread about 6 points\"; reliability card header: \"Reliability: repeats agree?\" with a tick). On \"twenty points\" a larger bracket spans the two means (\"difference about 19 points: much bigger than the spread\"). On \"yield\" the aim line returns at the top with a green tick: \"excess acid → higher yield in these runs (fits c10's prediction)\". Bright at the end: the two clusters, the difference bracket and the aim tick. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "tick",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "valid-accurate": [
+        "new",
+        "the board clears.",
+        "Accurate, and valid?: Is sixty per cent accurate?",
+        "lost / high / valid / under these conditions",
+        "On the spoken cues: Task line \"Accurate? Valid?\". The single 2:1 yield ladder (teal) stands small at the left, as in scene 7: unnumbered limit band, hatched losses, 60% fill. On \"accurate\" an accuracy card header writes: \"Accuracy: how close to the true value?\"; on \"dry and pure\" its row writes \"dry, pure ester weighed correctly → correct isolated yield\" (grey gloss \"isolated yield: the ester you actually got out\"); on \"lost\" the",
+        "explain",
+        "the board clears. Task line \"Accurate? Valid?\". The single 2:1 yield ladder (teal) stands small at the left, as in scene 7: unnumbered limit band, hatched losses, 60% fill. On \"accurate\" an accuracy card header writes: \"Accuracy: how close to the true value?\"; on \"dry and pure\" its row writes \"dry, pure ester weighed correctly → correct isolated yield\" (grey gloss \"isolated yield: the ester you actually got out\"); on \"lost\" the ladder's hatched gap pulses and a chip writes \"repeats show variation; they can't recover lost ester\". On \"high\" the wet-mass flag appears on a small balance thumbnail: \"ester + water + acid → mass too high\" (tag \"wash and dry before weighing\"). The accuracy card then dims. On \"valid\" the validity card header writes: \"Validity: does it test what it was meant to?\" with the row \"matched work-up: helps\" (green), and three grey evaluation questions write one per phrase: on \"change the washes\" \"Did each work-up recover the same share of ester?\"; on \"forty minutes\" \"Did each reaction get as far as it could?\"; then silently \"Was each product equally dry and pure?\" (tag \"check these before blaming equilibrium alone\"). On \"under these conditions\" the aim line writes narrowed: \"excess acid → higher isolated yield, under these conditions\". Footer, small grey: \"Validity: fair test. Reliability: repeats agree. Accuracy: close to the true yield.\" Bright at the end: the validity row with its questions, and the narrowed aim line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "identify": [
+        "adjust",
+        "task line \"Identify\".",
+        "Is it really the ester?: Is it really the ester?",
+        "support / directly",
+        "On the spoken cues: Three check chips write at the right: on \"own layer\" \"separate upper layer\" (the clear funnel plate thumbnail); on \"no visible fizz\" \"no visible fizz with NaHCO₃: little acid left\"; on \"support\" `m7-school-distillation-setup-v1.png` small with a readout chip \"if distilled: collects near 149 °C\" and a grey tag \"supporting evidence, not proof of purity (pentan-1-ol boils at 138 °C)\"; a small grey bracket joins the",
+        "explain",
+        "task line \"Identify\". Three check chips write at the right: on \"own layer\" \"separate upper layer\" (the clear funnel plate thumbnail); on \"no visible fizz\" \"no visible fizz with NaHCO₃: little acid left\"; on \"support\" `m7-school-distillation-setup-v1.png` small with a readout chip \"if distilled: collects near 149 °C\" and a grey tag \"supporting evidence, not proof of purity (pentan-1-ol boils at 138 °C)\"; a small grey bracket joins the three chips: \"together: supports, doesn't prove\". On \"directly\" a terracotta chip \"sniff the vial\" fades in and is crossed (caption \"waft gently; never sniff directly\", grey tag \"NSW Chemical Safety in Schools\"). Bright at the end: the three check chips and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk": [
+        "adjust",
+        "during the narration the right zone shows **only the current row** of the risk table, three columns \"Hazard / Harm / Control\", in short wording (Revision 2, learning L4): on \"sulfuric acid\" its row; on \"flammable\" glacial ethanoic acid; on \"flames\" pentan-1-ol and pentyl ethanoate (\"fire; serious eye damage; harmful vapour\"); on \"organic waste\" waste.",
+        "The risk assessment: Now the risks.",
+        "flammable / flames / organic waste",
+        "On the spoken cues: Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full seven-row table (\"Risk table\" below, including the funnel pressure, low-hazard and hot-glassware rows) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". On",
+        "explain",
+        "during the narration the right zone shows **only the current row** of the risk table, three columns \"Hazard / Harm / Control\", in short wording (Revision 2, learning L4): on \"sulfuric acid\" its row; on \"flammable\" glacial ethanoic acid; on \"flames\" pentan-1-ol and pentyl ethanoate (\"fire; serious eye damage; harmful vapour\"); on \"organic waste\" waste. Each row slides up to a one-word grey chip when the next arrives. After the last spoken word the full seven-row table (\"Risk table\" below, including the funnel pressure, low-hazard and hot-glassware rows) writes in at reading size in the right two thirds, with the line \"Pause to read the full risk table\". Glasses (`m5x-safety-glasses-v1.png`) and gloves (`m5x-gloves-v1.png`) at the table head under \"always\". On \"flames\" `m7-fume-cupboard-v1.png` appears small beside the flammability row, tag \"measure the acids here\". On \"organic waste\" `m5x-waste-bottle-v1.png` appears small with a coded label \"Organic waste\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 4 seconds (quiet reading hold on the full table; key note 6 is a summary of it, not the table). Hold about 4 seconds (quiet reading hold on the full table; key note 6 is a summary of it, not the table).",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 4 seconds (quiet reading hold on the full table; key note 6 is a summary of it, not the table)"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: One line to keep.",
+        "Equilibrium sets the ceiling; the work-up decides how close you get.",
+        "On the spoken cues: Handwritten line: \"Equilibrium sets the ceiling; the work-up decides how close you get.\" Under it the 2:1 yield ladder thumbnail: dashed ceiling, hatched losses, solid fill. A small grey second line: \"Yield from moles of the limiting reactant.\"",
+        "explain",
+        "the board clears. Handwritten line: \"Equilibrium sets the ceiling; the work-up decides how close you get.\" Under it the 2:1 yield ladder thumbnail: dashed ceiling, hatched losses, solid fill. A small grey second line: \"Yield from moles of the limiting reactant.\" Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. A student refluxes three point seven",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed (A1 under Decisions), with the molar masses on the card and the tag \"HSC-style question, written for HSCScience\". `m7-reflux-apparatus-v1.png` small at the right (no tags, no arrows). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "DrawPath",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "ester / fifty five per cent / equilibrium / trap",
+        "On the spoken cues: On \"moles of alcohol\" \"3.70 g of butan-1-ol\" and \"74.12 g mol⁻¹\" are underlined; the mole bridge writes \"n = 3.70 ÷ 74.12 = 0.0499 mol\"; on \"ester\" \"excess ethanoic acid\" is underlined (tag \"alcohol is limiting\") and \"1 : 1 → 0.0499 mol ester; × 116.16 = 5.80 g\" writes. On \"fifty five per cent\" \"3.19 g of butyl ethanoate\" is underlined and \"% yield = 3.19 ÷ 5.80 × 100 = 55.0%\" writes bright. On \"equilibrium\" \"less",
+        "explain",
+        "the card stays, shrunk to the top. On \"moles of alcohol\" \"3.70 g of butan-1-ol\" and \"74.12 g mol⁻¹\" are underlined; the mole bridge writes \"n = 3.70 ÷ 74.12 = 0.0499 mol\"; on \"ester\" \"excess ethanoic acid\" is underlined (tag \"alcohol is limiting\") and \"1 : 1 → 0.0499 mol ester; × 116.16 = 5.80 g\" writes. On \"fifty five per cent\" \"3.19 g of butyl ethanoate\" is underlined and \"% yield = 3.19 ÷ 5.80 × 100 = 55.0%\" writes bright. On \"equilibrium\" \"less than 100%\" is underlined and a small yield ladder shows a dashed ceiling and hatched losses (two chips \"equilibrium\" and \"losses\"). On \"trap\" a chip \"3.19 ÷ 3.70 × 100 = 86%\" fades in and is crossed (caption \"masses of different substances: use moles\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "adjust",
+        "question card, worded as printed (A2 under Decisions).",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A student makes propyl ethanoate. She",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed (A2 under Decisions). `m7-separating-funnel-clear-v1.png` small at the right (no labels). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "water / weighing",
+        "On the spoken cues: On \"water\" \"without washing or drying it\" and \"104%\" are underlined; the wet-mass flag writes on a balance thumbnail: \"ester + water + acid + alcohol → mass too high\" (FixRail small: \"Word: accuracy\"; \"Feature: weighed wet and unwashed\"). On \"weighing\" \"describe two changes\" is underlined and the FixRail's \"Fix\" lights with two rows: \"1 wash with NaHCO₃(aq), then water\"; \"2 dry with anhydrous MgSO₄ (distil if",
+        "explain",
+        "the card stays, shrunk to the top. On \"water\" \"without washing or drying it\" and \"104%\" are underlined; the wet-mass flag writes on a balance thumbnail: \"ester + water + acid + alcohol → mass too high\" (FixRail small: \"Word: accuracy\"; \"Feature: weighed wet and unwashed\"). On \"weighing\" \"describe two changes\" is underlined and the FixRail's \"Fix\" lights with two rows: \"1 wash with NaHCO₃(aq), then water\"; \"2 dry with anhydrous MgSO₄ (distil if possible)\", with the drying plate thumbnail. On \"The trap\" a chip \"104%: it went to completion\" fades in and is crossed (caption \"100% is the most possible\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-handoff": [
+        "new",
+        "the board clears.",
+        "Decision rule and handoff: So: reflux to approach equilibrium, wash and dry to get the ester out, and calculate the yield from moles of the limiting reactant.",
+        "yield / Next",
+        "On the spoken cues: A four-row decision card lights on cue: \"Reflux (mantle, open top) → approach equilibrium\"; \"Wash, dry, weigh → get the ester out\"; \"Yield: moles of limiting reactant → max mass → %\"; on \"yield\" \"Ceiling: equilibrium. Gap: losses.\"; a last row \"Fair comparison: matched work-up, dry and pure product\". On \"Next\" a chip \"Next: how do amines and amides differ?\" slides in at the lower right.",
+        "explain",
+        "the board clears. A four-row decision card lights on cue: \"Reflux (mantle, open top) → approach equilibrium\"; \"Wash, dry, weigh → get the ester out\"; \"Yield: moles of limiting reactant → max mass → %\"; on \"yield\" \"Ceiling: equilibrium. Gap: losses.\"; a last row \"Fair comparison: matched work-up, dry and pure product\". On \"Next\" a chip \"Next: how do amines and amides differ?\" slides in at the lower right. Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M7P06C_ROWS = {
+    "hook": [
+        "adjust",
+        "`m7-soap-tube-soft-v1.png` medium at the centre-left (chip \"soap | soft\").",
+        "Hook (soft water, hard water): Shake a little soap solution in pure water, and you get a tall froth.",
+        "froth / both",
+        "On the spoken cues: On \"froth\" the c12 shake runs (rotation only) and settles. On \"hard water\" `m7-soap-tube-hard-v1.png` fades in at the centre-right (a fade-in, never a cross-fade from the soft plate; chip \"soap | hard\"; tag \"cloudy, little froth\"). On \"both\" two smaller copies of the soft plate appear at the far right, chips \"detergent | soft\" and \"detergent | hard\" (tag \"froths in both\"). Heading writes: \"Soap or detergent: which",
+        "explain",
+        "`m7-soap-tube-soft-v1.png` medium at the centre-left (chip \"soap | soft\"). On \"froth\" the c12 shake runs (rotation only) and settles. On \"hard water\" `m7-soap-tube-hard-v1.png` fades in at the centre-right (a fade-in, never a cross-fade from the soft plate; chip \"soap | hard\"; tag \"cloudy, little froth\"). On \"both\" two smaller copies of the soft plate appear at the far right, chips \"detergent | soft\" and \"detergent | hard\" (tag \"froths in both\"). Heading writes: \"Soap or detergent: which survives hard water?\" Bright at the end: the heading, the soap pair, the detergent pair (one item). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "aim-tubes": [
+        "adjust",
+        "task line \"Aim: compare soap and detergent in soft and hard water\".",
+        "The aim, and the tubes: The aim: to compare how a soap and a detergent behave in soft and hard water.",
+        "distilled / controls",
+        "On the spoken cues: `m6-wash-bottle-v1.png` small at the left (coded label \"distilled water\"; tag \"distilled: dissolved ions removed\"). On \"calcium chloride\" a `p03-dropper-bottle-v1.png` copy appears beside it with a coded label \"CaCl₂(aq), 0.001 mol/L\" (tag \"hard water: about 100 mg/L as CaCO₃, moderately hard, like some tap water\"), and a teal Ca²⁺ ball chip appears with a small grey Cl⁻ chip and the tag \"added: Ca²⁺ (and Cl⁻)\". On",
+        "explain",
+        "task line \"Aim: compare soap and detergent in soft and hard water\". `m6-wash-bottle-v1.png` small at the left (coded label \"distilled water\"; tag \"distilled: dissolved ions removed\"). On \"calcium chloride\" a `p03-dropper-bottle-v1.png` copy appears beside it with a coded label \"CaCl₂(aq), 0.001 mol/L\" (tag \"hard water: about 100 mg/L as CaCO₃, moderately hard, like some tap water\"), and a teal Ca²⁺ ball chip appears with a small grey Cl⁻ chip and the tag \"added: Ca²⁺ (and Cl⁻)\". On \"sodium chloride\" a grey chip \"optional check: soap in NaCl(aq), same Cl⁻\" writes and dims (not added to the line-up). On \"pure detergent\" two more dropper bottle copies appear, labels \"soap solution, 0.4% (pure soap, mainly sodium oleate)\" and \"detergent: sodium dodecyl sulfate, 0.1%\" (grey chip \"c12: sulfate head\"). On \"four tubes\" the tube line-up builds: four plates in a row (soft plate for soap-soft, detergent-soft and detergent-hard; the hard plate is not shown yet, so the fourth slot holds an empty tube outline for soap-hard), each with its chip. On \"controls\" two empty tube outlines join at the end, chips \"water only | soft\" and \"water only | hard\" (tag \"control: same treatment, no cleaning agent\"). Bright at the end: the six chips and the control tag. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "froth-test": [
+        "new",
+        "method card in the right zone, one step per cue, earlier steps dimming: \"1 10 mL water in each tube (same size tubes)\"; \"2 5 drops of solution (soap or detergent)\" (coded dropper outlines, no hands); \"3 stopper; shake 10 times, same way\" (the c12 shake runs on all six tubes together); \"4 stand 30 s; measure froth height\".",
+        "Part A: the froth test: Part one is a froth test.",
+        "height / none",
+        "On the spoken cues: On \"height\" the froth ruler slides beside the soap-soft plate, zero at the liquid surface (tag \"froth height: liquid surface to top of froth\"). On \"none\" the two control slots show a thin coded line of bubbles only, chips \"under 0.2 cm\". Bright at the end: the ruler, step 4 and the control chips.",
+        "explain",
+        "method card in the right zone, one step per cue, earlier steps dimming: \"1 10 mL water in each tube (same size tubes)\"; \"2 5 drops of solution (soap or detergent)\" (coded dropper outlines, no hands); \"3 stopper; shake 10 times, same way\" (the c12 shake runs on all six tubes together); \"4 stand 30 s; measure froth height\". On \"height\" the froth ruler slides beside the soap-soft plate, zero at the liquid surface (tag \"froth height: liquid surface to top of froth\"). On \"none\" the two control slots show a thin coded line of bubbles only, chips \"under 0.2 cm\". Bright at the end: the ruler, step 4 and the control chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "variables": [
+        "new",
+        "the variables card writes in the right zone: on \"Two independent\" \"Independent: agent (soap, detergent, none); water (soft, hard)\" with the colour chips; on \"forms\" \"Dependent: froth height (cm); cloudiness or solid\"; on \"same\" \"Controlled:\" with its list writing one item per phrase, each pen-linked to the method card: \"10 mL water\", \"same size tubes\", \"5 drops\", \"same stock for each agent\", \"10 shakes\", \"30 s\".",
+        "The variables: What changes, and what stays the same?",
+        "forms / same",
+        "On the spoken cues: On \"how much hard water changes it\" a grey chip writes \"compare each agent with its own soft-water tube (soap 0.4%, SDS 0.1%)\". A grey footer: \"Controls: water only, soft and hard\". Bright at the end: the controlled list.",
+        "explain",
+        "the variables card writes in the right zone: on \"Two independent\" \"Independent: agent (soap, detergent, none); water (soft, hard)\" with the colour chips; on \"forms\" \"Dependent: froth height (cm); cloudiness or solid\"; on \"same\" \"Controlled:\" with its list writing one item per phrase, each pen-linked to the method card: \"10 mL water\", \"same size tubes\", \"5 drops\", \"same stock for each agent\", \"10 shakes\", \"30 s\". On \"how much hard water changes it\" a grey chip writes \"compare each agent with its own soft-water tube (soap 0.4%, SDS 0.1%)\". A grey footer: \"Controls: water only, soft and hard\". Bright at the end: the controlled list. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "froth-results": [
+        "adjust",
+        "the empty soap-hard slot fills: `m7-soap-tube-hard-v1.png` fades in (on \"cloudy\"; chip \"0.6 cm; cloudy, white flecks\").",
+        "Part A: the results: Here are some example results.",
+        "cloudy / detergent's",
+        "On the spoken cues: The froth ruler reads each tube in turn, value chips \"6.0 cm\", \"0.6 cm\", \"6.4 cm\", \"6.1 cm\" (tag \"example results, mean of 3\", shown from the first value). These four values are hypothetical example data (Decisions); they are on screen only, never spoken. Each agent's pair sits side by side, so the eye compares soap with soap and detergent with detergent. The froth bars chart draws small under the line-up. On",
+        "explain",
+        "the empty soap-hard slot fills: `m7-soap-tube-hard-v1.png` fades in (on \"cloudy\"; chip \"0.6 cm; cloudy, white flecks\"). The froth ruler reads each tube in turn, value chips \"6.0 cm\", \"0.6 cm\", \"6.4 cm\", \"6.1 cm\" (tag \"example results, mean of 3\", shown from the first value). These four values are hypothetical example data (Decisions); they are on screen only, never spoken. Each agent's pair sits side by side, so the eye compares soap with soap and detergent with detergent. The froth bars chart draws small under the line-up. On \"detergent's\" the two detergent bars pulse, joined by a bracket \"detergent: hard vs soft, little change\"; the soap pair's bars are joined by a terracotta bracket \"soap: hard vs soft, big drop\". Bright at the end: the soap-hard plate, the bars and the two tags. Hold about 1 second. Hold about 1 second.",
+        [
+            "chip pop",
+            "DrawPath",
+            "bar fill",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "why-scum": [
+        "new",
+        "the board clears; task line \"Why?\".",
+        "Why? recall the scum: Why?",
+        "scum / soluble",
+        "On the spoken cues: The c12 scum lock runs at the centre: two soap symbols swing their heads onto one teal Ca²⁺ ball, the trio turns grey-white and drops as a flake (grey chip \"c12\"); on \"scum\" the equation writes small: \"2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)\" (tag \"stearate as the model soap; the class soap's oleate reacts the same way\"). On \"soluble\" a detergent symbol with a sulfate head (violet \"−\") meets a Ca²⁺ ball and",
+        "explain",
+        "the board clears; task line \"Why?\". The c12 scum lock runs at the centre: two soap symbols swing their heads onto one teal Ca²⁺ ball, the trio turns grey-white and drops as a flake (grey chip \"c12\"); on \"scum\" the equation writes small: \"2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)\" (tag \"stearate as the model soap; the class soap's oleate reacts the same way\"). On \"soluble\" a detergent symbol with a sulfate head (violet \"−\") meets a Ca²⁺ ball and both stay surrounded by water molecules (tag \"calcium dodecyl sulfate: much more soluble\"). On \"keeps working\" a chip \"detergent = stronger soap\" fades in and is crossed (caption \"same action; the head differs\"). Bright at the end: the equation, the soluble-head tag, the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Hold about 1 second"
+    ],
+    "oil-test": [
+        "adjust",
+        "task line \"Part B: oil test\".",
+        "Part B: the oil test: Froth isn't cleaning, so part two tests how well each mixture keeps oil spread through the water.",
+        "reappear / sooner",
+        "On the spoken cues: `m7-oil-water-tube-layers-v1.png` medium at the centre (chip \"water only + oil\"), the c12 shake runs and the plate cross-fades to `m7-oil-water-tube-emulsion-v1.png`, then back to layers as the oil timer stops (value chip \"about 40 s\", tag \"example results\"). On \"reappear\" a method step writes in the right zone: \"fresh tubes; add 1 mL oil; stopper; shake 10 times; time until a clear oil layer reappears (stop at 10",
+        "explain",
+        "task line \"Part B: oil test\". `m7-oil-water-tube-layers-v1.png` medium at the centre (chip \"water only + oil\"), the c12 shake runs and the plate cross-fades to `m7-oil-water-tube-emulsion-v1.png`, then back to layers as the oil timer stops (value chip \"about 40 s\", tag \"example results\"). On \"reappear\" a method step writes in the right zone: \"fresh tubes; add 1 mL oil; stopper; shake 10 times; time until a clear oil layer reappears (stop at 10 min)\", with the dependent-variable label \"measures: how long the oil stays dispersed (not oil removed from fabric)\". The line-up returns small: on \"it stays cloudy much longer\" the soap-soft, detergent-soft and detergent-hard slots show the emulsion plate with timers reading \"> 10 min\"; on \"sooner\" the soap-hard slot shows the emulsion plate cross-fading to the layers plate with its timer at \"about 2 min\" (tag \"example results\"). Bright at the end: the four timers and the method step. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 1 second"
+    ],
+    "oil-agrees": [
+        "new",
+        "the board clears.",
+        "Why the oil test agrees: That cloudiness is an emulsion: tiny oil droplets spread through the water.",
+        "faster / stronger",
+        "On the spoken cues: The free soap counter runs: left \"soft water\": ten soap symbols drift in and coat two yellow oil droplets, tails pointing into each droplet and heads outward (grey chip \"c12: tails into oil, heads into water\"; tag \"coated droplet: an oil droplet, not a micelle\"); the two coated droplets drift past each other without joining. Right \"hard water\": ten soap symbols, six lock onto teal Ca²⁺ balls and turn grey (scum),",
+        "explain",
+        "the board clears. The free soap counter runs: left \"soft water\": ten soap symbols drift in and coat two yellow oil droplets, tails pointing into each droplet and heads outward (grey chip \"c12: tails into oil, heads into water\"; tag \"coated droplet: an oil droplet, not a micelle\"); the two coated droplets drift past each other without joining. Right \"hard water\": ten soap symbols, six lock onto teal Ca²⁺ balls and turn grey (scum), four left; they cover only part of two droplets, and the bare patches touch and the droplets merge (on \"faster\"). A chip \"soap dissolves the oil\" fades in and is crossed as \"the coating\" is spoken (caption \"coated and emulsified, not dissolved\"). On \"stronger\" the froth bars and the four timers return small side by side with one bracket \"same pattern: two tests agree\" (tag \"example results\"). Bright at the end: the two panels and the bracket. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "reliability": [
+        "new",
+        "task line \"Reliability\".",
+        "Reliable?: Is it reliable?",
+        "reliable",
+        "On the spoken cues: A small results table writes in the right zone (tag \"example results\"): rows \"soap | soft\", \"soap | hard\", \"detergent | soft\", \"detergent | hard\"; columns \"trial 1, 2, 3, mean\" (values as Decisions). On \"agree\" brackets span each row's three values (\"within 0.4 cm\") and the reliability card header writes: \"Reliability: repeats agree?\" with a tick. On \"way off\" a ghost fourth value \"3.1 cm\" appears in the soap-soft",
+        "explain",
+        "task line \"Reliability\". A small results table writes in the right zone (tag \"example results\"): rows \"soap | soft\", \"soap | hard\", \"detergent | soft\", \"detergent | hard\"; columns \"trial 1, 2, 3, mean\" (values as Decisions). On \"agree\" brackets span each row's three values (\"within 0.4 cm\") and the reliability card header writes: \"Reliability: repeats agree?\" with a tick. On \"way off\" a ghost fourth value \"3.1 cm\" appears in the soap-soft row with a terracotta ring and a tag \"investigate and report: fewer shakes? wrong drops?\" Bright at the end: the brackets, the tick and the ringed value. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "tick",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "valid-accurate": [
+        "new",
+        "the validity card header writes: \"Validity: is the difference caused by the agent and the water, not the method?\" with rows writing on cue, each with a s07 FixRail mini (feature, fix): \"shaking varies → same count, same length, one person\"; \"froth collapses → read all at 30 s\"; \"commercial detergent may contain softeners → use pure SDS\".",
+        "Valid? accurate?: Hand shaking varies, and the froth depends on it, so count the shakes, keep them the same length, and have one person shake every tube.",
+        "average",
+        "On the spoken cues: On \"accuracy\" the accuracy card header writes: \"Accuracy: close to the true froth height?\" with the froth ruler on the soap-soft plate: a coded uneven froth top, a dashed line at its average (tag \"read here, at eye level\") and a crossed dashed line at the tallest bubble. Footer, small grey: \"Validity: fair test. Reliability: repeats agree. Accuracy: true reading.\" Bright at the end: the three validity rows and the",
+        "explain",
+        "the validity card header writes: \"Validity: is the difference caused by the agent and the water, not the method?\" with rows writing on cue, each with a s07 FixRail mini (feature, fix): \"shaking varies → same count, same length, one person\"; \"froth collapses → read all at 30 s\"; \"commercial detergent may contain softeners → use pure SDS\". On \"accuracy\" the accuracy card header writes: \"Accuracy: close to the true froth height?\" with the froth ruler on the soap-soft plate: a coded uneven froth top, a dashed line at its average (tag \"read here, at eye level\") and a crossed dashed line at the tallest bubble. Footer, small grey: \"Validity: fair test. Reliability: repeats agree. Accuracy: true reading.\" Bright at the end: the three validity rows and the average line. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross"
+        ],
+        "Hold about 1 second"
+    ],
+    "risk": [
+        "adjust",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, the current row and header bright, earlier rows dimming.",
+        "The risk assessment: Now the risks.",
+        "slippery / drains",
+        "On the spoken cues: Rows (full text as \"Risk table\" below): soap, detergent and calcium chloride working solutions; solid sodium dodecyl sulfate and solid calcium chloride (shown, not spoken: teacher only); stoppered tubes being shaken; spilled oil; waste. Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; `m5x-stopper-v1.png` small beside the shaking row (tag \"stopper in firmly; point the tube away from people\").",
+        "explain",
+        "the risk table writes in the right zone, three columns \"Hazard / Harm / Control\", one row per cue, the current row and header bright, earlier rows dimming. Rows (full text as \"Risk table\" below): soap, detergent and calcium chloride working solutions; solid sodium dodecyl sulfate and solid calcium chloride (shown, not spoken: teacher only); stoppered tubes being shaken; spilled oil; waste. Glasses (`m5x-safety-glasses-v1.png`) at the table head under \"always\"; `m5x-stopper-v1.png` small beside the shaking row (tag \"stopper in firmly; point the tube away from people\"). On \"drains\" `m5x-waste-bottle-v1.png` appears small with a coded label \"Oily waste\". Footer chip: \"follow your school's risk assessment and each bottle's safety data sheet\". Hold about 2 seconds (reading hold; the table returns in the key notes). Hold about 2 seconds (reading hold; the table returns in the key notes).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "table build",
+            "Plate"
+        ],
+        "Hold about 2 seconds (reading hold; the table returns in the key notes)"
+    ],
+    "memory-aid": [
+        "new",
+        "the board clears.",
+        "Memory aid: One line to keep, from the soaps video.",
+        "Soap makes scum in hard water; detergents mostly don't.",
+        "On the spoken cues: Handwritten line: \"Soap makes scum in hard water; detergents mostly don't.\" Under it the soap-hard and detergent-hard plates small, side by side. A small grey second line: \"Froth and oil tests agree: fewer free soap particles.\"",
+        "explain",
+        "the board clears. Handwritten line: \"Soap makes scum in hard water; detergents mostly don't.\" Under it the soap-hard and detergent-hard plates small, side by side. A small grey second line: \"Froth and oil tests agree: fewer free soap particles.\" Hold about 1 second (Revision 3, reserve trim 3). Hold about 1 second (Revision 3, reserve trim 3).",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 1 second (Revision 3, reserve trim 3)"
+    ],
+    "attempt-1": [
+        "adjust",
+        "the board clears.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. The table shows how many drops",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "the board clears. Question card, worded as printed (A1 under Decisions), with its table, and the tag \"HSC-style question, written for HSCScience\". `p03-dropper-bottle-v1.png` small at the right (no label). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "table build",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "hard / scum / chloride",
+        "On the spoken cues: On \"hard\" \"17\" and \"cloudy, white solid\" are underlined (tag \"about 15 extra drops\"); a teal Ca²⁺ chip writes. On \"scum\" \"net ionic equation\" and \"sodium stearate, C₁₇H₃₅COONa\" are underlined and the equation writes bright: \"2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)\" with a smaller second line \"or Mg²⁺ → (C₁₇H₃₅COO)₂Mg(s)\" (grey tag \"either ion: state which\"; grey tag \"Na⁺: spectator\"); the soap-hard plate",
+        "explain",
+        "the card stays, shrunk to the top. On \"hard\" \"17\" and \"cloudy, white solid\" are underlined (tag \"about 15 extra drops\"); a teal Ca²⁺ chip writes. On \"scum\" \"net ionic equation\" and \"sodium stearate, C₁₇H₃₅COONa\" are underlined and the equation writes bright: \"2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s)\" with a smaller second line \"or Mg²⁺ → (C₁₇H₃₅COO)₂Mg(s)\" (grey tag \"either ion: state which\"; grey tag \"Na⁺: spectator\"); the soap-hard plate thumbnail sits beside it. On \"chloride\" a chip \"Y contains more salt (NaCl)\" fades in and is crossed (caption \"hardness: Ca²⁺ and Mg²⁺\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed (A2 under Decisions).",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A student adds five drops of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed (A2 under Decisions). The soap-hard and soap-soft plates are not shown (they would hint). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "the card stays, shrunk to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "ten / controls / trap",
+        "On the spoken cues: On \"ten\" \"5 drops\" and \"10 drops\" are underlined, and \"a dishwashing detergent\" (FixRail small: \"Word: validity\"; \"Feature: drops differ; product may contain softeners\"). On \"controls\" \"describe TWO changes\" is underlined and the FixRail's \"Fix\" lights with two rows: \"pure detergent (SDS); same drops in soft and hard water\"; \"add distilled-water tubes and water-only controls; compare each agent with its own",
+        "explain",
+        "the card stays, shrunk to the top. On \"ten\" \"5 drops\" and \"10 drops\" are underlined, and \"a dishwashing detergent\" (FixRail small: \"Word: validity\"; \"Feature: drops differ; product may contain softeners\"). On \"controls\" \"describe TWO changes\" is underlined and the FixRail's \"Fix\" lights with two rows: \"pure detergent (SDS); same drops in soft and hard water\"; \"add distilled-water tubes and water-only controls; compare each agent with its own soft-water result\". On \"trap\" a chip \"repeat 3 times and average\" fades in and is crossed (caption \"reliability, not validity\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-handoff": [
+        "new",
+        "the board clears.",
+        "Decision rule and handoff: So: make hard water with a known amount of calcium chloride, match the tubes, volumes, drops, shaking and timing, include controls, and compare each agent with its own soft-water tube.",
+        "emulsified / Next",
+        "On the spoken cues: A four-row decision card lights on cue: \"Hard water: known CaCl₂ in distilled water\"; \"Match: tubes, volume, drops, shakes, timing; controls; each agent against its own soft-water tube\"; on \"emulsified\" \"Measure: froth height; time until oil separates\"; \"Explain: soap + Ca²⁺ → scum; detergent's Ca salt much more soluble\". On \"Next\" a chip \"Next: how can a reaction map plan organic synthesis?\" slides in at the lower",
+        "explain",
+        "the board clears. A four-row decision card lights on cue: \"Hard water: known CaCl₂ in distilled water\"; \"Match: tubes, volume, drops, shakes, timing; controls; each agent against its own soft-water tube\"; on \"emulsified\" \"Measure: froth height; time until oil separates\"; \"Explain: soap + Ca²⁺ → scum; detergent's Ca salt much more soluble\". On \"Next\" a chip \"Next: how can a reaction map plan organic synthesis?\" slides in at the lower right. Hold about 1 second (Revision 3, reserve trim 3). Hold about 1 second (Revision 3, reserve trim 3).",
+        [
+            "Enter slide",
+            "chip pop"
+        ],
+        "Hold about 1 second (Revision 3, reserve trim 3)"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+SKILLS06_ROWS = {
+    "hook": [
+        "new",
+        "A coded line graph writes on in the centre (axes, five points, a line).",
+        "Hook: Graph questions look easy, which is why they're easy to lose marks on.",
+        "numbers / extend",
+        "On the spoken cues: Twelve small report tiles write beneath; on \"drawn or read poorly\" eleven take a red `Flag` in turn; on \"numbers\" nine take a second small amber flag. `GreyTag`: \"research summary of NESA marking feedback, Chemistry and Biology 2020 to 2025: graph faults 11 of 12 reports; trends without values 9 of 12\". On \"extend\" the tiles dim and the graph's line continues as a short dashed grey stub past the last point, with a",
+        "explain",
+        "A coded line graph writes on in the centre (axes, five points, a line). Twelve small report tiles write beneath; on \"drawn or read poorly\" eleven take a red `Flag` in turn; on \"numbers\" nine take a second small amber flag. `GreyTag`: \"research summary of NESA marking feedback, Chemistry and Biology 2020 to 2025: graph faults 11 of 12 reports; trends without values 9 of 12\". On \"extend\" the tiles dim and the graph's line continues as a short dashed grey stub past the last point, with a small \"?\" chip. The heading writes on: \"Graphs: read it, draw it, describe it\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "read-axes": [
+        "new",
+        "The hook graph enlarges.",
+        "Read the axes: Before you read any value, read the axes: what's measured, in what units, and what one small square is worth.",
+        "axes / with its unit",
+        "On the spoken cues: On \"axes\" the y-axis label lights amber (\"Volume (mL)\") and the x-axis label violet (\"Time (s)\"); on \"one small square\" a coded bracket spans one small square on each axis with chips \"1 square = 2 mL\" and \"1 square = 10 s\". On \"from the axis to the line\" a teal `Drop` read-off line runs up from x = 50 s to the line and across to the y-axis: \"28\". On \"half a small square\" the read-off point enlarges in a small inset",
+        "explain",
+        "The hook graph enlarges. On \"axes\" the y-axis label lights amber (\"Volume (mL)\") and the x-axis label violet (\"Time (s)\"); on \"one small square\" a coded bracket spans one small square on each axis with chips \"1 square = 2 mL\" and \"1 square = 10 s\". On \"from the axis to the line\" a teal `Drop` read-off line runs up from x = 50 s to the line and across to the y-axis: \"28\". On \"half a small square\" the read-off point enlarges in a small inset showing the line crossing midway between two gridlines (tag \"estimate: about half a square\"). On \"with its unit\" the chip \"28\" grows to \"28 mL\"; a ghost chip \"28\" alone fades in beside it and takes a grey cross (caption \"28 what?\"). Bright at the end: \"28 mL\", the read-off line and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "question-card": [
+        "adjust",
+        "`QuestionCard` writes on.",
+        "Question-card (countdown, 10 seconds): Here's an HSC-style Biology question.",
+        "Here's an HSC-style Biology question. A hospital laboratory",
+        "On the spoken cues: Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey tag \"example data\". Card text, table and the four demands exactly as Decisions (the worked question), with mark values. `m7-bacterium-rod-coccus-v1.png` small at the card's right, positioned so only the rod shows (tag \"*E. coli*, a gut bacterium\"). Below: the blank `GridPaper` (20 by 15) and an `AnswerBox` with slots \"(b)\", \"(c)\", \"(d)\"; counter",
+        "explain",
+        "`QuestionCard` writes on. Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey tag \"example data\". Card text, table and the four demands exactly as Decisions (the worked question), with mark values. `m7-bacterium-rod-coccus-v1.png` small at the card's right, positioned so only the rod shows (tag \"*E. coli*, a gut bacterium\"). Below: the blank `GridPaper` (20 by 15) and an `AnswerBox` with slots \"(b)\", \"(c)\", \"(d)\"; counter \"0 / 8\". During the response opportunity the card (stem, table, four demands) and the grid take the full frame at full size, so the data and the grid are both readable; the card is not shrunk until scene 4. The ten seconds are only the prompt: the spoken \"Pause here to answer all four parts.\" tells students to pause the video for as long as eight marks need. `RoutineStrip` mini at the far left dims. `DrillCountdown` 10 seconds with \"Pause here to answer.\" The full card stays on screen. Nothing answer-bearing (no axes, no scale).",
+        [
+            "HandText write-on",
+            "table build",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "part-a-scale": [
+        "new",
+        "The card shrinks to a strip that keeps the table and only the current demand, (a), readable; demands (b) to (d) leave the strip until their scenes (each later scene keeps just its own demand and the table or the graph it needs).",
+        "Part a: the scale: Part a.",
+        "bottom / even / bend",
+        "On the spoken cues: Highlighter on \"Plot\" and \"line graph\"; ring on \"(3 marks)\". On \"bottom\" the grid gains axes: x \"Year\" (violet), y \"Samples resistant (%)\" (amber), each with a pen link to the table row it comes from. On \"even\" tick marks write along the x-axis every year (2010 to 2020, one year per 2 squares) and up the y-axis every 2% (0 to 30%, one square each), with a grey tag \"every gridline worth the same\". On \"the years jump\"",
+        "explain",
+        "The card shrinks to a strip that keeps the table and only the current demand, (a), readable; demands (b) to (d) leave the strip until their scenes (each later scene keeps just its own demand and the table or the graph it needs). Highlighter on \"Plot\" and \"line graph\"; ring on \"(3 marks)\". On \"bottom\" the grid gains axes: x \"Year\" (violet), y \"Samples resistant (%)\" (amber), each with a pen link to the table row it comes from. On \"even\" tick marks write along the x-axis every year (2010 to 2020, one year per 2 squares) and up the y-axis every 2% (0 to 30%, one square each), with a grey tag \"every gridline worth the same\". On \"the years jump\" the table's year cells underline in turn with small grey gap chips between them: \"+2\", \"+2\", \"+3\", \"+3\". On \"bend\" `ScaleTrap` appears in the side column: the top axis with the years equally spaced and the five points joined, visibly bending at 2014 (terracotta, \"equal spacing: wrong\"); the bottom axis at real positions, the points in a near straight line (green, \"real positions\"). On \"fills most of the grid\" a pale bracket shows the plotted range using the full grid width and most of its height. Tag \"x: 1 year = 2 squares; y: 1 square = 2%\". Bright at the end: the two axis labels and the green real-positions axis. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "part-a-plot": [
+        "new",
+        "`TailsRail` builds in the side column, rows lighting on cue.",
+        "Part a: plot and best fit: Label each axis with what's measured and its unit, and add a title.",
+        "unit / best fit / scatter / TAILS",
+        "On the spoken cues: On \"unit\" the axis labels gain units in amber underline (\"Year\", \"Samples resistant (%)\"), rail row L lights; a title writes above the grid, \"Percentage of *E. coli* samples resistant to antibiotic K, 2010 to 2020\", rail row T lights. On \"cross\" five small ink crosses land at (2010, 4), (2012, 7), (2014, 10), (2017, 15), (2020, 19), each table cell underlining as its point lands. On \"best fit\" a straight ink line",
+        "explain",
+        "`TailsRail` builds in the side column, rows lighting on cue. On \"unit\" the axis labels gain units in amber underline (\"Year\", \"Samples resistant (%)\"), rail row L lights; a title writes above the grid, \"Percentage of *E. coli* samples resistant to antibiotic K, 2010 to 2020\", rail row T lights. On \"cross\" five small ink crosses land at (2010, 4), (2012, 7), (2014, 10), (2017, 15), (2020, 19), each table cell underlining as its point lands. On \"best fit\" a straight ink line draws from about (2010, 4.0) to (2020, 19.2); the points sit close to it, 2017 a little above and 2020 a little below, with tiny grey ticks showing those two gaps. Rail sixth row lights: \"line or curve of best fit, not dot to dot\". On \"Don't join the dots\" a faint ghost dot-to-dot zigzag flashes over the points in terracotta and takes a grey cross (caption \"every wobble treated as real\"). On \"scatter\" a small grey tag: \"measured values vary a little; the best fit shows the trend\". On \"TAILS\" the rail's initials light amber down its edge; counter ticks \"1 / 8\", \"2 / 8\", \"3 / 8\" (scale; labels and title; points and line). Grey label \"HSCScience marking guide (illustrative)\". A two-rung `BandLadder` writes small under the rail: \"2: all points correct, appropriate best-fit line\"; \"1: some points correct, or an attempted line\". `GreyTag`: \"a NESA Biology marking guideline, 2024 (2 marks), paraphrased\". Bright at the end: the line of best fit, the rail's initials and the ladder. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "tick",
+            "Mark underline",
+            "DrawPath",
+            "table build",
+            "NumberTicker"
+        ],
+        "Hold about 1 second"
+    ],
+    "part-b-trend": [
+        "new",
+        "Demands (a), (c) and (d) dim to grey; highlighter on \"Describe\" (grey chip \"describe: say what it looks like, with detail (s01)\") and \"trend\".",
+        "Part b: describe the trend: Part b: describe the trend.",
+        "direction / year / changes / explain",
+        "On the spoken cues: `TrendMove` builds in the side column; the TAILS rail shrinks to a tab. On \"direction\" an amber arrow runs along the line of best fit, rail row \"Direction\" lights; answer row (b) writes: \"Resistance increased steadily\" (tick \"4 / 8\"). On \"four percent\" and \"nineteen percent\" the two end points ring teal and the table cells underline; row (b) adds \"from 4% in 2010 to 19% in 2020\"; on \"year\" a small rise-over-run",
+        "explain",
+        "Demands (a), (c) and (d) dim to grey; highlighter on \"Describe\" (grey chip \"describe: say what it looks like, with detail (s01)\") and \"trend\". `TrendMove` builds in the side column; the TAILS rail shrinks to a tab. On \"direction\" an amber arrow runs along the line of best fit, rail row \"Direction\" lights; answer row (b) writes: \"Resistance increased steadily\" (tick \"4 / 8\"). On \"four percent\" and \"nineteen percent\" the two end points ring teal and the table cells underline; row (b) adds \"from 4% in 2010 to 19% in 2020\"; on \"year\" a small rise-over-run triangle draws on the line (10 years across, 15 up) with \"about 1.5 percentage points per year\" and a grey gloss \"percentage points: the difference between two percentages\" (tick \"5 / 8\"). On \"changes\" rail row \"Change\" lights; a grey tag \"no change in pattern here: the points stay near one straight line\". A chip \"it went up\" fades in and takes a grey cross (caption \"no data, no marks for detail\"). On \"explain\" a grey side chip writes: \"describe = what the data show; explain = add why (s02)\", and a single grey line under row (b): \"explain: a plausible reason, e.g. antibiotic use can select resistant bacteria; the graph alone doesn't show the cause (the antibiotics video)\". It dims as the scene ends. Bright at the end: row (b), the triangle and the crossed chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "part-b-points": [
+        "new",
+        "`TrendMove` dims.",
+        "Points or percent: One trap with percentages.",
+        "points / per cent",
+        "On the spoken cues: Two short bars write in the side column from the table's 2010 and 2020 cells: \"2010: 4%\" and \"2020: 19%\". On \"points\" a bracket between the bar tops: \"19 − 4 = 15 percentage points\" (amber), gloss \"percentage points: the difference between two percentages\". On \"percent\" a second line writes beneath: \"(19 − 4) ÷ 4 × 100 = 375% increase\" (teal), with a small grey tag \"relative change: compared with the start\". A chip",
+        "explain",
+        "`TrendMove` dims. Two short bars write in the side column from the table's 2010 and 2020 cells: \"2010: 4%\" and \"2020: 19%\". On \"points\" a bracket between the bar tops: \"19 − 4 = 15 percentage points\" (amber), gloss \"percentage points: the difference between two percentages\". On \"percent\" a second line writes beneath: \"(19 − 4) ÷ 4 × 100 = 375% increase\" (teal), with a small grey tag \"relative change: compared with the start\". A chip \"resistance rose 15%\" fades in with a grey \"?\" tag \"15 what?\", and rewrites as \"rose 15 percentage points (a 375% increase)\". Bright at the end: the two result lines and the rewritten chip. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build",
+            "bar fill"
+        ],
+        "Hold about 1 second"
+    ],
+    "part-c-interpolate": [
+        "new",
+        "Demands (a), (b) and (d) dim; underline on \"2016\" and \"Use your graph\".",
+        "Part c: interpolate: Part c asks for twenty sixteen, which sits inside the data.",
+        "inside / thirteen",
+        "On the spoken cues: `TrendMove` dims. On \"inside\" a pale teal band shades the data range 2010 to 2020 on the x-axis, label \"inside the data\"; gloss \"interpolation: reading a value between measured points\". On \"line of best fit\" a teal `Drop` rises from 2016 to the line (not to the 2017 cross, which pulses grey with a tag \"not the nearest point\") and runs across to the y-axis. On \"thirteen\" the y-axis chip writes \"about 13%\"; answer row",
+        "explain",
+        "Demands (a), (b) and (d) dim; underline on \"2016\" and \"Use your graph\". `TrendMove` dims. On \"inside\" a pale teal band shades the data range 2010 to 2020 on the x-axis, label \"inside the data\"; gloss \"interpolation: reading a value between measured points\". On \"line of best fit\" a teal `Drop` rises from 2016 to the line (not to the 2017 cross, which pulses grey with a tag \"not the nearest point\") and runs across to the y-axis. On \"thirteen\" the y-axis chip writes \"about 13%\"; answer row (c) writes \"about 13% (read from the line of best fit)\" (tick \"6 / 8\"). On \"both sides\" the 2014 and 2017 crosses pulse teal either side of 2016 (tag \"data on both sides\"). Bright at the end: the read-off lines, \"about 13%\" and the gloss. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "part-d-extrapolate": [
+        "new",
+        "Demands (a) to (c) dim; underline on \"2040\", \"about 50%\" and \"Assess\" (grey chip \"assess: a judgement with evidence (s04)\").",
+        "Part d: extrapolate: Part d is different.",
+        "extrapolation / change / assumption",
+        "On the spoken cues: The main graph slides left and dims; a small inset graph draws beside it at its own even scale (x 2010 to 2040, 1 square = 2 years; y 0 to 60%, 1 square = 4%), with the five data crosses and the line of best fit (tag \"same data, wider even scale\"), so no axis is drawn unevenly. On \"extrapolation\" `ExtendZone` draws on the inset: the line continues dashed grey from 2020 into a pale shaded region \"no data here\"; gloss",
+        "explain",
+        "Demands (a) to (c) dim; underline on \"2040\", \"about 50%\" and \"Assess\" (grey chip \"assess: a judgement with evidence (s04)\"). The main graph slides left and dims; a small inset graph draws beside it at its own even scale (x 2010 to 2040, 1 square = 2 years; y 0 to 60%, 1 square = 4%), with the five data crosses and the line of best fit (tag \"same data, wider even scale\"), so no axis is drawn unevenly. On \"extrapolation\" `ExtendZone` draws on the inset: the line continues dashed grey from 2020 into a pale shaded region \"no data here\"; gloss \"extrapolation: extending the line beyond the data\"; grey tag \"NESA glossary, extrapolate: 'Infer from what is known.'\". On \"about fifty percent\" a grey read-off from 2040 to the dashed line and across: \"about 50%\". On \"change\" the three dashed possible paths fan out from 2020 (keeps rising, levels off, falls), each with a small grey label (\"new drugs\", \"less prescribing\", \"better infection control\" placed by the paths that bend), tag \"the line assumes the top one\". Answer row (d) writes: \"Weak: 2040 is 20 years beyond the data; it assumes the same rate continues, but new drugs, prescribing or infection control could change the trend\" (ticks \"7 / 8\", \"8 / 8\"). Grey label \"HSCScience marking guide (illustrative)\". On \"Inside the data\" the aid writes large and handwritten: \"Inside the data, read it. Outside, doubt it.\" On \"assumption\" a small grey line under it: \"asked to extend? do it, and state the assumption\". Bright at the end: the aid, the fan and row (d). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "line-or-column": [
+        "new",
+        "The board clears to `ColumnMini`: on \"percentages\" the small line graph from part (a) (tag \"continuous or over time → line\"); on \"categories\" a small column graph with three columns \"antibiotic A\", \"B\", \"C\" and gaps between them, y \"mean zone diameter (mm)\" (tag \"categories → columns, with gaps\").",
+        "Line or column?: One more drawing choice.",
+        "percentages / categories",
+        "On the spoken cues: Grey tag \"example values\". On \"accurate scale\" the column graph's y ticks, axis labels and the tops of the columns each take a small amber tick in turn. `GreyTag`: \"a NESA Chemistry marking guideline, 2025 (3 marks)\". Bright at the end: the two type tags and the three ticks.",
+        "explain",
+        "The board clears to `ColumnMini`: on \"percentages\" the small line graph from part (a) (tag \"continuous or over time → line\"); on \"categories\" a small column graph with three columns \"antibiotic A\", \"B\", \"C\" and gaps between them, y \"mean zone diameter (mm)\" (tag \"categories → columns, with gaps\"). Grey tag \"example values\". On \"accurate scale\" the column graph's y ticks, axis labels and the tops of the columns each take a small amber tick in turn. `GreyTag`: \"a NESA Chemistry marking guideline, 2025 (3 marks)\". Bright at the end: the two type tags and the three ticks. Hold about 1 second. Hold about 1 second.",
+        [
+            "tick"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-1": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-1 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Do the one in your subject,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Chemistry; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\", grey tag \"example data\". Card text and table exactly as Decisions (drill 1), ending \"Identify THREE problems with the student's graph and explain how to correct each. (3 marks)\". `m6-marble-chips-acid-v1.png` small at the card's right (tag \"marble chips in acid\"). The student's graph (coded, on `GridPaper`, in a pencil style): title \"Gas produced over time\"; x-axis \"Time (s)\" with ticks 0, 30, 60, 120, 240 equally spaced; y-axis \"volume\" (no unit) from 0 to 70 in 10s; five points joined by straight segments. Empty answer box, counter \"0 / 3\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing: no rail, no rings.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "table build",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "Annotations land fast: highlighter on \"Identify THREE problems\" and \"explain how to correct\"; ring on \"(3 marks)\".",
+        "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "even / unit / curve",
+        "On the spoken cues: On \"even\" the x-axis ticks ring terracotta; the time row of the table underlines; row 1 writes \"Uneven time scale (30, 60, 120, 240 s equally spaced) → use equal steps, for example every 30 s, each time at its real position\" (tick \"1 / 3\"); the axis redraws with even ticks every 30 s to 240 s and the points shift to their real positions. On \"unit\" the y-axis label rings terracotta; row 2 \"No unit on the volume axis",
+        "explain",
+        "Annotations land fast: highlighter on \"Identify THREE problems\" and \"explain how to correct\"; ring on \"(3 marks)\". On \"even\" the x-axis ticks ring terracotta; the time row of the table underlines; row 1 writes \"Uneven time scale (30, 60, 120, 240 s equally spaced) → use equal steps, for example every 30 s, each time at its real position\" (tick \"1 / 3\"); the axis redraws with even ticks every 30 s to 240 s and the points shift to their real positions. On \"unit\" the y-axis label rings terracotta; row 2 \"No unit on the volume axis → 'Volume of CO₂ (mL)'\" (tick \"2 / 3\"); the label rewrites. On \"joined the dots\" the straight segments ring terracotta; row 3 \"Dot to dot → one smooth curve of best fit, levelling off\" (tick \"3 / 3\"); a smooth ink curve draws from the origin through the points, flattening towards about 62 to 65 mL. Grey tag \"levels off as the marble chips are used up (Year 11 rates)\". Grey label \"HSCScience marking guide (illustrative)\". On \"curve\" a `CrossedHabit` chip \"a line of best fit must be straight\" takes a red scribble cross. Caption \"best fit can be a curve\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-2": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-2 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Now Biology. A student measured the zone of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Biology; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\", grey tag \"example data\". Card text and table exactly as Decisions (drill 2), ending \"Describe the relationship between antiseptic concentration and zone diameter. (2 marks)\". `m7-agar-antibiotic-after-v1.png` small at the card's right (tag \"a disc test: clear zones around discs\"; inspected 28 Oct: four discs with equal zones on a lawn; used only as a picture of the method, its equal zones are not data). Empty answer box, counter \"0 / 2\". `DrillCountdown` 10 seconds with \"Pause here to answer.\" Strip dims. Nothing answer-bearing: no graph.",
+        [
+            "HandText write-on",
+            "table build",
+            "NumberTicker",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "Annotations land fast: highlighter on \"Describe\" and \"relationship\"; ring on \"(2 marks)\".",
+        "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "levelled / misses",
+        "On the spoken cues: A small coded line graph of the table draws beside the card (even x scale 0 to 6%, the 3 and 6 placed at real positions; y 0 to 18 mm; a line rising steadily to 3%, then flattening). `TrendMove` mini lights row by row. Rows write with ticks: on \"six to fifteen\" \"0\", \"3\", \"6\" and \"15\" underline in the table; row 1 \"From 0% to 3%, zone diameter increased steadily with concentration, from 6 mm to 15 mm (about 3 mm per",
+        "explain",
+        "Annotations land fast: highlighter on \"Describe\" and \"relationship\"; ring on \"(2 marks)\". A small coded line graph of the table draws beside the card (even x scale 0 to 6%, the 3 and 6 placed at real positions; y 0 to 18 mm; a line rising steadily to 3%, then flattening). `TrendMove` mini lights row by row. Rows write with ticks: on \"six to fifteen\" \"0\", \"3\", \"6\" and \"15\" underline in the table; row 1 \"From 0% to 3%, zone diameter increased steadily with concentration, from 6 mm to 15 mm (about 3 mm per 1%)\" (tick \"1 / 2\"). On \"levelled\" \"6\" (%) and \"16\" underline; row 2 \"From 3% to 6%, it increased only 1 mm (15 to 16 mm): it levelled off\" (tick \"2 / 2\"). Grey label \"HSCScience marking guide (illustrative)\". On \"misses\" a `CrossedHabit` chip \"as concentration increases, the zone increases\" takes a red scribble cross. Caption \"no data; misses the change\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "Mark highlight",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "A decision board writes in four rows, each lighting on its words with a one-line example from this video: \"Read: axes, units, one small square (28 mL, not 28)\"; \"Draw: TAILS + best fit (years at real positions)\"; \"Describe: direction, data, change (4% to 19%, about 1.5 points a year)\"; \"Extend: inside, read it; outside, doubt it (2040: assumes the same rate)\".",
+        "Decision-rule: So, for a graph question.",
+        "change / Next",
+        "On the spoken cues: On \"Next\" a chip slides in: \"Next: practical questions (fixes that fix)\".",
+        "explain",
+        "A decision board writes in four rows, each lighting on its words with a one-line example from this video: \"Read: axes, units, one small square (28 mL, not 28)\"; \"Draw: TAILS + best fit (years at real positions)\"; \"Describe: direction, data, change (4% to 19%, about 1.5 points a year)\"; \"Extend: inside, read it; outside, doubt it (2040: assumes the same rate)\". On \"Next\" a chip slides in: \"Next: practical questions (fixes that fix)\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "DrawPath"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 50 seconds with pause invitation"
+    ]
+}
+
+SKILLS08_ROWS = {
+    "hook": [
+        "new",
+        "A coded exam page outline writes on; one long answer box near the bottom carries a marks badge \"(7 marks)\".",
+        "Hook: The longest questions, worth six to nine marks, can decide a band.",
+        "stimulus / judgement",
+        "On the spoken cues: Twelve small report tiles write beneath; on \"ignored the stimulus or copied it\" all twelve take a teal flag in turn; on \"without reasons\" seven take a second small amber flag. `GreyTag`: \"HSCScience summary of NESA marking feedback, Chemistry and Biology 2020 to 2025: stimulus unused or copied without interpretation, 12 of 12 reports; judgement without adequate reasons, 7 of 12 (counts of reports, not of students)\".",
+        "explain",
+        "A coded exam page outline writes on; one long answer box near the bottom carries a marks badge \"(7 marks)\". Twelve small report tiles write beneath; on \"ignored the stimulus or copied it\" all twelve take a teal flag in turn; on \"without reasons\" seven take a second small amber flag. `GreyTag`: \"HSCScience summary of NESA marking feedback, Chemistry and Biology 2020 to 2025: stimulus unused or copied without interpretation, 12 of 12 reports; judgement without adequate reasons, 7 of 12 (counts of reports, not of students)\". On \"stimulus\" the tiles dim and a small graph icon lights in the answer box; on \"judgement\" a short bold line pins at the box's foot with a green bracket. The heading writes on: \"Long answers: plan it, build it, judge it\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "how-marked": [
+        "new",
+        "The band meter draws at the right: a 0 to 7 scale shaded in four bands \"6 to 7\", \"4 to 5\", \"2 to 3\", \"1\".",
+        "How long answers are marked: Long answers usually aren't marked by ticking separate points.",
+        "band / evidence",
+        "On the spoken cues: On \"band\" a ghost answer block slides onto the meter and settles as a whole (not point by point); a ghost tick-list beside it (\"point 1 ✓, point 2 ✓ ...\") fades and takes a grey cross (caption \"read as a whole\"). On \"top band\" the top band's label writes: \"detailed use of the stimulus; well-supported judgement\" (`GreyTag`: \"pattern in recent NESA marking guidelines, for example Biology 2022 Q27 and 2023 Q30;",
+        "explain",
+        "The band meter draws at the right: a 0 to 7 scale shaded in four bands \"6 to 7\", \"4 to 5\", \"2 to 3\", \"1\". On \"band\" a ghost answer block slides onto the meter and settles as a whole (not point by point); a ghost tick-list beside it (\"point 1 ✓, point 2 ✓ ...\") fades and takes a grey cross (caption \"read as a whole\"). On \"top band\" the top band's label writes: \"detailed use of the stimulus; well-supported judgement\" (`GreyTag`: \"pattern in recent NESA marking guidelines, for example Biology 2022 Q27 and 2023 Q30; paraphrased\"). On \"evidence\" three chips write under the meter: \"every demand\", \"evidence\", \"clear order\". Bright at the end: the meter's top band label and the three chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "tick",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "question-card": [
+        "new",
+        "`QuestionCard` writes on.",
+        "Question-card (countdown, 10 seconds): Here's an HSC-style Biology question.",
+        "Here's an HSC-style Biology question. Region R's measles",
+        "On the spoken cues: Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey tag \"example data\". Card text and table exactly as Decisions (the worked question, Revision 2: four context sentences, no droplet sentence), with \"(7 marks)\". No graph: the table is the only stimulus, drawn large enough to read at phone width. Below: an empty `AnswerBox` with the four-box demand ticks column in its margin, all empty and",
+        "explain",
+        "`QuestionCard` writes on. Badge \"Biology\". Tag \"HSC-style question, written for HSCScience\". Grey tag \"example data\". Card text and table exactly as Decisions (the worked question, Revision 2: four context sentences, no droplet sentence), with \"(7 marks)\". No graph: the table is the only stimulus, drawn large enough to read at phone width. Below: an empty `AnswerBox` with the four-box demand ticks column in its margin, all empty and unlabelled. `RoutineStrip` mini at the far left dims. `DrillCountdown` 10 seconds with \"Pause here to answer.\" The full card stays on screen. Nothing answer-bearing (no highlights, no ticks labelled).",
+        [
+            "HandText write-on",
+            "tick",
+            "table build",
+            "Countdown ring"
+        ],
+        "Settle about 1 second"
+    ],
+    "take-apart": [
+        "new",
+        "Annotations land on the card on cue: on \"Analyse\" the verb highlights amber and \"explain the changes in measles cases\" underlines; on \"assess\" it highlights amber and \"the catch-up program\" underlines; on \"population\" \"refer to immunity in individuals and in the population\" is ringed violet; on \"stimulus\" the table's border rings teal; the marks badge \"(7 marks)\" rings navy.",
+        "Take it apart: Step one: take the question apart.",
+        "Analyse / assess / population",
+        "On the spoken cues: The demand ticks column labels its four boxes in turn: \"explain change (analyse data)\", \"individual + population immunity\", \"assess the program\", \"use the data\". Grey chip \"s01: verb, marks, constraints\". Bright at the end: the two highlighted verbs and the four labelled boxes.",
+        "explain",
+        "Annotations land on the card on cue: on \"Analyse\" the verb highlights amber and \"explain the changes in measles cases\" underlines; on \"assess\" it highlights amber and \"the catch-up program\" underlines; on \"population\" \"refer to immunity in individuals and in the population\" is ringed violet; on \"stimulus\" the table's border rings teal; the marks badge \"(7 marks)\" rings navy. The demand ticks column labels its four boxes in turn: \"explain change (analyse data)\", \"individual + population immunity\", \"assess the program\", \"use the data\". Grey chip \"s01: verb, marks, constraints\". Bright at the end: the two highlighted verbs and the four labelled boxes. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "plan-minute": [
+        "new",
+        "The plan card writes beside the answer box.",
+        "Plan in a minute: Step two: assess asks for a judgement, so decide it first.",
+        "number / minute",
+        "On the spoken cues: On \"judgement\" its top line writes in bold ink: \"Verdict: probably contributed (+ condition)\". On each phrase one row writes: \"1 vaccine → memory B and T cells\", \"2 95% coverage target → herd immunity\", \"3 coverage fell → cases rose\", \"4 catch-up → cases fell; limit: already falling\". On \"number\" a teal chip attaches to each row as the matching cells underline teal in the table: \"97% (card)\", \"95 to 96% | 12, 8\",",
+        "explain",
+        "The plan card writes beside the answer box. On \"judgement\" its top line writes in bold ink: \"Verdict: probably contributed (+ condition)\". On each phrase one row writes: \"1 vaccine → memory B and T cells\", \"2 95% coverage target → herd immunity\", \"3 coverage fell → cases rose\", \"4 catch-up → cases fell; limit: already falling\". On \"number\" a teal chip attaches to each row as the matching cells underline teal in the table: \"97% (card)\", \"95 to 96% | 12, 8\", \"95 → 87% | 8 → 310\", \"310 → 180 | 89 → 95% | 180 → 6\". On \"minute\" a small coded clock ring sweeps once around the plan card (tag \"about 60 s\"). Bright at the end: the verdict line and the four number chips. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "peel-paragraph": [
+        "new",
+        "The PEEL rail draws at the left of the answer box: \"Point\", \"Evidence\", \"Explain\", \"Link\", each lighting on its word.",
+        "Build a paragraph: PEEL: Now build each paragraph the same way.",
+        "point / outbreak",
+        "On the spoken cues: Paragraph 3 writes in the answer box, one sentence per rail label, each underlined in that label's colour: Point \"After the clinics closed in 2013, coverage fell.\" Evidence \"It fell from 95% to 87% by 2016, and cases rose from 8 to 310.\" Explain \"With fewer people immune, an infected person met more susceptible people, so transmission chains continued.\" Link \"So falling coverage explains the 2016 outbreak.\" The",
+        "explain",
+        "The PEEL rail draws at the left of the answer box: \"Point\", \"Evidence\", \"Explain\", \"Link\", each lighting on its word. Paragraph 3 writes in the answer box, one sentence per rail label, each underlined in that label's colour: Point \"After the clinics closed in 2013, coverage fell.\" Evidence \"It fell from 95% to 87% by 2016, and cases rose from 8 to 310.\" Explain \"With fewer people immune, an infected person met more susceptible people, so transmission chains continued.\" Link \"So falling coverage explains the 2016 outbreak.\" The matching table cells pulse teal as the evidence sentence writes. On \"outbreak\" the demand box \"explain change (analyse data)\" takes a half tick. Grey chip \"s02: explain = cause → effect\". Bright at the end: the rail and paragraph 3. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "individual-population": [
+        "new",
+        "Paragraph 3 shrinks to a grey block; paragraphs 1 and 2 write above it in the answer box (text as Decisions, P1 and P2), each with a small PEEL rail beside it lighting through its four parts quickly (no spoken labels).",
+        "The individual and the population: The first two paragraphs cover the constraint.",
+        "link",
+        "On the spoken cues: Grey chips \"b09: memory cells, secondary response\" and \"b10: herd immunity\". In P2 the values \"95 to 96%\", \"12\" and \"8\" underline teal and their table cells pulse. On \"link\" the demand box \"individual + population immunity\" ticks fully, and \"explain change\" completes its tick. Bright at the end: the two new paragraphs and the ticks.",
+        "explain",
+        "Paragraph 3 shrinks to a grey block; paragraphs 1 and 2 write above it in the answer box (text as Decisions, P1 and P2), each with a small PEEL rail beside it lighting through its four parts quickly (no spoken labels). Grey chips \"b09: memory cells, secondary response\" and \"b10: herd immunity\". In P2 the values \"95 to 96%\", \"12\" and \"8\" underline teal and their table cells pulse. On \"link\" the demand box \"individual + population immunity\" ticks fully, and \"explain change\" completes its tick. Bright at the end: the two new paragraphs and the ticks. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "use-stimulus": [
+        "new",
+        "The answer box dims.",
+        "Use the stimulus, don't copy it: Using the stimulus means more than copying it.",
+        "mean",
+        "On the spoken cues: The stimulus pick runs on the table: a chip \"cases went up, then down\" fades in and takes a red scribble cross (caption \"copied trend, no values, no meaning\"). On \"picks the values\" three cells lift out as chips (\"95%\", \"87%\", \"8 → 310\") and drop into a single line; on \"mean\" an interpreting phrase attaches to them: \"coverage fell below the 95% target → more people susceptible → transmission continued → cases rose\",",
+        "explain",
+        "The answer box dims. The stimulus pick runs on the table: a chip \"cases went up, then down\" fades in and takes a red scribble cross (caption \"copied trend, no values, no meaning\"). On \"picks the values\" three cells lift out as chips (\"95%\", \"87%\", \"8 → 310\") and drop into a single line; on \"mean\" an interpreting phrase attaches to them: \"coverage fell below the 95% target → more people susceptible → transmission continued → cases rose\", with the card's \"aim for at least 95% two-dose coverage\" sentence underlined teal. The demand box \"use the data\" ticks. Grey chip \"s06: describe with numbers\". Bright at the end: the interpreted line and the tick. Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "judgement-bookends": [
+        "new",
+        "The answer box returns.",
+        "The judgement, first and last: Assess asks for a judgement, so state it in your first line, and come back to it at the end.",
+        "contributed / condition",
+        "On the spoken cues: The verdict bookends run: the opening judgement (Decisions) pins at the top in bold ink. On \"Before the program\" the 2016 and 2018 case cells (310, 180) pulse amber first and P4's first sentence writes with \"310 to 180\" underlined amber (tag \"already falling before the program\"). On \"After it began\" the rest of P4 writes, with \"89% → 95%\" and \"180 → 6\" underlined teal and their cells pulsing; on \"can't separate\" the",
+        "explain",
+        "The answer box returns. The verdict bookends run: the opening judgement (Decisions) pins at the top in bold ink. On \"Before the program\" the 2016 and 2018 case cells (310, 180) pulse amber first and P4's first sentence writes with \"310 to 180\" underlined amber (tag \"already falling before the program\"). On \"After it began\" the rest of P4 writes, with \"89% → 95%\" and \"180 → 6\" underlined teal and their cells pulsing; on \"can't separate\" the word \"However\" underlines amber (tag \"limit: association; earlier decline\"). On \"contributed\" the closing line pins at the bottom and a green bracket joins it to the opening line (tag \"verdict first and last\"). Grey chip \"s04: verdict, criteria, evidence\". On \"condition\" the demand box \"assess the program\" ticks; all four boxes now ticked. Bright at the end: the two bookend lines and the four ticks. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "tick",
+            "Mark underline",
+            "DrawPath"
+        ],
+        "Hold about 1 second"
+    ],
+    "weak-strong": [
+        "new",
+        "Board splits.",
+        "Weak beside strong: Put two answers side by side.",
+        "condition / band",
+        "On the spoken cues: Left: the weak answer (Decisions) in a pencil style, with its demand ticks: only \"explain change\" half-ticked; its last sentence ringed terracotta (tag \"judgement, no evidence\"). Right: the strong answer condensed to its five parts (opening, P1 to P4 as one-line headings, closing), all four demand ticks filled, teal value underlines visible. On \"condition\" the strong answer's closing line glows. On \"band\" the band",
+        "explain",
+        "Board splits. Left: the weak answer (Decisions) in a pencil style, with its demand ticks: only \"explain change\" half-ticked; its last sentence ringed terracotta (tag \"judgement, no evidence\"). Right: the strong answer condensed to its five parts (opening, P1 to P4 as one-line headings, closing), all four demand ticks filled, teal value underlines visible. On \"condition\" the strong answer's closing line glows. On \"band\" the band meter returns between them: the weak answer settles in \"2 to 3\", the strong in \"6 to 7\". `GreyTag`: \"HSCScience marking guide (illustrative)\". Bright at the end: the two band placements. Hold about 1 second. Hold about 1 second.",
+        [
+            "ScribbleCircle",
+            "tick",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-1": [
+        "new",
+        "Board clears.",
+        "HSC-style training question (drill-1 (Biology; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Do the one in your subject,",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-1 (Biology; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Biology\", tag \"HSC-style question, written for HSCScience\", grey tag \"example data\". Card text and table exactly as Decisions (drill 1), ending \"Evaluate the training program. (6 marks)\" and the task line \"Write a PLAN only: the demands, your judgement, and one line per paragraph.\" A small grey tag under the table: \"patient-day: one patient on the ward for one day\" (Revision 2; screen only). An empty plan card beside it. `DrillCountdown` 10 seconds with \"Pause here to answer.\" Nothing answer-bearing: no highlights, no ticks.",
+        [
+            "HandText write-on",
+            "tick",
+            "table build",
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "Annotations land fast: highlighter on \"Evaluate\" (chip \"evaluate: judgement against criteria, using the data\", on screen only); ring on \"(6 marks)\"; teal underline on the table.",
+        "Drill feedback (feedback-1): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "effective / month / plan",
+        "On the spoken cues: The plan card fills on cue: verdict \"probably effective, but not proven (cleaning changed too)\"; row 1 \"hands carry pathogens → hygiene breaks the contact link (b10)\"; on \"eighty two\" row 2 \"45 → 82% | 6.0 → 2.5 per 1,000 patient-days\" with the cells underlined teal; on \"month\" row 3 \"cleaning routine began in July too → confounding\" with \"In the same month, the ward also started a new daily cleaning routine\"",
+        "explain",
+        "Annotations land fast: highlighter on \"Evaluate\" (chip \"evaluate: judgement against criteria, using the data\", on screen only); ring on \"(6 marks)\"; teal underline on the table. The plan card fills on cue: verdict \"probably effective, but not proven (cleaning changed too)\"; row 1 \"hands carry pathogens → hygiene breaks the contact link (b10)\"; on \"eighty two\" row 2 \"45 → 82% | 6.0 → 2.5 per 1,000 patient-days\" with the cells underlined teal; on \"month\" row 3 \"cleaning routine began in July too → confounding\" with \"In the same month, the ward also started a new daily cleaning routine\" underlined amber; row 4 \"close: verdict + condition\". On \"plan\" a `CrossedHabit` chip \"start writing straight away\" takes a red scribble cross. Caption \"no plan, and the cleaning routine gets missed\". Grey label \"HSCScience model plan (illustrative)\". Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "ScribbleCircle",
+            "chip pop",
+            "Mark underline",
+            "Mark highlight",
+            "table build"
+        ],
+        "Hold about 1 second"
+    ],
+    "drill-2": [
+        "adjust",
+        "Board clears.",
+        "HSC-style training question (drill-2 (Chemistry; countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Now Chemistry. The question: evaluate the use of",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (drill-2 (Chemistry; countdown, 10 seconds))",
+        "explain",
+        "Board clears. `QuestionCard`: badge \"Chemistry\", tag \"HSC-style question, written for HSCScience\". Card text exactly as Decisions (drill 2): the question with \"(5 marks)\", her three body sentences in a pencil-style box, and her last line in the same style; the task line \"Rewrite her last line so that it makes a judgement.\" `m7-soap-tube-hard-v1.png` small at the card's right (tag \"soap in hard water\"). `DrillCountdown` 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "HandText write-on",
+            "Countdown ring",
+            "Plate"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "Annotations land fast: highlighter on \"Evaluate\"; \"town with hard water\" underlined; \"Ca²⁺ ions\", \"insoluble calcium stearate (scum)\", \"wastes soap\", \"grey deposits\" and \"renewable fats\" underlined teal in her body sentences as the new line uses them.",
+        "Drill feedback (feedback-2): the reading routine applied to the card, the model answer built point by point with margin ticks, and one crossed habit (about 25 to 35 seconds, as allowed for this series).",
+        "trap",
+        "On the spoken cues: The model line writes in bold ink under her answer, its parts lit in turn: \"poor choice\" (the side), \"because calcium ions turn much of it into scum ...\" (the reason), \"even though soap is renewable\" (the weighed criterion). Grey chip \"s04: verdict, criteria, evidence\". On \"trap\" her original last line becomes a `CrossedHabit` chip and takes a red scribble cross. Caption \"summary, not a judgement\". Grey label",
+        "explain",
+        "Annotations land fast: highlighter on \"Evaluate\"; \"town with hard water\" underlined; \"Ca²⁺ ions\", \"insoluble calcium stearate (scum)\", \"wastes soap\", \"grey deposits\" and \"renewable fats\" underlined teal in her body sentences as the new line uses them. The model line writes in bold ink under her answer, its parts lit in turn: \"poor choice\" (the side), \"because calcium ions turn much of it into scum ...\" (the reason), \"even though soap is renewable\" (the weighed criterion). Grey chip \"s04: verdict, criteria, evidence\". On \"trap\" her original last line becomes a `CrossedHabit` chip and takes a red scribble cross. Caption \"summary, not a judgement\". Grey label \"HSCScience model answer (illustrative)\". Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline",
+            "Mark highlight"
+        ],
+        "Hold about 1 second"
+    ],
+    "decision-rule": [
+        "new",
+        "A decision board writes in five rows, each lighting on its words with a one-line example from this video: \"Unpack: verbs, constraint, stimulus → ticks (analyse + assess; individual + population)\"; \"Judgement asked for?",
+        "Decision-rule: So, for a long answer: take the question apart, and tick each demand.",
+        "Next",
+        "On the spoken cues: Decide it first (probably contributed)\"; \"Plan: one line per paragraph + its evidence (95 → 87%)\"; \"PEEL each paragraph\"; \"Judgement verb? End with the judgement + condition (cases already falling before 2018)\". On \"Next\" a chip slides in: \"Next in Biology: evaluate an infectious disease strategy\".",
+        "explain",
+        "A decision board writes in five rows, each lighting on its words with a one-line example from this video: \"Unpack: verbs, constraint, stimulus → ticks (analyse + assess; individual + population)\"; \"Judgement asked for? Decide it first (probably contributed)\"; \"Plan: one line per paragraph + its evidence (95 → 87%)\"; \"PEEL each paragraph\"; \"Judgement verb? End with the judgement + condition (cases already falling before 2018)\". On \"Next\" a chip slides in: \"Next in Biology: evaluate an infectious disease strategy\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on",
+            "Enter slide",
+            "chip pop",
+            "tick"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 50 seconds with pause invitation"
+    ]
+}
+
+M8C01_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"How much chloride is in this water?\".",
+        "Hook (clear water, hidden chloride): This bottle of estuary water looks just like tap water, but it's carrying dissolved salt.",
+        "indicator / out",
+        "On the spoken cues: `m8-river-sampling-bottle-v1.png` appears medium at centre with a tag \"estuary water\". A grey chip \"c12: titration, n = cV\" writes under it. On \"indicator\" `m6-clip-phenolphthalein-pink-v1.png` appears small at the right with a grey chip \"c13: pH indicator\", then a soft cross fades over the chip \"no acid or base here\". On \"out\" the pink flask fades, and a question chip writes and stays dim: \"when is the chloride",
+        "explain",
+        "heading writes on: \"How much chloride is in this water?\". `m8-river-sampling-bottle-v1.png` appears medium at centre with a tag \"estuary water\". A grey chip \"c12: titration, n = cV\" writes under it. On \"indicator\" `m6-clip-phenolphthalein-pink-v1.png` appears small at the right with a grey chip \"c13: pH indicator\", then a soft cross fades over the chip \"no acid or base here\". On \"out\" the pink flask fades, and a question chip writes and stays dim: \"when is the chloride used up?\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "silver-meets-chloride": [
+        "adjust",
+        "the bottle shrinks to the top-left corner.",
+        "Silver meets chloride: The trick is to titrate with silver nitrate.",
+        "white / new",
+        "On the spoken cues: `m6-burette-clamp-stand-v1.png` appears at the left with a navy coded label \"AgNO₃(aq)\" on the burette; `m8-mohr-flask-yellow-v1.png` is not used yet: the plain `m6-conical-flask-v1.png` sits under the tip with a coded clear fill and tag \"Cl⁻(aq) sample\". The equation writes on the right: \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" with \"white\" under AgCl and a chip \"1 : 1\". The ion swap inset opens: grey Ag⁺ and green Cl⁻ dots",
+        "explain",
+        "the bottle shrinks to the top-left corner. `m6-burette-clamp-stand-v1.png` appears at the left with a navy coded label \"AgNO₃(aq)\" on the burette; `m8-mohr-flask-yellow-v1.png` is not used yet: the plain `m6-conical-flask-v1.png` sits under the tip with a coded clear fill and tag \"Cl⁻(aq) sample\". The equation writes on the right: \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\" with \"white\" under AgCl and a chip \"1 : 1\". The ion swap inset opens: grey Ag⁺ and green Cl⁻ dots pair and drop as white tiles. On \"white\" drops fall (burette drip) and the coded fill turns milky white. On \"new\" the drops continue; the inset shows no green dots left and the grey dots float unpaired; a small question mark appears over the flask.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "second-precipitate": [
+        "adjust",
+        "the board resets.",
+        "A second precipitate as the signal: So we add a few drops of potassium chromate before we start.",
+        "solid / endpoint",
+        "On the spoken cues: `m8-chromate-dropper-bottle-v1.png` appears small beside the flask with tag \"K₂CrO₄ indicator\"; the flask cross-fades to `m8-mohr-flask-yellow-v1.png`. Drops fall; the flask cross-fades to `m8-mohr-flask-white-v1.png`; the inset shows white tiles forming while yellow chromate dots wait. On \"solid\" the inset's last green dot goes, and grey Ag⁺ pairs with yellow CrO₄²⁻ as a red-brown tile; the second equation writes",
+        "explain",
+        "the board resets. `m8-chromate-dropper-bottle-v1.png` appears small beside the flask with tag \"K₂CrO₄ indicator\"; the flask cross-fades to `m8-mohr-flask-yellow-v1.png`. Drops fall; the flask cross-fades to `m8-mohr-flask-white-v1.png`; the inset shows white tiles forming while yellow chromate dots wait. On \"solid\" the inset's last green dot goes, and grey Ag⁺ pairs with yellow CrO₄²⁻ as a red-brown tile; the second equation writes under the first: \"2Ag⁺(aq) + CrO₄²⁻(aq) → Ag₂CrO₄(s)\" with \"red-brown\" under it, and the first equation dims. On \"endpoint\" the flask cross-fades to `m8-mohr-flask-endpoint-v1.png`, a coded swirl arc circles it once, and the tag \"endpoint: first lasting red-brown\" writes (bright). The heading updates: \"The Mohr method\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "ScribbleCircle",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "why-chloride-first": [
+        "new",
+        "the flask shrinks to the left.",
+        "Why chloride goes first: Why does the chloride react first?",
+        "silver / climbs / gone",
+        "On the spoken cues: A chip writes \"AgCl is less soluble, so it goes first\" and is crossed (caption \"not the reason in a mixture\"). A grey chip \"c15: solid forms when Qsp > Ksp\" writes. The silver-needed ladder draws on the right (log scale, label \"[Ag⁺] needed to start forming\"), with a small grey tag \"one illustrative sample, not a fixed threshold\". Two small grouped givens write at the ladder's foot, each beside its bar (learning",
+        "explain",
+        "the flask shrinks to the left. A chip writes \"AgCl is less soluble, so it goes first\" and is crossed (caption \"not the reason in a mixture\"). A grey chip \"c15: solid forms when Qsp > Ksp\" writes. The silver-needed ladder draws on the right (log scale, label \"[Ag⁺] needed to start forming\"), with a small grey tag \"one illustrative sample, not a fixed threshold\". Two small grouped givens write at the ladder's foot, each beside its bar (learning review 1): beside a tall green bar \"lots of Cl⁻\", \"[Cl⁻] at the start ≈ 0.074 mol/L\"; beside a short yellow bar \"a little CrO₄²⁻\", \"[CrO₄²⁻] ≈ 0.005 mol/L\" (grey tag \"sample value, worked out in the calculation later\"). On \"silver\" the AgCl working writes alone beside the ladder: \"[Ag⁺] = Ksp ÷ [Cl⁻] = 1.77 × 10⁻¹⁰ ÷ 0.074\" and a white marker lands low: \"AgCl: about 2 × 10⁻⁹ mol/L\". Then that working dims (marker kept), and the chromate working writes: \"[Ag⁺] = √(Ksp ÷ [CrO₄²⁻]) = √(1.12 × 10⁻¹² ÷ 0.005)\", a small \"[Ag⁺]²\" tag, and a red-brown marker lands high: \"Ag₂CrO₄: about 1.5 × 10⁻⁵ mol/L\". The narration says the two concentrations aloud once, so voice and givens match. On \"climbs\" both workings dim, the green bar shrinks and the white marker slides up the ladder. On \"gone\" the white marker meets the red-brown marker; a red-brown flash; tag \"> 99.9% of Cl⁻ gone\" (bright). Last line: a dim tag under the yellow bar, \"small, set amount of chromate\". At most three bright items at any cue: the current working, its marker, and one given.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "Enter slide",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Settle about 1 second"
+    ],
+    "valid-endpoint": [
+        "new",
+        "board clears.",
+        "Keeping the endpoint valid: This endpoint works only in the right conditions.",
+        "high / instead / blank",
+        "On the spoken cues: A horizontal pH strip draws with a green window \"about 6.5 to 10\". At the left end (acid): orange H⁺ dots join yellow chromate dots in a small inset and they become \"Cr₂O₇²⁻\"; the yellow bar from scene 4 shrinks; on \"high\" a chip \"late endpoint, titre too high\" lights. At the right end (base), on \"instead\", a chip \"Ag₂O forms (brown)\" lights and the acid chip dims. A third chip writes on \"bromide\": \"Br⁻, I⁻ counted",
+        "explain",
+        "board clears. A horizontal pH strip draws with a green window \"about 6.5 to 10\". At the left end (acid): orange H⁺ dots join yellow chromate dots in a small inset and they become \"Cr₂O₇²⁻\"; the yellow bar from scene 4 shrinks; on \"high\" a chip \"late endpoint, titre too high\" lights. At the right end (base), on \"instead\", a chip \"Ag₂O forms (brown)\" lights and the acid chip dims. A third chip writes on \"bromide\": \"Br⁻, I⁻ counted as Cl⁻\" and the base chip dims. On \"blank\" a small chip \"blank: no chloride, subtract its titre\" writes (grey); at most three bright items at any time.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "bar fill"
+        ],
+        "Settle about 1 second"
+    ],
+    "hazard-data": [
+        "adjust",
+        "`m8-chromate-dropper-bottle-v1.png` returns at centre with a coded hazard band \"Cr(VI): toxic, carcinogen\" (GHS pictograms as coded symbols, no people).",
+        "The hazard, and why it's data: One more thing.",
+        "data",
+        "On the spoken cues: On \"data\" the bottle slides away and a blank titre table frame draws on the right.",
+        "explain",
+        "`m8-chromate-dropper-bottle-v1.png` returns at centre with a coded hazard band \"Cr(VI): toxic, carcinogen\" (GHS pictograms as coded symbols, no people). On \"data\" the bottle slides away and a blank titre table frame draws on the right.",
+        [
+            "Enter slide",
+            "DrawPath",
+            "table build",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "titres": [
+        "new",
+        "the titre table writes row by row: \"Rough 19.10 mL\", \"1: 18.45 mL\", \"2: 18.55 mL\", \"3: 18.50 mL\".",
+        "The titres: A twenty five millilitre aliquot of the estuary water is titrated with point one zero zero zero molar silver nitrate.",
+        "left out / average",
+        "On the spoken cues: On \"left out\" the rough row greys and strikes through. A grey chip \"c12: concordant = within 0.10 mL\" writes. On \"average\" a bracket gathers rows 1 to 3 and writes \"mean = 18.50 mL\" (bright).",
+        "explain",
+        "the titre table writes row by row: \"Rough 19.10 mL\", \"1: 18.45 mL\", \"2: 18.55 mL\", \"3: 18.50 mL\". On \"left out\" the rough row greys and strikes through. A grey chip \"c12: concordant = within 0.10 mL\" writes. On \"average\" a bracket gathers rows 1 to 3 and writes \"mean = 18.50 mL\" (bright).",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "table build"
+        ],
+        "Settle about 1 second"
+    ],
+    "stage-1-silver": [
+        "new",
+        "the calculation board sets up at the top: task strip \"Find c(Cl⁻) in mol/L and g/L\"; equation strip \"Ag⁺ + Cl⁻ → AgCl\"; givens group (navy) in two short blocks: \"AgNO₃: c = 0.1000 mol/L, V = 18.50 mL = 0.01850 L\" and \"sample: aliquot 25.00 mL = 0.02500 L\".",
+        "Stage 1: moles of silver: First, the task: find the chloride concentration, in moles per litre and grams per litre.",
+        "silver",
+        "On the spoken cues: The table from scene 7 shrinks away. Stage line 1 writes: \"n(Ag⁺) = cV = 0.1000 × 0.01850\". On \"silver\" the result writes \"= 1.850 × 10⁻³ mol\" (bright), and the AgNO₃ givens block glows.",
+        "explain",
+        "the calculation board sets up at the top: task strip \"Find c(Cl⁻) in mol/L and g/L\"; equation strip \"Ag⁺ + Cl⁻ → AgCl\"; givens group (navy) in two short blocks: \"AgNO₃: c = 0.1000 mol/L, V = 18.50 mL = 0.01850 L\" and \"sample: aliquot 25.00 mL = 0.02500 L\". The table from scene 7 shrinks away. Stage line 1 writes: \"n(Ag⁺) = cV = 0.1000 × 0.01850\". On \"silver\" the result writes \"= 1.850 × 10⁻³ mol\" (bright), and the AgNO₃ givens block glows.",
+        [
+            "HandText write-on",
+            "table build"
+        ],
+        "Settle about 1 second"
+    ],
+    "stage-2-aliquot": [
+        "new",
+        "stage line 1 dims (result kept).",
+        "Stage 2: the ratio and the aliquot: The ratio is one to one, so that's also the moles of chloride, and all of it came from the aliquot.",
+        "chloride / litre",
+        "On the spoken cues: On \"chloride\" line 2 writes \"1 : 1, so n(Cl⁻) = 1.850 × 10⁻³ mol\" and the \"1 : 1\" on the equation strip glows. Line 3 writes \"c(Cl⁻) = n ÷ V(aliquot) = 1.850 × 10⁻³ ÷ 0.02500\"; the sample givens block glows; a small chip \"÷ titre\" fades in and is crossed. On \"litre\" the result writes \"= 0.0740 mol/L\" (bright).",
+        "explain",
+        "stage line 1 dims (result kept). On \"chloride\" line 2 writes \"1 : 1, so n(Cl⁻) = 1.850 × 10⁻³ mol\" and the \"1 : 1\" on the equation strip glows. Line 3 writes \"c(Cl⁻) = n ÷ V(aliquot) = 1.850 × 10⁻³ ÷ 0.02500\"; the sample givens block glows; a small chip \"÷ titre\" fades in and is crossed. On \"litre\" the result writes \"= 0.0740 mol/L\" (bright).",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop"
+        ],
+        "Settle about 1 second"
+    ],
+    "stage-3-grams": [
+        "new",
+        "lines 1 to 3 dim, the 0.0740 result kept.",
+        "Stage 3: grams per litre: For grams per litre, multiply by the molar mass of chlorine, thirty five point four five.",
+        "litre / sea",
+        "On the spoken cues: Line 4 writes \"0.0740 × 35.45\" with \"M(Cl) = 35.45 g/mol\" added to the givens. On \"litre\" \"= 2.62 g/L\" (bright). On \"sea\" a small coded bar compares \"this sample 2.62 g/L\" with \"seawater about 19 g/L\"; the estuary bottle returns small beside it.",
+        "explain",
+        "lines 1 to 3 dim, the 0.0740 result kept. Line 4 writes \"0.0740 × 35.45\" with \"M(Cl) = 35.45 g/mol\" added to the givens. On \"litre\" \"= 2.62 g/L\" (bright). On \"sea\" a small coded bar compares \"this sample 2.62 g/L\" with \"seawater about 19 g/L\"; the estuary bottle returns small beside it.",
+        [
+            "HandText write-on",
+            "bar fill"
+        ],
+        "Settle about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "board clears.",
+        "Memory aid: So here's the short version.",
+        "answer",
+        "On the spoken cues: Handwritten line 1: \"White while Cl⁻ lasts; stop at the first lasting red-brown.\" Handwritten line 2: \"titre → moles → ratio → ÷ aliquot\". On \"answer\" a small card: \"Ag⁺ : Cl⁻ = 1 : 1 (the 2 : 1 is the indicator's)\".",
+        "explain",
+        "board clears. Handwritten line 1: \"White while Cl⁻ lasts; stop at the first lasting red-brown.\" Handwritten line 2: \"titre → moles → ratio → ÷ aliquot\". On \"answer\" a small card: \"Ag⁺ : Cl⁻ = 1 : 1 (the 2 : 1 is the indicator's)\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "question card, worded as printed: \"A 20.00 mL sample of bore water was titrated with 0.0250 mol L⁻¹ silver nitrate solution, using potassium chromate as the indicator.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Bore water is tested by the",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A 20.00 mL sample of bore water was titrated with 0.0250 mol L⁻¹ silver nitrate solution, using potassium chromate as the indicator. The titres were 15.10 mL (rough), 14.62 mL, 14.70 mL and 14.66 mL. Calculate the concentration of chloride ions in the bore water, in mol L⁻¹ and in g L⁻¹. M(Cl) = 35.45 g mol⁻¹.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "average / chloride / litre / slip",
+        "On the spoken cues: On \"average\" \"15.10 mL (rough)\" is underlined and struck; \"14.62 mL, 14.70 mL and 14.66 mL\" are underlined; line \"mean = 14.66 mL\". Line \"n(Ag⁺) = 0.0250 × 0.01466 = 3.665 × 10⁻⁴ mol\" (\"0.0250 mol L⁻¹\" underlined) writes on \"silver\", so the screen carries the number the voice no longer reads; on \"chloride\" it continues \"= n(Cl⁻) (1 : 1)\". Line \"c = 3.665 × 10⁻⁴ ÷ 0.02000 = 0.0183 mol/L\" (\"20.00 mL\" underlined). On",
+        "explain",
+        "card shrinks to the top. On \"average\" \"15.10 mL (rough)\" is underlined and struck; \"14.62 mL, 14.70 mL and 14.66 mL\" are underlined; line \"mean = 14.66 mL\". Line \"n(Ag⁺) = 0.0250 × 0.01466 = 3.665 × 10⁻⁴ mol\" (\"0.0250 mol L⁻¹\" underlined) writes on \"silver\", so the screen carries the number the voice no longer reads; on \"chloride\" it continues \"= n(Cl⁻) (1 : 1)\". Line \"c = 3.665 × 10⁻⁴ ÷ 0.02000 = 0.0183 mol/L\" (\"20.00 mL\" underlined). On \"litre\" line \"0.018325 × 35.45 = 0.650 g/L\" (answers bright; \"M(Cl)\" underlined). On \"slip\" a chip \"n(Cl⁻) = 2 × n(Ag⁺) → 0.0367 mol/L\" fades in and is crossed (caption \"Ag⁺ : Cl⁻ is 1 : 1\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"Wastewater from a pickling factory has a pH of 3.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. Wastewater from a pickling factory has",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"Wastewater from a pickling factory has a pH of 3. A student determines its chloride concentration by Mohr titration with standard silver nitrate solution and potassium chromate indicator, without adjusting the pH. (a) Explain the effect on the calculated chloride concentration. (b) Suggest one change to the method that would correct this.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "chromate / high / seven or eight",
+        "On the spoken cues: On \"chromate\" \"pH of 3\" is underlined; a mini inset: orange H⁺ dots turn yellow chromate dots into \"Cr₂O₇²⁻\". On \"high\" \"potassium chromate indicator\" and \"calculated chloride concentration\" are underlined; chips \"late endpoint → titre high → Cl⁻ too high\" (bright). The fix chip writes \"neutralise first (e.g. NaHCO₃) to about pH 7 to 8\"; \"without adjusting the pH\" underlined. On \"seven or eight\" (the last cue) a",
+        "explain",
+        "card shrinks to the top. On \"chromate\" \"pH of 3\" is underlined; a mini inset: orange H⁺ dots turn yellow chromate dots into \"Cr₂O₇²⁻\". On \"high\" \"potassium chromate indicator\" and \"calculated chloride concentration\" are underlined; chips \"late endpoint → titre high → Cl⁻ too high\" (bright). The fix chip writes \"neutralise first (e.g. NaHCO₃) to about pH 7 to 8\"; \"without adjusting the pH\" underlined. On \"seven or eight\" (the last cue) a chip \"No effect: H⁺ isn't in Ag⁺ + Cl⁻ → AgCl\" fades in and is crossed (caption \"acid changes the indicator\"). The sentence that used to carry this idea is cut (learning review 2); the crossed chip and caption keep it. Hold about 1 second. Hold about 1 second.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "board clears.",
+        "Handoff: So silver counts the chloride, and chromate tells you when to stop.",
+        "Next",
+        "On the spoken cues: Memory line 1 returns small at the top. On \"Next\" `m6-analytical-balance-v1.png` appears small at the right with a chip \"Next: gravimetric analysis\".",
+        "explain",
+        "board clears. Memory line 1 returns small at the top. On \"Next\" `m6-analytical-balance-v1.png` appears small at the right with a chip \"Next: gravimetric analysis\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+
+M8C02_ROWS = {
+    "hook": [
+        "adjust",
+        "heading writes on: \"Weighing an ion\".",
+        "Hook (a clear sample, a white solid): Last time, we counted chloride by measuring a volume of silver nitrate.",
+        "solid / that",
+        "On the spoken cues: A small grey chip \"c01: volume (titration)\" writes top-left and dims. `m6-wastewater-outlet-probe-v1.png` appears as a framed card at centre with tag \"wastewater\". It shrinks left; `m6-beaker-v1.png` appears with a coded clear fill, tag \"sample\". On \"solid\" coded drops fall in and the beaker cross-fades to `m8-baso4-beaker-settled-v1.png`; tag \"BaSO₄(s), white\". On \"that\" a question chip writes and stays dim: \"mass",
+        "explain",
+        "heading writes on: \"Weighing an ion\". A small grey chip \"c01: volume (titration)\" writes top-left and dims. `m6-wastewater-outlet-probe-v1.png` appears as a framed card at centre with tag \"wastewater\". It shrinks left; `m6-beaker-v1.png` appears with a coded clear fill, tag \"sample\". On \"solid\" coded drops fall in and the beaker cross-fades to `m8-baso4-beaker-settled-v1.png`; tag \"BaSO₄(s), white\". On \"that\" a question chip writes and stays dim: \"mass → sulfate?\".",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "measuring-by-mass": [
+        "adjust",
+        "heading: \"Gravimetric analysis = measuring by mass\".",
+        "Measuring by mass: This is gravimetric analysis, which just means measuring by mass.",
+        "weigh / dry",
+        "On the spoken cues: The beaker stays left. A short coded flow writes on the right: \"ion in water → solid (known formula) → dry → weigh\". On \"weigh\" `m8-balance-watch-glass-v1.png` appears small at the end of the flow. Then three requirement cards light one at a time, each dimming as the next lights: \"1. almost all the ion in the solid\", \"2. known formula\", \"3. only that solid: clean and dry\". On \"dry\" all three show, the first two dim.",
+        "explain",
+        "heading: \"Gravimetric analysis = measuring by mass\". The beaker stays left. A short coded flow writes on the right: \"ion in water → solid (known formula) → dry → weigh\". On \"weigh\" `m8-balance-watch-glass-v1.png` appears small at the end of the flow. Then three requirement cards light one at a time, each dimming as the next lights: \"1. almost all the ion in the solid\", \"2. known formula\", \"3. only that solid: clean and dry\". On \"dry\" all three show, the first two dim.",
+        [
+            "HandText write-on",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "choosing-solid": [
+        "new",
+        "board clears to a two-column comparison.",
+        "Choosing the solid: So which solid?",
+        "dissolved / soluble / chloride",
+        "On the spoken cues: Left \"Ca²⁺ → CaSO₄, Ksp 4.93 × 10⁻⁵\"; right \"Ba²⁺ → BaSO₄, Ksp 1.08 × 10⁻¹⁰\"; a grey chip \"c14: same 1 : 1 type, compare Ksp\" between them. On \"dissolved\" the dissolved-ion counter under Ca²⁺ fills tall (\"lots left dissolved, never weighed\"); under Ba²⁺ a sliver (small grey tag \"about 0.5 mg in 200 mL of pure water at 25 °C\"). Requirement card 1 from scene 2 glows briefly. A grey chip \"c15: common ion effect\" writes",
+        "explain",
+        "board clears to a two-column comparison. Left \"Ca²⁺ → CaSO₄, Ksp 4.93 × 10⁻⁵\"; right \"Ba²⁺ → BaSO₄, Ksp 1.08 × 10⁻¹⁰\"; a grey chip \"c14: same 1 : 1 type, compare Ksp\" between them. On \"dissolved\" the dissolved-ion counter under Ca²⁺ fills tall (\"lots left dissolved, never weighed\"); under Ba²⁺ a sliver (small grey tag \"about 0.5 mg in 200 mL of pure water at 25 °C\"). Requirement card 1 from scene 2 glows briefly. A grey chip \"c15: common ion effect\" writes as the Ba²⁺ sliver shrinks further with tag \"excess Ba²⁺\". On \"soluble\" a third mini column \"Na⁺ → Na₂SO₄: soluble\" writes and is crossed. On \"chloride\" a small reagent row writes underneath: \"Cl⁻ + Ag⁺ → AgCl(s)\"; the Ca²⁺ column dims.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "table build",
+            "NumberTicker"
+        ],
+        "Settle about 1 second"
+    ],
+    "precipitate-digest": [
+        "adjust",
+        "heading: \"Method\".",
+        "Precipitate and digest: Here's the method.",
+        "carbonate / out / digest / ions",
+        "On the spoken cues: A method strip of nine small labels writes along the bottom, all dim: \"dissolve, acidify, precipitate, digest, filter, wash, dry, cool, weigh\"; \"dissolve\" lights. `m6-beaker-v1.png` at left with its coded clear fill. On \"carbonate\" \"acidify\" lights, coded drops of dilute HCl fall, a few small coded bubbles rise and leave the surface, and a chip writes: \"dilute HCl: carbonate leaves as CO₂, so no BaCO₃ forms\". Then",
+        "explain",
+        "heading: \"Method\". A method strip of nine small labels writes along the bottom, all dim: \"dissolve, acidify, precipitate, digest, filter, wash, dry, cool, weigh\"; \"dissolve\" lights. `m6-beaker-v1.png` at left with its coded clear fill. On \"carbonate\" \"acidify\" lights, coded drops of dilute HCl fall, a few small coded bubbles rise and leave the surface, and a chip writes: \"dilute HCl: carbonate leaves as CO₂, so no BaCO₃ forms\". Then \"precipitate\" lights and the beaker cross-fades to `m8-baso4-beaker-settled-v1.png`. Coded drops fall; on \"out\" one test drop falls into the clear upper layer and a chip \"no new cloudiness: complete\" writes. A small hazard chip writes and stays grey: \"BaCl₂ toxic; AgNO₃ stains; heavy-metal waste\". On \"digest\" \"digest\" lights on the strip; a coded warm glow sits under the beaker (label \"warm, stand\"); the crystal growth zoom opens at right. On \"ions\" the zoom shows the dotted mesh: small crystals pass through it, large ones sit on it; grey ion dots stick to the small crystals more than the large ones.",
+        [
+            "HandText write-on",
+            "Mark cross",
+            "chip pop",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "filter-wash": [
+        "adjust",
+        "\"filter\" and \"wash\" light on the strip.",
+        "Filter and wash: Next, filter it through a filter paper you've already dried and weighed.",
+        "sulfate",
+        "On the spoken cues: `m8-filter-funnel-white-ppt-v1.png` appears at left with a navy tag \"filter paper: dried and weighed first, on the tared watch glass\". `m6-wash-bottle-v1.png` appears small beside it; a coded jet arc runs from its nozzle to the funnel. The wash drops inset: drops carry grey \"Cl⁻\" and \"Ba²⁺\" dots off white crystals and down through the paper. On \"sulfate\" a chip \"unwashed: extra mass\" writes (bright) with a small up",
+        "explain",
+        "\"filter\" and \"wash\" light on the strip. `m8-filter-funnel-white-ppt-v1.png` appears at left with a navy tag \"filter paper: dried and weighed first, on the tared watch glass\". `m6-wash-bottle-v1.png` appears small beside it; a coded jet arc runs from its nozzle to the funnel. The wash drops inset: drops carry grey \"Cl⁻\" and \"Ba²⁺\" dots off white crystals and down through the paper. On \"sulfate\" a chip \"unwashed: extra mass\" writes (bright) with a small up arrow; requirement card 3 glows briefly.",
+        [
+            "HandText write-on",
+            "chip pop",
+            "DrawPath",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "constant-mass": [
+        "adjust",
+        "\"dry\", \"cool\" and \"weigh\" light on the strip.",
+        "Dry to constant mass: Now dry the paper and solid in an oven, and cool it in a desiccator, a sealed container with a drying agent, so it doesn't pick up water from the air while it cools.",
+        "cools / agree / balance",
+        "On the spoken cues: The weighing loop draws: `m8-drying-oven-v1.png`, `m8-desiccator-v1.png` and `m8-balance-watch-glass-v1.png` in a ring with coded arrows, the same height. On \"cools\" the desiccator glows. On \"zeroed\" the balance plate is not yet lit: a coded readout chip \"0.000 g\" writes at the balance position with the tag \"tare: balance zeroed with the empty, dry watch glass\" (the delivered plate shows the loaded watch glass, so",
+        "explain",
+        "\"dry\", \"cool\" and \"weigh\" light on the strip. The weighing loop draws: `m8-drying-oven-v1.png`, `m8-desiccator-v1.png` and `m8-balance-watch-glass-v1.png` in a ring with coded arrows, the same height. On \"cools\" the desiccator glows. On \"zeroed\" the balance plate is not yet lit: a coded readout chip \"0.000 g\" writes at the balance position with the tag \"tare: balance zeroed with the empty, dry watch glass\" (the delivered plate shows the loaded watch glass, so the empty state is a label, not a picture); then the plate lights on \"weigh\". A small fixed caption under the balance reads \"watch glass tared: paper + solid\" for every reading. Each loop writes a reading under the balance in turn: \"1.268 g\", \"1.257 g\", \"1.255 g\", \"1.255 g\"; earlier readings dim. On \"agree\" the last two readings bracket together with the tag \"constant mass: drying no longer removing water\" (bright; small grey \"agree: within the balance's precision\"). On \"balance\" the loop arrows stop and a small chip \"dry impurities: constant mass too, so wash\" writes beside requirement card 3.",
+        [
+            "HandText write-on",
+            "ScribbleCircle",
+            "chip pop",
+            "DrawPath",
+            "NumberTicker",
+            "Plate"
+        ],
+        "Settle about 1 second"
+    ],
+    "worked-mass-moles": [
+        "new",
+        "board clears to the calculation board.",
+        "Worked example: mass and moles: Let's use it.",
+        "sulfate / moles",
+        "On the spoken cues: Task strip: \"Find the % of sulfate in the sample\". Equation strip: \"Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\". Givens group (navy), two short blocks: \"sample: 0.500 g\" and \"watch glass tared: filter paper 0.905 g; paper + dry BaSO₄ 1.255 g (constant mass)\"; molar masses as a third small block: \"M(BaSO₄) = 233.39, M(SO₄²⁻) = 96.06 g/mol\". Stage line 1: \"m(BaSO₄) = 1.255 − 0.905\"; on \"sulfate\" \"= 0.350 g\" (bright). Line 1",
+        "explain",
+        "board clears to the calculation board. Task strip: \"Find the % of sulfate in the sample\". Equation strip: \"Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)\". Givens group (navy), two short blocks: \"sample: 0.500 g\" and \"watch glass tared: filter paper 0.905 g; paper + dry BaSO₄ 1.255 g (constant mass)\"; molar masses as a third small block: \"M(BaSO₄) = 233.39, M(SO₄²⁻) = 96.06 g/mol\". Stage line 1: \"m(BaSO₄) = 1.255 − 0.905\"; on \"sulfate\" \"= 0.350 g\" (bright). Line 1 dims. Line 2: \"n(BaSO₄) = m ÷ M = 0.350 ÷ 233.39\"; on \"moles\" \"= 1.50 × 10⁻³ mol\" (bright).",
+        [
+            "Enter reveals"
+        ],
+        "Settle about 1 second"
+    ],
+    "worked-percentage": [
+        "new",
+        "lines 1 and 2 dim, their results kept.",
+        "Worked example: sulfate and percentage: The equation shows one sulfate in every barium sulfate, so that's also the moles of sulfate.",
+        "sulfate / percent",
+        "On the spoken cues: On \"sulfate\" line 3: \"1 : 1, so n(SO₄²⁻) = 1.50 × 10⁻³ mol\" with the \"1 : 1\" glowing on the equation strip. Line 4: \"m(SO₄²⁻) = 1.50 × 10⁻³ × 96.06 = 0.144 g\". Line 5: \"% = 0.144 ÷ 0.500 × 100\"; on \"percent\" \"= 28.8%\" (bright). A chip \"0.350 ÷ 0.500 × 100\" fades in and is crossed (caption \"precipitate, not sulfate\").",
+        "explain",
+        "lines 1 and 2 dim, their results kept. On \"sulfate\" line 3: \"1 : 1, so n(SO₄²⁻) = 1.50 × 10⁻³ mol\" with the \"1 : 1\" glowing on the equation strip. Line 4: \"m(SO₄²⁻) = 1.50 × 10⁻³ × 96.06 = 0.144 g\". Line 5: \"% = 0.144 ÷ 0.500 × 100\"; on \"percent\" \"= 28.8%\" (bright). A chip \"0.350 ÷ 0.500 × 100\" fades in and is crossed (caption \"precipitate, not sulfate\").",
+        [
+            "Mark cross",
+            "chip pop"
+        ],
+        "Settle about 1 second"
+    ],
+    "mass-to-concentration": [
+        "new",
+        "lines 4 and 5 fade; line 3's result stays.",
+        "From mass to concentration: What if the sample was a volume of water instead?",
+        "litre",
+        "On the spoken cues: The givens block \"sample: 0.500 g\" swaps to \"sample: 250.0 mL = 0.2500 L\". Line 4 rewrites: \"c(SO₄²⁻) = 1.50 × 10⁻³ ÷ 0.2500\"; on \"litre\" \"= 6.00 × 10⁻³ mol/L\" (bright). Line 5: \"× 96.06 = 0.576 g/L\"; on the second \"litre\" \"= 576 mg/L\" (bright). A grey chip \"c01: c = n ÷ V\" sits beside line 4.",
+        "explain",
+        "lines 4 and 5 fade; line 3's result stays. The givens block \"sample: 0.500 g\" swaps to \"sample: 250.0 mL = 0.2500 L\". Line 4 rewrites: \"c(SO₄²⁻) = 1.50 × 10⁻³ ÷ 0.2500\"; on \"litre\" \"= 6.00 × 10⁻³ mol/L\" (bright). Line 5: \"× 96.06 = 0.576 g/L\"; on the second \"litre\" \"= 576 mg/L\" (bright). A grey chip \"c01: c = n ÷ V\" sits beside line 4.",
+        [
+            "chip pop"
+        ],
+        "Settle about 1 second"
+    ],
+    "errors": [
+        "new",
+        "board clears to the two-way error board.",
+        "What pushes the answer wrong: The balance gives a precise number, but the method can still push it the wrong way.",
+        "high / low / average",
+        "On the spoken cues: Left column heading \"mass ↑ → answer ↑\"; right \"mass ↓ → answer ↓\". On \"high\" two items light in the left column: \"damp solid\" and \"not washed: impurities\"; the filter-funnel and oven plates appear small beside them. On \"low\" the left items dim and two light on the right: \"torn filter paper\" and \"sulfate left dissolved\". On \"average\" a third row writes across both columns: \"repeat the same faulty method → same error",
+        "explain",
+        "board clears to the two-way error board. Left column heading \"mass ↑ → answer ↑\"; right \"mass ↓ → answer ↓\". On \"high\" two items light in the left column: \"damp solid\" and \"not washed: impurities\"; the filter-funnel and oven plates appear small beside them. On \"low\" the left items dim and two light on the right: \"torn filter paper\" and \"sulfate left dissolved\". On \"average\" a third row writes across both columns: \"repeat the same faulty method → same error in the average\" with a small tag \"repeats don't remove a bias\".",
+        [
+            "HandText write-on"
+        ],
+        "Settle about 1 second"
+    ],
+    "memory-aid": [
+        "new",
+        "board clears.",
+        "Memory aid: So, two lines to keep.",
+        "low",
+        "On the spoken cues: Handwritten line 1: \"mass → moles → ratio → target\". Handwritten line 2 on \"low\": \"Too wet reads high; lost reads low.\" A small card: \"weigh at constant mass (and wash first)\".",
+        "explain",
+        "board clears. Handwritten line 1: \"mass → moles → ratio → target\". Handwritten line 2 on \"low\": \"Too wet reads high; lost reads low.\" A small card: \"weigh at constant mass (and wash first)\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "HandText write-on"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "attempt-1": [
+        "new",
+        "question card, worded as printed: \"A 50.0 mL sample of creek water was treated with excess silver nitrate solution.",
+        "Unseen transfer task (attempt 1 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Your turn. Creek water is tested for chloride",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 1 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"A 50.0 mL sample of creek water was treated with excess silver nitrate solution. The silver chloride precipitate was collected on a filter paper of mass 0.812 g, washed, and dried to constant mass. The filter paper and precipitate then had a combined mass of 0.955 g. Calculate the concentration of chloride ions in the creek water, in g L⁻¹. M(AgCl) = 143.32 g mol⁻¹; M(Cl) = 35.45 g mol⁻¹.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-1": [
+        "new",
+        "card shrinks to the top.",
+        "Brief feedback (feedback 1 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "three / chloride / litre / big",
+        "On the spoken cues: On \"three\" \"filter paper of mass 0.812 g\" and \"combined mass of 0.955 g\" are underlined; line \"m(AgCl) = 0.955 − 0.812 = 0.143 g\". Line \"n(AgCl) = 0.143 ÷ 143.32 = 9.98 × 10⁻⁴ mol\" (\"M(AgCl)\" underlined); on \"chloride\" it continues \"= n(Cl⁻) (1 : 1)\". On \"litre\" line \"m(Cl⁻) = 9.98 × 10⁻⁴ × 35.45 = 0.03537 g\" (\"M(Cl)\" underlined) and then line \"c = 0.03537 ÷ 0.0500 = 0.707 g/L\" (answer bright; \"50.0 mL\" underlined).",
+        "explain",
+        "card shrinks to the top. On \"three\" \"filter paper of mass 0.812 g\" and \"combined mass of 0.955 g\" are underlined; line \"m(AgCl) = 0.955 − 0.812 = 0.143 g\". Line \"n(AgCl) = 0.143 ÷ 143.32 = 9.98 × 10⁻⁴ mol\" (\"M(AgCl)\" underlined); on \"chloride\" it continues \"= n(Cl⁻) (1 : 1)\". On \"litre\" line \"m(Cl⁻) = 9.98 × 10⁻⁴ × 35.45 = 0.03537 g\" (\"M(Cl)\" underlined) and then line \"c = 0.03537 ÷ 0.0500 = 0.707 g/L\" (answer bright; \"50.0 mL\" underlined). On \"big\" a chip \"0.955 g used as AgCl → 4.72 g/L\" fades in and is crossed (caption \"subtract the paper\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "attempt-2": [
+        "new",
+        "question card, worded as printed: \"In a gravimetric analysis of sulfate, a student did not wash the barium sulfate precipitate before drying and weighing it.",
+        "Unseen transfer task (attempt 2 (countdown, 10 seconds)) with every given and demand on screen, a 10 second countdown and no answer cues.",
+        "Last one. A student didn't wash a barium",
+        "The question card builds with every given visible and stays on screen; no answer cues appear; the countdown ring runs for 10 seconds after \"Pause here to answer.\" (attempt 2 (countdown, 10 seconds))",
+        "explain",
+        "question card, worded as printed: \"In a gravimetric analysis of sulfate, a student did not wash the barium sulfate precipitate before drying and weighing it. The student repeated the whole analysis three times in the same way and averaged the results. (a) Explain the effect of not washing the precipitate on the calculated percentage of sulfate. (b) Assess whether repeating the analysis improves the result.\" The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+        [
+            "Countdown ring"
+        ],
+        "10 second answer-free countdown after \"Pause here to answer.\"; the card stays on screen"
+    ],
+    "feedback-2": [
+        "new",
+        "card shrinks to the top.",
+        "Brief feedback (feedback 2 (brief)): the answer, the key reason with the givens underlined, and one crossed classic mistake (owner rule, 16 October).",
+        "solid / high / cancel",
+        "On the spoken cues: On \"solid\" \"did not wash\" is underlined; the wash drops inset runs in reverse (grey ion dots stay on the crystals). On \"high\" \"calculated percentage of sulfate\" is underlined; chip \"mass ↑ → % sulfate too high\" (bright). \"repeated the whole analysis three times in the same way\" and \"averaged\" are underlined; chips \"same extra mass each time\" and \"repeats do not remove this bias\". On \"cancel\" a chip \"Averaging three",
+        "explain",
+        "card shrinks to the top. On \"solid\" \"did not wash\" is underlined; the wash drops inset runs in reverse (grey ion dots stay on the crystals). On \"high\" \"calculated percentage of sulfate\" is underlined; chip \"mass ↑ → % sulfate too high\" (bright). \"repeated the whole analysis three times in the same way\" and \"averaged\" are underlined; chips \"same extra mass each time\" and \"repeats do not remove this bias\". On \"cancel\" a chip \"Averaging three trials cancels the error.\" fades in and is crossed (caption \"systematic: same every time\"). Hold about 1 second. Hold about 1 second.",
+        [
+            "Mark cross",
+            "chip pop",
+            "Mark underline"
+        ],
+        "Hold about 1 second"
+    ],
+    "handoff": [
+        "adjust",
+        "board clears.",
+        "Handoff: So pick a solid that barely dissolves, keep it clean, dry it to constant mass, and the mass tells you the ion.",
+        "Next",
+        "On the spoken cues: Memory line 1 returns small at the top. On \"Next\" `m8-filter-funnel-white-ppt-v1.png` and `m8-desiccator-v1.png` appear small at the right, same height, with a chip \"Next: carry out a gravimetric analysis\".",
+        "explain",
+        "board clears. Memory line 1 returns small at the top. On \"Next\" `m8-filter-funnel-white-ppt-v1.png` and `m8-desiccator-v1.png` appear small at the right, same height, with a chip \"Next: carry out a gravimetric analysis\". Hold about 2 seconds. Hold about 2 seconds.",
+        [
+            "chip pop",
+            "Plate"
+        ],
+        "Hold about 2 seconds"
+    ],
+    "key-notes": [
+        "new",
+        "Key notes card with the numbered notes, the memory aid in large writing and its condition tag",
+        "Essentials to copy into books",
+        "key notes",
+        "Notes appear then stay still for copying",
+        "hold",
+        "The notes and the memory aid appear and lock",
+        [
+            "Enter reveals"
+        ],
+        "Quiet copy hold of about 60 seconds with pause invitation"
+    ]
+}
+# END generated rows: m7c15, m7g04, m7g03, m7p04c, m7p05c, m7p06c, skills06, skills08, m8c01, m8c02
 
 
 LESSONS = {
@@ -18732,6 +21449,138 @@ LESSONS = {
         'rows': M7C14_ROWS,
     },
     # END generated entries: m7c09, m7c10, m7c11, m7c12, m7c13, m7c14
+    # BEGIN generated entries: m7c15, m7g04, m7g03, m7p04c, m7p05c, m7p06c, skills06, skills08, m8c01, m8c02
+    'm7c15': {
+        'design': D + 'lessons/chem-m7-c15.md',
+        'learning_review': D + 'checks/m7c15-learning-review.md',
+        'science_check': D + 'checks/m7c15-claude-science-check.md',
+        'meta': {"title": "How does condensation build a polymer? Two-ended monomers, ester and amide links, drawing repeat units and getting the monomers back, and how the links set the properties of nylon and PET", "subtitle": "Make polyethylene, and every atom of every monomer ends up in the chain. Make a PET bottle or a nylon rope, and a water molecule comes off at every link. How do two-ended monomers build a condensation polymer, how do you draw its repeat unit and get the monomers back, and how do its ester and amide links give PET and nylon their properties?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 24, "lessonIntent": "explaining why condensation monomers need two reactive ends; forming PET and nylon 6,6; drawing a condensation repeat unit; recovering the monomers; comparing addition and condensation by monomer, by-product, repeat-unit formula and backbone link; explaining nylon's and PET's properties and uses from their structure. No acid chloride route, no natural polymers, no lifecycle."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "two-ends", "build-pet", "draw-repeat-unit", "nylon", "monomers-back", "compare", "nylon-properties", "pet-properties", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c10 (esterification: the acid loses OH, the alcohol loses H, water leaves; the ester group –COO–; condensation reaction; the cut line); chem-m7-c11 (amines, the –NH₂ group; the amide link, C=O bonded to N; amide formation by condensation); chem-m7-c14 (monomer, polymer, repeat unit, brackets, n, continuation bonds; the chain view; dispersion contact; thermoplastic; HDPE about 130 °C; \"Addition: nothing lost\"); chem-m7-c05 and c03 (hydrogen bonding needs an H on N or O and a lone pair on N or O); chem-m7-c08b (polar C=O, dipole–dipole); chem-m7-c01 (naming; locants such as 1,2- and 1,6-). Not assumed: diol, dicarboxylic acid, diamine, condensation polymerisation, polyester, polyamide, nylon 6,6, PET, hydrolysis.", "startsWith": "Join monomers through ester or amide links. The video opens: Last time, every atom of every monomer ended up in the chain. A PET drink bottle is different. Every time two of its monomers join, a small molecule of water comes off.", "stopsAfter": "explaining why condensation monomers need two reactive ends; forming PET and nylon 6,6; drawing a condensation repeat unit; recovering the monomers; comparing addition and condensation by monomer, by-product, repeat-unit formula and backbone link; explaining nylon's and PET's properties and uses from their structure. No acid chloride route, no natural polymers, no lifecycle.", "nextLesson": "polymer practice from both families (route chem-m7-g04, \"Polymer practice: repeating units, monomers and properties\")."},
+        'teaching': {"task": "Make polyethylene, and every atom of every monomer ends up in the chain. Make a PET bottle or a nylon rope, and a water molecule comes off at every link. How do two-ended monomers build a condensation polymer, how do you draw its repeat unit and get the monomers back, and how do its ester and amide links give PET and nylon their properties?", "causalExplanation": "(1) addition kept every atom; PET and nylon lose water at each link (1); (2) one reactive group makes one small molecule and stops; a group at each end keeps a reactive end after every link, so the chain grows both ways (2); (3) PET: the acid loses OH, the alcohol loses H, water leaves, an ester link forms, again and again: condensation polymerisation, a polyester (3); (4) the repeat unit is one of each monomer minus the water at each end; the ends are complementary; two ester links per unit (4); (5) a diamine in place of the diol gives amide links: nylon 6,6, a polyamide (5); (6) adding the water back splits each link and gives the monomers; count the C=O carbons (6); (7) comparison: monomer, by-product, repeat-unit formula, backbone link; hydrolysis splits ester and amide links, usually slowly (7); (8) nylon's N–H and C=O hydrogen bond between chains: tough, high melting; amide links survive melting (8); (9) PET's stiff rings and polar ester links: strong, stiff, high melting; bottles and fibres (9); memory aid (10); two attempts and brief feedback (11 to 14); handoff (15); key notes (16).", "conversationalApproach": "the last video's addition polymers kept every atom, but a PET bottle loses a small molecule of water every time two monomers join, and nylon rope is made the same way, so the video asks how a chain can grow while losing something at every link and what those links do to the plastic. Esterification joins an acid and an alcohol and stops, because ethyl ethanoate has no spare group; a diol and a dicarboxylic acid each have a reactive group at both ends, so after one link the molecule can keep joining. PET forms from ethane-1,2-diol and benzene-1,4-dicarboxylic acid as water leaves at each ester link: condensation polymerisation, making a polyester. The repeat unit is one diol and one acid joined, water gone from each end, bracketed with continuation bonds and n. Swapping the diol for hexane-1,6-diamine gives amide links and nylon 6,6, a polyamide. Going backwards, adding the water back at each link recovers the monomers, counting both C=O carbons. Addition needs a C=C and loses nothing; condensation needs two reactive ends and loses water at every link. Nylon's N-H and C=O groups hydrogen bond between chains, so it melts near 265 degrees, while PET has no hydrogen bonds between chains but stiff rings and polar ester links. Two exam questions follow with brief feedback.", "openingDecision": "Last time, every atom of every monomer ended up in the chain. A PET drink bottle is different. Every time two of its monomers join, a small molecule of water comes off. Nylon rope is made the same way. So how can you build a long chain while losing something at every link, and what do those links do to the plastic?", "understandingCheck": "(A1) \"Butane-1,4-diol, HO(CH₂)₄OH, reacts with butanedioic acid, HOOC(CH₂)₂COOH, to form a condensation polymer. (a) Draw the repeat unit of this polymer. (b) Name the type of link formed and the other product of the reaction.\" New monomers (the scene uses PET and the recovery example); tests scene 4's method and the by-product. Crossed mistake: \"[–O–(CH₂)₄–O–CO–(CH₂)₂–CO–OH]ₙ\" (an OH left at the bracket end; site Common Error \"water retained\"). (A2) \"A polyamide has the repeat unit [–NH–(CH₂)₆–NH–CO–(CH₂)₈–CO–]ₙ. (a) Identify the two monomers used to make this polymer. (b) This polyamide melts at a much higher temperature than high-density polyethylene (HDPE). Explain this difference in terms of the forces between the polymer chains.\" New polymer (nylon 6,10); tests scene 6's recovery and scene 8's cause. Crossed mistake: \"octanedioic acid\" (the two C=O carbons not counted; site WE2's trap).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"model and compare the structure, properties and uses of condensation polymers, for example:; nylon; polyesters\" This video covers why a condensation monomer needs a reactive group at each end, how PET (a polyester) and nylon 6,6 (a polyamide) form with water released at every link, drawing a condensation repeat unit, recovering the monomers by adding the water back, comparing addition and condensation (monomer, by-product, backbone link, repeat-unit formula), and how hydrogen bonding (nylon) and stiff rings with polar ester links (PET) set their properties and uses. Addition polymers are chem-m7-c14; mixed practice is chem-m7-g04 (route review change 4). this video starts by joining monomers through ester or amide links, and stops at comparing repeat units and small-molecule by-products, with the property links that route review change 4 folds in. It teaches: esterification (c10) joins two molecules and releases water, but a monomer with one reactive group gives one small ester and stops; a monomer with a reactive group at each end (a diol, a dicarboxylic acid, a diamine) still has a reactive end after each link forms, so the chain grows from both ends; PET from ethane-1,2-diol and benzene-1,4-dicarboxylic acid (terephthalic acid): at each link the acid loses OH and the alcohol loses H, they leave as water, and an ester link forms; condensation polymerisation (a polymer formed with a small molecule, usually water, released at every link); polyester (a polymer with ester links along its chain); the repeat unit: one diol plus one diacid, minus the water at each end, in brackets with a continuation bond through each bracket and n outside; the end check (the right-hand C=O carbon bonds to an oxygen like the one on the left); two ester links per repeat unit; nylon 6,6 from hexane-1,6-diamine and hexanedioic acid, the amide link (c11), polyamide, \"6,6\" for the six carbons in each monomer; monomers from a repeat unit: cut each ester or amide link between the C=O carbon and the O or N, add OH to the C=O side and H to the O or N side; count the C=O carbons when naming the acid; comparison with addition: the monomer (C=C against a reactive group at each end), the by-product (none against water at every link), the repeat-unit formula (same as the monomer against the monomers minus two waters), and the backbone (all carbon against ester or amide links); hydrolysis named in one sentence (water can split ester and amide links, the reverse of condensation; usually slow without acid, base or an enzyme; a carbon backbone has no such weak point); nylon: the N–H of one chain hydrogen bonds to the C=O of a neighbouring chain, so the chains attract strongly: tough fibres, melting at about 265 °C (HDPE about 130 °C); still a thermoplastic: heating lets the chains slide, and the amide links in the chains do not break; PET: no N–H, so no hydrogen bonds between chains, but flat, stiff benzene rings stop the chains twisting and the polar ester links add dipole–dipole attraction: strong and stiff, melting at about 260 °C; bottles (tough, clear) and polyester fibres. Not here: the acid chloride route and HCl as a by-product (author note a; the narration says \"a small molecule\", and \"here water\" for the pairs shown); the 2n − 1 count of water molecules for a finite chain (a grey screen tag only); nylon 6 and other single-monomer condensation polymers (chem-m7-g04 uses PLA in Q3); proteins, polysaccharides and natural polymers (site L22 card 3 aside and L23 card 8, beyond the 2017 dotpoint; site correction 6 in `chem-m7-c14.md`); Kevlar, polycarbonate and PMMA (L23, extension); recycling codes, microplastics, PETase and bioplastics (route review change 4; author note d); reaction conditions and catalysts for PET and nylon (author note b); glass transition and crystallinity (author note c); thermosets (c14's grey chip covers them)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c10 and c11, with c14's polymer additions: carbon skeleton ink; hydrogens soft grey; oxygen brick red; nitrogen indigo with the letter N printed; the ester group ringed red; the amide group ringed red at the C=O and indigo at the N; reactive end groups ringed amber while they are being counted (end tags); released water in the Module 5 water colour; brackets, n and continuation bonds navy; benzene rings ink with a grey inner ring; chains in the chain view pale blue; dispersion contact dotted pale blue; hydrogen bonds dotted violet; dipole–dipole dotted teal; heat glow amber. Board layout (constant): top-left the short task chip (\"Two ends\", \"Build PET\", \"Draw it\", \"Nylon\", \"Backwards\", \"Compare\", \"Why strong?\"); centre the structure board or the chain view box, one model at a time; plates small or medium at the left or right only in scenes 1, 3, 5, 8, 9, 14 and 15. Clutter rule: at most three text items bright at once; every label fades when its sentence ends; the previous model leaves before the next one draws. Reuse: painted plates (inspected 28 Oct): `m7-polymer-objects-v1.png` (2000 × 2000; scenes 1 and 15, medium); `m7-hdpe-crate-v1.png` (2000 × 2000, a blue stackable crate; scene 8 and feedback 2, small). Not used: `m7-ester-fruit-v1.png` (a banana, pineapple and pear; c10's ester hook, not a polymer object); c14's other plates (addition polymers). Three new plates (Assets). All plates scaled uniformly only, never stretched or cropped. No human figures.", "transitionPlan": "The heading writes on beside a grey c14 chip and the polymer objects plate with the bottle and rope ringed; the board clears to ethanoic acid and ethanol as c10's condensation join runs once and stops, then a diol and a diacid with amber end tags join and keep their reactive ends; PET's two monomers draw with name tags, OH and H lift off as water at each link and the ester link rings red; a two-unit PET section draws in full, the water goes and brackets close around one unit with n; the diamine and hexanedioic acid draw and join through an amide link; the water insert runs on a polyester section and the carbon counter counts the acid; the two-column comparison board builds one row at a time; the c14 chain view turns into nylon strands with dotted hydrogen bonds, then PET strands with stiff ring segments; the memory lines write with a small repeat unit; each attempt clears the board, its feedback underlines the card while the answer draws and a crossed trap chip lands; the plate and a next chip close; scene crossfade with settle."},
+        'rows': M7C15_ROWS,
+    },
+    'm7g04': {
+        'design': D + 'lessons/chem-m7-g04.md',
+        'learning_review': D + 'checks/m7g04-learning-review.md',
+        'science_check': D + 'checks/m7g04-claude-science-check.md',
+        'meta': {"title": "Polymer Practice: Repeat Units, Monomers, Addition or Condensation", "subtitle": "Can you draw a polymer from its monomer, find the monomers from a polymer, decide whether it formed by addition or condensation, and explain one of its properties from its structure?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 25, "lessonIntent": "four worked HSC-style questions and a decision board: find the backbone first."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question", "q4-question"],
+        'ids': ["hook", "q1-question", "q1-backbone", "q1-section", "q1-mistake", "q2-question", "q2-links", "q2-water", "q2-mistake", "q3-question", "q3-x", "q3-y", "q3-mistake", "q4-question", "q4-compare", "q4-forces", "q4-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c14 (addition polymerisation; the two C=C carbons form the backbone and everything else hangs off; drawing a repeat unit with brackets, n and continuation bonds; recovering the monomer by restoring the C=C, adding no H; dispersion contact; thermoplastics); chem-m7-c15 (two reactive ends; ester and amide links; the repeat unit as one of each monomer minus the water; \"add the water back\"; count the C=O carbons; addition against condensation; nylon's hydrogen bonds; melting does not break chain links); chem-m7-c10 (ester naming, for \"methyl 2-methylpropenoate\", screen only); chem-m7-c05 (hydrogen bonding needs H on N or O); chem-m7-c08b (dipole–dipole from C=O); chem-m7-c01 (locants).", "startsWith": "Draw the repeating unit from a monomer. The video opens: Polymer questions usually come in four shapes.", "stopsAfter": "four worked HSC-style questions and a decision board: find the backbone first.", "nextLesson": "none in the Module 7 Chemistry route (the last entry); the decision board's last line points to the Module 8 playlist only if root confirms the playlist order (Open decisions). As designed it ends on the key notes."},
+        'teaching': {"task": "Can you draw a polymer from its monomer, find the monomers from a polymer, decide whether it formed by addition or condensation, and explain one of its properties from its structure?", "causalExplanation": "Why only two carbons join the backbone: only the C=C opens (2b, 2d). Why three units give three ethyl groups and six backbone carbons: one side group and two backbone carbons per unit (2c). Why Q2's polymer is condensation: its backbone contains ester links (3b). Why every link gets water: each was made by losing one (3c, 3d). Why each monomer must have two reactive ends: each must link twice (3c, 4c). Why X is addition despite its ester group: the backbone is C–C; the ester is a side group (4b, 4d). Why no H is added to X's monomer: restoring the C=C completes each carbon's four bonds (4b; c14). Why one monomer can make Y: it carries both reactive groups (4c). Why nylon melts far higher than P: same skeleton, but N–H allows hydrogen bonds between chains (5b, 5c). Why melting does not depend on link strength: melting separates chains (5d).", "conversationalApproach": "Polymer questions come in four shapes (draw a chain from a monomer, find the monomers from a chain, decide addition or condensation, and explain a property), and each starts with the same move: find the backbone, the line of atoms that runs through the brackets. Q1 (but-1-ene for hot-water pipes) opens only the double bond, so carbon one becomes CH2 and carbon two a CH carrying the ethyl group, then joins three units head to tail and circles one; the classic mistake puts all four carbons in the chain. Q2 (a carpet-fibre section) traces a backbone through oxygens and C=O groups, names the ester links and the repeat unit, and adds the water back at every link to recover propane-1,3-diol and benzene-1,4-dicarboxylic acid; the mistake cuts only one link. Q3 (polymers X and Y) looks along each backbone: X has an ester group only as a side group on a carbon chain, so it is an addition polymer whose monomer puts the double bond back, while Y has ester links in the chain and the stated water release, so it is a condensation polymer of lactic acid; the mistake calls X a polyester. Q4 lines up nylon 6,6 and polyester P on the same skeleton, finds the one difference, the N-H, and explains that hydrogen bonds between nylon chains take more energy to overcome; the mistake says the links break on melting. A decision board gathers the moves.", "openingDecision": "Polymer questions usually come in four shapes. Draw a chain from a monomer. Find the monomers from a chain. Decide whether it formed by addition or condensation. And explain a property. Each one starts with the same move: find the backbone, the line of atoms that runs through the brackets. Here are four HSC-style questions. Pause and try each one, then we'll work it through, one step at a time.", "understandingCheck": "Four, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a, 5a): the monomer's name and formula and the \"three repeat units\" and \"circle\" demands (Q1); the full two-unit section and both demands (Q2); both repeat units and both demands (Q3); both repeat units, both melting points and the \"with reference to their structures\" demand (Q4). Nothing answer-bearing during the holds; the backbone strip dims.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p56), as printed: \"model and compare the structure, properties and uses of addition polymers of ethylene and related monomers, for example: - polyethylene (PE) - polyvinyl chloride (PVC) - polystyrene (PS) - polytetrafluoroethylene (PTFE) (ACSCH136)\" \"model and compare the structure, properties and uses of condensation polymers, for example: - nylon - polyesters\" Practice and transfer only. The coverage rows stay with chem-m7-c14 (C7-IQ6-01) and chem-m7-c15 (C7-IQ6-02); G04 adds a practice row, not first coverage. starts at the route's \"Draw the repeating unit from a monomer\" and stops at its \"Classify addition or condensation and explain one property from structure\". Four questions, one per route skill, each with a trap: draw a three-unit section of an addition polymer from but-1-ene (putting all four carbons in the backbone); recover the monomers from a section of a polyester (cutting only one of the links); classify two polymers as addition or condensation and draw each monomer (calling a polymer with an ester side group a polyester); explain why a polyamide melts far above a polyester with the same carbon skeleton (saying melting breaks the stronger amide bonds). One move links all four: find the backbone, the line of atoms that runs through the brackets. Not here: new teaching of addition or condensation polymerisation (c14 and c15; recalled in one clause each); PE, PVC, PS and PTFE property questions (c14's attempts; the decision board recalls them in one line); hydrolysis questions (c15 scene 7; not examined here); copolymers of two alkenes (beyond the site lessons; author note a); the acid chloride route; natural polymers, Kevlar, thermosets, recycling and lifecycle (route review change 4 and site L23's own \"extension\" label); mechanisms and conditions."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "As g01: the question card at the top (shrinking to a strip during the walkthrough), a type badge at its left (\"Draw from a monomer\", \"Find the monomers\", \"Addition or condensation?\", \"Property from structure\"), the structure board or chain view at the centre, answer boxes at the right, and a three-row backbone strip at the far left (this video's check strip): \"Find the backbone (through the brackets)\", \"All C–C: addition. Open or close the C=C.\", \"Ester or amide links: condensation. Remove or add the water.\" Rows tick as each question uses them.", "transitionPlan": "The heading writes on and four stimulus thumbnails fan out on the right, one per question shape; each question opens on a fresh board with the type badge hidden while the worded card writes with its structure and any context plate small at its corner; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given as it is used; a locant counter numbers the monomer's carbons as its C=C pulses; the section builder slides three opened monomers together and a ring circles one repeat unit; the backbone tracer runs along each section or repeat unit and colours the links it passes; c10's cut line drops through each ester link as the water insert docks OH and H; the X and Y structures enlarge in turn and the kept one dims to a chip; the two repeat units align and their matching segments light in pairs; c14's chain view splits into nylon and polyester boxes with dotted hydrogen bonds drawn only on the nylon side; each question ends with its classic mistake chip taking a grey scribble cross; the backbone strip returns as a two-column board, each row lighting on its cue with its question badge; scene crossfade with settle."},
+        'rows': M7G04_ROWS,
+    },
+    'm7g03': {
+        'design': D + 'lessons/chem-m7-g03.md',
+        'learning_review': D + 'checks/m7g03-learning-review.md',
+        'science_check': D + 'checks/m7g03-claude-science-check.md',
+        'meta': {"title": "Organic Synthesis Pathways: HSC-Style Practice", "subtitle": "A synthesis question gives you a target and a short list of starting materials. How do you choose the start that puts each group on the right carbon, write every step with its conditions, and check a route for the box or arrow that quietly makes an isomer instead of the target?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 22, "lessonIntent": "choosing between isomeric starting materials by the carbon the group must sit on; writing a two-step route with an equation per step; building a four-reaction route from one starting material used in two roles; explaining a low overall yield; finding and correcting a wrong box and a wrong arrow in a given flow chart."},
+        'hold_seconds': 10,
+        'holds': ["q1-question", "q2-question", "q3-question"],
+        'ids': ["hook", "q1-question", "q1-choose", "q1-route", "q1-mistake", "q2-question", "q2-backwards", "q2-forwards", "q2-yield", "q2-mistake", "q3-question", "q3-error1", "q3-error2", "q3-fix", "q3-mistake", "decision-board", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "From c13: the reaction map; the four moves (name and count, work backwards, choose, write forwards and check); \"work backwards to plan, write forwards to answer\"; the main road from ethene; the haloalkane side road; dead end; intermediate; overall yield. From c04a: an unsymmetrical alkene can give two products, a symmetrical one gives one; water or HX on propene goes mainly to the middle carbon. From c04b: UV substitution gives a mixture. From c06: hydroxide takes the halogen's place on the same carbon. From c08a: the class rule (primary to aldehyde or acid, secondary to ketone, tertiary no reaction); distil against reflux; [O]; orange to green. From c08b: ketone names with locants (hexan-2-one, hexan-3-one). From c10: the ester cut at the single-bonded O; naming order (alkyl first, then \"-oate\"); ⇌; keeping a portion of an alcohol back. From c01: numbering carbons; isomers (same formula, different structure).", "startsWith": "An unseen target with two possible starting materials. The video opens: A synthesis question gives you a target and a short list of things you're allowed to start from.", "stopsAfter": "choosing between isomeric starting materials by the carbon the group must sit on; writing a two-step route with an equation per step; building a four-reaction route from one starting material used in two roles; explaining a low overall yield; finding and correcting a wrong box and a wrong arrow in a given flow chart.", "nextLesson": "addition polymers (route chem-m7-c14, \"How does an alkene become an addition polymer?\")."},
+        'teaching': {"task": "A synthesis question gives you a target and a short list of starting materials. How do you choose the start that puts each group on the right carbon, write every step with its conditions, and check a route for the box or arrow that quietly makes an isomer instead of the target?", "causalExplanation": "Why hex-3-ene: it is symmetrical, so the OH can only land on C3 (2b). Why hex-1-ene fails: water adds mainly to C2 (2b), and oxidation keeps the C=O where the OH was, so it makes an isomer (2d). Why the hydration arrow and the ester arrow get ⇌: both are equilibria (2c, 3c). Why the ketone stays: dichromate doesn't oxidise it further (2c). Why ethane needs chloroethane: no reaction met turns an alkane straight into an alcohol (3b). Why split the ethanol: the ester needs both the acid and the alcohol (3c, 3e). Why the yield is low: a mixture, an equilibrium, losses at several stages (3d). Why but-1-ene fails in Q3: mainly butan-2-ol, a secondary alcohol, gives a ketone dead end (4b). Why distillation fails: the aldehyde leaves before it is oxidised further (4c). Why 1-chlorobutane works: hydroxide takes the chlorine's place on the same carbon (4d). Why fixing only the arrow fails: reflux can't change which alcohol formed (4e).", "conversationalApproach": "A synthesis question gives a target and a short list of allowed starting materials, and the four moves from c13 (name and count, work backwards, choose, write forwards and check) still work, but exam questions hide their traps in the choice. Q1 (hexan-3-one from hex-1-ene or hex-3-ene) counts six carbons, needs hexan-3-ol, and chooses the symmetrical hex-3-ene so the OH can only land on carbon three, then writes hydration with a double arrow and dichromate oxidation under reflux; the classic slip makes hexan-2-one, an isomer. Q2 (ethyl ethanoate from ethane alone) works backwards from the ester cut, finds that both halves come from ethanol and that ethanol comes through chloroethane, then writes four reactions forwards with a split of the ethanol, and explains the low yield from the mixed chlorination, the esterification equilibrium and losses; the slip oxidises all the ethanol. Q3 (checking a plan for propyl butanoate) finds a wrong box, since but-1-ene gives mainly butan-2-ol and then butanone, and a wrong arrow, since distilling stops at the aldehyde, then rebuilds the route from 1-chlorobutane; the slip fixes only the arrow. A decision board closes: count carbons, choose the start that puts the group on the right carbon, split a shared start, and write every arrow with its conditions.", "openingDecision": "A synthesis question gives you a target and a short list of things you're allowed to start from. The four moves from the last video still work: name and count, work backwards, choose, then write forwards and check. But exam questions hide their traps in the choice: two starting materials that look almost the same, or a route that puts a group on the wrong carbon and makes an isomer of the target instead. Here are three HSC-style questions. Pause and try each one, then we'll work through it together.", "understandingCheck": "Three, each 10 s with the countdown and every demand and condition visible (2a, 3a, 4a): Q1's both alkenes and \"two-step\"; Q2's \"only carbon-containing starting material\" and \"inorganic reagents may be used\"; Q3's full student chart, the three available starting materials and \"TWO errors\". Nothing answer-bearing during the holds; the check strip dims.", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017, p56), as printed: \"draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step\" \"write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):\" (listed examples: combustion, dehydration, substitution with HX, oxidation; G03 practises oxidation, with each step's equation in Q1) Practice and transfer only: first coverage stays with chem-m7-c13 (C7-IQ5-06) and chem-m7-c08a (C7-IQ4-04); G03 adds practice rows. starts at the route's \"Read a target and allowed starting materials\" and stops at its \"Solve and check multi-step transformations and isomers\". Three questions, each a chain with one trap: (1) hexan-3-one from hex-1-ene or hex-3-ene: choose the starting material by where the OH must sit, write a two-step flow chart with an equation per step (trap: hex-1-ene makes hexan-2-one, an isomer of the target); (2) ethyl ethanoate from ethane only: work backwards through the ester cut, go through a haloalkane, split the ethanol, then explain the low overall yield (trap: oxidising all the ethanol); (3) a student's flow chart for propyl butanoate with two errors, one in a box (but-1-ene gives mainly butan-2-ol, an isomer, which only reaches a ketone) and one on an arrow (distil instead of reflux): identify, explain, correct (trap: fixing only the arrow). Not here: the reaction map and the four moves themselves (c13, recalled in one clause each); mechanisms and Markovnikov's rule by name (c13 author note c; the narration says \"mainly onto carbon two\"); alcoholic NaOH elimination; reductions; yield calculations; purification detail (one grey chip \"separate it\" only); polymers (c14)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "One practice board throughout, in the G02 layout: top-left the question card (stem, starting materials and demands, as an exam prints them, with the tag \"HSC-style question, written for HSCScience\"), kept readable through each question; the working fills the right two thirds; a type badge top-right (\"Choose the start\", \"From one starting material\", \"Check a plan\"), hidden during each attempt because it names the method. When the walkthrough starts, the card shrinks to a strip and each given is underlined in amber in the question text at the cue where it is used. A check strip on the far left carries four rows, \"count carbons?\", \"group on the right carbon?\", \"conditions on every arrow?\", \"every box and arrow possible?\", and ticks the row each scene uses; it dims to an outline during every countdown. Earlier questions are cleared before the next card writes on. Colour key from c13 and c08a: C=C teal, C–X orange-brown, OH ringed red, C=O and –COO– in navy; condition chips grey with the current arrow's chips bright; amber only for underlined givens and the path trace. Molecules are coded structural formulas in the c08a style. Clutter rule (owner): besides the question strip and the check strip, at most about three bright text items in the working area at once (a whole flow chart counts as one item once complete); completed arrows' chips dim while the current arrow writes; each tag fades when the next cue lands.", "transitionPlan": "The heading writes on and the c13 reaction map draws small and grey as four move cards light one at a time; each question opens on a fresh board with the type badge hidden while the worded card writes with its demands and answer boxes; the walkthrough shrinks the card to a strip, lights the type badge and underlines each given as it is used; the carbon ruler numbers the target and its C=O rings, the alkene models compare where the OH can land and the wrong one dims; the c13 flow chart builder runs left to right, each arrow's chips writing in spoken order; the ester cut slides the two halves apart and the backward chain writes; the yield funnel fans the chlorination into its mixture chips; the student's chart stays readable as a wrong box and then a wrong arrow ring and the corrected chart builds beside it; each question ends with its classic slip chip taking a red scribble cross; the check strip returns full size as a two-column board, each row lighting on its cue with its question badge; scene crossfade with settle."},
+        'rows': M7G03_ROWS,
+    },
+    'm7p04c': {
+        'design': D + 'lessons/chem-m7-p04.md',
+        'learning_review': D + 'checks/m7p04-learning-review.md',
+        'science_check': D + 'checks/m7p04-claude-science-check.md',
+        'meta': {"title": "Investigating the products of alcohol oxidation: the dichromate turned green, so what did you actually make?", "subtitle": "Warm an alcohol with acidified dichromate and it turns green. That shows something was oxidised, but what did you actually make? How do you make, collect and test the products of primary and secondary alcohols so the evidence points to one answer, and do it safely?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 14, "lessonIntent": "stating the aim; choosing a fair set of alcohols and a control; sorting alcohols by the dichromate colour; naming the independent, dependent and controlled variables; choosing distillation or reflux for each product and explaining why; predicting each distillate's test results; explaining why the distillate, not the flask, is tested, and how known samples, repeats and the distilling temperature support the conclusion; writing the risk rows for chromium(VI), the acids, the alcohols and products, Tollens' reagent and hot glassware, with disposal."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "aim-and-alcohols", "part-a-colour", "variables", "distil-aldehyde", "reflux-acid", "secondary-ketone", "testing-products", "validity", "reliability-accuracy", "risk", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c08a (class rule, [O], acidified potassium dichromate orange to green, distil for the aldehyde, reflux with excess for the acid, secondary to ketone, tertiary stays orange, the green colour shows oxidation not the product, chromium(VI) hazard stated once). chem-m7-c08b (aldehyde and ketone structures and names; Tollens' silver mirror, Fehling's or Benedict's brick-red, both only with the aldehyde; dichromate test; the flow \"oxidise, distil, test the product\"; Tollens' made fresh). skills-s07 and chem-m7-p03 (validity, reliability, accuracy; word, feature, fix; hazard, harm, control). chem-m7-p01 (the organic waste container; GHS codes on a risk table). chem-m6 (litmus: blue turns red in acid). Year 11: distillation and reflux apparatus from c06 and c08a plates.", "startsWith": "Choose an oxidation and collection method. The video opens: Warm three alcohols with acidified dichromate, and two of them turn it green. That tells you something was oxidised. It doesn't tell you what formed: an aldehyde, a ketone and an acid can all come from the same orange solution.", "stopsAfter": "stating the aim; choosing a fair set of alcohols and a control; sorting alcohols by the dichromate colour; naming the independent, dependent and controlled variables; choosing distillation or reflux for each product and explaining why; predicting each distillate's test results; explaining why the distillate, not the flask, is tested, and how known samples, repeats and the distilling temperature support the conclusion; writing the risk rows for chromium(VI), the acids, the alcohols and products, Tollens' reagent and hot glassware, with disposal.", "nextLesson": "carboxylic acids (route chem-m7-c09, \"Why are carboxylic acids acidic?\")."},
+        'teaching': {"task": "Warm an alcohol with acidified dichromate and it turns green. That shows something was oxidised, but what did you actually make? How do you make, collect and test the products of primary and secondary alcohols so the evidence points to one answer, and do it safely?", "causalExplanation": "(1) green shows oxidation, not the product (1); (2) the aim and a fair set of alcohols, plus a control (2); (3) part A sorts the alcohols: primary and secondary green, tertiary and water orange (3); (4) one variable changed, the rest kept the same (4); (5) distil as it forms to catch the aldehyde, because it boils far below the alcohol and leaves before further oxidation; the distilling temperature supports the identification (5); (6) reflux with excess oxidant reaches the acid because the condenser returns the aldehyde to the oxidant (6); (7) the secondary alcohol gives a ketone that dichromate doesn't oxidise further (7); (8) each product has its own test pattern (8); (9) test the distillate, not the flask, and run known samples: validity (9); (10) repeats agree: reliability; matching known samples and boiling temperatures supports the identification: accuracy; a faint acid result in the aldehyde sample is an investigation prompt on screen, not a spoken diagnosis (10); (11) the hazards and their controls (11); memory aid (12); attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).", "conversationalApproach": "warm three alcohols with acidified dichromate and two turn it green, which shows something was oxidised but not what formed, so the practical asks how to make, collect and test each product so the evidence points to one answer, and do it safely. The aim uses propan-1-ol and propan-2-ol, which share a formula so only the position of the OH differs, with 2-methylpropan-2-ol as the tertiary comparison and a water-only tube as the control. In part A the teacher demonstrates a warm water bath test that sorts the alcohols by whether the dichromate turns green, and the variables card names the alcohol's class, the observations and what stays the same. In part B the aldehyde is caught by distilling straight away, because propanal boils about fifty degrees below the alcohol and escapes before it is oxidised again; reflux with excess oxidant takes the primary alcohol on to propanoic acid; propan-2-ol gives propanone. Tollens' and Benedict's respond only to the aldehyde and blue litmus only to the acid. Testing the distillate, not the flask, is the validity point, because the flask holds sulfuric acid and chromium ions; repeats and known samples support reliability and accuracy, and the risk table centres on chromium(VI). The memory aid is green says oxidised, the test says what. Two exam questions follow with brief feedback.", "openingDecision": "Warm three alcohols with acidified dichromate, and two of them turn it green. That tells you something was oxidised. It doesn't tell you what formed: an aldehyde, a ketone and an acid can all come from the same orange solution. Here you'll make each product, collect it and test it, so the evidence points to one answer.", "understandingCheck": "(A1) \"In a teacher demonstration, propan-1-ol was heated with excess acidified potassium dichromate under reflux for 20 minutes. The flask was cooled and a strip of blue litmus paper was dipped into the reaction mixture. The litmus turned red, and a student concluded that propanoic acid had formed. Explain why this conclusion is not valid, and describe how the method should be changed to give a valid conclusion.\" Tests the validity move (the flask contains sulfuric acid). Answer: the acidified dichromate contains sulfuric acid, which turns litmus red whether or not propanoic acid formed, so the test does not measure the product; distil off the product and test the distillate (and/or test a blank of acidified dichromate treated the same way). Crossed mistake: \"repeat the litmus test several times\" (repeats check reliability, not validity; s07's word, feature, fix). (A2) \"Pentan-2-ol and 2-methylbutan-2-ol were each warmed with acidified potassium dichromate solution. Each mixture was then distilled, and the distillate was warmed with freshly prepared Tollens' reagent. Predict the observations for each alcohol, name any organic product, and explain the observations.\" Tests the class rule and the test's reason with new alcohols (C₅). Answer: pentan-2-ol is secondary: orange to green; product pentan-2-one; no silver mirror (a ketone has no H on its carbonyl carbon). 2-methylbutan-2-ol is tertiary: stays orange (no H on the C–OH carbon), no oxidation product; its distillate is unreacted alcohol, so no mirror. Crossed mistake: \"pentan-2-ol: green, so a silver mirror\" (green does not mean aldehyde).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the products of the oxidation of primary and secondary alcohols\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" (carried by the risk table, route review change 5) this video prepares students to carry out and analyse the investigation; it does not claim that watching it is conducting it. It teaches: the aim; the choice of propan-1-ol and propan-2-ol (isomers, so only the position of the OH differs) with 2-methylpropan-2-ol as the tertiary comparison and a water-only tube as the control; part A, a water-bath test that sorts the alcohols by whether they turn acidified dichromate green; the variables and the control; part B, making each product: distil the primary alcohol's product as it forms (aldehyde), reflux the primary alcohol with excess oxidant then distil a sample (acid), and distil the secondary alcohol's product (ketone); testing each distillate with Tollens' reagent, Benedict's (or Fehling's) solution and blue litmus, against known samples (glucose for the aldehyde tests, dilute acid for litmus, water for no change); why the distillate is tested, not the flask (validity); repeats and agreement (reliability); matching results to known samples and the distilling temperature (accuracy of the identification); the risk assessment and disposal. Recalled, not re-taught: why oxidation needs an H on the C–OH carbon, why the aldehyde distils off, why reflux reaches the acid (c08a); why only the aldehyde gives a mirror or a brick-red solid (c08b); validity, reliability, accuracy and word, feature, fix (skills-s07, chem-m7-p03). Not here: the dichromate half-equations and balanced redox equations (c08a author note d); acidified permanganate as the oxidant (a grey tag only in the risk scene); carboxylic acid properties and the sodium carbonate test (chem-m7-c09); yields and purification; infrared or mass spectra (Module 8); multi-step synthesis (c13, g03)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c08a and c08b: dichromate orange and chromium(III) green as painted in the plates; aldehyde –CHO and ketone C=O navy; OH ringed red; the three alcohols in fixed colours across tags, table rows and chips (propan-1-ol teal, propan-2-ol violet, 2-methylpropan-2-ol grey-blue, water control plain grey); hazards terracotta, controls green. Board layout (three zones, constant, as chem-m7-p03): top-left the short task line; the centre holds the apparatus plate; the right third holds the current card (method step, variables, evidence table, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Plates and owner rules: no people or hands (liquids are added by coded dropper outlines and coded pours; flames are absent by design); apparatus (reflux and distillation set-ups, test tubes in racks, water bath, litmus, bottles) as painted plates, listed by filename, never stretched; molecules coded in the c08a style; at most about three bright text items; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (about 15 to 30 s) with one crossed-out mistake; original HSC-style questions only; real GHS classifications; Australian spelling; no em dashes; conversational narration; no absolute claims; optional key notes hold. No human figures.", "transitionPlan": "The orange dichromate plate cross-fades to green as three product chips write in a row beneath it; the aim line writes and the two propanol structures draw side by side with their OH ringed, then shrink to name chips; the water-bath plate pair cross-fades from before to after and each tube's tag gains a result chip; the variables card writes one row per cue; the distillation plate takes the centre with a distillate tag and a boiling point strip, then the reflux plate runs its vapour return loop, then the distillation plate returns with the propan-2-ol chip and its equation; the evidence table writes one column per test with small result thumbnails; the flask against distillate split shows litmus turning red in the flask; the reliability and accuracy cards write small; the risk table shows one spoken row at a time; the memory line writes over a green tube and a mini evidence table; each attempt clears the board with its question card, and its feedback underlines the card as a chip writes and a crossed trap lands; the three-row decision card lights on cue; scene crossfade with settle."},
+        'rows': M7P04C_ROWS,
+    },
+    'm7p05c': {
+        'design': D + 'lessons/chem-m7-p05.md',
+        'learning_review': D + 'checks/m7p05c-learning-review.md',
+        'science_check': D + 'checks/m7p05c-claude-science-check.md',
+        'meta': {"title": "Preparing an ester in the school laboratory: the class got about 60%, so is that a failed practical?", "subtitle": "A class prepares pentyl ethanoate, the banana-smelling ester, and gets about 60% of the most it could make. Is that a failed practical? How do you prepare an ester safely, calculate its yield, explain what limits it, and design a fair test of whether excess acid helps?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 17, "lessonIntent": "stating the aim and the limiting reactant; choosing safe heating for reflux and explaining why a mantle is needed here; naming the independent, dependent and controlled variables; outlining the work-up; calculating a percentage yield from the limiting reactant; explaining the equilibrium ceiling and work-up losses; judging reliability from repeats; explaining what makes an isolated yield accurate, what a yield above 100% shows, and what the ratio comparison can and cannot support; identifying the product safely; writing the risk rows for concentrated sulfuric acid, glacial ethanoic acid, the flammable organics, the funnel's gas pressure and hot glassware, with disposal."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "aim-limiting", "reflux-setup", "variables", "work-up", "yield-calc", "ceiling-losses", "reliability", "valid-accurate", "identify", "risk", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c10 (esterification equation with conditions and ⇌; names; a catalyst speeds both directions and does not change the yield; reflux keeps volatile liquids in; about two thirds from equal amounts, about nine tenths with a threefold excess of alcohol; the separating funnel; carbonate wash and venting; dry and distil; the boiling point is a rough check). chem-m7-c09 (hydrogen carbonate fizz test). skills-s07 and chem-m7-p03 (validity, reliability, accuracy; word, feature, fix; a loss that pushes every trial the same way). chem-m7-p01 (the organic waste container). Year 11: moles, molar mass, mole ratios, limiting reactant, percentage yield as a term (the formula is shown again in one line, scene 6).", "startsWith": "Select reactants and safe heating apparatus. The video opens: Warm pentan-1-ol with ethanoic acid and a little concentrated sulfuric acid, and you make pentyl ethanoate, an ester that smells like bananas. A class makes it and gets about sixty per cent of the most it could make. Is that a failed practical?", "stopsAfter": "stating the aim and the limiting reactant; choosing safe heating for reflux and explaining why a mantle is needed here; naming the independent, dependent and controlled variables; outlining the work-up; calculating a percentage yield from the limiting reactant; explaining the equilibrium ceiling and work-up losses; judging reliability from repeats; explaining what makes an isolated yield accurate, what a yield above 100% shows, and what the ratio comparison can and cannot support; identifying the product safely; writing the risk rows for concentrated sulfuric acid, glacial ethanoic acid, the flammable organics, the funnel's gas pressure and hot glassware, with disposal.", "nextLesson": "amines and amides (route chem-m7-c11, \"How do amines and amides differ?\")."},
+        'teaching': {"task": "A class prepares pentyl ethanoate, the banana-smelling ester, and gets about 60% of the most it could make. Is that a failed practical? How do you prepare an ester safely, calculate its yield, explain what limits it, and design a fair test of whether excess acid helps?", "causalExplanation": "(1) 60%: fail or not? (1); (2) the aim and the limiting reactant (2); (3) reflux to approach equilibrium without losing volatile liquids; why a mantle (3); (4) one variable changed, the work-up kept identical (4); (5) get the ester out and weigh it, recalled in one pass (5); (6) percentage yield from moles of the limiting reactant (6); (7) the equilibrium ceiling and work-up losses (7); (8) repeats agree, and the difference between ratios is larger than the spread (8); (9) a correctly weighed dry, pure product gives a correct yield; a wet product reads too high; what the comparison can and cannot show (9); (10) identify the product without sniffing it (10); (11) hazards and controls (11); memory aid (12); attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).", "conversationalApproach": "a class makes pentyl ethanoate, the banana-smelling ester, and gets about sixty per cent of the most it could make, so the practical asks whether that is a failed practical, what limits the yield and how to measure it fairly. The aim asks whether excess ethanoic acid raises the yield; the acid and alcohol react one to one, so the alcohol is the limiting reactant and sets the most ester any group could make. The mixture is heated under reflux with anti-bumping granules after the teacher adds a few drops of concentrated sulfuric acid as the catalyst, and the variables card holds the mole ratio, the percentage yield and everything kept the same. The ester is separated in a separating funnel, washed with sodium hydrogen carbonate solution, dried and weighed. The yield is worked one stage at a time from moles of pentan-1-ol to the most ester possible and then the percentage. Equilibrium sets a ceiling below a hundred per cent and losses on glassware, in the washes and on the drying agent take it lower; three groups per ratio agree closely and the gap between ratios is much bigger than the spread. A dry, pure product gives an accurate yield, and a matched work-up keeps the comparison valid. The memory aid is equilibrium sets the ceiling, the work-up decides how close you get. Two exam questions follow with brief feedback.", "openingDecision": "Warm pentan-1-ol with ethanoic acid and a little concentrated sulfuric acid, and you make pentyl ethanoate, an ester that smells like bananas. A class makes it and gets about sixty per cent of the most it could make. Is that a failed practical? Not necessarily. Let's see what limits the yield, and how to test fairly whether you can raise it.", "understandingCheck": "(A1) \"A student heated 3.70 g of butan-1-ol with excess ethanoic acid and a few drops of concentrated sulfuric acid under reflux. After washing and drying the product, she collected 3.19 g of butyl ethanoate. (a) Calculate the percentage yield of butyl ethanoate. (b) Explain TWO reasons why the yield is less than 100%.\" (4 marks.) Molar masses on the card: butan-1-ol 74.12 g mol⁻¹; butyl ethanoate 116.16 g mol⁻¹. New alcohol and ester. Answer: n(butan-1-ol) = 3.70 ÷ 74.12 = 0.0499 mol; 1:1, so the maximum n(ester) = 0.0499 mol; maximum mass = 0.0499 × 116.16 = 5.80 g; yield = 3.19 ÷ 5.80 × 100 = 55.0%. Reasons: the reaction is reversible and reaches equilibrium, so not all the alcohol reacts; ester is lost during transfers, washing and drying. Crossed mistake: \"3.19 ÷ 3.70 × 100 = 86%\" (dividing masses directly, the moles step skipped). (A2) \"A student prepared propyl ethanoate from propan-1-ol and excess ethanoic acid. She ran off the water layer from the separating funnel and weighed the ester layer straight away, without washing or drying it. She calculated a percentage yield of 104%. Explain why her result is inaccurate, and describe TWO changes to her method that would give a more accurate yield.\" (3 marks.) Answer: more than 100% means the weighed liquid contained substances other than ester (water, and probably leftover ethanoic acid and propan-1-ol), so the mass and yield are too high; wash with sodium hydrogen carbonate solution (then water), dry with anhydrous magnesium sulfate, and if possible distil, collecting near the ester's boiling point, before weighing. Crossed mistake: \"Over 100%, so the reaction went to completion\" (even complete conversion caps the yield at 100%, and esterification stops at equilibrium).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the production, in a school laboratory, of simple esters\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" (carried by the risk table, route review change 5) this video prepares students to carry out and analyse the investigation; it does not claim that watching it is conducting it. It teaches: the aim (does excess ethanoic acid raise the yield of pentyl ethanoate?); the alcohol setting the theoretical maximum in both ratios; the reflux set-up with an electric heating mantle (and why a water bath is not hot enough for this mixture); the variables; the work-up in one pass (water, sodium hydrogen carbonate wash with venting, drying, weighing in a weighed vial); the percentage yield from moles of the limiting reactant; the equilibrium ceiling and work-up losses; reliability from class repeats; what makes an isolated yield accurate, and what the ratio comparison can and cannot support; the \"over 100%\" warning sign; identifying the product (a separate layer, no fizz, the boiling point if distilled, wafting only); the risk assessment and disposal. Recalled, not re-taught: the equation, names and conditions; why the reaction stops short; why excess reactant shifts it right; why each wash works; why the ester boils low (all chem-m7-c10); validity, reliability, accuracy, word, feature, fix (skills-s07, chem-m7-p03); moles and molar mass (Year 11). Not here: the K expression, the equilibrium calculation and any numerical ceiling (author note d, Revision 2); removing water continuously (c10 author note c); acid hydrolysis and saponification (c12); spectroscopy (Module 8); multi-step synthesis (c13)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c10: the ester group ringed red; the acid side soft amber and the alcohol side pale blue only when a structure is shown; water in the Module 5 water colour; the two ratios in fixed colours across chips, bars and dots (1:1 grey-blue, 2:1 teal); the equilibrium ceiling a dashed navy line; losses hatched terracotta; hazards terracotta, controls green. Board layout (three zones, constant, as chem-m7-p03 and p04): top-left the short task line; the centre holds the apparatus plate; the right third holds the current card (method step, variables, calculation strip, yield ladder, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Plates and owner rules: no people or hands (liquids are measured by coded pours into painted glassware; the teacher's addition of acid is a coded dropper outline; the funnel's venting is a coded arrow); apparatus as painted plates, listed by filename, never stretched; structures coded in the c10 style; at most about three bright text items; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (about 15 to 30 s) with one crossed-out mistake; original HSC-style questions only; real GHS classifications; school rules checked against NSW Chemical Safety in Schools (sources in \"Safety facts check\"); Australian spelling; no em dashes; conversational narration; no absolute claims; optional key notes hold. No human figures.", "transitionPlan": "The ester fruit plate opens with the banana bright and the reflux plate beside it as a yield ladder fills to sixty per cent; the aim line writes under a small c10 equation and the mole ratio chips set the limiting reactant; the reflux plate takes the centre as the method card writes one step per cue with earlier steps dimming; the variables card writes one row per cue; the cloudy separating funnel plate cross-fades to the clear one as the layers are labelled and the wash and dry steps write; the mole bridge writes in four stages with each earlier stage dimming but legible; the yield ladder returns large as an unnumbered ceiling band draws and hatched losses fill below it; the results table writes with its example data tag and a spread bracket; the accuracy and validity cards write beside a small ladder; three check chips write for identifying the ester; the risk table shows only the current row; the memory line writes over the ladder thumbnail; each attempt clears the board with its question card, and its feedback underlines the givens as the bridge or a wet-mass flag writes and a crossed trap lands; the four-row decision card lights on cue; scene crossfade with settle."},
+        'rows': M7P05C_ROWS,
+    },
+    'm7p06c': {
+        'design': D + 'lessons/chem-m7-p06.md',
+        'learning_review': D + 'checks/m7p06c-learning-review.md',
+        'science_check': D + 'checks/m7p06c-claude-science-check.md',
+        'meta': {"title": "Comparing soap and detergent action: which one keeps working in hard water, and how do you show it fairly?", "subtitle": "In soft water, soap and a detergent both froth. In hard water, soap turns cloudy and barely froths, while the detergent keeps going. How do you set up a fair comparison, measure what you see, and use the results to explain how soaps and detergents work?", "subject": "Chemistry", "yearLevel": 12, "module": 7, "lesson": 20, "lessonIntent": "stating the aim; making hard water of known composition and soft water; setting up six tubes with controls; running the froth test and the oil emulsion test with the same volumes, drops, shaking and timing; naming the independent, dependent and controlled variables; explaining the results with scum formation and the detergent's soluble calcium salt; explaining why the oil separates sooner with soap in hard water; judging reliability; identifying validity and accuracy problems and fixes; writing the risk rows with disposal."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "aim-tubes", "froth-test", "variables", "froth-results", "why-scum", "oil-test", "oil-agrees", "reliability", "valid-accurate", "risk", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "decision-handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m7-c12 (all the recalls above, including the scum net ionic equation with sodium stearate and spectator Na⁺, and c12's tube pairs as observations). chem-m7-c03 (polar and non-polar; dispersion forces). skills-s07 and chem-m7-p03 (validity, reliability, accuracy; word, feature, fix; hazard, harm, control). Year 11 (net ionic equations; precipitation).", "startsWith": "Prepare matched water and oily samples. The video opens: Shake a little soap solution in pure water, and you get a tall froth. Shake the same soap in hard water, and it turns cloudy, and the froth barely forms. A detergent froths in both.", "stopsAfter": "stating the aim; making hard water of known composition and soft water; setting up six tubes with controls; running the froth test and the oil emulsion test with the same volumes, drops, shaking and timing; naming the independent, dependent and controlled variables; explaining the results with scum formation and the detergent's soluble calcium salt; explaining why the oil separates sooner with soap in hard water; judging reliability; identifying validity and accuracy problems and fixes; writing the risk rows with disposal.", "nextLesson": "planning organic synthesis with a reaction map (route chem-m7-c13, \"How can a reaction map plan organic synthesis?\")."},
+        'teaching': {"task": "In soft water, soap and a detergent both froth. In hard water, soap turns cloudy and barely froths, while the detergent keeps going. How do you set up a fair comparison, measure what you see, and use the results to explain how soaps and detergents work?", "causalExplanation": "(1) the observation to explain (1); (2) the aim; hard water made with a known amount of CaCl₂ (chloride checked by an optional NaCl tube); six tubes including controls (2); (3) part A method: same volume, drops, shakes, time; the controls show water alone barely froths (3); (4) the variables (4); (5) results: soap fails in hard water, detergent barely changes (5); (6) cause: scum locks up soap; detergent's calcium salt stays dissolved (recall, 6); (7) part B: oil emulsion timing (7); (8) the emulsion is soap-coated oil droplets; less free soap in hard water, so the droplets join sooner; two tests agree (8); (9) reliability (9); (10) validity and accuracy (10); (11) hazards and controls (11); memory aid (12); attempts and brief feedback (13 to 16); decision rule and handoff (17); key notes (18).", "conversationalApproach": "soap froths tall in pure water but turns cloudy and barely froths in hard water, while a detergent froths in both, so the practical asks how to show that fairly, measure it and explain it. Hard water is made from a known amount of calcium chloride in distilled water, with distilled water as the soft sample and a sodium chloride tube as a check on the added chloride. In part A each tube gets the same water volume and drops, is stoppered, shaken ten times and the froth height is measured after thirty seconds; the variables card names two independent variables, the cleaning agent and the water. The example results show soap losing most of its froth and forming white specks in hard water while the detergent barely changes. Recalling the soaps video, two soap ions bind each calcium ion as insoluble scum, so every locked soap particle is lost, while the detergent's calcium salt is much more soluble. Part B times how long shaken oil stays emulsified, because froth is not cleaning; soap particles coat the oil droplets and hard water leaves fewer free to do it, so both tests agree. Repeats, matched shaking and timing, a pure detergent and careful reading keep the results reliable, valid and accurate, and the risk table says low hazard, not no hazard. The memory aid is soap makes scum in hard water, detergents mostly don't. Two exam questions follow with brief feedback.", "openingDecision": "Shake a little soap solution in pure water, and you get a tall froth. Shake the same soap in hard water, and it turns cloudy, and the froth barely forms. A detergent froths in both. Let's show that fairly, measure it, and explain it.", "understandingCheck": "(A1) \"A student added soap solution, one drop at a time, to 10 mL samples of water, stoppering and shaking after each drop, until a froth formed that lasted for 30 seconds. The table shows the results. | Sample | Drops of soap solution needed | Appearance | Distilled water | 2 | clear | Sample X | 3 | clear | Sample Y | 17 | cloudy, white solid | Explain the result for sample Y. Include a net ionic equation for one hardness ion (state which ion you use), using sodium stearate, C₁₇H₃₅COONa, as the soap.\" (3 marks.) Answer: sample Y is hard water: it contains Ca²⁺ or Mg²⁺ ions; the stearate ions react with them to form an insoluble solid, the white scum: 2C₁₇H₃₅COO⁻(aq) + Ca²⁺(aq) → (C₁₇H₃₅COO)₂Ca(s), or 2C₁₇H₃₅COO⁻(aq) + Mg²⁺(aq) → (C₁₇H₃₅COO)₂Mg(s) (either earns the mark); the first drops (about 15 more than distilled water) are used up making scum, so lasting froth forms only once enough hardness ions have been removed for free soap to remain. Crossed mistake: \"Sample Y contains more salt (sodium chloride)\" (hardness is calcium and magnesium ions; sodium salts don't form scum with soap). (A2) \"A student compared a soap with a dishwashing detergent in tap water from a hard-water area. She added 5 drops of soap solution to one test tube of the tap water and 10 drops of the dishwashing detergent to another, shook each tube, and found that the detergent produced more froth. She concluded that detergents work better than soaps in hard water. Explain why her conclusion is not valid, and describe TWO changes to her method that would make it valid.\" (4 marks.) Answer: two things changed besides the type of agent (drops: 5 against 10; and a commercial detergent may contain softeners or other ingredients), so the froth difference can't be put down to soap against detergent alone; also no soft-water comparison and no control; changes: a pure detergent (for example sodium dodecyl sulfate); test each agent in both soft (distilled) and hard water with the same number of drops, and compare each agent's hard-water result with its own soft-water result (Revision 3: no equal-strength comparison between the agents is needed or claimed); water-only controls; same shaking and timing. Crossed mistake: \"Repeat the test three times and average\" (repeats check reliability; the unequal drops are still there; s07).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"investigate the structure and action of soaps and detergents\" \"describe the procedures required to safely handle and dispose of organic substances (ACSCH075)\" (carried by the risk table, route review change 5) this video prepares students to carry out and analyse the investigation; it does not claim that watching it is conducting it. It teaches: the aim; hard water made from a known amount of calcium chloride in distilled water (calcium proposed as the cause from its chemistry; an optional sodium chloride tube checks the added chloride) and distilled water as soft water; six tubes (soap or detergent or nothing, in soft or hard water); part A, the froth test (same volume, same drops, ten shakes, read the froth height after 30 s); the variables; the results and their cause, recalled in one pass; part B, the oil emulsion test in fresh tubes (add oil, shake, time until a clear oil layer reappears: how long the oil stays dispersed, not cleaning itself); why the two tests agree; reliability; validity and accuracy (hand shaking, unequal drops, commercial products with extra ingredients, reading the froth); the risk assessment and disposal. Recalled, not re-taught: the soap and detergent structures, micelles, emulsification, droplet repulsion, the scum equation, why detergent calcium salts stay dissolved (all chem-m7-c12); validity, reliability, accuracy, word, feature, fix (skills-s07, chem-m7-p03). Not here: saponification in the lab (c12 covers the reaction; making soap is not this route's practical); water softening by sodium carbonate or ion exchange; biodegradability tests; surface tension and the pepper demonstration (c12 Decisions); cationic and non-ionic detergents in the lab (named only on the c12 recall chip)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key as chem-m7-c12: oil yellow; the soap tail pale blue and head red with \"−\"; Na⁺ grey-amber; Ca²⁺ and Mg²⁺ teal; scum grey-white; plus the tube line-up colours (soap amber, detergent violet, water only grey; soft pale blue, hard teal); hazards terracotta, controls green. Board layout (three zones, constant, as chem-m7-p03 and p04): top-left the short task line; the centre holds the tube plates; the right third holds the current card (method step, variables, results, validity card, risk table), one at a time. Clutter rule: at most three bright text items; every label dims when its sentence ends. Plates and owner rules: no people or hands (drops are added by coded dropper outlines, shaking is c12's coded rock of the tube plate, rotation only, and the froth is measured with a coded ruler overlay); real objects as painted plates, listed by filename, never stretched; particles and equations coded in the c12 style; at most about three bright text items; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (about 15 to 30 s) with one crossed-out mistake; original HSC-style questions only; real GHS classifications; school rules checked against NSW Chemical Safety in Schools (sources in \"Safety facts check\"); Australian spelling; no em dashes; conversational narration; no absolute claims; optional key notes hold. No human figures.", "transitionPlan": "The soap tube in soft water shakes and settles with a tall froth, the hard-water tube fades in cloudy beside it and the detergent tubes join; the aim line writes as the wash bottle and dropper bottle make the hard water and the tube line-up builds with coloured chips; the method card writes one step per cue as the froth ruler reads a tube; the variables card writes one row per cue; the empty soap-hard slot fills and the ruler reads each tube in turn with value chips; the board clears to the c12 scum lock as two soap symbols bind a calcium ion and drop as a flake; the oil and water plates cross-fade from layers to emulsion as a timer runs per tube; the free soap counter coats oil droplets in soft water and leaves them bare in hard water; the results table writes with a spread bracket; the validity card writes with FixRail minis; the risk table writes one row per cue; the memory line writes over the two hard-water plates; each attempt clears the board with its question card, and its feedback underlines the card as the equation or the FixRail writes and a crossed trap lands; the four-row decision card lights on cue; scene crossfade with settle."},
+        'rows': M7P06C_ROWS,
+    },
+    'skills06': {
+        'design': D + 'lessons/skills-s06.md',
+        'learning_review': D + 'checks/skills06-learning-review.md',
+        'science_check': D + 'checks/skills06-claude-science-check.md',
+        'meta': {"title": "Graphs and data questions: read it, draw it, describe it, and know when to extend it", "subtitle": "When a question gives you data or asks for a graph, how do you read values with their units, draw a graph that earns its marks, describe the trend with numbers, and decide whether you can trust a value read beyond the data?", "subject": "Chemistry and Biology", "yearLevel": 12, "module": 0, "lesson": 6, "lessonIntent": "as above."},
+        'hold_seconds': 10,
+        'holds': ["question-card", "drill-1", "drill-2"],
+        'ids': ["hook", "read-axes", "question-card", "part-a-scale", "part-a-plot", "part-b-trend", "part-b-points", "part-c-interpolate", "part-d-extrapolate", "line-or-column", "drill-1", "feedback-1", "drill-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "series s01 (reading routine: verb, marks, content words and givens, constraint, tick each part), s02 (explain shows the link), s04 (assess needs a judgement with evidence; used in part d), s05 (values with units; consequential working). s07 is not assumed (in Biology it came earlier, after p02; in Chemistry its order relative to s06 is the Module 8 review's call), so s06 never relies on it. Biology: b11 (resistance by selection), p05 (zones of inhibition). Chemistry: Year 11 rates (gas volume against time levels off as a reactant runs out). Year 7 to 10 graphing (axes, plotting points) is assumed; the video names the HSC expectations on top of it. Students start Year 12.", "startsWith": "Graph questions ask you to read, draw, describe or extend. The video opens: Graph questions look easy, which is why they're easy to lose marks on. Across the last twelve Chemistry and Biology marking feedback reports, eleven commented on graphs drawn or read poorly, and nine on trends described without the numbers. So here's how to read a graph, draw one that earns its marks, describe a trend with data, and know when you can extend the line.", "stopsAfter": "as above.", "nextLesson": "s07, practical questions (series); bio-m7-g01 (Biology playlist)."},
+        'teaching': {"task": "When a question gives you data or asks for a graph, how do you read values with their units, draw a graph that earns its marks, describe the trend with numbers, and decide whether you can trust a value read beyond the data?", "causalExplanation": "(1) graph questions look easy, yet most recent Chemistry and Biology marking feedback reports comment on graphs drawn or read poorly and on trends described without numbers (1); (2) read the axes first: what is measured, the units and what one small square is worth, then read across to the value with its unit (2); (3) one HSC-style Biology resistance question with four parts is set up (3); (4) part a, an even scale: years that jump by two then three must not be spaced evenly, or the trend bends (4); (5) label with units, a title, small crosses and one smooth line of best fit, not joined dots (5); (6) part b, describe the trend with direction and data, and say where any change happens (6); (7) percentage points and per cent give different numbers, so say which (7); (8) part c, interpolation reads inside the data from the line, with read-off lines drawn (8); (9) part d, extrapolation extends the line beyond the data and rests on an assumption that may not hold (9); (10) a line graph for continuous data or change over time, a column graph for categories (10); two drills, one per subject, with feedback (11 to 14); decision rule (15); key notes (16).", "conversationalApproach": "graph questions look easy, which is why they are easy to lose marks on, and recent marking feedback keeps flagging graphs drawn or read poorly and trends described without numbers. The habit starts with the axes: what is measured, in what units and what one small square is worth, then axis to line to axis, writing the value with its unit. One HSC-style Biology question on E. coli resistance to an antibiotic is worked part by part. Part a builds an even scale even though the years jump by two then three, then labels, plots small crosses and draws one smooth line of best fit with the points scattered on both sides. Part b describes the trend with its direction and data, about one and a half percentage points a year, and then separates percentage points from per cent so the answer says which it means. Part c reads 2016 from the line, not the nearest point, which is interpolation; part d extends the line to 2040, which is extrapolation, and assesses the prediction by naming the assumption that the rate stays the same. A short contrast says when a column graph fits instead. Two drills follow, one per subject, with brief feedback that names the habit to drop, and a decision rule gathers read, draw, describe and extend.", "openingDecision": "Graph questions look easy, which is why they're easy to lose marks on. Across the last twelve Chemistry and Biology marking feedback reports, eleven commented on graphs drawn or read poorly, and nine on trends described without the numbers. So here's how to read a graph, draw one that earns its marks, describe a trend with data, and know when you can extend the line.", "understandingCheck": "the narration says \"Do the one in your subject, or both\". Drill 1, Chemistry, identify and explain, 3 marks: card: \"A student measured the volume of carbon dioxide produced when marble chips reacted with excess hydrochloric acid. Her results and her graph are shown.\" Table: \"Time (s) | 0 | 30 | 60 | 120 | 240\"; \"Volume of CO₂ (mL) | 0 | 22 | 38 | 55 | 62\". The student's graph (coded): the five time values at equal spacing along the x-axis (0, 30, 60, 120, 240 equally spaced), the y-axis labelled \"volume\" with no unit, the points joined dot to dot with straight segments; a title is present. Demand: \"Identify THREE problems with the student's graph and explain how to correct each. (3 marks)\". Content: none beyond the card (rate slowing as the marble chips are used up is a grey tag only). Answer: uneven time scale (equal steps, for example every 30 s, with each time at its real position); y-axis without a unit (label \"volume of CO₂ (mL)\"); dot to dot (a smooth curve of best fit, through the origin, levelling off). Crossed habit: \"a line of best fit must be a straight line\" (best fit can be a smooth curve when the data curve). Drill 2, Biology, describe, 2 marks: card: \"A student soaked paper discs (6 mm in diameter) in five concentrations of an antiseptic and placed them on agar spread with a harmless bacterium. After incubation she measured the diameter of the clear zone around each disc (the zone of inhibition), including the disc. The table shows her mean results.\" Table: \"Antiseptic concentration (%) | 0 | 1 | 2 | 3 | 6\"; \"Mean zone diameter (mm) | 6 | 9 | 12 | 15 | 16\". Demand: \"Describe the relationship between antiseptic concentration and zone diameter. (2 marks)\". Answer: from 0% to 3% the zone diameter increased steadily as concentration increased, by about 3 mm per 1% (6 mm to 15 mm); from 3% to 6% it increased only slightly (15 mm to 16 mm), so it levelled off. Crossed habit: \"As concentration increases, the zone increases.\" (no values; misses the change in pattern). Why these two: drill 1 tests drawing mechanics (three of the pack's listed faults: uneven scale, missing unit, dot to dot) on a curved data set, which also crosses the \"best fit must be straight\" habit; drill 2 tests description, the 9/12 fault, on a pattern that changes, so \"direction, data, change\" earns both marks. Each uses a context that viewers of its subject have met (Year 11 rates for Chemistry, p05 for Biology) but the card carries everything.", "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017). starts at \"graph questions ask you to read, draw, describe or extend\". Stops after reading a value with its unit; scale, labels, plotting and best fit (TAILS); describing with direction, data, change; interpolating with read-off lines; judging an extrapolation; line against column graphs; two drills."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. the shared skills kit (`src/explainer/lessons/skills-shared/`: `QuestionCard` with its annotation layer, `MarksBadge`, `AnswerBox`, `MarkCounter`, `WeakStrongPanel`, `RoutineStrip`, `DrillCountdown`, `Chip`, `GreyTag`, `CrossedHabit`, `PenArrow`, `Plate`, `Heading`, `HandLine`, `Flag`, `KeyNotes`, `Fade`), `BandLadder` from s04 and s05, and the graph parts from `src/explainer/lessons/chem-m6-c13/parts.tsx` (`Axes`, `Curve`, `GDot`, `Drop` for read-off lines, `Band`), imported, not copied (root may lift them to the shared kit). New lesson-local components (suggested folder `src/explainer/lessons/skills-s06`): `GridPaper`: a coded graph-paper rectangle (fine and bold lines, 20 by 15 squares) that the card's grid and the answer plots draw on. `ScaleTrap`: two small x-axes stacked: top, the five years at equal spacing (terracotta, \"equal spacing: wrong\"); bottom, the same years at real positions on an even 1-year scale (green). The five points plot on both: the top line visibly bends at 2014, the bottom stays straight. `TailsRail`: a five-row check card (T, A, I, L, S), rows lighting on cue, built like s07's `FixRail`, with a sixth row \"line of best fit, not dot to dot\". `TrendMove`: a three-row description card (\"Direction\", \"Data\", \"Change\"), mini and full states. `ExtendZone`: beyond the last data point, the line of best fit continues as a dashed grey line through a pale shaded region labelled \"no data here\"; on cue a small fan of three dashed possible paths (keeps rising, levels off, falls) opens from 2020, tag \"the line assumes the top one\". `ColumnMini`: a small column graph (three antibiotic categories, gaps between columns) beside a small line graph, for scene 9. Plates: listed under Assets (no new plates). No people, hands or faces.", "transitionPlan": "A coded line graph writes on above twelve report tiles that take red flags on cue; the graph enlarges as each axis label lights and a bracket spans one small square, then a read-off line runs from the axis to the line and across; the QuestionCard writes on with its badge and tags; the card shrinks to a strip that keeps the table and only the current demand while the grid builds with even steps and a squashed-gap ghost is crossed; the TailsRail builds in the side column, rows lighting on cue, as crosses plot and a best-fit line draws; the TrendMove arrow writes with its data chips; two bars write from the table cells and the points and per cent brackets compare them; a read-off line rises from 2016 to the line and across; the line extends past the data as a dashed run with an assumption chip; the board clears to a small line graph beside a column graph with gaps; each drill clears the board and its feedback lands annotations fast with a crossed habit chip; the decision board writes in four rows, each lighting on its words; scene crossfade with settle."},
+        'rows': SKILLS06_ROWS,
+    },
+    'skills08': {
+        'design': D + 'lessons/skills-s08.md',
+        'learning_review': D + 'checks/skills08-learning-review.md',
+        'science_check': D + 'checks/skills08-claude-science-check.md',
+        'meta': {"title": "Extended responses: plan it in a minute, one idea per paragraph, use the stimulus, finish with the judgement", "subtitle": "When a question is worth six to nine marks, how do you plan in about a minute, cover every demand with one idea per paragraph, use the stimulus as evidence, and end with a judgement that earns the top band?", "subject": "Chemistry and Biology", "yearLevel": 12, "module": 0, "lesson": 8, "lessonIntent": "explaining how bands work; unpacking a two-verb question with a constraint and a stimulus; writing a one-minute plan with the judgement first; building a PEEL paragraph that selects and interprets stimulus values; stating a judgement with its condition first and last; recognising why a weak answer sits in a lower band; planning an evaluate answer; rewriting a non-judgement as a judgement."},
+        'hold_seconds': 10,
+        'holds': ["question-card", "drill-1", "drill-2"],
+        'ids': ["hook", "how-marked", "question-card", "take-apart", "plan-minute", "peel-paragraph", "individual-population", "use-stimulus", "judgement-bookends", "weak-strong", "drill-1", "feedback-1", "drill-2", "feedback-2", "decision-rule", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "skills-s01 (reading routine, constraints), s02 (explain = cause and effect), s04 (verdict, criteria, evidence), s06 (trends with numbers); bio-m7-b09 (vaccination, memory cells, secondary response); bio-m7-b10 (herd immunity; hygiene breaks the contact link); chem-m7-c12 for drill 2 (facts given on the card). Students start Year 12.", "startsWith": "A long question is marked as a whole, in bands. The video opens: The longest questions, worth six to nine marks, can decide a band. In six years of NESA's marking feedback for Chemistry and Biology, every report flagged answers that ignored the stimulus or copied it without explaining it, and more than half flagged judgements without reasons. So here's how to plan a long answer in a minute, build it one idea per paragraph, use the stimulus, and finish with a judgement when the verb asks.", "stopsAfter": "explaining how bands work; unpacking a two-verb question with a constraint and a stimulus; writing a one-minute plan with the judgement first; building a PEEL paragraph that selects and interprets stimulus values; stating a judgement with its condition first and last; recognising why a weak answer sits in a lower band; planning an evaluate answer; rewriting a non-judgement as a judgement.", "nextLesson": "Biology: evaluating disease control strategies (route bio-m7-g02, \"Evaluate an infectious disease strategy\"). In the \"HSC exam skills\" playlist: the subject-specific follow-ups (plan entry 9), root to name."},
+        'teaching': {"task": "When a question is worth six to nine marks, how do you plan in about a minute, cover every demand with one idea per paragraph, use the stimulus as evidence, and end with a judgement that earns the top band?", "causalExplanation": "(1) the longest questions can decide a band, and recent marking feedback flags answers that ignore or copy the stimulus and judgements without reasons (1); (2) long answers are placed in a band by reading the whole answer, so the target is every demand covered with evidence and a supported judgement, not more words (2); (3) one HSC-style Biology measles question is set up for planning (3); (4) take it apart: two verbs, a constraint and the stimulus make four demands to tick (4); (5) plan in a minute: decide the judgement first, then one line per paragraph with the numbers it will use (5); (6) build each paragraph as point, evidence, explain and link (6); (7) the constraint needs one paragraph on immunity in the individual and one on the population (7); (8) using the stimulus means selecting and comparing values and saying what they mean, not copying the trend (8); (9) the judgement goes in the first line and comes back at the end with its reason and condition (9); (10) a weak and a strong answer side by side show the difference (10); two drills, one per subject, with feedback (11 to 14); decision rule (15); key notes (16).", "conversationalApproach": "the longest questions, worth six to nine marks, can decide a band, and NESA's marking feedback keeps flagging answers that ignore or copy the stimulus and judgements with no reasons. A marker places the whole answer in a band, so the target is every demand covered, with the stimulus used and a supported judgement, not more words. One HSC-style Biology question on measles vaccination and a school catch-up program is read and planned. Step one takes it apart into two verbs, a constraint and the stimulus, four demands to tick. Step two decides the judgement first, then jots one line per paragraph with the numbers it will use, in about a minute. Each paragraph is built as point, evidence, explain and link, with two paragraphs covering immunity in the individual and in the population. Using the stimulus means picking values, comparing them and saying what they mean, and the judgement opens the answer and returns at the end with its reason, here that cases were already falling before the program. A weak and a strong answer side by side show one verb against both, no numbers against selected values, and a bare verdict against a supported one. Two drills follow, a Biology plan and a Chemistry rewritten judgement, each with brief feedback, and a decision rule gathers unpack, decide, plan, PEEL and judge.", "openingDecision": "The longest questions, worth six to nine marks, can decide a band. In six years of NESA's marking feedback for Chemistry and Biology, every report flagged answers that ignored the stimulus or copied it without explaining it, and more than half flagged judgements without reasons. So here's how to plan a long answer in a minute, build it one idea per paragraph, use the stimulus, and finish with a judgement when the verb asks.", "understandingCheck": "\"A hospital ward measured staff hand hygiene compliance and the rate of infections that patients caught on the ward. A hand hygiene training program began in July. In the same month, the ward also started a new daily cleaning routine. | | Jan to Jun (before) | Jul to Dec (after) | Hand hygiene compliance (%) | 45 | 82 | Infections caught on the ward (per 1,000 patient-days) | 6.0 | 2.5 | Evaluate the training program. (6 marks) Task: write a PLAN only: the demands, your judgement, and one line per paragraph.\" Model plan: demands: evaluate (judgement plus criteria), use the data, refer to how infections spread; judgement: \"probably effective, but not proven by these data\"; P1: hands carry pathogens between patients; hand hygiene breaks the contact link (b10); P2: compliance 45% → 82% while infections 6.0 → 2.5 (fewer than half); P3: the cleaning routine began in the same month, so the fall can't be credited to training alone; P4 (close): verdict with its condition (probably effective; a ward that trained without changing cleaning would show its effect). Crossed habit: \"Start writing straight away\" (no plan: the cleaning routine gets missed). card: \"Evaluate the use of soap for washing clothes in a town with hard water. (5 marks)\" with a student answer summarised in three body sentences (on the card): \"Hard water contains Ca²⁺ ions, which react with soap to form insoluble calcium stearate (scum). This wastes soap and leaves grey deposits on fabric. Soap is made from renewable fats and breaks down readily in the environment.\" Her last line: \"Overall, soap has advantages and disadvantages.\" Task: \"Rewrite her last line so that it makes a judgement.\" Model line: \"In this hard-water town, soap is a poor choice for washing clothes, because calcium ions turn much of it into scum, which wastes soap and leaves deposits on fabric, even though soap is renewable and breaks down readily.\" Crossed habit: \"Overall, soap has advantages and disadvantages.\" (a summary, not a judgement). The card supplies every fact the line needs, so the drill tests only the judgement.", "curriculumScope": "No syllabus dotpoint (skills video, HSC exam skills series): the NESA glossary of key words (paraphrased) and the Working Scientifically skill Communicating (NSW Chemistry and Biology Stage 6 syllabuses, 2017)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer.  No people, hands or faces.", "transitionPlan": "A coded exam page writes on with a long answer box and its marks badge above twelve report tiles that take flags on cue; the band meter draws and a ghost answer block settles into a band; the QuestionCard writes on with its badge and tags and the countdown runs; annotations land on the card as each verb highlights, the constraint rings and demand ticks write in the margin; the plan card writes its verdict line in bold ink and one row per paragraph with its numbers; the PEEL rail draws beside the answer box, lighting on each word as paragraph three writes; paragraphs one and two write above it with their own small rails; the stimulus pick crosses a copied-trend chip and underlines the chosen values; the verdict bookends pin at the top and close at the bottom as the case cells underline; the board splits into a weak and a strong answer with their demand ticks; each drill clears the board and its feedback lands annotations fast with a crossed chip; the decision board writes in five rows, each lighting on its words; scene crossfade with settle."},
+        'rows': SKILLS08_ROWS,
+    },
+    'm8c01': {
+        'design': D + 'lessons/chem-m8-c01.md',
+        'learning_review': D + 'checks/m8c01-learning-review.md',
+        'science_check': D + 'checks/m8c01-claude-science-check.md',
+        'meta': {"title": "How can a precipitation titration measure chloride? Silver nitrate, a chromate endpoint and the Mohr calculation", "subtitle": "Estuary water looks like tap water, but it carries dissolved chloride. With no acid or base for an indicator to respond to, how can a titration with silver nitrate show when the chloride runs out, and how do you turn the titre into a chloride concentration?", "subject": "Chemistry", "yearLevel": 12, "module": 8, "lesson": 1, "lessonIntent": "writing the titration and indicator equations with colours; explaining why chloride precipitates first and why the chromate amount is controlled; stating the pH condition with both causes and the effect of acid on the titre; naming halide interference and the blank; calculating chloride in mol/L and g/L from concordant titres. No direct or back titration, no hands-on procedure or risk table."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "silver-meets-chloride", "second-precipitate", "why-chloride-first", "valid-endpoint", "hazard-data", "titres", "stage-1-silver", "stage-2-aliquot", "stage-3-grams", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m6-c12 (burette, pipette, aliquot, titre, concordant titres within 0.10 mL, n = cV, divide by the aliquot); chem-m6-c13 (an indicator signals the endpoint; endpoint and equivalence point are close but not identical); chem-m5-c13 (precipitation, net ionic equations, AgCl white); chem-m5-c14 (Ksp expressions, including a squared term for a 2 : 1 salt); chem-m5-c15 (a solid forms when Qsp exceeds Ksp). Dichromate is named, not taught (its orange colour is not needed).", "startsWith": "Show why Ag+ first removes chloride. The video opens: This bottle of estuary water looks just like tap water, but it's carrying dissolved salt. How much chloride is in it? You already know how a titration counts acid, with a burette, a pipette and n equals c V.", "stopsAfter": "writing the titration and indicator equations with colours; explaining why chloride precipitates first and why the chromate amount is controlled; stating the pH condition with both causes and the effect of acid on the titre; naming halide interference and the blank; calculating chloride in mol/L and g/L from concordant titres. No direct or back titration, no hands-on procedure or risk table.", "nextLesson": "weighing a precipitate instead of measuring a volume (route chem-m8-c02, gravimetric analysis)."},
+        'teaching': {"task": "Estuary water looks like tap water, but it carries dissolved chloride. With no acid or base for an indicator to respond to, how can a titration with silver nitrate show when the chloride runs out, and how do you turn the titre into a chloride concentration?", "causalExplanation": "(1) chloride is invisible, and with no acid or base a pH indicator has nothing to respond to; (2) silver forms white silver chloride, 1 : 1, but the white solid gives no stopping signal; (3) a little chromate forms red-brown silver chromate once nearly all chloride is gone, so the first lasting red-brown is the endpoint; (4) chloride goes first because, with lots of chloride and little chromate, silver chloride needs far less silver; as chloride falls, the silver needed rises until red appears; so the chromate amount is set; (5) acid turns chromate to dichromate, so the endpoint is late and the titre high; base gives silver oxide; other silver-precipitating ions count as chloride; the blank corrects the small built-in lateness; (6) chromium(VI) hazard, so the method is often met as data; (7) concordant titres; (8 to 10) titre to moles of silver, 1 : 1 to chloride, divide by the aliquot, then g/L and its meaning.", "conversationalApproach": "a bottle of estuary water looks like tap water but carries dissolved salt, and a pH indicator has nothing to respond to because chloride is not an acid or a base, so the video asks how a precipitation titration can measure chloride. Silver nitrate in the burette meets chloride and forms white silver chloride one to one, but the white solid keeps forming right up to the end and gives no signal. A few drops of yellow potassium chromate fix that: while chloride remains the silver makes silver chloride, and once nearly all of it is gone the next silver ions form red-brown silver chromate, the endpoint. Chloride goes first not simply because silver chloride is less soluble but because, with lots of chloride present, its ion product passes Ksp at a much lower silver concentration. The endpoint stays valid only near neutral, since acid turns chromate into dichromate and makes the titre read high. Chromium(VI) is toxic, so the method is mostly met as data. The titres are made concordant and averaged, then the calculation runs one stage at a time: moles of silver from c times V, the one to one ratio, dividing by the aliquot and converting to grams per litre. The memory aid is white while chloride lasts, stop at the first lasting red-brown, then titre, moles, ratio, divide by the aliquot. Two exam questions follow with brief feedback.", "openingDecision": "This bottle of estuary water looks just like tap water, but it's carrying dissolved salt. How much chloride is in it? You already know how a titration counts acid, with a burette, a pipette and n equals c V. Chloride isn't an acid or a base, though, so a p H indicator has nothing to respond to. So how do we see the moment the chloride runs out?", "understandingCheck": "(A1) Bore water, 20.00 mL, 0.0250 mol/L AgNO₃, titres 15.10 (rough), 14.62, 14.70, 14.66 mL; find chloride in mol/L and g/L. Tests the concordant mean, n = cV, 1 : 1, the aliquot and g/L. Crossed mistake: doubling the moles with chromate's 2 : 1 ratio (pack trap; site MC distractor). (A2) Pickling-factory wastewater at pH 3, titrated without adjusting pH: explain the effect, suggest a fix. Tests scene 5's cause. Crossed mistake: \"No effect: H⁺ isn't in the silver chloride equation\" (site MC distractor idea, original wording).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct investigations and/or process data involving:; gravimetric analysis; precipitation titrations\" This video processes precipitation titration data (the Mohr method). Gravimetric analysis is chem-m8-c02; practice with both is chem-m8-g01. starts by showing why silver ions remove chloride first, and stops at calculating chloride from a valid Mohr endpoint. It teaches: silver nitrate titrant; Ag⁺ + Cl⁻ → AgCl (white), 1 : 1; the white solid gives no stopping signal by itself; a little potassium chromate as indicator; after nearly all chloride is used, 2Ag⁺ + CrO₄²⁻ → Ag₂CrO₄ (red-brown); the first persistent red-brown tinge is the endpoint; why chloride precipitates first (each solid forms once its ion product exceeds its Ksp, so the silver concentration each needs depends on the actual chloride and chromate concentrations, not on pure-water solubility); why the chromate amount is controlled; valid conditions (roughly pH 6.5 to 10; acid converts chromate to dichromate and gives a late endpoint and a high titre; strong base gives silver oxide); other silver-precipitating ions counted as chloride; the slightly late endpoint and the blank; the chromate hazard; processing concordant titres (recall); n(Ag⁺) = cV, 1 : 1, divide by the aliquot, mol/L to g/L. Not taught: direct or back titration (M6 recall only), Volhard or Fajans methods, the hands-on procedure and risk table, blank arithmetic, titration curves."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: silver ions pale grey; chloride green; chromate yellow; silver chloride white tiles; silver chromate red-brown tiles; hydrogen ions soft orange; reasoning lines ink; givens and units navy; the current answer bright; earlier lines dim. Board layout (constant): heading top-left; apparatus left third; inset or board right two thirds. Reuse: painted plates inspected 28 Oct by contact sheet (Assets). The burette plate has no readable graduations, so titre values are always coded text, never read off the plate. No human figures.", "transitionPlan": "The heading writes on over the river sampling bottle with an estuary tag and a grey c12 titration chip; the bottle shrinks to a corner as the burette plate and flask appear and the flask cross-fades to cloudy white with a one to one chip; the chromate dropper bottle appears, the flask turns yellow and then cross-fades to the first red-brown on the endpoint; a crossed chip and a small Qsp strip show the chloride and chromate thresholds side by side; the board clears to a pH strip with its green window and small insets at the acid and base ends; the dropper bottle returns with a coded hazard band and slides into a data card; the titre table writes row by row with the rough run struck and a concordance bracket; the calculation board sets up its task strip, equation strip and grouped givens, then writes one stage line per cue, earlier lines dimming with their results kept; the memory lines write by hand; each attempt clears the board with its question card, and its feedback underlines the givens as the stage lines write and a crossed trap chip lands; the balance plate and a next chip close; scene crossfade with settle."},
+        'rows': M8C01_ROWS,
+    },
+    'm8c02': {
+        'design': D + 'lessons/chem-m8-c02.md',
+        'learning_review': D + 'checks/m8c02-learning-review.md',
+        'science_check': D + 'checks/m8c02-claude-science-check.md',
+        'meta': {"title": "How does a precipitate reveal ion concentration? Choosing the solid, drying to constant mass and the gravimetric calculation", "subtitle": "A clear wastewater sample turns cloudy white when barium ions are added. How does the mass of that dried solid tell you how much sulfate was in the water, and what has to go right for the number to be true?", "subject": "Chemistry", "yearLevel": 12, "module": 8, "lesson": 3, "lessonIntent": "stating what gravimetric analysis is and its three requirements; explaining the choice of Ba²⁺ for sulfate (and Ag⁺ for chloride) with Ksp; describing and justifying each method step, including constant mass; calculating the precipitate mass by difference, the analyte's moles, mass, percentage and concentration; predicting the direction of an error and explaining why repeats do not fix it. No hands-on procedure or risk table."},
+        'hold_seconds': 10,
+        'holds': ["attempt-1", "attempt-2"],
+        'ids': ["hook", "measuring-by-mass", "choosing-solid", "precipitate-digest", "filter-wash", "constant-mass", "worked-mass-moles", "worked-percentage", "mass-to-concentration", "errors", "memory-aid", "attempt-1", "feedback-1", "attempt-2", "feedback-2", "handoff", "key-notes"],
+        'progression': {"prerequisiteKnowledge": "chem-m5-c13 (precipitation; which products are insoluble; BaSO₄ and AgCl white); chem-m5-c14 (Ksp; comparing Ksp only for the same formula type); chem-m5-c15 (the common ion effect); Year 11 (n = m/M, molar mass, percentage by mass); chem-m8-c01 (moles to concentration, c = n/V).", "startsWith": "Choose a low-solubility product. The video opens: Last time, we counted chloride by measuring a volume of silver nitrate. This time, we'll weigh it. A wastewater sample looks perfectly clear.", "stopsAfter": "stating what gravimetric analysis is and its three requirements; explaining the choice of Ba²⁺ for sulfate (and Ag⁺ for chloride) with Ksp; describing and justifying each method step, including constant mass; calculating the precipitate mass by difference, the analyte's moles, mass, percentage and concentration; predicting the direction of an error and explaining why repeats do not fix it. No hands-on procedure or risk table.", "nextLesson": "carrying out a gravimetric analysis (route chem-m8-p02)."},
+        'teaching': {"task": "A clear wastewater sample turns cloudy white when barium ions are added. How does the mass of that dried solid tell you how much sulfate was in the water, and what has to go right for the number to be true?", "causalExplanation": "(1) a clear sample gives a white solid whose mass gives the sulfate; (2) the method works if almost all the ion is in the solid, its formula is known, and only it is weighed, clean and dry; (3) barium, not calcium, because barium sulfate's Ksp is far smaller (same formula type), so almost none stays dissolved, and excess barium lowers it more; sodium sulfate is soluble; silver for chloride; (4) excess reagent until no more forms; digestion grows bigger crystals that filter and trap less; (5) pre-weighed paper, rinse, wash away soluble ions that would add mass; (6) oven, desiccator so no water is taken up, tared watch glass, repeat to constant mass (drying has stopped removing water; dry impurities would also be constant, so washing still matters); (7, 8) mass by difference, n = m/M, 1 : 1, mass of sulfate, percentage; (9) concentration from a volume; (10) extra mass high, lost solid low; repeating the same faulty method keeps the error in the average.", "conversationalApproach": "last time chloride was counted by measuring a volume, and this time it is weighed: a clear wastewater sample gives a fine white solid with barium ions, and a chemist uses only its dried mass to find the sulfate, so the video asks how a precipitate reveals ion concentration. Gravimetric analysis means measuring by mass: turn the ion into a solid of known formula, collect all of it, dry it and weigh it, which works only if almost all the ion ends up in the solid, the solid is pure and its formula is known. Barium is chosen over calcium because both sulfates are one to one, so their Ksp values compare directly, and calcium sulfate's is about half a million times bigger. The method dissolves and acidifies the sample, adds excess barium chloride with a check drop, and digests the solid; it is filtered through a pre-weighed paper, rinsed and washed so no soluble ions dry onto it, then dried, cooled in a desiccator and reweighed to constant mass. The worked example finds the precipitate mass by difference, then moles, the one to one ratio, sulfate mass and the percentage, and then a concentration from a volume. Anything that adds mass makes the answer too high and anything that loses solid makes it too low. The memory aid is mass, moles, ratio, target, and too wet reads high, lost reads low. Two exam questions follow with brief feedback.", "openingDecision": "Last time, we counted chloride by measuring a volume of silver nitrate. This time, we'll weigh it. A wastewater sample looks perfectly clear. Add barium ions, and a fine white solid appears. After it's filtered and dried, a chemist uses only its mass to work out how much sulfate was in the water. So how does a pinch of white powder tell you that?", "understandingCheck": "(A1) Creek water, 50.0 mL, excess AgNO₃, filter paper 0.812 g, paper and dry precipitate 0.955 g, M(AgCl) and M(Cl) given; chloride in g/L. Tests mass by difference, n = m/M, the 1 : 1 formula ratio, mass, and division by volume. Crossed mistake: not subtracting the paper (4.72 g/L). (A2) An unwashed BaSO₄ precipitate, repeated three times the same way and averaged: explain the effect on the sulfate percentage and assess whether repeating helps. Tests scene 5's cause and scene 10's last line. Crossed mistake: \"averaging three trials cancels the error\" (pack trap).", "curriculumScope": "Syllabus (NSW Chemistry Stage 6, 2017), as printed: \"conduct investigations and/or process data involving:; gravimetric analysis; precipitation titrations\" This video explains gravimetric analysis and processes its data. Precipitation titrations were chem-m8-c01; the hands-on gravimetric practical is chem-m8-p02; practice with both is chem-m8-g01. starts by choosing a low-solubility product, and stops at converting a dry precipitate's mass to the original ion's concentration (and percentage by mass). It teaches: gravimetric analysis (measuring by mass) and its three requirements (almost all the ion precipitates; known formula; only that solid is weighed, clean and dry); why Ba²⁺ for sulfate (BaSO₄ Ksp far smaller than CaSO₄'s, both 1 : 1 so Ksp compares directly; much less left dissolved (about 0.5 mg in 200 mL of pure water at 25 °C); excess Ba²⁺ lowers it further, the common ion effect) and why not Na⁺; Ag⁺ for chloride; the method: dissolve, acidify with dilute HCl so carbonate leaves as CO₂, add excess precipitating reagent and check for completeness, digest (small crystals dissolve and larger ones grow, which filter better and trap fewer ions), filter through pre-weighed filter paper, rinse and wash, dry in an oven, cool in a desiccator, weigh on a tared watch glass, repeat to constant mass (a dryness check; washing is the purity control); mass by difference; n = m/M; the formula ratio; analyte mass and percentage; concentration from a sample volume; error directions (extra mass reads high, lost solid reads low); repeating and averaging do not remove an error that is the same every time. Not taught: ignition in a crucible, co-precipitation mechanisms (author notes), the risk table (p02), the Mohr method (c01)."},
+        'design_block': {'renderer': RENDERER, "visualSystem": "Explainer engine: warm paper stage, handwritten Caveat headings, amber doodle layer. Colour key: sulfate ions yellow-green; barium ions pale violet; calcium ions pale orange; chloride green; silver pale grey; precipitate white; spectator or impurity ions small grey dots; givens and units navy; the current answer bright; earlier lines dim. Board layout (constant): heading top-left; apparatus left third; inset or board right two thirds. Reuse: painted plates inspected 28 Oct by contact sheet (Assets). `m6-analytical-balance-v1.png` shows a small beaker of white powder on the pan, which contradicts the filter paper method, so a matching balance plate with a watch glass is commissioned; the existing one is used only in c01's handoff. No human figures.", "transitionPlan": "The heading writes on with a grey c01 chip as the wastewater plate appears and a clear beaker gains a fine white precipitate; the coded flow writes ion in water to solid to dry to weigh with three condition chips; the board clears to a two-column Ksp comparison with ion dots left in each beaker; a method strip of nine dim labels writes along the bottom and each step lights as its plate or inset appears; the filter funnel plate shows the pre-weighed paper tag and wash drops carry grey ion dots away; the oven, desiccator and balance plates form the weighing loop with a mass readout settling to constant mass; the calculation board sets up its task strip, equation strip and grouped givens and writes one stage line per cue, earlier lines dimming with their results kept; the givens swap to a volume and the concentration line rewrites; the two-way error board lights its items in each column; the memory lines write by hand with a small constant-mass card; each attempt clears the board with its question card, and its feedback underlines the givens as the stage lines or a reversed wash inset write and a crossed trap lands; the filter and desiccator plates and a next chip close; scene crossfade with settle."},
+        'rows': M8C02_ROWS,
+    },
+    # END generated entries: m7c15, m7g04, m7g03, m7p04c, m7p05c, m7p06c, skills06, skills08, m8c01, m8c02
 }
 
 

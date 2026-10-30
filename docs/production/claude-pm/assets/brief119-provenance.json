@@ -1,0 +1,69 @@
+{
+  "brief": 119,
+  "date": "2026-10-30",
+  "authorisation": "Brief119 and design item4 explicitly request deterministic alpha-edge cleanup; prior owner processing authorisation in brief108-provenance.json.",
+  "records": [
+    {
+      "path": "public/assets/biology/m6-golden-white-rice-v1.png",
+      "backup": "docs/production/claude-pm/assets/brief119-qa/m6-golden-white-rice-v1-before.png",
+      "beforeSha256": "3696498a27db21ecc841a473a64cd5ce7f13956ad97a8e634bbe65bad536b7b8",
+      "sha256": "329c26800bc12e5897dcc5777d2d855afd15765f5b8f10d595cffe0a94ac7bb0",
+      "size": [
+        2000,
+        2000
+      ],
+      "alphaBboxBefore": [
+        200,
+        685,
+        1800,
+        1314
+      ],
+      "alphaBboxAfter": [
+        200,
+        685,
+        1800,
+        1314
+      ],
+      "rgbUnchanged": true,
+      "changedAlphaPixels": 30099,
+      "method": "Alpha-only masking of saturated segmentation colours within four pixels of transparency, reduced faint white fringe and removed near-transparent specks. Original outer support retained at alpha1 to preserve exact alpha box. No redraw, rescale or RGB changes.",
+      "qa": [
+        "docs/production/claude-pm/assets/brief119-qa/m6-golden-white-rice-v1-cream.png",
+        "docs/production/claude-pm/assets/brief119-qa/m6-golden-white-rice-v1-dark-board.png",
+        "docs/production/claude-pm/assets/brief119-qa/m6-golden-white-rice-v1-black.png",
+        "docs/production/claude-pm/assets/brief119-qa/m6-golden-white-rice-v1-white.png"
+      ]
+    },
+    {
+      "path": "public/assets/biology/m6-bt-cotton-v1.png",
+      "backup": "docs/production/claude-pm/assets/brief119-qa/m6-bt-cotton-v1-before.png",
+      "beforeSha256": "f5d07c5212821fa636e5080f5a992ba3a45bd00cd145e8abefb67e018bd0fa1b",
+      "sha256": "b9ce4451361c52274c252b914e164dad9b773bfb4d560b502cd480e2410fe3b6",
+      "size": [
+        2000,
+        2000
+      ],
+      "alphaBboxBefore": [
+        273,
+        200,
+        1727,
+        1800
+      ],
+      "alphaBboxAfter": [
+        273,
+        200,
+        1727,
+        1800
+      ],
+      "rgbUnchanged": true,
+      "changedAlphaPixels": 152223,
+      "method": "Alpha-only masking of saturated segmentation colours within four pixels of transparency, reduced faint white fringe and removed near-transparent specks. Original outer support retained at alpha1 to preserve exact alpha box. No redraw, rescale or RGB changes.",
+      "qa": [
+        "docs/production/claude-pm/assets/brief119-qa/m6-bt-cotton-v1-cream.png",
+        "docs/production/claude-pm/assets/brief119-qa/m6-bt-cotton-v1-dark-board.png",
+        "docs/production/claude-pm/assets/brief119-qa/m6-bt-cotton-v1-black.png",
+        "docs/production/claude-pm/assets/brief119-qa/m6-bt-cotton-v1-white.png"
+      ]
+    }
+  ]
+}

@@ -27,6 +27,12 @@ export const plain = (text: string) => segs(text).map(s => s.s).join('');
 let CTX: CanvasRenderingContext2D | null = null;
 const CACHE = new Map<string, number>();
 const est = (text: string, size: number, hand: boolean) => segs(text).reduce((w, s) => w + [...s.s].length * (hand ? 0.42 : 0.52) * size * (s.k ? 0.64 : 1), 0);
+// document.fonts.check() is true while no face of the family is registered yet, so a measure taken before kit.tsx
+// adds the faces (e.g. a module-level layout) would cache fallback-font widths for the whole render. Require a loaded face.
+const faceLoaded = (family: string) => {
+	for (const f of document.fonts) if (f.family.replace(/["']/g, '') === family && f.status === 'loaded') return true;
+	return false;
+};
 /** Width in px of marked-up text as T draws it. Uses canvas metrics once the face is loaded. */
 export const measure = (text: string, size: number, hand = false, weight = 500): number => {
 	if (typeof document === 'undefined') return est(text, size, hand);
@@ -34,7 +40,7 @@ export const measure = (text: string, size: number, hand = false, weight = 500):
 	const hit = CACHE.get(key);
 	if (hit !== undefined) return hit * size;
 	try {
-		if (!document.fonts.check(`${weight} 100px ${hand ? '"Caveat"' : '"Inter Tight"'}`)) return est(text, size, hand);
+		if (!faceLoaded(hand ? 'Caveat' : 'Inter Tight')) return est(text, size, hand);
 		if (!CTX) CTX = document.createElement('canvas').getContext('2d');
 		if (!CTX) return est(text, size, hand);
 		let w = 0;

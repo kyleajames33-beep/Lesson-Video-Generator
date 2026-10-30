@@ -1,0 +1,32 @@
+# Brief118: proposed Module8 site-correction additions
+
+Checked30October2026 against the read-only site checkout. HTML tags and repeated whitespace are omitted, with exact wording otherwise preserved. File hashes and full normalized source text are in `brief118-source-audit.json`. These rows are proposals for root integration, not site edits. Shared log duplicates were skipped by exact quotation.
+
+| Lesson and page | Exact page text | Problem | Correct statement | Source |
+| --- | --- | --- | --- | --- |
+| Biology L10, `C:\Users\kygs\hscscience\subjects\biology\year12\module8\lesson10.sa.html` | Typically 4 to 8 driver mutations in cell-cycle genes must accumulate in the same cell lineage before a tumour becomes fully malignant. | This imposes a particular required range and limits drivers to cell-cycle genes. Driver numbers and affected pathways differ by cancer type. | Cancer usually involves several driver changes in one cell lineage; the number and pathways vary between cancers. Do not require every tumour to accumulate four to eight cell-cycle-gene mutations. | [Vogelstein et al., Science 2013](https://pubmed.ncbi.nlm.nih.gov/23539594/) |
+
+## Author suggestions not promoted to confirmed errors
+
+- C05 L06 distilled-water harm and SydneyWater return-prediction mismatch: the quoted claim/mismatch can be checked in the audit, but no positive evidence for a health-harm correction was established. Replace unsupported prose only through owner editorial review. TheHunterRiver/SydneyWater mismatch is an editorial defect, not a science finding.
+- C05 L09 nutrient mass basis: the headers omit the basis. Ask the owner to state the actual original dataset basis; do not assume it was ion-basis and relabel real data without checking. Conversion factors are in the review.
+- C05 L09 83%rise: (0.55-0.30)/0.30=83.33% is correct; whether it stimulates growth depends on limitation and site conditions. The proposed inference is unsupported, not a recalculation error.
+- C06 L07 Hawkesbury2007event: targeted searches did not establish the claimed40km/11days/200,000fish/9.2BODfigures. Unverified is not proof that it never happened. Hold the specific data for a primary record or replace with sourcedMenindee evidence.
+- C06 L07 MnO2 formula: do not log it as a confirmed chemistry error. HydratedMn(IV)oxide is represented in several ways;MnO(OH)2 is useful for the design's chosen balanced scheme, butMnO2 is a common shorthand. Showing the alkaline step and balanced stoichiometry is the actual teaching requirement.
+- C06 L07 BOD bands: label any stated guide as a teaching convention, not a universal safety threshold. The site's later context warning is already correct. Locate an exact quotation for any additional formula-box row before appending it.
+- C06 DOprobe electrochemical definition is too narrow if meant to cover every modern probe; optical probes exist. The exact old text is retained in theaudit. Owner can broaden it, supported byHach opticalDOdocumentation.
+- C08 early-exit decision tree: the logic is wrong for a compound with several reactive groups. The authored quotation of the complete tree was not an exact normalizedHTMLmatch, so no fabricated exact quotation is added here. TheHTMLshould be read at that node before root logs it.
+- P05 brominewater classification: strength matters. Do not replace an actual classified bottle's hazard with a weaker generic claim. Correct the blanket wording after checking the site's intended concentration.
+- B09 a benign tumour does not metastasise while benign. Potential later malignant transformation does not make the current statement false. Reject that proposed correction.
+- B09 highest skin-cancer ranking is not rejected just because olderNewZealandrankings differ. Fix disease definition, source year and standard population before asserting a rank. "Some of the world's highest" is safe design wording, but a broad historical statement was not independently falsified.
+- B09 Gardasil four-type history is correct for the original vaccine. If a current-program update is wanted, the [Australian Immunisation Handbook](https://immunisationhandbook.health.gov.au/contents/vaccine-preventable-diseases/human-papillomavirus-hpv) and [AIHW 2025 HPV fact sheet](https://www.aihw.gov.au/getmedia/ef3b022f-6946-4b25-8f52-91c2074f00a3/aihw-phe-236_hpv_2025.pdf) confirm Gardasil9 from 2018 and a single-dose routine schedule from February2023 for most eligible people. Do not delete the correct2007/2013 history.
+- B09 driver-count sentence is now logged above after its exact wording was found. The metastatic-survival claim to2023 remains unsupported by an identified matching population series. The BRCA1 comparison needs compatible populations and endpoints: do not replace it with two estimates ending at different ages and imply direct comparability. [NCI account of the 2017 study](https://www.cancer.gov/espanol/noticias/temas-y-relatos-blog/2017/brca-mutacion-cancer-riesgo?cid=eb_govdel) gives BRCA1 risk72% by80; this does not establish an Australian lifetime comparison with a different end age.
+- B10 existing-case count versus proportion is not automatically an error; the measure must be labelled. A percentage-only formula is correct though incomplete as teaching coverage. A hypotheticalmelanoma incidence of18per100,000is arithmetically valid; do not call it false solely because it differs from Australia'srate.
+- B10 HIV"high-income countries" is broader thanAustralia. AnAustralian counter-trend does not independently refute that multi-country statement. Source the population and period before changing it.
+- B11 per1,000versusper100,000is merely rescaling if done correctly; the error above is the incident-case endpoint. The2004quit-at30result does not itself prove a before35statement false; use the reported age when citing that paper.
+- B11 Hillcriteria extension/examinable labels are a site-consistency question. The syllabus names method evaluation, not a checklist of named criteria; do not resolve an internal contradiction by inventing a NESA requirement.
+- B11 screening45-74freeeverytwo years is accurate eligibility.45-49requestversus50-74automaticmail is useful operational detail, not proof that the broader eligibility sentence is false.
+
+## Integration counts
+
+1 exact-quotation new rows proposed; 17 exact matches already logged; 0 intended quotes did not exactly match and were not added.

@@ -1,10 +1,16 @@
 # M8 C03a: How do flame, precipitate and complex tests identify a cation? Chloride, sulfate and hydroxide in order, then a flame or a complex to confirm (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (31 Oct): Codex error check 116 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 
 Narration 6,192 characters (Revision 2, summed per scene), 19 scenes (including the key notes hold), about 9.3 minutes (560 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (31 Oct; resolving `../checks/codex-check-116.md`):
+- codex-check-116 found no errors in this design; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8c03a-learning-review.md` (learning L1 to L3) and `../checks/m8c03a-claude-science-check.md` (science S1 to S5)):
 - Feedback 1 keeps the lead exception (learning L1 and science S5, merged, as proposed): it now opens "No chloride precipitate rules out silver, but dilute lead can slip through. The white sulfate and pale green flame identify barium." The equation and the crossed calcium chip stay. Grey tags on the underlines: "rules out Ag⁺; dilute Pb²⁺ may pass" and "Pb²⁺: no useful flame colour". Feedback 1 drops to about 20 s.

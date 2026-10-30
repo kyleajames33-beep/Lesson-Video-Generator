@@ -1,0 +1,782 @@
+{
+  "brief": 121,
+  "date": "2026-10-30",
+  "generator": "OpenAI built-in imagegen",
+  "processingAuthorisation": "Deterministic alpha cleanup, proportional2000px resizing and alignment previously owner-authorised in brief108-provenance.json. Generated local-state edits confined to specified change regions to preserve shared apparatus/anatomy.",
+  "records": [
+    {
+      "key": "eye-long",
+      "path": "public/assets/biology/m8-eye-cutaway-long-v1.png",
+      "sha256": "b5d0e4ead902e0462f20d46f193328ed74d1ecd6ef7f9c1539cec66bfaac5eca",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-eye-long-final.png",
+      "nativeSha256": "aa38a0876353fd8f94c99b00101a63adbe36da6164b8925780a2547d2cb076c0",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-288d4ed8-dfa0-435e-928d-9dfe821644d1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        162,
+        141,
+        1881,
+        1857
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 6297,
+      "processing": {
+        "matrix": [
+          [
+            1.0111026962157863,
+            -0.002364402777288002,
+            17.354109833469913
+          ],
+          [
+            0.002364402777288002,
+            1.0111026962157863,
+            -15.513206434402036
+          ]
+        ],
+        "matches": 816,
+        "inliers": 424,
+        "medianInlierResidualPx": 1.9843149185180664,
+        "retakeReason": "Extend posterior eye while preserving anterior registration; shorten external optic-nerve stub to improve right margin. Earlier attempts retained in QA.",
+        "silhouetteProxyAtY900": 0.11696306429548553
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "retakeReason": "First registered result clipped the exiting optic nerve at the right canvas boundary; preserved as diagnostic. Retake keeps the front and shortens only the external nerve stub.",
+      "framingException": "Shared reference framing retained for cross-fades. Long eye has 5.95% right margin; preserving anterior registration takes precedence over independently shrinking this variant. Not clipped."
+    },
+    {
+      "key": "eye-short",
+      "path": "public/assets/biology/m8-eye-cutaway-short-v1.png",
+      "sha256": "f69ea05978425f77f5170c6953557b943e55b0c89f798e3e52d9afc270314381",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-eye-short.png",
+      "nativeSha256": "a999107cf1997e6ad9a66e2249fa072b2e471dcecb68ec2362670452ff128182",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-b1c48c8d-cb1e-4629-b9fd-148a7c35d92d.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        171,
+        148,
+        1660,
+        1845
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 7590,
+      "processing": {
+        "matrix": [
+          [
+            0.9996086988816355,
+            0.0007275997804808478,
+            -1.6531732618436368
+          ],
+          [
+            -0.0007275997804808478,
+            0.9996086988816355,
+            0.6712094400618317
+          ]
+        ],
+        "matches": 1317,
+        "inliers": 1059,
+        "medianInlierResidualPx": 1.3072524070739746,
+        "frontRegistrationOnly": "Posterior anatomy is allowed to move. Inspect measured axial extent before acceptance."
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Shared reference framing retained for cross-fades. Long eye has 5.95% right margin; preserving anterior registration takes precedence over independently shrinking this variant. Not clipped."
+    },
+    {
+      "key": "eye-cataract",
+      "path": "public/assets/biology/m8-eye-cutaway-cataract-v1.png",
+      "sha256": "3a5cbada2368d503a7334b2eba29fe08b2ec3fb21528467c57382297aa3a3e7b",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-eye-cataract.png",
+      "nativeSha256": "302da9322f49701ff2d68c80c6f6f3e90286246301f541a33befccb3959d409b",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-84a82d5e-39d0-422d-af6e-c64e5dfd13f0.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        177,
+        160,
+        1822,
+        1840
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 24901,
+      "processing": {
+        "matrix": [
+          [
+            0.9997371704764079,
+            0.00010933106822713371,
+            -0.14342020797272548
+          ],
+          [
+            -0.00010933106822713371,
+            0.9997371704764079,
+            0.09058392316007528
+          ]
+        ],
+        "matches": 1388,
+        "inliers": 1245,
+        "medianInlierResidualPx": 0.33788546919822693,
+        "generatedEditConfinedToLens": true
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Shared reference framing retained for cross-fades. Long eye has 5.95% right margin; preserving anterior registration takes precedence over independently shrinking this variant. Not clipped."
+    },
+    {
+      "key": "eye-iol",
+      "path": "public/assets/biology/m8-eye-cutaway-iol-v1.png",
+      "sha256": "62bfd17cb5673eb02ccf9b746165d82819e3d85506bedf813ef9466935785c18",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-eye-iol.png",
+      "nativeSha256": "1c965e3e8e56b410f74549cf3dc5b193791f7183189cf02a1b507537718e5157",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-41660352-106d-4e5b-8fff-65964a9b655a.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        177,
+        160,
+        1822,
+        1840
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 23034,
+      "processing": {
+        "matrix": [
+          [
+            0.9998477342760492,
+            -8.82099291220316e-05,
+            -0.05326480807889488
+          ],
+          [
+            8.82099291220316e-05,
+            0.9998477342760492,
+            -0.11187957998647555
+          ]
+        ],
+        "matches": 960,
+        "inliers": 782,
+        "medianInlierResidualPx": 0.3511260151863098,
+        "generatedEditConfinedToLens": true
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Shared reference framing retained for cross-fades. Long eye has 5.95% right margin; preserving anterior registration takes precedence over independently shrinking this variant. Not clipped."
+    },
+    {
+      "key": "cornea",
+      "path": "public/assets/biology/m8-cornea-closeup-v1.png",
+      "sha256": "96b70a7b26a6643124df8aa0bc63b67a56740a842b252c74a0890d3287ecd8e6",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-cornea.png",
+      "nativeSha256": "660ac338889790dbb6aee437d6684068dae3381c622c4b0c428844c9c8c416b0",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-c311603b-e727-4c31-b8f2-66d8240a49bd.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        629,
+        164,
+        1368,
+        1839
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 10719,
+      "processing": {
+        "transform": "Same full square canvas proportionally mapped to2000; no independent crop or stretch between trio.",
+        "commonTrioCrop": [
+          663,
+          60,
+          1495,
+          1946
+        ],
+        "commonTrioUniformScale": 0.8907741251325557,
+        "commonTrioPosition": [
+          629,
+          160
+        ]
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Common union crop and common proportional transform preserve trio alignment with 8% top/bottom margins."
+    },
+    {
+      "key": "cornea-flap",
+      "path": "public/assets/biology/m8-cornea-lasik-flap-v1.png",
+      "sha256": "d4335421f41ef9f5861fdcce06c8b92be2551e9ffe37e928e49320a1580166d4",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-cornea-flap.png",
+      "nativeSha256": "ac996c61df4cb002eaefca4cf95000d02ad0931993a136f9a83527502e1f381a",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-d8a26982-ccdf-49a4-830e-ff3d7ec38829.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        629,
+        160,
+        1369,
+        1840
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 9745,
+      "processing": {
+        "transform": "Same full square canvas proportionally mapped to2000; no independent crop or stretch between trio.",
+        "commonTrioCrop": [
+          663,
+          60,
+          1495,
+          1946
+        ],
+        "commonTrioUniformScale": 0.8907741251325557,
+        "commonTrioPosition": [
+          629,
+          160
+        ]
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Common union crop and common proportional transform preserve trio alignment with 8% top/bottom margins."
+    },
+    {
+      "key": "cornea-flat",
+      "path": "public/assets/biology/m8-cornea-flattened-v1.png",
+      "sha256": "95f408fc5d3e47ede693313bfa89307fcc5a6261e66569cb330fa40bd58182d0",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-cornea-flat.png",
+      "nativeSha256": "af327eb43efdbc13749627994eabdaa4c05f88df8e81d0ead9eb5487d63361f6",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-cc882670-0f11-4d4f-9af7-a390d23e75dc.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        711,
+        164,
+        1370,
+        1840
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 10748,
+      "processing": {
+        "transform": "Same full square canvas proportionally mapped to2000; no independent crop or stretch between trio.",
+        "commonTrioCrop": [
+          663,
+          60,
+          1495,
+          1946
+        ],
+        "commonTrioUniformScale": 0.8907741251325557,
+        "commonTrioPosition": [
+          629,
+          160
+        ]
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Common union crop and common proportional transform preserve trio alignment with 8% top/bottom margins."
+    },
+    {
+      "key": "lens",
+      "path": "public/assets/biology/m8-intraocular-lens-v1.png",
+      "sha256": "1e8250d590916a9c1ed3213a4f379225e5be172cd23f3a35d86cf76f887d6b21",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-lens.png",
+      "nativeSha256": "273bbb800baf3647f8fa12ae372a992c1b471c96095cf43d031a3760ff1a51eb",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-3f6d666d-13d2-4945-8a82-c4fcc9e05050.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        418,
+        200,
+        1582,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 29059,
+      "processing": {
+        "nativeCrop": [
+          249,
+          90,
+          1036,
+          1172
+        ],
+        "uniformScale": 1.478743068391867
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    },
+    {
+      "key": "waterbath",
+      "path": "public/assets/chemistry/m8-aspirin-water-bath-v1.png",
+      "sha256": "fece4e6248da341f2a515e4088f1ddf055971432bbc23aa40320c41e7a649b90",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-waterbath.png",
+      "nativeSha256": "f217a19090b5c60ad27b1f45926ae2d2a7096dbd86cbf6019c81eaf5e5591762",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-1385feb8-f64d-400b-9492-924c417cbbc5.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        406,
+        200,
+        1594,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 22390,
+      "processing": {
+        "nativeCrop": [
+          190,
+          21,
+          1064,
+          1198
+        ],
+        "uniformScale": 1.3593882752761257
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    },
+    {
+      "key": "willow",
+      "path": "public/assets/chemistry/m8-willow-bark-v1.png",
+      "sha256": "36868704a19ca4db1a382a05804c0dbd3b8417536a89517def6d057645e468a6",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-willow.png",
+      "nativeSha256": "dc61644245b8074f5d02f0f851add310bc7f21a86c608b6b076143f5e2ee3774",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-4522fa6f-74a5-462f-bcc3-cf1dd2b764e6.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        311,
+        200,
+        1689,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 99939,
+      "processing": {
+        "nativeCrop": [
+          172,
+          25,
+          1147,
+          1157
+        ],
+        "uniformScale": 1.4134275618374559
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    },
+    {
+      "key": "tube-violet",
+      "path": "public/assets/chemistry/m8-fecl3-violet-v1.png",
+      "sha256": "3a1a2ba8d47cdc212a0e4ad8860712b28f4edee31e7a2ec0dfa5542eb867b985",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-tube-violet.png",
+      "nativeSha256": "f6313769a3cb2f615744ceb66f7485c9ff78e58b0e52ed126237ef00bb2ac05f",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-8e8ab3fa-78ce-439c-8762-dcdd215f4200.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        405,
+        177,
+        1595,
+        1823
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 34853,
+      "processing": {
+        "matrix": [
+          [
+            0.9995184236281394,
+            9.962166562355265e-05,
+            0.10440032580124677
+          ],
+          [
+            -9.962166562355265e-05,
+            0.9995184236281394,
+            0.45017943089475726
+          ]
+        ],
+        "matches": 702,
+        "inliers": 553,
+        "medianInlierResidualPx": 0.45650774240493774,
+        "generatedEditConfinedToLiquid": true
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Shared rack reference retained for exact apparatus alignment. Top margin is 8.85%, rather than independently resizing this matched variant."
+    },
+    {
+      "key": "tube-yellow",
+      "path": "public/assets/chemistry/m8-fecl3-pale-yellow-v1.png",
+      "sha256": "4e4009ed665241ab0244c4d4705bc4f64051e214015ed8e85d978b82a8dc5881",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-tube-yellow.png",
+      "nativeSha256": "66da916a098b1901511b9256ea44a8a9a7d0eeeaf0cfbe03dca9b9bcac818bc7",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-ee9a4508-c04e-4d1e-8f35-bf2dfa55a5c6.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        405,
+        177,
+        1595,
+        1823
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 28972,
+      "processing": {
+        "matrix": [
+          [
+            0.9995616421729188,
+            1.5193016997061385e-05,
+            0.11136292711164855
+          ],
+          [
+            -1.5193016997061385e-05,
+            0.9995616421729188,
+            0.5255121582308455
+          ]
+        ],
+        "matches": 637,
+        "inliers": 501,
+        "medianInlierResidualPx": 0.40804579854011536,
+        "generatedEditConfinedToLiquid": true
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Shared rack reference retained for exact apparatus alignment. Top margin is 8.85%, rather than independently resizing this matched variant."
+    },
+    {
+      "key": "machine",
+      "path": "public/assets/biology/m8-haemodialysis-machine-v1.png",
+      "sha256": "48f626d6e19dbb368676d22d5730f22ebe902c501ab97afb5bd4bdc542100d21",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-machine.png",
+      "nativeSha256": "ae8959fd105fc290bb7d318a7157e7e39b7e1003e15a1434f356000be67edd2e",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-1f9eb01a-4bb2-4deb-9e56-c76f97739687.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        407,
+        200,
+        1592,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 16743,
+      "processing": {
+        "nativeCrop": [
+          301,
+          20,
+          1198,
+          1231
+        ],
+        "uniformScale": 1.3212221304706855
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    },
+    {
+      "key": "dialyser",
+      "path": "public/assets/biology/m8-dialyser-cutaway-v1.png",
+      "sha256": "a64b9eaa4d275d7b66fb7eb689a946588f63a3355f1bfe791e7d64985ac1932a",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-dialyser.png",
+      "nativeSha256": "bcc36dc5d20f83a02c6466413ce35b61fc698cb46be2590eed4731be7f42306b",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-24277f90-2df5-4592-97e5-0d451f2eff80.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        200,
+        625,
+        1800,
+        1375
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 10608,
+      "processing": {
+        "nativeCrop": [
+          10,
+          329,
+          1245,
+          908
+        ],
+        "uniformScale": 1.2955465587044535
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    },
+    {
+      "key": "peritoneal",
+      "path": "public/assets/biology/m8-peritoneal-dialysis-section-v1.png",
+      "sha256": "1691a814298f9670e8862e95647b172c08cfc5f4ad52507c67876a7071386fdc",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-peritoneal.png",
+      "nativeSha256": "2e1b900517a050e9c26b9511d017ef18151315167341ba77d96d8dd0ecc13afa",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-88b2603e-408a-4fc3-a948-6a948140db2a.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        200,
+        230,
+        1800,
+        1769
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 25973,
+      "processing": {
+        "nativeCrop": [
+          60,
+          72,
+          1212,
+          1180
+        ],
+        "uniformScale": 1.3888888888888888
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    },
+    {
+      "key": "bags",
+      "path": "public/assets/biology/m8-pd-fluid-bags-v1.png",
+      "sha256": "772527331d4777a60c3179a83e5254ae07ea5ac2fc30c5968d52835682fda2c4",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-bags.png",
+      "nativeSha256": "403aea6ae5f955f587222a1d25b2cfd867456f6d9d5f34adc87b2d81009478d0",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-1d54e57c-b32c-4044-9c5a-bc24e7127599.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        234,
+        200,
+        1765,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 25467,
+      "processing": {
+        "nativeCrop": [
+          85,
+          60,
+          1170,
+          1194
+        ],
+        "uniformScale": 1.4109347442680775
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    },
+    {
+      "key": "transplant",
+      "path": "public/assets/biology/m8-kidney-transplant-placement-v1.png",
+      "sha256": "04d68de137438f8d745d720c9c24895580e06dfb4421b2eb28b0e1e191b4f881",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-transplant.png",
+      "nativeSha256": "35aebbfea5b8d0a6fa0f214dc0e728b999dfc997e19fd16c481f580f1e32bf42",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-9eec2d33-dcac-44ac-a9f8-63cf0484f641.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        420,
+        200,
+        1579,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 34346,
+      "processing": {
+        "nativeCrop": [
+          237,
+          9,
+          1105,
+          1207
+        ],
+        "uniformScale": 1.335559265442404
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    },
+    {
+      "key": "bowel",
+      "path": "public/assets/biology/m8-bowel-screening-kit-v1.png",
+      "sha256": "71c5af661ce5462610715e515a62c344c9ccbfdb7f4041a9db2c26e5e5b262d7",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-bowel.png",
+      "nativeSha256": "8076e0954d0cd0f893b89303d422023523cad132be26e07bdfc8093046bd224c",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-6227a0e7-ac01-4c0c-9f7c-d2d5f63ac170.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        200,
+        229,
+        1800,
+        1770
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 25760,
+      "processing": {
+        "nativeCrop": [
+          81,
+          107,
+          1211,
+          1195
+        ],
+        "uniformScale": 1.415929203539823
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    }
+  ],
+  "sharedReuse": [
+    {
+      "path": "public/assets/biology/m8-aav-vector-v1.png",
+      "sha256": "ea8f191c307dd3ea5a0a2498176e603f3aabae309659087c57442e6bf94ee93c",
+      "originBrief": 120,
+      "use": "G02 AAV vector; same file reused, not generated twice."
+    }
+  ],
+  "qaLimit": "Still inspection only. No cross-fade playback, owner approval or voiced preview pass.",
+  "exactPrompts": "docs/production/claude-pm/assets/brief116-121-imagegen-call-log.json"
+}

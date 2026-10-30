@@ -1,0 +1,443 @@
+{
+  "status": "PARTIAL:3 of10 requested compounds have usable neat-liquid transmission records",
+  "sourcePolicy": "Downloaded NIST reference data. SDBS automated collection not used. Optical dispersion index is not transmittance.",
+  "method": "Band centres are minima inside stated search windows. %T is the actual recorded transmission, not renormalised to95. Approximate half-depth widths use local shoulder maxima and the nearest recorded sample crossings. Overlap can make width indeterminate.",
+  "compounds": {
+    "cyclohexane": {
+      "status": "measured neat-liquid transmission",
+      "source": {
+        "TITLE": "Cyclohexane",
+        "STATE": "LIQUID (NEAT)",
+        "YUNITS": "TRANSMITTANCE",
+        "SOURCE REFERENCE": "COBLENTZ NO. 06045",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C110827&Index=2&Type=IR"
+      },
+      "pathLength": "CAPILLARY",
+      "bands": [
+        {
+          "draftCentre": 2925,
+          "searchWindowPlusMinus": 35,
+          "centre_cm-1": 2932.0,
+          "minimum_percentT": 4.07,
+          "approximateHalfDepthWidth_cm-1": 45.0,
+          "draftCentreDifference": 7.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 2850,
+          "searchWindowPlusMinus": 35,
+          "centre_cm-1": 2857.0,
+          "minimum_percentT": 14.3,
+          "approximateHalfDepthWidth_cm-1": 15.0,
+          "draftCentreDifference": 7.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1450,
+          "searchWindowPlusMinus": 30,
+          "centre_cm-1": 1455.0,
+          "minimum_percentT": 46.88,
+          "approximateHalfDepthWidth_cm-1": 12.0,
+          "draftCentreDifference": 5.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1260,
+          "searchWindowPlusMinus": 30,
+          "centre_cm-1": 1258.0,
+          "minimum_percentT": 84.1,
+          "approximateHalfDepthWidth_cm-1": 19.0,
+          "draftCentreDifference": -2.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1030,
+          "searchWindowPlusMinus": 30,
+          "centre_cm-1": 1040.0,
+          "minimum_percentT": 86.21,
+          "approximateHalfDepthWidth_cm-1": 15.0,
+          "draftCentreDifference": 10.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 905,
+          "searchWindowPlusMinus": 25,
+          "centre_cm-1": 904.0,
+          "minimum_percentT": 77.75,
+          "approximateHalfDepthWidth_cm-1": 7.0,
+          "draftCentreDifference": -1.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 860,
+          "searchWindowPlusMinus": 25,
+          "centre_cm-1": 863.0,
+          "minimum_percentT": 79.15,
+          "approximateHalfDepthWidth_cm-1": 9.0,
+          "draftCentreDifference": 3.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        }
+      ],
+      "otherDeepTroughs": [
+        {
+          "centre_cm-1": 1455.0,
+          "minimum_percentT": 46.88
+        },
+        {
+          "centre_cm-1": 2857.0,
+          "minimum_percentT": 14.3
+        },
+        {
+          "centre_cm-1": 2932.0,
+          "minimum_percentT": 4.07
+        }
+      ],
+      "rawPoints": "brief120-nist/cyclohexane-ir-points.csv"
+    },
+    "tert-butanol": {
+      "status": "measured neat-liquid transmission",
+      "source": {
+        "TITLE": "tert.-Butyl alcohol",
+        "STATE": "LIQUID (NEAT)",
+        "YUNITS": "TRANSMITTANCE",
+        "SOURCE REFERENCE": "COBLENTZ NO. 6880",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C75650&Index=3&Type=IR"
+      },
+      "pathLength": "CAPILLARY",
+      "bands": [
+        {
+          "draftCentre": 3370,
+          "searchWindowPlusMinus": 180,
+          "centre_cm-1": 3361.3,
+          "minimum_percentT": 16.5,
+          "approximateHalfDepthWidth_cm-1": 305.2,
+          "draftCentreDifference": -8.7,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 2975,
+          "searchWindowPlusMinus": 35,
+          "centre_cm-1": 2968.8,
+          "minimum_percentT": 12.12,
+          "approximateHalfDepthWidth_cm-1": 38.1,
+          "draftCentreDifference": -6.2,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1470,
+          "searchWindowPlusMinus": 25,
+          "centre_cm-1": 1469.1,
+          "minimum_percentT": 34.08,
+          "approximateHalfDepthWidth_cm-1": 16.1,
+          "draftCentreDifference": -0.9,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1380,
+          "searchWindowPlusMinus": 8,
+          "centre_cm-1": 1377.7,
+          "minimum_percentT": 21.37,
+          "approximateHalfDepthWidth_cm-1": 43.2,
+          "draftCentreDifference": -2.3,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1365,
+          "searchWindowPlusMinus": 8,
+          "centre_cm-1": 1361.7,
+          "minimum_percentT": 16.25,
+          "approximateHalfDepthWidth_cm-1": 40.2,
+          "draftCentreDifference": -3.3,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1200,
+          "searchWindowPlusMinus": 40,
+          "centre_cm-1": 1198.1,
+          "minimum_percentT": 15.81,
+          "approximateHalfDepthWidth_cm-1": 69.3,
+          "draftCentreDifference": -1.9,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 915,
+          "searchWindowPlusMinus": 30,
+          "centre_cm-1": 909.0,
+          "minimum_percentT": 23.46,
+          "approximateHalfDepthWidth_cm-1": 31.1,
+          "draftCentreDifference": -6.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 750,
+          "searchWindowPlusMinus": 35,
+          "centre_cm-1": 745.3,
+          "minimum_percentT": 46.71,
+          "approximateHalfDepthWidth_cm-1": 9.0,
+          "draftCentreDifference": -4.7,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        }
+      ],
+      "otherDeepTroughs": [
+        {
+          "centre_cm-1": 745.3,
+          "minimum_percentT": 46.71
+        },
+        {
+          "centre_cm-1": 909.0,
+          "minimum_percentT": 23.46
+        },
+        {
+          "centre_cm-1": 1198.1,
+          "minimum_percentT": 15.81
+        },
+        {
+          "centre_cm-1": 1235.2,
+          "minimum_percentT": 35.31
+        },
+        {
+          "centre_cm-1": 1361.7,
+          "minimum_percentT": 16.25
+        },
+        {
+          "centre_cm-1": 1469.1,
+          "minimum_percentT": 34.08
+        },
+        {
+          "centre_cm-1": 2875.4,
+          "minimum_percentT": 42.74
+        },
+        {
+          "centre_cm-1": 2914.6,
+          "minimum_percentT": 34.51
+        },
+        {
+          "centre_cm-1": 2968.8,
+          "minimum_percentT": 12.12
+        },
+        {
+          "centre_cm-1": 3361.3,
+          "minimum_percentT": 16.5
+        }
+      ],
+      "rawPoints": "brief120-nist/tert-butanol-ir-points.csv"
+    },
+    "butan-1-ol": {
+      "status": "measured neat-liquid transmission",
+      "source": {
+        "TITLE": "n-BUTYL ALCOHOL",
+        "STATE": "LIQUID (NEAT)",
+        "YUNITS": "TRANSMITTANCE",
+        "SOURCE REFERENCE": "COBLENTZ NO. 6915",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C71363&Index=2&Type=IR"
+      },
+      "pathLength": "CAPILLARY",
+      "bands": [
+        {
+          "draftCentre": 3330,
+          "searchWindowPlusMinus": 180,
+          "centre_cm-1": 3317.5,
+          "minimum_percentT": 17.0,
+          "approximateHalfDepthWidth_cm-1": 378.6,
+          "draftCentreDifference": -12.5,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 2960,
+          "searchWindowPlusMinus": 12,
+          "centre_cm-1": 2951.0,
+          "minimum_percentT": 15.5,
+          "approximateHalfDepthWidth_cm-1": 57.9,
+          "draftCentreDifference": -9.0,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 2935,
+          "searchWindowPlusMinus": 12,
+          "centre_cm-1": 2926.8,
+          "minimum_percentT": 15.5,
+          "approximateHalfDepthWidth_cm-1": 119.4,
+          "draftCentreDifference": -8.2,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 2875,
+          "searchWindowPlusMinus": 25,
+          "centre_cm-1": 2865.4,
+          "minimum_percentT": 16.8,
+          "approximateHalfDepthWidth_cm-1": 21.7,
+          "draftCentreDifference": -9.6,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1465,
+          "searchWindowPlusMinus": 25,
+          "centre_cm-1": 1460.6,
+          "minimum_percentT": 26.83,
+          "approximateHalfDepthWidth_cm-1": 28.9,
+          "draftCentreDifference": -4.4,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1380,
+          "searchWindowPlusMinus": 25,
+          "centre_cm-1": 1373.8,
+          "minimum_percentT": 32.5,
+          "approximateHalfDepthWidth_cm-1": 13.3,
+          "draftCentreDifference": -6.2,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1070,
+          "searchWindowPlusMinus": 20,
+          "centre_cm-1": 1067.5,
+          "minimum_percentT": 19.6,
+          "approximateHalfDepthWidth_cm-1": 65.1,
+          "draftCentreDifference": -2.5,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 1030,
+          "searchWindowPlusMinus": 20,
+          "centre_cm-1": 1036.2,
+          "minimum_percentT": 22.5,
+          "approximateHalfDepthWidth_cm-1": 84.4,
+          "draftCentreDifference": 6.2,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        },
+        {
+          "draftCentre": 950,
+          "searchWindowPlusMinus": 25,
+          "centre_cm-1": 944.5,
+          "minimum_percentT": 33.8,
+          "approximateHalfDepthWidth_cm-1": 21.7,
+          "draftCentreDifference": -5.5,
+          "widthMethod": "local shoulders; do not treat overlapping-group width as isolated normal-mode width"
+        }
+      ],
+      "otherDeepTroughs": [
+        {
+          "centre_cm-1": 612.9,
+          "minimum_percentT": 49.5
+        },
+        {
+          "centre_cm-1": 634.6,
+          "minimum_percentT": 49.0
+        },
+        {
+          "centre_cm-1": 658.8,
+          "minimum_percentT": 48.8
+        },
+        {
+          "centre_cm-1": 727.5,
+          "minimum_percentT": 47.2
+        },
+        {
+          "centre_cm-1": 838.4,
+          "minimum_percentT": 43.9
+        },
+        {
+          "centre_cm-1": 944.5,
+          "minimum_percentT": 33.8
+        },
+        {
+          "centre_cm-1": 1003.6,
+          "minimum_percentT": 32.9
+        },
+        {
+          "centre_cm-1": 1036.2,
+          "minimum_percentT": 22.5
+        },
+        {
+          "centre_cm-1": 1067.5,
+          "minimum_percentT": 19.6
+        },
+        {
+          "centre_cm-1": 1106.1,
+          "minimum_percentT": 37.7
+        },
+        {
+          "centre_cm-1": 1329.2,
+          "minimum_percentT": 46.65
+        },
+        {
+          "centre_cm-1": 1373.8,
+          "minimum_percentT": 32.5
+        },
+        {
+          "centre_cm-1": 1426.8,
+          "minimum_percentT": 36.5
+        },
+        {
+          "centre_cm-1": 1460.6,
+          "minimum_percentT": 26.83
+        },
+        {
+          "centre_cm-1": 2865.4,
+          "minimum_percentT": 16.8
+        },
+        {
+          "centre_cm-1": 2902.7,
+          "minimum_percentT": 18.1
+        },
+        {
+          "centre_cm-1": 2926.8,
+          "minimum_percentT": 15.5
+        },
+        {
+          "centre_cm-1": 2951.0,
+          "minimum_percentT": 15.5
+        },
+        {
+          "centre_cm-1": 3246.4,
+          "minimum_percentT": 19.0
+        },
+        {
+          "centre_cm-1": 3270.5,
+          "minimum_percentT": 18.0
+        },
+        {
+          "centre_cm-1": 3295.8,
+          "minimum_percentT": 17.3
+        },
+        {
+          "centre_cm-1": 3317.5,
+          "minimum_percentT": 17.0
+        },
+        {
+          "centre_cm-1": 3411.6,
+          "minimum_percentT": 19.23
+        }
+      ],
+      "rawPoints": "brief120-nist/butan-1-ol-ir-points.csv"
+    },
+    "ethanol": {
+      "status": "not certified: usable neat-liquid transmission curve not obtained in this run",
+      "reason": "See phase catalog and download-record errors. Some liquid records use dispersion index; some attempted requests returned HTTP429."
+    },
+    "acetic-acid": {
+      "status": "not certified: usable neat-liquid transmission curve not obtained in this run",
+      "reason": "See phase catalog and download-record errors. Some liquid records use dispersion index; some attempted requests returned HTTP429."
+    },
+    "acetone": {
+      "status": "not certified: usable neat-liquid transmission curve not obtained in this run",
+      "reason": "See phase catalog and download-record errors. Some liquid records use dispersion index; some attempted requests returned HTTP429."
+    },
+    "propan-1-amine": {
+      "status": "not certified: usable neat-liquid transmission curve not obtained in this run",
+      "reason": "See phase catalog and download-record errors. Some liquid records use dispersion index; some attempted requests returned HTTP429."
+    },
+    "propan-1-ol": {
+      "status": "not certified: usable neat-liquid transmission curve not obtained in this run",
+      "reason": "See phase catalog and download-record errors. Some liquid records use dispersion index; some attempted requests returned HTTP429."
+    },
+    "propan-2-ol": {
+      "status": "not certified: usable neat-liquid transmission curve not obtained in this run",
+      "reason": "See phase catalog and download-record errors. Some liquid records use dispersion index; some attempted requests returned HTTP429."
+    },
+    "ethyl-acetate": {
+      "status": "not certified: usable neat-liquid transmission curve not obtained in this run",
+      "reason": "See phase catalog and download-record errors. Some liquid records use dispersion index; some attempted requests returned HTTP429."
+    }
+  }
+}

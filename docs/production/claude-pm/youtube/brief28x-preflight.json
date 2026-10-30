@@ -2,7 +2,7 @@
   "brief": "28x",
   "date": "2026-10-27",
   "timezone": "Australia/Sydney",
-  "status": "paused-after-browser-input-timeout",
+  "status": "four-public-playlists-readback-caption-replacements-pending",
   "videos": [
     {
       "lessonId": "chem-m6-p06",
@@ -104,7 +104,7 @@
         ],
         "positionStatus": "Root to read current playlist and place by route. Existing unavailable entries can offset absolute position."
       },
-      "status": "uploaded-private-processing",
+      "status": "published-playlist-position-pending",
       "videoId": "Jif3hku49lY",
       "url": "https://youtu.be/Jif3hku49lY",
       "captionStatus": "English Australia published in Studio"
@@ -140,13 +140,13 @@
         ],
         "positionStatus": "Root to read current playlist and place by route. Existing unavailable entries can offset absolute position."
       },
-      "status": "uploaded-private-processing",
+      "status": "published-playlist-position-pending",
       "videoId": "0U64-GcUlwM",
       "url": "https://youtu.be/0U64-GcUlwM",
       "captionStatus": "English Australia published in Studio"
     }
   ],
-  "uploadsCompleted": 2,
+  "uploadsCompleted": 4,
   "captionReplacementsCompleted": 0,
   "browserEvidence": [
     "cua.getState returned apps=[] and browsers=[]",
@@ -154,8 +154,66 @@
     "createBrowserTab iab: Browser is not available: iab"
   ],
   "playlistReadbacks": {
-    "chemistry": "not performed, browser unavailable",
-    "biology": "not performed, browser unavailable"
+    "chemistry": {
+      "manual": true,
+      "ids": [
+        "-ouJt6UBaBw",
+        "ENUgFBDb0pY",
+        "HOcAqIXXbGk",
+        "fJynVZC82Is",
+        "8zI6dh7bui4",
+        "dkMhu-koahI",
+        "s2Soxz8i5K4",
+        "XrYeYMeSmDw",
+        "VFu_7xIIBH0",
+        "boYH3_uNQyc",
+        "BN5RYjZaVzc",
+        "mrmgK98F3-U",
+        "rgepYezizZA",
+        "I4cEf51KJ5I",
+        "xl-LqpA8IUo",
+        "Jif3hku49lY",
+        "5RRF1xvW3lk",
+        "WRD5syuSTEo",
+        "dZQvSUxFY8A",
+        "WImke8N1jqg",
+        "sFHG5r3csDY",
+        "wYqgEi0J71g",
+        "nyq1jhlmhgs",
+        "9-supcAoc8g",
+        "KvQ-9Ki6NvI",
+        "KZu-uvXVGFw"
+      ]
+    },
+    "biology": {
+      "manual": true,
+      "availableIds": [
+        "-ouJt6UBaBw",
+        "ENUgFBDb0pY",
+        "BLD9Zu9sPQ0",
+        "eNT4PMSNYV4",
+        "0U64-GcUlwM",
+        "S30l6JbFoAs",
+        "dZQvSUxFY8A",
+        "ldAXVZXHFuM",
+        "fyvYjlBBRmk",
+        "_7FscIH2HHI",
+        "Z1jPRaPLHYk",
+        "PdcZY74Gywo",
+        "Vyr0KetDMwo",
+        "71MkKTjXPOU",
+        "wYqgEi0J71g",
+        "oAVZdpuLnHw",
+        "y6vgEQaZel4",
+        "KtmFOGNNztg",
+        "wX3MUWuRfvY",
+        "njVBwGcvD7A",
+        "o3PpNr9qFhY",
+        "FfOK7a6blSw",
+        "dJSdk30cboo"
+      ],
+      "unavailableItem": "preserved"
+    }
   },
   "nextStep": "Reconnect the signed-in YouTube Studio browser. Existing upload and caption authorisations remain valid. Capture saved-track identities before replacing captions.",
   "resumeAttempt": {

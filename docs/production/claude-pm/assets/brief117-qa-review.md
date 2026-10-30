@@ -1,0 +1,28 @@
+# Brief 117 artwork QA
+
+30 October 2026. 36 requested PNG filenames delivered: 13 Chemistry and 23 Biology. There were 39 built-in imagegen calls, including four targeted retakes. Thirty-five unique subjects/states were generated; the pale copper filename is an identical reuse of standard 1. No CLI image generation was used.
+
+All final files are 2000 by 2000 RGBA with real transparent pixels and fully opaque content. No stretching was used. Normalisation used uniform scaling and transparent padding; alpha values 1 to 3 were cleared to remove near-invisible scattered pixels. Exception: the final mucus composite retains original RGBA pixels exactly in its protected tissue region, including original faint alpha. The blue burner received a one-pixel left translation. Both new thyroid states received the same 0.9 uniform canvas scale to restore clear margin while preserving their relative alignment. Original catalogue reference PNGs were not edited.
+
+## What was inspected
+
+The actual existing reference plates were inspected in `brief117-source-contact-1.jpg`. All final objects and states were inspected in four final contact sheets. White, cream and black background views at 220 and 600 pixels were generated for each file in `brief117-qa/`; larger individual boards were inspected for the artery, CFTR cell, mucus and other flagged details. All aligned-pair 50 percent overlays were inspected in the three overlay contact sheets, with the mucus and burner overlays inspected separately. This is agent inspection, not owner art acceptance or video playback review.
+
+## Results
+
+- The standards rack retake now has six cylindrical, round-bottomed test tubes, rather than the rejected square cuvettes. The first tube is colourless, with five progressively blue standards at a common level.
+- The five cuvettes progress from pale to deeper copper blue. The corrected standard 3 separates more clearly from standard 2. The diluted unknown now sits near standard 4; the original unknown is deeper than standard 5. The ammonia-complex cuvette is royal blue with a violet tint. `cu-standards-in-order-300.jpg` shows the ordered set. Measured colour samples are in the technical JSON; these are a QA comparison, not an absorbance calibration.
+- The blue burner reads as a clean non-luminous flame. After its one-pixel translation, the sampled burner-edge anchors are within two pixels of the calcium plate. The existing unlit and calcium reference silhouettes themselves differ by up to ten pixels at the sampled rows. No new plate can therefore be within two pixels of both at every sampled edge. `brief117-burner-anchor-check.json` records the actual rows. Root must choose the alignment reference or resolve the old reference mismatch before accepting that exact requirement.
+- Lower epidermal field: 20 separate stomata counted visually. Upper field: exactly 3. Both show outlines without painted chloroplasts; the field circles remain aligned. A count alone is not a measurement of transpiration rate.
+- The potometer has a sealed shoot chamber, reservoir, long horizontal capillary, ticks without numerals and an end dipping into water. It contains no painted bubble. The leaf, organ and apparatus plates have no people, hands, faces, text or brand labels.
+- CFTR has five visible apical channels in the normal state and none in the missing state, with internal crumpled teal protein clumps. Alveolar interiors change from many small spaces to fewer enlarged spaces. The artery plaque sits in the wall rather than floating as a clot. Silicotic lungs have pale nodules concentrated in upper regions and are not blackened smoker lungs. Red cells remain five, smaller and paler at the same general centres. Weak collagen shows sparse fibres and escaping red cells. Rickets bows the bones while preserving the specimen endpoints. Goitre enlarges both lobes around the same trachea.
+
+## Repaired thick-mucus plate
+
+The generated retake redrew and shifted lower tissue. On root's explicit follow-up instruction, generated mucus/cilia/bacteria pixels were translated up 45 pixels and confined to the upper region by a source-coordinate mask. An eight-pixel blend lies entirely above the protected contour. All mask-zero pixels are exactly equal to the original reference in RGBA, including every pixel at y = 920 through 1999 across the full width. No cells, tissue or mucus were painted in Python. Root and the agent inspected the candidate and 50 percent overlay and found the anatomical seam clean; the repair was promoted to `m8-airway-mucus-thick-v1.png`.
+
+The pre-composite candidate, final composite candidate, mask, overlay and invariant checks are preserved as `brief117-mucus-pre-composite.png`, `brief117-mucus-confined-candidate.png`, `brief117-qa/mucus-confined-*` and `brief117-mucus-composite-check.json`. The original reference remains unchanged, SHA-256 `c20a6ac9eb7652f2f0887ed9e6383e6198eb9ff9aaba70d3a296fbfb41886a10`.
+
+Other AI-edited pairs have minor edge redraws. Their overlays are useful visual checks, not proof of pixel identity. Existing reference-aligned anatomy can carry about eight percent margin rather than the generic ten percent target; exact alpha bounds are recorded rather than claiming every reference-aligned file passes ten percent.
+
+Remaining gates: owner art acceptance for all 36 files; resolution of the burner-reference mismatch; integration of the six source-learning blockers and other findings; exact voiced preview, human listening and release review. The mucus tissue-alignment hold is resolved. This brief created no narration or video render.

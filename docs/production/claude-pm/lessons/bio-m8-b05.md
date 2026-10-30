@@ -1,10 +1,16 @@
 # B8-05: How do plants keep enough water? Transpiration, guard cells, ABA and xerophyte adaptations (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (31 Oct): Codex error check 116 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 
 Narration 5,864 characters (Revision 2; 16 scene files, counted by script from lines starting "> " with bold markers removed), about 9.3 minutes (560 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 3 changes (31 Oct; resolving `../checks/codex-check-116.md`):
+- codex-check-116 found no errors in this design; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8b05-learning-review.md` (learning L1, L2) and `../checks/m8b05-claude-science-check.md` (science S1 to S3)):
 - Comparison board (learning L1, merged with science S1): scene 10's left column is now "ABA response to water stress" and its row "when? this response: water stress", so the board no longer says all stomatal closure is drought-only (stomata also close in darkness and to other signals). The spoken referent is made explicit: "ABA closing the stomata is a response." The model answer for item 2 drops "only". No second closure mechanism is taught.

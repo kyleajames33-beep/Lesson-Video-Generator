@@ -1,0 +1,110 @@
+{
+  "brief": 116,
+  "date": "2026-10-30",
+  "records": [
+    {
+      "path": "public/assets/chemistry/m8-beaker-hotplate-clear-v1.png",
+      "sha256": "45c78ca697bd5f42b5a5c38aa1934f95201ae9c9241d1d2f962cff56833946dd",
+      "size": [
+        2000,
+        2000
+      ],
+      "alphaBbox": [
+        298,
+        200,
+        1701,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "generator": "OpenAI built-in imagegen",
+      "qa": "600px cream/dark/black/white composites; exact common apparatus outside changed material region. Owner art acceptance pending."
+    },
+    {
+      "path": "public/assets/chemistry/m8-baso4-beaker-hotplate-v1.png",
+      "sha256": "bdd9350c01958683443e0ab4e41551b20073b764dfc2aaa0e04f7d77bfa6e5ca",
+      "size": [
+        2000,
+        2000
+      ],
+      "alphaBbox": [
+        298,
+        200,
+        1701,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "generator": "OpenAI built-in imagegen",
+      "qa": "600px cream/dark/black/white composites; exact common apparatus outside changed material region. Owner art acceptance pending."
+    },
+    {
+      "path": "public/assets/chemistry/m8-filter-funnel-cloudy-filtrate-v1.png",
+      "sha256": "68e3e10334cbb8425df195b27976b1d9f934b2d229147d3702efab1978a88799",
+      "size": [
+        2000,
+        2000
+      ],
+      "alphaBbox": [
+        651,
+        326,
+        1347,
+        1674
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "generator": "OpenAI built-in imagegen",
+      "qa": "600px cream/dark/black/white composites; exact common apparatus outside changed material region. Owner art acceptance pending."
+    }
+  ],
+  "nativeSources": [
+    {
+      "path": "docs/production/claude-pm/assets/brief116-qa/native-clear.png",
+      "sha256": "d8f8e852965895d1d379eeed60f68dc71cd980d8a91eeb357953d2f06f333526"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief116-qa/native-cloudy.png",
+      "sha256": "4d4a287ed10cd58d305dd559f937ad5102e237f70c08419879828571664ce19c"
+    },
+    {
+      "path": "docs/production/claude-pm/assets/brief116-qa/native-settled.png",
+      "sha256": "1f680bf6646759993eebfe6097ceeadb56a9477cc3fe1be6ed521a6ddd5ee331"
+    }
+  ],
+  "processingAuthorisation": "Owner deterministic alpha cleanup, proportional resize and alignment recorded in brief108-provenance.json. Generated state edits composited into their requested material regions to preserve unchanged apparatus.",
+  "prompts": [
+    "Clear beaker on the reference grey hotplate, two-thirds clear liquid, watch glass, tiny bubbles, no steam, matching ink and watercolour; true alpha, no text or people.",
+    "Edit clear plate: only thin even settled white barium sulfate layer; all other apparatus and framing unchanged.",
+    "Edit reference funnel: only faintly milky filtrate and drop; preserve funnel, paper, flask, glass outlines, framing and true alpha."
+  ],
+  "alignment": {
+    "hotplateSharedCrop": [
+      163,
+      143,
+      1090,
+      1200
+    ],
+    "hotplateUniformScale": 1.5137180700094608,
+    "hotplatePosition": [
+      298,
+      200
+    ],
+    "filtrateReferenceBox": [
+      651,
+      326,
+      1347,
+      1674
+    ],
+    "filtrateUniformScale": 1.5933806146572105,
+    "hotplateDifferenceRestrictedToBottomLayer": true,
+    "filtrateDifferenceRestrictedToLiquidAndDrop": true
+  },
+  "ownerAcceptance": "pending",
+  "exactPrompts": "docs/production/claude-pm/assets/brief116-121-imagegen-call-log.json"
+}

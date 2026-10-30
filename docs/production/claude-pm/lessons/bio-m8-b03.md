@@ -1,10 +1,16 @@
 # B8-03: How do insulin and glucagon regulate glucose? The pancreatic islets, insulin's two effects, glucagon and the liver, two opposing loops (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (31 Oct): Codex error check 116 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 
 Narration 5,571 characters (Revision 2; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 8.9 minutes (535 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 3 changes (31 Oct; resolving `../checks/codex-check-116.md`):
+- codex-check-116 found no errors in this design; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8b03-learning-review.md` (learning L1) and `../checks/m8b03-claude-science-check.md` (science S1 to S3)):
 - Feedback 10b (learning L1, merged with science S3): the last sentence now gives the action to the liver, as the review proposes: "The liver breaks down glycogen and releases glucose." The crossed chip's small text reads "glucagon signals; liver cells break down glycogen". Feedback stays about 29 s.

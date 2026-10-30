@@ -1,10 +1,16 @@
 # G01 (Chemistry, Module 8): Precipitation titration and gravimetry: HSC-style practice (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (31 Oct): Codex error check 116 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 
 Narration 5,720 characters (Revision 2), 15 scenes, about 9.1 minutes (548 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (31 Oct; resolving `../checks/codex-check-116.md`):
+- codex-check-116 found no errors in this design; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8g01-learning-review.md` (learning L1) and `../checks/m8g01-claude-science-check.md` (science S1, the same finding)):
 - Q3's closing rule (learning L1 and science S1, merged, as proposed): 4d's last sentence "Averaging can't cancel errors you know are there." becomes "A close average doesn't show that either method was accurate.", because in Q3 the two opposite errors do nearly cancel. The crossed chip's caption becomes "a close mean doesn't validate either method". The decision board's Q3 row ("never trust a mean of biased results") and the Start and stop decision carry the same wording, so no screen line contradicts the example.

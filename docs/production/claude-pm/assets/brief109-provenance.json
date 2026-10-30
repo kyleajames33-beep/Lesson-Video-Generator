@@ -1,0 +1,302 @@
+{
+  "brief": 109,
+  "date": "2026-10-28",
+  "tool": "OpenAI built-in imagegen",
+  "processingAuthorisation": "Standing alpha cleanup, resizing and alignment authorisation recorded in brief108 provenance; brief109 expressly requires fixed LDPE canvas/alpha and aligned plate states.",
+  "records": [
+    {
+      "key": "pet",
+      "path": "public/assets/chemistry/m7-pet-bottle-v1.png",
+      "native": "docs/production/claude-pm/assets/brief109-qa/raw/pet-native.png",
+      "prompt": "Scientific educational ink and watercolour isolated object, same restrained naturalistic fine grey ink and muted painted finish as existing chemistry polymer objects. One clear very slightly blue-tinted empty PET 600 mL fizzy-drink bottle upright with plain white screw cap CLOSED, moulded ribs around middle and five-lobed petaloid base, no label or printing, clean highlights. Three-quarter view slightly from above. Transparent square PNG, object centred occupying 60 percent of canvas height, at least 15 percent completely clear margins. No text, numbers, logos, people, hands, faces, background, tabletop or cast shadow. Fine visible ink edges readable on cream, true alpha transparency.",
+      "method": "Remove disconnected low-alpha specks; uniformly crop, fit and centre on 2000 square, preserve alpha.",
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 3607850,
+      "partialAlphaPixels": 391923,
+      "alphaBounds": [
+        789,
+        400,
+        1211,
+        1600
+      ],
+      "margins": [
+        789,
+        400,
+        789,
+        400
+      ],
+      "sha256": "d2389645ff63f995b3541916ade24be8b189a4d7d22cf81a0c059e81793cd2e2",
+      "status": "candidate, owner art acceptance pending"
+    },
+    {
+      "key": "rope",
+      "path": "public/assets/chemistry/m7-nylon-rope-v1.png",
+      "native": "docs/production/claude-pm/assets/brief109-qa/raw/rope-native.png",
+      "prompt": "Scientific educational ink and watercolour isolated object matching fine grey ink naturalistic chemistry polymer objects. A neat coil of bright white braided synthetic nylon rope about 10 mm thick lying flat, a loose end trailing lower right with smooth glossy heat-sealed tip, not frayed. Clearly woven braid not twisted natural rope; subtle glossy synthetic sheen, fine darker grey edges that read on cream. Three-quarter view slightly from above. Transparent square PNG; centred object about 60 percent canvas width with at least 15 percent clear margin each side. No knots hardware hooks, text numbers logos people hands faces background or tabletop, only faint contact shading.",
+      "method": "Remove disconnected low-alpha specks; uniformly crop, fit and centre on 2000 square, preserve alpha.",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 3231999,
+      "partialAlphaPixels": 767707,
+      "alphaBounds": [
+        400,
+        519,
+        1600,
+        1481
+      ],
+      "margins": [
+        400,
+        519,
+        400,
+        519
+      ],
+      "sha256": "5d2ead06ae85a3cd2509192b5d7aa58a7daa5992380b4b29e5594c7e62fcff39",
+      "status": "candidate, owner art acceptance pending"
+    },
+    {
+      "key": "fabric",
+      "path": "public/assets/chemistry/m7-polyester-fabric-v1.png",
+      "native": "docs/production/claude-pm/assets/brief109-qa/raw/fabric-native.png",
+      "prompt": "Scientific educational ink and watercolour isolated folded fabric swatch, restrained realistic fine grey ink, muted painted finish. A square of lightweight polyester sports fabric in a single muted mid-blue, folded twice lying flat, one corner turned up showing fine knitted mesh texture and a slight synthetic sheen. Three-quarter view slightly above. True transparent square PNG, centred object 60 percent width with generous even clear margins at least 15 percent. No garment shape seams labels logos hanger text numbers people hands faces background table or cast shadow. Clear fabric folds and fine ink edges readable on cream.",
+      "method": "Remove disconnected low-alpha specks; uniformly crop, fit and centre on 2000 square, preserve alpha.",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 3422840,
+      "partialAlphaPixels": 576408,
+      "alphaBounds": [
+        400,
+        570,
+        1600,
+        1430
+      ],
+      "margins": [
+        400,
+        570,
+        400,
+        570
+      ],
+      "sha256": "2bd15b2aa55f26b486cb3851e012cdb1066749521ec2f1589ed032620c2292ba",
+      "status": "candidate, owner art acceptance pending"
+    },
+    {
+      "key": "fresh",
+      "path": "public/assets/biology/m7-disc-plate-fresh-v1.png",
+      "native": "docs/production/claude-pm/assets/brief109-qa/raw/fresh-native.png",
+      "prompt": "Precise scientific educational ink and watercolour edit. Reference is the exact target dish. Keep its square canvas, top-down circular closed Petri dish, entire outer rim outline, clear lid, two short transparent tape strips at left and right, lighting, pale straw agar colour and position unchanged. Add only four small identical white paper discs flat on the clear ungrown agar, one in each quadrant at symmetric diagonal positions, centres midway between centre and inner rim, disc diameter 6.7 percent of agar diameter. No growth, no zones. No labels, text, numbers, hands people faces background shadow or surface. True transparent background outside dish. At least ten percent clear margin, object as reference.",
+      "method": "Remove disconnected low-alpha specks; uniformly crop, fit and centre on 2000 square, preserve alpha. Align uniformly to reference and retain exact reference rim outside inner agar. No coded discs/lawn/zones. Uniformly reduce generated paper-disc cutouts to match 6/90 diameter ratio, then reuse identical painted disc pixels in both states; original painted agar/lawn supplies background. Generated zone boundaries unchanged.",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 2438067,
+      "partialAlphaPixels": 1534401,
+      "alphaBounds": [
+        200,
+        200,
+        1759,
+        1761
+      ],
+      "margins": [
+        200,
+        200,
+        241,
+        239
+      ],
+      "sha256": "f92d49bec1fcd7f0f4b319c544cdd076f795b6379ef8f05f8ce1e77ec22a5462",
+      "status": "candidate, owner art acceptance pending"
+    },
+    {
+      "key": "zones",
+      "path": "public/assets/biology/m7-disc-plate-zones-v1.png",
+      "native": "docs/production/claude-pm/assets/brief109-qa/raw/zones-native.png",
+      "prompt": "Precise-object-edit for a scientific educational ink and watercolour illustration. Keep the reference dish exactly identical: same canvas, closed circular rim, tape, lighting, four white discs and disc positions. Change only agar state: even slightly cloudy pale cream bacterial lawn matching a restrained watercolour wash, not speckled colonies. Clear straw-coloured circular zone centred on TOP LEFT disc diameter 28 percent of inner agar diameter; TOP RIGHT disc clear circular zone diameter 17 percent. Bottom two discs have NO zones: lawn right up to their edges. Zones perfectly round concentric, no colonies inside them, never touching each other or rim. Keep four discs each 6.7 percent inner diameter. True transparency outside the dish. No labels text numbers scale bar people hands faces shadow backdrop. This is an illustrative data visual, not a culturing instruction.",
+      "method": "Remove disconnected low-alpha specks; uniformly crop, fit and centre on 2000 square, preserve alpha. Align uniformly to reference and retain exact reference rim outside inner agar. No coded discs/lawn/zones. Uniformly reduce generated paper-disc cutouts to match 6/90 diameter ratio, then reuse identical painted disc pixels in both states; original painted agar/lawn supplies background. Generated zone boundaries unchanged.",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 2438067,
+      "partialAlphaPixels": 1534401,
+      "alphaBounds": [
+        200,
+        200,
+        1759,
+        1761
+      ],
+      "margins": [
+        200,
+        200,
+        241,
+        239
+      ],
+      "sha256": "606ae636e436e1137de3abd2e8059923a340fd757bb3a4c68c4571e6799c6b70",
+      "status": "candidate, owner art acceptance pending"
+    },
+    {
+      "key": "cartridge",
+      "path": "public/assets/biology/m7-antibiotic-disc-cartridge-v1.png",
+      "native": "docs/production/claude-pm/assets/brief109-qa/raw/cartridge-native.png",
+      "prompt": "Scientific educational ink and watercolour isolated apparatus, fine grey ink naturalistic muted palette, soft lighting matching school laboratory apparatus. A small clear plastic cylindrical antibiotic paper-disc cartridge about five times longer than its width with a plain white cap, stack of many thin white paper discs visible through the wall, lying diagonally at a slight angle. Three loose small white paper discs beside it on the same implied plane. True transparent square PNG, centred composition about 60 percent canvas width, clear margin at least 15 percent. No bench drawn, background, shadow, text, labels, codes, letters, numbers, logos, people, hands or faces. Firm readable ink edges.",
+      "method": "Remove disconnected low-alpha specks; uniformly crop, fit and centre on 2000 square, preserve alpha.",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 3551588,
+      "partialAlphaPixels": 447300,
+      "alphaBounds": [
+        400,
+        603,
+        1600,
+        1397
+      ],
+      "margins": [
+        400,
+        603,
+        400,
+        603
+      ],
+      "sha256": "292ed9a9c4e5c28c379f46fb607f80a03b177c79a5a8b28f6efc249b0fb1897a",
+      "status": "candidate, owner art acceptance pending"
+    },
+    {
+      "key": "ruler",
+      "path": "public/assets/biology/m7-ruler-clear-v1.png",
+      "native": "docs/production/claude-pm/assets/brief109-qa/raw/ruler-native.png",
+      "prompt": "Scientific educational apparatus illustration in fine grey ink and very light watercolour: one straight clear plastic ruler, top-down, long axis perfectly horizontal, subtly transparent pale cool-grey body. Fine black millimetre tick marks along ONE long edge, longer ticks at every five small ticks and longest at every ten. NO numerals anywhere, no letters text logos codes or scale label. Fifteen equally repeated groups of ten divisions. Body opacity about 0.65 with true transparency so imagery behind shows through. Square transparent PNG, ruler centred across canvas, occupying 70 percent width and about 8 percent height; large completely clear margin all round. No bench, backdrop, ground shadow, hands people or faces. Straight parallel edges, rectangular corners with subtle rounding.",
+      "method": "Remove disconnected low-alpha specks; uniformly crop, fit and centre on 2000 square, preserve alpha. Reduce light body alpha to approximately 0.65; retain dark ink ticks.",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 3801326,
+      "partialAlphaPixels": 198543,
+      "alphaBounds": [
+        300,
+        926,
+        1700,
+        1073
+      ],
+      "margins": [
+        300,
+        926,
+        300,
+        927
+      ],
+      "sha256": "9362fb6076bc0719d42a0741fc57d27e9f96bdd47e52ddfa3e383ac8405a665d",
+      "status": "candidate, owner art acceptance pending"
+    },
+    {
+      "key": "ldpe",
+      "path": "public/assets/chemistry/m7-ldpe-squeeze-bottle-v1.png",
+      "native": "docs/production/claude-pm/assets/brief109-qa/raw/ldpe-native.png",
+      "prompt": "Precise-object-edit: deeper cool blue-grey translucent tint and firmer grey edges, preserve soft dented LDPE geometry, cap, canvas and alpha bounds.",
+      "method": "Imagegen contrast edit uniformly aligned into original placement; original alpha mask retained byte-for-byte, canvas and bounds unchanged.",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 3517674,
+      "partialAlphaPixels": 481115,
+      "alphaBounds": [
+        736,
+        400,
+        1263,
+        1600
+      ],
+      "margins": [
+        736,
+        400,
+        737,
+        400
+      ],
+      "sha256": "947935c200e11fcad7b3ca1250acbe774c52431871ad67f2bdbefd13e5be176a",
+      "status": "candidate, owner art acceptance pending"
+    }
+  ],
+  "limitations": [
+    "Owner artwork acceptance pending; no recording, full export or publication authorised by these checks.",
+    "Illustrative biology paint is not a validated practical protocol.",
+    "Printed ruler ticks are painted context; code must use its own calibrated numerals/readout, verified in the actual scene."
+  ],
+  "generationNotes": "The zones entry uses the retake prompt in brief109-qa/zones-retake-prompt.txt. Its first rejected generation is retained as raw/zones-rejected-disc-shift.png. Native generations remain unchanged."
+}

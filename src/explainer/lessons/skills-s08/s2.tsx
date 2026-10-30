@@ -22,7 +22,7 @@ const SmallCard: React.FC<{ann?: Ann[]}> = ({ann = []}) => <QuestionCard spec={W
 /** The plan card from scene 5, kept small and dim at the top of the right column. */
 const PLAN_K = 0.5;
 const PlanSmall: React.FC<{o?: number}> = ({o = 0.55}) => <PlanCard x={RX} y={96} w={RW} at={-100} s={PLAN_K} o={o} size={PLAN_SIZE} verdict={{t: VERDICT, at: -100}} rows={PLAN_ROWS(ALL4, ALL4)} />;
-const PLAN_BOTTOM = 96 + planLayout(RW, PLAN_ROWS(ALL4, ALL4), VERDICT, PLAN_SIZE).h * PLAN_K;
+const planBottom = () => 96 + planLayout(RW, PLAN_ROWS(ALL4, ALL4), VERDICT, PLAN_SIZE).h * PLAN_K;
 /** Line of the first word of each part of a paragraph. */
 const partLines = (g: AnsGeom, parts: string[]) => {
 	const {L, partOf} = paraLayout(g, parts);
@@ -52,11 +52,11 @@ const MiniPeel: React.FC<{g: AnsGeom; line: number; at: number; step?: number; d
 const K6 = cues(sc('peel-paragraph'), {now: 'Now build', point: 'the point', evidence: 'Give the evidence', explain: 'Explain the biology', link: 'Then link', take: 'Take paragraph three', coverage: 'Coverage fell from', fewer: 'With fewer people', rose: 'cases rose', so: 'So the fall', outbreak: 'the outbreak'});
 export const P3_LINE = 2;
 export const p3Parts = (t: number[], d: number[] = [40, 70, 150, 50]) => P3.map((text, i) => ({text, at: t[i], dur: d[i]}));
-const P3L = partLines(G, P3);
+const p3L = () => partLines(G, P3);
 export const ScenePeel: React.FC = () => {
 	const f = useCurrentFrame();
 	const t = [K6.take + 14, K6.coverage, K6.fewer, K6.so];
-	const RY = PLAN_BOTTOM + 30;
+	const RY = planBottom() + 30;
 	return (
 		<Overlay>
 			<AnswerBox spec={ABOX} at={-100} />
@@ -73,7 +73,7 @@ export const ScenePeel: React.FC = () => {
 				{phrase: P3[0], at: t[0] + 40, color: PEN}, {phrase: P3[1], at: t[1] + 70, color: TEAL},
 				{phrase: P3[2], at: t[2] + 150, color: VIOLET}, {phrase: P3[3], at: t[3] + 50, color: GREEN},
 			]} />
-			{P3L.map((l, k) => <PeelDot key={k} g={G} line={P3_LINE + l} k={k} at={t[k]} />)}
+			{p3L().map((l, k) => <PeelDot key={k} g={G} line={P3_LINE + l} k={k} at={t[k]} />)}
 			<PeelRail x={RX} y={RY} w={RW} at={K6.now} rows={[K6.point - 6, K6.evidence - 6, K6.explain - 6, K6.link - 6]} lit={[
 				{row: 0, from: K6.point, to: K6.evidence}, {row: 1, from: K6.evidence, to: K6.explain}, {row: 2, from: K6.explain, to: K6.link}, {row: 3, from: K6.link, to: K6.take},
 				{row: 0, from: t[0], to: t[1]}, {row: 1, from: t[1], to: t[2]}, {row: 2, from: t[2], to: t[3]}, {row: 3, from: t[3], to: 1e9},
@@ -85,22 +85,22 @@ export const ScenePeel: React.FC = () => {
 
 // ---------- 7. The individual and the population ----------
 const K7 = cues(sc('individual-population'), {first: 'The first two', constraint: 'cover the constraint', one: 'One for the individual', vaccine: 'the vaccine presents', memory: 'makes memory cells', later: 'a later infection', pop: 'One for the population', when: 'when coverage is', most: 'most people are', rarely: 'rarely finds', fits: 'which fits', ten: 'twenty ten', idea: 'One idea per', link: 'each link'});
-const L1 = paraLines(G, P1), L2 = paraLines(G, P2);
-export const P2_LINE = L1 + 1, P3B_LINE = L1 + 1 + L2 + 1;
+// Measured at render time (fonts loaded), not at import.
+const p2Line = () => paraLines(G, P1) + 1, p3bLine = () => p2Line() + paraLines(G, P2) + 1;
 const P2_MARKS = (at: number) => [{phrase: '95 to 96%', at, color: TEAL}, {phrase: '12', at: at + 10, color: TEAL}, {phrase: '8)', at: at + 18, color: TEAL}];
 /** The answer as it stands after scene 7 (P1, P2 written, P3 folded). */
 export const AnswerSoFar: React.FC<{o?: number}> = ({o = 1}) => (
 	<g opacity={o}>
 		<AnswerBox spec={ABOX} at={-100} />
 		<Para g={G} line={0} parts={P1.map(text => ({text, at: -1000}))} />
-		<Para g={G} line={P2_LINE} parts={P2.map(text => ({text, at: -1000}))} marks={P2_MARKS(-1000)} />
-		<Block g={G} line={P3B_LINE} label="P3: coverage fell → outbreak (PEEL, built)" at={-100} />
+		<Para g={G} line={p2Line()} parts={P2.map(text => ({text, at: -1000}))} marks={P2_MARKS(-1000)} />
+		<Block g={G} line={p3bLine()} label="P3: coverage fell → outbreak (PEEL, built)" at={-100} />
 	</g>
 );
 export const SceneIndPop: React.FC = () => {
 	const f = useCurrentFrame();
 	const fold = smooth(prog(f, 8, 26));
-	const p3dy = (P3B_LINE - P3_LINE) * G.lh * smooth(prog(f, 24, 30));
+	const p3dy = (p3bLine() - P3_LINE) * G.lh * smooth(prog(f, 24, 30));
 	const t1 = [K7.one + 24, K7.later], t2 = [K7.when, K7.fits];
 	return (
 		<Overlay>
@@ -111,19 +111,19 @@ export const SceneIndPop: React.FC = () => {
 				{kind: 'pulse', phrase: '12', item: 1, at: K7.fits + 22, color: PULSE}, {kind: 'pulse', phrase: '8', item: 1, at: K7.fits + 30, color: PULSE},
 			]} />
 			<PlanSmall />
-			<g opacity={1 - prog(f, 0, 16)}><PeelRail x={RX} y={PLAN_BOTTOM + 30} w={RW} at={-100} /></g>
+			<g opacity={1 - prog(f, 0, 16)}><PeelRail x={RX} y={planBottom() + 30} w={RW} at={-100} /></g>
 			<Para g={G} line={P3_LINE} parts={p3Parts([-1000, -1000, -1000, -1000])} o={1 - fold} />
-			{P3L.map((l, k) => <PeelDot key={k} g={G} line={P3_LINE + l} k={k} at={-100} out={4} />)}
+			{p3L().map((l, k) => <PeelDot key={k} g={G} line={P3_LINE + l} k={k} at={-100} out={4} />)}
 			<Block g={G} line={P3_LINE} dy={p3dy} label="P3: coverage fell → outbreak (PEEL, built)" at={14} />
 			<Slot g={G} line={0} label="P1: the individual" at={-100} out={K7.one} />
 			<Slot g={G} line={1} label="P2: the population" at={-100} out={K7.one} />
 			<Para g={G} line={0} parts={[{text: P1[0], at: t1[0], dur: 150}, {text: P1[1], at: t1[1], dur: 100}]} />
 			<MiniPeel g={G} line={0} at={t1[0] + 20} step={60} />
-			<Para g={G} line={P2_LINE} parts={[{text: P2[0], at: t2[0], dur: 190}, {text: P2[1], at: t2[1], dur: 70}]} marks={P2_MARKS(K7.fits + 40)} />
-			<MiniPeel g={G} line={P2_LINE} at={t2[0] + 20} step={60} />
-			<GreyTag x={RX} y={PLAN_BOTTOM + 40} text="b09: memory cells, secondary response" at={K7.memory} size={22} maxW={RW} />
-			<GreyTag x={RX} y={PLAN_BOTTOM + 120} text="b10: herd immunity" at={K7.most} size={22} maxW={RW} />
-			<Chip x={RX} y={PLAN_BOTTOM + 200} text="one idea per paragraph: each link easy to see" at={K7.idea} size={28} color={INK} maxW={RW} />
+			<Para g={G} line={p2Line()} parts={[{text: P2[0], at: t2[0], dur: 190}, {text: P2[1], at: t2[1], dur: 70}]} marks={P2_MARKS(K7.fits + 40)} />
+			<MiniPeel g={G} line={p2Line()} at={t2[0] + 20} step={60} />
+			<GreyTag x={RX} y={planBottom() + 40} text="b09: memory cells, secondary response" at={K7.memory} size={22} maxW={RW} />
+			<GreyTag x={RX} y={planBottom() + 120} text="b10: herd immunity" at={K7.most} size={22} maxW={RW} />
+			<Chip x={RX} y={planBottom() + 200} text="one idea per paragraph: each link easy to see" at={K7.idea} size={28} color={INK} maxW={RW} />
 			{void K7.first}{void K7.constraint}{void K7.pop}{void K7.rarely}{void K7.ten}{void lerp}
 		</Overlay>
 	);
@@ -155,7 +155,7 @@ export const SceneStimulus: React.FC = () => {
 			<HandLine x={420} y={LY + 100} text="coverage fell below the 95% target → more people susceptible" at={K8.mean + 6} size={40} color={TEAL} dur={40} />
 			<HandLine x={420} y={LY + 156} text="→ transmission continued → cases rose" at={K8.mean + 50} size={40} color={TEAL} dur={30} />
 			<HandLine x={420} y={LY + 250} text="Quote the number, then interpret it." at={K8.quote} size={46} color={INK} />
-			<GreyTag x={RX} y={PLAN_BOTTOM + 40} text="s06: describe with numbers" at={K8.quote} size={22} maxW={RW} />
+			<GreyTag x={RX} y={planBottom() + 40} text="s06: describe with numbers" at={K8.quote} size={22} maxW={RW} />
 			{void K8.using}{void K8.weak}{void K8.climbed}{void K8.interpret}{void AMBER}
 		</Overlay>
 	);
@@ -163,11 +163,10 @@ export const SceneStimulus: React.FC = () => {
 
 // ---------- 9. The judgement, first and last ----------
 const K9 = cues(sc('judgement-bookends'), {assess: 'Assess asks', first: 'your first line', end: 'at the end', before: 'Before the program', fallen: 'had already fallen', after: 'After it began', rose: 'coverage rose', fell: 'cases fell to', data: 'These data', fair: 'the fair judgement', contributed: 'probably contributed', condition: 'its condition', bare: 'a bare yes'});
-const LO = paraLines(G, [OPENING]), LC = paraLines(G, [CLOSING]);
-const B9 = LO, P4_LINE = LO + 1, C_LINE = ABOX.lines - LC;
-const P4L = partLines(G, P4);
+const lo = () => paraLines(G, [OPENING]), lc = () => paraLines(G, [CLOSING]);
 export const SceneBookends: React.FC = () => {
 	const f = useCurrentFrame();
+	const LO = lo(), LC = lc(), B9 = LO, P4_LINE = LO + 1, C_LINE = ABOX.lines - LC, P4L = partLines(G, P4);
 	const t4 = [K9.before + 10, K9.after, K9.fell + 22, K9.data + 8];
 	const yTop = G.base(0) - G.size * 0.9, yBot = G.base(C_LINE + LC - 1) + 10;
 	const yHow = G.base(P4_LINE + P4L[3]) - 8;

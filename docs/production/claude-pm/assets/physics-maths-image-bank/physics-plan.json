@@ -1,0 +1,1550 @@
+{
+  "subject": "physics",
+  "scope": "Planning only, 25 October 2026: all 70 current Year 12 Physics site lessons in source-inventory.json. Actual explanations/cases and current hashes checked; not a full science, curriculum coverage, selected-script or apparatus accuracy review. The first horizontal-launch pack needs coded paired motion, with no forced raster. No Physics rasters are present in the raw inventory. Later prompts use built-in imagegen only after reference/scene review; no generation or production integration is authorised by this plan. No quota. Source excerpts have punctuation normalised to avoid em dashes.",
+  "lessons": [
+    {
+      "lessonKey": "physics/year12/module5/lesson01.sa.html",
+      "sourceSha256": "a739198c2342e395b4220c69a481c9d3e2086d5a788c8b83c7e35025b2e3b6d1",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-launch-angle",
+        "m5-vector-resolution"
+      ],
+      "teachingReason": "Horizontal and vertical component arrows, simultaneous drop/launch positions and one physical clock carry independence and component calculations. The first horizontal-launch pack needs new coded paired motion, not raster art.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson01.sa.html:370; Resolve the launch vector. Source excerpt (punctuation normalised): Watch a cricket ball leave the bat at 30 m/s at 40° above horizontal: it arcs upward, slows vertically, then falls while moving horizontally at constant speed in the ideal model. The component equations are dynamically separable, but they describe one velocity vector in the same reference frame and share the same elapsed time."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson02.sa.html",
+      "sourceSha256": "c3b81856cdb5c671c54afdacf36d022201f5c8b5a241352609384e54bddbc362",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-launch-angle",
+        "m5-elevated-launch",
+        "m5-range-derivation",
+        "m5-target-angles"
+      ],
+      "teachingReason": "Exact coupled trajectories compare level-ground complementary angles and the elevated 25 m/s platform case. Code the changed landing level and physical times; an illustrated cannon adds no explanation.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson02.sa.html:377; Derive the level-ground range. Source excerpt (punctuation normalised): Fire a cannonball from level ground at 100 m/s. At 30° it lands closer than at 45°; at 60° it also lands closer than at 45° but travels the same distance as the 30° shot. There is a single angle that maximises horizontal range when launch and landing height are equal, and deriving why requires combining the horizontal and vertical motion equations."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson03.sa.html",
+      "sourceSha256": "8bd974fedf652636912d936d6c79b00b2642878ead6e43a2e89cd5f70038006a",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-elevated-launch",
+        "m5-obstacle-clearance",
+        "m5-target-angles"
+      ],
+      "teachingReason": "Code the cliff, wall and target heights to the numerical case so clearance and landing-level reasoning remain exact. A generic sports photograph would not establish whether the ball clears the target.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson03.sa.html:547; Handle unequal heights and obstacles. Source excerpt (punctuation normalised): A ball is kicked at $18\\ \\text{m/s}$ at $35°$ above horizontal from the edge of a cliff that is 15 m above sea level. A wall stands 25 m horizontally from the cliff edge and is 8 m high (measured from sea level). Does the ball clear the wall? If so, by how much?"
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson04.sa.html",
+      "sourceSha256": "2cc8fc5463630f41a6c4d1c882ea403046539c1666b1b4253a67e1b6eec6afcc",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-launch-angle",
+        "m5-elevated-launch",
+        "m5-vector-resolution",
+        "m5-range-derivation",
+        "m5-obstacle-clearance",
+        "m5-target-angles"
+      ],
+      "teachingReason": "Select the current component, flight-time or target calculation and code its givens, trajectory and response hold. Reuse existing trajectory primitives without a new consolidation picture.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson04.sa.html:907; Test, feedback and remediate. Source excerpt (punctuation normalised): A student claims that a ball thrown at 30° and a ball thrown at 60° (same speed, level ground) land at the same point but travel completely different paths. Explain why this is true using the range formula $R = v^2\\sin(2\\theta)/g$ and describe the key differences between the two trajectories (maximum height, flight time, horizontal speed)."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson05.sa.html",
+      "sourceSha256": "306416b4f7988dab0e9fa8592142380128e0139ce61e7f3e487843d1c622c0d1",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-ramp-apparatus"
+      ],
+      "codedVisualIds": [
+        "m5-projectile-practical",
+        "m5-repeat-measurements",
+        "m5-slope-intervals"
+      ],
+      "teachingReason": "A reference-based ramp/stand cutout can identify actual measured parts and first-contact landing location. Keep launch/drop geometry, controlled release position, repeated measurements and transformed graph coded.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson05.sa.html:381; Design variables, method and risk controls. Source excerpt (punctuation normalised): Practical setup: ball bearing rolls from ramp exit at height $h$ and lands at horizontal range $R$."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson06.sa.html",
+      "sourceSha256": "d17495f1c7fc12f866524790a37850f2e52c0f292d51e2bedbe55fe2335c35f7",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-torque",
+        "m5-moment-arm",
+        "m5-beam-equilibrium"
+      ],
+      "teachingReason": "Code the spanner, pivot, force line and perpendicular moment arm, then a balanced beam ledger. These exact geometric relationships carry the crane/spanner contrast without a decorative crane plate.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson06.sa.html:170; Opening case. Source excerpt (punctuation normalised): A tower crane can hold a 4-tonne load hanging 30 m out along its jib using a 20-tonne concrete counterweight parked only 6 m behind the mast. The two weights are nowhere near equal, yet the crane does not topple, because what balances is not force but the turning effect of force. That turning effect, torque, and the mathematics of τ = rF sin θ are what this lesson unpacks."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson07.sa.html",
+      "sourceSha256": "01b9c74b147e84c698ec636ed0c4fd27298992fa401503a2ae5ba49930a8501e",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-circular-motion"
+      ],
+      "teachingReason": "Code changing velocity vectors around a roundabout/turntable and the real inward friction force. Exact direction changes and equal-time angular comparisons matter more than a car cutout.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson07.sa.html:390; Describe period, frequency and angular speed. Source excerpt (punctuation normalised): A turntable completes repeated revolutions. One revolution sweeps through $2\\pi$ radians; the outer edge travels farther than a point near the axis during the same time. Describing this motion requires:"
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson08.sa.html",
+      "sourceSha256": "9bcb63c78453091f25d5f5a84d39512bad41ec23ae411fd2555b7d28eb565a4a",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-banked-track",
+        "m5-conical-pendulum",
+        "m5-banked-friction"
+      ],
+      "teachingReason": "Existing conical-pendulum and banked-road geometry can keep force components, angle convention and friction direction exact while the speed case changes.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson08.sa.html:170; Opening case. Source excerpt (punctuation normalised): A banked bend tilts the normal force so that part of it points toward the centre of the circular path. This lesson uses free-body diagrams to analyse conical pendulums, design speed, and how static friction changes direction above and below that speed."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson09.sa.html",
+      "sourceSha256": "437d0357bca1619358587f6775d5f70be1d243026aff5b9cea4c1a0fca07b74f",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-vertical-loop"
+      ],
+      "teachingReason": "Model the vertical loop with shared energy/force state and real contact force. Coded top/bottom/sides comparisons avoid a realistic coaster image suggesting restraints or noncircular geometry absent from the ideal case.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson09.sa.html:352; Set the radial sign and build the FBD. Source excerpt (punctuation normalised): Draw only real forces first. For a string, the inward contact force is tension $T$. For a car or rider in contact with a track or seat, it is a normal force $N$. “Centripetal force” is not an extra arrow; it is the inward resultant of the real-force components."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson10.sa.html",
+      "sourceSha256": "64401b181f9a35605154dba81c071858b1cb3d9896c0ec74c78332321699bd7c",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-torsion-balance"
+      ],
+      "codedVisualIds": [
+        "m5-inverse-square"
+      ],
+      "teachingReason": "Keep inverse-square masses, centre distances and field arrows coded. A later reference-based torsion-balance view could explain how the tiny laboratory force becomes a measurable twist; it is optional to the main law.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson10.sa.html:651; Evaluate evidence and limitations. Source excerpt (punctuation normalised): In 1797–1798, Henry Cavendish used a torsion balance designed from earlier work by John Michell. Small lead spheres on a suspended rod twisted toward larger lead spheres, allowing the tiny gravitational attraction between laboratory masses to be measured."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson11.sa.html",
+      "sourceSha256": "62b7d2be3790b2adf89c177e71c4be0b7af850d8005f56cdd75c2f88c441ef3e",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-orbit-energy"
+      ],
+      "teachingReason": "Code Earth, radius from centre, circular motion and an equatorial ground reference to distinguish near-Earth and geostationary orbits. No particular satellite hardware is needed.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson11.sa.html:757; Respond using the circular-orbit model. Source excerpt (punctuation normalised): A geostationary satellite appears motionless above one point on Earth. Explain why this requires a specific altitude (~35,900 km) and why the satellite must orbit above the equator. Use the formula $T^2 = 4\\pi^2 r^3/(GM)$ in your explanation, and give one real-world application (e.g., TV broadcast)."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson12.sa.html",
+      "sourceSha256": "441719a2abd13157d21f73bb1213e999f7ee9bde8f45feada17655abc31ca73e",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-orbit-energy"
+      ],
+      "teachingReason": "A signed coded KE/U/total-energy ledger and separate before/final circular-orbit states explain added total energy with lower final circular speed. Do not imply an immediate burn simply slows the craft.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson12.sa.html:147; Opening case. Source excerpt (punctuation normalised): For a circular orbit, moving higher gives a satellite more total energy but less kinetic energy. A signed energy ledger explains this result and distinguishes the instantaneous effect of a burn from the properties of the final circular orbit."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson13.sa.html",
+      "sourceSha256": "8f85309ac1d1dffc3d10c36edbdbe23a80837e7a8800941869a487a303055957",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-torque",
+        "m5-circular-motion",
+        "m5-vertical-loop",
+        "m5-orbit-energy"
+      ],
+      "teachingReason": "Reuse the exact torque, circle and orbital models for the actual retrieval case, including radius-versus-altitude and immediate-burn versus final-state distinctions; consolidation adds no raster need.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson13.sa.html:740; Repair common reasoning errors. Source excerpt (punctuation normalised): Six error rules: (1) no centrifugal force in an inertial FBD; (2) speed varies in a vertical circle when gravity does work; (3) use centre-to-centre $r=R+h$; (4) use $g=GM/r^2$ at altitude; (5) separate an immediate burn from the final circular state; (6) satellite mass cancels from circular-orbit speed."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson14.sa.html",
+      "sourceSha256": "68a4b9625adadcca1a3c779b24ea2958d03bae5c6e9f451fbddad66def79167d",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-gravitational-potential"
+      ],
+      "teachingReason": "Code radial displacement, signed potential-energy differences and the near-surface approximation. A satellite illustration would not carry the work/sign comparison.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson14.sa.html:460; Physical Interpretation. Source excerpt (punctuation normalised): A 1000 kg satellite is moved quasistatically from $r_1=7.0\\times10^6$ m to $r_2=1.0\\times10^7$ m. Find $\\Delta U$, $W_g$ and $W_{\\rm ext}$."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson15.sa.html",
+      "sourceSha256": "0d89f9ec738bb96bd099ca0a8caa0e86cf3a02d9ba4a67485c504e0136cb005b",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-inverse-square",
+        "m5-gravitational-potential"
+      ],
+      "teachingReason": "Exact potential/field graphs, equipotential rings and a moving test point distinguish potential value from gradient. GPS/GRACE history does not require a new spacecraft painting for this explanation.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson15.sa.html:677; Use the model and separate the quantities. Source excerpt (punctuation normalised): A student looks at a graph of $V$ vs $r$ for a planet and says: \"The curve is steepest near the planet, so the potential is strongest there.\" Explain why this reasoning is incorrect. In your answer, discuss: (a) what the steepness of the $V$ vs $r$ graph represents, (b) how potential itself varies with $r$, and (c) the difference between potential and field strength."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson16.sa.html",
+      "sourceSha256": "042db07a785136be57b3e58e165d27e71c4f98e4a992d449e1da6b100c2de8cc",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-escape"
+      ],
+      "teachingReason": "Code the energy ledger and below/at/above-threshold radial paths, with the infinity limit explicit. A rocket image would imply continuing propulsion absent from this escape model.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson16.sa.html:377; Derive the zero-energy threshold. Source excerpt (punctuation normalised): Escape speed is the zero-total-energy threshold. Below it, the radial launch shown returns; at the threshold, speed approaches zero as distance approaches infinity; above it, the object retains speed at infinity."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson17.sa.html",
+      "sourceSha256": "01842919fdfa6884fe4144bf4197bb53f8d91c2f43873464c113dadcc13b8f8e",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-kepler"
+      ],
+      "teachingReason": "Code focus geometry, equal-area sectors and the period/semimajor-axis relation using a shared orbital clock. Historical instruments and optional transfer missions are not necessary art for the core lesson.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson17.sa.html:366; Represent an orbit with the central body at one focus. Source excerpt (punctuation normalised): Kepler's three laws: focus geometry, a schematic equal-area comparison and the $T^2$–$a^3$ relationship. Sectors are explanatory, not a scale measurement."
+    },
+    {
+      "lessonKey": "physics/year12/module5/lesson18.sa.html",
+      "sourceSha256": "2de2b32d96df9049f7b1b51f7dd5ec7fe1aefe61103c29a1e71b2e181f54e830",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m5-inverse-square",
+        "m5-orbit-energy",
+        "m5-gravitational-potential",
+        "m5-escape",
+        "m5-kepler"
+      ],
+      "teachingReason": "Reuse exact field, potential, energy, escape and Kepler diagrams by current question. A mission scene could obscure the stated ideal-system limits and is not required for consolidation.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson18.sa.html:478; Sprint Cards, click to reveal traps. Source excerpt (punctuation normalised): IQ3 formula set: $F=GMm/r^2$; $|\\vec g|=GM/r^2$ (use $r=R+h$); $U=-GMm/r$; $W_{\\mathrm{ext}}=\\Delta U$ and $W_g=-\\Delta U$; $V=-GM/r$; $g_r=-dV/dr$ (outward positive); $v_e=\\sqrt{2GM/r}$; $T^2=(4\\pi^2/GM)a^3$; $E=-GMm/(2a)$ for a bound Keplerian orbit, with $a=r$ for a circle."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson01.sa.html",
+      "sourceSha256": "c3cdeb0ba635b7fe5b8207a93d8acd8c3fad7c253462e9ab00df683bdc9f7569",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-plates"
+      ],
+      "teachingReason": "Code parallel plates, polarity, uniform field and signed force balance. The Millikan historical hook does not require rebuilding his full apparatus to explain the plate model.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson01.sa.html:232; Practise this lesson. Source excerpt (punctuation normalised): Two large metal plates are connected to a 9 V battery: the top plate is positive, the bottom plate is negative. A tiny positive dust particle is released halfway between them."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson02.sa.html",
+      "sourceSha256": "b8e5d86f3143e7710d89382529af535765f6750d2469d6b16a47663924abe9f7",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-electron-tube"
+      ],
+      "codedVisualIds": [
+        "m6-plates"
+      ],
+      "teachingReason": "A referenced tube cutaway can locate the beam source, deflection region and screen. Code the charge sign, exact plate geometry, trajectory and downstream straight drift, rather than baking them into glass artwork.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson02.sa.html:629; Apply and consolidate. Source excerpt (punctuation normalised): Cathode-ray tubes in old televisions used charged plates to deflect electron beams onto a phosphor screen. Explain, in terms of the physics of this lesson, how adjusting the plate voltage changes where the beam hits the screen. Include reference to $E$, $a$, $y$, and the direction of electron deflection."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson03.sa.html",
+      "sourceSha256": "c438fea372bcb38940f885c14ca0e56d7b115f8e6ea692e18a8e6257c149bbc6",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-potential-energy"
+      ],
+      "teachingReason": "A coded potential ladder and signed work/KE ledger show how electrons/protons respond to the declared start/end potentials. No generic accelerator plate is needed.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson03.sa.html:161; Opening case. Source excerpt (punctuation normalised): Particle accelerators use electric potential differences to transfer energy to charged particles. The signed energy ledger is the key: define the start and end potentials, then use $\\Delta U=q\\Delta V$, $W_{\\mathrm{field}}=-q\\Delta V$ and $\\Delta K=-q\\Delta V$. For an accelerating potential magnitude, the positive gain is $|q\\Delta V|$."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson04.sa.html",
+      "sourceSha256": "51b78f880d43bb99c4e8c1b34f406db6b3cdd9d9901df24238974584f5e9a2d7",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-magnetic-orbit"
+      ],
+      "teachingReason": "Code the moving charge, velocity, magnetic field symbols and perpendicular force together; charge-sign reversal and zero work need exact arrows rather than a hand or magnet painting.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson04.sa.html:248; Practise this lesson. Source excerpt (punctuation normalised): A positively charged particle moves to the right through a region where a magnetic field points into the page."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson05.sa.html",
+      "sourceSha256": "24ff45b4d5154abeb62d80f46730dc81d9d67999c3e006527203146c029f4c0f",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-magnetic-orbit"
+      ],
+      "teachingReason": "Code proton/electron circles and optional helical entry using the same field and physical parameters. Curvature direction and radius/period comparisons require exact model geometry.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson05.sa.html:966; Short Answer, Model Answers. Source excerpt (punctuation normalised): At the start, a proton and an electron entered the same uniform magnetic field at the same perpendicular speed. You were asked which curves more tightly, by what factor, and how their curvature directions compare."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson06.sa.html",
+      "sourceSha256": "08e7d8ebf326861b37d4a0b79749decd0c147d7a4e6adc13e6db27eb40254439",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-selector-analyser"
+      ],
+      "teachingReason": "Code opposing electric/magnetic force vectors and selected versus deflected paths. Do not imply every mass spectrometer contains the illustrated selector.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson06.sa.html:767; Magnetic field lines. Source excerpt (punctuation normalised): A crossed-field selector can supply a beam with a known speed. A later device may then use magnetic curvature to investigate mass-to-charge ratio, but selectors are not present in every mass-spectrometer design."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson07.sa.html",
+      "sourceSha256": "1ba6d04173c8eed041862f0fdd4568e96b53c6dd97da3958a88854b085c109f3",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-parallel-wires",
+        "m6-coil-torque"
+      ],
+      "teachingReason": "Code active wire length, current, field and force directions, including a voice-coil cross-section when selected. Exact interacting regions carry the motor-effect explanation without a generic loudspeaker photo.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson07.sa.html:416; Reason with variables and angle. Source excerpt (punctuation normalised): $F\\propto B$, $I$, active length $l$, and $\\sin\\theta$. For a voice coil, count only wire length inside the radial field; alternating current reverses the axial force and vibrates the cone. Galvanometers and maglev systems are enrichment examples here; coil torque belongs to L09."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson08.sa.html",
+      "sourceSha256": "f6d5798bbb0a4e9546e5d71b2a0d488227622dfc60ab20847c878394676051ff",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-parallel-wires"
+      ],
+      "teachingReason": "Code two wires, field circulation and equal/opposite force arrows; use exact controlled variables and uncertainty graphs for the investigation. A raster wire pair adds no missing mechanism.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson08.sa.html:605; Design and analyse a quantitative investigation. Source excerpt (punctuation normalised): Change one input systematically, for example $I_1$, while holding $I_2$ and $d$ fixed. The dependent variable is $F/l$. Keep active overlap length, alignment and environmental conditions controlled; calculate $I_1I_2/d$ for the graph."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson09.sa.html",
+      "sourceSha256": "511aaa66aed6d07ee4cb4a816dfa98a00e6972e247c67cdcb9d1971db16575ff",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-coil-torque"
+      ],
+      "teachingReason": "Code the rectangular coil and declared coil-plane angle, force pair and torque. The rotating geometry must remain exact; a perspective motor image would not teach the angle convention.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson09.sa.html:246; Practise this lesson. Source excerpt (punctuation normalised): A rectangular loop of wire carrying current is placed in a uniform magnetic field. The loop is free to rotate about a horizontal axis through its centre."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson10.sa.html",
+      "sourceSha256": "736384e8c6b6ea3e705767d723a0ee76e77ccceae7ab2d40f7f297065de8d36f",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-dc-motor",
+        "ph-induction-motor"
+      ],
+      "codedVisualIds": [
+        "m6-coil-torque",
+        "m6-motor-back-emf",
+        "m6-induction-slip"
+      ],
+      "teachingReason": "Referenced machine construction can distinguish powered brushes/commutator from an unpowered cage rotor. Overlay the exact current/field/torque mechanism in code and compare named parts, not decorative outer casings.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson10.sa.html:245; Practise this lesson. Source excerpt (punctuation normalised): A simple brushed DC motor uses a split-ring commutator to reverse current every half-turn. A squirrel-cage induction motor has no powered rotor contacts or commutator."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson11.sa.html",
+      "sourceSha256": "9af961b0a91b756b47dc41ca271356aaeef276f2a6b230af0df2df4a1b3fbe9b",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-ac-generator"
+      ],
+      "codedVisualIds": [
+        "m6-generator-flux"
+      ],
+      "teachingReason": "A selected generator cutaway can connect shaft input, rotating coil and slip-ring pickup. Code ring connections, area normal, flux and emf phase so a photorealistic machine does not substitute for the ideal circuit.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson11.sa.html:388; Model the rotating-coil generator. Source excerpt (punctuation normalised): Figure 1. The angle $\\theta$ is measured between $\\vec B$ and the chosen area normal. Continuous slip rings transfer the naturally alternating terminal emf without rectifying it."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson12.sa.html",
+      "sourceSha256": "623e8c2063b841b9eb270be6360877b3a6a14887bb4c6520cedb4059818a4012",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-generator-flux"
+      ],
+      "teachingReason": "Code the area-normal convention and separate B, area and angle changes. Exact oriented surfaces and linked values explain flux without an apparatus illustration.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson12.sa.html:457; Can Do, Calculate and Predict. Source excerpt (punctuation normalised): For a fixed chosen normal, change $\\Phi=BA\\cos\\theta$ by changing (1) $B$, (2) the area $A$ within the field, or (3) $\\theta$. For a coil, Faraday's law responds to changing linkage $N\\Phi$, not merely to a large constant value."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson13.sa.html",
+      "sourceSha256": "056995e20eb15b27b14bb7b5da4a58fd70d13a6f4a8e720b1003fcd39357c4f9",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-magnet-coil-bench"
+      ],
+      "codedVisualIds": [
+        "m6-generator-flux",
+        "m6-sliding-rod"
+      ],
+      "teachingReason": "A referenced magnet/coil/meter setup can connect physical motion to an observed indication. Keep magnet movement, flux linkage, circuit topology and needle deflection coded and explicitly illustrative.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson13.sa.html:362; Can Do, Calculate and Predict. Source excerpt (punctuation normalised): Hold a bar magnet above a coil connected to a galvanometer and the needle reads zero. Move the magnet into the coil and the needle deflects; stop it and the reading returns to zero. Faster motion gives a larger deflection because it produces a larger rate of change of flux linkage."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson14.sa.html",
+      "sourceSha256": "edfc47dd200faeecad912f07c47ee8929d458308c8929c9586d79fcacb7fa353",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-magnet-coil-bench"
+      ],
+      "codedVisualIds": [
+        "m6-sliding-rod"
+      ],
+      "teachingReason": "Reuse the same bench base for approach, hold and retreat. Coded motion and current/field arrows must show opposition to the change, not generated frozen arrows or three inconsistent apparatus images.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson14.sa.html:348; Can Do, Predict Direction. Source excerpt (punctuation normalised): Push the north pole of a bar magnet toward a coil of wire connected to a galvanometer. As the magnet approaches, you feel resistance, the coil is pushing back. Look at the galvanometer: it deflects, showing a current flowing. That current creates its own magnetic field, and by the right-hand grip rule, this field points away from the approaching north pole, repelling it. Pull t"
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson15.sa.html",
+      "sourceSha256": "83b406d627f4831289898b4a6d547e95d2073a8247be5f879363b251a2c1dc9a",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-transformer-core"
+      ],
+      "codedVisualIds": [
+        "m6-transformer-grid"
+      ],
+      "teachingReason": "An assembled transformer and independent lamination detail can show which physical structures couple flux and interrupt large eddy-current paths. Exact turns ratio, winding paths, flux and power ledger remain coded.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson15.sa.html:790; 4. Hysteresis Losses. Source excerpt (punctuation normalised): The changing flux also induces currents in the conducting core itself, and these eddy currents dissipate energy as heat; laminating the core into thin sheets separated by insulation breaks up the paths available to them. Repeatedly magnetising and demagnetising the core also costs energy, called hysteresis loss, which is reduced by choosing a magnetically soft core material."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson16.sa.html",
+      "sourceSha256": "352d49dc5beecf7f5feb79636134a4e6f4a0b4a00e3bda80b9139052d8959eed",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-induction-motor"
+      ],
+      "codedVisualIds": [
+        "m6-induction-slip"
+      ],
+      "teachingReason": "A referenced cage rotor and stator cutaway can expose conductors and air gap. Code the rotating stator field, induced rotor currents and slip; do not paint a directly powered rotor.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson16.sa.html:249; Practise this lesson. Source excerpt (punctuation normalised): An AC induction motor has a rotor made of metal bars shorted at both ends (a squirrel cage). There are no wires connecting the rotor to a power supply."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson17.sa.html",
+      "sourceSha256": "b666280482f9179bb7ab6b0592004f6ec93f4a529967113c60a9ee36d628c48d",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-dc-motor"
+      ],
+      "codedVisualIds": [
+        "m6-motor-back-emf"
+      ],
+      "teachingReason": "Reuse the selected brushed-motor construction while code links rotor speed, back emf and circuit current. The startup resistor/controller circuit and numerical ledger remain exact coded diagrams.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson17.sa.html:333; Can Do, Analyse Performance. Source excerpt (punctuation normalised): Connect a DC motor to a battery and clip an ammeter in series. At the instant you complete the circuit, before the shaft starts moving, the ammeter reads a large current. Within a fraction of a second, as the motor spins up to speed, the ammeter reading drops dramatically and settles at a much lower steady value. Nothing changed about the circuit resistance; the \"missing\" curre"
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson18.sa.html",
+      "sourceSha256": "53662f48fd0743ead7954723cfc80d30776e3f7cd6854a285945a1795221d4e5",
+      "decision": "reuse-candidate",
+      "familyIds": [
+        "ph-mass-spectrometer-context"
+      ],
+      "codedVisualIds": [
+        "m6-selector-analyser"
+      ],
+      "teachingReason": "An existing Chemistry instrument plate is only a reuse candidate for physical instrument recognition. The lesson must still code ion source, chosen beam-preparation method, magnetic analyser and detector, distinguishing valid designs.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson18.sa.html:571; Magnetic analysis. Source excerpt (punctuation normalised): A complete mass spectrometer needs four functions. The hardware can implement the preparation stage in different ways, so a crossed-field selector is not a universal requirement."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson19.sa.html",
+      "sourceSha256": "09343e0a4d69309a76ce802d2efd4c64338424a4eda33b8b18d784318c3a8f0c",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-eddy-tube"
+      ],
+      "codedVisualIds": [
+        "m6-eddy-brake"
+      ],
+      "teachingReason": "Aligned intact/slotted conductor cutouts can make the interrupted conducting path visible. Code the moving magnet, induced loops and drag; do not generate predicted fall times or treat the plate as experimental evidence.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson19.sa.html:383; Can Do, Analyse and Explain. Source excerpt (punctuation normalised): Eddy currents require a closed conducting loop . A cut, slot or insulating layer interrupts large paths and usually reduces the current; the amount depends on the geometry and impedance."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson20.sa.html",
+      "sourceSha256": "398c60dd57647be6ffd7686ff9ec7b806309b3739a8ae010649dc99d28e88cb4",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m6-transformer-grid"
+      ],
+      "teachingReason": "A coded generator/step-up/line/step-down chain and fixed-power loss ledger carry the system explanation. Icons can remain vector shapes; towers and city scenes are not a teaching requirement.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson20.sa.html:369; Can Do, Calculate and Compare. Source excerpt (punctuation normalised): Transmission loss: $P_\\text{loss} = I^2R$ (W). Since $I = P/V$, doubling voltage halves current and quarters power loss. A representative Australian chain is generation at about 10–25 kV, step-up for transmission, then step-down to nominal 230/400 V low-voltage distribution."
+    },
+    {
+      "lessonKey": "physics/year12/module6/lesson21.sa.html",
+      "sourceSha256": "df3aa5efbc09c472740341796bbd34baf84b29427ba6d4f311e4e9e94be0dad8",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-transformer-core",
+        "ph-induction-motor",
+        "ph-dc-motor",
+        "ph-ac-generator"
+      ],
+      "codedVisualIds": [
+        "m6-sliding-rod",
+        "m6-transformer-grid",
+        "m6-induction-slip"
+      ],
+      "teachingReason": "Only reuse selected machine plates when retrieving a named construction distinction. Keep the energy-transfer chain, signs, angles and calculations coded; no new consolidation raster family.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson21.sa.html:327; Can Do, Synthesise. Source excerpt (punctuation normalised): Follow a single unit of electrical energy from its birth at a generator turbine: the spinning coil's changing flux induces a voltage (Faraday's law, L13); that voltage is stepped up by a transformer (L15); it travels hundreds of kilometres at 330 kV with small I²R losses (L20); a substation steps it down to 11 kV, then to 230 V; it enters your home and drives a motor (L09–L10) "
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson01.sa.html",
+      "sourceSha256": "28881cb201739957186a78903724b2ee23ae40adc2a4abf95f14b0ba2a940e89",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-em-geometry"
+      ],
+      "teachingReason": "Code a log-scaled spectrum and exact wavelength/frequency/energy relations. Source icons can be vector symbols, and no montage is required to explain shared vacuum wave speed.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson01.sa.html:266; Practise this lesson. Source excerpt (punctuation normalised): Consider a radio wave and a gamma ray. A radio wave might have a wavelength of 100 m, while a gamma ray has a wavelength of $10^{-12}$ m."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson02.sa.html",
+      "sourceSha256": "0e45d6ff94139c9f9c53183e29cdfcb1951590f6f45822baf2c5643aae7b0d63",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-em-geometry"
+      ],
+      "teachingReason": "Code perpendicular field/propagation geometry, oscillating-charge source and inverse-square spreading under the specified source model. A phone-tower image would not establish isotropic radiation.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson02.sa.html:366; Explain how EM waves are produced. Source excerpt (punctuation normalised): Switch on a mobile phone and an alternating current drives electrons back and forth along the antenna at hundreds of millions of times per second. Each time those electrons reverse direction they accelerate, and that acceleration sends electromagnetic waves rippling outward through empty space at $c = 3.00 \\times 10^8$ m/s, reaching a base station kilometres away without any ph"
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson03.sa.html",
+      "sourceSha256": "8a4753307dca9df0579d6dbb777f6731903c7c1f70874e623534cb16390916c1",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-optics-bench"
+      ],
+      "codedVisualIds": [
+        "m7-double-slit"
+      ],
+      "teachingReason": "A referenced bench base can locate source, aperture holders and screen. Exact single/double slit geometry, coherent paths, fringes and distances must be coded overlays, not generated optical patterns.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson03.sa.html:276; Practise this lesson. Source excerpt (punctuation normalised): Imagine shining a laser through two very thin parallel slits cut in a piece of cardboard, with a screen placed behind them."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson04.sa.html",
+      "sourceSha256": "c0e0238c1a22bff8c12e572f14a8b6c95599a291e82d17603642dd4e7b32fd1d",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-optics-bench"
+      ],
+      "codedVisualIds": [
+        "m7-diffraction"
+      ],
+      "teachingReason": "Reuse the bench with a coded selected aperture/grating insert. Exact slit width, order angles and intensity patterns carry the change; preserve a common physical context without a new image per numerical setting.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson04.sa.html:356; Spread light through one narrow slit. Source excerpt (punctuation normalised): Shine a laser at a slit barely wider than the beam. Instead of a single sharp dot on the screen, you see a wide central bright band flanked by dimmer side bands, and the narrower you make the slit, the wider the central band grows. This counterintuitive result is single slit diffraction : when monochromatic light of wavelength $\\lambda$ passes through a narrow slit of width $a$"
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson05.sa.html",
+      "sourceSha256": "60abf968c0079227fb403abe4c58a9d6f782f910568ddd3d6fc65d628a1bc104",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-polarisation"
+      ],
+      "teachingReason": "Code filter outlines, labelled transmission axes and controlled rotation/intensity. One reusable vector filter is sufficient; do not generate separate light/dark photographs that imply exact Malus-law measurements.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson05.sa.html:276; Practise this lesson. Source excerpt (punctuation normalised): You hold two pairs of polarising sunglasses in front of you, one behind the other, and look through both at a bright screen."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson09.sa.html",
+      "sourceSha256": "3f660175d3288223d868598098ca915dd30e1e6b34ab652a3ab4c5d60492624b",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-spectral-sources"
+      ],
+      "codedVisualIds": [
+        "m7-spectra-shift"
+      ],
+      "teachingReason": "Purposeful source cutouts distinguish a hot dense filament from excited low-pressure gas. Code spectra/lines, cooler absorbing gas and redshift; the apparatus glow is not measured spectral data.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson09.sa.html:1032; Short Answer, Model Answers. Source excerpt (punctuation normalised): Q4 (a): Continuous spectrum: an incandescent tungsten filament (light bulb), a hot dense solid. Emission spectrum: a discharge tube (hydrogen or neon gas excited by high voltage), a hot thin gas. Absorption spectrum: reflected sunlight viewed through a prism or spectroscope, showing dark Fraunhofer lines from the Sun's cooler outer atmosphere."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson10.sa.html",
+      "sourceSha256": "3c6b866e16c1a9a0da5fd4b379c32c64cd1abbb96412642f19fdcb41efca4bc1",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-em-geometry",
+        "m7-double-slit",
+        "m7-diffraction",
+        "m7-polarisation",
+        "m7-photoelectric"
+      ],
+      "teachingReason": "Reuse the coded interference, diffraction, polarisation and photoelectric comparisons. The synthesis is about what each observation discriminates, not a new decorative montage.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson10.sa.html:282; Practise this lesson. Source excerpt (punctuation normalised): The wave model of light successfully explains interference, diffraction and polarisation. But in 1887, Heinrich Hertz observed that ultraviolet light striking a metal surface ejected electrons, while red light did not, no matter how intense."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson11.sa.html",
+      "sourceSha256": "0e9d0b68b7c4e4e4ca8a1e73b7be111821dda444d25d8474e39c59a101021e54",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-light-clock",
+        "m7-simultaneity"
+      ],
+      "teachingReason": "Code train/platform frames, labelled clocks and light events. Apparent camera perspective or a spaceship painting must not stand in for frame measurements.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson11.sa.html:276; Practise this lesson. Source excerpt (punctuation normalised): You are on a train moving at 100 km/h. You shine a flashlight forward, and the light travels at $c$ relative to you."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson12.sa.html",
+      "sourceSha256": "776eb40440bbcf4e0a09d181ea093ac6f7c0d05609b11c04b9e996baef16f593",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-light-clock"
+      ],
+      "teachingReason": "The exact light-clock triangle and shared event timing carry time dilation. Atomic-clock flight history needs no new aircraft raster and must not be mistaken for a pure special-relativity model.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson12.sa.html:366; Derive time dilation from a light clock. Source excerpt (punctuation normalised): Imagine a clock consisting of two mirrors facing each other, distance $d$ apart. A photon bounces between them. One \"tick\" of the clock is the time for the photon to make a round trip: $\\Delta t_0 = 2d/c$."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson13.sa.html",
+      "sourceSha256": "5430c9475f8f773e9ed668c6ea0533c38cfc689e14ff3f979a28b27c9a323937",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-length"
+      ],
+      "teachingReason": "Code a rod/ship outline, frame-labelled simultaneous endpoint events and lengths. A realistic contracted ship image would risk confusing optical appearance with the measurement procedure.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson13.sa.html:366; Measure a contracted length. Source excerpt (punctuation normalised): A spaceship built to be 100 m long flies past Earth at $0.8c$. Two Earth observers standing 100 m apart simultaneously record the position of the ship's nose and tail as it passes. They find the gap is only 60 m, the ship appears shorter in the direction of its travel. Yet the captain aboard measures a perfectly normal 100 m ship. To understand why both measurements are correct"
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson14.sa.html",
+      "sourceSha256": "0b60787d7bcc23e752898aff5f024528e7864bb362c9d36183ff3f402652ef80",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-energy"
+      ],
+      "teachingReason": "Code energy/momentum versus speed and the selected acceleration ledger. No explosion or collider illustration is required for the mass-energy calculation.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson14.sa.html:396; Set up relativistic energy and momentum. Source excerpt (punctuation normalised): An electron is accelerated through 1 MV. Calculate its kinetic energy in joules and in MeV. Calculate its Lorentz factor and hence its speed. ($m_e = 9.11\\times10^{-31}$ kg)"
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson15.sa.html",
+      "sourceSha256": "cbefb5ed8fb66dd443e3b26acac8fb06d2552c89e290eb35102ce3eaa98529ec",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-simultaneity"
+      ],
+      "teachingReason": "Code train/platform lightning events, propagation and distinct frame clocks; simultaneous emission and simultaneous arrival must remain separate. No scenic train plate is needed.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson15.sa.html:350; See why simultaneity is frame-dependent. Source excerpt (punctuation normalised): Einstein's 1905 paper contains a beautifully simple thought experiment. A train moves at velocity $v$ past a platform. Two lightning bolts strike the platform simultaneously (in the platform frame) at positions equidistant from a platform observer. The light from both bolts reaches the platform observer at the same time, confirming they were simultaneous in that frame."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson16.sa.html",
+      "sourceSha256": "ee650dbe40253bac16a45b31df6585aa1a0a361df1ea623162ea33ec6b660806",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-photoelectric"
+      ],
+      "teachingReason": "Code the illuminated metal surface, threshold/frequency versus intensity cases and exact stopping-potential graph. Lamps can be vector symbols so glow colour never substitutes for a stated frequency.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson16.sa.html:259; Practise this lesson. Source excerpt (punctuation normalised): A dim UV lamp and a bright red lamp both shine on a zinc plate. The UV lamp causes electrons to be emitted; the red lamp does not."
+    },
+    {
+      "lessonKey": "physics/year12/module7/lesson20.sa.html",
+      "sourceSha256": "85434420b9388b352db6e5e8fa6d854c49562833aae95a7ca24dc7f8a20484f9",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m7-double-slit",
+        "m7-photoelectric"
+      ],
+      "teachingReason": "Code cumulative single-event detector hits and the with/without which-path comparison. Never use generated dots as real experimental records; no extra raster is required for the quantum-model synthesis.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module7/lesson20.sa.html:260; Practise this lesson. Source excerpt (punctuation normalised): In the double-slit experiment, electrons are fired one at a time through two slits. A detector is placed at one slit to observe which slit each electron passes through."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson01.sa.html",
+      "sourceSha256": "4116c60419718224ee7790f327a30fcaf15b512be0e7682528b4170a7e3994d2",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-expansion"
+      ],
+      "teachingReason": "Code an expanding coordinate grid/balloon-surface analogy and thermal timeline, with analogy limits. Generated galaxies or an explosion cloud could suggest an external centre and are unnecessary.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson01.sa.html:349; Trace the model's timeline. Source excerpt (punctuation normalised): Work through the stages the model describes, from the earliest extrapolated moments to the first stars, and see why \"expansion of space\" is not \"explosion in space\"."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson02.sa.html",
+      "sourceSha256": "66b3f0995f5c1aac5dd5d873ad7328c8efe70438c8254c93c14e404deb965ddb",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-expansion",
+        "m8-spectra",
+        "m8-nucleosynthesis"
+      ],
+      "teachingReason": "Code the spectral shift, black-body curve and abundance comparisons. Any real CMB map would require attributed data provenance, not a generated scientific sky image; no raster family is allocated here.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson02.sa.html:276; Practise this lesson. Source excerpt (punctuation normalised): Scientists observe that distant galaxies are redshifted, the CMB has a black-body spectrum at 2.7 K, and the universe is about 75% hydrogen and 25% helium by mass."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson03.sa.html",
+      "sourceSha256": "350eddc0e32c2fc388c556c89b0bab38d6869f29c0dd3c1cd5336e010a329b4a",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-expansion",
+        "m8-spectra"
+      ],
+      "teachingReason": "Code line displacement and the velocity-distance graph from the selected values, preserving units and data provenance. A telescope or galaxy photo does not carry the gradient inference.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson03.sa.html:366; Read the Hubble graph. Source excerpt (punctuation normalised): Observe the spectrum of any distant galaxy through a telescope: the hydrogen absorption lines appear at wavelengths slightly longer than the same lines measured in a laboratory. Measure this redshift for many galaxies and compare it to their independently determined distances, and a strikingly simple pattern emerges. In 1929, Edwin Hubble at Mount Wilson Observatory published e"
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson06.sa.html",
+      "sourceSha256": "cf2a1403e34de2b647bcee7a61bcf57585eba0940b559d61d1e700ab707f9653",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-stellar-outcomes"
+      ],
+      "codedVisualIds": [
+        "m8-stellar-evolution",
+        "m8-hr-diagram",
+        "m8-nucleosynthesis"
+      ],
+      "teachingReason": "Reference-informed illustrative remnant views can distinguish expelled envelope/central white dwarf from a massive-star remnant. Keep mass-dependent branching, elapsed times, pressure/fusion arrows and classifications coded.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson06.sa.html:373; Ignite a star and hold it in balance. Source excerpt (punctuation normalised): Solar mass ($0.5 - 8\\,M_{\\odot}$): p-p chain dominant up to about $1.3\\,M_{\\odot}$ (CNO cycle above), main-sequence lifetimes from tens of Gyr down to about 50 Myr, end as white dwarfs."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson07.sa.html",
+      "sourceSha256": "dcc81fe381fc57ca14e7eb9fe34d8d11842f0ebbcc4cfcc71ac9e84f059a107d",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-nucleosynthesis"
+      ],
+      "teachingReason": "Code binding-energy curves, nuclide changes and production-site comparisons. Do not decorate fusion steps with stellar interiors whose layer geometry is not part of the current model.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson07.sa.html:273; Practise this lesson. Source excerpt (punctuation normalised): Consider the abundance of elements in the universe: hydrogen is most common, then helium, then much smaller amounts of everything else."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson08.sa.html",
+      "sourceSha256": "0242670d413f6cca2eb86f56717bcde11430f18815e715ed64b5b35525d34d4c",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-hr-diagram"
+      ],
+      "teachingReason": "Code the reversed-temperature/log-luminosity axes, star positions and selected tracks. Raster star colours/sizes must not substitute for plotted temperature, radius or evolutionary direction.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson08.sa.html:274; Practise this lesson. Source excerpt (punctuation normalised): Imagine plotting every visible star by its surface temperature (hot to cool) on the x-axis and its luminosity (dim to bright) on the y-axis."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson09.sa.html",
+      "sourceSha256": "8c9204993c58f79ba383b7a39356ab3176285682c4d2cdc7a92a639847ca3796",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-spectral-sources"
+      ],
+      "codedVisualIds": [
+        "m8-spectra"
+      ],
+      "teachingReason": "Reuse the filament/gas source contrast only where comparing emission and absorption. Code the stellar atmosphere model and exact line patterns/classification, not generated spectra.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson09.sa.html:366; Read the three types of spectra. Source excerpt (punctuation normalised): Pass sunlight through a glass prism and you see a continuous rainbow. Now look more carefully: running across that rainbow are hundreds of thin dark lines at precise wavelengths, wavelengths where specific elements in the Sun's outer atmosphere have absorbed light. Pass light through a glowing gas of pure hydrogen and you see the opposite: a black background with a few bright l"
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson10.sa.html",
+      "sourceSha256": "8e32208b4f8e050c9d81f3562c0ef767e9f9da1fe483780da2d1ae9cc94524dc",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-stellar-outcomes"
+      ],
+      "codedVisualIds": [
+        "m8-stellar-evolution",
+        "m8-hr-diagram"
+      ],
+      "teachingReason": "Use an explicitly illustrative reference-informed core-collapse remnant context when teaching observed outcomes. Keep the internal collapse sequence, mass limits, pulses and neutrino timeline exact and coded; do not depict one generic remnant for both progenitor types.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson10.sa.html:180; Opening case. Source excerpt (punctuation normalised): On 23 February 1987 at 07:35:35 UT, the Kamiokande-II detector in Gifu Prefecture, Japan detected 11 electron anti-neutrinos in a 13-second burst, about three hours before the optical brightening of SN 1987A in the Large Magellanic Cloud, 168,000 light-years away. The total neutrino energy was ~3 × 10⁴⁶ J released in 10 seconds, equivalent to converting about 0.15 solar masses "
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson11.sa.html",
+      "sourceSha256": "6591d8a12ec01faee9ff2fb923daa8b2f23cd6652916e85be5bdc8b5c0858641",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-scattering-apparatus",
+        "ph-electron-tube"
+      ],
+      "codedVisualIds": [
+        "m8-rutherford"
+      ],
+      "teachingReason": "Referenced apparatus views can distinguish gold-foil scattering from electron-tube evidence. Code particles, foil interaction, detector angles and atomic-scale model separately; Millikan force balance can use coded plates without another apparatus family.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson11.sa.html:375; Read the Geiger-Marsden evidence. Source excerpt (punctuation normalised): In 1909, Hans Geiger and Ernest Marsden, under Rutherford's direction, fired alpha particles (helium nuclei, ${}^4_2\\text{He}$, charge $+2e$, mass $\\approx 4$ u) at a very thin gold foil (~$10^{-7}$ m thick). They observed three key results:"
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson12.sa.html",
+      "sourceSha256": "d94a625920457295b9d4e2cf96410ffb63f6d47d3c16247570df4b189fc82f0e",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-spectral-sources"
+      ],
+      "codedVisualIds": [
+        "m8-quantum-atom"
+      ],
+      "teachingReason": "Reuse a reference-based hydrogen-discharge source context while exact coded energy levels/transitions generate the discrete line explanation. Do not let a painted glow become a fabricated measured Balmer spectrum.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson12.sa.html:366; State Bohr's three postulates. Source excerpt (punctuation normalised): Pass an electric current through a glass tube filled with hydrogen gas at low pressure: it glows with a distinctive pink-red light. Examine that light through a diffraction grating and instead of a rainbow you see four sharp coloured lines, red at 656 nm, blue-green at 486 nm, violet at 434 nm, and deep violet at 410 nm. These four lines are the same every time, in every hydrog"
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson13.sa.html",
+      "sourceSha256": "62a68f24eea0fa549276784868ae3010e4af81615b36572f1a64795443c95bb5",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-quantum-atom"
+      ],
+      "teachingReason": "Code de Broglie standing-wave conditions, probability density and orbit-versus-orbital contrast. Generated clouds could imply arbitrary probability geometry; exact model diagrams are preferable.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson13.sa.html:358; Derive quantisation from matter waves. Source excerpt (punctuation normalised): Use $\\lambda = h/p$ and the standing wave condition $2\\pi r = n\\lambda$ to get Bohr's quantisation rule instead of assuming it."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson14.sa.html",
+      "sourceSha256": "18219e8c4f9f1d5b769f64d59db028c88c38ce4652bd933f5ca55990058af245",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-nucleosynthesis"
+      ],
+      "teachingReason": "Code force-range comparison, nucleon spacing and binding-energy ledger. Exact relationships, not a colourful nucleus raster, carry the contrast between quark binding and residual nucleon interaction.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson14.sa.html:276; Practise this lesson. Source excerpt (punctuation normalised): The nucleus contains protons that repel each other electrically, yet most nuclei are stable."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson15.sa.html",
+      "sourceSha256": "f17baa97b8d2ee36d7e71dcaa1f9c940d0e225914277466a5f43f7c48563fd63",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-decay-population"
+      ],
+      "teachingReason": "Code stochastic individual decays, population expectations, balanced equations and count-rate graph. A Geiger-counter icon can remain vector; no generated clicks/traces are evidence.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson15.sa.html:370; Compare alpha, beta and gamma decay. Source excerpt (punctuation normalised): Place a small sample of radium-226 in front of a Geiger counter. The counter clicks spontaneously, at random intervals, yet if you measure the total count rate for 10 minutes and again in 100 years, the average rate will decrease by exactly the factor predicted by t₁/₂ = 1,600 years, the value Marie Curie first determined in Paris in 1898. This spontaneous, probabilistic, yet s"
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson16.sa.html",
+      "sourceSha256": "0907dc1783c61b1355784fbb85d9c3e35063b593b745498386f99a8e42ef3eda",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-particle-detectors"
+      ],
+      "codedVisualIds": [
+        "m8-particles"
+      ],
+      "teachingReason": "A referenced cloud-chamber apparatus cutout may show where track evidence is observed. Tracks, field direction and charge/momentum inference remain coded and explicitly synthetic, with real historical evidence separately sourced if selected.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson16.sa.html:180; Opening case. Source excerpt (punctuation normalised): In 1932, Carl Anderson at Caltech photographed cosmic ray tracks in a Wilson cloud chamber in a 1.5 T magnetic field. He observed a track with electron-mass curvature but opposite (positive) charge, the antielectron (positron) that Paul Dirac had predicted from his relativistic quantum equation in 1928. Anderson was awarded the Nobel Prize in Physics in 1936. When a positron me"
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson17.sa.html",
+      "sourceSha256": "9b2f7109023ee4217ae4853c676e16b2361db0afdb2a8fae9ac25faba012a824",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-particles"
+      ],
+      "teachingReason": "Code particle classification and conserved charge/baryon/lepton ledgers. Avoid painting quarks as directly observed coloured marbles or using a generated particle table.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson17.sa.html:288; Practise this lesson. Source excerpt (punctuation normalised): Warm-up: A proton has charge $+1$. Its quark composition $uud$ gives charge:"
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson18.sa.html",
+      "sourceSha256": "979d52d8884ab5f51dc2599aaaa00b6bbc737b4f2fcd6fbab8da3927861fdf0e",
+      "decision": "coded-only",
+      "familyIds": [],
+      "codedVisualIds": [
+        "m8-particles"
+      ],
+      "teachingReason": "Code force/carrier/range comparisons and the specific interactions. Raster embodiments add no mechanism and could confuse residual nuclear force with fundamental quark interaction.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson18.sa.html:260; Practise this lesson. Source excerpt (punctuation normalised): Consider the four forces: gravity holds you to Earth, electromagnetism binds atoms, the strong force holds nuclei together, and the weak force governs beta decay."
+    },
+    {
+      "lessonKey": "physics/year12/module8/lesson19.sa.html",
+      "sourceSha256": "8449bbae72ba25f4d301851cfd6740cb1fdbd52e7e539686844ba7ebe0332f7a",
+      "decision": "raster-support",
+      "familyIds": [
+        "ph-particle-detectors"
+      ],
+      "codedVisualIds": [
+        "m8-accelerator"
+      ],
+      "teachingReason": "A reference-based detector cutaway can locate physical tracking/calorimeter/muon layers. Keep accelerator paths, collision products and detector signatures coded and mark any synthetic event display; no generated collision image is evidence.",
+      "sourceEvidence": "C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson19.sa.html:441; Read the detector layers. Source excerpt (punctuation normalised): We just saw that synchrotrons achieve massive centre-of-mass energies through repeated acceleration over many laps. That raises a question: once a collision happens and produces exotic particles that live for 10⁻²² s, how do we actually detect them? This card answers it → onion-layered detectors, tracking, EM calorimeter, hadronic calorimeter, muon detectors, each capture diffe"
+    }
+  ],
+  "families": [
+    {
+      "id": "ph-ramp-apparatus",
+      "title": "Horizontal ramp and measurement apparatus",
+      "purpose": "Locate the real ramp, support, horizontal exit and first-contact measurement region before coding the investigation.",
+      "lessonKeys": [
+        "physics/year12/module5/lesson05.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Reference-based painted apparatus cutout; exact mechanism and state changes stay coded.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "ramp-base",
+          "description": "Stationary ramp/stand assembly without a launched ball.",
+          "prompt": "Landscape 3:2 near-side three-quarter view of the selected rolling-ball ramp, clamp and stable retort support. Show enough bench-edge context to locate the horizontal exit; reserve transparent space below/beyond it for a coded landing plane and ball. The exit tangent must be horizontal. The clamp supports rather than intersects the track. Match the chosen ramp/manual, not a spring launcher. No painted ball, release marker or landing marks. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, with a complete silhouette and at least 10 percent clear margins. Match the existing light explainer with clear material edges and restrained internal shading; no cast ground shadow, people, brands, text, formulas, arrows, field lines, trajectories, numerical readings or baked scales. Keep reasoning-critical circuit topology and measured geometry coded. Follow the selected reference; do not invent hidden construction. This is illustration, not experimental evidence.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "One base only. Translate the whole apparatus relative to a coded landing plane for height changes. Keep track/release geometry fixed; matching artwork alone does not prove constant launch speed.",
+      "codedOverlays": [
+        "Ball/release position and horizontal exit tangent",
+        "Vertical drop/range brackets, plumb reference and first-contact marker",
+        "Repeated measured points, uncertainty and transformed graph"
+      ],
+      "acceptanceChecks": [
+        "Exit and landing region remain unobstructed.",
+        "Height change preserves the selected launch-speed control.",
+        "No fabricated experimental scatter is baked in.",
+        "Record actual native dimensions and alpha bounds; inspect edge completeness and scene-size desktop/phone fit. Generation does not clear teaching, science or playback gates."
+      ],
+      "dependencies": [
+        "Select actual ramp/stand reference and lesson scene.",
+        "Confirm how launch speed is controlled and checked at each height."
+      ],
+      "referenceNeeds": [
+        "Module5 lesson05 rolling-ramp setup is the target.",
+        "Obtain actual ramp/support photograph and manufacturer manual. The located PASCO spring-launcher manual https://cdn.pasco.com/product_document/Projectile-Launcher-Manual-ME-6801.pdf is an alternative-device reference, not authority for this rolling ramp."
+      ]
+    },
+    {
+      "id": "ph-torsion-balance",
+      "title": "Laboratory torsion balance",
+      "purpose": "Show how a very small gravitational attraction can produce a measurable twist, if this evidence scene is selected.",
+      "lessonKeys": [
+        "physics/year12/module5/lesson10.sa.html"
+      ],
+      "priority": "P2",
+      "readiness": "needs-reference",
+      "treatment": "Reference-based painted apparatus cutout; exact mechanism and state changes stay coded.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "balance-base",
+          "description": "Complete selected balance with suspension and attracting masses.",
+          "prompt": "Landscape 4:3 three-quarter view of one selected Cavendish-type balance. Make the vertical suspension filament, horizontal suspended rod with small end masses and separate larger attracting masses identifiable through the reference-prescribed housing/cutaway. Preserve the mass pairs, noncontact gaps and suspension connection. Show a neutral stationary configuration; no twist angle or invented laser readout. Do not combine historical and modern hardware. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, with a complete silhouette and at least 10 percent clear margins. Match the existing light explainer with clear material edges and restrained internal shading; no cast ground shadow, people, brands, text, formulas, arrows, field lines, trajectories, numerical readings or baked scales. Keep reasoning-critical circuit topology and measured geometry coded. Follow the selected reference; do not invent hidden construction. This is illustration, not experimental evidence.",
+          "derivedFromStateId": null
+        },
+        {
+          "id": "balance-detail",
+          "description": "Independent magnified suspension detail.",
+          "prompt": "Portrait 4:5 close view of the same selected balance's suspension attachment and upper rod connection, following a detailed reference. Show how the filament physically supports the rod while permitting torsion, with clean space for coded leaders. Omit invented hidden parts and angle readings. This is a new camera view, not a registered animated state. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, with a complete silhouette and at least 10 percent clear margins. Match the existing light explainer with clear material edges and restrained internal shading; no cast ground shadow, people, brands, text, formulas, arrows, field lines, trajectories, numerical readings or baked scales. Keep reasoning-critical circuit topology and measured geometry coded. Follow the selected reference; do not invent hidden construction. This is illustration, not experimental evidence.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "Independent whole/detail views. No aligned crossfade or twist measurement from the plates. Any movement needs isolated verified parts or an exact coded schematic.",
+      "codedOverlays": [
+        "Force arrows, small angular displacement and restoring-torque comparison",
+        "Distance and readout conventions only where present in the selected instrument"
+      ],
+      "acceptanceChecks": [
+        "Suspension supports the rod; attracting masses remain separate.",
+        "No ordinary force meter is implied to resolve the tiny attraction.",
+        "Record actual native dimensions and alpha bounds; inspect edge completeness and scene-size desktop/phone fit. Generation does not clear teaching, science or playback gates."
+      ],
+      "dependencies": [
+        "Optional selected-scene decision before commissioning.",
+        "Choose historical reconstruction or modern demonstration, then obtain its actual geometry."
+      ],
+      "referenceNeeds": [
+        "Museum object reference located: https://collection.sciencemuseumgroup.org.uk/objects/co54064/model-of-henry-cavendishs-torsion-balance-gravitational-apparatus-1798 . Exact reference images still need inspection.",
+        "Modern candidate: https://www.pasco.com/resources/lab-experiments/1506 . Do not mix designs."
+      ]
+    },
+    {
+      "id": "ph-electron-tube",
+      "title": "Electrostatic electron-deflection teaching tube",
+      "purpose": "Locate the beam source, plate region and screen while exact charged-particle motion is drawn in code.",
+      "lessonKeys": [
+        "physics/year12/module6/lesson02.sa.html",
+        "physics/year12/module8/lesson11.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Reference-based painted apparatus cutout; exact mechanism and state changes stay coded.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "tube-base",
+          "description": "Stationary teaching tube with visible source, plates and screen.",
+          "prompt": "Wide landscape 2:1 near-side view along a selected electrostatic-deflection teaching tube. Show the complete glass envelope, support, source end, finite plate region and downstream screen from an actual manufacturer/laboratory reference. Keep glass glare away from the gap. Leave beam and screen unlit for coded overlays, with a distinct drift region after the plates. Do not invent electrode count or wire routing, or substitute a television magnetic-deflection yoke for plates. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, with a complete silhouette and at least 10 percent clear margins. Match the existing light explainer with clear material edges and restrained internal shading; no cast ground shadow, people, brands, text, formulas, arrows, field lines, trajectories, numerical readings or baked scales. Keep reasoning-critical circuit topology and measured geometry coded. Follow the selected reference; do not invent hidden construction. This is illustration, not experimental evidence.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "One physical base for charge/voltage cases. Beam, spot and trajectories are coded. Unrelated historical and modern tube images are not aligned states.",
+      "codedOverlays": [
+        "Exact electrode/terminal outlines and separate circuit",
+        "Charge sign, field/force arrows, in-plate trajectory and straight downstream drift",
+        "Screen spot and electric-versus-magnetic device distinction"
+      ],
+      "acceptanceChecks": [
+        "Selected reference really supports electrostatic deflection.",
+        "Source, gap and screen are not hidden by glass treatment.",
+        "No glowing painted beam substitutes for computed geometry.",
+        "Record actual native dimensions and alpha bounds; inspect edge completeness and scene-size desktop/phone fit. Generation does not clear teaching, science or playback gates."
+      ],
+      "dependencies": [
+        "Select specific tube/manual and verify its electrode layout.",
+        "Do not reproduce module6 lesson02's old-television plate claim as a general hardware claim; use a verified electrostatic teaching tube."
+      ],
+      "referenceNeeds": [
+        "Primary laboratory distinction inspected: https://physics.purdue.edu/demos/display_page.php?item=6B-07 . It distinguishes electrostatic teaching deflection from commercial CRT magnetic deflection.",
+        "A specific apparatus photograph/manual remains required.",
+        "A modern teaching tube is illustrative, not a reconstruction of Thomson's actual apparatus."
+      ]
+    },
+    {
+      "id": "ph-dc-motor",
+      "title": "Brushed DC motor construction",
+      "purpose": "Identify fixed field, rotor, shaft and brush/contact function before exact switching and back-emf reasoning.",
+      "lessonKeys": [
+        "physics/year12/module6/lesson10.sa.html",
+        "physics/year12/module6/lesson17.sa.html",
+        "physics/year12/module6/lesson21.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Reference-based apparatus cutout; static construction separated from exact coded motion.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "dc-base",
+          "description": "Stationary motor cutaway with unobstructed contact region.",
+          "prompt": "Landscape 3:2 three-quarter cutaway of one selected simple brushed DC teaching motor. Show complete frame, bearings, shaft, armature region and fixed field structure as in the reference. Expose the brush/contact region at useful size; omit the precision commutator/coil insert if exact connectivity will instead be coded. Keep every insert interface visible. Do not substitute continuous slip rings for a split commutator or depict an external lead mechanically tied to a rotating rotor. No current, powered glow or painted angular state. The fixed housing is not a flattened rotor to spin. Output a high-resolution painted-editorial cutout on a genuinely transparent background, complete silhouette and at least 10 percent clear margins. Use clear material edges and restrained internal shading matching the light explainer. No cast ground shadow, text, formulas, labels, arrows, field lines, current paths, numerical readings, graphs, brands or people. Reasoning-critical connections and state changes stay coded. Follow the selected reference and do not invent hidden parts; this is illustration, not evidence.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "One base for overview/startup/running. Keep static casing distinct from coded rotating coil/contact geometry; do not rotate the whole cutout.",
+      "codedOverlays": [
+        "Exact split-segment/brush/coil connections and conventional current",
+        "Declared angle convention, real force pair and torque",
+        "Speed/back-emf/current ledger and separate starter/controller circuit"
+      ],
+      "acceptanceChecks": [
+        "Contacts match the selected brushed design and segments are not shorted.",
+        "Fixed stator and rotating rotor remain identifiable.",
+        "Exact switching is checked in code rather than inferred from perspective artwork.",
+        "Record native dimensions/alpha bounds and inspect complete edges at actual desktop/phone scene size. Subject and playback review remain pending."
+      ],
+      "dependencies": [
+        "Select an actual simple teaching motor and construction manual.",
+        "Decide whether contacts are reference-faithful raster context or entirely replaced by a coded insert."
+      ],
+      "referenceNeeds": [
+        "Manufacturer/laboratory cutaway showing actual brush and split-contact connections required.",
+        "Module6 lesson10 and lesson17 are teaching targets, not sufficient construction references."
+      ]
+    },
+    {
+      "id": "ph-induction-motor",
+      "title": "Squirrel-cage induction motor and rotor",
+      "purpose": "Expose unpowered cage conductors and the stator/rotor air gap, distinguishing induction from brush-fed machines.",
+      "lessonKeys": [
+        "physics/year12/module6/lesson10.sa.html",
+        "physics/year12/module6/lesson16.sa.html",
+        "physics/year12/module6/lesson21.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Reference-based apparatus cutout; static construction separated from exact coded motion.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "induction-base",
+          "description": "Selected stator/rotor cutaway.",
+          "prompt": "Landscape 3:2 three-quarter cutaway of one selected squirrel-cage induction teaching motor. Follow the reference for stationary stator windings, inner rotor, shaft and air gap. Keep fixed and rotating parts separate. Neutral stationary assembly, no powered rotor brush, commutator, supply contacts or painted field. Reserve clear margins for part callouts and do not depict the stator itself rotating. Output a high-resolution painted-editorial cutout on a genuinely transparent background, complete silhouette and at least 10 percent clear margins. Use clear material edges and restrained internal shading matching the light explainer. No cast ground shadow, text, formulas, labels, arrows, field lines, current paths, numerical readings, graphs, brands or people. Reasoning-critical connections and state changes stay coded. Follow the selected reference and do not invent hidden parts; this is illustration, not evidence.",
+          "derivedFromStateId": null
+        },
+        {
+          "id": "cage-detail",
+          "description": "Independent cage-conductor detail with both end rings.",
+          "prompt": "Landscape 3:2 isolated three-quarter view of the chosen rotor's cage conductors, showing bars connected to both end rings, complete shaft and clear margins. Follow the chosen reference for bar skew, core and cutaway. Remove core material only as the reference prescribes. No slip contacts, external power leads or field/current arrows. This is an independent close-up camera, not an automatically aligned assembly state. Output a high-resolution painted-editorial cutout on a genuinely transparent background, complete silhouette and at least 10 percent clear margins. Use clear material edges and restrained internal shading matching the light explainer. No cast ground shadow, text, formulas, labels, arrows, field lines, current paths, numerical readings, graphs, brands or people. Reasoning-critical connections and state changes stay coded. Follow the selected reference and do not invent hidden parts; this is illustration, not evidence.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "Independent assembly/detail views. No registered removal/crossfade claim. Any later assembly transition requires registered parts. Reuse static views while coded field, current and rotor-speed states change.",
+      "codedOverlays": [
+        "Stator/rotor/air-gap anchors",
+        "Exact rotating field phase, induced cage currents and rotor state",
+        "Separate synchronous-field and rotor speeds showing slip",
+        "No-powered-rotor-contact comparison"
+      ],
+      "acceptanceChecks": [
+        "Both rings connect the chosen bars.",
+        "No brush/commutator on a squirrel-cage rotor.",
+        "Coded field rotation does not imply physical stator rotation.",
+        "Record native dimensions/alpha bounds and inspect complete edges at actual desktop/phone scene size. Subject and playback review remain pending."
+      ],
+      "dependencies": [
+        "Choose an actual machine and cutaway level before generation; exact phase winding arrangement is unselected.",
+        "Do not mix construction from different motor types."
+      ],
+      "referenceNeeds": [
+        "Generic bars/end-ring structure checked in official DOE material: https://archives.standards.doxcelerate.com/documents/doe-hdbk-1011-4-92-electrical-science-volume-4-of-4 .",
+        "Manufacturer reference located: https://www.nidec.com/en/products/small-precision-motors/technology/motor/glossary/item/squirrel_cage_rotor/ . Inspect selected figures for exact apparatus."
+      ]
+    },
+    {
+      "id": "ph-ac-generator",
+      "title": "Rotating-coil AC generator apparatus",
+      "purpose": "Locate mechanical input and pickup hardware while exact code explains changing linkage and alternating output.",
+      "lessonKeys": [
+        "physics/year12/module6/lesson11.sa.html",
+        "physics/year12/module6/lesson21.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Reference-based apparatus cutout; static construction separated from exact coded motion.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "generator-base",
+          "description": "Selected simple AC teaching generator context.",
+          "prompt": "Landscape 3:2 three-quarter cutaway of a selected simple two-pole rotating-coil AC teaching generator. Show full support, fixed field source, shaft and mechanical drive as in the reference, with pickup region exposed for an exact coded insert. The selected design uses continuous slip rings, not a split-ring rectifying commutator. Keep terminals visible, no invented hidden connection, permanently glowing lamp, output trace or baked coil-angle value. Reserve space beside it for an exact coded side schematic. Output a high-resolution painted-editorial cutout on a genuinely transparent background, complete silhouette and at least 10 percent clear margins. Use clear material edges and restrained internal shading matching the light explainer. No cast ground shadow, text, formulas, labels, arrows, field lines, current paths, numerical readings, graphs, brands or people. Reasoning-critical connections and state changes stay coded. Follow the selected reference and do not invent hidden parts; this is illustration, not evidence.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "One context plate. Coil angle/normal, flux and emf use one coded physical clock. The full raster does not rotate; no unrelated image pair is treated as aligned.",
+      "codedOverlays": [
+        "Exact separate continuous rings and contacts",
+        "Model-based coil rotation, selected area normal and field",
+        "Signed linkage and phase-linked emf curve",
+        "Mechanical/electrical energy arrows"
+      ],
+      "acceptanceChecks": [
+        "Rings are distinct from a DC split commutator.",
+        "Fixed field structure stays fixed.",
+        "The simple two-pole model is not claimed for every commercial generator.",
+        "Record native dimensions/alpha bounds and inspect complete edges at actual desktop/phone scene size. Subject and playback review remain pending."
+      ],
+      "dependencies": [
+        "Select specific teaching generator reference.",
+        "Separate fixed context from model-based moving parts/contacts."
+      ],
+      "referenceNeeds": [
+        "Manufacturer or primary laboratory diagram of selected slip-ring generator required.",
+        "Module6 lesson11 Figure 1 and normal-angle explanation specify teaching use, not a complete real apparatus reference."
+      ]
+    },
+    {
+      "id": "ph-magnet-coil-bench",
+      "title": "Magnet, stationary coil and current indicator",
+      "purpose": "Connect motion relative to a real coil with an indicator response while exact wiring and flux reasoning remain coded.",
+      "lessonKeys": [
+        "physics/year12/module6/lesson13.sa.html",
+        "physics/year12/module6/lesson14.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Reference-based apparatus cutout; static construction separated from exact coded motion.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "coil-meter-base",
+          "description": "Fixed coil and blank-face centre-zero indicator.",
+          "prompt": "Landscape 5:3 near-side view of selected stationary teaching coil on a nonconducting support beside a centre-zero current indicator. Show open coil bore and stable support. Leave meter face blank for coded scale/needle. Keep terminal faces exposed; leave reasoning-critical interconnecting wire routes for code. Reserve an axial approach corridor chosen from the actual demonstration reference. No magnet in this base, no field lines, induced poles, pointer deflection or glowing coil. Output a high-resolution painted-editorial cutout on a genuinely transparent background, complete silhouette and at least 10 percent clear margins. Use clear material edges and restrained internal shading matching the light explainer. No cast ground shadow, text, formulas, labels, arrows, field lines, current paths, numerical readings, graphs, brands or people. Reasoning-critical connections and state changes stay coded. Follow the selected reference and do not invent hidden parts; this is illustration, not evidence.",
+          "derivedFromStateId": null
+        },
+        {
+          "id": "bar-magnet",
+          "description": "Separate magnet component for motion.",
+          "prompt": "Portrait 2:3 isolated complete bar magnet matching the selected bench reference and the coil-base camera so it can move along the bore axis without a perspective jump. Give end surfaces distinguishable material/colour cues, but leave N/S text to code. Preserve full body, margins and material treatment; no background, bench or shadow. This is a separate component, not an edited coil state. Output a high-resolution painted-editorial cutout on a genuinely transparent background, complete silhouette and at least 10 percent clear margins. Use clear material edges and restrained internal shading matching the light explainer. No cast ground shadow, text, formulas, labels, arrows, field lines, current paths, numerical readings, graphs, brands or people. Reasoning-critical connections and state changes stay coded. Follow the selected reference and do not invent hidden parts; this is illustration, not evidence.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "Composited components, not a controlled edit pair. Register magnet endpoints, travel axis and coil centre after inspection. Reuse for approach, stop and withdrawal instead of generating separate moving states.",
+      "codedOverlays": [
+        "Exact closed external circuit, polarity and meter needle/zero",
+        "Coded N/S labels and magnet position/velocity",
+        "Signed flux change, induced current and opposing-effect arrows",
+        "Illustrative versus measured response statement"
+      ],
+      "acceptanceChecks": [
+        "Travel corridor avoids the stand.",
+        "Meter direction follows the actual coded circuit/polarity.",
+        "Stationary magnet does not imply a sustained induced current.",
+        "Record native dimensions/alpha bounds and inspect complete edges at actual desktop/phone scene size. Subject and playback review remain pending."
+      ],
+      "dependencies": [
+        "Select actual coil/meter layout and camera.",
+        "Verify terminal connections before registering overlays; historical ring and bar-magnet demonstrations are separate devices."
+      ],
+      "referenceNeeds": [
+        "Primary collection principle checked: https://www.rigb.org/explore-science/explore/collection/michael-faradays-generator . Contemporary bench geometry still requires a reference.",
+        "If historical ring is selected, use https://www.rigb.org/explore-science/explore/collection/michael-faradays-ring-coil-apparatus and revise this plan rather than combining apparatus."
+      ]
+    },
+    {
+      "id": "ph-transformer-core",
+      "title": "Transformer construction and insulated laminations",
+      "purpose": "Locate primary/secondary and core, then show the physical interfaces that interrupt large conducting paths.",
+      "lessonKeys": [
+        "physics/year12/module6/lesson15.sa.html",
+        "physics/year12/module6/lesson21.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Painted-editorial material context with exact coded mechanism.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "transformer-base",
+          "description": "Complete selected teaching transformer.",
+          "prompt": "Landscape 3:2 three-quarter view of one selected laminated-core teaching transformer. Show complete support, closed core shape and two physically distinct winding regions/terminals according to an actual construction reference. Keep the core/winding relationship clear and terminal interfaces visible. Exact turn counts and the external primary/secondary circuits will be coded, so do not paint countable turns as numerical evidence. No AC glow, flux lines, values or fake labels. Preserve actual winding insulation and core joints. High-resolution painted-editorial cutout, genuinely transparent background, complete silhouette, at least 10 percent margins, restrained material shading and clear edges matching the light explainer. No cast ground shadow, brands, people, scientific text, labels, scales, numbers, circuit topology, arrows, field lines, measurement results or graphs. Use coded overlays for exact relationships. Preserve specified physical invariants; do not invent hidden parts. This is an illustrative plate.",
+          "derivedFromStateId": null
+        },
+        {
+          "id": "lamination-detail",
+          "description": "Independent close-up material detail.",
+          "prompt": "Landscape 4:3 magnified independent close view of the same selected core's laminated material, with thin metal sheets separated by visible insulating interfaces, following a macro/reference section. Show continuous conducting material within a sheet and electrical separation between sheets. Maintain a plausible material surface and leave margins for coded leaders. Do not imply air gaps at every interface or draw an unexplained electrical connection between sheets. No current loops or heat colours. This is a detail view, not a registered assembly-removal image. High-resolution painted-editorial cutout, genuinely transparent background, complete silhouette, at least 10 percent margins, restrained material shading and clear edges matching the light explainer. No cast ground shadow, brands, people, scientific text, labels, scales, numbers, circuit topology, arrows, field lines, measurement results or graphs. Use coded overlays for exact relationships. Preserve specified physical invariants; do not invent hidden parts. This is an illustrative plate.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "Independent assembly/detail cameras. No in-place crossfade. Exact sheet orientation and coil/core anchors are checked against the selected reference before connecting the views.",
+      "codedOverlays": [
+        "Primary/secondary/core labels and exact external circuit",
+        "Declared turns ratio, voltage/current/power ledger",
+        "Changing flux and exact illustrative large/small eddy-current paths",
+        "Insulating-interface callouts and loss mechanisms"
+      ],
+      "acceptanceChecks": [
+        "Windings are distinct, not electrically merged.",
+        "Insulation interrupts large inter-sheet conducting paths, not magnetic linkage.",
+        "Generated winding texture is never counted to establish turns ratio.",
+        "Record native dimensions, alpha bounds and exact scene-size desktop/phone fit; subject and playback approval remain pending."
+      ],
+      "dependencies": [
+        "Choose actual transformer and lamination reference.",
+        "Confirm the exact detail orientation and which loss mechanism the scene teaches."
+      ],
+      "referenceNeeds": [
+        "Module6 lesson15 source describes insulating layers interrupting eddy-current paths; exact construction still requires manufacturer/primary laboratory cutaway.",
+        "Do not use Faraday's solid historical ring as an unmarked modern laminated-core construction reference."
+      ]
+    },
+    {
+      "id": "ph-eddy-tube",
+      "title": "Intact and longitudinally slotted copper tube",
+      "purpose": "Make interruption of the circumferential conducting path visible for an eddy-current comparison.",
+      "lessonKeys": [
+        "physics/year12/module6/lesson19.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "prompt-ready-candidate",
+      "treatment": "Painted-editorial material context with exact coded mechanism.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "tube-intact",
+          "description": "Base: complete opaque copper tube.",
+          "prompt": "Portrait 2:3 isolated straight hollow copper tube, complete top and bottom rims and open bore. Near-side three-quarter view looking slightly into the top, with enough perspective to see wall thickness. Show a continuous unbroken conducting wall around the full circumference. Neutral clean copper, no magnet, slots, cutaway, fake transparent wall or induced current. Centre it with at least 10 percent margins. No apparatus-specific dimensions are implied. High-resolution painted-editorial cutout, genuinely transparent background, complete silhouette, at least 10 percent margins, restrained material shading and clear edges matching the light explainer. No cast ground shadow, brands, people, scientific text, labels, scales, numbers, circuit topology, arrows, field lines, measurement results or graphs. Use coded overlays for exact relationships. Preserve specified physical invariants; do not invent hidden parts. This is an illustrative plate.",
+          "derivedFromStateId": null
+        },
+        {
+          "id": "tube-slotted",
+          "description": "Controlled edit: same tube with one continuous axial slot.",
+          "prompt": "EDIT the approved tube-intact base. Change only one narrow straight longitudinal slot through the near-side wall, from the top rim all the way to the bottom rim. Make the separated metal edges and continuous gap plainly visible, so it breaks every circumferential metal path across that slot. Keep camera, canvas, tube position, scale, outer silhouette except the removed strip, bore, wall thickness, lighting, copper texture and unchanged structures fixed. Do not add a bridge, partial cut, extra slots, magnet, current loop, arrows or transparent wall. Preserve alpha/background and margins exactly. High-resolution painted-editorial cutout, genuinely transparent background, complete silhouette, at least 10 percent margins, restrained material shading and clear edges matching the light explainer. No cast ground shadow, brands, people, scientific text, labels, scales, numbers, circuit topology, arrows, field lines, measurement results or graphs. Use coded overlays for exact relationships. Preserve specified physical invariants; do not invent hidden parts. This is an illustrative plate.",
+          "derivedFromStateId": "tube-intact"
+        }
+      ],
+      "alignment": "Generate intact base first, inspect it, then edit that exact image for the slot. Camera/framing/shared wall anchors are invariant. Verify registered rim/shaft-edge anchors and unchanged-pixel regions after editing; common canvas alone is not alignment proof.",
+      "codedOverlays": [
+        "Coded magnet before/after tube and separate explicitly schematic internal position",
+        "Illustrative eddy-current loops and interruption at slot",
+        "Motion/drag comparison with selected model assumptions; no promised measured timing"
+      ],
+      "acceptanceChecks": [
+        "Slot reaches both rims and penetrates wall with no hidden bridge.",
+        "Intact tube is not secretly cut open for interior visibility.",
+        "Do not claim all local eddy currents vanish in the slotted tube.",
+        "No magnet is visibly drawn through opaque metal as if the wall were transparent.",
+        "Record native dimensions, alpha bounds and exact scene-size desktop/phone fit; subject and playback approval remain pending."
+      ],
+      "dependencies": [
+        "Choose the exact comparison scene and magnet/tube geometry before numerical motion.",
+        "Review native-scale slot visibility and registered pair before implementation."
+      ],
+      "referenceNeeds": [
+        "Generic conductor-shape prompt is specified; no historical apparatus identity is claimed.",
+        "Source module6 lesson19 says slots interrupt large paths while smaller loops can persist. Any actual fall-time experiment needs its own apparatus/reference and measurements."
+      ]
+    },
+    {
+      "id": "ph-optics-bench",
+      "title": "Optical source, aperture holders and screen context",
+      "purpose": "Help students locate real experiment parts before exact paths and intensity patterns are shown.",
+      "lessonKeys": [
+        "physics/year12/module7/lesson03.sa.html",
+        "physics/year12/module7/lesson04.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Painted-editorial material context with exact coded mechanism.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "bench-base",
+          "description": "Static reference-based optical bench without light paths or patterns.",
+          "prompt": "Wide landscape 2:1 near-side three-quarter view of one selected school optical bench for interference/diffraction. Show a source holder, aperture/grating holder and downstream screen on stable supports as in a real reference. Make the aperture-holder face and screen surface clean blank insertion regions for coded slits and computed fringes. Include only physically necessary supporting rail/bench context; no laser beam, rays, rainbow, fringe pattern, baked ruler or microscopic slit geometry. Keep the source-to-aperture-to-screen order and propagation corridor unobstructed. Do not mix a historical Young arrangement with a modern laser bench. High-resolution painted-editorial cutout, genuinely transparent background, complete silhouette, at least 10 percent margins, restrained material shading and clear edges matching the light explainer. No cast ground shadow, brands, people, scientific text, labels, scales, numbers, circuit topology, arrows, field lines, measurement results or graphs. Use coded overlays for exact relationships. Preserve specified physical invariants; do not invent hidden parts. This is an illustrative plate.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "One reusable static context base. Select single slit, double slit or grating through coded registered inserts, not independent apparatus images. Screen/rays are exact schematic overlays or a separate calibrated drawing; perspective artwork is not measured geometry.",
+      "codedOverlays": [
+        "Exact aperture/slit separation and width insert",
+        "Path difference, ray directions and source coherence conditions",
+        "Computed fringe/intensity pattern and screen distance",
+        "Order labels and grating equation in separate working"
+      ],
+      "acceptanceChecks": [
+        "No painted pattern contaminates the answer-free prompt.",
+        "Slit dimensions and path differences are determined by code, not raster texture.",
+        "Device context does not imply all double-slit setups require a laser or the identical source conditioning.",
+        "Record native dimensions, alpha bounds and exact scene-size desktop/phone fit; subject and playback approval remain pending."
+      ],
+      "dependencies": [
+        "Choose a particular modern demonstration reference and complete light path.",
+        "Validate aperture/screen anchors and how perspective context connects to the exact schematic."
+      ],
+      "referenceNeeds": [
+        "Primary manufacturer/laboratory photograph/manual of selected optical bench required.",
+        "Module7 lesson03 and lesson04 explain aperture-to-screen mechanisms; these are not a construction reference for arbitrary optical hardware."
+      ]
+    },
+    {
+      "id": "ph-spectral-sources",
+      "title": "Filament and low-pressure gas source context",
+      "purpose": "Distinguish physically different light sources before coding continuous, emission and absorption spectra.",
+      "lessonKeys": [
+        "physics/year12/module7/lesson09.sa.html",
+        "physics/year12/module8/lesson09.sa.html",
+        "physics/year12/module8/lesson12.sa.html"
+      ],
+      "priority": "P1",
+      "readiness": "needs-reference",
+      "treatment": "Reference-informed painted-editorial context; observations and exact diagrams remain separate.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "filament-source",
+          "description": "Complete selected filament lamp without a painted spectrum.",
+          "prompt": "Portrait 3:4 three-quarter close view of one selected incandescent tungsten-filament teaching lamp. Show complete glass envelope, filament/supports and base as in the reference, with glass glare not hiding the filament. Keep it neutral/unlit so coded illumination can introduce the hot dense source at the narrated cue. No LED substitute, spectrum, colour band, temperature number, electrical discharge or invented connections. Leave room for coded filament/source callouts. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, complete subject and at least 10 percent clear margins. Use clear materials and restrained internal shading matching the light explainer. No ground shadow, brands, people, scientific labels, formulas, numbers, arrows, rays, spectra, precise scales or answers. Exact scientific state and reading overlays stay coded. Do not invent apparatus internals or present the result as a photograph or observation.",
+          "derivedFromStateId": null
+        },
+        {
+          "id": "discharge-source",
+          "description": "Independent selected low-pressure hydrogen discharge tube.",
+          "prompt": "Portrait 2:3 near-side view of one selected sealed school hydrogen-discharge tube and its physical holder, following actual manufacturer geometry. Keep electrode ends and gas-viewing region legible, without inventing a continuous filament inside. Neutral unlit appearance; coded gas identity and controlled illustrative illumination will be added later. No spectral lines or rainbow, voltage display, ray, unsafe exposed invented supply or electrical wiring diagram. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, complete subject and at least 10 percent clear margins. Use clear materials and restrained internal shading matching the light explainer. No ground shadow, brands, people, scientific labels, formulas, numbers, arrows, rays, spectra, precise scales or answers. Exact scientific state and reading overlays stay coded. Do not invent apparatus internals or present the result as a photograph or observation.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "Independent subjects, not aligned states. Do not morph filament into gas tube. Reuse each base while coded illumination, source labels and spectra change; obtain separate scene registration for holders.",
+      "codedOverlays": [
+        "Hot dense filament versus low-pressure excited gas labels",
+        "Illustrative illumination and coded continuous/emission/absorption spectral strips",
+        "Exact wavelength/line identities and redshift comparison",
+        "Separate cooler-gas/star-atmosphere schematic"
+      ],
+      "acceptanceChecks": [
+        "Filament lamp is not an LED.",
+        "Tube structure matches selected actual hardware; glow does not claim measured spectral intensity.",
+        "Spectral line positions/patterns are not baked or inferred from painted colour.",
+        "Record actual native dimensions/alpha bounds and review subject accuracy and actual desktop/phone scene fit before use. No motion or release approval is supplied."
+      ],
+      "dependencies": [
+        "Select actual lamp and sealed tube references plus the source-comparison scene.",
+        "Any observed spectral data need independent provenance; these cutouts do not replace it."
+      ],
+      "referenceNeeds": [
+        "Module7 lesson09 source comparison and module8 lessons09/12 are the targets.",
+        "Manufacturer/laboratory photographs of the actual filament and hydrogen tube still required."
+      ]
+    },
+    {
+      "id": "ph-stellar-outcomes",
+      "title": "Different stellar remnants as illustrative context",
+      "purpose": "Make expelled-envelope and massive-star remnant outcomes recognisable without turning a painted morphology into measurement evidence.",
+      "lessonKeys": [
+        "physics/year12/module8/lesson06.sa.html",
+        "physics/year12/module8/lesson10.sa.html"
+      ],
+      "priority": "P2",
+      "readiness": "needs-reference",
+      "treatment": "Reference-informed painted-editorial context; observations and exact diagrams remain separate.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "planetary-nebula",
+          "description": "Independent low/intermediate-mass outcome illustration.",
+          "prompt": "Landscape 4:3 isolated illustrative planetary-nebula envelope with a small central white-dwarf locator, using a selected NASA/observatory image solely as morphology reference. Show extended diffuse structured gas, not planets or a terrestrial fireball. Preserve the selected reference's broad geometry without claiming its colours are natural or its apparent sizes are to scale. Use soft alpha at the gas boundary and transparent surroundings, no star-field background. Keep the central locator modest; a coded magnified inset can explain the compact star. No labels or invented spectra. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, complete subject and at least 10 percent clear margins. Use clear materials and restrained internal shading matching the light explainer. No ground shadow, brands, people, scientific labels, formulas, numbers, arrows, rays, spectra, precise scales or answers. Exact scientific state and reading overlays stay coded. Do not invent apparatus internals or present the result as a photograph or observation.",
+          "derivedFromStateId": null
+        },
+        {
+          "id": "core-collapse-remnant",
+          "description": "Independent massive-star remnant illustration.",
+          "prompt": "Landscape 4:3 isolated illustrative core-collapse supernova remnant, using a selected identified core-collapse NASA/observatory reference such as the Crab for morphology. Show structured diffuse ejecta with soft alpha edges and transparent surroundings, not a generic fiery explosion in air. No visible oversized neutron-star sphere or invented internal layers. Do not copy a Type Ia remnant and label it as a neutron-star-producing core collapse. Apparent morphology/colour is illustrative and not evidence of progenitor type or composition. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, complete subject and at least 10 percent clear margins. Use clear materials and restrained internal shading matching the light explainer. No ground shadow, brands, people, scientific labels, formulas, numbers, arrows, rays, spectra, precise scales or answers. Exact scientific state and reading overlays stay coded. Do not invent apparatus internals or present the result as a photograph or observation.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "Independent objects and cameras. No registered crossfade, common age/scale or one-star evolutionary animation is implied. Keep branch labels and magnified remnant schematic coded.",
+      "codedOverlays": [
+        "Mass-dependent evolutionary branching and elapsed time",
+        "Illustration/not-to-scale labels and selected reference attribution",
+        "Separate pressure/fusion/collapse model, neutrino timeline and pulsar geometry",
+        "Explicit progenitor distinctions; no inference from morphology alone"
+      ],
+      "acceptanceChecks": [
+        "Planetary nebula is not depicted as a supernova.",
+        "Selected massive-star reference has the stated provenance.",
+        "Illustrative colours and sizes are not used as temperature, composition or size measurements.",
+        "A visible point locator is not a resolved picture of a neutron-star surface.",
+        "Record actual native dimensions/alpha bounds and review subject accuracy and actual desktop/phone scene fit before use. No motion or release approval is supplied."
+      ],
+      "dependencies": [
+        "Select exact remnant scene and identified reference before commissioning; coded branch diagrams remain sufficient if no visual identification task is selected.",
+        "Record reference rights/credit and observed-versus-illustrated distinction. Internal core-collapse teaching needs its own reviewed coded model."
+      ],
+      "referenceNeeds": [
+        "Primary overview checked: https://science.nasa.gov/mission/hubble/science/universe-uncovered/hubble-nebulae/ . It distinguishes planetary nebulae and supernova remnants and identifies the Crab.",
+        "Specific reference images/credits and wavelength-colour treatment still need inspection."
+      ]
+    },
+    {
+      "id": "ph-scattering-apparatus",
+      "title": "Gold-foil scattering apparatus context",
+      "purpose": "Locate source, thin foil and detecting screen in the evidence apparatus, separately from atomic-scale scattering.",
+      "lessonKeys": [
+        "physics/year12/module8/lesson11.sa.html"
+      ],
+      "priority": "P2",
+      "readiness": "needs-reference",
+      "treatment": "Reference-informed painted-editorial context; observations and exact diagrams remain separate.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "scattering-base",
+          "description": "Selected historical reconstruction or teaching apparatus view.",
+          "prompt": "Landscape 3:2 near-side three-quarter cutaway of one selected Geiger-Marsden-style scattering apparatus or a clearly identified teaching reconstruction. Follow an actual museum/primary apparatus diagram for source housing, collimating region, thin foil location and detecting-screen/viewing arrangement. Keep the essential source-to-foil corridor and movable detector region unobstructed. Omit alpha tracks, angular scales and event counts; exact paths are coded. Do not invent an electronic detector, laser beam or oversized gold atom. Preserve chosen chamber/support geometry and leave negative space for part leaders. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, complete subject and at least 10 percent clear margins. Use clear materials and restrained internal shading matching the light explainer. No ground shadow, brands, people, scientific labels, formulas, numbers, arrows, rays, spectra, precise scales or answers. Exact scientific state and reading overlays stay coded. Do not invent apparatus internals or present the result as a photograph or observation.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "One context plate. Particle paths, detector angle and atomic model are separate coded views. No crossfade from macroscopic foil to a supposed literal atom photograph.",
+      "codedOverlays": [
+        "Source/foil/detecting-screen anchors",
+        "Exact coded incident/scattered trajectories and detector angles",
+        "Observed-frequency statements with cited provenance, distinct from synthetic animation",
+        "Separate nuclear/atomic scale schematic"
+      ],
+      "acceptanceChecks": [
+        "Selected historical design and date are not mixed with modern hardware.",
+        "Foil and detection region can be identified without a painted path.",
+        "Tiny nucleus/large atom inference is not drawn as an apparatus dimension.",
+        "Record actual native dimensions/alpha bounds and review subject accuracy and actual desktop/phone scene fit before use. No motion or release approval is supplied."
+      ],
+      "dependencies": [
+        "Select museum or primary experimental diagram and historical-versus-modern purpose.",
+        "Source numerical/historical claims require their own science verification when selecting narration; this planning pass does not clear them."
+      ],
+      "referenceNeeds": [
+        "Module8 lesson11 Geiger-Marsden evidence is the teaching target.",
+        "Actual apparatus reconstruction/reference with source, foil, screen and viewing geometry remains required."
+      ]
+    },
+    {
+      "id": "ph-particle-detectors",
+      "title": "Cloud chamber and collider detector construction",
+      "purpose": "Connect track/signature diagrams to physical observation apparatus while keeping synthetic event data visibly separate.",
+      "lessonKeys": [
+        "physics/year12/module8/lesson16.sa.html",
+        "physics/year12/module8/lesson19.sa.html"
+      ],
+      "priority": "P2",
+      "readiness": "needs-reference",
+      "treatment": "Reference-informed painted-editorial context; observations and exact diagrams remain separate.",
+      "reuseCandidates": [],
+      "states": [
+        {
+          "id": "cloud-chamber-base",
+          "description": "Independent selected chamber with empty observation region.",
+          "prompt": "Landscape 4:3 three-quarter view of one selected Wilson-type historical cloud-chamber reconstruction or a specified teaching chamber. Follow the chosen reference exactly for chamber boundaries and observation/illumination window; do not mix expansion and diffusion chamber construction. Leave the observation region empty of tracks. If Anderson's apparatus is selected, retain only verified plate/magnet structures from its actual reference; do not add an arbitrary magnet to a generic chamber. No photograph-like discovery track or invented readout. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, complete subject and at least 10 percent clear margins. Use clear materials and restrained internal shading matching the light explainer. No ground shadow, brands, people, scientific labels, formulas, numbers, arrows, rays, spectra, precise scales or answers. Exact scientific state and reading overlays stay coded. Do not invent apparatus internals or present the result as a photograph or observation.",
+          "derivedFromStateId": null
+        },
+        {
+          "id": "collider-detector-cutaway",
+          "description": "Independent selected collider detector cutaway without events.",
+          "prompt": "Landscape 3:2 three-quarter longitudinal cutaway of one selected collider detector, following its official construction diagram. Show the collision-axis opening and the selected nested tracking, calorimeter, magnetic-return and muon structures in the exact chosen arrangement. Do not combine ATLAS and CMS layouts or invent a universal magnet placement. Distinct materials and exposed cut surfaces should support coded part labels; no tracks, energy deposits, event display, people-for-scale, labels or claims of measured detail. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, complete subject and at least 10 percent clear margins. Use clear materials and restrained internal shading matching the light explainer. No ground shadow, brands, people, scientific labels, formulas, numbers, arrows, rays, spectra, precise scales or answers. Exact scientific state and reading overlays stay coded. Do not invent apparatus internals or present the result as a photograph or observation.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "Independent instruments and camera views, not aligned variants. No cloud-chamber-to-collider morph or registered assembly transition. Geometry-dependent tracks are coded on a separate calibrated schematic after reference selection.",
+      "codedOverlays": [
+        "Cloud-chamber synthetic tracks, field sign, direction and energy-loss inference",
+        "Detector layer names with device-specific anchors",
+        "Coded charged/neutral signatures and energy deposits, labelled synthetic",
+        "Exact accelerator paths and collision/decay reconstruction calculations"
+      ],
+      "acceptanceChecks": [
+        "Generated chamber contains no purported historical observation.",
+        "Selected detector's actual magnet/layer ordering is respected.",
+        "Neutral particles do not acquire invented charged tracks.",
+        "No inference of charge or mass solely from equal/opposite curvature without the required momentum/direction information.",
+        "Record actual native dimensions/alpha bounds and review subject accuracy and actual desktop/phone scene fit before use. No motion or release approval is supplied."
+      ],
+      "dependencies": [
+        "Select historical or teaching chamber design and whether a real archived observation is needed instead.",
+        "Choose one collider detector and inspect official geometry before generation. Track evidence and apparatus context are separate assets."
+      ],
+      "referenceNeeds": [
+        "Primary historical photo/provenance located: https://digital.archives.caltech.edu/collections/Photographs/1.2-7/ . Real archived evidence should be used rather than generated if the discovery photograph is selected; plate/direction inference still needs exact review.",
+        "Primary general detector principles checked: https://home.cern/how-detector-works . Device-specific reference: https://cms.cern/news/detector-overview or https://home.web.cern.ch/science/experiments/atlas/ . Choose one, not a hybrid."
+      ]
+    },
+    {
+      "id": "ph-mass-spectrometer-context",
+      "title": "Mass-spectrometer physical context reuse review",
+      "purpose": "Consider an existing instrument plate only if identifying physical hardware helps the selected scene; exact beam functions remain coded.",
+      "lessonKeys": [
+        "physics/year12/module6/lesson18.sa.html"
+      ],
+      "priority": "P2",
+      "readiness": "reuse-review",
+      "treatment": "Reference-informed painted-editorial context; observations and exact diagrams remain separate.",
+      "reuseCandidates": [
+        {
+          "path": "public/assets/chemistry/m8-mass-spectrometer-v1.png",
+          "inspected": false,
+          "note": "Inventory-only cross-subject candidate. Appearance and instrument type have not been viewed; no ready-reuse or magnetic-sector construction claim. Inspect before selecting, and retain exact functional diagram in code."
+        }
+      ],
+      "states": [
+        {
+          "id": "instrument-context",
+          "description": "Conditional fallback base if the existing candidate does not fit.",
+          "prompt": "Landscape 3:2 three-quarter external/cutaway context view of one specifically selected magnetic-sector teaching mass spectrometer, following its actual manufacturer/primary reference. Keep its verified source, preparation/analyser interfaces and detector locations identifiable without baking internal beam paths or field geometry into the art. Do not claim every instrument has a crossed-field selector or paint an arbitrary modern quadrupole instrument as a magnetic-sector model. Preserve complete casing/support silhouette and open space for coded functional links. Generate only after the existing candidate has been inspected and a real missing visual need remains. Output a high-resolution painted-editorial educational cutout on a genuinely transparent background, complete subject and at least 10 percent clear margins. Use clear materials and restrained internal shading matching the light explainer. No ground shadow, brands, people, scientific labels, formulas, numbers, arrows, rays, spectra, precise scales or answers. Exact scientific state and reading overlays stay coded. Do not invent apparatus internals or present the result as a photograph or observation.",
+          "derivedFromStateId": null
+        }
+      ],
+      "alignment": "No aligned states. Candidate and fallback are alternatives, not interchangeable registered layers. Map any physical interfaces only after inspecting the actual image/reference.",
+      "codedOverlays": [
+        "Separate exact ion source, selected energy/speed preparation, magnetic analyser and detector schematic",
+        "Charge/mass labels, model-based curvature and detector separation",
+        "Explicit chosen-design label; selector is one preparation option"
+      ],
+      "acceptanceChecks": [
+        "Existing candidate appearance and actual instrument type are checked before reuse.",
+        "No hardware shell substitutes for teaching the four functions.",
+        "Coded field geometry is never inferred from a generic casing image.",
+        "Record actual native dimensions/alpha bounds and review subject accuracy and actual desktop/phone scene fit before use. No motion or release approval is supplied."
+      ],
+      "dependencies": [
+        "Inspect the existing Chemistry candidate before any generation decision.",
+        "Select actual instrument design and exact scene; if coded functional diagram suffices, commission no new raster."
+      ],
+      "referenceNeeds": [
+        "Existing raw inventory candidate is not an appearance or apparatus match pass.",
+        "Manufacturer/primary reference for the selected instrument and its beam preparation remains required."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-25",
+  "familyId": "ph-eddy-tube",
+  "method": "Built-in image_gen, generated originals copied byte-for-byte into the project. No CLI/API fallback or deterministic image edits used.",
+  "status": "white-background-shape-candidates-cleanup-method-and-transition-review-pending",
+  "selectedSourceLesson": "C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson19.sa.html",
+  "selectedUse": "Generic intact versus longitudinally slotted conductor-shape comparison. No numerical motion or apparatus-dimension claim.",
+  "generationCalls": 7,
+  "selectedCandidatePaths": [
+    "out/checks/physics-eddy-tube-2026-10-25/raw/04-intact-white-base.png",
+    "out/checks/physics-eddy-tube-2026-10-25/raw/07-slotted-white-corrected.png"
+  ],
+  "independentReview": "docs/production/claude-pm/checks/physics-eddy-tube-first-asset-review.md",
+  "pendingMethodQuestion": "User choice requested for deterministic alpha-mask cleanup because image-generator transparency attempts retain an outer halo. No choice received as of this record.",
+  "limits": [
+    "White-background candidates are not transparent deliverables.",
+    "Shape bounds nearly align; painted texture changes across the edited image. No unchanged-pixel or seamless-transition pass.",
+    "Native dimensions are 1024 by 1536. No upscaling or extra native-detail claim.",
+    "No public asset, selected lesson, preview, narration or released video was changed."
+  ],
+  "calls": [
+    {
+      "id": "base-transparent",
+      "prompt": "Create one scientific illustration asset for an HSC Physics eddy-current comparison: an isolated intact copper tube. Portrait 2:3 composition, genuinely transparent background. A straight hollow clean copper tube stands vertically, its length roughly five times its outer diameter. Near-side three-quarter view with the camera looking only slightly down into the top opening, enough to clearly see the continuous elliptical rim, open bore and believable thin metal wall. The lower end and complete lower edge remain visible. The copper wall is opaque, continuous and unbroken all the way around, with no slit, seam gap, window or cutaway. Draw the whole object, centered with at least 10 percent clear margin on every side. Refined scientific ink and restrained watercolor/material shading on the tube, matching a light editorial educational explainer; natural copper orange-brown, crisp readable silhouette, subtle fine brushed texture, no photorealistic scene or glossy cinematic effects. No magnet, supporting stand, ground, cast shadow, labels, text, markings, measurement scale, arrows, field lines, current loops, graphs or extra objects. This is a generic material cutout, not a dimensioned apparatus or experimental data. Its exact image will later be edited to make a longitudinally slotted variant, so use a simple clear front wall and stable framing. Return the single transparent intact-tube asset only.",
+      "originalPath": "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-742731de-123e-4402-a65a-770954281ff5.png",
+      "projectPath": "out/checks/physics-eddy-tube-2026-10-25/raw/01-base-transparent-fringe.png",
+      "referencePaths": [],
+      "sha256": "54f3aafb4c2a65c4bbf5c9b6d6d11698d52152dd53ab7edbf9c6a4664c30b883",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "hasAlphaChannel": true,
+      "alphaPixelCounts": {
+        "transparent": 1214153,
+        "partial": 358711,
+        "opaque": 0
+      }
+    },
+    {
+      "id": "reframe-edit",
+      "prompt": "Edit this intact copper-tube illustration into a clean transparent teaching cutout. Keep the same straight hollow cylindrical construction and the same view into its top bore. Reframe the entire tube SMALLER and CENTERED: its complete silhouette must occupy ONLY the middle 70 percent of this portrait canvas height, leaving at least 15 percent completely empty transparent space above and below. The whole tube and both end edges must be present. Remove ALL copper glow, aura, haze, soft shadow and atmospheric colour OUTSIDE the actual metal silhouette. Every pixel beyond the crisp object contour must be fully transparent, with only minimal antialiasing immediately on the edge. In particular there must be no orange cloud around the tube. Keep the wall continuous with no slit, hole, window or cutaway. Use restrained scientific ink contours and subtle copper watercolor/material shading on the metal, avoiding cinematic bloom. No ground, cast shadow, labels, scale, symbols, arrows, magnet or extra object. The tube itself should be properly opaque metal; its top bore remains visibly open. This image is the fixed base for a later aligned slot edit. Return one isolated intact tube on genuine transparency, with the corrected generous margins.",
+      "originalPath": "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-3dcbbda3-6ca9-4fc9-aedd-70950539231e.png",
+      "projectPath": "out/checks/physics-eddy-tube-2026-10-25/raw/02-reframed-fringe.png",
+      "referencePaths": [
+        "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-742731de-123e-4402-a65a-770954281ff5.png"
+      ],
+      "sha256": "3e60bf77ab841fd01abc7db1eca0c372012751671c0be92405137b9f13369af9",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "hasAlphaChannel": true,
+      "alphaPixelCounts": {
+        "transparent": 1330198,
+        "partial": 242666,
+        "opaque": 0
+      }
+    },
+    {
+      "id": "fresh-ink-base",
+      "prompt": "One isolated SCIENTIFIC INK-AND-WATERCOLOR CUTOUT of a straight, intact hollow copper pipe. Clean diagrammatic botanical-plate style adapted to laboratory materials: thin dark drawn outline, flat muted burnt-orange watercolor wash contained strictly inside the metal, a few restrained pencil/brushed marks for copper texture. Opaque drawn metal. A complete uninterrupted top ellipse shows the open bore and thin wall. A complete bottom edge. Portrait 2:3 canvas; entire tube centered in the middle 70% of canvas height, with 15% completely empty margin above and below, ample empty sides. Slightly elevated three-quarter view; simple long vertical cylinder, roughly five diameters tall. Genuine alpha transparency immediately outside the crisp drawn silhouette, all surrounding canvas fully transparent. No surrounding light or atmosphere. No cast shadow, floor, gradient backdrop, halo, vignette, bloom, photographic lighting, luminous edges or colour outside the object. No slot, seam, window, cutaway, magnet, arrows, labels, text, scale or other object. Make this an educational hand-painted material cutout, not a rendered product photograph.",
+      "originalPath": "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-8ff43957-fd82-4e75-9a4a-7dd9dc0b8c13.png",
+      "projectPath": "out/checks/physics-eddy-tube-2026-10-25/raw/03-ink-base-fringe.png",
+      "referencePaths": [],
+      "sha256": "37c8b25b98a327a6257244af00b0a6bc528e21eeb3a2c88a4cd13e98ff90167c",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "hasAlphaChannel": true,
+      "alphaPixelCounts": {
+        "transparent": 1254238,
+        "partial": 318626,
+        "opaque": 0
+      }
+    },
+    {
+      "id": "opaque-white-base",
+      "prompt": "Scientific ink-and-watercolor plate of one intact hollow copper tube on a perfectly uniform PURE WHITE background. Flat scanned-illustration presentation, like a laboratory object painted on white paper. Portrait 2:3 composition. Put the complete object inside the central 65% of the canvas height, leaving large clean white margins all around. A vertical straight copper tube, length about five times its diameter, seen slightly from above with one elliptical top opening showing a believable thin metal wall. Complete lower edge, open-ended cylindrical construction, no cap or slot. Fine dark brown outline, matte muted copper wash strictly contained within that outline, restrained brushed marks. White background remains exactly white right up to the contour. Lighting is represented solely by broad flat tonal shapes ON the object. A simple educational drawing rather than a product render. No other objects, ground, shadow, text, labels, scale, magnet, diagrams or symbols.",
+      "originalPath": "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-4e1a55ec-7115-4c93-8bf8-33cd9febca35.png",
+      "projectPath": "out/checks/physics-eddy-tube-2026-10-25/raw/04-intact-white-base.png",
+      "referencePaths": [],
+      "sha256": "565c9b40a7bf1f8a5650b1335dcfcac66fc20c9c5802edd6ab87a2944ffae9c4",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 2,
+      "hasAlphaChannel": false,
+      "alphaPixelCounts": {
+        "transparent": 0,
+        "partial": 0,
+        "opaque": 1572864
+      }
+    },
+    {
+      "id": "background-removal-edit",
+      "prompt": "Remove ONLY the white paper background from this exact copper-tube illustration. Preserve every visible tube pixel, the dark outline, watercolor texture, top opening, construction, position, size, camera angle and canvas dimensions. Replace all white background outside the physical dark contour with fully transparent alpha, with a crisp antialiased boundary immediately on the contour. The copper object remains opaque. Keep exactly the existing empty margins and framing. Do not redraw, relight, recolor, rescale, reshape or add anything. Output a transparent PNG cutout. There must be no white paper, translucent orange residue, haze, halo or shadow outside the tube contour.",
+      "originalPath": "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-98c6c64f-140d-4392-b1bc-b24672034227.png",
+      "projectPath": "out/checks/physics-eddy-tube-2026-10-25/raw/05-background-removal-fringe.png",
+      "referencePaths": [
+        "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-4e1a55ec-7115-4c93-8bf8-33cd9febca35.png"
+      ],
+      "sha256": "70efde821e41682bb7c324f7492c80c2dce409cdb3e68ea291d45b0cba8a1fcf",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "hasAlphaChannel": true,
+      "alphaPixelCounts": {
+        "transparent": 1313857,
+        "partial": 259007,
+        "opaque": 0
+      }
+    },
+    {
+      "id": "front-slot-edit",
+      "prompt": "Controlled edit of this exact intact copper tube on its white background. Create the slotted state for an eddy-current comparison. Keep the exact canvas, camera, framing, position, scale, watercolor texture, tube sides, top ellipse and bottom curve. Change ONLY a narrow vertical longitudinal slit through the FRONT wall at the centre of its visible face, from the front lip of the top rim continuously ALL THE WAY through the bottom rim. The gap is a real removed strip of copper: separated cut metal edges, dark inner copper wall visible behind the opening, no white painted line and no bridge at either end. The slot must interrupt a circumferential conducting path through the front wall. Keep the entire rest of the outer silhouette and surface unchanged. White background remains plain white. No labels, arrows, extra objects, magnet, field lines, glow or shadow. This is the same physical tube with one complete axial cut, not a new illustration or a changed viewpoint.",
+      "originalPath": "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-d60da8c8-1f07-4db8-9517-1e1c7abcdce7.png",
+      "projectPath": "out/checks/physics-eddy-tube-2026-10-25/raw/06-slotted-white-candidate.png",
+      "referencePaths": [
+        "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-4e1a55ec-7115-4c93-8bf8-33cd9febca35.png"
+      ],
+      "sha256": "2644ca3a5201cf31f07dfc83116f23b360db8f35df2d13c70e5d42a8f4d64a60",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 2,
+      "hasAlphaChannel": false,
+      "alphaPixelCounts": {
+        "transparent": 0,
+        "partial": 0,
+        "opaque": 1572864
+      }
+    },
+    {
+      "id": "far-rim-correction",
+      "prompt": "Correct a construction error in Image 1 (the slotted tube, edit target), using Image 2 (the intact tube) as the reference for unchanged geometry. This tube has ONE slit through its NEAR/front wall only. Restore the FAR/BACK half of the top elliptical rim and the far inner copper wall to match Image 2 continuously. Remove the extra dark vertical cut currently running from the back/topmost rim through the visible bore. The single intended slit begins at the FRONT/LOWER lip of the top ellipse (about y=270 in this 1536-pixel-tall image), continues straight down the FRONT exterior wall, and exits the lower front edge. Leave that front slit open continuously; the intact far wall may be seen through it. Keep the back rim continuous with NO second notch. Preserve all canvas framing, outer sides, bottom curve, watercolor texture, viewpoint, position, scale, white background and all unchanged pixels. Change only the erroneous cut on the far rim/inner wall. No new objects, labels, marks, glow or shadows.",
+      "originalPath": "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-82067235-9961-4fe8-ba95-aec197a47921.png",
+      "projectPath": "out/checks/physics-eddy-tube-2026-10-25/raw/07-slotted-white-corrected.png",
+      "referencePaths": [
+        "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-d60da8c8-1f07-4db8-9517-1e1c7abcdce7.png",
+        "C:/Users/kygs/.codex/generated_images/01a1712b-7ff7-7172-96a5-794953bae0c7/exec-4e1a55ec-7115-4c93-8bf8-33cd9febca35.png"
+      ],
+      "sha256": "9cba6423bdbb269e516ee1aa08925d0a8d4dbb0b595b9b06c182399347cb56f3",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 2,
+      "hasAlphaChannel": false,
+      "alphaPixelCounts": {
+        "transparent": 0,
+        "partial": 0,
+        "opaque": 1572864
+      }
+    }
+  ],
+  "sourceSha256": "09343e0a4d69309a76ce802d2efd4c64338424a4eda33b8b18d784318c3a8f0c",
+  "independentReviewSha256": "096079b0f52a4dcc295ca0393d34ab30237fb5e3dd0646d5ffeb079192c9b983"
+}

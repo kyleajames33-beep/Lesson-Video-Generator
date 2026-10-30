@@ -1,10 +1,16 @@
 # M8 P02: Carrying out a gravimetric analysis: test the method on a sample whose answer you know (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (31 Oct): Codex error check 116 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 
 Narration 5,810 characters (Revision 2), 18 scenes, about 9.5 minutes (569 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (31 Oct; resolving `../checks/codex-check-116.md`):
+- codex-check-116 found no errors in this design; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8p02-learning-review.md` (learning L1, L2) and `../checks/m8p02-claude-science-check.md` (science S1; it counts the filtration temperature under learning L1)):
 - Filtration temperature (learning L1 blocker, also named by the science check, merged, as proposed): scene 5 now opens "Now the sets split. Set A isn't digested. Set B digests first, just below boiling under a watch glass, for about thirty minutes. Then both cool to room temperature before filtering." The crystal prediction and mesh stay. On the new cue "temperature" both lanes run into one shared chip, "both: cool to room temperature, then filter", so the two branches show the same filtration temperature. Scene 2's controlled list gains "same filtration temperature (room temperature)", and its narration now says "the other doesn't" (not "filters it straight away"). Key notes 2 and 3, the hotplate risk row ("let it cool to room temperature before filtering"), author notes (a) and (c), the Decisions numbers line ("set A (not digested)") and the teaching checks carry the same control. A2's card now reads "Set D did not digest the precipitate ... Both sets were filtered at room temperature.", so its only uncontrolled variable is still the washing.

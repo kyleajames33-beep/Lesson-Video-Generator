@@ -1,0 +1,37 @@
+# Brief 120 sister lessons and question originality
+
+30 October 2026. Read the narration of all eight designs and the requested sister lessons: Chemistry M7 C01/C02 and Biology M8 B03/B08/B07/B10/B11. Compared practice stems, demands and distinctive data against all fourteen official 2019 to 2025 Chemistry/Biology paper text extracts in `brief117-exams/`, then read the relevant question contexts. Exact PDF URLs and hashes remain in that agent's unchanged inventory. `brief120-exam-contexts.json` records the relevant pages. The phrase audit is supporting evidence only; it cannot detect a copied image whose text was not extracted. Copyright-redacted diagrams remain a limit on a universal originality guarantee.
+
+## Sister-lesson scope
+
+| Design | Comparison and decision |
+| --- | --- |
+| C09 | M7 C01 teaches names/drawings and C02 teaches same-formula isomers. C09 reads those names and recalls same mass briefly, then teaches ions, fragments and isotope clusters. It does not repeat the earlier naming rules or isomer enumeration. Retain the short recall. |
+| C10 | C09 supplies mass, not bond groups. C10 introduces vibration, transmittance, band shape and negative evidence. Its propanol fingerprint comparison and C11a propanol environment comparison reuse a subject for different evidence. No duplicated instrument explanation across those lessons. The existing reading-load finding remains the relevant concern. |
+| C11a | Its two propanols were position isomers in M7 C02 and fingerprint examples in C10. Here their different environment counts provide a new discriminator. Names are read rather than re-taught. Shared NMR physics belongs here; it is recalled briefly in C11b. |
+| C11b | The scale/shielding recap in scene 2 is about 26 seconds, followed by new proton areas and splitting. Reusing ethanol and ethyl ethanoate links carbon and proton evidence. The quartet-versus-area trap adds a necessary distinction. No additional removal is required for overlap. |
+| B12 | B03 owns healthy glucose feedback; B08 owns resistance and beta-cell decline. B12 recalls that cause in scene 2 so treatment targets can be understood, then adds monitoring, escalation and trial evaluation. Keep the settled type 1/type 2 contrast. Its liver transporter error repeats an imprecise B08 sentence; B03 correctly separates liver storage from muscle/fat transporter recruitment. Repair B12 rather than treating the repeated source as verification. |
+| B13 | B07 owns UV damage and latency; B10 owns rates and age; B11 owns observational inference and study benefits. B13 recalls these to judge a specific prevention program, adding process/impact/outcome and practical barriers. Its young-versus-old outcome argument applies latency rather than re-teaching the molecular damage mechanism. No whole scene needs removal merely for overlap. |
+| B14 | Screening/selection/engineering and the PKU prevention distinction are a new application after B13. Prenatal testing is not explicitly demanded by the quoted dotpoint; its omission is not a coverage blocker. |
+| B15 | The receptor/nerve callback is short. The new work is locating a hearing-pathway fault and matching a bypass. Preserve the three devices and the clinical comparison rather than adding general receptor teaching. |
+
+## Official-paper comparison
+
+| Design | Closest official contexts and conclusion |
+| --- | --- |
+| C09 | Chemistry 2020 MC1 asks the magnet's role, Q21 identifies an alkane from MS; 2023 MC19 concerns butanone m/z 43. The designed attempts instead compare pentanone isomers and interpret a chlorine cluster with a different fragment. No distinctive matching official attempt stem/dataset was found. The site adaptation issue below remains. |
+| C10 | Chemistry 2020 MC4 compares functional-group contrasts; 2024 MC4 reads one IR trace. The designed acid/ester and oxidisable alcohol/aldehyde candidate questions use different compounds, conditions and demands. No close official paraphrase identified. The added dichromate ambiguity makes A2 a different task from the site's basic alcohol-band question. |
+| C11a | Chemistry 2022 MC12 asks fewest carbon environments in C6 hydrocarbons; Q27 compares propanols and oxidation. The designed attempts use four C4 alcohols and an acid/ester C3 candidate pair. Same taught symmetry skill, different case and demands. |
+| C11b | Chemistry 2019 MC14 uses C4H9Cl; 2021 MC18 uses chlorinated C5 candidates; 2025 Q36 predicts several spectra for a drawn compound. The designed methyl propanoate prediction and symmetrical pentanone deduction have different structures and constraints. No close official paraphrase identified. |
+| B12 | Biology 2019 MC12 and 2020 Q31 concern glucose control; 2024 Q29 extrapolates prevalence. The rising HbA1c/insulin decision and fictional placebo trial with discontinuation/cost evidence are different questions. The site's treatment/monitoring questions are related but lack these case facts and decision demands. |
+| B13 | Biology 2020 MC9 concerns campaign measurement, 2022 Q27 evaluates cervical-cancer programs, and 2024 Q24 asks environmental-disease campaign use. These share the syllabus skill, but not the designed datasets or questions. A close site adaptation was identified below. |
+| B14 | Biology 2021 Q27 uses sickle-cell parents and a DNA profile; other Huntington questions concern inheritance. The designed SMA probability/PGT task and Huntington screening-versus-selection judgement ask different decisions. No close official or site practice paraphrase identified. |
+| B15 | Biology 2021 Q25(c) describes outer-ear blockage with an intact cochlea; 2019/2023/2025 MC questions concern cochlear-implant operation. The designed fixed-stapes comparison and adult noise-loss evaluation share device mechanisms, but use different faults, clinical facts and demands. No distinctive matching dataset or copied demand sequence was found. |
+
+## Site practice findings
+
+1. **Should fix, C09 attempt 2.** Site L12 Short Answer Q1 already gives the same chloroethane 64/66, 3:1 cluster and asks about the isotope partner and a fragment. Changing fragment 49 to 29 and adding identification of M does not make it a convincingly unseen question. Use a different transfer case, for example a bromomethane 94/96 pair with equal heights, fragment 15 and the two bromine isotope masses stated. Keep the existing chlorine teaching scene. Obtain the measured trace before drawing the replacement; this note does not certify unmeasured heights. Alternatively label it honestly as a site adaptation, but that would not meet the brief's original-question requirement.
+
+2. **Should fix, B13 attempt 1.** Site Biology L16 SA3 already uses a three-month sun-safety campaign and a 30% sunscreen-use increase to evaluate melanoma prevention. Adding knowledge and unchanged hats leaves the central case, data and judgement closely adapted. Replace the case and evidence, not just the two numbers. A length-neutral option is a school shade-and-uniform policy assessed by independent observations and personal UV measurements over a school year, with no melanoma outcomes yet. Keep the same impact-versus-outcome learning purpose.
+
+These are findings for the author. No practice card, narration or design was edited. The other inspected attempts can remain described as newly written HSC-style practice within the text/diagram limits above; none is an official NESA question or carries NESA endorsement.

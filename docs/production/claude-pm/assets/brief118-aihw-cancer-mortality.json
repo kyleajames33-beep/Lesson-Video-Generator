@@ -1,0 +1,4028 @@
+{
+  "status": "exact-annual-series-extracted",
+  "checked": "2026-10-30",
+  "releaseTitle": "Cancer Data in Australia 2025",
+  "workbookDate": "October 2025",
+  "reportPageLastUpdated": "14 July 2026",
+  "downloadIndexDate": "14 Sep 2025",
+  "table": "Table S2a.1",
+  "url": "https://www.aihw.gov.au/getmedia/c5b5798e-a812-420a-87c4-5619b6a429ab/CDiA-2025-Book-2a-Cancer-mortality-and-age-standardised-rates-by-age-5-year-groups.xlsx",
+  "localWorkbook": "assets\\brief118-aihw-book2a.xlsx",
+  "sha256": "950946e0522951ab970636dda34b9975d83036a0c7797fc1be5a1f289dd7365d",
+  "source": "AIHW National Mortality Database",
+  "population": "Persons, all ages combined, all cancers combined",
+  "standardPopulationSelected": "2001 Australian Standard Population",
+  "additionalStandardPopulation": "2025 Australian population",
+  "projectionYears": [
+    2024,
+    2025
+  ],
+  "notes": "Both standard-population columns are provided in the same official workbook. The report overview uses the 2025 column; the design can use the requested2001 column if its axis and source label say so. Do not infer every age-specific trend from either aggregate. Annual counts need not increase monotonically.",
+  "annualRows": [
+    {
+      "sourceRow": 10566,
+      "year": 1995,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 34216,
+      "crudeMortalityPer100000": 190.0,
+      "ageStandardisedMortalityPer100000_2001": 208.6,
+      "ageStandardisedMortalityPer100000_2025": 274.2,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10586,
+      "year": 1996,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 34857,
+      "crudeMortalityPer100000": 191.3,
+      "ageStandardisedMortalityPer100000_2001": 207.5,
+      "ageStandardisedMortalityPer100000_2025": 273.0,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10606,
+      "year": 1997,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 35111,
+      "crudeMortalityPer100000": 190.6,
+      "ageStandardisedMortalityPer100000_2001": 203.2,
+      "ageStandardisedMortalityPer100000_2025": 267.2,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10626,
+      "year": 1998,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 35418,
+      "crudeMortalityPer100000": 190.3,
+      "ageStandardisedMortalityPer100000_2001": 199.8,
+      "ageStandardisedMortalityPer100000_2025": 263.1,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10646,
+      "year": 1999,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 35580,
+      "crudeMortalityPer100000": 189.1,
+      "ageStandardisedMortalityPer100000_2001": 195.4,
+      "ageStandardisedMortalityPer100000_2025": 257.8,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10666,
+      "year": 2000,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 36316,
+      "crudeMortalityPer100000": 190.8,
+      "ageStandardisedMortalityPer100000_2001": 194.1,
+      "ageStandardisedMortalityPer100000_2025": 256.5,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10686,
+      "year": 2001,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 37222,
+      "crudeMortalityPer100000": 193.1,
+      "ageStandardisedMortalityPer100000_2001": 193.0,
+      "ageStandardisedMortalityPer100000_2025": 254.9,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10706,
+      "year": 2002,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 37947,
+      "crudeMortalityPer100000": 194.6,
+      "ageStandardisedMortalityPer100000_2001": 191.9,
+      "ageStandardisedMortalityPer100000_2025": 253.9,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10726,
+      "year": 2003,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 37919,
+      "crudeMortalityPer100000": 192.3,
+      "ageStandardisedMortalityPer100000_2001": 187.4,
+      "ageStandardisedMortalityPer100000_2025": 248.1,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10746,
+      "year": 2004,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 38524,
+      "crudeMortalityPer100000": 193.3,
+      "ageStandardisedMortalityPer100000_2001": 186.2,
+      "ageStandardisedMortalityPer100000_2025": 246.6,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10766,
+      "year": 2005,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 39133,
+      "crudeMortalityPer100000": 194.0,
+      "ageStandardisedMortalityPer100000_2001": 184.4,
+      "ageStandardisedMortalityPer100000_2025": 244.8,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10786,
+      "year": 2006,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 39435,
+      "crudeMortalityPer100000": 192.8,
+      "ageStandardisedMortalityPer100000_2001": 181.1,
+      "ageStandardisedMortalityPer100000_2025": 240.6,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10806,
+      "year": 2007,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 40539,
+      "crudeMortalityPer100000": 194.6,
+      "ageStandardisedMortalityPer100000_2001": 180.8,
+      "ageStandardisedMortalityPer100000_2025": 240.2,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10826,
+      "year": 2008,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 41357,
+      "crudeMortalityPer100000": 194.6,
+      "ageStandardisedMortalityPer100000_2001": 179.6,
+      "ageStandardisedMortalityPer100000_2025": 239.4,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10846,
+      "year": 2009,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 41717,
+      "crudeMortalityPer100000": 192.3,
+      "ageStandardisedMortalityPer100000_2001": 176.4,
+      "ageStandardisedMortalityPer100000_2025": 235.0,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10866,
+      "year": 2010,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 42658,
+      "crudeMortalityPer100000": 193.6,
+      "ageStandardisedMortalityPer100000_2001": 175.2,
+      "ageStandardisedMortalityPer100000_2025": 233.8,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10886,
+      "year": 2011,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 43167,
+      "crudeMortalityPer100000": 193.2,
+      "ageStandardisedMortalityPer100000_2001": 172.3,
+      "ageStandardisedMortalityPer100000_2025": 230.0,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10906,
+      "year": 2012,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 43704,
+      "crudeMortalityPer100000": 192.2,
+      "ageStandardisedMortalityPer100000_2001": 169.4,
+      "ageStandardisedMortalityPer100000_2025": 226.7,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10926,
+      "year": 2013,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 44376,
+      "crudeMortalityPer100000": 191.9,
+      "ageStandardisedMortalityPer100000_2001": 167.3,
+      "ageStandardisedMortalityPer100000_2025": 223.7,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10946,
+      "year": 2014,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 44440,
+      "crudeMortalityPer100000": 189.3,
+      "ageStandardisedMortalityPer100000_2001": 163.2,
+      "ageStandardisedMortalityPer100000_2025": 218.3,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10966,
+      "year": 2015,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 45565,
+      "crudeMortalityPer100000": 191.3,
+      "ageStandardisedMortalityPer100000_2001": 163.1,
+      "ageStandardisedMortalityPer100000_2025": 218.1,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 10986,
+      "year": 2016,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 46140,
+      "crudeMortalityPer100000": 190.7,
+      "ageStandardisedMortalityPer100000_2001": 160.9,
+      "ageStandardisedMortalityPer100000_2025": 215.2,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11006,
+      "year": 2017,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 46899,
+      "crudeMortalityPer100000": 190.7,
+      "ageStandardisedMortalityPer100000_2001": 158.4,
+      "ageStandardisedMortalityPer100000_2025": 212.7,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11026,
+      "year": 2018,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 47515,
+      "crudeMortalityPer100000": 190.3,
+      "ageStandardisedMortalityPer100000_2001": 156.2,
+      "ageStandardisedMortalityPer100000_2025": 209.7,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11046,
+      "year": 2019,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 48561,
+      "crudeMortalityPer100000": 191.7,
+      "ageStandardisedMortalityPer100000_2001": 154.9,
+      "ageStandardisedMortalityPer100000_2025": 208.4,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11066,
+      "year": 2020,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 49003,
+      "crudeMortalityPer100000": 191.1,
+      "ageStandardisedMortalityPer100000_2001": 151.1,
+      "ageStandardisedMortalityPer100000_2025": 203.4,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11086,
+      "year": 2021,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 50326,
+      "crudeMortalityPer100000": 195.9,
+      "ageStandardisedMortalityPer100000_2001": 150.5,
+      "ageStandardisedMortalityPer100000_2025": 203.3,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11106,
+      "year": 2022,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 51189,
+      "crudeMortalityPer100000": 196.8,
+      "ageStandardisedMortalityPer100000_2001": 149.2,
+      "ageStandardisedMortalityPer100000_2025": 201.5,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11126,
+      "year": 2023,
+      "dataType": "Actual",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 51724,
+      "crudeMortalityPer100000": 194.1,
+      "ageStandardisedMortalityPer100000_2001": 146.8,
+      "ageStandardisedMortalityPer100000_2025": 198.3,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11146,
+      "year": 2024,
+      "dataType": "Projections",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 52636,
+      "crudeMortalityPer100000": 193.6,
+      "ageStandardisedMortalityPer100000_2001": 144.6,
+      "ageStandardisedMortalityPer100000_2025": 195.9,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    },
+    {
+      "sourceRow": 11166,
+      "year": 2025,
+      "dataType": "Projections",
+      "cancerGroup": "All cancers combined",
+      "sex": "Persons",
+      "ageGroup": "All ages combined",
+      "deaths": 53545,
+      "crudeMortalityPer100000": 193.6,
+      "ageStandardisedMortalityPer100000_2001": 142.7,
+      "ageStandardisedMortalityPer100000_2025": 193.6,
+      "icd10": "C00\u2013C96, D45, D46, D47.1, D47.3\u2013D47.5 (NMD mortality data includes C97)"
+    }
+  ],
+  "lastRowsNotes": [
+    {
+      "row": 274001,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2016",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "9",
+        "G": "1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274002,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2016",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "10",
+        "G": "1.5",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274003,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2016",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "12",
+        "G": "2.6",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274004,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2016",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "13",
+        "G": "4.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274005,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2016",
+        "D": "Persons",
+        "E": "90+",
+        "F": "17",
+        "G": "9.6",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274006,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2016",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "90",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.2",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274007,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274008,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274009,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274010,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274011,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274012,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274013,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274014,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274015,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274016,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274017,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274018,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274019,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274020,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "8",
+        "G": "0.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274021,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "7",
+        "G": "0.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274022,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "6",
+        "G": "0.9",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274023,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "14",
+        "G": "3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274024,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "19",
+        "G": "6.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274025,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "90+",
+        "F": "15",
+        "G": "8.1999999999999993",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274026,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2017",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "79",
+        "G": "0.3",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.1",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274027,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274028,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274029,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274030,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274031,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274032,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274033,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274034,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274035,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274036,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274037,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274038,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "4",
+        "G": "0.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274039,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "8",
+        "G": "0.6",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274040,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "8",
+        "G": "0.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274041,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "11",
+        "G": "1.1000000000000001",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274042,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "10",
+        "G": "1.4",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274043,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "18",
+        "G": "3.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274044,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "21",
+        "G": "6.8",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274045,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "90+",
+        "F": "15",
+        "G": "7.9",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274046,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2018",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "100",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.2",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274047,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274048,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274049,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274050,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274051,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274052,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274053,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274054,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274055,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274056,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274057,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274058,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "7",
+        "G": "0.5",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274059,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274060,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "12",
+        "G": "1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274061,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "14",
+        "G": "1.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274062,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "12",
+        "G": "1.6",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274063,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "13",
+        "G": "2.6",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274064,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "18",
+        "G": "5.8",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274065,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "90+",
+        "F": "24",
+        "G": "12.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274066,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2019",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "104",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.2",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274067,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274068,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274069,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274070,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274071,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274072,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274073,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274074,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274075,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274076,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274077,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274078,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "5",
+        "G": "0.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274079,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "5",
+        "G": "0.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274080,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "12",
+        "G": "1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274081,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "12",
+        "G": "1.1000000000000001",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274082,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "14",
+        "G": "1.8",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274083,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "18",
+        "G": "3.4",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274084,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "17",
+        "G": "5.4",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274085,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "90+",
+        "F": "17",
+        "G": "8.3000000000000007",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274086,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2020",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "103",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.2",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274087,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274088,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274089,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274090,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274091,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274092,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274093,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274094,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274095,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274096,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274097,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274098,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "4",
+        "G": "0.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274099,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274100,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "12",
+        "G": "0.9",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274101,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "15",
+        "G": "1.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274102,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "19",
+        "G": "2.4",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274103,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "17",
+        "G": "3.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274104,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "13",
+        "G": "4",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274105,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "90+",
+        "F": "23",
+        "G": "10.9",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274106,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2021",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "109",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.2",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274107,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274108,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274109,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274110,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274111,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274112,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274113,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274114,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274115,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274116,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274117,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "7",
+        "G": "0.4",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274118,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274119,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "5",
+        "G": "0.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274120,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "7",
+        "G": "0.5",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274121,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "10",
+        "G": "0.9",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274122,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "13",
+        "G": "1.5",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274123,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "17",
+        "G": "3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274124,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "24",
+        "G": "7.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274125,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "90+",
+        "F": "14",
+        "G": "6.6",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274126,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2022",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "100",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.1",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274127,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274128,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274129,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274130,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274131,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274132,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274133,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274134,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274135,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274136,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274137,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274138,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "4",
+        "G": "0.3",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274139,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "2",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274140,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "7",
+        "G": "0.5",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274141,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "6",
+        "G": "0.5",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274142,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "16",
+        "G": "1.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274143,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "16",
+        "G": "2.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274144,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "19",
+        "G": "5.5",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274145,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "90+",
+        "F": "23",
+        "G": "10.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274146,
+      "values": {
+        "A": "Actual",
+        "B": "Vulvar cancer",
+        "C": "2023",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "99",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.1",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274147,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274148,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274149,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274150,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274151,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274152,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274153,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274154,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274155,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274156,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274157,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274158,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274159,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274160,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "10",
+        "G": "0.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274161,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "9",
+        "G": "0.8",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274162,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "18",
+        "G": "1.8",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274163,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "19",
+        "G": "3.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274164,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "21",
+        "G": "5.8",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274165,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "90+",
+        "F": "23",
+        "G": "10.5",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274166,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2024",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "111",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.1",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274167,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "00-04",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274168,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "05-09",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274169,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "10-14",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274170,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "15-19",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274171,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "20-24",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274172,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "25-29",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274173,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "30-34",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274174,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "35-39",
+        "F": "0",
+        "G": "0",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274175,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "40-44",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274176,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "45-49",
+        "F": "1",
+        "G": "0.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274177,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "50-54",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274178,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "55-59",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274179,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "60-64",
+        "F": "3",
+        "G": "0.2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274180,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "65-69",
+        "F": "10",
+        "G": "0.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274181,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "70-74",
+        "F": "8",
+        "G": "0.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274182,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "75-79",
+        "F": "20",
+        "G": "2",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274183,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "80-84",
+        "F": "20",
+        "G": "3.1",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274184,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "85-89",
+        "F": "22",
+        "G": "5.8",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274185,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "90+",
+        "F": "24",
+        "G": "10.7",
+        "H": ". .",
+        "I": ". .",
+        "J": ". .",
+        "K": ". .",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274186,
+      "values": {
+        "A": "Projections",
+        "B": "Vulvar cancer",
+        "C": "2025",
+        "D": "Persons",
+        "E": "All ages combined",
+        "F": "115",
+        "G": "0.4",
+        "H": "0.3",
+        "I": "0.4",
+        "J": "0.2",
+        "K": "0.1",
+        "L": " ",
+        "M": "C51"
+      }
+    },
+    {
+      "row": 274188,
+      "values": {
+        "A": ". .      not applicable",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274189,
+      "values": {
+        "A": "n.p.   not published due to small numbers, confidentiality, and/or reliability concerns",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274191,
+      "values": {
+        "A": "Notes",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274192,
+      "values": {
+        "A": "1. Actual data are provided between 1971 and 2023. Projected data are provided from 2024 to 2025.",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274193,
+      "values": {
+        "A": "2. Age-specific and age-standardised rates are expressed as per 100,000 population.",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274194,
+      "values": {
+        "A": "3. Age-standardised rates using the 2001 Australian Standard Population and 2025 Australian population are standardised using nineteen (19) 5-year age groups (0\u20134, 5\u20139, \u2026, 85\u201389, 90+).",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274195,
+      "values": {
+        "A": "4. Age-standardised rates using the WHO and Segi standard populations are standardised using eighteen (18) 5-year age groups (0\u20134, 5\u20139, \u2026, 80\u201384, 85+).",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274196,
+      "values": {
+        "A": "5. The number of deaths for 'All ages combined' include those with unknown age at death.",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274197,
+      "values": {
+        "A": "6. Data for acute myeloid leukaemia, other and unspecified myeloid leukaemia, other and unspecified lymphoid leukaemia are not comparable to data released in previous years due to a change in the ICD-10 coding of these groups. However, the data within this workbook is comparable between the years presented.",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274198,
+      "values": {
+        "A": "7. The following cancers have data from 1979 onwards: acute myeloid leukaemia, appendiceal cancer, cancer of the brain and other central nervous system, other central nervous system cancers, fallopian tube cancer, cancer of other endocrine glands, cancer of overlapping and unspecified sites in major salivary glands, cancer of overlapping and unspecified sites in urinary tract, sublingual gland cancer, submandibular gland cancer, urethral cancer.",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274199,
+      "values": {
+        "A": "8. The following cancers have data from 1997 onwards: all blood cancers combined, cancer of connective, subcutaneous and other soft tissues, endometrial cancer, Kaposi sarcoma, mesothelioma, myelodysplastic syndromes, myeloproliferative neoplasms, myeloproliferative neoplasms (excluding CML), other blood cancers, other and unspecified leukaemia, other and unspecified lymphoid leukaemia, other and unspecified myeloid leukaemia, cancer of the peripheral nerves and autonomic nervous system, other plasma cell cancers, other thoracic and respiratory organs.",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274200,
+      "values": {
+        "A": "9. Data for chronic myelomonocytic leukaemia (including juvenile) is available from 2013 onwards.",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274201,
+      "values": {
+        "A": "10. Mortality data from the National Mortality Database (NMD) is not available for the following cancers: all sarcomas combined, neuroendocrine neoplasms, non-melanoma skin cancer (rare types), soft tissue sarcomas, ovarian cancer and serous carcinomas of the fallopian tube, other female genital organs excluding serous carcinomas of the fallopian tube.",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    },
+    {
+      "row": 274203,
+      "values": {
+        "A": "Source: AIHW National Mortality Database",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": "",
+        "F": "",
+        "G": "",
+        "H": "",
+        "I": "",
+        "J": "",
+        "K": "",
+        "L": "",
+        "M": ""
+      }
+    }
+  ]
+}

@@ -1,10 +1,16 @@
 # M8 C03b: How do we identify the anion? Acid first, then barium and silver, with confirming tests for all eight anions (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (31 Oct): Codex error check 116 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 
 Narration 5,664 characters (Revision 2, summed per scene), 17 scenes (including the key notes hold), about 8.6 minutes (518 s), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending.
+
+Revision 3 changes (31 Oct; resolving `../checks/codex-check-116.md`):
+- codex-check-116 found no errors in this design; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8c03b-learning-review.md` (learning L1) and `../checks/m8c03b-claude-science-check.md` (no new findings; requested decisions)):
 - Memory line keeps the phosphate exception (learning L1, as proposed): scene 11 now says "To keep it straight: for barium and halide tests, acid first, using an acid that adds none of the ions you're testing for. Phosphate needs a separate neutral portion." "Nitric acid is the safe one." is cut; the screen line keeps "(HNO₃ before silver)". The halide ladder stays. Handwritten line 1 becomes "Barium and halides: acid first, adding none of the ions you're testing for (HNO₃ before silver)", with "Phosphate: a separate neutral portion." under it. Key note 2 starts "Barium and halides: acid first"; key note 4 starts "PO₄³⁻: a separate neutral portion"; the notes-screen memory aid and the memory aid check carry the same two parts.

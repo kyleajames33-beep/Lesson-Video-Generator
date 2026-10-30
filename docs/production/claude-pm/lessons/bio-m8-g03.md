@@ -1,10 +1,16 @@
 # G03 (Module 8 Biology): Feedback loop practice (design)
 
-Status: Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (31 Oct): Codex error check 116 resolved; ready to voice.
+
+Earlier status, Revision 2 (30 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 
 Narration 5,532 characters (Revision 2, unchanged from Revision 1; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 9.1 minutes (545 s) including holds, three countdowns and the notes hold. Nothing recorded; human listening pending.
+
+Revision 3 changes (31 Oct; resolving `../checks/codex-check-116.md`):
+- codex-check-116 found no errors in this design; no changes.
+- Count unchanged from Revision 2. Ready to voice.
 
 Revision 2 changes (30 Oct; resolving `../checks/m8g03-learning-review.md` (no findings) and `../checks/m8g03-claude-science-check.md` (science S1)):
 - Metadata (science S1): both site links are now the live `.sa.html` forms (lesson01 and lesson03), kept first.

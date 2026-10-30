@@ -1,0 +1,374 @@
+{
+  "brief": 121,
+  "date": "2026-10-30",
+  "generator": "OpenAI built-in imagegen",
+  "processingAuthorisation": "Deterministic alpha cleanup, proportional2000px resizing and alignment previously owner-authorised in brief108-provenance.json. Generated local-state edits confined to specified change regions to preserve shared apparatus/anatomy.",
+  "records": [
+    {
+      "key": "eye-long",
+      "path": "public/assets/biology/m8-eye-cutaway-long-v1.png",
+      "sha256": "b5d0e4ead902e0462f20d46f193328ed74d1ecd6ef7f9c1539cec66bfaac5eca",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-eye-long-final.png",
+      "nativeSha256": "aa38a0876353fd8f94c99b00101a63adbe36da6164b8925780a2547d2cb076c0",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-288d4ed8-dfa0-435e-928d-9dfe821644d1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        162,
+        141,
+        1881,
+        1857
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 6297,
+      "processing": {
+        "matrix": [
+          [
+            1.0111026962157863,
+            -0.002364402777288002,
+            17.354109833469913
+          ],
+          [
+            0.002364402777288002,
+            1.0111026962157863,
+            -15.513206434402036
+          ]
+        ],
+        "matches": 816,
+        "inliers": 424,
+        "medianInlierResidualPx": 1.9843149185180664,
+        "retakeReason": "Extend posterior eye while preserving anterior registration; shorten external optic-nerve stub to improve right margin. Earlier attempts retained in QA.",
+        "silhouetteProxyAtY900": 0.11696306429548553
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "retakeReason": "First registered result clipped the exiting optic nerve at the right canvas boundary; preserved as diagnostic. Retake keeps the front and shortens only the external nerve stub.",
+      "framingException": "Shared reference framing retained for cross-fades. Long eye has 5.95% right margin; preserving anterior registration takes precedence over independently shrinking this variant. Not clipped."
+    },
+    {
+      "key": "eye-short",
+      "path": "public/assets/biology/m8-eye-cutaway-short-v1.png",
+      "sha256": "f69ea05978425f77f5170c6953557b943e55b0c89f798e3e52d9afc270314381",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-eye-short.png",
+      "nativeSha256": "a999107cf1997e6ad9a66e2249fa072b2e471dcecb68ec2362670452ff128182",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-b1c48c8d-cb1e-4629-b9fd-148a7c35d92d.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        171,
+        148,
+        1660,
+        1845
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 7590,
+      "processing": {
+        "matrix": [
+          [
+            0.9996086988816355,
+            0.0007275997804808478,
+            -1.6531732618436368
+          ],
+          [
+            -0.0007275997804808478,
+            0.9996086988816355,
+            0.6712094400618317
+          ]
+        ],
+        "matches": 1317,
+        "inliers": 1059,
+        "medianInlierResidualPx": 1.3072524070739746,
+        "frontRegistrationOnly": "Posterior anatomy is allowed to move. Inspect measured axial extent before acceptance."
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Shared reference framing retained for cross-fades. Long eye has 5.95% right margin; preserving anterior registration takes precedence over independently shrinking this variant. Not clipped."
+    },
+    {
+      "key": "eye-cataract",
+      "path": "public/assets/biology/m8-eye-cutaway-cataract-v1.png",
+      "sha256": "3a5cbada2368d503a7334b2eba29fe08b2ec3fb21528467c57382297aa3a3e7b",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-eye-cataract.png",
+      "nativeSha256": "302da9322f49701ff2d68c80c6f6f3e90286246301f541a33befccb3959d409b",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-84a82d5e-39d0-422d-af6e-c64e5dfd13f0.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        177,
+        160,
+        1822,
+        1840
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 24901,
+      "processing": {
+        "matrix": [
+          [
+            0.9997371704764079,
+            0.00010933106822713371,
+            -0.14342020797272548
+          ],
+          [
+            -0.00010933106822713371,
+            0.9997371704764079,
+            0.09058392316007528
+          ]
+        ],
+        "matches": 1388,
+        "inliers": 1245,
+        "medianInlierResidualPx": 0.33788546919822693,
+        "generatedEditConfinedToLens": true
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Shared reference framing retained for cross-fades. Long eye has 5.95% right margin; preserving anterior registration takes precedence over independently shrinking this variant. Not clipped."
+    },
+    {
+      "key": "eye-iol",
+      "path": "public/assets/biology/m8-eye-cutaway-iol-v1.png",
+      "sha256": "62bfd17cb5673eb02ccf9b746165d82819e3d85506bedf813ef9466935785c18",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-eye-iol.png",
+      "nativeSha256": "1c965e3e8e56b410f74549cf3dc5b193791f7183189cf02a1b507537718e5157",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-41660352-106d-4e5b-8fff-65964a9b655a.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        177,
+        160,
+        1822,
+        1840
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 23034,
+      "processing": {
+        "matrix": [
+          [
+            0.9998477342760492,
+            -8.82099291220316e-05,
+            -0.05326480807889488
+          ],
+          [
+            8.82099291220316e-05,
+            0.9998477342760492,
+            -0.11187957998647555
+          ]
+        ],
+        "matches": 960,
+        "inliers": 782,
+        "medianInlierResidualPx": 0.3511260151863098,
+        "generatedEditConfinedToLens": true
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Shared reference framing retained for cross-fades. Long eye has 5.95% right margin; preserving anterior registration takes precedence over independently shrinking this variant. Not clipped."
+    },
+    {
+      "key": "cornea",
+      "path": "public/assets/biology/m8-cornea-closeup-v1.png",
+      "sha256": "96b70a7b26a6643124df8aa0bc63b67a56740a842b252c74a0890d3287ecd8e6",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-cornea.png",
+      "nativeSha256": "660ac338889790dbb6aee437d6684068dae3381c622c4b0c428844c9c8c416b0",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-c311603b-e727-4c31-b8f2-66d8240a49bd.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        629,
+        164,
+        1368,
+        1839
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 10719,
+      "processing": {
+        "transform": "Same full square canvas proportionally mapped to2000; no independent crop or stretch between trio.",
+        "commonTrioCrop": [
+          663,
+          60,
+          1495,
+          1946
+        ],
+        "commonTrioUniformScale": 0.8907741251325557,
+        "commonTrioPosition": [
+          629,
+          160
+        ]
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Common union crop and common proportional transform preserve trio alignment with 8% top/bottom margins."
+    },
+    {
+      "key": "cornea-flap",
+      "path": "public/assets/biology/m8-cornea-lasik-flap-v1.png",
+      "sha256": "d4335421f41ef9f5861fdcce06c8b92be2551e9ffe37e928e49320a1580166d4",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-cornea-flap.png",
+      "nativeSha256": "ac996c61df4cb002eaefca4cf95000d02ad0931993a136f9a83527502e1f381a",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-d8a26982-ccdf-49a4-830e-ff3d7ec38829.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        629,
+        160,
+        1369,
+        1840
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 9745,
+      "processing": {
+        "transform": "Same full square canvas proportionally mapped to2000; no independent crop or stretch between trio.",
+        "commonTrioCrop": [
+          663,
+          60,
+          1495,
+          1946
+        ],
+        "commonTrioUniformScale": 0.8907741251325557,
+        "commonTrioPosition": [
+          629,
+          160
+        ]
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Common union crop and common proportional transform preserve trio alignment with 8% top/bottom margins."
+    },
+    {
+      "key": "cornea-flat",
+      "path": "public/assets/biology/m8-cornea-flattened-v1.png",
+      "sha256": "95f408fc5d3e47ede693313bfa89307fcc5a6261e66569cb330fa40bd58182d0",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-cornea-flat.png",
+      "nativeSha256": "af327eb43efdbc13749627994eabdaa4c05f88df8e81d0ead9eb5487d63361f6",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-cc882670-0f11-4d4f-9af7-a390d23e75dc.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        711,
+        164,
+        1370,
+        1840
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 10748,
+      "processing": {
+        "transform": "Same full square canvas proportionally mapped to2000; no independent crop or stretch between trio.",
+        "commonTrioCrop": [
+          663,
+          60,
+          1495,
+          1946
+        ],
+        "commonTrioUniformScale": 0.8907741251325557,
+        "commonTrioPosition": [
+          629,
+          160
+        ]
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending.",
+      "framingException": "Common union crop and common proportional transform preserve trio alignment with 8% top/bottom margins."
+    },
+    {
+      "key": "lens",
+      "path": "public/assets/biology/m8-intraocular-lens-v1.png",
+      "sha256": "1e8250d590916a9c1ed3213a4f379225e5be172cd23f3a35d86cf76f887d6b21",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-lens.png",
+      "nativeSha256": "273bbb800baf3647f8fa12ae372a992c1b471c96095cf43d031a3760ff1a51eb",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-3f6d666d-13d2-4945-8a82-c4fcc9e05050.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        418,
+        200,
+        1582,
+        1800
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 29059,
+      "processing": {
+        "nativeCrop": [
+          249,
+          90,
+          1036,
+          1172
+        ],
+        "uniformScale": 1.478743068391867
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    }
+  ],
+  "qaLimit": "Still inspection only. No cross-fade playback, owner approval or voiced preview pass.",
+  "exactPrompts": "docs/production/claude-pm/assets/brief116-121-imagegen-call-log.json"
+}

@@ -112,8 +112,8 @@ A tertiary alcohol leaves dichromate orange (see Module 7: tertiary won't budge)
 
 ### Mass spectrometry
 
-**Rightmost significant peak is the molecule; tallest peak is the base.** *Shortcut / Trap*
-The molecular ion (M⁺) is the peak at the highest m/z (ignore a tiny M+1 peak just after it), and it gives the molar mass. It can be small, especially for alcohols. The base peak is simply the tallest peak, set to 100%. They're often different peaks, and confusing them is a common lost mark.
+**Find the molecular ion cluster; the tallest peak is the base.** *Shortcut / Trap* (corrected 31 Oct 2026: "rightmost peak is the molecule" fails when isotope peaks such as M+1 or chlorine's M+2 sit to its right)
+The molecular ion (M⁺) is the main peak of the cluster at the high-m/z end, and it gives the molar mass. Small peaks just after it (M+1, or M+2 for chlorine and bromine) come from the same structure with a heavier isotope. It can be small, especially for alcohols. The base peak is simply the tallest peak, set to 100%. They're often different peaks, and confusing them is a common lost mark.
 
 **Common fragments and losses.** *Shortcut*
 - m/z 15: CH₃⁺. m/z 29: C₂H₅⁺ (or CHO⁺). m/z 43: C₃H₇⁺ (or CH₃CO⁺). m/z 45: COOH⁺ (but alcohols can also give 45). m/z 31: CH₂OH⁺, typical of primary alcohols.
@@ -138,8 +138,8 @@ Below about 1500 cm⁻¹ there are too many peaks to assign one by one. A strong
 **¹³C NMR: one peak per carbon environment, and symmetry merges them.** *Shortcut*
 Draw the molecule and look for a mirror line. Carbons that swap places under the symmetry are in the same environment and give one peak. Propan-2-ol has three carbons but only two peaks.
 
-**Further left means closer to an electronegative atom.** *Insight*
-Higher chemical shift (ppm) means the atom is deshielded by nearby oxygen or nitrogen. C=O carbons appear far left, around 160 to 220 ppm.
+**More deshielded means further left; check the data-sheet group.** *Insight* (corrected 31 Oct 2026: shift is not a simple distance-to-oxygen rule, so match each peak to the data sheet's group ranges)
+Higher chemical shift (ppm) means the nucleus is more deshielded, often by nearby oxygen or nitrogen, but bonding type matters too. C=O carbons appear far left, around 160 to 220 ppm.
 
 **¹H and ¹³C use different scales.** *Trap*
 ¹H shifts run from about 0 to 12 ppm; ¹³C shifts run from about 0 to 220 ppm. Always read the matching data-sheet table.
@@ -241,8 +241,8 @@ Two trends rising together don't prove one causes the other. Look for confoundin
 
 ### Technologies for disorders
 
-**Malleus, incus, stapes: alphabetical, from outside in.** *Mnemonic*
-Sound path: pinna → ear canal → eardrum → malleus → incus → stapes → oval window → cochlea (hair cells) → auditory nerve. The three tiny bones are in alphabetical order in the direction sound travels.
+**Malleus, incus, stapes: "Make It Sound", from outside in.** *Mnemonic* (corrected 31 Oct 2026: the old "alphabetical" line was false, since incus comes before malleus alphabetically)
+Sound path: pinna → ear canal → eardrum → malleus → incus → stapes → oval window → cochlea (hair cells) → auditory nerve. M, I, S, "Make It Sound", gives the three tiny bones in the direction sound travels.
 
 **A hearing aid makes sound louder; a cochlear implant skips the broken part.** *Insight* (most important hearing distinction)
 - **Conductive hearing loss:** sound can't reach the cochlea properly (wax, a damaged eardrum, stiff ossicles). A hearing aid amplifies sound, or a bone conduction implant bypasses the middle ear.
@@ -269,4 +269,4 @@ The recipient's immune system sees the donor organ's antigens as foreign and att
 ## Notes for script writers
 
 - Check each aid against the exact lesson before use and keep its conditions in the narration (for example, the n + 1 rule ignores OH hydrogens in typical HSC spectra).
-- The strongest single aids, if a lesson can only carry one: test with the most selective reagent first; rightmost big peak is the molecule, tallest is the base; beard plus sword means acid; the n + 1 rule with triplet-quartet = ethyl; mass, groups, map; yield vs atom economy (Chemistry). Insulin lets glucose in, glucagon when it's gone; type 1 no key, type 2 jammed lock; incidence is the tap, prevalence is the bath; a hearing aid makes it louder, a cochlear implant skips the broken part; myopia focuses in front, concave caves in (Biology).
+- The strongest single aids, if a lesson can only carry one: test with the most selective reagent first; find the molecular ion cluster, tallest is the base; beard plus sword means acid; the n + 1 rule with triplet-quartet = ethyl; mass, groups, map; yield vs atom economy (Chemistry). Insulin lets glucose in, glucagon when it's gone; type 1 no key, type 2 jammed lock; incidence is the tap, prevalence is the bath; a hearing aid makes it louder, a cochlear implant skips the broken part; myopia focuses in front, concave caves in (Biology).

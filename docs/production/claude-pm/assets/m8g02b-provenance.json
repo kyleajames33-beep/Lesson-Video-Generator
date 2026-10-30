@@ -1,0 +1,56 @@
+{
+  "brief": 121,
+  "date": "2026-10-30",
+  "generator": "OpenAI built-in imagegen",
+  "processingAuthorisation": "Deterministic alpha cleanup, proportional2000px resizing and alignment previously owner-authorised in brief108-provenance.json. Generated local-state edits confined to specified change regions to preserve shared apparatus/anatomy.",
+  "records": [
+    {
+      "key": "bowel",
+      "path": "public/assets/biology/m8-bowel-screening-kit-v1.png",
+      "sha256": "71c5af661ce5462610715e515a62c344c9ccbfdb7f4041a9db2c26e5e5b262d7",
+      "nativePath": "docs/production/claude-pm/assets/brief121-qa/native-bowel.png",
+      "nativeSha256": "8076e0954d0cd0f893b89303d422023523cad132be26e07bdfc8093046bd224c",
+      "sourcePath": "C:/Users/kygs/.codex/generated_images/01a18c5f-2ba8-7000-acdf-9939ac6ce15e/exec-6227a0e7-ac01-4c0c-9f7c-d2d5f63ac170.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "size": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alphaBbox": [
+        200,
+        229,
+        1800,
+        1770
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "removedFringePixels": 25760,
+      "processing": {
+        "nativeCrop": [
+          81,
+          107,
+          1211,
+          1195
+        ],
+        "uniformScale": 1.415929203539823
+      },
+      "qaStatus": "Root inspected native contact, cream/dark-board QA and aligned overlays. Owner artwork acceptance and playback remain pending."
+    }
+  ],
+  "sharedReuse": [
+    {
+      "path": "public/assets/biology/m8-aav-vector-v1.png",
+      "sha256": "ea8f191c307dd3ea5a0a2498176e603f3aabae309659087c57442e6bf94ee93c",
+      "originBrief": 120,
+      "use": "G02 AAV vector; same file reused, not generated twice."
+    }
+  ],
+  "qaLimit": "Still inspection only. No cross-fade playback, owner approval or voiced preview pass.",
+  "exactPrompts": "docs/production/claude-pm/assets/brief116-121-imagegen-call-log.json"
+}

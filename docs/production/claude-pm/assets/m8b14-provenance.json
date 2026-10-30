@@ -1,0 +1,136 @@
+{
+  "design": "bio-m8-b14",
+  "brief": 120,
+  "mainProvenance": "docs/production/claude-pm/assets/brief120-provenance.json",
+  "records": [
+    {
+      "key": "m8-aav-vector-v1",
+      "subject": "biology",
+      "prompt": "Use case: scientific-educational. Project transparent PNG cutout with real alpha. One adeno-associated virus gene-therapy vector, enormously enlarged: a plain non-enveloped roughly spherical ICOSAHEDRAL protein capsid, geometric softly faceted cream and blue shell, no spikes and no membrane. A small cutaway window reveals one short OPEN LINEAR single-stranded blue DNA filament inside, loosely bent, NOT a closed loop or ring and NOT a double helix. Scientifically clear simple shell containing a single strand. Fine dark ink outlines and layered watercolour washes in textbook natural-history style. Entire object inside central70 percent of square canvas, at least15 percent clear transparent margin all sides. No text,letters,numbers,logos,brands,labels,arrows,people,hands,faces,background or ground shadow. Requested2000x2000. Filename m8-aav-vector-v1.png.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a18c61-a66e-76f2-8e90-9e0f5a6750d0 as C:\\Users\\kygs\\.codex\\generated_images\\01a18c61-a66e-76f2-8e90-9e0f5a6750d0\\exec-49ee31e5-a829-4d99-b698-68b576ba35d6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "rawPath": "docs/production/claude-pm/assets/brief120-raw/05-m8-aav-vector-v1.png",
+      "rawSha256": "bccccd2ceab01286f9ca2a0e188113e0f2d10d4fdea8e9a3d16967903e102252",
+      "rawSize": [
+        1254,
+        1254
+      ],
+      "finalPath": "public/assets/biology/m8-aav-vector-v1.png",
+      "finalSha256": "ea8f191c307dd3ea5a0a2498176e603f3aabae309659087c57442e6bf94ee93c",
+      "finalSize": [
+        2000,
+        2000
+      ],
+      "alphaBounds": [
+        281,
+        220,
+        1719,
+        1780
+      ],
+      "clearMarginFractions": [
+        0.1405,
+        0.11,
+        0.1405,
+        0.11
+      ],
+      "transform": {
+        "method": "alpha-bounds proportional fit, no stretching",
+        "rawCrop": [
+          134,
+          94,
+          1121,
+          1165
+        ],
+        "scale": 1.4565826330532212,
+        "offset": [
+          281,
+          220
+        ]
+      },
+      "alphaCleanup": "alpha<=8 removed; one raw pixel erosion; proportional Lanczos resampling",
+      "qaStatus": "technical visual check completed; owner art and teaching approval pending"
+    },
+    {
+      "key": "m8-blastocyst-v1",
+      "subject": "biology",
+      "prompt": "Use case: scientific-educational. Transparent PNG, real alpha. One human day-five BLASTOCYST as a microscope specimen, seen in sectional natural-history view. A round fluid-filled ball: a thin outer wall of flattened trophectoderm cells, a LARGE CLEAR CAVITY occupying most of the ball, and one compact cluster of round cells (inner cell mass) pressed against the LEFT inner wall. Thin transparent zona pellucida shell around the whole ball, slightly opened on the RIGHT side away from the cell cluster. Soft pink and cream cells, pale transparent blue cavity. Do not make a solid morula. No instruments yet. Fine dark ink outlines with layered watercolour washes in natural-history textbook style. Keep complete object in central70 percent of square canvas with clear15percent transparent margins. No text,letters,numbers,labels,arrows,logos,brands,people,hands,heads,faces,background.2000x2000. Filename m8-blastocyst-v1.png.",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a18c61-a66e-76f2-8e90-9e0f5a6750d0 as C:\\Users\\kygs\\.codex\\generated_images\\01a18c61-a66e-76f2-8e90-9e0f5a6750d0\\exec-314ecdfd-9915-4944-a8a8-46956dcca303.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "rawPath": "docs/production/claude-pm/assets/brief120-raw/09-m8-blastocyst-v1.png",
+      "rawSha256": "993dd54cef6c5c153ec30bbde80eb80a9b63a734007e18e481e46f6f5b5e932f",
+      "rawSize": [
+        1254,
+        1254
+      ],
+      "finalPath": "public/assets/biology/m8-blastocyst-v1.png",
+      "finalSha256": "df95457424dbfe3afabfe7a59413c5d4e70c98e74909f28d1e7c85c1642e1ce8",
+      "finalSize": [
+        2000,
+        2000
+      ],
+      "alphaBounds": [
+        327,
+        334,
+        1674,
+        1665
+      ],
+      "clearMarginFractions": [
+        0.1635,
+        0.167,
+        0.163,
+        0.1675
+      ],
+      "transform": {
+        "method": "common full-canvas transform for aligned pair",
+        "scale": 1.2759170653907497,
+        "offset": [
+          200,
+          200
+        ]
+      },
+      "alphaCleanup": "alpha<=8 removed; one raw pixel erosion; proportional Lanczos resampling",
+      "qaStatus": "technical visual check completed; owner art and teaching approval pending"
+    },
+    {
+      "key": "m8-blastocyst-biopsy-v1",
+      "subject": "biology",
+      "prompt": "Edit only the rightmost trophectoderm biopsy site. Preserve the exact round embryo outline, zona shell, inner cell mass at left, cavity, every other cell, perspective, scale, framing, watercolour colours and lighting. Add one very fine clear glass micropipette entering horizontally from the right through the opening, drawing THREE outer-layer trophectoderm cells slightly out to the right. The inner cell mass must remain untouched. No holding pipette, hands or microscope. Keep identical original canvas and true transparent alpha.",
+      "input": "C:/lesson-video-generator/public/assets/biology/m8-blastocyst-v1.png",
+      "output_hint": "Generated images are saved to C:\\Users\\kygs\\.codex\\generated_images\\01a18c61-a66e-76f2-8e90-9e0f5a6750d0 as C:\\Users\\kygs\\.codex\\generated_images\\01a18c61-a66e-76f2-8e90-9e0f5a6750d0\\exec-ff2609a3-924a-4ad3-887e-852e83e7e26a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "rawPath": "docs/production/claude-pm/assets/brief120-raw/11-m8-blastocyst-biopsy-v1.png",
+      "rawSha256": "eb377e011ef6bb29460f05c96a071775a56e16fbaa62771e33826c870cc9a4b0",
+      "rawSize": [
+        1254,
+        1254
+      ],
+      "finalPath": "public/assets/biology/m8-blastocyst-biopsy-v1.png",
+      "finalSha256": "885b9543816d443a9201568d4be8a74cd63c1790ae2d6ae5dcb85293916852c0",
+      "finalSize": [
+        2000,
+        2000
+      ],
+      "alphaBounds": [
+        325,
+        331,
+        1800,
+        1669
+      ],
+      "clearMarginFractions": [
+        0.1625,
+        0.1655,
+        0.1,
+        0.1655
+      ],
+      "transform": {
+        "method": "common full-canvas transform for aligned pair",
+        "scale": 1.2759170653907497,
+        "offset": [
+          200,
+          200
+        ]
+      },
+      "alphaCleanup": "alpha<=8 removed; one raw pixel erosion; proportional Lanczos resampling",
+      "qaStatus": "technical visual check completed; owner art and teaching approval pending"
+    }
+  ],
+  "qa": "See the main provenance and per-brief QA. Candidate artwork; owner acceptance and playback are pending.",
+  "reuseNote": "Only newly commissioned files from this brief are repeated here. Earlier catalogue assets remain documented in their original provenance."
+}
