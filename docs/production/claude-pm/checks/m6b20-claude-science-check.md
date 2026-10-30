@@ -96,3 +96,16 @@ One science blocker (1, shared with learning finding 1) and seven should-fix fin
 
 ## Resolution
 
+Resolved in `../lessons/bio-m6-b20.md` Revision 2 (30 Oct; root resolver, Claude PM). Overlapping fixes with `m6b20-learning-review.md` were merged into one edit each. Recount by script: 5,948 characters, about 567.7 s.
+
+| # | Outcome | Note |
+| --- | --- | --- |
+| 1 | Fixed (merged with learning 1) | No carrier-share or field-share frequency remains. The gene pool is described as alleles. The selfing clause uses the proposed wording. The selection-versus-seed-choice analogy is removed. The memory line is scoped to Golden Rice. Every repeated summary has been repaired. |
+| 2 | Fixed (as proposed) | Scene 2 now reads "Golden Rice 2 was reported in 2005. Two added genes, from maize and a soil bacterium, complete its beta-carotene pathway in the grain." The strips are labelled "beta-carotene pathway genes". The *pmi* marker and the 37/31 µg/g dry-weight maxima are in author notes only. |
+| 3 | Fixed (as proposed) | Scene 2 now says "Food safety reviews cleared it in Australia, New Zealand and Canada, and the US FDA completed its consultation in 2018." The chips match the proposed wording. The December 2017 approval and 22 February 2018 gazettal distinction is in author notes. |
+| 4 | Fixed (dated, softened) | The hook says "it has reached very little farmland". Scene 4 says "in April 2024 the Court of Appeals revoked its commercial planting permit", followed by a sentence on legal constraint. Scene 9 says "since the 2024 ruling". The current status (programme on hold, Supreme Court appeal, docket not certified) and the 202 ha historical area are author notes only, with a recheck at recording. |
+| 5 | Fixed (softened) | Scene 5 describes the licence "as published" (US$10,000, no technology royalty, seed saving) and says seed production and delivery still need funding. The patent sentence, padlock, profit claim, delay claim and timeline are removed. "Money shaped how slowly" is cut from scene 9. Current licence terms and patents are not certified and are recorded in author notes. |
+| 6 | Fixed (softened) | Scene 7 now says "In recent seasons nearly all Australian cotton has carried added Bt genes", and that exposure "can favour variants that survive them". It also covers refuges and monitoring. A qualitative selection-pressure arrow replaces the pest meter. There is no single "Bt allele", and the chip reads "grown mainly for fibre". The 2026 Bt share is not certified and is recorded in author notes. |
+| 7 | Fixed (as proposed) | Scene 9 now reads "some gene drives can spread after a small release, so context also matters at the decision to release". The mini-grid is labelled "possible spread, not every drive", and a governance label is added. The no-release claim is not in learner copy. |
+| 8 | Fixed (as proposed) | The demand now asks about authorised commercial uptake and says "carrying the same added gene". The India sentence reads "India's moratorium blocked authorised commercial uptake". The India chip reads "commercial approval: withheld", with no zero meter. The Bangladesh tag reads "uptake adds Bt plants". The model answer is updated to match. |
+

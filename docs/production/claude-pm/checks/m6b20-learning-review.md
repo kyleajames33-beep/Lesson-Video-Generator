@@ -131,3 +131,17 @@ Two blockers (1 and 2), five should-fix findings (3 to 7), no optional findings.
 
 ## Resolution
 
+Resolved in `../lessons/bio-m6-b20.md` Revision 2 (30 Oct; root resolver, Claude PM). Overlapping fixes with `m6b20-claude-science-check.md` were merged into one edit each. Recount by script: 5,948 characters, about 567.7 s (11b about 29.2 s, 11d about 27.5 s).
+
+| # | Outcome | Note |
+| --- | --- | --- |
+| 1 | Fixed (merged with science 1) | Scene 3 is the proposed rewrite, with the science wording "pollen rarely passes these genes to other plants". The meter now reads "share of planted area growing Golden Rice", with no number and no 0 to 1 scale. The grid is labelled "illustration, not measured area" and uses equal fields. The outline is labelled "rice crop in the region". The selection analogy and wild inset are removed, and one pollen transfer stays visible. Scene 10, the notes, the memory check and the stop boundary all use "For Golden Rice, seed choice controls most of the spread." Scope, attempts and metadata no longer say seed choice sets the allele frequency. |
+| 2 | Fixed | Scene 8 now compares PhilRice, "Golden Rice: a safe and healthy food" (13 September 2021) with Greenpeace Southeast Asia, "Golden Rice" (28 February 2013). Each card shows its title and date and a labelled paraphrase. A tag reads "one claim from a longer document". Evidence tags read "regulator safety assessments" and "evidence for other nutrition measures". The four checks (same question, date, evidence, who produced it) come in order, and only the current one is bright. The narration dates the Greenpeace argument and ends "safety alone can't settle which approach reaches children best". The scene was trimmed to 549 characters. |
+| 3 | Fixed (as proposed) | The spoken and card demands now read "used together to decide". 11d is the proposed text, and the table ends with "decision needs yield and market access". The model answer is updated to match. |
+| 4 | Fixed (as proposed) | The four short notes and the scoped memory line replace the five long bullets. The dated history stays in the narration. |
+| 5 | Fixed | The cue anchors are now "most of the diet" and "capability isn't the problem". The year bars draw on "from 2005", before the gene sources, with 2000 kept as a dim reference. |
+| 6 | Fixed | "That completes Module 6." is cut. The combined total is 567.7 s, under the 570 s cap and above 5,500 characters. |
+| 7 | Fixed (task arranged) | Codex asset brief item 4 is a new edge-cleanup task for the golden-white-rice and Bt cotton plates: alpha cleanup only, with backups and before/after hashes, and no redraw. Both scenes use these plates only after the cleanup passes. |
+
+Also changed (root decision): scene 6 now states the cause from food choice to planting ("If fewer people want to buy it, farmers have less reason to plant it"). The Indigenous perspectives point stays out of learner copy and remains flagged for the owner's cultural review.
+
