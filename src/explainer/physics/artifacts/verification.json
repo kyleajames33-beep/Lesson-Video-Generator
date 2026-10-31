@@ -1,0 +1,238 @@
+{
+  "checks": [
+    {
+      "label": "Scoped TypeScript",
+      "status": "pass",
+      "stdout": ""
+    },
+    {
+      "label": "Module 5 model invariants",
+      "status": "pass",
+      "stdout": "Module 5: projectile symmetry, range, torque, circular orthogonality, loop energy, orbit energy, Kepler area/time and ellipse checks passed."
+    },
+    {
+      "label": "Module 6 model invariants",
+      "status": "pass",
+      "stdout": "Module 6: 12 visual registrations; force signs, radius, inverse distance, torque angle, Faraday derivative, rod energy, transformer power, line-loss ratio and slip pass."
+    },
+    {
+      "label": "Module 7 model invariants",
+      "status": "pass",
+      "stdout": "Module 7 science checks passed: 963. Playback and independent review pending."
+    },
+    {
+      "label": "Module 8 model invariants",
+      "status": "pass",
+      "stdout": "Module 8: 10 unique families, all 17 site pages mapped; physical model and deterministic-source invariants passed.\nSource checks do not approve visual layout, motion at playback speed or complete teaching coverage."
+    },
+    {
+      "label": "projectile-details invariants",
+      "status": "pass",
+      "stdout": "Projectile details: component norm, range derivation, wall datum/clearance, both target roots and equal-scale drawing bounds passed."
+    },
+    {
+      "label": "practical-details invariants",
+      "status": "pass",
+      "stdout": "Practical details: mean/half-range, squared intervals, feasible gradient bounds, inverse speed relation and endpoint holds pass."
+    },
+    {
+      "label": "rotation-details invariants",
+      "status": "pass",
+      "stdout": "PASS: moment geometry, signed beam balance, pendulum projection and dynamics, bank force balances and static-friction capacity."
+    }
+  ],
+  "sourceHashes": {
+    "catalog.ts": "69b0a724ddde53f3ecd8a8963aa92a02726c9beb97ecfaa005ae07bcf02e4b33",
+    "course-entry.tsx": "52430946b03feaba969cd101ff53333f52583f4662c29b3cd708264e4204e3b4",
+    "course-kit.tsx": "f686b2bce3ecda9c02ad6b5796e9aab4af58ebbf7f0a63f74bac1ccf6be8e4ee",
+    "course-preview.tsx": "55dbdfd15291103a8ec150e5db6f1f3fe443725252439daf14f0e840de74b2de",
+    "diagram-audit.tsx": "3c294042a73f847b0f9519d150bf5381f5545e5883edcaf49a4de99f934c1375",
+    "gallery.tsx": "a2b101511482199543f99df4a5df8d8d201b0e0f21c8a27fbd9a4b10975ec6c2",
+    "module5/index.tsx": "869d3df0daa77ee7c80e7aa1a734ad48de3a438257f2ba31a3281a5e28b062a0",
+    "module5/model.ts": "7dc2bd1777e7b5b5ba9d61073a010241b5ad89e7ff12993a882d681588d77585",
+    "module5/practical-details/index.tsx": "468bd6e9f2ce6b0882b8cc0d851c593ab1c0e97bac9f0d6c0dfcb4085170289d",
+    "module5/practical-details/model.ts": "3de0b3c7a7463c3d7d51c0777b13a82511447104a9d525028f05cadbb1d3901d",
+    "module5/practical-details/README.md": "e1512adefb80cf19d2cd34c6a4a08c1b889ba4dfb8f6520d658bbeb1b9cdb091",
+    "module5/practical-details/verify.mjs": "c38c6782e575408fd22f6570db881ccf5f85d1314026c6f319ccc1b486b7e4cb",
+    "module5/projectile-details/index.tsx": "ed98a25e08737a87245621f35e437a019243c2bd76671c76beda4e1ea54f5d7b",
+    "module5/projectile-details/model.ts": "e2f91f3dcca85cc847a864531fe2c1453e1144104e079a2e66f3c0c60690360c",
+    "module5/projectile-details/README.md": "c3881b857d95f9e0c68814229a00f66872703c48a02d32f91246f23e5d845f36",
+    "module5/projectile-details/verify.mjs": "9b1713e559b00be4ffea4a1318a5bb66a488d90873aaa94f2e80bd8b600e0079",
+    "module5/README.md": "ba1d87c94bfaff75676dd28cd0f6479d5525a93a55b046fcbcd83f52d37702e6",
+    "module5/rotation-details/index.tsx": "234556ef9873edee76d04d87a26fbc56e9da527535435cb0e9fb42fd8ac74022",
+    "module5/rotation-details/model.ts": "365123f8d85a2bc5068603f2a144334f711dd06aadea1644824afe6c32abd5d1",
+    "module5/rotation-details/README.md": "f855a94fcf8bd9161a813c7cda19f63003d91811ebacc44f14f0d15bf9ce4a81",
+    "module5/rotation-details/verify.mjs": "f62bae9815cf53e18b0b18d2c0248de5275217b3f2cbc6a4134f758ce9f79da0",
+    "module5/verify.mjs": "5d85474b175af22197d85e7fd4717fa4773ca1f8a535eb12245a49756d1e551a",
+    "module6/index.tsx": "22d6290d8aed218f8264fe52ec6656ec20d44197b9438d085b92ceb6fd0489a5",
+    "module6/model.ts": "70b95d21cbaa7f6731aa323e35bac38393894ba0f177ef3b956673a1cc4a4acd",
+    "module6/README.md": "f2167f189f15a7df1532c25667cba62f3fa70f3149524f6a0e564efb493cb80b",
+    "module6/verify.mjs": "7739874742352dab2e73e480a141b69fb048c932190cfaf6b6a316a64530a5de",
+    "module7/index.tsx": "e9938da3b5aa3989e5778ac26872292bb7b54e02da102e114a3de2cc511d8bea",
+    "module7/model.ts": "fec56ebe1c914cc1751dfc2c386ea8da609c14fea91309accb01094111c0cc13",
+    "module7/README.md": "12bffe5ca61bdfd97fe0d38aa2e6852e790748f6b328318bd03df646916ebf61",
+    "module7/verify.mjs": "c569dd285ccb88ff95f57ab583d72a7b6f29049a153071e6478c6f417434269e",
+    "module8/index.tsx": "9f7cc1dfbe507d13ad2fbd5227c76a78cf13f9f79e1e1eaaaf3d877187b03fce",
+    "module8/model.ts": "b53ba322fec10fa7ce89a39e641a1bd025d62b5fe80e4a3507b2e895f5d0a45d",
+    "module8/README.md": "6f6f9ba8f5bd4b3a475d8ad7b596738b4d1422b6bddc751f03c2075ec72530da",
+    "module8/verify.mjs": "ce76086dada6bd0206958b388158f38a0d9f4e1dbef387658af13d0128f6af48",
+    "projectile/components.tsx": "2f1e6da7c7b53429ab8d5855d90d741fdefee78ccdbcfa664d9b059074ae6f55",
+    "projectile/entry.tsx": "f7b1bbcdc0e45bf0ecc2a95a3a96a5320573b9930dd95d357df87f1a0b98dc1d",
+    "projectile/fonts.ts": "f7a81f8bde470f3aa17b1435d70520cdff3be70cb05ae8244d6c890791fc2c7d",
+    "projectile/model.ts": "65c1b8893bfc6ff8bc13c5d8719fe3738bf59b8b7b5344ab3048d751926d620c",
+    "projectile/preview.tsx": "cf64a25d78e984f53967cc4beb9190d5ff1a11e6e0efb3d9d1a10d6916b65e8b",
+    "projectile/README.md": "b9fbcd66c5f3e5c383411a09fe5565a4695c8a261fe348c2cf1d540336126ad0",
+    "projectile/render.mjs": "bfee139341957733dc55c737950e3e9e3d1d669ab88f6f27305af66380fd7598",
+    "projectile/review.html": "453afc0e2a2bf61c4bf151304de0cc9803026c42226efefe31ec28e80803efbc",
+    "projectile/verify.mjs": "e8fac0fc1f79d867bf7fff32a5ebaa5ab2d173df8a0ed9a0dfd53a2b4cee1122",
+    "README.md": "0b296b4ef554d2c05987f5d5964d943a413ac93873c70dbc32c1c668333f139c",
+    "render-course.mjs": "c71f8f4a3da3f5f67ecc457775ee79e58d771f922906f841f5df1501b3d54cc9",
+    "timing.ts": "6d5bd65e2dd133b246823096c6f6075b7b7f9f456861ab5d2cd36e497e428312",
+    "verify-course.mjs": "5ca9395551d941637aafdf945065c58fd0d90c1f44a4d04a80210e5bd73c16da"
+  },
+  "media": [
+    {
+      "key": "module5",
+      "seconds": 24,
+      "module": 5,
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1",
+          "nb_frames": "720",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ],
+      "format": {
+        "duration": "24.000000"
+      },
+      "sha256": "30e9bbe5c716c4d3b4bc3235cb334f730e39c50c03fe0967c43d4010b00e7ec8"
+    },
+    {
+      "key": "module6",
+      "seconds": 24,
+      "module": 6,
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1",
+          "nb_frames": "720",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ],
+      "format": {
+        "duration": "24.000000"
+      },
+      "sha256": "fdfe3fdf1699416f1f4dc23c3fced51408190b6752f166b6c648059d78403172"
+    },
+    {
+      "key": "module7",
+      "seconds": 24,
+      "module": 7,
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1",
+          "nb_frames": "720",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ],
+      "format": {
+        "duration": "24.000000"
+      },
+      "sha256": "eb6bc8162f6ae310d939578ff45667d3f1302ac3bf695cf64f57c4997a46a644"
+    },
+    {
+      "key": "module8",
+      "seconds": 24,
+      "module": 8,
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1",
+          "nb_frames": "720",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ],
+      "format": {
+        "duration": "24.000000"
+      },
+      "sha256": "09b56deb7d511871b91d15365e65e5e73aa1c79976fd4bb2c5c7949645ed6e7b"
+    },
+    {
+      "key": "mechanics-details",
+      "seconds": 32,
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1",
+          "nb_frames": "960",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ],
+      "format": {
+        "duration": "32.000000"
+      },
+      "sha256": "e88aa9d7932568fb22ede803c6ab236ec3ec09aea6d457526b9724eb91673389"
+    }
+  ],
+  "reuse": {
+    "before": {
+      "m7-photoelectric": "35f4a99162d4b6b4d26e1bbb0752739ba57bd0285d9232876fa2252ecfb9d7a8",
+      "m8-nucleosynthesis": "1f44cf27dbaf86c525599b72a95a5b02625801f04ded0f292d6afaafa68637e9"
+    },
+    "basePreviewsBefore": {
+      "module5": "30e9bbe5c716c4d3b4bc3235cb334f730e39c50c03fe0967c43d4010b00e7ec8",
+      "module6": "fdfe3fdf1699416f1f4dc23c3fced51408190b6752f166b6c648059d78403172",
+      "module7": "eb6bc8162f6ae310d939578ff45667d3f1302ac3bf695cf64f57c4997a46a644",
+      "module8": "09b56deb7d511871b91d15365e65e5e73aa1c79976fd4bb2c5c7949645ed6e7b"
+    },
+    "after": {
+      "m7-photoelectric": "35f4a99162d4b6b4d26e1bbb0752739ba57bd0285d9232876fa2252ecfb9d7a8",
+      "m8-nucleosynthesis": "1f44cf27dbaf86c525599b72a95a5b02625801f04ded0f292d6afaafa68637e9"
+    },
+    "unchanged": true,
+    "basePreviewsUnchanged": true
+  },
+  "siteLessons": 70,
+  "visualFamilies": 54,
+  "labelFrames": 192,
+  "labelFindings": [],
+  "playback": "Browser spot checks at 1x recorded separately; continuous human motion review pending",
+  "teachingApproval": "not a full lesson"
+}

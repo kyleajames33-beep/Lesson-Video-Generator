@@ -1,0 +1,13 @@
+import {trajectory} from '../model';
+export const clamp=(p:number)=>Math.max(0,Math.min(1,p));
+export const beat=(p:number,start:number,end:number)=>clamp((p-start)/(end-start));
+export const resolution={speed:20,degrees:30,...trajectory(20,30,0,9.8)};
+export const rangeCase=trajectory(20,35,0,9.8);
+export const obstacle={speed:18,degrees:35,height:15,distance:25,wall:8,g:9.8};
+export const obstacleFlight=trajectory(obstacle.speed,obstacle.degrees,obstacle.height,obstacle.g);
+export const wallTime=obstacle.distance/obstacleFlight.vx;
+export const wallHeight=obstacleFlight.at(wallTime).y;
+export const target={speed:30,range:72,g:9.8};
+export const targetAngle=Math.asin(target.g*target.range/target.speed**2)*90/Math.PI;
+export const targetFlights=[targetAngle,90-targetAngle].map(a=>({degrees:a,...trajectory(target.speed,a,0,target.g)}));
+export const pathAt=(m:ReturnType<typeof trajectory>,time:number,x0:number,y0:number,scale:number)=>Array.from({length:121},(_,i)=>{const q=m.at(time*i/120);return `${i?'L':'M'}${x0+q.x*scale},${y0-q.y*scale}`;}).join(' ');

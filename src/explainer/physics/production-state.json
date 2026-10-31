@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-25",
+  "status": "mechanics-details-delivered-continuous-human-motion-review-pending",
+  "scope": "Year 12 Physics Modules 5 to 8 visual asset library, under src/explainer/physics only",
+  "siteLessonCount": 70,
+  "visualFamilyCount": 54,
+  "ownership": {
+    "commonMechanicsIntegrationAndRenders": "/root",
+    "module6Author": "/root/physics_module6, Sol 6.1",
+    "module7Author": "/root/physics_module7, Sol 6.1",
+    "module8Author": "/root/physics_module8, Sol 6.1"
+  },
+  "independentReview": {
+    "module5": {
+      "reviewer": "physics_module6",
+      "status": "source and sampled desktop/phone findings closed"
+    },
+    "module6": {
+      "reviewer": "physics_module7",
+      "status": "source findings closed, original desktop/phone stills inspected, refreshed stills checked by root"
+    },
+    "module7": {
+      "reviewer": "physics_module8",
+      "status": "source findings closed, original desktop/phone stills inspected, refreshed stills checked by root"
+    },
+    "module8": {
+      "reviewer": "/root",
+      "status": "root source/still review complete; final photon integration independently checked by physics_module7"
+    }
+  },
+  "evidence": [
+    "README.md",
+    "module5/README.md",
+    "module6/README.md",
+    "module7/README.md",
+    "module8/README.md",
+    "artifacts/site/index.html",
+    "artifacts/site/course-map.json",
+    "artifacts/label-audit.json",
+    "artifacts/verification.json",
+    "artifacts/graph-reuse-check.json",
+    "artifacts/site/checks/mechanics-details-desktop-contact.png",
+    "artifacts/site/checks/mechanics-details-phone-contact.png"
+  ],
+  "resolvedFindings": [
+    "Mechanics: matched velocity-component scales, impact label clearance, external Kepler focus label and banked-track force scale",
+    "Electromagnetism: inverse-separation wire-force lengths, coil force signs and alignment rotation, rising motor speed and eddy-current location at field boundary",
+    "Light: matched photoelectric frequency and graph endpoint, conditional coherent-fringe formulas and footer clearance",
+    "Modern physics: logarithmic HR axes, repulsive scattering geometry, wavelength-proportional redshift, equal photon momentum arrows and label clearance",
+    "Mechanics details: corrected perpendicular-foot geometry, staged wall clearance, cleared hypotenuse label, explicit torque and true conical angles, uncertainty endpoint holds"
+  ],
+  "unresolvedGates": [
+    "Continuous human motion review pending. Exact range preview was spot-checked in Chrome at playbackRate 1 at 4.96, 16.09 and 31.46 seconds.",
+    "Physical-device readability is not established by rendered phone-size frames",
+    "Lesson-specific teaching, narration/caption integration and full-release approval remain outside this asset library"
+  ],
+  "coverageClaim": "Every existing site lesson has a mapped supporting visual family. This is not full syllabus, practical or learning approval; exact gaps remain in the map and module READMEs.",
+  "checks": {
+    "scopedTypeScript": "pass",
+    "moduleModelVerifiers": "all four modules and three mechanics detail suites pass",
+    "nativeLabelFrames": 192,
+    "nativeLabelFindings": 0,
+    "desktopStills": 54,
+    "phoneStills": 54,
+    "boundaryStills": 84,
+    "silentSamples": 5,
+    "sampleSeconds": [
+      24,
+      24,
+      24,
+      24,
+      32
+    ],
+    "framesPerSample": [
+      720,
+      720,
+      720,
+      720,
+      960
+    ],
+    "sampleFps": 30,
+    "audioStreams": 0,
+    "fullMediaDecode": "pass"
+  },
+  "reviewedRepairs": "Independent source and desktop/phone boundary findings closed. Exact range MP4 browser spot checks passed at 1x; continuous human motion review is not claimed.",
+  "mechanicsDetails": {
+    "count": 10,
+    "authors": {
+      "projectile-details": "mechanics_projectiles (Sol 6.1)",
+      "practical-details": "root",
+      "rotation-details": "mechanics_rotation (Sol 6.1)"
+    },
+    "reviewers": {
+      "projectile-details": "mechanics_rotation",
+      "practical-details": "mechanics_projectiles",
+      "rotation-details": "root and mechanics_projectiles"
+    },
+    "sample": "artifacts/site/previews/mechanics-details-silent.mp4",
+    "sampleSeconds": 32,
+    "remaining": "Continuous human motion review and physical-device readability remain pending",
+    "reviewClosure": "All ten source/still reviews closed independently. Final projectile label and torque/conical angle cues confirmed after rerender."
+  }
+}
