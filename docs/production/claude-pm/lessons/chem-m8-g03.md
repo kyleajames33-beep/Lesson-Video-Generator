@@ -1,6 +1,8 @@
 # G03 (Chemistry, Module 8): Integrated organic structure practice: tests and spectra, HSC-style (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved. **Recording hold:** no measured spectrum values exist yet for this design's compounds (science S1, open item for the Codex error check); needs Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); recording hold: measured NMR and IR.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved. **Recording hold:** no measured spectrum values exist yet for this design's compounds (science S1, open item for the Codex error check); needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 

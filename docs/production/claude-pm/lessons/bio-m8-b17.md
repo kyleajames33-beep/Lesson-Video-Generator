@@ -1,6 +1,8 @@
 # B8-17: What can replace lost kidney function? Kidney failure, haemodialysis, peritoneal dialysis and transplantation compared (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing. **Cultural review flag (unchanged):** see Decisions (L20's remote access point and L15's kidney disease content are not written here).
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice after the owner decision on remote and community kidney context (item 3).
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing. **Cultural review flag (unchanged):** see Decisions (L20's remote access point and L15's kidney disease content are not written here).
 
 Narration 5,953 characters (Revision 2; 15 scene files, counted by script from lines starting "> " with bold markers removed), about 9.4 minutes (564 s) including holds, two countdowns and the notes hold. Nothing recorded; human listening pending.
 

@@ -1,6 +1,8 @@
 # M8 C12: How can several spectra identify one molecule? Mass, groups, map, then check every clue, because one contradiction rules a structure out (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; mass spectra now NIST-measured. **Recording hold:** every NMR shift and the liquid-film IR values still need a measured reference (science S1, open item for the Codex error check); needs Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); recording hold: measured NMR and IR.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; mass spectra now NIST-measured. **Recording hold:** every NMR shift and the liquid-film IR values still need a measured reference (science S1, open item for the Codex error check); needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 

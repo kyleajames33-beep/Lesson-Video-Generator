@@ -1,6 +1,8 @@
 # M8 C10: What bonds can an IR spectrum reveal? Bonds vibrate, dips name them, and a missing dip rules a group out (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved, except science blocker S3 (measured traces for seven of ten compounds), which stays open as a build gate; needs that data and the Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); recording hold: measured IR traces.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved, except science blocker S3 (measured traces for seven of ten compounds), which stays open as a build gate; needs that data and the Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 

@@ -1,6 +1,8 @@
 # M8 C04: How do colour and absorption measure concentration? Colourimetry, UV-visible spectrophotometry and AAS, with a calibration and a dilution factor (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (visual cue fixed); ready to voice.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 
@@ -166,7 +168,7 @@ Visual: question card, worded as printed (A2 under Decisions). The deep copper c
 ### 17. feedback 2 (brief)
 > For the copper complex, colourimetry or UV-visible: it's strongly coloured, so it absorbs visible light, best measured at lambda **max**. For trace lead, graphite-furnace AAS: lead is colourless, and the **furnace** measures far lower levels than a flame. Saying AAS detects the lead ions in the water is the **trap**. It measures free atoms.
 
-Visual: the card stays, shrunk to the top. On "max" "(a) a deep blue solution" is underlined; line "(a) colourimetry or UV-visible: coloured, absorbs visible light; λmax about 600 nm (or an orange filter), with a calibration" writes with the colourimeter thumbnail. On "sensitive" "(b) ... traces of lead, expected to be below 0.01 mg/L" is underlined; line "(b) graphite-furnace AAS: Pb²⁺ colourless; furnace measures far lower levels than a flame" (bright). On "furnace" the scene 8 furnace inset returns small (`m8-graphite-furnace-v1.png` with the lamp beam through the tube, the free lead atom dots and the thinned beam with "A" at the detector), so lamp, atoms and absorbance stay in view. On "trap" a chip "AAS detects the lead ions in the water" fades in and is crossed (caption "it measures free atoms"). Hold about 1 second.
+Visual: the card stays, shrunk to the top. On "max" "(a) a deep blue solution" is underlined; line "(a) colourimetry or UV-visible: coloured, absorbs visible light; λmax about 600 nm (or an orange filter), with a calibration" writes with the colourimeter thumbnail. On "For trace lead" "(b) ... traces of lead, expected to be below 0.01 mg/L" is underlined; line "(b) graphite-furnace AAS: Pb²⁺ colourless; furnace measures far lower levels than a flame" (bright). On "furnace" the scene 8 furnace inset returns small (`m8-graphite-furnace-v1.png` with the lamp beam through the tube, the free lead atom dots and the thinned beam with "A" at the detector), so lamp, atoms and absorbance stay in view. On "trap" a chip "AAS detects the lead ions in the water" fades in and is crossed (caption "it measures free atoms"). Hold about 1 second.
 
 ### 18. handoff
 > So, to measure concentration with light, pick a method your species responds to, calibrate with standards, read inside the range, and correct for any dilution. **Next**, you'll build a calibration yourself, from standards to an unknown.

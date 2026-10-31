@@ -1,6 +1,8 @@
 # M8 C11a: How does carbon-13 NMR count carbon environments? Shielding sets the shift, symmetry merges carbons, and the data sheet names each peak (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved, except science blocker S3 (inspected spectra for every shift), which stays open as a build gate; needs that data and the Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); recording hold: measured carbon-13 shifts.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved, except science blocker S3 (inspected spectra for every shift), which stays open as a build gate; needs that data and the Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 

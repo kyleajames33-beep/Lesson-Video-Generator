@@ -1,6 +1,8 @@
 # B8-13: How can prevention campaigns reduce disease? SunSmart, three levels of evidence, and designing a better strategy (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 

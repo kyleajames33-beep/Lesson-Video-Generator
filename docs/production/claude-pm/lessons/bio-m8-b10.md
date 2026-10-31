@@ -1,6 +1,8 @@
 # B8-10: What do incidence, prevalence and mortality measure? Cases, population and time window, rates per 100,000, crude against age-standardised, and representing the data (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 

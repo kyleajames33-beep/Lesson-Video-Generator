@@ -1,6 +1,8 @@
 # M8 C08: How do simple tests distinguish organic groups? Fizz, fade and green, on fresh portions, and every "no" rules a candidate out (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 

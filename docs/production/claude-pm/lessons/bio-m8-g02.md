@@ -1,6 +1,8 @@
 # G02 (Module 8 Biology): Disease prevention and technology evaluation practice (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved (one blocker fixed); needs Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (visual cue fixed); ready to voice.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved (one blocker fixed); needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 
@@ -94,7 +96,7 @@ Visual: the card shrinks to a strip; type badge "Evaluate a gene therapy". The e
 ### 3c. q2-evaluate (evidence, limits, judgement)
 > Now the data. Thirteen of twenty is **sixty-five per cent**, against none of ten, and the untreated group strengthens the evidence that treatment caused the improvement. But it's a small trial, followed for one year, and it helps only people with this one gene fault, a small share of inherited blindness. It's very expensive, too. So it improved functional vision over one year for this gene fault, but the trial doesn't show the retina has stopped declining. It can't prevent inherited eye disease across a population.
 
-Visual: the zoom dims. On "sixty-five per cent" "13" and "20" underline and g01's `GroupDotField` draws 20 dots with 13 tinted (label "13 of 20 = 65%"); on "none of ten" "0" and "10" underline and 10 dots draw, none tinted (label "0 of 10"). On "the untreated group shows" "control group" underlines (tag "control: strengthens the case that treatment caused it"; Revision 2). The "what the evidence shows" slot fills "65% against 0%, with a control group". On "small trial, followed for one year" "20" and "after one year" pulse (tag "small, short"); on "one gene fault" a chip "one gene: a small share of inherited blindness"; on "very expensive" a chip "very costly". The "a real limit" slot fills "small, one year; one gene; costly; needs living cells". On "improved functional vision" the "judgement" slot fills "better dim-light navigation at 1 year, this gene fault; decline not shown to stop; not population prevention" (Revision 2). Answer boxes (a) and (b) build line by line on the same cues. At most three bright items. Hold 1 second.
+Visual: the zoom dims. On "sixty-five per cent" "13" and "20" underline and g01's `GroupDotField` draws 20 dots with 13 tinted (label "13 of 20 = 65%"); on "none of ten" "0" and "10" underline and 10 dots draw, none tinted (label "0 of 10"). On "the untreated group strengthens" "control group" underlines (tag "control: strengthens the case that treatment caused it"; Revision 2). The "what the evidence shows" slot fills "65% against 0%, with a control group". On "small trial, followed for one year" "20" and "after one year" pulse (tag "small, short"); on "one gene fault" a chip "one gene: a small share of inherited blindness"; on "very expensive" a chip "very costly". The "a real limit" slot fills "small, one year; one gene; costly; needs living cells". On "improved functional vision" the "judgement" slot fills "better dim-light navigation at 1 year, this gene fault; decline not shown to stop; not population prevention" (Revision 2). Answer boxes (a) and (b) build line by line on the same cues. At most three bright items. Hold 1 second.
 
 ### 3d. q2-mistake (the classic mistake)
 > The classic mistake is writing that this gene therapy stops the disease being passed on. It changes body cells in one person. Their eggs or sperm still carry the faulty gene, so the risk for their children is unchanged.

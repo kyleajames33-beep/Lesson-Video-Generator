@@ -1,6 +1,8 @@
 # M8 C06: What do dissolved oxygen and BOD tell us? The oxygen snapshot, the Winkler titration and the five-day forecast (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 

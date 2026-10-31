@@ -1,6 +1,8 @@
 # B8-15: How can technology assist hearing loss? The sound pathway, conductive and sensorineural loss, hearing aids, cochlear implants and bone conduction implants (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing. The owner's cultural review hold (Decisions, "Cultural content (flag for the owner)") is unchanged and still open.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice after the owner decision on otitis media context (owner-decisions-cultural-2026-10-31.md item 2).
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing. The owner's cultural review hold (Decisions, "Cultural content (flag for the owner)") is unchanged and still open.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex).
 

@@ -1,6 +1,8 @@
 # M8 C11b: How does proton NMR reveal hydrogen environments? Signals count environments, areas count hydrogens, and lines count neighbours plus one (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved, except science blocker S2 (inspected proton spectra), which stays open as a build gate; needs that data and the Codex error check before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); recording hold: measured proton spectra.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved, except science blocker S2 (inspected proton spectra), which stays open as a build gate; needs that data and the Codex error check before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 

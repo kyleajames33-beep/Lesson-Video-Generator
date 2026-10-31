@@ -1,6 +1,8 @@
 # M8 C09: How does mass spectrometry constrain a structure? Weigh the pieces: the molecular ion gives the mass, the gaps give what broke off (design)
 
-Status: Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check (including the bromomethane NIST record) before voicing.
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice once the SDBS cross-check decision is made (root); bromomethane plot verified.
+
+Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check (including the bromomethane NIST record) before voicing.
 
 Earlier status, Revision 1 (30 Oct): needs learning review and science check (Codex), then Codex error check before voicing.
 
